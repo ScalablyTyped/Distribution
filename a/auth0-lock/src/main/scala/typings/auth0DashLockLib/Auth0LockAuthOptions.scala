@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Auth0LockAuthOptions extends js.Object {
   var audience: js.UndefOr[java.lang.String] = js.undefined
+  var autoParseHash: js.UndefOr[scala.Boolean] = js.undefined
   var params: js.UndefOr[Auth0LockAuthParamsOptions] = js.undefined
   var redirect: js.UndefOr[scala.Boolean] = js.undefined
   var redirectUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -19,6 +20,7 @@ object Auth0LockAuthOptions {
   @scala.inline
   def apply(
     audience: java.lang.String = null,
+    autoParseHash: js.UndefOr[scala.Boolean] = js.undefined,
     params: Auth0LockAuthParamsOptions = null,
     redirect: js.UndefOr[scala.Boolean] = js.undefined,
     redirectUrl: java.lang.String = null,
@@ -28,6 +30,7 @@ object Auth0LockAuthOptions {
   ): Auth0LockAuthOptions = {
     val __obj = js.Dynamic.literal()
     if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (!js.isUndefined(autoParseHash)) __obj.updateDynamic("autoParseHash")(autoParseHash)
     if (params != null) __obj.updateDynamic("params")(params)
     if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
     if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)

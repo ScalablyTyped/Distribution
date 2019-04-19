@@ -44,6 +44,10 @@ class Selection ()
   def load(option: java.lang.String): Selection = js.native
   def load(option: js.Array[java.lang.String]): Selection = js.native
   def load(option: officeDashJsDashPreviewLib.Anon_Expand): Selection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.Selection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.SelectionData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.SelectionData = js.native
 }
 

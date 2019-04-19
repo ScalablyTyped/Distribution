@@ -377,6 +377,8 @@ class TextBuffer () extends js.Object {
   def serialize(options: atomLib.Anon_History): js.Object = js.native
   /** Sets the character set encoding for this buffer. */
   def setEncoding(encoding: java.lang.String): scala.Unit = js.native
+  /** Experimental: Set a custom {TextBufferFileBackend} object as the buffer's backing store. */
+  def setFile(fileBackend: TextBufferFileBackend): scala.Unit = js.native
   /** Set the path for the buffer's associated file. */
   def setPath(filePath: java.lang.String): scala.Unit = js.native
   // Mutating Text
@@ -415,6 +417,8 @@ object TextBuffer extends js.Object {
     *  TextBuffer::serialize method.
     */
   def deserialize(params: js.Object): js.Promise[atomLib.atomMod.TextBuffer] = js.native
+  def load(filePath: atomLib.atomMod.TextBufferFileBackend): js.Promise[atomLib.atomMod.TextBuffer] = js.native
+  def load(filePath: atomLib.atomMod.TextBufferFileBackend, params: atomLib.atomMod.BufferLoadOptions): js.Promise[atomLib.atomMod.TextBuffer] = js.native
   /** Create a new buffer backed by the given file path. */
   def load(filePath: java.lang.String): js.Promise[atomLib.atomMod.TextBuffer] = js.native
   def load(filePath: java.lang.String, params: atomLib.atomMod.BufferLoadOptions): js.Promise[atomLib.atomMod.TextBuffer] = js.native

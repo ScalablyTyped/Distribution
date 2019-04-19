@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-albus"
-version := "2.0-dt-20181206Z-4e5bf7"
+version := "2.0-dt-20190418Z-c5f2f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

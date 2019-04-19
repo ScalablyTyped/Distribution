@@ -5,27 +5,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Represents the returned format properties of getCellProperties or format input parameter of setCellProperties. */
+/**
+  *
+  * Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  */
 trait CellPropertiesFormat extends js.Object {
+  /**
+    *
+    * Represents the `autoIndent` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var autoIndent: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the `borders` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var borders: js.UndefOr[CellBorderCollection] = js.undefined
+  /**
+    *
+    * Represents the `fill` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var fill: js.UndefOr[CellPropertiesFill] = js.undefined
+  /**
+    *
+    * Represents the `font` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var font: js.UndefOr[CellPropertiesFont] = js.undefined
+  /**
+    *
+    * Represents the `horizontalAlignment` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var horizontalAlignment: js.UndefOr[
     HorizontalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.General | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Fill | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CenterAcrossSelection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed
   ] = js.undefined
+  /**
+    *
+    * Represents the `indentLevel` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var indentLevel: js.UndefOr[scala.Double] = js.undefined
+  /**
+    *
+    * Represents the `protection` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var protection: js.UndefOr[CellPropertiesProtection] = js.undefined
+  /**
+    *
+    * Represents the `readingOrder` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var readingOrder: js.UndefOr[
     ReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Context | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft
   ] = js.undefined
+  /**
+    *
+    * Represents the `shrinkToFit` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the `textOrientation` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var textOrientation: js.UndefOr[scala.Double] = js.undefined
+  /**
+    *
+    * Represents the `useStandardHeight` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var useStandardHeight: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the `useStandardWidth` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var useStandardWidth: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the `verticalAlignment` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var verticalAlignment: js.UndefOr[
     VerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed
   ] = js.undefined
+  /**
+    *
+    * Represents the `wrapText` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }
 

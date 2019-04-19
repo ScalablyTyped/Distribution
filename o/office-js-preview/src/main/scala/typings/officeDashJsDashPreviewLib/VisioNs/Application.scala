@@ -98,6 +98,10 @@ class Application ()
   ): scala.Unit = js.native
   @JSName("showToolbar")
   def showToolbar_StatusBar(id: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StatusBar, show: scala.Boolean): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.ApplicationData = js.native
 }
 

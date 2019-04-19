@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Visio.RequestContext")
 @js.native
 class RequestContext ()
-  extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientRequestContext {
+  extends officeDashJsDashPreviewLib.OfficeCoreNs.RequestContext {
   def this(url: java.lang.String) = this()
   def this(url: officeDashJsDashPreviewLib.OfficeExtensionNs.EmbeddedSession) = this()
   val document: Document = js.native

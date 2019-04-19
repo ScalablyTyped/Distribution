@@ -10,6 +10,7 @@ trait Anon_AutoHide extends js.Object {
   var autoHideDelay: js.UndefOr[scala.Double] = js.undefined
   var clickScrolling: js.UndefOr[scala.Boolean] = js.undefined
   var dragScrolling: js.UndefOr[scala.Boolean] = js.undefined
+  var snapHandle: js.UndefOr[scala.Boolean] = js.undefined
   var touchSupport: js.UndefOr[scala.Boolean] = js.undefined
   var visibility: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.VisibilityBehavior] = js.undefined
 }
@@ -21,6 +22,7 @@ object Anon_AutoHide {
     autoHideDelay: scala.Int | scala.Double = null,
     clickScrolling: js.UndefOr[scala.Boolean] = js.undefined,
     dragScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    snapHandle: js.UndefOr[scala.Boolean] = js.undefined,
     touchSupport: js.UndefOr[scala.Boolean] = js.undefined,
     visibility: overlayscrollbarsLib.overlayscrollbarsMod.VisibilityBehavior = null
   ): Anon_AutoHide = {
@@ -29,6 +31,7 @@ object Anon_AutoHide {
     if (autoHideDelay != null) __obj.updateDynamic("autoHideDelay")(autoHideDelay.asInstanceOf[js.Any])
     if (!js.isUndefined(clickScrolling)) __obj.updateDynamic("clickScrolling")(clickScrolling)
     if (!js.isUndefined(dragScrolling)) __obj.updateDynamic("dragScrolling")(dragScrolling)
+    if (!js.isUndefined(snapHandle)) __obj.updateDynamic("snapHandle")(snapHandle)
     if (!js.isUndefined(touchSupport)) __obj.updateDynamic("touchSupport")(touchSupport)
     if (visibility != null) __obj.updateDynamic("visibility")(visibility)
     __obj.asInstanceOf[Anon_AutoHide]

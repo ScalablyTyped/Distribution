@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AutoFilterData extends js.Object {
   /**
     *
-    * Array that holds all filter criterias in an autofiltered range. Read-Only.
+    * An array that holds all the filter criteria in the autofiltered range. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

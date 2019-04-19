@@ -81,55 +81,6 @@ trait ContentControlData extends js.Object {
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   /**
     *
-    * Gets the parent body of the content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentBody: js.UndefOr[BodyData] = js.undefined
-  /**
-    *
-    * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var parentContentControl: js.UndefOr[ContentControlData] = js.undefined
-  /**
-    *
-    * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentContentControlOrNullObject: js.UndefOr[ContentControlData] = js.undefined
-  /**
-    *
-    * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTable: js.UndefOr[TableData] = js.undefined
-  /**
-    *
-    * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableCell: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableCellOrNullObject: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableOrNullObject: js.UndefOr[TableData] = js.undefined
-  /**
-    *
     * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
     *
     * [Api set: WordApi 1.1]
@@ -219,13 +170,6 @@ object ContentControlData {
     inlinePictures: js.Array[InlinePictureData] = null,
     lists: js.Array[ListData] = null,
     paragraphs: js.Array[ParagraphData] = null,
-    parentBody: BodyData = null,
-    parentContentControl: ContentControlData = null,
-    parentContentControlOrNullObject: ContentControlData = null,
-    parentTable: TableData = null,
-    parentTableCell: TableCellData = null,
-    parentTableCellOrNullObject: TableCellData = null,
-    parentTableOrNullObject: TableData = null,
     placeholderText: java.lang.String = null,
     removeWhenEdited: js.UndefOr[scala.Boolean] = js.undefined,
     style: java.lang.String = null,
@@ -248,13 +192,6 @@ object ContentControlData {
     if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
     if (lists != null) __obj.updateDynamic("lists")(lists)
     if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
-    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
-    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
-    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
-    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
-    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
-    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)
     if (!js.isUndefined(removeWhenEdited)) __obj.updateDynamic("removeWhenEdited")(removeWhenEdited)
     if (style != null) __obj.updateDynamic("style")(style)

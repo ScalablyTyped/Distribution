@@ -23,6 +23,10 @@ trait CreateAccountStatus extends js.Object {
     */
   var FailureReason: js.UndefOr[CreateAccountFailureReason] = js.undefined
   /**
+    * 
+    */
+  var GovCloudAccountId: js.UndefOr[AccountId] = js.undefined
+  /**
     * The unique identifier (ID) that references this request. You get this value from the response of the initial CreateAccount request to create the account. The regex pattern for an create account request ID string requires "car-" followed by from 8 to 32 lower-case letters or digits.
     */
   var Id: js.UndefOr[CreateAccountRequestId] = js.undefined
@@ -43,6 +47,7 @@ object CreateAccountStatus {
     AccountName: AccountName = null,
     CompletedTimestamp: Timestamp = null,
     FailureReason: CreateAccountFailureReason = null,
+    GovCloudAccountId: AccountId = null,
     Id: CreateAccountRequestId = null,
     RequestedTimestamp: Timestamp = null,
     State: CreateAccountState = null
@@ -52,6 +57,7 @@ object CreateAccountStatus {
     if (AccountName != null) __obj.updateDynamic("AccountName")(AccountName)
     if (CompletedTimestamp != null) __obj.updateDynamic("CompletedTimestamp")(CompletedTimestamp)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
+    if (GovCloudAccountId != null) __obj.updateDynamic("GovCloudAccountId")(GovCloudAccountId)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (RequestedTimestamp != null) __obj.updateDynamic("RequestedTimestamp")(RequestedTimestamp)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])

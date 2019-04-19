@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class HyperlinkCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_HyperlinkCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Hyperlink] = js.native
   /**
@@ -56,6 +59,10 @@ class HyperlinkCollection ()
   def load(option: java.lang.String): HyperlinkCollection = js.native
   def load(option: js.Array[java.lang.String]): HyperlinkCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): HyperlinkCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Visio.HyperlinkCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.HyperlinkCollectionData = js.native
 }
 

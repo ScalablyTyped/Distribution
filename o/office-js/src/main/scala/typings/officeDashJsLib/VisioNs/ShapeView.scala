@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShapeView ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ShapeView: RequestContext = js.native
   /**
     *
     * Represents the highlight around the shape.
@@ -36,122 +39,10 @@ class ShapeView ()
     * @param Height Overlay Height.
     */
   def addOverlay(
-    OverlayType: OverlayType,
+    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text | officeDashJsLib.officeDashJsLibStrings.Image | officeDashJsLib.officeDashJsLibStrings.Html,
     Content: java.lang.String,
-    OverlayHorizontalAlignment: OverlayHorizontalAlignment,
-    OverlayVerticalAlignment: OverlayVerticalAlignment,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Center,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Bottom,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Center,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Middle,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Center,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Bottom,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Middle,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Right,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Bottom,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Right,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Middle,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Image,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Right,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Center,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Bottom,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Center,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Middle,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Center,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Bottom,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Middle,
+    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Right,
+    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Middle | officeDashJsLib.officeDashJsLibStrings.Bottom,
     Width: scala.Double,
     Height: scala.Double
   ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
@@ -169,34 +60,10 @@ class ShapeView ()
     * @param Height Overlay Height.
     */
   def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
+    OverlayType: OverlayType,
     Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Left,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Right,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Bottom,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Right,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Middle,
-    Width: scala.Double,
-    Height: scala.Double
-  ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
-  def addOverlay(
-    OverlayType: officeDashJsLib.officeDashJsLibStrings.Text,
-    Content: java.lang.String,
-    OverlayHorizontalAlignment: officeDashJsLib.officeDashJsLibStrings.Right,
-    OverlayVerticalAlignment: officeDashJsLib.officeDashJsLibStrings.Top,
+    OverlayHorizontalAlignment: OverlayHorizontalAlignment,
+    OverlayVerticalAlignment: OverlayVerticalAlignment,
     Width: scala.Double,
     Height: scala.Double
   ): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
@@ -247,6 +114,10 @@ class ShapeView ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ShapeView): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.ShapeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeViewData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.ShapeViewData = js.native
 }
 

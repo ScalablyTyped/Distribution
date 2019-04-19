@@ -88,11 +88,16 @@ trait App extends js.Object {
     */
   def delete(): js.Promise[_] = js.native
   def firestore(): firebaseLib.firebaseMod.firestoreNs.Firestore = js.native
+  /**
+    * @webonly
+    */
   def functions(): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   def functions(region: java.lang.String): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   /**
     * Gets the {@link firebase.messaging.Messaging `Messaging`} service for the
     * current app.
+    *
+    * @webonly
     *
     * @example
     * ```javascript
@@ -105,6 +110,8 @@ trait App extends js.Object {
   /**
     * Gets the {@link firebase.storage.Storage `Storage`} service for the current
     * app, optionally initialized with a custom storage bucket.
+    *
+    * @webonly
     *
     * @example
     * ```javascript

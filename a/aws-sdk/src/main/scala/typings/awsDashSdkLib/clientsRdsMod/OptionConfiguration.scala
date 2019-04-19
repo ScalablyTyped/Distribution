@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait OptionConfiguration extends js.Object {
   /**
-    * A list of DBSecurityGroupMemebrship name strings used for this option.
+    * A list of DBSecurityGroupMembership name strings used for this option.
     */
   var DBSecurityGroupMemberships: js.UndefOr[DBSecurityGroupNameList] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait OptionConfiguration extends js.Object {
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * A list of VpcSecurityGroupMemebrship name strings used for this option.
+    * A list of VpcSecurityGroupMembership name strings used for this option.
     */
   var VpcSecurityGroupMemberships: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
 }

@@ -5,11 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Represents which row properties to load, when used as part of a "range.getRowProperties" method. */
+/**
+  *
+  * Represents which row properties to load, when used as part of a "range.getRowProperties" method.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  */
 trait RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
+  /**
+    *
+    * Specifies whether to load on the `format` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   @JSName("format")
   var format_RowPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOptions with officeDashJsDashPreviewLib.Anon_RowHeight] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `rowHidden` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var rowHidden: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `rowIndex` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var rowIndex: js.UndefOr[scala.Boolean] = js.undefined
 }
 

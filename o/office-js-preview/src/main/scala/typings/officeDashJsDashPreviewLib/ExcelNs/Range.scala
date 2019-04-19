@@ -668,6 +668,9 @@ class Range ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param cellPropertiesLoadOptions An object that represents which cell properties to load.
+    * @returns A 2D array where each item represents the requested properties of the corresponding cell.
     */
   def getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[js.Array[CellProperties]]] = js.native
   /**
@@ -685,6 +688,9 @@ class Range ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param columnPropertiesLoadOptions An object that represents which column properties to load.
+    * @returns An array where each item represents the requested properties of the corresponding column.
     */
   def getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[ColumnProperties]] = js.native
   /**
@@ -804,6 +810,9 @@ class Range ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param rowPropertiesLoadOptions An object that represents which row properties to load.
+    * @returns An array where each item represents the requested properties of the corresponding row.
     */
   def getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[RowProperties]] = js.native
   /**
@@ -1154,6 +1163,8 @@ class Range ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param cellPropertiesData A 2D array that represents which properties to set in each cell.
     */
   def setCellProperties(cellPropertiesData: js.Array[js.Array[SettableCellProperties]]): scala.Unit = js.native
   /**
@@ -1162,6 +1173,8 @@ class Range ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param columnPropertiesData An array that represents which properties to set in each column.
     */
   def setColumnProperties(columnPropertiesData: js.Array[SettableColumnProperties]): scala.Unit = js.native
   /**
@@ -1178,6 +1191,8 @@ class Range ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
+    *
+    * @param rowPropertiesData An array that represents which properties to set in each row.
     */
   def setRowProperties(rowPropertiesData: js.Array[SettableRowProperties]): scala.Unit = js.native
   /**

@@ -22,6 +22,10 @@ trait ScalingConfiguration extends js.Object {
     * The time, in seconds, before an Aurora DB cluster in serverless mode is paused.
     */
   var SecondsUntilAutoPause: js.UndefOr[IntegerOptional] = js.undefined
+  /**
+    * The action to take when the timeout is reached, either ForceApplyCapacityChange or RollbackCapacityChange.  ForceApplyCapacityChange, the default, sets the capacity to the specified value as soon as possible.  RollbackCapacityChange ignores the capacity change if a scaling point is not found in the timeout period. For more information, see  Autoscaling for Aurora Serverless in the Amazon Aurora User Guide.
+    */
+  var TimeoutAction: js.UndefOr[String] = js.undefined
 }
 
 object ScalingConfiguration {
@@ -30,13 +34,15 @@ object ScalingConfiguration {
     AutoPause: js.UndefOr[BooleanOptional] = js.undefined,
     MaxCapacity: js.UndefOr[IntegerOptional] = js.undefined,
     MinCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    SecondsUntilAutoPause: js.UndefOr[IntegerOptional] = js.undefined
+    SecondsUntilAutoPause: js.UndefOr[IntegerOptional] = js.undefined,
+    TimeoutAction: String = null
   ): ScalingConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AutoPause)) __obj.updateDynamic("AutoPause")(AutoPause)
     if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity)
     if (!js.isUndefined(MinCapacity)) __obj.updateDynamic("MinCapacity")(MinCapacity)
     if (!js.isUndefined(SecondsUntilAutoPause)) __obj.updateDynamic("SecondsUntilAutoPause")(SecondsUntilAutoPause)
+    if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction)
     __obj.asInstanceOf[ScalingConfiguration]
   }
 }

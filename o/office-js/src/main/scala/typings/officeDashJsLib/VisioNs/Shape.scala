@@ -22,6 +22,9 @@ class Shape ()
     * [Api set:  1.1]
     */
   val comments: CommentCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Shape: RequestContext = js.native
   /**
     *
     * Returns the Hyperlinks collection for a Shape object. Read-only.
@@ -123,6 +126,10 @@ class Shape ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Shape): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.ShapeData = js.native
 }
 

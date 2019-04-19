@@ -46,13 +46,6 @@ trait TableRowData extends js.Object {
   var isHeader: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Gets parent table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTable: js.UndefOr[TableData] = js.undefined
-  /**
-    *
     * Gets and sets the preferred height of the row in points.
     *
     * [Api set: WordApi 1.3]
@@ -98,7 +91,6 @@ object TableRowData {
     font: FontData = null,
     horizontalAlignment: officeDashJsLib.WordNs.Alignment | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Centered | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justified = null,
     isHeader: js.UndefOr[scala.Boolean] = js.undefined,
-    parentTable: TableData = null,
     preferredHeight: scala.Int | scala.Double = null,
     rowIndex: scala.Int | scala.Double = null,
     shadingColor: java.lang.String = null,
@@ -111,7 +103,6 @@ object TableRowData {
     if (font != null) __obj.updateDynamic("font")(font)
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
     if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)

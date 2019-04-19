@@ -177,6 +177,7 @@ class Network protected () extends js.Object {
     * @param nodeOrEdgeId a node or edge id
     */
   def getConnectedNodes(nodeOrEdgeId: IdType): js.Array[IdType] | js.Array[visLib.Anon_FromId] = js.native
+  def getConnectedNodes(nodeOrEdgeId: IdType, direction: DirectionType): js.Array[IdType] | js.Array[visLib.Anon_FromId] = js.native
   /**
     * Returns a edgeId or undefined.
     * The DOM positions are expected to be in pixels from the top left corner of the canvas.

@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class DocumentView ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_DocumentView: RequestContext = js.native
   /**
     *
     * Disable Hyperlinks.
@@ -29,6 +32,13 @@ class DocumentView ()
     * [Api set:  1.1]
     */
   var disablePan: scala.Boolean = js.native
+  /**
+    *
+    * Disable PanZoomWindow.
+    *
+    * [Api set:  1.1]
+    */
+  var disablePanZoomWindow: scala.Boolean = js.native
   /**
     *
     * Disable Zoom.
@@ -81,6 +91,10 @@ class DocumentView ()
     properties: officeDashJsLib.VisioNs.InterfacesNs.DocumentViewUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.DocumentView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentViewData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.DocumentViewData = js.native
 }
 

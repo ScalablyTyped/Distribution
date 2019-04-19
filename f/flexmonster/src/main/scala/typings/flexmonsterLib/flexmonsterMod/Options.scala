@@ -28,11 +28,14 @@ trait Options extends js.Object {
   var showDefaultSlice: js.UndefOr[scala.Boolean] = js.undefined
   var showDrillThroughConfigurator: js.UndefOr[scala.Boolean] = js.undefined
   var showEmptyData: js.UndefOr[scala.Boolean] = js.undefined
+  var showFieldListSearch: js.UndefOr[scala.Boolean] = js.undefined
   var showMemberProperties: js.UndefOr[scala.Boolean] = js.undefined
   var showOutdatedDataAlert: js.UndefOr[scala.Boolean] = js.undefined
   var sorting: js.UndefOr[java.lang.String] = js.undefined
+  var strictDataTypes: js.UndefOr[scala.Boolean] = js.undefined
   var timePattern: js.UndefOr[java.lang.String] = js.undefined
   var useOlapFormatting: js.UndefOr[scala.Boolean] = js.undefined
+  var validateFormulas: js.UndefOr[scala.Boolean] = js.undefined
   var viewType: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -61,11 +64,14 @@ object Options {
     showDefaultSlice: js.UndefOr[scala.Boolean] = js.undefined,
     showDrillThroughConfigurator: js.UndefOr[scala.Boolean] = js.undefined,
     showEmptyData: js.UndefOr[scala.Boolean] = js.undefined,
+    showFieldListSearch: js.UndefOr[scala.Boolean] = js.undefined,
     showMemberProperties: js.UndefOr[scala.Boolean] = js.undefined,
     showOutdatedDataAlert: js.UndefOr[scala.Boolean] = js.undefined,
     sorting: java.lang.String = null,
+    strictDataTypes: js.UndefOr[scala.Boolean] = js.undefined,
     timePattern: java.lang.String = null,
     useOlapFormatting: js.UndefOr[scala.Boolean] = js.undefined,
+    validateFormulas: js.UndefOr[scala.Boolean] = js.undefined,
     viewType: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -91,11 +97,14 @@ object Options {
     if (!js.isUndefined(showDefaultSlice)) __obj.updateDynamic("showDefaultSlice")(showDefaultSlice)
     if (!js.isUndefined(showDrillThroughConfigurator)) __obj.updateDynamic("showDrillThroughConfigurator")(showDrillThroughConfigurator)
     if (!js.isUndefined(showEmptyData)) __obj.updateDynamic("showEmptyData")(showEmptyData)
+    if (!js.isUndefined(showFieldListSearch)) __obj.updateDynamic("showFieldListSearch")(showFieldListSearch)
     if (!js.isUndefined(showMemberProperties)) __obj.updateDynamic("showMemberProperties")(showMemberProperties)
     if (!js.isUndefined(showOutdatedDataAlert)) __obj.updateDynamic("showOutdatedDataAlert")(showOutdatedDataAlert)
     if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (!js.isUndefined(strictDataTypes)) __obj.updateDynamic("strictDataTypes")(strictDataTypes)
     if (timePattern != null) __obj.updateDynamic("timePattern")(timePattern)
     if (!js.isUndefined(useOlapFormatting)) __obj.updateDynamic("useOlapFormatting")(useOlapFormatting)
+    if (!js.isUndefined(validateFormulas)) __obj.updateDynamic("validateFormulas")(validateFormulas)
     if (viewType != null) __obj.updateDynamic("viewType")(viewType)
     __obj.asInstanceOf[Options]
   }

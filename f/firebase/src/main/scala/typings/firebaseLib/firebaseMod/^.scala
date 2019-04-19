@@ -105,6 +105,9 @@ object ^ extends js.Object {
   def database(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.databaseNs.Database = js.native
   def firestore(): firebaseLib.firebaseMod.firestoreNs.Firestore = js.native
   def firestore(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.firestoreNs.Firestore = js.native
+  /**
+    * @webonly
+    */
   def functions(): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   def functions(app: firebaseLib.firebaseMod.appNs.App): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   /**
@@ -115,8 +118,8 @@ object ^ extends js.Object {
     *   https://firebase.google.com/docs/web/setup#add_firebase_to_your_app
     *   Add Firebase to your app} and
     * {@link
-    *   https://firebase.google.com/docs/web/setup#initialize_multiple_apps
-    *   Initialize multiple apps} for detailed documentation.
+    *   https://firebase.google.com/docs/web/setup#multiple-projects
+    *   Initialize multiple projects} for detailed documentation.
     *
     * @example
     * ```javascript
@@ -165,6 +168,8 @@ object ^ extends js.Object {
     * generating notifications if the push message payload has a `notification`
     * parameter.
     *
+    * @webonly
+    *
     * @example
     * ```javascript
     * // Get the Messaging service for the default app
@@ -192,6 +197,8 @@ object ^ extends js.Object {
     * `firebase.storage(app)` to access the
     * {@link firebase.storage.Storage `Storage`} service associated with a
     * specific app.
+    *
+    * @webonly
     *
     * @example
     * ```javascript

@@ -55,7 +55,7 @@ trait CreateUserPoolClientRequest extends js.Object {
     */
   var RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.undefined
   /**
-    * A list of provider names for the identity providers that are supported on this client.
+    * A list of provider names for the identity providers that are supported on this client. The following are supported: COGNITO, Facebook, Google and LoginWithAmazon.
     */
   var SupportedIdentityProviders: js.UndefOr[SupportedIdentityProvidersListType] = js.undefined
   /**

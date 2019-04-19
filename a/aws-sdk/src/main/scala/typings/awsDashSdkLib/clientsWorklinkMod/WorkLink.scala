@@ -11,6 +11,29 @@ trait WorkLink
   @JSName("config")
   var config_WorkLink: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
+    * Specifies a domain to be associated to Amazon WorkLink.
+    */
+  def associateDomain(): awsDashSdkLib.libRequestMod.Request[AssociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateDomain(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateDomainResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Specifies a domain to be associated to Amazon WorkLink.
+    */
+  def associateDomain(params: AssociateDomainRequest): awsDashSdkLib.libRequestMod.Request[AssociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateDomain(
+    params: AssociateDomainRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateDomainResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Imports the root certificate of a certificate authority (CA) used to obtain TLS certificates used by associated websites within the company network.
     */
   def associateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -172,6 +195,29 @@ trait WorkLink
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Provides information about the domain.
+    */
+  def describeDomain(): awsDashSdkLib.libRequestMod.Request[DescribeDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeDomain(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeDomainResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Provides information about the domain.
+    */
+  def describeDomain(params: DescribeDomainRequest): awsDashSdkLib.libRequestMod.Request[DescribeDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeDomain(
+    params: DescribeDomainRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeDomainResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Provides basic information for the specified fleet, excluding identity provider, networking, and device configuration details.
     */
   def describeFleetMetadata(): awsDashSdkLib.libRequestMod.Request[DescribeFleetMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -241,6 +287,29 @@ trait WorkLink
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Disassociates a domain from Amazon WorkLink. End users lose the ability to access the domain with Amazon WorkLink. 
+    */
+  def disassociateDomain(): awsDashSdkLib.libRequestMod.Request[DisassociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disassociateDomain(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisassociateDomainResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Disassociates a domain from Amazon WorkLink. End users lose the ability to access the domain with Amazon WorkLink. 
+    */
+  def disassociateDomain(params: DisassociateDomainRequest): awsDashSdkLib.libRequestMod.Request[DisassociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disassociateDomain(
+    params: DisassociateDomainRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisassociateDomainResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Removes a certificate authority (CA).
     */
   def disassociateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[
@@ -299,6 +368,29 @@ trait WorkLink
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Retrieves a list of domains associated to a specified fleet.
+    */
+  def listDomains(): awsDashSdkLib.libRequestMod.Request[ListDomainsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listDomains(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListDomainsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListDomainsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of domains associated to a specified fleet.
+    */
+  def listDomains(params: ListDomainsRequest): awsDashSdkLib.libRequestMod.Request[ListDomainsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listDomains(
+    params: ListDomainsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListDomainsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListDomainsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Retrieves a list of fleets for the current account and Region.
     */
   def listFleets(): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -344,6 +436,52 @@ trait WorkLink
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListWebsiteCertificateAuthoritiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Moves a domain to ACTIVE status if it was in the INACTIVE status.
+    */
+  def restoreDomainAccess(): awsDashSdkLib.libRequestMod.Request[RestoreDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def restoreDomainAccess(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RestoreDomainAccessResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RestoreDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Moves a domain to ACTIVE status if it was in the INACTIVE status.
+    */
+  def restoreDomainAccess(params: RestoreDomainAccessRequest): awsDashSdkLib.libRequestMod.Request[RestoreDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def restoreDomainAccess(
+    params: RestoreDomainAccessRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RestoreDomainAccessResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RestoreDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Moves a domain to INACTIVE status if it was in the ACTIVE status.
+    */
+  def revokeDomainAccess(): awsDashSdkLib.libRequestMod.Request[RevokeDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def revokeDomainAccess(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RevokeDomainAccessResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RevokeDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Moves a domain to INACTIVE status if it was in the ACTIVE status.
+    */
+  def revokeDomainAccess(params: RevokeDomainAccessRequest): awsDashSdkLib.libRequestMod.Request[RevokeDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def revokeDomainAccess(
+    params: RevokeDomainAccessRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RevokeDomainAccessResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RevokeDomainAccessResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Signs the user out from all of their devices. The user can sign in again if they have valid credentials.
     */
@@ -436,6 +574,29 @@ trait WorkLink
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDevicePolicyConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates domain metadata, such as DisplayName.
+    */
+  def updateDomainMetadata(): awsDashSdkLib.libRequestMod.Request[UpdateDomainMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateDomainMetadata(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateDomainMetadataResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDomainMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates domain metadata, such as DisplayName.
+    */
+  def updateDomainMetadata(params: UpdateDomainMetadataRequest): awsDashSdkLib.libRequestMod.Request[UpdateDomainMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateDomainMetadata(
+    params: UpdateDomainMetadataRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateDomainMetadataResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateDomainMetadataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates fleet metadata, such as DisplayName.
     */

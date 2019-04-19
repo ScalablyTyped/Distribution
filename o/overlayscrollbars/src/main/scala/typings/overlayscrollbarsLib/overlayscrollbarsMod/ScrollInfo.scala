@@ -14,6 +14,7 @@ trait ScrollInfo extends js.Object {
   var max: overlayscrollbarsLib.Anon_XYNumber
   var position: overlayscrollbarsLib.Anon_XYNumber
   var ratio: overlayscrollbarsLib.Anon_XYNumber
+  var snappedHandleOffset: overlayscrollbarsLib.Anon_XYNumber
   var trackLength: overlayscrollbarsLib.Anon_XYNumber
 }
 
@@ -28,9 +29,10 @@ object ScrollInfo {
     max: overlayscrollbarsLib.Anon_XYNumber,
     position: overlayscrollbarsLib.Anon_XYNumber,
     ratio: overlayscrollbarsLib.Anon_XYNumber,
+    snappedHandleOffset: overlayscrollbarsLib.Anon_XYNumber,
     trackLength: overlayscrollbarsLib.Anon_XYNumber
   ): ScrollInfo = {
-    val __obj = js.Dynamic.literal(handleLength = handleLength, handleLengthRatio = handleLengthRatio, handleOffset = handleOffset, isRTL = isRTL, isRTLNormalized = isRTLNormalized, max = max, position = position, ratio = ratio, trackLength = trackLength)
+    val __obj = js.Dynamic.literal(handleLength = handleLength, handleLengthRatio = handleLengthRatio, handleOffset = handleOffset, isRTL = isRTL, isRTLNormalized = isRTLNormalized, max = max, position = position, ratio = ratio, snappedHandleOffset = snappedHandleOffset, trackLength = trackLength)
   
     __obj.asInstanceOf[ScrollInfo]
   }

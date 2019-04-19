@@ -6,5 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashHooksDashHelperMod {
-  type UseFormResponse = js.Tuple2[js.Any, js.Any]
+  type ChangeForm = js.Function1[/* value */ FormTarget, js.Any]
+  type InputChange = js.Function1[
+    /* event */ (reactLib.reactMod.SyntheticEvent[stdLib.HTMLInputElement, reactLib.Event]) | reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement], 
+    scala.Unit
+  ]
+  type SetForm = ChangeForm with InputChange
 }

@@ -77,6 +77,8 @@ trait Cursor extends js.Object {
   def getScreenPosition(): Point = js.native
   /** Returns the cursor's current screen row. */
   def getScreenRow(): scala.Double = js.native
+  /** Retrieves the syntax tree scope descriptor for the cursor's current position. */
+  def getSyntaxTreeScopeDescriptor(): ScopeDescriptor = js.native
   /**
     *  Returns true if this cursor has no non-whitespace characters before its
     *  current position.

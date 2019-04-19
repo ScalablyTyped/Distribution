@@ -28,14 +28,14 @@ trait ContentControlEventArgs extends js.Object {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var eventType: EventType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlSelectionChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDataChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlAdded
+  var eventType: EventType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlSelectionChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDataChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlAdded | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AnnotationAdded | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AnnotationChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AnnotationDeleted
 }
 
 object ContentControlEventArgs {
   @scala.inline
   def apply(
     contentControl: ContentControl,
-    eventType: EventType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlSelectionChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDataChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlAdded
+    eventType: EventType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlSelectionChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDataChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlAdded | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AnnotationAdded | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AnnotationChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AnnotationDeleted
   ): ContentControlEventArgs = {
     val __obj = js.Dynamic.literal(contentControl = contentControl, eventType = eventType.asInstanceOf[js.Any])
   

@@ -5,17 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AuthCredential extends js.Object {
-  var providerId: java.lang.String
-  var signInMethod: java.lang.String
+@JSImport("@firebase/auth-types", "AuthCredential")
+@js.native
+abstract class AuthCredential () extends js.Object {
+  var providerId: java.lang.String = js.native
+  var signInMethod: java.lang.String = js.native
+  def toJSON(): js.Object = js.native
 }
 
-object AuthCredential {
-  @scala.inline
-  def apply(providerId: java.lang.String, signInMethod: java.lang.String): AuthCredential = {
-    val __obj = js.Dynamic.literal(providerId = providerId, signInMethod = signInMethod)
-  
-    __obj.asInstanceOf[AuthCredential]
-  }
+/* static members */
+@JSImport("@firebase/auth-types", "AuthCredential")
+@js.native
+object AuthCredential extends js.Object {
+  def fromJSON(json: java.lang.String): atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.AuthCredential | scala.Null = js.native
+  def fromJSON(json: js.Object): atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.AuthCredential | scala.Null = js.native
 }
 

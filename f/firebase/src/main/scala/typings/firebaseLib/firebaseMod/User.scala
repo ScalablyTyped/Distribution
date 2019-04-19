@@ -279,6 +279,8 @@ trait User extends UserInfo {
     *     console.</dd>
     * </dl>
     *
+    * @webonly
+    *
     * @example
     * ```javascript
     * // Creates the provider object.
@@ -480,6 +482,8 @@ trait User extends UserInfo {
     *     console.</dd>
     * </dl>
     *
+    * @webonly
+    *
     * @example
     * ```javascript
     * // Creates the provider object.
@@ -525,6 +529,8 @@ trait User extends UserInfo {
     *     Firebase project. Edit the list of authorized domains from the Firebase
     *     console.</dd>
     * </dl>
+    *
+    * @webonly
     *
     * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link

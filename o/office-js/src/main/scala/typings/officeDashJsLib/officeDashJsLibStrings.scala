@@ -940,6 +940,9 @@ object officeDashJsLibStrings {
   sealed trait Hour extends js.Object
   
   @js.native
+  sealed trait Html extends js.Object
+  
+  @js.native
   sealed trait HundredMillions extends js.Object
   
   @js.native
@@ -2761,6 +2764,8 @@ object officeDashJsLibStrings {
   def Hollow: Hollow = "Hollow".asInstanceOf[Hollow]
   @scala.inline
   def Hour: Hour = "Hour".asInstanceOf[Hour]
+  @scala.inline
+  def Html: Html = "Html".asInstanceOf[Html]
   @scala.inline
   def HundredMillions: HundredMillions = "HundredMillions".asInstanceOf[HundredMillions]
   @scala.inline

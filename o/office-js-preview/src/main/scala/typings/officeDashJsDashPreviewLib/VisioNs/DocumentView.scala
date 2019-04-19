@@ -91,6 +91,10 @@ class DocumentView ()
     properties: officeDashJsDashPreviewLib.VisioNs.InterfacesNs.DocumentViewUpdateData,
     options: officeDashJsDashPreviewLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.DocumentView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentViewData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.DocumentViewData = js.native
 }
 

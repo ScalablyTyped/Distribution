@@ -27,6 +27,42 @@ class Application ()
   val notebooks: NotebookCollection = js.native
   /**
     *
+    * Occurs when the notebook is changed.
+    *
+    * [Api set: OneNoteApi 1.3]
+    *
+    * @eventproperty
+    */
+  val onNotebookChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[NotebookChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when the Page Selection change is made.
+    *
+    * [Api set: OneNoteApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onPageSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[PageSelectionChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when the Section Selection change is made.
+    *
+    * [Api set: OneNoteApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onSectionSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[SectionSelectionChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when the host sends a command to the add-ins.
+    *
+    * [Api set: OneNoteApi 1.5]
+    *
+    * @eventproperty
+    */
+  val onStickyNotesContextMenuExecutedEvent: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[StickyNotesContextMenuExecutedEventArgs] = js.native
+  /**
+    *
     * Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
     *
     * [Api set: OneNoteApi 1.1]

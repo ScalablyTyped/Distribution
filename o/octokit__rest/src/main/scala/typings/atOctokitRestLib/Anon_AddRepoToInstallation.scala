@@ -52,6 +52,13 @@ trait Anon_AddRepoToInstallation extends js.Object {
   @JSName("createInstallationToken")
   var createInstallationToken_Original: Anon_EndpointParamsAppsCreateInstallationTokenParams = js.native
   /**
+    * Uninstalls a GitHub App on a user, organization, or business account.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  @JSName("deleteInstallation")
+  var deleteInstallation_Original: Anon_EndpointParamsAppsDeleteInstallationParams = js.native
+  /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
@@ -92,6 +99,27 @@ trait Anon_AddRepoToInstallation extends js.Object {
   @JSName("getInstallation")
   var getInstallation_Original: Anon_EndpointParamsAppsGetInstallationParams = js.native
   /**
+    * Enables an authenticated GitHub App to find the organization's installation information.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  @JSName("getOrgInstallation")
+  var getOrgInstallation_Original: Anon_EndpointParamsAppsGetOrgInstallationParams = js.native
+  /**
+    * Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  @JSName("getRepoInstallation")
+  var getRepoInstallation_Original: Anon_EndpointParamsAppsGetRepoInstallationParams = js.native
+  /**
+    * Enables an authenticated GitHub App to find the user’s installation information.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  @JSName("getUserInstallation")
+  var getUserInstallation_Original: Anon_EndpointParamsAppsGetUserInstallationParams = js.native
+  /**
     * Returns any accounts associated with a plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
@@ -123,7 +151,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     *
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     *
-    * The permissions the installation has are included under the `permissions` key.
+    * You can find the permissions for the installation under the `permissions` key.
     */
   @JSName("listInstallationsForAuthenticatedUser")
   var listInstallationsForAuthenticatedUser_Original: Anon_EndpointParamsAppsListInstallationsForAuthenticatedUserParams = js.native
@@ -241,6 +269,17 @@ trait Anon_AddRepoToInstallation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsCreateInstallationTokenResponse]
   ] = js.native
   /**
+    * Uninstalls a GitHub App on a user, organization, or business account.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  def deleteInstallation(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsDeleteInstallationResponse]
+  ] = js.native
+  def deleteInstallation(params: atOctokitRestLib.atOctokitRestMod.AppsDeleteInstallationParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsDeleteInstallationResponse]
+  ] = js.native
+  /**
     * Enables an authenticated GitHub App to find the organization's installation information.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
@@ -305,6 +344,39 @@ trait Anon_AddRepoToInstallation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetInstallationResponse]
   ] = js.native
   /**
+    * Enables an authenticated GitHub App to find the organization's installation information.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  def getOrgInstallation(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetOrgInstallationResponse]
+  ] = js.native
+  def getOrgInstallation(params: atOctokitRestLib.atOctokitRestMod.AppsGetOrgInstallationParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetOrgInstallationResponse]
+  ] = js.native
+  /**
+    * Enables an authenticated GitHub App to find the repository's installation information. The installation's account type will be either an organization or a user account, depending which account the repository belongs to.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  def getRepoInstallation(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetRepoInstallationResponse]
+  ] = js.native
+  def getRepoInstallation(params: atOctokitRestLib.atOctokitRestMod.AppsGetRepoInstallationParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetRepoInstallationResponse]
+  ] = js.native
+  /**
+    * Enables an authenticated GitHub App to find the user’s installation information.
+    *
+    * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
+    */
+  def getUserInstallation(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetUserInstallationResponse]
+  ] = js.native
+  def getUserInstallation(params: atOctokitRestLib.atOctokitRestMod.AppsGetUserInstallationParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.AppsGetUserInstallationResponse]
+  ] = js.native
+  /**
     * Returns any accounts associated with a plan, including free plans. For per-seat pricing, you see the list of accounts that have purchased the plan, including the number of seats purchased. When someone submits a plan change that won't be processed until the end of their billing cycle, you will also see the upcoming pending change.
     *
     * GitHub Apps must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint. OAuth Apps must use [basic authentication](https://developer.github.com/v3/auth/#basic-authentication) with their client ID and client secret to access this endpoint.
@@ -363,7 +435,7 @@ trait Anon_AddRepoToInstallation extends js.Object {
     *
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     *
-    * The permissions the installation has are included under the `permissions` key.
+    * You can find the permissions for the installation under the `permissions` key.
     */
   def listInstallationsForAuthenticatedUser(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[

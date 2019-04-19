@@ -248,7 +248,7 @@ class TextEditor () extends js.Object {
     */
   def getLastBufferRow(): scala.Double = js.native
   /** Returns the most recently added Cursor. */
-  def getLastCursor(): Cursor = js.native
+  def getLastCursor(): js.UndefOr[Cursor] = js.native
   /**
     *  Returns a number representing the last zero-indexed screen row number of
     *  the editor.
@@ -906,6 +906,11 @@ class TextEditor () extends js.Object {
   /** Set the text in the given Range in buffer coordinates. */
   def setTextInBufferRange(range: RangeCompatible, text: java.lang.String): Range = js.native
   def setTextInBufferRange(range: RangeCompatible, text: java.lang.String, options: TextEditOptions with ReadonlyEditOptions): Range = js.native
+  /**
+    *  Get the syntactic tree {ScopeDescriptor} for the given position in buffer
+    *  coordinates or the syntactic {ScopeDescriptor} for TextMate language mode
+    */
+  def syntaxTreeScopeDescriptorForBufferPosition(bufferPosition: PointCompatible): ScopeDescriptor = js.native
   /** Fold the given buffer row if it isn't currently folded, and unfold it otherwise. */
   def toggleFoldAtBufferRow(bufferRow: scala.Double): scala.Unit = js.native
   /**

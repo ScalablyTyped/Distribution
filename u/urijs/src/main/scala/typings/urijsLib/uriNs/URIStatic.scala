@@ -18,7 +18,7 @@ trait URIStatic
   def apply(value: URIOptions): URI = js.native
   def addQuery(data: js.Object, prop: java.lang.String, value: java.lang.String): js.Object = js.native
   def addQuery(data: js.Object, qryObj: js.Object): js.Object = js.native
-  def build(parts: urijsLib.Anon_Fragment): java.lang.String = js.native
+  def build(parts: URIOptions): java.lang.String = js.native
   def buildAuthority(parts: urijsLib.Anon_Hostname): java.lang.String = js.native
   def buildHost(parts: urijsLib.Anon_HostnamePort): java.lang.String = js.native
   def buildQuery(qry: js.Object): java.lang.String = js.native
@@ -33,7 +33,7 @@ trait URIStatic
   def expand(template: java.lang.String, vals: js.Object): URI = js.native
   def iso8859(): scala.Unit = js.native
   def joinPaths(paths: (java.lang.String | URI)*): URI = js.native
-  def parse(url: java.lang.String): urijsLib.Anon_Fragment = js.native
+  def parse(url: java.lang.String): Parts = js.native
   def parseAuthority(url: java.lang.String, parts: urijsLib.Anon_Hostname): java.lang.String = js.native
   def parseHost(url: java.lang.String, parts: urijsLib.Anon_HostnamePort): java.lang.String = js.native
   def parseQuery(url: java.lang.String): js.Object = js.native

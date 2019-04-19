@@ -7,15 +7,43 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents which properties to load on the format.borders object.
+  * Specifies which properties to load on the `format.borders` object.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait CellPropertiesBorderLoadOptions extends js.Object {
+  /**
+    *
+    * Specifies whether to load on the `color` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var color: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `style` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var style: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `tintAndShade` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `weight` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var weight: js.UndefOr[scala.Boolean] = js.undefined
 }
 

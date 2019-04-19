@@ -110,7 +110,9 @@ trait URI extends js.Object {
   def hostname(hostname: java.lang.String): URI = js.native
   def href(): java.lang.String = js.native
   def href(url: java.lang.String): scala.Unit = js.native
-  def is(qry: java.lang.String): scala.Boolean = js.native
+  def is(
+    qry: urijsLib.urijsLibStrings.relative | urijsLib.urijsLibStrings.absolute | urijsLib.urijsLibStrings.urn | urijsLib.urijsLibStrings.url | urijsLib.urijsLibStrings.domain | urijsLib.urijsLibStrings.name | urijsLib.urijsLibStrings.sld | urijsLib.urijsLibStrings.idn | urijsLib.urijsLibStrings.punycode | urijsLib.urijsLibStrings.ip | urijsLib.urijsLibStrings.ip4 | urijsLib.urijsLibStrings.ipv4 | urijsLib.urijsLibStrings.inet4 | urijsLib.urijsLibStrings.ip6 | urijsLib.urijsLibStrings.ipv6 | urijsLib.urijsLibStrings.inet6
+  ): scala.Boolean = js.native
   def iso8859(): URI = js.native
   def normalize(): URI = js.native
   def normalizeFragment(): URI = js.native

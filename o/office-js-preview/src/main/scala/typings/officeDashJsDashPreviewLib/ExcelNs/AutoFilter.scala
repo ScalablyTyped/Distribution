@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents the AutoFilter object.
+  AutoFilter turns the values in Excel column into specific filters based on the cell contents.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -21,7 +22,7 @@ class AutoFilter ()
   var context_AutoFilter: RequestContext = js.native
   /**
     *
-    * Array that holds all filter criterias in an autofiltered range. Read-Only.
+    * An array that holds all the filter criteria in the autofiltered range. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -51,13 +52,13 @@ class AutoFilter ()
   def apply(range: java.lang.String, columnIndex: scala.Double, criteria: FilterCriteria): scala.Unit = js.native
   /**
     *
-    * Applies AutoFilter on a range and filters the column if column index and filter criteria are specified.
+    * Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param range The range where the AutoFilter will apply on.
-    * @param columnIndex The column index which the AutoFilter will apply on, start from 0.
+    * @param range The range over which the AutoFilter will apply on.
+    * @param columnIndex The zero-based column index to which the AutoFilter is applied.
     * @param criteria The filter criteria.
     */
   @JSName("apply")
@@ -68,7 +69,7 @@ class AutoFilter ()
   def apply(range: Range, columnIndex: scala.Double, criteria: FilterCriteria): scala.Unit = js.native
   /**
     *
-    * Clears the criteria if AutoFilter has filters
+    * Clears the filter criteria of the AutoFilter.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -84,8 +85,8 @@ class AutoFilter ()
   def getRange(): Range = js.native
   /**
     *
-    * If there is Range object associated with the AutoFilter, this method returns it.
-    Otherwise, this method returns a null object.
+    * Returns the Range object that represents the range to which the AutoFilter applies.
+    If there is no Range object associated with the AutoFilter, this method returns a null object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

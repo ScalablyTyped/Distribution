@@ -19,6 +19,15 @@ sealed trait OverlayType extends js.Object
 object OverlayType extends js.Object {
   /**
     *
+    * html
+    *
+    */
+  @js.native
+  sealed trait html
+    extends officeDashJsLib.VisioNs.OverlayType
+  
+  /**
+    *
     * image
     *
     */
@@ -35,6 +44,7 @@ object OverlayType extends js.Object {
   sealed trait text
     extends officeDashJsLib.VisioNs.OverlayType
   
+  /* "Html" */ val html: html with java.lang.String = js.native
   /* "Image" */ val image: image with java.lang.String = js.native
   /* "Text" */ val text: text with java.lang.String = js.native
   @JSBracketAccess

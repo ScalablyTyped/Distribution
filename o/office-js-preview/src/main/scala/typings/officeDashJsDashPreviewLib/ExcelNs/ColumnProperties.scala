@@ -5,10 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Represents the returned properties of getColumnProperties. */
+/**
+  *
+  * Represents the returned properties of getColumnProperties.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  */
 trait ColumnProperties extends SettableColumnProperties {
+  /**
+    *
+    * Represents the `address` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var address: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    *
+    * Represents the `addressLocal` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var addressLocal: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    *
+    * Represents the `columnIndex` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var columnIndex: js.UndefOr[scala.Double] = js.undefined
 }
 

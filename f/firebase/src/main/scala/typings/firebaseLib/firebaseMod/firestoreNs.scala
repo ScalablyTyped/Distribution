@@ -884,6 +884,23 @@ object firestoreNs extends js.Object {
       * CACHE_SIZE_UNLIMITED to disable garbage collection.
       */
     var cacheSizeBytes: js.UndefOr[scala.Double] = js.undefined
+    /**
+      * Forces the SDK’s underlying network transport (WebChannel) to use
+      * long-polling. Each response from the backend will be closed immediately
+      * after the backend sends data (by default responses are kept open in
+      * case the backend has more data to send). This avoids incompatibility
+      * issues with certain proxies, antivirus software, etc. that incorrectly
+      * buffer traffic indefinitely. Use of this option will cause some
+      * performance degradation though.
+      *
+      * This setting may be removed in a future release. If you find yourself
+      * using it to work around a specific network reliability issue, please
+      * tell us about it in
+      * https://github.com/firebase/firebase-js-sdk/issues/1674.
+      *
+      * @webonly
+      */
+    var experimentalForceLongPolling: js.UndefOr[scala.Boolean] = js.undefined
     /** The hostname to connect to. */
     var host: js.UndefOr[java.lang.String] = js.undefined
     /** Whether to use SSL when connecting. */

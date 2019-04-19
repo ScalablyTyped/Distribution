@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "atom-mocha-test-runner"
-version := "1.0-dt-20180214Z-af9476"
+version := "1.0-dt-20180214Z-e1907a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "atom" % "1.31-dt-20190213Z-5ab757",
+  "org.scalablytyped" %%% "atom" % "1.36-dt-20190418Z-19e9a3",
   "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-a079dc",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")

@@ -19,6 +19,33 @@ sealed trait EventType extends js.Object
 object EventType extends js.Object {
   /**
     *
+    * AnnotationAdded represents the event an annotation has been added to the document.
+    *
+    */
+  @js.native
+  sealed trait annotationAdded
+    extends officeDashJsLib.WordNs.EventType
+  
+  /**
+    *
+    * AnnotationAdded represents the event an annotation has been updated in the document.
+    *
+    */
+  @js.native
+  sealed trait annotationChanged
+    extends officeDashJsLib.WordNs.EventType
+  
+  /**
+    *
+    * AnnotationAdded represents the event an annotation has been deleted from the document.
+    *
+    */
+  @js.native
+  sealed trait annotationDeleted
+    extends officeDashJsLib.WordNs.EventType
+  
+  /**
+    *
     * ContentControlAdded represents the event a content control has been added to the document.
     *
     */
@@ -53,6 +80,9 @@ object EventType extends js.Object {
   sealed trait contentControlSelectionChanged
     extends officeDashJsLib.WordNs.EventType
   
+  /* "AnnotationAdded" */ val annotationAdded: annotationAdded with java.lang.String = js.native
+  /* "AnnotationChanged" */ val annotationChanged: annotationChanged with java.lang.String = js.native
+  /* "AnnotationDeleted" */ val annotationDeleted: annotationDeleted with java.lang.String = js.native
   /* "ContentControlAdded" */ val contentControlAdded: contentControlAdded with java.lang.String = js.native
   /* "ContentControlDataChanged" */ val contentControlDataChanged: contentControlDataChanged with java.lang.String = js.native
   /* "ContentControlDeleted" */ val contentControlDeleted: contentControlDeleted with java.lang.String = js.native

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsWorklinkMod {
+  type AcmCertificateArn = java.lang.String
   type AuditStreamArn = java.lang.String
   type Boolean = scala.Boolean
   type Certificate = java.lang.String
@@ -26,6 +27,20 @@ package object clientsWorklinkMod {
   type DeviceStatus = _DeviceStatus | java.lang.String
   type DeviceSummaryList = js.Array[DeviceSummary]
   type DisplayName = java.lang.String
+  type DomainName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING_VALIDATION
+    - awsDashSdkLib.awsDashSdkLibStrings.ASSOCIATING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DISASSOCIATING
+    - awsDashSdkLib.awsDashSdkLibStrings.DISASSOCIATED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED_TO_ASSOCIATE
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED_TO_DISASSOCIATE
+    - java.lang.String
+  */
+  type DomainStatus = _DomainStatus | java.lang.String
+  type DomainSummaryList = js.Array[DomainSummary]
   type FleetArn = java.lang.String
   type FleetName = java.lang.String
   /* Rewritten from type alias, can be one of: 

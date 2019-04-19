@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageView ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_PageView: RequestContext = js.native
   /**
     *
     * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
@@ -108,6 +111,10 @@ class PageView ()
     * @param Position Position object that specifies the new position of the page in the view.
     */
   def setPosition(Position: Position): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.PageView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageViewData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.PageViewData = js.native
 }
 

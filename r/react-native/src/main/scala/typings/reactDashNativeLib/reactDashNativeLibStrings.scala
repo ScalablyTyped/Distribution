@@ -440,6 +440,21 @@ object reactDashNativeLibStrings {
   sealed trait capitalize extends js.Object
   
   @js.native
+  sealed trait `cc-csc` extends js.Object
+  
+  @js.native
+  sealed trait `cc-exp` extends js.Object
+  
+  @js.native
+  sealed trait `cc-exp-month` extends js.Object
+  
+  @js.native
+  sealed trait `cc-exp-year` extends js.Object
+  
+  @js.native
+  sealed trait `cc-number` extends js.Object
+  
+  @js.native
   sealed trait cell
     extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
@@ -586,6 +601,9 @@ object reactDashNativeLibStrings {
   @js.native
   sealed trait easeOut
     extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
+  
+  @js.native
+  sealed trait email extends js.Object
   
   @js.native
   sealed trait `email-address`
@@ -965,6 +983,9 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.KeyboardType
   
   @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
   sealed trait `oldstyle-nums`
     extends reactDashNativeLib.reactDashNativeMod.FontVariant
   
@@ -1038,6 +1059,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait position extends js.Object
+  
+  @js.native
+  sealed trait `postal-code` extends js.Object
   
   @js.native
   sealed trait postalCode extends js.Object
@@ -1192,6 +1216,9 @@ object reactDashNativeLibStrings {
   sealed trait startsMedia extends AccessibilityTrait
   
   @js.native
+  sealed trait `street-address` extends js.Object
+  
+  @js.native
   sealed trait streetAddressLine1 extends js.Object
   
   @js.native
@@ -1216,6 +1243,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait tail extends js.Object
+  
+  @js.native
+  sealed trait tel extends js.Object
   
   @js.native
   sealed trait telephoneNumber extends js.Object
@@ -1572,6 +1602,16 @@ object reactDashNativeLibStrings {
   @scala.inline
   def capitalize: capitalize = "capitalize".asInstanceOf[capitalize]
   @scala.inline
+  def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
+  @scala.inline
+  def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
+  @scala.inline
+  def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
+  @scala.inline
+  def `cc-exp-year`: `cc-exp-year` = "cc-exp-year".asInstanceOf[`cc-exp-year`]
+  @scala.inline
+  def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
+  @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -1653,6 +1693,8 @@ object reactDashNativeLibStrings {
   def easeInEaseOut: easeInEaseOut = "easeInEaseOut".asInstanceOf[easeInEaseOut]
   @scala.inline
   def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def `email-address`: `email-address` = "email-address".asInstanceOf[`email-address`]
   @scala.inline
@@ -1874,6 +1916,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def `oldstyle-nums`: `oldstyle-nums` = "oldstyle-nums".asInstanceOf[`oldstyle-nums`]
   @scala.inline
   def omit: omit = "omit".asInstanceOf[omit]
@@ -1921,6 +1965,8 @@ object reactDashNativeLibStrings {
   def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
   @scala.inline
   def position: position = "position".asInstanceOf[position]
+  @scala.inline
+  def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   @scala.inline
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   @scala.inline
@@ -2012,6 +2058,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def startsMedia: startsMedia = "startsMedia".asInstanceOf[startsMedia]
   @scala.inline
+  def `street-address`: `street-address` = "street-address".asInstanceOf[`street-address`]
+  @scala.inline
   def streetAddressLine1: streetAddressLine1 = "streetAddressLine1".asInstanceOf[streetAddressLine1]
   @scala.inline
   def streetAddressLine2: streetAddressLine2 = "streetAddressLine2".asInstanceOf[streetAddressLine2]
@@ -2025,6 +2073,8 @@ object reactDashNativeLibStrings {
   def `tabular-nums`: `tabular-nums` = "tabular-nums".asInstanceOf[`tabular-nums`]
   @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
+  @scala.inline
+  def tel: tel = "tel".asInstanceOf[tel]
   @scala.inline
   def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   @scala.inline

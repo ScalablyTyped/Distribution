@@ -296,14 +296,18 @@ class List ()
     * @param formatString Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
     */
   def setLevelNumbering(level: scala.Double, listNumbering: ListNumbering): scala.Unit = js.native
-  def setLevelNumbering(level: scala.Double, listNumbering: ListNumbering, formatString: js.Array[_]): scala.Unit = js.native
+  def setLevelNumbering(
+    level: scala.Double,
+    listNumbering: ListNumbering,
+    formatString: js.Array[java.lang.String | scala.Double]
+  ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_Arabic(level: scala.Double, listNumbering: officeDashJsLib.officeDashJsLibStrings.Arabic): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_Arabic(
     level: scala.Double,
     listNumbering: officeDashJsLib.officeDashJsLibStrings.Arabic,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_LowerLetter(level: scala.Double, listNumbering: officeDashJsLib.officeDashJsLibStrings.LowerLetter): scala.Unit = js.native
@@ -311,7 +315,7 @@ class List ()
   def setLevelNumbering_LowerLetter(
     level: scala.Double,
     listNumbering: officeDashJsLib.officeDashJsLibStrings.LowerLetter,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_LowerRoman(level: scala.Double, listNumbering: officeDashJsLib.officeDashJsLibStrings.LowerRoman): scala.Unit = js.native
@@ -319,7 +323,7 @@ class List ()
   def setLevelNumbering_LowerRoman(
     level: scala.Double,
     listNumbering: officeDashJsLib.officeDashJsLibStrings.LowerRoman,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   /**
     *
@@ -337,7 +341,7 @@ class List ()
   def setLevelNumbering_None(
     level: scala.Double,
     listNumbering: officeDashJsLib.officeDashJsLibStrings.None,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_UpperLetter(level: scala.Double, listNumbering: officeDashJsLib.officeDashJsLibStrings.UpperLetter): scala.Unit = js.native
@@ -345,7 +349,7 @@ class List ()
   def setLevelNumbering_UpperLetter(
     level: scala.Double,
     listNumbering: officeDashJsLib.officeDashJsLibStrings.UpperLetter,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_UpperRoman(level: scala.Double, listNumbering: officeDashJsLib.officeDashJsLibStrings.UpperRoman): scala.Unit = js.native
@@ -353,7 +357,7 @@ class List ()
   def setLevelNumbering_UpperRoman(
     level: scala.Double,
     listNumbering: officeDashJsLib.officeDashJsLibStrings.UpperRoman,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   /**
     *
@@ -365,6 +369,10 @@ class List ()
     * @param startingNumber Required. The number to start with.
     */
   def setLevelStartingNumber(level: scala.Double, startingNumber: scala.Double): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Word.List object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.WordNs.InterfacesNs.ListData = js.native
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.

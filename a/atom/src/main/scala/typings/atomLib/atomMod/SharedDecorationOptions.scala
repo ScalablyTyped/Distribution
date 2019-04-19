@@ -23,6 +23,12 @@ trait SharedDecorationOptions extends js.Object {
     */
   var item: js.UndefOr[js.Object] = js.undefined
   /**
+    *  If false, the decoration will be applied to the last row of a non-empty
+    *  range, even if it ends at column 0. Defaults to true. Only applicable
+    *  to the gutter, line, and line-number decoration types.
+    */
+  var omitEmptyLastRow: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     *  If true, the decoration will only be applied if the associated DisplayMarker
     *  is empty. Only applicable to the gutter, line, and line-number types.
     */
@@ -38,6 +44,12 @@ trait SharedDecorationOptions extends js.Object {
     */
   var onlyNonEmpty: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    *  Only applicable to decorations of type block. Controls where the view is
+    *  positioned relative to other block decorations at the same screen row.
+    *  If unspecified, block decorations render oldest to newest.
+    */
+  var order: js.UndefOr[scala.Double] = js.undefined
+  /**
     *  Only applicable to decorations of type overlay and block. Controls where the
     *  view is positioned relative to the TextEditorMarker. Values can be
     *  'head' (the default) or 'tail' for overlay decorations, and 'before' (the default)
@@ -46,6 +58,11 @@ trait SharedDecorationOptions extends js.Object {
   var position: js.UndefOr[
     atomLib.atomLibStrings.head | atomLib.atomLibStrings.tail | atomLib.atomLibStrings.before | atomLib.atomLibStrings.after
   ] = js.undefined
+  /**
+    *  An Object containing CSS style properties to apply to the relevant DOM
+    *  node. Currently this only works with a type of cursor or text.
+    */
+  var style: js.UndefOr[js.Object] = js.undefined
 }
 
 object SharedDecorationOptions {
@@ -54,19 +71,25 @@ object SharedDecorationOptions {
     avoidOverflow: js.UndefOr[scala.Boolean] = js.undefined,
     `class`: java.lang.String = null,
     item: js.Object = null,
+    omitEmptyLastRow: js.UndefOr[scala.Boolean] = js.undefined,
     onlyEmpty: js.UndefOr[scala.Boolean] = js.undefined,
     onlyHead: js.UndefOr[scala.Boolean] = js.undefined,
     onlyNonEmpty: js.UndefOr[scala.Boolean] = js.undefined,
-    position: atomLib.atomLibStrings.head | atomLib.atomLibStrings.tail | atomLib.atomLibStrings.before | atomLib.atomLibStrings.after = null
+    order: scala.Int | scala.Double = null,
+    position: atomLib.atomLibStrings.head | atomLib.atomLibStrings.tail | atomLib.atomLibStrings.before | atomLib.atomLibStrings.after = null,
+    style: js.Object = null
   ): SharedDecorationOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(avoidOverflow)) __obj.updateDynamic("avoidOverflow")(avoidOverflow)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (item != null) __obj.updateDynamic("item")(item)
+    if (!js.isUndefined(omitEmptyLastRow)) __obj.updateDynamic("omitEmptyLastRow")(omitEmptyLastRow)
     if (!js.isUndefined(onlyEmpty)) __obj.updateDynamic("onlyEmpty")(onlyEmpty)
     if (!js.isUndefined(onlyHead)) __obj.updateDynamic("onlyHead")(onlyHead)
     if (!js.isUndefined(onlyNonEmpty)) __obj.updateDynamic("onlyNonEmpty")(onlyNonEmpty)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[SharedDecorationOptions]
   }
 }

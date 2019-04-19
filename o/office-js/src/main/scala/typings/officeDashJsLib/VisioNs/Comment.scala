@@ -22,6 +22,9 @@ class Comment ()
     * [Api set:  1.1]
     */
   var author: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Comment: RequestContext = js.native
   /**
     *
     * A string that specifies the date when the comment was created.
@@ -74,6 +77,10 @@ class Comment ()
     properties: officeDashJsLib.VisioNs.InterfacesNs.CommentUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.CommentData = js.native
 }
 

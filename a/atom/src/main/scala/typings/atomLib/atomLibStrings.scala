@@ -160,6 +160,9 @@ object atomLibStrings {
   sealed trait created extends js.Object
   
   @js.native
+  sealed trait cursor extends js.Object
+  
+  @js.native
   sealed trait decorated extends js.Object
   
   @js.native
@@ -478,6 +481,9 @@ object atomLibStrings {
   sealed trait tail extends js.Object
   
   @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
   sealed trait top
     extends atomLib.atomMod.TooltipPlacement
   
@@ -638,6 +644,8 @@ object atomLibStrings {
   def cp950: cp950 = "cp950".asInstanceOf[cp950]
   @scala.inline
   def created: created = "created".asInstanceOf[created]
+  @scala.inline
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
   def decorated: decorated = "decorated".asInstanceOf[decorated]
   @scala.inline
@@ -834,6 +842,8 @@ object atomLibStrings {
   def surround: surround = "surround".asInstanceOf[surround]
   @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

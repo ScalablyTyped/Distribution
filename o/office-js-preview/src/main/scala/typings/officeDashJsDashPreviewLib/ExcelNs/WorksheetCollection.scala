@@ -59,6 +59,16 @@ class WorksheetCollection ()
   val onChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetChangedEventArgs] = js.native
   /**
     *
+    * Occurs when sorting on columns.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onColumnSorted: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetColumnSortedEventArgs] = js.native
+  /**
+    *
     * Occurs when any worksheet in the workbook is deactivated.
     *
     * [Api set: ExcelApi 1.7]
@@ -95,6 +105,16 @@ class WorksheetCollection ()
     * @beta
     */
   val onFormatChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when sorting on rows.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onRowSorted: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetRowSortedEventArgs] = js.native
   /**
     *
     * Occurs when the selection changes on any worksheet.

@@ -26,6 +26,7 @@ package object clientsDiscoveryMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.NOT_FOUND
     - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_SERVER_ERROR
+    - awsDashSdkLib.awsDashSdkLibStrings.OVER_LIMIT
     - java.lang.String
   */
   type BatchDeleteImportDataErrorCode = _BatchDeleteImportDataErrorCode | java.lang.String
@@ -97,6 +98,7 @@ package object clientsDiscoveryMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.IMPORT_IN_PROGRESS
     - awsDashSdkLib.awsDashSdkLibStrings.IMPORT_COMPLETE
+    - awsDashSdkLib.awsDashSdkLibStrings.IMPORT_COMPLETE_WITH_ERRORS
     - awsDashSdkLib.awsDashSdkLibStrings.IMPORT_FAILED
     - awsDashSdkLib.awsDashSdkLibStrings.IMPORT_FAILED_SERVER_LIMIT_EXCEEDED
     - awsDashSdkLib.awsDashSdkLibStrings.IMPORT_FAILED_RECORD_LIMIT_EXCEEDED
@@ -104,6 +106,7 @@ package object clientsDiscoveryMod {
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_COMPLETE
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED
     - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED_LIMIT_EXCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_ERROR
     - java.lang.String
   */
   type ImportStatus = _ImportStatus | java.lang.String

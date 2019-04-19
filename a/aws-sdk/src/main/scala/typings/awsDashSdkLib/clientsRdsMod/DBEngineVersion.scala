@@ -55,7 +55,7 @@ trait DBEngineVersion extends js.Object {
     */
   var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined
   /**
-    * Indicates whether the database engine version supports read replicas.
+    * Indicates whether the database engine version supports Read Replicas.
     */
   var SupportsReadReplica: js.UndefOr[Boolean] = js.undefined
   /**

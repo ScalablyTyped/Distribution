@@ -19,6 +19,7 @@ class Tabulator protected () extends js.Object {
   var browser: java.lang.String = js.native
   var browserSlow: scala.Boolean = js.native
   var columnManager: js.Any = js.native
+  var element: stdLib.HTMLElement = js.native
   var footerManager: js.Any = js.native
   var modules: js.Any = js.native
   var options: tabulatorDashTablesLib.TabulatorNs.Options = js.native

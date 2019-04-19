@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PendingMaintenanceAction extends js.Object {
   /**
-    * The type of pending maintenance action that is available for the resource. Valid actions are system-update and db-upgrade.
+    * The type of pending maintenance action that is available for the resource. Valid actions are system-update, db-upgrade, and hardware-maintenance.
     */
   var Action: js.UndefOr[String] = js.undefined
   /**

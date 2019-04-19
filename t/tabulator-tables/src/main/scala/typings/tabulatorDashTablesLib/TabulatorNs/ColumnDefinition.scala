@@ -24,9 +24,7 @@ trait ColumnDefinition
   var accessorParams: js.UndefOr[CustomAccessorParams] = js.undefined
   // Layout
   /** sets the text alignment for this column */
-  var align: js.UndefOr[
-    tabulatorDashTablesLib.tabulatorDashTablesLibStrings.left | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.center | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.right
-  ] = js.undefined
+  var align: js.UndefOr[ColumnDefinitionAlign] = js.undefined
   var bottomCalc: js.UndefOr[ColumnCalc] = js.undefined
   var bottomCalcFormatter: js.UndefOr[Formatter] = js.undefined
   /**  additional parameters you can pass to the bottomCalcFormatter function */
@@ -199,7 +197,7 @@ object ColumnDefinition {
     accessorDownload: CustomAccessor = null,
     accessorDownloadParams: CustomAccessorParams = null,
     accessorParams: CustomAccessorParams = null,
-    align: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.left | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.center | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.right = null,
+    align: ColumnDefinitionAlign = null,
     bottomCalc: ColumnCalc = null,
     bottomCalcFormatter: Formatter = null,
     bottomCalcFormatterParams: FormatterParams = null,
@@ -297,7 +295,7 @@ object ColumnDefinition {
     if (accessorDownload != null) __obj.updateDynamic("accessorDownload")(accessorDownload)
     if (accessorDownloadParams != null) __obj.updateDynamic("accessorDownloadParams")(accessorDownloadParams.asInstanceOf[js.Any])
     if (accessorParams != null) __obj.updateDynamic("accessorParams")(accessorParams.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align)
     if (bottomCalc != null) __obj.updateDynamic("bottomCalc")(bottomCalc.asInstanceOf[js.Any])
     if (bottomCalcFormatter != null) __obj.updateDynamic("bottomCalcFormatter")(bottomCalcFormatter.asInstanceOf[js.Any])
     if (bottomCalcFormatterParams != null) __obj.updateDynamic("bottomCalcFormatterParams")(bottomCalcFormatterParams.asInstanceOf[js.Any])

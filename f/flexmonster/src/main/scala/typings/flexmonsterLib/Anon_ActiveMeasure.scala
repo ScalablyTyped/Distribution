@@ -9,6 +9,7 @@ trait Anon_ActiveMeasure extends js.Object {
   var activeMeasure: js.UndefOr[flexmonsterLib.flexmonsterMod.MeasureObject] = js.undefined
   var activeTupleIndex: js.UndefOr[scala.Double] = js.undefined
   var autoRange: js.UndefOr[scala.Boolean] = js.undefined
+  var axisShortNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
   var labelsHierarchy: js.UndefOr[java.lang.String] = js.undefined
   var multipleMeasures: js.UndefOr[scala.Boolean] = js.undefined
   var oneLevel: js.UndefOr[scala.Boolean] = js.undefined
@@ -33,6 +34,7 @@ object Anon_ActiveMeasure {
     activeMeasure: flexmonsterLib.flexmonsterMod.MeasureObject = null,
     activeTupleIndex: scala.Int | scala.Double = null,
     autoRange: js.UndefOr[scala.Boolean] = js.undefined,
+    axisShortNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     labelsHierarchy: java.lang.String = null,
     multipleMeasures: js.UndefOr[scala.Boolean] = js.undefined,
     oneLevel: js.UndefOr[scala.Boolean] = js.undefined,
@@ -54,6 +56,7 @@ object Anon_ActiveMeasure {
     if (activeMeasure != null) __obj.updateDynamic("activeMeasure")(activeMeasure)
     if (activeTupleIndex != null) __obj.updateDynamic("activeTupleIndex")(activeTupleIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(autoRange)) __obj.updateDynamic("autoRange")(autoRange)
+    if (!js.isUndefined(axisShortNumberFormat)) __obj.updateDynamic("axisShortNumberFormat")(axisShortNumberFormat)
     if (labelsHierarchy != null) __obj.updateDynamic("labelsHierarchy")(labelsHierarchy)
     if (!js.isUndefined(multipleMeasures)) __obj.updateDynamic("multipleMeasures")(multipleMeasures)
     if (!js.isUndefined(oneLevel)) __obj.updateDynamic("oneLevel")(oneLevel)

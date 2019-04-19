@@ -33,7 +33,7 @@ object expoLibComponents {
   @scala.inline
   def PublisherBanner: reactLib.reactMod.ComponentType[expoLib.expoMod.PublisherBannerProperties] = js.constructorOf[expoLib.expoMod.PublisherBanner].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.PublisherBannerProperties]]
   @scala.inline
-  def Svg: reactLib.reactMod.ComponentType[expoLib.expoMod.SvgCommonProps] = expoLib.expoMod.Svg.G.asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.SvgCommonProps]]
+  def Svg: reactLib.reactMod.ComponentType[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.SvgProps] = js.constructorOf[expoLib.expoMod.Svg].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.SvgProps]]
   @scala.inline
   def Video: reactLib.reactMod.ComponentType[expoLib.expoMod.VideoProps] = js.constructorOf[expoLib.expoMod.Video].asInstanceOf[reactLib.reactMod.ComponentType[expoLib.expoMod.VideoProps]]
   @scala.inline
@@ -64,8 +64,8 @@ object expoLibComponents {
   def PublisherBannerProperties: expoLib.expoMod.PublisherBannerProperties.type = expoLib.expoMod.PublisherBannerProperties
   type PublisherBannerProperties = expoLib.expoMod.PublisherBannerProperties
   @scala.inline
-  def SvgCommonProps: expoLib.expoMod.SvgCommonProps.type = expoLib.expoMod.SvgCommonProps
-  type SvgCommonProps = expoLib.expoMod.SvgCommonProps
+  def SvgProps: reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.SvgProps.type = reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.SvgProps
+  type SvgProps = reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.SvgProps
   @scala.inline
   def VideoProps: expoLib.expoMod.VideoProps.type = expoLib.expoMod.VideoProps
   type VideoProps = expoLib.expoMod.VideoProps

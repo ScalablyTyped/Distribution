@@ -493,9 +493,6 @@ object expoLibStrings {
     extends expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
-  sealed trait evenodd extends js.Object
-  
-  @js.native
   sealed trait exchange extends js.Object
   
   @js.native
@@ -673,9 +670,6 @@ object expoLibStrings {
   sealed trait none
     extends expoLib.expoMod.FacebookAdsNs.MediaCachePolicy
        with expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
-  
-  @js.native
-  sealed trait nonzero extends js.Object
   
   @js.native
   sealed trait note extends js.Object
@@ -1198,8 +1192,6 @@ object expoLibStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
-  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
-  @scala.inline
   def exchange: exchange = "exchange".asInstanceOf[exchange]
   @scala.inline
   def expo: expo = "expo".asInstanceOf[expo]
@@ -1307,8 +1299,6 @@ object expoLibStrings {
   def nonGregorianBirthday: nonGregorianBirthday = "nonGregorianBirthday".asInstanceOf[nonGregorianBirthday]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   @scala.inline
   def note: note = "note".asInstanceOf[note]
   @scala.inline

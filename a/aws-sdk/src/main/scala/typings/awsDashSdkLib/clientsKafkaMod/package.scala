@@ -32,6 +32,7 @@ package object clientsKafkaMod {
   type __listOfClusterInfo = js.Array[ClusterInfo]
   type __listOfNodeInfo = js.Array[NodeInfo]
   type __listOf__string = js.Array[__string]
+  type __mapOf__string = org.scalablytyped.runtime.StringDictionary[__string]
   type __string = java.lang.String
   type __stringMin1Max128 = java.lang.String
   type __stringMin1Max64 = java.lang.String

@@ -409,6 +409,8 @@ object authNs extends js.Object {
       *     Firebase console.</dd>
       * </dl>
       *
+      * @webonly
+      *
       * @example
       * ```javascript
       * // First, we perform the signInWithRedirect.
@@ -1202,6 +1204,8 @@ object authNs extends js.Object {
       *     console.</dd>
       * </dl>
       *
+      * @webonly
+      *
       * @example
       * ```javascript
       * // Creates the provider object.
@@ -1260,6 +1264,8 @@ object authNs extends js.Object {
       *     Firebase project. Edit the list of authorized domains from the Firebase
       *     console.</dd>
       * </dl>
+      *
+      * @webonly
       *
       * @param provider The provider to authenticate.
       *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
@@ -1332,19 +1338,24 @@ object authNs extends js.Object {
     * requirements.
     *
     */
-  trait AuthCredential extends js.Object {
+  @js.native
+  abstract class AuthCredential () extends js.Object {
     /**
       * The authentication provider ID for the credential.
       * For example, 'facebook.com', or 'google.com'.
       */
-    var providerId: java.lang.String
+    var providerId: java.lang.String = js.native
     /**
       * The authentication sign in method for the credential.
       * For example, 'password', or 'emailLink. This corresponds to the sign-in
       * method identifier as returned in
       * {@link firebase.auth.Auth.fetchSignInMethodsForEmail}.
       */
-    var signInMethod: java.lang.String
+    var signInMethod: java.lang.String = js.native
+    /**
+      * Returns a JSON-serializable representation of this object.
+      */
+    def toJSON(): js.Object = js.native
   }
   
   /**
@@ -1767,22 +1778,23 @@ object authNs extends js.Object {
     * credential requirements.
     *
     */
-  trait OAuthCredential extends AuthCredential {
+  @js.native
+  class OAuthCredential protected () extends AuthCredential {
     /**
       * The OAuth access token associated with the credential if it belongs to
       * an OAuth provider, such as `facebook.com`, `twitter.com`, etc.
       */
-    var accessToken: js.UndefOr[java.lang.String] = js.undefined
+    var accessToken: js.UndefOr[java.lang.String] = js.native
     /**
       * The OAuth ID token associated with the credential if it belongs to an
       * OIDC provider, such as `google.com`.
       */
-    var idToken: js.UndefOr[java.lang.String] = js.undefined
+    var idToken: js.UndefOr[java.lang.String] = js.native
     /**
       * The OAuth access token secret associated with the credential if it
       * belongs to an OAuth 1.0 provider, such as `twitter.com`.
       */
-    var secret: js.UndefOr[java.lang.String] = js.undefined
+    var secret: js.UndefOr[java.lang.String] = js.native
   }
   
   /**
@@ -1934,6 +1946,9 @@ object authNs extends js.Object {
   /**
     * An {@link https://www.google.com/recaptcha/ reCAPTCHA}-based application
     * verifier.
+    *
+    * @webonly
+    *
     * @param container The reCAPTCHA container parameter. This
     *     has different meaning depending on whether the reCAPTCHA is hidden or
     *     visible. For a visible reCAPTCHA the container must be empty. If a string
@@ -1953,6 +1968,7 @@ object authNs extends js.Object {
   class RecaptchaVerifier () extends RecaptchaVerifier_Instance
   
   /**
+    * @webonly
     * @hidden
     */
   @js.native
@@ -2072,6 +2088,22 @@ object authNs extends js.Object {
   trait UserMetadata extends js.Object {
     var creationTime: js.UndefOr[java.lang.String] = js.undefined
     var lastSignInTime: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  /* static members */
+  @js.native
+  object AuthCredential extends js.Object {
+    def fromJSON(json: java.lang.String): firebaseLib.firebaseMod.authNs.AuthCredential | scala.Null = js.native
+    /**
+      * Static method to deserialize a JSON representation of an object into an
+      * {@link firebase.auth.AuthCredential}. Input can be either Object or the
+      * stringified representation of the object. When string is provided,
+      * JSON.parse would be called first. If the JSON input does not represent
+      * an`AuthCredential`, null is returned.
+      * @param json The plain object representation of an
+      *     AuthCredential.
+      */
+    def fromJSON(json: js.Object): firebaseLib.firebaseMod.authNs.AuthCredential | scala.Null = js.native
   }
   
   @JSName("Auth")

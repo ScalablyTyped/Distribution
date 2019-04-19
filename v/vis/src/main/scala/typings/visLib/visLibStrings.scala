@@ -206,6 +206,10 @@ object visLibStrings {
   sealed trait flip extends js.Object
   
   @js.native
+  sealed trait from
+    extends visLib.visMod.DirectionType
+  
+  @js.native
   sealed trait `group-label`
     extends visLib.visMod.TimelineEventPropertiesResultWhatType
   
@@ -382,6 +386,10 @@ object visLibStrings {
     extends visLib.visMod.TimelineEvents
   
   @js.native
+  sealed trait to
+    extends visLib.visMod.DirectionType
+  
+  @js.native
   sealed trait top
     extends visLib.visMod.TopBottomEnumType
   
@@ -516,6 +524,8 @@ object visLibStrings {
   @scala.inline
   def flip: flip = "flip".asInstanceOf[flip]
   @scala.inline
+  def from: from = "from".asInstanceOf[from]
+  @scala.inline
   def `group-label`: `group-label` = "group-label".asInstanceOf[`group-label`]
   @scala.inline
   def groupDragged: groupDragged = "groupDragged".asInstanceOf[groupDragged]
@@ -601,6 +611,8 @@ object visLibStrings {
   def timechange: timechange = "timechange".asInstanceOf[timechange]
   @scala.inline
   def timechanged: timechanged = "timechanged".asInstanceOf[timechanged]
+  @scala.inline
+  def to: to = "to".asInstanceOf[to]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

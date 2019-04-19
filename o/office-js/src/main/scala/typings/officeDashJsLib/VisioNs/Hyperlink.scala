@@ -22,6 +22,9 @@ class Hyperlink ()
     * [Api set:  1.1]
     */
   val address: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Hyperlink: RequestContext = js.native
   /**
     *
     * Gets the description of a hyperlink. Read-only.
@@ -63,6 +66,10 @@ class Hyperlink ()
   def load(option: js.Array[java.lang.String]): Hyperlink = js.native
   def load(option: officeDashJsLib.Anon_Expand): Hyperlink = js.native
   def load(option: officeDashJsLib.VisioNs.InterfacesNs.HyperlinkLoadOptions): Hyperlink = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Visio.Hyperlink object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.VisioNs.InterfacesNs.HyperlinkData = js.native
 }
 

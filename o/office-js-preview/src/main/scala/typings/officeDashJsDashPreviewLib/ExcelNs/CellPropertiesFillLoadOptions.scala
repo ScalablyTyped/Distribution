@@ -7,16 +7,51 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents which properties to load on the format.fill object.
+  * Specifies which properties to load on the `format.fill` object.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait CellPropertiesFillLoadOptions extends js.Object {
+  /**
+    *
+    * Specifies whether to load on the `color` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var color: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `pattern` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var pattern: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `patternColor` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var patternColor: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `patternTintAndShade` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var patternTintAndShade: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Specifies whether to load on the `tintAndShade` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
 }
 

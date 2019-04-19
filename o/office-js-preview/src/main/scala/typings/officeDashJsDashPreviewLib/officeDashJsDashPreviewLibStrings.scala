@@ -184,6 +184,15 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait And extends js.Object
   
   @js.native
+  sealed trait AnnotationAdded extends js.Object
+  
+  @js.native
+  sealed trait AnnotationChanged extends js.Object
+  
+  @js.native
+  sealed trait AnnotationDeleted extends js.Object
+  
+  @js.native
   sealed trait Arabic extends js.Object
   
   @js.native
@@ -2263,6 +2272,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Note extends js.Object
   
   @js.native
+  sealed trait NotebookChanged extends js.Object
+  
+  @js.native
   sealed trait NumInDash extends js.Object
   
   @js.native
@@ -2345,6 +2357,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait PageNavigationBar extends js.Object
+  
+  @js.native
+  sealed trait PageSelectionChanged extends js.Object
   
   @js.native
   sealed trait Paper10x14 extends js.Object
@@ -2704,6 +2719,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait SectionOdd extends js.Object
   
   @js.native
+  sealed trait SectionSelectionChanged extends js.Object
+  
+  @js.native
   sealed trait Select extends js.Object
   
   @js.native
@@ -2840,6 +2858,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Stealth extends js.Object
+  
+  @js.native
+  sealed trait StickyNotesContextMenuExecuted extends js.Object
   
   @js.native
   sealed trait StockHLC extends js.Object
@@ -3370,6 +3391,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait WorksheetChanged extends js.Object
   
   @js.native
+  sealed trait WorksheetColumnSorted extends js.Object
+  
+  @js.native
   sealed trait WorksheetDeactivated extends js.Object
   
   @js.native
@@ -3380,6 +3404,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait WorksheetFormatChanged extends js.Object
+  
+  @js.native
+  sealed trait WorksheetRowSorted extends js.Object
   
   @js.native
   sealed trait WorksheetSelectionChanged extends js.Object
@@ -3553,6 +3580,12 @@ object officeDashJsDashPreviewLibStrings {
   def AllDatesInPeriodSeptember: AllDatesInPeriodSeptember = "AllDatesInPeriodSeptember".asInstanceOf[AllDatesInPeriodSeptember]
   @scala.inline
   def And: And = "And".asInstanceOf[And]
+  @scala.inline
+  def AnnotationAdded: AnnotationAdded = "AnnotationAdded".asInstanceOf[AnnotationAdded]
+  @scala.inline
+  def AnnotationChanged: AnnotationChanged = "AnnotationChanged".asInstanceOf[AnnotationChanged]
+  @scala.inline
+  def AnnotationDeleted: AnnotationDeleted = "AnnotationDeleted".asInstanceOf[AnnotationDeleted]
   @scala.inline
   def Arabic: Arabic = "Arabic".asInstanceOf[Arabic]
   @scala.inline
@@ -4940,6 +4973,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Note: Note = "Note".asInstanceOf[Note]
   @scala.inline
+  def NotebookChanged: NotebookChanged = "NotebookChanged".asInstanceOf[NotebookChanged]
+  @scala.inline
   def NumInDash: NumInDash = "NumInDash".asInstanceOf[NumInDash]
   @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
@@ -4995,6 +5030,8 @@ object officeDashJsDashPreviewLibStrings {
   def Page: Page = "Page".asInstanceOf[Page]
   @scala.inline
   def PageNavigationBar: PageNavigationBar = "PageNavigationBar".asInstanceOf[PageNavigationBar]
+  @scala.inline
+  def PageSelectionChanged: PageSelectionChanged = "PageSelectionChanged".asInstanceOf[PageSelectionChanged]
   @scala.inline
   def Paper10x14: Paper10x14 = "Paper10x14".asInstanceOf[Paper10x14]
   @scala.inline
@@ -5234,6 +5271,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def SectionOdd: SectionOdd = "SectionOdd".asInstanceOf[SectionOdd]
   @scala.inline
+  def SectionSelectionChanged: SectionSelectionChanged = "SectionSelectionChanged".asInstanceOf[SectionSelectionChanged]
+  @scala.inline
   def Select: Select = "Select".asInstanceOf[Select]
   @scala.inline
   def SemiGray75: SemiGray75 = "SemiGray75".asInstanceOf[SemiGray75]
@@ -5325,6 +5364,8 @@ object officeDashJsDashPreviewLibStrings {
   def StatusBar: StatusBar = "StatusBar".asInstanceOf[StatusBar]
   @scala.inline
   def Stealth: Stealth = "Stealth".asInstanceOf[Stealth]
+  @scala.inline
+  def StickyNotesContextMenuExecuted: StickyNotesContextMenuExecuted = "StickyNotesContextMenuExecuted".asInstanceOf[StickyNotesContextMenuExecuted]
   @scala.inline
   def StockHLC: StockHLC = "StockHLC".asInstanceOf[StockHLC]
   @scala.inline
@@ -5678,6 +5719,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def WorksheetChanged: WorksheetChanged = "WorksheetChanged".asInstanceOf[WorksheetChanged]
   @scala.inline
+  def WorksheetColumnSorted: WorksheetColumnSorted = "WorksheetColumnSorted".asInstanceOf[WorksheetColumnSorted]
+  @scala.inline
   def WorksheetDeactivated: WorksheetDeactivated = "WorksheetDeactivated".asInstanceOf[WorksheetDeactivated]
   @scala.inline
   def WorksheetDeleted: WorksheetDeleted = "WorksheetDeleted".asInstanceOf[WorksheetDeleted]
@@ -5685,6 +5728,8 @@ object officeDashJsDashPreviewLibStrings {
   def WorksheetFiltered: WorksheetFiltered = "WorksheetFiltered".asInstanceOf[WorksheetFiltered]
   @scala.inline
   def WorksheetFormatChanged: WorksheetFormatChanged = "WorksheetFormatChanged".asInstanceOf[WorksheetFormatChanged]
+  @scala.inline
+  def WorksheetRowSorted: WorksheetRowSorted = "WorksheetRowSorted".asInstanceOf[WorksheetRowSorted]
   @scala.inline
   def WorksheetSelectionChanged: WorksheetSelectionChanged = "WorksheetSelectionChanged".asInstanceOf[WorksheetSelectionChanged]
   @scala.inline

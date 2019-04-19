@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-hooks-helper", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def useForm(params: js.Any): UseFormResponse = js.native
+  def useForm[T](defaultFormConfig: T): js.Tuple2[T, SetForm] = js.native
   def useStep(params: UseStepParams): UseStepResponse = js.native
 }
 

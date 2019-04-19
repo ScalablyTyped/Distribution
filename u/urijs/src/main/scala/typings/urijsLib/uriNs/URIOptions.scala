@@ -13,6 +13,7 @@ trait URIOptions extends js.Object {
   var port: js.UndefOr[java.lang.String] = js.undefined
   var protocol: js.UndefOr[java.lang.String] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
+  var urn: js.UndefOr[scala.Boolean] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -26,6 +27,7 @@ object URIOptions {
     port: java.lang.String = null,
     protocol: java.lang.String = null,
     query: java.lang.String = null,
+    urn: js.UndefOr[scala.Boolean] = js.undefined,
     username: java.lang.String = null
   ): URIOptions = {
     val __obj = js.Dynamic.literal()
@@ -36,6 +38,7 @@ object URIOptions {
     if (port != null) __obj.updateDynamic("port")(port)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(urn)) __obj.updateDynamic("urn")(urn)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[URIOptions]
   }

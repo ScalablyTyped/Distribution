@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @webonly
+  */
 @JSImport("firebase", "storage")
 @js.native
 object storageNs extends js.Object {

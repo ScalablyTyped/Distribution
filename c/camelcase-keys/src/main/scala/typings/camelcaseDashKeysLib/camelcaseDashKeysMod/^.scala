@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-  Convert object keys to camelCase using [`camelcase`](https://github.com/sindresorhus/camelcase).
-  @param input - Object or array of objects to camelCase.
+  Convert object keys to camel case using [`camelcase`](https://github.com/sindresorhus/camelcase).
+  @param input - Object or array of objects to camel-case.
   @example
   ```
   import camelcaseKeys = require('camelcase-keys');
@@ -29,7 +29,9 @@ object ^ extends js.Object {
   //=> {_: [], fooBar: true}
   ```
   */
-  def apply(input: js.Any): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  def apply(input: js.Any, options: Options): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def apply(input: js.Array[org.scalablytyped.runtime.StringDictionary[_]]): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def apply(input: js.Array[org.scalablytyped.runtime.StringDictionary[_]], options: Options): js.Array[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def apply(input: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def apply(input: org.scalablytyped.runtime.StringDictionary[js.Any], options: Options): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 

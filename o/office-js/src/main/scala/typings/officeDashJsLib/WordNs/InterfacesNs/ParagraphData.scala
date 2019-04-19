@@ -18,13 +18,6 @@ trait ParagraphData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Gets the collection of content control objects in the paragraph. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
-  /**
-    *
     * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
     *
     * [Api set: WordApi 1.1]
@@ -88,13 +81,6 @@ trait ParagraphData extends js.Object {
   var lineUnitBefore: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var list: js.UndefOr[ListData] = js.undefined
-  /**
-    *
     * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
     *
     * [Api set: WordApi 1.3]
@@ -109,67 +95,11 @@ trait ParagraphData extends js.Object {
   var listItemOrNullObject: js.UndefOr[ListItemData] = js.undefined
   /**
     *
-    * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var listOrNullObject: js.UndefOr[ListData] = js.undefined
-  /**
-    *
     * Gets or sets the outline level for the paragraph.
     *
     * [Api set: WordApi 1.1]
     */
   var outlineLevel: js.UndefOr[scala.Double] = js.undefined
-  /**
-    *
-    * Gets the parent body of the paragraph. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentBody: js.UndefOr[BodyData] = js.undefined
-  /**
-    *
-    * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var parentContentControl: js.UndefOr[ContentControlData] = js.undefined
-  /**
-    *
-    * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentContentControlOrNullObject: js.UndefOr[ContentControlData] = js.undefined
-  /**
-    *
-    * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTable: js.UndefOr[TableData] = js.undefined
-  /**
-    *
-    * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableCell: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableCellOrNullObject: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableOrNullObject: js.UndefOr[TableData] = js.undefined
   /**
     *
     * Gets or sets the right indent value, in points, for the paragraph.
@@ -227,7 +157,6 @@ object ParagraphData {
   @scala.inline
   def apply(
     alignment: officeDashJsLib.WordNs.Alignment | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Centered | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justified = null,
-    contentControls: js.Array[ContentControlData] = null,
     firstLineIndent: scala.Int | scala.Double = null,
     font: FontData = null,
     inlinePictures: js.Array[InlinePictureData] = null,
@@ -237,18 +166,9 @@ object ParagraphData {
     lineSpacing: scala.Int | scala.Double = null,
     lineUnitAfter: scala.Int | scala.Double = null,
     lineUnitBefore: scala.Int | scala.Double = null,
-    list: ListData = null,
     listItem: ListItemData = null,
     listItemOrNullObject: ListItemData = null,
-    listOrNullObject: ListData = null,
     outlineLevel: scala.Int | scala.Double = null,
-    parentBody: BodyData = null,
-    parentContentControl: ContentControlData = null,
-    parentContentControlOrNullObject: ContentControlData = null,
-    parentTable: TableData = null,
-    parentTableCell: TableCellData = null,
-    parentTableCellOrNullObject: TableCellData = null,
-    parentTableOrNullObject: TableData = null,
     rightIndent: scala.Int | scala.Double = null,
     spaceAfter: scala.Int | scala.Double = null,
     spaceBefore: scala.Int | scala.Double = null,
@@ -259,7 +179,6 @@ object ParagraphData {
   ): ParagraphData = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
     if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font)
     if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
@@ -269,18 +188,9 @@ object ParagraphData {
     if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
     if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
     if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list)
     if (listItem != null) __obj.updateDynamic("listItem")(listItem)
     if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject)
-    if (listOrNullObject != null) __obj.updateDynamic("listOrNullObject")(listOrNullObject)
     if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
-    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
-    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
-    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
-    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
-    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
-    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
     if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
     if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
     if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])

@@ -5,26 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OAuthCredential extends AuthCredential {
-  var accessToken: js.UndefOr[java.lang.String] = js.undefined
-  var idToken: js.UndefOr[java.lang.String] = js.undefined
-  var secret: js.UndefOr[java.lang.String] = js.undefined
-}
-
-object OAuthCredential {
-  @scala.inline
-  def apply(
-    providerId: java.lang.String,
-    signInMethod: java.lang.String,
-    accessToken: java.lang.String = null,
-    idToken: java.lang.String = null,
-    secret: java.lang.String = null
-  ): OAuthCredential = {
-    val __obj = js.Dynamic.literal(providerId = providerId, signInMethod = signInMethod)
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
-    if (secret != null) __obj.updateDynamic("secret")(secret)
-    __obj.asInstanceOf[OAuthCredential]
-  }
+@JSImport("@firebase/auth-types", "OAuthCredential")
+@js.native
+class OAuthCredential protected () extends AuthCredential {
+  var accessToken: js.UndefOr[java.lang.String] = js.native
+  var idToken: js.UndefOr[java.lang.String] = js.native
+  var secret: js.UndefOr[java.lang.String] = js.native
 }
 

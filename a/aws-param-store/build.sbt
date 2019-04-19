@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aws-param-store"
-version := "2.1-dt-20190207Z-cc577e"
+version := "2.1-dt-20190207Z-cdbde2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.439.0-d449a4",
+  "org.scalablytyped" %%% "aws-sdk" % "2.440.0-a9fd92",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false

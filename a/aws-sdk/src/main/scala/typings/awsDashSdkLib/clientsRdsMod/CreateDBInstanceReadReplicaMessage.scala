@@ -43,7 +43,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * True to enable Performance Insights for the read replica, and otherwise false.  For more information, see Using Amazon Performance Insights in the Amazon RDS User Guide. 
+    * True to enable Performance Insights for the Read Replica, and otherwise false.  For more information, see Using Amazon Performance Insights in the Amazon RDS User Guide. 
     */
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -67,7 +67,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The option group the DB instance is associated with. If omitted, the default option group for the engine specified is used.
+    * The option group the DB instance is associated with. If omitted, the option group associated with the source instance is used.
     */
   var OptionGroupName: js.UndefOr[String] = js.undefined
   /**
@@ -95,7 +95,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The identifier of the DB instance that will act as the source for the Read Replica. Each DB instance can have up to five Read Replicas. Constraints:   Must be the identifier of an existing MySQL, MariaDB, or PostgreSQL DB instance.   Can specify a DB instance that is a MySQL Read Replica only if the source is running MySQL 5.6 or later.   Can specify a DB instance that is a PostgreSQL DB instance only if the source is running PostgreSQL 9.3.5 or later (9.4.7 and higher for cross-region replication).   The specified DB instance must have automatic backups enabled, its backup retention period must be greater than 0.   If the source DB instance is in the same AWS Region as the Read Replica, specify a valid DB instance identifier.   If the source DB instance is in a different AWS Region than the Read Replica, specify a valid DB instance ARN. For more information, go to  Constructing an ARN for Amazon RDS in the Amazon RDS User Guide.  
+    * The identifier of the DB instance that will act as the source for the Read Replica. Each DB instance can have up to five Read Replicas. Constraints:   Must be the identifier of an existing MySQL, MariaDB, Oracle, or PostgreSQL DB instance.   Can specify a DB instance that is a MySQL Read Replica only if the source is running MySQL 5.6 or later.   For the limitations of Oracle Read Replicas, see Read Replica Limitations with Oracle in the Amazon RDS User Guide.   Can specify a DB instance that is a PostgreSQL DB instance only if the source is running PostgreSQL 9.3.5 or later (9.4.7 and higher for cross-region replication).   The specified DB instance must have automatic backups enabled, its backup retention period must be greater than 0.   If the source DB instance is in the same AWS Region as the Read Replica, specify a valid DB instance identifier.   If the source DB instance is in a different AWS Region than the Read Replica, specify a valid DB instance ARN. For more information, go to  Constructing an ARN for Amazon RDS in the Amazon RDS User Guide.  
     */
   var SourceDBInstanceIdentifier: String
   /**

@@ -7,6 +7,31 @@ import scala.scalajs.js.annotation._
 
 trait TextInputAndroidProps extends js.Object {
   /**
+    * Determines which content to suggest on auto complete, e.g.`username`.
+    * To disable auto complete, use `off`.
+    *
+    * *Android Only*
+    *
+    * The following values work on Android only:
+    *
+    * - `username`
+    * - `password`
+    * - `email`
+    * - `name`
+    * - `tel`
+    * - `street-address`
+    * - `postal-code`
+    * - `cc-number`
+    * - `cc-csc`
+    * - `cc-exp`
+    * - `cc-exp-month`
+    * - `cc-exp-year`
+    * - `off`
+    */
+  var autoCompleteType: js.UndefOr[
+    reactDashNativeLib.reactDashNativeLibStrings.`cc-csc` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-month` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-year` | reactDashNativeLib.reactDashNativeLibStrings.`cc-number` | reactDashNativeLib.reactDashNativeLibStrings.email | reactDashNativeLib.reactDashNativeLibStrings.name | reactDashNativeLib.reactDashNativeLibStrings.password | reactDashNativeLib.reactDashNativeLibStrings.`postal-code` | reactDashNativeLib.reactDashNativeLibStrings.`street-address` | reactDashNativeLib.reactDashNativeLibStrings.tel | reactDashNativeLib.reactDashNativeLibStrings.username | reactDashNativeLib.reactDashNativeLibStrings.off
+  ] = js.undefined
+  /**
     * When false, if there is a small amount of space available around a text input (e.g. landscape orientation on a phone),
     *   the OS may choose to have the user edit the text inside of a full screen text input mode.
     * When true, this feature is disabled and users will always edit the text directly inside of the text input.
@@ -53,6 +78,7 @@ trait TextInputAndroidProps extends js.Object {
 object TextInputAndroidProps {
   @scala.inline
   def apply(
+    autoCompleteType: reactDashNativeLib.reactDashNativeLibStrings.`cc-csc` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-month` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-year` | reactDashNativeLib.reactDashNativeLibStrings.`cc-number` | reactDashNativeLib.reactDashNativeLibStrings.email | reactDashNativeLib.reactDashNativeLibStrings.name | reactDashNativeLib.reactDashNativeLibStrings.password | reactDashNativeLib.reactDashNativeLibStrings.`postal-code` | reactDashNativeLib.reactDashNativeLibStrings.`street-address` | reactDashNativeLib.reactDashNativeLibStrings.tel | reactDashNativeLib.reactDashNativeLibStrings.username | reactDashNativeLib.reactDashNativeLibStrings.off = null,
     disableFullscreenUI: js.UndefOr[scala.Boolean] = js.undefined,
     inlineImageLeft: java.lang.String = null,
     inlineImagePadding: scala.Int | scala.Double = null,
@@ -63,6 +89,7 @@ object TextInputAndroidProps {
     underlineColorAndroid: java.lang.String = null
   ): TextInputAndroidProps = {
     val __obj = js.Dynamic.literal()
+    if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI)
     if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft)
     if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])

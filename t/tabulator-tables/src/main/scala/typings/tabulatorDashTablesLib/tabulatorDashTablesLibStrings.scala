@@ -93,6 +93,7 @@ object tabulatorDashTablesLibStrings {
   @js.native
   sealed trait center
     extends tabulatorDashTablesLib.TabulatorNs.Align
+       with tabulatorDashTablesLib.TabulatorNs.ColumnDefinitionAlign
        with tabulatorDashTablesLib.TabulatorNs.ScrollToColumnPosition
        with tabulatorDashTablesLib.TabulatorNs.ScrollToRowPostition
   
@@ -244,6 +245,7 @@ object tabulatorDashTablesLibStrings {
   @js.native
   sealed trait left
     extends tabulatorDashTablesLib.TabulatorNs.Align
+       with tabulatorDashTablesLib.TabulatorNs.ColumnDefinitionAlign
        with tabulatorDashTablesLib.TabulatorNs.ScrollToColumnPosition
   
   @js.native
@@ -349,6 +351,7 @@ object tabulatorDashTablesLibStrings {
   @js.native
   sealed trait right
     extends tabulatorDashTablesLib.TabulatorNs.Align
+       with tabulatorDashTablesLib.TabulatorNs.ColumnDefinitionAlign
        with tabulatorDashTablesLib.TabulatorNs.ScrollToColumnPosition
   
   @js.native

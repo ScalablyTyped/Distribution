@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "32.0-dt-20190405Z-e24db3"
+version := "32.0-dt-20190418Z-7bcde5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20190322Z-68d3b1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-26e47b",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190416Z-5a5ff6",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190418Z-4bd345",
+  "org.scalablytyped" %%% "react-native-svg" % "9.4.0-63ad52",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

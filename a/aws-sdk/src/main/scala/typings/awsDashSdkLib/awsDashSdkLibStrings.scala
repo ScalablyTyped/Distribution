@@ -957,6 +957,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsFirehoseMod._DeliveryStreamStatus
        with awsDashSdkLib.clientsWorklinkMod._DeviceStatus
        with awsDashSdkLib.clientsWorkdocsMod._DocumentStatusType
+       with awsDashSdkLib.clientsWorklinkMod._DomainStatus
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._DomainStatusType
        with awsDashSdkLib.clientsIotMod._DynamicGroupStatus
        with awsDashSdkLib.clientsXrayMod._EncryptionStatus
@@ -1947,7 +1948,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ASSOCIATING
-    extends awsDashSdkLib.clientsRamMod._ResourceShareAssociationStatus
+    extends awsDashSdkLib.clientsWorklinkMod._DomainStatus
+       with awsDashSdkLib.clientsRamMod._ResourceShareAssociationStatus
   
   @js.native
   sealed trait ASSOCIATION
@@ -6154,11 +6156,13 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DISASSOCIATED
-    extends awsDashSdkLib.clientsRamMod._ResourceShareAssociationStatus
+    extends awsDashSdkLib.clientsWorklinkMod._DomainStatus
+       with awsDashSdkLib.clientsRamMod._ResourceShareAssociationStatus
   
   @js.native
   sealed trait DISASSOCIATING
-    extends awsDashSdkLib.clientsAlexaforbusinessMod._EnrollmentStatus
+    extends awsDashSdkLib.clientsWorklinkMod._DomainStatus
+       with awsDashSdkLib.clientsAlexaforbusinessMod._EnrollmentStatus
        with awsDashSdkLib.clientsRamMod._ResourceShareAssociationStatus
   
   @js.native
@@ -8010,12 +8014,20 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53resolverMod._IpAddressStatus
   
   @js.native
+  sealed trait FAILED_TO_ASSOCIATE
+    extends awsDashSdkLib.clientsWorklinkMod._DomainStatus
+  
+  @js.native
   sealed trait FAILED_TO_CREATE
     extends awsDashSdkLib.clientsWorklinkMod._FleetStatus
   
   @js.native
   sealed trait FAILED_TO_DELETE
     extends awsDashSdkLib.clientsWorklinkMod._FleetStatus
+  
+  @js.native
+  sealed trait FAILED_TO_DISASSOCIATE
+    extends awsDashSdkLib.clientsWorklinkMod._DomainStatus
   
   @js.native
   sealed trait FAILING
@@ -9994,6 +10006,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDiscoveryMod._ImportStatus
   
   @js.native
+  sealed trait IMPORT_COMPLETE_WITH_ERRORS
+    extends awsDashSdkLib.clientsDiscoveryMod._ImportStatus
+  
+  @js.native
   sealed trait IMPORT_FAILED
     extends awsDashSdkLib.clientsDiscoveryMod._ImportStatus
   
@@ -10039,6 +10055,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAcmMod._CertificateStatus
        with awsDashSdkLib.clientsIotMod._CertificateStatus
        with awsDashSdkLib.clientsDiscoveryMod._ContinuousExportStatus
+       with awsDashSdkLib.clientsWorklinkMod._DomainStatus
        with awsDashSdkLib.clientsGuarddutyMod._IpSetStatus
        with awsDashSdkLib.clientsLightsailMod._LoadBalancerTlsCertificateStatus
        with awsDashSdkLib.clientsAppmeshMod._MeshStatusCode
@@ -10350,6 +10367,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsInspectorMod._FailedItemErrorCode
        with awsDashSdkLib.clientsAppstreamMod._ImageBuilderStateChangeReasonCode
        with awsDashSdkLib.clientsAppstreamMod._ImageStateChangeReasonCode
+       with awsDashSdkLib.clientsDiscoveryMod._ImportStatus
        with awsDashSdkLib.clientsEmrMod._InstanceFleetStateChangeReasonCode
        with awsDashSdkLib.clientsEmrMod._InstanceGroupStateChangeReasonCode
        with awsDashSdkLib.clientsEmrMod._InstanceStateChangeReasonCode
@@ -14315,6 +14333,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCurMod._ReportVersioning
   
   @js.native
+  sealed trait OVER_LIMIT
+    extends awsDashSdkLib.clientsDiscoveryMod._BatchDeleteImportDataErrorCode
+  
+  @js.native
   sealed trait OVER_MAX_INSTANCES
     extends awsDashSdkLib.clientsCodedeployMod._ErrorCode
   
@@ -14738,6 +14760,7 @@ object awsDashSdkLibStrings {
   sealed trait PENDING_VALIDATION
     extends awsDashSdkLib.clientsAcmMod._CertificateStatus
        with awsDashSdkLib.clientsAcmMod._DomainStatus
+       with awsDashSdkLib.clientsWorklinkMod._DomainStatus
        with awsDashSdkLib.clientsLightsailMod._LoadBalancerTlsCertificateDomainStatus
        with awsDashSdkLib.clientsLightsailMod._LoadBalancerTlsCertificateRenewalStatus
        with awsDashSdkLib.clientsLightsailMod._LoadBalancerTlsCertificateStatus
@@ -30910,9 +30933,13 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FAILED_RESOURCE_GONE: FAILED_RESOURCE_GONE = "FAILED_RESOURCE_GONE".asInstanceOf[FAILED_RESOURCE_GONE]
   @scala.inline
+  def FAILED_TO_ASSOCIATE: FAILED_TO_ASSOCIATE = "FAILED_TO_ASSOCIATE".asInstanceOf[FAILED_TO_ASSOCIATE]
+  @scala.inline
   def FAILED_TO_CREATE: FAILED_TO_CREATE = "FAILED_TO_CREATE".asInstanceOf[FAILED_TO_CREATE]
   @scala.inline
   def FAILED_TO_DELETE: FAILED_TO_DELETE = "FAILED_TO_DELETE".asInstanceOf[FAILED_TO_DELETE]
+  @scala.inline
+  def FAILED_TO_DISASSOCIATE: FAILED_TO_DISASSOCIATE = "FAILED_TO_DISASSOCIATE".asInstanceOf[FAILED_TO_DISASSOCIATE]
   @scala.inline
   def FAILING: FAILING = "FAILING".asInstanceOf[FAILING]
   @scala.inline
@@ -31739,6 +31766,8 @@ object awsDashSdkLibStrings {
   def IMPORTING: IMPORTING = "IMPORTING".asInstanceOf[IMPORTING]
   @scala.inline
   def IMPORT_COMPLETE: IMPORT_COMPLETE = "IMPORT_COMPLETE".asInstanceOf[IMPORT_COMPLETE]
+  @scala.inline
+  def IMPORT_COMPLETE_WITH_ERRORS: IMPORT_COMPLETE_WITH_ERRORS = "IMPORT_COMPLETE_WITH_ERRORS".asInstanceOf[IMPORT_COMPLETE_WITH_ERRORS]
   @scala.inline
   def IMPORT_FAILED: IMPORT_FAILED = "IMPORT_FAILED".asInstanceOf[IMPORT_FAILED]
   @scala.inline
@@ -33517,6 +33546,8 @@ object awsDashSdkLibStrings {
   def OVERWRITE_LATEST: OVERWRITE_LATEST = "OVERWRITE_LATEST".asInstanceOf[OVERWRITE_LATEST]
   @scala.inline
   def OVERWRITE_REPORT: OVERWRITE_REPORT = "OVERWRITE_REPORT".asInstanceOf[OVERWRITE_REPORT]
+  @scala.inline
+  def OVER_LIMIT: OVER_LIMIT = "OVER_LIMIT".asInstanceOf[OVER_LIMIT]
   @scala.inline
   def OVER_MAX_INSTANCES: OVER_MAX_INSTANCES = "OVER_MAX_INSTANCES".asInstanceOf[OVER_MAX_INSTANCES]
   @scala.inline

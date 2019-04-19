@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @webonly
+  */
 @JSImport("firebase", "messaging")
 @js.native
 object messagingNs extends js.Object {

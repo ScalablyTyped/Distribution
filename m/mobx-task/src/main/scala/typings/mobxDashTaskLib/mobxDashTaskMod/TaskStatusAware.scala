@@ -15,7 +15,7 @@ trait TaskStatusAware[Result, Args /* <: js.Array[_] */]
   val resolved: scala.Boolean = js.native
   val result: js.UndefOr[Result] = js.native
   val state: TaskState = js.native
-  def `match`[TaskMatchResult](props: TaskMatchProps[Args, TaskMatchResult, Result]): TaskMatchResult = js.native
+  def `match`[PendingType, RejectedType, ResolvedType](props: TaskMatchProps[PendingType, RejectedType, ResolvedType, Args, Result]): PendingType | RejectedType | ResolvedType = js.native
   def reset(): scala.Unit = js.native
   def setState(props: TaskOptions[Result]): scala.Unit = js.native
   def wrap[R, A /* <: js.Array[_] */](

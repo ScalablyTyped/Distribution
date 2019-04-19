@@ -5,10 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Represents the input parameter of setCellProperties. */
+/**
+  *
+  * Represents the input parameter of setCellProperties.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  */
 trait SettableCellProperties extends js.Object {
+  /**
+    *
+    * Represents the `format` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var format: js.UndefOr[CellPropertiesFormat] = js.undefined
+  /**
+    *
+    * Represents the `hyperlink` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var hyperlink: js.UndefOr[RangeHyperlink] = js.undefined
+  /**
+    *
+    * Represents the `style` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -23,6 +23,7 @@ package object atOctokitRestMod {
   type ActivityUnstarRepoResponse = js.Object
   type AnyResponse = Response[js.Any]
   type AppsAddRepoToInstallationResponse = js.Object
+  type AppsDeleteInstallationResponse = js.Object
   type AppsListAccountsUserOrOrgOnPlanResponse = js.Array[AppsListAccountsUserOrOrgOnPlanResponseItem]
   type AppsListAccountsUserOrOrgOnPlanStubbedResponse = js.Array[AppsListAccountsUserOrOrgOnPlanStubbedResponseItem]
   type AppsListInstallationsResponse = js.Array[AppsListInstallationsResponseItem]

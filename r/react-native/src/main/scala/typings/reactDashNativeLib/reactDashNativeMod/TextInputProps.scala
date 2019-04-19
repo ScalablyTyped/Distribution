@@ -217,6 +217,7 @@ object TextInputProps {
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
     autoCapitalize: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.sentences | reactDashNativeLib.reactDashNativeLibStrings.words | reactDashNativeLib.reactDashNativeLibStrings.characters = null,
+    autoCompleteType: reactDashNativeLib.reactDashNativeLibStrings.`cc-csc` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-month` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-year` | reactDashNativeLib.reactDashNativeLibStrings.`cc-number` | reactDashNativeLib.reactDashNativeLibStrings.email | reactDashNativeLib.reactDashNativeLibStrings.name | reactDashNativeLib.reactDashNativeLibStrings.password | reactDashNativeLib.reactDashNativeLibStrings.`postal-code` | reactDashNativeLib.reactDashNativeLibStrings.`street-address` | reactDashNativeLib.reactDashNativeLibStrings.tel | reactDashNativeLib.reactDashNativeLibStrings.username | reactDashNativeLib.reactDashNativeLibStrings.off = null,
     autoCorrect: js.UndefOr[scala.Boolean] = js.undefined,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     blurOnSubmit: js.UndefOr[scala.Boolean] = js.undefined,
@@ -319,6 +320,7 @@ object TextInputProps {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
+    if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(blurOnSubmit)) __obj.updateDynamic("blurOnSubmit")(blurOnSubmit)

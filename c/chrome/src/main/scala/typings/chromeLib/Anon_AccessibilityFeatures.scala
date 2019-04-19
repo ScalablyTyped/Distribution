@@ -345,6 +345,16 @@ trait Anon_AccessibilityFeatures extends js.Object {
   ////////////////////
   val scriptBadgeNs: Anon_CallbackDetailsGetAttention
   ////////////////////
+  // Serial
+  ////////////////////
+  /**
+    * Use the <code>chrome.serial</code> API to read from and write to a device connected to a serial port.
+    * Permissions:  "enterprise.serial"
+    * Since: Chrome 29
+    * Important: This API works only on Chrome OS.
+    */
+  val serialNs: Anon_CallbackClearBreak
+  ////////////////////
   // Sessions
   ////////////////////
   /**
@@ -524,6 +534,7 @@ object Anon_AccessibilityFeatures {
     proxyNs: Anon_OnProxyError,
     runtimeNs: Anon_Application,
     scriptBadgeNs: Anon_CallbackDetailsGetAttention,
+    serialNs: Anon_CallbackClearBreak,
     sessionsNs: Anon_CallbackDevices,
     socketNs: Anon_Accept,
     storageNs: Anon_Local,
@@ -542,7 +553,7 @@ object Anon_AccessibilityFeatures {
     webstoreNs: Anon_Error,
     windowsNs: Anon_CallbackCreateCreateData
   ): Anon_AccessibilityFeatures = {
-    val __obj = js.Dynamic.literal(accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, bookmarksNs = bookmarksNs, browserActionNs = browserActionNs, browserNs = browserNs, browsingDataNs = browsingDataNs, castNs = castNs, commandsNs = commandsNs, contentSettingsNs = contentSettingsNs, contextMenusNs = contextMenusNs, cookiesNs = cookiesNs, declarativeContentNs = declarativeContentNs, declarativeWebRequestNs = declarativeWebRequestNs, desktopCaptureNs = desktopCaptureNs, devtoolsNs = devtoolsNs, documentScanNs = documentScanNs, downloadsNs = downloadsNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, extensionNs = extensionNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemProviderNs = fileSystemProviderNs, fontSettingsNs = fontSettingsNs, gcmNs = gcmNs, historyNs = historyNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, inputNs = inputNs, managementNs = managementNs, networkingNs = networkingNs, notificationsNs = notificationsNs, omniboxNs = omniboxNs, pageActionNs = pageActionNs, pageCaptureNs = pageCaptureNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, privacyNs = privacyNs, proxyNs = proxyNs, runtimeNs = runtimeNs, scriptBadgeNs = scriptBadgeNs, sessionsNs = sessionsNs, socketNs = socketNs, storageNs = storageNs, systemNs = systemNs, tabCaptureNs = tabCaptureNs, tabsNs = tabsNs, topSitesNs = topSitesNs, ttsEngineNs = ttsEngineNs, ttsNs = ttsNs, typesNs = typesNs, underscoreDebuggerNs = underscoreDebuggerNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webNavigationNs = webNavigationNs, webRequestNs = webRequestNs, webstoreNs = webstoreNs, windowsNs = windowsNs)
+    val __obj = js.Dynamic.literal(accessibilityFeaturesNs = accessibilityFeaturesNs, alarmsNs = alarmsNs, bookmarksNs = bookmarksNs, browserActionNs = browserActionNs, browserNs = browserNs, browsingDataNs = browsingDataNs, castNs = castNs, commandsNs = commandsNs, contentSettingsNs = contentSettingsNs, contextMenusNs = contextMenusNs, cookiesNs = cookiesNs, declarativeContentNs = declarativeContentNs, declarativeWebRequestNs = declarativeWebRequestNs, desktopCaptureNs = desktopCaptureNs, devtoolsNs = devtoolsNs, documentScanNs = documentScanNs, downloadsNs = downloadsNs, enterpriseNs = enterpriseNs, eventsNs = eventsNs, extensionNs = extensionNs, fileBrowserHandlerNs = fileBrowserHandlerNs, fileSystemProviderNs = fileSystemProviderNs, fontSettingsNs = fontSettingsNs, gcmNs = gcmNs, historyNs = historyNs, i18nNs = i18nNs, identityNs = identityNs, idleNs = idleNs, inputNs = inputNs, managementNs = managementNs, networkingNs = networkingNs, notificationsNs = notificationsNs, omniboxNs = omniboxNs, pageActionNs = pageActionNs, pageCaptureNs = pageCaptureNs, permissionsNs = permissionsNs, platformKeysNs = platformKeysNs, powerNs = powerNs, printerProviderNs = printerProviderNs, privacyNs = privacyNs, proxyNs = proxyNs, runtimeNs = runtimeNs, scriptBadgeNs = scriptBadgeNs, serialNs = serialNs, sessionsNs = sessionsNs, socketNs = socketNs, storageNs = storageNs, systemNs = systemNs, tabCaptureNs = tabCaptureNs, tabsNs = tabsNs, topSitesNs = topSitesNs, ttsEngineNs = ttsEngineNs, ttsNs = ttsNs, typesNs = typesNs, underscoreDebuggerNs = underscoreDebuggerNs, vpnProviderNs = vpnProviderNs, wallpaperNs = wallpaperNs, webNavigationNs = webNavigationNs, webRequestNs = webRequestNs, webstoreNs = webstoreNs, windowsNs = windowsNs)
   
     __obj.asInstanceOf[Anon_AccessibilityFeatures]
   }

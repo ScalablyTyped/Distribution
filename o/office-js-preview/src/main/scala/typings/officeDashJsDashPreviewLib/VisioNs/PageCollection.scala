@@ -59,6 +59,10 @@ class PageCollection ()
   def load(option: java.lang.String): PageCollection = js.native
   def load(option: js.Array[java.lang.String]): PageCollection = js.native
   def load(option: officeDashJsDashPreviewLib.OfficeExtensionNs.LoadOption): PageCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Visio.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.PageCollectionData = js.native
 }
 

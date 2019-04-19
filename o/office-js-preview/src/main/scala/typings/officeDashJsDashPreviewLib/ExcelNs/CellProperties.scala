@@ -5,10 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Represents the returned properties of getCellProperties. */
+/**
+  *
+  * Represents the returned properties of getCellProperties.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  */
 trait CellProperties extends SettableCellProperties {
+  /**
+    *
+    * Represents the `address` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var address: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    *
+    * Represents the `addressLocal` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var addressLocal: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    *
+    * Represents the `hidden` property.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
 }
 

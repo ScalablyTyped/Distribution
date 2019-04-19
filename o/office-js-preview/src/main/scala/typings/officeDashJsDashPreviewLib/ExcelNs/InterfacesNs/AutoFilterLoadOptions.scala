@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   *
   * Represents the AutoFilter object.
+  AutoFilter turns the values in Excel column into specific filters based on the cell contents.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -17,7 +18,7 @@ trait AutoFilterLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Array that holds all filter criterias in an autofiltered range. Read-Only.
+    * An array that holds all the filter criteria in the autofiltered range. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

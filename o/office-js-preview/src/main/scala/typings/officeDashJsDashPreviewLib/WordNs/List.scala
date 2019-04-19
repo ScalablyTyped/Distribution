@@ -373,7 +373,11 @@ class List ()
     * @param formatString Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
     */
   def setLevelNumbering(level: scala.Double, listNumbering: ListNumbering): scala.Unit = js.native
-  def setLevelNumbering(level: scala.Double, listNumbering: ListNumbering, formatString: js.Array[_]): scala.Unit = js.native
+  def setLevelNumbering(
+    level: scala.Double,
+    listNumbering: ListNumbering,
+    formatString: js.Array[java.lang.String | scala.Double]
+  ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_Arabic(
     level: scala.Double,
@@ -383,7 +387,7 @@ class List ()
   def setLevelNumbering_Arabic(
     level: scala.Double,
     listNumbering: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Arabic,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_LowerLetter(
@@ -394,7 +398,7 @@ class List ()
   def setLevelNumbering_LowerLetter(
     level: scala.Double,
     listNumbering: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LowerLetter,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_LowerRoman(
@@ -405,7 +409,7 @@ class List ()
   def setLevelNumbering_LowerRoman(
     level: scala.Double,
     listNumbering: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LowerRoman,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   /**
     *
@@ -426,7 +430,7 @@ class List ()
   def setLevelNumbering_None(
     level: scala.Double,
     listNumbering: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_UpperLetter(
@@ -437,7 +441,7 @@ class List ()
   def setLevelNumbering_UpperLetter(
     level: scala.Double,
     listNumbering: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UpperLetter,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   @JSName("setLevelNumbering")
   def setLevelNumbering_UpperRoman(
@@ -448,7 +452,7 @@ class List ()
   def setLevelNumbering_UpperRoman(
     level: scala.Double,
     listNumbering: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UpperRoman,
-    formatString: js.Array[_]
+    formatString: js.Array[java.lang.String | scala.Double]
   ): scala.Unit = js.native
   /**
     *

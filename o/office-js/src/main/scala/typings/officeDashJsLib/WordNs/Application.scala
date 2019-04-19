@@ -28,6 +28,10 @@ class Application ()
     */
   def createDocument(): DocumentCreated = js.native
   def createDocument(base64File: java.lang.String): DocumentCreated = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Word.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 

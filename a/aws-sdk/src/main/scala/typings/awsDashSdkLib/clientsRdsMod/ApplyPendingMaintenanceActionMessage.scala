@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ApplyPendingMaintenanceActionMessage extends js.Object {
   /**
-    * The pending maintenance action to apply to this resource. Valid values: system-update, db-upgrade 
+    * The pending maintenance action to apply to this resource. Valid values: system-update, db-upgrade, hardware-maintenance 
     */
   var ApplyAction: String
   /**
