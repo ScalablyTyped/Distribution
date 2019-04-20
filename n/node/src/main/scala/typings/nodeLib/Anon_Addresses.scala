@@ -10,7 +10,7 @@ trait Anon_Addresses extends js.Object {
   def apply(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -19,7 +19,7 @@ trait Anon_Addresses extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.ResolveOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
       scala.Unit
     ]
@@ -28,7 +28,7 @@ trait Anon_Addresses extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.ResolveWithTtlOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl], 
       scala.Unit
     ]

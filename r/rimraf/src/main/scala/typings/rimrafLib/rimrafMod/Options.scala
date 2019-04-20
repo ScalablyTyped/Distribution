@@ -15,7 +15,7 @@ trait Options extends js.Object {
     (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
+        /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
         /* stats */ nodeLib.fsMod.Stats, 
         scala.Unit
       ], 
@@ -29,7 +29,7 @@ trait Options extends js.Object {
   var rmdir: js.UndefOr[
     (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
-      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
+      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit], 
       scala.Unit
     ]) with rimrafLib.Anon_Path
   ] = js.undefined
@@ -38,7 +38,7 @@ trait Options extends js.Object {
     (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
+        /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
         /* stats */ nodeLib.fsMod.Stats, 
         scala.Unit
       ], 
@@ -49,7 +49,7 @@ trait Options extends js.Object {
   var unlink: js.UndefOr[
     (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
-      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
+      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit], 
       scala.Unit
     ]) with rimrafLib.Anon_Path
   ] = js.undefined
@@ -67,7 +67,7 @@ object Options {
     lstat: (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
+        /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
         /* stats */ nodeLib.fsMod.Stats, 
         scala.Unit
       ], 
@@ -79,14 +79,14 @@ object Options {
     readdirSync: rimrafLib.Anon_BufferOptions = null,
     rmdir: (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
-      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
+      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit], 
       scala.Unit
     ]) with rimrafLib.Anon_Path = null,
     rmdirSync: /* path */ nodeLib.fsMod.PathLike => scala.Unit = null,
     stat: (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
       /* callback */ js.Function2[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
+        /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
         /* stats */ nodeLib.fsMod.Stats, 
         scala.Unit
       ], 
@@ -95,7 +95,7 @@ object Options {
     statSync: /* path */ nodeLib.fsMod.PathLike => nodeLib.fsMod.Stats = null,
     unlink: (js.Function2[
       /* path */ nodeLib.fsMod.PathLike, 
-      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
+      /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit], 
       scala.Unit
     ]) with rimrafLib.Anon_Path = null,
     unlinkSync: /* path */ nodeLib.fsMod.PathLike => scala.Unit = null

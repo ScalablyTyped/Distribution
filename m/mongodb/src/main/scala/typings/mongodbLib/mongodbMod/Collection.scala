@@ -26,7 +26,7 @@ trait Collection[TSchema] extends js.Object {
   /**
     * The current write concern values.
     */
-  var writeConcern: js.Any = js.native
+  var writeConcern: WriteConcern = js.native
   def aggregate[T](): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#aggregate */
   def aggregate[T](callback: MongoCallback[AggregationCursor[T]]): AggregationCursor[T] = js.native

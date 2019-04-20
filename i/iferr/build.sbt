@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iferr"
-version := "1.0-dt-20180522Z-f323fd"
+version := "1.0-dt-20190419Z-afd9f3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

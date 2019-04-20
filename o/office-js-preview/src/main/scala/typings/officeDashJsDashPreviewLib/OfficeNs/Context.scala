@@ -114,20 +114,21 @@ trait Context extends js.Object {
   /**
     * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
     *
-    * Namespaces:
-    *
-    * - diagnostics: Provides diagnostic information to an Outlook add-in.
-    *
-    * - item: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
-    *
-    * - userProfile: Provides information about the user in an Outlook add-in.
-    *
     * [Api set: Mailbox 1.0]
     *
     * @remarks
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    * 
+    * 
+    * **Namespaces**:
+    *
+    * - `diagnostics`: Provides diagnostic information to an Outlook add-in.
+    *
+    * - `item`: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
+    *
+    * - `userProfile`: Provides information about the user in an Outlook add-in.
     */
   var mailbox: Mailbox
   /**

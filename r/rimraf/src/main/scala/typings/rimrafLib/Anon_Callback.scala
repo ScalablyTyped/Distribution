@@ -10,12 +10,12 @@ trait Anon_Callback extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
     mode: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     mode: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronous chmod(2) - Change permissions of a file.

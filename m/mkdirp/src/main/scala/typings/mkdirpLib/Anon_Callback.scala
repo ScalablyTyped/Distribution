@@ -9,32 +9,32 @@ import scala.scalajs.js.annotation._
 trait Anon_Callback extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.fsMod.MakeDirectoryOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronous mkdir(2) - create a directory.

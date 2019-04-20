@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UserInfoButton")
 @js.native
-class UserInfoButton () extends CreatedButton {
-  def onTap(callback: js.Function1[/* res */ Anon_EncryptedData, scala.Unit]): scala.Unit = js.native
-}
+class UserInfoButton () extends CreatedButton
 

@@ -43,25 +43,25 @@ object streamNs extends js.Object {
   
   def finished(
     stream: nodeLib.NodeJSNs.ReadWriteStream,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException | scala.Null], scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def finished(
     stream: nodeLib.NodeJSNs.ReadableStream,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException | scala.Null], scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def finished(
     stream: nodeLib.NodeJSNs.WritableStream,
-    callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]
+    callback: js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException | scala.Null], scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def pipeline(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
-    streams: (nodeLib.NodeJSNs.ReadWriteStream | nodeLib.NodeJSNs.WritableStream | (js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]))*
+    streams: (nodeLib.NodeJSNs.ReadWriteStream | nodeLib.NodeJSNs.WritableStream | (js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]))*
   ): nodeLib.NodeJSNs.WritableStream = js.native
   def pipeline(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.WritableStream,
-    streams: (nodeLib.NodeJSNs.ReadWriteStream | nodeLib.NodeJSNs.WritableStream | (js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]))*
+    streams: (nodeLib.NodeJSNs.ReadWriteStream | nodeLib.NodeJSNs.WritableStream | (js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]))*
   ): nodeLib.NodeJSNs.WritableStream = js.native
   def pipeline(
     streams: js.Array[
@@ -72,20 +72,20 @@ object streamNs extends js.Object {
     streams: js.Array[
       nodeLib.NodeJSNs.ReadableStream | nodeLib.NodeJSNs.WritableStream | nodeLib.NodeJSNs.ReadWriteStream
     ],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): nodeLib.NodeJSNs.WritableStream = js.native
   def pipeline[T /* <: nodeLib.NodeJSNs.WritableStream */](stream1: nodeLib.NodeJSNs.ReadableStream, stream2: T): T = js.native
   def pipeline[T /* <: nodeLib.NodeJSNs.WritableStream */](
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: T,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): T = js.native
   def pipeline[T /* <: nodeLib.NodeJSNs.WritableStream */](stream1: nodeLib.NodeJSNs.ReadableStream, stream2: nodeLib.NodeJSNs.ReadWriteStream, stream3: T): T = js.native
   def pipeline[T /* <: nodeLib.NodeJSNs.WritableStream */](
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
     stream3: T,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): T = js.native
   def pipeline[T /* <: nodeLib.NodeJSNs.WritableStream */](
     stream1: nodeLib.NodeJSNs.ReadableStream,
@@ -98,7 +98,7 @@ object streamNs extends js.Object {
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
     stream3: nodeLib.NodeJSNs.ReadWriteStream,
     stream4: T,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): T = js.native
   def pipeline[T /* <: nodeLib.NodeJSNs.WritableStream */](
     stream1: nodeLib.NodeJSNs.ReadableStream,
@@ -113,7 +113,7 @@ object streamNs extends js.Object {
     stream3: nodeLib.NodeJSNs.ReadWriteStream,
     stream4: nodeLib.NodeJSNs.ReadWriteStream,
     stream5: T,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): T = js.native
   @JSName("finished")
   @js.native

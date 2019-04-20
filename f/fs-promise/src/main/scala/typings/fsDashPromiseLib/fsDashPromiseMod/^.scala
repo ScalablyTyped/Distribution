@@ -35,12 +35,12 @@ object ^ extends js.Object {
     */
   def access(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def access(
     path: nodeLib.fsMod.PathLike,
     mode: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously tests a user's permissions for the file specified by path.
@@ -50,7 +50,7 @@ object ^ extends js.Object {
   def access(
     path: nodeLib.fsMod.PathLike,
     mode: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronously tests a user's permissions for the file specified by path.
@@ -107,7 +107,7 @@ object ^ extends js.Object {
   def appendFile(
     file: nodeLib.fsMod.PathLike,
     data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously append data to a file, creating the file if it does not exist.
@@ -125,7 +125,7 @@ object ^ extends js.Object {
     file: nodeLib.fsMod.PathLike,
     data: js.Any,
     options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def appendFile(file: scala.Double, data: java.lang.String): js.Promise[scala.Unit] = js.native
   def appendFile(
@@ -138,13 +138,13 @@ object ^ extends js.Object {
   def appendFile(
     file: scala.Double,
     data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def appendFile(
     file: scala.Double,
     data: js.Any,
     options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def appendFile(file: scala.Double, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
   def appendFile(
@@ -202,12 +202,12 @@ object ^ extends js.Object {
   def chmod(
     path: nodeLib.fsMod.PathLike,
     mode: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def chmod(
     path: nodeLib.fsMod.PathLike,
     mode: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous chmod(2) - Change permissions of a file.
@@ -238,7 +238,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     uid: scala.Double,
     gid: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous chown(2) - Change ownership of a file.
@@ -253,7 +253,7 @@ object ^ extends js.Object {
   def close(
     fd: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -275,7 +275,7 @@ object ^ extends js.Object {
   def copyFile(
     src: nodeLib.fsMod.PathLike,
     dest: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
@@ -291,7 +291,7 @@ object ^ extends js.Object {
     src: nodeLib.fsMod.PathLike,
     dest: nodeLib.fsMod.PathLike,
     flags: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronously copies src to dest. By default, dest is overwritten if it already exists.
@@ -398,7 +398,7 @@ object ^ extends js.Object {
     fd: scala.Double,
     mode: java.lang.String,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -407,7 +407,7 @@ object ^ extends js.Object {
     fd: scala.Double,
     mode: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -428,7 +428,7 @@ object ^ extends js.Object {
     uid: scala.Double,
     gid: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -441,7 +441,10 @@ object ^ extends js.Object {
     * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param fd A file descriptor.
     */
-  def fdatasync(fd: scala.Double, callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]): scala.Unit = js.native
+  def fdatasync(
+    fd: scala.Double,
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Synchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param fd A file descriptor.
@@ -455,7 +458,7 @@ object ^ extends js.Object {
   def fstat(
     fd: scala.Double,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       _ | scala.Unit
     ]
@@ -473,7 +476,7 @@ object ^ extends js.Object {
   def fsync(
     fd: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -490,14 +493,14 @@ object ^ extends js.Object {
   def ftruncate(
     fd: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def ftruncate(
     fd: scala.Double,
     len: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def ftruncate(fd: scala.Double, len: scala.Double): js.Promise[scala.Unit] = js.native
   /**
@@ -509,14 +512,14 @@ object ^ extends js.Object {
     fd: scala.Double,
     len: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def ftruncate(
     fd: scala.Double,
     len: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous ftruncate(2) - Truncate a file to a specified length.
@@ -535,25 +538,25 @@ object ^ extends js.Object {
     fd: scala.Double,
     atime: java.lang.String,
     mtime: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def futimes(
     fd: scala.Double,
     atime: java.lang.String,
     mtime: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def futimes(
     fd: scala.Double,
     atime: java.lang.String,
     mtime: stdLib.Date,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def futimes(
     fd: scala.Double,
     atime: scala.Double,
     mtime: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def futimes(fd: scala.Double, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = js.native
   def futimes(
@@ -561,7 +564,7 @@ object ^ extends js.Object {
     atime: scala.Double,
     mtime: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -571,7 +574,7 @@ object ^ extends js.Object {
     atime: scala.Double,
     mtime: stdLib.Date,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -579,7 +582,7 @@ object ^ extends js.Object {
     fd: scala.Double,
     atime: stdLib.Date,
     mtime: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def futimes(fd: scala.Double, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
   def futimes(
@@ -587,7 +590,7 @@ object ^ extends js.Object {
     atime: stdLib.Date,
     mtime: scala.Double,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -597,7 +600,7 @@ object ^ extends js.Object {
     atime: stdLib.Date,
     mtime: stdLib.Date,
     callback: js.Function1[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -648,12 +651,12 @@ object ^ extends js.Object {
   def lchmod(
     path: nodeLib.fsMod.PathLike,
     mode: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def lchmod(
     path: nodeLib.fsMod.PathLike,
     mode: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
@@ -684,7 +687,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     uid: scala.Double,
     gid: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
@@ -699,7 +702,7 @@ object ^ extends js.Object {
   def link(
     existingPath: nodeLib.fsMod.PathLike,
     newPath: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def link(srcpath: java.lang.String, dstpath: java.lang.String): js.Promise[scala.Unit] = js.native
   def link(
@@ -748,7 +751,7 @@ object ^ extends js.Object {
   def lstat(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ]
@@ -798,22 +801,22 @@ object ^ extends js.Object {
     */
   def mkdir(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.fsMod.MakeDirectoryOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronous mkdir(2) - create a directory.
@@ -824,12 +827,12 @@ object ^ extends js.Object {
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous mkdir(2) - create a directory.
@@ -850,7 +853,7 @@ object ^ extends js.Object {
   def mkdtemp(
     prefix: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       /* folder */ java.lang.String, 
       scala.Unit
     ]
@@ -860,7 +863,7 @@ object ^ extends js.Object {
     prefix: java.lang.String,
     options: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
       nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
@@ -869,7 +872,7 @@ object ^ extends js.Object {
     prefix: java.lang.String,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
@@ -887,7 +890,11 @@ object ^ extends js.Object {
   def mkdtemp(
     prefix: java.lang.String,
     options: nodeLib.Anon_BufferEncoding,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* folder */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
@@ -897,7 +904,11 @@ object ^ extends js.Object {
   def mkdtemp(
     prefix: java.lang.String,
     options: nodeLib.Anon_EncodingBufferEncoding,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* folder */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
@@ -908,7 +919,7 @@ object ^ extends js.Object {
     prefix: java.lang.String,
     options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* folder */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -916,13 +927,17 @@ object ^ extends js.Object {
   def mkdtemp(
     prefix: java.lang.String,
     options: nodeLib.BufferEncoding,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* folder */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def mkdtemp(
     prefix: java.lang.String,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
@@ -961,7 +976,11 @@ object ^ extends js.Object {
   def mkdtemp_buffer(
     prefix: java.lang.String,
     options: fsDashPromiseLib.fsDashPromiseLibStrings.buffer,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* folder */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def move(src: java.lang.String, dst: java.lang.String): js.Promise[scala.Unit] = js.native
   def open(path: java.lang.String, flags: java.lang.String): js.Promise[scala.Double] = js.native
@@ -1023,7 +1042,11 @@ object ^ extends js.Object {
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Asynchronous open(2) - open and possibly create a file.
@@ -1034,54 +1057,90 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     flags: java.lang.String,
     mode: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: java.lang.String,
     mode: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: java.lang.String,
     mode: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: java.lang.String,
     mode: scala.Null,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: scala.Double,
     mode: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: scala.Double,
     mode: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: scala.Double,
     mode: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def open(
     path: nodeLib.fsMod.PathLike,
     flags: scala.Double,
     mode: scala.Null,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* fd */ scala.Double, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* fd */ scala.Double, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Synchronous open(2) - open and possibly create a file, returning a file descriptor..
@@ -1137,7 +1196,7 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* bytesRead */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -1150,7 +1209,7 @@ object ^ extends js.Object {
     length: scala.Double,
     position: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* bytesRead */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -1243,13 +1302,17 @@ object ^ extends js.Object {
     */
   def readFile(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
@@ -1258,7 +1321,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
@@ -1275,7 +1338,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* data */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1291,7 +1354,11 @@ object ^ extends js.Object {
   def readFile(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFlagString,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Asynchronously reads the entire contents of a file.
@@ -1303,26 +1370,34 @@ object ^ extends js.Object {
   def readFile(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFlag,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
@@ -1331,7 +1406,7 @@ object ^ extends js.Object {
     path: scala.Double,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
@@ -1340,7 +1415,7 @@ object ^ extends js.Object {
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* data */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1348,18 +1423,26 @@ object ^ extends js.Object {
   def readFile(
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlagString,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlag,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
@@ -1474,7 +1557,7 @@ object ^ extends js.Object {
   def readdir(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -1483,7 +1566,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -1492,7 +1575,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -1506,7 +1589,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_BufferEncodingFalse,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -1520,7 +1603,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFalseWithFileTypes,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -1534,7 +1617,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFalse,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -1548,7 +1631,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_True,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.fsMod.Dirent], 
       scala.Unit
     ]
@@ -1557,7 +1640,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -1566,7 +1649,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -1607,7 +1690,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: fsDashPromiseLib.fsDashPromiseLibStrings.buffer,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -1629,7 +1712,7 @@ object ^ extends js.Object {
   def readlink(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ java.lang.String, 
       scala.Unit
     ]
@@ -1638,7 +1721,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1647,7 +1730,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* linkString */ java.lang.String), 
       scala.Unit
     ]
@@ -1661,7 +1744,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1675,7 +1758,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ java.lang.String, 
       scala.Unit
     ]
@@ -1689,7 +1772,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1698,7 +1781,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ java.lang.String, 
       scala.Unit
     ]
@@ -1707,7 +1790,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* linkString */ java.lang.String), 
       scala.Unit
     ]
@@ -1742,7 +1825,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: fsDashPromiseLib.fsDashPromiseLibStrings.buffer,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* linkString */ nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1764,7 +1847,7 @@ object ^ extends js.Object {
   def realpath(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
@@ -1773,7 +1856,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1782,7 +1865,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
@@ -1796,7 +1879,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1810,7 +1893,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
@@ -1824,7 +1907,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1833,7 +1916,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
@@ -1842,7 +1925,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
@@ -1877,7 +1960,7 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: fsDashPromiseLib.fsDashPromiseLibStrings.buffer,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ nodeLib.Buffer, 
       scala.Unit
     ]
@@ -1899,7 +1982,7 @@ object ^ extends js.Object {
   def rename(
     oldPath: nodeLib.fsMod.PathLike,
     newPath: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous rename(2) - Change the name or location of a file or directory.
@@ -1925,7 +2008,7 @@ object ^ extends js.Object {
     */
   def rmdir(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous rmdir(2) - delete a directory.
@@ -1949,7 +2032,7 @@ object ^ extends js.Object {
   def stat(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ]
@@ -2019,13 +2102,13 @@ object ^ extends js.Object {
   def symlink(
     target: nodeLib.fsMod.PathLike,
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
     target: nodeLib.fsMod.PathLike,
     path: nodeLib.fsMod.PathLike,
     `type`: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
@@ -2038,13 +2121,13 @@ object ^ extends js.Object {
     target: nodeLib.fsMod.PathLike,
     path: nodeLib.fsMod.PathLike,
     `type`: nodeLib.fsMod.symlinkNs.Type,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
     target: nodeLib.fsMod.PathLike,
     path: nodeLib.fsMod.PathLike,
     `type`: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous symlink(2) - Create a new symbolic link to an existing file.
@@ -2084,12 +2167,12 @@ object ^ extends js.Object {
     */
   def truncate(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def truncate(
     path: nodeLib.fsMod.PathLike,
     len: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronous truncate(2) - Truncate a file to a specified length.
@@ -2099,12 +2182,12 @@ object ^ extends js.Object {
   def truncate(
     path: nodeLib.fsMod.PathLike,
     len: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def truncate(
     path: nodeLib.fsMod.PathLike,
     len: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous truncate(2) - Truncate a file to a specified length.
@@ -2129,7 +2212,7 @@ object ^ extends js.Object {
     */
   def unlink(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronous unlink(2) - delete a name and possibly the file it refers to.
@@ -2212,55 +2295,55 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     atime: java.lang.String,
     mtime: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: java.lang.String,
     mtime: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: java.lang.String,
     mtime: stdLib.Date,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: scala.Double,
     mtime: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: scala.Double,
     mtime: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: scala.Double,
     mtime: stdLib.Date,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: stdLib.Date,
     mtime: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: stdLib.Date,
     mtime: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def utimes(
     path: nodeLib.fsMod.PathLike,
     atime: stdLib.Date,
     mtime: stdLib.Date,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronously change file timestamps of the file referenced by the supplied path.
@@ -2437,7 +2520,7 @@ object ^ extends js.Object {
     fd: scala.Double,
     string: js.Any,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2448,7 +2531,7 @@ object ^ extends js.Object {
     string: js.Any,
     position: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2460,7 +2543,7 @@ object ^ extends js.Object {
     position: js.UndefOr[scala.Nothing],
     encoding: java.lang.String,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2472,7 +2555,7 @@ object ^ extends js.Object {
     position: js.UndefOr[scala.Nothing],
     encoding: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2484,7 +2567,7 @@ object ^ extends js.Object {
     position: js.UndefOr[scala.Nothing],
     encoding: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2501,7 +2584,7 @@ object ^ extends js.Object {
     string: js.Any,
     position: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2520,7 +2603,7 @@ object ^ extends js.Object {
     position: scala.Double,
     encoding: java.lang.String,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      (/* err */ nodeLib.NodeJSNs.ErrnoException) | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2532,7 +2615,7 @@ object ^ extends js.Object {
     position: scala.Double,
     encoding: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2544,7 +2627,7 @@ object ^ extends js.Object {
     position: scala.Double,
     encoding: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2555,7 +2638,7 @@ object ^ extends js.Object {
     string: js.Any,
     position: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2567,7 +2650,7 @@ object ^ extends js.Object {
     position: scala.Null,
     encoding: java.lang.String,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2579,7 +2662,7 @@ object ^ extends js.Object {
     position: scala.Null,
     encoding: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2591,7 +2674,7 @@ object ^ extends js.Object {
     position: scala.Null,
     encoding: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
       scala.Unit
@@ -2605,7 +2688,7 @@ object ^ extends js.Object {
     fd: scala.Double,
     buffer: TBuffer,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2616,7 +2699,7 @@ object ^ extends js.Object {
     buffer: TBuffer,
     offset: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2628,7 +2711,7 @@ object ^ extends js.Object {
     offset: js.UndefOr[scala.Nothing],
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2648,7 +2731,7 @@ object ^ extends js.Object {
     length: js.UndefOr[scala.Double | scala.Null],
     position: js.UndefOr[scala.Double | scala.Null],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2660,7 +2743,7 @@ object ^ extends js.Object {
     offset: js.UndefOr[scala.Nothing],
     length: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2672,7 +2755,7 @@ object ^ extends js.Object {
     offset: js.UndefOr[scala.Nothing],
     length: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2688,7 +2771,7 @@ object ^ extends js.Object {
     buffer: TBuffer,
     offset: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2700,7 +2783,7 @@ object ^ extends js.Object {
     offset: scala.Double,
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2718,7 +2801,7 @@ object ^ extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2730,7 +2813,7 @@ object ^ extends js.Object {
     offset: scala.Double,
     length: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2741,7 +2824,7 @@ object ^ extends js.Object {
     buffer: TBuffer,
     offset: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2753,7 +2836,7 @@ object ^ extends js.Object {
     offset: scala.Null,
     length: js.UndefOr[scala.Nothing],
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2765,7 +2848,7 @@ object ^ extends js.Object {
     offset: scala.Null,
     length: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2777,7 +2860,7 @@ object ^ extends js.Object {
     offset: scala.Null,
     length: scala.Null,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* buffer */ TBuffer, 
       scala.Unit
@@ -2847,7 +2930,7 @@ object ^ extends js.Object {
   def writeFile(
     path: nodeLib.fsMod.PathLike,
     data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
@@ -2865,18 +2948,18 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     data: js.Any,
     options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(
     path: scala.Double,
     data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(
     path: scala.Double,
     data: js.Any,
     options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Synchronously writes data to a file, replacing the file if it already exists.

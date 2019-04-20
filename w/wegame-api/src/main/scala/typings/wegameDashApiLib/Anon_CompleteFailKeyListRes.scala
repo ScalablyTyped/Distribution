@@ -16,7 +16,7 @@ trait Anon_CompleteFailKeyListRes extends js.Object {
     * 群分享对应的 shareTicket
     */
   var shareTicket: java.lang.String
-  var success: js.UndefOr[js.Function1[/* res */ Anon_DataArrayUserGameData, scala.Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ Anon_DataReadonlyArrayUserGameData, scala.Unit]] = js.undefined
 }
 
 object Anon_CompleteFailKeyListRes {
@@ -26,7 +26,7 @@ object Anon_CompleteFailKeyListRes {
     shareTicket: java.lang.String,
     complete: () => scala.Unit = null,
     fail: () => scala.Unit = null,
-    success: /* res */ Anon_DataArrayUserGameData => scala.Unit = null
+    success: /* res */ Anon_DataReadonlyArrayUserGameData => scala.Unit = null
   ): Anon_CompleteFailKeyListRes = {
     val __obj = js.Dynamic.literal(keyList = keyList, shareTicket = shareTicket)
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

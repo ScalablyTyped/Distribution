@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 package object clientsWorkspacesMod {
   type ARN = java.lang.String
   type AccountModificationList = js.Array[AccountModification]
+  type AdditionalInfo = java.lang.String
   type Alias = java.lang.String
   type BooleanObject = scala.Boolean
   type BundleId = java.lang.String

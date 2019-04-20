@@ -13,7 +13,7 @@ trait FsImplementation extends js.Object {
   var stat_Original: (js.Function2[
     /* path */ nodeLib.fsMod.PathLike, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ], 
@@ -21,37 +21,37 @@ trait FsImplementation extends js.Object {
   ]) with mkdirpLib.Anon_Path = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.fsMod.MakeDirectoryOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def stat(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ]

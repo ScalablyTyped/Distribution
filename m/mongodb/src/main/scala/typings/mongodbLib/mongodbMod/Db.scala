@@ -21,7 +21,7 @@ class Db protected ()
   var options: js.Any = js.native
   var serverConfig: Server | ReplSet | Mongos = js.native
   var slaveOk: scala.Boolean = js.native
-  var writeConcern: js.Any = js.native
+  var writeConcern: WriteConcern = js.native
   def addUser(username: java.lang.String, password: java.lang.String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#addUser */
   def addUser(username: java.lang.String, password: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native

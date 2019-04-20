@@ -42,7 +42,7 @@ object ^ extends js.Object {
   def lookup(
     hostname: java.lang.String,
     callback: js.Function3[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* address */ java.lang.String, 
       /* family */ scala.Double, 
       scala.Unit
@@ -52,7 +52,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     family: scala.Double,
     callback: js.Function3[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* address */ java.lang.String, 
       /* family */ scala.Double, 
       scala.Unit
@@ -62,7 +62,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.LookupAllOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.LookupAddress], 
       scala.Unit
     ]
@@ -71,7 +71,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.LookupOneOptions,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* address */ java.lang.String, 
       /* family */ scala.Double, 
       scala.Unit
@@ -81,7 +81,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.LookupOptions,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* address */ java.lang.String | js.Array[nodeLib.dnsMod.LookupAddress], 
       /* family */ scala.Double, 
       scala.Unit
@@ -91,7 +91,7 @@ object ^ extends js.Object {
     address: java.lang.String,
     port: scala.Double,
     callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* hostname */ java.lang.String, 
       /* service */ java.lang.String, 
       scala.Unit
@@ -102,7 +102,7 @@ object ^ extends js.Object {
   def resolve(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -111,7 +111,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       (/* addresses */ js.Array[java.lang.String]) | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord] | nodeLib.dnsMod.SoaRecord, 
       scala.Unit
     ]
@@ -120,7 +120,7 @@ object ^ extends js.Object {
   def resolve4(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -129,7 +129,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.ResolveOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
       scala.Unit
     ]
@@ -138,7 +138,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.ResolveWithTtlOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl], 
       scala.Unit
     ]
@@ -147,7 +147,7 @@ object ^ extends js.Object {
   def resolve6(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -156,7 +156,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.ResolveOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
       scala.Unit
     ]
@@ -165,7 +165,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     options: nodeLib.dnsMod.ResolveWithTtlOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl], 
       scala.Unit
     ]
@@ -173,7 +173,7 @@ object ^ extends js.Object {
   def resolveAny(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.AnyRecord], 
       scala.Unit
     ]
@@ -182,7 +182,7 @@ object ^ extends js.Object {
   def resolveCname(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -191,7 +191,7 @@ object ^ extends js.Object {
   def resolveMx(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.MxRecord], 
       scala.Unit
     ]
@@ -199,7 +199,7 @@ object ^ extends js.Object {
   def resolveNaptr(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.NaptrRecord], 
       scala.Unit
     ]
@@ -208,7 +208,7 @@ object ^ extends js.Object {
   def resolveNs(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -216,7 +216,7 @@ object ^ extends js.Object {
   def resolvePtr(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -224,7 +224,7 @@ object ^ extends js.Object {
   def resolveSoa(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* address */ nodeLib.dnsMod.SoaRecord, 
       scala.Unit
     ]
@@ -233,7 +233,7 @@ object ^ extends js.Object {
   def resolveSrv(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.SrvRecord | java.lang.String], 
       scala.Unit
     ]
@@ -242,7 +242,7 @@ object ^ extends js.Object {
   def resolveTxt(
     hostname: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* addresses */ js.Array[js.Array[java.lang.String] | java.lang.String], 
       scala.Unit
     ]
@@ -252,7 +252,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.A,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -262,7 +262,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.AAAA,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -272,7 +272,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.ANY,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.AnyRecord], 
       scala.Unit
     ]
@@ -282,7 +282,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.CNAME,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -292,7 +292,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.MX,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.MxRecord], 
       scala.Unit
     ]
@@ -302,7 +302,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.NAPTR,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.NaptrRecord], 
       scala.Unit
     ]
@@ -312,7 +312,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.NS,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -322,7 +322,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.PTR,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -332,7 +332,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.SOA,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ nodeLib.dnsMod.SoaRecord, 
       scala.Unit
     ]
@@ -342,7 +342,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.SRV,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.SrvRecord], 
       scala.Unit
     ]
@@ -352,7 +352,7 @@ object ^ extends js.Object {
     hostname: java.lang.String,
     rrtype: mzLib.mzLibStrings.TXT,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[js.Array[java.lang.String]], 
       scala.Unit
     ]
@@ -361,7 +361,7 @@ object ^ extends js.Object {
   def reverse(
     ip: java.lang.String,
     callback: js.Function2[
-      (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ stdLib.Error), 
+      nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
       /* hostnames */ /* domains */ js.Array[java.lang.String], 
       scala.Unit
     ]

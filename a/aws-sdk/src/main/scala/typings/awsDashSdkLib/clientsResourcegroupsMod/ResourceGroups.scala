@@ -95,14 +95,14 @@ trait ResourceGroups
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetGroupQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of tags that are associated with a resource, specified by an ARN.
+    * Returns a list of tags that are associated with a resource group, specified by an ARN.
     */
   def getTags(): awsDashSdkLib.libRequestMod.Request[GetTagsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getTags(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTagsOutput, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetTagsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of tags that are associated with a resource, specified by an ARN.
+    * Returns a list of tags that are associated with a resource group, specified by an ARN.
     */
   def getTags(params: GetTagsInput): awsDashSdkLib.libRequestMod.Request[GetTagsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getTags(

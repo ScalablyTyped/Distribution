@@ -10,7 +10,7 @@ trait Anon_A extends js.Object {
   def apply(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -19,7 +19,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord], 
       scala.Unit
     ]
@@ -28,7 +28,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.AAAA,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -37,7 +37,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.ANY,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.AnyRecord], 
       scala.Unit
     ]
@@ -46,7 +46,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.A,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -55,7 +55,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.CNAME,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -64,7 +64,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.MX,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.MxRecord], 
       scala.Unit
     ]
@@ -73,7 +73,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.NAPTR,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.NaptrRecord], 
       scala.Unit
     ]
@@ -82,7 +82,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.NS,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -91,7 +91,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.PTR,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -100,7 +100,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.SOA,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ nodeLib.dnsMod.SoaRecord, 
       scala.Unit
     ]
@@ -109,7 +109,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.SRV,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[nodeLib.dnsMod.SrvRecord], 
       scala.Unit
     ]
@@ -118,7 +118,7 @@ trait Anon_A extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.TXT,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[js.Array[java.lang.String]], 
       scala.Unit
     ]

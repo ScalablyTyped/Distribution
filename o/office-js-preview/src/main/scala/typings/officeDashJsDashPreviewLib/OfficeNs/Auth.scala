@@ -21,7 +21,9 @@ trait Auth extends js.Object {
     * Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     *
     * @remarks
+    * 
     * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
     *
     * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational 

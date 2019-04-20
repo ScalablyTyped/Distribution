@@ -1,7 +1,17 @@
 ```
-// Type definitions for escape-string-regexp 1.0
-// Project: https://github.com/sindresorhus/escape-string-regexp
-// Definitions by: kruncher <https://github.com/kruncher>
-//                 faergeek <https://github.com/faergeek>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Escape RegExp special characters.
+
+You can also use this to escape a string that is inserted into the middle of a regex, for example, into a character class.
+
+@example
+```
+import escapeStringRegexp = require('escape-string-regexp');
+
+const escapedString = escapeStringRegexp('How much $ for a 🦄?');
+//=> 'How much \\$ for a 🦄\\?'
+
+new RegExp(escapedString);
+```
+*/
 ```

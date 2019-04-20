@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait CreateTagsRequest extends js.Object {
   /**
-    * The identifier of the WorkSpaces resource. The supported resource types are WorkSpaces, registered directories, images, custom bundles, and IP access control groups.
+    * The identifier of the WorkSpace. To find this ID, use DescribeWorkspaces.
     */
   var ResourceId: NonEmptyString
   /**
-    * The tags. Each WorkSpaces resource can have a maximum of 50 tags.
+    * The tags. Each WorkSpace can have a maximum of 50 tags.
     */
   var Tags: TagList
 }

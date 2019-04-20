@@ -34,7 +34,7 @@ trait DbCreateOptions extends CommonOptions {
   /**
     * ES6 compatible promise constructor
     */
-  var promiseLibrary: js.UndefOr[js.Object] = js.undefined
+  var promiseLibrary: js.UndefOr[stdLib.PromiseConstructor] = js.undefined
   /**
     * Default: false; Promotes Binary BSON values to native Node Buffers
     */
@@ -54,7 +54,7 @@ trait DbCreateOptions extends CommonOptions {
   /**
     * https://docs.mongodb.com/manual/reference/read-concern/#read-concern
     */
-  var readConcern: js.UndefOr[ReadConcern] = js.undefined
+  var readConcern: js.UndefOr[ReadConcern | java.lang.String] = js.undefined
   /**
     * the prefered read preference. use 'ReadPreference' class.
     */
@@ -75,12 +75,12 @@ object DbCreateOptions {
     j: js.UndefOr[scala.Boolean] = js.undefined,
     native_parser: js.UndefOr[scala.Boolean] = js.undefined,
     pkFactory: js.Object = null,
-    promiseLibrary: js.Object = null,
+    promiseLibrary: stdLib.PromiseConstructor = null,
     promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
     promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
     promoteValues: js.UndefOr[scala.Boolean] = js.undefined,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
-    readConcern: ReadConcern = null,
+    readConcern: ReadConcern | java.lang.String = null,
     readPreference: ReadPreference | java.lang.String = null,
     serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined,
     session: ClientSession = null,
@@ -100,7 +100,7 @@ object DbCreateOptions {
     if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
     if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern)
+    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
     if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
     if (session != null) __obj.updateDynamic("session")(session)

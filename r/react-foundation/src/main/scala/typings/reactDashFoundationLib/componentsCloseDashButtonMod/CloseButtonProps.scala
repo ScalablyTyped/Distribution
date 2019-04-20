@@ -6,21 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactLib.reactMod.ButtonHTMLAttributes because var conflicts: className. Inlined autoFocus, disabled, form, formAction, formEncType, formMethod, formNoValidate, formTarget, name, `type`, value */ trait CloseButtonProps
-  extends reactDashFoundationLib.utilsMod.FlexboxPropTypes {
-  var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var form: js.UndefOr[java.lang.String] = js.undefined
-  var formAction: js.UndefOr[java.lang.String] = js.undefined
-  var formEncType: js.UndefOr[java.lang.String] = js.undefined
-  var formMethod: js.UndefOr[java.lang.String] = js.undefined
-  var formNoValidate: js.UndefOr[scala.Boolean] = js.undefined
-  var formTarget: js.UndefOr[java.lang.String] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[
-    reactLib.reactLibStrings.submit | reactLib.reactLibStrings.reset | reactLib.reactLibStrings.button
-  ] = js.undefined
-  var value: js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double] = js.undefined
+- reactDashFoundationLib.utilsMod.FlexboxPropTypes because var conflicts: className. Inlined alignX, alignY, selfAlignX, selfAlignY, centerAlign, flexContainer, flexDirRow, flexDirRowRev, flexDirCol, flexDirColRev, flexChild, flexOrder, flexOrderSmall, flexOrderMedium, flexOrderLarge */ trait CloseButtonProps
+  extends reactLib.reactMod.ButtonHTMLAttributes[stdLib.HTMLButtonElement] {
+  var alignX: js.UndefOr[reactDashFoundationLib.enumsMod.HorizontalAlignments] = js.undefined
+  var alignY: js.UndefOr[reactDashFoundationLib.enumsMod.VerticalAlignments] = js.undefined
+  var centerAlign: js.UndefOr[scala.Boolean] = js.undefined
+  var flexChild: js.UndefOr[reactDashFoundationLib.enumsMod.SpaceControls] = js.undefined
+  var flexContainer: js.UndefOr[scala.Boolean] = js.undefined
+  var flexDirCol: js.UndefOr[reactDashFoundationLib.enumsMod.ExtendedBreakpoints] = js.undefined
+  var flexDirColRev: js.UndefOr[reactDashFoundationLib.enumsMod.ExtendedBreakpoints] = js.undefined
+  var flexDirRow: js.UndefOr[reactDashFoundationLib.enumsMod.ExtendedBreakpoints] = js.undefined
+  var flexDirRowRev: js.UndefOr[reactDashFoundationLib.enumsMod.ExtendedBreakpoints] = js.undefined
+  var flexOrder: js.UndefOr[scala.Double] = js.undefined
+  var flexOrderLarge: js.UndefOr[scala.Double] = js.undefined
+  var flexOrderMedium: js.UndefOr[scala.Double] = js.undefined
+  var flexOrderSmall: js.UndefOr[scala.Double] = js.undefined
+  var selfAlignX: js.UndefOr[reactDashFoundationLib.enumsMod.HorizontalAlignments] = js.undefined
+  var selfAlignY: js.UndefOr[reactDashFoundationLib.enumsMod.VerticalAlignments] = js.undefined
 }
 
 object CloseButtonProps {

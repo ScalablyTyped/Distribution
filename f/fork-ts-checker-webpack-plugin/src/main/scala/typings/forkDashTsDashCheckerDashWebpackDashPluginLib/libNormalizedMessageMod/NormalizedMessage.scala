@@ -15,6 +15,7 @@ class NormalizedMessage protected () extends js.Object {
   val file: js.UndefOr[java.lang.String] = js.native
   val line: js.UndefOr[scala.Double] = js.native
   val severity: Severity = js.native
+  val stack: js.UndefOr[java.lang.String] = js.native
   val `type`: ErrorType = js.native
   def getFormattedCode(): java.lang.String | scala.Double = js.native
   def isDiagnosticType(): scala.Boolean = js.native
@@ -28,6 +29,7 @@ class NormalizedMessage protected () extends js.Object {
 @JSImport("fork-ts-checker-webpack-plugin/lib/NormalizedMessage", "NormalizedMessage")
 @js.native
 object NormalizedMessage extends js.Object {
+  val ERROR_CODE_INTERNAL: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.INTERNAL_ERROR = js.native
   val SEVERITY_ERROR: forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.Severity = js.native
   val SEVERITY_WARNING: forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.Severity = js.native
   val TYPE_DIAGNOSTIC: forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.ErrorType = js.native

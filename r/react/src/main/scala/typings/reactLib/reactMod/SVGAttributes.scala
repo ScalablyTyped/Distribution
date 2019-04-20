@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 //   - "number | string"
 //   - "string"
 //   - union of string literals
-trait SVGAttributes[T] extends DOMAttributes[T] {
+trait SVGAttributes[T]
+  extends AriaAttributes
+     with DOMAttributes[T] {
   // SVG Specific attributes
   var accentHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var accumulate: js.UndefOr[reactLib.reactLibStrings.none | reactLib.reactLibStrings.sum] = js.undefined
@@ -291,6 +293,7 @@ trait SVGAttributes[T] extends DOMAttributes[T] {
 object SVGAttributes {
   @scala.inline
   def apply[T](
+    AriaAttributes: AriaAttributes = null,
     DOMAttributes: DOMAttributes[T] = null,
     accentHeight: scala.Double | java.lang.String = null,
     accumulate: reactLib.reactLibStrings.none | reactLib.reactLibStrings.sum = null,
@@ -543,10 +546,10 @@ object SVGAttributes {
     xmlns: java.lang.String = null,
     xmlnsXlink: java.lang.String = null,
     y: scala.Double | java.lang.String = null,
-    y1: scala.Double | java.lang.String = null,
-    y2: scala.Double | java.lang.String = null
+    y1: scala.Double | java.lang.String = null
   ): SVGAttributes[T] = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AriaAttributes)
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
     if (accumulate != null) __obj.updateDynamic("accumulate")(accumulate.asInstanceOf[js.Any])
@@ -800,7 +803,6 @@ object SVGAttributes {
     if (xmlnsXlink != null) __obj.updateDynamic("xmlnsXlink")(xmlnsXlink)
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes[T]]
   }
 }

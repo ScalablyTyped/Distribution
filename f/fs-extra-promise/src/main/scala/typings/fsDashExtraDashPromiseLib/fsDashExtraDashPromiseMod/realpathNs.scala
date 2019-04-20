@@ -33,7 +33,7 @@ object realpathNs extends js.Object {
   def native(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
@@ -42,7 +42,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -51,7 +51,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
@@ -60,7 +60,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ nodeLib.Buffer, 
       scala.Unit
     ]
@@ -69,7 +69,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
@@ -78,7 +78,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -87,7 +87,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
@@ -96,7 +96,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
@@ -106,7 +106,7 @@ object realpathNs extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: fsDashExtraDashPromiseLib.fsDashExtraDashPromiseLibStrings.buffer,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* resolvedPath */ nodeLib.Buffer, 
       scala.Unit
     ]

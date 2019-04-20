@@ -11,7 +11,7 @@ trait Anon_Icon extends js.Object {
     */
   var icon: js.UndefOr[wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon] = js.undefined
   var image: js.UndefOr[java.lang.String] = js.undefined
-  var style: wegameDashApiLib.wxNs.typesNs.ButtonStyle
+  var style: js.UndefOr[wegameDashApiLib.wxNs.typesNs.ButtonStyle] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
   var `type`: wegameDashApiLib.wxNs.typesNs.ButtonType
 }
@@ -19,16 +19,17 @@ trait Anon_Icon extends js.Object {
 object Anon_Icon {
   @scala.inline
   def apply(
-    style: wegameDashApiLib.wxNs.typesNs.ButtonStyle,
     `type`: wegameDashApiLib.wxNs.typesNs.ButtonType,
     icon: wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon = null,
     image: java.lang.String = null,
+    style: wegameDashApiLib.wxNs.typesNs.ButtonStyle = null,
     text: java.lang.String = null
   ): Anon_Icon = {
-    val __obj = js.Dynamic.literal(style = style)
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (image != null) __obj.updateDynamic("image")(image)
+    if (style != null) __obj.updateDynamic("style")(style)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Anon_Icon]
   }

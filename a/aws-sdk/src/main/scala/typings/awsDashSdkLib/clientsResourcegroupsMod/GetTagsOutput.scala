@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait GetTagsOutput extends js.Object {
   /**
-    * The ARN of the tagged resource.
+    * The ARN of the tagged resource group.
     */
   var Arn: js.UndefOr[GroupArn] = js.undefined
   /**
-    * The tags associated with the specified resource.
+    * The tags associated with the specified resource group.
     */
   var Tags: js.UndefOr[Tags] = js.undefined
 }

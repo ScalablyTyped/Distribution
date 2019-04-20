@@ -10,7 +10,7 @@ trait Anon_Buffer extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -19,7 +19,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -28,7 +28,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -37,7 +37,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_BufferEncodingFalse,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -46,7 +46,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFalseWithFileTypes,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -55,7 +55,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFalse,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -64,7 +64,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_True,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.fsMod.Dirent], 
       scala.Unit
     ]
@@ -73,7 +73,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.BufferEncoding,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -82,7 +82,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: rimrafLib.rimrafLibStrings.buffer,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
@@ -91,7 +91,7 @@ trait Anon_Buffer extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]

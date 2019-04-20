@@ -17,6 +17,21 @@ trait LDClientBase extends js.Object {
     */
   def allFlags(): LDFlagSet = js.native
   /**
+    * Shuts down the client and releases its resources, after delivering any pending analytics
+    * events. After the client is closed, all calls to [[variation]] will return default values,
+    * and it will not make any requests to LaunchDarkly.
+    *
+    * @param onDone
+    *   A function which will be called when the operation completes. If omitted, you
+    *   will receive a Promise instead.
+    *
+    * @returns
+    *   If you provided a callback, then nothing. Otherwise, a Promise which resolves once
+    *   closing is finished. It will never be rejected.
+    */
+  def close(): js.Promise[scala.Unit] = js.native
+  def close(onDone: js.Function0[scala.Unit]): js.Promise[scala.Unit] = js.native
+  /**
     * Flushes all pending analytics events.
     *
     * Normally, batches of events are delivered in the background at intervals determined by the

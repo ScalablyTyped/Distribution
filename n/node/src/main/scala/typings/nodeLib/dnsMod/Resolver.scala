@@ -18,7 +18,7 @@ class Resolver () extends js.Object {
   var resolveAny_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[AnyRecord], 
       scala.Unit
     ], 
@@ -28,7 +28,7 @@ class Resolver () extends js.Object {
   var resolveCname_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ], 
@@ -38,7 +38,7 @@ class Resolver () extends js.Object {
   var resolveMx_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[MxRecord], 
       scala.Unit
     ], 
@@ -48,7 +48,7 @@ class Resolver () extends js.Object {
   var resolveNaptr_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[NaptrRecord], 
       scala.Unit
     ], 
@@ -58,7 +58,7 @@ class Resolver () extends js.Object {
   var resolveNs_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ], 
@@ -68,7 +68,7 @@ class Resolver () extends js.Object {
   var resolvePtr_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ], 
@@ -77,14 +77,18 @@ class Resolver () extends js.Object {
   @JSName("resolveSoa")
   var resolveSoa_Original: (js.Function2[
     /* hostname */ java.lang.String, 
-    /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* address */ SoaRecord, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* address */ SoaRecord, 
+      scala.Unit
+    ], 
     scala.Unit
   ]) with nodeLib.Anon_HostnamePromisifyPromise = js.native
   @JSName("resolveSrv")
   var resolveSrv_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[SrvRecord], 
       scala.Unit
     ], 
@@ -94,7 +98,7 @@ class Resolver () extends js.Object {
   var resolveTxt_Original: (js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[js.Array[java.lang.String]], 
       scala.Unit
     ], 
@@ -106,7 +110,7 @@ class Resolver () extends js.Object {
   var reverse_Original: js.Function2[
     /* ip */ java.lang.String, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* hostnames */ js.Array[java.lang.String], 
       scala.Unit
     ], 
@@ -119,7 +123,7 @@ class Resolver () extends js.Object {
   def resolve(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -128,7 +132,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[MxRecord] | js.Array[NaptrRecord] | SoaRecord | js.Array[SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[AnyRecord], 
       scala.Unit
     ]
@@ -136,7 +140,7 @@ class Resolver () extends js.Object {
   def resolve4(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -145,7 +149,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     options: ResolveOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[RecordWithTtl], 
       scala.Unit
     ]
@@ -154,7 +158,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     options: ResolveWithTtlOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[RecordWithTtl], 
       scala.Unit
     ]
@@ -162,7 +166,7 @@ class Resolver () extends js.Object {
   def resolve6(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -171,7 +175,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     options: ResolveOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String] | js.Array[RecordWithTtl], 
       scala.Unit
     ]
@@ -180,7 +184,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     options: ResolveWithTtlOptions,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[RecordWithTtl], 
       scala.Unit
     ]
@@ -188,7 +192,7 @@ class Resolver () extends js.Object {
   def resolveAny(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[AnyRecord], 
       scala.Unit
     ]
@@ -196,7 +200,7 @@ class Resolver () extends js.Object {
   def resolveCname(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -204,7 +208,7 @@ class Resolver () extends js.Object {
   def resolveMx(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[MxRecord], 
       scala.Unit
     ]
@@ -212,7 +216,7 @@ class Resolver () extends js.Object {
   def resolveNaptr(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[NaptrRecord], 
       scala.Unit
     ]
@@ -220,7 +224,7 @@ class Resolver () extends js.Object {
   def resolveNs(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -228,19 +232,23 @@ class Resolver () extends js.Object {
   def resolvePtr(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def resolveSoa(
     hostname: java.lang.String,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* address */ SoaRecord, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* address */ SoaRecord, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def resolveSrv(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[SrvRecord], 
       scala.Unit
     ]
@@ -248,7 +256,7 @@ class Resolver () extends js.Object {
   def resolveTxt(
     hostname: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[js.Array[java.lang.String]], 
       scala.Unit
     ]
@@ -258,7 +266,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.A,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -268,7 +276,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.AAAA,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -278,7 +286,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.ANY,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[AnyRecord], 
       scala.Unit
     ]
@@ -288,7 +296,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.CNAME,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -298,7 +306,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.MX,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[MxRecord], 
       scala.Unit
     ]
@@ -308,7 +316,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.NAPTR,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[NaptrRecord], 
       scala.Unit
     ]
@@ -318,7 +326,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.NS,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -328,7 +336,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.PTR,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[java.lang.String], 
       scala.Unit
     ]
@@ -337,14 +345,18 @@ class Resolver () extends js.Object {
   def resolve_SOA(
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.SOA,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* addresses */ SoaRecord, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* addresses */ SoaRecord, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   @JSName("resolve")
   def resolve_SRV(
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.SRV,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[SrvRecord], 
       scala.Unit
     ]
@@ -354,7 +366,7 @@ class Resolver () extends js.Object {
     hostname: java.lang.String,
     rrtype: nodeLib.nodeLibStrings.TXT,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* addresses */ js.Array[js.Array[java.lang.String]], 
       scala.Unit
     ]
@@ -362,7 +374,7 @@ class Resolver () extends js.Object {
   def reverse(
     ip: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* hostnames */ js.Array[java.lang.String], 
       scala.Unit
     ]

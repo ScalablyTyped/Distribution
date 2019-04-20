@@ -15,8 +15,8 @@ trait Cookies extends js.Object {
     * Cookie header in the request. If such a cookie exists,
     * its value is returned. Otherwise, nothing is returned.
     */
-  def get(name: java.lang.String): java.lang.String = js.native
-  def get(name: java.lang.String, opts: GetOption): java.lang.String = js.native
+  def get(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  def get(name: java.lang.String, opts: GetOption): js.UndefOr[java.lang.String] = js.native
   /**
     * This sets the given cookie in the response and returns
     * the current context to allow chaining.If the value is omitted,

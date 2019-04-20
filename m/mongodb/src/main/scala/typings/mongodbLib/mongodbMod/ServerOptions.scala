@@ -11,19 +11,34 @@ trait ServerOptions extends SSLOptions {
     */
   var domainsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Specify a file sync write concern
+    * Default: false
+    */
+  var fsync: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Default: 10000; The High availability period for replicaset inquiry
     */
   var haInterval: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Enable command monitoring for this client
+    * Default: false
+    */
+  var monitorCommands: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Default: true;
     */
   var monitoring: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Will wait # milliseconds between retries
     * Default: 1000;
     */
   var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Default: 30;
+    * If you're connected to a single server or mongos proxy (as opposed to a replica set),
+    * the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries
+    * times, and give up afterward. When the driver gives up, the mongoose connection emits a
+    * reconnectFailed event.
+    * Default: 30
     */
   var reconnectTries: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -43,8 +58,10 @@ object ServerOptions {
     ciphers: java.lang.String = null,
     domainsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ecdhCurve: java.lang.String = null,
+    fsync: js.UndefOr[scala.Boolean] = js.undefined,
     haInterval: scala.Int | scala.Double = null,
     minSize: scala.Int | scala.Double = null,
+    monitorCommands: js.UndefOr[scala.Boolean] = js.undefined,
     monitoring: js.UndefOr[scala.Boolean] = js.undefined,
     poolSize: scala.Int | scala.Double = null,
     reconnectInterval: scala.Int | scala.Double = null,
@@ -64,8 +81,10 @@ object ServerOptions {
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (!js.isUndefined(domainsEnabled)) __obj.updateDynamic("domainsEnabled")(domainsEnabled)
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync)
     if (haInterval != null) __obj.updateDynamic("haInterval")(haInterval.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands)
     if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring)
     if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
     if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])

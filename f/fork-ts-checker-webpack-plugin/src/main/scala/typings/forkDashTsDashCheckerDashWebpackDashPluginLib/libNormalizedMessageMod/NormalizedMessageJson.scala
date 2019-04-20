@@ -12,6 +12,7 @@ trait NormalizedMessageJson extends js.Object {
   var file: js.UndefOr[java.lang.String] = js.undefined
   var line: js.UndefOr[scala.Double] = js.undefined
   var severity: Severity
+  var stack: js.UndefOr[java.lang.String] = js.undefined
   var `type`: ErrorType
 }
 
@@ -24,13 +25,15 @@ object NormalizedMessageJson {
     `type`: ErrorType,
     character: scala.Int | scala.Double = null,
     file: java.lang.String = null,
-    line: scala.Int | scala.Double = null
+    line: scala.Int | scala.Double = null,
+    stack: java.lang.String = null
   ): NormalizedMessageJson = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], content = content, severity = severity)
     __obj.updateDynamic("type")(`type`)
     if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[NormalizedMessageJson]
   }
 }

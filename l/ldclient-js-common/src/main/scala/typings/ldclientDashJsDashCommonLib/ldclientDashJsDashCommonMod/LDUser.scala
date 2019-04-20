@@ -43,8 +43,15 @@ trait LDUser extends js.Object {
   var ip: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A unique string identifying a user.
+    *
+    * If you omit this property, and also set `anonymous` to `true`, the SDK will generate a UUID string
+    * and use that as the key; it will attempt to persist that value in local storage if possible so the
+    * next anonymous user will get the same key, but if local storage is unavailable then it will
+    * generate a new key each time you specify the user.
+    *
+    * It is an error to omit the `key` property if `anonymous` is not set.
     */
-  var key: java.lang.String
+  var key: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The user's last name.
     */
@@ -74,7 +81,6 @@ trait LDUser extends js.Object {
 object LDUser {
   @scala.inline
   def apply(
-    key: java.lang.String,
     anonymous: js.UndefOr[scala.Boolean] = js.undefined,
     avatar: java.lang.String = null,
     country: java.lang.String = null,
@@ -84,12 +90,13 @@ object LDUser {
     email: java.lang.String = null,
     firstName: java.lang.String = null,
     ip: java.lang.String = null,
+    key: java.lang.String = null,
     lastName: java.lang.String = null,
     name: java.lang.String = null,
     privateAttributeNames: js.Array[java.lang.String] = null,
     secondary: java.lang.String = null
   ): LDUser = {
-    val __obj = js.Dynamic.literal(key = key)
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
     if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (country != null) __obj.updateDynamic("country")(country)
@@ -97,6 +104,7 @@ object LDUser {
     if (email != null) __obj.updateDynamic("email")(email)
     if (firstName != null) __obj.updateDynamic("firstName")(firstName)
     if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (key != null) __obj.updateDynamic("key")(key)
     if (lastName != null) __obj.updateDynamic("lastName")(lastName)
     if (name != null) __obj.updateDynamic("name")(name)
     if (privateAttributeNames != null) __obj.updateDynamic("privateAttributeNames")(privateAttributeNames)

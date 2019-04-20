@@ -16,7 +16,7 @@ trait Anon_En extends js.Object {
   /**
     * 按钮的样式
     */
-  var style: wegameDashApiLib.wxNs.typesNs.ButtonStyle
+  var style: js.UndefOr[wegameDashApiLib.wxNs.typesNs.ButtonStyle] = js.undefined
   /**
     * 按钮上的文本，仅当 type 为 text 时有效
     */
@@ -34,17 +34,18 @@ trait Anon_En extends js.Object {
 object Anon_En {
   @scala.inline
   def apply(
-    style: wegameDashApiLib.wxNs.typesNs.ButtonStyle,
     `type`: wegameDashApiLib.wxNs.typesNs.ButtonType,
     image: java.lang.String = null,
     lang: wegameDashApiLib.wegameDashApiLibStrings.en | wegameDashApiLib.wegameDashApiLibStrings.zh_CN | wegameDashApiLib.wegameDashApiLibStrings.zh_TW = null,
+    style: wegameDashApiLib.wxNs.typesNs.ButtonStyle = null,
     text: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_En = {
-    val __obj = js.Dynamic.literal(style = style)
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
     if (image != null) __obj.updateDynamic("image")(image)
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
     if (text != null) __obj.updateDynamic("text")(text)
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
     __obj.asInstanceOf[Anon_En]

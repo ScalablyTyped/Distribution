@@ -13,7 +13,7 @@ trait FileSystemAdapter extends js.Object {
   var lstat_Original: (js.Function2[
     /* path */ nodeLib.fsMod.PathLike, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ], 
@@ -25,7 +25,7 @@ trait FileSystemAdapter extends js.Object {
   var stat_Original: (js.Function2[
     /* path */ nodeLib.fsMod.PathLike, 
     /* callback */ js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ], 
@@ -34,7 +34,7 @@ trait FileSystemAdapter extends js.Object {
   def lstat(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ]
@@ -43,7 +43,7 @@ trait FileSystemAdapter extends js.Object {
   def stat(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* stats */ nodeLib.fsMod.Stats, 
       scala.Unit
     ]

@@ -21,7 +21,7 @@ trait NewUserInfoParam extends js.Object {
     * 要获取信息的用户的 openId 数组，如果要获取当前用户信息，则将数组中的一个元素设为 'selfOpenId'
     */
   var openIdList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_DataArray, scala.Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_DataReadonlyArray, scala.Unit]] = js.undefined
 }
 
 object NewUserInfoParam {
@@ -31,7 +31,7 @@ object NewUserInfoParam {
     fail: () => scala.Unit = null,
     lang: wegameDashApiLib.wegameDashApiLibStrings.en | wegameDashApiLib.wegameDashApiLibStrings.zh_CN | wegameDashApiLib.wegameDashApiLibStrings.zh_TW = null,
     openIdList: js.Array[java.lang.String] = null,
-    success: /* res */ wegameDashApiLib.Anon_DataArray => scala.Unit = null
+    success: /* res */ wegameDashApiLib.Anon_DataReadonlyArray => scala.Unit = null
   ): NewUserInfoParam = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

@@ -15,7 +15,7 @@ trait SocketOptions extends js.Object {
       /* hostname */ java.lang.String, 
       /* options */ nodeLib.dnsMod.LookupOneOptions, 
       /* callback */ js.Function3[
-        /* err */ nodeLib.NodeJSNs.ErrnoException, 
+        /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
         /* address */ java.lang.String, 
         /* family */ scala.Double, 
         scala.Unit
@@ -35,7 +35,7 @@ object SocketOptions {
     `type`: SocketType,
     ipv6Only: js.UndefOr[scala.Boolean] = js.undefined,
     lookup: (/* hostname */ java.lang.String, /* options */ nodeLib.dnsMod.LookupOneOptions, /* callback */ js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* address */ java.lang.String, 
       /* family */ scala.Double, 
       scala.Unit

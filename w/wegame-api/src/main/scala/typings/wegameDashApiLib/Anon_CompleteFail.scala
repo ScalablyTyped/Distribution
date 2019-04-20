@@ -12,7 +12,7 @@ trait Anon_CompleteFail extends js.Object {
     * 要拉取的 key 列表
     */
   var keyList: js.Array[java.lang.String]
-  var success: js.UndefOr[js.Function1[/* res */ Anon_DataArrayUserGameData, scala.Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ Anon_DataReadonlyArrayUserGameData, scala.Unit]] = js.undefined
 }
 
 object Anon_CompleteFail {
@@ -21,7 +21,7 @@ object Anon_CompleteFail {
     keyList: js.Array[java.lang.String],
     complete: () => scala.Unit = null,
     fail: () => scala.Unit = null,
-    success: /* res */ Anon_DataArrayUserGameData => scala.Unit = null
+    success: /* res */ Anon_DataReadonlyArrayUserGameData => scala.Unit = null
   ): Anon_CompleteFail = {
     val __obj = js.Dynamic.literal(keyList = keyList)
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))

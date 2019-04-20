@@ -100,7 +100,11 @@ trait Anon_Arg1 extends js.Object {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* result */ TResult, 
+      scala.Unit
+    ], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
@@ -119,7 +123,11 @@ trait Anon_Arg1 extends js.Object {
     /* arg3 */ T3, 
     /* arg4 */ T4, 
     /* arg5 */ T5, 
-    /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* result */ TResult, 
+      scala.Unit
+    ], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
@@ -128,7 +136,11 @@ trait Anon_Arg1 extends js.Object {
     /* arg2 */ T2, 
     /* arg3 */ T3, 
     /* arg4 */ T4, 
-    /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* result */ TResult, 
+      scala.Unit
+    ], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
@@ -136,14 +148,22 @@ trait Anon_Arg1 extends js.Object {
     /* arg1 */ T1, 
     /* arg2 */ T2, 
     /* arg3 */ T3, 
-    /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* result */ TResult, 
+      scala.Unit
+    ], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
   def callbackify_T1T2TResult[T1, T2, TResult](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[TResult]]): js.Function3[
     /* arg1 */ T1, 
     /* arg2 */ T2, 
-    /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
+    /* callback */ js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* result */ TResult, 
+      scala.Unit
+    ], 
     scala.Unit
   ] = js.native
   @JSName("callbackify")
@@ -210,14 +230,14 @@ trait Anon_Arg1 extends js.Object {
   def promisify(fn: js.Function): js.Function = js.native
   def promisify(
     fn: js.Function1[
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): js.Function0[js.Promise[scala.Unit]] = js.native
   def promisify[T1](
     fn: js.Function2[
       /* arg1 */ T1, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): js.Function1[/* arg1 */ T1, js.Promise[scala.Unit]] = js.native
@@ -226,7 +246,7 @@ trait Anon_Arg1 extends js.Object {
     fn: js.Function3[
       /* arg1 */ T1, 
       /* arg2 */ T2, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[scala.Unit]] = js.native
@@ -235,7 +255,7 @@ trait Anon_Arg1 extends js.Object {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, js.Promise[scala.Unit]] = js.native
@@ -245,7 +265,7 @@ trait Anon_Arg1 extends js.Object {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, js.Promise[scala.Unit]] = js.native
@@ -256,7 +276,7 @@ trait Anon_Arg1 extends js.Object {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): js.Function5[

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object forkDashTsDashCheckerDashWebpackDashPluginLibStrings {
   @js.native
+  sealed trait INTERNAL_ERROR extends js.Object
+  
+  @js.native
   sealed trait cancel extends js.Object
   
   @js.native
@@ -55,6 +58,8 @@ object forkDashTsDashCheckerDashWebpackDashPluginLibStrings {
   sealed trait warning
     extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.Severity
   
+  @scala.inline
+  def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline

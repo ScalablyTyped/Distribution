@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "baconjs"
-version := "0.7.0-dt-20190322Z-965dbb"
+version := "0.7.0-dt-20190322Z-7525fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-45cee7",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-dae54d",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false

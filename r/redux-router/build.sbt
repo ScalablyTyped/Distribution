@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-router"
-version := "v1.0.0-dt-20190322Z-3b938f"
+version := "v1.0.0-dt-20190322Z-5c24cf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-f279a5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-26e47b",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190228Z-13f41b",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190419Z-caf3c8",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190228Z-dc082e",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

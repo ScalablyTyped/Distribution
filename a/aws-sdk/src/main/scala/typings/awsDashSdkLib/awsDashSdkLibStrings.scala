@@ -23452,6 +23452,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `es-ES`
     extends awsDashSdkLib.clientsPollyMod._LanguageCode
+       with awsDashSdkLib.clientsTranscribeserviceMod._LanguageCode
   
   @js.native
   sealed trait `es-MX`

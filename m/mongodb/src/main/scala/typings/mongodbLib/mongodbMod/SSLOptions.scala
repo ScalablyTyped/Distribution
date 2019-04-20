@@ -29,7 +29,7 @@ trait SSLOptions extends js.Object {
     */
   var minSize: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Default:5; Number of connections for each server instance
+    * Default:5; Number of connections for each server instance; set to 5 as default for legacy reasons.
     */
   var poolSize: js.UndefOr[scala.Double] = js.undefined
   /**

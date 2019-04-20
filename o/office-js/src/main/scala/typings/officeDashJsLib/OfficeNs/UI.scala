@@ -17,7 +17,9 @@ trait UI extends js.Object {
     * Closes the UI container where the JavaScript is executing.
     *
     * @remarks
+    * 
     * **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
+    * 
     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
     * 
     * The behavior of this method is specified by the following:
@@ -34,10 +36,14 @@ trait UI extends js.Object {
     * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     *
     * @remarks
+    * 
     * **Hosts**: Word, Excel, Outlook, PowerPoint
+    * 
     * **Requirement sets**: 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}, 
-    * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.4}
+    * 
+    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+    * 
+    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.4}
     * 
     * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
     * for Outlook. For more on how to specify a requirement set in your manifest, see 

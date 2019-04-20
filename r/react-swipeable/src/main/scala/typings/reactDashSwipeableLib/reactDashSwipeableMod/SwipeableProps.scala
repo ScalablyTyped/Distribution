@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SwipeableProps[T /* <: stdLib.Element */]
-  extends reactLib.reactMod.ClassAttributes[ReactSwipeable[T]]
-     with reactLib.reactMod.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLAttributes[T]
+     with reactLib.reactMod.ClassAttributes[ReactSwipeable[T]] {
   var delta: js.UndefOr[scala.Double] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var flickThreshold: js.UndefOr[scala.Double] = js.undefined

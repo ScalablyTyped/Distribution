@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oibackoff"
-version := "1.0-dt-20180214Z-5e4b4b"
+version := "1.0-dt-20190419Z-57a089"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "plist"
-version := "3.0-dt-20190409Z-a8ee62"
+version := "3.0-dt-20190409Z-071958"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "xmlbuilder" % "12.0.0-225c50")
 publishArtifact in packageDoc := false

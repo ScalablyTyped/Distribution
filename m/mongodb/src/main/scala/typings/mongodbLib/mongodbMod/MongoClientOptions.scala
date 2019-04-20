@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- mongodbLib.mongodbMod.ReplSetOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined maxStalenessSeconds, replicaSet, secondaryAcceptableLatencyMS, connectWithNoPrimary- mongodbLib.mongodbMod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ trait MongoClientOptions
+- mongodbLib.mongodbMod.ReplSetOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined maxStalenessSeconds, replicaSet, secondaryAcceptableLatencyMS, connectWithNoPrimary- mongodbLib.mongodbMod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ trait MongoClientOptions
   extends DbCreateOptions
      with ServerOptions
      with SocketOptions {
@@ -42,6 +42,11 @@ import scala.scalajs.js.annotation._
     */
   var maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined
   /**
+    * number of retries for a tailable cursor
+    * Default: 5
+    */
+  var numberOfRetries: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The name of the replicaset to connect to.
     */
   var replicaSet: js.UndefOr[java.lang.String] = js.undefined
@@ -57,7 +62,7 @@ import scala.scalajs.js.annotation._
     * Validate MongoClient passed in options for correctness.
     * Default: false
     */
-  var validateOptions: js.UndefOr[js.Object] = js.undefined
+  var validateOptions: js.UndefOr[js.Object | scala.Boolean] = js.undefined
 }
 
 object MongoClientOptions {
@@ -82,6 +87,7 @@ object MongoClientOptions {
     ecdhCurve: java.lang.String = null,
     family: mongodbLib.mongodbLibNumbers.`4` | mongodbLib.mongodbLibNumbers.`6` = null,
     forceServerObjectId: js.UndefOr[scala.Boolean] = js.undefined,
+    fsync: js.UndefOr[scala.Boolean] = js.undefined,
     ha: js.UndefOr[scala.Boolean] = js.undefined,
     haInterval: scala.Int | scala.Double = null,
     ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined,
@@ -92,18 +98,21 @@ object MongoClientOptions {
     loggerLevel: java.lang.String = null,
     maxStalenessSeconds: scala.Int | scala.Double = null,
     minSize: scala.Int | scala.Double = null,
+    monitorCommands: js.UndefOr[scala.Boolean] = js.undefined,
     monitoring: js.UndefOr[scala.Boolean] = js.undefined,
     native_parser: js.UndefOr[scala.Boolean] = js.undefined,
     noDelay: js.UndefOr[scala.Boolean] = js.undefined,
+    numberOfRetries: scala.Int | scala.Double = null,
     pkFactory: js.Object = null,
     poolSize: scala.Int | scala.Double = null,
-    promiseLibrary: js.Object = null,
+    promiseLibrary: stdLib.PromiseConstructor = null,
     promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
     promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
     promoteValues: js.UndefOr[scala.Boolean] = js.undefined,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
-    readConcern: ReadConcern = null,
+    readConcern: ReadConcern | java.lang.String = null,
     readPreference: ReadPreference | java.lang.String = null,
+    readPreferenceTags: js.Array[java.lang.String] = null,
     reconnectInterval: scala.Int | scala.Double = null,
     reconnectTries: scala.Int | scala.Double = null,
     replicaSet: java.lang.String = null,
@@ -121,7 +130,7 @@ object MongoClientOptions {
     sslPass: nodeLib.Buffer | java.lang.String = null,
     sslValidate: js.UndefOr[scala.Boolean] = js.undefined,
     useNewUrlParser: js.UndefOr[scala.Boolean] = js.undefined,
-    validateOptions: js.Object = null,
+    validateOptions: js.Object | scala.Boolean = null,
     w: scala.Double | mongodbLib.mongodbLibStrings.majority | java.lang.String = null,
     wtimeout: scala.Int | scala.Double = null
   ): MongoClientOptions = {
@@ -141,6 +150,7 @@ object MongoClientOptions {
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (!js.isUndefined(forceServerObjectId)) __obj.updateDynamic("forceServerObjectId")(forceServerObjectId)
+    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync)
     if (!js.isUndefined(ha)) __obj.updateDynamic("ha")(ha)
     if (haInterval != null) __obj.updateDynamic("haInterval")(haInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
@@ -151,9 +161,11 @@ object MongoClientOptions {
     if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel)
     if (maxStalenessSeconds != null) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.asInstanceOf[js.Any])
     if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitorCommands)) __obj.updateDynamic("monitorCommands")(monitorCommands)
     if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring)
     if (!js.isUndefined(native_parser)) __obj.updateDynamic("native_parser")(native_parser)
     if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay)
+    if (numberOfRetries != null) __obj.updateDynamic("numberOfRetries")(numberOfRetries.asInstanceOf[js.Any])
     if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory)
     if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
     if (promiseLibrary != null) __obj.updateDynamic("promiseLibrary")(promiseLibrary)
@@ -161,8 +173,9 @@ object MongoClientOptions {
     if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
     if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
-    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern)
+    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (readPreferenceTags != null) __obj.updateDynamic("readPreferenceTags")(readPreferenceTags)
     if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
     if (reconnectTries != null) __obj.updateDynamic("reconnectTries")(reconnectTries.asInstanceOf[js.Any])
     if (replicaSet != null) __obj.updateDynamic("replicaSet")(replicaSet)
@@ -180,7 +193,7 @@ object MongoClientOptions {
     if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
     if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate)
     if (!js.isUndefined(useNewUrlParser)) __obj.updateDynamic("useNewUrlParser")(useNewUrlParser)
-    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions)
+    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoClientOptions]

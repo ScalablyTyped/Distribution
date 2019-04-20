@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.39.0-39cc7a"
+version := "20.39.0-70906b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "builder-util" % "9.7.0-4d17fe",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-200987",
+  "org.scalablytyped" %%% "builder-util" % "9.7.0-580259",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-83bb00",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-b43721",
-  "org.scalablytyped" %%% "electron-publish" % "20.39.0-0bfc0a",
-  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-4c7dcd",
+  "org.scalablytyped" %%% "electron-publish" % "20.39.0-2eddcb",
+  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-69f428",
   "org.scalablytyped" %%% "lazy-val" % "1.0.4-63a268",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "temp-file" % "3.3.2-7f2dcb")
 publishArtifact in packageDoc := false

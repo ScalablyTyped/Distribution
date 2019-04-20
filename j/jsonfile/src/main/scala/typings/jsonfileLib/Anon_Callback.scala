@@ -9,13 +9,17 @@ import scala.scalajs.js.annotation._
 trait Anon_Callback extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
@@ -24,7 +28,7 @@ trait Anon_Callback extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
@@ -33,7 +37,7 @@ trait Anon_Callback extends js.Object {
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* data */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -41,31 +45,43 @@ trait Anon_Callback extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFlagString,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingFlag,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
     options: java.lang.String,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
@@ -74,7 +90,7 @@ trait Anon_Callback extends js.Object {
     path: scala.Double,
     options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
@@ -83,7 +99,7 @@ trait Anon_Callback extends js.Object {
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* data */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
@@ -91,18 +107,26 @@ trait Anon_Callback extends js.Object {
   def apply(
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlagString,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ java.lang.String, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlag,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* data */ nodeLib.Buffer, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
     options: scala.Null,
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]

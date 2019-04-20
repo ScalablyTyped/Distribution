@@ -118,7 +118,7 @@ trait EggAppConfig
     */
   def jsonp(
     path: nodeLib.fsMod.PathLike,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * jsonp options
@@ -131,7 +131,7 @@ trait EggAppConfig
   def jsonp(
     path: nodeLib.fsMod.PathLike,
     options: java.lang.String,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * jsonp options
@@ -144,7 +144,7 @@ trait EggAppConfig
   def jsonp(
     path: nodeLib.fsMod.PathLike,
     options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * jsonp options
@@ -157,7 +157,7 @@ trait EggAppConfig
   def jsonp(
     path: nodeLib.fsMod.PathLike,
     options: nodeLib.fsMod.MakeDirectoryOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * jsonp options
@@ -170,7 +170,7 @@ trait EggAppConfig
   def jsonp(
     path: nodeLib.fsMod.PathLike,
     options: scala.Double,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * jsonp options
@@ -183,7 +183,7 @@ trait EggAppConfig
   def jsonp(
     path: nodeLib.fsMod.PathLike,
     options: scala.Null,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def onClientError(err: stdLib.Error, socket: nodeLib.netMod.Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse] = js.native
 }

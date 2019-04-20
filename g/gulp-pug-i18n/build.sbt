@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-pug-i18n"
-version := "1.0-dt-20180823Z-4fb79b"
+version := "1.0-dt-20180823Z-f75571"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190417Z-002402",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
   "org.scalablytyped" %%% "pug" % "2.0-dt-20190322Z-1edbf7",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false

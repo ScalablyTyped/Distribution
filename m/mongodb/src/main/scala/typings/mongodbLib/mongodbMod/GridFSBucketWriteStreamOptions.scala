@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GridFSBucketWriteStreamOptions extends js.Object {
+trait GridFSBucketWriteStreamOptions extends WriteConcern {
   /**
     * The chunk size to use, in bytes
     */
@@ -18,18 +18,6 @@ trait GridFSBucketWriteStreamOptions extends js.Object {
     * Custom file id for the GridFS file.
     */
   var id: js.UndefOr[mongodbLib.GridFSBucketWriteStreamId] = js.undefined
-  /**
-    * The journal write concern
-    */
-  var j: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * The write concern
-    */
-  var w: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * The write concern timeout
-    */
-  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 
 object GridFSBucketWriteStreamOptions {
@@ -38,15 +26,15 @@ object GridFSBucketWriteStreamOptions {
     chunkSizeBytes: scala.Int | scala.Double = null,
     disableMD5: js.UndefOr[scala.Boolean] = js.undefined,
     id: mongodbLib.GridFSBucketWriteStreamId = null,
-    j: scala.Int | scala.Double = null,
-    w: scala.Int | scala.Double = null,
+    j: js.UndefOr[scala.Boolean] = js.undefined,
+    w: scala.Double | mongodbLib.mongodbLibStrings.majority | java.lang.String = null,
     wtimeout: scala.Int | scala.Double = null
   ): GridFSBucketWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
     if (chunkSizeBytes != null) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.asInstanceOf[js.Any])
     if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (j != null) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketWriteStreamOptions]

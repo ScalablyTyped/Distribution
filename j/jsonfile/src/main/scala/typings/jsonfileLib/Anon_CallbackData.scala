@@ -10,24 +10,24 @@ trait Anon_CallbackData extends js.Object {
   def apply(
     path: nodeLib.fsMod.PathLike,
     data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
     data: js.Any,
     options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
     data: js.Any,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def apply(
     path: scala.Double,
     data: js.Any,
     options: nodeLib.fsMod.WriteFileOptions,
-    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.

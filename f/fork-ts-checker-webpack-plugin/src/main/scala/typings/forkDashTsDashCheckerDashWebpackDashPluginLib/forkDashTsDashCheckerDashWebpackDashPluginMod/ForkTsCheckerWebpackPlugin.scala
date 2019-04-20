@@ -41,6 +41,7 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var logger: js.Any
   var measureTime: js.Any
   var memoryLimit: js.Any
+  var nodeArgs: js.Any
   val options: stdLib.Partial[Options]
   var performance: js.Any
   var pluginCompile: js.Any
@@ -106,6 +107,7 @@ object ForkTsCheckerWebpackPlugin {
     logger: js.Any,
     measureTime: js.Any,
     memoryLimit: js.Any,
+    nodeArgs: js.Any,
     options: stdLib.Partial[Options],
     performance: js.Any,
     pluginCompile: js.Any,
@@ -140,7 +142,7 @@ object ForkTsCheckerWebpackPlugin {
     tslint: js.Any = null,
     tslintPath: js.Any = null
   ): ForkTsCheckerWebpackPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, emitCallback = emitCallback, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, silent = silent, spawnService = spawnService, startAt = startAt, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateVersions = validateVersions, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, emitCallback = emitCallback, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, nodeArgs = nodeArgs, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, silent = silent, spawnService = spawnService, startAt = startAt, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateVersions = validateVersions, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
     if (cancellationToken != null) __obj.updateDynamic("cancellationToken")(cancellationToken)
     if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed)
     if (service != null) __obj.updateDynamic("service")(service)
