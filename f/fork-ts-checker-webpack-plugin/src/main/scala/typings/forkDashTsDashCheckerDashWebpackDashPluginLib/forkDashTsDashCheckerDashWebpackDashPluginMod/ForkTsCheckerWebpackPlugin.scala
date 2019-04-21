@@ -51,6 +51,8 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var pluginStop: js.Any
   var printLoggerMessage: js.Any
   var reportFiles: js.Any
+  var resolveModuleNameModule: js.Any
+  var resolveTypeReferenceDirectiveModule: js.Any
   var service: js.UndefOr[js.Any] = js.undefined
   var serviceRpc: js.UndefOr[js.Any] = js.undefined
   var silent: js.Any
@@ -117,6 +119,8 @@ object ForkTsCheckerWebpackPlugin {
     pluginStop: js.Any,
     printLoggerMessage: js.Any,
     reportFiles: js.Any,
+    resolveModuleNameModule: js.Any,
+    resolveTypeReferenceDirectiveModule: js.Any,
     silent: js.Any,
     spawnService: js.Any,
     startAt: js.Any,
@@ -142,7 +146,7 @@ object ForkTsCheckerWebpackPlugin {
     tslint: js.Any = null,
     tslintPath: js.Any = null
   ): ForkTsCheckerWebpackPlugin = {
-    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, emitCallback = emitCallback, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, nodeArgs = nodeArgs, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, silent = silent, spawnService = spawnService, startAt = startAt, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateVersions = validateVersions, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), async = async, checkDone = checkDone, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilationDone = compilationDone, compiler = compiler, compilerOptions = compilerOptions, computeContextPath = computeContextPath, createDoneCallback = createDoneCallback, createEmitCallback = createEmitCallback, createNoopEmitCallback = createNoopEmitCallback, diagnostics = diagnostics, doneCallback = doneCallback, emitCallback = emitCallback, formatter = formatter, handleServiceExit = handleServiceExit, handleServiceMessage = handleServiceMessage, ignoreDiagnostics = ignoreDiagnostics, ignoreLintWarnings = ignoreLintWarnings, ignoreLints = ignoreLints, isWatching = isWatching, killService = killService, lints = lints, logger = logger, measureTime = measureTime, memoryLimit = memoryLimit, nodeArgs = nodeArgs, options = options, performance = performance, pluginCompile = pluginCompile, pluginDone = pluginDone, pluginEmit = pluginEmit, pluginStart = pluginStart, pluginStop = pluginStop, printLoggerMessage = printLoggerMessage, reportFiles = reportFiles, resolveModuleNameModule = resolveModuleNameModule, resolveTypeReferenceDirectiveModule = resolveTypeReferenceDirectiveModule, silent = silent, spawnService = spawnService, startAt = startAt, tsconfig = tsconfig, tslintAutoFix = tslintAutoFix, tslintVersion = tslintVersion, typescript = typescript, typescriptPath = typescriptPath, typescriptVersion = typescriptVersion, useColors = useColors, useTypescriptIncrementalApi = useTypescriptIncrementalApi, validateVersions = validateVersions, vue = vue, watch = watch, watchPaths = watchPaths, workersNumber = workersNumber)
     if (cancellationToken != null) __obj.updateDynamic("cancellationToken")(cancellationToken)
     if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed)
     if (service != null) __obj.updateDynamic("service")(service)

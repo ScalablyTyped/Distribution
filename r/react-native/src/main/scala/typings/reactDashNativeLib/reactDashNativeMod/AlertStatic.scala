@@ -16,12 +16,5 @@ trait AlertStatic extends js.Object {
     buttons: js.Array[AlertButton],
     options: AlertOptions
   ): scala.Unit = js.native
-  def alert(
-    title: java.lang.String,
-    message: java.lang.String,
-    buttons: js.Array[AlertButton],
-    options: AlertOptions,
-    `type`: java.lang.String
-  ): scala.Unit = js.native
 }
 

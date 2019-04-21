@@ -89,6 +89,10 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var reportFiles: js.Any = js.native
   /* CompleteClass */
+  override var resolveModuleNameModule: js.Any = js.native
+  /* CompleteClass */
+  override var resolveTypeReferenceDirectiveModule: js.Any = js.native
+  /* CompleteClass */
   override var silent: js.Any = js.native
   /* CompleteClass */
   override var spawnService: js.Any = js.native

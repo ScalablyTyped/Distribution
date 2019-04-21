@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "socketio-jwt"
-version := "0.0-dt-20181121Z-38c1f1"
+version := "0.0-dt-20190420Z-38c1f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
