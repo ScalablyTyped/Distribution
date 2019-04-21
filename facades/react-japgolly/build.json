@@ -1,6 +1,6 @@
 {
   "typings": [
-    "react-contrib"
+    "react-facade"
   ],
   "dependencies": [
     {
