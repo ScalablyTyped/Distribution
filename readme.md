@@ -3,12 +3,13 @@
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
 [![Join the chat at https://gitter.im/ScalablyTyped/community](https://badges.gitter.im/ScalablyTyped/community.svg)](https://gitter.im/ScalablyTyped/community)
+[![Checkout the demos at https://github.com/oyvindberg/ScalablyTypedDemos/](https://img.shields.io/badge/Checkout-Demo-success.svg)](https://github.com/oyvindberg/ScalablyTypedDemos/)
 
 ## Warning :collision: :bomb: :sunglasses:
 
 Beware: While these typings generally work, some details of the encoding are still subject to change.
 All currently published artifacts should be considered snapshots and will be deleted without notice.
-Expect the first stable release before May.
+Expect the first stable release early May.
 
 ## While you're here
 There will be a talk about this project at [flatMap(Oslo)](https://2019.flatmap.no/talks/berg) in May,
@@ -16,7 +17,7 @@ which will be available online shortly after.
 
 ## About
 
-This is the home of Scala.js typings for **6709** Javascript libraries,
+This is the home of Scala.js typings for **6710** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +26,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               213665      9863965       932319      2377141      6554505
- Markdown              6125        64357         1309            0        63048
+ Scala               213691      9864797       932438      2377226      6555133
+ Markdown              6125        64359         1309            0        63050
  JSON                     5           29            0            0           29
  Makefile                 2           35            7            0           28
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               219798      9928392       933635      2377141      6617616
+ Total               219824      9929226       933754      2377226      6618246
 --------------------------------------------------------------------------------
 
 ```
@@ -75,7 +76,7 @@ a good and educational demo, and some Scala sugar on top.
 
 These are things the community can help out with over time,
 there is already a process setup for contributing "sugar"
-in the form of `contrib` libraries (see below) and demos
+in the form of `facade` libraries (see below) and demos
 
 With that in mind, let's consider what we have now a beginning, not an end.
 The work on this has been a labor of love, so let's continue like that <3
@@ -98,7 +99,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201904210530")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201904220530")
 ```
 
 ### `build.sbt`
@@ -126,15 +127,15 @@ After that you should be good to go, and just reference things in your code
   console.warn("Hello, World!")
 ```
 
-## Contrib libraries
+## Facade libraries
 As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
-For now we just have the following contrib-libs:
-- [react](contrib/react)
-- [react-redux](contrib/react-redux)
-- [react-japgolly](contrib/react-japgolly)
-- [std](contrib/std)
+For now we just have the following facades:
+- [std](facades/std)
+- [react](facades/react)
+- [react-redux](facades/react-redux)
+- [react-japgolly](facades/react-japgolly)
 
 These libraries can depend both on typings and external libraries, and
  will be versioned and published alongside ScalablyTyped typings.

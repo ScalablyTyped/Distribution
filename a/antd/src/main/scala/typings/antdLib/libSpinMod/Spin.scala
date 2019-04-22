@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Spin
   extends reactLib.reactMod.Component[SpinProps, SpinState, js.Any] {
+  def cancelExistingSpin(): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSpin(): scala.Unit = js.native
   @JSName("componentDidUpdate")

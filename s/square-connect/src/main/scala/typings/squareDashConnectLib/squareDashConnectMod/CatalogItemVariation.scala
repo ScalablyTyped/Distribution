@@ -15,7 +15,7 @@ class CatalogItemVariation () extends js.Object {
   var inventory_alert_threshold: js.UndefOr[scala.Double] = js.native
   /**
     * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its
-    * `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+    * `inventory_alert_threshold`. See [InventoryAlertType](#type-inventoryalerttype) for possible values.
     */
   var inventory_alert_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.CatalogItemVariationNs.InventoryAlertTypeEnum
@@ -43,8 +43,8 @@ class CatalogItemVariation () extends js.Object {
     */
   var price_money: js.UndefOr[Money] = js.native
   /**
-    * Indicates whether the item variation's price is fixed or determined at the time of sale. See
-    * [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+    * Indicates whether the item variation's price is fixed or determined at the time of sale.
+    * See [CatalogPricingType](#type-catalogpricingtype) for possible values.
     */
   var pricing_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CatalogItemVariationNs.PricingTypeEnum] = js.native
   /**

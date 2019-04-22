@@ -1,5 +1,5 @@
 package typings
-package debounceDashFnLib.debounceDashFnMod.debounceNs
+package debounceDashFnLib.debounceDashFnMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -32,6 +32,7 @@ class InventoryCount () extends js.Object {
   var quantity: js.UndefOr[java.lang.String] = js.native
   /**
     * The current [InventoryState](#type-inventorystate) for the related quantity of items.
+    * See [InventoryState](#type-inventorystate) for possible values.
     */
   var state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.InventoryCountNs.StateEnum] = js.native
 }

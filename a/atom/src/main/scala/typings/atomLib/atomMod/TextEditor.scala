@@ -248,7 +248,7 @@ class TextEditor () extends js.Object {
     */
   def getLastBufferRow(): scala.Double = js.native
   /** Returns the most recently added Cursor. */
-  def getLastCursor(): js.UndefOr[Cursor] = js.native
+  def getLastCursor(): Cursor = js.native
   /**
     *  Returns a number representing the last zero-indexed screen row number of
     *  the editor.

@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT16DOT3` extends js.Object
+  sealed trait `3DOT16DOT4` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -524,6 +524,9 @@ object antdLibStrings {
   sealed trait footer extends js.Object
   
   @js.native
+  sealed trait `full-size-kana` extends js.Object
+  
+  @js.native
   sealed trait `full-width` extends js.Object
   
   @js.native
@@ -664,7 +667,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait left
-    extends antdLib.libTabsMod.TabsPosition
+    extends antdLib.libFormFormItemMod.FormLabelAlign
+       with antdLib.libTabsMod.TabsPosition
        with antdLib.libTooltipMod.TooltipPlacement
        with antdLib.libTransferMod.TransferDirection
   
@@ -1119,7 +1123,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait right
-    extends antdLib.libTabsMod.TabsPosition
+    extends antdLib.libFormFormItemMod.FormLabelAlign
+       with antdLib.libTabsMod.TabsPosition
        with antdLib.libTooltipMod.TooltipPlacement
        with antdLib.libTransferMod.TransferDirection
   
@@ -1696,7 +1701,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT16DOT3`: `3DOT16DOT3` = "3.16.3".asInstanceOf[`3DOT16DOT3`]
+  def `3DOT16DOT4`: `3DOT16DOT4` = "3.16.4".asInstanceOf[`3DOT16DOT4`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -1949,6 +1954,8 @@ object antdLibStrings {
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
+  @scala.inline
+  def `full-size-kana`: `full-size-kana` = "full-size-kana".asInstanceOf[`full-size-kana`]
   @scala.inline
   def `full-width`: `full-width` = "full-width".asInstanceOf[`full-width`]
   @scala.inline

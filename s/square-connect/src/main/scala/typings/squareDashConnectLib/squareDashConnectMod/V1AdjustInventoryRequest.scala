@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class V1AdjustInventoryRequest () extends js.Object {
   /**
     * The reason for the inventory adjustment.
-    * See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values
+    * See [V1AdjustInventoryRequestAdjustmentType](#type-v1adjustinventoryrequestadjustmenttype) for possible values.
     */
   var adjustment_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.V1AdjustInventoryRequestNs.AdjustmentTypeEnum

@@ -13,11 +13,11 @@ class OrderFulfillment () extends js.Object {
     */
   var pickup_details: js.UndefOr[OrderFulfillmentPickupDetails] = js.native
   /**
-    * The state of the fulfillment.
+    * The state of the fulfillment. See [OrderFulfillmentState](#type-orderfulfillmentstate) for possible values.
     */
   var state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderFulfillmentNs.StateEnum] = js.native
   /**
-    * The type of the fulfillment.
+    * The type of the fulfillment. See [OrderFulfillmentType](#type-orderfulfillmenttype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderFulfillmentNs.TypeEnum] = js.native
 }

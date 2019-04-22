@@ -25,7 +25,7 @@ class ShiftFilter () extends js.Object {
     */
   var start: js.UndefOr[TimeRange] = js.native
   /**
-    * Fetch a `Shift` instance by `Shift.status`.
+    * Fetch a `Shift` instance by `Shift.status`. See [ShiftFilterStatus](#type-shiftfilterstatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.ShiftFilterNs.StatusEnum] = js.native
   /**

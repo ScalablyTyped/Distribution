@@ -13,7 +13,7 @@ class Card () extends js.Object {
     */
   var billing_address: js.UndefOr[Address] = js.native
   /**
-    * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for all possible values.
+    * The card's brand (such as `VISA`). See [CardBrand](#type-cardbrand) for possible values.
     */
   var card_brand: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CardNs.CardBrandEnum] = js.native
   /**

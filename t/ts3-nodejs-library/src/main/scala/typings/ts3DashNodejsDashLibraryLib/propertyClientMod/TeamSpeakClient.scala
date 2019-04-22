@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakClient
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
+  /** The ChannelID of the client */
+  var cid: scala.Double = js.native
+  /**  The UID of the client */
+  var client_unique_identifier: java.lang.String = js.native
+  /** Client Nickname */
+  var nickname: java.lang.String = js.native
+  /** Array of client Servergroups */
+  var servergroups: js.Array[scala.Double] = js.native
+  /** Returns the Client Type: 0 = CLIENT, 1 = QUERY */
+  var `type`: ClientType = js.native
   /**
     * Adds a set of specified permissions to a client. Multiple permissions can be added by providing the three parameters of each permission. A permission can be specified by permid or permsid.
     * @param - The permid or permsid

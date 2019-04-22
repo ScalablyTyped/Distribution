@@ -15,7 +15,7 @@ class Checkout () extends js.Object {
   var additional_recipients: js.UndefOr[js.Array[AdditionalRecipient]] = js.native
   /**
     * If `true`, Square Checkout will collect shipping information on your behalf and store that information with the
-    * transaction information in your Square Dashboard.  Default: `false`.
+    * transaction information in your Square Dashboard. Default: `false`.
     */
   var ask_for_shipping_address: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -33,7 +33,7 @@ class Checkout () extends js.Object {
   /**
     * The email address to display on the Square Checkout confirmation page and confirmation email that the buyer can
     * use to contact the merchant.  If this value is not set, the confirmation page and email will display the primary
-    * email address associated with the merchant's Square account.  Default: none; only exists if explicitly set.
+    * email address associated with the merchant's Square account. Default: none; only exists if explicitly set.
     */
   var merchant_support_email: js.UndefOr[java.lang.String] = js.native
   /**
@@ -41,13 +41,13 @@ class Checkout () extends js.Object {
     */
   var order: js.UndefOr[Order] = js.native
   /**
-    * If provided, the buyer's email is pre-populated on the checkout page as an editable text field.  Default: none;
-    * only exists if explicitly set.
+    * If provided, the buyer's email is pre-populated on the checkout page as an editable text field.
+    * Default: none; only exists if explicitly set.
     */
   var pre_populate_buyer_email: js.UndefOr[java.lang.String] = js.native
   /**
-    * If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.  Default:
-    * none; only exists if explicitly set.
+    * If provided, the buyer's shipping info is pre-populated on the checkout page as editable text fields.
+    * Default: none; only exists if explicitly set.
     */
   var pre_populate_shipping_address: js.UndefOr[Address] = js.native
   /**

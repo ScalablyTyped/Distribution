@@ -19,8 +19,8 @@ class Order () extends js.Object {
     */
   var fulfillments: js.UndefOr[js.Array[OrderFulfillment]] = js.native
   /**
-    * The order's unique ID. This value is only present for Order objects created by the Orders API through the
-    * [CreateOrder](#endpoint-createorder) endpoint.
+    * The order's unique ID. This value is only present for Order objects created by the Orders API through
+    * the [CreateOrder](#endpoint-orders-createorder) endpoint.
     */
   var id: js.UndefOr[java.lang.String] = js.native
   /**
@@ -35,6 +35,10 @@ class Order () extends js.Object {
     * A client specified identifier to associate an entity in another system with this order.
     */
   var reference_id: js.UndefOr[java.lang.String] = js.native
+  /**
+    * The origination details of the order.
+    */
+  var source: js.UndefOr[OrderSource] = js.native
   /**
     * A list of taxes applied to this order. On read or retrieve, this list includes both order-level and item-level
     * taxes. When creating an Order, set your order-level taxes in this list.

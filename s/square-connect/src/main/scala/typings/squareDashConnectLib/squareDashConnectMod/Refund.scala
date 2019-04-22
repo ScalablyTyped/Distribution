@@ -39,6 +39,7 @@ class Refund () extends js.Object {
   var reason: java.lang.String = js.native
   /**
     * The current status of the refund (`PENDING`, `APPROVED`, `REJECTED`, or `FAILED`).
+    * See [RefundStatus](#type-refundstatus) for possible values.
     */
   var status: squareDashConnectLib.squareDashConnectMod.RefundNs.StatusEnum = js.native
   /**

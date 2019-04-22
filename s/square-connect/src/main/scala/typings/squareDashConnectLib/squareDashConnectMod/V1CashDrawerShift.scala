@@ -65,8 +65,7 @@ class V1CashDrawerShift () extends js.Object {
     */
   var events: js.UndefOr[js.Array[V1CashDrawerEvent]] = js.native
   /**
-    * The amount of money that should be in the cash drawer at the end of the shift, based on the shift's other money
-    * amounts.
+    * The amount of money that should be in the cash drawer at the end of the shift, based on the shift's other money amounts.
     */
   var expected_cash_money: js.UndefOr[V1Money] = js.native
   /**

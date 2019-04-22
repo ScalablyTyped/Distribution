@@ -14,8 +14,8 @@ class CatalogTax () extends js.Object {
     */
   var applies_to_custom_amounts: js.UndefOr[scala.Boolean] = js.native
   /**
-    * Whether the tax is calculated based on a payment's subtotal or total. See
-    * [TaxCalculationPhase](#type-taxcalculationphase) for all possible values.
+    * Whether the tax is calculated based on a payment's subtotal or total.
+    * See [TaxCalculationPhase](#type-taxcalculationphase) for possible values.
     */
   var calculation_phase: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CatalogTaxNs.CalculationPhaseEnum] = js.native
   /**
@@ -23,8 +23,7 @@ class CatalogTax () extends js.Object {
     */
   var enabled: js.UndefOr[scala.Boolean] = js.native
   /**
-    * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for all possible
-    * values.
+    * Whether the tax is `ADDITIVE` or `INCLUSIVE`. See [TaxInclusionType](#type-taxinclusiontype) for possible values.
     */
   var inclusion_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CatalogTaxNs.InclusionTypeEnum] = js.native
   /**
@@ -32,8 +31,8 @@ class CatalogTax () extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
-    * The percentage of the tax in decimal form, using a `'.'` as the decimal separator and without a `'%'` sign. A
-    * value of `7.5` corresponds to 7.5%.
+    * The percentage of the tax in decimal form, using a '.' as the decimal separator and without a '%' sign.
+    * A value of `7.5` corresponds to 7.5%.
     */
   var percentage: js.UndefOr[java.lang.String] = js.native
 }

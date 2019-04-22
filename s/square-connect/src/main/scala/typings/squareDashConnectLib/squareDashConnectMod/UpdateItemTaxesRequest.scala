@@ -13,13 +13,11 @@ class UpdateItemTaxesRequest () extends js.Object {
     */
   var item_ids: js.Array[java.lang.String] = js.native
   /**
-    * The set of [CatalogTax](#type-catalogtax)es (referenced by ID) to disable for the
-    * [CatalogItem](#type-catalogitem).
+    * The set of [CatalogTax](#type-catalogtax)es (referenced by ID) to disable for the [CatalogItem](#type-catalogitem).
     */
   var taxes_to_disable: js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
-    * The set of [CatalogTax](#type-catalogtax)es (referenced by ID) to enable for the
-    * [CatalogItem](#type-catalogitem).
+    * The set of [CatalogTax](#type-catalogtax)es (referenced by ID) to enable for the [CatalogItem](#type-catalogitem).
     */
   var taxes_to_enable: js.UndefOr[js.Array[java.lang.String]] = js.native
 }

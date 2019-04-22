@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RevokeTokenRequest () extends js.Object {
   /**
-    * The access token of the merchant whose token you want to revoke. Do not provide a value for merchant_id if you
-    * provide this parameter.
+    * The access token of the merchant whose token you want to revoke.
+    * Do not provide a value for merchant_id if you provide this parameter.
     */
   var access_token: js.UndefOr[java.lang.String] = js.native
   /**
@@ -18,8 +18,8 @@ class RevokeTokenRequest () extends js.Object {
     */
   var client_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The ID of the merchant whose token you want to revoke. Do not provide a value for access_token if you provide
-    * this parameter.
+    * The ID of the merchant whose token you want to revoke.
+    * Do not provide a value for access_token if you provide this parameter.
     */
   var merchant_id: js.UndefOr[java.lang.String] = js.native
 }

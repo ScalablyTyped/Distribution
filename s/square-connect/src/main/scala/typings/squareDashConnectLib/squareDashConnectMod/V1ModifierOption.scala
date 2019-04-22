@@ -25,8 +25,8 @@ class V1ModifierOption () extends js.Object {
     */
   var on_by_default: js.UndefOr[scala.Boolean] = js.native
   /**
-    * Indicates the modifier option's list position when displayed in Square Register and the merchant dashboard. If
-    * more than one modifier option in the same modifier list has the same ordinal value, those options are displayed
+    * Indicates the modifier option's list position when displayed in Square Register and the merchant dashboard.
+    * If more than one modifier option in the same modifier list has the same ordinal value, those options are displayed
     * in alphabetical order.
     */
   var ordinal: js.UndefOr[scala.Double] = js.native
@@ -34,5 +34,9 @@ class V1ModifierOption () extends js.Object {
     * The modifier option's price.
     */
   var price_money: js.UndefOr[V1Money] = js.native
+  /**
+    * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+    */
+  var v2_id: js.UndefOr[java.lang.String] = js.native
 }
 

@@ -22,6 +22,10 @@ object SearchCatalogObjectsRequestNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
     
     @js.native
+    sealed trait IMAGE
+      extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
+    
+    @js.native
     sealed trait ITEM
       extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
     
@@ -43,6 +47,7 @@ object SearchCatalogObjectsRequestNs extends js.Object {
     
     /* "CATEGORY" */ val CATEGORY: CATEGORY with java.lang.String = js.native
     /* "DISCOUNT" */ val DISCOUNT: DISCOUNT with java.lang.String = js.native
+    /* "IMAGE" */ val IMAGE: IMAGE with java.lang.String = js.native
     /* "ITEM" */ val ITEM: ITEM with java.lang.String = js.native
     /* "ITEM_VARIATION" */ val ITEMVARIATION: ITEMVARIATION with java.lang.String = js.native
     /* "MODIFIER" */ val MODIFIER: MODIFIER with java.lang.String = js.native

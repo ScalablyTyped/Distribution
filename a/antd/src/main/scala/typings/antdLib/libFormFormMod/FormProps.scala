@@ -13,7 +13,7 @@ trait FormProps
   var colon: js.UndefOr[scala.Boolean] = js.undefined
   var form: js.UndefOr[WrappedFormUtils[_]] = js.undefined
   var hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined
-  var labelAlign: js.UndefOr[antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
+  var labelAlign: js.UndefOr[antdLib.libFormFormItemMod.FormLabelAlign] = js.undefined
   var labelCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
   var layout: js.UndefOr[FormLayout] = js.undefined
   @JSName("onSubmit")
@@ -33,7 +33,7 @@ object FormProps {
     colon: js.UndefOr[scala.Boolean] = js.undefined,
     form: WrappedFormUtils[_] = null,
     hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined,
-    labelAlign: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
+    labelAlign: antdLib.libFormFormItemMod.FormLabelAlign = null,
     labelCol: antdLib.libGridColMod.ColProps = null,
     layout: FormLayout = null,
     onSubmit: reactLib.reactMod.FormEventHandler[_] = null,
@@ -47,7 +47,7 @@ object FormProps {
     if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon)
     if (form != null) __obj.updateDynamic("form")(form)
     if (!js.isUndefined(hideRequiredMark)) __obj.updateDynamic("hideRequiredMark")(hideRequiredMark)
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
     if (labelCol != null) __obj.updateDynamic("labelCol")(labelCol)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)

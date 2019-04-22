@@ -29,7 +29,7 @@ class Employee () extends js.Object {
     */
   var location_ids: js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
-    * Specifies the status of the employee being fetched.
+    * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.EmployeeNs.StatusEnum] = js.native
   /**

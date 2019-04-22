@@ -14,7 +14,7 @@ class V1Money () extends js.Object {
     */
   var amount: js.UndefOr[scala.Double] = js.native
   /**
-    *  See [Currency](#type-currency) for possible values
+    * See [Currency](#type-currency) for possible values.
     */
   var currency_code: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1MoneyNs.CurrencyCodeEnum] = js.native
 }

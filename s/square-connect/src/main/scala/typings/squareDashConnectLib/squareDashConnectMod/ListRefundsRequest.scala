@@ -19,13 +19,13 @@ class ListRefundsRequest () extends js.Object {
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**
-    * The end of the requested reporting period, in RFC 3339 format. See [Date ranges](#dateranges) for details on
-    * date inclusivity/exclusivity. Default value: The current time.
+    * The end of the requested reporting period, in RFC 3339 format.
+    * See [Date ranges](#dateranges) for details on date inclusivity/exclusivity. Default value: The current time.
     */
   var end_time: js.UndefOr[java.lang.String] = js.native
   /**
     * The order in which results are listed in the response (`ASC` for oldest first, `DESC` for newest first).
-    * Default value: `DESC`
+    * Default value: `DESC` See [SortOrder](#type-sortorder) for possible values
     */
   var sort_order: js.UndefOr[squareDashConnectLib.squareDashConnectMod.ListRefundsRequestNs.SortOrderEnum] = js.native
 }

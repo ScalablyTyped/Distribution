@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd", "List")
 @js.native
-class List[T] ()
-  extends antdLib.libListMod.default[T]
+class List[T] protected ()
+  extends antdLib.libListMod.default[T] {
+  def this(props: antdLib.libListMod.ListProps[T]) = this()
+}
 
 /* static members */
 @JSImport("antd", "List")

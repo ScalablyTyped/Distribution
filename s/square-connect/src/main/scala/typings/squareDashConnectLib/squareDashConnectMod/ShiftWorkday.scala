@@ -13,13 +13,13 @@ class ShiftWorkday () extends js.Object {
     */
   var date_range: js.UndefOr[DateRange] = js.native
   /**
-    * Location-specific timezones convert workdays to datetime filters. Every location included in the query must have
-    * a timezone, or this field must be provided as a fallback. Format: the IANA timezone database identifier for the
-    * relevant timezone.
+    * Location-specific timezones convert workdays to datetime filters.
+    * Every location included in the query must have a timezone, or this field must be provided as a fallback.
+    * Format: the IANA timezone database identifier for the relevant timezone.
     */
   var default_timezone: js.UndefOr[java.lang.String] = js.native
   /**
-    * The strategy on which the dates are applied.
+    * The strategy on which the dates are applied. See [ShiftWorkdayMatcher](#type-shiftworkdaymatcher) for possible values.
     */
   var match_shifts_by: js.UndefOr[squareDashConnectLib.squareDashConnectMod.ShiftWorkdayNs.MatchShiftsByEnum] = js.native
 }

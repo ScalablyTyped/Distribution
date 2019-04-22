@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakChannel
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
+  /** Returns the Name of the channel */
+  var name: java.lang.String = js.native
   /**
     * Deletes an existing channel by ID. If force is set to 1, the channel will be deleted even if there are clients within.
     * The clients will be kicked to the default channel with an appropriate reason message.

@@ -23,8 +23,8 @@ class OrderLineItemModifier () extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
-    * The total price of the item modifier for its line item. This is the modifier's base_price_money multiplied by the
-    * line item's quantity.
+    * The total price of the item modifier for its line item.
+    * This is the modifier's base_price_money multiplied by the line item's quantity.
     */
   var total_price_money: js.UndefOr[Money] = js.native
 }

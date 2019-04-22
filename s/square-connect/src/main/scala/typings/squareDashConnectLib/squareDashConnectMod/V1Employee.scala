@@ -42,7 +42,7 @@ class V1Employee () extends js.Object {
   var role_ids: js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
     * CWhether the employee is ACTIVE or INACTIVE. Inactive employees cannot sign in to Square Register.Merchants
-    * update this field from the Square Dashboard. See [V1EmployeeStatus](#type-v1employeestatus) for possible values
+    * update this field from the Square Dashboard. See [V1EmployeeStatus](#type-v1employeestatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1EmployeeNs.StatusEnum] = js.native
   /**

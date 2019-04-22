@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WorkweekConfig () extends js.Object {
   /**
-    * A read-only timestamp in RFC 3339 format; presented in UTC
+    * A read-only timestamp in RFC 3339 format; presented in UTC.
     */
   var created_at: js.UndefOr[java.lang.String] = js.native
   /**
@@ -23,10 +23,11 @@ class WorkweekConfig () extends js.Object {
   var start_of_day_local_time: java.lang.String = js.native
   /**
     * The day of the week on which a business week cuts over for compensation purposes.
+    * See [Weekday](#type-weekday) for possible values.
     */
   var start_of_week: squareDashConnectLib.squareDashConnectMod.WorkweekConfigNs.StartOfWeekEnum = js.native
   /**
-    * A read-only timestamp in RFC 3339 format; presented in UTC
+    * A read-only timestamp in RFC 3339 format; presented in UTC.
     */
   var updated_at: js.UndefOr[java.lang.String] = js.native
   /**

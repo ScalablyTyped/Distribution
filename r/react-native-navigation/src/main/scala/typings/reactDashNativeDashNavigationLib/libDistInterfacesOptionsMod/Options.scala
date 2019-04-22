@@ -90,7 +90,7 @@ trait Options extends js.Object {
   /**
     * Configure the overlay
     */
-  var overlay: js.UndefOr[OptionsOverlay] = js.undefined
+  var overlay: js.UndefOr[OverlayOptions] = js.undefined
   /**
     * Enable or disable swipe back to pop gesture
     * #### (iOS specific)
@@ -138,7 +138,7 @@ object Options {
     layout: OptionsLayout = null,
     modalPresentationStyle: OptionsModalPresentationStyle = null,
     modalTransitionStyle: OptionsModalTransitionStyle = null,
-    overlay: OptionsOverlay = null,
+    overlay: OverlayOptions = null,
     popGesture: js.UndefOr[scala.Boolean] = js.undefined,
     preview: OptionsPreview = null,
     rootBackgroundImage: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,

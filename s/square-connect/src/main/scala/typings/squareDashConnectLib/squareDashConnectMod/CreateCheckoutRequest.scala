@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class CreateCheckoutRequest () extends js.Object {
   /**
     * The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be
-    * split from here.  If you provide this value, the `amount_money` value in your additional_recipients must not be
+    * split from here. If you provide this value, the `amount_money` value in your additional_recipients must not be
     * more than 90% of the `total_money` calculated by Square for your order. The `location_id` must be the valid
-    * location of the app owner merchant.  This field requires `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.
+    * location of the app owner merchant. This field requires `PAYMENTS_WRITE_ADDITIONAL_RECIPIENTS` OAuth permission.
     * This field is currently not supported in sandbox.
     */
   var additional_recipients: js.UndefOr[js.Array[ChargeRequestAdditionalRecipient]] = js.native
@@ -23,10 +23,10 @@ class CreateCheckoutRequest () extends js.Object {
   var ask_for_shipping_address: js.UndefOr[scala.Boolean] = js.native
   /**
     * A unique string that identifies this checkout among others you've created. It can be any valid string but must be
-    * unique for every order sent to Square Checkout for a given location ID.  The idempotency key is used to avoid
+    * unique for every order sent to Square Checkout for a given location ID. The idempotency key is used to avoid
     * processing the same order more than once. If you're unsure whether a particular checkout was created
     * successfully, you can reattempt it with the same idempotency key and all the same other parameters without
-    * worrying about creating duplicates.  We recommend using a random number/string generator native to the language
+    * worrying about creating duplicates. We recommend using a random number/string generator native to the language
     * you are working in to generate strings for your idempotency keys. See [Idempotency](/basics/api101/idempotency)
     * for more information.
     */

@@ -301,6 +301,7 @@ trait TeamSpeak3
     * Lists all Clients with a given Filter
     * @param - Filter Object
     */
+  def clientList(): js.Promise[js.Array[ts3DashNodejsDashLibraryLib.propertyClientMod.^]] = js.native
   def clientList(filter: js.Any): js.Promise[js.Array[ts3DashNodejsDashLibraryLib.propertyClientMod.^]] = js.native
   /**
     * Moves the Client to a different Channel
@@ -638,6 +639,53 @@ trait TeamSpeak3
     */
   def messageUpdate(msgid: scala.Double): js.Promise[_] = js.native
   def messageUpdate(msgid: scala.Double, flag: scala.Double): js.Promise[_] = js.native
+  def on(event: java.lang.String, listener: js.Function0[_]): this.type = js.native
+  @JSName("on")
+  def on_clientconnect(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.clientconnect,
+    listener: js.Function1[/* data */ ts3DashNodejsDashLibraryLib.Anon_Client, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_clientdisconnect(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.clientdisconnect,
+    listener: js.Function1[/* data */ ClientDisconnectResponse, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_clientmoved(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.clientmoved,
+    listener: js.Function1[/* data */ ClientMovedResponse, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_close(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.close,
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_debug(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.debug,
+    listener: js.Function1[/* debug */ DebugInformation, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_error(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.error,
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_flooding(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.flooding,
+    listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_ready(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.ready,
+    listener: js.Function0[scala.Unit]
+  ): this.type = js.native
+  // Type-safe events.
+  @JSName("on")
+  def on_textmessage(
+    event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.textmessage,
+    listener: js.Function1[/* data */ MessageData, scala.Unit]
+  ): this.type = js.native
   def permFind(perm: java.lang.String): js.Promise[_] = js.native
   /**
     * Retrieves detailed information about all assignments of the permission.
@@ -812,7 +860,7 @@ trait TeamSpeak3
     * Displays the IDs of all clients currently residing in the server group.
     * @param - the ServerGroup id
     */
-  def serverGroupClientList(sgid: scala.Double): js.Promise[_] = js.native
+  def serverGroupClientList(sgid: scala.Double): (js.Promise[js.Array[ServerGroupClientListResponse] | ServerGroupClientListResponse]) | scala.Null = js.native
   /**
     * Creates a copy of the server group specified with ssgid.
     * If tsgid is set to 0, the server will create a new group.
@@ -963,6 +1011,6 @@ trait TeamSpeak3
   /**
     * Displays information about your current ServerQuery connection including your loginname, etc.
     */
-  def whoami(): js.Promise[_] = js.native
+  def whoami(): js.Promise[WhoAmIResponse] = js.native
 }
 

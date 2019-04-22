@@ -17,7 +17,7 @@ class SourceApplication () extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
-    * Read-only [Product](#type-product) type for the application.
+    * Read-only [Product](#type-product) type for the application. See [Product](#type-product) for possible values.
     */
   var product: js.UndefOr[squareDashConnectLib.squareDashConnectMod.SourceApplicationNs.ProductEnum] = js.native
 }

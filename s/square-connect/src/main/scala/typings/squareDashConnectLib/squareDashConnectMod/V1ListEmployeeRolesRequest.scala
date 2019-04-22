@@ -17,8 +17,8 @@ class V1ListEmployeeRolesRequest () extends js.Object {
     */
   var limit: js.UndefOr[scala.Double] = js.native
   /**
-    * The order in which employees are listed in the response, based on their created_at field.Default value: ASC See
-    * [SortOrder](#type-sortorder) for possible values
+    * The order in which employees are listed in the response, based on their created_at field.
+    * Default value: ASC See [SortOrder](#type-sortorder) for possible values.
     */
   var order: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1ListEmployeeRolesRequestNs.OrderEnum] = js.native
 }

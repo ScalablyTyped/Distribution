@@ -21,9 +21,13 @@ class V1ModifierList () extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
-    * Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item. See
-    * [V1ModifierListSelectionType](#type-v1modifierlistselectiontype) for possible values
+    * Indicates whether MULTIPLE options or a SINGLE option from the modifier list can be applied to a single item.
+    * See [V1ModifierListSelectionType](#type-v1modifierlistselectiontype) for possible values.
     */
   var selection_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1ModifierListNs.SelectionTypeEnum] = js.native
+  /**
+    * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+    */
+  var v2_id: js.UndefOr[java.lang.String] = js.native
 }
 

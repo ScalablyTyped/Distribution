@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShiftWage () extends js.Object {
   /**
-    * Can be a custom-set hourly wage or the calculated effective hourly wage based on annual wage and hours worked per
-    * week.
+    * Can be a custom-set hourly wage or the calculated effective hourly wage based on annual wage and hours worked per week.
     */
   var hourly_rate: js.UndefOr[Money] = js.native
   /**

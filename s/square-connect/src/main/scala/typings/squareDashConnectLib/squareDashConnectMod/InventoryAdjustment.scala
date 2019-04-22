@@ -27,6 +27,7 @@ class InventoryAdjustment () extends js.Object {
   var employee_id: js.UndefOr[java.lang.String] = js.native
   /**
     * The [InventoryState](#type-inventorystate) of the related quantity of items before the adjustment.
+    * See [InventoryState](#type-inventorystate) for possible values.
     */
   var from_state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.InventoryAdjustmentNs.FromStateEnum] = js.native
   /**
@@ -72,11 +73,12 @@ class InventoryAdjustment () extends js.Object {
   var source: js.UndefOr[SourceApplication] = js.native
   /**
     * The [InventoryState](#type-inventorystate) of the related quantity of items after the adjustment.
+    * See [InventoryState](#type-inventorystate) for possible values.
     */
   var to_state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.InventoryAdjustmentNs.ToStateEnum] = js.native
   /**
-    * The read-only total price paid for goods associated with the adjustment. Present if and only if `to_state` is
-    * `SOLD`. Always non-negative.
+    * The read-only total price paid for goods associated with the adjustment.
+    * Present if and only if `to_state` is `SOLD`. Always non-negative.
     */
   var total_price_money: js.UndefOr[Money] = js.native
   /**

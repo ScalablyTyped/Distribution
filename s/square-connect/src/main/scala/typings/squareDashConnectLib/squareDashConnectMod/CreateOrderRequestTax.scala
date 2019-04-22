@@ -9,13 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class CreateOrderRequestTax () extends js.Object {
   /**
-    * Only used for catalog taxes. The catalog object ID of an existing [CatalogTax](#type-catalogtax). Do not provide
-    * a value for this field if you provide values in other fields for an ad hoc tax.
+    * Only used for catalog taxes. The catalog object ID of an existing [CatalogTax](#type-catalogtax).
+    * Do not provide a value for this field if you provide values in other fields for an ad hoc tax.
     */
   var catalog_object_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * Only used for ad hoc taxes. The tax's name.  Do not provide a value for this field if you set
-    * `catalog_object_id`.
+    * Only used for ad hoc taxes. The tax's name. Do not provide a value for this field if you set `catalog_object_id`.
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**

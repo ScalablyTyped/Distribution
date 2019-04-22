@@ -15,14 +15,14 @@ class CatalogModifierList () extends js.Object {
     */
   var modifiers: js.UndefOr[js.Array[CatalogObject]] = js.native
   /**
-    * The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable. This field has max length of 255 Unicode
-    * code points.
+    * The [CatalogModifierList](#type-catalogmodifierlist)'s name. Searchable.
+    * This field has max length of 255 Unicode code points.
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
     * Indicates whether multiple options from the [CatalogModifierList](#type-catalogmodifierlist) can be applied to a
-    * single [CatalogItem](#type-catalogitem). See
-    * [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for all possible values.
+    * single [CatalogItem](#type-catalogitem).
+    * See [CatalogModifierListSelectionType](#type-catalogmodifierlistselectiontype) for possible values.
     */
   var selection_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.CatalogModifierListNs.SelectionTypeEnum

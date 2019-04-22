@@ -90,9 +90,8 @@ class V1Payment () extends js.Object {
     */
   var refunded_money: js.UndefOr[V1Money] = js.native
   /**
-    * All of the refunds applied to the payment. Note that the value of all refunds on a payment can exceed the value
-    * of all tenders if a merchant chooses to refund money to a tender after previously accepting returned goods as
-    * part of an exchange.
+    * All of the refunds applied to the payment. Note that the value of all refunds on a payment can exceed the value of all
+    * tenders if a merchant chooses to refund money to a tender after previously accepting returned goods as part of an exchange.
     */
   var refunds: js.UndefOr[js.Array[V1Refund]] = js.native
   /**
@@ -114,7 +113,7 @@ class V1Payment () extends js.Object {
     */
   var tax_money: js.UndefOr[V1Money] = js.native
   /**
-    * All of the additive taxes associated with the payment.
+    * All of the tenders associated with the payment.
     */
   var tender: js.UndefOr[js.Array[V1Tender]] = js.native
   /**

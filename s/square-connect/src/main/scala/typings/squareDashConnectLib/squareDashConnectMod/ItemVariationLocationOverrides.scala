@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class ItemVariationLocationOverrides () extends js.Object {
   /**
     * If the inventory quantity for the variation is less than or equal to this value and `inventory_alert_type` is
-    * `LOW_QUANTITY`, the variation displays an alert in the merchant dashboard.  This value is always an integer.
+    * `LOW_QUANTITY`, the variation displays an alert in the merchant dashboard. This value is always an integer.
     */
   var inventory_alert_threshold: js.UndefOr[scala.Double] = js.native
   /**
     * Indicates whether the [CatalogItemVariation](#type-catalogitemvariation) displays an alert when its inventory
     * quantity is less than or equal to its `inventory_alert_threshold`.
-    * See [InventoryAlertType](#type-inventoryalerttype) for all possible values.
+    * See [InventoryAlertType](#type-inventoryalerttype) for possible values.
     */
   var inventory_alert_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.ItemVariationLocationOverridesNs.InventoryAlertTypeEnum
@@ -32,7 +32,7 @@ class ItemVariationLocationOverrides () extends js.Object {
   var price_money: js.UndefOr[Money] = js.native
   /**
     * The pricing type (fixed or variable) for the [CatalogItemVariation](#type-catalogitemvariation) at the given
-    * [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for all possible values.
+    * [location](#type-location). See [CatalogPricingType](#type-catalogpricingtype) for possible values.
     */
   var pricing_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.ItemVariationLocationOverridesNs.PricingTypeEnum

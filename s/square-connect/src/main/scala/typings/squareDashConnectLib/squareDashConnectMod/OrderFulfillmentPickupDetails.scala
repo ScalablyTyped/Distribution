@@ -34,10 +34,9 @@ class OrderFulfillmentPickupDetails () extends js.Object {
     */
   var expired_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The expiry [timestamp](#workingwithdates) in RFC 3339 format, e.g., \"2016-09-04T23:59:33.123Z\". This timestamp
+    * The expiry [timestamp](#workingwithdates) in RFC 3339 format, e.g., "2016-09-04T23:59:33.123Z". This timestamp
     * indicates when the pickup fulfillment will expire if it is not accepted by the merchant. Expiration time can only
-    * be set up to 7 days in the future. If not set, this pickup fulfillment will be automatically accepted when
-    * placed.
+    * be set up to 7 days in the future. If not set, this pickup fulfillment will be automatically accepted when placed.
     */
   var expires_at: js.UndefOr[java.lang.String] = js.native
   /**
@@ -51,8 +50,8 @@ class OrderFulfillmentPickupDetails () extends js.Object {
     */
   var picked_up_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The pickup [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., "2016-09-04T23:59:33.123Z". For
-    * fulfillments with the schedule type `ASAP`, this is automatically set to the current time plus the expected
+    * The pickup [timestamp](#workingwithdates) in RFC3339 timestamp format, e.g., "2016-09-04T23:59:33.123Z".
+    * For fulfillments with the schedule type `ASAP`, this is automatically set to the current time plus the expected
     * duration to prepare the fulfillment. This represents the start of the pickup window.
     */
   var pickup_at: js.UndefOr[java.lang.String] = js.native
@@ -88,6 +87,7 @@ class OrderFulfillmentPickupDetails () extends js.Object {
   var rejected_at: js.UndefOr[java.lang.String] = js.native
   /**
     * The schedule type of the pickup fulfillment. Defaults to `SCHEDULED`.
+    * See [OrderFulfillmentPickupDetailsScheduleType](#type-orderfulfillmentpickupdetailsscheduletype) for possible values.
     */
   var schedule_type: js.UndefOr[
     squareDashConnectLib.squareDashConnectMod.OrderFulfillmentPickupDetailsNs.ScheduleTypeEnum

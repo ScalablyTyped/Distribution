@@ -21,7 +21,7 @@ class ListEmployeesRequest () extends js.Object {
     */
   var location_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * Specifies the EmployeeStatus to filter the employee by.
+    * Specifies the EmployeeStatus to filter the employee by. See [EmployeeStatus](#type-employeestatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.ListEmployeesRequestNs.StatusEnum] = js.native
 }

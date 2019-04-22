@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/layout/Sider", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val SiderContext: createDashReactDashContextLib.createDashReactDashContextMod.Context[SiderContextProps] = js.native
+  val SiderContext: atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.Context[SiderContextProps] = js.native
 }
 

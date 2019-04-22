@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebpackMerge extends js.Object {
   @JSName("multiple")
-  var multiple_Original: ConfigurationMergeFunction = js.native
+  var multiple_Original: MultipleConfigurationMergeFunction = js.native
   @JSName("smart")
   var smart_Original: ConfigurationMergeFunction = js.native
   @JSName("unique")
   var unique_Original: UniqueFunction = js.native
   def apply(configs: webpackLib.webpackMod.Configuration*): webpackLib.webpackMod.Configuration = js.native
   def apply(customizeOptions: CustomizeOptions): ConfigurationMergeFunction = js.native
-  def multiple(configs: webpackLib.webpackMod.Configuration*): webpackLib.webpackMod.Configuration = js.native
+  def multiple(configs: MultipleConfiguration*): js.Array[webpackLib.webpackMod.Configuration] = js.native
   def smart(configs: webpackLib.webpackMod.Configuration*): webpackLib.webpackMod.Configuration = js.native
   def smartStrategy(options: org.scalablytyped.runtime.StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native
   def strategy(options: org.scalablytyped.runtime.StringDictionary[MergeStrategy]): ConfigurationMergeFunction = js.native

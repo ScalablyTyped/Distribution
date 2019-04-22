@@ -39,7 +39,7 @@ class Shift () extends js.Object {
     */
   var start_at: java.lang.String = js.native
   /**
-    * Describes working state of the current `Shift`.
+    * Describes working state of the current `Shift`. See [ShiftStatus](#type-shiftstatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.ShiftNs.StatusEnum] = js.native
   /**

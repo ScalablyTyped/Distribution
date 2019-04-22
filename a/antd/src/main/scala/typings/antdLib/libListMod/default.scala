@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/list", JSImport.Default)
 @js.native
-class default[T] () extends List[T]
+class default[T] protected () extends List[T] {
+  def this(props: ListProps[T]) = this()
+}
 
 /* static members */
 @JSImport("antd/lib/list", JSImport.Default)

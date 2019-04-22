@@ -19,8 +19,7 @@ class V1Variation () extends js.Object {
   var inventory_alert_threshold: js.UndefOr[scala.Double] = js.native
   /**
     * Indicates whether the item variation displays an alert when its inventory quantity is less than or equal to its
-    * inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible
-    * values
+    * inventory_alert_threshold. See [V1VariationInventoryAlertType](#type-v1variationinventoryalerttype) for possible values.
     */
   var inventory_alert_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1VariationNs.InventoryAlertTypeEnum] = js.native
   /**
@@ -42,8 +41,8 @@ class V1Variation () extends js.Object {
     */
   var price_money: js.UndefOr[V1Money] = js.native
   /**
-    * Indicates whether the item variation's price is fixed or determined at the time of sale. See
-    * [V1VariationPricingType](#type-v1variationpricingtype) for possible values
+    * Indicates whether the item variation's price is fixed or determined at the time of sale.
+    * See [V1VariationPricingType](#type-v1variationpricingtype) for possible values.
     */
   var pricing_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1VariationNs.PricingTypeEnum] = js.native
   /**
@@ -58,5 +57,9 @@ class V1Variation () extends js.Object {
     * Arbitrary metadata associated with the variation. Cannot exceed 255 characters.
     */
   var user_data: js.UndefOr[java.lang.String] = js.native
+  /**
+    * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+    */
+  var v2_id: js.UndefOr[java.lang.String] = js.native
 }
 

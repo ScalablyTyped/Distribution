@@ -31,8 +31,8 @@ class V1ListSettlementsRequest () extends js.Object {
     */
   var order: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1ListSettlementsRequestNs.OrderEnum] = js.native
   /**
-    * Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED). See
-    * [V1ListSettlementsRequestStatus](#type-v1listsettlementsrequeststatus) for possible values
+    * Provide this parameter to retrieve only settlements with a particular status (SENT or FAILED).
+    * See [V1ListSettlementsRequestStatus](#type-v1listsettlementsrequeststatus) for possible values
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1ListSettlementsRequestNs.StatusEnum] = js.native
 }

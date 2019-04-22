@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1MerchantLocationDetails () extends js.Object {
   /**
-    * The nickname assigned to the single-location account by the parent business. This value appears in the parent
-    * business's multi-location dashboard.
+    * The nickname assigned to the single-location account by the parent business.
+    * This value appears in the parent business's multi-location dashboard.
     */
   var nickname: js.UndefOr[java.lang.String] = js.native
 }

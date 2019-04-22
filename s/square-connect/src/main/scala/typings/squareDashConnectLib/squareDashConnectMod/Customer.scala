@@ -32,6 +32,7 @@ class Customer () extends js.Object {
   var created_at: java.lang.String = js.native
   /**
     * A creation source represents the method used to create the customer profile.
+    * See [CustomerCreationSource](#type-customercreationsource) for possible values.
     */
   var creation_source: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CustomerNs.CreationSourceEnum] = js.native
   /**

@@ -17,8 +17,8 @@ class V1BankAccount () extends js.Object {
     */
   var bank_name: js.UndefOr[java.lang.String] = js.native
   /**
-    * The currency code of the currency associated with the bank account, in ISO 4217 format. For example, the currency
-    * code for US dollars is USD.
+    * The currency code of the currency associated with the bank account, in ISO 4217 format.
+    * For example, the currency code for US dollars is USD.
     */
   var currency_code: js.UndefOr[java.lang.String] = js.native
   /**
@@ -38,8 +38,8 @@ class V1BankAccount () extends js.Object {
     */
   var routing_number: js.UndefOr[java.lang.String] = js.native
   /**
-    * The bank account's type (for example, savings or checking). See [V1BankAccountType](#type-v1bankaccounttype) for
-    * possible values
+    * The bank account's type (for example, savings or checking).
+    * See [V1BankAccountType](#type-v1bankaccounttype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1BankAccountNs.TypeEnum] = js.native
 }

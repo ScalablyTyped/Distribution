@@ -14,11 +14,12 @@ class TenderCardDetails () extends js.Object {
   var card: js.UndefOr[Card] = js.native
   /**
     * The method used to enter the card's details for the transaction.
+    * See [TenderCardDetailsEntryMethod](#type-tendercarddetailsentrymethod) for possible values.
     */
   var entry_method: js.UndefOr[squareDashConnectLib.squareDashConnectMod.TenderCardDetailsNs.EntryMethodEnum] = js.native
   /**
-    * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`). See
-    * [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
+    * The credit card payment's current state (such as `AUTHORIZED` or `CAPTURED`).
+    * See [TenderCardDetailsStatus](#type-tendercarddetailsstatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.TenderCardDetailsNs.StatusEnum] = js.native
 }

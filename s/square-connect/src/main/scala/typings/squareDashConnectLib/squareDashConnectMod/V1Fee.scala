@@ -9,17 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1Fee () extends js.Object {
   /**
-    * The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees. See
-    * [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values
+    * The type of adjustment the fee applies to a payment. Currently, this value is TAX for all fees.
+    * See [V1FeeAdjustmentType](#type-v1feeadjustmenttype) for possible values.
     */
   var adjustment_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1FeeNs.AdjustmentTypeEnum] = js.native
   /**
-    * If true, the fee applies to custom amounts entered into Square Register that are not associated with a particular
-    * item.
+    * If true, the fee applies to custom amounts entered into Square Register that are not associated with a particular item.
     */
   var applies_to_custom_amounts: js.UndefOr[scala.Boolean] = js.native
   /**
-    * Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values
+    * Forthcoming See [V1FeeCalculationPhase](#type-v1feecalculationphase) for possible values.
     */
   var calculation_phase: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1FeeNs.CalculationPhaseEnum] = js.native
   /**
@@ -31,7 +30,7 @@ class V1Fee () extends js.Object {
     */
   var id: js.UndefOr[java.lang.String] = js.native
   /**
-    * Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values
+    * Whether the fee is ADDITIVE or INCLUSIVE. See [V1FeeInclusionType](#type-v1feeinclusiontype) for possible values.
     */
   var inclusion_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1FeeNs.InclusionTypeEnum] = js.native
   /**
@@ -44,8 +43,12 @@ class V1Fee () extends js.Object {
   var rate: js.UndefOr[java.lang.String] = js.native
   /**
     * In countries with multiple classifications for sales taxes, indicates which classification the fee falls under.
-    * Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values
+    * Currently relevant only to Canadian merchants. See [V1FeeType](#type-v1feetype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1FeeNs.TypeEnum] = js.native
+  /**
+    * The ID of the CatalogObject in the Connect v2 API. Objects that are shared across multiple locations share the same v2 ID.
+    */
+  var v2_id: js.UndefOr[java.lang.String] = js.native
 }
 

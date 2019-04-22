@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "square-connect"
-version := "2.20190313-dt-20190415Z-a57847"
+version := "2.20190410-dt-20190421Z-8adf63"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

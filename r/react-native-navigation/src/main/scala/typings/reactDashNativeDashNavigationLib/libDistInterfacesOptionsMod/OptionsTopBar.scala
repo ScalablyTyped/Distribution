@@ -111,6 +111,11 @@ trait OptionsTopBar extends js.Object {
     */
   var title: js.UndefOr[OptionsTopBarTitle] = js.undefined
   /**
+    * Layout top margin
+    * #### (Android specific)
+    */
+  var topMargin: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Show or hide the top bar
     */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -141,6 +146,7 @@ object OptionsTopBar {
     subtitle: OptionsTopBarSubtitle = null,
     testID: java.lang.String = null,
     title: OptionsTopBarTitle = null,
+    topMargin: scala.Int | scala.Double = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): OptionsTopBar = {
     val __obj = js.Dynamic.literal()
@@ -166,6 +172,7 @@ object OptionsTopBar {
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (title != null) __obj.updateDynamic("title")(title)
+    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[OptionsTopBar]
   }

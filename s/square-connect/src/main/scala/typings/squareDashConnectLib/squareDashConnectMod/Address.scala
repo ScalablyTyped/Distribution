@@ -35,7 +35,7 @@ class Address () extends js.Object {
     */
   var administrative_district_level_3: js.UndefOr[java.lang.String] = js.native
   /**
-    * The address's country, in ISO 3166-1-alpha-2 format.
+    * The address's country, in ISO 3166-1-alpha-2 format. See [Country](#type-country) for possible values
     */
   var country: js.UndefOr[squareDashConnectLib.squareDashConnectMod.AddressNs.CountryEnum] = js.native
   /**

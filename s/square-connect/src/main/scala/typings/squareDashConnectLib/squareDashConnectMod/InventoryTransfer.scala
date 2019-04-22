@@ -52,6 +52,7 @@ class InventoryTransfer () extends js.Object {
   var source: js.UndefOr[SourceApplication] = js.native
   /**
     * The [InventoryState](#type-inventorystate) for the quantity of items being transfered.
+    * See [InventoryState](#type-inventorystate) for possible values.
     */
   var state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.InventoryTransferNs.StateEnum] = js.native
   /**

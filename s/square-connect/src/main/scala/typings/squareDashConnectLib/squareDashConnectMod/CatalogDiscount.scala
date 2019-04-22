@@ -14,8 +14,8 @@ class CatalogDiscount () extends js.Object {
     */
   var amount_money: js.UndefOr[Money] = js.native
   /**
-    * Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale. See
-    * [CatalogDiscountType](#type-catalogdiscounttype) for all possible values.
+    * Indicates whether the discount is a fixed amount or percentage, or entered at the time of sale.
+    * See [CatalogDiscountType](#type-catalogdiscounttype) for possible values.
     */
   var discount_type: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CatalogDiscountNs.DiscountTypeEnum] = js.native
   /**

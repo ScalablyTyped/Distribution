@@ -13,8 +13,7 @@ class V1ListEmployeesRequest () extends js.Object {
     */
   var batch_token: js.UndefOr[java.lang.String] = js.native
   /**
-    * If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601
-    * format.
+    * If filtering results by their created_at field, the beginning of the requested reporting period, in ISO 8601 format.
     */
   var begin_created_at: js.UndefOr[java.lang.String] = js.native
   /**
@@ -39,13 +38,13 @@ class V1ListEmployeesRequest () extends js.Object {
     */
   var limit: js.UndefOr[scala.Double] = js.native
   /**
-    * The order in which employees are listed in the response, based on their created_at field.      Default value: ASC
-    * See [SortOrder](#type-sortorder) for possible values
+    * The order in which employees are listed in the response, based on their created_at field.
+    * Default value: ASC See [SortOrder](#type-sortorder) for possible values.
     */
   var order: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1ListEmployeesRequestNs.OrderEnum] = js.native
   /**
-    * If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE). See
-    * [V1ListEmployeesRequestStatus](#type-v1listemployeesrequeststatus) for possible values
+    * If provided, the endpoint returns only employee entities with the specified status (ACTIVE or INACTIVE).
+    * See [V1ListEmployeesRequestStatus](#type-v1listemployeesrequeststatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1ListEmployeesRequestNs.StatusEnum] = js.native
 }

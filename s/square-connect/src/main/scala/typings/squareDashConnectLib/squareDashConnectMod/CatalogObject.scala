@@ -34,6 +34,14 @@ class CatalogObject () extends js.Object {
     */
   var id: java.lang.String = js.native
   /**
+    * Structured data for a [CatalogImage](#type-catalogimage), set for CatalogObjects of type `IMAGE`.
+    */
+  var image_data: js.UndefOr[CatalogImage] = js.native
+  /**
+    * Identifies the `CatalogImage` attached to this `CatalogObject`.
+    */
+  var image_id: js.UndefOr[java.lang.String] = js.native
+  /**
     * If `true`, the object has been deleted from the database. Must be `false` for new objects being inserted. When
     * deleted, the `updated_at` field will equal the deletion time.
     */
@@ -43,8 +51,7 @@ class CatalogObject () extends js.Object {
     */
   var item_data: js.UndefOr[CatalogItem] = js.native
   /**
-    * Structured data for a [CatalogItemVariation](#type-catalogitemvariation), set for CatalogObjects of type
-    * `ITEM_VARIATION`.
+    * Structured data for a [CatalogItemVariation](#type-catalogitemvariation), set for CatalogObjects of type `ITEM_VARIATION`.
     */
   var item_variation_data: js.UndefOr[CatalogItemVariation] = js.native
   /**
@@ -52,8 +59,7 @@ class CatalogObject () extends js.Object {
     */
   var modifier_data: js.UndefOr[CatalogModifier] = js.native
   /**
-    * Structured data for a [CatalogModifierList](#type-catalogmodifierlist), set for CatalogObjects of type
-    * `MODIFIER_LIST`.
+    * Structured data for a [CatalogModifierList](#type-catalogmodifierlist), set for CatalogObjects of type `MODIFIER_LIST`.
     */
   var modifier_list_data: js.UndefOr[CatalogModifierList] = js.native
   /**
@@ -72,7 +78,7 @@ class CatalogObject () extends js.Object {
   var tax_data: js.UndefOr[CatalogTax] = js.native
   /**
     * The type of this object. Each object type has expected properties expressed in a structured format within its
-    * corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for all possible values.
+    * corresponding `*_data` field below. See [CatalogObjectType](#type-catalogobjecttype) for possible values.
     */
   var `type`: squareDashConnectLib.squareDashConnectMod.CatalogObjectNs.TypeEnum = js.native
   /**

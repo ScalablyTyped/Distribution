@@ -20,7 +20,7 @@ object Form extends js.Object {
   var createFormField: js.Any = js.native
   var defaultProps: antdLib.Anon_Colon = js.native
   var propTypes: antdLib.Anon_ArgsChildren = js.native
-  def create[TOwnProps](): antdLib.libFormFormMod.ComponentDecorator = js.native
-  def create[TOwnProps](options: antdLib.libFormFormMod.FormCreateOption[TOwnProps]): antdLib.libFormFormMod.ComponentDecorator = js.native
+  def create[TOwnProps /* <: antdLib.libFormFormMod.FormComponentProps[_] */](): antdLib.libFormInterfaceMod.FormWrappedProps[TOwnProps] = js.native
+  def create[TOwnProps /* <: antdLib.libFormFormMod.FormComponentProps[_] */](options: antdLib.libFormFormMod.FormCreateOption[TOwnProps]): antdLib.libFormInterfaceMod.FormWrappedProps[TOwnProps] = js.native
 }
 

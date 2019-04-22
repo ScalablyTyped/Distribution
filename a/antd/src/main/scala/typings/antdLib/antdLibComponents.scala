@@ -64,9 +64,9 @@ object antdLibComponents {
   def Comment: reactLib.reactMod.ComponentType[antdLib.libCommentMod.CommentProps] = js.constructorOf[antdLib.libCommentMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libCommentMod.CommentProps]]
   @scala.inline
   def ConfigConsumer: reactLib.reactMod.ComponentType[
-    createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]
+    atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]
   ] = js.constructorOf[antdLib.libConfigDashProviderMod.ConfigConsumer].asInstanceOf[reactLib.reactMod.ComponentType[
-  createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]]]
+  atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]]]
   @scala.inline
   def ConfigDashProvider: reactLib.reactMod.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.constructorOf[antdLib.libConfigDashProviderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps]]
   @scala.inline
@@ -306,8 +306,8 @@ object antdLibComponents {
   def ConfigProviderProps: antdLib.libConfigDashProviderMod.ConfigProviderProps.type = antdLib.libConfigDashProviderMod.ConfigProviderProps
   type ConfigProviderProps = antdLib.libConfigDashProviderMod.ConfigProviderProps
   @scala.inline
-  def ConsumerProps: createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps.type = createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps
-  type ConsumerProps[T] = createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[T]
+  def ConsumerProps: atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps.type = atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
+  type ConsumerProps[T] = atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[T]
   @scala.inline
   def CountdownProps: antdLib.libStatisticCountdownMod.CountdownProps.type = antdLib.libStatisticCountdownMod.CountdownProps
   type CountdownProps = antdLib.libStatisticCountdownMod.CountdownProps

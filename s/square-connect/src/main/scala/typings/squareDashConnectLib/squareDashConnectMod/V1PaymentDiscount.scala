@@ -13,8 +13,7 @@ class V1PaymentDiscount () extends js.Object {
     */
   var applied_money: js.UndefOr[V1Money] = js.native
   /**
-    * The ID of the applied discount, if available. Discounts applied in older versions of Square Register might not
-    * have an ID.
+    * The ID of the applied discount, if available. Discounts applied in older versions of Square Register might not have an ID.
     */
   var discount_id: js.UndefOr[java.lang.String] = js.native
   /**

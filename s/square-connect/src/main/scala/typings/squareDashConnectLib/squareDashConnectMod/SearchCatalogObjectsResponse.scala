@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchCatalogObjectsResponse () extends js.Object {
   /**
-    * The pagination cursor to be used in a subsequent request. If unset, this is the final response. See
-    * [Pagination](/basics/api101/pagination) for more information.
+    * The pagination cursor to be used in a subsequent request. If unset, this is the final response.
+    * See [Pagination](/basics/api101/pagination) for more information.
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**

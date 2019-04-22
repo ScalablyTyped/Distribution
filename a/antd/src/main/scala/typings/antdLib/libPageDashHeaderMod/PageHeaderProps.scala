@@ -20,7 +20,9 @@ trait PageHeaderProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subTitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var tags: js.UndefOr[js.Array[antdLib.libTagMod.default]] = js.undefined
+  var tags: js.UndefOr[
+    reactLib.reactMod.ReactElement[antdLib.libTagMod.default] | js.Array[reactLib.reactMod.ReactElement[antdLib.libTagMod.default]]
+  ] = js.undefined
   var title: reactLib.reactMod.ReactNode
 }
 
@@ -37,7 +39,7 @@ object PageHeaderProps {
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     subTitle: reactLib.reactMod.ReactNode = null,
-    tags: js.Array[antdLib.libTagMod.default] = null
+    tags: reactLib.reactMod.ReactElement[antdLib.libTagMod.default] | js.Array[reactLib.reactMod.ReactElement[antdLib.libTagMod.default]] = null
   ): PageHeaderProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.asInstanceOf[js.Any])
@@ -49,7 +51,7 @@ object PageHeaderProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (style != null) __obj.updateDynamic("style")(style)
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageHeaderProps]
   }
 }

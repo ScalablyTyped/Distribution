@@ -26,8 +26,8 @@ class V1CreateRefundRequest () extends js.Object {
     */
   var request_idempotence_key: js.UndefOr[java.lang.String] = js.native
   /**
-    * TThe type of refund (FULL or PARTIAL). See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for
-    * possible values
+    * TThe type of refund (FULL or PARTIAL).
+    * See [V1CreateRefundRequestType](#type-v1createrefundrequesttype) for possible values.
     */
   var `type`: squareDashConnectLib.squareDashConnectMod.V1CreateRefundRequestNs.TypeEnum = js.native
 }

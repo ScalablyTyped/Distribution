@@ -14,8 +14,8 @@ class ListCustomersRequest () extends js.Object {
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**
-    * Indicates how Customers should be sorted. Default: `DEFAULT`. See [CustomerSortField](#type-customersortfield)
-    * for possible values.
+    * Indicates how Customers should be sorted. Default: `DEFAULT`.
+    * See [CustomerSortField](#type-customersortfield) for possible values.
     */
   var sort_field: js.UndefOr[squareDashConnectLib.squareDashConnectMod.ListCustomersRequestNs.SortFieldEnum] = js.native
   /**

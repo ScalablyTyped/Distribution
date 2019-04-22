@@ -53,6 +53,7 @@ class InventoryPhysicalCount () extends js.Object {
   var source: js.UndefOr[SourceApplication] = js.native
   /**
     * The current [InventoryState](#type-inventorystate) for the related quantity of items.
+    * See [InventoryState](#type-inventorystate) for possible values.
     */
   var state: js.UndefOr[squareDashConnectLib.squareDashConnectMod.InventoryPhysicalCountNs.StateEnum] = js.native
 }
