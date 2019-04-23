@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "URI")
 @js.native
 class URI protected ()
-  extends sipDotJsLib.typesUriMod.URI {
+  extends sipDotJsLib.libURIMod.URI {
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String) = this()
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: scala.Double) = this()
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: js.UndefOr[scala.Nothing], parameters: js.Any) = this()

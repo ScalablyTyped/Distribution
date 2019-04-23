@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "RegisterContext")
 @js.native
 class RegisterContext protected ()
-  extends sipDotJsLib.typesRegisterDashContextMod.RegisterContext {
-  def this(ua: sipDotJsLib.typesUaMod.UA) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, options: js.Any) = this()
+  extends sipDotJsLib.libRegisterContextMod.RegisterContext {
+  def this(ua: sipDotJsLib.libUAMod.UA) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, options: js.Any) = this()
 }
 

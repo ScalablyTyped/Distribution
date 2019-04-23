@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "LoggerFactory")
 @js.native
 class LoggerFactory ()
-  extends sipDotJsLib.typesLoggerDashFactoryMod.LoggerFactory
+  extends sipDotJsLib.libLoggerFactoryMod.LoggerFactory
 

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val name: java.lang.String = js.native
-  val version: java.lang.String = js.native
-  def sanityCheck(): js.Function3[
-    /* message */ sipDotJsLib.typesSipDashMessageMod.IncomingRequest | sipDotJsLib.typesSipDashMessageMod.IncomingResponse, 
-    /* ua */ sipDotJsLib.typesUaMod.UA, 
-    /* transport */ Transport, 
+  val name: js.Any = js.native
+  val sanityCheck: js.Function3[
+    /* message */ sipDotJsLib.libSIPMessageMod.IncomingRequest | sipDotJsLib.libSIPMessageMod.IncomingResponse, 
+    /* ua */ sipDotJsLib.libUAMod.UA, 
+    /* transport */ sipDotJsLib.libTransportMod.Transport, 
     scala.Boolean
   ] = js.native
+  val version: js.Any = js.native
 }
 

@@ -28,6 +28,6 @@ object VirtualAction extends js.Object {
   def sortActions[T](
     a: rxjsLib.internalSchedulerVirtualTimeSchedulerMod.VirtualAction[T],
     b: rxjsLib.internalSchedulerVirtualTimeSchedulerMod.VirtualAction[T]
-  ): rxjsLib.rxjsLibNumbers.`1` | rxjsLib.rxjsLibNumbers.`-1` | rxjsLib.rxjsLibNumbers.`0` = js.native
+  ): rxjsLib.rxjsLibNumbers.`1` | rxjsLib.rxjsLibNumbers.`0` | rxjsLib.rxjsLibNumbers.`-1` = js.native
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object internalObservableOfMod extends js.Object {
   def of[T](a: T): rxjsLib.internalObservableMod.Observable[T] = js.native
   def of[T](a: T, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[T] = js.native
-  def of[T](args: (T | rxjsLib.internalTypesMod.SchedulerLike)*): rxjsLib.internalObservableMod.Observable[T] = js.native
+  def of[T](args: (rxjsLib.internalTypesMod.SchedulerLike | T)*): rxjsLib.internalObservableMod.Observable[T] = js.native
   def of[T, T2](a: T, b: T2): rxjsLib.internalObservableMod.Observable[T | T2] = js.native
   def of[T, T2](a: T, b: T2, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[T | T2] = js.native
   def of[T, T2, T3](a: T, b: T2, c: T3): rxjsLib.internalObservableMod.Observable[T | T2 | T3] = js.native

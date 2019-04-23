@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vinyl-source-stream"
-version := "0.0-unknown-dt-20190322Z-06e1c3"
+version := "0.0-unknown-dt-20190322Z-267532"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

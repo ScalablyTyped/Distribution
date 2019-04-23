@@ -253,6 +253,9 @@ object libStylesMod extends js.Object {
     val KeytipLayer: scala.Double = js.native
     val Layer: scala.Double = js.native
     val Nav: scala.Double = js.native
+    /**
+      * @deprecated ScrollablePane
+      */
     val ScrollablePane: scala.Double = js.native
   }
   

@@ -9,6 +9,7 @@ trait SwitchOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, scala.Unit]] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
+  var messages: js.UndefOr[SwitchMessages] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var readonly: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -20,6 +21,7 @@ object SwitchOptions {
     change: /* e */ SwitchChangeEvent => scala.Unit = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    messages: SwitchMessages = null,
     name: java.lang.String = null,
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Double | java.lang.String = null
@@ -28,6 +30,7 @@ object SwitchOptions {
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

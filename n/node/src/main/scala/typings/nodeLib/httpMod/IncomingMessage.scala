@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class IncomingMessage protected ()
   extends nodeLib.streamMod.Readable {
   def this(socket: nodeLib.netMod.Socket) = this()
+  var complete: scala.Boolean = js.native
   var connection: nodeLib.netMod.Socket = js.native
   var headers: IncomingHttpHeaders = js.native
   var httpVersion: java.lang.String = js.native

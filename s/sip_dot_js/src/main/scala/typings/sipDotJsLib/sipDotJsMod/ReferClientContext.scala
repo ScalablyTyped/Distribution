@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "ReferClientContext")
 @js.native
 class ReferClientContext protected ()
-  extends sipDotJsLib.typesSessionMod.ReferClientContext {
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteClientContext, target: java.lang.String) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteClientContext, target: sipDotJsLib.typesSessionMod.InviteClientContext) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteClientContext, target: sipDotJsLib.typesSessionMod.InviteServerContext) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteServerContext, target: java.lang.String) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteServerContext, target: sipDotJsLib.typesSessionMod.InviteClientContext) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteServerContext, target: sipDotJsLib.typesSessionMod.InviteServerContext) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteClientContext, target: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteClientContext, target: sipDotJsLib.typesSessionMod.InviteClientContext, options: js.Any) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteClientContext, target: sipDotJsLib.typesSessionMod.InviteServerContext, options: js.Any) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteServerContext, target: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteServerContext, target: sipDotJsLib.typesSessionMod.InviteClientContext, options: js.Any) = this()
-  def this(ua: sipDotJsLib.typesUaMod.UA, applicant: sipDotJsLib.typesSessionMod.InviteServerContext, target: sipDotJsLib.typesSessionMod.InviteServerContext, options: js.Any) = this()
+  extends sipDotJsLib.libSessionMod.ReferClientContext {
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: java.lang.String) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: sipDotJsLib.libSessionMod.InviteClientContext) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: sipDotJsLib.libSessionMod.InviteServerContext) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteServerContext, target: java.lang.String) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteServerContext, target: sipDotJsLib.libSessionMod.InviteClientContext) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteServerContext, target: sipDotJsLib.libSessionMod.InviteServerContext) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: java.lang.String, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: sipDotJsLib.libSessionMod.InviteClientContext, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: sipDotJsLib.libSessionMod.InviteServerContext, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteServerContext, target: java.lang.String, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteServerContext, target: sipDotJsLib.libSessionMod.InviteClientContext, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteServerContext, target: sipDotJsLib.libSessionMod.InviteServerContext, options: js.Any) = this()
 }
 

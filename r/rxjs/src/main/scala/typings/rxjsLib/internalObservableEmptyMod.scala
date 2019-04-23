@@ -11,6 +11,5 @@ object internalObservableEmptyMod extends js.Object {
   val EMPTY: rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def empty(): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def empty(scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
-  def emptyScheduled(scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
 }
 

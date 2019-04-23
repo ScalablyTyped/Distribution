@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "flagged-respawn"
-version := "1.0-dt-20190212Z-bddad3"
+version := "1.0-dt-20190212Z-cb0c08"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

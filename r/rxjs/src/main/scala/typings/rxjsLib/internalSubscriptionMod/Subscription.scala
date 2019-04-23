@@ -15,11 +15,7 @@ class Subscription ()
   extends rxjsLib.internalTypesMod.SubscriptionLike {
   def this(unsubscribe: js.Function0[scala.Unit]) = this()
   /** @internal */
-  var _addParent: js.Any = js.native
-  /** @internal */
-  var _parent: Subscription = js.native
-  /** @internal */
-  var _parents: js.Array[Subscription] = js.native
+  var _parentOrParents: Subscription | js.Array[Subscription] = js.native
   /** @internal */
   var _subscriptions: js.Any = js.native
   /* CompleteClass */

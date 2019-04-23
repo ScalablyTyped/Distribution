@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__styling"
-version := "6.46.0-805ea4"
+version := "6.46.1-5212fb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.8-dt-20190419Z-caf3c8",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "6.17.0-ba1d26",
-  "org.scalablytyped" %%% "uifabric__utilities" % "6.35.5-dedcae")
+  "org.scalablytyped" %%% "uifabric__utilities" % "6.35.6-dedcae")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

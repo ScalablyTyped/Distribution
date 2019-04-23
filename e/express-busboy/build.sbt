@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "express-busboy"
-version := "6.0-dt-20180214Z-92b382"
+version := "6.0-dt-20180214Z-705551"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-0aa3ae",
-  "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-ff4101",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-17767a",
-  "org.scalablytyped" %%% "connect-busboy" % "0.0-dt-20190405Z-0ce353",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-f9a52b",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-a993f8",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-f1929d",
+  "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-bd9a9a",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-e08638",
+  "org.scalablytyped" %%% "connect-busboy" % "0.0-dt-20190405Z-9049a3",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-b33a41",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-738086",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-b7b3da",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c3b9c7",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-bad4a0",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-a29b80",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -449,7 +449,7 @@ object ^ extends js.Object {
   def combineLatest_OObservableInput[O /* <: rxjsLib.internalTypesMod.ObservableInput[_] */](sources: js.Array[O], scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[js.Array[rxjsLib.internalTypesMod.ObservedValueOf[O]]] = js.native
   @JSName("combineLatest")
   def combineLatest_OObservableInputR[O /* <: rxjsLib.internalTypesMod.ObservableInput[_] */, R](
-    observables: (O | (js.Function1[/* repeated */ rxjsLib.internalTypesMod.ObservedValueOf[O], R]) | rxjsLib.internalTypesMod.SchedulerLike)*
+    observables: ((js.Function1[/* repeated */ js.Any, R]) | (js.Function1[/* repeated */ rxjsLib.internalTypesMod.ObservedValueOf[O], R]) | O | rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
 }
 

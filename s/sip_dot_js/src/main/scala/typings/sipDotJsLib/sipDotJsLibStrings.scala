@@ -7,6 +7,45 @@ import scala.scalajs.js.annotation._
 
 object sipDotJsLibStrings {
   @js.native
+  sealed trait ACK extends js.Object
+  
+  @js.native
+  sealed trait BYE extends js.Object
+  
+  @js.native
+  sealed trait CANCEL extends js.Object
+  
+  @js.native
+  sealed trait INFO extends js.Object
+  
+  @js.native
+  sealed trait INVITE extends js.Object
+  
+  @js.native
+  sealed trait MESSAGE extends js.Object
+  
+  @js.native
+  sealed trait NOTIFY extends js.Object
+  
+  @js.native
+  sealed trait OPTIONS extends js.Object
+  
+  @js.native
+  sealed trait PRACK extends js.Object
+  
+  @js.native
+  sealed trait PUBLISH extends js.Object
+  
+  @js.native
+  sealed trait REFER extends js.Object
+  
+  @js.native
+  sealed trait REGISTER extends js.Object
+  
+  @js.native
+  sealed trait SUBSCRIBE extends js.Object
+  
+  @js.native
   sealed trait `SessionDescriptionHandler-created` extends js.Object
   
   @js.native
@@ -14,6 +53,9 @@ object sipDotJsLibStrings {
   
   @js.native
   sealed trait UAS extends js.Object
+  
+  @js.native
+  sealed trait UPDATE extends js.Object
   
   @js.native
   sealed trait accepted extends js.Object
@@ -172,6 +214,15 @@ object sipDotJsLibStrings {
   sealed trait setRemoteDescription extends js.Object
   
   @js.native
+  sealed trait sip extends js.Object
+  
+  @js.native
+  sealed trait sips extends js.Object
+  
+  @js.native
+  sealed trait stateChanged extends js.Object
+  
+  @js.native
   sealed trait terminated extends js.Object
   
   @js.native
@@ -196,11 +247,39 @@ object sipDotJsLibStrings {
   sealed trait userMediaRequest extends js.Object
   
   @scala.inline
+  def ACK: ACK = "ACK".asInstanceOf[ACK]
+  @scala.inline
+  def BYE: BYE = "BYE".asInstanceOf[BYE]
+  @scala.inline
+  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
+  @scala.inline
+  def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
+  def INVITE: INVITE = "INVITE".asInstanceOf[INVITE]
+  @scala.inline
+  def MESSAGE: MESSAGE = "MESSAGE".asInstanceOf[MESSAGE]
+  @scala.inline
+  def NOTIFY: NOTIFY = "NOTIFY".asInstanceOf[NOTIFY]
+  @scala.inline
+  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
+  def PRACK: PRACK = "PRACK".asInstanceOf[PRACK]
+  @scala.inline
+  def PUBLISH: PUBLISH = "PUBLISH".asInstanceOf[PUBLISH]
+  @scala.inline
+  def REFER: REFER = "REFER".asInstanceOf[REFER]
+  @scala.inline
+  def REGISTER: REGISTER = "REGISTER".asInstanceOf[REGISTER]
+  @scala.inline
+  def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
+  @scala.inline
   def `SessionDescriptionHandler-created`: `SessionDescriptionHandler-created` = "SessionDescriptionHandler-created".asInstanceOf[`SessionDescriptionHandler-created`]
   @scala.inline
   def UAC: UAC = "UAC".asInstanceOf[UAC]
   @scala.inline
   def UAS: UAS = "UAS".asInstanceOf[UAS]
+  @scala.inline
+  def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
@@ -303,6 +382,12 @@ object sipDotJsLibStrings {
   def setDescription: setDescription = "setDescription".asInstanceOf[setDescription]
   @scala.inline
   def setRemoteDescription: setRemoteDescription = "setRemoteDescription".asInstanceOf[setRemoteDescription]
+  @scala.inline
+  def sip: sip = "sip".asInstanceOf[sip]
+  @scala.inline
+  def sips: sips = "sips".asInstanceOf[sips]
+  @scala.inline
+  def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   @scala.inline

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "google-auth-library"
-version := "3.1.2-85eb02"
+version := "3.1.2-8115d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "gaxios" % "1.8.3-c9c819",
+  "org.scalablytyped" %%% "gaxios" % "1.8.3-6f2104",
   "org.scalablytyped" %%% "gtoken" % "2.3.3-edaf46",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

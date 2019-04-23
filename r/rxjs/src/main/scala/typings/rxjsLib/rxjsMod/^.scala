@@ -1970,7 +1970,7 @@ object ^ extends js.Object {
   def combineLatest_OObservableInput[O /* <: rxjsLib.internalTypesMod.ObservableInput[_] */](sources: js.Array[O], scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[js.Array[rxjsLib.internalTypesMod.ObservedValueOf[O]]] = js.native
   @JSName("combineLatest")
   def combineLatest_OObservableInputR[O /* <: rxjsLib.internalTypesMod.ObservableInput[_] */, R](
-    observables: (O | (js.Function1[/* repeated */ rxjsLib.internalTypesMod.ObservedValueOf[O], R]) | rxjsLib.internalTypesMod.SchedulerLike)*
+    observables: ((js.Function1[/* repeated */ rxjsLib.internalTypesMod.ObservedValueOf[O], R]) | (js.Function1[/* repeated */ js.Any, R]) | O | rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def concat[R](
     observables: (rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike)*
@@ -2013,50 +2013,52 @@ object ^ extends js.Object {
   def empty(): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def empty(scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def forkJoin(args: (rxjsLib.internalTypesMod.ObservableInput[_] | js.Function)*): rxjsLib.internalObservableMod.Observable[_] = js.native
-  def forkJoin[T](sources: js.Array[rxjsLib.internalTypesMod.ObservableInput[T]]): rxjsLib.internalObservableMod.Observable[js.Array[T]] = js.native
-  def forkJoin[T](v1: rxjsLib.internalTypesMod.ObservableInput[T]): rxjsLib.internalObservableMod.Observable[js.Array[T]] = js.native
-  def forkJoin[T, T2](
+  def forkJoin(sourcesObject: js.Object): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
+  def forkJoin[A /* <: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]] */](sources: A): rxjsLib.internalObservableMod.Observable[js.Array[rxjsLib.internalTypesMod.ObservedValuesFromArray[A]]] = js.native
+  def forkJoin[A](sources: js.Array[rxjsLib.internalTypesMod.ObservableInput[A]]): rxjsLib.internalObservableMod.Observable[js.Array[A]] = js.native
+  def forkJoin[T](v1: rxjsLib.internalTypesMod.SubscribableOrPromise[T]): rxjsLib.internalObservableMod.Observable[js.Array[T]] = js.native
+  def forkJoin[A, B](
     sources: js.Tuple2[
-      rxjsLib.internalTypesMod.ObservableInput[T], 
-      rxjsLib.internalTypesMod.ObservableInput[T2]
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B]
     ]
-  ): rxjsLib.internalObservableMod.Observable[js.Tuple2[T, T2]] = js.native
+  ): rxjsLib.internalObservableMod.Observable[js.Tuple2[A, B]] = js.native
   def forkJoin[T, T2](v1: rxjsLib.internalTypesMod.ObservableInput[T], v2: rxjsLib.internalTypesMod.ObservableInput[T2]): rxjsLib.internalObservableMod.Observable[js.Tuple2[T, T2]] = js.native
-  def forkJoin[T, T2, T3](
+  def forkJoin[A, B, C](
     sources: js.Tuple3[
-      rxjsLib.internalTypesMod.ObservableInput[T], 
-      rxjsLib.internalTypesMod.ObservableInput[T2], 
-      rxjsLib.internalTypesMod.ObservableInput[T3]
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C]
     ]
-  ): rxjsLib.internalObservableMod.Observable[js.Tuple3[T, T2, T3]] = js.native
+  ): rxjsLib.internalObservableMod.Observable[js.Tuple3[A, B, C]] = js.native
   def forkJoin[T, T2, T3](
     v1: rxjsLib.internalTypesMod.ObservableInput[T],
     v2: rxjsLib.internalTypesMod.ObservableInput[T2],
     v3: rxjsLib.internalTypesMod.ObservableInput[T3]
   ): rxjsLib.internalObservableMod.Observable[js.Tuple3[T, T2, T3]] = js.native
-  def forkJoin[T, T2, T3, T4](
+  def forkJoin[A, B, C, D](
     sources: js.Tuple4[
-      rxjsLib.internalTypesMod.ObservableInput[T], 
-      rxjsLib.internalTypesMod.ObservableInput[T2], 
-      rxjsLib.internalTypesMod.ObservableInput[T3], 
-      rxjsLib.internalTypesMod.ObservableInput[T4]
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C], 
+      rxjsLib.internalTypesMod.ObservableInput[D]
     ]
-  ): rxjsLib.internalObservableMod.Observable[js.Tuple4[T, T2, T3, T4]] = js.native
+  ): rxjsLib.internalObservableMod.Observable[js.Tuple4[A, B, C, D]] = js.native
   def forkJoin[T, T2, T3, T4](
     v1: rxjsLib.internalTypesMod.ObservableInput[T],
     v2: rxjsLib.internalTypesMod.ObservableInput[T2],
     v3: rxjsLib.internalTypesMod.ObservableInput[T3],
     v4: rxjsLib.internalTypesMod.ObservableInput[T4]
   ): rxjsLib.internalObservableMod.Observable[js.Tuple4[T, T2, T3, T4]] = js.native
-  def forkJoin[T, T2, T3, T4, T5](
+  def forkJoin[A, B, C, D, E](
     sources: js.Tuple5[
-      rxjsLib.internalTypesMod.ObservableInput[T], 
-      rxjsLib.internalTypesMod.ObservableInput[T2], 
-      rxjsLib.internalTypesMod.ObservableInput[T3], 
-      rxjsLib.internalTypesMod.ObservableInput[T4], 
-      rxjsLib.internalTypesMod.ObservableInput[T5]
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C], 
+      rxjsLib.internalTypesMod.ObservableInput[D], 
+      rxjsLib.internalTypesMod.ObservableInput[E]
     ]
-  ): rxjsLib.internalObservableMod.Observable[js.Tuple5[T, T2, T3, T4, T5]] = js.native
+  ): rxjsLib.internalObservableMod.Observable[js.Tuple5[A, B, C, D, E]] = js.native
   def forkJoin[T, T2, T3, T4, T5](
     v1: rxjsLib.internalTypesMod.ObservableInput[T],
     v2: rxjsLib.internalTypesMod.ObservableInput[T2],
@@ -2064,16 +2066,16 @@ object ^ extends js.Object {
     v4: rxjsLib.internalTypesMod.ObservableInput[T4],
     v5: rxjsLib.internalTypesMod.ObservableInput[T5]
   ): rxjsLib.internalObservableMod.Observable[js.Tuple5[T, T2, T3, T4, T5]] = js.native
-  def forkJoin[T, T2, T3, T4, T5, T6](
+  def forkJoin[A, B, C, D, E, F](
     sources: js.Tuple6[
-      rxjsLib.internalTypesMod.ObservableInput[T], 
-      rxjsLib.internalTypesMod.ObservableInput[T2], 
-      rxjsLib.internalTypesMod.ObservableInput[T3], 
-      rxjsLib.internalTypesMod.ObservableInput[T4], 
-      rxjsLib.internalTypesMod.ObservableInput[T5], 
-      rxjsLib.internalTypesMod.ObservableInput[T6]
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C], 
+      rxjsLib.internalTypesMod.ObservableInput[D], 
+      rxjsLib.internalTypesMod.ObservableInput[E], 
+      rxjsLib.internalTypesMod.ObservableInput[F]
     ]
-  ): rxjsLib.internalObservableMod.Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = js.native
+  ): rxjsLib.internalObservableMod.Observable[js.Tuple6[A, B, C, D, E, F]] = js.native
   def forkJoin[T, T2, T3, T4, T5, T6](
     v1: rxjsLib.internalTypesMod.ObservableInput[T],
     v2: rxjsLib.internalTypesMod.ObservableInput[T2],
@@ -2084,6 +2086,12 @@ object ^ extends js.Object {
   ): rxjsLib.internalObservableMod.Observable[js.Tuple6[T, T2, T3, T4, T5, T6]] = js.native
   @JSName("forkJoin")
   def forkJoin_T[T](sources: rxjsLib.internalTypesMod.ObservableInput[T]*): rxjsLib.internalObservableMod.Observable[js.Array[T]] = js.native
+  @JSName("forkJoin")
+  def forkJoin_TKString[T, K /* <: java.lang.String */](sourcesObject: T): rxjsLib.internalObservableMod.Observable[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: rxjs.rxjs/internal/types.ObservedValueOf<T[K]>}
+    */ rxjsLib.rxjsLibStrings.forkJoin with T
+  ] = js.native
   def from[O /* <: rxjsLib.internalTypesMod.ObservableInput[_] */](input: O): rxjsLib.internalObservableMod.Observable[rxjsLib.internalTypesMod.ObservedValueOf[O]] = js.native
   def from[O /* <: rxjsLib.internalTypesMod.ObservableInput[_] */](input: O, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[rxjsLib.internalTypesMod.ObservedValueOf[O]] = js.native
   def fromEvent[T](target: rxjsLib.internalObservableFromEventMod.FromEventTarget[T], eventName: java.lang.String): rxjsLib.internalObservableMod.Observable[T] = js.native
@@ -2163,7 +2171,7 @@ object ^ extends js.Object {
   def interval(period: scala.Double, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Double] = js.native
   def isObservable[T](obj: js.Any): /* is rxjs.rxjs/internal/Observable.Observable<T> */ scala.Boolean = js.native
   def merge[T](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | rxjsLib.internalTypesMod.SchedulerLike | scala.Double)*
+    observables: (scala.Double | rxjsLib.internalTypesMod.ObservableInput[T] | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[T] = js.native
   def merge[T](v1: rxjsLib.internalTypesMod.ObservableInput[T]): rxjsLib.internalObservableMod.Observable[T] = js.native
   def merge[T](v1: rxjsLib.internalTypesMod.ObservableInput[T], concurrent: scala.Double): rxjsLib.internalObservableMod.Observable[T] = js.native
@@ -2312,13 +2320,13 @@ object ^ extends js.Object {
   ): rxjsLib.internalObservableMod.Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
   @JSName("merge")
   def merge_TR[T, R](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike | scala.Double)*
+    observables: (scala.Double | rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def never(): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def noop(): scala.Unit = js.native
   def of[T](a: T): rxjsLib.internalObservableMod.Observable[T] = js.native
   def of[T](a: T, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[T] = js.native
-  def of[T](args: (T | rxjsLib.internalTypesMod.SchedulerLike)*): rxjsLib.internalObservableMod.Observable[T] = js.native
+  def of[T](args: (rxjsLib.internalTypesMod.SchedulerLike | T)*): rxjsLib.internalObservableMod.Observable[T] = js.native
   def of[T, T2](a: T, b: T2): rxjsLib.internalObservableMod.Observable[T | T2] = js.native
   def of[T, T2](a: T, b: T2, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[T | T2] = js.native
   def of[T, T2, T3](a: T, b: T2, c: T3): rxjsLib.internalObservableMod.Observable[T | T2 | T3] = js.native
@@ -2382,6 +2390,21 @@ object ^ extends js.Object {
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def pairs[T](obj: js.Object): rxjsLib.internalObservableMod.Observable[js.Tuple2[java.lang.String, T]] = js.native
   def pairs[T](obj: js.Object, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[js.Tuple2[java.lang.String, T]] = js.native
+  def partition[T](
+    source: rxjsLib.internalTypesMod.ObservableInput[T],
+    predicate: js.Function2[/* value */ T, /* index */ scala.Double, scala.Boolean]
+  ): js.Tuple2[
+    rxjsLib.internalObservableMod.Observable[T], 
+    rxjsLib.internalObservableMod.Observable[T]
+  ] = js.native
+  def partition[T](
+    source: rxjsLib.internalTypesMod.ObservableInput[T],
+    predicate: js.Function2[/* value */ T, /* index */ scala.Double, scala.Boolean],
+    thisArg: js.Any
+  ): js.Tuple2[
+    rxjsLib.internalObservableMod.Observable[T], 
+    rxjsLib.internalObservableMod.Observable[T]
+  ] = js.native
   def pipe[T](): rxjsLib.internalTypesMod.UnaryFunction[T, T] = js.native
   def pipe[T, A](fn1: rxjsLib.internalTypesMod.UnaryFunction[T, A]): rxjsLib.internalTypesMod.UnaryFunction[T, A] = js.native
   def pipe[T, A, B](
@@ -2456,35 +2479,72 @@ object ^ extends js.Object {
     fn9: rxjsLib.internalTypesMod.UnaryFunction[H, I],
     fns: (rxjsLib.internalTypesMod.UnaryFunction[_, _])*
   ): rxjsLib.internalTypesMod.UnaryFunction[T, js.Object] = js.native
-  def race(observables: rxjsLib.internalObservableMod.Observable[_]*): rxjsLib.internalObservableMod.Observable[js.Object] = js.native
-  def race(observables: js.Array[rxjsLib.internalObservableMod.Observable[_]]): rxjsLib.internalObservableMod.Observable[js.Object] = js.native
-  def race[A, B](a: rxjsLib.internalObservableMod.Observable[A], b: rxjsLib.internalObservableMod.Observable[B]): rxjsLib.internalObservableMod.Observable[A] | rxjsLib.internalObservableMod.Observable[B] = js.native
+  def race(arg: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]]): rxjsLib.internalObservableMod.Observable[js.Object] = js.native
+  def race(observables: rxjsLib.internalTypesMod.ObservableInput[_]*): rxjsLib.internalObservableMod.Observable[js.Object] = js.native
+  def race[A](a: rxjsLib.internalTypesMod.ObservableInput[A]): rxjsLib.internalObservableMod.Observable[A] = js.native
+  def race[A, B](
+    arg: js.Tuple2[
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B]
+    ]
+  ): rxjsLib.internalObservableMod.Observable[A | B] = js.native
+  def race[A, B](a: rxjsLib.internalTypesMod.ObservableInput[A], b: rxjsLib.internalTypesMod.ObservableInput[B]): rxjsLib.internalObservableMod.Observable[A | B] = js.native
   def race[A, B, C](
-    a: rxjsLib.internalObservableMod.Observable[A],
-    b: rxjsLib.internalObservableMod.Observable[B],
-    c: rxjsLib.internalObservableMod.Observable[C]
-  ): rxjsLib.internalObservableMod.Observable[A] | rxjsLib.internalObservableMod.Observable[B] | rxjsLib.internalObservableMod.Observable[C] = js.native
+    arg: js.Tuple3[
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C]
+    ]
+  ): rxjsLib.internalObservableMod.Observable[A | B | C] = js.native
+  def race[A, B, C](
+    a: rxjsLib.internalTypesMod.ObservableInput[A],
+    b: rxjsLib.internalTypesMod.ObservableInput[B],
+    c: rxjsLib.internalTypesMod.ObservableInput[C]
+  ): rxjsLib.internalObservableMod.Observable[A | B | C] = js.native
   def race[A, B, C, D](
-    a: rxjsLib.internalObservableMod.Observable[A],
-    b: rxjsLib.internalObservableMod.Observable[B],
-    c: rxjsLib.internalObservableMod.Observable[C],
-    d: rxjsLib.internalObservableMod.Observable[D]
-  ): rxjsLib.internalObservableMod.Observable[A] | rxjsLib.internalObservableMod.Observable[B] | rxjsLib.internalObservableMod.Observable[C] | rxjsLib.internalObservableMod.Observable[D] = js.native
+    arg: js.Tuple4[
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C], 
+      rxjsLib.internalTypesMod.ObservableInput[D]
+    ]
+  ): rxjsLib.internalObservableMod.Observable[A | B | C | D] = js.native
+  def race[A, B, C, D](
+    a: rxjsLib.internalTypesMod.ObservableInput[A],
+    b: rxjsLib.internalTypesMod.ObservableInput[B],
+    c: rxjsLib.internalTypesMod.ObservableInput[C],
+    d: rxjsLib.internalTypesMod.ObservableInput[D]
+  ): rxjsLib.internalObservableMod.Observable[A | B | C | D] = js.native
   def race[A, B, C, D, E](
-    a: rxjsLib.internalObservableMod.Observable[A],
-    b: rxjsLib.internalObservableMod.Observable[B],
-    c: rxjsLib.internalObservableMod.Observable[C],
-    d: rxjsLib.internalObservableMod.Observable[D],
-    e: rxjsLib.internalObservableMod.Observable[E]
-  ): rxjsLib.internalObservableMod.Observable[A] | rxjsLib.internalObservableMod.Observable[B] | rxjsLib.internalObservableMod.Observable[C] | rxjsLib.internalObservableMod.Observable[D] | rxjsLib.internalObservableMod.Observable[E] = js.native
+    arg: js.Tuple5[
+      rxjsLib.internalTypesMod.ObservableInput[A], 
+      rxjsLib.internalTypesMod.ObservableInput[B], 
+      rxjsLib.internalTypesMod.ObservableInput[C], 
+      rxjsLib.internalTypesMod.ObservableInput[D], 
+      rxjsLib.internalTypesMod.ObservableInput[E]
+    ]
+  ): rxjsLib.internalObservableMod.Observable[A | B | C | D | E] = js.native
+  def race[A, B, C, D, E](
+    a: rxjsLib.internalTypesMod.ObservableInput[A],
+    b: rxjsLib.internalTypesMod.ObservableInput[B],
+    c: rxjsLib.internalTypesMod.ObservableInput[C],
+    d: rxjsLib.internalTypesMod.ObservableInput[D],
+    e: rxjsLib.internalTypesMod.ObservableInput[E]
+  ): rxjsLib.internalObservableMod.Observable[A | B | C | D | E] = js.native
   @JSName("race")
-  def race_T[T](observables: rxjsLib.internalObservableMod.Observable[T]*): rxjsLib.internalObservableMod.Observable[T] = js.native
+  def race_A[A](arg: js.Array[rxjsLib.internalTypesMod.ObservableInput[A]]): rxjsLib.internalObservableMod.Observable[A] = js.native
   @JSName("race")
-  def race_T[T](observables: js.Array[rxjsLib.internalObservableMod.Observable[T]]): rxjsLib.internalObservableMod.Observable[T] = js.native
+  def race_T[T](arg: js.Array[rxjsLib.internalTypesMod.ObservableInput[T]]): rxjsLib.internalObservableMod.Observable[T] = js.native
+  @JSName("race")
+  def race_T[T](observables: rxjsLib.internalTypesMod.ObservableInput[T]*): rxjsLib.internalObservableMod.Observable[T] = js.native
   def range(): rxjsLib.internalObservableMod.Observable[scala.Double] = js.native
   def range(start: scala.Double): rxjsLib.internalObservableMod.Observable[scala.Double] = js.native
   def range(start: scala.Double, count: scala.Double): rxjsLib.internalObservableMod.Observable[scala.Double] = js.native
   def range(start: scala.Double, count: scala.Double, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Double] = js.native
+  def scheduled[T](
+    input: rxjsLib.internalTypesMod.ObservableInput[T],
+    scheduler: rxjsLib.internalTypesMod.SchedulerLike
+  ): Observable[T] = js.native
   def throwError(error: js.Any): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def throwError(error: js.Any, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def timer(): rxjsLib.internalObservableMod.Observable[scala.Double] = js.native

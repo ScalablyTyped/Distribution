@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "ServerContext")
 @js.native
 class ServerContext protected ()
-  extends sipDotJsLib.typesServerDashContextMod.ServerContext {
-  def this(ua: sipDotJsLib.typesUaMod.UA, request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest) = this()
+  extends sipDotJsLib.libServerContextMod.ServerContext {
+  def this(ua: sipDotJsLib.libUAMod.UA, request: sipDotJsLib.libSIPMessageMod.IncomingRequest) = this()
 }
 
 /* static members */
@@ -17,9 +17,9 @@ class ServerContext protected ()
 @js.native
 object ServerContext extends js.Object {
   def initializer(
-    objectToConstruct: sipDotJsLib.typesServerDashContextMod.ServerContext,
-    ua: sipDotJsLib.typesUaMod.UA,
-    request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest
+    objectToConstruct: sipDotJsLib.libServerContextMod.ServerContext,
+    ua: sipDotJsLib.libUAMod.UA,
+    request: sipDotJsLib.libSIPMessageMod.IncomingRequest
   ): scala.Unit = js.native
 }
 

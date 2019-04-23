@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sip.js", "UA")
 @js.native
-class UA protected ()
-  extends sipDotJsLib.typesUaMod.UA {
-  def this(options: sipDotJsLib.typesUaMod.UANs.Options) = this()
+class UA ()
+  extends sipDotJsLib.libUAMod.UA {
+  def this(configuration: sipDotJsLib.libUAMod.UANs.Options) = this()
 }
 
 /* static members */
 @JSImport("sip.js", "UA")
 @js.native
 object UA extends js.Object {
-  val C: js.Any = js.native
+  val C: sipDotJsLib.Anon_ACCEPTEDBODYTYPES = js.native
 }
 

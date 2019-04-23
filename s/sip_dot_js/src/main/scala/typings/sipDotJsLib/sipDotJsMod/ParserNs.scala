@@ -10,19 +10,25 @@ import scala.scalajs.js.annotation._
 object ParserNs extends js.Object {
   def getHeader(data: js.Any, headerStart: scala.Double): scala.Double = js.native
   def parseHeader(
-    message: sipDotJsLib.typesSipDashMessageMod.IncomingRequest,
+    message: sipDotJsLib.libSIPMessageMod.IncomingRequest,
     data: js.Any,
     headerStart: scala.Double,
     headerEnd: scala.Double
-  ): scala.Boolean | js.Any = js.native
+  ): scala.Boolean | sipDotJsLib.Anon_Error = js.native
   def parseHeader(
-    message: sipDotJsLib.typesSipDashMessageMod.IncomingResponse,
+    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
     data: js.Any,
     headerStart: scala.Double,
     headerEnd: scala.Double
-  ): scala.Boolean | js.Any = js.native
-  def parseMessage(data: java.lang.String, ua: sipDotJsLib.typesUaMod.UA): js.UndefOr[
-    sipDotJsLib.typesSipDashMessageMod.IncomingRequest | sipDotJsLib.typesSipDashMessageMod.IncomingResponse
+  ): scala.Boolean | sipDotJsLib.Anon_Error = js.native
+  /** Parse SIP Message
+    * @function
+    * @param {String} message SIP message.
+    * @param {Object} logger object.
+    * @returns {SIP.IncomingRequest|SIP.IncomingResponse|undefined}
+    */
+  def parseMessage(data: java.lang.String, ua: sipDotJsLib.libUAMod.UA): js.UndefOr[
+    sipDotJsLib.libSIPMessageMod.IncomingRequest | sipDotJsLib.libSIPMessageMod.IncomingResponse
   ] = js.native
 }
 

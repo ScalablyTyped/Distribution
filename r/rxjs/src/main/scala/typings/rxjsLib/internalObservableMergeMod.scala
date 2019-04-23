@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object internalObservableMergeMod extends js.Object {
   def merge[T](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | rxjsLib.internalTypesMod.SchedulerLike | scala.Double)*
+    observables: (scala.Double | rxjsLib.internalTypesMod.ObservableInput[T] | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[T] = js.native
   def merge[T](v1: rxjsLib.internalTypesMod.ObservableInput[T]): rxjsLib.internalObservableMod.Observable[T] = js.native
   def merge[T](v1: rxjsLib.internalTypesMod.ObservableInput[T], concurrent: scala.Double): rxjsLib.internalObservableMod.Observable[T] = js.native
@@ -158,7 +158,7 @@ object internalObservableMergeMod extends js.Object {
   ): rxjsLib.internalObservableMod.Observable[T | T2 | T3 | T4 | T5 | T6] = js.native
   @JSName("merge")
   def merge_TR[T, R](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike | scala.Double)*
+    observables: (scala.Double | rxjsLib.internalTypesMod.ObservableInput[_] | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
 }
 

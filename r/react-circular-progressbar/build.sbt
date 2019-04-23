@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-circular-progressbar"
-version := "1.0-dt-20180803Z-becb3f"
+version := "1.0-dt-20190422Z-becb3f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "braces"
-version := "2.3-dt-20180214Z-947625"
+version := "3.0-dt-20190422Z-eabdd9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

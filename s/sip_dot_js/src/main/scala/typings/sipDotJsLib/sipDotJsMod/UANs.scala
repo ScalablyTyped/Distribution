@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object UANs extends js.Object {
   @js.native
   object DtmfType extends js.Object {
-    /* "info" */ val INFO: sipDotJsLib.typesUaMod.UANs.DtmfType.INFO with java.lang.String = js.native
-    /* "rtp" */ val RTP: sipDotJsLib.typesUaMod.UANs.DtmfType.RTP with java.lang.String = js.native
+    /* "info" */ val INFO: sipDotJsLib.libUAMod.UANs.DtmfType.INFO with java.lang.String = js.native
+    /* "rtp" */ val RTP: sipDotJsLib.libUAMod.UANs.DtmfType.RTP with java.lang.String = js.native
     @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[sipDotJsLib.typesUaMod.UANs.DtmfType with java.lang.String] = js.native
+    def apply(value: java.lang.String): js.UndefOr[sipDotJsLib.libUAMod.UANs.DtmfType with java.lang.String] = js.native
   }
   
 }

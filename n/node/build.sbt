@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node"
-version := "11.13-dt-20190419Z-3f0246"
+version := "11.13-dt-20190422Z-40afee"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

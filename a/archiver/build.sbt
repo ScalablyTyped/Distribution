@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "archiver"
-version := "2.1-dt-20190326Z-b2d6d7"
+version := "2.1-dt-20190326Z-629770"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-3ecb5b",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-8ee86c",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-57138d",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "shipit-utils"
-version := "1.4-dt-20190221Z-fa5e13"
+version := "1.4-dt-20190221Z-e145a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
-  "org.scalablytyped" %%% "shipit-cli" % "1.5-dt-20190214Z-4e4177",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
+  "org.scalablytyped" %%% "shipit-cli" % "1.5-dt-20190214Z-92c954",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

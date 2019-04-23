@@ -44,6 +44,7 @@ object User extends js.Object {
   def become(sessionToken: java.lang.String, options: parseLib.ParseNs.UseMasterKeyOption): js.Promise[parseLib.ParseNs.User] = js.native
   def current(): js.UndefOr[parseLib.ParseNs.User] = js.native
   def currentAsync(): js.Promise[parseLib.ParseNs.User | scala.Null] = js.native
+  def enableUnsafeCurrentUser(): scala.Unit = js.native
   def extend(): js.Any = js.native
   def extend(protoProps: js.Any): js.Any = js.native
   def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native

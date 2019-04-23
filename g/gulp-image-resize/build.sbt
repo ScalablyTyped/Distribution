@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-image-resize"
-version := "0.13-dt-20180411Z-1284e9"
+version := "0.13-dt-20180411Z-1d8ccc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "gm" % "1.18-dt-20181108Z-ba0637",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "gm" % "1.18-dt-20181108Z-865632",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

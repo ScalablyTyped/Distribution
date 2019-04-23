@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.16.4-e0e22f"
+version := "3.16.5-d7254e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

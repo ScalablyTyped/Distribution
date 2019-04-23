@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "findup-sync"
-version := "2.0-dt-20190212Z-355446"
+version := "2.0-dt-20190212Z-60778e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-947625",
-  "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-4fc381",
+  "org.scalablytyped" %%% "braces" % "3.0-dt-20190422Z-eabdd9",
+  "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-40507c",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

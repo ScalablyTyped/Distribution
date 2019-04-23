@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "fastify-multipart"
-version := "0.7.0-f135ea"
+version := "0.7.0-12189e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-ff4101",
-  "org.scalablytyped" %%% "fastify" % "2.3.0-150b14",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190419Z-3f0246",
+  "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-bd9a9a",
+  "org.scalablytyped" %%% "fastify" % "2.3.0-f1b655",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
