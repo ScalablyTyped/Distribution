@@ -26,6 +26,7 @@ trait GetRepositoryResult extends js.Object {
     * The ID of the repository
     */
   val repositoryId: java.lang.String
+  val repositoryName: java.lang.String
 }
 
 object GetRepositoryResult {
@@ -35,9 +36,10 @@ object GetRepositoryResult {
     cloneUrlHttp: java.lang.String,
     cloneUrlSsh: java.lang.String,
     id: java.lang.String,
-    repositoryId: java.lang.String
+    repositoryId: java.lang.String,
+    repositoryName: java.lang.String
   ): GetRepositoryResult = {
-    val __obj = js.Dynamic.literal(arn = arn, cloneUrlHttp = cloneUrlHttp, cloneUrlSsh = cloneUrlSsh, id = id, repositoryId = repositoryId)
+    val __obj = js.Dynamic.literal(arn = arn, cloneUrlHttp = cloneUrlHttp, cloneUrlSsh = cloneUrlSsh, id = id, repositoryId = repositoryId, repositoryName = repositoryName)
   
     __obj.asInstanceOf[GetRepositoryResult]
   }

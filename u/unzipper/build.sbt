@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "unzipper"
-version := "0.9-dt-20181004Z-1acf2c"
+version := "0.9-dt-20190423Z-b9ca2b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

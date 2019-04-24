@@ -143,6 +143,10 @@ class PanelModelBase ()
   /* protected */ def canAddElement(element: IElement): scala.Boolean = js.native
   /* protected */ def childVisibilityChanged(): scala.Unit = js.native
   /**
+    * Call this function to clear all errors in the panel / page and all its child elements (panels and questions)
+    */
+  def clearErrors(): scala.Unit = js.native
+  /**
     * Call this function to remove all question values from the current page/panel, that end-user will not be able to enter.
     * For example the value that doesn't exists in a radigroup/dropdown/checkbox choices or matrix rows/columns.
     * Please note, this function doesn't clear values for invisible questions or values that doesn't associated with questions.

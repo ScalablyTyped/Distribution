@@ -10,6 +10,7 @@ trait GetArnResult extends js.Object {
     * The [ID](https://docs.aws.amazon.com/general/latest/gr/acct-identifiers.html) of the AWS account that owns the resource, without the hyphens.
     */
   val account: java.lang.String
+  val arn: java.lang.String
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -38,13 +39,14 @@ object GetArnResult {
   @scala.inline
   def apply(
     account: java.lang.String,
+    arn: java.lang.String,
     id: java.lang.String,
     partition: java.lang.String,
     region: java.lang.String,
     resource: java.lang.String,
     service: java.lang.String
   ): GetArnResult = {
-    val __obj = js.Dynamic.literal(account = account, id = id, partition = partition, region = region, resource = resource, service = service)
+    val __obj = js.Dynamic.literal(account = account, arn = arn, id = id, partition = partition, region = region, resource = resource, service = service)
   
     __obj.asInstanceOf[GetArnResult]
   }

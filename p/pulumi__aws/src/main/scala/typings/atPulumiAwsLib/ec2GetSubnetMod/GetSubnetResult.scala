@@ -15,6 +15,7 @@ trait GetSubnetResult extends js.Object {
   val availabilityZoneId: java.lang.String
   val cidrBlock: java.lang.String
   val defaultForAz: scala.Boolean
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   val id: java.lang.String
   val ipv6CidrBlock: java.lang.String
   val ipv6CidrBlockAssociationId: java.lang.String
@@ -44,10 +45,11 @@ object GetSubnetResult {
     ownerId: java.lang.String,
     state: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    vpcId: java.lang.String
+    vpcId: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetSubnetResult = {
     val __obj = js.Dynamic.literal(arn = arn, assignIpv6AddressOnCreation = assignIpv6AddressOnCreation, availabilityZone = availabilityZone, availabilityZoneId = availabilityZoneId, cidrBlock = cidrBlock, defaultForAz = defaultForAz, id = id, ipv6CidrBlock = ipv6CidrBlock, ipv6CidrBlockAssociationId = ipv6CidrBlockAssociationId, mapPublicIpOnLaunch = mapPublicIpOnLaunch, ownerId = ownerId, state = state, tags = tags, vpcId = vpcId)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetSubnetResult]
   }
 }

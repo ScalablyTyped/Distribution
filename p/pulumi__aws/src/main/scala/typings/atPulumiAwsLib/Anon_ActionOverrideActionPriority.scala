@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ActionOverrideActionPriority extends js.Object {
-  var action: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_TypeInput]] = js.undefined
-  var overrideAction: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_TypeInput]] = js.undefined
+  var action: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_TypeInputString]] = js.undefined
+  var overrideAction: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_TypeInputString]] = js.undefined
   var priority: atPulumiPulumiLib.outputMod.Input[scala.Double]
   var ruleId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -18,8 +18,8 @@ object Anon_ActionOverrideActionPriority {
   def apply(
     priority: atPulumiPulumiLib.outputMod.Input[scala.Double],
     ruleId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    action: atPulumiPulumiLib.outputMod.Input[Anon_TypeInput] = null,
-    overrideAction: atPulumiPulumiLib.outputMod.Input[Anon_TypeInput] = null,
+    action: atPulumiPulumiLib.outputMod.Input[Anon_TypeInputString] = null,
+    overrideAction: atPulumiPulumiLib.outputMod.Input[Anon_TypeInputString] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ActionOverrideActionPriority = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])

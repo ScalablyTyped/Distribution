@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DataResourcesIncludeManagementEvents extends js.Object {
   var dataResources: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_TypeValues]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_TypeValuesArray]]]
   ] = js.undefined
   var includeManagementEvents: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   var readWriteType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -16,7 +16,7 @@ trait Anon_DataResourcesIncludeManagementEvents extends js.Object {
 object Anon_DataResourcesIncludeManagementEvents {
   @scala.inline
   def apply(
-    dataResources: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_TypeValues]]] = null,
+    dataResources: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_TypeValuesArray]]] = null,
     includeManagementEvents: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     readWriteType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DataResourcesIncludeManagementEvents = {

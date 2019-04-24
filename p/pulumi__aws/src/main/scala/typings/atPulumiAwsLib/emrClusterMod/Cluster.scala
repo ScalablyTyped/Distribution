@@ -108,7 +108,7 @@ class Cluster protected ()
     */
   val serviceRole: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignore_changes` if other steps are being managed outside of Terraform.
+    * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignore_changes` if other steps are being managed outside of Terraform. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val steps: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ActionOnFailure]] = js.native
   /**

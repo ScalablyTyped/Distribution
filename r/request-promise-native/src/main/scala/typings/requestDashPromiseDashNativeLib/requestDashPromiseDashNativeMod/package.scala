@@ -10,4 +10,5 @@ package object requestDashPromiseDashNativeMod {
   type Options = OptionsWithUri | OptionsWithUrl
   type OptionsWithUri = requestLib.requestMod.UriOptions with RequestPromiseOptions
   type OptionsWithUrl = requestLib.requestMod.UrlOptions with RequestPromiseOptions
+  type RequestPromiseAPI = requestLib.requestMod.RequestAPI[RequestPromise[js.Any], RequestPromiseOptions, requestLib.requestMod.RequiredUriUrl]
 }

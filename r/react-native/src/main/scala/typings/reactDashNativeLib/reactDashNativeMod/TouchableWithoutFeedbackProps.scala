@@ -33,6 +33,18 @@ trait TouchableWithoutFeedbackProps
     */
   var hitSlop: js.UndefOr[Insets] = js.undefined
   /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "blur" occurs, meaning the element lost focus.
+    * Some platforms may not have the concept of blur.
+    */
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], scala.Unit]] = js.undefined
+  /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "focus" occurs. Some platforms may not have
+    * the concept of focus.
+    */
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], scala.Unit]] = js.undefined
+  /**
     * Invoked on mount and layout changes with
     * {nativeEvent: {layout: {x, y, width, height}}}
     */
@@ -85,6 +97,8 @@ object TouchableWithoutFeedbackProps {
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     onAccessibilityTap: () => scala.Unit = null,
+    onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => scala.Unit = null,
+    onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => scala.Unit = null,
     onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
     onLongPress: /* event */ GestureResponderEvent => scala.Unit = null,
     onMagicTap: () => scala.Unit = null,
@@ -115,6 +129,8 @@ object TouchableWithoutFeedbackProps {
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))

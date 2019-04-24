@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-stylus"
-version := "2.7-dt-20190412Z-dea1d0"
+version := "2.7-dt-20190423Z-cf05e3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

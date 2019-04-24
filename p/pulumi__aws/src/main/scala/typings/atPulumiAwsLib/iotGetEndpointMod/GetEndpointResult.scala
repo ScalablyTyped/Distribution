@@ -15,6 +15,7 @@ trait GetEndpointResult extends js.Object {
     * * `iot:Job`: `IDENTIFIER.jobs.iot.REGION.amazonaws.com`
     */
   val endpointAddress: java.lang.String
+  val endpointType: js.UndefOr[java.lang.String] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -23,9 +24,9 @@ trait GetEndpointResult extends js.Object {
 
 object GetEndpointResult {
   @scala.inline
-  def apply(endpointAddress: java.lang.String, id: java.lang.String): GetEndpointResult = {
+  def apply(endpointAddress: java.lang.String, id: java.lang.String, endpointType: java.lang.String = null): GetEndpointResult = {
     val __obj = js.Dynamic.literal(endpointAddress = endpointAddress, id = id)
-  
+    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType)
     __obj.asInstanceOf[GetEndpointResult]
   }
 }

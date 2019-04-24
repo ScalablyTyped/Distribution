@@ -14,13 +14,18 @@ trait GetEventCategoriesResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val sourceType: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object GetEventCategoriesResult {
   @scala.inline
-  def apply(eventCategories: js.Array[java.lang.String], id: java.lang.String): GetEventCategoriesResult = {
+  def apply(
+    eventCategories: js.Array[java.lang.String],
+    id: java.lang.String,
+    sourceType: java.lang.String = null
+  ): GetEventCategoriesResult = {
     val __obj = js.Dynamic.literal(eventCategories = eventCategories, id = id)
-  
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
     __obj.asInstanceOf[GetEventCategoriesResult]
   }
 }

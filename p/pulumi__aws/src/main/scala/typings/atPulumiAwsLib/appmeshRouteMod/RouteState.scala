@@ -29,7 +29,7 @@ trait RouteState extends js.Object {
   /**
     * The route specification to apply.
     */
-  val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch]] = js.undefined
+  val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteTcpRoute]] = js.undefined
   /**
     * The name of the virtual router in which to create the route.
     */
@@ -44,7 +44,7 @@ object RouteState {
     lastUpdatedDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch] = null,
+    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteTcpRoute] = null,
     virtualRouterName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RouteState = {
     val __obj = js.Dynamic.literal()

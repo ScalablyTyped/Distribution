@@ -14,12 +14,13 @@ trait GetTopicResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
 }
 
 object GetTopicResult {
   @scala.inline
-  def apply(arn: java.lang.String, id: java.lang.String): GetTopicResult = {
-    val __obj = js.Dynamic.literal(arn = arn, id = id)
+  def apply(arn: java.lang.String, id: java.lang.String, name: java.lang.String): GetTopicResult = {
+    val __obj = js.Dynamic.literal(arn = arn, id = id, name = name)
   
     __obj.asInstanceOf[GetTopicResult]
   }

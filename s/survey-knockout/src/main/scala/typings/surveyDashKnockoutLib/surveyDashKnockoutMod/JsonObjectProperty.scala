@@ -35,6 +35,7 @@ class JsonObjectProperty protected () extends IObject {
   var serializationProperty: java.lang.String = js.native
   var `type`: java.lang.String = js.native
   var visible: scala.Boolean = js.native
+  def getBaseValue(): java.lang.String = js.native
   def getChoices(obj: js.Any): js.Array[_] = js.native
   def getClassName(className: java.lang.String): java.lang.String = js.native
   def getObjType(objType: java.lang.String): java.lang.String = js.native
@@ -45,6 +46,7 @@ class JsonObjectProperty protected () extends IObject {
   def mergeWith(prop: JsonObjectProperty): scala.Unit = js.native
   def onGetValue(obj: js.Any): js.Any = js.native
   def onSetValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): js.Any = js.native
+  def setBaseValue(`val`: js.Any): scala.Unit = js.native
   def setChoices(value: js.Array[_], valueFunc: js.Function0[js.Array[_]]): scala.Unit = js.native
   def setValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): scala.Unit = js.native
 }

@@ -25,7 +25,7 @@ class Service protected ()
   /**
     * Configuration block containing deployment controller configuration. Defined below.
     */
-  val deploymentController: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeStringOptional]] = js.native
+  val deploymentController: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Type]] = js.native
   /**
     * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
     */

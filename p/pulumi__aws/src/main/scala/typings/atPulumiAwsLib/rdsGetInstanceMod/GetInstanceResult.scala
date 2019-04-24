@@ -42,6 +42,7 @@ trait GetInstanceResult extends js.Object {
     * Contains the name of the compute and memory capacity class of the DB instance.
     */
   val dbInstanceClass: java.lang.String
+  val dbInstanceIdentifier: java.lang.String
   /**
     * Specifies the port that the DB instance listens on.
     */
@@ -168,6 +169,7 @@ object GetInstanceResult {
     dbClusterIdentifier: java.lang.String,
     dbInstanceArn: java.lang.String,
     dbInstanceClass: java.lang.String,
+    dbInstanceIdentifier: java.lang.String,
     dbInstancePort: scala.Double,
     dbName: java.lang.String,
     dbParameterGroups: js.Array[java.lang.String],
@@ -197,7 +199,7 @@ object GetInstanceResult {
     timezone: java.lang.String,
     vpcSecurityGroups: js.Array[java.lang.String]
   ): GetInstanceResult = {
-    val __obj = js.Dynamic.literal(address = address, allocatedStorage = allocatedStorage, autoMinorVersionUpgrade = autoMinorVersionUpgrade, availabilityZone = availabilityZone, backupRetentionPeriod = backupRetentionPeriod, caCertIdentifier = caCertIdentifier, dbClusterIdentifier = dbClusterIdentifier, dbInstanceArn = dbInstanceArn, dbInstanceClass = dbInstanceClass, dbInstancePort = dbInstancePort, dbName = dbName, dbParameterGroups = dbParameterGroups, dbSecurityGroups = dbSecurityGroups, dbSubnetGroup = dbSubnetGroup, enabledCloudwatchLogsExports = enabledCloudwatchLogsExports, endpoint = endpoint, engine = engine, engineVersion = engineVersion, hostedZoneId = hostedZoneId, id = id, iops = iops, kmsKeyId = kmsKeyId, licenseModel = licenseModel, masterUsername = masterUsername, monitoringInterval = monitoringInterval, monitoringRoleArn = monitoringRoleArn, multiAz = multiAz, optionGroupMemberships = optionGroupMemberships, port = port, preferredBackupWindow = preferredBackupWindow, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, replicateSourceDb = replicateSourceDb, storageEncrypted = storageEncrypted, storageType = storageType, timezone = timezone, vpcSecurityGroups = vpcSecurityGroups)
+    val __obj = js.Dynamic.literal(address = address, allocatedStorage = allocatedStorage, autoMinorVersionUpgrade = autoMinorVersionUpgrade, availabilityZone = availabilityZone, backupRetentionPeriod = backupRetentionPeriod, caCertIdentifier = caCertIdentifier, dbClusterIdentifier = dbClusterIdentifier, dbInstanceArn = dbInstanceArn, dbInstanceClass = dbInstanceClass, dbInstanceIdentifier = dbInstanceIdentifier, dbInstancePort = dbInstancePort, dbName = dbName, dbParameterGroups = dbParameterGroups, dbSecurityGroups = dbSecurityGroups, dbSubnetGroup = dbSubnetGroup, enabledCloudwatchLogsExports = enabledCloudwatchLogsExports, endpoint = endpoint, engine = engine, engineVersion = engineVersion, hostedZoneId = hostedZoneId, id = id, iops = iops, kmsKeyId = kmsKeyId, licenseModel = licenseModel, masterUsername = masterUsername, monitoringInterval = monitoringInterval, monitoringRoleArn = monitoringRoleArn, multiAz = multiAz, optionGroupMemberships = optionGroupMemberships, port = port, preferredBackupWindow = preferredBackupWindow, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, replicateSourceDb = replicateSourceDb, storageEncrypted = storageEncrypted, storageType = storageType, timezone = timezone, vpcSecurityGroups = vpcSecurityGroups)
   
     __obj.asInstanceOf[GetInstanceResult]
   }

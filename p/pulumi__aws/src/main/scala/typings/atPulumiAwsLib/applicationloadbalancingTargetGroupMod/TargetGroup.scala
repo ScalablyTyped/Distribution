@@ -34,7 +34,7 @@ class TargetGroup protected ()
   /**
     * A Health Check block. Health Check blocks are documented below.
     */
-  val healthCheck: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_HealthyThresholdInterval] = js.native
+  val healthCheck: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledHealthyThreshold] = js.native
   /**
     * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
     */

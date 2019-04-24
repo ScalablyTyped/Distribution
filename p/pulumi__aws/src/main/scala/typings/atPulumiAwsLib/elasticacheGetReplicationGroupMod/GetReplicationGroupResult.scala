@@ -47,6 +47,10 @@ trait GetReplicationGroupResult extends js.Object {
     */
   val replicationGroupDescription: java.lang.String
   /**
+    * The identifier for the replication group.
+    */
+  val replicationGroupId: java.lang.String
+  /**
     * The number of days for which ElastiCache retains automatic cache cluster snapshots before deleting them.
     */
   val snapshotRetentionLimit: scala.Double
@@ -69,10 +73,11 @@ object GetReplicationGroupResult {
     port: scala.Double,
     primaryEndpointAddress: java.lang.String,
     replicationGroupDescription: java.lang.String,
+    replicationGroupId: java.lang.String,
     snapshotRetentionLimit: scala.Double,
     snapshotWindow: java.lang.String
   ): GetReplicationGroupResult = {
-    val __obj = js.Dynamic.literal(authTokenEnabled = authTokenEnabled, automaticFailoverEnabled = automaticFailoverEnabled, configurationEndpointAddress = configurationEndpointAddress, id = id, memberClusters = memberClusters, nodeType = nodeType, numberCacheClusters = numberCacheClusters, port = port, primaryEndpointAddress = primaryEndpointAddress, replicationGroupDescription = replicationGroupDescription, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow)
+    val __obj = js.Dynamic.literal(authTokenEnabled = authTokenEnabled, automaticFailoverEnabled = automaticFailoverEnabled, configurationEndpointAddress = configurationEndpointAddress, id = id, memberClusters = memberClusters, nodeType = nodeType, numberCacheClusters = numberCacheClusters, port = port, primaryEndpointAddress = primaryEndpointAddress, replicationGroupDescription = replicationGroupDescription, replicationGroupId = replicationGroupId, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow)
   
     __obj.asInstanceOf[GetReplicationGroupResult]
   }

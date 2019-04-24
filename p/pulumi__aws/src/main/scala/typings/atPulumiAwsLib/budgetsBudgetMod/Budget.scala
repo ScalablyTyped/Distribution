@@ -51,6 +51,10 @@ class Budget protected ()
     */
   val namePrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+    */
+  val notifications: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ComparisonOperator]]] = js.native
+  /**
     * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
     */
   val timePeriodEnd: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

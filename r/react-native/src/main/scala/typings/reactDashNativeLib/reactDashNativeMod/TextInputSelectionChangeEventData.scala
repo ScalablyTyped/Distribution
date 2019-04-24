@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TextInputSelectionChangeEventData extends js.Object {
+trait TextInputSelectionChangeEventData extends TargetedEvent {
   var selection: reactDashNativeLib.Anon_End
-  var target: scala.Double
 }
 
 object TextInputSelectionChangeEventData {

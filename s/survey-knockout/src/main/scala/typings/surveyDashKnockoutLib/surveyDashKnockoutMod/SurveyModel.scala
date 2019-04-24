@@ -67,9 +67,16 @@ class SurveyModel ()
   /**
     * The html that shows on completed ('Thank you') page. Set it to change the default text.
     * @see showCompletedPage
+    * @see completedHtmlOnCondition
     * @see locale
     */
   var completedHtml: java.lang.String = js.native
+  /**
+    * The list of html condition items. If the expression of this item returns true, then survey will use this item html instead of completedHtml
+    * @see HtmlConditionItem
+    * @see completeHtml
+    */
+  var completedHtmlOnCondition: js.Array[HtmlConditionItem] = js.native
   val completedState: java.lang.String = js.native
   val completedStateText: java.lang.String = js.native
   /**
@@ -790,6 +797,7 @@ class SurveyModel ()
     * @see SurveyPage.questionsOrder
     */
   var questionsOrder: java.lang.String = js.native
+  val renderedCompletedHtml: java.lang.String = js.native
   /**
     * A char/string that will be rendered in the title required questions.
     * @see Question.title

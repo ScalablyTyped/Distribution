@@ -22,7 +22,7 @@ trait TargetGroupState extends js.Object {
     * A Health Check block. Health Check blocks are documented below.
     */
   val healthCheck: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalMatcher]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledHealthyThresholdInterval]
   ] = js.undefined
   /**
     * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
@@ -81,7 +81,7 @@ object TargetGroupState {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     arnSuffix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     deregistrationDelay: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
-    healthCheck: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalMatcher] = null,
+    healthCheck: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledHealthyThresholdInterval] = null,
     lambdaMultiValueHeadersEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

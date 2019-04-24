@@ -15,6 +15,14 @@ trait ServerState extends js.Object {
     */
   val endpoint: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The virtual private cloud (VPC) endpoint settings that you want to configure for your SFTP server. Fields documented below.
+    */
+  val endpointDetails: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_VpcEndpointIdInput]] = js.undefined
+  /**
+    * The type of endpoint that you want your SFTP server connect to. If you connect to a `VPC_ENDPOINT`, your SFTP server isn't accessible over the public internet. If you want to connect your SFTP server via public internet, set `PUBLIC`.
+    */
+  val endpointType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * A boolean that indicates all users associated with the server should be deleted so that the Server can be destroyed without error. The default value is `false`.
     */
   val forceDestroy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
@@ -45,6 +53,8 @@ object ServerState {
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointDetails: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_VpcEndpointIdInput] = null,
+    endpointType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     identityProviderType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     invocationRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -55,6 +65,8 @@ object ServerState {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (endpointDetails != null) __obj.updateDynamic("endpointDetails")(endpointDetails.asInstanceOf[js.Any])
+    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
     if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
     if (identityProviderType != null) __obj.updateDynamic("identityProviderType")(identityProviderType.asInstanceOf[js.Any])
     if (invocationRole != null) __obj.updateDynamic("invocationRole")(invocationRole.asInstanceOf[js.Any])

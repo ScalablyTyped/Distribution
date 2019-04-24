@@ -8,12 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/Notification", "Notification")
 @js.native
 class Notification[T] protected () extends js.Object {
-  def this(kind: NotificationKind) = this()
-  def this(kind: NotificationKind, value: T) = this()
-  def this(kind: NotificationKind, value: T, error: js.Any) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.C) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.E) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.N) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.C, value: T) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.E, value: T) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.N, value: T) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.C, value: T, error: js.Any) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.E, value: T, error: js.Any) = this()
+  def this(kind: rxjsLib.rxjsLibStrings.N, value: T, error: js.Any) = this()
   var error: js.UndefOr[js.Any] = js.native
   var hasValue: scala.Boolean = js.native
-  var kind: NotificationKind = js.native
+  var kind: rxjsLib.rxjsLibStrings.N | rxjsLib.rxjsLibStrings.E | rxjsLib.rxjsLibStrings.C = js.native
   var value: js.UndefOr[T] = js.native
   def accept(nextOrObserver: js.Function1[/* value */ T, scala.Unit]): js.Any = js.native
   def accept(

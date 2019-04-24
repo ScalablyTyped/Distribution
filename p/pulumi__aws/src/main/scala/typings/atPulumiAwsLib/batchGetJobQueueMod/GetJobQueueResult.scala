@@ -21,6 +21,7 @@ trait GetJobQueueResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
   /**
     * The priority of the job queue. Job queues with a higher priority are evaluated first when
     * associated with the same compute environment.
@@ -47,12 +48,13 @@ object GetJobQueueResult {
     arn: java.lang.String,
     computeEnvironmentOrders: js.Array[atPulumiAwsLib.Anon_ComputeEnvironment],
     id: java.lang.String,
+    name: java.lang.String,
     priority: scala.Double,
     state: java.lang.String,
     status: java.lang.String,
     statusReason: java.lang.String
   ): GetJobQueueResult = {
-    val __obj = js.Dynamic.literal(arn = arn, computeEnvironmentOrders = computeEnvironmentOrders, id = id, priority = priority, state = state, status = status, statusReason = statusReason)
+    val __obj = js.Dynamic.literal(arn = arn, computeEnvironmentOrders = computeEnvironmentOrders, id = id, name = name, priority = priority, state = state, status = status, statusReason = statusReason)
   
     __obj.asInstanceOf[GetJobQueueResult]
   }

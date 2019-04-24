@@ -27,7 +27,7 @@ class RouteTable protected ()
     */
   val propagatingVgws: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
-    * A list of route objects. Their keys are documented below.
+    * A list of route objects. Their keys are documented below. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val routes: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlock]] = js.native
   /**

@@ -20,6 +20,7 @@ trait GetBrokerResult extends js.Object {
     */
   val id: java.lang.String
   val instances: js.Array[atPulumiAwsLib.Anon_ConsoleUrl]
+  val logs: js.UndefOr[atPulumiAwsLib.Anon_AuditGeneralBoolean] = js.undefined
   val maintenanceWindowStartTime: atPulumiAwsLib.Anon_DayOfWeek
   val publiclyAccessible: scala.Boolean
   val securityGroups: js.Array[java.lang.String]
@@ -47,10 +48,11 @@ object GetBrokerResult {
     securityGroups: js.Array[java.lang.String],
     subnetIds: js.Array[java.lang.String],
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    users: js.Array[atPulumiAwsLib.Anon_ConsoleAccessGroupsUsername]
+    users: js.Array[atPulumiAwsLib.Anon_ConsoleAccessGroupsUsername],
+    logs: atPulumiAwsLib.Anon_AuditGeneralBoolean = null
   ): GetBrokerResult = {
     val __obj = js.Dynamic.literal(arn = arn, autoMinorVersionUpgrade = autoMinorVersionUpgrade, brokerId = brokerId, brokerName = brokerName, configuration = configuration, deploymentMode = deploymentMode, engineType = engineType, engineVersion = engineVersion, hostInstanceType = hostInstanceType, id = id, instances = instances, maintenanceWindowStartTime = maintenanceWindowStartTime, publiclyAccessible = publiclyAccessible, securityGroups = securityGroups, subnetIds = subnetIds, tags = tags, users = users)
-  
+    if (logs != null) __obj.updateDynamic("logs")(logs)
     __obj.asInstanceOf[GetBrokerResult]
   }
 }

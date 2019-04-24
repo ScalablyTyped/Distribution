@@ -107,6 +107,10 @@ trait MetricAlarmState extends js.Object {
     */
   val statistic: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * The value against which the specified statistic is compared.
     */
   val threshold: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -153,6 +157,7 @@ object MetricAlarmState {
     ] = null,
     period: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     statistic: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     threshold: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     treatMissingData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     unit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
@@ -176,6 +181,7 @@ object MetricAlarmState {
     if (okActions != null) __obj.updateDynamic("okActions")(okActions.asInstanceOf[js.Any])
     if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     if (treatMissingData != null) __obj.updateDynamic("treatMissingData")(treatMissingData.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])

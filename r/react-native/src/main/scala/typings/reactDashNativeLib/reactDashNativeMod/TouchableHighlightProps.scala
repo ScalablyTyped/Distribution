@@ -47,6 +47,8 @@ object TouchableHighlightProps {
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     onAccessibilityTap: () => scala.Unit = null,
+    onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => scala.Unit = null,
+    onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => scala.Unit = null,
     onHideUnderlay: () => scala.Unit = null,
     onLayout: /* event */ LayoutChangeEvent => scala.Unit = null,
     onLongPress: /* event */ GestureResponderEvent => scala.Unit = null,
@@ -81,6 +83,8 @@ object TouchableHighlightProps {
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onHideUnderlay != null) __obj.updateDynamic("onHideUnderlay")(js.Any.fromFunction0(onHideUnderlay))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))

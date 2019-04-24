@@ -28,6 +28,10 @@ class Cluster protected ()
   val certificateAuthority: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_DataString] = js.native
   val createdAt: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
+    */
+  val enabledClusterLogTypes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  /**
     * The endpoint for your Kubernetes API server.
     */
   val endpoint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

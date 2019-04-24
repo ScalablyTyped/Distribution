@@ -10,6 +10,11 @@ trait GetVpcAttachmentResult extends js.Object {
     * Whether DNS support is enabled.
     */
   val dnsSupport: java.lang.String
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
+  /**
+    * EC2 Transit Gateway VPC Attachment identifier
+    */
+  val id: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Whether IPv6 support is enabled.
     */
@@ -45,10 +50,13 @@ object GetVpcAttachmentResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     transitGatewayId: java.lang.String,
     vpcId: java.lang.String,
-    vpcOwnerId: java.lang.String
+    vpcOwnerId: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null
   ): GetVpcAttachmentResult = {
     val __obj = js.Dynamic.literal(dnsSupport = dnsSupport, ipv6Support = ipv6Support, subnetIds = subnetIds, tags = tags, transitGatewayId = transitGatewayId, vpcId = vpcId, vpcOwnerId = vpcOwnerId)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[GetVpcAttachmentResult]
   }
 }

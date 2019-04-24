@@ -99,6 +99,10 @@ class MetricAlarm protected ()
     */
   val statistic: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * The value against which the specified statistic is compared.
     */
   val threshold: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native

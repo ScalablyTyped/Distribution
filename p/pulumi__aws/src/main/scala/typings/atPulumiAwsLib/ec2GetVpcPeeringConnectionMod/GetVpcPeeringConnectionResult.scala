@@ -12,6 +12,7 @@ trait GetVpcPeeringConnectionResult extends js.Object {
     */
   val accepter: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   val cidrBlock: java.lang.String
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   val id: java.lang.String
   val ownerId: java.lang.String
   val peerCidrBlock: java.lang.String
@@ -44,10 +45,11 @@ object GetVpcPeeringConnectionResult {
     requester: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     status: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    vpcId: java.lang.String
+    vpcId: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetVpcPeeringConnectionResult = {
     val __obj = js.Dynamic.literal(accepter = accepter, cidrBlock = cidrBlock, id = id, ownerId = ownerId, peerCidrBlock = peerCidrBlock, peerOwnerId = peerOwnerId, peerRegion = peerRegion, peerVpcId = peerVpcId, region = region, requester = requester, status = status, tags = tags, vpcId = vpcId)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetVpcPeeringConnectionResult]
   }
 }

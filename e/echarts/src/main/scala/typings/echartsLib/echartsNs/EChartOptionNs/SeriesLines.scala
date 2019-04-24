@@ -247,7 +247,7 @@ trait SeriesLines extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markArea
     */
   var markArea: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -256,7 +256,7 @@ trait SeriesLines extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markLine
     */
   var markLine: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -264,7 +264,9 @@ trait SeriesLines extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -433,9 +435,9 @@ object SeriesLines {
     large: js.UndefOr[scala.Boolean] = js.undefined,
     largeThreshold: scala.Int | scala.Double = null,
     lineStyle: echartsLib.Anon_ColorCurvenessOpacityShadowBlur = null,
-    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
-    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     name: java.lang.String = null,
     polyline: js.UndefOr[scala.Boolean] = js.undefined,
     progressive: scala.Int | scala.Double = null,

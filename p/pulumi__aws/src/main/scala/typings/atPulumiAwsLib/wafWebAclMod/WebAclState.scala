@@ -10,7 +10,7 @@ trait WebAclState extends js.Object {
   /**
     * Configuration block with action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL. Detailed below.
     */
-  val defaultAction: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]] = js.undefined
+  val defaultAction: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]] = js.undefined
   /**
     * Configuration block to enable WAF logging. Detailed below.
     */
@@ -41,7 +41,7 @@ object WebAclState {
   @scala.inline
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput] = null,
+    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString] = null,
     loggingConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LogDestinationRedactedFields] = null,
     metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

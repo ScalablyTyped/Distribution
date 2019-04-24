@@ -20,10 +20,12 @@ class NetworkAcl protected ()
   def this(name: java.lang.String, args: NetworkAclArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
     * Specifies an egress rule. Parameters defined below.
+    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val egress: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
+    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]] = js.native
   /**

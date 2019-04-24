@@ -17,7 +17,7 @@ trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
     */
-  val autoRollbackConfiguration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledEvents]] = js.undefined
+  val autoRollbackConfiguration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledEventsArray]] = js.undefined
   /**
     * Autoscaling groups associated with the deployment group.
     */
@@ -97,7 +97,7 @@ object DeploymentGroupState {
   def apply(
     alarmConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AlarmsEnabled] = null,
     appName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    autoRollbackConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledEvents] = null,
+    autoRollbackConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledEventsArray] = null,
     autoscalingGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     blueGreenDeploymentConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeploymentReadyOptionGreenFleetProvisioningOption] = null,
     deploymentConfigName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

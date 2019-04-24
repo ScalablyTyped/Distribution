@@ -55,6 +55,7 @@ package object wxNs {
   // #region 网络API列表
   // 发起请求
   type RequestHeader = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type RmdirOptions = MkdirOptions
   // #endregion
   // #region App里的onLaunch、onShow回调参数
   /* Rewritten from type alias, can be one of: 
@@ -145,4 +146,5 @@ package object wxNs {
   type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnboxBehaviorMethods[UnionToIntersection[ArrayType[Behaviors]]]
   type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnboxBehaviorProps[UnionToIntersection[ArrayType[Behaviors]]]
   type UnionToIntersection[U] = js.Any
+  type WriteFileOptions = AppendFileOptions
 }

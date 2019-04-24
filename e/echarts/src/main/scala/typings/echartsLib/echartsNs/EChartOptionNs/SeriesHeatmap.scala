@@ -275,7 +275,7 @@ trait SeriesHeatmap extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markArea
     */
   var markArea: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -284,7 +284,7 @@ trait SeriesHeatmap extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markLine
     */
   var markLine: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -292,7 +292,9 @@ trait SeriesHeatmap extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * Maximum opacity. It is valid with
     * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
@@ -417,9 +419,9 @@ object SeriesHeatmap {
     id: java.lang.String = null,
     itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
     label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
-    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
-    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     maxOpacity: scala.Int | scala.Double = null,
     minOpacity: scala.Int | scala.Double = null,
     name: java.lang.String = null,

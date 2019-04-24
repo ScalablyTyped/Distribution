@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object countdownNs {
   type DateFunction = js.Function1[/* timespan */ Timespan, scala.Unit]
-  type DateTime = scala.Double | stdLib.Date | DateFunction
+  type DateTime = js.UndefOr[scala.Double | stdLib.Date | DateFunction | scala.Null]
 }

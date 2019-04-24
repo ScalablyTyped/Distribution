@@ -19,6 +19,7 @@ trait GetNetworkInterfaceResult extends js.Object {
     * Description of the network interface.
     */
   val description: java.lang.String
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   val id: java.lang.String
   /**
     * The type of interface.
@@ -89,10 +90,11 @@ object GetNetworkInterfaceResult {
     securityGroups: js.Array[java.lang.String],
     subnetId: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    vpcId: java.lang.String
+    vpcId: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetNetworkInterfaceResult = {
     val __obj = js.Dynamic.literal(associations = associations, attachments = attachments, availabilityZone = availabilityZone, description = description, id = id, interfaceType = interfaceType, ipv6Addresses = ipv6Addresses, macAddress = macAddress, ownerId = ownerId, privateDnsName = privateDnsName, privateIp = privateIp, privateIps = privateIps, requesterId = requesterId, securityGroups = securityGroups, subnetId = subnetId, tags = tags, vpcId = vpcId)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetNetworkInterfaceResult]
   }
 }

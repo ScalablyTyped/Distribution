@@ -19,6 +19,10 @@ trait NotebookInstanceState extends js.Object {
     */
   val kmsKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The name of a lifecycle configuration to associate with the notebook instance.
+    */
+  val lifecycleConfigName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The name of the notebook instance (must be unique).
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -48,6 +52,7 @@ object NotebookInstanceState {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     instanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lifecycleConfigName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
@@ -58,6 +63,7 @@ object NotebookInstanceState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (lifecycleConfigName != null) __obj.updateDynamic("lifecycleConfigName")(lifecycleConfigName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])

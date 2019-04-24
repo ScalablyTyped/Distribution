@@ -1,12 +1,12 @@
 package typings
-package unzipperLib
+package unzipperLib.unzipperMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon_Buffer extends js.Object {
+trait File extends js.Object {
   var comment: java.lang.String = js.native
   var compressedSize: scala.Double = js.native
   var compressionMethod: scala.Double = js.native
@@ -28,7 +28,7 @@ trait Anon_Buffer extends js.Object {
   var versionsNeededToExtract: scala.Double = js.native
   def buffer(): js.Promise[nodeLib.Buffer] = js.native
   def buffer(password: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
-  def stream(): unzipperLib.unzipperMod.Entry = js.native
-  def stream(password: java.lang.String): unzipperLib.unzipperMod.Entry = js.native
+  def stream(): Entry = js.native
+  def stream(password: java.lang.String): Entry = js.native
 }
 

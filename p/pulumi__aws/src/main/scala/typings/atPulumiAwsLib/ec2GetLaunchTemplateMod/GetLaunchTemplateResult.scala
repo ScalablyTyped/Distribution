@@ -84,6 +84,7 @@ trait GetLaunchTemplateResult extends js.Object {
     * The monitoring option for the instance.
     */
   val monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_1082978225]
+  val name: java.lang.String
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
@@ -141,6 +142,7 @@ object GetLaunchTemplateResult {
     keyName: java.lang.String,
     latestVersion: scala.Double,
     monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_1082978225],
+    name: java.lang.String,
     networkInterfaces: js.Array[atPulumiAwsLib.Anon_AssociatePublicIpAddress],
     placements: js.Array[atPulumiAwsLib.Anon_Affinity],
     ramDiskId: java.lang.String,
@@ -150,7 +152,7 @@ object GetLaunchTemplateResult {
     userData: java.lang.String,
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetLaunchTemplateResult = {
-    val __obj = js.Dynamic.literal(arn = arn, blockDeviceMappings = blockDeviceMappings, creditSpecifications = creditSpecifications, defaultVersion = defaultVersion, description = description, disableApiTermination = disableApiTermination, ebsOptimized = ebsOptimized, elasticGpuSpecifications = elasticGpuSpecifications, iamInstanceProfiles = iamInstanceProfiles, id = id, imageId = imageId, instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior, instanceMarketOptions = instanceMarketOptions, instanceType = instanceType, kernelId = kernelId, keyName = keyName, latestVersion = latestVersion, monitorings = monitorings, networkInterfaces = networkInterfaces, placements = placements, ramDiskId = ramDiskId, securityGroupNames = securityGroupNames, tagSpecifications = tagSpecifications, tags = tags, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(arn = arn, blockDeviceMappings = blockDeviceMappings, creditSpecifications = creditSpecifications, defaultVersion = defaultVersion, description = description, disableApiTermination = disableApiTermination, ebsOptimized = ebsOptimized, elasticGpuSpecifications = elasticGpuSpecifications, iamInstanceProfiles = iamInstanceProfiles, id = id, imageId = imageId, instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior, instanceMarketOptions = instanceMarketOptions, instanceType = instanceType, kernelId = kernelId, keyName = keyName, latestVersion = latestVersion, monitorings = monitorings, name = name, networkInterfaces = networkInterfaces, placements = placements, ramDiskId = ramDiskId, securityGroupNames = securityGroupNames, tagSpecifications = tagSpecifications, tags = tags, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
   
     __obj.asInstanceOf[GetLaunchTemplateResult]
   }

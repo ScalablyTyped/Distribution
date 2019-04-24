@@ -14,6 +14,7 @@ trait GetElasticIpResult extends js.Object {
     * Indicates whether the address is for use in EC2-Classic (standard) or in a VPC (vpc).
     */
   val domain: java.lang.String
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * If VPC Elastic IP, the allocation identifier. If EC2-Classic Elastic IP, the public IP address.
     */
@@ -70,10 +71,11 @@ object GetElasticIpResult {
     publicDns: java.lang.String,
     publicIp: java.lang.String,
     publicIpv4Pool: java.lang.String,
-    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetElasticIpResult = {
     val __obj = js.Dynamic.literal(associationId = associationId, domain = domain, id = id, instanceId = instanceId, networkInterfaceId = networkInterfaceId, networkInterfaceOwnerId = networkInterfaceOwnerId, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, publicIpv4Pool = publicIpv4Pool, tags = tags)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetElasticIpResult]
   }
 }

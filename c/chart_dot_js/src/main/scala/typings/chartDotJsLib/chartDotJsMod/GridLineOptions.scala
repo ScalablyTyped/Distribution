@@ -13,7 +13,7 @@ trait GridLineOptions extends js.Object {
   var drawBorder: js.UndefOr[scala.Boolean] = js.undefined
   var drawOnChartArea: js.UndefOr[scala.Boolean] = js.undefined
   var drawTicks: js.UndefOr[scala.Boolean] = js.undefined
-  var lineWidth: js.UndefOr[scala.Double] = js.undefined
+  var lineWidth: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var offsetGridLines: js.UndefOr[scala.Boolean] = js.undefined
   var tickMarkLength: js.UndefOr[scala.Double] = js.undefined
   var zeroLineBorderDash: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -32,7 +32,7 @@ object GridLineOptions {
     drawBorder: js.UndefOr[scala.Boolean] = js.undefined,
     drawOnChartArea: js.UndefOr[scala.Boolean] = js.undefined,
     drawTicks: js.UndefOr[scala.Boolean] = js.undefined,
-    lineWidth: scala.Int | scala.Double = null,
+    lineWidth: scala.Double | js.Array[scala.Double] = null,
     offsetGridLines: js.UndefOr[scala.Boolean] = js.undefined,
     tickMarkLength: scala.Int | scala.Double = null,
     zeroLineBorderDash: js.Array[scala.Double] = null,

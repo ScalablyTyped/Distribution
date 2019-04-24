@@ -26,6 +26,7 @@ trait GetMountTargetResult extends js.Object {
     * Address at which the file system may be mounted via the mount target.
     */
   val ipAddress: java.lang.String
+  val mountTargetId: java.lang.String
   /**
     * The ID of the network interface that Amazon EFS created when it created the mount target.
     */
@@ -48,11 +49,12 @@ object GetMountTargetResult {
     fileSystemId: java.lang.String,
     id: java.lang.String,
     ipAddress: java.lang.String,
+    mountTargetId: java.lang.String,
     networkInterfaceId: java.lang.String,
     securityGroups: js.Array[java.lang.String],
     subnetId: java.lang.String
   ): GetMountTargetResult = {
-    val __obj = js.Dynamic.literal(dnsName = dnsName, fileSystemArn = fileSystemArn, fileSystemId = fileSystemId, id = id, ipAddress = ipAddress, networkInterfaceId = networkInterfaceId, securityGroups = securityGroups, subnetId = subnetId)
+    val __obj = js.Dynamic.literal(dnsName = dnsName, fileSystemArn = fileSystemArn, fileSystemId = fileSystemId, id = id, ipAddress = ipAddress, mountTargetId = mountTargetId, networkInterfaceId = networkInterfaceId, securityGroups = securityGroups, subnetId = subnetId)
   
     __obj.asInstanceOf[GetMountTargetResult]
   }

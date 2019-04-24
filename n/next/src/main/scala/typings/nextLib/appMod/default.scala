@@ -13,6 +13,6 @@ class default[P, S] () extends App[P, S]
 @JSImport("next/app", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def getInitialProps(context: nextLib.appMod.NextAppContext[nextDashServerLib.routerMod.DefaultQuery]): js.Promise[nextLib.appMod.DefaultAppIProps] = js.native
+  def getInitialProps(context: nextLib.appMod.NextAppContext[nextDashServerLib.routerMod.DefaultQuery, js.Object]): js.Promise[nextLib.appMod.DefaultAppIProps] = js.native
 }
 

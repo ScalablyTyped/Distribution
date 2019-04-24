@@ -30,6 +30,7 @@ trait GetServerResult extends js.Object {
     * Amazon Resource Name (ARN) of an IAM role that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.
     */
   val loggingRole: java.lang.String
+  val serverId: java.lang.String
   /**
     * URL of the service endpoint used to authenticate users with an `identity_provider_type` of `API_GATEWAY`.
     */
@@ -45,9 +46,10 @@ object GetServerResult {
     identityProviderType: java.lang.String,
     invocationRole: java.lang.String,
     loggingRole: java.lang.String,
+    serverId: java.lang.String,
     url: java.lang.String
   ): GetServerResult = {
-    val __obj = js.Dynamic.literal(arn = arn, endpoint = endpoint, id = id, identityProviderType = identityProviderType, invocationRole = invocationRole, loggingRole = loggingRole, url = url)
+    val __obj = js.Dynamic.literal(arn = arn, endpoint = endpoint, id = id, identityProviderType = identityProviderType, invocationRole = invocationRole, loggingRole = loggingRole, serverId = serverId, url = url)
   
     __obj.asInstanceOf[GetServerResult]
   }

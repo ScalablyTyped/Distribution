@@ -10,7 +10,7 @@ package object koaDashJoiDashRouterMod {
   type Handler = FullHandler | NestedHandler
   type Method = js.Function3[
     /* path */ java.lang.String | stdLib.RegExp, 
-    /* handlerOrConfig */ Handler | js.Object, 
+    /* handlerOrConfig */ Handler | Config, 
     /* repeated */ Handler, 
     Router
   ]

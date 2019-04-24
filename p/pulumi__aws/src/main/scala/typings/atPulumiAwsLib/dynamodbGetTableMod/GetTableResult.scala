@@ -16,6 +16,7 @@ trait GetTableResult extends js.Object {
     */
   val id: java.lang.String
   val localSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributes]
+  val name: java.lang.String
   val pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_1082978225
   val rangeKey: java.lang.String
   val readCapacity: scala.Double
@@ -39,6 +40,7 @@ object GetTableResult {
     hashKey: java.lang.String,
     id: java.lang.String,
     localSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributes],
+    name: java.lang.String,
     pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_1082978225,
     rangeKey: java.lang.String,
     readCapacity: scala.Double,
@@ -51,7 +53,7 @@ object GetTableResult {
     ttl: atPulumiAwsLib.Anon_AttributeName,
     writeCapacity: scala.Double
   ): GetTableResult = {
-    val __obj = js.Dynamic.literal(arn = arn, attributes = attributes, billingMode = billingMode, globalSecondaryIndexes = globalSecondaryIndexes, hashKey = hashKey, id = id, localSecondaryIndexes = localSecondaryIndexes, pointInTimeRecovery = pointInTimeRecovery, rangeKey = rangeKey, readCapacity = readCapacity, serverSideEncryption = serverSideEncryption, streamArn = streamArn, streamEnabled = streamEnabled, streamLabel = streamLabel, streamViewType = streamViewType, tags = tags, ttl = ttl, writeCapacity = writeCapacity)
+    val __obj = js.Dynamic.literal(arn = arn, attributes = attributes, billingMode = billingMode, globalSecondaryIndexes = globalSecondaryIndexes, hashKey = hashKey, id = id, localSecondaryIndexes = localSecondaryIndexes, name = name, pointInTimeRecovery = pointInTimeRecovery, rangeKey = rangeKey, readCapacity = readCapacity, serverSideEncryption = serverSideEncryption, streamArn = streamArn, streamEnabled = streamEnabled, streamLabel = streamLabel, streamViewType = streamViewType, tags = tags, ttl = ttl, writeCapacity = writeCapacity)
   
     __obj.asInstanceOf[GetTableResult]
   }

@@ -10,6 +10,9 @@ trait ResolverArgs extends js.Object {
     * The API ID for the GraphQL API.
     */
   val apiId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  /**
+    * The DataSource name.
+    */
   val dataSource: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The field name from the schema defined in the GraphQL API.

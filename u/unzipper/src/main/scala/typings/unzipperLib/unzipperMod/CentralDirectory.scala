@@ -9,7 +9,7 @@ trait CentralDirectory extends js.Object {
   var commentLength: scala.Double
   var diskNumber: scala.Double
   var diskStart: scala.Double
-  var files: js.Array[unzipperLib.Anon_Buffer]
+  var files: js.Array[File]
   var numberOfRecords: scala.Double
   var numberOfRecordsOnDisk: scala.Double
   var offsetToStartOfCentralDirectory: scala.Double
@@ -23,7 +23,7 @@ object CentralDirectory {
     commentLength: scala.Double,
     diskNumber: scala.Double,
     diskStart: scala.Double,
-    files: js.Array[unzipperLib.Anon_Buffer],
+    files: js.Array[File],
     numberOfRecords: scala.Double,
     numberOfRecordsOnDisk: scala.Double,
     offsetToStartOfCentralDirectory: scala.Double,

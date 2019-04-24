@@ -83,6 +83,10 @@ class Function protected ()
     * IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
     */
   val role: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  /**
+    * Actual Role instance value for this Function.  Will only be set if this function was
+    * created from [createFunction]
+    */
   var roleInstance: js.UndefOr[atPulumiAwsLib.iamMod.Role] = js.native
   /**
     * See [Runtimes][6] for valid values.

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TextInputFocusEventData extends js.Object {
+trait TextInputFocusEventData extends TargetedEvent {
   var eventCount: scala.Double
-  var target: scala.Double
   var text: java.lang.String
 }
 

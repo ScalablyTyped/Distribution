@@ -9,7 +9,7 @@ trait WebAclArgs extends js.Object {
   /**
     * The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.
     */
-  val defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]
+  val defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]
   /**
     * Configuration block to enable WAF logging. Detailed below.
     */
@@ -39,7 +39,7 @@ trait WebAclArgs extends js.Object {
 object WebAclArgs {
   @scala.inline
   def apply(
-    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput],
+    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString],
     metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     loggingConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LogDestinationRedactedFields] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

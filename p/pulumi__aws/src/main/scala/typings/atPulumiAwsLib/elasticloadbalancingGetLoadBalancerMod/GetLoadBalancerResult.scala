@@ -12,7 +12,7 @@ trait GetLoadBalancerResult extends js.Object {
   val connectionDrainingTimeout: scala.Double
   val crossZoneLoadBalancing: scala.Boolean
   val dnsName: java.lang.String
-  val healthCheck: atPulumiAwsLib.Anon_HealthyThresholdIntervalTarget
+  val healthCheck: atPulumiAwsLib.Anon_HealthyThresholdInterval
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -21,6 +21,7 @@ trait GetLoadBalancerResult extends js.Object {
   val instances: js.Array[java.lang.String]
   val internal: scala.Boolean
   val listeners: js.Array[atPulumiAwsLib.Anon_InstancePort]
+  val name: java.lang.String
   val securityGroups: js.Array[java.lang.String]
   val sourceSecurityGroup: java.lang.String
   val sourceSecurityGroupId: java.lang.String
@@ -38,12 +39,13 @@ object GetLoadBalancerResult {
     connectionDrainingTimeout: scala.Double,
     crossZoneLoadBalancing: scala.Boolean,
     dnsName: java.lang.String,
-    healthCheck: atPulumiAwsLib.Anon_HealthyThresholdIntervalTarget,
+    healthCheck: atPulumiAwsLib.Anon_HealthyThresholdInterval,
     id: java.lang.String,
     idleTimeout: scala.Double,
     instances: js.Array[java.lang.String],
     internal: scala.Boolean,
     listeners: js.Array[atPulumiAwsLib.Anon_InstancePort],
+    name: java.lang.String,
     securityGroups: js.Array[java.lang.String],
     sourceSecurityGroup: java.lang.String,
     sourceSecurityGroupId: java.lang.String,
@@ -51,7 +53,7 @@ object GetLoadBalancerResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     zoneId: java.lang.String
   ): GetLoadBalancerResult = {
-    val __obj = js.Dynamic.literal(accessLogs = accessLogs, availabilityZones = availabilityZones, connectionDraining = connectionDraining, connectionDrainingTimeout = connectionDrainingTimeout, crossZoneLoadBalancing = crossZoneLoadBalancing, dnsName = dnsName, healthCheck = healthCheck, id = id, idleTimeout = idleTimeout, instances = instances, internal = internal, listeners = listeners, securityGroups = securityGroups, sourceSecurityGroup = sourceSecurityGroup, sourceSecurityGroupId = sourceSecurityGroupId, subnets = subnets, tags = tags, zoneId = zoneId)
+    val __obj = js.Dynamic.literal(accessLogs = accessLogs, availabilityZones = availabilityZones, connectionDraining = connectionDraining, connectionDrainingTimeout = connectionDrainingTimeout, crossZoneLoadBalancing = crossZoneLoadBalancing, dnsName = dnsName, healthCheck = healthCheck, id = id, idleTimeout = idleTimeout, instances = instances, internal = internal, listeners = listeners, name = name, securityGroups = securityGroups, sourceSecurityGroup = sourceSecurityGroup, sourceSecurityGroupId = sourceSecurityGroupId, subnets = subnets, tags = tags, zoneId = zoneId)
   
     __obj.asInstanceOf[GetLoadBalancerResult]
   }

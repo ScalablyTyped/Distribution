@@ -36,26 +36,56 @@ trait Connection extends EscapeFunctions {
   def createQuery(options: QueryOptions): Query = js.native
   def createQuery(options: QueryOptions, callback: queryCallback): Query = js.native
   def createQuery(query: Query): Query = js.native
+  /**
+    * Close the connection immediately, without waiting for any queued data (eg
+    * queries) to be sent. No further events or callbacks will be triggered.
+    */
   def destroy(): scala.Unit = js.native
+  /**
+    * Close the connection. Any queued data (eg queries) will be sent first. If
+    * there are any fatal errors, the connection will be immediately closed.
+    * @param callback Handler for any fatal error
+    */
   def end(): scala.Unit = js.native
   def end(callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def end(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
-  def on(ev: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  /**
+    * Set handler to be run on a certain event.
+    */
+  def on(ev: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Connection = js.native
   @JSName("on")
   def on_connect(ev: mysqlLib.mysqlLibStrings.connect, callback: js.Function0[scala.Unit]): Connection = js.native
   @JSName("on")
   def on_drain(ev: mysqlLib.mysqlLibStrings.drain, callback: js.Function0[scala.Unit]): Connection = js.native
+  /**
+    * Set handler to be run when the connection is closed.
+    */
   @JSName("on")
   def on_end(
     ev: mysqlLib.mysqlLibStrings.end,
     callback: js.Function1[/* err */ js.UndefOr[MysqlError], scala.Unit]
   ): Connection = js.native
+  /**
+    * Set handler to be run when a callback has been queued to wait for an
+    * available connection.
+    */
+  // tslint:disable-next-line:unified-signatures
   @JSName("on")
-  def on_enqueue(ev: mysqlLib.mysqlLibStrings.enqueue, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Connection = js.native
+  def on_enqueue(
+    ev: mysqlLib.mysqlLibStrings.enqueue,
+    callback: js.Function1[/* err */ js.UndefOr[MysqlError], scala.Unit]
+  ): Connection = js.native
+  /**
+    * Set handler to be run when a a fatal error occurs.
+    */
   @JSName("on")
   def on_error(ev: mysqlLib.mysqlLibStrings.error, callback: js.Function1[/* err */ MysqlError, scala.Unit]): Connection = js.native
   @JSName("on")
   def on_fields(ev: mysqlLib.mysqlLibStrings.fields, callback: js.Function1[/* fields */ js.Array[_], scala.Unit]): Connection = js.native
+  /**
+    * Pause the connection. No more 'result' events will fire until resume() is
+    * called.
+    */
   def pause(): scala.Unit = js.native
   def ping(): scala.Unit = js.native
   def ping(callback: js.Function1[/* err */ MysqlError, scala.Unit]): scala.Unit = js.native
@@ -68,6 +98,9 @@ trait Connection extends EscapeFunctions {
   def query(options: QueryOptions): Query = js.native
   def query(options: QueryOptions, callback: queryCallback): Query = js.native
   def query(query: Query): Query = js.native
+  /**
+    * Resume the connection.
+    */
   def resume(): scala.Unit = js.native
   def rollback(): scala.Unit = js.native
   def rollback(callback: js.Function1[/* err */ MysqlError, scala.Unit]): scala.Unit = js.native

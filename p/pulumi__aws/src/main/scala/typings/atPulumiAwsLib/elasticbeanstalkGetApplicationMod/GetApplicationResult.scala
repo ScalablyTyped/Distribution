@@ -19,6 +19,7 @@ trait GetApplicationResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
 }
 
 object GetApplicationResult {
@@ -27,9 +28,10 @@ object GetApplicationResult {
     appversionLifecycle: atPulumiAwsLib.Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount,
     arn: java.lang.String,
     description: java.lang.String,
-    id: java.lang.String
+    id: java.lang.String,
+    name: java.lang.String
   ): GetApplicationResult = {
-    val __obj = js.Dynamic.literal(appversionLifecycle = appversionLifecycle, arn = arn, description = description, id = id)
+    val __obj = js.Dynamic.literal(appversionLifecycle = appversionLifecycle, arn = arn, description = description, id = id, name = name)
   
     __obj.asInstanceOf[GetApplicationResult]
   }

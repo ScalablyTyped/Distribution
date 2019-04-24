@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ClusterArgs extends js.Object {
   /**
+    * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
+    */
+  val enabledClusterLogTypes: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  ] = js.undefined
+  /**
     * Name of the cluster.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -29,10 +35,12 @@ object ClusterArgs {
   def apply(
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccess],
+    enabledClusterLogTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ClusterArgs = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], vpcConfig = vpcConfig.asInstanceOf[js.Any])
+    if (enabledClusterLogTypes != null) __obj.updateDynamic("enabledClusterLogTypes")(enabledClusterLogTypes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterArgs]

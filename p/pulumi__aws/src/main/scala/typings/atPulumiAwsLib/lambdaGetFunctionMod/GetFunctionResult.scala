@@ -22,6 +22,7 @@ trait GetFunctionResult extends js.Object {
     * The Lambda environment's configuration settings.
     */
   val environment: atPulumiAwsLib.Anon_KeyVariablesString
+  val functionName: java.lang.String
   /**
     * The function entrypoint in your code.
     */
@@ -54,6 +55,7 @@ trait GetFunctionResult extends js.Object {
     * Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
     */
   val qualifiedArn: java.lang.String
+  val qualifier: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
     */
@@ -100,6 +102,7 @@ object GetFunctionResult {
     deadLetterConfig: atPulumiAwsLib.Anon_TargetArn,
     description: java.lang.String,
     environment: atPulumiAwsLib.Anon_KeyVariablesString,
+    functionName: java.lang.String,
     handler: java.lang.String,
     id: java.lang.String,
     invokeArn: java.lang.String,
@@ -117,10 +120,11 @@ object GetFunctionResult {
     timeout: scala.Double,
     tracingConfig: atPulumiAwsLib.Anon_Mode,
     version: java.lang.String,
-    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds
+    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds,
+    qualifier: java.lang.String = null
   ): GetFunctionResult = {
-    val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, tags = tags, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
-  
+    val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, functionName = functionName, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, tags = tags, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
+    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier)
     __obj.asInstanceOf[GetFunctionResult]
   }
 }

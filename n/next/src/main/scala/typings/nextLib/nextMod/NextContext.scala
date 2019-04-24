@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * @template Q Query object schema.
   */
-trait NextContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends js.Object {
+trait NextContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */, CustomReq] extends js.Object {
   /** String of the actual path (including the query) shows in the browser */
   var asPath: java.lang.String
   /** Error object if any error is encountered during the rendering */
@@ -25,28 +25,28 @@ trait NextContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends j
   /** query string section of URL parsed as an object */
   var query: Q
   /** HTTP request object (server only) */
-  var req: js.UndefOr[nodeLib.httpMod.IncomingMessage] = js.undefined
+  var req: js.UndefOr[nodeLib.httpMod.IncomingMessage with CustomReq] = js.undefined
   /** HTTP response object (server only) */
   var res: js.UndefOr[nodeLib.httpMod.ServerResponse] = js.undefined
 }
 
 object NextContext {
   @scala.inline
-  def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */](
+  def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */, CustomReq](
     asPath: java.lang.String,
     pathname: java.lang.String,
     query: Q,
     err: stdLib.Error = null,
     jsonPageRes: nodeDashFetchLib.nodeDashFetchMod.Response = null,
-    req: nodeLib.httpMod.IncomingMessage = null,
+    req: nodeLib.httpMod.IncomingMessage with CustomReq = null,
     res: nodeLib.httpMod.ServerResponse = null
-  ): NextContext[Q] = {
+  ): NextContext[Q, CustomReq] = {
     val __obj = js.Dynamic.literal(asPath = asPath, pathname = pathname, query = query.asInstanceOf[js.Any])
     if (err != null) __obj.updateDynamic("err")(err)
     if (jsonPageRes != null) __obj.updateDynamic("jsonPageRes")(jsonPageRes)
     if (req != null) __obj.updateDynamic("req")(req)
     if (res != null) __obj.updateDynamic("res")(res)
-    __obj.asInstanceOf[NextContext[Q]]
+    __obj.asInstanceOf[NextContext[Q, CustomReq]]
   }
 }
 

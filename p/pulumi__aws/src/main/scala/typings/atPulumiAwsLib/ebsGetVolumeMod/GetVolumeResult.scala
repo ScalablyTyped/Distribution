@@ -18,6 +18,7 @@ trait GetVolumeResult extends js.Object {
     * Whether the disk is encrypted.
     */
   val encrypted: scala.Boolean
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -30,6 +31,7 @@ trait GetVolumeResult extends js.Object {
     * The ARN for the KMS encryption key.
     */
   val kmsKeyId: java.lang.String
+  val mostRecent: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The size of the drive in GiBs.
     */
@@ -65,10 +67,13 @@ object GetVolumeResult {
     snapshotId: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     volumeId: java.lang.String,
-    volumeType: java.lang.String
+    volumeType: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined
   ): GetVolumeResult = {
     val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, encrypted = encrypted, id = id, iops = iops, kmsKeyId = kmsKeyId, size = size, snapshotId = snapshotId, tags = tags, volumeId = volumeId, volumeType = volumeType)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
     __obj.asInstanceOf[GetVolumeResult]
   }
 }

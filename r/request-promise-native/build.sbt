@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "request-promise-native"
-version := "1.0-dt-20190412Z-e2f206"
+version := "1.0-dt-20190423Z-c0b850"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,13 +14,14 @@ trait GetServiceAccountResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val region: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object GetServiceAccountResult {
   @scala.inline
-  def apply(arn: java.lang.String, id: java.lang.String): GetServiceAccountResult = {
+  def apply(arn: java.lang.String, id: java.lang.String, region: java.lang.String = null): GetServiceAccountResult = {
     val __obj = js.Dynamic.literal(arn = arn, id = id)
-  
+    if (region != null) __obj.updateDynamic("region")(region)
     __obj.asInstanceOf[GetServiceAccountResult]
   }
 }

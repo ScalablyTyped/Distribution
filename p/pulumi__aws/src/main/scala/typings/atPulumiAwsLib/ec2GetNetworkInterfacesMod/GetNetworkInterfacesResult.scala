@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetNetworkInterfacesResult extends js.Object {
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -22,10 +23,11 @@ object GetNetworkInterfacesResult {
   def apply(
     id: java.lang.String,
     ids: js.Array[java.lang.String],
-    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetNetworkInterfacesResult = {
     val __obj = js.Dynamic.literal(id = id, ids = ids, tags = tags)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetNetworkInterfacesResult]
   }
 }

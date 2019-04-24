@@ -35,16 +35,20 @@ object CustomResourceGetOptions {
     dependsOn: (atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource]]
     ]) | atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource] = null,
+    ignoreChanges: js.Array[java.lang.String] = null,
     parent: atPulumiPulumiLib.resourceMod.Resource = null,
     protect: js.UndefOr[scala.Boolean] = js.undefined,
-    provider: atPulumiPulumiLib.resourceMod.ProviderResource = null
+    provider: atPulumiPulumiLib.resourceMod.ProviderResource = null,
+    version: java.lang.String = null
   ): CustomResourceGetOptions = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
+    if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
     if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[CustomResourceGetOptions]
   }
 }

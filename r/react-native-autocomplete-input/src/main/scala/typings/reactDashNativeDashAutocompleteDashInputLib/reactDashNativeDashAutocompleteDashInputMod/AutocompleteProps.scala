@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   /**
     * array
-    * An array with suggestion items to be rendered in renderItem(item). Any array with length > 0 will open the suggestion list and any array with length < 1 will hide the list.
+    * An array with suggestion items to be rendered in renderItem({ item, index }). Any array with length > 0 will open the suggestion list and any array with length < 1 will hide the list.
     */
   var data: js.Array[T]
   /**
@@ -79,14 +79,14 @@ import scala.scalajs.js.annotation._
     * function
     * renderItem will be called to render the data objects which will be displayed in the result view below the text input.
     */
-  def renderItem(item: T): reactLib.reactMod.ReactNode
+  def renderItem(itemWithIndex: reactDashNativeDashAutocompleteDashInputLib.Anon_Index[T]): reactLib.reactMod.ReactNode
 }
 
 object AutocompleteProps {
   @scala.inline
   def apply[T](
     data: js.Array[T],
-    renderItem: T => reactLib.reactMod.ReactNode,
+    renderItem: reactDashNativeDashAutocompleteDashInputLib.Anon_Index[T] => reactLib.reactMod.ReactNode,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     hideResults: js.UndefOr[scala.Boolean] = js.undefined,
     inputContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,

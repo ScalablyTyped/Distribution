@@ -203,7 +203,7 @@ class Question protected ()
     */
   val visibleIndex: scala.Double = js.native
   /**
-    * Use it to set the specific width to the question.
+    * Use it to set the specific width to the question like css style (%, px, em etc).
     */
   var width: java.lang.String = js.native
   def addConditionNames(names: js.Array[java.lang.String]): scala.Unit = js.native
@@ -213,6 +213,10 @@ class Question protected ()
     * @param error
     */
   def addError(error: SurveyError): scala.Unit = js.native
+  /**
+    * Call this function to clear all errors in the question
+    */
+  def clearErrors(): scala.Unit = js.native
   /**
     * Call this function to remove values from the current question, that end-user will not be able to enter.
     * For example the value that doesn't exists in a radigroup/dropdown/checkbox choices or matrix rows/columns.

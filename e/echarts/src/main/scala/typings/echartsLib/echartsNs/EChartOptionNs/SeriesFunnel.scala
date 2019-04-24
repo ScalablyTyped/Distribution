@@ -243,7 +243,7 @@ trait SeriesFunnel extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markArea
     */
   var markArea: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -252,7 +252,7 @@ trait SeriesFunnel extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markLine
     */
   var markLine: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -260,7 +260,9 @@ trait SeriesFunnel extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * The specified maximum value.
     *
@@ -389,9 +391,9 @@ object SeriesFunnel {
     label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     labelLine: echartsLib.Anon_EmphasisLength = null,
     legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
-    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
-    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     max: scala.Int | scala.Double = null,
     maxSize: java.lang.String = null,
     min: scala.Int | scala.Double = null,

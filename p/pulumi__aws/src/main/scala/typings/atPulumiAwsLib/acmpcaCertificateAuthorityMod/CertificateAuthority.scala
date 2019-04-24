@@ -51,6 +51,10 @@ class CertificateAuthority protected ()
     */
   val notBefore: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The number of days to make a CA restorable after it has been deleted, must be between 7 to 30 days, with default to 30 days.
+    */
+  val permanentDeletionTimeInDays: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
+  /**
     * Nested argument containing revocation configuration. Defined below.
     */
   val revocationConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CrlConfiguration]] = js.native

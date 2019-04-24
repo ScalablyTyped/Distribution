@@ -16,7 +16,7 @@ trait SizeConstraintSetState extends js.Object {
   val sizeConstraints: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatch]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatchSize]
       ]
     ]
   ] = js.undefined
@@ -28,7 +28,7 @@ object SizeConstraintSetState {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sizeConstraints: atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatch]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatchSize]
       ]
     ] = null
   ): SizeConstraintSetState = {

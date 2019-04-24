@@ -13,7 +13,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animation
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animation
     */
   var animation: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -23,14 +23,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDelay
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | scala.Double] = js.native
   /**
@@ -39,7 +39,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
@@ -48,31 +48,31 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * prefix
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDelayUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.native
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDuration
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | scala.Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationDurationUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.native
   /**
@@ -84,7 +84,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationEasing
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationEasing
     */
   var animationEasing: js.UndefOr[java.lang.String] = js.native
   /**
@@ -93,7 +93,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationEasingUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[java.lang.String] = js.native
   /**
@@ -104,7 +104,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.animationThreshold
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.animationThreshold
     */
   var animationThreshold: js.UndefOr[scala.Double] = js.native
   /**
@@ -112,34 +112,48 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * Here are some ways to assign mark point position.
     *
     * 1. Assign coordinate according to container with
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.x)
+    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data.y)
+    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.y)
     * attribute, in which pixel values and percentage are supported.
+    *
+    * 2. Assign coordinate position with
+    * [coord](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.coord)
+    * attribute, in which `'min'`, `'max'`, `'average'` are supported
+    * for each dimension.
+    *
+    * 3. Use
+    * [type](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.type)
+    * attribute to mark the maximum and minimum values in the series,
+    * in which
+    * [valueIndex](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.valueIndex)
+    * or
+    * [valueDim](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data.valueDim)
+    * can be used to assign the dimension.
     *
     * When multiple attributes exist, priority is as the above
     * order.
     *
     * **For example:**
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.data
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.data
     */
-  var data: js.UndefOr[Anon_ItemStyleLabelName] = js.native
+  var data: js.UndefOr[Anon_Coord] = js.native
   /**
     * Mark point style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.itemStyle
     */
   var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.native
   /**
     * Label of mark point.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.label
     */
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.native
   /**
@@ -148,7 +162,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.silent
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.silent
     */
   var silent: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -170,7 +184,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * A `dataURI` example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     * Icons can be set to arbitrary vector path via `'path://'`
     * in ECharts.
@@ -185,19 +199,19 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markPoint)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.scatter.markPoint)
     *
     *
     * @default
     * "pin"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbol
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbol
     */
   var symbol: js.UndefOr[java.lang.String] = js.native
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolKeepAspect
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolKeepAspect
     */
   var symbolKeepAspect: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -219,7 +233,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * [0, 0]
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolOffset
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolOffset
     */
   var symbolOffset: js.UndefOr[js.Array[_]] = js.native
   /**
@@ -229,7 +243,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     * tangent angle.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolRotate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolRotate
     */
   var symbolRotate: js.UndefOr[scala.Double] = js.native
   /**
@@ -255,7 +269,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration extends 
     *
     * @default
     * 50
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint.symbolSize
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.symbolSize
     */
   var symbolSize: js.UndefOr[js.Array[_] | js.Function | scala.Double] = js.native
 }

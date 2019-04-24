@@ -49,7 +49,7 @@ class LoadBalancer protected ()
   /**
     * A health_check block. Health Check documented below.
     */
-  val healthCheck: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_HealthyThresholdIntervalTarget] = js.native
+  val healthCheck: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_HealthyThresholdInterval] = js.native
   /**
     * The time in seconds that the connection is allowed to be idle. Default: `60`
     */

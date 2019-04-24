@@ -38,6 +38,11 @@ trait GetTransitGatewayResult extends js.Object {
     * Whether DNS support is enabled.
     */
   val dnsSupport: java.lang.String
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
+  /**
+    * EC2 Transit Gateway identifier
+    */
+  val id: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Identifier of the AWS account that owns the EC2 Transit Gateway
     */
@@ -70,10 +75,13 @@ object GetTransitGatewayResult {
     ownerId: java.lang.String,
     propagationDefaultRouteTableId: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    vpnEcmpSupport: java.lang.String
+    vpnEcmpSupport: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null
   ): GetTransitGatewayResult = {
     val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, arn = arn, associationDefaultRouteTableId = associationDefaultRouteTableId, autoAcceptSharedAttachments = autoAcceptSharedAttachments, defaultRouteTableAssociation = defaultRouteTableAssociation, defaultRouteTablePropagation = defaultRouteTablePropagation, description = description, dnsSupport = dnsSupport, ownerId = ownerId, propagationDefaultRouteTableId = propagationDefaultRouteTableId, tags = tags, vpnEcmpSupport = vpnEcmpSupport)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[GetTransitGatewayResult]
   }
 }

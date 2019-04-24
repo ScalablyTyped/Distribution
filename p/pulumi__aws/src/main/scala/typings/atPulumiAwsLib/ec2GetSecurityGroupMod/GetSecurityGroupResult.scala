@@ -14,6 +14,7 @@ trait GetSecurityGroupResult extends js.Object {
     * The description of the security group.
     */
   val description: java.lang.String
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   val id: java.lang.String
   val name: java.lang.String
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -28,10 +29,11 @@ object GetSecurityGroupResult {
     id: java.lang.String,
     name: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    vpcId: java.lang.String
+    vpcId: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetSecurityGroupResult = {
     val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, name = name, tags = tags, vpcId = vpcId)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetSecurityGroupResult]
   }
 }

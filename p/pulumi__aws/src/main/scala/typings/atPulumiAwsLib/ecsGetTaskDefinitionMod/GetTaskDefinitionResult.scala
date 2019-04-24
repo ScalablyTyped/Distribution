@@ -26,6 +26,7 @@ trait GetTaskDefinitionResult extends js.Object {
     * The status of this task definition
     */
   val status: java.lang.String
+  val taskDefinition: java.lang.String
   /**
     * The ARN of the IAM role that containers in this task can assume
     */
@@ -40,9 +41,10 @@ object GetTaskDefinitionResult {
     networkMode: java.lang.String,
     revision: scala.Double,
     status: java.lang.String,
+    taskDefinition: java.lang.String,
     taskRoleArn: java.lang.String
   ): GetTaskDefinitionResult = {
-    val __obj = js.Dynamic.literal(family = family, id = id, networkMode = networkMode, revision = revision, status = status, taskRoleArn = taskRoleArn)
+    val __obj = js.Dynamic.literal(family = family, id = id, networkMode = networkMode, revision = revision, status = status, taskDefinition = taskDefinition, taskRoleArn = taskRoleArn)
   
     __obj.asInstanceOf[GetTaskDefinitionResult]
   }

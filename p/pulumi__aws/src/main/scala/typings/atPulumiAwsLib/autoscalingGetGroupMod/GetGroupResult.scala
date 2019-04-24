@@ -47,6 +47,10 @@ trait GetGroupResult extends js.Object {
     * The minimum size of the group.
     */
   val minSize: scala.Double
+  /**
+    * The name of the Auto Scaling group.
+    */
+  val name: java.lang.String
   val newInstancesProtectedFromScaleIn: scala.Boolean
   /**
     * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups (http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the Amazon Elastic Compute Cloud User Guide.
@@ -88,6 +92,7 @@ object GetGroupResult {
     loadBalancers: js.Array[java.lang.String],
     maxSize: scala.Double,
     minSize: scala.Double,
+    name: java.lang.String,
     newInstancesProtectedFromScaleIn: scala.Boolean,
     placementGroup: java.lang.String,
     serviceLinkedRoleArn: java.lang.String,
@@ -96,7 +101,7 @@ object GetGroupResult {
     terminationPolicies: js.Array[java.lang.String],
     vpcZoneIdentifier: java.lang.String
   ): GetGroupResult = {
-    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, defaultCooldown = defaultCooldown, desiredCapacity = desiredCapacity, healthCheckGracePeriod = healthCheckGracePeriod, healthCheckType = healthCheckType, id = id, launchConfiguration = launchConfiguration, loadBalancers = loadBalancers, maxSize = maxSize, minSize = minSize, newInstancesProtectedFromScaleIn = newInstancesProtectedFromScaleIn, placementGroup = placementGroup, serviceLinkedRoleArn = serviceLinkedRoleArn, status = status, targetGroupArns = targetGroupArns, terminationPolicies = terminationPolicies, vpcZoneIdentifier = vpcZoneIdentifier)
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, defaultCooldown = defaultCooldown, desiredCapacity = desiredCapacity, healthCheckGracePeriod = healthCheckGracePeriod, healthCheckType = healthCheckType, id = id, launchConfiguration = launchConfiguration, loadBalancers = loadBalancers, maxSize = maxSize, minSize = minSize, name = name, newInstancesProtectedFromScaleIn = newInstancesProtectedFromScaleIn, placementGroup = placementGroup, serviceLinkedRoleArn = serviceLinkedRoleArn, status = status, targetGroupArns = targetGroupArns, terminationPolicies = terminationPolicies, vpcZoneIdentifier = vpcZoneIdentifier)
   
     __obj.asInstanceOf[GetGroupResult]
   }

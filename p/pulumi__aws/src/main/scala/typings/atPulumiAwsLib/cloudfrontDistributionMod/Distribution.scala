@@ -152,6 +152,12 @@ class Distribution protected ()
     */
   val viewerCertificate: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AcmCertificateArn] = js.native
   /**
+    * If enabled, the resource will wait for
+    * the distribution status to change from `InProgress` to `Deployed`. Setting
+    * this to`false` will skip the process. Default: `true`.
+    */
+  val waitForDeployment: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
     * If you're using AWS WAF to filter CloudFront
     * requests, the Id of the AWS WAF web ACL that is associated with the
     * distribution.

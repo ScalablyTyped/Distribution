@@ -17,6 +17,7 @@ trait GetRouteResult extends js.Object {
   val instanceId: java.lang.String
   val natGatewayId: java.lang.String
   val networkInterfaceId: java.lang.String
+  val routeTableId: java.lang.String
   val transitGatewayId: java.lang.String
   val vpcPeeringConnectionId: java.lang.String
 }
@@ -32,10 +33,11 @@ object GetRouteResult {
     instanceId: java.lang.String,
     natGatewayId: java.lang.String,
     networkInterfaceId: java.lang.String,
+    routeTableId: java.lang.String,
     transitGatewayId: java.lang.String,
     vpcPeeringConnectionId: java.lang.String
   ): GetRouteResult = {
-    val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock, destinationIpv6CidrBlock = destinationIpv6CidrBlock, egressOnlyGatewayId = egressOnlyGatewayId, gatewayId = gatewayId, id = id, instanceId = instanceId, natGatewayId = natGatewayId, networkInterfaceId = networkInterfaceId, transitGatewayId = transitGatewayId, vpcPeeringConnectionId = vpcPeeringConnectionId)
+    val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock, destinationIpv6CidrBlock = destinationIpv6CidrBlock, egressOnlyGatewayId = egressOnlyGatewayId, gatewayId = gatewayId, id = id, instanceId = instanceId, natGatewayId = natGatewayId, networkInterfaceId = networkInterfaceId, routeTableId = routeTableId, transitGatewayId = transitGatewayId, vpcPeeringConnectionId = vpcPeeringConnectionId)
   
     __obj.asInstanceOf[GetRouteResult]
   }

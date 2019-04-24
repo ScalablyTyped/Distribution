@@ -14,6 +14,7 @@ trait GetExportResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
   /**
     * The value from Cloudformation export identified by the export name found from [list-exports](http://docs.aws.amazon.com/cli/latest/reference/cloudformation/list-exports.html)
     */
@@ -22,8 +23,13 @@ trait GetExportResult extends js.Object {
 
 object GetExportResult {
   @scala.inline
-  def apply(exportingStackId: java.lang.String, id: java.lang.String, value: java.lang.String): GetExportResult = {
-    val __obj = js.Dynamic.literal(exportingStackId = exportingStackId, id = id, value = value)
+  def apply(
+    exportingStackId: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    value: java.lang.String
+  ): GetExportResult = {
+    val __obj = js.Dynamic.literal(exportingStackId = exportingStackId, id = id, name = name, value = value)
   
     __obj.asInstanceOf[GetExportResult]
   }

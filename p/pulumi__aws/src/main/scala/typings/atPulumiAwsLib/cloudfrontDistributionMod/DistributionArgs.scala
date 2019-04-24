@@ -118,6 +118,12 @@ trait DistributionArgs extends js.Object {
     */
   val viewerCertificate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmCertificateArnCloudfrontDefaultCertificate]
   /**
+    * If enabled, the resource will wait for
+    * the distribution status to change from `InProgress` to `Deployed`. Setting
+    * this to`false` will skip the process. Default: `true`.
+    */
+  val waitForDeployment: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  /**
     * If you're using AWS WAF to filter CloudFront
     * requests, the Id of the AWS WAF web ACL that is associated with the
     * distribution.
@@ -159,6 +165,7 @@ object DistributionArgs {
     priceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     retainOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    waitForDeployment: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     webAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DistributionArgs = {
     val __obj = js.Dynamic.literal(defaultCacheBehavior = defaultCacheBehavior.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], viewerCertificate = viewerCertificate.asInstanceOf[js.Any])
@@ -174,6 +181,7 @@ object DistributionArgs {
     if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
     if (retainOnDelete != null) __obj.updateDynamic("retainOnDelete")(retainOnDelete.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (waitForDeployment != null) __obj.updateDynamic("waitForDeployment")(waitForDeployment.asInstanceOf[js.Any])
     if (webAclId != null) __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionArgs]
   }

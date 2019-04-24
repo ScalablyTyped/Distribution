@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ldclient-js"
-version := "2.10.0-1fff87"
+version := "2.10.1-14788e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "ldclient-js-common" % "2.10.0-4f0bef",
+  "org.scalablytyped" %%% "ldclient-js-common" % "2.10.1-4f0bef",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

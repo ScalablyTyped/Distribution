@@ -326,7 +326,7 @@ trait SeriesPie extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea
     */
   var markArea: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -335,7 +335,7 @@ trait SeriesPie extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine
     */
   var markLine: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -343,7 +343,9 @@ trait SeriesPie extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * The minimum angle of sector (0 ~ 360).
     * It prevents some sector from being too small when value is small,
@@ -541,9 +543,9 @@ object SeriesPie {
     label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatterHeight = null,
     labelLine: echartsLib.Anon_EmphasisLengthLength2 = null,
     legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
-    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
-    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     minAngle: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     radius: js.Array[_] | scala.Double | java.lang.String = null,

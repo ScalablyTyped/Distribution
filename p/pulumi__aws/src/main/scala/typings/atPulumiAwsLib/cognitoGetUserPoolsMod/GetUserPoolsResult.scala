@@ -15,12 +15,18 @@ trait GetUserPoolsResult extends js.Object {
     * The list of cognito user pool ids.
     */
   val ids: js.Array[java.lang.String]
+  val name: java.lang.String
 }
 
 object GetUserPoolsResult {
   @scala.inline
-  def apply(arns: js.Array[java.lang.String], id: java.lang.String, ids: js.Array[java.lang.String]): GetUserPoolsResult = {
-    val __obj = js.Dynamic.literal(arns = arns, id = id, ids = ids)
+  def apply(
+    arns: js.Array[java.lang.String],
+    id: java.lang.String,
+    ids: js.Array[java.lang.String],
+    name: java.lang.String
+  ): GetUserPoolsResult = {
+    val __obj = js.Dynamic.literal(arns = arns, id = id, ids = ids, name = name)
   
     __obj.asInstanceOf[GetUserPoolsResult]
   }

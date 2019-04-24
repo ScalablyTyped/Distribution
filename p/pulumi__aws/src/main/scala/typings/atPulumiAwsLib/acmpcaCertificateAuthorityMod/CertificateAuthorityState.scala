@@ -41,6 +41,10 @@ trait CertificateAuthorityState extends js.Object {
     */
   val notBefore: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The number of days to make a CA restorable after it has been deleted, must be between 7 to 30 days, with default to 30 days.
+    */
+  val permanentDeletionTimeInDays: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+  /**
     * Nested argument containing revocation configuration. Defined below.
     */
   val revocationConfiguration: js.UndefOr[
@@ -75,6 +79,7 @@ object CertificateAuthorityState {
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     notAfter: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     notBefore: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    permanentDeletionTimeInDays: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     revocationConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CrlConfigurationAnonCustomCnameEnabled] = null,
     serial: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -90,6 +95,7 @@ object CertificateAuthorityState {
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter.asInstanceOf[js.Any])
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
+    if (permanentDeletionTimeInDays != null) __obj.updateDynamic("permanentDeletionTimeInDays")(permanentDeletionTimeInDays.asInstanceOf[js.Any])
     if (revocationConfiguration != null) __obj.updateDynamic("revocationConfiguration")(revocationConfiguration.asInstanceOf[js.Any])
     if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

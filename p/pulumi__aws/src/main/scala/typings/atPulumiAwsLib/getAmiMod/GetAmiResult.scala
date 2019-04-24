@@ -37,6 +37,8 @@ trait GetAmiResult extends js.Object {
     * creation.
     */
   val description: java.lang.String
+  val executableUsers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * The hypervisor type of the image.
     */
@@ -67,14 +69,17 @@ trait GetAmiResult extends js.Object {
     * for machine images.
     */
   val kernelId: java.lang.String
+  val mostRecent: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The name of the AMI that was provided during image creation.
     */
   val name: java.lang.String
+  val nameRegex: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The AWS account ID of the image owner.
     */
   val ownerId: java.lang.String
+  val owners: js.Array[java.lang.String]
   /**
     * The value is Windows for `Windows` AMIs; otherwise blank.
     */
@@ -151,6 +156,7 @@ object GetAmiResult {
     kernelId: java.lang.String,
     name: java.lang.String,
     ownerId: java.lang.String,
+    owners: js.Array[java.lang.String],
     platform: java.lang.String,
     productCodes: js.Array[atPulumiAwsLib.Anon_ProductCodeId],
     public: scala.Boolean,
@@ -162,10 +168,17 @@ object GetAmiResult {
     state: java.lang.String,
     stateReason: org.scalablytyped.runtime.StringDictionary[js.Any],
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
-    virtualizationType: java.lang.String
+    virtualizationType: java.lang.String,
+    executableUsers: js.Array[java.lang.String] = null,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    nameRegex: java.lang.String = null
   ): GetAmiResult = {
-    val __obj = js.Dynamic.literal(architecture = architecture, blockDeviceMappings = blockDeviceMappings, creationDate = creationDate, description = description, hypervisor = hypervisor, id = id, imageId = imageId, imageLocation = imageLocation, imageOwnerAlias = imageOwnerAlias, imageType = imageType, kernelId = kernelId, name = name, ownerId = ownerId, platform = platform, productCodes = productCodes, public = public, ramdiskId = ramdiskId, rootDeviceName = rootDeviceName, rootDeviceType = rootDeviceType, rootSnapshotId = rootSnapshotId, sriovNetSupport = sriovNetSupport, state = state, stateReason = stateReason, tags = tags, virtualizationType = virtualizationType)
-  
+    val __obj = js.Dynamic.literal(architecture = architecture, blockDeviceMappings = blockDeviceMappings, creationDate = creationDate, description = description, hypervisor = hypervisor, id = id, imageId = imageId, imageLocation = imageLocation, imageOwnerAlias = imageOwnerAlias, imageType = imageType, kernelId = kernelId, name = name, ownerId = ownerId, owners = owners, platform = platform, productCodes = productCodes, public = public, ramdiskId = ramdiskId, rootDeviceName = rootDeviceName, rootDeviceType = rootDeviceType, rootSnapshotId = rootSnapshotId, sriovNetSupport = sriovNetSupport, state = state, stateReason = stateReason, tags = tags, virtualizationType = virtualizationType)
+    if (executableUsers != null) __obj.updateDynamic("executableUsers")(executableUsers)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (nameRegex != null) __obj.updateDynamic("nameRegex")(nameRegex)
     __obj.asInstanceOf[GetAmiResult]
   }
 }

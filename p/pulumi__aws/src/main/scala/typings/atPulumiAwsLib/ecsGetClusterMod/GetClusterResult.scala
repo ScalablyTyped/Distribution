@@ -10,6 +10,7 @@ trait GetClusterResult extends js.Object {
     * The ARN of the ECS Cluster
     */
   val arn: java.lang.String
+  val clusterName: java.lang.String
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -36,13 +37,14 @@ object GetClusterResult {
   @scala.inline
   def apply(
     arn: java.lang.String,
+    clusterName: java.lang.String,
     id: java.lang.String,
     pendingTasksCount: scala.Double,
     registeredContainerInstancesCount: scala.Double,
     runningTasksCount: scala.Double,
     status: java.lang.String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, id = id, pendingTasksCount = pendingTasksCount, registeredContainerInstancesCount = registeredContainerInstancesCount, runningTasksCount = runningTasksCount, status = status)
+    val __obj = js.Dynamic.literal(arn = arn, clusterName = clusterName, id = id, pendingTasksCount = pendingTasksCount, registeredContainerInstancesCount = registeredContainerInstancesCount, runningTasksCount = runningTasksCount, status = status)
   
     __obj.asInstanceOf[GetClusterResult]
   }

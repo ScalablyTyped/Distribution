@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 object nextLibComponents {
   @scala.inline
   def App[P, S]: reactLib.reactMod.ComponentType[
-    P with nextLib.appMod.DefaultAppIProps with nextLib.appMod.AppProps[nextDashServerLib.routerMod.DefaultQuery]
+    P with nextLib.appMod.DefaultAppIProps with (nextLib.appMod.AppProps[nextDashServerLib.routerMod.DefaultQuery, js.Object])
   ] = js.constructorOf[nextLib.appMod.default[P, S]].asInstanceOf[reactLib.reactMod.ComponentType[
-  P with nextLib.appMod.DefaultAppIProps with nextLib.appMod.AppProps[nextDashServerLib.routerMod.DefaultQuery]]]
+  P with nextLib.appMod.DefaultAppIProps with (nextLib.appMod.AppProps[nextDashServerLib.routerMod.DefaultQuery, js.Object])]]
   @scala.inline
   def Container: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[nextLib.appMod.Container].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
   @scala.inline

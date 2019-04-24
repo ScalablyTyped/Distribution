@@ -16,14 +16,14 @@ trait RecordArgs extends js.Object {
     ]
   ] = js.undefined
   /**
-    * Allow creation of this record in Terraform to overwrite an existing record, if any. This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual Route 53 changes outside Terraform from overwriting this record. `false` by default. The next major version of the Terraform AWS Provider will always require importing existing Route 53 Records.
+    * Allow creation of this record in Terraform to overwrite an existing record, if any. This does not affect the ability to update the record in Terraform and does not prevent other resources within Terraform or manual Route 53 changes outside Terraform from overwriting this record. `false` by default. This configuration is not recommended for most environments.
     */
   val allowOverwrite: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
     */
   val failoverRoutingPolicies: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]]]
   ] = js.undefined
   /**
     * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
@@ -90,7 +90,7 @@ object RecordArgs {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EvaluateTargetHealthName]]
     ] = null,
     allowOverwrite: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    failoverRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]]] = null,
+    failoverRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]]] = null,
     geolocationRoutingPolicies: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ContinentCountry]]
     ] = null,

@@ -13,6 +13,7 @@ trait GetCredentialsResult extends js.Object {
     */
   val id: java.lang.String
   val proxyEndpoint: java.lang.String
+  val registryId: java.lang.String
 }
 
 object GetCredentialsResult {
@@ -21,9 +22,10 @@ object GetCredentialsResult {
     authorizationToken: java.lang.String,
     expiresAt: java.lang.String,
     id: java.lang.String,
-    proxyEndpoint: java.lang.String
+    proxyEndpoint: java.lang.String,
+    registryId: java.lang.String
   ): GetCredentialsResult = {
-    val __obj = js.Dynamic.literal(authorizationToken = authorizationToken, expiresAt = expiresAt, id = id, proxyEndpoint = proxyEndpoint)
+    val __obj = js.Dynamic.literal(authorizationToken = authorizationToken, expiresAt = expiresAt, id = id, proxyEndpoint = proxyEndpoint, registryId = registryId)
   
     __obj.asInstanceOf[GetCredentialsResult]
   }

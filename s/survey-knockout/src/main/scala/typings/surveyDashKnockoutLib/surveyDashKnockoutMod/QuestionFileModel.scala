@@ -14,6 +14,10 @@ class QuestionFileModel protected () extends Question {
     */
   var acceptedTypes: java.lang.String = js.native
   /**
+    * Set it to false if you want to disable images preview.
+    */
+  var allowImagesPreview: scala.Boolean = js.native
+  /**
     * Set it to true, to allow select multiple files.
     */
   var allowMultiple: scala.Boolean = js.native

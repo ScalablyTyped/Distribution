@@ -291,7 +291,7 @@ trait SeriesBoxplot extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-boxplot.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -399,7 +399,7 @@ object SeriesBoxplot {
     legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
     markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
     markLine: echartsLib.Anon_AnimationAnimationDelay = null,
-    markPoint: echartsLib.Anon_Animation = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
     name: java.lang.String = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,

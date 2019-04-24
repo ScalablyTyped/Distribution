@@ -49,7 +49,8 @@ trait DropDownProps
     js.Function2[/* item */ DropDownData, /* index */ scala.Double, java.lang.String]
   ] = js.undefined
   /** Event: When focus lost from dropdown */
-  var onBlur: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  @JSName("onBlur")
+  var onBlur_DropDownProps: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** Event: When change selected item */
   var onChangeText: js.UndefOr[
     js.Function3[
@@ -60,7 +61,8 @@ trait DropDownProps
     ]
   ] = js.undefined
   /** Event: When dropdown opens */
-  var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  @JSName("onFocus")
+  var onFocus_DropDownProps: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** Set overlay styles */
   var overlayStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]

@@ -14,12 +14,13 @@ trait GetGatewayResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
 }
 
 object GetGatewayResult {
   @scala.inline
-  def apply(amazonSideAsn: java.lang.String, id: java.lang.String): GetGatewayResult = {
-    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, id = id)
+  def apply(amazonSideAsn: java.lang.String, id: java.lang.String, name: java.lang.String): GetGatewayResult = {
+    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, id = id, name = name)
   
     __obj.asInstanceOf[GetGatewayResult]
   }

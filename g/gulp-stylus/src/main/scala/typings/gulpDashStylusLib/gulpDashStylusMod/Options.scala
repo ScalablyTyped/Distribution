@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   var `include css`: js.UndefOr[scala.Boolean] = js.undefined
   var linenos: js.UndefOr[scala.Boolean] = js.undefined
-  var rawDefine: js.UndefOr[gulpDashStylusLib.Anon_Data] = js.undefined
+  var rawDefine: js.UndefOr[VariableDefinitions] = js.undefined
 }
 
 object Options {
@@ -18,7 +18,7 @@ object Options {
     compress: js.UndefOr[scala.Boolean] = js.undefined,
     `include css`: js.UndefOr[scala.Boolean] = js.undefined,
     linenos: js.UndefOr[scala.Boolean] = js.undefined,
-    rawDefine: gulpDashStylusLib.Anon_Data = null
+    rawDefine: VariableDefinitions = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)

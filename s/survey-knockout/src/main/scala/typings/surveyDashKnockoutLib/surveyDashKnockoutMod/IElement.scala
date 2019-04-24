@@ -15,6 +15,7 @@ trait IElement
   var startWithNewLine: scala.Boolean
   var visible: scala.Boolean
   var width: java.lang.String
+  def clearErrors(): js.Any
   def clearIncorrectValues(): js.Any
   def getLayoutType(): java.lang.String
   def getPanel(): IPanel
@@ -27,6 +28,7 @@ trait IElement
 object IElement {
   @scala.inline
   def apply(
+    clearErrors: () => js.Any,
     clearIncorrectValues: () => js.Any,
     getLayoutType: () => java.lang.String,
     getPanel: () => IPanel,
@@ -53,7 +55,7 @@ object IElement {
     visible: scala.Boolean,
     width: java.lang.String
   ): IElement = {
-    val __obj = js.Dynamic.literal(clearIncorrectValues = js.Any.fromFunction0(clearIncorrectValues), getLayoutType = js.Any.fromFunction0(getLayoutType), getPanel = js.Any.fromFunction0(getPanel), getType = js.Any.fromFunction0(getType), isLayoutTypeSupported = js.Any.fromFunction1(isLayoutTypeSupported), isPage = isPage, isPanel = isPanel, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name, onAnyValueChanged = js.Any.fromFunction1(onAnyValueChanged), onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), parent = parent, removeElement = js.Any.fromFunction1(removeElement), renderWidth = renderWidth, rightIndent = rightIndent, runCondition = js.Any.fromFunction2(runCondition), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex), startWithNewLine = startWithNewLine, updateCustomWidgets = js.Any.fromFunction0(updateCustomWidgets), visible = visible, width = width)
+    val __obj = js.Dynamic.literal(clearErrors = js.Any.fromFunction0(clearErrors), clearIncorrectValues = js.Any.fromFunction0(clearIncorrectValues), getLayoutType = js.Any.fromFunction0(getLayoutType), getPanel = js.Any.fromFunction0(getPanel), getType = js.Any.fromFunction0(getType), isLayoutTypeSupported = js.Any.fromFunction1(isLayoutTypeSupported), isPage = isPage, isPanel = isPanel, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = js.Any.fromFunction0(locStrsChanged), name = name, onAnyValueChanged = js.Any.fromFunction1(onAnyValueChanged), onFirstRendering = js.Any.fromFunction0(onFirstRendering), onSurveyLoad = js.Any.fromFunction0(onSurveyLoad), parent = parent, removeElement = js.Any.fromFunction1(removeElement), renderWidth = renderWidth, rightIndent = rightIndent, runCondition = js.Any.fromFunction2(runCondition), setSurveyImpl = js.Any.fromFunction1(setSurveyImpl), setVisibleIndex = js.Any.fromFunction1(setVisibleIndex), startWithNewLine = startWithNewLine, updateCustomWidgets = js.Any.fromFunction0(updateCustomWidgets), visible = visible, width = width)
   
     __obj.asInstanceOf[IElement]
   }

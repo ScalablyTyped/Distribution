@@ -10,6 +10,7 @@ trait GetServiceResult extends js.Object {
     * The ARN of the ECS Service
     */
   val arn: java.lang.String
+  val clusterArn: java.lang.String
   /**
     * The number of tasks for the ECS Service
     */
@@ -26,6 +27,7 @@ trait GetServiceResult extends js.Object {
     * The scheduling strategy for the ECS Service
     */
   val schedulingStrategy: java.lang.String
+  val serviceName: java.lang.String
   /**
     * The family for the latest ACTIVE revision
     */
@@ -36,13 +38,15 @@ object GetServiceResult {
   @scala.inline
   def apply(
     arn: java.lang.String,
+    clusterArn: java.lang.String,
     desiredCount: scala.Double,
     id: java.lang.String,
     launchType: java.lang.String,
     schedulingStrategy: java.lang.String,
+    serviceName: java.lang.String,
     taskDefinition: java.lang.String
   ): GetServiceResult = {
-    val __obj = js.Dynamic.literal(arn = arn, desiredCount = desiredCount, id = id, launchType = launchType, schedulingStrategy = schedulingStrategy, taskDefinition = taskDefinition)
+    val __obj = js.Dynamic.literal(arn = arn, clusterArn = clusterArn, desiredCount = desiredCount, id = id, launchType = launchType, schedulingStrategy = schedulingStrategy, serviceName = serviceName, taskDefinition = taskDefinition)
   
     __obj.asInstanceOf[GetServiceResult]
   }

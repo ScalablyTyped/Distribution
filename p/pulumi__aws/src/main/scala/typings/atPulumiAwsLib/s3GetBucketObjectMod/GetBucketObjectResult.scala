@@ -10,6 +10,7 @@ trait GetBucketObjectResult extends js.Object {
     * Object data (see **limitations above** to understand cases in which this field is actually available)
     */
   val body: java.lang.String
+  val bucket: java.lang.String
   /**
     * Specifies caching behavior along the request/reply chain.
     */
@@ -50,6 +51,7 @@ trait GetBucketObjectResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val key: java.lang.String
   /**
     * Last modified date of the object in RFC1123 format (e.g. `Mon, 02 Jan 2006 15:04:05 MST`)
     */
@@ -58,6 +60,7 @@ trait GetBucketObjectResult extends js.Object {
     * A map of metadata stored with the object in S3
     */
   val metadata: org.scalablytyped.runtime.StringDictionary[js.Any]
+  val range: js.UndefOr[java.lang.String] = js.undefined
   /**
     * If the object is stored using server-side encryption (KMS or Amazon S3-managed encryption key), this field includes the chosen encryption and algorithm used.
     */
@@ -88,6 +91,7 @@ object GetBucketObjectResult {
   @scala.inline
   def apply(
     body: java.lang.String,
+    bucket: java.lang.String,
     cacheControl: java.lang.String,
     contentDisposition: java.lang.String,
     contentEncoding: java.lang.String,
@@ -98,6 +102,7 @@ object GetBucketObjectResult {
     expiration: java.lang.String,
     expires: java.lang.String,
     id: java.lang.String,
+    key: java.lang.String,
     lastModified: java.lang.String,
     metadata: org.scalablytyped.runtime.StringDictionary[js.Any],
     serverSideEncryption: java.lang.String,
@@ -105,10 +110,11 @@ object GetBucketObjectResult {
     storageClass: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     versionId: java.lang.String,
-    websiteRedirectLocation: java.lang.String
+    websiteRedirectLocation: java.lang.String,
+    range: java.lang.String = null
   ): GetBucketObjectResult = {
-    val __obj = js.Dynamic.literal(body = body, cacheControl = cacheControl, contentDisposition = contentDisposition, contentEncoding = contentEncoding, contentLanguage = contentLanguage, contentLength = contentLength, contentType = contentType, etag = etag, expiration = expiration, expires = expires, id = id, lastModified = lastModified, metadata = metadata, serverSideEncryption = serverSideEncryption, sseKmsKeyId = sseKmsKeyId, storageClass = storageClass, tags = tags, versionId = versionId, websiteRedirectLocation = websiteRedirectLocation)
-  
+    val __obj = js.Dynamic.literal(body = body, bucket = bucket, cacheControl = cacheControl, contentDisposition = contentDisposition, contentEncoding = contentEncoding, contentLanguage = contentLanguage, contentLength = contentLength, contentType = contentType, etag = etag, expiration = expiration, expires = expires, id = id, key = key, lastModified = lastModified, metadata = metadata, serverSideEncryption = serverSideEncryption, sseKmsKeyId = sseKmsKeyId, storageClass = storageClass, tags = tags, versionId = versionId, websiteRedirectLocation = websiteRedirectLocation)
+    if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[GetBucketObjectResult]
   }
 }

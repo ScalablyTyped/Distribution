@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_TypeInput extends js.Object {
-  var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
 object Anon_TypeInput {
   @scala.inline
-  def apply(`type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_TypeInput = {
+  def apply(`type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null): Anon_TypeInput = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeInput]
   }
 }

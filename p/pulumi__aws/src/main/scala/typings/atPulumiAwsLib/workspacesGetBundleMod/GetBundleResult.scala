@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetBundleResult extends js.Object {
+  val bundleId: java.lang.String
   /**
     * The compute type. See supported fields below.
     */
@@ -39,6 +40,7 @@ trait GetBundleResult extends js.Object {
 object GetBundleResult {
   @scala.inline
   def apply(
+    bundleId: java.lang.String,
     computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_1260399121],
     description: java.lang.String,
     id: java.lang.String,
@@ -47,7 +49,7 @@ object GetBundleResult {
     rootStorages: js.Array[atPulumiAwsLib.Anon_Capacity],
     userStorages: js.Array[atPulumiAwsLib.Anon_Capacity]
   ): GetBundleResult = {
-    val __obj = js.Dynamic.literal(computeTypes = computeTypes, description = description, id = id, name = name, owner = owner, rootStorages = rootStorages, userStorages = userStorages)
+    val __obj = js.Dynamic.literal(bundleId = bundleId, computeTypes = computeTypes, description = description, id = id, name = name, owner = owner, rootStorages = rootStorages, userStorages = userStorages)
   
     __obj.asInstanceOf[GetBundleResult]
   }

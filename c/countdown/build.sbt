@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "countdown"
-version := "0.0-unknown-dt-20190322Z-ed6027"
+version := "0.0-unknown-dt-20190423Z-9fded6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

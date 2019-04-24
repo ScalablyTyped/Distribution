@@ -10,6 +10,7 @@ trait GetBucketResult extends js.Object {
     * The ARN of the bucket. Will be of format `arn:aws:s3:::bucketname`.
     */
   val arn: java.lang.String
+  val bucket: java.lang.String
   /**
     * The bucket domain name. Will be of format `bucketname.s3.amazonaws.com`.
     */
@@ -44,6 +45,7 @@ object GetBucketResult {
   @scala.inline
   def apply(
     arn: java.lang.String,
+    bucket: java.lang.String,
     bucketDomainName: java.lang.String,
     bucketRegionalDomainName: java.lang.String,
     hostedZoneId: java.lang.String,
@@ -52,7 +54,7 @@ object GetBucketResult {
     websiteDomain: java.lang.String,
     websiteEndpoint: java.lang.String
   ): GetBucketResult = {
-    val __obj = js.Dynamic.literal(arn = arn, bucketDomainName = bucketDomainName, bucketRegionalDomainName = bucketRegionalDomainName, hostedZoneId = hostedZoneId, id = id, region = region, websiteDomain = websiteDomain, websiteEndpoint = websiteEndpoint)
+    val __obj = js.Dynamic.literal(arn = arn, bucket = bucket, bucketDomainName = bucketDomainName, bucketRegionalDomainName = bucketRegionalDomainName, hostedZoneId = hostedZoneId, id = id, region = region, websiteDomain = websiteDomain, websiteEndpoint = websiteEndpoint)
   
     __obj.asInstanceOf[GetBucketResult]
   }

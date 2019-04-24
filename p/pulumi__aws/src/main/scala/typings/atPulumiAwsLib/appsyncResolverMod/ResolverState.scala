@@ -14,6 +14,9 @@ trait ResolverState extends js.Object {
     * The ARN
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The DataSource name.
+    */
   val dataSource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The field name from the schema defined in the GraphQL API.

@@ -22,6 +22,10 @@ trait MeshState extends js.Object {
     * The name to use for the service mesh.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The service mesh specification to apply.
+    */
+  val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EgressFilterAnonTypeInput]] = js.undefined
 }
 
 object MeshState {
@@ -30,13 +34,15 @@ object MeshState {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     lastUpdatedDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EgressFilterAnonTypeInput] = null
   ): MeshState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshState]
   }
 }

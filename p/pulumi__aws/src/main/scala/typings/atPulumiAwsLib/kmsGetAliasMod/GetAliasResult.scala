@@ -14,6 +14,7 @@ trait GetAliasResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
   /**
     * ARN pointed to by the alias.
     */
@@ -29,10 +30,11 @@ object GetAliasResult {
   def apply(
     arn: java.lang.String,
     id: java.lang.String,
+    name: java.lang.String,
     targetKeyArn: java.lang.String,
     targetKeyId: java.lang.String
   ): GetAliasResult = {
-    val __obj = js.Dynamic.literal(arn = arn, id = id, targetKeyArn = targetKeyArn, targetKeyId = targetKeyId)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, name = name, targetKeyArn = targetKeyArn, targetKeyId = targetKeyId)
   
     __obj.asInstanceOf[GetAliasResult]
   }

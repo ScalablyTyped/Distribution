@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps because var conflicts: accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityStates, accessibilityTraits, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined delayLongPress, delayPressIn, delayPressOut, disabled, onLongPress, onPress, onPressIn, onPressOut, pressRetentionOffset */ trait MKIconToggleProperties extends MKRippleProperties {
+- reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps because var conflicts: accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityStates, accessibilityTraits, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined delayLongPress, delayPressIn, delayPressOut, disabled, onBlur, onFocus, onLongPress, onPress, onPressIn, onPressOut, pressRetentionOffset */ trait MKIconToggleProperties extends MKRippleProperties {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Delay in ms, from onPressIn, before onLongPress is called.
@@ -24,7 +24,29 @@ import scala.scalajs.js.annotation._
     * If true, disable all interactions for this component.
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "blur" occurs, meaning the element lost focus.
+    * Some platforms may not have the concept of blur.
+    */
+  var onBlur: js.UndefOr[
+    js.Function1[
+      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TargetedEvent], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var onCheckedChange: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
+  /**
+    * When `accessible` is true (which is the default) this may be called when
+    * the OS-specific concept of "focus" occurs. Some platforms may not have
+    * the concept of focus.
+    */
+  var onFocus: js.UndefOr[
+    js.Function1[
+      /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TargetedEvent], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var onLongPress: js.UndefOr[
     js.Function1[
       /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
@@ -98,7 +120,9 @@ object MKIconToggleProperties {
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     onAccessibilityAction: () => scala.Unit = null,
     onAccessibilityTap: () => scala.Unit = null,
+    onBlur: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TargetedEvent] => scala.Unit = null,
     onCheckedChange: /* checked */ scala.Boolean => scala.Unit = null,
+    onFocus: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TargetedEvent] => scala.Unit = null,
     onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
     onLongPress: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     onMagicTap: () => scala.Unit = null,
@@ -171,7 +195,9 @@ object MKIconToggleProperties {
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCheckedChange != null) __obj.updateDynamic("onCheckedChange")(js.Any.fromFunction1(onCheckedChange))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))

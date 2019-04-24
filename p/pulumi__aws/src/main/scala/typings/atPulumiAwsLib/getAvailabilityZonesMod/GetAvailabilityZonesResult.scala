@@ -14,6 +14,7 @@ trait GetAvailabilityZonesResult extends js.Object {
     * A list of the Availability Zone names available to the account.
     */
   val names: js.Array[java.lang.String]
+  val state: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A list of the Availability Zone IDs available to the account.
     */
@@ -22,9 +23,14 @@ trait GetAvailabilityZonesResult extends js.Object {
 
 object GetAvailabilityZonesResult {
   @scala.inline
-  def apply(id: java.lang.String, names: js.Array[java.lang.String], zoneIds: js.Array[java.lang.String]): GetAvailabilityZonesResult = {
+  def apply(
+    id: java.lang.String,
+    names: js.Array[java.lang.String],
+    zoneIds: js.Array[java.lang.String],
+    state: java.lang.String = null
+  ): GetAvailabilityZonesResult = {
     val __obj = js.Dynamic.literal(id = id, names = names, zoneIds = zoneIds)
-  
+    if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[GetAvailabilityZonesResult]
   }
 }

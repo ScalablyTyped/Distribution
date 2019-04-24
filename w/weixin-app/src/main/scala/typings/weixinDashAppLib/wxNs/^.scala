@@ -123,6 +123,11 @@ object ^ extends js.Object {
   	 */
   def closeSocket(options: CloseSocketOptions): scala.Unit = js.native
   /**
+  	 * 压缩图片接口，可选压缩质量
+  	 * @version 2.4.0
+  	 */
+  def compressImage(options: compressImageOptions): scala.Unit = js.native
+  /**
   	 * 创建一个 WebSocket 连接；
   	 * 一个微信小程序同时只能有一个 WebSocket 连接，
   	 * 如果当前已存在一个 WebSocket 连接，
@@ -316,6 +321,7 @@ object ^ extends js.Object {
   	 * @version 1.4.0
   	 */
   def getFileInfo(options: GetFileInfoOptions): scala.Unit = js.native
+  def getFileSystemManager(): FileSystemManager = js.native
   /**
   	 * 获取图片信息
   	 */

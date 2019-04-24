@@ -14,6 +14,7 @@ trait GetRepositoryResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
   /**
     * The registry ID where the repository was created.
     */
@@ -33,11 +34,12 @@ object GetRepositoryResult {
   def apply(
     arn: java.lang.String,
     id: java.lang.String,
+    name: java.lang.String,
     registryId: java.lang.String,
     repositoryUrl: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetRepositoryResult = {
-    val __obj = js.Dynamic.literal(arn = arn, id = id, registryId = registryId, repositoryUrl = repositoryUrl, tags = tags)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, name = name, registryId = registryId, repositoryUrl = repositoryUrl, tags = tags)
   
     __obj.asInstanceOf[GetRepositoryResult]
   }

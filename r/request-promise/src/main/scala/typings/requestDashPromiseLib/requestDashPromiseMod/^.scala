@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("request-promise", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[
-      requestLib.requestMod.RequestAPI[RequestPromise, RequestPromiseOptions, requestLib.requestMod.RequiredUriUrl]
-    ]
+  extends org.scalablytyped.runtime.TopLevel[RequestPromiseAPI]
 

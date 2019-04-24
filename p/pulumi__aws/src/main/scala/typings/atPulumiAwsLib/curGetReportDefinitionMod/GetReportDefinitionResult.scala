@@ -26,6 +26,7 @@ trait GetReportDefinitionResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val reportName: java.lang.String
   /**
     * Name of customer S3 bucket.
     */
@@ -52,12 +53,13 @@ object GetReportDefinitionResult {
     compression: java.lang.String,
     format: java.lang.String,
     id: java.lang.String,
+    reportName: java.lang.String,
     s3Bucket: java.lang.String,
     s3Prefix: java.lang.String,
     s3Region: java.lang.String,
     timeUnit: java.lang.String
   ): GetReportDefinitionResult = {
-    val __obj = js.Dynamic.literal(additionalArtifacts = additionalArtifacts, additionalSchemaElements = additionalSchemaElements, compression = compression, format = format, id = id, s3Bucket = s3Bucket, s3Prefix = s3Prefix, s3Region = s3Region, timeUnit = timeUnit)
+    val __obj = js.Dynamic.literal(additionalArtifacts = additionalArtifacts, additionalSchemaElements = additionalSchemaElements, compression = compression, format = format, id = id, reportName = reportName, s3Bucket = s3Bucket, s3Prefix = s3Prefix, s3Region = s3Region, timeUnit = timeUnit)
   
     __obj.asInstanceOf[GetReportDefinitionResult]
   }

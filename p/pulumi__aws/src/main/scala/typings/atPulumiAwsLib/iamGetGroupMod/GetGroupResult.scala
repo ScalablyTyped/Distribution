@@ -14,6 +14,7 @@ trait GetGroupResult extends js.Object {
     * The stable and unique string identifying the group.
     */
   val groupId: java.lang.String
+  val groupName: java.lang.String
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -26,8 +27,14 @@ trait GetGroupResult extends js.Object {
 
 object GetGroupResult {
   @scala.inline
-  def apply(arn: java.lang.String, groupId: java.lang.String, id: java.lang.String, path: java.lang.String): GetGroupResult = {
-    val __obj = js.Dynamic.literal(arn = arn, groupId = groupId, id = id, path = path)
+  def apply(
+    arn: java.lang.String,
+    groupId: java.lang.String,
+    groupName: java.lang.String,
+    id: java.lang.String,
+    path: java.lang.String
+  ): GetGroupResult = {
+    val __obj = js.Dynamic.literal(arn = arn, groupId = groupId, groupName = groupName, id = id, path = path)
   
     __obj.asInstanceOf[GetGroupResult]
   }

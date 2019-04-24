@@ -18,12 +18,13 @@ trait GetLogGroupResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
 }
 
 object GetLogGroupResult {
   @scala.inline
-  def apply(arn: java.lang.String, creationTime: scala.Double, id: java.lang.String): GetLogGroupResult = {
-    val __obj = js.Dynamic.literal(arn = arn, creationTime = creationTime, id = id)
+  def apply(arn: java.lang.String, creationTime: scala.Double, id: java.lang.String, name: java.lang.String): GetLogGroupResult = {
+    val __obj = js.Dynamic.literal(arn = arn, creationTime = creationTime, id = id, name = name)
   
     __obj.asInstanceOf[GetLogGroupResult]
   }

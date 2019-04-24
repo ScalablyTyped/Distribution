@@ -87,6 +87,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var timeslots: js.UndefOr[scala.Double] = js.undefined
   var titleAccessor: js.UndefOr[java.lang.String] = js.undefined
   var toolbar: js.UndefOr[scala.Boolean] = js.undefined
+  var tooltipAccessor: js.UndefOr[java.lang.String] = js.undefined
   var view: js.UndefOr[View] = js.undefined
   var views: js.UndefOr[Views] = js.undefined
 }
@@ -144,6 +145,7 @@ object BigCalendarProps {
     timeslots: scala.Int | scala.Double = null,
     titleAccessor: java.lang.String = null,
     toolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipAccessor: java.lang.String = null,
     view: View = null,
     views: Views = null
   ): BigCalendarProps[TEvent, TResource] = {
@@ -197,6 +199,7 @@ object BigCalendarProps {
     if (timeslots != null) __obj.updateDynamic("timeslots")(timeslots.asInstanceOf[js.Any])
     if (titleAccessor != null) __obj.updateDynamic("titleAccessor")(titleAccessor)
     if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar)
+    if (tooltipAccessor != null) __obj.updateDynamic("tooltipAccessor")(tooltipAccessor)
     if (view != null) __obj.updateDynamic("view")(view)
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigCalendarProps[TEvent, TResource]]

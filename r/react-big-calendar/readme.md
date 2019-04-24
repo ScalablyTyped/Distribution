@@ -11,6 +11,7 @@
 //                 Panagiotis Rikarnto Siavelis <https://github.com/siavelis>
 //                 Tomas Hubelbauer <https://github.com/TomasHubelbauer>
 //                 Lucas Silva Souza <https://github.com/lksilva>
+//                 Siarhey Belofost <https://github.com/SergeyBelofost>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

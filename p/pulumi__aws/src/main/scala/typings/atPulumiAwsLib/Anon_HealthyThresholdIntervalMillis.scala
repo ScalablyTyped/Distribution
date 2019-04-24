@@ -6,28 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HealthyThresholdIntervalMillis extends js.Object {
-  var healthyThreshold: scala.Double
-  var intervalMillis: scala.Double
-  var path: js.UndefOr[java.lang.String] = js.undefined
-  var port: scala.Double
-  var protocol: java.lang.String
-  var timeoutMillis: scala.Double
-  var unhealthyThreshold: scala.Double
+  var healthyThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double]
+  var intervalMillis: atPulumiPulumiLib.outputMod.Input[scala.Double]
+  var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+  var protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var timeoutMillis: atPulumiPulumiLib.outputMod.Input[scala.Double]
+  var unhealthyThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double]
 }
 
 object Anon_HealthyThresholdIntervalMillis {
   @scala.inline
   def apply(
-    healthyThreshold: scala.Double,
-    intervalMillis: scala.Double,
-    port: scala.Double,
-    protocol: java.lang.String,
-    timeoutMillis: scala.Double,
-    unhealthyThreshold: scala.Double,
-    path: java.lang.String = null
+    healthyThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    intervalMillis: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    timeoutMillis: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    unhealthyThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_HealthyThresholdIntervalMillis = {
-    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold, intervalMillis = intervalMillis, port = port, protocol = protocol, timeoutMillis = timeoutMillis, unhealthyThreshold = unhealthyThreshold)
-    if (path != null) __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold.asInstanceOf[js.Any], intervalMillis = intervalMillis.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeoutMillis = timeoutMillis.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HealthyThresholdIntervalMillis]
   }
 }

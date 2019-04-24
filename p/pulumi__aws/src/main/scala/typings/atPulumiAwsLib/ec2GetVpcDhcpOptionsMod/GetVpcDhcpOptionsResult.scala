@@ -18,6 +18,7 @@ trait GetVpcDhcpOptionsResult extends js.Object {
     * List of name servers.
     */
   val domainNameServers: js.Array[java.lang.String]
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -55,10 +56,11 @@ object GetVpcDhcpOptionsResult {
     netbiosNodeType: java.lang.String,
     ntpServers: js.Array[java.lang.String],
     ownerId: java.lang.String,
-    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetVpcDhcpOptionsResult = {
     val __obj = js.Dynamic.literal(dhcpOptionsId = dhcpOptionsId, domainName = domainName, domainNameServers = domainNameServers, id = id, netbiosNameServers = netbiosNameServers, netbiosNodeType = netbiosNodeType, ntpServers = ntpServers, ownerId = ownerId, tags = tags)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetVpcDhcpOptionsResult]
   }
 }

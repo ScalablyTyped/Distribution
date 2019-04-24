@@ -19,7 +19,7 @@ class WebAclAssociation protected ()
   def this(name: java.lang.String, args: WebAclAssociationArgs) = this()
   def this(name: java.lang.String, args: WebAclAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * Application Load Balancer ARN to associate with.
+    * ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.
     */
   val resourceArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

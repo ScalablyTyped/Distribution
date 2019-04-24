@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 /** Custom implementation of the array functions, which return Immutable. */
 @js.native
 trait Overrides[T] extends js.Object {
-  def concat(arr: (T | js.Array[T])*): seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[js.Array[T], js.Object] = js.native
+  def concat(
+    arr: (T | js.Array[T] | (seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T | js.Array[T], js.Object]))*
+  ): seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[js.Array[T], js.Object] = js.native
   def filter(filterFunction: js.Function1[/* item */ T, scala.Boolean]): seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[js.Array[T], js.Object] = js.native
   def map[TTarget](mapFuction: js.Function1[/* item */ T, TTarget]): seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[js.Array[TTarget], js.Object] = js.native
   def reduce(

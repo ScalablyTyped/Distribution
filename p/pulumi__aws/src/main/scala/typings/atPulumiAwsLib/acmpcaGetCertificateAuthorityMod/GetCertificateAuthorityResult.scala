@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetCertificateAuthorityResult extends js.Object {
+  val arn: java.lang.String
   /**
     * Base64-encoded certificate authority (CA) certificate. Only available after the certificate authority certificate has been imported.
     */
@@ -62,6 +63,7 @@ trait GetCertificateAuthorityResult extends js.Object {
 object GetCertificateAuthorityResult {
   @scala.inline
   def apply(
+    arn: java.lang.String,
     certificate: java.lang.String,
     certificateChain: java.lang.String,
     certificateSigningRequest: java.lang.String,
@@ -76,7 +78,7 @@ object GetCertificateAuthorityResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     `type`: java.lang.String
   ): GetCertificateAuthorityResult = {
-    val __obj = js.Dynamic.literal(certificate = certificate, certificateChain = certificateChain, certificateSigningRequest = certificateSigningRequest, id = id, notAfter = notAfter, notBefore = notBefore, revocationConfigurations = revocationConfigurations, serial = serial, status = status, tags = tags)
+    val __obj = js.Dynamic.literal(arn = arn, certificate = certificate, certificateChain = certificateChain, certificateSigningRequest = certificateSigningRequest, id = id, notAfter = notAfter, notBefore = notBefore, revocationConfigurations = revocationConfigurations, serial = serial, status = status, tags = tags)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GetCertificateAuthorityResult]
   }

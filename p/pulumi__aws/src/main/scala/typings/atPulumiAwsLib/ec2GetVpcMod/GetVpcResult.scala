@@ -25,6 +25,7 @@ trait GetVpcResult extends js.Object {
     * Whether or not the VPC has DNS support
     */
   val enableDnsSupport: scala.Boolean
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   val id: java.lang.String
   /**
     * The allowed tenancy of instances launched into the
@@ -71,10 +72,11 @@ object GetVpcResult {
     mainRouteTableId: java.lang.String,
     ownerId: java.lang.String,
     state: java.lang.String,
-    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null
   ): GetVpcResult = {
     val __obj = js.Dynamic.literal(arn = arn, cidrBlock = cidrBlock, cidrBlockAssociations = cidrBlockAssociations, default = default, dhcpOptionsId = dhcpOptionsId, enableDnsHostnames = enableDnsHostnames, enableDnsSupport = enableDnsSupport, id = id, instanceTenancy = instanceTenancy, ipv6AssociationId = ipv6AssociationId, ipv6CidrBlock = ipv6CidrBlock, mainRouteTableId = mainRouteTableId, ownerId = ownerId, state = state, tags = tags)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[GetVpcResult]
   }
 }

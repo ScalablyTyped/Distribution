@@ -13,7 +13,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animation
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animation
     */
   var animation: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -23,14 +23,14 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDelay
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | scala.Double] = js.native
   /**
@@ -39,38 +39,38 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * For example:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine)
     *
     * See
     * [this example](https://ecomfe.github.io/echarts-examples/public/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDelayUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.native
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine)
     *
     *
     * @default
     * 1000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDuration
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | scala.Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine)
     *
     *
     * @default
     * 300
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDurationUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.native
   /**
@@ -82,7 +82,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationEasing
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationEasing
     */
   var animationEasing: js.UndefOr[java.lang.String] = js.native
   /**
@@ -91,7 +91,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * "cubicOut"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationEasingUpdate
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[java.lang.String] = js.native
   /**
@@ -102,55 +102,86 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @default
     * 2000
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationThreshold
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.animationThreshold
     */
   var animationThreshold: js.UndefOr[scala.Double] = js.native
   /**
-    * The scope of the area is defined by `data`, which is an array
-    * with two item, representing the left-top point and the right-bottom
-    * point of rectangle area.
-    * Each item can be defined as follows:
+    * Data array of marking line.
+    * Every array item can be an array of one or two values, representing
+    * starting and ending point of the line, and every item is
+    * an object.
+    * Here are several ways to assign the positions of starting
+    * and ending point.
     *
-    * 1.
-    * Specify the coordinate in screen coordinate system using
-    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.0.x)
+    * 1. Assign coordinate according to container with
+    * [x](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.0.x)
     * ,
-    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data.0.y)
-    * , where the unit is pixel (e.g.,
-    * the value is `5`), or percent (e.g.,
-    * the value is `'35%'`).
+    * [y](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.0.y)
+    * attribute, in which pixel values and percentage are supported.
     *
-    * The priority follows as above if more than one above definition
-    * used.
+    * When multiple attributes exist, priority is as the above
+    * order.
     *
-    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markArea)
+    * [see doc](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.pie.markLine)
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data
     */
-  var data: js.UndefOr[Anon_01AnonItemStyleLabelValue] = js.native
+  var data: js.UndefOr[Anon_01AnonLabel] = js.native
   /**
-    * Style of the mark area.
+    * Mark line text.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.itemStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.label
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.native
+  var label: js.UndefOr[Anon_Emphasis] = js.native
   /**
-    * Label in mark area.
+    * Mark line style.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.label
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.lineStyle
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.native
+  var lineStyle: js.UndefOr[Anon_ColorCurveness] = js.native
+  /**
+    * Precison of marking line value, which is useful when displaying
+    * average value mark line.
+    *
+    *
+    * @default
+    * 2
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.precision
+    */
+  var precision: js.UndefOr[scala.Double] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
     * mouse events.
     *
     *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.silent
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.silent
     */
   var silent: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * Symbol type at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    * See
+    * [data.symbol](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.data.0.symbol)
+    * for more format information.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.symbol
+    */
+  var symbol: js.UndefOr[js.Array[_] | java.lang.String] = js.native
+  /**
+    * Symbol size at the two ends of the mark line.
+    * It can be an array for two ends, or assigned seperately.
+    *
+    * **Attention:** You cannot assgin width and height seperately
+    * as normal `symbolSize`.
+    *
+    *
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markLine.symbolSize
+    */
+  var symbolSize: js.UndefOr[js.Array[_] | scala.Double] = js.native
 }
 

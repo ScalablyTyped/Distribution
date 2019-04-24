@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait NetworkAclState extends js.Object {
   /**
     * Specifies an egress rule. Parameters defined below.
+    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val egress: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
@@ -16,6 +17,7 @@ trait NetworkAclState extends js.Object {
   ] = js.undefined
   /**
     * Specifies an ingress rule. Parameters defined below.
+    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[

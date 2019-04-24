@@ -19,13 +19,19 @@ trait GetPrefixListResult extends js.Object {
     * The name of the selected prefix list.
     */
   val name: java.lang.String
+  val prefixListId: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object GetPrefixListResult {
   @scala.inline
-  def apply(cidrBlocks: js.Array[java.lang.String], id: java.lang.String, name: java.lang.String): GetPrefixListResult = {
+  def apply(
+    cidrBlocks: js.Array[java.lang.String],
+    id: java.lang.String,
+    name: java.lang.String,
+    prefixListId: java.lang.String = null
+  ): GetPrefixListResult = {
     val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, id = id, name = name)
-  
+    if (prefixListId != null) __obj.updateDynamic("prefixListId")(prefixListId)
     __obj.asInstanceOf[GetPrefixListResult]
   }
 }

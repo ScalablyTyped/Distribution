@@ -129,11 +129,15 @@ trait Response
     * when the data transfer is complete, or when an error has
     * ocurred. Be sure to check `res.headerSent` if you plan to respond.
     *
+    * The optional options argument passes through to the underlying
+    * res.sendFile() call, and takes the exact same parameters.
+    *
     * This method uses `res.sendfile()`.
     */
   def download(path: java.lang.String): scala.Unit = js.native
   def download(path: java.lang.String, filename: java.lang.String): scala.Unit = js.native
   def download(path: java.lang.String, filename: java.lang.String, fn: Errback): scala.Unit = js.native
+  def download(path: java.lang.String, filename: java.lang.String, options: js.Any, fn: Errback): scala.Unit = js.native
   def download(path: java.lang.String, fn: Errback): scala.Unit = js.native
   /* InferMemberOverrides */
   /* InferMemberOverrides */

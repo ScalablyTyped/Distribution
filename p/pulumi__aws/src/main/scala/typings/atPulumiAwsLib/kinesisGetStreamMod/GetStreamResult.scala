@@ -23,6 +23,10 @@ trait GetStreamResult extends js.Object {
     */
   val id: java.lang.String
   /**
+    * The name of the Kinesis Stream.
+    */
+  val name: java.lang.String
+  /**
     * The list of shard ids in the OPEN state. See [Shard State][2] for more.
     */
   val openShards: js.Array[java.lang.String]
@@ -51,13 +55,14 @@ object GetStreamResult {
     closedShards: js.Array[java.lang.String],
     creationTimestamp: scala.Double,
     id: java.lang.String,
+    name: java.lang.String,
     openShards: js.Array[java.lang.String],
     retentionPeriod: scala.Double,
     shardLevelMetrics: js.Array[java.lang.String],
     status: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetStreamResult = {
-    val __obj = js.Dynamic.literal(arn = arn, closedShards = closedShards, creationTimestamp = creationTimestamp, id = id, openShards = openShards, retentionPeriod = retentionPeriod, shardLevelMetrics = shardLevelMetrics, status = status, tags = tags)
+    val __obj = js.Dynamic.literal(arn = arn, closedShards = closedShards, creationTimestamp = creationTimestamp, id = id, name = name, openShards = openShards, retentionPeriod = retentionPeriod, shardLevelMetrics = shardLevelMetrics, status = status, tags = tags)
   
     __obj.asInstanceOf[GetStreamResult]
   }

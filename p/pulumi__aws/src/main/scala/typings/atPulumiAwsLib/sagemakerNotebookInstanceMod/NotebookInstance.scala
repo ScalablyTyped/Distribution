@@ -31,6 +31,10 @@ class NotebookInstance protected ()
     */
   val kmsKeyId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
+    * The name of a lifecycle configuration to associate with the notebook instance.
+    */
+  val lifecycleConfigName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
     * The name of the notebook instance (must be unique).
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

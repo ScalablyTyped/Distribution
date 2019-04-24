@@ -26,6 +26,9 @@ class Resolver protected ()
     * The ARN
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The DataSource name.
+    */
   val dataSource: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The field name from the schema defined in the GraphQL API.

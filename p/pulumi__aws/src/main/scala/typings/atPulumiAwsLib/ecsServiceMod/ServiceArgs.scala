@@ -13,7 +13,7 @@ trait ServiceArgs extends js.Object {
   /**
     * Configuration block containing deployment controller configuration. Defined below.
     */
-  val deploymentController: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]] = js.undefined
+  val deploymentController: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]] = js.undefined
   /**
     * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
     */
@@ -115,7 +115,7 @@ object ServiceArgs {
   def apply(
     taskDefinition: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     cluster: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    deploymentController: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString] = null,
+    deploymentController: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput] = null,
     deploymentMaximumPercent: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     deploymentMinimumHealthyPercent: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     desiredCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,

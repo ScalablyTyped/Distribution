@@ -15,9 +15,14 @@ trait GetClusterSnapshotResult extends js.Object {
     */
   val availabilityZones: js.Array[java.lang.String]
   /**
+    * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
+    */
+  val dbClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) for the DB Cluster Snapshot.
     */
   val dbClusterSnapshotArn: java.lang.String
+  val dbClusterSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Specifies the name of the database engine.
     */
@@ -30,6 +35,8 @@ trait GetClusterSnapshotResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val includePublic: js.UndefOr[scala.Boolean] = js.undefined
+  val includeShared: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If storage_encrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
     */
@@ -38,6 +45,7 @@ trait GetClusterSnapshotResult extends js.Object {
     * License model information for the restored DB cluster.
     */
   val licenseModel: java.lang.String
+  val mostRecent: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Port that the DB cluster was listening on at the time of the snapshot.
     */
@@ -46,6 +54,7 @@ trait GetClusterSnapshotResult extends js.Object {
     * Time when the snapshot was taken, in Universal Coordinated Time (UTC).
     */
   val snapshotCreateTime: java.lang.String
+  val snapshotType: js.UndefOr[java.lang.String] = js.undefined
   val sourceDbClusterSnapshotArn: java.lang.String
   /**
     * The status of this DB Cluster Snapshot.
@@ -77,10 +86,21 @@ object GetClusterSnapshotResult {
     sourceDbClusterSnapshotArn: java.lang.String,
     status: java.lang.String,
     storageEncrypted: scala.Boolean,
-    vpcId: java.lang.String
+    vpcId: java.lang.String,
+    dbClusterIdentifier: java.lang.String = null,
+    dbClusterSnapshotIdentifier: java.lang.String = null,
+    includePublic: js.UndefOr[scala.Boolean] = js.undefined,
+    includeShared: js.UndefOr[scala.Boolean] = js.undefined,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    snapshotType: java.lang.String = null
   ): GetClusterSnapshotResult = {
     val __obj = js.Dynamic.literal(allocatedStorage = allocatedStorage, availabilityZones = availabilityZones, dbClusterSnapshotArn = dbClusterSnapshotArn, engine = engine, engineVersion = engineVersion, id = id, kmsKeyId = kmsKeyId, licenseModel = licenseModel, port = port, snapshotCreateTime = snapshotCreateTime, sourceDbClusterSnapshotArn = sourceDbClusterSnapshotArn, status = status, storageEncrypted = storageEncrypted, vpcId = vpcId)
-  
+    if (dbClusterIdentifier != null) __obj.updateDynamic("dbClusterIdentifier")(dbClusterIdentifier)
+    if (dbClusterSnapshotIdentifier != null) __obj.updateDynamic("dbClusterSnapshotIdentifier")(dbClusterSnapshotIdentifier)
+    if (!js.isUndefined(includePublic)) __obj.updateDynamic("includePublic")(includePublic)
+    if (!js.isUndefined(includeShared)) __obj.updateDynamic("includeShared")(includeShared)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType)
     __obj.asInstanceOf[GetClusterSnapshotResult]
   }
 }

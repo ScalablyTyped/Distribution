@@ -39,6 +39,9 @@ trait GetInstanceResult extends js.Object {
     * The ephemeral block device mappings of the Instance.
     */
   val ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameNoDevice]
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
+  val getPasswordData: js.UndefOr[scala.Boolean] = js.undefined
+  val getUserData: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The Id of the dedicated host the instance will be assigned to.
     */
@@ -51,6 +54,7 @@ trait GetInstanceResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val instanceId: js.UndefOr[java.lang.String] = js.undefined
   val instanceState: java.lang.String
   val instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
@@ -172,10 +176,17 @@ object GetInstanceResult {
     tenancy: java.lang.String,
     userData: java.lang.String,
     userDataBase64: java.lang.String,
-    vpcSecurityGroupIds: js.Array[java.lang.String]
+    vpcSecurityGroupIds: js.Array[java.lang.String],
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    getPasswordData: js.UndefOr[scala.Boolean] = js.undefined,
+    getUserData: js.UndefOr[scala.Boolean] = js.undefined,
+    instanceId: java.lang.String = null
   ): GetInstanceResult = {
     val __obj = js.Dynamic.literal(ami = ami, arn = arn, associatePublicIpAddress = associatePublicIpAddress, availabilityZone = availabilityZone, creditSpecifications = creditSpecifications, disableApiTermination = disableApiTermination, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, ephemeralBlockDevices = ephemeralBlockDevices, hostId = hostId, iamInstanceProfile = iamInstanceProfile, id = id, instanceState = instanceState, instanceTags = instanceTags, instanceType = instanceType, keyName = keyName, monitoring = monitoring, networkInterfaceId = networkInterfaceId, passwordData = passwordData, placementGroup = placementGroup, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, sourceDestCheck = sourceDestCheck, subnetId = subnetId, tags = tags, tenancy = tenancy, userData = userData, userDataBase64 = userDataBase64, vpcSecurityGroupIds = vpcSecurityGroupIds)
-  
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData)
+    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
     __obj.asInstanceOf[GetInstanceResult]
   }
 }

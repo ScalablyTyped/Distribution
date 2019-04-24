@@ -16,6 +16,12 @@ trait ClusterState extends js.Object {
   val certificateAuthority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataInput]] = js.undefined
   val createdAt: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
+    */
+  val enabledClusterLogTypes: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  ] = js.undefined
+  /**
     * The endpoint for your Kubernetes API server.
     */
   val endpoint: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -49,6 +55,7 @@ object ClusterState {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     certificateAuthority: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataInput] = null,
     createdAt: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabledClusterLogTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     platformVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -60,6 +67,7 @@ object ClusterState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (certificateAuthority != null) __obj.updateDynamic("certificateAuthority")(certificateAuthority.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (enabledClusterLogTypes != null) __obj.updateDynamic("enabledClusterLogTypes")(enabledClusterLogTypes.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])

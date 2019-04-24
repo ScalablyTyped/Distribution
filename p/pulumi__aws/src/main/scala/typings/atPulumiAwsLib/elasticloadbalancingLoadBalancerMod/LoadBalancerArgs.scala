@@ -34,7 +34,7 @@ trait LoadBalancerArgs extends js.Object {
     * A health_check block. Health Check documented below.
     */
   val healthCheck: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTargetTimeout]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTarget]
   ] = js.undefined
   /**
     * The time in seconds that the connection is allowed to be idle. Default: `60`
@@ -105,7 +105,7 @@ object LoadBalancerArgs {
     connectionDraining: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     connectionDrainingTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     crossZoneLoadBalancing: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    healthCheck: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTargetTimeout] = null,
+    healthCheck: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTarget] = null,
     idleTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     instances: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     internal: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,

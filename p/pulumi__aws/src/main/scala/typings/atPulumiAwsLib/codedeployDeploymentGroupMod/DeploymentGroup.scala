@@ -29,7 +29,7 @@ class DeploymentGroup protected ()
   /**
     * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
     */
-  val autoRollbackConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Enabled]] = js.native
+  val autoRollbackConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledEvents]] = js.native
   /**
     * Autoscaling groups associated with the deployment group.
     */

@@ -16,6 +16,7 @@ trait GetClusterResult extends js.Object {
     * The number of available cluster certificates may vary depending on state of the cluster.
     */
   val clusterCertificates: atPulumiAwsLib.Anon_AwsHardwareCertificate
+  val clusterId: java.lang.String
   val clusterState: java.lang.String
   /**
     * id is the provider-assigned unique ID for this managed resource.
@@ -39,13 +40,14 @@ object GetClusterResult {
   @scala.inline
   def apply(
     clusterCertificates: atPulumiAwsLib.Anon_AwsHardwareCertificate,
+    clusterId: java.lang.String,
     clusterState: java.lang.String,
     id: java.lang.String,
     securityGroupId: java.lang.String,
     subnetIds: js.Array[java.lang.String],
     vpcId: java.lang.String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(clusterCertificates = clusterCertificates, clusterState = clusterState, id = id, securityGroupId = securityGroupId, subnetIds = subnetIds, vpcId = vpcId)
+    val __obj = js.Dynamic.literal(clusterCertificates = clusterCertificates, clusterId = clusterId, clusterState = clusterState, id = id, securityGroupId = securityGroupId, subnetIds = subnetIds, vpcId = vpcId)
   
     __obj.asInstanceOf[GetClusterResult]
   }

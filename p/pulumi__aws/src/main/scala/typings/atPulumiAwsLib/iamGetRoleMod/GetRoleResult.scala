@@ -30,6 +30,7 @@ trait GetRoleResult extends js.Object {
     * Maximum session duration.
     */
   val maxSessionDuration: scala.Double
+  val name: java.lang.String
   /**
     * The path to the role.
     */
@@ -53,11 +54,12 @@ object GetRoleResult {
     description: java.lang.String,
     id: java.lang.String,
     maxSessionDuration: scala.Double,
+    name: java.lang.String,
     path: java.lang.String,
     permissionsBoundary: java.lang.String,
     uniqueId: java.lang.String
   ): GetRoleResult = {
-    val __obj = js.Dynamic.literal(arn = arn, assumeRolePolicy = assumeRolePolicy, createDate = createDate, description = description, id = id, maxSessionDuration = maxSessionDuration, path = path, permissionsBoundary = permissionsBoundary, uniqueId = uniqueId)
+    val __obj = js.Dynamic.literal(arn = arn, assumeRolePolicy = assumeRolePolicy, createDate = createDate, description = description, id = id, maxSessionDuration = maxSessionDuration, name = name, path = path, permissionsBoundary = permissionsBoundary, uniqueId = uniqueId)
   
     __obj.asInstanceOf[GetRoleResult]
   }

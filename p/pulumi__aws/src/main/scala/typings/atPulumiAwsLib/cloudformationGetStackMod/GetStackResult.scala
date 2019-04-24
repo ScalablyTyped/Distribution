@@ -26,6 +26,7 @@ trait GetStackResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
   /**
     * A list of SNS topic ARNs to publish stack related events
     */
@@ -60,6 +61,7 @@ object GetStackResult {
     disableRollback: scala.Boolean,
     iamRoleArn: java.lang.String,
     id: java.lang.String,
+    name: java.lang.String,
     notificationArns: js.Array[java.lang.String],
     outputs: org.scalablytyped.runtime.StringDictionary[js.Any],
     parameters: org.scalablytyped.runtime.StringDictionary[js.Any],
@@ -67,7 +69,7 @@ object GetStackResult {
     templateBody: java.lang.String,
     timeoutInMinutes: scala.Double
   ): GetStackResult = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities, description = description, disableRollback = disableRollback, iamRoleArn = iamRoleArn, id = id, notificationArns = notificationArns, outputs = outputs, parameters = parameters, tags = tags, templateBody = templateBody, timeoutInMinutes = timeoutInMinutes)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, description = description, disableRollback = disableRollback, iamRoleArn = iamRoleArn, id = id, name = name, notificationArns = notificationArns, outputs = outputs, parameters = parameters, tags = tags, templateBody = templateBody, timeoutInMinutes = timeoutInMinutes)
   
     __obj.asInstanceOf[GetStackResult]
   }

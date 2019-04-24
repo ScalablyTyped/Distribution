@@ -10,6 +10,7 @@ trait GetComputeEnvironmentResult extends js.Object {
     * The ARN of the compute environment.
     */
   val arn: java.lang.String
+  val computeEnvironmentName: java.lang.String
   /**
     * The ARN of the underlying Amazon ECS cluster used by the compute environment.
     */
@@ -44,6 +45,7 @@ object GetComputeEnvironmentResult {
   @scala.inline
   def apply(
     arn: java.lang.String,
+    computeEnvironmentName: java.lang.String,
     ecsClusterArn: java.lang.String,
     id: java.lang.String,
     serviceRole: java.lang.String,
@@ -52,7 +54,7 @@ object GetComputeEnvironmentResult {
     statusReason: java.lang.String,
     `type`: java.lang.String
   ): GetComputeEnvironmentResult = {
-    val __obj = js.Dynamic.literal(arn = arn, ecsClusterArn = ecsClusterArn, id = id, serviceRole = serviceRole, state = state, status = status, statusReason = statusReason)
+    val __obj = js.Dynamic.literal(arn = arn, computeEnvironmentName = computeEnvironmentName, ecsClusterArn = ecsClusterArn, id = id, serviceRole = serviceRole, state = state, status = status, statusReason = statusReason)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GetComputeEnvironmentResult]
   }

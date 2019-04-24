@@ -23,6 +23,10 @@ trait GetClusterResult extends js.Object {
     */
   val bucketName: java.lang.String
   /**
+    * The cluster identifier
+    */
+  val clusterIdentifier: java.lang.String
+  /**
     * The name of the parameter group to be associated with this cluster
     */
   val clusterParameterGroupName: java.lang.String
@@ -112,6 +116,10 @@ trait GetClusterResult extends js.Object {
     */
   val s3KeyPrefix: java.lang.String
   /**
+    * The tags associated to the cluster
+    */
+  val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  /**
     * The VPC Id associated with the cluster
     */
   val vpcId: java.lang.String
@@ -128,6 +136,7 @@ object GetClusterResult {
     automatedSnapshotRetentionPeriod: scala.Double,
     availabilityZone: java.lang.String,
     bucketName: java.lang.String,
+    clusterIdentifier: java.lang.String,
     clusterParameterGroupName: java.lang.String,
     clusterPublicKey: java.lang.String,
     clusterRevisionNumber: java.lang.String,
@@ -152,10 +161,11 @@ object GetClusterResult {
     publiclyAccessible: scala.Boolean,
     s3KeyPrefix: java.lang.String,
     vpcId: java.lang.String,
-    vpcSecurityGroupIds: js.Array[java.lang.String]
+    vpcSecurityGroupIds: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(allowVersionUpgrade = allowVersionUpgrade, automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod, availabilityZone = availabilityZone, bucketName = bucketName, clusterParameterGroupName = clusterParameterGroupName, clusterPublicKey = clusterPublicKey, clusterRevisionNumber = clusterRevisionNumber, clusterSecurityGroups = clusterSecurityGroups, clusterSubnetGroupName = clusterSubnetGroupName, clusterType = clusterType, clusterVersion = clusterVersion, databaseName = databaseName, elasticIp = elasticIp, enableLogging = enableLogging, encrypted = encrypted, endpoint = endpoint, enhancedVpcRouting = enhancedVpcRouting, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, nodeType = nodeType, numberOfNodes = numberOfNodes, port = port, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, s3KeyPrefix = s3KeyPrefix, vpcId = vpcId, vpcSecurityGroupIds = vpcSecurityGroupIds)
-  
+    val __obj = js.Dynamic.literal(allowVersionUpgrade = allowVersionUpgrade, automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod, availabilityZone = availabilityZone, bucketName = bucketName, clusterIdentifier = clusterIdentifier, clusterParameterGroupName = clusterParameterGroupName, clusterPublicKey = clusterPublicKey, clusterRevisionNumber = clusterRevisionNumber, clusterSecurityGroups = clusterSecurityGroups, clusterSubnetGroupName = clusterSubnetGroupName, clusterType = clusterType, clusterVersion = clusterVersion, databaseName = databaseName, elasticIp = elasticIp, enableLogging = enableLogging, encrypted = encrypted, endpoint = endpoint, enhancedVpcRouting = enhancedVpcRouting, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, nodeType = nodeType, numberOfNodes = numberOfNodes, port = port, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, s3KeyPrefix = s3KeyPrefix, vpcId = vpcId, vpcSecurityGroupIds = vpcSecurityGroupIds)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetClusterResult]
   }
 }

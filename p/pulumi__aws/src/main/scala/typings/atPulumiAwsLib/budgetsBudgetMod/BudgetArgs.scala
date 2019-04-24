@@ -41,6 +41,16 @@ trait BudgetArgs extends js.Object {
     */
   val namePrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
+    */
+  val notifications: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorNotificationType]
+      ]
+    ]
+  ] = js.undefined
+  /**
     * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
     */
   val timePeriodEnd: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -67,6 +77,11 @@ object BudgetArgs {
     costTypes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IncludeCreditIncludeDiscount] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    notifications: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorNotificationType]
+      ]
+    ] = null,
     timePeriodEnd: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): BudgetArgs = {
     val __obj = js.Dynamic.literal(budgetType = budgetType.asInstanceOf[js.Any], limitAmount = limitAmount.asInstanceOf[js.Any], limitUnit = limitUnit.asInstanceOf[js.Any], timePeriodStart = timePeriodStart.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])
@@ -75,6 +90,7 @@ object BudgetArgs {
     if (costTypes != null) __obj.updateDynamic("costTypes")(costTypes.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
     if (timePeriodEnd != null) __obj.updateDynamic("timePeriodEnd")(timePeriodEnd.asInstanceOf[js.Any])
     __obj.asInstanceOf[BudgetArgs]
   }

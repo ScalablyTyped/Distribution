@@ -78,6 +78,7 @@ class QuestionSelectBase protected () extends Question {
     */
   val visibleChoices: js.Array[ItemValue] = js.native
   /* protected */ def addToVisibleChoices(items: js.Array[ItemValue]): scala.Unit = js.native
+  /* protected */ def canClearValueAnUnknow(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def canUseFilteredChoices(): scala.Boolean = js.native
   /* protected */ def clearDisabledValuesCore(): scala.Unit = js.native
   /* protected */ def clearIncorrectValuesCore(): scala.Unit = js.native

@@ -187,7 +187,7 @@ trait SeriesGauge extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markArea
     */
   var markArea: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -196,7 +196,7 @@ trait SeriesGauge extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markLine
     */
   var markLine: js.UndefOr[
-    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -204,7 +204,9 @@ trait SeriesGauge extends Series {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * The maximum data value which map to
     * [maxAngle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.maxAngle)
@@ -326,9 +328,9 @@ object SeriesGauge {
     endAngle: scala.Int | scala.Double = null,
     id: java.lang.String = null,
     itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
-    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
-    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     name: java.lang.String = null,

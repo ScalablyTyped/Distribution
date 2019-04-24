@@ -26,6 +26,7 @@ trait GetClusterResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val name: java.lang.String
   /**
     * The platform version for the cluster.
     */
@@ -52,12 +53,13 @@ object GetClusterResult {
     createdAt: java.lang.String,
     endpoint: java.lang.String,
     id: java.lang.String,
+    name: java.lang.String,
     platformVersion: java.lang.String,
     roleArn: java.lang.String,
     version: java.lang.String,
     vpcConfig: atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccessSecurityGroupIds
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, endpoint = endpoint, id = id, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
+    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, endpoint = endpoint, id = id, name = name, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
   
     __obj.asInstanceOf[GetClusterResult]
   }

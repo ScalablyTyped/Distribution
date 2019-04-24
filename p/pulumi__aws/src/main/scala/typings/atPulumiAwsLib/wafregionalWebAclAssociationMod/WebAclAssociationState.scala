@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait WebAclAssociationState extends js.Object {
   /**
-    * Application Load Balancer ARN to associate with.
+    * ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.
     */
   val resourceArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

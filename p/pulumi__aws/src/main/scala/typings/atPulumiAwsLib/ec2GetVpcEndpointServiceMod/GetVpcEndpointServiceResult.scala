@@ -30,6 +30,7 @@ trait GetVpcEndpointServiceResult extends js.Object {
     * The private DNS name for the service.
     */
   val privateDnsName: java.lang.String
+  val service: js.UndefOr[java.lang.String] = js.undefined
   val serviceName: java.lang.String
   /**
     * The service type, `Gateway` or `Interface`.
@@ -52,10 +53,11 @@ object GetVpcEndpointServiceResult {
     privateDnsName: java.lang.String,
     serviceName: java.lang.String,
     serviceType: java.lang.String,
-    vpcEndpointPolicySupported: scala.Boolean
+    vpcEndpointPolicySupported: scala.Boolean,
+    service: java.lang.String = null
   ): GetVpcEndpointServiceResult = {
     val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired, availabilityZones = availabilityZones, baseEndpointDnsNames = baseEndpointDnsNames, id = id, owner = owner, privateDnsName = privateDnsName, serviceName = serviceName, serviceType = serviceType, vpcEndpointPolicySupported = vpcEndpointPolicySupported)
-  
+    if (service != null) __obj.updateDynamic("service")(service)
     __obj.asInstanceOf[GetVpcEndpointServiceResult]
   }
 }

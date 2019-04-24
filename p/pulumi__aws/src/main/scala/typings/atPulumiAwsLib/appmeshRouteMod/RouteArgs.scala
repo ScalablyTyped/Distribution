@@ -17,7 +17,7 @@ trait RouteArgs extends js.Object {
   /**
     * The route specification to apply.
     */
-  val spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch]
+  val spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteTcpRoute]
   /**
     * The name of the virtual router in which to create the route.
     */
@@ -28,7 +28,7 @@ object RouteArgs {
   @scala.inline
   def apply(
     meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch],
+    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteTcpRoute],
     virtualRouterName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RouteArgs = {

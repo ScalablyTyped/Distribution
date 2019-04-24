@@ -14,12 +14,17 @@ trait GetSecretsResult extends js.Object {
     * Map containing each `secret` `name` as the key with its decrypted plaintext value
     */
   val plaintext: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  val secrets: js.Array[atPulumiAwsLib.Anon_Context]
 }
 
 object GetSecretsResult {
   @scala.inline
-  def apply(id: java.lang.String, plaintext: org.scalablytyped.runtime.StringDictionary[java.lang.String]): GetSecretsResult = {
-    val __obj = js.Dynamic.literal(id = id, plaintext = plaintext)
+  def apply(
+    id: java.lang.String,
+    plaintext: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    secrets: js.Array[atPulumiAwsLib.Anon_Context]
+  ): GetSecretsResult = {
+    val __obj = js.Dynamic.literal(id = id, plaintext = plaintext, secrets = secrets)
   
     __obj.asInstanceOf[GetSecretsResult]
   }

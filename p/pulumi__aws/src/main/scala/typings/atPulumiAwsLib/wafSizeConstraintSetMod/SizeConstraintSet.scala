@@ -26,7 +26,7 @@ class SizeConstraintSet protected ()
   /**
     * Specifies the parts of web requests that you want to inspect the size of.
     */
-  val sizeConstraints: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ComparisonOperator]]] = js.native
+  val sizeConstraints: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatch]]] = js.native
 }
 
 /* static members */

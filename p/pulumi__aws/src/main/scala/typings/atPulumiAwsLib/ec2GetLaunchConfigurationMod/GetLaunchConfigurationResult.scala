@@ -47,6 +47,10 @@ trait GetLaunchConfigurationResult extends js.Object {
     */
   val keyName: java.lang.String
   /**
+    * The Name of the launch configuration.
+    */
+  val name: java.lang.String
+  /**
     * The Tenancy of the instance.
     */
   val placementTenancy: java.lang.String
@@ -89,6 +93,7 @@ object GetLaunchConfigurationResult {
     imageId: java.lang.String,
     instanceType: java.lang.String,
     keyName: java.lang.String,
+    name: java.lang.String,
     placementTenancy: java.lang.String,
     rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSize],
     securityGroups: js.Array[java.lang.String],
@@ -97,7 +102,7 @@ object GetLaunchConfigurationResult {
     vpcClassicLinkId: java.lang.String,
     vpcClassicLinkSecurityGroups: js.Array[java.lang.String]
   ): GetLaunchConfigurationResult = {
-    val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, enableMonitoring = enableMonitoring, ephemeralBlockDevices = ephemeralBlockDevices, iamInstanceProfile = iamInstanceProfile, id = id, imageId = imageId, instanceType = instanceType, keyName = keyName, placementTenancy = placementTenancy, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, spotPrice = spotPrice, userData = userData, vpcClassicLinkId = vpcClassicLinkId, vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups)
+    val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, enableMonitoring = enableMonitoring, ephemeralBlockDevices = ephemeralBlockDevices, iamInstanceProfile = iamInstanceProfile, id = id, imageId = imageId, instanceType = instanceType, keyName = keyName, name = name, placementTenancy = placementTenancy, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, spotPrice = spotPrice, userData = userData, vpcClassicLinkId = vpcClassicLinkId, vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups)
   
     __obj.asInstanceOf[GetLaunchConfigurationResult]
   }

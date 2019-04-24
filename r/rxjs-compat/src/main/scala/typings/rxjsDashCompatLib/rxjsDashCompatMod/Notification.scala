@@ -9,9 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Notification[T] protected ()
   extends rxjsLib.rxjsMod.Notification[T] {
-  def this(kind: rxjsLib.internalNotificationMod.NotificationKind) = this()
-  def this(kind: rxjsLib.internalNotificationMod.NotificationKind, value: T) = this()
-  def this(kind: rxjsLib.internalNotificationMod.NotificationKind, value: T, error: js.Any) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.C) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.E) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.N) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.C, value: T) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.E, value: T) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.N, value: T) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.C, value: T, error: js.Any) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.E, value: T, error: js.Any) = this()
+  def this(kind: rxjsDashCompatLib.rxjsDashCompatLibStrings.N, value: T, error: js.Any) = this()
 }
 
 /* static members */

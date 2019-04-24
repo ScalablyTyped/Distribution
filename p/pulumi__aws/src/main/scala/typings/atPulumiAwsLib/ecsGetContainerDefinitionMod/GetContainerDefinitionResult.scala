@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetContainerDefinitionResult extends js.Object {
+  val containerName: java.lang.String
   /**
     * The CPU limit for this container definition
     */
@@ -42,11 +43,13 @@ trait GetContainerDefinitionResult extends js.Object {
     * The soft limit (in MiB) of memory to reserve for the container. When system memory is under contention, Docker attempts to keep the container memory to this soft limit
     */
   val memoryReservation: scala.Double
+  val taskDefinition: java.lang.String
 }
 
 object GetContainerDefinitionResult {
   @scala.inline
   def apply(
+    containerName: java.lang.String,
     cpu: scala.Double,
     disableNetworking: scala.Boolean,
     dockerLabels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
@@ -55,9 +58,10 @@ object GetContainerDefinitionResult {
     image: java.lang.String,
     imageDigest: java.lang.String,
     memory: scala.Double,
-    memoryReservation: scala.Double
+    memoryReservation: scala.Double,
+    taskDefinition: java.lang.String
   ): GetContainerDefinitionResult = {
-    val __obj = js.Dynamic.literal(cpu = cpu, disableNetworking = disableNetworking, dockerLabels = dockerLabels, environment = environment, id = id, image = image, imageDigest = imageDigest, memory = memory, memoryReservation = memoryReservation)
+    val __obj = js.Dynamic.literal(containerName = containerName, cpu = cpu, disableNetworking = disableNetworking, dockerLabels = dockerLabels, environment = environment, id = id, image = image, imageDigest = imageDigest, memory = memory, memoryReservation = memoryReservation, taskDefinition = taskDefinition)
   
     __obj.asInstanceOf[GetContainerDefinitionResult]
   }

@@ -14,6 +14,7 @@ trait Anon_BackendsListener extends js.Object {
     ]
   ] = js.undefined
   var listener: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_HealthCheckPortMapping]] = js.undefined
+  var logging: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_AccessLogAnonFileAnonPathInput]] = js.undefined
   var serviceDiscovery: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_DnsAnonHostnameInput]] = js.undefined
 }
 
@@ -26,11 +27,13 @@ object Anon_BackendsListener {
       ]
     ] = null,
     listener: atPulumiPulumiLib.outputMod.Input[Anon_HealthCheckPortMapping] = null,
+    logging: atPulumiPulumiLib.outputMod.Input[Anon_AccessLogAnonFileAnonPathInput] = null,
     serviceDiscovery: atPulumiPulumiLib.outputMod.Input[Anon_DnsAnonHostnameInput] = null
   ): Anon_BackendsListener = {
     val __obj = js.Dynamic.literal()
     if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])
     if (listener != null) __obj.updateDynamic("listener")(listener.asInstanceOf[js.Any])
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (serviceDiscovery != null) __obj.updateDynamic("serviceDiscovery")(serviceDiscovery.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BackendsListener]
   }

@@ -20,6 +20,7 @@ trait GetClusterResult extends js.Object {
     * (Memcached only) The DNS name of the cache cluster without the port appended.
     */
   val clusterAddress: java.lang.String
+  val clusterId: java.lang.String
   /**
     * (Memcached only) The configuration endpoint to allow host discovery.
     */
@@ -102,6 +103,7 @@ object GetClusterResult {
     availabilityZone: java.lang.String,
     cacheNodes: js.Array[atPulumiAwsLib.Anon_Address],
     clusterAddress: java.lang.String,
+    clusterId: java.lang.String,
     configurationEndpoint: java.lang.String,
     engine: java.lang.String,
     engineVersion: java.lang.String,
@@ -120,7 +122,7 @@ object GetClusterResult {
     subnetGroupName: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, cacheNodes = cacheNodes, clusterAddress = clusterAddress, configurationEndpoint = configurationEndpoint, engine = engine, engineVersion = engineVersion, id = id, maintenanceWindow = maintenanceWindow, nodeType = nodeType, notificationTopicArn = notificationTopicArn, numCacheNodes = numCacheNodes, parameterGroupName = parameterGroupName, port = port, replicationGroupId = replicationGroupId, securityGroupIds = securityGroupIds, securityGroupNames = securityGroupNames, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow, subnetGroupName = subnetGroupName, tags = tags)
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, cacheNodes = cacheNodes, clusterAddress = clusterAddress, clusterId = clusterId, configurationEndpoint = configurationEndpoint, engine = engine, engineVersion = engineVersion, id = id, maintenanceWindow = maintenanceWindow, nodeType = nodeType, notificationTopicArn = notificationTopicArn, numCacheNodes = numCacheNodes, parameterGroupName = parameterGroupName, port = port, replicationGroupId = replicationGroupId, securityGroupIds = securityGroupIds, securityGroupNames = securityGroupNames, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow, subnetGroupName = subnetGroupName, tags = tags)
   
     __obj.asInstanceOf[GetClusterResult]
   }

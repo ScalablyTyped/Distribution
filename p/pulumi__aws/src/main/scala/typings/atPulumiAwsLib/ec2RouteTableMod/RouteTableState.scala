@@ -17,7 +17,7 @@ trait RouteTableState extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
-    * A list of route objects. Their keys are documented below.
+    * A list of route objects. Their keys are documented below. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val routes: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[

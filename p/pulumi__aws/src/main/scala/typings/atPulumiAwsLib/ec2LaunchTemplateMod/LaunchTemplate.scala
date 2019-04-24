@@ -60,6 +60,10 @@ class LaunchTemplate protected ()
     */
   val elasticGpuSpecifications: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TypeString]]] = js.native
   /**
+    * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+    */
+  val elasticInferenceAccelerator: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeString]] = js.native
+  /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */

@@ -54,8 +54,12 @@ trait LaunchTemplateState extends js.Object {
     * below for more details.
     */
   val elasticGpuSpecifications: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]]]
   ] = js.undefined
+  /**
+    * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+    */
+  val elasticInferenceAccelerator: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]] = js.undefined
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
@@ -184,7 +188,8 @@ object LaunchTemplateState {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     disableApiTermination: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     ebsOptimized: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    elasticGpuSpecifications: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]]] = null,
+    elasticGpuSpecifications: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString]]] = null,
+    elasticInferenceAccelerator: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInputString] = null,
     iamInstanceProfile: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnNameInput] = null,
     imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     instanceInitiatedShutdownBehavior: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -228,6 +233,7 @@ object LaunchTemplateState {
     if (disableApiTermination != null) __obj.updateDynamic("disableApiTermination")(disableApiTermination.asInstanceOf[js.Any])
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
     if (elasticGpuSpecifications != null) __obj.updateDynamic("elasticGpuSpecifications")(elasticGpuSpecifications.asInstanceOf[js.Any])
+    if (elasticInferenceAccelerator != null) __obj.updateDynamic("elasticInferenceAccelerator")(elasticInferenceAccelerator.asInstanceOf[js.Any])
     if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
     if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])

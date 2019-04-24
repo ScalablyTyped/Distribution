@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait GetPolicyResult extends js.Object {
   /**
+    * The Amazon Resource Name (ARN) specifying the policy.
+    */
+  val arn: java.lang.String
+  /**
     * The description of the policy.
     */
   val description: java.lang.String
@@ -31,13 +35,14 @@ trait GetPolicyResult extends js.Object {
 object GetPolicyResult {
   @scala.inline
   def apply(
+    arn: java.lang.String,
     description: java.lang.String,
     id: java.lang.String,
     name: java.lang.String,
     path: java.lang.String,
     policy: java.lang.String
   ): GetPolicyResult = {
-    val __obj = js.Dynamic.literal(description = description, id = id, name = name, path = path, policy = policy)
+    val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, name = name, path = path, policy = policy)
   
     __obj.asInstanceOf[GetPolicyResult]
   }

@@ -6,34 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HealthyThresholdInterval extends js.Object {
-  var healthyThreshold: js.UndefOr[scala.Double] = js.undefined
-  var interval: js.UndefOr[scala.Double] = js.undefined
-  var matcher: java.lang.String
-  var path: java.lang.String
-  var port: js.UndefOr[java.lang.String] = js.undefined
-  var protocol: js.UndefOr[java.lang.String] = js.undefined
+  var healthyThreshold: scala.Double
+  var interval: scala.Double
+  var target: java.lang.String
   var timeout: scala.Double
-  var unhealthyThreshold: js.UndefOr[scala.Double] = js.undefined
+  var unhealthyThreshold: scala.Double
 }
 
 object Anon_HealthyThresholdInterval {
   @scala.inline
   def apply(
-    matcher: java.lang.String,
-    path: java.lang.String,
+    healthyThreshold: scala.Double,
+    interval: scala.Double,
+    target: java.lang.String,
     timeout: scala.Double,
-    healthyThreshold: scala.Int | scala.Double = null,
-    interval: scala.Int | scala.Double = null,
-    port: java.lang.String = null,
-    protocol: java.lang.String = null,
-    unhealthyThreshold: scala.Int | scala.Double = null
+    unhealthyThreshold: scala.Double
   ): Anon_HealthyThresholdInterval = {
-    val __obj = js.Dynamic.literal(matcher = matcher, path = path, timeout = timeout)
-    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port)
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
-    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold, interval = interval, target = target, timeout = timeout, unhealthyThreshold = unhealthyThreshold)
+  
     __obj.asInstanceOf[Anon_HealthyThresholdInterval]
   }
 }

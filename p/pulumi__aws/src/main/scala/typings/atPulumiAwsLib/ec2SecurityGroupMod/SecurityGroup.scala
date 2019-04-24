@@ -33,11 +33,13 @@ class SecurityGroup protected ()
   /**
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
+    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val egress: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
+    * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
   val ingress: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
   /**

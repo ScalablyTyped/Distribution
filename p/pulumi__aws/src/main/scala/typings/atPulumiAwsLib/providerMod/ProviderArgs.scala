@@ -16,7 +16,7 @@ trait ProviderArgs extends js.Object {
   ] = js.undefined
   val assumeRole: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExternalIdPolicyRoleArn]] = js.undefined
   val endpoints: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmApigateway]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmAcmpca]]]
   ] = js.undefined
   val forbiddenAccountIds: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
@@ -84,7 +84,7 @@ object ProviderArgs {
     accessKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     allowedAccountIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     assumeRole: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExternalIdPolicyRoleArn] = null,
-    endpoints: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmApigateway]]] = null,
+    endpoints: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmAcmpca]]] = null,
     forbiddenAccountIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     insecure: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     maxRetries: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,

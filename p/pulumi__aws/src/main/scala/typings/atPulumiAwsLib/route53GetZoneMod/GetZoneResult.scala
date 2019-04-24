@@ -23,6 +23,7 @@ trait GetZoneResult extends js.Object {
     * The list of DNS name servers for the Hosted Zone.
     */
   val nameServers: js.Array[java.lang.String]
+  val privateZone: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * the number of Record Set in the Hosted Zone
     */
@@ -43,10 +44,11 @@ object GetZoneResult {
     resourceRecordSetCount: scala.Double,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String,
-    zoneId: java.lang.String
+    zoneId: java.lang.String,
+    privateZone: js.UndefOr[scala.Boolean] = js.undefined
   ): GetZoneResult = {
     val __obj = js.Dynamic.literal(callerReference = callerReference, comment = comment, id = id, name = name, nameServers = nameServers, resourceRecordSetCount = resourceRecordSetCount, tags = tags, vpcId = vpcId, zoneId = zoneId)
-  
+    if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone)
     __obj.asInstanceOf[GetZoneResult]
   }
 }

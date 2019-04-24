@@ -35,6 +35,10 @@ class Mesh protected ()
     * The name to use for the service mesh.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The service mesh specification to apply.
+    */
+  val spec: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EgressFilter]] = js.native
 }
 
 /* static members */
