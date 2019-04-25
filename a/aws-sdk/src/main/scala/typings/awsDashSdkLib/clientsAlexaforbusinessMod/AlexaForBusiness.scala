@@ -241,6 +241,29 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateContactResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a gateway group with the specified details.
+    */
+  def createGatewayGroup(): awsDashSdkLib.libRequestMod.Request[CreateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createGatewayGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a gateway group with the specified details.
+    */
+  def createGatewayGroup(params: CreateGatewayGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createGatewayGroup(
+    params: CreateGatewayGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates a new room profile with the specified details.
     */
   def createProfile(): awsDashSdkLib.libRequestMod.Request[CreateProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -447,6 +470,29 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a gateway group.
+    */
+  def deleteGatewayGroup(): awsDashSdkLib.libRequestMod.Request[DeleteGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteGatewayGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a gateway group.
+    */
+  def deleteGatewayGroup(params: DeleteGatewayGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteGatewayGroup(
+    params: DeleteGatewayGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a room profile by the profile ARN.
     */
@@ -839,6 +885,52 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Retrieves the details of a gateway.
+    */
+  def getGateway(): awsDashSdkLib.libRequestMod.Request[GetGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getGateway(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetGatewayResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the details of a gateway.
+    */
+  def getGateway(params: GetGatewayRequest): awsDashSdkLib.libRequestMod.Request[GetGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getGateway(
+    params: GetGatewayRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetGatewayResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the details of a gateway group.
+    */
+  def getGatewayGroup(): awsDashSdkLib.libRequestMod.Request[GetGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getGatewayGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves the details of a gateway group.
+    */
+  def getGatewayGroup(params: GetGatewayGroupRequest): awsDashSdkLib.libRequestMod.Request[GetGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getGatewayGroup(
+    params: GetGatewayGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Retrieves the configured values for the user enrollment invitation email template.
     */
   def getInvitationConfiguration(): awsDashSdkLib.libRequestMod.Request[GetInvitationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1014,6 +1106,52 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of gateway group summaries. Use GetGatewayGroup to retrieve details of a specific gateway group.
+    */
+  def listGatewayGroups(): awsDashSdkLib.libRequestMod.Request[ListGatewayGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listGatewayGroups(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListGatewayGroupsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListGatewayGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of gateway group summaries. Use GetGatewayGroup to retrieve details of a specific gateway group.
+    */
+  def listGatewayGroups(params: ListGatewayGroupsRequest): awsDashSdkLib.libRequestMod.Request[ListGatewayGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listGatewayGroups(
+    params: ListGatewayGroupsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListGatewayGroupsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListGatewayGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of gateway summaries. Use GetGateway to retrieve details of a specific gateway. An optional gateway group ARN can be provided to only retrieve gateway summaries of gateways that are associated with that gateway group ARN.
+    */
+  def listGateways(): awsDashSdkLib.libRequestMod.Request[ListGatewaysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listGateways(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListGatewaysResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListGatewaysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of gateway summaries. Use GetGateway to retrieve details of a specific gateway. An optional gateway group ARN can be provided to only retrieve gateway summaries of gateways that are associated with that gateway group ARN.
+    */
+  def listGateways(params: ListGatewaysRequest): awsDashSdkLib.libRequestMod.Request[ListGatewaysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listGateways(
+    params: ListGatewaysRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListGatewaysResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListGatewaysResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists all enabled skills in a specific skill group.
     */
@@ -1704,6 +1842,52 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the details of a gateway. If any optional field is not provided, the existing corresponding value is left unmodified.
+    */
+  def updateGateway(): awsDashSdkLib.libRequestMod.Request[UpdateGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateGateway(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateGatewayResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the details of a gateway. If any optional field is not provided, the existing corresponding value is left unmodified.
+    */
+  def updateGateway(params: UpdateGatewayRequest): awsDashSdkLib.libRequestMod.Request[UpdateGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateGateway(
+    params: UpdateGatewayRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateGatewayResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateGatewayResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the details of a gateway group. If any optional field is not provided, the existing corresponding value is left unmodified.
+    */
+  def updateGatewayGroup(): awsDashSdkLib.libRequestMod.Request[UpdateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateGatewayGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the details of a gateway group. If any optional field is not provided, the existing corresponding value is left unmodified.
+    */
+  def updateGatewayGroup(params: UpdateGatewayGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateGatewayGroup(
+    params: UpdateGatewayGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateGatewayGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing room profile by room profile ARN.
     */

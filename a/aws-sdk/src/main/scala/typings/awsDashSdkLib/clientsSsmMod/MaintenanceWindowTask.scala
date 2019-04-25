@@ -15,7 +15,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var LoggingInfo: js.UndefOr[LoggingInfo] = js.undefined
   /**
-    * The maximum number of targets this task can be run for in parallel.
+    * The maximum number of targets this task can be run for, in parallel.
     */
   var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var Type: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**
-    * The Maintenance Window ID where the task is registered.
+    * The ID of the Maintenance Window where the task is registered.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   /**

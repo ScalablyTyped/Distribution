@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Block extends js.Object {
   /**
-    * The type of text that's recognized in a block. In text-detection operations, the following types are returned:    PAGE - Contains a list of the LINE Block objects that are detected on a specific page.    WORD - One or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of equally spaced words.   In text analysis operations, the following types are returned:    PAGE - Contains a list of child Block objects that are detected on a specific page.    KEY_VALUE_SET - Stores the KEY and VALUE Block objects for a field that's detected in a document. Use the EntityType field to determine if a KEY_VALUE_SET object is a KEY Block object or a VALUE Block object.     WORD - One or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words.    TABLE - A table that's detected in the document.    CELL - A cell within a detected table. The cell is the parent of the block that contains the text in the cell.  
+    * The type of text that's recognized in a block. In text-detection operations, the following types are returned:    PAGE - Contains a list of the LINE Block objects that are detected on a document page.    WORD - A word detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that's detected on a document page.   In text analysis operations, the following types are returned:    PAGE - Contains a list of child Block objects that are detected on a document page.    KEY_VALUE_SET - Stores the KEY and VALUE Block objects for a field that's detected on a document page. Use the EntityType field to determine if a KEY_VALUE_SET object is a KEY Block object or a VALUE Block object.     WORD - A word detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces that's detected on a document page.    LINE - A string of tab-delimited, contiguous words that's detected on a document page.    TABLE - A table that's detected on a document page. A table is any grid-based information with 2 or more rows or columns with a cell span of 1 row and 1 column each.     CELL - A cell within a detected table. The cell is the parent of the block that contains the text in the cell.    SELECTION_ELEMENT - A selectable element such as a radio button or checkbox that's detected on a document page. Use the value of SelectionStatus to determine the status of the selection element.  
     */
   var BlockType: js.UndefOr[BlockType] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait Block extends js.Object {
     */
   var Id: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The page in which a block was detected.
+    * The page in which a block was detected. Page is returned by asynchronous operations. Page values greater than 1 are only returned for multi-page documents that are in PDF format. A scanned image (JPG/PNG), even if it contains multiple document pages, is always considered to be a single-page document and the value of Page is always 1. Synchronous operations don't return Page as every input document is considered to be a single-page document.
     */
   var Page: js.UndefOr[UInteger] = js.undefined
   /**
@@ -50,6 +50,10 @@ trait Block extends js.Object {
     * The number of rows that a table spans. RowSpan isn't returned by DetectDocumentText and GetDocumentTextDetection.
     */
   var RowSpan: js.UndefOr[UInteger] = js.undefined
+  /**
+    * The selection status of a selectable element such as a radio button or checkbox. 
+    */
+  var SelectionStatus: js.UndefOr[SelectionStatus] = js.undefined
   /**
     * The word or line of text that's recognized by Amazon Textract. 
     */
@@ -70,6 +74,7 @@ object Block {
     Relationships: RelationshipList = null,
     RowIndex: js.UndefOr[UInteger] = js.undefined,
     RowSpan: js.UndefOr[UInteger] = js.undefined,
+    SelectionStatus: SelectionStatus = null,
     Text: String = null
   ): Block = {
     val __obj = js.Dynamic.literal()
@@ -84,6 +89,7 @@ object Block {
     if (Relationships != null) __obj.updateDynamic("Relationships")(Relationships)
     if (!js.isUndefined(RowIndex)) __obj.updateDynamic("RowIndex")(RowIndex)
     if (!js.isUndefined(RowSpan)) __obj.updateDynamic("RowSpan")(RowSpan)
+    if (SelectionStatus != null) __obj.updateDynamic("SelectionStatus")(SelectionStatus.asInstanceOf[js.Any])
     if (Text != null) __obj.updateDynamic("Text")(Text)
     __obj.asInstanceOf[Block]
   }

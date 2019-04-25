@@ -44,6 +44,10 @@ trait SMBFileShareInfo extends js.Object {
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   var Role: js.UndefOr[Role] = js.undefined
   /**
+    * If this value is set to "true", indicates that ACL (access control list) is enabled on the SMB file share. If it is set to "false", it indicates that file and directory permissions are mapped to the POSIX permission.
+    */
+  var SMBACLEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * A list of up to 50 tags assigned to the SMB file share, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
     */
   var Tags: js.UndefOr[Tags] = js.undefined
@@ -72,6 +76,7 @@ object SMBFileShareInfo {
     ReadOnly: js.UndefOr[Boolean] = js.undefined,
     RequesterPays: js.UndefOr[Boolean] = js.undefined,
     Role: Role = null,
+    SMBACLEnabled: js.UndefOr[Boolean] = js.undefined,
     Tags: Tags = null,
     ValidUserList: FileShareUserList = null
   ): SMBFileShareInfo = {
@@ -92,6 +97,7 @@ object SMBFileShareInfo {
     if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly)
     if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays)
     if (Role != null) __obj.updateDynamic("Role")(Role)
+    if (!js.isUndefined(SMBACLEnabled)) __obj.updateDynamic("SMBACLEnabled")(SMBACLEnabled)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (ValidUserList != null) __obj.updateDynamic("ValidUserList")(ValidUserList)
     __obj.asInstanceOf[SMBFileShareInfo]

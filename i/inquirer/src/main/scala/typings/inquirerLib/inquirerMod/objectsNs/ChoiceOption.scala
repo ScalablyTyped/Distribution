@@ -12,6 +12,7 @@ trait ChoiceOption
   var extra: js.UndefOr[js.Any] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
+  var short: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
@@ -24,6 +25,7 @@ object ChoiceOption {
     extra: js.Any = null,
     key: java.lang.String = null,
     name: java.lang.String = null,
+    short: java.lang.String = null,
     `type`: java.lang.String = null,
     value: js.Any = null
   ): ChoiceOption = {
@@ -33,6 +35,7 @@ object ChoiceOption {
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (key != null) __obj.updateDynamic("key")(key)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (short != null) __obj.updateDynamic("short")(short)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ChoiceOption]

@@ -43,6 +43,10 @@ trait UpdateSMBFileShareInput extends js.Object {
     */
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   /**
+    * Set this value to "true to enable ACL (access control list) on the SMB file share. Set it to "false" to map file and directory permissions to the POSIX permissions.
+    */
+  var SMBACLEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
     */
   var ValidUserList: js.UndefOr[FileShareUserList] = js.undefined
@@ -60,6 +64,7 @@ object UpdateSMBFileShareInput {
     ObjectACL: ObjectACL = null,
     ReadOnly: js.UndefOr[Boolean] = js.undefined,
     RequesterPays: js.UndefOr[Boolean] = js.undefined,
+    SMBACLEnabled: js.UndefOr[Boolean] = js.undefined,
     ValidUserList: FileShareUserList = null
   ): UpdateSMBFileShareInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN)
@@ -71,6 +76,7 @@ object UpdateSMBFileShareInput {
     if (ObjectACL != null) __obj.updateDynamic("ObjectACL")(ObjectACL.asInstanceOf[js.Any])
     if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly)
     if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays)
+    if (!js.isUndefined(SMBACLEnabled)) __obj.updateDynamic("SMBACLEnabled")(SMBACLEnabled)
     if (ValidUserList != null) __obj.updateDynamic("ValidUserList")(ValidUserList)
     __obj.asInstanceOf[UpdateSMBFileShareInput]
   }

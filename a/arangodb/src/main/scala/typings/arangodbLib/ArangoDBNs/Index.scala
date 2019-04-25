@@ -11,6 +11,7 @@ trait Index[T /* <: js.Object */] extends js.Object {
   var fields: js.Array[java.lang.String]
   var id: java.lang.String
   var isNewlyCreated: scala.Boolean
+  var name: java.lang.String
   var selectivityEstimate: scala.Double
   var sparse: scala.Boolean
   var `type`: IndexType
@@ -25,12 +26,13 @@ object Index {
     fields: js.Array[java.lang.String],
     id: java.lang.String,
     isNewlyCreated: scala.Boolean,
+    name: java.lang.String,
     selectivityEstimate: scala.Double,
     sparse: scala.Boolean,
     `type`: IndexType,
     unique: scala.Boolean
   ): Index[T] = {
-    val __obj = js.Dynamic.literal(code = code, deduplicate = deduplicate, fields = fields, id = id, isNewlyCreated = isNewlyCreated, selectivityEstimate = selectivityEstimate, sparse = sparse, unique = unique)
+    val __obj = js.Dynamic.literal(code = code, deduplicate = deduplicate, fields = fields, id = id, isNewlyCreated = isNewlyCreated, name = name, selectivityEstimate = selectivityEstimate, sparse = sparse, unique = unique)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Index[T]]
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DetectDocumentTextRequest extends js.Object {
   /**
-    * The input document as base64-encoded bytes or an Amazon S3 object. If you use the AWS CLI to call Amazon Textract operations, you can't pass image bytes. The document must be an image in JPG or PNG format.
+    * The input document as base64-encoded bytes or an Amazon S3 object. If you use the AWS CLI to call Amazon Textract operations, you can't pass image bytes. The document must be an image in JPG or PNG format. If you are using an AWS SDK to call Amazon Textract, you might not need to base64-encode image bytes passed using the Bytes field. 
     */
   var Document: awsDashSdkLib.clientsTextractMod.Document
 }

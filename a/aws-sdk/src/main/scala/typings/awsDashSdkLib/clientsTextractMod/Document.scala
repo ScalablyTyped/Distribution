@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Document extends js.Object {
   /**
-    * A blob of documents bytes. The maximum size of a document that's provided in a blob of bytes is 5 MB.
+    * A blob of base-64 encoded documents bytes. The maximum size of a document that's provided in a blob of bytes is 5 MB. The document bytes must be in PNG or JPG format. If you are using an AWS SDK to call Amazon Textract, you might not need to base64-encode image bytes passed using the Bytes field. 
     */
   var Bytes: js.UndefOr[ImageBlob] = js.undefined
   /**

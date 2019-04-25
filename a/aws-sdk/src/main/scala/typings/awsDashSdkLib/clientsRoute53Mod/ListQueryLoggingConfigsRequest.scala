@@ -11,7 +11,7 @@ trait ListQueryLoggingConfigsRequest extends js.Object {
     */
   var HostedZoneId: js.UndefOr[ResourceId] = js.undefined
   /**
-    * (Optional) The maximum number of query logging configurations that you want Amazon Route 53 to return in response to the current request. If the current AWS account has more than MaxResults configurations, use the value of ListQueryLoggingConfigsResponse$NextToken in the response to get the next page of results. If you don't specify a value for MaxResults, Route 53 returns up to 100 configurations.
+    * (Optional) The maximum number of query logging configurations that you want Amazon Route 53 to return in response to the current request. If the current AWS account has more than MaxResults configurations, use the value of NextToken in the response to get the next page of results. If you don't specify a value for MaxResults, Route 53 returns up to 100 configurations.
     */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**

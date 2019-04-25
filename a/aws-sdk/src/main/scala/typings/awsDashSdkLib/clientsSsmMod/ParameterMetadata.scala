@@ -31,6 +31,14 @@ trait ParameterMetadata extends js.Object {
     */
   var Name: js.UndefOr[PSParameterName] = js.undefined
   /**
+    * A list of policies associated with a parameter.
+    */
+  var Policies: js.UndefOr[ParameterPolicyList] = js.undefined
+  /**
+    * The parameter tier.
+    */
+  var Tier: js.UndefOr[ParameterTier] = js.undefined
+  /**
     * The type of parameter. Valid parameter types include the following: String, String list, Secure string.
     */
   var Type: js.UndefOr[ParameterType] = js.undefined
@@ -49,6 +57,8 @@ object ParameterMetadata {
     LastModifiedDate: DateTime = null,
     LastModifiedUser: String = null,
     Name: PSParameterName = null,
+    Policies: ParameterPolicyList = null,
+    Tier: ParameterTier = null,
     Type: ParameterType = null,
     Version: js.UndefOr[PSParameterVersion] = js.undefined
   ): ParameterMetadata = {
@@ -59,6 +69,8 @@ object ParameterMetadata {
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
     if (LastModifiedUser != null) __obj.updateDynamic("LastModifiedUser")(LastModifiedUser)
     if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Policies != null) __obj.updateDynamic("Policies")(Policies)
+    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)
     __obj.asInstanceOf[ParameterMetadata]

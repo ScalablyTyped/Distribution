@@ -11,7 +11,7 @@ trait AccountLimit extends js.Object {
     */
   var Type: AccountLimitType
   /**
-    * The current value for the limit that is specified by AccountLimit$Type.
+    * The current value for the limit that is specified by Type.
     */
   var Value: LimitValue
 }

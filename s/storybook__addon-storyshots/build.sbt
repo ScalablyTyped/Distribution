@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-storyshots"
-version := "3.4-dt-20190305Z-484ed1"
+version := "3.4-dt-20190424Z-0ab3b9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

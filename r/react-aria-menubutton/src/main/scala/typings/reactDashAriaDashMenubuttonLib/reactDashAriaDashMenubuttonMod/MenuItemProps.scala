@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MenuItemProps[T /* <: stdLib.HTMLElement */]
-  extends reactLib.reactMod.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLProps[T] {
   /**
   	 * The HTML tag for this element. Default: 'span'.
   	 */
@@ -22,19 +22,20 @@ trait MenuItemProps[T /* <: stdLib.HTMLElement */]
   	 * If value has a value, it will be passed to the onSelection handler
   	 * when the `MenuItem` is selected
   	 */
-  var value: js.UndefOr[js.Any] = js.undefined
+  @JSName("value")
+  var value_MenuItemProps: js.UndefOr[js.Any] = js.undefined
 }
 
 object MenuItemProps {
   @scala.inline
   def apply[T /* <: stdLib.HTMLElement */](
-    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[T] = null,
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null,
     text: java.lang.String = null,
     value: js.Any = null
   ): MenuItemProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     if (text != null) __obj.updateDynamic("text")(text)
     if (value != null) __obj.updateDynamic("value")(value)

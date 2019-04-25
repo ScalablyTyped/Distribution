@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StartDocumentAnalysisResponse extends js.Object {
   /**
-    * The identifier for the document text-detection job. Use JobId to identify the job in a subsequent call to GetDocumentAnalysis.
+    * The identifier for the document text detection job. Use JobId to identify the job in a subsequent call to GetDocumentAnalysis.
     */
   var JobId: js.UndefOr[JobId] = js.undefined
 }

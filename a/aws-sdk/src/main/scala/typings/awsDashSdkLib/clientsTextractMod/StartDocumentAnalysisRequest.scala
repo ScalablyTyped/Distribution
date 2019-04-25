@@ -15,11 +15,11 @@ trait StartDocumentAnalysisRequest extends js.Object {
     */
   var DocumentLocation: awsDashSdkLib.clientsTextractMod.DocumentLocation
   /**
-    * A list of the types of analysis to perform. Add TABLES to the list to return information about the tables that are detected in the input document. Add FORMS to return detected fields and the associated text. To perform both types of analysis, add TABLES and FORMS to FeatureTypes.
+    * A list of the types of analysis to perform. Add TABLES to the list to return information about the tables that are detected in the input document. Add FORMS to return detected fields and the associated text. To perform both types of analysis, add TABLES and FORMS to FeatureTypes. All selectable elements (SELECTION_ELEMENT) that are detected are returned, whatever the value of FeatureTypes. 
     */
   var FeatureTypes: awsDashSdkLib.clientsTextractMod.FeatureTypes
   /**
-    * The unique identifier you specify to identify the job in the completion status that's published to the Amazon SNS topic.
+    * An identifier you specify that's included in the completion notification that's published to the Amazon SNS topic. For example, you can use JobTag to identify the type of document, such as a tax form or a receipt, that the completion notification corresponds to.
     */
   var JobTag: js.UndefOr[JobTag] = js.undefined
   /**

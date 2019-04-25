@@ -46,6 +46,7 @@ package object clientsRoute53Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-west-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-west-2`
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-west-3`
+    - awsDashSdkLib.awsDashSdkLibStrings.`ap-east-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-south-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-2`
@@ -54,6 +55,8 @@ package object clientsRoute53Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-northeast-3`
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-north-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`sa-east-1`
+    - awsDashSdkLib.awsDashSdkLibStrings.`cn-northwest-1`
+    - awsDashSdkLib.awsDashSdkLibStrings.`cn-north-1`
     - java.lang.String
   */
   type CloudWatchRegion = _CloudWatchRegion | java.lang.String
@@ -210,6 +213,7 @@ package object clientsRoute53Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.`sa-east-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`cn-north-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`cn-northwest-1`
+    - awsDashSdkLib.awsDashSdkLibStrings.`ap-east-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-south-1`
     - java.lang.String
   */
@@ -272,6 +276,7 @@ package object clientsRoute53Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-west-2`
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-west-3`
     - awsDashSdkLib.awsDashSdkLibStrings.`eu-central-1`
+    - awsDashSdkLib.awsDashSdkLibStrings.`ap-east-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-1`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-2`
     - awsDashSdkLib.awsDashSdkLibStrings.`ap-south-1`

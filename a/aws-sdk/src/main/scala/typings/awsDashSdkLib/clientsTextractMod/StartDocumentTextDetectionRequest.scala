@@ -15,7 +15,7 @@ trait StartDocumentTextDetectionRequest extends js.Object {
     */
   var DocumentLocation: awsDashSdkLib.clientsTextractMod.DocumentLocation
   /**
-    * A unique identifier you specify to identify the job in the completion status that's published to the Amazon Simple Notification Service (Amazon SNS) topic.
+    * An identifier you specify that's included in the completion notification that's published to the Amazon SNS topic. For example, you can use JobTag to identify the type of document, such as a tax form or a receipt, that the completion notification corresponds to.
     */
   var JobTag: js.UndefOr[JobTag] = js.undefined
   /**

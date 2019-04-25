@@ -415,7 +415,7 @@ object typesNs extends js.Object {
   def TSTypeReference(typeName: babelDashTypesLib.babelDashTypesMod.TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
   def TSTypeReference(
     typeName: babelDashTypesLib.babelDashTypesMod.TSEntityName,
-    typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterInstantiation
+    typeParameters: babelDashTypesLib.babelDashTypesMod.TSTypeParameterInstantiation
   ): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
   def TSUndefinedKeyword(): babelDashTypesLib.babelDashTypesMod.TSUndefinedKeyword = js.native
   def TSUnionType(types: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSUnionType = js.native

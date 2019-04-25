@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "arangodb"
-version := "3.4-dt-20190213Z-2b61b5"
+version := "3.5-dt-20190424Z-90f2db"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

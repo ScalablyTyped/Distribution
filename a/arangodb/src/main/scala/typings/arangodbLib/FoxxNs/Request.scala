@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait Request extends js.Object {
   var arangoUser: java.lang.String | scala.Null = js.native
   var arangoVersion: scala.Double = js.native
+  var auth: scala.Null | arangodbLib.Anon_Basic = js.native
   var baseUrl: java.lang.String = js.native
   var body: js.Any = js.native
   var context: Context = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UntagResourceRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the resource that you want to remove tags from.
+    * The Amazon Resource Name (ARN) that identifies the AWS Elemental MediaConnect resource from which to delete tags.
     */
   var ResourceArn: __string
   /**

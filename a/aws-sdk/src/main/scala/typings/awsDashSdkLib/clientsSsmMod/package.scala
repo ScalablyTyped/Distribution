@@ -594,11 +594,19 @@ package object clientsSsmMod {
   type ParameterMetadataList = js.Array[ParameterMetadata]
   type ParameterName = java.lang.String
   type ParameterNameList = js.Array[PSParameterName]
+  type ParameterPolicies = java.lang.String
+  type ParameterPolicyList = js.Array[ParameterInlinePolicy]
   type ParameterStringFilterKey = java.lang.String
   type ParameterStringFilterList = js.Array[ParameterStringFilter]
   type ParameterStringFilterValue = java.lang.String
   type ParameterStringFilterValueList = js.Array[ParameterStringFilterValue]
   type ParameterStringQueryOption = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Standard
+    - awsDashSdkLib.awsDashSdkLibStrings.Advanced
+    - java.lang.String
+  */
+  type ParameterTier = _ParameterTier | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.String
     - awsDashSdkLib.awsDashSdkLibStrings.StringList

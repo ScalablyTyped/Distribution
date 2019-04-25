@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MaintenanceWindowTarget extends js.Object {
   /**
-    * A description of the target.
+    * A description for the target.
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   /**
@@ -15,19 +15,19 @@ trait MaintenanceWindowTarget extends js.Object {
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
+    * A user-provided value that will be included in any CloudWatch events that are raised while running tasks for these targets in this Maintenance Window.
     */
   var OwnerInformation: js.UndefOr[OwnerInformation] = js.undefined
   /**
-    * The type of target.
+    * The type of target that is being registered with the Maintenance Window.
     */
   var ResourceType: js.UndefOr[MaintenanceWindowResourceType] = js.undefined
   /**
-    * The targets (either instances or tags). Instances are specified using Key=instanceids,Values=&lt;instanceid1&gt;,&lt;instanceid2&gt;. Tags are specified using Key=&lt;tag name&gt;,Values=&lt;tag value&gt;.
+    * The targets, either instances or tags. Specify instances using the following format:  Key=instanceids,Values=&lt;instanceid1&gt;,&lt;instanceid2&gt;  Tags are specified using the following format:  Key=&lt;tag name&gt;,Values=&lt;tag value&gt;.
     */
   var Targets: js.UndefOr[Targets] = js.undefined
   /**
-    * The Maintenance Window ID where the target is registered.
+    * The ID of the Maintenance Window to register the target with.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   /**

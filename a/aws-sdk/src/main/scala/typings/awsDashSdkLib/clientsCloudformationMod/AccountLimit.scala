@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AccountLimit extends js.Object {
   /**
-    * The name of the account limit. Currently, the only account limit is StackLimit.
+    * The name of the account limit.
     */
   var Name: js.UndefOr[LimitName] = js.undefined
   /**

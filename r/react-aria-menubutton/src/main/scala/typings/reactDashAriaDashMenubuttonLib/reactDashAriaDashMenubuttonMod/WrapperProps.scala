@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WrapperProps[T /* <: stdLib.HTMLElement */]
-  extends reactLib.reactMod.HTMLAttributes[T] {
+  extends reactLib.reactMod.HTMLProps[T] {
   /**
   	 * By default, it does automatically close.
   	 * If false, the menu will not automatically close when it
@@ -45,7 +45,7 @@ trait WrapperProps[T /* <: stdLib.HTMLElement */]
 object WrapperProps {
   @scala.inline
   def apply[T /* <: stdLib.HTMLElement */](
-    HTMLAttributes: reactLib.reactMod.HTMLAttributes[T] = null,
+    HTMLProps: reactLib.reactMod.HTMLProps[T] = null,
     closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
@@ -54,7 +54,7 @@ object WrapperProps {
     tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
   ): WrapperProps[T] = {
     val __obj = js.Dynamic.literal()
-    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
     if (!js.isUndefined(closeOnSelection)) __obj.updateDynamic("closeOnSelection")(closeOnSelection)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)

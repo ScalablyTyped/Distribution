@@ -225,7 +225,7 @@ trait CloudFormation
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteStackSetOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves your account's AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account.
+    * Retrieves your account's AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account. For more information about account limits, see AWS CloudFormation Limits in the AWS CloudFormation User Guide.
     */
   def describeAccountLimits(): awsDashSdkLib.libRequestMod.Request[DescribeAccountLimitsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAccountLimits(
@@ -236,7 +236,7 @@ trait CloudFormation
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeAccountLimitsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves your account's AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account.
+    * Retrieves your account's AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account. For more information about account limits, see AWS CloudFormation Limits in the AWS CloudFormation User Guide.
     */
   def describeAccountLimits(params: DescribeAccountLimitsInput): awsDashSdkLib.libRequestMod.Request[DescribeAccountLimitsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAccountLimits(

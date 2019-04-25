@@ -64,7 +64,7 @@ trait Question[T] extends js.Object {
     * Possible values:
     * <ul>
     *      <li>input</li>
-  	     *      <li>number</li>
+    *      <li>number</li>
     *      <li>confirm</li>
     *      <li>list</li>
     *      <li>rawlist</li>

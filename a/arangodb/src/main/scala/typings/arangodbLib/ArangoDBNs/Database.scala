@@ -50,8 +50,7 @@ trait Database extends js.Object {
   def _parse(query: java.lang.String): ParsedQuery = js.native
   def _path(): java.lang.String = js.native
   def _query(query: Query): Cursor[_] = js.native
-  def _query(query: Query, bindVars: js.Object): Cursor[_] = js.native
-  def _query(query: Query, bindVars: js.Object, options: QueryOptions): Cursor[_] = js.native
+  def _query(query: Query, options: QueryOptions): Cursor[_] = js.native
   def _query(query: java.lang.String): Cursor[_] = js.native
   def _query(query: java.lang.String, bindVars: js.Object): Cursor[_] = js.native
   def _query(query: java.lang.String, bindVars: js.Object, options: QueryOptions): Cursor[_] = js.native

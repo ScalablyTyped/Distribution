@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DBClusterRole extends js.Object {
+  /**
+    * The name of the feature associated with the AWS Identity and Access Management (IAM) role. For the list of supported feature names, see DBEngineVersion. 
+    */
   var FeatureName: js.UndefOr[String] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB cluster.

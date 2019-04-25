@@ -164,6 +164,13 @@ package object clientsAlexaforbusinessMod {
   type FilterList = js.Array[Filter]
   type FilterValue = java.lang.String
   type FilterValueList = js.Array[FilterValue]
+  type GatewayDescription = java.lang.String
+  type GatewayGroupDescription = java.lang.String
+  type GatewayGroupName = java.lang.String
+  type GatewayGroupSummaries = js.Array[GatewayGroupSummary]
+  type GatewayName = java.lang.String
+  type GatewaySummaries = js.Array[GatewaySummary]
+  type GatewayVersion = java.lang.String
   type GenericKeyword = java.lang.String
   type GenericKeywords = js.Array[GenericKeyword]
   type IconUrl = java.lang.String

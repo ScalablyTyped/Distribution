@@ -2732,6 +2732,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPollyMod._VoiceId
   
   @js.native
+  sealed trait Advanced
+    extends awsDashSdkLib.clientsSsmMod._ParameterTier
+  
+  @js.native
   sealed trait AgentVersion
     extends awsDashSdkLib.clientsSsmMod._InstanceInformationFilterKey
   
@@ -12839,6 +12843,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._H265QualityTuningLevel
   
   @js.native
+  sealed trait MULTI_PERIOD
+    extends awsDashSdkLib.clientsMediatailorMod._OriginManifestType
+  
+  @js.native
   sealed trait MUSIC_AND_EFFECTS
     extends awsDashSdkLib.clientsMediaconvertMod._Ac3BitstreamMode
        with awsDashSdkLib.clientsMedialiveMod._Ac3BitstreamMode
@@ -13593,6 +13601,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NOT_SCHEDULED
     extends awsDashSdkLib.clientsGlueMod._ScheduleState
+  
+  @js.native
+  sealed trait NOT_SELECTED
+    extends awsDashSdkLib.clientsTextractMod._SelectionStatus
   
   @js.native
   sealed trait NOT_SHARED
@@ -17349,6 +17361,14 @@ object awsDashSdkLibStrings {
   sealed trait SELECT extends js.Object
   
   @js.native
+  sealed trait SELECTED
+    extends awsDashSdkLib.clientsTextractMod._SelectionStatus
+  
+  @js.native
+  sealed trait SELECTION_ELEMENT
+    extends awsDashSdkLib.clientsTextractMod._BlockType
+  
+  @js.native
   sealed trait SELECT_MFA_TYPE
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._ChallengeNameType
   
@@ -17636,6 +17656,10 @@ object awsDashSdkLibStrings {
   sealed trait SINGLE_PASS_HQ
     extends awsDashSdkLib.clientsMediaconvertMod._H264QualityTuningLevel
        with awsDashSdkLib.clientsMediaconvertMod._H265QualityTuningLevel
+  
+  @js.native
+  sealed trait SINGLE_PERIOD
+    extends awsDashSdkLib.clientsMediatailorMod._OriginManifestType
   
   @js.native
   sealed trait SINGLE_PIPELINE
@@ -18821,6 +18845,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Standard
     extends awsDashSdkLib.clientsDirectoryserviceMod._DirectoryEdition
+       with awsDashSdkLib.clientsSsmMod._ParameterTier
        with awsDashSdkLib.clientsS3Mod._Tier
        with awsDashSdkLib.clientsGlueMod._WorkerType
   
@@ -21802,6 +21827,12 @@ object awsDashSdkLibStrings {
   sealed trait anyInstanceInService extends js.Object
   
   @js.native
+  sealed trait `ap-east-1`
+    extends awsDashSdkLib.clientsRoute53Mod._CloudWatchRegion
+       with awsDashSdkLib.clientsRoute53Mod._ResourceRecordSetRegion
+       with awsDashSdkLib.clientsRoute53Mod._VPCRegion
+  
+  @js.native
   sealed trait `ap-northeast-1`
     extends awsDashSdkLib.clientsCurMod._AWSRegion
        with awsDashSdkLib.clientsS3Mod._BucketLocationConstraint
@@ -22507,12 +22538,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `cn-north-1`
     extends awsDashSdkLib.clientsS3Mod._BucketLocationConstraint
+       with awsDashSdkLib.clientsRoute53Mod._CloudWatchRegion
        with awsDashSdkLib.clientsRoute53Mod._ResourceRecordSetRegion
        with awsDashSdkLib.clientsRoute53Mod._VPCRegion
   
   @js.native
   sealed trait `cn-northwest-1`
-    extends awsDashSdkLib.clientsRoute53Mod._ResourceRecordSetRegion
+    extends awsDashSdkLib.clientsRoute53Mod._CloudWatchRegion
+       with awsDashSdkLib.clientsRoute53Mod._ResourceRecordSetRegion
   
   @js.native
   sealed trait code
@@ -27089,6 +27122,34 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
   @js.native
+  sealed trait t3aDOT2xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait t3aDOTlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait t3aDOTmedium
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait t3aDOTmicro
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait t3aDOTnano
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait t3aDOTsmall
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait t3aDOTxlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait tableExists extends js.Object
   
   @js.native
@@ -28877,6 +28938,8 @@ object awsDashSdkLibStrings {
   def Adding: Adding = "Adding".asInstanceOf[Adding]
   @scala.inline
   def Aditi: Aditi = "Aditi".asInstanceOf[Aditi]
+  @scala.inline
+  def Advanced: Advanced = "Advanced".asInstanceOf[Advanced]
   @scala.inline
   def AgentVersion: AgentVersion = "AgentVersion".asInstanceOf[AgentVersion]
   @scala.inline
@@ -32962,6 +33025,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def MULTI_PASS_HQ: MULTI_PASS_HQ = "MULTI_PASS_HQ".asInstanceOf[MULTI_PASS_HQ]
   @scala.inline
+  def MULTI_PERIOD: MULTI_PERIOD = "MULTI_PERIOD".asInstanceOf[MULTI_PERIOD]
+  @scala.inline
   def MUSIC_AND_EFFECTS: MUSIC_AND_EFFECTS = "MUSIC_AND_EFFECTS".asInstanceOf[MUSIC_AND_EFFECTS]
   @scala.inline
   def MUSIC_LIGHT: MUSIC_LIGHT = "MUSIC_LIGHT".asInstanceOf[MUSIC_LIGHT]
@@ -33239,6 +33304,8 @@ object awsDashSdkLibStrings {
   def NOT_REQUIRED: NOT_REQUIRED = "NOT_REQUIRED".asInstanceOf[NOT_REQUIRED]
   @scala.inline
   def NOT_SCHEDULED: NOT_SCHEDULED = "NOT_SCHEDULED".asInstanceOf[NOT_SCHEDULED]
+  @scala.inline
+  def NOT_SELECTED: NOT_SELECTED = "NOT_SELECTED".asInstanceOf[NOT_SELECTED]
   @scala.inline
   def NOT_SHARED: NOT_SHARED = "NOT_SHARED".asInstanceOf[NOT_SHARED]
   @scala.inline
@@ -34858,6 +34925,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   @scala.inline
+  def SELECTED: SELECTED = "SELECTED".asInstanceOf[SELECTED]
+  @scala.inline
+  def SELECTION_ELEMENT: SELECTION_ELEMENT = "SELECTION_ELEMENT".asInstanceOf[SELECTION_ELEMENT]
+  @scala.inline
   def SELECT_MFA_TYPE: SELECT_MFA_TYPE = "SELECT_MFA_TYPE".asInstanceOf[SELECT_MFA_TYPE]
   @scala.inline
   def SELF: SELF = "SELF".asInstanceOf[SELF]
@@ -34991,6 +35062,8 @@ object awsDashSdkLibStrings {
   def SINGLE_PASS: SINGLE_PASS = "SINGLE_PASS".asInstanceOf[SINGLE_PASS]
   @scala.inline
   def SINGLE_PASS_HQ: SINGLE_PASS_HQ = "SINGLE_PASS_HQ".asInstanceOf[SINGLE_PASS_HQ]
+  @scala.inline
+  def SINGLE_PERIOD: SINGLE_PERIOD = "SINGLE_PERIOD".asInstanceOf[SINGLE_PERIOD]
   @scala.inline
   def SINGLE_PIPELINE: SINGLE_PIPELINE = "SINGLE_PIPELINE".asInstanceOf[SINGLE_PIPELINE]
   @scala.inline
@@ -36749,6 +36822,8 @@ object awsDashSdkLibStrings {
   def amazon_linux: amazon_linux = "amazon_linux".asInstanceOf[amazon_linux]
   @scala.inline
   def anyInstanceInService: anyInstanceInService = "anyInstanceInService".asInstanceOf[anyInstanceInService]
+  @scala.inline
+  def `ap-east-1`: `ap-east-1` = "ap-east-1".asInstanceOf[`ap-east-1`]
   @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
   @scala.inline
@@ -39063,6 +39138,20 @@ object awsDashSdkLibStrings {
   def t3DOTsmall: t3DOTsmall = "t3.small".asInstanceOf[t3DOTsmall]
   @scala.inline
   def t3DOTxlarge: t3DOTxlarge = "t3.xlarge".asInstanceOf[t3DOTxlarge]
+  @scala.inline
+  def t3aDOT2xlarge: t3aDOT2xlarge = "t3a.2xlarge".asInstanceOf[t3aDOT2xlarge]
+  @scala.inline
+  def t3aDOTlarge: t3aDOTlarge = "t3a.large".asInstanceOf[t3aDOTlarge]
+  @scala.inline
+  def t3aDOTmedium: t3aDOTmedium = "t3a.medium".asInstanceOf[t3aDOTmedium]
+  @scala.inline
+  def t3aDOTmicro: t3aDOTmicro = "t3a.micro".asInstanceOf[t3aDOTmicro]
+  @scala.inline
+  def t3aDOTnano: t3aDOTnano = "t3a.nano".asInstanceOf[t3aDOTnano]
+  @scala.inline
+  def t3aDOTsmall: t3aDOTsmall = "t3a.small".asInstanceOf[t3aDOTsmall]
+  @scala.inline
+  def t3aDOTxlarge: t3aDOTxlarge = "t3a.xlarge".asInstanceOf[t3aDOTxlarge]
   @scala.inline
   def tableExists: tableExists = "tableExists".asInstanceOf[tableExists]
   @scala.inline

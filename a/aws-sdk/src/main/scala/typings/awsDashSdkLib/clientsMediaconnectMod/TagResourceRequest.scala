@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TagResourceRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the resource that you want to add tags to.
+    * The Amazon Resource Name (ARN) that identifies the AWS Elemental MediaConnect resource to which to add tags.
     */
   var ResourceArn: __string
   /**

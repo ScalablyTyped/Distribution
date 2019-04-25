@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 package object clientsMediatailorMod {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PERIOD
+    - awsDashSdkLib.awsDashSdkLibStrings.MULTI_PERIOD
+    - java.lang.String
+  */
+  type OriginManifestType = _OriginManifestType | java.lang.String
   type __integerMin1Max100 = scala.Double
   type __listOfPlaybackConfigurations = js.Array[PlaybackConfiguration]
   type __listOf__string = js.Array[__string]

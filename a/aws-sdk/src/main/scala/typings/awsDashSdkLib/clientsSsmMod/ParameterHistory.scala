@@ -35,6 +35,14 @@ trait ParameterHistory extends js.Object {
     */
   var Name: js.UndefOr[PSParameterName] = js.undefined
   /**
+    * Information about the policies assigned to a parameter.
+    */
+  var Policies: js.UndefOr[ParameterPolicyList] = js.undefined
+  /**
+    * The parameter tier.
+    */
+  var Tier: js.UndefOr[ParameterTier] = js.undefined
+  /**
     * The type of parameter used.
     */
   var Type: js.UndefOr[ParameterType] = js.undefined
@@ -58,6 +66,8 @@ object ParameterHistory {
     LastModifiedDate: DateTime = null,
     LastModifiedUser: String = null,
     Name: PSParameterName = null,
+    Policies: ParameterPolicyList = null,
+    Tier: ParameterTier = null,
     Type: ParameterType = null,
     Value: PSParameterValue = null,
     Version: js.UndefOr[PSParameterVersion] = js.undefined
@@ -70,6 +80,8 @@ object ParameterHistory {
     if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
     if (LastModifiedUser != null) __obj.updateDynamic("LastModifiedUser")(LastModifiedUser)
     if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Policies != null) __obj.updateDynamic("Policies")(Policies)
+    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value)
     if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version)

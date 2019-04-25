@@ -23,7 +23,7 @@ trait AssociationExecution extends js.Object {
     */
   var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   /**
-    * The execution ID for the association. If the association does not run at intervals or according to a schedule, then the ExecutionID is the same as the AssociationID.
+    * The execution ID for the association.
     */
   var ExecutionId: js.UndefOr[AssociationExecutionId] = js.undefined
   /**

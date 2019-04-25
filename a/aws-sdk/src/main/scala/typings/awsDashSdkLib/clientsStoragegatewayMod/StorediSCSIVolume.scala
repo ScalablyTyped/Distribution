@@ -56,7 +56,7 @@ trait StorediSCSIVolume extends js.Object {
     */
   var VolumeType: js.UndefOr[VolumeType] = js.undefined
   /**
-    * The size of the data stored on the volume in bytes.   This value is not available for volumes created prior to May 13, 2015, until you store data on the volume. 
+    * The size of the data stored on the volume in bytes. This value is calculated based on the number of blocks that are touched, instead of the actual amount of data written. This value can be useful for sequential write patterns but less accurate for random write patterns. VolumeUsedInBytes is different from the compressed size of the volume, which is the value that is used to calculate your bill.  This value is not available for volumes created prior to May 13, 2015, until you store data on the volume. 
     */
   var VolumeUsedInBytes: js.UndefOr[VolumeUsedInBytes] = js.undefined
   /**

@@ -172,7 +172,7 @@ trait MediaConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListFlowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists all tags associated with the resource.
+    * List all tags on an AWS Elemental MediaConnect resource
     */
   def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
@@ -183,7 +183,7 @@ trait MediaConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists all tags associated with the resource.
+    * List all tags on an AWS Elemental MediaConnect resource
     */
   def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
@@ -287,14 +287,14 @@ trait MediaConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[StopFlowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Associates the specified tags to a resource. If the request does not mention an existing tag associated with the resource, that tag is not changed.
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
     */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Associates the specified tags to a resource. If the request does not mention an existing tag associated with the resource, that tag is not changed.
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
     */
   def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
@@ -302,14 +302,14 @@ trait MediaConnect
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified tags from a resource.
+    * Deletes specified tags from a resource.
     */
   def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified tags from a resource.
+    * Deletes specified tags from a resource.
     */
   def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def untagResource(

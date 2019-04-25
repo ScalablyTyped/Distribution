@@ -180,7 +180,7 @@ object ^ extends js.Object {
   def TSTypePredicate(parameterName: TSThisType, typeAnnotation: TSTypeAnnotation): babelDashTypesLib.babelDashTypesMod.TSTypePredicate = js.native
   def TSTypeQuery(exprName: TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeQuery = js.native
   def TSTypeReference(typeName: TSEntityName): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
-  def TSTypeReference(typeName: TSEntityName, typeParameters: TypeParameterInstantiation): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
+  def TSTypeReference(typeName: TSEntityName, typeParameters: TSTypeParameterInstantiation): babelDashTypesLib.babelDashTypesMod.TSTypeReference = js.native
   def TSUndefinedKeyword(): babelDashTypesLib.babelDashTypesMod.TSUndefinedKeyword = js.native
   def TSUnionType(types: js.Array[TSType]): babelDashTypesLib.babelDashTypesMod.TSUnionType = js.native
   def TSVoidKeyword(): babelDashTypesLib.babelDashTypesMod.TSVoidKeyword = js.native

@@ -14,6 +14,7 @@ package object clientsTextractMod {
     - awsDashSdkLib.awsDashSdkLibStrings.WORD
     - awsDashSdkLib.awsDashSdkLibStrings.TABLE
     - awsDashSdkLib.awsDashSdkLibStrings.CELL
+    - awsDashSdkLib.awsDashSdkLibStrings.SELECTION_ELEMENT
     - java.lang.String
   */
   type BlockType = _BlockType | java.lang.String
@@ -65,6 +66,12 @@ package object clientsTextractMod {
   type S3ObjectName = java.lang.String
   type S3ObjectVersion = java.lang.String
   type SNSTopicArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SELECTED
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_SELECTED
+    - java.lang.String
+  */
+  type SelectionStatus = _SelectionStatus | java.lang.String
   type StatusMessage = java.lang.String
   type String = java.lang.String
   type UInteger = scala.Double

@@ -665,6 +665,13 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.t3DOTlarge
     - awsDashSdkLib.awsDashSdkLibStrings.t3DOTxlarge
     - awsDashSdkLib.awsDashSdkLibStrings.t3DOT2xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOTnano
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOTmicro
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOTsmall
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOTmedium
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOTlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOTxlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.t3aDOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m1DOTsmall
     - awsDashSdkLib.awsDashSdkLibStrings.m1DOTmedium
     - awsDashSdkLib.awsDashSdkLibStrings.m1DOTlarge

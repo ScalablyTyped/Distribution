@@ -59,6 +59,10 @@ trait CreateSMBFileShareInput extends js.Object {
     */
   var Role: awsDashSdkLib.clientsStoragegatewayMod.Role
   /**
+    * Set this value to "true to enable ACL (access control list) on the SMB file share. Set it to "false" to map file and directory permissions to the POSIX permissions.
+    */
+  var SMBACLEnabled: js.UndefOr[Boolean] = js.undefined
+  /**
     * A list of up to 50 tags that can be assigned to the NFS file share. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
     */
   var Tags: js.UndefOr[Tags] = js.undefined
@@ -84,6 +88,7 @@ object CreateSMBFileShareInput {
     ObjectACL: ObjectACL = null,
     ReadOnly: js.UndefOr[Boolean] = js.undefined,
     RequesterPays: js.UndefOr[Boolean] = js.undefined,
+    SMBACLEnabled: js.UndefOr[Boolean] = js.undefined,
     Tags: Tags = null,
     ValidUserList: FileShareUserList = null
   ): CreateSMBFileShareInput = {
@@ -97,6 +102,7 @@ object CreateSMBFileShareInput {
     if (ObjectACL != null) __obj.updateDynamic("ObjectACL")(ObjectACL.asInstanceOf[js.Any])
     if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly)
     if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays)
+    if (!js.isUndefined(SMBACLEnabled)) __obj.updateDynamic("SMBACLEnabled")(SMBACLEnabled)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (ValidUserList != null) __obj.updateDynamic("ValidUserList")(ValidUserList)
     __obj.asInstanceOf[CreateSMBFileShareInput]

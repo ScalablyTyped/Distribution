@@ -18,6 +18,7 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def document(selector: DocumentLike): Document[T] = js.native
   def document(selector: java.lang.String): Document[T] = js.native
   def document(selectors: js.Array[java.lang.String | DocumentLike]): js.Array[Document[T]] = js.native
+  def documentId(documentKey: java.lang.String): java.lang.String = js.native
   def drop(): scala.Unit = js.native
   def drop(options: arangodbLib.Anon_IsSystem): scala.Unit = js.native
   def dropIndex(index: IndexLike): scala.Boolean = js.native
@@ -31,6 +32,7 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def figures(): CollectionFigures = js.native
   def firstExample(example: stdLib.Partial[Document[T]]): Document[T] | scala.Null = js.native
   def getIndexes(): js.Array[Index[T]] = js.native
+  def getResponsibleShard(document: DocumentLike): java.lang.String = js.native
   def inEdges(vertex: ObjectWithId): js.Array[Edge[T]] = js.native
   def inEdges(vertex: java.lang.String): js.Array[Edge[T]] = js.native
   def inEdges(vertex: js.Array[java.lang.String | ObjectWithId]): js.Array[Edge[T]] = js.native
