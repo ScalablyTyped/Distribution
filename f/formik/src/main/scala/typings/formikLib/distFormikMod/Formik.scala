@@ -30,7 +30,7 @@ class Formik[Values] protected ()
   def getFormikActions(): formikLib.distTypesMod.FormikActions[Values] = js.native
   def getFormikBag(): formikLib.Anon_Callback[Values] = js.native
   def getFormikComputedProps(): formikLib.Anon_Dirty[Values] = js.native
-  def getFormikContext(): formikLib.distTypesMod.FormikContext[_] = js.native
+  def getFormikContext(): formikLib.Anon_CallbackComp[Values] = js.native
   def handleBlur(eventOrPath: java.lang.String): scala.Unit | (js.Function1[/* e */ js.UndefOr[reactLib.reactMod.FocusEvent[_]], scala.Unit]) = js.native
   def handleBlur(eventOrPath: reactLib.reactMod.FocusEvent[_]): scala.Unit | (js.Function1[/* e */ js.UndefOr[reactLib.reactMod.FocusEvent[_]], scala.Unit]) = js.native
   def handleChange(eventOrPath: java.lang.String): scala.Unit | (js.Function1[/* eventOrValue */ js.Any, scala.Unit]) = js.native

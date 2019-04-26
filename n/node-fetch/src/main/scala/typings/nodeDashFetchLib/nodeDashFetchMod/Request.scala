@@ -27,8 +27,6 @@ class Request protected () extends Body {
   var protocol: java.lang.String = js.native
   var redirect: RequestRedirect = js.native
   var referrer: java.lang.String = js.native
-  var size: scala.Double = js.native
-  var timeout: scala.Double = js.native
   var url: java.lang.String = js.native
 }
 

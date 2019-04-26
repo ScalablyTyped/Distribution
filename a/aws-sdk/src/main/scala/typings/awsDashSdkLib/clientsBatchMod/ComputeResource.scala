@@ -23,15 +23,15 @@ trait ComputeResource extends js.Object {
     */
   var imageId: js.UndefOr[String] = js.undefined
   /**
-    * The Amazon ECS instance profile applied to Amazon EC2 instances in a compute environment. You can specify the short name or full Amazon Resource Name (ARN) of an instance profile. For example, ecsInstanceRole or arn:aws:iam::&lt;aws_account_id&gt;:instance-profile/ecsInstanceRole. For more information, see Amazon ECS Instance Role in the AWS Batch User Guide.
+    * The Amazon ECS instance profile applied to Amazon EC2 instances in a compute environment. You can specify the short name or full Amazon Resource Name (ARN) of an instance profile. For example,  ecsInstanceRole  or arn:aws:iam::&lt;aws_account_id&gt;:instance-profile/ecsInstanceRole . For more information, see Amazon ECS Instance Role in the AWS Batch User Guide.
     */
   var instanceRole: String
   /**
-    * The instances types that may be launched. You can specify instance families to launch any instance type within those families (for example, c4 or p3), or you can specify specific sizes within a family (such as c4.8xlarge). You can also choose optimal to pick instance types (from the latest C, M, and R instance families) on the fly that match the demand of your job queues.
+    * The instances types that may be launched. You can specify instance families to launch any instance type within those families (for example, c4 or p3), or you can specify specific sizes within a family (such as c4.8xlarge). You can also choose optimal to pick instance types (from the C, M, and R instance families) on the fly that match the demand of your job queues.
     */
   var instanceTypes: StringList
   /**
-    * The launch template to use for your compute resources. Any other compute resource parameters that you specify in a CreateComputeEnvironment API operation override the same parameters in the launch template. You must specify either the launch template ID or launch template name in the request, but not both. 
+    * The launch template to use for your compute resources. Any other compute resource parameters that you specify in a CreateComputeEnvironment API operation override the same parameters in the launch template. You must specify either the launch template ID or launch template name in the request, but not both. For more information, see Launch Template Support in the AWS Batch User Guide.
     */
   var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait ComputeResource extends js.Object {
     */
   var securityGroupIds: js.UndefOr[StringList] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment.
+    * The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment. For more information, see Amazon EC2 Spot Fleet Role in the AWS Batch User Guide.
     */
   var spotIamFleetRole: js.UndefOr[String] = js.undefined
   /**
@@ -59,11 +59,11 @@ trait ComputeResource extends js.Object {
     */
   var subnets: StringList
   /**
-    * Key-value pair tags to be applied to resources that are launched in the compute environment. 
+    * Key-value pair tags to be applied to resources that are launched in the compute environment. For AWS Batch, these take the form of "String1": "String2", where String1 is the tag key and String2 is the tag value—for example, { "Name": "AWS Batch Instance - C4OnDemand" }.
     */
   var tags: js.UndefOr[TagsMap] = js.undefined
   /**
-    * The type of compute environment.
+    * The type of compute environment: EC2 or SPOT.
     */
   var `type`: CRType
 }

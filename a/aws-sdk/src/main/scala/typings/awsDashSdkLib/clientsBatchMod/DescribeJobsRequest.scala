@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeJobsRequest extends js.Object {
   /**
-    * A space-separated list of up to 100 job IDs.
+    * A list of up to 100 job IDs.
     */
   var jobs: StringList
 }

@@ -11,7 +11,7 @@ trait UpdateRuntimeConfigurationInput extends js.Object {
     */
   var FleetId: awsDashSdkLib.clientsGameliftMod.FleetId
   /**
-    * Instructions for launching server processes on each instance in the fleet. The run-time configuration for a fleet has a collection of server process configurations, one for each type of server process to run on an instance. A server process configuration specifies the location of the server executable, launch parameters, and the number of concurrent processes with that configuration to maintain on each instance.
+    * Instructions for launching server processes on each instance in the fleet. Server processes run either a custom game build executable or a Realtime Servers script. The run-time configuration lists the types of server processes to run on an instance and includes the following configuration settings: the server executable or launch script file, launch parameters, and the number of processes to run concurrently on each instance. A CreateFleet request must include a run-time configuration with at least one server process configuration.
     */
   var RuntimeConfiguration: awsDashSdkLib.clientsGameliftMod.RuntimeConfiguration
 }

@@ -13,7 +13,7 @@ trait RetryOptions extends js.Object {
   var maxRetryAfter: js.UndefOr[scala.Double] = js.undefined
   var methods: js.UndefOr[
     js.Array[
-      gotLib.gotLibStrings.GET | gotLib.gotLibStrings.PUT | gotLib.gotLibStrings.HEAD | gotLib.gotLibStrings.DELETE | gotLib.gotLibStrings.OPTIONS | gotLib.gotLibStrings.TRACE
+      gotLib.gotLibStrings.GET | gotLib.gotLibStrings.POST | gotLib.gotLibStrings.PUT | gotLib.gotLibStrings.HEAD | gotLib.gotLibStrings.DELETE | gotLib.gotLibStrings.OPTIONS | gotLib.gotLibStrings.TRACE
     ]
   ] = js.undefined
   var retries: js.UndefOr[scala.Double | RetryFunction] = js.undefined
@@ -30,7 +30,7 @@ object RetryOptions {
     errorCodes: js.Array[java.lang.String] = null,
     maxRetryAfter: scala.Int | scala.Double = null,
     methods: js.Array[
-      gotLib.gotLibStrings.GET | gotLib.gotLibStrings.PUT | gotLib.gotLibStrings.HEAD | gotLib.gotLibStrings.DELETE | gotLib.gotLibStrings.OPTIONS | gotLib.gotLibStrings.TRACE
+      gotLib.gotLibStrings.GET | gotLib.gotLibStrings.POST | gotLib.gotLibStrings.PUT | gotLib.gotLibStrings.HEAD | gotLib.gotLibStrings.DELETE | gotLib.gotLibStrings.OPTIONS | gotLib.gotLibStrings.TRACE
     ] = null,
     retries: scala.Double | RetryFunction = null,
     statusCodes: js.Array[

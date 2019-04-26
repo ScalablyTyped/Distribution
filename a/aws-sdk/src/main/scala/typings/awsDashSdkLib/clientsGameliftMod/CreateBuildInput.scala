@@ -15,11 +15,11 @@ trait CreateBuildInput extends js.Object {
     */
   var OperatingSystem: js.UndefOr[OperatingSystem] = js.undefined
   /**
-    * Information indicating where your game build files are stored. Use this parameter only when creating a build with files stored in an Amazon S3 bucket that you own. The storage location must specify an Amazon S3 bucket name and key, as well as a role ARN that you set up to allow Amazon GameLift to access your Amazon S3 bucket. The S3 bucket must be in the same region that you want to create a new build in.
+    * Information indicating where your game build files are stored. Use this parameter only when creating a build with files stored in an Amazon S3 bucket that you own. The storage location must specify an Amazon S3 bucket name and key, as well as a the ARN for a role that you set up to allow Amazon GameLift to access your Amazon S3 bucket. The S3 bucket must be in the same region that you want to create a new build in.
     */
   var StorageLocation: js.UndefOr[S3Location] = js.undefined
   /**
-    * Version that is associated with this build. Version strings do not need to be unique. You can use UpdateBuild to change this value later. 
+    * Version that is associated with a build or script. Version strings do not need to be unique. You can use UpdateBuild to change this value later. 
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

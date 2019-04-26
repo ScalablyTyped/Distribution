@@ -15,7 +15,7 @@ trait DockerVersion extends js.Object {
   var KernelVersion: java.lang.String
   var MinAPIVersion: java.lang.String
   var Os: java.lang.String
-  var Platform: dockerodeLib.Anon_Name
+  var Platform: dockerodeLib.Anon_NameString
   var Version: java.lang.String
 }
 
@@ -31,7 +31,7 @@ object DockerVersion {
     KernelVersion: java.lang.String,
     MinAPIVersion: java.lang.String,
     Os: java.lang.String,
-    Platform: dockerodeLib.Anon_Name,
+    Platform: dockerodeLib.Anon_NameString,
     Version: java.lang.String
   ): DockerVersion = {
     val __obj = js.Dynamic.literal(ApiVersion = ApiVersion, Arch = Arch, BuildTime = BuildTime, Components = Components, GitCommit = GitCommit, GoVersion = GoVersion, KernelVersion = KernelVersion, MinAPIVersion = MinAPIVersion, Os = Os, Platform = Platform, Version = Version)

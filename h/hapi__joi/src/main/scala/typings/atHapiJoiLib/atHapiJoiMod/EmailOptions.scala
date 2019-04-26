@@ -7,30 +7,36 @@ import scala.scalajs.js.annotation._
 
 trait EmailOptions extends js.Object {
   /**
-    * Numerical threshold at which an email address is considered invalid
+    * If `true`, Unicode characters are permitted
+    *
+    * @default true
     */
-  var errorLevel: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
+  var allowUnicode: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Number of atoms required for the domain. Be careful since some domains, such as io, directly allow email.
+    * Number of segments required for the domain. Be careful since some domains, such as `io`, directly allow email.
+    *
+    * @default 2
     */
-  var minDomainAtoms: js.UndefOr[scala.Double] = js.undefined
+  var minDomainSegments: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Specifies a list of acceptable TLDs.
+    * Options for TLD (top level domain) validation. By default, the TLD must be a valid name listed on the [IANA registry](http://data.iana.org/TLD/tlds-alpha-by-domain.txt)
+    *
+    * @default { allow: true }
     */
-  var tldWhitelist: js.UndefOr[js.Array[java.lang.String] | js.Object] = js.undefined
+  var tlds: js.UndefOr[atHapiJoiLib.Anon_Allow] = js.undefined
 }
 
 object EmailOptions {
   @scala.inline
   def apply(
-    errorLevel: scala.Double | scala.Boolean = null,
-    minDomainAtoms: scala.Int | scala.Double = null,
-    tldWhitelist: js.Array[java.lang.String] | js.Object = null
+    allowUnicode: js.UndefOr[scala.Boolean] = js.undefined,
+    minDomainSegments: scala.Int | scala.Double = null,
+    tlds: atHapiJoiLib.Anon_Allow = null
   ): EmailOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorLevel != null) __obj.updateDynamic("errorLevel")(errorLevel.asInstanceOf[js.Any])
-    if (minDomainAtoms != null) __obj.updateDynamic("minDomainAtoms")(minDomainAtoms.asInstanceOf[js.Any])
-    if (tldWhitelist != null) __obj.updateDynamic("tldWhitelist")(tldWhitelist.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowUnicode)) __obj.updateDynamic("allowUnicode")(allowUnicode)
+    if (minDomainSegments != null) __obj.updateDynamic("minDomainSegments")(minDomainSegments.asInstanceOf[js.Any])
+    if (tlds != null) __obj.updateDynamic("tlds")(tlds)
     __obj.asInstanceOf[EmailOptions]
   }
 }

@@ -80,7 +80,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateIpGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates the specified tags for the specified WorkSpace.
+    * Creates the specified tags for the specified WorkSpaces resource.
     */
   def createTags(): awsDashSdkLib.libRequestMod.Request[CreateTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTags(
@@ -91,7 +91,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates the specified tags for the specified WorkSpace.
+    * Creates the specified tags for the specified WorkSpaces resource.
     */
   def createTags(params: CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[CreateTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createTags(
@@ -149,7 +149,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteIpGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified tags from the specified WorkSpace.
+    * Deletes the specified tags from the specified WorkSpaces resource.
     */
   def deleteTags(): awsDashSdkLib.libRequestMod.Request[DeleteTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTags(
@@ -160,7 +160,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified tags from the specified WorkSpace.
+    * Deletes the specified tags from the specified WorkSpaces resource.
     */
   def deleteTags(params: DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[DeleteTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteTags(
@@ -287,7 +287,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeIpGroupsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the specified tags for the specified WorkSpace.
+    * Describes the specified tags for the specified WorkSpaces resource.
     */
   def describeTags(): awsDashSdkLib.libRequestMod.Request[DescribeTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeTags(
@@ -298,7 +298,7 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes the specified tags for the specified WorkSpace.
+    * Describes the specified tags for the specified WorkSpaces resource.
     */
   def describeTags(params: DescribeTagsRequest): awsDashSdkLib.libRequestMod.Request[DescribeTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeTags(

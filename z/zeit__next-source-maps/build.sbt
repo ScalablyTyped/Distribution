@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "zeit__next-source-maps"
-version := "0.0-dt-20190321Z-515974"
+version := "0.0-dt-20190321Z-20063c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-4b6b4d",
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
-  "org.scalablytyped" %%% "next" % "8.0-dt-20190423Z-6435b3",
+  "org.scalablytyped" %%% "next" % "8.0-dt-20190423Z-945205",
   "org.scalablytyped" %%% "next-server" % "8.0-dt-20190408Z-ab2c64",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
-  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190411Z-8e6e40",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190425Z-7d06c4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190419Z-caf3c8",
   "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-abb500",

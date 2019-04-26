@@ -11,5 +11,8 @@ object ^ extends js.Object {
   var pdfMake: pdfMakeStatic = js.native
   var vfs: TFontFamily = js.native
   def createPdf(documentDefinitions: TDocumentDefinitions): TCreatedPdf = js.native
+  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: js.Any): TCreatedPdf = js.native
+  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: js.Any, fonts: js.Any): TCreatedPdf = js.native
+  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: js.Any, fonts: js.Any, vfs: js.Any): TCreatedPdf = js.native
 }
 

@@ -31,7 +31,7 @@ trait FleetAttributes extends js.Object {
     */
   var FleetType: js.UndefOr[FleetType] = js.undefined
   /**
-    * Unique identifier for an AWS IAM role that manages access to your AWS services. Any application that runs on an instance in this fleet can assume the role, including install scripts, server processs, daemons (background processes). Create a role or look up a role's ARN using the IAM dashboard in the AWS Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
+    * Unique identifier for an AWS IAM role that manages access to your AWS services. With an instance role ARN set, any application that runs on an instance in this fleet can assume the role, including install scripts, server processes, daemons (background processes). Create a role or look up a role's ARN using the IAM dashboard in the AWS Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
     */
   var InstanceRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   /**
@@ -63,6 +63,10 @@ trait FleetAttributes extends js.Object {
     */
   var ResourceCreationLimitPolicy: js.UndefOr[ResourceCreationLimitPolicy] = js.undefined
   /**
+    * Unique identifier for a Realtime script.
+    */
+  var ScriptId: js.UndefOr[ScriptId] = js.undefined
+  /**
     * Game server launch parameters specified for fleets created before 2016-08-04 (or AWS SDK v. 0.12.16). Server launch parameters for fleets created after this date are specified in the fleet's RuntimeConfiguration.
     */
   var ServerLaunchParameters: js.UndefOr[NonZeroAndMaxString] = js.undefined
@@ -71,7 +75,7 @@ trait FleetAttributes extends js.Object {
     */
   var ServerLaunchPath: js.UndefOr[NonZeroAndMaxString] = js.undefined
   /**
-    * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- Amazon GameLift is setting up the new fleet, creating new instances with the game build and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
+    * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- Amazon GameLift is setting up the new fleet, creating new instances with the game build or Realtime script and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
     */
   var Status: js.UndefOr[FleetStatus] = js.undefined
   /**
@@ -101,6 +105,7 @@ object FleetAttributes {
     NewGameSessionProtectionPolicy: ProtectionPolicy = null,
     OperatingSystem: OperatingSystem = null,
     ResourceCreationLimitPolicy: ResourceCreationLimitPolicy = null,
+    ScriptId: ScriptId = null,
     ServerLaunchParameters: NonZeroAndMaxString = null,
     ServerLaunchPath: NonZeroAndMaxString = null,
     Status: FleetStatus = null,
@@ -122,6 +127,7 @@ object FleetAttributes {
     if (NewGameSessionProtectionPolicy != null) __obj.updateDynamic("NewGameSessionProtectionPolicy")(NewGameSessionProtectionPolicy.asInstanceOf[js.Any])
     if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
     if (ResourceCreationLimitPolicy != null) __obj.updateDynamic("ResourceCreationLimitPolicy")(ResourceCreationLimitPolicy)
+    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId)
     if (ServerLaunchParameters != null) __obj.updateDynamic("ServerLaunchParameters")(ServerLaunchParameters)
     if (ServerLaunchPath != null) __obj.updateDynamic("ServerLaunchPath")(ServerLaunchPath)
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ trait UpdateBuildInput extends js.Object {
     */
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   /**
-    * Version that is associated with this build. Version strings do not need to be unique.
+    * Version that is associated with a build or script. Version strings do not need to be unique.
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

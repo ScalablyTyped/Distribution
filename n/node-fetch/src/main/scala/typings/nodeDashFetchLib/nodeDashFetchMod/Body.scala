@@ -12,6 +12,8 @@ class Body () extends js.Object {
   def this(body: js.Any, opts: nodeDashFetchLib.Anon_Size) = this()
   var body: nodeLib.NodeJSNs.ReadableStream = js.native
   var bodyUsed: scala.Boolean = js.native
+  var size: scala.Double = js.native
+  var timeout: scala.Double = js.native
   def arrayBuffer(): js.Promise[stdLib.ArrayBuffer] = js.native
   def blob(): js.Promise[nodeLib.Buffer] = js.native
   def buffer(): js.Promise[nodeLib.Buffer] = js.native

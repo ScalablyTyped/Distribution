@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var dir: java.lang.String = js.native
   def cleanup(): scala.Unit = js.native
-  def cleanup(callback: js.Function1[/* result */ scala.Boolean | Stats, scala.Unit]): scala.Unit = js.native
+  def cleanup(callback: js.Function2[/* err */ js.Any, /* result */ Stats, scala.Unit]): scala.Unit = js.native
   def cleanupSync(): scala.Boolean | Stats = js.native
   def createWriteStream(): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(affixes: java.lang.String): nodeLib.fsMod.WriteStream = js.native

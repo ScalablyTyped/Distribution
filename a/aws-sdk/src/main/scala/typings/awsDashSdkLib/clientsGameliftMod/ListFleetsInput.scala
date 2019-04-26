@@ -18,6 +18,10 @@ trait ListFleetsInput extends js.Object {
     * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this action. To start at the beginning of the result set, do not specify a value.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  /**
+    * Unique identifier for a Realtime script to return fleets for. Use this parameter to return only fleets using the specified script. To retrieve all fleets, leave this parameter empty.
+    */
+  var ScriptId: js.UndefOr[ScriptId] = js.undefined
 }
 
 object ListFleetsInput {
@@ -25,12 +29,14 @@ object ListFleetsInput {
   def apply(
     BuildId: BuildId = null,
     Limit: js.UndefOr[PositiveInteger] = js.undefined,
-    NextToken: NonZeroAndMaxString = null
+    NextToken: NonZeroAndMaxString = null,
+    ScriptId: ScriptId = null
   ): ListFleetsInput = {
     val __obj = js.Dynamic.literal()
     if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId)
     if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId)
     __obj.asInstanceOf[ListFleetsInput]
   }
 }

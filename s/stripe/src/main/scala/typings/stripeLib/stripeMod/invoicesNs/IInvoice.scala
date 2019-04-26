@@ -39,8 +39,18 @@ trait IInvoice
   /**
     * The fee in cents that will be applied to the invoice and transferred to the application owner's
     * Stripe account when the invoice is paid.
+    *
+    * @deprecated Stripe API Version 2019-03-14 changed the name of this property
+    * @see application_fee_amount
     */
   var application_fee: scala.Double
+  /**
+    * The fee in pence that will be applied to the invoice and transferred to the application owner’s
+    * Stripe account when the invoice is paid.
+    *
+    * @since Stripe API Version 2019-03-14
+    */
+  var application_fee_amount: scala.Double
   /**
     * Number of payment attempts made for this invoice, from the perspective of the payment retry schedule. Any
     * payment attempt counts as the first attempt, and subsequently only automatic retries increment the attempt
@@ -61,11 +71,23 @@ trait IInvoice
     */
   var auto_advance: scala.Boolean
   /**
-    * Either charge_automatically, or send_invoice. When charging automatically, Stripe will attempt to pay this invoice using the default source attached to the customer. When sending an invoice, Stripe will email this invoice to the customer with payment instructions.
+    * Either `charge_automatically`, or `send_invoice`. When charging automatically,
+    * Stripe will attempt to pay this invoice using the default source attached to the
+    * customer. When sending an invoice, Stripe will email this invoice to the customer
+    * with payment instructions.
     */
   var billing: stripeLib.stripeLibStrings.charge_automatically | stripeLib.stripeLibStrings.send_invoice
   /**
-    * Indicates the reason why the invoice was created. subscription_cycle indicates an invoice created by a subscription advancing into a new period. subscription_create indicates an invoice created due to creating a subscription. subscription_update indicates an invoice created due to creating or updating a subscription. subscription is set for all old invoices to indicate either a change to a subscription or a period advancement. manual is set for all invoices unrelated to a subscription (for example: created via the invoice editor). The upcoming value is reserved for simulated invoices per the upcoming invoice endpoint. subscription_threshold indicates an invoice created due to a billing threshold being reached.
+    * Indicates the reason why the invoice was created. `subscription_cycle` indicates an
+    * invoice created by a subscription advancing into a new period.
+    * `subscription_create` indicates an invoice created due to creating a subscription.
+    * `subscription_update` indicates an invoice created due to creating or updating a
+    * subscription. `subscription` is set for all old invoices to indicate either a change
+    * to a subscription or a period advancement. `manual` is set for all invoices
+    * unrelated to a subscription (for example: created via the invoice editor). The
+    * `upcoming` value is reserved for simulated invoices per the upcoming invoice
+    * endpoint. `subscription_threshold` indicates an invoice created due to a billing
+    * threshold being reached.
     */
   var billing_reason: stripeLib.stripeLibStrings.subscription_cycle | stripeLib.stripeLibStrings.subscription_create | stripeLib.stripeLibStrings.subscription_update | stripeLib.stripeLibStrings.subscription | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.upcoming | stripeLib.stripeLibStrings.subscription_threshold
   /**
@@ -78,21 +100,37 @@ trait IInvoice
     */
   var closed: scala.Boolean
   /**
+    * Time at which the object was created. Measured in seconds since the Unix epoch.
+    */
+  var created: scala.Double
+  /**
     * Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
   var currency: java.lang.String
-  var customer: java.lang.String
+  /**
+    * Custom fields displayed on the invoice.
+    */
+  var custom_fields: js.Array[ICustomField]
+  var customer: java.lang.String | stripeLib.stripeMod.customersNs.ICustomer
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
   var date: scala.Double
   /**
+    * ID of the default payment source for the invoice. It must belong to the customer
+    * associated with the invoice and be in a chargeable state. If not set, defaults to
+    * the subscription’s default source, if any, or to the customer’s default source.
+    */
+  var default_source: java.lang.String
+  /**
     * An arbitrary string attached to the object. Often useful for displaying to users.
+    * Referenced as ‘memo’ in the Dashboard.
     */
   var description: java.lang.String
   var discount: stripeLib.stripeMod.couponsNs.IDiscount | scala.Null
   /**
-    * The date on which payment for this invoice is due. This value will be null for invoices where billing=charge_automatically.
+    * The date on which payment for this invoice is due. This value will be `null` for
+    * invoices where `billing=charge_automatically`.
     */
   var due_date: scala.Double | scala.Null
   /**
@@ -101,23 +139,30 @@ trait IInvoice
     */
   var ending_balance: scala.Double | scala.Null
   /**
+    * Footer displayed on the invoice.
+    */
+  var footer: java.lang.String
+  /**
     * Whether or not the invoice has been forgiven. Forgiving an invoice instructs us to update the subscription
     * status as if the invoice were succcessfully paid. Once an invoice has been forgiven, it cannot be unforgiven
     * or reopened
     */
   var forgiven: scala.Boolean
   /**
-    * The URL for the hosted invoice page, which allows customers to view and pay an invoice. If the invoice has not been frozen yet, this will be null.
+    * The URL for the hosted invoice page, which allows customers to view and pay an
+    * invoice. If the invoice has not been finalized yet, this will be null.
     */
   var hosted_invoice_url: java.lang.String | scala.Null
   /**
-    * The link to download the PDF for the invoice. If the invoice has not been frozen yet, this will be null.
+    * The link to download the PDF for the invoice. If the invoice has not been finalized
+    * yet, this will be null.
     */
   var invoice_pdf: java.lang.String | scala.Null
   /**
     * The individual line items that make up the invoice.
     *
-    * lines is sorted as follows: invoice items in reverse chronological order, followed by the subscription, if any.
+    * `lines` is sorted as follows: invoice items in reverse chronological order, followed
+    * by the subscription, if any.
     */
   var lines: stripeLib.stripeMod.IList[IInvoiceLineItem]
   /**
@@ -168,9 +213,13 @@ trait IInvoice
     */
   var statement_descriptor: java.lang.String
   /**
-    * The status of the invoice, one of draft, open, paid, uncollectible, or void.
+    * The status of the invoice, one of `draft`, `open`, `paid`, `uncollectible`, or `void`.
     */
-  var status: java.lang.String
+  var status: stripeLib.stripeLibStrings.draft | stripeLib.stripeLibStrings.open | stripeLib.stripeLibStrings.paid | stripeLib.stripeLibStrings.uncollectible | stripeLib.stripeLibStrings.void
+  /**
+    * Contains the timestamps when an invoice was finalized, paid, marked uncollectible, or voided
+    */
+  var status_transitions: IStatusTransitions
   /**
     * The subscription that this invoice was prepared for, if any.
     */
@@ -195,6 +244,11 @@ trait IInvoice
     */
   var tax_percent: scala.Double | scala.Null
   /**
+    * If `billing_reason` is set to `subscription_threshold` this returns more information
+    * on which threshold rules triggered the invoice.
+    */
+  var threshold_reason: IThresholdReason
+  /**
     * Total after discount
     */
   var total: scala.Double
@@ -213,6 +267,7 @@ object IInvoice {
     amount_paid: scala.Double,
     amount_remaining: scala.Double,
     application_fee: scala.Double,
+    application_fee_amount: scala.Double,
     attempt_count: scala.Double,
     attempted: scala.Boolean,
     auto_advance: scala.Boolean,
@@ -220,10 +275,14 @@ object IInvoice {
     billing_reason: stripeLib.stripeLibStrings.subscription_cycle | stripeLib.stripeLibStrings.subscription_create | stripeLib.stripeLibStrings.subscription_update | stripeLib.stripeLibStrings.subscription | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.upcoming | stripeLib.stripeLibStrings.subscription_threshold,
     charge: java.lang.String | stripeLib.stripeMod.chargesNs.ICharge,
     closed: scala.Boolean,
+    created: scala.Double,
     currency: java.lang.String,
-    customer: java.lang.String,
+    custom_fields: js.Array[ICustomField],
+    customer: java.lang.String | stripeLib.stripeMod.customersNs.ICustomer,
     date: scala.Double,
+    default_source: java.lang.String,
     description: java.lang.String,
+    footer: java.lang.String,
     forgiven: scala.Boolean,
     id: java.lang.String,
     lines: stripeLib.stripeMod.IList[IInvoiceLineItem],
@@ -238,10 +297,12 @@ object IInvoice {
     receipt_number: java.lang.String,
     starting_balance: scala.Double,
     statement_descriptor: java.lang.String,
-    status: java.lang.String,
+    status: stripeLib.stripeLibStrings.draft | stripeLib.stripeLibStrings.open | stripeLib.stripeLibStrings.paid | stripeLib.stripeLibStrings.uncollectible | stripeLib.stripeLibStrings.void,
+    status_transitions: IStatusTransitions,
     subscription: java.lang.String | stripeLib.stripeMod.subscriptionsNs.ISubscription,
     subscription_proration_date: scala.Double,
     subtotal: scala.Double,
+    threshold_reason: IThresholdReason,
     total: scala.Double,
     webhooks_delivered_at: scala.Double,
     discount: stripeLib.stripeMod.couponsNs.IDiscount = null,
@@ -252,7 +313,7 @@ object IInvoice {
     tax: scala.Int | scala.Double = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, currency = currency, customer = customer, date = date, description = description, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])

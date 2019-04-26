@@ -31,7 +31,7 @@ trait Build extends js.Object {
     */
   var Status: js.UndefOr[BuildStatus] = js.undefined
   /**
-    * Version that is associated with this build. Version strings do not need to be unique. This value can be set using CreateBuild or UpdateBuild.
+    * Version that is associated with a build or script. Version strings do not need to be unique. This value can be set using CreateBuild or UpdateBuild.
     */
   var Version: js.UndefOr[FreeText] = js.undefined
 }

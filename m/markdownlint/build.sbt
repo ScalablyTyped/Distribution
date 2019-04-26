@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "markdownlint"
-version := "0.6-dt-20180214Z-47f03b"
+version := "0.13-dt-20190426Z-9d7114"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

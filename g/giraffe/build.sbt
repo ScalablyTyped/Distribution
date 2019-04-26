@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "giraffe"
-version := "0.0-unknown-dt-20190322Z-8f53ca"
+version := "0.0-unknown-dt-20190322Z-310412"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20190322Z-0972ff",
+  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20190425Z-0972ff",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-45cee7",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-dae54d",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",

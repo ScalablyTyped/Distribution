@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait CreateFleetInput extends js.Object {
   /**
-    * Unique identifier for a build to be deployed on the new fleet. The build must have been successfully uploaded to Amazon GameLift and be in a READY status. This fleet setting cannot be changed once the fleet is created.
+    * Unique identifier for a build to be deployed on the new fleet. The custom game server build must have been successfully uploaded to Amazon GameLift and be in a READY status. This fleet setting cannot be changed once the fleet is created.
     */
-  var BuildId: awsDashSdkLib.clientsGameliftMod.BuildId
+  var BuildId: js.UndefOr[BuildId] = js.undefined
   /**
     * Human-readable description of a fleet.
     */
   var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   /**
-    * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. If no inbound permissions are set, including both IP address range and port range, the server processes in the fleet cannot accept connections. You can specify one or more sets of permissions for a fleet.
+    * Range of IP addresses and port settings that permit inbound traffic to access game sessions that running on the fleet. For fleets using a custom game build, this parameter is required before game sessions running on the fleet can accept connections. For Realtime Servers fleets, Amazon GameLift automatically sets TCP and UDP ranges for use by the Realtime servers. You can specify multiple permission settings or add more by updating the fleet.
     */
   var EC2InboundPermissions: js.UndefOr[IpPermissionsList] = js.undefined
   /**
@@ -23,11 +23,11 @@ trait CreateFleetInput extends js.Object {
     */
   var EC2InstanceType: awsDashSdkLib.clientsGameliftMod.EC2InstanceType
   /**
-    * Indicates whether to use on-demand instances or spot instances for this fleet. If empty, the default is ON_DEMAND. Both categories of instances use identical hardware and configurations, based on the instance type selected for this fleet. You can acquire on-demand instances at any time for a fixed price and keep them as long as you need them. Spot instances have lower prices, but spot pricing is variable, and while in use they can be interrupted (with a two-minute notification). Learn more about Amazon GameLift spot instances with at  Set up Access to External Services. 
+    * Indicates whether to use on-demand instances or spot instances for this fleet. If empty, the default is ON_DEMAND. Both categories of instances use identical hardware and configurations based on the instance type selected for this fleet. Learn more about  On-Demand versus Spot Instances. 
     */
   var FleetType: js.UndefOr[FleetType] = js.undefined
   /**
-    * Unique identifier for an AWS IAM role that manages access to your AWS services. Any application that runs on an instance in this fleet can assume the role, including install scripts, server processs, daemons (background processes). Create a role or look up a role's ARN using the IAM dashboard in the AWS Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
+    * Unique identifier for an AWS IAM role that manages access to your AWS services. With an instance role ARN set, any application that runs on an instance in this fleet can assume the role, including install scripts, server processes, daemons (background processes). Create a role or look up a role's ARN using the IAM dashboard in the AWS Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
     */
   var InstanceRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   /**
@@ -59,9 +59,13 @@ trait CreateFleetInput extends js.Object {
     */
   var ResourceCreationLimitPolicy: js.UndefOr[ResourceCreationLimitPolicy] = js.undefined
   /**
-    * Instructions for launching server processes on each instance in the fleet. The run-time configuration for a fleet has a collection of server process configurations, one for each type of server process to run on an instance. A server process configuration specifies the location of the server executable, launch parameters, and the number of concurrent processes with that configuration to maintain on each instance. A CreateFleet request must include a run-time configuration with at least one server process configuration; otherwise the request fails with an invalid request exception. (This parameter replaces the parameters ServerLaunchPath and ServerLaunchParameters; requests that contain values for these parameters instead of a run-time configuration will continue to work.) 
+    * Instructions for launching server processes on each instance in the fleet. Server processes run either a custom game build executable or a Realtime Servers script. The run-time configuration lists the types of server processes to run on an instance and includes the following configuration settings: the server executable or launch script file, launch parameters, and the number of processes to run concurrently on each instance. A CreateFleet request must include a run-time configuration with at least one server process configuration.
     */
   var RuntimeConfiguration: js.UndefOr[RuntimeConfiguration] = js.undefined
+  /**
+    * Unique identifier for a Realtime script to be deployed on the new fleet. The Realtime script must have been successfully uploaded to Amazon GameLift. This fleet setting cannot be changed once the fleet is created.
+    */
+  var ScriptId: js.UndefOr[ScriptId] = js.undefined
   /**
     * This parameter is no longer used. Instead, specify server launch parameters in the RuntimeConfiguration parameter. (Requests that specify a server launch path and launch parameters instead of a run-time configuration will continue to work.)
     */
@@ -75,9 +79,9 @@ trait CreateFleetInput extends js.Object {
 object CreateFleetInput {
   @scala.inline
   def apply(
-    BuildId: BuildId,
     EC2InstanceType: EC2InstanceType,
     Name: NonZeroAndMaxString,
+    BuildId: BuildId = null,
     Description: NonZeroAndMaxString = null,
     EC2InboundPermissions: IpPermissionsList = null,
     FleetType: FleetType = null,
@@ -89,10 +93,12 @@ object CreateFleetInput {
     PeerVpcId: NonZeroAndMaxString = null,
     ResourceCreationLimitPolicy: ResourceCreationLimitPolicy = null,
     RuntimeConfiguration: RuntimeConfiguration = null,
+    ScriptId: ScriptId = null,
     ServerLaunchParameters: NonZeroAndMaxString = null,
     ServerLaunchPath: NonZeroAndMaxString = null
   ): CreateFleetInput = {
-    val __obj = js.Dynamic.literal(BuildId = BuildId, EC2InstanceType = EC2InstanceType.asInstanceOf[js.Any], Name = Name)
+    val __obj = js.Dynamic.literal(EC2InstanceType = EC2InstanceType.asInstanceOf[js.Any], Name = Name)
+    if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (EC2InboundPermissions != null) __obj.updateDynamic("EC2InboundPermissions")(EC2InboundPermissions)
     if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])
@@ -104,6 +110,7 @@ object CreateFleetInput {
     if (PeerVpcId != null) __obj.updateDynamic("PeerVpcId")(PeerVpcId)
     if (ResourceCreationLimitPolicy != null) __obj.updateDynamic("ResourceCreationLimitPolicy")(ResourceCreationLimitPolicy)
     if (RuntimeConfiguration != null) __obj.updateDynamic("RuntimeConfiguration")(RuntimeConfiguration)
+    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId)
     if (ServerLaunchParameters != null) __obj.updateDynamic("ServerLaunchParameters")(ServerLaunchParameters)
     if (ServerLaunchPath != null) __obj.updateDynamic("ServerLaunchPath")(ServerLaunchPath)
     __obj.asInstanceOf[CreateFleetInput]

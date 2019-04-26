@@ -207,6 +207,9 @@ object stripeLibStrings {
   sealed trait down extends js.Object
   
   @js.native
+  sealed trait draft extends js.Object
+  
+  @js.native
   sealed trait duplicate
     extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
   
@@ -405,6 +408,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait once extends js.Object
+  
+  @js.native
+  sealed trait open extends js.Object
   
   @js.native
   sealed trait order extends js.Object
@@ -631,6 +637,9 @@ object stripeLibStrings {
   sealed trait unchecked extends js.Object
   
   @js.native
+  sealed trait uncollectible extends js.Object
+  
+  @js.native
   sealed trait under_review extends js.Object
   
   @js.native
@@ -663,6 +672,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait verified extends js.Object
+  
+  @js.native
+  sealed trait void extends js.Object
   
   @js.native
   sealed trait volume extends js.Object
@@ -816,6 +828,8 @@ object stripeLibStrings {
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
+  def draft: draft = "draft".asInstanceOf[draft]
+  @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   @scala.inline
   def ephemeral_key: ephemeral_key = "ephemeral_key".asInstanceOf[ephemeral_key]
@@ -937,6 +951,8 @@ object stripeLibStrings {
   def now: now = "now".asInstanceOf[now]
   @scala.inline
   def once: once = "once".asInstanceOf[once]
+  @scala.inline
+  def open: open = "open".asInstanceOf[open]
   @scala.inline
   def order: order = "order".asInstanceOf[order]
   @scala.inline
@@ -1080,6 +1096,8 @@ object stripeLibStrings {
   @scala.inline
   def unchecked: unchecked = "unchecked".asInstanceOf[unchecked]
   @scala.inline
+  def uncollectible: uncollectible = "uncollectible".asInstanceOf[uncollectible]
+  @scala.inline
   def under_review: under_review = "under_review".asInstanceOf[under_review]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
@@ -1101,6 +1119,8 @@ object stripeLibStrings {
   def verification_failed: verification_failed = "verification_failed".asInstanceOf[verification_failed]
   @scala.inline
   def verified: verified = "verified".asInstanceOf[verified]
+  @scala.inline
+  def void: void = "void".asInstanceOf[void]
   @scala.inline
   def volume: volume = "volume".asInstanceOf[volume]
   @scala.inline

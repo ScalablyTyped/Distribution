@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait PageSize extends js.Object
 
+trait Pagesize extends js.Object {
+  var height: scala.Double
+  var orientation: PageOrientation
+  var width: scala.Double
+}
+
 @JSImport("pdfmake/build/pdfmake", "PageSize")
 @js.native
 object PageSize extends js.Object {
@@ -253,5 +259,14 @@ object PageSize extends js.Object {
   /* "TABLOID" */ val TABLOID: TABLOID with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[pdfmakeLib.buildPdfmakeMod.PageSize with java.lang.String] = js.native
+}
+
+object Pagesize {
+  @scala.inline
+  def apply(height: scala.Double, orientation: PageOrientation, width: scala.Double): Pagesize = {
+    val __obj = js.Dynamic.literal(height = height, orientation = orientation, width = width)
+  
+    __obj.asInstanceOf[Pagesize]
+  }
 }
 

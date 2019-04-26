@@ -42,6 +42,10 @@ trait CreateTableInput extends js.Object {
     * The name of the table to create.
     */
   var TableName: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.TableName
+  /**
+    * A list of key-value pairs to label the table. For more information, see Tagging for DynamoDB.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 
 object CreateTableInput {
@@ -55,7 +59,8 @@ object CreateTableInput {
     LocalSecondaryIndexes: LocalSecondaryIndexList = null,
     ProvisionedThroughput: ProvisionedThroughput = null,
     SSESpecification: SSESpecification = null,
-    StreamSpecification: StreamSpecification = null
+    StreamSpecification: StreamSpecification = null,
+    Tags: TagList = null
   ): CreateTableInput = {
     val __obj = js.Dynamic.literal(AttributeDefinitions = AttributeDefinitions, KeySchema = KeySchema, TableName = TableName)
     if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
@@ -64,6 +69,7 @@ object CreateTableInput {
     if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
     if (SSESpecification != null) __obj.updateDynamic("SSESpecification")(SSESpecification)
     if (StreamSpecification != null) __obj.updateDynamic("StreamSpecification")(StreamSpecification)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateTableInput]
   }
 }

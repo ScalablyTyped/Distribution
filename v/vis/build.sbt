@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vis"
-version := "4.21-dt-20190418Z-9ab7b5"
+version := "4.21-dt-20190426Z-cdaff0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

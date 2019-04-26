@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "istanbul-lib-coverage"
-version := "2.0-dt-20190311Z-e069e9"
+version := "2.0-dt-20190425Z-e069e9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

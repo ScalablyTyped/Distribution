@@ -11,7 +11,7 @@ trait DescribeJobDefinitionsRequest extends js.Object {
     */
   var jobDefinitionName: js.UndefOr[String] = js.undefined
   /**
-    * A space-separated list of up to 100 job definition names or full Amazon Resource Name (ARN) entries.
+    * A list of up to 100 job definition names or full Amazon Resource Name (ARN) entries.
     */
   var jobDefinitions: js.UndefOr[StringList] = js.undefined
   /**

@@ -11,7 +11,7 @@ trait CreateComputeEnvironmentRequest extends js.Object {
     */
   var computeEnvironmentName: String
   /**
-    * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments.
+    * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. For more information, see Compute Environments in the AWS Batch User Guide.
     */
   var computeResources: js.UndefOr[ComputeResource] = js.undefined
   /**

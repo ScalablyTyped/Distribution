@@ -11,11 +11,11 @@ trait ServerProcess extends js.Object {
     */
   var ConcurrentExecutions: PositiveInteger
   /**
-    * Location of the server executable in a game build. All game builds are installed on instances at the root : for Windows instances C:\game, and for Linux instances /local/game. A Windows game build with an executable file located at MyGame\latest\server.exe must have a launch path of "C:\game\MyGame\latest\server.exe". A Linux game build with an executable file located at MyGame/latest/server.exe must have a launch path of "/local/game/MyGame/latest/server.exe". 
+    * Location of the server executable in a custom game build or the name of the Realtime script file that contains the Init() function. Game builds and Realtime scripts are installed on instances at the root:    Windows (for custom game builds only): C:\game. Example: "C:\game\MyGame\server.exe"    Linux: /local/game. Examples: "/local/game/MyGame/server.exe" or "/local/game/MyRealtimeScript.js"  
     */
   var LaunchPath: NonZeroAndMaxString
   /**
-    * Optional list of parameters to pass to the server executable on launch.
+    * Optional list of parameters to pass to the server executable or Realtime script on launch.
     */
   var Parameters: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

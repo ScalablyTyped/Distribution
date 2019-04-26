@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "istanbul-lib-hook"
-version := "1.0-dt-20180214Z-8b6890"
+version := "1.0-dt-20190425Z-8b6890"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

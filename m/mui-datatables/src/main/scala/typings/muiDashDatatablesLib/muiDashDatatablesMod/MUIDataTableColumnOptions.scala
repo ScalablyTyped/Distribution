@@ -18,13 +18,14 @@ trait MUIDataTableColumnOptions extends js.Object {
     js.Function2[
       /* columnMeta */ MUIDataTableCustomHeadRenderer, 
       /* updateDirection */ js.Function1[/* params */ js.Any, _], 
-      java.lang.String
+      java.lang.String | reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
   var display: js.UndefOr[
     muiDashDatatablesLib.muiDashDatatablesLibStrings.`true` | muiDashDatatablesLib.muiDashDatatablesLibStrings.`false` | muiDashDatatablesLib.muiDashDatatablesLibStrings.excluded
   ] = js.undefined
   var download: js.UndefOr[scala.Boolean] = js.undefined
+  var empty: js.UndefOr[scala.Boolean] = js.undefined
   var filter: js.UndefOr[scala.Boolean] = js.undefined
   var filterList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var filterOptions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -49,9 +50,10 @@ object MUIDataTableColumnOptions {
   @scala.inline
   def apply(
     customBodyRender: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function3[/* s */ js.Any, /* c */ js.Any, /* p */ js.Any, _]) => java.lang.String | reactLib.reactMod.ReactNode = null,
-    customHeadRender: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* updateDirection */ js.Function1[/* params */ js.Any, _]) => java.lang.String = null,
+    customHeadRender: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* updateDirection */ js.Function1[/* params */ js.Any, _]) => java.lang.String | reactLib.reactMod.ReactNode = null,
     display: muiDashDatatablesLib.muiDashDatatablesLibStrings.`true` | muiDashDatatablesLib.muiDashDatatablesLibStrings.`false` | muiDashDatatablesLib.muiDashDatatablesLibStrings.excluded = null,
     download: js.UndefOr[scala.Boolean] = js.undefined,
+    empty: js.UndefOr[scala.Boolean] = js.undefined,
     filter: js.UndefOr[scala.Boolean] = js.undefined,
     filterList: js.Array[java.lang.String] = null,
     filterOptions: js.Array[java.lang.String] = null,
@@ -67,6 +69,7 @@ object MUIDataTableColumnOptions {
     if (customHeadRender != null) __obj.updateDynamic("customHeadRender")(js.Any.fromFunction2(customHeadRender))
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
     if (filterList != null) __obj.updateDynamic("filterList")(filterList)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)

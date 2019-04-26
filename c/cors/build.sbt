@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cors"
-version := "2.8-dt-20190322Z-fde28f"
+version := "2.8-dt-20190425Z-744e51"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

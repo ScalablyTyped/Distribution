@@ -309,6 +309,8 @@ package object clientsGameliftMod {
     - java.lang.String
   */
   type ScalingStatusType = _ScalingStatusType | java.lang.String
+  type ScriptId = java.lang.String
+  type ScriptList = js.Array[Script]
   type ServerProcessList = js.Array[ServerProcess]
   type SnsArnStringModel = java.lang.String
   type StringDoubleMap = org.scalablytyped.runtime.StringDictionary[DoubleObject]
@@ -318,6 +320,7 @@ package object clientsGameliftMod {
   type VpcPeeringAuthorizationList = js.Array[VpcPeeringAuthorization]
   type VpcPeeringConnectionList = js.Array[VpcPeeringConnection]
   type WholeNumber = scala.Double
+  type ZipBlob = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2015-10-01`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

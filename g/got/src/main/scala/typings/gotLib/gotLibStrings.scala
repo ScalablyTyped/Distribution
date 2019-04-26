@@ -28,6 +28,9 @@ object gotLibStrings {
   sealed trait OPTIONS extends js.Object
   
   @js.native
+  sealed trait POST extends js.Object
+  
+  @js.native
   sealed trait PUT extends js.Object
   
   @js.native
@@ -98,6 +101,8 @@ object gotLibStrings {
   def MaxRedirectsError: MaxRedirectsError = "MaxRedirectsError".asInstanceOf[MaxRedirectsError]
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline

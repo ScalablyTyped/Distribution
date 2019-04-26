@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteTagsRequest extends js.Object {
   /**
-    * The identifier of the WorkSpace. To find this ID, use DescribeWorkspaces.
+    * The identifier of the WorkSpaces resource. The supported resource types are WorkSpaces, registered directories, images, custom bundles, and IP access control groups.
     */
   var ResourceId: NonEmptyString
   /**
