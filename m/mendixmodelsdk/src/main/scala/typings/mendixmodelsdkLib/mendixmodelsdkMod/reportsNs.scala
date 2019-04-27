@@ -351,7 +351,7 @@ object reportsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
@@ -405,16 +405,25 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
+    /**
+      * Creates and returns a new BasicReport instance in the SDK and on the server.
+      * The new BasicReport will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
       * The new BasicReport will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
@@ -423,7 +432,7 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
@@ -513,7 +522,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
@@ -531,7 +540,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
@@ -597,6 +606,15 @@ object reportsNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
+    /**
+      * Creates and returns a new BasicReport instance in the SDK and on the server.
+      * The new BasicReport will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
   }
   
   /* static members */
@@ -853,7 +871,7 @@ object reportsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
@@ -907,16 +925,25 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
+    /**
+      * Creates and returns a new ReportButton instance in the SDK and on the server.
+      * The new ReportButton will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
       * The new ReportButton will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
@@ -925,7 +952,7 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
@@ -1015,7 +1042,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
@@ -1033,7 +1060,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
@@ -1099,6 +1126,15 @@ object reportsNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
+    /**
+      * Creates and returns a new ReportButton instance in the SDK and on the server.
+      * The new ReportButton will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
   }
   
   /* static members */
@@ -1289,7 +1325,7 @@ object reportsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
@@ -1343,16 +1379,25 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
+    /**
+      * Creates and returns a new ReportChart instance in the SDK and on the server.
+      * The new ReportChart will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
       * The new ReportChart will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
@@ -1361,7 +1406,7 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
@@ -1451,7 +1496,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
@@ -1469,7 +1514,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
@@ -1535,6 +1580,15 @@ object reportsNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
+    /**
+      * Creates and returns a new ReportChart instance in the SDK and on the server.
+      * The new ReportChart will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
   }
   
   /* static members */
@@ -1763,7 +1817,7 @@ object reportsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
@@ -1817,16 +1871,25 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
+    /**
+      * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
+      * The new ReportDateRangeSelector will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
       * The new ReportDateRangeSelector will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
@@ -1835,7 +1898,7 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
@@ -1925,7 +1988,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
@@ -1943,7 +2006,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
@@ -2009,6 +2072,15 @@ object reportsNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
+    /**
+      * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
+      * The new ReportDateRangeSelector will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
   }
   
   /* static members */
@@ -2199,7 +2271,7 @@ object reportsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
@@ -2253,16 +2325,25 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
+    /**
+      * Creates and returns a new ReportDropDown instance in the SDK and on the server.
+      * The new ReportDropDown will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
       * The new ReportDropDown will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
@@ -2271,7 +2352,7 @@ object reportsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
@@ -2361,7 +2442,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
@@ -2379,7 +2460,7 @@ object reportsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
@@ -2445,6 +2526,15 @@ object reportsNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
+    /**
+      * Creates and returns a new ReportDropDown instance in the SDK and on the server.
+      * The new ReportDropDown will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
   }
   
   /* static members */

@@ -13,6 +13,9 @@ object CardProps {
   def apply(
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
     as: reactLib.reactMod.ReactType[_] = null,
+    backgroundColor: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
     backgroundImage: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.BackgroundImageProperty] = null,
     backgroundPosition: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundPositionProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
@@ -141,6 +144,7 @@ object CardProps {
     val __obj = js.Dynamic.literal()
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
     if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
     if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])

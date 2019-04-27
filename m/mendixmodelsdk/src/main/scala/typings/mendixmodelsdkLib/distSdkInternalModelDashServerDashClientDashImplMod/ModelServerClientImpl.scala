@@ -27,12 +27,6 @@ class ModelServerClientImpl protected ()
   var sendGetUnitRequest: js.Any = js.native
   var storeResponseAsFile: js.Any = js.native
   var transportation: js.Any = js.native
-  def createWorkingCopyByProject(
-    projectId: java.lang.String,
-    workingCopyId: java.lang.String,
-    callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
-    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
-  ): scala.Unit = js.native
   def getFile(
     workingCopyId: java.lang.String,
     filePath: java.lang.String,

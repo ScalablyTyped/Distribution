@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "electron-notifications"
-version := "v0.0.3-dt-20190322Z-fdd8e9"
+version := "v0.0.3-dt-20190322Z-3a19ef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "electron" % "4.1.5-f78f5b",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
+  "org.scalablytyped" %%% "electron" % "4.1.5-d27f96",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

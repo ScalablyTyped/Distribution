@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DateTimePickerProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof std.Partial<std.HTMLInputElement>, 'value'> ]: std.Partial<std.HTMLInputElement>[P]} */ trait DateTimePickerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[flatpickrLib.flatpickrMod.flatpickrNs.OptionsNs.Hook] = js.undefined

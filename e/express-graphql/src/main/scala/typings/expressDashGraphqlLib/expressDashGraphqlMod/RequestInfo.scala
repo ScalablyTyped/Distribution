@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait RequestInfo extends js.Object {
   /**
+    * A value to pass as the context to the graphql() function.
+    */
+  var context: js.UndefOr[js.Any] = js.undefined
+  /**
     * The parsed GraphQL document.
     */
   var document: js.UndefOr[graphqlLib.languageAstMod.DocumentNode | scala.Null]
@@ -28,11 +32,13 @@ object RequestInfo {
   @scala.inline
   def apply(
     result: js.Any,
+    context: js.Any = null,
     document: graphqlLib.languageAstMod.DocumentNode = null,
     operationName: java.lang.String = null,
     variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): RequestInfo = {
     val __obj = js.Dynamic.literal(result = result)
+    if (context != null) __obj.updateDynamic("context")(context)
     if (document != null) __obj.updateDynamic("document")(document)
     if (operationName != null) __obj.updateDynamic("operationName")(operationName)
     if (variables != null) __obj.updateDynamic("variables")(variables)

@@ -15,7 +15,7 @@ trait MessageAttributeValue extends js.Object {
     */
   var DataType: String
   /**
-    * Strings are Unicode with UTF8 binary encoding. For a list of code values, see http://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters.
+    * Strings are Unicode with UTF8 binary encoding. For a list of code values, see ASCII Printable Characters.
     */
   var StringValue: js.UndefOr[String] = js.undefined
 }

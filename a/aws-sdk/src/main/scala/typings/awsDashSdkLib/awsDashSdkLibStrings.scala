@@ -9208,6 +9208,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCodedeployMod._RevisionLocationType
   
   @js.native
+  sealed trait GlobalEndpointTokenVersion
+    extends awsDashSdkLib.clientsIamMod._summaryKeyType
+  
+  @js.native
   sealed trait Google
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._IdentityProviderTypeType
   
@@ -25977,6 +25981,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDmsMod._EncodingTypeValue
   
   @js.native
+  sealed trait policyExists extends js.Object
+  
+  @js.native
   sealed trait preferred_username
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._AliasAttributeType
   
@@ -26573,6 +26580,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait role
     extends awsDashSdkLib.clientsIamMod._PolicySourceType
+  
+  @js.native
+  sealed trait roleExists extends js.Object
   
   @js.native
   sealed trait rollback
@@ -27495,7 +27505,15 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsOpsworksMod._CloudWatchLogsEncoding
   
   @js.native
+  sealed trait v1Token
+    extends awsDashSdkLib.clientsIamMod._globalEndpointTokenVersion
+  
+  @js.native
   sealed trait v2 extends js.Object
+  
+  @js.native
+  sealed trait v2Token
+    extends awsDashSdkLib.clientsIamMod._globalEndpointTokenVersion
   
   @js.native
   sealed trait v3 extends js.Object
@@ -31484,6 +31502,8 @@ object awsDashSdkLibStrings {
   def Git: Git = "Git".asInstanceOf[Git]
   @scala.inline
   def GitHub: GitHub = "GitHub".asInstanceOf[GitHub]
+  @scala.inline
+  def GlobalEndpointTokenVersion: GlobalEndpointTokenVersion = "GlobalEndpointTokenVersion".asInstanceOf[GlobalEndpointTokenVersion]
   @scala.inline
   def Google: Google = "Google".asInstanceOf[Google]
   @scala.inline
@@ -38591,6 +38611,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `plain-dictionary`: `plain-dictionary` = "plain-dictionary".asInstanceOf[`plain-dictionary`]
   @scala.inline
+  def policyExists: policyExists = "policyExists".asInstanceOf[policyExists]
+  @scala.inline
   def preferred_username: preferred_username = "preferred_username".asInstanceOf[preferred_username]
   @scala.inline
   def prefix: prefix = "prefix".asInstanceOf[prefix]
@@ -38870,6 +38892,8 @@ object awsDashSdkLibStrings {
   def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
   @scala.inline
   def role: role = "role".asInstanceOf[role]
+  @scala.inline
+  def roleExists: roleExists = "roleExists".asInstanceOf[roleExists]
   @scala.inline
   def rollback: rollback = "rollback".asInstanceOf[rollback]
   @scala.inline
@@ -39307,7 +39331,11 @@ object awsDashSdkLibStrings {
   @scala.inline
   def utf_8_sig: utf_8_sig = "utf_8_sig".asInstanceOf[utf_8_sig]
   @scala.inline
+  def v1Token: v1Token = "v1Token".asInstanceOf[v1Token]
+  @scala.inline
   def v2: v2 = "v2".asInstanceOf[v2]
+  @scala.inline
+  def v2Token: v2Token = "v2Token".asInstanceOf[v2Token]
   @scala.inline
   def v3: v3 = "v3".asInstanceOf[v3]
   @scala.inline

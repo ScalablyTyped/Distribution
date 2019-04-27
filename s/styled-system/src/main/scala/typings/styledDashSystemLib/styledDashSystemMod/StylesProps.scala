@@ -13,6 +13,8 @@ trait StylesProps extends js.Object {
   var alignItems_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("alignSelf")
   var alignSelf_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("backgroundColor")
+  var backgroundColor_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("backgroundImage")
   var backgroundImage_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("backgroundPosition")
@@ -23,8 +25,6 @@ trait StylesProps extends js.Object {
   var backgroundSize_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("background")
   var background_Original: js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSName("bgColor")
-  var bgColor_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("borderBottom")
   var borderBottom_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("borderColor")
@@ -107,6 +107,16 @@ trait StylesProps extends js.Object {
   var letterSpacing_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("lineHeight")
   var lineHeight_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("marginBottom")
+  var marginBottom_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("marginLeft")
+  var marginLeft_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("marginRight")
+  var marginRight_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("marginTop")
+  var marginTop_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("margin")
+  var margin_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("maxHeight")
   var maxHeight_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("maxWidth")
@@ -121,18 +131,20 @@ trait StylesProps extends js.Object {
   var order_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("overflow")
   var overflow_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("paddingBottom")
+  var paddingBottom_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("paddingLeft")
+  var paddingLeft_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("paddingRight")
+  var paddingRight_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("paddingTop")
+  var paddingTop_Original: js.Function1[/* repeated */ js.Any, _] = js.native
+  @JSName("padding")
+  var padding_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("position")
   var position_Original: js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSName("ratioPadding")
-  var ratioPadding_Original: js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSName("ratio")
-  var ratio_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("right")
   var right_Original: js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSName("sizeHeight")
-  var sizeHeight_Original: js.Function1[/* repeated */ js.Any, _] = js.native
-  @JSName("sizeWidth")
-  var sizeWidth_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("size")
   var size_Original: js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("space")
@@ -155,11 +167,11 @@ trait StylesProps extends js.Object {
   def alignItems(args: js.Any*): js.Any = js.native
   def alignSelf(args: js.Any*): js.Any = js.native
   def background(args: js.Any*): js.Any = js.native
+  def backgroundColor(args: js.Any*): js.Any = js.native
   def backgroundImage(args: js.Any*): js.Any = js.native
   def backgroundPosition(args: js.Any*): js.Any = js.native
   def backgroundRepeat(args: js.Any*): js.Any = js.native
   def backgroundSize(args: js.Any*): js.Any = js.native
-  def bgColor(args: js.Any*): js.Any = js.native
   def border(args: js.Any*): js.Any = js.native
   def borderBottom(args: js.Any*): js.Any = js.native
   def borderColor(args: js.Any*): js.Any = js.native
@@ -201,6 +213,11 @@ trait StylesProps extends js.Object {
   def left(args: js.Any*): js.Any = js.native
   def letterSpacing(args: js.Any*): js.Any = js.native
   def lineHeight(args: js.Any*): js.Any = js.native
+  def margin(args: js.Any*): js.Any = js.native
+  def marginBottom(args: js.Any*): js.Any = js.native
+  def marginLeft(args: js.Any*): js.Any = js.native
+  def marginRight(args: js.Any*): js.Any = js.native
+  def marginTop(args: js.Any*): js.Any = js.native
   def maxHeight(args: js.Any*): js.Any = js.native
   def maxWidth(args: js.Any*): js.Any = js.native
   def minHeight(args: js.Any*): js.Any = js.native
@@ -208,13 +225,14 @@ trait StylesProps extends js.Object {
   def opacity(arg: js.Any*): js.Any = js.native
   def order(args: js.Any*): js.Any = js.native
   def overflow(arg: js.Any*): js.Any = js.native
+  def padding(args: js.Any*): js.Any = js.native
+  def paddingBottom(args: js.Any*): js.Any = js.native
+  def paddingLeft(args: js.Any*): js.Any = js.native
+  def paddingRight(args: js.Any*): js.Any = js.native
+  def paddingTop(args: js.Any*): js.Any = js.native
   def position(args: js.Any*): js.Any = js.native
-  def ratio(args: js.Any*): js.Any = js.native
-  def ratioPadding(args: js.Any*): js.Any = js.native
   def right(args: js.Any*): js.Any = js.native
   def size(args: js.Any*): js.Any = js.native
-  def sizeHeight(args: js.Any*): js.Any = js.native
-  def sizeWidth(args: js.Any*): js.Any = js.native
   def space(args: js.Any*): js.Any = js.native
   def textAlign(args: js.Any*): js.Any = js.native
   def textColor(args: js.Any*): js.Any = js.native

@@ -31,6 +31,15 @@ object pagesNs extends js.Object {
   class AlignmentEnum ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.AlignmentEnum
   
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class Appearance protected ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
   @js.native
   class AssociationSource protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.AssociationSource {
@@ -422,6 +431,19 @@ object pagesNs extends js.Object {
   }
   
   /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class DesignPropertyValue protected ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.DesignPropertyValue {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  @js.native
+  class DesignPropertyValueType ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.DesignPropertyValueType
+  
+  /**
     * See: {@link https://docs.mendix.com/refguide7/container relevant section in reference guide}
     */
   @js.native
@@ -699,6 +721,8 @@ object pagesNs extends js.Object {
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/horizontal-split-pane relevant section in reference guide}
+    *
+    * In version 8.0.0: deleted
     */
   @js.native
   class HorizontalSplitPane protected ()
@@ -755,6 +779,10 @@ object pagesNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  @js.native
+  class KeyboardType ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType
+  
   /**
     * See: {@link https://docs.mendix.com/refguide7/label relevant section in reference guide}
     */
@@ -785,6 +813,15 @@ object pagesNs extends js.Object {
   @js.native
   class LayoutCallArgument protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  abstract class LayoutContent protected ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutContent {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
@@ -1062,6 +1099,19 @@ object pagesNs extends js.Object {
   }
   
   /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class NativeLayoutContent protected ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  @js.native
+  class NativeTextStyle ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle
+  
+  /**
     * See: {@link https://docs.mendix.com/refguide7/navigation-list relevant section in reference guide}
     */
   @js.native
@@ -1239,12 +1289,6 @@ object pagesNs extends js.Object {
   }
   
   @js.native
-  abstract class PlaceholderBase protected ()
-    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.PlaceholderBase {
-    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-  }
-  
-  @js.native
   class ProgressBarType ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.ProgressBarType
   
@@ -1358,6 +1402,10 @@ object pagesNs extends js.Object {
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
+  
+  @js.native
+  class ScrollDirection ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollDirection
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/search-bar relevant section in reference guide}
@@ -1509,6 +1557,9 @@ object pagesNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  /**
+    * In version 8.0.0: deleted
+    */
   @js.native
   abstract class SplitPane protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane {
@@ -1688,10 +1739,21 @@ object pagesNs extends js.Object {
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/vertical-split-pane relevant section in reference guide}
+    *
+    * In version 8.0.0: deleted
     */
   @js.native
   class VerticalSplitPane protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class WebLayoutContent protected ()
+    extends mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
@@ -1904,7 +1966,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
     /**
@@ -1958,16 +2020,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
+    /**
+      * Creates and returns a new ActionButton instance in the SDK and on the server.
+      * The new ActionButton will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
     /**
       * Creates and returns a new ActionButton instance in the SDK and on the server.
       * The new ActionButton will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
     /**
@@ -1976,7 +2047,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
     /**
@@ -2066,7 +2137,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
     /**
@@ -2084,7 +2155,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
     /**
@@ -2150,6 +2221,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
+    /**
+      * Creates and returns a new ActionButton instance in the SDK and on the server.
+      * The new ActionButton will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
   }
   
   /* static members */
@@ -2176,6 +2256,127 @@ object pagesNs extends js.Object {
     var Center: mendixmodelsdkLib.distGenPagesMod.pagesNs.AlignmentEnum = js.native
     var Left: mendixmodelsdkLib.distGenPagesMod.pagesNs.AlignmentEnum = js.native
     var Right: mendixmodelsdkLib.distGenPagesMod.pagesNs.AlignmentEnum = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Appearance extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent ControlBarButton element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInControlBarButtonUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBarButton): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent GridColumn element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInGridColumnUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GridColumn): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent LayoutGridColumn element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInLayoutGridColumnUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridColumn): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent LayoutGridRow element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInLayoutGridRowUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridRow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent Layout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInLayoutUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent NavigationListItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNavigationListItemUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationListItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent PageTemplate element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInPageTemplateUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.PageTemplate): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent Page element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInPageUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Page): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent ScrollContainerRegion element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInScrollContainerRegionUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent TableCell element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInTableCellUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCell): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent TableRow element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInTableRowUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableRow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
+    /**
+      * Creates and returns a new Appearance instance in the SDK and on the server.
+      * The new Appearance will be automatically stored in the 'appearance' property
+      * of the parent Widget element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWidgetUnderAppearance(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Widget): mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance = js.native
   }
   
   /* static members */
@@ -2536,6 +2737,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
     /**
       * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
+      * The new CallNanoflowClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
+    /**
+      * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
       * The new CallNanoflowClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -2561,6 +2771,15 @@ object pagesNs extends js.Object {
       *  7.8.0 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
+    /**
+      * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
+      * The new CallNanoflowClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
     /**
       * Creates and returns a new CallNanoflowClientAction instance in the SDK and on the server.
       * The new CallNanoflowClientAction will be automatically stored in the 'action' property
@@ -2886,6 +3105,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
     /**
       * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
+      * The new CancelChangesClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
+    /**
+      * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
       * The new CancelChangesClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -2911,6 +3139,15 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
+    /**
+      * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
+      * The new CancelChangesClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
     /**
       * Creates and returns a new CancelChangesClientAction instance in the SDK and on the server.
       * The new CancelChangesClientAction will be automatically stored in the 'action' property
@@ -3137,7 +3374,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
     /**
@@ -3191,16 +3428,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
+    /**
+      * Creates and returns a new CheckBox instance in the SDK and on the server.
+      * The new CheckBox will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
     /**
       * Creates and returns a new CheckBox instance in the SDK and on the server.
       * The new CheckBox will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
     /**
@@ -3209,7 +3455,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
     /**
@@ -3299,7 +3545,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
     /**
@@ -3317,7 +3563,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
     /**
@@ -3383,6 +3629,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
+    /**
+      * Creates and returns a new CheckBox instance in the SDK and on the server.
+      * The new CheckBox will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
   }
   
   /* static members */
@@ -3567,6 +3822,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
     /**
       * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
+      * The new ClosePageClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
+    /**
+      * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
       * The new ClosePageClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -3592,6 +3856,15 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
+    /**
+      * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
+      * The new ClosePageClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
     /**
       * Creates and returns a new ClosePageClientAction instance in the SDK and on the server.
       * The new ClosePageClientAction will be automatically stored in the 'action' property
@@ -3901,6 +4174,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
     /**
       * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
+      * The new CreateObjectClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
+    /**
+      * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
       * The new CreateObjectClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -3926,6 +4208,15 @@ object pagesNs extends js.Object {
       *  7.17.0 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
+    /**
+      * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
+      * The new CreateObjectClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
     /**
       * Creates and returns a new CreateObjectClientAction instance in the SDK and on the server.
       * The new CreateObjectClientAction will be automatically stored in the 'action' property
@@ -4152,7 +4443,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
     /**
@@ -4206,16 +4497,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
+    /**
+      * Creates and returns a new DataGrid instance in the SDK and on the server.
+      * The new DataGrid will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
     /**
       * Creates and returns a new DataGrid instance in the SDK and on the server.
       * The new DataGrid will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
     /**
@@ -4224,7 +4524,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
     /**
@@ -4314,7 +4614,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
     /**
@@ -4332,7 +4632,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
     /**
@@ -4398,6 +4698,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
+    /**
+      * Creates and returns a new DataGrid instance in the SDK and on the server.
+      * The new DataGrid will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
   }
   
   /* static members */
@@ -4671,7 +4980,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
     /**
@@ -4725,16 +5034,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
+    /**
+      * Creates and returns a new DataView instance in the SDK and on the server.
+      * The new DataView will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
     /**
       * Creates and returns a new DataView instance in the SDK and on the server.
       * The new DataView will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
     /**
@@ -4743,7 +5061,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
     /**
@@ -4833,7 +5151,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
     /**
@@ -4851,7 +5169,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
     /**
@@ -4917,6 +5235,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
+    /**
+      * Creates and returns a new DataView instance in the SDK and on the server.
+      * The new DataView will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
   }
   
   /* static members */
@@ -5316,7 +5643,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
     /**
@@ -5370,16 +5697,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
+    /**
+      * Creates and returns a new DatePicker instance in the SDK and on the server.
+      * The new DatePicker will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
     /**
       * Creates and returns a new DatePicker instance in the SDK and on the server.
       * The new DatePicker will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
     /**
@@ -5388,7 +5724,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
     /**
@@ -5478,7 +5814,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
     /**
@@ -5496,7 +5832,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
     /**
@@ -5562,6 +5898,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
+    /**
+      * Creates and returns a new DatePicker instance in the SDK and on the server.
+      * The new DatePicker will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
   }
   
   /* static members */
@@ -5640,6 +5985,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.DeleteClientAction = js.native
     /**
       * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
+      * The new DeleteClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.DeleteClientAction = js.native
+    /**
+      * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
       * The new DeleteClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -5665,6 +6019,15 @@ object pagesNs extends js.Object {
       *  7.17.0 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.DeleteClientAction = js.native
+    /**
+      * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
+      * The new DeleteClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.DeleteClientAction = js.native
     /**
       * Creates and returns a new DeleteClientAction instance in the SDK and on the server.
       * The new DeleteClientAction will be automatically stored in the 'action' property
@@ -5701,6 +6064,35 @@ object pagesNs extends js.Object {
       *  7.19.0 and higher
       */
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.DeleteClientAction = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object DesignPropertyValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new DesignPropertyValue instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.DesignPropertyValue = js.native
+    /**
+      * Creates and returns a new DesignPropertyValue instance in the SDK and on the server.
+      * The new DesignPropertyValue will be automatically stored in the 'designProperties' property
+      * of the parent Appearance element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Appearance): mendixmodelsdkLib.distGenPagesMod.pagesNs.DesignPropertyValue = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object DesignPropertyValueType extends js.Object {
+    var DropDown: mendixmodelsdkLib.distGenPagesMod.pagesNs.DesignPropertyValueType = js.native
+    var Toggle: mendixmodelsdkLib.distGenPagesMod.pagesNs.DesignPropertyValueType = js.native
   }
   
   /* static members */
@@ -5891,7 +6283,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
     /**
@@ -5945,16 +6337,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
+    /**
+      * Creates and returns a new DivContainer instance in the SDK and on the server.
+      * The new DivContainer will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
     /**
       * Creates and returns a new DivContainer instance in the SDK and on the server.
       * The new DivContainer will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
     /**
@@ -5963,7 +6364,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
     /**
@@ -6053,7 +6454,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
     /**
@@ -6071,7 +6472,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
     /**
@@ -6137,6 +6538,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
+    /**
+      * Creates and returns a new DivContainer instance in the SDK and on the server.
+      * The new DivContainer will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
   }
   
   /* static members */
@@ -6327,7 +6737,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
     /**
@@ -6381,16 +6791,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
+    /**
+      * Creates and returns a new DropDown instance in the SDK and on the server.
+      * The new DropDown will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
     /**
       * Creates and returns a new DropDown instance in the SDK and on the server.
       * The new DropDown will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
     /**
@@ -6399,7 +6818,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
     /**
@@ -6489,7 +6908,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
     /**
@@ -6507,7 +6926,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
     /**
@@ -6573,6 +6992,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
+    /**
+      * Creates and returns a new DropDown instance in the SDK and on the server.
+      * The new DropDown will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
   }
   
   /* static members */
@@ -6763,7 +7191,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
     /**
@@ -6817,16 +7245,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
+    /**
+      * Creates and returns a new DropDownButton instance in the SDK and on the server.
+      * The new DropDownButton will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
     /**
       * Creates and returns a new DropDownButton instance in the SDK and on the server.
       * The new DropDownButton will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
     /**
@@ -6835,7 +7272,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
     /**
@@ -6925,7 +7362,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
     /**
@@ -6943,7 +7380,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
     /**
@@ -7009,6 +7446,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
+    /**
+      * Creates and returns a new DropDownButton instance in the SDK and on the server.
+      * The new DropDownButton will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
   }
   
   /* static members */
@@ -7237,7 +7683,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
     /**
@@ -7291,16 +7737,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
+    /**
+      * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
+      * The new DynamicImageViewer will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
     /**
       * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
       * The new DynamicImageViewer will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
     /**
@@ -7309,7 +7764,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
     /**
@@ -7399,7 +7854,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
     /**
@@ -7417,7 +7872,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
     /**
@@ -7483,6 +7938,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
+    /**
+      * Creates and returns a new DynamicImageViewer instance in the SDK and on the server.
+      * The new DynamicImageViewer will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
   }
   
   /* static members */
@@ -7673,7 +8137,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
     /**
@@ -7727,16 +8191,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
+    /**
+      * Creates and returns a new DynamicText instance in the SDK and on the server.
+      * The new DynamicText will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
     /**
       * Creates and returns a new DynamicText instance in the SDK and on the server.
       * The new DynamicText will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
     /**
@@ -7745,7 +8218,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
     /**
@@ -7835,7 +8308,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
     /**
@@ -7853,7 +8326,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
     /**
@@ -7919,6 +8392,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
+    /**
+      * Creates and returns a new DynamicText instance in the SDK and on the server.
+      * The new DynamicText will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
   }
   
   /* static members */
@@ -8138,7 +8620,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
     /**
@@ -8192,16 +8674,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
+    /**
+      * Creates and returns a new FileManager instance in the SDK and on the server.
+      * The new FileManager will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
     /**
       * Creates and returns a new FileManager instance in the SDK and on the server.
       * The new FileManager will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
     /**
@@ -8210,7 +8701,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
     /**
@@ -8300,7 +8791,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
     /**
@@ -8318,7 +8809,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
     /**
@@ -8384,6 +8875,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
+    /**
+      * Creates and returns a new FileManager instance in the SDK and on the server.
+      * The new FileManager will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
   }
   
   /* static members */
@@ -8489,6 +8989,15 @@ object pagesNs extends js.Object {
     /**
       * Creates and returns a new GlyphIcon instance in the SDK and on the server.
       * The new GlyphIcon will be automatically stored in the 'icon' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderIcon(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.GlyphIcon = js.native
+    /**
+      * Creates and returns a new GlyphIcon instance in the SDK and on the server.
+      * The new GlyphIcon will be automatically stored in the 'icon' property
       * of the parent Button element passed as argument.
       */
     def createInButtonUnderIcon(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Button): mendixmodelsdkLib.distGenPagesMod.pagesNs.GlyphIcon = js.native
@@ -8513,6 +9022,15 @@ object pagesNs extends js.Object {
       *  7.16.0 to 7.18.0
       */
     def createInWebIconValueUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.GlyphIcon = js.native
+    /**
+      * Creates and returns a new GlyphIcon instance in the SDK and on the server.
+      * The new GlyphIcon will be automatically stored in the 'icon' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWidgetValueUnderIcon(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.GlyphIcon = js.native
   }
   
   /* static members */
@@ -9026,7 +9544,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
     /**
@@ -9080,16 +9598,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
+    /**
+      * Creates and returns a new GroupBox instance in the SDK and on the server.
+      * The new GroupBox will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
     /**
       * Creates and returns a new GroupBox instance in the SDK and on the server.
       * The new GroupBox will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
     /**
@@ -9098,7 +9625,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
     /**
@@ -9188,7 +9715,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
     /**
@@ -9206,7 +9733,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
     /**
@@ -9272,6 +9799,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
+    /**
+      * Creates and returns a new GroupBox instance in the SDK and on the server.
+      * The new GroupBox will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
   }
   
   /* static members */
@@ -9470,7 +10006,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
     /**
@@ -9524,16 +10060,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
+    /**
+      * Creates and returns a new Header instance in the SDK and on the server.
+      * The new Header will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
     /**
       * Creates and returns a new Header instance in the SDK and on the server.
       * The new Header will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
     /**
@@ -9542,7 +10087,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
     /**
@@ -9632,7 +10177,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
     /**
@@ -9650,7 +10195,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
     /**
@@ -9716,6 +10261,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
+    /**
+      * Creates and returns a new Header instance in the SDK and on the server.
+      * The new Header will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
   }
   
   /* static members */
@@ -9744,7 +10298,7 @@ object pagesNs extends js.Object {
       * of the parent BuildingBlock element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInBuildingBlockUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.BuildingBlock): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9762,7 +10316,7 @@ object pagesNs extends js.Object {
       * of the parent DataView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInDataViewUnderFooterWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9780,7 +10334,7 @@ object pagesNs extends js.Object {
       * of the parent DataView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInDataViewUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9798,7 +10352,7 @@ object pagesNs extends js.Object {
       * of the parent DivContainer element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInDivContainerUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9816,7 +10370,7 @@ object pagesNs extends js.Object {
       * of the parent GroupBox element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInGroupBoxUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9834,7 +10388,7 @@ object pagesNs extends js.Object {
       * of the parent Header element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInHeaderUnderLeftWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9852,7 +10406,7 @@ object pagesNs extends js.Object {
       * of the parent Header element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInHeaderUnderRightWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9870,7 +10424,7 @@ object pagesNs extends js.Object {
       * of the parent LayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9888,7 +10442,7 @@ object pagesNs extends js.Object {
       * of the parent LayoutGridColumn element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutGridColumnUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridColumn): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9906,7 +10460,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9924,7 +10478,7 @@ object pagesNs extends js.Object {
       * of the parent ListViewTemplate element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInListViewTemplateUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewTemplate): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9942,7 +10496,7 @@ object pagesNs extends js.Object {
       * of the parent ListView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInListViewUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9960,7 +10514,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9969,7 +10523,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9978,7 +10532,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -9996,7 +10550,7 @@ object pagesNs extends js.Object {
       * of the parent NavigationListItem element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInNavigationListItemUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationListItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10032,7 +10586,7 @@ object pagesNs extends js.Object {
       * of the parent ScrollContainerRegion element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInScrollContainerRegionUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10050,7 +10604,7 @@ object pagesNs extends js.Object {
       * of the parent Snippet element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSnippetUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Snippet): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10068,7 +10622,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10086,7 +10640,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10104,7 +10658,7 @@ object pagesNs extends js.Object {
       * of the parent TabPage element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInTabPageUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TabPage): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10122,7 +10676,7 @@ object pagesNs extends js.Object {
       * of the parent TableCell element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInTableCellUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCell): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10140,7 +10694,7 @@ object pagesNs extends js.Object {
       * of the parent TemplateGridContents element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInTemplateGridContentsUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGridContents): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
     /**
@@ -10175,6 +10729,15 @@ object pagesNs extends js.Object {
     /**
       * Creates and returns a new ImageIcon instance in the SDK and on the server.
       * The new ImageIcon will be automatically stored in the 'icon' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderIcon(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageIcon = js.native
+    /**
+      * Creates and returns a new ImageIcon instance in the SDK and on the server.
+      * The new ImageIcon will be automatically stored in the 'icon' property
       * of the parent Button element passed as argument.
       */
     def createInButtonUnderIcon(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Button): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageIcon = js.native
@@ -10199,6 +10762,15 @@ object pagesNs extends js.Object {
       *  7.16.0 to 7.18.0
       */
     def createInWebIconValueUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageIcon = js.native
+    /**
+      * Creates and returns a new ImageIcon instance in the SDK and on the server.
+      * The new ImageIcon will be automatically stored in the 'icon' property
+      * of the parent customwidgets.WidgetValue element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWidgetValueUnderIcon(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageIcon = js.native
   }
   
   /* static members */
@@ -10397,7 +10969,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
     /**
@@ -10451,16 +11023,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
+    /**
+      * Creates and returns a new ImageUploader instance in the SDK and on the server.
+      * The new ImageUploader will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
     /**
       * Creates and returns a new ImageUploader instance in the SDK and on the server.
       * The new ImageUploader will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
     /**
@@ -10469,7 +11050,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
     /**
@@ -10559,7 +11140,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
     /**
@@ -10577,7 +11158,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
     /**
@@ -10643,6 +11224,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
+    /**
+      * Creates and returns a new ImageUploader instance in the SDK and on the server.
+      * The new ImageUploader will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
   }
   
   /* static members */
@@ -10852,7 +11442,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
     /**
@@ -10906,16 +11496,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
+    /**
+      * Creates and returns a new InputReferenceSetSelector instance in the SDK and on the server.
+      * The new InputReferenceSetSelector will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
     /**
       * Creates and returns a new InputReferenceSetSelector instance in the SDK and on the server.
       * The new InputReferenceSetSelector will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
     /**
@@ -10924,7 +11523,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
     /**
@@ -11014,7 +11613,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
     /**
@@ -11032,7 +11631,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
     /**
@@ -11098,6 +11697,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
+    /**
+      * Creates and returns a new InputReferenceSetSelector instance in the SDK and on the server.
+      * The new InputReferenceSetSelector will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
   }
   
   /* static members */
@@ -11105,6 +11713,17 @@ object pagesNs extends js.Object {
   object InputWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object KeyboardType extends js.Object {
+    var DecimalPad: mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType = js.native
+    var Default: mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType = js.native
+    var EmailAddress: mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType = js.native
+    var NumberPad: mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType = js.native
+    var PhonePad: mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType = js.native
+    var URL: mendixmodelsdkLib.distGenPagesMod.pagesNs.KeyboardType = js.native
   }
   
   /* static members */
@@ -11295,7 +11914,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
     /**
@@ -11349,16 +11968,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
+    /**
+      * Creates and returns a new Label instance in the SDK and on the server.
+      * The new Label will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
     /**
       * Creates and returns a new Label instance in the SDK and on the server.
       * The new Label will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
     /**
@@ -11367,7 +11995,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
     /**
@@ -11457,7 +12085,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
     /**
@@ -11475,7 +12103,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
     /**
@@ -11541,6 +12169,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
+    /**
+      * Creates and returns a new Label instance in the SDK and on the server.
+      * The new Label will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
   }
   
   /* static members */
@@ -11570,6 +12207,9 @@ object pagesNs extends js.Object {
       * Creates and returns a new LayoutCall instance in the SDK and on the server.
       * The new LayoutCall will be automatically stored in the 'layoutCall' property
       * of the parent Layout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.23.0
       */
     def createInLayoutUnderLayoutCall(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCall = js.native
     /**
@@ -11587,6 +12227,15 @@ object pagesNs extends js.Object {
       * of the parent Page element passed as argument.
       */
     def createInPageUnderLayoutCall(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Page): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCall = js.native
+    /**
+      * Creates and returns a new LayoutCall instance in the SDK and on the server.
+      * The new LayoutCall will be automatically stored in the 'layoutCall' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderLayoutCall(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCall = js.native
   }
   
   /* static members */
@@ -11606,6 +12255,13 @@ object pagesNs extends js.Object {
       * of the parent LayoutCall element passed as argument.
       */
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCall): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object LayoutContent extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
   /* static members */
@@ -11796,7 +12452,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
     /**
@@ -11850,16 +12506,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
+    /**
+      * Creates and returns a new LayoutGrid instance in the SDK and on the server.
+      * The new LayoutGrid will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
     /**
       * Creates and returns a new LayoutGrid instance in the SDK and on the server.
       * The new LayoutGrid will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
     /**
@@ -11868,7 +12533,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
     /**
@@ -11958,7 +12623,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
     /**
@@ -11976,7 +12641,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
     /**
@@ -12042,6 +12707,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
+    /**
+      * Creates and returns a new LayoutGrid instance in the SDK and on the server.
+      * The new LayoutGrid will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
   }
   
   /* static members */
@@ -12524,7 +13198,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
     /**
@@ -12578,16 +13252,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
+    /**
+      * Creates and returns a new ListView instance in the SDK and on the server.
+      * The new ListView will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
     /**
       * Creates and returns a new ListView instance in the SDK and on the server.
       * The new ListView will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
     /**
@@ -12596,7 +13279,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
     /**
@@ -12686,7 +13369,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
     /**
@@ -12704,7 +13387,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
     /**
@@ -12770,6 +13453,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
+    /**
+      * Creates and returns a new ListView instance in the SDK and on the server.
+      * The new ListView will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
   }
   
   /* static members */
@@ -13068,7 +13760,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
     /**
@@ -13122,16 +13814,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
+    /**
+      * Creates and returns a new LoginButton instance in the SDK and on the server.
+      * The new LoginButton will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
     /**
       * Creates and returns a new LoginButton instance in the SDK and on the server.
       * The new LoginButton will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
     /**
@@ -13140,7 +13841,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
     /**
@@ -13212,7 +13913,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
     /**
@@ -13230,7 +13931,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
     /**
@@ -13296,6 +13997,15 @@ object pagesNs extends js.Object {
       *  7.0.2 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
+    /**
+      * Creates and returns a new LoginButton instance in the SDK and on the server.
+      * The new LoginButton will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
   }
   
   /* static members */
@@ -13486,7 +14196,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
     /**
@@ -13540,16 +14250,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
+    /**
+      * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
+      * The new LoginIdTextBox will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
     /**
       * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
       * The new LoginIdTextBox will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
     /**
@@ -13558,7 +14277,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
     /**
@@ -13630,7 +14349,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
     /**
@@ -13648,7 +14367,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
     /**
@@ -13714,6 +14433,15 @@ object pagesNs extends js.Object {
       *  7.0.2 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
+    /**
+      * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
+      * The new LoginIdTextBox will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
   }
   
   /* static members */
@@ -14391,7 +15119,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
     /**
@@ -14445,16 +15173,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
+    /**
+      * Creates and returns a new MenuBar instance in the SDK and on the server.
+      * The new MenuBar will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
     /**
       * Creates and returns a new MenuBar instance in the SDK and on the server.
       * The new MenuBar will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
     /**
@@ -14463,7 +15200,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
     /**
@@ -14553,7 +15290,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
     /**
@@ -14571,7 +15308,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
     /**
@@ -14637,6 +15374,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
+    /**
+      * Creates and returns a new MenuBar instance in the SDK and on the server.
+      * The new MenuBar will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
   }
   
   /* static members */
@@ -14743,6 +15489,15 @@ object pagesNs extends js.Object {
     /**
       * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
       * The new MicroflowClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowClientAction = js.native
+    /**
+      * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
+      * The new MicroflowClientAction will be automatically stored in the 'action' property
       * of the parent DataViewActionButton element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -14770,6 +15525,15 @@ object pagesNs extends js.Object {
       * of the parent ListView element passed as argument.
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowClientAction = js.native
+    /**
+      * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
+      * The new MicroflowClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowClientAction = js.native
     /**
       * Creates and returns a new MicroflowClientAction instance in the SDK and on the server.
       * The new MicroflowClientAction will be automatically stored in the 'action' property
@@ -14991,6 +15755,40 @@ object pagesNs extends js.Object {
   
   /* static members */
   @js.native
+  object NativeLayoutContent extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new NativeLayoutContent instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent = js.native
+    /**
+      * Creates and returns a new NativeLayoutContent instance in the SDK and on the server.
+      * The new NativeLayoutContent will be automatically stored in the 'content' property
+      * of the parent Layout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object NativeTextStyle extends js.Object {
+    var Heading1: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+    var Heading2: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+    var Heading3: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+    var Heading4: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+    var Heading5: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+    var Heading6: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+    var Text: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeTextStyle = js.native
+  }
+  
+  /* static members */
+  @js.native
   object NavigationList extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
@@ -15177,7 +15975,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
     /**
@@ -15231,16 +16029,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
+    /**
+      * Creates and returns a new NavigationList instance in the SDK and on the server.
+      * The new NavigationList will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
     /**
       * Creates and returns a new NavigationList instance in the SDK and on the server.
       * The new NavigationList will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
     /**
@@ -15249,7 +16056,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
     /**
@@ -15339,7 +16146,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
     /**
@@ -15357,7 +16164,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
     /**
@@ -15423,6 +16230,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
+    /**
+      * Creates and returns a new NavigationList instance in the SDK and on the server.
+      * The new NavigationList will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
   }
   
   /* static members */
@@ -15651,7 +16467,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
     /**
@@ -15705,16 +16521,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
+    /**
+      * Creates and returns a new NavigationTree instance in the SDK and on the server.
+      * The new NavigationTree will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
     /**
       * Creates and returns a new NavigationTree instance in the SDK and on the server.
       * The new NavigationTree will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
     /**
@@ -15723,7 +16548,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
     /**
@@ -15813,7 +16638,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
     /**
@@ -15831,7 +16656,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
     /**
@@ -15897,6 +16722,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
+    /**
+      * Creates and returns a new NavigationTree instance in the SDK and on the server.
+      * The new NavigationTree will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
   }
   
   /* static members */
@@ -16387,6 +17221,15 @@ object pagesNs extends js.Object {
     /**
       * Creates and returns a new NoClientAction instance in the SDK and on the server.
       * The new NoClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.NoClientAction = js.native
+    /**
+      * Creates and returns a new NoClientAction instance in the SDK and on the server.
+      * The new NoClientAction will be automatically stored in the 'action' property
       * of the parent DataViewActionButton element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -16414,6 +17257,15 @@ object pagesNs extends js.Object {
       * of the parent ListView element passed as argument.
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.NoClientAction = js.native
+    /**
+      * Creates and returns a new NoClientAction instance in the SDK and on the server.
+      * The new NoClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.NoClientAction = js.native
     /**
       * Creates and returns a new NoClientAction instance in the SDK and on the server.
       * The new NoClientAction will be automatically stored in the 'action' property
@@ -16621,6 +17473,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
     /**
       * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
+      * The new OpenLinkClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
+    /**
+      * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
       * The new OpenLinkClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -16646,6 +17507,15 @@ object pagesNs extends js.Object {
       *  7.3.0 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
+    /**
+      * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
+      * The new OpenLinkClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
     /**
       * Creates and returns a new OpenLinkClientAction instance in the SDK and on the server.
       * The new OpenLinkClientAction will be automatically stored in the 'action' property
@@ -16767,6 +17637,15 @@ object pagesNs extends js.Object {
     /**
       * Creates and returns a new PageClientAction instance in the SDK and on the server.
       * The new PageClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageClientAction = js.native
+    /**
+      * Creates and returns a new PageClientAction instance in the SDK and on the server.
+      * The new PageClientAction will be automatically stored in the 'action' property
       * of the parent DataViewActionButton element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -16794,6 +17673,15 @@ object pagesNs extends js.Object {
       * of the parent ListView element passed as argument.
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageClientAction = js.native
+    /**
+      * Creates and returns a new PageClientAction instance in the SDK and on the server.
+      * The new PageClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageClientAction = js.native
     /**
       * Creates and returns a new PageClientAction instance in the SDK and on the server.
       * The new PageClientAction will be automatically stored in the 'action' property
@@ -17156,7 +18044,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
     /**
@@ -17210,16 +18098,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
+    /**
+      * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
+      * The new PasswordTextBox will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
     /**
       * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
       * The new PasswordTextBox will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
     /**
@@ -17228,7 +18125,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
     /**
@@ -17300,7 +18197,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
     /**
@@ -17318,7 +18215,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
     /**
@@ -17384,6 +18281,15 @@ object pagesNs extends js.Object {
       *  7.0.2 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
+    /**
+      * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
+      * The new PasswordTextBox will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
   }
   
   /* static members */
@@ -17574,7 +18480,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
     /**
@@ -17628,16 +18534,34 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
+    /**
+      * Creates and returns a new Placeholder instance in the SDK and on the server.
+      * The new Placeholder will be automatically stored in the 'rightHeaderPlaceholder' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderRightHeaderPlaceholder(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
+    /**
+      * Creates and returns a new Placeholder instance in the SDK and on the server.
+      * The new Placeholder will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
     /**
       * Creates and returns a new Placeholder instance in the SDK and on the server.
       * The new Placeholder will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
     /**
@@ -17646,7 +18570,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
     /**
@@ -17736,7 +18660,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
     /**
@@ -17754,7 +18678,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
     /**
@@ -17820,13 +18744,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PlaceholderBase extends js.Object {
-    var structureTypeName: java.lang.String = js.native
-    var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new Placeholder instance in the SDK and on the server.
+      * The new Placeholder will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
   }
   
   /* static members */
@@ -18025,7 +18951,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
     /**
@@ -18079,16 +19005,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
+    /**
+      * Creates and returns a new RadioButtonGroup instance in the SDK and on the server.
+      * The new RadioButtonGroup will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
     /**
       * Creates and returns a new RadioButtonGroup instance in the SDK and on the server.
       * The new RadioButtonGroup will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
     /**
@@ -18097,7 +19032,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
     /**
@@ -18187,7 +19122,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
     /**
@@ -18205,7 +19140,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
     /**
@@ -18271,6 +19206,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
+    /**
+      * Creates and returns a new RadioButtonGroup instance in the SDK and on the server.
+      * The new RadioButtonGroup will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
   }
   
   /* static members */
@@ -18488,7 +19432,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
     /**
@@ -18542,16 +19486,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
+    /**
+      * Creates and returns a new ReferenceSelector instance in the SDK and on the server.
+      * The new ReferenceSelector will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
     /**
       * Creates and returns a new ReferenceSelector instance in the SDK and on the server.
       * The new ReferenceSelector will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
     /**
@@ -18560,7 +19513,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
     /**
@@ -18650,7 +19603,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
     /**
@@ -18668,7 +19621,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
     /**
@@ -18734,6 +19687,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
+    /**
+      * Creates and returns a new ReferenceSelector instance in the SDK and on the server.
+      * The new ReferenceSelector will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
   }
   
   /* static members */
@@ -18931,7 +19893,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
     /**
@@ -18985,16 +19947,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
+    /**
+      * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
+      * The new ReferenceSetSelector will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
     /**
       * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
       * The new ReferenceSetSelector will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
     /**
@@ -19003,7 +19974,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
     /**
@@ -19093,7 +20064,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
     /**
@@ -19111,7 +20082,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
     /**
@@ -19177,6 +20148,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
+    /**
+      * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
+      * The new ReferenceSetSelector will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
   }
   
   /* static members */
@@ -19518,6 +20498,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
     /**
       * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
+      * The new SaveChangesClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
+    /**
+      * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
       * The new SaveChangesClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -19543,6 +20532,15 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
+    /**
+      * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
+      * The new SaveChangesClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
     /**
       * Creates and returns a new SaveChangesClientAction instance in the SDK and on the server.
       * The new SaveChangesClientAction will be automatically stored in the 'action' property
@@ -19776,7 +20774,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
     /**
@@ -19830,16 +20828,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
+    /**
+      * Creates and returns a new ScrollContainer instance in the SDK and on the server.
+      * The new ScrollContainer will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
     /**
       * Creates and returns a new ScrollContainer instance in the SDK and on the server.
       * The new ScrollContainer will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
     /**
@@ -19848,7 +20855,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
     /**
@@ -19938,7 +20945,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
     /**
@@ -19956,7 +20963,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
     /**
@@ -20022,6 +21029,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
+    /**
+      * Creates and returns a new ScrollContainer instance in the SDK and on the server.
+      * The new ScrollContainer will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
   }
   
   /* static members */
@@ -20065,6 +21081,13 @@ object pagesNs extends js.Object {
       * of the parent ScrollContainer element passed as argument.
       */
     def createInScrollContainerUnderTop(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object ScrollDirection extends js.Object {
+    var Horizontal: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollDirection = js.native
+    var Vertical: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollDirection = js.native
   }
   
   /* static members */
@@ -20410,7 +21433,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
     /**
@@ -20464,16 +21487,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
+    /**
+      * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
+      * The new SidebarToggleButton will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
     /**
       * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
       * The new SidebarToggleButton will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
     /**
@@ -20482,7 +21514,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
     /**
@@ -20572,7 +21604,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
     /**
@@ -20590,7 +21622,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
     /**
@@ -20656,6 +21688,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
+    /**
+      * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
+      * The new SidebarToggleButton will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
   }
   
   /* static members */
@@ -20749,6 +21790,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SignOutClientAction = js.native
     /**
       * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
+      * The new SignOutClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.SignOutClientAction = js.native
+    /**
+      * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
       * The new SignOutClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -20774,6 +21824,15 @@ object pagesNs extends js.Object {
       *  7.1.0 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.SignOutClientAction = js.native
+    /**
+      * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
+      * The new SignOutClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.SignOutClientAction = js.native
     /**
       * Creates and returns a new SignOutClientAction instance in the SDK and on the server.
       * The new SignOutClientAction will be automatically stored in the 'action' property
@@ -21000,7 +22059,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
     /**
@@ -21054,16 +22113,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
+    /**
+      * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
+      * The new SimpleMenuBar will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
     /**
       * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
       * The new SimpleMenuBar will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
     /**
@@ -21072,7 +22140,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
     /**
@@ -21162,7 +22230,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
     /**
@@ -21180,7 +22248,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
     /**
@@ -21246,6 +22314,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
+    /**
+      * Creates and returns a new SimpleMenuBar instance in the SDK and on the server.
+      * The new SimpleMenuBar will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
   }
   
   /* static members */
@@ -21489,7 +22566,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
     /**
@@ -21543,16 +22620,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
+    /**
+      * Creates and returns a new SnippetCallWidget instance in the SDK and on the server.
+      * The new SnippetCallWidget will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
     /**
       * Creates and returns a new SnippetCallWidget instance in the SDK and on the server.
       * The new SnippetCallWidget will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
     /**
@@ -21561,7 +22647,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
     /**
@@ -21651,7 +22737,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
     /**
@@ -21669,7 +22755,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
     /**
@@ -21735,6 +22821,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
+    /**
+      * Creates and returns a new SnippetCallWidget instance in the SDK and on the server.
+      * The new SnippetCallWidget will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
   }
   
   /* static members */
@@ -21946,7 +23041,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
     /**
@@ -22000,16 +23095,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
+    /**
+      * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
+      * The new StaticImageViewer will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
     /**
       * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
       * The new StaticImageViewer will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
     /**
@@ -22018,7 +23122,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
     /**
@@ -22108,7 +23212,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
     /**
@@ -22126,7 +23230,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
     /**
@@ -22192,6 +23296,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
+    /**
+      * Creates and returns a new StaticImageViewer instance in the SDK and on the server.
+      * The new StaticImageViewer will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
   }
   
   /* static members */
@@ -22512,6 +23625,15 @@ object pagesNs extends js.Object {
     def createInAttributeWidgetUnderOnLeaveAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SyncClientAction = js.native
     /**
       * Creates and returns a new SyncClientAction instance in the SDK and on the server.
+      * The new SyncClientAction will be automatically stored in the 'action' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderAction(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.SyncClientAction = js.native
+    /**
+      * Creates and returns a new SyncClientAction instance in the SDK and on the server.
       * The new SyncClientAction will be automatically stored in the 'clickAction' property
       * of the parent DynamicImageViewer element passed as argument.
       *
@@ -22537,6 +23659,15 @@ object pagesNs extends js.Object {
       *  7.0.2 and higher
       */
     def createInListViewUnderClickAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.SyncClientAction = js.native
+    /**
+      * Creates and returns a new SyncClientAction instance in the SDK and on the server.
+      * The new SyncClientAction will be automatically stored in the 'pullDownAction' property
+      * of the parent ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInListViewUnderPullDownAction(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.SyncClientAction = js.native
     /**
       * Creates and returns a new SyncClientAction instance in the SDK and on the server.
       * The new SyncClientAction will be automatically stored in the 'action' property
@@ -22763,7 +23894,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
     /**
@@ -22817,16 +23948,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
+    /**
+      * Creates and returns a new TabContainer instance in the SDK and on the server.
+      * The new TabContainer will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
     /**
       * Creates and returns a new TabContainer instance in the SDK and on the server.
       * The new TabContainer will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
     /**
@@ -22835,7 +23975,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
     /**
@@ -22925,7 +24065,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
     /**
@@ -22943,7 +24083,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
     /**
@@ -23009,6 +24149,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
+    /**
+      * Creates and returns a new TabContainer instance in the SDK and on the server.
+      * The new TabContainer will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
   }
   
   /* static members */
@@ -23218,7 +24367,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
     /**
@@ -23272,16 +24421,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
+    /**
+      * Creates and returns a new Table instance in the SDK and on the server.
+      * The new Table will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
     /**
       * Creates and returns a new Table instance in the SDK and on the server.
       * The new Table will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
     /**
@@ -23290,7 +24448,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
     /**
@@ -23380,7 +24538,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
     /**
@@ -23398,7 +24556,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
     /**
@@ -23464,6 +24622,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
+    /**
+      * Creates and returns a new Table instance in the SDK and on the server.
+      * The new Table will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
   }
   
   /* static members */
@@ -23726,7 +24893,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
     /**
@@ -23780,16 +24947,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
+    /**
+      * Creates and returns a new TemplateGrid instance in the SDK and on the server.
+      * The new TemplateGrid will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
     /**
       * Creates and returns a new TemplateGrid instance in the SDK and on the server.
       * The new TemplateGrid will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
     /**
@@ -23798,7 +24974,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
     /**
@@ -23888,7 +25064,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
     /**
@@ -23906,7 +25082,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
     /**
@@ -23972,6 +25148,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
+    /**
+      * Creates and returns a new TemplateGrid instance in the SDK and on the server.
+      * The new TemplateGrid will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
   }
   
   /* static members */
@@ -24181,7 +25366,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
     /**
@@ -24235,16 +25420,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
+    /**
+      * Creates and returns a new TextArea instance in the SDK and on the server.
+      * The new TextArea will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
     /**
       * Creates and returns a new TextArea instance in the SDK and on the server.
       * The new TextArea will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
     /**
@@ -24253,7 +25447,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
     /**
@@ -24343,7 +25537,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
     /**
@@ -24361,7 +25555,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
     /**
@@ -24427,6 +25621,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
+    /**
+      * Creates and returns a new TextArea instance in the SDK and on the server.
+      * The new TextArea will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
   }
   
   /* static members */
@@ -24617,7 +25820,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
     /**
@@ -24671,16 +25874,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
+    /**
+      * Creates and returns a new TextBox instance in the SDK and on the server.
+      * The new TextBox will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
     /**
       * Creates and returns a new TextBox instance in the SDK and on the server.
       * The new TextBox will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
     /**
@@ -24689,7 +25901,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
     /**
@@ -24779,7 +25991,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
     /**
@@ -24797,7 +26009,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
     /**
@@ -24863,6 +26075,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
+    /**
+      * Creates and returns a new TextBox instance in the SDK and on the server.
+      * The new TextBox will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
   }
   
   /* static members */
@@ -25073,7 +26294,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
     /**
@@ -25127,16 +26348,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
+    /**
+      * Creates and returns a new Title instance in the SDK and on the server.
+      * The new Title will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
     /**
       * Creates and returns a new Title instance in the SDK and on the server.
       * The new Title will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
     /**
@@ -25145,7 +26375,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
     /**
@@ -25235,7 +26465,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
     /**
@@ -25253,7 +26483,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
     /**
@@ -25319,6 +26549,15 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
+    /**
+      * Creates and returns a new Title instance in the SDK and on the server.
+      * The new Title will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
   }
   
   /* static members */
@@ -25526,7 +26765,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
     /**
@@ -25580,16 +26819,25 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
+    /**
+      * Creates and returns a new ValidationMessage instance in the SDK and on the server.
+      * The new ValidationMessage will be automatically stored in the 'widgets' property
+      * of the parent NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
     /**
       * Creates and returns a new ValidationMessage instance in the SDK and on the server.
       * The new ValidationMessage will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
     /**
@@ -25598,7 +26846,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
     /**
@@ -25670,7 +26918,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
     /**
@@ -25688,7 +26936,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
     /**
@@ -25754,6 +27002,15 @@ object pagesNs extends js.Object {
       *  7.0.2 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
+    /**
+      * Creates and returns a new ValidationMessage instance in the SDK and on the server.
+      * The new ValidationMessage will be automatically stored in the 'widgets' property
+      * of the parent WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
   }
   
   /* static members */
@@ -26011,7 +27268,7 @@ object pagesNs extends js.Object {
       * of the parent BuildingBlock element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInBuildingBlockUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.BuildingBlock): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26029,7 +27286,7 @@ object pagesNs extends js.Object {
       * of the parent DataView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInDataViewUnderFooterWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26047,7 +27304,7 @@ object pagesNs extends js.Object {
       * of the parent DataView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInDataViewUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26065,7 +27322,7 @@ object pagesNs extends js.Object {
       * of the parent DivContainer element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInDivContainerUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26083,7 +27340,7 @@ object pagesNs extends js.Object {
       * of the parent GroupBox element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInGroupBoxUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26101,7 +27358,7 @@ object pagesNs extends js.Object {
       * of the parent Header element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInHeaderUnderLeftWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26119,7 +27376,7 @@ object pagesNs extends js.Object {
       * of the parent Header element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInHeaderUnderRightWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26137,7 +27394,7 @@ object pagesNs extends js.Object {
       * of the parent LayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26155,7 +27412,7 @@ object pagesNs extends js.Object {
       * of the parent LayoutGridColumn element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutGridColumnUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridColumn): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26173,7 +27430,7 @@ object pagesNs extends js.Object {
       * of the parent Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26191,7 +27448,7 @@ object pagesNs extends js.Object {
       * of the parent ListViewTemplate element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInListViewTemplateUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewTemplate): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26209,7 +27466,7 @@ object pagesNs extends js.Object {
       * of the parent ListView element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInListViewUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26227,7 +27484,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26236,7 +27493,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26245,7 +27502,7 @@ object pagesNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26263,7 +27520,7 @@ object pagesNs extends js.Object {
       * of the parent NavigationListItem element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInNavigationListItemUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationListItem): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26299,7 +27556,7 @@ object pagesNs extends js.Object {
       * of the parent ScrollContainerRegion element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInScrollContainerRegionUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26317,7 +27574,7 @@ object pagesNs extends js.Object {
       * of the parent Snippet element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSnippetUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Snippet): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26335,7 +27592,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26353,7 +27610,7 @@ object pagesNs extends js.Object {
       * of the parent SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26371,7 +27628,7 @@ object pagesNs extends js.Object {
       * of the parent TabPage element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInTabPageUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TabPage): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26389,7 +27646,7 @@ object pagesNs extends js.Object {
       * of the parent TableCell element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInTableCellUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCell): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26407,7 +27664,7 @@ object pagesNs extends js.Object {
       * of the parent TemplateGridContents element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInTemplateGridContentsUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGridContents): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
     /**
@@ -26419,6 +27676,28 @@ object pagesNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object WebLayoutContent extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new WebLayoutContent instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent = js.native
+    /**
+      * Creates and returns a new WebLayoutContent instance in the SDK and on the server.
+      * The new WebLayoutContent will be automatically stored in the 'content' property
+      * of the parent Layout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent = js.native
   }
   
   /* static members */

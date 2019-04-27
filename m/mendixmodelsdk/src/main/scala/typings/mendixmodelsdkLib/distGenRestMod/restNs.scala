@@ -24,8 +24,10 @@ object restNs extends js.Object {
       * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
       */
     val entities: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[ODataEntity] = js.native
-    var location: mendixmodelsdkLib.distGenConstantsMod.constantsNs.IConstant | scala.Null = js.native
-    val locationQualifiedName: java.lang.String | scala.Null = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var httpConfiguration: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.HttpConfiguration = js.native
     var metadata: java.lang.String = js.native
     var metadataUrl: java.lang.String = js.native
     var proxyHost: mendixmodelsdkLib.distGenConstantsMod.constantsNs.IConstant | scala.Null = js.native
@@ -37,7 +39,18 @@ object restNs extends js.Object {
     var proxyType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.RequestProxyType = js.native
     var proxyUsername: mendixmodelsdkLib.distGenConstantsMod.constantsNs.IConstant | scala.Null = js.native
     val proxyUsernameQualifiedName: java.lang.String | scala.Null = js.native
-    var serviceUrl: java.lang.String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var serviceId: java.lang.String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var serviceName: java.lang.String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var version: java.lang.String = js.native
   }
   
   /**
@@ -149,6 +162,15 @@ object restNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     val allowedModuleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole] = js.native
     val allowedModuleRolesQualifiedNames: js.Array[java.lang.String] = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var authenticationMicroflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | scala.Null = js.native
+    val authenticationMicroflowQualifiedName: java.lang.String | scala.Null = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    val authenticationTypes: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[RestAuthenticationType] = js.native
     var namespace: java.lang.String = js.native
     var path: java.lang.String = js.native
     /**
@@ -156,6 +178,10 @@ object restNs extends js.Object {
       */
     var publishAssociations: scala.Boolean = js.native
     val resources: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[PublishedRestResource] = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var version: java.lang.String = js.native
   }
   
   /**
@@ -166,11 +192,19 @@ object restNs extends js.Object {
     extends mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedResource {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
+      * In version 8.0.0: introduced
+      */
+    var description: java.lang.String = js.native
+    /**
       * In version 7.19.0: introduced
       */
     var exposedName: java.lang.String = js.native
     var pageSize: scala.Double = js.native
     var path: java.lang.String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var summary: java.lang.String = js.native
     var usePaging: scala.Boolean = js.native
   }
   

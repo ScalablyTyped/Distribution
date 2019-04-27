@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "socket_dot_io-parser"
-version := "2.2-dt-20190212Z-8c63b9"
+version := "2.2-dt-20190212Z-f9dd2a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

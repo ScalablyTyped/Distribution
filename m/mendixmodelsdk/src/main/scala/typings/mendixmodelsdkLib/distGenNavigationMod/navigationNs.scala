@@ -77,13 +77,20 @@ object navigationNs extends js.Object {
   - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class NativeNavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    @JSName("containerAsNavigationDocument")
-    val containerAsNavigationDocument_NativeNavigationProfile: NavigationDocument = js.native
     /**
       * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      *
+      * In version 8.0.0: introduced
       */
-    var homePage: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage | scala.Null = js.native
+    val bottomBarItems: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem] = js.native
+    @JSName("containerAsNavigationDocument")
+    val containerAsNavigationDocument_NativeNavigationProfile: NavigationDocument = js.native
+    var homePage: mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage | scala.Null = js.native
     val homePageQualifiedName: java.lang.String | scala.Null = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    val roleBasedNativeHomePages: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[RoleBasedNativeHomePage] = js.native
   }
   
   /**
@@ -172,12 +179,6 @@ object navigationNs extends js.Object {
       * In version 6.10.4: introduced
       */
     var offlineEnabled6: scala.Boolean = js.native
-    /**
-      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-      *
-      * In version 7.22.0: introduced
-      */
-    val offlineEntityConfigs: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[OfflineEntityConfig] | scala.Null = js.native
     val roleBasedHomePages: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[RoleBasedHomePage] = js.native
   }
   
@@ -193,6 +194,12 @@ object navigationNs extends js.Object {
       * In version 7.2.0: introduced
       */
     var name: java.lang.String = js.native
+    /**
+      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+      *
+      * In version 7.22.0: introduced
+      */
+    val offlineEntityConfigs: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[OfflineEntityConfig] | scala.Null = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
   }
   
@@ -209,7 +216,7 @@ object navigationNs extends js.Object {
       * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
       */
     var constraint: java.lang.String = js.native
-    val containerAsNavigationProfile: NavigationProfile = js.native
+    val containerAsNavigationProfileBase: NavigationProfileBase = js.native
     var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity = js.native
     val entityQualifiedName: java.lang.String = js.native
     @JSName("model")
@@ -228,6 +235,22 @@ object navigationNs extends js.Object {
   @js.native
   class RoleBasedHomePage protected () extends HomePageBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    var userRole: mendixmodelsdkLib.distGenSecurityMod.securityNs.IUserRole | scala.Null = js.native
+    val userRoleQualifiedName: java.lang.String | scala.Null = js.native
+  }
+  
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class RoleBasedNativeHomePage protected ()
+    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    val containerAsNativeNavigationProfile: NativeNavigationProfile = js.native
+    @JSName("model")
+    var model_RoleBasedNativeHomePage: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+    var page: mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage | scala.Null = js.native
+    val pageQualifiedName: java.lang.String | scala.Null = js.native
     var userRole: mendixmodelsdkLib.distGenSecurityMod.securityNs.IUserRole | scala.Null = js.native
     val userRoleQualifiedName: java.lang.String | scala.Null = js.native
   }
@@ -424,12 +447,12 @@ object navigationNs extends js.Object {
     /**
       * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
       * The new OfflineEntityConfig will be automatically stored in the 'offlineEntityConfigs' property
-      * of the parent NavigationProfile element passed as argument.
+      * of the parent NavigationProfileBase element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
       *  7.22.0 and higher
       */
-    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfileBase): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
   }
   
   /* static members */
@@ -477,6 +500,28 @@ object navigationNs extends js.Object {
       * of the parent NavigationProfile element passed as argument.
       */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedHomePage = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object RoleBasedNativeHomePage extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new RoleBasedNativeHomePage instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedNativeHomePage = js.native
+    /**
+      * Creates and returns a new RoleBasedNativeHomePage instance in the SDK and on the server.
+      * The new RoleBasedNativeHomePage will be automatically stored in the 'roleBasedNativeHomePages' property
+      * of the parent NativeNavigationProfile element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedNativeHomePage = js.native
   }
   
 }

@@ -9,7 +9,9 @@ trait Options extends js.Object {
   /** An array of alignment types for each column, default ['l','l',...]. */
   var align: js.UndefOr[
     js.Array[
-      textDashTableLib.textDashTableLibStrings.l | textDashTableLib.textDashTableLibStrings.r | textDashTableLib.textDashTableLibStrings.c | textDashTableLib.textDashTableLibStrings.DOT
+      js.UndefOr[
+        textDashTableLib.textDashTableLibStrings.l | textDashTableLib.textDashTableLibStrings.r | textDashTableLib.textDashTableLibStrings.c | textDashTableLib.textDashTableLibStrings.DOT | scala.Null
+      ]
     ]
   ] = js.undefined
   /** Separator to use between columns, (default: ' '). */
@@ -22,7 +24,9 @@ object Options {
   @scala.inline
   def apply(
     align: js.Array[
-      textDashTableLib.textDashTableLibStrings.l | textDashTableLib.textDashTableLibStrings.r | textDashTableLib.textDashTableLibStrings.c | textDashTableLib.textDashTableLibStrings.DOT
+      js.UndefOr[
+        textDashTableLib.textDashTableLibStrings.l | textDashTableLib.textDashTableLibStrings.r | textDashTableLib.textDashTableLibStrings.c | textDashTableLib.textDashTableLibStrings.DOT | scala.Null
+      ]
     ] = null,
     hsep: java.lang.String = null,
     stringLength: /* str */ java.lang.String => scala.Double = null

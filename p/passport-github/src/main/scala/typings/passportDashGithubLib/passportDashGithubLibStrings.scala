@@ -22,6 +22,9 @@ object passportDashGithubLibStrings {
   sealed trait customHeaders extends js.Object
   
   @js.native
+  sealed trait github extends js.Object
+  
+  @js.native
   sealed trait scope extends js.Object
   
   @js.native
@@ -49,6 +52,8 @@ object passportDashGithubLibStrings {
   def clientSecret: clientSecret = "clientSecret".asInstanceOf[clientSecret]
   @scala.inline
   def customHeaders: customHeaders = "customHeaders".asInstanceOf[customHeaders]
+  @scala.inline
+  def github: github = "github".asInstanceOf[github]
   @scala.inline
   def scope: scope = "scope".asInstanceOf[scope]
   @scala.inline

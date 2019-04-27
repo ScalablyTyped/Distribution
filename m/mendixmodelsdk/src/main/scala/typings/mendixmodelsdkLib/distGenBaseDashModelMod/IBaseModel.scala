@@ -100,7 +100,6 @@ trait IBaseModel
   def findNanoflowByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflow = js.native
   def findNanoflowParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflowParameter = js.native
   def findNativeLayoutByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout = js.native
-  def findNativeLayoutParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayoutParameter = js.native
   def findNativePageByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage = js.native
   def findNavigationProfileByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile = js.native
   def findPageByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage = js.native

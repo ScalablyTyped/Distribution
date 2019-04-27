@@ -35,6 +35,7 @@ object customwidgetsNs extends js.Object {
       */
     var experimentalApi: scala.Boolean = js.native
     /**
+      * In version 8.0.0: deleted
       * In version 7.23.0: introduced
       */
     var labeled: scala.Boolean = js.native
@@ -49,6 +50,10 @@ object customwidgetsNs extends js.Object {
       * In version 7.19.0: introduced
       */
     var pluginWidget: scala.Boolean = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var supportedPlatform: SupportedPlatformEnum = js.native
     var widgetId: java.lang.String = js.native
   }
   
@@ -58,6 +63,14 @@ object customwidgetsNs extends js.Object {
   
   @js.native
   class PathType ()
+    extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
+  
+  @js.native
+  class SupportedPlatformEnum ()
+    extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
+  
+  @js.native
+  class SystemPropertyEnum ()
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   @js.native
@@ -192,6 +205,16 @@ object customwidgetsNs extends js.Object {
       * In version 7.11.0: introduced
       */
     var entityRef: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EntityRef | scala.Null = js.native
+    /**
+      * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+      *
+      * In version 8.0.0: introduced
+      */
+    var expression: java.lang.String = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var icon: mendixmodelsdkLib.distGenPagesMod.pagesNs.Icon | scala.Null = js.native
     var image: mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage | scala.Null = js.native
     val imageQualifiedName: java.lang.String | scala.Null = js.native
     var microflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | scala.Null = js.native
@@ -435,7 +458,7 @@ object customwidgetsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
@@ -489,16 +512,25 @@ object customwidgetsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
+    /**
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
       * Creates and returns a new CustomWidget instance in the SDK and on the server.
       * The new CustomWidget will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
@@ -507,7 +539,7 @@ object customwidgetsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
@@ -597,7 +629,7 @@ object customwidgetsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
@@ -615,7 +647,7 @@ object customwidgetsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
@@ -681,6 +713,15 @@ object customwidgetsNs extends js.Object {
       *  6.0.0 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
+    /**
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
   }
   
   /* static members */
@@ -733,6 +774,22 @@ object customwidgetsNs extends js.Object {
     var None: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
     var Reference: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
     var ReferenceSet: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object SupportedPlatformEnum extends js.Object {
+    var All: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
+    var Native: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
+    var Web: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SupportedPlatformEnum = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object SystemPropertyEnum extends js.Object {
+    var Label: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
+    var Name: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
+    var TabIndex: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.SystemPropertyEnum = js.native
   }
   
   /* static members */
@@ -940,13 +997,16 @@ object customwidgetsNs extends js.Object {
     var Entity: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var EntityConstraint: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Enumeration: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
+    var Expression: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Form: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
+    var Icon: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Image: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Integer: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Microflow: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Nanoflow: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Object: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var String: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
+    var System: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var TextTemplate: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var TranslatableString: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
   }

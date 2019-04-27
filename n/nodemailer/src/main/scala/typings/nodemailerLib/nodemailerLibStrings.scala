@@ -81,6 +81,9 @@ object nodemailerLibStrings {
     extends nodemailerLib.libSharedMod.LoggerLevel
   
   @js.native
+  sealed trait high extends js.Object
+  
+  @js.native
   sealed trait idle extends js.Object
   
   @js.native
@@ -95,6 +98,12 @@ object nodemailerLibStrings {
   
   @js.native
   sealed trait login extends js.Object
+  
+  @js.native
+  sealed trait low extends js.Object
+  
+  @js.native
+  sealed trait normal extends js.Object
   
   @js.native
   sealed trait oauth2 extends js.Object
@@ -180,6 +189,8 @@ object nodemailerLibStrings {
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
@@ -189,6 +200,10 @@ object nodemailerLibStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
   def login: login = "login".asInstanceOf[login]
+  @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
   @scala.inline

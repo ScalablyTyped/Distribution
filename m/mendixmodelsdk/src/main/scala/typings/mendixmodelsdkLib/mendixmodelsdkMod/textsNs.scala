@@ -124,6 +124,15 @@ object textsNs extends js.Object {
     def createInBasicReportColumnUnderCaption(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReportColumn): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
+      * The new Text will be automatically stored in the 'caption' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderCaption(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
+    /**
+      * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'tooltip' property
       * of the parent pages.Button element passed as argument.
       */

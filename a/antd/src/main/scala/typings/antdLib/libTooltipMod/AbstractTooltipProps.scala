@@ -11,6 +11,7 @@ trait AbstractTooltipProps extends js.Object {
   var autoAdjustOverflow: js.UndefOr[scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow] = js.undefined
   var builtinPlacements: js.UndefOr[js.Object] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[
     js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
@@ -38,6 +39,7 @@ object AbstractTooltipProps {
     autoAdjustOverflow: scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow = null,
     builtinPlacements: js.Object = null,
     children: reactLib.reactMod.ReactNode = null,
+    className: java.lang.String = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -60,6 +62,7 @@ object AbstractTooltipProps {
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))

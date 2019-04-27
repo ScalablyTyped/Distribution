@@ -13,7 +13,7 @@ trait ListUserTagsResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * The list of tags that are currently attached to the user. Each tag consists of a key name and an associated value. If no tags are attached to the specified user, the response contains an empty list.
     */
@@ -22,7 +22,11 @@ trait ListUserTagsResponse extends js.Object {
 
 object ListUserTagsResponse {
   @scala.inline
-  def apply(Tags: tagListType, IsTruncated: js.UndefOr[booleanType] = js.undefined, Marker: markerType = null): ListUserTagsResponse = {
+  def apply(
+    Tags: tagListType,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    Marker: responseMarkerType = null
+  ): ListUserTagsResponse = {
     val __obj = js.Dynamic.literal(Tags = Tags)
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)

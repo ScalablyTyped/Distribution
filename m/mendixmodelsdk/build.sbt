@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mendixmodelsdk"
-version := "4.19.0-7c0cd5"
+version := "4.20.0-28be5a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

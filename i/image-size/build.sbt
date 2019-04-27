@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "image-size"
-version := "0.7-dt-20190111Z-cc8a8c"
+version := "0.7-dt-20190111Z-4ba003"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

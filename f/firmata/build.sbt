@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "firmata"
-version := "0.19-dt-20190212Z-912e64"
+version := "0.19-dt-20190212Z-185524"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
-  "org.scalablytyped" %%% "serialport" % "7.0-dt-20190304Z-04feb3",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
+  "org.scalablytyped" %%% "serialport" % "7.0-dt-20190304Z-20b436",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

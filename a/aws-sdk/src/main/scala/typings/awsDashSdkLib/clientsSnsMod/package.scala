@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsSnsMod {
   type ActionsList = js.Array[action]
+  type AmazonResourceName = java.lang.String
   type Binary = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DelegatesList = js.Array[delegate]
@@ -20,6 +21,10 @@ package object clientsSnsMod {
   type String = java.lang.String
   type SubscriptionAttributesMap = org.scalablytyped.runtime.StringDictionary[attributeValue]
   type SubscriptionsList = js.Array[Subscription]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type TopicAttributesMap = org.scalablytyped.runtime.StringDictionary[attributeValue]
   type TopicsList = js.Array[Topic]
   type account = java.lang.String

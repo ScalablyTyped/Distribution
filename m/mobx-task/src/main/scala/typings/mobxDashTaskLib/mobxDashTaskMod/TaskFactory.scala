@@ -19,7 +19,7 @@ trait TaskFactory
       TaskOptions[WithoutPromise[_]], 
       stdLib.Exclude[java.lang.String, mobxDashTaskLib.mobxDashTaskLibStrings.state]
     ]
-  ): stdLib.PropertyDecorator | stdLib.MethodDecorator = js.native
+  ): stdLib.PropertyDecorator = js.native
   @JSName("rejected")
   def rejected_state[R, A /* <: js.Array[_] */](
     func: TaskFunc[R, A],
@@ -28,6 +28,13 @@ trait TaskFactory
       stdLib.Exclude[java.lang.String, mobxDashTaskLib.mobxDashTaskLibStrings.state]
     ]
   ): TaskStatusAware[WithoutPromise[R], A] = js.native
+  @JSName("rejected")
+  def rejected_state_MethodDecorator(
+    options: stdLib.Pick[
+      TaskOptions[WithoutPromise[_]], 
+      stdLib.Exclude[java.lang.String, mobxDashTaskLib.mobxDashTaskLibStrings.state]
+    ]
+  ): stdLib.MethodDecorator = js.native
   def resolved[R, A /* <: js.Array[_] */](func: TaskFunc[R, A]): TaskStatusAware[WithoutPromise[R], A] = js.native
   @JSName("resolved")
   def resolved_state(
@@ -35,7 +42,7 @@ trait TaskFactory
       TaskOptions[WithoutPromise[_]], 
       stdLib.Exclude[java.lang.String, mobxDashTaskLib.mobxDashTaskLibStrings.state]
     ]
-  ): stdLib.PropertyDecorator | stdLib.MethodDecorator = js.native
+  ): stdLib.PropertyDecorator = js.native
   @JSName("resolved")
   def resolved_state[R, A /* <: js.Array[_] */](
     func: TaskFunc[R, A],
@@ -44,5 +51,12 @@ trait TaskFactory
       stdLib.Exclude[java.lang.String, mobxDashTaskLib.mobxDashTaskLibStrings.state]
     ]
   ): TaskStatusAware[WithoutPromise[R], A] = js.native
+  @JSName("resolved")
+  def resolved_state_MethodDecorator(
+    options: stdLib.Pick[
+      TaskOptions[WithoutPromise[_]], 
+      stdLib.Exclude[java.lang.String, mobxDashTaskLib.mobxDashTaskLibStrings.state]
+    ]
+  ): stdLib.MethodDecorator = js.native
 }
 

@@ -47,6 +47,7 @@ object PopconfirmProps {
     cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     cancelText: reactLib.reactMod.ReactNode = null,
     children: reactLib.reactMod.ReactNode = null,
+    className: java.lang.String = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
     getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
@@ -77,6 +78,7 @@ object PopconfirmProps {
     if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps)
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))

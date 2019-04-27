@@ -42,6 +42,9 @@ trait Options extends js.Object {
   var messageId: js.UndefOr[java.lang.String] = js.undefined
   /** method to normalize header keys for custom caseing */
   var normalizeHeaderKey: js.UndefOr[js.Function1[/* key */ java.lang.String, java.lang.String]] = js.undefined
+  var priority: js.UndefOr[
+    nodemailerLib.nodemailerLibStrings.high | nodemailerLib.nodemailerLibStrings.normal | nodemailerLib.nodemailerLibStrings.low
+  ] = js.undefined
   /** if set then overwrites entire message output with this value. The value is not parsed, so you should still set address headers or the envelope value for the message to work */
   var raw: js.UndefOr[java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | AttachmentLike] = js.undefined
   /** Message-id list (an array or space separated string) */
@@ -83,6 +86,7 @@ object Options {
     list: ListHeaders = null,
     messageId: java.lang.String = null,
     normalizeHeaderKey: /* key */ java.lang.String => java.lang.String = null,
+    priority: nodemailerLib.nodemailerLibStrings.high | nodemailerLib.nodemailerLibStrings.normal | nodemailerLib.nodemailerLibStrings.low = null,
     raw: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | AttachmentLike = null,
     references: java.lang.String | js.Array[java.lang.String] = null,
     replyTo: java.lang.String | Address = null,
@@ -112,6 +116,7 @@ object Options {
     if (list != null) __obj.updateDynamic("list")(list)
     if (messageId != null) __obj.updateDynamic("messageId")(messageId)
     if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])

@@ -14,14 +14,14 @@ class OAuth2Strategy protected ()
       /* accessToken */ java.lang.String, 
       /* refreshToken */ java.lang.String, 
       /* profile */ Profile, 
-      /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], scala.Unit], 
+      /* done */ VerifyFunction, 
       scala.Unit
     ]) = this()
   def this(options: IOAuth2StrategyOption, verify: js.Function4[
       /* accessToken */ java.lang.String, 
       /* refreshToken */ java.lang.String, 
       /* profile */ Profile, 
-      /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], scala.Unit], 
+      /* done */ VerifyFunction, 
       scala.Unit
     ]) = this()
   @JSName("name")

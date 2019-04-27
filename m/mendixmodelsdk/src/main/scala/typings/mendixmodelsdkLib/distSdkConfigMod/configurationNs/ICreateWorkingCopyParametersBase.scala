@@ -9,6 +9,11 @@ trait ICreateWorkingCopyParametersBase extends js.Object {
   var avatarUrl: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Indicates whether this WC is created for the purpose of collaboration between the Desktop modeler and Webmodeler.
+    * By setting this, BiDi won't be available anymore for this project and thus requires a modeler with version 7.23.3 or higher.
+    */
+  var isCollaboration: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Indicates whether the working copy should be long-lived.
     * This parameter can only be set to true when the Mendix project id is set and the Model SDK is used from a trusted backend
     *  - this excludes regular SDK users for the moment.
@@ -48,6 +53,7 @@ object ICreateWorkingCopyParametersBase {
     name: java.lang.String,
     avatarUrl: java.lang.String = null,
     description: java.lang.String = null,
+    isCollaboration: js.UndefOr[scala.Boolean] = js.undefined,
     longLived: js.UndefOr[scala.Boolean] = js.undefined,
     markAsChanged: js.UndefOr[scala.Boolean] = js.undefined,
     projectId: java.lang.String = null,
@@ -58,6 +64,7 @@ object ICreateWorkingCopyParametersBase {
     val __obj = js.Dynamic.literal(name = name)
     if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(isCollaboration)) __obj.updateDynamic("isCollaboration")(isCollaboration)
     if (!js.isUndefined(longLived)) __obj.updateDynamic("longLived")(longLived)
     if (!js.isUndefined(markAsChanged)) __obj.updateDynamic("markAsChanged")(markAsChanged)
     if (projectId != null) __obj.updateDynamic("projectId")(projectId)

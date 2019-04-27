@@ -13,6 +13,9 @@ object ButtonProps {
   def apply(
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
     as: reactLib.reactMod.ReactType[_] = null,
+    backgroundColor: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
     bg: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -132,6 +135,7 @@ object ButtonProps {
     val __obj = js.Dynamic.literal()
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])

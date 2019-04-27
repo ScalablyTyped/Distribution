@@ -19,6 +19,7 @@ trait IVueI18n extends js.Object {
   var preserveDirectiveContent: scala.Boolean = js.native
   var silentFallbackWarn: scala.Boolean = js.native
   var silentTranslationWarn: scala.Boolean = js.native
+  var warnHtmlInMessage: vueDashI18nLib.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel = js.native
   def missing(
     locale: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale,
     key: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path

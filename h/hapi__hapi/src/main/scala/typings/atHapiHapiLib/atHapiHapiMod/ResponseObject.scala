@@ -74,8 +74,8 @@ trait ResponseObject
     */
   def charset(charset: java.lang.String): ResponseObject = js.native
   /**
-    * Sets the 'Content-Type' HTTP header 'charset' property where:
-    * $param charset - the charset property value.
+    * Sets the HTTP status code where:
+    * @param statusCode - the HTTP status code (e.g. 200).
     * @return Return value: the current response object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsecodestatuscode)
     */

@@ -19,6 +19,7 @@ object ICreateWorkingCopyParameters {
     template: java.lang.String,
     avatarUrl: java.lang.String = null,
     description: java.lang.String = null,
+    isCollaboration: js.UndefOr[scala.Boolean] = js.undefined,
     longLived: js.UndefOr[scala.Boolean] = js.undefined,
     markAsChanged: js.UndefOr[scala.Boolean] = js.undefined,
     projectId: java.lang.String = null,
@@ -29,6 +30,7 @@ object ICreateWorkingCopyParameters {
     val __obj = js.Dynamic.literal(name = name, template = template)
     if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl)
     if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(isCollaboration)) __obj.updateDynamic("isCollaboration")(isCollaboration)
     if (!js.isUndefined(longLived)) __obj.updateDynamic("longLived")(longLived)
     if (!js.isUndefined(markAsChanged)) __obj.updateDynamic("markAsChanged")(markAsChanged)
     if (projectId != null) __obj.updateDynamic("projectId")(projectId)

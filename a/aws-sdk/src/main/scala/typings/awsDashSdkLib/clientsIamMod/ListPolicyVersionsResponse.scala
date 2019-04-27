@@ -13,7 +13,7 @@ trait ListPolicyVersionsResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * A list of policy versions. For more information about managed policy versions, see Versioning for Managed Policies in the IAM User Guide.
     */
@@ -24,7 +24,7 @@ object ListPolicyVersionsResponse {
   @scala.inline
   def apply(
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null,
+    Marker: responseMarkerType = null,
     Versions: policyDocumentVersionListType = null
   ): ListPolicyVersionsResponse = {
     val __obj = js.Dynamic.literal()

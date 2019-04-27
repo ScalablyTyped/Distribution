@@ -13,7 +13,7 @@ trait ListGroupPoliciesResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * A list of policy names. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
@@ -25,7 +25,7 @@ object ListGroupPoliciesResponse {
   def apply(
     PolicyNames: policyNameListType,
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null
+    Marker: responseMarkerType = null
   ): ListGroupPoliciesResponse = {
     val __obj = js.Dynamic.literal(PolicyNames = PolicyNames)
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)

@@ -20,6 +20,7 @@ trait I18nOptions extends js.Object {
   var silentFallbackWarn: js.UndefOr[scala.Boolean] = js.undefined
   var silentTranslationWarn: js.UndefOr[scala.Boolean] = js.undefined
   var sync: js.UndefOr[scala.Boolean] = js.undefined
+  var warnHtmlInMessage: js.UndefOr[WarnHtmlInMessageLevel] = js.undefined
 }
 
 object I18nOptions {
@@ -37,7 +38,8 @@ object I18nOptions {
     preserveDirectiveContent: js.UndefOr[scala.Boolean] = js.undefined,
     silentFallbackWarn: js.UndefOr[scala.Boolean] = js.undefined,
     silentTranslationWarn: js.UndefOr[scala.Boolean] = js.undefined,
-    sync: js.UndefOr[scala.Boolean] = js.undefined
+    sync: js.UndefOr[scala.Boolean] = js.undefined,
+    warnHtmlInMessage: WarnHtmlInMessageLevel = null
   ): I18nOptions = {
     val __obj = js.Dynamic.literal()
     if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats)
@@ -53,6 +55,7 @@ object I18nOptions {
     if (!js.isUndefined(silentFallbackWarn)) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn)
     if (!js.isUndefined(silentTranslationWarn)) __obj.updateDynamic("silentTranslationWarn")(silentTranslationWarn)
     if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (warnHtmlInMessage != null) __obj.updateDynamic("warnHtmlInMessage")(warnHtmlInMessage)
     __obj.asInstanceOf[I18nOptions]
   }
 }

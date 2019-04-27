@@ -29,7 +29,7 @@ trait GetServiceLastAccessedDetailsResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     *  A ServiceLastAccessed object that contains details about the most recent attempt to access the service.
     */
@@ -45,7 +45,7 @@ object GetServiceLastAccessedDetailsResponse {
     ServicesLastAccessed: ServicesLastAccessed,
     Error: ErrorDetails = null,
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null
+    Marker: responseMarkerType = null
   ): GetServiceLastAccessedDetailsResponse = {
     val __obj = js.Dynamic.literal(JobCompletionDate = JobCompletionDate, JobCreationDate = JobCreationDate, JobStatus = JobStatus.asInstanceOf[js.Any], ServicesLastAccessed = ServicesLastAccessed)
     if (Error != null) __obj.updateDynamic("Error")(Error)

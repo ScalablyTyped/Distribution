@@ -700,6 +700,7 @@ object microflowsNs extends js.Object {
       * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
       */
     var authenticationPassword: java.lang.String = js.native
+    val containerAsConsumedODataService: mendixmodelsdkLib.distGenRestMod.restNs.ConsumedODataService = js.native
     val containerAsRestCallAction: RestCallAction = js.native
     val containerAsWebServiceCallAction: WebServiceCallAction = js.native
     /**
@@ -1035,9 +1036,6 @@ object microflowsNs extends js.Object {
   @js.native
   class JavaScriptActionCallAction protected () extends MicroflowAction {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    /**
-      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-      */
     var javaScriptAction: mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptAction | scala.Null = js.native
     val javaScriptActionQualifiedName: java.lang.String | scala.Null = js.native
     var outputVariableName: java.lang.String = js.native
@@ -1060,9 +1058,6 @@ object microflowsNs extends js.Object {
     val containerAsJavaScriptActionCallAction: JavaScriptActionCallAction = js.native
     @JSName("model")
     var model_JavaScriptActionParameterMapping: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
-    /**
-      * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-      */
     var parameter: mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptActionParameter = js.native
     val parameterQualifiedName: java.lang.String = js.native
     var parameterValue: CodeActionParameterValue = js.native
@@ -3078,6 +3073,15 @@ object microflowsNs extends js.Object {
       *  6.0.0 to 6.5.0
       */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.WebServiceCallAction): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.HttpConfiguration = js.native
+    /**
+      * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+      * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+      * of the parent rest.ConsumedODataService element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInConsumedODataServiceUnderHttpConfiguration(container: mendixmodelsdkLib.distGenRestMod.restNs.ConsumedODataService): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.HttpConfiguration = js.native
     /**
       * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
       * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property

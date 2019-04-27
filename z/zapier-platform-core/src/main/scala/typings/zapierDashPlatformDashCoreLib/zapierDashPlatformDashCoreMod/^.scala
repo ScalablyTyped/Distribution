@@ -18,5 +18,14 @@ object ^ extends js.Object {
     /* bundle */ js.UndefOr[stdLib.Partial[Bundle[org.scalablytyped.runtime.StringDictionary[_]]]], 
     js.Promise[_] | _
   ] = js.native
+  def createAppTester(appRaw: js.Object, options: zapierDashPlatformDashCoreLib.Anon_CustomStoreKey): js.Function2[
+    /* func */ js.Function2[
+      /* z */ ZObject, 
+      /* bundle */ Bundle[org.scalablytyped.runtime.StringDictionary[_]], 
+      js.Promise[_]
+    ], 
+    /* bundle */ js.UndefOr[stdLib.Partial[Bundle[org.scalablytyped.runtime.StringDictionary[_]]]], 
+    js.Promise[_] | _
+  ] = js.native
 }
 

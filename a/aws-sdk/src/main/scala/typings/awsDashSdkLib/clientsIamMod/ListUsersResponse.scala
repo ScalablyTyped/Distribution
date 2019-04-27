@@ -13,7 +13,7 @@ trait ListUsersResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * A list of users.
     */
@@ -25,7 +25,7 @@ object ListUsersResponse {
   def apply(
     Users: userListType,
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null
+    Marker: responseMarkerType = null
   ): ListUsersResponse = {
     val __obj = js.Dynamic.literal(Users = Users)
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)

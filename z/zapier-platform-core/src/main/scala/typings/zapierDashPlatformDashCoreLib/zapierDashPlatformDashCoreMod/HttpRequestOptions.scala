@@ -19,7 +19,7 @@ trait HttpRequestOptions extends js.Object {
   var redirect: js.UndefOr[
     zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.manual | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.error | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.follow
   ] = js.undefined
-  var removeMissingValuesFrom: zapierDashPlatformDashCoreLib.Anon_Body
+  var removeMissingValuesFrom: js.UndefOr[zapierDashPlatformDashCoreLib.Anon_Body] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
@@ -28,7 +28,6 @@ trait HttpRequestOptions extends js.Object {
 object HttpRequestOptions {
   @scala.inline
   def apply(
-    removeMissingValuesFrom: zapierDashPlatformDashCoreLib.Anon_Body,
     agent: nodeLib.httpMod.Agent = null,
     body: java.lang.String | nodeLib.Buffer | stdLib.ReadableStream[_] | js.Object = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
@@ -40,11 +39,12 @@ object HttpRequestOptions {
     params: js.Object = null,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
     redirect: zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.manual | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.error | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.follow = null,
+    removeMissingValuesFrom: zapierDashPlatformDashCoreLib.Anon_Body = null,
     size: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null,
     url: java.lang.String = null
   ): HttpRequestOptions = {
-    val __obj = js.Dynamic.literal(removeMissingValuesFrom = removeMissingValuesFrom)
+    val __obj = js.Dynamic.literal()
     if (agent != null) __obj.updateDynamic("agent")(agent)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
@@ -56,6 +56,7 @@ object HttpRequestOptions {
     if (params != null) __obj.updateDynamic("params")(params)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (removeMissingValuesFrom != null) __obj.updateDynamic("removeMissingValuesFrom")(removeMissingValuesFrom)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)

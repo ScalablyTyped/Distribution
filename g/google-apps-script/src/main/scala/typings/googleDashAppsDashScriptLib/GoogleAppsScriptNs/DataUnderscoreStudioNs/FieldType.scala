@@ -308,6 +308,18 @@ object FieldType extends js.Object {
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.FieldType
   
   @js.native
+  sealed trait HYPERLINK
+    extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.FieldType
+  
+  @js.native
+  sealed trait IMAGE
+    extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.FieldType
+  
+  @js.native
+  sealed trait IMAGE_LINK
+    extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.FieldType
+  
+  @js.native
   sealed trait LATITUDE_LONGITUDE
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.FieldType
   
@@ -469,6 +481,9 @@ object FieldType extends js.Object {
   val DAY_OF_WEEK: DAY_OF_WEEK with java.lang.String = js.native
   val DURATION: DURATION with java.lang.String = js.native
   val HOUR: HOUR with java.lang.String = js.native
+  val HYPERLINK: HYPERLINK with java.lang.String = js.native
+  val IMAGE: IMAGE with java.lang.String = js.native
+  val IMAGE_LINK: IMAGE_LINK with java.lang.String = js.native
   val LATITUDE_LONGITUDE: LATITUDE_LONGITUDE with java.lang.String = js.native
   val METRO: METRO with java.lang.String = js.native
   val METRO_CODE: METRO_CODE with java.lang.String = js.native

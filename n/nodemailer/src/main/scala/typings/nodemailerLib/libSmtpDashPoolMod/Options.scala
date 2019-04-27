@@ -107,6 +107,7 @@ object Options {
     normalizeHeaderKey: /* key */ java.lang.String => java.lang.String = null,
     opportunisticTLS: js.UndefOr[scala.Boolean] = js.undefined,
     port: scala.Int | scala.Double = null,
+    priority: nodemailerLib.nodemailerLibStrings.high | nodemailerLib.nodemailerLibStrings.normal | nodemailerLib.nodemailerLibStrings.low = null,
     rateDelta: scala.Int | scala.Double = null,
     rateLimit: scala.Int | scala.Double = null,
     raw: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.AttachmentLike = null,
@@ -164,6 +165,7 @@ object Options {
     if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
     if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (rateDelta != null) __obj.updateDynamic("rateDelta")(rateDelta.asInstanceOf[js.Any])
     if (rateLimit != null) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])

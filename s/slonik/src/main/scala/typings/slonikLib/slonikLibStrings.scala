@@ -7,6 +7,38 @@ import scala.scalajs.js.annotation._
 
 object slonikLibStrings {
   @js.native
+  sealed trait `!=`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait `<`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait `<=`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait `<>`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait `=`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait `>`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait `>=`
+    extends slonikLib.slonikMod.ComparisonOperatorType
+  
+  @js.native
+  sealed trait AND
+    extends slonikLib.slonikMod.LogicalBooleanOperatorType
+  
+  @js.native
   sealed trait DELETE extends js.Object
   
   @js.native
@@ -25,6 +57,10 @@ object slonikLibStrings {
   sealed trait INSERT extends js.Object
   
   @js.native
+  sealed trait OR
+    extends slonikLib.slonikMod.LogicalBooleanOperatorType
+  
+  @js.native
   sealed trait QueryResultRowType extends js.Object
   
   @js.native
@@ -33,6 +69,22 @@ object slonikLibStrings {
   @js.native
   sealed trait UPDATE extends js.Object
   
+  @scala.inline
+  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  @scala.inline
+  def `<`: `<` = "<".asInstanceOf[`<`]
+  @scala.inline
+  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  @scala.inline
+  def `<>`: `<>` = "<>".asInstanceOf[`<>`]
+  @scala.inline
+  def `=`: `=` = "=".asInstanceOf[`=`]
+  @scala.inline
+  def `>`: `>` = ">".asInstanceOf[`>`]
+  @scala.inline
+  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  @scala.inline
+  def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
@@ -43,6 +95,8 @@ object slonikLibStrings {
   def IMPLICIT_TRANSACTION: IMPLICIT_TRANSACTION = "IMPLICIT_TRANSACTION".asInstanceOf[IMPLICIT_TRANSACTION]
   @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
+  @scala.inline
+  def OR: OR = "OR".asInstanceOf[OR]
   @scala.inline
   def QueryResultRowType: QueryResultRowType = "QueryResultRowType".asInstanceOf[QueryResultRowType]
   @scala.inline

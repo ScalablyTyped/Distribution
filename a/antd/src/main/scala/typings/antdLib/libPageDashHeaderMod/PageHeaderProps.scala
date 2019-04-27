@@ -13,7 +13,7 @@ trait PageHeaderProps extends js.Object {
   var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var onBack: js.UndefOr[
     js.Function1[
-      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -35,7 +35,7 @@ object PageHeaderProps {
     className: java.lang.String = null,
     extra: reactLib.reactMod.ReactNode = null,
     footer: reactLib.reactMod.ReactNode = null,
-    onBack: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
+    onBack: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     subTitle: reactLib.reactMod.ReactNode = null,

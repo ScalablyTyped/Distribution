@@ -103,11 +103,35 @@ trait Schema[T]
       scala.Unit
     ]
   ): this.type = js.native
+  def post[T /* <: Document */](
+    method: stdLib.RegExp,
+    fn: js.Function2[
+      /* doc */ T, 
+      /* next */ js.Function1[/* err */ js.UndefOr[NativeError], scala.Unit], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  def post[T /* <: Document */](
+    method: stdLib.RegExp,
+    fn: js.Function3[
+      /* error */ mongodbLib.mongodbMod.MongoError, 
+      /* doc */ T, 
+      /* next */ js.Function1[/* err */ js.UndefOr[NativeError], scala.Unit], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: java.lang.String, fn: HookSyncCallback[T]): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: java.lang.String, fn: HookSyncCallback[T], errorCb: HookErrorCallback): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: java.lang.String, parallel: scala.Boolean, fn: HookAsyncCallback[T]): this.type = js.native
   def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](
     method: java.lang.String,
+    parallel: scala.Boolean,
+    fn: HookAsyncCallback[T],
+    errorCb: HookErrorCallback
+  ): this.type = js.native
+  def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](method: stdLib.RegExp, parallel: scala.Boolean, fn: HookAsyncCallback[T]): this.type = js.native
+  def pre[T /* <: Document | (Model[Document, js.Object]) | Query[_] | Aggregate[_] */](
+    method: stdLib.RegExp,
     parallel: scala.Boolean,
     fn: HookAsyncCallback[T],
     errorCb: HookErrorCallback

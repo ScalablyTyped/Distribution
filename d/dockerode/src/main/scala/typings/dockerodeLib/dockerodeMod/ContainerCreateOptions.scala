@@ -14,7 +14,7 @@ trait ContainerCreateOptions extends js.Object {
   var Entrypoint: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var Env: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var ExposedPorts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Object]] = js.undefined
-  var HostConfig: js.UndefOr[dockerodeLib.Anon_AutoRemove] = js.undefined
+  var HostConfig: js.UndefOr[HostConfig] = js.undefined
   var Hostname: js.UndefOr[java.lang.String] = js.undefined
   var Image: js.UndefOr[java.lang.String] = js.undefined
   var Labels: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
@@ -42,7 +42,7 @@ object ContainerCreateOptions {
     Entrypoint: java.lang.String | js.Array[java.lang.String] = null,
     Env: js.Array[java.lang.String] = null,
     ExposedPorts: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
-    HostConfig: dockerodeLib.Anon_AutoRemove = null,
+    HostConfig: HostConfig = null,
     Hostname: java.lang.String = null,
     Image: java.lang.String = null,
     Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,

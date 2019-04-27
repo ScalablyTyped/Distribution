@@ -85,6 +85,15 @@ object navigationNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  /**
+    * In version 8.0.0: introduced
+    */
+  @js.native
+  class RoleBasedNativeHomePage protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.navigationNs.RoleBasedNativeHomePage {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
   /* static members */
   @js.native
   object DeviceType extends js.Object {
@@ -277,12 +286,12 @@ object navigationNs extends js.Object {
     /**
       * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
       * The new OfflineEntityConfig will be automatically stored in the 'offlineEntityConfigs' property
-      * of the parent NavigationProfile element passed as argument.
+      * of the parent NavigationProfileBase element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
       *  7.22.0 and higher
       */
-    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfileBase): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
   }
   
   /* static members */
@@ -330,6 +339,28 @@ object navigationNs extends js.Object {
       * of the parent NavigationProfile element passed as argument.
       */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedHomePage = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object RoleBasedNativeHomePage extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
+    /**
+      * Creates and returns a new RoleBasedNativeHomePage instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedNativeHomePage = js.native
+    /**
+      * Creates and returns a new RoleBasedNativeHomePage instance in the SDK and on the server.
+      * The new RoleBasedNativeHomePage will be automatically stored in the 'roleBasedNativeHomePages' property
+      * of the parent NativeNavigationProfile element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedNativeHomePage = js.native
   }
   
 }

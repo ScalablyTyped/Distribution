@@ -25,14 +25,14 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   def commitToTeamServer(
     workingCopyId: java.lang.String,
     options: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.ICommitToTeamServerOptions
-  ): js.Promise[scala.Double] = js.native
+  ): js.Promise[scala.Unit] = js.native
   /**
     * Commits the contents of the working copy with the given id to the team server
     */
   def commitToTeamServer(
     workingCopyId: java.lang.String,
     options: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.ICommitToTeamServerOptions,
-    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[scala.Double],
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   def createAndOpenWorkingCopy(

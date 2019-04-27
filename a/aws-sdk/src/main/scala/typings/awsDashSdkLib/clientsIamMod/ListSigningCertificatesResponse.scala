@@ -17,7 +17,7 @@ trait ListSigningCertificatesResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
 }
 
 object ListSigningCertificatesResponse {
@@ -25,7 +25,7 @@ object ListSigningCertificatesResponse {
   def apply(
     Certificates: certificateListType,
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null
+    Marker: responseMarkerType = null
   ): ListSigningCertificatesResponse = {
     val __obj = js.Dynamic.literal(Certificates = Certificates)
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)

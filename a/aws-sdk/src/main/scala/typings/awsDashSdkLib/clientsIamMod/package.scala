@@ -154,6 +154,12 @@ package object clientsIamMod {
   type entityListType = js.Array[EntityType]
   type entityNameType = java.lang.String
   type existingUserNameType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.v1Token
+    - awsDashSdkLib.awsDashSdkLibStrings.v2Token
+    - java.lang.String
+  */
+  type globalEndpointTokenVersion = _globalEndpointTokenVersion | java.lang.String
   type groupDetailListType = js.Array[GroupDetail]
   type groupListType = js.Array[Group]
   type groupNameListType = js.Array[groupNameType]
@@ -214,6 +220,7 @@ package object clientsIamMod {
   type publicKeyFingerprintType = java.lang.String
   type publicKeyIdType = java.lang.String
   type publicKeyMaterialType = java.lang.String
+  type responseMarkerType = java.lang.String
   type roleDescriptionType = java.lang.String
   type roleDetailListType = js.Array[RoleDetail]
   type roleListType = js.Array[Role]
@@ -262,6 +269,7 @@ package object clientsIamMod {
     - awsDashSdkLib.awsDashSdkLibStrings.PolicyVersionsInUse
     - awsDashSdkLib.awsDashSdkLibStrings.PolicyVersionsInUseQuota
     - awsDashSdkLib.awsDashSdkLibStrings.VersionsPerPolicyQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.GlobalEndpointTokenVersion
     - java.lang.String
   */
   type summaryKeyType = _summaryKeyType | java.lang.String

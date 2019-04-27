@@ -22,7 +22,8 @@ class LocalParticipant () extends Participant {
   def publishTracks(tracks: js.Array[LocalTrack | stdLib.MediaStreamTrack]): js.Promise[js.Array[LocalTrackPublication]] = js.native
   def setParameters(): LocalParticipant = js.native
   def setParameters(encodingParameters: EncodingParameters): LocalParticipant = js.native
+  def unpublishTrack(track: stdLib.MediaStreamTrack): LocalTrackPublication = js.native
   def unpublishTrack(track: LocalTrack): LocalTrackPublication = js.native
-  def unpublishTracks(tracks: LocalTrack): js.Array[LocalTrackPublication] = js.native
+  def unpublishTracks(tracks: js.Array[LocalTrack | stdLib.MediaStreamTrack]): js.Array[LocalTrackPublication] = js.native
 }
 

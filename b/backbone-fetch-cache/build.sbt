@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backbone-fetch-cache"
-version := "1.4.0-dt-20190322Z-ef2d6c"
+version := "1.4.0-dt-20190426Z-ef2d6c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

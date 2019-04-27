@@ -6,16 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HooksObject extends js.Object {
-  var after: stdLib.Partial[HookMap]
-  var before: stdLib.Partial[HookMap]
-  var error: stdLib.Partial[HookMap]
+  var after: stdLib.Partial[HookMap] | Hook | js.Array[Hook]
+  var before: stdLib.Partial[HookMap] | Hook | js.Array[Hook]
+  var error: stdLib.Partial[HookMap] | Hook | js.Array[Hook]
+  var `finally`: stdLib.Partial[HookMap] | Hook | js.Array[Hook]
 }
 
 object HooksObject {
   @scala.inline
-  def apply(after: stdLib.Partial[HookMap], before: stdLib.Partial[HookMap], error: stdLib.Partial[HookMap]): HooksObject = {
-    val __obj = js.Dynamic.literal(after = after, before = before, error = error)
-  
+  def apply(
+    after: stdLib.Partial[HookMap] | Hook | js.Array[Hook],
+    before: stdLib.Partial[HookMap] | Hook | js.Array[Hook],
+    error: stdLib.Partial[HookMap] | Hook | js.Array[Hook],
+    `finally`: stdLib.Partial[HookMap] | Hook | js.Array[Hook]
+  ): HooksObject = {
+    val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    __obj.updateDynamic("finally")(`finally`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HooksObject]
   }
 }

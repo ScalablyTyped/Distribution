@@ -17,6 +17,10 @@ trait OptionsXAdES
     * @memberOf OptionsXAdES
     */
   var signingCertificate: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Sets signing time options
+    */
+  var signingTime: js.UndefOr[OptionsSigningTime] = js.undefined
 }
 
 object OptionsXAdES {
@@ -29,6 +33,7 @@ object OptionsXAdES {
     references: js.Array[xmldsigjsLib.xmldsigjsMod.OptionsSignReference] = null,
     signerRole: OptionsSignerRole = null,
     signingCertificate: java.lang.String = null,
+    signingTime: OptionsSigningTime = null,
     x509: js.Array[java.lang.String] = null
   ): OptionsXAdES = {
     val __obj = js.Dynamic.literal()
@@ -39,6 +44,7 @@ object OptionsXAdES {
     if (references != null) __obj.updateDynamic("references")(references)
     if (signerRole != null) __obj.updateDynamic("signerRole")(signerRole)
     if (signingCertificate != null) __obj.updateDynamic("signingCertificate")(signingCertificate)
+    if (signingTime != null) __obj.updateDynamic("signingTime")(signingTime)
     if (x509 != null) __obj.updateDynamic("x509")(x509)
     __obj.asInstanceOf[OptionsXAdES]
   }

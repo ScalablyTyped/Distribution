@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-bump"
-version := "2.8-dt-20190212Z-0ad517"
+version := "2.8-dt-20190212Z-a1e91d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "bump-regex" % "2.9-dt-20180214Z-9e249c",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -23,6 +23,7 @@
 //                 Orblazer <https://github.com/orblazer>
 //                 HughKu <https://github.com/HughKu>
 //                 Erik Lopez <https://github.com/niuware>
+//                 Vlad Melnik <https://github.com/vladmel1234>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

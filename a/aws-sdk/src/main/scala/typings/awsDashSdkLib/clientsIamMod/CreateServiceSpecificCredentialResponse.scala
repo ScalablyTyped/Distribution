@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateServiceSpecificCredentialResponse extends js.Object {
   /**
-    * A structure that contains information about the newly created service-specific credential.  This is the only time that the password for this credential set is available. It cannot be recovered later. Instead, you will have to reset the password with ResetServiceSpecificCredential. 
+    * A structure that contains information about the newly created service-specific credential.  This is the only time that the password for this credential set is available. It cannot be recovered later. Instead, you must reset the password with ResetServiceSpecificCredential. 
     */
   var ServiceSpecificCredential: js.UndefOr[ServiceSpecificCredential] = js.undefined
 }

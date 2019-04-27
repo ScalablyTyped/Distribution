@@ -10,11 +10,12 @@ package object libFormInterfaceMod {
     reactLib.reactMod.Global.JSXNs.LibraryManagedAttributes[C, P], 
     reactLib.reactMod.ComponentState
   ]) with (hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsMod.NonReactStatics[C, js.Object]) with antdLib.Anon_WrappedComponent[C]
-  type FormWrappedProps[TOwnProps /* <: antdLib.libFormFormMod.FormComponentProps[_] */] = js.Function1[
-    /* component */ reactLib.reactMod.ComponentType[js.Object], 
-    ConnectedComponentClass[
-      reactLib.reactMod.ComponentType[js.Object], 
-      antdLib.libUnderscoreUtilTypeMod.Omit[TOwnProps, java.lang.String]
-    ]
+  type FormWrappedProps[TOwnProps /* <: antdLib.libFormFormMod.WrappedFormInternalProps[_] */] = js.Function1[
+    /* component */ js.Any, 
+    ConnectedComponentClass[js.Any, antdLib.libUnderscoreUtilTypeMod.Omit[TOwnProps, java.lang.String]]
   ]
+  type GetProps[C] = js.Any
+  type Matching[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
+    */ antdLib.antdLibStrings.Matching with js.Any
 }

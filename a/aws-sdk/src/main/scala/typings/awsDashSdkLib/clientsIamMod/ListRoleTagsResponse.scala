@@ -13,7 +13,7 @@ trait ListRoleTagsResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * The list of tags currently that is attached to the role. Each tag consists of a key name and an associated value. If no tags are attached to the specified role, the response contains an empty list.
     */
@@ -22,7 +22,11 @@ trait ListRoleTagsResponse extends js.Object {
 
 object ListRoleTagsResponse {
   @scala.inline
-  def apply(Tags: tagListType, IsTruncated: js.UndefOr[booleanType] = js.undefined, Marker: markerType = null): ListRoleTagsResponse = {
+  def apply(
+    Tags: tagListType,
+    IsTruncated: js.UndefOr[booleanType] = js.undefined,
+    Marker: responseMarkerType = null
+  ): ListRoleTagsResponse = {
     val __obj = js.Dynamic.literal(Tags = Tags)
     if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)

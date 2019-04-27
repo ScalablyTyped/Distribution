@@ -10,11 +10,13 @@ package object slonikMod {
   type ConnectionRoutineType[T] = js.Function1[/* connection */ DatabasePoolConnectionType, js.Promise[T]]
   type DatabaseConfigurationType = java.lang.String | slonikLib.Anon_Database
   type DatabaseConnectionType = DatabasePoolConnectionType with DatabasePoolType
-  type DatabasePoolConnectionType = CommonQueryMethodsType with slonikLib.Anon_Handler
+  type DatabasePoolConnectionType = CommonQueryMethodsType with slonikLib.Anon_HandlerSql
   type DatabasePoolType = CommonQueryMethodsType with slonikLib.Anon_Connect
   type DatabaseTransactionConnectionType = CommonQueryMethodsType with slonikLib.Anon_Handler
+  type IdentifierListMemberType = js.Array[java.lang.String] | slonikLib.Anon_Alias
   type LoggerType = js.Function1[/* repeated */ java.lang.String, scala.Nothing]
   type MaybePromiseType[T] = T | js.Promise[T]
+  type NamedAssignmentType = stdLib.Record[java.lang.String, ValueExpressionType]
   type PrimitiveValueExpressionType = java.lang.String | scala.Double | scala.Boolean | scala.Null
   type QueryAnyFirstFunctionType = QueryMethodType[js.Array[QueryResultRowColumnType]]
   type QueryAnyFunctionType = QueryMethodType[js.Array[QueryResultRowType[java.lang.String]]]
@@ -35,16 +37,7 @@ package object slonikMod {
   type QueryResultRowType[ColumnName /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ name in ColumnName ]: slonik.slonik.QueryResultRowColumnType}
     */ slonikLib.slonikLibStrings.QueryResultRowType with js.Any
+  type StreamHandlerType = js.Function1[/* stream */ nodeLib.streamMod.Readable, scala.Unit]
   type TransactionFunctionType[T] = js.Function1[/* connection */ DatabaseTransactionConnectionType, js.Promise[T]]
-  /* Rewritten from type alias, can be one of: 
-    - PrimitiveValueExpressionType
-    - IdentifierTokenType
-    - RawSqlTokenType
-    - SqlSqlTokenType
-    - TupleListSqlTokenType
-    - TupleSqlTokenType
-    - UnnestSqlTokenType
-    - ValueListSqlTokenType
-  */
-  type ValueExpressionType = _ValueExpressionType | PrimitiveValueExpressionType
+  type ValueExpressionType = SqlTokenType | PrimitiveValueExpressionType
 }

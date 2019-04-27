@@ -13,10 +13,13 @@ trait Interceptor extends js.Object {
   def delayBody(timeMs: scala.Double): this.type = js.native
   def delayConnection(timeMs: scala.Double): this.type = js.native
   def getTotalDelay(): scala.Double = js.native
+  def matchHeader(name: java.lang.String, value: java.lang.String): this.type = js.native
+  def matchHeader(name: java.lang.String, value: nockLib.Anon_Value): this.type = js.native
+  def matchHeader(name: java.lang.String, value: stdLib.RegExp): this.type = js.native
   def once(): this.type = js.native
   def optionally(): this.type = js.native
   def query(params: js.Any): this.type = js.native
-  def query(params: nockLib.Anon_QuerObject): this.type = js.native
+  def query(params: nockLib.Anon_QueryObject): this.type = js.native
   def query(params: scala.Boolean): this.type = js.native
   def reply(
     callback: js.Function3[

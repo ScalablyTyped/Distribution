@@ -2184,6 +2184,15 @@ object microflowsNs extends js.Object {
     /**
       * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
       * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+      * of the parent rest.ConsumedODataService element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInConsumedODataServiceUnderHttpConfiguration(container: mendixmodelsdkLib.distGenRestMod.restNs.ConsumedODataService): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.HttpConfiguration = js.native
+    /**
+      * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+      * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
       * of the parent RestCallAction element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:

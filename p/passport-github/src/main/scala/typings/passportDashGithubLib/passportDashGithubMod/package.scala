@@ -13,4 +13,11 @@ package object passportDashGithubMod {
       passportDashGithubLib.passportDashGithubLibStrings.authorizationURL | passportDashGithubLib.passportDashGithubLibStrings.tokenURL
     ]
   ]
+  type Strategy = passportDashOauth2Lib.passportDashOauth2Mod.Strategy
+  /** @deprecated Types renamed for consistency with 'passport-oauth2'. Use `StrategyOptions` instead. */
+  type StrategyOption = StrategyOptions
+  /** @deprecated Types renamed for consistency with 'passport-oauth2'. Use `_StrategyOptionsBase` instead. */
+  type StrategyOptionBase = _StrategyOptionsBase
+  /** @deprecated Types renamed for consistency with 'passport-oauth2'. Use `StrategyOptionsWithRequest` instead. */
+  type StrategyOptionWithRequest = StrategyOptionsWithRequest
 }

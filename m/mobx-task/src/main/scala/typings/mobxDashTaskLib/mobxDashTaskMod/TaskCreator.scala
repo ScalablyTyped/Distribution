@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - stdLib.PropertyDecorator because var conflicts: length. Inlined  */ @js.native
 trait TaskCreator[K /* <: java.lang.String */]
   extends stdLib.MethodDecorator {
-  def apply(options: stdLib.Pick[TaskOptions[WithoutPromise[_]], K]): stdLib.PropertyDecorator | stdLib.MethodDecorator = js.native
+  def apply(options: stdLib.Pick[TaskOptions[WithoutPromise[_]], K]): stdLib.PropertyDecorator = js.native
   def apply[R, A /* <: js.Array[_] */](func: TaskFunc[R, A]): TaskStatusAware[WithoutPromise[R], A] = js.native
   def apply[R, A /* <: js.Array[_] */](func: TaskFunc[R, A], options: stdLib.Pick[TaskOptions[WithoutPromise[R]], K]): TaskStatusAware[WithoutPromise[R], A] = js.native
 }

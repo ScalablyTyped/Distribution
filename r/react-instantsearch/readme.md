@@ -1,6 +1,6 @@
 ```
 // Type definitions for react-instantsearch 5.2
-// Project: https://community.algolia.com/react-instantsearch/
+// Project: https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react
 // Definitions by: Gordon Burgett <https://github.com/gburgett>
 //                 Justin Powell <https://github.com/jpowell>
 //                 Haroen Viaene <https://github.com/haroenv>

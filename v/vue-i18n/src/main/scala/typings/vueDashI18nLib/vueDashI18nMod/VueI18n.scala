@@ -20,6 +20,7 @@ trait VueI18n extends js.Object {
   var preserveDirectiveContent: scala.Boolean = js.native
   var silentFallbackWarn: scala.Boolean = js.native
   var silentTranslationWarn: scala.Boolean = js.native
+  var warnHtmlInMessage: vueDashI18nLib.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel = js.native
   def d(value: scala.Double): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(value: scala.Double, args: org.scalablytyped.runtime.StringDictionary[java.lang.String]): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   def d(value: scala.Double, key: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native

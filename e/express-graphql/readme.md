@@ -1,5 +1,5 @@
 ```
-// Type definitions for express-graphql 0.6
+// Type definitions for express-graphql 0.8
 // Project: https://github.com/graphql/express-graphql
 // Definitions by: Isman Usoh <https://github.com/isman-usoh>
 //                 Nitin Tutlani <https://github.com/nitintutlani>
@@ -7,6 +7,7 @@
 //                 Ehsan Ziya <https://github.com/zya>
 //                 Margus Lamp <https://github.com/mlamp>
 //                 Firede <https://github.com/firede>
+//                 Ivan Goncharov <https://github.com/IvanGoncharov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.6
 ```

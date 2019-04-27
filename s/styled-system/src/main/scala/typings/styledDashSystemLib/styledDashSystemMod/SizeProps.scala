@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- styledDashSystemLib.styledDashSystemMod.SizeWidthProps because var conflicts: size. Inlined  */ trait SizeProps extends SizeHeightProps[TLengthStyledSystem]
+trait SizeProps[TLength] extends js.Object {
+  var size: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.HeightProperty[TLength]]] = js.undefined
+}
 
 object SizeProps {
   @scala.inline
-  def apply(size: ResponsiveValue[csstypeLib.csstypeMod.WidthProperty[TLengthStyledSystem]] = null): SizeProps = {
+  def apply[TLength](size: ResponsiveValue[csstypeLib.csstypeMod.HeightProperty[TLength]] = null): SizeProps[TLength] = {
     val __obj = js.Dynamic.literal()
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SizeProps]
+    __obj.asInstanceOf[SizeProps[TLength]]
   }
 }
 

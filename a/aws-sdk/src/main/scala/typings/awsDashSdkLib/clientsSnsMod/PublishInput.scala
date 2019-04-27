@@ -27,7 +27,7 @@ trait PublishInput extends js.Object {
     */
   var Subject: js.UndefOr[subject] = js.undefined
   /**
-    * Either TopicArn or EndpointArn, but not both. If you don't specify a value for the TargetArn parameter, you must specify a value for the PhoneNumber or TopicArn parameters.
+    * If you don't specify a value for the TargetArn parameter, you must specify a value for the PhoneNumber or TopicArn parameters.
     */
   var TargetArn: js.UndefOr[String] = js.undefined
   /**

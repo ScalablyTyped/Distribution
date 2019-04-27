@@ -1370,7 +1370,7 @@ object pluginwidgetsNs extends js.Object {
       * of the parent pages.Layout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
@@ -1424,16 +1424,25 @@ object pluginwidgetsNs extends js.Object {
       * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.23.0 and higher
+      *  7.23.0 to 7.23.0
       */
     def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
+    /**
+      * Creates and returns a new PluginWidget instance in the SDK and on the server.
+      * The new PluginWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.NativeLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInNativeLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NativeLayoutContent): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
       * Creates and returns a new PluginWidget instance in the SDK and on the server.
       * The new PluginWidget will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.22.0 and higher
+      *  7.22.0 to 7.23.0
       */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
@@ -1442,7 +1451,7 @@ object pluginwidgetsNs extends js.Object {
       * of the parent nativepages.NativeLayout element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.21.0 and higher
+      *  7.21.0 to 7.23.0
       */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
@@ -1532,7 +1541,7 @@ object pluginwidgetsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
@@ -1550,7 +1559,7 @@ object pluginwidgetsNs extends js.Object {
       * of the parent pages.SplitPane element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  7.15.0 and higher
+      *  7.15.0 to 7.23.0
       */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
     /**
@@ -1625,6 +1634,15 @@ object pluginwidgetsNs extends js.Object {
       *  7.0.1 to 7.14.0
       */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
+    /**
+      * Creates and returns a new PluginWidget instance in the SDK and on the server.
+      * The new PluginWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.WebLayoutContent element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInWebLayoutContentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WebLayoutContent): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
   }
   
   /* static members */

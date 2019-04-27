@@ -54,6 +54,7 @@ object textsNs extends js.Object {
     val containerAsAttributeWidgetWithPlaceholder: mendixmodelsdkLib.distGenPagesMod.pagesNs.AttributeWidgetWithPlaceholder = js.native
     val containerAsBasicReportAggregate: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReportAggregate = js.native
     val containerAsBasicReportColumn: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReportColumn = js.native
+    val containerAsBottomBarItem: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem = js.native
     val containerAsButton: mendixmodelsdkLib.distGenPagesMod.pagesNs.Button = js.native
     val containerAsCallNanoflowClientAction: mendixmodelsdkLib.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
     val containerAsClientTemplate: mendixmodelsdkLib.distGenPagesMod.pagesNs.ClientTemplate = js.native
@@ -188,6 +189,15 @@ object textsNs extends js.Object {
       * of the parent reports.BasicReportColumn element passed as argument.
       */
     def createInBasicReportColumnUnderCaption(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReportColumn): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
+    /**
+      * Creates and returns a new Text instance in the SDK and on the server.
+      * The new Text will be automatically stored in the 'caption' property
+      * of the parent nativepages.BottomBarItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.0.0 and higher
+      */
+    def createInBottomBarItemUnderCaption(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.BottomBarItem): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
     /**
       * Creates and returns a new Text instance in the SDK and on the server.
       * The new Text will be automatically stored in the 'tooltip' property

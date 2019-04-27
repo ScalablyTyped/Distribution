@@ -17,7 +17,7 @@ trait SimulatePolicyResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
 }
 
 object SimulatePolicyResponse {
@@ -25,7 +25,7 @@ object SimulatePolicyResponse {
   def apply(
     EvaluationResults: EvaluationResultsListType = null,
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null
+    Marker: responseMarkerType = null
   ): SimulatePolicyResponse = {
     val __obj = js.Dynamic.literal()
     if (EvaluationResults != null) __obj.updateDynamic("EvaluationResults")(EvaluationResults)

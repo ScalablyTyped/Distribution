@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListRoleTagsRequest extends js.Object {
   /**
-    * Use this parameter only when paginating results and only after you receive a response indicating that the results are truncated. Set it to the value of the Marker element in the response to indicate where the next call should start.
+    * Use this parameter only when paginating results and only after you receive a response indicating that the results are truncated. Set it to the value of the Marker element in the response that you received to indicate where the next call should start.
     */
   var Marker: js.UndefOr[markerType] = js.undefined
   /**

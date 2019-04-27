@@ -19,6 +19,7 @@ object PopoverProps {
     autoAdjustOverflow: scala.Boolean | antdLib.libTooltipPlacementsMod.AdjustOverflow = null,
     builtinPlacements: js.Object = null,
     children: reactLib.reactMod.ReactNode = null,
+    className: java.lang.String = null,
     content: reactLib.reactMod.ReactNode = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
@@ -43,6 +44,7 @@ object PopoverProps {
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
     if (builtinPlacements != null) __obj.updateDynamic("builtinPlacements")(builtinPlacements)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))

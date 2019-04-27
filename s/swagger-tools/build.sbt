@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "swagger-tools"
-version := "0.10-dt-20180214Z-5bd1c0"
+version := "0.10-dt-20180214Z-e595c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-e08638",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b0fe56",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

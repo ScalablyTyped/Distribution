@@ -13,7 +13,7 @@ trait ListPoliciesResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * A list of policies.
     */
@@ -24,7 +24,7 @@ object ListPoliciesResponse {
   @scala.inline
   def apply(
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null,
+    Marker: responseMarkerType = null,
     Policies: policyListType = null
   ): ListPoliciesResponse = {
     val __obj = js.Dynamic.literal()

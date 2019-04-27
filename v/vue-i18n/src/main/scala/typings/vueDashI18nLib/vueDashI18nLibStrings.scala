@@ -32,6 +32,10 @@ object vueDashI18nLibStrings {
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
   
   @js.native
+  sealed trait error
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel
+  
+  @js.native
   sealed trait fraction
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
   
@@ -80,6 +84,10 @@ object vueDashI18nLibStrings {
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeDigital
   
   @js.native
+  sealed trait off
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel
+  
+  @js.native
   sealed trait percent extends js.Object
   
   @js.native
@@ -98,6 +106,10 @@ object vueDashI18nLibStrings {
   sealed trait symbol
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.CurrencyDisplay
   
+  @js.native
+  sealed trait warn
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel
+  
   @scala.inline
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
   @scala.inline
@@ -110,6 +122,8 @@ object vueDashI18nLibStrings {
   def currency: currency = "currency".asInstanceOf[currency]
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fraction: fraction = "fraction".asInstanceOf[fraction]
   @scala.inline
@@ -135,6 +149,8 @@ object vueDashI18nLibStrings {
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
   @scala.inline
   def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
@@ -144,5 +160,7 @@ object vueDashI18nLibStrings {
   def short: short = "short".asInstanceOf[short]
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
 }
 

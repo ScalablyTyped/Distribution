@@ -20,6 +20,7 @@ trait Assertion extends js.Object {
   def param(key: java.lang.String): Assertion = js.native
   def param(key: java.lang.String, value: java.lang.String): Assertion = js.native
   def redirectTo(location: java.lang.String): Assertion = js.native
+  def redirectTo(location: stdLib.RegExp): Assertion = js.native
   def status(code: scala.Double): Assertion = js.native
   def statusCode(code: scala.Double): Assertion = js.native
 }

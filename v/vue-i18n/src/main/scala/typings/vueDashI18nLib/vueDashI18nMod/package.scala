@@ -28,4 +28,5 @@ package object vueDashI18nMod {
   type Path = vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path
   type TranslateResult = vueDashI18nLib.vueDashI18nMod.VueI18nNs.TranslateResult
   type Values = vueDashI18nLib.vueDashI18nMod.VueI18nNs.Values
+  type WarnHtmlInMessageLevel = vueDashI18nLib.vueDashI18nMod.VueI18nNs.WarnHtmlInMessageLevel
 }

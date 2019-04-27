@@ -13,6 +13,9 @@ object TextProps {
   def apply(
     alignSelf: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null,
     as: reactLib.reactMod.ReactType[_] = null,
+    backgroundColor: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
     bg: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BackgroundProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -116,6 +119,7 @@ object TextProps {
     val __obj = js.Dynamic.literal()
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

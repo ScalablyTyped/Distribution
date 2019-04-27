@@ -13,7 +13,7 @@ trait ListSSHPublicKeysResponse extends js.Object {
   /**
     * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
     */
-  var Marker: js.UndefOr[markerType] = js.undefined
+  var Marker: js.UndefOr[responseMarkerType] = js.undefined
   /**
     * A list of the SSH public keys assigned to IAM user.
     */
@@ -24,7 +24,7 @@ object ListSSHPublicKeysResponse {
   @scala.inline
   def apply(
     IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: markerType = null,
+    Marker: responseMarkerType = null,
     SSHPublicKeys: SSHPublicKeyListType = null
   ): ListSSHPublicKeysResponse = {
     val __obj = js.Dynamic.literal()

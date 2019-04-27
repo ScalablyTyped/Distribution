@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "smtp-server"
-version := "3.5-dt-20190212Z-7ce291"
+version := "3.5-dt-20190212Z-941055"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190422Z-40afee",
-  "org.scalablytyped" %%% "nodemailer" % "4.6-dt-20190416Z-d84940",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
+  "org.scalablytyped" %%% "nodemailer" % "4.6-dt-20190426Z-a360d4",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

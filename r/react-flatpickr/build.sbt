@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-flatpickr"
-version := "3.7-dt-20190202Z-ea4ae1"
+version := "3.7-dt-20190426Z-db6280"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

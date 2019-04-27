@@ -11,8 +11,7 @@ object javascriptactionsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/javascript-actions relevant section in reference guide}
     *
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
+    * In version 8.0.0: removed experimental
     * In version 7.21.0: introduced
     */
   @js.native
@@ -22,8 +21,7 @@ object javascriptactionsNs extends js.Object {
   }
   
   /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
+    * In version 8.0.0: removed experimental
     * In version 7.21.0: introduced
     */
   @js.native

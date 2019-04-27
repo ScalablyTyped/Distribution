@@ -19,7 +19,7 @@ trait IModelServerClient extends js.Object {
   def commitToTeamServer(
     workingCopyId: java.lang.String,
     options: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.ICommitToTeamServerOptions,
-    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[scala.Double],
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   def createWorkingCopy(

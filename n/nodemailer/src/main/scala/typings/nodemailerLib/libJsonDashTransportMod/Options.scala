@@ -35,6 +35,7 @@ object Options {
     list: nodemailerLib.libMailerMod.ListHeaders = null,
     messageId: java.lang.String = null,
     normalizeHeaderKey: /* key */ java.lang.String => java.lang.String = null,
+    priority: nodemailerLib.nodemailerLibStrings.high | nodemailerLib.nodemailerLibStrings.normal | nodemailerLib.nodemailerLibStrings.low = null,
     raw: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.AttachmentLike = null,
     references: java.lang.String | js.Array[java.lang.String] = null,
     replyTo: java.lang.String | nodemailerLib.libMailerMod.Address = null,
@@ -66,6 +67,7 @@ object Options {
     if (list != null) __obj.updateDynamic("list")(list)
     if (messageId != null) __obj.updateDynamic("messageId")(messageId)
     if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(js.Any.fromFunction1(normalizeHeaderKey))
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])

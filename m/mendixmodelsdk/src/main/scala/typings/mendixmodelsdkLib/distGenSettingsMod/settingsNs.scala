@@ -191,6 +191,7 @@ object settingsNs extends js.Object {
     val beforeShutdownMicroflowQualifiedName: java.lang.String | scala.Null = js.native
     var defaultTimeZoneCode: java.lang.String = js.native
     /**
+      * In version 8.0.0: deleted
       * In version 7.10.0: introduced
       */
     var enableDataStorageNewQueryHandling: scala.Boolean = js.native
@@ -209,6 +210,7 @@ object settingsNs extends js.Object {
     var roundingMode: RoundingMode = js.native
     var scheduledEventTimeZoneCode: java.lang.String = js.native
     /**
+      * In version 8.0.0: deleted
       * In version 7.15.0: introduced
       */
     var useDeprecatedClientForWebServiceCalls: scala.Boolean = js.native
