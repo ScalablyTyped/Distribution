@@ -130,7 +130,7 @@ trait Anon_Beep extends js.Object {
   	@param buffer - Buffer of an image. Usually read in with `fs.readFile()`.
   	*/
   def image(buffer: nodeLib.Buffer): java.lang.String = js.native
-  def image(buffer: nodeLib.Buffer, options: ansiDashEscapesLib.ansiDashEscapesMod.ansiEscapesNs.ImageOptions): java.lang.String = js.native
+  def image(buffer: nodeLib.Buffer, options: ansiDashEscapesLib.ansiDashEscapesMod.ImageOptions): java.lang.String = js.native
   /**
   	Create a clickable link.
   	[Supported terminals.](https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda) Use [`supports-hyperlinks`](https://github.com/jamestalmage/supports-hyperlinks) to detect link support.

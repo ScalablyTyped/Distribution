@@ -73,13 +73,6 @@ package object ramdaMod {
     js.Function1[/* x */ V0, js.Any]
   ])
   type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
-  // Represents all objects evolvable with Evolver E
-  type Evolvable[E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof E ]:? ramda.ramda.Evolved<E[P]>}
-    */ ramdaLib.ramdaLibStrings.Evolvable with E
-  type Evolve[O /* <: Evolvable[E] */, E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof O ]: O[P] | ramda.ramda.EvolveValue<O[P], E[P]>}
-    */ ramdaLib.ramdaLibStrings.Evolve with js.Any
   type EvolveNestedValue[V, E /* <: Evolver */] = Evolve[V, E]
   type EvolveValue[V, E] = (EvolveNestedValue[V, E]) | stdLib.ReturnType[E]
   type Evolved[T] = Evolvable[T]

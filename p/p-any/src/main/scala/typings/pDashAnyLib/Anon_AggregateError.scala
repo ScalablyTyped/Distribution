@@ -26,10 +26,10 @@ trait Anon_AggregateError extends js.Object {
   	})();
   	```
   	 */
-  def apply[ValueType](input: stdLib.Iterable[pDashAnyLib.pDashAnyMod.pAnyNs.Value[ValueType]]): pDashAnyLib.pDashAnyMod.pAnyNs.CancelablePromise[ValueType] = js.native
+  def apply[ValueType](input: stdLib.Iterable[pDashAnyLib.pDashAnyMod.Value[ValueType]]): pDashAnyLib.pDashAnyMod.CancelablePromise[ValueType] = js.native
   def apply[ValueType](
-    input: stdLib.Iterable[pDashAnyLib.pDashAnyMod.pAnyNs.Value[ValueType]],
-    options: pDashAnyLib.pDashAnyMod.pAnyNs.Options[ValueType]
-  ): pDashAnyLib.pDashAnyMod.pAnyNs.CancelablePromise[ValueType] = js.native
+    input: stdLib.Iterable[pDashAnyLib.pDashAnyMod.Value[ValueType]],
+    options: pDashAnyLib.pDashAnyMod.Options[ValueType]
+  ): pDashAnyLib.pDashAnyMod.CancelablePromise[ValueType] = js.native
 }
 

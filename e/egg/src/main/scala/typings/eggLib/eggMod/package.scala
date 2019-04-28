@@ -31,9 +31,6 @@ package object eggMod {
   type LoggerLevel = eggDashLoggerLib.eggDashLoggerMod.LoggerLevel
   // plain object
   type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type PowerPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ U in keyof T ]:? T[U]}
-    */ eggLib.eggLibStrings.PowerPartial with T
   // Remove specific property from the specific class
   type RemoveSpecProp[T, P] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, P]]
   type RequestArrayBody = js.Array[js.Any]

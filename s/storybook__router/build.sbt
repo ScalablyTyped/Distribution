@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.0.10-1e4269"
+version := "5.0.11-d035ea"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-997f10",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-d4a7b7",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-869966",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-08d9f8",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-175c86",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190419Z-caf3c8",

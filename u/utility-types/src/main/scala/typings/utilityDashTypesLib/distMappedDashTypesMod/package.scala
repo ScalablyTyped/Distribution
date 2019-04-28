@@ -22,7 +22,4 @@ package object distMappedDashTypesMod {
   type SymmetricDifference[A, B] = SetDifference[A | B, A with B]
   type UnboxPromise[T] = PromiseType[T]
   type Unionize[T] = /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: {[ Q in P ]: T[P]}}[keyof T] */ js.Any
-  type _DeepReadonlyObject[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {readonly [ P in utility-types.utility-types/dist/mapped-types.NonFunctionKeys<T> ]: utility-types.utility-types/dist/mapped-types.DeepReadonly<T[P]>}
-    */ utilityDashTypesLib.utilityDashTypesLibStrings._DeepReadonlyObject with T
 }

@@ -61,9 +61,6 @@ object grommetLibStrings {
   sealed trait Australia extends js.Object
   
   @js.native
-  sealed trait DeepReadonly extends js.Object
-  
-  @js.native
   sealed trait Europe extends js.Object
   
   @js.native
@@ -447,8 +444,6 @@ object grommetLibStrings {
   def Asia: Asia = "Asia".asInstanceOf[Asia]
   @scala.inline
   def Australia: Australia = "Australia".asInstanceOf[Australia]
-  @scala.inline
-  def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
   @scala.inline
   def Europe: Europe = "Europe".asInstanceOf[Europe]
   @scala.inline

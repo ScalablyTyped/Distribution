@@ -20,10 +20,7 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply[T](filePath: java.lang.String): js.Promise[T] = js.native
-  def apply[T](
-    filePath: java.lang.String,
-    options: loadDashJsonDashFileLib.loadDashJsonDashFileMod.loadJsonFileNs.Options
-  ): js.Promise[T] = js.native
+  def apply[T](filePath: java.lang.String, options: loadDashJsonDashFileLib.loadDashJsonDashFileMod.Options): js.Promise[T] = js.native
   /**
   	Read and parse a JSON file.
   	Strips UTF-8 BOM, uses graceful-fs, and throws more helpful JSON errors.
@@ -35,9 +32,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def sync[T](filePath: java.lang.String): T = js.native
-  def sync[T](
-    filePath: java.lang.String,
-    options: loadDashJsonDashFileLib.loadDashJsonDashFileMod.loadJsonFileNs.Options
-  ): T = js.native
+  def sync[T](filePath: java.lang.String, options: loadDashJsonDashFileLib.loadDashJsonDashFileMod.Options): T = js.native
 }
 

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashElementsLibStrings {
   @js.native
-  sealed trait RecursivePartial extends js.Object
-  
-  @js.native
   sealed trait android extends js.Object
   
   @js.native
@@ -197,8 +194,6 @@ object reactDashNativeDashElementsLibStrings {
   sealed trait zocial
     extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
-  @scala.inline
-  def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline

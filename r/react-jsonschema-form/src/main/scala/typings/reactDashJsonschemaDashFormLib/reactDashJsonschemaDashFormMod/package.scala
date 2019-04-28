@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashJsonschemaDashFormMod {
-  type ErrorSchema = org.scalablytyped.runtime.StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-jsonschema-form.react-jsonschema-form.ErrorSchema */ js.Object
-  ]
   type Field = reactLib.reactMod.StatelessComponent[FieldProps[js.Any]] | (reactLib.reactMod.ComponentClass[FieldProps[js.Any], reactLib.reactMod.ComponentState])
   type FieldError = java.lang.String
   type Form[T] = reactLib.reactMod.Component[FormProps[T], js.Object, js.Any]

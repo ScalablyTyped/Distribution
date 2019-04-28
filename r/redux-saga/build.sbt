@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "redux-saga"
-version := "1.0.2-d94596"
+version := "1.0.2-6e2e1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "redux" % "4.0.1-99337b",
-  "org.scalablytyped" %%% "redux-saga__core" % "1.0.2-72d50a",
-  "org.scalablytyped" %%% "redux-saga__types" % "1.0.2-5e6017",
+  "org.scalablytyped" %%% "redux" % "4.0.1-914cdc",
+  "org.scalablytyped" %%% "redux-saga__core" % "1.0.2-a3f470",
+  "org.scalablytyped" %%% "redux-saga__types" % "1.0.2-fe2e0b",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "typescript-tuple" % "2.2.1-76e202")
 publishArtifact in packageDoc := false

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object apolloDashServerDashCoreLibStrings {
   @js.native
-  sealed trait RecursivePartial extends js.Object
-  
-  @js.native
   sealed trait cache extends js.Object
   
   @js.native
@@ -48,8 +45,6 @@ object apolloDashServerDashCoreLibStrings {
   @js.native
   sealed trait validationRules extends js.Object
   
-  @scala.inline
-  def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline

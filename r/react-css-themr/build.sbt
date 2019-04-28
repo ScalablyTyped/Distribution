@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-css-themr"
-version := "2.1.2-6c0f62"
+version := "2.1.2-57a984"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

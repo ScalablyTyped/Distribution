@@ -61,9 +61,6 @@ object sequelizeLibStrings {
   sealed trait UPDATE extends js.Object
   
   @js.native
-  sealed trait WhereOptions extends js.Object
-  
-  @js.native
   sealed trait all extends js.Object
   
   @js.native
@@ -117,8 +114,6 @@ object sequelizeLibStrings {
   def UNIQUE: UNIQUE = "UNIQUE".asInstanceOf[UNIQUE]
   @scala.inline
   def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
-  @scala.inline
-  def WhereOptions: WhereOptions = "WhereOptions".asInstanceOf[WhereOptions]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline

@@ -8,7 +8,7 @@
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(WindowsToaster)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(WindowsToaster) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(WindowsBalloon)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(WindowsBalloon) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Growl)))) [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsExport() / TsExporteeTree() / TsDeclInterface(NodeNotifier) / TsMemberProperty(Growl) / TsTypeQuery())] 
-[info ] PreferTypeAlias.scala:67 Simplified to function type alias [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsDeclInterface(NotificationCallback))] 
+[info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => node-notifier, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-notifier) / TsDeclInterface(NotificationCallback))] 
 [debug] PhaseRunner.scala:82 Success [id => node-notifier, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing node-notifier [id => node-notifier, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => node-notifier, phase => scala.js] 

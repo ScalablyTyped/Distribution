@@ -11,7 +11,7 @@
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(suiteSetup)))) [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(mochaSuiteSetup) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(suiteTeardown)))) [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclTypeAlias(mochaSuiteTeardown) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(mochaIt)))) [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember-mocha) / TsExport() / TsExporteeTree() / TsDeclVar(it) / TsTypeQuery())] 
-[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsAugmentedModule(mocha) / TsDeclInterface(Context))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsAugmentedModule(mocha) / TsDeclInterface(Context))] 
 [info ] ExpandCallables.scala:48 Expanded beforeEach into 6 methods [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember-mocha) / TsDeclInterface(TestHooks))] 
 [info ] ExpandCallables.scala:48 Expanded afterEach into 6 methods [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember-mocha) / TsDeclInterface(TestHooks))] 
 [info ] ExpandCallables.scala:48 Expanded only into 4 methods [id => ember-mocha, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ember-mocha) / TsDeclInterface(ContextDefinition))] 

@@ -27,7 +27,4 @@ package object convictMod {
     - scala.Boolean
   */
   type PredefinedFormat = _PredefinedFormat | java.lang.String | js.Object | stdLib.Number | stdLib.RegExp | scala.Boolean
-  type Schema[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]: object | convict.convict.SchemaObj<T[P]>}
-    */ convictLib.convictLibStrings.Schema with T
 }

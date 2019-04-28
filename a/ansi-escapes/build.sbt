@@ -1,14 +1,13 @@
 organization := "org.scalablytyped"
 name := "ansi-escapes"
-version := "4.1.0-2c89dd"
+version := "4.1.0-d0ff1b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
-  "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "type-fest" % "0.3.0-45433e")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
+  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
+  "org.scalablytyped" %%% "type-fest" % "0.3.0-3fb4c9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

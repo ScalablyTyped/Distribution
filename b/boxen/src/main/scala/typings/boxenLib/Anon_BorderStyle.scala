@@ -31,6 +31,6 @@ trait Anon_BorderStyle extends js.Object {
   	```
   	*/
   def apply(text: java.lang.String): java.lang.String = js.native
-  def apply(text: java.lang.String, options: boxenLib.boxenMod.boxenNs.Options): java.lang.String = js.native
+  def apply(text: java.lang.String, options: boxenLib.boxenMod.Options): java.lang.String = js.native
 }
 

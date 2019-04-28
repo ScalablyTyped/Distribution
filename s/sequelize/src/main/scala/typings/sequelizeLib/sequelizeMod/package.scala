@@ -858,7 +858,4 @@ package object sequelizeMod {
     * Logic of where statement
     */
   type WhereLogic = stdLib.Partial[sequelizeLib.Anon_]
-  type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.Primitives> | sequelize.sequelize.WhereLogic | null | sequelize.sequelize.col | sequelize.sequelize.and | sequelize.sequelize.or | sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.WhereNested | sequelize.sequelize.where | null}
-    */ sequelizeLib.sequelizeLibStrings.WhereOptions with js.Any
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-focus-lock"
-version := "1.18.3-414563"
+version := "1.19.1-9afeb8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

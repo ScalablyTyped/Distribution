@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-redux-toastr"
-version := "7.4-dt-20190322Z-e90e42"
+version := "7.4-dt-20190322Z-602239"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190419Z-caf3c8",
-  "org.scalablytyped" %%% "redux" % "4.0.1-99337b",
+  "org.scalablytyped" %%% "redux" % "4.0.1-914cdc",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -43,7 +43,7 @@ trait Anon_Default extends js.Object {
   def apply[ObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](`object`: ObjectType): stdLib.Set[
     typeDashFestLib.typeDashFestMod.LiteralUnion[java.lang.String, java.lang.String | scala.Double | js.Symbol]
   ] = js.native
-  def apply[ObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](`object`: ObjectType, options: allDashKeysLib.allDashKeysMod.allKeysNs.Options): stdLib.Set[
+  def apply[ObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](`object`: ObjectType, options: allDashKeysLib.allDashKeysMod.Options): stdLib.Set[
     typeDashFestLib.typeDashFestMod.LiteralUnion[java.lang.String, java.lang.String | scala.Double | js.Symbol]
   ] = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-tools"
-version := "4.0.4-d6c3c6"
+version := "4.0.4-acd59f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

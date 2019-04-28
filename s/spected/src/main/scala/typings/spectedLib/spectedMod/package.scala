@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object spectedMod {
-  type Result[INPUT, SPEC] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof INPUT ]: true | std.Array<any> | object}
-    */ spectedLib.spectedLibStrings.Result with js.Any
   type Spec[INPUT, ROOTINPUT] = js.Tuple2[spectedLib.Predicate[INPUT, ROOTINPUT], spectedLib.ErrorMsg[INPUT]]
   type SpecArray[INPUT, ROOTINPUT] = js.Array[Spec[INPUT, ROOTINPUT]]
   type SpecFunction[INPUT, ROOTINPUT] = (js.Function1[/* value */ INPUT, SpecArray[INPUT, ROOTINPUT]]) | (js.Function1[/* value */ INPUT, SpecObject[INPUT, ROOTINPUT]]) | (js.Function1[/* value */ INPUT, js.Array[SpecArray[js.Any, ROOTINPUT]]])

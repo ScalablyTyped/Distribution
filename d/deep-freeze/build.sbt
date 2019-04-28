@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-freeze"
-version := "0.1-dt-20180214Z-dbc580"
+version := "0.1-dt-20180214Z-40be84"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

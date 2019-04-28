@@ -40,9 +40,6 @@ object lodashLibStrings {
   sealed trait LodashMapValues6x1 extends js.Object
   
   @js.native
-  sealed trait PartialDeep extends js.Object
-  
-  @js.native
   sealed trait asc extends js.Object
   
   @js.native
@@ -70,8 +67,6 @@ object lodashLibStrings {
   def LodashMapValues3x1: LodashMapValues3x1 = "LodashMapValues3x1".asInstanceOf[LodashMapValues3x1]
   @scala.inline
   def LodashMapValues6x1: LodashMapValues6x1 = "LodashMapValues6x1".asInstanceOf[LodashMapValues6x1]
-  @scala.inline
-  def PartialDeep: PartialDeep = "PartialDeep".asInstanceOf[PartialDeep]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline

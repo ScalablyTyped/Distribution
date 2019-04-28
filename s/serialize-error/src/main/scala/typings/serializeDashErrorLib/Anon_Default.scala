@@ -19,6 +19,6 @@ trait Anon_Default extends js.Object {
   	//=> {name: 'Error', message: '🦄', stack: 'Error: 🦄\n    at Object.<anonymous> …'}
   	```
   	*/
-  def apply[ErrorType](error: ErrorType): serializeDashErrorLib.serializeDashErrorMod.serializeErrorNs.ErrorObject | ErrorType = js.native
+  def apply[ErrorType](error: ErrorType): serializeDashErrorLib.serializeDashErrorMod.ErrorObject | ErrorType = js.native
 }
 

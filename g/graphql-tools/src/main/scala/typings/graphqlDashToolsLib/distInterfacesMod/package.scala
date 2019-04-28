@@ -40,9 +40,6 @@ package object distInterfacesMod {
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
   ]
   type IMocks = org.scalablytyped.runtime.StringDictionary[IMockFn]
-  type IResolverObject[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[
-    (IFieldResolver[TSource, TContext, TArgs]) | (IResolverOptions[TSource, TContext, js.Any]) | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias graphql-tools.graphql-tools/dist/Interfaces.IResolverObject<TSource, TContext, any> */ js.Object)
-  ]
   type IResolvers[TSource, TContext] = org.scalablytyped.runtime.StringDictionary[
     js.Function0[js.Any] | (IResolverObject[TSource, TContext, js.Any]) | (IResolverOptions[TSource, TContext, js.Any]) | graphqlLib.graphqlMod.GraphQLScalarType | IEnumResolver
   ]

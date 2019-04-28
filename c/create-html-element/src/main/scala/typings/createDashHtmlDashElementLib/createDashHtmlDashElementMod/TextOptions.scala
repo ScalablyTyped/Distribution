@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextOptions extends js.Object {
+  /**
+  		HTML tag value in escaped HTML.
+  		*/
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object pendoDashIoDashBrowserLibStrings {
   @js.native
-  sealed trait Events extends js.Object
-  
-  @js.native
   sealed trait No extends js.Object
   
   @js.native
@@ -60,8 +57,6 @@ object pendoDashIoDashBrowserLibStrings {
   @js.native
   sealed trait staged extends js.Object
   
-  @scala.inline
-  def Events: Events = "Events".asInstanceOf[Events]
   @scala.inline
   def No: No = "No".asInstanceOf[No]
   @scala.inline

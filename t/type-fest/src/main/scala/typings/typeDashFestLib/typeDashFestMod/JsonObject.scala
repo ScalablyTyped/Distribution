@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JsonObject
-  extends _JsonValue
-     with /* key */ org.scalablytyped.runtime.StringDictionary[JsonValue]
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[JsonValue]
+     with _JsonValue
 
 object JsonObject {
   @scala.inline

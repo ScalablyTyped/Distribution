@@ -75,5 +75,16 @@ trait Anon_Default extends js.Object {
       scala.Unit
     ]
   ): ObjectType = js.native
+  def apply[ObjectType /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
+    `object`: ObjectType,
+    onChange: js.ThisFunction3[
+      /* this */ ObjectType, 
+      /* path */ java.lang.String, 
+      /* value */ js.Any, 
+      /* previousValue */ js.Any, 
+      scala.Unit
+    ],
+    options: onDashChangeLib.onDashChangeMod.Options
+  ): ObjectType = js.native
 }
 

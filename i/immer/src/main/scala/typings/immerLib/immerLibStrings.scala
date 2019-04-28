@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object immerLibStrings {
   @js.native
-  sealed trait DraftTuple extends js.Object
-  
-  @js.native
   sealed trait Immutable extends js.Object
   
   @js.native
@@ -24,8 +21,6 @@ object immerLibStrings {
   @js.native
   sealed trait replace extends js.Object
   
-  @scala.inline
-  def DraftTuple: DraftTuple = "DraftTuple".asInstanceOf[DraftTuple]
   @scala.inline
   def Immutable: Immutable = "Immutable".asInstanceOf[Immutable]
   @scala.inline

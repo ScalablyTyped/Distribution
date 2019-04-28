@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object seamlessDashImmutableMod {
-  type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? object}
-    */ seamlessDashImmutableLib.seamlessDashImmutableLibStrings.DeepPartial with js.Any
   type Immutable[T, O /* <: js.Object */] = (seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableNs.MakeImmutable[T, O]) | (js.Promise[
     seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableNs.MakeImmutable[js.Any, O]
   ])

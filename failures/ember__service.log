@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(service)) [id => @ember/service, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibraryScoped(ember,Some(service)) [id => @ember/service, phase => typescript] 
 [info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibraryScoped(ember,Some(service)), TsIdentModule(Some(ember),List(service)), TsIdentSimple(Registry))) [id => @ember/service, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclFunction(inject) / TsFunSig() / TsTypeParam() / TsTypeKeyOf())] 
-[info ] PreferTypeAlias.scala:49 Simplified to type alias [id => @ember/service, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclInterface(Service))] 
+[info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/service, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclInterface(Service))] 
 [debug] PhaseRunner.scala:82 Success [id => @ember/service, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing @ember/service [id => @ember/service, phase => scala.js] 
 [info ] ImportType.scala:223 Failed type conversion: @ember/service.@ember/service.Registry[K] [id => @ember/service, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/service) / TsDeclFunction(inject) / TsTypeIntersect() / TsTypeRef() / TsTypeLookup())] 

@@ -22,12 +22,6 @@ object atPulumiPulumiLibStrings {
   sealed trait `DOLLAR{VERSION}` extends js.Object
   
   @js.native
-  sealed trait LiftedObject extends js.Object
-  
-  @js.native
-  sealed trait UnwrappedObject extends js.Object
-  
-  @js.native
   sealed trait c44067f5952c0a294b673a41bacd8c17 extends js.Object
   
   @js.native
@@ -43,10 +37,6 @@ object atPulumiPulumiLibStrings {
   def `4dabf18193072939515e22adb298388d`: `4dabf18193072939515e22adb298388d` = "4dabf18193072939515e22adb298388d".asInstanceOf[`4dabf18193072939515e22adb298388d`]
   @scala.inline
   def `DOLLAR{VERSION}`: `DOLLAR{VERSION}` = "${VERSION}".asInstanceOf[`DOLLAR{VERSION}`]
-  @scala.inline
-  def LiftedObject: LiftedObject = "LiftedObject".asInstanceOf[LiftedObject]
-  @scala.inline
-  def UnwrappedObject: UnwrappedObject = "UnwrappedObject".asInstanceOf[UnwrappedObject]
   @scala.inline
   def c44067f5952c0a294b673a41bacd8c17: c44067f5952c0a294b673a41bacd8c17 = "c44067f5952c0a294b673a41bacd8c17".asInstanceOf[c44067f5952c0a294b673a41bacd8c17]
   @scala.inline
