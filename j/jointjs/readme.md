@@ -1,3 +1,39 @@
+
+# Scala.js typings for jointjs
+
+Typings are for version 2.2.1
+
+## Library description:
+JavaScript diagramming library
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | jointjs |
+| Keywords           | diagram, flowchart, graph, visualization |
+| # releases         | 10 |
+| # dependents       | 19 |
+| # downloads        | 168568 |
+| # stars            | 4 |
+
+## Links
+- [Homepage](http://jointjs.com)
+- [Bugs](https://github.com/clientIO/joint/issues)
+- [Repository](https://github.com/clientIO/joint)
+- [Npm](https://www.npmjs.com/package/jointjs)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /*! JointJS v2.2.1 (2018-11-12) - JavaScript diagramming library
 
@@ -15,4 +51,6 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
 // Michael MacFadden https://github.com/mmacfadden
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // typings: https://github.com/CaselIT/typings-jointjs
+
 ```
+

@@ -1,3 +1,39 @@
+
+# Scala.js typings for react-native
+
+Typings are for version 0.57
+
+## Library description:
+A framework for building native apps using React
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | react-native |
+| Keywords           | - |
+| # releases         | 125 |
+| # dependents       | 1160 |
+| # downloads        | 11088948 |
+| # stars            | 92 |
+
+## Links
+- [Homepage](https://github.com/facebook/react-native#readme)
+- [Bugs](https://github.com/facebook/react-native/issues)
+- [Repository](https://github.com/facebook/react-native)
+- [Npm](https://www.npmjs.com/package/react-native)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for react-native 0.57
 // Project: https://github.com/facebook/react-native
@@ -26,21 +62,16 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 // USING: these definitions are meant to be used with the TSC compiler target set to at least ES2015.
-//
 // USAGE EXAMPLES: check the RNTSExplorer project at https://github.com/bgrieder/RNTSExplorer
-//
 // CONTRIBUTING: please open pull requests
-//
 // CREDITS: This work is based on an original work made by Bernd Paradies: https://github.com/bparadie
-//
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
  * This file is necessary to declare global functions that might also be included by `--lib dom`.
  * Due to a TypeScript bug, these cannot be placed inside a `declare global` block in index.d.ts.
  * https://github.com/Microsoft/TypeScript/issues/16430
  */
 
-//
 // Timer Functions
-//
+
 ```
+

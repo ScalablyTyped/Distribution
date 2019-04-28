@@ -1,7 +1,45 @@
+
+# Scala.js typings for counterpart
+
+Typings are for version 0.18
+
+## Library description:
+A translation and localization library for Node.js and the browser
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | counterpart |
+| Keywords           | globalization, g11n, internationalization, i18n, localization, l10n, translation, translate, localize |
+| # releases         | 9 |
+| # dependents       | 13 |
+| # downloads        | 250960 |
+| # stars            | 2 |
+
+## Links
+- [Homepage](https://github.com/martinandert/counterpart)
+- [Bugs](https://github.com/martinandert/counterpart/issues)
+- [Repository](https://github.com/martinandert/counterpart)
+- [Npm](https://www.npmjs.com/package/counterpart)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for counterpart 0.18
 // Project: https://github.com/martinandert/counterpart
 // Definitions by: santiagodoldan <https://github.com/santiagodoldan>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
+
 ```
+

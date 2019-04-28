@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object siftMod {
+  type ElemMatch[T /* <: org.scalablytyped.runtime.StringDictionary[js.Array[_]] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? sift.sift.SiftQuery<T[P]>}
+    */ siftLib.siftLibStrings.ElemMatch with T
   type Exec = js.Function1[/* array */ SupportedTypes, SupportedTypes]
   type ExternalQuery[T /* <: SupportedTypes */] = ElemMatch[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any]
   type FilterFn = js.Function3[

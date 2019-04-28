@@ -1,3 +1,39 @@
+
+# Scala.js typings for lodash
+
+Typings are for version 4.14
+
+## Library description:
+Lodash modular utilities.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | lodash |
+| Keywords           | modules, stdlib, util |
+| # releases         | 5 |
+| # dependents       | 63877 |
+| # downloads        | 921030492 |
+| # stars            | 1475 |
+
+## Links
+- [Homepage](https://lodash.com/)
+- [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
+- [Npm](https://www.npmjs.com/package/lodash)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // AUTO-GENERATED: do not modify this file directly.
 // If you need to make changes, modify generate-fp.ts (if necessary), then open a terminal in types/lodash/scripts, and do:
@@ -15,4 +51,6 @@
 //                 Dominique Rau <https://github.com/DomiR>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
+
 ```
+

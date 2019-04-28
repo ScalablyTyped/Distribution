@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object apolloDashEnvLibStrings {
   @js.native
+  sealed trait DeepPartial extends js.Object
+  
+  @js.native
   sealed trait Empty
     extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
@@ -100,6 +103,8 @@ object apolloDashEnvLibStrings {
   sealed trait `unsafe-url`
     extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
+  @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline

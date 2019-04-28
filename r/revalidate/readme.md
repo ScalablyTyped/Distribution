@@ -1,3 +1,39 @@
+
+# Scala.js typings for revalidate
+
+Typings are for version 1.1
+
+## Library description:
+Elegant and composable validations
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | revalidate |
+| Keywords           | functional, validation, validate, form |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 279287 |
+| # stars            | 2 |
+
+## Links
+- [Homepage](https://github.com/jfairbank/revalidate#readme)
+- [Bugs](https://github.com/jfairbank/revalidate/issues)
+- [Repository](https://github.com/jfairbank/revalidate)
+- [Npm](https://www.npmjs.com/package/revalidate)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for revalidate 1.1
 // Project: https://github.com/jfairbank/revalidate
@@ -12,4 +48,6 @@
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 // TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ```
+

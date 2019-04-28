@@ -14,5 +14,8 @@ package object ArangoDBNs {
   type DocumentIterator[T /* <: js.Object */] = js.Function2[/* document */ Document[T], /* number */ scala.Double, scala.Unit]
   type Edge[T /* <: js.Object */] = Document[T] with arangodbLib.Anon_FromTo
   type EdgeCollectionType = arangodbLib.arangodbLibNumbers.`3`
+  type Patch[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? T[K] | object}
+    */ arangodbLib.arangodbLibStrings.Patch with T
   type ViewType = arangodbLib.arangodbLibStrings.arangosearch
 }

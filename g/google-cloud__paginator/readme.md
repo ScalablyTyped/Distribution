@@ -1,3 +1,39 @@
+
+# Scala.js typings for google-cloud__paginator
+
+Typings are for version 0.2.0
+
+## Library description:
+A result paging utility used by Google node.js modules
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @google-cloud/paginator |
+| Keywords           | - |
+| # releases         | 5 |
+| # dependents       | 13 |
+| # downloads        | 8549796 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/googleapis/nodejs-paginator#readme)
+- [Bugs](https://github.com/googleapis/nodejs-paginator/issues)
+- [Repository](https://github.com/googleapis/nodejs-paginator)
+- [Npm](https://www.npmjs.com/package/%40google-cloud%2Fpaginator)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /*!
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -14,4 +50,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 ```
+

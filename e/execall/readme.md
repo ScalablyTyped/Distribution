@@ -1,6 +1,44 @@
+
+# Scala.js typings for execall
+
+Typings are for version 1.0
+
+## Library description:
+Find multiple RegExp matches in a string
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | execall |
+| Keywords           | regex, regexp, regular, expression, exec, match, matches, execall, all, find, findall, immutable, string, multiple, many, global |
+| # releases         | 2 |
+| # dependents       | 29 |
+| # downloads        | 28093418 |
+| # stars            | 1 |
+
+## Links
+- [Homepage](https://github.com/sindresorhus/execall#readme)
+- [Bugs](https://github.com/sindresorhus/execall/issues)
+- [Repository](https://github.com/sindresorhus/execall)
+- [Npm](https://www.npmjs.com/package/execall)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for execall 1.0
 // Project: https://github.com/sindresorhus/execall
 // Definitions by: BendingBender <https://github.com/BendingBender>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

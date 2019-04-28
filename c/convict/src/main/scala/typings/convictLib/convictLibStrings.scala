@@ -17,6 +17,9 @@ object convictLibStrings {
   sealed trait Overwrite extends js.Object
   
   @js.native
+  sealed trait Schema extends js.Object
+  
+  @js.native
   sealed trait duration
     extends convictLib.convictMod._PredefinedFormat
   
@@ -70,6 +73,8 @@ object convictLibStrings {
   def InternalSchema: InternalSchema = "InternalSchema".asInstanceOf[InternalSchema]
   @scala.inline
   def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
+  @scala.inline
+  def Schema: Schema = "Schema".asInstanceOf[Schema]
   @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
   @scala.inline

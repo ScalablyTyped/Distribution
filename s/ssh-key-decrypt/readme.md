@@ -1,6 +1,44 @@
+
+# Scala.js typings for ssh-key-decrypt
+
+Typings are for version 0.1
+
+## Library description:
+Decrypt encrypted ssh private keys
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | ssh-key-decrypt |
+| Keywords           | ssh, key, decrypt, pem, openssl, aes, aes129, aes256, aes128, des3, 3des, des, des-ede3-cbc, passphrase |
+| # releases         | 0 |
+| # dependents       | 1 |
+| # downloads        | 11989 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/isaacs/ssh-key-decrypt#readme)
+- [Bugs](https://github.com/isaacs/ssh-key-decrypt/issues)
+- [Repository](https://github.com/isaacs/ssh-key-decrypt)
+- [Npm](https://www.npmjs.com/package/ssh-key-decrypt)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for ssh-key-decrypt 0.1
 // Project: https://github.com/isaacs/ssh-key-decrypt#readme
 // Definitions by: BendingBender <https://github.com/BendingBender>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

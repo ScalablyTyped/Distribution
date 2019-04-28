@@ -1,7 +1,42 @@
+
+# Scala.js typings for guardian__prosemirror-invisibles
+
+Typings are for version 1.2
+
+## Library description:
+A plugin to show invisibles in prosemirror
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @guardian/prosemirror-invisibles |
+| Keywords           | - |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 510 |
+| # stars            | 0 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/%40guardian%2Fprosemirror-invisibles)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for @guardian/prosemirror-invisibles 1.2
 // Project: https://github.com/guardian/prosemirror-invisibles
 // Definitions by: Daniil Dotsev <https://github.com/dddotsev>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
+
 ```
+

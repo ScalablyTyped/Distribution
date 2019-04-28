@@ -1,3 +1,39 @@
+
+# Scala.js typings for adlib
+
+Typings are for version 3.0
+
+## Library description:
+Templating for deep JSON object graphs
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | adlib |
+| Keywords           | arcgis, json, templating |
+| # releases         | 27 |
+| # dependents       | 2 |
+| # downloads        | 9984 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://arcgis.github.io/ember-arcgis-adlib-service)
+- [Bugs](https://github.com/Esri/adlib/issues)
+- [Repository](https://github.com/Esri/adlib)
+- [Npm](https://www.npmjs.com/package/adlib)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for adlib 3.0
 // Project: https://github.com/Esri/adlib, https://arcgis.github.io/ember-arcgis-adlib-service
@@ -32,4 +68,6 @@
  * to delete if the value is not found (default is 0--just the current level);
  * see https://github.com/Esri/adlib#optional-transform
  */
+
 ```
+

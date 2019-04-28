@@ -1,6 +1,44 @@
+
+# Scala.js typings for plugin-error
+
+Typings are for version 0.1
+
+## Library description:
+Error handling for Vinyl plugins.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | plugin-error |
+| Keywords           | error, plugin, gulp-util |
+| # releases         | 3 |
+| # dependents       | 719 |
+| # downloads        | 54429331 |
+| # stars            | 1 |
+
+## Links
+- [Homepage](https://github.com/gulpjs/plugin-error#readme)
+- [Bugs](https://github.com/gulpjs/plugin-error/issues)
+- [Repository](https://github.com/gulpjs/plugin-error)
+- [Npm](https://www.npmjs.com/package/plugin-error)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for plugin-error 0.1
 // Project: https://github.com/gulpjs/plugin-error
 // Definitions by: Rogier Schouten <https://github.com/rogierschouten>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

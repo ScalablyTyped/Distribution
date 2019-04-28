@@ -1,3 +1,39 @@
+
+# Scala.js typings for yargs
+
+Typings are for version 13.0
+
+## Library description:
+yargs the modern, pirate-themed, successor to optimist.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | yargs |
+| Keywords           | argument, args, option, parser, parsing, cli, command |
+| # releases         | 35 |
+| # dependents       | 11542 |
+| # downloads        | 1059089785 |
+| # stars            | 508 |
+
+## Links
+- [Homepage](https://yargs.js.org/)
+- [Bugs](https://github.com/yargs/yargs/issues)
+- [Repository](https://github.com/yargs/yargs)
+- [Npm](https://www.npmjs.com/package/yargs)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for yargs 13.0
 // Project: https://github.com/chevex/yargs, https://yargs.js.org
@@ -22,4 +58,6 @@
 //    thus it's preferred to use `command: string | ReadonlyArray<string>`
 // Use parameterless declaration instead of declaring all parameters optional,
 // when all parameters are optional and more than one
+
 ```
+

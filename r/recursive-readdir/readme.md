@@ -1,6 +1,44 @@
+
+# Scala.js typings for recursive-readdir
+
+Typings are for version 2.2
+
+## Library description:
+Get an array of all files in a directory and subdirectories.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | recursive-readdir |
+| Keywords           | directory, lister |
+| # releases         | 4 |
+| # dependents       | 1101 |
+| # downloads        | 79188358 |
+| # stars            | 34 |
+
+## Links
+- [Homepage](https://github.com/jergason/recursive-readdir#readme)
+- [Bugs](https://github.com/jergason/recursive-readdir/issues)
+- [Repository](https://github.com/jergason/recursive-readdir)
+- [Npm](https://www.npmjs.com/package/recursive-readdir)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for recursive-readdir 2.2
 // Project: https://github.com/jergason/recursive-readdir/
 // Definitions by: Elisée Maurer <https://github.com/elisee>, Micah Zoltu <https://github.com/MicahZoltu>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

@@ -1,3 +1,20 @@
+
+# Scala.js typings for estree
+
+
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for ESTree AST specification
 // Project: https://github.com/estree/estree
@@ -16,8 +33,9 @@
 // types, a base type which passes down inhereted fields, and a type union of
 // all types which extend the base type. Only the type union is exported, and
 // the union is how other types refer to the collection of inheriting types.
-//
 // This makes the definitions file here somewhat more difficult to maintain,
 // but it has the notable advantage of making ESTree much easier to use as
 // an end user.
+
 ```
+

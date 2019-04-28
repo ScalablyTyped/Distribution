@@ -1,3 +1,39 @@
+
+# Scala.js typings for angular__animations
+
+Typings are for version 7.2.14
+
+## Library description:
+Angular - animations integration with web-animations
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @angular/animations |
+| Keywords           | - |
+| # releases         | 183 |
+| # dependents       | 3565 |
+| # downloads        | 68733585 |
+| # stars            | 10 |
+
+## Links
+- [Homepage](https://github.com/angular/angular#readme)
+- [Bugs](https://github.com/angular/angular/issues)
+- [Repository](https://github.com/angular/angular)
+- [Npm](https://www.npmjs.com/package/%40angular%2Fanimations)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /**
  * Generated bundle index. Do not edit.
@@ -10,30 +46,9 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
  * @module
  * @description
  * Entry point for all public APIs of this package.
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
  */
 /**
  * An instance of this class is returned as an event parameter when an animation
@@ -67,33 +82,12 @@
  * @publicApi
  */
 /**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
  * Represents a set of CSS styles for use in an animation style.
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
  */
 /**
  * @module
  * @description
  * Entry point for all animation APIs of the animation package.
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
  */
 /**
  * Provides programmatic control of a reusable animation sequence,
@@ -106,11 +100,6 @@
  *
  * @publicApi
  */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
+
 ```
+

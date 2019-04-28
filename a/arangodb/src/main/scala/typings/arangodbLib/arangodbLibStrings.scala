@@ -1247,6 +1247,9 @@ object arangodbLibStrings {
     extends arangodbLib.ArangoDBNs.HttpMethod
   
   @js.native
+  sealed trait Patch extends js.Object
+  
+  @js.native
   sealed trait SIMPLE_CLIENT_COULD_NOT_CONNECT
     extends arangodbLib.ArangoDBNs.ErrorName
   
@@ -2266,6 +2269,8 @@ object arangodbLibStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
+  def Patch: Patch = "Patch".asInstanceOf[Patch]
   @scala.inline
   def SIMPLE_CLIENT_COULD_NOT_CONNECT: SIMPLE_CLIENT_COULD_NOT_CONNECT = "SIMPLE_CLIENT_COULD_NOT_CONNECT".asInstanceOf[SIMPLE_CLIENT_COULD_NOT_CONNECT]
   @scala.inline

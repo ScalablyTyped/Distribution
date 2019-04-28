@@ -4,6 +4,18 @@
 [debug] PhaseRunner.scala:82 Success [id => dhtmlxgantt, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing dhtmlxgantt [id => dhtmlxgantt, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => dhtmlxgantt, phase => scala.js] 
+[warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => build] gigahorse.StatusError: Unexpected status: 404
+	at gigahorse.StatusError$.apply(StatusError.scala:29)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
+	at gigahorse.support.okhttp.OkHandler$FullOkHandler.onStatusReceived(OkHandler.scala:31)
+	at gigahorse.support.okhttp.OkhClient$$anon$1.onResponse(OkhClient.scala:163)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:141)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
 [error] ganttMod.scala:15 ganttMod is already defined as object ganttMod, object ganttMod [id => dhtmlxgantt, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => publish] 

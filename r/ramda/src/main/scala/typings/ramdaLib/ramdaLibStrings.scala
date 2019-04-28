@@ -16,6 +16,12 @@ object ramdaLibStrings {
   sealed trait CleanedGaps extends js.Object
   
   @js.native
+  sealed trait Evolvable extends js.Object
+  
+  @js.native
+  sealed trait Evolve extends js.Object
+  
+  @js.native
   sealed trait Function extends js.Object
   
   @js.native
@@ -51,6 +57,10 @@ object ramdaLibStrings {
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   @scala.inline
   def CleanedGaps: CleanedGaps = "CleanedGaps".asInstanceOf[CleanedGaps]
+  @scala.inline
+  def Evolvable: Evolvable = "Evolvable".asInstanceOf[Evolvable]
+  @scala.inline
+  def Evolve: Evolve = "Evolve".asInstanceOf[Evolve]
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
   @scala.inline

@@ -1,92 +1,53 @@
+
+# Scala.js typings for tstl
+
+Typings are for version 2.1.2
+
+## Library description:
+TypeScript-STL (Standard Template Library, migrated from C++)
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | tstl |
+| Keywords           | tstl, typescript stl, typescript standard template library, container, iterator, algorithm, functor, exception, functional, utility, thread, numeric, special_math, vector, deque, list, forward_list, stack, queue, priority_queue, set, multiset, unordered_set, unordered_multiset, map, multimap, unordered_map, unordered_multimap, TreeSet, TreeMultiSet, HashSet, HashMultiSet, TreeMap, TreeMultiMap, HashMap, HashMultiMap, mutex, shared_mutex, timed_mutex, shared_timed_mutex, unique_lock, shared_lock, semaphore, timed_semaphore, latch, barrier, flex_barrier |
+| # releases         | 214 |
+| # dependents       | 11 |
+| # downloads        | 59912 |
+| # stars            | 1 |
+
+## Links
+- [Homepage](https://github.com/samchon/tstl)
+- [Bugs](https://github.com/samchon/tstl/issues)
+- [Repository](https://github.com/samchon/tstl)
+- [Npm](https://www.npmjs.com/package/tstl)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /** @module std */
 /** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
 /**
  * @hidden
  */
-/** @module std.base */
-/**
- * @hidden
- */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/** @module std.base */
-/**
- * @hidden
- */
-/** @module std.base */
-/**
- * @hidden
- */
-/** @module std.base */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
 /**
  * Base Exception.
  *
  * @author Jeongho Nam <http://samchon.org>
  */
-/** @module std */
-/** @module std */
-/** @module std */
 /**
  * Terminate program.
  */
-/** @module std */
-/** @module std.experimental */
-/** @module std.experimental */
 /** @module std.experimental */
 /**
  * Flex Barrier for critical sections.
@@ -100,22 +61,16 @@
  *
  * The Latch class blocks critical sections until the downward counter to be zero.
  */
-/** @module std.experimental */
-/** @module std.experimental */
-/** @module std.experimental */
-/** @module std */
 /**
  * Interface for comparison.
  *
  * @author Jeongho Nam <http://samchon.org>
  */
-/** @module std */
 /**
  * Pointer referencing value.
  *
  * @author Jeongho Nam <http://samchon.org>
  */
-/** @module std */
 /**
  * Test whether two arguments are equal.
  *
@@ -129,36 +84,15 @@
  * @param items The items to be hashed.
  * @return The hash code.
  */
-/** @module std */
 /**
  * Get unique identifier.
  *
  * @param obj Target object.
  * @return The identifier number.
  */
-/** @module std */
 /**
  * Basic, internal features.
  */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/**
- * @hidden
- */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
 /**
  * Bessel function of the 1st kind.
  *
@@ -177,7 +111,6 @@
 /**
  * Exponential integral.
  */
-/** @module std */
 /**
  * Gamma function.
  *
@@ -188,7 +121,6 @@
  *
  * @reference https://en.wikipedia.org/wiki/Hermite_polynomials
  */
-/** @module std */
 /**
  * Laguerre polynomials.
  *
@@ -209,33 +141,21 @@
  *
  * @author Jeongho Nam <http://samchon.org>
  */
-/** @module std */
 /**
  * Lockable object.
  *
  * @author Jeongho Nam <http://samchon.org>
  */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
-/** @module std */
 /**
  * Pair of two elements.
  *
  * @author Jeongho Nam <http://samchon.org>
  */
-/** @module std */
-/** @module std */
 /**
  * Test whether the code is running on NodeJS.
  *
  * @return Whether NodeJS or not.
  */
+
 ```
+

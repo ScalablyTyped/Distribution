@@ -1,3 +1,39 @@
+
+# Scala.js typings for condense-whitespace
+
+Typings are for version 2.0.0
+
+## Library description:
+Remove leading, trailing, and repeated whitespace from a string
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | condense-whitespace |
+| Keywords           | whitespace, space, condense, collapse, compact, repeated, string, trim, remove, strip |
+| # releases         | 0 |
+| # dependents       | 26 |
+| # downloads        | 383713 |
+| # stars            | 3 |
+
+## Links
+- [Homepage](https://github.com/sindresorhus/condense-whitespace#readme)
+- [Bugs](https://github.com/sindresorhus/condense-whitespace/issues)
+- [Repository](https://github.com/sindresorhus/condense-whitespace)
+- [Npm](https://www.npmjs.com/package/condense-whitespace)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /**
 Remove leading, trailing, and repeated whitespace from a string.
@@ -10,4 +46,6 @@ condenseWhitespace('  foo bar     baz ');
 //=> 'foo bar baz'
 ```
 */
+
 ```
+

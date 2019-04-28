@@ -1,7 +1,45 @@
+
+# Scala.js typings for mockjs
+
+Typings are for version 1.0
+
+## Library description:
+生成随机数据 & 拦截 Ajax 请求
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | mockjs |
+| Keywords           | mock, mockJSON, mockAjax |
+| # releases         | 1 |
+| # dependents       | 373 |
+| # downloads        | 795689 |
+| # stars            | 19 |
+
+## Links
+- [Homepage](http://mockjs.com/)
+- [Bugs](https://github.com/nuysoft/Mock/issues)
+- [Repository](https://github.com/nuysoft/Mock)
+- [Npm](https://www.npmjs.com/package/mockjs)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for mockjs 1.0
 // Project: http://mockjs.com/
 // Definitions by: lavyun <httpS://github.com/lavyun>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
+
 ```
+

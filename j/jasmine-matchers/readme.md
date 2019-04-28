@@ -1,3 +1,39 @@
+
+# Scala.js typings for jasmine-matchers
+
+Typings are for version v0.2.1
+
+## Library description:
+Extends the matchers jasmine provides.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | jasmine-matchers |
+| Keywords           | - |
+| # releases         | 1 |
+| # dependents       | 2 |
+| # downloads        | 31161 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/uxebu/jasmine-matchers/)
+- [Bugs](https://github.com/uxebu/jasmine-matchers/issues)
+- [Repository](https://github.com/uxebu/jasmine-matchers)
+- [Npm](https://www.npmjs.com/package/jasmine-matchers)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for jasmine-matchers v0.2.1
 // Project: https://github.com/uxebu/jasmine-matchers
@@ -20,4 +56,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+
 ```
+

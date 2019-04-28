@@ -1,3 +1,39 @@
+
+# Scala.js typings for uirouter__core
+
+Typings are for version 5.0.23
+
+## Library description:
+UI-Router Core: Framework agnostic, State-based routing for JavaScript Single Page Apps
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @uirouter/core |
+| Keywords           | - |
+| # releases         | 26 |
+| # dependents       | 12 |
+| # downloads        | 5948531 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://ui-router.github.io)
+- [Bugs](https://github.com/ui-router/core/issues)
+- [Repository](https://github.com/ui-router/core)
+- [Npm](https://www.npmjs.com/package/%40uirouter%2Fcore)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /**
  * This module is a stub for core services such as Dependency Injection or Browser Location.
@@ -60,41 +96,28 @@
  * These utility functions are exported, but are subject to change without notice.
  *
  * @module common_hof
- */ /** */
-/** @publicapi @module common */ /** */
-/**
+ */ /** @publicapi @module common */ /**
  * Functions that manipulate strings
  *
  * Although these functions are exported, they are subject to change without notice.
  *
  * @module common_strings
- */ /** */
-/** @publicapi @module core */ /** */
-/** @publicapi @module common */ /** */
-/**
+ */ /** @publicapi @module core */ /**
  * # Core classes and interfaces
  *
  * The classes and interfaces that are core to ui-router and do not belong
  * to a more specific subsystem (such as resolve).
  *
  * @preferred @publicapi @module core
- */ /** */
-/**
+ */ /**
  * This module contains code for State Parameters.
  *
  * See [[ParamDeclaration]]
  *
  * @preferred @publicapi @module params
- */ /** */
-/** @publicapi @module params */ /** */
-/** @publicapi @module params */ /** */
-/** @internalapi @module path */ /** */
-/** @internalapi @module path */ /** */
-/** @publicapi @module resolve */ /** */
-/**
+ */ /** @publicapi @module params */ /** @internalapi @module path */ /** @publicapi @module resolve */ /**
  * An interface which is similar to an Angular 2 `Provider`
  */
-/** @publicapi @module core */ /** */
 /**
  * # The state subsystem
  *
@@ -114,12 +137,7 @@
  *   - Get notified of state registration/deregistration using [[StateRegistry.onStatesChanged]].
  *
  * @preferred @publicapi @module state
- */ /** */
-/** @publicapi @module state */ /** */
-/** @publicapi @module state */ /** */
-/** @publicapi @module state */ /** */
-/** @publicapi @module state */ /** */
-/**
+ */ /** @publicapi @module state */ /**
  * # Transition subsystem
  *
  * This module contains APIs related to a Transition.
@@ -130,13 +148,7 @@
  * - [[HookFn]], [[TransitionHookFn]], [[TransitionStateHookFn]], [[HookMatchCriteria]], [[HookResult]]
  *
  * @preferred @publicapi @module transition
- */ /** */
-/** @publicapi @module transition */ /** */
-/** @publicapi @module transition */ /** */
-/** @publicapi @module transition */ /** */
-/** @publicapi @module transition */ /** */
-/** @publicapi @module url */ /** */
-/**
+ */ /** @publicapi @module transition */ /** @publicapi @module url */ /**
  * # URL subsystem
  *
  * Contains code related to managing the URL
@@ -144,26 +156,10 @@
  * The primary API is found in [[UrlService]], [[UrlService.config]], and [[UrlService.rules]].
  *
  * @preferred @publicapi @module url
- */ /** */
-/** @publicapi @module url */ /** */
-/** @publicapi @module url */ /** */
-/** @publicapi @module url */ /** */
-/** @publicapi @module url */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/**
+ */ /** @internalapi @module vanilla */ /**
  * Naive, pure JS implementation of core ui-router services
  *
  * @internalapi @module vanilla
- */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @internalapi @module vanilla */ /** */
-/** @publicapi @module view */ /** */
-/** @publicapi @module view */ /** */
-/** @publicapi @module view */ /** */
+ */ /** @publicapi @module view */ 
 ```
+

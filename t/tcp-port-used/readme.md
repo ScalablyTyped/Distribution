@@ -1,6 +1,43 @@
+
+# Scala.js typings for tcp-port-used
+
+Typings are for version 1.0
+
+## Library description:
+A simple Node.js module to check if a TCP port is already bound.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | tcp-port-used |
+| Keywords           | tcp, port, available, free, check, networking |
+| # releases         | 3 |
+| # dependents       | 78 |
+| # downloads        | 4122640 |
+| # stars            | 2 |
+
+## Links
+- [Homepage](https://github.com/stdarg/tcp-port-used)
+- [Repository](https://github.com/stdarg/tcp-port-used)
+- [Npm](https://www.npmjs.com/package/tcp-port-used)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for tcp-port-used 1.0
 // Project: https://github.com/stdarg/tcp-port-used
 // Definitions by: Gaute Johansen <https://github.com/gautejohan>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

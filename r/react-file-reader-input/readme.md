@@ -1,7 +1,45 @@
+
+# Scala.js typings for react-file-reader-input
+
+Typings are for version 1.1
+
+## Library description:
+React file input component for complete control over styling and abstraction from file reading.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | react-file-reader-input |
+| Keywords           | react, file, input, reader, component, react-component, filereader, file-reader, fake |
+| # releases         | 6 |
+| # dependents       | 10 |
+| # downloads        | 208948 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/ngokevin/react-file-reader-input)
+- [Bugs](https://github.com/ngokevin/react-file-reader-input/issues)
+- [Repository](https://github.com/ngokevin/react-file-reader-input)
+- [Npm](https://www.npmjs.com/package/react-file-reader-input)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for react-file-reader-input 1.1
 // Project: https://github.com/ngokevin/react-file-reader-input
 // Definitions by: Dmitry Rogozhny <https://github.com/dmitryrogozhny>, Ali Taheri <https://github.com/alitaheri>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
+
 ```
+

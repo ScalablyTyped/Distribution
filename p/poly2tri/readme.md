@@ -1,3 +1,39 @@
+
+# Scala.js typings for poly2tri
+
+Typings are for version 1.5.0
+
+## Library description:
+A 2D constrained Delaunay triangulation library
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | poly2tri |
+| Keywords           | 2D, constrained, Delaunay, triangulation, geometry, polygon, point, triangle, tessellation, Steiner |
+| # releases         | 1 |
+| # dependents       | 6 |
+| # downloads        | 20612 |
+| # stars            | 3 |
+
+## Links
+- [Homepage](https://github.com/r3mi/poly2tri.js)
+- [Bugs](https://github.com/r3mi/poly2tri.js/issues)
+- [Repository](https://github.com/r3mi/poly2tri.js)
+- [Npm](https://www.npmjs.com/package/poly2tri)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Bundled type definitions for poly2tri.js
 // Project: http://github.com/r3mi/poly2tri.js/
@@ -43,4 +79,6 @@
  * If you are not using a module system (e.g. CommonJS, RequireJS), you can access this library
  * as a global variable `poly2tri` i.e. `window.poly2tri` in a browser.
  */
+
 ```
+

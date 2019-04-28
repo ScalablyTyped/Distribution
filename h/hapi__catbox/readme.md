@@ -1,3 +1,39 @@
+
+# Scala.js typings for hapi__catbox
+
+Typings are for version 10.2
+
+## Library description:
+Multi-strategy object caching service
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @hapi/catbox |
+| Keywords           | cache, generic, adapter |
+| # releases         | 4 |
+| # dependents       | 2 |
+| # downloads        | 3573 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/hapijs/catbox#readme)
+- [Bugs](https://github.com/hapijs/catbox/issues)
+- [Repository](https://github.com/hapijs/catbox)
+- [Npm](https://www.npmjs.com/package/%40hapi%2Fcatbox)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for @hapi/catbox 10.2
 // Project: https://github.com/hapijs/catbox
@@ -18,4 +54,6 @@
  *    the Riak bucket, or as a key prefix in Redis and Memcached. To share the cache across multiple clients, use the same partition name.
  * @see {@link https://github.com/hapijs/catbox#client}
  */
+
 ```
+

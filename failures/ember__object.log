@@ -114,6 +114,18 @@
 [info ] CompleteClass.scala:62 Completed implementations Vector(isDestroyed, concatenatedProperties, isDestroying, willDestroy, _super, init, destroy) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(coreMod) / Name(default)] 
 [info ] CompleteClass.scala:62 Completed implementations Vector(__ember_mixin__) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(mixinMod) / Name(default)] 
 [debug] PhaseRunner.scala:82 Success [id => @ember/object, phase => scala.js] 
+[warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibraryScoped(ember,Some(object)) [id => @ember/object, phase => build] gigahorse.StatusError: Unexpected status: 404
+	at gigahorse.StatusError$.apply(StatusError.scala:29)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
+	at gigahorse.support.okhttp.OkHandler$FullOkHandler.onStatusReceived(OkHandler.scala:31)
+	at gigahorse.support.okhttp.OkhClient$$anon$1.onResponse(OkhClient.scala:163)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:141)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
 [error] ^.scala:117 method set is defined twice;
   the conflicting method set was defined at line 112:7,   def set[T, K /* <: java.lang.String */](obj: T, key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native [id => @ember/object, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [@ember/object => Compilation failed] [id => @ember/object, phase => build] 

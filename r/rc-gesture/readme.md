@@ -1,0 +1,34 @@
+
+# Scala.js typings for rc-gesture
+
+Typings are for version 0.0.22
+
+## Library description:
+Support gesture for react component
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | rc-gesture |
+| Keywords           | react, react-component, react-gesture, gesture, touch |
+| # releases         | 23 |
+| # dependents       | 12 |
+| # downloads        | 397121 |
+| # stars            | 2 |
+
+## Links
+- [Homepage](http://github.com/react-component/gesture/)
+- [Bugs](http://github.com/react-component/gesture/issues)
+- [Repository](https://github.com/react-component/gesture)
+- [Npm](https://www.npmjs.com/package/rc-gesture)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+

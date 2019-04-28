@@ -1,6 +1,44 @@
+
+# Scala.js typings for gulp-stylus
+
+Typings are for version 2.7
+
+## Library description:
+Stylus plugin for gulp
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | gulp-stylus |
+| Keywords           | gulp, stylus, css, preprocessor, gulpplugin, gulp-plugin |
+| # releases         | 2 |
+| # dependents       | 214 |
+| # downloads        | 920164 |
+| # stars            | 64 |
+
+## Links
+- [Homepage](http://github.com/stevelacy/gulp-stylus)
+- [Bugs](https://github.com/stevelacy/gulp-stylus/issues)
+- [Repository](https://github.com/stevelacy/gulp-stylus)
+- [Npm](https://www.npmjs.com/package/gulp-stylus)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for gulp-stylus 2.7
 // Project: http://github.com/stevelacy/gulp-stylus
 // Definitions by: Takesi Tokugawa <https://github.com/TokugawaTakesi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

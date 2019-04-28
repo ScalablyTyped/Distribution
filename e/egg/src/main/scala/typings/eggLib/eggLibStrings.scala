@@ -13,6 +13,9 @@ object eggLibStrings {
   sealed trait DENY extends js.Object
   
   @js.native
+  sealed trait PowerPartial extends js.Object
+  
+  @js.native
   sealed trait SAMEORIGIN extends js.Object
   
   @js.native
@@ -37,6 +40,8 @@ object eggLibStrings {
   def `ALLOW-FROM`: `ALLOW-FROM` = "ALLOW-FROM".asInstanceOf[`ALLOW-FROM`]
   @scala.inline
   def DENY: DENY = "DENY".asInstanceOf[DENY]
+  @scala.inline
+  def PowerPartial: PowerPartial = "PowerPartial".asInstanceOf[PowerPartial]
   @scala.inline
   def SAMEORIGIN: SAMEORIGIN = "SAMEORIGIN".asInstanceOf[SAMEORIGIN]
   @scala.inline

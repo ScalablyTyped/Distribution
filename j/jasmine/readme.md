@@ -1,3 +1,39 @@
+
+# Scala.js typings for jasmine
+
+Typings are for version 3.3
+
+## Library description:
+Command line jasmine
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | jasmine |
+| Keywords           | test, jasmine, tdd, bdd |
+| # releases         | 10 |
+| # dependents       | 477 |
+| # downloads        | 45583853 |
+| # stars            | 64 |
+
+## Links
+- [Homepage](http://jasmine.github.io/)
+- [Bugs](https://github.com/jasmine/jasmine-npm/issues)
+- [Repository](https://github.com/jasmine/jasmine-npm)
+- [Npm](https://www.npmjs.com/package/jasmine)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for Jasmine 3.3
 // Project: http://jasmine.github.io
@@ -15,4 +51,6 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 // For ddescribe / iit use : https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/karma-jasmine/karma-jasmine.d.ts
+
 ```
+

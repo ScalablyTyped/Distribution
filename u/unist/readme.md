@@ -1,3 +1,21 @@
+
+# Scala.js typings for unist
+
+Typings are for version 2.0
+
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for non-npm package Unist 2.0
 // Project: https://github.com/syntax-tree/unist
@@ -11,4 +29,6 @@
 /**
  * Syntactic units in unist syntax trees are called nodes.
  */
+
 ```
+

@@ -1,3 +1,20 @@
+
+# Scala.js typings for createjs-lib
+
+
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for CreateJS
 // Project: http://www.createjs.com/
@@ -14,4 +31,6 @@
 // Library documentation : http://www.createjs.com/Docs/PreloadJS/modules/PreloadJS.html
 // Library documentation : http://www.createjs.com/Docs/SoundJS/modules/SoundJS.html
 // Library documentation : http://www.createjs.com/Docs/TweenJS/modules/TweenJS.html
+
 ```
+

@@ -1,3 +1,21 @@
+
+# Scala.js typings for stripe-v3
+
+Typings are for version 3.1
+
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for stripe-v3 3.1
 // Project: https://stripe.com/
@@ -10,4 +28,6 @@
 //                 Stefan Langeder <https://github.com/slangeder>
 //                 Marlos Borges <https://github.com/marlosin>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

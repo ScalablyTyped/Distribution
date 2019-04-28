@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object formikLibStrings {
   @js.native
+  sealed trait FormikErrors extends js.Object
+  
+  @js.native
+  sealed trait FormikTouched extends js.Object
+  
+  @js.native
   sealed trait about extends js.Object
   
   @js.native
@@ -807,6 +813,10 @@ object formikLibStrings {
   @js.native
   sealed trait vocab extends js.Object
   
+  @scala.inline
+  def FormikErrors: FormikErrors = "FormikErrors".asInstanceOf[FormikErrors]
+  @scala.inline
+  def FormikTouched: FormikTouched = "FormikTouched".asInstanceOf[FormikTouched]
   @scala.inline
   def about: about = "about".asInstanceOf[about]
   @scala.inline

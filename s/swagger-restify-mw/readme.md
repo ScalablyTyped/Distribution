@@ -1,3 +1,39 @@
+
+# Scala.js typings for swagger-restify-mw
+
+Typings are for version 0.7
+
+## Library description:
+Swagger loader and middleware for Restify
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | swagger-restify-mw |
+| Keywords           | swagger, api, apis, restify |
+| # releases         | 1 |
+| # dependents       | 5 |
+| # downloads        | 30184 |
+| # stars            | 2 |
+
+## Links
+- [Homepage](https://github.com/apigee-127/swagger-restify#readme)
+- [Bugs](https://github.com/apigee-127/swagger-restify/issues)
+- [Repository](https://github.com/apigee-127/swagger-restify)
+- [Npm](https://www.npmjs.com/package/swagger-restify-mw)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for swagger-restify-mw 0.7
 // Project: https://github.com/apigee-127/swagger-restify#readme
@@ -29,4 +65,6 @@ SwaggerRestify.create(config, function(err, swaggerRestify) {
 
  =============================================== */
 
+
 ```
+

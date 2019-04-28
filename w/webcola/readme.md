@@ -1,0 +1,34 @@
+
+# Scala.js typings for webcola
+
+Typings are for version 3.3.9
+
+## Library description:
+WebCola =======
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | webcola |
+| Keywords           | Graph, Layout, Constraints, Optimization |
+| # releases         | 7 |
+| # dependents       | 15 |
+| # downloads        | 162030 |
+| # stars            | 3 |
+
+## Links
+- [Homepage](https://github.com/tgdwyer/WebCola)
+- [Bugs](https://github.com/tgdwyer/WebCola/issues)
+- [Repository](https://github.com/tgdwyer/WebCola)
+- [Npm](https://www.npmjs.com/package/webcola)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+

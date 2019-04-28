@@ -1,7 +1,45 @@
+
+# Scala.js typings for bootstrap-menu
+
+Typings are for version 1.0
+
+## Library description:
+Context menu plugin using Bootstrap's style
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | bootstrap-menu |
+| Keywords           | bootstrap, context, menu |
+| # releases         | 1 |
+| # dependents       | 2 |
+| # downloads        | 23637 |
+| # stars            | 1 |
+
+## Links
+- [Homepage](https://github.com/dgoguerra/bootstrap-menu)
+- [Bugs](https://github.com/dgoguerra/bootstrap-menu/issues)
+- [Repository](https://github.com/dgoguerra/bootstrap-menu)
+- [Npm](https://www.npmjs.com/package/bootstrap-menu)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for bootstrap-menu 1.0
 // Project: https://github.com/dgoguerra/bootstrap-menu
 // Definitions by: Alexandre Paré <https://github.com/superheri>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
+
 ```
+

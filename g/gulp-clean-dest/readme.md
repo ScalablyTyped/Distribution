@@ -1,6 +1,44 @@
+
+# Scala.js typings for gulp-clean-dest
+
+Typings are for version 0.2
+
+## Library description:
+A gulp plugin for removing files from the dest directory prior to building
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | gulp-clean-dest |
+| Keywords           | gulp, gulpplugin, delete, clean, remove, dest |
+| # releases         | 1 |
+| # dependents       | 2 |
+| # downloads        | 60591 |
+| # stars            | 2 |
+
+## Links
+- [Homepage](https://github.com/clark800/gulp-clean-dest)
+- [Bugs](https://github.com/clark800/gulp-clean-dest/issues)
+- [Repository](https://github.com/clark800/gulp-clean-dest)
+- [Npm](https://www.npmjs.com/package/gulp-clean-dest)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for gulp-clean-dest 0.2
 // Project: https://github.com/clark800/gulp-clean-dest
 // Definitions by: Andrey Lalev <https://github.com/andypyrope>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
 ```
+

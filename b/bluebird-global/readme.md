@@ -1,3 +1,39 @@
+
+# Scala.js typings for bluebird-global
+
+Typings are for version 3.5
+
+## Library description:
+Patches global.Promise to use bluebird and returns a bluebird instance
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | bluebird-global |
+| Keywords           | polyfill, promise-library, promise, performance, promises, promises-a, promises-aplus, async, await |
+| # releases         | 4 |
+| # dependents       | 9 |
+| # downloads        | 49625 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/kaatt/bluebird-global#readme)
+- [Bugs](https://github.com/kaatt/bluebird-global/issues)
+- [Repository](https://github.com/kaatt/bluebird-global)
+- [Npm](https://www.npmjs.com/package/bluebird-global)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for bluebird 3.5
 // Project: https://github.com/kaatt/bluebird-global
@@ -110,4 +146,6 @@
 /* /// <reference lib="es2015.promise" /> */
 /* /// <reference lib="es2018.promise" /> */
 
+
 ```
+

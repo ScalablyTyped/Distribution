@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object seamlessDashImmutableLibStrings {
   @js.native
+  sealed trait DeepPartial extends js.Object
+  
+  @js.native
   sealed trait ImmutableObject extends js.Object
   
   @js.native
@@ -90,6 +93,8 @@ object seamlessDashImmutableLibStrings {
   @js.native
   sealed trait unshift extends js.Object
   
+  @scala.inline
+  def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def ImmutableObject: ImmutableObject = "ImmutableObject".asInstanceOf[ImmutableObject]
   @scala.inline

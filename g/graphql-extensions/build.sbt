@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-extensions"
-version := "0.5.7-553a8f"
+version := "0.5.7-672dca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-e2388f",
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-b38978",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.3.1-ebac30",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.4.8-e89418",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.4.8-399c09",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-6b7729",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.1-26be16",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.3.7-87d797",

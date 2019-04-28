@@ -1,3 +1,39 @@
+
+# Scala.js typings for mongodb
+
+Typings are for version 3.1
+
+## Library description:
+The official MongoDB driver for Node.js
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | mongodb |
+| Keywords           | mongodb, driver, official |
+| # releases         | 48 |
+| # dependents       | 4404 |
+| # downloads        | 48504826 |
+| # stars            | 423 |
+
+## Links
+- [Homepage](https://github.com/mongodb/node-mongodb-native)
+- [Bugs](https://github.com/mongodb/node-mongodb-native/issues)
+- [Repository](https://github.com/mongodb/node-mongodb-native)
+- [Npm](https://www.npmjs.com/package/mongodb)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for MongoDB 3.1
 // Project: https://github.com/mongodb/node-mongodb-native
@@ -27,4 +63,6 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // Documentation: https://mongodb.github.io/node-mongodb-native/3.1/api/
+
 ```
+

@@ -1,3 +1,39 @@
+
+# Scala.js typings for fp-ts
+
+Typings are for version 1.15.1
+
+## Library description:
+Functional programming in TypeScript
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | fp-ts |
+| Keywords           | typescript, algebraic-data-types, functional-programming |
+| # releases         | 78 |
+| # dependents       | 106 |
+| # downloads        | 1759437 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/gcanti/fp-ts)
+- [Bugs](https://github.com/gcanti/fp-ts/issues)
+- [Repository](https://github.com/gcanti/fp-ts)
+- [Npm](https://www.npmjs.com/package/fp-ts)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 /**
  * @file The `Alt` type class identifies an associative operation on a type constructor.  It is similar to `Semigroup`, except
@@ -277,9 +313,6 @@
  * - Idempotency:   `a ∧ a = a`
  */
 /**
- * @since 1.4.0
- */
-/**
  * @file The `Monad` type class combines the operations of the `Chain` and
  * `Applicative` type classes. Therefore, `Monad` instances represent type
  * constructors which support sequential composition, and also lifting of
@@ -467,9 +500,6 @@
  * See [Getting started with fp-ts: Setoid](https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3)
  */
 /**
- * @since 1.0.0
- */
-/**
  * @file Adapted from https://github.com/purescript/purescript-maps
  */
 /**
@@ -588,4 +618,6 @@
  * - https://github.com/thunklife/purescript-zipper
  * - https://github.com/scalaz/scalaz/blob/series/7.3.x/core/src/main/scala/scalaz/Zipper.scala
  */
+
 ```
+

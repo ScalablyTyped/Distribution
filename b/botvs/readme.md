@@ -1,7 +1,41 @@
+
+# Scala.js typings for botvs
+
+Typings are for version 1.0.5
+
+
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | botvs |
+| Keywords           | - |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 733 |
+| # stars            | 0 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/botvs)
+    
+
+
+## Note
+This library has been generated from typescript code from first party type definitions.
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for botvs 0.1
 // Project: https://www.botvs.com/
 // Definitions by: acrazing <https://github.com/acrazing>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
+
 ```
+

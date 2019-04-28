@@ -1,7 +1,45 @@
+
+# Scala.js typings for stream-throttle
+
+Typings are for version 0.1
+
+## Library description:
+A rate limiter for Node.js streams.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | stream-throttle |
+| Keywords           | streams, throttling, ratelimit |
+| # releases         | 1 |
+| # dependents       | 44 |
+| # downloads        | 15630614 |
+| # stars            | 6 |
+
+## Links
+- [Homepage](https://github.com/tjgq/node-stream-throttle)
+- [Bugs](https://github.com/tjgq/node-stream-throttle/issues)
+- [Repository](https://github.com/tjgq/node-stream-throttle)
+- [Npm](https://www.npmjs.com/package/stream-throttle)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for stream-throttle 0.1
 // Project: https://github.com/tjgq/node-stream-throttle
 // Definitions by: Daniel Byrne <https://github.com/danwbyrne>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /// <reference types = "node" />
+
 ```
+

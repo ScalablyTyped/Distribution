@@ -1,3 +1,21 @@
+
+# Scala.js typings for html5plus
+
+Typings are for version 1.0
+
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for non-npm package html5plus 1.0
 // Project: https://www.html5plus.org/doc/
@@ -8,4 +26,6 @@
  * 
  * 参考: [http://www.html5plus.org/doc/h5p.html](http://www.html5plus.org/doc/h5p.html)
  */
+
 ```
+
