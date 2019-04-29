@@ -2390,6 +2390,7 @@
 | 0.6916268277758864 | [angular-resource](./a/angular-resource) | AngularJS module for interacting with RESTful server-side data sources
 | 0.6916040602899247 | [bin-pack](./b/bin-pack) | A packing algorithm for 2D bin packing. Largely based on code and a blog post by Jake Gordon.
 | 0.6915813830552028 | [p-tap](./p/p-tap) | Tap into a promise chain without affecting its value or state
+| 0.6915029706136508 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given separator
 | 0.691501472696143 | [leaflet_dot_pm](./l/leaflet_dot_pm) | A Leaflet Plugin For Editing Geometry Layers in Leaflet 1.0
 | 0.6914976073725445 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components
 | 0.691416102648011 | [react-swipeable-views](./r/react-swipeable-views) | A React component for swipeable views

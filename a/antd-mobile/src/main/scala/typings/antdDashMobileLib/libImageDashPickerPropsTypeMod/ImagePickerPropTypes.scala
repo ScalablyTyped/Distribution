@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait ImagePickerPropTypes extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var capture: js.UndefOr[js.Any] = js.undefined
+  var disableDelete: js.UndefOr[scala.Boolean] = js.undefined
   var files: js.UndefOr[js.Array[js.Object]] = js.undefined
   var length: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
@@ -37,6 +38,7 @@ object ImagePickerPropTypes {
   def apply(
     accept: java.lang.String = null,
     capture: js.Any = null,
+    disableDelete: js.UndefOr[scala.Boolean] = js.undefined,
     files: js.Array[js.Object] = null,
     length: scala.Double | java.lang.String = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
@@ -50,6 +52,7 @@ object ImagePickerPropTypes {
     val __obj = js.Dynamic.literal()
     if (accept != null) __obj.updateDynamic("accept")(accept)
     if (capture != null) __obj.updateDynamic("capture")(capture)
+    if (!js.isUndefined(disableDelete)) __obj.updateDynamic("disableDelete")(disableDelete)
     if (files != null) __obj.updateDynamic("files")(files)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)

@@ -76,7 +76,7 @@ class EggApplication ()
     * See https://github.com/node-modules/urllib#api-doc for more details.
     */
   def curl[T](url: java.lang.String): js.Promise[T] = js.native
-  def curl[T](url: java.lang.String, opt: urllibLib.urllibMod.RequestOptions): js.Promise[T] = js.native
+  def curl[T](url: java.lang.String, opt: urllibLib.urllibMod.RequestOptions2): js.Promise[T] = js.native
   /**
     * Get logger by name, it's equal to app.loggers['name'], but you can extend it with your own logical
     */

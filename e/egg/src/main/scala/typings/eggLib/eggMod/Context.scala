@@ -168,7 +168,7 @@ trait Context
     * See https://github.com/node-modules/urllib#api-doc for more details.
     */
   def curl[T](url: java.lang.String): js.Promise[T] = js.native
-  def curl[T](url: java.lang.String, opt: urllibLib.urllibMod.RequestOptions): js.Promise[T] = js.native
+  def curl[T](url: java.lang.String, opt: urllibLib.urllibMod.RequestOptions2): js.Promise[T] = js.native
   /**
     * get upload file stream
     * @example

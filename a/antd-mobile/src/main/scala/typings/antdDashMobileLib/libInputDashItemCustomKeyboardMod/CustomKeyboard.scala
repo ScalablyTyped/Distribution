@@ -13,9 +13,9 @@ trait CustomKeyboard
   var confirmKeyboardItem: stdLib.HTMLTableDataCellElement | scala.Null = js.native
   var linkedInput: js.Any = js.native
   def getAriaAttr(label: java.lang.String): antdDashMobileLib.Anon_Arialabel | antdDashMobileLib.Anon_ArialabelIconOnly = js.native
-  def onKeyboardClick(e: reactLib.reactMod.MouseEvent[stdLib.HTMLTableDataCellElement, reactLib.NativeMouseEvent]): js.UndefOr[scala.Null] = js.native
+  def onKeyboardClick(e: reactLib.reactMod.MouseEvent[stdLib.HTMLTableDataCellElement, stdLib.MouseEvent]): js.UndefOr[scala.Null] = js.native
   def onKeyboardClick(
-    e: reactLib.reactMod.MouseEvent[stdLib.HTMLTableDataCellElement, reactLib.NativeMouseEvent],
+    e: reactLib.reactMod.MouseEvent[stdLib.HTMLTableDataCellElement, stdLib.MouseEvent],
     value: java.lang.String
   ): js.UndefOr[scala.Null] = js.native
   def renderKeyboardItem(item: java.lang.String, index: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native

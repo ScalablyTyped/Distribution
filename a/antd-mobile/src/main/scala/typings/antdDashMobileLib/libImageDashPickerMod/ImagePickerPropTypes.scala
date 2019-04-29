@@ -17,6 +17,7 @@ object ImagePickerPropTypes {
     accept: java.lang.String = null,
     capture: js.Any = null,
     className: java.lang.String = null,
+    disableDelete: js.UndefOr[scala.Boolean] = js.undefined,
     files: js.Array[js.Object] = null,
     length: scala.Double | java.lang.String = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
@@ -32,6 +33,7 @@ object ImagePickerPropTypes {
     if (accept != null) __obj.updateDynamic("accept")(accept)
     if (capture != null) __obj.updateDynamic("capture")(capture)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disableDelete)) __obj.updateDynamic("disableDelete")(disableDelete)
     if (files != null) __obj.updateDynamic("files")(files)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)

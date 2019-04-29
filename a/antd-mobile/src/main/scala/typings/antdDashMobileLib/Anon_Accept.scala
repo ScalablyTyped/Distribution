@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Accept extends js.Object {
   var accept: java.lang.String = js.native
+  var disableDelete: scala.Boolean = js.native
   var files: js.Array[scala.Nothing] = js.native
   var length: scala.Double = js.native
   var multiple: scala.Boolean = js.native

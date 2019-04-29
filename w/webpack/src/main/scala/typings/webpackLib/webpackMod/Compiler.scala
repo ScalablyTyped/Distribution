@@ -12,6 +12,7 @@ class Compiler ()
      with ICompiler {
   @JSName("_pluginCompat")
   var _pluginCompat_Compiler: tapableLib.tapableMod.SyncBailHook[webpackLib.webpackMod.compilationNs.Compilation, _, _, _] = js.native
+  var context: java.lang.String = js.native
   var contextTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
   var fileTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
   var hooks: webpackLib.webpackMod.compilationNs.CompilerHooks = js.native
@@ -19,6 +20,8 @@ class Compiler ()
   var name: java.lang.String = js.native
   var options: Configuration = js.native
   var outputFileSystem: OutputFileSystem = js.native
+  var outputPath: java.lang.String = js.native
+  def isChild(): scala.Boolean = js.native
   /* CompleteClass */
   override def run(handler: webpackLib.webpackMod.ICompilerNs.Handler): scala.Unit = js.native
   /* CompleteClass */

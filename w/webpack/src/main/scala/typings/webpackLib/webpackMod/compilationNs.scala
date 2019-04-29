@@ -89,6 +89,7 @@ object compilationNs extends js.Object {
     var chunkTemplate: ChunkTemplate = js.native
     var chunks: js.Array[_] = js.native
     var compiler: webpackLib.webpackMod.Compiler = js.native
+    var context: java.lang.String = js.native
     var contextDependencies: webpackLib.webpackMod.SortableSet[java.lang.String] = js.native
     var contextTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
     var dependencyFactories: stdLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
@@ -111,6 +112,7 @@ object compilationNs extends js.Object {
     var nextFreeModuleIndex: js.Any = js.native
     var nextFreeModuleIndex2: js.Any = js.native
     var outputOptions: js.Any = js.native
+    var outputPath: java.lang.String = js.native
     var performance: js.Any = js.native
     var profile: js.Any = js.native
     var records: js.Any = js.native
@@ -125,6 +127,7 @@ object compilationNs extends js.Object {
     def addModule(module: CompilationModule, cacheGroup: js.Any): js.Any = js.native
     def getPath(filename: java.lang.String, data: webpackLib.Anon_Basename): java.lang.String = js.native
     def getStats(): webpackLib.webpackMod.Stats = js.native
+    def isChild(): scala.Boolean = js.native
   }
   
   trait CompilationHooks extends js.Object {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object eggMod {
-  type EggContextHttpClient = urllibLib.urllibMod.HttpClient2
+  type EggContextHttpClient = urllibLib.urllibMod.HttpClient[urllibLib.urllibMod.RequestOptions2]
   /* Rewritten from type alias, can be one of: 
     - eggLib.eggLibStrings.local
     - eggLib.eggLibStrings.unittest
@@ -14,7 +14,7 @@ package object eggMod {
     - java.lang.String
   */
   type EggEnvType = _EggEnvType | java.lang.String
-  type EggHttpClient = urllibLib.urllibMod.HttpClient2
+  type EggHttpClient = urllibLib.urllibMod.HttpClient[urllibLib.urllibMod.RequestOptions2]
   type EggLoader = eggDashCoreLib.eggDashCoreMod.EggLoader[
     eggDashCoreLib.eggDashCoreMod.EggCore[eggDashCoreLib.eggDashCoreMod.PlainObject[js.Any]], 
     js.Any

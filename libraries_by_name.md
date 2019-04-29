@@ -2065,6 +2065,7 @@
 | [glue](./g/glue) | Server composer for hapi.js |
 | [gm](./g/gm) | GraphicsMagick and ImageMagick for node.js |
 | [go](./g/go) | Create and use boilerplates with ease |
+| [google-adwords-scripts](./g/google-adwords-scripts) | - |
 | [google-apps-script](./g/google-apps-script) | gas, the complete CLI for Google Apps Script |
 | [google-apps-script-oauth2](./g/google-apps-script-oauth2) | - |
 | [google-auth-library](./g/google-auth-library) | Google APIs Authentication Client Library for Node.js |
@@ -5854,6 +5855,7 @@
 | [spin_dot_js](./s/spin_dot_js) | A spinning activity indicator |
 | [split](./s/split) | split a Text Stream into a Line Stream |
 | [split-array-stream](./s/split-array-stream) | Safely push each item of an array to a stream |
+| [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given separator |
 | [split2](./s/split2) | split a Text Stream into a Line Stream, using Stream 3 |
 | [split_dot_js](./s/split_dot_js) | 2kb unopinionated utility for resizeable split views |
 | [splunk-bunyan-logger](./s/splunk-bunyan-logger) | Splunk HTTP Event Collector Stream for Bunyan |

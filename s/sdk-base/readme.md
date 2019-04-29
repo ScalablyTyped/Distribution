@@ -1,7 +1,7 @@
 
 # Scala.js typings for sdk-base
 
-Typings are for version 3.5.1
+Typings are for version 3.6.0
 
 ## Library description:
 a base class for sdk with default error handler

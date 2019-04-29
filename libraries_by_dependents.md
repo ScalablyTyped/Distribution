@@ -5297,6 +5297,7 @@
 | 2 | [solution-center-communicator](./s/solution-center-communicator) | Tool for facilitating communication between the Zalando Solution Center and its APIs
 | 2 | [spectrum](./s/spectrum) | JavaScript Template Library
 | 2 | [spex](./s/spex) | Specialized Promise Extensions
+| 2 | [split-on-first](./s/split-on-first) | Split a string on the first occurance of a given separator
 | 2 | [sql-template](./s/sql-template) | Template string (ES6) builder for SQL.
 | 2 | [sqlanywhere](./s/sqlanywhere) | SQL Anywhere JavaScript Driver.
 | 2 | [squirejs](./s/squirejs) | Squire.js is a dependency injector for Require.js users to make mocking dependencies easy!
