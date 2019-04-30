@@ -30,8 +30,8 @@ trait Scope
   def delete(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def delete(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def delete(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def delete(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def delete(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def delete(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def delete(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -39,8 +39,8 @@ trait Scope
   def delete(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def delete(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def delete(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def delete(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def delete(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def delete(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def delete(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: stdLib.RegExp): Interceptor = js.native
@@ -48,8 +48,8 @@ trait Scope
   def delete(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def delete(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def delete(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def delete(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def delete(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def delete(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def delete(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def delete(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def done(): scala.Unit = js.native
@@ -62,8 +62,8 @@ trait Scope
   def get(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def get(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def get(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def get(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def get(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def get(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def get(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def get(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def get(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def get(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -71,8 +71,8 @@ trait Scope
   def get(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def get(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def get(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def get(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def get(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def get(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def get(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def get(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def get(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def get(uri: stdLib.RegExp): Interceptor = js.native
@@ -80,8 +80,8 @@ trait Scope
   def get(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def get(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def get(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def get(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def get(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def get(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def get(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def get(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def get(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def head(uri: java.lang.String): Interceptor = js.native
@@ -89,8 +89,8 @@ trait Scope
   def head(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def head(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def head(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def head(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def head(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def head(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def head(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def head(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def head(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def head(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -98,8 +98,8 @@ trait Scope
   def head(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def head(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def head(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def head(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def head(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def head(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def head(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def head(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def head(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def head(uri: stdLib.RegExp): Interceptor = js.native
@@ -107,8 +107,8 @@ trait Scope
   def head(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def head(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def head(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def head(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def head(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def head(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def head(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def head(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def head(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def intercept(uri: java.lang.String, method: java.lang.String): Interceptor = js.native
@@ -116,8 +116,13 @@ trait Scope
   def intercept(uri: java.lang.String, method: java.lang.String, requestBody: java.lang.String, options: Options): Interceptor = js.native
   def intercept(uri: java.lang.String, method: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def intercept(uri: java.lang.String, method: java.lang.String, requestBody: js.Any, options: Options): Interceptor = js.native
-  def intercept(uri: java.lang.String, method: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def intercept(uri: java.lang.String, method: java.lang.String, requestBody: nockLib.Anon_Body, options: Options): Interceptor = js.native
+  def intercept(uri: java.lang.String, method: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def intercept(
+    uri: java.lang.String,
+    method: java.lang.String,
+    requestBody: nockLib.Anon_BodyAny,
+    options: Options
+  ): Interceptor = js.native
   def intercept(uri: java.lang.String, method: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def intercept(uri: java.lang.String, method: java.lang.String, requestBody: stdLib.RegExp, options: Options): Interceptor = js.native
   def intercept(uri: nockLib.Anon_Uri, method: java.lang.String): Interceptor = js.native
@@ -125,8 +130,13 @@ trait Scope
   def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: java.lang.String, options: Options): Interceptor = js.native
   def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: js.Any, options: Options): Interceptor = js.native
-  def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: nockLib.Anon_Body, options: Options): Interceptor = js.native
+  def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def intercept(
+    uri: nockLib.Anon_Uri,
+    method: java.lang.String,
+    requestBody: nockLib.Anon_BodyAny,
+    options: Options
+  ): Interceptor = js.native
   def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def intercept(uri: nockLib.Anon_Uri, method: java.lang.String, requestBody: stdLib.RegExp, options: Options): Interceptor = js.native
   def intercept(uri: stdLib.RegExp, method: java.lang.String): Interceptor = js.native
@@ -134,8 +144,8 @@ trait Scope
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: java.lang.String, options: Options): Interceptor = js.native
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: js.Any, options: Options): Interceptor = js.native
-  def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: nockLib.Anon_Body, options: Options): Interceptor = js.native
+  def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: nockLib.Anon_BodyAny, options: Options): Interceptor = js.native
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: stdLib.RegExp, options: Options): Interceptor = js.native
   def isDone(): scala.Boolean = js.native
@@ -148,8 +158,8 @@ trait Scope
   def merge(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def merge(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def merge(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def merge(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def merge(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def merge(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def merge(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -157,8 +167,8 @@ trait Scope
   def merge(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def merge(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def merge(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def merge(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def merge(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def merge(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def merge(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: stdLib.RegExp): Interceptor = js.native
@@ -166,8 +176,8 @@ trait Scope
   def merge(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def merge(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def merge(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def merge(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def merge(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def merge(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def merge(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def merge(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def options(uri: java.lang.String): Interceptor = js.native
@@ -175,8 +185,8 @@ trait Scope
   def options(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def options(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def options(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def options(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def options(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def options(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def options(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def options(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def options(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def options(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -184,8 +194,8 @@ trait Scope
   def options(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def options(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def options(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def options(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def options(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def options(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def options(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def options(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def options(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def options(uri: stdLib.RegExp): Interceptor = js.native
@@ -193,8 +203,8 @@ trait Scope
   def options(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def options(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def options(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def options(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def options(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def options(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def options(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def options(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def options(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: java.lang.String): Interceptor = js.native
@@ -202,8 +212,8 @@ trait Scope
   def patch(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def patch(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def patch(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def patch(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def patch(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def patch(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def patch(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -211,8 +221,8 @@ trait Scope
   def patch(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def patch(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def patch(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def patch(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def patch(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def patch(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def patch(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: stdLib.RegExp): Interceptor = js.native
@@ -220,8 +230,8 @@ trait Scope
   def patch(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def patch(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def patch(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def patch(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def patch(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def patch(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def patch(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def patch(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def pendingMocks(): js.Array[java.lang.String] = js.native
@@ -232,8 +242,8 @@ trait Scope
   def post(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def post(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def post(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def post(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def post(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def post(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def post(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def post(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def post(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def post(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -241,8 +251,8 @@ trait Scope
   def post(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def post(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def post(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def post(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def post(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def post(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def post(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def post(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def post(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def post(uri: stdLib.RegExp): Interceptor = js.native
@@ -250,8 +260,8 @@ trait Scope
   def post(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def post(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def post(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def post(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def post(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def post(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def post(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def post(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def post(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def put(uri: java.lang.String): Interceptor = js.native
@@ -259,8 +269,8 @@ trait Scope
   def put(uri: java.lang.String, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def put(uri: java.lang.String, requestBody: js.Any): Interceptor = js.native
   def put(uri: java.lang.String, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def put(uri: java.lang.String, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def put(uri: java.lang.String, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def put(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def put(uri: java.lang.String, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def put(uri: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def put(uri: java.lang.String, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def put(uri: nockLib.Anon_Uri): Interceptor = js.native
@@ -268,8 +278,8 @@ trait Scope
   def put(uri: nockLib.Anon_Uri, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def put(uri: nockLib.Anon_Uri, requestBody: js.Any): Interceptor = js.native
   def put(uri: nockLib.Anon_Uri, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def put(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def put(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def put(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def put(uri: nockLib.Anon_Uri, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def put(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp): Interceptor = js.native
   def put(uri: nockLib.Anon_Uri, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def put(uri: stdLib.RegExp): Interceptor = js.native
@@ -277,8 +287,8 @@ trait Scope
   def put(uri: stdLib.RegExp, requestBody: java.lang.String, interceptorOptions: Options): Interceptor = js.native
   def put(uri: stdLib.RegExp, requestBody: js.Any): Interceptor = js.native
   def put(uri: stdLib.RegExp, requestBody: js.Any, interceptorOptions: Options): Interceptor = js.native
-  def put(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body): Interceptor = js.native
-  def put(uri: stdLib.RegExp, requestBody: nockLib.Anon_Body, interceptorOptions: Options): Interceptor = js.native
+  def put(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny): Interceptor = js.native
+  def put(uri: stdLib.RegExp, requestBody: nockLib.Anon_BodyAny, interceptorOptions: Options): Interceptor = js.native
   def put(uri: stdLib.RegExp, requestBody: stdLib.RegExp): Interceptor = js.native
   def put(uri: stdLib.RegExp, requestBody: stdLib.RegExp, interceptorOptions: Options): Interceptor = js.native
   def replyContentLength(): this.type = js.native

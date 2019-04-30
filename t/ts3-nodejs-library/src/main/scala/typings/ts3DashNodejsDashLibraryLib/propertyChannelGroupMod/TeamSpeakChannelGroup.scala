@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakChannelGroup
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
+  var cgid: scala.Double = js.native
+  var iconid: java.lang.String = js.native
+  var nMemberAddp: java.lang.String = js.native
+  var nMemberRemovep: java.lang.String = js.native
+  var nModifyp: java.lang.String = js.native
+  var name: java.lang.String = js.native
+  var namemode: java.lang.String = js.native
+  var savedb: java.lang.String = js.native
+  var sortid: java.lang.String = js.native
+  var `type`: java.lang.String = js.native
   /**
     * Adds a specified permissions to the channel group. A permission can be specified by permid or permsid.
     * @param - The permid or permsid

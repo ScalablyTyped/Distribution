@@ -1,7 +1,7 @@
 
 # Scala.js typings for latest-semver
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Get the latest stable semver version from an array of versions
@@ -24,7 +24,7 @@ Get the latest stable semver version from an array of versions
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,30 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for latest-semver 1.0
-// Project: https://github.com/sindresorhus/latest-semver#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Get the latest stable [semver](https://semver.org) version from an array of versions.
+
+Non-semver versions and prereleases are ignored.
+
+@example
+```
+import latestSemver = require('latest-semver');
+
+latestSemver([
+	'v1.8.0-alpha.1',
+	'v1.3.16',
+	'v1.7.0',
+	'v1.6.9'
+]);
+//=> '1.7.0'
+
+latestSemver([
+	'unicorn',
+	'v1.8.0-alpha.1'
+]);
+//=> undefined
+```
+*/
 
 ```
 

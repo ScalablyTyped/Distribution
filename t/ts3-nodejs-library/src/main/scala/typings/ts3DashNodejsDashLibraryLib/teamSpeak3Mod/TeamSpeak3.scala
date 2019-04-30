@@ -17,28 +17,28 @@ trait TeamSpeak3
     * @param - Bantime in Seconds, if left empty it will result in a permaban
     * @param - Ban Reason
     */
-  def banAdd(): js.Promise[_] = js.native
-  def banAdd(ip: java.lang.String): js.Promise[_] = js.native
-  def banAdd(ip: java.lang.String, name: java.lang.String): js.Promise[_] = js.native
-  def banAdd(ip: java.lang.String, name: java.lang.String, uid: java.lang.String): js.Promise[_] = js.native
-  def banAdd(ip: java.lang.String, name: java.lang.String, uid: java.lang.String, time: scala.Double): js.Promise[_] = js.native
+  def banAdd(): js.Promise[ts3DashNodejsDashLibraryLib.Anon_Banid] = js.native
+  def banAdd(ip: java.lang.String): js.Promise[ts3DashNodejsDashLibraryLib.Anon_Banid] = js.native
+  def banAdd(ip: java.lang.String, name: java.lang.String): js.Promise[ts3DashNodejsDashLibraryLib.Anon_Banid] = js.native
+  def banAdd(ip: java.lang.String, name: java.lang.String, uid: java.lang.String): js.Promise[ts3DashNodejsDashLibraryLib.Anon_Banid] = js.native
+  def banAdd(ip: java.lang.String, name: java.lang.String, uid: java.lang.String, time: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.Anon_Banid] = js.native
   def banAdd(
     ip: java.lang.String,
     name: java.lang.String,
     uid: java.lang.String,
     time: scala.Double,
     banreason: java.lang.String
-  ): js.Promise[_] = js.native
+  ): js.Promise[ts3DashNodejsDashLibraryLib.Anon_Banid] = js.native
   /**
     * Removes one or all bans from the server
     * @param- The BanID to remove, if not provided it will remove all bans
     */
-  def banDel(): js.Promise[_] = js.native
-  def banDel(banid: scala.Double): js.Promise[_] = js.native
+  def banDel(): js.Promise[scala.Unit] = js.native
+  def banDel(banid: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Displays a list of active bans on the selected virtual server.
     */
-  def banList(): js.Promise[_] = js.native
+  def banList(): js.Promise[js.Array[BanListEntry]] = js.native
   /**
     * Displays a list of IP addresses used by the server instance on multi-homed machines.
     */
@@ -263,7 +263,7 @@ trait TeamSpeak3
     * @param - the client database id
     * @returns the Client Database Info
     */
-  def clientDBInfo(cldbid: scala.Double): js.Promise[_] = js.native
+  def clientDBInfo(cldbid: scala.Double): js.Promise[js.UndefOr[DisconnectedClient]] = js.native
   /**
     * Returns the Clients Database List.1
     * @param - Start Offset. Defaults to 0.
@@ -334,23 +334,23 @@ trait TeamSpeak3
     * @param - Filter only for certain Client with the given Database ID
     * @param - The Message which should be added
     */
-  def complainAdd(cldbid: scala.Double): js.Promise[_] = js.native
-  def complainAdd(cldbid: scala.Double, message: java.lang.String): js.Promise[_] = js.native
+  def complainAdd(cldbid: scala.Double): js.Promise[scala.Unit] = js.native
+  def complainAdd(cldbid: scala.Double, message: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
     * Deletes the complaint about the client with ID tdbid submitted by the client with ID fdbid from the server.
     * If dbid will be left empty all complaints for the tdbid will be deleted
     * @param - The Target Client Database ID
     * @param - The Client Database ID which filed the Report
     */
-  def complainDel(tcldbid: scala.Double): js.Promise[_] = js.native
-  def complainDel(tcldbid: scala.Double, fcldbid: scala.Double): js.Promise[_] = js.native
+  def complainDel(tcldbid: scala.Double): js.Promise[scala.Unit] = js.native
+  def complainDel(tcldbid: scala.Double, fcldbid: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Displays a list of complaints on the selected virtual server.
     * If dbid is specified, only complaints about the targeted client will be shown.
     * @param - Filter only for certain Client with the given Database ID
     */
-  def complainList(): js.Promise[_] = js.native
-  def complainList(cldbid: scala.Double): js.Promise[_] = js.native
+  def complainList(): js.Promise[js.Array[ComplainListEntry]] = js.native
+  def complainList(cldbid: scala.Double): js.Promise[js.Array[ComplainListEntry]] = js.native
   /**
     * Displays detailed connection information about the selected virtual server including uptime, traffic information, etc.
     */
@@ -508,42 +508,42 @@ trait TeamSpeak3
     * Retrieves a Single Channel by the given Channel ID
     * @param- The Channel Id
     */
-  def getChannelByID(cid: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyChannelMod.^] = js.native
+  def getChannelByID(cid: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyChannelMod.^]] = js.native
   /**
     * Retrieves a Single Channel by the given Channel Name
     * @param - The Name of the Channel
     */
-  def getChannelByName(channel_name: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyChannelMod.^] = js.native
+  def getChannelByName(channel_name: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyChannelMod.^]] = js.native
   /**
     * Retrieves a single ChannelGroup by the given ChannelGroup ID
     * @param - the ChannelGroup Id
     */
-  def getChannelGroupByID(cgid: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyChannelGroupMod.^] = js.native
+  def getChannelGroupByID(cgid: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyChannelGroupMod.^]] = js.native
   /**
     * Retrieves a single ChannelGroup by the given ChannelGroup Name
     * @param - the ChannelGroup name
     */
-  def getChannelGroupByName(name: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyChannelGroupMod.^] = js.native
+  def getChannelGroupByName(name: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyChannelGroupMod.^]] = js.native
   /**
     * Retrieves a Single Client by the given Client Database ID
     * @param - The Client Database Id
     */
-  def getClientByDBID(client_database_id: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyClientMod.^] = js.native
+  def getClientByDBID(client_database_id: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyClientMod.^]] = js.native
   /**
     * Retrieves a Single Client by the given Client ID
     * @param clid - The Client Id
     */
-  def getClientByID(clid: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyClientMod.^] = js.native
+  def getClientByID(clid: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyClientMod.^]] = js.native
   /**
     * Retrieves a Single Client by the given Client Unique Identifier
     * @param - The Nickname of the Client
     */
-  def getClientByName(client_nickname: java.lang.String): js.Promise[ts3DashNodejsDashLibraryLib.propertyClientMod.^] = js.native
+  def getClientByName(client_nickname: java.lang.String): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyClientMod.^]] = js.native
   /**
     * Retrieves a Single Client by the given Client Unique Identifier
     * @param - The Client Unique Identifier
     */
-  def getClientByUID(client_unique_identifier: java.lang.String): js.Promise[ts3DashNodejsDashLibraryLib.propertyClientMod.^] = js.native
+  def getClientByUID(client_unique_identifier: java.lang.String): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyClientMod.^]] = js.native
   /**
     * Gets the Icon Name of a resolveable Perm List
     * @param - expects a promise which resolves to a permission list
@@ -553,12 +553,12 @@ trait TeamSpeak3
     * Retrieves a single ServerGroup by the given ServerGroup ID
     * @param - the ServerGroup Id
     */
-  def getServerGroupByID(sgid: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyServerGroupMod.^] = js.native
+  def getServerGroupByID(sgid: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyServerGroupMod.^]] = js.native
   /**
     * Retrieves a single ServerGroup by the given ServerGroup Name
     * @param - the ServerGroup name
     */
-  def getServerGroupByName(name: scala.Double): js.Promise[ts3DashNodejsDashLibraryLib.propertyServerGroupMod.^] = js.native
+  def getServerGroupByName(name: scala.Double): js.Promise[js.UndefOr[ts3DashNodejsDashLibraryLib.propertyServerGroupMod.^]] = js.native
   /**
     * Sends a text message to all clients on all virtual servers in the TeamSpeak 3 Server instance.
     * @param - Message which will be sent to all instances
@@ -609,7 +609,7 @@ trait TeamSpeak3
   /**
     * Deselects the active virtual server and logs out from the server instance.
     */
-  def logout(): js.Promise[_] = js.native
+  def logout(): js.Promise[scala.Unit] = js.native
   /**
     * Sends an offline message to the client specified by uid.
     * @param - Client Unique Identifier (uid)
@@ -680,7 +680,6 @@ trait TeamSpeak3
     event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.ready,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
-  // Type-safe events.
   @JSName("on")
   def on_textmessage(
     event: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibStrings.textmessage,
@@ -771,7 +770,7 @@ trait TeamSpeak3
     * @param - deletes the querylogin of this client
     * @returns Promise object which returns the Information about the Query executed
     */
-  def queryLoginDel(cldbid: scala.Double): js.Promise[_] = js.native
+  def queryLoginDel(cldbid: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * List existing query client logins.
     * The pattern parameter can include regular characters and SQL wildcard characters (e.g. %).

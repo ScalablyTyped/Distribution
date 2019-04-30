@@ -1,7 +1,7 @@
 
 # Scala.js typings for url-regex
 
-Typings are for version 4.1
+Typings are for version 5.0.0
 
 ## Library description:
 Regular expression for matching URLs
@@ -24,23 +24,11 @@ Regular expression for matching URLs
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for url-regex 4.1
-// Project: https://github.com/kevva/url-regex
-// Definitions by: Daniel Perez Alvarez <https://github.com/unindented>
-//                 sosukesuzuki <https://github.com/sosukesuzuki>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/** Regular expression for matching URLs. */
-
-```
 

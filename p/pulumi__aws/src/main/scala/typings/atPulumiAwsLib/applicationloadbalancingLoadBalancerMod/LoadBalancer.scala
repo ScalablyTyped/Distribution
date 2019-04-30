@@ -20,9 +20,9 @@ class LoadBalancer protected ()
   def this(name: java.lang.String, args: LoadBalancerArgs) = this()
   def this(name: java.lang.String, args: LoadBalancerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
+    * An Access Logs block. Access Logs documented below.
     */
-  val accessLogs: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_BucketEnabled] = js.native
+  val accessLogs: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketEnabled]] = js.native
   /**
     * The ARN of the load balancer (matches `id`).
     */

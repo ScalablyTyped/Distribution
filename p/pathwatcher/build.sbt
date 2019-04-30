@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pathwatcher"
-version := "8.x-dt-20190212Z-f6b1c7"
+version := "8.x-dt-20190212Z-56aa23"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "event-kit" % "2.4-dt-20180316Z-997665",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

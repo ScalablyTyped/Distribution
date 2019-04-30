@@ -27,6 +27,10 @@ trait InstanceNetworkInterfaceSpecification extends js.Object {
     */
   var Groups: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
+    * The type of interface.
+    */
+  var InterfaceType: js.UndefOr[String] = js.undefined
+  /**
     * A number of IPv6 addresses to assign to the network interface. Amazon EC2 chooses the IPv6 addresses from the range of the subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch.
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
@@ -64,6 +68,7 @@ object InstanceNetworkInterfaceSpecification {
     Description: String = null,
     DeviceIndex: js.UndefOr[Integer] = js.undefined,
     Groups: SecurityGroupIdStringList = null,
+    InterfaceType: String = null,
     Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     NetworkInterfaceId: String = null,
@@ -78,6 +83,7 @@ object InstanceNetworkInterfaceSpecification {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex)
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
+    if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType)
     if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount)
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)

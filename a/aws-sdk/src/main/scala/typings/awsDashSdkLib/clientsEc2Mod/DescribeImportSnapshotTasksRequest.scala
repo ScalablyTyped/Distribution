@@ -11,7 +11,7 @@ trait DescribeImportSnapshotTasksRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.
+    * The filters.
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**

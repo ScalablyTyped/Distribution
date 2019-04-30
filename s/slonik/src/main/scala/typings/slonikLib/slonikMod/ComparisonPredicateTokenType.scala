@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ComparisonPredicateTokenType extends SqlTokenType {
+trait ComparisonPredicateTokenType extends _SqlTokenType {
   var leftOperand: ValueExpressionType
   var operator: ComparisonOperatorType
   var rightOperand: ValueExpressionType

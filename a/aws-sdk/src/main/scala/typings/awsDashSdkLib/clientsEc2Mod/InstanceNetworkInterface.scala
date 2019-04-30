@@ -23,6 +23,10 @@ trait InstanceNetworkInterface extends js.Object {
     */
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   /**
+    * Describes the type of network interface.
+    */
+  var InterfaceType: js.UndefOr[String] = js.undefined
+  /**
     * One or more IPv6 addresses associated with the network interface.
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
@@ -75,6 +79,7 @@ object InstanceNetworkInterface {
     Attachment: InstanceNetworkInterfaceAttachment = null,
     Description: String = null,
     Groups: GroupIdentifierList = null,
+    InterfaceType: String = null,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     MacAddress: String = null,
     NetworkInterfaceId: String = null,
@@ -92,6 +97,7 @@ object InstanceNetworkInterface {
     if (Attachment != null) __obj.updateDynamic("Attachment")(Attachment)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
+    if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType)
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress)
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)

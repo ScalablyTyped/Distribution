@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeBundleTasksRequest extends js.Object {
   /**
-    * One or more bundle task IDs. Default: Describes all your bundle tasks.
+    * The bundle task IDs. Default: Describes all your bundle tasks.
     */
   var BundleIds: js.UndefOr[BundleIdStringList] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait DescribeBundleTasksRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    bundle-id - The ID of the bundle task.    error-code - If the task failed, the error code returned.    error-message - If the task failed, the error message returned.    instance-id - The ID of the instance.    progress - The level of task completion, as a percentage (for example, 20%).    s3-bucket - The Amazon S3 bucket to store the AMI.    s3-prefix - The beginning of the AMI name.    start-time - The time the task started (for example, 2013-09-15T17:15:20.000Z).    state - The state of the task (pending | waiting-for-shutdown | bundling | storing | cancelling | complete | failed).    update-time - The time of the most recent update for the task.  
+    * The filters.    bundle-id - The ID of the bundle task.    error-code - If the task failed, the error code returned.    error-message - If the task failed, the error message returned.    instance-id - The ID of the instance.    progress - The level of task completion, as a percentage (for example, 20%).    s3-bucket - The Amazon S3 bucket to store the AMI.    s3-prefix - The beginning of the AMI name.    start-time - The time the task started (for example, 2013-09-15T17:15:20.000Z).    state - The state of the task (pending | waiting-for-shutdown | bundling | storing | cancelling | complete | failed).    update-time - The time of the most recent update for the task.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
 }

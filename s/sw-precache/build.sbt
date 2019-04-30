@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sw-precache"
-version := "5.2-dt-20180504Z-eab44c"
+version := "5.2-dt-20180504Z-4d57fc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "sw-toolbox" % "3.6.0-6404b7")
 publishArtifact in packageDoc := false

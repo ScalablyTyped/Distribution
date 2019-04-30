@@ -231,6 +231,7 @@
 | 0.8424386355828937 | [ipaddr_dot_js](./i/ipaddr_dot_js) | A library for manipulating IPv4 and IPv6 addresses in JavaScript.
 | 0.8423678850728897 | [aws4](./a/aws4) | Signs and prepares requests using AWS Signature Version 4
 | 0.8421296045976872 | [merge-descriptors](./m/merge-descriptors) | Merge objects using descriptors
+| 0.8421126462323913 | [y18n](./y/y18n) | the bare-bones internationalization library used by yargs
 | 0.8419348668431597 | [asap](./a/asap) | High-priority task queue for Node.js and browsers
 | 0.8415852339984875 | [glob-parent](./g/glob-parent) | Extract the non-magic parent path from a glob string.
 | 0.8414389254876231 | [memoize-one](./m/memoize-one) | A memoization library which only remembers the latest invocation
@@ -302,6 +303,7 @@
 | 0.8333947460097761 | [object-keys](./o/object-keys) | An Object.keys replacement, in case Object.keys is not available. From https://github.com/es-shims/es5-shim
 | 0.8331518099191636 | [merge-stream](./m/merge-stream) | Create a stream that emits events from multiple other streams
 | 0.8331140518613831 | [pluralize](./p/pluralize) | Pluralize and singularize any word
+| 0.8329977519479446 | [balanced-match](./b/balanced-match) | Match balanced character pairs, like "{" and "}"
 | 0.8327111556029154 | [sane](./s/sane) | Sane aims to be fast, small, and reliable file system watcher.
 | 0.8325883141521186 | [hash_dot_js](./h/hash_dot_js) | Various hash functions that could be run by both browser and node
 | 0.8322772744498409 | [require-from-string](./r/require-from-string) | Require module from string
@@ -550,6 +552,7 @@
 | 0.8040454553982556 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to start and stop.
 | 0.8039205592293398 | [dotenv-webpack](./d/dotenv-webpack) | A simple webpack plugin to support dotenv.
 | 0.8039127799383637 | [get-port](./g/get-port) | Get an available port
+| 0.8038732979262541 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 0.8037992489077195 | [react-apollo](./r/react-apollo) | React data container for Apollo Client
 | 0.8035657170021379 | [node-emoji](./n/node-emoji) | simple emoji support for node.js projects
 | 0.8035355572711975 | [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-components
@@ -840,6 +843,7 @@
 | 0.7799416709013838 | [buffer-equal](./b/buffer-equal) | return whether two buffers are equal
 | 0.7798102042898301 | [fined](./f/fined) | Find a file given a declaration of locations.
 | 0.7797945583983201 | [semver-compare](./s/semver-compare) | compare two semver version strings, returning -1, 0, or 1
+| 0.7794464429283829 | [imagemin-pngquant](./i/imagemin-pngquant) | Imagemin plugin for `pngquant`
 | 0.7794331680916955 | [lodash_dot_remove](./l/lodash_dot_remove) | The lodash method `_.remove` exported as a module.
 | 0.7794062677037936 | [is-relative](./i/is-relative) | Returns `true` if the path appears to be relative.
 | 0.7792181617803311 | [feathersjs__express](./f/feathersjs__express) | Feathers Express framework bindings and REST provider
@@ -1157,6 +1161,7 @@
 | 0.759471547943301 | [vision](./v/vision) | Templates rendering plugin support for hapi.js
 | 0.7593381120017404 | [pngquant-bin](./p/pngquant-bin) | `pngquant` wrapper that makes it seamlessly available as a local dependency
 | 0.7592910638121126 | [pkg-conf](./p/pkg-conf) | Get namespaced config from the closest package.json
+| 0.7592250655120516 | [clone-regexp](./c/clone-regexp) | Clone and modify a RegExp instance
 | 0.7591787409995486 | [aggregate-error](./a/aggregate-error) | Create an error from multiple errors
 | 0.7591416523671994 | [jju](./j/jju) | a set of utilities to work with JSON / JSON5 documents
 | 0.759134902020327 | [getos](./g/getos) | Get the OS/Distribution name of the environment you are working on
@@ -1483,12 +1488,14 @@
 | 0.7408918332473269 | [iarna__toml](./i/iarna__toml) | Better TOML parsing and stringifying all in that familiar JSON interface.
 | 0.740861200782061 | [cordova](./c/cordova) | Cordova command line interface tool
 | 0.7408203663520918 | [lodash_dot_rangeright](./l/lodash_dot_rangeright) | The lodash method `_.rangeRight` exported as a module.
+| 0.7407681823126531 | [format-util](./f/format-util) | Lightweight util.format() for the browser.
 | 0.7407390743437832 | [react-json-view](./r/react-json-view) | Interactive react component for displaying javascript arrays and JSON objects.
 | 0.7407162698539379 | [dom-testing-library](./d/dom-testing-library) | Simple and complete DOM testing utilities that encourage good testing practices.
 | 0.7406251021378167 | [koa-logger](./k/koa-logger) | Logging middleware for koa
 | 0.7406158105718823 | [lodash_dot_isarraylikeobject](./l/lodash_dot_isarraylikeobject) | The lodash method `_.isArrayLikeObject` exported as a module.
 | 0.7405934536692184 | [scryptsy](./s/scryptsy) | Pure JavaScript implementation of the scrypt key deriviation function that is fully compatible with Node.js and the browser.
 | 0.7404447857846247 | [pretty-time](./p/pretty-time) | Easily format the time from node.js `process.hrtime`. Works with timescales ranging from weeks to nanoseconds.
+| 0.7403852319739032 | [date-utils](./d/date-utils) | Date add-ons for Node.js
 | 0.7403133965312412 | [binaryextensions](./b/binaryextensions) | A package that contains an array of every single file extension there is for binary files
 | 0.7402908763174323 | [gulp-htmlmin](./g/gulp-htmlmin) | gulp plugin to minify HTML.
 | 0.7402207363599477 | [zen-observable](./z/zen-observable) | An Implementation of ES Observables
@@ -1535,6 +1542,7 @@
 | 0.7375229795951134 | [lodash_dot_findlastkey](./l/lodash_dot_findlastkey) | The lodash method `_.findLastKey` exported as a module.
 | 0.737441611579004 | [animejs](./a/animejs) | JavaScript animation engine
 | 0.7374225118287687 | [source-map-support](./s/source-map-support) | Fixes stack traces for files with source maps
+| 0.7373385803181369 | [text-extensions](./t/text-extensions) | List of text file extensions
 | 0.7373312964167378 | [lodash_dot_valuesin](./l/lodash_dot_valuesin) | The lodash method `_.valuesIn` exported as a module.
 | 0.7372929640900044 | [lodash_dot_subtract](./l/lodash_dot_subtract) | The lodash method `_.subtract` exported as a module.
 | 0.7372630139314941 | [chai-subset](./c/chai-subset) | Object properties matcher for Chai
@@ -2314,6 +2322,7 @@
 | 0.695537631594146 | [fastify-static](./f/fastify-static) | Plugin for serving static files as fast as possible.
 | 0.6954509859977442 | [ol](./o/ol) | OpenLayers mapping library
 | 0.6954064350892608 | [lowdb](./l/lowdb) | Small JSON database for Node, Electron and the browser. Powered by Lodash.
+| 0.6953359792491663 | [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in Javascript
 | 0.6953151474212332 | [critters-webpack-plugin](./c/critters-webpack-plugin) | Webpack plugin to inline critical CSS and lazy-load the rest.
 | 0.6952982379487352 | [next-redux-saga](./n/next-redux-saga) | redux-saga HOC for Next.js
 | 0.6952539583804505 | [feathersjs__socket-commons](./f/feathersjs__socket-commons) | Shared functionality for websocket providers
@@ -2323,6 +2332,7 @@
 | 0.6947422153855627 | [ink-select-input](./i/ink-select-input) | Select input component for Ink
 | 0.6947330151521061 | [ffmpeg-static](./f/ffmpeg-static) | ffmpeg static binaries for Mac OSX and Linux and Windows
 | 0.6947242670941693 | [tedious-connection-pool](./t/tedious-connection-pool) | Connection Pool for tedious.
+| 0.6946015535219066 | [proclaim](./p/proclaim) | A simple assertion library for server and client side JavaScript
 | 0.6945835667400014 | [mem-fs](./m/mem-fs) | Simple in-memory vinyl file store
 | 0.6945182911764484 | [stellar-sdk](./s/stellar-sdk) | stellar-sdk is a library for working with the Stellar Horizon server.
 | 0.6944957381185135 | [coinstring](./c/coinstring) | Create and parse crypto currency addresses and wallet import formats.
@@ -2561,7 +2571,6 @@
 | 0.6842374488860393 | [websequencediagrams](./w/websequencediagrams) | Interface to websequencediagrams.com
 | 0.6841977547054601 | [cancan](./c/cancan) | Authorize easily
 | 0.6841819576360488 | [rocksdb](./r/rocksdb) | A Node.js RocksDB binding, a backend for LevelUP
-| 0.6841583243356373 | [linkify-urls](./l/linkify-urls) | Linkify URLs in a string
 | 0.6841569300437635 | [node-hue-api](./n/node-hue-api) | Phillips Hue API Library for Node.js
 | 0.6841426671676234 | [icon-gen](./i/icon-gen) | Generate an icon files from the SVG or PNG files
 | 0.6840914866811708 | [secure-password](./s/secure-password) | Making Password storage safer for all
@@ -2971,7 +2980,6 @@
 | 0.6664647212697461 | [p-catch-if](./p/p-catch-if) | Conditional promise catch handler
 | 0.6663698062312542 | [strange](./s/strange) | Range aka interval object. Supports exclusive and infinite ranges. Comes with an interval tree (augmented binary search tree).
 | 0.6663193045710047 | [nock](./n/nock) | HTTP server mocking and expectations library for Node.js
-| 0.6662002779849738 | [linkify-issues](./l/linkify-issues) | Linkify GitHub issue references
 | 0.666182319470578 | [hexo](./h/hexo) | A fast, simple & powerful blog framework, powered by Node.js.
 | 0.6660869920096949 | [proxy-lists](./p/proxy-lists) | Get proxies from publicly available proxy lists.
 | 0.6660759396559688 | [ns-api](./n/ns-api) | Public transit data from Nederlandse Spoorwegen API
@@ -3067,6 +3075,7 @@
 | 0.660973769465206 | [discord-rpc](./d/discord-rpc) | A simple RPC client for Discord
 | 0.6606751298270572 | [caniuse-lite](./c/caniuse-lite) | A smaller version of caniuse-db, with only the essentials!
 | 0.6606086663099527 | [webpack-stream](./w/webpack-stream) | Run webpack as a stream
+| 0.6605311670987146 | [is-admin](./i/is-admin) | Check if the process is running as Administrator on Windows
 | 0.6604015522879685 | [js-data-adapter](./j/js-data-adapter) | Base adapter class that all other js-data adapters extend.
 | 0.6603782541063442 | [redux-saga-routines](./r/redux-saga-routines) | Routines for redux-saga also useful with redux-form
 | 0.6603305581850926 | [react-native-uuid-generator](./r/react-native-uuid-generator) | A simple wrapper around the native iOS and Android UUID classes for React Native
@@ -3311,6 +3320,7 @@
 | 0.647105715075404 | [git-add-remote](./g/git-add-remote) | API for adding git remotes.
 | 0.646979602442121 | [pretty-error](./p/pretty-error) | See nodejs errors with less clutter
 | 0.6468887049979006 | [react-file-reader-input](./r/react-file-reader-input) | React file input component for complete control over styling and abstraction from file reading.
+| 0.646877737476681 | [archive-extensions](./a/archive-extensions) | List of archive file extensions
 | 0.6468381932682513 | [year-days](./y/year-days) | Get the number of days in a year
 | 0.6467846940570077 | [react-native-uuid](./r/react-native-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUIDs for React Native
 | 0.6467670976593676 | [ts3-nodejs-library](./t/ts3-nodejs-library) | TeamSpeak3 Server Query API
@@ -3340,6 +3350,7 @@
 | 0.6453099175691255 | [centra](./c/centra) | The core lightweight HTTP client for Node
 | 0.6452223253753204 | [devtools-detect](./d/devtools-detect) | Detect if DevTools is open and its orientation
 | 0.6449809062851803 | [rmc-calendar](./r/rmc-calendar) | React Mobile Calendar Component(web and react-native)
+| 0.644940752408602 | [compressed-extensions](./c/compressed-extensions) | List of compressed file extensions
 | 0.6448658173961332 | [flushable](./f/flushable) | A flushable timeout function
 | 0.6448541692985521 | [google-apps-script](./g/google-apps-script) | gas, the complete CLI for Google Apps Script
 | 0.6447771795083685 | [localforage-cordovasqlitedriver](./l/localforage-cordovasqlitedriver) | SQLite driver for Cordova apps using localForage.
@@ -3493,6 +3504,7 @@
 | 0.6350805480697648 | [cypress](./c/cypress) | Cypress.io end to end testing tool
 | 0.6350547395462959 | [focus-trap](./f/focus-trap) | Trap focus within a DOM node.
 | 0.6349644180583907 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
+| 0.6348431230695428 | [reactour](./r/reactour) | Tourist Guide into your React Components
 | 0.6348278339562388 | [watson-developer-cloud](./w/watson-developer-cloud) | Client library to use the IBM Watson Services
 | 0.634699283113363 | [graphite-udp](./g/graphite-udp) | Graphite UDP client for Node.js
 | 0.6345893999157497 | [cheerio](./c/cheerio) | Tiny, fast, and elegant implementation of core jQuery designed specifically for the server
@@ -5197,6 +5209,7 @@
 | 0.388416102634182 | [precond](./p/precond) | Precondition checking utilities.
 | 0.38840299252647115 | [node-dir](./n/node-dir) | asynchronous file and directory operations for Node.js
 | 0.3880423871632668 | [network-interfaces](./n/network-interfaces) | Utility functions for dealing with network interfaces and IP addresses in Node.js
+| 0.3877829115337828 | [electron-clipboard-extended](./e/electron-clipboard-extended) | Electron clipboard extended with event handler for Text and Image change
 | 0.3875968347731651 | [dsv](./d/dsv) | A parser and formatter for DSV (CSV and TSV) files.
 | 0.3875947084226776 | [react-infinite-calendar](./r/react-infinite-calendar) | Infinite scrolling date-picker built with React, with localization, themes, keyboard support, and more.
 | 0.3874362737893101 | [menubar](./m/menubar) | high level way to create menubar desktop applications with electron
@@ -5264,6 +5277,7 @@
 | 0.37610216606596825 | [idyll-document](./i/idyll-document) | The Idyll runtime, implemented as a React component.
 | 0.37597402619571363 | [react-native-material-design-searchbar](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar
 | 0.37583400071847556 | [vue-markdown](./v/vue-markdown) | A Powerful and Highspeed Markdown Parser for Vue
+| 0.375327762450623 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and expanding long blocks of text with "Read more" and "Close" links.
 | 0.37513694283448057 | [jsonminify](./j/jsonminify) | JSON.minify() minifies blocks of JSON-like content into valid JSON by removing all whitespace *and* comments.
 | 0.3749484310017373 | [bunyan-format](./b/bunyan-format) | Writable stream that formats bunyan records that are piped into it.
 | 0.3749291418564459 | [auth0-angular](./a/auth0-angular) | Angular SDK to use with Auth0
@@ -5640,6 +5654,7 @@
 | 0.3143884221037217 | [lodash_dot_invoke](./l/lodash_dot_invoke) | The lodash method `_.invoke` exported as a module.
 | 0.31431238107762705 | [strip-color](./s/strip-color) | Strip ANSI color codes from a string. No dependencies.
 | 0.3140964218624908 | [react-native-percentage-circle](./r/react-native-percentage-circle) | react native percentage circle and also be a progress bar
+| 0.31397618662709653 | [pouchdb-live-find](./p/pouchdb-live-find) | Live PouchDB queries that update automatically as changes come in!
 | 0.3139137755138734 | [nivo__legends](./n/nivo__legends) | legend components for nivo dataviz library
 | 0.3134459890542705 | [react-radio-group](./r/react-radio-group) | Better radio buttons.
 | 0.31323792530113276 | [react-native-i18n](./r/react-native-i18n) | Provide I18n to your React Native application

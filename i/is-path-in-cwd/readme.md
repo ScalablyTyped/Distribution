@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-in-cwd
 
-Typings are for version 1.0
+Typings are for version 2.1.0
 
 ## Library description:
 Check if a path is in the current working directory
@@ -24,7 +24,7 @@ Check if a path is in the current working directory
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,23 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-path-in-cwd 1.0
-// Project: https://github.com/sindresorhus/is-path-in-cwd
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a path is in the [current working directory](https://en.wikipedia.org/wiki/Working_directory).
+
+@example
+```
+import isPathInCwd = require('is-path-in-cwd');
+
+isPathInCwd('unicorn');
+//=> true
+
+isPathInCwd('../rainbow');
+//=> false
+
+isPathInCwd('.');
+//=> false
+```
+*/
 
 ```
 

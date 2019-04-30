@@ -1072,10 +1072,14 @@ class Editor ()
   def setNodeByPath_Controller(path: slateLib.slateMod.Path, properties: slateLib.slateMod.NodeProperties): slateLib.slateMod.Controller = js.native
   @JSName("snapshotSelection")
   def snapshotSelection_Controller(): slateLib.slateMod.Controller = js.native
+  def splitBlock(): slateLib.slateMod.Editor = js.native
+  def splitBlockAtRange(range: slateLib.slateMod.Range): slateLib.slateMod.Editor = js.native
   @JSName("splitBlockAtRange")
   def splitBlockAtRange_Controller(range: slateLib.slateMod.Range, depth: scala.Double): slateLib.slateMod.Controller = js.native
   @JSName("splitBlock")
   def splitBlock_Controller(depth: scala.Double): slateLib.slateMod.Controller = js.native
+  def splitInline(): slateLib.slateMod.Editor = js.native
+  def splitInlineAtRange(range: slateLib.slateMod.Range): slateLib.slateMod.Editor = js.native
   @JSName("splitInlineAtRange")
   def splitInlineAtRange_Controller(range: slateLib.slateMod.Range, depth: scala.Double): slateLib.slateMod.Controller = js.native
   @JSName("splitInline")

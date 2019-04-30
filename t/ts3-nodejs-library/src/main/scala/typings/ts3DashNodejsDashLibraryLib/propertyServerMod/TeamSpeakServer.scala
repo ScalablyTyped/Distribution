@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakServer
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
+  var autostart: scala.Double = js.native
+  var clientsonline: scala.Double = js.native
+  var id: scala.Double = js.native
+  var maxclients: scala.Double = js.native
+  var name: java.lang.String = js.native
+  var port: scala.Double = js.native
+  var queryclientsonline: scala.Double = js.native
+  var status: java.lang.String = js.native
+  var uniqueIdentifier: java.lang.String = js.native
+  var uptime: scala.Double = js.native
   /**
     * Deletes the Server.
     */

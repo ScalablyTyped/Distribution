@@ -267,6 +267,7 @@
 | [arcgis-rest-api](./a/arcgis-rest-api) | - |
 | [arcgis-to-geojson-utils](./a/arcgis-to-geojson-utils) | Tools to convert ArcGIS JSON geometries to GeoJSON geometries and vica-versa. |
 | [architect](./a/architect) | A Simple yet powerful plugin system for node applications |
+| [archive-extensions](./a/archive-extensions) | List of archive file extensions |
 | [archiver](./a/archiver) | a streaming interface for archive generation |
 | [archy](./a/archy) | render nested hierarchies `npm ls` style with unicode pipes |
 | [are-we-there-yet](./a/are-we-there-yet) | Keep track of the overall completion of many disparate processes |
@@ -424,6 +425,7 @@
 | [bagpipes](./b/bagpipes) | Less code, more flow. Let's dance! |
 | [baidu-app](./b/baidu-app) | - |
 | [baidumap-web-sdk](./b/baidumap-web-sdk) | - |
+| [balanced-match](./b/balanced-match) | Match balanced character pairs, like "{" and "}" |
 | [bandagedbd__bdapi](./b/bandagedbd__bdapi) | - |
 | [barbellweights](./b/barbellweights) | Calculates the warmup sets, reps and plates for barbell lifts |
 | [barcode](./b/barcode) | Generate 1D and 2D barcodes |
@@ -474,6 +476,7 @@
 | [bigscreen](./b/bigscreen) | A simple library for using the JavaScript Fullscreen API. |
 | [bin-pack](./b/bin-pack) | A packing algorithm for 2D bin packing. Largely based on code and a blog post by Jake Gordon. |
 | [bin-version](./b/bin-version) | Get the version of a binary in semver format |
+| [binary-extensions](./b/binary-extensions) | List of binary file extensions |
 | [binary-parser](./b/binary-parser) | Blazing-fast binary parser builder |
 | [binary-search](./b/binary-search) | tiny binary search function with comparators |
 | [binaryextensions](./b/binaryextensions) | A package that contains an array of every single file extension there is for binary files |
@@ -773,6 +776,7 @@
 | [clockpicker](./c/clockpicker) | A clock-style timepicker for Bootstrap (or jQuery) |
 | [clone](./c/clone) | deep cloning of objects and arrays |
 | [clone-deep](./c/clone-deep) | Recursively (deep) clone JavaScript native types, like Object, Array, RegExp, Date as well as primitives. |
+| [clone-regexp](./c/clone-regexp) | Clone and modify a RegExp instance |
 | [cloneable-readable](./c/cloneable-readable) | Clone a Readable stream, safely |
 | [cloner](./c/cloner) | An ES5+ compatible utility to deep or shallow copy and merge objects. |
 | [closure-compiler](./c/closure-compiler) | Bindings to Google's Closure Compiler |
@@ -835,6 +839,7 @@
 | [complex_dot_js](./c/complex_dot_js) | A complex number library |
 | [component-emitter](./c/component-emitter) | Event emitter |
 | [compose-function](./c/compose-function) | Compose new functions f(g(x)) |
+| [compressed-extensions](./c/compressed-extensions) | List of compressed file extensions |
 | [compressible](./c/compressible) | Compressible Content-Type / mime checking |
 | [compression](./c/compression) | Node.js compression middleware |
 | [compression-webpack-plugin](./c/compression-webpack-plugin) | Prepare compressed versions of assets to serve them with Content-Encoding |
@@ -1104,6 +1109,7 @@
 | [date-arithmetic](./d/date-arithmetic) | simple date math util |
 | [date-fns](./d/date-fns) | Modern JavaScript date utility library |
 | [date-now](./d/date-now) | A requirable version of Date.now() |
+| [date-utils](./d/date-utils) | Date add-ons for Node.js |
 | [date_dot_format_dot_js](./d/date_dot_format_dot_js) | This package is no longer supported and has been deprecated. To avoid malicious use, npm is hanging on to the package name. |
 | [dateformat](./d/dateformat) | A node.js package for Steven Levithan's excellent dateFormat() function. |
 | [datejs](./d/datejs) | DateJS is the most full-featured, internationalized, open-source JavaScript Date Library. |
@@ -1340,6 +1346,7 @@
 | [elasticsearch](./e/elasticsearch) | The official low-level Elasticsearch client for Node.js and the browser. |
 | [electron](./e/electron) | Build cross platform desktop apps with JavaScript, HTML, and CSS |
 | [electron-builder](./e/electron-builder) | A complete solution to package and build a ready for distribution Electron app for MacOS, Windows and Linux with “auto update” support out of the box |
+| [electron-clipboard-extended](./e/electron-clipboard-extended) | Electron clipboard extended with event handler for Text and Image change |
 | [electron-debug](./e/electron-debug) | Adds useful debug features to your Electron app |
 | [electron-devtools-installer](./e/electron-devtools-installer) | An easy way to install Dev Tools extensions into Electron applications |
 | [electron-is-dev](./e/electron-is-dev) | Check if Electron is running in development |
@@ -1765,6 +1772,7 @@
 | [format-io](./f/format-io) | Format size, permissions |
 | [format-number](./f/format-number) | Formats numbers with separators every 3 digits and currency etc. Highly configurable. |
 | [format-unicorn](./f/format-unicorn) | Stack Exchange's string format function. |
+| [format-util](./f/format-util) | Lightweight util.format() for the browser. |
 | [formidable](./f/formidable) | A node.js module for parsing form data, especially file uploads. |
 | [formik](./f/formik) | Forms in React, without tears |
 | [forms](./f/forms) | An easy way to create, parse, and validate forms |
@@ -2463,6 +2471,7 @@
 | [imagemin-gifsicle](./i/imagemin-gifsicle) | Imagemin plugin for Gifsicle |
 | [imagemin-jpegtran](./i/imagemin-jpegtran) | jpegtran imagemin plugin |
 | [imagemin-optipng](./i/imagemin-optipng) | OptiPNG imagemin plugin |
+| [imagemin-pngquant](./i/imagemin-pngquant) | Imagemin plugin for `pngquant` |
 | [imagemin-svgo](./i/imagemin-svgo) | SVGO imagemin plugin |
 | [images](./i/images) | Cross-platform image decoder(webp/png/jpeg/gif) and encoder(webp/png/jpeg) for Node.js |
 | [imagesloaded](./i/imagesloaded) | JavaScript is all like _You images done yet or what?_ |
@@ -2558,6 +2567,7 @@
 | [is](./i/is) | the definitive JavaScript type testing library |
 | [is-absolute](./i/is-absolute) | Returns true if a file path is absolute. Does not rely on the path module and can be used as a polyfill for node.js native `path.isAbolute`. |
 | [is-absolute-url](./i/is-absolute-url) | Check if an URL is absolute |
+| [is-admin](./i/is-admin) | Check if the process is running as Administrator on Windows |
 | [is-alphanumerical](./i/is-alphanumerical) | Check if a character is alphanumerical |
 | [is-archive](./i/is-archive) | Check if a file path is an archive file |
 | [is-array](./i/is-array) | Check if the given value is an Array |
@@ -3220,9 +3230,7 @@
 | [lingui__core](./l/lingui__core) | I18n tools for javascript |
 | [lingui__macro](./l/lingui__macro) | Macro for generating messages in ICU MessageFormat syntax |
 | [lingui__react](./l/lingui__react) | React components for translations |
-| [linkify-issues](./l/linkify-issues) | Linkify GitHub issue references |
 | [linkify-it](./l/linkify-it) | Links recognition library with FULL unicode support |
-| [linkify-urls](./l/linkify-urls) | Linkify URLs in a string |
 | [linkifyjs](./l/linkifyjs) | Intelligent link recognition, made easy |
 | [linq](./l/linq) | linq.js - LINQ for JavaScript library packaged for node.js |
 | [linq4js](./l/linq4js) | Linq methods for JavaScript/TypeScript to work with Arrays |
@@ -4540,6 +4548,7 @@
 | [pouchdb-core](./p/pouchdb-core) | The core of PouchDB as a standalone package. |
 | [pouchdb-find](./p/pouchdb-find) | Easy-to-use query language for PouchDB |
 | [pouchdb-http](./p/pouchdb-http) | PouchDB as an HTTP-only package. |
+| [pouchdb-live-find](./p/pouchdb-live-find) | Live PouchDB queries that update automatically as changes come in! |
 | [pouchdb-mapreduce](./p/pouchdb-mapreduce) | PouchDB's map/reduce query API as a plugin. |
 | [pouchdb-node](./p/pouchdb-node) | PouchDB, the Node-only edition. |
 | [pouchdb-replication](./p/pouchdb-replication) | PouchDB's replication and sync algorithm, as a plugin. |
@@ -4575,6 +4584,7 @@
 | [private-ip](./p/private-ip) | Check if IP address is private. |
 | [probability-distributions](./p/probability-distributions) | Generate random variables from a variety of probability distributions. Includes tools to shuffle an array or sample from it. |
 | [procfs-stats](./p/procfs-stats) | get detailed information (more than ps, top etc) about running process on linux machines from node. |
+| [proclaim](./p/proclaim) | A simple assertion library for server and client side JavaScript |
 | [progress](./p/progress) | Flexible ascii progress bar |
 | [progress-stream](./p/progress-stream) | Read the progress of a stream |
 | [progressbar](./p/progressbar) | A nice wrapper around [TJ Holowaychuck's](https://github.com/visionmedia) [node-progress](https://github.com/visionmedia/node-progress) with chaining, domains, and steps |
@@ -5236,6 +5246,7 @@
 | [reactable](./r/reactable) | Fast, flexible, simple data tables in React |
 | [reactcss](./r/reactcss) | Bringing Classes to Inline Styles |
 | [reactjs-popup](./r/reactjs-popup) | React Popup Component - Modals,Tooltips and Menus —  All in one |
+| [reactour](./r/reactour) | Tourist Guide into your React Components |
 | [reactstrap](./r/reactstrap) | React Bootstrap 4 components |
 | [read](./r/read) | read(1) for node programs |
 | [read-chunk](./r/read-chunk) | Read a chunk from a file |
@@ -5248,6 +5259,7 @@
 | [readdir-stream](./r/readdir-stream) | Recursively read a directory and stream stats objects. |
 | [readline-sync](./r/readline-sync) | Synchronous Readline for interactively running to have a conversation with the user via a console(TTY). |
 | [readline-transform](./r/readline-transform) | Transform stream to read line-by-line and write a string |
+| [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and expanding long blocks of text with "Read more" and "Close" links. |
 | [realm](./r/realm) | Realm is a mobile database: an alternative to SQLite and key-value stores |
 | [reapop](./r/reapop) | A React and Redux notifications system |
 | [rebass](./r/rebass) | React primitive UI components built with styled-system |
@@ -5970,6 +5982,7 @@
 | [string-format](./s/string-format) | String formatting inspired by Python's str.format() |
 | [string-hash](./s/string-hash) | fast string hashing function |
 | [string-length](./s/string-length) | Get the real length of a string - by correctly counting astral symbols and ignoring ansi escape codes |
+| [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in Javascript |
 | [string-replace-webpack-plugin](./s/string-replace-webpack-plugin) | Replace string tokens in the contents of a file. |
 | [string-similarity](./s/string-similarity) | Finds degree of similarity between strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance. |
 | [string-template](./s/string-template) | A simple string template function based on named or indexed arguments |
@@ -6136,6 +6149,7 @@
 | [text-clipper](./t/text-clipper) | Fast and correct clip functions for HTML and plain text. |
 | [text-encoding](./t/text-encoding) | Polyfill for the Encoding Living Standard's API. |
 | [text-encoding-utf-8](./t/text-encoding-utf-8) | UTF-8 only polyfill for the Encoding Living Standard's API. |
+| [text-extensions](./t/text-extensions) | List of text file extensions |
 | [text-table](./t/text-table) | borderless text tables with alignment |
 | [textarea-caret](./t/textarea-caret) | (x, y) coordinates of the caret in a textarea or input type='text' |
 | [textextensions](./t/textextensions) | A package that contains an array of every single file extension there is for text files |
@@ -6702,6 +6716,7 @@
 | [xterm](./x/xterm) | Full xterm terminal, in your browser |
 | [xtuc__long](./x/xtuc__long) | A Long class for representing a 64-bit two's-complement integer value. |
 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript |
+| [y18n](./y/y18n) | the bare-bones internationalization library used by yargs |
 | [yallist](./y/yallist) | Yet Another Linked List |
 | [yaml](./y/yaml) | JavaScript parser and stringifier for YAML |
 | [yamljs](./y/yamljs) | Standalone JavaScript YAML 1.2 Parser & Encoder. Works under node.js and all major browsers. Also brings command line YAML/JSON conversion tools. |

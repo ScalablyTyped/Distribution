@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fabricLib.fabricDashImplMod.TextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, underline, overline, linethrough, textAlign, fontStyle, lineHeight, superscript, subscript, textBackgroundColor, charSpacing, styles, deltaY, text, textLines */ @JSImport("fabric/fabric-impl", "Text")
+- fabricLib.fabricDashImplMod.TextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, underline, overline, linethrough, textAlign, fontStyle, lineHeight, superscript, subscript, textBackgroundColor, charSpacing, styles, deltaY, text */ @JSImport("fabric/fabric-impl", "Text")
 @js.native
 class Text protected () extends Object {
   /**
@@ -16,6 +16,36 @@ class Text protected () extends Object {
   	 */
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, options: TextOptions) = this()
+  /**
+    * List of line heights
+    * @private
+    * @type Array<Number>
+    */
+  var __lineHeights: js.Array[scala.Double] = js.native
+  /**
+    * @private
+    * @type Number
+    */
+  var _fontSizeFraction: scala.Double = js.native
+  /**
+    * Text Line proportion to font Size (in pixels)
+    * @private
+    * @type Number
+    */
+  var _fontSizeMult: scala.Double = js.native
+  /**
+    * Use this regular expression to filter for whitespaces that is not a new line.
+    * Mostly used when text is 'justify' aligned.
+    * @private
+    * @type RegExp
+    */
+  var _reSpacesAndTabs: stdLib.RegExp = js.native
+  /**
+    * List of grapheme lines in text object
+    * @private
+    * @type Array<string>
+    */
+  var _textLines: js.Array[js.Array[java.lang.String]] = js.native
   /**
   	 * additional space between characters
   	 * expressed in thousands of em unit
@@ -96,18 +126,41 @@ class Text protected () extends Object {
     * List of lines in text object
     * @type Array<string>
     */
-  var textLines: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var textLines: js.Array[java.lang.String] = js.native
   /**
   	 * Text decoration underline.
   	 * @type Boolean
   	 */
   var underline: js.UndefOr[scala.Boolean] = js.native
   /**
+    * apply all the character style to canvas for rendering
+    * @private
+    * @param {String} _char
+    * @param {CanvasRenderingContext2D} ctx Context to render on
+    * @param {Number} lineIndex
+    * @param {Number} charIndex
+    * @param {Object} [decl]
+    */
+  def _applyCharStyles(
+    method: java.lang.String,
+    ctx: stdLib.CanvasRenderingContext2D,
+    lineIndex: scala.Double,
+    charIndex: scala.Double,
+    styleDeclaration: js.Any
+  ): scala.Unit = js.native
+  /**
   	 * @private
   	 * @param {Number} lineIndex index text line
   	 * @return {Number} Line left offset
   	 */
   def _getLineLeftOffset(lineIndex: scala.Double): scala.Double = js.native
+  /**
+    * get the reference, not a clone, of the style object for a given character
+    * @param {Number} lineIndex
+    * @param {Number} charIndex
+    * @return {Object} style object
+    */
+  def _getStyleDeclaration(lineIndex: scala.Double, charIndex: scala.Double): js.Any = js.native
   /**
   	 * Calculate text box height
   	 */

@@ -27,11 +27,11 @@ trait EbsBlockDevice extends js.Object {
     */
   var SnapshotId: js.UndefOr[String] = js.undefined
   /**
-    * The size of the volume, in GiB. Constraints: 1-16384 for General Purpose SSD (gp2), 4-16384 for Provisioned IOPS SSD (io1), 500-16384 for Throughput Optimized HDD (st1), 500-16384 for Cold HDD (sc1), and 1-1024 for Magnetic (standard) volumes. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
+    * The size of the volume, in GiB. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size. Constraints: 1-16384 for General Purpose SSD (gp2), 4-16384 for Provisioned IOPS SSD (io1), 500-16384 for Throughput Optimized HDD (st1), 500-16384 for Cold HDD (sc1), and 1-1024 for Magnetic (standard) volumes. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size.
     */
   var VolumeSize: js.UndefOr[Integer] = js.undefined
   /**
-    * The volume type: gp2, io1, st1, sc1, or standard. Default: standard 
+    * The volume type. If you set the type to io1, you must also set the Iops property. Default: standard 
     */
   var VolumeType: js.UndefOr[VolumeType] = js.undefined
 }

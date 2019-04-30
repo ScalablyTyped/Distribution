@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SqlTaggedTemplateType extends js.Object {
-  def apply(template: stdLib.TemplateStringsArray, vals: ValueExpressionType*): SqlSqlTokenType = js.native
+  // tslint:disable-next-line no-unnecessary-generics (the sql<Foo>`select foo` is cleaner in this case than casting with 'as')
+  def apply[T](template: stdLib.TemplateStringsArray, vals: ValueExpressionType*): SqlSqlTokenType[T] = js.native
   def array(values: js.Array[PrimitiveValueExpressionType], memberType: java.lang.String): ArraySqlTokenType = js.native
   def assignmentList(namedAssignmentValueBindings: NamedAssignmentType): AssignmentListTokenType = js.native
   def booleanExpression(members: js.Array[ValueExpressionType], operator: LogicalBooleanOperatorType): BooleanExpressionTokenType = js.native

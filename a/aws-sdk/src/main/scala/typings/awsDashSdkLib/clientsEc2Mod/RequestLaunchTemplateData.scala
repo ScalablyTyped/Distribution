@@ -23,7 +23,7 @@ trait RequestLaunchTemplateData extends js.Object {
     */
   var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.undefined
   /**
-    * If set to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API. To change this attribute to false after launch, use ModifyInstanceAttribute.
+    * If set to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API. To change this attribute to false after launch, use  ModifyInstanceAttribute.
     */
   var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
   /**

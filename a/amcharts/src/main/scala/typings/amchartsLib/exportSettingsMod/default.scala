@@ -19,6 +19,26 @@ class default () extends ExportSettings {
   /* CompleteClass */
   override def capture(config: js.Any, callback: js.Function0[scala.Unit]): js.Any = js.native
   /* CompleteClass */
-  override def toJPG(config: js.Any, callback: js.Function1[/* config */ js.Any, scala.Unit]): js.Any = js.native
+  override def toArray(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toBlob(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toCSV(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toCanvas(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toImage(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toJPG(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toJSON(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toPDF(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toPNG(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toSVG(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
+  /* CompleteClass */
+  override def toXLSX(options: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Any = js.native
 }
 

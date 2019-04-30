@@ -23,7 +23,7 @@ trait ScheduledInstancesNetworkInterface extends js.Object {
     */
   var DeviceIndex: js.UndefOr[Integer] = js.undefined
   /**
-    * The IDs of one or more security groups.
+    * The IDs of the security groups.
     */
   var Groups: js.UndefOr[ScheduledInstancesSecurityGroupIdSet] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait ScheduledInstancesNetworkInterface extends js.Object {
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   /**
-    * One or more specific IPv6 addresses from the subnet range.
+    * The specific IPv6 addresses from the subnet range.
     */
   var Ipv6Addresses: js.UndefOr[ScheduledInstancesIpv6AddressList] = js.undefined
   /**

@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-//
-// XMLHttpRequest
-//
 trait XMLHttpRequestEventMap extends XMLHttpRequestEventTargetEventMap {
   var readystatechange: stdLib.Event
 }
@@ -15,14 +12,14 @@ trait XMLHttpRequestEventMap extends XMLHttpRequestEventTargetEventMap {
 object XMLHttpRequestEventMap {
   @scala.inline
   def apply(
-    abort: stdLib.Event,
-    error: stdLib.Event,
-    load: stdLib.Event,
-    loadend: stdLib.Event,
-    loadstart: stdLib.Event,
-    progress: stdLib.Event,
+    abort: ProgressEvent,
+    error: ProgressEvent,
+    load: ProgressEvent,
+    loadend: ProgressEvent,
+    loadstart: ProgressEvent,
+    progress: ProgressEvent,
     readystatechange: stdLib.Event,
-    timeout: stdLib.Event
+    timeout: ProgressEvent
   ): XMLHttpRequestEventMap = {
     val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress, readystatechange = readystatechange, timeout = timeout)
   

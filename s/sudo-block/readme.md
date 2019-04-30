@@ -1,7 +1,7 @@
 
 # Scala.js typings for sudo-block
 
-Typings are for version 1.2
+Typings are for version 3.0.0
 
 ## Library description:
 Block users from running your app with root permissions
@@ -24,7 +24,7 @@ Block users from running your app with root permissions
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,18 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for sudo-block 1.2
-// Project: https://github.com/sindresorhus/sudo-block
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Block users from running your app with root permissions. When a file containing this function is run with root permissions it will exit and show an error message telling the user how to fix the problem, so they don't have to run it with `sudo`.
+
+@param message - Custom message.
+
+@example
+```
+import sudoBlock = require('sudo-block');
+
+sudoBlock();
+```
+*/
 
 ```
 

@@ -22,6 +22,12 @@ class Object ()
   	 * @return {Object} offset.offsetY offset for text rendering
   	 */
   def _applyPatternGradientTransform(ctx: stdLib.CanvasRenderingContext2D, filler: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns the top, left coordinates
+    * @private
+    * @return {fabric.Point}
+    */
+  def _getLeftTopCoords(): Point = js.native
   /*
     * Calculate object dimensions from its properties
     * @private
@@ -29,6 +35,15 @@ class Object ()
     * @return {Object} .y height dimension
     */
   def _getNonTransformedDimensions(): fabricLib.Anon_X = js.native
+  /*
+    * Calculate object bounding box dimensions from its properties scale, skew.
+    * @private
+    * @return {Object} .x width dimension
+    * @return {Object} .y height dimension
+    */
+  def _getTransformedDimensions(): fabricLib.Anon_X = js.native
+  def _getTransformedDimensions(skewX: scala.Double): fabricLib.Anon_X = js.native
+  def _getTransformedDimensions(skewX: scala.Double, skewY: scala.Double): fabricLib.Anon_X = js.native
   /**
   	 * @private
   	 * @param {CanvasRenderingContext2D} ctx Context to render on
@@ -743,5 +758,28 @@ class Object ()
   	 * @return {Boolean}
   	 */
   def willDrawShadow(): scala.Boolean = js.native
+}
+
+/* static members */
+@JSImport("fabric/fabric-impl", "Object")
+@js.native
+object Object extends js.Object {
+  /**
+    * Creates fabric Object instance
+    * @param {string} Class name
+    * @param {fabric.Object} Original object
+    * @param {Function} Callback when complete
+    * @param {Object} Extra parameters for fabric.Object
+    * @private
+    * @return {fabric.Object}
+    */
+  def _fromObject(className: java.lang.String, `object`: fabricLib.fabricDashImplMod.Object): fabricLib.fabricDashImplMod.Object = js.native
+  def _fromObject(className: java.lang.String, `object`: fabricLib.fabricDashImplMod.Object, callback: js.Function): fabricLib.fabricDashImplMod.Object = js.native
+  def _fromObject(
+    className: java.lang.String,
+    `object`: fabricLib.fabricDashImplMod.Object,
+    callback: js.Function,
+    extraParam: js.Any
+  ): fabricLib.fabricDashImplMod.Object = js.native
 }
 

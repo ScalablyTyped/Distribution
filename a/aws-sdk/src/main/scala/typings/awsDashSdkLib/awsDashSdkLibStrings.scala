@@ -23365,6 +23365,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsApplicationautoscalingMod._ScalableDimension
   
   @js.native
+  sealed trait efa
+    extends awsDashSdkLib.clientsEc2Mod._NetworkInterfaceType
+  
+  @js.native
   sealed trait el
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
   
@@ -37506,6 +37510,8 @@ object awsDashSdkLibStrings {
   def `ecs-cluster`: `ecs-cluster` = "ecs-cluster".asInstanceOf[`ecs-cluster`]
   @scala.inline
   def `ecs:service:DesiredCount`: `ecs:service:DesiredCount` = "ecs:service:DesiredCount".asInstanceOf[`ecs:service:DesiredCount`]
+  @scala.inline
+  def efa: efa = "efa".asInstanceOf[efa]
   @scala.inline
   def el: el = "el".asInstanceOf[el]
   @scala.inline

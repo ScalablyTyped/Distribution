@@ -1068,11 +1068,27 @@ object jestNs extends js.Object {
     def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
     {[ P in keyof R ]: any}
       */ jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T], snapshot: java.lang.String): R = js.native
-    def toMatchObject(expected: js.Array[_]): R = js.native
     /**
       * Used to check that a JavaScript object matches a subset of the properties of an object
+      *
+      * Optionally, you can provide an object to use as Generic type for the expected value.
+      * This ensures that the matching object matches the structure of the provided object-like type.
+      *
+      * @example
+      *
+      * type House = {
+      *   bath: boolean;
+      *   bedrooms: number;
+      *   kitchen: {
+      *     amenities: string[];
+      *     area: number;
+      *     wallColor: string;
+      *   }
+      * };
+      *
+      * expect(desiredHouse).toMatchObject<House>(...standardHouse, kitchen: {area: 20}) // wherein standardHouse is some base object of type House
       */
-    def toMatchObject(expected: js.Object): R = js.native
+    def toMatchObject[E /* <: js.Object | js.Array[_] */](expected: E): R = js.native
     /**
       * This ensures that a value matches the most recent snapshot.
       * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.

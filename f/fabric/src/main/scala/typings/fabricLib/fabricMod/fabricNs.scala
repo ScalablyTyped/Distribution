@@ -275,6 +275,7 @@ object fabricNs extends js.Object {
   val isLikelyNode: scala.Boolean = js.native
   val isTouchSupported: scala.Boolean = js.native
   val util: fabricLib.fabricDashImplMod.IUtil = js.native
+  val version: java.lang.String = js.native
   def createCanvasForNode(width: scala.Double, height: scala.Double): fabricLib.fabricDashImplMod.Canvas = js.native
   def createSVGFontFacesMarkup(objects: js.Array[fabricLib.fabricDashImplMod.Object]): java.lang.String = js.native
   def createSVGRefElementsMarkup(canvas: fabricLib.fabricDashImplMod.StaticCanvas): java.lang.String = js.native
@@ -617,6 +618,28 @@ object fabricNs extends js.Object {
     	 * @param object Object to create an instance from
     	 */
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Line = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Object extends js.Object {
+    /**
+      * Creates fabric Object instance
+      * @param {string} Class name
+      * @param {fabric.Object} Original object
+      * @param {Function} Callback when complete
+      * @param {Object} Extra parameters for fabric.Object
+      * @private
+      * @return {fabric.Object}
+      */
+    def _fromObject(className: java.lang.String, `object`: fabricLib.fabricDashImplMod.Object): fabricLib.fabricDashImplMod.Object = js.native
+    def _fromObject(className: java.lang.String, `object`: fabricLib.fabricDashImplMod.Object, callback: js.Function): fabricLib.fabricDashImplMod.Object = js.native
+    def _fromObject(
+      className: java.lang.String,
+      `object`: fabricLib.fabricDashImplMod.Object,
+      callback: js.Function,
+      extraParam: js.Any
+    ): fabricLib.fabricDashImplMod.Object = js.native
   }
   
   /* static members */

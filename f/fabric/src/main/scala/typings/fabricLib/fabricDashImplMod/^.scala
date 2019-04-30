@@ -12,6 +12,7 @@ object ^ extends js.Object {
   val isLikelyNode: scala.Boolean = js.native
   val isTouchSupported: scala.Boolean = js.native
   val util: IUtil = js.native
+  val version: java.lang.String = js.native
   def createCanvasForNode(width: scala.Double, height: scala.Double): Canvas = js.native
   def createSVGFontFacesMarkup(objects: js.Array[Object]): java.lang.String = js.native
   def createSVGRefElementsMarkup(canvas: StaticCanvas): java.lang.String = js.native

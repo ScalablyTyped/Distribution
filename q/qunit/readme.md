@@ -1,7 +1,7 @@
 
 # Scala.js typings for qunit
 
-Typings are for version v2.5.0
+Typings are for version v2.9.2
 
 ## Library description:
 An easy-to-use JavaScript Unit Testing framework.
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for QUnit v2.5.0
+// Type definitions for QUnit v2.9.2
 // Project: http://qunitjs.com/
 // Definitions by: James Bracy <https://github.com/waratuman>
 //                 Mike North <https://github.com/mike-north>
+//                 Stefan Sechelmann <https://github.com/sechel>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

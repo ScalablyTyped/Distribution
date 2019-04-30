@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ImageAttribute extends js.Object {
   /**
-    * One or more block device mapping entries.
+    * The block device mapping entries.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   /**
@@ -23,11 +23,11 @@ trait ImageAttribute extends js.Object {
     */
   var KernelId: js.UndefOr[AttributeValue] = js.undefined
   /**
-    * One or more launch permissions.
+    * The launch permissions.
     */
   var LaunchPermissions: js.UndefOr[LaunchPermissionList] = js.undefined
   /**
-    * One or more product codes.
+    * The product codes.
     */
   var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   /**

@@ -119,6 +119,7 @@ object ITextboxOptions {
     scaleX: scala.Int | scala.Double = null,
     scaleY: scala.Int | scala.Double = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
     selectionBackgroundColor: java.lang.String = null,
     selectionColor: java.lang.String = null,
     selectionEnd: scala.Int | scala.Double = null,
@@ -145,7 +146,6 @@ object ITextboxOptions {
     text: java.lang.String = null,
     textAlign: java.lang.String = null,
     textBackgroundColor: java.lang.String = null,
-    textLines: js.Array[java.lang.String] = null,
     top: scala.Int | scala.Double = null,
     transformMatrix: js.Array[_] = null,
     transparentCorners: js.UndefOr[scala.Boolean] = js.undefined,
@@ -245,6 +245,7 @@ object ITextboxOptions {
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
     if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (selectionBackgroundColor != null) __obj.updateDynamic("selectionBackgroundColor")(selectionBackgroundColor)
     if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
     if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
@@ -271,7 +272,6 @@ object ITextboxOptions {
     if (text != null) __obj.updateDynamic("text")(text)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
     if (textBackgroundColor != null) __obj.updateDynamic("textBackgroundColor")(textBackgroundColor)
-    if (textLines != null) __obj.updateDynamic("textLines")(textLines)
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (transformMatrix != null) __obj.updateDynamic("transformMatrix")(transformMatrix)
     if (!js.isUndefined(transparentCorners)) __obj.updateDynamic("transparentCorners")(transparentCorners)

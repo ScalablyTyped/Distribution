@@ -31,15 +31,15 @@ trait ModifyImageAttributeRequest extends js.Object {
     */
   var OperationType: js.UndefOr[OperationType] = js.undefined
   /**
-    * One or more DevPay product codes. After you add a product code to an AMI, it can't be removed.
+    * The DevPay product codes. After you add a product code to an AMI, it can't be removed.
     */
   var ProductCodes: js.UndefOr[ProductCodeStringList] = js.undefined
   /**
-    * One or more user groups. This parameter can be used only when the Attribute parameter is launchPermission.
+    * The user groups. This parameter can be used only when the Attribute parameter is launchPermission.
     */
   var UserGroups: js.UndefOr[UserGroupStringList] = js.undefined
   /**
-    * One or more AWS account IDs. This parameter can be used only when the Attribute parameter is launchPermission.
+    * The AWS account IDs. This parameter can be used only when the Attribute parameter is launchPermission.
     */
   var UserIds: js.UndefOr[UserIdStringList] = js.undefined
   /**

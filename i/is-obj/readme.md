@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-obj
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Check if a value is an object
@@ -24,7 +24,7 @@ Check if a value is an object
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,11 +35,25 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-obj 1.0
-// Project: https://github.com/sindresorhus/is-obj#readme
-// Definitions by: Emily Marigold Klassen <https://github.com/forivall>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+/**
+Check if a value is an object.
+
+Keep in mind that array, function, regexp, etc, are objects in JavaScript.
+
+@example
+```
+import isObject = require('is-obj');
+
+isObject({foo: 'bar'});
+//=> true
+
+isObject([1, 2, 3]);
+//=> true
+
+isObject('foo');
+//=> false
+```
+*/
 
 ```
 

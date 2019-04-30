@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-event-listener"
-version := "0.4-dt-20190206Z-543eab"
+version := "0.4-dt-20190206Z-d7dfd6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190419Z-caf3c8",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-caf3c8",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

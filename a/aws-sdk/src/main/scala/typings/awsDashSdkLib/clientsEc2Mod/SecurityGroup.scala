@@ -23,7 +23,7 @@ trait SecurityGroup extends js.Object {
     */
   var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   /**
-    * [EC2-VPC] The outbound rules associated with the security group.
+    * [VPC only] The outbound rules associated with the security group.
     */
   var IpPermissionsEgress: js.UndefOr[IpPermissionList] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait SecurityGroup extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * [EC2-VPC] The ID of the VPC for the security group.
+    * [VPC only] The ID of the VPC for the security group.
     */
   var VpcId: js.UndefOr[String] = js.undefined
 }

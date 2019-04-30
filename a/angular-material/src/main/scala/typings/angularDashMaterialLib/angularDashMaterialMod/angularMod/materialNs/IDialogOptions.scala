@@ -62,6 +62,8 @@ trait IDialogOptions extends js.Object {
   var targetEvent: js.UndefOr[stdLib.MouseEvent] = js.undefined
   var template: js.UndefOr[java.lang.String] = js.undefined
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
+   // default: false
+  var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IDialogOptions {
@@ -92,7 +94,8 @@ object IDialogOptions {
     skipHide: js.UndefOr[scala.Boolean] = js.undefined,
     targetEvent: stdLib.MouseEvent = null,
     template: java.lang.String = null,
-    templateUrl: java.lang.String = null
+    templateUrl: java.lang.String = null,
+    title: java.lang.String = null
   ): IDialogOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoWrap)) __obj.updateDynamic("autoWrap")(autoWrap)
@@ -121,6 +124,7 @@ object IDialogOptions {
     if (targetEvent != null) __obj.updateDynamic("targetEvent")(targetEvent)
     if (template != null) __obj.updateDynamic("template")(template)
     if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[IDialogOptions]
   }
 }

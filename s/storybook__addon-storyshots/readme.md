@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-storyshots
 
-Typings are for version 3.4
+Typings are for version 4.0
 
 ## Library description:
 StoryShots is a Jest Snapshot Testing Addon for Storybook.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for @storybook/addon-storyshots 3.4
+// Type definitions for @storybook/addon-storyshots 4.0
 // Project: https://github.com/storybooks/storybook/tree/master/addons/storyshots, https://github.com/storybooks/storybook/tree/master/addons/storyshots/storyshots-core
 // Definitions by: Bradley Ayers <https://github.com/bradleyayers>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

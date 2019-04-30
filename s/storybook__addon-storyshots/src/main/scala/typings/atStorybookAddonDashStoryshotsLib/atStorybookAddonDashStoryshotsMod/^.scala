@@ -16,6 +16,8 @@ object ^ extends js.Object {
   def imageSnapshot(): Test = js.native
   def imageSnapshot(options: atStorybookAddonDashStoryshotsLib.Anon_BeforeScreenshot): Test = js.native
   def multiSnapshotWithOptions(options: SnapshotOptions): Test = js.native
+  def renderWithOptions(): Test = js.native
+  def renderWithOptions(options: SnapshotOptions): Test = js.native
   def snapshotWithOptions(options: SnapshotOptions): Test = js.native
 }
 

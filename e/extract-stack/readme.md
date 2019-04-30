@@ -1,7 +1,7 @@
 
 # Scala.js typings for extract-stack
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Extract the actual stack of an error
@@ -24,21 +24,11 @@ Extract the actual stack of an error
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for extract-stack 1.0
-// Project: https://github.com/sindresorhus/extract-stack#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -973,6 +973,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type NetworkInterfaceAttribute = _NetworkInterfaceAttribute | java.lang.String
+  type NetworkInterfaceCreationType = awsDashSdkLib.awsDashSdkLibStrings.efa | java.lang.String
   type NetworkInterfaceIdList = js.Array[String]
   type NetworkInterfaceIpv6AddressesList = js.Array[NetworkInterfaceIpv6Address]
   type NetworkInterfaceList = js.Array[NetworkInterface]
@@ -999,6 +1000,7 @@ package object clientsEc2Mod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.interface
     - awsDashSdkLib.awsDashSdkLibStrings.natGateway
+    - awsDashSdkLib.awsDashSdkLibStrings.efa
     - java.lang.String
   */
   type NetworkInterfaceType = _NetworkInterfaceType | java.lang.String

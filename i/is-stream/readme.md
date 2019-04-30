@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-stream
 
-Typings are for version 1.1
+Typings are for version 2.0.0
 
 ## Library description:
 Check if something is a Node.js stream
@@ -24,21 +24,11 @@ Check if something is a Node.js stream
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for is-stream 1.1
-// Project: https://github.com/sindresorhus/is-stream#readme
-// Definitions by: BendingBender <https://github.com/me>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

@@ -9,8 +9,23 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * Get an array of valid, sorted, and cleaned [semver](http://semver.org/) versions from an array of strings.
-    */
+  Get an array of valid, sorted, and cleaned [semver](https://semver.org/) versions from an array of strings.
+  @example
+  ```
+  import toSemver = require('to-semver');
+  toSemver([
+  	'v1.3.16',
+  	'v1.7.0',
+  	'test',
+  	'v1.6.9'
+  ]);
+  // [
+  // 	'1.7.0',
+  // 	'1.6.9'
+  // 	'1.3.16'
+  // ]
+  ```
+  */
   def apply(versions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def apply(versions: js.Array[java.lang.String], options: Options): js.Array[java.lang.String] = js.native
 }

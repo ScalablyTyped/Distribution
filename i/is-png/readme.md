@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-png
 
-Typings are for version 1.1
+Typings are for version 2.0.0
 
 ## Library description:
 Check if a Buffer/Uint8Array is a PNG image
@@ -24,21 +24,11 @@ Check if a Buffer/Uint8Array is a PNG image
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for is-png 1.1
-// Project: https://github.com/sindresorhus/is-png#readme
-// Definitions by: James Wild <https://github.com/jameswilddev>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

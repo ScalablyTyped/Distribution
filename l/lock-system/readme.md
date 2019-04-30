@@ -1,7 +1,7 @@
 
 # Scala.js typings for lock-system
 
-Typings are for version 1.3
+Typings are for version 2.0.0
 
 ## Library description:
 Lock your system
@@ -24,7 +24,7 @@ Lock your system
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,18 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for lock-system 1.3
-// Project: https://github.com/sindresorhus/lock-system#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Lock your system. Shows the login screen the next time you use the computer.
+
+Throws an `Error` if executing the lock command fails or if the OS is not supported.
+
+@example
+```
+import lockSystem = require('lock-system');
+
+lockSystem();
+```
+*/
 
 ```
 

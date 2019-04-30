@@ -27,7 +27,7 @@ trait NetworkInterface extends js.Object {
     */
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   /**
-    * The type of interface.
+    * The type of network interface.
     */
   var InterfaceType: js.UndefOr[NetworkInterfaceType] = js.undefined
   /**

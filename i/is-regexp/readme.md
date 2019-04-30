@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-regexp
 
-Typings are for version 2.0
+Typings are for version 2.1.0
 
 ## Library description:
 Check if a value is a regular expression
@@ -24,7 +24,7 @@ Check if a value is a regular expression
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,11 +35,23 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-regexp 2.0
-// Project: https://github.com/sindresorhus/is-regexp#readme
-// Definitions by: Emily Marigold Klassen <https://github.com/forivall>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+/**
+Check if a value is a regular expression.
+
+@example
+```
+import isRegexp = require('is-regexp');
+
+isRegexp('unicorn');
+//=> false
+
+isRegexp(/unicorn/);
+//=> true
+
+isRegexp(new RegExp('unicorn'));
+//=> true
+```
+*/
 
 ```
 

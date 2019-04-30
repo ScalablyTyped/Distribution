@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-compressed
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Check if a file path is a compressed file
@@ -24,7 +24,7 @@ Check if a file path is a compressed file
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-compressed 1.0
-// Project: https://github.com/sindresorhus/is-compressed
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a file path is a compressed file.
+
+@example
+```
+import isCompressed = require('is-compressed');
+
+isCompressed('source/unicorn.zip');
+//=> true
+
+isCompressed('source/unicorn.txt');
+//=> false
+```
+*/
 
 ```
 

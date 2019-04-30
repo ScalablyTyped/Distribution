@@ -68,21 +68,7 @@ trait ClusterInstanceState extends js.Object {
   val identifierPrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The instance class to use. For details on CPU
-    * and memory, see [Scaling Aurora DB Instances][4]. Aurora currently
-    * supports the below instance classes. Please see [AWS Documentation][7] for complete details.
-    * - db.t2.small
-    * - db.t2.medium
-    * - db.r3.large
-    * - db.r3.xlarge
-    * - db.r3.2xlarge
-    * - db.r3.4xlarge
-    * - db.r3.8xlarge
-    * - db.r4.large
-    * - db.r4.xlarge
-    * - db.r4.2xlarge
-    * - db.r4.4xlarge
-    * - db.r4.8xlarge
-    * - db.r4.16xlarge
+    * and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
     */
   val instanceClass: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

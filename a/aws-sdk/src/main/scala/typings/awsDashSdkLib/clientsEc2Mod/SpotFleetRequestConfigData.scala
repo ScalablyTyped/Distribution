@@ -35,11 +35,11 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined
   /**
-    * The launch specifications for the Spot Fleet request.
+    * The launch specifications for the Spot Fleet request. If you specify LaunchSpecifications, you can't specify LaunchTemplateConfigs.
     */
   var LaunchSpecifications: js.UndefOr[LaunchSpecsList] = js.undefined
   /**
-    * The launch template and overrides.
+    * The launch template and overrides. If you specify LaunchTemplateConfigs, you can't specify LaunchSpecifications.
     */
   var LaunchTemplateConfigs: js.UndefOr[LaunchTemplateConfigList] = js.undefined
   /**

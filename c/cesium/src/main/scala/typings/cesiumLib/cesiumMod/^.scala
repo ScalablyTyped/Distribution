@@ -119,6 +119,7 @@ object ^ extends js.Object {
   def queryToObject(queryString: java.lang.String): js.Any = js.native
   def requestAnimationFrame(callback: cesiumLib.cesiumMod.requestAnimationFrameNs.Callback): scala.Double = js.native
   def sampleTerrain(terrainProvider: TerrainProvider, level: scala.Double, positions: js.Array[Cartographic]): js.Promise[js.Array[Cartographic]] = js.native
+  def sampleTerrainMostDetailed(terrainProvider: TerrainProvider, positions: js.Array[Cartographic]): js.Promise[js.Array[Cartographic]] = js.native
   def subdivideArray(array: js.Array[_], numberOfArrays: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def throttleRequestByServer(
     url: java.lang.String,

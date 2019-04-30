@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BooleanExpressionTokenType extends SqlTokenType {
+trait BooleanExpressionTokenType extends _SqlTokenType {
   var members: js.Array[ValueExpressionType]
   var operator: LogicalBooleanOperatorType
   var `type`: js.Symbol

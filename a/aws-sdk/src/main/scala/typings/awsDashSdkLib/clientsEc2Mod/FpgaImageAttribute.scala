@@ -15,7 +15,7 @@ trait FpgaImageAttribute extends js.Object {
     */
   var FpgaImageId: js.UndefOr[String] = js.undefined
   /**
-    * One or more load permissions.
+    * The load permissions.
     */
   var LoadPermissions: js.UndefOr[LoadPermissionList] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait FpgaImageAttribute extends js.Object {
     */
   var Name: js.UndefOr[String] = js.undefined
   /**
-    * One or more product codes.
+    * The product codes.
     */
   var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
 }

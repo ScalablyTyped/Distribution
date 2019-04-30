@@ -70,6 +70,7 @@ trait Anon_AcmAcmpca extends js.Object {
   var kinesis: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var kinesisAnalytics: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var kinesisanalytics: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var kinesisvideo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var kms: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var lambda: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var lexmodels: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -188,6 +189,7 @@ object Anon_AcmAcmpca {
     kinesis: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kinesisAnalytics: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kinesisanalytics: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kinesisvideo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kms: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     lambda: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     lexmodels: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -303,6 +305,7 @@ object Anon_AcmAcmpca {
     if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
     if (kinesisAnalytics != null) __obj.updateDynamic("kinesisAnalytics")(kinesisAnalytics.asInstanceOf[js.Any])
     if (kinesisanalytics != null) __obj.updateDynamic("kinesisanalytics")(kinesisanalytics.asInstanceOf[js.Any])
+    if (kinesisvideo != null) __obj.updateDynamic("kinesisvideo")(kinesisvideo.asInstanceOf[js.Any])
     if (kms != null) __obj.updateDynamic("kms")(kms.asInstanceOf[js.Any])
     if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     if (lexmodels != null) __obj.updateDynamic("lexmodels")(lexmodels.asInstanceOf[js.Any])

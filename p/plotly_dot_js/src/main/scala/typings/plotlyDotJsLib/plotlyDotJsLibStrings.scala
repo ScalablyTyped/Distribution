@@ -1485,6 +1485,9 @@ object plotlyDotJsLibStrings {
     extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
+  sealed trait `y+name` extends js.Object
+  
+  @js.native
   sealed trait `y+x` extends js.Object
   
   @js.native
@@ -2546,6 +2549,8 @@ object plotlyDotJsLibStrings {
   def x9: x9 = "x9".asInstanceOf[x9]
   @scala.inline
   def y: y = "y".asInstanceOf[y]
+  @scala.inline
+  def `y+name`: `y+name` = "y+name".asInstanceOf[`y+name`]
   @scala.inline
   def `y+x`: `y+x` = "y+x".asInstanceOf[`y+x`]
   @scala.inline

@@ -15,7 +15,7 @@ trait PurchaseScheduledInstancesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more purchase requests.
+    * The purchase requests.
     */
   var PurchaseRequests: PurchaseRequestSet
 }

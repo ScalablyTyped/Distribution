@@ -30,5 +30,9 @@ class Editor protected () extends Controller {
     */
   def setValue(value: Value): Editor = js.native
   def setValue(value: Value, options: slateLib.Anon_Normalize): Editor = js.native
+  def splitBlock(): Editor = js.native
+  def splitBlockAtRange(range: Range): Editor = js.native
+  def splitInline(): Editor = js.native
+  def splitInlineAtRange(range: Range): Editor = js.native
 }
 

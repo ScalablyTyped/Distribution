@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-range
 
-Typings are for version 1.0
+Typings are for version 2.0.1
 
 ## Library description:
 Lazy number range generator
@@ -24,21 +24,11 @@ Lazy number range generator
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for get-range 1.0
-// Project: https://github.com/sindresorhus/get-range#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

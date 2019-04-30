@@ -27,6 +27,10 @@ trait LaunchTemplateInstanceNetworkInterfaceSpecification extends js.Object {
     */
   var Groups: js.UndefOr[GroupIdStringList] = js.undefined
   /**
+    * The type of network interface.
+    */
+  var InterfaceType: js.UndefOr[String] = js.undefined
+  /**
     * The number of IPv6 addresses for the network interface.
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
@@ -64,6 +68,7 @@ object LaunchTemplateInstanceNetworkInterfaceSpecification {
     Description: String = null,
     DeviceIndex: js.UndefOr[Integer] = js.undefined,
     Groups: GroupIdStringList = null,
+    InterfaceType: String = null,
     Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     NetworkInterfaceId: String = null,
@@ -78,6 +83,7 @@ object LaunchTemplateInstanceNetworkInterfaceSpecification {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DeviceIndex)) __obj.updateDynamic("DeviceIndex")(DeviceIndex)
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
+    if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType)
     if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount)
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)

@@ -32,7 +32,7 @@ trait BrokerArgs extends js.Object {
     */
   val engineType: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
-    * The version of the broker engine. Currently, Amazon MQ supports only `5.15.0` or `5.15.6`.
+    * The version of the broker engine. Currently, See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
     */
   val engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**

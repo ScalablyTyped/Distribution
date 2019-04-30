@@ -19,7 +19,15 @@ class GatewayAssociation protected ()
   def this(name: java.lang.String, args: GatewayAssociationArgs) = this()
   def this(name: java.lang.String, args: GatewayAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * The ID of the Direct Connect Gateway.
+    * VPC prefixes (CIDRs) to advertise to the Direct Connect gateway. Defaults to the CIDR block of the VPC associated with the Virtual Gateway. To enable drift detection, must be configured.
+    */
+  val allowedPrefixes: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
+  /**
+    * The ID of the Direct Connect gateway association.
+    */
+  val dxGatewayAssociationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The ID of the Direct Connect gateway.
     */
   val dxGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

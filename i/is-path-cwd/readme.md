@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-cwd
 
-Typings are for version 1.0
+Typings are for version 2.1.0
 
 ## Library description:
 Check if a path is CWD
@@ -24,7 +24,7 @@ Check if a path is CWD
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-path-cwd 1.0
-// Project: https://github.com/sindresorhus/is-path-cwd
-// Definitions by: Daniel Rosenwasser <https://github.com/DanielRosenwasser>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a path is the [current working directory](https://en.wikipedia.org/wiki/Working_directory).
+
+@example
+```
+import isPathCwd = require('is-path-cwd');
+
+isPathCwd(process.cwd());
+//=> true
+
+isPathCwd('unicorn');
+//=> false
+```
+*/
 
 ```
 

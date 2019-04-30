@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssignmentListTokenType extends SqlTokenType {
+trait AssignmentListTokenType extends _SqlTokenType {
   var namedAssignment: NamedAssignmentType
   var `type`: js.Symbol
 }

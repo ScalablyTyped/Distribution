@@ -15,11 +15,11 @@ trait ImportInstanceLaunchSpecification extends js.Object {
     */
   var Architecture: js.UndefOr[ArchitectureValues] = js.undefined
   /**
-    * One or more security group IDs.
+    * The security group IDs.
     */
   var GroupIds: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
-    * One or more security group names.
+    * The security group names.
     */
   var GroupNames: js.UndefOr[SecurityGroupStringList] = js.undefined
   /**

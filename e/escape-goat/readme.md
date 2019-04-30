@@ -1,7 +1,7 @@
 
 # Scala.js typings for escape-goat
 
-Typings are for version 1.3
+Typings are for version 2.0.0
 
 ## Library description:
 Escape a string for use in HTML or the inverse
@@ -24,7 +24,7 @@ Escape a string for use in HTML or the inverse
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,22 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for escape-goat 1.3
-// Project: https://github.com/sindresorhus/escape-goat#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Escape a string for use in HTML.
+
+Escapes the following characters in the given `string` argument: `&` `<` `>` `"` `'`.
+
+@example
+```
+import {htmlEscape} from 'escape-goat';
+
+htmlEscape('🦄 & 🐐');
+//=> '🦄 &amp; 🐐'
+
+htmlEscape('Hello <em>World</em>');
+//=> 'Hello &lt;em&gt;World&lt;/em&gt;'
+```
+*/
 
 ```
 

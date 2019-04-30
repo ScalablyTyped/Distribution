@@ -19,6 +19,10 @@ trait GetClusterResult extends js.Object {
     */
   val createdAt: java.lang.String
   /**
+    * The enabled control plane logs.
+    */
+  val enabledClusterLogTypes: js.Array[java.lang.String]
+  /**
     * The endpoint for your Kubernetes API server.
     */
   val endpoint: java.lang.String
@@ -51,6 +55,7 @@ object GetClusterResult {
     arn: java.lang.String,
     certificateAuthority: atPulumiAwsLib.Anon_DataString,
     createdAt: java.lang.String,
+    enabledClusterLogTypes: js.Array[java.lang.String],
     endpoint: java.lang.String,
     id: java.lang.String,
     name: java.lang.String,
@@ -59,7 +64,7 @@ object GetClusterResult {
     version: java.lang.String,
     vpcConfig: atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccessSecurityGroupIds
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, endpoint = endpoint, id = id, name = name, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
+    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, enabledClusterLogTypes = enabledClusterLogTypes, endpoint = endpoint, id = id, name = name, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
   
     __obj.asInstanceOf[GetClusterResult]
   }

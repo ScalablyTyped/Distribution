@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait AllocateHostsRequest extends js.Object {
   /**
-    * This is enabled by default. This property allows instances to be automatically placed onto available Dedicated Hosts, when you are launching instances without specifying a host ID. Default: Enabled
+    * Indicates whether the host accepts any untargeted instance launches that match its instance type configuration, or if it only accepts Host tenancy instance launches that specify its unique host ID. For more information, see  Understanding Instance Placement and Host Affinity in the Amazon EC2 User Guide for Linux Instances. Default: on 
     */
   var AutoPlacement: js.UndefOr[AutoPlacement] = js.undefined
   /**
-    * The Availability Zone for the Dedicated Hosts.
+    * The Availability Zone in which to allocate the Dedicated Host.
     */
   var AvailabilityZone: String
   /**
@@ -19,7 +19,7 @@ trait AllocateHostsRequest extends js.Object {
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   /**
-    * Specify the instance type for which to configure your Dedicated Hosts. When you specify the instance type, that is the only instance type that you can launch onto that host.
+    * Specifies the instance type for which to configure your Dedicated Hosts. When you specify the instance type, that is the only instance type that you can launch onto that host.
     */
   var InstanceType: String
   /**

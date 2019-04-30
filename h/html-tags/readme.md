@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-tags
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 List of standard HTML tags
@@ -24,7 +24,7 @@ List of standard HTML tags
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,28 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for html-tags 2.0
-// Project: https://github.com/sindresorhus/html-tags#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+List of standard HTML tags.
+
+@example
+```
+import htmlTags = require('html-tags');
+
+console.log(htmlTags);
+//=> ['a', 'abbr', 'acronym', …]
+```
+*/
+/**
+List of void (self-closing) HTML tags.
+
+@example
+```
+import voidHtmlTags = require('html-tags/void');
+
+console.log(voidHtmlTags);
+//=> ['area', 'base', 'br', …]
+```
+*/
 
 ```
 

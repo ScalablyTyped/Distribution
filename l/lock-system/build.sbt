@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lock-system"
-version := "1.3-dt-20181212Z-ffcb08"
+version := "2.0.0-ffcb08"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

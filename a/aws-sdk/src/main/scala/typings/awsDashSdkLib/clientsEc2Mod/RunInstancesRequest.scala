@@ -27,7 +27,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var CpuOptions: js.UndefOr[CpuOptionsRequest] = js.undefined
   /**
-    * The credit option for CPU usage of the instance. Valid values are standard and unlimited. To change this attribute after launch, use ModifyInstanceCreditSpecification. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide. Default: standard (T2 instances) or unlimited (T3 instances)
+    * The credit option for CPU usage of the T2 or T3 instance. Valid values are standard and unlimited. To change this attribute after launch, use ModifyInstanceCreditSpecification. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide. Default: standard (T2 instances) or unlimited (T3 instances)
     */
   var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.undefined
   /**
@@ -43,11 +43,11 @@ trait RunInstancesRequest extends js.Object {
     */
   var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   /**
-    * An elastic GPU to associate with the instance.
+    * An elastic GPU to associate with the instance. An Elastic GPU is a GPU resource that you can attach to your Windows instance to accelerate the graphics performance of your applications. For more information, see  Amazon EC2 Elastic GPUs in the Amazon Elastic Compute Cloud User Guide.
     */
   var ElasticGpuSpecification: js.UndefOr[ElasticGpuSpecifications] = js.undefined
   /**
-    *  An elastic inference accelerator. 
+    * An elastic inference accelerator to associate with the instance. Elastic inference accelerators are a resource you can attach to your Amazon EC2 instances to accelerate your Deep Learning (DL) inference workloads.
     */
   var ElasticInferenceAccelerators: js.UndefOr[ElasticInferenceAccelerators] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.undefined
   /**
-    * The ID of the AMI, which you can get by calling DescribeImages. An AMI is required to launch an instance and must be specified here or in a launch template.
+    * The ID of the AMI. An AMI is required to launch an instance and must be specified here or in a launch template.
     */
   var ImageId: js.UndefOr[String] = js.undefined
   /**
@@ -75,7 +75,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var InstanceType: js.UndefOr[InstanceType] = js.undefined
   /**
-    * [EC2-VPC] A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
+    * [EC2-VPC] The number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   /**
@@ -107,11 +107,11 @@ trait RunInstancesRequest extends js.Object {
     */
   var MinCount: Integer
   /**
-    * The monitoring for the instance.
+    * Specifies whether detailed monitoring is enabled for the instance.
     */
   var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   /**
-    * The network interfaces. You cannot specify this option and the network interfaces option in the same request.
+    * The network interfaces to associate with the instance.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   /**
@@ -123,7 +123,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
   /**
-    * The ID of the RAM disk.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see  PV-GRUB in the Amazon Elastic Compute Cloud User Guide. 
+    * The ID of the RAM disk to select. Some kernels require additional drivers at launch. Check the kernel requirements for information about whether you need to specify a RAM disk. To find kernel requirements, go to the AWS Resource Center and search for the kernel ID.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see  PV-GRUB in the Amazon Elastic Compute Cloud User Guide. 
     */
   var RamdiskId: js.UndefOr[String] = js.undefined
   /**
@@ -143,7 +143,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   /**
-    * The user data to make available to the instance. For more information, see Running Commands on Your Linux Instance at Launch (Linux) and Adding User Data (Windows). If you are using a command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text.
+    * The user data to make available to the instance. For more information, see Running Commands on Your Linux Instance at Launch (Linux) and Adding User Data (Windows). If you are using a command line tool, base64-encoding is performed for you, and you can load the text from a file. Otherwise, you must provide base64-encoded text. User data is limited to 16 KB.
     */
   var UserData: js.UndefOr[String] = js.undefined
 }

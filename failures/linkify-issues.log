@@ -1,0 +1,6 @@
+[error] PhaseRunner.scala:86 Failure, [linkify-issues => InFile(/home/tso/tmp/tso-cache/npm/node_modules/linkify-issues/index.d.ts): Parse error at 19.72 ''}'' expected but '[' found] [id => linkify-issues, phase => typescript] 
+[warn ] PhaseRunner.scala:68 Failed because of, [linkify-issues => InFile(/home/tso/tmp/tso-cache/npm/node_modules/linkify-issues/index.d.ts): Parse error at 19.72 ''}'' expected but '[' found] [id => linkify-issues, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [linkify-issues => InFile(/home/tso/tmp/tso-cache/npm/node_modules/linkify-issues/index.d.ts): Parse error at 19.72 ''}'' expected but '[' found] [id => linkify-issues, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [linkify-issues => InFile(/home/tso/tmp/tso-cache/npm/node_modules/linkify-issues/index.d.ts): Parse error at 19.72 ''}'' expected but '[' found] [id => linkify-issues, phase => scala.js] 
+[error] PhaseRunner.scala:86 Failure, [linkify-issues => InFile(/home/tso/tmp/tso-cache/npm/node_modules/linkify-issues/index.d.ts): Parse error at 19.72 ''}'' expected but '[' found] [id => linkify-issues, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [linkify-issues => InFile(/home/tso/tmp/tso-cache/npm/node_modules/linkify-issues/index.d.ts): Parse error at 19.72 ''}'' expected but '[' found] [id => linkify-issues, phase => publish] 

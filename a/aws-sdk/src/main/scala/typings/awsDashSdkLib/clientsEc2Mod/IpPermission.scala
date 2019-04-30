@@ -11,7 +11,7 @@ trait IpPermission extends js.Object {
     */
   var FromPort: js.UndefOr[Integer] = js.undefined
   /**
-    * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers).  [EC2-VPC only] Use -1 to specify all protocols. When authorizing security group rules, specifying -1 or a protocol number other than tcp, udp, icmp, or 58 (ICMPv6) allows traffic on all ports, regardless of any port range you specify. For tcp, udp, and icmp, you must specify a port range. For 58 (ICMPv6), you can optionally specify a port range; if you don't, traffic for all types and codes is allowed when authorizing rules. 
+    * The IP protocol name (tcp, udp, icmp, icmpv6) or number (see Protocol Numbers). [VPC only] Use -1 to specify all protocols. When authorizing security group rules, specifying -1 or a protocol number other than tcp, udp, icmp, or icmpv6 allows traffic on all ports, regardless of any port range you specify. For tcp, udp, and icmp, you must specify a port range. For icmpv6, the port range is optional; if you omit the port range, traffic for all types and codes is allowed.
     */
   var IpProtocol: js.UndefOr[String] = js.undefined
   /**
@@ -19,15 +19,15 @@ trait IpPermission extends js.Object {
     */
   var IpRanges: js.UndefOr[IpRangeList] = js.undefined
   /**
-    * [EC2-VPC only] The IPv6 ranges.
+    * [VPC only] The IPv6 ranges.
     */
   var Ipv6Ranges: js.UndefOr[Ipv6RangeList] = js.undefined
   /**
-    * [EC2-VPC only] The prefix list IDs for an AWS service. With AuthorizeSecurityGroupEgress, this is the AWS service that you want to access through a VPC endpoint from instances associated with the security group.
+    * [VPC only] The prefix list IDs for an AWS service. With outbound rules, this is the AWS service to access through a VPC endpoint from instances associated with the security group.
     */
   var PrefixListIds: js.UndefOr[PrefixListIdList] = js.undefined
   /**
-    * The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code. A value of -1 indicates all ICMP/ICMPv6 codes for the specified ICMP type. If you specify all ICMP/ICMPv6 types, you must specify all codes.
+    * The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code. A value of -1 indicates all ICMP/ICMPv6 codes. If you specify all ICMP/ICMPv6 types, you must specify all codes.
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
   /**

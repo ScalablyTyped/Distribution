@@ -8,16 +8,35 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakClient
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
-  /** The ChannelID of the client */
+  var away: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var badges: js.UndefOr[java.lang.String] = js.native
+  var cfid: scala.Double = js.native
+  var channelGroupId: scala.Double = js.native
+  var channelGroupInheritedChannelId: scala.Double = js.native
   var cid: scala.Double = js.native
-  /**  The UID of the client */
-  var client_unique_identifier: java.lang.String = js.native
-  /** Client Nickname */
+  var clid: scala.Double = js.native
+  var ctid: scala.Double = js.native
+  var databaseId: scala.Double = js.native
+  var iconId: scala.Double = js.native
+  var inputHardware: scala.Double = js.native
+  var inputMuted: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var isChannelCommander: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var isPrioritySpeaker: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var isRecording: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var isTalker: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var myteamspeakId: js.UndefOr[java.lang.String] = js.native
+  var neededServerqueryViewPower: java.lang.String = js.native
   var nickname: java.lang.String = js.native
-  /** Array of client Servergroups */
+  var outputHardware: scala.Double = js.native
+  var outputMuted: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var outputonlyMuted: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var reasonid: scala.Double = js.native
   var servergroups: js.Array[scala.Double] = js.native
-  /** Returns the Client Type: 0 = CLIENT, 1 = QUERY */
+  var talkPower: scala.Double = js.native
+  var talkRequest: scala.Double = js.native
   var `type`: ClientType = js.native
+  var uniqueIdentifier: java.lang.String = js.native
+  var unreadMessages: java.lang.String = js.native
   /**
     * Adds a set of specified permissions to a client. Multiple permissions can be added by providing the three parameters of each permission. A permission can be specified by permid or permsid.
     * @param - The permid or permsid

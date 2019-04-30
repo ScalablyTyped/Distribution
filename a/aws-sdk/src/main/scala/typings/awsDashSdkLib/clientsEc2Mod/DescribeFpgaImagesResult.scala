@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeFpgaImagesResult extends js.Object {
   /**
-    * Information about one or more FPGA images.
+    * Information about the FPGA images.
     */
   var FpgaImages: js.UndefOr[FpgaImageList] = js.undefined
   /**

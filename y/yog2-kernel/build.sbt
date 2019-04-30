@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20190312Z-a055ad"
+version := "1.9-dt-20190312Z-3bd9e7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-3d760a",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-b0fe56",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-e7b69f",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190423Z-a7e7ca",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2ffec6",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-44a2a2",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-f548c5",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-a197d0",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-ea402e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-b7b3da",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
-  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-214f4d",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
+  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-72a5f2",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c3b9c7",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-1ae06d",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c951c0",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
-  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20180214Z-d83ea2",
-  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-f2654b")
+  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20180214Z-455656",
+  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-5d6016")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

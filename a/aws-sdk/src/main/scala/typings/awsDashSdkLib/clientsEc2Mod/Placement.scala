@@ -11,7 +11,7 @@ trait Placement extends js.Object {
     */
   var Affinity: js.UndefOr[String] = js.undefined
   /**
-    * The Availability Zone of the instance.
+    * The Availability Zone of the instance. If not specified, an Availability Zone will be automatically chosen for you based on the load balancing criteria for the region.
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**

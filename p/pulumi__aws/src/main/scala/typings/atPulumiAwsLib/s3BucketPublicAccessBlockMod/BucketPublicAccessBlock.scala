@@ -35,7 +35,7 @@ class BucketPublicAccessBlock protected ()
   val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Whether Amazon S3 should ignore public ACLs for this bucket. Defaults to `false`. Enabling this setting does not affect the persistence of any existing ACLs and doesn't prevent new public ACLs from being set. When set to `true` causes Amazon S3 to:
-    * * Ignore all public ACLs on buckets in this account and any objects that they contain.
+    * * Ignore public ACLs on this bucket and any objects that it contains.
     */
   val ignorePublicAcls: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**

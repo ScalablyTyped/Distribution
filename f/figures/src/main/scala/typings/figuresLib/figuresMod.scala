@@ -64,6 +64,21 @@ object figuresMod extends js.Object {
   val twoFifths: java.lang.String = js.native
   val twoThirds: java.lang.String = js.native
   val warning: java.lang.String = js.native
-  def apply(input: java.lang.String): java.lang.String = js.native
+  /**
+  	Replace unicode symbols depending on the OS.
+  	@param string - String where the Unicode symbols will be replaced with fallback symbols depending on the OS.
+  	@returns The input with replaced fallback Unicode symbols on Windows.
+  	@example
+  	```
+  	import figures = require('figures');
+  	console.log(figures('✔︎ check'));
+  	// On real OSes:  ✔︎ check
+  	// On Windows:    √ check
+  	console.log(figures.tick);
+  	// On real OSes:  ✔︎
+  	// On Windows:    √
+  	```
+  	*/
+  def apply(string: java.lang.String): java.lang.String = js.native
 }
 

@@ -35,15 +35,15 @@ trait ModifyFpgaImageAttributeRequest extends js.Object {
     */
   var OperationType: js.UndefOr[OperationType] = js.undefined
   /**
-    * One or more product codes. After you add a product code to an AFI, it can't be removed. This parameter is valid only when modifying the productCodes attribute.
+    * The product codes. After you add a product code to an AFI, it can't be removed. This parameter is valid only when modifying the productCodes attribute.
     */
   var ProductCodes: js.UndefOr[ProductCodeStringList] = js.undefined
   /**
-    * One or more user groups. This parameter is valid only when modifying the loadPermission attribute.
+    * The user groups. This parameter is valid only when modifying the loadPermission attribute.
     */
   var UserGroups: js.UndefOr[UserGroupStringList] = js.undefined
   /**
-    * One or more AWS account IDs. This parameter is valid only when modifying the loadPermission attribute.
+    * The AWS account IDs. This parameter is valid only when modifying the loadPermission attribute.
     */
   var UserIds: js.UndefOr[UserIdStringList] = js.undefined
 }

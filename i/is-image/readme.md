@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-image
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a file path is an image
@@ -24,7 +24,7 @@ Check if a file path is an image
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-image 2.0
-// Project: https://github.com/sindresorhus/is-image#readme
-// Definitions by: Denis Frezzato <https://github.com/DenisFrezzato>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a file path is an image.
+
+@example
+```
+const isImage = require('is-image');
+
+isImage('source/unicorn.png');
+//=> true
+
+isImage('source/unicorn.txt');
+//=> false
+```
+*/
 
 ```
 

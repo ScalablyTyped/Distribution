@@ -81,6 +81,13 @@ class ManagementClient protected () extends js.Object {
   def deleteUserMultifactor(params: DeleteMultifactorParams, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   @JSName("deleteUser")
   def deleteUser_Unit(params: ObjectWithId): scala.Unit = js.native
+  def exportUsers(data: ExportUsersOptions): js.Promise[ExportUsersJob] = js.native
+  def exportUsers(
+    data: ExportUsersOptions,
+    cb: js.Function2[/* err */ stdLib.Error, /* data */ ExportUsersJob, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("exportUsers")
+  def exportUsers_Unit(data: ExportUsersOptions): scala.Unit = js.native
   // Statistics
   def getActiveUsersCount(): js.Promise[_] = js.native
   def getActiveUsersCount(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
@@ -124,8 +131,8 @@ class ManagementClient protected () extends js.Object {
   @JSName("getEmailProvider")
   def getEmailProvider_Unit(): scala.Unit = js.native
   // Jobs
-  def getJob(params: ObjectWithId): js.Promise[_] = js.native
-  def getJob(params: ObjectWithId, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  def getJob(params: ObjectWithId): js.Promise[Job] = js.native
+  def getJob(params: ObjectWithId, cb: js.Function2[/* err */ stdLib.Error, /* data */ Job, scala.Unit]): scala.Unit = js.native
   @JSName("getJob")
   def getJob_Unit(params: ObjectWithId): scala.Unit = js.native
   // Logs
@@ -186,8 +193,11 @@ class ManagementClient protected () extends js.Object {
   def getUsers_Unit(): scala.Unit = js.native
   @JSName("getUsers")
   def getUsers_Unit(params: GetUsersData): scala.Unit = js.native
-  def importUsers(data: ImportUsersOptions): js.Promise[_] = js.native
-  def importUsers(data: ImportUsersOptions, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  def importUsers(data: ImportUsersOptions): js.Promise[ImportUsersJob] = js.native
+  def importUsers(
+    data: ImportUsersOptions,
+    cb: js.Function2[/* err */ stdLib.Error, /* data */ ImportUsersJob, scala.Unit]
+  ): scala.Unit = js.native
   @JSName("importUsers")
   def importUsers_Unit(data: ImportUsersOptions): scala.Unit = js.native
   def linkUsers(userId: java.lang.String, params: LinkAccountsParams): js.Promise[_] = js.native
@@ -196,8 +206,11 @@ class ManagementClient protected () extends js.Object {
     params: LinkAccountsParams,
     cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def sendEmailVerification(data: UserIdParams): js.Promise[_] = js.native
-  def sendEmailVerification(data: UserIdParams, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  def sendEmailVerification(data: UserIdParams): js.Promise[VerificationEmailJob] = js.native
+  def sendEmailVerification(
+    data: UserIdParams,
+    cb: js.Function2[/* err */ stdLib.Error, /* data */ VerificationEmailJob, scala.Unit]
+  ): scala.Unit = js.native
   @JSName("sendEmailVerification")
   def sendEmailVerification_Unit(data: UserIdParams): scala.Unit = js.native
   def unlinkUsers(params: UnlinkAccountsParams): js.Promise[UnlinkAccountsResponse] = js.native

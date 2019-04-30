@@ -31,7 +31,7 @@ trait VpcEndpoint extends js.Object {
     */
   var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Indicates whether the VPC Endpoint is being managed by its service.
+    * Indicates whether the VPC endpoint is being managed by its service.
     */
   var RequesterManaged: js.UndefOr[Boolean] = js.undefined
   /**

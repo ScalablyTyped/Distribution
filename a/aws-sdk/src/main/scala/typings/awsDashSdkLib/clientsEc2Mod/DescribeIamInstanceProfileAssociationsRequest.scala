@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DescribeIamInstanceProfileAssociationsRequest extends js.Object {
   /**
-    * One or more IAM instance profile associations.
+    * The IAM instance profile associations.
     */
   var AssociationIds: js.UndefOr[AssociationIdList] = js.undefined
   /**
-    * One or more filters.    instance-id - The ID of the instance.    state - The state of the association (associating | associated | disassociating | disassociated).  
+    * The filters.    instance-id - The ID of the instance.    state - The state of the association (associating | associated | disassociating | disassociated).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**

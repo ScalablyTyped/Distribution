@@ -83,11 +83,6 @@ trait TextOptions extends IObjectOptions {
   	 */
   var textBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * List of lines in text object
-    * @type Array<string>
-    */
-  var textLines: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  /**
   	 * Text decoration underline.
   	 * @type Boolean
   	 */
@@ -192,7 +187,6 @@ object TextOptions {
     text: java.lang.String = null,
     textAlign: java.lang.String = null,
     textBackgroundColor: java.lang.String = null,
-    textLines: js.Array[java.lang.String] = null,
     top: scala.Int | scala.Double = null,
     transformMatrix: js.Array[_] = null,
     transparentCorners: js.UndefOr[scala.Boolean] = js.undefined,
@@ -297,7 +291,6 @@ object TextOptions {
     if (text != null) __obj.updateDynamic("text")(text)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
     if (textBackgroundColor != null) __obj.updateDynamic("textBackgroundColor")(textBackgroundColor)
-    if (textLines != null) __obj.updateDynamic("textLines")(textLines)
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (transformMatrix != null) __obj.updateDynamic("transformMatrix")(transformMatrix)
     if (!js.isUndefined(transparentCorners)) __obj.updateDynamic("transparentCorners")(transparentCorners)

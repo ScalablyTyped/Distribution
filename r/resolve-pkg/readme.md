@@ -1,7 +1,7 @@
 
 # Scala.js typings for resolve-pkg
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Resolve the path of a package regardless of it having an entry point
@@ -24,22 +24,11 @@ Resolve the path of a package regardless of it having an entry point
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for resolve-pkg 1.0
-// Project: https://github.com/sindresorhus/resolve-pkg
-// Definitions by: Meno Abels <https://github.com/mabels>
-//                 BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

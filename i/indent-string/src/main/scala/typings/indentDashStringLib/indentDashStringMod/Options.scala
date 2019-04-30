@@ -6,8 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var includeEmptyLines: js.UndefOr[scala.Boolean] = js.undefined
-  var indent: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		Also indent empty lines.
+  		@default false
+  		*/
+  val includeEmptyLines: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		The string to use for the indent.
+  		@default ' '
+  		*/
+  val indent: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Options {

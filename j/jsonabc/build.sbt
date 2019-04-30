@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonabc"
-version := "2.3-dt-20190110Z-6d983a"
+version := "2.3-dt-20190429Z-866479"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

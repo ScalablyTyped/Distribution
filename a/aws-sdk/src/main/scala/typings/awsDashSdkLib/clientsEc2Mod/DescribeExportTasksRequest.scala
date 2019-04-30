@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeExportTasksRequest extends js.Object {
   /**
-    * One or more export task IDs.
+    * The export task IDs.
     */
   var ExportTaskIds: js.UndefOr[ExportTaskIdStringList] = js.undefined
 }

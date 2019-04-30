@@ -70,6 +70,7 @@ trait Anon_Acm extends js.Object {
   var kinesis: js.UndefOr[java.lang.String] = js.undefined
   var kinesisAnalytics: js.UndefOr[java.lang.String] = js.undefined
   var kinesisanalytics: js.UndefOr[java.lang.String] = js.undefined
+  var kinesisvideo: js.UndefOr[java.lang.String] = js.undefined
   var kms: js.UndefOr[java.lang.String] = js.undefined
   var lambda: js.UndefOr[java.lang.String] = js.undefined
   var lexmodels: js.UndefOr[java.lang.String] = js.undefined
@@ -188,6 +189,7 @@ object Anon_Acm {
     kinesis: java.lang.String = null,
     kinesisAnalytics: java.lang.String = null,
     kinesisanalytics: java.lang.String = null,
+    kinesisvideo: java.lang.String = null,
     kms: java.lang.String = null,
     lambda: java.lang.String = null,
     lexmodels: java.lang.String = null,
@@ -303,6 +305,7 @@ object Anon_Acm {
     if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis)
     if (kinesisAnalytics != null) __obj.updateDynamic("kinesisAnalytics")(kinesisAnalytics)
     if (kinesisanalytics != null) __obj.updateDynamic("kinesisanalytics")(kinesisanalytics)
+    if (kinesisvideo != null) __obj.updateDynamic("kinesisvideo")(kinesisvideo)
     if (kms != null) __obj.updateDynamic("kms")(kms)
     if (lambda != null) __obj.updateDynamic("lambda")(lambda)
     if (lexmodels != null) __obj.updateDynamic("lexmodels")(lexmodels)

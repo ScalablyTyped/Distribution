@@ -1,7 +1,7 @@
 
 # Scala.js typings for leap-year
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a year is a leap year
@@ -24,7 +24,7 @@ Check if a year is a leap year
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,22 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for leap-year 2.0
-// Project: https://github.com/sindresorhus/leap-year#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a year is a [leap year](https://en.wikipedia.org/wiki/Leap_year).
+
+@param year - Default: `new Date()`.
+
+@example
+```
+import leapYear = require('leap-year');
+
+leapYear(2014);
+//=> false
+
+leapYear(2016);
+//=> true
+```
+*/
 
 ```
 

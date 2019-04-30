@@ -103,7 +103,7 @@ class Camera protected () extends js.Object {
   def rotateRight(angle: scala.Double): scala.Unit = js.native
   def rotateUp(): scala.Unit = js.native
   def rotateUp(angle: scala.Double): scala.Unit = js.native
-  def setView(options: cesiumLib.Anon_Destination): scala.Unit = js.native
+  def setView(options: cesiumLib.Anon_Convert): scala.Unit = js.native
   def switchToOrthographicFrustum(): scala.Unit = js.native
   def switchToPerspectiveFrustum(): scala.Unit = js.native
   def twistLeft(): scala.Unit = js.native

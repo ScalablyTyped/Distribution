@@ -1,7 +1,7 @@
 
 # Scala.js typings for log-symbols
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Colored symbols for various log levels. Example: `✔︎ Success`
@@ -24,7 +24,7 @@ Colored symbols for various log levels. Example: `✔︎ Success`
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for log-symbols 2.0
-// Project: https://github.com/sindresorhus/log-symbols#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Colored symbols for various log levels.
+
+Includes fallbacks for Windows CMD which only supports a [limited character set](https://en.wikipedia.org/wiki/Code_page_437).
+
+@example
+```
+import logSymbols = require('log-symbols');
+
+console.log(logSymbols.success, 'Finished successfully!');
+// On good OSes:  ✔ Finished successfully!
+// On Windows:    √ Finished successfully!
+```
+*/
 
 ```
 

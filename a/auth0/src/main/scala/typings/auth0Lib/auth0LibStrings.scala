@@ -77,8 +77,16 @@ object auth0LibStrings {
     extends auth0Lib.auth0Mod.SendType
   
   @js.native
+  sealed trait completed
+    extends auth0Lib.auth0Mod.JobStatus
+  
+  @js.native
   sealed trait concur
     extends auth0Lib.auth0Mod.ClientAppType
+  
+  @js.native
+  sealed trait csv
+    extends auth0Lib.auth0Mod.JobFormat
   
   @js.native
   sealed trait custom
@@ -138,6 +146,10 @@ object auth0LibStrings {
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
   
   @js.native
+  sealed trait failed
+    extends auth0Lib.auth0Mod.JobStatus
+  
+  @js.native
   sealed trait fitbit
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -180,6 +192,10 @@ object auth0LibStrings {
   sealed trait ip
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
+  
+  @js.native
+  sealed trait json
+    extends auth0Lib.auth0Mod.JobFormat
   
   @js.native
   sealed trait link
@@ -238,6 +254,10 @@ object auth0LibStrings {
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
   
   @js.native
+  sealed trait pending
+    extends auth0Lib.auth0Mod.JobStatus
+  
+  @js.native
   sealed trait pingfederate
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -246,6 +266,10 @@ object auth0LibStrings {
   sealed trait planningcenter
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
+  
+  @js.native
+  sealed trait processing
+    extends auth0Lib.auth0Mod.JobStatus
   
   @js.native
   sealed trait regular_web
@@ -347,6 +371,15 @@ object auth0LibStrings {
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
   
   @js.native
+  sealed trait users_export extends js.Object
+  
+  @js.native
+  sealed trait users_import extends js.Object
+  
+  @js.native
+  sealed trait verification_email extends js.Object
+  
+  @js.native
   sealed trait vkontakte
     extends auth0Lib.auth0Mod.Strategy
        with auth0Lib.auth0Mod.UnlinkAccountsParamsProvider
@@ -425,7 +458,11 @@ object auth0LibStrings {
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
+  def completed: completed = "completed".asInstanceOf[completed]
+  @scala.inline
   def concur: concur = "concur".asInstanceOf[concur]
+  @scala.inline
+  def csv: csv = "csv".asInstanceOf[csv]
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
@@ -451,6 +488,8 @@ object auth0LibStrings {
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def fitbit: fitbit = "fitbit".asInstanceOf[fitbit]
   @scala.inline
   def flickr: flickr = "flickr".asInstanceOf[flickr]
@@ -468,6 +507,8 @@ object auth0LibStrings {
   def instagram: instagram = "instagram".asInstanceOf[instagram]
   @scala.inline
   def ip: ip = "ip".asInstanceOf[ip]
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -493,9 +534,13 @@ object auth0LibStrings {
   @scala.inline
   def `paypal-sandbox`: `paypal-sandbox` = "paypal-sandbox".asInstanceOf[`paypal-sandbox`]
   @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
   def pingfederate: pingfederate = "pingfederate".asInstanceOf[pingfederate]
   @scala.inline
   def planningcenter: planningcenter = "planningcenter".asInstanceOf[planningcenter]
+  @scala.inline
+  def processing: processing = "processing".asInstanceOf[processing]
   @scala.inline
   def regular_web: regular_web = "regular_web".asInstanceOf[regular_web]
   @scala.inline
@@ -538,6 +583,12 @@ object auth0LibStrings {
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   @scala.inline
   def untappd: untappd = "untappd".asInstanceOf[untappd]
+  @scala.inline
+  def users_export: users_export = "users_export".asInstanceOf[users_export]
+  @scala.inline
+  def users_import: users_import = "users_import".asInstanceOf[users_import]
+  @scala.inline
+  def verification_email: verification_email = "verification_email".asInstanceOf[verification_email]
   @scala.inline
   def vkontakte: vkontakte = "vkontakte".asInstanceOf[vkontakte]
   @scala.inline

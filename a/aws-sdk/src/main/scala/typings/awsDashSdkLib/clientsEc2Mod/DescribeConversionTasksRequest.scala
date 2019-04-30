@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeConversionTasksRequest extends js.Object {
   /**
-    * One or more conversion task IDs.
+    * The conversion task IDs.
     */
   var ConversionTaskIds: js.UndefOr[ConversionIdStringList] = js.undefined
   /**

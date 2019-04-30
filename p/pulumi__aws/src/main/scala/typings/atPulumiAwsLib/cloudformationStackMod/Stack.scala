@@ -21,7 +21,7 @@ class Stack protected ()
   def this(name: java.lang.String, args: StackArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
     * A list of capabilities.
-    * Valid values: `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`
+    * Valid values: `CAPABILITY_IAM`, `CAPABILITY_NAMED_IAM`, or `CAPABILITY_AUTO_EXPAND`
     */
   val capabilities: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**

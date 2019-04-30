@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RedisStore
   extends expressDashSessionLib.expressDashSessionMod.Store
-     with org.scalablytyped.runtime.Instantiable1[/* options */ RedisStoreOptions, expressDashSessionLib.expressDashSessionMod.Store] {
+     with org.scalablytyped.runtime.Instantiable1[/* options */ RedisStoreOptions, RedisStore] {
+  var client: redisLib.redisMod.RedisClient = js.native
   /* InferMemberOverrides */
   override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   /* InferMemberOverrides */

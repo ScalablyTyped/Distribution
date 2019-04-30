@@ -6,14 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var cwd: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Directory to resolve from.
+  		@default process.cwd()
+  		*/
+  val cwd: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Options {
   @scala.inline
-  def apply(cwd: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+  def apply(cwd: java.lang.String = null): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cwd)) __obj.updateDynamic("cwd")(cwd)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     __obj.asInstanceOf[Options]
   }
 }

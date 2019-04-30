@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "extract-stack"
-version := "1.0-dt-20180214Z-b1f1e5"
+version := "2.0.0-294552"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

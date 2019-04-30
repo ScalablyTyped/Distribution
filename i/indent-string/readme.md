@@ -1,7 +1,7 @@
 
 # Scala.js typings for indent-string
 
-Typings are for version 3.2
+Typings are for version 4.0.0
 
 ## Library description:
 Indent each line in a string
@@ -24,22 +24,11 @@ Indent each line in a string
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for indent-string 3.2
-// Project: https://github.com/sindresorhus/indent-string#readme
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-//                 BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

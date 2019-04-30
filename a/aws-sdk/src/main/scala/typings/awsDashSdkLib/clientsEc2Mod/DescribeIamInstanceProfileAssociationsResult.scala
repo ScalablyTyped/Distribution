@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeIamInstanceProfileAssociationsResult extends js.Object {
   /**
-    * Information about one or more IAM instance profile associations.
+    * Information about the IAM instance profile associations.
     */
   var IamInstanceProfileAssociations: js.UndefOr[IamInstanceProfileAssociationSet] = js.undefined
   /**

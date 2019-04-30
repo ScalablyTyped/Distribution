@@ -1,7 +1,7 @@
 
 # Scala.js typings for ip-regex
 
-Typings are for version 3.0
+Typings are for version 4.1.0
 
 ## Library description:
 Regular expression for matching IP addresses (IPv4 & IPv6)
@@ -24,21 +24,11 @@ Regular expression for matching IP addresses (IPv4 & IPv6)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for ip-regex 3.0
-// Project: https://github.com/sindresorhus/ip-regex
-// Definitions by: Renārs Vilnis <https://github.com/renarsvilnis>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

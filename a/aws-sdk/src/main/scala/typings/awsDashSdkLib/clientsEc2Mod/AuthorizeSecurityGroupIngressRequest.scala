@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AuthorizeSecurityGroupIngressRequest extends js.Object {
   /**
-    * The CIDR IPv4 address range. You can't specify this parameter when specifying a source security group.
+    * The IPv4 address range, in CIDR format. You can't specify this parameter when specifying a source security group. To specify an IPv6 address range, use a set of IP permissions. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
     */
   var CidrIp: js.UndefOr[String] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait AuthorizeSecurityGroupIngressRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * The start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type number. For the ICMP/ICMPv6 type number, use -1 to specify all types. If you specify all ICMP/ICMPv6 types, you must specify all codes.
+    * The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number, use -1 to specify all types. If you specify all ICMP types, you must specify all codes. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
     */
   var FromPort: js.UndefOr[Integer] = js.undefined
   /**
@@ -27,11 +27,11 @@ trait AuthorizeSecurityGroupIngressRequest extends js.Object {
     */
   var GroupName: js.UndefOr[String] = js.undefined
   /**
-    * The sets of IP permissions. Can be used to specify multiple rules in a single command.
+    * The sets of IP permissions.
     */
   var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   /**
-    * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers). (VPC only) Use -1 to specify all protocols. If you specify -1, or a protocol number other than tcp, udp, icmp, or 58 (ICMPv6), traffic on all ports is allowed, regardless of any ports you specify. For tcp, udp, and icmp, you must specify a port range. For protocol 58 (ICMPv6), you can optionally specify a port range; if you don't, traffic for all types and codes is allowed.
+    * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers). To specify icmpv6, use a set of IP permissions. [VPC only] Use -1 to specify all protocols. If you specify -1 or a protocol other than tcp, udp, or icmp, traffic on all ports is allowed, regardless of any ports you specify. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
     */
   var IpProtocol: js.UndefOr[String] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait AuthorizeSecurityGroupIngressRequest extends js.Object {
     */
   var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   /**
-    * The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code number. For the ICMP/ICMPv6 code number, use -1 to specify all codes. If you specify all ICMP/ICMPv6 types, you must specify all codes.
+    * The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number, use -1 to specify all codes. If you specify all ICMP types, you must specify all codes. Alternatively, use a set of IP permissions to specify multiple rules and a description for the rule.
     */
   var ToPort: js.UndefOr[Integer] = js.undefined
 }

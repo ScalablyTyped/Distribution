@@ -10,8 +10,18 @@ trait DescribedServer extends js.Object {
     * Specifies the unique Amazon Resource Name (ARN) for the server to be described.
     */
   var Arn: awsDashSdkLib.clientsTransferMod.Arn
+  /**
+    * The virtual private cloud (VPC) endpoint settings that you configured for your SFTP server.
+    */
   var EndpointDetails: js.UndefOr[EndpointDetails] = js.undefined
+  /**
+    * The type of endpoint that your SFTP server is connected to. If your SFTP server is connected to a VPC endpoint, your server isn't accessible over the public internet.
+    */
   var EndpointType: js.UndefOr[EndpointType] = js.undefined
+  /**
+    * This value contains the Message-Digest Algorithm (MD5) hash of the server's host key. This value is equivalent to the output of ssh-keygen -l -E md5 -f my-new-server-key command.
+    */
+  var HostKeyFingerprint: js.UndefOr[HostKeyFingerprint] = js.undefined
   /**
     * Specifies information to call a customer-supplied authentication API. This field is not populated when the IdentityProviderType of the server is SERVICE_MANAGED&gt;.
     */
@@ -48,6 +58,7 @@ object DescribedServer {
     Arn: Arn,
     EndpointDetails: EndpointDetails = null,
     EndpointType: EndpointType = null,
+    HostKeyFingerprint: HostKeyFingerprint = null,
     IdentityProviderDetails: IdentityProviderDetails = null,
     IdentityProviderType: IdentityProviderType = null,
     LoggingRole: Role = null,
@@ -59,6 +70,7 @@ object DescribedServer {
     val __obj = js.Dynamic.literal(Arn = Arn)
     if (EndpointDetails != null) __obj.updateDynamic("EndpointDetails")(EndpointDetails)
     if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
+    if (HostKeyFingerprint != null) __obj.updateDynamic("HostKeyFingerprint")(HostKeyFingerprint)
     if (IdentityProviderDetails != null) __obj.updateDynamic("IdentityProviderDetails")(IdentityProviderDetails)
     if (IdentityProviderType != null) __obj.updateDynamic("IdentityProviderType")(IdentityProviderType.asInstanceOf[js.Any])
     if (LoggingRole != null) __obj.updateDynamic("LoggingRole")(LoggingRole)

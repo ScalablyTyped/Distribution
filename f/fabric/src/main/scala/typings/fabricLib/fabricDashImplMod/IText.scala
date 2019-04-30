@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fabricLib.fabricDashImplMod.ITextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, charSpacing, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, deltaY, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, overline, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, styles, subscript, superscript, text, textAlign, textBackgroundColor, textLines, top, transformMatrix, transparentCorners, `type`, underline, visible, width. Inlined selectionStart, selectionEnd, selectionColor, isEditing, editable, editingBorderColor, cursorWidth, cursorColor, cursorDelay, cursorDuration, caching, inCompositionMode, path, useNative, ctrlKeysMapDown, ctrlKeysMapUp, keysMap, hiddenTextarea */ @JSImport("fabric/fabric-impl", "IText")
+- fabricLib.fabricDashImplMod.ITextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, charSpacing, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, deltaY, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, overline, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, styles, subscript, superscript, text, textAlign, textBackgroundColor, top, transformMatrix, transparentCorners, `type`, underline, visible, width. Inlined selectionStart, selectionEnd, selectionColor, selected, isEditing, editable, editingBorderColor, cursorWidth, cursorColor, cursorDelay, cursorDuration, caching, inCompositionMode, path, useNative, ctrlKeysMapDown, ctrlKeysMapUp, keysMap, hiddenTextarea */ @JSImport("fabric/fabric-impl", "IText")
 @js.native
 class IText protected () extends Text {
   /**
@@ -87,6 +87,11 @@ class IText protected () extends Text {
   var keysMap: js.UndefOr[js.Any] = js.native
   var path: js.UndefOr[java.lang.String] = js.native
   /**
+    * Indicates whether text is selected
+    * @type Boolean
+    */
+  var selected: js.UndefOr[scala.Boolean] = js.native
+  /**
   	 * Color of text selection
   	 * @type String
   	 */
@@ -112,6 +117,10 @@ class IText protected () extends Text {
     index: scala.Double,
     jlen: scala.Double
   ): scala.Double = js.native
+  /**
+    * @private
+    */
+  def _updateTextarea(): scala.Unit = js.native
   /**
   	 * Aborts cursor animation and clears all timeouts
   	 */

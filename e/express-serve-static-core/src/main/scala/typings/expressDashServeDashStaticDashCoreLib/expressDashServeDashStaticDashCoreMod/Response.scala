@@ -137,6 +137,7 @@ trait Response
   def download(path: java.lang.String): scala.Unit = js.native
   def download(path: java.lang.String, filename: java.lang.String): scala.Unit = js.native
   def download(path: java.lang.String, filename: java.lang.String, fn: Errback): scala.Unit = js.native
+  def download(path: java.lang.String, filename: java.lang.String, options: js.Any): scala.Unit = js.native
   def download(path: java.lang.String, filename: java.lang.String, options: js.Any, fn: Errback): scala.Unit = js.native
   def download(path: java.lang.String, fn: Errback): scala.Unit = js.native
   /* InferMemberOverrides */

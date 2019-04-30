@@ -659,6 +659,7 @@
 | 348 | [http-status-codes](./h/http-status-codes) | Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus API.
 | 348 | [soap](./s/soap) | A minimal node SOAP client
 | 347 | [angular-animate](./a/angular-animate) | AngularJS module for animations
+| 347 | [imagemin-pngquant](./i/imagemin-pngquant) | Imagemin plugin for `pngquant`
 | 346 | [karma-jasmine](./k/karma-jasmine) | A Karma plugin - adapter for Jasmine testing framework.
 | 346 | [xml2json](./x/xml2json) | Converts xml to json and vice-versa, using node-expat.
 | 345 | [vue-class-component](./v/vue-class-component) | ES201X/TypeScript class decorator for Vue components
@@ -1295,6 +1296,7 @@
 | 142 | [stream-to-array](./s/stream-to-array) | Concatenate a readable stream's data into a single array
 | 142 | [tail](./t/tail) | tail a file in node
 | 142 | [yazl](./y/yazl) | yet another zip library for node
+| 141 | [balanced-match](./b/balanced-match) | Match balanced character pairs, like "{" and "}"
 | 141 | [date-arithmetic](./d/date-arithmetic) | simple date math util
 | 141 | [express-fileupload](./e/express-fileupload) | Simple express file upload middleware that wraps around Busboy
 | 141 | [express-ws](./e/express-ws) | WebSocket endpoints for Express applications
@@ -1416,6 +1418,7 @@
 | 124 | [slate-react](./s/slate-react) | A set of React components for building completely customizable rich-text editors.
 | 124 | [write-pkg](./w/write-pkg) | Write a package.json file
 | 123 | [bull](./b/bull) | Job manager
+| 123 | [date-utils](./d/date-utils) | Date add-ons for Node.js
 | 123 | [diacritics](./d/diacritics) | remove diacritics from strings
 | 123 | [git-url-parse](./g/git-url-parse) | A high level git url parser for common git providers.
 | 123 | [inflected](./i/inflected) | A port of ActiveSupport's inflector to Node.js
@@ -2092,6 +2095,7 @@
 | 62 | [statsd-client](./s/statsd-client) | Yet another client for Etsy's statsd
 | 62 | [svg-sprite](./s/svg-sprite) | SVG sprites & stacks galore — A low-level Node.js module that takes a bunch of SVG files, optimizes them and bakes them into SVG sprites of several types along with suitable stylesheet resources (e.g. CSS, Sass, LESS, Stylus, etc.)
 | 62 | [uri-templates](./u/uri-templates) | URI Templates (RFC6570) including de-substitution
+| 62 | [y18n](./y/y18n) | the bare-bones internationalization library used by yargs
 | 61 | [ant-design__icons](./a/ant-design__icons) | Ant Design Icons
 | 61 | [astring](./a/astring) | JavaScript code generator from an ESTree-compliant AST.
 | 61 | [backo2](./b/backo2) | simple backoff based on segmentio/backo
@@ -2432,6 +2436,7 @@
 | 46 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 46 | [static-eval](./s/static-eval) | evaluate statically-analyzable expressions
 | 46 | [topojson-client](./t/topojson-client) | Manipulate TopoJSON and convert it to GeoJSON.
+| 45 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 45 | [center-align](./c/center-align) | Center-align the text in a string.
 | 45 | [ckeditor](./c/ckeditor) | JavaScript WYSIWYG web text editor.
 | 45 | [editorconfig](./e/editorconfig) | EditorConfig File Locator and Interpreter for Node.js
@@ -3407,6 +3412,7 @@
 | 18 | [blueprintjs__icons](./b/blueprintjs__icons) | Components, fonts, icons, and css files for creating and displaying icons.
 | 18 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the browser
 | 18 | [builder-util-runtime](./b/builder-util-runtime) | HTTP utilities. Used by [electron-builder](https://github.com/electron-userland/electron-builder).
+| 18 | [clone-regexp](./c/clone-regexp) | Clone and modify a RegExp instance
 | 18 | [detect-passive-events](./d/detect-passive-events) | Detect if the browser supports passive events
 | 18 | [docker-file-parser](./d/docker-file-parser) | Parses a Dockerfile and returns an array of commands.
 | 18 | [dom-testing-library](./d/dom-testing-library) | Simple and complete DOM testing utilities that encourage good testing practices.
@@ -3715,6 +3721,7 @@
 | 13 | [graphql-fields](./g/graphql-fields) | Turns GraphQLResolveInfo into a map of the requested fields
 | 13 | [gulp-msbuild](./g/gulp-msbuild) | msbuild plugin for gulp. Inspired by grunt-msbuild.
 | 13 | [halogen](./h/halogen) | A collection of loading spinners with React.js
+| 13 | [is-admin](./i/is-admin) | Check if the process is running as Administrator on Windows
 | 13 | [jasmine-jquery](./j/jasmine-jquery) | jQuery matchers and fixture loader for Jasmine framework
 | 13 | [jquery-knob](./j/jquery-knob) | Nice, downward compatible, touchable, jQuery dial
 | 13 | [jquery-match-height](./j/jquery-match-height) | a responsive equal heights plugin for jQuery
@@ -4030,6 +4037,7 @@
 | 10 | [sparse-bitfield](./s/sparse-bitfield) | Bitfield that allocates a series of small buffers to support sparse bits without allocating a massive buffer
 | 10 | [storybook__channels](./s/storybook__channels) | Storybook Channel is similar to an EventEmitter. Channels are used with Storybook implementations to send/receive events between the Storybook Manager and the Storybook Renderer.
 | 10 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components for your app
+| 10 | [string-pixel-width](./s/string-pixel-width) | String pixel width measurement on the backend in Javascript
 | 10 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects
 | 10 | [theo](./t/theo) | Design Tokens formatter
 | 10 | [tokenizr](./t/tokenizr) | String Tokenization Library for JavaScript
@@ -4225,6 +4233,7 @@
 | 8 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for realtime streaming data
 | 8 | [superagent-no-cache](./s/superagent-no-cache) | Plugin for visionmedia/superagent that adds headers to all requests that prevents caching
 | 8 | [text-buffer](./t/text-buffer) | A container for large mutable strings with annotated regions
+| 8 | [text-extensions](./t/text-extensions) | List of text file extensions
 | 8 | [timer-machine](./t/timer-machine) | A lightweight, pause-able timer class
 | 8 | [ts-invariant](./t/ts-invariant) | TypeScript implementation of invariant(condition, message)
 | 8 | [utif](./u/utif) | Fast and advanced TIFF decoder
@@ -4325,6 +4334,7 @@
 | 7 | [pouchdb-adapter-node-websql](./p/pouchdb-adapter-node-websql) | PouchDB adapter using Node-based SQLite as its data store.
 | 7 | [power-assert-formatter](./p/power-assert-formatter) | Power Assert output formatter
 | 7 | [prando](./p/prando) | Deterministic pseudo-random number generator for JavaScript and TypeScript
+| 7 | [proclaim](./p/proclaim) | A simple assertion library for server and client side JavaScript
 | 7 | [progressbar](./p/progressbar) | A nice wrapper around [TJ Holowaychuck's](https://github.com/visionmedia) [node-progress](https://github.com/visionmedia/node-progress) with chaining, domains, and steps
 | 7 | [radius](./r/radius) | RADIUS packet encoding/decoding
 | 7 | [radix64](./r/radix64) | radix64, library to convert Unsigned Interger into a base64 like String
@@ -4706,6 +4716,7 @@
 | 4 | [extra-watch-webpack-plugin](./e/extra-watch-webpack-plugin) | extra-watch-webpack-plugin would help you to attach extra files or dirs to webpack's watch system
 | 4 | [factory-girl](./f/factory-girl) | A factory library for Node.js and JavaScript inspired by factory_girl
 | 4 | [filesystem](./f/filesystem) | -
+| 4 | [format-util](./f/format-util) | Lightweight util.format() for the browser.
 | 4 | [fxn](./f/fxn) | Stateless Architecture
 | 4 | [gamedig](./g/gamedig) | Query for the status of any game server in Node.JS
 | 4 | [geolite2](./g/geolite2) | Maxmind's GeoLite2 Free Databases
@@ -4767,6 +4778,7 @@
 | 4 | [obj-str](./o/obj-str) | A tiny library for serializing Object values to Strings.
 | 4 | [osrm](./o/osrm) | The Open Source Routing Machine is a high performance routing engine written in C++14 designed to run on OpenStreetMap data.
 | 4 | [plugapi](./p/plugapi) | Generic API for building plug.dj bots
+| 4 | [pouchdb-live-find](./p/pouchdb-live-find) | Live PouchDB queries that update automatically as changes come in!
 | 4 | [precise](./p/precise) | Precision timer for nanosecond differences
 | 4 | [promise-sftp](./p/promise-sftp) | a promise-based sftp client for node.js
 | 4 | [promised-temp](./p/promised-temp) | Tool for making temporary files asynchronously that return Promises. Wraps node-temp module with Promises.
@@ -4784,6 +4796,7 @@
 | 4 | [react-native-touch-id](./r/react-native-touch-id) | React Native authentication with the native Touch ID popup.
 | 4 | [react-scrollable-anchor](./r/react-scrollable-anchor) | Provide smooth scrolling anchors in React.
 | 4 | [react-splitter-layout](./r/react-splitter-layout) | A simple split layout for React and modern browsers
+| 4 | [reactour](./r/reactour) | Tourist Guide into your React Components
 | 4 | [redux-persist-transform-encrypt](./r/redux-persist-transform-encrypt) | Encrypt your Redux store.
 | 4 | [redux-saga__is](./r/redux-saga__is) | Runtime type checking helpers
 | 4 | [redux-saga__symbols](./r/redux-saga__symbols) | Redux-saga internal symbol "registry".
@@ -4831,6 +4844,7 @@
 | 3 | [anydb-sql](./a/anydb-sql) | Minimal ORM for mysql, postgresql and sqlite with complete arbitrary SQL query support (based on brianc's query builder sql)
 | 3 | [apollo-graphql](./a/apollo-graphql) | Apollo GraphQL utility library
 | 3 | [apostrophe](./a/apostrophe) | The Apostrophe Content Management System.
+| 3 | [archive-extensions](./a/archive-extensions) | List of archive file extensions
 | 3 | [array-binarysearch_dot_closest](./a/array-binarysearch_dot_closest) | Get index of closest value in sorted array.
 | 3 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messing with setTimeout.
 | 3 | [atlaskit__calendar](./a/atlaskit__calendar) | A React component for displaying a calendar.
@@ -4847,6 +4861,7 @@
 | 3 | [carbon__themes](./c/carbon__themes) | Themes for applying color in the Carbon Design System
 | 3 | [carbon__type](./c/carbon__type) | Typography for digital and software products using the Carbon Design System
 | 3 | [cloner](./c/cloner) | An ES5+ compatible utility to deep or shallow copy and merge objects.
+| 3 | [compressed-extensions](./c/compressed-extensions) | List of compressed file extensions
 | 3 | [cordova-plugin-app-version](./c/cordova-plugin-app-version) | Cordova plugin to return the version number of the current app
 | 3 | [cordova-plugin-contacts](./c/cordova-plugin-contacts) | Cordova Contacts Plugin
 | 3 | [cordova-plugin-file-opener2](./c/cordova-plugin-file-opener2) | A File Opener Plugin for Cordova. (The Original Version)
@@ -5528,8 +5543,6 @@
 | 1 | [leaflet_dot_polylinemeasure](./l/leaflet_dot_polylinemeasure) | Leaflet Plugin to measure distances of simple lines as well as of complex polylines
 | 1 | [libpq](./l/libpq) | Low-level native bindings to PostgreSQL libpq
 | 1 | [license-checker-webpack-plugin](./l/license-checker-webpack-plugin) | Verifies licenses of all external dependencies in a compilation, and outputs them to a file.
-| 1 | [linkify-issues](./l/linkify-issues) | Linkify GitHub issue references
-| 1 | [linkify-urls](./l/linkify-urls) | Linkify URLs in a string
 | 1 | [localized-strings](./l/localized-strings) | Simple module to localize the strings of any JS based program using the same syntax used in the ReactLocalization and ReactNativeLocalization module, use 'npm run build' before publishing
 | 1 | [lodash_dot_add](./l/lodash_dot_add) | The lodash method `_.add` exported as a module.
 | 1 | [lodash_dot_flatmapdeep](./l/lodash_dot_flatmapdeep) | The lodash method `_.flatMapDeep` exported as a module.
@@ -5855,6 +5868,7 @@
 | 0 | [easy-xapi-utils](./e/easy-xapi-utils) | Utils for easy-xapi
 | 0 | [ebongarde-root](./e/ebongarde-root) | Utilize your package root directory from anywhere in your module.
 | 0 | [egg_dot_js](./e/egg_dot_js) | node.js mvc framework
+| 0 | [electron-clipboard-extended](./e/electron-clipboard-extended) | Electron clipboard extended with event handler for Text and Image change
 | 0 | [electron-load-devtool](./e/electron-load-devtool) | Easily load dev-tool for electron
 | 0 | [ember__string](./e/ember__string) | A set of utilities to transform strings
 | 0 | [enzyme-async-helpers](./e/enzyme-async-helpers) | Async helpers for testing React components with Enzyme.
@@ -6160,6 +6174,7 @@
 | 0 | [react-virtual-keyboard](./r/react-virtual-keyboard) | Use jQuery Virtual Keyboard in react.js
 | 0 | [react-wow](./r/react-wow) | Using CSS animation in your react components.
 | 0 | [react-youtube-embed](./r/react-youtube-embed) | A responsive YouTube embed component for React.
+| 0 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and expanding long blocks of text with "Read more" and "Close" links.
 | 0 | [redis-rate-limiter](./r/redis-rate-limiter) | Rate-limit any operation, backed by Redis
 | 0 | [redux-async-queue](./r/redux-async-queue) | Async queue middleware for Redux.
 | 0 | [redux-doghouse](./r/redux-doghouse) | Scoping helpers for building reusable components with Redux

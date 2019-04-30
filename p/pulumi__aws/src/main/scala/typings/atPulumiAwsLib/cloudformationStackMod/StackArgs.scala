@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait StackArgs extends js.Object {
   /**
     * A list of capabilities.
-    * Valid values: `CAPABILITY_IAM` or `CAPABILITY_NAMED_IAM`
+    * Valid values: `CAPABILITY_IAM`, `CAPABILITY_NAMED_IAM`, or `CAPABILITY_AUTO_EXPAND`
     */
   val capabilities: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]

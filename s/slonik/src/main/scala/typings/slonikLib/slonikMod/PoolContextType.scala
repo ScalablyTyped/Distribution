@@ -19,7 +19,7 @@ trait PoolContextType extends js.Object {
   /**
     * The query that is initiating the connection
     */
-  var query: TaggedTemplateLiteralInvocationType | scala.Null = js.native
+  var query: TaggedTemplateLiteralInvocationType[QueryResultRowType[java.lang.String]] | scala.Null = js.native
   /**
     * Instance of Roarr logger with bound connection context parameters
     */

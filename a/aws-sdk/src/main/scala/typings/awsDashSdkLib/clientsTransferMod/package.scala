@@ -16,6 +16,8 @@ package object clientsTransferMod {
   */
   type EndpointType = _EndpointType | java.lang.String
   type HomeDirectory = java.lang.String
+  type HostKey = java.lang.String
+  type HostKeyFingerprint = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.SERVICE_MANAGED
     - awsDashSdkLib.awsDashSdkLibStrings.API_GATEWAY

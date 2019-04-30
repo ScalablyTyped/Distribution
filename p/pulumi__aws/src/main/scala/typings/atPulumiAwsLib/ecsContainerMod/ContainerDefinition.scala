@@ -17,6 +17,7 @@ trait ContainerDefinition extends js.Object {
   var environment: js.UndefOr[js.Array[KeyValuePair]] = js.undefined
   var essential: js.UndefOr[scala.Boolean] = js.undefined
   var extraHosts: js.UndefOr[js.Array[HostEntry]] = js.undefined
+  var healthCheck: js.UndefOr[HealthCheck] = js.undefined
   var hostname: js.UndefOr[java.lang.String] = js.undefined
   var image: js.UndefOr[java.lang.String] = js.undefined
   var links: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -50,6 +51,7 @@ object ContainerDefinition {
     environment: js.Array[KeyValuePair] = null,
     essential: js.UndefOr[scala.Boolean] = js.undefined,
     extraHosts: js.Array[HostEntry] = null,
+    healthCheck: HealthCheck = null,
     hostname: java.lang.String = null,
     image: java.lang.String = null,
     links: js.Array[java.lang.String] = null,
@@ -78,6 +80,7 @@ object ContainerDefinition {
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential)
     if (extraHosts != null) __obj.updateDynamic("extraHosts")(extraHosts)
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (image != null) __obj.updateDynamic("image")(image)
     if (links != null) __obj.updateDynamic("links")(links)

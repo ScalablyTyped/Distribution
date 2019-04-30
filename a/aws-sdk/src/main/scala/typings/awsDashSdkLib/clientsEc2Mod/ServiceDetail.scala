@@ -19,7 +19,7 @@ trait ServiceDetail extends js.Object {
     */
   var BaseEndpointDnsNames: js.UndefOr[ValueStringList] = js.undefined
   /**
-    * Indicates whether the service manages it's VPC Endpoints. Management of the service VPC Endpoints using the VPC Endpoint API is restricted.
+    * Indicates whether the service manages it's VPC endpoints. Management of the service VPC endpoints using the VPC endpoint API is restricted.
     */
   var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "execall"
-version := "1.0-dt-20190114Z-1d8107"
+version := "2.0.0-323b53"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

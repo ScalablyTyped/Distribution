@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-plain-obj
 
-Typings are for version 1.1
+Typings are for version 2.0.0
 
 ## Library description:
 Check if a value is a plain object
@@ -24,7 +24,7 @@ Check if a value is a plain object
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,32 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-plain-obj 1.1
-// Project: https://github.com/sindresorhus/is-plain-obj
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a value is a plain object.
+
+An object is plain if it's created by either `{}`, `new Object()`, or `Object.create(null)`.
+
+@example
+```
+import isPlainObject = require('is-plain-obj');
+
+isPlainObject({foo: 'bar'});
+//=> true
+
+isPlainObject(new Object());
+//=> true
+
+isPlainObject(Object.create(null));
+//=> true
+
+isPlainObject([1, 2, 3]);
+//=> false
+
+class Unicorn {}
+isPlainObject(new Unicorn());
+//=> false
+```
+*/
 
 ```
 

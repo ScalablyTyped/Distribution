@@ -11,6 +11,9 @@ class Spherical () extends js.Object {
   def this(clock: scala.Double) = this()
   def this(clock: scala.Double, cone: scala.Double) = this()
   def this(clock: scala.Double, cone: scala.Double, magnitude: scala.Double) = this()
+  var clock: scala.Double = js.native
+  var cone: scala.Double = js.native
+  var magnitude: scala.Double = js.native
   def clone(result: Spherical): Spherical = js.native
   def equals(other: Spherical): scala.Boolean = js.native
   def equalsEpsilon(other: Spherical, epsilon: scala.Double): scala.Boolean = js.native

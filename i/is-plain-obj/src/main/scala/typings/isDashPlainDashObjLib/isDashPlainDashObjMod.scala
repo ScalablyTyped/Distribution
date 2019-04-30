@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("is-plain-obj", JSImport.Namespace)
 @js.native
 object isDashPlainDashObjMod extends js.Object {
-  def apply(input: js.Any): scala.Boolean = js.native
+  def apply(value: js.Any): /* is object */ scala.Boolean = js.native
 }
 

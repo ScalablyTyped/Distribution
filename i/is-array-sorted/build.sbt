@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-array-sorted"
-version := "1.0-dt-20181215Z-82ddd0"
+version := "2.0.0-f20f08"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

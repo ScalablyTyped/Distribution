@@ -53,7 +53,7 @@ trait HostConfig extends js.Object {
   var PublishAllPorts: js.UndefOr[scala.Boolean] = js.undefined
   var ReadonlyPaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var ReadonlyRootfs: js.UndefOr[scala.Boolean] = js.undefined
-  var RestartPolicy: js.UndefOr[dockerodeLib.Anon_MaximumRetryCount] = js.undefined
+  var RestartPolicy: js.UndefOr[RestartPolicy] = js.undefined
   var Runtime: js.UndefOr[java.lang.String] = js.undefined
   var SecurityOpt: js.UndefOr[js.Any] = js.undefined
   var ShmSize: js.UndefOr[scala.Double] = js.undefined
@@ -117,7 +117,7 @@ object HostConfig {
     PublishAllPorts: js.UndefOr[scala.Boolean] = js.undefined,
     ReadonlyPaths: js.Array[java.lang.String] = null,
     ReadonlyRootfs: js.UndefOr[scala.Boolean] = js.undefined,
-    RestartPolicy: dockerodeLib.Anon_MaximumRetryCount = null,
+    RestartPolicy: RestartPolicy = null,
     Runtime: java.lang.String = null,
     SecurityOpt: js.Any = null,
     ShmSize: scala.Int | scala.Double = null,

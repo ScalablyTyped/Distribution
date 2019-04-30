@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "latest-semver"
-version := "1.0-dt-20190115Z-e110d9"
+version := "2.0.0-e110d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

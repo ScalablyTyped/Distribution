@@ -67,7 +67,7 @@ trait RequestSpotLaunchSpecification extends js.Object {
     */
   var SubnetId: js.UndefOr[String] = js.undefined
   /**
-    * The Base64-encoded user data for the instance.
+    * The Base64-encoded user data for the instance. User data is limited to 16 KB.
     */
   var UserData: js.UndefOr[String] = js.undefined
 }

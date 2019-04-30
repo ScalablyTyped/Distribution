@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ScheduledInstancesLaunchSpecification extends js.Object {
   /**
-    * One or more block device mapping entries.
+    * The block device mapping entries.
     */
   var BlockDeviceMappings: js.UndefOr[ScheduledInstancesBlockDeviceMappingSet] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
     */
   var Monitoring: js.UndefOr[ScheduledInstancesMonitoring] = js.undefined
   /**
-    * One or more network interfaces.
+    * The network interfaces.
     */
   var NetworkInterfaces: js.UndefOr[ScheduledInstancesNetworkInterfaceSet] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
     */
   var RamdiskId: js.UndefOr[String] = js.undefined
   /**
-    * The IDs of one or more security groups.
+    * The IDs of the security groups.
     */
   var SecurityGroupIds: js.UndefOr[ScheduledInstancesSecurityGroupIdSet] = js.undefined
   /**

@@ -10,6 +10,9 @@ trait ListedServer extends js.Object {
     * The unique Amazon Resource Name (ARN) for the server to be listed.
     */
   var Arn: awsDashSdkLib.clientsTransferMod.Arn
+  /**
+    * The type of VPC endpoint that your SFTP server is connected to. If your SFTP server is connected to a VPC endpoint, your server isn't accessible over the public internet.
+    */
   var EndpointType: js.UndefOr[EndpointType] = js.undefined
   /**
     * The authentication method used to validate a user for the server that was specified. listed. This can include Secure Shell (SSH), user name and password combinations, or your own custom authentication method. Valid values include SERVICE_MANAGED or API_GATEWAY.

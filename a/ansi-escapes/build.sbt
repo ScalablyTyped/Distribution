@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "ansi-escapes"
-version := "4.1.0-d0ff1b"
+version := "4.1.0-55eabb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190426Z-d35e72",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
   "org.scalablytyped" %%% "std" % "3.4-6f75bc",
   "org.scalablytyped" %%% "type-fest" % "0.3.0-3fb4c9")
 publishArtifact in packageDoc := false

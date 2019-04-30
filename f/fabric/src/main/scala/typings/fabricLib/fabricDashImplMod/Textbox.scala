@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fabricLib.fabricDashImplMod.ITextboxOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, caching, canvas, centeredRotation, centeredScaling, charSpacing, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, ctrlKeysMapDown, ctrlKeysMapUp, cursorColor, cursorDelay, cursorDuration, cursorWidth, data, deltaY, dirty, editable, editingBorderColor, evented, excludeFromExport, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hiddenTextarea, hoverCursor, inCompositionMode, includeDefaultValues, inverted, isEditing, keysMap, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, overline, ownMatrixCache, padding, paintFirst, path, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, selectionColor, selectionEnd, selectionStart, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, styles, subscript, superscript, text, textAlign, textBackgroundColor, textLines, top, transformMatrix, transparentCorners, `type`, underline, useNative, visible, width. Inlined minWidth, dynamicMinWidth, splitByGrapheme */ @JSImport("fabric/fabric-impl", "Textbox")
+- fabricLib.fabricDashImplMod.ITextboxOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, caching, canvas, centeredRotation, centeredScaling, charSpacing, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, ctrlKeysMapDown, ctrlKeysMapUp, cursorColor, cursorDelay, cursorDuration, cursorWidth, data, deltaY, dirty, editable, editingBorderColor, evented, excludeFromExport, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hiddenTextarea, hoverCursor, inCompositionMode, includeDefaultValues, inverted, isEditing, keysMap, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, overline, ownMatrixCache, padding, paintFirst, path, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selected, selectionBackgroundColor, selectionColor, selectionEnd, selectionStart, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, styles, subscript, superscript, text, textAlign, textBackgroundColor, top, transformMatrix, transparentCorners, `type`, underline, useNative, visible, width. Inlined minWidth, dynamicMinWidth, splitByGrapheme */ @JSImport("fabric/fabric-impl", "Textbox")
 @js.native
 class Textbox protected () extends IText {
   /**
@@ -16,6 +16,12 @@ class Textbox protected () extends IText {
   	 */
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, options: ITextboxOptions) = this()
+  /**
+    * Use this regular expression to split strings in breakable lines
+    * @private
+    * @type RegExp
+    */
+  var _wordJoiners: stdLib.RegExp = js.native
   /**
   	 * Minimum calculated width of a textbox, in pixels.
   	 * fixed to 2 so that an empty textbox cannot go to 0
@@ -35,6 +41,16 @@ class Textbox protected () extends IText {
   	 * @since 2.6.0
   	 */
   var splitByGrapheme: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * Helper function to measure a string of text, given its lineIndex and charIndex offset
+    * it gets called when charBounds are not available yet.
+    * @private
+    * @param {Array} text characters
+    * @param {number} lineIndex
+    * @param {number} charOffset
+    * @returns {number}
+    */
+  def _measureWord(word: js.Array[java.lang.String], lineIndex: scala.Double, charOffset: scala.Double): scala.Double = js.native
   /**
     * Returns larger of min width and dynamic min width
     * @return {Number}

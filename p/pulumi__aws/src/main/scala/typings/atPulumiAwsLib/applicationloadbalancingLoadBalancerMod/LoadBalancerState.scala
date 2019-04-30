@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait LoadBalancerState extends js.Object {
   /**
-    * An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
+    * An Access Logs block. Access Logs documented below.
     */
   val accessLogs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketEnabledPrefix]] = js.undefined
   /**

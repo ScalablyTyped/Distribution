@@ -23,7 +23,7 @@ trait AssociateAddressRequest extends js.Object {
     */
   var InstanceId: js.UndefOr[String] = js.undefined
   /**
-    * [EC2-VPC] The ID of the network interface. If the instance has more than one network interface, you must specify a network interface ID.
+    * [EC2-VPC] The ID of the network interface. If the instance has more than one network interface, you must specify a network interface ID. For EC2-VPC, you can specify either the instance ID or the network interface ID, but not both. 
     */
   var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait AssociateAddressRequest extends js.Object {
     */
   var PrivateIpAddress: js.UndefOr[String] = js.undefined
   /**
-    * The Elastic IP address. This is required for EC2-Classic.
+    * The Elastic IP address to associate with the instance. This is required for EC2-Classic.
     */
   var PublicIp: js.UndefOr[String] = js.undefined
 }

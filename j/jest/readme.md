@@ -55,6 +55,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Sebastian Sebald <https://github.com/sebald>
 //                 Andy <https://github.com/andys8>
 //                 Antoine Brault <https://github.com/antoinebrault>
+//                 Jeroen Claassens <https://github.com/favna>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 

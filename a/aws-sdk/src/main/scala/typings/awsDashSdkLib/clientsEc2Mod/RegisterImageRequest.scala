@@ -15,7 +15,7 @@ trait RegisterImageRequest extends js.Object {
     */
   var BillingProducts: js.UndefOr[BillingProductList] = js.undefined
   /**
-    * One or more block device mapping entries.
+    * The block device mapping entries.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
   /**

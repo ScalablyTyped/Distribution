@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-binary-path
 
-Typings are for version 2.0
+Typings are for version 2.1.0
 
 ## Library description:
 Check if a file path is a binary file
@@ -24,7 +24,7 @@ Check if a file path is a binary file
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-binary-path 2.0
-// Project: https://github.com/sindresorhus/is-binary-path
-// Definitions by: Daniel Rosenwasser <https://github.com/DanielRosenwasser>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if a file path is a binary file.
+
+@example
+```
+import isBinaryPath = require('is-binary-path');
+
+isBinaryPath('source/unicorn.png');
+//=> true
+
+isBinaryPath('source/unicorn.txt');
+//=> false
+```
+*/
 
 ```
 

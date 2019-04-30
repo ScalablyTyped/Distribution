@@ -11,7 +11,7 @@ trait DescribeFleetInstancesRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more filters.    instance-type - The instance type.  
+    * The filters.    instance-type - The instance type.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**

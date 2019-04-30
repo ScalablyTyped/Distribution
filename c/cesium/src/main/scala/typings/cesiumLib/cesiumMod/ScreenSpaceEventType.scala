@@ -32,10 +32,6 @@ object ScreenSpaceEventType extends js.Object {
     extends cesiumLib.cesiumMod.ScreenSpaceEventType
   
   @js.native
-  sealed trait MIDDLE_DOUBLE_CLICK
-    extends cesiumLib.cesiumMod.ScreenSpaceEventType
-  
-  @js.native
   sealed trait MIDDLE_DOWN
     extends cesiumLib.cesiumMod.ScreenSpaceEventType
   
@@ -64,10 +60,6 @@ object ScreenSpaceEventType extends js.Object {
     extends cesiumLib.cesiumMod.ScreenSpaceEventType
   
   @js.native
-  sealed trait RIGHT_DOUBLE_CLICK
-    extends cesiumLib.cesiumMod.ScreenSpaceEventType
-  
-  @js.native
   sealed trait RIGHT_DOWN
     extends cesiumLib.cesiumMod.ScreenSpaceEventType
   
@@ -79,24 +71,22 @@ object ScreenSpaceEventType extends js.Object {
   sealed trait WHEEL
     extends cesiumLib.cesiumMod.ScreenSpaceEventType
   
-  val LEFT_CLICK: LEFT_CLICK with java.lang.String = js.native
-  val LEFT_DOUBLE_CLICK: LEFT_DOUBLE_CLICK with java.lang.String = js.native
-  val LEFT_DOWN: LEFT_DOWN with java.lang.String = js.native
-  val LEFT_UP: LEFT_UP with java.lang.String = js.native
-  val MIDDLE_CLICK: MIDDLE_CLICK with java.lang.String = js.native
-  val MIDDLE_DOUBLE_CLICK: MIDDLE_DOUBLE_CLICK with java.lang.String = js.native
-  val MIDDLE_DOWN: MIDDLE_DOWN with java.lang.String = js.native
-  val MIDDLE_UP: MIDDLE_UP with java.lang.String = js.native
-  val MOUSE_MOVE: MOUSE_MOVE with java.lang.String = js.native
-  val PINCH_END: PINCH_END with java.lang.String = js.native
-  val PINCH_MOVE: PINCH_MOVE with java.lang.String = js.native
-  val PINCH_START: PINCH_START with java.lang.String = js.native
-  val RIGHT_CLICK: RIGHT_CLICK with java.lang.String = js.native
-  val RIGHT_DOUBLE_CLICK: RIGHT_DOUBLE_CLICK with java.lang.String = js.native
-  val RIGHT_DOWN: RIGHT_DOWN with java.lang.String = js.native
-  val RIGHT_UP: RIGHT_UP with java.lang.String = js.native
-  val WHEEL: WHEEL with java.lang.String = js.native
+  /* 2 */ val LEFT_CLICK: LEFT_CLICK with scala.Double = js.native
+  /* 3 */ val LEFT_DOUBLE_CLICK: LEFT_DOUBLE_CLICK with scala.Double = js.native
+  /* 0 */ val LEFT_DOWN: LEFT_DOWN with scala.Double = js.native
+  /* 1 */ val LEFT_UP: LEFT_UP with scala.Double = js.native
+  /* 12 */ val MIDDLE_CLICK: MIDDLE_CLICK with scala.Double = js.native
+  /* 10 */ val MIDDLE_DOWN: MIDDLE_DOWN with scala.Double = js.native
+  /* 11 */ val MIDDLE_UP: MIDDLE_UP with scala.Double = js.native
+  /* 15 */ val MOUSE_MOVE: MOUSE_MOVE with scala.Double = js.native
+  /* 18 */ val PINCH_END: PINCH_END with scala.Double = js.native
+  /* 19 */ val PINCH_MOVE: PINCH_MOVE with scala.Double = js.native
+  /* 17 */ val PINCH_START: PINCH_START with scala.Double = js.native
+  /* 7 */ val RIGHT_CLICK: RIGHT_CLICK with scala.Double = js.native
+  /* 5 */ val RIGHT_DOWN: RIGHT_DOWN with scala.Double = js.native
+  /* 6 */ val RIGHT_UP: RIGHT_UP with scala.Double = js.native
+  /* 16 */ val WHEEL: WHEEL with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[cesiumLib.cesiumMod.ScreenSpaceEventType with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[cesiumLib.cesiumMod.ScreenSpaceEventType with scala.Double] = js.native
 }
 

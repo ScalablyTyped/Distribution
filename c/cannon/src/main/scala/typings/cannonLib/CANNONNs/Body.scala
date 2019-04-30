@@ -59,6 +59,8 @@ class Body () extends EventTarget {
   def addShape(shape: Shape, offset: Vec3, orientation: Quaternion): scala.Unit = js.native
   def applyForce(force: Vec3, worldPoint: Vec3): scala.Unit = js.native
   def applyImpulse(impulse: Vec3, worldPoint: Vec3): scala.Unit = js.native
+  def applyLocalForce(force: Vec3, localPoint: Vec3): scala.Unit = js.native
+  def applyLocalImpulse(impulse: Vec3, localPoint: Vec3): scala.Unit = js.native
   def computeAABB(): scala.Unit = js.native
   def getVelocityAtWorldPoint(worldPoint: Vec3, result: Vec3): Vec3 = js.native
   def pointToLocalFrame(worldPoint: Vec3): Vec3 = js.native

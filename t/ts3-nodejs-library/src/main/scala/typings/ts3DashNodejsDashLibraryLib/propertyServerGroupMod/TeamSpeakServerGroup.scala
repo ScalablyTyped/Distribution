@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakServerGroup
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
+  var iconid: java.lang.String = js.native
+  var nMemberAddp: java.lang.String = js.native
+  var nMemberRemovep: java.lang.String = js.native
+  var nModifyp: java.lang.String = js.native
+  var name: java.lang.String = js.native
+  var namemode: java.lang.String = js.native
+  var savedb: java.lang.String = js.native
+  var sgid: scala.Double = js.native
+  var sortid: java.lang.String = js.native
+  var `type`: java.lang.String = js.native
   /**
     * Adds a client to the server group. Please note that a client cannot be added to default groups or template groups.
     * @param - The Client Database ID which should be added to the Group

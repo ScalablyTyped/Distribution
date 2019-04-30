@@ -8,8 +8,25 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TeamSpeakChannel
   extends ts3DashNodejsDashLibraryLib.propertyAbstractMod.^ {
-  /** Returns the Name of the channel */
+  var cid: scala.Double = js.native
+  var codec: scala.Double = js.native
+  var codecQuality: scala.Double = js.native
+  var flagDefault: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var flagPassword: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var flagPermanent: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var flagSemiPermanent: ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`0` | ts3DashNodejsDashLibraryLib.ts3DashNodejsDashLibraryLibNumbers.`1` = js.native
+  var iconId: scala.Double = js.native
+  var maxclients: scala.Double = js.native
+  var maxfamilyclients: scala.Double = js.native
   var name: java.lang.String = js.native
+  var neededSubscribePower: scala.Double = js.native
+  var neededTalkPower: scala.Double = js.native
+  var order: scala.Double = js.native
+  var pid: scala.Double = js.native
+  var secondsEmpty: scala.Double = js.native
+  var topic: js.UndefOr[scala.Double] = js.native
+  var totalClients: scala.Double = js.native
+  var totalClientsFamily: scala.Double = js.native
   /**
     * Deletes an existing channel by ID. If force is set to 1, the channel will be deleted even if there are clients within.
     * The clients will be kicked to the default channel with an appropriate reason message.

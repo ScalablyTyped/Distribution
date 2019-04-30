@@ -51,5 +51,12 @@ object Cartographic extends js.Object {
     height: scala.Double,
     result: cesiumLib.cesiumMod.Cartographic
   ): cesiumLib.cesiumMod.Cartographic = js.native
+  def toCartesian(cartographic: cesiumLib.cesiumMod.Cartographic): cesiumLib.cesiumMod.Cartesian3 = js.native
+  def toCartesian(cartographic: cesiumLib.cesiumMod.Cartographic, ellipsoid: cesiumLib.cesiumMod.Ellipsoid): cesiumLib.cesiumMod.Cartesian3 = js.native
+  def toCartesian(
+    cartographic: cesiumLib.cesiumMod.Cartographic,
+    ellipsoid: cesiumLib.cesiumMod.Ellipsoid,
+    result: cesiumLib.cesiumMod.Cartesian3
+  ): cesiumLib.cesiumMod.Cartesian3 = js.native
 }
 

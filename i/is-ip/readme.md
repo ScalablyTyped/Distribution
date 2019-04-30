@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-ip
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check if a string is an IP address
@@ -24,22 +24,11 @@ Check if a string is an IP address
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for is-ip 2.0
-// Project: https://github.com/sindresorhus/is-ip#readme
-// Definitions by: coderslagoon <https://github.com/coderslagoon>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/** Check if input is IPv4 or IPv6. */
-
-```
 

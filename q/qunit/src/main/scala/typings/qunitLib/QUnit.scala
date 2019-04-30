@@ -45,6 +45,46 @@ trait QUnit extends js.Object {
     */
   var isLocal: scala.Boolean = js.native
   /**
+    * Group related tests under a single label.
+    *
+    * You can use the module name to organize, select, and filter tests to run.
+    *
+    * All tests inside a module callback function will be grouped into that
+    * module. The test names will all be preceded by the module name in the
+    * test results. Other modules can be nested inside this callback function,
+    * where their tests' names will be labeled by their names recursively
+    * prefixed by their parent modules.
+    *
+    * If `QUnit.module` is defined without a `nested` callback argument, all
+    * subsequently defined tests will be grouped into the module until another
+    * module is defined.
+    *
+    * Modules with test group functions allow you to define nested modules, and
+    * QUnit will run tests on the parent module before going deep on the nested
+    * ones, even if they're declared first. Additionally, any hook callbacks on
+    * a parent module will wrap the hooks on a nested module. In other words,
+    * `before` and `beforeEach` callbacks will form a queue while the
+    * `afterEach` and `after` callbacks will form a stack.
+    *
+    * You can specify code to run before and after tests using the hooks
+    * argument, and also to create properties that will be shared on the
+    * testing context. Any additional properties on the `hooks` object will be
+    * added to that context. The `hooks` argument is still optional if you call
+    * `QUnit.module` with a callback argument.
+    *
+    * The module's callback is invoked with the test environment as its `this`
+    * context, with the environment's properties copied to the module's tests,
+    * hooks, and nested modules. Note that changes on tests' `this` are not
+    * preserved between sibling tests, where `this` will be reset to the initial
+    * value for each test.
+    *
+    * @param {string} name Label for this group of tests
+    * @param hookds Callbacks to run during test execution
+    * @param nested A callback with grouped tests and nested modules to run under the current module label
+    */
+  @JSName("module")
+  var module_Original: moduleFunc1 with moduleFunc2 with ModuleOnly = js.native
+  /**
     * QUnit version
     */
   var version: java.lang.String = js.native

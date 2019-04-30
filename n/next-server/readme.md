@@ -1,7 +1,7 @@
 
 # Scala.js typings for next-server
 
-Typings are for version 8.0
+Typings are for version 8.1
 
 
 
@@ -31,7 +31,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for next-server 8.0
+// Type definitions for next-server 8.1
 // Project: https://github.com/zeit/next.js/packages/next-server
 // Definitions by: Drew Hays <https://github.com/dru89>
 //                 Brice BERNARD <https://github.com/brikou>

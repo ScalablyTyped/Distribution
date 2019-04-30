@@ -25,23 +25,38 @@ trait CommonQueryMethodsType extends js.Object {
   var one_Original: QueryOneFunctionType = js.native
   @JSName("query")
   var query_Original: QueryFunctionType = js.native
-  def any(sql: TaggedTemplateLiteralInvocationType): js.Promise[js.Array[QueryResultRowType[java.lang.String]]] = js.native
-  def any(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[js.Array[QueryResultRowType[java.lang.String]]] = js.native
-  def anyFirst(sql: TaggedTemplateLiteralInvocationType): js.Promise[js.Array[QueryResultRowColumnType]] = js.native
-  def anyFirst(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[js.Array[QueryResultRowColumnType]] = js.native
-  def many(sql: TaggedTemplateLiteralInvocationType): js.Promise[js.Array[QueryResultRowType[java.lang.String]]] = js.native
-  def many(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[js.Array[QueryResultRowType[java.lang.String]]] = js.native
-  def manyFirst(sql: TaggedTemplateLiteralInvocationType): js.Promise[js.Array[QueryResultRowColumnType]] = js.native
-  def manyFirst(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[js.Array[QueryResultRowColumnType]] = js.native
-  def maybeOne(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultRowType[java.lang.String] | scala.Null] = js.native
-  def maybeOne(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowType[java.lang.String] | scala.Null] = js.native
-  def maybeOneFirst(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultRowColumnType] = js.native
-  def maybeOneFirst(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowColumnType] = js.native
-  def one(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultRowType[java.lang.String]] = js.native
-  def one(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowType[java.lang.String]] = js.native
-  def oneFirst(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultRowColumnType] = js.native
-  def oneFirst(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowColumnType] = js.native
-  def query(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultType[QueryResultRowType[java.lang.String]]] = js.native
-  def query(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultType[QueryResultRowType[java.lang.String]]] = js.native
+  def any[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[js.Array[T]] = js.native
+  def anyFirst[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+  ] = js.native
+  def many[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[js.Array[T]] = js.native
+  def manyFirst[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
+  ] = js.native
+  def maybeOne[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[T | scala.Null] = js.native
+  def maybeOneFirst[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[
+    (/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any) | scala.Null
+  ] = js.native
+  def one[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[T] = js.native
+  def oneFirst[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def query[T](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+  ): js.Promise[QueryResultType[T]] = js.native
 }
 

@@ -19,7 +19,7 @@ trait ImportInstanceTaskDetails extends js.Object {
     */
   var Platform: js.UndefOr[PlatformValues] = js.undefined
   /**
-    * One or more volumes.
+    * The volumes.
     */
   var Volumes: js.UndefOr[ImportInstanceVolumeDetailSet] = js.undefined
 }

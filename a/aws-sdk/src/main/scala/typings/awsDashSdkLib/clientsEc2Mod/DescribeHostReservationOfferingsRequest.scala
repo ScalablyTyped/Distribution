@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeHostReservationOfferingsRequest extends js.Object {
   /**
-    * One or more filters.    instance-family - The instance family of the offering (for example, m4).    payment-option - The payment option (NoUpfront | PartialUpfront | AllUpfront).  
+    * The filters.    instance-family - The instance family of the offering (for example, m4).    payment-option - The payment option (NoUpfront | PartialUpfront | AllUpfront).  
     */
   var Filter: js.UndefOr[FilterList] = js.undefined
   /**

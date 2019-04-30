@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-root
 
-Typings are for version 1.0
+Typings are for version 2.1.0
 
 ## Library description:
 Check if the process is running as root user, for example, one started with `sudo`
@@ -24,7 +24,7 @@ Check if the process is running as root user, for example, one started with `sud
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,20 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-root 1.0
-// Project: https://github.com/sindresorhus/is-root
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if the process is running as root user, for example, one started with `sudo`.
+
+@example
+```
+// index.js
+import isRoot = require('is-root');
+
+console.log(isRoot());
+
+// $ sudo node index.js
+// true
+```
+*/
 
 ```
 

@@ -71,6 +71,7 @@ These comments are from the typescript definitions and might be useful:
 /**
  * Seems like this is meant: https://github.com/amcharts/export
  */
+
 /**
  * ImagesSettings is a class which holds common settings of all MapImage objects.
  */
@@ -124,6 +125,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for amCharts 3.21
 // Project: https://amcharts.com
 // Definitions by: ldrick <https://github.com/ldrick>
+//                 Mark Grothe <https://github.com/grothem>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

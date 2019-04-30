@@ -17,7 +17,8 @@ object MeteorNs extends js.Object {
     var onClose: js.Function
   }
   
-  trait Error extends js.Object {
+  trait Error
+    extends stdLib.Error {
     var details: js.UndefOr[java.lang.String] = js.undefined
     var error: java.lang.String | scala.Double
     var reason: js.UndefOr[java.lang.String] = js.undefined
@@ -33,6 +34,10 @@ object MeteorNs extends js.Object {
     def this(error: scala.Double, reason: java.lang.String, details: java.lang.String) = this()
     /* CompleteClass */
     override var error: java.lang.String | scala.Double = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
   }
   
   @js.native
@@ -112,6 +117,26 @@ object MeteorNs extends js.Object {
     def stop(): scala.Unit
   }
   
+  trait TypedError
+    extends stdLib.Error {
+    var errorType: java.lang.String
+  }
+  
+  @js.native
+  class TypedErrorCls protected () extends TypedError {
+    def this(message: java.lang.String, errorType: java.lang.String) = this()
+    /* CompleteClass */
+    override var errorType: java.lang.String = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
+  }
+  
+  @js.native
+  trait TypedErrorStatic
+    extends org.scalablytyped.runtime.Instantiable2[/* message */ java.lang.String, /* errorType */ java.lang.String, TypedError]
+  
   trait User extends js.Object {
     var _id: js.UndefOr[java.lang.String] = js.undefined
     var createdAt: js.UndefOr[stdLib.Date] = js.undefined
@@ -137,6 +162,7 @@ object MeteorNs extends js.Object {
   /** User **/
   /** Error **/
   var Error: ErrorStatic = js.native
+  var TypedError: TypedErrorStatic = js.native
   /** Global props **/
   var isClient: scala.Boolean = js.native
   var isCordova: scala.Boolean = js.native
@@ -150,19 +176,23 @@ object MeteorNs extends js.Object {
   var users: meteorLib.MongoNs.Collection[User] = js.native
   def _debug(args: js.Any*): scala.Unit = js.native
   @JSName("apply")
-  def apply(name: java.lang.String, args: js.Array[meteorLib.EJSONable]): js.Any = js.native
+  def apply[Result /* <: meteorLib.EJSONable | js.Array[meteorLib.EJSONable] | meteorLib.EJSONableProperty | js.Array[meteorLib.EJSONableProperty] */](name: java.lang.String, args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]): js.Any = js.native
   @JSName("apply")
-  def apply(
+  def apply[Result /* <: meteorLib.EJSONable | js.Array[meteorLib.EJSONable] | meteorLib.EJSONableProperty | js.Array[meteorLib.EJSONableProperty] */](
     name: java.lang.String,
-    args: js.Array[meteorLib.EJSONable],
-    options: meteorLib.Anon_OnResultReceived
+    args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty],
+    options: meteorLib.Anon_ErrorOnResultReceived[Result]
   ): js.Any = js.native
   @JSName("apply")
-  def apply(
+  def apply[Result /* <: meteorLib.EJSONable | js.Array[meteorLib.EJSONable] | meteorLib.EJSONableProperty | js.Array[meteorLib.EJSONableProperty] */](
     name: java.lang.String,
-    args: js.Array[meteorLib.EJSONable],
-    options: meteorLib.Anon_OnResultReceived,
-    asyncCallback: js.Function
+    args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty],
+    options: meteorLib.Anon_ErrorOnResultReceived[Result],
+    asyncCallback: js.Function2[
+      /* error */ js.UndefOr[meteorLib.global_Error | Error], 
+      /* result */ js.UndefOr[Result], 
+      scala.Unit
+    ]
   ): js.Any = js.native
   def bindEnvironment(func: js.Function): js.Any = js.native
   def call(name: java.lang.String, args: js.Any*): js.Any = js.native
@@ -173,38 +203,77 @@ object MeteorNs extends js.Object {
   def loggingIn(): scala.Boolean = js.native
   def loginWith[ExternalService](): scala.Unit = js.native
   def loginWith[ExternalService](options: meteorLib.Anon_LoginStyle): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorLib.Anon_LoginStyle, callback: js.Function): scala.Unit = js.native
+  def loginWith[ExternalService](
+    options: meteorLib.Anon_LoginStyle,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithFacebook(): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithFacebook(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithFacebook(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithGithub(): scala.Unit = js.native
   def loginWithGithub(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithGithub(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithGithub(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithGoogle(): scala.Unit = js.native
   def loginWithGoogle(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithGoogle(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithGoogle(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithMeetup(): scala.Unit = js.native
   def loginWithMeetup(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithMeetup(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithMeetup(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithMeteorDeveloperAccount(): scala.Unit = js.native
   def loginWithMeteorDeveloperAccount(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithMeteorDeveloperAccount(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithMeteorDeveloperAccount(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithPassword(user: java.lang.String, password: java.lang.String): scala.Unit = js.native
-  def loginWithPassword(user: java.lang.String, password: java.lang.String, callback: js.Function): scala.Unit = js.native
+  def loginWithPassword(
+    user: java.lang.String,
+    password: java.lang.String,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithPassword(user: js.Object, password: java.lang.String): scala.Unit = js.native
-  def loginWithPassword(user: js.Object, password: java.lang.String, callback: js.Function): scala.Unit = js.native
+  def loginWithPassword(
+    user: js.Object,
+    password: java.lang.String,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithToken(token: java.lang.String): scala.Unit = js.native
-  def loginWithToken(token: java.lang.String, callback: js.Function): scala.Unit = js.native
+  def loginWithToken(
+    token: java.lang.String,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithTwitter(): scala.Unit = js.native
   def loginWithTwitter(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithTwitter(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithTwitter(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def loginWithWeibo(): scala.Unit = js.native
   def loginWithWeibo(options: LoginWithExternalServiceOptions): scala.Unit = js.native
-  def loginWithWeibo(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native
+  def loginWithWeibo(
+    options: LoginWithExternalServiceOptions,
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def logout(): scala.Unit = js.native
-  def logout(callback: js.Function): scala.Unit = js.native
+  def logout(
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def logoutOtherClients(): scala.Unit = js.native
-  def logoutOtherClients(callback: js.Function): scala.Unit = js.native
+  def logoutOtherClients(
+    callback: js.Function1[/* error */ js.UndefOr[meteorLib.global_Error | Error | TypedError], scala.Unit]
+  ): scala.Unit = js.native
   def methods(
     methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ MethodThisType, /* repeated */ js.Any, _]]
   ): scala.Unit = js.native
@@ -230,8 +299,8 @@ object MeteorNs extends js.Object {
   /** Status **/
   /** Pub/Sub **/
   def subscribe(name: java.lang.String, args: js.Any*): SubscriptionHandle = js.native
-  def user(): User = js.native
-  def userId(): java.lang.String = js.native
+  def user(): User | scala.Null = js.native
+  def userId(): java.lang.String | scala.Null = js.native
   def wrapAsync(func: js.Function): js.Any = js.native
   def wrapAsync(func: js.Function, context: js.Object): js.Any = js.native
   /** Method **/

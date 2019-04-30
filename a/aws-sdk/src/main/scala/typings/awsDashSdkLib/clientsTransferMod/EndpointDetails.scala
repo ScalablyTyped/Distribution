@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EndpointDetails extends js.Object {
+  /**
+    * The ID of the VPC endpoint.
+    */
   var VpcEndpointId: js.UndefOr[VpcEndpointId] = js.undefined
 }
 

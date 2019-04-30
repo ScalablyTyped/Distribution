@@ -19,6 +19,10 @@ trait CreateNetworkInterfaceRequest extends js.Object {
     */
   var Groups: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
+    * Indicates whether the network interface is an Elastic Fabric Adapter (EFA). Only specify this parameter to create an EFA. For more information, see Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA ENI, omit this parameter. 
+    */
+  var InterfaceType: js.UndefOr[NetworkInterfaceCreationType] = js.undefined
+  /**
     * The number of IPv6 addresses to assign to a network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. You can't use this option if specifying specific IPv6 addresses. If your subnet has the AssignIpv6AddressOnCreation attribute set to true, you can specify 0 to override this setting.
     */
   var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
@@ -51,6 +55,7 @@ object CreateNetworkInterfaceRequest {
     Description: String = null,
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Groups: SecurityGroupIdStringList = null,
+    InterfaceType: NetworkInterfaceCreationType = null,
     Ipv6AddressCount: js.UndefOr[Integer] = js.undefined,
     Ipv6Addresses: InstanceIpv6AddressList = null,
     PrivateIpAddress: String = null,
@@ -61,6 +66,7 @@ object CreateNetworkInterfaceRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
+    if (InterfaceType != null) __obj.updateDynamic("InterfaceType")(InterfaceType.asInstanceOf[js.Any])
     if (!js.isUndefined(Ipv6AddressCount)) __obj.updateDynamic("Ipv6AddressCount")(Ipv6AddressCount)
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)
     if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress)

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Body extends js.Object {
-  def apply(body: js.Any): scala.Boolean = js.native
+  def apply(req: js.Any, res: js.Any, body: java.lang.String): js.Any = js.native
 }
 

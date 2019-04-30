@@ -26,6 +26,10 @@ class Gateway protected ()
     * The name of the connection.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * AWS Account ID of the gateway.
+    */
+  val ownerAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */
