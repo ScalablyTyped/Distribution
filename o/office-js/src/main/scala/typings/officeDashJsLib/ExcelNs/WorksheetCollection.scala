@@ -49,6 +49,15 @@ class WorksheetCollection ()
   val onCalculated: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetCalculatedEventArgs] = js.native
   /**
     *
+    * Occurs when any worksheet in the workbook is changed.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @eventproperty
+    */
+  val onChanged: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetChangedEventArgs] = js.native
+  /**
+    *
     * Occurs when any worksheet in the workbook is deactivated.
     *
     * [Api set: ExcelApi 1.7]
@@ -65,6 +74,24 @@ class WorksheetCollection ()
     * @eventproperty
     */
   val onDeleted: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetDeletedEventArgs] = js.native
+  /**
+    *
+    * Occurs when any worksheet in the workbook has format changed.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @eventproperty
+    */
+  val onFormatChanged: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when the selection changes on any worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @eventproperty
+    */
+  val onSelectionChanged: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
   /**
     *
     * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.

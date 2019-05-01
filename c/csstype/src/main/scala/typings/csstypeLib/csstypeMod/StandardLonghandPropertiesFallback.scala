@@ -99,7 +99,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-delay
     */
-  var animationDelay: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var animationDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -125,7 +125,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-duration
     */
-  var animationDuration: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var animationDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -1454,7 +1454,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-grow
     */
-  var flexGrow: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var flexGrow: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
     *
@@ -1467,7 +1467,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-shrink
     */
-  var flexShrink: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var flexShrink: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
     *
@@ -2667,7 +2667,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/opacity
     */
-  var opacity: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var opacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
     *
@@ -2680,7 +2680,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/order
     */
-  var order: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var order: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
     *
@@ -2692,7 +2692,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/orphans
     */
-  var orphans: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var orphans: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`outline-color`** CSS property sets the color of an element's outline.
     *
@@ -3587,7 +3587,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold
     */
-  var shapeImageThreshold: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var shapeImageThreshold: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
     *
@@ -3755,7 +3755,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position
     */
-  var textEmphasisPosition: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var textEmphasisPosition: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
     *
@@ -3964,7 +3964,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-delay
     */
-  var transitionDelay: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var transitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
@@ -3977,7 +3977,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-duration
     */
-  var transitionDuration: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var transitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -4088,7 +4088,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/widows
     */
-  var widows: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var widows: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`width`** CSS property sets an element's width. By default it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.
     *
@@ -4193,9 +4193,9 @@ object StandardLonghandPropertiesFallback {
     alignContent: AlignContentProperty | js.Array[AlignContentProperty] = null,
     alignItems: AlignItemsProperty | js.Array[AlignItemsProperty] = null,
     alignSelf: AlignSelfProperty | js.Array[AlignSelfProperty] = null,
-    animationDelay: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    animationDelay: GlobalsString | js.Array[GlobalsString] = null,
     animationDirection: AnimationDirectionProperty | js.Array[AnimationDirectionProperty] = null,
-    animationDuration: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    animationDuration: GlobalsString | js.Array[GlobalsString] = null,
     animationFillMode: AnimationFillModeProperty | js.Array[AnimationFillModeProperty] = null,
     animationIterationCount: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty] = null,
     animationName: AnimationNameProperty | js.Array[AnimationNameProperty] = null,
@@ -4294,8 +4294,8 @@ object StandardLonghandPropertiesFallback {
     filter: FilterProperty | js.Array[FilterProperty] = null,
     flexBasis: FlexBasisProperty[TLength] | js.Array[FlexBasisProperty[TLength]] = null,
     flexDirection: FlexDirectionProperty | js.Array[FlexDirectionProperty] = null,
-    flexGrow: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    flexShrink: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    flexGrow: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    flexShrink: GlobalsNumber | js.Array[GlobalsNumber] = null,
     flexWrap: FlexWrapProperty | js.Array[FlexWrapProperty] = null,
     float: FloatProperty | js.Array[FloatProperty] = null,
     fontFamily: FontFamilyProperty | js.Array[FontFamilyProperty] = null,
@@ -4396,9 +4396,9 @@ object StandardLonghandPropertiesFallback {
     offsetPosition: OffsetPositionProperty[TLength] | js.Array[OffsetPositionProperty[TLength]] = null,
     offsetRotate: OffsetRotateProperty | js.Array[OffsetRotateProperty] = null,
     offsetRotation: OffsetRotateProperty | js.Array[OffsetRotateProperty] = null,
-    opacity: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    order: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    orphans: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    opacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    order: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    orphans: GlobalsNumber | js.Array[GlobalsNumber] = null,
     outlineColor: OutlineColorProperty | js.Array[OutlineColorProperty] = null,
     outlineOffset: OutlineOffsetProperty[TLength] | js.Array[OutlineOffsetProperty[TLength]] = null,
     outlineStyle: OutlineStyleProperty | js.Array[OutlineStyleProperty] = null,

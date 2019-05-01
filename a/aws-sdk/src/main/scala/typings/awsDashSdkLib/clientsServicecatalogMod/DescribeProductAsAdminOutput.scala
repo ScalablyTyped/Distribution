@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait DescribeProductAsAdminOutput extends js.Object {
   /**
+    * Information about the associated budgets.
+    */
+  var Budgets: js.UndefOr[Budgets] = js.undefined
+  /**
     * Information about the product view.
     */
   var ProductViewDetail: js.UndefOr[ProductViewDetail] = js.undefined
@@ -27,12 +31,14 @@ trait DescribeProductAsAdminOutput extends js.Object {
 object DescribeProductAsAdminOutput {
   @scala.inline
   def apply(
+    Budgets: Budgets = null,
     ProductViewDetail: ProductViewDetail = null,
     ProvisioningArtifactSummaries: ProvisioningArtifactSummaries = null,
     TagOptions: TagOptionDetails = null,
     Tags: Tags = null
   ): DescribeProductAsAdminOutput = {
     val __obj = js.Dynamic.literal()
+    if (Budgets != null) __obj.updateDynamic("Budgets")(Budgets)
     if (ProductViewDetail != null) __obj.updateDynamic("ProductViewDetail")(ProductViewDetail)
     if (ProvisioningArtifactSummaries != null) __obj.updateDynamic("ProvisioningArtifactSummaries")(ProvisioningArtifactSummaries)
     if (TagOptions != null) __obj.updateDynamic("TagOptions")(TagOptions)

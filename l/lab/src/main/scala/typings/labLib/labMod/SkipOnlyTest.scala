@@ -9,25 +9,17 @@ import scala.scalajs.js.annotation._
 trait SkipOnlyTest extends js.Object {
   /** Only execute this test */
   @JSName("only")
-  var only_Original: labLib.TestArgs with labLib.TestWithOptionsArgs = js.native
+  var only_Original: TestArgs with TestWithOptionsArgs = js.native
   /** Skip this test */
   @JSName("skip")
-  var skip_Original: labLib.TestArgs with labLib.TestWithOptionsArgs = js.native
+  var skip_Original: TestArgs with TestWithOptionsArgs = js.native
   /** Only execute this test */
-  def only(desc: java.lang.String, cb: labLib.TestCallback): js.Object = js.native
+  def only(desc: java.lang.String, cb: TestCallback): js.Object = js.native
   /** Only execute this test */
-  def only(
-    desc: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TestOptions */ js.Any,
-    cb: labLib.TestCallback
-  ): js.Object = js.native
+  def only(desc: java.lang.String, options: TestOptions, cb: TestCallback): js.Object = js.native
   /** Skip this test */
-  def skip(desc: java.lang.String, cb: labLib.TestCallback): js.Object = js.native
+  def skip(desc: java.lang.String, cb: TestCallback): js.Object = js.native
   /** Skip this test */
-  def skip(
-    desc: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TestOptions */ js.Any,
-    cb: labLib.TestCallback
-  ): js.Object = js.native
+  def skip(desc: java.lang.String, options: TestOptions, cb: TestCallback): js.Object = js.native
 }
 

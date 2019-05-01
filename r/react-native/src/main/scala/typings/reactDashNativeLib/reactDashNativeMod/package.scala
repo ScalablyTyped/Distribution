@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeMod {
   type ART = ARTStatic
+  type AccessibilityEvent = reactDashNativeLib.AccessibilityChangeEvent | AccessibilityAnnoucementFinishedEvent
   type AccessibilityInfo = AccessibilityInfoStatic
   type ActionSheetIOS = ActionSheetIOSStatic
   type ActivityIndicatorComponent = reactLib.reactMod.Component[ActivityIndicatorProps, js.Object, js.Any]
@@ -23,12 +24,15 @@ package object reactDashNativeMod {
   type CameraRoll = CameraRollStatic
   type Clipboard = ClipboardStatic
   type ComponentProvider = js.Function0[reactLib.reactMod.ComponentType[js.Any]]
+  type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type DatePickerAndroid = DatePickerAndroidStatic
   type DatePickerIOSComponent = reactLib.reactMod.Component[DatePickerIOSProps, js.Object, js.Any]
   type DrawerLayoutAndroidComponent = reactLib.reactMod.Component[DrawerLayoutAndroidProps, js.Object, js.Any]
   type DrawerSlideEvent = NativeSyntheticEvent[NativeTouchEvent]
   type Easing = EasingStatic
   type EasingFunction = js.Function1[/* value */ scala.Double, scala.Double]
+  type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[scala.Boolean], scala.Unit]
+  type Falsy = js.UndefOr[scala.Null | reactDashNativeLib.reactDashNativeLibNumbers.`false`]
   type Geolocation = GeolocationStatic
   type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
   type Handle = scala.Double
@@ -47,6 +51,7 @@ package object reactDashNativeMod {
     * It can automatically adjust either its position or bottom padding based on the position of the keyboard.
     */
   type KeyboardAvoidingViewComponent = reactLib.reactMod.Component[KeyboardAvoidingViewProps, js.Object, js.Any]
+  type KeyboardEventListener = js.Function1[/* event */ KeyboardEvent, scala.Unit]
   type KeyboardTypeAndroid = reactDashNativeLib.reactDashNativeLibStrings.`visible-password`
   /* Rewritten from type alias, can be one of: 
     - KeyboardType
@@ -119,6 +124,14 @@ package object reactDashNativeMod {
   type ProgressViewIOSComponent = reactLib.reactMod.Component[ProgressViewIOSProps, js.Object, js.Any]
   type PushNotificationIOS = PushNotificationIOSStatic
   /**
+    * Receive events from native-code
+    * Deprecated - subclass NativeEventEmitter to create granular event modules instead of
+    * adding all event listeners directly to RCTNativeAppEventEmitter.
+    * @see https://github.com/facebook/react-native/blob/0.34-stable\Libraries\EventEmitter\RCTNativeAppEventEmitter.js
+    * @see https://facebook.github.io/react-native/docs/native-modules-ios.html#sending-events-to-javascript
+    */
+  type RCTNativeAppEventEmitter = DeviceEventEmitterStatic
+  /**
     * Wrapper around android native recycler view.
     *
     * It simply renders rows passed as children in a separate recycler view cells
@@ -143,6 +156,8 @@ package object reactDashNativeMod {
     * in the `onRefresh` function otherwise the refresh indicator will stop immediately.
     */
   type RefreshControlComponent = reactLib.reactMod.Component[RefreshControlProps, js.Object, js.Any]
+  /** Keep a brand of 'T' so that calls to `StyleSheet.flatten` can take `RegisteredStyle<T>` and return `T`. */
+  type RegisteredStyle[T] = scala.Double with reactDashNativeLib.Anon_RegisteredStyleBrand[T]
   type Runnable = js.Function1[/* appParameters */ js.Any, scala.Unit]
   /**
     * Renders nested content and automatically applies paddings reflect the portion of the view
@@ -189,7 +204,7 @@ package object reactDashNativeMod {
   type SnapshotViewIOSComponent = reactLib.reactMod.Component[SnapshotViewIOSProps, js.Object, js.Any]
   type StatusBarIOS = StatusBarIOSStatic
   type StatusBarIOSStatic = NativeEventEmitter
-  type StyleProp[T] = T | reactDashNativeLib.RegisteredStyle[T] | (RecursiveArray[T | reactDashNativeLib.RegisteredStyle[T] | reactDashNativeLib.Falsy]) | reactDashNativeLib.Falsy
+  type StyleProp[T] = T | RegisteredStyle[T] | (RecursiveArray[T | RegisteredStyle[T] | Falsy]) | Falsy
   /**
     * Renders a boolean input.
     *
@@ -200,6 +215,8 @@ package object reactDashNativeMod {
     */
   type SwitchComponent = reactLib.reactMod.Component[SwitchProps, js.Object, js.Any]
   type Systrace = SystraceStatic
+  type Task = js.Function1[/* taskData */ js.Any, js.Promise[scala.Unit]]
+  type TaskProvider = js.Function0[Task]
   /**
     * A React component for displaying text which supports nesting, styling, and touch handling.
     */

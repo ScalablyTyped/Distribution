@@ -16,7 +16,7 @@ trait Anon_AddPlugins
   	 * Add plugins to precaching.
   	 * @param {Plugin[]} newPlugins
   	 */
-  def addPlugins(newPlugins: js.Array[Plugin]): scala.Unit = js.native
+  def addPlugins(newPlugins: js.Array[workboxDashSwLib.workboxDashSwMod.Plugin]): scala.Unit = js.native
   /**
   	 * Add a `fetch` listener to the service worker that will respond to
   	 * [network requests]{@link https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Custom_responses_to_requests}

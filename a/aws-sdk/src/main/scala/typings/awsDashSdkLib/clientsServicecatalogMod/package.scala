@@ -29,6 +29,8 @@ package object clientsServicecatalogMod {
   type AllowedValues = js.Array[AllowedValue]
   type ApproximateCount = scala.Double
   type AttributeValue = java.lang.String
+  type BudgetName = java.lang.String
+  type Budgets = js.Array[BudgetDetail]
   type CausingEntity = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ADD
@@ -58,6 +60,7 @@ package object clientsServicecatalogMod {
   type CreationTime = stdLib.Date
   type DefaultValue = java.lang.String
   type Description = java.lang.String
+  type DisableTemplateValidation = scala.Boolean
   type Error = java.lang.String
   type ErrorCode = java.lang.String
   type ErrorDescription = java.lang.String
@@ -105,7 +108,6 @@ package object clientsServicecatalogMod {
   type PortfolioDetails = js.Array[PortfolioDetail]
   type PortfolioDisplayName = java.lang.String
   type PortfolioName = java.lang.String
-  type PortfolioShareToken = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.IMPORTED
     - awsDashSdkLib.awsDashSdkLibStrings.AWS_SERVICECATALOG

@@ -12,12 +12,12 @@ trait OrderProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
     */
-  var order: js.UndefOr[ResponsiveValue[csstypeLib.GlobalsNumber]] = js.undefined
+  var order: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GlobalsNumber]] = js.undefined
 }
 
 object OrderProps {
   @scala.inline
-  def apply(order: ResponsiveValue[csstypeLib.GlobalsNumber] = null): OrderProps = {
+  def apply(order: ResponsiveValue[csstypeLib.csstypeMod.GlobalsNumber] = null): OrderProps = {
     val __obj = js.Dynamic.literal()
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderProps]

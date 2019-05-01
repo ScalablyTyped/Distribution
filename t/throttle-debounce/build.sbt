@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "throttle-debounce"
-version := "1.1-dt-20190220Z-529476"
+version := "1.1-dt-20190220Z-485efb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

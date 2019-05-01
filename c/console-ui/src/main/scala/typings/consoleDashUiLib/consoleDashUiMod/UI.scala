@@ -25,7 +25,7 @@ trait UI extends js.Object {
     * Sets the write level for the UI. Valid write levels are 'DEBUG', 'INFO',
     * 'WARNING', and 'ERROR'.
     */
-  def setWriteLevel(level: consoleDashUiLib.WriteLevel): scala.Unit = js.native
+  def setWriteLevel(level: WriteLevel): scala.Unit = js.native
   /**
     * Begins a progress spinner with a message (only if the INFO write level is visible).
     */
@@ -40,7 +40,7 @@ trait UI extends js.Object {
     * logging mechanism should or should not be printed.
     */
   def write(message: java.lang.String): scala.Unit = js.native
-  def write(message: java.lang.String, level: consoleDashUiLib.WriteLevel): scala.Unit = js.native
+  def write(message: java.lang.String, level: WriteLevel): scala.Unit = js.native
   /**
     * Helper method to write a string with the DEBUG writeLevel and gray chalk
     */
@@ -68,7 +68,7 @@ trait UI extends js.Object {
     * logging mechanism should or should not be printed.
     */
   def writeLine(message: java.lang.String): scala.Unit = js.native
-  def writeLine(message: java.lang.String, level: consoleDashUiLib.WriteLevel): scala.Unit = js.native
+  def writeLine(message: java.lang.String, level: WriteLevel): scala.Unit = js.native
   /**
     * Helper method to write a string with the WARNING writeLevel and yellow chalk.
     * Optionally include a test. If falsy, the warning will be printed. By default, warnings

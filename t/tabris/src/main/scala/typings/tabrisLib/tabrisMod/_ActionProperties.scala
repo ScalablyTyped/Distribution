@@ -10,7 +10,7 @@ trait _ActionProperties extends _WidgetProperties {
   /**
     * Icon image for the action.
     */
-  var image: tabrisLib.Image | scala.Null
+  var image: Image | scala.Null
   /**
     * Actions with higher placement priority will be placed at a more significant position in the UI, e.g.
     * low priority actions could go into a menu instead of being included in a toolbar.
@@ -34,8 +34,8 @@ object _ActionProperties {
   @scala.inline
   def apply(
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
-    baseline: Widget | tabrisLib.Selector,
+    backgroundImage: Image,
+    baseline: Widget | Selector,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,
     centerY: tabrisLib.offset,
@@ -60,7 +60,7 @@ object _ActionProperties {
     win_symbol: java.lang.String,
     win_theme: tabrisLib.tabrisLibStrings.dark | tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.light,
     font: tabrisLib.Font = null,
-    image: tabrisLib.Image = null
+    image: Image = null
   ): _ActionProperties = {
     val __obj = js.Dynamic.literal(background = background, backgroundImage = backgroundImage.asInstanceOf[js.Any], baseline = baseline.asInstanceOf[js.Any], bottom = bottom, centerX = centerX, centerY = centerY, classList = classList, cornerRadius = cornerRadius, elevation = elevation, enabled = enabled, height = height, highlightOnTouch = highlightOnTouch, id = id, layoutData = layoutData, left = left, opacity = opacity, placementPriority = placementPriority.asInstanceOf[js.Any], right = right, title = title, top = top, transform = transform, visible = visible, width = width, win_symbol = win_symbol, win_theme = win_theme.asInstanceOf[js.Any])
     __obj.updateDynamic("class")(`class`)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_growl"
-version := "1.3-dt-20181016Z-de4157"
+version := "1.3-dt-20181016Z-839da4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

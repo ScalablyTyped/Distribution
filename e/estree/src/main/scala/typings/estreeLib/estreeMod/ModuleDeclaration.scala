@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
   - ExportDefaultDeclaration
   - ExportAllDeclaration
 */
-trait ModuleDeclaration extends _Node
+trait ModuleDeclaration extends Node
 

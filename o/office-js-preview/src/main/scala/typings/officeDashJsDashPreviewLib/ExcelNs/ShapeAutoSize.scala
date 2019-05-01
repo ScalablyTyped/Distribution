@@ -12,8 +12,7 @@ sealed trait ShapeAutoSize extends js.Object
   *
   * Determines the type of automatic sizing allowed.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeAutoSize")
 @js.native

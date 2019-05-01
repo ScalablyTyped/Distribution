@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   - ClassDeclaration
   - ClassExpression
 */
-trait Class extends _Node
+trait Class extends Node
 

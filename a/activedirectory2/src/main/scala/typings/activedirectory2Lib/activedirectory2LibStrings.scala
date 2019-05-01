@@ -7,46 +7,53 @@ import scala.scalajs.js.annotation._
 
 object activedirectory2LibStrings {
   @js.native
-  sealed trait all extends MembershipType
+  sealed trait all
+    extends activedirectory2Lib.activedirectory2Mod.MembershipType
   
   @js.native
   sealed trait base extends js.Object
   
   @js.native
   sealed trait cn
-    extends GroupAttributes
-       with UserAttributes
+    extends activedirectory2Lib.activedirectory2Mod.GroupAttributes
+       with activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait comment extends UserAttributes
+  sealed trait comment
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
   sealed trait description
-    extends GroupAttributes
-       with UserAttributes
+    extends activedirectory2Lib.activedirectory2Mod.GroupAttributes
+       with activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait displayName extends UserAttributes
+  sealed trait displayName
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
   sealed trait distinguishedName
-    extends GroupAttributes
-       with UserAttributes
+    extends activedirectory2Lib.activedirectory2Mod.GroupAttributes
+       with activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
   sealed trait dn extends js.Object
   
   @js.native
-  sealed trait employeeID extends UserAttributes
+  sealed trait employeeID
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait givenName extends UserAttributes
+  sealed trait givenName
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait group extends MembershipType
+  sealed trait group
+    extends activedirectory2Lib.activedirectory2Mod.MembershipType
   
   @js.native
-  sealed trait initials extends UserAttributes
+  sealed trait initials
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
   sealed trait `ldaps?://DOT*/CN=Configuration,DOT*` extends js.Object
@@ -58,40 +65,50 @@ object activedirectory2LibStrings {
   sealed trait `ldaps?://ForestDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*` extends js.Object
   
   @js.native
-  sealed trait lockoutTime extends UserAttributes
+  sealed trait lockoutTime
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait mail extends UserAttributes
+  sealed trait mail
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait objectCategory extends GroupAttributes
+  sealed trait objectCategory
+    extends activedirectory2Lib.activedirectory2Mod.GroupAttributes
   
   @js.native
   sealed trait one extends js.Object
   
   @js.native
-  sealed trait pwdLastSet extends UserAttributes
+  sealed trait pwdLastSet
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait sAMAccountName extends UserAttributes
+  sealed trait sAMAccountName
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait sn extends UserAttributes
+  sealed trait sn
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
   sealed trait sub extends js.Object
   
   @js.native
-  sealed trait user extends MembershipType
+  sealed trait user
+    extends activedirectory2Lib.activedirectory2Mod.MembershipType
   
   @js.native
-  sealed trait userAccountControl extends UserAttributes
+  sealed trait userAccountControl
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait userPrincipalName extends UserAttributes
+  sealed trait userPrincipalName
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @js.native
-  sealed trait whenCreated extends UserAttributes
+  sealed trait whenCreated
+    extends activedirectory2Lib.activedirectory2Mod.UserAttributes
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

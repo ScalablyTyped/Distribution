@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveMetadata extends js.Object {
+trait PluginRemoveMetadata extends PluginConfig {
   var removeMetadata: scala.Boolean | js.Object
 }
 

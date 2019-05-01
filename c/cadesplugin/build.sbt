@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cadesplugin"
-version := "2.1-dt-20190116Z-ec516e"
+version := "2.1-dt-20190116Z-c41c54"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

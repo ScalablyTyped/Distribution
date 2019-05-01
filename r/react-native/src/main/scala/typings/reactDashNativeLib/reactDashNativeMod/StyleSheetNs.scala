@@ -16,7 +16,7 @@ object StyleSheetNs extends js.Object {
     var top: reactDashNativeLib.reactDashNativeLibNumbers.`0`
   }
   
-  val absoluteFill: reactDashNativeLib.RegisteredStyle[AbsoluteFillStyle] = js.native
+  val absoluteFill: reactDashNativeLib.reactDashNativeMod.RegisteredStyle[AbsoluteFillStyle] = js.native
   val absoluteFillObject: AbsoluteFillStyle = js.native
   val hairlineWidth: scala.Double = js.native
   def create[T /* <: NamedStyles[T] | NamedStyles[_] */](styles: T): T = js.native
@@ -24,7 +24,7 @@ object StyleSheetNs extends js.Object {
   def flatten(
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle]
   ): reactDashNativeLib.reactDashNativeMod.ImageStyle = js.native
-  def flatten[T](style: reactDashNativeLib.RegisteredStyle[T]): T = js.native
+  def flatten[T](style: reactDashNativeLib.reactDashNativeMod.RegisteredStyle[T]): T = js.native
   @JSName("flatten")
   def flatten_TT[T](): T = js.native
   @JSName("flatten")

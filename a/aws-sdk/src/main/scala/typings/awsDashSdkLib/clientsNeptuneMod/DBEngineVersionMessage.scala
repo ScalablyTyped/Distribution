@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DBEngineVersionMessage extends js.Object {
   /**
-    *  A list of DBEngineVersion elements. 
+    *  A list of DBEngineVersion elements.
     */
   var DBEngineVersions: js.UndefOr[DBEngineVersionList] = js.undefined
   /**
-    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
 }

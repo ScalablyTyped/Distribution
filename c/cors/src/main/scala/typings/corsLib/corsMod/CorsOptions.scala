@@ -13,7 +13,7 @@ trait CorsOptions extends js.Object {
   var methods: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var optionsSuccessStatus: js.UndefOr[scala.Double] = js.undefined
   var origin: js.UndefOr[
-    scala.Boolean | java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) | corsLib.CustomOrigin
+    scala.Boolean | java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) | CustomOrigin
   ] = js.undefined
   var preflightContinue: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -27,7 +27,7 @@ object CorsOptions {
     maxAge: scala.Int | scala.Double = null,
     methods: java.lang.String | js.Array[java.lang.String] = null,
     optionsSuccessStatus: scala.Int | scala.Double = null,
-    origin: scala.Boolean | java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) | corsLib.CustomOrigin = null,
+    origin: scala.Boolean | java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) | CustomOrigin = null,
     preflightContinue: js.UndefOr[scala.Boolean] = js.undefined
   ): CorsOptions = {
     val __obj = js.Dynamic.literal()

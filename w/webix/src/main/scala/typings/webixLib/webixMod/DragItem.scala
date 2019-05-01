@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DragItem extends js.Object {
   @JSName("$dragHTML")
-  var $dragHTML_Original: webixLib.WebixCallback = js.native
+  var $dragHTML_Original: WebixCallback = js.native
   @JSName("$dropAllow")
-  var $dropAllow_Original: webixLib.WebixCallback = js.native
+  var $dropAllow_Original: WebixCallback = js.native
   @JSName("$drag")
   def $drag(source: stdLib.HTMLElement, ev: stdLib.Event): java.lang.String = js.native
   @JSName("$dragHTML")

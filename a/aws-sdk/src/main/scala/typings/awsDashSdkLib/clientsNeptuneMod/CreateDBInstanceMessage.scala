@@ -15,7 +15,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    *  The EC2 Availability Zone that the DB instance is created in.  Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.  Example: us-east-1d   Constraint: The AvailabilityZone parameter can't be specified if the MultiAZ parameter is set to true. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
+    *  The EC2 Availability Zone that the DB instance is created in Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.  Example: us-east-1d   Constraint: The AvailabilityZone parameter can't be specified if the MultiAZ parameter is set to true. The specified Availability Zone must be in the same AWS Region as the current endpoint.
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * The compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all AWS Regions. 
+    * The compute and memory capacity of the DB instance, for example, db.m4.large. Not all DB instance classes are available in all AWS Regions.
     */
   var DBInstanceClass: String
   /**
@@ -43,7 +43,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var DBInstanceIdentifier: String
   /**
-    * The database name.  Type: String
+    * Not supported.
     */
   var DBName: js.UndefOr[String] = js.undefined
   /**
@@ -75,11 +75,11 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * True to enable Performance Insights for the DB instance, and otherwise false. 
+    * True to enable Performance Insights for the DB instance, and otherwise false.
     */
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The name of the database engine to be used for this instance.  Valid Values: neptune 
+    * The name of the database engine to be used for this instance. Valid Values: neptune 
     */
   var Engine: String
   /**
@@ -87,7 +87,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    * The amount of Provisioned IOPS (input/output operations per second) to be initially allocated for the DB instance. 
+    * The amount of Provisioned IOPS (input/output operations per second) to be initially allocated for the DB instance.
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   /**
@@ -99,7 +99,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   /**
-    * The password for the master user. The password can include any printable ASCII character except "/", """, or "@".  Not used. 
+    * The password for the master user. The password can include any printable ASCII character except "/", """, or "@".  Not used.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   /**
@@ -131,11 +131,11 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    *  The daily time range during which automated backups are created.  Not applicable. The daily time range for creating automated backups is managed by the DB cluster. For more information, see CreateDBCluster.
+    *  The daily time range during which automated backups are created. Not applicable. The daily time range for creating automated backups is managed by the DB cluster. For more information, see CreateDBCluster.
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   /**
-    * The time range each week during which system maintenance can occur, in Universal Coordinated Time (UTC).   Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week.  Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
+    * The time range each week during which system maintenance can occur, in Universal Coordinated Time (UTC).  Format: ddd:hh24:mi-ddd:hh24:mi  The default is a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week. Valid Days: Mon, Tue, Wed, Thu, Fri, Sat, Sun. Constraints: Minimum 30-minute window.
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   /**
@@ -143,7 +143,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * This parameter is not supported.
+    * This flag should no longer be used.
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -154,6 +154,9 @@ trait CreateDBInstanceMessage extends js.Object {
     * Specifies the storage type to be associated with the DB instance. Not applicable. Storage is managed by the DB Cluster.
     */
   var StorageType: js.UndefOr[String] = js.undefined
+  /**
+    * The tags to assign to the new instance.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
     * The ARN from the key store with which to associate the instance for TDE encryption.
@@ -164,7 +167,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var TdeCredentialPassword: js.UndefOr[String] = js.undefined
   /**
-    * The time zone of the DB instance. 
+    * The time zone of the DB instance.
     */
   var Timezone: js.UndefOr[String] = js.undefined
   /**

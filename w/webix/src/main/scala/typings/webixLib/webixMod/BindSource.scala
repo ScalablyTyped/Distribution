@@ -11,7 +11,7 @@ trait BindSource extends js.Object {
   def getBindData(key: java.lang.String, update: scala.Boolean): scala.Unit = js.native
   def getBindData(key: scala.Double, update: scala.Boolean): scala.Unit = js.native
   def removeBind(source: js.Any): scala.Unit = js.native
-  def saveBatch(handler: webixLib.WebixCallback): scala.Unit = js.native
+  def saveBatch(handler: WebixCallback): scala.Unit = js.native
   def setBindData(data: js.Any, key: java.lang.String): scala.Unit = js.native
   def setBindData(data: js.Any, key: scala.Double): scala.Unit = js.native
 }

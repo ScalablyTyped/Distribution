@@ -110,6 +110,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var lightsail: js.UndefOr[awsDashSdkLib.clientsLightsailMod.ClientConfiguration] = js.native
   var machinelearning: js.UndefOr[awsDashSdkLib.clientsMachinelearningMod.ClientConfiguration] = js.native
   var macie: js.UndefOr[awsDashSdkLib.clientsMacieMod.ClientConfiguration] = js.native
+  var managedblockchain: js.UndefOr[awsDashSdkLib.clientsManagedblockchainMod.ClientConfiguration] = js.native
   var marketplacecommerceanalytics: js.UndefOr[awsDashSdkLib.clientsMarketplacecommerceanalyticsMod.ClientConfiguration] = js.native
   var marketplaceentitlementservice: js.UndefOr[awsDashSdkLib.clientsMarketplaceentitlementserviceMod.ClientConfiguration] = js.native
   var marketplacemetering: js.UndefOr[awsDashSdkLib.clientsMarketplacemeteringMod.ClientConfiguration] = js.native

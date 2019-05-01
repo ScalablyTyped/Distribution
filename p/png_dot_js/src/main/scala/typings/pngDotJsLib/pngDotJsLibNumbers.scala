@@ -7,32 +7,37 @@ import scala.scalajs.js.annotation._
 
 object pngDotJsLibNumbers {
   @js.native
-  sealed trait `0` extends ColorType
+  sealed trait `0`
+    extends pngDotJsLib.pngDotJsMod.ColorType
   
   @js.native
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `16` extends BitDepth
+  sealed trait `16`
+    extends pngDotJsLib.pngDotJsMod.BitDepth
   
   @js.native
   sealed trait `2`
-    extends BitDepth
-       with ColorType
+    extends pngDotJsLib.pngDotJsMod.BitDepth
+       with pngDotJsLib.pngDotJsMod.ColorType
   
   @js.native
-  sealed trait `3` extends ColorType
+  sealed trait `3`
+    extends pngDotJsLib.pngDotJsMod.ColorType
   
   @js.native
   sealed trait `4`
-    extends BitDepth
-       with ColorType
+    extends pngDotJsLib.pngDotJsMod.BitDepth
+       with pngDotJsLib.pngDotJsMod.ColorType
   
   @js.native
-  sealed trait `6` extends ColorType
+  sealed trait `6`
+    extends pngDotJsLib.pngDotJsMod.ColorType
   
   @js.native
-  sealed trait `8` extends BitDepth
+  sealed trait `8`
+    extends pngDotJsLib.pngDotJsMod.BitDepth
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

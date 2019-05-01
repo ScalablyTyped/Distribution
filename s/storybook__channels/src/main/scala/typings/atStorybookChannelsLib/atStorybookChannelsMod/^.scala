@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class ^ () extends Channel {
   def this(options: atStorybookChannelsLib.Anon_Async) = this()
   /* CompleteClass */
-  override def addListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit = js.native
+  override def addListener(`type`: atStorybookChannelsLib.EventName, listener: Listener): scala.Unit = js.native
   /* CompleteClass */
-  override def addPeerListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit = js.native
+  override def addPeerListener(`type`: atStorybookChannelsLib.EventName, listener: Listener): scala.Unit = js.native
   /* CompleteClass */
   override def emit(
     `type`: atStorybookChannelsLib.EventName,
@@ -23,16 +23,16 @@ class ^ () extends Channel {
   /* CompleteClass */
   override def listenerCount(`type`: atStorybookChannelsLib.EventName): scala.Double = js.native
   /* CompleteClass */
-  override def listeners(`type`: atStorybookChannelsLib.EventName): js.Array[atStorybookChannelsLib.Listener] = js.native
+  override def listeners(`type`: atStorybookChannelsLib.EventName): js.Array[Listener] = js.native
   /* CompleteClass */
-  override def on(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit = js.native
+  override def on(`type`: atStorybookChannelsLib.EventName, listener: Listener): scala.Unit = js.native
   /* CompleteClass */
-  override def once(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit = js.native
+  override def once(`type`: atStorybookChannelsLib.EventName, listener: Listener): scala.Unit = js.native
   /* CompleteClass */
-  override def prependListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit = js.native
+  override def prependListener(`type`: atStorybookChannelsLib.EventName, listener: Listener): scala.Unit = js.native
   /* CompleteClass */
   override def removeAllListeners(`type`: atStorybookChannelsLib.EventName): scala.Unit = js.native
   /* CompleteClass */
-  override def removeListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit = js.native
+  override def removeListener(`type`: atStorybookChannelsLib.EventName, listener: Listener): scala.Unit = js.native
 }
 

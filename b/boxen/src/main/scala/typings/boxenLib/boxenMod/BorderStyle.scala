@@ -12,6 +12,10 @@ sealed trait BorderStyle extends js.Object
 @js.native
 object BorderStyle extends js.Object {
   @js.native
+  sealed trait Bold
+    extends boxenLib.boxenMod.BorderStyle
+  
+  @js.native
   sealed trait Classic
     extends boxenLib.boxenMod.BorderStyle
   

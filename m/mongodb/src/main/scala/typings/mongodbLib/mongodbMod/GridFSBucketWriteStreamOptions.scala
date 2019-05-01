@@ -17,7 +17,7 @@ trait GridFSBucketWriteStreamOptions extends WriteConcern {
   /**
     * Custom file id for the GridFS file.
     */
-  var id: js.UndefOr[mongodbLib.GridFSBucketWriteStreamId] = js.undefined
+  var id: js.UndefOr[GridFSBucketWriteStreamId] = js.undefined
 }
 
 object GridFSBucketWriteStreamOptions {
@@ -25,7 +25,7 @@ object GridFSBucketWriteStreamOptions {
   def apply(
     chunkSizeBytes: scala.Int | scala.Double = null,
     disableMD5: js.UndefOr[scala.Boolean] = js.undefined,
-    id: mongodbLib.GridFSBucketWriteStreamId = null,
+    id: GridFSBucketWriteStreamId = null,
     j: js.UndefOr[scala.Boolean] = js.undefined,
     w: scala.Double | mongodbLib.mongodbLibStrings.majority | java.lang.String = null,
     wtimeout: scala.Int | scala.Double = null

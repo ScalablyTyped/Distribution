@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.HeaderFooterGroup")
 @js.native
@@ -20,56 +19,49 @@ class HeaderFooterGroup ()
     *
     * The general header/footer, used for all pages unless even/odd or first page is specified.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val defaultForAllPages: HeaderFooter = js.native
   /**
     *
     * The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val evenPages: HeaderFooter = js.native
   /**
     *
     * The first page header/footer, for all other pages general or even/odd is used.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val firstPage: HeaderFooter = js.native
   /**
     *
     * The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val oddPages: HeaderFooter = js.native
   /**
     *
     * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var state: HeaderFooterState | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Default | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FirstAndDefault | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OddAndEven | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FirstOddAndEven = js.native
   /**
     *
     * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var useSheetMargins: scala.Boolean = js.native
   /**
     *
     * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var useSheetScale: scala.Boolean = js.native
   /**

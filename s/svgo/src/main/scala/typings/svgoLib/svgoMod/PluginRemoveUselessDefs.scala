@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveUselessDefs extends js.Object {
+trait PluginRemoveUselessDefs extends PluginConfig {
   var removeUselessDefs: scala.Boolean | js.Object
 }
 

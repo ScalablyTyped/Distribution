@@ -12,8 +12,7 @@ sealed trait ShapeFillType extends js.Object
   *
   * Specifies a shape's fill type.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFillType")
 @js.native

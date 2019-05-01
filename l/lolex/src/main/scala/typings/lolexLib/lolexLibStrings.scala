@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object lolexLibStrings {
   @js.native
-  sealed trait Date extends FakeMethod
+  sealed trait Date
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait cancelAnimationFrame extends FakeMethod
+  sealed trait cancelAnimationFrame
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait cancelIdleCallback extends FakeMethod
+  sealed trait cancelIdleCallback
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait clearImmediate extends FakeMethod
+  sealed trait clearImmediate
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait clearInterval extends FakeMethod
+  sealed trait clearInterval
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait clearTimeout extends FakeMethod
+  sealed trait clearTimeout
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait hrtime extends FakeMethod
+  sealed trait hrtime
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait nextTick extends FakeMethod
+  sealed trait nextTick
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait requestAnimationFrame extends FakeMethod
+  sealed trait requestAnimationFrame
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait requestIdleCallback extends FakeMethod
+  sealed trait requestIdleCallback
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait setImmediate extends FakeMethod
+  sealed trait setImmediate
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait setInterval extends FakeMethod
+  sealed trait setInterval
+    extends lolexLib.lolexMod.FakeMethod
   
   @js.native
-  sealed trait setTimeout extends FakeMethod
+  sealed trait setTimeout
+    extends lolexLib.lolexMod.FakeMethod
   
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]

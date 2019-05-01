@@ -9,7 +9,7 @@ trait BadgeCreationParams extends js.Object {
   /**
     * Color RGB or Color Name, optional.
     */
-  var color: js.UndefOr[badgenLib.ColorPresets | java.lang.String] = js.undefined
+  var color: js.UndefOr[ColorPresets | java.lang.String] = js.undefined
   /**
     * Use icon, optional.
     */
@@ -38,7 +38,7 @@ object BadgeCreationParams {
   def apply(
     status: java.lang.String,
     subject: java.lang.String,
-    color: badgenLib.ColorPresets | java.lang.String = null,
+    color: ColorPresets | java.lang.String = null,
     icon: java.lang.String = null,
     iconWidth: scala.Int | scala.Double = null,
     style: badgenLib.badgenLibStrings.flat = null

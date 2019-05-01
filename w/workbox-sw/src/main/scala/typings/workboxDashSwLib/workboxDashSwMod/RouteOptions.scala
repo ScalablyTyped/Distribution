@@ -25,13 +25,11 @@ trait RouteOptions extends js.Object {
   	 * alternative URL's that should be checked for precache matches.
   	 */
   @JSName("urlManipulation")
-  var urlManipulation_Original: workboxDashSwLib.UrlManipulation = js.native
+  var urlManipulation_Original: UrlManipulation = js.native
   /**
   	 * This is a function that should take a URL and return an array of
   	 * alternative URL's that should be checked for precache matches.
   	 */
-  def urlManipulation(
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify URLContext */ js.Any
-  ): js.Array[stdLib.URL] = js.native
+  def urlManipulation(context: URLContext): js.Array[stdLib.URL] = js.native
 }
 

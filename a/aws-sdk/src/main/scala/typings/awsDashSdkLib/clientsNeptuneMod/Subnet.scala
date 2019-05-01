@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Subnet extends js.Object {
+  /**
+    * Specifies the EC2 Availability Zone that the subnet is in.
+    */
   var SubnetAvailabilityZone: js.UndefOr[AvailabilityZone] = js.undefined
   /**
     * Specifies the identifier of the subnet.

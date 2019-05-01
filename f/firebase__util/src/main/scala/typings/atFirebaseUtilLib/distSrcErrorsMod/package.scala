@@ -6,5 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distSrcErrorsMod {
-  type ErrorList[T] = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type ErrorData = org.scalablytyped.runtime.StringDictionary[js.UndefOr[StringLike]]
+  type ErrorMap[ErrorCode /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {readonly [ K in ErrorCode ]: string}
+    */ atFirebaseUtilLib.atFirebaseUtilLibStrings.ErrorMap with js.Any
 }

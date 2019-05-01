@@ -50,7 +50,7 @@ object OneOf extends js.Object {
     * @param fieldNames Field names
     * @returns Decorator function
     */
-  def d[T /* <: java.lang.String */](fieldNames: java.lang.String*): protobufjsLib.OneOfDecorator = js.native
+  def d[T /* <: java.lang.String */](fieldNames: java.lang.String*): protobufjsLib.protobufjsMod.OneOfDecorator = js.native
   /**
     * Constructs a oneof from a oneof descriptor.
     * @param name Oneof name

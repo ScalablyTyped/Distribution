@@ -16,34 +16,34 @@ class ^ protected () extends BN {
   def this(number: stdLib.Uint8Array) = this()
   def this(number: BN, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: BN, base: scala.Double) = this()
-  def this(number: BN, endian: bnDotJsLib.Endianness) = this()
+  def this(number: BN, endian: Endianness) = this()
   def this(number: java.lang.String, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: java.lang.String, base: scala.Double) = this()
-  def this(number: java.lang.String, endian: bnDotJsLib.Endianness) = this()
+  def this(number: java.lang.String, endian: Endianness) = this()
   def this(number: js.Array[scala.Double], base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: js.Array[scala.Double], base: scala.Double) = this()
-  def this(number: js.Array[scala.Double], endian: bnDotJsLib.Endianness) = this()
+  def this(number: js.Array[scala.Double], endian: Endianness) = this()
   def this(number: nodeLib.Buffer, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: nodeLib.Buffer, base: scala.Double) = this()
-  def this(number: nodeLib.Buffer, endian: bnDotJsLib.Endianness) = this()
+  def this(number: nodeLib.Buffer, endian: Endianness) = this()
   def this(number: scala.Double, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: scala.Double, base: scala.Double) = this()
-  def this(number: scala.Double, endian: bnDotJsLib.Endianness) = this()
+  def this(number: scala.Double, endian: Endianness) = this()
   def this(number: stdLib.Uint8Array, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: stdLib.Uint8Array, base: scala.Double) = this()
-  def this(number: stdLib.Uint8Array, endian: bnDotJsLib.Endianness) = this()
-  def this(number: BN, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
-  def this(number: BN, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
-  def this(number: java.lang.String, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
-  def this(number: java.lang.String, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
-  def this(number: js.Array[scala.Double], base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
-  def this(number: js.Array[scala.Double], base: scala.Double, endian: bnDotJsLib.Endianness) = this()
-  def this(number: nodeLib.Buffer, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
-  def this(number: nodeLib.Buffer, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
-  def this(number: scala.Double, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
-  def this(number: scala.Double, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
-  def this(number: stdLib.Uint8Array, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
-  def this(number: stdLib.Uint8Array, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
+  def this(number: stdLib.Uint8Array, endian: Endianness) = this()
+  def this(number: BN, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: Endianness) = this()
+  def this(number: BN, base: scala.Double, endian: Endianness) = this()
+  def this(number: java.lang.String, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: Endianness) = this()
+  def this(number: java.lang.String, base: scala.Double, endian: Endianness) = this()
+  def this(number: js.Array[scala.Double], base: bnDotJsLib.bnDotJsLibStrings.hex, endian: Endianness) = this()
+  def this(number: js.Array[scala.Double], base: scala.Double, endian: Endianness) = this()
+  def this(number: nodeLib.Buffer, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: Endianness) = this()
+  def this(number: nodeLib.Buffer, base: scala.Double, endian: Endianness) = this()
+  def this(number: scala.Double, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: Endianness) = this()
+  def this(number: scala.Double, base: scala.Double, endian: Endianness) = this()
+  def this(number: stdLib.Uint8Array, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: Endianness) = this()
+  def this(number: stdLib.Uint8Array, base: scala.Double, endian: Endianness) = this()
 }
 
 @JSImport("bn.js", JSImport.Namespace)
@@ -65,10 +65,10 @@ object ^ extends js.Object {
     * @description  create a reduction context  with the Montgomery trick.
     */
   def mont(num: BN): ReductionContext = js.native
-  def red(reductionContext: bnDotJsLib.IPrimeName): ReductionContext = js.native
   /**
     * @description  create a reduction context
     */
   def red(reductionContext: BN): ReductionContext = js.native
+  def red(reductionContext: IPrimeName): ReductionContext = js.native
 }
 

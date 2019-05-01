@@ -89,7 +89,7 @@ object ButtonProps {
     my: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
-    order: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.GlobalsNumber] = null,
+    order: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.GlobalsNumber] = null,
     p: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.PaddingProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,

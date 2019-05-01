@@ -9,12 +9,4 @@ package object reactDashCopyDashWriteLib {
   // kinds plus infer keyword? Alternatively unions may solve our issue if we had
   // the ability to restrict type widening.
   type AnyDeepMemberOfState[T] = js.Any
-  type ConsumerProps[T] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ConsumerPropsExplicitRender<T> */ js.Any
-  type MutateFn[T] = js.Function2[/* draft */ T, /* state */ stdLib.Readonly[T], scala.Unit]
-  type Mutator[T] = js.Function1[/* mutator */ MutateFn[T], scala.Unit]
-  type RenderFn[T] = js.Function1[
-    /* repeated */ stdLib.Readonly[stdLib.ReturnType[SelectorFn[T]]], 
-    reactLib.reactMod.Global.JSXNs.Element | js.Array[reactLib.reactMod.Global.JSXNs.Element] | scala.Null
-  ]
-  type SelectorFn[T] = js.Function1[/* state */ T, AnyDeepMemberOfState[T]]
 }

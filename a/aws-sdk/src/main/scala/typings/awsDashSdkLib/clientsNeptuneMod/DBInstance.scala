@@ -63,7 +63,7 @@ trait DBInstance extends js.Object {
     */
   var DBParameterGroups: js.UndefOr[DBParameterGroupStatusList] = js.undefined
   /**
-    *  Provides List of DB security group elements containing only DBSecurityGroup.Name and DBSecurityGroup.Status subelements. 
+    *  Provides List of DB security group elements containing only DBSecurityGroup.Name and DBSecurityGroup.Status subelements.
     */
   var DBSecurityGroups: js.UndefOr[DBSecurityGroupMembershipList] = js.undefined
   /**
@@ -115,7 +115,7 @@ trait DBInstance extends js.Object {
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    *  If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB instance. 
+    *  Not supported: The encryption for DB instances is managed by the DB cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -159,7 +159,7 @@ trait DBInstance extends js.Object {
     */
   var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
   /**
-    *  Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
+    *  Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod.
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   /**
@@ -171,7 +171,7 @@ trait DBInstance extends js.Object {
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * This parameter is not supported.
+    * This flag should no longer be used.
     */
   var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
   /**
@@ -195,7 +195,7 @@ trait DBInstance extends js.Object {
     */
   var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.undefined
   /**
-    * Specifies whether the DB instance is encrypted.
+    * Not supported: The encryption for DB instances is managed by the DB cluster.
     */
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   /**
@@ -207,7 +207,7 @@ trait DBInstance extends js.Object {
     */
   var TdeCredentialArn: js.UndefOr[String] = js.undefined
   /**
-    * Not supported. 
+    * Not supported.
     */
   var Timezone: js.UndefOr[String] = js.undefined
   /**

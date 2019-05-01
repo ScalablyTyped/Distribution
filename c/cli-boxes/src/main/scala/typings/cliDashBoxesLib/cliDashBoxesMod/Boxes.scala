@@ -12,6 +12,15 @@ trait Boxes extends js.Object {
   /**
   		@example
   		```
+  		┏━━━━┓
+  		┃    ┃
+  		┗━━━━┛
+  		```
+  		*/
+  val bold: BoxStyle
+  /**
+  		@example
+  		```
   		+----+
   		|    |
   		+----+
@@ -68,6 +77,7 @@ trait Boxes extends js.Object {
 object Boxes {
   @scala.inline
   def apply(
+    bold: BoxStyle,
     classic: BoxStyle,
     double: BoxStyle,
     doubleSingle: BoxStyle,
@@ -75,7 +85,7 @@ object Boxes {
     single: BoxStyle,
     singleDouble: BoxStyle
   ): Boxes = {
-    val __obj = js.Dynamic.literal(classic = classic, double = double, doubleSingle = doubleSingle, round = round, single = single, singleDouble = singleDouble)
+    val __obj = js.Dynamic.literal(bold = bold, classic = classic, double = double, doubleSingle = doubleSingle, round = round, single = single, singleDouble = singleDouble)
   
     __obj.asInstanceOf[Boxes]
   }

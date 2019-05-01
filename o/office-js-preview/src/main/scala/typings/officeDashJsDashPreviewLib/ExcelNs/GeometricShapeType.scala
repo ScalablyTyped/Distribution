@@ -12,8 +12,7 @@ sealed trait GeometricShapeType extends js.Object
   *
   * Specifies the shape type for a GeometricShape object.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.GeometricShapeType")
 @js.native

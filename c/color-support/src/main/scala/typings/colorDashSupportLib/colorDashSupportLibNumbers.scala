@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object colorDashSupportLibNumbers {
   @js.native
-  sealed trait `0` extends ColorSupportLevel
+  sealed trait `0`
+    extends colorDashSupportLib.colorDashSupportMod.ColorSupportLevel
   
   @js.native
-  sealed trait `1` extends ColorSupportLevel
+  sealed trait `1`
+    extends colorDashSupportLib.colorDashSupportMod.ColorSupportLevel
   
   @js.native
-  sealed trait `2` extends ColorSupportLevel
+  sealed trait `2`
+    extends colorDashSupportLib.colorDashSupportMod.ColorSupportLevel
   
   @js.native
-  sealed trait `3` extends ColorSupportLevel
+  sealed trait `3`
+    extends colorDashSupportLib.colorDashSupportMod.ColorSupportLevel
   
   @js.native
   sealed trait `false` extends js.Object

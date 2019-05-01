@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AnimationName extends js.Object {
   var animationName: js.UndefOr[
-    java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
-    ])
+    java.lang.String | aphroditeLib.aphroditeMod.OpenCSSProperties | js.Array[aphroditeLib.aphroditeMod.OpenCSSProperties]
   ] = js.undefined
-  var fontFamily: js.UndefOr[FontFamily | js.Array[FontFamily]] = js.undefined
+  var fontFamily: js.UndefOr[
+    aphroditeLib.aphroditeMod.FontFamily | js.Array[aphroditeLib.aphroditeMod.FontFamily]
+  ] = js.undefined
 }
 
 object Anon_AnimationName {
   @scala.inline
   def apply(
-    animationName: java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
-    ]) = null,
-    fontFamily: FontFamily | js.Array[FontFamily] = null
+    animationName: java.lang.String | aphroditeLib.aphroditeMod.OpenCSSProperties | js.Array[aphroditeLib.aphroditeMod.OpenCSSProperties] = null,
+    fontFamily: aphroditeLib.aphroditeMod.FontFamily | js.Array[aphroditeLib.aphroditeMod.FontFamily] = null
   ): Anon_AnimationName = {
     val __obj = js.Dynamic.literal()
     if (animationName != null) __obj.updateDynamic("animationName")(animationName.asInstanceOf[js.Any])

@@ -33,8 +33,7 @@ class StyleCollection ()
     *
     * Gets the number of styles in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
@@ -50,8 +49,7 @@ class StyleCollection ()
     *
     * Gets a style based on its position in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param index Index value of the style object to be retrieved. Zero-indexed.
     */

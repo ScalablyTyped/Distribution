@@ -24,9 +24,9 @@ object ^ extends js.Object {
   def isIdentifierStart(code: scala.Double): scala.Boolean = js.native
   def isIdentifierStart(code: scala.Double, astral: scala.Boolean): scala.Boolean = js.native
   def isNewLine(code: scala.Double): scala.Boolean = js.native
-  def parseExpressionAt(input: java.lang.String): estreeLib.Expression = js.native
-  def parseExpressionAt(input: java.lang.String, pos: scala.Double): estreeLib.Expression = js.native
-  def parseExpressionAt(input: java.lang.String, pos: scala.Double, options: Options): estreeLib.Expression = js.native
+  def parseExpressionAt(input: java.lang.String): estreeLib.estreeMod.Expression = js.native
+  def parseExpressionAt(input: java.lang.String, pos: scala.Double): estreeLib.estreeMod.Expression = js.native
+  def parseExpressionAt(input: java.lang.String, pos: scala.Double, options: Options): estreeLib.estreeMod.Expression = js.native
   def tokenizer(input: java.lang.String, options: Options): ITokenizer = js.native
 }
 

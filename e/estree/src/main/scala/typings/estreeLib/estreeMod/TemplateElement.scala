@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TemplateElement
   extends BaseNode
-     with _Node {
+     with Node {
   var tail: scala.Boolean
   @JSName("type")
   var type_TemplateElement: estreeLib.estreeLibStrings.TemplateElement

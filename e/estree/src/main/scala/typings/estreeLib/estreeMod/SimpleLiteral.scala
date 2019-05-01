@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SimpleLiteral
-  extends BaseNode
-     with Literal {
+  extends Literal
+     with BaseNode {
   var raw: js.UndefOr[java.lang.String] = js.undefined
   @JSName("type")
   var type_SimpleLiteral: estreeLib.estreeLibStrings.Literal

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a collection of all the shapes in the worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeCollection")
 @js.native
@@ -25,8 +24,7 @@ class ShapeCollection ()
     *
     * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param geometricShapeType Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
     */
@@ -37,8 +35,7 @@ class ShapeCollection ()
     *
     * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param geometricShapeType Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
     */
@@ -47,8 +44,7 @@ class ShapeCollection ()
     *
     * Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of shapes.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param values An array of shape ID or shape objects.
     */
@@ -57,8 +53,7 @@ class ShapeCollection ()
     *
     * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that represents the new image.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param base64ImageString A base64-encoded string representing an image in either JPEG or PNG format.
     */
@@ -67,8 +62,7 @@ class ShapeCollection ()
     *
     * Adds a line to worksheet. Returns a Shape object that represents the new line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param startLeft The distance, in points, from the start of the line to the left side of the worksheet.
     * @param startTop The distance, in points, from the start of the line to the top of the worksheet.
@@ -122,8 +116,7 @@ class ShapeCollection ()
     *
     * Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the new text box.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text Represents the text that will be shown in the created text box.
     */
@@ -133,26 +126,23 @@ class ShapeCollection ()
     *
     * Returns the number of shapes in the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
     *
-    * Gets a shape using its name.
+    * Gets a shape using its Name or ID.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
-    * @param name Name of the shape to be retrieved.
+    * @param key Name or ID of the shape to be retrieved.
     */
-  def getItem(name: java.lang.String): Shape = js.native
+  def getItem(key: java.lang.String): Shape = js.native
   /**
     *
     * Gets a shape using its position in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param index The zero-based index of the shape to be retrieved.
     */

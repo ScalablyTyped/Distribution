@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * This object represents the attributes for chart error bars object.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartErrorBars")
 @js.native
@@ -23,40 +22,35 @@ class ChartErrorBars ()
     *
     * Represents whether have the end style cap for the error bars.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: scala.Boolean = js.native
   /**
     *
     * Represents the formatting of chart ErrorBars.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val format: ChartErrorBarsFormat = js.native
   /**
     *
     * Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var include: ChartErrorBarsInclude | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Both | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MinusValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlusValues = js.native
   /**
     *
     * Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var `type`: ChartErrorBarsType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FixedValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StDev | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StError | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Custom = js.native
   /**
     *
     * Represents whether shown error bars.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var visible: scala.Boolean = js.native
   /**

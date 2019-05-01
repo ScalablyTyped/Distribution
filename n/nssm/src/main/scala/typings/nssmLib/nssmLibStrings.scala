@@ -10,40 +10,52 @@ object nssmLibStrings {
   sealed trait Nssm extends js.Object
   
   @js.native
-  sealed trait continue extends Command
+  sealed trait continue
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait get extends Command
+  sealed trait get
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait install extends Command
+  sealed trait install
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait pause extends Command
+  sealed trait pause
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait remove extends Command
+  sealed trait remove
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait reset extends Command
+  sealed trait reset
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait restart extends Command
+  sealed trait restart
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait rotate extends Command
+  sealed trait rotate
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait set extends Command
+  sealed trait set
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait start extends Command
+  sealed trait start
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait status extends Command
+  sealed trait status
+    extends nssmLib.nssmMod.Command
   
   @js.native
-  sealed trait stop extends Command
+  sealed trait stop
+    extends nssmLib.nssmMod.Command
   
   @scala.inline
   def Nssm: Nssm = "Nssm".asInstanceOf[Nssm]

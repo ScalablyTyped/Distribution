@@ -20,7 +20,7 @@ trait Options extends js.Object {
     * Individual plugin configurations.
     * For specific options, see plugin source in https://github.com/svg/svgo/tree/master/plugins.
     */
-  var plugins: js.UndefOr[js.Array[svgoLib.PluginConfig]] = js.undefined
+  var plugins: js.UndefOr[js.Array[PluginConfig]] = js.undefined
   /** Options for parsing original SVG into AST. */
   var svg2js: js.UndefOr[Svg2JsOptions] = js.undefined
 }
@@ -32,7 +32,7 @@ object Options {
     floatPrecision: scala.Int | scala.Double = null,
     full: js.UndefOr[scala.Boolean] = js.undefined,
     js2svg: Js2SvgOptions = null,
-    plugins: js.Array[svgoLib.PluginConfig] = null,
+    plugins: js.Array[PluginConfig] = null,
     svg2js: Svg2JsOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal()

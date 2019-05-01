@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SetCommand extends js.Object {
+trait SetCommand extends Command {
   @JSName("$set")
   var $set: js.Any
 }

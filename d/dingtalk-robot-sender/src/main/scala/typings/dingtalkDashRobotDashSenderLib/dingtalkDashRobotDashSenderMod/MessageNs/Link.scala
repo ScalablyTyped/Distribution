@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Link extends js.Object {
+trait Link
+  extends dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderMod.MessageType {
   var link: dingtalkDashRobotDashSenderLib.Anon_MessageUrl
   var msgtype: dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderLibStrings.link
 }

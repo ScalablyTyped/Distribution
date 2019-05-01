@@ -11,24 +11,21 @@ trait AutoFilterData extends js.Object {
     *
     * An array that holds all the filter criteria in the autofiltered range. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var criteria: js.UndefOr[js.Array[officeDashJsDashPreviewLib.ExcelNs.FilterCriteria]] = js.undefined
   /**
     *
     * Indicates if the AutoFilter is enabled or not. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Indicates if the AutoFilter has filter criteria. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var isDataFiltered: js.UndefOr[scala.Boolean] = js.undefined
 }

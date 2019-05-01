@@ -89,6 +89,13 @@ trait ChartAxisData extends js.Object {
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the base of the logarithm when using logarithmic scales.
     *
     * [Api set: ExcelApi 1.7]
@@ -314,6 +321,7 @@ object ChartAxisData {
     height: scala.Int | scala.Double = null,
     isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined,
     left: scala.Int | scala.Double = null,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     logBase: scala.Int | scala.Double = null,
     majorGridlines: ChartGridlinesData = null,
     majorTickMark: officeDashJsLib.ExcelNs.ChartAxisTickMark | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Cross | officeDashJsLib.officeDashJsLibStrings.Inside | officeDashJsLib.officeDashJsLibStrings.Outside = null,
@@ -354,6 +362,7 @@ object ChartAxisData {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(isBetweenCategories)) __obj.updateDynamic("isBetweenCategories")(isBetweenCategories)
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (logBase != null) __obj.updateDynamic("logBase")(logBase.asInstanceOf[js.Any])
     if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines)
     if (majorTickMark != null) __obj.updateDynamic("majorTickMark")(majorTickMark.asInstanceOf[js.Any])

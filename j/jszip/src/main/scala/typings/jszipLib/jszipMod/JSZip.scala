@@ -18,8 +18,8 @@ trait JSZip
   * @param options Description of the serialized zip archive
   */
 org.scalablytyped.runtime.Instantiable0[JSZip]
-     with org.scalablytyped.runtime.Instantiable1[/* data */ jszipLib.InputFileFormat, JSZip]
-     with org.scalablytyped.runtime.Instantiable2[/* data */ jszipLib.InputFileFormat, /* options */ JSZipLoadOptions, JSZip] {
+     with org.scalablytyped.runtime.Instantiable1[/* data */ InputFileFormat, JSZip]
+     with org.scalablytyped.runtime.Instantiable2[/* data */ InputFileFormat, /* options */ JSZipLoadOptions, JSZip] {
   var external: jszipLib.Anon_Promise = js.native
   var files: org.scalablytyped.runtime.StringDictionary[JSZipObject] = js.native
   var support: JSZipSupport = js.native
@@ -114,7 +114,7 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
   def generateAsync[T /* <: OutputType */](options: JSZipGeneratorOptions[T]): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
-  def generateAsync[T /* <: OutputType */](options: JSZipGeneratorOptions[T], onUpdate: jszipLib.OnUpdateCallback): js.Promise[
+  def generateAsync[T /* <: OutputType */](options: JSZipGeneratorOptions[T], onUpdate: OnUpdateCallback): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
   /**
@@ -128,10 +128,7 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
   @JSName("generateNodeStream")
   def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer]): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("generateNodeStream")
-  def generateNodeStream_nodebuffer(
-    options: JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer],
-    onUpdate: jszipLib.OnUpdateCallback
-  ): nodeLib.NodeJSNs.ReadableStream = js.native
+  def generateNodeStream_nodebuffer(options: JSZipGeneratorOptions[jszipLib.jszipLibStrings.nodebuffer], onUpdate: OnUpdateCallback): nodeLib.NodeJSNs.ReadableStream = js.native
   /**
     * Deserialize zip file asynchronously
     *
@@ -139,8 +136,8 @@ org.scalablytyped.runtime.Instantiable0[JSZip]
     * @param options Options for deserializing
     * @return Returns promise
     */
-  def loadAsync(data: jszipLib.InputFileFormat): js.Promise[JSZip] = js.native
-  def loadAsync(data: jszipLib.InputFileFormat, options: JSZipLoadOptions): js.Promise[JSZip] = js.native
+  def loadAsync(data: InputFileFormat): js.Promise[JSZip] = js.native
+  def loadAsync(data: InputFileFormat, options: JSZipLoadOptions): js.Promise[JSZip] = js.native
   /**
     * Removes the file or folder from the archive
     *

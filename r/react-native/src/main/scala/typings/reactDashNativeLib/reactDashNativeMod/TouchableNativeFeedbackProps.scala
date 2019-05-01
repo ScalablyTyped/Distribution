@@ -20,7 +20,7 @@ trait TouchableNativeFeedbackProps extends TouchableWithoutFeedbackProps {
     *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
     *         type is available on Android API level 21+
     */
-  var background: js.UndefOr[reactDashNativeLib.BackgroundPropType] = js.undefined
+  var background: js.UndefOr[BackgroundPropType] = js.undefined
   var useForeground: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -35,9 +35,9 @@ object TouchableNativeFeedbackProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityStates: js.Array[AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
-    background: reactDashNativeLib.BackgroundPropType = null,
+    background: BackgroundPropType = null,
     delayLongPress: scala.Int | scala.Double = null,
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,

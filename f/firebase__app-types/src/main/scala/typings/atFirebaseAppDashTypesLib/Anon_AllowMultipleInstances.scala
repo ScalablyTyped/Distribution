@@ -10,7 +10,14 @@ trait Anon_AllowMultipleInstances extends js.Object {
   /**
     * Use to construct all thrown FirebaseError's.
     */
-  var ErrorFactory: atFirebaseAppDashTypesLib.privateMod.FirebaseErrorFactoryClass = js.native
+  var ErrorFactory: org.scalablytyped.runtime.Instantiable3[
+    /* service */ java.lang.String, 
+    /* serviceName */ java.lang.String, 
+    /* errors */ atFirebaseUtilLib.distSrcErrorsMod.ErrorMap[
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam ErrorCode */ js.Any
+    ], 
+    atFirebaseUtilLib.atFirebaseUtilMod.ErrorFactory[java.lang.String]
+  ] = js.native
   /**
     * Service factories for each registered service.
     */

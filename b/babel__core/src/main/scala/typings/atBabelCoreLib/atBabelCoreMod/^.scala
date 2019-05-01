@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val template: atBabelTemplateLib.DefaultTemplateBuilder = js.native
+  val template: atBabelTemplateLib.atBabelTemplateMod.DefaultTemplateBuilder = js.native
   val version: java.lang.String = js.native
   def createConfigItem(value: PluginTarget): ConfigItem = js.native
   def createConfigItem(value: PluginTarget, options: CreateConfigItemOptions): ConfigItem = js.native

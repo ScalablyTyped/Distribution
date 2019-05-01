@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IconProps extends SizeOverrideHTMLProps[Icon] {
-  var Component: js.UndefOr[reactDashFaLib.CustomComponent] = js.undefined
+  var Component: js.UndefOr[CustomComponent] = js.undefined
   var fixedWidth: js.UndefOr[scala.Boolean] = js.undefined
   var flip: js.UndefOr[IconFlip] = js.undefined
   var inverse: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,7 +24,7 @@ object IconProps {
   @scala.inline
   def apply(
     name: java.lang.String,
-    Component: reactDashFaLib.CustomComponent = null,
+    Component: CustomComponent = null,
     SizeOverrideHTMLProps: SizeOverrideHTMLProps[Icon] = null,
     fixedWidth: js.UndefOr[scala.Boolean] = js.undefined,
     flip: IconFlip = null,

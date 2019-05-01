@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ExpressionStatement
   extends BaseNode
      with Statement {
-  var expression: estreeLib.Expression
+  var expression: Expression
   @JSName("type")
   var type_ExpressionStatement: estreeLib.estreeLibStrings.ExpressionStatement
 }
@@ -16,7 +16,7 @@ trait ExpressionStatement
 object ExpressionStatement {
   @scala.inline
   def apply(
-    expression: estreeLib.Expression,
+    expression: Expression,
     `type`: estreeLib.estreeLibStrings.ExpressionStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deep-freeze-strict"
-version := "1.1-dt-20180214Z-dbac1f"
+version := "1.1-dt-20180214Z-fc1b66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

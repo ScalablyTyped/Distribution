@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait GriddleExtensibility extends js.Object {
   var components: js.UndefOr[GriddleComponents] = js.undefined
   var events: js.UndefOr[GriddleEvents] = js.undefined
-  var listeners: js.UndefOr[PropertyBag[griddleDashReactLib.Listener]] = js.undefined
-  var reducer: js.UndefOr[PropertyBag[griddleDashReactLib.Reducer]] = js.undefined
+  var listeners: js.UndefOr[PropertyBag[Listener]] = js.undefined
+  var reducer: js.UndefOr[PropertyBag[Reducer]] = js.undefined
   var renderProperties: js.UndefOr[GriddleRenderProperties] = js.undefined
-  var selectors: js.UndefOr[PropertyBag[griddleDashReactLib.Selector]] = js.undefined
+  var selectors: js.UndefOr[PropertyBag[Selector]] = js.undefined
   var settingsComponentObjects: js.UndefOr[PropertyBag[SettingsComponentObject]] = js.undefined
   var styleConfig: js.UndefOr[GriddleStyleConfig] = js.undefined
 }
@@ -21,10 +21,10 @@ object GriddleExtensibility {
   def apply(
     components: GriddleComponents = null,
     events: GriddleEvents = null,
-    listeners: PropertyBag[griddleDashReactLib.Listener] = null,
-    reducer: PropertyBag[griddleDashReactLib.Reducer] = null,
+    listeners: PropertyBag[Listener] = null,
+    reducer: PropertyBag[Reducer] = null,
     renderProperties: GriddleRenderProperties = null,
-    selectors: PropertyBag[griddleDashReactLib.Selector] = null,
+    selectors: PropertyBag[Selector] = null,
     settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
     styleConfig: GriddleStyleConfig = null
   ): GriddleExtensibility = {

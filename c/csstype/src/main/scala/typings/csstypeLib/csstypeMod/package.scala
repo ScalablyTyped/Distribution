@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.ContentDistribution
-    - csstypeLib.ContentPosition
+    - ContentDistribution
+    - ContentPosition
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.normal
     - java.lang.String
@@ -17,7 +17,7 @@ package object csstypeMod {
   type AlignContentProperty = _AlignContentProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SelfPosition
+    - SelfPosition
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.normal
     - csstypeLib.csstypeLibStrings.stretch
@@ -26,7 +26,7 @@ package object csstypeMod {
   type AlignItemsProperty = _AlignItemsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SelfPosition
+    - SelfPosition
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.normal
@@ -35,14 +35,20 @@ package object csstypeMod {
   */
   type AlignSelfProperty = _AlignSelfProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.contents
+    - csstypeLib.csstypeLibStrings.`scroll-position`
+    - java.lang.String
+  */
+  type AnimateableFeature = _AnimateableFeature | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SingleAnimationDirection
+    - SingleAnimationDirection
     - java.lang.String
   */
   type AnimationDirectionProperty = _AnimationDirectionProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SingleAnimationFillMode
+    - SingleAnimationFillMode
     - java.lang.String
   */
   type AnimationFillModeProperty = _AnimationFillModeProperty | java.lang.String
@@ -68,13 +74,13 @@ package object csstypeMod {
   type AnimationPlayStateProperty = _AnimationPlayStateProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SingleAnimation
+    - SingleAnimation
     - java.lang.String
   */
   type AnimationProperty = _AnimationProperty | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SingleTimingFunction
+    - SingleTimingFunction
     - java.lang.String
   */
   type AnimationTimingFunctionProperty = _AnimationTimingFunctionProperty | java.lang.String
@@ -86,25 +92,25 @@ package object csstypeMod {
   type BackdropFilterProperty = _BackdropFilterProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Attachment
+    - Attachment
     - java.lang.String
   */
   type BackgroundAttachmentProperty = _BackgroundAttachmentProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.BlendMode
+    - BlendMode
     - java.lang.String
   */
   type BackgroundBlendModeProperty = _BackgroundBlendModeProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Box
+    - Box
     - java.lang.String
   */
   type BackgroundClipProperty = _BackgroundClipProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BackgroundColorProperty = _BackgroundColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -115,13 +121,13 @@ package object csstypeMod {
   type BackgroundImageProperty = _BackgroundImageProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Box
+    - Box
     - java.lang.String
   */
   type BackgroundOriginProperty = _BackgroundOriginProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.BgPosition[TLength]
+    - BgPosition[TLength]
     - java.lang.String
   */
   type BackgroundPositionProperty[TLength] = _BackgroundPositionProperty[TLength] | java.lang.String | TLength
@@ -149,19 +155,19 @@ package object csstypeMod {
   type BackgroundPositionYProperty[TLength] = _BackgroundPositionYProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.FinalBgLayer[TLength]
+    - FinalBgLayer[TLength]
     - java.lang.String
   */
   type BackgroundProperty[TLength] = _BackgroundProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.RepeatStyle
+    - RepeatStyle
     - java.lang.String
   */
   type BackgroundRepeatProperty = _BackgroundRepeatProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.BgSize[TLength]
+    - BgSize[TLength]
     - java.lang.String
   */
   type BackgroundSizeProperty[TLength] = _BackgroundSizeProperty[TLength] | java.lang.String | TLength
@@ -174,6 +180,24 @@ package object csstypeMod {
     - java.lang.String
   */
   type BaselineShiftProperty[TLength] = _BaselineShiftProperty[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - TLength
+    - csstypeLib.csstypeLibStrings.bottom
+    - csstypeLib.csstypeLibStrings.center
+    - csstypeLib.csstypeLibStrings.left
+    - csstypeLib.csstypeLibStrings.right
+    - csstypeLib.csstypeLibStrings.top
+    - java.lang.String
+  */
+  type BgPosition[TLength] = _BgPosition[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - csstypeLib.csstypeLibStrings.contain
+    - csstypeLib.csstypeLibStrings.cover
+    - java.lang.String
+  */
+  type BgSize[TLength] = _BgSize[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.clip
@@ -194,82 +218,82 @@ package object csstypeMod {
   type BlockSizeProperty[TLength] = _BlockSizeProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - java.lang.String
   */
   type BorderBlockColorProperty = _BorderBlockColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderBlockEndColorProperty = _BorderBlockEndColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderBlockEndProperty[TLength] = _BorderBlockEndProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderBlockEndWidthProperty[TLength] = _BorderBlockEndWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderBlockProperty[TLength] = _BorderBlockProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderBlockStartColorProperty = _BorderBlockStartColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderBlockStartProperty[TLength] = _BorderBlockStartProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderBlockStartWidthProperty[TLength] = _BorderBlockStartWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderBlockWidthProperty[TLength] = _BorderBlockWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderBottomColorProperty = _BorderBottomColorProperty | java.lang.String
   type BorderBottomLeftRadiusProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderBottomProperty[TLength] = _BorderBottomProperty[TLength] | java.lang.String | TLength
   type BorderBottomRightRadiusProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderBottomWidthProperty[TLength] = _BorderBottomWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - java.lang.String
   */
   type BorderColorProperty = _BorderColorProperty | java.lang.String
@@ -313,102 +337,102 @@ package object csstypeMod {
   type BorderImageWidthProperty[TLength] = _BorderImageWidthProperty[TLength] | TLength | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - java.lang.String
   */
   type BorderInlineColorProperty = _BorderInlineColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderInlineEndColorProperty = _BorderInlineEndColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderInlineEndProperty[TLength] = _BorderInlineEndProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderInlineEndWidthProperty[TLength] = _BorderInlineEndWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderInlineProperty[TLength] = _BorderInlineProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderInlineStartColorProperty = _BorderInlineStartColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderInlineStartProperty[TLength] = _BorderInlineStartProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderInlineStartWidthProperty[TLength] = _BorderInlineStartWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderInlineWidthProperty[TLength] = _BorderInlineWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderLeftColorProperty = _BorderLeftColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderLeftProperty[TLength] = _BorderLeftProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderLeftWidthProperty[TLength] = _BorderLeftWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderProperty[TLength] = _BorderProperty[TLength] | java.lang.String | TLength
   type BorderRadiusProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderRightColorProperty = _BorderRightColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderRightProperty[TLength] = _BorderRightProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderRightWidthProperty[TLength] = _BorderRightWidthProperty[TLength] | TLength
   type BorderSpacingProperty[TLength] = Globals | TLength | java.lang.String
@@ -416,33 +440,33 @@ package object csstypeMod {
   type BorderStartStartRadiusProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineStyle
+    - LineStyle
     - java.lang.String
   */
   type BorderStyleProperty = _BorderStyleProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type BorderTopColorProperty = _BorderTopColorProperty | java.lang.String
   type BorderTopLeftRadiusProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type BorderTopProperty[TLength] = _BorderTopProperty[TLength] | java.lang.String | TLength
   type BorderTopRightRadiusProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type BorderTopWidthProperty[TLength] = _BorderTopWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
     - java.lang.String
   */
   type BorderWidthProperty[TLength] = _BorderWidthProperty[TLength] | java.lang.String | TLength
@@ -461,13 +485,13 @@ package object csstypeMod {
   type BoxShadowProperty = _BoxShadowProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.auto
   */
   type CaretColorProperty = _CaretColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.GeometryBox
+    - GeometryBox
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
@@ -479,8 +503,15 @@ package object csstypeMod {
   */
   type ClipProperty = _ClipProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - NamedColor
+    - DeprecatedSystemColor
+    - csstypeLib.csstypeLibStrings.currentcolor
+    - java.lang.String
+  */
+  type Color = _Color | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type ColorProperty = _ColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -498,26 +529,26 @@ package object csstypeMod {
   type ColumnGapProperty[TLength] = _ColumnGapProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type ColumnRuleColorProperty = _ColumnRuleColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type ColumnRuleProperty[TLength] = _ColumnRuleProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineStyle
+    - LineStyle
     - java.lang.String
   */
   type ColumnRuleStyleProperty = _ColumnRuleStyleProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
     - java.lang.String
   */
   type ColumnRuleWidthProperty[TLength] = _ColumnRuleWidthProperty[TLength] | java.lang.String | TLength
@@ -548,8 +579,14 @@ package object csstypeMod {
   */
   type ContainProperty = _ContainProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - Quote
+    - csstypeLib.csstypeLibStrings.contents
+    - java.lang.String
+  */
+  type ContentList = _ContentList | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.ContentList
+    - ContentList
     - csstypeLib.csstypeLibStrings.none
     - csstypeLib.csstypeLibStrings.normal
     - java.lang.String
@@ -567,6 +604,40 @@ package object csstypeMod {
     - java.lang.String
   */
   type CounterResetProperty = _CounterResetProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.auto
+    - csstypeLib.csstypeLibStrings.infinite
+    - java.lang.String
+    - scala.Double
+  */
+  type CounterStyleRangeProperty = _CounterStyleRangeProperty | java.lang.String | scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.auto
+    - csstypeLib.csstypeLibStrings.bullets
+    - csstypeLib.csstypeLibStrings.numbers
+    - csstypeLib.csstypeLibStrings.`spell-out`
+    - csstypeLib.csstypeLibStrings.words
+    - java.lang.String
+  */
+  type CounterStyleSpeakAsProperty = _CounterStyleSpeakAsProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.additive
+    - csstypeLib.csstypeLibStrings.alphabetic
+    - csstypeLib.csstypeLibStrings.cyclic
+    - csstypeLib.csstypeLibStrings.fixed
+    - csstypeLib.csstypeLibStrings.numeric
+    - csstypeLib.csstypeLibStrings.symbolic
+    - java.lang.String
+  */
+  type CounterStyleSystemProperty = _CounterStyleSystemProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.ease
+    - csstypeLib.csstypeLibStrings.`ease-in`
+    - csstypeLib.csstypeLibStrings.`ease-in-out`
+    - csstypeLib.csstypeLibStrings.`ease-out`
+    - java.lang.String
+  */
+  type CubicBezierTimingFunction = _CubicBezierTimingFunction | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.`-moz-grab`
@@ -610,12 +681,13 @@ package object csstypeMod {
     - java.lang.String
   */
   type CursorProperty = _CursorProperty | java.lang.String
+  type Dasharray[TLength] = TLength | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.DisplayOutside
-    - csstypeLib.DisplayInside
-    - csstypeLib.DisplayInternal
-    - csstypeLib.DisplayLegacy
+    - DisplayOutside
+    - DisplayInside
+    - DisplayInternal
+    - DisplayLegacy
     - csstypeLib.csstypeLibStrings.contents
     - csstypeLib.csstypeLibStrings.`list-item`
     - csstypeLib.csstypeLibStrings.none
@@ -624,7 +696,7 @@ package object csstypeMod {
   type DisplayProperty = _DisplayProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Paint
+    - Paint
   */
   type FillProperty = _FillProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -633,6 +705,16 @@ package object csstypeMod {
     - java.lang.String
   */
   type FilterProperty = _FilterProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Color
+    - BgPosition[TLength]
+    - RepeatStyle
+    - Attachment
+    - Box
+    - csstypeLib.csstypeLibStrings.none
+    - java.lang.String
+  */
+  type FinalBgLayer[TLength] = _FinalBgLayer[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
@@ -674,13 +756,57 @@ package object csstypeMod {
   type FlexProperty[TLength] = _FlexProperty[TLength] | TLength | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.currentColor
   */
   type FloodColorProperty = _FloodColorProperty | java.lang.String
+  type FontFaceFontFeatureSettingsProperty = csstypeLib.csstypeLibStrings.normal | java.lang.String
+  type FontFaceFontStretchProperty = FontStretchAbsolute | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.italic
+    - csstypeLib.csstypeLibStrings.normal
+    - csstypeLib.csstypeLibStrings.oblique
+    - java.lang.String
+  */
+  type FontFaceFontStyleProperty = _FontFaceFontStyleProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - EastAsianVariantValues
+    - csstypeLib.csstypeLibStrings.`all-petite-caps`
+    - csstypeLib.csstypeLibStrings.`all-small-caps`
+    - csstypeLib.csstypeLibStrings.`common-ligatures`
+    - csstypeLib.csstypeLibStrings.contextual
+    - csstypeLib.csstypeLibStrings.`diagonal-fractions`
+    - csstypeLib.csstypeLibStrings.`discretionary-ligatures`
+    - csstypeLib.csstypeLibStrings.`full-width`
+    - csstypeLib.csstypeLibStrings.`historical-forms`
+    - csstypeLib.csstypeLibStrings.`historical-ligatures`
+    - csstypeLib.csstypeLibStrings.`lining-nums`
+    - csstypeLib.csstypeLibStrings.`no-common-ligatures`
+    - csstypeLib.csstypeLibStrings.`no-contextual`
+    - csstypeLib.csstypeLibStrings.`no-discretionary-ligatures`
+    - csstypeLib.csstypeLibStrings.`no-historical-ligatures`
+    - csstypeLib.csstypeLibStrings.none
+    - csstypeLib.csstypeLibStrings.normal
+    - csstypeLib.csstypeLibStrings.`oldstyle-nums`
+    - csstypeLib.csstypeLibStrings.ordinal
+    - csstypeLib.csstypeLibStrings.`petite-caps`
+    - csstypeLib.csstypeLibStrings.`proportional-nums`
+    - csstypeLib.csstypeLibStrings.`proportional-width`
+    - csstypeLib.csstypeLibStrings.ruby
+    - csstypeLib.csstypeLibStrings.`slashed-zero`
+    - csstypeLib.csstypeLibStrings.`small-caps`
+    - csstypeLib.csstypeLibStrings.`stacked-fractions`
+    - csstypeLib.csstypeLibStrings.`tabular-nums`
+    - csstypeLib.csstypeLibStrings.`titling-caps`
+    - csstypeLib.csstypeLibStrings.unicase
+    - java.lang.String
+  */
+  type FontFaceFontVariantProperty = _FontFaceFontVariantProperty | java.lang.String
+  type FontFaceFontVariationSettingsProperty = csstypeLib.csstypeLibStrings.normal | java.lang.String
+  type FontFaceFontWeightProperty = FontWeightAbsolute | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.GenericFamily
+    - GenericFamily
     - java.lang.String
   */
   type FontFamilyProperty = _FontFamilyProperty | java.lang.String
@@ -715,7 +841,7 @@ package object csstypeMod {
   type FontSizeAdjustProperty = _FontSizeAdjustProperty | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.AbsoluteSize
+    - AbsoluteSize
     - TLength
     - csstypeLib.csstypeLibStrings.larger
     - csstypeLib.csstypeLibStrings.smaller
@@ -723,8 +849,21 @@ package object csstypeMod {
   */
   type FontSizeProperty[TLength] = _FontSizeProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.condensed
+    - csstypeLib.csstypeLibStrings.expanded
+    - csstypeLib.csstypeLibStrings.`extra-condensed`
+    - csstypeLib.csstypeLibStrings.`extra-expanded`
+    - csstypeLib.csstypeLibStrings.normal
+    - csstypeLib.csstypeLibStrings.`semi-condensed`
+    - csstypeLib.csstypeLibStrings.`semi-expanded`
+    - csstypeLib.csstypeLibStrings.`ultra-condensed`
+    - csstypeLib.csstypeLibStrings.`ultra-expanded`
+    - java.lang.String
+  */
+  type FontStretchAbsolute = _FontStretchAbsolute | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.FontStretchAbsolute
+    - FontStretchAbsolute
   */
   type FontStretchProperty = _FontStretchProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -752,7 +891,7 @@ package object csstypeMod {
   type FontVariantAlternatesProperty = _FontVariantAlternatesProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.EastAsianVariantValues
+    - EastAsianVariantValues
     - csstypeLib.csstypeLibStrings.`full-width`
     - csstypeLib.csstypeLibStrings.normal
     - csstypeLib.csstypeLibStrings.`proportional-width`
@@ -791,7 +930,7 @@ package object csstypeMod {
   type FontVariantNumericProperty = _FontVariantNumericProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.EastAsianVariantValues
+    - EastAsianVariantValues
     - csstypeLib.csstypeLibStrings.`all-petite-caps`
     - csstypeLib.csstypeLibStrings.`all-small-caps`
     - csstypeLib.csstypeLibStrings.`common-ligatures`
@@ -830,8 +969,14 @@ package object csstypeMod {
   */
   type FontVariationSettingsProperty = _FontVariationSettingsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.bold
+    - csstypeLib.csstypeLibStrings.normal
+    - scala.Double
+  */
+  type FontWeightAbsolute = _FontWeightAbsolute | scala.Double
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.FontWeightAbsolute
+    - FontWeightAbsolute
     - csstypeLib.csstypeLibStrings.bolder
     - csstypeLib.csstypeLibStrings.lighter
   */
@@ -843,6 +988,8 @@ package object csstypeMod {
     - java.lang.String
   */
   type GapProperty[TLength] = _GapProperty[TLength] | TLength | java.lang.String
+  type GlobalsNumber = Globals | scala.Double
+  type GlobalsString = Globals | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.auto
@@ -850,10 +997,10 @@ package object csstypeMod {
     - scala.Double
   */
   type GlyphOrientationVerticalProperty = _GlyphOrientationVerticalProperty | java.lang.String | scala.Double
-  type GridAreaProperty = Globals | csstypeLib.GridLine | java.lang.String
+  type GridAreaProperty = Globals | GridLine | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.TrackBreadth[TLength]
+    - TrackBreadth[TLength]
     - java.lang.String
   */
   type GridAutoColumnsProperty[TLength] = _GridAutoColumnsProperty[TLength] | java.lang.String | TLength
@@ -867,25 +1014,26 @@ package object csstypeMod {
   type GridAutoFlowProperty = _GridAutoFlowProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.TrackBreadth[TLength]
+    - TrackBreadth[TLength]
     - java.lang.String
   */
   type GridAutoRowsProperty[TLength] = _GridAutoRowsProperty[TLength] | java.lang.String | TLength
-  type GridColumnEndProperty = Globals | csstypeLib.GridLine
+  type GridColumnEndProperty = Globals | GridLine
   type GridColumnGapProperty[TLength] = Globals | TLength | java.lang.String
-  type GridColumnProperty = Globals | csstypeLib.GridLine | java.lang.String
-  type GridColumnStartProperty = Globals | csstypeLib.GridLine
+  type GridColumnProperty = Globals | GridLine | java.lang.String
+  type GridColumnStartProperty = Globals | GridLine
   type GridGapProperty[TLength] = Globals | TLength | java.lang.String
+  type GridLine = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type GridProperty = _GridProperty | java.lang.String
-  type GridRowEndProperty = Globals | csstypeLib.GridLine
+  type GridRowEndProperty = Globals | GridLine
   type GridRowGapProperty[TLength] = Globals | TLength | java.lang.String
-  type GridRowProperty = Globals | csstypeLib.GridLine | java.lang.String
-  type GridRowStartProperty = Globals | csstypeLib.GridLine
+  type GridRowProperty = Globals | GridLine | java.lang.String
+  type GridRowStartProperty = Globals | GridLine
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.none
@@ -894,7 +1042,7 @@ package object csstypeMod {
   type GridTemplateAreasProperty = _GridTemplateAreasProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.TrackBreadth[TLength]
+    - TrackBreadth[TLength]
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
@@ -907,7 +1055,7 @@ package object csstypeMod {
   type GridTemplateProperty = _GridTemplateProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.TrackBreadth[TLength]
+    - TrackBreadth[TLength]
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
@@ -994,8 +1142,8 @@ package object csstypeMod {
   type InsetInlineStartProperty[TLength] = _InsetInlineStartProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.ContentDistribution
-    - csstypeLib.ContentPosition
+    - ContentDistribution
+    - ContentPosition
     - csstypeLib.csstypeLibStrings.left
     - csstypeLib.csstypeLibStrings.normal
     - csstypeLib.csstypeLibStrings.right
@@ -1004,7 +1152,7 @@ package object csstypeMod {
   type JustifyContentProperty = _JustifyContentProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SelfPosition
+    - SelfPosition
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.left
     - csstypeLib.csstypeLibStrings.legacy
@@ -1016,7 +1164,7 @@ package object csstypeMod {
   type JustifyItemsProperty = _JustifyItemsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SelfPosition
+    - SelfPosition
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.left
@@ -1041,7 +1189,7 @@ package object csstypeMod {
   type LetterSpacingProperty[TLength] = _LetterSpacingProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.currentColor
   */
   type LightingColorProperty = _LightingColorProperty | java.lang.String
@@ -1060,6 +1208,13 @@ package object csstypeMod {
   */
   type LineHeightProperty[TLength] = _LineHeightProperty[TLength] | TLength | java.lang.String | scala.Double
   type LineHeightStepProperty[TLength] = Globals | TLength
+  /* Rewritten from type alias, can be one of: 
+    - TLength
+    - csstypeLib.csstypeLibStrings.medium
+    - csstypeLib.csstypeLibStrings.thick
+    - csstypeLib.csstypeLibStrings.thin
+  */
+  type LineWidth[TLength] = _LineWidth[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.none
@@ -1221,14 +1376,14 @@ package object csstypeMod {
   type MaskBorderWidthProperty[TLength] = _MaskBorderWidthProperty[TLength] | TLength | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.GeometryBox
+    - GeometryBox
     - csstypeLib.csstypeLibStrings.`no-clip`
     - java.lang.String
   */
   type MaskClipProperty = _MaskClipProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.CompositingOperator
+    - CompositingOperator
     - java.lang.String
   */
   type MaskCompositeProperty = _MaskCompositeProperty | java.lang.String
@@ -1239,38 +1394,49 @@ package object csstypeMod {
   */
   type MaskImageProperty = _MaskImageProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - Position[TLength]
+    - RepeatStyle
+    - GeometryBox
+    - CompositingOperator
+    - MaskingMode
+    - csstypeLib.csstypeLibStrings.`no-clip`
+    - csstypeLib.csstypeLibStrings.none
+    - java.lang.String
+  */
+  type MaskLayer[TLength] = _MaskLayer[TLength] | java.lang.String | TLength
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.MaskingMode
+    - MaskingMode
     - java.lang.String
   */
   type MaskModeProperty = _MaskModeProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.GeometryBox
+    - GeometryBox
     - java.lang.String
   */
   type MaskOriginProperty = _MaskOriginProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
     - java.lang.String
   */
   type MaskPositionProperty[TLength] = _MaskPositionProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.MaskLayer[TLength]
+    - MaskLayer[TLength]
     - java.lang.String
   */
   type MaskProperty[TLength] = _MaskProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.RepeatStyle
+    - RepeatStyle
     - java.lang.String
   */
   type MaskRepeatProperty = _MaskRepeatProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.BgSize[TLength]
+    - BgSize[TLength]
     - java.lang.String
   */
   type MaskSizeProperty[TLength] = _MaskSizeProperty[TLength] | java.lang.String | TLength
@@ -1376,28 +1542,28 @@ package object csstypeMod {
   type MozBindingProperty = _MozBindingProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type MozBorderBottomColorsProperty = _MozBorderBottomColorsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type MozBorderLeftColorsProperty = _MozBorderLeftColorsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type MozBorderRightColorsProperty = _MozBorderRightColorsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
@@ -1473,74 +1639,74 @@ package object csstypeMod {
   type MsScrollLimitYMinProperty[TLength] = Globals | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbar3dlightColorProperty = _MsScrollbar3dlightColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarArrowColorProperty = _MsScrollbarArrowColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarBaseColorProperty = _MsScrollbarBaseColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarDarkshadowColorProperty = _MsScrollbarDarkshadowColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarFaceColorProperty = _MsScrollbarFaceColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarHighlightColorProperty = _MsScrollbarHighlightColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarShadowColorProperty = _MsScrollbarShadowColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type MsScrollbarTrackColorProperty = _MsScrollbarTrackColorProperty | java.lang.String
   type MsWrapMarginProperty[TLength] = Globals | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
   */
   type ObjectPositionProperty[TLength] = _ObjectPositionProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
     - csstypeLib.csstypeLibStrings.auto
   */
   type OffsetAnchorProperty[TLength] = _OffsetAnchorProperty[TLength] | TLength | java.lang.String
   type OffsetDistanceProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.GeometryBox
+    - GeometryBox
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type OffsetPathProperty = _OffsetPathProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
     - csstypeLib.csstypeLibStrings.auto
   */
   type OffsetPositionProperty[TLength] = _OffsetPositionProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
-    - csstypeLib.GeometryBox
+    - Position[TLength]
+    - GeometryBox
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
@@ -1555,16 +1721,16 @@ package object csstypeMod {
   type OffsetRotateProperty = _OffsetRotateProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.invert
   */
   type OutlineColorProperty = _OutlineColorProperty | java.lang.String
   type OutlineOffsetProperty[TLength] = Globals | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
-    - csstypeLib.LineStyle
-    - csstypeLib.LineWidth[TLength]
+    - Color
+    - LineStyle
+    - LineWidth[TLength]
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.invert
     - java.lang.String
@@ -1572,14 +1738,14 @@ package object csstypeMod {
   type OutlineProperty[TLength] = _OutlineProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineStyle
+    - LineStyle
     - csstypeLib.csstypeLibStrings.auto
     - java.lang.String
   */
   type OutlineStyleProperty = _OutlineStyleProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
   */
   type OutlineWidthProperty[TLength] = _OutlineWidthProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
@@ -1631,6 +1797,23 @@ package object csstypeMod {
   type PaddingProperty[TLength] = Globals | TLength | java.lang.String
   type PaddingRightProperty[TLength] = Globals | TLength | java.lang.String
   type PaddingTopProperty[TLength] = Globals | TLength | java.lang.String
+  type PageBleedProperty[TLength] = TLength | csstypeLib.csstypeLibStrings.auto
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.crop
+    - csstypeLib.csstypeLibStrings.cross
+    - csstypeLib.csstypeLibStrings.none
+    - java.lang.String
+  */
+  type PageMarksProperty = _PageMarksProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Color
+    - csstypeLib.csstypeLibStrings.child
+    - csstypeLib.csstypeLibStrings.`context-fill`
+    - csstypeLib.csstypeLibStrings.`context-stroke`
+    - csstypeLib.csstypeLibStrings.none
+    - java.lang.String
+  */
+  type Paint = _Paint | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.fill
@@ -1642,7 +1825,7 @@ package object csstypeMod {
   type PaintOrderProperty = _PaintOrderProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
   */
   type PerspectiveOriginProperty[TLength] = _PerspectiveOriginProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -1653,8 +1836,8 @@ package object csstypeMod {
   type PerspectiveProperty[TLength] = _PerspectiveProperty[TLength] | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.ContentDistribution
-    - csstypeLib.ContentPosition
+    - ContentDistribution
+    - ContentPosition
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.normal
     - java.lang.String
@@ -1662,7 +1845,7 @@ package object csstypeMod {
   type PlaceContentProperty = _PlaceContentProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SelfPosition
+    - SelfPosition
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.normal
     - csstypeLib.csstypeLibStrings.stretch
@@ -1671,7 +1854,7 @@ package object csstypeMod {
   type PlaceItemsProperty = _PlaceItemsProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SelfPosition
+    - SelfPosition
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.baseline
     - csstypeLib.csstypeLibStrings.normal
@@ -1680,11 +1863,31 @@ package object csstypeMod {
   */
   type PlaceSelfProperty = _PlaceSelfProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - TLength
+    - csstypeLib.csstypeLibStrings.bottom
+    - csstypeLib.csstypeLibStrings.center
+    - csstypeLib.csstypeLibStrings.left
+    - csstypeLib.csstypeLibStrings.right
+    - csstypeLib.csstypeLibStrings.top
+    - java.lang.String
+  */
+  type Position[TLength] = _Position[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type QuotesProperty = _QuotesProperty | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.`no-repeat`
+    - csstypeLib.csstypeLibStrings.repeat
+    - csstypeLib.csstypeLibStrings.`repeat-x`
+    - csstypeLib.csstypeLibStrings.`repeat-y`
+    - csstypeLib.csstypeLibStrings.round
+    - csstypeLib.csstypeLibStrings.space
+    - java.lang.String
+  */
+  type RepeatStyle = _RepeatStyle | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
@@ -1850,14 +2053,14 @@ package object csstypeMod {
   type ScrollSnapAlignProperty = _ScrollSnapAlignProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type ScrollSnapCoordinateProperty[TLength] = _ScrollSnapCoordinateProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
   */
   type ScrollSnapDestinationProperty[TLength] = _ScrollSnapDestinationProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -1880,7 +2083,7 @@ package object csstypeMod {
   type ScrollSnapTypeProperty = _ScrollSnapTypeProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.dark
     - csstypeLib.csstypeLibStrings.light
@@ -1889,28 +2092,60 @@ package object csstypeMod {
   type ShapeMarginProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Box
+    - Box
     - csstypeLib.csstypeLibStrings.`margin-box`
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
   */
   type ShapeOutsideProperty = _ShapeOutsideProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - SingleTimingFunction
+    - SingleAnimationDirection
+    - SingleAnimationFillMode
+    - csstypeLib.csstypeLibStrings.infinite
+    - csstypeLib.csstypeLibStrings.none
+    - csstypeLib.csstypeLibStrings.paused
+    - csstypeLib.csstypeLibStrings.running
+    - java.lang.String
+    - scala.Double
+  */
+  type SingleAnimation = _SingleAnimation | java.lang.String | scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - CubicBezierTimingFunction
+    - StepTimingFunction
+    - csstypeLib.csstypeLibStrings.linear
+    - java.lang.String
+  */
+  type SingleTimingFunction = _SingleTimingFunction | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - SingleTimingFunction
+    - csstypeLib.csstypeLibStrings.all
+    - csstypeLib.csstypeLibStrings.none
+    - java.lang.String
+  */
+  type SingleTransition = _SingleTransition | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - csstypeLib.csstypeLibStrings.`step-end`
+    - csstypeLib.csstypeLibStrings.`step-start`
+    - java.lang.String
+  */
+  type StepTimingFunction = _StepTimingFunction | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.currentColor
   */
   type StopColorProperty = _StopColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Dasharray[TLength]
+    - Dasharray[TLength]
     - csstypeLib.csstypeLibStrings.none
   */
-  type StrokeDasharrayProperty[TLength] = _StrokeDasharrayProperty[TLength] | csstypeLib.Dasharray[TLength]
+  type StrokeDasharrayProperty[TLength] = _StrokeDasharrayProperty[TLength] | Dasharray[TLength]
   type StrokeDashoffsetProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Paint
+    - Paint
   */
   type StrokeProperty = _StrokeProperty | java.lang.String
   type StrokeWidthProperty[TLength] = Globals | TLength | java.lang.String
@@ -1925,7 +2160,7 @@ package object csstypeMod {
   type TextCombineUprightProperty = _TextCombineUprightProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type TextDecorationColorProperty = _TextDecorationColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -1940,7 +2175,7 @@ package object csstypeMod {
   type TextDecorationLineProperty = _TextDecorationLineProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.blink
     - csstypeLib.csstypeLibStrings.dashed
     - csstypeLib.csstypeLibStrings.dotted
@@ -1968,12 +2203,12 @@ package object csstypeMod {
   type TextDecorationSkipProperty = _TextDecorationSkipProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type TextEmphasisColorProperty = _TextEmphasisColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - csstypeLib.csstypeLibStrings.circle
     - csstypeLib.csstypeLibStrings.dot
     - csstypeLib.csstypeLibStrings.`double-circle`
@@ -2053,6 +2288,14 @@ package object csstypeMod {
   */
   type TouchActionProperty = _TouchActionProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - csstypeLib.csstypeLibStrings.`max-content`
+    - csstypeLib.csstypeLibStrings.`min-content`
+    - java.lang.String
+  */
+  type TrackBreadth[TLength] = _TrackBreadth[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
     - csstypeLib.csstypeLibStrings.bottom
@@ -2071,7 +2314,7 @@ package object csstypeMod {
   type TransformProperty = _TransformProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SingleTransition
+    - SingleTransition
     - java.lang.String
   */
   type TransitionProperty = _TransitionProperty | java.lang.String
@@ -2084,7 +2327,7 @@ package object csstypeMod {
   type TransitionPropertyProperty = _TransitionPropertyProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.SingleTimingFunction
+    - SingleTimingFunction
     - java.lang.String
   */
   type TransitionTimingFunctionProperty = _TransitionTimingFunctionProperty | java.lang.String
@@ -2109,28 +2352,38 @@ package object csstypeMod {
     - java.lang.String
   */
   type VerticalAlignProperty[TLength] = _VerticalAlignProperty[TLength] | TLength | java.lang.String
+  type ViewportHeightProperty[TLength] = ViewportLength[TLength] | java.lang.String
+  type ViewportLength[TLength] = TLength | csstypeLib.csstypeLibStrings.auto | java.lang.String
+  type ViewportMaxHeightProperty[TLength] = ViewportLength[TLength]
+  type ViewportMaxWidthProperty[TLength] = ViewportLength[TLength]
+  type ViewportMaxZoomProperty = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+  type ViewportMinHeightProperty[TLength] = ViewportLength[TLength]
+  type ViewportMinWidthProperty[TLength] = ViewportLength[TLength]
+  type ViewportMinZoomProperty = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+  type ViewportWidthProperty[TLength] = ViewportLength[TLength] | java.lang.String
+  type ViewportZoomProperty = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type WebkitBorderBeforeColorProperty = _WebkitBorderBeforeColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
-    - csstypeLib.LineStyle
-    - csstypeLib.Color
+    - LineWidth[TLength]
+    - LineStyle
+    - Color
     - java.lang.String
   */
   type WebkitBorderBeforeProperty[TLength] = _WebkitBorderBeforeProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineStyle
+    - LineStyle
     - java.lang.String
   */
   type WebkitBorderBeforeStyleProperty = _WebkitBorderBeforeStyleProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.LineWidth[TLength]
+    - LineWidth[TLength]
     - java.lang.String
   */
   type WebkitBorderBeforeWidthProperty[TLength] = _WebkitBorderBeforeWidthProperty[TLength] | java.lang.String | TLength
@@ -2152,13 +2405,13 @@ package object csstypeMod {
   type WebkitLineClampProperty = _WebkitLineClampProperty | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Attachment
+    - Attachment
     - java.lang.String
   */
   type WebkitMaskAttachmentProperty = _WebkitMaskAttachmentProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Box
+    - Box
     - csstypeLib.csstypeLibStrings.border
     - csstypeLib.csstypeLibStrings.content
     - csstypeLib.csstypeLibStrings.padding
@@ -2168,7 +2421,7 @@ package object csstypeMod {
   type WebkitMaskClipProperty = _WebkitMaskClipProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.CompositeStyle
+    - CompositeStyle
     - java.lang.String
   */
   type WebkitMaskCompositeProperty = _WebkitMaskCompositeProperty | java.lang.String
@@ -2180,7 +2433,7 @@ package object csstypeMod {
   type WebkitMaskImageProperty = _WebkitMaskImageProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Box
+    - Box
     - csstypeLib.csstypeLibStrings.border
     - csstypeLib.csstypeLibStrings.content
     - csstypeLib.csstypeLibStrings.padding
@@ -2189,7 +2442,7 @@ package object csstypeMod {
   type WebkitMaskOriginProperty = _WebkitMaskOriginProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
+    - Position[TLength]
     - java.lang.String
   */
   type WebkitMaskPositionProperty[TLength] = _WebkitMaskPositionProperty[TLength] | java.lang.String | TLength
@@ -2213,9 +2466,9 @@ package object csstypeMod {
   type WebkitMaskPositionYProperty[TLength] = _WebkitMaskPositionYProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Position[TLength]
-    - csstypeLib.RepeatStyle
-    - csstypeLib.Box
+    - Position[TLength]
+    - RepeatStyle
+    - Box
     - csstypeLib.csstypeLibStrings.border
     - csstypeLib.csstypeLibStrings.content
     - csstypeLib.csstypeLibStrings.none
@@ -2226,34 +2479,34 @@ package object csstypeMod {
   type WebkitMaskProperty[TLength] = _WebkitMaskProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.RepeatStyle
+    - RepeatStyle
     - java.lang.String
   */
   type WebkitMaskRepeatProperty = _WebkitMaskRepeatProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.BgSize[TLength]
+    - BgSize[TLength]
     - java.lang.String
   */
   type WebkitMaskSizeProperty[TLength] = _WebkitMaskSizeProperty[TLength] | java.lang.String | TLength
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type WebkitTapHighlightColorProperty = _WebkitTapHighlightColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type WebkitTextFillColorProperty = _WebkitTextFillColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
   */
   type WebkitTextStrokeColorProperty = _WebkitTextStrokeColorProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.Color
+    - Color
     - TLength
     - java.lang.String
   */
@@ -2281,7 +2534,7 @@ package object csstypeMod {
   type WidthProperty[TLength] = _WidthProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - csstypeLib.AnimateableFeature
+    - AnimateableFeature
     - csstypeLib.csstypeLibStrings.auto
     - java.lang.String
   */

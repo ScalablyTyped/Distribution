@@ -98,6 +98,11 @@ class SurveyModel ()
     */
   var data: js.Any = js.native
   /**
+    * Survey description. It shows under survey title
+    * @see title
+    */
+  var description: java.lang.String = js.native
+  /**
     * Returns the text that renders when there is no any visible page and question.
     */
   val emptySurveyText: java.lang.String = js.native
@@ -193,6 +198,7 @@ class SurveyModel ()
   val locCompleteText: LocalizableString = js.native
   val locCompletedBeforeHtml: LocalizableString = js.native
   val locCompletedHtml: LocalizableString = js.native
+  val locDescription: LocalizableString = js.native
   val locLoadingHtml: LocalizableString = js.native
   val locPageNextText: LocalizableString = js.native
   val locPagePrevText: LocalizableString = js.native
@@ -914,6 +920,7 @@ class SurveyModel ()
   val timerInfoText: java.lang.String = js.native
   /**
     * Survey title.
+    * @see description
     */
   var title: java.lang.String = js.native
   /**

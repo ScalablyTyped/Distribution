@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PageBreak")
 @js.native
@@ -17,8 +16,7 @@ class PageBreak ()
     *
     * Represents the column index for the page break
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val columnIndex: scala.Double = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -28,24 +26,21 @@ class PageBreak ()
     *
     * Represents the row index for the page break
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val rowIndex: scala.Double = js.native
   /**
     *
     * Deletes a page break object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def delete(): scala.Unit = js.native
   /**
     *
     * Gets the first cell after the page break.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getCellAfterBreak(): Range = js.native
   /**

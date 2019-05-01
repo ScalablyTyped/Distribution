@@ -9,40 +9,35 @@ import scala.scalajs.js.annotation._
   *
   * Provides information about the table that raised the OnAdded event.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait TableAddedEventArgs extends js.Object {
   /**
     *
     * Gets the source of the event. See Excel.EventSource for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote
   /**
     *
     * Gets the id of the table that is added.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var tableId: java.lang.String
   /**
     *
     * Gets the type of the event. See Excel.EventType for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableAdded
   /**
     *
     * Gets the id of the worksheet in which the table is added.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var worksheetId: java.lang.String
 }

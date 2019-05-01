@@ -17,7 +17,7 @@ trait DescribePortfolioShareStatusOutput extends js.Object {
   /**
     * The token for the portfolio share operation. For example, share-6v24abcdefghi.
     */
-  var PortfolioShareToken: js.UndefOr[PortfolioShareToken] = js.undefined
+  var PortfolioShareToken: js.UndefOr[Id] = js.undefined
   /**
     * Information about the portfolio share operation.
     */
@@ -33,7 +33,7 @@ object DescribePortfolioShareStatusOutput {
   def apply(
     OrganizationNodeValue: OrganizationNodeValue = null,
     PortfolioId: Id = null,
-    PortfolioShareToken: PortfolioShareToken = null,
+    PortfolioShareToken: Id = null,
     ShareDetails: ShareDetails = null,
     Status: ShareStatus = null
   ): DescribePortfolioShareStatusOutput = {

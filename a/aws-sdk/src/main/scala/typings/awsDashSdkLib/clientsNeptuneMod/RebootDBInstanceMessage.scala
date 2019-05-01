@@ -11,7 +11,7 @@ trait RebootDBInstanceMessage extends js.Object {
     */
   var DBInstanceIdentifier: String
   /**
-    *  When true, the reboot is conducted through a MultiAZ failover.  Constraint: You can't specify true if the instance is not configured for MultiAZ.
+    *  When true, the reboot is conducted through a MultiAZ failover. Constraint: You can't specify true if the instance is not configured for MultiAZ.
     */
   var ForceFailover: js.UndefOr[BooleanOptional] = js.undefined
 }

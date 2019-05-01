@@ -11,17 +11,11 @@ trait CounterStyleFallback extends js.Object {
   var negative: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var pad: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var prefix: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var range: js.UndefOr[
-    csstypeLib.CounterStyleRangeProperty | js.Array[csstypeLib.CounterStyleRangeProperty]
-  ] = js.undefined
-  var speakAs: js.UndefOr[
-    csstypeLib.CounterStyleSpeakAsProperty | js.Array[csstypeLib.CounterStyleSpeakAsProperty]
-  ] = js.undefined
+  var range: js.UndefOr[CounterStyleRangeProperty | js.Array[CounterStyleRangeProperty]] = js.undefined
+  var speakAs: js.UndefOr[CounterStyleSpeakAsProperty | js.Array[CounterStyleSpeakAsProperty]] = js.undefined
   var suffix: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var symbols: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var system: js.UndefOr[
-    csstypeLib.CounterStyleSystemProperty | js.Array[csstypeLib.CounterStyleSystemProperty]
-  ] = js.undefined
+  var system: js.UndefOr[CounterStyleSystemProperty | js.Array[CounterStyleSystemProperty]] = js.undefined
 }
 
 object CounterStyleFallback {
@@ -32,11 +26,11 @@ object CounterStyleFallback {
     negative: java.lang.String | js.Array[java.lang.String] = null,
     pad: java.lang.String | js.Array[java.lang.String] = null,
     prefix: java.lang.String | js.Array[java.lang.String] = null,
-    range: csstypeLib.CounterStyleRangeProperty | js.Array[csstypeLib.CounterStyleRangeProperty] = null,
-    speakAs: csstypeLib.CounterStyleSpeakAsProperty | js.Array[csstypeLib.CounterStyleSpeakAsProperty] = null,
+    range: CounterStyleRangeProperty | js.Array[CounterStyleRangeProperty] = null,
+    speakAs: CounterStyleSpeakAsProperty | js.Array[CounterStyleSpeakAsProperty] = null,
     suffix: java.lang.String | js.Array[java.lang.String] = null,
     symbols: java.lang.String | js.Array[java.lang.String] = null,
-    system: csstypeLib.CounterStyleSystemProperty | js.Array[csstypeLib.CounterStyleSystemProperty] = null
+    system: CounterStyleSystemProperty | js.Array[CounterStyleSystemProperty] = null
   ): CounterStyleFallback = {
     val __obj = js.Dynamic.literal()
     if (additiveSymbols != null) __obj.updateDynamic("additiveSymbols")(additiveSymbols.asInstanceOf[js.Any])

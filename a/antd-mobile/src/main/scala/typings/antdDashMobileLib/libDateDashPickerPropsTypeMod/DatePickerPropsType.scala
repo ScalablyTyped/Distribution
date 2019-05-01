@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DatePickerPropsType extends js.Object {
-  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dismissText: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var extra: js.UndefOr[java.lang.String] = js.undefined
@@ -30,7 +29,6 @@ trait DatePickerPropsType extends js.Object {
 object DatePickerPropsType {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dismissText: reactLib.reactMod.ReactNode = null,
     extra: java.lang.String = null,
@@ -49,7 +47,6 @@ object DatePickerPropsType {
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): DatePickerPropsType = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra)

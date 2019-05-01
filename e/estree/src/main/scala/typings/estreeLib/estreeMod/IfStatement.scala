@@ -10,7 +10,7 @@ trait IfStatement
      with Statement {
   var alternate: js.UndefOr[Statement | scala.Null] = js.undefined
   var consequent: Statement
-  var test: estreeLib.Expression
+  var test: Expression
   @JSName("type")
   var type_IfStatement: estreeLib.estreeLibStrings.IfStatement
 }
@@ -19,7 +19,7 @@ object IfStatement {
   @scala.inline
   def apply(
     consequent: Statement,
-    test: estreeLib.Expression,
+    test: Expression,
     `type`: estreeLib.estreeLibStrings.IfStatement,
     alternate: Statement = null,
     leadingComments: js.Array[Comment] = null,

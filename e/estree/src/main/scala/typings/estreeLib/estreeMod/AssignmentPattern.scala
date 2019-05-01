@@ -9,7 +9,7 @@ trait AssignmentPattern
   extends BaseNode
      with Pattern {
   var left: Pattern
-  var right: estreeLib.Expression
+  var right: Expression
   @JSName("type")
   var type_AssignmentPattern: estreeLib.estreeLibStrings.AssignmentPattern
 }
@@ -18,7 +18,7 @@ object AssignmentPattern {
   @scala.inline
   def apply(
     left: Pattern,
-    right: estreeLib.Expression,
+    right: Expression,
     `type`: estreeLib.estreeLibStrings.AssignmentPattern,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

@@ -16,7 +16,7 @@ object ^ extends js.Object {
     * @param {FetchCallback} callback Callback function
     * @returns {undefined}
     */
-  def apply(filename: java.lang.String, options: FetchOptions, callback: atProtobufjsFetchLib.FetchCallback): scala.Unit = js.native
+  def apply(filename: java.lang.String, options: FetchOptions, callback: FetchCallback): scala.Unit = js.native
   /**
     * Fetches the contents of a file.
     * @name util.fetch
@@ -36,7 +36,7 @@ object ^ extends js.Object {
     * @returns {undefined}
     * @variation 2
     */
-  def apply(path: java.lang.String, callback: atProtobufjsFetchLib.FetchCallback): scala.Unit = js.native
+  def apply(path: java.lang.String, callback: FetchCallback): scala.Unit = js.native
   def apply(path: java.lang.String, options: FetchOptions): js.Promise[java.lang.String | stdLib.Uint8Array] = js.native
 }
 

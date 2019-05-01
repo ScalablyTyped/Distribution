@@ -118,6 +118,7 @@ object ^ extends js.Object {
     ]
   ): scala.Boolean = js.native
   def tableEditing(): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
+  def tableEditing(options: TableEditingOptions): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
   def tableNodes(options: TableNodesOptions): TableNodes = js.native
   def toggleHeaderCell[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def toggleHeaderCell[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](

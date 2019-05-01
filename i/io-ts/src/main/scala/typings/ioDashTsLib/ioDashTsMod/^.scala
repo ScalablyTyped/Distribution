@@ -68,8 +68,8 @@ object ^ extends js.Object {
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */, E /* <: Mixed */](codecs: js.Tuple5[A, B, C, D, E], name: java.lang.String): IntersectionC[js.Tuple5[A, B, C, D, E]] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): KeyofC[D] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): KeyofC[D] = js.native
-  def literal[V /* <: ioDashTsLib.LiteralValue */](value: V): LiteralC[V] = js.native
-  def literal[V /* <: ioDashTsLib.LiteralValue */](value: V, name: java.lang.String): LiteralC[V] = js.native
+  def literal[V /* <: LiteralValue */](value: V): LiteralC[V] = js.native
+  def literal[V /* <: LiteralValue */](value: V, name: java.lang.String): LiteralC[V] = js.native
   def partial[P /* <: Props */](props: P): PartialC[P] = js.native
   def partial[P /* <: Props */](props: P, name: java.lang.String): PartialC[P] = js.native
   def readonly[C /* <: Mixed */](codec: C): ReadonlyC[C] = js.native

@@ -13,7 +13,7 @@ trait HttpRequestOptions extends js.Object {
   var form: js.UndefOr[js.Object] = js.undefined
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var json: js.UndefOr[js.Object | js.Array[_]] = js.undefined
-  var method: js.UndefOr[zapierDashPlatformDashCoreLib.HttpMethod] = js.undefined
+  var method: js.UndefOr[HttpMethod] = js.undefined
   var params: js.UndefOr[js.Object] = js.undefined
   var raw: js.UndefOr[scala.Boolean] = js.undefined
   var redirect: js.UndefOr[
@@ -35,7 +35,7 @@ object HttpRequestOptions {
     form: js.Object = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     json: js.Object | js.Array[_] = null,
-    method: zapierDashPlatformDashCoreLib.HttpMethod = null,
+    method: HttpMethod = null,
     params: js.Object = null,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
     redirect: zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.manual | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.error | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.follow = null,

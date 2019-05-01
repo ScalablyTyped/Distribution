@@ -86,16 +86,34 @@ trait Anon_CachedAssetUrl
   	 * @param {string} [method="GET"] - The HTTP method to match the Route against.
   	 * @returns {Route} The generated `Route` (Useful for unregistering).
   	 */
-  def registerRoute(capture: java.lang.String, handler: HandlerCallback): workboxDashSwLib.workboxDashSwMod.Route = js.native
-  def registerRoute(capture: java.lang.String, handler: HandlerCallback, method: java.lang.String): workboxDashSwLib.workboxDashSwMod.Route = js.native
-  def registerRoute(capture: stdLib.RegExp, handler: HandlerCallback): workboxDashSwLib.workboxDashSwMod.Route = js.native
-  def registerRoute(capture: stdLib.RegExp, handler: HandlerCallback, method: java.lang.String): workboxDashSwLib.workboxDashSwMod.Route = js.native
-  def registerRoute(capture: MatchCallback, handler: HandlerCallback): workboxDashSwLib.workboxDashSwMod.Route = js.native
-  def registerRoute(capture: MatchCallback, handler: HandlerCallback, method: java.lang.String): workboxDashSwLib.workboxDashSwMod.Route = js.native
-  def registerRoute(capture: workboxDashSwLib.workboxDashSwMod.Route, handler: HandlerCallback): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(capture: java.lang.String, handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(
+    capture: java.lang.String,
+    handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback,
+    method: java.lang.String
+  ): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(capture: stdLib.RegExp, handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(
+    capture: stdLib.RegExp,
+    handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback,
+    method: java.lang.String
+  ): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(
+    capture: workboxDashSwLib.workboxDashSwMod.MatchCallback,
+    handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback
+  ): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(
+    capture: workboxDashSwLib.workboxDashSwMod.MatchCallback,
+    handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback,
+    method: java.lang.String
+  ): workboxDashSwLib.workboxDashSwMod.Route = js.native
   def registerRoute(
     capture: workboxDashSwLib.workboxDashSwMod.Route,
-    handler: HandlerCallback,
+    handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback
+  ): workboxDashSwLib.workboxDashSwMod.Route = js.native
+  def registerRoute(
+    capture: workboxDashSwLib.workboxDashSwMod.Route,
+    handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback,
     method: java.lang.String
   ): workboxDashSwLib.workboxDashSwMod.Route = js.native
   /**
@@ -103,7 +121,7 @@ trait Anon_CachedAssetUrl
   	 * will be called and given a chance to provide a response.
   	 * @param {HandlerCallback} handler - A callback function that returns a Promise resulting in a Response.
   	 */
-  def setCatchHandler(handler: HandlerCallback): scala.Unit = js.native
+  def setCatchHandler(handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback): scala.Unit = js.native
   /**
   	 * Define a default `handler` that's called when no routes explicitly
   	 * match the incoming request.
@@ -112,6 +130,6 @@ trait Anon_CachedAssetUrl
   	 * network as if there were no service worker present.
   	 * @param {HandlerCallback} handler - A callback function that returns a Promise resulting in a Response.
   	 */
-  def setDefaultHandler(handler: HandlerCallback): js.Promise[stdLib.Response] = js.native
+  def setDefaultHandler(handler: workboxDashSwLib.workboxDashSwMod.HandlerCallback): js.Promise[stdLib.Response] = js.native
 }
 

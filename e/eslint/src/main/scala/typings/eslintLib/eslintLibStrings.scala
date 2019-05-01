@@ -7,13 +7,25 @@ import scala.scalajs.js.annotation._
 
 object eslintLibStrings {
   @js.native
+  sealed trait ArrayExpression extends js.Object
+  
+  @js.native
   sealed trait ArrayPattern extends js.Object
   
   @js.native
   sealed trait ArrowFunctionExpression extends js.Object
   
   @js.native
+  sealed trait AssignmentExpression extends js.Object
+  
+  @js.native
   sealed trait AssignmentPattern extends js.Object
+  
+  @js.native
+  sealed trait AwaitExpression extends js.Object
+  
+  @js.native
+  sealed trait BinaryExpression extends js.Object
   
   @js.native
   sealed trait BlockStatement extends js.Object
@@ -24,6 +36,9 @@ object eslintLibStrings {
   
   @js.native
   sealed trait BreakStatement extends js.Object
+  
+  @js.native
+  sealed trait CallExpression extends js.Object
   
   @js.native
   sealed trait CatchClause extends js.Object
@@ -39,6 +54,9 @@ object eslintLibStrings {
   
   @js.native
   sealed trait ClassName extends js.Object
+  
+  @js.native
+  sealed trait ConditionalExpression extends js.Object
   
   @js.native
   sealed trait ContinueStatement extends js.Object
@@ -129,10 +147,19 @@ object eslintLibStrings {
   sealed trait Literal extends js.Object
   
   @js.native
+  sealed trait LogicalExpression extends js.Object
+  
+  @js.native
   sealed trait MemberExpression extends js.Object
   
   @js.native
+  sealed trait MetaProperty extends js.Object
+  
+  @js.native
   sealed trait MethodDefinition extends js.Object
+  
+  @js.native
+  sealed trait NewExpression extends js.Object
   
   @js.native
   sealed trait NodeListener extends js.Object
@@ -144,6 +171,9 @@ object eslintLibStrings {
   @js.native
   sealed trait Numeric
     extends eslintLib.eslintMod.ASTNs.TokenType
+  
+  @js.native
+  sealed trait ObjectExpression extends js.Object
   
   @js.native
   sealed trait ObjectPattern extends js.Object
@@ -172,6 +202,9 @@ object eslintLibStrings {
   sealed trait ReturnStatement extends js.Object
   
   @js.native
+  sealed trait SequenceExpression extends js.Object
+  
+  @js.native
   sealed trait SpreadElement extends js.Object
   
   @js.native
@@ -191,13 +224,28 @@ object eslintLibStrings {
   sealed trait TDZ extends js.Object
   
   @js.native
+  sealed trait TaggedTemplateExpression extends js.Object
+  
+  @js.native
   sealed trait TemplateElement extends js.Object
+  
+  @js.native
+  sealed trait TemplateLiteral extends js.Object
+  
+  @js.native
+  sealed trait ThisExpression extends js.Object
   
   @js.native
   sealed trait ThrowStatement extends js.Object
   
   @js.native
   sealed trait TryStatement extends js.Object
+  
+  @js.native
+  sealed trait UnaryExpression extends js.Object
+  
+  @js.native
+  sealed trait UpdateExpression extends js.Object
   
   @js.native
   sealed trait Variable extends js.Object
@@ -213,6 +261,9 @@ object eslintLibStrings {
   
   @js.native
   sealed trait WithStatement extends js.Object
+  
+  @js.native
+  sealed trait YieldExpression extends js.Object
   
   @js.native
   sealed trait block extends js.Object
@@ -266,17 +317,27 @@ object eslintLibStrings {
   sealed trait `with` extends js.Object
   
   @scala.inline
+  def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
+  @scala.inline
   def ArrayPattern: ArrayPattern = "ArrayPattern".asInstanceOf[ArrayPattern]
   @scala.inline
   def ArrowFunctionExpression: ArrowFunctionExpression = "ArrowFunctionExpression".asInstanceOf[ArrowFunctionExpression]
   @scala.inline
+  def AssignmentExpression: AssignmentExpression = "AssignmentExpression".asInstanceOf[AssignmentExpression]
+  @scala.inline
   def AssignmentPattern: AssignmentPattern = "AssignmentPattern".asInstanceOf[AssignmentPattern]
+  @scala.inline
+  def AwaitExpression: AwaitExpression = "AwaitExpression".asInstanceOf[AwaitExpression]
+  @scala.inline
+  def BinaryExpression: BinaryExpression = "BinaryExpression".asInstanceOf[BinaryExpression]
   @scala.inline
   def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
   @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
   @scala.inline
   def BreakStatement: BreakStatement = "BreakStatement".asInstanceOf[BreakStatement]
+  @scala.inline
+  def CallExpression: CallExpression = "CallExpression".asInstanceOf[CallExpression]
   @scala.inline
   def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
   @scala.inline
@@ -287,6 +348,8 @@ object eslintLibStrings {
   def ClassExpression: ClassExpression = "ClassExpression".asInstanceOf[ClassExpression]
   @scala.inline
   def ClassName: ClassName = "ClassName".asInstanceOf[ClassName]
+  @scala.inline
+  def ConditionalExpression: ConditionalExpression = "ConditionalExpression".asInstanceOf[ConditionalExpression]
   @scala.inline
   def ContinueStatement: ContinueStatement = "ContinueStatement".asInstanceOf[ContinueStatement]
   @scala.inline
@@ -344,15 +407,23 @@ object eslintLibStrings {
   @scala.inline
   def Literal: Literal = "Literal".asInstanceOf[Literal]
   @scala.inline
+  def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
+  @scala.inline
   def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
   @scala.inline
+  def MetaProperty: MetaProperty = "MetaProperty".asInstanceOf[MetaProperty]
+  @scala.inline
   def MethodDefinition: MethodDefinition = "MethodDefinition".asInstanceOf[MethodDefinition]
+  @scala.inline
+  def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
   @scala.inline
   def NodeListener: NodeListener = "NodeListener".asInstanceOf[NodeListener]
   @scala.inline
   def Null: Null = "Null".asInstanceOf[Null]
   @scala.inline
   def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
+  @scala.inline
+  def ObjectExpression: ObjectExpression = "ObjectExpression".asInstanceOf[ObjectExpression]
   @scala.inline
   def ObjectPattern: ObjectPattern = "ObjectPattern".asInstanceOf[ObjectPattern]
   @scala.inline
@@ -370,6 +441,8 @@ object eslintLibStrings {
   @scala.inline
   def ReturnStatement: ReturnStatement = "ReturnStatement".asInstanceOf[ReturnStatement]
   @scala.inline
+  def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
+  @scala.inline
   def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
@@ -382,11 +455,21 @@ object eslintLibStrings {
   @scala.inline
   def TDZ: TDZ = "TDZ".asInstanceOf[TDZ]
   @scala.inline
+  def TaggedTemplateExpression: TaggedTemplateExpression = "TaggedTemplateExpression".asInstanceOf[TaggedTemplateExpression]
+  @scala.inline
   def TemplateElement: TemplateElement = "TemplateElement".asInstanceOf[TemplateElement]
+  @scala.inline
+  def TemplateLiteral: TemplateLiteral = "TemplateLiteral".asInstanceOf[TemplateLiteral]
+  @scala.inline
+  def ThisExpression: ThisExpression = "ThisExpression".asInstanceOf[ThisExpression]
   @scala.inline
   def ThrowStatement: ThrowStatement = "ThrowStatement".asInstanceOf[ThrowStatement]
   @scala.inline
   def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
+  @scala.inline
+  def UnaryExpression: UnaryExpression = "UnaryExpression".asInstanceOf[UnaryExpression]
+  @scala.inline
+  def UpdateExpression: UpdateExpression = "UpdateExpression".asInstanceOf[UpdateExpression]
   @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
   @scala.inline
@@ -397,6 +480,8 @@ object eslintLibStrings {
   def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
   @scala.inline
   def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
+  @scala.inline
+  def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   @scala.inline

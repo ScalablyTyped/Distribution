@@ -7,31 +7,38 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFetchDashBlobLibStrings {
   @js.native
-  sealed trait DELETE extends Methods
+  sealed trait DELETE
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait GET extends Methods
+  sealed trait GET
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
-  sealed trait POST extends Methods
+  sealed trait POST
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
-  sealed trait PUT extends Methods
+  sealed trait PUT
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
-  sealed trait ascii extends Encoding
+  sealed trait ascii
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Encoding
   
   @js.native
-  sealed trait base64 extends Encoding
+  sealed trait base64
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Encoding
   
   @js.native
   sealed trait blob extends js.Object
   
   @js.native
-  sealed trait delete extends Methods
+  sealed trait delete
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
   sealed trait directory extends js.Object
@@ -40,7 +47,8 @@ object reactDashNativeDashFetchDashBlobLibStrings {
   sealed trait file extends js.Object
   
   @js.native
-  sealed trait get extends Methods
+  sealed trait get
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
   sealed trait json extends js.Object
@@ -49,16 +57,19 @@ object reactDashNativeDashFetchDashBlobLibStrings {
   sealed trait path extends js.Object
   
   @js.native
-  sealed trait post extends Methods
+  sealed trait post
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
-  sealed trait put extends Methods
+  sealed trait put
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Methods
   
   @js.native
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait utf8 extends Encoding
+  sealed trait utf8
+    extends reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.Encoding
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

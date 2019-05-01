@@ -28,7 +28,7 @@ trait TransitionProps extends js.Object {
     * Styles to interpolate. Accepts array of TransitionStyle objects or interpolated function similar as for
     * <StaggeredMotion/>
     */
-  var styles: js.Array[TransitionStyle] | reactDashMotionLib.InterpolateFunction
+  var styles: js.Array[TransitionStyle] | InterpolateFunction
   /**
     * Triggers when a new element will appear
     * @param styleThatEntered
@@ -44,7 +44,7 @@ trait TransitionProps extends js.Object {
 object TransitionProps {
   @scala.inline
   def apply(
-    styles: js.Array[TransitionStyle] | reactDashMotionLib.InterpolateFunction,
+    styles: js.Array[TransitionStyle] | InterpolateFunction,
     children: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => reactLib.reactMod.ReactElement[_] = null,
     defaultStyles: js.Array[TransitionPlainStyle] = null,
     didLeave: /* styleThatLeft */ TransitionStyle => scala.Unit = null,

@@ -41,7 +41,8 @@ object mongodbLibStrings {
     extends mongodbLib.mongodbMod.ProfilingLevel
   
   @js.native
-  sealed trait available extends ReadConcernLevel
+  sealed trait available
+    extends mongodbLib.mongodbMod.ReadConcernLevel
   
   @js.native
   sealed trait date extends js.Object
@@ -50,13 +51,16 @@ object mongodbLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait linearizable extends ReadConcernLevel
+  sealed trait linearizable
+    extends mongodbLib.mongodbMod.ReadConcernLevel
   
   @js.native
-  sealed trait local extends ReadConcernLevel
+  sealed trait local
+    extends mongodbLib.mongodbMod.ReadConcernLevel
   
   @js.native
-  sealed trait majority extends ReadConcernLevel
+  sealed trait majority
+    extends mongodbLib.mongodbMod.ReadConcernLevel
   
   @js.native
   sealed trait moderate extends js.Object
@@ -70,7 +74,8 @@ object mongodbLibStrings {
     extends mongodbLib.mongodbMod.ProfilingLevel
   
   @js.native
-  sealed trait snapshot extends ReadConcernLevel
+  sealed trait snapshot
+    extends mongodbLib.mongodbMod.ReadConcernLevel
   
   @js.native
   sealed trait strict extends js.Object

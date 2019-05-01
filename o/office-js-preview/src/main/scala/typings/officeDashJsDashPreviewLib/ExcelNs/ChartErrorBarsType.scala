@@ -12,8 +12,7 @@ sealed trait ChartErrorBarsType extends js.Object
   *
   * Represents the range type for error bars.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartErrorBarsType")
 @js.native

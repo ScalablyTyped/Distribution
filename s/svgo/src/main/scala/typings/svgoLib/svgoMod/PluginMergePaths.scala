@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginMergePaths extends js.Object {
+trait PluginMergePaths extends PluginConfig {
   var mergePaths: scala.Boolean | js.Object
 }
 

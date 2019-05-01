@@ -7,97 +7,128 @@ import scala.scalajs.js.annotation._
 
 object prettyDashTimeLibStrings {
   @js.native
-  sealed trait BACKSLASHu03BCs extends Increment
+  sealed trait BACKSLASHu03BCs
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait d extends Increment
+  sealed trait d
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait day extends Increment
+  sealed trait day
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait days extends Increment
+  sealed trait days
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait h extends Increment
+  sealed trait h
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait hour extends Increment
+  sealed trait hour
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait hours extends Increment
+  sealed trait hours
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait hr extends Increment
+  sealed trait hr
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait m extends Increment
+  sealed trait m
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait micro extends Increment
+  sealed trait micro
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait microsecond extends Increment
+  sealed trait microsecond
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait microseconds extends Increment
+  sealed trait microseconds
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait milli extends Increment
+  sealed trait milli
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait millisecond extends Increment
+  sealed trait millisecond
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait milliseconds extends Increment
+  sealed trait milliseconds
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait min extends Increment
+  sealed trait min
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait minute extends Increment
+  sealed trait minute
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait minutes extends Increment
+  sealed trait minutes
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait ms extends Increment
+  sealed trait ms
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait nano extends Increment
+  sealed trait nano
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait nanosecond extends Increment
+  sealed trait nanosecond
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait nanoseconds extends Increment
+  sealed trait nanoseconds
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait ns extends Increment
+  sealed trait ns
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait s extends Increment
+  sealed trait s
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait sec extends Increment
+  sealed trait sec
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait second extends Increment
+  sealed trait second
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait seconds extends Increment
+  sealed trait seconds
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait w extends Increment
+  sealed trait w
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait week extends Increment
+  sealed trait week
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait weeks extends Increment
+  sealed trait weeks
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @js.native
-  sealed trait wk extends Increment
+  sealed trait wk
+    extends prettyDashTimeLib.prettyDashTimeMod.Increment
   
   @scala.inline
   def BACKSLASHu03BCs: BACKSLASHu03BCs = "\u03BCs".asInstanceOf[BACKSLASHu03BCs]

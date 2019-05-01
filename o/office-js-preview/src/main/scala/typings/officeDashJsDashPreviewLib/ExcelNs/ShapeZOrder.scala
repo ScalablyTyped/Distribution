@@ -12,8 +12,7 @@ sealed trait ShapeZOrder extends js.Object
   *
   * Specifies where in the z-order a shape should be moved relative to other shapes.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeZOrder")
 @js.native

@@ -6,29 +6,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RadialGradientProps extends js.Object {
-  var cx: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var cy: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var fx: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var fy: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var cx: js.UndefOr[NumberProp] = js.undefined
+  var cy: js.UndefOr[NumberProp] = js.undefined
+  var fx: js.UndefOr[NumberProp] = js.undefined
+  var fy: js.UndefOr[NumberProp] = js.undefined
   var gradientUnits: js.UndefOr[Units] = js.undefined
   var id: java.lang.String
-  var r: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var rx: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var ry: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var r: js.UndefOr[NumberProp] = js.undefined
+  var rx: js.UndefOr[NumberProp] = js.undefined
+  var ry: js.UndefOr[NumberProp] = js.undefined
 }
 
 object RadialGradientProps {
   @scala.inline
   def apply(
     id: java.lang.String,
-    cx: reactDashNativeDashSvgLib.NumberProp = null,
-    cy: reactDashNativeDashSvgLib.NumberProp = null,
-    fx: reactDashNativeDashSvgLib.NumberProp = null,
-    fy: reactDashNativeDashSvgLib.NumberProp = null,
+    cx: NumberProp = null,
+    cy: NumberProp = null,
+    fx: NumberProp = null,
+    fy: NumberProp = null,
     gradientUnits: Units = null,
-    r: reactDashNativeDashSvgLib.NumberProp = null,
-    rx: reactDashNativeDashSvgLib.NumberProp = null,
-    ry: reactDashNativeDashSvgLib.NumberProp = null
+    r: NumberProp = null,
+    rx: NumberProp = null,
+    ry: NumberProp = null
   ): RadialGradientProps = {
     val __obj = js.Dynamic.literal(id = id)
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])

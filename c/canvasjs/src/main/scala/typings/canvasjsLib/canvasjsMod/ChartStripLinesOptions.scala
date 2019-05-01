@@ -93,7 +93,7 @@ trait ChartStripLinesOptions extends js.Object {
     * Sets the Dash Type for stripLine.
     * Default: solid
     */
-  var lineDashType: js.UndefOr[canvasjsLib.DashType] = js.undefined
+  var lineDashType: js.UndefOr[DashType] = js.undefined
   /**
     * Sets opacity of stripLine.
     * Default: null
@@ -143,7 +143,7 @@ object ChartStripLinesOptions {
     labelFontWeight: java.lang.String = null,
     labelFormatter: /* e */ js.UndefOr[canvasjsLib.Anon_Axis] => java.lang.String = null,
     labelPlacement: java.lang.String = null,
-    lineDashType: canvasjsLib.DashType = null,
+    lineDashType: DashType = null,
     opacity: scala.Int | scala.Double = null,
     showOnTop: js.UndefOr[scala.Boolean] = js.undefined,
     startValue: scala.Int | scala.Double = null,

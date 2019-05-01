@@ -38,6 +38,13 @@ trait ChartDataLabelsLoadOptions extends js.Object {
   var horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the format code for data labels.
     *
     * [Api set: ExcelApi 1.8]
@@ -123,6 +130,7 @@ object ChartDataLabelsLoadOptions {
     autoText: js.UndefOr[scala.Boolean] = js.undefined,
     format: ChartDataLabelFormatLoadOptions = null,
     horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     position: js.UndefOr[scala.Boolean] = js.undefined,
     separator: js.UndefOr[scala.Boolean] = js.undefined,
@@ -140,6 +148,7 @@ object ChartDataLabelsLoadOptions {
     if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText)
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
     if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator)

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait SpreadElement
   extends BaseNode
-     with _Node {
-  var argument: estreeLib.Expression
+     with Node {
+  var argument: Expression
   @JSName("type")
   var type_SpreadElement: estreeLib.estreeLibStrings.SpreadElement
 }
@@ -16,7 +16,7 @@ trait SpreadElement
 object SpreadElement {
   @scala.inline
   def apply(
-    argument: estreeLib.Expression,
+    argument: Expression,
     `type`: estreeLib.estreeLibStrings.SpreadElement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
   *
   * Represents which column properties to load, when used as part of a "range.getColumnProperties" method.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * [Api set: ExcelApi 1.9]
   */
 trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
   /**
     *
     * Specifies whether to load on the `columnHidden` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var columnHidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `columnIndex` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var columnIndex: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `format` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
   var format_ColumnPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOptions with officeDashJsDashPreviewLib.Anon_ColumnWidth] = js.undefined

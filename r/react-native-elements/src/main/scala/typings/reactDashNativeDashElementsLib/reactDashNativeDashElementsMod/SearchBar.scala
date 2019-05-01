@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "SearchBar")
 @js.native
 class SearchBar ()
-  extends reactLib.reactMod.Component[reactDashNativeDashElementsLib.SearchBarProps, js.Any, js.Any] {
+  extends reactLib.reactMod.Component[SearchBarProps, js.Any, js.Any] {
   /**
     * Only available for Android and IOS
     * call blur on the TextInput

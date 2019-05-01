@@ -21,7 +21,7 @@ trait NavigationRouteConstructor
 	 * @returns {NavigationRoute}
 	 */
 org.scalablytyped.runtime.Instantiable2[
-      /* handler */ workboxDashSwLib.HandlerCallback, 
+      /* handler */ HandlerCallback, 
       /* options */ stdLib.Partial[NavigationRouteOptions], 
       NavigationRoute
     ]

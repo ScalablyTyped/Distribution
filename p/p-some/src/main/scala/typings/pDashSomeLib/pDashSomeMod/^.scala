@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("p-some", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var AggregateError: pDashSomeLib.AggregateErrorConstructor = js.native
+  var AggregateError: AggregateErrorConstructor = js.native
   // TODO: Remove this for the next major release
   @JSName("default")
   var default_Original: pDashSomeLib.Anon_AggregateError = js.native

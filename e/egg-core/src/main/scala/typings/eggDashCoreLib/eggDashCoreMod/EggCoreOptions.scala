@@ -13,7 +13,7 @@ trait EggCoreOptions extends js.Object {
   /** server scope */
   var serverScope: js.UndefOr[java.lang.String] = js.undefined
   /** egg type, application or agent */
-  var `type`: js.UndefOr[eggDashCoreLib.EggType] = js.undefined
+  var `type`: js.UndefOr[EggType] = js.undefined
 }
 
 object EggCoreOptions {
@@ -22,7 +22,7 @@ object EggCoreOptions {
     baseDir: java.lang.String = null,
     plugins: Plugins = null,
     serverScope: java.lang.String = null,
-    `type`: eggDashCoreLib.EggType = null
+    `type`: EggType = null
   ): EggCoreOptions = {
     val __obj = js.Dynamic.literal()
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)

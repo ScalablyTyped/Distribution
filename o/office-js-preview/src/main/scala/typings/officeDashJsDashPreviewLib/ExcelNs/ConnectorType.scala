@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 sealed trait ConnectorType extends js.Object
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ConnectorType")
 @js.native

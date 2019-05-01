@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amqp-rpc"
-version := "v0.0.8-dt-20190322Z-36738c"
+version := "v0.0.8-dt-20190322Z-c470c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

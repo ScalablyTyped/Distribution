@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MUIDataTableOptions extends js.Object {
-  var IsRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ scala.Double, scala.Boolean]] = js.undefined
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined
   var customFooter: js.UndefOr[
@@ -53,6 +52,7 @@ trait MUIDataTableOptions extends js.Object {
     muiDashDatatablesLib.muiDashDatatablesLibStrings.dropdown | muiDashDatatablesLib.muiDashDatatablesLibStrings.checkbox | muiDashDatatablesLib.muiDashDatatablesLibStrings.multiselect | muiDashDatatablesLib.muiDashDatatablesLibStrings.textField
   ] = js.undefined
   var fixedHeader: js.UndefOr[scala.Boolean] = js.undefined
+  var isRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ scala.Double, scala.Boolean]] = js.undefined
   var onCellClick: js.UndefOr[
     js.Function2[/* colData */ js.Any, /* cellMeta */ muiDashDatatablesLib.Anon_ColIndex, scala.Unit]
   ] = js.undefined
@@ -113,7 +113,6 @@ trait MUIDataTableOptions extends js.Object {
 object MUIDataTableOptions {
   @scala.inline
   def apply(
-    IsRowSelectable: /* dataIndex */ scala.Double => scala.Boolean = null,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     count: scala.Int | scala.Double = null,
     customFooter: (/* rowCount */ scala.Double, /* page */ scala.Double, /* rowsPerPage */ scala.Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ scala.Double) => reactLib.reactMod.ReactNode = null,
@@ -128,6 +127,7 @@ object MUIDataTableOptions {
     filter: js.UndefOr[scala.Boolean] = js.undefined,
     filterType: muiDashDatatablesLib.muiDashDatatablesLibStrings.dropdown | muiDashDatatablesLib.muiDashDatatablesLibStrings.checkbox | muiDashDatatablesLib.muiDashDatatablesLibStrings.multiselect | muiDashDatatablesLib.muiDashDatatablesLibStrings.textField = null,
     fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    isRowSelectable: /* dataIndex */ scala.Double => scala.Boolean = null,
     onCellClick: (/* colData */ js.Any, /* cellMeta */ muiDashDatatablesLib.Anon_ColIndex) => scala.Unit = null,
     onChangePage: /* currentPage */ scala.Double => scala.Unit = null,
     onChangeRowsPerPage: /* numberOfRows */ scala.Double => scala.Unit = null,
@@ -159,7 +159,6 @@ object MUIDataTableOptions {
     viewColumns: js.UndefOr[scala.Boolean] = js.undefined
   ): MUIDataTableOptions = {
     val __obj = js.Dynamic.literal()
-    if (IsRowSelectable != null) __obj.updateDynamic("IsRowSelectable")(js.Any.fromFunction1(IsRowSelectable))
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction5(customFooter))
@@ -174,6 +173,7 @@ object MUIDataTableOptions {
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
+    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
     if (onChangePage != null) __obj.updateDynamic("onChangePage")(js.Any.fromFunction1(onChangePage))
     if (onChangeRowsPerPage != null) __obj.updateDynamic("onChangeRowsPerPage")(js.Any.fromFunction1(onChangeRowsPerPage))

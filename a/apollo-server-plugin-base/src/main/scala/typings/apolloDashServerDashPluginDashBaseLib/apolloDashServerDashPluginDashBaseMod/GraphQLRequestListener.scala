@@ -12,7 +12,7 @@ trait GraphQLRequestListener[TContext] extends js.Object {
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
         apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
       ], 
-      apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit]
+      ValueOrPromise[scala.Unit]
     ]
   ] = js.undefined
   var executionDidStart: js.UndefOr[
@@ -45,7 +45,7 @@ trait GraphQLRequestListener[TContext] extends js.Object {
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
         apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.response
       ], 
-      apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit]
+      ValueOrPromise[scala.Unit]
     ]
   ] = js.undefined
 }
@@ -56,7 +56,7 @@ object GraphQLRequestListener {
     didResolveOperation: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
-    ] => apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit] = null,
+    ] => ValueOrPromise[scala.Unit] = null,
     executionDidStart: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
@@ -69,7 +69,7 @@ object GraphQLRequestListener {
     willSendResponse: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.response
-    ] => apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit] = null
+    ] => ValueOrPromise[scala.Unit] = null
   ): GraphQLRequestListener[TContext] = {
     val __obj = js.Dynamic.literal()
     if (didResolveOperation != null) __obj.updateDynamic("didResolveOperation")(js.Any.fromFunction1(didResolveOperation))

@@ -26,5 +26,5 @@ import scala.scalajs.js.annotation._
   - ForOfStatement
   - Declaration
 */
-trait Statement extends _Node
+trait Statement extends Node
 

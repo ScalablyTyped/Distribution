@@ -13,20 +13,16 @@ trait TotalOptions[T] extends js.Object {
   /**
     * Printer to format the total cell
     */
-  var printer: js.UndefOr[easyDashTableLib.CellPrinter[T]] = js.undefined
+  var printer: js.UndefOr[CellPrinter[T]] = js.undefined
   /**
     * reduce(acc, val, idx, length) function to compute the total value
     */
-  var reduce: js.UndefOr[easyDashTableLib.ReduceFunction[T]] = js.undefined
+  var reduce: js.UndefOr[ReduceFunction[T]] = js.undefined
 }
 
 object TotalOptions {
   @scala.inline
-  def apply[T](
-    init: T = null,
-    printer: easyDashTableLib.CellPrinter[T] = null,
-    reduce: easyDashTableLib.ReduceFunction[T] = null
-  ): TotalOptions[T] = {
+  def apply[T](init: T = null, printer: CellPrinter[T] = null, reduce: ReduceFunction[T] = null): TotalOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (printer != null) __obj.updateDynamic("printer")(printer)

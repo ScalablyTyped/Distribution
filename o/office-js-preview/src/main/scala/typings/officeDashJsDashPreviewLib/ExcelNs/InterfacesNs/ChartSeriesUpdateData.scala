@@ -20,24 +20,21 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Encapsulates the bin options only for histogram chart and pareto chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var binOptions: js.UndefOr[ChartBinOptionsUpdateData] = js.undefined
   /**
     *
     * Encapsulates the options for the Box & Whisker chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsUpdateData] = js.undefined
   /**
     *
     * Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var bubbleScale: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -104,16 +101,14 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets the Color for maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Returns or sets the type for maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumType: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent
@@ -122,24 +117,21 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets the maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointType: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent
@@ -148,24 +140,21 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets the midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets the Color for minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Returns or sets the type for minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumType: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent
@@ -174,16 +163,14 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets the minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets series gradient style of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientStyle: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoPhaseColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreePhaseColor
@@ -199,8 +186,7 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets the fill color for negative data points in a series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var invertColor: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -214,8 +200,7 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Encapsulates the options for the Map chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var mapOptions: js.UndefOr[ChartMapOptionsUpdateData] = js.undefined
   /**
@@ -266,8 +251,7 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets series parent label strategy area of a treemap chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var parentLabelStrategy: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartParentLabelStrategy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Banner | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overlapping
@@ -290,16 +274,14 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets if connector lines show in a waterfall chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showConnectorLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showLeaderLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -329,8 +311,7 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var splitValue: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -344,18 +325,16 @@ trait ChartSeriesUpdateData extends js.Object {
     *
     * Represents the error bar object for a chart series.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
-  var xerrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
+  var xErrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
   /**
     *
     * Represents the error bar object for a chart series.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
-  var yerrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
+  var yErrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
 }
 
 object ChartSeriesUpdateData {
@@ -403,8 +382,8 @@ object ChartSeriesUpdateData {
     splitType: officeDashJsDashPreviewLib.ExcelNs.ChartSplitType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByPosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByPercentValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByCustomSplit = null,
     splitValue: scala.Int | scala.Double = null,
     varyByCategories: js.UndefOr[scala.Boolean] = js.undefined,
-    xerrorBars: ChartErrorBarsUpdateData = null,
-    yerrorBars: ChartErrorBarsUpdateData = null
+    xErrorBars: ChartErrorBarsUpdateData = null,
+    yErrorBars: ChartErrorBarsUpdateData = null
   ): ChartSeriesUpdateData = {
     val __obj = js.Dynamic.literal()
     if (axisGroup != null) __obj.updateDynamic("axisGroup")(axisGroup.asInstanceOf[js.Any])
@@ -449,8 +428,8 @@ object ChartSeriesUpdateData {
     if (splitType != null) __obj.updateDynamic("splitType")(splitType.asInstanceOf[js.Any])
     if (splitValue != null) __obj.updateDynamic("splitValue")(splitValue.asInstanceOf[js.Any])
     if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories)
-    if (xerrorBars != null) __obj.updateDynamic("xerrorBars")(xerrorBars)
-    if (yerrorBars != null) __obj.updateDynamic("yerrorBars")(yerrorBars)
+    if (xErrorBars != null) __obj.updateDynamic("xErrorBars")(xErrorBars)
+    if (yErrorBars != null) __obj.updateDynamic("yErrorBars")(yErrorBars)
     __obj.asInstanceOf[ChartSeriesUpdateData]
   }
 }

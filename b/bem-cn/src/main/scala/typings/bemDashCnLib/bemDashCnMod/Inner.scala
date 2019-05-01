@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Inner extends js.Object {
   @JSName("has")
-  var has_Original: bemDashCnLib.StateFn = js.native
+  var has_Original: StateFn = js.native
   @JSName("is")
-  var is_Original: bemDashCnLib.StateFn = js.native
+  var is_Original: StateFn = js.native
   @JSName("state")
-  var state_Original: bemDashCnLib.StateFn = js.native
+  var state_Original: StateFn = js.native
   def apply(): java.lang.String = js.native
   def apply(elem: Modifications): Inner = js.native
   def apply(elem: java.lang.String): Inner = js.native

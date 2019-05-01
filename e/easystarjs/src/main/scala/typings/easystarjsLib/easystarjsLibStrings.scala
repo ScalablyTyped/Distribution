@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object easystarjsLibStrings {
   @js.native
-  sealed trait BOTTOM extends Direction
+  sealed trait BOTTOM
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait BOTTOM_LEFT extends Direction
+  sealed trait BOTTOM_LEFT
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait BOTTOM_RIGHT extends Direction
+  sealed trait BOTTOM_RIGHT
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait LEFT extends Direction
+  sealed trait LEFT
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait RIGHT extends Direction
+  sealed trait RIGHT
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait TOP extends Direction
+  sealed trait TOP
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait TOP_LEFT extends Direction
+  sealed trait TOP_LEFT
+    extends easystarjsLib.easystarjsMod.Direction
   
   @js.native
-  sealed trait TOP_RIGHT extends Direction
+  sealed trait TOP_RIGHT
+    extends easystarjsLib.easystarjsMod.Direction
   
   @scala.inline
   def BOTTOM: BOTTOM = "BOTTOM".asInstanceOf[BOTTOM]

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ProgressBarProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined maximum, minimum, selection, state, tintColor */ @JSImport("tabris", "ProgressBar")
 @js.native
 class ProgressBar () extends Widget {
-  def this(properties: tabrisLib.Properties[ProgressBar, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[ProgressBar, TypeScriptPropertiesKey]) = this()
   /**
     * The value that represents a progress of 100%.
     */
@@ -38,7 +38,7 @@ class ProgressBar () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_ProgressBar: tabrisLib.ProgressBarProperties = js.native
+  val tsProperties_ProgressBar: ProgressBarProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

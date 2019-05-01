@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ConditionalExpression extends BaseNode {
-  var alternate: estreeLib.Expression
-  var consequent: estreeLib.Expression
-  var test: estreeLib.Expression
+trait ConditionalExpression
+  extends BaseNode
+     with Expression {
+  var alternate: Expression
+  var consequent: Expression
+  var test: Expression
   @JSName("type")
   var type_ConditionalExpression: estreeLib.estreeLibStrings.ConditionalExpression
 }
@@ -16,9 +18,9 @@ trait ConditionalExpression extends BaseNode {
 object ConditionalExpression {
   @scala.inline
   def apply(
-    alternate: estreeLib.Expression,
-    consequent: estreeLib.Expression,
-    test: estreeLib.Expression,
+    alternate: Expression,
+    consequent: Expression,
+    test: Expression,
     `type`: estreeLib.estreeLibStrings.ConditionalExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

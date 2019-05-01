@@ -11,7 +11,7 @@ trait ReqProps extends LDAPjsReqProps {
   var bindCredentials: js.UndefOr[java.lang.String] = js.undefined
   var bindDN: js.UndefOr[java.lang.String] = js.undefined
   var filter: java.lang.String | ldapjsLib.ldapjsMod.Filter
-  var includeMembership: js.Array[activedirectory2Lib.MembershipType]
+  var includeMembership: js.Array[MembershipType]
   var scope: js.UndefOr[
     activedirectory2Lib.activedirectory2LibStrings.base | activedirectory2Lib.activedirectory2LibStrings.one | activedirectory2Lib.activedirectory2LibStrings.sub
   ] = js.undefined
@@ -24,7 +24,7 @@ object ReqProps {
   def apply(
     attributes: AttributeSpec,
     filter: java.lang.String | ldapjsLib.ldapjsMod.Filter,
-    includeMembership: js.Array[activedirectory2Lib.MembershipType],
+    includeMembership: js.Array[MembershipType],
     sizeLimit: activedirectory2Lib.activedirectory2LibNumbers.`0`,
     timeLimit: activedirectory2Lib.activedirectory2LibNumbers.`10`,
     tlsOptions: activedirectory2Lib.Anon_Ca,

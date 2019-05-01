@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object reactDashRteLibStrings {
   @js.native
-  sealed trait BLOCK_TYPE_BUTTONS extends GroupName
+  sealed trait BLOCK_TYPE_BUTTONS
+    extends reactDashRteLib.reactDashRteMod.GroupName
   
   @js.native
-  sealed trait BLOCK_TYPE_DROPDOWN extends GroupName
+  sealed trait BLOCK_TYPE_DROPDOWN
+    extends reactDashRteLib.reactDashRteMod.GroupName
   
   @js.native
-  sealed trait HISTORY_BUTTONS extends GroupName
+  sealed trait HISTORY_BUTTONS
+    extends reactDashRteLib.reactDashRteMod.GroupName
   
   @js.native
-  sealed trait IMAGE_BUTTON extends GroupName
+  sealed trait IMAGE_BUTTON
+    extends reactDashRteLib.reactDashRteMod.GroupName
   
   @js.native
-  sealed trait INLINE_STYLE_BUTTONS extends GroupName
+  sealed trait INLINE_STYLE_BUTTONS
+    extends reactDashRteLib.reactDashRteMod.GroupName
   
   @js.native
-  sealed trait LINK_BUTTONS extends GroupName
+  sealed trait LINK_BUTTONS
+    extends reactDashRteLib.reactDashRteMod.GroupName
   
   @js.native
   sealed trait STYLE extends js.Object

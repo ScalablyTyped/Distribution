@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
   - AssignmentPattern
   - MemberExpression
 */
-trait Pattern extends _Node
+trait Pattern extends Node
 

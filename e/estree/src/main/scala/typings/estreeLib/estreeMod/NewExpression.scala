@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NewExpression
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- estreeLib.estreeMod.Expression because Already inherited */ trait NewExpression
   extends BaseCallExpression
      with CallExpression {
   @JSName("type")
@@ -15,8 +16,8 @@ trait NewExpression
 object NewExpression {
   @scala.inline
   def apply(
-    arguments: js.Array[estreeLib.Expression | SpreadElement],
-    callee: estreeLib.Expression | Super,
+    arguments: js.Array[Expression | SpreadElement],
+    callee: Expression | Super,
     `type`: estreeLib.estreeLibStrings.NewExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

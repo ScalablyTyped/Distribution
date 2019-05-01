@@ -10,7 +10,7 @@ trait Anon_Ci extends js.Object {
   var errorStream: js.UndefOr[nodeLib.streamMod.Writable] = js.undefined
   var inputStream: js.UndefOr[nodeLib.streamMod.Readable] = js.undefined
   var outputStream: js.UndefOr[nodeLib.streamMod.Writable] = js.undefined
-  var writeLevel: js.UndefOr[WriteLevel] = js.undefined
+  var writeLevel: js.UndefOr[consoleDashUiLib.consoleDashUiMod.WriteLevel] = js.undefined
 }
 
 object Anon_Ci {
@@ -20,7 +20,7 @@ object Anon_Ci {
     errorStream: nodeLib.streamMod.Writable = null,
     inputStream: nodeLib.streamMod.Readable = null,
     outputStream: nodeLib.streamMod.Writable = null,
-    writeLevel: WriteLevel = null
+    writeLevel: consoleDashUiLib.consoleDashUiMod.WriteLevel = null
   ): Anon_Ci = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ci)) __obj.updateDynamic("ci")(ci)

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Proxy[T /* <: saywhenLib.Func */] extends js.Object {
+trait Proxy[T /* <: Func */] extends js.Object {
   def `then`(fn: T): Proxy[T]
   def thenReturn(`val`: js.Any): Proxy[T]
   def thenThrow(err: stdLib.Error): Proxy[T]
@@ -13,7 +13,7 @@ trait Proxy[T /* <: saywhenLib.Func */] extends js.Object {
 
 object Proxy {
   @scala.inline
-  def apply[T /* <: saywhenLib.Func */](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: stdLib.Error => Proxy[T]): Proxy[T] = {
+  def apply[T /* <: Func */](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: stdLib.Error => Proxy[T]): Proxy[T] = {
     val __obj = js.Dynamic.literal(thenReturn = js.Any.fromFunction1(thenReturn), thenThrow = js.Any.fromFunction1(thenThrow))
     __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
     __obj.asInstanceOf[Proxy[T]]

@@ -22,25 +22,31 @@ object blenoLibStrings {
   sealed trait disconnect extends js.Object
   
   @js.native
-  sealed trait indicate extends Property
+  sealed trait indicate
+    extends blenoLib.blenoMod.Property
   
   @js.native
   sealed trait mtuChange extends js.Object
   
   @js.native
-  sealed trait notify extends Property
+  sealed trait notify
+    extends blenoLib.blenoMod.Property
   
   @js.native
-  sealed trait poweredOff extends State
+  sealed trait poweredOff
+    extends blenoLib.blenoMod.State
   
   @js.native
-  sealed trait poweredOn extends State
+  sealed trait poweredOn
+    extends blenoLib.blenoMod.State
   
   @js.native
-  sealed trait read extends Property
+  sealed trait read
+    extends blenoLib.blenoMod.Property
   
   @js.native
-  sealed trait resetting extends State
+  sealed trait resetting
+    extends blenoLib.blenoMod.State
   
   @js.native
   sealed trait rssiUpdate extends js.Object
@@ -55,19 +61,24 @@ object blenoLibStrings {
   sealed trait stateChange extends js.Object
   
   @js.native
-  sealed trait unauthorized extends State
+  sealed trait unauthorized
+    extends blenoLib.blenoMod.State
   
   @js.native
-  sealed trait unknown extends State
+  sealed trait unknown
+    extends blenoLib.blenoMod.State
   
   @js.native
-  sealed trait unsupported extends State
+  sealed trait unsupported
+    extends blenoLib.blenoMod.State
   
   @js.native
-  sealed trait write extends Property
+  sealed trait write
+    extends blenoLib.blenoMod.Property
   
   @js.native
-  sealed trait writeWithoutResponse extends Property
+  sealed trait writeWithoutResponse
+    extends blenoLib.blenoMod.Property
   
   @scala.inline
   def accept: accept = "accept".asInstanceOf[accept]

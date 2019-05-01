@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SidebarProps extends js.Object {
-  var children: reactDashLeafletDashSidebarv2Lib.TabType
-  var closeIcon: js.UndefOr[reactDashLeafletDashSidebarv2Lib.Icon] = js.undefined
+  var children: TabType
+  var closeIcon: js.UndefOr[Icon] = js.undefined
   var collapsed: scala.Boolean
   var id: java.lang.String
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var position: reactDashLeafletDashSidebarv2Lib.Position
+  var position: Position
   var selected: java.lang.String
 }
 
 object SidebarProps {
   @scala.inline
   def apply(
-    children: reactDashLeafletDashSidebarv2Lib.TabType,
+    children: TabType,
     collapsed: scala.Boolean,
     id: java.lang.String,
-    position: reactDashLeafletDashSidebarv2Lib.Position,
+    position: Position,
     selected: java.lang.String,
-    closeIcon: reactDashLeafletDashSidebarv2Lib.Icon = null,
+    closeIcon: Icon = null,
     onClose: () => scala.Unit = null,
     onOpen: () => scala.Unit = null
   ): SidebarProps = {

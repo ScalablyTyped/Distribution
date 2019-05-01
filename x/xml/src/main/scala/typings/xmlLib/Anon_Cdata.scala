@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Cdata extends _XmlDesc {
+trait Anon_Cdata
+  extends xmlLib.xmlMod._XmlDesc {
   var _cdata: java.lang.String
 }
 

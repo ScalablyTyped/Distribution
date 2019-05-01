@@ -9,10 +9,9 @@ import scala.scalajs.js.annotation._
 trait ApplicationData extends js.Object {
   /**
     *
-    * Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by. Read-only.
+    * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var calculationEngineVersion: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -26,10 +25,9 @@ trait ApplicationData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for details. Read-only.
+    * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var calculationState: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.CalculationState | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Done | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Calculating | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Pending
@@ -40,8 +38,7 @@ trait ApplicationData extends js.Object {
     On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
     On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationData] = js.undefined
 }

@@ -88,6 +88,12 @@ package object clientsDirectconnectMod {
     - java.lang.String
   */
   type DirectConnectGatewayAttachmentState = _DirectConnectGatewayAttachmentState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TransitVirtualInterface
+    - awsDashSdkLib.awsDashSdkLibStrings.PrivateVirtualInterface
+    - java.lang.String
+  */
+  type DirectConnectGatewayAttachmentType = _DirectConnectGatewayAttachmentType | java.lang.String
   type DirectConnectGatewayId = java.lang.String
   type DirectConnectGatewayList = js.Array[DirectConnectGateway]
   type DirectConnectGatewayName = java.lang.String
@@ -101,7 +107,12 @@ package object clientsDirectconnectMod {
   type DirectConnectGatewayState = _DirectConnectGatewayState | java.lang.String
   type GatewayIdToAssociate = java.lang.String
   type GatewayIdentifier = java.lang.String
-  type GatewayType = awsDashSdkLib.awsDashSdkLibStrings.virtualPrivateGateway | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.virtualPrivateGateway
+    - awsDashSdkLib.awsDashSdkLibStrings.transitGateway
+    - java.lang.String
+  */
+  type GatewayType = _GatewayType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.unknown
     - awsDashSdkLib.awsDashSdkLibStrings.yes

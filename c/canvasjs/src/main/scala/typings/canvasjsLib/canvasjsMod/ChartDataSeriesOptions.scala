@@ -71,7 +71,7 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * Sets the Line Dash Type for all Line and Area Charts.
     * Default: solid
     */
-  var lineDashType: js.UndefOr[canvasjsLib.DashType] = js.undefined
+  var lineDashType: js.UndefOr[DashType] = js.undefined
   /**
     * Sets the thickness of line in line charts and area charts.
     * Default: 2
@@ -86,7 +86,7 @@ trait ChartDataSeriesOptions extends ChartDataCommon {
     * 3.Not Supported on IE8.
     * Default: "dash"
     */
-  var nullDataLineDashType: js.UndefOr[canvasjsLib.DashType] = js.undefined
+  var nullDataLineDashType: js.UndefOr[DashType] = js.undefined
   /**
     * Defines how percent values are formatted before they appear on the indexLabel or toolTip. You can format percent values using this property.
     */
@@ -192,7 +192,7 @@ object ChartDataSeriesOptions {
     indexLabelFontWeight: java.lang.String = null,
     indexLabelFormatter: /* e */ canvasjsLib.Anon_ChartDataPoint => java.lang.String = null,
     indexLabelLineColor: java.lang.String = null,
-    indexLabelLineDashType: canvasjsLib.DashType = null,
+    indexLabelLineDashType: DashType = null,
     indexLabelLineThickness: scala.Int | scala.Double = null,
     indexLabelOrientation: java.lang.String = null,
     indexLabelPlacement: java.lang.String = null,
@@ -202,7 +202,7 @@ object ChartDataSeriesOptions {
     legendMarkerColor: java.lang.String = null,
     legendMarkerType: java.lang.String = null,
     legendText: java.lang.String = null,
-    lineDashType: canvasjsLib.DashType = null,
+    lineDashType: DashType = null,
     lineThickness: scala.Int | scala.Double = null,
     markerBorderColor: java.lang.String = null,
     markerBorderThickness: scala.Int | scala.Double = null,
@@ -213,7 +213,7 @@ object ChartDataSeriesOptions {
     mouseout: /* event */ ChartEvent => scala.Unit = null,
     mouseover: /* event */ ChartEvent => scala.Unit = null,
     name: java.lang.String = null,
-    nullDataLineDashType: canvasjsLib.DashType = null,
+    nullDataLineDashType: DashType = null,
     percentFormatString: java.lang.String = null,
     radius: scala.Double | java.lang.String = null,
     risingColor: java.lang.String = null,

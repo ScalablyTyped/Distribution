@@ -15,7 +15,7 @@ trait ExpectToClickOptions extends ExpectTimingActions {
 object ExpectToClickOptions {
   @scala.inline
   def apply(
-    polling: expectDashPuppeteerLib.ExpectPolling = null,
+    polling: ExpectPolling = null,
     text: java.lang.String | stdLib.RegExp = null,
     timeout: scala.Int | scala.Double = null
   ): ExpectToClickOptions = {

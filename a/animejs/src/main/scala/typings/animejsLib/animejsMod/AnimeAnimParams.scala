@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation._
 
 trait AnimeAnimParams
   extends /* AnyAnimatedProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var begin: js.UndefOr[animejsLib.AnimeCallbackFunction] = js.undefined
-  var complete: js.UndefOr[animejsLib.AnimeCallbackFunction] = js.undefined
-  var delay: js.UndefOr[scala.Double | animejsLib.FunctionBasedParameter] = js.undefined
-  var duration: js.UndefOr[scala.Double | animejsLib.FunctionBasedParameter] = js.undefined
+  var begin: js.UndefOr[AnimeCallbackFunction] = js.undefined
+  var complete: js.UndefOr[AnimeCallbackFunction] = js.undefined
+  var delay: js.UndefOr[scala.Double | FunctionBasedParameter] = js.undefined
+  var duration: js.UndefOr[scala.Double | FunctionBasedParameter] = js.undefined
   var easing: js.UndefOr[EasingOptions | java.lang.String | js.Array[scala.Double]] = js.undefined
-  var elasticity: js.UndefOr[scala.Double | animejsLib.FunctionBasedParameter] = js.undefined
-  var round: js.UndefOr[scala.Double | scala.Boolean | animejsLib.FunctionBasedParameter] = js.undefined
-  var run: js.UndefOr[animejsLib.AnimeCallbackFunction] = js.undefined
-  var targets: animejsLib.AnimeTarget | js.Array[animejsLib.AnimeTarget]
-  var update: js.UndefOr[animejsLib.AnimeCallbackFunction] = js.undefined
+  var elasticity: js.UndefOr[scala.Double | FunctionBasedParameter] = js.undefined
+  var round: js.UndefOr[scala.Double | scala.Boolean | FunctionBasedParameter] = js.undefined
+  var run: js.UndefOr[AnimeCallbackFunction] = js.undefined
+  var targets: AnimeTarget | js.Array[AnimeTarget]
+  var update: js.UndefOr[AnimeCallbackFunction] = js.undefined
 }
 
 object AnimeAnimParams {
   @scala.inline
   def apply(
-    targets: animejsLib.AnimeTarget | js.Array[animejsLib.AnimeTarget],
+    targets: AnimeTarget | js.Array[AnimeTarget],
     StringDictionary: /* AnyAnimatedProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    begin: animejsLib.AnimeCallbackFunction = null,
-    complete: animejsLib.AnimeCallbackFunction = null,
-    delay: scala.Double | animejsLib.FunctionBasedParameter = null,
-    duration: scala.Double | animejsLib.FunctionBasedParameter = null,
+    begin: AnimeCallbackFunction = null,
+    complete: AnimeCallbackFunction = null,
+    delay: scala.Double | FunctionBasedParameter = null,
+    duration: scala.Double | FunctionBasedParameter = null,
     easing: EasingOptions | java.lang.String | js.Array[scala.Double] = null,
-    elasticity: scala.Double | animejsLib.FunctionBasedParameter = null,
-    round: scala.Double | scala.Boolean | animejsLib.FunctionBasedParameter = null,
-    run: animejsLib.AnimeCallbackFunction = null,
-    update: animejsLib.AnimeCallbackFunction = null
+    elasticity: scala.Double | FunctionBasedParameter = null,
+    round: scala.Double | scala.Boolean | FunctionBasedParameter = null,
+    run: AnimeCallbackFunction = null,
+    update: AnimeCallbackFunction = null
   ): AnimeAnimParams = {
     val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

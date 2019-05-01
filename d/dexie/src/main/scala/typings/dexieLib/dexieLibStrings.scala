@@ -115,13 +115,16 @@ object dexieLibStrings {
   sealed trait populate extends js.Object
   
   @js.native
-  sealed trait r extends TransactionMode
+  sealed trait r
+    extends dexieLib.dexieMod.TransactionMode
   
   @js.native
-  sealed trait `r!` extends TransactionMode
+  sealed trait `r!`
+    extends dexieLib.dexieMod.TransactionMode
   
   @js.native
-  sealed trait `r?` extends TransactionMode
+  sealed trait `r?`
+    extends dexieLib.dexieMod.TransactionMode
   
   @js.native
   sealed trait reading extends js.Object
@@ -130,13 +133,16 @@ object dexieLibStrings {
   sealed trait ready extends js.Object
   
   @js.native
-  sealed trait rw extends TransactionMode
+  sealed trait rw
+    extends dexieLib.dexieMod.TransactionMode
   
   @js.native
-  sealed trait `rw!` extends TransactionMode
+  sealed trait `rw!`
+    extends dexieLib.dexieMod.TransactionMode
   
   @js.native
-  sealed trait `rw?` extends TransactionMode
+  sealed trait `rw?`
+    extends dexieLib.dexieMod.TransactionMode
   
   @js.native
   sealed trait updating extends js.Object

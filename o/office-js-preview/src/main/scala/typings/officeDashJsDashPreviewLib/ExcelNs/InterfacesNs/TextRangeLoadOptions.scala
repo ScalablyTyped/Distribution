@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait TextRangeLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,16 +18,14 @@ trait TextRangeLoadOptions extends js.Object {
     *
     * Returns a ShapeFont object that represents the font attributes for the text range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[ShapeFontLoadOptions] = js.undefined
   /**
     *
     * Represents the plain text content of the text range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var text: js.UndefOr[scala.Boolean] = js.undefined
 }

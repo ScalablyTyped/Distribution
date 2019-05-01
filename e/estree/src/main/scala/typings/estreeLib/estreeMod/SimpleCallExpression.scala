@@ -15,8 +15,8 @@ trait SimpleCallExpression
 object SimpleCallExpression {
   @scala.inline
   def apply(
-    arguments: js.Array[estreeLib.Expression | SpreadElement],
-    callee: estreeLib.Expression | Super,
+    arguments: js.Array[Expression | SpreadElement],
+    callee: Expression | Super,
     `type`: estreeLib.estreeLibStrings.CallExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

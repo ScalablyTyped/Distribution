@@ -104,6 +104,7 @@ object VictoryLineProps {
     ] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     interpolation: InterpolationPropType = null,
     label: java.lang.String | victoryLib.Anon_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
@@ -130,6 +131,7 @@ object VictoryLineProps {
     if (events != null) __obj.updateDynamic("events")(events)
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)

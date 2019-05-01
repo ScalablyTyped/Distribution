@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SwapCommand extends js.Object {
+trait SwapCommand extends Command {
   @JSName("$swap")
   var $swap: tcombLib.Anon_From
 }

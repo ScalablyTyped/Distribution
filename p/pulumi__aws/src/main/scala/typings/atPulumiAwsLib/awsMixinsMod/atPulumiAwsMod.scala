@@ -267,6 +267,8 @@ object atPulumiAwsMod extends js.Object {
     val MachineLearningNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
     var Macie: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Macie] = js.native
     val MacieNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
+    var ManagedBlockchain: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ManagedBlockchain] = js.native
+    val ManagedBlockchainNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
     var MarketplaceCommerceAnalytics: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.MarketplaceCommerceAnalytics] = js.native
     val MarketplaceCommerceAnalyticsNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
     var MarketplaceEntitlementService: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.MarketplaceEntitlementService] = js.native

@@ -115,6 +115,7 @@ object VictoryScatterProps {
     ] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
     maxBubbleSize: scala.Int | scala.Double = null,
@@ -143,6 +144,7 @@ object VictoryScatterProps {
     if (events != null) __obj.updateDynamic("events")(events)
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
     if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (maxBubbleSize != null) __obj.updateDynamic("maxBubbleSize")(maxBubbleSize.asInstanceOf[js.Any])

@@ -14,8 +14,8 @@ trait Bookshelf
   @JSName("knex")
   var knex_Original: knexLib.knexMod.Knex = js.native
   def knex(): knexLib.knexMod.QueryBuilder = js.native
-  def knex(tableName: knexLib.Identifier): knexLib.knexMod.QueryBuilder = js.native
-  def knex(tableName: knexLib.TableName): knexLib.knexMod.QueryBuilder = js.native
+  def knex(tableName: knexLib.knexMod.Identifier): knexLib.knexMod.QueryBuilder = js.native
+  def knex(tableName: knexLib.knexMod.TableName): knexLib.knexMod.QueryBuilder = js.native
   def plugin(name: java.lang.String): Bookshelf = js.native
   def plugin(name: java.lang.String, options: js.Any): Bookshelf = js.native
   def plugin(name: js.Array[java.lang.String]): Bookshelf = js.native

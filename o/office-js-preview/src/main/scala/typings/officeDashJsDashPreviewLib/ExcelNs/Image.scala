@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.Image")
 @js.native
@@ -23,24 +22,21 @@ class Image ()
     *
     * Returns the format of the image. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val format: PictureFormat | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UNKNOWN | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BMP | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.JPEG | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GIF | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PNG | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SVG = js.native
   /**
     *
     * Represents the shape identifier for the image object. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val id: java.lang.String = js.native
   /**
     *
     * Returns the Shape object associated with the image. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val shape: Shape = js.native
   /**

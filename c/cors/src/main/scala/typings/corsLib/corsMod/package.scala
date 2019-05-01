@@ -15,4 +15,13 @@ package object corsMod {
     ], 
     scala.Unit
   ]
+  type CustomOrigin = js.Function2[
+    /* requestOrigin */ js.UndefOr[java.lang.String], 
+    /* callback */ js.Function2[
+      /* err */ stdLib.Error | scala.Null, 
+      /* allow */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ], 
+    scala.Unit
+  ]
 }

@@ -25,24 +25,21 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Encapsulates the bin options only for histogram chart and pareto chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var binOptions: js.UndefOr[ChartBinOptionsLoadOptions] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Encapsulates the options for the Box & Whisker chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsLoadOptions] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var bubbleScale: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -107,80 +104,70 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Returns or sets the Color for maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumColor: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the type for maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumType: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointColor: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the type for midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointType: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the Color for minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumColor: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the type for minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumType: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientStyle: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -194,8 +181,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Returns or sets the fill color for negative data points in a series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var invertColor: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -209,8 +195,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Encapsulates the options for the Map chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var mapOptions: js.UndefOr[ChartMapOptionsLoadOptions] = js.undefined
   /**
@@ -259,8 +244,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Returns or sets series parent label strategy area of a treemap chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var parentLabelStrategy: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -288,16 +272,14 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Returns or sets if connector lines show in a waterfall chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showConnectorLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showLeaderLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -325,8 +307,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var splitValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -340,18 +321,16 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Represents the error bar object for a chart series.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
-  var xerrorBars: js.UndefOr[ChartErrorBarsLoadOptions] = js.undefined
+  var xErrorBars: js.UndefOr[ChartErrorBarsLoadOptions] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Represents the error bar object for a chart series.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
-  var yerrorBars: js.UndefOr[ChartErrorBarsLoadOptions] = js.undefined
+  var yErrorBars: js.UndefOr[ChartErrorBarsLoadOptions] = js.undefined
 }
 
 object ChartSeriesCollectionLoadOptions {
@@ -401,8 +380,8 @@ object ChartSeriesCollectionLoadOptions {
     splitType: js.UndefOr[scala.Boolean] = js.undefined,
     splitValue: js.UndefOr[scala.Boolean] = js.undefined,
     varyByCategories: js.UndefOr[scala.Boolean] = js.undefined,
-    xerrorBars: ChartErrorBarsLoadOptions = null,
-    yerrorBars: ChartErrorBarsLoadOptions = null
+    xErrorBars: ChartErrorBarsLoadOptions = null,
+    yErrorBars: ChartErrorBarsLoadOptions = null
   ): ChartSeriesCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
@@ -449,8 +428,8 @@ object ChartSeriesCollectionLoadOptions {
     if (!js.isUndefined(splitType)) __obj.updateDynamic("splitType")(splitType)
     if (!js.isUndefined(splitValue)) __obj.updateDynamic("splitValue")(splitValue)
     if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories)
-    if (xerrorBars != null) __obj.updateDynamic("xerrorBars")(xerrorBars)
-    if (yerrorBars != null) __obj.updateDynamic("yerrorBars")(yerrorBars)
+    if (xErrorBars != null) __obj.updateDynamic("xErrorBars")(xErrorBars)
+    if (yErrorBars != null) __obj.updateDynamic("yErrorBars")(yErrorBars)
     __obj.asInstanceOf[ChartSeriesCollectionLoadOptions]
   }
 }

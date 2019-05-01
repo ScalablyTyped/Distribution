@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataValue extends js.Object {
   var name: java.lang.String = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
   def bind(target: js.Any): scala.Unit = js.native
-  def bind(target: js.Any, rule: webixLib.WebixCallback): scala.Unit = js.native
-  def bind(target: js.Any, rule: webixLib.WebixCallback, format: java.lang.String): scala.Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback): scala.Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: java.lang.String): scala.Unit = js.native
   def blockEvent(): scala.Unit = js.native
   def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
   def detachEvent(id: java.lang.String): scala.Unit = js.native

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait MethodDefinition
   extends BaseNode
-     with _Node {
+     with Node {
   var computed: scala.Boolean
-  var key: estreeLib.Expression
+  var key: Expression
   var kind: estreeLib.estreeLibStrings.constructor | estreeLib.estreeLibStrings.method | estreeLib.estreeLibStrings.get | estreeLib.estreeLibStrings.set
   var static: scala.Boolean
   @JSName("type")
@@ -21,7 +21,7 @@ object MethodDefinition {
   @scala.inline
   def apply(
     computed: scala.Boolean,
-    key: estreeLib.Expression,
+    key: Expression,
     kind: estreeLib.estreeLibStrings.constructor | estreeLib.estreeLibStrings.method | estreeLib.estreeLibStrings.get | estreeLib.estreeLibStrings.set,
     static: scala.Boolean,
     `type`: estreeLib.estreeLibStrings.MethodDefinition,

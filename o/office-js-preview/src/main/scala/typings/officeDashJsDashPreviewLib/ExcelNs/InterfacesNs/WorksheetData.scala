@@ -11,8 +11,7 @@ trait WorksheetData extends js.Object {
     *
     * Represents the AutoFilter object of the worksheet. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   /**
@@ -35,16 +34,14 @@ trait WorksheetData extends js.Object {
     * Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enableCalculation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var horizontalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   /**
@@ -72,8 +69,7 @@ trait WorksheetData extends js.Object {
     *
     * Gets the PageLayout object of the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var pageLayout: js.UndefOr[PageLayoutData] = js.undefined
   /**
@@ -101,8 +97,7 @@ trait WorksheetData extends js.Object {
     *
     * Returns the collection of all the Shape objects on the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   /**
@@ -164,8 +159,7 @@ trait WorksheetData extends js.Object {
     *
     * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var verticalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   /**

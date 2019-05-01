@@ -1,16 +1,17 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-tab"
-version := "2.2-dt-20180214Z-c59c26"
+version := "2.2-dt-20180214Z-fc1a18"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-45cee7",
-  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20180214Z-eb207c",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-dae54d",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-5ae642",
+  "org.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20180214Z-2f8cad",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-219e16",
+  "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

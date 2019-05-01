@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ImportOptions extends js.Object {
-  var customBlockFn: js.UndefOr[reactDashRteLib.CustomBlockFn] = js.undefined
-  var customInlineFn: js.UndefOr[reactDashRteLib.CustomInlineFn] = js.undefined
+  var customBlockFn: js.UndefOr[CustomBlockFn] = js.undefined
+  var customInlineFn: js.UndefOr[CustomInlineFn] = js.undefined
   var elementStyles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var parser: js.UndefOr[js.Function1[/* html */ java.lang.String, stdLib.HTMLBodyElement]] = js.undefined
 }
@@ -15,8 +15,8 @@ trait ImportOptions extends js.Object {
 object ImportOptions {
   @scala.inline
   def apply(
-    customBlockFn: reactDashRteLib.CustomBlockFn = null,
-    customInlineFn: reactDashRteLib.CustomInlineFn = null,
+    customBlockFn: CustomBlockFn = null,
+    customInlineFn: CustomInlineFn = null,
     elementStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     parser: /* html */ java.lang.String => stdLib.HTMLBodyElement = null
   ): ImportOptions = {

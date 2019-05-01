@@ -8,17 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("detect-browser", "BrowserInfo")
 @js.native
 class BrowserInfo protected ()
-  extends DetectedInfo[
-      detectDashBrowserLib.Browser, 
-      detectDashBrowserLib.OperatingSystem | scala.Null, 
-      java.lang.String
-    ] {
-  def this(name: detectDashBrowserLib.Browser, version: java.lang.String) = this()
-  def this(name: detectDashBrowserLib.Browser, version: java.lang.String, os: detectDashBrowserLib.OperatingSystem) = this()
+  extends DetectedInfo[Browser, OperatingSystem | scala.Null, java.lang.String] {
+  def this(name: Browser, version: java.lang.String) = this()
+  def this(name: Browser, version: java.lang.String, os: OperatingSystem) = this()
   /* CompleteClass */
-  override val name: detectDashBrowserLib.Browser = js.native
+  override val name: Browser = js.native
   /* CompleteClass */
-  override val os: detectDashBrowserLib.OperatingSystem | scala.Null = js.native
+  override val os: OperatingSystem | scala.Null = js.native
   /* CompleteClass */
   override val version: java.lang.String = js.native
 }

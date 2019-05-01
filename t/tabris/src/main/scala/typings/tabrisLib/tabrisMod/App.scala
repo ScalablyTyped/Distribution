@@ -51,7 +51,7 @@ class App protected ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_App: tabrisLib.AppProperties = js.native
+  val tsProperties_App: AppProperties = js.native
   /**
     * The user facing version number, e.g. '2.1-beta3'.
     */

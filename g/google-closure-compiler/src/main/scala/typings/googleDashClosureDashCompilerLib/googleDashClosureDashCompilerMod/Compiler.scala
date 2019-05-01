@@ -25,9 +25,9 @@ trait Compiler extends js.Object {
 @JSImport("google-closure-compiler", "compiler")
 @js.native
 class compiler protected () extends Compiler {
-  def this(opts: googleDashClosureDashCompilerLib.CompileOptions) = this()
+  def this(opts: CompileOptions) = this()
   def this(opts: js.Array[java.lang.String]) = this()
-  def this(opts: googleDashClosureDashCompilerLib.CompileOptions, extraCommandArgs: js.Array[java.lang.String]) = this()
+  def this(opts: CompileOptions, extraCommandArgs: js.Array[java.lang.String]) = this()
   def this(opts: js.Array[java.lang.String], extraCommandArgs: js.Array[java.lang.String]) = this()
 }
 
@@ -35,14 +35,11 @@ class compiler protected () extends Compiler {
 @js.native
 object compiler
   extends org.scalablytyped.runtime.Instantiable2[
-      (/* opts */ js.Array[java.lang.String]) | (/* opts */ googleDashClosureDashCompilerLib.CompileOptions), 
+      (/* opts */ js.Array[java.lang.String]) | (/* opts */ CompileOptions), 
       /* extraCommandArgs */ js.Array[java.lang.String], 
       Compiler
     ]
-     with org.scalablytyped.runtime.Instantiable1[
-      (/* opts */ js.Array[java.lang.String]) | (/* opts */ googleDashClosureDashCompilerLib.CompileOptions), 
-      Compiler
-    ] {
+     with org.scalablytyped.runtime.Instantiable1[(/* opts */ js.Array[java.lang.String]) | (/* opts */ CompileOptions), Compiler] {
   var COMPILER_PATH: java.lang.String = js.native
   var CONTRIB_PATH: java.lang.String = js.native
   var JAR_PATH: java.lang.String = js.native

@@ -15,6 +15,6 @@ import scala.scalajs.js.annotation._
   * @param {Seed} [seed]
   */
 class ^ () extends Ids {
-  def this(seed: idsLib.Seed) = this()
+  def this(seed: Seed) = this()
 }
 

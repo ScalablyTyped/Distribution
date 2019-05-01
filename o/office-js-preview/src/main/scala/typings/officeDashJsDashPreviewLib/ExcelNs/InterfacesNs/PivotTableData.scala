@@ -25,8 +25,7 @@ trait PivotTableData extends js.Object {
     *
     * Specifies whether the PivotTable allows values in the data body to be edited by the user.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -68,8 +67,7 @@ trait PivotTableData extends js.Object {
     *
     * Specifies whether the PivotTable uses custom lists when sorting.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var useCustomSortLists: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ScrollViewProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, padding, right, top, transform, visible, width, win_theme. Inlined direction */ @JSImport("tabris", "ScrollView")
 @js.native
 class ScrollView () extends Composite {
-  def this(properties: tabrisLib.Properties[ScrollView, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[ScrollView, TypeScriptPropertiesKey]) = this()
   /**
     * Specifies the scrolling direction of the scroll composite.
     * @static
@@ -33,7 +33,7 @@ class ScrollView () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_ScrollView: tabrisLib.ScrollViewProperties = js.native
+  val tsProperties_ScrollView: ScrollViewProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnimeTimelineAnimParams extends AnimeAnimParams {
-  var offset: scala.Double | java.lang.String | animejsLib.FunctionBasedParameter
+  var offset: scala.Double | java.lang.String | FunctionBasedParameter
 }
 
 object AnimeTimelineAnimParams {
   @scala.inline
   def apply(
-    offset: scala.Double | java.lang.String | animejsLib.FunctionBasedParameter,
-    targets: animejsLib.AnimeTarget | js.Array[animejsLib.AnimeTarget],
-    begin: animejsLib.AnimeCallbackFunction = null,
-    complete: animejsLib.AnimeCallbackFunction = null,
-    delay: scala.Double | animejsLib.FunctionBasedParameter = null,
-    duration: scala.Double | animejsLib.FunctionBasedParameter = null,
+    offset: scala.Double | java.lang.String | FunctionBasedParameter,
+    targets: AnimeTarget | js.Array[AnimeTarget],
+    begin: AnimeCallbackFunction = null,
+    complete: AnimeCallbackFunction = null,
+    delay: scala.Double | FunctionBasedParameter = null,
+    duration: scala.Double | FunctionBasedParameter = null,
     easing: EasingOptions | java.lang.String | js.Array[scala.Double] = null,
-    elasticity: scala.Double | animejsLib.FunctionBasedParameter = null,
-    round: scala.Double | scala.Boolean | animejsLib.FunctionBasedParameter = null,
-    run: animejsLib.AnimeCallbackFunction = null,
-    update: animejsLib.AnimeCallbackFunction = null
+    elasticity: scala.Double | FunctionBasedParameter = null,
+    round: scala.Double | scala.Boolean | FunctionBasedParameter = null,
+    run: AnimeCallbackFunction = null,
+    update: AnimeCallbackFunction = null
   ): AnimeTimelineAnimParams = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(begin)

@@ -19,7 +19,7 @@ object ^ extends js.Object {
   val REPLACE: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_REPLACE = js.native
   val REPLACE_ROUTES: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_REPLACE_ROUTES = js.native
   val UNBLOCK: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_UNBLOCK = js.native
-  def block(historyShouldBlock: reduxDashLittleDashRouterLib.BlockCallback): BlockAction = js.native
+  def block(historyShouldBlock: BlockCallback): BlockAction = js.native
   def go(index: scala.Double): GoAction = js.native
   def goBack(): GoBackAction = js.native
   def goForward(): GoForwardAction = js.native

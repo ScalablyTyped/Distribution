@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_head"
-version := "4.0-dt-20190214Z-b3c4c9"
+version := "4.0-dt-20190214Z-5e4778"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

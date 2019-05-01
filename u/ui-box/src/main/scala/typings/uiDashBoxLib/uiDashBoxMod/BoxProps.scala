@@ -9,7 +9,7 @@ trait BoxProps
   extends // accept any other arbitrary prop
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** Set to border - box by default. */
-  var boxSizing: js.UndefOr[uiDashBoxLib.UIBoxProp] = js.undefined
+  var boxSizing: js.UndefOr[UIBoxProp] = js.undefined
   /**
     * The className prop you know and love. Internally it gets enhanced with additional class
     * names for the CSS properties you specify.
@@ -28,15 +28,15 @@ trait BoxProps
     * inherit another component. The component just needs to accept a className prop to work.
     * A good example is inheriting the react-router Link component
     */
-  var is: js.UndefOr[uiDashBoxLib.UIBoxIsProp] = js.undefined
+  var is: js.UndefOr[UIBoxIsProp] = js.undefined
   /** Sets marginLeft and marginRight to the same value */
-  var marginX: js.UndefOr[uiDashBoxLib.UIBoxProp] = js.undefined
+  var marginX: js.UndefOr[UIBoxProp] = js.undefined
   /** Sets marginTop and marginBottom to the same value */
-  var marginY: js.UndefOr[uiDashBoxLib.UIBoxProp] = js.undefined
+  var marginY: js.UndefOr[UIBoxProp] = js.undefined
   /** Sets paddingLeft and paddingRight to the same value */
-  var paddingX: js.UndefOr[uiDashBoxLib.UIBoxProp] = js.undefined
+  var paddingX: js.UndefOr[UIBoxProp] = js.undefined
   /** Sets paddingTop and paddingBottom to the same value */
-  var paddingY: js.UndefOr[uiDashBoxLib.UIBoxProp] = js.undefined
+  var paddingY: js.UndefOr[UIBoxProp] = js.undefined
 }
 
 object BoxProps {
@@ -44,15 +44,15 @@ object BoxProps {
   def apply(
     StringDictionary: // accept any other arbitrary prop
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    boxSizing: uiDashBoxLib.UIBoxProp = null,
+    boxSizing: UIBoxProp = null,
     className: java.lang.String = null,
     clearfix: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: /* node */ reactLib.reactMod.ReactNode => _ = null,
-    is: uiDashBoxLib.UIBoxIsProp = null,
-    marginX: uiDashBoxLib.UIBoxProp = null,
-    marginY: uiDashBoxLib.UIBoxProp = null,
-    paddingX: uiDashBoxLib.UIBoxProp = null,
-    paddingY: uiDashBoxLib.UIBoxProp = null
+    is: UIBoxIsProp = null,
+    marginX: UIBoxProp = null,
+    marginY: UIBoxProp = null,
+    paddingX: UIBoxProp = null,
+    paddingY: UIBoxProp = null
   ): BoxProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

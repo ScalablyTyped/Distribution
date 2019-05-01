@@ -12,9 +12,9 @@ object ^ extends js.Object {
   val Info: scala.Double = js.native
   val None: scala.Double = js.native
   val Warn: scala.Double = js.native
-  def accessor[R](fn: vegaDashUtilLib.Fn[R]): AccessorFn[R] = js.native
-  def accessor[R](fn: vegaDashUtilLib.Fn[R], fields: js.Array[java.lang.String]): AccessorFn[R] = js.native
-  def accessor[R](fn: vegaDashUtilLib.Fn[R], fields: js.Array[java.lang.String], name: java.lang.String): AccessorFn[R] = js.native
+  def accessor[R](fn: Fn[R]): AccessorFn[R] = js.native
+  def accessor[R](fn: Fn[R], fields: js.Array[java.lang.String]): AccessorFn[R] = js.native
+  def accessor[R](fn: Fn[R], fields: js.Array[java.lang.String], name: java.lang.String): AccessorFn[R] = js.native
   def accessorFields(fn: AccessorFn[_]): js.Array[java.lang.String] = js.native
   def accessorName(fn: AccessorFn[_]): java.lang.String = js.native
   def array[T](v: T): js.Array[T] = js.native

@@ -62,7 +62,7 @@ trait SortField extends js.Object {
     *
     * Represents the subfield that is the target property name of a rich value to sort on.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var subField: js.UndefOr[java.lang.String] = js.undefined
 }

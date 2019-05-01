@@ -6,43 +6,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TransformObject extends js.Object {
-  var origin: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var originX: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var originY: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var rotate: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var rotation: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var scale: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var scaleX: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var scaleY: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var skew: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var skewX: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var skewY: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var translate: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var translateX: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var translateY: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var x: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var y: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var origin: js.UndefOr[NumberProp] = js.undefined
+  var originX: js.UndefOr[NumberProp] = js.undefined
+  var originY: js.UndefOr[NumberProp] = js.undefined
+  var rotate: js.UndefOr[NumberProp] = js.undefined
+  var rotation: js.UndefOr[NumberProp] = js.undefined
+  var scale: js.UndefOr[NumberProp] = js.undefined
+  var scaleX: js.UndefOr[NumberProp] = js.undefined
+  var scaleY: js.UndefOr[NumberProp] = js.undefined
+  var skew: js.UndefOr[NumberProp] = js.undefined
+  var skewX: js.UndefOr[NumberProp] = js.undefined
+  var skewY: js.UndefOr[NumberProp] = js.undefined
+  var translate: js.UndefOr[NumberProp] = js.undefined
+  var translateX: js.UndefOr[NumberProp] = js.undefined
+  var translateY: js.UndefOr[NumberProp] = js.undefined
+  var x: js.UndefOr[NumberProp] = js.undefined
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 
 object TransformObject {
   @scala.inline
   def apply(
-    origin: reactDashNativeDashSvgLib.NumberProp = null,
-    originX: reactDashNativeDashSvgLib.NumberProp = null,
-    originY: reactDashNativeDashSvgLib.NumberProp = null,
-    rotate: reactDashNativeDashSvgLib.NumberProp = null,
-    rotation: reactDashNativeDashSvgLib.NumberProp = null,
-    scale: reactDashNativeDashSvgLib.NumberProp = null,
-    scaleX: reactDashNativeDashSvgLib.NumberProp = null,
-    scaleY: reactDashNativeDashSvgLib.NumberProp = null,
-    skew: reactDashNativeDashSvgLib.NumberProp = null,
-    skewX: reactDashNativeDashSvgLib.NumberProp = null,
-    skewY: reactDashNativeDashSvgLib.NumberProp = null,
-    translate: reactDashNativeDashSvgLib.NumberProp = null,
-    translateX: reactDashNativeDashSvgLib.NumberProp = null,
-    translateY: reactDashNativeDashSvgLib.NumberProp = null,
-    x: reactDashNativeDashSvgLib.NumberProp = null,
-    y: reactDashNativeDashSvgLib.NumberProp = null
+    origin: NumberProp = null,
+    originX: NumberProp = null,
+    originY: NumberProp = null,
+    rotate: NumberProp = null,
+    rotation: NumberProp = null,
+    scale: NumberProp = null,
+    scaleX: NumberProp = null,
+    scaleY: NumberProp = null,
+    skew: NumberProp = null,
+    skewX: NumberProp = null,
+    skewY: NumberProp = null,
+    translate: NumberProp = null,
+    translateX: NumberProp = null,
+    translateY: NumberProp = null,
+    x: NumberProp = null,
+    y: NumberProp = null
   ): TransformObject = {
     val __obj = js.Dynamic.literal()
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait PageBreakLoadOptions extends js.Object {
   @JSName("$all")
@@ -16,16 +15,14 @@ trait PageBreakLoadOptions extends js.Object {
     *
     * Represents the column index for the page break
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var columnIndex: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the row index for the page break
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var rowIndex: js.UndefOr[scala.Boolean] = js.undefined
 }

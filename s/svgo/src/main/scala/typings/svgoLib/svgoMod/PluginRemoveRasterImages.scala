@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveRasterImages extends js.Object {
+trait PluginRemoveRasterImages extends PluginConfig {
   var removeRasterImages: scala.Boolean | js.Object
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FormatLevel extends js.Object {
-  var format: js.UndefOr[Format] = js.undefined
+  var format: js.UndefOr[log4jsLib.log4jsMod.Format] = js.undefined
   var level: js.UndefOr[java.lang.String] = js.undefined
   var nolog: js.UndefOr[js.Any] = js.undefined
   var statusRules: js.UndefOr[js.Array[_]] = js.undefined
@@ -15,7 +15,7 @@ trait Anon_FormatLevel extends js.Object {
 object Anon_FormatLevel {
   @scala.inline
   def apply(
-    format: Format = null,
+    format: log4jsLib.log4jsMod.Format = null,
     level: java.lang.String = null,
     nolog: js.Any = null,
     statusRules: js.Array[_] = null

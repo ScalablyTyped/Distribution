@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait Property
   extends BaseNode
-     with _Node {
+     with Node {
   var computed: scala.Boolean
-  var key: estreeLib.Expression
+  var key: Expression
    // Could be an AssignmentProperty
   var kind: estreeLib.estreeLibStrings.init | estreeLib.estreeLibStrings.get | estreeLib.estreeLibStrings.set
   var method: scala.Boolean
   var shorthand: scala.Boolean
   @JSName("type")
   var type_Property: estreeLib.estreeLibStrings.Property
-  var value: estreeLib.Expression | Pattern
+  var value: Expression | Pattern
 }
 
 object Property {
   @scala.inline
   def apply(
     computed: scala.Boolean,
-    key: estreeLib.Expression,
+    key: Expression,
     kind: estreeLib.estreeLibStrings.init | estreeLib.estreeLibStrings.get | estreeLib.estreeLibStrings.set,
     method: scala.Boolean,
     shorthand: scala.Boolean,
     `type`: estreeLib.estreeLibStrings.Property,
-    value: estreeLib.Expression | Pattern,
+    value: Expression | Pattern,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,

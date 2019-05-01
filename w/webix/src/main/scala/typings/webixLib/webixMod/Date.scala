@@ -10,14 +10,14 @@ trait Date extends js.Object {
   def add(date: js.Any, inc: scala.Double, mode: java.lang.String, copy: scala.Boolean): js.Any
   def copy(date: js.Any): js.Any
   def datePart(date: js.Any, copy: scala.Boolean): js.Any
-  def dateToStr(format: java.lang.String, utc: scala.Boolean): webixLib.WebixCallback
+  def dateToStr(format: java.lang.String, utc: scala.Boolean): WebixCallback
   def dayStart(date: js.Any): js.Any
   def equal(datea: js.Any, dateb: js.Any): scala.Boolean
   def getISOWeek(date: js.Any): scala.Double
   def getUTCISOWeek(date: js.Any): scala.Double
   def isHoliday(date: js.Any): scala.Boolean
   def monthStart(date: js.Any): js.Any
-  def strToDate(format: java.lang.String, utc: scala.Boolean): webixLib.WebixCallback
+  def strToDate(format: java.lang.String, utc: scala.Boolean): WebixCallback
   def timePart(date: js.Any): scala.Double
   def toFixed(num: scala.Double): scala.Double
   def weekStart(date: js.Any): js.Any
@@ -30,7 +30,7 @@ object Date {
     add: (js.Any, scala.Double, java.lang.String, scala.Boolean) => js.Any,
     copy: js.Any => js.Any,
     datePart: (js.Any, scala.Boolean) => js.Any,
-    dateToStr: (java.lang.String, scala.Boolean) => webixLib.WebixCallback,
+    dateToStr: (java.lang.String, scala.Boolean) => WebixCallback,
     dayStart: js.Any => js.Any,
     equal: (js.Any, js.Any) => scala.Boolean,
     getISOWeek: js.Any => scala.Double,
@@ -38,7 +38,7 @@ object Date {
     isHoliday: js.Any => scala.Boolean,
     monthStart: js.Any => js.Any,
     startOnMonday: scala.Boolean,
-    strToDate: (java.lang.String, scala.Boolean) => webixLib.WebixCallback,
+    strToDate: (java.lang.String, scala.Boolean) => WebixCallback,
     timePart: js.Any => scala.Double,
     toFixed: scala.Double => scala.Double,
     weekStart: js.Any => js.Any,

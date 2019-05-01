@@ -29,9 +29,10 @@ package object reactDashNativeDashElementsMod {
     - java.lang.String
   */
   type IconType = _IconType | java.lang.String
+  type RecursivePartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? object}
+    */ reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.RecursivePartial with js.Any
+  type SearchBarProps = SearchBarWrapper with SearchBarBase with SearchBarPlatform with SearchBarDefault with SearchBarIOS with SearchBarAndroid
   type Theme[T] = stdLib.Partial[FullTheme] with T
-  type UpdateTheme = js.Function1[
-    /* updates */ reactDashNativeDashElementsLib.RecursivePartial[FullTheme], 
-    scala.Unit
-  ]
+  type UpdateTheme = js.Function1[/* updates */ RecursivePartial[FullTheme], scala.Unit]
 }

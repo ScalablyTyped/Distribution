@@ -7,43 +7,54 @@ import scala.scalajs.js.annotation._
 
 object canvasjsLibStrings {
   @js.native
-  sealed trait dash extends DashType
+  sealed trait dash
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait dashDot extends DashType
+  sealed trait dashDot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait dot extends DashType
+  sealed trait dot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
   sealed trait jpg extends js.Object
   
   @js.native
-  sealed trait longDash extends DashType
+  sealed trait longDash
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait longDashDot extends DashType
+  sealed trait longDashDot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait longDashDotDot extends DashType
+  sealed trait longDashDotDot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
   sealed trait png extends js.Object
   
   @js.native
-  sealed trait shortDash extends DashType
+  sealed trait shortDash
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait shortDashDot extends DashType
+  sealed trait shortDashDot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait shortDashDotDot extends DashType
+  sealed trait shortDashDotDot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait shortDot extends DashType
+  sealed trait shortDot
+    extends canvasjsLib.canvasjsMod.DashType
   
   @js.native
-  sealed trait solid extends DashType
+  sealed trait solid
+    extends canvasjsLib.canvasjsMod.DashType
   
   @scala.inline
   def dash: dash = "dash".asInstanceOf[dash]

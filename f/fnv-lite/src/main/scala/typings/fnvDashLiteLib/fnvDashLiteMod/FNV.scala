@@ -16,6 +16,6 @@ trait FNV extends js.Object {
   def digest_base64Url(`type`: fnvDashLiteLib.fnvDashLiteLibStrings.base64Url): java.lang.String = js.native
   @JSName("digest")
   def digest_hex(`type`: fnvDashLiteLib.fnvDashLiteLibStrings.hex): java.lang.String = js.native
-  def update(input: fnvDashLiteLib.Input): this.type = js.native
+  def update(input: Input): this.type = js.native
 }
 

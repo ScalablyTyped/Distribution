@@ -59,7 +59,7 @@ class Cursor[T] ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#map */
   def map[U](transform: js.Function1[/* document */ T, U]): Cursor[U] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#max */
-  def max(max: scala.Double): Cursor[T] = js.native
+  def max(max: js.Object): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#maxAwaitTimeMS */
   def maxAwaitTimeMS(value: scala.Double): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#maxScan */
@@ -67,7 +67,7 @@ class Cursor[T] ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#maxTimeMS */
   def maxTimeMS(value: scala.Double): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#min */
-  def min(min: scala.Double): Cursor[T] = js.native
+  def min(min: js.Object): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#next */
   def next(): js.Promise[T | scala.Null] = js.native
   def next(callback: MongoCallback[T | scala.Null]): scala.Unit = js.native

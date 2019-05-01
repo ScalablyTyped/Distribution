@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 object webixLibStrings {
   @js.native
   sealed trait onAfterAdd
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -124,8 +124,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onAfterCursorChange
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
   
   @js.native
   sealed trait onAfterDateSelect
@@ -134,8 +134,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onAfterDelete
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -252,8 +252,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onAfterLoad
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -504,8 +504,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onAfterSort
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -578,8 +578,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBeforeAdd
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -703,8 +703,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBeforeCursorChange
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
   
   @js.native
   sealed trait onBeforeDateSelect
@@ -713,8 +713,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBeforeDelete
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -876,8 +876,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBeforeLoad
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -1062,8 +1062,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBeforeSort
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -1138,8 +1138,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBindRequest
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.abslayoutEventName
        with webixLib.webixMod.uiNs.accordionEventName
        with webixLib.webixMod.uiNs.accordionitemEventName
@@ -1242,8 +1242,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onBindUpdate
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
   
   @js.native
   sealed trait onBlur
@@ -1402,8 +1402,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onDataRequest
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -1434,8 +1434,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onDataUpdate
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -1471,8 +1471,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onDestruct
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.abslayoutEventName
        with webixLib.webixMod.uiNs.accordionEventName
        with webixLib.webixMod.uiNs.accordionitemEventName
@@ -2067,8 +2067,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onLoadError
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.chartEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datalayoutEventName
@@ -2974,8 +2974,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onValidationError
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName
@@ -2995,8 +2995,8 @@ object webixLibStrings {
   
   @js.native
   sealed trait onValidationSuccess
-    extends DataCollectionEventName
-       with TreeCollectionEventName
+    extends webixLib.webixMod.DataCollectionEventName
+       with webixLib.webixMod.TreeCollectionEventName
        with webixLib.webixMod.uiNs.contextmenuEventName
        with webixLib.webixMod.uiNs.datatableEventName
        with webixLib.webixMod.uiNs.dataviewEventName

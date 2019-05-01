@@ -26,24 +26,21 @@ class ChartSeries ()
     *
     * Encapsulates the bin options only for histogram chart and pareto chart. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val binOptions: ChartBinOptions = js.native
   /**
     *
     * Encapsulates the options for the Box & Whisker chart. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val boxwhiskerOptions: ChartBoxwhiskerOptions = js.native
   /**
     *
     * Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var bubbleScale: scala.Double = js.native
   /**
@@ -111,80 +108,70 @@ class ChartSeries ()
     *
     * Returns or sets the Color for maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumColor: java.lang.String = js.native
   /**
     *
     * Returns or sets the type for maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumType: ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = js.native
   /**
     *
     * Returns or sets the maximum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMaximumValue: scala.Double = js.native
   /**
     *
     * Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointColor: java.lang.String = js.native
   /**
     *
     * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointType: ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = js.native
   /**
     *
     * Returns or sets the midpoint value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMidpointValue: scala.Double = js.native
   /**
     *
     * Returns or sets the Color for minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumColor: java.lang.String = js.native
   /**
     *
     * Returns or sets the type for minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumType: ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = js.native
   /**
     *
     * Returns or sets the minimum value of a region map chart series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientMinimumValue: scala.Double = js.native
   /**
     *
     * Returns or sets series gradient style of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var gradientStyle: ChartGradientStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoPhaseColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreePhaseColor = js.native
   /**
@@ -198,8 +185,7 @@ class ChartSeries ()
     *
     * Returns or sets the fill color for negative data points in a series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var invertColor: java.lang.String = js.native
   /**
@@ -213,8 +199,7 @@ class ChartSeries ()
     *
     * Encapsulates the options for the Map chart. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val mapOptions: ChartMapOptions = js.native
   /**
@@ -263,8 +248,7 @@ class ChartSeries ()
     *
     * Returns or sets series parent label strategy area of a treemap chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var parentLabelStrategy: ChartParentLabelStrategy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Banner | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overlapping = js.native
   /**
@@ -292,16 +276,14 @@ class ChartSeries ()
     *
     * Returns or sets if connector lines show in a waterfall chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showConnectorLines: scala.Boolean = js.native
   /**
     *
     * True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showLeaderLines: scala.Boolean = js.native
   /**
@@ -329,8 +311,7 @@ class ChartSeries ()
     *
     * Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var splitValue: scala.Double = js.native
   /**
@@ -351,18 +332,16 @@ class ChartSeries ()
     *
     * Represents the error bar object for a chart series.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
-  val xerrorBars: ChartErrorBars = js.native
+  val xErrorBars: ChartErrorBars = js.native
   /**
     *
     * Represents the error bar object for a chart series.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
-  val yerrorBars: ChartErrorBars = js.native
+  val yErrorBars: ChartErrorBars = js.native
   /**
     *
     * Deletes the chart series.

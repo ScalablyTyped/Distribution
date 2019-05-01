@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TreeDataMove extends js.Object {
   @JSName("$dropAllow")
-  var $dropAllow_Original: webixLib.WebixCallback = js.native
+  var $dropAllow_Original: WebixCallback = js.native
   @JSName("$dropAllow")
   def $dropAllow(args: js.Any*): js.Any = js.native
   def copy(sid: java.lang.String, tindex: scala.Double): scala.Double = js.native

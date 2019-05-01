@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 class InactivityTimer ()
   extends NativeObject
      with _InactivityTimerProperties {
-  def this(properties: tabrisLib.Properties[InactivityTimer, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[InactivityTimer, TypeScriptPropertiesKey]) = this()
   /**
     * The interval of user inactivity that will trigger the timer. Given in milliseconds. Changes to this
     * property will not affect a running timer.
@@ -25,7 +25,7 @@ class InactivityTimer ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_InactivityTimer: tabrisLib.InactivityTimerProperties = js.native
+  val tsProperties_InactivityTimer: InactivityTimerProperties = js.native
   /**
     * Stops and resets the timer.
     */

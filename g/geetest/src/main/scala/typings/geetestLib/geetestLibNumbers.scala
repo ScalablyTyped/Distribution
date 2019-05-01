@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object geetestLibNumbers {
   @js.native
-  sealed trait `0` extends Success
+  sealed trait `0`
+    extends geetestLib.geetestMod.Success
   
   @js.native
-  sealed trait `1` extends Success
+  sealed trait `1`
+    extends geetestLib.geetestMod.Success
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

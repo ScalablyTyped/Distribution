@@ -9,7 +9,12 @@ object reactDashNativeDashSortableDashGridLibComponents {
   @scala.inline
   def ReactDashNativeDashSortableDashGrid: reactLib.reactMod.ComponentType[
     reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps
-  ] = js.constructorOf[reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
+  ] = reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps]]
+  @scala.inline
+  def defaultCls: reactLib.reactMod.ComponentType[
+    reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps
+  ] = js.constructorOf[reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.defaultCls].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps]]
   @scala.inline
   def SortableGridProps: reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps.type = reactDashNativeDashSortableDashGridLib.reactDashNativeDashSortableDashGridMod.SortableGridProps

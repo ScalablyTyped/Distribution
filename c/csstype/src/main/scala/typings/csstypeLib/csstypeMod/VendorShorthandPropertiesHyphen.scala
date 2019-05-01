@@ -17,17 +17,17 @@ trait VendorShorthandPropertiesHyphen[TLength] extends js.Object {
   /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
   var `-moz-transition`: js.UndefOr[TransitionProperty] = js.undefined
   /** The **`-ms-content-zoom-limit`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-limit-min` and `-ms-content-zoom-limit-max` properties. */
-  var `-ms-content-zoom-limit`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-content-zoom-limit`: js.UndefOr[GlobalsString] = js.undefined
   /** The **`-ms-content-zoom-snap`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-snap-type` and `-ms-content-zoom-snap-points` properties. */
   var `-ms-content-zoom-snap`: js.UndefOr[MsContentZoomSnapProperty] = js.undefined
   /** The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`. */
   var `-ms-flex`: js.UndefOr[FlexProperty[TLength]] = js.undefined
   /** The **\-ms-scroll-limit** CSS property is a Microsoft extension that specifies values for the `-ms-scroll-limit-x-min`, `-ms-scroll-limit-y-min`, `-ms-scroll-limit-x-max`, and `-ms-scroll-limit-y-max` properties. */
-  var `-ms-scroll-limit`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-scroll-limit`: js.UndefOr[GlobalsString] = js.undefined
   /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-x` properties. */
-  var `-ms-scroll-snap-x`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-scroll-snap-x`: js.UndefOr[GlobalsString] = js.undefined
   /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-y` properties. */
-  var `-ms-scroll-snap-y`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-scroll-snap-y`: js.UndefOr[GlobalsString] = js.undefined
   /** The **`border-image`** CSS property draws an image in place of an element's `border-style`. */
   var `-o-border-image`: js.UndefOr[BorderImageProperty] = js.undefined
   /** The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`. */
@@ -65,12 +65,12 @@ object VendorShorthandPropertiesHyphen {
     `-moz-column-rule`: ColumnRuleProperty[TLength] = null,
     `-moz-columns`: ColumnsProperty[TLength] = null,
     `-moz-transition`: TransitionProperty = null,
-    `-ms-content-zoom-limit`: csstypeLib.GlobalsString = null,
+    `-ms-content-zoom-limit`: GlobalsString = null,
     `-ms-content-zoom-snap`: MsContentZoomSnapProperty = null,
     `-ms-flex`: FlexProperty[TLength] = null,
-    `-ms-scroll-limit`: csstypeLib.GlobalsString = null,
-    `-ms-scroll-snap-x`: csstypeLib.GlobalsString = null,
-    `-ms-scroll-snap-y`: csstypeLib.GlobalsString = null,
+    `-ms-scroll-limit`: GlobalsString = null,
+    `-ms-scroll-snap-x`: GlobalsString = null,
+    `-ms-scroll-snap-y`: GlobalsString = null,
     `-o-border-image`: BorderImageProperty = null,
     `-webkit-animation`: AnimationProperty = null,
     `-webkit-border-before`: WebkitBorderBeforeProperty[TLength] = null,

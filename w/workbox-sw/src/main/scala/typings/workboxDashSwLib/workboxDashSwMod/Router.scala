@@ -80,7 +80,7 @@ trait Router extends js.Object {
   	 * will be called and given a chance to provide a response.
   	 * @param {HandlerCallback} handler - A callback function that returns a Promise resulting in a Response.
   	 */
-  def setCatchHandler(handler: workboxDashSwLib.HandlerCallback): scala.Unit
+  def setCatchHandler(handler: HandlerCallback): scala.Unit
   /**
   	 * Define a default `handler` that's called when no routes explicitly
   	 * match the incoming request.
@@ -89,7 +89,7 @@ trait Router extends js.Object {
   	 * network as if there were no service worker present.
   	 * @param {HandlerCallback} handler -    * @param {workbox.routing.Route~handlerCallback} handler A callback function that returns a Promise resulting in a Response.
   	 */
-  def setDefaultHandler(handler: workboxDashSwLib.HandlerCallback): scala.Unit
+  def setDefaultHandler(handler: HandlerCallback): scala.Unit
   /**
   	 * Unregisters a route with the router.
   	 * @param {Route} route - The route to unregister.
@@ -106,8 +106,8 @@ object Router {
     handleRequest: HandleRequestOptions => js.UndefOr[js.Promise[stdLib.Response]],
     registerRoute: Route => scala.Unit,
     routes: stdLib.Map[java.lang.String, js.Array[Route]],
-    setCatchHandler: workboxDashSwLib.HandlerCallback => scala.Unit,
-    setDefaultHandler: workboxDashSwLib.HandlerCallback => scala.Unit,
+    setCatchHandler: HandlerCallback => scala.Unit,
+    setDefaultHandler: HandlerCallback => scala.Unit,
     unregisterRoute: Route => scala.Unit
   ): Router = {
     val __obj = js.Dynamic.literal(addCacheListener = js.Any.fromFunction0(addCacheListener), addFetchListener = js.Any.fromFunction0(addFetchListener), findMatchingRoute = js.Any.fromFunction1(findMatchingRoute), handleRequest = js.Any.fromFunction1(handleRequest), registerRoute = js.Any.fromFunction1(registerRoute), routes = routes, setCatchHandler = js.Any.fromFunction1(setCatchHandler), setDefaultHandler = js.Any.fromFunction1(setDefaultHandler), unregisterRoute = js.Any.fromFunction1(unregisterRoute))

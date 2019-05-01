@@ -15,7 +15,7 @@ trait Bleno
   val mtu: scala.Double = js.native
   val platform: java.lang.String = js.native
   val rssi: scala.Double = js.native
-  val state: blenoLib.State = js.native
+  val state: State = js.native
   def disconnect(): scala.Unit = js.native
   @JSName("on")
   def on_accept(
@@ -54,10 +54,7 @@ trait Bleno
     cb: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_stateChange(
-    event: blenoLib.blenoLibStrings.stateChange,
-    cb: js.Function1[/* state */ blenoLib.State, scala.Unit]
-  ): this.type = js.native
+  def on_stateChange(event: blenoLib.blenoLibStrings.stateChange, cb: js.Function1[/* state */ State, scala.Unit]): this.type = js.native
   def setServices(services: js.Array[PrimaryService]): scala.Unit = js.native
   def setServices(
     services: js.Array[PrimaryService],

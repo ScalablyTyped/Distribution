@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Chain
   extends nodeLib.streamMod.Duplex {
-  var input: streamDashChainLib.Stream = js.native
-  var output: streamDashChainLib.Stream = js.native
-  var streams: js.Array[streamDashChainLib.Stream] = js.native
+  var input: Stream = js.native
+  var output: Stream = js.native
+  var streams: js.Array[Stream] = js.native
 }
 

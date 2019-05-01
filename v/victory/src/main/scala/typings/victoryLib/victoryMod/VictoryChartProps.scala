@@ -90,6 +90,7 @@ object VictoryChartProps {
     events: js.Array[EventPropTypeInterface[java.lang.String, StringOrNumberOrCallback]] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
@@ -107,6 +108,7 @@ object VictoryChartProps {
     if (events != null) __obj.updateDynamic("events")(events)
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (name != null) __obj.updateDynamic("name")(name)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

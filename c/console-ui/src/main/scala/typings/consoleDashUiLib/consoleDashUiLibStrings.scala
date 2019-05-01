@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object consoleDashUiLibStrings {
   @js.native
-  sealed trait DEBUG extends WriteLevel
+  sealed trait DEBUG
+    extends consoleDashUiLib.consoleDashUiMod.WriteLevel
   
   @js.native
-  sealed trait ERROR extends WriteLevel
+  sealed trait ERROR
+    extends consoleDashUiLib.consoleDashUiMod.WriteLevel
   
   @js.native
-  sealed trait INFO extends WriteLevel
+  sealed trait INFO
+    extends consoleDashUiLib.consoleDashUiMod.WriteLevel
   
   @js.native
-  sealed trait WARNING extends WriteLevel
+  sealed trait WARNING
+    extends consoleDashUiLib.consoleDashUiMod.WriteLevel
   
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]

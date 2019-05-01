@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ModifyEventSubscriptionMessage extends js.Object {
   /**
-    *  A Boolean value; set to true to activate the subscription. 
+    *  A Boolean value; set to true to activate the subscription.
     */
   var Enabled: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    *  A list of event categories for a SourceType that you want to subscribe to. You can see a list of the categories for a given SourceType by using the DescribeEventCategories action. 
+    *  A list of event categories for a SourceType that you want to subscribe to. You can see a list of the categories for a given SourceType by using the DescribeEventCategories action.
     */
   var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   /**

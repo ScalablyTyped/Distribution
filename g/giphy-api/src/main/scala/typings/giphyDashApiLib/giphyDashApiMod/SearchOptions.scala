@@ -15,8 +15,8 @@ object SearchOptions {
   @scala.inline
   def apply(
     q: java.lang.String,
-    rating: giphyDashApiLib.Rating,
-    fmt: giphyDashApiLib.Format = null,
+    rating: Rating,
+    fmt: Format = null,
     limit: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null
   ): SearchOptions = {

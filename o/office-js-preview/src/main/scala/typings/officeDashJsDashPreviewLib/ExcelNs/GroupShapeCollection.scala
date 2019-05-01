@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents the shape collection inside a shape group.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.GroupShapeCollection")
 @js.native
@@ -25,26 +24,23 @@ class GroupShapeCollection ()
     *
     * Returns the number of shapes in the shape group. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
     *
-    * Gets a shape using its name.
+    * Gets a shape using its Name or ID.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
-    * @param name The name of the shape to be retrieved.
+    * @param key The Name or ID of the shape to be retrieved.
     */
-  def getItem(name: java.lang.String): Shape = js.native
+  def getItem(key: java.lang.String): Shape = js.native
   /**
     *
     * Gets a shape based on its position in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param index The zero-based index value of the object to be retrieved.
     */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveUnusedNS extends js.Object {
+trait PluginRemoveUnusedNS extends PluginConfig {
   var removeUnusedNS: scala.Boolean | js.Object
 }
 

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 class ActionSheet ()
   extends Popup
      with _ActionSheetProperties {
-  def this(properties: tabrisLib.Properties[ActionSheet, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[ActionSheet, TypeScriptPropertiesKey]) = this()
   /**
     * An array of objects describing the actions to be displayed. Each action must have a title and it can
     * also have an image. Actions with the style `cancel` or `destructive` are displayed in a special way.
@@ -35,7 +35,7 @@ class ActionSheet ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_ActionSheet: tabrisLib.ActionSheetProperties = js.native
+  val tsProperties_ActionSheet: ActionSheetProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

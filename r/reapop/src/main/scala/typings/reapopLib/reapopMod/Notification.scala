@@ -16,8 +16,8 @@ trait Notification extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
   var onAdd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onRemove: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var position: js.UndefOr[java.lang.String | reapopLib.POSITION] = js.undefined
-  var status: js.UndefOr[java.lang.String | scala.Double | reapopLib.STATUSES] = js.undefined
+  var position: js.UndefOr[java.lang.String | POSITION] = js.undefined
+  var status: js.UndefOr[java.lang.String | scala.Double | STATUSES] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -34,8 +34,8 @@ object Notification {
     message: java.lang.String = null,
     onAdd: () => scala.Unit = null,
     onRemove: () => scala.Unit = null,
-    position: java.lang.String | reapopLib.POSITION = null,
-    status: java.lang.String | scala.Double | reapopLib.STATUSES = null,
+    position: java.lang.String | POSITION = null,
+    status: java.lang.String | scala.Double | STATUSES = null,
     title: java.lang.String = null
   ): Notification = {
     val __obj = js.Dynamic.literal()

@@ -23,7 +23,7 @@ trait DBSubnetGroup extends js.Object {
     */
   var SubnetGroupStatus: js.UndefOr[String] = js.undefined
   /**
-    *  Contains a list of Subnet elements. 
+    *  Contains a list of Subnet elements.
     */
   var Subnets: js.UndefOr[SubnetList] = js.undefined
   /**

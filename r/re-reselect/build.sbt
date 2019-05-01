@@ -1,14 +1,15 @@
 organization := "org.scalablytyped"
 name := "re-reselect"
-version := "3.1.0-433ba3"
+version := "3.1.0-eec491"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "reselect" % "4.0.0-c46d6e",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
+  "org.scalablytyped" %%% "reselect" % "4.0.0-b617f7",
+  "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

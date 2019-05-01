@@ -11,36 +11,16 @@ trait Anon_A extends js.Object {
   // Base component for plain JS classes
   // tslint:disable-next-line:no-empty-interface
   var Component: Anon_ContextType = js.native
-  @JSName("Fragment")
-  val Fragment_Original: reactLib.reactMod.ExoticComponent[reactLib.Anon_Children] = js.native
+  val Fragment: reactLib.reactMod.ExoticComponent[reactLib.Anon_Children] = js.native
   var PureComponent: org.scalablytyped.runtime.Instantiable0[reactLib.reactMod.PureComponent[js.Object, js.Object, js.Object]] = js.native
-  @JSName("StrictMode")
-  val StrictMode_Original: reactLib.reactMod.ExoticComponent[reactLib.Anon_Children] = js.native
+  val StrictMode: reactLib.reactMod.ExoticComponent[reactLib.Anon_Children] = js.native
   /**
     * This feature is not yet available for server-side rendering.
     * Suspense support will be added in a later release.
     */
-  @JSName("Suspense")
-  val Suspense_Original: reactLib.reactMod.ExoticComponent[reactLib.reactMod.SuspenseProps] = js.native
-  @JSName("unstable_Profiler")
-  val unstable_Profiler_Original: reactLib.reactMod.ExoticComponent[reactLib.reactMod.ProfilerProps] = js.native
+  val Suspense: reactLib.reactMod.ExoticComponent[reactLib.reactMod.SuspenseProps] = js.native
+  val unstable_Profiler: reactLib.reactMod.ExoticComponent[reactLib.reactMod.ProfilerProps] = js.native
   val version: java.lang.String = js.native
-  /**
-    * **NOTE**: Exotic components are not callable.
-    */
-  def Fragment(props: reactLib.Anon_Children): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  /**
-    * **NOTE**: Exotic components are not callable.
-    */
-  def StrictMode(props: reactLib.Anon_Children): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  /**
-    * **NOTE**: Exotic components are not callable.
-    */
-  /**
-    * This feature is not yet available for server-side rendering.
-    * Suspense support will be added in a later release.
-    */
-  def Suspense(props: reactLib.reactMod.SuspenseProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   // Custom components
   def cloneElement[P](element: reactLib.reactMod.FunctionComponentElement[P]): reactLib.reactMod.FunctionComponentElement[P] = js.native
   def cloneElement[P](
@@ -216,10 +196,6 @@ trait Anon_A extends js.Object {
       scala.Boolean
     ]
   ): reactLib.reactMod.NamedExoticComponent[P] = js.native
-  /**
-    * **NOTE**: Exotic components are not callable.
-    */
-  def unstable_Profiler(props: reactLib.reactMod.ProfilerProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
   // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
   // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
   /**

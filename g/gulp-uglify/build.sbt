@@ -1,16 +1,17 @@
 organization := "org.scalablytyped"
 name := "gulp-uglify"
-version := "3.0-dt-20181015Z-9f1de6"
+version := "3.0-dt-20181015Z-122a26"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-3d82c0",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-e5143c")
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-6cb46e",
+  "org.scalablytyped" %%% "std" % "3.4-495f93",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-a6952d")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): through2Lib.through2Mod.Through2Constructor = js.native
-  def apply(fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def apply(fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def apply(options: Through2MapOptions): through2Lib.through2Mod.Through2Constructor = js.native
-  def apply(options: Through2MapOptions, fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def apply(options: Through2MapOptions, fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def ctor(): through2Lib.through2Mod.Through2Constructor = js.native
-  def ctor(fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def ctor(fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def ctor(options: Through2MapOptions): through2Lib.through2Mod.Through2Constructor = js.native
-  def ctor(options: Through2MapOptions, fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def ctor(options: Through2MapOptions, fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def obj(): through2Lib.through2Mod.Through2Constructor = js.native
-  def obj(fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def obj(fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def obj(options: Through2MapOptions): through2Lib.through2Mod.Through2Constructor = js.native
-  def obj(options: Through2MapOptions, fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def obj(options: Through2MapOptions, fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def objCtor(): through2Lib.through2Mod.Through2Constructor = js.native
-  def objCtor(fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def objCtor(fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
   def objCtor(options: Through2MapOptions): through2Lib.through2Mod.Through2Constructor = js.native
-  def objCtor(options: Through2MapOptions, fn: through2DashMapLib.MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
+  def objCtor(options: Through2MapOptions, fn: MapCallback): through2Lib.through2Mod.Through2Constructor = js.native
 }
 

@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_CacheObject extends _Options {
-  var cacheObject: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ICacheObject */ js.Any
-  var selectorCreator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CreateSelectorInstance */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CreateSelectorInstance */ js.Any
-  ] = js.undefined
+trait Anon_CacheObject
+  extends reDashReselectLib.reDashReselectMod.Options {
+  var cacheObject: reDashReselectLib.reDashReselectMod.ICacheObject
+  var selectorCreator: js.UndefOr[reDashReselectLib.reDashReselectMod.CreateSelectorInstance] = js.undefined
 }
 
 object Anon_CacheObject {
   @scala.inline
   def apply(
-    cacheObject: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ICacheObject */ js.Any,
-    selectorCreator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CreateSelectorInstance */ js.Any = null
+    cacheObject: reDashReselectLib.reDashReselectMod.ICacheObject,
+    selectorCreator: reDashReselectLib.reDashReselectMod.CreateSelectorInstance = null
   ): Anon_CacheObject = {
     val __obj = js.Dynamic.literal(cacheObject = cacheObject)
     if (selectorCreator != null) __obj.updateDynamic("selectorCreator")(selectorCreator)

@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AwaitExpression extends BaseNode {
-  var argument: estreeLib.Expression
+trait AwaitExpression
+  extends BaseNode
+     with Expression {
+  var argument: Expression
   @JSName("type")
   var type_AwaitExpression: estreeLib.estreeLibStrings.AwaitExpression
 }
@@ -14,7 +16,7 @@ trait AwaitExpression extends BaseNode {
 object AwaitExpression {
   @scala.inline
   def apply(
-    argument: estreeLib.Expression,
+    argument: Expression,
     `type`: estreeLib.estreeLibStrings.AwaitExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

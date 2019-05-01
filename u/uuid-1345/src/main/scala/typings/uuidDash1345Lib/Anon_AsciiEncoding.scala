@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AsciiEncoding extends js.Object {
   var encoding: uuidDash1345Lib.uuidDash1345LibStrings.ascii
   var name: java.lang.String
-  var namespace: UuidTypes
+  var namespace: uuidDash1345Lib.uuidDash1345Mod.UuidTypes
 }
 
 object Anon_AsciiEncoding {
@@ -16,7 +16,7 @@ object Anon_AsciiEncoding {
   def apply(
     encoding: uuidDash1345Lib.uuidDash1345LibStrings.ascii,
     name: java.lang.String,
-    namespace: UuidTypes
+    namespace: uuidDash1345Lib.uuidDash1345Mod.UuidTypes
   ): Anon_AsciiEncoding = {
     val __obj = js.Dynamic.literal(encoding = encoding, name = name, namespace = namespace.asInstanceOf[js.Any])
   

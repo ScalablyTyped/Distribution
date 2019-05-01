@@ -37,7 +37,7 @@ trait Server
       /* err */ stdLib.Error, 
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
-      /* target */ httpDashProxyLib.ProxyTargetUrl, 
+      /* target */ ProxyTargetUrl, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -52,7 +52,7 @@ trait Server
     ]
   ): this.type = js.native
   @JSName("on")
-  def on_error(event: httpDashProxyLib.httpDashProxyLibStrings.error, listener: httpDashProxyLib.ErrorCallback): this.type = js.native
+  def on_error(event: httpDashProxyLib.httpDashProxyLibStrings.error, listener: ErrorCallback): this.type = js.native
   @JSName("on")
   def on_proxyReq(
     event: httpDashProxyLib.httpDashProxyLibStrings.proxyReq,
@@ -92,7 +92,7 @@ trait Server
     listener: js.Function3[
       /* req */ nodeLib.httpMod.IncomingMessage, 
       /* res */ nodeLib.httpMod.ServerResponse, 
-      /* target */ httpDashProxyLib.ProxyTargetUrl, 
+      /* target */ ProxyTargetUrl, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -110,7 +110,7 @@ trait Server
     req: nodeLib.httpMod.IncomingMessage,
     res: nodeLib.httpMod.ServerResponse,
     options: ServerOptions,
-    callback: httpDashProxyLib.ErrorCallback
+    callback: ErrorCallback
   ): scala.Unit = js.native
   /**
     * Used for proxying regular HTTP(S) requests

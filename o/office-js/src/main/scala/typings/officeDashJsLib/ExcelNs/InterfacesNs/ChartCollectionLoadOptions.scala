@@ -94,6 +94,13 @@ trait ChartCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Encapsulates the options for the pivot chart.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var pivotOptions: js.UndefOr[ChartPivotOptionsLoadOptions] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Represents the plotArea for the chart.
     *
     * [Api set: ExcelApi 1.8]
@@ -196,6 +203,7 @@ object ChartCollectionLoadOptions {
     left: js.UndefOr[scala.Boolean] = js.undefined,
     legend: ChartLegendLoadOptions = null,
     name: js.UndefOr[scala.Boolean] = js.undefined,
+    pivotOptions: ChartPivotOptionsLoadOptions = null,
     plotArea: ChartPlotAreaLoadOptions = null,
     plotBy: js.UndefOr[scala.Boolean] = js.undefined,
     plotVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined,
@@ -222,6 +230,7 @@ object ChartCollectionLoadOptions {
     if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (pivotOptions != null) __obj.updateDynamic("pivotOptions")(pivotOptions)
     if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea)
     if (!js.isUndefined(plotBy)) __obj.updateDynamic("plotBy")(plotBy)
     if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly)

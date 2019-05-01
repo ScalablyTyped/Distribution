@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait InjectOptions extends js.Object {
   var authority: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[nodeLib.httpMod.IncomingHttpHeaders | nodeLib.httpMod.OutgoingHttpHeaders] = js.undefined
-  var method: js.UndefOr[lightDashMyDashRequestLib.HTTPMethods] = js.undefined
+  var method: js.UndefOr[HTTPMethods] = js.undefined
   var payload: js.UndefOr[InjectPayload] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
   var remoteAddress: js.UndefOr[java.lang.String] = js.undefined
@@ -24,7 +24,7 @@ object InjectOptions {
     url: java.lang.String | lightDashMyDashRequestLib.Anon_Hostname,
     authority: java.lang.String = null,
     headers: nodeLib.httpMod.IncomingHttpHeaders | nodeLib.httpMod.OutgoingHttpHeaders = null,
-    method: lightDashMyDashRequestLib.HTTPMethods = null,
+    method: HTTPMethods = null,
     payload: InjectPayload = null,
     query: java.lang.String = null,
     remoteAddress: java.lang.String = null,

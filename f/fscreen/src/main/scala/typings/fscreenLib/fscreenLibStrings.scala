@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object fscreenLibStrings {
   @js.native
-  sealed trait exitFullscreen extends EventName
+  sealed trait exitFullscreen
+    extends fscreenLib.fscreenMod.EventName
   
   @js.native
-  sealed trait fullscreenElement extends EventName
+  sealed trait fullscreenElement
+    extends fscreenLib.fscreenMod.EventName
   
   @js.native
-  sealed trait fullscreenEnabled extends EventName
+  sealed trait fullscreenEnabled
+    extends fscreenLib.fscreenMod.EventName
   
   @js.native
-  sealed trait fullscreenchange extends EventName
+  sealed trait fullscreenchange
+    extends fscreenLib.fscreenMod.EventName
   
   @js.native
-  sealed trait fullscreenerror extends EventName
+  sealed trait fullscreenerror
+    extends fscreenLib.fscreenMod.EventName
   
   @js.native
-  sealed trait requestFullscreen extends EventName
+  sealed trait requestFullscreen
+    extends fscreenLib.fscreenMod.EventName
   
   @scala.inline
   def exitFullscreen: exitFullscreen = "exitFullscreen".asInstanceOf[exitFullscreen]

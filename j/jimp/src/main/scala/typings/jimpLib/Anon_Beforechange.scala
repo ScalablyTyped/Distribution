@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Beforechange[T /* <: ListenableName */]
+trait Anon_Beforechange[T /* <: jimpLib.jimpMod.ListenableName */]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
-     with ListenerData[T] {
+     with jimpLib.jimpMod.ListenerData[T] {
   var eventName: jimpLib.jimpLibStrings.`before-change` | jimpLib.jimpLibStrings.changed
   var methodName: T
 }
 
 object Anon_Beforechange {
   @scala.inline
-  def apply[T /* <: ListenableName */](
+  def apply[T /* <: jimpLib.jimpMod.ListenableName */](
     eventName: jimpLib.jimpLibStrings.`before-change` | jimpLib.jimpLibStrings.changed,
     methodName: T,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null

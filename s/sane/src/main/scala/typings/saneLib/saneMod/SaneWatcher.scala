@@ -27,7 +27,7 @@ trait SaneWatcher
   def addListener_all(
     event: saneLib.saneLibStrings.all,
     listener: js.Function4[
-      /* eventType */ saneLib.AllEventType, 
+      /* eventType */ AllEventType, 
       /* path */ java.lang.String, 
       /* root */ java.lang.String, 
       /* stat */ js.UndefOr[nodeLib.fsMod.Stats], 
@@ -65,14 +65,14 @@ trait SaneWatcher
   @JSName("emit")
   def emit_all(
     event: saneLib.saneLibStrings.all,
-    eventType: saneLib.AllEventType,
+    eventType: AllEventType,
     path: java.lang.String,
     root: java.lang.String
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_all(
     event: saneLib.saneLibStrings.all,
-    eventType: saneLib.AllEventType,
+    eventType: AllEventType,
     path: java.lang.String,
     root: java.lang.String,
     stat: nodeLib.fsMod.Stats
@@ -90,9 +90,9 @@ trait SaneWatcher
   def emit_error(event: saneLib.saneLibStrings.error, error: stdLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_ready(event: saneLib.saneLibStrings.ready): scala.Boolean = js.native
-  def listenerCount(`type`: saneLib.EventType): scala.Double = js.native
+  def listenerCount(`type`: EventType): scala.Double = js.native
   // tslint:disable-next-line ban-types
-  def listeners(event: saneLib.EventType): js.Array[js.Function] = js.native
+  def listeners(event: EventType): js.Array[js.Function] = js.native
   @JSName("on")
   def on_add(
     event: saneLib.saneLibStrings.add,
@@ -107,7 +107,7 @@ trait SaneWatcher
   def on_all(
     event: saneLib.saneLibStrings.all,
     listener: js.Function4[
-      /* eventType */ saneLib.AllEventType, 
+      /* eventType */ AllEventType, 
       /* path */ java.lang.String, 
       /* root */ java.lang.String, 
       /* stat */ js.UndefOr[nodeLib.fsMod.Stats], 
@@ -147,7 +147,7 @@ trait SaneWatcher
   def once_all(
     event: saneLib.saneLibStrings.all,
     listener: js.Function4[
-      /* eventType */ saneLib.AllEventType, 
+      /* eventType */ AllEventType, 
       /* path */ java.lang.String, 
       /* root */ java.lang.String, 
       /* stat */ js.UndefOr[nodeLib.fsMod.Stats], 
@@ -187,7 +187,7 @@ trait SaneWatcher
   def prependListener_all(
     event: saneLib.saneLibStrings.all,
     listener: js.Function4[
-      /* eventType */ saneLib.AllEventType, 
+      /* eventType */ AllEventType, 
       /* path */ java.lang.String, 
       /* root */ java.lang.String, 
       /* stat */ js.UndefOr[nodeLib.fsMod.Stats], 
@@ -227,7 +227,7 @@ trait SaneWatcher
   def prependOnceListener_all(
     event: saneLib.saneLibStrings.all,
     listener: js.Function4[
-      /* eventType */ saneLib.AllEventType, 
+      /* eventType */ AllEventType, 
       /* path */ java.lang.String, 
       /* root */ java.lang.String, 
       /* stat */ js.UndefOr[nodeLib.fsMod.Stats], 
@@ -253,7 +253,7 @@ trait SaneWatcher
   def prependOnceListener_error(event: saneLib.saneLibStrings.error, listener: js.Function1[/* error */ stdLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_ready(event: saneLib.saneLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
-  def removeAllListeners(event: saneLib.EventType): this.type = js.native
+  def removeAllListeners(event: EventType): this.type = js.native
   @JSName("removeListener")
   def removeListener_add(
     event: saneLib.saneLibStrings.add,
@@ -268,7 +268,7 @@ trait SaneWatcher
   def removeListener_all(
     event: saneLib.saneLibStrings.all,
     listener: js.Function4[
-      /* eventType */ saneLib.AllEventType, 
+      /* eventType */ AllEventType, 
       /* path */ java.lang.String, 
       /* root */ java.lang.String, 
       /* stat */ js.UndefOr[nodeLib.fsMod.Stats], 

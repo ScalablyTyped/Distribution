@@ -12,7 +12,7 @@ object ^ extends js.Object {
   val componentByNodeRegistry: js.Any = js.native
   val renderReporter: RenderReporter = js.native
   def disposeOnUnmount(target: reactLib.reactMod.Component[_, _, _], propertyKey: java.lang.String): scala.Unit = js.native
-  def disposeOnUnmount[TF /* <: mobxDashReactLib.Disposer | js.Array[mobxDashReactLib.Disposer] */](target: reactLib.reactMod.Component[_, _, _], fn: TF): TF = js.native
+  def disposeOnUnmount[TF /* <: Disposer | js.Array[Disposer] */](target: reactLib.reactMod.Component[_, _, _], fn: TF): TF = js.native
   def inject(stores: java.lang.String*): js.Function1[/* target */ IReactComponent[_], IReactComponent[_] with IWrappedComponent[_]] = js.native
   def inject[S, P, I, C](fn: IStoresToProps[S, P, I, C]): js.Function1[/* target */ IReactComponent[_], IReactComponent[_] with IWrappedComponent[P]] = js.native
   def observer(stores: js.Array[java.lang.String]): js.Function1[/* clazz */ IReactComponent[_], scala.Unit] = js.native

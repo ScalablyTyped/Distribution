@@ -38,7 +38,7 @@ trait args extends js.Object {
     name: java.lang.String,
     description: java.lang.String,
     defaultValue: js.Any,
-    init: argsLib.OptionInitFunction
+    init: OptionInitFunction
   ): args = js.native
   def option(name: js.Tuple2[java.lang.String, java.lang.String], description: java.lang.String): args = js.native
   def option(
@@ -50,7 +50,7 @@ trait args extends js.Object {
     name: js.Tuple2[java.lang.String, java.lang.String],
     description: java.lang.String,
     defaultValue: js.Any,
-    init: argsLib.OptionInitFunction
+    init: OptionInitFunction
   ): args = js.native
   def options(list: js.Array[Option]): args = js.native
   def parse(argv: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native

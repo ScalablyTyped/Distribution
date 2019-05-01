@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 class DateDialog ()
   extends Popup
      with _DateDialogProperties {
-  def this(properties: tabrisLib.Properties[DateDialog, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[DateDialog, TypeScriptPropertiesKey]) = this()
   /**
     * The date to be displayed in the dialog. The current date is used when no date is provided.
     */
@@ -35,7 +35,7 @@ class DateDialog ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_DateDialog: tabrisLib.DateDialogProperties = js.native
+  val tsProperties_DateDialog: DateDialogProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

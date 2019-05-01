@@ -64,7 +64,7 @@ class QuestionSelectBase protected () extends Question {
   var otherText: java.lang.String = js.native
   var renderedValue: js.Any = js.native
   /**
-    * Please user survey.storeOthersAsComment to change the behavior on the survey level. This property is depricated and invisible in Survey Creator.
+    * Please use survey.storeOthersAsComment to change the behavior on the survey level. This property is depricated and invisible in Survey Creator.
     * By default the entered text in the others input in the checkbox/radiogroup/dropdown are stored as "question name " + "-Comment". The value itself is "question name": "others". Set this property to false, to store the entered text directly in the "question name" key.
     * Possible values are: "default", true, false
     * @see SurveyModel.storeOthersAsComment

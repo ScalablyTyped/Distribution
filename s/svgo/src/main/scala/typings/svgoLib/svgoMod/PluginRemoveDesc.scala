@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveDesc extends js.Object {
+trait PluginRemoveDesc extends PluginConfig {
   var removeDesc: scala.Boolean | js.Object
 }
 

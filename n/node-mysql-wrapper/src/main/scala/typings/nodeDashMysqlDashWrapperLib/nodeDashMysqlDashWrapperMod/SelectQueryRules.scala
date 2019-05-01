@@ -40,7 +40,7 @@ class SelectQueryRules () extends js.Object {
   def limit(limitRowsOrStart: scala.Double, limitEnd: scala.Double): SelectQueryRules = js.native
   def orderBy(columnKey: java.lang.String): SelectQueryRules = js.native
   def orderBy(columnKey: java.lang.String, descending: scala.Boolean): SelectQueryRules = js.native
-  def toRawObject(): nodeDashMysqlDashWrapperLib.RawRules = js.native
+  def toRawObject(): RawRules = js.native
 }
 
 /* static members */
@@ -49,8 +49,8 @@ class SelectQueryRules () extends js.Object {
 object SelectQueryRules extends js.Object {
    //auto den benei oute sto last, oute sto from.
   def build(): nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.SelectQueryRules = js.native
-  def fromRawObject(obj: nodeDashMysqlDashWrapperLib.RawRules): nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.SelectQueryRules = js.native
-  def toRawObject(rules: nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.SelectQueryRules): nodeDashMysqlDashWrapperLib.RawRules = js.native
+  def fromRawObject(obj: nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.RawRules): nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.SelectQueryRules = js.native
+  def toRawObject(rules: nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.SelectQueryRules): nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.RawRules = js.native
   def toString(rules: nodeDashMysqlDashWrapperLib.nodeDashMysqlDashWrapperMod.SelectQueryRules): java.lang.String = js.native
 }
 

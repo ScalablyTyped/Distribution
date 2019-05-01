@@ -17,15 +17,13 @@ trait WidgetEvents extends NativeObjectEvents {
     * Fired when the [*backgroundImage*](#backgroundImage) property has changed.
     * @param value The new value of [*backgroundImage*](#backgroundImage).
     */
-  var backgroundImageChanged: js.UndefOr[
-    js.Function1[/* event */ PropertyChangedEvent[Widget, tabrisLib.Image], scala.Unit]
-  ] = js.undefined
+  var backgroundImageChanged: js.UndefOr[js.Function1[/* event */ PropertyChangedEvent[Widget, Image], scala.Unit]] = js.undefined
   /**
     * Fired when the [*baseline*](#baseline) property has changed.
     * @param value The new value of [*baseline*](#baseline).
     */
   var baselineChanged: js.UndefOr[
-    js.Function1[/* event */ PropertyChangedEvent[Widget, Widget | tabrisLib.Selector], scala.Unit]
+    js.Function1[/* event */ PropertyChangedEvent[Widget, Widget | Selector], scala.Unit]
   ] = js.undefined
   /**
     * Fired when the [*bottom*](#bottom) property has changed.
@@ -261,8 +259,8 @@ object WidgetEvents {
   @scala.inline
   def apply(
     backgroundChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.Color] => scala.Unit = null,
-    backgroundImageChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.Image] => scala.Unit = null,
-    baselineChanged: /* event */ PropertyChangedEvent[Widget, Widget | tabrisLib.Selector] => scala.Unit = null,
+    backgroundImageChanged: /* event */ PropertyChangedEvent[Widget, Image] => scala.Unit = null,
+    baselineChanged: /* event */ PropertyChangedEvent[Widget, Widget | Selector] => scala.Unit = null,
     bottomChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.margin] => scala.Unit = null,
     boundsChanged: /* event */ PropertyChangedEvent[Widget, Bounds] => scala.Unit = null,
     centerXChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.offset] => scala.Unit = null,

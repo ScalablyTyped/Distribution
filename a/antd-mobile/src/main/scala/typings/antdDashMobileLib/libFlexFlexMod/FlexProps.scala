@@ -22,7 +22,6 @@ object FlexProps {
   def apply(
     align: antdDashMobileLib.antdDashMobileLibStrings.start | antdDashMobileLib.antdDashMobileLibStrings.center | antdDashMobileLib.antdDashMobileLibStrings.end | antdDashMobileLib.antdDashMobileLibStrings.baseline | antdDashMobileLib.antdDashMobileLibStrings.stretch = null,
     alignContent: antdDashMobileLib.antdDashMobileLibStrings.start | antdDashMobileLib.antdDashMobileLibStrings.end | antdDashMobileLib.antdDashMobileLibStrings.center | antdDashMobileLib.antdDashMobileLibStrings.between | antdDashMobileLib.antdDashMobileLibStrings.around | antdDashMobileLib.antdDashMobileLibStrings.stretch = null,
-    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     direction: antdDashMobileLib.antdDashMobileLibStrings.row | antdDashMobileLib.antdDashMobileLibStrings.`row-reverse` | antdDashMobileLib.antdDashMobileLibStrings.column | antdDashMobileLib.antdDashMobileLibStrings.`column-reverse` = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -36,7 +35,6 @@ object FlexProps {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

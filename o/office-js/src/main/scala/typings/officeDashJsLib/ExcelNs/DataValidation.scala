@@ -70,6 +70,20 @@ class DataValidation ()
     */
   def clear(): scala.Unit = js.native
   /**
+    *
+    * Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will throw an ItemNotFound error.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def getInvalidCells(): RangeAreas = js.native
+  /**
+    *
+    * Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will return null.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def getInvalidCellsOrNullObject(): RangeAreas = js.native
+  /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
     * @remarks

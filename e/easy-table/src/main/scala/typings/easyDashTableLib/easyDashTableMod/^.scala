@@ -17,31 +17,27 @@ object ^ extends js.Object {
     */
   var aggr: Aggregators = js.native
   @JSName("padLeft")
-  var padLeft_Original: easyDashTableLib.CellPrinter[java.lang.String] = js.native
+  var padLeft_Original: CellPrinter[java.lang.String] = js.native
   /**
     * Create a printer which right aligns the content by padding with `ch` on the left
     *
     * @param {String} ch
     * @returns {Function}
     */
-  def leftPadder[T](ch: java.lang.String): easyDashTableLib.CellPrinter[T] = js.native
+  def leftPadder[T](ch: java.lang.String): CellPrinter[T] = js.native
   /**
     * Same as `Table.print()` but yields the result to `console.log()`
     */
   def log[T](obj: T): scala.Unit = js.native
-  def log[T](obj: T, format: easyDashTableLib.FormatFunction[T]): scala.Unit = js.native
-  def log[T](obj: T, format: easyDashTableLib.FormatFunction[T], cb: easyDashTableLib.TablePostProcessing): scala.Unit = js.native
+  def log[T](obj: T, format: FormatFunction[T]): scala.Unit = js.native
+  def log[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): scala.Unit = js.native
   def log[T](obj: T, format: FormatObject): scala.Unit = js.native
-  def log[T](obj: T, format: FormatObject, cb: easyDashTableLib.TablePostProcessing): scala.Unit = js.native
+  def log[T](obj: T, format: FormatObject, cb: TablePostProcessing): scala.Unit = js.native
   def log[T](obj: js.Array[T]): scala.Unit = js.native
-  def log[T](obj: js.Array[T], format: easyDashTableLib.FormatFunction[T]): scala.Unit = js.native
-  def log[T](
-    obj: js.Array[T],
-    format: easyDashTableLib.FormatFunction[T],
-    cb: easyDashTableLib.TablePostProcessing
-  ): scala.Unit = js.native
+  def log[T](obj: js.Array[T], format: FormatFunction[T]): scala.Unit = js.native
+  def log[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): scala.Unit = js.native
   def log[T](obj: js.Array[T], format: FormatObject): scala.Unit = js.native
-  def log[T](obj: js.Array[T], format: FormatObject, cb: easyDashTableLib.TablePostProcessing): scala.Unit = js.native
+  def log[T](obj: js.Array[T], format: FormatObject, cb: TablePostProcessing): scala.Unit = js.native
   // public static padRight: CellPrinter<string>;
   /**
     * Create a printer for numbers
@@ -51,8 +47,8 @@ object ^ extends js.Object {
     * @param {Number} [digits] - Number of digits for fixpoint notation
     * @returns {Function}
     */
-  def number(): easyDashTableLib.CellPrinter[scala.Double] = js.native
-  def number(digits: scala.Double): easyDashTableLib.CellPrinter[scala.Double] = js.native
+  def number(): CellPrinter[scala.Double] = js.native
+  def number(digits: scala.Double): CellPrinter[scala.Double] = js.native
   def padLeft(`val`: java.lang.String, width: scala.Double): java.lang.String = js.native
   /**
     * Print the array or object
@@ -63,26 +59,22 @@ object ^ extends js.Object {
     * @returns {String}
     */
   def print[T](obj: T): java.lang.String = js.native
-  def print[T](obj: T, format: easyDashTableLib.FormatFunction[T]): java.lang.String = js.native
-  def print[T](obj: T, format: easyDashTableLib.FormatFunction[T], cb: easyDashTableLib.TablePostProcessing): java.lang.String = js.native
+  def print[T](obj: T, format: FormatFunction[T]): java.lang.String = js.native
+  def print[T](obj: T, format: FormatFunction[T], cb: TablePostProcessing): java.lang.String = js.native
   def print[T](obj: T, format: FormatObject): java.lang.String = js.native
-  def print[T](obj: T, format: FormatObject, cb: easyDashTableLib.TablePostProcessing): java.lang.String = js.native
+  def print[T](obj: T, format: FormatObject, cb: TablePostProcessing): java.lang.String = js.native
   def print[T](obj: js.Array[T]): java.lang.String = js.native
-  def print[T](obj: js.Array[T], format: easyDashTableLib.FormatFunction[T]): java.lang.String = js.native
-  def print[T](
-    obj: js.Array[T],
-    format: easyDashTableLib.FormatFunction[T],
-    cb: easyDashTableLib.TablePostProcessing
-  ): java.lang.String = js.native
+  def print[T](obj: js.Array[T], format: FormatFunction[T]): java.lang.String = js.native
+  def print[T](obj: js.Array[T], format: FormatFunction[T], cb: TablePostProcessing): java.lang.String = js.native
   def print[T](obj: js.Array[T], format: FormatObject): java.lang.String = js.native
-  def print[T](obj: js.Array[T], format: FormatObject, cb: easyDashTableLib.TablePostProcessing): java.lang.String = js.native
+  def print[T](obj: js.Array[T], format: FormatObject, cb: TablePostProcessing): java.lang.String = js.native
   /**
     * Create a printer which pads with `ch` on the right
     *
     * @param {String} ch
     * @returns {Function}
     */
-  def rightPadder[T](ch: java.lang.String): easyDashTableLib.CellPrinter[T] = js.native
+  def rightPadder[T](ch: java.lang.String): CellPrinter[T] = js.native
   /**
     * Default printer
     */

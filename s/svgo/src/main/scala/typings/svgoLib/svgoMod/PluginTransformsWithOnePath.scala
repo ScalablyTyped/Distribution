@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginTransformsWithOnePath extends js.Object {
+trait PluginTransformsWithOnePath extends PluginConfig {
   var transformsWithOnePath: scala.Boolean | js.Object
 }
 

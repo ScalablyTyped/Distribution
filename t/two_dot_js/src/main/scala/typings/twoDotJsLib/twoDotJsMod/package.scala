@@ -16,4 +16,5 @@ package object twoDotJsMod {
     - RadialGradient
   */
   type Color = _Color | java.lang.String
+  type _Object = Object
 }

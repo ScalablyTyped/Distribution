@@ -27,7 +27,7 @@ trait ServerOptions extends js.Object {
   /** Specify whether you want to follow redirects. Default: false */
   var followRedirects: js.UndefOr[scala.Boolean] = js.undefined
   /** URL string to be parsed with the url module. */
-  var forward: js.UndefOr[httpDashProxyLib.ProxyTargetUrl] = js.undefined
+  var forward: js.UndefOr[ProxyTargetUrl] = js.undefined
   /** object with extra headers to be added to target requests. */
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** Rewrites the location hostname on (301 / 302 / 307 / 308) redirects, Default: null. */
@@ -51,7 +51,7 @@ trait ServerOptions extends js.Object {
   /** Object to be passed to https.createServer(). */
   var ssl: js.UndefOr[js.Any] = js.undefined
   /** URL string to be parsed with the url module. */
-  var target: js.UndefOr[httpDashProxyLib.ProxyTargetUrl] = js.undefined
+  var target: js.UndefOr[ProxyTargetUrl] = js.undefined
   /** Timeout (in milliseconds) for incoming requests */
   var timeout: js.UndefOr[scala.Double] = js.undefined
   /** Explicitly specify if we are proxying to another proxy. */
@@ -73,7 +73,7 @@ object ServerOptions {
     cookieDomainRewrite: httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     cookiePathRewrite: httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     followRedirects: js.UndefOr[scala.Boolean] = js.undefined,
-    forward: httpDashProxyLib.ProxyTargetUrl = null,
+    forward: ProxyTargetUrl = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     hostRewrite: java.lang.String = null,
     ignorePath: js.UndefOr[scala.Boolean] = js.undefined,
@@ -85,7 +85,7 @@ object ServerOptions {
     secure: js.UndefOr[scala.Boolean] = js.undefined,
     selfHandleResponse: js.UndefOr[scala.Boolean] = js.undefined,
     ssl: js.Any = null,
-    target: httpDashProxyLib.ProxyTargetUrl = null,
+    target: ProxyTargetUrl = null,
     timeout: scala.Int | scala.Double = null,
     toProxy: js.UndefOr[scala.Boolean] = js.undefined,
     ws: js.UndefOr[scala.Boolean] = js.undefined,

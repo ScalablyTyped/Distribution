@@ -15,7 +15,7 @@ trait ResetDBParameterGroupMessage extends js.Object {
     */
   var Parameters: js.UndefOr[ParametersList] = js.undefined
   /**
-    *  Specifies whether (true) or not (false) to reset all parameters in the DB parameter group to default values.  Default: true 
+    * Specifies whether (true) or not (false) to reset all parameters in the DB parameter group to default values. Default: true 
     */
   var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
 }

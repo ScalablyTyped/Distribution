@@ -19,8 +19,8 @@ trait IotaMultisig extends js.Object {
   ): scala.Unit = js.native
   def address(digestTrytes: java.lang.String): MultisigAddress = js.native
   def address(digestTrytes: js.Array[java.lang.String]): MultisigAddress = js.native
-  def getDigest(seed: java.lang.String, index: scala.Double, security: iotaDotLibDotJsLib.Security): java.lang.String = js.native
-  def getKey(seed: java.lang.String, index: scala.Double, security: iotaDotLibDotJsLib.Security): java.lang.String = js.native
+  def getDigest(seed: java.lang.String, index: scala.Double, security: Security): java.lang.String = js.native
+  def getKey(seed: java.lang.String, index: scala.Double, security: Security): java.lang.String = js.native
   def initiateTransfer(
     securitySum: scala.Double,
     inputAddress: java.lang.String,

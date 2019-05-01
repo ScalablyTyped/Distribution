@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- estreeLib.estreeMod._Node because Already inherited */ trait AssignmentProperty extends Property {
+- estreeLib.estreeMod.Node because Already inherited */ trait AssignmentProperty extends Property {
   @JSName("kind")
   var kind_AssignmentProperty: estreeLib.estreeLibStrings.init
   @JSName("value")
@@ -17,7 +17,7 @@ object AssignmentProperty {
   @scala.inline
   def apply(
     computed: scala.Boolean,
-    key: estreeLib.Expression,
+    key: Expression,
     kind: estreeLib.estreeLibStrings.init,
     method: scala.Boolean,
     shorthand: scala.Boolean,

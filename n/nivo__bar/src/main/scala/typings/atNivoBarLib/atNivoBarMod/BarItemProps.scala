@@ -19,9 +19,8 @@ trait BarItemProps extends js.Object {
   var onClick_Original: BarClickHandler = js.native
   var shouldRenderLabel: scala.Boolean = js.native
   var theme: atNivoCoreLib.atNivoCoreMod.Theme = js.native
+  var tooltip: TooltipProp = js.native
   var tooltipFormat: java.lang.String | ValueFormatter = js.native
-  @JSName("tooltip")
-  var tooltip_Original: TooltipProp = js.native
   var width: scala.Double = js.native
   var x: scala.Double = js.native
   var y: scala.Double = js.native
@@ -34,7 +33,5 @@ trait BarItemProps extends js.Object {
     tooltip: reactLib.reactMod.ReactNode,
     event: reactLib.reactMod.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
-  def tooltip(props: reactLib.reactMod.PropsWithChildren[BarExtendedDatum]): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def tooltip(props: reactLib.reactMod.PropsWithChildren[BarExtendedDatum], context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

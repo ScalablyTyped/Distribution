@@ -53,8 +53,7 @@ trait RangeFontLoadOptions extends js.Object {
     *
     * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -64,8 +63,7 @@ trait RangeFontLoadOptions extends js.Object {
     Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
     Returns Null otherwise.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -75,8 +73,7 @@ trait RangeFontLoadOptions extends js.Object {
     Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
     Returns Null otherwise.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -84,8 +81,7 @@ trait RangeFontLoadOptions extends js.Object {
     * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
   /**

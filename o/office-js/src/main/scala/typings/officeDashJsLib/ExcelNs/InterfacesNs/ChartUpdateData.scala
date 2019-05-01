@@ -84,6 +84,13 @@ trait ChartUpdateData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
+    * Encapsulates the options for the pivot chart.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var pivotOptions: js.UndefOr[ChartPivotOptionsUpdateData] = js.undefined
+  /**
+    *
     * Represents the plotArea for the chart.
     *
     * [Api set: ExcelApi 1.8]
@@ -172,6 +179,7 @@ object ChartUpdateData {
     left: scala.Int | scala.Double = null,
     legend: ChartLegendUpdateData = null,
     name: java.lang.String = null,
+    pivotOptions: ChartPivotOptionsUpdateData = null,
     plotArea: ChartPlotAreaUpdateData = null,
     plotBy: officeDashJsLib.ExcelNs.ChartPlotBy | officeDashJsLib.officeDashJsLibStrings.Rows | officeDashJsLib.officeDashJsLibStrings.Columns = null,
     plotVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined,
@@ -194,6 +202,7 @@ object ChartUpdateData {
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (pivotOptions != null) __obj.updateDynamic("pivotOptions")(pivotOptions)
     if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea)
     if (plotBy != null) __obj.updateDynamic("plotBy")(plotBy.asInstanceOf[js.Any])
     if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly)

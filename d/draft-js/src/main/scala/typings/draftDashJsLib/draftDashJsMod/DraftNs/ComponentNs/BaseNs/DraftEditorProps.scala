@@ -109,7 +109,7 @@ trait DraftEditorProps extends js.Object {
   // removing the style from an empty list item.
   var handleReturn: js.UndefOr[
     js.Function2[
-      /* e */ draftDashJsLib.SyntheticKeyboardEvent, 
+      /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, 
       /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
       draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
     ]
@@ -118,19 +118,34 @@ trait DraftEditorProps extends js.Object {
   // the matching DraftEditorCommand constant, or null if no command should
   // be invoked.
   var keyBindingFn: js.UndefOr[
-    js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, EditorCommand | scala.Null]
+    js.Function1[
+      /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, 
+      EditorCommand | scala.Null
+    ]
   ] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit]] = js.undefined
-  var onDownArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticEvent, scala.Unit]] = js.undefined
+  var onDownArrow: js.UndefOr[
+    js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, scala.Unit]
+  ] = js.undefined
   /**
     * Non-cancelable event triggers.
     */
-  var onEscape: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit]] = js.undefined
-  var onLeftArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
-  var onRightArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
-  var onTab: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
-  var onUpArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
+  var onEscape: js.UndefOr[
+    js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, scala.Unit]
+  ] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticEvent, scala.Unit]] = js.undefined
+  var onLeftArrow: js.UndefOr[
+    js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, scala.Unit]
+  ] = js.undefined
+  var onRightArrow: js.UndefOr[
+    js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, scala.Unit]
+  ] = js.undefined
+  var onTab: js.UndefOr[
+    js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, scala.Unit]
+  ] = js.undefined
+  var onUpArrow: js.UndefOr[
+    js.Function1[/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, scala.Unit]
+  ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   // Set whether the `DraftEditor` component should be editable. Useful for
   // temporarily disabling edit behavior or allowing `DraftEditor` rendering
@@ -177,16 +192,16 @@ object DraftEditorProps {
     handleKeyCommand: (/* command */ EditorCommand, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handlePastedFiles: /* files */ js.Array[stdLib.Blob] => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
     handlePastedText: (/* text */ java.lang.String, /* html */ js.UndefOr[java.lang.String], /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
-    handleReturn: (/* e */ draftDashJsLib.SyntheticKeyboardEvent, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
-    keyBindingFn: /* e */ draftDashJsLib.SyntheticKeyboardEvent => EditorCommand | scala.Null = null,
-    onBlur: /* e */ draftDashJsLib.SyntheticEvent => scala.Unit = null,
-    onDownArrow: /* e */ draftDashJsLib.SyntheticKeyboardEvent => scala.Unit = null,
-    onEscape: /* e */ draftDashJsLib.SyntheticKeyboardEvent => scala.Unit = null,
-    onFocus: /* e */ draftDashJsLib.SyntheticEvent => scala.Unit = null,
-    onLeftArrow: /* e */ draftDashJsLib.SyntheticKeyboardEvent => scala.Unit = null,
-    onRightArrow: /* e */ draftDashJsLib.SyntheticKeyboardEvent => scala.Unit = null,
-    onTab: /* e */ draftDashJsLib.SyntheticKeyboardEvent => scala.Unit = null,
-    onUpArrow: /* e */ draftDashJsLib.SyntheticKeyboardEvent => scala.Unit = null,
+    handleReturn: (/* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent, /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState) => draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue = null,
+    keyBindingFn: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => EditorCommand | scala.Null = null,
+    onBlur: /* e */ draftDashJsLib.draftDashJsMod.SyntheticEvent => scala.Unit = null,
+    onDownArrow: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
+    onEscape: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
+    onFocus: /* e */ draftDashJsLib.draftDashJsMod.SyntheticEvent => scala.Unit = null,
+    onLeftArrow: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
+    onRightArrow: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
+    onTab: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
+    onUpArrow: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,

@@ -9,7 +9,7 @@ trait SwitchStatement
   extends BaseNode
      with Statement {
   var cases: js.Array[SwitchCase]
-  var discriminant: estreeLib.Expression
+  var discriminant: Expression
   @JSName("type")
   var type_SwitchStatement: estreeLib.estreeLibStrings.SwitchStatement
 }
@@ -18,7 +18,7 @@ object SwitchStatement {
   @scala.inline
   def apply(
     cases: js.Array[SwitchCase],
-    discriminant: estreeLib.Expression,
+    discriminant: Expression,
     `type`: estreeLib.estreeLibStrings.SwitchStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

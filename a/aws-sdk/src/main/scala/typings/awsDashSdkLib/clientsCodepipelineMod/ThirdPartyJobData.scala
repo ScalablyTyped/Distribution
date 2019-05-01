@@ -35,7 +35,7 @@ trait ThirdPartyJobData extends js.Object {
     */
   var outputArtifacts: js.UndefOr[ArtifactList] = js.undefined
   /**
-    * Represents information about a pipeline to a job worker.
+    * Represents information about a pipeline to a job worker.  Does not include pipelineArn and pipelineExecutionId for ThirdParty jobs. 
     */
   var pipelineContext: js.UndefOr[PipelineContext] = js.undefined
 }

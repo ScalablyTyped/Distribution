@@ -11,6 +11,10 @@ trait DirectConnectGatewayAttachment extends js.Object {
     */
   var attachmentState: js.UndefOr[DirectConnectGatewayAttachmentState] = js.undefined
   /**
+    * The type of attachment.
+    */
+  var attachmentType: js.UndefOr[DirectConnectGatewayAttachmentType] = js.undefined
+  /**
     * The ID of the Direct Connect gateway.
     */
   var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
@@ -36,6 +40,7 @@ object DirectConnectGatewayAttachment {
   @scala.inline
   def apply(
     attachmentState: DirectConnectGatewayAttachmentState = null,
+    attachmentType: DirectConnectGatewayAttachmentType = null,
     directConnectGatewayId: DirectConnectGatewayId = null,
     stateChangeError: StateChangeError = null,
     virtualInterfaceId: VirtualInterfaceId = null,
@@ -44,6 +49,7 @@ object DirectConnectGatewayAttachment {
   ): DirectConnectGatewayAttachment = {
     val __obj = js.Dynamic.literal()
     if (attachmentState != null) __obj.updateDynamic("attachmentState")(attachmentState.asInstanceOf[js.Any])
+    if (attachmentType != null) __obj.updateDynamic("attachmentType")(attachmentType.asInstanceOf[js.Any])
     if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId)
     if (stateChangeError != null) __obj.updateDynamic("stateChangeError")(stateChangeError)
     if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId)

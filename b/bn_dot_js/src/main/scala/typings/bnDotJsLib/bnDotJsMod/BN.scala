@@ -288,23 +288,23 @@ trait BN extends js.Object {
     * @description  convert to byte Array, and optionally zero pad to length, throwing if already exceeding
     */
   def toArray(): js.Array[scala.Double] = js.native
-  def toArray(endian: bnDotJsLib.Endianness): js.Array[scala.Double] = js.native
-  def toArray(endian: bnDotJsLib.Endianness, length: scala.Double): js.Array[scala.Double] = js.native
+  def toArray(endian: Endianness): js.Array[scala.Double] = js.native
+  def toArray(endian: Endianness, length: scala.Double): js.Array[scala.Double] = js.native
   /**
     * @description convert to an instance of `type`, which must behave like an Array
     */
   def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc): nodeLib.Buffer = js.native
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: bnDotJsLib.Endianness): nodeLib.Buffer = js.native
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: bnDotJsLib.Endianness, length: scala.Double): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: Endianness): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: Endianness, length: scala.Double): nodeLib.Buffer = js.native
   def toArrayLike(ArrayType: js.Array[_]): js.Array[_] = js.native
-  def toArrayLike(ArrayType: js.Array[_], endian: bnDotJsLib.Endianness): js.Array[_] = js.native
-  def toArrayLike(ArrayType: js.Array[_], endian: bnDotJsLib.Endianness, length: scala.Double): js.Array[_] = js.native
+  def toArrayLike(ArrayType: js.Array[_], endian: Endianness): js.Array[_] = js.native
+  def toArrayLike(ArrayType: js.Array[_], endian: Endianness, length: scala.Double): js.Array[_] = js.native
   /**
     * @description  convert to Node.js Buffer (if available). For compatibility with browserify and similar tools, use this instead: a.toArrayLike(Buffer, endian, length)
     */
   def toBuffer(): nodeLib.Buffer = js.native
-  def toBuffer(endian: bnDotJsLib.Endianness): nodeLib.Buffer = js.native
-  def toBuffer(endian: bnDotJsLib.Endianness, length: scala.Double): nodeLib.Buffer = js.native
+  def toBuffer(endian: Endianness): nodeLib.Buffer = js.native
+  def toBuffer(endian: Endianness, length: scala.Double): nodeLib.Buffer = js.native
   /**
     * @description convert to JSON compatible hex string (alias of toString(16))
     */

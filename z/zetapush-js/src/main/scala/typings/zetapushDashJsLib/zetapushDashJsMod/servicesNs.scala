@@ -11,28 +11,25 @@ object servicesNs extends js.Object {
   @js.native
   class Macro protected ()
     extends zetapushDashJsLib.zetapushDashJsMod.Service {
-    def this($publish: zetapushDashJsLib.AsyncMacroServicePublisher) = this()
+    def this($publish: zetapushDashJsLib.zetapushDashJsMod.AsyncMacroServicePublisher) = this()
     @JSName("$publish")
-    var $publish_Original: zetapushDashJsLib.AsyncMacroServicePublisher = js.native
+    var $publish_Original: zetapushDashJsLib.zetapushDashJsMod.AsyncMacroServicePublisher = js.native
     /* CompleteClass */
     override var DEFAULT_DEPLOYMENT_ID: java.lang.String = js.native
     @JSName("$publish")
     def $publish(method: java.lang.String): js.Promise[_] = js.native
     @JSName("$publish")
-    def $publish(
-      method: java.lang.String,
-      parameters: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PublishParameters */ js.Any
-    ): js.Promise[_] = js.native
+    def $publish(method: java.lang.String, parameters: zetapushDashJsLib.zetapushDashJsMod.PublishParameters): js.Promise[_] = js.native
     @JSName("$publish")
     def $publish(
       method: java.lang.String,
-      parameters: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PublishParameters */ js.Any,
+      parameters: zetapushDashJsLib.zetapushDashJsMod.PublishParameters,
       hardFail: scala.Boolean
     ): js.Promise[_] = js.native
     @JSName("$publish")
     def $publish(
       method: java.lang.String,
-      parameters: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PublishParameters */ js.Any,
+      parameters: zetapushDashJsLib.zetapushDashJsMod.PublishParameters,
       hardFail: scala.Boolean,
       debug: scala.Double
     ): js.Promise[_] = js.native

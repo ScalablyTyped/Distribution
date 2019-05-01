@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginCollapseGroups extends js.Object {
+trait PluginCollapseGroups extends PluginConfig {
   var collapseGroups: scala.Boolean | js.Object
 }
 

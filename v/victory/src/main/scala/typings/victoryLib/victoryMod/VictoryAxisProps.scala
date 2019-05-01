@@ -219,6 +219,7 @@ object VictoryAxisProps {
     gridComponent: reactLib.reactMod.ReactElement[_] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     invertAxis: js.UndefOr[scala.Boolean] = js.undefined,
     label: js.Any = null,
     name: java.lang.String = null,
@@ -250,6 +251,7 @@ object VictoryAxisProps {
     if (gridComponent != null) __obj.updateDynamic("gridComponent")(gridComponent)
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (!js.isUndefined(invertAxis)) __obj.updateDynamic("invertAxis")(invertAxis)
     if (label != null) __obj.updateDynamic("label")(label)
     if (name != null) __obj.updateDynamic("name")(name)

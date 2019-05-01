@@ -34,6 +34,29 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[AcceptPortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Associates the specified budget with the specified resource.
+    */
+  def associateBudgetWithResource(): awsDashSdkLib.libRequestMod.Request[AssociateBudgetWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateBudgetWithResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateBudgetWithResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateBudgetWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Associates the specified budget with the specified resource.
+    */
+  def associateBudgetWithResource(params: AssociateBudgetWithResourceInput): awsDashSdkLib.libRequestMod.Request[AssociateBudgetWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateBudgetWithResource(
+    params: AssociateBudgetWithResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateBudgetWithResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateBudgetWithResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Associates the specified principal ARN with the specified portfolio.
     */
   def associatePrincipalWithPortfolio(): awsDashSdkLib.libRequestMod.Request[AssociatePrincipalWithPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -944,6 +967,29 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Disassociates the specified budget from the specified resource.
+    */
+  def disassociateBudgetFromResource(): awsDashSdkLib.libRequestMod.Request[DisassociateBudgetFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disassociateBudgetFromResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisassociateBudgetFromResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateBudgetFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Disassociates the specified budget from the specified resource.
+    */
+  def disassociateBudgetFromResource(params: DisassociateBudgetFromResourceInput): awsDashSdkLib.libRequestMod.Request[DisassociateBudgetFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disassociateBudgetFromResource(
+    params: DisassociateBudgetFromResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisassociateBudgetFromResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DisassociateBudgetFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Disassociates a previously associated principal ARN from a specified portfolio.
     */
   def disassociatePrincipalFromPortfolio(): awsDashSdkLib.libRequestMod.Request[DisassociatePrincipalFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1162,6 +1208,29 @@ trait ServiceCatalog
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListAcceptedPortfolioSharesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists all the budgets associated to the specified resource.
+    */
+  def listBudgetsForResource(): awsDashSdkLib.libRequestMod.Request[ListBudgetsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listBudgetsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListBudgetsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListBudgetsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists all the budgets associated to the specified resource.
+    */
+  def listBudgetsForResource(params: ListBudgetsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListBudgetsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listBudgetsForResource(
+    params: ListBudgetsForResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListBudgetsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListBudgetsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Lists the constraints for the specified portfolio and product.
     */

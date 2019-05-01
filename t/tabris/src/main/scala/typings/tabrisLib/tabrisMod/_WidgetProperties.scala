@@ -15,11 +15,11 @@ trait _WidgetProperties extends _NativeObjectProperties {
     * An image to be displayed on the widget's background. If the image is smaller than the widget, it will
     * be tiled.
     */
-  var backgroundImage: tabrisLib.Image
+  var backgroundImage: Image
   /**
     * The vertical position of the widget's baseline relative to a sibling widget.
     */
-  var baseline: Widget | tabrisLib.Selector
+  var baseline: Widget | Selector
   /**
     * The position of the widget's bottom edge relative to the parent or a sibling widget.
     */
@@ -119,8 +119,8 @@ object _WidgetProperties {
   @scala.inline
   def apply(
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
-    baseline: Widget | tabrisLib.Selector,
+    backgroundImage: Image,
+    baseline: Widget | Selector,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,
     centerY: tabrisLib.offset,

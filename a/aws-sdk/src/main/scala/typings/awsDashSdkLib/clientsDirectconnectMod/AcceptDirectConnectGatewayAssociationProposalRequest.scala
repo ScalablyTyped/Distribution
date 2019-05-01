@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AcceptDirectConnectGatewayAssociationProposalRequest extends js.Object {
   /**
-    * The ID of the AWS account that owns the virtual private gateway.
+    * The ID of the AWS account that owns the virtual private gateway or transit gateway.
     */
   var associatedGatewayOwnerAccount: OwnerAccount
   /**
@@ -15,7 +15,7 @@ trait AcceptDirectConnectGatewayAssociationProposalRequest extends js.Object {
     */
   var directConnectGatewayId: DirectConnectGatewayId
   /**
-    * Overrides the Amazon VPC prefixes advertised to the Direct Connect gateway.
+    * Overrides the existing Amazon VPC prefixes advertised to the Direct Connect gateway.
     */
   var overrideAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   /**

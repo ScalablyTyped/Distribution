@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._SwitchProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined checked, thumbOffColor, thumbOnColor, trackOffColor, trackOnColor */ @JSImport("tabris", "Switch")
 @js.native
 class Switch () extends Widget {
-  def this(properties: tabrisLib.Properties[Switch, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Switch, TypeScriptPropertiesKey]) = this()
   /**
     * The checked state of the switch.
     */
@@ -38,7 +38,7 @@ class Switch () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Switch: tabrisLib.SwitchProperties = js.native
+  val tsProperties_Switch: SwitchProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

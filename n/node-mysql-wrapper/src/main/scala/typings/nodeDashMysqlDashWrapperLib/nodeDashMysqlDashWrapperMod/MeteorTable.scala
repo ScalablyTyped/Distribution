@@ -15,8 +15,8 @@ class MeteorTable[T] protected () extends js.Object {
   def collection(nameOfCollection: java.lang.String, fillWithCriteria: js.Any): nodeDashMysqlDashWrapperLib.MongoNs.Collection[T] = js.native
   def insert(doc: T): T = js.native
   def insert(doc: T, callback: js.Function1[/* _result */ T, scala.Unit]): T = js.native
-  def remove(selector: js.Any): nodeDashMysqlDashWrapperLib.DeleteAnswer = js.native
-  def remove(selector: js.Any, callback: js.Function0[nodeDashMysqlDashWrapperLib.DeleteAnswer]): nodeDashMysqlDashWrapperLib.DeleteAnswer = js.native
+  def remove(selector: js.Any): DeleteAnswer = js.native
+  def remove(selector: js.Any, callback: js.Function0[DeleteAnswer]): DeleteAnswer = js.native
   def update(selector: js.Any, modifier: js.Any): scala.Double = js.native
   def update(selector: js.Any, modifier: js.Any, options: nodeDashMysqlDashWrapperLib.Anon_Multi): scala.Double = js.native
   def update(

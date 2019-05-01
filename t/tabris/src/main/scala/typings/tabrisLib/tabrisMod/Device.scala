@@ -70,7 +70,7 @@ class Device protected ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Device: tabrisLib.DeviceProperties = js.native
+  val tsProperties_Device: DeviceProperties = js.native
   /**
     * The name of the device manufacture. For example `"Samsung"` or `"Apple"`. This property is also
     * available globally as `device.vendor`.

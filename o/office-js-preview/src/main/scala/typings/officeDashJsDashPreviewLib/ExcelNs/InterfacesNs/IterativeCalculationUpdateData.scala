@@ -11,24 +11,21 @@ trait IterativeCalculationUpdateData extends js.Object {
     *
     * True if Excel will use iteration to resolve circular references.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var maxChange: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var maxIteration: js.UndefOr[scala.Double] = js.undefined
 }

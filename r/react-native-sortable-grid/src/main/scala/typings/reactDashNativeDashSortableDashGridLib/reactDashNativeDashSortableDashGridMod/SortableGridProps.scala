@@ -19,7 +19,7 @@ trait SortableGridProps extends js.Object {
   /**
     * Items to be rendered in the SortableGrid
     */
-  var children: js.UndefOr[js.Array[reactDashNativeDashSortableDashGridLib.SortableGridItem]] = js.undefined
+  var children: js.UndefOr[js.Array[SortableGridItem]] = js.undefined
   /**
     * How long will the execution wait for the second tap before deciding it
     * was a single tap (milliseconds). Will be omitted if no
@@ -79,7 +79,7 @@ object SortableGridProps {
   def apply(
     activeBlockCenteringDuration: scala.Int | scala.Double = null,
     blockTransitionDuration: scala.Int | scala.Double = null,
-    children: js.Array[reactDashNativeDashSortableDashGridLib.SortableGridItem] = null,
+    children: js.Array[SortableGridItem] = null,
     doubleTapTreshold: scala.Int | scala.Double = null,
     dragActivationThreshold: scala.Int | scala.Double = null,
     dragStartAnimation: reactDashNativeDashSortableDashGridLib.Anon_Transform = null,

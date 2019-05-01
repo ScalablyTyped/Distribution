@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._CollectionViewProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined cellHeight, cellType, columnCount, createCell, itemCount, refreshEnabled, refreshIndicator, refreshMessage, updateCell */ @JSImport("tabris", "CollectionView")
 @js.native
 class CollectionView () extends Widget {
-  def this(properties: tabrisLib.Properties[CollectionView, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[CollectionView, TypeScriptPropertiesKey]) = this()
   /**
     * The height of a collection cell. If set to `"auto"`, the cell height will be calculated individually
     * for each cell. If set to a function, this function will be called for every item, providing the item
@@ -69,7 +69,7 @@ class CollectionView () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_CollectionView: tabrisLib.CollectionViewProperties = js.native
+  val tsProperties_CollectionView: CollectionViewProperties = js.native
   /**
     * A callback used to create a new reusable cell widget for a given type. This callback will be called
     * by the framework and the created cell will be reused for different items. The created widget should

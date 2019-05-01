@@ -27,7 +27,7 @@ object DexieNs extends js.Object {
     def and(filter: js.Function1[/* x */ T, scala.Boolean]): Collection[T, Key] = js.native
     def clone(props: js.Object): Collection[T, Key] = js.native
     def count(): Promise[scala.Double] = js.native
-    def count[R](thenShortcut: dexieLib.ThenShortcut[scala.Double, R]): Promise[R] = js.native
+    def count[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[scala.Double, R]): Promise[R] = js.native
     // Mutating methods
     def delete(): Promise[scala.Double] = js.native
     def distinct(): Collection[T, Key] = js.native
@@ -41,26 +41,26 @@ object DexieNs extends js.Object {
     ): Promise[scala.Unit] = js.native
     def filter(filter: js.Function1[/* x */ T, scala.Boolean]): Collection[T, Key] = js.native
     def first(): Promise[js.UndefOr[T]] = js.native
-    def first[R](thenShortcut: dexieLib.ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
+    def first[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
     def keys(): Promise[dexieLib.IndexableTypeArray] = js.native
-    def keys[R](thenShortcut: dexieLib.ThenShortcut[dexieLib.IndexableTypeArray, R]): Promise[R] = js.native
+    def keys[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[dexieLib.IndexableTypeArray, R]): Promise[R] = js.native
     def last(): Promise[js.UndefOr[T]] = js.native
-    def last[R](thenShortcut: dexieLib.ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
+    def last[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
     def limit(n: scala.Double): Collection[T, Key] = js.native
     def modify(changeCallback: js.Function2[/* obj */ T, /* ctx */ dexieLib.Anon_Value[T], scala.Unit]): Promise[scala.Double] = js.native
     def modify(changes: org.scalablytyped.runtime.StringDictionary[js.Any]): Promise[scala.Double] = js.native
     def offset(n: scala.Double): Collection[T, Key] = js.native
     def or(indexOrPrimayKey: java.lang.String): WhereClause[T, Key] = js.native
     def primaryKeys(): Promise[js.Array[Key]] = js.native
-    def primaryKeys[R](thenShortcut: dexieLib.ThenShortcut[js.Array[Key], R]): Promise[R] = js.native
+    def primaryKeys[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.Array[Key], R]): Promise[R] = js.native
     def raw(): Collection[T, Key] = js.native
     def reverse(): Collection[T, Key] = js.native
     def sortBy(keyPath: java.lang.String): Promise[js.Array[T]] = js.native
-    def sortBy[R](keyPath: java.lang.String, thenShortcut: dexieLib.ThenShortcut[js.Array[T], R]): Promise[R] = js.native
+    def sortBy[R](keyPath: java.lang.String, thenShortcut: dexieLib.dexieMod.ThenShortcut[js.Array[T], R]): Promise[R] = js.native
     def toArray(): Promise[js.Array[T]] = js.native
-    def toArray[R](thenShortcut: dexieLib.ThenShortcut[js.Array[T], R]): Promise[R] = js.native
+    def toArray[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.Array[T], R]): Promise[R] = js.native
     def uniqueKeys(): Promise[dexieLib.IndexableTypeArray] = js.native
-    def uniqueKeys[R](thenShortcut: dexieLib.ThenShortcut[dexieLib.IndexableTypeArray, R]): Promise[R] = js.native
+    def uniqueKeys[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[dexieLib.IndexableTypeArray, R]): Promise[R] = js.native
     def until(filter: js.Function1[/* value */ T, scala.Boolean]): Collection[T, Key] = js.native
     def until(filter: js.Function1[/* value */ T, scala.Boolean], includeStopEntry: scala.Boolean): Collection[T, Key] = js.native
   }
@@ -527,7 +527,7 @@ object DexieNs extends js.Object {
     def bulkPut(items: js.Array[T], keys: dexieLib.IndexableTypeArrayReadonly): Promise[Key] = js.native
     def clear(): Promise[scala.Unit] = js.native
     def count(): Promise[scala.Double] = js.native
-    def count[R](thenShortcut: dexieLib.ThenShortcut[scala.Double, R]): Promise[R] = js.native
+    def count[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[scala.Double, R]): Promise[R] = js.native
     def delete(key: Key): Promise[scala.Unit] = js.native
     def each(callback: js.Function2[/* obj */ T, /* cursor */ dexieLib.Anon_Key[Key], _]): Promise[scala.Unit] = js.native
     def filter(fn: js.Function1[/* obj */ T, scala.Boolean]): Collection[T, Key] = js.native
@@ -535,9 +535,9 @@ object DexieNs extends js.Object {
     def get(key: Key): Promise[js.UndefOr[T]] = js.native
     def get[R](
       equalityCriterias: org.scalablytyped.runtime.StringDictionary[dexieLib.dexieMod.IndexableType],
-      thenShortcut: dexieLib.ThenShortcut[js.UndefOr[T], R]
+      thenShortcut: dexieLib.dexieMod.ThenShortcut[js.UndefOr[T], R]
     ): Promise[R] = js.native
-    def get[R](key: Key, thenShortcut: dexieLib.ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
+    def get[R](key: Key, thenShortcut: dexieLib.dexieMod.ThenShortcut[js.UndefOr[T], R]): Promise[R] = js.native
     def hook(eventName: java.lang.String): DexieEvent = js.native
     @JSName("hook")
     def hook_creating(
@@ -584,7 +584,7 @@ object DexieNs extends js.Object {
     def put(item: T, key: Key): Promise[Key] = js.native
     def reverse(): Collection[T, Key] = js.native
     def toArray(): Promise[js.Array[T]] = js.native
-    def toArray[R](thenShortcut: dexieLib.ThenShortcut[js.Array[T], R]): Promise[R] = js.native
+    def toArray[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.Array[T], R]): Promise[R] = js.native
     def toCollection(): Collection[T, Key] = js.native
     def update(key: Key, changes: org.scalablytyped.runtime.StringDictionary[js.Any]): Promise[scala.Double] = js.native
     def where(equalityCriterias: org.scalablytyped.runtime.StringDictionary[dexieLib.dexieMod.IndexableType]): Collection[T, Key] = js.native

@@ -10,7 +10,7 @@ trait Anon_ extends js.Object {
   var disabled: scala.Boolean = js.native
   var loading: scala.Boolean = js.native
   var pressIn: scala.Boolean = js.native
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]] = js.native
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]] = js.native
   def onClick(): scala.Unit = js.native
   def onClick(`_`: js.Any): scala.Unit = js.native
   def onHideUnderlay(): scala.Unit = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PushCommand extends js.Object {
+trait PushCommand extends Command {
   @JSName("$push")
   var $push: js.Array[_]
 }

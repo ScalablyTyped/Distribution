@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MergeCommand extends js.Object {
+trait MergeCommand extends Command {
   @JSName("$merge")
   var $merge: js.Object
 }

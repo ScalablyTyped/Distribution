@@ -13,7 +13,7 @@ trait Anon_Clear extends js.Object {
   var labelNumber: scala.Double
   var labelPosition: java.lang.String
   var last: scala.Boolean
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   var textAlign: java.lang.String
   var `type`: java.lang.String
   def onBlur(): scala.Unit
@@ -38,7 +38,7 @@ object Anon_Clear {
     onErrorClick: () => scala.Unit,
     onExtraClick: () => scala.Unit,
     onFocus: () => scala.Unit,
-    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]],
+    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]],
     textAlign: java.lang.String,
     `type`: java.lang.String
   ): Anon_Clear = {

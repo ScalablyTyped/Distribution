@@ -51,11 +51,8 @@ class Map () extends Evented {
   def areTilesLoaded(): scala.Boolean = js.native
   def cameraForBounds(bounds: LngLatBoundsLike): js.UndefOr[CameraOptions] = js.native
   def cameraForBounds(bounds: LngLatBoundsLike, options: CameraForBoundsOptions): js.UndefOr[CameraOptions] = js.native
-  def easeTo(options: CameraOptions with AnimationOptions with mapboxDashGlLib.Anon_DelayEndEvents): this.type = js.native
-  def easeTo(
-    options: CameraOptions with AnimationOptions with mapboxDashGlLib.Anon_DelayEndEvents,
-    eventData: EventData
-  ): this.type = js.native
+  def easeTo(options: EaseToOptions): this.type = js.native
+  def easeTo(options: EaseToOptions, eventData: EventData): this.type = js.native
   def fitBounds(bounds: LngLatBoundsLike): this.type = js.native
   def fitBounds(bounds: LngLatBoundsLike, options: FitBoundsOptions): this.type = js.native
   def fitBounds(bounds: LngLatBoundsLike, options: FitBoundsOptions, eventData: EventData): this.type = js.native

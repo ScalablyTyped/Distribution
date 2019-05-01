@@ -11,27 +11,4 @@ package object estreeMod {
   type BaseModuleDeclaration = BaseNode
   type BasePattern = BaseNode
   type BaseStatement = BaseNode
-  /* Rewritten from type alias, can be one of: 
-    - Identifier
-    - Literal
-    - Program
-    - Function
-    - SwitchCase
-    - CatchClause
-    - VariableDeclarator
-    - Statement
-    - estreeLib.Expression
-    - Property
-    - AssignmentProperty
-    - Super
-    - TemplateElement
-    - SpreadElement
-    - Pattern
-    - ClassBody
-    - Class
-    - MethodDefinition
-    - ModuleDeclaration
-    - ModuleSpecifier
-  */
-  type Node = _Node | estreeLib.Expression
 }

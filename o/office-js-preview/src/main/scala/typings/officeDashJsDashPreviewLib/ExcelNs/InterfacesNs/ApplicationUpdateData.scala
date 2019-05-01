@@ -22,8 +22,7 @@ trait ApplicationUpdateData extends js.Object {
     On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
     On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.undefined
 }

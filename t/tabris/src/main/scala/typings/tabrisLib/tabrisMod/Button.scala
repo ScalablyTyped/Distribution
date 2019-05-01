@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ButtonProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined alignment, image, text, textColor */ @JSImport("tabris", "Button")
 @js.native
 class Button () extends Widget {
-  def this(properties: tabrisLib.Properties[Button, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Button, TypeScriptPropertiesKey]) = this()
   /**
     * The horizontal alignment of the button text.
     */
@@ -20,7 +20,7 @@ class Button () extends Widget {
   /**
     * An image to be displayed on the button.
     */
-  var image: tabrisLib.Image | scala.Null = js.native
+  var image: Image | scala.Null = js.native
   /**
     * The button's label text.
     */
@@ -34,7 +34,7 @@ class Button () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Button: tabrisLib.ButtonProperties = js.native
+  val tsProperties_Button: ButtonProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

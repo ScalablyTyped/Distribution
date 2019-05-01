@@ -38,8 +38,8 @@ object _PickerProperties {
   @scala.inline
   def apply(
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
-    baseline: Widget | tabrisLib.Selector,
+    backgroundImage: Image,
+    baseline: Widget | Selector,
     borderColor: tabrisLib.Color,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,

@@ -21,9 +21,9 @@ trait Accessor extends js.Object {
     */
   def get(key: java.lang.String): js.Any = js.native
   /** https://github.com/bevacqua/local-storage#lsoffkey-fn */
-  def off(key: java.lang.String, callback: localDashStorageLib.Listener): scala.Unit = js.native
+  def off(key: java.lang.String, callback: Listener): scala.Unit = js.native
   /** https://github.com/bevacqua/local-storage#lsonkey-fn */
-  def on(key: java.lang.String, callback: localDashStorageLib.Listener): scala.Unit = js.native
+  def on(key: java.lang.String, callback: Listener): scala.Unit = js.native
   /** https://github.com/bevacqua/local-storage#lsremovekey */
   def remove(key: java.lang.String): scala.Boolean = js.native
   /**

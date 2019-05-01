@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_EndInclusionStates extends js.Object {
   var end: js.UndefOr[scala.Double] = js.undefined
   var inclusionStates: js.UndefOr[scala.Boolean] = js.undefined
-  var security: js.UndefOr[Security] = js.undefined
+  var security: js.UndefOr[iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security] = js.undefined
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object Anon_EndInclusionStates {
   def apply(
     end: scala.Int | scala.Double = null,
     inclusionStates: js.UndefOr[scala.Boolean] = js.undefined,
-    security: Security = null,
+    security: iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security = null,
     start: scala.Int | scala.Double = null
   ): Anon_EndInclusionStates = {
     val __obj = js.Dynamic.literal()

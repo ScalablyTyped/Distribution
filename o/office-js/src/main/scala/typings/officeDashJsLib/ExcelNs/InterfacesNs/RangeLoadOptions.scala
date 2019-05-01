@@ -124,6 +124,13 @@ trait RangeLoadOptions extends js.Object {
   var isEntireRow: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents the data type state of each cell. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkedDataTypeState: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents Excel's number format code for the given range.
     When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
     *
@@ -218,6 +225,7 @@ object RangeLoadOptions {
     hyperlink: js.UndefOr[scala.Boolean] = js.undefined,
     isEntireColumn: js.UndefOr[scala.Boolean] = js.undefined,
     isEntireRow: js.UndefOr[scala.Boolean] = js.undefined,
+    linkedDataTypeState: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormatLocal: js.UndefOr[scala.Boolean] = js.undefined,
     rowCount: js.UndefOr[scala.Boolean] = js.undefined,
@@ -246,6 +254,7 @@ object RangeLoadOptions {
     if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
     if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
     if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
+    if (!js.isUndefined(linkedDataTypeState)) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState)
     if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
     if (!js.isUndefined(numberFormatLocal)) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
     if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount)

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Declare[T] extends Type[T] {
   @JSName("update")
-  var update_Original: tcombLib.Update[T] = js.native
+  var update_Original: Update[T] = js.native
   def define(`type`: Type[_]): scala.Unit = js.native
-  def update(instance: T, spec: tcombLib.UpdatePatch): T = js.native
+  def update(instance: T, spec: UpdatePatch): T = js.native
 }
 

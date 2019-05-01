@@ -30,7 +30,7 @@ trait WorksheetChangedEventArgs extends js.Object {
     *
     * Represents the information about the change detail
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var details: ChangedEventDetail
   /**

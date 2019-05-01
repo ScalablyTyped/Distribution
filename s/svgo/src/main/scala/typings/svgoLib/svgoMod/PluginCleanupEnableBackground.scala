@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginCleanupEnableBackground extends js.Object {
+trait PluginCleanupEnableBackground extends PluginConfig {
   var cleanupEnableBackground: scala.Boolean | js.Object
 }
 

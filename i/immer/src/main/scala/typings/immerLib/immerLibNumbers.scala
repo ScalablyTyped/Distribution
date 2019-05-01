@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object immerLibNumbers {
   @js.native
   sealed trait `0`
-    extends IsVoidLike[js.Any]
+    extends immerLib.immerMod.IsVoidLike[js.Any]
   
   @js.native
   sealed trait `1`
-    extends IsVoidLike[js.Any]
+    extends immerLib.immerMod.IsVoidLike[js.Any]
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

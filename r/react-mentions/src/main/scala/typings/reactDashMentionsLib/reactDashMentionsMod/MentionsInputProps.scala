@@ -12,11 +12,9 @@ trait MentionsInputProps extends js.Object {
   var allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined
   var children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]]
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var displayTransform: js.UndefOr[DisplayTransformFunc] = js.undefined
   var inputRef: js.UndefOr[
     reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.RefObject[stdLib.HTMLInputElement]
   ] = js.undefined
-  var markup: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement], 
@@ -35,7 +33,6 @@ trait MentionsInputProps extends js.Object {
     js.Function1[/* event */ reactLib.reactMod.UIEvent[reactLib.Element], scala.Unit]
   ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
-  var regex: js.UndefOr[stdLib.RegExp] = js.undefined
   /**
     * If set to `true` a regular text input element will be rendered
     * instead of a textarea
@@ -52,15 +49,12 @@ object MentionsInputProps {
     children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]],
     allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    displayTransform: DisplayTransformFunc = null,
     inputRef: reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.RefObject[stdLib.HTMLInputElement] = null,
-    markup: java.lang.String = null,
     onBlur: (/* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
     onChange: OnChangeHandlerFunc = null,
     onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
     onSelect: /* event */ reactLib.reactMod.UIEvent[reactLib.Element] => scala.Unit = null,
     placeholder: java.lang.String = null,
-    regex: stdLib.RegExp = null,
     singleLine: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null,
     suggestionsPortalHost: stdLib.Element = null,
@@ -69,15 +63,12 @@ object MentionsInputProps {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSpaceInQuery)) __obj.updateDynamic("allowSpaceInQuery")(allowSpaceInQuery)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (displayTransform != null) __obj.updateDynamic("displayTransform")(displayTransform)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (markup != null) __obj.updateDynamic("markup")(markup)
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
-    if (regex != null) __obj.updateDynamic("regex")(regex)
     if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine)
     if (style != null) __obj.updateDynamic("style")(style)
     if (suggestionsPortalHost != null) __obj.updateDynamic("suggestionsPortalHost")(suggestionsPortalHost)

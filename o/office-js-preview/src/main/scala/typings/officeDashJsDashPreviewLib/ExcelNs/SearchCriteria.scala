@@ -9,32 +9,28 @@ import scala.scalajs.js.annotation._
   *
   * Represents the search criteria to be used.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait SearchCriteria extends js.Object {
   /**
     *
     * Specifies whether the match needs to be complete or partial. Default is false (partial).
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var completeMatch: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether the match is case sensitive. Default is false (insensitive).
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var matchCase: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies the search direction. Default is forward. See Excel.SearchDirection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var searchDirection: js.UndefOr[
     SearchDirection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Forward | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Backwards

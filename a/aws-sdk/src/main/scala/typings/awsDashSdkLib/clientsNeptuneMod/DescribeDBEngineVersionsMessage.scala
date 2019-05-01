@@ -27,19 +27,19 @@ trait DescribeDBEngineVersionsMessage extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * If this parameter is specified and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version. 
+    * If this parameter is specified and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version.
     */
   var ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * If this parameter is specified and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version. 
+    * If this parameter is specified and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version.
     */
   var ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
   /**
-    *  The maximum number of records to include in the response. If more than the MaxRecords value is available, a pagination token called a marker is included in the response so that the following results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
+    *  The maximum number of records to include in the response. If more than the MaxRecords value is available, a pagination token called a marker is included in the response so that the following results can be retrieved. Default: 100 Constraints: Minimum 20, maximum 100.
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
 }

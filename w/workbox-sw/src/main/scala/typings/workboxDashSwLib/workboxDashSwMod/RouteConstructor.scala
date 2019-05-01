@@ -14,14 +14,10 @@ trait RouteConstructor
 	 * @param {string} [method="GET"] - The HTTP method to match the Route
 	 * @returns {Route}
 	 */
-org.scalablytyped.runtime.Instantiable2[
-      /* match */ workboxDashSwLib.MatchCallback, 
-      /* handler */ workboxDashSwLib.HandlerCallback, 
-      Route
-    ]
+org.scalablytyped.runtime.Instantiable2[/* match */ MatchCallback, /* handler */ HandlerCallback, Route]
      with org.scalablytyped.runtime.Instantiable3[
-      /* match */ workboxDashSwLib.MatchCallback, 
-      /* handler */ workboxDashSwLib.HandlerCallback, 
+      /* match */ MatchCallback, 
+      /* handler */ HandlerCallback, 
       /* method */ java.lang.String, 
       Route
     ]

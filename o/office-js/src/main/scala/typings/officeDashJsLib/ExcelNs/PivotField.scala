@@ -97,9 +97,59 @@ class PivotField ()
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param sortby Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
     */
-  def sortByLabels(sortby: SortBy): scala.Unit = js.native
+  def sortByLabels(sortBy: SortBy): scala.Unit = js.native
+  /**
+    *
+    * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
+    there are multiple values from the same DataPivotHierarchy.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
+    * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
+    items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
+    the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
+    you want to sort on, this can be empty.
+    */
+  def sortByValues(sortBy: SortBy, valuesHierarchy: DataPivotHierarchy): scala.Unit = js.native
+  def sortByValues(
+    sortBy: SortBy,
+    valuesHierarchy: DataPivotHierarchy,
+    pivotItemScope: js.Array[PivotItem | java.lang.String]
+  ): scala.Unit = js.native
+  /**
+    *
+    * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
+    there are multiple values from the same DataPivotHierarchy.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
+    * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
+    items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
+    the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
+    you want to sort on, this can be empty.
+    */
+  @JSName("sortByValues")
+  def sortByValues_Ascending(sortBy: officeDashJsLib.officeDashJsLibStrings.Ascending, valuesHierarchy: DataPivotHierarchy): scala.Unit = js.native
+  @JSName("sortByValues")
+  def sortByValues_Ascending(
+    sortBy: officeDashJsLib.officeDashJsLibStrings.Ascending,
+    valuesHierarchy: DataPivotHierarchy,
+    pivotItemScope: js.Array[PivotItem | java.lang.String]
+  ): scala.Unit = js.native
+  @JSName("sortByValues")
+  def sortByValues_Descending(sortBy: officeDashJsLib.officeDashJsLibStrings.Descending, valuesHierarchy: DataPivotHierarchy): scala.Unit = js.native
+  @JSName("sortByValues")
+  def sortByValues_Descending(
+    sortBy: officeDashJsLib.officeDashJsLibStrings.Descending,
+    valuesHierarchy: DataPivotHierarchy,
+    pivotItemScope: js.Array[PivotItem | java.lang.String]
+  ): scala.Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.PivotField object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldData`) that contains shallow copies of any loaded child properties from the original object.

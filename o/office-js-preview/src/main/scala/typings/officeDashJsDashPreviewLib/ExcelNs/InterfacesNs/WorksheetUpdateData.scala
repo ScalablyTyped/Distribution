@@ -12,8 +12,7 @@ trait WorksheetUpdateData extends js.Object {
     * Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enableCalculation: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -27,8 +26,7 @@ trait WorksheetUpdateData extends js.Object {
     *
     * Gets the PageLayout object of the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var pageLayout: js.UndefOr[PageLayoutUpdateData] = js.undefined
   /**

@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object elasticDashApmDashNodeLibStrings {
   @js.native
-  sealed trait all extends CaptureBody
+  sealed trait all
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureBody
   
   @js.native
-  sealed trait always extends CaptureErrorLogStackTraces
+  sealed trait always
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureErrorLogStackTraces
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.LogLevel
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.LogLevel
   
   @js.native
-  sealed trait errors extends CaptureBody
+  sealed trait errors
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureBody
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait fatal
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.LogLevel
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.LogLevel
   
   @js.native
-  sealed trait messages extends CaptureErrorLogStackTraces
+  sealed trait messages
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureErrorLogStackTraces
   
   @js.native
-  sealed trait never extends CaptureErrorLogStackTraces
+  sealed trait never
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureErrorLogStackTraces
   
   @js.native
-  sealed trait off extends CaptureBody
+  sealed trait off
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureBody
   
   @js.native
-  sealed trait trace extends LogLevel
+  sealed trait trace
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.LogLevel
   
   @js.native
-  sealed trait transactions extends CaptureBody
+  sealed trait transactions
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.CaptureBody
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.LogLevel
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

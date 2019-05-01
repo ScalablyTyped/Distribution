@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf", "BinaryDecoder")
 @js.native
 class BinaryDecoder () extends js.Object {
-  def this(bytes: googleDashProtobufLib.ByteSource) = this()
-  def this(bytes: googleDashProtobufLib.ByteSource, start: scala.Double) = this()
-  def this(bytes: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double) = this()
+  def this(bytes: ByteSource) = this()
+  def this(bytes: ByteSource, start: scala.Double) = this()
+  def this(bytes: ByteSource, start: scala.Double, length: scala.Double) = this()
   def advance(count: scala.Double): scala.Unit = js.native
   def atEnd(): scala.Boolean = js.native
   def clear(): scala.Unit = js.native
@@ -51,9 +51,9 @@ class BinaryDecoder () extends js.Object {
   def readZigzagVarint64(): scala.Double = js.native
   def readZigzagVarint64String(): scala.Double = js.native
   def reset(): scala.Unit = js.native
-  def setBlock(data: googleDashProtobufLib.ByteSource): scala.Unit = js.native
-  def setBlock(data: googleDashProtobufLib.ByteSource, start: scala.Double): scala.Unit = js.native
-  def setBlock(data: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double): scala.Unit = js.native
+  def setBlock(data: ByteSource): scala.Unit = js.native
+  def setBlock(data: ByteSource, start: scala.Double): scala.Unit = js.native
+  def setBlock(data: ByteSource, start: scala.Double, length: scala.Double): scala.Unit = js.native
   def setCursor(cursor: scala.Double): scala.Unit = js.native
   def setEnd(end: scala.Double): scala.Unit = js.native
   def skipVarint(): scala.Unit = js.native
@@ -65,8 +65,12 @@ class BinaryDecoder () extends js.Object {
 @js.native
 object BinaryDecoder extends js.Object {
   def alloc(): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource, start: scala.Double): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
+  def alloc(bytes: googleDashProtobufLib.googleDashProtobufMod.ByteSource): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
+  def alloc(bytes: googleDashProtobufLib.googleDashProtobufMod.ByteSource, start: scala.Double): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
+  def alloc(
+    bytes: googleDashProtobufLib.googleDashProtobufMod.ByteSource,
+    start: scala.Double,
+    length: scala.Double
+  ): googleDashProtobufLib.googleDashProtobufMod.BinaryDecoder = js.native
 }
 

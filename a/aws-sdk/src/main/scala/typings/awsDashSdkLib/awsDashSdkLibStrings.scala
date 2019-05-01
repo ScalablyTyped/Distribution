@@ -753,6 +753,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPinpointsmsvoiceMod._apiVersion
   
   @js.native
+  sealed trait `2018-09-24`
+    extends awsDashSdkLib.clientsManagedblockchainMod._apiVersion
+  
+  @js.native
   sealed trait `2018-09-25`
     extends awsDashSdkLib.clientsWorklinkMod._apiVersion
   
@@ -884,7 +888,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ACCEPTED
     extends awsDashSdkLib.clientsOrganizationsMod._HandshakeState
+       with awsDashSdkLib.clientsManagedblockchainMod._InvitationStatus
        with awsDashSdkLib.clientsRamMod._ResourceShareInvitationStatus
+  
+  @js.native
+  sealed trait ACCEPTING
+    extends awsDashSdkLib.clientsManagedblockchainMod._InvitationStatus
   
   @js.native
   sealed trait ACCEPT_ALL
@@ -918,6 +927,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ACCOUNT_SETTINGS
     extends awsDashSdkLib.clientsIotMod._ResourceType
+  
+  @js.native
+  sealed trait ACTION_FAILED
+    extends awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
   
   @js.native
   sealed trait ACTION_NEEDED
@@ -1171,6 +1184,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AES256
     extends awsDashSdkLib.clientsGlacierMod._EncryptionType
+       with awsDashSdkLib.clientsS3controlMod._S3SSEAlgorithm
        with awsDashSdkLib.clientsDynamodbMod._SSEType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEType
        with awsDashSdkLib.clientsS3Mod._ServerSideEncryption
@@ -1809,6 +1823,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait APPROVED
     extends awsDashSdkLib.clientsSsmMod._PatchDeploymentStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
   
   @js.native
   sealed trait APPROVE_ALL_FEATURES
@@ -2136,6 +2151,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDevicefarmMod._InstanceStatus
        with awsDashSdkLib.clientsEcrMod._LayerAvailability
        with awsDashSdkLib.clientsLicensemanagerMod._LicenseConfigurationStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._MemberStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NetworkStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsServicecatalogMod._ProvisionedProductStatus
        with awsDashSdkLib.clientsRamMod._ResourceStatus
        with awsDashSdkLib.clientsSmsMod._ServerCatalogStatus
@@ -2637,6 +2655,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDirectoryserviceMod._DirectoryStage
        with awsDashSdkLib.clientsSsmMod._DocumentStatus
        with awsDashSdkLib.clientsDirectoryserviceMod._DomainControllerStatus
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsCloudsearchMod._OptionState
        with awsDashSdkLib.clientsEsMod._OptionState
        with awsDashSdkLib.clientsMturkMod._QualificationTypeStatus
@@ -2770,6 +2789,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AllEvents
     extends awsDashSdkLib.clientsFirehoseMod._SplunkS3BackupMode
+  
+  @js.native
+  sealed trait AllTasks
+    extends awsDashSdkLib.clientsS3controlMod._JobReportScope
   
   @js.native
   sealed trait AllUpfront
@@ -3492,6 +3515,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
   
   @js.native
+  sealed trait BULK
+    extends awsDashSdkLib.clientsS3controlMod._S3GlacierJobTier
+  
+  @js.native
   sealed trait BURN_IN
     extends awsDashSdkLib.clientsMediaconvertMod._CaptionDestinationType
   
@@ -3639,6 +3666,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Brian
     extends awsDashSdkLib.clientsPollyMod._VoiceId
+  
+  @js.native
+  sealed trait Bucket
+    extends awsDashSdkLib.clientsS3controlMod._JobManifestFieldName
   
   @js.native
   sealed trait BucketOwner
@@ -4339,6 +4370,7 @@ object awsDashSdkLibStrings {
   sealed trait COMPLIANCE
     extends awsDashSdkLib.clientsS3Mod._ObjectLockMode
        with awsDashSdkLib.clientsS3Mod._ObjectLockRetentionMode
+       with awsDashSdkLib.clientsS3controlMod._S3ObjectLockMode
   
   @js.native
   sealed trait COMPLIANT
@@ -4587,6 +4619,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait COPY
     extends awsDashSdkLib.clientsS3Mod._MetadataDirective
+       with awsDashSdkLib.clientsS3controlMod._S3MetadataDirective
        with awsDashSdkLib.clientsS3Mod._TaggingDirective
   
   @js.native
@@ -4693,6 +4726,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CREATE_FAILED
     extends awsDashSdkLib.clientsMedialiveMod._ChannelState
+       with awsDashSdkLib.clientsManagedblockchainMod._MemberStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NetworkStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsIotMod._OTAUpdateStatus
        with awsDashSdkLib.clientsServicecatalogMod._ProvisionedProductPlanStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
@@ -4765,6 +4801,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._InputState
        with awsDashSdkLib.clientsRoute53resolverMod._IpAddressStatus
        with awsDashSdkLib.clientsBatchMod._JQStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._MemberStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NetworkStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsDynamodbMod._ReplicaStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReplicaStatus
        with awsDashSdkLib.clientsRoute53resolverMod._ResolverEndpointStatus
@@ -4968,8 +5007,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._CommandPluginStatus
        with awsDashSdkLib.clientsSsmMod._CommandStatus
        with awsDashSdkLib.clientsSnowballMod._JobState
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsSsmMod._NotificationEvent
        with awsDashSdkLib.clientsCloudwatchlogsMod._QueryStatus
+       with awsDashSdkLib.clientsS3controlMod._RequestedJobStatus
        with awsDashSdkLib.clientsMturkMod._ReviewActionStatus
        with awsDashSdkLib.clientsAutoscalingMod._ScalingActivityStatusCode
        with awsDashSdkLib.clientsDirectoryserviceMod._SchemaExtensionStatus
@@ -4981,6 +5022,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSsmMod._AutomationExecutionStatus
        with awsDashSdkLib.clientsSsmMod._CommandInvocationStatus
        with awsDashSdkLib.clientsSsmMod._CommandStatus
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsIotMod._Status
   
   @js.native
@@ -5109,6 +5151,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSnowballMod._ClusterState
        with awsDashSdkLib.clientsSsmMod._InventoryDeletionStatus
        with awsDashSdkLib.clientsSnowballMod._JobState
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsCloudwatchlogsMod._QueryStatus
        with awsDashSdkLib.clientsCloudwatchMod._StatusCode
        with awsDashSdkLib.clientsSsmMod._StopType
@@ -5140,6 +5183,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._Status
        with awsDashSdkLib.clientsSagemakerMod._TrainingJobStatus
        with awsDashSdkLib.clientsSagemakerMod._TransformJobStatus
+  
+  @js.native
+  sealed trait Completing
+    extends awsDashSdkLib.clientsS3controlMod._JobStatus
   
   @js.native
   sealed trait Composite
@@ -5535,6 +5582,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DEEP_ARCHIVE
     extends awsDashSdkLib.clientsS3Mod._ObjectStorageClass
+       with awsDashSdkLib.clientsS3controlMod._S3StorageClass
        with awsDashSdkLib.clientsS3Mod._StorageClass
        with awsDashSdkLib.clientsS3Mod._TransitionStorageClass
   
@@ -5676,7 +5724,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._InputState
        with awsDashSdkLib.clientsGuarddutyMod._IpSetStatus
        with awsDashSdkLib.clientsBatchMod._JQStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._MemberStatus
        with awsDashSdkLib.clientsAppmeshMod._MeshStatusCode
+       with awsDashSdkLib.clientsManagedblockchainMod._NetworkStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsSmsMod._ReplicationJobState
        with awsDashSdkLib.clientsSmsMod._ReplicationRunState
        with awsDashSdkLib.clientsMedialiveMod._ReservationState
@@ -5781,7 +5832,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._InputState
        with awsDashSdkLib.clientsRoute53resolverMod._IpAddressStatus
        with awsDashSdkLib.clientsBatchMod._JQStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._MemberStatus
        with awsDashSdkLib.clientsComprehendMod._ModelStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NetworkStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsBackupMod._RecoveryPointStatus
        with awsDashSdkLib.clientsDynamodbMod._ReplicaStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReplicaStatus
@@ -7561,8 +7615,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAcmpcaMod._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAcmMod._CertificateStatus
        with awsDashSdkLib.clientsOrganizationsMod._HandshakeState
+       with awsDashSdkLib.clientsManagedblockchainMod._InvitationStatus
        with awsDashSdkLib.clientsEcrMod._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsLightsailMod._LoadBalancerTlsCertificateStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
        with awsDashSdkLib.clientsRoute53domainsMod._ReachabilityStatus
        with awsDashSdkLib.clientsBackupMod._RecoveryPointStatus
        with awsDashSdkLib.clientsMediaconvertMod._ReservationPlanStatus
@@ -7965,6 +8021,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._MaintenanceWindowExecutionStatus
        with awsDashSdkLib.clientsGameliftMod._MatchmakingConfigurationStatus
        with awsDashSdkLib.clientsOpsworkscmMod._NodeAssociationStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsRoute53domainsMod._OperationStatus
        with awsDashSdkLib.clientsSsmMod._PatchComplianceDataState
        with awsDashSdkLib.clientsAthenaMod._QueryExecutionState
@@ -8602,6 +8659,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsS3Mod._BucketLogsPermission
        with awsDashSdkLib.clientsS3Mod._Permission
        with awsDashSdkLib.clientsGlacierMod._Permission
+       with awsDashSdkLib.clientsS3controlMod._S3Permission
   
   @js.native
   sealed trait FULL_NAME
@@ -8663,6 +8721,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSagemakerMod._HyperParameterTuningJobStatus
        with awsDashSdkLib.clientsCodedeployMod._InstanceStatus
        with awsDashSdkLib.clientsChimeMod._InviteStatus
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsCodepipelineMod._JobStatus
        with awsDashSdkLib.clientsSagemakerMod._LabelingJobStatus
        with awsDashSdkLib.clientsSsmMod._LastResourceDataSyncStatus
@@ -8712,8 +8771,16 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsFirehoseMod._SplunkS3BackupMode
   
   @js.native
+  sealed trait FailedTasksOnly
+    extends awsDashSdkLib.clientsS3controlMod._JobReportScope
+  
+  @js.native
   sealed trait FailedToValidate
     extends awsDashSdkLib.clientsCloudsearchMod._OptionState
+  
+  @js.native
+  sealed trait Failing
+    extends awsDashSdkLib.clientsS3controlMod._JobStatus
   
   @js.native
   sealed trait Failure
@@ -8971,6 +9038,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GLACIER
     extends awsDashSdkLib.clientsS3Mod._ObjectStorageClass
+       with awsDashSdkLib.clientsS3controlMod._S3StorageClass
        with awsDashSdkLib.clientsS3Mod._StorageClass
        with awsDashSdkLib.clientsS3Mod._TransitionStorageClass
   
@@ -9014,6 +9082,7 @@ object awsDashSdkLibStrings {
   sealed trait GOVERNANCE
     extends awsDashSdkLib.clientsS3Mod._ObjectLockMode
        with awsDashSdkLib.clientsS3Mod._ObjectLockRetentionMode
+       with awsDashSdkLib.clientsS3controlMod._S3ObjectLockMode
   
   @js.native
   sealed trait GP
@@ -9054,6 +9123,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod._ComparisonOperator
        with awsDashSdkLib.clientsSsmMod._ComplianceQueryOperatorType
        with awsDashSdkLib.clientsDevicefarmMod._RuleOperator
+       with awsDashSdkLib.clientsManagedblockchainMod._ThresholdComparator
   
   @js.native
   sealed trait GREATER_THAN_OR_EQUAL
@@ -9062,6 +9132,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GREATER_THAN_OR_EQUALS
     extends awsDashSdkLib.clientsDevicefarmMod._RuleOperator
+  
+  @js.native
+  sealed trait GREATER_THAN_OR_EQUAL_TO
+    extends awsDashSdkLib.clientsManagedblockchainMod._ThresholdComparator
   
   @js.native
   sealed trait GREEN
@@ -9766,6 +9840,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
   
   @js.native
+  sealed trait HYPERLEDGER_FABRIC extends js.Object
+  
+  @js.native
   sealed trait `HYPERV-MANAGER`
     extends awsDashSdkLib.clientsSmsMod._ConnectorCapability
        with awsDashSdkLib.clientsSmsMod._VmManagerType
@@ -10344,6 +10421,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait INTELLIGENT_TIERING
     extends awsDashSdkLib.clientsS3Mod._ObjectStorageClass
+       with awsDashSdkLib.clientsS3controlMod._S3StorageClass
        with awsDashSdkLib.clientsS3Mod._StorageClass
        with awsDashSdkLib.clientsS3Mod._TransitionStorageClass
   
@@ -10549,6 +10627,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._MaintenanceWindowExecutionStatus
        with awsDashSdkLib.clientsOpsworkscmMod._NodeAssociationStatus
        with awsDashSdkLib.clientsRoute53domainsMod._OperationStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
        with awsDashSdkLib.clientsServicecatalogMod._RecordStatus
        with awsDashSdkLib.clientsConfigserviceMod._RemediationExecutionState
        with awsDashSdkLib.clientsServicecatalogMod._ShareStatus
@@ -10724,6 +10803,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IdleInstances
     extends awsDashSdkLib.clientsGameliftMod._MetricName
+  
+  @js.native
+  sealed trait Ignore
+    extends awsDashSdkLib.clientsS3controlMod._JobManifestFieldName
   
   @js.native
   sealed trait ImageNotFound
@@ -11378,6 +11461,7 @@ object awsDashSdkLibStrings {
   sealed trait KMS
     extends awsDashSdkLib.clientsKinesisMod._EncryptionType
        with awsDashSdkLib.clientsXrayMod._EncryptionType
+       with awsDashSdkLib.clientsS3controlMod._S3SSEAlgorithm
        with awsDashSdkLib.clientsDynamodbMod._SSEType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEType
   
@@ -11448,6 +11532,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Kendra
     extends awsDashSdkLib.clientsPollyMod._VoiceId
+  
+  @js.native
+  sealed trait Key
+    extends awsDashSdkLib.clientsS3controlMod._JobManifestFieldName
   
   @js.native
   sealed trait KeyId
@@ -12001,6 +12089,10 @@ object awsDashSdkLibStrings {
   sealed trait LambdaFunctionTimedOut
     extends awsDashSdkLib.clientsSwfMod._EventType
        with awsDashSdkLib.clientsStepfunctionsMod._HistoryEventType
+  
+  @js.native
+  sealed trait LambdaInvoke
+    extends awsDashSdkLib.clientsS3controlMod._OperationName
   
   @js.native
   sealed trait LambdaTarget
@@ -13355,6 +13447,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
        with awsDashSdkLib.clientsAlexaforbusinessMod._RequirePin
+       with awsDashSdkLib.clientsManagedblockchainMod._VoteValue
   
   @js.native
   sealed trait NOB
@@ -13831,6 +13924,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait New
     extends awsDashSdkLib.clientsSnowballMod._JobState
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
   
   @js.native
   sealed trait NewDeployment
@@ -14005,6 +14099,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._H265SampleAdaptiveOffsetFilterMode
        with awsDashSdkLib.clientsMediaconvertMod._Mpeg2AdaptiveQuantization
        with awsDashSdkLib.clientsS3Mod._ObjectLockLegalHoldStatus
+       with awsDashSdkLib.clientsS3controlMod._S3ObjectLockLegalHoldStatus
        with awsDashSdkLib.clientsIotMod._ThingConnectivityIndexingMode
        with awsDashSdkLib.clientsIotMod._ThingGroupIndexingMode
        with awsDashSdkLib.clientsIotMod._ThingIndexingMode
@@ -14063,6 +14158,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ON
     extends awsDashSdkLib.clientsS3Mod._ObjectLockLegalHoldStatus
+       with awsDashSdkLib.clientsS3controlMod._S3ObjectLockLegalHoldStatus
        with awsDashSdkLib.clientsIotMod._ThingGroupIndexingMode
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._UserPoolMfaType
   
@@ -14074,6 +14170,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ONEZONE_IA
     extends awsDashSdkLib.clientsS3Mod._ObjectStorageClass
+       with awsDashSdkLib.clientsS3controlMod._S3StorageClass
        with awsDashSdkLib.clientsS3Mod._StorageClass
        with awsDashSdkLib.clientsS3Mod._TransitionStorageClass
   
@@ -14687,6 +14784,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAppstreamMod._ImageBuilderState
        with awsDashSdkLib.clientsAppstreamMod._ImageState
        with awsDashSdkLib.clientsGameliftMod._InstanceStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._InvitationStatus
        with awsDashSdkLib.clientsBatchMod._JobStatus
        with awsDashSdkLib.clientsAmplifyMod._JobStatus
        with awsDashSdkLib.clientsPinpointemailMod._MailFromDomainStatus
@@ -15382,6 +15480,14 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSsmMod._ResourceTypeForTagging
   
   @js.native
+  sealed trait Paused
+    extends awsDashSdkLib.clientsS3controlMod._JobStatus
+  
+  @js.native
+  sealed trait Pausing
+    extends awsDashSdkLib.clientsS3controlMod._JobStatus
+  
+  @js.native
   sealed trait PeeredVpc
     extends awsDashSdkLib.clientsLightsailMod._ResourceType
   
@@ -15568,6 +15674,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Preparing
     extends awsDashSdkLib.clientsRobomakerMod._DeploymentStatus
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsRobomakerMod._SimulationJobStatus
   
   @js.native
@@ -15601,6 +15708,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Private
     extends awsDashSdkLib.clientsLightsailMod._PortAccessType
+  
+  @js.native
+  sealed trait PrivateVirtualInterface
+    extends awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayAttachmentType
   
   @js.native
   sealed trait Pro
@@ -15806,6 +15917,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsS3Mod._BucketLogsPermission
        with awsDashSdkLib.clientsS3Mod._Permission
        with awsDashSdkLib.clientsGlacierMod._Permission
+       with awsDashSdkLib.clientsS3controlMod._S3Permission
   
   @js.native
   sealed trait READER
@@ -15853,6 +15965,7 @@ object awsDashSdkLibStrings {
   sealed trait READ_ACP
     extends awsDashSdkLib.clientsS3Mod._Permission
        with awsDashSdkLib.clientsGlacierMod._Permission
+       with awsDashSdkLib.clientsS3controlMod._S3Permission
   
   @js.native
   sealed trait REBOOTING
@@ -16019,9 +16132,11 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REJECTED
-    extends awsDashSdkLib.clientsIotMod._JobExecutionFailureType
+    extends awsDashSdkLib.clientsManagedblockchainMod._InvitationStatus
+       with awsDashSdkLib.clientsIotMod._JobExecutionFailureType
        with awsDashSdkLib.clientsIotMod._JobExecutionStatus
        with awsDashSdkLib.clientsIotjobsdataplaneMod._JobExecutionStatus
+       with awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
        with awsDashSdkLib.clientsRamMod._ResourceShareInvitationStatus
   
   @js.native
@@ -16111,6 +16226,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REPLACE
     extends awsDashSdkLib.clientsS3Mod._MetadataDirective
+       with awsDashSdkLib.clientsS3controlMod._S3MetadataDirective
        with awsDashSdkLib.clientsS3Mod._TaggingDirective
   
   @js.native
@@ -16648,7 +16764,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCodedeployMod._DeploymentStatus
        with awsDashSdkLib.clientsElasticbeanstalkMod._EnvironmentStatus
        with awsDashSdkLib.clientsCodedeployMod._InstanceStatus
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsElasticbeanstalkMod._PlatformStatus
+       with awsDashSdkLib.clientsS3controlMod._RequestedJobStatus
        with awsDashSdkLib.clientsCodedeployMod._TargetStatus
   
   @js.native
@@ -16803,6 +16921,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ReplicationStatus
     extends awsDashSdkLib.clientsS3Mod._InventoryOptionalField
+  
+  @js.native
+  sealed trait Report_CSV_20180820 extends js.Object
   
   @js.native
   sealed trait RequestCancelActivityTask
@@ -17072,8 +17193,32 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCodebuildMod._SourceType
   
   @js.native
+  sealed trait S3BatchOperations_CSV_20180820
+    extends awsDashSdkLib.clientsS3controlMod._JobManifestFormat
+  
+  @js.native
+  sealed trait S3InitiateRestoreObject
+    extends awsDashSdkLib.clientsS3controlMod._OperationName
+  
+  @js.native
+  sealed trait S3InventoryReport_CSV_20161130
+    extends awsDashSdkLib.clientsS3controlMod._JobManifestFormat
+  
+  @js.native
   sealed trait S3Prefix
     extends awsDashSdkLib.clientsSagemakerMod._S3DataType
+  
+  @js.native
+  sealed trait S3PutObjectAcl
+    extends awsDashSdkLib.clientsS3controlMod._OperationName
+  
+  @js.native
+  sealed trait S3PutObjectCopy
+    extends awsDashSdkLib.clientsS3controlMod._OperationName
+  
+  @js.native
+  sealed trait S3PutObjectTagging
+    extends awsDashSdkLib.clientsS3controlMod._OperationName
   
   @js.native
   sealed trait SA
@@ -18064,11 +18209,14 @@ object awsDashSdkLibStrings {
   sealed trait STANDARD
     extends awsDashSdkLib.clientsMedialiveMod._ChannelClass
        with awsDashSdkLib.clientsWorkspacesMod._Compute
+       with awsDashSdkLib.clientsManagedblockchainMod._Edition
        with awsDashSdkLib.clientsMedialiveMod._IFrameOnlyPlaylistType
        with awsDashSdkLib.clientsMedialiveMod._InputClass
        with awsDashSdkLib.clientsS3Mod._ObjectStorageClass
        with awsDashSdkLib.clientsCostexplorerMod._OfferingClass
        with awsDashSdkLib.clientsMedialiveMod._ReservationVideoQuality
+       with awsDashSdkLib.clientsS3controlMod._S3GlacierJobTier
+       with awsDashSdkLib.clientsS3controlMod._S3StorageClass
        with awsDashSdkLib.clientsSnowballMod._ShippingOption
        with awsDashSdkLib.clientsSnowballMod._SnowballType
        with awsDashSdkLib.clientsS3Mod._StorageClass
@@ -18077,6 +18225,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait STANDARD_IA
     extends awsDashSdkLib.clientsS3Mod._ObjectStorageClass
+       with awsDashSdkLib.clientsS3controlMod._S3StorageClass
        with awsDashSdkLib.clientsS3Mod._StorageClass
        with awsDashSdkLib.clientsGlacierMod._StorageClass
        with awsDashSdkLib.clientsS3Mod._TransitionStorageClass
@@ -18093,6 +18242,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait STARTED
     extends awsDashSdkLib.clientsIamMod._ReportStateType
+  
+  @js.native
+  sealed trait STARTER
+    extends awsDashSdkLib.clientsManagedblockchainMod._Edition
   
   @js.native
   sealed trait STARTING
@@ -19114,6 +19267,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsS3Mod._BucketAccelerateStatus
        with awsDashSdkLib.clientsS3Mod._BucketVersioningStatus
        with awsDashSdkLib.clientsElasticbeanstalkMod._EnvironmentHealthStatus
+       with awsDashSdkLib.clientsS3controlMod._JobStatus
        with awsDashSdkLib.clientsChimeMod._RegistrationStatus
   
   @js.native
@@ -20057,6 +20211,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TransientFailure
     extends awsDashSdkLib.clientsSesMod._BulkEmailStatus
+  
+  @js.native
+  sealed trait TransitVirtualInterface
+    extends awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayAttachmentType
   
   @js.native
   sealed trait True
@@ -21134,6 +21292,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsServicecatalogMod._ProductViewSortBy
   
   @js.native
+  sealed trait VersionId
+    extends awsDashSdkLib.clientsS3controlMod._JobManifestFieldName
+  
+  @js.native
   sealed trait VersionUpdate
     extends awsDashSdkLib.clientsEksMod._UpdateType
   
@@ -21390,11 +21552,13 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsS3Mod._BucketLogsPermission
        with awsDashSdkLib.clientsS3Mod._Permission
        with awsDashSdkLib.clientsGlacierMod._Permission
+       with awsDashSdkLib.clientsS3controlMod._S3Permission
   
   @js.native
   sealed trait WRITE_ACP
     extends awsDashSdkLib.clientsS3Mod._Permission
        with awsDashSdkLib.clientsGlacierMod._Permission
+       with awsDashSdkLib.clientsS3controlMod._S3Permission
   
   @js.native
   sealed trait WS
@@ -21619,6 +21783,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait YES
     extends awsDashSdkLib.clientsAlexaforbusinessMod._RequirePin
+       with awsDashSdkLib.clientsManagedblockchainMod._VoteValue
   
   @js.native
   sealed trait YID
@@ -22026,6 +22191,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait authenticator
@@ -22090,6 +22256,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait `aws-flow-ruby`
@@ -22188,6 +22355,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait `bucket-owner-read`
@@ -22195,6 +22363,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait bucketExists extends js.Object
@@ -23391,6 +23560,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._VerifiedAttributeType
   
   @js.native
+  sealed trait emailAddress
+    extends awsDashSdkLib.clientsS3controlMod._S3GranteeTypeIdentifier
+  
+  @js.native
   sealed trait emailHeader
     extends awsDashSdkLib.clientsSesMod._DimensionValueSource
   
@@ -24102,6 +24275,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait id
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
+       with awsDashSdkLib.clientsS3controlMod._S3GranteeTypeIdentifier
   
   @js.native
   sealed trait identityExists extends js.Object
@@ -24568,6 +24742,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGlueMod._apiVersion
        with awsDashSdkLib.clientsSmsMod._apiVersion
        with awsDashSdkLib.clientsKinesisanalyticsMod._apiVersion
+       with awsDashSdkLib.clientsManagedblockchainMod._apiVersion
        with awsDashSdkLib.clientsRdsdataserviceMod._apiVersion
        with awsDashSdkLib.clientsMobileanalyticsMod._apiVersion
        with awsDashSdkLib.clientsCloudtrailMod._apiVersion
@@ -26007,6 +26182,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait productCodes
@@ -26065,6 +26241,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait `public-read-write`
@@ -26073,6 +26250,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod._ObjectACL
        with awsDashSdkLib.clientsS3Mod._ObjectCannedACL
+       with awsDashSdkLib.clientsS3controlMod._S3CannedAccessControlList
   
   @js.native
   sealed trait python2DOT7
@@ -27307,6 +27485,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._ResourceType
   
   @js.native
+  sealed trait transitGateway
+    extends awsDashSdkLib.clientsDirectconnectMod._GatewayType
+  
+  @js.native
   sealed trait `u-12tb1DOTmetal`
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -27412,6 +27594,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait upperJawlineRight
     extends awsDashSdkLib.clientsRekognitionMod._LandmarkType
+  
+  @js.native
+  sealed trait uri
+    extends awsDashSdkLib.clientsS3controlMod._S3GranteeTypeIdentifier
   
   @js.native
   sealed trait url extends js.Object
@@ -27568,7 +27754,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudfrontMod._SSLSupportMethod
   
   @js.native
-  sealed trait virtualPrivateGateway extends js.Object
+  sealed trait virtualPrivateGateway
+    extends awsDashSdkLib.clientsDirectconnectMod._GatewayType
   
   @js.native
   sealed trait viseme
@@ -28117,6 +28304,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `2018-09-05`: `2018-09-05` = "2018-09-05".asInstanceOf[`2018-09-05`]
   @scala.inline
+  def `2018-09-24`: `2018-09-24` = "2018-09-24".asInstanceOf[`2018-09-24`]
+  @scala.inline
   def `2018-09-25`: `2018-09-25` = "2018-09-25".asInstanceOf[`2018-09-25`]
   @scala.inline
   def `2018-10-01`: `2018-10-01` = "2018-10-01".asInstanceOf[`2018-10-01`]
@@ -28179,6 +28368,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ACCEPTED: ACCEPTED = "ACCEPTED".asInstanceOf[ACCEPTED]
   @scala.inline
+  def ACCEPTING: ACCEPTING = "ACCEPTING".asInstanceOf[ACCEPTING]
+  @scala.inline
   def ACCEPT_ALL: ACCEPT_ALL = "ACCEPT_ALL".asInstanceOf[ACCEPT_ALL]
   @scala.inline
   def ACCESS_DENIED: ACCESS_DENIED = "ACCESS_DENIED".asInstanceOf[ACCESS_DENIED]
@@ -28190,6 +28381,8 @@ object awsDashSdkLibStrings {
   def ACCOUNT_LIMIT_EXCEEDED: ACCOUNT_LIMIT_EXCEEDED = "ACCOUNT_LIMIT_EXCEEDED".asInstanceOf[ACCOUNT_LIMIT_EXCEEDED]
   @scala.inline
   def ACCOUNT_SETTINGS: ACCOUNT_SETTINGS = "ACCOUNT_SETTINGS".asInstanceOf[ACCOUNT_SETTINGS]
+  @scala.inline
+  def ACTION_FAILED: ACTION_FAILED = "ACTION_FAILED".asInstanceOf[ACTION_FAILED]
   @scala.inline
   def ACTION_NEEDED: ACTION_NEEDED = "ACTION_NEEDED".asInstanceOf[ACTION_NEEDED]
   @scala.inline
@@ -28977,6 +29170,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def AllEvents: AllEvents = "AllEvents".asInstanceOf[AllEvents]
   @scala.inline
+  def AllTasks: AllTasks = "AllTasks".asInstanceOf[AllTasks]
+  @scala.inline
   def AllUpfront: AllUpfront = "AllUpfront".asInstanceOf[AllUpfront]
   @scala.inline
   def AllocateStaticIp: AllocateStaticIp = "AllocateStaticIp".asInstanceOf[AllocateStaticIp]
@@ -29283,6 +29478,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def BUL: BUL = "BUL".asInstanceOf[BUL]
   @scala.inline
+  def BULK: BULK = "BULK".asInstanceOf[BULK]
+  @scala.inline
   def BURN_IN: BURN_IN = "BURN_IN".asInstanceOf[BURN_IN]
   @scala.inline
   def BUSY: BUSY = "BUSY".asInstanceOf[BUSY]
@@ -29350,6 +29547,8 @@ object awsDashSdkLibStrings {
   def Bounce: Bounce = "Bounce".asInstanceOf[Bounce]
   @scala.inline
   def Brian: Brian = "Brian".asInstanceOf[Brian]
+  @scala.inline
+  def Bucket: Bucket = "Bucket".asInstanceOf[Bucket]
   @scala.inline
   def BucketOwner: BucketOwner = "BucketOwner".asInstanceOf[BucketOwner]
   @scala.inline
@@ -29942,6 +30141,8 @@ object awsDashSdkLibStrings {
   def CompleteWorkflowExecutionFailed: CompleteWorkflowExecutionFailed = "CompleteWorkflowExecutionFailed".asInstanceOf[CompleteWorkflowExecutionFailed]
   @scala.inline
   def Completed: Completed = "Completed".asInstanceOf[Completed]
+  @scala.inline
+  def Completing: Completing = "Completing".asInstanceOf[Completing]
   @scala.inline
   def Composite: Composite = "Composite".asInstanceOf[Composite]
   @scala.inline
@@ -31299,7 +31500,11 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FailedEventsOnly: FailedEventsOnly = "FailedEventsOnly".asInstanceOf[FailedEventsOnly]
   @scala.inline
+  def FailedTasksOnly: FailedTasksOnly = "FailedTasksOnly".asInstanceOf[FailedTasksOnly]
+  @scala.inline
   def FailedToValidate: FailedToValidate = "FailedToValidate".asInstanceOf[FailedToValidate]
+  @scala.inline
+  def Failing: Failing = "Failing".asInstanceOf[Failing]
   @scala.inline
   def Failure: Failure = "Failure".asInstanceOf[Failure]
   @scala.inline
@@ -31452,6 +31657,8 @@ object awsDashSdkLibStrings {
   def GREATER_THAN_OR_EQUAL: GREATER_THAN_OR_EQUAL = "GREATER_THAN_OR_EQUAL".asInstanceOf[GREATER_THAN_OR_EQUAL]
   @scala.inline
   def GREATER_THAN_OR_EQUALS: GREATER_THAN_OR_EQUALS = "GREATER_THAN_OR_EQUALS".asInstanceOf[GREATER_THAN_OR_EQUALS]
+  @scala.inline
+  def GREATER_THAN_OR_EQUAL_TO: GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO".asInstanceOf[GREATER_THAN_OR_EQUAL_TO]
   @scala.inline
   def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
   @scala.inline
@@ -31744,6 +31951,8 @@ object awsDashSdkLibStrings {
   def HVC1: HVC1 = "HVC1".asInstanceOf[HVC1]
   @scala.inline
   def HYE: HYE = "HYE".asInstanceOf[HYE]
+  @scala.inline
+  def HYPERLEDGER_FABRIC: HYPERLEDGER_FABRIC = "HYPERLEDGER_FABRIC".asInstanceOf[HYPERLEDGER_FABRIC]
   @scala.inline
   def `HYPERV-MANAGER`: `HYPERV-MANAGER` = "HYPERV-MANAGER".asInstanceOf[`HYPERV-MANAGER`]
   @scala.inline
@@ -32127,6 +32336,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def IdleInstances: IdleInstances = "IdleInstances".asInstanceOf[IdleInstances]
   @scala.inline
+  def Ignore: Ignore = "Ignore".asInstanceOf[Ignore]
+  @scala.inline
   def ImageNotFound: ImageNotFound = "ImageNotFound".asInstanceOf[ImageNotFound]
   @scala.inline
   def ImageTagDoesNotMatchDigest: ImageTagDoesNotMatchDigest = "ImageTagDoesNotMatchDigest".asInstanceOf[ImageTagDoesNotMatchDigest]
@@ -32441,6 +32652,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Kendra: Kendra = "Kendra".asInstanceOf[Kendra]
   @scala.inline
+  def Key: Key = "Key".asInstanceOf[Key]
+  @scala.inline
   def KeyId: KeyId = "KeyId".asInstanceOf[KeyId]
   @scala.inline
   def KeyPair: KeyPair = "KeyPair".asInstanceOf[KeyPair]
@@ -32674,6 +32887,8 @@ object awsDashSdkLibStrings {
   def LambdaFunctionSucceeded: LambdaFunctionSucceeded = "LambdaFunctionSucceeded".asInstanceOf[LambdaFunctionSucceeded]
   @scala.inline
   def LambdaFunctionTimedOut: LambdaFunctionTimedOut = "LambdaFunctionTimedOut".asInstanceOf[LambdaFunctionTimedOut]
+  @scala.inline
+  def LambdaInvoke: LambdaInvoke = "LambdaInvoke".asInstanceOf[LambdaInvoke]
   @scala.inline
   def LambdaTarget: LambdaTarget = "LambdaTarget".asInstanceOf[LambdaTarget]
   @scala.inline
@@ -34073,6 +34288,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PatchBaseline: PatchBaseline = "PatchBaseline".asInstanceOf[PatchBaseline]
   @scala.inline
+  def Paused: Paused = "Paused".asInstanceOf[Paused]
+  @scala.inline
+  def Pausing: Pausing = "Pausing".asInstanceOf[Pausing]
+  @scala.inline
   def PeeredVpc: PeeredVpc = "PeeredVpc".asInstanceOf[PeeredVpc]
   @scala.inline
   def Pending: Pending = "Pending".asInstanceOf[Pending]
@@ -34166,6 +34385,8 @@ object awsDashSdkLibStrings {
   def PriceClass_All: PriceClass_All = "PriceClass_All".asInstanceOf[PriceClass_All]
   @scala.inline
   def Private: Private = "Private".asInstanceOf[Private]
+  @scala.inline
+  def PrivateVirtualInterface: PrivateVirtualInterface = "PrivateVirtualInterface".asInstanceOf[PrivateVirtualInterface]
   @scala.inline
   def Pro: Pro = "Pro".asInstanceOf[Pro]
   @scala.inline
@@ -34693,6 +34914,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ReplicationStatus: ReplicationStatus = "ReplicationStatus".asInstanceOf[ReplicationStatus]
   @scala.inline
+  def Report_CSV_20180820: Report_CSV_20180820 = "Report_CSV_20180820".asInstanceOf[Report_CSV_20180820]
+  @scala.inline
   def RequestCancelActivityTask: RequestCancelActivityTask = "RequestCancelActivityTask".asInstanceOf[RequestCancelActivityTask]
   @scala.inline
   def RequestCancelActivityTaskFailed: RequestCancelActivityTaskFailed = "RequestCancelActivityTaskFailed".asInstanceOf[RequestCancelActivityTaskFailed]
@@ -34819,7 +35042,19 @@ object awsDashSdkLibStrings {
   @scala.inline
   def S3: S3 = "S3".asInstanceOf[S3]
   @scala.inline
+  def S3BatchOperations_CSV_20180820: S3BatchOperations_CSV_20180820 = "S3BatchOperations_CSV_20180820".asInstanceOf[S3BatchOperations_CSV_20180820]
+  @scala.inline
+  def S3InitiateRestoreObject: S3InitiateRestoreObject = "S3InitiateRestoreObject".asInstanceOf[S3InitiateRestoreObject]
+  @scala.inline
+  def S3InventoryReport_CSV_20161130: S3InventoryReport_CSV_20161130 = "S3InventoryReport_CSV_20161130".asInstanceOf[S3InventoryReport_CSV_20161130]
+  @scala.inline
   def S3Prefix: S3Prefix = "S3Prefix".asInstanceOf[S3Prefix]
+  @scala.inline
+  def S3PutObjectAcl: S3PutObjectAcl = "S3PutObjectAcl".asInstanceOf[S3PutObjectAcl]
+  @scala.inline
+  def S3PutObjectCopy: S3PutObjectCopy = "S3PutObjectCopy".asInstanceOf[S3PutObjectCopy]
+  @scala.inline
+  def S3PutObjectTagging: S3PutObjectTagging = "S3PutObjectTagging".asInstanceOf[S3PutObjectTagging]
   @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
   @scala.inline
@@ -35272,6 +35507,8 @@ object awsDashSdkLibStrings {
   def START: START = "START".asInstanceOf[START]
   @scala.inline
   def STARTED: STARTED = "STARTED".asInstanceOf[STARTED]
+  @scala.inline
+  def STARTER: STARTER = "STARTER".asInstanceOf[STARTER]
   @scala.inline
   def STARTING: STARTING = "STARTING".asInstanceOf[STARTING]
   @scala.inline
@@ -36093,6 +36330,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def TransientFailure: TransientFailure = "TransientFailure".asInstanceOf[TransientFailure]
   @scala.inline
+  def TransitVirtualInterface: TransitVirtualInterface = "TransitVirtualInterface".asInstanceOf[TransitVirtualInterface]
+  @scala.inline
   def True: True = "True".asInstanceOf[True]
   @scala.inline
   def Twelve_Hours: Twelve_Hours = "Twelve_Hours".asInstanceOf[Twelve_Hours]
@@ -36540,6 +36779,8 @@ object awsDashSdkLibStrings {
   def Version: Version = "Version".asInstanceOf[Version]
   @scala.inline
   def VersionCount: VersionCount = "VersionCount".asInstanceOf[VersionCount]
+  @scala.inline
+  def VersionId: VersionId = "VersionId".asInstanceOf[VersionId]
   @scala.inline
   def VersionUpdate: VersionUpdate = "VersionUpdate".asInstanceOf[VersionUpdate]
   @scala.inline
@@ -37522,6 +37763,8 @@ object awsDashSdkLibStrings {
   def `elasticmapreduce:instancegroup:InstanceCount`: `elasticmapreduce:instancegroup:InstanceCount` = "elasticmapreduce:instancegroup:InstanceCount".asInstanceOf[`elasticmapreduce:instancegroup:InstanceCount`]
   @scala.inline
   def email: email = "email".asInstanceOf[email]
+  @scala.inline
+  def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
   @scala.inline
   def emailHeader: emailHeader = "emailHeader".asInstanceOf[emailHeader]
   @scala.inline
@@ -39255,6 +39498,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `transit-gateway-route-table`: `transit-gateway-route-table` = "transit-gateway-route-table".asInstanceOf[`transit-gateway-route-table`]
   @scala.inline
+  def transitGateway: transitGateway = "transitGateway".asInstanceOf[transitGateway]
+  @scala.inline
   def `u-12tb1DOTmetal`: `u-12tb1DOTmetal` = "u-12tb1.metal".asInstanceOf[`u-12tb1DOTmetal`]
   @scala.inline
   def `u-6tb1DOTmetal`: `u-6tb1DOTmetal` = "u-6tb1.metal".asInstanceOf[`u-6tb1DOTmetal`]
@@ -39298,6 +39543,8 @@ object awsDashSdkLibStrings {
   def upperJawlineLeft: upperJawlineLeft = "upperJawlineLeft".asInstanceOf[upperJawlineLeft]
   @scala.inline
   def upperJawlineRight: upperJawlineRight = "upperJawlineRight".asInstanceOf[upperJawlineRight]
+  @scala.inline
+  def uri: uri = "uri".asInstanceOf[uri]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline

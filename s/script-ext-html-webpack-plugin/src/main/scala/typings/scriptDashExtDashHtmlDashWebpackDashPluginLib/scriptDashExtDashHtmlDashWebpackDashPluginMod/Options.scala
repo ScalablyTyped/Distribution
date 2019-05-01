@@ -9,7 +9,7 @@ trait Options extends js.Object {
   /**
     * script names that should have an async attribute (default: `[]`)
     */
-  var async: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern] = js.undefined
+  var async: js.UndefOr[ScriptMatchingPattern] = js.undefined
   /**
     * scripts that should have a custom attribute(s) added, the attribute(s), and the value(s)
     */
@@ -23,41 +23,41 @@ trait Options extends js.Object {
   /**
     * script names that should have a defer attribute (default: `[]`)
     */
-  var defer: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern] = js.undefined
+  var defer: js.UndefOr[ScriptMatchingPattern] = js.undefined
   /**
     * scripts that should be inlined in the html (default: `[]`)
     */
-  var `inline`: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern] = js.undefined
+  var `inline`: js.UndefOr[ScriptMatchingPattern] = js.undefined
   /**
     * script names that should have a type="module" attribute (default: `[]`)
     */
-  var module: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern] = js.undefined
+  var module: js.UndefOr[ScriptMatchingPattern] = js.undefined
   /**
     * scripts that should have accompanying prefetch resource hints (default: `[]`)
     */
-  var prefetch: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPatternPre] = js.undefined
+  var prefetch: js.UndefOr[ScriptMatchingPatternPre] = js.undefined
   /**
     * scripts that should have accompanying preload resource hints (default: `[]`)
     */
-  var preload: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPatternPre] = js.undefined
+  var preload: js.UndefOr[ScriptMatchingPatternPre] = js.undefined
   /**
     * script names that should have no attribute (default: `[]`)
     */
-  var sync: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern] = js.undefined
+  var sync: js.UndefOr[ScriptMatchingPattern] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    async: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
+    async: ScriptMatchingPattern = null,
     custom: Custom | js.Array[Custom] = null,
     defaultAttribute: scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginLibStrings.sync | scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginLibStrings.async | scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginLibStrings.defer = null,
-    defer: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
-    `inline`: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
-    module: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
-    prefetch: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPatternPre = null,
-    preload: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPatternPre = null,
-    sync: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null
+    defer: ScriptMatchingPattern = null,
+    `inline`: ScriptMatchingPattern = null,
+    module: ScriptMatchingPattern = null,
+    prefetch: ScriptMatchingPatternPre = null,
+    preload: ScriptMatchingPatternPre = null,
+    sync: ScriptMatchingPattern = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])

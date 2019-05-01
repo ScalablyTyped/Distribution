@@ -8,12 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GulpTaskListing extends js.Object {
   def apply(cb: js.Function): scala.Unit = js.native
-  def withFilters(subTaskFilter: gulpDashTaskDashListingLib.FilterFunction): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
-  def withFilters(
-    subTaskFilter: gulpDashTaskDashListingLib.FilterFunction,
-    excludeFilter: gulpDashTaskDashListingLib.FilterFunction
-  ): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
-  def withFilters(subTaskFilter: gulpDashTaskDashListingLib.FilterFunction, excludeFilter: stdLib.RegExp): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
+  def withFilters(subTaskFilter: FilterFunction): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
+  def withFilters(subTaskFilter: FilterFunction, excludeFilter: FilterFunction): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
+  def withFilters(subTaskFilter: FilterFunction, excludeFilter: stdLib.RegExp): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
   /**
     * Allows for custom filtering of Gulp tasks in the listing
     * 
@@ -21,7 +18,7 @@ trait GulpTaskListing extends js.Object {
     * @param excludeFilter a RegExp or Function returning whether the given task should be excluded from the listing
     */
   def withFilters(subTaskFilter: stdLib.RegExp): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
-  def withFilters(subTaskFilter: stdLib.RegExp, excludeFilter: gulpDashTaskDashListingLib.FilterFunction): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
+  def withFilters(subTaskFilter: stdLib.RegExp, excludeFilter: FilterFunction): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
   def withFilters(subTaskFilter: stdLib.RegExp, excludeFilter: stdLib.RegExp): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
 }
 

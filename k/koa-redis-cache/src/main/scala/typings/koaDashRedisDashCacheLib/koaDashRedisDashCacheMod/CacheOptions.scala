@@ -24,7 +24,7 @@ trait CacheOptions extends js.Object {
   /**
     * callback function for error, default is function() {}
     */
-  var onerror: js.UndefOr[koaDashRedisDashCacheLib.onErrorCallback] = js.undefined
+  var onerror: js.UndefOr[onErrorCallback] = js.undefined
   /**
     * if the passParam exists in the query string, skip the cache
     */
@@ -33,7 +33,7 @@ trait CacheOptions extends js.Object {
     * redis key prefix, default is koa-redis-cache:
     * If a function is supplied, its signature should be function(ctx) {} and it should return a string to use as the redis key prefix
     */
-  var prefix: js.UndefOr[java.lang.String | koaDashRedisDashCacheLib.getPrefixCallback] = js.undefined
+  var prefix: js.UndefOr[java.lang.String | getPrefixCallback] = js.undefined
   /**
     * redis options
     */
@@ -51,9 +51,9 @@ object CacheOptions {
     exclude: js.Array[java.lang.String] = null,
     expire: scala.Int | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
-    onerror: koaDashRedisDashCacheLib.onErrorCallback = null,
+    onerror: onErrorCallback = null,
     passParam: java.lang.String = null,
-    prefix: java.lang.String | koaDashRedisDashCacheLib.getPrefixCallback = null,
+    prefix: java.lang.String | getPrefixCallback = null,
     redis: RedisOptions = null,
     routes: js.Array[RouteOptions] | js.Array[java.lang.String] = null
   ): CacheOptions = {

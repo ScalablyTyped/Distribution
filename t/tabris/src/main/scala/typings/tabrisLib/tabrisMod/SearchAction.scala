@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._SearchActionProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, image, layoutData, left, opacity, placementPriority, right, title, top, transform, visible, width, win_symbol, win_theme. Inlined message, proposals, text */ @JSImport("tabris", "SearchAction")
 @js.native
 class SearchAction () extends Action {
-  def this(properties: tabrisLib.Properties[SearchAction, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[SearchAction, TypeScriptPropertiesKey]) = this()
   /**
     * A hint text that is displayed when the search input is empty.
     */
@@ -31,7 +31,7 @@ class SearchAction () extends Action {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_SearchAction: tabrisLib.SearchActionProperties = js.native
+  val tsProperties_SearchAction: SearchActionProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

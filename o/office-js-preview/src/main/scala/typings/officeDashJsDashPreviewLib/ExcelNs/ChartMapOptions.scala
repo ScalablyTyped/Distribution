@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Encapsulates the properties for Map chart.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartMapOptions")
 @js.native
@@ -23,24 +22,21 @@ class ChartMapOptions ()
     *
     * Returns or sets series map labels strategy of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: ChartMapLabelStrategy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BestFit | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShowAll = js.native
   /**
     *
     * Returns or sets series map area of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var level: ChartMapAreaLevel | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DataOnly | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.City | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.County | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.State | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Country | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Continent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.World = js.native
   /**
     *
     * Returns or sets series projection type of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var projectionType: ChartMapProjectionType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mercator | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Miller | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Robinson | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Albers = js.native
   /**

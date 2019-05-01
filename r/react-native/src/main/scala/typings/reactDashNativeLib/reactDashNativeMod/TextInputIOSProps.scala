@@ -33,9 +33,7 @@ trait TextInputIOSProps extends js.Object {
     * - `'none'`
     * - `'all'`
     */
-  var dataDetectorTypes: js.UndefOr[
-    reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes]
-  ] = js.undefined
+  var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
   /**
     * If true, the keyboard disables the return key when there is no text and automatically enables it when there is text.
     * The default value is false.
@@ -114,7 +112,7 @@ object TextInputIOSProps {
   def apply(
     clearButtonMode: reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.`while-editing` | reactDashNativeLib.reactDashNativeLibStrings.`unless-editing` | reactDashNativeLib.reactDashNativeLibStrings.always = null,
     clearTextOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
-    dataDetectorTypes: reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes] = null,
+    dataDetectorTypes: DataDetectorTypes | js.Array[DataDetectorTypes] = null,
     enablesReturnKeyAutomatically: js.UndefOr[scala.Boolean] = js.undefined,
     keyboardAppearance: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.light | reactDashNativeLib.reactDashNativeLibStrings.dark = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,

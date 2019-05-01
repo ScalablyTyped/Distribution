@@ -11,7 +11,7 @@ trait DirectConnect
   @JSName("config")
   var config_DirectConnect: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Accepts a proposal request to attach a virtual private gateway to a Direct Connect gateway.
+    * Accepts a proposal request to attach a virtual private gateway or transit gateway to a Direct Connect gateway.
     */
   def acceptDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
     AcceptDirectConnectGatewayAssociationProposalResult, 
@@ -28,7 +28,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Accepts a proposal request to attach a virtual private gateway to a Direct Connect gateway.
+    * Accepts a proposal request to attach a virtual private gateway or transit gateway to a Direct Connect gateway.
     */
   def acceptDirectConnectGatewayAssociationProposal(params: AcceptDirectConnectGatewayAssociationProposalRequest): awsDashSdkLib.libRequestMod.Request[
     AcceptDirectConnectGatewayAssociationProposalResult, 
@@ -121,6 +121,29 @@ trait DirectConnect
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[VirtualInterface, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Provisions a transit virtual interface to be owned by the specified AWS account. Use this type of interface to connect a transit gateway to your Direct Connect gateway. The owner of a connection provisions a transit virtual interface to be owned by the specified AWS account. After you create a transit virtual interface, it must be confirmed by the owner using ConfirmTransitVirtualInterface. Until this step has been completed, the transit virtual interface is in the requested state and is not available to handle traffic.
+    */
+  def allocateTransitVirtualInterface(): awsDashSdkLib.libRequestMod.Request[AllocateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def allocateTransitVirtualInterface(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AllocateTransitVirtualInterfaceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AllocateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Provisions a transit virtual interface to be owned by the specified AWS account. Use this type of interface to connect a transit gateway to your Direct Connect gateway. The owner of a connection provisions a transit virtual interface to be owned by the specified AWS account. After you create a transit virtual interface, it must be confirmed by the owner using ConfirmTransitVirtualInterface. Until this step has been completed, the transit virtual interface is in the requested state and is not available to handle traffic.
+    */
+  def allocateTransitVirtualInterface(params: AllocateTransitVirtualInterfaceRequest): awsDashSdkLib.libRequestMod.Request[AllocateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def allocateTransitVirtualInterface(
+    params: AllocateTransitVirtualInterfaceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AllocateTransitVirtualInterfaceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AllocateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Associates an existing connection with a link aggregation group (LAG). The connection is interrupted and re-established as a member of the LAG (connectivity to AWS is interrupted). The connection must be hosted on the same AWS Direct Connect endpoint as the LAG, and its bandwidth must match the bandwidth for the LAG. You can re-associate a connection that's currently associated with a different LAG; however, if removing the connection would cause the original LAG to fall below its setting for minimum number of operational connections, the request fails. Any virtual interfaces that are directly associated with the connection are automatically re-associated with the LAG. If the connection was originally associated with a different LAG, the virtual interfaces remain associated with the original LAG. For interconnects, any hosted connections are automatically re-associated with the LAG. If the interconnect was originally associated with a different LAG, the hosted connections remain associated with the original LAG.
     */
@@ -244,6 +267,29 @@ trait DirectConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[ConfirmPublicVirtualInterfaceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Accepts ownership of a transit virtual interface created by another AWS account.  After the owner of the transit virtual interface makes this call, the specified transit virtual interface is created and made available to handle traffic.
+    */
+  def confirmTransitVirtualInterface(): awsDashSdkLib.libRequestMod.Request[ConfirmTransitVirtualInterfaceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def confirmTransitVirtualInterface(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ConfirmTransitVirtualInterfaceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ConfirmTransitVirtualInterfaceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Accepts ownership of a transit virtual interface created by another AWS account.  After the owner of the transit virtual interface makes this call, the specified transit virtual interface is created and made available to handle traffic.
+    */
+  def confirmTransitVirtualInterface(params: ConfirmTransitVirtualInterfaceRequest): awsDashSdkLib.libRequestMod.Request[ConfirmTransitVirtualInterfaceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def confirmTransitVirtualInterface(
+    params: ConfirmTransitVirtualInterfaceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ConfirmTransitVirtualInterfaceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ConfirmTransitVirtualInterfaceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates a BGP peer on the specified virtual interface. You must create a BGP peer for the corresponding address family (IPv4/IPv6) in order to access AWS resources that also use that address family. If logical redundancy is not supported by the connection, interconnect, or LAG, the BGP peer cannot be in the same address family as an existing BGP peer on the virtual interface. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
     */
   def createBGPPeer(): awsDashSdkLib.libRequestMod.Request[CreateBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -328,7 +374,7 @@ trait DirectConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a proposal to associate the specified virtual private gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway have the same payer ID.
+    * Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway or transit gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway or transit gateway have the same AWS Payer ID.
     */
   def createDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
     CreateDirectConnectGatewayAssociationProposalResult, 
@@ -345,7 +391,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a proposal to associate the specified virtual private gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway have the same payer ID.
+    * Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway or transit gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway or transit gateway have the same AWS Payer ID.
     */
   def createDirectConnectGatewayAssociationProposal(params: CreateDirectConnectGatewayAssociationProposalRequest): awsDashSdkLib.libRequestMod.Request[
     CreateDirectConnectGatewayAssociationProposalResult, 
@@ -437,6 +483,29 @@ trait DirectConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[VirtualInterface, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a transit virtual interface. A transit virtual interface is a VLAN that transports traffic from a Direct Connect gateway to one or more transit gateways. A transit virtual interface enables the connection of multiple VPCs attached to a transit gateway to a Direct Connect gateway.
+    */
+  def createTransitVirtualInterface(): awsDashSdkLib.libRequestMod.Request[CreateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTransitVirtualInterface(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTransitVirtualInterfaceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a transit virtual interface. A transit virtual interface is a VLAN that transports traffic from a Direct Connect gateway to one or more transit gateways. A transit virtual interface enables the connection of multiple VPCs attached to a transit gateway to a Direct Connect gateway.
+    */
+  def createTransitVirtualInterface(params: CreateTransitVirtualInterfaceRequest): awsDashSdkLib.libRequestMod.Request[CreateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTransitVirtualInterface(
+    params: CreateTransitVirtualInterfaceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateTransitVirtualInterfaceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateTransitVirtualInterfaceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
     */
   def deleteBGPPeer(): awsDashSdkLib.libRequestMod.Request[DeleteBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -521,7 +590,7 @@ trait DirectConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway.
+    * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway or transit gateway.
     */
   def deleteDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
     DeleteDirectConnectGatewayAssociationProposalResult, 
@@ -538,7 +607,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway.
+    * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway or transit gateway.
     */
   def deleteDirectConnectGatewayAssociationProposal(params: DeleteDirectConnectGatewayAssociationProposalRequest): awsDashSdkLib.libRequestMod.Request[
     DeleteDirectConnectGatewayAssociationProposalResult, 
@@ -668,7 +737,7 @@ trait DirectConnect
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connections, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes one or more association proposals for connection between a virtual private gateway and a Direct Connect gateway. 
+    * Describes one or more association proposals for connection between a virtual private gateway or transit gateway and a Direct Connect gateway. 
     */
   def describeDirectConnectGatewayAssociationProposals(): awsDashSdkLib.libRequestMod.Request[
     DescribeDirectConnectGatewayAssociationProposalsResult, 
@@ -685,7 +754,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more association proposals for connection between a virtual private gateway and a Direct Connect gateway. 
+    * Describes one or more association proposals for connection between a virtual private gateway or transit gateway and a Direct Connect gateway. 
     */
   def describeDirectConnectGatewayAssociationProposals(params: DescribeDirectConnectGatewayAssociationProposalsRequest): awsDashSdkLib.libRequestMod.Request[
     DescribeDirectConnectGatewayAssociationProposalsResult, 

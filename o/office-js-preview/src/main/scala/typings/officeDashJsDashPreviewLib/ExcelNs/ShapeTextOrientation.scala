@@ -12,8 +12,7 @@ sealed trait ShapeTextOrientation extends js.Object
   *
   * Specifies the orientation for the text frame in a shape.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextOrientation")
 @js.native

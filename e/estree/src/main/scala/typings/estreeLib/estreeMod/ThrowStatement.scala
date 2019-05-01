@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ThrowStatement
   extends BaseNode
      with Statement {
-  var argument: estreeLib.Expression
+  var argument: Expression
   @JSName("type")
   var type_ThrowStatement: estreeLib.estreeLibStrings.ThrowStatement
 }
@@ -16,7 +16,7 @@ trait ThrowStatement
 object ThrowStatement {
   @scala.inline
   def apply(
-    argument: estreeLib.Expression,
+    argument: Expression,
     `type`: estreeLib.estreeLibStrings.ThrowStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

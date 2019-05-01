@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options extends js.Object {
+trait Options extends StampitComposable {
   /** Callback functions to execute each time a composition occurs */
-  var composers: js.UndefOr[js.Array[stampitLib.Composer]] = js.undefined
+  var composers: js.UndefOr[js.Array[Composer]] = js.undefined
   /** A configuration object to be shallowly assigned to Stamps */
   var conf: js.UndefOr[js.Object] = js.undefined
   /** A configuration object to be shallowly assigned to Stamps */
@@ -26,12 +26,12 @@ trait Options extends js.Object {
     * Initialization function(s) which will be called per each newly created
     * instance.
     */
-  var init: js.UndefOr[stampitLib.Init | js.Array[stampitLib.Init]] = js.undefined
+  var init: js.UndefOr[Init | js.Array[Init]] = js.undefined
   /**
     * Initialization function(s) which will be called per each newly created
     * instance.
     */
-  var initializers: js.UndefOr[stampitLib.Init | js.Array[stampitLib.Init]] = js.undefined
+  var initializers: js.UndefOr[Init | js.Array[Init]] = js.undefined
   /**
     * A hash containing methods (functions) of any future created instance.
     */
@@ -69,7 +69,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    composers: js.Array[stampitLib.Composer] = null,
+    composers: js.Array[Composer] = null,
     conf: js.Object = null,
     configuration: js.Object = null,
     deepConf: js.Object = null,
@@ -77,8 +77,8 @@ object Options {
     deepProperties: js.Object = null,
     deepProps: js.Object = null,
     deepStatics: js.Object = null,
-    init: stampitLib.Init | js.Array[stampitLib.Init] = null,
-    initializers: stampitLib.Init | js.Array[stampitLib.Init] = null,
+    init: Init | js.Array[Init] = null,
+    initializers: Init | js.Array[Init] = null,
     methods: js.Object = null,
     properties: js.Object = null,
     propertyDescriptors: js.Object = null,

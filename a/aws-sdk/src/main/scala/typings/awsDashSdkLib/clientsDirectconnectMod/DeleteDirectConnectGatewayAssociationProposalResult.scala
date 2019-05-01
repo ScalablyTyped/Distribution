@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteDirectConnectGatewayAssociationProposalResult extends js.Object {
   /**
-    * The ID of the virtual private gateway.
+    * The ID of the associated gateway.
     */
   var directConnectGatewayAssociationProposal: js.UndefOr[DirectConnectGatewayAssociationProposal] = js.undefined
 }

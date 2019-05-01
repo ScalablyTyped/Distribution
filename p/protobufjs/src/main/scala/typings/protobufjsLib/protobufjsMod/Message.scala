@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param [properties] Properties to set
   */
 class Message[T /* <: js.Object */] () extends js.Object {
-  def this(properties: protobufjsLib.Properties[T]) = this()
+  def this(properties: Properties[T]) = this()
   /** Reference to the reflected type. */
   @JSName("$type")
   val $type: Type = js.native

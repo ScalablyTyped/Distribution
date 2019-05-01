@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object pluralsDashCldrLibStrings {
   @js.native
-  sealed trait few extends Form
+  sealed trait few
+    extends pluralsDashCldrLib.pluralsDashCldrMod.Form
   
   @js.native
-  sealed trait many extends Form
+  sealed trait many
+    extends pluralsDashCldrLib.pluralsDashCldrMod.Form
   
   @js.native
-  sealed trait one extends Form
+  sealed trait one
+    extends pluralsDashCldrLib.pluralsDashCldrMod.Form
   
   @js.native
-  sealed trait other extends Form
+  sealed trait other
+    extends pluralsDashCldrLib.pluralsDashCldrMod.Form
   
   @js.native
-  sealed trait two extends Form
+  sealed trait two
+    extends pluralsDashCldrLib.pluralsDashCldrMod.Form
   
   @js.native
-  sealed trait zero extends Form
+  sealed trait zero
+    extends pluralsDashCldrLib.pluralsDashCldrMod.Form
   
   @scala.inline
   def few: few = "few".asInstanceOf[few]

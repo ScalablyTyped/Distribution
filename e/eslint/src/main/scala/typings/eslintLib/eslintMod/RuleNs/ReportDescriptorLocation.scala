@@ -18,7 +18,7 @@ object ReportDescriptorLocation {
   ): ReportDescriptorLocation = {
     val __obj = js.Dynamic.literal()
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node)
     __obj.asInstanceOf[ReportDescriptorLocation]
   }
 }

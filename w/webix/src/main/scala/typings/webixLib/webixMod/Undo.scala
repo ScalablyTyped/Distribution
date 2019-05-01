@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Undo extends js.Object {
-  def ignoreUndo(functor: webixLib.WebixCallback): scala.Unit
+  def ignoreUndo(functor: WebixCallback): scala.Unit
   def removeUndo(id: java.lang.String): scala.Unit
   def undo(id: java.lang.String): scala.Unit
 }
@@ -14,7 +14,7 @@ trait Undo extends js.Object {
 object Undo {
   @scala.inline
   def apply(
-    ignoreUndo: webixLib.WebixCallback => scala.Unit,
+    ignoreUndo: WebixCallback => scala.Unit,
     removeUndo: java.lang.String => scala.Unit,
     undo: java.lang.String => scala.Unit
   ): Undo = {

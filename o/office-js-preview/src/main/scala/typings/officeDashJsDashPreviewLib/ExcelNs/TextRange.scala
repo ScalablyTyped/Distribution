@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.TextRange")
 @js.native
@@ -23,24 +22,21 @@ class TextRange ()
     *
     * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val font: ShapeFont = js.native
   /**
     *
     * Represents the plain text content of the text range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var text: java.lang.String = js.native
   /**
     *
     * Returns a TextRange object for the substring in the given range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param start The zero-based index of the first character to get from the text range.
     * @param length Optional. The number of characters to be returned in the new text range. If length is omitted, all the characters from start to the end of the text range's last paragraph will be returned.

@@ -20,10 +20,10 @@ trait Texture extends js.Object {
   def bind(id: scala.Double): scala.Double = js.native
   def dispose(): scala.Unit = js.native
   def generateMipmap(): scala.Unit = js.native
-  def setPixels(data: glDashTexture2dLib.InputType): scala.Unit = js.native
-  def setPixels(data: glDashTexture2dLib.InputType, offset: js.Tuple2[scala.Double, scala.Double]): scala.Unit = js.native
+  def setPixels(data: InputType): scala.Unit = js.native
+  def setPixels(data: InputType, offset: js.Tuple2[scala.Double, scala.Double]): scala.Unit = js.native
   def setPixels(
-    data: glDashTexture2dLib.InputType,
+    data: InputType,
     offset: js.Tuple2[scala.Double, scala.Double],
     mipLevel: glDashTexture2dLib.GLenum
   ): scala.Unit = js.native

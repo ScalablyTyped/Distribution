@@ -11,40 +11,35 @@ trait ChartBinOptionsUpdateData extends js.Object {
     *
     * Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var allowOverflow: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var allowUnderflow: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var count: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var overflowValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets bin type of a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartBinType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Category | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Auto | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BinWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BinCount
@@ -53,16 +48,14 @@ trait ChartBinOptionsUpdateData extends js.Object {
     *
     * Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var underflowValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var width: js.UndefOr[scala.Double] = js.undefined
 }

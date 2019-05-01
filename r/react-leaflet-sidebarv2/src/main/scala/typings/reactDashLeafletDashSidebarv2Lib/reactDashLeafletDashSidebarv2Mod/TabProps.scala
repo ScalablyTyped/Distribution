@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait TabProps extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
-  var anchor: js.UndefOr[reactDashLeafletDashSidebarv2Lib.Anchor] = js.undefined
-  var closeIcon: js.UndefOr[reactDashLeafletDashSidebarv2Lib.Icon] = js.undefined
+  var anchor: js.UndefOr[Anchor] = js.undefined
+  var closeIcon: js.UndefOr[Icon] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var header: java.lang.String
-  var icon: reactDashLeafletDashSidebarv2Lib.Icon
+  var icon: Icon
   var id: java.lang.String
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var position: js.UndefOr[reactDashLeafletDashSidebarv2Lib.Position] = js.undefined
+  var position: js.UndefOr[Position] = js.undefined
 }
 
 object TabProps {
   @scala.inline
   def apply(
     header: java.lang.String,
-    icon: reactDashLeafletDashSidebarv2Lib.Icon,
+    icon: Icon,
     id: java.lang.String,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    anchor: reactDashLeafletDashSidebarv2Lib.Anchor = null,
-    closeIcon: reactDashLeafletDashSidebarv2Lib.Icon = null,
+    anchor: Anchor = null,
+    closeIcon: Icon = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     onClose: () => scala.Unit = null,
-    position: reactDashLeafletDashSidebarv2Lib.Position = null
+    position: Position = null
   ): TabProps = {
     val __obj = js.Dynamic.literal(header = header, icon = icon.asInstanceOf[js.Any], id = id)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

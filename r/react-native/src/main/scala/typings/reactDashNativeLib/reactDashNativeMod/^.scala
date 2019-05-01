@@ -40,7 +40,7 @@ object ^ extends js.Object {
   val LayoutAnimation: LayoutAnimationStatic = js.native
   val Linking: LinkingStatic = js.native
   val LinkingIOS: LinkingIOSStatic = js.native
-  val NativeAppEventEmitter: reactDashNativeLib.RCTNativeAppEventEmitter = js.native
+  val NativeAppEventEmitter: RCTNativeAppEventEmitter = js.native
   val NativeComponent: NativeMethodsMixinStatic = js.native
   val NativeEventEmitter: reactDashNativeLib.reactDashNativeMod.NativeEventEmitter = js.native
   val NativeMethodsMixin: NativeMethodsMixinStatic = js.native

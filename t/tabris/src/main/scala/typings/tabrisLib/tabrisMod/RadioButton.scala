@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._RadioButtonProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined checked, checkedTintColor, text, textColor, tintColor */ @JSImport("tabris", "RadioButton")
 @js.native
 class RadioButton () extends Widget {
-  def this(properties: tabrisLib.Properties[RadioButton, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[RadioButton, TypeScriptPropertiesKey]) = this()
   /**
     * The checked state of the radio button.
     */
@@ -39,7 +39,7 @@ class RadioButton () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_RadioButton: tabrisLib.RadioButtonProperties = js.native
+  val tsProperties_RadioButton: RadioButtonProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

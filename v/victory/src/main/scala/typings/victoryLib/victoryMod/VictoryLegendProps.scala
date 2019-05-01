@@ -175,6 +175,7 @@ object VictoryLegendProps {
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     gutter: scala.Double | victoryLib.Anon_Left = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     itemsPerRow: scala.Int | scala.Double = null,
     label: java.lang.String | victoryLib.Anon_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
@@ -211,6 +212,7 @@ object VictoryLegendProps {
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)

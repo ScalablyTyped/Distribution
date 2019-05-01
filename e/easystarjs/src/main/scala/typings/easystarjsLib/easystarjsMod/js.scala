@@ -117,7 +117,7 @@ class js () extends js.Object {
     *
     * eg. easystar.setDirectionalCondition(1, 1, ['TOP']): You can only access the tile by walking down onto it,
     */
-  def setDirectionalCondition(x: scala.Double, y: scala.Double, allowedDirections: js.Array[easystarjsLib.Direction]): scala.Unit = js.native
+  def setDirectionalCondition(x: scala.Double, y: scala.Double, allowedDirections: js.Array[Direction]): scala.Unit = js.native
   /**
     * Sets the collision grid that EasyStar uses.
     *

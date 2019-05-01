@@ -10,7 +10,7 @@ trait Anon_Disabled extends js.Object {
   var placeholder: java.lang.String
   var prefixCls: java.lang.String
   var showCancelButton: scala.Boolean
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   def onBlur(): scala.Unit
   def onChange(): scala.Unit
   def onClear(): scala.Unit
@@ -30,7 +30,7 @@ object Anon_Disabled {
     placeholder: java.lang.String,
     prefixCls: java.lang.String,
     showCancelButton: scala.Boolean,
-    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   ): Anon_Disabled = {
     val __obj = js.Dynamic.literal(disabled = disabled, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onClear = js.Any.fromFunction0(onClear), onFocus = js.Any.fromFunction0(onFocus), onSubmit = js.Any.fromFunction0(onSubmit), placeholder = placeholder, prefixCls = prefixCls, showCancelButton = showCancelButton, styles = styles)
   

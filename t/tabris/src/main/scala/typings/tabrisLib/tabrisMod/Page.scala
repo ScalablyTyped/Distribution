@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._PageProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, padding, right, top, transform, visible, width, win_theme. Inlined autoDispose, image, title */ @JSImport("tabris", "Page")
 @js.native
 class Page () extends Composite {
-  def this(properties: tabrisLib.Properties[Page, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Page, TypeScriptPropertiesKey]) = this()
   /**
     * Defines whether this page will be automatically disposed when popped from the NavigationView, e.g.
     * using native back navigation.
@@ -21,7 +21,7 @@ class Page () extends Composite {
   /**
     * An image to be displayed in the navigation bar. Not supported on Windows.
     */
-  var image: tabrisLib.Image | scala.Null = js.native
+  var image: Image | scala.Null = js.native
   /**
     * The page title to be displayed in the navigation bar.
     */
@@ -31,7 +31,7 @@ class Page () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Page: tabrisLib.PageProperties = js.native
+  val tsProperties_Page: PageProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

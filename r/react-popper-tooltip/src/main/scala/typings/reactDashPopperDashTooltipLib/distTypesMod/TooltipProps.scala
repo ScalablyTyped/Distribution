@@ -10,7 +10,7 @@ trait TooltipProps extends js.Object {
   var arrowProps: reactDashPopperLib.reactDashPopperMod.PopperArrowProps = js.native
   var closeOnOutOfBoundaries: scala.Boolean = js.native
   @JSName("innerRef")
-  var innerRef_Original: reactDashPopperLib.RefHandler = js.native
+  var innerRef_Original: reactDashPopperLib.reactDashPopperMod.RefHandler = js.native
   var outOfBoundaries: scala.Boolean | scala.Null = js.native
   var placement: popperDotJsLib.popperDotJsMod.PopperNs.Placement = js.native
   var style: reactLib.reactMod.CSSProperties = js.native

@@ -9,7 +9,7 @@ trait DoWhileStatement
   extends BaseNode
      with Statement {
   var body: Statement
-  var test: estreeLib.Expression
+  var test: Expression
   @JSName("type")
   var type_DoWhileStatement: estreeLib.estreeLibStrings.DoWhileStatement
 }
@@ -18,7 +18,7 @@ object DoWhileStatement {
   @scala.inline
   def apply(
     body: Statement,
-    test: estreeLib.Expression,
+    test: Expression,
     `type`: estreeLib.estreeLibStrings.DoWhileStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

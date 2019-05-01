@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 object reactDashCssDashTransitionDashReplaceLibComponents {
   @scala.inline
-  def ReactDashCssDashTransitionDashReplace: reactLib.reactMod.ComponentType[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CSSTransitionReplace.Props */ js.Any
-  ] = js.constructorOf[reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
-  /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CSSTransitionReplace.Props */ js.Any]]
+  def Class: reactLib.reactMod.ComponentType[
+    reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
+  ] = js.constructorOf[reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Class].asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props]]
+  @scala.inline
+  def Props: reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props.type = reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
+  type Props = reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
 }
 

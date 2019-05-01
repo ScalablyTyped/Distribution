@@ -1,23 +1,24 @@
 organization := "org.scalablytyped"
 name := "passport-local"
-version := "1.0.0-dt-20190322Z-70a80e"
+version := "1.0.0-dt-20190322Z-6d8c82"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2ffec6",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-44a2a2",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-f548c5",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-a197d0",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-b7b3da",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-3fe05f",
-  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20190322Z-0ccd86",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c3b9c7",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c951c0",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-b7a897",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d1a562",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-481648",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-7ae182",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c1445",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-dc6325",
+  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20190322Z-dcde2a",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-565137",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-3f05df",
+  "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

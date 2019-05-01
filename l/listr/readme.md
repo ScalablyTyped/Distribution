@@ -1,7 +1,7 @@
 
 # Scala.js typings for listr
 
-Typings are for version 0.13
+Typings are for version 0.14
 
 ## Library description:
 Terminal task list
@@ -35,10 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for listr 0.13
+// Type definitions for listr 0.14
 // Project: https://github.com/samverschueren/listr#readme
 // Definitions by: Dusan Radovanovic <https://github.com/durad>
+//                 Vladislav Polyakov <https://github.com/polRk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.8
 
 ```
 

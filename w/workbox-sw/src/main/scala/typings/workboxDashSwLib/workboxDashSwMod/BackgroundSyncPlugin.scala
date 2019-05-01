@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
   * A class implementing the `fetchDidFail` lifecycle callback. This makes it
   * easier to add failed requests to a background sync Queue.
   */
-trait BackgroundSyncPlugin extends js.Object
+trait BackgroundSyncPlugin extends Plugin
 

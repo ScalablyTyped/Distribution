@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KanbanView extends js.Object {
   @JSName("$dragPos")
-  var $dragPos_Original: webixLib.WebixCallback = js.native
+  var $dragPos_Original: WebixCallback = js.native
   @JSName("$kanban")
   var $kanban: scala.Boolean = js.native
   @JSName("$skin")
-  var $skin_Original: webixLib.WebixCallback = js.native
+  var $skin_Original: WebixCallback = js.native
   var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   @JSName("$dragCreate")
   def $dragCreate(source: stdLib.HTMLElement, event: stdLib.Event): stdLib.HTMLElement = js.native

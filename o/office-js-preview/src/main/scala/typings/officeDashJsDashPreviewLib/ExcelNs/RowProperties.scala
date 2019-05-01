@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
   *
   * Represents the returned properties of getRowProperties.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * [Api set: ExcelApi 1.9]
   */
 trait RowProperties extends SettableRowProperties {
   /**
     *
     * Represents the `address` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Represents the `addressLocal` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var addressLocal: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Represents the `rowIndex` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
 }

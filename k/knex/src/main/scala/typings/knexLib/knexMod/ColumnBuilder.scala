@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ColumnBuilder extends js.Object {
   def alter(): ColumnBuilder = js.native
   def comment(value: java.lang.String): ColumnBuilder = js.native
-  def defaultTo(value: knexLib.Value): ColumnBuilder = js.native
+  def defaultTo(value: Value): ColumnBuilder = js.native
   def index(): ColumnBuilder = js.native
   def index(indexName: java.lang.String): ColumnBuilder = js.native
   def notNullable(): ColumnBuilder = js.native

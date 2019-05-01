@@ -18,8 +18,7 @@ trait PivotLayoutLoadOptions extends js.Object {
     *
     * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFormat: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -41,8 +40,7 @@ trait PivotLayoutLoadOptions extends js.Object {
     *
     * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var preserveFormatting: js.UndefOr[scala.Boolean] = js.undefined
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mentions
 
-Typings are for version 2.4
+Typings are for version 3.0
 
 ## Library description:
 React mentions input
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-mentions 2.4
+// Type definitions for react-mentions 3.0
 // Project: https://github.com/signavio/react-mentions
 // Definitions by: Scott Willeke <https://github.com/activescott>
 //                 Eugene Fedorenko <https://github.com/efedorenko>

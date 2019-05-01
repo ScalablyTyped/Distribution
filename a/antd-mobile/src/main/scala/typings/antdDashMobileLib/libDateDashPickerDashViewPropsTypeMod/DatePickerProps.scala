@@ -18,7 +18,6 @@ trait DatePickerProps
 object DatePickerProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dismissText: reactLib.reactMod.ReactNode = null,
@@ -41,7 +40,6 @@ object DatePickerProps {
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): DatePickerProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.asInstanceOf[js.Any])

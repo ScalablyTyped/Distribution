@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object zapierDashPlatformDashCoreLibStrings {
   @js.native
-  sealed trait DELETE extends HttpMethod
+  sealed trait DELETE
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait GET
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
-  sealed trait HEAD extends HttpMethod
+  sealed trait HEAD
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
-  sealed trait OPTIONS extends HttpMethod
+  sealed trait OPTIONS
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
-  sealed trait PATCH extends HttpMethod
+  sealed trait PATCH
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
-  sealed trait POST extends HttpMethod
+  sealed trait POST
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
-  sealed trait PUT extends HttpMethod
+  sealed trait PUT
+    extends zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpMethod
   
   @js.native
   sealed trait error extends js.Object

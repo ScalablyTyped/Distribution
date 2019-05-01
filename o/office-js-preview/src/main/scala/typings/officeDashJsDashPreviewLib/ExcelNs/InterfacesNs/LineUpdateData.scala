@@ -11,8 +11,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ArrowheadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long
@@ -21,8 +20,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ArrowheadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open
@@ -31,8 +29,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ArrowheadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide
@@ -41,8 +38,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the connector type for the line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var connectorType: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ConnectorType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Straight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Elbow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Curve
@@ -51,8 +47,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the length of the arrowhead at the end of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ArrowheadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long
@@ -61,8 +56,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the style of the arrowhead at the end of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ArrowheadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open
@@ -71,8 +65,7 @@ trait LineUpdateData extends js.Object {
     *
     * Represents the width of the arrowhead at the end of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ArrowheadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide

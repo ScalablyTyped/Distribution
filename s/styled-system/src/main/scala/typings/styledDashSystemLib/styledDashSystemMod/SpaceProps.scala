@@ -10,49 +10,49 @@ trait SpaceProps[TLength] extends js.Object {
   var m: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
   /** Margin on top, left, bottom and right */
   var margin: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
-  /** Margin for the bottom */
+  /** Margin on bottom */
   var marginBottom: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginBottomProperty[TLength]]] = js.undefined
-  /** Margin for the left */
+  /** Margin on left */
   var marginLeft: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginLeftProperty[TLength]]] = js.undefined
-  /** Margin for the right */
+  /** Margin on right */
   var marginRight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginRightProperty[TLength]]] = js.undefined
-  /** Margin for the top */
+  /** Margin on top */
   var marginTop: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]]] = js.undefined
-  /** Margin for the bottom */
+  /** Margin on bottom */
   var mb: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginBottomProperty[TLength]]] = js.undefined
-  /** Margin for the left */
+  /** Margin on left */
   var ml: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginLeftProperty[TLength]]] = js.undefined
-  /** Margin for the right */
+  /** Margin on right */
   var mr: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginRightProperty[TLength]]] = js.undefined
-  /** Margin for the top */
+  /** Margin on top */
   var mt: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]]] = js.undefined
-  /** Margin for the left and right */
+  /** Margin on left and right */
   var mx: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
-  /** Margin for the top and bottom */
+  /** Margin on top and bottom */
   var my: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding on top, left, bottom and right */
   var p: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding on top, left, bottom and right */
   var padding: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
-  /** Padding for the bottom */
+  /** Padding on bottom */
   var paddingBottom: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingBottomProperty[TLength]]] = js.undefined
-  /** Padding for the left */
+  /** Padding on left */
   var paddingLeft: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingLeftProperty[TLength]]] = js.undefined
-  /** Padding for the right */
+  /** Padding on right */
   var paddingRight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingRightProperty[TLength]]] = js.undefined
-  /** Padding for the top */
+  /** Padding on top */
   var paddingTop: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingTopProperty[TLength]]] = js.undefined
-  /** Padding for the bottom */
+  /** Padding on bottom */
   var pb: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingBottomProperty[TLength]]] = js.undefined
-  /** Padding for the left */
+  /** Padding on left */
   var pl: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingLeftProperty[TLength]]] = js.undefined
-  /** Padding for the right */
+  /** Padding on right */
   var pr: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingRightProperty[TLength]]] = js.undefined
-  /** Padding for the top */
+  /** Padding on top */
   var pt: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingTopProperty[TLength]]] = js.undefined
-  /** Padding for the left and right */
+  /** Padding on left and right */
   var px: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
-  /** Padding for the top and bottom */
+  /** Padding on top and bottom */
   var py: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
 }
 

@@ -16,7 +16,7 @@ object AsyncOpts {
     browser: java.lang.String = null,
     extensions: java.lang.String | js.Array[java.lang.String] = null,
     filename: java.lang.String = null,
-    isFile: (/* file */ java.lang.String, /* cb */ resolveLib.isFileCallback) => scala.Unit = null,
+    isFile: (/* file */ java.lang.String, /* cb */ resolveLib.resolveMod.isFileCallback) => scala.Unit = null,
     moduleDirectory: java.lang.String | js.Array[java.lang.String] = null,
     modules: js.Any = null,
     `package`: js.Any = null,
@@ -24,7 +24,7 @@ object AsyncOpts {
     pathFilter: (/* pkg */ js.Any, /* path */ java.lang.String, /* relativePath */ java.lang.String) => java.lang.String = null,
     paths: java.lang.String | js.Array[java.lang.String] = null,
     preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
-    readFile: (/* file */ java.lang.String, /* cb */ resolveLib.readFileCallback) => scala.Unit = null
+    readFile: (/* file */ java.lang.String, /* cb */ resolveLib.resolveMod.readFileCallback) => scala.Unit = null
   ): AsyncOpts = {
     val __obj = js.Dynamic.literal()
     if (basedir != null) __obj.updateDynamic("basedir")(basedir)

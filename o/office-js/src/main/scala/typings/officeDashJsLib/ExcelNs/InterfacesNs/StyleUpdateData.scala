@@ -16,6 +16,13 @@ trait StyleUpdateData extends js.Object {
   var autoIndent: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * A Border collection of four Border objects that represent the style of the four borders.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  var borders: js.UndefOr[RangeBorderCollectionUpdateData] = js.undefined
+  /**
+    *
     * The Fill of the style.
     *
     * [Api set: ExcelApi 1.7]
@@ -159,6 +166,7 @@ object StyleUpdateData {
   @scala.inline
   def apply(
     autoIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    borders: RangeBorderCollectionUpdateData = null,
     fill: RangeFillUpdateData = null,
     font: RangeFontUpdateData = null,
     formulaHidden: js.UndefOr[scala.Boolean] = js.undefined,
@@ -181,6 +189,7 @@ object StyleUpdateData {
   ): StyleUpdateData = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent)
+    if (borders != null) __obj.updateDynamic("borders")(borders)
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (font != null) __obj.updateDynamic("font")(font)
     if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden)

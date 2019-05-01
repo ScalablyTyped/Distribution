@@ -10,19 +10,31 @@ import scala.scalajs.js.annotation._
 class ThemeProvider protected ()
   extends reactLib.reactMod.Component[
       styledDashComponentsLib.styledDashComponentsMod.ThemeProviderProps[
-        styledDashComponentsLib.AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]], 
-        styledDashComponentsLib.AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]]
+        styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[
+          styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+        ], 
+        styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[
+          styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+        ]
       ], 
       reactLib.reactMod.ComponentState, 
       js.Any
     ] {
   def this(props: styledDashComponentsLib.styledDashComponentsMod.ThemeProviderProps[
-      styledDashComponentsLib.AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]], 
-      styledDashComponentsLib.AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]]
+      styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[
+        styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+      ], 
+      styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[
+        styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+      ]
     ]) = this()
   def this(props: styledDashComponentsLib.styledDashComponentsMod.ThemeProviderProps[
-      styledDashComponentsLib.AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]], 
-      styledDashComponentsLib.AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]]
+      styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[
+        styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+      ], 
+      styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[
+        styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+      ]
     ], context: js.Any) = this()
 }
 

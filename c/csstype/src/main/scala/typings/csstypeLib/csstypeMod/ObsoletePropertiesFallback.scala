@@ -29,7 +29,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var KhtmlBoxFlex: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var KhtmlBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
     *
@@ -37,7 +37,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var KhtmlBoxFlexGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var KhtmlBoxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
     *
@@ -53,7 +53,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var KhtmlBoxOrdinalGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var KhtmlBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -179,7 +179,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var MozBoxFlex: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var MozBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
     *
@@ -187,7 +187,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var MozBoxOrdinalGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var MozBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -219,7 +219,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var MozOpacity: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var MozOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
     *
@@ -325,7 +325,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var OAnimationDelay: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var OAnimationDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -341,7 +341,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var OAnimationDuration: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var OAnimationDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -411,7 +411,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var OTransitionDelay: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var OTransitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
@@ -419,7 +419,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var OTransitionDuration: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var OTransitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -459,7 +459,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var WebkitBoxFlex: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var WebkitBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
     *
@@ -467,7 +467,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var WebkitBoxFlexGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var WebkitBoxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
     *
@@ -483,7 +483,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var WebkitBoxOrdinalGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var WebkitBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -539,7 +539,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var boxFlex: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var boxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
     *
@@ -547,7 +547,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var boxFlexGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var boxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
     *
@@ -563,7 +563,7 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var boxOrdinalGroup: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var boxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -799,10 +799,10 @@ object ObsoletePropertiesFallback {
   def apply[TLength](
     KhtmlBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     KhtmlBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    KhtmlBoxFlex: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    KhtmlBoxFlexGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    KhtmlBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    KhtmlBoxFlexGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     KhtmlBoxLines: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
-    KhtmlBoxOrdinalGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    KhtmlBoxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     KhtmlBoxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     KhtmlBoxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
     MozBackgroundClip: BackgroundClipProperty | js.Array[BackgroundClipProperty] = null,
@@ -817,12 +817,12 @@ object ObsoletePropertiesFallback {
     MozBorderRadiusTopright: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]] = null,
     MozBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     MozBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    MozBoxFlex: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    MozBoxOrdinalGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    MozBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    MozBoxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     MozBoxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     MozBoxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
     MozBoxShadow: BoxShadowProperty | js.Array[BoxShadowProperty] = null,
-    MozOpacity: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    MozOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
     MozOutline: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]] = null,
     MozOutlineColor: OutlineColorProperty | js.Array[OutlineColorProperty] = null,
     MozOutlineRadius: MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]] = null,
@@ -836,9 +836,9 @@ object ObsoletePropertiesFallback {
     MozTextDecorationStyle: TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty] = null,
     MozUserInput: MozUserInputProperty | js.Array[MozUserInputProperty] = null,
     OAnimation: AnimationProperty | js.Array[AnimationProperty] = null,
-    OAnimationDelay: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    OAnimationDelay: GlobalsString | js.Array[GlobalsString] = null,
     OAnimationDirection: AnimationDirectionProperty | js.Array[AnimationDirectionProperty] = null,
-    OAnimationDuration: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    OAnimationDuration: GlobalsString | js.Array[GlobalsString] = null,
     OAnimationFillMode: AnimationFillModeProperty | js.Array[AnimationFillModeProperty] = null,
     OAnimationIterationCount: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty] = null,
     OAnimationName: AnimationNameProperty | js.Array[AnimationNameProperty] = null,
@@ -847,26 +847,26 @@ object ObsoletePropertiesFallback {
     OBackgroundSize: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
     OTransform: TransformProperty | js.Array[TransformProperty] = null,
     OTransition: TransitionProperty | js.Array[TransitionProperty] = null,
-    OTransitionDelay: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
-    OTransitionDuration: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    OTransitionDelay: GlobalsString | js.Array[GlobalsString] = null,
+    OTransitionDuration: GlobalsString | js.Array[GlobalsString] = null,
     OTransitionProperty: TransitionPropertyProperty | js.Array[TransitionPropertyProperty] = null,
     OTransitionTimingFunction: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     WebkitBoxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     WebkitBoxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    WebkitBoxFlex: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    WebkitBoxFlexGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    WebkitBoxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    WebkitBoxFlexGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     WebkitBoxLines: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
-    WebkitBoxOrdinalGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    WebkitBoxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     WebkitBoxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     WebkitBoxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
     WebkitScrollSnapPointsX: ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty] = null,
     WebkitScrollSnapPointsY: ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty] = null,
     boxAlign: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     boxDirection: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    boxFlex: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    boxFlexGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    boxFlex: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    boxFlexGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     boxLines: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
-    boxOrdinalGroup: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    boxOrdinalGroup: GlobalsNumber | js.Array[GlobalsNumber] = null,
     boxOrient: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     boxPack: BoxPackProperty | js.Array[BoxPackProperty] = null,
     clip: ClipProperty | js.Array[ClipProperty] = null,

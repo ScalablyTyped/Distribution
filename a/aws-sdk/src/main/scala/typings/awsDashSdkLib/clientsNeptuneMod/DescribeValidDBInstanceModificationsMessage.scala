@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeValidDBInstanceModificationsMessage extends js.Object {
   /**
-    * The customer identifier or the ARN of your DB instance. 
+    * The customer identifier or the ARN of your DB instance.
     */
   var DBInstanceIdentifier: String
 }

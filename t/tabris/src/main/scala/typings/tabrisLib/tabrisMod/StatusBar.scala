@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._StatusBarProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined displayMode, theme */ @JSImport("tabris", "StatusBar")
 @js.native
 class StatusBar protected () extends Widget {
-  protected def this(properties: tabrisLib.Properties[StatusBar, tabrisLib.TypeScriptPropertiesKey]) = this()
+  protected def this(properties: Properties[StatusBar, TypeScriptPropertiesKey]) = this()
   /**
     * Controls how the status bar is positioned relative to the `ui.contentView`. The value `default`
     * places the content below the status bar. The `hide` option lets the status bar disappear, making more
@@ -40,7 +40,7 @@ class StatusBar protected () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_StatusBar: tabrisLib.StatusBarProperties = js.native
+  val tsProperties_StatusBar: StatusBarProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

@@ -14,7 +14,13 @@ object nodeDashPgDashMigrateLibStrings {
     extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
+  sealed trait ALWAYS extends js.Object
+  
+  @js.native
   sealed trait BEFORE extends js.Object
+  
+  @js.native
+  sealed trait `BY DEFAULT` extends js.Object
   
   @js.native
   sealed trait CASCADE
@@ -171,7 +177,11 @@ object nodeDashPgDashMigrateLibStrings {
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   @scala.inline
+  def ALWAYS: ALWAYS = "ALWAYS".asInstanceOf[ALWAYS]
+  @scala.inline
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
+  @scala.inline
+  def `BY DEFAULT`: `BY DEFAULT` = "BY DEFAULT".asInstanceOf[`BY DEFAULT`]
   @scala.inline
   def CASCADE: CASCADE = "CASCADE".asInstanceOf[CASCADE]
   @scala.inline

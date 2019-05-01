@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MapContext extends js.Object {
   /**
+    * 获取原生地图对象
+    */
+  @JSName("$getAppMap")
+  def $getAppMap(): js.Object
+  /**
     * 获取当前地图中心的经纬度，返回的是 gcj02 坐标系，可以用于 uni.openLocation
     */
   def getCenterLocation(options: MapContextGetCenterLocationOptions): scala.Unit
@@ -35,6 +40,7 @@ trait MapContext extends js.Object {
 object MapContext {
   @scala.inline
   def apply(
+    $getAppMap: () => js.Object,
     getCenterLocation: MapContextGetCenterLocationOptions => scala.Unit,
     getRegion: MapContextGetRegionOptions => scala.Unit,
     getScale: MapContextGetScaleOptions => scala.Unit,
@@ -42,7 +48,7 @@ object MapContext {
     moveToLocation: () => scala.Unit,
     translateMarker: MapContextTranslateMarkerOptions => scala.Unit
   ): MapContext = {
-    val __obj = js.Dynamic.literal(getCenterLocation = js.Any.fromFunction1(getCenterLocation), getRegion = js.Any.fromFunction1(getRegion), getScale = js.Any.fromFunction1(getScale), includePoints = js.Any.fromFunction1(includePoints), moveToLocation = js.Any.fromFunction0(moveToLocation), translateMarker = js.Any.fromFunction1(translateMarker))
+    val __obj = js.Dynamic.literal($getAppMap = js.Any.fromFunction0($getAppMap), getCenterLocation = js.Any.fromFunction1(getCenterLocation), getRegion = js.Any.fromFunction1(getRegion), getScale = js.Any.fromFunction1(getScale), includePoints = js.Any.fromFunction1(includePoints), moveToLocation = js.Any.fromFunction0(moveToLocation), translateMarker = js.Any.fromFunction1(translateMarker))
   
     __obj.asInstanceOf[MapContext]
   }

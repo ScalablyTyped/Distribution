@@ -56,7 +56,7 @@ object ChartDataPoint {
     indexLabelFontWeight: java.lang.String = null,
     indexLabelFormatter: /* e */ canvasjsLib.Anon_ChartDataPoint => java.lang.String = null,
     indexLabelLineColor: java.lang.String = null,
-    indexLabelLineDashType: canvasjsLib.DashType = null,
+    indexLabelLineDashType: DashType = null,
     indexLabelLineThickness: scala.Int | scala.Double = null,
     indexLabelOrientation: java.lang.String = null,
     indexLabelPlacement: java.lang.String = null,

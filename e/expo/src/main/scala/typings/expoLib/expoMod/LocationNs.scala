@@ -50,7 +50,9 @@ object LocationNs extends js.Object {
   
   trait LocationTaskOptions extends js.Object {
     var accuracy: js.UndefOr[scala.Double] = js.undefined
+    var distanceInterval: scala.Double
     var showsBackgroundLocationIndicator: js.UndefOr[scala.Boolean] = js.undefined
+    var timeInterval: scala.Double
   }
   
   trait ProviderStatus extends js.Object {
@@ -80,7 +82,7 @@ object LocationNs extends js.Object {
   def reverseGeocodeAsync(location: LocationProps): js.Promise[js.Array[GeocodeData]] = js.native
   def setApiKey(key: java.lang.String): scala.Unit = js.native
   def startGeofencingAsync(taskName: java.lang.String, regions: js.Array[Region]): js.Promise[scala.Unit] = js.native
-  def startgeocodUpdatesAsync(taskName: java.lang.String, options: LocationTaskOptions): js.Promise[scala.Unit] = js.native
+  def startLocationUpdatesAsync(taskName: java.lang.String, options: LocationTaskOptions): js.Promise[scala.Unit] = js.native
   def stopGeofencingAsync(taskName: java.lang.String): js.Promise[scala.Unit] = js.native
   def stopLocationUpdatesAsync(taskName: java.lang.String): js.Promise[scala.Unit] = js.native
   def watchHeadingAsync(callback: js.Function1[/* status */ HeadingStatus, scala.Unit]): fbemitterLib.fbemitterMod.EventSubscription = js.native

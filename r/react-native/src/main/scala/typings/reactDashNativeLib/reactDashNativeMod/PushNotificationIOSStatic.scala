@@ -11,7 +11,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * iOS fetch results that best describe the result of a finished remote notification handler.
     * For a list of possible values, see `PushNotificationIOS.FetchResult`.
     */
-  var FetchResult: reactDashNativeLib.FetchResult = js.native
+  var FetchResult: reactDashNativeLib.reactDashNativeMod.FetchResult = js.native
   /**
     * Unregister for all remote notifications received via Apple Push
     * Notification service.
@@ -96,12 +96,7 @@ trait PushNotificationIOSStatic extends js.Object {
   /**
     * Gets the local notifications that are currently scheduled.
     */
-  def getScheduledLocalNotifications(
-    callback: js.Function1[
-      /* notifications */ js.Array[reactDashNativeLib.ScheduleLocalNotificationDetails], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
+  def getScheduledLocalNotifications(callback: js.Function1[/* notifications */ js.Array[ScheduleLocalNotificationDetails], scala.Unit]): scala.Unit = js.native
   /**
     * Schedules the localNotification for immediate presentation.
     * details is an object containing:
@@ -112,7 +107,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * userInfo : An optional object containing additional notification data.
     * applicationIconBadgeNumber (optional) : The number to display as the app's icon badge. The default value of this property is 0, which means that no badge is displayed.
     */
-  def presentLocalNotification(details: reactDashNativeLib.PresentLocalNotificationDetails): scala.Unit = js.native
+  def presentLocalNotification(details: PresentLocalNotificationDetails): scala.Unit = js.native
   /**
     * Removes the event listener. Do this in `componentWillUnmount` to prevent
     * memory leaks
@@ -148,7 +143,7 @@ trait PushNotificationIOSStatic extends js.Object {
     * userInfo : An optional object containing additional notification data.
     * applicationIconBadgeNumber (optional) : The number to display as the app's icon badge. Setting the number to 0 removes the icon badge.
     */
-  def scheduleLocalNotification(details: reactDashNativeLib.ScheduleLocalNotificationDetails): scala.Unit = js.native
+  def scheduleLocalNotification(details: ScheduleLocalNotificationDetails): scala.Unit = js.native
   /**
     * Sets the badge number for the app icon on the home screen
     */

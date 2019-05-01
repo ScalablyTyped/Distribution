@@ -31,7 +31,7 @@ object default extends js.Object {
   def exists(dbName: java.lang.String): dexieLib.dexieMod.DexieNs.Promise[scala.Boolean] = js.native
   def getByKeyPath(obj: js.Object, keyPath: java.lang.String): js.Any = js.native
   def getDatabaseNames(): dexieLib.dexieMod.DexieNs.Promise[js.Array[java.lang.String]] = js.native
-  def getDatabaseNames[R](thenShortcut: dexieLib.ThenShortcut[js.Array[java.lang.String], R]): dexieLib.dexieMod.DexieNs.Promise[R] = js.native
+  def getDatabaseNames[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.Array[java.lang.String], R]): dexieLib.dexieMod.DexieNs.Promise[R] = js.native
   def `override`[F](origFunc: F, overridedFactory: js.Function1[/* fn */ js.Any, _]): F = js.native
   def setByKeyPath(obj: js.Object, keyPath: java.lang.String, value: js.Any): scala.Unit = js.native
   def shallowClone[T](obj: T): T = js.native

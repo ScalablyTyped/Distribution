@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Quote extends js.Object {
   var quote: js.UndefOr[java.lang.String] = js.undefined
-  var replacer: js.UndefOr[JSONReplacer] = js.undefined
+  var replacer: js.UndefOr[json5Lib.json5Mod.JSONReplacer] = js.undefined
   var space: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object Anon_Quote {
   @scala.inline
   def apply(
     quote: java.lang.String = null,
-    replacer: JSONReplacer = null,
+    replacer: json5Lib.json5Mod.JSONReplacer = null,
     space: scala.Double | java.lang.String = null
   ): Anon_Quote = {
     val __obj = js.Dynamic.literal()

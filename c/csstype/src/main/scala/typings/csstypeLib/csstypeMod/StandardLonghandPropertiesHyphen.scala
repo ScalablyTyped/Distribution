@@ -99,7 +99,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-delay
     */
-  var `animation-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `animation-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -125,7 +125,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-duration
     */
-  var `animation-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `animation-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -1418,7 +1418,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-grow
     */
-  var `flex-grow`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `flex-grow`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
     *
@@ -1431,7 +1431,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex-shrink
     */
-  var `flex-shrink`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `flex-shrink`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
     *
@@ -2627,7 +2627,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/opacity
     */
-  var opacity: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var opacity: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
     *
@@ -2640,7 +2640,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/order
     */
-  var order: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var order: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
     *
@@ -2652,7 +2652,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/orphans
     */
-  var orphans: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var orphans: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`outline-color`** CSS property sets the color of an element's outline.
     *
@@ -3509,7 +3509,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold
     */
-  var `shape-image-threshold`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `shape-image-threshold`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
     *
@@ -3677,7 +3677,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position
     */
-  var `text-emphasis-position`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `text-emphasis-position`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
     *
@@ -3886,7 +3886,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-delay
     */
-  var `transition-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `transition-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
@@ -3899,7 +3899,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-duration
     */
-  var `transition-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `transition-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -4010,7 +4010,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/widows
     */
-  var widows: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var widows: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`width`** CSS property sets an element's width. By default it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.
     *
@@ -4115,9 +4115,9 @@ object StandardLonghandPropertiesHyphen {
     `align-content`: AlignContentProperty = null,
     `align-items`: AlignItemsProperty = null,
     `align-self`: AlignSelfProperty = null,
-    `animation-delay`: csstypeLib.GlobalsString = null,
+    `animation-delay`: GlobalsString = null,
     `animation-direction`: AnimationDirectionProperty = null,
-    `animation-duration`: csstypeLib.GlobalsString = null,
+    `animation-duration`: GlobalsString = null,
     `animation-fill-mode`: AnimationFillModeProperty = null,
     `animation-iteration-count`: AnimationIterationCountProperty = null,
     `animation-name`: AnimationNameProperty = null,
@@ -4216,8 +4216,8 @@ object StandardLonghandPropertiesHyphen {
     filter: FilterProperty = null,
     `flex-basis`: FlexBasisProperty[TLength] = null,
     `flex-direction`: FlexDirectionProperty = null,
-    `flex-grow`: csstypeLib.GlobalsNumber = null,
-    `flex-shrink`: csstypeLib.GlobalsNumber = null,
+    `flex-grow`: GlobalsNumber = null,
+    `flex-shrink`: GlobalsNumber = null,
     `flex-wrap`: FlexWrapProperty = null,
     float: FloatProperty = null,
     `font-family`: FontFamilyProperty = null,
@@ -4318,9 +4318,9 @@ object StandardLonghandPropertiesHyphen {
     `offset-position`: OffsetPositionProperty[TLength] = null,
     `offset-rotate`: OffsetRotateProperty = null,
     `offset-rotation`: OffsetRotateProperty = null,
-    opacity: csstypeLib.GlobalsNumber = null,
-    order: csstypeLib.GlobalsNumber = null,
-    orphans: csstypeLib.GlobalsNumber = null,
+    opacity: GlobalsNumber = null,
+    order: GlobalsNumber = null,
+    orphans: GlobalsNumber = null,
     `outline-color`: OutlineColorProperty = null,
     `outline-offset`: OutlineOffsetProperty[TLength] = null,
     `outline-style`: OutlineStyleProperty = null,

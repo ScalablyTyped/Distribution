@@ -3412,6 +3412,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait WorksheetSelectionChanged extends js.Object
   
   @js.native
+  sealed trait WorksheetSingleClicked extends js.Object
+  
+  @js.native
   sealed trait World extends js.Object
   
   @js.native
@@ -5732,6 +5735,8 @@ object officeDashJsDashPreviewLibStrings {
   def WorksheetRowSorted: WorksheetRowSorted = "WorksheetRowSorted".asInstanceOf[WorksheetRowSorted]
   @scala.inline
   def WorksheetSelectionChanged: WorksheetSelectionChanged = "WorksheetSelectionChanged".asInstanceOf[WorksheetSelectionChanged]
+  @scala.inline
+  def WorksheetSingleClicked: WorksheetSingleClicked = "WorksheetSingleClicked".asInstanceOf[WorksheetSingleClicked]
   @scala.inline
   def World: World = "World".asInstanceOf[World]
   @scala.inline

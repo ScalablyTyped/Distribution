@@ -12,13 +12,13 @@ trait Struct[T]
   @JSName("meta")
   var meta_Struct: tcombLib.Anon_DefaultProps = js.native
   @JSName("update")
-  var update_Original: tcombLib.Update[T] = js.native
-  def extend[E /* <: T */](mixins: js.Array[tcombLib.StructMixin]): Struct[E] = js.native
-  def extend[E /* <: T */](mixins: js.Array[tcombLib.StructMixin], name: java.lang.String): Struct[E] = js.native
-  def extend[E /* <: T */](mixins: js.Array[tcombLib.StructMixin], name: tcombLib.StructOptions): Struct[E] = js.native
-  def extend[E /* <: T */](mixins: tcombLib.StructMixin): Struct[E] = js.native
-  def extend[E /* <: T */](mixins: tcombLib.StructMixin, name: java.lang.String): Struct[E] = js.native
-  def extend[E /* <: T */](mixins: tcombLib.StructMixin, name: tcombLib.StructOptions): Struct[E] = js.native
-  def update(instance: T, spec: tcombLib.UpdatePatch): T = js.native
+  var update_Original: Update[T] = js.native
+  def extend[E /* <: T */](mixins: js.Array[StructMixin]): Struct[E] = js.native
+  def extend[E /* <: T */](mixins: js.Array[StructMixin], name: java.lang.String): Struct[E] = js.native
+  def extend[E /* <: T */](mixins: js.Array[StructMixin], name: StructOptions): Struct[E] = js.native
+  def extend[E /* <: T */](mixins: StructMixin): Struct[E] = js.native
+  def extend[E /* <: T */](mixins: StructMixin, name: java.lang.String): Struct[E] = js.native
+  def extend[E /* <: T */](mixins: StructMixin, name: StructOptions): Struct[E] = js.native
+  def update(instance: T, spec: UpdatePatch): T = js.native
 }
 

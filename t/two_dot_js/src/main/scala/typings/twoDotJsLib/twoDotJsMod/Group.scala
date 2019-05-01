@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Group () extends Object {
   var cap: java.lang.String = js.native
-  var children: js.Array[twoDotJsLib._Object] = js.native
+  var children: js.Array[_Object] = js.native
   var fill: Color = js.native
   var id: java.lang.String = js.native
   var join: java.lang.String = js.native
@@ -22,16 +22,16 @@ class Group () extends Object {
   var scale: scala.Double = js.native
   var stroke: Color = js.native
   var translation: Vector = js.native
-  def add(objects: twoDotJsLib._Object*): this.type = js.native
-  def add(objects: js.Array[twoDotJsLib._Object]): this.type = js.native
+  def add(objects: _Object*): this.type = js.native
+  def add(objects: js.Array[_Object]): this.type = js.native
   def addTo(group: Group): this.type = js.native
   def center(): this.type = js.native
   def getBoundingClientRect(): BoundingClientRect = js.native
   def getBoundingClientRect(shallow: scala.Boolean): BoundingClientRect = js.native
   def noFill(): this.type = js.native
   def noStroke(): this.type = js.native
-  def remove(objects: twoDotJsLib._Object*): this.type = js.native
-  def remove(objects: js.Array[twoDotJsLib._Object]): this.type = js.native
+  def remove(objects: _Object*): this.type = js.native
+  def remove(objects: js.Array[_Object]): this.type = js.native
 }
 
 /* static members */

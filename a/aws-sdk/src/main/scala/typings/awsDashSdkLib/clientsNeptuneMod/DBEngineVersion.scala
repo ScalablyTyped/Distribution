@@ -19,7 +19,7 @@ trait DBEngineVersion extends js.Object {
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   /**
-    *  The default character set for new instances of this engine version, if the CharacterSetName parameter of the CreateDBInstance API is not specified. 
+    *  The default character set for new instances of this engine version, if the CharacterSetName parameter of the CreateDBInstance API is not specified.
     */
   var DefaultCharacterSet: js.UndefOr[CharacterSet] = js.undefined
   /**
@@ -35,11 +35,11 @@ trait DBEngineVersion extends js.Object {
     */
   var ExportableLogTypes: js.UndefOr[LogTypeList] = js.undefined
   /**
-    *  A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance action. 
+    *  A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance action.
     */
   var SupportedCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.undefined
   /**
-    * A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action. 
+    * A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action.
     */
   var SupportedTimezones: js.UndefOr[SupportedTimezonesList] = js.undefined
   /**

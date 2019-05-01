@@ -11,16 +11,14 @@ trait ShapeGroupData extends js.Object {
     *
     * Represents the shape identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Returns the collection of Shape objects. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }

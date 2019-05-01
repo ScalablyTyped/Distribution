@@ -9,7 +9,7 @@ trait WithStatement
   extends BaseNode
      with Statement {
   var body: Statement
-  var `object`: estreeLib.Expression
+  var `object`: Expression
   @JSName("type")
   var type_WithStatement: estreeLib.estreeLibStrings.WithStatement
 }
@@ -18,7 +18,7 @@ object WithStatement {
   @scala.inline
   def apply(
     body: Statement,
-    `object`: estreeLib.Expression,
+    `object`: Expression,
     `type`: estreeLib.estreeLibStrings.WithStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

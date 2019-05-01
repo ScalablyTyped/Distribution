@@ -1,14 +1,15 @@
 organization := "org.scalablytyped"
 name := "vega-typings"
-version := "0.6.2-d7a24c"
+version := "0.6.2-9471b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
-  "org.scalablytyped" %%% "vega-util" % "1.10.0-08c389")
+  "org.scalablytyped" %%% "std" % "3.4-495f93",
+  "org.scalablytyped" %%% "vega-util" % "1.10.0-bf7ba1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

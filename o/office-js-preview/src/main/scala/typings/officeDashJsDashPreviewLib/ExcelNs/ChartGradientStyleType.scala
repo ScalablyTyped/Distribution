@@ -12,8 +12,7 @@ sealed trait ChartGradientStyleType extends js.Object
   *
   * Represents the Gradient Style of chart series, only applicable in RegionMap chart.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartGradientStyleType")
 @js.native

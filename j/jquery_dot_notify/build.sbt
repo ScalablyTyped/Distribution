@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_notify"
-version := "1.5-dt-20190213Z-e6b502"
+version := "1.5-dt-20190213Z-567d01"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

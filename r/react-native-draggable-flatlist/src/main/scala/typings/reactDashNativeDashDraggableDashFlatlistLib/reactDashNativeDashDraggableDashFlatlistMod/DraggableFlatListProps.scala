@@ -48,7 +48,7 @@ object DraggableFlatListProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: reactDashNativeLib.reactDashNativeMod.AccessibilityRole = null,
     accessibilityStates: js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: reactDashNativeLib.reactDashNativeMod.AccessibilityTrait | js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityTrait] = null,
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     alwaysBounceHorizontal: js.UndefOr[scala.Boolean] = js.undefined,

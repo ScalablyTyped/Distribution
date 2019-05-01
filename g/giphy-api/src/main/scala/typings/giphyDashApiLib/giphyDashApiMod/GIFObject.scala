@@ -13,7 +13,7 @@ trait GIFObject extends js.Object {
   var id: java.lang.String
   var images: Images
   var import_datetime: java.lang.String
-  var rating: giphyDashApiLib.Rating
+  var rating: Rating
   var slug: java.lang.String
   var source: java.lang.String
   var source_post_url: java.lang.String
@@ -37,7 +37,7 @@ object GIFObject {
     id: java.lang.String,
     images: Images,
     import_datetime: java.lang.String,
-    rating: giphyDashApiLib.Rating,
+    rating: Rating,
     slug: java.lang.String,
     source: java.lang.String,
     source_post_url: java.lang.String,

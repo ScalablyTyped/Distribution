@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._CanvasProperties because Already inherited */ @JSImport("tabris", "Canvas")
 @js.native
 class Canvas () extends Composite {
-  def this(properties: tabrisLib.Properties[Canvas, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Canvas, TypeScriptPropertiesKey]) = this()
   /**
     * The type of this property defines the interface used by `set`, `get`, and
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Canvas: tabrisLib.CanvasProperties = js.native
+  val tsProperties_Canvas: CanvasProperties = js.native
   /**
     * Returns the drawing context with the given size.
     * @param contextType The context identifier. Only `"2d"` is currently supported.

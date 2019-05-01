@@ -46,6 +46,13 @@ trait VictoryCommonProps extends js.Object {
     */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
+    * The horizontal prop determines whether data will be plotted horizontally.
+    * When this prop is set to true, the independent variable will be plotted on the y axis
+    * and the dependent variable will be plotted on the x axis.
+    * @default false
+    */
+  var horizontal: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The name prop is used to reference a component instance when defining shared events.
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
@@ -96,6 +103,7 @@ object VictoryCommonProps {
     containerComponent: reactLib.reactMod.ReactElement[_] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
@@ -108,6 +116,7 @@ object VictoryCommonProps {
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (name != null) __obj.updateDynamic("name")(name)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

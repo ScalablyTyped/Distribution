@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BaseClass extends BaseNode {
   var body: ClassBody
-  var superClass: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+  var superClass: js.UndefOr[Expression | scala.Null] = js.undefined
 }
 
 object BaseClass {
@@ -18,7 +18,7 @@ object BaseClass {
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,
-    superClass: estreeLib.Expression = null,
+    superClass: Expression = null,
     trailingComments: js.Array[Comment] = null
   ): BaseClass = {
     val __obj = js.Dynamic.literal(body = body)

@@ -16,15 +16,11 @@ object ^ extends js.Object {
     * @param options  An `Object` controlling advanced options.
     * @return         The returned promise has a `cancel()` method which can be used to remove the event listeners. Note that the promise will never settled if canceled.
     */
-  def apply(emitter: eventDashToDashPromiseLib.EventSource, event: java.lang.String): js.Promise[_] = js.native
-  def apply(
-    emitter: eventDashToDashPromiseLib.EventSource,
-    event: java.lang.String,
-    options: EventToPromiseOptions
-  ): js.Promise[_] = js.native
-  def multi(emitter: eventDashToDashPromiseLib.EventSource, successEvents: js.Array[java.lang.String]): js.Promise[_] = js.native
+  def apply(emitter: EventSource, event: java.lang.String): js.Promise[_] = js.native
+  def apply(emitter: EventSource, event: java.lang.String, options: EventToPromiseOptions): js.Promise[_] = js.native
+  def multi(emitter: EventSource, successEvents: js.Array[java.lang.String]): js.Promise[_] = js.native
   def multi(
-    emitter: eventDashToDashPromiseLib.EventSource,
+    emitter: EventSource,
     successEvents: js.Array[java.lang.String],
     errorEvents: js.Array[java.lang.String]
   ): js.Promise[_] = js.native

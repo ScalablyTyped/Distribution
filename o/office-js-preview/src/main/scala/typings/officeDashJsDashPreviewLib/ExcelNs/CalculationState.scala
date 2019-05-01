@@ -9,20 +9,37 @@ import scala.scalajs.js.annotation._
 sealed trait CalculationState extends js.Object
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  *
+  * Represents the state of calculation across the entire Excel application.
+  *
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.CalculationState")
 @js.native
 object CalculationState extends js.Object {
+  /**
+    *
+    * Calculations in progress.
+    *
+    */
   @js.native
   sealed trait calculating
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationState
   
+  /**
+    *
+    * Calculations complete.
+    *
+    */
   @js.native
   sealed trait done
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationState
   
+  /**
+    *
+    * Changes that trigger calculation have been made, but a recalculation has not yet been performed.
+    *
+    */
   @js.native
   sealed trait pending
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationState

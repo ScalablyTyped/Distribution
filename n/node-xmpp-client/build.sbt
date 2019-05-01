@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-xmpp-client"
-version := "3.1-dt-20190212Z-34dde8"
+version := "3.1-dt-20190212Z-a2f72a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

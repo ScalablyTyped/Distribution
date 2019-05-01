@@ -19,13 +19,16 @@ object reactDashFilepondLibStrings {
   sealed trait PUT extends js.Object
   
   @js.native
-  sealed trait input extends FilePondOrigin
+  sealed trait input
+    extends reactDashFilepondLib.reactDashFilepondMod.FilePondOrigin
   
   @js.native
-  sealed trait limbo extends FilePondOrigin
+  sealed trait limbo
+    extends reactDashFilepondLib.reactDashFilepondMod.FilePondOrigin
   
   @js.native
-  sealed trait local extends FilePondOrigin
+  sealed trait local
+    extends reactDashFilepondLib.reactDashFilepondMod.FilePondOrigin
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

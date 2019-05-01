@@ -59,6 +59,13 @@ trait ChartAxisUpdateData extends js.Object {
   var isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the base of the logarithm when using logarithmic scales.
     *
     * [Api set: ExcelApi 1.7]
@@ -250,6 +257,7 @@ object ChartAxisUpdateData {
     displayUnit: officeDashJsLib.ExcelNs.ChartAxisDisplayUnit | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Hundreds | officeDashJsLib.officeDashJsLibStrings.Thousands | officeDashJsLib.officeDashJsLibStrings.TenThousands | officeDashJsLib.officeDashJsLibStrings.HundredThousands | officeDashJsLib.officeDashJsLibStrings.Millions | officeDashJsLib.officeDashJsLibStrings.TenMillions | officeDashJsLib.officeDashJsLibStrings.HundredMillions | officeDashJsLib.officeDashJsLibStrings.Billions | officeDashJsLib.officeDashJsLibStrings.Trillions | officeDashJsLib.officeDashJsLibStrings.Custom = null,
     format: ChartAxisFormatUpdateData = null,
     isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     logBase: scala.Int | scala.Double = null,
     majorGridlines: ChartGridlinesUpdateData = null,
     majorTickMark: officeDashJsLib.ExcelNs.ChartAxisTickMark | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Cross | officeDashJsLib.officeDashJsLibStrings.Inside | officeDashJsLib.officeDashJsLibStrings.Outside = null,
@@ -282,6 +290,7 @@ object ChartAxisUpdateData {
     if (displayUnit != null) __obj.updateDynamic("displayUnit")(displayUnit.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(isBetweenCategories)) __obj.updateDynamic("isBetweenCategories")(isBetweenCategories)
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (logBase != null) __obj.updateDynamic("logBase")(logBase.asInstanceOf[js.Any])
     if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines)
     if (majorTickMark != null) __obj.updateDynamic("majorTickMark")(majorTickMark.asInstanceOf[js.Any])

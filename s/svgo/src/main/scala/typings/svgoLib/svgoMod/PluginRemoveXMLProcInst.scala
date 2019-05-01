@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveXMLProcInst extends js.Object {
+trait PluginRemoveXMLProcInst extends PluginConfig {
   var removeXMLProcInst: scala.Boolean | js.Object
 }
 

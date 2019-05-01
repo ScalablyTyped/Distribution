@@ -8,19 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReactSVG
   extends reactLib.reactMod.Component[
-      Props with (reactLib.reactMod.DetailedHTMLProps[
-        reactLib.reactMod.HTMLAttributes[reactDashSvgLib.WrapperType], 
-        reactDashSvgLib.WrapperType
-      ]), 
+      Props with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[WrapperType], WrapperType]), 
       State, 
       js.Any
     ] {
   var _isMounted: scala.Boolean = js.native
-  var container: js.UndefOr[reactDashSvgLib.WrapperType | scala.Null] = js.native
+  var container: js.UndefOr[WrapperType | scala.Null] = js.native
   var initialState: reactDashSvgLib.Anon_HasError = js.native
   @JSName("state")
   var state_ReactSVG: reactDashSvgLib.Anon_HasError = js.native
-  var svgWrapper: js.UndefOr[reactDashSvgLib.WrapperType | scala.Null] = js.native
+  var svgWrapper: js.UndefOr[WrapperType | scala.Null] = js.native
   @JSName("componentDidMount")
   def componentDidMount_MReactSVG(): scala.Unit = js.native
   @JSName("componentDidUpdate")

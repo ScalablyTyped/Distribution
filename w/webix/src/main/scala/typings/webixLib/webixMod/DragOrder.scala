@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DragOrder extends js.Object {
   @JSName("$dragPos")
-  var $dragPos_Original: webixLib.WebixCallback = js.native
+  var $dragPos_Original: WebixCallback = js.native
   @JSName("$drag")
   def $drag(source: stdLib.HTMLElement, ev: stdLib.Event): java.lang.String = js.native
   @JSName("$dragIn")

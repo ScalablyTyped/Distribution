@@ -33,7 +33,7 @@ trait Options[T] extends js.Object {
     * A common use case for this is to dispatch a `pageview` event for every component in the application that has a
     * `page` property on its `trackingData`.
     */
-  var process: js.UndefOr[js.Function1[/* ownTrackingData */ T, T | reactDashTrackingLib.Falsy]] = js.undefined
+  var process: js.UndefOr[js.Function1[/* ownTrackingData */ T, T | Falsy]] = js.undefined
 }
 
 object Options {
@@ -41,7 +41,7 @@ object Options {
   def apply[T](
     dispatch: /* data */ T => _ = null,
     dispatchOnMount: scala.Boolean | (js.Function1[/* contextData */ T, T]) = null,
-    process: /* ownTrackingData */ T => T | reactDashTrackingLib.Falsy = null
+    process: /* ownTrackingData */ T => T | Falsy = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
     if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))

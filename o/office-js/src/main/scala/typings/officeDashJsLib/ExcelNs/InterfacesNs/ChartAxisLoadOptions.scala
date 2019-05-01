@@ -100,6 +100,13 @@ trait ChartAxisLoadOptions extends js.Object {
   var left: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the base of the logarithm when using logarithmic scales.
     *
     * [Api set: ExcelApi 1.7]
@@ -312,6 +319,7 @@ object ChartAxisLoadOptions {
     height: js.UndefOr[scala.Boolean] = js.undefined,
     isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined,
     left: js.UndefOr[scala.Boolean] = js.undefined,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     logBase: js.UndefOr[scala.Boolean] = js.undefined,
     majorGridlines: ChartGridlinesLoadOptions = null,
     majorTickMark: js.UndefOr[scala.Boolean] = js.undefined,
@@ -355,6 +363,7 @@ object ChartAxisLoadOptions {
     if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(isBetweenCategories)) __obj.updateDynamic("isBetweenCategories")(isBetweenCategories)
     if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (!js.isUndefined(logBase)) __obj.updateDynamic("logBase")(logBase)
     if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines)
     if (!js.isUndefined(majorTickMark)) __obj.updateDynamic("majorTickMark")(majorTickMark)

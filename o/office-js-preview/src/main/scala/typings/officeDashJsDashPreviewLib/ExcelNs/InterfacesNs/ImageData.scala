@@ -11,8 +11,7 @@ trait ImageData extends js.Object {
     *
     * Returns the format of the image. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.PictureFormat | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UNKNOWN | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BMP | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.JPEG | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GIF | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PNG | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SVG
@@ -21,8 +20,7 @@ trait ImageData extends js.Object {
     *
     * Represents the shape identifier for the image object. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[java.lang.String] = js.undefined
 }

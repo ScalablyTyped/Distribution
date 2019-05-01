@@ -7,166 +7,218 @@ import scala.scalajs.js.annotation._
 
 object detectDashBrowserLibStrings {
   @js.native
-  sealed trait `Amazon OS` extends OperatingSystem
+  sealed trait `Amazon OS`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Android OS` extends OperatingSystem
+  sealed trait `Android OS`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait BeOS extends OperatingSystem
+  sealed trait BeOS
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `BlackBerry OS` extends OperatingSystem
+  sealed trait `BlackBerry OS`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Chrome OS` extends OperatingSystem
+  sealed trait `Chrome OS`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait Linux extends OperatingSystem
+  sealed trait Linux
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Mac OS` extends OperatingSystem
+  sealed trait `Mac OS`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `OS/2` extends OperatingSystem
+  sealed trait `OS/2`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Open BSD` extends OperatingSystem
+  sealed trait `Open BSD`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait QNX extends OperatingSystem
+  sealed trait QNX
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Search Bot` extends OperatingSystem
+  sealed trait `Search Bot`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Sun OS` extends OperatingSystem
+  sealed trait `Sun OS`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 10` extends OperatingSystem
+  sealed trait `Windows 10`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 2000` extends OperatingSystem
+  sealed trait `Windows 2000`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 3DOT11` extends OperatingSystem
+  sealed trait `Windows 3DOT11`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 7` extends OperatingSystem
+  sealed trait `Windows 7`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 8` extends OperatingSystem
+  sealed trait `Windows 8`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 8DOT1` extends OperatingSystem
+  sealed trait `Windows 8DOT1`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 95` extends OperatingSystem
+  sealed trait `Windows 95`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows 98` extends OperatingSystem
+  sealed trait `Windows 98`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows ME` extends OperatingSystem
+  sealed trait `Windows ME`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows Mobile` extends OperatingSystem
+  sealed trait `Windows Mobile`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows Server 2003` extends OperatingSystem
+  sealed trait `Windows Server 2003`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows Vista` extends OperatingSystem
+  sealed trait `Windows Vista`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait `Windows XP` extends OperatingSystem
+  sealed trait `Windows XP`
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait android extends Browser
+  sealed trait android
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait aol extends Browser
+  sealed trait aol
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait bb10 extends Browser
+  sealed trait bb10
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait beaker extends Browser
+  sealed trait beaker
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
   sealed trait bot extends js.Object
   
   @js.native
-  sealed trait chrome extends Browser
+  sealed trait chrome
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait crios extends Browser
+  sealed trait crios
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait edge extends Browser
+  sealed trait edge
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait `edge-chromium` extends Browser
+  sealed trait `edge-chromium`
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait facebook extends Browser
+  sealed trait facebook
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait firefox extends Browser
+  sealed trait firefox
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait fxios extends Browser
+  sealed trait fxios
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait iOS extends OperatingSystem
+  sealed trait iOS
+    extends detectDashBrowserLib.detectDashBrowserMod.OperatingSystem
   
   @js.native
-  sealed trait ie extends Browser
+  sealed trait ie
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait instagram extends Browser
+  sealed trait instagram
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait ios extends Browser
+  sealed trait ios
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait `ios-webview` extends Browser
+  sealed trait `ios-webview`
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait kakaotalk extends Browser
+  sealed trait kakaotalk
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait miui extends Browser
+  sealed trait miui
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
   sealed trait node extends js.Object
   
   @js.native
-  sealed trait opera extends Browser
+  sealed trait opera
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait `opera-mini` extends Browser
+  sealed trait `opera-mini`
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait phantomjs extends Browser
+  sealed trait phantomjs
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait safari extends Browser
+  sealed trait safari
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait samsung extends Browser
+  sealed trait samsung
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait searchbot extends Browser
+  sealed trait searchbot
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait silk extends Browser
+  sealed trait silk
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait vivaldi extends Browser
+  sealed trait vivaldi
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
-  sealed trait yandexbrowser extends Browser
+  sealed trait yandexbrowser
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @scala.inline
   def `Amazon OS`: `Amazon OS` = "Amazon OS".asInstanceOf[`Amazon OS`]

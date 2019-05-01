@@ -10,7 +10,7 @@ trait BaseFunction extends BaseNode {
   // The body is either BlockStatement or Expression because arrow functions
   // can have a body that's either. FunctionDeclarations and
   // FunctionExpressions have only BlockStatement bodies.
-  var body: BlockStatement | estreeLib.Expression
+  var body: BlockStatement | Expression
   var generator: js.UndefOr[scala.Boolean] = js.undefined
   var params: js.Array[Pattern]
 }
@@ -18,7 +18,7 @@ trait BaseFunction extends BaseNode {
 object BaseFunction {
   @scala.inline
   def apply(
-    body: BlockStatement | estreeLib.Expression,
+    body: BlockStatement | Expression,
     params: js.Array[Pattern],
     `type`: java.lang.String,
     async: js.UndefOr[scala.Boolean] = js.undefined,

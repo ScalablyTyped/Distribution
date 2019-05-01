@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents the properties for Box & Whisker chart.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBoxwhiskerOptions")
 @js.native
@@ -23,40 +22,35 @@ class ChartBoxwhiskerOptions ()
     *
     * Returns or sets quartile calculation type of a Box & whisker chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var quartileCalculation: ChartBoxQuartileCalculation | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Inclusive | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Exclusive = js.native
   /**
     *
     * Returns or sets if inner points showed in a Box & whisker chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showInnerPoints: scala.Boolean = js.native
   /**
     *
     * Returns or sets if mean line showed in a Box & whisker chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showMeanLine: scala.Boolean = js.native
   /**
     *
     * Returns or sets if mean marker showed in a Box & whisker chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showMeanMarker: scala.Boolean = js.native
   /**
     *
     * Returns or sets if outlier points showed in a Box & whisker chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var showOutlierPoints: scala.Boolean = js.native
   /**

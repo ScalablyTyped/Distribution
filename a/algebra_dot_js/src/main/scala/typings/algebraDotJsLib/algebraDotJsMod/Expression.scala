@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Expression ()
   extends algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Expression {
-  def this(variable: algebraDotJsLib.Union) = this()
+  def this(variable: Union) = this()
 }
 

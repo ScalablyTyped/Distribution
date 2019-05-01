@@ -52,13 +52,25 @@ object uniDashAppLibStrings {
   sealed trait TRACE extends js.Object
   
   @js.native
+  sealed trait alipay extends js.Object
+  
+  @js.native
+  sealed trait appleiap extends js.Object
+  
+  @js.native
   sealed trait audio extends js.Object
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait baidu extends js.Object
+  
+  @js.native
   sealed trait bevel extends js.Object
+  
+  @js.native
+  sealed trait bold extends js.Object
   
   @js.native
   sealed trait butt extends js.Object
@@ -100,7 +112,16 @@ object uniDashAppLibStrings {
   sealed trait fingerPrint extends js.Object
   
   @js.native
+  sealed trait igexin extends js.Object
+  
+  @js.native
   sealed trait image extends js.Object
+  
+  @js.native
+  sealed trait inherit extends js.Object
+  
+  @js.native
+  sealed trait italic extends js.Object
   
   @js.native
   sealed trait linear extends js.Object
@@ -112,13 +133,22 @@ object uniDashAppLibStrings {
   sealed trait menu extends js.Object
   
   @js.native
+  sealed trait mipush extends js.Object
+  
+  @js.native
   sealed trait miter extends js.Object
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait normal extends js.Object
+  
+  @js.native
   sealed trait oauth extends js.Object
+  
+  @js.native
+  sealed trait oblique extends js.Object
   
   @js.native
   sealed trait payment extends js.Object
@@ -133,10 +163,16 @@ object uniDashAppLibStrings {
   sealed trait push extends js.Object
   
   @js.native
+  sealed trait qq extends js.Object
+  
+  @js.native
   sealed trait round extends js.Object
   
   @js.native
   sealed trait share extends js.Object
+  
+  @js.native
+  sealed trait sinaweibo extends js.Object
   
   @js.native
   sealed trait `slide-in-bottom` extends js.Object
@@ -163,6 +199,9 @@ object uniDashAppLibStrings {
   sealed trait `slide-out-top` extends js.Object
   
   @js.native
+  sealed trait `small-caps` extends js.Object
+  
+  @js.native
   sealed trait speech extends js.Object
   
   @js.native
@@ -178,7 +217,19 @@ object uniDashAppLibStrings {
   sealed trait success extends js.Object
   
   @js.native
+  sealed trait unipush extends js.Object
+  
+  @js.native
   sealed trait video extends js.Object
+  
+  @js.native
+  sealed trait weixin extends js.Object
+  
+  @js.native
+  sealed trait wxpay extends js.Object
+  
+  @js.native
+  sealed trait xiaomi extends js.Object
   
   @js.native
   sealed trait `zoom-fade-in` extends js.Object
@@ -223,11 +274,19 @@ object uniDashAppLibStrings {
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   @scala.inline
+  def alipay: alipay = "alipay".asInstanceOf[alipay]
+  @scala.inline
+  def appleiap: appleiap = "appleiap".asInstanceOf[appleiap]
+  @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def baidu: baidu = "baidu".asInstanceOf[baidu]
+  @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
@@ -255,7 +314,13 @@ object uniDashAppLibStrings {
   @scala.inline
   def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
   @scala.inline
+  def igexin: igexin = "igexin".asInstanceOf[igexin]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
+  def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
+  def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
@@ -263,11 +328,17 @@ object uniDashAppLibStrings {
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
+  def mipush: mipush = "mipush".asInstanceOf[mipush]
+  @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def oauth: oauth = "oauth".asInstanceOf[oauth]
+  @scala.inline
+  def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline
@@ -277,9 +348,13 @@ object uniDashAppLibStrings {
   @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
+  def qq: qq = "qq".asInstanceOf[qq]
+  @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline
   def share: share = "share".asInstanceOf[share]
+  @scala.inline
+  def sinaweibo: sinaweibo = "sinaweibo".asInstanceOf[sinaweibo]
   @scala.inline
   def `slide-in-bottom`: `slide-in-bottom` = "slide-in-bottom".asInstanceOf[`slide-in-bottom`]
   @scala.inline
@@ -297,6 +372,8 @@ object uniDashAppLibStrings {
   @scala.inline
   def `slide-out-top`: `slide-out-top` = "slide-out-top".asInstanceOf[`slide-out-top`]
   @scala.inline
+  def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
+  @scala.inline
   def speech: speech = "speech".asInstanceOf[speech]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
@@ -307,7 +384,15 @@ object uniDashAppLibStrings {
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
+  def unipush: unipush = "unipush".asInstanceOf[unipush]
+  @scala.inline
   def video: video = "video".asInstanceOf[video]
+  @scala.inline
+  def weixin: weixin = "weixin".asInstanceOf[weixin]
+  @scala.inline
+  def wxpay: wxpay = "wxpay".asInstanceOf[wxpay]
+  @scala.inline
+  def xiaomi: xiaomi = "xiaomi".asInstanceOf[xiaomi]
   @scala.inline
   def `zoom-fade-in`: `zoom-fade-in` = "zoom-fade-in".asInstanceOf[`zoom-fade-in`]
   @scala.inline

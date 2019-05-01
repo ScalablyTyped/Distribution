@@ -28,7 +28,7 @@ trait PhinFactory extends js.Object {
     optsOrUrl: (Options with (phinLib.Anon_False | phinLib.Anon_FalseJson | phinLib.Anon_Stream)) | Options,
     cb: js.Function2[
       /* err */ js.Any, 
-      (/* resp */ phinLib.AnyResponse) | (/* resp */ BufferResponse) | (/* resp */ JsonResponse) | (/* resp */ StreamResponse), 
+      (/* resp */ AnyResponse) | (/* resp */ BufferResponse) | (/* resp */ JsonResponse) | (/* resp */ StreamResponse), 
       _
     ]
   ): scala.Unit = js.native

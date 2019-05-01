@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PendingModifiedValues extends js.Object {
   /**
-    *  Contains the new AllocatedStorage size for the DB instance that will be applied or is currently being applied. 
+    *  Contains the new AllocatedStorage size for the DB instance that will be applied or is currently being applied.
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   /**
@@ -19,15 +19,15 @@ trait PendingModifiedValues extends js.Object {
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   /**
-    *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied. 
+    *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied.
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
   /**
-    *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied. 
+    *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied.
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * The new DB subnet group for the DB instance. 
+    * The new DB subnet group for the DB instance.
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
@@ -50,6 +50,9 @@ trait PendingModifiedValues extends js.Object {
     * Indicates that the Single-AZ DB instance is to change to a Multi-AZ deployment.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
+  /**
+    * Specifies the CloudWatch logs to be exported.
+    */
   var PendingCloudwatchLogsExports: js.UndefOr[PendingCloudwatchLogsExports] = js.undefined
   /**
     * Specifies the pending port for the DB instance.

@@ -33,8 +33,8 @@ object ImageStyle {
   @scala.inline
   def apply(
     alignContent: reactDashNativeLib.reactDashNativeLibStrings.`flex-start` | reactDashNativeLib.reactDashNativeLibStrings.`flex-end` | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.stretch | reactDashNativeLib.reactDashNativeLibStrings.`space-between` | reactDashNativeLib.reactDashNativeLibStrings.`space-around` = null,
-    alignItems: reactDashNativeLib.FlexAlignType = null,
-    alignSelf: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.FlexAlignType = null,
+    alignItems: FlexAlignType = null,
+    alignSelf: reactDashNativeLib.reactDashNativeLibStrings.auto | FlexAlignType = null,
     aspectRatio: scala.Int | scala.Double = null,
     backfaceVisibility: reactDashNativeLib.reactDashNativeLibStrings.visible | reactDashNativeLib.reactDashNativeLibStrings.hidden = null,
     backgroundColor: java.lang.String = null,

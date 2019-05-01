@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LogicalExpression extends BaseNode {
-  var left: estreeLib.Expression
+trait LogicalExpression
+  extends BaseNode
+     with Expression {
+  var left: Expression
   var operator: LogicalOperator
-  var right: estreeLib.Expression
+  var right: Expression
   @JSName("type")
   var type_LogicalExpression: estreeLib.estreeLibStrings.LogicalExpression
 }
@@ -16,9 +18,9 @@ trait LogicalExpression extends BaseNode {
 object LogicalExpression {
   @scala.inline
   def apply(
-    left: estreeLib.Expression,
+    left: Expression,
     operator: LogicalOperator,
-    right: estreeLib.Expression,
+    right: Expression,
     `type`: estreeLib.estreeLibStrings.LogicalExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

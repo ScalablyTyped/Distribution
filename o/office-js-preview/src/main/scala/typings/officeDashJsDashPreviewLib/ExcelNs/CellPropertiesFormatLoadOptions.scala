@@ -9,105 +9,105 @@ import scala.scalajs.js.annotation._
   *
   * Represents which properties to load on the format object.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFormatLoadOptions extends js.Object {
   /**
     *
     * Specifies whether to load on the `autoIndent` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var autoIndent: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `borders` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.undefined
   /**
     *
     * Specifies whether to load on the `fill` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.undefined
   /**
     *
     * Specifies whether to load on the `font` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.undefined
   /**
     *
     * Specifies whether to load on the `horizontalAlignment` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `indentLevel` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var indentLevel: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `protection` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var protection: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `readingOrder` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var readingOrder: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `shrinkToFit` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `textOrientation` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var textOrientation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `useStandardHeight` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var useStandardHeight: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `useStandardWidth` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var useStandardWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `verticalAlignment` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `wrapText` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }

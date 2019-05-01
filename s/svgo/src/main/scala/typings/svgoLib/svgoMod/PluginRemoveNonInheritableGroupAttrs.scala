@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveNonInheritableGroupAttrs extends js.Object {
+trait PluginRemoveNonInheritableGroupAttrs extends PluginConfig {
   var removeNonInheritableGroupAttrs: scala.Boolean | js.Object
 }
 

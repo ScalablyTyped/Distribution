@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._TabProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, padding, right, top, transform, visible, width, win_theme. Inlined badge, image, selectedImage, title */ @JSImport("tabris", "Tab")
 @js.native
 class Tab () extends Composite {
-  def this(properties: tabrisLib.Properties[Tab, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Tab, TypeScriptPropertiesKey]) = this()
   /**
     * A badge to attach to the tab.
     */
@@ -21,11 +21,11 @@ class Tab () extends Composite {
     * An image to be displayed on the tab.  Will not be shown on iOS if the `TabFolder`'s `tabBarLocation`
     * is set to `top`
     */
-  var image: tabrisLib.Image | scala.Null = js.native
+  var image: Image | scala.Null = js.native
   /**
     * An image to be displayed on the currently active tab.
     */
-  var selectedImage: tabrisLib.Image | scala.Null = js.native
+  var selectedImage: Image | scala.Null = js.native
   /**
     * The title to be displayed on the tab.
     */
@@ -35,7 +35,7 @@ class Tab () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Tab: tabrisLib.TabProperties = js.native
+  val tsProperties_Tab: TabProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

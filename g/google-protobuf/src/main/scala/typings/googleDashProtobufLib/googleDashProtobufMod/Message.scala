@@ -98,7 +98,7 @@ object Message extends js.Object {
     m1: googleDashProtobufLib.googleDashProtobufMod.Message,
     m2: googleDashProtobufLib.googleDashProtobufMod.Message
   ): scala.Boolean = js.native
-  def getField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double): googleDashProtobufLib.FieldValue | scala.Null = js.native
+  def getField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double): googleDashProtobufLib.googleDashProtobufMod.FieldValue | scala.Null = js.native
   def getFieldWithDefault[T](
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
@@ -178,13 +178,13 @@ object Message extends js.Object {
   def setField(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
-    value: googleDashProtobufLib.FieldValue
+    value: googleDashProtobufLib.googleDashProtobufMod.FieldValue
   ): scala.Unit = js.native
   def setOneofField(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
     oneof: js.Array[scala.Double],
-    value: googleDashProtobufLib.FieldValue
+    value: googleDashProtobufLib.googleDashProtobufMod.FieldValue
   ): scala.Unit = js.native
   def setOneofWrapperField(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,

@@ -12,8 +12,7 @@ sealed trait ShapeLineStyle extends js.Object
   *
   * The style for a line.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeLineStyle")
 @js.native

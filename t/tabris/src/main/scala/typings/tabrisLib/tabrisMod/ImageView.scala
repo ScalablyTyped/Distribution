@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ImageViewProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined image, maxZoomLevel, minZoomLevel, scaleMode, tintColor, zoomEnabled, zoomLevel */ @JSImport("tabris", "ImageView")
 @js.native
 class ImageView () extends Widget {
-  def this(properties: tabrisLib.Properties[ImageView, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[ImageView, TypeScriptPropertiesKey]) = this()
   /**
     * The image to display. Providing the `width` and `height` attributes on the image will resize it
     * internally. When no dimensions are given the image will be loaded with its original size. Since the
     * full size image might occupy a lot of memory, it's recommended to provide exact dimensions.
     */
-  var image: tabrisLib.Image | scala.Null = js.native
+  var image: Image | scala.Null = js.native
   /**
     * The highest amount the image can be zoomed in to. Setting the `maxZoomLevel` to a level smaller than
     * the current `zoomLevel` changes the `zoomLevel` to be the same as the new `maxZoomLevel`.
@@ -52,7 +52,7 @@ class ImageView () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_ImageView: tabrisLib.ImageViewProperties = js.native
+  val tsProperties_ImageView: ImageViewProperties = js.native
   /**
     * Enables the pinch-to-zoom gesture on the `ImageView` and makes the properties `zoomLevel`,
     * `minZoomLevel` and `maxZoomLevel` available. Setting `zoomEnabled` to `false` also resets the

@@ -10,10 +10,10 @@ trait Anon_Consumer[T /* <: js.Object */] extends js.Object {
   var Consumer: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Consumer[T]] = js.native
   var Provider: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Provider[T]] = js.native
   @JSName("createSelector")
-  var createSelector_Original: SelectorFn[T] = js.native
+  var createSelector_Original: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.SelectorFn[T] = js.native
   @JSName("mutate")
-  var mutate_Original: Mutator[T] = js.native
+  var mutate_Original: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Mutator[T] = js.native
   def createSelector(state: T): AnyDeepMemberOfState[T] = js.native
-  def mutate(mutator: MutateFn[T]): scala.Unit = js.native
+  def mutate(mutator: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.MutateFn[T]): scala.Unit = js.native
 }
 

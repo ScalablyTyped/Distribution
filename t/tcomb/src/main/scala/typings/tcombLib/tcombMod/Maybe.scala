@@ -14,8 +14,8 @@ trait Maybe[T]
   @JSName("meta")
   var meta_Maybe: tcombLib.Anon_IdentityKindNameType[T] = js.native
   @JSName("update")
-  var update_Original: tcombLib.Update[scala.Unit | T] = js.native
-  def update(instance: scala.Unit | T, spec: tcombLib.UpdatePatch): scala.Unit | T = js.native
-  def update(instance: scala.Unit, spec: tcombLib.UpdatePatch): scala.Unit | T = js.native
+  var update_Original: Update[scala.Unit | T] = js.native
+  def update(instance: scala.Unit | T, spec: UpdatePatch): scala.Unit | T = js.native
+  def update(instance: scala.Unit, spec: UpdatePatch): scala.Unit | T = js.native
 }
 

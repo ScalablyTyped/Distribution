@@ -6,8 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TransitionActions extends js.Object {
+  /**
+    * Normally a component is not transitioned if it is shown when the
+    * `<Transition>` component mounts. If you want to transition on the first
+    * mount set  appear to true, and the component will transition in as soon
+    * as the `<Transition>` mounts. Note: there are no specific "appear" states.
+    * appear only adds an additional enter transition.
+    */
   var appear: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Enable or disable enter transitions.
+    */
   var enter: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Enable or disable exit transitions.
+    */
   var exit: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -21,16 +21,12 @@ trait CacheOnlyOptions extends js.Object {
   	 * [Plugins]{@link https://developers.google.com/web/tools/workbox/guides/using-plugins}
   	 * to use in conjunction with this caching strategy.
   	 */
-  var plugins: js.Array[workboxDashSwLib.Plugin]
+  var plugins: js.Array[Plugin]
 }
 
 object CacheOnlyOptions {
   @scala.inline
-  def apply(
-    cacheName: java.lang.String,
-    matchOptions: stdLib.CacheQueryOptions,
-    plugins: js.Array[workboxDashSwLib.Plugin]
-  ): CacheOnlyOptions = {
+  def apply(cacheName: java.lang.String, matchOptions: stdLib.CacheQueryOptions, plugins: js.Array[Plugin]): CacheOnlyOptions = {
     val __obj = js.Dynamic.literal(cacheName = cacheName, matchOptions = matchOptions, plugins = plugins)
   
     __obj.asInstanceOf[CacheOnlyOptions]

@@ -20,7 +20,6 @@ object ListItemProps {
     activeStyle: reactLib.reactMod.CSSProperties = null,
     align: antdDashMobileLib.antdDashMobileLibStrings.top | antdDashMobileLib.antdDashMobileLibStrings.middle | antdDashMobileLib.antdDashMobileLibStrings.bottom = null,
     arrow: antdDashMobileLib.antdDashMobileLibStrings.horizontal | antdDashMobileLib.antdDashMobileLibStrings.down | antdDashMobileLib.antdDashMobileLibStrings.up | antdDashMobileLib.antdDashMobileLibStrings.empty | antdDashMobileLib.antdDashMobileLibStrings.Empty = null,
-    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     error: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,7 +37,6 @@ object ListItemProps {
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (arrow != null) __obj.updateDynamic("arrow")(arrow.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)

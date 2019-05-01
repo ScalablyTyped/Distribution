@@ -43,6 +43,6 @@ class UI protected () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_UI: tabrisLib.UIProperties = js.native
+  val tsProperties_UI: UIProperties = js.native
 }
 

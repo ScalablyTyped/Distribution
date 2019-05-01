@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait ImageProps
   extends ResponderProps
      with TouchableProps {
-  var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var height: js.UndefOr[NumberProp] = js.undefined
   var href: scala.Nothing
-  var opacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var opacity: js.UndefOr[NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
-  var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var x: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var width: js.UndefOr[NumberProp] = js.undefined
+  var x: js.UndefOr[NumberProp] = js.undefined
   var xlinkHref: js.UndefOr[scala.Nothing] = js.undefined
-  var y: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 
 object ImageProps {
@@ -26,7 +26,7 @@ object ImageProps {
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    height: reactDashNativeDashSvgLib.NumberProp = null,
+    height: NumberProp = null,
     onLongPress: /* event */ js.Any => _ = null,
     onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
@@ -43,13 +43,13 @@ object ImageProps {
     onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
-    opacity: reactDashNativeDashSvgLib.NumberProp = null,
+    opacity: NumberProp = null,
     pointerEvents: reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`box-none` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.none | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`box-only` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.auto = null,
     preserveAspectRatio: java.lang.String = null,
-    width: reactDashNativeDashSvgLib.NumberProp = null,
-    x: reactDashNativeDashSvgLib.NumberProp = null,
+    width: NumberProp = null,
+    x: NumberProp = null,
     xlinkHref: js.UndefOr[scala.Nothing] = js.undefined,
-    y: reactDashNativeDashSvgLib.NumberProp = null
+    y: NumberProp = null
   ): ImageProps = {
     val __obj = js.Dynamic.literal(href = href)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])

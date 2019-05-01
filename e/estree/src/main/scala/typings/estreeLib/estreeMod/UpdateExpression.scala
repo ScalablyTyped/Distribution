@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpdateExpression extends BaseNode {
-  var argument: estreeLib.Expression
+trait UpdateExpression
+  extends BaseNode
+     with Expression {
+  var argument: Expression
   var operator: UpdateOperator
   var prefix: scala.Boolean
   @JSName("type")
@@ -16,7 +18,7 @@ trait UpdateExpression extends BaseNode {
 object UpdateExpression {
   @scala.inline
   def apply(
-    argument: estreeLib.Expression,
+    argument: Expression,
     operator: UpdateOperator,
     prefix: scala.Boolean,
     `type`: estreeLib.estreeLibStrings.UpdateExpression,

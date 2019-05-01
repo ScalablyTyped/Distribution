@@ -11,7 +11,7 @@ trait Generator
   var appname: java.lang.String = js.native
   var config: Storage = js.native
   var description: java.lang.String = js.native
-  var env: yeomanDashGeneratorLib.Anon_E = js.native
+  var env: yeomanDashGeneratorLib.Anon_Adapter = js.native
   var fs: MemFsEditor = js.native
   var options: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var resolved: java.lang.String = js.native
@@ -20,6 +20,7 @@ trait Generator
   def argument(name: java.lang.String, config: ArgumentConfig): this.type = js.native
   // actions/help mixin
   def argumentsHelp(): java.lang.String = js.native
+  def async(): js.Function0[js.Object] = js.native
   // actions/install mixin
   /**
     * Receives a list of `components` and an `options` object to install through bower.
@@ -95,7 +96,7 @@ trait Generator
   def rootGeneratorName(): java.lang.String = js.native
   def rootGeneratorVersion(): java.lang.String = js.native
   def run(): this.type = js.native
-  def run(cb: yeomanDashGeneratorLib.Callback): this.type = js.native
+  def run(cb: Callback): this.type = js.native
   /**
     * Combine package manager cmd line arguments and run the `install` command.
     *

@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents the results from the removeDuplicates method on range
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RemoveDuplicatesResult")
 @js.native
@@ -23,16 +22,14 @@ class RemoveDuplicatesResult ()
     *
     * Number of duplicated rows removed by the operation.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val removed: scala.Double = js.native
   /**
     *
     * Number of remaining unique rows present in the resulting range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val uniqueRemaining: scala.Double = js.native
   /**

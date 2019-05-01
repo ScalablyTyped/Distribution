@@ -14,10 +14,10 @@ trait Dict[T]
   @JSName("meta")
   var meta_Dict: tcombLib.Anon_Codomain[T] = js.native
   @JSName("update")
-  var update_Original: tcombLib.Update[org.scalablytyped.runtime.StringDictionary[T]] = js.native
+  var update_Original: Update[org.scalablytyped.runtime.StringDictionary[T]] = js.native
   def update(
     instance: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[T]],
-    spec: tcombLib.UpdatePatch
+    spec: UpdatePatch
   ): org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[T]] = js.native
 }
 

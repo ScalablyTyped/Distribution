@@ -9,24 +9,21 @@ import scala.scalajs.js.annotation._
   *
   * Represents the `format.fill` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.fill` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFill extends js.Object {
   /**
     *
     * Represents the `format.fill.color` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Represents the `format.fill.pattern` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[
     FillPattern | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Solid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gray50 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gray75 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gray25 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Horizontal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Vertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Down | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Up | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Checker | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SemiGray75 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LightHorizontal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LightVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LightDown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LightUp | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Grid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CrissCross | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gray16 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gray8 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LinearGradient | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RectangularGradient
@@ -35,24 +32,21 @@ trait CellPropertiesFill extends js.Object {
     *
     * Represents the `format.fill.patternColor` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Represents the `format.fill.patternTintAndShade` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the `format.fill.tintAndShade` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Double] = js.undefined
 }

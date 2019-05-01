@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-plugin-set"
-version := "2.9-dt-20190212Z-b62f27"
+version := "2.9-dt-20190212Z-ca6a35"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

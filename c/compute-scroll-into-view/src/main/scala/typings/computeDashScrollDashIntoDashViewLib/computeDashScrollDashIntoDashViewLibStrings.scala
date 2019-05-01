@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object computeDashScrollDashIntoDashViewLibStrings {
   @js.native
-  sealed trait always extends ScrollMode
+  sealed trait always
+    extends computeDashScrollDashIntoDashViewLib.computeDashScrollDashIntoDashViewMod.ScrollMode
   
   @js.native
-  sealed trait center extends ScrollLogicalPosition
+  sealed trait center
+    extends computeDashScrollDashIntoDashViewLib.computeDashScrollDashIntoDashViewMod.ScrollLogicalPosition
   
   @js.native
-  sealed trait end extends ScrollLogicalPosition
+  sealed trait end
+    extends computeDashScrollDashIntoDashViewLib.computeDashScrollDashIntoDashViewMod.ScrollLogicalPosition
   
   @js.native
-  sealed trait `if-needed` extends ScrollMode
+  sealed trait `if-needed`
+    extends computeDashScrollDashIntoDashViewLib.computeDashScrollDashIntoDashViewMod.ScrollMode
   
   @js.native
-  sealed trait nearest extends ScrollLogicalPosition
+  sealed trait nearest
+    extends computeDashScrollDashIntoDashViewLib.computeDashScrollDashIntoDashViewMod.ScrollLogicalPosition
   
   @js.native
-  sealed trait start extends ScrollLogicalPosition
+  sealed trait start
+    extends computeDashScrollDashIntoDashViewLib.computeDashScrollDashIntoDashViewMod.ScrollLogicalPosition
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._WebViewProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined html, url */ @JSImport("tabris", "WebView")
 @js.native
 class WebView () extends Widget {
-  def this(properties: tabrisLib.Properties[WebView, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[WebView, TypeScriptPropertiesKey]) = this()
   /**
     * Whether there is a previous to navigated to via `goBack()`.
     */
@@ -31,7 +31,7 @@ class WebView () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_WebView: tabrisLib.WebViewProperties = js.native
+  val tsProperties_WebView: WebViewProperties = js.native
   /**
     * The URL of the web page to display. Relative URLs are resolved relative to 'package.json'. Returns
     * empty string when content from *html* property is displayed.

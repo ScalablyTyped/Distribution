@@ -542,7 +542,7 @@ object ServerNs extends js.Object {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in stellar-sdk.Diff<keyof stellar-sdk.stellar-sdk.Horizon.TransactionResponse, 'ledger'> ]: stellar-sdk.stellar-sdk.Horizon.TransactionResponse[P]} */ @js.native
+  - Dropped {[ P in any ]: stellar-sdk.stellar-sdk.Horizon.TransactionResponse[P]} */ @js.native
   trait TransactionRecord extends js.Object {
     @JSName("account")
     var account_Original: CallFunction[AccountRecord] = js.native

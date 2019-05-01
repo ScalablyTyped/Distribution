@@ -130,8 +130,8 @@ object Type extends js.Object {
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Decorator function
     */
-  def d[T /* <: protobufjsLib.protobufjsMod.Message[T] */](): protobufjsLib.TypeDecorator[T] = js.native
-  def d[T /* <: protobufjsLib.protobufjsMod.Message[T] */](typeName: java.lang.String): protobufjsLib.TypeDecorator[T] = js.native
+  def d[T /* <: protobufjsLib.protobufjsMod.Message[T] */](): protobufjsLib.protobufjsMod.TypeDecorator[T] = js.native
+  def d[T /* <: protobufjsLib.protobufjsMod.Message[T] */](typeName: java.lang.String): protobufjsLib.protobufjsMod.TypeDecorator[T] = js.native
   /**
     * Creates a message type from a message type descriptor.
     * @param name Message name
@@ -144,6 +144,6 @@ object Type extends js.Object {
     * @param mtype Message type
     * @returns Codegen instance
     */
-  def generateConstructor(mtype: protobufjsLib.protobufjsMod.Type): protobufjsLib.Codegen = js.native
+  def generateConstructor(mtype: protobufjsLib.protobufjsMod.Type): protobufjsLib.protobufjsMod.Codegen = js.native
 }
 

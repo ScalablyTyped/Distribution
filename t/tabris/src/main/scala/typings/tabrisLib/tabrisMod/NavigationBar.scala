@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._NavigationBarProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined displayMode, theme */ @JSImport("tabris", "NavigationBar")
 @js.native
 class NavigationBar protected () extends Widget {
-  protected def this(properties: tabrisLib.Properties[NavigationBar, tabrisLib.TypeScriptPropertiesKey]) = this()
+  protected def this(properties: Properties[NavigationBar, TypeScriptPropertiesKey]) = this()
   /**
     * Controls how the navigation bar is positioned relative to the `ui.contentView`. The value `default`
     * places the content above the navigation bar. The `hide` option lets the navigation bar disappear,
@@ -39,7 +39,7 @@ class NavigationBar protected () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_NavigationBar: tabrisLib.NavigationBarProperties = js.native
+  val tsProperties_NavigationBar: NavigationBarProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

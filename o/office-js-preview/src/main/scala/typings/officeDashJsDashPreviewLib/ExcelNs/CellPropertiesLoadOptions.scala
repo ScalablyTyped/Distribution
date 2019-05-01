@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
   *
   * Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesLoadOptions extends js.Object {
   /**
     *
     * Specifies whether to load on the `address` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `addressLocal` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var addressLocal: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `format` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[CellPropertiesFormatLoadOptions] = js.undefined
   /**
     *
     * Specifies whether to load on the `hidden` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `hyperlink` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var hyperlink: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `style` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var style: js.UndefOr[scala.Boolean] = js.undefined
 }

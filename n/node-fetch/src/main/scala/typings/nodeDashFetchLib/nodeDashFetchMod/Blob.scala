@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("node-fetch", "Blob")
 @js.native
 class Blob () extends js.Object {
-  def this(blobParts: js.Array[nodeDashFetchLib.BlobPart]) = this()
-  def this(blobParts: js.Array[nodeDashFetchLib.BlobPart], options: BlobOptions) = this()
+  def this(blobParts: js.Array[BlobPart]) = this()
+  def this(blobParts: js.Array[BlobPart], options: BlobOptions) = this()
   val size: scala.Double = js.native
   val `type`: java.lang.String = js.native
   def slice(): Blob = js.native

@@ -39,7 +39,7 @@ object utilNs extends js.Object {
       */
     def off(): this.type = js.native
     def off(evt: java.lang.String): this.type = js.native
-    def off(evt: java.lang.String, fn: protobufjsLib.EventEmitterListener): this.type = js.native
+    def off(evt: java.lang.String, fn: protobufjsLib.protobufjsMod.EventEmitterListener): this.type = js.native
     /**
       * Registers an event listener.
       * @param evt Event name
@@ -47,8 +47,8 @@ object utilNs extends js.Object {
       * @param [ctx] Listener context
       * @returns `this`
       */
-    def on(evt: java.lang.String, fn: protobufjsLib.EventEmitterListener): this.type = js.native
-    def on(evt: java.lang.String, fn: protobufjsLib.EventEmitterListener, ctx: js.Any): this.type = js.native
+    def on(evt: java.lang.String, fn: protobufjsLib.protobufjsMod.EventEmitterListener): this.type = js.native
+    def on(evt: java.lang.String, fn: protobufjsLib.protobufjsMod.EventEmitterListener, ctx: js.Any): this.type = js.native
   }
   
   @js.native
@@ -177,7 +177,7 @@ object utilNs extends js.Object {
     * @param params Function arguments
     * @returns Promisified function
     */
-  def asPromise(fn: protobufjsLib.asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
+  def asPromise(fn: protobufjsLib.protobufjsMod.asPromiseCallback, ctx: js.Any, params: js.Any*): js.Promise[_] = js.native
   /**
     * Converts a string to camel case.
     * @param str String to convert
@@ -189,16 +189,16 @@ object utilNs extends js.Object {
     * @param [functionName] Function name if not anonymous
     * @returns Appender that appends code to the function's body
     */
-  def codegen(): protobufjsLib.Codegen = js.native
-  def codegen(functionName: java.lang.String): protobufjsLib.Codegen = js.native
+  def codegen(): protobufjsLib.protobufjsMod.Codegen = js.native
+  def codegen(functionName: java.lang.String): protobufjsLib.protobufjsMod.Codegen = js.native
   /**
     * Begins generating a function.
     * @param functionParams Function parameter names
     * @param [functionName] Function name if not anonymous
     * @returns Appender that appends code to the function's body
     */
-  def codegen(functionParams: js.Array[java.lang.String]): protobufjsLib.Codegen = js.native
-  def codegen(functionParams: js.Array[java.lang.String], functionName: java.lang.String): protobufjsLib.Codegen = js.native
+  def codegen(functionParams: js.Array[java.lang.String]): protobufjsLib.protobufjsMod.Codegen = js.native
+  def codegen(functionParams: js.Array[java.lang.String], functionName: java.lang.String): protobufjsLib.protobufjsMod.Codegen = js.native
   /**
     * Compares reflected fields by id.
     * @param a First field
@@ -229,7 +229,7 @@ object utilNs extends js.Object {
   def fetch(
     filename: java.lang.String,
     options: protobufjsLib.protobufjsMod.IFetchOptions,
-    callback: protobufjsLib.FetchCallback
+    callback: protobufjsLib.protobufjsMod.FetchCallback
   ): scala.Unit = js.native
   /**
     * Fetches the contents of a file.
@@ -243,7 +243,7 @@ object utilNs extends js.Object {
     * @param path File path or url
     * @param callback Callback function
     */
-  def fetch(path: java.lang.String, callback: protobufjsLib.FetchCallback): scala.Unit = js.native
+  def fetch(path: java.lang.String, callback: protobufjsLib.protobufjsMod.FetchCallback): scala.Unit = js.native
   def fetch(path: java.lang.String, options: protobufjsLib.protobufjsMod.IFetchOptions): js.Promise[java.lang.String | stdLib.Uint8Array] = js.native
   /**
     * Requires a module only if available.
@@ -346,13 +346,13 @@ object utilNs extends js.Object {
     * @param fieldNames Field names
     * @returns Unbound getter
     */
-  def oneOfGetter(fieldNames: js.Array[java.lang.String]): protobufjsLib.OneOfGetter = js.native
+  def oneOfGetter(fieldNames: js.Array[java.lang.String]): protobufjsLib.protobufjsMod.OneOfGetter = js.native
   /**
     * Builds a setter for a oneof's present field name.
     * @param fieldNames Field names
     * @returns Unbound setter
     */
-  def oneOfSetter(fieldNames: js.Array[java.lang.String]): protobufjsLib.OneOfSetter = js.native
+  def oneOfSetter(fieldNames: js.Array[java.lang.String]): protobufjsLib.protobufjsMod.OneOfSetter = js.native
   /**
     * A general purpose buffer pool.
     * @param alloc Allocator
@@ -360,8 +360,12 @@ object utilNs extends js.Object {
     * @param [size=8192] Slab size
     * @returns Pooled allocator
     */
-  def pool(alloc: protobufjsLib.PoolAllocator, slice: protobufjsLib.PoolSlicer): protobufjsLib.PoolAllocator = js.native
-  def pool(alloc: protobufjsLib.PoolAllocator, slice: protobufjsLib.PoolSlicer, size: scala.Double): protobufjsLib.PoolAllocator = js.native
+  def pool(alloc: protobufjsLib.protobufjsMod.PoolAllocator, slice: protobufjsLib.protobufjsMod.PoolSlicer): protobufjsLib.protobufjsMod.PoolAllocator = js.native
+  def pool(
+    alloc: protobufjsLib.protobufjsMod.PoolAllocator,
+    slice: protobufjsLib.protobufjsMod.PoolSlicer,
+    size: scala.Double
+  ): protobufjsLib.protobufjsMod.PoolAllocator = js.native
   /**
     * Returns a safe property accessor for the specified property name.
     * @param prop Property name

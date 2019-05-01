@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 package object kosDashCoreMod {
   type GetKosState[T] = js.Function0[T]
   type KosDispatch = js.Function1[/* action */ Action[js.Any], scala.Unit]
+  type ReactComponent[P, S] = reactLib.reactMod.ComponentClass[P, S]
 }

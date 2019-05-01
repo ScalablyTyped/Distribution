@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait BaseForXStatement extends BaseNode {
   var body: Statement
   var left: VariableDeclaration | Pattern
-  var right: estreeLib.Expression
+  var right: Expression
 }
 
 object BaseForXStatement {
@@ -16,7 +16,7 @@ object BaseForXStatement {
   def apply(
     body: Statement,
     left: VariableDeclaration | Pattern,
-    right: estreeLib.Expression,
+    right: Expression,
     `type`: java.lang.String,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

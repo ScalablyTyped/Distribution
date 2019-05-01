@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginCleanupAttrs extends js.Object {
+trait PluginCleanupAttrs extends PluginConfig {
   var cleanupAttrs: scala.Boolean | js.Object
 }
 

@@ -19,6 +19,6 @@ trait Burns extends js.Object {
     eventData: stdLib.Record[java.lang.String, _],
     exclude: burnsLib.Anon_Exclude
   ): this.type = js.native
-  def registerEvents(newEvents: stdLib.Record[java.lang.String, burnsLib.EventHandler]): this.type = js.native
+  def registerEvents(newEvents: stdLib.Record[java.lang.String, EventHandler]): this.type = js.native
 }
 

@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- estreeLib.estreeMod._Node because Already inherited */ trait Identifier
+- estreeLib.estreeMod.Node because Already inherited */ trait Identifier
   extends BaseNode
+     with Expression
      with Pattern {
   var name: java.lang.String
   @JSName("type")

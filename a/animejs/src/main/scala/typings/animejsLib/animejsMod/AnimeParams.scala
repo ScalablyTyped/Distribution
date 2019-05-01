@@ -15,19 +15,19 @@ import scala.scalajs.js.annotation._
 object AnimeParams {
   @scala.inline
   def apply(
-    targets: animejsLib.AnimeTarget | js.Array[animejsLib.AnimeTarget],
+    targets: AnimeTarget | js.Array[AnimeTarget],
     autoplay: js.UndefOr[scala.Boolean] = js.undefined,
-    begin: animejsLib.AnimeCallbackFunction = null,
-    complete: animejsLib.AnimeCallbackFunction = null,
-    delay: scala.Double | animejsLib.FunctionBasedParameter = null,
+    begin: AnimeCallbackFunction = null,
+    complete: AnimeCallbackFunction = null,
+    delay: scala.Double | FunctionBasedParameter = null,
     direction: DirectionOptions | java.lang.String = null,
-    duration: scala.Double | animejsLib.FunctionBasedParameter = null,
+    duration: scala.Double | FunctionBasedParameter = null,
     easing: EasingOptions | java.lang.String | js.Array[scala.Double] = null,
-    elasticity: scala.Double | animejsLib.FunctionBasedParameter = null,
+    elasticity: scala.Double | FunctionBasedParameter = null,
     loop: scala.Double | scala.Boolean = null,
-    round: scala.Double | scala.Boolean | animejsLib.FunctionBasedParameter = null,
-    run: animejsLib.AnimeCallbackFunction = null,
-    update: animejsLib.AnimeCallbackFunction = null
+    round: scala.Double | scala.Boolean | FunctionBasedParameter = null,
+    run: AnimeCallbackFunction = null,
+    update: AnimeCallbackFunction = null
   ): AnimeParams = {
     val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)

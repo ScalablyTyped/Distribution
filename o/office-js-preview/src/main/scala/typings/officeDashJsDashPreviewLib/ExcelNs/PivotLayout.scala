@@ -19,8 +19,7 @@ class PivotLayout ()
     *
     * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFormat: scala.Boolean = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -45,8 +44,7 @@ class PivotLayout ()
     *
     * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var preserveFormatting: scala.Boolean = js.native
   /**
@@ -111,8 +109,7 @@ class PivotLayout ()
     *
     * Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cell A single cell within the PivotTable data body.
     * @returns The DataPivotHierarchy object used to calculate the value in the specified cell.
@@ -130,8 +127,7 @@ class PivotLayout ()
     *
     * Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param axis The axis from which to get the PivotItems. Must be either "row" or "column."
     * @param cell A single cell within the PivotTable's data body.
@@ -160,7 +156,7 @@ class PivotLayout ()
     *
     * Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @param axis The axis from which to get the PivotItems. Must be either "row" or "column."
     * @param cell A single cell within the PivotTable's data body.
@@ -225,8 +221,7 @@ class PivotLayout ()
     *
     * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cell A single cell to use get the criteria from for applying the autosort.
     * @param sortBy The direction of the sort.
@@ -241,7 +236,7 @@ class PivotLayout ()
     *
     * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @param cell A single cell to use get the criteria from for applying the autosort.
     * @param sortBy The direction of the sort.

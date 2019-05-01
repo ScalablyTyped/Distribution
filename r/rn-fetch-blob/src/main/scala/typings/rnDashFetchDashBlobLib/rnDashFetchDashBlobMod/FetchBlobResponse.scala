@@ -39,12 +39,12 @@ trait FetchBlobResponse extends js.Object {
     * a file path, show warning message
     * @param  encode Encode type, should be one of `base64`, `ascrii`, `utf8`.
     */
-  def readFile(encode: rnDashFetchDashBlobLib.Encoding): js.Promise[_] | scala.Null
+  def readFile(encode: Encoding): js.Promise[_] | scala.Null
   /**
     * Start read stream from cached file
     * @param  encode Encode type, should be one of `base64`, `ascrii`, `utf8`.
     */
-  def readStream(encode: rnDashFetchDashBlobLib.Encoding): RNFetchBlobStream | scala.Null
+  def readStream(encode: Encoding): RNFetchBlobStream | scala.Null
   def session(name: java.lang.String): RNFetchBlobSession | scala.Null
   /**
     * Convert result to text.
@@ -62,8 +62,8 @@ object FetchBlobResponse {
     flush: () => scala.Unit,
     json: () => js.Any,
     path: () => java.lang.String,
-    readFile: rnDashFetchDashBlobLib.Encoding => js.Promise[_] | scala.Null,
-    readStream: rnDashFetchDashBlobLib.Encoding => RNFetchBlobStream | scala.Null,
+    readFile: Encoding => js.Promise[_] | scala.Null,
+    readStream: Encoding => RNFetchBlobStream | scala.Null,
     respInfo: RNFetchBlobResponseInfo,
     session: java.lang.String => RNFetchBlobSession | scala.Null,
     taskId: java.lang.String,

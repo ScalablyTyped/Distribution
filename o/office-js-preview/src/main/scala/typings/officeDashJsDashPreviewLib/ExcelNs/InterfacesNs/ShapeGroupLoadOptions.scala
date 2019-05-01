@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait ShapeGroupLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,16 +18,14 @@ trait ShapeGroupLoadOptions extends js.Object {
     *
     * Represents the shape identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns the Shape object associated with the group.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }

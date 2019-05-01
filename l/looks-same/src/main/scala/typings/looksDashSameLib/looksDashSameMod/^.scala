@@ -14,7 +14,7 @@ object ^ extends js.Object {
     * @param image2 The second image path
     * @param callback Call when finish compare
     */
-  def apply(image1: java.lang.String, image2: java.lang.String, callback: looksDashSameLib.LooksSameCallback): scala.Unit = js.native
+  def apply(image1: java.lang.String, image2: java.lang.String, callback: LooksSameCallback): scala.Unit = js.native
   /**
     * Compare two images with options
     * @param image1 The first image path
@@ -26,7 +26,7 @@ object ^ extends js.Object {
     image1: java.lang.String,
     image2: java.lang.String,
     options: LooksSameOptions,
-    callback: looksDashSameLib.LooksSameCallback
+    callback: LooksSameCallback
   ): scala.Unit = js.native
   /**
     * Compare two colors

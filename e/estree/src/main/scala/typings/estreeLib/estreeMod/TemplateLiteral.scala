@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TemplateLiteral extends BaseNode {
-  var expressions: js.Array[estreeLib.Expression]
+trait TemplateLiteral
+  extends BaseNode
+     with Expression {
+  var expressions: js.Array[Expression]
   var quasis: js.Array[TemplateElement]
   @JSName("type")
   var type_TemplateLiteral: estreeLib.estreeLibStrings.TemplateLiteral
@@ -15,7 +17,7 @@ trait TemplateLiteral extends BaseNode {
 object TemplateLiteral {
   @scala.inline
   def apply(
-    expressions: js.Array[estreeLib.Expression],
+    expressions: js.Array[Expression],
     quasis: js.Array[TemplateElement],
     `type`: estreeLib.estreeLibStrings.TemplateLiteral,
     leadingComments: js.Array[Comment] = null,

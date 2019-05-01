@@ -34,9 +34,9 @@ object vnodeNs extends js.Object {
   def isThunk(vnode: dekuLib.dekuMod.VirtualElement): scala.Boolean = js.native
   @js.native
   object create extends js.Object {
-    def apply(`type`: dekuLib.Thunk): dekuLib.dekuMod.VirtualElement = js.native
+    def apply(`type`: dekuLib.dekuMod.Thunk): dekuLib.dekuMod.VirtualElement = js.native
     def apply(`type`: java.lang.String): dekuLib.dekuMod.VirtualElement = js.native
-    def apply[A](`type`: dekuLib.Thunk, attributes: A, children: js.Any*): dekuLib.dekuMod.VirtualElement = js.native
+    def apply[A](`type`: dekuLib.dekuMod.Thunk, attributes: A, children: js.Any*): dekuLib.dekuMod.VirtualElement = js.native
     def apply[A](`type`: java.lang.String, attributes: A, children: js.Any*): dekuLib.dekuMod.VirtualElement = js.native
   }
   

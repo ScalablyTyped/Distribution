@@ -37,6 +37,14 @@ trait RangeBorderCollectionLoadOptions extends js.Object {
   var style: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A null value indicates that the border doesn't have uniform tintAndShade setting.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Specifies the weight of the border around a range. See Excel.BorderWeight for details.
     *
     * [Api set: ExcelApi 1.1]
@@ -51,6 +59,7 @@ object RangeBorderCollectionLoadOptions {
     color: js.UndefOr[scala.Boolean] = js.undefined,
     sideIndex: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.UndefOr[scala.Boolean] = js.undefined,
+    tintAndShade: js.UndefOr[scala.Boolean] = js.undefined,
     weight: js.UndefOr[scala.Boolean] = js.undefined
   ): RangeBorderCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
@@ -58,6 +67,7 @@ object RangeBorderCollectionLoadOptions {
     if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex)
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade)
     if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight)
     __obj.asInstanceOf[RangeBorderCollectionLoadOptions]
   }

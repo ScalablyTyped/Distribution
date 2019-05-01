@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveTitle extends js.Object {
+trait PluginRemoveTitle extends PluginConfig {
   var removeTitle: scala.Boolean | js.Object
 }
 

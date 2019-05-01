@@ -17,10 +17,9 @@ class Application ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by. Read-only.
+    * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val calculationEngineVersion: scala.Double = js.native
   /**
@@ -32,10 +31,9 @@ class Application ()
   var calculationMode: CalculationMode | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutomaticExceptTables | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Manual = js.native
   /**
     *
-    * Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for details. Read-only.
+    * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val calculationState: CalculationState | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Done | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Calculating | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Pending = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -47,8 +45,7 @@ class Application ()
     On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
     On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val iterativeCalculation: IterativeCalculation = js.native
   /**
@@ -123,8 +120,7 @@ class Application ()
     *
     * Suspends sceen updating until the next "context.sync()" is called.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def suspendScreenUpdatingUntilNextSync(): scala.Unit = js.native
   /**

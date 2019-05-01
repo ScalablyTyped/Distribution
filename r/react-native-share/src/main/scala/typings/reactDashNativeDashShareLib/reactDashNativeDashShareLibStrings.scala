@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashShareLibStrings {
   @js.native
-  sealed trait email extends SupportedSocialApps
+  sealed trait email
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @js.native
-  sealed trait facebook extends SupportedSocialApps
+  sealed trait facebook
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @js.native
-  sealed trait googleplus extends SupportedSocialApps
+  sealed trait googleplus
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @js.native
-  sealed trait instagram extends SupportedSocialApps
+  sealed trait instagram
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @js.native
-  sealed trait pagesmanager extends SupportedSocialApps
+  sealed trait pagesmanager
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @js.native
-  sealed trait twitter extends SupportedSocialApps
+  sealed trait twitter
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @js.native
-  sealed trait whatsapp extends SupportedSocialApps
+  sealed trait whatsapp
+    extends reactDashNativeDashShareLib.reactDashNativeDashShareMod.SupportedSocialApps
   
   @scala.inline
   def email: email = "email".asInstanceOf[email]

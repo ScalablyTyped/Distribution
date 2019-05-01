@@ -23,6 +23,13 @@ trait PivotTableData extends js.Object {
   var dataHierarchies: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.undefined
   /**
     *
+    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * The Filter Pivot Hierarchies of the PivotTable.
     *
     * [Api set: ExcelApi 1.8]
@@ -56,6 +63,13 @@ trait PivotTableData extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var rowHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.undefined
+  /**
+    *
+    * Specifies whether the PivotTable uses custom lists when sorting.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var useCustomSortLists: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object PivotTableData {
@@ -63,20 +77,24 @@ object PivotTableData {
   def apply(
     columnHierarchies: js.Array[RowColumnPivotHierarchyData] = null,
     dataHierarchies: js.Array[DataPivotHierarchyData] = null,
+    enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined,
     filterHierarchies: js.Array[FilterPivotHierarchyData] = null,
     hierarchies: js.Array[PivotHierarchyData] = null,
     id: java.lang.String = null,
     name: java.lang.String = null,
-    rowHierarchies: js.Array[RowColumnPivotHierarchyData] = null
+    rowHierarchies: js.Array[RowColumnPivotHierarchyData] = null,
+    useCustomSortLists: js.UndefOr[scala.Boolean] = js.undefined
   ): PivotTableData = {
     val __obj = js.Dynamic.literal()
     if (columnHierarchies != null) __obj.updateDynamic("columnHierarchies")(columnHierarchies)
     if (dataHierarchies != null) __obj.updateDynamic("dataHierarchies")(dataHierarchies)
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing)
     if (filterHierarchies != null) __obj.updateDynamic("filterHierarchies")(filterHierarchies)
     if (hierarchies != null) __obj.updateDynamic("hierarchies")(hierarchies)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (rowHierarchies != null) __obj.updateDynamic("rowHierarchies")(rowHierarchies)
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists)
     __obj.asInstanceOf[PivotTableData]
   }
 }

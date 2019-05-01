@@ -14,5 +14,5 @@ package object JSXNs {
   type IntrinsicClassAttributes[T] = reactLib.reactMod.ClassAttributes[T]
   // We can't recurse forever because `type` can't be self-referential;
   // let's assume it's reasonable to do a single React.lazy() around a single React.memo() / vice-versa
-  type LibraryManagedAttributes[C, P] = (reactLib.ReactManagedAttributes[C, P]) | (reactLib.ReactManagedAttributes[js.Any, P])
+  type LibraryManagedAttributes[C, P] = (reactLib.reactMod.ReactManagedAttributes[C, P]) | (reactLib.reactMod.ReactManagedAttributes[js.Any, P])
 }

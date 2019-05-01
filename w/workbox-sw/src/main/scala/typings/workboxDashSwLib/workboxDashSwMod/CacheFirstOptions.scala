@@ -22,7 +22,7 @@ object CacheFirstOptions {
     cacheName: java.lang.String,
     fetchOptions: stdLib.RequestInit,
     matchOptions: stdLib.CacheQueryOptions,
-    plugins: js.Array[workboxDashSwLib.Plugin]
+    plugins: js.Array[Plugin]
   ): CacheFirstOptions = {
     val __obj = js.Dynamic.literal(cacheName = cacheName, fetchOptions = fetchOptions, matchOptions = matchOptions, plugins = plugins)
   

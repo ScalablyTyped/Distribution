@@ -28,7 +28,7 @@ trait Jexl extends js.Object {
     *      on either side of the operator. It should return either the resulting
     *      value, or a Promise that resolves with the resulting value.
     */
-  def addBinaryOp(operator: java.lang.String, precedence: scala.Double, fn: jexlLib.BinaryOpFunction): scala.Unit = js.native
+  def addBinaryOp(operator: java.lang.String, precedence: scala.Double, fn: BinaryOpFunction): scala.Unit = js.native
   /**
     * Adds or replaces a transform function in this Jexl instance.
     * @param name The name of the transform function, as it will be used
@@ -38,13 +38,13 @@ trait Jexl extends js.Object {
     *          - {*} value: The value to be transformed
     *          - {...*} args: The arguments for this transform
     */
-  def addTransform(name: java.lang.String, fn: jexlLib.TransformFunction): scala.Unit = js.native
+  def addTransform(name: java.lang.String, fn: TransformFunction): scala.Unit = js.native
   /**
     * Syntactic sugar for calling {@link #addTransform} repeatedly.  This function
     * accepts a map of one or more transform names to their transform function.
     * @param map A map of transform names to transform functions
     */
-  def addTransforms(map: org.scalablytyped.runtime.StringDictionary[jexlLib.TransformFunction]): scala.Unit = js.native
+  def addTransforms(map: org.scalablytyped.runtime.StringDictionary[TransformFunction]): scala.Unit = js.native
   /**
     * Adds a unary operator to Jexl. Unary operators are currently only supported
     * on the left side of the value on which it will operate.
@@ -54,7 +54,7 @@ trait Jexl extends js.Object {
     *      operator. It should return either the resulting value, or a Promise
     *      that resolves with the resulting value.
     */
-  def addUnaryOp(operator: java.lang.String, fn: jexlLib.UnaryOpFunction): scala.Unit = js.native
+  def addUnaryOp(operator: java.lang.String, fn: UnaryOpFunction): scala.Unit = js.native
   /**
     * Asynchronously evaluates a Jexl string within an optional context.
     * @param expression The Jexl expression to be evaluated
@@ -79,6 +79,6 @@ trait Jexl extends js.Object {
     * @param name The name of the transform function
     * @returns The transform function
     */
-  def getTransform(name: java.lang.String): jexlLib.TransformFunction = js.native
+  def getTransform(name: java.lang.String): TransformFunction = js.native
 }
 

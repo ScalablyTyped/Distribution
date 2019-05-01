@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "testingbot-api"
-version := "1.0-dt-20180214Z-87f5c1"
+version := "1.0-dt-20180214Z-12e882"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

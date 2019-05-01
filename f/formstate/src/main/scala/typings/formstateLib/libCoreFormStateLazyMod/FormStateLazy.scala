@@ -45,6 +45,8 @@ class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
     */
   def clearFormError(): scala.Unit = js.native
   /* CompleteClass */
+  override def disableAutoValidation(): scala.Unit = js.native
+  /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native
   /** It is a function as fields can change over time */
   /* protected */ def getFields(): TValue = js.native

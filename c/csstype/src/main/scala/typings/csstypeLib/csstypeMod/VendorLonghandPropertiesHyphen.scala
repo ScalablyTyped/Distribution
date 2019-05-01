@@ -11,7 +11,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var `-moz-animation-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-moz-animation-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -23,7 +23,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var `-moz-animation-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-moz-animation-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -197,7 +197,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var `-moz-force-broken-image-icon`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `-moz-force-broken-image-icon`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
     *
@@ -311,13 +311,13 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var `-moz-transition-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-moz-transition-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
     * **Initial value**: `0s`
     */
-  var `-moz-transition-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-moz-transition-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -389,19 +389,19 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `400%`
     */
-  var `-ms-content-zoom-limit-max`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-content-zoom-limit-max`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-content-zoom-limit-min`** CSS property is a Microsoft extension that specifies the minimum zoom factor.
     *
     * **Initial value**: `100%`
     */
-  var `-ms-content-zoom-limit-min`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-content-zoom-limit-min`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-content-zoom-snap-points`** CSS property is a Microsoft extension that specifies where zoom snap-points are located.
     *
     * **Initial value**: `snapInterval(0%, 100%)`
     */
-  var `-ms-content-zoom-snap-points`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-content-zoom-snap-points`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-content-zoom-snap-type`** CSS property is a Microsoft extension that specifies how zooming is affected by defined snap-points.
     *
@@ -419,7 +419,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: "" (the empty string)
     */
-  var `-ms-filter`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-filter`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
     *
@@ -431,7 +431,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var `-ms-flex-positive`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `-ms-flex-positive`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`-ms-flow-from`** CSS property is a Microsoft extension that gets or sets a value identifying a region container in the document that accepts the content flow from the data source.
     *
@@ -503,7 +503,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var `-ms-order`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `-ms-order`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`-ms-overflow-style`** CSS property is a Microsoft extension controlling the behavior of scrollbars when the content of an element overflows.
     *
@@ -563,13 +563,13 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `snapInterval(0px, 100%)`
     */
-  var `-ms-scroll-snap-points-x`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-scroll-snap-points-x`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-scroll-snap-points-y`** CSS property is a Microsoft extension that specifies where snap-points will be located along the y-axis.
     *
     * **Initial value**: `snapInterval(0px, 100%)`
     */
-  var `-ms-scroll-snap-points-y`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-ms-scroll-snap-points-y`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
     *
@@ -719,7 +719,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var `-webkit-animation-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-webkit-animation-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -731,7 +731,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var `-webkit-animation-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-webkit-animation-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -935,13 +935,13 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var `-webkit-flex-grow`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `-webkit-flex-grow`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
     *
     * **Initial value**: `1`
     */
-  var `-webkit-flex-shrink`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `-webkit-flex-shrink`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
     *
@@ -1079,7 +1079,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var `-webkit-order`: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var `-webkit-order`: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The `-webkit-overflow-scrolling` CSS property controls whether or not touch devices use momentum-based scrolling for a given element.
     *
@@ -1169,7 +1169,7 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `over right`
     */
-  var `-webkit-text-emphasis-position`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-webkit-text-emphasis-position`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
     *
@@ -1235,13 +1235,13 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var `-webkit-transition-delay`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-webkit-transition-delay`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
     * **Initial value**: `0s`
     */
-  var `-webkit-transition-duration`: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var `-webkit-transition-duration`: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -1273,9 +1273,9 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
 object VendorLonghandPropertiesHyphen {
   @scala.inline
   def apply[TLength](
-    `-moz-animation-delay`: csstypeLib.GlobalsString = null,
+    `-moz-animation-delay`: GlobalsString = null,
     `-moz-animation-direction`: AnimationDirectionProperty = null,
-    `-moz-animation-duration`: csstypeLib.GlobalsString = null,
+    `-moz-animation-duration`: GlobalsString = null,
     `-moz-animation-fill-mode`: AnimationFillModeProperty = null,
     `-moz-animation-iteration-count`: AnimationIterationCountProperty = null,
     `-moz-animation-name`: AnimationNameProperty = null,
@@ -1304,7 +1304,7 @@ object VendorLonghandPropertiesHyphen {
     `-moz-float-edge`: MozFloatEdgeProperty = null,
     `-moz-font-feature-settings`: FontFeatureSettingsProperty = null,
     `-moz-font-language-override`: FontLanguageOverrideProperty = null,
-    `-moz-force-broken-image-icon`: csstypeLib.GlobalsNumber = null,
+    `-moz-force-broken-image-icon`: GlobalsNumber = null,
     `-moz-hyphens`: HyphensProperty = null,
     `-moz-image-region`: MozImageRegionProperty = null,
     `-moz-margin-end`: MarginInlineEndProperty[TLength] = null,
@@ -1323,8 +1323,8 @@ object VendorLonghandPropertiesHyphen {
     `-moz-text-size-adjust`: TextSizeAdjustProperty = null,
     `-moz-transform-origin`: TransformOriginProperty[TLength] = null,
     `-moz-transform-style`: TransformStyleProperty = null,
-    `-moz-transition-delay`: csstypeLib.GlobalsString = null,
-    `-moz-transition-duration`: csstypeLib.GlobalsString = null,
+    `-moz-transition-delay`: GlobalsString = null,
+    `-moz-transition-duration`: GlobalsString = null,
     `-moz-transition-property`: TransitionPropertyProperty = null,
     `-moz-transition-timing-function`: TransitionTimingFunctionProperty = null,
     `-moz-user-focus`: MozUserFocusProperty = null,
@@ -1336,14 +1336,14 @@ object VendorLonghandPropertiesHyphen {
     `-ms-align-self`: AlignSelfProperty = null,
     `-ms-block-progression`: MsBlockProgressionProperty = null,
     `-ms-content-zoom-chaining`: MsContentZoomChainingProperty = null,
-    `-ms-content-zoom-limit-max`: csstypeLib.GlobalsString = null,
-    `-ms-content-zoom-limit-min`: csstypeLib.GlobalsString = null,
-    `-ms-content-zoom-snap-points`: csstypeLib.GlobalsString = null,
+    `-ms-content-zoom-limit-max`: GlobalsString = null,
+    `-ms-content-zoom-limit-min`: GlobalsString = null,
+    `-ms-content-zoom-snap-points`: GlobalsString = null,
     `-ms-content-zoom-snap-type`: MsContentZoomSnapTypeProperty = null,
     `-ms-content-zooming`: MsContentZoomingProperty = null,
-    `-ms-filter`: csstypeLib.GlobalsString = null,
+    `-ms-filter`: GlobalsString = null,
     `-ms-flex-direction`: FlexDirectionProperty = null,
-    `-ms-flex-positive`: csstypeLib.GlobalsNumber = null,
+    `-ms-flex-positive`: GlobalsNumber = null,
     `-ms-flow-from`: MsFlowFromProperty = null,
     `-ms-flow-into`: MsFlowIntoProperty = null,
     `-ms-grid-columns`: GridAutoColumnsProperty[TLength] = null,
@@ -1355,7 +1355,7 @@ object VendorLonghandPropertiesHyphen {
     `-ms-hyphens`: HyphensProperty = null,
     `-ms-ime-align`: MsImeAlignProperty = null,
     `-ms-line-break`: LineBreakProperty = null,
-    `-ms-order`: csstypeLib.GlobalsNumber = null,
+    `-ms-order`: GlobalsNumber = null,
     `-ms-overflow-style`: MsOverflowStyleProperty = null,
     `-ms-overflow-x`: OverflowXProperty = null,
     `-ms-overflow-y`: OverflowYProperty = null,
@@ -1365,8 +1365,8 @@ object VendorLonghandPropertiesHyphen {
     `-ms-scroll-limit-y-max`: MsScrollLimitYMaxProperty[TLength] = null,
     `-ms-scroll-limit-y-min`: MsScrollLimitYMinProperty[TLength] = null,
     `-ms-scroll-rails`: MsScrollRailsProperty = null,
-    `-ms-scroll-snap-points-x`: csstypeLib.GlobalsString = null,
-    `-ms-scroll-snap-points-y`: csstypeLib.GlobalsString = null,
+    `-ms-scroll-snap-points-x`: GlobalsString = null,
+    `-ms-scroll-snap-points-y`: GlobalsString = null,
     `-ms-scroll-snap-type`: MsScrollSnapTypeProperty = null,
     `-ms-scroll-translation`: MsScrollTranslationProperty = null,
     `-ms-text-autospace`: MsTextAutospaceProperty = null,
@@ -1391,9 +1391,9 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-align-content`: AlignContentProperty = null,
     `-webkit-align-items`: AlignItemsProperty = null,
     `-webkit-align-self`: AlignSelfProperty = null,
-    `-webkit-animation-delay`: csstypeLib.GlobalsString = null,
+    `-webkit-animation-delay`: GlobalsString = null,
     `-webkit-animation-direction`: AnimationDirectionProperty = null,
-    `-webkit-animation-duration`: csstypeLib.GlobalsString = null,
+    `-webkit-animation-duration`: GlobalsString = null,
     `-webkit-animation-fill-mode`: AnimationFillModeProperty = null,
     `-webkit-animation-iteration-count`: AnimationIterationCountProperty = null,
     `-webkit-animation-name`: AnimationNameProperty = null,
@@ -1429,8 +1429,8 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-filter`: FilterProperty = null,
     `-webkit-flex-basis`: FlexBasisProperty[TLength] = null,
     `-webkit-flex-direction`: FlexDirectionProperty = null,
-    `-webkit-flex-grow`: csstypeLib.GlobalsNumber = null,
-    `-webkit-flex-shrink`: csstypeLib.GlobalsNumber = null,
+    `-webkit-flex-grow`: GlobalsNumber = null,
+    `-webkit-flex-shrink`: GlobalsNumber = null,
     `-webkit-flex-wrap`: FlexWrapProperty = null,
     `-webkit-font-feature-settings`: FontFeatureSettingsProperty = null,
     `-webkit-font-kerning`: FontKerningProperty = null,
@@ -1453,7 +1453,7 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-mask-repeat-y`: WebkitMaskRepeatYProperty = null,
     `-webkit-mask-size`: WebkitMaskSizeProperty[TLength] = null,
     `-webkit-max-inline-size`: MaxInlineSizeProperty[TLength] = null,
-    `-webkit-order`: csstypeLib.GlobalsNumber = null,
+    `-webkit-order`: GlobalsNumber = null,
     `-webkit-overflow-scrolling`: WebkitOverflowScrollingProperty = null,
     `-webkit-padding-end`: PaddingInlineEndProperty[TLength] = null,
     `-webkit-padding-start`: PaddingInlineStartProperty[TLength] = null,
@@ -1468,7 +1468,7 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-text-decoration-skip`: TextDecorationSkipProperty = null,
     `-webkit-text-decoration-style`: TextDecorationStyleProperty = null,
     `-webkit-text-emphasis-color`: TextEmphasisColorProperty = null,
-    `-webkit-text-emphasis-position`: csstypeLib.GlobalsString = null,
+    `-webkit-text-emphasis-position`: GlobalsString = null,
     `-webkit-text-emphasis-style`: TextEmphasisStyleProperty = null,
     `-webkit-text-fill-color`: WebkitTextFillColorProperty = null,
     `-webkit-text-orientation`: TextOrientationProperty = null,
@@ -1479,8 +1479,8 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-transform`: TransformProperty = null,
     `-webkit-transform-origin`: TransformOriginProperty[TLength] = null,
     `-webkit-transform-style`: TransformStyleProperty = null,
-    `-webkit-transition-delay`: csstypeLib.GlobalsString = null,
-    `-webkit-transition-duration`: csstypeLib.GlobalsString = null,
+    `-webkit-transition-delay`: GlobalsString = null,
+    `-webkit-transition-duration`: GlobalsString = null,
     `-webkit-transition-property`: TransitionPropertyProperty = null,
     `-webkit-transition-timing-function`: TransitionTimingFunctionProperty = null,
     `-webkit-user-modify`: WebkitUserModifyProperty = null,

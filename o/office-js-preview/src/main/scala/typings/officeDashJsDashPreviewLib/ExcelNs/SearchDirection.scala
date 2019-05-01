@@ -12,8 +12,7 @@ sealed trait SearchDirection extends js.Object
   *
   * Specifies the search direction.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SearchDirection")
 @js.native

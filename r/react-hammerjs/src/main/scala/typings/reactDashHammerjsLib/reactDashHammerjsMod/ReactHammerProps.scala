@@ -30,7 +30,7 @@ trait ReactHammerProps extends js.Object {
   var onRotateStart: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onSwipe: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onTap: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
-  var options: js.UndefOr[reactDashHammerjsLib.HammerOptionsWithRecognizers] = js.undefined
+  var options: js.UndefOr[HammerOptionsWithRecognizers] = js.undefined
   var recognizeWith: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[hammerjsLib.Recognizer | java.lang.String]
   ] = js.undefined
@@ -62,7 +62,7 @@ object ReactHammerProps {
     onRotateStart: hammerjsLib.HammerListener = null,
     onSwipe: hammerjsLib.HammerListener = null,
     onTap: hammerjsLib.HammerListener = null,
-    options: reactDashHammerjsLib.HammerOptionsWithRecognizers = null,
+    options: HammerOptionsWithRecognizers = null,
     recognizeWith: org.scalablytyped.runtime.StringDictionary[hammerjsLib.Recognizer | java.lang.String] = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactHammerProps = {

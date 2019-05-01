@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DBInstanceMessage extends js.Object {
   /**
-    *  A list of DBInstance instances. 
+    *  A list of DBInstance instances.
     */
   var DBInstances: js.UndefOr[DBInstanceList] = js.undefined
   /**
-    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
+    *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords .
     */
   var Marker: js.UndefOr[String] = js.undefined
 }

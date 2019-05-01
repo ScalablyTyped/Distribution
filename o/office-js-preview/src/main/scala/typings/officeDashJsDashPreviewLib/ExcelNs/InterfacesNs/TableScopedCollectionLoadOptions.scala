@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and the tables are sorted top to bottom and then left to right.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait TableScopedCollectionLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,8 +18,7 @@ trait TableScopedCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Represents the AutoFilter object of the table.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   /**

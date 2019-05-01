@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ThemeAttributeBackgroundPropType extends BaseBackgroundPropType {
+trait ThemeAttributeBackgroundPropType
+  extends BaseBackgroundPropType
+     with BackgroundPropType {
   var attribute: java.lang.String
   @JSName("type")
   var type_ThemeAttributeBackgroundPropType: reactDashNativeLib.reactDashNativeLibStrings.ThemeAttrAndroid

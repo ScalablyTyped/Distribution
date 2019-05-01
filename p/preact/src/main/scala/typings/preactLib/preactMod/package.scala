@@ -15,6 +15,7 @@ package object preactMod {
   	 * Use Attributes instead
   	 */
   type ComponentProps = Attributes
+  type Defaultize[Props, Defaults] = (stdLib.Partial[stdLib.Pick[Props, stdLib.Extract[java.lang.String, java.lang.String]]]) with (stdLib.Pick[Props, stdLib.Exclude[java.lang.String, java.lang.String]])
   type Key = java.lang.String | scala.Double
   /**
   	 * @deprecated

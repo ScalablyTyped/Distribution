@@ -58,6 +58,13 @@ trait SortField extends js.Object {
   var sortOn: js.UndefOr[
     SortOn | officeDashJsLib.officeDashJsLibStrings.Value | officeDashJsLib.officeDashJsLibStrings.CellColor | officeDashJsLib.officeDashJsLibStrings.FontColor | officeDashJsLib.officeDashJsLibStrings.Icon
   ] = js.undefined
+  /**
+    *
+    * Represents the subfield that is the target property name of a rich value to sort on.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var subField: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object SortField {
@@ -68,7 +75,8 @@ object SortField {
     color: java.lang.String = null,
     dataOption: SortDataOption | officeDashJsLib.officeDashJsLibStrings.Normal | officeDashJsLib.officeDashJsLibStrings.TextAsNumber = null,
     icon: Icon = null,
-    sortOn: SortOn | officeDashJsLib.officeDashJsLibStrings.Value | officeDashJsLib.officeDashJsLibStrings.CellColor | officeDashJsLib.officeDashJsLibStrings.FontColor | officeDashJsLib.officeDashJsLibStrings.Icon = null
+    sortOn: SortOn | officeDashJsLib.officeDashJsLibStrings.Value | officeDashJsLib.officeDashJsLibStrings.CellColor | officeDashJsLib.officeDashJsLibStrings.FontColor | officeDashJsLib.officeDashJsLibStrings.Icon = null,
+    subField: java.lang.String = null
   ): SortField = {
     val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
@@ -76,6 +84,7 @@ object SortField {
     if (dataOption != null) __obj.updateDynamic("dataOption")(dataOption.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (sortOn != null) __obj.updateDynamic("sortOn")(sortOn.asInstanceOf[js.Any])
+    if (subField != null) __obj.updateDynamic("subField")(subField)
     __obj.asInstanceOf[SortField]
   }
 }

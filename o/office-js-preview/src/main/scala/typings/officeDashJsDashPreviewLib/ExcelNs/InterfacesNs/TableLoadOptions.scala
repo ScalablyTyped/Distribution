@@ -18,8 +18,7 @@ trait TableLoadOptions extends js.Object {
     *
     * Represents the AutoFilter object of the table.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   /**

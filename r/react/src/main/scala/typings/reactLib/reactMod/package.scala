@@ -44,6 +44,11 @@ package object reactMod {
     /* repeated */ ReactNode, 
     DOMElement[P, T]
   ]
+  // Any prop that has a default prop becomes optional, but its type is unchanged
+  // Undeclared default props are augmented into the resulting allowable attributes
+  // If declared props have indexed properties, ignore default props entirely as keyof gets widened
+  // Wrap in an outer-level conditional type to allow distribution over props that are unions
+  type Defaultize[P, D] = ((stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]]) with (stdLib.Partial[stdLib.Pick[P, stdLib.Extract[java.lang.String, java.lang.String]]]) with (stdLib.Partial[stdLib.Pick[D, stdLib.Exclude[java.lang.String, java.lang.String]]])) | P
   // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
   // TODO (TypeScript 3.0): ReadonlyArray<unknown>
   type DependencyList = js.Array[js.Any]
@@ -63,6 +68,7 @@ package object reactMod {
   // Event Handler Types
   // ----------------------------------------------------------------------
   type EventHandler[E /* <: SyntheticEvent[_, reactLib.Event] */] = js.Function1[/* event */ E, scala.Unit]
+  type ExactlyAnyPropertyKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
   type FC[P] = FunctionComponent[P]
   //
   // Factories
@@ -100,6 +106,8 @@ package object reactMod {
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
   type LegacyRef[T] = java.lang.String | Ref[T]
+  // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
+  type MergePropTypes[P, T] = ((stdLib.Pick[P, reactLib.NotExactlyAnyPropertyKeys[P]]) with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, reactLib.NotExactlyAnyPropertyKeys[P]]]) with (stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]])) | P | T
   type MouseEventHandler[T] = EventHandler[MouseEvent[T, reactLib.NativeMouseEvent]]
   type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
   /**
@@ -134,6 +142,7 @@ package object reactMod {
   // Component API
   // ----------------------------------------------------------------------
   type ReactInstance = (Component[js.Any, js.Object, js.Any]) | reactLib.Element
+  type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[P, propDashTypesLib.propDashTypesMod.InferProps[js.Any]]) | (Defaultize[MergePropTypes[P, propDashTypesLib.propDashTypesMod.InferProps[js.Any]], js.Any])
   type ReactNode = js.UndefOr[ReactChild | ReactFragment | ReactPortal | scala.Boolean | scala.Null]
   //
   // React Nodes

@@ -33,6 +33,13 @@ trait ChartDataLabelsData extends js.Object {
   ] = js.undefined
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the format code for data labels.
     *
     * [Api set: ExcelApi 1.8]
@@ -121,6 +128,7 @@ object ChartDataLabelsData {
     autoText: js.UndefOr[scala.Boolean] = js.undefined,
     format: ChartDataLabelFormatData = null,
     horizontalAlignment: officeDashJsLib.ExcelNs.ChartTextHorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormat: java.lang.String = null,
     position: officeDashJsLib.ExcelNs.ChartDataLabelPosition | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.InsideEnd | officeDashJsLib.officeDashJsLibStrings.InsideBase | officeDashJsLib.officeDashJsLibStrings.OutsideEnd | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.BestFit | officeDashJsLib.officeDashJsLibStrings.Callout = null,
     separator: java.lang.String = null,
@@ -137,6 +145,7 @@ object ChartDataLabelsData {
     if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText)
     if (format != null) __obj.updateDynamic("format")(format)
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator)

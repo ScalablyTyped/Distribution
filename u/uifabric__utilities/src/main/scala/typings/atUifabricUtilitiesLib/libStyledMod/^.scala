@@ -24,6 +24,13 @@ object ^ extends js.Object {
     customizable: ICustomizableProps
   ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
+    Component: reactLib.reactMod.ComponentClass[TComponentProps, reactLib.reactMod.ComponentState],
+    baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: scala.Boolean
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
     Component: reactLib.reactMod.StatelessComponent[TComponentProps],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
   ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
@@ -37,6 +44,13 @@ object ^ extends js.Object {
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
     customizable: ICustomizableProps
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
+    Component: reactLib.reactMod.StatelessComponent[TComponentProps],
+    baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: scala.Boolean
   ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
 }
 

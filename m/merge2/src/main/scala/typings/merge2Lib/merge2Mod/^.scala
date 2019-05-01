@@ -22,35 +22,16 @@ object ^ extends js.Object {
     *
     * @return         A merged duplex stream
     */
-  def apply(a: merge2Lib.Streams): Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams): Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams): Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams, d: merge2Lib.Streams): Merge2Stream = js.native
-  def apply(
-    a: merge2Lib.Streams,
-    b: merge2Lib.Streams,
-    c: merge2Lib.Streams,
-    d: merge2Lib.Streams,
-    e: merge2Lib.Streams
-  ): Merge2Stream = js.native
-  def apply(
-    a: merge2Lib.Streams,
-    b: merge2Lib.Streams,
-    c: merge2Lib.Streams,
-    d: merge2Lib.Streams,
-    e: merge2Lib.Streams,
-    options: Options
-  ): Merge2Stream = js.native
-  def apply(
-    a: merge2Lib.Streams,
-    b: merge2Lib.Streams,
-    c: merge2Lib.Streams,
-    d: merge2Lib.Streams,
-    options: Options
-  ): Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, c: merge2Lib.Streams, options: Options): Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, b: merge2Lib.Streams, options: Options): Merge2Stream = js.native
-  def apply(a: merge2Lib.Streams, options: Options): Merge2Stream = js.native
-  def apply(args: merge2Lib.Streams*): Merge2Stream = js.native
+  def apply(a: Streams): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, c: Streams): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams, options: Options): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, c: Streams, d: Streams, options: Options): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, c: Streams, options: Options): Merge2Stream = js.native
+  def apply(a: Streams, b: Streams, options: Options): Merge2Stream = js.native
+  def apply(a: Streams, options: Options): Merge2Stream = js.native
+  def apply(args: Streams*): Merge2Stream = js.native
 }
 

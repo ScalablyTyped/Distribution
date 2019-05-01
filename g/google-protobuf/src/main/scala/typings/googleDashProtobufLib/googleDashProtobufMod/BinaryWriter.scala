@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BinaryWriter () extends js.Object {
   @JSName("writeMessage")
-  var writeMessage_Original: googleDashProtobufLib.BinaryWrite = js.native
+  var writeMessage_Original: BinaryWrite = js.native
   def beginSubMessage(field: scala.Double): scala.Unit = js.native
   def endSubMessage(field: scala.Double): scala.Unit = js.native
   def getResultBase64String(): java.lang.String = js.native
@@ -22,12 +22,12 @@ class BinaryWriter () extends js.Object {
   def writeAny(
     fieldType: googleDashProtobufLib.googleDashProtobufMod.BinaryConstantsNs.FieldType,
     field: scala.Double,
-    value: googleDashProtobufLib.AnyFieldType
+    value: AnyFieldType
   ): scala.Unit = js.native
   def writeBool(field: scala.Double): scala.Unit = js.native
   def writeBool(field: scala.Double, value: scala.Boolean): scala.Unit = js.native
   def writeBytes(field: scala.Double): scala.Unit = js.native
-  def writeBytes(field: scala.Double, value: googleDashProtobufLib.ByteSource): scala.Unit = js.native
+  def writeBytes(field: scala.Double, value: ByteSource): scala.Unit = js.native
   def writeDouble(field: scala.Double): scala.Unit = js.native
   def writeDouble(field: scala.Double, value: scala.Double): scala.Unit = js.native
   def writeEnum(field: scala.Double): scala.Unit = js.native
@@ -42,7 +42,7 @@ class BinaryWriter () extends js.Object {
   def writeFixedHash64(field: scala.Double, value: java.lang.String): scala.Unit = js.native
   def writeFloat(field: scala.Double): scala.Unit = js.native
   def writeFloat(field: scala.Double, value: scala.Double): scala.Unit = js.native
-  def writeGroup(field: scala.Double, value: js.Any, writeCallback: googleDashProtobufLib.BinaryWriteCallback): scala.Unit = js.native
+  def writeGroup(field: scala.Double, value: js.Any, writeCallback: BinaryWriteCallback): scala.Unit = js.native
   def writeInt32(field: scala.Double): scala.Unit = js.native
   def writeInt32(field: scala.Double, value: scala.Double): scala.Unit = js.native
   def writeInt32String(field: scala.Double): scala.Unit = js.native
@@ -51,11 +51,7 @@ class BinaryWriter () extends js.Object {
   def writeInt64(field: scala.Double, value: scala.Double): scala.Unit = js.native
   def writeInt64String(field: scala.Double): scala.Unit = js.native
   def writeInt64String(field: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def writeMessage(
-    fieldNumber: scala.Double,
-    value: js.Any,
-    writerCallback: googleDashProtobufLib.BinaryWriteCallback
-  ): scala.Unit = js.native
+  def writeMessage(fieldNumber: scala.Double, value: js.Any, writerCallback: BinaryWriteCallback): scala.Unit = js.native
   def writePackedBool(field: scala.Double): scala.Unit = js.native
   def writePackedBool(field: scala.Double, value: js.Array[scala.Boolean]): scala.Unit = js.native
   def writePackedDouble(field: scala.Double): scala.Unit = js.native
@@ -105,7 +101,7 @@ class BinaryWriter () extends js.Object {
   def writeRepeatedBool(field: scala.Double): scala.Unit = js.native
   def writeRepeatedBool(field: scala.Double, value: js.Array[scala.Boolean]): scala.Unit = js.native
   def writeRepeatedBytes(field: scala.Double): scala.Unit = js.native
-  def writeRepeatedBytes(field: scala.Double, value: js.Array[googleDashProtobufLib.ByteSource]): scala.Unit = js.native
+  def writeRepeatedBytes(field: scala.Double, value: js.Array[ByteSource]): scala.Unit = js.native
   def writeRepeatedDouble(field: scala.Double): scala.Unit = js.native
   def writeRepeatedDouble(field: scala.Double, value: js.Array[scala.Double]): scala.Unit = js.native
   def writeRepeatedEnum(field: scala.Double): scala.Unit = js.native
@@ -120,11 +116,7 @@ class BinaryWriter () extends js.Object {
   def writeRepeatedFixedHash64(field: scala.Double, value: js.Array[java.lang.String]): scala.Unit = js.native
   def writeRepeatedFloat(field: scala.Double): scala.Unit = js.native
   def writeRepeatedFloat(field: scala.Double, value: js.Array[scala.Double]): scala.Unit = js.native
-  def writeRepeatedGroup(
-    field: scala.Double,
-    value: js.Array[Message],
-    writerCallback: googleDashProtobufLib.BinaryWriteCallback
-  ): scala.Unit = js.native
+  def writeRepeatedGroup(field: scala.Double, value: js.Array[Message], writerCallback: BinaryWriteCallback): scala.Unit = js.native
   def writeRepeatedInt32(field: scala.Double): scala.Unit = js.native
   def writeRepeatedInt32(field: scala.Double, value: js.Array[scala.Double]): scala.Unit = js.native
   def writeRepeatedInt32String(field: scala.Double): scala.Unit = js.native
@@ -133,11 +125,7 @@ class BinaryWriter () extends js.Object {
   def writeRepeatedInt64(field: scala.Double, value: js.Array[scala.Double]): scala.Unit = js.native
   def writeRepeatedInt64String(field: scala.Double): scala.Unit = js.native
   def writeRepeatedInt64String(field: scala.Double, value: js.Array[java.lang.String]): scala.Unit = js.native
-  def writeRepeatedMessage(
-    field: scala.Double,
-    value: js.Array[Message],
-    writerCallback: googleDashProtobufLib.BinaryWriteCallback
-  ): scala.Unit = js.native
+  def writeRepeatedMessage(field: scala.Double, value: js.Array[Message], writerCallback: BinaryWriteCallback): scala.Unit = js.native
   def writeRepeatedSfixed32(field: scala.Double): scala.Unit = js.native
   def writeRepeatedSfixed32(field: scala.Double, value: js.Array[scala.Double]): scala.Unit = js.native
   def writeRepeatedSfixed64(field: scala.Double): scala.Unit = js.native

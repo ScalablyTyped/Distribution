@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var checkSyntacticErrors: scala.Boolean
   var colors: scala.Boolean
   var compilerOptions: js.Object
-  var formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | forkDashTsDashCheckerDashWebpackDashPluginLib.Formatter
+  var formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | Formatter
   var formatterOptions: js.Any
   var ignoreDiagnostics: js.Array[scala.Double]
   var ignoreLintWarnings: scala.Boolean
@@ -39,7 +39,7 @@ object Options {
     checkSyntacticErrors: scala.Boolean,
     colors: scala.Boolean,
     compilerOptions: js.Object,
-    formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | forkDashTsDashCheckerDashWebpackDashPluginLib.Formatter,
+    formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | Formatter,
     formatterOptions: js.Any,
     ignoreDiagnostics: js.Array[scala.Double],
     ignoreLintWarnings: scala.Boolean,

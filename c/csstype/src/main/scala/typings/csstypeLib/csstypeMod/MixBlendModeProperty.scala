@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - Globals
-  - csstypeLib.BlendMode
+  - BlendMode
 */
 trait MixBlendModeProperty extends js.Object
 

@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation._
 
 // For pseudo selectors and media queries
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof aphrodite.BaseCSSProperties, 'fontFamily' | 'transition' | 'animationName'> ]: aphrodite.BaseCSSProperties[P]} */ trait OpenCSSProperties
+- Dropped {[ P in std.Exclude<keyof aphrodite.aphrodite.BaseCSSProperties, 'fontFamily' | 'transition' | 'animationName'> ]: aphrodite.aphrodite.BaseCSSProperties[P]} */ trait OpenCSSProperties
   extends aphroditeLib.Anon_AnimationName
      with /* k */ org.scalablytyped.runtime.StringDictionary[
       (js.UndefOr[
-        aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily] | java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
-        ])
-      ]) | aphroditeLib.CSSProperties
+        FontFamily | js.Array[FontFamily] | java.lang.String | OpenCSSProperties | js.Array[OpenCSSProperties]
+      ]) | CSSProperties
     ]
 
 object OpenCSSProperties {
@@ -22,15 +20,11 @@ object OpenCSSProperties {
   def apply(
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[
       (js.UndefOr[
-        aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily] | java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
-        ])
-      ]) | aphroditeLib.CSSProperties
+        FontFamily | js.Array[FontFamily] | java.lang.String | OpenCSSProperties | js.Array[OpenCSSProperties]
+      ]) | CSSProperties
     ] = null,
-    animationName: java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
-    ]) = null,
-    fontFamily: aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily] = null
+    animationName: java.lang.String | OpenCSSProperties | js.Array[OpenCSSProperties] = null,
+    fontFamily: FontFamily | js.Array[FontFamily] = null
   ): OpenCSSProperties = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

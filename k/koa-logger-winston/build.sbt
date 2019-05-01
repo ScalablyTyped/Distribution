@@ -1,29 +1,30 @@
 organization := "org.scalablytyped"
 name := "koa-logger-winston"
-version := "0.0-dt-20180703Z-1e410a"
+version := "0.0-dt-20180703Z-31fa90"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-e91840",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2ffec6",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-44a2a2",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-395bf5",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-f548c5",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-a197d0",
-  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-a9fbc4",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-507cc1",
-  "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-291dac",
-  "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-855427",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-b7b3da",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c3b9c7",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c951c0",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
-  "org.scalablytyped" %%% "winston" % "3.2.1-c556c6",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-0de293")
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-a6f0e2",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-b7a897",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d1a562",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-4e7c9d",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-481648",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-7ae182",
+  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-be3057",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-b066af",
+  "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-1a0fa1",
+  "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-3e51a7",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c1445",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-565137",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-3f05df",
+  "org.scalablytyped" %%% "std" % "3.4-495f93",
+  "org.scalablytyped" %%% "winston" % "3.2.1-a9b00c",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-0480cf")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

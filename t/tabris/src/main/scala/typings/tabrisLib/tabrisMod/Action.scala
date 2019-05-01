@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ActionProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined image, placementPriority, title, win_symbol */ @JSImport("tabris", "Action")
 @js.native
 class Action () extends Widget {
-  def this(properties: tabrisLib.Properties[Action, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Action, TypeScriptPropertiesKey]) = this()
   /**
     * Icon image for the action.
     */
-  var image: tabrisLib.Image | scala.Null = js.native
+  var image: Image | scala.Null = js.native
   /**
     * Actions with higher placement priority will be placed at a more significant position in the UI, e.g.
     * low priority actions could go into a menu instead of being included in a toolbar.
@@ -32,7 +32,7 @@ class Action () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Action: tabrisLib.ActionProperties = js.native
+  val tsProperties_Action: ActionProperties = js.native
   /**
     * Allows to override the image of the Action with an MDL2 ("Metro Design Language 2") symbol. When the
     * string does not exactly match [the name of an MDL2

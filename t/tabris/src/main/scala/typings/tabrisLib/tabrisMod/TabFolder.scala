@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._TabFolderProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, padding, right, top, transform, visible, width, win_theme. Inlined paging, selection, tabBarLocation, tabMode, textColor, win_tabBarTheme */ @JSImport("tabris", "TabFolder")
 @js.native
 class TabFolder () extends Composite {
-  def this(properties: tabrisLib.Properties[TabFolder, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[TabFolder, TypeScriptPropertiesKey]) = this()
   /**
     * Enables swiping through tabs. Always enabled on Windows.
     */
@@ -46,7 +46,7 @@ class TabFolder () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_TabFolder: tabrisLib.TabFolderProperties = js.native
+  val tsProperties_TabFolder: TabFolderProperties = js.native
   /**
     * Controls the color scheme used for the tabBar. When set to `"default"` the theme is inherited from
     * the TabFolder. Available only on Windows.

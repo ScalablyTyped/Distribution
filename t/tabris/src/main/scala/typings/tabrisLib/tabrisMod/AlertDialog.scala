@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 class AlertDialog ()
   extends Popup
      with _AlertDialogProperties {
-  def this(properties: tabrisLib.Properties[AlertDialog, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[AlertDialog, TypeScriptPropertiesKey]) = this()
   /**
     * An object with the texts of the buttons to display. There are up to three buttons: `ok`, `cancel` and
     * `neutral`. If no text is given for a button it will not be displayed. Example: `{ok: 'Yes', cancel:
@@ -44,7 +44,7 @@ class AlertDialog ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_AlertDialog: tabrisLib.AlertDialogProperties = js.native
+  val tsProperties_AlertDialog: AlertDialogProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

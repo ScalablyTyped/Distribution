@@ -32,8 +32,13 @@ trait ShareOptions extends js.Object {
   var miniProgram: js.UndefOr[MiniProgramShareOptions] = js.undefined
   /**
     * 分享服务提供商，通过uni.getProvider获取，如果不设置则弹出分享列表选择界面
+    * - sinaweibo: 新浪微博分享
+    * - qq: 分享到QQ好友
+    * - weixin: 分享微信消息、朋友圈及微信小程序
     */
-  var provider: js.UndefOr[java.lang.String] = js.undefined
+  var provider: js.UndefOr[
+    uniDashAppLib.uniDashAppLibStrings.sinaweibo | uniDashAppLib.uniDashAppLibStrings.qq | uniDashAppLib.uniDashAppLibStrings.weixin
+  ] = js.undefined
   /**
     * 场景。可取值“WXSceneSession”分享到聊天界面，“WXSenceTimeline”分享到朋友圈，“WXSceneFavorite”分享到微信收藏
     */
@@ -73,7 +78,7 @@ object ShareOptions {
     imageUrl: java.lang.String = null,
     mediaUrl: java.lang.String = null,
     miniProgram: MiniProgramShareOptions = null,
-    provider: java.lang.String = null,
+    provider: uniDashAppLib.uniDashAppLibStrings.sinaweibo | uniDashAppLib.uniDashAppLibStrings.qq | uniDashAppLib.uniDashAppLibStrings.weixin = null,
     scene: java.lang.String = null,
     success: () => scala.Unit = null,
     summary: java.lang.String = null,
@@ -87,7 +92,7 @@ object ShareOptions {
     if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
     if (mediaUrl != null) __obj.updateDynamic("mediaUrl")(mediaUrl)
     if (miniProgram != null) __obj.updateDynamic("miniProgram")(miniProgram)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (scene != null) __obj.updateDynamic("scene")(scene)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     if (summary != null) __obj.updateDynamic("summary")(summary)

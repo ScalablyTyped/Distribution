@@ -29,7 +29,7 @@ class Root () extends NamespaceBase {
     * @param filename Names of one or multiple files to load
     * @param callback Callback function
     */
-  def load(filename: java.lang.String, callback: protobufjsLib.LoadCallback): scala.Unit = js.native
+  def load(filename: java.lang.String, callback: LoadCallback): scala.Unit = js.native
   def load(filename: java.lang.String, options: IParseOptions): js.Promise[Root] = js.native
   /**
     * Loads one or multiple .proto or preprocessed .json files into this root namespace and calls the callback.
@@ -37,11 +37,11 @@ class Root () extends NamespaceBase {
     * @param options Parse options
     * @param callback Callback function
     */
-  def load(filename: java.lang.String, options: IParseOptions, callback: protobufjsLib.LoadCallback): scala.Unit = js.native
+  def load(filename: java.lang.String, options: IParseOptions, callback: LoadCallback): scala.Unit = js.native
   def load(filename: js.Array[java.lang.String]): js.Promise[Root] = js.native
-  def load(filename: js.Array[java.lang.String], callback: protobufjsLib.LoadCallback): scala.Unit = js.native
+  def load(filename: js.Array[java.lang.String], callback: LoadCallback): scala.Unit = js.native
   def load(filename: js.Array[java.lang.String], options: IParseOptions): js.Promise[Root] = js.native
-  def load(filename: js.Array[java.lang.String], options: IParseOptions, callback: protobufjsLib.LoadCallback): scala.Unit = js.native
+  def load(filename: js.Array[java.lang.String], options: IParseOptions, callback: LoadCallback): scala.Unit = js.native
   /**
     * Synchronously loads one or multiple .proto or preprocessed .json files into this root namespace (node only).
     * @param filename Names of one or multiple files to load

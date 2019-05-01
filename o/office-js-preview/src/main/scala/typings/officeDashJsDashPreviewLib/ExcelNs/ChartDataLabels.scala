@@ -44,8 +44,7 @@ class ChartDataLabels ()
     *
     * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: scala.Boolean = js.native
   /**

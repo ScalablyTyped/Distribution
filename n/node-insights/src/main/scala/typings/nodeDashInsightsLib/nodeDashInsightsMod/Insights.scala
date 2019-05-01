@@ -36,12 +36,12 @@ trait Insights extends js.Object {
   /**
     * Execute a nrql query
     */
-  def query(query: java.lang.String, callback: nodeDashInsightsLib.CallbackFunc): scala.Unit = js.native
+  def query(query: java.lang.String, callback: CallbackFunc): scala.Unit = js.native
   /**
     * Send accumulated insights data to new relic (if enabled)
     */
   def send(): scala.Unit = js.native
-  def send(done: nodeDashInsightsLib.CallbackFunc): scala.Unit = js.native
+  def send(done: CallbackFunc): scala.Unit = js.native
   /**
     * Start the timer that will send insights after some interval of time
     * this is called implicitly when data is added via the add method

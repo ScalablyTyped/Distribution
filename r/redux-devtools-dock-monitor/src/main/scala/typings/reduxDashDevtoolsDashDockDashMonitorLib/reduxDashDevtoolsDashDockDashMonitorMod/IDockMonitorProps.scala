@@ -33,7 +33,7 @@ trait IDockMonitorProps extends js.Object {
     *
     * @default 'right'
     */
-  var defaultPosition: js.UndefOr[reduxDashDevtoolsDashDockDashMonitorLib.DockPosition] = js.undefined
+  var defaultPosition: js.UndefOr[DockPosition] = js.undefined
   /**
     * Size of the dock. When fluid is true, a float (0.5 means half the window size).
     * When fluid is false, a width in pixels
@@ -62,7 +62,7 @@ object IDockMonitorProps {
     changeMonitorKey: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     defaultIsVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    defaultPosition: reduxDashDevtoolsDashDockDashMonitorLib.DockPosition = null,
+    defaultPosition: DockPosition = null,
     defaultSize: scala.Int | scala.Double = null,
     fluid: js.UndefOr[scala.Boolean] = js.undefined
   ): IDockMonitorProps = {

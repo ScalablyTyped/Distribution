@@ -13,88 +13,116 @@ object prosemirrorDashTestDashBuilderLibStrings {
   sealed trait ProsemirrorTestBuilder extends js.Object
   
   @js.native
-  sealed trait a extends TestMarksUnion
+  sealed trait a
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestMarksUnion
   
   @js.native
-  sealed trait blockquote extends TestNodesUnion
+  sealed trait blockquote
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait br extends TestNodesUnion
+  sealed trait br
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait bullet_list extends TestNodesUnion
+  sealed trait bullet_list
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait code extends TestMarksUnion
+  sealed trait code
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestMarksUnion
   
   @js.native
-  sealed trait code_block extends TestNodesUnion
+  sealed trait code_block
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait doc extends TestNodesUnion
+  sealed trait doc
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait em extends TestMarksUnion
+  sealed trait em
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestMarksUnion
   
   @js.native
-  sealed trait h1 extends TestNodesUnion
+  sealed trait h1
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait h2 extends TestNodesUnion
+  sealed trait h2
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait h3 extends TestNodesUnion
+  sealed trait h3
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait hard_break extends TestNodesUnion
+  sealed trait hard_break
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait heading extends TestNodesUnion
+  sealed trait heading
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait horizontal_rule extends TestNodesUnion
+  sealed trait horizontal_rule
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait hr extends TestNodesUnion
+  sealed trait hr
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait image extends TestNodesUnion
+  sealed trait image
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait img extends TestNodesUnion
+  sealed trait img
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait li extends TestNodesUnion
+  sealed trait li
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait link extends TestMarksUnion
+  sealed trait link
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestMarksUnion
   
   @js.native
-  sealed trait list_item extends TestNodesUnion
+  sealed trait list_item
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait ol extends TestNodesUnion
+  sealed trait ol
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait ordered_list extends TestNodesUnion
+  sealed trait ordered_list
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait p extends TestNodesUnion
+  sealed trait p
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait paragraph extends TestNodesUnion
+  sealed trait paragraph
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait pre extends TestNodesUnion
+  sealed trait pre
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait strong extends TestMarksUnion
+  sealed trait strong
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestMarksUnion
   
   @js.native
-  sealed trait text extends TestNodesUnion
+  sealed trait text
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @js.native
-  sealed trait ul extends TestNodesUnion
+  sealed trait ul
+    extends prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderMod.TestNodesUnion
   
   @scala.inline
   def Builder: Builder = "Builder".asInstanceOf[Builder]

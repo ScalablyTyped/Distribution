@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._RefreshCompositeProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, padding, right, top, transform, visible, width, win_theme. Inlined refreshEnabled, refreshIndicator, refreshMessage */ @JSImport("tabris", "RefreshComposite")
 @js.native
 class RefreshComposite () extends Composite {
-  def this(properties: tabrisLib.Properties[RefreshComposite, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[RefreshComposite, TypeScriptPropertiesKey]) = this()
   /**
     * Whether the pull-to-refresh gesture can be performed by the user. When disabled, the
     * `RefreshComposite` behaves like a regular `Composite`.
@@ -33,7 +33,7 @@ class RefreshComposite () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_RefreshComposite: tabrisLib.RefreshCompositeProperties = js.native
+  val tsProperties_RefreshComposite: RefreshCompositeProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

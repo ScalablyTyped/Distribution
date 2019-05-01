@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 James Lismore <https://github.com/jlismore>
 //                 Stack Builders <https://github.com/stackbuilders>
 //                 Esteban Ibarra <https://github.com/ibarrae>
+//                 Dominic Lee <https://github.com/dominictwlee>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

@@ -15,7 +15,7 @@ trait Merge2Stream
     *
     * @return     The merged stream
     */
-  def add(args: merge2Lib.Streams*): Merge2Stream = js.native
+  def add(args: Streams*): Merge2Stream = js.native
   /**
     * @summary    It will emit 'queueDrain' when all streams merged.
     *             If you set end === false in options, this event give you a notice that

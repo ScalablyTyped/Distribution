@@ -10,7 +10,7 @@ trait PlatformTouchableProps
   // TouchableOpacity (default iOS)
   var activeOpacity: js.UndefOr[scala.Double] = js.undefined
   // TouchableNativeFeedback (default Android)
-  var background: js.UndefOr[reactDashNativeLib.BackgroundPropType] = js.undefined
+  var background: js.UndefOr[reactDashNativeLib.reactDashNativeMod.BackgroundPropType] = js.undefined
   var foreground: js.UndefOr[scala.Boolean] = js.undefined
   var onHideUnderlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onShowUnderlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -29,10 +29,10 @@ object PlatformTouchableProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: reactDashNativeLib.reactDashNativeMod.AccessibilityRole = null,
     accessibilityStates: js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: reactDashNativeLib.reactDashNativeMod.AccessibilityTrait | js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     activeOpacity: scala.Int | scala.Double = null,
-    background: reactDashNativeLib.BackgroundPropType = null,
+    background: reactDashNativeLib.reactDashNativeMod.BackgroundPropType = null,
     delayLongPress: scala.Int | scala.Double = null,
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,

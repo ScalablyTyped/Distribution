@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait ImageLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,24 +18,21 @@ trait ImageLoadOptions extends js.Object {
     *
     * Returns the format of the image. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the shape identifier for the image object. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns the Shape object associated with the image.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }

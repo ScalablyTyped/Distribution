@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait KeyboardEvent extends js.Object {
   var duration: scala.Double
   var easing: KeyboardEventEasing
-  var endCoordinates: reactDashNativeLib.ScreenRect
+  var endCoordinates: ScreenRect
   var isEventFromThisApp: scala.Boolean
-  var startCoordinates: reactDashNativeLib.ScreenRect
+  var startCoordinates: ScreenRect
 }
 
 object KeyboardEvent {
@@ -18,9 +18,9 @@ object KeyboardEvent {
   def apply(
     duration: scala.Double,
     easing: KeyboardEventEasing,
-    endCoordinates: reactDashNativeLib.ScreenRect,
+    endCoordinates: ScreenRect,
     isEventFromThisApp: scala.Boolean,
-    startCoordinates: reactDashNativeLib.ScreenRect
+    startCoordinates: ScreenRect
   ): KeyboardEvent = {
     val __obj = js.Dynamic.literal(duration = duration, easing = easing, endCoordinates = endCoordinates, isEventFromThisApp = isEventFromThisApp, startCoordinates = startCoordinates)
   

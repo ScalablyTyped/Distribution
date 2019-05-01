@@ -97,12 +97,6 @@ trait VictoryGroupProps
     ]
   ] = js.undefined
   /**
-    * The horizontal prop determines whether the bars will be laid vertically or
-    * horizontally. The bars will be vertical if this prop is false or unspecified,
-    * or horizontal if the prop is set to true.
-    */
-  var horizontal: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * The offset prop determines the number of pixels each element in a group should
     * be offset from its original position of the on the independent axis. In the
     * case of groups of bars, this number should be equal to the width of the bar

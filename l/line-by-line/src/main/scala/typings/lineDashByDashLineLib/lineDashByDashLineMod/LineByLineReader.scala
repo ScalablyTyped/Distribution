@@ -20,10 +20,7 @@ trait LineByLineReader
     * subscribe to an event emitted by reader
     * @param listener A void function with one param
     */
-  def on(
-    event: lineDashByDashLineLib.LineByLineReaderEvent,
-    listener: js.Function1[/* value */ js.Any, scala.Unit]
-  ): this.type = js.native
+  def on(event: LineByLineReaderEvent, listener: js.Function1[/* value */ js.Any, scala.Unit]): this.type = js.native
   /**
     * Pauses the reader
     */

@@ -7,30 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait FontFaceFallback extends js.Object {
   var MozFontFeatureSettings: js.UndefOr[
-    csstypeLib.FontFaceFontFeatureSettingsProperty | js.Array[csstypeLib.FontFaceFontFeatureSettingsProperty]
+    FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty]
   ] = js.undefined
-  var fontDisplay: js.UndefOr[
-    csstypeLib.FontFaceFontDisplayProperty | js.Array[csstypeLib.FontFaceFontDisplayProperty]
-  ] = js.undefined
+  var fontDisplay: js.UndefOr[FontFaceFontDisplayProperty | js.Array[FontFaceFontDisplayProperty]] = js.undefined
   var fontFamily: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var fontFeatureSettings: js.UndefOr[
-    csstypeLib.FontFaceFontFeatureSettingsProperty | js.Array[csstypeLib.FontFaceFontFeatureSettingsProperty]
+    FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty]
   ] = js.undefined
-  var fontStretch: js.UndefOr[
-    csstypeLib.FontFaceFontStretchProperty | js.Array[csstypeLib.FontFaceFontStretchProperty]
-  ] = js.undefined
-  var fontStyle: js.UndefOr[
-    csstypeLib.FontFaceFontStyleProperty | js.Array[csstypeLib.FontFaceFontStyleProperty]
-  ] = js.undefined
-  var fontVariant: js.UndefOr[
-    csstypeLib.FontFaceFontVariantProperty | js.Array[csstypeLib.FontFaceFontVariantProperty]
-  ] = js.undefined
+  var fontStretch: js.UndefOr[FontFaceFontStretchProperty | js.Array[FontFaceFontStretchProperty]] = js.undefined
+  var fontStyle: js.UndefOr[FontFaceFontStyleProperty | js.Array[FontFaceFontStyleProperty]] = js.undefined
+  var fontVariant: js.UndefOr[FontFaceFontVariantProperty | js.Array[FontFaceFontVariantProperty]] = js.undefined
   var fontVariationSettings: js.UndefOr[
-    csstypeLib.FontFaceFontVariationSettingsProperty | js.Array[csstypeLib.FontFaceFontVariationSettingsProperty]
+    FontFaceFontVariationSettingsProperty | js.Array[FontFaceFontVariationSettingsProperty]
   ] = js.undefined
-  var fontWeight: js.UndefOr[
-    csstypeLib.FontFaceFontWeightProperty | js.Array[csstypeLib.FontFaceFontWeightProperty]
-  ] = js.undefined
+  var fontWeight: js.UndefOr[FontFaceFontWeightProperty | js.Array[FontFaceFontWeightProperty]] = js.undefined
   var src: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var unicodeRange: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
@@ -38,15 +28,15 @@ trait FontFaceFallback extends js.Object {
 object FontFaceFallback {
   @scala.inline
   def apply(
-    MozFontFeatureSettings: csstypeLib.FontFaceFontFeatureSettingsProperty | js.Array[csstypeLib.FontFaceFontFeatureSettingsProperty] = null,
-    fontDisplay: csstypeLib.FontFaceFontDisplayProperty | js.Array[csstypeLib.FontFaceFontDisplayProperty] = null,
+    MozFontFeatureSettings: FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty] = null,
+    fontDisplay: FontFaceFontDisplayProperty | js.Array[FontFaceFontDisplayProperty] = null,
     fontFamily: java.lang.String | js.Array[java.lang.String] = null,
-    fontFeatureSettings: csstypeLib.FontFaceFontFeatureSettingsProperty | js.Array[csstypeLib.FontFaceFontFeatureSettingsProperty] = null,
-    fontStretch: csstypeLib.FontFaceFontStretchProperty | js.Array[csstypeLib.FontFaceFontStretchProperty] = null,
-    fontStyle: csstypeLib.FontFaceFontStyleProperty | js.Array[csstypeLib.FontFaceFontStyleProperty] = null,
-    fontVariant: csstypeLib.FontFaceFontVariantProperty | js.Array[csstypeLib.FontFaceFontVariantProperty] = null,
-    fontVariationSettings: csstypeLib.FontFaceFontVariationSettingsProperty | js.Array[csstypeLib.FontFaceFontVariationSettingsProperty] = null,
-    fontWeight: csstypeLib.FontFaceFontWeightProperty | js.Array[csstypeLib.FontFaceFontWeightProperty] = null,
+    fontFeatureSettings: FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty] = null,
+    fontStretch: FontFaceFontStretchProperty | js.Array[FontFaceFontStretchProperty] = null,
+    fontStyle: FontFaceFontStyleProperty | js.Array[FontFaceFontStyleProperty] = null,
+    fontVariant: FontFaceFontVariantProperty | js.Array[FontFaceFontVariantProperty] = null,
+    fontVariationSettings: FontFaceFontVariationSettingsProperty | js.Array[FontFaceFontVariationSettingsProperty] = null,
+    fontWeight: FontFaceFontWeightProperty | js.Array[FontFaceFontWeightProperty] = null,
     src: java.lang.String | js.Array[java.lang.String] = null,
     unicodeRange: java.lang.String | js.Array[java.lang.String] = null
   ): FontFaceFallback = {

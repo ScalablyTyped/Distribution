@@ -23,7 +23,7 @@ object NetworkFirstOptions {
     fetchOptions: stdLib.RequestInit,
     matchOptions: stdLib.CacheQueryOptions,
     networkTimeoutSeconds: scala.Double,
-    plugins: js.Array[workboxDashSwLib.Plugin]
+    plugins: js.Array[Plugin]
   ): NetworkFirstOptions = {
     val __obj = js.Dynamic.literal(cacheName = cacheName, fetchOptions = fetchOptions, matchOptions = matchOptions, networkTimeoutSeconds = networkTimeoutSeconds, plugins = plugins)
   

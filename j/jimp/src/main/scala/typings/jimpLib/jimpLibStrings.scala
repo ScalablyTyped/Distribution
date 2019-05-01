@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object jimpLibStrings {
   @js.native
-  sealed trait any extends ListenableName
+  sealed trait any
+    extends jimpLib.jimpMod.ListenableName
   
   @js.native
-  sealed trait background extends ChangeName
+  sealed trait background
+    extends jimpLib.jimpMod.ChangeName
   
   @js.native
-  sealed trait `before-change` extends ListenableName
+  sealed trait `before-change`
+    extends jimpLib.jimpMod.ListenableName
   
   @js.native
-  sealed trait `before-clone` extends ListenableName
+  sealed trait `before-clone`
+    extends jimpLib.jimpMod.ListenableName
   
   @js.native
   sealed trait bezierInterpolation extends js.Object
@@ -28,31 +32,37 @@ object jimpLibStrings {
   sealed trait bilinearInterpolation extends js.Object
   
   @js.native
-  sealed trait blue extends ColorActionName
+  sealed trait blue
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
-  sealed trait changed extends ListenableName
+  sealed trait changed
+    extends jimpLib.jimpMod.ListenableName
   
   @js.native
   sealed trait clone extends js.Object
   
   @js.native
-  sealed trait cloned extends ListenableName
+  sealed trait cloned
+    extends jimpLib.jimpMod.ListenableName
   
   @js.native
   sealed trait constructor extends js.Object
   
   @js.native
-  sealed trait crop extends ChangeName
+  sealed trait crop
+    extends jimpLib.jimpMod.ChangeName
   
   @js.native
-  sealed trait green extends ColorActionName
+  sealed trait green
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
   sealed trait hermiteInterpolation extends js.Object
   
   @js.native
-  sealed trait hue extends ColorActionName
+  sealed trait hue
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
   sealed trait `image/bmp` extends js.Object
@@ -76,28 +86,35 @@ object jimpLibStrings {
   sealed trait `image/x-ms-bmp` extends js.Object
   
   @js.native
-  sealed trait initialized extends ListenableName
+  sealed trait initialized
+    extends jimpLib.jimpMod.ListenableName
   
   @js.native
-  sealed trait mix extends ColorActionName
+  sealed trait mix
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
   sealed trait nearestNeighbor extends js.Object
   
   @js.native
-  sealed trait red extends ColorActionName
+  sealed trait red
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
-  sealed trait scan extends ChangeName
+  sealed trait scan
+    extends jimpLib.jimpMod.ChangeName
   
   @js.native
-  sealed trait shade extends ColorActionName
+  sealed trait shade
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
-  sealed trait tint extends ColorActionName
+  sealed trait tint
+    extends jimpLib.jimpMod.ColorActionName
   
   @js.native
-  sealed trait xor extends ColorActionName
+  sealed trait xor
+    extends jimpLib.jimpMod.ColorActionName
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

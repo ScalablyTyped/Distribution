@@ -9,11 +9,11 @@ trait ForStatement
   extends BaseNode
      with Statement {
   var body: Statement
-  var init: js.UndefOr[VariableDeclaration | estreeLib.Expression | scala.Null] = js.undefined
-  var test: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+  var init: js.UndefOr[VariableDeclaration | Expression | scala.Null] = js.undefined
+  var test: js.UndefOr[Expression | scala.Null] = js.undefined
   @JSName("type")
   var type_ForStatement: estreeLib.estreeLibStrings.ForStatement
-  var update: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+  var update: js.UndefOr[Expression | scala.Null] = js.undefined
 }
 
 object ForStatement {
@@ -21,13 +21,13 @@ object ForStatement {
   def apply(
     body: Statement,
     `type`: estreeLib.estreeLibStrings.ForStatement,
-    init: VariableDeclaration | estreeLib.Expression = null,
+    init: VariableDeclaration | Expression = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,
-    test: estreeLib.Expression = null,
+    test: Expression = null,
     trailingComments: js.Array[Comment] = null,
-    update: estreeLib.Expression = null
+    update: Expression = null
   ): ForStatement = {
     val __obj = js.Dynamic.literal(body = body)
     __obj.updateDynamic("type")(`type`)

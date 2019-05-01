@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PopperProps extends js.Object {
   var eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  var innerRef: js.UndefOr[reactDashPopperLib.RefHandler] = js.undefined
+  var innerRef: js.UndefOr[RefHandler] = js.undefined
   var modifiers: js.UndefOr[popperDotJsLib.popperDotJsMod.Modifiers] = js.undefined
   var placement: js.UndefOr[popperDotJsLib.popperDotJsMod.Placement] = js.undefined
   var positionFixed: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ object PopperProps {
   def apply(
     children: PopperChildrenProps => reactLib.reactMod.ReactNode,
     eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    innerRef: reactDashPopperLib.RefHandler = null,
+    innerRef: RefHandler = null,
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
     placement: popperDotJsLib.popperDotJsMod.Placement = null,
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,

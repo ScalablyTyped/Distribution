@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 object jszipLibStrings {
   @js.native
-  sealed trait DEFLATE extends Compression
+  sealed trait DEFLATE
+    extends jszipLib.jszipMod.Compression
   
   @js.native
   sealed trait DOS extends js.Object
   
   @js.native
-  sealed trait STORE extends Compression
+  sealed trait STORE
+    extends jszipLib.jszipMod.Compression
   
   @js.native
   sealed trait UNIX extends js.Object

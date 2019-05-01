@@ -30,6 +30,25 @@ package object workboxDashSwMod {
     */
   type CacheOnly = CacheStrategy
   /**
+    * The "handler" callback is called when a service worker's fetch event has been matched by a Route. This callback should return a Promise that resolves with a Response.
+    * If a value is returned by the match callback it will be passed in as the context.params argument.
+    */
+  type HandlerCallback = CacheStrategy | (js.Function1[/* context */ HandlerContext, js.Promise[stdLib.Response]])
+  /**
+    * To signify a match, return anything other than null. Return null if the route shouldn't match.
+    */
+  type MatchCallback = js.Function1[/* context */ MatchContext, js.Object | scala.Null]
+  /**
+    * ===== WorkboxNamespace =====
+    */
+  /**
+    * A ModulePathCallback function can be used to modify the modify the where Workbox modules are loaded.
+    * @param {string} moduleName - The name of the module to load (i.e. 'workbox-core', 'workbox-precaching' etc.).
+    * @param {boolean} debug - When true, dev builds should be loaded, otherwise load prod builds.
+    * @returns {string} This callback should return a path of module. This will be passed to importScripts().
+    */
+  type ModulePathCallback = js.Function2[/* moduleName */ java.lang.String, /* debug */ scala.Boolean, java.lang.String]
+  /**
     * An implementation of a
     * [network first]{@link https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#network-falling-back-to-cache}
     * request strategy.
@@ -94,4 +113,15 @@ package object workboxDashSwMod {
     * ===== StaleWhileRevalidate strategy =====
     */
   type StaleWhileRevalidateOptions = CacheFirstOptions
+  /**
+    * ===== StreamsNamespace =====
+    */
+  type StreamSource = stdLib.Response | stdLib.ReadableStream[js.Any] | stdLib.BodyInit
+  /**
+    * The "urlManipulation" callback can be used to determine if there are any additional permutations of a URL that should be used to check against the available precached files.
+    * For example, Workbox supports checking for '/index.html' when the URL '/' is provided. This callback allows additional, custom checks.
+    * @param {URLContext} context
+    * @returns {URL[]} To add additional urls to test, return an Array of URL's. Please note that these should not be Strings, but URL objects.
+    */
+  type UrlManipulation = js.Function1[/* context */ URLContext, js.Array[stdLib.URL]]
 }

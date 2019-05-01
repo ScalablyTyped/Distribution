@@ -27,7 +27,7 @@ trait Parameter extends js.Object {
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
-    *  Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed. 
+    *  Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed.
     */
   var IsModifiable: js.UndefOr[Boolean] = js.undefined
   /**

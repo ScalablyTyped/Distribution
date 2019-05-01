@@ -54,14 +54,14 @@ trait Settings
     *                     exist.
     * @see #getAll
     */
-  def get(keyPath: java.lang.String): electronDashSettingsLib.JsonValue = js.native
-  def get(keyPath: java.lang.String, defaultValue: js.Any): electronDashSettingsLib.JsonValue = js.native
-  def get(keyPath: java.lang.String, defaultValue: js.Any, options: SettingsOptions): electronDashSettingsLib.JsonValue = js.native
+  def get(keyPath: java.lang.String): JsonValue = js.native
+  def get(keyPath: java.lang.String, defaultValue: js.Any): JsonValue = js.native
+  def get(keyPath: java.lang.String, defaultValue: js.Any, options: SettingsOptions): JsonValue = js.native
   /**
     * Returns all settings.
     * @see #get
     */
-  def getAll(): electronDashSettingsLib.JsonValue = js.native
+  def getAll(): JsonValue = js.native
   /**
     * Returns a boolean indicating whether the settings object contains the
     * given key path.
@@ -76,15 +76,15 @@ trait Settings
     *                must be a data type supported by JSON.
     * @see #setAll
     */
-  def set(keyPath: java.lang.String, value: electronDashSettingsLib.JsonValue): Settings = js.native
-  def set(keyPath: java.lang.String, value: electronDashSettingsLib.JsonValue, options: SettingsOptions): Settings = js.native
+  def set(keyPath: java.lang.String, value: JsonValue): Settings = js.native
+  def set(keyPath: java.lang.String, value: JsonValue, options: SettingsOptions): Settings = js.native
   /**
     * Sets all settings and returns the Settings instance. Chainable.
     * @param obj The new settings object.
     * @see #set
     */
-  def setAll(obj: electronDashSettingsLib.JsonValue): Settings = js.native
-  def setAll(obj: electronDashSettingsLib.JsonValue, options: SettingsOptions): Settings = js.native
+  def setAll(obj: JsonValue): Settings = js.native
+  def setAll(obj: JsonValue, options: SettingsOptions): Settings = js.native
   /**
     * Sets a custom settings file path. By default, the settings file is
     * stored in your app's user data directory in a file called Settings,
@@ -106,6 +106,6 @@ trait Settings
     *                chosen key path changes. The context of this callback is
     *                that of the observer instance.
     */
-  def watch(keyPath: java.lang.String, handler: electronDashSettingsLib.SettingsHandler): SettingsObserver = js.native
+  def watch(keyPath: java.lang.String, handler: SettingsHandler): SettingsObserver = js.native
 }
 

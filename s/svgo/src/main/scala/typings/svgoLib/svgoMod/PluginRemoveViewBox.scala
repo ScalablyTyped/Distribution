@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveViewBox extends js.Object {
+trait PluginRemoveViewBox extends PluginConfig {
   var removeViewBox: scala.Boolean | js.Object
 }
 

@@ -118,8 +118,7 @@ class Chart ()
     *
     * Encapsulates the options for the pivot chart. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val pivotOptions: ChartPivotOptions = js.native
   /**
@@ -213,8 +212,7 @@ class Chart ()
     *
     * Activate the chart in the Excel UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def activate(): scala.Unit = js.native
   /**

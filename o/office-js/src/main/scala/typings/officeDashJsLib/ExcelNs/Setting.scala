@@ -90,6 +90,6 @@ class Setting ()
 object Setting extends js.Object {
   var DateJSONPrefix: js.Any = js.native
   var DateJSONSuffix: js.Any = js.native
-  /* private */ def replaceStringDateWithDate(value: js.Any): js.Any = js.native
+  var replaceStringDateWithDate: js.Any = js.native
 }
 

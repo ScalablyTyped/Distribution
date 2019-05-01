@@ -112,38 +112,33 @@ object ^ extends js.Object {
   def ajax(): _ajax = js.native
   def alert(text: js.Any): stdLib.HTMLElement = js.native
   def alert(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
-  def alert(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def alert(text: js.Any, `type`: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def alert(text: js.Any, `type`: webixLib.WebixCallback, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: java.lang.String, callback: WebixCallback): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: WebixCallback): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: WebixCallback, callback: WebixCallback): stdLib.HTMLElement = js.native
   def animate(html_element: stdLib.HTMLElement, animation: js.Any): scala.Unit = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
-  def bind(code: webixLib.WebixCallback, master: js.Any): webixLib.WebixCallback = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+  def bind(code: WebixCallback, master: js.Any): WebixCallback = js.native
   def blockEvent(): scala.Unit = js.native
   def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
   def clone(source: js.Any): js.Any = js.native
   def confirm(text: js.Any): stdLib.HTMLElement = js.native
   def confirm(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
-  def confirm(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def confirm(text: js.Any, `type`: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def confirm(text: js.Any, `type`: webixLib.WebixCallback, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: java.lang.String, callback: WebixCallback): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: WebixCallback): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: WebixCallback, callback: WebixCallback): stdLib.HTMLElement = js.native
   def copy(source: js.Any): js.Any = js.native
-  def delay(code: webixLib.WebixCallback): scala.Double = js.native
-  def delay(code: webixLib.WebixCallback, owner: js.Any): scala.Double = js.native
-  def delay(code: webixLib.WebixCallback, owner: js.Any, params: js.Array[_]): scala.Double = js.native
-  def delay(code: webixLib.WebixCallback, owner: js.Any, params: js.Array[_], delay: scala.Double): scala.Double = js.native
+  def delay(code: WebixCallback): scala.Double = js.native
+  def delay(code: WebixCallback, owner: js.Any): scala.Double = js.native
+  def delay(code: WebixCallback, owner: js.Any, params: js.Array[_]): scala.Double = js.native
+  def delay(code: WebixCallback, owner: js.Any, params: js.Array[_], delay: scala.Double): scala.Double = js.native
   def detachEvent(id: java.lang.String): scala.Unit = js.native
   def dp(name: java.lang.String): js.Any = js.native
   def editStop(): scala.Unit = js.native
-  def event(node: java.lang.String, event: java.lang.String, handler: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def event(node: java.lang.String, event: java.lang.String, handler: webixLib.WebixCallback, context: js.Any): java.lang.String | scala.Double = js.native
-  def event(node: stdLib.HTMLElement, event: java.lang.String, handler: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def event(
-    node: stdLib.HTMLElement,
-    event: java.lang.String,
-    handler: webixLib.WebixCallback,
-    context: js.Any
-  ): java.lang.String | scala.Double = js.native
+  def event(node: java.lang.String, event: java.lang.String, handler: WebixCallback): java.lang.String | scala.Double = js.native
+  def event(node: java.lang.String, event: java.lang.String, handler: WebixCallback, context: js.Any): java.lang.String | scala.Double = js.native
+  def event(node: stdLib.HTMLElement, event: java.lang.String, handler: WebixCallback): java.lang.String | scala.Double = js.native
+  def event(node: stdLib.HTMLElement, event: java.lang.String, handler: WebixCallback, context: js.Any): java.lang.String | scala.Double = js.native
   def eventRemove(id: java.lang.String): scala.Unit = js.native
   def eventRemove(id: scala.Double): scala.Unit = js.native
   def exec(code: java.lang.String): scala.Unit = js.native
@@ -155,8 +150,8 @@ object ^ extends js.Object {
   def isUndefined(check: js.Any): scala.Boolean = js.native
   def jsonp(url: java.lang.String): scala.Unit = js.native
   def jsonp(url: java.lang.String, params: js.Any): scala.Unit = js.native
-  def jsonp(url: java.lang.String, params: js.Any, callback: webixLib.WebixCallback): scala.Unit = js.native
-  def jsonp(url: java.lang.String, params: js.Any, callback: webixLib.WebixCallback, master: js.Any): scala.Unit = js.native
+  def jsonp(url: java.lang.String, params: js.Any, callback: WebixCallback): scala.Unit = js.native
+  def jsonp(url: java.lang.String, params: js.Any, callback: WebixCallback, master: js.Any): scala.Unit = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def message(content: js.Any): scala.Unit = js.native
   def message(content: js.Any, `type`: java.lang.String): scala.Unit = js.native
@@ -165,30 +160,30 @@ object ^ extends js.Object {
   def message(content: js.Any, `type`: java.lang.String, expire: scala.Double, id: scala.Double): scala.Unit = js.native
   def modalbox(text: js.Any): stdLib.HTMLElement = js.native
   def modalbox(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
-  def modalbox(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def modalbox(text: js.Any, `type`: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def modalbox(text: js.Any, `type`: webixLib.WebixCallback, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
-  def once(code: webixLib.WebixCallback): scala.Unit = js.native
+  def modalbox(text: js.Any, `type`: java.lang.String, callback: WebixCallback): stdLib.HTMLElement = js.native
+  def modalbox(text: js.Any, `type`: WebixCallback): stdLib.HTMLElement = js.native
+  def modalbox(text: js.Any, `type`: WebixCallback, callback: WebixCallback): stdLib.HTMLElement = js.native
+  def once(code: WebixCallback): scala.Unit = js.native
   def print(view: js.Any): scala.Unit = js.native
   def print(view: js.Any, options: js.Any): scala.Unit = js.native
   def proto(target: js.Any, mixins: js.Any*): js.Any = js.native
   def protoUI(target: js.Any, mixins: js.Any*): js.Any = js.native
   def proxy(`type`: java.lang.String, source: java.lang.String): js.Any = js.native
-  def ready(code: webixLib.WebixCallback): scala.Unit = js.native
+  def ready(code: WebixCallback): scala.Unit = js.native
   def remote(): scala.Unit = js.native
   def require(url: js.Any): js.Promise[_] = js.native
-  def require(url: js.Any, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-  def require(url: js.Any, callback: webixLib.WebixCallback, master: js.Any): js.Promise[_] = js.native
+  def require(url: js.Any, callback: WebixCallback): js.Promise[_] = js.native
+  def require(url: js.Any, callback: WebixCallback, master: js.Any): js.Promise[_] = js.native
   def send(url: java.lang.String, values: js.Any, method: java.lang.String, target: java.lang.String): scala.Unit = js.native
-  def single(source: webixLib.WebixCallback): webixLib.WebixCallback = js.native
+  def single(source: WebixCallback): WebixCallback = js.native
   def stringify(obj: js.Any): java.lang.String = js.native
-  def template(template: java.lang.String): webixLib.WebixCallback = js.native
+  def template(template: java.lang.String): WebixCallback = js.native
   def toArray(array: js.Array[_]): js.Array[_] = js.native
   def toCSV(id: js.Any): js.Any = js.native
   def toCSV(id: js.Any, options: js.Any): js.Any = js.native
   def toExcel(id: js.Any): js.Any = js.native
   def toExcel(id: js.Any, options: js.Any): js.Any = js.native
-  def toFunctor(name: java.lang.String): webixLib.WebixCallback = js.native
+  def toFunctor(name: java.lang.String): WebixCallback = js.native
   def toNode(id: java.lang.String): stdLib.HTMLElement = js.native
   def toPDF(id: js.Any): js.Any = js.native
   def toPDF(id: js.Any, options: js.Any): js.Any = js.native
@@ -200,6 +195,6 @@ object ^ extends js.Object {
   def ui(config: js.Any, parent: js.Any, replacement: js.Any): webixLib.webixMod.uiNs.baseview = js.native
   def uid(): scala.Double = js.native
   def unblockEvent(): scala.Unit = js.native
-  def wrap(target: webixLib.WebixCallback, source: webixLib.WebixCallback): webixLib.WebixCallback = js.native
+  def wrap(target: WebixCallback, source: WebixCallback): WebixCallback = js.native
 }
 

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("ui-box", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Box: reactLib.reactMod.ComponentClass[BoxProps | uiDashBoxLib.CSSProps, reactLib.reactMod.ComponentState] = js.native
-  val default: reactLib.reactMod.ComponentClass[BoxProps | uiDashBoxLib.CSSProps, reactLib.reactMod.ComponentState] = js.native
+  val Box: reactLib.reactMod.ComponentClass[BoxProps | CSSProps, reactLib.reactMod.ComponentState] = js.native
+  val default: reactLib.reactMod.ComponentClass[BoxProps | CSSProps, reactLib.reactMod.ComponentState] = js.native
   def clearStyles(): scala.Unit = js.native
   def extractStyles(): uiDashBoxLib.Anon_Cache = js.native
   def hydrate(cache: js.Array[uiDashBoxLib.CacheEntry]): scala.Unit = js.native

@@ -124,6 +124,13 @@ trait RangeData extends js.Object {
   var isEntireRow: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents the data type state of each cell. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkedDataTypeState: js.UndefOr[js.Array[js.Array[officeDashJsLib.ExcelNs.LinkedDataTypeState]]] = js.undefined
+  /**
+    *
     * Represents Excel's number format code for the given range.
     When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
     *
@@ -211,6 +218,7 @@ object RangeData {
     hyperlink: officeDashJsLib.ExcelNs.RangeHyperlink = null,
     isEntireColumn: js.UndefOr[scala.Boolean] = js.undefined,
     isEntireRow: js.UndefOr[scala.Boolean] = js.undefined,
+    linkedDataTypeState: js.Array[js.Array[officeDashJsLib.ExcelNs.LinkedDataTypeState]] = null,
     numberFormat: js.Array[js.Array[_]] = null,
     numberFormatLocal: js.Array[js.Array[_]] = null,
     rowCount: scala.Int | scala.Double = null,
@@ -238,6 +246,7 @@ object RangeData {
     if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
     if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
     if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
+    if (linkedDataTypeState != null) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState)
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
     if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])

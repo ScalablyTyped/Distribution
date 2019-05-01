@@ -5,9 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TaggedTemplateExpression extends BaseNode {
+trait TaggedTemplateExpression
+  extends BaseNode
+     with Expression {
   var quasi: TemplateLiteral
-  var tag: estreeLib.Expression
+  var tag: Expression
   @JSName("type")
   var type_TaggedTemplateExpression: estreeLib.estreeLibStrings.TaggedTemplateExpression
 }
@@ -16,7 +18,7 @@ object TaggedTemplateExpression {
   @scala.inline
   def apply(
     quasi: TemplateLiteral,
-    tag: estreeLib.Expression,
+    tag: Expression,
     `type`: estreeLib.estreeLibStrings.TaggedTemplateExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

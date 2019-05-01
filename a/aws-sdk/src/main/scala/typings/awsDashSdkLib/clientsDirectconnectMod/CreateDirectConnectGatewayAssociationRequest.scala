@@ -15,7 +15,7 @@ trait CreateDirectConnectGatewayAssociationRequest extends js.Object {
     */
   var directConnectGatewayId: DirectConnectGatewayId
   /**
-    * The ID of the virtual private gateway.
+    * The ID of the virtual private gateway or transit gateway.
     */
   var gatewayId: js.UndefOr[GatewayIdToAssociate] = js.undefined
   /**

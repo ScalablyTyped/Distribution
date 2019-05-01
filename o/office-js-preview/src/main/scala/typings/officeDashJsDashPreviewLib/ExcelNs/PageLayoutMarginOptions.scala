@@ -9,56 +9,49 @@ import scala.scalajs.js.annotation._
   *
   * Represents the options in page layout margins.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait PageLayoutMarginOptions extends js.Object {
   /**
     *
     * Represents the page layout bottom margin in the unit specified to use for printing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var bottom: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the page layout footer margin in the unit specified to use for printing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var footer: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the page layout header margin in the unit specified to use for printing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var header: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the page layout left margin in the unit specified to use for printing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the page layout right margin in the unit specified to use for printing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var right: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the page layout top margin in the unit specified to use for printing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[scala.Double] = js.undefined
 }

@@ -18,6 +18,6 @@ trait SchemaOptions extends js.Object {
   ] = js.native
   @JSName("validate")
   var validate_Original: Validate = js.native
-  def validate(request: hapiLib.hapiMod.Request, token: java.lang.String, h: hapiLib.hapiMod.ResponseToolkit): js.Promise[hapiDashAuthDashBearerDashTokenLib.ValidateReturn] | hapiDashAuthDashBearerDashTokenLib.ValidateReturn = js.native
+  def validate(request: hapiLib.hapiMod.Request, token: java.lang.String, h: hapiLib.hapiMod.ResponseToolkit): js.Promise[ValidateReturn] | ValidateReturn = js.native
 }
 

@@ -9,11 +9,26 @@ import scala.scalajs.js.annotation._
 trait WorksheetUpdateData extends js.Object {
   /**
     *
+    * Gets or sets the enableCalculation property of the worksheet.
+    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var enableCalculation: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * The display name of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    *
+    * Gets the PageLayout object of the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var pageLayout: js.UndefOr[PageLayoutUpdateData] = js.undefined
   /**
     *
     * The zero-based position of the worksheet within the workbook.
@@ -68,7 +83,9 @@ trait WorksheetUpdateData extends js.Object {
 object WorksheetUpdateData {
   @scala.inline
   def apply(
+    enableCalculation: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
+    pageLayout: PageLayoutUpdateData = null,
     position: scala.Int | scala.Double = null,
     showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
     showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,7 +94,9 @@ object WorksheetUpdateData {
     visibility: officeDashJsLib.ExcelNs.SheetVisibility | officeDashJsLib.officeDashJsLibStrings.Visible | officeDashJsLib.officeDashJsLibStrings.Hidden | officeDashJsLib.officeDashJsLibStrings.VeryHidden = null
   ): WorksheetUpdateData = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
     if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)

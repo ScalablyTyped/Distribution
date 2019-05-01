@@ -17,6 +17,13 @@ class RangeFormat ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
   /**
     *
+    * Indicates if text is automatically indented when text alignment is set to equal distribution.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var autoIndent: scala.Boolean = js.native
+  /**
+    *
     * Collection of border objects that apply to the overall range. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -55,6 +62,13 @@ class RangeFormat ()
   var horizontalAlignment: HorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.General | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Fill | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.CenterAcrossSelection | officeDashJsLib.officeDashJsLibStrings.Distributed = js.native
   /**
     *
+    * An integer from 0 to 250 that indicates the indent level.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var indentLevel: scala.Double = js.native
+  /**
+    *
     * Returns the format protection object for a range. Read-only.
     *
     * [Api set: ExcelApi 1.2]
@@ -62,11 +76,25 @@ class RangeFormat ()
   val protection: FormatProtection = js.native
   /**
     *
+    * The reading order for the range.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var readingOrder: ReadingOrder | officeDashJsLib.officeDashJsLibStrings.Context | officeDashJsLib.officeDashJsLibStrings.LeftToRight | officeDashJsLib.officeDashJsLibStrings.RightToLeft = js.native
+  /**
+    *
     * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
     *
     * [Api set: ExcelApi 1.2]
     */
   var rowHeight: scala.Double = js.native
+  /**
+    *
+    * Indicates if text automatically shrinks to fit in the available column width.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var shrinkToFit: scala.Boolean = js.native
   /**
     *
     * Gets or sets the text orientation of all the cells within the range.

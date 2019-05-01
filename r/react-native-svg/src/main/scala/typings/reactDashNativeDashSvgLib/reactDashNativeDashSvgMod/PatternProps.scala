@@ -6,31 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PatternProps extends js.Object {
-  var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var height: js.UndefOr[NumberProp] = js.undefined
   var id: java.lang.String
   var patternContentUnits: js.UndefOr[Units] = js.undefined
   var patternTransform: js.UndefOr[reactDashNativeDashSvgLib.ColumnMajorTransformMatrix | java.lang.String] = js.undefined
   var patternUnits: js.UndefOr[Units] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
-  var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var x: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var y: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var width: js.UndefOr[NumberProp] = js.undefined
+  var x: js.UndefOr[NumberProp] = js.undefined
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 
 object PatternProps {
   @scala.inline
   def apply(
     id: java.lang.String,
-    height: reactDashNativeDashSvgLib.NumberProp = null,
+    height: NumberProp = null,
     patternContentUnits: Units = null,
     patternTransform: reactDashNativeDashSvgLib.ColumnMajorTransformMatrix | java.lang.String = null,
     patternUnits: Units = null,
     preserveAspectRatio: java.lang.String = null,
     viewBox: java.lang.String = null,
-    width: reactDashNativeDashSvgLib.NumberProp = null,
-    x: reactDashNativeDashSvgLib.NumberProp = null,
-    y: reactDashNativeDashSvgLib.NumberProp = null
+    width: NumberProp = null,
+    x: NumberProp = null,
+    y: NumberProp = null
   ): PatternProps = {
     val __obj = js.Dynamic.literal(id = id)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

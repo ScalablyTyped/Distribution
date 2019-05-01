@@ -19,7 +19,7 @@ trait DBClusterMember extends js.Object {
     */
   var IsClusterWriter: js.UndefOr[Boolean] = js.undefined
   /**
-    * A value that specifies the order in which a Read Replica is promoted to the primary instance after a failure of the existing primary instance. 
+    * A value that specifies the order in which a Read Replica is promoted to the primary instance after a failure of the existing primary instance.
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
 }

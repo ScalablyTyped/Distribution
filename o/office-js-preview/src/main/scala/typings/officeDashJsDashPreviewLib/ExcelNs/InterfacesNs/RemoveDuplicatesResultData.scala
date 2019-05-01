@@ -11,16 +11,14 @@ trait RemoveDuplicatesResultData extends js.Object {
     *
     * Number of duplicated rows removed by the operation.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var removed: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Number of remaining unique rows present in the resulting range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var uniqueRemaining: js.UndefOr[scala.Double] = js.undefined
 }

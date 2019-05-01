@@ -46,8 +46,8 @@ object _TextViewProperties {
   def apply(
     alignment: tabrisLib.tabrisLibStrings.center | tabrisLib.tabrisLibStrings.left | tabrisLib.tabrisLibStrings.right,
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
-    baseline: Widget | tabrisLib.Selector,
+    backgroundImage: Image,
+    baseline: Widget | Selector,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,
     centerY: tabrisLib.offset,

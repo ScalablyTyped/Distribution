@@ -22,7 +22,7 @@ object defaultNs extends js.Object {
   def dataView(value: js.Any): /* is std.DataView */ scala.Boolean = js.native
   def date(value: js.Any): /* is std.Date */ scala.Boolean = js.native
   def directInstanceOf[T](instance: js.Any, klass: atSindresorhusIsLib.atSindresorhusIsMod.Class[T]): /* is T */ scala.Boolean = js.native
-  def domElement(value: js.Any): /* is @sindresorhus/is.DomElement */ scala.Boolean = js.native
+  def domElement(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.DomElement */ scala.Boolean = js.native
   def emptyArray(value: js.Any): scala.Boolean = js.native
   def emptyMap(value: js.Any): scala.Boolean = js.native
   def emptyObject(value: js.Any): scala.Boolean = js.native
@@ -48,7 +48,7 @@ object defaultNs extends js.Object {
   def map(value: js.Any): /* is std.Map<unknown, unknown> */ scala.Boolean = js.native
   def nan(value: js.Any): scala.Boolean = js.native
   def nativePromise(value: js.Any): /* is std.Promise<unknown> */ scala.Boolean = js.native
-  def nodeStream(value: js.Any): /* is @sindresorhus/is.NodeStream */ scala.Boolean = js.native
+  def nodeStream(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.NodeStream */ scala.Boolean = js.native
   def nonEmptyArray(value: js.Any): scala.Boolean = js.native
   def nonEmptyMap(value: js.Any): scala.Boolean = js.native
   def nonEmptyObject(value: js.Any): scala.Boolean = js.native
@@ -62,7 +62,7 @@ object defaultNs extends js.Object {
   def observable(value: js.Any): scala.Boolean = js.native
   def odd(value: scala.Double): scala.Boolean = js.native
   def plainObject(value: js.Any): scala.Boolean = js.native
-  def primitive(value: js.Any): /* is @sindresorhus/is.Primitive */ scala.Boolean = js.native
+  def primitive(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Primitive */ scala.Boolean = js.native
   def promise(value: js.Any): /* is std.Promise<unknown> */ scala.Boolean = js.native
   def regExp(value: js.Any): /* is std.RegExp */ scala.Boolean = js.native
   def safeInteger(value: js.Any): /* is number */ scala.Boolean = js.native
@@ -71,7 +71,7 @@ object defaultNs extends js.Object {
   def string(value: js.Any): /* is string */ scala.Boolean = js.native
   def symbol(value: js.Any): /* is std.Symbol */ scala.Boolean = js.native
   def truthy(value: js.Any): scala.Boolean = js.native
-  def typedArray(value: js.Any): /* is @sindresorhus/is.TypedArray */ scala.Boolean = js.native
+  def typedArray(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.TypedArray */ scala.Boolean = js.native
   def uint16Array(value: js.Any): /* is std.Uint16Array */ scala.Boolean = js.native
   def uint32Array(value: js.Any): /* is std.Uint32Array */ scala.Boolean = js.native
   def uint8Array(value: js.Any): /* is std.Uint8Array */ scala.Boolean = js.native

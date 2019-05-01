@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sendmail", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(options: Options): sendmailLib.SendMailFn = js.native
+  def apply(options: Options): SendMailFn = js.native
 }
 

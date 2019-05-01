@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait RangeCollectionLoadOptions extends js.Object {
   @JSName("$all")
@@ -150,8 +149,7 @@ trait RangeCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var linkedDataTypeState: js.UndefOr[scala.Boolean] = js.undefined
   /**

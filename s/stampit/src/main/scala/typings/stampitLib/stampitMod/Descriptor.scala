@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 /** The stamp Descriptor */
 @js.native
-trait Descriptor extends js.Object {
+trait Descriptor
+  extends Composable
+     with StampitComposable {
   /** A configuration object to be shallowly assigned to Stamps */
   var configuration: js.UndefOr[js.Object] = js.native
   /** A configuration object to be deeply merged to Stamps */
@@ -18,7 +20,7 @@ trait Descriptor extends js.Object {
     * Initialization function(s) which will be called per each newly created
     * instance.
     */
-  var initializers: js.UndefOr[js.Array[stampitLib.Init]] = js.native
+  var initializers: js.UndefOr[js.Array[Init]] = js.native
   /**
     * A hash containing methods (functions) of any future created instance.
     */
@@ -38,6 +40,6 @@ trait Descriptor extends js.Object {
   /** ES5 Property Descriptors applied to Stamps */
   var staticPropertyDescriptors: js.UndefOr[js.Object] = js.native
   /** Create a new stamp based on this descriptor */
-  def apply(composables: stampitLib.Composable*): Stamp = js.native
+  def apply(composables: Composable*): Stamp = js.native
 }
 

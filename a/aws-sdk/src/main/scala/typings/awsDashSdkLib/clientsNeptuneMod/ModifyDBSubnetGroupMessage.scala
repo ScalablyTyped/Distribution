@@ -11,7 +11,7 @@ trait ModifyDBSubnetGroupMessage extends js.Object {
     */
   var DBSubnetGroupDescription: js.UndefOr[String] = js.undefined
   /**
-    * The name for the DB subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
+    * The name for the DB subnet group. This value is stored as a lowercase string. You can't modify the default subnet group. Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
     */
   var DBSubnetGroupName: String
   /**

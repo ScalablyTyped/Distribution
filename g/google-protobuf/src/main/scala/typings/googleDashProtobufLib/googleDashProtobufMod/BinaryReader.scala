@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf", "BinaryReader")
 @js.native
 class BinaryReader () extends js.Object {
-  def this(bytes: googleDashProtobufLib.ByteSource) = this()
-  def this(bytes: googleDashProtobufLib.ByteSource, start: scala.Double) = this()
-  def this(bytes: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double) = this()
+  def this(bytes: ByteSource) = this()
+  def this(bytes: ByteSource, start: scala.Double) = this()
+  def this(bytes: ByteSource, start: scala.Double, length: scala.Double) = this()
   @JSName("readMessage")
-  var readMessage_Original: googleDashProtobufLib.BinaryRead = js.native
+  var readMessage_Original: BinaryRead = js.native
   def advance(count: scala.Double): scala.Unit = js.native
   def alloc(): BinaryReader = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource): BinaryReader = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource, start: scala.Double): BinaryReader = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double): BinaryReader = js.native
+  def alloc(bytes: ByteSource): BinaryReader = js.native
+  def alloc(bytes: ByteSource, start: scala.Double): BinaryReader = js.native
+  def alloc(bytes: ByteSource, start: scala.Double, length: scala.Double): BinaryReader = js.native
   def free(): scala.Unit = js.native
   def getBuffer(): stdLib.Uint8Array = js.native
   def getCursor(): scala.Double = js.native
@@ -28,7 +28,7 @@ class BinaryReader () extends js.Object {
   def getWireType(): googleDashProtobufLib.googleDashProtobufMod.BinaryConstantsNs.WireType = js.native
   def isEndGroup(): scala.Boolean = js.native
   def nextField(): scala.Boolean = js.native
-  def readAny(fieldType: googleDashProtobufLib.googleDashProtobufMod.BinaryConstantsNs.FieldType): googleDashProtobufLib.AnyFieldType = js.native
+  def readAny(fieldType: googleDashProtobufLib.googleDashProtobufMod.BinaryConstantsNs.FieldType): AnyFieldType = js.native
   def readBool(): scala.Boolean = js.native
   def readBytes(): stdLib.Uint8Array = js.native
   def readDouble(): scala.Double = js.native
@@ -38,12 +38,12 @@ class BinaryReader () extends js.Object {
   def readFixed64String(): java.lang.String = js.native
   def readFixedHash64(): java.lang.String = js.native
   def readFloat(): scala.Double = js.native
-  def readGroup(field: scala.Double, message: Message, reader: googleDashProtobufLib.BinaryReadReader): scala.Unit = js.native
+  def readGroup(field: scala.Double, message: Message, reader: BinaryReadReader): scala.Unit = js.native
   def readInt32(): scala.Double = js.native
   def readInt32String(): java.lang.String = js.native
   def readInt64(): scala.Double = js.native
   def readInt64String(): java.lang.String = js.native
-  def readMessage(msg: js.Any, reader: googleDashProtobufLib.BinaryReadReader): scala.Unit = js.native
+  def readMessage(msg: js.Any, reader: BinaryReadReader): scala.Unit = js.native
   def readPackedBool(): js.Array[scala.Boolean] = js.native
   def readPackedDouble(): js.Array[scala.Double] = js.native
   def readPackedEnum(): js.Array[scala.Double] = js.native
@@ -84,9 +84,9 @@ class BinaryReader () extends js.Object {
   def reset(): scala.Unit = js.native
   def runReadCallback(callbackName: java.lang.String): js.Any = js.native
   def setBlock(): scala.Unit = js.native
-  def setBlock(bytes: googleDashProtobufLib.ByteSource): scala.Unit = js.native
-  def setBlock(bytes: googleDashProtobufLib.ByteSource, start: scala.Double): scala.Unit = js.native
-  def setBlock(bytes: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double): scala.Unit = js.native
+  def setBlock(bytes: ByteSource): scala.Unit = js.native
+  def setBlock(bytes: ByteSource, start: scala.Double): scala.Unit = js.native
+  def setBlock(bytes: ByteSource, start: scala.Double, length: scala.Double): scala.Unit = js.native
   def skipDelimitedField(): scala.Unit = js.native
   def skipField(): scala.Unit = js.native
   def skipFixed32Field(): scala.Unit = js.native
@@ -102,8 +102,12 @@ class BinaryReader () extends js.Object {
 @js.native
 object BinaryReader extends js.Object {
   def alloc(): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource, start: scala.Double): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
-  def alloc(bytes: googleDashProtobufLib.ByteSource, start: scala.Double, length: scala.Double): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
+  def alloc(bytes: googleDashProtobufLib.googleDashProtobufMod.ByteSource): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
+  def alloc(bytes: googleDashProtobufLib.googleDashProtobufMod.ByteSource, start: scala.Double): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
+  def alloc(
+    bytes: googleDashProtobufLib.googleDashProtobufMod.ByteSource,
+    start: scala.Double,
+    length: scala.Double
+  ): googleDashProtobufLib.googleDashProtobufMod.BinaryReader = js.native
 }
 

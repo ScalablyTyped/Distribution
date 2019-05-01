@@ -11,8 +11,7 @@ trait RangeFormatUpdateData extends js.Object {
     *
     * Indicates if text is automatically indented when text alignment is set to equal distribution.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoIndent: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -56,8 +55,7 @@ trait RangeFormatUpdateData extends js.Object {
     *
     * An integer from 0 to 250 that indicates the indent level.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var indentLevel: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -71,8 +69,7 @@ trait RangeFormatUpdateData extends js.Object {
     *
     * The reading order for the range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var readingOrder: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Context | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft
@@ -88,8 +85,7 @@ trait RangeFormatUpdateData extends js.Object {
     *
     * Indicates if text automatically shrinks to fit in the available column width.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined
   /**

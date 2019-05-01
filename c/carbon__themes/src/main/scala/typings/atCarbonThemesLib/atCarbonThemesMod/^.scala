@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@carbon/themes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: atCarbonThemesLib.ThemePackage = js.native
+  val default: ThemePackage = js.native
 }
 

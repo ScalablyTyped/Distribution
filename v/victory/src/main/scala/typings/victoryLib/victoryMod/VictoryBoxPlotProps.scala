@@ -68,12 +68,6 @@ trait VictoryBoxPlotProps
     */
   var events: js.UndefOr[js.Array[EventPropTypeInterface[java.lang.String, StringOrNumberOrCallback]]] = js.undefined
   /**
-    * The horizontal prop determines whether the bars will be laid vertically or
-    * horizontally. The bars will be vertical if this prop is false or unspecified,
-    * or horizontal if the prop is set to true.
-    */
-  var horizontal: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * The labelOrientation prop determines where labels are placed relative to their
     * corresponding data. If this prop is not set, it will be set to “top” for
     * horizontal charts, and “right” for vertical charts.

@@ -11,16 +11,14 @@ trait TextRangeData extends js.Object {
     *
     * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[ShapeFontData] = js.undefined
   /**
     *
     * Represents the plain text content of the text range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var text: js.UndefOr[java.lang.String] = js.undefined
 }

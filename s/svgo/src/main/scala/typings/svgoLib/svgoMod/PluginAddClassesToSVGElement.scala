@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginAddClassesToSVGElement extends js.Object {
+trait PluginAddClassesToSVGElement extends PluginConfig {
   var addClassesToSVGElement: scala.Boolean | js.Object
 }
 

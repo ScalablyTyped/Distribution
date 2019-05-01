@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
   - FunctionExpression
   - ArrowFunctionExpression
 */
-trait Function extends _Node
+trait Function extends Node
 

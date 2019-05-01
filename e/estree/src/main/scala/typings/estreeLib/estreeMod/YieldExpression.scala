@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait YieldExpression extends BaseNode {
-  var argument: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+trait YieldExpression
+  extends BaseNode
+     with Expression {
+  var argument: js.UndefOr[Expression | scala.Null] = js.undefined
   var delegate: scala.Boolean
   @JSName("type")
   var type_YieldExpression: estreeLib.estreeLibStrings.YieldExpression
@@ -17,7 +19,7 @@ object YieldExpression {
   def apply(
     delegate: scala.Boolean,
     `type`: estreeLib.estreeLibStrings.YieldExpression,
-    argument: estreeLib.Expression = null,
+    argument: Expression = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PageBreakCollection")
 @js.native
@@ -23,8 +22,7 @@ class PageBreakCollection ()
     *
     * Adds a page break before the top-left cell of the range specified.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param pageBreakRange The range immediately after the page break to be added.
     */
@@ -33,16 +31,14 @@ class PageBreakCollection ()
     *
     * Gets the number of page breaks in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
     *
     * Gets a page break object via the index.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param index Index of the page break.
     */
@@ -73,8 +69,7 @@ class PageBreakCollection ()
     *
     * Resets all manual page breaks in the collection.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def removePageBreaks(): scala.Unit = js.native
   /**

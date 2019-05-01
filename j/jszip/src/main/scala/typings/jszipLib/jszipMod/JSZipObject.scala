@@ -25,13 +25,13 @@ trait JSZipObject extends js.Object {
   def async[T /* <: OutputType */](`type`: T): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
-  def async[T /* <: OutputType */](`type`: T, onUpdate: jszipLib.OnUpdateCallback): js.Promise[
+  def async[T /* <: OutputType */](`type`: T, onUpdate: OnUpdateCallback): js.Promise[
     /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
   ] = js.native
   def nodeStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("nodeStream")
   def nodeStream_nodestream(`type`: jszipLib.jszipLibStrings.nodestream): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("nodeStream")
-  def nodeStream_nodestream(`type`: jszipLib.jszipLibStrings.nodestream, onUpdate: jszipLib.OnUpdateCallback): nodeLib.NodeJSNs.ReadableStream = js.native
+  def nodeStream_nodestream(`type`: jszipLib.jszipLibStrings.nodestream, onUpdate: OnUpdateCallback): nodeLib.NodeJSNs.ReadableStream = js.native
 }
 

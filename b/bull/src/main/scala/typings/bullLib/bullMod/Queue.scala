@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Queue[T]
   extends nodeLib.eventsMod.EventEmitter {
+   // tslint:disable-line unified-signatures
+  /**
+    * Array of Redis clients the queue uses
+    */
+  var clients: js.Array[ioredisLib.ioredisMod.Redis] = js.native
   /**
     * The name of the queue
     */

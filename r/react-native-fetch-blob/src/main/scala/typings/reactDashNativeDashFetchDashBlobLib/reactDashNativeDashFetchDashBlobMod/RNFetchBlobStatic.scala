@@ -16,14 +16,14 @@ trait RNFetchBlobStatic extends js.Object {
   var net: Net = js.native
   var polyfill: Polyfill = js.native
   def config(options: RNFetchBlobConfig): RNFetchBlobStatic = js.native
-  def fetch(method: reactDashNativeDashFetchDashBlobLib.Methods, url: java.lang.String): StatefulPromise[FetchBlobResponse] = js.native
+  def fetch(method: Methods, url: java.lang.String): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(
-    method: reactDashNativeDashFetchDashBlobLib.Methods,
+    method: Methods,
     url: java.lang.String,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): StatefulPromise[FetchBlobResponse] = js.native
   def fetch(
-    method: reactDashNativeDashFetchDashBlobLib.Methods,
+    method: Methods,
     url: java.lang.String,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     body: js.Any

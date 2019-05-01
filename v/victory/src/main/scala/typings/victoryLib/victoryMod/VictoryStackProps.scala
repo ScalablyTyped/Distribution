@@ -97,12 +97,6 @@ trait VictoryStackProps
     ]
   ] = js.undefined
   /**
-    * The horizontal prop determines whether the bars will be laid vertically or
-    * horizontally. The bars will be vertical if this prop is false or unspecified,
-    * or horizontal if the prop is set to true.
-    */
-  var horizontal: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * The style prop specifies styles for your grouped chart. These styles will be
     * applied to all grouped children
     */

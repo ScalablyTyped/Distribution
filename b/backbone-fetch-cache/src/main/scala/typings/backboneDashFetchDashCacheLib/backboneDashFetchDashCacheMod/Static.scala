@@ -26,8 +26,8 @@ trait Static extends js.Object {
     * checked before the url property.
     */
   def clearItem(args: js.Any*): js.Any = js.native
-  def getCache(key: backboneDashFetchDashCacheLib.GetCacheKeyOptions): Cache = js.native
-  def getCache(key: backboneDashFetchDashCacheLib.GetCacheKeyOptions, opts: GetCacheOptions): Cache = js.native
+  def getCache(key: GetCacheKeyOptions): Cache = js.native
+  def getCache(key: GetCacheKeyOptions, opts: GetCacheOptions): Cache = js.native
   /**
     * You can explicitly fetch a cached item, without having to call the
     * models/collection fetch. This might be useful for debugging and
@@ -35,12 +35,12 @@ trait Static extends js.Object {
     */
   def getCache(key: js.Function0[java.lang.String]): Cache = js.native
   def getCache(key: js.Function0[java.lang.String], opts: GetCacheOptions): Cache = js.native
-  def getCacheKey(key: backboneDashFetchDashCacheLib.GetCacheKeyOptions): java.lang.String = js.native
-  def getCacheKey(key: backboneDashFetchDashCacheLib.GetCacheKeyOptions, opts: GetCacheOptions): java.lang.String = js.native
+  def getCacheKey(key: GetCacheKeyOptions): java.lang.String = js.native
+  def getCacheKey(key: GetCacheKeyOptions, opts: GetCacheOptions): java.lang.String = js.native
   def getCacheKey(key: js.Function0[java.lang.String]): java.lang.String = js.native
   def getCacheKey(key: js.Function0[java.lang.String], opts: GetCacheOptions): java.lang.String = js.native
-  def getLastSync(key: backboneDashFetchDashCacheLib.GetCacheKeyOptions): scala.Double = js.native
-  def getLastSync(key: backboneDashFetchDashCacheLib.GetCacheKeyOptions, opts: GetCacheOptions): scala.Double = js.native
+  def getLastSync(key: GetCacheKeyOptions): scala.Double = js.native
+  def getLastSync(key: GetCacheKeyOptions, opts: GetCacheOptions): scala.Double = js.native
   /**
     * If you want to know when was the last (server) sync of a given key, you can use.
     */
@@ -58,9 +58,9 @@ trait Static extends js.Object {
     */
   def priorityFn(a: Cache, b: Cache): scala.Double = js.native
   def reset(): scala.Unit = js.native
-  def setCache(instance: backboneDashFetchDashCacheLib.GetCacheKeyOptions): scala.Unit = js.native
-  def setCache(instance: backboneDashFetchDashCacheLib.GetCacheKeyOptions, opts: SetCacheOptions): scala.Unit = js.native
-  def setCache(instance: backboneDashFetchDashCacheLib.GetCacheKeyOptions, opts: SetCacheOptions, attrs: js.Any): scala.Unit = js.native
+  def setCache(instance: GetCacheKeyOptions): scala.Unit = js.native
+  def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions): scala.Unit = js.native
+  def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions, attrs: js.Any): scala.Unit = js.native
   def setCache(instance: js.Function0[java.lang.String]): scala.Unit = js.native
   def setCache(instance: js.Function0[java.lang.String], opts: SetCacheOptions): scala.Unit = js.native
   def setCache(instance: js.Function0[java.lang.String], opts: SetCacheOptions, attrs: js.Any): scala.Unit = js.native

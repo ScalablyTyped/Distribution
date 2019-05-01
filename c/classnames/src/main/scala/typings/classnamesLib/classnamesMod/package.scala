@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object classnamesMod {
-  // This is the only way I found to break circular references between ClassArray and ClassValue
-  // https://github.com/Microsoft/TypeScript/issues/3496#issuecomment-128553540
-  type ClassArray = js.Array[classnamesLib.ClassValue]
   type ClassDictionary = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type ClassNamesExport = ClassNamesFn with classnamesLib.Anon_Default
+  // tslint:disable-line no-empty-interface
+  type ClassNamesFn = js.Function1[/* repeated */ ClassValue, java.lang.String]
+  type ClassValue = js.UndefOr[
+    java.lang.String | scala.Double | ClassDictionary | ClassArray | scala.Null | scala.Boolean
+  ]
 }

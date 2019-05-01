@@ -17,6 +17,13 @@ class Table ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
   /**
     *
+    * Represents the AutoFilter object of the table. Read-Only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val autoFilter: AutoFilter = js.native
+  /**
+    *
     * Represents a collection of all the columns in the table. Read-only.
     *
     * [Api set: ExcelApi 1.1]

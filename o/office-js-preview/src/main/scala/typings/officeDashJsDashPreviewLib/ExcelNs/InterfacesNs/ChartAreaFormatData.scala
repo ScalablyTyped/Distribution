@@ -18,8 +18,7 @@ trait ChartAreaFormatData extends js.Object {
     *
     * Returns or sets an integer that represents the color scheme for the chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var colorScheme: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartColorScheme | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColorfulPalette1 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColorfulPalette2 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColorfulPalette3 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColorfulPalette4 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette1 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette2 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette3 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette4 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette5 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette6 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette7 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette8 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette9 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette10 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette11 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette12 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MonochromaticPalette13
@@ -35,8 +34,7 @@ trait ChartAreaFormatData extends js.Object {
     *
     * True if the chart area of the chart has rounded corners. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var roundedCorners: js.UndefOr[scala.Boolean] = js.undefined
 }

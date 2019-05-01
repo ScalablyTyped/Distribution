@@ -582,6 +582,24 @@ object ^ extends js.Object {
     width: scala.Double,
     height: scala.Double
   ): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusOutlineStyle(theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusOutlineStyle(theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme, inset: scala.Double): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusOutlineStyle(
+    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
+    inset: scala.Double,
+    width: scala.Double
+  ): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusOutlineStyle(
+    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
+    inset: scala.Double,
+    width: scala.Double,
+    color: java.lang.String
+  ): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusStyle(theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusStyle(
+    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
+    options: atUifabricStylingLib.libInterfacesIGetFocusStylesMod.IGetFocusStylesOptions
+  ): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   @JSName("getFocusStyle")
   def getFocusStyle_absolute(
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,

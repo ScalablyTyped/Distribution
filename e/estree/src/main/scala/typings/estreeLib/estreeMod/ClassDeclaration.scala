@@ -24,7 +24,7 @@ object ClassDeclaration {
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,
-    superClass: estreeLib.Expression = null,
+    superClass: Expression = null,
     trailingComments: js.Array[Comment] = null
   ): ClassDeclaration = {
     val __obj = js.Dynamic.literal(body = body)

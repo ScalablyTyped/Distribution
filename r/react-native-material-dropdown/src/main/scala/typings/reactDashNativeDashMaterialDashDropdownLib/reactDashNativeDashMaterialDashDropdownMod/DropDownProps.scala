@@ -124,7 +124,7 @@ object DropDownProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: reactDashNativeLib.reactDashNativeMod.AccessibilityRole = null,
     accessibilityStates: js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: reactDashNativeLib.reactDashNativeMod.AccessibilityTrait | js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     animationDuration: scala.Int | scala.Double = null,
     baseColor: java.lang.String = null,

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 // Configurations
 //
 trait ColumnInfo extends js.Object {
-  var defaultValue: knexLib.Value
+  var defaultValue: Value
   var maxLength: scala.Double
   var nullable: scala.Boolean
   var `type`: java.lang.String
@@ -17,12 +17,7 @@ trait ColumnInfo extends js.Object {
 
 object ColumnInfo {
   @scala.inline
-  def apply(
-    defaultValue: knexLib.Value,
-    maxLength: scala.Double,
-    nullable: scala.Boolean,
-    `type`: java.lang.String
-  ): ColumnInfo = {
+  def apply(defaultValue: Value, maxLength: scala.Double, nullable: scala.Boolean, `type`: java.lang.String): ColumnInfo = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], maxLength = maxLength, nullable = nullable)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ColumnInfo]

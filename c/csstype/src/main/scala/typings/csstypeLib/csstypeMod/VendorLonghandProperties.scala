@@ -11,7 +11,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var MozAnimationDelay: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var MozAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -23,7 +23,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var MozAnimationDuration: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var MozAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -197,7 +197,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var MozForceBrokenImageIcon: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
     *
@@ -311,13 +311,13 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var MozTransitionDelay: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var MozTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
     * **Initial value**: `0s`
     */
-  var MozTransitionDuration: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var MozTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -413,7 +413,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var WebkitAnimationDelay: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var WebkitAnimationDelay: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -425,7 +425,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var WebkitAnimationDuration: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var WebkitAnimationDuration: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -629,13 +629,13 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var WebkitFlexGrow: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var WebkitFlexGrow: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
     *
     * **Initial value**: `1`
     */
-  var WebkitFlexShrink: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var WebkitFlexShrink: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
     *
@@ -773,7 +773,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var WebkitOrder: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var WebkitOrder: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The `-webkit-overflow-scrolling` CSS property controls whether or not touch devices use momentum-based scrolling for a given element.
     *
@@ -863,7 +863,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `over right`
     */
-  var WebkitTextEmphasisPosition: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var WebkitTextEmphasisPosition: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
     *
@@ -929,13 +929,13 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     */
-  var WebkitTransitionDelay: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var WebkitTransitionDelay: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
     * **Initial value**: `0s`
     */
-  var WebkitTransitionDuration: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var WebkitTransitionDuration: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -991,19 +991,19 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `400%`
     */
-  var msContentZoomLimitMax: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var msContentZoomLimitMax: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-content-zoom-limit-min`** CSS property is a Microsoft extension that specifies the minimum zoom factor.
     *
     * **Initial value**: `100%`
     */
-  var msContentZoomLimitMin: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var msContentZoomLimitMin: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-content-zoom-snap-points`** CSS property is a Microsoft extension that specifies where zoom snap-points are located.
     *
     * **Initial value**: `snapInterval(0%, 100%)`
     */
-  var msContentZoomSnapPoints: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var msContentZoomSnapPoints: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-content-zoom-snap-type`** CSS property is a Microsoft extension that specifies how zooming is affected by defined snap-points.
     *
@@ -1021,7 +1021,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: "" (the empty string)
     */
-  var msFilter: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var msFilter: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
     *
@@ -1033,7 +1033,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var msFlexPositive: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var msFlexPositive: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`-ms-flow-from`** CSS property is a Microsoft extension that gets or sets a value identifying a region container in the document that accepts the content flow from the data source.
     *
@@ -1105,7 +1105,7 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     */
-  var msOrder: js.UndefOr[csstypeLib.GlobalsNumber] = js.undefined
+  var msOrder: js.UndefOr[GlobalsNumber] = js.undefined
   /**
     * The **`-ms-overflow-style`** CSS property is a Microsoft extension controlling the behavior of scrollbars when the content of an element overflows.
     *
@@ -1165,13 +1165,13 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `snapInterval(0px, 100%)`
     */
-  var msScrollSnapPointsX: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var msScrollSnapPointsX: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`-ms-scroll-snap-points-y`** CSS property is a Microsoft extension that specifies where snap-points will be located along the y-axis.
     *
     * **Initial value**: `snapInterval(0px, 100%)`
     */
-  var msScrollSnapPointsY: js.UndefOr[csstypeLib.GlobalsString] = js.undefined
+  var msScrollSnapPointsY: js.UndefOr[GlobalsString] = js.undefined
   /**
     * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
     *
@@ -1273,9 +1273,9 @@ trait VendorLonghandProperties[TLength] extends js.Object {
 object VendorLonghandProperties {
   @scala.inline
   def apply[TLength](
-    MozAnimationDelay: csstypeLib.GlobalsString = null,
+    MozAnimationDelay: GlobalsString = null,
     MozAnimationDirection: AnimationDirectionProperty = null,
-    MozAnimationDuration: csstypeLib.GlobalsString = null,
+    MozAnimationDuration: GlobalsString = null,
     MozAnimationFillMode: AnimationFillModeProperty = null,
     MozAnimationIterationCount: AnimationIterationCountProperty = null,
     MozAnimationName: AnimationNameProperty = null,
@@ -1304,7 +1304,7 @@ object VendorLonghandProperties {
     MozFloatEdge: MozFloatEdgeProperty = null,
     MozFontFeatureSettings: FontFeatureSettingsProperty = null,
     MozFontLanguageOverride: FontLanguageOverrideProperty = null,
-    MozForceBrokenImageIcon: csstypeLib.GlobalsNumber = null,
+    MozForceBrokenImageIcon: GlobalsNumber = null,
     MozHyphens: HyphensProperty = null,
     MozImageRegion: MozImageRegionProperty = null,
     MozMarginEnd: MarginInlineEndProperty[TLength] = null,
@@ -1323,8 +1323,8 @@ object VendorLonghandProperties {
     MozTextSizeAdjust: TextSizeAdjustProperty = null,
     MozTransformOrigin: TransformOriginProperty[TLength] = null,
     MozTransformStyle: TransformStyleProperty = null,
-    MozTransitionDelay: csstypeLib.GlobalsString = null,
-    MozTransitionDuration: csstypeLib.GlobalsString = null,
+    MozTransitionDelay: GlobalsString = null,
+    MozTransitionDuration: GlobalsString = null,
     MozTransitionProperty: TransitionPropertyProperty = null,
     MozTransitionTimingFunction: TransitionTimingFunctionProperty = null,
     MozUserFocus: MozUserFocusProperty = null,
@@ -1340,9 +1340,9 @@ object VendorLonghandProperties {
     WebkitAlignContent: AlignContentProperty = null,
     WebkitAlignItems: AlignItemsProperty = null,
     WebkitAlignSelf: AlignSelfProperty = null,
-    WebkitAnimationDelay: csstypeLib.GlobalsString = null,
+    WebkitAnimationDelay: GlobalsString = null,
     WebkitAnimationDirection: AnimationDirectionProperty = null,
-    WebkitAnimationDuration: csstypeLib.GlobalsString = null,
+    WebkitAnimationDuration: GlobalsString = null,
     WebkitAnimationFillMode: AnimationFillModeProperty = null,
     WebkitAnimationIterationCount: AnimationIterationCountProperty = null,
     WebkitAnimationName: AnimationNameProperty = null,
@@ -1378,8 +1378,8 @@ object VendorLonghandProperties {
     WebkitFilter: FilterProperty = null,
     WebkitFlexBasis: FlexBasisProperty[TLength] = null,
     WebkitFlexDirection: FlexDirectionProperty = null,
-    WebkitFlexGrow: csstypeLib.GlobalsNumber = null,
-    WebkitFlexShrink: csstypeLib.GlobalsNumber = null,
+    WebkitFlexGrow: GlobalsNumber = null,
+    WebkitFlexShrink: GlobalsNumber = null,
     WebkitFlexWrap: FlexWrapProperty = null,
     WebkitFontFeatureSettings: FontFeatureSettingsProperty = null,
     WebkitFontKerning: FontKerningProperty = null,
@@ -1402,7 +1402,7 @@ object VendorLonghandProperties {
     WebkitMaskRepeatY: WebkitMaskRepeatYProperty = null,
     WebkitMaskSize: WebkitMaskSizeProperty[TLength] = null,
     WebkitMaxInlineSize: MaxInlineSizeProperty[TLength] = null,
-    WebkitOrder: csstypeLib.GlobalsNumber = null,
+    WebkitOrder: GlobalsNumber = null,
     WebkitOverflowScrolling: WebkitOverflowScrollingProperty = null,
     WebkitPaddingEnd: PaddingInlineEndProperty[TLength] = null,
     WebkitPaddingStart: PaddingInlineStartProperty[TLength] = null,
@@ -1417,7 +1417,7 @@ object VendorLonghandProperties {
     WebkitTextDecorationSkip: TextDecorationSkipProperty = null,
     WebkitTextDecorationStyle: TextDecorationStyleProperty = null,
     WebkitTextEmphasisColor: TextEmphasisColorProperty = null,
-    WebkitTextEmphasisPosition: csstypeLib.GlobalsString = null,
+    WebkitTextEmphasisPosition: GlobalsString = null,
     WebkitTextEmphasisStyle: TextEmphasisStyleProperty = null,
     WebkitTextFillColor: WebkitTextFillColorProperty = null,
     WebkitTextOrientation: TextOrientationProperty = null,
@@ -1428,8 +1428,8 @@ object VendorLonghandProperties {
     WebkitTransform: TransformProperty = null,
     WebkitTransformOrigin: TransformOriginProperty[TLength] = null,
     WebkitTransformStyle: TransformStyleProperty = null,
-    WebkitTransitionDelay: csstypeLib.GlobalsString = null,
-    WebkitTransitionDuration: csstypeLib.GlobalsString = null,
+    WebkitTransitionDelay: GlobalsString = null,
+    WebkitTransitionDuration: GlobalsString = null,
     WebkitTransitionProperty: TransitionPropertyProperty = null,
     WebkitTransitionTimingFunction: TransitionTimingFunctionProperty = null,
     WebkitUserModify: WebkitUserModifyProperty = null,
@@ -1439,14 +1439,14 @@ object VendorLonghandProperties {
     msAlignSelf: AlignSelfProperty = null,
     msBlockProgression: MsBlockProgressionProperty = null,
     msContentZoomChaining: MsContentZoomChainingProperty = null,
-    msContentZoomLimitMax: csstypeLib.GlobalsString = null,
-    msContentZoomLimitMin: csstypeLib.GlobalsString = null,
-    msContentZoomSnapPoints: csstypeLib.GlobalsString = null,
+    msContentZoomLimitMax: GlobalsString = null,
+    msContentZoomLimitMin: GlobalsString = null,
+    msContentZoomSnapPoints: GlobalsString = null,
     msContentZoomSnapType: MsContentZoomSnapTypeProperty = null,
     msContentZooming: MsContentZoomingProperty = null,
-    msFilter: csstypeLib.GlobalsString = null,
+    msFilter: GlobalsString = null,
     msFlexDirection: FlexDirectionProperty = null,
-    msFlexPositive: csstypeLib.GlobalsNumber = null,
+    msFlexPositive: GlobalsNumber = null,
     msFlowFrom: MsFlowFromProperty = null,
     msFlowInto: MsFlowIntoProperty = null,
     msGridColumns: GridAutoColumnsProperty[TLength] = null,
@@ -1458,7 +1458,7 @@ object VendorLonghandProperties {
     msHyphens: HyphensProperty = null,
     msImeAlign: MsImeAlignProperty = null,
     msLineBreak: LineBreakProperty = null,
-    msOrder: csstypeLib.GlobalsNumber = null,
+    msOrder: GlobalsNumber = null,
     msOverflowStyle: MsOverflowStyleProperty = null,
     msOverflowX: OverflowXProperty = null,
     msOverflowY: OverflowYProperty = null,
@@ -1468,8 +1468,8 @@ object VendorLonghandProperties {
     msScrollLimitYMax: MsScrollLimitYMaxProperty[TLength] = null,
     msScrollLimitYMin: MsScrollLimitYMinProperty[TLength] = null,
     msScrollRails: MsScrollRailsProperty = null,
-    msScrollSnapPointsX: csstypeLib.GlobalsString = null,
-    msScrollSnapPointsY: csstypeLib.GlobalsString = null,
+    msScrollSnapPointsX: GlobalsString = null,
+    msScrollSnapPointsY: GlobalsString = null,
     msScrollSnapType: MsScrollSnapTypeProperty = null,
     msScrollTranslation: MsScrollTranslationProperty = null,
     msTextAutospace: MsTextAutospaceProperty = null,

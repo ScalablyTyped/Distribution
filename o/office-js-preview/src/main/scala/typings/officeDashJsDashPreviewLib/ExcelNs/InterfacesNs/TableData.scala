@@ -11,8 +11,7 @@ trait TableData extends js.Object {
     *
     * Represents the AutoFilter object of the table. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   /**

@@ -19,7 +19,7 @@ class Drawer protected () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Drawer: tabrisLib.DrawerProperties = js.native
+  val tsProperties_Drawer: DrawerProperties = js.native
   /**
     * Controls how the drawer integrates into its targetView. 
     * - `overlay` completely hides the drawer when closed and overlays other content when opened.

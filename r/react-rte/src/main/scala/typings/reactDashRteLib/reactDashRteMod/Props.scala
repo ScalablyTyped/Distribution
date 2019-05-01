@@ -14,7 +14,7 @@ trait Props extends js.Object {
     ]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var customControls: js.UndefOr[js.Array[reactDashRteLib.CustomControl]] = js.undefined
+  var customControls: js.UndefOr[js.Array[CustomControl]] = js.undefined
   var customStyleMap: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
   ] = js.undefined
@@ -23,7 +23,7 @@ trait Props extends js.Object {
   var editorStyle: js.UndefOr[js.Object] = js.undefined
   var handleReturn: js.UndefOr[js.Function1[/* event */ js.Object, scala.Boolean]] = js.undefined
   var keyBindingFn: js.UndefOr[js.Function1[/* event */ js.Object, js.UndefOr[java.lang.String]]] = js.undefined
-  var onChange: js.UndefOr[reactDashRteLib.ChangeHandler] = js.undefined
+  var onChange: js.UndefOr[ChangeHandler] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var rootStyle: js.UndefOr[js.Object] = js.undefined
@@ -41,14 +41,14 @@ object Props {
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     blockStyleFn: /* block */ draftDashJsLib.draftDashJsMod.ContentBlock => js.UndefOr[java.lang.String] = null,
     className: java.lang.String = null,
-    customControls: js.Array[reactDashRteLib.CustomControl] = null,
+    customControls: js.Array[CustomControl] = null,
     customStyleMap: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     editorClassName: java.lang.String = null,
     editorStyle: js.Object = null,
     handleReturn: /* event */ js.Object => scala.Boolean = null,
     keyBindingFn: /* event */ js.Object => js.UndefOr[java.lang.String] = null,
-    onChange: reactDashRteLib.ChangeHandler = null,
+    onChange: ChangeHandler = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     rootStyle: js.Object = null,

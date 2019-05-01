@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-lazyload"
-version := "1.9-dt-20190212Z-dd374a"
+version := "1.9-dt-20190212Z-e70a4a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

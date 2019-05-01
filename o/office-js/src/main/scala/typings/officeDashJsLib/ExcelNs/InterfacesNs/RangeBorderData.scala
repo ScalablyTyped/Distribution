@@ -34,6 +34,14 @@ trait RangeBorderData extends js.Object {
   ] = js.undefined
   /**
     *
+    * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A null value indicates that the border doesn't have uniform tintAndShade setting.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var tintAndShade: js.UndefOr[scala.Double] = js.undefined
+  /**
+    *
     * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
     *
     * [Api set: ExcelApi 1.1]
@@ -49,12 +57,14 @@ object RangeBorderData {
     color: java.lang.String = null,
     sideIndex: officeDashJsLib.ExcelNs.BorderIndex | officeDashJsLib.officeDashJsLibStrings.EdgeTop | officeDashJsLib.officeDashJsLibStrings.EdgeBottom | officeDashJsLib.officeDashJsLibStrings.EdgeLeft | officeDashJsLib.officeDashJsLibStrings.EdgeRight | officeDashJsLib.officeDashJsLibStrings.InsideVertical | officeDashJsLib.officeDashJsLibStrings.InsideHorizontal | officeDashJsLib.officeDashJsLibStrings.DiagonalDown | officeDashJsLib.officeDashJsLibStrings.DiagonalUp = null,
     style: officeDashJsLib.ExcelNs.BorderLineStyle | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Continuous | officeDashJsLib.officeDashJsLibStrings.Dash | officeDashJsLib.officeDashJsLibStrings.DashDot | officeDashJsLib.officeDashJsLibStrings.DashDotDot | officeDashJsLib.officeDashJsLibStrings.Dot | officeDashJsLib.officeDashJsLibStrings.Double | officeDashJsLib.officeDashJsLibStrings.SlantDashDot = null,
+    tintAndShade: scala.Int | scala.Double = null,
     weight: officeDashJsLib.ExcelNs.BorderWeight | officeDashJsLib.officeDashJsLibStrings.Hairline | officeDashJsLib.officeDashJsLibStrings.Thin | officeDashJsLib.officeDashJsLibStrings.Medium | officeDashJsLib.officeDashJsLibStrings.Thick = null
   ): RangeBorderData = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
     if (sideIndex != null) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeBorderData]
   }

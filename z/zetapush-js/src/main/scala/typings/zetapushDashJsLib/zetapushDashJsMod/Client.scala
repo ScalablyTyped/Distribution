@@ -31,7 +31,7 @@ class Client protected () extends js.Object {
   def onNoServerUrlAvailable(handler: js.Function0[scala.Unit]): zetapushDashJsLib.ConnectionStatusHandler = js.native
   def onSuccessfulHandshake(handler: js.Function1[/* authentication */ js.Any, scala.Unit]): zetapushDashJsLib.ConnectionStatusHandler = js.native
   def removeConnectionStatusListener(listener: zetapushDashJsLib.ConnectionStatusHandler): scala.Unit = js.native
-  def setAuthentication(authentication: zetapushDashJsLib.AuthenticationCallback): scala.Unit = js.native
+  def setAuthentication(authentication: AuthenticationCallback): scala.Unit = js.native
   def setLogLevel(level: java.lang.String): scala.Unit = js.native
   def setResource(resource: java.lang.String): scala.Unit = js.native
   def unsubscribe(service: Service): scala.Unit = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveAttrs extends js.Object {
+trait PluginRemoveAttrs extends PluginConfig {
   var removeAttrs: scala.Boolean | js.Object
 }
 

@@ -11,7 +11,7 @@ trait ColorSupportOptions extends js.Object {
   var ignoreCI: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreDumb: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreTTY: js.UndefOr[scala.Boolean] = js.undefined
-  var level: js.UndefOr[colorDashSupportLib.ColorSupportLevel] = js.undefined
+  var level: js.UndefOr[ColorSupportLevel] = js.undefined
   var stream: js.UndefOr[nodeLib.NodeJSNs.WriteStream] = js.undefined
   var term: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -24,7 +24,7 @@ object ColorSupportOptions {
     ignoreCI: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreDumb: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreTTY: js.UndefOr[scala.Boolean] = js.undefined,
-    level: colorDashSupportLib.ColorSupportLevel = null,
+    level: ColorSupportLevel = null,
     stream: nodeLib.NodeJSNs.WriteStream = null,
     term: java.lang.String = null
   ): ColorSupportOptions = {

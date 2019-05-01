@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Encapsulates the properties for Map chart.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait ChartMapOptionsLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,24 +18,21 @@ trait ChartMapOptionsLoadOptions extends js.Object {
     *
     * Returns or sets series map labels strategy of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns or sets series map area of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var level: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns or sets series projection type of a region map chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var projectionType: js.UndefOr[scala.Boolean] = js.undefined
 }

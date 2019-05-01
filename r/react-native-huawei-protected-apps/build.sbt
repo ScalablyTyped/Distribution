@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-huawei-protected-apps"
-version := "0.0-dt-20181011Z-dda9f6"
+version := "0.0-dt-20181011Z-23f0f9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

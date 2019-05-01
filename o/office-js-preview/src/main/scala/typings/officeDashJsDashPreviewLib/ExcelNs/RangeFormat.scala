@@ -19,8 +19,7 @@ class RangeFormat ()
     *
     * Indicates if text is automatically indented when text alignment is set to equal distribution.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoIndent: scala.Boolean = js.native
   /**
@@ -65,8 +64,7 @@ class RangeFormat ()
     *
     * An integer from 0 to 250 that indicates the indent level.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var indentLevel: scala.Double = js.native
   /**
@@ -80,8 +78,7 @@ class RangeFormat ()
     *
     * The reading order for the range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var readingOrder: ReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Context | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft = js.native
   /**
@@ -95,8 +92,7 @@ class RangeFormat ()
     *
     * Indicates if text automatically shrinks to fit in the available column width.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: scala.Boolean = js.native
   /**

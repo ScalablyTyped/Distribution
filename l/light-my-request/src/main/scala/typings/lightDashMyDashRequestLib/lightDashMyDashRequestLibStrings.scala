@@ -7,46 +7,60 @@ import scala.scalajs.js.annotation._
 
 object lightDashMyDashRequestLibStrings {
   @js.native
-  sealed trait DELETE extends HTTPMethods
+  sealed trait DELETE
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait GET extends HTTPMethods
+  sealed trait GET
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait HEAD extends HTTPMethods
+  sealed trait HEAD
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait OPTIONS extends HTTPMethods
+  sealed trait OPTIONS
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait PATCH extends HTTPMethods
+  sealed trait PATCH
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait POST extends HTTPMethods
+  sealed trait POST
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait PUT extends HTTPMethods
+  sealed trait PUT
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait delete extends HTTPMethods
+  sealed trait delete
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait get extends HTTPMethods
+  sealed trait get
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait head extends HTTPMethods
+  sealed trait head
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait options extends HTTPMethods
+  sealed trait options
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait patch extends HTTPMethods
+  sealed trait patch
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait post extends HTTPMethods
+  sealed trait post
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @js.native
-  sealed trait put extends HTTPMethods
+  sealed trait put
+    extends lightDashMyDashRequestLib.lightDashMyDashRequestMod.HTTPMethods
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

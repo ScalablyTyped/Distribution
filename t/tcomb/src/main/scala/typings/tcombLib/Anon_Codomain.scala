@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Codomain[T] extends js.Object {
   var codomain: T
-  var domain: Constructor[java.lang.String]
+  var domain: tcombLib.tcombMod.Constructor[java.lang.String]
   var identity: scala.Boolean
   var kind: java.lang.String
   var name: java.lang.String
@@ -17,7 +17,7 @@ object Anon_Codomain {
   @scala.inline
   def apply[T](
     codomain: T,
-    domain: Constructor[java.lang.String],
+    domain: tcombLib.tcombMod.Constructor[java.lang.String],
     identity: scala.Boolean,
     kind: java.lang.String,
     name: java.lang.String

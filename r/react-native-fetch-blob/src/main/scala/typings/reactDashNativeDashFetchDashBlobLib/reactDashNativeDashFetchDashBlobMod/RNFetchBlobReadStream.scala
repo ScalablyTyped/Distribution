@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait RNFetchBlobReadStream extends js.Object {
   var bufferSize: js.UndefOr[scala.Double] = js.undefined
   var closed: scala.Boolean
-  var encoding: reactDashNativeDashFetchDashBlobLib.Encoding
+  var encoding: Encoding
   var path: java.lang.String
   var tick: scala.Double
   def onData(fn: js.Function1[/* chunk */ java.lang.String | js.Array[scala.Double], scala.Unit]): scala.Unit
@@ -21,7 +21,7 @@ object RNFetchBlobReadStream {
   @scala.inline
   def apply(
     closed: scala.Boolean,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding,
+    encoding: Encoding,
     onData: js.Function1[/* chunk */ java.lang.String | js.Array[scala.Double], scala.Unit] => scala.Unit,
     onEnd: js.Function0[scala.Unit] => scala.Unit,
     onError: js.Function1[/* err */ js.Any, scala.Unit] => scala.Unit,

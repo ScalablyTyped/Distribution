@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TooltipArg extends js.Object {
   @JSName("arrowRef")
-  var arrowRef_Original: reactDashPopperLib.RefHandler = js.native
+  var arrowRef_Original: reactDashPopperLib.reactDashPopperMod.RefHandler = js.native
   var placement: popperDotJsLib.popperDotJsMod.PopperNs.Placement = js.native
   @JSName("tooltipRef")
-  var tooltipRef_Original: reactDashPopperLib.RefHandler = js.native
+  var tooltipRef_Original: reactDashPopperLib.reactDashPopperMod.RefHandler = js.native
   def arrowRef(): scala.Unit = js.native
   def arrowRef(ref: stdLib.HTMLElement): scala.Unit = js.native
   def getArrowProps(): GetArrowPropsArg = js.native

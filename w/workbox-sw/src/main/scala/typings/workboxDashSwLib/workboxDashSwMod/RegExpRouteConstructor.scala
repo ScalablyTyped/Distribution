@@ -24,14 +24,10 @@ trait RegExpRouteConstructor
 	 * @param {string} [method="GET"] - The HTTP method to match the Route against.
 	 * @return {RegExpRoute}
 	 */
-org.scalablytyped.runtime.Instantiable2[
-      /* regExp */ stdLib.RegExp, 
-      /* handler */ workboxDashSwLib.HandlerCallback, 
-      RegExpRoute
-    ]
+org.scalablytyped.runtime.Instantiable2[/* regExp */ stdLib.RegExp, /* handler */ HandlerCallback, RegExpRoute]
      with org.scalablytyped.runtime.Instantiable3[
       /* regExp */ stdLib.RegExp, 
-      /* handler */ workboxDashSwLib.HandlerCallback, 
+      /* handler */ HandlerCallback, 
       /* method */ java.lang.String, 
       RegExpRoute
     ]

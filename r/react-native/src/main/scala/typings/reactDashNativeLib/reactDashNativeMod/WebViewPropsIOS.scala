@@ -36,9 +36,7 @@ trait WebViewPropsIOS extends js.Object {
     * - `'none'`
     * - `'all'`
     */
-  var dataDetectorTypes: js.UndefOr[
-    reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes]
-  ] = js.undefined
+  var dataDetectorTypes: js.UndefOr[DataDetectorTypes | js.Array[DataDetectorTypes]] = js.undefined
   /**
     * A floating-point number that determines how quickly the scroll
     * view decelerates after the user lifts their finger. You may also
@@ -72,7 +70,7 @@ object WebViewPropsIOS {
   def apply(
     allowsInlineMediaPlayback: js.UndefOr[scala.Boolean] = js.undefined,
     bounces: js.UndefOr[scala.Boolean] = js.undefined,
-    dataDetectorTypes: reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes] = null,
+    dataDetectorTypes: DataDetectorTypes | js.Array[DataDetectorTypes] = null,
     decelerationRate: reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.fast | scala.Double = null,
     onShouldStartLoadWithRequest: /* event */ WebViewIOSLoadRequestEvent => scala.Boolean = null,
     scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,

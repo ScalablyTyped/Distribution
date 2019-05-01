@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mockingoose", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: mockingooseLib.Proxy = js.native
+  val default: Proxy = js.native
 }
 

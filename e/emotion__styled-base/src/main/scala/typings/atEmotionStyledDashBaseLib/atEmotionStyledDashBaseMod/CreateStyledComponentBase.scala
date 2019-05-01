@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait CreateStyledComponentBase[InnerProps, ExtraProps, Theme /* <: js.Object */] extends js.Object {
   def apply[StyleProps /* <: atEmotionStyledDashBaseLib.typesHelperMod.Omit[
     atEmotionStyledDashBaseLib.typesHelperMod.Overwrapped[InnerProps, StyleProps], 
-    atEmotionStyledDashBaseLib.ReactClassPropKeys
+    ReactClassPropKeys
   ] */](styles: (atEmotionSerializeLib.atEmotionSerializeMod.Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
   def apply[StyleProps /* <: atEmotionStyledDashBaseLib.typesHelperMod.Omit[
     atEmotionStyledDashBaseLib.typesHelperMod.Overwrapped[InnerProps, StyleProps], 
-    atEmotionStyledDashBaseLib.ReactClassPropKeys
+    ReactClassPropKeys
   ] */](
     template: stdLib.TemplateStringsArray,
     styles: (atEmotionSerializeLib.atEmotionSerializeMod.Interpolation[WithTheme[StyleProps, Theme]])*

@@ -20,7 +20,7 @@ trait StrategyOptions extends js.Object {
   /**
   	 * The Plugins to use along with the Strategy
   	 */
-  var plugins: js.Array[workboxDashSwLib.Plugin]
+  var plugins: js.Array[Plugin]
 }
 
 object StrategyOptions {
@@ -28,7 +28,7 @@ object StrategyOptions {
   def apply(
     cacheExpiration: stdLib.Partial[CacheExpirationOptions],
     cacheName: java.lang.String,
-    plugins: js.Array[workboxDashSwLib.Plugin]
+    plugins: js.Array[Plugin]
   ): StrategyOptions = {
     val __obj = js.Dynamic.literal(cacheExpiration = cacheExpiration, cacheName = cacheName, plugins = plugins)
   

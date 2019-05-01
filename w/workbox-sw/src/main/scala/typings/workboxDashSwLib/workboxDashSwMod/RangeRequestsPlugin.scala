@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation._
   * It does this by intercepting the `cachedResponseWillBeUsed` plugin callback
   * and returning the appropriate subset of the cached response body.
   */
-trait RangeRequestsPlugin extends js.Object
+trait RangeRequestsPlugin extends Plugin
 

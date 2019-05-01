@@ -11,7 +11,7 @@ trait AssociatedGateway extends js.Object {
     */
   var id: js.UndefOr[GatewayIdentifier] = js.undefined
   /**
-    * The ID of the AWS account that owns the associated virtual private gateway.
+    * The ID of the AWS account that owns the associated virtual private gateway or transit gateway.
     */
   var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   /**

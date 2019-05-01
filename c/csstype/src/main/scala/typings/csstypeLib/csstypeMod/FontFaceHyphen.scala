@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FontFaceHyphen extends js.Object {
-  var `-moz-font-feature-settings`: js.UndefOr[csstypeLib.FontFaceFontFeatureSettingsProperty] = js.undefined
-  var `font-display`: js.UndefOr[csstypeLib.FontFaceFontDisplayProperty] = js.undefined
+  var `-moz-font-feature-settings`: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.undefined
+  var `font-display`: js.UndefOr[FontFaceFontDisplayProperty] = js.undefined
   var `font-family`: js.UndefOr[java.lang.String] = js.undefined
-  var `font-feature-settings`: js.UndefOr[csstypeLib.FontFaceFontFeatureSettingsProperty] = js.undefined
-  var `font-stretch`: js.UndefOr[csstypeLib.FontFaceFontStretchProperty] = js.undefined
-  var `font-style`: js.UndefOr[csstypeLib.FontFaceFontStyleProperty] = js.undefined
-  var `font-variant`: js.UndefOr[csstypeLib.FontFaceFontVariantProperty] = js.undefined
-  var `font-variation-settings`: js.UndefOr[csstypeLib.FontFaceFontVariationSettingsProperty] = js.undefined
-  var `font-weight`: js.UndefOr[csstypeLib.FontFaceFontWeightProperty] = js.undefined
+  var `font-feature-settings`: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.undefined
+  var `font-stretch`: js.UndefOr[FontFaceFontStretchProperty] = js.undefined
+  var `font-style`: js.UndefOr[FontFaceFontStyleProperty] = js.undefined
+  var `font-variant`: js.UndefOr[FontFaceFontVariantProperty] = js.undefined
+  var `font-variation-settings`: js.UndefOr[FontFaceFontVariationSettingsProperty] = js.undefined
+  var `font-weight`: js.UndefOr[FontFaceFontWeightProperty] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
   var `unicode-range`: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -22,15 +22,15 @@ trait FontFaceHyphen extends js.Object {
 object FontFaceHyphen {
   @scala.inline
   def apply(
-    `-moz-font-feature-settings`: csstypeLib.FontFaceFontFeatureSettingsProperty = null,
-    `font-display`: csstypeLib.FontFaceFontDisplayProperty = null,
+    `-moz-font-feature-settings`: FontFaceFontFeatureSettingsProperty = null,
+    `font-display`: FontFaceFontDisplayProperty = null,
     `font-family`: java.lang.String = null,
-    `font-feature-settings`: csstypeLib.FontFaceFontFeatureSettingsProperty = null,
-    `font-stretch`: csstypeLib.FontFaceFontStretchProperty = null,
-    `font-style`: csstypeLib.FontFaceFontStyleProperty = null,
-    `font-variant`: csstypeLib.FontFaceFontVariantProperty = null,
-    `font-variation-settings`: csstypeLib.FontFaceFontVariationSettingsProperty = null,
-    `font-weight`: csstypeLib.FontFaceFontWeightProperty = null,
+    `font-feature-settings`: FontFaceFontFeatureSettingsProperty = null,
+    `font-stretch`: FontFaceFontStretchProperty = null,
+    `font-style`: FontFaceFontStyleProperty = null,
+    `font-variant`: FontFaceFontVariantProperty = null,
+    `font-variation-settings`: FontFaceFontVariationSettingsProperty = null,
+    `font-weight`: FontFaceFontWeightProperty = null,
     src: java.lang.String = null,
     `unicode-range`: java.lang.String = null
   ): FontFaceHyphen = {

@@ -9,10 +9,8 @@ trait FlexStyle extends js.Object {
   var alignContent: js.UndefOr[
     reactDashNativeLib.reactDashNativeLibStrings.`flex-start` | reactDashNativeLib.reactDashNativeLibStrings.`flex-end` | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.stretch | reactDashNativeLib.reactDashNativeLibStrings.`space-between` | reactDashNativeLib.reactDashNativeLibStrings.`space-around`
   ] = js.undefined
-  var alignItems: js.UndefOr[reactDashNativeLib.FlexAlignType] = js.undefined
-  var alignSelf: js.UndefOr[
-    reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.FlexAlignType
-  ] = js.undefined
+  var alignItems: js.UndefOr[FlexAlignType] = js.undefined
+  var alignSelf: js.UndefOr[reactDashNativeLib.reactDashNativeLibStrings.auto | FlexAlignType] = js.undefined
   var aspectRatio: js.UndefOr[scala.Double] = js.undefined
   var borderBottomWidth: js.UndefOr[scala.Double] = js.undefined
   var borderEndWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -86,8 +84,8 @@ object FlexStyle {
   @scala.inline
   def apply(
     alignContent: reactDashNativeLib.reactDashNativeLibStrings.`flex-start` | reactDashNativeLib.reactDashNativeLibStrings.`flex-end` | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.stretch | reactDashNativeLib.reactDashNativeLibStrings.`space-between` | reactDashNativeLib.reactDashNativeLibStrings.`space-around` = null,
-    alignItems: reactDashNativeLib.FlexAlignType = null,
-    alignSelf: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.FlexAlignType = null,
+    alignItems: FlexAlignType = null,
+    alignSelf: reactDashNativeLib.reactDashNativeLibStrings.auto | FlexAlignType = null,
     aspectRatio: scala.Int | scala.Double = null,
     borderBottomWidth: scala.Int | scala.Double = null,
     borderEndWidth: scala.Double | java.lang.String = null,

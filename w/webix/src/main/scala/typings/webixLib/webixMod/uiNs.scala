@@ -21,8 +21,8 @@ object uiNs extends js.Object {
     var config_abslayout: abslayoutConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: abslayoutEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: abslayoutEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: abslayoutEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: abslayoutEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -53,7 +53,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -73,8 +73,8 @@ object uiNs extends js.Object {
     var config_accordion: accordionConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: accordionEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: accordionEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: accordionEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: accordionEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -85,9 +85,9 @@ object uiNs extends js.Object {
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -112,7 +112,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multi: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -140,14 +140,14 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_accordionitem: accordionitemConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
-    def attachEvent(`type`: accordionitemEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: accordionitemEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
+    def attachEvent(`type`: accordionitemEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: accordionitemEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def collapse(): scala.Unit = js.native
@@ -171,8 +171,8 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
-    var header: js.UndefOr[scala.Boolean | java.lang.String | webixLib.WebixCallback] = js.undefined
-    var headerAlt: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var header: js.UndefOr[scala.Boolean | java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var headerAlt: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var headerAltHeight: js.UndefOr[scala.Double] = js.undefined
     var headerHeight: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
@@ -183,11 +183,11 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
@@ -280,8 +280,8 @@ object uiNs extends js.Object {
     var config_baselayout: baselayoutConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: baselayoutEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: baselayoutEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: baselayoutEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: baselayoutEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -292,9 +292,9 @@ object uiNs extends js.Object {
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -315,7 +315,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -334,7 +334,7 @@ object uiNs extends js.Object {
     @JSName("$height")
     var $height: scala.Double = js.native
     @JSName("$skin")
-    var $skin_Original: webixLib.WebixCallback = js.native
+    var $skin_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$view")
     var $view: stdLib.HTMLElement = js.native
     @JSName("$width")
@@ -349,8 +349,8 @@ object uiNs extends js.Object {
     def $skin(args: js.Any*): js.Any = js.native
     def adjust(): scala.Unit = js.native
     def bind(target: js.Any): scala.Unit = js.native
-    def bind(target: js.Any, rule: webixLib.WebixCallback): scala.Unit = js.native
-    def bind(target: js.Any, rule: webixLib.WebixCallback, format: java.lang.String): scala.Unit = js.native
+    def bind(target: js.Any, rule: webixLib.webixMod.WebixCallback): scala.Unit = js.native
+    def bind(target: js.Any, rule: webixLib.webixMod.WebixCallback, format: java.lang.String): scala.Unit = js.native
     def define(property: java.lang.String, value: js.Any): scala.Unit = js.native
     def destructor(): scala.Unit = js.native
     def disable(): scala.Unit = js.native
@@ -402,8 +402,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_bullet: bulletConfig = js.native
-    def attachEvent(`type`: bulletEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: bulletEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: bulletEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: bulletEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -419,7 +419,7 @@ object uiNs extends js.Object {
     var bands: js.UndefOr[js.Array[_]] = js.undefined
     var barWidth: js.UndefOr[scala.Double] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var color: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var color: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -439,7 +439,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minRange: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var scale: js.UndefOr[js.Any] = js.undefined
     var smoothFlow: js.UndefOr[scala.Boolean] = js.undefined
@@ -471,15 +471,15 @@ object uiNs extends js.Object {
   @js.native
   class button () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_button: buttonConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -491,8 +491,8 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: buttonEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: buttonEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: buttonEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: buttonEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -507,7 +507,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -517,7 +517,7 @@ object uiNs extends js.Object {
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var badge: js.UndefOr[scala.Double | java.lang.String] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -536,7 +536,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
@@ -576,14 +576,14 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_calendar: calendarConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
-    def attachEvent(`type`: calendarEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: calendarEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
+    def attachEvent(`type`: calendarEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: calendarEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -611,7 +611,7 @@ object uiNs extends js.Object {
   
   trait calendarConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
-    var blockDates: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var blockDates: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var calendarHeader: js.UndefOr[java.lang.String] = js.undefined
     var calendarTime: js.UndefOr[java.lang.String] = js.undefined
@@ -620,9 +620,9 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var date: js.UndefOr[webixLib.webixMod.Date | java.lang.String] = js.undefined
-    var dayTemplate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var dayTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var events: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var events: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var headerHeight: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
@@ -642,11 +642,11 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var select: js.UndefOr[scala.Boolean] = js.undefined
     var skipEmptyWeeks: js.UndefOr[scala.Boolean] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
@@ -705,8 +705,8 @@ object uiNs extends js.Object {
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def adjustScroll(): scala.Unit = js.native
-    def attachEvent(`type`: carouselEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: carouselEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: carouselEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: carouselEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -740,7 +740,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var navigation: js.UndefOr[js.Any] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -777,19 +777,19 @@ object uiNs extends js.Object {
     var config_chart: chartConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var presets: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addSeries(obj: js.Any): scala.Unit = js.native
-    def attachEvent(`type`: chartEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: chartEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: chartEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: chartEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -799,18 +799,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -827,11 +827,11 @@ object uiNs extends js.Object {
     def hideSeries(index: scala.Double): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -854,7 +854,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
@@ -872,7 +872,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var cant: js.UndefOr[scala.Double] = js.undefined
     var cellWidth: js.UndefOr[scala.Double] = js.undefined
-    var color: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var color: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
@@ -884,13 +884,13 @@ object uiNs extends js.Object {
     var eventRadius: js.UndefOr[scala.Double] = js.undefined
     var fill: js.UndefOr[java.lang.String] = js.undefined
     var fixOverflow: js.UndefOr[scala.Boolean] = js.undefined
-    var gradient: js.UndefOr[scala.Boolean | java.lang.String | webixLib.WebixCallback] = js.undefined
+    var gradient: js.UndefOr[scala.Boolean | java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
-    var label: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var label: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var labelOffset: js.UndefOr[scala.Double] = js.undefined
     var legend: js.UndefOr[js.Any] = js.undefined
     var line: js.UndefOr[js.Any] = js.undefined
@@ -901,18 +901,18 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var offset: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var origin: js.UndefOr[scala.Double] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var pieHeight: js.UndefOr[scala.Double] = js.undefined
-    var pieInnerText: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var pieInnerText: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var preset: js.UndefOr[java.lang.String] = js.undefined
     var radius: js.UndefOr[scala.Double] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scale: js.UndefOr[java.lang.String] = js.undefined
@@ -922,7 +922,7 @@ object uiNs extends js.Object {
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
-    var value: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var value: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
     var x: js.UndefOr[scala.Double] = js.undefined
@@ -975,19 +975,19 @@ object uiNs extends js.Object {
   @js.native
   class checkbox () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_checkbox: checkboxConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -1009,8 +1009,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: checkboxEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: checkboxEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: checkboxEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: checkboxEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -1026,7 +1026,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def toggle(): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
@@ -1041,7 +1041,7 @@ object uiNs extends js.Object {
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
     var checkValue: js.UndefOr[java.lang.String] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var customCheckbox: js.UndefOr[scala.Boolean] = js.undefined
@@ -1067,7 +1067,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var relatedAction: js.UndefOr[java.lang.String] = js.undefined
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
@@ -1075,7 +1075,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var uncheckValue: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -1108,15 +1108,15 @@ object uiNs extends js.Object {
   @js.native
   class checksuggest () extends baseview {
     @JSName("$enterKey")
-    var $enterKey_Original: webixLib.WebixCallback = js.native
+    var $enterKey_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_checksuggest: checksuggestConfig = js.native
     @JSName("$enterKey")
     def $enterKey(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: checksuggestEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: checksuggestEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: checksuggestEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: checksuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -1154,7 +1154,7 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var filter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var filter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var fitMaster: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -1172,15 +1172,15 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
     var selectAll: js.UndefOr[scala.Boolean] = js.undefined
     var separator: js.UndefOr[java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var textValue: js.UndefOr[java.lang.String] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -1225,8 +1225,8 @@ object uiNs extends js.Object {
     var config_colorboard: colorboardConfig = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: colorboardEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: colorboardEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: colorboardEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: colorboardEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -1259,10 +1259,10 @@ object uiNs extends js.Object {
     var minLightness: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var palette: js.UndefOr[js.Array[_]] = js.undefined
     var rows: js.UndefOr[scala.Double] = js.undefined
-    var template: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var value: js.UndefOr[java.lang.String] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -1293,19 +1293,19 @@ object uiNs extends js.Object {
   @js.native
   class colorpicker () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_colorpicker: colorpickerConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -1327,8 +1327,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: colorpickerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: colorpickerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: colorpickerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: colorpickerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -1346,7 +1346,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -1359,7 +1359,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -1386,7 +1386,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
@@ -1397,7 +1397,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -1430,19 +1430,19 @@ object uiNs extends js.Object {
   @js.native
   class combo () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_combo: comboConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -1464,8 +1464,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: comboEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: comboEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: comboEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: comboEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -1484,7 +1484,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -1497,7 +1497,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -1524,7 +1524,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var options: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -1536,7 +1536,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -1572,8 +1572,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_context: contextConfig = js.native
-    def attachEvent(`type`: contextEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: contextEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: contextEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: contextEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def attachTo(view: js.Any): scala.Unit = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -1616,10 +1616,10 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
@@ -1656,23 +1656,23 @@ object uiNs extends js.Object {
   @js.native
   class contextmenu () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_contextmenu: contextmenuConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -1703,8 +1703,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: contextmenuEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: contextmenuEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: contextmenuEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: contextmenuEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def attachTo(view: js.Any): scala.Unit = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -1729,18 +1729,18 @@ object uiNs extends js.Object {
     def enableItem(id: scala.Double): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getBody(): js.Any = js.native
     def getContext(): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
@@ -1779,11 +1779,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -1836,7 +1836,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
     def unselect(id: java.lang.String): scala.Unit = js.native
@@ -1855,12 +1855,12 @@ object uiNs extends js.Object {
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var body: js.UndefOr[java.lang.String | baseview] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -1868,7 +1868,7 @@ object uiNs extends js.Object {
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dynamic: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
     var headHeight: js.UndefOr[scala.Double] = js.undefined
@@ -1888,17 +1888,17 @@ object uiNs extends js.Object {
     var move: js.UndefOr[scala.Boolean] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var openAction: js.UndefOr[java.lang.String] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
@@ -1910,8 +1910,8 @@ object uiNs extends js.Object {
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var subMenuPos: js.UndefOr[java.lang.String] = js.undefined
     var submenuConfig: js.UndefOr[js.Any] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -1987,19 +1987,19 @@ object uiNs extends js.Object {
   @js.native
   class counter () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_counter: counterConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -2021,8 +2021,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: counterEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: counterEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: counterEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: counterEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -2044,7 +2044,7 @@ object uiNs extends js.Object {
     def setValue(value: scala.Double): scala.Unit = js.native
     def shift(): scala.Unit = js.native
     def shift(value: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -2057,7 +2057,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -2083,7 +2083,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var relatedAction: js.UndefOr[java.lang.String] = js.undefined
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
@@ -2091,7 +2091,7 @@ object uiNs extends js.Object {
     var step: js.UndefOr[scala.Double] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -2124,7 +2124,7 @@ object uiNs extends js.Object {
   @js.native
   class dashboard () extends baseview {
     @JSName("$dragPos")
-    var $dragPos_Original: webixLib.WebixCallback = js.native
+    var $dragPos_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_dashboard: dashboardConfig = js.native
     @JSName("$dragCreate")
@@ -2146,8 +2146,8 @@ object uiNs extends js.Object {
     def $drop(source: stdLib.HTMLElement, target: stdLib.HTMLElement, ev: stdLib.Event): scala.Unit = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: dashboardEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: dashboardEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: dashboardEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: dashboardEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -2161,9 +2161,9 @@ object uiNs extends js.Object {
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Array[_] = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Array[_] = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -2179,7 +2179,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var factory: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var factory: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var gridColumns: js.UndefOr[scala.Double] = js.undefined
     var gridRows: js.UndefOr[scala.Double] = js.undefined
@@ -2191,7 +2191,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -2219,8 +2219,8 @@ object uiNs extends js.Object {
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: datalayoutEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: datalayoutEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datalayoutEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datalayoutEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -2229,18 +2229,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -2257,11 +2257,11 @@ object uiNs extends js.Object {
     def index(obj: js.Any): scala.Double = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -2283,7 +2283,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
@@ -2309,11 +2309,11 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
@@ -2346,15 +2346,15 @@ object uiNs extends js.Object {
   @js.native
   class datasuggest () extends baseview {
     @JSName("$enterKey")
-    var $enterKey_Original: webixLib.WebixCallback = js.native
+    var $enterKey_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_datasuggest: datasuggestConfig = js.native
     @JSName("$enterKey")
     def $enterKey(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: datasuggestEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: datasuggestEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datasuggestEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datasuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -2392,7 +2392,7 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var filter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var filter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var fitMaster: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -2410,13 +2410,13 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var textValue: js.UndefOr[java.lang.String] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -2455,26 +2455,26 @@ object uiNs extends js.Object {
   @js.native
   class datatable () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touch")
-    var $touch_Original: webixLib.WebixCallback = js.native
+    var $touch_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_datatable: datatableConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     var headerContent: js.Any = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var waitData: js.Promise[_] = js.native
     @JSName("$customPrint")
     def $customPrint(args: js.Any*): js.Any = js.native
@@ -2547,8 +2547,8 @@ object uiNs extends js.Object {
     def adjustRowHeight(): scala.Unit = js.native
     def adjustRowHeight(columnId: java.lang.String): scala.Unit = js.native
     def adjustRowHeight(columnId: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: datatableEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: datatableEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datatableEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datatableEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -2570,10 +2570,10 @@ object uiNs extends js.Object {
     def copy(sid: scala.Double, tindex: scala.Double, tobj: js.Any, details: js.Any): scala.Unit = js.native
     def count(): scala.Double = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def eachColumn(handler: webixLib.WebixCallback): scala.Unit = js.native
-    def eachColumn(handler: webixLib.WebixCallback, all: scala.Boolean): scala.Unit = js.native
-    def eachRow(handler: webixLib.WebixCallback): scala.Unit = js.native
-    def eachRow(handler: webixLib.WebixCallback, all: scala.Boolean): scala.Unit = js.native
+    def eachColumn(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
+    def eachColumn(handler: webixLib.webixMod.WebixCallback, all: scala.Boolean): scala.Unit = js.native
+    def eachRow(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
+    def eachRow(handler: webixLib.webixMod.WebixCallback, all: scala.Boolean): scala.Unit = js.native
     def edit(id: js.Any): scala.Unit = js.native
     def editCancel(): scala.Unit = js.native
     def editCell(row: java.lang.String, col: java.lang.String): scala.Unit = js.native
@@ -2594,10 +2594,10 @@ object uiNs extends js.Object {
     def editStop(): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
@@ -2605,8 +2605,8 @@ object uiNs extends js.Object {
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
     def filterByAll(): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def focusEditor(id: js.Any): scala.Unit = js.native
     def freezeRow(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def freezeRow(id: scala.Double, state: scala.Boolean): scala.Unit = js.native
@@ -2681,11 +2681,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -2696,10 +2696,10 @@ object uiNs extends js.Object {
       startcol: java.lang.String,
       numrows: scala.Double,
       numcols: scala.Double,
-      callback: webixLib.WebixCallback
+      callback: webixLib.webixMod.WebixCallback
     ): scala.Unit = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
-    def mapSelection(callback: webixLib.WebixCallback): scala.Unit = js.native
+    def mapSelection(callback: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def markSorting(column_id: java.lang.String, direction: java.lang.String): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String = js.native
     def move(sid: java.lang.String, tindex: scala.Double, tobj: js.Any): java.lang.String = js.native
@@ -2776,7 +2776,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def unselect(row_id: java.lang.String): scala.Unit = js.native
@@ -2806,7 +2806,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -2819,7 +2819,7 @@ object uiNs extends js.Object {
     var editValue: js.UndefOr[java.lang.String] = js.undefined
     var editable: js.UndefOr[scala.Boolean] = js.undefined
     var editaction: js.UndefOr[java.lang.String] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var filterMode: js.UndefOr[js.Any] = js.undefined
     var fixedRowHeight: js.UndefOr[scala.Boolean] = js.undefined
     var footer: js.UndefOr[scala.Boolean] = js.undefined
@@ -2846,14 +2846,14 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
     var prerender: js.UndefOr[scala.Boolean] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var resizeColumn: js.UndefOr[js.Any] = js.undefined
     var resizeRow: js.UndefOr[scala.Boolean] = js.undefined
@@ -2871,8 +2871,8 @@ object uiNs extends js.Object {
     var spans: js.UndefOr[js.Array[_]] = js.undefined
     var subRowHeight: js.UndefOr[java.lang.String] = js.undefined
     var subrow: js.UndefOr[java.lang.String] = js.undefined
-    var subview: js.UndefOr[baseview | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var subview: js.UndefOr[baseview | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[scala.Boolean] = js.undefined
     var topSplit: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
@@ -2978,23 +2978,23 @@ object uiNs extends js.Object {
   @js.native
   class dataview () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_dataview: dataviewConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -3025,8 +3025,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: dataviewEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: dataviewEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: dataviewEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: dataviewEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -3045,18 +3045,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -3082,11 +3082,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -3132,7 +3132,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
     def unselect(id: java.lang.String): scala.Unit = js.native
@@ -3147,7 +3147,7 @@ object uiNs extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var autoheight: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
@@ -3157,7 +3157,7 @@ object uiNs extends js.Object {
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -3171,13 +3171,13 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -3185,7 +3185,7 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -3251,19 +3251,19 @@ object uiNs extends js.Object {
   @js.native
   class datepicker () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_datepicker: datepickerConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -3285,8 +3285,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: datepickerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: datepickerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datepickerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: datepickerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -3304,7 +3304,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -3317,7 +3317,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -3346,7 +3346,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -3361,7 +3361,7 @@ object uiNs extends js.Object {
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[webixLib.webixMod.Date | java.lang.String] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -3397,8 +3397,8 @@ object uiNs extends js.Object {
     var config_daterange: daterangeConfig = js.native
     def addToRange(dates: java.lang.String): scala.Unit = js.native
     def addToRange(dates: webixLib.webixMod.Date): scala.Unit = js.native
-    def attachEvent(`type`: daterangeEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: daterangeEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: daterangeEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: daterangeEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -3428,7 +3428,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -3453,21 +3453,21 @@ object uiNs extends js.Object {
   @js.native
   class daterangepicker () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: java.lang.String = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_daterangepicker: daterangepickerConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -3487,8 +3487,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: daterangepickerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: daterangepickerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: daterangepickerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: daterangepickerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -3506,7 +3506,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -3519,7 +3519,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -3547,7 +3547,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pattern: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -3561,7 +3561,7 @@ object uiNs extends js.Object {
     var timepicker: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -3594,15 +3594,15 @@ object uiNs extends js.Object {
   @js.native
   class daterangesuggest () extends baseview {
     @JSName("$enterKey")
-    var $enterKey_Original: webixLib.WebixCallback = js.native
+    var $enterKey_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_daterangesuggest: daterangesuggestConfig = js.native
     @JSName("$enterKey")
     def $enterKey(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: daterangesuggestEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: daterangesuggestEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: daterangesuggestEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: daterangesuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -3639,7 +3639,7 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var filter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var filter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var fitMaster: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -3657,13 +3657,13 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var textValue: js.UndefOr[java.lang.String] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -3704,13 +3704,13 @@ object uiNs extends js.Object {
     @JSName("$$")
     var $$: js.Any = js.native
     @JSName("$onLoad")
-    var $onLoad_Original: webixLib.WebixCallback = js.native
+    var $onLoad_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_dbllist: dbllistConfig = js.native
     @JSName("$onLoad")
     def $onLoad(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: dbllistEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: dbllistEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: dbllistEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: dbllistEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -3721,7 +3721,7 @@ object uiNs extends js.Object {
     def innerId(id: scala.Double): scala.Double | java.lang.String = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def select(id: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
@@ -3754,7 +3754,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -3778,26 +3778,26 @@ object uiNs extends js.Object {
   @js.native
   class excelviewer () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touch")
-    var $touch_Original: webixLib.WebixCallback = js.native
+    var $touch_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_excelviewer: excelviewerConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     var headerContent: js.Any = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var waitData: js.Promise[_] = js.native
     @JSName("$customPrint")
     def $customPrint(args: js.Any*): js.Any = js.native
@@ -3853,8 +3853,8 @@ object uiNs extends js.Object {
     def adjustRowHeight(): scala.Unit = js.native
     def adjustRowHeight(columnId: java.lang.String): scala.Unit = js.native
     def adjustRowHeight(columnId: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: excelviewerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: excelviewerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: excelviewerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: excelviewerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -3875,10 +3875,10 @@ object uiNs extends js.Object {
     def copy(sid: scala.Double, tindex: scala.Double, tobj: js.Any, details: js.Any): scala.Unit = js.native
     def count(): scala.Double = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def eachColumn(handler: webixLib.WebixCallback): scala.Unit = js.native
-    def eachColumn(handler: webixLib.WebixCallback, all: scala.Boolean): scala.Unit = js.native
-    def eachRow(handler: webixLib.WebixCallback): scala.Unit = js.native
-    def eachRow(handler: webixLib.WebixCallback, all: scala.Boolean): scala.Unit = js.native
+    def eachColumn(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
+    def eachColumn(handler: webixLib.webixMod.WebixCallback, all: scala.Boolean): scala.Unit = js.native
+    def eachRow(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
+    def eachRow(handler: webixLib.webixMod.WebixCallback, all: scala.Boolean): scala.Unit = js.native
     def edit(id: js.Any): scala.Unit = js.native
     def editCancel(): scala.Unit = js.native
     def editCell(row: java.lang.String, col: java.lang.String): scala.Unit = js.native
@@ -3899,10 +3899,10 @@ object uiNs extends js.Object {
     def editStop(): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
@@ -3910,8 +3910,8 @@ object uiNs extends js.Object {
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
     def filterByAll(): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def focusEditor(id: js.Any): scala.Unit = js.native
     def freezeRow(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def freezeRow(id: scala.Double, state: scala.Boolean): scala.Unit = js.native
@@ -3981,11 +3981,11 @@ object uiNs extends js.Object {
     def isColumnVisible(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -3996,7 +3996,7 @@ object uiNs extends js.Object {
       startcol: java.lang.String,
       numrows: scala.Double,
       numcols: scala.Double,
-      callback: webixLib.WebixCallback
+      callback: webixLib.webixMod.WebixCallback
     ): scala.Unit = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def markSorting(column_id: java.lang.String, direction: java.lang.String): scala.Unit = js.native
@@ -4063,7 +4063,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
@@ -4103,7 +4103,7 @@ object uiNs extends js.Object {
     var editable: js.UndefOr[scala.Boolean] = js.undefined
     var editaction: js.UndefOr[java.lang.String] = js.undefined
     var excelHeader: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var filterMode: js.UndefOr[js.Any] = js.undefined
     var fixedRowHeight: js.UndefOr[scala.Boolean] = js.undefined
     var footer: js.UndefOr[scala.Boolean] = js.undefined
@@ -4130,14 +4130,14 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
     var prerender: js.UndefOr[scala.Boolean] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var resizeColumn: js.UndefOr[js.Any] = js.undefined
     var resizeRow: js.UndefOr[scala.Boolean] = js.undefined
@@ -4155,8 +4155,8 @@ object uiNs extends js.Object {
     var spans: js.UndefOr[js.Array[_]] = js.undefined
     var subRowHeight: js.UndefOr[java.lang.String] = js.undefined
     var subrow: js.UndefOr[java.lang.String] = js.undefined
-    var subview: js.UndefOr[baseview | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var subview: js.UndefOr[baseview | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toolbar: js.UndefOr[java.lang.String] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var topSplit: js.UndefOr[scala.Double] = js.undefined
@@ -4318,7 +4318,7 @@ object uiNs extends js.Object {
     @JSName("$$")
     var $$: js.Any = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_filemanager: filemanagerConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
@@ -4327,8 +4327,8 @@ object uiNs extends js.Object {
     def $dropAllow(args: js.Any*): js.Any = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: filemanagerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: filemanagerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: filemanagerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: filemanagerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -4350,18 +4350,18 @@ object uiNs extends js.Object {
     def editFile(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getActive(): java.lang.String = js.native
     def getActiveView(): js.Any = js.native
     def getBranchIndex(id: java.lang.String): scala.Double = js.native
@@ -4409,13 +4409,13 @@ object uiNs extends js.Object {
     def levelUp(id: java.lang.String): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -4445,7 +4445,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def ui(view: js.Any): baseview = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
@@ -4478,22 +4478,22 @@ object uiNs extends js.Object {
     var mode: js.UndefOr[java.lang.String] = js.undefined
     var modes: js.UndefOr[js.Array[_]] = js.undefined
     var noFileCache: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var structure: js.UndefOr[js.Any] = js.undefined
-    var templateCreate: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var templateDate: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var templateIcon: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var templateName: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var templateSize: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var templateType: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var templateCreate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var templateDate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var templateIcon: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var templateName: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var templateSize: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var templateType: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var uploadProgress: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -4586,8 +4586,8 @@ object uiNs extends js.Object {
     var elements: js.Any = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: formEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: formEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: formEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: formEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clear(): scala.Unit = js.native
@@ -4604,7 +4604,7 @@ object uiNs extends js.Object {
     def isDirty(): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def markInvalid(name: java.lang.String): scala.Unit = js.native
     def markInvalid(name: java.lang.String, state: java.lang.String): scala.Unit = js.native
@@ -4617,10 +4617,10 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def scrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def setDirty(): scala.Unit = js.native
     def setDirty(mark: scala.Boolean): scala.Unit = js.native
     def setValues(values: js.Any): scala.Unit = js.native
@@ -4641,7 +4641,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var elements: js.UndefOr[js.Array[_]] = js.undefined
@@ -4656,7 +4656,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -4753,8 +4753,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_gage: gageConfig = js.native
-    def attachEvent(`type`: gageEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: gageEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: gageEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: gageEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -4782,7 +4782,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minRange: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var scale: js.UndefOr[scala.Double] = js.undefined
     var smoothFlow: js.UndefOr[scala.Boolean] = js.undefined
@@ -4821,8 +4821,8 @@ object uiNs extends js.Object {
     var waitData: js.Promise[_] = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: geochartEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: geochartEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: geochartEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: geochartEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -4830,18 +4830,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -4857,11 +4857,11 @@ object uiNs extends js.Object {
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -4879,7 +4879,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
@@ -4905,8 +4905,8 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
@@ -4953,7 +4953,7 @@ object uiNs extends js.Object {
   @js.native
   class googleMap () extends baseview {
     @JSName("$onLoad")
-    var $onLoad_Original: webixLib.WebixCallback = js.native
+    var $onLoad_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
@@ -4964,8 +4964,8 @@ object uiNs extends js.Object {
     def $onLoad(args: js.Any*): js.Any = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: googleMapEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: googleMapEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: googleMapEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: googleMapEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -4974,18 +4974,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -5001,11 +5001,11 @@ object uiNs extends js.Object {
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -5021,7 +5021,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
@@ -5034,7 +5034,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -5049,8 +5049,8 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
@@ -5097,8 +5097,8 @@ object uiNs extends js.Object {
     var config_gridlayout: gridlayoutConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: gridlayoutEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: gridlayoutEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: gridlayoutEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: gridlayoutEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -5112,9 +5112,9 @@ object uiNs extends js.Object {
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Array[_] = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Array[_] = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -5130,7 +5130,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var factory: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var factory: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var gridColumns: js.UndefOr[scala.Double] = js.undefined
     var gridRows: js.UndefOr[scala.Double] = js.undefined
@@ -5142,7 +5142,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -5163,15 +5163,15 @@ object uiNs extends js.Object {
   @js.native
   class gridsuggest () extends baseview {
     @JSName("$enterKey")
-    var $enterKey_Original: webixLib.WebixCallback = js.native
+    var $enterKey_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_gridsuggest: gridsuggestConfig = js.native
     @JSName("$enterKey")
     def $enterKey(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: gridsuggestEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: gridsuggestEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: gridsuggestEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: gridsuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -5209,7 +5209,7 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var filter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var filter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var fitMaster: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -5227,13 +5227,13 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var textValue: js.UndefOr[java.lang.String] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -5272,23 +5272,23 @@ object uiNs extends js.Object {
   @js.native
   class grouplist () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_grouplist: grouplistConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -5319,8 +5319,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: grouplistEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: grouplistEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: grouplistEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: grouplistEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -5339,18 +5339,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -5379,11 +5379,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -5429,7 +5429,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
@@ -5446,12 +5446,12 @@ object uiNs extends js.Object {
     var autoheight: js.UndefOr[scala.Boolean] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -5459,7 +5459,7 @@ object uiNs extends js.Object {
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dynamic: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -5473,13 +5473,13 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -5487,11 +5487,11 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateBack: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var templateGroup: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateItem: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateBack: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var templateGroup: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateItem: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -5561,8 +5561,8 @@ object uiNs extends js.Object {
     var config_headerlayout: headerlayoutConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: headerlayoutEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: headerlayoutEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: headerlayoutEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: headerlayoutEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -5573,9 +5573,9 @@ object uiNs extends js.Object {
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -5600,7 +5600,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multi: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -5627,8 +5627,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_hint: hintConfig = js.native
-    def attachEvent(`type`: hintEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: hintEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: hintEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: hintEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -5659,7 +5659,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var nextButton: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var prevButton: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var steps: js.UndefOr[js.Array[_]] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -5697,8 +5697,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_htmlform: htmlformConfig = js.native
-    def attachEvent(`type`: htmlformEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: htmlformEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: htmlformEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: htmlformEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -5715,7 +5715,7 @@ object uiNs extends js.Object {
     def isDirty(): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def markInvalid(name: java.lang.String): scala.Unit = js.native
     def markInvalid(name: java.lang.String, state: java.lang.String): scala.Unit = js.native
@@ -5731,7 +5731,7 @@ object uiNs extends js.Object {
     def setHTML(html: java.lang.String): scala.Unit = js.native
     def setValues(values: js.Any): scala.Unit = js.native
     def setValues(values: js.Any, update: scala.Boolean): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -5754,12 +5754,12 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var src: js.UndefOr[java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -5794,15 +5794,15 @@ object uiNs extends js.Object {
   @js.native
   class icon () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_icon: iconConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -5814,8 +5814,8 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: iconEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: iconEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: iconEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: iconEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -5830,7 +5830,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -5839,7 +5839,7 @@ object uiNs extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -5856,7 +5856,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -5893,8 +5893,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_iframe: iframeConfig = js.native
-    def attachEvent(`type`: iframeEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: iframeEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: iframeEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: iframeEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -5920,7 +5920,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var src: js.UndefOr[java.lang.String] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -5957,29 +5957,29 @@ object uiNs extends js.Object {
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: kanbanEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: kanbanEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: kanbanEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: kanbanEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
     def clearAll(soft: scala.Boolean): scala.Unit = js.native
     def count(): scala.Double = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def eachList(func: webixLib.WebixCallback): scala.Unit = js.native
+    def eachList(func: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -5998,11 +5998,11 @@ object uiNs extends js.Object {
     def index(obj: js.Any): scala.Double = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -6017,7 +6017,7 @@ object uiNs extends js.Object {
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def select(id: java.lang.String): scala.Unit = js.native
     def select(id: scala.Double): scala.Unit = js.native
     def serialize(): js.Array[_] = js.native
@@ -6028,7 +6028,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
@@ -6042,7 +6042,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -6051,19 +6051,19 @@ object uiNs extends js.Object {
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var isolate: js.UndefOr[scala.Boolean] = js.undefined
-    var listFilter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var listFilter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var margin: js.UndefOr[scala.Double] = js.undefined
     var maxHeight: js.UndefOr[scala.Double] = js.undefined
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multi: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
     var panelClass: js.UndefOr[java.lang.String] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
@@ -6112,15 +6112,15 @@ object uiNs extends js.Object {
   @js.native
   class label () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_label: labelConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -6132,8 +6132,8 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: labelEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: labelEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: labelEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: labelEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -6149,7 +6149,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setHTML(html: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -6158,7 +6158,7 @@ object uiNs extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -6176,7 +6176,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -6213,8 +6213,8 @@ object uiNs extends js.Object {
     var config_layout: layoutConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: layoutEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: layoutEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: layoutEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: layoutEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -6224,9 +6224,9 @@ object uiNs extends js.Object {
     def reconstruct(): scala.Unit = js.native
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback, configOnly: scala.Boolean): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback, configOnly: scala.Boolean): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -6249,7 +6249,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -6270,23 +6270,23 @@ object uiNs extends js.Object {
   @js.native
   class list () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_list: listConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -6317,8 +6317,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: listEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: listEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: listEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: listEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -6337,18 +6337,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -6375,11 +6375,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -6425,7 +6425,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
     def unselect(id: java.lang.String): scala.Unit = js.native
@@ -6441,12 +6441,12 @@ object uiNs extends js.Object {
     var autoheight: js.UndefOr[scala.Boolean] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -6454,7 +6454,7 @@ object uiNs extends js.Object {
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dynamic: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -6468,13 +6468,13 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -6482,8 +6482,8 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -6550,23 +6550,23 @@ object uiNs extends js.Object {
   @js.native
   class menu () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_menu: menuConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -6597,8 +6597,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: menuEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: menuEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: menuEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: menuEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -6621,18 +6621,18 @@ object uiNs extends js.Object {
     def enableItem(id: scala.Double): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -6668,11 +6668,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -6719,7 +6719,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
     def unselect(id: java.lang.String): scala.Unit = js.native
@@ -6735,12 +6735,12 @@ object uiNs extends js.Object {
     var autoheight: js.UndefOr[scala.Boolean] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -6748,7 +6748,7 @@ object uiNs extends js.Object {
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dynamic: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -6762,14 +6762,14 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var openAction: js.UndefOr[java.lang.String] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -6779,8 +6779,8 @@ object uiNs extends js.Object {
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var subMenuPos: js.UndefOr[java.lang.String] = js.undefined
     var submenuConfig: js.UndefOr[js.Any] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -6848,19 +6848,19 @@ object uiNs extends js.Object {
   @js.native
   class multicombo () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: java.lang.String = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_multicombo: multicomboConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -6880,8 +6880,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: multicomboEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multicomboEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multicomboEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multicomboEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -6900,7 +6900,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -6914,7 +6914,7 @@ object uiNs extends js.Object {
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
     var button: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -6941,7 +6941,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
     var newValues: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var optionWidth: js.UndefOr[scala.Double] = js.undefined
     var options: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
@@ -6954,9 +6954,9 @@ object uiNs extends js.Object {
     var separator: js.UndefOr[java.lang.String] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tagMode: js.UndefOr[scala.Boolean] = js.undefined
-    var tagTemplate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var tagTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -6989,21 +6989,21 @@ object uiNs extends js.Object {
   @js.native
   class multiselect () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: java.lang.String = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_multiselect: multiselectConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -7025,8 +7025,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: multiselectEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multiselectEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multiselectEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multiselectEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -7045,7 +7045,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -7058,7 +7058,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -7084,7 +7084,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var optionWidth: js.UndefOr[scala.Double] = js.undefined
     var options: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
@@ -7097,7 +7097,7 @@ object uiNs extends js.Object {
     var separator: js.UndefOr[java.lang.String] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -7130,15 +7130,15 @@ object uiNs extends js.Object {
   @js.native
   class multisuggest () extends baseview {
     @JSName("$enterKey")
-    var $enterKey_Original: webixLib.WebixCallback = js.native
+    var $enterKey_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_multisuggest: multisuggestConfig = js.native
     @JSName("$enterKey")
     def $enterKey(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: multisuggestEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multisuggestEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multisuggestEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multisuggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -7176,7 +7176,7 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var filter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var filter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var fitMaster: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -7194,14 +7194,14 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
     var separator: js.UndefOr[java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var textValue: js.UndefOr[java.lang.String] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -7241,21 +7241,21 @@ object uiNs extends js.Object {
   @js.native
   class multitext () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: java.lang.String = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_multitext: multitextConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -7278,8 +7278,8 @@ object uiNs extends js.Object {
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
     def addSection(): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multitextEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multitextEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multitextEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multitextEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -7301,7 +7301,7 @@ object uiNs extends js.Object {
     def setValue(value: java.lang.String): scala.Unit = js.native
     def setValueHere(value: java.lang.String): scala.Unit = js.native
     def setValueHere(value: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -7314,7 +7314,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -7341,7 +7341,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
@@ -7352,7 +7352,7 @@ object uiNs extends js.Object {
     var subConfig: js.UndefOr[js.Any] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -7390,8 +7390,8 @@ object uiNs extends js.Object {
     var config_multiview: multiviewConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multiviewEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: multiviewEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multiviewEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: multiviewEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def back(step: scala.Double): scala.Unit = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -7429,7 +7429,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var responsive: js.UndefOr[java.lang.String] = js.undefined
     var rows: js.UndefOr[js.Array[_]] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -7453,12 +7453,12 @@ object uiNs extends js.Object {
     var config_organogram: organogramConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -7468,8 +7468,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: organogramEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: organogramEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: organogramEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: organogramEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -7484,18 +7484,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getBranchIndex(id: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: scala.Double): scala.Double = js.native
@@ -7540,13 +7540,13 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -7585,7 +7585,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
@@ -7601,11 +7601,11 @@ object uiNs extends js.Object {
     var autoheight: js.UndefOr[scala.Boolean] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -7621,19 +7621,19 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
@@ -7697,15 +7697,15 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_pager: pagerConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-    def attachEvent(`type`: pagerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: pagerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: pagerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: pagerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clone(config: js.Any): js.Any = js.native
@@ -7722,7 +7722,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def select(page: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -7745,14 +7745,14 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var page: js.UndefOr[scala.Double] = js.undefined
     var size: js.UndefOr[scala.Double] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
@@ -7795,8 +7795,8 @@ object uiNs extends js.Object {
     def $resizeEnd(pos: scala.Double): scala.Unit = js.native
     @JSName("$resizeMove")
     def $resizeMove(pos: scala.Double): scala.Unit = js.native
-    def attachEvent(`type`: panelEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: panelEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: panelEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: panelEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -7821,7 +7821,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -7843,7 +7843,7 @@ object uiNs extends js.Object {
     @JSName("$numPages")
     var $numPages: scala.Double = js.native
     @JSName("$onLoad")
-    var $onLoad_Original: webixLib.WebixCallback = js.native
+    var $onLoad_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$pageNum")
     var $pageNum: scala.Double = js.native
     @JSName("$scope")
@@ -7852,8 +7852,8 @@ object uiNs extends js.Object {
     var config_pdfviewer: pdfviewerConfig = js.native
     @JSName("$onLoad")
     def $onLoad(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: pdfviewerEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: pdfviewerEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: pdfviewerEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: pdfviewerEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clear(): scala.Unit = js.native
@@ -7862,7 +7862,7 @@ object uiNs extends js.Object {
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def nextPage(): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
@@ -7881,7 +7881,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var downloadName: js.UndefOr[java.lang.String] = js.undefined
@@ -7893,7 +7893,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var scale: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var toolbar: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -7939,10 +7939,10 @@ object uiNs extends js.Object {
     var waitData: js.Promise[_] = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def addOperation(name: java.lang.String, operation: webixLib.WebixCallback, options: js.Any): scala.Unit = js.native
-    def addTotalOperation(name: java.lang.String, operation: webixLib.WebixCallback, options: js.Any): scala.Unit = js.native
-    def attachEvent(`type`: pivotEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: pivotEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def addOperation(name: java.lang.String, operation: webixLib.webixMod.WebixCallback, options: js.Any): scala.Unit = js.native
+    def addTotalOperation(name: java.lang.String, operation: webixLib.webixMod.WebixCallback, options: js.Any): scala.Unit = js.native
+    def attachEvent(`type`: pivotEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: pivotEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -7952,18 +7952,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getConfigWindow(): js.Any = js.native
     def getFields(): js.Any = js.native
     def getFilterView(): js.Any = js.native
@@ -7984,7 +7984,7 @@ object uiNs extends js.Object {
     def innerId(id: scala.Double): scala.Double | java.lang.String = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def refresh(): scala.Unit = js.native
@@ -7997,7 +7997,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def ui(view: js.Any): baseview = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
@@ -8022,9 +8022,9 @@ object uiNs extends js.Object {
     var filterPlaceholder: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var filterWidth: js.UndefOr[scala.Double] = js.undefined
     var footer: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
-    var format: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var format: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
-    var headerTemplate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var headerTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -8034,16 +8034,16 @@ object uiNs extends js.Object {
     var min: js.UndefOr[scala.Boolean] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
-    var ping: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ping: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var popup: js.UndefOr[js.Any] = js.undefined
     var profile: js.UndefOr[scala.Boolean] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
     var readonlyTitle: js.UndefOr[java.lang.String] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
     var separateLabel: js.UndefOr[scala.Boolean] = js.undefined
@@ -8094,8 +8094,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_popup: popupConfig = js.native
-    def attachEvent(`type`: popupEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: popupEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: popupEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: popupEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -8135,10 +8135,10 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
@@ -8180,8 +8180,8 @@ object uiNs extends js.Object {
     def $drag(source: stdLib.HTMLElement, ev: stdLib.Event): java.lang.String = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: portletEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: portletEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: portletEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: portletEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -8193,9 +8193,9 @@ object uiNs extends js.Object {
     def reconstruct(): scala.Unit = js.native
     def removeView(id: js.Any): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def showBatch(name: java.lang.String): scala.Unit = js.native
     def showBatch(name: java.lang.String, mode: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
@@ -8222,7 +8222,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mode: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -8249,17 +8249,17 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_property: propertyConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     var on_edit: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var on_render: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-    def attachEvent(`type`: propertyEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: propertyEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: propertyEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: propertyEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def customize(obj: js.Any): scala.Unit = js.native
@@ -8281,7 +8281,7 @@ object uiNs extends js.Object {
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def locate(e: stdLib.Event): java.lang.String | scala.Double = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def on_click(args: js.Any*): js.Any = js.native
@@ -8299,7 +8299,7 @@ object uiNs extends js.Object {
     def setValues(values: js.Any, update: scala.Boolean): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(): scala.Unit = js.native
     def validateEditor(): scala.Boolean = js.native
@@ -8333,14 +8333,14 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var nameWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -8400,8 +8400,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: protoEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: protoEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: protoEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: protoEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -8414,18 +8414,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -8446,11 +8446,11 @@ object uiNs extends js.Object {
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -8475,7 +8475,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
     def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
@@ -8486,7 +8486,7 @@ object uiNs extends js.Object {
   trait protoConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
@@ -8502,14 +8502,14 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scheme: js.UndefOr[js.Any] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
@@ -8557,16 +8557,16 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_querybuilder: querybuilderConfig = js.native
     var sqlOperators: js.Any = js.native
-    def attachEvent(`type`: querybuilderEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: querybuilderEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: querybuilderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: querybuilderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def focus(): scala.Unit = js.native
-    def getFilterHelper(): webixLib.WebixCallback = js.native
+    def getFilterHelper(): webixLib.webixMod.WebixCallback = js.native
     def getFilters(): js.Array[_] = js.native
     def getSortingElements(): js.Array[_] = js.native
-    def getSortingHelper(): webixLib.WebixCallback = js.native
+    def getSortingHelper(): webixLib.webixMod.WebixCallback = js.native
     def getValue(): js.Array[_] = js.native
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
@@ -8599,7 +8599,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -8619,19 +8619,19 @@ object uiNs extends js.Object {
   @js.native
   class radio () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_radio: radioConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -8653,8 +8653,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: radioEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: radioEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: radioEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: radioEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -8670,7 +8670,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -8683,7 +8683,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var customRadio: js.UndefOr[scala.Boolean] = js.undefined
@@ -8709,7 +8709,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
     var newline: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var optionHeight: js.UndefOr[scala.Double] = js.undefined
     var options: js.UndefOr[js.Array[_]] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -8718,7 +8718,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var vertical: js.UndefOr[scala.Boolean] = js.undefined
@@ -8758,19 +8758,19 @@ object uiNs extends js.Object {
     var config_rangechart: rangechartConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var presets: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
     def add(obj: js.Any): java.lang.String | scala.Double = js.native
     def add(obj: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
     def addSeries(obj: js.Any): scala.Unit = js.native
-    def attachEvent(`type`: rangechartEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: rangechartEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: rangechartEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: rangechartEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -8780,18 +8780,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getFrameData(): js.Array[_] = js.native
     def getFrameRange(): js.Any = js.native
@@ -8810,11 +8810,11 @@ object uiNs extends js.Object {
     def hideSeries(index: scala.Double): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -8838,7 +8838,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
@@ -8854,7 +8854,7 @@ object uiNs extends js.Object {
     var borderColor: js.UndefOr[java.lang.String] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var cant: js.UndefOr[scala.Double] = js.undefined
-    var color: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var color: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
@@ -8866,13 +8866,13 @@ object uiNs extends js.Object {
     var fill: js.UndefOr[java.lang.String] = js.undefined
     var fixOverflow: js.UndefOr[scala.Boolean] = js.undefined
     var frameId: js.UndefOr[java.lang.String] = js.undefined
-    var gradient: js.UndefOr[scala.Boolean | java.lang.String | webixLib.WebixCallback] = js.undefined
+    var gradient: js.UndefOr[scala.Boolean | java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var item: js.UndefOr[js.Any] = js.undefined
-    var label: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var label: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var labelOffset: js.UndefOr[scala.Double] = js.undefined
     var legend: js.UndefOr[js.Any] = js.undefined
     var line: js.UndefOr[js.Any] = js.undefined
@@ -8883,19 +8883,19 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var offset: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var origin: js.UndefOr[scala.Double] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var pieHeight: js.UndefOr[scala.Double] = js.undefined
-    var pieInnerText: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var pieInnerText: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var preset: js.UndefOr[java.lang.String] = js.undefined
     var radius: js.UndefOr[scala.Double] = js.undefined
     var range: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
     var scale: js.UndefOr[java.lang.String] = js.undefined
@@ -8905,7 +8905,7 @@ object uiNs extends js.Object {
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
-    var value: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var value: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
     var x: js.UndefOr[scala.Double] = js.undefined
@@ -8959,15 +8959,15 @@ object uiNs extends js.Object {
   @js.native
   class rangeslider () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: java.lang.String = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touchCapture")
@@ -8975,7 +8975,7 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_rangeslider: rangesliderConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -8997,8 +8997,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: rangesliderEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: rangesliderEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: rangesliderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: rangesliderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -9014,7 +9014,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -9027,7 +9027,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -9053,7 +9053,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var relatedAction: js.UndefOr[java.lang.String] = js.undefined
     var relatedView: js.UndefOr[java.lang.String] = js.undefined
@@ -9062,9 +9062,9 @@ object uiNs extends js.Object {
     var step: js.UndefOr[scala.Double] = js.undefined
     var stringResult: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var title: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var title: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -9099,8 +9099,8 @@ object uiNs extends js.Object {
   trait resizearea extends js.Object {
     var config: resizeareaConfig = js.native
     var name: java.lang.String = js.native
-    def attachEvent(`type`: resizeareaEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: resizeareaEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: resizeareaEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: resizeareaEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def define(property: java.lang.String, value: js.Any): scala.Unit = js.native
@@ -9118,7 +9118,7 @@ object uiNs extends js.Object {
     var eventPos: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var start: js.UndefOr[scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -9137,12 +9137,12 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_resizer: resizerConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     def on_click(args: js.Any*): js.Any = js.native
     def on_dblclick(args: js.Any*): js.Any = js.native
     def on_mouse_move(args: js.Any*): js.Any = js.native
@@ -9196,19 +9196,19 @@ object uiNs extends js.Object {
   @js.native
   class richselect () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_richselect: richselectConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -9230,8 +9230,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: richselectEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: richselectEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: richselectEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: richselectEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -9250,7 +9250,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -9263,7 +9263,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -9289,7 +9289,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var options: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -9300,7 +9300,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -9336,8 +9336,8 @@ object uiNs extends js.Object {
     var $$: js.Any = js.native
     @JSName("config")
     var config_richtext: richtextConfig = js.native
-    def attachEvent(`type`: richtextEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: richtextEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: richtextEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: richtextEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -9371,7 +9371,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -9394,8 +9394,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_scrollview: scrollviewConfig = js.native
-    def attachEvent(`type`: scrollviewEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: scrollviewEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: scrollviewEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: scrollviewEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -9425,7 +9425,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -9454,19 +9454,19 @@ object uiNs extends js.Object {
   @js.native
   class search () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_search: searchConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -9488,8 +9488,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: searchEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: searchEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: searchEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: searchEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -9505,7 +9505,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -9518,7 +9518,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -9544,7 +9544,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pattern: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -9555,7 +9555,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -9589,19 +9589,19 @@ object uiNs extends js.Object {
   @js.native
   class segmented () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_segmented: segmentedConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -9632,8 +9632,8 @@ object uiNs extends js.Object {
     def addOption(obj: js.Any): scala.Unit = js.native
     def addOption(obj: js.Any, show: scala.Boolean): scala.Unit = js.native
     def addOption(obj: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
-    def attachEvent(`type`: segmentedEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: segmentedEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: segmentedEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: segmentedEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -9657,7 +9657,7 @@ object uiNs extends js.Object {
     def setValue(value: java.lang.String): scala.Unit = js.native
     def showOption(id: java.lang.String): scala.Unit = js.native
     def showOption(id: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -9669,7 +9669,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -9694,7 +9694,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multiview: js.UndefOr[scala.Boolean] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var optionWidth: js.UndefOr[scala.Double] = js.undefined
     var options: js.UndefOr[js.Any] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -9703,7 +9703,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -9739,19 +9739,19 @@ object uiNs extends js.Object {
   @js.native
   class select () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_select: selectConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -9773,8 +9773,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: selectEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: selectEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: selectEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: selectEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -9802,7 +9802,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -9827,7 +9827,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var options: js.UndefOr[js.Array[_] | java.lang.String] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -9837,7 +9837,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -9870,23 +9870,23 @@ object uiNs extends js.Object {
   @js.native
   class sidebar () extends baseview {
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$fixEditor")
-    var $fixEditor_Original: webixLib.WebixCallback = js.native
+    var $fixEditor_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_sidebar: sidebarConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -9917,8 +9917,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: sidebarEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: sidebarEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: sidebarEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: sidebarEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def checkAll(): scala.Unit = js.native
@@ -9946,18 +9946,18 @@ object uiNs extends js.Object {
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
     def expand(): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getBranchIndex(id: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: scala.Double): scala.Double = js.native
@@ -10008,13 +10008,13 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -10058,7 +10058,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def toggle(): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def uncheckAll(): scala.Unit = js.native
@@ -10079,14 +10079,14 @@ object uiNs extends js.Object {
     var activeTitle: js.UndefOr[scala.Boolean] = js.undefined
     var animate: js.UndefOr[js.Any] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var collapsed: js.UndefOr[scala.Boolean] = js.undefined
     var collapsedWidth: js.UndefOr[scala.Double] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -10105,14 +10105,14 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
     var position: js.UndefOr[java.lang.String] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -10120,8 +10120,8 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var titleHeight: js.UndefOr[scala.Double] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
@@ -10197,8 +10197,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_sidemenu: sidemenuConfig = js.native
-    def attachEvent(`type`: sidemenuEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: sidemenuEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: sidemenuEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: sidemenuEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -10235,13 +10235,13 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
-    var state: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var state: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -10276,13 +10276,13 @@ object uiNs extends js.Object {
   @js.native
   class slider () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touchCapture")
@@ -10290,7 +10290,7 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_slider: sliderConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -10312,8 +10312,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: sliderEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: sliderEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: sliderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: sliderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -10329,7 +10329,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -10342,7 +10342,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -10370,7 +10370,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var moveTitle: js.UndefOr[scala.Boolean] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
@@ -10379,9 +10379,9 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var step: js.UndefOr[scala.Double] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
-    var title: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var title: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var vertical: js.UndefOr[scala.Boolean] = js.undefined
@@ -10470,8 +10470,8 @@ object uiNs extends js.Object {
     def addSparkline(rowId: scala.Double, columnId: scala.Double, config: js.Any): scala.Unit = js.native
     def addStyle(styleProps: js.Any, baseStyle: js.Any): scala.Unit = js.native
     def alert(config: js.Any): stdLib.HTMLElement = js.native
-    def attachEvent(`type`: spreadsheetEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: spreadsheetEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: spreadsheetEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: spreadsheetEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearRange(rangeStr: java.lang.String, `type`: js.Any): scala.Unit = js.native
@@ -10483,7 +10483,7 @@ object uiNs extends js.Object {
     def deleteColumn(columnId: scala.Double): scala.Unit = js.native
     def deleteRow(rowId: scala.Double): scala.Unit = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def eachSelectedCell(handler: webixLib.WebixCallback): scala.Unit = js.native
+    def eachSelectedCell(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def editSheet(name: java.lang.String): scala.Unit = js.native
     def filterSpreadSheet(): scala.Unit = js.native
     def freezeColumns(columns: scala.Double): scala.Unit = js.native
@@ -10511,14 +10511,14 @@ object uiNs extends js.Object {
     def isRowVisible(rowId: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def lockCell(row: js.Any, column: js.Any, state: scala.Boolean): scala.Unit = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def recalculate(): scala.Unit = js.native
     def redo(): scala.Unit = js.native
     def refresh(): scala.Unit = js.native
-    def registerMathMethod(name: java.lang.String, handler: webixLib.WebixCallback): scala.Unit = js.native
+    def registerMathMethod(name: java.lang.String, handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def removeFilter(): scala.Unit = js.native
     def removeSheet(name: java.lang.String): scala.Unit = js.native
     def renameSheet(name: java.lang.String, newName: java.lang.String): scala.Unit = js.native
@@ -10568,7 +10568,7 @@ object uiNs extends js.Object {
     var menu: js.UndefOr[scala.Boolean] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -10612,23 +10612,23 @@ object uiNs extends js.Object {
   @js.native
   class submenu () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_submenu: submenuConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -10659,8 +10659,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: submenuEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: submenuEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: submenuEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: submenuEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -10684,18 +10684,18 @@ object uiNs extends js.Object {
     def enableItem(id: scala.Double): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getBody(): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getHead(): js.Any = js.native
@@ -10733,11 +10733,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -10789,7 +10789,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
     def unselect(id: java.lang.String): scala.Unit = js.native
@@ -10808,12 +10808,12 @@ object uiNs extends js.Object {
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var body: js.UndefOr[java.lang.String | baseview] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datafetch: js.UndefOr[scala.Double] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -10821,7 +10821,7 @@ object uiNs extends js.Object {
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dynamic: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
     var headHeight: js.UndefOr[scala.Double] = js.undefined
@@ -10841,17 +10841,17 @@ object uiNs extends js.Object {
     var move: js.UndefOr[scala.Boolean] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var openAction: js.UndefOr[java.lang.String] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
@@ -10863,8 +10863,8 @@ object uiNs extends js.Object {
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var subMenuPos: js.UndefOr[java.lang.String] = js.undefined
     var submenuConfig: js.UndefOr[js.Any] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -10940,15 +10940,15 @@ object uiNs extends js.Object {
   @js.native
   class suggest () extends baseview {
     @JSName("$enterKey")
-    var $enterKey_Original: webixLib.WebixCallback = js.native
+    var $enterKey_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_suggest: suggestConfig = js.native
     @JSName("$enterKey")
     def $enterKey(args: js.Any*): js.Any = js.native
-    def attachEvent(`type`: suggestEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: suggestEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: suggestEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: suggestEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -10986,7 +10986,7 @@ object uiNs extends js.Object {
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
-    var filter: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var filter: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var fitMaster: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var head: js.UndefOr[js.Any] = js.undefined
@@ -11004,13 +11004,13 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixTemplate] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixTemplate] = js.undefined
     var textValue: js.UndefOr[java.lang.String] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined
     var top: js.UndefOr[scala.Double] = js.undefined
@@ -11049,19 +11049,19 @@ object uiNs extends js.Object {
   @js.native
   class switchButton () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_switchButton: switchButtonConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -11081,8 +11081,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: switchButtonEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: switchButtonEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: switchButtonEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: switchButtonEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -11098,7 +11098,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def toggle(): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
@@ -11114,7 +11114,7 @@ object uiNs extends js.Object {
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
     var checkValue: js.UndefOr[java.lang.String] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var customCheckbox: js.UndefOr[scala.Boolean] = js.undefined
@@ -11143,7 +11143,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pattern: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -11155,7 +11155,7 @@ object uiNs extends js.Object {
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var uncheckValue: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11188,19 +11188,19 @@ object uiNs extends js.Object {
   @js.native
   class tabbar () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_tabbar: tabbarConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -11231,8 +11231,8 @@ object uiNs extends js.Object {
     def addOption(obj: js.Any): scala.Unit = js.native
     def addOption(obj: js.Any, show: scala.Boolean): scala.Unit = js.native
     def addOption(obj: js.Any, show: scala.Boolean, index: scala.Double): scala.Unit = js.native
-    def attachEvent(`type`: tabbarEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: tabbarEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: tabbarEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: tabbarEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -11257,7 +11257,7 @@ object uiNs extends js.Object {
     def setValue(value: java.lang.String): scala.Unit = js.native
     def showOption(id: java.lang.String): scala.Unit = js.native
     def showOption(id: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -11271,7 +11271,7 @@ object uiNs extends js.Object {
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomOffset: js.UndefOr[scala.Double] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -11295,15 +11295,15 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var moreTemplate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var moreTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var multiview: js.UndefOr[scala.Boolean] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var optionWidth: js.UndefOr[scala.Double] = js.undefined
     var options: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
-    var popupTemplate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var popupTemplate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var popupWidth: js.UndefOr[scala.Double] = js.undefined
     var readonly: js.UndefOr[scala.Boolean] = js.undefined
     var relatedAction: js.UndefOr[java.lang.String] = js.undefined
@@ -11317,7 +11317,7 @@ object uiNs extends js.Object {
     var tabbarPopup: js.UndefOr[baseview] = js.undefined
     var topOffset: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11357,8 +11357,8 @@ object uiNs extends js.Object {
     @JSName("config")
     var config_tabview: tabviewConfig = js.native
     def addView(obj: js.Any): scala.Unit = js.native
-    def attachEvent(`type`: tabviewEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: tabviewEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: tabviewEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: tabviewEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -11388,7 +11388,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multiview: js.UndefOr[js.Any] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -11410,8 +11410,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_template: templateConfig = js.native
-    def attachEvent(`type`: templateEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: templateEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: templateEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: templateEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
@@ -11420,7 +11420,7 @@ object uiNs extends js.Object {
     def hasEvent(name: java.lang.String): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def parse(data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def refresh(): scala.Unit = js.native
@@ -11431,7 +11431,7 @@ object uiNs extends js.Object {
     def setHTML(html: java.lang.String): scala.Unit = js.native
     def setValues(obj: js.Any): scala.Unit = js.native
     def setValues(obj: js.Any, update: scala.Boolean): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -11443,7 +11443,7 @@ object uiNs extends js.Object {
     var content: js.UndefOr[java.lang.String | scala.Double | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
@@ -11454,12 +11454,12 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var src: js.UndefOr[java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11493,19 +11493,19 @@ object uiNs extends js.Object {
   @js.native
   class text () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_text: textConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -11525,8 +11525,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: textEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: textEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: textEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: textEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -11542,7 +11542,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -11555,7 +11555,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -11581,7 +11581,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pattern: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -11592,7 +11592,7 @@ object uiNs extends js.Object {
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11625,19 +11625,19 @@ object uiNs extends js.Object {
   @js.native
   class textarea () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$renderIcon")
-    var $renderIcon_Original: webixLib.WebixCallback = js.native
+    var $renderIcon_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$render")
-    var $render_Original: webixLib.WebixCallback = js.native
+    var $render_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_textarea: textareaConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -11659,8 +11659,8 @@ object uiNs extends js.Object {
     def $renderLabel(config: js.Any, id: scala.Double): java.lang.String = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: textareaEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: textareaEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: textareaEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: textareaEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -11676,7 +11676,7 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setBottomText(text: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def validate(): scala.Boolean = js.native
   }
@@ -11689,7 +11689,7 @@ object uiNs extends js.Object {
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var bottomLabel: js.UndefOr[java.lang.String] = js.undefined
     var bottomPadding: js.UndefOr[scala.Double] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -11714,7 +11714,7 @@ object uiNs extends js.Object {
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var pattern: js.UndefOr[js.Any] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -11724,7 +11724,7 @@ object uiNs extends js.Object {
     var required: js.UndefOr[scala.Boolean] = js.undefined
     var suggest: js.UndefOr[js.Any] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
-    var validate: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var validate: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var validateEvent: js.UndefOr[java.lang.String] = js.undefined
     var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
@@ -11757,15 +11757,15 @@ object uiNs extends js.Object {
   @js.native
   class toggle () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_toggle: toggleConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -11777,8 +11777,8 @@ object uiNs extends js.Object {
     def $renderInput(config: js.Any): stdLib.HTMLElement = js.native
     @JSName("$setValue")
     def $setValue(value: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: toggleEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: toggleEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: toggleEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: toggleEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -11793,7 +11793,7 @@ object uiNs extends js.Object {
     def render(id: java.lang.String, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def toggle(): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
@@ -11803,7 +11803,7 @@ object uiNs extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -11822,7 +11822,7 @@ object uiNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var offIcon: js.UndefOr[java.lang.String] = js.undefined
     var offLabel: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onIcon: js.UndefOr[java.lang.String] = js.undefined
     var onLabel: js.UndefOr[java.lang.String] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
@@ -11862,8 +11862,8 @@ object uiNs extends js.Object {
     var config_toolbar: toolbarConfig = js.native
     def addView(view: js.Any): java.lang.String | scala.Double = js.native
     def addView(view: js.Any, index: scala.Double): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: toolbarEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: toolbarEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: toolbarEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: toolbarEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clear(): scala.Unit = js.native
@@ -11880,7 +11880,7 @@ object uiNs extends js.Object {
     def isDirty(): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
     def markInvalid(name: java.lang.String): scala.Unit = js.native
     def markInvalid(name: java.lang.String, state: java.lang.String): scala.Unit = js.native
@@ -11893,10 +11893,10 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def resizeChildren(): scala.Unit = js.native
     def restore(state: js.Any): scala.Unit = js.native
-    def restore(state: js.Any, factory: webixLib.WebixCallback): scala.Unit = js.native
+    def restore(state: js.Any, factory: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def scrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
     def serialize(): js.Any = js.native
-    def serialize(serializer: webixLib.WebixCallback): js.Any = js.native
+    def serialize(serializer: webixLib.webixMod.WebixCallback): js.Any = js.native
     def setDirty(): scala.Unit = js.native
     def setDirty(mark: scala.Boolean): scala.Unit = js.native
     def setValues(values: js.Any): scala.Unit = js.native
@@ -11916,7 +11916,7 @@ object uiNs extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
     var elements: js.UndefOr[js.Array[_]] = js.undefined
@@ -11931,7 +11931,7 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[scala.Double] = js.undefined
     var paddingX: js.UndefOr[scala.Double] = js.undefined
     var paddingY: js.UndefOr[scala.Double] = js.undefined
@@ -11970,7 +11970,7 @@ object uiNs extends js.Object {
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$skin")
-    var $skin_Original: webixLib.WebixCallback = js.native
+    var $skin_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$view")
     var $view: stdLib.HTMLElement = js.native
     @JSName("$width")
@@ -11985,8 +11985,8 @@ object uiNs extends js.Object {
     @JSName("$skin")
     def $skin(args: js.Any*): js.Any = js.native
     def adjust(): scala.Unit = js.native
-    def attachEvent(`type`: tooltipEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: tooltipEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: tooltipEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: tooltipEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def customize(obj: js.Any): scala.Unit = js.native
@@ -12030,8 +12030,8 @@ object uiNs extends js.Object {
     var maxWidth: js.UndefOr[scala.Double] = js.undefined
     var minHeight: js.UndefOr[scala.Double] = js.undefined
     var minWidth: js.UndefOr[scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
@@ -12060,23 +12060,23 @@ object uiNs extends js.Object {
   @js.native
   class tree () extends baseview {
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$fixEditor")
-    var $fixEditor_Original: webixLib.WebixCallback = js.native
+    var $fixEditor_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_tree: treeConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -12108,8 +12108,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: treeEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: treeEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: treeEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: treeEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def checkAll(): scala.Unit = js.native
@@ -12135,18 +12135,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getBranchIndex(id: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: scala.Double): scala.Double = js.native
@@ -12194,13 +12194,13 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -12243,7 +12243,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def uncheckAll(): scala.Unit = js.native
     def uncheckAll(id: java.lang.String): scala.Unit = js.native
@@ -12262,7 +12262,7 @@ object uiNs extends js.Object {
   trait treeConfig extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
@@ -12285,12 +12285,12 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -12298,8 +12298,8 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
@@ -12376,12 +12376,12 @@ object uiNs extends js.Object {
     var config_treemap: treemapConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -12391,8 +12391,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: treemapEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: treemapEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: treemapEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: treemapEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -12408,18 +12408,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getBranchIndex(id: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: java.lang.String): scala.Double = js.native
     def getBranchIndex(id: java.lang.String, parent: scala.Double): scala.Double = js.native
@@ -12466,13 +12466,13 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -12515,7 +12515,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def ungroup(mode: scala.Boolean): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
@@ -12532,12 +12532,12 @@ object uiNs extends js.Object {
     var animate: js.UndefOr[js.Any] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
     var branch: js.UndefOr[java.lang.String] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var data: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
-    var dataFeed: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var dataFeed: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var datathrottle: js.UndefOr[scala.Double] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
     var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -12557,13 +12557,13 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -12572,13 +12572,13 @@ object uiNs extends js.Object {
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var subRender: js.UndefOr[scala.Boolean] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
-    var value: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var value: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
@@ -12638,26 +12638,26 @@ object uiNs extends js.Object {
   @js.native
   class treetable () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$touch")
-    var $touch_Original: webixLib.WebixCallback = js.native
+    var $touch_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_treetable: treetableConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     var headerContent: js.Any = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var waitData: js.Promise[_] = js.native
     @JSName("$customPrint")
     def $customPrint(args: js.Any*): js.Any = js.native
@@ -12698,8 +12698,8 @@ object uiNs extends js.Object {
     def adjustRowHeight(): scala.Unit = js.native
     def adjustRowHeight(columnId: java.lang.String): scala.Unit = js.native
     def adjustRowHeight(columnId: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: treetableEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: treetableEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: treetableEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: treetableEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def checkAll(): scala.Unit = js.native
@@ -12726,9 +12726,9 @@ object uiNs extends js.Object {
     def copy(sid: scala.Double, tindex: scala.Double, tobj: baseview, details: js.Any): scala.Double = js.native
     def count(): scala.Double = js.native
     def detachEvent(id: java.lang.String): scala.Unit = js.native
-    def eachColumn(handler: webixLib.WebixCallback): scala.Unit = js.native
-    def eachColumn(handler: webixLib.WebixCallback, all: scala.Boolean): scala.Unit = js.native
-    def eachRow(handler: webixLib.WebixCallback): scala.Unit = js.native
+    def eachColumn(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
+    def eachColumn(handler: webixLib.webixMod.WebixCallback, all: scala.Boolean): scala.Unit = js.native
+    def eachRow(handler: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def edit(id: js.Any): scala.Unit = js.native
     def editCancel(): scala.Unit = js.native
     def editCell(row: java.lang.String, col: java.lang.String): scala.Unit = js.native
@@ -12749,10 +12749,10 @@ object uiNs extends js.Object {
     def editStop(): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
@@ -12760,8 +12760,8 @@ object uiNs extends js.Object {
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
     def filterByAll(): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def focusEditor(id: js.Any): scala.Unit = js.native
     def freezeRow(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def freezeRow(id: scala.Double, state: scala.Boolean): scala.Unit = js.native
@@ -12852,13 +12852,13 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Unit = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-    def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-    def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
+    def loadBranch(id: java.lang.String, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
+    def loadBranch(id: scala.Double, callback: webixLib.webixMod.WebixCallback, url: java.lang.String): scala.Unit = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -12869,10 +12869,10 @@ object uiNs extends js.Object {
       startcol: java.lang.String,
       numrows: scala.Double,
       numcols: scala.Double,
-      callback: webixLib.WebixCallback
+      callback: webixLib.webixMod.WebixCallback
     ): scala.Unit = js.native
     def mapEvent(map: js.Any): scala.Unit = js.native
-    def mapSelection(callback: webixLib.WebixCallback): scala.Unit = js.native
+    def mapSelection(callback: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def markSorting(column_id: java.lang.String, direction: java.lang.String): scala.Unit = js.native
     def move(sid: java.lang.String, tindex: scala.Double): java.lang.String | scala.Double = js.native
     def move(sid: java.lang.String, tindex: scala.Double, tobj: baseview): java.lang.String | scala.Double = js.native
@@ -12949,7 +12949,7 @@ object uiNs extends js.Object {
     def sort(by: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
     def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def uncheckAll(): scala.Unit = js.native
     def uncheckAll(id: java.lang.String): scala.Unit = js.native
@@ -12995,7 +12995,7 @@ object uiNs extends js.Object {
     var editValue: js.UndefOr[java.lang.String] = js.undefined
     var editable: js.UndefOr[scala.Boolean] = js.undefined
     var editaction: js.UndefOr[java.lang.String] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var filterMode: js.UndefOr[js.Any] = js.undefined
     var fixedRowHeight: js.UndefOr[scala.Boolean] = js.undefined
     var footer: js.UndefOr[scala.Boolean] = js.undefined
@@ -13022,14 +13022,14 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
     var prerender: js.UndefOr[scala.Boolean] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var resizeColumn: js.UndefOr[js.Any] = js.undefined
     var resizeRow: js.UndefOr[scala.Boolean] = js.undefined
@@ -13047,8 +13047,8 @@ object uiNs extends js.Object {
     var spans: js.UndefOr[js.Array[_]] = js.undefined
     var subRowHeight: js.UndefOr[java.lang.String] = js.undefined
     var subrow: js.UndefOr[java.lang.String] = js.undefined
-    var subview: js.UndefOr[baseview | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var subview: js.UndefOr[baseview | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var threeState: js.UndefOr[scala.Boolean] = js.undefined
     var tooltip: js.UndefOr[scala.Boolean] = js.undefined
     var topSplit: js.UndefOr[scala.Double] = js.undefined
@@ -13160,23 +13160,23 @@ object uiNs extends js.Object {
   @js.native
   class unitlist () extends baseview {
     @JSName("$customPrint")
-    var $customPrint_Original: webixLib.WebixCallback = js.native
+    var $customPrint_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dragHTML")
-    var $dragHTML_Original: webixLib.WebixCallback = js.native
+    var $dragHTML_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$dropAllow")
-    var $dropAllow_Original: webixLib.WebixCallback = js.native
+    var $dropAllow_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("config")
     var config_unitlist: unitlistConfig = js.native
     var data: webixLib.webixMod.DataStore = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var on_context: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     @JSName("on_dblclick")
-    var on_dblclick_Original: webixLib.WebixCallback = js.native
+    var on_dblclick_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("on_mouse_move")
-    var on_mouse_move_Original: webixLib.WebixCallback = js.native
+    var on_mouse_move_Original: webixLib.webixMod.WebixCallback = js.native
     var `type`: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var types: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     var waitData: js.Promise[_] = js.native
@@ -13207,8 +13207,8 @@ object uiNs extends js.Object {
     def addCss(id: java.lang.String, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String): scala.Unit = js.native
     def addCss(id: scala.Double, css: java.lang.String, silent: scala.Boolean): scala.Unit = js.native
-    def attachEvent(`type`: unitlistEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: unitlistEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: unitlistEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: unitlistEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def clearAll(): scala.Unit = js.native
@@ -13227,18 +13227,18 @@ object uiNs extends js.Object {
     def detachEvent(id: java.lang.String): scala.Unit = js.native
     def exists(id: java.lang.String): scala.Boolean = js.native
     def exists(id: scala.Double): scala.Boolean = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-    def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate): scala.Unit = js.native
+    def filter(text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate, value: java.lang.String): scala.Unit = js.native
     def filter(
-      text: webixLib.WebixCallback | webixLib.WebixTemplate,
+      text: webixLib.webixMod.WebixCallback | webixLib.webixMod.WebixTemplate,
       value: java.lang.String,
       preserve: scala.Boolean
     ): scala.Unit = js.native
     def filter(text: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
     def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-    def find(criterion: webixLib.WebixCallback): js.Any = js.native
-    def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback): js.Any = js.native
+    def find(criterion: webixLib.webixMod.WebixCallback, first: scala.Boolean): js.Any = js.native
     def getFirstId(): java.lang.String | scala.Double = js.native
     def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
     def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -13267,11 +13267,11 @@ object uiNs extends js.Object {
     def isSelected(id: scala.Double): scala.Boolean = js.native
     def load(url: java.lang.String): js.Promise[_] = js.native
     def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+    def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.webixMod.WebixCallback): js.Promise[_] = js.native
     def loadNext(
       count: scala.Double,
       start: scala.Double,
-      callback: webixLib.WebixCallback,
+      callback: webixLib.webixMod.WebixCallback,
       url: java.lang.String,
       now: scala.Boolean
     ): scala.Unit = js.native
@@ -13314,7 +13314,7 @@ object uiNs extends js.Object {
     def setPage(page: scala.Double): scala.Unit = js.native
     def showItem(id: java.lang.String): scala.Unit = js.native
     def showItem(id: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
     def unselect(): scala.Unit = js.native
     def unselect(id: java.lang.String): scala.Unit = js.native
@@ -13330,7 +13330,7 @@ object uiNs extends js.Object {
     var autoheight: js.UndefOr[scala.Boolean] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var clipboard: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
@@ -13342,7 +13342,7 @@ object uiNs extends js.Object {
     var drag: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dragscroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var dynamic: js.UndefOr[scala.Boolean] = js.undefined
-    var externalData: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var externalData: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var gravity: js.UndefOr[scala.Double] = js.undefined
     var height: js.UndefOr[scala.Double] = js.undefined
     var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -13356,13 +13356,13 @@ object uiNs extends js.Object {
     var mouseEventDelay: js.UndefOr[scala.Double] = js.undefined
     var multiselect: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var navigation: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var onClick: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
     var onContext: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-    var onDblClick: js.UndefOr[webixLib.WebixCallback] = js.undefined
-    var onMouseMove: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var onDblClick: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
+    var onMouseMove: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var pager: js.UndefOr[js.Any] = js.undefined
-    var ready: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var ready: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var removeMissed: js.UndefOr[scala.Boolean] = js.undefined
     var rules: js.UndefOr[js.Any] = js.undefined
     var save: js.UndefOr[java.lang.String] = js.undefined
@@ -13370,11 +13370,11 @@ object uiNs extends js.Object {
     var scroll: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
     var scrollSpeed: js.UndefOr[java.lang.String] = js.undefined
     var select: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-    var template: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
-    var templateCopy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var template: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
+    var templateCopy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var tooltip: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     var `type`: js.UndefOr[js.Any] = js.undefined
-    var uniteBy: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var uniteBy: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var url: js.UndefOr[js.Any] = js.undefined
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
@@ -13439,21 +13439,21 @@ object uiNs extends js.Object {
   @js.native
   class uploader () extends baseview {
     @JSName("$compareValue")
-    var $compareValue_Original: webixLib.WebixCallback = js.native
+    var $compareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$cssName")
     var $cssName: java.lang.String = js.native
     @JSName("$onUploadComplete")
-    var $onUploadComplete_Original: webixLib.WebixCallback = js.native
+    var $onUploadComplete_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$prepareValue")
-    var $prepareValue_Original: webixLib.WebixCallback = js.native
+    var $prepareValue_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("$scope")
     var $scope: js.Any = js.native
     @JSName("$updateProgress")
-    var $updateProgress_Original: webixLib.WebixCallback = js.native
+    var $updateProgress_Original: webixLib.webixMod.WebixCallback = js.native
     @JSName("config")
     var config_uploader: uploaderConfig = js.native
     @JSName("on_click")
-    var on_click_Original: webixLib.WebixCallback = js.native
+    var on_click_Original: webixLib.webixMod.WebixCallback = js.native
     var touchable: scala.Boolean = js.native
     @JSName("$compareValue")
     def $compareValue(args: js.Any*): js.Any = js.native
@@ -13472,8 +13472,8 @@ object uiNs extends js.Object {
     def addDropZone(element: stdLib.HTMLElement): scala.Unit = js.native
     def addFile(name: java.lang.String, size: scala.Double): scala.Unit = js.native
     def addFile(name: java.lang.String, size: scala.Double, `type`: java.lang.String): scala.Unit = js.native
-    def attachEvent(`type`: uploaderEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: uploaderEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: uploaderEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: uploaderEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def blur(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
@@ -13492,11 +13492,11 @@ object uiNs extends js.Object {
     def render(id: scala.Double, data: js.Any, `type`: java.lang.String): scala.Unit = js.native
     def send(id: java.lang.String): scala.Unit = js.native
     def send(id: scala.Double): scala.Unit = js.native
-    def send(id: webixLib.WebixCallback): scala.Unit = js.native
+    def send(id: webixLib.webixMod.WebixCallback): scala.Unit = js.native
     def setValue(value: java.lang.String): scala.Unit = js.native
     def stopUpload(id: java.lang.String): scala.Unit = js.native
     def stopUpload(id: scala.Double): scala.Unit = js.native
-    def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+    def sync(source: js.Any, filter: webixLib.webixMod.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
     def unblockEvent(): scala.Unit = js.native
   }
   
@@ -13508,7 +13508,7 @@ object uiNs extends js.Object {
     var autosend: js.UndefOr[scala.Boolean] = js.undefined
     var autowidth: js.UndefOr[scala.Boolean] = js.undefined
     var borderless: js.UndefOr[scala.Boolean] = js.undefined
-    var click: js.UndefOr[webixLib.WebixCallback] = js.undefined
+    var click: js.UndefOr[webixLib.webixMod.WebixCallback] = js.undefined
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var css: js.UndefOr[js.Any] = js.undefined
     var datatype: js.UndefOr[java.lang.String] = js.undefined
@@ -13531,7 +13531,7 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var multiple: js.UndefOr[scala.Boolean] = js.undefined
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var popup: js.UndefOr[java.lang.String] = js.undefined
     var tooltip: js.UndefOr[java.lang.String] = js.undefined
     var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -13667,8 +13667,8 @@ object uiNs extends js.Object {
     var config: vscrollConfig = js.native
     var name: java.lang.String = js.native
     def activeArea(node: stdLib.HTMLElement): scala.Unit = js.native
-    def attachEvent(`type`: vscrollEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: vscrollEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: vscrollEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: vscrollEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def define(property: java.lang.String, value: js.Any): scala.Unit = js.native
@@ -13686,7 +13686,7 @@ object uiNs extends js.Object {
   trait vscrollConfig extends js.Object {
     var container: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
     var id: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var scroll: js.UndefOr[java.lang.String] = js.undefined
     var scrollHeight: js.UndefOr[scala.Double] = js.undefined
     var scrollPos: js.UndefOr[scala.Double] = js.undefined
@@ -13704,8 +13704,8 @@ object uiNs extends js.Object {
     var $scope: js.Any = js.native
     @JSName("config")
     var config_window: windowConfig = js.native
-    def attachEvent(`type`: windowEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-    def attachEvent(`type`: windowEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: windowEventName, functor: webixLib.webixMod.WebixCallback): java.lang.String | scala.Double = js.native
+    def attachEvent(`type`: windowEventName, functor: webixLib.webixMod.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
     def blockEvent(): scala.Unit = js.native
     def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
     def close(): scala.Unit = js.native
@@ -13746,10 +13746,10 @@ object uiNs extends js.Object {
     var minWidth: js.UndefOr[scala.Double] = js.undefined
     var modal: js.UndefOr[scala.Boolean] = js.undefined
     var move: js.UndefOr[scala.Boolean] = js.undefined
-    var on: js.UndefOr[webixLib.EventHash] = js.undefined
+    var on: js.UndefOr[webixLib.webixMod.EventHash] = js.undefined
     var padding: js.UndefOr[js.Any] = js.undefined
     var point: js.UndefOr[scala.Boolean] = js.undefined
-    var position: js.UndefOr[java.lang.String | webixLib.WebixCallback] = js.undefined
+    var position: js.UndefOr[java.lang.String | webixLib.webixMod.WebixCallback] = js.undefined
     var relative: js.UndefOr[java.lang.String] = js.undefined
     var resize: js.UndefOr[scala.Boolean] = js.undefined
     var toFront: js.UndefOr[scala.Boolean] = js.undefined

@@ -27,9 +27,9 @@ class Service protected () extends NamespaceBase {
     * @param [responseDelimited=false] Whether responses are length-delimited
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
-  def create(rpcImpl: protobufjsLib.RPCImpl): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
-  def create(rpcImpl: protobufjsLib.RPCImpl, requestDelimited: scala.Boolean): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
-  def create(rpcImpl: protobufjsLib.RPCImpl, requestDelimited: scala.Boolean, responseDelimited: scala.Boolean): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
+  def create(rpcImpl: RPCImpl): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: scala.Boolean): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: scala.Boolean, responseDelimited: scala.Boolean): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
 }
 
 /* static members */

@@ -9,32 +9,28 @@ import scala.scalajs.js.annotation._
   *
   * Provides information about the shape that raised the Deactivated event.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait ShapeDeactivatedEventArgs extends js.Object {
   /**
     *
     * Gets the id of the shape deactivated shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shapeId: java.lang.String
   /**
     *
     * Gets the type of the event. See Excel.EventType for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeDeactivated
   /**
     *
     * Gets the id of the worksheet in which the shape is deactivated.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var worksheetId: java.lang.String
 }

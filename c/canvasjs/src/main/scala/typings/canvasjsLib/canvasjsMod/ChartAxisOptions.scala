@@ -16,7 +16,7 @@ trait ChartAxisOptions extends js.Object {
     * Sets the dash type for axisY.
     * Default: "solid"
     */
-  var lineDashType: js.UndefOr[canvasjsLib.DashType] = js.undefined
+  var lineDashType: js.UndefOr[DashType] = js.undefined
   /**
     * Sets the Thickness of Axis line in pixels.
     * Default: 2
@@ -97,7 +97,7 @@ object ChartAxisOptions {
   @scala.inline
   def apply(
     lineColor: java.lang.String = null,
-    lineDashType: canvasjsLib.DashType = null,
+    lineDashType: DashType = null,
     lineThickness: scala.Int | scala.Double = null,
     margin: scala.Int | scala.Double = null,
     maximum: scala.Int | scala.Double = null,

@@ -9,7 +9,7 @@ trait Anon_IdentityKindNameTypes extends js.Object {
   var identity: scala.Boolean
   var kind: java.lang.String
   var name: java.lang.String
-  var types: js.Array[Constructor[_]]
+  var types: js.Array[tcombLib.tcombMod.Constructor[_]]
 }
 
 object Anon_IdentityKindNameTypes {
@@ -18,7 +18,7 @@ object Anon_IdentityKindNameTypes {
     identity: scala.Boolean,
     kind: java.lang.String,
     name: java.lang.String,
-    types: js.Array[Constructor[_]]
+    types: js.Array[tcombLib.tcombMod.Constructor[_]]
   ): Anon_IdentityKindNameTypes = {
     val __obj = js.Dynamic.literal(identity = identity, kind = kind, name = name, types = types)
   

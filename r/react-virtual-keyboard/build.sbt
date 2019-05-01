@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-virtual-keyboard"
-version := "1.0-dt-20190212Z-6a9fab"
+version := "1.0-dt-20190212Z-ab90fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-61d3d0",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-7e744c",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-caf3c8",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc",
-  "org.scalablytyped" %%% "virtual-keyboard" % "1.26-dt-20190212Z-ce3572")
+  "org.scalablytyped" %%% "csstype" % "2.6.3-908b0a",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-e0e6aa",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-aae4f0",
+  "org.scalablytyped" %%% "std" % "3.4-495f93",
+  "org.scalablytyped" %%% "virtual-keyboard" % "1.26-dt-20190212Z-69ac67")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

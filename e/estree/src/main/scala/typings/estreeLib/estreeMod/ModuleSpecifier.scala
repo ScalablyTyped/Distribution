@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
   - ImportNamespaceSpecifier
   - ExportSpecifier
 */
-trait ModuleSpecifier extends _Node
+trait ModuleSpecifier extends Node
 

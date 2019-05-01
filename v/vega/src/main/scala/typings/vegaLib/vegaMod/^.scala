@@ -13,9 +13,13 @@ object ^ extends js.Object {
   val None: scala.Double = js.native
   val Warn: scala.Double = js.native
   val version: java.lang.String = js.native
-  def accessor[R](fn: vegaDashUtilLib.Fn[R]): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
-  def accessor[R](fn: vegaDashUtilLib.Fn[R], fields: js.Array[java.lang.String]): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
-  def accessor[R](fn: vegaDashUtilLib.Fn[R], fields: js.Array[java.lang.String], name: java.lang.String): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
+  def accessor[R](fn: vegaDashUtilLib.vegaDashUtilMod.Fn[R]): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
+  def accessor[R](fn: vegaDashUtilLib.vegaDashUtilMod.Fn[R], fields: js.Array[java.lang.String]): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
+  def accessor[R](
+    fn: vegaDashUtilLib.vegaDashUtilMod.Fn[R],
+    fields: js.Array[java.lang.String],
+    name: java.lang.String
+  ): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
   def accessorFields(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): js.Array[java.lang.String] = js.native
   def accessorName(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): java.lang.String = js.native
   def array[T](v: T): js.Array[T] = js.native

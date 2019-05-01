@@ -51,7 +51,7 @@ trait RaygunV2 extends js.Object {
   ): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.saveIfOffline, value: scala.Boolean): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.send, value: js.Any): scala.Unit = js.native
-  def apply(key: raygun4jsLib.raygun4jsLibStrings.setBreadcrumbLevel, level: raygun4jsLib.BreadcrumbLevel): scala.Unit = js.native
+  def apply(key: raygun4jsLib.raygun4jsLibStrings.setBreadcrumbLevel, level: BreadcrumbLevel): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.setFilterScope, value: java.lang.String): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.setUser, value: RaygunV2UserDetails): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.setVersion, value: java.lang.String): scala.Unit = js.native

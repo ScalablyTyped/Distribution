@@ -105,8 +105,7 @@ class PivotField ()
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
     there are multiple values from the same DataPivotHierarchy.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param sortBy Represents whether the sorting is done in an ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
@@ -126,7 +125,7 @@ class PivotField ()
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
     there are multiple values from the same DataPivotHierarchy.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @param sortBy Represents whether the sorting is done in an ascending or descending order.
     * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.

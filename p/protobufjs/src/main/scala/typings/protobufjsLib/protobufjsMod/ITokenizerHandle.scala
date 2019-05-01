@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 trait ITokenizerHandle extends js.Object {
   /** Gets the comment on the previous line or the line comment on the specified line, if any */
   @JSName("cmnt")
-  var cmnt_Original: protobufjsLib.TokenizerHandleCmnt = js.native
+  var cmnt_Original: TokenizerHandleCmnt = js.native
   /** Current line number */
   var line: scala.Double = js.native
   /** Gets the next token and advances (`null` on eof) */
   @JSName("next")
-  var next_Original: protobufjsLib.TokenizerHandleNext = js.native
+  var next_Original: TokenizerHandleNext = js.native
   /** Peeks for the next token (`null` on eof) */
   @JSName("peek")
-  var peek_Original: protobufjsLib.TokenizerHandlePeek = js.native
+  var peek_Original: TokenizerHandlePeek = js.native
   /** Pushes a token back to the stack */
   @JSName("push")
-  var push_Original: protobufjsLib.TokenizerHandlePush = js.native
+  var push_Original: TokenizerHandlePush = js.native
   /** Skips a token, returns its presence and advances or, if non-optional and not present, throws */
   @JSName("skip")
-  var skip_Original: protobufjsLib.TokenizerHandleSkip = js.native
+  var skip_Original: TokenizerHandleSkip = js.native
   /** Gets the comment on the previous line or the line comment on the specified line, if any */
   def cmnt(): java.lang.String | scala.Null = js.native
   def cmnt(line: scala.Double): java.lang.String | scala.Null = js.native

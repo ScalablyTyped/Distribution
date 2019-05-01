@@ -152,8 +152,7 @@ trait RangeLoadOptions extends js.Object {
     *
     * Represents the data type state of each cell. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var linkedDataTypeState: js.UndefOr[scala.Boolean] = js.undefined
   /**

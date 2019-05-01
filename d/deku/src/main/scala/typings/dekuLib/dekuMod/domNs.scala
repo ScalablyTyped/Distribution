@@ -16,12 +16,12 @@ object domNs extends js.Object {
   def create[C](
     vnode: dekuLib.dekuMod.VirtualElement,
     path: java.lang.String,
-    dispatch: dekuLib.Dispatch,
+    dispatch: dekuLib.dekuMod.Dispatch,
     context: C
   ): stdLib.HTMLElement = js.native
   /**
   		 * Modify a DOM element given an array of actions.
   		 */
-  def update[C, A](dispatch: dekuLib.Dispatch, context: C): js.Function2[/* DOMElement */ stdLib.HTMLElement, /* action */ A, stdLib.HTMLElement] = js.native
+  def update[C, A](dispatch: dekuLib.dekuMod.Dispatch, context: C): js.Function2[/* DOMElement */ stdLib.HTMLElement, /* action */ A, stdLib.HTMLElement] = js.native
 }
 

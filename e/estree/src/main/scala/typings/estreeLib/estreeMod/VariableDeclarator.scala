@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait VariableDeclarator
   extends BaseNode
-     with _Node {
+     with Node {
   var id: Pattern
-  var init: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+  var init: js.UndefOr[Expression | scala.Null] = js.undefined
   @JSName("type")
   var type_VariableDeclarator: estreeLib.estreeLibStrings.VariableDeclarator
 }
@@ -19,7 +19,7 @@ object VariableDeclarator {
   def apply(
     id: Pattern,
     `type`: estreeLib.estreeLibStrings.VariableDeclarator,
-    init: estreeLib.Expression = null,
+    init: Expression = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,

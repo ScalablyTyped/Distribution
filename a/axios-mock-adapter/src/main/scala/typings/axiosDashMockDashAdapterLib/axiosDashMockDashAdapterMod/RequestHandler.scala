@@ -8,55 +8,39 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RequestHandler extends js.Object {
   @JSName("networkErrorOnce")
-  var networkErrorOnce_Original: axiosDashMockDashAdapterLib.ResponseSpecFunc = js.native
+  var networkErrorOnce_Original: ResponseSpecFunc = js.native
   @JSName("replyOnce")
-  var replyOnce_Original: axiosDashMockDashAdapterLib.ResponseSpecFunc = js.native
+  var replyOnce_Original: ResponseSpecFunc = js.native
   @JSName("reply")
-  var reply_Original: axiosDashMockDashAdapterLib.ResponseSpecFunc = js.native
+  var reply_Original: ResponseSpecFunc = js.native
   @JSName("timeoutOnce")
-  var timeoutOnce_Original: axiosDashMockDashAdapterLib.ResponseSpecFunc = js.native
+  var timeoutOnce_Original: ResponseSpecFunc = js.native
   def networkError(): MockAdapter = js.native
-  def networkErrorOnce(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc): js.Any = js.native
-  def networkErrorOnce(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc, data: js.Any): js.Any = js.native
-  def networkErrorOnce(
-    statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc,
-    data: js.Any,
-    headers: js.Any
-  ): js.Any = js.native
-  def networkErrorOnce(statusOrCallback: scala.Double): js.Any = js.native
-  def networkErrorOnce(statusOrCallback: scala.Double, data: js.Any): js.Any = js.native
-  def networkErrorOnce(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): js.Any = js.native
+  def networkErrorOnce(statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
+  def networkErrorOnce(statusOrCallback: CallbackResponseSpecFunc, data: js.Any): MockAdapter = js.native
+  def networkErrorOnce(statusOrCallback: CallbackResponseSpecFunc, data: js.Any, headers: js.Any): MockAdapter = js.native
+  def networkErrorOnce(statusOrCallback: scala.Double): MockAdapter = js.native
+  def networkErrorOnce(statusOrCallback: scala.Double, data: js.Any): MockAdapter = js.native
+  def networkErrorOnce(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): MockAdapter = js.native
   def passThrough(): MockAdapter = js.native
-  def reply(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc): js.Any = js.native
-  def reply(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc, data: js.Any): js.Any = js.native
-  def reply(
-    statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc,
-    data: js.Any,
-    headers: js.Any
-  ): js.Any = js.native
-  def reply(statusOrCallback: scala.Double): js.Any = js.native
-  def reply(statusOrCallback: scala.Double, data: js.Any): js.Any = js.native
-  def reply(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): js.Any = js.native
-  def replyOnce(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc): js.Any = js.native
-  def replyOnce(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc, data: js.Any): js.Any = js.native
-  def replyOnce(
-    statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc,
-    data: js.Any,
-    headers: js.Any
-  ): js.Any = js.native
-  def replyOnce(statusOrCallback: scala.Double): js.Any = js.native
-  def replyOnce(statusOrCallback: scala.Double, data: js.Any): js.Any = js.native
-  def replyOnce(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): js.Any = js.native
+  def reply(statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
+  def reply(statusOrCallback: CallbackResponseSpecFunc, data: js.Any): MockAdapter = js.native
+  def reply(statusOrCallback: CallbackResponseSpecFunc, data: js.Any, headers: js.Any): MockAdapter = js.native
+  def reply(statusOrCallback: scala.Double): MockAdapter = js.native
+  def reply(statusOrCallback: scala.Double, data: js.Any): MockAdapter = js.native
+  def reply(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): MockAdapter = js.native
+  def replyOnce(statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
+  def replyOnce(statusOrCallback: CallbackResponseSpecFunc, data: js.Any): MockAdapter = js.native
+  def replyOnce(statusOrCallback: CallbackResponseSpecFunc, data: js.Any, headers: js.Any): MockAdapter = js.native
+  def replyOnce(statusOrCallback: scala.Double): MockAdapter = js.native
+  def replyOnce(statusOrCallback: scala.Double, data: js.Any): MockAdapter = js.native
+  def replyOnce(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): MockAdapter = js.native
   def timeout(): MockAdapter = js.native
-  def timeoutOnce(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc): js.Any = js.native
-  def timeoutOnce(statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc, data: js.Any): js.Any = js.native
-  def timeoutOnce(
-    statusOrCallback: axiosDashMockDashAdapterLib.CallbackResponseSpecFunc,
-    data: js.Any,
-    headers: js.Any
-  ): js.Any = js.native
-  def timeoutOnce(statusOrCallback: scala.Double): js.Any = js.native
-  def timeoutOnce(statusOrCallback: scala.Double, data: js.Any): js.Any = js.native
-  def timeoutOnce(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): js.Any = js.native
+  def timeoutOnce(statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
+  def timeoutOnce(statusOrCallback: CallbackResponseSpecFunc, data: js.Any): MockAdapter = js.native
+  def timeoutOnce(statusOrCallback: CallbackResponseSpecFunc, data: js.Any, headers: js.Any): MockAdapter = js.native
+  def timeoutOnce(statusOrCallback: scala.Double): MockAdapter = js.native
+  def timeoutOnce(statusOrCallback: scala.Double, data: js.Any): MockAdapter = js.native
+  def timeoutOnce(statusOrCallback: scala.Double, data: js.Any, headers: js.Any): MockAdapter = js.native
 }
 

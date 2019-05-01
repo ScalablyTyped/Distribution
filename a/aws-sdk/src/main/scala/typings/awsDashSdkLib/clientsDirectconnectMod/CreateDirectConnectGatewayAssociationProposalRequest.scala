@@ -19,7 +19,7 @@ trait CreateDirectConnectGatewayAssociationProposalRequest extends js.Object {
     */
   var directConnectGatewayOwnerAccount: OwnerAccount
   /**
-    * The ID of the virtual private gateway.
+    * The ID of the virtual private gateway or transit gateway.
     */
   var gatewayId: GatewayIdToAssociate
   /**

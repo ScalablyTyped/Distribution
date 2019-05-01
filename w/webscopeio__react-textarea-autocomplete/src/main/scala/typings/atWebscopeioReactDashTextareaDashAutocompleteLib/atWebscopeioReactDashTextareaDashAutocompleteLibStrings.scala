@@ -15,20 +15,24 @@ object atWebscopeioReactDashTextareaDashAutocompleteLibStrings {
     extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod._CaretPositionType
   
   @js.native
-  sealed trait onBlur extends PickedAttributes
+  sealed trait onBlur
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.PickedAttributes
   
   @js.native
-  sealed trait onChange extends PickedAttributes
+  sealed trait onChange
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.PickedAttributes
   
   @js.native
-  sealed trait onSelect extends PickedAttributes
+  sealed trait onSelect
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.PickedAttributes
   
   @js.native
   sealed trait start
     extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod._CaretPositionType
   
   @js.native
-  sealed trait value extends PickedAttributes
+  sealed trait value
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod.PickedAttributes
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

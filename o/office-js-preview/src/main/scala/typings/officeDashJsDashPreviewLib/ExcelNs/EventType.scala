@@ -261,6 +261,15 @@ object EventType extends js.Object {
   sealed trait worksheetSelectionChanged
     extends officeDashJsDashPreviewLib.ExcelNs.EventType
   
+  /**
+    *
+    * WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is left-clicked/tapped.
+    *
+    */
+  @js.native
+  sealed trait worksheetSingleClicked
+    extends officeDashJsDashPreviewLib.ExcelNs.EventType
+  
   /* "AgaveVisualUpdate" */ val agaveVisualUpdate: agaveVisualUpdate with java.lang.String = js.native
   /* "ChartActivated" */ val chartActivated: chartActivated with java.lang.String = js.native
   /* "ChartAdded" */ val chartAdded: chartAdded with java.lang.String = js.native
@@ -289,6 +298,7 @@ object EventType extends js.Object {
   /* "WorksheetFormatChanged" */ val worksheetFormatChanged: worksheetFormatChanged with java.lang.String = js.native
   /* "WorksheetRowSorted" */ val worksheetRowSorted: worksheetRowSorted with java.lang.String = js.native
   /* "WorksheetSelectionChanged" */ val worksheetSelectionChanged: worksheetSelectionChanged with java.lang.String = js.native
+  /* "WorksheetSingleClicked" */ val worksheetSingleClicked: worksheetSingleClicked with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.EventType with java.lang.String] = js.native
 }

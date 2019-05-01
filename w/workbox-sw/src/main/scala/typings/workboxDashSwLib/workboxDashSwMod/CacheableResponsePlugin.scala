@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
   * easier to add in cacheability checks to requests made via Workbox's built-in
   * strategies.
   */
-trait CacheableResponsePlugin extends js.Object
+trait CacheableResponsePlugin extends Plugin
 

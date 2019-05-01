@@ -11,12 +11,7 @@ package object reactDashMentionsMod {
     /* callback */ js.Function1[/* data */ js.Array[SuggestionDataItem], scala.Unit], 
     scala.Unit | js.Array[SuggestionDataItem]
   ]
-  type DisplayTransformFunc = js.Function3[
-    /* id */ java.lang.String, 
-    /* display */ java.lang.String, 
-    /* type */ java.lang.String, 
-    java.lang.String
-  ]
+  type DisplayTransformFunc = js.Function2[/* id */ java.lang.String, /* display */ java.lang.String, java.lang.String]
   type MentionsInputClass = reactLib.reactMod.ComponentClass[MentionsInputProps, reactLib.reactMod.ComponentState]
   type OnChangeHandlerFunc = js.Function4[
     /* event */ reactDashMentionsLib.Anon_Target, 

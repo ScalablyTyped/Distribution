@@ -14,14 +14,14 @@ object ^ extends js.Object {
     * @param options Stampit options object containing refs, methods,
     * init, props, statics, configurations, and property descriptors.
     */
-  def apply(composables: stampitLib.StampitComposable*): Stamp = js.native
+  def apply(composables: StampitComposable*): Stamp = js.native
   /**
     * Take two or more Composables and combine them to produce a new Stamp.
     * Combining overrides properties with last-in priority.
     * @param composables Composable objects used to create the stamp.
     * @return A new Stamp made of all the given composables.
     */
-  def compose(composables: stampitLib.Composable*): Stamp = js.native
+  def compose(composables: Composable*): Stamp = js.native
   /**
     * A shortcut method for stampit().conf()
     * @param confs The object(s) containing metadata properties
@@ -71,28 +71,28 @@ object ^ extends js.Object {
     * privileged methods
     * @returns A new stamp
     */
-  def init(functions: stampitLib.Init*): Stamp = js.native
+  def init(functions: Init*): Stamp = js.native
   /**
     * A shortcut method for stampit().init()
     * @param functions Initializer functions used to create private data and
     * privileged methods
     * @returns A new stamp
     */
-  def init(functions: js.Array[stampitLib.Init]): Stamp = js.native
+  def init(functions: js.Array[Init]): Stamp = js.native
   /**
     * A shortcut method for stampit().initializers()
     * @param functions Initializer functions used to create private data and
     * privileged methods
     * @returns A new stamp
     */
-  def initializers(functions: stampitLib.Init*): Stamp = js.native
+  def initializers(functions: Init*): Stamp = js.native
   /**
     * A shortcut method for stampit().initializers()
     * @param functions Initializer functions used to create private data and
     * privileged methods
     * @returns A new stamp
     */
-  def initializers(functions: js.Array[stampitLib.Init]): Stamp = js.native
+  def initializers(functions: js.Array[Init]): Stamp = js.native
   /**
     * A shortcut methods for stampit().methods()
     * @param methods Object(s) containing map of method names and bodies for delegation.

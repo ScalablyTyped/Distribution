@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._TextInputProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined alignment, autoCapitalize, autoCorrect, borderColor, cursorColor, editable, enterKeyType, fillColor, focused, keepFocus, keyboard, message, revealPassword, selection, text, textColor, `type` */ @JSImport("tabris", "TextInput")
 @js.native
 class TextInput () extends Widget {
-  def this(properties: tabrisLib.Properties[TextInput, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[TextInput, TypeScriptPropertiesKey]) = this()
   /**
     * The horizontal alignment of the text.
     */
@@ -105,7 +105,7 @@ class TextInput () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_TextInput: tabrisLib.TextInputProperties = js.native
+  val tsProperties_TextInput: TextInputProperties = js.native
   /**
     * The type of the text widget. Windows 10 currently interprets `search`  as `default`.
     * @static

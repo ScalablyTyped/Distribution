@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ToRdf extends Common {
-  var format: js.UndefOr[jsonldLib.MimeNQuad] = js.undefined
+  var format: js.UndefOr[jsonldLib.jsonldMod.MimeNQuad] = js.undefined
   var produceGeneralizedRdf: js.UndefOr[scala.Boolean] = js.undefined
   var skipExpansion: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -21,7 +21,7 @@ object ToRdf {
       scala.Unit
     ]) => js.Promise[jsonldLib.jsonldDashSpecMod.RemoteDocument] = null,
     expandContext: jsonldLib.jsonldDashSpecMod.Context = null,
-    format: jsonldLib.MimeNQuad = null,
+    format: jsonldLib.jsonldMod.MimeNQuad = null,
     produceGeneralizedRdf: js.UndefOr[scala.Boolean] = js.undefined,
     skipExpansion: js.UndefOr[scala.Boolean] = js.undefined
   ): ToRdf = {

@@ -20,6 +20,11 @@ import scala.scalajs.js.annotation._
     */
   var data: js.Array[T]
   /**
+    * object
+    * Props to pass on to the underlying FlatList.
+    */
+  var flatListProps: js.UndefOr[stdLib.Partial[reactDashNativeLib.reactDashNativeMod.FlatListProps[T]]] = js.undefined
+  /**
     * bool
     * Set to true to hide the suggestion list.
     */
@@ -31,6 +36,11 @@ import scala.scalajs.js.annotation._
   var inputContainerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
+  /**
+    * function
+    * keyExtractor will be called to get key for each item. It's up to you which string to return as a key.
+    */
+  var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* i */ scala.Double, java.lang.String]] = js.undefined
   /**
     * style
     * These styles will be applied to the container which surrounds the result list.
@@ -88,8 +98,10 @@ object AutocompleteProps {
     data: js.Array[T],
     renderItem: reactDashNativeDashAutocompleteDashInputLib.Anon_Index[T] => reactLib.reactMod.ReactNode,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    flatListProps: stdLib.Partial[reactDashNativeLib.reactDashNativeMod.FlatListProps[T]] = null,
     hideResults: js.UndefOr[scala.Boolean] = js.undefined,
     inputContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    keyExtractor: (/* item */ T, /* i */ scala.Double) => java.lang.String = null,
     listContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     listStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     onShowResult: /* showResults */ scala.Boolean => scala.Unit = null,
@@ -99,8 +111,10 @@ object AutocompleteProps {
   ): AutocompleteProps[T] = {
     val __obj = js.Dynamic.literal(data = data, renderItem = js.Any.fromFunction1(renderItem))
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (flatListProps != null) __obj.updateDynamic("flatListProps")(flatListProps)
     if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults)
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
+    if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2(keyExtractor))
     if (listContainerStyle != null) __obj.updateDynamic("listContainerStyle")(listContainerStyle.asInstanceOf[js.Any])
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
     if (onShowResult != null) __obj.updateDynamic("onShowResult")(js.Any.fromFunction1(onShowResult))

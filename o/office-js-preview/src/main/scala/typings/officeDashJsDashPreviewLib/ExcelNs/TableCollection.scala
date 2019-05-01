@@ -31,10 +31,9 @@ class TableCollection ()
     *
     * Occurs when new table is added in a workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onAdded: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[TableAddedEventArgs] = js.native
   /**
@@ -50,10 +49,9 @@ class TableCollection ()
     *
     * Occurs when the specified table is deleted in a workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onDeleted: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[TableDeletedEventArgs] = js.native
   /**

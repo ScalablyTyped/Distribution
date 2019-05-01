@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginSortAttrs extends js.Object {
+trait PluginSortAttrs extends PluginConfig {
   var sortAttrs: scala.Boolean | js.Object
 }
 

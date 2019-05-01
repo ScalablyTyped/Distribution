@@ -12,8 +12,7 @@ sealed trait ShapeTextReadingOrder extends js.Object
   *
   * Specifies the reading order for the text frame in a shape.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextReadingOrder")
 @js.native

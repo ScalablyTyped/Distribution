@@ -12,8 +12,7 @@ sealed trait ShapeFontUnderlineStyle extends js.Object
   *
   * The type of underline applied to a font.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeFontUnderlineStyle")
 @js.native

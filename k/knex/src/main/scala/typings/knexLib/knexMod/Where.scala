@@ -14,12 +14,12 @@ trait Where
   override def apply(T0: /* callback */ QueryCallback): QueryBuilder = js.native
   def apply(columnName: java.lang.String): QueryBuilder = js.native
   def apply(columnName: java.lang.String, operator: java.lang.String): QueryBuilder = js.native
-  def apply(columnName: java.lang.String, operator: java.lang.String, value: knexLib.Value): QueryBuilder = js.native
   def apply(columnName: java.lang.String, operator: java.lang.String, value: QueryBuilder): QueryBuilder = js.native
-  def apply(columnName: java.lang.String, value: knexLib.Value): QueryBuilder = js.native
+  def apply(columnName: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder = js.native
+  def apply(columnName: java.lang.String, value: Value): QueryBuilder = js.native
   def apply(left: Raw, operator: java.lang.String): QueryBuilder = js.native
-  def apply(left: Raw, operator: java.lang.String, right: knexLib.Value): QueryBuilder = js.native
   def apply(left: Raw, operator: java.lang.String, right: QueryBuilder): QueryBuilder = js.native
+  def apply(left: Raw, operator: java.lang.String, right: Value): QueryBuilder = js.native
   def apply(`object`: js.Object): QueryBuilder = js.native
 }
 

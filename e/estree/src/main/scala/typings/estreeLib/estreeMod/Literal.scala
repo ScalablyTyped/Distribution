@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   - SimpleLiteral
   - RegExpLiteral
 */
-trait Literal extends _Node
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- estreeLib.estreeMod.Node because Already inherited */ trait Literal extends Expression
 

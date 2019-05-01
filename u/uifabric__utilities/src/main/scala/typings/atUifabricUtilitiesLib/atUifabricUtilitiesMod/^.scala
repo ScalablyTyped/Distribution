@@ -302,6 +302,8 @@ object ^ extends js.Object {
   def safeRequestAnimationFrame(component: reactLib.reactMod.Component[js.Object, js.Object, _]): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
   def safeSetTimeout(component: reactLib.reactMod.Component[js.Object, js.Object, _]): js.Function2[/* cb */ js.Function, /* duration */ scala.Double, scala.Unit] = js.native
   def setBaseUrl(baseUrl: java.lang.String): scala.Unit = js.native
+  def setFocusVisibility(enabled: scala.Boolean): scala.Unit = js.native
+  def setFocusVisibility(enabled: scala.Boolean, target: stdLib.Element): scala.Unit = js.native
   def setLanguage(language: java.lang.String): scala.Unit = js.native
   def setLanguage(language: java.lang.String, avoidPersisting: scala.Boolean): scala.Unit = js.native
   def setMemoizeWeakMap(weakMap: js.Any): scala.Unit = js.native
@@ -339,6 +341,13 @@ object ^ extends js.Object {
     customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps
   ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
+    Component: reactLib.reactMod.ComponentClass[TComponentProps, reactLib.reactMod.ComponentState],
+    baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
+    customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps,
+    pure: scala.Boolean
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
     Component: reactLib.reactMod.StatelessComponent[TComponentProps],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
   ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
@@ -352,6 +361,13 @@ object ^ extends js.Object {
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
     customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps
+  ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
+  def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
+    Component: reactLib.reactMod.StatelessComponent[TComponentProps],
+    baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
+    customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps,
+    pure: scala.Boolean
   ): reactLib.reactMod.StatelessComponent[TComponentProps] = js.native
   def toMatrix[T](items: js.Array[T], columnCount: scala.Double): js.Array[js.Array[T]] = js.native
   def unhoistMethods(source: js.Any, methodNames: js.Array[java.lang.String]): scala.Unit = js.native

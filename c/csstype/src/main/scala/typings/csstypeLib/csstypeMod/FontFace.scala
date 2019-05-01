@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FontFace extends js.Object {
-  var MozFontFeatureSettings: js.UndefOr[csstypeLib.FontFaceFontFeatureSettingsProperty] = js.undefined
-  var fontDisplay: js.UndefOr[csstypeLib.FontFaceFontDisplayProperty] = js.undefined
+  var MozFontFeatureSettings: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.undefined
+  var fontDisplay: js.UndefOr[FontFaceFontDisplayProperty] = js.undefined
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
-  var fontFeatureSettings: js.UndefOr[csstypeLib.FontFaceFontFeatureSettingsProperty] = js.undefined
-  var fontStretch: js.UndefOr[csstypeLib.FontFaceFontStretchProperty] = js.undefined
-  var fontStyle: js.UndefOr[csstypeLib.FontFaceFontStyleProperty] = js.undefined
-  var fontVariant: js.UndefOr[csstypeLib.FontFaceFontVariantProperty] = js.undefined
-  var fontVariationSettings: js.UndefOr[csstypeLib.FontFaceFontVariationSettingsProperty] = js.undefined
-  var fontWeight: js.UndefOr[csstypeLib.FontFaceFontWeightProperty] = js.undefined
+  var fontFeatureSettings: js.UndefOr[FontFaceFontFeatureSettingsProperty] = js.undefined
+  var fontStretch: js.UndefOr[FontFaceFontStretchProperty] = js.undefined
+  var fontStyle: js.UndefOr[FontFaceFontStyleProperty] = js.undefined
+  var fontVariant: js.UndefOr[FontFaceFontVariantProperty] = js.undefined
+  var fontVariationSettings: js.UndefOr[FontFaceFontVariationSettingsProperty] = js.undefined
+  var fontWeight: js.UndefOr[FontFaceFontWeightProperty] = js.undefined
   var src: js.UndefOr[java.lang.String] = js.undefined
   var unicodeRange: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -22,15 +22,15 @@ trait FontFace extends js.Object {
 object FontFace {
   @scala.inline
   def apply(
-    MozFontFeatureSettings: csstypeLib.FontFaceFontFeatureSettingsProperty = null,
-    fontDisplay: csstypeLib.FontFaceFontDisplayProperty = null,
+    MozFontFeatureSettings: FontFaceFontFeatureSettingsProperty = null,
+    fontDisplay: FontFaceFontDisplayProperty = null,
     fontFamily: java.lang.String = null,
-    fontFeatureSettings: csstypeLib.FontFaceFontFeatureSettingsProperty = null,
-    fontStretch: csstypeLib.FontFaceFontStretchProperty = null,
-    fontStyle: csstypeLib.FontFaceFontStyleProperty = null,
-    fontVariant: csstypeLib.FontFaceFontVariantProperty = null,
-    fontVariationSettings: csstypeLib.FontFaceFontVariationSettingsProperty = null,
-    fontWeight: csstypeLib.FontFaceFontWeightProperty = null,
+    fontFeatureSettings: FontFaceFontFeatureSettingsProperty = null,
+    fontStretch: FontFaceFontStretchProperty = null,
+    fontStyle: FontFaceFontStyleProperty = null,
+    fontVariant: FontFaceFontVariantProperty = null,
+    fontVariationSettings: FontFaceFontVariationSettingsProperty = null,
+    fontWeight: FontFaceFontWeightProperty = null,
     src: java.lang.String = null,
     unicodeRange: java.lang.String = null
   ): FontFace = {

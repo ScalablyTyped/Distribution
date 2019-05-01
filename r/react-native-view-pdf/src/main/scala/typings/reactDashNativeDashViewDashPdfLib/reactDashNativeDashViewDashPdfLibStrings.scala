@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashViewDashPdfLibStrings {
   @js.native
-  sealed trait CONNECT extends HTTPMethod
+  sealed trait CONNECT
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait DELETE extends HTTPMethod
+  sealed trait DELETE
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait GET extends HTTPMethod
+  sealed trait GET
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait HEAD extends HTTPMethod
+  sealed trait HEAD
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait OPTIONS extends HTTPMethod
+  sealed trait OPTIONS
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait PATCH extends HTTPMethod
+  sealed trait PATCH
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait POST extends HTTPMethod
+  sealed trait POST
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait PUT extends HTTPMethod
+  sealed trait PUT
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
-  sealed trait TRACE extends HTTPMethod
+  sealed trait TRACE
+    extends reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.HTTPMethod
   
   @js.native
   sealed trait base64 extends js.Object

@@ -31,9 +31,15 @@ trait RequestPaymentOptions extends js.Object {
     */
   var paySign: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * 分享服务提供商，通过 uni.getProvider 获取
+    * 支付服务提供商，通过 uni.getProvider 获取
+    * - alipay: 支付宝支付
+    * - wxpay: 微信支付
+    * - baidu: 百度收银台
+    * - appleiap: 苹果应用内支付
     */
-  var provider: js.UndefOr[java.lang.String] = js.undefined
+  var provider: js.UndefOr[
+    uniDashAppLib.uniDashAppLibStrings.alipay | uniDashAppLib.uniDashAppLibStrings.wxpay | uniDashAppLib.uniDashAppLibStrings.baidu | uniDashAppLib.uniDashAppLibStrings.appleiap
+  ] = js.undefined
   /**
     * 签名算法，暂支持 MD5 ，微信小程序独有
     */
@@ -57,7 +63,7 @@ object RequestPaymentOptions {
     orderInfo: java.lang.String = null,
     `package`: java.lang.String = null,
     paySign: java.lang.String = null,
-    provider: java.lang.String = null,
+    provider: uniDashAppLib.uniDashAppLibStrings.alipay | uniDashAppLib.uniDashAppLibStrings.wxpay | uniDashAppLib.uniDashAppLibStrings.baidu | uniDashAppLib.uniDashAppLibStrings.appleiap = null,
     signType: java.lang.String = null,
     success: () => scala.Unit = null,
     timeStamp: java.lang.String = null
@@ -69,7 +75,7 @@ object RequestPaymentOptions {
     if (orderInfo != null) __obj.updateDynamic("orderInfo")(orderInfo)
     if (`package` != null) __obj.updateDynamic("package")(`package`)
     if (paySign != null) __obj.updateDynamic("paySign")(paySign)
-    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     if (signType != null) __obj.updateDynamic("signType")(signType)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)

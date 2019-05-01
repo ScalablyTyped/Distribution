@@ -18,7 +18,7 @@ class Popup protected () extends NativeObject {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Popup: tabrisLib.PopupProperties = js.native
+  val tsProperties_Popup: PopupProperties = js.native
   /**
     * Hides the popup.
     */

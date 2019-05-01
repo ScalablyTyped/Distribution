@@ -18,13 +18,13 @@ object ^ extends js.Object {
     * where each value has been typecast according to the `type` parameter. An array can be
     * provided as `fallback`.
     */
-  def array[T /* <: getenvLib.ParseTypes */](name: java.lang.String): js.Array[
+  def array[T /* <: ParseTypes */](name: java.lang.String): js.Array[
     /* import warning: ImportType.apply Failed type conversion: getenv.getenv.ParseMappings[T] */ js.Any
   ] = js.native
-  def array[T /* <: getenvLib.ParseTypes */](name: java.lang.String, `type`: T): js.Array[
+  def array[T /* <: ParseTypes */](name: java.lang.String, `type`: T): js.Array[
     /* import warning: ImportType.apply Failed type conversion: getenv.getenv.ParseMappings[T] */ js.Any
   ] = js.native
-  def array[T /* <: getenvLib.ParseTypes */](
+  def array[T /* <: ParseTypes */](
     name: java.lang.String,
     `type`: T,
     fallback: js.Array[
@@ -87,7 +87,7 @@ object ^ extends js.Object {
     *  });
     * ```
     */
-  def multi[S /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String | getenvLib.ParseWithFallback | getenvLib.ParseWithEachType] */](spec: S): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def multi[S /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof S ]: string | getenv.getenv.ParseMappings[S[P][2]]}
     */ getenvLib.getenvLibStrings.multi with js.Any = js.native
   /**

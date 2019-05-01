@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Sql extends js.Object {
-  var bindings: js.Array[knexLib.Value]
+  var bindings: js.Array[Value]
   var method: java.lang.String
   var options: js.Any
   var sql: java.lang.String
@@ -16,7 +16,7 @@ trait Sql extends js.Object {
 object Sql {
   @scala.inline
   def apply(
-    bindings: js.Array[knexLib.Value],
+    bindings: js.Array[Value],
     method: java.lang.String,
     options: js.Any,
     sql: java.lang.String,

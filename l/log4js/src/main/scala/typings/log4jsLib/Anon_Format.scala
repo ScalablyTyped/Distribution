@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Format extends js.Object {
-  var format: js.UndefOr[Format] = js.undefined
+  var format: js.UndefOr[log4jsLib.log4jsMod.Format] = js.undefined
   var level: js.UndefOr[java.lang.String] = js.undefined
   var nolog: js.UndefOr[js.Any] = js.undefined
 }
 
 object Anon_Format {
   @scala.inline
-  def apply(format: Format = null, level: java.lang.String = null, nolog: js.Any = null): Anon_Format = {
+  def apply(format: log4jsLib.log4jsMod.Format = null, level: java.lang.String = null, nolog: js.Any = null): Anon_Format = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level)

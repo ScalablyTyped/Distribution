@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait lowdbFp extends js.Object {
   def apply[AdapterT /* <: AdapterSync[_] */](adapter: AdapterT): LowdbFpSync[
-    /* import warning: ImportType.apply Failed type conversion: AdapterT[lowdb.ReferenceProperty] */ js.Any
+    /* import warning: ImportType.apply Failed type conversion: AdapterT[lowdb.lowdb.ReferenceProperty] */ js.Any
   ] = js.native
 }
 

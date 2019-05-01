@@ -9,88 +9,77 @@ import scala.scalajs.js.annotation._
   *
   * Specifies which properties to load on the `format.font` object.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesFontLoadOptions extends js.Object {
   /**
     *
     * Specifies whether to load on the `bold` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var bold: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `color` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `italic` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var italic: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `name` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `size` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var size: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `strikethrough` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var strikethrough: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `subscript` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var subscript: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `superscript` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var superscript: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `tintAndShade` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether to load on the `underline` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var underline: js.UndefOr[scala.Boolean] = js.undefined
 }

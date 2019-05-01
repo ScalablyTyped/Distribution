@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("delay", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[delayLib.Delay with delayLib.Anon_CreateWithTimersDefault]
+  extends org.scalablytyped.runtime.TopLevel[Delay with delayLib.Anon_CreateWithTimersDefault]
 

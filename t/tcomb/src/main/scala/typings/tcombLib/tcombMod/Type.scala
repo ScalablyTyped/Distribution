@@ -10,7 +10,7 @@ trait Type[T]
   extends js.Function {
   var displayName: java.lang.String = js.native
   @JSName("is")
-  var is_Original: tcombLib.TypeGuardPredicate[T] = js.native
+  var is_Original: TypeGuardPredicate[T] = js.native
   var meta: tcombLib.Anon_Identity = js.native
   var t: T = js.native
   def apply(value: T): T = js.native

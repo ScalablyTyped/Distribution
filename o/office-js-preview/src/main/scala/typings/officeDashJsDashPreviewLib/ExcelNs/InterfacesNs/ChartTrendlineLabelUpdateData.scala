@@ -49,8 +49,7 @@ trait ChartTrendlineLabelUpdateData extends js.Object {
     *
     * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
   /**

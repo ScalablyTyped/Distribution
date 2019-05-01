@@ -22,9 +22,7 @@ trait AccessibilityPropsIOS extends js.Object {
     * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
     * @platform ios
     */
-  var accessibilityTraits: js.UndefOr[
-    reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait]
-  ] = js.undefined
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   /**
     * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
     * @platform ios
@@ -42,7 +40,7 @@ object AccessibilityPropsIOS {
   def apply(
     accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
     accessibilityIgnoresInvertColors: js.UndefOr[scala.Boolean] = js.undefined,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     onAccessibilityTap: () => scala.Unit = null,
     onMagicTap: () => scala.Unit = null
   ): AccessibilityPropsIOS = {

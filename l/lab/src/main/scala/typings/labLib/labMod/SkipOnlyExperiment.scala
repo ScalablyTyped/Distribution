@@ -9,25 +9,17 @@ import scala.scalajs.js.annotation._
 trait SkipOnlyExperiment extends js.Object {
   /** Only execute this test suite */
   @JSName("only")
-  var only_Original: labLib.ExperimentArgs with labLib.ExperimentWithOptionsArgs = js.native
+  var only_Original: ExperimentArgs with ExperimentWithOptionsArgs = js.native
   /** Skip this test suite */
   @JSName("skip")
-  var skip_Original: labLib.ExperimentArgs with labLib.ExperimentWithOptionsArgs = js.native
+  var skip_Original: ExperimentArgs with ExperimentWithOptionsArgs = js.native
   /** Only execute this test suite */
-  def only(desc: java.lang.String, cb: labLib.EmptyCallback): js.Object = js.native
+  def only(desc: java.lang.String, cb: EmptyCallback): js.Object = js.native
   /** Only execute this test suite */
-  def only(
-    desc: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExperimentOptions */ js.Any,
-    cb: labLib.EmptyCallback
-  ): js.Object = js.native
+  def only(desc: java.lang.String, options: ExperimentOptions, cb: EmptyCallback): js.Object = js.native
   /** Skip this test suite */
-  def skip(desc: java.lang.String, cb: labLib.EmptyCallback): js.Object = js.native
+  def skip(desc: java.lang.String, cb: EmptyCallback): js.Object = js.native
   /** Skip this test suite */
-  def skip(
-    desc: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExperimentOptions */ js.Any,
-    cb: labLib.EmptyCallback
-  ): js.Object = js.native
+  def skip(desc: java.lang.String, options: ExperimentOptions, cb: EmptyCallback): js.Object = js.native
 }
 

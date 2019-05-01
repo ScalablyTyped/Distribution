@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait QueryBuilder
   extends ChainableInterface
-     with QueryInterface {
+     with QueryInterface
+     with _ColumnName
+     with _TableName {
   var and: QueryBuilder = js.native
   var or: QueryBuilder = js.native
   //TODO: Promise?

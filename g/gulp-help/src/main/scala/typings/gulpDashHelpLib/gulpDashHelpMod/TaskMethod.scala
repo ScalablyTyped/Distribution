@@ -41,7 +41,7 @@ trait TaskMethod extends js.Object {
     * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
     * @param option task options
     */
-  def apply(name: java.lang.String, help: gulpDashHelpLib.HelpOption): js.Any = js.native
+  def apply(name: java.lang.String, help: HelpOption): js.Any = js.native
   /**
     * Define a task.
     *
@@ -51,26 +51,21 @@ trait TaskMethod extends js.Object {
     * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
     * @param option task options
     */
-  def apply(name: java.lang.String, help: gulpDashHelpLib.HelpOption, deps: js.Array[java.lang.String]): js.Any = js.native
+  def apply(name: java.lang.String, help: HelpOption, deps: js.Array[java.lang.String]): js.Any = js.native
   def apply(
     name: java.lang.String,
-    help: gulpDashHelpLib.HelpOption,
+    help: HelpOption,
     deps: js.Array[java.lang.String],
     fn: gulpLib.gulpMod.TaskCallback
   ): js.Any = js.native
   def apply(
     name: java.lang.String,
-    help: gulpDashHelpLib.HelpOption,
+    help: HelpOption,
     deps: js.Array[java.lang.String],
     fn: gulpLib.gulpMod.TaskCallback,
     option: TaskOptions
   ): js.Any = js.native
-  def apply(name: java.lang.String, help: gulpDashHelpLib.HelpOption, fn: gulpLib.gulpMod.TaskCallback): js.Any = js.native
-  def apply(
-    name: java.lang.String,
-    help: gulpDashHelpLib.HelpOption,
-    fn: gulpLib.gulpMod.TaskCallback,
-    option: TaskOptions
-  ): js.Any = js.native
+  def apply(name: java.lang.String, help: HelpOption, fn: gulpLib.gulpMod.TaskCallback): js.Any = js.native
+  def apply(name: java.lang.String, help: HelpOption, fn: gulpLib.gulpMod.TaskCallback, option: TaskOptions): js.Any = js.native
 }
 

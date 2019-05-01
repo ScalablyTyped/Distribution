@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   * @param options Description of the serialized zip archive
   */
 class Class () extends JSZip {
-  def this(data: jszipLib.InputFileFormat) = this()
-  def this(data: jszipLib.InputFileFormat, options: JSZipLoadOptions) = this()
+  def this(data: InputFileFormat) = this()
+  def this(data: InputFileFormat, options: JSZipLoadOptions) = this()
 }
 

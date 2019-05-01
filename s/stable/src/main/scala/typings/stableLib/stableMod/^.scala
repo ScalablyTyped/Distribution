@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[T](array: js.Array[T]): js.Array[T] = js.native
-  def apply[T](array: js.Array[T], comparator: stableLib.Comparator[T]): js.Array[T] = js.native
+  def apply[T](array: js.Array[T], comparator: Comparator[T]): js.Array[T] = js.native
   def inplace[T](array: js.Array[T]): js.Array[T] = js.native
-  def inplace[T](array: js.Array[T], comparator: stableLib.Comparator[T]): js.Array[T] = js.native
+  def inplace[T](array: js.Array[T], comparator: Comparator[T]): js.Array[T] = js.native
 }
 

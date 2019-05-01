@@ -129,578 +129,460 @@ trait Hls extends js.Object {
     */
   def off(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_AUDIO_TRACKS_UPDATED,
+    event: K_AUDIO_TRACKS_UPDATED,
+    callback: js.Function2[/* event */ K_AUDIO_TRACKS_UPDATED, /* data */ audioTracksUpdatedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_AUDIO_TRACK_LOADED,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADED, /* data */ audioTrackLoadedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_AUDIO_TRACK_LOADING,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADING, /* data */ audioTrackLoadingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_AUDIO_TRACK_SWITCHED,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHED, /* data */ audioTrackSwitchedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_AUDIO_TRACK_SWITCHING,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHING, /* data */ audioTrackSwitchingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_APPENDED,
+    callback: js.Function2[/* event */ K_BUFFER_APPENDED, /* data */ bufferAppendedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_APPENDING,
+    callback: js.Function2[/* event */ K_BUFFER_APPENDING, /* data */ bufferAppendingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_CODECS,
+    callback: js.Function2[/* event */ K_BUFFER_CODECS, /* data */ bufferCodecsData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_CREATED,
+    callback: js.Function2[/* event */ K_BUFFER_CREATED, /* data */ bufferCreatedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_EOS,
+    callback: js.Function2[/* event */ K_BUFFER_EOS, /* data */ js.Object, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_FLUSHED,
+    callback: js.Function2[/* event */ K_BUFFER_FLUSHED, /* data */ bufferFlushedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_FLUSHING,
+    callback: js.Function2[/* event */ K_BUFFER_FLUSHING, /* data */ bufferFlushingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_BUFFER_RESET,
+    callback: js.Function2[/* event */ K_BUFFER_RESET, /* data */ js.Object, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_DESTROYING,
+    callback: js.Function2[/* event */ K_DESTROYING, /* data */ js.Object, scala.Unit]
+  ): scala.Unit = js.native
+  def on(event: K_ERROR, callback: js.Function2[/* event */ K_ERROR, /* data */ errorData, scala.Unit]): scala.Unit = js.native
+  def on(
+    event: K_FPS_DROP_LEVEL_CAPPING,
+    callback: js.Function2[/* event */ K_FPS_DROP_LEVEL_CAPPING, /* data */ fpsDropLevelCappingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FPS_DROP,
+    callback: js.Function2[/* event */ K_FPS_DROP, /* data */ fpsDropData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_BUFFERED,
+    callback: js.Function2[/* event */ K_FRAG_BUFFERED, /* data */ fragBufferedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_CHANGED,
+    callback: js.Function2[/* event */ K_FRAG_CHANGED, /* data */ fragChangedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_DECRYPTED,
+    callback: js.Function2[/* event */ K_FRAG_DECRYPTED, /* data */ fragDecryptedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_LOADED,
+    callback: js.Function2[/* event */ K_FRAG_LOADED, /* data */ fragLoadedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_LOADING,
+    callback: js.Function2[/* event */ K_FRAG_LOADING, /* data */ fragLoadingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_LOAD_EMERGENCY_ABORTED,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACKS_UPDATED, 
-      /* data */ audioTracksUpdatedData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_AUDIO_TRACK_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADED, 
-      /* data */ audioTrackLoadedData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_AUDIO_TRACK_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADING, 
-      /* data */ audioTrackLoadingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHED, 
-      /* data */ audioTrackSwitchedData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHING, 
-      /* data */ audioTrackSwitchingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_APPENDED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_APPENDED, /* data */ bufferAppendedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_APPENDING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_APPENDING, 
-      /* data */ bufferAppendingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_CODECS,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CODECS, /* data */ bufferCodecsData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_CREATED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CREATED, /* data */ bufferCreatedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_EOS,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_EOS, /* data */ js.Object, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_FLUSHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHED, /* data */ bufferFlushedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_FLUSHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHING, /* data */ bufferFlushingData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_BUFFER_RESET,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_RESET, /* data */ js.Object, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_DESTROYING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_DESTROYING, /* data */ js.Object, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_ERROR,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_ERROR, /* data */ errorData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING, 
-      /* data */ fpsDropLevelCappingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FPS_DROP,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FPS_DROP, /* data */ fpsDropData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_BUFFERED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_BUFFERED, /* data */ fragBufferedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_CHANGED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_CHANGED, /* data */ fragChangedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_DECRYPTED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_DECRYPTED, /* data */ fragDecryptedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADED, /* data */ fragLoadedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_LOADING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADING, /* data */ fragLoadingData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED, 
+      /* event */ K_FRAG_LOAD_EMERGENCY_ABORTED, 
       /* data */ fragLoadEmergencyAbortedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_FRAG_LOAD_PROGRESS,
+    event: K_FRAG_LOAD_PROGRESS,
+    callback: js.Function2[/* event */ K_FRAG_LOAD_PROGRESS, /* data */ fragLoadProgressData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_PARSED,
+    callback: js.Function2[/* event */ K_FRAG_PARSED, /* data */ fragParsedData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_PARSING_DATA,
+    callback: js.Function2[/* event */ K_FRAG_PARSING_DATA, /* data */ fragParsingData, scala.Unit]
+  ): scala.Unit = js.native
+  def on(
+    event: K_FRAG_PARSING_INIT_SEGMENT,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOAD_PROGRESS, 
-      /* data */ fragLoadProgressData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_PARSED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSED, /* data */ fragParsedData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_PARSING_DATA,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSING_DATA, /* data */ fragParsingData, scala.Unit]
-  ): scala.Unit = js.native
-  def on(
-    event: hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT, 
+      /* event */ K_FRAG_PARSING_INIT_SEGMENT, 
       /* data */ fragParsingInitSegmentData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_FRAG_PARSING_METADATA,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_METADATA, 
-      /* data */ fragParsingMetadata, 
-      scala.Unit
-    ]
+    event: K_FRAG_PARSING_METADATA,
+    callback: js.Function2[/* event */ K_FRAG_PARSING_METADATA, /* data */ fragParsingMetadata, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_FRAG_PARSING_USERDATA,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_USERDATA, 
-      /* data */ fragParsingUserData, 
-      scala.Unit
-    ]
+    event: K_FRAG_PARSING_USERDATA,
+    callback: js.Function2[/* event */ K_FRAG_PARSING_USERDATA, /* data */ fragParsingUserData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_INIT_PTS_FOUND,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_INIT_PTS_FOUND, /* data */ initPtsFoundData, scala.Unit]
+    event: K_INIT_PTS_FOUND,
+    callback: js.Function2[/* event */ K_INIT_PTS_FOUND, /* data */ initPtsFoundData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_KEY_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADED, /* data */ keyLoadedData, scala.Unit]
+    event: K_KEY_LOADED,
+    callback: js.Function2[/* event */ K_KEY_LOADED, /* data */ keyLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_KEY_LOADING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADING, /* data */ keyLoadingData, scala.Unit]
+    event: K_KEY_LOADING,
+    callback: js.Function2[/* event */ K_KEY_LOADING, /* data */ keyLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_LEVEL_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADED, /* data */ levelLoadedData, scala.Unit]
+    event: K_LEVEL_LOADED,
+    callback: js.Function2[/* event */ K_LEVEL_LOADED, /* data */ levelLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_LEVEL_LOADING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADING, /* data */ levelLoadingData, scala.Unit]
+    event: K_LEVEL_LOADING,
+    callback: js.Function2[/* event */ K_LEVEL_LOADING, /* data */ levelLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_LEVEL_PTS_UPDATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_PTS_UPDATED, 
-      /* data */ levelPtsUpdatedData, 
-      scala.Unit
-    ]
+    event: K_LEVEL_PTS_UPDATED,
+    callback: js.Function2[/* event */ K_LEVEL_PTS_UPDATED, /* data */ levelPtsUpdatedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_LEVEL_SWITCHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHED, /* data */ levelSwitchedData, scala.Unit]
+    event: K_LEVEL_SWITCHED,
+    callback: js.Function2[/* event */ K_LEVEL_SWITCHED, /* data */ levelSwitchedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_LEVEL_SWITCHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHING, /* data */ levelSwitchingData, scala.Unit]
+    event: K_LEVEL_SWITCHING,
+    callback: js.Function2[/* event */ K_LEVEL_SWITCHING, /* data */ levelSwitchingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_LEVEL_UPDATED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_UPDATED, /* data */ levelUpdatedData, scala.Unit]
+    event: K_LEVEL_UPDATED,
+    callback: js.Function2[/* event */ K_LEVEL_UPDATED, /* data */ levelUpdatedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_MANIFEST_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_LOADED, /* data */ manifestLoadedData, scala.Unit]
+    event: K_MANIFEST_LOADED,
+    callback: js.Function2[/* event */ K_MANIFEST_LOADED, /* data */ manifestLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_MANIFEST_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MANIFEST_LOADING, 
-      /* data */ manifestLoadingData, 
-      scala.Unit
-    ]
+    event: K_MANIFEST_LOADING,
+    callback: js.Function2[/* event */ K_MANIFEST_LOADING, /* data */ manifestLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_MANIFEST_PARSED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_PARSED, /* data */ manifestParsedData, scala.Unit]
+    event: K_MANIFEST_PARSED,
+    callback: js.Function2[/* event */ K_MANIFEST_PARSED, /* data */ manifestParsedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_MEDIA_ATTACHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHED, /* data */ mediaAttachedData, scala.Unit]
+    event: K_MEDIA_ATTACHED,
+    callback: js.Function2[/* event */ K_MEDIA_ATTACHED, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   /**
     * hls.js event listener
     */
   def on(
-    event: hlsDotJsLib.K_MEDIA_ATTACHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHING, /* data */ mediaAttachedData, scala.Unit]
+    event: K_MEDIA_ATTACHING,
+    callback: js.Function2[/* event */ K_MEDIA_ATTACHING, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_MEDIA_DETACHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_DETACHED, /* data */ js.Object, scala.Unit]
+    event: K_MEDIA_DETACHED,
+    callback: js.Function2[/* event */ K_MEDIA_DETACHED, /* data */ js.Object, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_MEDIA_DETACHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_DETACHING, /* data */ js.Object, scala.Unit]
+    event: K_MEDIA_DETACHING,
+    callback: js.Function2[/* event */ K_MEDIA_DETACHING, /* data */ js.Object, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_STREAM_STATE_TRANSITION,
+    event: K_STREAM_STATE_TRANSITION,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_STREAM_STATE_TRANSITION, 
+      /* event */ K_STREAM_STATE_TRANSITION, 
       /* data */ streamStateTransitionData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED,
+    event: K_SUBTITLE_FRAG_PROCESSED,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED, 
+      /* event */ K_SUBTITLE_FRAG_PROCESSED, 
       /* data */ subtitleFragProcessedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED,
+    event: K_SUBTITLE_TRACKS_UPDATED,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED, 
+      /* event */ K_SUBTITLE_TRACKS_UPDATED, 
       /* data */ subtitleTracksUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADED, 
-      /* data */ subtitleTrackLoadedData, 
-      scala.Unit
-    ]
+    event: K_SUBTITLE_TRACK_LOADED,
+    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_LOADED, /* data */ subtitleTrackLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADING,
+    event: K_SUBTITLE_TRACK_LOADING,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADING, 
+      /* event */ K_SUBTITLE_TRACK_LOADING, 
       /* data */ subtitleTrackLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def on(
-    event: hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH,
+    event: K_SUBTITLE_TRACK_SWITCH,
+    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_SWITCH, /* data */ subtitleTrackSwitchData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_AUDIO_TRACKS_UPDATED,
+    callback: js.Function2[/* event */ K_AUDIO_TRACKS_UPDATED, /* data */ audioTracksUpdatedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_AUDIO_TRACK_LOADED,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADED, /* data */ audioTrackLoadedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_AUDIO_TRACK_LOADING,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_LOADING, /* data */ audioTrackLoadingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_AUDIO_TRACK_SWITCHED,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHED, /* data */ audioTrackSwitchedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_AUDIO_TRACK_SWITCHING,
+    callback: js.Function2[/* event */ K_AUDIO_TRACK_SWITCHING, /* data */ audioTrackSwitchingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_APPENDED,
+    callback: js.Function2[/* event */ K_BUFFER_APPENDED, /* data */ bufferAppendedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_APPENDING,
+    callback: js.Function2[/* event */ K_BUFFER_APPENDING, /* data */ bufferAppendingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_CODECS,
+    callback: js.Function2[/* event */ K_BUFFER_CODECS, /* data */ bufferCodecsData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_CREATED,
+    callback: js.Function2[/* event */ K_BUFFER_CREATED, /* data */ bufferCreatedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_EOS,
+    callback: js.Function2[/* event */ K_BUFFER_EOS, /* data */ js.Object, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_FLUSHED,
+    callback: js.Function2[/* event */ K_BUFFER_FLUSHED, /* data */ bufferFlushedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_FLUSHING,
+    callback: js.Function2[/* event */ K_BUFFER_FLUSHING, /* data */ bufferFlushingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_BUFFER_RESET,
+    callback: js.Function2[/* event */ K_BUFFER_RESET, /* data */ js.Object, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_DESTROYING,
+    callback: js.Function2[/* event */ K_DESTROYING, /* data */ js.Object, scala.Unit]
+  ): scala.Unit = js.native
+  def once(event: K_ERROR, callback: js.Function2[/* event */ K_ERROR, /* data */ errorData, scala.Unit]): scala.Unit = js.native
+  def once(
+    event: K_FPS_DROP_LEVEL_CAPPING,
+    callback: js.Function2[/* event */ K_FPS_DROP_LEVEL_CAPPING, /* data */ fpsDropLevelCappingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FPS_DROP,
+    callback: js.Function2[/* event */ K_FPS_DROP, /* data */ fpsDropData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_BUFFERED,
+    callback: js.Function2[/* event */ K_FRAG_BUFFERED, /* data */ fragBufferedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_CHANGED,
+    callback: js.Function2[/* event */ K_FRAG_CHANGED, /* data */ fragChangedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_DECRYPTED,
+    callback: js.Function2[/* event */ K_FRAG_DECRYPTED, /* data */ fragDecryptedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_LOADED,
+    callback: js.Function2[/* event */ K_FRAG_LOADED, /* data */ fragLoadedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_LOADING,
+    callback: js.Function2[/* event */ K_FRAG_LOADING, /* data */ fragLoadingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_LOAD_EMERGENCY_ABORTED,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH, 
-      /* data */ subtitleTrackSwitchData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_AUDIO_TRACKS_UPDATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACKS_UPDATED, 
-      /* data */ audioTracksUpdatedData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_AUDIO_TRACK_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADED, 
-      /* data */ audioTrackLoadedData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_AUDIO_TRACK_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_LOADING, 
-      /* data */ audioTrackLoadingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHED, 
-      /* data */ audioTrackSwitchedData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_AUDIO_TRACK_SWITCHING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_AUDIO_TRACK_SWITCHING, 
-      /* data */ audioTrackSwitchingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_APPENDED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_APPENDED, /* data */ bufferAppendedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_APPENDING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_BUFFER_APPENDING, 
-      /* data */ bufferAppendingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_CODECS,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CODECS, /* data */ bufferCodecsData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_CREATED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_CREATED, /* data */ bufferCreatedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_EOS,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_EOS, /* data */ js.Object, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_FLUSHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHED, /* data */ bufferFlushedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_FLUSHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_FLUSHING, /* data */ bufferFlushingData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_BUFFER_RESET,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_BUFFER_RESET, /* data */ js.Object, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_DESTROYING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_DESTROYING, /* data */ js.Object, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_ERROR,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_ERROR, /* data */ errorData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FPS_DROP_LEVEL_CAPPING, 
-      /* data */ fpsDropLevelCappingData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FPS_DROP,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FPS_DROP, /* data */ fpsDropData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_BUFFERED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_BUFFERED, /* data */ fragBufferedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_CHANGED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_CHANGED, /* data */ fragChangedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_DECRYPTED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_DECRYPTED, /* data */ fragDecryptedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADED, /* data */ fragLoadedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_LOADING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_LOADING, /* data */ fragLoadingData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOAD_EMERGENCY_ABORTED, 
+      /* event */ K_FRAG_LOAD_EMERGENCY_ABORTED, 
       /* data */ fragLoadEmergencyAbortedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_FRAG_LOAD_PROGRESS,
+    event: K_FRAG_LOAD_PROGRESS,
+    callback: js.Function2[/* event */ K_FRAG_LOAD_PROGRESS, /* data */ fragLoadProgressData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_PARSED,
+    callback: js.Function2[/* event */ K_FRAG_PARSED, /* data */ fragParsedData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_PARSING_DATA,
+    callback: js.Function2[/* event */ K_FRAG_PARSING_DATA, /* data */ fragParsingData, scala.Unit]
+  ): scala.Unit = js.native
+  def once(
+    event: K_FRAG_PARSING_INIT_SEGMENT,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_LOAD_PROGRESS, 
-      /* data */ fragLoadProgressData, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_PARSED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSED, /* data */ fragParsedData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_PARSING_DATA,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_FRAG_PARSING_DATA, /* data */ fragParsingData, scala.Unit]
-  ): scala.Unit = js.native
-  def once(
-    event: hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_INIT_SEGMENT, 
+      /* event */ K_FRAG_PARSING_INIT_SEGMENT, 
       /* data */ fragParsingInitSegmentData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_FRAG_PARSING_METADATA,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_METADATA, 
-      /* data */ fragParsingMetadata, 
-      scala.Unit
-    ]
+    event: K_FRAG_PARSING_METADATA,
+    callback: js.Function2[/* event */ K_FRAG_PARSING_METADATA, /* data */ fragParsingMetadata, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_FRAG_PARSING_USERDATA,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_FRAG_PARSING_USERDATA, 
-      /* data */ fragParsingUserData, 
-      scala.Unit
-    ]
+    event: K_FRAG_PARSING_USERDATA,
+    callback: js.Function2[/* event */ K_FRAG_PARSING_USERDATA, /* data */ fragParsingUserData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_INIT_PTS_FOUND,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_INIT_PTS_FOUND, /* data */ initPtsFoundData, scala.Unit]
+    event: K_INIT_PTS_FOUND,
+    callback: js.Function2[/* event */ K_INIT_PTS_FOUND, /* data */ initPtsFoundData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_KEY_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADED, /* data */ keyLoadedData, scala.Unit]
+    event: K_KEY_LOADED,
+    callback: js.Function2[/* event */ K_KEY_LOADED, /* data */ keyLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_KEY_LOADING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_KEY_LOADING, /* data */ keyLoadingData, scala.Unit]
+    event: K_KEY_LOADING,
+    callback: js.Function2[/* event */ K_KEY_LOADING, /* data */ keyLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_LEVEL_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADED, /* data */ levelLoadedData, scala.Unit]
+    event: K_LEVEL_LOADED,
+    callback: js.Function2[/* event */ K_LEVEL_LOADED, /* data */ levelLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_LEVEL_LOADING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_LOADING, /* data */ levelLoadingData, scala.Unit]
+    event: K_LEVEL_LOADING,
+    callback: js.Function2[/* event */ K_LEVEL_LOADING, /* data */ levelLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_LEVEL_PTS_UPDATED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_LEVEL_PTS_UPDATED, 
-      /* data */ levelPtsUpdatedData, 
-      scala.Unit
-    ]
+    event: K_LEVEL_PTS_UPDATED,
+    callback: js.Function2[/* event */ K_LEVEL_PTS_UPDATED, /* data */ levelPtsUpdatedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_LEVEL_SWITCHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHED, /* data */ levelSwitchedData, scala.Unit]
+    event: K_LEVEL_SWITCHED,
+    callback: js.Function2[/* event */ K_LEVEL_SWITCHED, /* data */ levelSwitchedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_LEVEL_SWITCHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_SWITCHING, /* data */ levelSwitchingData, scala.Unit]
+    event: K_LEVEL_SWITCHING,
+    callback: js.Function2[/* event */ K_LEVEL_SWITCHING, /* data */ levelSwitchingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_LEVEL_UPDATED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_LEVEL_UPDATED, /* data */ levelUpdatedData, scala.Unit]
+    event: K_LEVEL_UPDATED,
+    callback: js.Function2[/* event */ K_LEVEL_UPDATED, /* data */ levelUpdatedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_MANIFEST_LOADED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_LOADED, /* data */ manifestLoadedData, scala.Unit]
+    event: K_MANIFEST_LOADED,
+    callback: js.Function2[/* event */ K_MANIFEST_LOADED, /* data */ manifestLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_MANIFEST_LOADING,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_MANIFEST_LOADING, 
-      /* data */ manifestLoadingData, 
-      scala.Unit
-    ]
+    event: K_MANIFEST_LOADING,
+    callback: js.Function2[/* event */ K_MANIFEST_LOADING, /* data */ manifestLoadingData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_MANIFEST_PARSED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MANIFEST_PARSED, /* data */ manifestParsedData, scala.Unit]
+    event: K_MANIFEST_PARSED,
+    callback: js.Function2[/* event */ K_MANIFEST_PARSED, /* data */ manifestParsedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_MEDIA_ATTACHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHED, /* data */ mediaAttachedData, scala.Unit]
+    event: K_MEDIA_ATTACHED,
+    callback: js.Function2[/* event */ K_MEDIA_ATTACHED, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   /**
     * hls.js single event listener
     */
   def once(
-    event: hlsDotJsLib.K_MEDIA_ATTACHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_ATTACHING, /* data */ mediaAttachedData, scala.Unit]
+    event: K_MEDIA_ATTACHING,
+    callback: js.Function2[/* event */ K_MEDIA_ATTACHING, /* data */ mediaAttachedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_MEDIA_DETACHED,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_DETACHED, /* data */ js.Object, scala.Unit]
+    event: K_MEDIA_DETACHED,
+    callback: js.Function2[/* event */ K_MEDIA_DETACHED, /* data */ js.Object, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_MEDIA_DETACHING,
-    callback: js.Function2[/* event */ hlsDotJsLib.K_MEDIA_DETACHING, /* data */ js.Object, scala.Unit]
+    event: K_MEDIA_DETACHING,
+    callback: js.Function2[/* event */ K_MEDIA_DETACHING, /* data */ js.Object, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_STREAM_STATE_TRANSITION,
+    event: K_STREAM_STATE_TRANSITION,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_STREAM_STATE_TRANSITION, 
+      /* event */ K_STREAM_STATE_TRANSITION, 
       /* data */ streamStateTransitionData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED,
+    event: K_SUBTITLE_FRAG_PROCESSED,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_FRAG_PROCESSED, 
+      /* event */ K_SUBTITLE_FRAG_PROCESSED, 
       /* data */ subtitleFragProcessedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED,
+    event: K_SUBTITLE_TRACKS_UPDATED,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACKS_UPDATED, 
+      /* event */ K_SUBTITLE_TRACKS_UPDATED, 
       /* data */ subtitleTracksUpdatedData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADED,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADED, 
-      /* data */ subtitleTrackLoadedData, 
-      scala.Unit
-    ]
+    event: K_SUBTITLE_TRACK_LOADED,
+    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_LOADED, /* data */ subtitleTrackLoadedData, scala.Unit]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_SUBTITLE_TRACK_LOADING,
+    event: K_SUBTITLE_TRACK_LOADING,
     callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_LOADING, 
+      /* event */ K_SUBTITLE_TRACK_LOADING, 
       /* data */ subtitleTrackLoadingData, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def once(
-    event: hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH,
-    callback: js.Function2[
-      /* event */ hlsDotJsLib.K_SUBTITLE_TRACK_SWITCH, 
-      /* data */ subtitleTrackSwitchData, 
-      scala.Unit
-    ]
+    event: K_SUBTITLE_TRACK_SWITCH,
+    callback: js.Function2[/* event */ K_SUBTITLE_TRACK_SWITCH, /* data */ subtitleTrackSwitchData, scala.Unit]
   ): scala.Unit = js.native
   /**
     * should be invoked to recover media error.

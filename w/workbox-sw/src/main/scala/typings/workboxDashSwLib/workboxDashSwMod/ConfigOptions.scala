@@ -18,7 +18,7 @@ trait ConfigOptions extends js.Object {
   	 * workbox module.
   	 */
   @JSName("modulePathCb")
-  var modulePathCb_Original: workboxDashSwLib.ModulePathCallback = js.native
+  var modulePathCb_Original: ModulePathCallback = js.native
   /**
   	 * To avoid using the CDN with `workbox-sw`
   	 * set the path prefix of where modules should be loaded from.

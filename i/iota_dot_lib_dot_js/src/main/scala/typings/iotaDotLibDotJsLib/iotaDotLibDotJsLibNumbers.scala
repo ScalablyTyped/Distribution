@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object iotaDotLibDotJsLibNumbers {
   @js.native
-  sealed trait `1` extends Security
+  sealed trait `1`
+    extends iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security
   
   @js.native
-  sealed trait `2` extends Security
+  sealed trait `2`
+    extends iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security
   
   @js.native
-  sealed trait `3` extends Security
+  sealed trait `3`
+    extends iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

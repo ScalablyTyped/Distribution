@@ -50,7 +50,7 @@ class GraphDatabase protected () extends js.Object {
     * @param {ChangePasswordOptions}   options     Options.
     * @param {DoneCallback}            callback    A callback.
     */
-  def changePassword(options: ChangePasswordOptions, callback: neo4jLib.DoneCallback): scala.Unit = js.native
+  def changePassword(options: ChangePasswordOptions, callback: DoneCallback): scala.Unit = js.native
   /**
     * Checks if the password must be changed.
     * @param {Function} callback A callback.
@@ -61,59 +61,59 @@ class GraphDatabase protected () extends js.Object {
     * @param {ConstraintOptions}   options   Options.
     * @param {ResultCallback}      callback  A callback.
     */
-  def createConstraint(options: ConstraintOptions, callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def createConstraint(options: ConstraintOptions, callback: ResultCallback): scala.Unit = js.native
   /**
     * Makes simple, parametrized Cypher queries.
     * @param {CypherOptions}   options     Options.
     * @param {ResultCallback}  callback    A callback.
     */
-  def cypher(options: CypherOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.Request = js.native
+  def cypher(options: CypherOptions, callback: ResultCallback): requestLib.requestMod.Request = js.native
   /**
     * Drops a constraint.
     * @param {ConstraintOptions}   options   Options.
     * @param {DoneCallback}        callback  A callback.
     */
-  def dropConstraint(options: ConstraintOptions, callback: neo4jLib.DoneCallback): scala.Unit = js.native
+  def dropConstraint(options: ConstraintOptions, callback: DoneCallback): scala.Unit = js.native
   /**
     * Drop an index.
     * @param {IndexOptions}    options   Options.
     * @param {DoneCallback}    callback  A callback.
     */
-  def dropIndex(options: IndexOptions, callback: neo4jLib.DoneCallback): scala.Unit = js.native
+  def dropIndex(options: IndexOptions, callback: DoneCallback): scala.Unit = js.native
   /**
     * Gets constraints.
     * @param {ConstraintOptions}   options     Options or callback.
     * @param {ResultCallback}      callback    A callback.
     */
   def getConstraints(options: ConstraintOptions): scala.Unit = js.native
-  def getConstraints(options: ConstraintOptions, callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def getConstraints(options: ConstraintOptions, callback: ResultCallback): scala.Unit = js.native
   /**
     * Gets indexes.
     * @param {ResultCallback} callback A callback.
     */
   def getIndexes(): scala.Unit = js.native
-  def getIndexes(callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def getIndexes(callback: ResultCallback): scala.Unit = js.native
   /**
     * Gets indexes.
     * @param {IndexOptions}    options     Options.
     * @param {ResultCallback}  callback    A callback.
     */
-  def getIndexes(options: IndexOptions, callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def getIndexes(options: IndexOptions, callback: ResultCallback): scala.Unit = js.native
   /**
     * Get labels.
     * @param {ResultCallback} callback A callback.
     */
-  def getLabels(callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def getLabels(callback: ResultCallback): scala.Unit = js.native
   /**
     * Gets property keys.
     * @param {ResultCallback} callback A callback.
     */
-  def getPropertyKeys(callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def getPropertyKeys(callback: ResultCallback): scala.Unit = js.native
   /**
     * Gets relationship types.
     * @param {ResultCallback} callback A callback.
     */
-  def getRelationshipTypes(callback: neo4jLib.ResultCallback): scala.Unit = js.native
+  def getRelationshipTypes(callback: ResultCallback): scala.Unit = js.native
   /**
     * Determines if a constraint exists.
     * @param {ConstraintOptions}   options   Options.
@@ -138,6 +138,6 @@ class GraphDatabase protected () extends js.Object {
     * @param {ResultCallback}  callback    A callback.
     * @return {Request} The HTTP request.
     */
-  def http(options: HttpOptions, callback: neo4jLib.ResultCallback): requestLib.requestMod.Request = js.native
+  def http(options: HttpOptions, callback: ResultCallback): requestLib.requestMod.Request = js.native
 }
 

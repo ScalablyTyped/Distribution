@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
     *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
     *         type is available on Android API level 21+
     */
-  var background: js.UndefOr[reactDashNativeLib.BackgroundPropType] = js.undefined
+  var background: js.UndefOr[reactDashNativeLib.reactDashNativeMod.BackgroundPropType] = js.undefined
   /**
     * Additional styling for button (background) view component
     *
@@ -148,10 +148,10 @@ object ButtonProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: reactDashNativeLib.reactDashNativeMod.AccessibilityRole = null,
     accessibilityStates: js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: reactDashNativeLib.reactDashNativeMod.AccessibilityTrait | js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     activeOpacity: scala.Int | scala.Double = null,
-    background: reactDashNativeLib.BackgroundPropType = null,
+    background: reactDashNativeLib.reactDashNativeMod.BackgroundPropType = null,
     buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     delayLongPress: scala.Int | scala.Double = null,

@@ -16,54 +16,54 @@ object default extends js.Object {
   /**
     * 监听：连接状态变更
     */
-  def addConnectionChangeListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[scala.Boolean]): scala.Unit = js.native
+  def addConnectionChangeListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[scala.Boolean]): scala.Unit = js.native
   /**
     * Android Only
     *
     * If device register succeed, the server will return registrationId
     */
-  def addGetRegistrationIdListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[java.lang.String]): scala.Unit = js.native
+  def addGetRegistrationIdListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[java.lang.String]): scala.Unit = js.native
   /**
     * iOS Only
     */
-  def addOpenNotificationLaunchAppListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[java.lang.String]): scala.Unit = js.native
+  def addOpenNotificationLaunchAppListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[java.lang.String]): scala.Unit = js.native
   /**
     * Android Only
     */
-  def addReceiveCustomMsgListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[_]): scala.Unit = js.native
+  def addReceiveCustomMsgListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[_]): scala.Unit = js.native
   /**
     * 监听：接收推送事件
     */
-  def addReceiveNotificationListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[_]): scala.Unit = js.native
+  def addReceiveNotificationListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[_]): scala.Unit = js.native
   /**
     * 监听：点击推送事件
     */
-  def addReceiveOpenNotificationListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[_]): scala.Unit = js.native
+  def addReceiveOpenNotificationListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[_]): scala.Unit = js.native
   /**
     * 在原有 tags 的基础上添加 tags
     */
   def addTags(
     tags: js.Array[java.lang.String],
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
   ): scala.Unit = js.native
   /**
     * iOS Only
     *
     * 监听：应用连接已登录
     */
-  def addnetworkDidLoginListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[java.lang.String]): scala.Unit = js.native
+  def addnetworkDidLoginListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[java.lang.String]): scala.Unit = js.native
   /**
     * 检查当前设备是否绑定该 tag
     */
   def checkTagBindState(
     tags: java.lang.String,
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_IsBind]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_IsBind]
   ): scala.Unit = js.native
   /**
     * 清空所有 tags
     */
   def cleanTags(
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
   ): scala.Unit = js.native
   def clearAllNotifications(): scala.Unit = js.native
   /**
@@ -74,14 +74,14 @@ object default extends js.Object {
     * 删除原有 alias
     */
   def deleteAlias(
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Alias]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Alias]
   ): scala.Unit = js.native
   /**
     * 删除指定的 tags
     */
   def deleteTags(
     tags: js.Array[java.lang.String],
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
   ): scala.Unit = js.native
   /**
     * Android Only
@@ -91,28 +91,28 @@ object default extends js.Object {
     * 获取当前设备 alias
     */
   def getAlias(
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Alias]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Alias]
   ): scala.Unit = js.native
   /**
     * 获取所有已有标签
     */
   def getAllTags(
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
   ): scala.Unit = js.native
   /**
     * iOS Only
     */
-  def getAppkeyWithcallback(cb: jpushDashReactDashNativeLib.JSuccessCallback[java.lang.String]): scala.Unit = js.native
+  def getAppkeyWithcallback(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[java.lang.String]): scala.Unit = js.native
   /**
     * iOS Only
     */
-  def getBadge(cb: jpushDashReactDashNativeLib.JSuccessCallback[scala.Double]): scala.Unit = js.native
+  def getBadge(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[scala.Double]): scala.Unit = js.native
   /**
     * 获取当前连接状态
     * 如果连接状态变更为已连接返回 true
     * 如果连接状态变更为断开连接连接返回 false
     */
-  def getConnectionState(cb: jpushDashReactDashNativeLib.JResultCallback[scala.Boolean]): scala.Unit = js.native
+  def getConnectionState(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JResultCallback[scala.Boolean]): scala.Unit = js.native
   /**
     * Android Only
     */
@@ -125,16 +125,16 @@ object default extends js.Object {
   /**
     * iOS Onlylalala
     */
-  def getLaunchAppNotification(cb: jpushDashReactDashNativeLib.JSuccessCallback[java.lang.String]): scala.Unit = js.native
+  def getLaunchAppNotification(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[java.lang.String]): scala.Unit = js.native
   /**
     * 获取 RegistrationId
     */
-  def getRegistrationID(cb: jpushDashReactDashNativeLib.JSuccessCallback[scala.Double]): scala.Unit = js.native
+  def getRegistrationID(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[scala.Double]): scala.Unit = js.native
   /**
     * iOS Only
     * 获取应用是否有推送权限
     */
-  def hasPermission(cb: jpushDashReactDashNativeLib.JResultCallback[scala.Boolean]): scala.Unit = js.native
+  def hasPermission(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JResultCallback[scala.Boolean]): scala.Unit = js.native
   /**
     * 初始化JPush 必须先初始化才能执行其他操作
     */
@@ -146,37 +146,47 @@ object default extends js.Object {
   /**
     * Android Only
     */
-  def notifyJSDidLoad(cb: jpushDashReactDashNativeLib.JResultCallback[scala.Double]): scala.Unit = js.native
+  def notifyJSDidLoad(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JResultCallback[scala.Double]): scala.Unit = js.native
   /**
     * 监听：连接状态变更
     */
-  def removeConnectionChangeListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[scala.Boolean]): scala.Unit = js.native
+  def removeConnectionChangeListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[scala.Boolean]): scala.Unit = js.native
   /**
     * Android Only
     */
-  def removeGetRegistrationIdListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[js.UndefOr[scala.Nothing]]): scala.Unit = js.native
+  def removeGetRegistrationIdListener(
+    cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[js.UndefOr[scala.Nothing]]
+  ): scala.Unit = js.native
   /**
     * iOS Only
     */
-  def removeOpenNotificationLaunchAppEventListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[js.UndefOr[scala.Nothing]]): scala.Unit = js.native
+  def removeOpenNotificationLaunchAppEventListener(
+    cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[js.UndefOr[scala.Nothing]]
+  ): scala.Unit = js.native
   /**
     * Android Only
     */
-  def removeReceiveCustomMsgListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[_]): scala.Unit = js.native
+  def removeReceiveCustomMsgListener(cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[_]): scala.Unit = js.native
   /**
     * 取消监听：接收推送事件
     */
-  def removeReceiveNotificationListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[js.UndefOr[scala.Nothing]]): scala.Unit = js.native
+  def removeReceiveNotificationListener(
+    cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[js.UndefOr[scala.Nothing]]
+  ): scala.Unit = js.native
   /**
     * 取消监听：点击推送事件
     */
-  def removeReceiveOpenNotificationListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[js.UndefOr[scala.Nothing]]): scala.Unit = js.native
+  def removeReceiveOpenNotificationListener(
+    cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[js.UndefOr[scala.Nothing]]
+  ): scala.Unit = js.native
   /**
     * iOS Only
     *
     * 取消监听：应用连接已登录
     */
-  def removenetworkDidLoginListener(cb: jpushDashReactDashNativeLib.JSuccessCallback[js.UndefOr[scala.Nothing]]): scala.Unit = js.native
+  def removenetworkDidLoginListener(
+    cb: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[js.UndefOr[scala.Nothing]]
+  ): scala.Unit = js.native
   def resumePush(): scala.Unit = js.native
   /**
   	 * @param {Object} notification = {
@@ -197,7 +207,7 @@ object default extends js.Object {
     */
   def setAlias(
     alias: java.lang.String,
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Alias]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Alias]
   ): scala.Unit = js.native
   /**
     * iOS Only
@@ -205,7 +215,7 @@ object default extends js.Object {
     */
   def setBadge(
     badge: scala.Double,
-    callback: jpushDashReactDashNativeLib.JSuccessCallback[js.Array[scala.Double]]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[js.Array[scala.Double]]
   ): scala.Unit = js.native
   /**
     * Android Only
@@ -281,7 +291,7 @@ object default extends js.Object {
     */
   def setTags(
     tags: js.Array[java.lang.String],
-    callback: jpushDashReactDashNativeLib.JFailCallback | jpushDashReactDashNativeLib.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
+    callback: jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JFailCallback | jpushDashReactDashNativeLib.jpushDashReactDashNativeMod.JSuccessCallback[jpushDashReactDashNativeLib.Anon_Tags]
   ): scala.Unit = js.native
   /**
     * iOS Only

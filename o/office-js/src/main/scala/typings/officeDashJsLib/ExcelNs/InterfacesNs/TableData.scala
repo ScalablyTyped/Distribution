@@ -9,6 +9,13 @@ import scala.scalajs.js.annotation._
 trait TableData extends js.Object {
   /**
     *
+    * Represents the AutoFilter object of the table. Read-Only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
+  /**
+    *
     * Represents a collection of all the columns in the table. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -110,6 +117,7 @@ trait TableData extends js.Object {
 object TableData {
   @scala.inline
   def apply(
+    autoFilter: AutoFilterData = null,
     columns: js.Array[TableColumnData] = null,
     highlightFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
     highlightLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
@@ -126,6 +134,7 @@ object TableData {
     style: java.lang.String = null
   ): TableData = {
     val __obj = js.Dynamic.literal()
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (!js.isUndefined(highlightFirstColumn)) __obj.updateDynamic("highlightFirstColumn")(highlightFirstColumn)
     if (!js.isUndefined(highlightLastColumn)) __obj.updateDynamic("highlightLastColumn")(highlightLastColumn)

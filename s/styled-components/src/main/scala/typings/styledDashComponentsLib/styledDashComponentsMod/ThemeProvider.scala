@@ -9,20 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ThemeProvider protected ()
   extends reactLib.reactMod.Component[
-      ThemeProviderProps[
-        styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[DefaultTheme]], 
-        styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[DefaultTheme]]
-      ], 
+      ThemeProviderProps[AnyIfEmpty[AnyIfEmpty[DefaultTheme]], AnyIfEmpty[AnyIfEmpty[DefaultTheme]]], 
       reactLib.reactMod.ComponentState, 
       js.Any
     ] {
-  def this(props: ThemeProviderProps[
-      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[DefaultTheme]], 
-      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[DefaultTheme]]
-    ]) = this()
-  def this(props: ThemeProviderProps[
-      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[DefaultTheme]], 
-      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[DefaultTheme]]
-    ], context: js.Any) = this()
+  def this(props: ThemeProviderProps[AnyIfEmpty[AnyIfEmpty[DefaultTheme]], AnyIfEmpty[AnyIfEmpty[DefaultTheme]]]) = this()
+  def this(props: ThemeProviderProps[AnyIfEmpty[AnyIfEmpty[DefaultTheme]], AnyIfEmpty[AnyIfEmpty[DefaultTheme]]], context: js.Any) = this()
 }
 

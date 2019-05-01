@@ -11,6 +11,9 @@ trait Anon_XY[A, B, C, D] extends js.Object {
     /* y */ sanctuaryLib.sanctuaryMod.Apply[B], 
     js.Function1[/* z */ sanctuaryLib.sanctuaryMod.Apply[C], sanctuaryLib.sanctuaryMod.Apply[D]]
   ] = js.native
-  def apply[X](x: Fn[X, A]): js.Function1[/* y */ Fn[X, B], js.Function1[/* z */ Fn[X, C], Fn[X, D]]] = js.native
+  def apply[X](x: sanctuaryLib.sanctuaryMod.Fn[X, A]): js.Function1[
+    /* y */ sanctuaryLib.sanctuaryMod.Fn[X, B], 
+    js.Function1[/* z */ sanctuaryLib.sanctuaryMod.Fn[X, C], sanctuaryLib.sanctuaryMod.Fn[X, D]]
+  ] = js.native
 }
 

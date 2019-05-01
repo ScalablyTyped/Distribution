@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg
 
-Typings are for version 2.22.1
+Typings are for version 2.22.2
 
 ## Library description:
 A web framework's framework for Node.js

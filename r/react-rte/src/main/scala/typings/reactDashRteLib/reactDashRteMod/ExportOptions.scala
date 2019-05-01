@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExportOptions extends js.Object {
-  var blockRenderers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactDashRteLib.BlockRenderer]] = js.undefined
-  var blockStyleFn: js.UndefOr[reactDashRteLib.BlockStyleFn] = js.undefined
-  var entityStyleFn: js.UndefOr[reactDashRteLib.EntityStyleFn] = js.undefined
+  var blockRenderers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[BlockRenderer]] = js.undefined
+  var blockStyleFn: js.UndefOr[BlockStyleFn] = js.undefined
+  var entityStyleFn: js.UndefOr[EntityStyleFn] = js.undefined
   var inlineStyles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[RenderConfig]] = js.undefined
 }
 
 object ExportOptions {
   @scala.inline
   def apply(
-    blockRenderers: org.scalablytyped.runtime.StringDictionary[reactDashRteLib.BlockRenderer] = null,
-    blockStyleFn: reactDashRteLib.BlockStyleFn = null,
-    entityStyleFn: reactDashRteLib.EntityStyleFn = null,
+    blockRenderers: org.scalablytyped.runtime.StringDictionary[BlockRenderer] = null,
+    blockStyleFn: BlockStyleFn = null,
+    entityStyleFn: EntityStyleFn = null,
     inlineStyles: org.scalablytyped.runtime.StringDictionary[RenderConfig] = null
   ): ExportOptions = {
     val __obj = js.Dynamic.literal()

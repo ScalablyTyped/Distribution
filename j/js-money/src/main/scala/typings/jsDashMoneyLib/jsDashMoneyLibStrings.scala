@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object jsDashMoneyLibStrings {
   @js.native
-  sealed trait ceil extends Rounders
+  sealed trait ceil
+    extends jsDashMoneyLib.jsDashMoneyMod.Rounders
   
   @js.native
-  sealed trait floor extends Rounders
+  sealed trait floor
+    extends jsDashMoneyLib.jsDashMoneyMod.Rounders
   
   @js.native
-  sealed trait round extends Rounders
+  sealed trait round
+    extends jsDashMoneyLib.jsDashMoneyMod.Rounders
   
   @scala.inline
   def ceil: ceil = "ceil".asInstanceOf[ceil]

@@ -47,7 +47,8 @@ class FieldState[TValue] protected ()
     */
   /* protected */ def _onDidChange(config: formstateLib.Anon_NewValue[TValue]): js.Any = js.native
   /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
-  def disableAutoValidation(): this.type = js.native
+  /* CompleteClass */
+  override def disableAutoValidation(): scala.Unit = js.native
   /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native
   def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]] = js.native

@@ -18,6 +18,9 @@ trait CreateDBParameterGroupMessage extends js.Object {
     * The description for the DB parameter group.
     */
   var Description: String
+  /**
+    * The tags to be assigned to the new DB parameter group.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 

@@ -14,24 +14,9 @@ class Menu ()
 @JSImport("react-bootstrap-typeahead", "Menu")
 @js.native
 object Menu extends js.Object {
-  @JSName("Divider")
-  var Divider_Original: reactLib.reactMod.FunctionComponent[js.Object] = js.native
-  @JSName("Header")
-  var Header_Original: reactLib.reactMod.FunctionComponent[
+  var Divider: reactLib.reactMod.FunctionComponent[js.Object] = js.native
+  var Header: reactLib.reactMod.FunctionComponent[
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
   ] = js.native
-  def Divider(props: reactLib.reactMod.PropsWithChildren[js.Object]): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def Divider(props: reactLib.reactMod.PropsWithChildren[js.Object], context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def Header(
-    props: reactLib.reactMod.PropsWithChildren[
-      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
-    ]
-  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def Header(
-    props: reactLib.reactMod.PropsWithChildren[
-      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
-    ],
-    context: js.Any
-  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
 }
 

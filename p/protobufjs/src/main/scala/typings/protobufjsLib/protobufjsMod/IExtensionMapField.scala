@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IExtensionMapField extends IMapField {
+trait IExtensionMapField
+  extends IMapField
+     with AnyExtensionField {
   /** Extended type */
   var extend: java.lang.String
 }

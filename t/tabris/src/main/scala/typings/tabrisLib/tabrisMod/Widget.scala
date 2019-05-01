@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 class Widget protected ()
   extends NativeObject
      with _WidgetProperties {
-  protected def this(properties: tabrisLib.Properties[Widget, tabrisLib.TypeScriptPropertiesKey]) = this()
+  protected def this(properties: Properties[Widget, TypeScriptPropertiesKey]) = this()
   /**
     * Background color of the widget.
     */
@@ -24,12 +24,12 @@ class Widget protected ()
     * be tiled.
     */
   /* CompleteClass */
-  override var backgroundImage: tabrisLib.Image = js.native
+  override var backgroundImage: Image = js.native
   /**
     * The vertical position of the widget's baseline relative to a sibling widget.
     */
   /* CompleteClass */
-  override var baseline: Widget | tabrisLib.Selector = js.native
+  override var baseline: Widget | Selector = js.native
   /**
     * The position of the widget's bottom edge relative to the parent or a sibling widget.
     */
@@ -143,7 +143,7 @@ class Widget protected ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Widget: tabrisLib.WidgetProperties = js.native
+  val tsProperties_Widget: WidgetProperties = js.native
   /**
     * Whether the widget is visible.
     */
@@ -166,9 +166,7 @@ class Widget protected ()
     * @param properties An object in the format `{Selector: {property: value, property: value, ... }, Selector: ...}`
     */
   /* protected */ def _apply(
-    properties: org.scalablytyped.runtime.StringDictionary[
-      tabrisLib.WidgetProperties with org.scalablytyped.runtime.StringDictionary[js.Any]
-    ]
+    properties: org.scalablytyped.runtime.StringDictionary[WidgetProperties with org.scalablytyped.runtime.StringDictionary[js.Any]]
   ): this.type = js.native
   /**
     * Identical to the `children` method, but intended to be used by subclasses in case the `children`
@@ -176,7 +174,7 @@ class Widget protected ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   /* protected */ def _children(): WidgetCollection[Widget] = js.native
-  /* protected */ def _children(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  /* protected */ def _children(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Identical to the `children` method, but intended to be used by subclasses in case the `children`
     * method was overwritten. See `children` for details.
@@ -189,7 +187,7 @@ class Widget protected ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   /* protected */ def _find(): WidgetCollection[Widget] = js.native
-  /* protected */ def _find(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  /* protected */ def _find(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Identical to the `find` method, but intended to be used by subclasses in case the `children` method
     * was overwritten. See `children` for details.
@@ -218,9 +216,7 @@ class Widget protected ()
     */
   @JSName("apply")
   def apply(
-    properties: org.scalablytyped.runtime.StringDictionary[
-      tabrisLib.WidgetProperties with org.scalablytyped.runtime.StringDictionary[js.Any]
-    ]
+    properties: org.scalablytyped.runtime.StringDictionary[WidgetProperties with org.scalablytyped.runtime.StringDictionary[js.Any]]
   ): this.type = js.native
   /**
     * Returns a (possibly empty) collection of all children of this widget that match the given selector.
@@ -231,7 +227,7 @@ class Widget protected ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def children(): WidgetCollection[Widget] = js.native
-  def children(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  def children(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Returns a collection containing all children of all widgets in this collection that are instances of
     * the given class.
@@ -255,7 +251,7 @@ class Widget protected ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def find(): WidgetCollection[Widget] = js.native
-  def find(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  def find(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Returns a collection containing all descendants of all widgets in this collection that match the
     * given selector.
@@ -304,7 +300,7 @@ class Widget protected ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def siblings(): WidgetCollection[Widget] = js.native
-  def siblings(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  def siblings(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Returns a (possibly empty) collection of all siblings of this widget that are instances of the given
     * class.

@@ -49,7 +49,7 @@ trait GulpHelp
     * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
     * @param option task options
     */
-  def task(name: java.lang.String, help: gulpDashHelpLib.HelpOption): js.Any = js.native
+  def task(name: java.lang.String, help: HelpOption): js.Any = js.native
   /**
     * Define a task.
     *
@@ -59,27 +59,22 @@ trait GulpHelp
     * @param fn the function that performs the task's operations. Generally this takes the form of gulp.src().pipe(someplugin()).
     * @param option task options
     */
-  def task(name: java.lang.String, help: gulpDashHelpLib.HelpOption, deps: js.Array[java.lang.String]): js.Any = js.native
+  def task(name: java.lang.String, help: HelpOption, deps: js.Array[java.lang.String]): js.Any = js.native
   def task(
     name: java.lang.String,
-    help: gulpDashHelpLib.HelpOption,
+    help: HelpOption,
     deps: js.Array[java.lang.String],
     fn: gulpLib.gulpMod.TaskCallback
   ): js.Any = js.native
   def task(
     name: java.lang.String,
-    help: gulpDashHelpLib.HelpOption,
+    help: HelpOption,
     deps: js.Array[java.lang.String],
     fn: gulpLib.gulpMod.TaskCallback,
     option: TaskOptions
   ): js.Any = js.native
-  def task(name: java.lang.String, help: gulpDashHelpLib.HelpOption, fn: gulpLib.gulpMod.TaskCallback): js.Any = js.native
-  def task(
-    name: java.lang.String,
-    help: gulpDashHelpLib.HelpOption,
-    fn: gulpLib.gulpMod.TaskCallback,
-    option: TaskOptions
-  ): js.Any = js.native
+  def task(name: java.lang.String, help: HelpOption, fn: gulpLib.gulpMod.TaskCallback): js.Any = js.native
+  def task(name: java.lang.String, help: HelpOption, fn: gulpLib.gulpMod.TaskCallback, option: TaskOptions): js.Any = js.native
   def watch(globs: gulpLib.gulpMod.Globs): nodeLib.fsMod.FSWatcher = js.native
   def watch(globs: gulpLib.gulpMod.Globs, fn: undertakerLib.undertakerMod.TaskFunction): nodeLib.fsMod.FSWatcher = js.native
   def watch(globs: gulpLib.gulpMod.Globs, opts: gulpLib.gulpMod.WatchOptions): nodeLib.fsMod.FSWatcher = js.native

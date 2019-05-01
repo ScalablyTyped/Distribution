@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Defines how the widget should be arranged. When setting the layout of a widget using **LayoutData**, all currently set layout attributes not in the new LayoutData object will be implicitly reset to null (i.e. "not specified").
   */
 trait LayoutData extends js.Object {
-  var baseline: js.UndefOr[Widget | tabrisLib.Selector] = js.undefined
+  var baseline: js.UndefOr[Widget | Selector] = js.undefined
   var bottom: js.UndefOr[tabrisLib.margin] = js.undefined
   var centerX: js.UndefOr[tabrisLib.offset] = js.undefined
   var centerY: js.UndefOr[tabrisLib.offset] = js.undefined
@@ -23,7 +23,7 @@ trait LayoutData extends js.Object {
 object LayoutData {
   @scala.inline
   def apply(
-    baseline: Widget | tabrisLib.Selector = null,
+    baseline: Widget | Selector = null,
     bottom: tabrisLib.margin = null,
     centerX: js.UndefOr[tabrisLib.offset] = js.undefined,
     centerY: js.UndefOr[tabrisLib.offset] = js.undefined,

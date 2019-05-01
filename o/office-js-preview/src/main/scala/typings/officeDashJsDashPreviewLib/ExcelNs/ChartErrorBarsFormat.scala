@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Encapsulates the format properties for chart error bars.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartErrorBarsFormat")
 @js.native
@@ -23,8 +22,7 @@ class ChartErrorBarsFormat ()
     *
     * Represents chart line formatting.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val line: ChartLineFormat = js.native
   /**

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginConvertColors extends js.Object {
+trait PluginConvertColors extends PluginConfig {
   var convertColors: scala.Boolean | js.Object
 }
 

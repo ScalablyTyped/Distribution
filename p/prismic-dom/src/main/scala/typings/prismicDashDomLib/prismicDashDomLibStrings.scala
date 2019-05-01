@@ -10,61 +10,80 @@ object prismicDashDomLibStrings {
   sealed trait Elements extends js.Object
   
   @js.native
-  sealed trait em extends ElementType
+  sealed trait em
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait embed extends ElementType
+  sealed trait embed
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait `group-list-item` extends ElementType
+  sealed trait `group-list-item`
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait `group-o-list-item` extends ElementType
+  sealed trait `group-o-list-item`
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait heading1 extends ElementType
+  sealed trait heading1
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait heading2 extends ElementType
+  sealed trait heading2
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait heading3 extends ElementType
+  sealed trait heading3
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait heading4 extends ElementType
+  sealed trait heading4
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait heading5 extends ElementType
+  sealed trait heading5
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait heading6 extends ElementType
+  sealed trait heading6
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait hyperlink extends ElementType
+  sealed trait hyperlink
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait image extends ElementType
+  sealed trait image
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait label extends ElementType
+  sealed trait label
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait `list-item` extends ElementType
+  sealed trait `list-item`
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait `o-list-item` extends ElementType
+  sealed trait `o-list-item`
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait paragraph extends ElementType
+  sealed trait paragraph
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait preformatted extends ElementType
+  sealed trait preformatted
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait span extends ElementType
+  sealed trait span
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @js.native
-  sealed trait strong extends ElementType
+  sealed trait strong
+    extends prismicDashDomLib.prismicDashDomMod.ElementType
   
   @scala.inline
   def Elements: Elements = "Elements".asInstanceOf[Elements]

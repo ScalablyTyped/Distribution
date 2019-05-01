@@ -42,6 +42,13 @@ class ChartDataLabels ()
   var horizontalAlignment: ChartTextHorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = js.native
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: scala.Boolean = js.native
+  /**
+    *
     * Represents the format code for data labels.
     *
     * [Api set: ExcelApi 1.8]

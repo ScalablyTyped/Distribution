@@ -11,8 +11,7 @@ trait GeometricShapeData extends js.Object {
     *
     * Returns the shape identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[java.lang.String] = js.undefined
 }

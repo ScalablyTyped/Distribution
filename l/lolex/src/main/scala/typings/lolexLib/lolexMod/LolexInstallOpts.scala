@@ -32,7 +32,7 @@ trait LolexInstallOpts extends js.Object {
     * An array with explicit function names to hijack. When not set, lolex will automatically fake all methods except nextTick
     * e.g., lolex.install({ toFake: ["setTimeout", "nextTick"]}) will fake only setTimeout and nextTick
     */
-  var toFake: js.UndefOr[js.Array[lolexLib.FakeMethod]] = js.undefined
+  var toFake: js.UndefOr[js.Array[FakeMethod]] = js.undefined
 }
 
 object LolexInstallOpts {
@@ -43,7 +43,7 @@ object LolexInstallOpts {
     now: scala.Double | stdLib.Date = null,
     shouldAdvanceTime: js.UndefOr[scala.Boolean] = js.undefined,
     target: js.Any = null,
-    toFake: js.Array[lolexLib.FakeMethod] = null
+    toFake: js.Array[FakeMethod] = null
   ): LolexInstallOpts = {
     val __obj = js.Dynamic.literal()
     if (advanceTimeDelta != null) __obj.updateDynamic("advanceTimeDelta")(advanceTimeDelta.asInstanceOf[js.Any])

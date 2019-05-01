@@ -14,8 +14,8 @@ class BinaryIterator () extends js.Object {
   def atEnd(): scala.Boolean = js.native
   def clear(): scala.Unit = js.native
   def free(): scala.Unit = js.native
-  def get(): googleDashProtobufLib.ScalarFieldType | scala.Null = js.native
-  def next(): googleDashProtobufLib.ScalarFieldType | scala.Null = js.native
+  def get(): ScalarFieldType | scala.Null = js.native
+  def next(): ScalarFieldType | scala.Null = js.native
 }
 
 /* static members */

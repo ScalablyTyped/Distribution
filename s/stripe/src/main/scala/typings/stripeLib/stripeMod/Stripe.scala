@@ -55,6 +55,7 @@ trait Stripe extends js.Object {
   var webhooks: stripeLib.stripeMod.resourcesNs.WebHooks = js.native
   def getClientUserAgent(response: js.Function1[/* userAgent */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def getConstant(c: java.lang.String): js.Any = js.native
+  def getMaxNetworkRetries(): scala.Double = js.native
   def setApiKey(): scala.Unit = js.native
   def setApiKey(key: java.lang.String): scala.Unit = js.native
   def setApiVersion(): scala.Unit = js.native
@@ -65,6 +66,7 @@ trait Stripe extends js.Object {
   def setHost(host: java.lang.String, port: scala.Double): scala.Unit = js.native
   def setHost(host: java.lang.String, port: scala.Double, protocol: java.lang.String): scala.Unit = js.native
   def setHttpAgent(agent: java.lang.String): scala.Unit = js.native
+  def setMaxNetworkRetries(maxNetworkRetries: scala.Double): scala.Unit = js.native
   def setPort(port: java.lang.String): scala.Unit = js.native
   def setPort(port: scala.Double): scala.Unit = js.native
   def setProtocol(protocol: java.lang.String): scala.Unit = js.native

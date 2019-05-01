@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait LinearGradientProps extends js.Object {
   var gradientUnits: js.UndefOr[Units] = js.undefined
   var id: java.lang.String
-  var x1: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var x2: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var y1: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var y2: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var x1: js.UndefOr[NumberProp] = js.undefined
+  var x2: js.UndefOr[NumberProp] = js.undefined
+  var y1: js.UndefOr[NumberProp] = js.undefined
+  var y2: js.UndefOr[NumberProp] = js.undefined
 }
 
 object LinearGradientProps {
@@ -19,10 +19,10 @@ object LinearGradientProps {
   def apply(
     id: java.lang.String,
     gradientUnits: Units = null,
-    x1: reactDashNativeDashSvgLib.NumberProp = null,
-    x2: reactDashNativeDashSvgLib.NumberProp = null,
-    y1: reactDashNativeDashSvgLib.NumberProp = null,
-    y2: reactDashNativeDashSvgLib.NumberProp = null
+    x1: NumberProp = null,
+    x2: NumberProp = null,
+    y1: NumberProp = null,
+    y2: NumberProp = null
   ): LinearGradientProps = {
     val __obj = js.Dynamic.literal(id = id)
     if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits)

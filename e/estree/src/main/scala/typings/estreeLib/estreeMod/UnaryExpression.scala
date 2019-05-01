@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UnaryExpression extends BaseNode {
-  var argument: estreeLib.Expression
+trait UnaryExpression
+  extends BaseNode
+     with Expression {
+  var argument: Expression
   var operator: UnaryOperator
   var prefix: estreeLib.estreeLibNumbers.`true`
   @JSName("type")
@@ -16,7 +18,7 @@ trait UnaryExpression extends BaseNode {
 object UnaryExpression {
   @scala.inline
   def apply(
-    argument: estreeLib.Expression,
+    argument: Expression,
     operator: UnaryOperator,
     prefix: estreeLib.estreeLibNumbers.`true`,
     `type`: estreeLib.estreeLibStrings.UnaryExpression,

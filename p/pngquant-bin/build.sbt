@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pngquant-bin"
-version := "4.0-dt-20180420Z-0ec9b6"
+version := "4.0-dt-20180420Z-e0d5b8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

@@ -59,6 +59,13 @@ trait ChartTrendlineLabelLoadOptions extends js.Object {
   var left: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * String value that represents the format code for trendline label.
     *
     * [Api set: ExcelApi 1.8]
@@ -112,6 +119,7 @@ object ChartTrendlineLabelLoadOptions {
     height: js.UndefOr[scala.Boolean] = js.undefined,
     horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
     left: js.UndefOr[scala.Boolean] = js.undefined,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     text: js.UndefOr[scala.Boolean] = js.undefined,
     textOrientation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -127,6 +135,7 @@ object ChartTrendlineLabelLoadOptions {
     if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
     if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
     if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
     if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation)

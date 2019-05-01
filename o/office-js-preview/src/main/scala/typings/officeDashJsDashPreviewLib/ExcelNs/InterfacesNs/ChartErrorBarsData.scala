@@ -11,24 +11,21 @@ trait ChartErrorBarsData extends js.Object {
     *
     * Represents whether have the end style cap for the error bars.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the formatting of chart ErrorBars.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[ChartErrorBarsFormatData] = js.undefined
   /**
     *
     * Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var include: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartErrorBarsInclude | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Both | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MinusValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlusValues
@@ -37,8 +34,7 @@ trait ChartErrorBarsData extends js.Object {
     *
     * Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ChartErrorBarsType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FixedValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StDev | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StError | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Custom
@@ -47,8 +43,7 @@ trait ChartErrorBarsData extends js.Object {
     *
     * Represents whether shown error bars.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }

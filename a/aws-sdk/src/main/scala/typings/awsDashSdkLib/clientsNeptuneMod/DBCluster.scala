@@ -115,7 +115,7 @@ trait DBCluster extends js.Object {
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod. 
+    * Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod.
     */
   var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   /**
@@ -127,11 +127,11 @@ trait DBCluster extends js.Object {
     */
   var ReadReplicaIdentifiers: js.UndefOr[ReadReplicaIdentifierList] = js.undefined
   /**
-    * The reader endpoint for the DB cluster. The reader endpoint for a DB cluster load-balances connections across the Read Replicas that are available in a DB cluster. As clients request new connections to the reader endpoint, Neptune distributes the connection requests among the Read Replicas in the DB cluster. This functionality can help balance your read workload across multiple Read Replicas in your DB cluster.  If a failover occurs, and the Read Replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Read Replicas in the cluster, you can then reconnect to the reader endpoint.
+    * The reader endpoint for the DB cluster. The reader endpoint for a DB cluster load-balances connections across the Read Replicas that are available in a DB cluster. As clients request new connections to the reader endpoint, Neptune distributes the connection requests among the Read Replicas in the DB cluster. This functionality can help balance your read workload across multiple Read Replicas in your DB cluster. If a failover occurs, and the Read Replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Read Replicas in the cluster, you can then reconnect to the reader endpoint.
     */
   var ReaderEndpoint: js.UndefOr[String] = js.undefined
   /**
-    * Contains the identifier of the source DB cluster if this DB cluster is a Read Replica.
+    * Not supported by Neptune.
     */
   var ReplicationSourceIdentifier: js.UndefOr[String] = js.undefined
   /**

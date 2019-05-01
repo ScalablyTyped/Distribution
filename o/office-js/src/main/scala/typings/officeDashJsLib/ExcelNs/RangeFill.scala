@@ -17,7 +17,7 @@ class RangeFill ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -25,6 +25,38 @@ class RangeFill ()
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_RangeFill: RequestContext = js.native
+  /**
+    *
+    * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
+    A null value indicates that the entire range doesn't have uniform pattern setting.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var pattern: FillPattern | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Solid | officeDashJsLib.officeDashJsLibStrings.Gray50 | officeDashJsLib.officeDashJsLibStrings.Gray75 | officeDashJsLib.officeDashJsLibStrings.Gray25 | officeDashJsLib.officeDashJsLibStrings.Horizontal | officeDashJsLib.officeDashJsLibStrings.Vertical | officeDashJsLib.officeDashJsLibStrings.Down | officeDashJsLib.officeDashJsLibStrings.Up | officeDashJsLib.officeDashJsLibStrings.Checker | officeDashJsLib.officeDashJsLibStrings.SemiGray75 | officeDashJsLib.officeDashJsLibStrings.LightHorizontal | officeDashJsLib.officeDashJsLibStrings.LightVertical | officeDashJsLib.officeDashJsLibStrings.LightDown | officeDashJsLib.officeDashJsLibStrings.LightUp | officeDashJsLib.officeDashJsLibStrings.Grid | officeDashJsLib.officeDashJsLibStrings.CrissCross | officeDashJsLib.officeDashJsLibStrings.Gray16 | officeDashJsLib.officeDashJsLibStrings.Gray8 | officeDashJsLib.officeDashJsLibStrings.LinearGradient | officeDashJsLib.officeDashJsLibStrings.RectangularGradient = js.native
+  /**
+    *
+    * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+    Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500").
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var patternColor: java.lang.String = js.native
+  /**
+    *
+    * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    If the pattern tintAndShades are not uniform, null will be returned.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var patternTintAndShade: scala.Double = js.native
+  /**
+    *
+    * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    If the tintAndShades are not uniform, null will be returned.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var tintAndShade: scala.Double = js.native
   /**
     *
     * Resets the range background.

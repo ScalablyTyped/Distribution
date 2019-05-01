@@ -63,6 +63,13 @@ class ChartDataLabel ()
   var left: scala.Double = js.native
   /**
     *
+    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: scala.Boolean = js.native
+  /**
+    *
     * String value that represents the format code for data label.
     *
     * [Api set: ExcelApi 1.8]

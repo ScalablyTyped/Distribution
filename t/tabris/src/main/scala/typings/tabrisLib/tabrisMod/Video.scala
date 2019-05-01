@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._VideoProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined autoPlay, controlsVisible, url */ @JSImport("tabris", "Video")
 @js.native
 class Video () extends Widget {
-  def this(properties: tabrisLib.Properties[Video, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Video, TypeScriptPropertiesKey]) = this()
   /**
     * If set to `true`, starts playing the video as soon as the state changes from `open` to `ready`.
     */
@@ -44,7 +44,7 @@ class Video () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Video: tabrisLib.VideoProperties = js.native
+  val tsProperties_Video: VideoProperties = js.native
   /**
     * The URL of the video to play. Setting this property to any non-empty string changes the
     * *[state](#state)* to `open` and the video starts loading. Setting this property to an empty string

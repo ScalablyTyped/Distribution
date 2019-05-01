@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var VERSION: java.lang.String = js.native
-  var glob: globDashExpandLib._glob = js.native
+  var glob: _glob = js.native
   def apply(opts: Option, patterns: (java.lang.String | stdLib.RegExp)*): js.Array[java.lang.String] = js.native
   def apply(opts: Option, patterns: js.Array[java.lang.String | stdLib.RegExp]): js.Array[java.lang.String] = js.native
   def apply(patterns: (java.lang.String | stdLib.RegExp)*): js.Array[java.lang.String] = js.native

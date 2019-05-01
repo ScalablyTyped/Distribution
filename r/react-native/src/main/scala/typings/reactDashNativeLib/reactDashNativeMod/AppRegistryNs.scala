@@ -15,7 +15,7 @@ object AppRegistryNs extends js.Object {
     getComponentFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider
   ): java.lang.String = js.native
   def registerConfig(config: js.Array[reactDashNativeLib.reactDashNativeMod.AppConfig]): scala.Unit = js.native
-  def registerHeadlessTask(appKey: java.lang.String, task: reactDashNativeLib.TaskProvider): scala.Unit = js.native
+  def registerHeadlessTask(appKey: java.lang.String, task: reactDashNativeLib.reactDashNativeMod.TaskProvider): scala.Unit = js.native
   def registerRunnable(appKey: java.lang.String, func: reactDashNativeLib.reactDashNativeMod.Runnable): java.lang.String = js.native
   def runApplication(appKey: java.lang.String, appParameters: js.Any): scala.Unit = js.native
   def unmountApplicationComponentAtRootTag(rootTag: scala.Double): scala.Unit = js.native

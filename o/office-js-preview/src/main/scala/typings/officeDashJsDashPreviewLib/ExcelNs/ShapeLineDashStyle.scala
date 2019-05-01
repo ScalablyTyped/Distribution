@@ -12,8 +12,7 @@ sealed trait ShapeLineDashStyle extends js.Object
   *
   * The dash style for a line.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeLineDashStyle")
 @js.native

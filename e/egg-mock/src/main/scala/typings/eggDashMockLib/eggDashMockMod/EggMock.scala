@@ -19,7 +19,7 @@ trait EggMock extends js.Object {
   /**
     * mock the serverEnv of Egg
     */
-  def env(env: eggDashMockLib.EnvType): scala.Unit = js.native
+  def env(env: EnvType): scala.Unit = js.native
   /**
     * set EGG_HOME path
     */

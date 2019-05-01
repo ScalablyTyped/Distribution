@@ -12,8 +12,7 @@ sealed trait ShapeType extends js.Object
   *
   * Specifies the type of a shape.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeType")
 @js.native

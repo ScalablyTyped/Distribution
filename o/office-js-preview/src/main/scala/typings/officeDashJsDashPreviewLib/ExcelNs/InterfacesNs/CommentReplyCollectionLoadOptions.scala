@@ -55,14 +55,6 @@ trait CommentReplyCollectionLoadOptions extends js.Object {
     * @beta
     */
   var id: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    *
-    * For EACH ITEM in the collection: Represents whether it is a comment thread or reply. Always return false here. Read-only.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var isParent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object CommentReplyCollectionLoadOptions {
@@ -73,8 +65,7 @@ object CommentReplyCollectionLoadOptions {
     authorName: js.UndefOr[scala.Boolean] = js.undefined,
     content: js.UndefOr[scala.Boolean] = js.undefined,
     creationDate: js.UndefOr[scala.Boolean] = js.undefined,
-    id: js.UndefOr[scala.Boolean] = js.undefined,
-    isParent: js.UndefOr[scala.Boolean] = js.undefined
+    id: js.UndefOr[scala.Boolean] = js.undefined
   ): CommentReplyCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
@@ -83,7 +74,6 @@ object CommentReplyCollectionLoadOptions {
     if (!js.isUndefined(content)) __obj.updateDynamic("content")(content)
     if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent)
     __obj.asInstanceOf[CommentReplyCollectionLoadOptions]
   }
 }

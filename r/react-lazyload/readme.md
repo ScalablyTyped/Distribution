@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-lazyload
 
-Typings are for version 2.3
+Typings are for version 2.5
 
 ## Library description:
 Lazyload your components, images or anything where performance matters.
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-lazyload ver 2.3
+// Type definitions for react-lazyload ver 2.5
 // Project: https://github.com/jasonslyvia/react-lazyload
 // Definitions by: m0a <https://github.com/m0a>
+//                 svobik7 <https://github.com/svobik7>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

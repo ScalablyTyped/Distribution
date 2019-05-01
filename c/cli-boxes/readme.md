@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-boxes
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 Boxes for use in the terminal

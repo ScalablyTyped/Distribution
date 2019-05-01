@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DirectConnectGatewayAssociationProposal extends js.Object {
   /**
-    * Information about the associated virtual private gateway.
+    * Information about the associated gateway.
     */
   var associatedGateway: js.UndefOr[AssociatedGateway] = js.undefined
   /**

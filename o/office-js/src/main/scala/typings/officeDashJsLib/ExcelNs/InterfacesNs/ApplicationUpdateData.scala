@@ -16,15 +16,26 @@ trait ApplicationUpdateData extends js.Object {
   var calculationMode: js.UndefOr[
     officeDashJsLib.ExcelNs.CalculationMode | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.AutomaticExceptTables | officeDashJsLib.officeDashJsLibStrings.Manual
   ] = js.undefined
+  /**
+    *
+    * Returns the Iterative Calculation settings.
+    On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
+    On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.undefined
 }
 
 object ApplicationUpdateData {
   @scala.inline
   def apply(
-    calculationMode: officeDashJsLib.ExcelNs.CalculationMode | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.AutomaticExceptTables | officeDashJsLib.officeDashJsLibStrings.Manual = null
+    calculationMode: officeDashJsLib.ExcelNs.CalculationMode | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.AutomaticExceptTables | officeDashJsLib.officeDashJsLibStrings.Manual = null,
+    iterativeCalculation: IterativeCalculationUpdateData = null
   ): ApplicationUpdateData = {
     val __obj = js.Dynamic.literal()
     if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
+    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
     __obj.asInstanceOf[ApplicationUpdateData]
   }
 }

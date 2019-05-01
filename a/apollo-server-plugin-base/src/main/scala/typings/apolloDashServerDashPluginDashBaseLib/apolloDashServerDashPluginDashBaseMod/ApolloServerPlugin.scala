@@ -15,7 +15,7 @@ trait ApolloServerPlugin extends js.Object {
   var serverWillStart: js.UndefOr[
     js.Function1[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLServiceContext */ /* service */ js.Any, 
-      apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit]
+      ValueOrPromise[scala.Unit]
     ]
   ] = js.undefined
 }
@@ -24,7 +24,7 @@ object ApolloServerPlugin {
   @scala.inline
   def apply(
     requestDidStart: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ /* requestContext */ js.Any => GraphQLRequestListener[_] | scala.Unit = null,
-    serverWillStart: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLServiceContext */ /* service */ js.Any => apolloDashServerDashPluginDashBaseLib.ValueOrPromise[scala.Unit] = null
+    serverWillStart: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLServiceContext */ /* service */ js.Any => ValueOrPromise[scala.Unit] = null
   ): ApolloServerPlugin = {
     val __obj = js.Dynamic.literal()
     if (requestDidStart != null) __obj.updateDynamic("requestDidStart")(js.Any.fromFunction1(requestDidStart))

@@ -16,6 +16,13 @@ trait TableCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Represents the AutoFilter object of the table.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
     *
     * [Api set: ExcelApi 1.1]
@@ -125,6 +132,7 @@ object TableCollectionLoadOptions {
   @scala.inline
   def apply(
     $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFilter: AutoFilterLoadOptions = null,
     columns: TableColumnCollectionLoadOptions = null,
     highlightFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
     highlightLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
@@ -143,6 +151,7 @@ object TableCollectionLoadOptions {
   ): TableCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (!js.isUndefined(highlightFirstColumn)) __obj.updateDynamic("highlightFirstColumn")(highlightFirstColumn)
     if (!js.isUndefined(highlightLastColumn)) __obj.updateDynamic("highlightLastColumn")(highlightLastColumn)

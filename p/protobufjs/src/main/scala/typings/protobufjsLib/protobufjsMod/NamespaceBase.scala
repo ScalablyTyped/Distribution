@@ -25,7 +25,7 @@ abstract class NamespaceBase () extends ReflectionObject {
     * @param nestedJson Any nested object descriptors
     * @returns `this`
     */
-  def addJSON(nestedJson: org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]): Namespace = js.native
+  def addJSON(nestedJson: org.scalablytyped.runtime.StringDictionary[AnyNestedObject]): Namespace = js.native
   /**
     * Defines additial namespaces within this one if not yet existing.
     * @param path Path to create

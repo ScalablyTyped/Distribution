@@ -10,7 +10,7 @@ trait Tokenizr extends js.Object {
   /**
     * Configure a tokenization after-rule callback
     */
-  def after(action: tokenizrLib.Action): this.type = js.native
+  def after(action: Action): this.type = js.native
   /**
     * Execute multiple alternative callbacks
     */
@@ -18,7 +18,7 @@ trait Tokenizr extends js.Object {
   /**
     * Configure a tokenization before-rule callback
     */
-  def before(action: tokenizrLib.Action): this.type = js.native
+  def before(action: Action): this.type = js.native
   /**
     * Open tokenization transaction
     */
@@ -76,14 +76,9 @@ trait Tokenizr extends js.Object {
   /**
     * Configure a tokenization rule
     */
-  def rule(pattern: stdLib.RegExp, action: tokenizrLib.RuleAction): this.type = js.native
-  def rule(pattern: stdLib.RegExp, action: tokenizrLib.RuleAction, name: java.lang.String): this.type = js.native
-  def rule(
-    state: java.lang.String,
-    pattern: stdLib.RegExp,
-    action: tokenizrLib.RuleAction,
-    name: java.lang.String
-  ): this.type = js.native
+  def rule(pattern: stdLib.RegExp, action: RuleAction): this.type = js.native
+  def rule(pattern: stdLib.RegExp, action: RuleAction, name: java.lang.String): this.type = js.native
+  def rule(state: java.lang.String, pattern: stdLib.RegExp, action: RuleAction, name: java.lang.String): this.type = js.native
   /**
     * Skip one or more tokens
     */

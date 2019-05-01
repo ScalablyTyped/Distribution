@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a geometric shape inside a worksheet. A geometric shape can be a rectangle, block arrow, equation symbol, flowchart item, star, banner, callout, or any other basic shape in Excel.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait GeometricShapeLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,16 +18,14 @@ trait GeometricShapeLoadOptions extends js.Object {
     *
     * Returns the shape identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns the Shape object for the geometric shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }

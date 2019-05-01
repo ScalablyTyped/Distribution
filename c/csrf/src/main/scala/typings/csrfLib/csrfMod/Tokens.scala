@@ -15,7 +15,7 @@ trait Tokens extends js.Object {
   def create(secret: java.lang.String): java.lang.String = js.native
   /** Create a new secret key. */
   def secret(): js.Promise[java.lang.String] = js.native
-  def secret(callback: csrfLib.SecretCallback): js.Promise[java.lang.String] = js.native
+  def secret(callback: SecretCallback): js.Promise[java.lang.String] = js.native
   /**
     * Create a new secret key synchronously.
     */

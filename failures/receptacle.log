@@ -1,0 +1,6 @@
+[error] PhaseRunner.scala:86 Failure, [receptacle => InFile(/home/tso/tmp/tso-cache/npm/node_modules/receptacle/index.d.ts): Parse error at 34.1 end of input expected] [id => receptacle, phase => typescript] 
+[warn ] PhaseRunner.scala:68 Failed because of, [receptacle => InFile(/home/tso/tmp/tso-cache/npm/node_modules/receptacle/index.d.ts): Parse error at 34.1 end of input expected] [id => receptacle, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [receptacle => InFile(/home/tso/tmp/tso-cache/npm/node_modules/receptacle/index.d.ts): Parse error at 34.1 end of input expected] [id => receptacle, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [receptacle => InFile(/home/tso/tmp/tso-cache/npm/node_modules/receptacle/index.d.ts): Parse error at 34.1 end of input expected] [id => receptacle, phase => scala.js] 
+[error] PhaseRunner.scala:86 Failure, [receptacle => InFile(/home/tso/tmp/tso-cache/npm/node_modules/receptacle/index.d.ts): Parse error at 34.1 end of input expected] [id => receptacle, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [receptacle => InFile(/home/tso/tmp/tso-cache/npm/node_modules/receptacle/index.d.ts): Parse error at 34.1 end of input expected] [id => receptacle, phase => publish] 

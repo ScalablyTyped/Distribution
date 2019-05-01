@@ -11,8 +11,7 @@ trait ChartErrorBarsFormatData extends js.Object {
     *
     * Represents chart line formatting.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }

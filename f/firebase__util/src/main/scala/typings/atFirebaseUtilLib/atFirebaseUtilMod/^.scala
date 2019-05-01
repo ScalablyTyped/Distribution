@@ -48,8 +48,6 @@ object ^ extends js.Object {
   def jsonEval(str: js.Any): js.Any = js.native
   def map(obj: js.Any, f: js.Any): js.Object = js.native
   def map(obj: js.Any, f: js.Any, opt_obj: js.Any): js.Object = js.native
-  def patchCapture(): js.Any = js.native
-  def patchCapture(captureFake: js.Any): js.Any = js.native
   def patchProperty(obj: js.Any, prop: java.lang.String, value: js.Any): scala.Unit = js.native
   def querystring(querystringParams: js.Any): java.lang.String = js.native
   def querystringDecode(querystring: js.Any): js.Object = js.native

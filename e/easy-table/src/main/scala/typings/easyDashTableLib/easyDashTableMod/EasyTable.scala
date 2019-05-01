@@ -20,7 +20,7 @@ trait EasyTable extends js.Object {
     * @returns {Table} `this`
     */
   def cell[T](col: java.lang.String, `val`: T): this.type = js.native
-  def cell[T](col: java.lang.String, `val`: T, printer: easyDashTableLib.CellPrinter[T]): this.type = js.native
+  def cell[T](col: java.lang.String, `val`: T, printer: CellPrinter[T]): this.type = js.native
   /**
     * Get list of columns in printing order
     *
@@ -33,12 +33,7 @@ trait EasyTable extends js.Object {
     * @param {Function} cb - Callback function with signature `(column, value, printer)`
     */
   def forEachTotal[T](
-    cb: js.Function3[
-      /* column */ java.lang.String, 
-      /* value */ T, 
-      /* printer */ easyDashTableLib.CellPrinter[T], 
-      scala.Unit
-    ]
+    cb: js.Function3[/* column */ java.lang.String, /* value */ T, /* printer */ CellPrinter[T], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Same as `.toString()` but yields the result to `console.log()`
@@ -80,7 +75,7 @@ trait EasyTable extends js.Object {
     */
   def sort(): this.type = js.native
   def sort(cmp: js.Array[java.lang.String]): this.type = js.native
-  def sort[T](cmp: easyDashTableLib.CompareFunction[T]): this.type = js.native
+  def sort[T](cmp: CompareFunction[T]): this.type = js.native
   /**
     * Sort the table
     *

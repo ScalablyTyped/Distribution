@@ -43,7 +43,7 @@ object MapField extends js.Object {
     fieldId: scala.Double,
     fieldKeyType: protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.string,
     fieldValueType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bytes | js.Object | protobufjsLib.protobufjsMod.Constructor[js.Object]
-  ): protobufjsLib.FieldDecorator = js.native
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
   /**
     * Constructs a map field from a map field descriptor.
     * @param name Field name

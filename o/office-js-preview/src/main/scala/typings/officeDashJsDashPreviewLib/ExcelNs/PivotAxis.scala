@@ -12,8 +12,7 @@ sealed trait PivotAxis extends js.Object
   *
   * The ShowAs Calculation function for the Data Pivot Field.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PivotAxis")
 @js.native

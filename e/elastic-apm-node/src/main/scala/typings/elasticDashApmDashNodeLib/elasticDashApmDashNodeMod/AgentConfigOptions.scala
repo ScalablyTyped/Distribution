@@ -14,8 +14,8 @@ trait AgentConfigOptions extends js.Object {
   var apiRequestTime: js.UndefOr[java.lang.String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
   var asyncHooks: js.UndefOr[scala.Boolean] = js.undefined
-  var captureBody: js.UndefOr[elasticDashApmDashNodeLib.CaptureBody] = js.undefined
-  var captureErrorLogStackTraces: js.UndefOr[elasticDashApmDashNodeLib.CaptureErrorLogStackTraces] = js.undefined
+  var captureBody: js.UndefOr[CaptureBody] = js.undefined
+  var captureErrorLogStackTraces: js.UndefOr[CaptureErrorLogStackTraces] = js.undefined
   var captureExceptions: js.UndefOr[scala.Boolean] = js.undefined
   var captureHeaders: js.UndefOr[scala.Boolean] = js.undefined
   var captureSpanStackTraces: js.UndefOr[scala.Boolean] = js.undefined
@@ -35,7 +35,7 @@ trait AgentConfigOptions extends js.Object {
   var kubernetesNodeName: js.UndefOr[java.lang.String] = js.undefined
   var kubernetesPodName: js.UndefOr[java.lang.String] = js.undefined
   var kubernetesPodUID: js.UndefOr[java.lang.String] = js.undefined
-  var logLevel: js.UndefOr[elasticDashApmDashNodeLib.LogLevel] = js.undefined
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
   var logger: js.UndefOr[Logger] = js.undefined
   var metricsInterval: js.UndefOr[java.lang.String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
@@ -64,8 +64,8 @@ object AgentConfigOptions {
     apiRequestSize: java.lang.String = null,
     apiRequestTime: java.lang.String = null,
     asyncHooks: js.UndefOr[scala.Boolean] = js.undefined,
-    captureBody: elasticDashApmDashNodeLib.CaptureBody = null,
-    captureErrorLogStackTraces: elasticDashApmDashNodeLib.CaptureErrorLogStackTraces = null,
+    captureBody: CaptureBody = null,
+    captureErrorLogStackTraces: CaptureErrorLogStackTraces = null,
     captureExceptions: js.UndefOr[scala.Boolean] = js.undefined,
     captureHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     captureSpanStackTraces: js.UndefOr[scala.Boolean] = js.undefined,
@@ -84,7 +84,7 @@ object AgentConfigOptions {
     kubernetesNodeName: java.lang.String = null,
     kubernetesPodName: java.lang.String = null,
     kubernetesPodUID: java.lang.String = null,
-    logLevel: elasticDashApmDashNodeLib.LogLevel = null,
+    logLevel: LogLevel = null,
     logger: Logger = null,
     metricsInterval: java.lang.String = null,
     payloadLogFile: java.lang.String = null,

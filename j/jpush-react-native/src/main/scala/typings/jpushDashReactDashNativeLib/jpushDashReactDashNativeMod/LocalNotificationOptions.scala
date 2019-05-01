@@ -12,7 +12,7 @@ trait LocalNotificationOptions extends js.Object {
   // 通知标题
   var content: java.lang.String
   // 通知触发时间的时间戳（毫秒）
-  var extra: js.UndefOr[jpushDashReactDashNativeLib.ExtraData] = js.undefined
+  var extra: js.UndefOr[ExtraData] = js.undefined
   // 通知内容
   var fireTime: scala.Double
   // 设置通知样式，1 为基础样式，2 为自定义样式。自定义样式需要先调用 setStyleCustom 接口设置自定义样式。(Android Only)
@@ -34,7 +34,7 @@ object LocalNotificationOptions {
     id: scala.Double,
     title: java.lang.String,
     badge: scala.Int | scala.Double = null,
-    extra: jpushDashReactDashNativeLib.ExtraData = null,
+    extra: ExtraData = null,
     soundName: java.lang.String = null,
     subtitle: java.lang.String = null
   ): LocalNotificationOptions = {

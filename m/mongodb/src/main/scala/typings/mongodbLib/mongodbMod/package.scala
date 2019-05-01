@@ -16,6 +16,7 @@ package object mongodbMod {
   {[ P in keyof T ]:? T[P] | mongodb.mongodb.Condition<T, P>}
     */ mongodbLib.mongodbLibStrings.FilterQuery with T) | org.scalablytyped.runtime.StringDictionary[js.Any]
   type GridFSBucketErrorCallback = js.Function1[/* err */ js.UndefOr[MongoError], scala.Unit]
+  type GridFSBucketWriteStreamId = java.lang.String | scala.Double | js.Object | bsonLib.bsonMod.ObjectID
   type IteratorCallback[T] = js.Function1[/* doc */ T, scala.Unit]
   type MongoCallback[T] = js.Function2[/* error */ MongoError, /* result */ T, scala.Unit]
   type log = js.Function2[

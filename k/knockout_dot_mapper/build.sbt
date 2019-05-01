@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_mapper"
-version := "0.0-unknown-dt-20190322Z-6c70a4"
+version := "0.0-unknown-dt-20190322Z-cee5d7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

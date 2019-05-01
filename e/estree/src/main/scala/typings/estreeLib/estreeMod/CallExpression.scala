@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   - SimpleCallExpression
   - NewExpression
 */
-trait CallExpression extends js.Object
+trait CallExpression extends Expression
 

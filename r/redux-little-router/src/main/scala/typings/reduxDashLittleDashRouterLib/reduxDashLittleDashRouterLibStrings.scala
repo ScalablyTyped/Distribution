@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object reduxDashLittleDashRouterLibStrings {
   @js.native
-  sealed trait POP extends HistoryAction
+  sealed trait POP
+    extends reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HistoryAction
   
   @js.native
-  sealed trait PUSH extends HistoryAction
+  sealed trait PUSH
+    extends reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HistoryAction
   
   @js.native
-  sealed trait REPLACE extends HistoryAction
+  sealed trait REPLACE
+    extends reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.HistoryAction
   
   @js.native
   sealed trait ROUTER_BLOCK extends js.Object

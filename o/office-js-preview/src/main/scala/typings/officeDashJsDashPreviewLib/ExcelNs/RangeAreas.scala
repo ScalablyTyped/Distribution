@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.RangeAreas")
 @js.native
@@ -20,48 +19,42 @@ class RangeAreas ()
     *
     * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val address: java.lang.String = js.native
   /**
     *
     * Returns the RageAreas reference in the user locale. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val addressLocal: java.lang.String = js.native
   /**
     *
     * Returns the number of rectangular ranges that comprise this RangeAreas object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val areaCount: scala.Double = js.native
   /**
     *
     * Returns a collection of rectangular ranges that comprise this RangeAreas object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val areas: RangeCollection = js.native
   /**
     *
     * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val cellCount: scala.Double = js.native
   /**
     *
     * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val conditionalFormats: ConditionalFormatCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -71,32 +64,28 @@ class RangeAreas ()
     *
     * Returns a dataValidation object for all ranges in the RangeAreas.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val dataValidation: DataValidation = js.native
   /**
     *
     * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val format: RangeFormat = js.native
   /**
     *
     * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val isEntireColumn: scala.Boolean = js.native
   /**
     *
     * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val isEntireRow: scala.Boolean = js.native
   /**
@@ -105,32 +94,28 @@ class RangeAreas ()
     If the styles of the cells are inconsistent, null will be returned.
     For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var style: java.lang.String = js.native
   /**
     *
     * Returns the worksheet for the current RangeAreas. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val worksheet: Worksheet = js.native
   /**
     *
     * Calculates all cells in the RangeAreas.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def calculate(): scala.Unit = js.native
   /**
     *
     * Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param applyTo Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
     */
@@ -150,16 +135,14 @@ class RangeAreas ()
     *
     * Converts all cells in the RangeAreas with datatypes into text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def convertDataTypeToText(): scala.Unit = js.native
   /**
     *
     * Converts all cells in the RangeAreas into linked datatype.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param serviceID The Service ID which will be used to query the data.
     * @param languageCulture Language Culture to query the service for.
@@ -179,8 +162,7 @@ class RangeAreas ()
     * Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas.
     The destination rangeAreas can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must be in the outline form which can be created by removing full rows or columns from a rectangular range.
     * @param copyType The type of cell data or formatting to copy over. Default is "All".
@@ -411,16 +393,14 @@ class RangeAreas ()
     *
     * Returns a RangeAreas object that represents the entire columns of the RangeAreas (for example, if the current RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getEntireColumn(): RangeAreas = js.native
   /**
     *
     * Returns a RangeAreas object that represents the entire rows of the RangeAreas (for example, if the current RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11").
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getEntireRow(): RangeAreas = js.native
   def getIntersection(anotherRange: java.lang.String): RangeAreas = js.native
@@ -428,8 +408,7 @@ class RangeAreas ()
     *
     * Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no intersection is found, an ItemNotFound error will be thrown.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param anotherRange The range, RangeAreas object or range address that will be used to determine the intersection.
     */
@@ -440,8 +419,7 @@ class RangeAreas ()
     *
     * Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no intersection is found, a null object is returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param anotherRange The range, RangeAreas, or address that will be used to determine the intersection.
     */
@@ -451,8 +429,7 @@ class RangeAreas ()
     *
     * Returns an RangeAreas object that is shifted by the specific row and column offset. The dimension of the returned RangeAreas will match the original object. If the resulting RangeAreas is forced outside the bounds of the worksheet grid, an error will be thrown.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param rowOffset The number of rows (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values are offset downward, and negative values are offset upward.
     * @param columnOffset The number of columns (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values are offset to the right, and negative values are offset to the left.
@@ -462,8 +439,7 @@ class RangeAreas ()
     *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error if no special cells are found that match the criteria.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -506,8 +482,7 @@ class RangeAreas ()
     *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -552,8 +527,7 @@ class RangeAreas ()
     *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -578,8 +552,7 @@ class RangeAreas ()
     *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error if no special cells are found that match the criteria.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -602,8 +575,7 @@ class RangeAreas ()
     *
     * Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param fullyContained If true, returns only tables that are fully contained within the range bounds. Default is false.
     */
@@ -614,8 +586,7 @@ class RangeAreas ()
     * Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas object.
     If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param valuesOnly Whether to only consider cells with values as used cells. Default is false.
     */
@@ -626,8 +597,7 @@ class RangeAreas ()
     * Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas object.
     If there are no used cells within the RangeAreas, a null object will be returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param valuesOnly Whether to only consider cells with values as used cells.
     */
@@ -675,8 +645,7 @@ class RangeAreas ()
     *
     * Sets the RangeAreas to be recalculated when the next recalculation occurs.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def setDirty(): scala.Unit = js.native
   /**

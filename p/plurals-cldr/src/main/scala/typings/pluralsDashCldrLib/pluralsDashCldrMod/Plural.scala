@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Plural extends js.Object {
-  def apply(locale: java.lang.String, number: java.lang.String): pluralsDashCldrLib.Form | scala.Null = js.native
+  def apply(locale: java.lang.String, number: java.lang.String): Form | scala.Null = js.native
   /**
     * Returns the form name for a given number. If the locale is not
     * supported, returns `null`.
@@ -16,14 +16,14 @@ trait Plural extends js.Object {
     * @param number The number to check. May be passed as a string to keep
     * 	trailing zeroes.
     */
-  def apply(locale: java.lang.String, number: scala.Double): pluralsDashCldrLib.Form | scala.Null = js.native
+  def apply(locale: java.lang.String, number: scala.Double): Form | scala.Null = js.native
   /**
     * Returns an array of available forms for the given locale. If the
     * locale is not supported, returns `null`.
     *
     * @param locale The locale code.
     */
-  def forms(locale: java.lang.String): js.Array[pluralsDashCldrLib.Form] | scala.Null = js.native
+  def forms(locale: java.lang.String): js.Array[Form] | scala.Null = js.native
   def indexOf(locale: java.lang.String, number: java.lang.String): scala.Double = js.native
   /**
     * Returns the index of the form for a given number. If the locale is

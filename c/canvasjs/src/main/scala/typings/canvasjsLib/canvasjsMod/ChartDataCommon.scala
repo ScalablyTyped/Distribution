@@ -88,7 +88,7 @@ trait ChartDataCommon extends js.Object {
     * For other chart-types, indexLabelLineThickness should be set greater than zero.
     * Default: solid
     */
-  var indexLabelLineDashType: js.UndefOr[canvasjsLib.DashType] = js.undefined
+  var indexLabelLineDashType: js.UndefOr[DashType] = js.undefined
   /**
     * Sets the thickness of line connecting indexLabel with its corresponding dataPoint.
     * It is only applicable for pie and doughnut chart when indexLabelPlacement is set to "outside".
@@ -222,7 +222,7 @@ object ChartDataCommon {
     indexLabelFontWeight: java.lang.String = null,
     indexLabelFormatter: /* e */ canvasjsLib.Anon_ChartDataPoint => java.lang.String = null,
     indexLabelLineColor: java.lang.String = null,
-    indexLabelLineDashType: canvasjsLib.DashType = null,
+    indexLabelLineDashType: DashType = null,
     indexLabelLineThickness: scala.Int | scala.Double = null,
     indexLabelOrientation: java.lang.String = null,
     indexLabelPlacement: java.lang.String = null,

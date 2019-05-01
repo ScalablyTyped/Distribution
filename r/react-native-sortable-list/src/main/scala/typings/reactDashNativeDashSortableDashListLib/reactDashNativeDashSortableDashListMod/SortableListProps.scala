@@ -20,7 +20,7 @@ trait SortableListProps extends js.Object {
   /**
     * data source
     */
-  var data: reactDashNativeDashSortableDashListLib.Data
+  var data: Data
   /**
     * when true, the SortableList's children are arranged horizontally in a row instead of vertically in a column.
     * The default value is false.
@@ -39,34 +39,23 @@ trait SortableListProps extends js.Object {
   /**
     * Called when a row was activated (user long tapped).
     */
-  var onActivateRow: js.UndefOr[
-    js.Function1[/* key */ reactDashNativeDashSortableDashListLib.DataKey, scala.Unit]
-  ] = js.undefined
+  var onActivateRow: js.UndefOr[js.Function1[/* key */ DataKey, scala.Unit]] = js.undefined
   /**
     * Called when rows were reordered, takes an array of rows keys of the next rows order.
     */
-  var onChangeOrder: js.UndefOr[
-    js.Function1[
-      /* nextOrder */ js.Array[reactDashNativeDashSortableDashListLib.DataKey], 
-      scala.Unit
-    ]
-  ] = js.undefined
+  var onChangeOrder: js.UndefOr[js.Function1[/* nextOrder */ js.Array[DataKey], scala.Unit]] = js.undefined
   /**
     * Called when a row was pressed.
     */
-  var onPressRow: js.UndefOr[
-    js.Function1[/* key */ reactDashNativeDashSortableDashListLib.DataKey, scala.Unit]
-  ] = js.undefined
+  var onPressRow: js.UndefOr[js.Function1[/* key */ DataKey, scala.Unit]] = js.undefined
   /**
     * Called when the active row was released.
     */
-  var onReleaseRow: js.UndefOr[
-    js.Function1[/* key */ reactDashNativeDashSortableDashListLib.DataKey, scala.Unit]
-  ] = js.undefined
+  var onReleaseRow: js.UndefOr[js.Function1[/* key */ DataKey, scala.Unit]] = js.undefined
   /**
     * an array of keys from data, the order of keys from the array will be used to initial rows order
     */
-  var order: js.UndefOr[js.Array[reactDashNativeDashSortableDashListLib.DataKey]] = js.undefined
+  var order: js.UndefOr[js.Array[DataKey]] = js.undefined
   /**
     * A RefreshControl that works the same way as a ScrollView's refreshControl.
     */
@@ -117,18 +106,18 @@ trait SortableListProps extends js.Object {
 object SortableListProps {
   @scala.inline
   def apply(
-    data: reactDashNativeDashSortableDashListLib.Data,
+    data: Data,
     renderRow: RowProps => reactLib.reactMod.Global.JSXNs.Element,
     autoscrollAreaSize: scala.Int | scala.Double = null,
     contentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     innerContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     manuallyActivateRows: js.UndefOr[scala.Boolean] = js.undefined,
-    onActivateRow: /* key */ reactDashNativeDashSortableDashListLib.DataKey => scala.Unit = null,
-    onChangeOrder: /* nextOrder */ js.Array[reactDashNativeDashSortableDashListLib.DataKey] => scala.Unit = null,
-    onPressRow: /* key */ reactDashNativeDashSortableDashListLib.DataKey => scala.Unit = null,
-    onReleaseRow: /* key */ reactDashNativeDashSortableDashListLib.DataKey => scala.Unit = null,
-    order: js.Array[reactDashNativeDashSortableDashListLib.DataKey] = null,
+    onActivateRow: /* key */ DataKey => scala.Unit = null,
+    onChangeOrder: /* nextOrder */ js.Array[DataKey] => scala.Unit = null,
+    onPressRow: /* key */ DataKey => scala.Unit = null,
+    onReleaseRow: /* key */ DataKey => scala.Unit = null,
+    order: js.Array[DataKey] = null,
     refreshControl: reactLib.reactMod.Global.JSXNs.Element = null,
     renderFooter: () => reactLib.reactMod.Global.JSXNs.Element = null,
     renderHeader: () => reactLib.reactMod.Global.JSXNs.Element = null,

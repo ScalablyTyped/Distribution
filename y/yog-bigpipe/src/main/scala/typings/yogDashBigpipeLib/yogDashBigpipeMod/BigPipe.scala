@@ -22,8 +22,8 @@ class BigPipe ()
   def _onPageletDone(pagelet: Pagelet): scala.Unit = js.native
   def addPagelet(obj: AddPageletConfig): scala.Unit = js.native
   def addQuicklingPagelets(pagelets: js.Array[java.lang.String]): scala.Unit = js.native
-  def bind(id: java.lang.String, fn: yogDashBigpipeLib.Callback): BigPipe = js.native
-  def bindPageOnly(fn: yogDashBigpipeLib.Callback): scala.Unit = js.native
+  def bind(id: java.lang.String, fn: Callback): BigPipe = js.native
+  def bindPageOnly(fn: Callback): scala.Unit = js.native
   def format(pagelet: Pagelet): java.lang.String = js.native
   def isQuickingMode(): scala.Boolean = js.native
   def isQuicklingMode(): scala.Boolean = js.native

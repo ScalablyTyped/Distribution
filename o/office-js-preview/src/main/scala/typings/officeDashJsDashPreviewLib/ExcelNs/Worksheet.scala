@@ -19,8 +19,7 @@ class Worksheet ()
     *
     * Represents the AutoFilter object of the worksheet. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val autoFilter: AutoFilter = js.native
   /**
@@ -46,8 +45,7 @@ class Worksheet ()
     * Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enableCalculation: scala.Boolean = js.native
   /**
@@ -61,8 +59,7 @@ class Worksheet ()
     *
     * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val horizontalPageBreaks: PageBreakCollection = js.native
   /**
@@ -146,10 +143,9 @@ class Worksheet ()
     *
     * Occurs when format changed on a specific worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onFormatChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
@@ -173,10 +169,19 @@ class Worksheet ()
   val onSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
   /**
     *
-    * Gets the PageLayout object of the worksheet.
+    * Occurs when left-clicked/tapped operation happens in the worksheet.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
     * @beta
+    */
+  val onSingleClicked: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetSingleClickedEventArgs] = js.native
+  /**
+    *
+    * Gets the PageLayout object of the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
     */
   val pageLayout: PageLayout = js.native
   /**
@@ -204,8 +209,7 @@ class Worksheet ()
     *
     * Returns the collection of all the Shape objects on the worksheet. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val shapes: ShapeCollection = js.native
   /**
@@ -267,8 +271,7 @@ class Worksheet ()
     *
     * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val verticalPageBreaks: PageBreakCollection = js.native
   /**
@@ -343,7 +346,7 @@ class Worksheet ()
   ): Worksheet = js.native
   /**
     *
-    * Deletes the worksheet from the workbook.
+    * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -352,8 +355,7 @@ class Worksheet ()
     *
     * Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object, comprising one or more rectangular ranges.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text String to find.
     * @param criteria Additional Criteria.
@@ -364,8 +366,7 @@ class Worksheet ()
     *
     * Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object, comprising one or more rectangular ranges.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text String to find.
     * @param criteria Additional Criteria.
@@ -453,8 +454,7 @@ class Worksheet ()
     *
     * Gets the RangeAreas object, representing one or more blocks of rectangular ranges, specified by the address or name.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param address Optional. A string containing the comma-separated addresses or names of the individual ranges. For example, "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
     */
@@ -504,8 +504,7 @@ class Worksheet ()
     *
     * Finds and replaces the given string based on the criteria specified within the current worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text String to find.
     * @param replacement String to replace the original with.

@@ -13,7 +13,7 @@ object ^ extends js.Object {
   /**
     * Retrieve a bound key command for the given event.
     */
-  def getDefaultKeyBinding(e: draftDashJsLib.SyntheticKeyboardEvent): draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEditorCommand | scala.Null = js.native
+  def getDefaultKeyBinding(e: SyntheticKeyboardEvent): draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEditorCommand | scala.Null = js.native
   /**
     * Return the bounding ClientRect for the visible DOM selection, if any.
     * In cases where there are no selected ranges or the bounding rect is

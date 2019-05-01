@@ -17,8 +17,8 @@ trait DataStore extends js.Object {
   def addMark(id: java.lang.String, name: java.lang.String): js.Any = js.native
   def addMark(id: java.lang.String, name: java.lang.String, css: scala.Boolean): js.Any = js.native
   def addMark(id: java.lang.String, name: java.lang.String, css: scala.Boolean, value: js.Any): js.Any = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
   def blockEvent(): scala.Unit = js.native
   def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
   def changeId(old: java.lang.String, newid: java.lang.String): scala.Unit = js.native
@@ -31,23 +31,19 @@ trait DataStore extends js.Object {
   def count(): scala.Double = js.native
   def destructor(): scala.Unit = js.native
   def detachEvent(id: java.lang.String): scala.Unit = js.native
-  def each(method: webixLib.WebixCallback): scala.Unit = js.native
-  def each(method: webixLib.WebixCallback, master: js.Any): scala.Unit = js.native
-  def each(method: webixLib.WebixCallback, master: js.Any, all: scala.Boolean): scala.Unit = js.native
+  def each(method: WebixCallback): scala.Unit = js.native
+  def each(method: WebixCallback, master: js.Any): scala.Unit = js.native
+  def each(method: WebixCallback, master: js.Any, all: scala.Boolean): scala.Unit = js.native
   def exists(id: java.lang.String): scala.Boolean = js.native
   def exists(id: scala.Double): scala.Boolean = js.native
-  def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-  def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
-  def filter(
-    text: webixLib.WebixCallback | webixLib.WebixTemplate,
-    value: java.lang.String,
-    preserve: scala.Boolean
-  ): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: java.lang.String): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
   def filter(text: java.lang.String): scala.Unit = js.native
   def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-  def find(criterion: webixLib.WebixCallback): js.Any = js.native
-  def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): js.Any = js.native
+  def find(criterion: WebixCallback, first: scala.Boolean): js.Any = js.native
   def getFirstId(): java.lang.String | scala.Double = js.native
   def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
   def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -85,11 +81,11 @@ trait DataStore extends js.Object {
   def scheme(config: js.Any): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
   def setDriver(`type`: java.lang.String): scala.Unit = js.native
-  def silent(code: webixLib.WebixCallback): scala.Unit = js.native
+  def silent(code: WebixCallback): scala.Unit = js.native
   def sort(by: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-  def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+  def sync(source: js.Any, filter: WebixCallback, silent: scala.Boolean): scala.Unit = js.native
   def unblockEvent(): scala.Unit = js.native
   def unsync(): scala.Unit = js.native
   def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native

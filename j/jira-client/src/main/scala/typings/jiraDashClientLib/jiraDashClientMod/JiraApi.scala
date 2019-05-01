@@ -214,6 +214,7 @@ trait JiraApi extends js.Object {
   ): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def getFieldOption(fieldKey: java.lang.String, optionId: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def getIssueProperty(issueNumber: java.lang.String, property: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
+  def getIssueWatchers(issueId: java.lang.String): js.Promise[js.Array[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse]] = js.native
   def getIssuesForBacklog(boardId: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def getIssuesForBacklog(boardId: java.lang.String, startAt: scala.Double): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def getIssuesForBacklog(boardId: java.lang.String, startAt: scala.Double, maxResults: scala.Double): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native

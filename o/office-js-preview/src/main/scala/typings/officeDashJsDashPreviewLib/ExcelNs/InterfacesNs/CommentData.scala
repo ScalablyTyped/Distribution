@@ -49,14 +49,6 @@ trait CommentData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents whether it is a comment thread or reply. Always return true here. Read-only.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var isParent: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    *
     * Represents a collection of reply objects associated with the comment. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -73,7 +65,6 @@ object CommentData {
     content: java.lang.String = null,
     creationDate: stdLib.Date = null,
     id: java.lang.String = null,
-    isParent: js.UndefOr[scala.Boolean] = js.undefined,
     replies: js.Array[CommentReplyData] = null
   ): CommentData = {
     val __obj = js.Dynamic.literal()
@@ -82,7 +73,6 @@ object CommentData {
     if (content != null) __obj.updateDynamic("content")(content)
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent)
     if (replies != null) __obj.updateDynamic("replies")(replies)
     __obj.asInstanceOf[CommentData]
   }

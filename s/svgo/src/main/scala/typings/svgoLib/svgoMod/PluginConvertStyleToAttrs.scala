@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginConvertStyleToAttrs extends js.Object {
+trait PluginConvertStyleToAttrs extends PluginConfig {
   var convertStyleToAttrs: scala.Boolean | js.Object
 }
 

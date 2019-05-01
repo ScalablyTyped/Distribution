@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._CompositeProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined padding */ @JSImport("tabris", "Composite")
 @js.native
 class Composite () extends Widget {
-  def this(properties: tabrisLib.Properties[Composite, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Composite, TypeScriptPropertiesKey]) = this()
   /**
     * Additional space to add inside the widget's bounds. If set to a number, this padding will be applied
     * on all four sides.
@@ -23,7 +23,7 @@ class Composite () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Composite: tabrisLib.CompositeProperties = js.native
+  val tsProperties_Composite: CompositeProperties = js.native
   /**
     * Adds the given widgets to the composite.
     * @param widgets 

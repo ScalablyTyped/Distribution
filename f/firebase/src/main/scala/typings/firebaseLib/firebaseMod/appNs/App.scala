@@ -108,6 +108,20 @@ trait App extends js.Object {
     */
   def messaging(): firebaseLib.firebaseMod.messagingNs.Messaging = js.native
   /**
+    * Gets the {@link firebase.performance.Performance `Performance`} service for the
+    * current app. If the current app is not the default one, throws an error.
+    *
+    * @webonly
+    *
+    * @example
+    * ```javascript
+    * const perf = app.performance();
+    * // The above is shorthand for:
+    * // const perf = firebase.performance(app);
+    * ```
+    */
+  def performance(): firebaseLib.firebaseMod.performanceNs.Performance = js.native
+  /**
     * Gets the {@link firebase.storage.Storage `Storage`} service for the current
     * app, optionally initialized with a custom storage bucket.
     *

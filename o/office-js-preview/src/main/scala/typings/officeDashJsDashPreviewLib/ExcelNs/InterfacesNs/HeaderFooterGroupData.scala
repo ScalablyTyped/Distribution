@@ -11,40 +11,35 @@ trait HeaderFooterGroupData extends js.Object {
     *
     * The general header/footer, used for all pages unless even/odd or first page is specified.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var defaultForAllPages: js.UndefOr[HeaderFooterData] = js.undefined
   /**
     *
     * The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var evenPages: js.UndefOr[HeaderFooterData] = js.undefined
   /**
     *
     * The first page header/footer, for all other pages general or even/odd is used.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var firstPage: js.UndefOr[HeaderFooterData] = js.undefined
   /**
     *
     * The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var oddPages: js.UndefOr[HeaderFooterData] = js.undefined
   /**
     *
     * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var state: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.HeaderFooterState | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Default | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FirstAndDefault | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OddAndEven | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FirstOddAndEven
@@ -53,16 +48,14 @@ trait HeaderFooterGroupData extends js.Object {
     *
     * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var useSheetMargins: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var useSheetScale: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait RollObject extends js.Object {
   var quantity: scala.Double
   var sides: scala.Double
-  var transformations: js.Array[rollLib.RollTransformation]
+  var transformations: js.Array[RollTransformation]
 }
 
 object RollObject {
@@ -17,7 +17,7 @@ object RollObject {
     quantity: scala.Double,
     sides: scala.Double,
     toString: () => java.lang.String,
-    transformations: js.Array[rollLib.RollTransformation]
+    transformations: js.Array[RollTransformation]
   ): RollObject = {
     val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = js.Any.fromFunction0(toString), transformations = transformations)
   

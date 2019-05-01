@@ -11,7 +11,7 @@ trait TranslateOptions extends BaseOptions {
 
 object TranslateOptions {
   @scala.inline
-  def apply(rating: giphyDashApiLib.Rating, s: java.lang.String, fmt: giphyDashApiLib.Format = null): TranslateOptions = {
+  def apply(rating: Rating, s: java.lang.String, fmt: Format = null): TranslateOptions = {
     val __obj = js.Dynamic.literal(rating = rating, s = s)
     if (fmt != null) __obj.updateDynamic("fmt")(fmt)
     __obj.asInstanceOf[TranslateOptions]

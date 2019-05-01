@@ -108,6 +108,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var lightsail: js.UndefOr[awsDashSdkLib.clientsLightsailMod.apiVersion] = js.undefined
   var machinelearning: js.UndefOr[awsDashSdkLib.clientsMachinelearningMod.apiVersion] = js.undefined
   var macie: js.UndefOr[awsDashSdkLib.clientsMacieMod.apiVersion] = js.undefined
+  var managedblockchain: js.UndefOr[awsDashSdkLib.clientsManagedblockchainMod.apiVersion] = js.undefined
   var marketplacecommerceanalytics: js.UndefOr[awsDashSdkLib.clientsMarketplacecommerceanalyticsMod.apiVersion] = js.undefined
   var marketplaceentitlementservice: js.UndefOr[awsDashSdkLib.clientsMarketplaceentitlementserviceMod.apiVersion] = js.undefined
   var marketplacemetering: js.UndefOr[awsDashSdkLib.clientsMarketplacemeteringMod.apiVersion] = js.undefined
@@ -286,6 +287,7 @@ object ConfigurationServiceApiVersions {
     lightsail: awsDashSdkLib.clientsLightsailMod.apiVersion = null,
     machinelearning: awsDashSdkLib.clientsMachinelearningMod.apiVersion = null,
     macie: awsDashSdkLib.clientsMacieMod.apiVersion = null,
+    managedblockchain: awsDashSdkLib.clientsManagedblockchainMod.apiVersion = null,
     marketplacecommerceanalytics: awsDashSdkLib.clientsMarketplacecommerceanalyticsMod.apiVersion = null,
     marketplaceentitlementservice: awsDashSdkLib.clientsMarketplaceentitlementserviceMod.apiVersion = null,
     marketplacemetering: awsDashSdkLib.clientsMarketplacemeteringMod.apiVersion = null,
@@ -461,6 +463,7 @@ object ConfigurationServiceApiVersions {
     if (lightsail != null) __obj.updateDynamic("lightsail")(lightsail.asInstanceOf[js.Any])
     if (machinelearning != null) __obj.updateDynamic("machinelearning")(machinelearning.asInstanceOf[js.Any])
     if (macie != null) __obj.updateDynamic("macie")(macie.asInstanceOf[js.Any])
+    if (managedblockchain != null) __obj.updateDynamic("managedblockchain")(managedblockchain.asInstanceOf[js.Any])
     if (marketplacecommerceanalytics != null) __obj.updateDynamic("marketplacecommerceanalytics")(marketplacecommerceanalytics.asInstanceOf[js.Any])
     if (marketplaceentitlementservice != null) __obj.updateDynamic("marketplaceentitlementservice")(marketplaceentitlementservice.asInstanceOf[js.Any])
     if (marketplacemetering != null) __obj.updateDynamic("marketplacemetering")(marketplacemetering.asInstanceOf[js.Any])

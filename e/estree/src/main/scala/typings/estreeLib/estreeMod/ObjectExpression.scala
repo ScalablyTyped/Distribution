@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectExpression extends BaseNode {
+trait ObjectExpression
+  extends BaseNode
+     with Expression {
   var properties: js.Array[Property]
   @JSName("type")
   var type_ObjectExpression: estreeLib.estreeLibStrings.ObjectExpression

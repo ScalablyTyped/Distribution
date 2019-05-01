@@ -15,11 +15,11 @@ trait _TabProperties extends _CompositeProperties {
     * An image to be displayed on the tab.  Will not be shown on iOS if the `TabFolder`'s `tabBarLocation`
     * is set to `top`
     */
-  var image: tabrisLib.Image | scala.Null
+  var image: Image | scala.Null
   /**
     * An image to be displayed on the currently active tab.
     */
-  var selectedImage: tabrisLib.Image | scala.Null
+  var selectedImage: Image | scala.Null
   /**
     * The title to be displayed on the tab.
     */
@@ -30,9 +30,9 @@ object _TabProperties {
   @scala.inline
   def apply(
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
+    backgroundImage: Image,
     badge: java.lang.String,
-    baseline: Widget | tabrisLib.Selector,
+    baseline: Widget | Selector,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,
     centerY: tabrisLib.offset,
@@ -56,8 +56,8 @@ object _TabProperties {
     width: tabrisLib.dimension,
     win_theme: tabrisLib.tabrisLibStrings.dark | tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.light,
     font: tabrisLib.Font = null,
-    image: tabrisLib.Image = null,
-    selectedImage: tabrisLib.Image = null
+    image: Image = null,
+    selectedImage: Image = null
   ): _TabProperties = {
     val __obj = js.Dynamic.literal(background = background, backgroundImage = backgroundImage.asInstanceOf[js.Any], badge = badge, baseline = baseline.asInstanceOf[js.Any], bottom = bottom, centerX = centerX, centerY = centerY, classList = classList, cornerRadius = cornerRadius, elevation = elevation, enabled = enabled, height = height, highlightOnTouch = highlightOnTouch, id = id, layoutData = layoutData, left = left, opacity = opacity, padding = padding.asInstanceOf[js.Any], right = right, title = title, top = top, transform = transform, visible = visible, width = width, win_theme = win_theme.asInstanceOf[js.Any])
     __obj.updateDynamic("class")(`class`)

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ClassExpression
   extends BaseClass
-     with Class {
+     with Class
+     with Expression {
   var id: js.UndefOr[Identifier | scala.Null] = js.undefined
   @JSName("type")
   var type_ClassExpression: estreeLib.estreeLibStrings.ClassExpression
@@ -22,7 +23,7 @@ object ClassExpression {
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,
-    superClass: estreeLib.Expression = null,
+    superClass: Expression = null,
     trailingComments: js.Array[Comment] = null
   ): ClassExpression = {
     val __obj = js.Dynamic.literal(body = body)

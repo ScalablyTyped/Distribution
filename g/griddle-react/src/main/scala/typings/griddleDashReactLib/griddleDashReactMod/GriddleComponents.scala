@@ -6,348 +6,239 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GriddleComponents extends js.Object {
-  var Cell: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
-  ] = js.undefined
+  var Cell: js.UndefOr[GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]] = js.undefined
   var CellContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
     ]
   ] = js.undefined
   var CellContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
     ]
   ] = js.undefined
   var CellEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps]
     ]
   ] = js.undefined
   var Filter: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
   ] = js.undefined
   var FilterContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
     ]
   ] = js.undefined
   var FilterContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
     ]
   ] = js.undefined
   var FilterEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps]
     ]
   ] = js.undefined
-  var Layout: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var LayoutContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var LayoutContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var LayoutEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var NextButton: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var NextButtonContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var NextButtonContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var NextButtonEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var NoResults: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var NoResultsContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var NoResultsContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var NoResultsEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PageDropdown: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var PageDropdownContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PageDropdownContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PageDropdownEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var Pagination: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var PaginationContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PaginationContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PaginationEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PreviousButton: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var PreviousButtonContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PreviousButtonContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var PreviousButtonEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var Row: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
-  ] = js.undefined
+  var Layout: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var LayoutContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var LayoutContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var LayoutEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var NextButton: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var NextButtonContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var NextButtonContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var NextButtonEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var NoResults: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var NoResultsContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var NoResultsContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var NoResultsEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PageDropdown: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var PageDropdownContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PageDropdownContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PageDropdownEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var Pagination: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var PaginationContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PaginationContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PaginationEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PreviousButton: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var PreviousButtonContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PreviousButtonContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var PreviousButtonEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var Row: js.UndefOr[GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]] = js.undefined
   var RowContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
     ]
   ] = js.undefined
   var RowContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
     ]
   ] = js.undefined
   var RowEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps]
     ]
   ] = js.undefined
   var Settings: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
   ] = js.undefined
-  var SettingsComponents: js.UndefOr[PropertyBag[griddleDashReactLib.GriddleComponent[_]]] = js.undefined
+  var SettingsComponents: js.UndefOr[PropertyBag[GriddleComponent[_]]] = js.undefined
   var SettingsContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
     ]
   ] = js.undefined
   var SettingsContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
     ]
   ] = js.undefined
   var SettingsEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps]
     ]
   ] = js.undefined
   var SettingsToggle: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
   ] = js.undefined
   var SettingsToggleContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
     ]
   ] = js.undefined
   var SettingsToggleContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
     ]
   ] = js.undefined
   var SettingsToggleEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps]
     ]
   ] = js.undefined
   var SettingsWrapper: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
   ] = js.undefined
   var SettingsWrapperContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
     ]
   ] = js.undefined
   var SettingsWrapperContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
     ]
   ] = js.undefined
   var SettingsWrapperEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps]
     ]
   ] = js.undefined
-  var Style: js.UndefOr[griddleDashReactLib.GriddleComponent[_]] = js.undefined
-  var StyleContainer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var StyleContainerEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
-  var StyleEnhancer: js.UndefOr[
-    js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_], 
-      griddleDashReactLib.GriddleComponent[_]
-    ]
-  ] = js.undefined
+  var Style: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var StyleContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var StyleContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
+  var StyleEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
   var Table: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
   ] = js.undefined
   var TableBody: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
   ] = js.undefined
   var TableBodyContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
     ]
   ] = js.undefined
   var TableBodyContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
     ]
   ] = js.undefined
   var TableBodyEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps]
     ]
   ] = js.undefined
   var TableContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
     ]
   ] = js.undefined
   var TableContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
     ]
   ] = js.undefined
   var TableEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps]
     ]
   ] = js.undefined
   var TableHeading: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
   ] = js.undefined
   var TableHeadingCell: js.UndefOr[
-    griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
+    GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
   ] = js.undefined
   var TableHeadingCellContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
     ]
   ] = js.undefined
   var TableHeadingCellContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
     ]
   ] = js.undefined
   var TableHeadingCellEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps]
     ]
   ] = js.undefined
   var TableHeadingContainer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
     ]
   ] = js.undefined
   var TableHeadingContainerEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
     ]
   ] = js.undefined
   var TableHeadingEnhancer: js.UndefOr[
     js.Function1[
-      /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps], 
-      griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
+      /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps], 
+      GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps]
     ]
   ] = js.undefined
 }
@@ -355,75 +246,75 @@ trait GriddleComponents extends js.Object {
 object GriddleComponents {
   @scala.inline
   def apply(
-    Cell: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
-    CellContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
-    CellContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
-    CellEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
-    Filter: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
-    FilterContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
-    FilterContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
-    FilterEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
-    Layout: griddleDashReactLib.GriddleComponent[_] = null,
-    LayoutContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    LayoutContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    LayoutEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    NextButton: griddleDashReactLib.GriddleComponent[_] = null,
-    NextButtonContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    NextButtonContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    NextButtonEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    NoResults: griddleDashReactLib.GriddleComponent[_] = null,
-    NoResultsContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    NoResultsContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    NoResultsEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PageDropdown: griddleDashReactLib.GriddleComponent[_] = null,
-    PageDropdownContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PageDropdownContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PageDropdownEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    Pagination: griddleDashReactLib.GriddleComponent[_] = null,
-    PaginationContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PaginationContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PaginationEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PreviousButton: griddleDashReactLib.GriddleComponent[_] = null,
-    PreviousButtonContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PreviousButtonContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    PreviousButtonEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    Row: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
-    RowContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
-    RowContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
-    RowEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
-    Settings: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
-    SettingsComponents: PropertyBag[griddleDashReactLib.GriddleComponent[_]] = null,
-    SettingsContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
-    SettingsContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
-    SettingsEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
-    SettingsToggle: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
-    SettingsToggleContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
-    SettingsToggleContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
-    SettingsToggleEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
-    SettingsWrapper: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
-    SettingsWrapperContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
-    SettingsWrapperContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
-    SettingsWrapperEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
-    Style: griddleDashReactLib.GriddleComponent[_] = null,
-    StyleContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    StyleContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    StyleEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[_] => griddleDashReactLib.GriddleComponent[_] = null,
-    Table: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
-    TableBody: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
-    TableBodyContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
-    TableBodyContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
-    TableBodyEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
-    TableContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
-    TableContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
-    TableEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
-    TableHeading: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null,
-    TableHeadingCell: griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
-    TableHeadingCellContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
-    TableHeadingCellContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
-    TableHeadingCellEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
-    TableHeadingContainer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null,
-    TableHeadingContainerEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null,
-    TableHeadingEnhancer: /* OriginalComponent */ griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] => griddleDashReactLib.GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null
+    Cell: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
+    CellContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
+    CellContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
+    CellEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.CellProps] = null,
+    Filter: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
+    FilterContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
+    FilterContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
+    FilterEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.FilterProps] = null,
+    Layout: GriddleComponent[_] = null,
+    LayoutContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    LayoutContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    LayoutEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    NextButton: GriddleComponent[_] = null,
+    NextButtonContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    NextButtonContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    NextButtonEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    NoResults: GriddleComponent[_] = null,
+    NoResultsContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    NoResultsContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    NoResultsEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PageDropdown: GriddleComponent[_] = null,
+    PageDropdownContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PageDropdownContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PageDropdownEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    Pagination: GriddleComponent[_] = null,
+    PaginationContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PaginationContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PaginationEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PreviousButton: GriddleComponent[_] = null,
+    PreviousButtonContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PreviousButtonContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    PreviousButtonEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    Row: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
+    RowContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
+    RowContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
+    RowEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.RowProps] = null,
+    Settings: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
+    SettingsComponents: PropertyBag[GriddleComponent[_]] = null,
+    SettingsContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
+    SettingsContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
+    SettingsEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsProps] = null,
+    SettingsToggle: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
+    SettingsToggleContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
+    SettingsToggleContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
+    SettingsToggleEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsToggleProps] = null,
+    SettingsWrapper: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
+    SettingsWrapperContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
+    SettingsWrapperContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
+    SettingsWrapperEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.SettingsWrapperProps] = null,
+    Style: GriddleComponent[_] = null,
+    StyleContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    StyleContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    StyleEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
+    Table: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
+    TableBody: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
+    TableBodyContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
+    TableBodyContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
+    TableBodyEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableBodyProps] = null,
+    TableContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
+    TableContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
+    TableEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableProps] = null,
+    TableHeading: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null,
+    TableHeadingCell: GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
+    TableHeadingCellContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
+    TableHeadingCellContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
+    TableHeadingCellEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingCellProps] = null,
+    TableHeadingContainer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null,
+    TableHeadingContainerEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null,
+    TableHeadingEnhancer: /* OriginalComponent */ GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] => GriddleComponent[griddleDashReactLib.griddleDashReactMod.componentsNs.TableHeadingProps] = null
   ): GriddleComponents = {
     val __obj = js.Dynamic.literal()
     if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])

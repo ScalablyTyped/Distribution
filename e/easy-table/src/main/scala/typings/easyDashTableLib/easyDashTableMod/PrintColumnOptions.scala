@@ -9,7 +9,7 @@ trait PrintColumnOptions[T] extends js.Object {
   /**
     * Printer to format column names
     */
-  var namePrinter: js.UndefOr[easyDashTableLib.CellPrinter[T]] = js.undefined
+  var namePrinter: js.UndefOr[CellPrinter[T]] = js.undefined
   /**
     * Column separation string
     */
@@ -18,7 +18,7 @@ trait PrintColumnOptions[T] extends js.Object {
 
 object PrintColumnOptions {
   @scala.inline
-  def apply[T](namePrinter: easyDashTableLib.CellPrinter[T] = null, separator: java.lang.String = null): PrintColumnOptions[T] = {
+  def apply[T](namePrinter: CellPrinter[T] = null, separator: java.lang.String = null): PrintColumnOptions[T] = {
     val __obj = js.Dynamic.literal()
     if (namePrinter != null) __obj.updateDynamic("namePrinter")(namePrinter)
     if (separator != null) __obj.updateDynamic("separator")(separator)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DragControl extends js.Object {
   @JSName("$dragPos")
-  var $dragPos_Original: webixLib.WebixCallback = js.native
+  var $dragPos_Original: WebixCallback = js.native
   var left: scala.Double = js.native
   var top: scala.Double = js.native
   @JSName("$drag")

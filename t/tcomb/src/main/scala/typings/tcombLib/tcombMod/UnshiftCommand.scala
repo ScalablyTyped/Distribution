@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UnshiftCommand extends js.Object {
+trait UnshiftCommand extends Command {
   @JSName("$unshift")
   var $unshift: js.Array[_]
 }

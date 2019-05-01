@@ -42,7 +42,8 @@ package object ioDashTsMod {
   ]
   type Is[A] = js.Function1[/* u */ js.Any, /* is A */ scala.Boolean]
   type KeyofC[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */] = KeyofType[D]
-  type LiteralC[V /* <: ioDashTsLib.LiteralValue */] = LiteralType[V]
+  type LiteralC[V /* <: LiteralValue */] = LiteralType[V]
+  type LiteralValue = java.lang.String | scala.Double | scala.Boolean
   type Mixed = Type[js.Any, js.Any, js.Any]
   type NeverC = NeverType
   type NullC = NullType

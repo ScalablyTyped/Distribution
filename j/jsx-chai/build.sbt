@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsx-chai"
-version := "3.0.0-dt-20190322Z-ba8e84"
+version := "3.0.0-dt-20190322Z-6bb99d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

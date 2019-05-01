@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IType extends INamespace {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- protobufjsLib.protobufjsMod.AnyNestedObject because Already inherited */ trait IType extends INamespace {
   /** Extension ranges */
   var extensions: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined
   /** Field descriptors */
@@ -24,7 +25,7 @@ object IType {
     fields: org.scalablytyped.runtime.StringDictionary[IField],
     extensions: js.Array[js.Array[scala.Double]] = null,
     group: js.UndefOr[scala.Boolean] = js.undefined,
-    nested: org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject] = null,
+    nested: org.scalablytyped.runtime.StringDictionary[AnyNestedObject] = null,
     oneofs: org.scalablytyped.runtime.StringDictionary[IOneOf] = null,
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     reserved: js.Array[js.Array[scala.Double]] = null

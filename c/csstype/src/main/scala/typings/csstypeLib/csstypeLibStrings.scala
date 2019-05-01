@@ -135,16 +135,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MsOverflowStyleProperty
   
   @js.native
-  sealed trait `-ms-flexbox` extends DisplayInside
+  sealed trait `-ms-flexbox`
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
-  sealed trait `-ms-grid` extends DisplayInside
+  sealed trait `-ms-grid`
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
-  sealed trait `-ms-inline-flexbox` extends DisplayLegacy
+  sealed trait `-ms-inline-flexbox`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
-  sealed trait `-ms-inline-grid` extends DisplayLegacy
+  sealed trait `-ms-inline-grid`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
   sealed trait `-ms-manipulation`
@@ -155,7 +159,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._TouchActionProperty
   
   @js.native
-  sealed trait `-ms-zoom` extends ViewportUserZoomProperty
+  sealed trait `-ms-zoom`
+    extends csstypeLib.csstypeMod.ViewportUserZoomProperty
   
   @js.native
   sealed trait `-o-crisp-edges`
@@ -174,14 +179,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
-  sealed trait `-webkit-flex` extends DisplayInside
+  sealed trait `-webkit-flex`
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
   sealed trait `-webkit-grab`
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait `-webkit-inline-flex` extends DisplayLegacy
+  sealed trait `-webkit-inline-flex`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
   sealed trait `-webkit-isolate`
@@ -673,88 +680,116 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.AtRules
   
   @js.native
-  sealed trait ActiveBorder extends DeprecatedSystemColor
+  sealed trait ActiveBorder
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ActiveCaption extends DeprecatedSystemColor
+  sealed trait ActiveCaption
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait AppWorkspace extends DeprecatedSystemColor
+  sealed trait AppWorkspace
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait Background extends DeprecatedSystemColor
+  sealed trait Background
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ButtonFace extends DeprecatedSystemColor
+  sealed trait ButtonFace
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ButtonHighlight extends DeprecatedSystemColor
+  sealed trait ButtonHighlight
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ButtonShadow extends DeprecatedSystemColor
+  sealed trait ButtonShadow
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ButtonText extends DeprecatedSystemColor
+  sealed trait ButtonText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait CaptionText extends DeprecatedSystemColor
+  sealed trait CaptionText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait GrayText extends DeprecatedSystemColor
+  sealed trait GrayText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait Highlight extends DeprecatedSystemColor
+  sealed trait Highlight
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait HighlightText extends DeprecatedSystemColor
+  sealed trait HighlightText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait InactiveBorder extends DeprecatedSystemColor
+  sealed trait InactiveBorder
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait InactiveCaption extends DeprecatedSystemColor
+  sealed trait InactiveCaption
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait InactiveCaptionText extends DeprecatedSystemColor
+  sealed trait InactiveCaptionText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait InfoBackground extends DeprecatedSystemColor
+  sealed trait InfoBackground
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait InfoText extends DeprecatedSystemColor
+  sealed trait InfoText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait Menu extends DeprecatedSystemColor
+  sealed trait Menu
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait MenuText extends DeprecatedSystemColor
+  sealed trait MenuText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait Scrollbar extends DeprecatedSystemColor
+  sealed trait Scrollbar
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ThreeDDarkShadow extends DeprecatedSystemColor
+  sealed trait ThreeDDarkShadow
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ThreeDFace extends DeprecatedSystemColor
+  sealed trait ThreeDFace
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ThreeDHighlight extends DeprecatedSystemColor
+  sealed trait ThreeDHighlight
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ThreeDLightShadow extends DeprecatedSystemColor
+  sealed trait ThreeDLightShadow
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait ThreeDShadow extends DeprecatedSystemColor
+  sealed trait ThreeDShadow
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait Window extends DeprecatedSystemColor
+  sealed trait Window
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait WindowFrame extends DeprecatedSystemColor
+  sealed trait WindowFrame
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
-  sealed trait WindowText extends DeprecatedSystemColor
+  sealed trait WindowText
+    extends csstypeLib.csstypeMod.DeprecatedSystemColor
   
   @js.native
   sealed trait `[-webkit-dropzone]`
@@ -2563,10 +2598,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.ImeModeProperty
   
   @js.native
-  sealed trait add extends CompositingOperator
+  sealed trait add
+    extends csstypeLib.csstypeMod.CompositingOperator
   
   @js.native
-  sealed trait additive extends _CounterStyleSystemProperty
+  sealed trait additive
+    extends csstypeLib.csstypeMod._CounterStyleSystemProperty
   
   @js.native
   sealed trait after
@@ -2581,11 +2618,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait aliceblue extends NamedColor
+  sealed trait aliceblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait all
-    extends _SingleTransition
+    extends csstypeLib.csstypeMod._SingleTransition
        with csstypeLib.csstypeMod.ColumnSpanProperty
        with csstypeLib.csstypeMod.PointerEventsProperty
        with csstypeLib.csstypeMod.UserSelectProperty
@@ -2595,7 +2633,7 @@ object csstypeLibStrings {
   @js.native
   sealed trait `all-petite-caps`
     extends csstypeLib.csstypeMod.FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
@@ -2605,7 +2643,7 @@ object csstypeLibStrings {
   @js.native
   sealed trait `all-small-caps`
     extends csstypeLib.csstypeMod.FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
@@ -2614,7 +2652,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait alpha
-    extends MaskingMode
+    extends csstypeLib.csstypeMod.MaskingMode
        with csstypeLib.csstypeMod.MaskBorderModeProperty
        with csstypeLib.csstypeMod.MaskTypeProperty
        with csstypeLib.csstypeMod._MaskBorderProperty
@@ -2623,13 +2661,15 @@ object csstypeLibStrings {
   sealed trait alphabetic
     extends csstypeLib.csstypeMod.AlignmentBaselineProperty
        with csstypeLib.csstypeMod.DominantBaselineProperty
-       with _CounterStyleSystemProperty
+       with csstypeLib.csstypeMod._CounterStyleSystemProperty
   
   @js.native
-  sealed trait alternate extends SingleAnimationDirection
+  sealed trait alternate
+    extends csstypeLib.csstypeMod.SingleAnimationDirection
   
   @js.native
-  sealed trait `alternate-reverse` extends SingleAnimationDirection
+  sealed trait `alternate-reverse`
+    extends csstypeLib.csstypeMod.SingleAnimationDirection
   
   @js.native
   sealed trait always
@@ -2637,21 +2677,24 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.PageBreakBeforeProperty
   
   @js.native
-  sealed trait antiquewhite extends NamedColor
+  sealed trait antiquewhite
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait anywhere
     extends csstypeLib.csstypeMod.OverflowWrapProperty
   
   @js.native
-  sealed trait aqua extends NamedColor
+  sealed trait aqua
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait aquamarine extends NamedColor
+  sealed trait aquamarine
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait auto
-    extends _TrackBreadth[js.Any]
+    extends csstypeLib.csstypeMod._TrackBreadth[js.Any]
        with csstypeLib.csstypeMod.AlignmentBaselineProperty
        with csstypeLib.csstypeMod.BreakAfterProperty
        with csstypeLib.csstypeMod.BreakBeforeProperty
@@ -2660,7 +2703,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.ColorRenderingProperty
        with csstypeLib.csstypeMod.ColumnFillProperty
        with csstypeLib.csstypeMod.DominantBaselineProperty
-       with FontFaceFontDisplayProperty
+       with csstypeLib.csstypeMod.FontFaceFontDisplayProperty
        with csstypeLib.csstypeMod.FontKerningProperty
        with csstypeLib.csstypeMod.FontOpticalSizingProperty
        with csstypeLib.csstypeMod.HyphensProperty
@@ -2692,10 +2735,10 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.TextJustifyProperty
        with csstypeLib.csstypeMod.TextRenderingProperty
        with csstypeLib.csstypeMod.UserSelectProperty
-       with ViewportOrientationProperty
+       with csstypeLib.csstypeMod.ViewportOrientationProperty
        with csstypeLib.csstypeMod.WebkitOverflowScrollingProperty
        with csstypeLib.csstypeMod._AlignSelfProperty
-       with _BgSize[js.Any]
+       with csstypeLib.csstypeMod._BgSize[js.Any]
        with csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
        with csstypeLib.csstypeMod._BorderImageWidthProperty[js.Any]
        with csstypeLib.csstypeMod._BottomProperty[js.Any]
@@ -2704,8 +2747,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._ColumnCountProperty
        with csstypeLib.csstypeMod._ColumnWidthProperty[js.Any]
        with csstypeLib.csstypeMod._ColumnsProperty[js.Any]
-       with _CounterStyleRangeProperty
-       with _CounterStyleSpeakAsProperty
+       with csstypeLib.csstypeMod._CounterStyleRangeProperty
+       with csstypeLib.csstypeMod._CounterStyleSpeakAsProperty
        with csstypeLib.csstypeMod._CursorProperty
        with csstypeLib.csstypeMod._FlexBasisProperty[js.Any]
        with csstypeLib.csstypeMod._FlexProperty[js.Any]
@@ -2815,10 +2858,12 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.BreakInsideProperty
   
   @js.native
-  sealed trait azure extends NamedColor
+  sealed trait azure
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait backwards extends SingleAnimationFillMode
+  sealed trait backwards
+    extends csstypeLib.csstypeMod.SingleAnimationFillMode
   
   @js.native
   sealed trait balance
@@ -2848,7 +2893,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.AlignmentBaselineProperty
   
   @js.native
-  sealed trait beige extends NamedColor
+  sealed trait beige
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait below
@@ -2863,13 +2909,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.UnicodeBidiProperty
   
   @js.native
-  sealed trait bisque extends NamedColor
+  sealed trait bisque
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait black extends NamedColor
+  sealed trait black
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait blanchedalmond extends NamedColor
+  sealed trait blanchedalmond
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait blink
@@ -2879,8 +2928,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait block
-    extends DisplayOutside
-       with FontFaceFontDisplayProperty
+    extends csstypeLib.csstypeMod.DisplayOutside
+       with csstypeLib.csstypeMod.FontFaceFontDisplayProperty
        with csstypeLib.csstypeMod.MozOrientProperty
        with csstypeLib.csstypeMod.ResizeProperty
   
@@ -2897,13 +2946,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.CaptionSideProperty
   
   @js.native
-  sealed trait blue extends NamedColor
+  sealed trait blue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait blueviolet extends NamedColor
+  sealed trait blueviolet
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait bold extends _FontWeightAbsolute
+  sealed trait bold
+    extends csstypeLib.csstypeMod._FontWeightAbsolute
   
   @js.native
   sealed trait bolder
@@ -2917,24 +2969,24 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `border-box`
-    extends Box
+    extends csstypeLib.csstypeMod.Box
        with csstypeLib.csstypeMod.BoxSizingProperty
        with csstypeLib.csstypeMod.MozFloatEdgeProperty
        with csstypeLib.csstypeMod.TransformBoxProperty
   
   @js.native
   sealed trait both
-    extends SingleAnimationFillMode
+    extends csstypeLib.csstypeMod.SingleAnimationFillMode
        with csstypeLib.csstypeMod.ClearProperty
        with csstypeLib.csstypeMod.MsWrapFlowProperty
        with csstypeLib.csstypeMod.ResizeProperty
   
   @js.native
   sealed trait bottom
-    extends _Position[js.Any]
+    extends csstypeLib.csstypeMod._Position[js.Any]
        with csstypeLib.csstypeMod.CaptionSideProperty
        with csstypeLib.csstypeMod._BackgroundPositionYProperty[js.Any]
-       with _BgPosition[js.Any]
+       with csstypeLib.csstypeMod._BgPosition[js.Any]
        with csstypeLib.csstypeMod._TransformOriginProperty[js.Any]
        with csstypeLib.csstypeMod._VerticalAlignProperty[js.Any]
        with csstypeLib.csstypeMod._WebkitMaskPositionYProperty[js.Any]
@@ -2954,17 +3006,20 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.WordWrapProperty
   
   @js.native
-  sealed trait brown extends NamedColor
+  sealed trait brown
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait bt
     extends csstypeLib.csstypeMod.MsBlockProgressionProperty
   
   @js.native
-  sealed trait bullets extends _CounterStyleSpeakAsProperty
+  sealed trait bullets
+    extends csstypeLib.csstypeMod._CounterStyleSpeakAsProperty
   
   @js.native
-  sealed trait burlywood extends NamedColor
+  sealed trait burlywood
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait butt
@@ -3001,7 +3056,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait cadetblue extends NamedColor
+  sealed trait cadetblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait capitalize
@@ -3022,17 +3078,17 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait center
-    extends _Position[js.Any]
+    extends csstypeLib.csstypeMod._Position[js.Any]
        with csstypeLib.csstypeMod.BoxAlignProperty
        with csstypeLib.csstypeMod.BoxPackProperty
-       with ContentPosition
+       with csstypeLib.csstypeMod.ContentPosition
        with csstypeLib.csstypeMod.RubyAlignProperty
-       with SelfPosition
+       with csstypeLib.csstypeMod.SelfPosition
        with csstypeLib.csstypeMod.TextAlignLastProperty
        with csstypeLib.csstypeMod.TextAlignProperty
        with csstypeLib.csstypeMod._BackgroundPositionXProperty[js.Any]
        with csstypeLib.csstypeMod._BackgroundPositionYProperty[js.Any]
-       with _BgPosition[js.Any]
+       with csstypeLib.csstypeMod._BgPosition[js.Any]
        with csstypeLib.csstypeMod._ScrollSnapAlignProperty
        with csstypeLib.csstypeMod._TransformOriginProperty[js.Any]
        with csstypeLib.csstypeMod._WebkitMaskPositionXProperty[js.Any]
@@ -3049,7 +3105,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.MsScrollChainingProperty
   
   @js.native
-  sealed trait chartreuse extends NamedColor
+  sealed trait chartreuse
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait checkbox
@@ -3069,10 +3126,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait child extends _Paint
+  sealed trait child
+    extends csstypeLib.csstypeMod._Paint
   
   @js.native
-  sealed trait chocolate extends NamedColor
+  sealed trait chocolate
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait circle
@@ -3081,7 +3140,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait clear
-    extends CompositeStyle
+    extends csstypeLib.csstypeMod.CompositeStyle
        with csstypeLib.csstypeMod.MsWrapFlowProperty
   
   @js.native
@@ -3099,7 +3158,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.BoxDecorationBreakProperty
   
   @js.native
-  sealed trait `close-quote` extends Quote
+  sealed trait `close-quote`
+    extends csstypeLib.csstypeMod.Quote
   
   @js.native
   sealed trait `col-resize`
@@ -3112,13 +3172,16 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.VisibilityProperty
   
   @js.native
-  sealed trait color extends BlendMode
+  sealed trait color
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
-  sealed trait `color-burn` extends BlendMode
+  sealed trait `color-burn`
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
-  sealed trait `color-dodge` extends BlendMode
+  sealed trait `color-dodge`
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait column
@@ -3135,16 +3198,17 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `common-ligatures`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait condensed extends _FontStretchAbsolute
+  sealed trait condensed
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
   sealed trait contain
-    extends _BgSize[js.Any]
+    extends csstypeLib.csstypeMod._BgSize[js.Any]
        with csstypeLib.csstypeMod.ObjectFitProperty
        with csstypeLib.csstypeMod.OverscrollBehaviorXProperty
        with csstypeLib.csstypeMod.OverscrollBehaviorYProperty
@@ -3162,54 +3226,60 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `content-box`
-    extends Box
+    extends csstypeLib.csstypeMod.Box
        with csstypeLib.csstypeMod.BoxSizingProperty
        with csstypeLib.csstypeMod.MozFloatEdgeProperty
        with csstypeLib.csstypeMod.OverflowClipBoxProperty
   
   @js.native
   sealed trait contents
-    extends _AnimateableFeature
-       with _ContentList
+    extends csstypeLib.csstypeMod._AnimateableFeature
+       with csstypeLib.csstypeMod._ContentList
        with csstypeLib.csstypeMod._DisplayProperty
   
   @js.native
-  sealed trait `context-fill` extends _Paint
+  sealed trait `context-fill`
+    extends csstypeLib.csstypeMod._Paint
   
   @js.native
   sealed trait `context-menu`
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait `context-stroke` extends _Paint
+  sealed trait `context-stroke`
+    extends csstypeLib.csstypeMod._Paint
   
   @js.native
   sealed trait contextual
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
   sealed trait copy
-    extends CompositeStyle
+    extends csstypeLib.csstypeMod.CompositeStyle
        with csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait coral extends NamedColor
+  sealed trait coral
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait cornflowerblue extends NamedColor
+  sealed trait cornflowerblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait cornsilk extends NamedColor
+  sealed trait cornsilk
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait cover
-    extends _BgSize[js.Any]
+    extends csstypeLib.csstypeMod._BgSize[js.Any]
        with csstypeLib.csstypeMod.ObjectFitProperty
   
   @js.native
-  sealed trait crimson extends NamedColor
+  sealed trait crimson
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `crisp-edges`
@@ -3220,10 +3290,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.ShapeRenderingProperty
   
   @js.native
-  sealed trait crop extends _PageMarksProperty
+  sealed trait crop
+    extends csstypeLib.csstypeMod._PageMarksProperty
   
   @js.native
-  sealed trait cross extends _PageMarksProperty
+  sealed trait cross
+    extends csstypeLib.csstypeMod._PageMarksProperty
   
   @js.native
   sealed trait crosshair
@@ -3236,92 +3308,118 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._StopColorProperty
   
   @js.native
-  sealed trait currentcolor extends _Color
+  sealed trait currentcolor
+    extends csstypeLib.csstypeMod._Color
   
   @js.native
-  sealed trait cursive extends GenericFamily
+  sealed trait cursive
+    extends csstypeLib.csstypeMod.GenericFamily
   
   @js.native
-  sealed trait cyan extends NamedColor
+  sealed trait cyan
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait cyclic extends _CounterStyleSystemProperty
+  sealed trait cyclic
+    extends csstypeLib.csstypeMod._CounterStyleSystemProperty
   
   @js.native
   sealed trait dark
     extends csstypeLib.csstypeMod._ScrollbarColorProperty
   
   @js.native
-  sealed trait darkblue extends NamedColor
+  sealed trait darkblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkcyan extends NamedColor
+  sealed trait darkcyan
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darken extends BlendMode
+  sealed trait darken
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
-  sealed trait darkgoldenrod extends NamedColor
+  sealed trait darkgoldenrod
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkgray extends NamedColor
+  sealed trait darkgray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkgreen extends NamedColor
+  sealed trait darkgreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkgrey extends NamedColor
+  sealed trait darkgrey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkkhaki extends NamedColor
+  sealed trait darkkhaki
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkmagenta extends NamedColor
+  sealed trait darkmagenta
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkolivegreen extends NamedColor
+  sealed trait darkolivegreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkorange extends NamedColor
+  sealed trait darkorange
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkorchid extends NamedColor
+  sealed trait darkorchid
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkred extends NamedColor
+  sealed trait darkred
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darksalmon extends NamedColor
+  sealed trait darksalmon
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkseagreen extends NamedColor
+  sealed trait darkseagreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkslateblue extends NamedColor
+  sealed trait darkslateblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkslategray extends NamedColor
+  sealed trait darkslategray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkslategrey extends NamedColor
+  sealed trait darkslategrey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkturquoise extends NamedColor
+  sealed trait darkturquoise
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait darkviolet extends NamedColor
+  sealed trait darkviolet
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait dashed
-    extends LineStyle
+    extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.TextDecorationStyleProperty
        with csstypeLib.csstypeMod._TextDecorationProperty
   
   @js.native
-  sealed trait deeppink extends NamedColor
+  sealed trait deeppink
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait deepskyblue extends NamedColor
+  sealed trait deepskyblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait default
@@ -3338,35 +3436,42 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._GridAutoFlowProperty
   
   @js.native
-  sealed trait `destination-atop` extends CompositeStyle
+  sealed trait `destination-atop`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `destination-in` extends CompositeStyle
+  sealed trait `destination-in`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `destination-out` extends CompositeStyle
+  sealed trait `destination-out`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `destination-over` extends CompositeStyle
+  sealed trait `destination-over`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
   sealed trait `diagonal-fractions`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait difference extends BlendMode
+  sealed trait difference
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait digits
     extends csstypeLib.csstypeMod._TextCombineUprightProperty
   
   @js.native
-  sealed trait dimgray extends NamedColor
+  sealed trait dimgray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait dimgrey extends NamedColor
+  sealed trait dimgrey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait disabled
@@ -3375,12 +3480,13 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `discretionary-ligatures`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait dodgerblue extends NamedColor
+  sealed trait dodgerblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait dot
@@ -3389,13 +3495,13 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait dotted
-    extends LineStyle
+    extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.TextDecorationStyleProperty
        with csstypeLib.csstypeMod._TextDecorationProperty
   
   @js.native
   sealed trait double
-    extends LineStyle
+    extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.TextDecorationStyleProperty
        with csstypeLib.csstypeMod._TextDecorationProperty
   
@@ -3417,16 +3523,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait ease extends _CubicBezierTimingFunction
+  sealed trait ease
+    extends csstypeLib.csstypeMod._CubicBezierTimingFunction
   
   @js.native
-  sealed trait `ease-in` extends _CubicBezierTimingFunction
+  sealed trait `ease-in`
+    extends csstypeLib.csstypeMod._CubicBezierTimingFunction
   
   @js.native
-  sealed trait `ease-in-out` extends _CubicBezierTimingFunction
+  sealed trait `ease-in-out`
+    extends csstypeLib.csstypeMod._CubicBezierTimingFunction
   
   @js.native
-  sealed trait `ease-out` extends _CubicBezierTimingFunction
+  sealed trait `ease-out`
+    extends csstypeLib.csstypeMod._CubicBezierTimingFunction
   
   @js.native
   sealed trait economy
@@ -3456,10 +3566,10 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait end
-    extends SelfPosition
+    extends csstypeLib.csstypeMod.SelfPosition
        with csstypeLib.csstypeMod.BoxAlignProperty
        with csstypeLib.csstypeMod.BoxPackProperty
-       with ContentPosition
+       with csstypeLib.csstypeMod.ContentPosition
        with csstypeLib.csstypeMod.MsWrapFlowProperty
        with csstypeLib.csstypeMod.TextAlignLastProperty
        with csstypeLib.csstypeMod.TextAlignProperty
@@ -3480,29 +3590,36 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.ColorAdjustProperty
   
   @js.native
-  sealed trait exclude extends CompositingOperator
+  sealed trait exclude
+    extends csstypeLib.csstypeMod.CompositingOperator
   
   @js.native
-  sealed trait exclusion extends BlendMode
+  sealed trait exclusion
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
-  sealed trait expanded extends _FontStretchAbsolute
+  sealed trait expanded
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
-  sealed trait `extra-condensed` extends _FontStretchAbsolute
+  sealed trait `extra-condensed`
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
-  sealed trait `extra-expanded` extends _FontStretchAbsolute
+  sealed trait `extra-expanded`
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
-  sealed trait fallback extends FontFaceFontDisplayProperty
+  sealed trait fallback
+    extends csstypeLib.csstypeMod.FontFaceFontDisplayProperty
   
   @js.native
   sealed trait `false`
     extends csstypeLib.csstypeMod.MsAcceleratorProperty
   
   @js.native
-  sealed trait fantasy extends GenericFamily
+  sealed trait fantasy
+    extends csstypeLib.csstypeMod.GenericFamily
   
   @js.native
   sealed trait fill
@@ -3524,7 +3641,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `fill-box`
-    extends GeometryBox
+    extends csstypeLib.csstypeMod.GeometryBox
        with csstypeLib.csstypeMod.TransformBoxProperty
   
   @js.native
@@ -3537,7 +3654,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._TextEmphasisStyleProperty
   
   @js.native
-  sealed trait firebrick extends NamedColor
+  sealed trait firebrick
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait first
@@ -3562,51 +3680,57 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait fixed
-    extends Attachment
+    extends csstypeLib.csstypeMod.Attachment
        with csstypeLib.csstypeMod.PositionProperty
        with csstypeLib.csstypeMod.TableLayoutProperty
-       with ViewportUserZoomProperty
-       with _CounterStyleSystemProperty
+       with csstypeLib.csstypeMod.ViewportUserZoomProperty
+       with csstypeLib.csstypeMod._CounterStyleSystemProperty
   
   @js.native
   sealed trait flat
     extends csstypeLib.csstypeMod.TransformStyleProperty
   
   @js.native
-  sealed trait flex extends DisplayInside
+  sealed trait flex
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
   sealed trait `flex-end`
-    extends SelfPosition
-       with ContentPosition
+    extends csstypeLib.csstypeMod.SelfPosition
+       with csstypeLib.csstypeMod.ContentPosition
   
   @js.native
   sealed trait `flex-start`
-    extends SelfPosition
-       with ContentPosition
+    extends csstypeLib.csstypeMod.SelfPosition
+       with csstypeLib.csstypeMod.ContentPosition
   
   @js.native
   sealed trait flip
     extends csstypeLib.csstypeMod._ImageOrientationProperty
   
   @js.native
-  sealed trait floralwhite extends NamedColor
+  sealed trait floralwhite
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait flow extends DisplayInside
+  sealed trait flow
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
-  sealed trait `flow-root` extends DisplayInside
+  sealed trait `flow-root`
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
   sealed trait `force-end`
     extends csstypeLib.csstypeMod._HangingPunctuationProperty
   
   @js.native
-  sealed trait forestgreen extends NamedColor
+  sealed trait forestgreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait forwards extends SingleAnimationFillMode
+  sealed trait forwards
+    extends csstypeLib.csstypeMod.SingleAnimationFillMode
   
   @js.native
   sealed trait `from-image`
@@ -3614,17 +3738,19 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._ImageResolutionProperty
   
   @js.native
-  sealed trait fuchsia extends NamedColor
+  sealed trait fuchsia
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `full-width`
     extends csstypeLib.csstypeMod.TextTransformProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantEastAsianProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait gainsboro extends NamedColor
+  sealed trait gainsboro
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait geometricPrecision
@@ -3632,13 +3758,16 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.TextRenderingProperty
   
   @js.native
-  sealed trait ghostwhite extends NamedColor
+  sealed trait ghostwhite
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait gold extends NamedColor
+  sealed trait gold
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait goldenrod extends NamedColor
+  sealed trait goldenrod
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait grab
@@ -3649,26 +3778,32 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait gray extends NamedColor
+  sealed trait gray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait green extends NamedColor
+  sealed trait green
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait greenyellow extends NamedColor
+  sealed trait greenyellow
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait grey extends NamedColor
+  sealed trait grey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait grid extends DisplayInside
+  sealed trait grid
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
   sealed trait grippers
     extends csstypeLib.csstypeMod.MsTouchSelectProperty
   
   @js.native
-  sealed trait groove extends LineStyle
+  sealed trait groove
+    extends csstypeLib.csstypeMod.LineStyle
   
   @js.native
   sealed trait groupbox
@@ -3680,7 +3815,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.DominantBaselineProperty
   
   @js.native
-  sealed trait `hard-light` extends BlendMode
+  sealed trait `hard-light`
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait help
@@ -3688,7 +3824,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait hidden
-    extends LineStyle
+    extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.BackfaceVisibilityProperty
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
@@ -3703,18 +3839,19 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `historical-forms`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantAlternatesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
   sealed trait `historical-ligatures`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait honeydew extends NamedColor
+  sealed trait honeydew
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait horizontal
@@ -3727,10 +3864,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WritingModeProperty
   
   @js.native
-  sealed trait hotpink extends NamedColor
+  sealed trait hotpink
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait hue extends BlendMode
+  sealed trait hue
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait icon
@@ -3767,16 +3906,18 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.ImeModeProperty
   
   @js.native
-  sealed trait indianred extends NamedColor
+  sealed trait indianred
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait indigo extends NamedColor
+  sealed trait indigo
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait infinite
-    extends _SingleAnimation
+    extends csstypeLib.csstypeMod._SingleAnimation
        with csstypeLib.csstypeMod._AnimationIterationCountProperty
-       with _CounterStyleRangeProperty
+       with csstypeLib.csstypeMod._CounterStyleRangeProperty
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - csstypeLib.csstypeMod.PointerEventsProperty because Already inherited- csstypeLib.csstypeMod.BoxOrientProperty because Already inherited- csstypeLib.csstypeMod.BoxDirectionProperty because Already inherited */ @js.native
@@ -3789,7 +3930,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `inline`
-    extends DisplayOutside
+    extends csstypeLib.csstypeMod.DisplayOutside
        with csstypeLib.csstypeMod.MozOrientProperty
        with csstypeLib.csstypeMod.ResizeProperty
   
@@ -3798,7 +3939,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.BoxOrientProperty
   
   @js.native
-  sealed trait `inline-block` extends DisplayLegacy
+  sealed trait `inline-block`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
   sealed trait `inline-end`
@@ -3807,13 +3949,16 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.FloatProperty
   
   @js.native
-  sealed trait `inline-flex` extends DisplayLegacy
+  sealed trait `inline-flex`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
-  sealed trait `inline-grid` extends DisplayLegacy
+  sealed trait `inline-grid`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
-  sealed trait `inline-list-item` extends DisplayLegacy
+  sealed trait `inline-list-item`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
   sealed trait `inline-start`
@@ -3822,14 +3967,16 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.FloatProperty
   
   @js.native
-  sealed trait `inline-table` extends DisplayLegacy
+  sealed trait `inline-table`
+    extends csstypeLib.csstypeMod.DisplayLegacy
   
   @js.native
   sealed trait `inner-spin-button`
     extends csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
-  sealed trait inset extends LineStyle
+  sealed trait inset
+    extends csstypeLib.csstypeMod.LineStyle
   
   @js.native
   sealed trait inside
@@ -3846,7 +3993,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.TextJustifyProperty
   
   @js.native
-  sealed trait intersect extends CompositingOperator
+  sealed trait intersect
+    extends csstypeLib.csstypeMod.CompositingOperator
   
   @js.native
   sealed trait intrinsic
@@ -3868,23 +4016,28 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait italic
-    extends _FontFaceFontStyleProperty
+    extends csstypeLib.csstypeMod._FontFaceFontStyleProperty
        with csstypeLib.csstypeMod._FontStyleProperty
   
   @js.native
-  sealed trait ivory extends NamedColor
+  sealed trait ivory
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait jis04 extends EastAsianVariantValues
+  sealed trait jis04
+    extends csstypeLib.csstypeMod.EastAsianVariantValues
   
   @js.native
-  sealed trait jis78 extends EastAsianVariantValues
+  sealed trait jis78
+    extends csstypeLib.csstypeMod.EastAsianVariantValues
   
   @js.native
-  sealed trait jis83 extends EastAsianVariantValues
+  sealed trait jis83
+    extends csstypeLib.csstypeMod.EastAsianVariantValues
   
   @js.native
-  sealed trait jis90 extends EastAsianVariantValues
+  sealed trait jis90
+    extends csstypeLib.csstypeMod.EastAsianVariantValues
   
   @js.native
   sealed trait justify
@@ -3897,13 +4050,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WordBreakProperty
   
   @js.native
-  sealed trait khaki extends NamedColor
+  sealed trait khaki
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait landscape extends ViewportOrientationProperty
+  sealed trait landscape
+    extends csstypeLib.csstypeMod.ViewportOrientationProperty
   
   @js.native
-  sealed trait large extends AbsoluteSize
+  sealed trait large
+    extends csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
   sealed trait larger
@@ -3914,13 +4070,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._HangingPunctuationProperty
   
   @js.native
-  sealed trait lavender extends NamedColor
+  sealed trait lavender
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lavenderblush extends NamedColor
+  sealed trait lavenderblush
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lawngreen extends NamedColor
+  sealed trait lawngreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait layout
@@ -3932,7 +4091,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait left
-    extends _Position[js.Any]
+    extends csstypeLib.csstypeMod._Position[js.Any]
        with csstypeLib.csstypeMod.BreakAfterProperty
        with csstypeLib.csstypeMod.BreakBeforeProperty
        with csstypeLib.csstypeMod.ClearProperty
@@ -3942,7 +4101,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.TextAlignLastProperty
        with csstypeLib.csstypeMod.TextAlignProperty
        with csstypeLib.csstypeMod._BackgroundPositionXProperty[js.Any]
-       with _BgPosition[js.Any]
+       with csstypeLib.csstypeMod._BgPosition[js.Any]
        with csstypeLib.csstypeMod._JustifyContentProperty
        with csstypeLib.csstypeMod._JustifyItemsProperty
        with csstypeLib.csstypeMod._JustifySelfProperty
@@ -3956,69 +4115,88 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._JustifyItemsProperty
   
   @js.native
-  sealed trait lemonchiffon extends NamedColor
+  sealed trait lemonchiffon
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait light
     extends csstypeLib.csstypeMod._ScrollbarColorProperty
   
   @js.native
-  sealed trait lightblue extends NamedColor
+  sealed trait lightblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightcoral extends NamedColor
+  sealed trait lightcoral
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightcyan extends NamedColor
+  sealed trait lightcyan
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lighten extends BlendMode
+  sealed trait lighten
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait lighter
     extends csstypeLib.csstypeMod._FontWeightProperty
   
   @js.native
-  sealed trait lightgoldenrodyellow extends NamedColor
+  sealed trait lightgoldenrodyellow
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightgray extends NamedColor
+  sealed trait lightgray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightgreen extends NamedColor
+  sealed trait lightgreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightgrey extends NamedColor
+  sealed trait lightgrey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightpink extends NamedColor
+  sealed trait lightpink
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightsalmon extends NamedColor
+  sealed trait lightsalmon
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightseagreen extends NamedColor
+  sealed trait lightseagreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightskyblue extends NamedColor
+  sealed trait lightskyblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightslategray extends NamedColor
+  sealed trait lightslategray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightslategrey extends NamedColor
+  sealed trait lightslategrey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightsteelblue extends NamedColor
+  sealed trait lightsteelblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lightyellow extends NamedColor
+  sealed trait lightyellow
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait lime extends NamedColor
+  sealed trait lime
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait limegreen extends NamedColor
+  sealed trait limegreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `line-through`
@@ -4026,18 +4204,20 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._TextDecorationProperty
   
   @js.native
-  sealed trait linear extends _SingleTimingFunction
+  sealed trait linear
+    extends csstypeLib.csstypeMod._SingleTimingFunction
   
   @js.native
   sealed trait linearRGB
     extends csstypeLib.csstypeMod.ColorInterpolationProperty
   
   @js.native
-  sealed trait linen extends NamedColor
+  sealed trait linen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `lining-nums`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
@@ -4056,7 +4236,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
-  sealed trait local extends Attachment
+  sealed trait local
+    extends csstypeLib.csstypeMod.Attachment
   
   @js.native
   sealed trait loose
@@ -4076,16 +4257,18 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait luminance
-    extends MaskingMode
+    extends csstypeLib.csstypeMod.MaskingMode
        with csstypeLib.csstypeMod.MaskBorderModeProperty
        with csstypeLib.csstypeMod.MaskTypeProperty
        with csstypeLib.csstypeMod._MaskBorderProperty
   
   @js.native
-  sealed trait luminosity extends BlendMode
+  sealed trait luminosity
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
-  sealed trait magenta extends NamedColor
+  sealed trait magenta
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait mandatory
@@ -4105,7 +4288,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `margin-box`
-    extends GeometryBox
+    extends csstypeLib.csstypeMod.GeometryBox
        with csstypeLib.csstypeMod.MozFloatEdgeProperty
        with csstypeLib.csstypeMod._ShapeOutsideProperty
   
@@ -4114,14 +4297,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._PaintOrderProperty
   
   @js.native
-  sealed trait maroon extends NamedColor
+  sealed trait maroon
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `match-parent`
     extends csstypeLib.csstypeMod.TextAlignProperty
   
   @js.native
-  sealed trait `match-source` extends MaskingMode
+  sealed trait `match-source`
+    extends csstypeLib.csstypeMod.MaskingMode
   
   @js.native
   sealed trait mathematical
@@ -4130,7 +4315,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `max-content`
-    extends _TrackBreadth[js.Any]
+    extends csstypeLib.csstypeMod._TrackBreadth[js.Any]
        with csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
        with csstypeLib.csstypeMod._FlexBasisProperty[js.Any]
        with csstypeLib.csstypeMod._FlexProperty[js.Any]
@@ -4224,35 +4409,44 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait medium
-    extends _LineWidth[js.Any]
-       with AbsoluteSize
+    extends csstypeLib.csstypeMod._LineWidth[js.Any]
+       with csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
-  sealed trait mediumaquamarine extends NamedColor
+  sealed trait mediumaquamarine
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumblue extends NamedColor
+  sealed trait mediumblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumorchid extends NamedColor
+  sealed trait mediumorchid
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumpurple extends NamedColor
+  sealed trait mediumpurple
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumseagreen extends NamedColor
+  sealed trait mediumseagreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumslateblue extends NamedColor
+  sealed trait mediumslateblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumspringgreen extends NamedColor
+  sealed trait mediumspringgreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumturquoise extends NamedColor
+  sealed trait mediumturquoise
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mediumvioletred extends NamedColor
+  sealed trait mediumvioletred
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait menu
@@ -4339,11 +4533,12 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._VerticalAlignProperty[js.Any]
   
   @js.native
-  sealed trait midnightblue extends NamedColor
+  sealed trait midnightblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `min-content`
-    extends _TrackBreadth[js.Any]
+    extends csstypeLib.csstypeMod._TrackBreadth[js.Any]
        with csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
        with csstypeLib.csstypeMod._FlexBasisProperty[js.Any]
        with csstypeLib.csstypeMod._FlexProperty[js.Any]
@@ -4364,10 +4559,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
-  sealed trait mintcream extends NamedColor
+  sealed trait mintcream
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait mistyrose extends NamedColor
+  sealed trait mistyrose
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait miter
@@ -4378,10 +4575,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.TextOrientationProperty
   
   @js.native
-  sealed trait moccasin extends NamedColor
+  sealed trait moccasin
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait monospace extends GenericFamily
+  sealed trait monospace
+    extends csstypeLib.csstypeMod.GenericFamily
   
   @js.native
   sealed trait move
@@ -4392,17 +4591,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.BoxLinesProperty
   
   @js.native
-  sealed trait multiply extends BlendMode
+  sealed trait multiply
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait `n-resize`
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait navajowhite extends NamedColor
+  sealed trait navajowhite
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait navy extends NamedColor
+  sealed trait navy
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `ne-resize`
@@ -4418,27 +4620,28 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `no-clip`
-    extends _MaskLayer[js.Any]
+    extends csstypeLib.csstypeMod._MaskLayer[js.Any]
        with csstypeLib.csstypeMod._MaskClipProperty
   
   @js.native
-  sealed trait `no-close-quote` extends Quote
+  sealed trait `no-close-quote`
+    extends csstypeLib.csstypeMod.Quote
   
   @js.native
   sealed trait `no-common-ligatures`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
   sealed trait `no-contextual`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
   sealed trait `no-discretionary-ligatures`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
@@ -4452,7 +4655,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `no-historical-ligatures`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
@@ -4461,11 +4664,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._MsHyphenateLimitLinesProperty
   
   @js.native
-  sealed trait `no-open-quote` extends Quote
+  sealed trait `no-open-quote`
+    extends csstypeLib.csstypeMod.Quote
   
   @js.native
   sealed trait `no-repeat`
-    extends _RepeatStyle
+    extends csstypeLib.csstypeMod._RepeatStyle
        with csstypeLib.csstypeMod.WebkitMaskRepeatXProperty
        with csstypeLib.csstypeMod.WebkitMaskRepeatYProperty
   
@@ -4474,9 +4678,9 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.VectorEffectProperty
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - csstypeLib._SingleAnimation because Already inherited */ @js.native
+  - csstypeLib.csstypeMod._SingleAnimation because Already inherited */ @js.native
   sealed trait none
-    extends LineStyle
+    extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.AppearanceProperty
        with csstypeLib.csstypeMod.ClearProperty
        with csstypeLib.csstypeMod.ColumnSpanProperty
@@ -4511,7 +4715,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.ScrollSnapTypeXProperty
        with csstypeLib.csstypeMod.ScrollSnapTypeYProperty
        with csstypeLib.csstypeMod.ScrollbarWidthProperty
-       with SingleAnimationFillMode
+       with csstypeLib.csstypeMod.SingleAnimationFillMode
        with csstypeLib.csstypeMod.TextDecorationSkipInkProperty
        with csstypeLib.csstypeMod.TextJustifyProperty
        with csstypeLib.csstypeMod.TextTransformProperty
@@ -4533,9 +4737,9 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._CursorProperty
        with csstypeLib.csstypeMod._DisplayProperty
        with csstypeLib.csstypeMod._FilterProperty
-       with _FinalBgLayer[js.Any]
+       with csstypeLib.csstypeMod._FinalBgLayer[js.Any]
        with csstypeLib.csstypeMod._FlexProperty[js.Any]
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontSizeAdjustProperty
        with csstypeLib.csstypeMod._FontSynthesisProperty
        with csstypeLib.csstypeMod._FontVariantLigaturesProperty
@@ -4557,7 +4761,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._MaskBorderProperty
        with csstypeLib.csstypeMod._MaskBorderSourceProperty
        with csstypeLib.csstypeMod._MaskImageProperty
-       with _MaskLayer[js.Any]
+       with csstypeLib.csstypeMod._MaskLayer[js.Any]
        with csstypeLib.csstypeMod._MaxBlockSizeProperty[js.Any]
        with csstypeLib.csstypeMod._MaxHeightProperty[js.Any]
        with csstypeLib.csstypeMod._MaxInlineSizeProperty[js.Any]
@@ -4575,8 +4779,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._OffsetPathProperty
        with csstypeLib.csstypeMod._OffsetProperty[js.Any]
        with csstypeLib.csstypeMod._OverscrollBehaviorProperty
-       with _PageMarksProperty
-       with _Paint
+       with csstypeLib.csstypeMod._PageMarksProperty
+       with csstypeLib.csstypeMod._Paint
        with csstypeLib.csstypeMod._PerspectiveProperty[js.Any]
        with csstypeLib.csstypeMod._QuotesProperty
        with csstypeLib.csstypeMod._RotateProperty
@@ -4587,7 +4791,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._ScrollSnapPointsYProperty
        with csstypeLib.csstypeMod._ScrollSnapTypeProperty
        with csstypeLib.csstypeMod._ShapeOutsideProperty
-       with _SingleTransition
+       with csstypeLib.csstypeMod._SingleTransition
        with csstypeLib.csstypeMod._StrokeDasharrayProperty[js.Any]
        with csstypeLib.csstypeMod._TextCombineUprightProperty
        with csstypeLib.csstypeMod._TextDecorationLineProperty
@@ -4612,8 +4816,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait normal
-    extends SingleAnimationDirection
-       with BlendMode
+    extends csstypeLib.csstypeMod.SingleAnimationDirection
+       with csstypeLib.csstypeMod.BlendMode
        with csstypeLib.csstypeMod.BoxDirectionProperty
        with csstypeLib.csstypeMod.FontKerningProperty
        with csstypeLib.csstypeMod.FontVariantCapsProperty
@@ -4631,11 +4835,11 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._AlignSelfProperty
        with csstypeLib.csstypeMod._ColumnGapProperty[js.Any]
        with csstypeLib.csstypeMod._ContentProperty
-       with _FontFaceFontStyleProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontStyleProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontFeatureSettingsProperty
        with csstypeLib.csstypeMod._FontLanguageOverrideProperty
-       with _FontStretchAbsolute
+       with csstypeLib.csstypeMod._FontStretchAbsolute
        with csstypeLib.csstypeMod._FontStyleProperty
        with csstypeLib.csstypeMod._FontVariantAlternatesProperty
        with csstypeLib.csstypeMod._FontVariantEastAsianProperty
@@ -4643,7 +4847,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
        with csstypeLib.csstypeMod._FontVariationSettingsProperty
-       with _FontWeightAbsolute
+       with csstypeLib.csstypeMod._FontWeightAbsolute
        with csstypeLib.csstypeMod._GapProperty[js.Any]
        with csstypeLib.csstypeMod._InitialLetterProperty
        with csstypeLib.csstypeMod._JustifyContentProperty
@@ -4674,10 +4878,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait numbers extends _CounterStyleSpeakAsProperty
+  sealed trait numbers
+    extends csstypeLib.csstypeMod._CounterStyleSpeakAsProperty
   
   @js.native
-  sealed trait numeric extends _CounterStyleSystemProperty
+  sealed trait numeric
+    extends csstypeLib.csstypeMod._CounterStyleSystemProperty
   
   @js.native
   sealed trait `nw-resize`
@@ -4693,23 +4899,26 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait oblique
-    extends _FontFaceFontStyleProperty
+    extends csstypeLib.csstypeMod._FontFaceFontStyleProperty
        with csstypeLib.csstypeMod._FontStyleProperty
   
   @js.native
-  sealed trait oldlace extends NamedColor
+  sealed trait oldlace
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `oldstyle-nums`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait olive extends NamedColor
+  sealed trait olive
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait olivedrab extends NamedColor
+  sealed trait olivedrab
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait open
@@ -4717,7 +4926,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._TextEmphasisStyleProperty
   
   @js.native
-  sealed trait `open-quote` extends Quote
+  sealed trait `open-quote`
+    extends csstypeLib.csstypeMod.Quote
   
   @js.native
   sealed trait optimizeLegibility
@@ -4734,25 +4944,30 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.TextRenderingProperty
   
   @js.native
-  sealed trait optional extends FontFaceFontDisplayProperty
+  sealed trait optional
+    extends csstypeLib.csstypeMod.FontFaceFontDisplayProperty
   
   @js.native
-  sealed trait orange extends NamedColor
+  sealed trait orange
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait orangered extends NamedColor
+  sealed trait orangered
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait orchid extends NamedColor
+  sealed trait orchid
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait ordinal
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait outset extends LineStyle
+  sealed trait outset
+    extends csstypeLib.csstypeMod.LineStyle
   
   @js.native
   sealed trait outside
@@ -4764,7 +4979,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.RubyPositionProperty
   
   @js.native
-  sealed trait overlay extends BlendMode
+  sealed trait overlay
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait overline
@@ -4779,7 +4995,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `padding-box`
-    extends Box
+    extends csstypeLib.csstypeMod.Box
        with csstypeLib.csstypeMod.MozFloatEdgeProperty
        with csstypeLib.csstypeMod.OverflowClipBoxProperty
   
@@ -4797,16 +5013,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.PointerEventsProperty
   
   @js.native
-  sealed trait palegoldenrod extends NamedColor
+  sealed trait palegoldenrod
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait palegreen extends NamedColor
+  sealed trait palegreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait paleturquoise extends NamedColor
+  sealed trait paleturquoise
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait palevioletred extends NamedColor
+  sealed trait palevioletred
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `pan-down`
@@ -4833,23 +5053,26 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._TouchActionProperty
   
   @js.native
-  sealed trait papayawhip extends NamedColor
+  sealed trait papayawhip
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait paused
-    extends _SingleAnimation
+    extends csstypeLib.csstypeMod._SingleAnimation
        with csstypeLib.csstypeMod._AnimationPlayStateProperty
   
   @js.native
-  sealed trait peachpuff extends NamedColor
+  sealed trait peachpuff
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait peru extends NamedColor
+  sealed trait peru
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `petite-caps`
     extends csstypeLib.csstypeMod.FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
@@ -4857,7 +5080,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._TouchActionProperty
   
   @js.native
-  sealed trait pink extends NamedColor
+  sealed trait pink
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait pixelated
@@ -4868,17 +5092,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.UnicodeBidiProperty
   
   @js.native
-  sealed trait plum extends NamedColor
+  sealed trait plum
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait pointer
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait portrait extends ViewportOrientationProperty
+  sealed trait portrait
+    extends csstypeLib.csstypeMod.ViewportOrientationProperty
   
   @js.native
-  sealed trait powderblue extends NamedColor
+  sealed trait powderblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait pre
@@ -4926,13 +5153,13 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `proportional-nums`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
   sealed trait `proportional-width`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantEastAsianProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
@@ -4945,7 +5172,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._MsContentZoomSnapProperty
   
   @js.native
-  sealed trait purple extends NamedColor
+  sealed trait purple
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `push-button`
@@ -4995,7 +5223,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WebkitUserModifyProperty
   
   @js.native
-  sealed trait rebeccapurple extends NamedColor
+  sealed trait rebeccapurple
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait recto
@@ -5005,7 +5234,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.PageBreakBeforeProperty
   
   @js.native
-  sealed trait red extends NamedColor
+  sealed trait red
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait region
@@ -5018,7 +5248,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait repeat
-    extends _RepeatStyle
+    extends csstypeLib.csstypeMod._RepeatStyle
        with csstypeLib.csstypeMod.WebkitMaskRepeatXProperty
        with csstypeLib.csstypeMod.WebkitMaskRepeatYProperty
        with csstypeLib.csstypeMod._BorderImageProperty
@@ -5027,10 +5257,12 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._MaskBorderRepeatProperty
   
   @js.native
-  sealed trait `repeat-x` extends _RepeatStyle
+  sealed trait `repeat-x`
+    extends csstypeLib.csstypeMod._RepeatStyle
   
   @js.native
-  sealed trait `repeat-y` extends _RepeatStyle
+  sealed trait `repeat-y`
+    extends csstypeLib.csstypeMod._RepeatStyle
   
   @js.native
   sealed trait reset
@@ -5050,7 +5282,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait reverse
-    extends SingleAnimationDirection
+    extends csstypeLib.csstypeMod.SingleAnimationDirection
        with csstypeLib.csstypeMod.BoxDirectionProperty
        with csstypeLib.csstypeMod._OffsetRotateProperty
   
@@ -5059,11 +5291,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.Globals
   
   @js.native
-  sealed trait ridge extends LineStyle
+  sealed trait ridge
+    extends csstypeLib.csstypeMod.LineStyle
   
   @js.native
   sealed trait right
-    extends _Position[js.Any]
+    extends csstypeLib.csstypeMod._Position[js.Any]
        with csstypeLib.csstypeMod.BreakAfterProperty
        with csstypeLib.csstypeMod.BreakBeforeProperty
        with csstypeLib.csstypeMod.ClearProperty
@@ -5073,7 +5306,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.TextAlignLastProperty
        with csstypeLib.csstypeMod.TextAlignProperty
        with csstypeLib.csstypeMod._BackgroundPositionXProperty[js.Any]
-       with _BgPosition[js.Any]
+       with csstypeLib.csstypeMod._BgPosition[js.Any]
        with csstypeLib.csstypeMod._JustifyContentProperty
        with csstypeLib.csstypeMod._JustifyItemsProperty
        with csstypeLib.csstypeMod._JustifySelfProperty
@@ -5087,11 +5320,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MsBlockProgressionProperty
   
   @js.native
-  sealed trait rosybrown extends NamedColor
+  sealed trait rosybrown
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait round
-    extends _RepeatStyle
+    extends csstypeLib.csstypeMod._RepeatStyle
        with csstypeLib.csstypeMod.StrokeLinecapProperty
        with csstypeLib.csstypeMod.StrokeLinejoinProperty
        with csstypeLib.csstypeMod.WebkitMaskRepeatXProperty
@@ -5117,7 +5351,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._FlexFlowProperty
   
   @js.native
-  sealed trait royalblue extends NamedColor
+  sealed trait royalblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait rtl
@@ -5125,29 +5360,34 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait ruby
-    extends DisplayInside
-       with _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod.DisplayInside
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantEastAsianProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait `ruby-base` extends DisplayInternal
+  sealed trait `ruby-base`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `ruby-base-container` extends DisplayInternal
+  sealed trait `ruby-base-container`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `ruby-text` extends DisplayInternal
+  sealed trait `ruby-text`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `ruby-text-container` extends DisplayInternal
+  sealed trait `ruby-text-container`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `run-in` extends DisplayOutside
+  sealed trait `run-in`
+    extends csstypeLib.csstypeMod.DisplayOutside
   
   @js.native
   sealed trait running
-    extends _SingleAnimation
+    extends csstypeLib.csstypeMod._SingleAnimation
        with csstypeLib.csstypeMod._AnimationPlayStateProperty
   
   @js.native
@@ -5159,19 +5399,24 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.ColorInterpolationProperty
   
   @js.native
-  sealed trait saddlebrown extends NamedColor
+  sealed trait saddlebrown
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait salmon extends NamedColor
+  sealed trait salmon
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait sandybrown extends NamedColor
+  sealed trait sandybrown
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait `sans-serif` extends GenericFamily
+  sealed trait `sans-serif`
+    extends csstypeLib.csstypeMod.GenericFamily
   
   @js.native
-  sealed trait saturation extends BlendMode
+  sealed trait saturation
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait `scale-down`
@@ -5206,11 +5451,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait screen extends BlendMode
+  sealed trait screen
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait scroll
-    extends Attachment
+    extends csstypeLib.csstypeMod.Attachment
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod._OverflowBlockProperty
@@ -5218,7 +5464,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._OverflowProperty
   
   @js.native
-  sealed trait `scroll-position` extends _AnimateableFeature
+  sealed trait `scroll-position`
+    extends csstypeLib.csstypeMod._AnimateableFeature
   
   @js.native
   sealed trait scrollbar
@@ -5261,7 +5508,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait seagreen extends NamedColor
+  sealed trait seagreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait searchfield
@@ -5285,7 +5533,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
-  sealed trait seashell extends NamedColor
+  sealed trait seashell
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `select-after`
@@ -5308,16 +5557,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozUserFocusProperty
   
   @js.native
-  sealed trait `self-end` extends SelfPosition
+  sealed trait `self-end`
+    extends csstypeLib.csstypeMod.SelfPosition
   
   @js.native
-  sealed trait `self-start` extends SelfPosition
+  sealed trait `self-start`
+    extends csstypeLib.csstypeMod.SelfPosition
   
   @js.native
-  sealed trait `semi-condensed` extends _FontStretchAbsolute
+  sealed trait `semi-condensed`
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
-  sealed trait `semi-expanded` extends _FontStretchAbsolute
+  sealed trait `semi-expanded`
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
   sealed trait separate
@@ -5329,7 +5582,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait serif extends GenericFamily
+  sealed trait serif
+    extends csstypeLib.csstypeMod.GenericFamily
   
   @js.native
   sealed trait sesame
@@ -5358,13 +5612,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WritingModeProperty
   
   @js.native
-  sealed trait sienna extends NamedColor
+  sealed trait sienna
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait silver extends NamedColor
+  sealed trait silver
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait simplified extends EastAsianVariantValues
+  sealed trait simplified
+    extends csstypeLib.csstypeMod.EastAsianVariantValues
   
   @js.native
   sealed trait single
@@ -5375,22 +5632,26 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._ContainProperty
   
   @js.native
-  sealed trait skyblue extends NamedColor
+  sealed trait skyblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `slashed-zero`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait slateblue extends NamedColor
+  sealed trait slateblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait slategray extends NamedColor
+  sealed trait slategray
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait slategrey extends NamedColor
+  sealed trait slategrey
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait slice
@@ -5413,12 +5674,13 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
-  sealed trait small extends AbsoluteSize
+  sealed trait small
+    extends csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
   sealed trait `small-caps`
     extends csstypeLib.csstypeMod.FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
@@ -5434,32 +5696,38 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.ScrollBehaviorProperty
   
   @js.native
-  sealed trait snow extends NamedColor
+  sealed trait snow
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait `soft-light` extends BlendMode
+  sealed trait `soft-light`
+    extends csstypeLib.csstypeMod.BlendMode
   
   @js.native
   sealed trait solid
-    extends LineStyle
+    extends csstypeLib.csstypeMod.LineStyle
        with csstypeLib.csstypeMod.TextDecorationStyleProperty
        with csstypeLib.csstypeMod._TextDecorationProperty
   
   @js.native
-  sealed trait `source-atop` extends CompositeStyle
+  sealed trait `source-atop`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `source-in` extends CompositeStyle
+  sealed trait `source-in`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `source-out` extends CompositeStyle
+  sealed trait `source-out`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `source-over` extends CompositeStyle
+  sealed trait `source-over`
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
   sealed trait space
-    extends _RepeatStyle
+    extends csstypeLib.csstypeMod._RepeatStyle
        with csstypeLib.csstypeMod.WebkitMaskRepeatXProperty
        with csstypeLib.csstypeMod.WebkitMaskRepeatYProperty
        with csstypeLib.csstypeMod._BorderImageProperty
@@ -5469,23 +5737,25 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `space-around`
-    extends ContentDistribution
+    extends csstypeLib.csstypeMod.ContentDistribution
        with csstypeLib.csstypeMod.RubyAlignProperty
   
   @js.native
   sealed trait `space-between`
-    extends ContentDistribution
+    extends csstypeLib.csstypeMod.ContentDistribution
        with csstypeLib.csstypeMod.RubyAlignProperty
   
   @js.native
-  sealed trait `space-evenly` extends ContentDistribution
+  sealed trait `space-evenly`
+    extends csstypeLib.csstypeMod.ContentDistribution
   
   @js.native
   sealed trait spaces
     extends csstypeLib.csstypeMod._TextDecorationSkipProperty
   
   @js.native
-  sealed trait `spell-out` extends _CounterStyleSpeakAsProperty
+  sealed trait `spell-out`
+    extends csstypeLib.csstypeMod._CounterStyleSpeakAsProperty
   
   @js.native
   sealed trait spinner
@@ -5508,7 +5778,8 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait springgreen extends NamedColor
+  sealed trait springgreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait square
@@ -5520,16 +5791,16 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `stacked-fractions`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
   sealed trait start
-    extends SelfPosition
+    extends csstypeLib.csstypeMod.SelfPosition
        with csstypeLib.csstypeMod.BoxAlignProperty
        with csstypeLib.csstypeMod.BoxPackProperty
-       with ContentPosition
+       with csstypeLib.csstypeMod.ContentPosition
        with csstypeLib.csstypeMod.MsWrapFlowProperty
        with csstypeLib.csstypeMod.RubyAlignProperty
        with csstypeLib.csstypeMod.TextAlignLastProperty
@@ -5554,13 +5825,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait steelblue extends NamedColor
+  sealed trait steelblue
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait `step-end` extends _StepTimingFunction
+  sealed trait `step-end`
+    extends csstypeLib.csstypeMod._StepTimingFunction
   
   @js.native
-  sealed trait `step-start` extends _StepTimingFunction
+  sealed trait `step-start`
+    extends csstypeLib.csstypeMod._StepTimingFunction
   
   @js.native
   sealed trait sticky
@@ -5568,7 +5842,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait stretch
-    extends ContentDistribution
+    extends csstypeLib.csstypeMod.ContentDistribution
        with csstypeLib.csstypeMod.BoxAlignProperty
        with csstypeLib.csstypeMod._AlignItemsProperty
        with csstypeLib.csstypeMod._AlignSelfProperty
@@ -5597,7 +5871,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._PaintOrderProperty
   
   @js.native
-  sealed trait `stroke-box` extends GeometryBox
+  sealed trait `stroke-box`
+    extends csstypeLib.csstypeMod.GeometryBox
   
   @js.native
   sealed trait `stroke-opacity`
@@ -5615,7 +5890,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._VerticalAlignProperty[js.Any]
   
   @js.native
-  sealed trait subtract extends CompositingOperator
+  sealed trait subtract
+    extends csstypeLib.csstypeMod.CompositingOperator
   
   @js.native
   sealed trait `super`
@@ -5628,10 +5904,12 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._CursorProperty
   
   @js.native
-  sealed trait swap extends FontFaceFontDisplayProperty
+  sealed trait swap
+    extends csstypeLib.csstypeMod.FontFaceFontDisplayProperty
   
   @js.native
-  sealed trait symbolic extends _CounterStyleSystemProperty
+  sealed trait symbolic
+    extends csstypeLib.csstypeMod._CounterStyleSystemProperty
   
   @js.native
   sealed trait tab
@@ -5646,31 +5924,40 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MozAppearanceProperty
   
   @js.native
-  sealed trait table extends DisplayInside
+  sealed trait table
+    extends csstypeLib.csstypeMod.DisplayInside
   
   @js.native
-  sealed trait `table-caption` extends DisplayInternal
+  sealed trait `table-caption`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-cell` extends DisplayInternal
+  sealed trait `table-cell`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-column` extends DisplayInternal
+  sealed trait `table-column`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-column-group` extends DisplayInternal
+  sealed trait `table-column-group`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-footer-group` extends DisplayInternal
+  sealed trait `table-footer-group`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-header-group` extends DisplayInternal
+  sealed trait `table-header-group`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-row` extends DisplayInternal
+  sealed trait `table-row`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
-  sealed trait `table-row-group` extends DisplayInternal
+  sealed trait `table-row-group`
+    extends csstypeLib.csstypeMod.DisplayInternal
   
   @js.native
   sealed trait tabpanel
@@ -5682,19 +5969,21 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `tabular-nums`
-    extends _FontFaceFontVariantProperty
+    extends csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantNumericProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait tan extends NamedColor
+  sealed trait tan
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait tb
     extends csstypeLib.csstypeMod.MsBlockProgressionProperty
   
   @js.native
-  sealed trait teal extends NamedColor
+  sealed trait teal
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait text
@@ -5737,24 +6026,26 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait thick
-    extends _LineWidth[js.Any]
+    extends csstypeLib.csstypeMod._LineWidth[js.Any]
   
   @js.native
   sealed trait thin
-    extends _LineWidth[js.Any]
+    extends csstypeLib.csstypeMod._LineWidth[js.Any]
        with csstypeLib.csstypeMod.ScrollbarWidthProperty
   
   @js.native
-  sealed trait thistle extends NamedColor
+  sealed trait thistle
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait `titling-caps`
     extends csstypeLib.csstypeMod.FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
-  sealed trait tomato extends NamedColor
+  sealed trait tomato
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait toolbar
@@ -5783,10 +6074,10 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait top
-    extends _Position[js.Any]
+    extends csstypeLib.csstypeMod._Position[js.Any]
        with csstypeLib.csstypeMod.CaptionSideProperty
        with csstypeLib.csstypeMod._BackgroundPositionYProperty[js.Any]
-       with _BgPosition[js.Any]
+       with csstypeLib.csstypeMod._BgPosition[js.Any]
        with csstypeLib.csstypeMod._TransformOriginProperty[js.Any]
        with csstypeLib.csstypeMod._VerticalAlignProperty[js.Any]
        with csstypeLib.csstypeMod._WebkitMaskPositionYProperty[js.Any]
@@ -5796,14 +6087,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.WebkitOverflowScrollingProperty
   
   @js.native
-  sealed trait traditional extends EastAsianVariantValues
+  sealed trait traditional
+    extends csstypeLib.csstypeMod.EastAsianVariantValues
   
   @js.native
   sealed trait `trailing-spaces`
     extends csstypeLib.csstypeMod._TextDecorationSkipProperty
   
   @js.native
-  sealed trait transparent extends NamedColor
+  sealed trait transparent
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait treeheader
@@ -5847,13 +6140,16 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.MsAcceleratorProperty
   
   @js.native
-  sealed trait turquoise extends NamedColor
+  sealed trait turquoise
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait `ultra-condensed` extends _FontStretchAbsolute
+  sealed trait `ultra-condensed`
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
-  sealed trait `ultra-expanded` extends _FontStretchAbsolute
+  sealed trait `ultra-expanded`
+    extends csstypeLib.csstypeMod._FontStretchAbsolute
   
   @js.native
   sealed trait under
@@ -5868,7 +6164,7 @@ object csstypeLibStrings {
   @js.native
   sealed trait unicase
     extends csstypeLib.csstypeMod.FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
+       with csstypeLib.csstypeMod._FontFaceFontVariantProperty
        with csstypeLib.csstypeMod._FontVariantProperty
   
   @js.native
@@ -5918,11 +6214,12 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `view-box`
-    extends GeometryBox
+    extends csstypeLib.csstypeMod.GeometryBox
        with csstypeLib.csstypeMod.TransformBoxProperty
   
   @js.native
-  sealed trait violet extends NamedColor
+  sealed trait violet
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait visible
@@ -5965,16 +6262,20 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._FontSynthesisProperty
   
   @js.native
-  sealed trait wheat extends NamedColor
+  sealed trait wheat
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait white extends NamedColor
+  sealed trait white
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait whitesmoke extends NamedColor
+  sealed trait whitesmoke
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait words extends _CounterStyleSpeakAsProperty
+  sealed trait words
+    extends csstypeLib.csstypeMod._CounterStyleSpeakAsProperty
   
   @js.native
   sealed trait wrap
@@ -5996,23 +6297,28 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._BackgroundPositionXProperty[js.Any]
   
   @js.native
-  sealed trait `x-large` extends AbsoluteSize
+  sealed trait `x-large`
+    extends csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
-  sealed trait `x-small` extends AbsoluteSize
+  sealed trait `x-small`
+    extends csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
   sealed trait `x-start`
     extends csstypeLib.csstypeMod._BackgroundPositionXProperty[js.Any]
   
   @js.native
-  sealed trait xor extends CompositeStyle
+  sealed trait xor
+    extends csstypeLib.csstypeMod.CompositeStyle
   
   @js.native
-  sealed trait `xx-large` extends AbsoluteSize
+  sealed trait `xx-large`
+    extends csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
-  sealed trait `xx-small` extends AbsoluteSize
+  sealed trait `xx-small`
+    extends csstypeLib.csstypeMod.AbsoluteSize
   
   @js.native
   sealed trait `y-end`
@@ -6023,15 +6329,17 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod._BackgroundPositionYProperty[js.Any]
   
   @js.native
-  sealed trait yellow extends NamedColor
+  sealed trait yellow
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
-  sealed trait yellowgreen extends NamedColor
+  sealed trait yellowgreen
+    extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
   sealed trait zoom
     extends csstypeLib.csstypeMod.MsContentZoomingProperty
-       with ViewportUserZoomProperty
+       with csstypeLib.csstypeMod.ViewportUserZoomProperty
   
   @js.native
   sealed trait `zoom-in`

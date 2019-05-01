@@ -18,15 +18,15 @@ object rpcNs extends js.Object {
       * @param [requestDelimited=false] Whether requests are length-delimited
       * @param [responseDelimited=false] Whether responses are length-delimited
       */
-    def this(rpcImpl: protobufjsLib.RPCImpl) = this()
-    def this(rpcImpl: protobufjsLib.RPCImpl, requestDelimited: scala.Boolean) = this()
-    def this(rpcImpl: protobufjsLib.RPCImpl, requestDelimited: scala.Boolean, responseDelimited: scala.Boolean) = this()
+    def this(rpcImpl: protobufjsLib.protobufjsMod.RPCImpl) = this()
+    def this(rpcImpl: protobufjsLib.protobufjsMod.RPCImpl, requestDelimited: scala.Boolean) = this()
+    def this(rpcImpl: protobufjsLib.protobufjsMod.RPCImpl, requestDelimited: scala.Boolean, responseDelimited: scala.Boolean) = this()
     /** Whether requests are length-delimited. */
     var requestDelimited: scala.Boolean = js.native
     /** Whether responses are length-delimited. */
     var responseDelimited: scala.Boolean = js.native
     /** RPC implementation. Becomes `null` once the service is ended. */
-    var rpcImpl: protobufjsLib.RPCImpl | scala.Null = js.native
+    var rpcImpl: protobufjsLib.protobufjsMod.RPCImpl | scala.Null = js.native
     /**
       * Ends this service and emits the `end` event.
       * @param [endedByRPC=false] Whether the service has been ended by the RPC implementation.
@@ -53,7 +53,7 @@ object rpcNs extends js.Object {
       method: protobufjsLib.protobufjsMod.Method,
       requestCtor: protobufjsLib.protobufjsMod.Constructor[TReq],
       responseCtor: protobufjsLib.protobufjsMod.Constructor[TRes],
-      request: protobufjsLib.Properties[TReq],
+      request: protobufjsLib.protobufjsMod.Properties[TReq],
       callback: ServiceMethodCallback[TRes]
     ): scala.Unit = js.native
     def rpcCall[TReq /* <: protobufjsLib.protobufjsMod.Message[TReq] */, TRes /* <: protobufjsLib.protobufjsMod.Message[TRes] */](
@@ -67,7 +67,7 @@ object rpcNs extends js.Object {
       method: ServiceMethod[TReq, TRes],
       requestCtor: protobufjsLib.protobufjsMod.Constructor[TReq],
       responseCtor: protobufjsLib.protobufjsMod.Constructor[TRes],
-      request: protobufjsLib.Properties[TReq],
+      request: protobufjsLib.protobufjsMod.Properties[TReq],
       callback: ServiceMethodCallback[TRes]
     ): scala.Unit = js.native
   }
@@ -79,7 +79,7 @@ object rpcNs extends js.Object {
     * @returns Promise if `callback` has been omitted, otherwise `undefined`
     */
   type ServiceMethod[TReq /* <: protobufjsLib.protobufjsMod.Message[TReq] */, TRes /* <: protobufjsLib.protobufjsMod.Message[TRes] */] = js.Function2[
-    /* request */ TReq | protobufjsLib.Properties[TReq], 
+    /* request */ TReq | protobufjsLib.protobufjsMod.Properties[TReq], 
     /* callback */ js.UndefOr[ServiceMethodCallback[TRes]], 
     js.Promise[protobufjsLib.protobufjsMod.Message[TRes]]
   ]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_AggregateError extends js.Object {
-  var AggregateError: AggregateErrorConstructor = js.native
+  var AggregateError: pDashSomeLib.pDashSomeMod.AggregateErrorConstructor = js.native
   /**
   	Wait for a specified number of promises to be fulfilled.
   	@param values - An `Iterable` collection of promises/values to wait for. If you pass in cancelable promises, specifically promises with a `.cancel()` method, that method will be called for the promises that are still unfulfilled when the returned `Promise` is either fulfilled or rejected.

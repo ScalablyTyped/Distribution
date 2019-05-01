@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Full extends js.Object {
   var full: scala.Boolean
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
 }
 
 object Anon_Full {
   @scala.inline
   def apply(
     full: scala.Boolean,
-    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   ): Anon_Full = {
     val __obj = js.Dynamic.literal(full = full, styles = styles)
   

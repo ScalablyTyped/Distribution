@@ -34,6 +34,13 @@ class PivotTable ()
   val dataHierarchies: DataPivotHierarchyCollection = js.native
   /**
     *
+    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var enableDataValueEditing: scala.Boolean = js.native
+  /**
+    *
     * The Filter Pivot Hierarchies of the PivotTable.
     *
     * [Api set: ExcelApi 1.8]
@@ -74,6 +81,13 @@ class PivotTable ()
     * [Api set: ExcelApi 1.8]
     */
   val rowHierarchies: RowColumnPivotHierarchyCollection = js.native
+  /**
+    *
+    * Specifies whether the PivotTable uses custom lists when sorting.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var useCustomSortLists: scala.Boolean = js.native
   /**
     *
     * The worksheet containing the current PivotTable.

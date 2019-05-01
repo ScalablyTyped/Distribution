@@ -18,8 +18,8 @@ trait AccessibilityInfoStatic extends js.Object {
     *                          - success: A boolean indicating whether the announcement was successfully made.
     */
   def addEventListener(
-    eventName: reactDashNativeLib.AccessibilityEventName,
-    handler: js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit]
+    eventName: AccessibilityEventName,
+    handler: js.Function1[/* event */ AccessibilityEvent, scala.Unit]
   ): scala.Unit
   /**
     * Post a string to be announced by the screen reader.
@@ -36,8 +36,8 @@ trait AccessibilityInfoStatic extends js.Object {
     * Remove an event handler.
     */
   def removeEventListener(
-    eventName: reactDashNativeLib.AccessibilityEventName,
-    handler: js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit]
+    eventName: AccessibilityEventName,
+    handler: js.Function1[/* event */ AccessibilityEvent, scala.Unit]
   ): scala.Unit
   /**
     * Set acessibility focus to a react component.
@@ -50,10 +50,10 @@ trait AccessibilityInfoStatic extends js.Object {
 object AccessibilityInfoStatic {
   @scala.inline
   def apply(
-    addEventListener: (reactDashNativeLib.AccessibilityEventName, js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit]) => scala.Unit,
+    addEventListener: (AccessibilityEventName, js.Function1[/* event */ AccessibilityEvent, scala.Unit]) => scala.Unit,
     announceForAccessibility: java.lang.String => scala.Unit,
     fetch: () => js.Promise[scala.Boolean],
-    removeEventListener: (reactDashNativeLib.AccessibilityEventName, js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit]) => scala.Unit,
+    removeEventListener: (AccessibilityEventName, js.Function1[/* event */ AccessibilityEvent, scala.Unit]) => scala.Unit,
     setAccessibilityFocus: scala.Double => scala.Unit
   ): AccessibilityInfoStatic = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), announceForAccessibility = js.Any.fromFunction1(announceForAccessibility), fetch = js.Any.fromFunction0(fetch), removeEventListener = js.Any.fromFunction2(removeEventListener), setAccessibilityFocus = js.Any.fromFunction1(setAccessibilityFocus))

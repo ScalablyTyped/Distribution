@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ClassBody
   extends BaseNode
-     with _Node {
+     with Node {
   var body: js.Array[MethodDefinition]
   @JSName("type")
   var type_ClassBody: estreeLib.estreeLibStrings.ClassBody

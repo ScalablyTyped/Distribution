@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
   *
   * Represents the input parameter of setColumnProperties.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * [Api set: ExcelApi 1.9]
   */
 trait SettableColumnProperties extends SettableCellProperties {
   /**
     *
     * Represents the `columnHidden` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var columnHidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the `format` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
   var format_SettableColumnProperties: js.UndefOr[CellPropertiesFormat with officeDashJsDashPreviewLib.Anon_ColumnWidthNumber] = js.undefined

@@ -9,11 +9,33 @@ import scala.scalajs.js.annotation._
 trait WorksheetData extends js.Object {
   /**
     *
+    * Represents the AutoFilter object of the worksheet. Read-Only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
+  /**
+    *
     * Returns collection of charts that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   var charts: js.UndefOr[js.Array[ChartData]] = js.undefined
+  /**
+    *
+    * Gets or sets the enableCalculation property of the worksheet.
+    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var enableCalculation: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var horizontalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
   /**
     *
     * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
@@ -37,6 +59,13 @@ trait WorksheetData extends js.Object {
   var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
   /**
     *
+    * Gets the PageLayout object of the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var pageLayout: js.UndefOr[PageLayoutData] = js.undefined
+  /**
+    *
     * Collection of PivotTables that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.3]
@@ -56,6 +85,13 @@ trait WorksheetData extends js.Object {
     * [Api set: ExcelApi 1.2]
     */
   var protection: js.UndefOr[WorksheetProtectionData] = js.undefined
+  /**
+    *
+    * Returns the collection of all the Shape objects on the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
   /**
     *
     * Gets or sets the worksheet's gridlines flag.
@@ -105,6 +141,13 @@ trait WorksheetData extends js.Object {
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
   /**
     *
+    * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var verticalPageBreaks: js.UndefOr[js.Array[PageBreakData]] = js.undefined
+  /**
+    *
     * The Visibility of the worksheet.
     *
     * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
@@ -117,35 +160,47 @@ trait WorksheetData extends js.Object {
 object WorksheetData {
   @scala.inline
   def apply(
+    autoFilter: AutoFilterData = null,
     charts: js.Array[ChartData] = null,
+    enableCalculation: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalPageBreaks: js.Array[PageBreakData] = null,
     id: java.lang.String = null,
     name: java.lang.String = null,
     names: js.Array[NamedItemData] = null,
+    pageLayout: PageLayoutData = null,
     pivotTables: js.Array[PivotTableData] = null,
     position: scala.Int | scala.Double = null,
     protection: WorksheetProtectionData = null,
+    shapes: js.Array[ShapeData] = null,
     showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
     showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
     standardHeight: scala.Int | scala.Double = null,
     standardWidth: scala.Int | scala.Double = null,
     tabColor: java.lang.String = null,
     tables: js.Array[TableData] = null,
+    verticalPageBreaks: js.Array[PageBreakData] = null,
     visibility: officeDashJsLib.ExcelNs.SheetVisibility | officeDashJsLib.officeDashJsLibStrings.Visible | officeDashJsLib.officeDashJsLibStrings.Hidden | officeDashJsLib.officeDashJsLibStrings.VeryHidden = null
   ): WorksheetData = {
     val __obj = js.Dynamic.literal()
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
     if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
+    if (horizontalPageBreaks != null) __obj.updateDynamic("horizontalPageBreaks")(horizontalPageBreaks)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (names != null) __obj.updateDynamic("names")(names)
+    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout)
     if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
     if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
     if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
     if (standardHeight != null) __obj.updateDynamic("standardHeight")(standardHeight.asInstanceOf[js.Any])
     if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
     if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
     if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (verticalPageBreaks != null) __obj.updateDynamic("verticalPageBreaks")(verticalPageBreaks)
     if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetData]
   }

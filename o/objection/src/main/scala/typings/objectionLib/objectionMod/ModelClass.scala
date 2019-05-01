@@ -99,10 +99,10 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     js.Array[M], 
     /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def raw(sql: java.lang.String, bindings: (knexLib.Value | knexLib.knexMod.QueryBuilder)*): knexLib.knexMod.Raw = js.native
-  def raw(sql: java.lang.String, bindings: js.Array[knexLib.Value | knexLib.knexMod.QueryBuilder]): knexLib.knexMod.Raw = js.native
-  def raw(sql: java.lang.String, bindings: knexLib.ValueMap): knexLib.knexMod.Raw = js.native
-  def raw(value: knexLib.Value): knexLib.knexMod.Raw = js.native
+  def raw(sql: java.lang.String, bindings: (knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder)*): knexLib.knexMod.Raw = js.native
+  def raw(sql: java.lang.String, bindings: js.Array[knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder]): knexLib.knexMod.Raw = js.native
+  def raw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): knexLib.knexMod.Raw = js.native
+  def raw(value: knexLib.knexMod.Value): knexLib.knexMod.Raw = js.native
   // This can only be used as a subquery so the result model type is irrelevant.
   def relatedQuery(relationName: java.lang.String): QueryBuilder[
     _, 

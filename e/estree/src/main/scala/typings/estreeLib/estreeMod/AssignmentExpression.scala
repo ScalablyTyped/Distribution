@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssignmentExpression extends BaseNode {
+trait AssignmentExpression
+  extends BaseNode
+     with Expression {
   var left: Pattern | MemberExpression
   var operator: AssignmentOperator
-  var right: estreeLib.Expression
+  var right: Expression
   @JSName("type")
   var type_AssignmentExpression: estreeLib.estreeLibStrings.AssignmentExpression
 }
@@ -18,7 +20,7 @@ object AssignmentExpression {
   def apply(
     left: Pattern | MemberExpression,
     operator: AssignmentOperator,
-    right: estreeLib.Expression,
+    right: Expression,
     `type`: estreeLib.estreeLibStrings.AssignmentExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

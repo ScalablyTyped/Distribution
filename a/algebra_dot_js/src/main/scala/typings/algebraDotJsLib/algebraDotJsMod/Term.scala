@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Term extends js.Object {
+trait Term extends _Union {
   var coefficients: js.Array[algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction]
   var variables: js.Array[Variable]
   def coefficient(): algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction

@@ -7,49 +7,64 @@ import scala.scalajs.js.annotation._
 
 object typedarrayDashPoolLibStrings {
   @js.native
-  sealed trait arraybuffer extends DataType
+  sealed trait arraybuffer
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait buffer extends DataType
+  sealed trait buffer
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait data extends DataType
+  sealed trait data
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait dataview extends DataType
+  sealed trait dataview
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait double extends DataType
+  sealed trait double
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait float extends DataType
+  sealed trait float
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait float32 extends DataType
+  sealed trait float32
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait float64 extends DataType
+  sealed trait float64
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait int16 extends DataType
+  sealed trait int16
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait int32 extends DataType
+  sealed trait int32
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait int8 extends DataType
+  sealed trait int8
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait uint16 extends DataType
+  sealed trait uint16
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait uint32 extends DataType
+  sealed trait uint32
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait uint8 extends DataType
+  sealed trait uint8
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @js.native
-  sealed trait uint8_clamped extends DataType
+  sealed trait uint8_clamped
+    extends typedarrayDashPoolLib.typedarrayDashPoolMod.DataType
   
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]

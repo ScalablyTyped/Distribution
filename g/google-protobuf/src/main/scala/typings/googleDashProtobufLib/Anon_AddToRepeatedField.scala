@@ -72,7 +72,7 @@ trait Anon_AddToRepeatedField
     m1: googleDashProtobufLib.googleDashProtobufMod.Message,
     m2: googleDashProtobufLib.googleDashProtobufMod.Message
   ): scala.Boolean = js.native
-  def getField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double): FieldValue | scala.Null = js.native
+  def getField(msg: googleDashProtobufLib.googleDashProtobufMod.Message, fieldNumber: scala.Double): googleDashProtobufLib.googleDashProtobufMod.FieldValue | scala.Null = js.native
   def getFieldWithDefault[T](
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
@@ -155,13 +155,13 @@ trait Anon_AddToRepeatedField
   def setField(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
-    value: FieldValue
+    value: googleDashProtobufLib.googleDashProtobufMod.FieldValue
   ): scala.Unit = js.native
   def setOneofField(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,
     fieldNumber: scala.Double,
     oneof: js.Array[scala.Double],
-    value: FieldValue
+    value: googleDashProtobufLib.googleDashProtobufMod.FieldValue
   ): scala.Unit = js.native
   def setOneofWrapperField(
     msg: googleDashProtobufLib.googleDashProtobufMod.Message,

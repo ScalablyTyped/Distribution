@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ExportDefaultDeclaration
   extends BaseNode
      with ModuleDeclaration {
-  var declaration: Declaration | estreeLib.Expression
+  var declaration: Declaration | Expression
   @JSName("type")
   var type_ExportDefaultDeclaration: estreeLib.estreeLibStrings.ExportDefaultDeclaration
 }
@@ -16,7 +16,7 @@ trait ExportDefaultDeclaration
 object ExportDefaultDeclaration {
   @scala.inline
   def apply(
-    declaration: Declaration | estreeLib.Expression,
+    declaration: Declaration | Expression,
     `type`: estreeLib.estreeLibStrings.ExportDefaultDeclaration,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

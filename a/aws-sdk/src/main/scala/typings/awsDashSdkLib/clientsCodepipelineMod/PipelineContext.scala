@@ -11,6 +11,14 @@ trait PipelineContext extends js.Object {
     */
   var action: js.UndefOr[ActionContext] = js.undefined
   /**
+    * The pipeline execution ID provided to the job worker.
+    */
+  var pipelineArn: js.UndefOr[PipelineArn] = js.undefined
+  /**
+    * The pipeline Amazon Resource Name (ARN) provided to the job worker.
+    */
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
+  /**
     * The name of the pipeline. This is a user-specified value. Pipeline names must be unique across all pipeline names under an Amazon Web Services account.
     */
   var pipelineName: js.UndefOr[PipelineName] = js.undefined
@@ -22,9 +30,17 @@ trait PipelineContext extends js.Object {
 
 object PipelineContext {
   @scala.inline
-  def apply(action: ActionContext = null, pipelineName: PipelineName = null, stage: StageContext = null): PipelineContext = {
+  def apply(
+    action: ActionContext = null,
+    pipelineArn: PipelineArn = null,
+    pipelineExecutionId: PipelineExecutionId = null,
+    pipelineName: PipelineName = null,
+    stage: StageContext = null
+  ): PipelineContext = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action)
+    if (pipelineArn != null) __obj.updateDynamic("pipelineArn")(pipelineArn)
+    if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId)
     if (pipelineName != null) __obj.updateDynamic("pipelineName")(pipelineName)
     if (stage != null) __obj.updateDynamic("stage")(stage)
     __obj.asInstanceOf[PipelineContext]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-tables
 
-Typings are for version 0.1
+Typings are for version 0.7
 
 ## Library description:
 ProseMirror's rowspan/colspan tables component
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for prosemirror-tables 0.1
+// Type definitions for prosemirror-tables 0.7
 // Project: https://github.com/ProseMirror/prosemirror-tables
 // Definitions by: Oscar Wallhult <https://github.com/superchu>
 //                 Eduard Shvedai <https://github.com/eshvedai>

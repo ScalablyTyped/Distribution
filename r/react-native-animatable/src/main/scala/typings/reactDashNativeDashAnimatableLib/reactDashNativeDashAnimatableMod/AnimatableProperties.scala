@@ -12,7 +12,7 @@ trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
     reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.normal | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.reverse | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.alternate | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.`alternate-reverse`
   ] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
-  var easing: js.UndefOr[reactDashNativeDashAnimatableLib.Easing] = js.undefined
+  var easing: js.UndefOr[Easing] = js.undefined
   var iterationCount: js.UndefOr[
     scala.Double | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.infinite
   ] = js.undefined
@@ -32,7 +32,7 @@ object AnimatableProperties {
     delay: scala.Int | scala.Double = null,
     direction: reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.normal | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.reverse | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.alternate | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.`alternate-reverse` = null,
     duration: scala.Int | scala.Double = null,
-    easing: reactDashNativeDashAnimatableLib.Easing = null,
+    easing: Easing = null,
     iterationCount: scala.Double | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.infinite = null,
     iterationDelay: scala.Int | scala.Double = null,
     onAnimationBegin: js.Function = null,

@@ -14,17 +14,17 @@ object FontProps {
   def apply(
     font: FontObject = null,
     fontFamily: java.lang.String = null,
-    fontSize: reactDashNativeDashSvgLib.NumberProp = null,
+    fontSize: NumberProp = null,
     fontStretch: FontStretch = null,
     fontStyle: FontStyle = null,
     fontVariant: FontVariant = null,
     fontVariantLigatures: FontVariantLigatures = null,
     fontWeight: FontWeight = null,
-    kerning: reactDashNativeDashSvgLib.NumberProp = null,
-    letterSpacing: reactDashNativeDashSvgLib.NumberProp = null,
+    kerning: NumberProp = null,
+    letterSpacing: NumberProp = null,
     textAnchor: TextAnchor = null,
     textDecoration: TextDecoration = null,
-    wordSpacing: reactDashNativeDashSvgLib.NumberProp = null
+    wordSpacing: NumberProp = null
   ): FontProps = {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font)

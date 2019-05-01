@@ -18,8 +18,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
   /**
@@ -34,8 +33,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * For EACH ITEM in the collection: Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var enableCalculation: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -56,8 +54,7 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Gets the PageLayout object of the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.undefined
   /**

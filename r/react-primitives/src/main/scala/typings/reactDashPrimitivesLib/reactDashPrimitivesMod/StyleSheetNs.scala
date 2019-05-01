@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-primitives", "StyleSheet")
 @js.native
 object StyleSheetNs extends js.Object {
-  val absoluteFill: reactDashNativeLib.RegisteredStyle[reactDashNativeLib.reactDashNativeMod.StyleSheetNs.AbsoluteFillStyle] = js.native
+  val absoluteFill: reactDashNativeLib.reactDashNativeMod.RegisteredStyle[reactDashNativeLib.reactDashNativeMod.StyleSheetNs.AbsoluteFillStyle] = js.native
   val absoluteFillObject: reactDashNativeLib.reactDashNativeMod.StyleSheetNs.AbsoluteFillStyle = js.native
   val hairlineWidth: scala.Double = js.native
   def create[T /* <: reactDashNativeLib.reactDashNativeMod.StyleSheetNs.NamedStyles[T] | reactDashNativeLib.reactDashNativeMod.StyleSheetNs.NamedStyles[_] */](styles: T): T = js.native
@@ -16,7 +16,7 @@ object StyleSheetNs extends js.Object {
   def flatten(
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle]
   ): reactDashNativeLib.reactDashNativeMod.ImageStyle = js.native
-  def flatten[T](style: reactDashNativeLib.RegisteredStyle[T]): T = js.native
+  def flatten[T](style: reactDashNativeLib.reactDashNativeMod.RegisteredStyle[T]): T = js.native
   @JSName("flatten")
   def flatten_TT[T](): T = js.native
   @JSName("flatten")

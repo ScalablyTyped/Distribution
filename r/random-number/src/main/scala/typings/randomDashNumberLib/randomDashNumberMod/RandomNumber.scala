@@ -11,7 +11,7 @@ trait RandomNumber extends js.Object {
   def apply(options: UnparsedOptions): scala.Double = js.native
   def defaults(): Options = js.native
   def defaults(options: UnparsedOptions): Options = js.native
-  def generator(): randomDashNumberLib.Generator = js.native
-  def generator(options: UnparsedOptions): randomDashNumberLib.Generator = js.native
+  def generator(): Generator = js.native
+  def generator(options: UnparsedOptions): Generator = js.native
 }
 

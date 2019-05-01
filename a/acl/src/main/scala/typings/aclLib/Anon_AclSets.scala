@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_AclSets extends js.Object {
   def apply(aclSets: aclLib.aclMod.AclSet): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def apply(aclSets: js.Array[aclLib.aclMod.AclSet]): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
-  def apply(roles: Values, resources: strings, permissions: strings): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
-  def apply(roles: Values, resources: strings, permissions: strings, cb: Callback): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def apply(roles: aclLib.aclMod.Values, resources: aclLib.aclMod.strings, permissions: aclLib.aclMod.strings): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def apply(
+    roles: aclLib.aclMod.Values,
+    resources: aclLib.aclMod.strings,
+    permissions: aclLib.aclMod.strings,
+    cb: aclLib.aclMod.Callback
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
 }
 

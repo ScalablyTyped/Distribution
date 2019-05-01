@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object radix64LibStrings {
   @js.native
-  sealed trait base64 extends MethodsString
+  sealed trait base64
+    extends radix64Lib.radix64Mod.MethodsString
   
   @js.native
-  sealed trait base64URL extends MethodsString
+  sealed trait base64URL
+    extends radix64Lib.radix64Mod.MethodsString
   
   @js.native
-  sealed trait base64URLASCIISort extends MethodsString
+  sealed trait base64URLASCIISort
+    extends radix64Lib.radix64Mod.MethodsString
   
   @js.native
-  sealed trait base64URLNaturalSort extends MethodsString
+  sealed trait base64URLNaturalSort
+    extends radix64Lib.radix64Mod.MethodsString
   
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]

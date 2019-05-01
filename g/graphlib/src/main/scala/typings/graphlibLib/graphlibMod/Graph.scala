@@ -16,6 +16,7 @@ class Graph () extends js.Object {
   		 * @argument v - node to get children of.
   		 * @returns children nodes names list.
   		 */
+  def children(): js.Array[java.lang.String] = js.native
   def children(v: java.lang.String): js.Array[java.lang.String] = js.native
   /**
   		 * Gets the label for the specified edge.

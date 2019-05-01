@@ -176,6 +176,7 @@ object VictoryPieProps {
     ] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,
     height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     innerRadius: scala.Int | scala.Double = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labelRadius: scala.Int | scala.Double = null,
@@ -205,6 +206,7 @@ object VictoryPieProps {
     if (events != null) __obj.updateDynamic("events")(events)
     if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
     if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
     if (labelRadius != null) __obj.updateDynamic("labelRadius")(labelRadius.asInstanceOf[js.Any])

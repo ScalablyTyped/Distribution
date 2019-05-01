@@ -39,7 +39,7 @@ object reactDashNativeDashElementsLibComponents {
   @scala.inline
   def Rating: reactLib.reactMod.ComponentType[reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps] = js.constructorOf[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.Rating].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps]]
   @scala.inline
-  def SearchBar: reactLib.reactMod.ComponentType[SearchBarProps] = js.constructorOf[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SearchBar].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashElementsLib.SearchBarProps]]
+  def SearchBar: reactLib.reactMod.ComponentType[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SearchBarProps] = js.constructorOf[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SearchBar].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SearchBarProps]]
   @scala.inline
   def Slider: reactLib.reactMod.ComponentType[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps] = js.constructorOf[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.Slider].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps]]
   @scala.inline
@@ -106,7 +106,7 @@ object reactDashNativeDashElementsLibComponents {
   @scala.inline
   def RatingProps: reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps.type = reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps
   type RatingProps = reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.RatingProps
-  type SearchBarProps = reactDashNativeDashElementsLib.SearchBarProps
+  type SearchBarProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SearchBarProps
   @scala.inline
   def SliderProps: reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps.type = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps
   type SliderProps = reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SliderProps

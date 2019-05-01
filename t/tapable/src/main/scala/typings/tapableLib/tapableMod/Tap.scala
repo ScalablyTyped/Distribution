@@ -10,7 +10,7 @@ trait Tap extends js.Object {
   var fn: js.Function
   var name: java.lang.String
   var stage: scala.Double
-  var `type`: tapableLib.TapType
+  var `type`: TapType
 }
 
 object Tap {
@@ -20,7 +20,7 @@ object Tap {
     fn: js.Function,
     name: java.lang.String,
     stage: scala.Double,
-    `type`: tapableLib.TapType
+    `type`: TapType
   ): Tap = {
     val __obj = js.Dynamic.literal(context = context, fn = fn, name = name, stage = stage)
     __obj.updateDynamic("type")(`type`)

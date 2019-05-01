@@ -13,8 +13,8 @@ trait Formatter extends js.Object {
   def apply(block: java.lang.String, mods: Mods): java.lang.String = js.native
   def B(options: Options): Formatter = js.native
   def lock(block: java.lang.String): BlockFormatter = js.native
-  def lock(block: java.lang.String, elem: java.lang.String): bUnderscoreLib.ElemFormatter = js.native
+  def lock(block: java.lang.String, elem: java.lang.String): ElemFormatter = js.native
   def `with`(block: java.lang.String): BlockFormatter = js.native
-  def `with`(block: java.lang.String, elem: java.lang.String): bUnderscoreLib.ElemFormatter = js.native
+  def `with`(block: java.lang.String, elem: java.lang.String): ElemFormatter = js.native
 }
 

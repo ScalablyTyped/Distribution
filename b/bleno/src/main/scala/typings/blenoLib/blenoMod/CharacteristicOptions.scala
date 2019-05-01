@@ -29,8 +29,8 @@ trait CharacteristicOptions extends js.Object {
       scala.Unit
     ]) | scala.Null
   ] = js.undefined
-  var properties: js.UndefOr[js.Array[blenoLib.Property] | scala.Null] = js.undefined
-  var secure: js.UndefOr[js.Array[blenoLib.Property] | scala.Null] = js.undefined
+  var properties: js.UndefOr[js.Array[Property] | scala.Null] = js.undefined
+  var secure: js.UndefOr[js.Array[Property] | scala.Null] = js.undefined
   var uuid: java.lang.String
   var value: js.UndefOr[nodeLib.Buffer | scala.Null] = js.undefined
 }
@@ -46,8 +46,8 @@ object CharacteristicOptions {
     onSubscribe: (/* maxValueSize */ scala.Double, /* updateValueCallback */ js.Any) => scala.Unit = null,
     onUnsubscribe: () => scala.Unit = null,
     onWriteRequest: (/* data */ nodeLib.Buffer, /* offset */ scala.Double, /* withoutResponse */ scala.Boolean, /* callback */ js.Function1[/* result */ scala.Double, scala.Unit]) => scala.Unit = null,
-    properties: js.Array[blenoLib.Property] = null,
-    secure: js.Array[blenoLib.Property] = null,
+    properties: js.Array[Property] = null,
+    secure: js.Array[Property] = null,
     value: nodeLib.Buffer = null
   ): CharacteristicOptions = {
     val __obj = js.Dynamic.literal(uuid = uuid)

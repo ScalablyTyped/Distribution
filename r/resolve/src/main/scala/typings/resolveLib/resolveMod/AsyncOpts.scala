@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait AsyncOpts extends Opts {
   /** function to asynchronously test whether a file exists */
-  var isFile: js.UndefOr[
-    js.Function2[/* file */ java.lang.String, /* cb */ resolveLib.isFileCallback, scala.Unit]
-  ] = js.undefined
+  var isFile: js.UndefOr[js.Function2[/* file */ java.lang.String, /* cb */ isFileCallback, scala.Unit]] = js.undefined
   /** how to read files asynchronously (defaults to fs.readFile) */
-  var readFile: js.UndefOr[
-    js.Function2[/* file */ java.lang.String, /* cb */ resolveLib.readFileCallback, scala.Unit]
-  ] = js.undefined
+  var readFile: js.UndefOr[js.Function2[/* file */ java.lang.String, /* cb */ readFileCallback, scala.Unit]] = js.undefined
 }
 
 object AsyncOpts {
@@ -21,14 +17,14 @@ object AsyncOpts {
   def apply(
     basedir: java.lang.String = null,
     extensions: java.lang.String | js.Array[java.lang.String] = null,
-    isFile: (/* file */ java.lang.String, /* cb */ resolveLib.isFileCallback) => scala.Unit = null,
+    isFile: (/* file */ java.lang.String, /* cb */ isFileCallback) => scala.Unit = null,
     moduleDirectory: java.lang.String | js.Array[java.lang.String] = null,
     `package`: js.Any = null,
     packageFilter: (/* pkg */ js.Any, /* pkgfile */ java.lang.String) => _ = null,
     pathFilter: (/* pkg */ js.Any, /* path */ java.lang.String, /* relativePath */ java.lang.String) => java.lang.String = null,
     paths: java.lang.String | js.Array[java.lang.String] = null,
     preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
-    readFile: (/* file */ java.lang.String, /* cb */ resolveLib.readFileCallback) => scala.Unit = null
+    readFile: (/* file */ java.lang.String, /* cb */ readFileCallback) => scala.Unit = null
   ): AsyncOpts = {
     val __obj = js.Dynamic.literal()
     if (basedir != null) __obj.updateDynamic("basedir")(basedir)

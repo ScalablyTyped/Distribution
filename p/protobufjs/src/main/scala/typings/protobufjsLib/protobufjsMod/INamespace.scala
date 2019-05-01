@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait INamespace extends js.Object {
+trait INamespace extends AnyNestedObject {
   /** Nested object descriptors */
-  var nested: js.UndefOr[org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]] = js.undefined
+  var nested: js.UndefOr[org.scalablytyped.runtime.StringDictionary[AnyNestedObject]] = js.undefined
   /** Namespace options */
   var options: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
@@ -15,7 +15,7 @@ trait INamespace extends js.Object {
 object INamespace {
   @scala.inline
   def apply(
-    nested: org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject] = null,
+    nested: org.scalablytyped.runtime.StringDictionary[AnyNestedObject] = null,
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): INamespace = {
     val __obj = js.Dynamic.literal()

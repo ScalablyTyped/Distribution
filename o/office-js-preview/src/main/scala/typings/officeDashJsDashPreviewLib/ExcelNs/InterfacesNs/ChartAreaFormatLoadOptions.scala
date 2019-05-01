@@ -25,8 +25,7 @@ trait ChartAreaFormatLoadOptions extends js.Object {
     *
     * Returns or sets an integer that represents the color scheme for the chart. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var colorScheme: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -40,8 +39,7 @@ trait ChartAreaFormatLoadOptions extends js.Object {
     *
     * True if the chart area of the chart has rounded corners. Read/Write.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var roundedCorners: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MemFsEditor extends js.Object {
-  def commit(callback: yeomanDashGeneratorLib.Callback): scala.Unit = js.native
-  def commit(filters: js.Array[_], callback: yeomanDashGeneratorLib.Callback): scala.Unit = js.native
+  def commit(callback: Callback): scala.Unit = js.native
+  def commit(filters: js.Array[_], callback: Callback): scala.Unit = js.native
   def copy(from: java.lang.String, to: java.lang.String): scala.Unit = js.native
   def copy(from: java.lang.String, to: java.lang.String, options: js.Object): scala.Unit = js.native
   def copy(from: java.lang.String, to: java.lang.String, options: js.Object, context: js.Object): scala.Unit = js.native

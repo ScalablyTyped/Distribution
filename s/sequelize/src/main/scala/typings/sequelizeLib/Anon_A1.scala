@@ -11,7 +11,7 @@ trait Anon_A1
       /* callback */ js.Function3[
         /* resolve */ js.Function1[
           /* thenableOrResult */ js.UndefOr[
-            bluebirdLib.Resolvable[/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any]
+            bluebirdLib.bluebirdMod.Resolvable[/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any]
           ], 
           scala.Unit
         ], 
@@ -61,18 +61,22 @@ trait Anon_A1
     */
   var version: java.lang.String = js.native
   // array with values
-  def all[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
-  def all[T1](values: js.Array[bluebirdLib.Resolvable[T1]]): bluebirdLib.bluebirdMod.Bluebird[js.Array[T1]] = js.native
-  def all[T1, T2](values: js.Tuple2[bluebirdLib.Resolvable[T1], bluebirdLib.Resolvable[T2]]): bluebirdLib.bluebirdMod.Bluebird[js.Tuple2[T1, T2]] = js.native
+  def all[R](values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
+  def all[T1](values: js.Array[bluebirdLib.bluebirdMod.Resolvable[T1]]): bluebirdLib.bluebirdMod.Bluebird[js.Array[T1]] = js.native
+  def all[T1, T2](values: js.Tuple2[bluebirdLib.bluebirdMod.Resolvable[T1], bluebirdLib.bluebirdMod.Resolvable[T2]]): bluebirdLib.bluebirdMod.Bluebird[js.Tuple2[T1, T2]] = js.native
   def all[T1, T2, T3](
-    values: js.Tuple3[bluebirdLib.Resolvable[T1], bluebirdLib.Resolvable[T2], bluebirdLib.Resolvable[T3]]
+    values: js.Tuple3[
+      bluebirdLib.bluebirdMod.Resolvable[T1], 
+      bluebirdLib.bluebirdMod.Resolvable[T2], 
+      bluebirdLib.bluebirdMod.Resolvable[T3]
+    ]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Tuple3[T1, T2, T3]] = js.native
   def all[T1, T2, T3, T4](
     values: js.Tuple4[
-      bluebirdLib.Resolvable[T1], 
-      bluebirdLib.Resolvable[T2], 
-      bluebirdLib.Resolvable[T3], 
-      bluebirdLib.Resolvable[T4]
+      bluebirdLib.bluebirdMod.Resolvable[T1], 
+      bluebirdLib.bluebirdMod.Resolvable[T2], 
+      bluebirdLib.bluebirdMod.Resolvable[T3], 
+      bluebirdLib.bluebirdMod.Resolvable[T4]
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Tuple4[T1, T2, T3, T4]] = js.native
   /**
@@ -84,19 +88,19 @@ trait Anon_A1
   // array with promises of different types
   def all[T1, T2, T3, T4, T5](
     values: js.Tuple5[
-      bluebirdLib.Resolvable[T1], 
-      bluebirdLib.Resolvable[T2], 
-      bluebirdLib.Resolvable[T3], 
-      bluebirdLib.Resolvable[T4], 
-      bluebirdLib.Resolvable[T5]
+      bluebirdLib.bluebirdMod.Resolvable[T1], 
+      bluebirdLib.bluebirdMod.Resolvable[T2], 
+      bluebirdLib.bluebirdMod.Resolvable[T3], 
+      bluebirdLib.bluebirdMod.Resolvable[T4], 
+      bluebirdLib.bluebirdMod.Resolvable[T5]
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
    // tslint:disable-line:unified-signatures
   /**
     * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
     */
-  def any[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
-  def attempt[R](fn: js.Function0[bluebirdLib.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def any[R](values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def attempt[R](fn: js.Function0[bluebirdLib.bluebirdMod.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
     * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
     */
@@ -108,7 +112,7 @@ trait Anon_A1
     * If `value` is already a trusted `Promise`, it is returned as is. If `value` is not a thenable, a fulfilled is: Promise returned with `value` as its fulfillment value.
     * If `value` is a thenable (Promise-like object, like those returned by jQuery's `$.ajax`), returns a trusted that: Promise assimilates the state of the thenable.
     */
-  def cast[R](value: bluebirdLib.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def cast[R](value: bluebirdLib.bluebirdMod.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
     * Configure long stack traces, warnings, monitoring and cancellation.
     * Note that even though false is the default here, a development environment might be detected which automatically
@@ -326,7 +330,7 @@ trait Anon_A1
     * If value is a promise, the delay will start counting down when it is fulfilled and the returned
     *  promise will be fulfilled with the fulfillment value of the value promise.
     */
-  def delay[R](ms: scala.Double, value: bluebirdLib.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def delay[R](ms: scala.Double, value: bluebirdLib.bluebirdMod.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
     * Iterate over an array, or a promise of an array,
     * which contains promises (or a mix of promises and values) with the given iterator function with the signature `(item, index, value)`
@@ -337,8 +341,8 @@ trait Anon_A1
     * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
     */
   def each[R](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
-    iterator: bluebirdLib.IterateFunction[R, _]
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    iterator: bluebirdLib.bluebirdMod.IterateFunction[R, _]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
     * Filter an array, or a promise of an array,
@@ -351,12 +355,12 @@ trait Anon_A1
     * *The original array is not modified.
     */
   def filter[R](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
-    filterer: bluebirdLib.IterateFunction[R, scala.Boolean]
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    filterer: bluebirdLib.bluebirdMod.IterateFunction[R, scala.Boolean]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   def filter[R](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
-    filterer: bluebirdLib.IterateFunction[R, scala.Boolean],
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    filterer: bluebirdLib.bluebirdMod.IterateFunction[R, scala.Boolean],
     option: bluebirdLib.bluebirdMod.ConcurrencyOption
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   def fromCallback[T](
@@ -400,7 +404,7 @@ trait Anon_A1
   def is(value: js.Any): scala.Boolean = js.native
   // variadic array
   /** @deprecated use .all instead */
-  def join[R](values: bluebirdLib.Resolvable[R]*): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
+  def join[R](values: bluebirdLib.bluebirdMod.Resolvable[R]*): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
     * Promise.join(
     *   Promise<any>|any values...,
@@ -411,38 +415,47 @@ trait Anon_A1
     * Note: In 1.x and 0.x Promise.join used to be a Promise.all that took the values in as arguments instead in an array.
     * This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
     */
-  def join[R, A1](arg1: bluebirdLib.Resolvable[A1], handler: js.Function1[/* arg1 */ A1, bluebirdLib.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def join[R, A1](
+    arg1: bluebirdLib.bluebirdMod.Resolvable[A1],
+    handler: js.Function1[/* arg1 */ A1, bluebirdLib.bluebirdMod.Resolvable[R]]
+  ): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   def join[R, A1, A2](
-    arg1: bluebirdLib.Resolvable[A1],
-    arg2: bluebirdLib.Resolvable[A2],
-    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.Resolvable[R]]
+    arg1: bluebirdLib.bluebirdMod.Resolvable[A1],
+    arg2: bluebirdLib.bluebirdMod.Resolvable[A2],
+    handler: js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.bluebirdMod.Resolvable[R]]
   ): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3](
-    arg1: bluebirdLib.Resolvable[A1],
-    arg2: bluebirdLib.Resolvable[A2],
-    arg3: bluebirdLib.Resolvable[A3],
-    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.Resolvable[R]]
+    arg1: bluebirdLib.bluebirdMod.Resolvable[A1],
+    arg2: bluebirdLib.bluebirdMod.Resolvable[A2],
+    arg3: bluebirdLib.bluebirdMod.Resolvable[A3],
+    handler: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.bluebirdMod.Resolvable[R]]
   ): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4](
-    arg1: bluebirdLib.Resolvable[A1],
-    arg2: bluebirdLib.Resolvable[A2],
-    arg3: bluebirdLib.Resolvable[A3],
-    arg4: bluebirdLib.Resolvable[A4],
-    handler: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, bluebirdLib.Resolvable[R]]
+    arg1: bluebirdLib.bluebirdMod.Resolvable[A1],
+    arg2: bluebirdLib.bluebirdMod.Resolvable[A2],
+    arg3: bluebirdLib.bluebirdMod.Resolvable[A3],
+    arg4: bluebirdLib.bluebirdMod.Resolvable[A4],
+    handler: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      bluebirdLib.bluebirdMod.Resolvable[R]
+    ]
   ): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   def join[R, A1, A2, A3, A4, A5](
-    arg1: bluebirdLib.Resolvable[A1],
-    arg2: bluebirdLib.Resolvable[A2],
-    arg3: bluebirdLib.Resolvable[A3],
-    arg4: bluebirdLib.Resolvable[A4],
-    arg5: bluebirdLib.Resolvable[A5],
+    arg1: bluebirdLib.bluebirdMod.Resolvable[A1],
+    arg2: bluebirdLib.bluebirdMod.Resolvable[A2],
+    arg3: bluebirdLib.bluebirdMod.Resolvable[A3],
+    arg4: bluebirdLib.bluebirdMod.Resolvable[A4],
+    arg5: bluebirdLib.bluebirdMod.Resolvable[A5],
     handler: js.Function5[
       /* arg1 */ A1, 
       /* arg2 */ A2, 
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      bluebirdLib.Resolvable[R]
+      bluebirdLib.bluebirdMod.Resolvable[R]
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
@@ -463,12 +476,12 @@ trait Anon_A1
     * *The original array is not modified.*
     */
   def map[R, U](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
-    mapper: bluebirdLib.IterateFunction[R, U]
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    mapper: bluebirdLib.bluebirdMod.IterateFunction[R, U]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
   def map[R, U](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
-    mapper: bluebirdLib.IterateFunction[R, U],
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    mapper: bluebirdLib.bluebirdMod.IterateFunction[R, U],
     options: bluebirdLib.bluebirdMod.ConcurrencyOption
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
   /**
@@ -482,20 +495,28 @@ trait Anon_A1
     * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
     */
   def mapSeries[R, U](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
-    iterator: bluebirdLib.IterateFunction[R, U]
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    iterator: bluebirdLib.bluebirdMod.IterateFunction[R, U]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
   /**
     * Returns a new function that wraps the given function `fn`.
     * The new function will always return a promise that is fulfilled with the original functions return values or rejected with thrown exceptions from the original function.
     * This method is convenient when a function can sometimes return synchronously or throw synchronously.
     */
-  def method[R](fn: js.Function0[bluebirdLib.Resolvable[R]]): js.Function0[bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
-  def method[R](fn: js.Function1[/* repeated */ js.Any, bluebirdLib.Resolvable[R]]): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
-  def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.Resolvable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
-  def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.Resolvable[R]]): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
+  def method[R](fn: js.Function0[bluebirdLib.bluebirdMod.Resolvable[R]]): js.Function0[bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
+  def method[R](fn: js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Resolvable[R]]): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
+  def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.bluebirdMod.Resolvable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
+  def method[R, A1, A2, A3](
+    fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.bluebirdMod.Resolvable[R]]
+  ): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
   def method[R, A1, A2, A3, A4](
-    fn: js.Function4[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, /* arg4 */ A4, bluebirdLib.Resolvable[R]]
+    fn: js.Function4[
+      /* arg1 */ A1, 
+      /* arg2 */ A2, 
+      /* arg3 */ A3, 
+      /* arg4 */ A4, 
+      bluebirdLib.bluebirdMod.Resolvable[R]
+    ]
   ): js.Function4[
     /* arg1 */ A1, 
     /* arg2 */ A2, 
@@ -510,7 +531,7 @@ trait Anon_A1
       /* arg3 */ A3, 
       /* arg4 */ A4, 
       /* arg5 */ A5, 
-      bluebirdLib.Resolvable[R]
+      bluebirdLib.bluebirdMod.Resolvable[R]
     ]
   ): js.Function5[
     /* arg1 */ A1, 
@@ -521,7 +542,7 @@ trait Anon_A1
     bluebirdLib.bluebirdMod.Bluebird[R]
   ] = js.native
   @JSName("method")
-  def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, bluebirdLib.Resolvable[R]]): js.Function1[/* arg1 */ A1, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
+  def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, bluebirdLib.bluebirdMod.Resolvable[R]]): js.Function1[/* arg1 */ A1, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
   /**
     * This is relevant to browser environments with no module loader.
     *
@@ -731,14 +752,14 @@ trait Anon_A1
     * *The original object is not modified.*
     */
   // map
-  def props[K, V](map: bluebirdLib.Resolvable[stdLib.Map[K, bluebirdLib.Resolvable[V]]]): bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[K, V]] = js.native
+  def props[K, V](map: bluebirdLib.bluebirdMod.Resolvable[stdLib.Map[K, bluebirdLib.bluebirdMod.Resolvable[V]]]): bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[K, V]] = js.native
   /**
     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
     * fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
     *
     * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
     */
-  def race[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def race[R](values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
     * Reduce an array, or a promise of an array,
     * which contains a promises (or a mix of promises and values) with the given `reducer` function with the signature `(total, current, index, arrayLength)`
@@ -753,23 +774,23 @@ trait Anon_A1
     * If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
     */
   def reduce[R, U](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      bluebirdLib.Resolvable[U]
+      bluebirdLib.bluebirdMod.Resolvable[U]
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
   def reduce[R, U](
-    values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
     reducer: js.Function4[
       /* total */ U, 
       /* current */ R, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
-      bluebirdLib.Resolvable[U]
+      bluebirdLib.bluebirdMod.Resolvable[U]
     ],
     initialValue: U
   ): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
@@ -781,7 +802,7 @@ trait Anon_A1
     * Create a promise that is resolved with the given `value`. If `value` is a thenable or promise, the returned promise will assume its state.
     */
   def resolve(): bluebirdLib.bluebirdMod.Bluebird[scala.Unit] = js.native
-  def resolve[R](value: bluebirdLib.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def resolve[R](value: bluebirdLib.bluebirdMod.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
     * Changes how bluebird schedules calls a-synchronously.
     *
@@ -801,7 +822,10 @@ trait Anon_A1
     *
     * *The original array is not modified.*
     */
-  def some[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]], count: scala.Double): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
+  def some[R](
+    values: bluebirdLib.bluebirdMod.Resolvable[stdLib.Iterable[bluebirdLib.bluebirdMod.Resolvable[R]]],
+    count: scala.Double
+  ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
     * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
     *
@@ -810,7 +834,7 @@ trait Anon_A1
     *
     * Alias for `attempt();` for compatibility with earlier ECMAScript version.
     */
-  def `try`[R](fn: js.Function0[bluebirdLib.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
+  def `try`[R](fn: js.Function0[bluebirdLib.bluebirdMod.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
     * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
     *  will be called when the promise returned by the callback passed to using has settled. The disposer is

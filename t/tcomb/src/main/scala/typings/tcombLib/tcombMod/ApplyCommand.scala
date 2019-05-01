@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ApplyCommand extends js.Object {
+trait ApplyCommand extends Command {
   @JSName("$apply")
   var $apply: js.Function
 }

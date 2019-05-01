@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginMinifyStyles extends js.Object {
+trait PluginMinifyStyles extends PluginConfig {
   var minifyStyles: scala.Boolean | js.Object
 }
 

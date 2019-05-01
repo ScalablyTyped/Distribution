@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PolylineProps extends CommonPathProps {
-  var opacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var points: java.lang.String | js.Array[reactDashNativeDashSvgLib.NumberProp]
+  var opacity: js.UndefOr[NumberProp] = js.undefined
+  var points: java.lang.String | js.Array[NumberProp]
 }
 
 object PolylineProps {
   @scala.inline
   def apply(
-    points: java.lang.String | js.Array[reactDashNativeDashSvgLib.NumberProp],
+    points: java.lang.String | js.Array[NumberProp],
     clipPath: java.lang.String = null,
     clipRule: FillRule = null,
     delayLongPress: scala.Int | scala.Double = null,
@@ -21,7 +21,7 @@ object PolylineProps {
     delayPressOut: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fill: reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String = null,
-    fillOpacity: reactDashNativeDashSvgLib.NumberProp = null,
+    fillOpacity: NumberProp = null,
     fillRule: FillRule = null,
     id: java.lang.String = null,
     mask: java.lang.String = null,
@@ -41,34 +41,34 @@ object PolylineProps {
     onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
-    opacity: reactDashNativeDashSvgLib.NumberProp = null,
-    origin: reactDashNativeDashSvgLib.NumberProp = null,
-    originX: reactDashNativeDashSvgLib.NumberProp = null,
-    originY: reactDashNativeDashSvgLib.NumberProp = null,
+    opacity: NumberProp = null,
+    origin: NumberProp = null,
+    originX: NumberProp = null,
+    originY: NumberProp = null,
     pointerEvents: reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`box-none` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.none | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`box-only` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.auto = null,
-    rotate: reactDashNativeDashSvgLib.NumberProp = null,
-    rotation: reactDashNativeDashSvgLib.NumberProp = null,
-    scale: reactDashNativeDashSvgLib.NumberProp = null,
-    scaleX: reactDashNativeDashSvgLib.NumberProp = null,
-    scaleY: reactDashNativeDashSvgLib.NumberProp = null,
-    skew: reactDashNativeDashSvgLib.NumberProp = null,
-    skewX: reactDashNativeDashSvgLib.NumberProp = null,
-    skewY: reactDashNativeDashSvgLib.NumberProp = null,
+    rotate: NumberProp = null,
+    rotation: NumberProp = null,
+    scale: NumberProp = null,
+    scaleX: NumberProp = null,
+    scaleY: NumberProp = null,
+    skew: NumberProp = null,
+    skewX: NumberProp = null,
+    skewY: NumberProp = null,
     stroke: reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String = null,
-    strokeDasharray: js.Array[reactDashNativeDashSvgLib.NumberProp] | reactDashNativeDashSvgLib.NumberProp = null,
-    strokeDashoffset: reactDashNativeDashSvgLib.NumberProp = null,
+    strokeDasharray: js.Array[NumberProp] | NumberProp = null,
+    strokeDashoffset: NumberProp = null,
     strokeLinecap: Linecap = null,
     strokeLinejoin: Linejoin = null,
-    strokeMiterlimit: reactDashNativeDashSvgLib.NumberProp = null,
-    strokeOpacity: reactDashNativeDashSvgLib.NumberProp = null,
-    strokeWidth: reactDashNativeDashSvgLib.NumberProp = null,
+    strokeMiterlimit: NumberProp = null,
+    strokeOpacity: NumberProp = null,
+    strokeWidth: NumberProp = null,
     transform: reactDashNativeDashSvgLib.ColumnMajorTransformMatrix | java.lang.String | TransformObject = null,
-    translate: reactDashNativeDashSvgLib.NumberProp = null,
-    translateX: reactDashNativeDashSvgLib.NumberProp = null,
-    translateY: reactDashNativeDashSvgLib.NumberProp = null,
+    translate: NumberProp = null,
+    translateX: NumberProp = null,
+    translateY: NumberProp = null,
     vectorEffect: reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.none | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`non-scaling-stroke` | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.nonScalingStroke | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.default | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.inherit | reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.uri = null,
-    x: reactDashNativeDashSvgLib.NumberProp = null,
-    y: reactDashNativeDashSvgLib.NumberProp = null
+    x: NumberProp = null,
+    y: NumberProp = null
   ): PolylineProps = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)

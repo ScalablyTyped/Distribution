@@ -25,12 +25,12 @@ trait TabEvents extends CompositeEvents {
     * Fired when the [*image*](#image) property has changed.
     * @param value The new value of [*image*](#image).
     */
-  var imageChanged: js.UndefOr[js.Function1[/* event */ PropertyChangedEvent[Tab, tabrisLib.Image], scala.Unit]] = js.undefined
+  var imageChanged: js.UndefOr[js.Function1[/* event */ PropertyChangedEvent[Tab, Image], scala.Unit]] = js.undefined
   /**
     * Fired when the [*selectedImage*](#selectedImage) property has changed.
     * @param value The new value of [*selectedImage*](#selectedImage).
     */
-  var selectedImageChanged: js.UndefOr[js.Function1[/* event */ PropertyChangedEvent[Tab, tabrisLib.Image], scala.Unit]] = js.undefined
+  var selectedImageChanged: js.UndefOr[js.Function1[/* event */ PropertyChangedEvent[Tab, Image], scala.Unit]] = js.undefined
   /**
     * Fired when the [*title*](#title) property has changed.
     * @param value The new value of [*title*](#title).
@@ -46,9 +46,9 @@ object TabEvents {
     addChild: /* event */ CompositeAddChildEvent => scala.Unit = null,
     appear: /* event */ EventObject[Tab] => scala.Unit = null,
     backgroundChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.Color] => scala.Unit = null,
-    backgroundImageChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.Image] => scala.Unit = null,
+    backgroundImageChanged: /* event */ PropertyChangedEvent[Widget, Image] => scala.Unit = null,
     badgeChanged: /* event */ PropertyChangedEvent[Tab, java.lang.String] => scala.Unit = null,
-    baselineChanged: /* event */ PropertyChangedEvent[Widget, Widget | tabrisLib.Selector] => scala.Unit = null,
+    baselineChanged: /* event */ PropertyChangedEvent[Widget, Widget | Selector] => scala.Unit = null,
     bottomChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.margin] => scala.Unit = null,
     boundsChanged: /* event */ PropertyChangedEvent[Widget, Bounds] => scala.Unit = null,
     centerXChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.offset] => scala.Unit = null,
@@ -65,7 +65,7 @@ object TabEvents {
     heightChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.dimension] => scala.Unit = null,
     highlightOnTouchChanged: /* event */ PropertyChangedEvent[Widget, scala.Boolean] => scala.Unit = null,
     idChanged: /* event */ PropertyChangedEvent[Widget, java.lang.String] => scala.Unit = null,
-    imageChanged: /* event */ PropertyChangedEvent[Tab, tabrisLib.Image] => scala.Unit = null,
+    imageChanged: /* event */ PropertyChangedEvent[Tab, Image] => scala.Unit = null,
     layoutDataChanged: /* event */ PropertyChangedEvent[Widget, LayoutData] => scala.Unit = null,
     leftChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.margin] => scala.Unit = null,
     longpress: /* event */ WidgetLongpressEvent => scala.Unit = null,
@@ -81,7 +81,7 @@ object TabEvents {
     removeChild: /* event */ CompositeRemoveChildEvent => scala.Unit = null,
     resize: /* event */ WidgetResizeEvent => scala.Unit = null,
     rightChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.margin] => scala.Unit = null,
-    selectedImageChanged: /* event */ PropertyChangedEvent[Tab, tabrisLib.Image] => scala.Unit = null,
+    selectedImageChanged: /* event */ PropertyChangedEvent[Tab, Image] => scala.Unit = null,
     swipeDown: /* event */ WidgetSwipeEvent => scala.Unit = null,
     swipeLeft: /* event */ WidgetSwipeEvent => scala.Unit = null,
     swipeRight: /* event */ WidgetSwipeEvent => scala.Unit = null,

@@ -12,8 +12,7 @@ sealed trait ChartBoxQuartileCalculation extends js.Object
   *
   * Represents the quartile calculation type of chart series layout, only applicable in Box & Whisker chart.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBoxQuartileCalculation")
 @js.native

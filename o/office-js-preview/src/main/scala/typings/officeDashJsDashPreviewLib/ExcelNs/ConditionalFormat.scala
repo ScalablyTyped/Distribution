@@ -194,8 +194,7 @@ class ConditionalFormat ()
     *
     * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getRanges(): RangeAreas = js.native
   /**

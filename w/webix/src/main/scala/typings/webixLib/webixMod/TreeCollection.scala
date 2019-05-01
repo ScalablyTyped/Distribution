@@ -15,11 +15,11 @@ trait TreeCollection extends js.Object {
   def add(obj: js.Any, index: scala.Double): java.lang.String = js.native
   def add(obj: js.Any, index: scala.Double, parentId: java.lang.String): java.lang.String = js.native
   def addBind(source: js.Any, rule: java.lang.String, format: java.lang.String): scala.Unit = js.native
-  def attachEvent(`type`: webixLib.TreeCollectionEventName, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def attachEvent(`type`: webixLib.TreeCollectionEventName, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: TreeCollectionEventName, functor: WebixCallback): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: TreeCollectionEventName, functor: WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
   def bind(target: js.Any): scala.Unit = js.native
-  def bind(target: js.Any, rule: webixLib.WebixCallback): scala.Unit = js.native
-  def bind(target: js.Any, rule: webixLib.WebixCallback, format: java.lang.String): scala.Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback): scala.Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: java.lang.String): scala.Unit = js.native
   def blockEvent(): scala.Unit = js.native
   def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
   def clearAll(): scala.Unit = js.native
@@ -37,18 +37,14 @@ trait TreeCollection extends js.Object {
   def detachEvent(id: java.lang.String): scala.Unit = js.native
   def exists(id: java.lang.String): scala.Boolean = js.native
   def exists(id: scala.Double): scala.Boolean = js.native
-  def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-  def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
-  def filter(
-    text: webixLib.WebixCallback | webixLib.WebixTemplate,
-    value: java.lang.String,
-    preserve: scala.Boolean
-  ): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: java.lang.String): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
   def filter(text: java.lang.String): scala.Unit = js.native
   def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-  def find(criterion: webixLib.WebixCallback): js.Any = js.native
-  def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): js.Any = js.native
+  def find(criterion: WebixCallback, first: scala.Boolean): js.Any = js.native
   def getBindData(key: java.lang.String, update: scala.Boolean): scala.Unit = js.native
   def getBindData(key: scala.Double, update: scala.Boolean): scala.Unit = js.native
   def getBranchIndex(id: java.lang.String): scala.Double = js.native
@@ -83,13 +79,13 @@ trait TreeCollection extends js.Object {
   def isVisible(): scala.Boolean = js.native
   def load(url: java.lang.String): js.Promise[_] = js.native
   def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
-  def loadBranch(id: java.lang.String, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
-  def loadBranch(id: scala.Double, callback: webixLib.WebixCallback, url: java.lang.String): scala.Unit = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
+  def loadBranch(id: java.lang.String, callback: WebixCallback, url: java.lang.String): scala.Unit = js.native
+  def loadBranch(id: scala.Double, callback: WebixCallback, url: java.lang.String): scala.Unit = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,
-    callback: webixLib.WebixCallback,
+    callback: WebixCallback,
     url: java.lang.String,
     now: scala.Boolean
   ): scala.Unit = js.native
@@ -117,7 +113,7 @@ trait TreeCollection extends js.Object {
   def remove(id: java.lang.String): scala.Unit = js.native
   def remove(id: scala.Double): scala.Unit = js.native
   def removeBind(source: js.Any): scala.Unit = js.native
-  def saveBatch(handler: webixLib.WebixCallback): scala.Unit = js.native
+  def saveBatch(handler: WebixCallback): scala.Unit = js.native
   def serialize(): js.Array[_] = js.native
   def setBindData(data: js.Any, key: java.lang.String): scala.Unit = js.native
   def setBindData(data: js.Any, key: scala.Double): scala.Unit = js.native
@@ -126,7 +122,7 @@ trait TreeCollection extends js.Object {
   def sort(by: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-  def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+  def sync(source: js.Any, filter: WebixCallback, silent: scala.Boolean): scala.Unit = js.native
   def unbind(): scala.Unit = js.native
   def unblockEvent(): scala.Unit = js.native
   def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native

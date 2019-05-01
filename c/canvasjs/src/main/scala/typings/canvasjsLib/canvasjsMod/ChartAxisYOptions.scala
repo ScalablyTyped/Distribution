@@ -20,7 +20,7 @@ object ChartAxisYOptions {
   @scala.inline
   def apply(
     gridColor: java.lang.String = null,
-    gridDashType: canvasjsLib.DashType = null,
+    gridDashType: DashType = null,
     gridThickness: scala.Int | scala.Double = null,
     includeZero: js.UndefOr[scala.Boolean] = js.undefined,
     interlacedColor: java.lang.String = null,
@@ -38,7 +38,7 @@ object ChartAxisYOptions {
     labelMaxWidth: scala.Int | scala.Double = null,
     labelWrap: js.UndefOr[scala.Boolean] = js.undefined,
     lineColor: java.lang.String = null,
-    lineDashType: canvasjsLib.DashType = null,
+    lineDashType: DashType = null,
     lineThickness: scala.Int | scala.Double = null,
     logarithmBase: scala.Int | scala.Double = null,
     logarithmic: js.UndefOr[scala.Boolean] = js.undefined,

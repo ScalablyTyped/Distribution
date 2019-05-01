@@ -11,6 +11,10 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var DBClusterIdentifier: String
   /**
+    * The name of the DB cluster parameter group to associate with the new DB cluster. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
+    */
+  var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
+  /**
     * The DB subnet group name to use for the new DB cluster. Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mySubnetgroup 
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
@@ -35,16 +39,19 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var RestoreToTime: js.UndefOr[TStamp] = js.undefined
   /**
-    * The type of restore to be performed. You can specify one of the following values:    full-copy - The new DB cluster is restored as a full copy of the source DB cluster.    copy-on-write - The new DB cluster is restored as a clone of the source DB cluster.   Constraints: You can't specify copy-on-write if the engine version of the source DB cluster is earlier than 1.11. If you don't specify a RestoreType value, then the new DB cluster is restored as a full copy of the source DB cluster.
+    * The type of restore to be performed. The only type of restore currently supported is full-copy (the default).
     */
   var RestoreType: js.UndefOr[String] = js.undefined
   /**
     * The identifier of the source DB cluster from which to restore. Constraints:   Must match the identifier of an existing DBCluster.  
     */
   var SourceDBClusterIdentifier: String
+  /**
+    * The tags to be applied to the restored DB cluster.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * A value that is set to true to restore the DB cluster to the latest restorable backup time, and false otherwise.  Default: false  Constraints: Cannot be specified if RestoreToTime parameter is provided.
+    * A value that is set to true to restore the DB cluster to the latest restorable backup time, and false otherwise. Default: false  Constraints: Cannot be specified if RestoreToTime parameter is provided.
     */
   var UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined
   /**
@@ -58,6 +65,7 @@ object RestoreDBClusterToPointInTimeMessage {
   def apply(
     DBClusterIdentifier: String,
     SourceDBClusterIdentifier: String,
+    DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
     KmsKeyId: String = null,
@@ -70,6 +78,7 @@ object RestoreDBClusterToPointInTimeMessage {
     VpcSecurityGroupIds: VpcSecurityGroupIdList = null
   ): RestoreDBClusterToPointInTimeMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, SourceDBClusterIdentifier = SourceDBClusterIdentifier)
+    if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)

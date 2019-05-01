@@ -59,7 +59,8 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
     * Composible fields (fields that work in conjuction with FormState)
     */
   def compose(): this.type = js.native
-  def disableAutoValidation(): scala.Unit = js.native
+  /* CompleteClass */
+  override def disableAutoValidation(): scala.Unit = js.native
   /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native
   def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_FalseHasError[TValue]] = js.native

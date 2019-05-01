@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseDatabaseDashTypesLibStrings {
   @js.native
-  sealed trait child_added extends EventType
+  sealed trait child_added
+    extends atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesMod.EventType
   
   @js.native
-  sealed trait child_changed extends EventType
+  sealed trait child_changed
+    extends atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesMod.EventType
   
   @js.native
-  sealed trait child_moved extends EventType
+  sealed trait child_moved
+    extends atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesMod.EventType
   
   @js.native
-  sealed trait child_removed extends EventType
+  sealed trait child_removed
+    extends atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesMod.EventType
   
   @js.native
-  sealed trait value extends EventType
+  sealed trait value
+    extends atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesMod.EventType
   
   @scala.inline
   def child_added: child_added = "child_added".asInstanceOf[child_added]

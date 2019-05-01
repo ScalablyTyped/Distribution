@@ -14,23 +14,23 @@ trait TransformProps extends TransformObject {
 object TransformProps {
   @scala.inline
   def apply(
-    origin: reactDashNativeDashSvgLib.NumberProp = null,
-    originX: reactDashNativeDashSvgLib.NumberProp = null,
-    originY: reactDashNativeDashSvgLib.NumberProp = null,
-    rotate: reactDashNativeDashSvgLib.NumberProp = null,
-    rotation: reactDashNativeDashSvgLib.NumberProp = null,
-    scale: reactDashNativeDashSvgLib.NumberProp = null,
-    scaleX: reactDashNativeDashSvgLib.NumberProp = null,
-    scaleY: reactDashNativeDashSvgLib.NumberProp = null,
-    skew: reactDashNativeDashSvgLib.NumberProp = null,
-    skewX: reactDashNativeDashSvgLib.NumberProp = null,
-    skewY: reactDashNativeDashSvgLib.NumberProp = null,
+    origin: NumberProp = null,
+    originX: NumberProp = null,
+    originY: NumberProp = null,
+    rotate: NumberProp = null,
+    rotation: NumberProp = null,
+    scale: NumberProp = null,
+    scaleX: NumberProp = null,
+    scaleY: NumberProp = null,
+    skew: NumberProp = null,
+    skewX: NumberProp = null,
+    skewY: NumberProp = null,
     transform: reactDashNativeDashSvgLib.ColumnMajorTransformMatrix | java.lang.String | TransformObject = null,
-    translate: reactDashNativeDashSvgLib.NumberProp = null,
-    translateX: reactDashNativeDashSvgLib.NumberProp = null,
-    translateY: reactDashNativeDashSvgLib.NumberProp = null,
-    x: reactDashNativeDashSvgLib.NumberProp = null,
-    y: reactDashNativeDashSvgLib.NumberProp = null
+    translate: NumberProp = null,
+    translateX: NumberProp = null,
+    translateY: NumberProp = null,
+    x: NumberProp = null,
+    y: NumberProp = null
   ): TransformProps = {
     val __obj = js.Dynamic.literal()
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])

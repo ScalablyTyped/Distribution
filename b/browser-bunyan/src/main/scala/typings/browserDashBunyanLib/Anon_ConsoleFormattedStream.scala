@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ConsoleFormattedStream extends js.Object {
-  var ConsoleFormattedStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleFormattedStream */ js.Any
-  var ConsoleRawStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleRawStream */ js.Any
+  var ConsoleFormattedStream: browserDashBunyanLib.browserDashBunyanMod.BrowserBunyanNs.ConsoleFormattedStream
+  var ConsoleRawStream: browserDashBunyanLib.browserDashBunyanMod.BrowserBunyanNs.ConsoleRawStream
 }
 
 object Anon_ConsoleFormattedStream {
   @scala.inline
   def apply(
-    ConsoleFormattedStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleFormattedStream */ js.Any,
-    ConsoleRawStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleRawStream */ js.Any
+    ConsoleFormattedStream: browserDashBunyanLib.browserDashBunyanMod.BrowserBunyanNs.ConsoleFormattedStream,
+    ConsoleRawStream: browserDashBunyanLib.browserDashBunyanMod.BrowserBunyanNs.ConsoleRawStream
   ): Anon_ConsoleFormattedStream = {
     val __obj = js.Dynamic.literal(ConsoleFormattedStream = ConsoleFormattedStream, ConsoleRawStream = ConsoleRawStream)
   

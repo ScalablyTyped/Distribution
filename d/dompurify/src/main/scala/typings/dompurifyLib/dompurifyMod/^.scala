@@ -12,10 +12,10 @@ object ^ extends js.Object {
   var removed: js.Array[js.Any] = js.native
   var version: java.lang.String = js.native
   def addHook(
-    hook: dompurifyLib.HookName,
+    hook: HookName,
     cb: js.Function3[
       /* currentNode */ stdLib.Element, 
-      /* data */ dompurifyLib.HookEvent, 
+      /* data */ HookEvent, 
       /* config */ Config, 
       scala.Unit
     ]
@@ -43,8 +43,8 @@ object ^ extends js.Object {
   def clearConfig(): scala.Unit = js.native
   def isValidAttribute(tag: java.lang.String, attr: java.lang.String, value: java.lang.String): scala.Boolean = js.native
   def removeAllHooks(): scala.Unit = js.native
-  def removeHook(entryPoint: dompurifyLib.HookName): scala.Unit = js.native
-  def removeHooks(entryPoint: dompurifyLib.HookName): scala.Unit = js.native
+  def removeHook(entryPoint: HookName): scala.Unit = js.native
+  def removeHooks(entryPoint: HookName): scala.Unit = js.native
   def sanitize(source: java.lang.String): java.lang.String = js.native
   def sanitize(source: java.lang.String, config: Config): java.lang.String | stdLib.HTMLElement | stdLib.DocumentFragment = js.native
   def sanitize(source: stdLib.Node): java.lang.String = js.native

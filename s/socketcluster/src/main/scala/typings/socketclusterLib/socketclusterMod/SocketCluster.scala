@@ -21,7 +21,7 @@ trait SocketCluster
   var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
   def colorText(message: java.lang.String): java.lang.String = js.native
   def colorText(message: java.lang.String, color: scala.Double): java.lang.String = js.native
-  def colorText(message: java.lang.String, color: socketclusterLib.ColorCodes): java.lang.String = js.native
+  def colorText(message: java.lang.String, color: ColorCodes): java.lang.String = js.native
   def destroy(): scala.Unit = js.native
   def destroy(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def killBrokers(): scala.Unit = js.native

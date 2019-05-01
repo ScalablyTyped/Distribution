@@ -15,7 +15,7 @@ object ^ extends js.Object {
     * @param id Identifier to resolve
     * @param callback
     */
-  def apply(id: java.lang.String, cb: browserDashResolveLib.resolveCallback): scala.Unit = js.native
+  def apply(id: java.lang.String, cb: resolveCallback): scala.Unit = js.native
   /**
     * Resolve a module path and call cb(err, path [, pkg])
     *
@@ -23,6 +23,6 @@ object ^ extends js.Object {
     * @param options Options to use for resolving, optional.
     * @param callback
     */
-  def apply(id: java.lang.String, opts: AsyncOpts, cb: browserDashResolveLib.resolveCallback): scala.Unit = js.native
+  def apply(id: java.lang.String, opts: AsyncOpts, cb: resolveCallback): scala.Unit = js.native
 }
 

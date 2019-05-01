@@ -135,6 +135,13 @@ class Range ()
   val isEntireRow: scala.Boolean = js.native
   /**
     *
+    * Represents the data type state of each cell. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val linkedDataTypeState: js.Array[js.Array[LinkedDataTypeState]] = js.native
+  /**
+    *
     * Represents Excel's number format code for the given range.
     When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
     *
@@ -215,6 +222,28 @@ class Range ()
     * [Api set: ExcelApi 1.1]
     */
   val worksheet: Worksheet = js.native
+  def autoFill(destinationRange: java.lang.String): scala.Unit = js.native
+  def autoFill(
+    destinationRange: java.lang.String,
+    autoFillType: officeDashJsLib.officeDashJsLibStrings.FillDefault | officeDashJsLib.officeDashJsLibStrings.FillCopy | officeDashJsLib.officeDashJsLibStrings.FillSeries | officeDashJsLib.officeDashJsLibStrings.FillFormats | officeDashJsLib.officeDashJsLibStrings.FillValues | officeDashJsLib.officeDashJsLibStrings.FillDays | officeDashJsLib.officeDashJsLibStrings.FillWeekdays | officeDashJsLib.officeDashJsLibStrings.FillMonths | officeDashJsLib.officeDashJsLibStrings.FillYears | officeDashJsLib.officeDashJsLibStrings.LinearTrend | officeDashJsLib.officeDashJsLibStrings.GrowthTrend | officeDashJsLib.officeDashJsLibStrings.FlashFill
+  ): scala.Unit = js.native
+  def autoFill(destinationRange: java.lang.String, autoFillType: AutoFillType): scala.Unit = js.native
+  /**
+    *
+    * Fills range from the current range to the destination range.
+    The destination range must extend the source either horizontally or vertically. Discontiguous ranges are not supported.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param destinationRange The destination range to autofill.
+    * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
+    */
+  def autoFill(destinationRange: Range): scala.Unit = js.native
+  def autoFill(
+    destinationRange: Range,
+    autoFillType: officeDashJsLib.officeDashJsLibStrings.FillDefault | officeDashJsLib.officeDashJsLibStrings.FillCopy | officeDashJsLib.officeDashJsLibStrings.FillSeries | officeDashJsLib.officeDashJsLibStrings.FillFormats | officeDashJsLib.officeDashJsLibStrings.FillValues | officeDashJsLib.officeDashJsLibStrings.FillDays | officeDashJsLib.officeDashJsLibStrings.FillWeekdays | officeDashJsLib.officeDashJsLibStrings.FillMonths | officeDashJsLib.officeDashJsLibStrings.FillYears | officeDashJsLib.officeDashJsLibStrings.LinearTrend | officeDashJsLib.officeDashJsLibStrings.GrowthTrend | officeDashJsLib.officeDashJsLibStrings.FlashFill
+  ): scala.Unit = js.native
+  def autoFill(destinationRange: Range, autoFillType: AutoFillType): scala.Unit = js.native
   /**
     *
     * Calculates a range of cells on a worksheet.
@@ -244,6 +273,237 @@ class Range ()
   def clear_RemoveHyperlinks(applyTo: officeDashJsLib.officeDashJsLibStrings.RemoveHyperlinks): scala.Unit = js.native
   /**
     *
+    * Converts the range cells with datatypes into text.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def convertDataTypeToText(): scala.Unit = js.native
+  /**
+    *
+    * Converts the range cells into linked datatype in the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param serviceID The Service ID which will be used to query the data.
+    * @param languageCulture Language Culture to query the service for.
+    */
+  def convertToLinkedDataType(serviceID: scala.Double, languageCulture: java.lang.String): scala.Unit = js.native
+  def copyFrom(sourceRange: java.lang.String): scala.Unit = js.native
+  def copyFrom(sourceRange: java.lang.String, copyType: RangeCopyType): scala.Unit = js.native
+  def copyFrom(sourceRange: java.lang.String, copyType: RangeCopyType, skipBlanks: scala.Boolean): scala.Unit = js.native
+  def copyFrom(
+    sourceRange: java.lang.String,
+    copyType: RangeCopyType,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+    *
+    * Copies cell data or formatting from the source range or RangeAreas to the current range.
+    The destination range can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the outline form which can be created by removing full rows or columns from a rectangular range.
+    * @param copyType The type of cell data or formatting to copy over. Default is "All".
+    * @param skipBlanks True if to skip blank cells in the source range. Default is false.
+    * @param transpose True if to transpose the cells in the destination range. Default is false.
+    */
+  def copyFrom(sourceRange: Range): scala.Unit = js.native
+  def copyFrom(sourceRange: RangeAreas): scala.Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType): scala.Unit = js.native
+  def copyFrom(sourceRange: RangeAreas, copyType: RangeCopyType, skipBlanks: scala.Boolean): scala.Unit = js.native
+  def copyFrom(
+    sourceRange: RangeAreas,
+    copyType: RangeCopyType,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: RangeCopyType): scala.Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: scala.Boolean): scala.Unit = js.native
+  def copyFrom(sourceRange: Range, copyType: RangeCopyType, skipBlanks: scala.Boolean, transpose: scala.Boolean): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(sourceRange: java.lang.String, copyType: officeDashJsLib.officeDashJsLibStrings.All): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.All,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.All,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(sourceRange: RangeAreas, copyType: officeDashJsLib.officeDashJsLibStrings.All): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.All,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.All,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(sourceRange: Range, copyType: officeDashJsLib.officeDashJsLibStrings.All): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.All,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_All(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.All,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(sourceRange: java.lang.String, copyType: officeDashJsLib.officeDashJsLibStrings.Formats): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formats,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formats,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(sourceRange: RangeAreas, copyType: officeDashJsLib.officeDashJsLibStrings.Formats): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formats,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formats,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(sourceRange: Range, copyType: officeDashJsLib.officeDashJsLibStrings.Formats): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formats,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formats(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formats,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(sourceRange: java.lang.String, copyType: officeDashJsLib.officeDashJsLibStrings.Formulas): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(sourceRange: RangeAreas, copyType: officeDashJsLib.officeDashJsLibStrings.Formulas): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(sourceRange: Range, copyType: officeDashJsLib.officeDashJsLibStrings.Formulas): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Formulas(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(sourceRange: java.lang.String, copyType: officeDashJsLib.officeDashJsLibStrings.Values): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Values,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(
+    sourceRange: java.lang.String,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Values,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(sourceRange: RangeAreas, copyType: officeDashJsLib.officeDashJsLibStrings.Values): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Values,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(
+    sourceRange: RangeAreas,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Values,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(sourceRange: Range, copyType: officeDashJsLib.officeDashJsLibStrings.Values): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Values,
+    skipBlanks: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("copyFrom")
+  def copyFrom_Values(
+    sourceRange: Range,
+    copyType: officeDashJsLib.officeDashJsLibStrings.Values,
+    skipBlanks: scala.Boolean,
+    transpose: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+    *
     * Deletes the cells associated with the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -263,6 +523,38 @@ class Range ()
     */
   @JSName("delete")
   def delete_Up(shift: officeDashJsLib.officeDashJsLibStrings.Up): scala.Unit = js.native
+  /**
+    *
+    * Finds the given string based on the criteria specified.
+    If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param text String to find.
+    * @param criteria Additional Criteria.
+    * @returns The Range which matched the search criteria.
+    */
+  def find(text: java.lang.String, criteria: SearchCriteria): Range = js.native
+  /**
+    *
+    * Finds the given string based on the criteria specified.
+    If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
+    If there are no matches, this function will return a null object.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param text String to find.
+    * @param criteria Additional Criteria.
+    * @returns The Range which matched the search criteria.
+    */
+  def findOrNullObject(text: java.lang.String, criteria: SearchCriteria): Range = js.native
+  /**
+    *
+    * Does FlashFill to current range.Flash Fill will automatically fills data when it senses a pattern, so the range must be single column range and have data around in order to find pattern.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def flashFill(): scala.Unit = js.native
   /**
     *
     * Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of rows and columns.
@@ -295,6 +587,16 @@ class Range ()
   def getCell(row: scala.Double, column: scala.Double): Range = js.native
   /**
     *
+    * Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellPropertiesLoadOptions An object that represents which cell properties to load.
+    * @returns A 2D array where each item represents the requested properties of the corresponding cell.
+    */
+  def getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions): officeDashJsLib.OfficeExtensionNs.ClientResult[js.Array[js.Array[CellProperties]]] = js.native
+  /**
+    *
     * Gets a column contained in the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -302,6 +604,16 @@ class Range ()
     * @param column Column number of the range to be retrieved. Zero-indexed.
     */
   def getColumn(column: scala.Double): Range = js.native
+  /**
+    *
+    * Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given column, null will be returned.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param columnPropertiesLoadOptions An object that represents which column properties to load.
+    * @returns An array where each item represents the requested properties of the corresponding column.
+    */
+  def getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions): officeDashJsLib.OfficeExtensionNs.ClientResult[js.Array[ColumnProperties]] = js.native
   /**
     *
     * Gets a certain number of columns to the right of the current Range object.
@@ -415,6 +727,16 @@ class Range ()
   def getRow(row: scala.Double): Range = js.native
   /**
     *
+    * Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given row, null will be returned.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param rowPropertiesLoadOptions An object that represents which row properties to load.
+    * @returns An array where each item represents the requested properties of the corresponding row.
+    */
+  def getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions): officeDashJsLib.OfficeExtensionNs.ClientResult[js.Array[RowProperties]] = js.native
+  /**
+    *
     * Gets a certain number of rows above the current Range object.
     *
     * [Api set: ExcelApi 1.2]
@@ -435,11 +757,161 @@ class Range ()
   def getRowsBelow(count: scala.Double): Range = js.native
   /**
     *
+    * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
+    If no special cells are found, an ItemNotFound error will be thrown.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellType The type of cells to include.
+    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+    */
+  def getSpecialCells(cellType: SpecialCellType): RangeAreas = js.native
+  def getSpecialCells(cellType: SpecialCellType, cellValueType: SpecialCellValueType): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Blanks,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.ConditionalFormats,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Constants,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.DataValidations,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.SameConditionalFormat,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.SameDataValidation,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCells(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Visible,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  /**
+    *
+    * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
+    If no special cells are found, a null object will be returned.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellType The type of cells to include.
+    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+    */
+  def getSpecialCellsOrNullObject(cellType: SpecialCellType): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(cellType: SpecialCellType, cellValueType: SpecialCellValueType): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Blanks,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.ConditionalFormats,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Constants,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.DataValidations,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Formulas,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.SameConditionalFormat,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.SameDataValidation,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  def getSpecialCellsOrNullObject(
+    cellType: officeDashJsLib.officeDashJsLibStrings.Visible,
+    cellValueType: officeDashJsLib.officeDashJsLibStrings.All | officeDashJsLib.officeDashJsLibStrings.Errors | officeDashJsLib.officeDashJsLibStrings.ErrorsLogical | officeDashJsLib.officeDashJsLibStrings.ErrorsNumbers | officeDashJsLib.officeDashJsLibStrings.ErrorsText | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalNumber | officeDashJsLib.officeDashJsLibStrings.ErrorsLogicalText | officeDashJsLib.officeDashJsLibStrings.ErrorsNumberText | officeDashJsLib.officeDashJsLibStrings.Logical | officeDashJsLib.officeDashJsLibStrings.LogicalNumbers | officeDashJsLib.officeDashJsLibStrings.LogicalText | officeDashJsLib.officeDashJsLibStrings.LogicalNumbersText | officeDashJsLib.officeDashJsLibStrings.Numbers | officeDashJsLib.officeDashJsLibStrings.NumbersText | officeDashJsLib.officeDashJsLibStrings.Text
+  ): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_Blanks(cellType: officeDashJsLib.officeDashJsLibStrings.Blanks): RangeAreas = js.native
+  /**
+    *
+    * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
+    If no special cells are found, a null object will be returned.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellType The type of cells to include.
+    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+    */
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_ConditionalFormats(cellType: officeDashJsLib.officeDashJsLibStrings.ConditionalFormats): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_Constants(cellType: officeDashJsLib.officeDashJsLibStrings.Constants): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_DataValidations(cellType: officeDashJsLib.officeDashJsLibStrings.DataValidations): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_Formulas(cellType: officeDashJsLib.officeDashJsLibStrings.Formulas): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_SameConditionalFormat(cellType: officeDashJsLib.officeDashJsLibStrings.SameConditionalFormat): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_SameDataValidation(cellType: officeDashJsLib.officeDashJsLibStrings.SameDataValidation): RangeAreas = js.native
+  @JSName("getSpecialCellsOrNullObject")
+  def getSpecialCellsOrNullObject_Visible(cellType: officeDashJsLib.officeDashJsLibStrings.Visible): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_Blanks(cellType: officeDashJsLib.officeDashJsLibStrings.Blanks): RangeAreas = js.native
+  /**
+    *
+    * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
+    If no special cells are found, an ItemNotFound error will be thrown.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellType The type of cells to include.
+    * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+    */
+  @JSName("getSpecialCells")
+  def getSpecialCells_ConditionalFormats(cellType: officeDashJsLib.officeDashJsLibStrings.ConditionalFormats): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_Constants(cellType: officeDashJsLib.officeDashJsLibStrings.Constants): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_DataValidations(cellType: officeDashJsLib.officeDashJsLibStrings.DataValidations): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_Formulas(cellType: officeDashJsLib.officeDashJsLibStrings.Formulas): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_SameConditionalFormat(cellType: officeDashJsLib.officeDashJsLibStrings.SameConditionalFormat): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_SameDataValidation(cellType: officeDashJsLib.officeDashJsLibStrings.SameDataValidation): RangeAreas = js.native
+  @JSName("getSpecialCells")
+  def getSpecialCells_Visible(cellType: officeDashJsLib.officeDashJsLibStrings.Visible): RangeAreas = js.native
+  /**
+    *
     * Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding region is a range bounded by any combination of blank rows and blank columns relative to this range.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getSurroundingRegion(): Range = js.native
+  /**
+    *
+    * Gets a scoped collection of tables that overlap with the range.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param fullyContained If true, returns only tables that are fully contained within the range bounds. The default value is false.
+    */
+  def getTables(): TableScopedCollection = js.native
+  def getTables(fullyContained: scala.Boolean): TableScopedCollection = js.native
   /**
     *
     * Returns the used range of the given range object. If there are no used cells within the range, this function will throw an ItemNotFound error.
@@ -520,6 +992,29 @@ class Range ()
   def merge(across: scala.Boolean): scala.Unit = js.native
   /**
     *
+    * Removes duplicate values from the range specified by the columns.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param columns The columns inside the range that may contain duplicates. At least one column needs to be specified. Zero-indexed.
+    * @param includesHeader True if the input data contains header. Default is false.
+    * @returns The resulting object that contains the number of rows removed and the number of remaining unique rows.
+    */
+  def removeDuplicates(columns: js.Array[scala.Double], includesHeader: scala.Boolean): RemoveDuplicatesResult = js.native
+  /**
+    *
+    * Finds and replaces the given string based on the criteria specified within the current range.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param text String to find.
+    * @param replacement String to replace the original with.
+    * @param criteria Additional Replace Criteria.
+    * @returns The number of replacements performed.
+    */
+  def replaceAll(text: java.lang.String, replacement: java.lang.String, criteria: ReplaceCriteria): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
+  /**
+    *
     * Selects the specified range in the Excel UI.
     *
     * [Api set: ExcelApi 1.1]
@@ -543,6 +1038,40 @@ class Range ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Range): scala.Unit = js.native
+  /**
+    *
+    * Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders, alignment, and so forth.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param cellPropertiesData A 2D array that represents which properties to set in each cell.
+    */
+  def setCellProperties(cellPropertiesData: js.Array[js.Array[SettableCellProperties]]): scala.Unit = js.native
+  /**
+    *
+    * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param columnPropertiesData An array that represents which properties to set in each column.
+    */
+  def setColumnProperties(columnPropertiesData: js.Array[SettableColumnProperties]): scala.Unit = js.native
+  /**
+    *
+    * Set a range to be recalculated when the next recalculation occurs.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def setDirty(): scala.Unit = js.native
+  /**
+    *
+    * Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill, borders, alignment, and so forth.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param rowPropertiesData An array that represents which properties to set in each row.
+    */
+  def setRowProperties(rowPropertiesData: js.Array[SettableRowProperties]): scala.Unit = js.native
   /**
     *
     * Displays the card for an active cell if it has rich value content.

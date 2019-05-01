@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FunctionExpression
   extends BaseFunction
+     with Expression
      with Function {
   @JSName("body")
   var body_FunctionExpression: BlockStatement

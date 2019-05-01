@@ -15,6 +15,7 @@ trait LazyLoadProps extends js.Object {
   var placeholder: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var resize: js.UndefOr[scala.Boolean] = js.undefined
   var scroll: js.UndefOr[scala.Boolean] = js.undefined
+  var scrollContainer: js.UndefOr[java.lang.String | stdLib.Element] = js.undefined
   var throttle: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
   var unmountIfInvisible: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -31,6 +32,7 @@ object LazyLoadProps {
     placeholder: reactLib.reactMod.ReactNode = null,
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     scroll: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollContainer: java.lang.String | stdLib.Element = null,
     throttle: scala.Double | scala.Boolean = null,
     unmountIfInvisible: js.UndefOr[scala.Boolean] = js.undefined
   ): LazyLoadProps = {
@@ -44,6 +46,7 @@ object LazyLoadProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (scrollContainer != null) __obj.updateDynamic("scrollContainer")(scrollContainer.asInstanceOf[js.Any])
     if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
     if (!js.isUndefined(unmountIfInvisible)) __obj.updateDynamic("unmountIfInvisible")(unmountIfInvisible)
     __obj.asInstanceOf[LazyLoadProps]

@@ -61,14 +61,6 @@ class CommentReply ()
   val id: java.lang.String = js.native
   /**
     *
-    * Represents whether it is a comment thread or reply. Always return false here. Read-only.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  val isParent: scala.Boolean = js.native
-  /**
-    *
     * Deletes the comment reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

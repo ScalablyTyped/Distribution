@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait DataProcessor extends js.Object {
   var config: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var name: java.lang.String = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
-  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
-  def attachProgress(start: webixLib.WebixCallback, end: webixLib.WebixCallback, error: webixLib.WebixCallback): scala.Unit = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+  def attachProgress(start: WebixCallback, end: WebixCallback, error: WebixCallback): scala.Unit = js.native
   def blockEvent(): scala.Unit = js.native
   def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
   def clearValidation(): scala.Unit = js.native
@@ -22,7 +22,7 @@ trait DataProcessor extends js.Object {
   def getItemState(itemId: scala.Double): js.Any = js.native
   def getState(): java.lang.String | scala.Boolean = js.native
   def hasEvent(name: java.lang.String): scala.Boolean = js.native
-  def ignore(code: webixLib.WebixCallback, master: js.Any): scala.Unit = js.native
+  def ignore(code: WebixCallback, master: js.Any): scala.Unit = js.native
   def mapEvent(map: js.Any): scala.Unit = js.native
   def off(): scala.Unit = js.native
   def on(): scala.Unit = js.native

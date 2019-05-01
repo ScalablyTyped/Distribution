@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.InputHTMLAttributes<std.HTMLTextAreaElement>[P]} */ trait TextareaProps[TItem] extends js.Object {
+- Dropped {[ P in @webscopeio/react-textarea-autocomplete.@webscopeio/react-textarea-autocomplete.PickedAttributes ]: react.react.InputHTMLAttributes<std.HTMLTextAreaElement>[P]} */ trait TextareaProps[TItem] extends js.Object {
   /**
     * ClassNames of the textarea.
     */

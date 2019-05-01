@@ -15,11 +15,15 @@ trait RestoreDBClusterFromSnapshotMessage extends js.Object {
     */
   var DBClusterIdentifier: String
   /**
+    * The name of the DB cluster parameter group to associate with the new DB cluster. Constraints:   If supplied, must match the name of an existing DBClusterParameterGroup.  
+    */
+  var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
+  /**
     * The name of the DB subnet group to use for the new DB cluster. Constraints: If supplied, must match the name of an existing DBSubnetGroup. Example: mySubnetgroup 
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
-    * The database name for the restored DB cluster.
+    * Not supported.
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
@@ -67,6 +71,7 @@ object RestoreDBClusterFromSnapshotMessage {
     Engine: String,
     SnapshotIdentifier: String,
     AvailabilityZones: AvailabilityZones = null,
+    DBClusterParameterGroupName: String = null,
     DBSubnetGroupName: String = null,
     DatabaseName: String = null,
     EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
@@ -79,6 +84,7 @@ object RestoreDBClusterFromSnapshotMessage {
   ): RestoreDBClusterFromSnapshotMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier, Engine = Engine, SnapshotIdentifier = SnapshotIdentifier)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
+    if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName)
     if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
     if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName)
     if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication)

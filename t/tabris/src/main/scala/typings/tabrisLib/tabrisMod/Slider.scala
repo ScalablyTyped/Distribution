@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._SliderProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined maximum, minimum, selection, tintColor */ @JSImport("tabris", "Slider")
 @js.native
 class Slider () extends Widget {
-  def this(properties: tabrisLib.Properties[Slider, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Slider, TypeScriptPropertiesKey]) = this()
   /**
     * The maximum value.
     */
@@ -34,7 +34,7 @@ class Slider () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Slider: tabrisLib.SliderProperties = js.native
+  val tsProperties_Slider: SliderProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

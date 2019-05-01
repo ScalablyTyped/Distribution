@@ -10,9 +10,11 @@ package object reactDashNativeDashSvgMod {
     - reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.sub
     - reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.`super`
     - reactDashNativeDashSvgLib.reactDashNativeDashSvgLibStrings.baseline
-    - js.Array[reactDashNativeDashSvgLib.NumberProp]
-    - reactDashNativeDashSvgLib.NumberProp
+    - js.Array[NumberProp]
+    - NumberProp
   */
-  type BaselineShift = _BaselineShift | js.Array[reactDashNativeDashSvgLib.NumberProp] | reactDashNativeDashSvgLib.NumberProp
+  type BaselineShift = _BaselineShift | js.Array[NumberProp] | NumberProp
+  // Common props
+  type NumberProp = java.lang.String | scala.Double
   type TMaskUnits = EMaskUnits
 }

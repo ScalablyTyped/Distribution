@@ -60,88 +60,116 @@ object reactDashNativeDashAnimatableLibStrings {
     extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait ease extends Easing
+  sealed trait ease
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in` extends Easing
+  sealed trait `ease-in`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-back` extends Easing
+  sealed trait `ease-in-back`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-circ` extends Easing
+  sealed trait `ease-in-circ`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-cubic` extends Easing
+  sealed trait `ease-in-cubic`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-expo` extends Easing
+  sealed trait `ease-in-expo`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out` extends Easing
+  sealed trait `ease-in-out`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-back` extends Easing
+  sealed trait `ease-in-out-back`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-circ` extends Easing
+  sealed trait `ease-in-out-circ`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-cubic` extends Easing
+  sealed trait `ease-in-out-cubic`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-expo` extends Easing
+  sealed trait `ease-in-out-expo`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-quad` extends Easing
+  sealed trait `ease-in-out-quad`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-quart` extends Easing
+  sealed trait `ease-in-out-quart`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-quint` extends Easing
+  sealed trait `ease-in-out-quint`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-out-sine` extends Easing
+  sealed trait `ease-in-out-sine`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-quad` extends Easing
+  sealed trait `ease-in-quad`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-quart` extends Easing
+  sealed trait `ease-in-quart`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-quint` extends Easing
+  sealed trait `ease-in-quint`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-in-sine` extends Easing
+  sealed trait `ease-in-sine`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out` extends Easing
+  sealed trait `ease-out`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-back` extends Easing
+  sealed trait `ease-out-back`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-circ` extends Easing
+  sealed trait `ease-out-circ`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-cubic` extends Easing
+  sealed trait `ease-out-cubic`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-expo` extends Easing
+  sealed trait `ease-out-expo`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-quad` extends Easing
+  sealed trait `ease-out-quad`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-quart` extends Easing
+  sealed trait `ease-out-quart`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-quint` extends Easing
+  sealed trait `ease-out-quint`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
-  sealed trait `ease-out-sine` extends Easing
+  sealed trait `ease-out-sine`
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
   sealed trait fadeIn
@@ -251,7 +279,8 @@ object reactDashNativeDashAnimatableLibStrings {
     extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait linear extends Easing
+  sealed trait linear
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Easing
   
   @js.native
   sealed trait normal extends js.Object

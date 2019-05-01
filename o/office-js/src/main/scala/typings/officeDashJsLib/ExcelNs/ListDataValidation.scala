@@ -21,17 +21,18 @@ trait ListDataValidation extends js.Object {
   var inCellDropDown: scala.Boolean
   /**
     *
-    * The source of the list for data validation. The value is a string, which can either be a range reference (e.g. `"=Names!$A$1:$A$3"`) or a comma-separated list of the values themselves.
+    * Source of the list for data validation
+    When setting the value, it can be passed in as a Excel Range object, or a string that contains comma separated number, boolean or date.
     *
     * [Api set: ExcelApi 1.8]
     */
-  var source: java.lang.String
+  var source: java.lang.String | Range
 }
 
 object ListDataValidation {
   @scala.inline
-  def apply(inCellDropDown: scala.Boolean, source: java.lang.String): ListDataValidation = {
-    val __obj = js.Dynamic.literal(inCellDropDown = inCellDropDown, source = source)
+  def apply(inCellDropDown: scala.Boolean, source: java.lang.String | Range): ListDataValidation = {
+    val __obj = js.Dynamic.literal(inCellDropDown = inCellDropDown, source = source.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ListDataValidation]
   }

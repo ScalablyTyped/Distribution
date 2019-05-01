@@ -30,7 +30,7 @@ trait MigrationBuilder extends js.Object {
   def addTypeAttribute(typeName: Name, attributeName: java.lang.String, attributeType: Type): scala.Unit = js.native
   def addTypeValue(typeName: Name, value: Value): scala.Unit = js.native
   def addTypeValue(typeName: Name, value: Value, options: nodeDashPgDashMigrateLib.Anon_After): scala.Unit = js.native
-  def alterColumn(tableName: Name, columnName: java.lang.String, options: ColumnOptions): scala.Unit = js.native
+  def alterColumn(tableName: Name, columnName: java.lang.String, options: AlterColumnOptions): scala.Unit = js.native
   def alterDomain(domainName: Name, domainOptions: DomainOptionsAlter): scala.Unit = js.native
   def alterMaterializedView(viewName: Name, options: AlterMaterializedViewOptions): scala.Unit = js.native
   def alterPolicy(tableName: Name, policyName: java.lang.String, options: PolicyOptions): scala.Unit = js.native

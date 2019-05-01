@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 /**
   * This plugin will automatically broadcast a message whenever a cached response is updated.
   */
-trait BroadcastUpdatePlugin extends js.Object
+trait BroadcastUpdatePlugin extends Plugin
 

@@ -11,8 +11,7 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var autoSizeSetting: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeAutoSize | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeNone | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeTextToFitShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeShapeToFitText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeMixed
@@ -21,16 +20,14 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Represents the bottom margin, in points, of the text frame.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var bottomMargin: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var horizontalAlignment: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeTextHorizontalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.JustifyLow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThaiDistributed
@@ -39,8 +36,7 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var horizontalOverflow: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeTextHorizontalOverflow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overflow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Clip
@@ -49,16 +45,14 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Represents the left margin, in points, of the text frame.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var leftMargin: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var orientation: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeTextOrientation | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Horizontal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Vertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Vertical270 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WordArtVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EastAsianVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MongolianVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WordArtVerticalRTL
@@ -67,8 +61,7 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Represents the reading order of the text frame, either left-to-right or right-to-left. See Excel.ShapeTextReadingOrder for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var readingOrder: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeTextReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft
@@ -77,24 +70,21 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Represents the right margin, in points, of the text frame.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var rightMargin: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the top margin, in points, of the text frame.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var topMargin: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var verticalAlignment: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeTextVerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Middle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justified | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed
@@ -103,8 +93,7 @@ trait TextFrameUpdateData extends js.Object {
     *
     * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var verticalOverflow: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.ShapeTextVerticalOverflow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overflow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ellipsis | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Clip

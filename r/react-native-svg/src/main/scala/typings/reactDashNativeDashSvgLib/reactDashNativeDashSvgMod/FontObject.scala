@@ -7,34 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait FontObject extends js.Object {
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
-  var fontSize: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var fontSize: js.UndefOr[NumberProp] = js.undefined
   var fontStretch: js.UndefOr[FontStretch] = js.undefined
   var fontStyle: js.UndefOr[FontStyle] = js.undefined
   var fontVariant: js.UndefOr[FontVariant] = js.undefined
   var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
   var fontWeight: js.UndefOr[FontWeight] = js.undefined
-  var kerning: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var letterSpacing: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var kerning: js.UndefOr[NumberProp] = js.undefined
+  var letterSpacing: js.UndefOr[NumberProp] = js.undefined
   var textAnchor: js.UndefOr[TextAnchor] = js.undefined
   var textDecoration: js.UndefOr[TextDecoration] = js.undefined
-  var wordSpacing: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var wordSpacing: js.UndefOr[NumberProp] = js.undefined
 }
 
 object FontObject {
   @scala.inline
   def apply(
     fontFamily: java.lang.String = null,
-    fontSize: reactDashNativeDashSvgLib.NumberProp = null,
+    fontSize: NumberProp = null,
     fontStretch: FontStretch = null,
     fontStyle: FontStyle = null,
     fontVariant: FontVariant = null,
     fontVariantLigatures: FontVariantLigatures = null,
     fontWeight: FontWeight = null,
-    kerning: reactDashNativeDashSvgLib.NumberProp = null,
-    letterSpacing: reactDashNativeDashSvgLib.NumberProp = null,
+    kerning: NumberProp = null,
+    letterSpacing: NumberProp = null,
     textAnchor: TextAnchor = null,
     textDecoration: TextDecoration = null,
-    wordSpacing: reactDashNativeDashSvgLib.NumberProp = null
+    wordSpacing: NumberProp = null
   ): FontObject = {
     val __obj = js.Dynamic.literal()
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)

@@ -9,28 +9,26 @@ trait StrokeProps extends js.Object {
   var stroke: js.UndefOr[
     reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String
   ] = js.undefined
-  var strokeDasharray: js.UndefOr[
-    js.Array[reactDashNativeDashSvgLib.NumberProp] | reactDashNativeDashSvgLib.NumberProp
-  ] = js.undefined
-  var strokeDashoffset: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var strokeDasharray: js.UndefOr[js.Array[NumberProp] | NumberProp] = js.undefined
+  var strokeDashoffset: js.UndefOr[NumberProp] = js.undefined
   var strokeLinecap: js.UndefOr[Linecap] = js.undefined
   var strokeLinejoin: js.UndefOr[Linejoin] = js.undefined
-  var strokeMiterlimit: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var strokeOpacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var strokeWidth: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var strokeMiterlimit: js.UndefOr[NumberProp] = js.undefined
+  var strokeOpacity: js.UndefOr[NumberProp] = js.undefined
+  var strokeWidth: js.UndefOr[NumberProp] = js.undefined
 }
 
 object StrokeProps {
   @scala.inline
   def apply(
     stroke: reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String = null,
-    strokeDasharray: js.Array[reactDashNativeDashSvgLib.NumberProp] | reactDashNativeDashSvgLib.NumberProp = null,
-    strokeDashoffset: reactDashNativeDashSvgLib.NumberProp = null,
+    strokeDasharray: js.Array[NumberProp] | NumberProp = null,
+    strokeDashoffset: NumberProp = null,
     strokeLinecap: Linecap = null,
     strokeLinejoin: Linejoin = null,
-    strokeMiterlimit: reactDashNativeDashSvgLib.NumberProp = null,
-    strokeOpacity: reactDashNativeDashSvgLib.NumberProp = null,
-    strokeWidth: reactDashNativeDashSvgLib.NumberProp = null
+    strokeMiterlimit: NumberProp = null,
+    strokeOpacity: NumberProp = null,
+    strokeWidth: NumberProp = null
   ): StrokeProps = {
     val __obj = js.Dynamic.literal()
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])

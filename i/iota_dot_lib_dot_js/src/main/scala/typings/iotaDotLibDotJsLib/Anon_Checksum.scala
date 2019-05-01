@@ -9,7 +9,7 @@ trait Anon_Checksum extends js.Object {
   var checksum: js.UndefOr[scala.Boolean] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined
   var returnAll: js.UndefOr[scala.Boolean] = js.undefined
-  var security: js.UndefOr[Security] = js.undefined
+  var security: js.UndefOr[iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security] = js.undefined
   var total: js.UndefOr[scala.Double] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Anon_Checksum {
     checksum: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
     returnAll: js.UndefOr[scala.Boolean] = js.undefined,
-    security: Security = null,
+    security: iotaDotLibDotJsLib.iotaDotLibDotJsMod.Security = null,
     total: scala.Int | scala.Double = null
   ): Anon_Checksum = {
     val __obj = js.Dynamic.literal()

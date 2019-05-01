@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/template", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: atBabelTemplateLib.DefaultTemplateBuilder = js.native
+  val default: DefaultTemplateBuilder = js.native
   val expression: TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Expression] = js.native
   val program: TemplateBuilder[atBabelTypesLib.atBabelTypesMod.Program] = js.native
   val smart: TemplateBuilder[

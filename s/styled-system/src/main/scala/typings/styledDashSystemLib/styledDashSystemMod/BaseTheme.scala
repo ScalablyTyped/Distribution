@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait BaseTheme extends js.Object {
   var breakpoints: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double] | js.Object] = js.undefined
   var colors: js.UndefOr[ObjectOrArray[csstypeLib.csstypeMod.ColorProperty]] = js.undefined
-  var fontSizes: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  var space: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var fontSizes: js.UndefOr[ObjectOrArray[csstypeLib.csstypeMod.FontSizeProperty[scala.Double]]] = js.undefined
+  var space: js.UndefOr[ObjectOrArray[scala.Double | java.lang.String]] = js.undefined
 }
 
 object BaseTheme {
@@ -17,14 +17,14 @@ object BaseTheme {
   def apply(
     breakpoints: js.Array[java.lang.String] | js.Array[scala.Double] | js.Object = null,
     colors: ObjectOrArray[csstypeLib.csstypeMod.ColorProperty] = null,
-    fontSizes: js.Array[scala.Double] = null,
-    space: js.Array[scala.Double] = null
+    fontSizes: ObjectOrArray[csstypeLib.csstypeMod.FontSizeProperty[scala.Double]] = null,
+    space: ObjectOrArray[scala.Double | java.lang.String] = null
   ): BaseTheme = {
     val __obj = js.Dynamic.literal()
     if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes)
-    if (space != null) __obj.updateDynamic("space")(space)
+    if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTheme]
   }
 }

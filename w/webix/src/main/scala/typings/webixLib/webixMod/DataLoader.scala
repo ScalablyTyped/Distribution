@@ -16,18 +16,14 @@ trait DataLoader extends js.Object {
   def count(): scala.Double = js.native
   def exists(id: java.lang.String): scala.Boolean = js.native
   def exists(id: scala.Double): scala.Boolean = js.native
-  def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate): scala.Unit = js.native
-  def filter(text: webixLib.WebixCallback | webixLib.WebixTemplate, value: java.lang.String): scala.Unit = js.native
-  def filter(
-    text: webixLib.WebixCallback | webixLib.WebixTemplate,
-    value: java.lang.String,
-    preserve: scala.Boolean
-  ): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: java.lang.String): scala.Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
   def filter(text: java.lang.String): scala.Unit = js.native
   def filter(text: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def filter(text: java.lang.String, value: java.lang.String, preserve: scala.Boolean): scala.Unit = js.native
-  def find(criterion: webixLib.WebixCallback): js.Any = js.native
-  def find(criterion: webixLib.WebixCallback, first: scala.Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): js.Any = js.native
+  def find(criterion: WebixCallback, first: scala.Boolean): js.Any = js.native
   def getFirstId(): java.lang.String | scala.Double = js.native
   def getIdByIndex(index: scala.Double): java.lang.String | scala.Double = js.native
   def getIndexById(id: java.lang.String): scala.Double = js.native
@@ -41,11 +37,11 @@ trait DataLoader extends js.Object {
   def getPrevId(id: scala.Double, step: scala.Double): java.lang.String | scala.Double = js.native
   def load(url: java.lang.String): js.Promise[_] = js.native
   def load(url: java.lang.String, `type`: java.lang.String): js.Promise[_] = js.native
-  def load(url: java.lang.String, `type`: java.lang.String, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+  def load(url: java.lang.String, `type`: java.lang.String, callback: WebixCallback): js.Promise[_] = js.native
   def loadNext(
     count: scala.Double,
     start: scala.Double,
-    callback: webixLib.WebixCallback,
+    callback: WebixCallback,
     url: java.lang.String,
     now: scala.Boolean
   ): scala.Unit = js.native
@@ -59,7 +55,7 @@ trait DataLoader extends js.Object {
   def sort(by: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String): scala.Unit = js.native
   def sort(by: java.lang.String, dir: java.lang.String, as: java.lang.String): scala.Unit = js.native
-  def sync(source: js.Any, filter: webixLib.WebixCallback, silent: scala.Boolean): scala.Unit = js.native
+  def sync(source: js.Any, filter: WebixCallback, silent: scala.Boolean): scala.Unit = js.native
   def updateItem(id: java.lang.String, data: js.Any): scala.Unit = js.native
   def updateItem(id: scala.Double, data: js.Any): scala.Unit = js.native
 }

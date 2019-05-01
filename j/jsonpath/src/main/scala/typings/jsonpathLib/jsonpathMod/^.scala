@@ -14,11 +14,11 @@ object ^ extends js.Object {
   def nodes(obj: js.Any, pathExpression: java.lang.String, count: scala.Double): js.Array[jsonpathLib.Anon_Path] = js.native
   def parent(obj: js.Any, pathExpression: java.lang.String): js.Any = js.native
   def parse(pathExpression: java.lang.String): js.Array[_] = js.native
-  def paths(obj: js.Any, pathExpression: java.lang.String): js.Array[js.Array[jsonpathLib.PathComponent]] = js.native
-  def paths(obj: js.Any, pathExpression: java.lang.String, count: scala.Double): js.Array[js.Array[jsonpathLib.PathComponent]] = js.native
+  def paths(obj: js.Any, pathExpression: java.lang.String): js.Array[js.Array[PathComponent]] = js.native
+  def paths(obj: js.Any, pathExpression: java.lang.String, count: scala.Double): js.Array[js.Array[PathComponent]] = js.native
   def query(obj: js.Any, pathExpression: java.lang.String): js.Array[_] = js.native
   def query(obj: js.Any, pathExpression: java.lang.String, count: scala.Double): js.Array[_] = js.native
-  def stringify(path: js.Array[jsonpathLib.PathComponent]): java.lang.String = js.native
+  def stringify(path: js.Array[PathComponent]): java.lang.String = js.native
   def value(obj: js.Any, pathExpression: java.lang.String): js.Any = js.native
   def value[T](obj: js.Any, pathExpression: java.lang.String, newValue: T): T = js.native
 }

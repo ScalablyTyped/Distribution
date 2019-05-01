@@ -53,7 +53,7 @@ trait EggCoreBase[Config]
     * @member {String}
     * @since 1.0.0
     */
-  var `type`: eggDashCoreLib.EggType = js.native
+  var `type`: EggType = js.native
   /**
     * Register a function that will be called when app close
     */

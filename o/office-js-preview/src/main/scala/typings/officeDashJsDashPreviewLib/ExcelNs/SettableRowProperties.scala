@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
   *
   * Represents the input parameter of setRowProperties.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * [Api set: ExcelApi 1.9]
   */
 trait SettableRowProperties extends SettableCellProperties {
   /**
     *
     * Represents the `format` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
   var format_SettableRowProperties: js.UndefOr[CellPropertiesFormat with officeDashJsDashPreviewLib.Anon_RowHeightNumber] = js.undefined
@@ -24,7 +24,7 @@ trait SettableRowProperties extends SettableCellProperties {
     *
     * Represents the `rowHidden` property.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var rowHidden: js.UndefOr[scala.Boolean] = js.undefined
 }

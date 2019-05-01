@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xstream", JSImport.Default)
 @js.native
-class default[T] () extends Stream[T] {
-  def this(producer: InternalProducer[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ _]) = this()
-}
-
-@JSImport("xstream", JSImport.Default)
-@js.native
 object default
   extends org.scalablytyped.runtime.Instantiable0[Stream[js.Object]]
      with org.scalablytyped.runtime.Instantiable1[

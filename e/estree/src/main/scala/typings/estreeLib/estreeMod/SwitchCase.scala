@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait SwitchCase
   extends BaseNode
-     with _Node {
+     with Node {
   var consequent: js.Array[Statement]
-  var test: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+  var test: js.UndefOr[Expression | scala.Null] = js.undefined
   @JSName("type")
   var type_SwitchCase: estreeLib.estreeLibStrings.SwitchCase
 }
@@ -22,7 +22,7 @@ object SwitchCase {
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,
-    test: estreeLib.Expression = null,
+    test: Expression = null,
     trailingComments: js.Array[Comment] = null
   ): SwitchCase = {
     val __obj = js.Dynamic.literal(consequent = consequent)

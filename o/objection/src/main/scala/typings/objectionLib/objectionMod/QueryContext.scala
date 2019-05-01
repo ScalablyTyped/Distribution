@@ -11,7 +11,7 @@ trait QueryContext
   @JSName("transaction")
   var transaction_Original: Transaction = js.native
   def transaction(): knexLib.knexMod.QueryBuilder = js.native
-  def transaction(tableName: knexLib.Identifier): knexLib.knexMod.QueryBuilder = js.native
-  def transaction(tableName: knexLib.TableName): knexLib.knexMod.QueryBuilder = js.native
+  def transaction(tableName: knexLib.knexMod.Identifier): knexLib.knexMod.QueryBuilder = js.native
+  def transaction(tableName: knexLib.knexMod.TableName): knexLib.knexMod.QueryBuilder = js.native
 }
 

@@ -36,9 +36,11 @@ object componentsNs extends js.Object {
     //The css class name, or a function to generate a class name from props, to apply to this column.
     var cssClassName: js.UndefOr[java.lang.String | (js.Function1[/* props */ js.Any, java.lang.String])] = js.undefined
     //The component that should be rendered instead of the standard column data. This component will still be rendered inside of a TD element.
-    var customComponent: js.UndefOr[griddleDashReactLib.GriddleComponent[CellProps with js.Any]] = js.undefined
+    var customComponent: js.UndefOr[griddleDashReactLib.griddleDashReactMod.GriddleComponent[CellProps with js.Any]] = js.undefined
     //The component that should be used instead of the normal title
-    var customHeadingComponent: js.UndefOr[griddleDashReactLib.GriddleComponent[TableHeadingCellProps with js.Any]] = js.undefined
+    var customHeadingComponent: js.UndefOr[
+        griddleDashReactLib.griddleDashReactMod.GriddleComponent[TableHeadingCellProps with js.Any]
+      ] = js.undefined
     //Any extra data that should be passed to each instance of this column
     var extraData: js.UndefOr[js.Any] = js.undefined
     //Can this column be filtered
@@ -128,7 +130,7 @@ object componentsNs extends js.Object {
   
   trait SettingsProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
-    var settingsComponents: js.UndefOr[js.Array[griddleDashReactLib.GriddleComponent[_]]] = js.undefined
+    var settingsComponents: js.UndefOr[js.Array[griddleDashReactLib.griddleDashReactMod.GriddleComponent[_]]] = js.undefined
     var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   }
   
@@ -148,8 +150,8 @@ object componentsNs extends js.Object {
     extends reactLib.reactMod.Component[SettingsWrapperProps, js.Any, js.Any]
   
   trait SettingsWrapperProps extends js.Object {
-    var Settings: js.UndefOr[griddleDashReactLib.GriddleComponent[SettingsProps]] = js.undefined
-    var SettingsToggle: js.UndefOr[griddleDashReactLib.GriddleComponent[SettingsToggleProps]] = js.undefined
+    var Settings: js.UndefOr[griddleDashReactLib.griddleDashReactMod.GriddleComponent[SettingsProps]] = js.undefined
+    var SettingsToggle: js.UndefOr[griddleDashReactLib.griddleDashReactMod.GriddleComponent[SettingsToggleProps]] = js.undefined
     var className: js.UndefOr[java.lang.String] = js.undefined
     var isEnabled: js.UndefOr[scala.Boolean] = js.undefined
     var isVisible: js.UndefOr[scala.Boolean] = js.undefined
@@ -203,7 +205,7 @@ object componentsNs extends js.Object {
     var visibleRows: js.UndefOr[scala.Double] = js.undefined
   }
   
-  val SettingsComponents: griddleDashReactLib.griddleDashReactMod.PropertyBag[griddleDashReactLib.GriddleComponent[js.Any]] = js.native
+  val SettingsComponents: griddleDashReactLib.griddleDashReactMod.PropertyBag[griddleDashReactLib.griddleDashReactMod.GriddleComponent[js.Any]] = js.native
   def SettingsContainer(OriginalComponent: js.Any): js.Any = js.native
   def SettingsToggleContainer(OriginalComponent: js.Any): js.Any = js.native
   def SettingsWrapperContainer(OriginalComponent: js.Any): js.Any = js.native

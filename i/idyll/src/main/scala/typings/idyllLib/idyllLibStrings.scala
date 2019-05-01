@@ -7,46 +7,60 @@ import scala.scalajs.js.annotation._
 
 object idyllLibStrings {
   @js.native
-  sealed trait APP_PATH extends PredefinedFile
+  sealed trait APP_PATH
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait COMPONENT_DIRS extends ComponentFiles
+  sealed trait COMPONENT_DIRS
+    extends idyllLib.idyllMod.ComponentFiles
   
   @js.native
-  sealed trait CSS_INPUT_FILE extends PredefinedFile
+  sealed trait CSS_INPUT_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait CSS_OUTPUT_FILE extends PredefinedFile
+  sealed trait CSS_OUTPUT_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait DATA_DIR extends PredefinedFile
+  sealed trait DATA_DIR
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait DEFAULT_COMPONENT_DIRS extends ComponentFiles
+  sealed trait DEFAULT_COMPONENT_DIRS
+    extends idyllLib.idyllMod.ComponentFiles
   
   @js.native
-  sealed trait HTML_OUTPUT_FILE extends PredefinedFile
+  sealed trait HTML_OUTPUT_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait HTML_TEMPLATE_FILE extends PredefinedFile
+  sealed trait HTML_TEMPLATE_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait IDYLL_INPUT_FILE extends PredefinedFile
+  sealed trait IDYLL_INPUT_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait INPUT_DIR extends PredefinedFile
+  sealed trait INPUT_DIR
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait JS_OUTPUT_FILE extends PredefinedFile
+  sealed trait JS_OUTPUT_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait OUTPUT_DIR extends PredefinedFile
+  sealed trait OUTPUT_DIR
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait PACKAGE_FILE extends PredefinedFile
+  sealed trait PACKAGE_FILE
+    extends idyllLib.idyllMod.PredefinedFile
   
   @js.native
-  sealed trait TMP_DIR extends PredefinedFile
+  sealed trait TMP_DIR
+    extends idyllLib.idyllMod.PredefinedFile
   
   @scala.inline
   def APP_PATH: APP_PATH = "APP_PATH".asInstanceOf[APP_PATH]

@@ -13,14 +13,9 @@ trait AnimatableComponent[P /* <: js.Object */, S /* <: js.Object */]
   def stopAnimation(): scala.Unit = js.native
   def transition[T /* <: S */](fromValues: T, toValues: T): scala.Unit = js.native
   def transition[T /* <: S */](fromValues: T, toValues: T, duration: scala.Double): scala.Unit = js.native
-  def transition[T /* <: S */](
-    fromValues: T,
-    toValues: T,
-    duration: scala.Double,
-    easing: reactDashNativeDashAnimatableLib.Easing
-  ): scala.Unit = js.native
+  def transition[T /* <: S */](fromValues: T, toValues: T, duration: scala.Double, easing: Easing): scala.Unit = js.native
   def transitionTo[T /* <: S */](toValues: T): scala.Unit = js.native
   def transitionTo[T /* <: S */](toValues: T, duration: scala.Double): scala.Unit = js.native
-  def transitionTo[T /* <: S */](toValues: T, duration: scala.Double, easing: reactDashNativeDashAnimatableLib.Easing): scala.Unit = js.native
+  def transitionTo[T /* <: S */](toValues: T, duration: scala.Double, easing: Easing): scala.Unit = js.native
 }
 

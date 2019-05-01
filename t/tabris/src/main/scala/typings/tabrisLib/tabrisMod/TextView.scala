@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._TextViewProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined alignment, lineSpacing, markupEnabled, maxLines, selectable, text, textColor */ @JSImport("tabris", "TextView")
 @js.native
 class TextView () extends Widget {
-  def this(properties: tabrisLib.Properties[TextView, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[TextView, TypeScriptPropertiesKey]) = this()
   /**
     * The horizontal alignment of the text.
     */
@@ -50,7 +50,7 @@ class TextView () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_TextView: tabrisLib.TextViewProperties = js.native
+  val tsProperties_TextView: TextViewProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

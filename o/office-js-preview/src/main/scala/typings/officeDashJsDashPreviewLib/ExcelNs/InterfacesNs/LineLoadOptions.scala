@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 trait LineLoadOptions extends js.Object {
   @JSName("$all")
@@ -19,120 +18,105 @@ trait LineLoadOptions extends js.Object {
     *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the shape to which the beginning of the specified line is attached.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
     * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var beginConnectedSite: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the connector type for the line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var connectorType: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the length of the arrowhead at the end of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the style of the arrowhead at the end of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the width of the arrowhead at the end of the specified line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the shape to which the end of the specified line is attached.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
     * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var endConnectedSite: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the shape identifier. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var isBeginConnected: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var isEndConnected: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Returns the Shape object associated with the line.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }

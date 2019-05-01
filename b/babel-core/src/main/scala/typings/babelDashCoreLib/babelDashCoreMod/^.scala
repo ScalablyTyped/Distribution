@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val version: java.lang.String = js.native
-  def template(code: java.lang.String): babelDashTemplateLib.UseTemplate = js.native
-  def template(code: java.lang.String, opts: babylonLib.babylonMod.BabylonOptions): babelDashTemplateLib.UseTemplate = js.native
+  def template(code: java.lang.String): babelDashTemplateLib.babelDashTemplateMod.UseTemplate = js.native
+  def template(code: java.lang.String, opts: babylonLib.babylonMod.BabylonOptions): babelDashTemplateLib.babelDashTemplateMod.UseTemplate = js.native
   def transform(code: java.lang.String): BabelFileResult = js.native
   def transform(code: java.lang.String, opts: TransformOptions): BabelFileResult = js.native
   def transformFile(

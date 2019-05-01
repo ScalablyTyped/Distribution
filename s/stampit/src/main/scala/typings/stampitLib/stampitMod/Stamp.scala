@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   * prototypes that are passed in or composed.
   */
 @js.native
-trait Stamp extends js.Object {
+trait Stamp
+  extends Composable
+     with StampitComposable {
   /**
     * Stamp metadata/composer function
     */
@@ -32,7 +34,7 @@ trait Stamp extends js.Object {
   /**
     * Stamp metadata/composer function
     */
-  def compose(composables: stampitLib.Composable*): Stamp = js.native
+  def compose(composables: Composable*): Stamp = js.native
   /**
     * Shallowly assign properties of Stamp arbitrary metadata and add them to
     * a new stamp and any future Stamp it composes. Creates and returns a new
@@ -104,7 +106,7 @@ trait Stamp extends js.Object {
   /**
     * @deprecated Use .init() instead.
     */
-  def enclose(functions: (stampitLib.Init | js.Object)*): Stamp = js.native
+  def enclose(functions: (Init | js.Object)*): Stamp = js.native
   /**
     * Take in a variable number of functions and add them to the enclose
     * prototype as initializers.
@@ -112,7 +114,7 @@ trait Stamp extends js.Object {
     * privileged methods
     * @returns A new stamp
     */
-  def init(functions: stampitLib.Init*): Stamp = js.native
+  def init(functions: Init*): Stamp = js.native
   /**
     * Take in a variable number of functions and add them to the enclose
     * prototype as initializers.
@@ -120,7 +122,7 @@ trait Stamp extends js.Object {
     * privileged methods
     * @returns A new stamp
     */
-  def init(functions: js.Array[stampitLib.Init]): Stamp = js.native
+  def init(functions: js.Array[Init]): Stamp = js.native
   /**
     * Take in a variable number of functions and add them to the enclose
     * prototype as initializers.
@@ -128,7 +130,7 @@ trait Stamp extends js.Object {
     * privileged methods
     * @returns A new stamp
     */
-  def initializers(functions: stampitLib.Init*): Stamp = js.native
+  def initializers(functions: Init*): Stamp = js.native
   /**
     * Take in a variable number of functions and add them to the enclose
     * prototype as initializers.
@@ -136,7 +138,7 @@ trait Stamp extends js.Object {
     * privileged methods
     * @returns A new stamp
     */
-  def initializers(functions: js.Array[stampitLib.Init]): Stamp = js.native
+  def initializers(functions: js.Array[Init]): Stamp = js.native
   /**
     * Add methods to the methods prototype.  Creates and returns new Stamp. Chainable.
     * @param methods Object(s) containing map of method names and bodies for delegation.

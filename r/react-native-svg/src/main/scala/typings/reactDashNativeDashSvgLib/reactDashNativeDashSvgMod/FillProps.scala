@@ -9,7 +9,7 @@ trait FillProps extends js.Object {
   var fill: js.UndefOr[
     reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String
   ] = js.undefined
-  var fillOpacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var fillOpacity: js.UndefOr[NumberProp] = js.undefined
   var fillRule: js.UndefOr[FillRule] = js.undefined
 }
 
@@ -17,7 +17,7 @@ object FillProps {
   @scala.inline
   def apply(
     fill: reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String = null,
-    fillOpacity: reactDashNativeDashSvgLib.NumberProp = null,
+    fillOpacity: NumberProp = null,
     fillRule: FillRule = null
   ): FillProps = {
     val __obj = js.Dynamic.literal()

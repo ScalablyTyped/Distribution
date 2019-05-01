@@ -16,7 +16,7 @@ object ^ extends js.Object {
     * @param id Identifier to resolve
     * @param callback
     */
-  def apply(id: java.lang.String, cb: resolveLib.resolveCallback): scala.Unit = js.native
+  def apply(id: java.lang.String, cb: resolveCallback): scala.Unit = js.native
   /**
     * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
     *
@@ -24,6 +24,6 @@ object ^ extends js.Object {
     * @param options Options to use for resolving, optional.
     * @param callback
     */
-  def apply(id: java.lang.String, opts: AsyncOpts, cb: resolveLib.resolveCallback): scala.Unit = js.native
+  def apply(id: java.lang.String, opts: AsyncOpts, cb: resolveCallback): scala.Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-parent-dir"
-version := "0.3-dt-20180715Z-cb49dc"
+version := "0.3-dt-20180715Z-0d17a2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

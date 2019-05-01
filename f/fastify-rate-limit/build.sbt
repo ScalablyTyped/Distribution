@@ -1,16 +1,17 @@
 organization := "org.scalablytyped"
 name := "fastify-rate-limit"
-version := "2.0-dt-20190128Z-4ad5e2"
+version := "2.0-dt-20190128Z-1177f9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "fastify" % "2.3.0-880a8f",
-  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190311Z-31c328",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-d35e72",
-  "org.scalablytyped" %%% "std" % "3.4-6f75bc")
+  "org.scalablytyped" %%% "fastify" % "2.3.0-d4353e",
+  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190311Z-d0074b",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

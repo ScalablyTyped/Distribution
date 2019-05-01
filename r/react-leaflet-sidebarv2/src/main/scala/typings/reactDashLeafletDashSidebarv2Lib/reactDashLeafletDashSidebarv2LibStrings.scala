@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashLeafletDashSidebarv2LibStrings {
   @js.native
-  sealed trait bottom extends Anchor
+  sealed trait bottom
+    extends reactDashLeafletDashSidebarv2Lib.reactDashLeafletDashSidebarv2Mod.Anchor
   
   @js.native
-  sealed trait left extends Position
+  sealed trait left
+    extends reactDashLeafletDashSidebarv2Lib.reactDashLeafletDashSidebarv2Mod.Position
   
   @js.native
-  sealed trait right extends Position
+  sealed trait right
+    extends reactDashLeafletDashSidebarv2Lib.reactDashLeafletDashSidebarv2Mod.Position
   
   @js.native
-  sealed trait top extends Anchor
+  sealed trait top
+    extends reactDashLeafletDashSidebarv2Lib.reactDashLeafletDashSidebarv2Mod.Anchor
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

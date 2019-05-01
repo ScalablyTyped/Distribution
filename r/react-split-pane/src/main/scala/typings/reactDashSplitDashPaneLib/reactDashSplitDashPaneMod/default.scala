@@ -17,6 +17,6 @@ object default extends js.Object {
   def getSizeUpdate(
     props: reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props,
     state: reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.State
-  ): reactDashSplitDashPaneLib.Partial[reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.State] = js.native
+  ): reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Partial[reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.State] = js.native
 }
 

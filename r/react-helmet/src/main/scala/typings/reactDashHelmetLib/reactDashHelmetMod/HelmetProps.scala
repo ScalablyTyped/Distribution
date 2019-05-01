@@ -13,8 +13,8 @@ trait HelmetProps extends js.Object {
   var defer: js.UndefOr[scala.Boolean] = js.undefined
   var encodeSpecialCharacters: js.UndefOr[scala.Boolean] = js.undefined
   var htmlAttributes: js.UndefOr[js.Any] = js.undefined
-  var link: js.UndefOr[js.Array[reactDashHelmetLib.LinkProps]] = js.undefined
-  var meta: js.UndefOr[js.Array[reactDashHelmetLib.MetaProps]] = js.undefined
+  var link: js.UndefOr[js.Array[LinkProps]] = js.undefined
+  var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
   var noscript: js.UndefOr[js.Array[_]] = js.undefined
   var onChangeClientState: js.UndefOr[js.Function1[/* newState */ js.Any, scala.Unit]] = js.undefined
   var script: js.UndefOr[js.Array[_]] = js.undefined
@@ -34,8 +34,8 @@ object HelmetProps {
     defer: js.UndefOr[scala.Boolean] = js.undefined,
     encodeSpecialCharacters: js.UndefOr[scala.Boolean] = js.undefined,
     htmlAttributes: js.Any = null,
-    link: js.Array[reactDashHelmetLib.LinkProps] = null,
-    meta: js.Array[reactDashHelmetLib.MetaProps] = null,
+    link: js.Array[LinkProps] = null,
+    meta: js.Array[MetaProps] = null,
     noscript: js.Array[_] = null,
     onChangeClientState: /* newState */ js.Any => scala.Unit = null,
     script: js.Array[_] = null,

@@ -11,6 +11,6 @@ trait Radix extends js.Object {
   def ascii64(number: scala.Double): java.lang.String = js.native
   def ascii64(number: scala.Double, pad: scala.Double): java.lang.String = js.native
   def radix64(number: scala.Double): java.lang.String = js.native
-  def radix64(number: scala.Double, method: radix64Lib.MethodsString): java.lang.String = js.native
+  def radix64(number: scala.Double, method: MethodsString): java.lang.String = js.native
 }
 

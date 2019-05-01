@@ -12,9 +12,9 @@ class ^ () extends FNV
 @JSImport("fnv-lite", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def base36(input: fnvDashLiteLib.Input): java.lang.String = js.native
-  def base64(input: fnvDashLiteLib.Input): java.lang.String = js.native
-  def base64Url(input: fnvDashLiteLib.Input): java.lang.String = js.native
-  def hex(input: fnvDashLiteLib.Input): java.lang.String = js.native
+  def base36(input: Input): java.lang.String = js.native
+  def base64(input: Input): java.lang.String = js.native
+  def base64Url(input: Input): java.lang.String = js.native
+  def hex(input: Input): java.lang.String = js.native
 }
 

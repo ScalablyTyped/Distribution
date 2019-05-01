@@ -16,7 +16,7 @@ object GenericSpan {
   @scala.inline
   def apply(
     addTags: Tags => scala.Boolean,
-    setTag: (java.lang.String, elasticDashApmDashNodeLib.TagValue) => scala.Boolean,
+    setTag: (java.lang.String, TagValue) => scala.Boolean,
     traceparent: java.lang.String,
     `type`: java.lang.String
   ): GenericSpan = {

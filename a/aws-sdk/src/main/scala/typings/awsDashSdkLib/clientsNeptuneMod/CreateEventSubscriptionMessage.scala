@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait CreateEventSubscriptionMessage extends js.Object {
   /**
-    *  A Boolean value; set to true to activate the subscription, set to false to create the subscription but not active it. 
+    *  A Boolean value; set to true to activate the subscription, set to false to create the subscription but not active it.
     */
   var Enabled: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    *  A list of event categories for a SourceType that you want to subscribe to. You can see a list of the categories for a given SourceType by using the DescribeEventCategories action. 
+    *  A list of event categories for a SourceType that you want to subscribe to. You can see a list of the categories for a given SourceType by using the DescribeEventCategories action.
     */
   var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   /**
@@ -30,6 +30,9 @@ trait CreateEventSubscriptionMessage extends js.Object {
     * The name of the subscription. Constraints: The name must be less than 255 characters.
     */
   var SubscriptionName: String
+  /**
+    * The tags to be applied to the new event subscription.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 

@@ -12,9 +12,9 @@ trait AnimeInstance extends js.Object {
   var autoplay: scala.Boolean = js.native
   var began: scala.Boolean = js.native
   @JSName("begin")
-  var begin_Original: animejsLib.AnimeCallbackFunction = js.native
+  var begin_Original: AnimeCallbackFunction = js.native
   @JSName("complete")
-  var complete_Original: animejsLib.AnimeCallbackFunction = js.native
+  var complete_Original: AnimeCallbackFunction = js.native
   var completed: scala.Boolean = js.native
   var currentTime: scala.Double = js.native
   var delay: scala.Double = js.native
@@ -28,9 +28,9 @@ trait AnimeInstance extends js.Object {
   var remaining: scala.Double = js.native
   var reversed: scala.Boolean = js.native
   @JSName("run")
-  var run_Original: animejsLib.AnimeCallbackFunction = js.native
+  var run_Original: AnimeCallbackFunction = js.native
   @JSName("update")
-  var update_Original: animejsLib.AnimeCallbackFunction = js.native
+  var update_Original: AnimeCallbackFunction = js.native
   def begin(anim: AnimeInstance): scala.Unit = js.native
   def complete(anim: AnimeInstance): scala.Unit = js.native
   def pause(): scala.Unit = js.native

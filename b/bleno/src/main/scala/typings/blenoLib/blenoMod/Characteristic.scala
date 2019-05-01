@@ -12,8 +12,8 @@ trait Characteristic extends js.Object {
   val RESULT_SUCCESS: scala.Double
   val RESULT_UNLIKELY_ERROR: scala.Double
   var descriptors: js.Array[Descriptor]
-  var properties: js.Array[blenoLib.Property]
-  var secure: js.Array[blenoLib.Property]
+  var properties: js.Array[Property]
+  var secure: js.Array[Property]
   var uuid: java.lang.String
   var value: nodeLib.Buffer | scala.Null
   def onIndicate(): scala.Unit
@@ -47,8 +47,8 @@ object Characteristic {
     onSubscribe: (scala.Double, js.Any) => scala.Unit,
     onUnsubscribe: () => scala.Unit,
     onWriteRequest: (nodeLib.Buffer, scala.Double, scala.Boolean, js.Function1[/* result */ scala.Double, scala.Unit]) => scala.Unit,
-    properties: js.Array[blenoLib.Property],
-    secure: js.Array[blenoLib.Property],
+    properties: js.Array[Property],
+    secure: js.Array[Property],
     toString: () => java.lang.String,
     uuid: java.lang.String,
     value: nodeLib.Buffer = null

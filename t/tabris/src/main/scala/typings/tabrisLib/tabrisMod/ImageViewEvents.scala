@@ -10,9 +10,7 @@ trait ImageViewEvents extends WidgetEvents {
     * Fired when the [*image*](#image) property has changed.
     * @param value The new value of [*image*](#image).
     */
-  var imageChanged: js.UndefOr[
-    js.Function1[/* event */ PropertyChangedEvent[ImageView, tabrisLib.Image], scala.Unit]
-  ] = js.undefined
+  var imageChanged: js.UndefOr[js.Function1[/* event */ PropertyChangedEvent[ImageView, Image], scala.Unit]] = js.undefined
   /**
     * Fired when the image loading has finished.
     */
@@ -70,8 +68,8 @@ object ImageViewEvents {
   @scala.inline
   def apply(
     backgroundChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.Color] => scala.Unit = null,
-    backgroundImageChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.Image] => scala.Unit = null,
-    baselineChanged: /* event */ PropertyChangedEvent[Widget, Widget | tabrisLib.Selector] => scala.Unit = null,
+    backgroundImageChanged: /* event */ PropertyChangedEvent[Widget, Image] => scala.Unit = null,
+    baselineChanged: /* event */ PropertyChangedEvent[Widget, Widget | Selector] => scala.Unit = null,
     bottomChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.margin] => scala.Unit = null,
     boundsChanged: /* event */ PropertyChangedEvent[Widget, Bounds] => scala.Unit = null,
     centerXChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.offset] => scala.Unit = null,
@@ -87,7 +85,7 @@ object ImageViewEvents {
     heightChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.dimension] => scala.Unit = null,
     highlightOnTouchChanged: /* event */ PropertyChangedEvent[Widget, scala.Boolean] => scala.Unit = null,
     idChanged: /* event */ PropertyChangedEvent[Widget, java.lang.String] => scala.Unit = null,
-    imageChanged: /* event */ PropertyChangedEvent[ImageView, tabrisLib.Image] => scala.Unit = null,
+    imageChanged: /* event */ PropertyChangedEvent[ImageView, Image] => scala.Unit = null,
     layoutDataChanged: /* event */ PropertyChangedEvent[Widget, LayoutData] => scala.Unit = null,
     leftChanged: /* event */ PropertyChangedEvent[Widget, tabrisLib.margin] => scala.Unit = null,
     load: /* event */ ImageViewLoadEvent => scala.Unit = null,

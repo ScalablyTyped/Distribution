@@ -5,20 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Context[T] extends js.Object {
-  @JSName("Consumer")
-  var Consumer_Original: Consumer[T] = js.native
-  @JSName("Provider")
-  var Provider_Original: Provider[T] = js.native
-  var displayName: js.UndefOr[java.lang.String] = js.native
-  /**
-    * **NOTE**: Exotic components are not callable.
-    */
-  def Consumer(props: ConsumerProps[T]): ReactElement[_] | scala.Null = js.native
-  /**
-    * **NOTE**: Exotic components are not callable.
-    */
-  def Provider(props: ProviderProps[T]): ReactElement[_] | scala.Null = js.native
+  var Consumer: reactLib.reactMod.Consumer[T]
+  var Provider: reactLib.reactMod.Provider[T]
+  var displayName: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object Context {
+  @scala.inline
+  def apply[T](Consumer: Consumer[T], Provider: Provider[T], displayName: java.lang.String = null): Context[T] = {
+    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    __obj.asInstanceOf[Context[T]]
+  }
 }
 

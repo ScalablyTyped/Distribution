@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Text extends js.Object {
+trait Text
+  extends dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderMod.MessageType {
   var at: js.UndefOr[dingtalkDashRobotDashSenderLib.Anon_AtMobiles] = js.undefined
   var msgtype: dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderLibStrings.text
   var text: dingtalkDashRobotDashSenderLib.Anon_Content

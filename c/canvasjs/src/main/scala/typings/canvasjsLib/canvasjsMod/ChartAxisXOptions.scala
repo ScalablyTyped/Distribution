@@ -16,7 +16,7 @@ trait ChartAxisXOptions extends ChartAxisOptions {
     * Sets the Dash Type for grid lines on axisX.
     * Default: solid
     */
-  var gridDashType: js.UndefOr[canvasjsLib.DashType] = js.undefined
+  var gridDashType: js.UndefOr[DashType] = js.undefined
   /**
     * Sets the Thickness of Grid Lines. To display grid on Axis X, set the Grid Thickness to a number greater than zero.
     * Default: 0
@@ -193,7 +193,7 @@ object ChartAxisXOptions {
   @scala.inline
   def apply(
     gridColor: java.lang.String = null,
-    gridDashType: canvasjsLib.DashType = null,
+    gridDashType: DashType = null,
     gridThickness: scala.Int | scala.Double = null,
     interlacedColor: java.lang.String = null,
     interval: scala.Int | scala.Double = null,
@@ -210,7 +210,7 @@ object ChartAxisXOptions {
     labelMaxWidth: scala.Int | scala.Double = null,
     labelWrap: js.UndefOr[scala.Boolean] = js.undefined,
     lineColor: java.lang.String = null,
-    lineDashType: canvasjsLib.DashType = null,
+    lineDashType: DashType = null,
     lineThickness: scala.Int | scala.Double = null,
     logarithmBase: scala.Int | scala.Double = null,
     logarithmic: js.UndefOr[scala.Boolean] = js.undefined,

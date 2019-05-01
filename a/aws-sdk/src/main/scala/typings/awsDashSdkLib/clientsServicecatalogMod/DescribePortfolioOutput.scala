@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait DescribePortfolioOutput extends js.Object {
   /**
+    * Information about the associated budgets.
+    */
+  var Budgets: js.UndefOr[Budgets] = js.undefined
+  /**
     * Information about the portfolio.
     */
   var PortfolioDetail: js.UndefOr[PortfolioDetail] = js.undefined
@@ -22,8 +26,14 @@ trait DescribePortfolioOutput extends js.Object {
 
 object DescribePortfolioOutput {
   @scala.inline
-  def apply(PortfolioDetail: PortfolioDetail = null, TagOptions: TagOptionDetails = null, Tags: Tags = null): DescribePortfolioOutput = {
+  def apply(
+    Budgets: Budgets = null,
+    PortfolioDetail: PortfolioDetail = null,
+    TagOptions: TagOptionDetails = null,
+    Tags: Tags = null
+  ): DescribePortfolioOutput = {
     val __obj = js.Dynamic.literal()
+    if (Budgets != null) __obj.updateDynamic("Budgets")(Budgets)
     if (PortfolioDetail != null) __obj.updateDynamic("PortfolioDetail")(PortfolioDetail)
     if (TagOptions != null) __obj.updateDynamic("TagOptions")(TagOptions)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

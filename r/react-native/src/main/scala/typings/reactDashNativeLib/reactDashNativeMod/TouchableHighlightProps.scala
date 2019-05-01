@@ -36,7 +36,7 @@ object TouchableHighlightProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityStates: js.Array[AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     activeOpacity: scala.Int | scala.Double = null,
     delayLongPress: scala.Int | scala.Double = null,

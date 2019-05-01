@@ -72,7 +72,7 @@ trait FilterCriteria extends js.Object {
     *
     * The property used by the filter to do rich filter on richvalues.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     */
   var subField: js.UndefOr[java.lang.String] = js.undefined
   /**

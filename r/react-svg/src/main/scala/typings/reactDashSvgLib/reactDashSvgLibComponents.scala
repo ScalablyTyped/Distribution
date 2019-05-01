@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation._
 object reactDashSvgLibComponents {
   @scala.inline
   def ReactDashSvg: reactLib.reactMod.ComponentType[
-    reactDashSvgLib.reactDashSvgMod.Props with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[WrapperType], WrapperType])
+    reactDashSvgLib.reactDashSvgMod.Props with (reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactDashSvgLib.reactDashSvgMod.WrapperType], 
+      reactDashSvgLib.reactDashSvgMod.WrapperType
+    ])
   ] = js.constructorOf[reactDashSvgLib.reactDashSvgMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSvgLib.reactDashSvgMod.Props with (reactLib.reactMod.DetailedHTMLProps[
-    reactLib.reactMod.HTMLAttributes[reactDashSvgLib.WrapperType], 
-    reactDashSvgLib.WrapperType
+    reactLib.reactMod.HTMLAttributes[reactDashSvgLib.reactDashSvgMod.WrapperType], 
+    reactDashSvgLib.reactDashSvgMod.WrapperType
   ])]]
 }
 

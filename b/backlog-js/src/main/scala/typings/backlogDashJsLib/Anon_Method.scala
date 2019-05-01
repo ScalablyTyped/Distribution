@@ -7,13 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Method extends js.Object {
   var method: java.lang.String
-  var params: js.UndefOr[Params | stdLib.FormData] = js.undefined
+  var params: js.UndefOr[backlogDashJsLib.backlogDashJsMod.Params | stdLib.FormData] = js.undefined
   var path: java.lang.String
 }
 
 object Anon_Method {
   @scala.inline
-  def apply(method: java.lang.String, path: java.lang.String, params: Params | stdLib.FormData = null): Anon_Method = {
+  def apply(
+    method: java.lang.String,
+    path: java.lang.String,
+    params: backlogDashJsLib.backlogDashJsMod.Params | stdLib.FormData = null
+  ): Anon_Method = {
     val __obj = js.Dynamic.literal(method = method, path = path)
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Method]

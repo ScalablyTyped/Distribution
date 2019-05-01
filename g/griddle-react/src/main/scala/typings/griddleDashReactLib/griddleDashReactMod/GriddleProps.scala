@@ -23,15 +23,15 @@ object GriddleProps {
     enableSettings: js.UndefOr[scala.Boolean] = js.undefined,
     events: GriddleEvents = null,
     initialState: GriddleInitialState = null,
-    listeners: PropertyBag[griddleDashReactLib.Listener] = null,
+    listeners: PropertyBag[Listener] = null,
     pageProperties: GriddlePageProperties = null,
     plugins: js.Array[GriddlePlugin] = null,
-    reducer: PropertyBag[griddleDashReactLib.Reducer] = null,
+    reducer: PropertyBag[Reducer] = null,
     reduxMiddleware: js.Array[
       reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]]
     ] = null,
     renderProperties: GriddleRenderProperties = null,
-    selectors: PropertyBag[griddleDashReactLib.Selector] = null,
+    selectors: PropertyBag[Selector] = null,
     settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
     sortMethod: (/* data */ js.Array[_], /* column */ java.lang.String, /* sortAscending */ js.UndefOr[scala.Boolean]) => scala.Double = null,
     sortProperties: js.Array[GriddleSortKey] = null,

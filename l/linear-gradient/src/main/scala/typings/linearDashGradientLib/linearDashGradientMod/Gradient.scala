@@ -9,7 +9,7 @@ trait Gradient extends js.Object {
   /**
     * the input value should be normalized to the range between 0 and 1
     */
-  def calcArray(normalizedPercent: scala.Double): linearDashGradientLib.Color
+  def calcArray(normalizedPercent: scala.Double): Color
   /**
     * the input value should be normalized to the range between 0 and 1
     */
@@ -18,7 +18,7 @@ trait Gradient extends js.Object {
 
 object Gradient {
   @scala.inline
-  def apply(calcArray: scala.Double => linearDashGradientLib.Color, calcHex: scala.Double => java.lang.String): Gradient = {
+  def apply(calcArray: scala.Double => Color, calcHex: scala.Double => java.lang.String): Gradient = {
     val __obj = js.Dynamic.literal(calcArray = js.Any.fromFunction1(calcArray), calcHex = js.Any.fromFunction1(calcHex))
   
     __obj.asInstanceOf[Gradient]

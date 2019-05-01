@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseCallExpression extends BaseNode {
-  var arguments: js.Array[estreeLib.Expression | SpreadElement]
-  var callee: estreeLib.Expression | Super
+  var arguments: js.Array[Expression | SpreadElement]
+  var callee: Expression | Super
 }
 
 object BaseCallExpression {
   @scala.inline
   def apply(
-    arguments: js.Array[estreeLib.Expression | SpreadElement],
-    callee: estreeLib.Expression | Super,
+    arguments: js.Array[Expression | SpreadElement],
+    callee: Expression | Super,
     `type`: java.lang.String,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

@@ -191,6 +191,13 @@ class ConditionalFormat ()
     */
   def getRangeOrNullObject(): Range = js.native
   /**
+    *
+    * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def getRanges(): RangeAreas = js.native
+  /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
     * @remarks

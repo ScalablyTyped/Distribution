@@ -10,7 +10,7 @@ trait Anon_Corner extends js.Object {
   var dot: scala.Boolean
   var overflowCount: scala.Double
   var size: java.lang.String
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
 }
 
 object Anon_Corner {
@@ -20,7 +20,7 @@ object Anon_Corner {
     dot: scala.Boolean,
     overflowCount: scala.Double,
     size: java.lang.String,
-    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   ): Anon_Corner = {
     val __obj = js.Dynamic.literal(corner = corner, dot = dot, overflowCount = overflowCount, size = size, styles = styles)
   

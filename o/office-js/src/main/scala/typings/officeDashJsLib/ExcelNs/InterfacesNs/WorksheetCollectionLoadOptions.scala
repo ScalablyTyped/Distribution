@@ -16,11 +16,26 @@ trait WorksheetCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var autoFilter: js.UndefOr[AutoFilterLoadOptions] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
     *
     * [Api set: ExcelApi 1.1]
     */
   var charts: js.UndefOr[ChartCollectionLoadOptions] = js.undefined
+  /**
+    *
+    * For EACH ITEM in the collection: Gets or sets the enableCalculation property of the worksheet.
+    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var enableCalculation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
@@ -35,6 +50,13 @@ trait WorksheetCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * For EACH ITEM in the collection: Gets the PageLayout object of the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var pageLayout: js.UndefOr[PageLayoutLoadOptions] = js.undefined
   /**
     *
     * For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
@@ -109,9 +131,12 @@ object WorksheetCollectionLoadOptions {
   @scala.inline
   def apply(
     $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFilter: AutoFilterLoadOptions = null,
     charts: ChartCollectionLoadOptions = null,
+    enableCalculation: js.UndefOr[scala.Boolean] = js.undefined,
     id: js.UndefOr[scala.Boolean] = js.undefined,
     name: js.UndefOr[scala.Boolean] = js.undefined,
+    pageLayout: PageLayoutLoadOptions = null,
     position: js.UndefOr[scala.Boolean] = js.undefined,
     protection: WorksheetProtectionLoadOptions = null,
     showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
@@ -124,9 +149,12 @@ object WorksheetCollectionLoadOptions {
   ): WorksheetCollectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
     if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout)
     if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
     if (protection != null) __obj.updateDynamic("protection")(protection)
     if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)

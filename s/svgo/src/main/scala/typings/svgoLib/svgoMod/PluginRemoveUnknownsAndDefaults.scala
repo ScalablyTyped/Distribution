@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveUnknownsAndDefaults extends js.Object {
+trait PluginRemoveUnknownsAndDefaults extends PluginConfig {
   var removeUnknownsAndDefaults: scala.Boolean | js.Object
 }
 

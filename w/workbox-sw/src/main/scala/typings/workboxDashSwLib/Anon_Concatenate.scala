@@ -18,7 +18,7 @@ trait Anon_Concatenate
   	 * @param {Promise<StreamSource>[]} sourcePromises - Array of Promise containing StreamSource
   	 * @returns {ConcatenateResult}
   	 */
-  def concatenate(sourcePromises: js.Array[js.Promise[StreamSource]]): workboxDashSwLib.workboxDashSwMod.ConcatenateResult = js.native
+  def concatenate(sourcePromises: js.Array[js.Promise[workboxDashSwLib.workboxDashSwMod.StreamSource]]): workboxDashSwLib.workboxDashSwMod.ConcatenateResult = js.native
   /**
   	 * Takes multiple source Promises, each of which could resolve to a Response, a
   	 * ReadableStream, or a [BodyInit](https://fetch.spec.whatwg.org/#bodyinit),
@@ -32,8 +32,11 @@ trait Anon_Concatenate
   	 * @param {HeadersInit} [headersInit] - If there's no `Content-Type` specified, `'text/html'` will be used by default.
   	 * @returns {ConcatenateToResponseResult}
   	 */
-  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): workboxDashSwLib.workboxDashSwMod.ConcatenateToResponseResult = js.native
-  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: stdLib.HeadersInit): workboxDashSwLib.workboxDashSwMod.ConcatenateToResponseResult = js.native
+  def concatenateToResponse(sourcePromises: js.Array[js.Promise[workboxDashSwLib.workboxDashSwMod.StreamSource]]): workboxDashSwLib.workboxDashSwMod.ConcatenateToResponseResult = js.native
+  def concatenateToResponse(
+    sourcePromises: js.Array[js.Promise[workboxDashSwLib.workboxDashSwMod.StreamSource]],
+    headersInit: stdLib.HeadersInit
+  ): workboxDashSwLib.workboxDashSwMod.ConcatenateToResponseResult = js.native
   /**
   	 * This is a utility method that determines whether the current browser supports
   	 * the features required to create streamed responses. Currently, it checks if
@@ -52,7 +55,10 @@ trait Anon_Concatenate
   	 * @param {HeadersInit} headersInit - If there's no `Content-Type` specified, `'text/html'` will be used by default.
   	 * @returns {HandlerCallback}
   	 */
-  def strategy(sourceFunctions: js.Array[HandlerCallback]): HandlerCallback = js.native
-  def strategy(sourceFunctions: js.Array[HandlerCallback], headersInit: stdLib.HeadersInit): HandlerCallback = js.native
+  def strategy(sourceFunctions: js.Array[workboxDashSwLib.workboxDashSwMod.HandlerCallback]): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
+  def strategy(
+    sourceFunctions: js.Array[workboxDashSwLib.workboxDashSwMod.HandlerCallback],
+    headersInit: stdLib.HeadersInit
+  ): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
 }
 

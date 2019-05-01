@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._NavigationViewProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, padding, right, top, transform, visible, width, win_theme. Inlined actionColor, actionTextColor, bottomToolbarHeight, drawerActionVisible, navigationAction, pageAnimation, titleTextColor, toolbarColor, toolbarVisible, topToolbarHeight, win_drawerActionBackground, win_drawerActionTheme, win_toolbarOverflowTheme, win_toolbarTheme */ @JSImport("tabris", "NavigationView")
 @js.native
 class NavigationView () extends Composite {
-  def this(properties: tabrisLib.Properties[NavigationView, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[NavigationView, TypeScriptPropertiesKey]) = this()
   /**
     * The color used for action icons.
     */
@@ -65,7 +65,7 @@ class NavigationView () extends Composite {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_NavigationView: tabrisLib.NavigationViewProperties = js.native
+  val tsProperties_NavigationView: NavigationViewProperties = js.native
   /**
     * The background color used for the drawer action. It is common to the make this the same color as the
     * splash screen. Available only on Windows.
@@ -108,7 +108,7 @@ class NavigationView () extends Composite {
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def pages(): WidgetCollection[Page] = js.native
-  def pages(selector: tabrisLib.Selector): WidgetCollection[Page] = js.native
+  def pages(selector: Selector): WidgetCollection[Page] = js.native
   /**
     * Returns the ordered list of pages on the page stack, with the bottommost page as the first and the
     * topmost page as the last element. Same as children(), but only accepts subclasses of `Page`.

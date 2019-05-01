@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait Normalize extends Common {
   var algorithm: js.UndefOr[jsonldLib.jsonldLibStrings.URDNA2015 | jsonldLib.jsonldLibStrings.URGNA2012] = js.undefined
   var expansion: js.UndefOr[scala.Boolean] = js.undefined
-  var format: js.UndefOr[jsonldLib.MimeNQuad] = js.undefined
-  var inputFormat: js.UndefOr[jsonldLib.MimeNQuad] = js.undefined
+  var format: js.UndefOr[jsonldLib.jsonldMod.MimeNQuad] = js.undefined
+  var inputFormat: js.UndefOr[jsonldLib.jsonldMod.MimeNQuad] = js.undefined
   var skipExpansion: js.UndefOr[scala.Boolean] = js.undefined
   var useNative: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -26,8 +26,8 @@ object Normalize {
     ]) => js.Promise[jsonldLib.jsonldDashSpecMod.RemoteDocument] = null,
     expandContext: jsonldLib.jsonldDashSpecMod.Context = null,
     expansion: js.UndefOr[scala.Boolean] = js.undefined,
-    format: jsonldLib.MimeNQuad = null,
-    inputFormat: jsonldLib.MimeNQuad = null,
+    format: jsonldLib.jsonldMod.MimeNQuad = null,
+    inputFormat: jsonldLib.jsonldMod.MimeNQuad = null,
     skipExpansion: js.UndefOr[scala.Boolean] = js.undefined,
     useNative: js.UndefOr[scala.Boolean] = js.undefined
   ): Normalize = {

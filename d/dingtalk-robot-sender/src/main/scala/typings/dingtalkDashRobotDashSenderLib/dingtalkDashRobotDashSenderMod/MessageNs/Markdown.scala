@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Markdown extends js.Object {
+trait Markdown
+  extends dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderMod.MessageType {
   var markdown: dingtalkDashRobotDashSenderLib.Anon_AtMobilesIsAtAll
   var msgtype: dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderLibStrings.markdown
 }

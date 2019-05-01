@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FromRdf extends js.Object {
-  var format: js.UndefOr[jsonldLib.MimeNQuad] = js.undefined
+  var format: js.UndefOr[jsonldLib.jsonldMod.MimeNQuad] = js.undefined
   var rdfParser: js.UndefOr[js.Any] = js.undefined
   var useNativeTypes: js.UndefOr[scala.Boolean] = js.undefined
   var useRdfType: js.UndefOr[scala.Boolean] = js.undefined
@@ -15,7 +15,7 @@ trait FromRdf extends js.Object {
 object FromRdf {
   @scala.inline
   def apply(
-    format: jsonldLib.MimeNQuad = null,
+    format: jsonldLib.jsonldMod.MimeNQuad = null,
     rdfParser: js.Any = null,
     useNativeTypes: js.UndefOr[scala.Boolean] = js.undefined,
     useRdfType: js.UndefOr[scala.Boolean] = js.undefined

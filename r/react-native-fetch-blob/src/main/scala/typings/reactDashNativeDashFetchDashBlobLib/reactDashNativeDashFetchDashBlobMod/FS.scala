@@ -10,24 +10,12 @@ trait FS extends js.Object {
   var RNFetchBlobSession: reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobMod.RNFetchBlobSession = js.native
   var dirs: Dirs = js.native
   def appendFile(path: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(
-    path: java.lang.String,
-    data: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding
-  ): js.Promise[scala.Unit] = js.native
+  def appendFile(path: java.lang.String, data: java.lang.String, encoding: Encoding): js.Promise[scala.Unit] = js.native
   def appendFile(path: java.lang.String, data: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
-  def appendFile(
-    path: java.lang.String,
-    data: js.Array[scala.Double],
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding
-  ): js.Promise[scala.Unit] = js.native
+  def appendFile(path: java.lang.String, data: js.Array[scala.Double], encoding: Encoding): js.Promise[scala.Unit] = js.native
   def asset(path: java.lang.String): java.lang.String = js.native
   def cp(path: java.lang.String, dest: java.lang.String): js.Promise[scala.Boolean] = js.native
-  def createFile(
-    path: java.lang.String,
-    data: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding
-  ): js.Promise[scala.Unit] = js.native
+  def createFile(path: java.lang.String, data: java.lang.String, encoding: Encoding): js.Promise[scala.Unit] = js.native
   def df(): js.Promise[reactDashNativeDashFetchDashBlobLib.Anon_Free] = js.native
   /**
     * Check if file exists and if it is a folder.
@@ -48,12 +36,8 @@ trait FS extends js.Object {
     * @param  path Path of the file.
     * @param  encoding Encoding of read stream.
     */
-  def readFile(path: java.lang.String, encoding: reactDashNativeDashFetchDashBlobLib.Encoding): js.Promise[_] = js.native
-  def readFile(
-    path: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding,
-    bufferSize: scala.Double
-  ): js.Promise[_] = js.native
+  def readFile(path: java.lang.String, encoding: Encoding): js.Promise[_] = js.native
+  def readFile(path: java.lang.String, encoding: Encoding, bufferSize: scala.Double): js.Promise[_] = js.native
   /**
     * Create file stream from file at `path`.
     * @param  path   The file path.
@@ -61,18 +45,9 @@ trait FS extends js.Object {
     * @param  bufferSize Size of stream buffer.
     * @return RNFetchBlobStream stream instance.
     */
-  def readStream(path: java.lang.String, encoding: reactDashNativeDashFetchDashBlobLib.Encoding): js.Promise[RNFetchBlobReadStream] = js.native
-  def readStream(
-    path: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding,
-    bufferSize: scala.Double
-  ): js.Promise[RNFetchBlobReadStream] = js.native
-  def readStream(
-    path: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding,
-    bufferSize: scala.Double,
-    tick: scala.Double
-  ): js.Promise[RNFetchBlobReadStream] = js.native
+  def readStream(path: java.lang.String, encoding: Encoding): js.Promise[RNFetchBlobReadStream] = js.native
+  def readStream(path: java.lang.String, encoding: Encoding, bufferSize: scala.Double): js.Promise[RNFetchBlobReadStream] = js.native
+  def readStream(path: java.lang.String, encoding: Encoding, bufferSize: scala.Double, tick: scala.Double): js.Promise[RNFetchBlobReadStream] = js.native
   /**
     * Android only method, request media scanner to scan the file.
     * @param  pairs Array contains Key value pairs with key `path` and `mime`.
@@ -101,17 +76,9 @@ trait FS extends js.Object {
     * @param  encoding Encoding of data (Optional).
     */
   def writeFile(path: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(
-    path: java.lang.String,
-    data: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding
-  ): js.Promise[scala.Unit] = js.native
+  def writeFile(path: java.lang.String, data: java.lang.String, encoding: Encoding): js.Promise[scala.Unit] = js.native
   def writeFile(path: java.lang.String, data: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
-  def writeFile(
-    path: java.lang.String,
-    data: js.Array[scala.Double],
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding
-  ): js.Promise[scala.Unit] = js.native
+  def writeFile(path: java.lang.String, data: js.Array[scala.Double], encoding: Encoding): js.Promise[scala.Unit] = js.native
   /**
     * Create write stream to a file.
     * @param  path Target path of file stream.
@@ -119,11 +86,7 @@ trait FS extends js.Object {
     * @param  append  A flag represent if data append to existing ones.
     * @return A promise resolves a `WriteStream` object.
     */
-  def writeStream(path: java.lang.String, encoding: reactDashNativeDashFetchDashBlobLib.Encoding): js.Promise[RNFetchBlobWriteStream] = js.native
-  def writeStream(
-    path: java.lang.String,
-    encoding: reactDashNativeDashFetchDashBlobLib.Encoding,
-    append: scala.Boolean
-  ): js.Promise[RNFetchBlobWriteStream] = js.native
+  def writeStream(path: java.lang.String, encoding: Encoding): js.Promise[RNFetchBlobWriteStream] = js.native
+  def writeStream(path: java.lang.String, encoding: Encoding, append: scala.Boolean): js.Promise[RNFetchBlobWriteStream] = js.native
 }
 

@@ -11,6 +11,10 @@ trait ProvisioningArtifactProperties extends js.Object {
     */
   var Description: js.UndefOr[ProvisioningArtifactDescription] = js.undefined
   /**
+    * If set to true, AWS Service Catalog stops validating the specified provisioning artifact even if it is invalid.
+    */
+  var DisableTemplateValidation: js.UndefOr[DisableTemplateValidation] = js.undefined
+  /**
     * The URL of the CloudFormation template in Amazon S3. Specify the URL in JSON format as follows:  "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..." 
     */
   var Info: ProvisioningArtifactInfo
@@ -29,11 +33,13 @@ object ProvisioningArtifactProperties {
   def apply(
     Info: ProvisioningArtifactInfo,
     Description: ProvisioningArtifactDescription = null,
+    DisableTemplateValidation: js.UndefOr[DisableTemplateValidation] = js.undefined,
     Name: ProvisioningArtifactName = null,
     Type: ProvisioningArtifactType = null
   ): ProvisioningArtifactProperties = {
     val __obj = js.Dynamic.literal(Info = Info)
     if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (!js.isUndefined(DisableTemplateValidation)) __obj.updateDynamic("DisableTemplateValidation")(DisableTemplateValidation)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningArtifactProperties]

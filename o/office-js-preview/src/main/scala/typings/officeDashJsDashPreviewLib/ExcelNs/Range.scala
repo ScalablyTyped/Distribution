@@ -163,8 +163,7 @@ class Range ()
     *
     * Represents the data type state of each cell. Read-only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val linkedDataTypeState: js.Array[js.Array[LinkedDataTypeState]] = js.native
   /**
@@ -276,8 +275,7 @@ class Range ()
     * Fills range from the current range to the destination range.
     The destination range must extend the source either horizontally or vertically. Discontiguous ranges are not supported.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param destinationRange The destination range to autofill.
     * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
@@ -319,16 +317,14 @@ class Range ()
     *
     * Converts the range cells with datatypes into text.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def convertDataTypeToText(): scala.Unit = js.native
   /**
     *
     * Converts the range cells into linked datatype in the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param serviceID The Service ID which will be used to query the data.
     * @param languageCulture Language Culture to query the service for.
@@ -348,8 +344,7 @@ class Range ()
     * Copies cell data or formatting from the source range or RangeAreas to the current range.
     The destination range can be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param sourceRange The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the outline form which can be created by removing full rows or columns from a rectangular range.
     * @param copyType The type of cell data or formatting to copy over. Default is "All".
@@ -602,8 +597,7 @@ class Range ()
     * Finds the given string based on the criteria specified.
     If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text String to find.
     * @param criteria Additional Criteria.
@@ -616,8 +610,7 @@ class Range ()
     If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
     If there are no matches, this function will return a null object.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text String to find.
     * @param criteria Additional Criteria.
@@ -628,8 +621,7 @@ class Range ()
     *
     * Does FlashFill to current range.Flash Fill will automatically fills data when it senses a pattern, so the range must be single column range and have data around in order to find pattern.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def flashFill(): scala.Unit = js.native
   /**
@@ -666,8 +658,7 @@ class Range ()
     *
     * Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellPropertiesLoadOptions An object that represents which cell properties to load.
     * @returns A 2D array where each item represents the requested properties of the corresponding cell.
@@ -686,8 +677,7 @@ class Range ()
     *
     * Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given column, null will be returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param columnPropertiesLoadOptions An object that represents which column properties to load.
     * @returns An array where each item represents the requested properties of the corresponding column.
@@ -808,8 +798,7 @@ class Range ()
     *
     * Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given row, null will be returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param rowPropertiesLoadOptions An object that represents which row properties to load.
     * @returns An array where each item represents the requested properties of the corresponding row.
@@ -840,8 +829,7 @@ class Range ()
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, an ItemNotFound error will be thrown.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -885,8 +873,7 @@ class Range ()
     * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, a null object will be returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -932,7 +919,7 @@ class Range ()
     * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, a null object will be returned.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -958,7 +945,7 @@ class Range ()
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, an ItemNotFound error will be thrown.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellType The type of cells to include.
     * @param cellValueType If cellType is either Constants or Formulas, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
@@ -1022,8 +1009,7 @@ class Range ()
     *
     * Gets a scoped collection of tables that overlap with the range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param fullyContained If true, returns only tables that are fully contained within the range bounds. The default value is false.
     */
@@ -1111,8 +1097,7 @@ class Range ()
     *
     * Removes duplicate values from the range specified by the columns.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param columns The columns inside the range that may contain duplicates. At least one column needs to be specified. Zero-indexed.
     * @param includesHeader True if the input data contains header. Default is false.
@@ -1123,8 +1108,7 @@ class Range ()
     *
     * Finds and replaces the given string based on the criteria specified within the current range.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param text String to find.
     * @param replacement String to replace the original with.
@@ -1161,8 +1145,7 @@ class Range ()
     *
     * Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders, alignment, and so forth.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param cellPropertiesData A 2D array that represents which properties to set in each cell.
     */
@@ -1171,8 +1154,7 @@ class Range ()
     *
     * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param columnPropertiesData An array that represents which properties to set in each column.
     */
@@ -1181,16 +1163,14 @@ class Range ()
     *
     * Set a range to be recalculated when the next recalculation occurs.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def setDirty(): scala.Unit = js.native
   /**
     *
     * Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill, borders, alignment, and so forth.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     *
     * @param rowPropertiesData An array that represents which properties to set in each row.
     */

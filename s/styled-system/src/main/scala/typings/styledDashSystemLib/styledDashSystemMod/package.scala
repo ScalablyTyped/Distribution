@@ -26,7 +26,9 @@ package object styledDashSystemMod {
     SpaceProps[TLengthStyledSystem], 
     styledDashSystemLib.styledDashSystemLibStrings.mt | styledDashSystemLib.styledDashSystemLibStrings.marginTop
   ]
-  type ObjectOrArray[T] = js.Array[T] | org.scalablytyped.runtime.StringDictionary[T]
+  type ObjectOrArray[T] = js.Array[T] | (org.scalablytyped.runtime.StringDictionary[
+    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias styled-system.styled-system.ObjectOrArray<T> */ js.Object)
+  ])
   type PaddingBottomProps = stdLib.Pick[
     SpaceProps[TLengthStyledSystem], 
     styledDashSystemLib.styledDashSystemLibStrings.pb | styledDashSystemLib.styledDashSystemLibStrings.paddingBottom

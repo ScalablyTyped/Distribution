@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-link-header
 
-Typings are for version 0.6
+Typings are for version 1.0.2
 
 ## Library description:
 Parse & format HTTP link headers according to RFC 8288
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for http-link-header 0.6
+// Type definitions for http-link-header 1.0.2
 // Project: https://github.com/jhermsmeier/node-http-link-header
 // Definitions by: Christian Rackerseder <https://github.com/screendriver>
+//                 Noah Loomans <https://github.com/nloomans>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

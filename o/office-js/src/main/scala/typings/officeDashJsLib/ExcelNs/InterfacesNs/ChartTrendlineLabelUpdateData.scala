@@ -47,6 +47,13 @@ trait ChartTrendlineLabelUpdateData extends js.Object {
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
+    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * String value that represents the format code for trendline label.
     *
     * [Api set: ExcelApi 1.8]
@@ -93,6 +100,7 @@ object ChartTrendlineLabelUpdateData {
     formula: java.lang.String = null,
     horizontalAlignment: officeDashJsLib.ExcelNs.ChartTextHorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
     left: scala.Int | scala.Double = null,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormat: java.lang.String = null,
     text: java.lang.String = null,
     textOrientation: scala.Int | scala.Double = null,
@@ -105,6 +113,7 @@ object ChartTrendlineLabelUpdateData {
     if (formula != null) __obj.updateDynamic("formula")(formula)
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
     if (text != null) __obj.updateDynamic("text")(text)
     if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])

@@ -21,6 +21,7 @@ object ComposibleValidatable {
   @scala.inline
   def apply[TValue](
     $: TValue,
+    disableAutoValidation: () => scala.Unit,
     enableAutoValidation: () => scala.Unit,
     hasError: scala.Boolean,
     on$ChangeAfterValidation: () => scala.Unit,
@@ -31,7 +32,7 @@ object ComposibleValidatable {
     validating: scala.Boolean,
     error: java.lang.String = null
   ): ComposibleValidatable[TValue] = {
-    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], enableAutoValidation = js.Any.fromFunction0(enableAutoValidation), hasError = hasError, on$ChangeAfterValidation = js.Any.fromFunction0(on$ChangeAfterValidation), on$Reinit = js.Any.fromFunction0(on$Reinit), reset = js.Any.fromFunction0(reset), setCompositionParent = js.Any.fromFunction1(setCompositionParent), validate = js.Any.fromFunction0(validate), validating = validating)
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], disableAutoValidation = js.Any.fromFunction0(disableAutoValidation), enableAutoValidation = js.Any.fromFunction0(enableAutoValidation), hasError = hasError, on$ChangeAfterValidation = js.Any.fromFunction0(on$ChangeAfterValidation), on$Reinit = js.Any.fromFunction0(on$Reinit), reset = js.Any.fromFunction0(reset), setCompositionParent = js.Any.fromFunction1(setCompositionParent), validate = js.Any.fromFunction0(validate), validating = validating)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[ComposibleValidatable[TValue]]
   }

@@ -7,20 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Fields extends js.Object {
   var fields: org.scalablytyped.runtime.StringDictionary[js.Any]
-  var files: js.UndefOr[
-    js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify fs.ReadStream */ _
-    ]
-  ] = js.undefined
+  var files: js.UndefOr[js.Array[nodeLib.fsMod.ReadStream]] = js.undefined
 }
 
 object Anon_Fields {
   @scala.inline
   def apply(
     fields: org.scalablytyped.runtime.StringDictionary[js.Any],
-    files: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify fs.ReadStream */ _
-    ] = null
+    files: js.Array[nodeLib.fsMod.ReadStream] = null
   ): Anon_Fields = {
     val __obj = js.Dynamic.literal(fields = fields)
     if (files != null) __obj.updateDynamic("files")(files)

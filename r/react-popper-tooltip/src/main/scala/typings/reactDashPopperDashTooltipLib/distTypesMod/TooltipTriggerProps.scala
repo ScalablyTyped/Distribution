@@ -34,11 +34,11 @@ trait TooltipTriggerProps extends js.Object {
   /**
     * Function that can be used to obtain a tooltip element reference
     */
-  var getTooltipRef: js.UndefOr[reactDashPopperLib.RefHandler] = js.undefined
+  var getTooltipRef: js.UndefOr[reactDashPopperLib.reactDashPopperMod.RefHandler] = js.undefined
   /**
     * Function that can be used to obtain a trigger element reference
     */
-  var getTriggerRef: js.UndefOr[reactDashPopperLib.RefHandler] = js.undefined
+  var getTriggerRef: js.UndefOr[reactDashPopperLib.reactDashPopperMod.RefHandler] = js.undefined
   /**
     * Modifiers passed directly to the underlying popper.js instance
     * For more information, refer to Popper.js’ modifier docs:
@@ -99,8 +99,8 @@ object TooltipTriggerProps {
     tooltip: TooltipArg => reactLib.reactMod.ReactNode,
     trigger: reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.none | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.click | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.`right-click` | reactDashPopperDashTooltipLib.reactDashPopperDashTooltipLibStrings.hover,
     usePortal: scala.Boolean,
-    getTooltipRef: reactDashPopperLib.RefHandler = null,
-    getTriggerRef: reactDashPopperLib.RefHandler = null,
+    getTooltipRef: reactDashPopperLib.reactDashPopperMod.RefHandler = null,
+    getTriggerRef: reactDashPopperLib.reactDashPopperMod.RefHandler = null,
     modifiers: popperDotJsLib.popperDotJsMod.PopperNs.Modifiers = null,
     tooltipShown: js.UndefOr[scala.Boolean] = js.undefined
   ): TooltipTriggerProps = {

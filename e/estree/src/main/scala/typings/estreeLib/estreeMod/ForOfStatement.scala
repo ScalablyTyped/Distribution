@@ -17,7 +17,7 @@ object ForOfStatement {
   def apply(
     body: Statement,
     left: VariableDeclaration | Pattern,
-    right: estreeLib.Expression,
+    right: Expression,
     `type`: estreeLib.estreeLibStrings.ForOfStatement,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

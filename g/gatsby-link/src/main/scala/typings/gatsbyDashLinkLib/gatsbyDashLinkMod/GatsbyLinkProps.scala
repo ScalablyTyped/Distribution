@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait GatsbyLinkProps[TState]
   extends atReachRouterLib.atReachRouterMod.LinkProps[TState] {
+  /** A class to apply when this Link is active */
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
+  /** Inline styles for when this Link is active */
   var activeStyle: js.UndefOr[js.Object] = js.undefined
   var innerRef: js.UndefOr[js.Function] = js.undefined
   var onClick: js.UndefOr[
@@ -16,7 +18,9 @@ trait GatsbyLinkProps[TState]
       scala.Unit
     ]
   ] = js.undefined
+  /** Class the link as highlighted if there is a partial match via a the `to` being prefixed to the current url */
   var partiallyActive: js.UndefOr[scala.Boolean] = js.undefined
+  /** The URL you want to link to */
   @JSName("to")
   var to_GatsbyLinkProps: java.lang.String
 }

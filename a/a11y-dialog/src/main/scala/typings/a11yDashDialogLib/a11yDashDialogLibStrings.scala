@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object a11yDashDialogLibStrings {
   @js.native
-  sealed trait create extends DialogEvents
+  sealed trait create
+    extends a11yDashDialogLib.a11yDashDialogMod.DialogEvents
   
   @js.native
-  sealed trait destroy extends DialogEvents
+  sealed trait destroy
+    extends a11yDashDialogLib.a11yDashDialogMod.DialogEvents
   
   @js.native
-  sealed trait hide extends DialogEvents
+  sealed trait hide
+    extends a11yDashDialogLib.a11yDashDialogMod.DialogEvents
   
   @js.native
-  sealed trait show extends DialogEvents
+  sealed trait show
+    extends a11yDashDialogLib.a11yDashDialogMod.DialogEvents
   
   @scala.inline
   def create: create = "create".asInstanceOf[create]

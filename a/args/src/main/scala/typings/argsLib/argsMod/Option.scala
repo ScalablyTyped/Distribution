@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Option extends js.Object {
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   var description: java.lang.String
-  var init: js.UndefOr[argsLib.OptionInitFunction] = js.undefined
+  var init: js.UndefOr[OptionInitFunction] = js.undefined
   var name: java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])
 }
 
@@ -18,7 +18,7 @@ object Option {
     description: java.lang.String,
     name: java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]),
     defaultValue: js.Any = null,
-    init: argsLib.OptionInitFunction = null
+    init: OptionInitFunction = null
   ): Option = {
     val __obj = js.Dynamic.literal(description = description, name = name.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

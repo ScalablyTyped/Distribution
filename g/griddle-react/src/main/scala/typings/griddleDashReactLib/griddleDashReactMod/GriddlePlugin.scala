@@ -20,13 +20,13 @@ object GriddlePlugin {
     components: GriddleComponents = null,
     events: GriddleEvents = null,
     initialState: GriddleInitialState = null,
-    listeners: PropertyBag[griddleDashReactLib.Listener] = null,
-    reducer: PropertyBag[griddleDashReactLib.Reducer] = null,
+    listeners: PropertyBag[Listener] = null,
+    reducer: PropertyBag[Reducer] = null,
     reduxMiddleware: js.Array[
       reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]]
     ] = null,
     renderProperties: GriddleRenderProperties = null,
-    selectors: PropertyBag[griddleDashReactLib.Selector] = null,
+    selectors: PropertyBag[Selector] = null,
     settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
     styleConfig: GriddleStyleConfig = null
   ): GriddlePlugin = {

@@ -39,7 +39,12 @@ object graphlibNs extends js.Object {
     def removeNode(name: java.lang.String): Graph = js.native
     def setDefaultEdgeLabel(callback: java.lang.String): Graph = js.native
     def setDefaultEdgeLabel(
-      callback: js.Function1[/* edge */ dagreLib.dagreMod.Edge, java.lang.String | dagreLib.dagreMod.Label]
+      callback: js.Function3[
+          /* v */ java.lang.String, 
+          /* w */ java.lang.String, 
+          /* name */ js.UndefOr[java.lang.String], 
+          java.lang.String | dagreLib.dagreMod.Label
+        ]
     ): Graph = js.native
     def setDefaultNodeLabel(callback: java.lang.String): Graph = js.native
     def setDefaultNodeLabel(callback: js.Function1[/* nodeId */ java.lang.String, java.lang.String | dagreLib.dagreMod.Label]): Graph = js.native

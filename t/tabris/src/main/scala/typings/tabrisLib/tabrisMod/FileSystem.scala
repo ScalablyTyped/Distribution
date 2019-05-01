@@ -30,7 +30,7 @@ class FileSystem protected () extends NativeObject {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_FileSystem: tabrisLib.FileSystemProperties = js.native
+  val tsProperties_FileSystem: FileSystemProperties = js.native
   /**
     * Reads the contents of a given directory. Returns a promise that resolves on success to an array of
     * the names of the files in the directory excluding '.' and '..'. In case of failure, the Promise

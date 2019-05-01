@@ -41,6 +41,14 @@ class RangeBorder ()
   var style: BorderLineStyle | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Continuous | officeDashJsLib.officeDashJsLibStrings.Dash | officeDashJsLib.officeDashJsLibStrings.DashDot | officeDashJsLib.officeDashJsLibStrings.DashDotDot | officeDashJsLib.officeDashJsLibStrings.Dot | officeDashJsLib.officeDashJsLibStrings.Double | officeDashJsLib.officeDashJsLibStrings.SlantDashDot = js.native
   /**
     *
+    * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A null value indicates that the border doesn't have uniform tintAndShade setting.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var tintAndShade: scala.Double = js.native
+  /**
+    *
     * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
     *
     * [Api set: ExcelApi 1.1]

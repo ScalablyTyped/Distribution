@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Super
   extends BaseNode
-     with _Node {
+     with Node {
   @JSName("type")
   var type_Super: estreeLib.estreeLibStrings.Super
 }

@@ -10,13 +10,9 @@ trait Request
   extends stdLib.Promise[Response] {
   def abort(): scala.Unit = js.native
   def accept(`type`: java.lang.String): this.type = js.native
-  def attach(field: java.lang.String, file: superagentLib.MultipartValueSingle): this.type = js.native
-  def attach(field: java.lang.String, file: superagentLib.MultipartValueSingle, options: java.lang.String): this.type = js.native
-  def attach(
-    field: java.lang.String,
-    file: superagentLib.MultipartValueSingle,
-    options: superagentLib.Anon_ContentType
-  ): this.type = js.native
+  def attach(field: java.lang.String, file: MultipartValueSingle): this.type = js.native
+  def attach(field: java.lang.String, file: MultipartValueSingle, options: java.lang.String): this.type = js.native
+  def attach(field: java.lang.String, file: MultipartValueSingle, options: superagentLib.Anon_ContentType): this.type = js.native
   def auth(token: java.lang.String, options: superagentLib.Anon_Bearer): this.type = js.native
   def auth(user: java.lang.String, pass: java.lang.String): this.type = js.native
   def auth(user: java.lang.String, pass: java.lang.String, options: superagentLib.Anon_Auto): this.type = js.native
@@ -27,9 +23,9 @@ trait Request
   def cert(cert: nodeLib.Buffer): this.type = js.native
   def clearTimeout(): this.type = js.native
   def end(): scala.Unit = js.native
-  def end(callback: superagentLib.CallbackHandler): scala.Unit = js.native
-  def field(fields: org.scalablytyped.runtime.StringDictionary[superagentLib.MultipartValue]): this.type = js.native
-  def field(name: java.lang.String, `val`: superagentLib.MultipartValue): this.type = js.native
+  def end(callback: CallbackHandler): scala.Unit = js.native
+  def field(fields: org.scalablytyped.runtime.StringDictionary[MultipartValue]): this.type = js.native
+  def field(name: java.lang.String, `val`: MultipartValue): this.type = js.native
   def get(field: java.lang.String): java.lang.String = js.native
   def key(cert: java.lang.String): this.type = js.native
   def key(cert: nodeLib.Buffer): this.type = js.native
@@ -46,7 +42,7 @@ trait Request
     name: superagentLib.superagentLibStrings.progress,
     handler: js.Function1[/* event */ ProgressEvent, scala.Unit]
   ): this.type = js.native
-  def parse(parser: superagentLib.Parser): this.type = js.native
+  def parse(parser: Parser): this.type = js.native
   def part(): this.type = js.native
   def pfx(cert: java.lang.String): this.type = js.native
   def pfx(cert: nodeLib.Buffer): this.type = js.native
@@ -59,11 +55,11 @@ trait Request
   def responseType(`type`: java.lang.String): this.type = js.native
   def retry(): this.type = js.native
   def retry(count: scala.Double): this.type = js.native
-  def retry(count: scala.Double, callback: superagentLib.CallbackHandler): this.type = js.native
+  def retry(count: scala.Double, callback: CallbackHandler): this.type = js.native
   def send(): this.type = js.native
   def send(data: java.lang.String): this.type = js.native
   def send(data: js.Object): this.type = js.native
-  def serialize(serializer: superagentLib.Serializer): this.type = js.native
+  def serialize(serializer: Serializer): this.type = js.native
   def set(field: java.lang.String, `val`: java.lang.String): this.type = js.native
   def set(field: js.Object): this.type = js.native
   @JSName("set")

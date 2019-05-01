@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BinaryExpression extends BaseNode {
-  var left: estreeLib.Expression
+trait BinaryExpression
+  extends BaseNode
+     with Expression {
+  var left: Expression
   var operator: BinaryOperator
-  var right: estreeLib.Expression
+  var right: Expression
   @JSName("type")
   var type_BinaryExpression: estreeLib.estreeLibStrings.BinaryExpression
 }
@@ -16,9 +18,9 @@ trait BinaryExpression extends BaseNode {
 object BinaryExpression {
   @scala.inline
   def apply(
-    left: estreeLib.Expression,
+    left: Expression,
     operator: BinaryOperator,
-    right: estreeLib.Expression,
+    right: Expression,
     `type`: estreeLib.estreeLibStrings.BinaryExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

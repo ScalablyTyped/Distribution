@@ -25,10 +25,10 @@ trait Counterpart extends js.Object {
   def Translator(key: js.Array[java.lang.String], options: js.Object): java.lang.String = js.native
   def getLocale(): java.lang.String = js.native
   def localize(date: stdLib.Date, options: js.Object): java.lang.String = js.native
-  def offLocaleChange(callback: counterpartLib.LocaleChangeHandler): scala.Unit = js.native
-  def offTranslationNotFound(callback: counterpartLib.NotFoundHandler): scala.Unit = js.native
-  def onLocaleChange(callback: counterpartLib.LocaleChangeHandler): scala.Unit = js.native
-  def onTranslationNotFound(callback: counterpartLib.NotFoundHandler): scala.Unit = js.native
+  def offLocaleChange(callback: LocaleChangeHandler): scala.Unit = js.native
+  def offTranslationNotFound(callback: NotFoundHandler): scala.Unit = js.native
+  def onLocaleChange(callback: LocaleChangeHandler): scala.Unit = js.native
+  def onTranslationNotFound(callback: NotFoundHandler): scala.Unit = js.native
   def registerInterpolations(data: js.Object): scala.Unit = js.native
   def registerTranslations(locale: java.lang.String, data: js.Object): scala.Unit = js.native
   def setFallbackLocale(value: java.lang.String): scala.Unit = js.native

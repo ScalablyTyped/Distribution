@@ -6,99 +6,65 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ViewportFallback[TLength] extends js.Object {
-  var OOrientation: js.UndefOr[
-    csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty]
-  ] = js.undefined
-  var height: js.UndefOr[
-    csstypeLib.ViewportHeightProperty[TLength] | js.Array[csstypeLib.ViewportHeightProperty[TLength]]
-  ] = js.undefined
+  var OOrientation: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.undefined
+  var height: js.UndefOr[ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]] = js.undefined
   var maxHeight: js.UndefOr[
-    csstypeLib.ViewportMaxHeightProperty[TLength] | js.Array[csstypeLib.ViewportMaxHeightProperty[TLength]]
+    ViewportMaxHeightProperty[TLength] | js.Array[ViewportMaxHeightProperty[TLength]]
   ] = js.undefined
-  var maxWidth: js.UndefOr[
-    csstypeLib.ViewportMaxWidthProperty[TLength] | js.Array[csstypeLib.ViewportMaxWidthProperty[TLength]]
-  ] = js.undefined
-  var maxZoom: js.UndefOr[
-    csstypeLib.ViewportMaxZoomProperty | js.Array[csstypeLib.ViewportMaxZoomProperty]
-  ] = js.undefined
+  var maxWidth: js.UndefOr[ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]]] = js.undefined
+  var maxZoom: js.UndefOr[ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty]] = js.undefined
   var minHeight: js.UndefOr[
-    csstypeLib.ViewportMinHeightProperty[TLength] | js.Array[csstypeLib.ViewportMinHeightProperty[TLength]]
+    ViewportMinHeightProperty[TLength] | js.Array[ViewportMinHeightProperty[TLength]]
   ] = js.undefined
-  var minWidth: js.UndefOr[
-    csstypeLib.ViewportMinWidthProperty[TLength] | js.Array[csstypeLib.ViewportMinWidthProperty[TLength]]
-  ] = js.undefined
-  var minZoom: js.UndefOr[
-    csstypeLib.ViewportMinZoomProperty | js.Array[csstypeLib.ViewportMinZoomProperty]
-  ] = js.undefined
-  var msHeight: js.UndefOr[
-    csstypeLib.ViewportHeightProperty[TLength] | js.Array[csstypeLib.ViewportHeightProperty[TLength]]
-  ] = js.undefined
+  var minWidth: js.UndefOr[ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]]] = js.undefined
+  var minZoom: js.UndefOr[ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty]] = js.undefined
+  var msHeight: js.UndefOr[ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]] = js.undefined
   var msMaxHeight: js.UndefOr[
-    csstypeLib.ViewportMaxHeightProperty[TLength] | js.Array[csstypeLib.ViewportMaxHeightProperty[TLength]]
+    ViewportMaxHeightProperty[TLength] | js.Array[ViewportMaxHeightProperty[TLength]]
   ] = js.undefined
-  var msMaxWidth: js.UndefOr[
-    csstypeLib.ViewportMaxWidthProperty[TLength] | js.Array[csstypeLib.ViewportMaxWidthProperty[TLength]]
-  ] = js.undefined
-  var msMaxZoom: js.UndefOr[
-    csstypeLib.ViewportMaxZoomProperty | js.Array[csstypeLib.ViewportMaxZoomProperty]
-  ] = js.undefined
+  var msMaxWidth: js.UndefOr[ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]]] = js.undefined
+  var msMaxZoom: js.UndefOr[ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty]] = js.undefined
   var msMinHeight: js.UndefOr[
-    csstypeLib.ViewportMinHeightProperty[TLength] | js.Array[csstypeLib.ViewportMinHeightProperty[TLength]]
+    ViewportMinHeightProperty[TLength] | js.Array[ViewportMinHeightProperty[TLength]]
   ] = js.undefined
-  var msMinWidth: js.UndefOr[
-    csstypeLib.ViewportMinWidthProperty[TLength] | js.Array[csstypeLib.ViewportMinWidthProperty[TLength]]
-  ] = js.undefined
-  var msMinZoom: js.UndefOr[
-    csstypeLib.ViewportMinZoomProperty | js.Array[csstypeLib.ViewportMinZoomProperty]
-  ] = js.undefined
-  var msOrientation: js.UndefOr[
-    csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty]
-  ] = js.undefined
-  var msUserZoom: js.UndefOr[
-    csstypeLib.ViewportUserZoomProperty | js.Array[csstypeLib.ViewportUserZoomProperty]
-  ] = js.undefined
-  var msWidth: js.UndefOr[
-    csstypeLib.ViewportWidthProperty[TLength] | js.Array[csstypeLib.ViewportWidthProperty[TLength]]
-  ] = js.undefined
-  var msZoom: js.UndefOr[csstypeLib.ViewportZoomProperty | js.Array[csstypeLib.ViewportZoomProperty]] = js.undefined
-  var orientation: js.UndefOr[
-    csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty]
-  ] = js.undefined
-  var userZoom: js.UndefOr[
-    csstypeLib.ViewportUserZoomProperty | js.Array[csstypeLib.ViewportUserZoomProperty]
-  ] = js.undefined
-  var width: js.UndefOr[
-    csstypeLib.ViewportWidthProperty[TLength] | js.Array[csstypeLib.ViewportWidthProperty[TLength]]
-  ] = js.undefined
-  var zoom: js.UndefOr[csstypeLib.ViewportZoomProperty | js.Array[csstypeLib.ViewportZoomProperty]] = js.undefined
+  var msMinWidth: js.UndefOr[ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]]] = js.undefined
+  var msMinZoom: js.UndefOr[ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty]] = js.undefined
+  var msOrientation: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.undefined
+  var msUserZoom: js.UndefOr[ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty]] = js.undefined
+  var msWidth: js.UndefOr[ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]]] = js.undefined
+  var msZoom: js.UndefOr[ViewportZoomProperty | js.Array[ViewportZoomProperty]] = js.undefined
+  var orientation: js.UndefOr[ViewportOrientationProperty | js.Array[ViewportOrientationProperty]] = js.undefined
+  var userZoom: js.UndefOr[ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty]] = js.undefined
+  var width: js.UndefOr[ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]]] = js.undefined
+  var zoom: js.UndefOr[ViewportZoomProperty | js.Array[ViewportZoomProperty]] = js.undefined
 }
 
 object ViewportFallback {
   @scala.inline
   def apply[TLength](
-    OOrientation: csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty] = null,
-    height: csstypeLib.ViewportHeightProperty[TLength] | js.Array[csstypeLib.ViewportHeightProperty[TLength]] = null,
-    maxHeight: csstypeLib.ViewportMaxHeightProperty[TLength] | js.Array[csstypeLib.ViewportMaxHeightProperty[TLength]] = null,
-    maxWidth: csstypeLib.ViewportMaxWidthProperty[TLength] | js.Array[csstypeLib.ViewportMaxWidthProperty[TLength]] = null,
-    maxZoom: csstypeLib.ViewportMaxZoomProperty | js.Array[csstypeLib.ViewportMaxZoomProperty] = null,
-    minHeight: csstypeLib.ViewportMinHeightProperty[TLength] | js.Array[csstypeLib.ViewportMinHeightProperty[TLength]] = null,
-    minWidth: csstypeLib.ViewportMinWidthProperty[TLength] | js.Array[csstypeLib.ViewportMinWidthProperty[TLength]] = null,
-    minZoom: csstypeLib.ViewportMinZoomProperty | js.Array[csstypeLib.ViewportMinZoomProperty] = null,
-    msHeight: csstypeLib.ViewportHeightProperty[TLength] | js.Array[csstypeLib.ViewportHeightProperty[TLength]] = null,
-    msMaxHeight: csstypeLib.ViewportMaxHeightProperty[TLength] | js.Array[csstypeLib.ViewportMaxHeightProperty[TLength]] = null,
-    msMaxWidth: csstypeLib.ViewportMaxWidthProperty[TLength] | js.Array[csstypeLib.ViewportMaxWidthProperty[TLength]] = null,
-    msMaxZoom: csstypeLib.ViewportMaxZoomProperty | js.Array[csstypeLib.ViewportMaxZoomProperty] = null,
-    msMinHeight: csstypeLib.ViewportMinHeightProperty[TLength] | js.Array[csstypeLib.ViewportMinHeightProperty[TLength]] = null,
-    msMinWidth: csstypeLib.ViewportMinWidthProperty[TLength] | js.Array[csstypeLib.ViewportMinWidthProperty[TLength]] = null,
-    msMinZoom: csstypeLib.ViewportMinZoomProperty | js.Array[csstypeLib.ViewportMinZoomProperty] = null,
-    msOrientation: csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty] = null,
-    msUserZoom: csstypeLib.ViewportUserZoomProperty | js.Array[csstypeLib.ViewportUserZoomProperty] = null,
-    msWidth: csstypeLib.ViewportWidthProperty[TLength] | js.Array[csstypeLib.ViewportWidthProperty[TLength]] = null,
-    msZoom: csstypeLib.ViewportZoomProperty | js.Array[csstypeLib.ViewportZoomProperty] = null,
-    orientation: csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty] = null,
-    userZoom: csstypeLib.ViewportUserZoomProperty | js.Array[csstypeLib.ViewportUserZoomProperty] = null,
-    width: csstypeLib.ViewportWidthProperty[TLength] | js.Array[csstypeLib.ViewportWidthProperty[TLength]] = null,
-    zoom: csstypeLib.ViewportZoomProperty | js.Array[csstypeLib.ViewportZoomProperty] = null
+    OOrientation: ViewportOrientationProperty | js.Array[ViewportOrientationProperty] = null,
+    height: ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]] = null,
+    maxHeight: ViewportMaxHeightProperty[TLength] | js.Array[ViewportMaxHeightProperty[TLength]] = null,
+    maxWidth: ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]] = null,
+    maxZoom: ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty] = null,
+    minHeight: ViewportMinHeightProperty[TLength] | js.Array[ViewportMinHeightProperty[TLength]] = null,
+    minWidth: ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]] = null,
+    minZoom: ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty] = null,
+    msHeight: ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]] = null,
+    msMaxHeight: ViewportMaxHeightProperty[TLength] | js.Array[ViewportMaxHeightProperty[TLength]] = null,
+    msMaxWidth: ViewportMaxWidthProperty[TLength] | js.Array[ViewportMaxWidthProperty[TLength]] = null,
+    msMaxZoom: ViewportMaxZoomProperty | js.Array[ViewportMaxZoomProperty] = null,
+    msMinHeight: ViewportMinHeightProperty[TLength] | js.Array[ViewportMinHeightProperty[TLength]] = null,
+    msMinWidth: ViewportMinWidthProperty[TLength] | js.Array[ViewportMinWidthProperty[TLength]] = null,
+    msMinZoom: ViewportMinZoomProperty | js.Array[ViewportMinZoomProperty] = null,
+    msOrientation: ViewportOrientationProperty | js.Array[ViewportOrientationProperty] = null,
+    msUserZoom: ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty] = null,
+    msWidth: ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]] = null,
+    msZoom: ViewportZoomProperty | js.Array[ViewportZoomProperty] = null,
+    orientation: ViewportOrientationProperty | js.Array[ViewportOrientationProperty] = null,
+    userZoom: ViewportUserZoomProperty | js.Array[ViewportUserZoomProperty] = null,
+    width: ViewportWidthProperty[TLength] | js.Array[ViewportWidthProperty[TLength]] = null,
+    zoom: ViewportZoomProperty | js.Array[ViewportZoomProperty] = null
   ): ViewportFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     if (OOrientation != null) __obj.updateDynamic("OOrientation")(OOrientation.asInstanceOf[js.Any])

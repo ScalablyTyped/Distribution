@@ -97,7 +97,7 @@ object ToolbarAndroidProps {
     accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
     accessibilityRole: AccessibilityRole = null,
     accessibilityStates: js.Array[AccessibilityState] = null,
-    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     actions: js.Array[ToolbarAndroidAction] = null,

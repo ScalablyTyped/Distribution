@@ -11,8 +11,8 @@ object nodeFetchNs extends js.Object {
   @js.native
   class Blob ()
     extends nodeDashFetchLib.nodeDashFetchMod.Blob {
-    def this(blobParts: js.Array[nodeDashFetchLib.BlobPart]) = this()
-    def this(blobParts: js.Array[nodeDashFetchLib.BlobPart], options: nodeDashFetchLib.nodeDashFetchMod.BlobOptions) = this()
+    def this(blobParts: js.Array[nodeDashFetchLib.nodeDashFetchMod.BlobPart]) = this()
+    def this(blobParts: js.Array[nodeDashFetchLib.nodeDashFetchMod.BlobPart], options: nodeDashFetchLib.nodeDashFetchMod.BlobOptions) = this()
   }
   
   @js.native

@@ -29,6 +29,15 @@ class TableCollection ()
   val items: js.Array[Table] = js.native
   /**
     *
+    * Occurs when new table is added in a workbook.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @eventproperty
+    */
+  val onAdded: officeDashJsLib.OfficeExtensionNs.EventHandlers[TableAddedEventArgs] = js.native
+  /**
+    *
     * Occurs when data changes on any table in a workbook, or a worksheet.
     *
     * [Api set: ExcelApi 1.7]
@@ -36,6 +45,15 @@ class TableCollection ()
     * @eventproperty
     */
   val onChanged: officeDashJsLib.OfficeExtensionNs.EventHandlers[TableChangedEventArgs] = js.native
+  /**
+    *
+    * Occurs when the specified table is deleted in a workbook.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @eventproperty
+    */
+  val onDeleted: officeDashJsLib.OfficeExtensionNs.EventHandlers[TableDeletedEventArgs] = js.native
   def add(address: java.lang.String, hasHeaders: scala.Boolean): Table = js.native
   /**
     *

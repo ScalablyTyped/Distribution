@@ -18,7 +18,7 @@ trait _ToggleButtonProperties extends _WidgetProperties {
   /**
     * An image to be displayed on the button.
     */
-  var image: tabrisLib.Image | scala.Null
+  var image: Image | scala.Null
   /**
     * The button's label text.
     */
@@ -34,8 +34,8 @@ object _ToggleButtonProperties {
   def apply(
     alignment: tabrisLib.tabrisLibStrings.center | tabrisLib.tabrisLibStrings.left | tabrisLib.tabrisLibStrings.right,
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
-    baseline: Widget | tabrisLib.Selector,
+    backgroundImage: Image,
+    baseline: Widget | Selector,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,
     centerY: tabrisLib.offset,
@@ -60,7 +60,7 @@ object _ToggleButtonProperties {
     width: tabrisLib.dimension,
     win_theme: tabrisLib.tabrisLibStrings.dark | tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.light,
     font: tabrisLib.Font = null,
-    image: tabrisLib.Image = null
+    image: Image = null
   ): _ToggleButtonProperties = {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], background = background, backgroundImage = backgroundImage.asInstanceOf[js.Any], baseline = baseline.asInstanceOf[js.Any], bottom = bottom, centerX = centerX, centerY = centerY, checked = checked, classList = classList, cornerRadius = cornerRadius, elevation = elevation, enabled = enabled, height = height, highlightOnTouch = highlightOnTouch, id = id, layoutData = layoutData, left = left, opacity = opacity, right = right, text = text, textColor = textColor, top = top, transform = transform, visible = visible, width = width, win_theme = win_theme.asInstanceOf[js.Any])
     __obj.updateDynamic("class")(`class`)

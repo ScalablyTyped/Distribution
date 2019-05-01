@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Url extends js.Object {
+trait Anon_Url
+  extends backboneDashFetchDashCacheLib.backboneDashFetchDashCacheMod._GetCacheKeyOptions {
   var url: java.lang.String
 }
 

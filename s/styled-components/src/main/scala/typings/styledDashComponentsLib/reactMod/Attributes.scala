@@ -19,7 +19,7 @@ trait Attributes extends js.Object {
     */
   var css: js.UndefOr[
     styledDashComponentsLib.styledDashComponentsMod.CSSProp[
-      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+      styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
     ]
   ] = js.undefined
 }
@@ -28,7 +28,7 @@ object Attributes {
   @scala.inline
   def apply(
     css: styledDashComponentsLib.styledDashComponentsMod.CSSProp[
-      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+      styledDashComponentsLib.styledDashComponentsMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
     ] = null
   ): Attributes = {
     val __obj = js.Dynamic.literal()

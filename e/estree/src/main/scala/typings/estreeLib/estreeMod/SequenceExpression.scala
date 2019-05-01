@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SequenceExpression extends BaseNode {
-  var expressions: js.Array[estreeLib.Expression]
+trait SequenceExpression
+  extends BaseNode
+     with Expression {
+  var expressions: js.Array[Expression]
   @JSName("type")
   var type_SequenceExpression: estreeLib.estreeLibStrings.SequenceExpression
 }
@@ -14,7 +16,7 @@ trait SequenceExpression extends BaseNode {
 object SequenceExpression {
   @scala.inline
   def apply(
-    expressions: js.Array[estreeLib.Expression],
+    expressions: js.Array[Expression],
     `type`: estreeLib.estreeLibStrings.SequenceExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

@@ -61,6 +61,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
+    *
+    */
+  @js.native
+  sealed trait ribbonCommandExecuted
+    extends officeDashJsLib.ExcelNs.EventType
+  
+  /**
+    *
     * ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.
     *
     */
@@ -140,6 +149,10 @@ object EventType extends js.Object {
   sealed trait visualSelectionChanged
     extends officeDashJsLib.ExcelNs.EventType
   
+  @js.native
+  sealed trait wacoperationEvent
+    extends officeDashJsLib.ExcelNs.EventType
+  
   /**
     *
     * WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an auto save setting change.
@@ -187,6 +200,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * WorksheetColumnSorted represents the type of event registered on worksheet, and occurs when there is a sorting on columns happened.
+    *
+    */
+  @js.native
+  sealed trait worksheetColumnSorted
+    extends officeDashJsLib.ExcelNs.EventType
+  
+  /**
+    *
     * WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when worksheet deactivates.
     *
     */
@@ -223,6 +245,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on rows happened.
+    *
+    */
+  @js.native
+  sealed trait worksheetRowSorted
+    extends officeDashJsLib.ExcelNs.EventType
+  
+  /**
+    *
     * WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.
     *
     */
@@ -230,11 +261,21 @@ object EventType extends js.Object {
   sealed trait worksheetSelectionChanged
     extends officeDashJsLib.ExcelNs.EventType
   
+  /**
+    *
+    * WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is left-clicked/tapped.
+    *
+    */
+  @js.native
+  sealed trait worksheetSingleClicked
+    extends officeDashJsLib.ExcelNs.EventType
+  
   /* "AgaveVisualUpdate" */ val agaveVisualUpdate: agaveVisualUpdate with java.lang.String = js.native
   /* "ChartActivated" */ val chartActivated: chartActivated with java.lang.String = js.native
   /* "ChartAdded" */ val chartAdded: chartAdded with java.lang.String = js.native
   /* "ChartDeactivated" */ val chartDeactivated: chartDeactivated with java.lang.String = js.native
   /* "ChartDeleted" */ val chartDeleted: chartDeleted with java.lang.String = js.native
+  /* "RibbonCommandExecuted" */ val ribbonCommandExecuted: ribbonCommandExecuted with java.lang.String = js.native
   /* "ShapeActivated" */ val shapeActivated: shapeActivated with java.lang.String = js.native
   /* "ShapeDeactivated" */ val shapeDeactivated: shapeDeactivated with java.lang.String = js.native
   /* "TableAdded" */ val tableAdded: tableAdded with java.lang.String = js.native
@@ -244,16 +285,20 @@ object EventType extends js.Object {
   /* "TableSelectionChanged" */ val tableSelectionChanged: tableSelectionChanged with java.lang.String = js.native
   /* "VisualChange" */ val visualChange: visualChange with java.lang.String = js.native
   /* "VisualSelectionChanged" */ val visualSelectionChanged: visualSelectionChanged with java.lang.String = js.native
+  /* "WACOperationEvent" */ val wacoperationEvent: wacoperationEvent with java.lang.String = js.native
   /* "WorkbookAutoSaveSettingChanged" */ val workbookAutoSaveSettingChanged: workbookAutoSaveSettingChanged with java.lang.String = js.native
   /* "WorksheetActivated" */ val worksheetActivated: worksheetActivated with java.lang.String = js.native
   /* "WorksheetAdded" */ val worksheetAdded: worksheetAdded with java.lang.String = js.native
   /* "WorksheetCalculated" */ val worksheetCalculated: worksheetCalculated with java.lang.String = js.native
   /* "WorksheetChanged" */ val worksheetChanged: worksheetChanged with java.lang.String = js.native
+  /* "WorksheetColumnSorted" */ val worksheetColumnSorted: worksheetColumnSorted with java.lang.String = js.native
   /* "WorksheetDeactivated" */ val worksheetDeactivated: worksheetDeactivated with java.lang.String = js.native
   /* "WorksheetDeleted" */ val worksheetDeleted: worksheetDeleted with java.lang.String = js.native
   /* "WorksheetFiltered" */ val worksheetFiltered: worksheetFiltered with java.lang.String = js.native
   /* "WorksheetFormatChanged" */ val worksheetFormatChanged: worksheetFormatChanged with java.lang.String = js.native
+  /* "WorksheetRowSorted" */ val worksheetRowSorted: worksheetRowSorted with java.lang.String = js.native
   /* "WorksheetSelectionChanged" */ val worksheetSelectionChanged: worksheetSelectionChanged with java.lang.String = js.native
+  /* "WorksheetSingleClicked" */ val worksheetSingleClicked: worksheetSingleClicked with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.ExcelNs.EventType with java.lang.String] = js.native
 }

@@ -29,6 +29,6 @@ trait Database extends js.Object {
   def pragma(source: java.lang.String): js.Any = js.native
   def pragma(source: java.lang.String, options: betterDashSqlite3Lib.betterDashSqlite3Mod.PragmaOptions): js.Any = js.native
   def prepare(source: java.lang.String): Statement = js.native
-  def transaction[F /* <: betterDashSqlite3Lib.VariableArgFunction */](fn: F): Transaction[F] = js.native
+  def transaction[F /* <: betterDashSqlite3Lib.betterDashSqlite3Mod.VariableArgFunction */](fn: F): Transaction[F] = js.native
 }
 

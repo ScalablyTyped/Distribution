@@ -31,7 +31,7 @@ class WidgetCollection[T /* <: Widget */] ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def children(): WidgetCollection[Widget] = js.native
-  def children(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  def children(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Returns a collection containing all children of all widgets in this collection that are instances of
     * the given class.
@@ -47,7 +47,7 @@ class WidgetCollection[T /* <: Widget */] ()
     * selector.
     * @param selector A selector expression or a predicate function to filter the results.
     */
-  def filter(selector: tabrisLib.Selector): WidgetCollection[T] = js.native
+  def filter(selector: Selector): WidgetCollection[T] = js.native
   /**
     * Returns a new *WidgetCollection* containing all widgets in this collection that are instances of the
     * given class.
@@ -60,7 +60,7 @@ class WidgetCollection[T /* <: Widget */] ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def find(): WidgetCollection[Widget] = js.native
-  def find(selector: tabrisLib.Selector): WidgetCollection[Widget] = js.native
+  def find(selector: Selector): WidgetCollection[Widget] = js.native
   /**
     * Returns a collection containing all descendants of all widgets in this collection that are instances
     * of the given class.
@@ -73,7 +73,7 @@ class WidgetCollection[T /* <: Widget */] ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def first(): js.UndefOr[T] = js.native
-  def first(selector: tabrisLib.Selector): js.UndefOr[T] = js.native
+  def first(selector: Selector): js.UndefOr[T] = js.native
   /**
     * Returns the first widget in the collection that is an instance of the given class.
     * @param constructor A class to filter the results.
@@ -114,7 +114,7 @@ class WidgetCollection[T /* <: Widget */] ()
     * @param selector A selector expression or a predicate function to filter the results.
     */
   def last(): js.UndefOr[T] = js.native
-  def last(selector: tabrisLib.Selector): js.UndefOr[T] = js.native
+  def last(selector: Selector): js.UndefOr[T] = js.native
   /**
     * Returns the last widget in the collection that is an instance of the given class.
     * @param constructor A class to filter the results.
@@ -156,7 +156,7 @@ class WidgetCollection[T /* <: Widget */] ()
     * `Widget.set()`.
     * @param properties 
     */
-  def set(properties: tabrisLib.WidgetProperties with org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
+  def set(properties: WidgetProperties with org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
     * Sets the given property on all widgets in this collection. See also `Widget.set()`.
     * @param property 

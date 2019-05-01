@@ -17,6 +17,13 @@ class Worksheet ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
   /**
     *
+    * Represents the AutoFilter object of the worksheet. Read-Only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val autoFilter: AutoFilter = js.native
+  /**
+    *
     * Returns collection of charts that are part of the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -27,11 +34,26 @@ class Worksheet ()
   var context_Worksheet: RequestContext = js.native
   /**
     *
+    * Gets or sets the enableCalculation property of the worksheet.
+    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var enableCalculation: scala.Boolean = js.native
+  /**
+    *
     * Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.7]
     */
   val freezePanes: WorksheetFreezePanes = js.native
+  /**
+    *
+    * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val horizontalPageBreaks: PageBreakCollection = js.native
   /**
     *
     * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
@@ -91,6 +113,15 @@ class Worksheet ()
   val onDeactivated: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetDeactivatedEventArgs] = js.native
   /**
     *
+    * Occurs when format changed on a specific worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @eventproperty
+    */
+  val onFormatChanged: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
+  /**
+    *
     * Occurs when the selection changes on a specific worksheet.
     *
     * [Api set: ExcelApi 1.7]
@@ -98,6 +129,13 @@ class Worksheet ()
     * @eventproperty
     */
   val onSelectionChanged: officeDashJsLib.OfficeExtensionNs.EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
+  /**
+    *
+    * Gets the PageLayout object of the worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val pageLayout: PageLayout = js.native
   /**
     *
     * Collection of PivotTables that are part of the worksheet. Read-only.
@@ -119,6 +157,13 @@ class Worksheet ()
     * [Api set: ExcelApi 1.2]
     */
   val protection: WorksheetProtection = js.native
+  /**
+    *
+    * Returns the collection of all the Shape objects on the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val shapes: ShapeCollection = js.native
   /**
     *
     * Gets or sets the worksheet's gridlines flag.
@@ -166,6 +211,13 @@ class Worksheet ()
     * [Api set: ExcelApi 1.1]
     */
   val tables: TableCollection = js.native
+  /**
+    *
+    * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val verticalPageBreaks: PageBreakCollection = js.native
   /**
     *
     * The Visibility of the worksheet.
@@ -228,6 +280,28 @@ class Worksheet ()
     * [Api set: ExcelApi 1.1]
     */
   def delete(): scala.Unit = js.native
+  /**
+    *
+    * Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object, comprising one or more rectangular ranges.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param text String to find.
+    * @param criteria Additional Criteria.
+    * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells meet this criteria, an ItemNotFound error will be thrown.
+    */
+  def findAll(text: java.lang.String, criteria: WorksheetSearchCriteria): RangeAreas = js.native
+  /**
+    *
+    * Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object, comprising one or more rectangular ranges.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param text String to find.
+    * @param criteria Additional Criteria.
+    * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, this function will return a null object.
+    */
+  def findAllOrNullObject(text: java.lang.String, criteria: WorksheetSearchCriteria): RangeAreas = js.native
   /**
     *
     * Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.
@@ -307,6 +381,16 @@ class Worksheet ()
   ): Range = js.native
   /**
     *
+    * Gets the RangeAreas object, representing one or more blocks of rectangular ranges, specified by the address or name.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param address Optional. A string containing the comma-separated addresses or names of the individual ranges. For example, "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
+    */
+  def getRanges(): RangeAreas = js.native
+  def getRanges(address: java.lang.String): RangeAreas = js.native
+  /**
+    *
     * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
     *
     * [Api set: ExcelApi 1.1]
@@ -345,6 +429,18 @@ class Worksheet ()
   def load(option: js.Array[java.lang.String]): Worksheet = js.native
   def load(option: officeDashJsLib.Anon_Expand): Worksheet = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.WorksheetLoadOptions): Worksheet = js.native
+  /**
+    *
+    * Finds and replaces the given string based on the criteria specified within the current worksheet.
+    *
+    * [Api set: ExcelApi 1.9]
+    *
+    * @param text String to find.
+    * @param replacement String to replace the original with.
+    * @param criteria Additional Replace Criteria.
+    * @returns The number of replacements performed.
+    */
+  def replaceAll(text: java.lang.String, replacement: java.lang.String, criteria: ReplaceCriteria): officeDashJsLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *
     * @remarks

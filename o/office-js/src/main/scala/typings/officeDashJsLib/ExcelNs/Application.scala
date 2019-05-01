@@ -17,14 +17,37 @@ class Application ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
   /**
     *
+    * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val calculationEngineVersion: scala.Double = js.native
+  /**
+    *
     * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.
     *
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
   var calculationMode: CalculationMode | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.AutomaticExceptTables | officeDashJsLib.officeDashJsLibStrings.Manual = js.native
+  /**
+    *
+    * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val calculationState: CalculationState | officeDashJsLib.officeDashJsLibStrings.Done | officeDashJsLib.officeDashJsLibStrings.Calculating | officeDashJsLib.officeDashJsLibStrings.Pending = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Application: RequestContext = js.native
+  /**
+    *
+    * Returns the Iterative Calculation settings.
+    On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
+    On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  val iterativeCalculation: IterativeCalculation = js.native
   /**
     *
     * Recalculate all currently opened workbooks in Excel.
@@ -93,6 +116,13 @@ class Application ()
     * [Api set: ExcelApi 1.6]
     */
   def suspendApiCalculationUntilNextSync(): scala.Unit = js.native
+  /**
+    *
+    * Suspends sceen updating until the next "context.sync()" is called.
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  def suspendScreenUpdatingUntilNextSync(): scala.Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.

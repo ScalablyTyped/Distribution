@@ -11,11 +11,11 @@ trait CounterStyleHyphen extends js.Object {
   var negative: js.UndefOr[java.lang.String] = js.undefined
   var pad: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
-  var range: js.UndefOr[csstypeLib.CounterStyleRangeProperty] = js.undefined
-  var `speak-as`: js.UndefOr[csstypeLib.CounterStyleSpeakAsProperty] = js.undefined
+  var range: js.UndefOr[CounterStyleRangeProperty] = js.undefined
+  var `speak-as`: js.UndefOr[CounterStyleSpeakAsProperty] = js.undefined
   var suffix: js.UndefOr[java.lang.String] = js.undefined
   var symbols: js.UndefOr[java.lang.String] = js.undefined
-  var system: js.UndefOr[csstypeLib.CounterStyleSystemProperty] = js.undefined
+  var system: js.UndefOr[CounterStyleSystemProperty] = js.undefined
 }
 
 object CounterStyleHyphen {
@@ -26,11 +26,11 @@ object CounterStyleHyphen {
     negative: java.lang.String = null,
     pad: java.lang.String = null,
     prefix: java.lang.String = null,
-    range: csstypeLib.CounterStyleRangeProperty = null,
-    `speak-as`: csstypeLib.CounterStyleSpeakAsProperty = null,
+    range: CounterStyleRangeProperty = null,
+    `speak-as`: CounterStyleSpeakAsProperty = null,
     suffix: java.lang.String = null,
     symbols: java.lang.String = null,
-    system: csstypeLib.CounterStyleSystemProperty = null
+    system: CounterStyleSystemProperty = null
   ): CounterStyleHyphen = {
     val __obj = js.Dynamic.literal()
     if (`additive-symbols` != null) __obj.updateDynamic("additive-symbols")(`additive-symbols`)

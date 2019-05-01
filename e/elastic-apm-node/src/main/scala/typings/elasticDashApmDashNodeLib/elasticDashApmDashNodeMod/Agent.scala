@@ -17,38 +17,26 @@ trait Agent
   var logger: Logger = js.native
   // Data collection hooks
   var middleware: elasticDashApmDashNodeLib.Anon_Connect = js.native
-  def addErrorFilter(fn: elasticDashApmDashNodeLib.FilterFn): scala.Unit = js.native
+  def addErrorFilter(fn: FilterFn): scala.Unit = js.native
   // Transport
-  def addFilter(fn: elasticDashApmDashNodeLib.FilterFn): scala.Unit = js.native
-  def addPatch(name: java.lang.String, handler: elasticDashApmDashNodeLib.PatchHandler): scala.Unit = js.native
+  def addFilter(fn: FilterFn): scala.Unit = js.native
+  def addPatch(name: java.lang.String, handler: PatchHandler): scala.Unit = js.native
   def addPatch(name: java.lang.String, handler: java.lang.String): scala.Unit = js.native
-  def addSpanFilter(fn: elasticDashApmDashNodeLib.FilterFn): scala.Unit = js.native
-  def addTransactionFilter(fn: elasticDashApmDashNodeLib.FilterFn): scala.Unit = js.native
+  def addSpanFilter(fn: FilterFn): scala.Unit = js.native
+  def addTransactionFilter(fn: FilterFn): scala.Unit = js.native
   def captureError(err: ParameterizedMessageObject): scala.Unit = js.native
-  def captureError(err: ParameterizedMessageObject, callback: elasticDashApmDashNodeLib.CaptureErrorCallback): scala.Unit = js.native
+  def captureError(err: ParameterizedMessageObject, callback: CaptureErrorCallback): scala.Unit = js.native
   def captureError(err: ParameterizedMessageObject, options: CaptureErrorOptions): scala.Unit = js.native
-  def captureError(
-    err: ParameterizedMessageObject,
-    options: CaptureErrorOptions,
-    callback: elasticDashApmDashNodeLib.CaptureErrorCallback
-  ): scala.Unit = js.native
+  def captureError(err: ParameterizedMessageObject, options: CaptureErrorOptions, callback: CaptureErrorCallback): scala.Unit = js.native
   def captureError(err: java.lang.String): scala.Unit = js.native
-  def captureError(err: java.lang.String, callback: elasticDashApmDashNodeLib.CaptureErrorCallback): scala.Unit = js.native
+  def captureError(err: java.lang.String, callback: CaptureErrorCallback): scala.Unit = js.native
   def captureError(err: java.lang.String, options: CaptureErrorOptions): scala.Unit = js.native
-  def captureError(
-    err: java.lang.String,
-    options: CaptureErrorOptions,
-    callback: elasticDashApmDashNodeLib.CaptureErrorCallback
-  ): scala.Unit = js.native
+  def captureError(err: java.lang.String, options: CaptureErrorOptions, callback: CaptureErrorCallback): scala.Unit = js.native
   // Errors
   def captureError(err: stdLib.Error): scala.Unit = js.native
-  def captureError(err: stdLib.Error, callback: elasticDashApmDashNodeLib.CaptureErrorCallback): scala.Unit = js.native
+  def captureError(err: stdLib.Error, callback: CaptureErrorCallback): scala.Unit = js.native
   def captureError(err: stdLib.Error, options: CaptureErrorOptions): scala.Unit = js.native
-  def captureError(
-    err: stdLib.Error,
-    options: CaptureErrorOptions,
-    callback: elasticDashApmDashNodeLib.CaptureErrorCallback
-  ): scala.Unit = js.native
+  def captureError(err: stdLib.Error, options: CaptureErrorOptions, callback: CaptureErrorCallback): scala.Unit = js.native
   def clearPatches(name: java.lang.String): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   def endTransaction(): scala.Unit = js.native
@@ -66,7 +54,7 @@ trait Agent
     `type`: java.lang.String,
     handler: elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.AwsLambdaNs.Handler[_, _]
   ): elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.AwsLambdaNs.Handler[_, _] = js.native
-  def removePatch(name: java.lang.String, handler: elasticDashApmDashNodeLib.PatchHandler): scala.Unit = js.native
+  def removePatch(name: java.lang.String, handler: PatchHandler): scala.Unit = js.native
   def removePatch(name: java.lang.String, handler: java.lang.String): scala.Unit = js.native
   def setCustomContext(custom: js.Object): scala.Unit = js.native
   def setFramework(options: elasticDashApmDashNodeLib.Anon_Name): scala.Unit = js.native

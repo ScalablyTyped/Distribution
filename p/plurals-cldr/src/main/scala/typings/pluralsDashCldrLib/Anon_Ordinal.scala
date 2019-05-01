@@ -12,7 +12,7 @@ trait Anon_Ordinal extends js.Object {
     */
   @JSName("ordinal")
   var ordinal_Original: pluralsDashCldrLib.pluralsDashCldrMod.Plural = js.native
-  def ordinal(locale: java.lang.String, number: java.lang.String): Form | scala.Null = js.native
+  def ordinal(locale: java.lang.String, number: java.lang.String): pluralsDashCldrLib.pluralsDashCldrMod.Form | scala.Null = js.native
   /**
     * Returns the form name for a given number. If the locale is not
     * supported, returns `null`.
@@ -24,6 +24,6 @@ trait Anon_Ordinal extends js.Object {
   /**
     * Gets the CLDR ordinal plural forms for numbers in different locales.
     */
-  def ordinal(locale: java.lang.String, number: scala.Double): Form | scala.Null = js.native
+  def ordinal(locale: java.lang.String, number: scala.Double): pluralsDashCldrLib.pluralsDashCldrMod.Form | scala.Null = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PromoteReadReplicaDBClusterMessage extends js.Object {
   /**
-    * The identifier of the DB cluster Read Replica to promote. This parameter is not case-sensitive.  Constraints:   Must match the identifier of an existing DBCluster Read Replica.   Example: my-cluster-replica1 
+    * Not supported.
     */
   var DBClusterIdentifier: String
 }

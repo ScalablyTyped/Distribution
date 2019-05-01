@@ -17,10 +17,10 @@ trait CheckType extends js.Object {
   @JSName("iterable")
   var iterable_Original: IterableFunction = js.native
   @JSName("maybe")
-  var maybe_Original: CheckType with checkDashTypesLib.MaybeFunction = js.native
+  var maybe_Original: CheckType with MaybeFunction = js.native
   /* Modifiers (some of them in their respected sections) */
   @JSName("not")
-  var not_Original: CheckType with checkDashTypesLib.NegationFunction = js.native
+  var not_Original: CheckType with NegationFunction = js.native
   /* Object predicates */
   @JSName("object")
   var object_Original: ObjectFunction = js.native

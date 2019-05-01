@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait JSZipGeneratorOptions[T /* <: OutputType */] extends js.Object {
   var comment: js.UndefOr[java.lang.String] = js.undefined
-  var compression: js.UndefOr[jszipLib.Compression] = js.undefined
+  var compression: js.UndefOr[Compression] = js.undefined
   var compressionOptions: js.UndefOr[scala.Null | jszipLib.Anon_Level] = js.undefined
   var encodeFileName: js.UndefOr[js.Function1[/* filename */ java.lang.String, java.lang.String]] = js.undefined
   /**
@@ -27,7 +27,7 @@ object JSZipGeneratorOptions {
   @scala.inline
   def apply[T /* <: OutputType */](
     comment: java.lang.String = null,
-    compression: jszipLib.Compression = null,
+    compression: Compression = null,
     compressionOptions: jszipLib.Anon_Level = null,
     encodeFileName: /* filename */ java.lang.String => java.lang.String = null,
     mimeType: java.lang.String = null,

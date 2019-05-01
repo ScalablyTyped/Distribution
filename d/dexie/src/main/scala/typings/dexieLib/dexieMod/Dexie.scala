@@ -50,25 +50,25 @@ class Dexie protected () extends js.Object {
   @JSName("table")
   def table_TKey[T, Key](tableName: java.lang.String): dexieLib.dexieMod.DexieNs.Table[T, Key] = js.native
   def transaction[U](
-    mode: dexieLib.TransactionMode,
+    mode: TransactionMode,
     table: dexieLib.dexieMod.DexieNs.Table[_, _],
     scope: js.Function0[js.Thenable[U] | U]
   ): dexieLib.dexieMod.DexieNs.Promise[U] = js.native
   def transaction[U](
-    mode: dexieLib.TransactionMode,
+    mode: TransactionMode,
     table: dexieLib.dexieMod.DexieNs.Table[_, _],
     table2: dexieLib.dexieMod.DexieNs.Table[_, _],
     scope: js.Function0[js.Thenable[U] | U]
   ): dexieLib.dexieMod.DexieNs.Promise[U] = js.native
   def transaction[U](
-    mode: dexieLib.TransactionMode,
+    mode: TransactionMode,
     table: dexieLib.dexieMod.DexieNs.Table[_, _],
     table2: dexieLib.dexieMod.DexieNs.Table[_, _],
     table3: dexieLib.dexieMod.DexieNs.Table[_, _],
     scope: js.Function0[js.Thenable[U] | U]
   ): dexieLib.dexieMod.DexieNs.Promise[U] = js.native
   def transaction[U](
-    mode: dexieLib.TransactionMode,
+    mode: TransactionMode,
     table: dexieLib.dexieMod.DexieNs.Table[_, _],
     table2: dexieLib.dexieMod.DexieNs.Table[_, _],
     table3: dexieLib.dexieMod.DexieNs.Table[_, _],
@@ -76,7 +76,7 @@ class Dexie protected () extends js.Object {
     scope: js.Function0[js.Thenable[U] | U]
   ): dexieLib.dexieMod.DexieNs.Promise[U] = js.native
   def transaction[U](
-    mode: dexieLib.TransactionMode,
+    mode: TransactionMode,
     table: dexieLib.dexieMod.DexieNs.Table[_, _],
     table2: dexieLib.dexieMod.DexieNs.Table[_, _],
     table3: dexieLib.dexieMod.DexieNs.Table[_, _],
@@ -85,7 +85,7 @@ class Dexie protected () extends js.Object {
     scope: js.Function0[js.Thenable[U] | U]
   ): dexieLib.dexieMod.DexieNs.Promise[U] = js.native
   def transaction[U](
-    mode: dexieLib.TransactionMode,
+    mode: TransactionMode,
     tables: js.Array[dexieLib.dexieMod.DexieNs.Table[_, _]],
     scope: js.Function0[js.Thenable[U] | U]
   ): dexieLib.dexieMod.DexieNs.Promise[U] = js.native
@@ -112,7 +112,7 @@ object Dexie extends js.Object {
   def exists(dbName: java.lang.String): dexieLib.dexieMod.DexieNs.Promise[scala.Boolean] = js.native
   def getByKeyPath(obj: js.Object, keyPath: java.lang.String): js.Any = js.native
   def getDatabaseNames(): dexieLib.dexieMod.DexieNs.Promise[js.Array[java.lang.String]] = js.native
-  def getDatabaseNames[R](thenShortcut: dexieLib.ThenShortcut[js.Array[java.lang.String], R]): dexieLib.dexieMod.DexieNs.Promise[R] = js.native
+  def getDatabaseNames[R](thenShortcut: dexieLib.dexieMod.ThenShortcut[js.Array[java.lang.String], R]): dexieLib.dexieMod.DexieNs.Promise[R] = js.native
   def `override`[F](origFunc: F, overridedFactory: js.Function1[/* fn */ js.Any, _]): F = js.native
   def setByKeyPath(obj: js.Object, keyPath: java.lang.String, value: js.Any): scala.Unit = js.native
   def shallowClone[T](obj: T): T = js.native

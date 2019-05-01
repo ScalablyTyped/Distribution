@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SanitizeElementHookEvent extends js.Object {
+trait SanitizeElementHookEvent extends _HookEvent {
   var allowedTags: js.Array[java.lang.String]
   var tagName: java.lang.String
 }

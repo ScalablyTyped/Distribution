@@ -11,16 +11,16 @@ object ^ extends js.Object {
   def apply(gl: stdLib.WebGLRenderingContext, array: ndarrayLib.ndarrayMod.ndarray[scala.Double]): Texture = js.native
   def apply(
     gl: stdLib.WebGLRenderingContext,
-    input: glDashTexture2dLib.InputType | RawObject | (js.Tuple2[scala.Double, scala.Double])
+    input: InputType | RawObject | (js.Tuple2[scala.Double, scala.Double])
   ): Texture = js.native
   def apply(
     gl: stdLib.WebGLRenderingContext,
-    input: glDashTexture2dLib.InputType | RawObject | (js.Tuple2[scala.Double, scala.Double]),
+    input: InputType | RawObject | (js.Tuple2[scala.Double, scala.Double]),
     format: glDashTexture2dLib.GLenum
   ): Texture = js.native
   def apply(
     gl: stdLib.WebGLRenderingContext,
-    input: glDashTexture2dLib.InputType | RawObject | (js.Tuple2[scala.Double, scala.Double]),
+    input: InputType | RawObject | (js.Tuple2[scala.Double, scala.Double]),
     format: glDashTexture2dLib.GLenum,
     `type`: glDashTexture2dLib.GLenum
   ): Texture = js.native

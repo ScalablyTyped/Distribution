@@ -12,8 +12,7 @@ sealed trait PictureFormat extends js.Object
   *
   * The format of the image.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PictureFormat")
 @js.native

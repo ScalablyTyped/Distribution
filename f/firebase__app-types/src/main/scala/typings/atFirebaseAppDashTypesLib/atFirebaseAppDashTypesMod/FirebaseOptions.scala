@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait FirebaseOptions
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var apiKey: js.UndefOr[java.lang.String] = js.undefined
+  var appId: js.UndefOr[java.lang.String] = js.undefined
   var authDomain: js.UndefOr[java.lang.String] = js.undefined
   var databaseURL: js.UndefOr[java.lang.String] = js.undefined
   var messagingSenderId: js.UndefOr[java.lang.String] = js.undefined
@@ -20,6 +21,7 @@ object FirebaseOptions {
   def apply(
     StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     apiKey: java.lang.String = null,
+    appId: java.lang.String = null,
     authDomain: java.lang.String = null,
     databaseURL: java.lang.String = null,
     messagingSenderId: java.lang.String = null,
@@ -29,6 +31,7 @@ object FirebaseOptions {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    if (appId != null) __obj.updateDynamic("appId")(appId)
     if (authDomain != null) __obj.updateDynamic("authDomain")(authDomain)
     if (databaseURL != null) __obj.updateDynamic("databaseURL")(databaseURL)
     if (messagingSenderId != null) __obj.updateDynamic("messagingSenderId")(messagingSenderId)

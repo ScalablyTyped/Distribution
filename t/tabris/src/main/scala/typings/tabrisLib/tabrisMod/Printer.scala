@@ -18,7 +18,7 @@ class Printer protected () extends NativeObject {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Printer: tabrisLib.PrinterProperties = js.native
+  val tsProperties_Printer: PrinterProperties = js.native
   /**
     * Prints a PDF document using the native printing capabilities of the device. The data has to be
     * provided as an `ArrayBuffer` or typed array. The method returns a promise which resolves to an event

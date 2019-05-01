@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveXMLNS extends js.Object {
+trait PluginRemoveXMLNS extends PluginConfig {
   var removeXMLNS: scala.Boolean | js.Object
 }
 

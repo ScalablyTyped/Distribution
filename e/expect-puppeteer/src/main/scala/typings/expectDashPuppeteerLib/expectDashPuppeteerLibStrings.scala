@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object expectDashPuppeteerLibStrings {
   @js.native
-  sealed trait mutation extends _ExpectPolling
+  sealed trait mutation
+    extends expectDashPuppeteerLib.expectDashPuppeteerMod._ExpectPolling
   
   @js.native
-  sealed trait raf extends _ExpectPolling
+  sealed trait raf
+    extends expectDashPuppeteerLib.expectDashPuppeteerMod._ExpectPolling
   
   @scala.inline
   def mutation: mutation = "mutation".asInstanceOf[mutation]

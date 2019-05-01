@@ -11,7 +11,7 @@ trait ReCAPTCHAProps extends js.Object {
   	 *
   	 * @default "bottomright"
   	 */
-  var badge: js.UndefOr[reactDashGoogleDashRecaptchaLib.Badge] = js.undefined
+  var badge: js.UndefOr[Badge] = js.undefined
   /**
   	 *  The function to be called when the user successfully completes the normal or compat captcha.
   	 * 	It will also be called with null, when captcha expires
@@ -35,7 +35,7 @@ trait ReCAPTCHAProps extends js.Object {
   /**
   	 *  Optional compact, normal or invisible. This allows you to change the size or do an invisible captcha
   	 */
-  var size: js.UndefOr[reactDashGoogleDashRecaptchaLib.Size] = js.undefined
+  var size: js.UndefOr[Size] = js.undefined
   /**
   	 *  Optional set the stoken parameter, which allows the captcha to be used from different domains,
   	 *  @see reCAPTCHA secure-token
@@ -50,27 +50,27 @@ trait ReCAPTCHAProps extends js.Object {
   	 *  Optional light or dark theme of the widget
   	 *  @default "light"
   	 */
-  var theme: js.UndefOr[reactDashGoogleDashRecaptchaLib.Theme] = js.undefined
+  var theme: js.UndefOr[Theme] = js.undefined
   /**
   	 * Optional image or audio The type of initial captcha
   	 * @default "image"
   	 */
-  var `type`: js.UndefOr[reactDashGoogleDashRecaptchaLib.Type] = js.undefined
+  var `type`: js.UndefOr[Type] = js.undefined
 }
 
 object ReCAPTCHAProps {
   @scala.inline
   def apply(
     sitekey: java.lang.String,
-    badge: reactDashGoogleDashRecaptchaLib.Badge = null,
+    badge: Badge = null,
     onChange: /* token */ java.lang.String | scala.Null => scala.Unit = null,
     onErrored: () => scala.Unit = null,
     onExpired: () => scala.Unit = null,
-    size: reactDashGoogleDashRecaptchaLib.Size = null,
+    size: Size = null,
     stoken: java.lang.String = null,
     tabindex: scala.Int | scala.Double = null,
-    theme: reactDashGoogleDashRecaptchaLib.Theme = null,
-    `type`: reactDashGoogleDashRecaptchaLib.Type = null
+    theme: Theme = null,
+    `type`: Type = null
   ): ReCAPTCHAProps = {
     val __obj = js.Dynamic.literal(sitekey = sitekey)
     if (badge != null) __obj.updateDynamic("badge")(badge)

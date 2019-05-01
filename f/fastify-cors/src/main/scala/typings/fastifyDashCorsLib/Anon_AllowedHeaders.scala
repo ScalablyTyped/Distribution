@@ -45,7 +45,7 @@ trait Anon_AllowedHeaders extends js.Object {
     * Configures the Access-Control-Allow-Origin CORS header.
     */
   var origin: js.UndefOr[
-    java.lang.String | scala.Boolean | stdLib.RegExp | js.Array[java.lang.String] | js.Array[stdLib.RegExp] | originCallback
+    java.lang.String | scala.Boolean | stdLib.RegExp | js.Array[java.lang.String] | js.Array[stdLib.RegExp] | fastifyDashCorsLib.fastifyDashCorsMod.originCallback
   ] = js.undefined
   /**
     * Pass the CORS preflight response to the route handler (default: false).
@@ -66,7 +66,7 @@ object Anon_AllowedHeaders {
     maxAge: scala.Int | scala.Double = null,
     methods: java.lang.String | js.Array[java.lang.String] = null,
     optionsSuccessStatus: scala.Int | scala.Double = null,
-    origin: java.lang.String | scala.Boolean | stdLib.RegExp | js.Array[java.lang.String] | js.Array[stdLib.RegExp] | originCallback = null,
+    origin: java.lang.String | scala.Boolean | stdLib.RegExp | js.Array[java.lang.String] | js.Array[stdLib.RegExp] | fastifyDashCorsLib.fastifyDashCorsMod.originCallback = null,
     preflight: js.UndefOr[scala.Boolean] = js.undefined,
     preflightContinue: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AllowedHeaders = {

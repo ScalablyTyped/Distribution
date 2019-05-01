@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ActivityIndicatorProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined tintColor */ @JSImport("tabris", "ActivityIndicator")
 @js.native
 class ActivityIndicator () extends Widget {
-  def this(properties: tabrisLib.Properties[ActivityIndicator, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[ActivityIndicator, TypeScriptPropertiesKey]) = this()
   /**
     * The color of the indicator.
     */
@@ -22,7 +22,7 @@ class ActivityIndicator () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_ActivityIndicator: tabrisLib.ActivityIndicatorProperties = js.native
+  val tsProperties_ActivityIndicator: ActivityIndicatorProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

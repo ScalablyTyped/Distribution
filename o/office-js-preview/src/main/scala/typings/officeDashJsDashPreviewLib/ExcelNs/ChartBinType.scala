@@ -12,8 +12,7 @@ sealed trait ChartBinType extends js.Object
   *
   * Specifies the bins type of the Histogram chart series.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBinType")
 @js.native

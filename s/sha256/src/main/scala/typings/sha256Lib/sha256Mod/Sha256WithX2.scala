@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait Sha256WithX2 extends Sha256 {
   @JSName("x2")
   var x2_Original: Sha256 = js.native
-  def x2(message: sha256Lib.Message): java.lang.String = js.native
-  def x2(message: sha256Lib.Message, options: sha256Lib.Anon_AsBytes): js.Array[scala.Double] = js.native
-  def x2(message: sha256Lib.Message, options: sha256Lib.Anon_AsString): java.lang.String = js.native
+  def x2(message: Message): java.lang.String = js.native
+  def x2(message: Message, options: sha256Lib.Anon_AsBytes): js.Array[scala.Double] = js.native
+  def x2(message: Message, options: sha256Lib.Anon_AsString): java.lang.String = js.native
 }
 

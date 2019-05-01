@@ -29,7 +29,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-khtml-box-flex`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-khtml-box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
     *
@@ -37,7 +37,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-khtml-box-flex-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-khtml-box-flex-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
     *
@@ -53,7 +53,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-khtml-box-ordinal-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-khtml-box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -179,7 +179,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-moz-box-flex`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-moz-box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
     *
@@ -187,7 +187,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-moz-box-ordinal-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-moz-box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -219,7 +219,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-moz-opacity`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-moz-opacity`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
     *
@@ -399,7 +399,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-o-animation-delay`: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var `-o-animation-delay`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
@@ -415,7 +415,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-o-animation-duration`: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var `-o-animation-duration`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
@@ -485,7 +485,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-o-transition-delay`: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var `-o-transition-delay`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
@@ -493,7 +493,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-o-transition-duration`: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var `-o-transition-duration`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /**
     * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
@@ -533,7 +533,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-webkit-box-flex`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-webkit-box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
     *
@@ -541,7 +541,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-webkit-box-flex-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-webkit-box-flex-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
     *
@@ -557,7 +557,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `-webkit-box-ordinal-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `-webkit-box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -613,7 +613,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `box-flex`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
     *
@@ -621,7 +621,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `box-flex-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `box-flex-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
     *
@@ -637,7 +637,7 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
     *
     * @deprecated
     */
-  var `box-ordinal-group`: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
+  var `box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
   /**
     * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
     *
@@ -799,10 +799,10 @@ object ObsoletePropertiesHyphenFallback {
   def apply[TLength](
     `-khtml-box-align`: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     `-khtml-box-direction`: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    `-khtml-box-flex`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    `-khtml-box-flex-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `-khtml-box-flex`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `-khtml-box-flex-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `-khtml-box-lines`: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
-    `-khtml-box-ordinal-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `-khtml-box-ordinal-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `-khtml-box-orient`: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     `-khtml-box-pack`: BoxPackProperty | js.Array[BoxPackProperty] = null,
     `-moz-background-clip`: BackgroundClipProperty | js.Array[BackgroundClipProperty] = null,
@@ -817,12 +817,12 @@ object ObsoletePropertiesHyphenFallback {
     `-moz-border-radius-topright`: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]] = null,
     `-moz-box-align`: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     `-moz-box-direction`: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    `-moz-box-flex`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    `-moz-box-ordinal-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `-moz-box-flex`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `-moz-box-ordinal-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `-moz-box-orient`: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     `-moz-box-pack`: BoxPackProperty | js.Array[BoxPackProperty] = null,
     `-moz-box-shadow`: BoxShadowProperty | js.Array[BoxShadowProperty] = null,
-    `-moz-opacity`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `-moz-opacity`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `-moz-outline`: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]] = null,
     `-moz-outline-color`: OutlineColorProperty | js.Array[OutlineColorProperty] = null,
     `-moz-outline-radius`: MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]] = null,
@@ -845,9 +845,9 @@ object ObsoletePropertiesHyphenFallback {
     `-ms-scrollbar-shadow-color`: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty] = null,
     `-ms-scrollbar-track-color`: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
     `-o-animation`: AnimationProperty | js.Array[AnimationProperty] = null,
-    `-o-animation-delay`: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    `-o-animation-delay`: GlobalsString | js.Array[GlobalsString] = null,
     `-o-animation-direction`: AnimationDirectionProperty | js.Array[AnimationDirectionProperty] = null,
-    `-o-animation-duration`: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    `-o-animation-duration`: GlobalsString | js.Array[GlobalsString] = null,
     `-o-animation-fill-mode`: AnimationFillModeProperty | js.Array[AnimationFillModeProperty] = null,
     `-o-animation-iteration-count`: AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty] = null,
     `-o-animation-name`: AnimationNameProperty | js.Array[AnimationNameProperty] = null,
@@ -856,26 +856,26 @@ object ObsoletePropertiesHyphenFallback {
     `-o-background-size`: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
     `-o-transform`: TransformProperty | js.Array[TransformProperty] = null,
     `-o-transition`: TransitionProperty | js.Array[TransitionProperty] = null,
-    `-o-transition-delay`: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
-    `-o-transition-duration`: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    `-o-transition-delay`: GlobalsString | js.Array[GlobalsString] = null,
+    `-o-transition-duration`: GlobalsString | js.Array[GlobalsString] = null,
     `-o-transition-property`: TransitionPropertyProperty | js.Array[TransitionPropertyProperty] = null,
     `-o-transition-timing-function`: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     `-webkit-box-align`: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     `-webkit-box-direction`: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    `-webkit-box-flex`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    `-webkit-box-flex-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `-webkit-box-flex`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `-webkit-box-flex-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `-webkit-box-lines`: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
-    `-webkit-box-ordinal-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `-webkit-box-ordinal-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `-webkit-box-orient`: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     `-webkit-box-pack`: BoxPackProperty | js.Array[BoxPackProperty] = null,
     `-webkit-scroll-snap-points-x`: ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty] = null,
     `-webkit-scroll-snap-points-y`: ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty] = null,
     `box-align`: BoxAlignProperty | js.Array[BoxAlignProperty] = null,
     `box-direction`: BoxDirectionProperty | js.Array[BoxDirectionProperty] = null,
-    `box-flex`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
-    `box-flex-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `box-flex`: GlobalsNumber | js.Array[GlobalsNumber] = null,
+    `box-flex-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `box-lines`: BoxLinesProperty | js.Array[BoxLinesProperty] = null,
-    `box-ordinal-group`: csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber] = null,
+    `box-ordinal-group`: GlobalsNumber | js.Array[GlobalsNumber] = null,
     `box-orient`: BoxOrientProperty | js.Array[BoxOrientProperty] = null,
     `box-pack`: BoxPackProperty | js.Array[BoxPackProperty] = null,
     clip: ClipProperty | js.Array[ClipProperty] = null,

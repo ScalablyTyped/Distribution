@@ -41,7 +41,7 @@ trait Promise[T] extends js.Object {
     /* disposeFn */ js.Function2[
       /* arg */ T, 
       /* promise */ bluebirdLib.bluebirdMod.Bluebird[T], 
-      bluebirdLib.Resolvable[scala.Unit]
+      bluebirdLib.bluebirdMod.Resolvable[scala.Unit]
     ], 
     bluebirdLib.bluebirdMod.Disposer[T]
   ] = js.native
@@ -49,7 +49,7 @@ trait Promise[T] extends js.Object {
   var done_Original: bluebirdDashGlobalLib.Anon_ErrorOnFulfilled[T] = js.native
   @JSName("error")
   var error_Original: js.Function1[
-    /* onReject */ js.Function1[/* reason */ js.Any, bluebirdLib.Resolvable[_]], 
+    /* onReject */ js.Function1[/* reason */ js.Any, bluebirdLib.bluebirdMod.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ] = js.native
   // finally: Bluebird<T>["finally"]; // Provided by lib.es2018.promise.d.ts
@@ -70,7 +70,7 @@ trait Promise[T] extends js.Object {
   var isResolved_Original: js.Function0[scala.Boolean] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[
-    /* handler */ js.Function0[bluebirdLib.Resolvable[_]], 
+    /* handler */ js.Function0[bluebirdLib.bluebirdMod.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[T]
   ] = js.native
   @JSName("nodeify")
@@ -89,7 +89,7 @@ trait Promise[T] extends js.Object {
   var tapCatch_Original: bluebirdDashGlobalLib.Anon_ErrorFilter1[T] = js.native
   @JSName("tap")
   var tap_Original: js.Function1[
-    /* onFulFill */ js.Function1[/* value */ T, bluebirdLib.Resolvable[_]], 
+    /* onFulFill */ js.Function1[/* value */ T, bluebirdLib.bluebirdMod.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[T]
   ] = js.native
   // then: Bluebird<T>["then"]; // Provided by lib.es5.d.ts
@@ -142,410 +142,410 @@ trait Promise[T] extends js.Object {
   ): bluebirdLib.bluebirdMod.^[T] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter5: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter5: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
     // tslint:disable-next-line:unified-signatures
-  filter1: bluebirdLib.CatchFilter[stdLib.Error],
+  filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
-    filter5: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter5: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     value: U
   ): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
-  def catchReturn[U](filter1: bluebirdLib.Constructor[stdLib.Error], value: U): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
+  def catchReturn[U](filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error], value: U): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchReturn[U](value: U): bluebirdLib.bluebirdMod.Bluebird[T | U] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
-    filter5: bluebirdLib.Constructor[stdLib.Error] | bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter5: bluebirdLib.bluebirdMod.Constructor[stdLib.Error] | bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.CatchFilter[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
     // tslint:disable-next-line:unified-signatures
-  filter1: bluebirdLib.CatchFilter[stdLib.Error],
+  filter1: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.CatchFilter[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
-    filter5: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter5: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
-    filter4: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter4: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
-    filter3: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter3: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(
-    filter1: bluebirdLib.Constructor[stdLib.Error],
-    filter2: bluebirdLib.Constructor[stdLib.Error],
+    filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
+    filter2: bluebirdLib.bluebirdMod.Constructor[stdLib.Error],
     reason: stdLib.Error
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
-  def catchThrow(filter1: bluebirdLib.Constructor[stdLib.Error], reason: stdLib.Error): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def catchThrow(filter1: bluebirdLib.bluebirdMod.Constructor[stdLib.Error], reason: stdLib.Error): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def catchThrow(reason: stdLib.Error): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   @JSName("catch")
   def catch_EErrorU[E /* <: stdLib.Error */, U](
@@ -562,260 +562,260 @@ trait Promise[T] extends js.Object {
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U](): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
-  def caught[U](onReject: js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[U]]): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
+  def caught[U](onReject: js.Function1[/* error */ js.Any, bluebirdLib.bluebirdMod.Resolvable[U]]): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1](
     // tslint:disable-next-line:unified-signatures
-  filter1: bluebirdLib.CatchFilter[E1],
-    onReject: js.Function1[/* error */ E1, bluebirdLib.Resolvable[U]]
+  filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    onReject: js.Function1[/* error */ E1, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1](
-    filter1: bluebirdLib.Constructor[E1],
-    onReject: js.Function1[/* error */ E1, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    onReject: js.Function1[/* error */ E1, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4, E5](
-    filter1: bluebirdLib.Constructor[E1] | bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2] | bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3] | bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4] | bluebirdLib.CatchFilter[E4],
-    filter5: bluebirdLib.Constructor[E5] | bluebirdLib.CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1] | bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2] | bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3] | bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4] | bluebirdLib.bluebirdMod.CatchFilter[E4],
+    filter5: bluebirdLib.bluebirdMod.Constructor[E5] | bluebirdLib.bluebirdMod.CatchFilter[E5],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   def caught[U, E1, E2, E3, E4, E5](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    filter5: bluebirdLib.Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.Resolvable[U]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    filter5: bluebirdLib.bluebirdMod.Constructor[E5],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): bluebirdLib.bluebirdMod.Bluebird[U | T] = js.native
   def delay(ms: scala.Double): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def disposer(
     disposeFn: js.Function2[
       /* arg */ T, 
       /* promise */ bluebirdLib.bluebirdMod.Bluebird[T], 
-      bluebirdLib.Resolvable[scala.Unit]
+      bluebirdLib.bluebirdMod.Resolvable[scala.Unit]
     ]
   ): bluebirdLib.bluebirdMod.Disposer[T] = js.native
   def done[U](): scala.Unit = js.native
-  def done[U](onFulfilled: js.Function1[/* value */ T, bluebirdLib.Resolvable[U]]): scala.Unit = js.native
+  def done[U](onFulfilled: js.Function1[/* value */ T, bluebirdLib.bluebirdMod.Resolvable[U]]): scala.Unit = js.native
   def done[U](
-    onFulfilled: js.Function1[/* value */ T, bluebirdLib.Resolvable[U]],
-    onRejected: js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[U]]
+    onFulfilled: js.Function1[/* value */ T, bluebirdLib.bluebirdMod.Resolvable[U]],
+    onRejected: js.Function1[/* error */ js.Any, bluebirdLib.bluebirdMod.Resolvable[U]]
   ): scala.Unit = js.native
   def each[Q](`this`: Promise[T with stdLib.Iterable[Q]], iterator: IterateFunction[Q, _]): bluebirdLib.bluebirdMod.^[T] = js.native
-  def error[U](onReject: js.Function1[/* reason */ js.Any, bluebirdLib.Resolvable[U]]): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
+  def error[U](onReject: js.Function1[/* reason */ js.Any, bluebirdLib.bluebirdMod.Resolvable[U]]): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
   def filter[Q](`this`: Promise[T with stdLib.Iterable[Q]], filterer: IterateFunction[Q, scala.Boolean]): bluebirdLib.bluebirdMod.^[T] = js.native
   def filter[Q](
     `this`: Promise[T with stdLib.Iterable[Q]],
@@ -838,7 +838,7 @@ trait Promise[T] extends js.Object {
   def isPending(): scala.Boolean = js.native
   def isRejected(): scala.Boolean = js.native
   def isResolved(): scala.Boolean = js.native
-  def lastly(handler: js.Function0[bluebirdLib.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def lastly(handler: js.Function0[bluebirdLib.bluebirdMod.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def map[U, Q](`this`: Promise[T with stdLib.Iterable[Q]], mapper: IterateFunction[Q, U]): bluebirdLib.bluebirdMod.^[js.Array[U]] = js.native
   def map[U, Q](
     `this`: Promise[T with stdLib.Iterable[Q]],
@@ -854,7 +854,7 @@ trait Promise[T] extends js.Object {
   def nodeify(sink: js.Any*): this.type = js.native
   def props[T](`this`: js.Thenable[bluebirdLib.bluebirdMod.ResolvableProps[T]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   @JSName("props")
-  def props_KV[K, V](`this`: js.Thenable[stdLib.Map[K, bluebirdLib.Resolvable[V]]]): bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[K, V]] = js.native
+  def props_KV[K, V](`this`: js.Thenable[stdLib.Map[K, bluebirdLib.bluebirdMod.Resolvable[V]]]): bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[K, V]] = js.native
   def race(): bluebirdLib.bluebirdMod.^[scala.Nothing] = js.native
   def race[Q](`this`: Promise[T with stdLib.Iterable[Q]]): bluebirdLib.bluebirdMod.^[Q] = js.native
   def reason(): js.Any = js.native
@@ -888,212 +888,212 @@ trait Promise[T] extends js.Object {
     fulfilledHandler: js.Function1[/* repeated */ Q, U | js.Thenable[U]]
   ): bluebirdLib.bluebirdMod.^[U] = js.native
   def suppressUnhandledRejections(): scala.Unit = js.native
-  def tap(onFulFill: js.Function1[/* value */ T, bluebirdLib.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
-  def tapCatch(onReject: js.Function1[/* error */ js.UndefOr[js.Any], bluebirdLib.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def tap(onFulFill: js.Function1[/* value */ T, bluebirdLib.bluebirdMod.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
+  def tapCatch(onReject: js.Function1[/* error */ js.UndefOr[js.Any], bluebirdLib.bluebirdMod.Resolvable[_]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1](
     // tslint:disable-next-line:unified-signatures
-  filter1: bluebirdLib.CatchFilter[E1],
-    onReject: js.Function1[/* error */ E1, bluebirdLib.Resolvable[_]]
+  filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    onReject: js.Function1[/* error */ E1, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1](
-    filter1: bluebirdLib.Constructor[E1],
-    onReject: js.Function1[/* error */ E1, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    onReject: js.Function1[/* error */ E1, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
-    filter1: bluebirdLib.Constructor[E1] | bluebirdLib.CatchFilter[E1],
-    filter2: bluebirdLib.Constructor[E2] | bluebirdLib.CatchFilter[E2],
-    filter3: bluebirdLib.Constructor[E3] | bluebirdLib.CatchFilter[E3],
-    filter4: bluebirdLib.Constructor[E4] | bluebirdLib.CatchFilter[E4],
-    filter5: bluebirdLib.Constructor[E5] | bluebirdLib.CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1] | bluebirdLib.bluebirdMod.CatchFilter[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2] | bluebirdLib.bluebirdMod.CatchFilter[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3] | bluebirdLib.bluebirdMod.CatchFilter[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4] | bluebirdLib.bluebirdMod.CatchFilter[E4],
+    filter5: bluebirdLib.bluebirdMod.Constructor[E5] | bluebirdLib.bluebirdMod.CatchFilter[E5],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
-    filter1: bluebirdLib.Constructor[E1],
-    filter2: bluebirdLib.Constructor[E2],
-    filter3: bluebirdLib.Constructor[E3],
-    filter4: bluebirdLib.Constructor[E4],
-    filter5: bluebirdLib.Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.Resolvable[_]]
+    filter1: bluebirdLib.bluebirdMod.Constructor[E1],
+    filter2: bluebirdLib.bluebirdMod.Constructor[E2],
+    filter3: bluebirdLib.bluebirdMod.Constructor[E3],
+    filter4: bluebirdLib.bluebirdMod.Constructor[E4],
+    filter5: bluebirdLib.bluebirdMod.Constructor[E5],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.bluebirdMod.Resolvable[_]]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /*
     * Copy&paste ::then and ::catch from lib.es5.promise.d.ts, because Bluebird's typings are not

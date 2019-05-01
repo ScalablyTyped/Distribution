@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AST_Catch extends AST_Block {
-  var argname: terserLib.ArgType = js.native
+  var argname: ArgType = js.native
 }
 

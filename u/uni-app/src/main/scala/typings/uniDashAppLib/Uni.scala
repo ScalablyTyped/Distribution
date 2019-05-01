@@ -299,13 +299,13 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfosync](http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfosync)
     */
-  def getStorageInfoSync(): scala.Unit = js.native
+  def getStorageInfoSync(): GetStorageInfoSuccess = js.native
   /**
     * 从本地缓存中同步获取指定 key 对应的内容
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=getstoragesync](http://uniapp.dcloud.io/api/storage/storage?id=getstoragesync)
     */
-  def getStorageSync(): scala.Unit = js.native
+  def getStorageSync(key: java.lang.String): js.Any = js.native
   /**
     * 获取系统信息
     *
@@ -373,6 +373,12 @@ class Uni () extends js.Object {
     */
   def hideToast(): scala.Unit = js.native
   /**
+    * 动态加载网络字体
+    *
+    * 参考: [http://uniapp.dcloud.io/api/ui/font?id=loadfontface](http://uniapp.dcloud.io/api/ui/font?id=loadfontface)
+    */
+  def loadFontFace(options: FontFace): scala.Unit = js.native
+  /**
     * 登录
     *
     * 参考: [http://uniapp.dcloud.io/api/plugins/login?id=login](http://uniapp.dcloud.io/api/plugins/login?id=login)
@@ -414,12 +420,6 @@ class Uni () extends js.Object {
     * 参考: [http://uniapp.dcloud.io/api/system/ble?id=notifyblecharacteristicvaluechange](http://uniapp.dcloud.io/api/system/ble?id=notifyblecharacteristicvaluechange)
     */
   def notifyBLECharacteristicValueChange(options: NotifyBLECharacteristicValueChangeOptions): scala.Unit = js.native
-  /**
-    * 移除监听透传数据
-    *
-    * 参考: [http://uniapp.dcloud.io/api/plugins/push?id=offpush](http://uniapp.dcloud.io/api/plugins/push?id=offpush)
-    */
-  def offPush(options: OffPushOptions): scala.Unit = js.native
   /**
     * 取消监听窗口尺寸变化事件
     *
@@ -486,12 +486,6 @@ class Uni () extends js.Object {
     * 参考: [http://uniapp.dcloud.io/api/system/network?id=onnetworkstatuschange](http://uniapp.dcloud.io/api/system/network?id=onnetworkstatuschange)
     */
   def onNetworkStatusChange(callback: js.Function1[/* result */ OnNetworkStatusChangeSuccess, scala.Unit]): scala.Unit = js.native
-  /**
-    * 监听透传数据
-    *
-    * 参考: [http://uniapp.dcloud.io/api/plugins/push?id=onpush](http://uniapp.dcloud.io/api/plugins/push?id=onpush)
-    */
-  def onPush(options: OnPushOptions): scala.Unit = js.native
   /**
     * 监听WebSocket关闭
     *
@@ -593,7 +587,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=removestoragesync](http://uniapp.dcloud.io/api/storage/storage?id=removestoragesync)
     */
-  def removeStorageSync(): scala.Unit = js.native
+  def removeStorageSync(key: java.lang.String): js.Any = js.native
   /**
     * 移除 tabBar 某一项右上角的文本
     *
@@ -707,7 +701,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=setstoragesync](http://uniapp.dcloud.io/api/storage/storage?id=setstoragesync)
     */
-  def setStorageSync(): scala.Unit = js.native
+  def setStorageSync(key: java.lang.String): js.Any = js.native
   /**
     * 为 tabBar 某一项的右上角添加文本
     *
@@ -847,23 +841,11 @@ class Uni () extends js.Object {
     */
   def stopPullDownRefresh(): scala.Unit = js.native
   /**
-    * 开启推送
-    *
-    * 参考: [http://uniapp.dcloud.io/api/plugins/push?id=subscribepush](http://uniapp.dcloud.io/api/plugins/push?id=subscribepush)
-    */
-  def subscribePush(options: SubscribePushOptions): scala.Unit = js.native
-  /**
     * 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
     *
     * 参考: [http://uniapp.dcloud.io/api/router?id=switchtab](http://uniapp.dcloud.io/api/router?id=switchtab)
     */
   def switchTab(options: SwitchTabOptions): scala.Unit = js.native
-  /**
-    * 关闭推送
-    *
-    * 参考: [http://uniapp.dcloud.io/api/plugins/push?id=unsubscribepush](http://uniapp.dcloud.io/api/plugins/push?id=unsubscribepush)
-    */
-  def unsubscribePush(options: UnscribePushOptions): scala.Unit = js.native
   /**
     * 上传文件
     *

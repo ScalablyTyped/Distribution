@@ -13,8 +13,7 @@ trait RangeBorderCollectionUpdateData extends js.Object {
     * Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
     A null value indicates that the entire border collections don't have uniform tintAndShade setting.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Double] = js.undefined
 }

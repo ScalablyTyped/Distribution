@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 class Popover ()
   extends Popup
      with _PopoverProperties {
-  def this(properties: tabrisLib.Properties[Popover, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[Popover, TypeScriptPropertiesKey]) = this()
   /**
     * An anchor `Widget` the `Popover` should attach to. When the anchor is given the `Popover` is
     * positioned next to the anchor `Widget` and provides a visual indication of its relation. When omitted
@@ -38,7 +38,7 @@ class Popover ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_Popover: tabrisLib.PopoverProperties = js.native
+  val tsProperties_Popover: PopoverProperties = js.native
   /**
     * The width of the `Popover` when shown in windowed mode on large screen devices.
     */

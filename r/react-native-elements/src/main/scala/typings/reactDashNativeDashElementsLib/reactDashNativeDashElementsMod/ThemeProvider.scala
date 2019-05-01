@@ -12,6 +12,6 @@ class ThemeProvider[T] ()
   @JSName("updateTheme")
   var updateTheme_Original: UpdateTheme = js.native
   def getTheme(): Theme[T] = js.native
-  def updateTheme(updates: reactDashNativeDashElementsLib.RecursivePartial[FullTheme]): scala.Unit = js.native
+  def updateTheme(updates: RecursivePartial[FullTheme]): scala.Unit = js.native
 }
 

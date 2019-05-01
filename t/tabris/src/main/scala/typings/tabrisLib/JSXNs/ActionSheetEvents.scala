@@ -12,7 +12,7 @@ trait ActionSheetEvents extends NativeObjectEvents {
     */
   var onActionsChanged: js.UndefOr[
     js.Function1[
-      /* event */ tabrisLib.tabrisMod.PropertyChangedEvent[tabrisLib.tabrisMod.ActionSheet, js.Array[tabrisLib.Anon_Cancel]], 
+      /* event */ tabrisLib.tabrisMod.PropertyChangedEvent[tabrisLib.tabrisMod.ActionSheet, js.Array[tabrisLib.Anon_CancelDefault]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -54,7 +54,7 @@ trait ActionSheetEvents extends NativeObjectEvents {
 object ActionSheetEvents {
   @scala.inline
   def apply(
-    onActionsChanged: /* event */ tabrisLib.tabrisMod.PropertyChangedEvent[tabrisLib.tabrisMod.ActionSheet, js.Array[tabrisLib.Anon_Cancel]] => scala.Unit = null,
+    onActionsChanged: /* event */ tabrisLib.tabrisMod.PropertyChangedEvent[tabrisLib.tabrisMod.ActionSheet, js.Array[tabrisLib.Anon_CancelDefault]] => scala.Unit = null,
     onClose: /* event */ tabrisLib.tabrisMod.EventObject[tabrisLib.tabrisMod.ActionSheet] => scala.Unit = null,
     onMessageChanged: /* event */ tabrisLib.tabrisMod.PropertyChangedEvent[tabrisLib.tabrisMod.ActionSheet, java.lang.String] => scala.Unit = null,
     onSelect: /* event */ tabrisLib.tabrisMod.ActionSheetSelectEvent => scala.Unit = null,

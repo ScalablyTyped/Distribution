@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveEditorsNSData extends js.Object {
+trait PluginRemoveEditorsNSData extends PluginConfig {
   var removeEditorsNSData: scala.Boolean | js.Object
 }
 

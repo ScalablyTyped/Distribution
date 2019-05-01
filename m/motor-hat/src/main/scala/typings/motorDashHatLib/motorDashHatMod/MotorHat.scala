@@ -44,7 +44,7 @@ trait MotorHat extends js.Object {
     *
     * @param   cb  Node style callback for asynch initialization
     */
-  def init(cb: motorDashHatLib.Callback): scala.Unit = js.native
+  def init(cb: Callback): scala.Unit = js.native
   /**
     * Creates a servo motor controller.
     * Pass in an options object to generate an uninitialized ServoLib object.

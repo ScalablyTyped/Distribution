@@ -7,10 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MemberExpression
   extends BaseNode
+     with Expression
      with Pattern {
   var computed: scala.Boolean
-  var `object`: estreeLib.Expression | Super
-  var property: estreeLib.Expression
+  var `object`: Expression | Super
+  var property: Expression
   @JSName("type")
   var type_MemberExpression: estreeLib.estreeLibStrings.MemberExpression
 }
@@ -19,8 +20,8 @@ object MemberExpression {
   @scala.inline
   def apply(
     computed: scala.Boolean,
-    `object`: estreeLib.Expression | Super,
-    property: estreeLib.Expression,
+    `object`: Expression | Super,
+    property: Expression,
     `type`: estreeLib.estreeLibStrings.MemberExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

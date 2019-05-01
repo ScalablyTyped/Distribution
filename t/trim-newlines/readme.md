@@ -1,7 +1,7 @@
 
 # Scala.js typings for trim-newlines
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Trim newlines from the start and/or end of a string
@@ -24,21 +24,11 @@ Trim newlines from the start and/or end of a string
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for trim-newlines 2.0
-// Project: https://github.com/sindresorhus/trim-newlines#readme
-// Definitions by: Daniel Cassidy <https://github.com/djcsdy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

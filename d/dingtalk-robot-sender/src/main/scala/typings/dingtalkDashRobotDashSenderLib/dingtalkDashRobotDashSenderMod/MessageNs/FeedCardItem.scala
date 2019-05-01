@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FeedCardItem extends js.Object {
+trait FeedCardItem
+  extends dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderMod.MessageType {
   var feedCard: dingtalkDashRobotDashSenderLib.Anon_MessageURL
   var msgtype: dingtalkDashRobotDashSenderLib.dingtalkDashRobotDashSenderLibStrings.feedCard
 }

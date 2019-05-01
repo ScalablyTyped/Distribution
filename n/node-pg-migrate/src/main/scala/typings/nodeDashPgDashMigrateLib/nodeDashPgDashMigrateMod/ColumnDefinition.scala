@@ -12,6 +12,7 @@ trait ColumnDefinition extends ReferencesOptions {
   var default: js.UndefOr[Value] = js.undefined
   var deferrable: js.UndefOr[scala.Boolean] = js.undefined
   var deferred: js.UndefOr[scala.Boolean] = js.undefined
+  var generated: js.UndefOr[nodeDashPgDashMigrateLib.Anon_ALWAYS with SequenceOptions] = js.undefined
   var notNull: js.UndefOr[scala.Boolean] = js.undefined
   var primaryKey: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: java.lang.String
@@ -28,6 +29,7 @@ object ColumnDefinition {
     default: Value = null,
     deferrable: js.UndefOr[scala.Boolean] = js.undefined,
     deferred: js.UndefOr[scala.Boolean] = js.undefined,
+    generated: nodeDashPgDashMigrateLib.Anon_ALWAYS with SequenceOptions = null,
     `match`: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.FULL | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.SIMPLE = null,
     notNull: js.UndefOr[scala.Boolean] = js.undefined,
     onDelete: Action = null,
@@ -45,6 +47,7 @@ object ColumnDefinition {
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)
     if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
+    if (generated != null) __obj.updateDynamic("generated")(generated)
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)

@@ -12,8 +12,7 @@ sealed trait ShapeScaleFrom extends js.Object
   *
   * Specifies which part of the shape retains its position when the shape is scaled.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeScaleFrom")
 @js.native

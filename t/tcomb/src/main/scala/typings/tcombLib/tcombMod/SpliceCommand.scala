@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SpliceCommand extends js.Object {
+trait SpliceCommand extends Command {
   @JSName("$splice")
   var $splice: js.Array[js.Array[_]]
 }

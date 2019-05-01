@@ -30,9 +30,9 @@ class GridFSBucket protected () extends js.Object {
   def openUploadStream(filename: java.lang.String): GridFSBucketWriteStream = js.native
   def openUploadStream(filename: java.lang.String, options: GridFSBucketOpenUploadStreamOptions): GridFSBucketWriteStream = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openUploadStreamWithId */
-  def openUploadStreamWithId(id: mongodbLib.GridFSBucketWriteStreamId, filename: java.lang.String): GridFSBucketWriteStream = js.native
+  def openUploadStreamWithId(id: GridFSBucketWriteStreamId, filename: java.lang.String): GridFSBucketWriteStream = js.native
   def openUploadStreamWithId(
-    id: mongodbLib.GridFSBucketWriteStreamId,
+    id: GridFSBucketWriteStreamId,
     filename: java.lang.String,
     options: GridFSBucketOpenUploadStreamOptions
   ): GridFSBucketWriteStream = js.native

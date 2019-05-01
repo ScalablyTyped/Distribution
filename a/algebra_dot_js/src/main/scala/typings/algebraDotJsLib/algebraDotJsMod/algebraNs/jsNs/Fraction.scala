@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Fraction extends js.Object {
+trait Fraction
+  extends algebraDotJsLib.algebraDotJsMod._Union {
   var denom: scala.Double = js.native
   var numer: scala.Double = js.native
   def abs(): Fraction = js.native

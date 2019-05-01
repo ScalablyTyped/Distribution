@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginMoveGroupAttrsToElems extends js.Object {
+trait PluginMoveGroupAttrsToElems extends PluginConfig {
   var moveGroupAttrsToElems: scala.Boolean | js.Object
 }
 

@@ -8,13 +8,7 @@ package object reactLib {
   type AnimationEvent = Event
   type ClipboardEvent = Event
   type CompositionEvent = Event
-  // Any prop that has a default prop becomes optional, but its type is unchanged
-  // Undeclared default props are augmented into the resulting allowable attributes
-  // If declared props have indexed properties, ignore default props entirely as keyof gets widened
-  // Wrap in an outer-level conditional type to allow distribution over props that are unions
-  type Defaultize[P, D] = ((stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]]) with (stdLib.Partial[stdLib.Pick[P, stdLib.Extract[java.lang.String, java.lang.String]]]) with (stdLib.Partial[stdLib.Pick[D, stdLib.Exclude[java.lang.String, java.lang.String]]])) | P
   type DragEvent = Event
-  type ExactlyAnyPropertyKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
   type FocusEvent = Event
   type HTMLAnchorElement = HTMLElement
   type HTMLAreaElement = HTMLElement
@@ -73,8 +67,6 @@ package object reactLib {
   type HTMLVideoElement = HTMLElement
   type HTMLWebViewElement = HTMLElement
   type KeyboardEvent = Event
-  // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
-  type MergePropTypes[P, T] = ((stdLib.Pick[P, NotExactlyAnyPropertyKeys[P]]) with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, NotExactlyAnyPropertyKeys[P]]]) with (stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]])) | P | T
   type MouseEvent = Event
   type NativeAnimationEvent = AnimationEvent
   type NativeClipboardEvent = ClipboardEvent
@@ -88,18 +80,11 @@ package object reactLib {
   type NativeTransitionEvent = TransitionEvent
   type NativeUIEvent = UIEvent
   type NativeWheelEvent = WheelEvent
-  type NotExactlyAnyPropertyKeys[T] = stdLib.Exclude[java.lang.String, ExactlyAnyPropertyKeys[T]]
+  type NotExactlyAnyPropertyKeys[T] = stdLib.Exclude[
+    java.lang.String, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ExactlyAnyPropertyKeys<T> */ js.Any
+  ]
   type PointerEvent = Event
-  type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[
-    P, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PropTypes.InferProps<T> */ js.Any
-  ]) | (Defaultize[
-    MergePropTypes[
-      P, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PropTypes.InferProps<T> */ js.Any
-    ], 
-    js.Any
-  ])
   type SVGCircleElement = SVGElement
   type SVGClipPathElement = SVGElement
   type SVGDefsElement = SVGElement

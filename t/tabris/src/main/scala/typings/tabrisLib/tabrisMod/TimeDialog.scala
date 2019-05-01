@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 class TimeDialog ()
   extends Popup
      with _TimeDialogProperties {
-  def this(properties: tabrisLib.TimeDialogProperties) = this()
+  def this(properties: TimeDialogProperties) = this()
   /**
     * The time to be displayed in the dialog. The current date is used when no date is provided.
     */
@@ -25,7 +25,7 @@ class TimeDialog ()
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_TimeDialog: tabrisLib.TimeDialogProperties = js.native
+  val tsProperties_TimeDialog: TimeDialogProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

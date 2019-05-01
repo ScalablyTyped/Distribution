@@ -81,39 +81,39 @@ trait Anon_CacheFirst
   	 * @param {Partial<StrategyOptions>} [options]
   	 * @returns {HandlerCallback}
   	 */
-  def cacheFirst(): HandlerCallback = js.native
-  def cacheFirst(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): HandlerCallback = js.native
+  def cacheFirst(): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
+  def cacheFirst(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
   /**
   	 * Instantiates a new CacheOnly strategy
   	 * @deprecated use new workbox.strategies.CacheOnly() syntax
   	 * @param {Partial<StrategyOptions>} [options]
   	 * @returns {HandlerCallback}
   	 */
-  def cacheOnly(): HandlerCallback = js.native
-  def cacheOnly(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): HandlerCallback = js.native
+  def cacheOnly(): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
+  def cacheOnly(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
   /**
   	 * Instantiates a new NetworkFirst strategy
   	 * @deprecated use new workbox.strategies.NetworkFirst() syntax
   	 * @param {Partial<StrategyOptions>} [options]
   	 * @returns {HandlerCallback}
   	 */
-  def networkFirst(): HandlerCallback = js.native
-  def networkFirst(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): HandlerCallback = js.native
+  def networkFirst(): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
+  def networkFirst(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
   /**
   	 * Instantiates a new NetworkOnly strategy
   	 * @deprecated use new workbox.strategies.NetworkOnly() syntax
   	 * @param {Partial<StrategyOptions>} [options]
   	 * @returns {HandlerCallback}
   	 */
-  def networkOnly(): HandlerCallback = js.native
-  def networkOnly(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): HandlerCallback = js.native
+  def networkOnly(): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
+  def networkOnly(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
   /**
   	 * Instantiates a new StaleWhileRevalidate strategy
   	 * @deprecated use new workbox.strategies.StaleWhileRevalidate() syntax
   	 * @param {Partial<StrategyOptions>} [options]
   	 * @returns {StaleWhileRevalidate}
   	 */
-  def staleWhileRevalidate(): HandlerCallback = js.native
-  def staleWhileRevalidate(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): HandlerCallback = js.native
+  def staleWhileRevalidate(): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
+  def staleWhileRevalidate(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.StrategyOptions]): workboxDashSwLib.workboxDashSwMod.HandlerCallback = js.native
 }
 

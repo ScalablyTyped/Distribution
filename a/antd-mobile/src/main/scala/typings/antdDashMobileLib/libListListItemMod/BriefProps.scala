@@ -15,7 +15,6 @@ trait BriefProps
 object BriefProps {
   @scala.inline
   def apply(
-    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
@@ -23,7 +22,6 @@ object BriefProps {
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): BriefProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)

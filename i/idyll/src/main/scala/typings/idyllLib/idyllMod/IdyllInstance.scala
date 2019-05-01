@@ -25,6 +25,6 @@ trait IdyllInstance
   /**
     * Returns internal paths used by idyll-cli
     */
-  def getPaths(): idyllLib.Paths = js.native
+  def getPaths(): Paths = js.native
 }
 

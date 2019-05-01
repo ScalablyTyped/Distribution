@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveEmptyText extends js.Object {
+trait PluginRemoveEmptyText extends PluginConfig {
   var removeEmptyText: scala.Boolean | js.Object
 }
 

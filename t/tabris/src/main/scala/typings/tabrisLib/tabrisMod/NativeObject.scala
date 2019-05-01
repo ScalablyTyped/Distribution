@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tabris", "NativeObject")
 @js.native
 class NativeObject protected () extends _NativeObjectProperties {
-  protected def this(properties: tabrisLib.Properties[NativeObject, tabrisLib.TypeScriptPropertiesKey]) = this()
+  protected def this(properties: Properties[NativeObject, TypeScriptPropertiesKey]) = this()
   /**
     * An application-wide unique identifier automatically assigned to all native objects on creation.
     * @static
@@ -21,12 +21,12 @@ class NativeObject protected () extends _NativeObjectProperties {
     * The type of this property defines the interface used by `set`, `get`, and
     * the `Properties` interface. It's value is always undefined.
     */
-  val tsProperties: tabrisLib.NativeObjectProperties = js.native
+  val tsProperties: NativeObjectProperties = js.native
   /**
     * Gets the current value of the given *property*.
     * @param property 
     */
-  def get[T /* <: java.lang.String */](property: T): /* import warning: ImportType.apply Failed type conversion: tabris.Properties<this, tabris.TypeScriptPropertiesKey>[T] */ js.Any = js.native
+  def get[T /* <: java.lang.String */](property: T): /* import warning: ImportType.apply Failed type conversion: tabris.tabris.Properties<this, tabris.tabris.TypeScriptPropertiesKey>[T] */ js.Any = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.
@@ -82,7 +82,7 @@ class NativeObject protected () extends _NativeObjectProperties {
     * Sets all key-value pairs in the properties object as widget properties.
     * @param properties 
     */
-  def set(properties: tabrisLib.Properties[this.type, tabrisLib.TypeScriptPropertiesKey]): this.type = js.native
+  def set(properties: Properties[this.type, TypeScriptPropertiesKey]): this.type = js.native
   /**
     * Sets the given property.
     * @param property 
@@ -90,7 +90,7 @@ class NativeObject protected () extends _NativeObjectProperties {
     */
   def set[T /* <: java.lang.String */](
     property: T,
-    value: /* import warning: ImportType.apply Failed type conversion: tabris.Properties<this, tabris.TypeScriptPropertiesKey>[T] */ js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: tabris.tabris.Properties<this, tabris.tabris.TypeScriptPropertiesKey>[T] */ js.Any
   ): this.type = js.native
   /**
     * Notifies all registered listeners for the given *type*.

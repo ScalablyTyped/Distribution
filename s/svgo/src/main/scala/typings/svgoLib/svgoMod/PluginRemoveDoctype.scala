@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginRemoveDoctype extends js.Object {
+trait PluginRemoveDoctype extends PluginConfig {
   var removeDoctype: scala.Boolean | js.Object
 }
 

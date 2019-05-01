@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ArrowFunctionExpression
   extends BaseFunction
+     with Expression
      with Function {
   var expression: scala.Boolean
   @JSName("type")
@@ -16,7 +17,7 @@ trait ArrowFunctionExpression
 object ArrowFunctionExpression {
   @scala.inline
   def apply(
-    body: BlockStatement | estreeLib.Expression,
+    body: BlockStatement | Expression,
     expression: scala.Boolean,
     params: js.Array[Pattern],
     `type`: estreeLib.estreeLibStrings.ArrowFunctionExpression,

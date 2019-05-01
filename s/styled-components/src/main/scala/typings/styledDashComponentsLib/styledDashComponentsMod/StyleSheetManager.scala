@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("styled-components", "StyleSheetManager")
 @js.native
 class StyleSheetManager ()
-  extends reactLib.reactMod.Component[styledDashComponentsLib.StyleSheetManagerProps, js.Object, js.Any]
+  extends reactLib.reactMod.Component[StyleSheetManagerProps, js.Object, js.Any]
 

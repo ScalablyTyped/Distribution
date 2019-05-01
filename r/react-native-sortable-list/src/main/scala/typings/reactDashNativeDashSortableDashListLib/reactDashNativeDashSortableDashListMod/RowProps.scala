@@ -10,7 +10,7 @@ trait RowProps extends js.Object {
   var data: reactDashNativeDashSortableDashListLib.DataValue
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined
-  var key: js.UndefOr[reactDashNativeDashSortableDashListLib.DataKey] = js.undefined
+  var key: js.UndefOr[DataKey] = js.undefined
 }
 
 object RowProps {
@@ -20,7 +20,7 @@ object RowProps {
     data: reactDashNativeDashSortableDashListLib.DataValue,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     index: scala.Int | scala.Double = null,
-    key: reactDashNativeDashSortableDashListLib.DataKey = null
+    key: DataKey = null
   ): RowProps = {
     val __obj = js.Dynamic.literal(active = active, data = data)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

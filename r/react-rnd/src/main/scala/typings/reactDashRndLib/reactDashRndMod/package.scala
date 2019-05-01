@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashRndMod {
+  type CSSProperties = reactLib.reactMod.CSSProperties
   type DraggableEventHandler = js.Function2[
     /* e */ stdLib.MouseEvent | stdLib.TouchEvent, 
     /* data */ DraggableData, 

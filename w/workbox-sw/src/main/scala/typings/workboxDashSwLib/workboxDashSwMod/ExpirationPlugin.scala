@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * When using `maxEntries`, the last request to be used will be the request
   * that is removed from the Cache.
   */
-trait ExpirationPlugin extends js.Object {
+trait ExpirationPlugin extends Plugin {
   /**
   	 * This is a helper method that performs two operations:
   	 *

@@ -27,11 +27,11 @@ trait A11yDialog extends js.Object {
     */
   def hide(): scala.Unit = js.native
   def off(
-    evt: a11yDashDialogLib.DialogEvents,
+    evt: DialogEvents,
     callback: js.Function2[/* dialogElement */ js.Any, /* event */ stdLib.Event, scala.Unit]
   ): scala.Unit = js.native
   def on(
-    evt: a11yDashDialogLib.DialogEvents,
+    evt: DialogEvents,
     callback: js.Function2[/* dialogElement */ js.Any, /* event */ stdLib.Event, scala.Unit]
   ): scala.Unit = js.native
   /**

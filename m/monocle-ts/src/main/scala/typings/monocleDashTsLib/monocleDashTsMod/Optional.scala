@@ -127,12 +127,15 @@ object Optional extends js.Object {
     *   .composeLens(number)
     */
   def fromOptionProp[S](): js.Function1[
-    /* prop */ monocleDashTsLib.OptionPropertyNames[S], 
-    monocleDashTsLib.monocleDashTsMod.Optional[S, monocleDashTsLib.OptionPropertyType[S, monocleDashTsLib.OptionPropertyNames[S]]]
+    /* prop */ monocleDashTsLib.monocleDashTsMod.OptionPropertyNames[S], 
+    monocleDashTsLib.monocleDashTsMod.Optional[
+      S, 
+      monocleDashTsLib.monocleDashTsMod.OptionPropertyType[S, monocleDashTsLib.monocleDashTsMod.OptionPropertyNames[S]]
+    ]
   ] = js.native
-  def fromOptionProp[S](prop: monocleDashTsLib.OptionPropertyNames[S]): monocleDashTsLib.monocleDashTsMod.Optional[
+  def fromOptionProp[S](prop: monocleDashTsLib.monocleDashTsMod.OptionPropertyNames[S]): monocleDashTsLib.monocleDashTsMod.Optional[
     S, 
-    monocleDashTsLib.OptionPropertyType[S, /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof prop */ _]
+    monocleDashTsLib.monocleDashTsMod.OptionPropertyType[S, /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof prop */ _]
   ] = js.native
 }
 

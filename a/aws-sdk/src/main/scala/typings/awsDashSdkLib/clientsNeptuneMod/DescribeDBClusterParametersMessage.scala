@@ -19,11 +19,11 @@ trait DescribeDBClusterParametersMessage extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.undefined
   /**
-    *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
+    *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: Minimum 20, maximum 100.
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    *  A value that indicates to return only parameters for a specific source. Parameter sources can be engine, service, or customer. 
+    *  A value that indicates to return only parameters for a specific source. Parameter sources can be engine, service, or customer.
     */
   var Source: js.UndefOr[String] = js.undefined
 }

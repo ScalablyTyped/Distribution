@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetPublicAccessBlockRequest extends js.Object {
   /**
-    * The Account ID for the Amazon Web Services account whose Public Access Block configuration you want to retrieve.
+    * 
     */
   var AccountId: awsDashSdkLib.clientsS3controlMod.AccountId
 }

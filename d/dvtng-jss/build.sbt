@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dvtng-jss"
-version := "v0.6-dt-20190322Z-ae4ac3"
+version := "v0.6-dt-20190322Z-f47c95"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,4 +9,5 @@ publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
         

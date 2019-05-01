@@ -13,7 +13,7 @@ trait Anon_AnimateAppear extends js.Object {
   var maskClosable: scala.Boolean
   var operation: scala.Boolean
   var popup: scala.Boolean
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   var transparent: scala.Boolean
   var visible: scala.Boolean
   def onClose(): scala.Unit
@@ -30,7 +30,7 @@ object Anon_AnimateAppear {
     onClose: () => scala.Unit,
     operation: scala.Boolean,
     popup: scala.Boolean,
-    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]],
+    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]],
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): Anon_AnimateAppear = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var level: js.UndefOr[LogLevelNames] = js.undefined
-  var prefix: js.UndefOr[java.lang.String | consoleDashLogDashLevelLib.PrefixFunction] = js.undefined
+  var prefix: js.UndefOr[java.lang.String | PrefixFunction] = js.undefined
   var stderr: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object Options {
   @scala.inline
   def apply(
     level: LogLevelNames = null,
-    prefix: java.lang.String | consoleDashLogDashLevelLib.PrefixFunction = null,
+    prefix: java.lang.String | PrefixFunction = null,
     stderr: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()

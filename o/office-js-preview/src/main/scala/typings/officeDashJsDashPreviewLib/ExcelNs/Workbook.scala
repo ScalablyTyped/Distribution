@@ -26,8 +26,7 @@ class Workbook ()
     *
     * Specifies whether or not the workbook is in autosave mode. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val autoSave: scala.Boolean = js.native
   /**
@@ -41,8 +40,7 @@ class Workbook ()
     *
     * Returns a number about the version of Excel Calculation Engine. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val calculationEngineVersion: scala.Double = js.native
   /**
@@ -50,8 +48,7 @@ class Workbook ()
     * True if all charts in the workbook are tracking the actual data points to which they are attached.
     False if the charts track the index of the data points.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var chartDataPointTrack: scala.Boolean = js.native
   /**
@@ -91,8 +88,7 @@ class Workbook ()
     * Specifies whether or not changes have been made since the workbook was last saved.
     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var isDirty: scala.Boolean = js.native
   /**
@@ -113,10 +109,9 @@ class Workbook ()
     *
     * Occurs when the autoSave setting is changed on the workbook.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onAutoSaveSettingChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorkbookAutoSaveSettingChangedEventArgs] = js.native
   /**
@@ -147,8 +142,7 @@ class Workbook ()
     *
     * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   val previouslySaved: scala.Boolean = js.native
   /**
@@ -238,8 +232,7 @@ class Workbook ()
     * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
     Data will permanently lose accuracy when switching this property from false to true.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var usePrecisionAsDisplayed: scala.Boolean = js.native
   /**
@@ -275,16 +268,14 @@ class Workbook ()
     *
     * Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke this statement
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getActiveChart(): Chart = js.native
   /**
     *
     * Gets the currently active chart in the workbook. If there is no active chart, will return null object
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getActiveChartOrNullObject(): Chart = js.native
   /**
@@ -308,8 +299,7 @@ class Workbook ()
     * True if the workbook is being edited by multiple users (co-authoring).
     Please be aware there might be some delay between when the workbook status changes and when the changes are reflected on the result of the method.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getIsActiveCollabSession(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Boolean] = js.native
   /**
@@ -323,8 +313,7 @@ class Workbook ()
     *
     * Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a RangeAreas object that represents all the selected ranges.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   def getSelectedRanges(): RangeAreas = js.native
   /**

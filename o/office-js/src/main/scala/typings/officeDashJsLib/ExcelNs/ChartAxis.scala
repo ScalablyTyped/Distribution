@@ -90,6 +90,13 @@ class ChartAxis ()
   val left: scala.Double = js.native
   /**
     *
+    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    *
+    * [Api set: ExcelApi 1.9]
+    */
+  var linkNumberFormat: scala.Boolean = js.native
+  /**
+    *
     * Represents the base of the logarithm when using logarithmic scales.
     *
     * [Api set: ExcelApi 1.7]

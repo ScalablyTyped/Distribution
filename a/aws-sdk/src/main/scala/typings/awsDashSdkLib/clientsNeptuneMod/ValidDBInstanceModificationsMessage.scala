@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ValidDBInstanceModificationsMessage extends js.Object {
   /**
-    * Valid storage options for your DB instance. 
+    * Valid storage options for your DB instance.
     */
   var Storage: js.UndefOr[ValidStorageOptionsList] = js.undefined
 }

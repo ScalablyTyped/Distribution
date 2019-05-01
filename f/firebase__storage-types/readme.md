@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__storage-types
 
-Typings are for version 0.2.10
+Typings are for version 0.2.11
 
 ## Library description:
 @firebase/storage Types

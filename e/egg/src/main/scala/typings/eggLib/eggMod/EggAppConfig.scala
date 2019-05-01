@@ -45,7 +45,8 @@ trait EggAppConfig
     */
   var env: EggEnvType = js.native
   var hostHeaders: java.lang.String = js.native
-  var httpclient: eggLib.Anon_EnableDNSCache = js.native
+  /** Configuration of httpclient in egg. */
+  var httpclient: HttpClientConfig = js.native
   /**
     * I18n options
     */

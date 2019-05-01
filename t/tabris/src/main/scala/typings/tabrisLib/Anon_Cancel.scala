@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Cancel extends js.Object {
-  var image: js.UndefOr[Image] = js.undefined
+  var image: js.UndefOr[tabrisLib.tabrisMod.Image] = js.undefined
   var style: js.UndefOr[
     tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.cancel | tabrisLib.tabrisLibStrings.destructive
   ] = js.undefined
@@ -17,7 +17,7 @@ object Anon_Cancel {
   @scala.inline
   def apply(
     title: java.lang.String,
-    image: Image = null,
+    image: tabrisLib.tabrisMod.Image = null,
     style: tabrisLib.tabrisLibStrings.default | tabrisLib.tabrisLibStrings.cancel | tabrisLib.tabrisLibStrings.destructive = null
   ): Anon_Cancel = {
     val __obj = js.Dynamic.literal(title = title)

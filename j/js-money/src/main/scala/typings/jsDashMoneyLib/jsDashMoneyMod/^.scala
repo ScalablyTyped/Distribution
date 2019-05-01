@@ -137,19 +137,11 @@ object ^ extends js.Object {
   var ZAR: jsDashMoneyLib.libCurrencyMod.Currency = js.native
   var ZMK: jsDashMoneyLib.libCurrencyMod.Currency = js.native
   def fromDecimal(amount: scala.Double, currency: java.lang.String): Money = js.native
-  def fromDecimal(amount: scala.Double, currency: java.lang.String, rounder: jsDashMoneyLib.RoundFunction): Money = js.native
-  def fromDecimal(amount: scala.Double, currency: java.lang.String, rounder: jsDashMoneyLib.Rounders): Money = js.native
+  def fromDecimal(amount: scala.Double, currency: java.lang.String, rounder: RoundFunction): Money = js.native
+  def fromDecimal(amount: scala.Double, currency: java.lang.String, rounder: Rounders): Money = js.native
   def fromDecimal(amount: scala.Double, currency: jsDashMoneyLib.libCurrencyMod.Currency): Money = js.native
-  def fromDecimal(
-    amount: scala.Double,
-    currency: jsDashMoneyLib.libCurrencyMod.Currency,
-    rounder: jsDashMoneyLib.RoundFunction
-  ): Money = js.native
-  def fromDecimal(
-    amount: scala.Double,
-    currency: jsDashMoneyLib.libCurrencyMod.Currency,
-    rounder: jsDashMoneyLib.Rounders
-  ): Money = js.native
+  def fromDecimal(amount: scala.Double, currency: jsDashMoneyLib.libCurrencyMod.Currency, rounder: RoundFunction): Money = js.native
+  def fromDecimal(amount: scala.Double, currency: jsDashMoneyLib.libCurrencyMod.Currency, rounder: Rounders): Money = js.native
   def fromInteger(amount: scala.Double, currency: java.lang.String): Money = js.native
   def fromInteger(amount: scala.Double, currency: jsDashMoneyLib.libCurrencyMod.Currency): Money = js.native
 }

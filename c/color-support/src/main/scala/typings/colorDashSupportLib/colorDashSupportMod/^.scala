@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("color-support", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[colorDashSupportLib.ColorSupport]
+  extends org.scalablytyped.runtime.TopLevel[ColorSupport]
 

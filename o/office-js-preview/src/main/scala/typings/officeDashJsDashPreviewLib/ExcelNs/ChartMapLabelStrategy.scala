@@ -12,8 +12,7 @@ sealed trait ChartMapLabelStrategy extends js.Object
   *
   * Represents the region label strategy of chart series layout, only applicable in RegionMap chart.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartMapLabelStrategy")
 @js.native

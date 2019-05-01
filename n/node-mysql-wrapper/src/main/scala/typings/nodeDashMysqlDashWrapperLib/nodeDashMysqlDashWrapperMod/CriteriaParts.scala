@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("node-mysql-wrapper", "CriteriaParts")
 @js.native
 class CriteriaParts protected () extends ICriteriaParts {
-  def this(rawCriteriaObject: js.Any, tables: js.Array[nodeDashMysqlDashWrapperLib.TableToSearchPart], noDatabaseProperties: js.Array[java.lang.String], whereClause: java.lang.String) = this()
+  def this(rawCriteriaObject: js.Any, tables: js.Array[TableToSearchPart], noDatabaseProperties: js.Array[java.lang.String], whereClause: java.lang.String) = this()
   /* CompleteClass */
   override var noDatabaseProperties: js.Array[java.lang.String] = js.native
   /* CompleteClass */
   override var rawCriteriaObject: js.Any = js.native
   /* CompleteClass */
-  override var tables: js.Array[nodeDashMysqlDashWrapperLib.TableToSearchPart] = js.native
+  override var tables: js.Array[TableToSearchPart] = js.native
   /* CompleteClass */
   override var whereClause: java.lang.String = js.native
   /* CompleteClass */

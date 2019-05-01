@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RippleBackgroundPropType extends BaseBackgroundPropType {
+trait RippleBackgroundPropType
+  extends BaseBackgroundPropType
+     with BackgroundPropType {
   var borderless: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[scala.Double] = js.undefined
   @JSName("type")

@@ -12,7 +12,7 @@ trait _ImageViewProperties extends _WidgetProperties {
     * internally. When no dimensions are given the image will be loaded with its original size. Since the
     * full size image might occupy a lot of memory, it's recommended to provide exact dimensions.
     */
-  var image: tabrisLib.Image | scala.Null
+  var image: Image | scala.Null
   /**
     * The highest amount the image can be zoomed in to. Setting the `maxZoomLevel` to a level smaller than
     * the current `zoomLevel` changes the `zoomLevel` to be the same as the new `maxZoomLevel`.
@@ -58,8 +58,8 @@ object _ImageViewProperties {
   @scala.inline
   def apply(
     background: tabrisLib.Color,
-    backgroundImage: tabrisLib.Image,
-    baseline: Widget | tabrisLib.Selector,
+    backgroundImage: Image,
+    baseline: Widget | Selector,
     bottom: tabrisLib.margin,
     centerX: tabrisLib.offset,
     centerY: tabrisLib.offset,
@@ -87,7 +87,7 @@ object _ImageViewProperties {
     zoomEnabled: scala.Boolean,
     zoomLevel: scala.Double,
     font: tabrisLib.Font = null,
-    image: tabrisLib.Image = null
+    image: Image = null
   ): _ImageViewProperties = {
     val __obj = js.Dynamic.literal(background = background, backgroundImage = backgroundImage.asInstanceOf[js.Any], baseline = baseline.asInstanceOf[js.Any], bottom = bottom, centerX = centerX, centerY = centerY, classList = classList, cornerRadius = cornerRadius, elevation = elevation, enabled = enabled, height = height, highlightOnTouch = highlightOnTouch, id = id, layoutData = layoutData, left = left, maxZoomLevel = maxZoomLevel, minZoomLevel = minZoomLevel, opacity = opacity, right = right, scaleMode = scaleMode.asInstanceOf[js.Any], tintColor = tintColor, top = top, transform = transform, visible = visible, width = width, win_theme = win_theme.asInstanceOf[js.Any], zoomEnabled = zoomEnabled, zoomLevel = zoomLevel)
     __obj.updateDynamic("class")(`class`)

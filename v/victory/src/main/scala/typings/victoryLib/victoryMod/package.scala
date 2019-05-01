@@ -11,7 +11,13 @@ package object victoryMod {
   /**
     * Category prop type
     */
-  type CategoryPropType = js.Array[java.lang.String] | victoryLib.Anon_XYArray
+  /* Rewritten from type alias, can be one of: 
+    - js.Array[java.lang.String]
+    - victoryLib.Anon_XArray
+    - victoryLib.Anon_Y
+    - victoryLib.Anon_XYArray
+  */
+  type CategoryPropType = _CategoryPropType | js.Array[java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - victoryLib.victoryLibStrings.greyscale
     - victoryLib.victoryLibStrings.qualitative

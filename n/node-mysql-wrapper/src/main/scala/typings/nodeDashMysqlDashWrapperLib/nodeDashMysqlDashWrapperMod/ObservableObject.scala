@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObservableObject () extends js.Object {
   def this(obj: js.Any) = this()
-  var propertyChangedListeners: js.Array[nodeDashMysqlDashWrapperLib.PropertyChangedCallback] = js.native
+  var propertyChangedListeners: js.Array[PropertyChangedCallback] = js.native
   /**Remove property changed listeners  */
   def _forget(): scala.Unit = js.native
   /** Make the obj observable. Used in constructor or extend this class and use it. */
@@ -17,7 +17,7 @@ class ObservableObject () extends js.Object {
   /** If developer wants manualy notify for property changed */
   def notifyPropertyChanged(propertyName: java.lang.String, oldValue: js.Any): scala.Unit = js.native
   /**Add a listener/observer to watch for changes in this object's properties */
-  def onPropertyChanged(listener: nodeDashMysqlDashWrapperLib.PropertyChangedCallback): scala.Unit = js.native
+  def onPropertyChanged(listener: PropertyChangedCallback): scala.Unit = js.native
   def toJSON(excludeProperties: java.lang.String*): js.Any = js.native
 }
 

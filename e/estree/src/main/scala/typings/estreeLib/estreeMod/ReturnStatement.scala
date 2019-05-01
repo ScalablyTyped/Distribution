@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ReturnStatement
   extends BaseNode
      with Statement {
-  var argument: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
+  var argument: js.UndefOr[Expression | scala.Null] = js.undefined
   @JSName("type")
   var type_ReturnStatement: estreeLib.estreeLibStrings.ReturnStatement
 }
@@ -17,7 +17,7 @@ object ReturnStatement {
   @scala.inline
   def apply(
     `type`: estreeLib.estreeLibStrings.ReturnStatement,
-    argument: estreeLib.Expression = null,
+    argument: Expression = null,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null,

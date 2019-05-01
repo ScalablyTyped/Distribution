@@ -51,10 +51,9 @@ class WorksheetCollection ()
     *
     * Occurs when any worksheet in the workbook is changed.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetChangedEventArgs] = js.native
   /**
@@ -99,10 +98,9 @@ class WorksheetCollection ()
     *
     * Occurs when any worksheet in the workbook has format changed.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onFormatChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetFormatChangedEventArgs] = js.native
   /**
@@ -119,10 +117,9 @@ class WorksheetCollection ()
     *
     * Occurs when the selection changes on any worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * [Api set: ExcelApi 1.9]
     *
     * @eventproperty
-    * @beta
     */
   val onSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[WorksheetSelectionChangedEventArgs] = js.native
   /**

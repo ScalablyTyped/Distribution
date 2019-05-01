@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 - tabrisLib.tabrisMod._ToggleButtonProperties because var conflicts: background, backgroundImage, baseline, bottom, centerX, centerY, `class`, classList, cornerRadius, elevation, enabled, font, height, highlightOnTouch, id, layoutData, left, opacity, right, top, transform, visible, width, win_theme. Inlined alignment, checked, image, text, textColor */ @JSImport("tabris", "ToggleButton")
 @js.native
 class ToggleButton () extends Widget {
-  def this(properties: tabrisLib.Properties[ToggleButton, tabrisLib.TypeScriptPropertiesKey]) = this()
+  def this(properties: Properties[ToggleButton, TypeScriptPropertiesKey]) = this()
   /**
     * The horizontal alignment of the button text.
     */
@@ -24,7 +24,7 @@ class ToggleButton () extends Widget {
   /**
     * An image to be displayed on the button.
     */
-  var image: tabrisLib.Image | scala.Null = js.native
+  var image: Image | scala.Null = js.native
   /**
     * The button's label text.
     */
@@ -38,7 +38,7 @@ class ToggleButton () extends Widget {
     * the `Properties` interface. It's value is always undefined.
     */
   @JSName("tsProperties")
-  val tsProperties_ToggleButton: tabrisLib.ToggleButtonProperties = js.native
+  val tsProperties_ToggleButton: ToggleButtonProperties = js.native
   /**
     * Removes all listeners in the given object from the event type indicated by their key.
     * @param listeners A key-value map where the keys are event types and the values are the listeners to deregister from these events, e.g. `{tap: onTap, scroll: onScroll}`.

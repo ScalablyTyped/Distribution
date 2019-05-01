@@ -7,25 +7,31 @@ import scala.scalajs.js.annotation._
 
 object getenvLibStrings {
   @js.native
-  sealed trait bool extends js.Object
+  sealed trait bool
+    extends getenvLib.getenvMod.ParseTypes
   
   @js.native
-  sealed trait boolish extends js.Object
+  sealed trait boolish
+    extends getenvLib.getenvMod.ParseTypes
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait float
+    extends getenvLib.getenvMod.ParseTypes
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends getenvLib.getenvMod.ParseTypes
   
   @js.native
   sealed trait multi extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends getenvLib.getenvMod.ParseTypes
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends getenvLib.getenvMod.ParseTypes
   
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]

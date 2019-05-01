@@ -96,8 +96,7 @@ trait ChartCollectionLoadOptions extends js.Object {
     *
     * For EACH ITEM in the collection: Encapsulates the options for the pivot chart.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.9]
     */
   var pivotOptions: js.UndefOr[ChartPivotOptionsLoadOptions] = js.undefined
   /**

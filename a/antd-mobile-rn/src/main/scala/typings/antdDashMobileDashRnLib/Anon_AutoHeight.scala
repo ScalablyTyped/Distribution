@@ -14,7 +14,7 @@ trait Anon_AutoHeight extends js.Object {
   var keyboardType: java.lang.String
   var last: scala.Boolean
   var rows: scala.Double
-  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+  var styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   def onBlur(): scala.Unit
   def onChange(): scala.Unit
   def onErrorClick(): scala.Unit
@@ -36,7 +36,7 @@ object Anon_AutoHeight {
     onErrorClick: () => scala.Unit,
     onFocus: () => scala.Unit,
     rows: scala.Double,
-    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.RegisteredStyle[_]]
+    styles: org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.RegisteredStyle[_]]
   ): Anon_AutoHeight = {
     val __obj = js.Dynamic.literal(autoHeight = autoHeight, clear = clear, count = count, editable = editable, error = error, keyboardType = keyboardType, last = last, onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onFocus = js.Any.fromFunction0(onFocus), rows = rows, styles = styles)
   

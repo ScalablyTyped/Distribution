@@ -13,14 +13,14 @@ class LruObjectCache protected () extends ICacheObject {
   override def clear(): scala.Unit = js.native
   /* CompleteClass */
   override def get(key: js.Any): js.Any = js.native
-  def get(key: reDashReselectLib.ObjectCacheKey): js.Any = js.native
+  def get(key: ObjectCacheKey): js.Any = js.native
   @JSName("isValidCacheKey")
-  def isValidCacheKey_MLruObjectCache(key: reDashReselectLib.ObjectCacheKey): scala.Boolean = js.native
+  def isValidCacheKey_MLruObjectCache(key: ObjectCacheKey): scala.Boolean = js.native
   /* CompleteClass */
   override def remove(key: js.Any): scala.Unit = js.native
-  def remove(key: reDashReselectLib.ObjectCacheKey): scala.Unit = js.native
+  def remove(key: ObjectCacheKey): scala.Unit = js.native
   /* CompleteClass */
   override def set(key: js.Any, selectorFn: js.Any): scala.Unit = js.native
-  def set(key: reDashReselectLib.ObjectCacheKey, selectorFn: js.Any): scala.Unit = js.native
+  def set(key: ObjectCacheKey, selectorFn: js.Any): scala.Unit = js.native
 }
 

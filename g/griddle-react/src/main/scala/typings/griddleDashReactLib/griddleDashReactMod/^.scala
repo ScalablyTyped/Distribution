@@ -13,7 +13,7 @@ object ^ extends js.Object {
   val actions: GriddleActions = js.native
   val connect: reactDashReduxLib.reactDashReduxMod.Connect = js.native
   val constants: PropertyBag[java.lang.String] = js.native
-  val selectors: PropertyBag[griddleDashReactLib.Selector] = js.native
+  val selectors: PropertyBag[Selector] = js.native
   val settingsComponentObjects: PropertyBag[SettingsComponentObject] = js.native
 }
 

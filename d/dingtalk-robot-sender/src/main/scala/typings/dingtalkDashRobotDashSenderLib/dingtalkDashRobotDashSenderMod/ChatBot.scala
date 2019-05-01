@@ -60,7 +60,7 @@ trait ChatBot extends js.Object {
     * @param content 发动的消息对象
     * @return
     */
-  def send(content: dingtalkDashRobotDashSenderLib.MessageType): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
+  def send(content: MessageType): js.Promise[axiosLib.axiosMod.AxiosResponse[_]] = js.native
   /**
     * 发送纯文本消息，支持@群内成员
     *

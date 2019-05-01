@@ -46,17 +46,17 @@ trait VendorShorthandPropertiesFallback[TLength] extends js.Object {
   /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
   var WebkitTransition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
   /** The **`-ms-content-zoom-limit`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-limit-min` and `-ms-content-zoom-limit-max` properties. */
-  var msContentZoomLimit: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var msContentZoomLimit: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /** The **`-ms-content-zoom-snap`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-snap-type` and `-ms-content-zoom-snap-points` properties. */
   var msContentZoomSnap: js.UndefOr[MsContentZoomSnapProperty | js.Array[MsContentZoomSnapProperty]] = js.undefined
   /** The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`. */
   var msFlex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
   /** The **\-ms-scroll-limit** CSS property is a Microsoft extension that specifies values for the `-ms-scroll-limit-x-min`, `-ms-scroll-limit-y-min`, `-ms-scroll-limit-x-max`, and `-ms-scroll-limit-y-max` properties. */
-  var msScrollLimit: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var msScrollLimit: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-x` properties. */
-  var msScrollSnapX: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var msScrollSnapX: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-y` properties. */
-  var msScrollSnapY: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  var msScrollSnapY: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
 }
 
 object VendorShorthandPropertiesFallback {
@@ -81,12 +81,12 @@ object VendorShorthandPropertiesFallback {
     WebkitTextEmphasis: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
     WebkitTextStroke: WebkitTextStrokeProperty[TLength] | js.Array[WebkitTextStrokeProperty[TLength]] = null,
     WebkitTransition: TransitionProperty | js.Array[TransitionProperty] = null,
-    msContentZoomLimit: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    msContentZoomLimit: GlobalsString | js.Array[GlobalsString] = null,
     msContentZoomSnap: MsContentZoomSnapProperty | js.Array[MsContentZoomSnapProperty] = null,
     msFlex: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
-    msScrollLimit: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
-    msScrollSnapX: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
-    msScrollSnapY: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null
+    msScrollLimit: GlobalsString | js.Array[GlobalsString] = null,
+    msScrollSnapX: GlobalsString | js.Array[GlobalsString] = null,
+    msScrollSnapY: GlobalsString | js.Array[GlobalsString] = null
   ): VendorShorthandPropertiesFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     if (MozAnimation != null) __obj.updateDynamic("MozAnimation")(MozAnimation.asInstanceOf[js.Any])
