@@ -10,7 +10,7 @@ sealed trait ChartBinType extends js.Object
 
 /**
   *
-  * Specifies the bins type of the Histogram chart series.
+  * Specifies the bin's type of a histogram chart or pareto chart series.
   *
   * [Api set: ExcelApi 1.9]
   */

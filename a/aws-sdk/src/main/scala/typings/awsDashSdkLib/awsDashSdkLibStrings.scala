@@ -7836,6 +7836,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsFirehoseMod._HECEndpointType
        with awsDashSdkLib.clientsSesMod._InvocationType
        with awsDashSdkLib.clientsLambdaMod._InvocationType
+       with awsDashSdkLib.clientsXrayMod._TimeRangeType
   
   @js.native
   sealed trait EventId
@@ -8825,6 +8826,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Finished
     extends awsDashSdkLib.clientsRobomakerMod._RobotDeploymentStep
+  
+  @js.native
+  sealed trait FixedRate
+    extends awsDashSdkLib.clientsXrayMod._SamplingStrategyName
   
   @js.native
   sealed trait Forbidden
@@ -15448,6 +15453,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudwatchMod._StatusCode
   
   @js.native
+  sealed trait PartialScan
+    extends awsDashSdkLib.clientsXrayMod._SamplingStrategyName
+  
+  @js.native
   sealed trait PartialUpfront
     extends awsDashSdkLib.clientsEc2Mod._PaymentOption
   
@@ -20188,6 +20197,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `Topic not found`
     extends awsDashSdkLib.clientsDirectoryserviceMod._TopicStatus
+  
+  @js.native
+  sealed trait TraceId
+    extends awsDashSdkLib.clientsXrayMod._TimeRangeType
   
   @js.native
   sealed trait Training
@@ -31526,6 +31539,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Finished: Finished = "Finished".asInstanceOf[Finished]
   @scala.inline
+  def FixedRate: FixedRate = "FixedRate".asInstanceOf[FixedRate]
+  @scala.inline
   def Forbidden: Forbidden = "Forbidden".asInstanceOf[Forbidden]
   @scala.inline
   def ForceResetDeployment: ForceResetDeployment = "ForceResetDeployment".asInstanceOf[ForceResetDeployment]
@@ -34272,6 +34287,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PartialData: PartialData = "PartialData".asInstanceOf[PartialData]
   @scala.inline
+  def PartialScan: PartialScan = "PartialScan".asInstanceOf[PartialScan]
+  @scala.inline
   def PartialUpfront: PartialUpfront = "PartialUpfront".asInstanceOf[PartialUpfront]
   @scala.inline
   def PartiallyActive: PartiallyActive = "PartiallyActive".asInstanceOf[PartiallyActive]
@@ -36317,6 +36334,8 @@ object awsDashSdkLibStrings {
   def Topic: Topic = "Topic".asInstanceOf[Topic]
   @scala.inline
   def `Topic not found`: `Topic not found` = "Topic not found".asInstanceOf[`Topic not found`]
+  @scala.inline
+  def TraceId: TraceId = "TraceId".asInstanceOf[TraceId]
   @scala.inline
   def Training: Training = "Training".asInstanceOf[Training]
   @scala.inline

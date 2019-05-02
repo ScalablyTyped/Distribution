@@ -886,6 +886,7 @@
 | 239 | [conf](./c/conf) | Simple config handling for your app or module
 | 239 | [is-glob](./i/is-glob) | Returns true if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a bet
 | 238 | [chroma-js](./c/chroma-js) | JavaScript library for color conversions
+| 238 | [kind-of](./k/kind-of) | Get the native type of a value.
 | 238 | [react-popper](./r/react-popper) | React wrapper around Popper.js
 | 238 | [sass](./s/sass) | A pure JavaScript implementation of Sass.
 | 238 | [swagger-parser](./s/swagger-parser) | Swagger 2.0 and OpenAPI 3.0 parser and validator for Node and browsers
@@ -2397,6 +2398,7 @@
 | 48 | [react-scrollbar](./r/react-scrollbar) | ScrollArea component for react
 | 48 | [relay-runtime](./r/relay-runtime) | A core runtime for building GraphQL-driven applications.
 | 48 | [repeat-element](./r/repeat-element) | Create an array by repeating the given value n times.
+| 48 | [simplecrawler](./s/simplecrawler) | Very straightforward, event driven web crawler. Features a flexible queue interface and a basic cache mechanism with extensible backend.
 | 48 | [stack-utils](./s/stack-utils) | Captures and cleans stack traces
 | 48 | [term-size](./t/term-size) | Reliably get the terminal window size (columns & rows)
 | 48 | [webpack-hot-client](./w/webpack-hot-client) | A client for enabling, and interacting with, webpack Hot Module Replacement
@@ -4425,10 +4427,12 @@
 | 6 | [delaunator](./d/delaunator) | An incredibly fast JavaScript library for Delaunay triangulation of 2D points
 | 6 | [detox](./d/detox) | E2E tests and automation for mobile
 | 6 | [devtools-detect](./d/devtools-detect) | Detect if DevTools is open and its orientation
+| 6 | [djv](./d/djv) | dynamic json-schema validator
 | 6 | [dynogels](./d/dynogels) | DynamoDB data mapper
 | 6 | [empower](./e/empower) | Power Assert feature enhancer for assert function/object
 | 6 | [epub](./e/epub) | Parse ePub electronic book files with Node.JS
 | 6 | [expirymanager](./e/expirymanager) | An object for efficiently managing key expiries
+| 6 | [express-async-wrap](./e/express-async-wrap) | Allows the use of ES2016 async functions as Express route handlers
 | 6 | [express-debug](./e/express-debug) | debug toolbar middleware for developing applications in expressjs
 | 6 | [express-redis-cache](./e/express-redis-cache) | A module to make Express interact with Redis (create, get, delete). You can automatically cache all your most popular routes in Redis.
 | 6 | [fastify-cors](./f/fastify-cors) | Fastify CORS
@@ -5076,6 +5080,7 @@
 | 3 | [twilio-transport](./t/twilio-transport) | Twilio generic transport interface
 | 3 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript modal written in ECMAScript 2015.
 | 3 | [vfile-message](./v/vfile-message) | Create a virtual message
+| 3 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue
 | 3 | [wait-for-localhost](./w/wait-for-localhost) | Wait for localhost to be ready
 | 3 | [webpack-watched-glob-entries-plugin](./w/webpack-watched-glob-entries-plugin) | Webpack plugin to glob directories for entry files and also watch them for changes
 | 3 | [webscopeio__react-textarea-autocomplete](./w/webscopeio__react-textarea-autocomplete) | Offers autocomplete over textarea in style of GitHub.
@@ -5185,6 +5190,7 @@
 | 2 | [jasmine-promise-matchers](./j/jasmine-promise-matchers) | Jasmine Promise Matchers ================
 | 2 | [jasmine_dom_matchers](./j/jasmine_dom_matchers) | dom matchers for Jasmine
 | 2 | [jcanvas](./j/jcanvas) | jCanvas brings jQuery's powerful syntax and capability to the HTML5 canvas. Quickly create canvas-based apps that can utilize layers, animations, events, and much more. jCanvas works on all modern browsers and platforms, including iOS and Android.
+| 2 | [jest-expect-message](./j/jest-expect-message) | Add custom message to Jest expects
 | 2 | [jquery-jcrop](./j/jquery-jcrop) | Image cropping plugin for jQuery
 | 2 | [jquery-steps](./j/jquery-steps) | A powerful jQuery wizard plugin that supports accessibility and HTML5
 | 2 | [jquery-sticky](./j/jquery-sticky) | Sticky is a jQuery plugin that gives you the ability to make any element on your page always stay visible.
@@ -5486,6 +5492,7 @@
 | 1 | [fnv-lite](./f/fnv-lite) | Small 128-bit FNV-1a library for the browser.
 | 1 | [forge-di](./f/forge-di) | a dependency injector for node.js
 | 1 | [formstate](./f/formstate) | Painless and simple MobX form management
+| 1 | [fundamental-react](./f/fundamental-react) | SAP Fiori Fundamentals, implemented in React
 | 1 | [gaea-model](./g/gaea-model) | 盖亚-定义文件
 | 1 | [gfc](./g/gfc) | Simple way to initialize a new git repository in an empty directory, add a file and do a first commit (or skip that part in a directory with files). Useful for unit tests and generators.
 | 1 | [gifffer](./g/gifffer) | JavaScript library that prevents the autoplaying of the animated Gifs
@@ -5716,6 +5723,7 @@
 | 1 | [snazzy-info-window](./s/snazzy-info-window) | Customizable info windows using the Google Maps JavaScript API.
 | 1 | [solid__react](./s/solid__react) | Efficiently build Solid apps and components with React
 | 1 | [spatialite](./s/spatialite) | SpatiaLite for node
+| 1 | [squirrelly](./s/squirrelly) | Simple and powerful template engine that supports helpers, partials, filters, native code, and Express.
 | 1 | [ssh-key-decrypt](./s/ssh-key-decrypt) | Decrypt encrypted ssh private keys
 | 1 | [storage-helper](./s/storage-helper) | A very simple way to manage browser storage
 | 1 | [strange](./s/strange) | Range aka interval object. Supports exclusive and infinite ranges. Comes with an interval tree (augmented binary search tree).
@@ -6218,6 +6226,7 @@
 | 0 | [save-csv](./s/save-csv) | Download an array of objects as a CSV file in the browser
 | 0 | [saywhen](./s/saywhen) | Better spy fake calls for Jasmine
 | 0 | [scalike](./s/scalike) | 
+| 0 | [secure-random-password](./s/secure-random-password) | Generate passwords using a cryptographically-strong source of randomness
 | 0 | [seen](./s/seen) | seen.js is a library for drawing simple 3D scenes in SVG and HTML5 Canvas elements.
 | 0 | [selectables](./s/selectables) | Select html elements on webpage using mouse
 | 0 | [semantic-ui-accordion](./s/semantic-ui-accordion) | Single component release of accordion

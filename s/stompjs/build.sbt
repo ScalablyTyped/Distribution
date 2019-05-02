@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "stompjs"
-version := "2.3-dt-20190430Z-74ebe0"
+version := "2.3-dt-20190430Z-a301c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
   "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

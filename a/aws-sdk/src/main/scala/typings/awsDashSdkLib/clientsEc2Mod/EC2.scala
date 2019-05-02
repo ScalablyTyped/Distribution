@@ -6233,6 +6233,29 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyVpcTenancyResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * 
+    */
+  def modifyVpnConnection(): awsDashSdkLib.libRequestMod.Request[ModifyVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyVpnConnection(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyVpnConnectionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def modifyVpnConnection(params: ModifyVpnConnectionRequest): awsDashSdkLib.libRequestMod.Request[ModifyVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyVpnConnection(
+    params: ModifyVpnConnectionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyVpnConnectionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Enables detailed monitoring for a running instance. Otherwise, basic monitoring is enabled. For more information, see Monitoring Your Instances and Volumes in the Amazon Elastic Compute Cloud User Guide. To disable detailed monitoring, see .
     */
   def monitorInstances(): awsDashSdkLib.libRequestMod.Request[MonitorInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native

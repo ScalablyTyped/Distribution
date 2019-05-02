@@ -18,21 +18,21 @@ trait ChartSeriesUpdateData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Encapsulates the bin options only for histogram chart and pareto chart.
+    * Encapsulates the bin options for histogram charts and pareto charts.
     *
     * [Api set: ExcelApi 1.9]
     */
   var binOptions: js.UndefOr[ChartBinOptionsUpdateData] = js.undefined
   /**
     *
-    * Encapsulates the options for the Box & Whisker chart.
+    * Encapsulates the options for the box and whisker charts.
     *
     * [Api set: ExcelApi 1.9]
     */
   var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsUpdateData] = js.undefined
   /**
     *
-    * Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
+    * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -99,7 +99,7 @@ trait ChartSeriesUpdateData extends js.Object {
   var gapWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns or sets the Color for maximum value of a region map chart series. Read/Write.
+    * Returns or sets the color for maximum value of a region map chart series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -122,7 +122,7 @@ trait ChartSeriesUpdateData extends js.Object {
   var gradientMaximumValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
+    * Returns or sets the color for midpoint value of a region map chart series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -145,7 +145,7 @@ trait ChartSeriesUpdateData extends js.Object {
   var gradientMidpointValue: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns or sets the Color for minimum value of a region map chart series. Read/Write.
+    * Returns or sets the color for minimum value of a region map chart series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -198,7 +198,7 @@ trait ChartSeriesUpdateData extends js.Object {
   var invertIfNegative: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Encapsulates the options for the Map chart.
+    * Encapsulates the options for a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -249,7 +249,7 @@ trait ChartSeriesUpdateData extends js.Object {
   var overlap: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns or sets series parent label strategy area of a treemap chart. Read/Write.
+    * Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -272,14 +272,14 @@ trait ChartSeriesUpdateData extends js.Object {
   var secondPlotSize: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns or sets if connector lines show in a waterfall chart. Read/Write.
+    * Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showConnectorLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
+    * Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -309,7 +309,7 @@ trait ChartSeriesUpdateData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
+    * Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -323,14 +323,14 @@ trait ChartSeriesUpdateData extends js.Object {
   var varyByCategories: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the error bar object for a chart series.
+    * Represents the error bar object of a chart series.
     *
     * [Api set: ExcelApi 1.9]
     */
   var xErrorBars: js.UndefOr[ChartErrorBarsUpdateData] = js.undefined
   /**
     *
-    * Represents the error bar object for a chart series.
+    * Represents the error bar object of a chart series.
     *
     * [Api set: ExcelApi 1.9]
     */

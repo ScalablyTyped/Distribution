@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GatsbyConfig extends js.Object {
   /** Sometimes you need more granular/flexible access to the development server. Gatsby exposes the Express.js development server to your site’s gatsby-config.js where you can add Express middleware as needed. */
-  var developMiddleware: js.UndefOr[js.Function1[/* app */ expressLib.expressMod.Application, scala.Unit]] = js.undefined
+  var developMiddleware: js.UndefOr[js.Function1[/* app */ js.Any, scala.Unit]] = js.undefined
   var mapping: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /** It’s common for sites to be hosted somewhere other than the root of their domain. Say we have a Gatsby site at `example.com/blog/`. In this case, we would need a prefix (`/blog`) added to all paths on the site. */
   var pathPrefix: js.UndefOr[java.lang.String] = js.undefined
@@ -27,7 +27,7 @@ trait GatsbyConfig extends js.Object {
 object GatsbyConfig {
   @scala.inline
   def apply(
-    developMiddleware: /* app */ expressLib.expressMod.Application => scala.Unit = null,
+    developMiddleware: /* app */ js.Any => scala.Unit = null,
     mapping: stdLib.Record[java.lang.String, java.lang.String] = null,
     pathPrefix: java.lang.String = null,
     plugins: js.Array[java.lang.String | gatsbyLib.Anon_Options] = null,

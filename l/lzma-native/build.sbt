@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "lzma-native"
-version := "4.0-dt-20181102Z-cd972f"
+version := "4.0-dt-20181102Z-39e803"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
   "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

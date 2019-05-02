@@ -10,7 +10,7 @@ sealed trait ChartErrorBarsInclude extends js.Object
 
 /**
   *
-  * Represents which error-bar parts to include.
+  * Represents which parts of the error bar to include.
   *
   * [Api set: ExcelApi 1.9]
   */

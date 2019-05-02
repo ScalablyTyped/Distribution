@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait VideoProperties
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var allowsExternalPlayback: js.UndefOr[scala.Boolean] = js.undefined
+  var audioOnly: js.UndefOr[scala.Boolean] = js.undefined
   var controls: js.UndefOr[scala.Boolean] = js.undefined
   var currentTime: js.UndefOr[scala.Double] = js.undefined
   var disableFocus: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,9 +33,7 @@ trait VideoProperties
   ] = js.undefined
   var onPlaybackResume: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPlaybackStalled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onProgress: js.UndefOr[
-    js.Function1[/* data */ reactDashNativeDashVideoLib.Anon_CurrentTime, scala.Unit]
-  ] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[/* data */ OnProgressData, scala.Unit]] = js.undefined
   var onReadyForDisplay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSeek: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onTimedMetadata: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -99,6 +98,7 @@ object VideoProperties {
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
     allowsExternalPlayback: js.UndefOr[scala.Boolean] = js.undefined,
+    audioOnly: js.UndefOr[scala.Boolean] = js.undefined,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
     controls: js.UndefOr[scala.Boolean] = js.undefined,
     currentTime: scala.Int | scala.Double = null,
@@ -132,7 +132,7 @@ object VideoProperties {
     onPlaybackRateChange: /* data */ reactDashNativeDashVideoLib.Anon_PlaybackRate => scala.Unit = null,
     onPlaybackResume: () => scala.Unit = null,
     onPlaybackStalled: () => scala.Unit = null,
-    onProgress: /* data */ reactDashNativeDashVideoLib.Anon_CurrentTime => scala.Unit = null,
+    onProgress: /* data */ OnProgressData => scala.Unit = null,
     onReadyForDisplay: () => scala.Unit = null,
     onResponderEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     onResponderGrant: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
@@ -208,6 +208,7 @@ object VideoProperties {
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
     if (!js.isUndefined(allowsExternalPlayback)) __obj.updateDynamic("allowsExternalPlayback")(allowsExternalPlayback)
+    if (!js.isUndefined(audioOnly)) __obj.updateDynamic("audioOnly")(audioOnly)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])

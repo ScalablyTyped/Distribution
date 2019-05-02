@@ -28415,9 +28415,6 @@ trait JQuery extends js.Object {
   ): scala.Unit = js.native
   /**
   	 * Event fired before the modal dialog is closed.
-  	 * The handler function takes arguments evt and ui.
-  	 * Use ui.owner to get the reference to the igGridModalDialog widget.
-  	 * Use ui.modalDialog to get the reference to the igGridModalDialog element
   	 */
   def igGridModalDialog(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
@@ -28425,9 +28422,6 @@ trait JQuery extends js.Object {
   ): ModalDialogClosingEvent = js.native
   /**
   	 * Event fired before the modal dialog is closed.
-  	 * The handler function takes arguments evt and ui.
-  	 * Use ui.owner to get the reference to the igGridModalDialog widget.
-  	 * Use ui.modalDialog to get the reference to the igGridModalDialog element
   	 *
   	 * @optionValue Define event handler function.
   	 */
@@ -41512,7 +41506,7 @@ trait JQuery extends js.Object {
   @JSName("igNotifier")
   def igNotifier_id(methodName: igniteDashUiLib.igniteDashUiLibStrings.id): java.lang.String = js.native
   @JSName("igNotifier")
-  def igNotifier_isVisible(methodName: igniteDashUiLib.igniteDashUiLibStrings.isVisible): scala.Unit = js.native
+  def igNotifier_isVisible(methodName: igniteDashUiLib.igniteDashUiLibStrings.isVisible): scala.Boolean = js.native
   @JSName("igNotifier")
   def igNotifier_notify(methodName: igniteDashUiLib.igniteDashUiLibStrings.notify, state: js.Object): scala.Unit = js.native
   @JSName("igNotifier")

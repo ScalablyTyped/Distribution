@@ -40,9 +40,6 @@ trait IgGridModalDialog
   var modalDialogClosed: js.UndefOr[ModalDialogClosedEvent] = js.undefined
   /**
   	 * Event fired before the modal dialog is closed.
-  	 * The handler function takes arguments evt and ui.
-  	 * Use ui.owner to get the reference to the igGridModalDialog widget.
-  	 * Use ui.modalDialog to get the reference to the igGridModalDialog element
   	 */
   var modalDialogClosing: js.UndefOr[ModalDialogClosingEvent] = js.undefined
   /**

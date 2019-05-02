@@ -34,13 +34,7 @@ trait LocaleObject extends js.Object {
   {[ key in keyof yup.yup.DateSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
-  var mixed: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.MixedSchema ]:? string}
-    */ js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.MixedSchema ]:? string}
-    */ yupLib.yupLibStrings.LocaleObject with js.Any
-  ] = js.undefined
+  var mixed: js.UndefOr[yupLib.yupLibStrings.LocaleObject with js.Any with yupLib.Anon_NotType] = js.undefined
   var number: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.NumberSchema ]:? string}
     */ js.UndefOr[
@@ -79,9 +73,7 @@ object LocaleObject {
     date: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.DateSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any = null,
-    mixed: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.MixedSchema ]:? string}
-    */ yupLib.yupLibStrings.LocaleObject with js.Any = null,
+    mixed: yupLib.yupLibStrings.LocaleObject with js.Any with yupLib.Anon_NotType = null,
     number: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.NumberSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any = null,

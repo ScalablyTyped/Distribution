@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ChartErrorBarsFormatData extends js.Object {
   /**
     *
-    * Represents chart line formatting.
+    * Represents the chart line formatting.
     *
     * [Api set: ExcelApi 1.9]
     */

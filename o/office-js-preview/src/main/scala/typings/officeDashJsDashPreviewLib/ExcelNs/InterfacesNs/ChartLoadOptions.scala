@@ -94,7 +94,7 @@ trait ChartLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Encapsulates the options for the pivot chart.
+    * Encapsulates the options for a pivot chart.
     *
     * [Api set: ExcelApi 1.9]
     */

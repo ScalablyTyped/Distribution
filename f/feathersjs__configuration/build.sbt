@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "feathersjs__configuration"
-version := "1.0-dt-20190213Z-b353a8"
+version := "1.0-dt-20190213Z-958ec6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20190426Z-86cb63",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20190426Z-3b3ca0",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
   "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

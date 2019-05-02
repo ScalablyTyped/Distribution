@@ -218,6 +218,19 @@ class Shape ()
   val zOrderPosition: scala.Double = js.native
   /**
     *
+    * Copies and pastes a Shape object.
+    The pasted shape is copied to the same pixel location as this shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param destinationSheet The sheet to which the shape object will be pasted. The default value is the copied Shape's worksheet.
+    */
+  def copyTo(): Shape = js.native
+  def copyTo(destinationSheet: java.lang.String): Shape = js.native
+  def copyTo(destinationSheet: Worksheet): Shape = js.native
+  /**
+    *
     * Removes the shape from the worksheet.
     *
     * [Api set: ExcelApi 1.9]

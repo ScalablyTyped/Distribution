@@ -10,7 +10,7 @@ sealed trait ChartMapProjectionType extends js.Object
 
 /**
   *
-  * Represents the region projection type of chart series layout, only applicable in RegionMap chart.
+  * Represents the region projection type of a chart series layout. This only applies to region map charts.
   *
   * [Api set: ExcelApi 1.9]
   */

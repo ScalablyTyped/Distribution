@@ -9,7 +9,7 @@ trait IShippingInformation extends js.Object {
   /**
     * Shipping address.
     */
-  var address: stripeLib.Anon_City
+  var address: stripeLib.Anon_CityCountry
   /**
     * The delivery service that shipped a physical product, such as Fedex, UPS, USPS, etc.
     */
@@ -32,7 +32,7 @@ trait IShippingInformation extends js.Object {
 object IShippingInformation {
   @scala.inline
   def apply(
-    address: stripeLib.Anon_City,
+    address: stripeLib.Anon_CityCountry,
     name: java.lang.String,
     carrier: java.lang.String = null,
     phone: java.lang.String = null,

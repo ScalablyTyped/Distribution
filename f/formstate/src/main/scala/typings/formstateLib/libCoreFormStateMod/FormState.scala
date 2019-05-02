@@ -51,6 +51,16 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
   var validatedSubFields: js.Array[formstateLib.libCoreTypesMod.ComposibleValidatable[_]] = js.native
   /* CompleteClass */
   override var validating: scala.Boolean = js.native
+  /* CompleteClass */
+  @JSName("_on$Reinit")
+  override def _on$Reinit(): scala.Unit = js.native
+  /** Used to tell the parent about validation */
+  /* CompleteClass */
+  @JSName("_on$ValidationPass")
+  override def _on$ValidationPass(): scala.Unit = js.native
+  /** Used by the parent to register listeners */
+  /* CompleteClass */
+  override def _setCompositionParent(config: formstateLib.Anon_OnReinit): scala.Unit = js.native
   /**
     * Call it when you are `reinit`ing child fields
     */
@@ -66,19 +76,9 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
   def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_FalseHasError[TValue]] = js.native
   /** Get validatable objects from $ */
   /* protected */ def getValues(): js.Array[formstateLib.libCoreTypesMod.ComposibleValidatable[_]] = js.native
-  /** Used to tell the parent about validation */
-  /* CompleteClass */
-  @JSName("on$ChangeAfterValidation")
-  override def on$ChangeAfterValidation(): scala.Unit = js.native
-  /* CompleteClass */
-  @JSName("on$Reinit")
-  override def on$Reinit(): scala.Unit = js.native
   /** Allows a convinient reset for all fields */
   /* CompleteClass */
   override def reset(): scala.Unit = js.native
-  /** Used by the parent to register listeners */
-  /* CompleteClass */
-  override def setCompositionParent(config: formstateLib.Anon_OnChangeAfterValidation): scala.Unit = js.native
   /* CompleteClass */
   override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]] = js.native
   def validators(validators: formstateLib.libCoreTypesMod.Validator[TValue]*): this.type = js.native

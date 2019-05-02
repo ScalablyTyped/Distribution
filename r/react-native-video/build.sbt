@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-video"
-version := "3.1-dt-20190312Z-e7f345"
+version := "3.1-dt-20190501Z-395c40"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

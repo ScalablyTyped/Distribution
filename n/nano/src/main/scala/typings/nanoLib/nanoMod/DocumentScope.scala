@@ -36,6 +36,15 @@ trait DocumentScope[D] extends js.Object {
   // http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication
   def auth(username: java.lang.String, userpass: java.lang.String): js.Promise[DatabaseAuthResponse] = js.native
   def auth(username: java.lang.String, userpass: java.lang.String, callback: Callback[DatabaseAuthResponse]): js.Promise[DatabaseAuthResponse] = js.native
+  def baseView[V](designname: java.lang.String, viewname: java.lang.String, meta: js.Any): js.Promise[_] = js.native
+  def baseView[V](designname: java.lang.String, viewname: java.lang.String, meta: js.Any, params: js.Any): js.Promise[_] = js.native
+  def baseView[V](
+    designname: java.lang.String,
+    viewname: java.lang.String,
+    meta: js.Any,
+    params: js.Any,
+    callback: Callback[_]
+  ): js.Promise[_] = js.native
   def bulk(docs: BulkModifyDocsWrapper): js.Promise[js.Array[DocumentInsertResponse]] = js.native
   def bulk(docs: BulkModifyDocsWrapper, callback: Callback[js.Array[DocumentInsertResponse]]): js.Promise[js.Array[DocumentInsertResponse]] = js.native
   def bulk(docs: BulkModifyDocsWrapper, params: js.Any): js.Promise[js.Array[DocumentInsertResponse]] = js.native

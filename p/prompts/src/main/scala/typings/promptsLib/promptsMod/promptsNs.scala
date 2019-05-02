@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object promptsNs extends js.Object {
   def autocomplete(args: promptsLib.promptsMod.PromptObject[java.lang.String]): js.Any = js.native
   def confirm(args: promptsLib.promptsMod.PromptObject[java.lang.String]): scala.Unit = js.native
+  def date(args: promptsLib.promptsMod.PromptObject[java.lang.String]): js.Any = js.native
   def invisible(args: promptsLib.promptsMod.PromptObject[java.lang.String]): js.Any = js.native
   def list(args: promptsLib.promptsMod.PromptObject[java.lang.String]): js.Any = js.native
   def multiselect(args: promptsLib.promptsMod.PromptObject[java.lang.String]): js.Any = js.native

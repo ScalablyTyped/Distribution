@@ -24,7 +24,8 @@ trait DatabaseScope extends js.Object {
   def compact(name: java.lang.String, designname: java.lang.String, callback: Callback[OkResponse]): js.Promise[OkResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/database/common.html#put--db
   def create(name: java.lang.String): js.Promise[DatabaseCreateResponse] = js.native
-  def create(name: java.lang.String, callback: Callback[DatabaseCreateResponse]): js.Promise[DatabaseCreateResponse] = js.native
+  def create(name: java.lang.String, params: DatabaseCreateParams): js.Promise[DatabaseCreateResponse] = js.native
+  def create(name: java.lang.String, params: DatabaseCreateParams, callback: Callback[DatabaseCreateResponse]): js.Promise[DatabaseCreateResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/database/common.html#delete--db
   def destroy(name: java.lang.String): js.Promise[OkResponse] = js.native
   def destroy(name: java.lang.String, callback: Callback[OkResponse]): js.Promise[OkResponse] = js.native

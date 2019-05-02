@@ -18,6 +18,10 @@ object promptsLibStrings {
     extends promptsLib.promptsMod.PromptType
   
   @js.native
+  sealed trait date
+    extends promptsLib.promptsMod.PromptType
+  
+  @js.native
   sealed trait invisible
     extends promptsLib.promptsMod.PromptType
   
@@ -55,6 +59,8 @@ object promptsLibStrings {
   def autocomplete: autocomplete = "autocomplete".asInstanceOf[autocomplete]
   @scala.inline
   def confirm: confirm = "confirm".asInstanceOf[confirm]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def invisible: invisible = "invisible".asInstanceOf[invisible]
   @scala.inline

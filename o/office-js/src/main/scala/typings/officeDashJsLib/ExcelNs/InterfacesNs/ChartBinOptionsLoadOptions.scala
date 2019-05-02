@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Encapsulates the bon options only for histogram chart and pareto chart.
+  * Encapsulates the bin options for histogram charts and pareto charts.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -16,49 +16,49 @@ trait ChartBinOptionsLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
+    * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var allowOverflow: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.
+    * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var allowUnderflow: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var count: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var overflowValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets bin type of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var underflowValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */

@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Sebastiaan de Rooij <https://github.com/Hikariii>
 //                 Ted Bicknell <https://github.com/tedbcsgpro>
 //                 Daniel Waxweiler <https://github.com/dwaxweiler>
+//                 PikachuEXE <https://github.com/PikachuEXE>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

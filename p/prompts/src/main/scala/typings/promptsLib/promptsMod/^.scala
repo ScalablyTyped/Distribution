@@ -14,6 +14,7 @@ object ^ extends js.Object {
   def apply[T /* <: java.lang.String */](questions: PromptObject[T] | js.Array[PromptObject[T]], options: Options): js.Promise[Answers[T]] = js.native
   def autocomplete(args: PromptObject[java.lang.String]): js.Any = js.native
   def confirm(args: PromptObject[java.lang.String]): scala.Unit = js.native
+  def date(args: PromptObject[java.lang.String]): js.Any = js.native
   def inject(obj: js.Any): scala.Unit = js.native
   def invisible(args: PromptObject[java.lang.String]): js.Any = js.native
   def list(args: PromptObject[java.lang.String]): js.Any = js.native

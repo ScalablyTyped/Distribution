@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Actions extends js.Object {
   /** @see https://www.gatsbyjs.org/docs/actions/#addThirdPartySchema */
-  def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: js.UndefOr[ActionPlugin], traceId: java.lang.String): js.Any = js.native
+  def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: ActionPlugin): scala.Unit = js.native
+  def addThirdPartySchema(args: gatsbyLib.Anon_Schema, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createJob */
   def createJob(job: (stdLib.Record[java.lang.String, _]) with gatsbyLib.Anon_Id): scala.Unit = js.native
   def createJob(job: (stdLib.Record[java.lang.String, _]) with gatsbyLib.Anon_Id, plugin: ActionPlugin): scala.Unit = js.native
@@ -25,19 +26,18 @@ trait Actions extends js.Object {
   def createPage(args: gatsbyLib.Anon_ComponentContext, plugin: ActionPlugin): scala.Unit = js.native
   def createPage(args: gatsbyLib.Anon_ComponentContext, plugin: ActionPlugin, option: ActionOptions): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createParentChildLink */
-  def createParentChildLink(hasParentChild: js.Any): scala.Unit = js.native
-  def createParentChildLink(hasParentChild: js.Any, plugin: ActionPlugin): scala.Unit = js.native
+  def createParentChildLink(args: gatsbyLib.Anon_Child): scala.Unit = js.native
+  def createParentChildLink(args: gatsbyLib.Anon_Child, plugin: ActionPlugin): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createRedirect */
   def createRedirect(redirect: gatsbyLib.Anon_Force): scala.Unit = js.native
   def createRedirect(redirect: gatsbyLib.Anon_Force, plugin: ActionPlugin): scala.Unit = js.native
   /** TODO create jsdoc on gatsbyjs.org */
-  def createTypes(types: java.lang.String, plugin: js.UndefOr[ActionPlugin], traceId: java.lang.String): js.Any = js.native
-  def createTypes(
-    types: js.Array[java.lang.String | js.Object],
-    plugin: js.UndefOr[ActionPlugin],
-    traceId: java.lang.String
-  ): js.Any = js.native
-  def createTypes(types: js.Object, plugin: js.UndefOr[ActionPlugin], traceId: java.lang.String): js.Any = js.native
+  def createTypes(types: java.lang.String, plugin: ActionPlugin): scala.Unit = js.native
+  def createTypes(types: java.lang.String, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
+  def createTypes(types: js.Array[java.lang.String | js.Object], plugin: ActionPlugin): scala.Unit = js.native
+  def createTypes(types: js.Array[java.lang.String | js.Object], plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
+  def createTypes(types: js.Object, plugin: ActionPlugin): scala.Unit = js.native
+  def createTypes(types: js.Object, plugin: ActionPlugin, traceId: java.lang.String): scala.Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#deletePage */
   def deleteNode(options: gatsbyLib.Anon_Node): scala.Unit = js.native
   def deleteNode(options: gatsbyLib.Anon_Node, plugin: ActionPlugin): scala.Unit = js.native

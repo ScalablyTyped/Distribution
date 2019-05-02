@@ -269,6 +269,29 @@ trait XRay extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetServiceGraphResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Get an aggregation of service statistics defined by a specific time range.
+    */
+  def getTimeSeriesServiceStatistics(): awsDashSdkLib.libRequestMod.Request[GetTimeSeriesServiceStatisticsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getTimeSeriesServiceStatistics(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetTimeSeriesServiceStatisticsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetTimeSeriesServiceStatisticsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Get an aggregation of service statistics defined by a specific time range.
+    */
+  def getTimeSeriesServiceStatistics(params: GetTimeSeriesServiceStatisticsRequest): awsDashSdkLib.libRequestMod.Request[GetTimeSeriesServiceStatisticsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getTimeSeriesServiceStatistics(
+    params: GetTimeSeriesServiceStatisticsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetTimeSeriesServiceStatisticsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetTimeSeriesServiceStatisticsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Retrieves a service graph for one or more specific trace IDs.
     */
   def getTraceGraph(): awsDashSdkLib.libRequestMod.Request[GetTraceGraphResult, awsDashSdkLib.libErrorMod.AWSError] = js.native

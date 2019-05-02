@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * This object represents the attributes for chart error bars object.
+  * This object represents the attributes for a chart's error bars.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -20,35 +20,35 @@ class ChartErrorBars ()
   var context_ChartErrorBars: RequestContext = js.native
   /**
     *
-    * Represents whether have the end style cap for the error bars.
+    * Specifies whether or not the error bars have an end style cap.
     *
     * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: scala.Boolean = js.native
   /**
     *
-    * Represents the formatting of chart ErrorBars.
+    * Specifies the formatting type of the error bars.
     *
     * [Api set: ExcelApi 1.9]
     */
   val format: ChartErrorBarsFormat = js.native
   /**
     *
-    * Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
+    * Specifies which parts of the error bars to include.
     *
     * [Api set: ExcelApi 1.9]
     */
   var include: ChartErrorBarsInclude | officeDashJsLib.officeDashJsLibStrings.Both | officeDashJsLib.officeDashJsLibStrings.MinusValues | officeDashJsLib.officeDashJsLibStrings.PlusValues = js.native
   /**
     *
-    * Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
+    * The type of range marked by the error bars.
     *
     * [Api set: ExcelApi 1.9]
     */
   var `type`: ChartErrorBarsType | officeDashJsLib.officeDashJsLibStrings.FixedValue | officeDashJsLib.officeDashJsLibStrings.Percent | officeDashJsLib.officeDashJsLibStrings.StDev | officeDashJsLib.officeDashJsLibStrings.StError | officeDashJsLib.officeDashJsLibStrings.Custom = js.native
   /**
     *
-    * Represents whether shown error bars.
+    * Specifies whether or not the error bars are displayed.
     *
     * [Api set: ExcelApi 1.9]
     */

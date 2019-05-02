@@ -10,7 +10,7 @@ sealed trait ChartMapAreaLevel extends js.Object
 
 /**
   *
-  * Represents the mapping level of chart series, only applicable in RegionMap chart.
+  * Represents the mapping level of a chart series. This only applies to region map charts.
   *
   * [Api set: ExcelApi 1.9]
   */

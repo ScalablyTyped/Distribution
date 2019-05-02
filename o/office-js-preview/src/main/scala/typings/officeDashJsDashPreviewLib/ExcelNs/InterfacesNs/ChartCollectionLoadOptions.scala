@@ -94,7 +94,7 @@ trait ChartCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Encapsulates the options for the pivot chart.
+    * For EACH ITEM in the collection: Encapsulates the options for a pivot chart.
     *
     * [Api set: ExcelApi 1.9]
     */

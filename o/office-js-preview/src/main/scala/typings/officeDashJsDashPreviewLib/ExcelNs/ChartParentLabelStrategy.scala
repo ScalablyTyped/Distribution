@@ -10,7 +10,7 @@ sealed trait ChartParentLabelStrategy extends js.Object
 
 /**
   *
-  * Represents the parent lable strategy type of chart series layout, only applicable in Treemap chart.
+  * Represents the parent label strategy of the chart series layout. This only applies to treemap charts
   *
   * [Api set: ExcelApi 1.9]
   */

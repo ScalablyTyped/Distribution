@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Encapsulates the properties for Map chart.
+  * Encapsulates the properties for a region map chart.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -20,21 +20,21 @@ class ChartMapOptions ()
   var context_ChartMapOptions: RequestContext = js.native
   /**
     *
-    * Returns or sets series map labels strategy of a region map chart. Read/Write.
+    * Returns or sets the series map labels strategy of a region map chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: ChartMapLabelStrategy | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.BestFit | officeDashJsLib.officeDashJsLibStrings.ShowAll = js.native
   /**
     *
-    * Returns or sets series map area of a region map chart. Read/Write.
+    * Returns or sets the series mapping level of a region map chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var level: ChartMapAreaLevel | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.DataOnly | officeDashJsLib.officeDashJsLibStrings.City | officeDashJsLib.officeDashJsLibStrings.County | officeDashJsLib.officeDashJsLibStrings.State | officeDashJsLib.officeDashJsLibStrings.Country | officeDashJsLib.officeDashJsLibStrings.Continent | officeDashJsLib.officeDashJsLibStrings.World = js.native
   /**
     *
-    * Returns or sets series projection type of a region map chart. Read/Write.
+    * Returns or sets the series projection type of a region map chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */

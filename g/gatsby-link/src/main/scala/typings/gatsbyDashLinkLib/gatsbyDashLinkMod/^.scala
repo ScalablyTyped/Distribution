@@ -12,6 +12,7 @@ object ^ extends js.Object {
   def navigateTo(to: java.lang.String): scala.Unit = js.native
   def push(to: java.lang.String): scala.Unit = js.native
   def replace(to: java.lang.String): scala.Unit = js.native
+  def withAssetPrefix(path: java.lang.String): java.lang.String = js.native
   def withPrefix(path: java.lang.String): java.lang.String = js.native
 }
 

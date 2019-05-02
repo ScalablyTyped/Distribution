@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-when
 
-Typings are for version 1.1
+Typings are for version 2.4
 
 ## Library description:
 An extension lib for jest
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for jest-when 1.1
+// Type definitions for jest-when 2.4
 // Project: https://github.com/timkindberg/jest-when#readme
 // Definitions by: Alden Taylor <https://github.com/aldentaylor>
+//                 Trung Dang <https://github.com/immanuel192>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 

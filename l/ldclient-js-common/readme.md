@@ -1,7 +1,7 @@
 
 # Scala.js typings for ldclient-js-common
 
-Typings are for version 2.10.1
+Typings are for version 2.10.2
 
 ## Library description:
 LaunchDarkly SDK for JavaScript - common code

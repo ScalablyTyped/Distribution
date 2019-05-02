@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents the properties for Box & Whisker chart.
+  * Represents the properties of a box and whisker chart.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -16,35 +16,35 @@ trait ChartBoxwhiskerOptionsLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets quartile calculation type of a Box & whisker chart. Read/Write.
+    * Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var quartileCalculation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets if inner points showed in a Box & whisker chart. Read/Write.
+    * Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showInnerPoints: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets if mean line showed in a Box & whisker chart. Read/Write.
+    * Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showMeanLine: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets if mean marker showed in a Box & whisker chart. Read/Write.
+    * Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showMeanMarker: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets if outlier points showed in a Box & whisker chart. Read/Write.
+    * Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */

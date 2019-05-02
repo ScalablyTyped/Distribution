@@ -85,11 +85,11 @@ trait IgDataChartSeries
   	 */
   var calloutCollisionMode: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Sets or gets a function which allows you to decide upon the content that gets used for an automatically created callout.
+  	 * Sets or gets a function which lets you modify or provide the content for an automatically created callout.
   	 */
   var calloutContentUpdating: js.UndefOr[js.Any] = js.undefined
   /**
-  	 * Sets or gets a function which allows you to decide upon the label that gets used for an automatically created callout.
+  	 * Sets or gets a function which lets you modify or provide the label for an automatically created callout.
   	 */
   var calloutLabelUpdating: js.UndefOr[js.Any] = js.undefined
   /**
@@ -121,7 +121,7 @@ trait IgDataChartSeries
   	 */
   var calloutPositionPadding: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * Sets or gets a function which allows you to decide upon the series that gets used for a data bound callout.
+  	 * Sets or gets a function which lets you modify or provide the associated series for a data source provided callout.
   	 */
   var calloutSeriesSelecting: js.UndefOr[js.Any] = js.undefined
   /**

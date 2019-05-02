@@ -42,11 +42,21 @@ class FieldState[TValue] protected ()
     * The value you should bind to the input in your field.
     */
   var value: TValue = js.native
+  /* CompleteClass */
+  @JSName("_on$Reinit")
+  override def _on$Reinit(): scala.Unit = js.native
+  /** Used to tell the parent about validation */
+  /* CompleteClass */
+  @JSName("_on$ValidationPass")
+  override def _on$ValidationPass(): scala.Unit = js.native
   /**
     * Allows you to take actions in your code based on `value` changes caused by user interactions
     */
   /* protected */ def _onDidChange(config: formstateLib.Anon_NewValue[TValue]): js.Any = js.native
   /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
+  /** Used by the parent to register listeners */
+  /* CompleteClass */
+  override def _setCompositionParent(config: formstateLib.Anon_OnReinit): scala.Unit = js.native
   /* CompleteClass */
   override def disableAutoValidation(): scala.Unit = js.native
   /* CompleteClass */
@@ -55,13 +65,6 @@ class FieldState[TValue] protected ()
   /* protected */ def executeOnDidChange(config: formstateLib.Anon_NewValue[TValue]): scala.Unit = js.native
   /* protected */ def executeOnUpdate(): scala.Unit = js.native
   def getAutoValidationDefault(): scala.Boolean = js.native
-  /** Used to tell the parent about validation */
-  /* CompleteClass */
-  @JSName("on$ChangeAfterValidation")
-  override def on$ChangeAfterValidation(): scala.Unit = js.native
-  /* CompleteClass */
-  @JSName("on$Reinit")
-  override def on$Reinit(): scala.Unit = js.native
   /** On change on the component side */
   def onChange(value: TValue): scala.Unit = js.native
   def onDidChange(handler: js.Function1[/* config */ formstateLib.Anon_NewValue[TValue], _]): this.type = js.native
@@ -86,9 +89,6 @@ class FieldState[TValue] protected ()
   def reset(value: TValue): scala.Unit = js.native
   def setAutoValidationDebouncedMs(milliseconds: scala.Double): this.type = js.native
   def setAutoValidationDefault(autoValidationDefault: scala.Boolean): this.type = js.native
-  /** Used by the parent to register listeners */
-  /* CompleteClass */
-  override def setCompositionParent(config: formstateLib.Anon_OnChangeAfterValidation): scala.Unit = js.native
   /**
     * Allows you to set an error on a field lazily
     * Use case:

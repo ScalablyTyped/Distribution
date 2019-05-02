@@ -116,7 +116,7 @@ class Chart ()
   val onDeactivated: officeDashJsLib.OfficeExtensionNs.EventHandlers[ChartDeactivatedEventArgs] = js.native
   /**
     *
-    * Encapsulates the options for the pivot chart. Read-only.
+    * Encapsulates the options for a pivot chart. Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -210,7 +210,7 @@ class Chart ()
   val worksheet: Worksheet = js.native
   /**
     *
-    * Activate the chart in the Excel UI.
+    * Activates the chart in the Excel UI.
     *
     * [Api set: ExcelApi 1.9]
     */

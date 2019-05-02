@@ -79,7 +79,7 @@ trait DropzoneOptions extends js.Object {
   var headers: js.UndefOr[js.Object] = js.undefined
   var hiddenInputContainer: js.UndefOr[dropzoneLib.dropzoneMod.Global.HTMLElement] = js.undefined
   var ignoreHiddenFiles: js.UndefOr[scala.Boolean] = js.undefined
-  var init: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var init: js.UndefOr[js.ThisFunction0[/* this */ Dropzone, scala.Unit]] = js.undefined
   var maxFiles: js.UndefOr[scala.Double] = js.undefined
   var maxFilesize: js.UndefOr[scala.Double] = js.undefined
   var maxThumbnailFilesize: js.UndefOr[scala.Double] = js.undefined
@@ -152,6 +152,13 @@ trait DropzoneOptions extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  var transformFile: js.UndefOr[
+    js.Function2[
+      /* file */ DropzoneFile, 
+      /* done */ js.Function1[/* file */ java.lang.String | stdLib.Blob, scala.Unit], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var uploadMultiple: js.UndefOr[scala.Boolean] = js.undefined
   var uploadprogress: js.UndefOr[
     js.Function3[
@@ -213,7 +220,7 @@ object DropzoneOptions {
     headers: js.Object = null,
     hiddenInputContainer: dropzoneLib.dropzoneMod.Global.HTMLElement = null,
     ignoreHiddenFiles: js.UndefOr[scala.Boolean] = js.undefined,
-    init: () => scala.Unit = null,
+    init: js.ThisFunction0[/* this */ Dropzone, scala.Unit] = null,
     maxFiles: scala.Int | scala.Double = null,
     maxFilesize: scala.Int | scala.Double = null,
     maxThumbnailFilesize: scala.Int | scala.Double = null,
@@ -251,6 +258,7 @@ object DropzoneOptions {
     thumbnailWidth: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null,
     totaluploadprogress: (/* totalProgress */ scala.Double, /* totalBytes */ scala.Double, /* totalBytesSent */ scala.Double) => scala.Unit = null,
+    transformFile: (/* file */ DropzoneFile, /* done */ js.Function1[/* file */ java.lang.String | stdLib.Blob, scala.Unit]) => scala.Unit = null,
     uploadMultiple: js.UndefOr[scala.Boolean] = js.undefined,
     uploadprogress: (/* file */ DropzoneFile, /* progress */ scala.Double, /* bytesSent */ scala.Double) => scala.Unit = null,
     url: java.lang.String = null,
@@ -302,7 +310,7 @@ object DropzoneOptions {
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (hiddenInputContainer != null) __obj.updateDynamic("hiddenInputContainer")(hiddenInputContainer)
     if (!js.isUndefined(ignoreHiddenFiles)) __obj.updateDynamic("ignoreHiddenFiles")(ignoreHiddenFiles)
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction0(init))
+    if (init != null) __obj.updateDynamic("init")(init)
     if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
     if (maxFilesize != null) __obj.updateDynamic("maxFilesize")(maxFilesize.asInstanceOf[js.Any])
     if (maxThumbnailFilesize != null) __obj.updateDynamic("maxThumbnailFilesize")(maxThumbnailFilesize.asInstanceOf[js.Any])
@@ -340,6 +348,7 @@ object DropzoneOptions {
     if (thumbnailWidth != null) __obj.updateDynamic("thumbnailWidth")(thumbnailWidth.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (totaluploadprogress != null) __obj.updateDynamic("totaluploadprogress")(js.Any.fromFunction3(totaluploadprogress))
+    if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction2(transformFile))
     if (!js.isUndefined(uploadMultiple)) __obj.updateDynamic("uploadMultiple")(uploadMultiple)
     if (uploadprogress != null) __obj.updateDynamic("uploadprogress")(js.Any.fromFunction3(uploadprogress))
     if (url != null) __obj.updateDynamic("url")(url)

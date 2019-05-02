@@ -59,6 +59,10 @@ trait TraceSummary extends js.Object {
     */
   var IsPartial: js.UndefOr[NullableBoolean] = js.undefined
   /**
+    * The matched time stamp of a defined event.
+    */
+  var MatchedEventTime: js.UndefOr[Timestamp] = js.undefined
+  /**
     * A list of resource ARNs for any resource corresponding to the trace segments.
     */
   var ResourceARNs: js.UndefOr[TraceResourceARNs] = js.undefined
@@ -100,6 +104,7 @@ object TraceSummary {
     Id: TraceId = null,
     InstanceIds: TraceInstanceIds = null,
     IsPartial: js.UndefOr[NullableBoolean] = js.undefined,
+    MatchedEventTime: Timestamp = null,
     ResourceARNs: TraceResourceARNs = null,
     ResponseTime: js.UndefOr[NullableDouble] = js.undefined,
     ResponseTimeRootCauses: ResponseTimeRootCauses = null,
@@ -121,6 +126,7 @@ object TraceSummary {
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds)
     if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial)
+    if (MatchedEventTime != null) __obj.updateDynamic("MatchedEventTime")(MatchedEventTime)
     if (ResourceARNs != null) __obj.updateDynamic("ResourceARNs")(ResourceARNs)
     if (!js.isUndefined(ResponseTime)) __obj.updateDynamic("ResponseTime")(ResponseTime)
     if (ResponseTimeRootCauses != null) __obj.updateDynamic("ResponseTimeRootCauses")(ResponseTimeRootCauses)

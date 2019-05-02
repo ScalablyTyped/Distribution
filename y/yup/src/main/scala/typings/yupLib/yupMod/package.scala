@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 package object yupMod {
   type BooleanSchema = Schema[scala.Boolean]
   type Lazy = Schema[js.Any]
+  type LocaleValue = java.lang.String | (js.Function1[/* params */ FormatErrorParams, java.lang.String])
   type MixedSchema = Schema[js.Any]
   type ObjectSchemaDefinition[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ field in keyof T ]: yup.yup.Schema<T[field]> | yup.yup.Ref}

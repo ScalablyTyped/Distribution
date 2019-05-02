@@ -1,7 +1,7 @@
 
 # Scala.js typings for prompts
 
-Typings are for version 1.2
+Typings are for version 2.04
 
 ## Library description:
 Lightweight, beautiful and user-friendly prompts
@@ -35,13 +35,14 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for prompts 1.2
+// Type definitions for prompts 2.04
 // Project: https://github.com/terkelg/prompts
 // Definitions by: Berkay GURSOY <https://github.com/Berkays>
 //                 Daniel Perez Alvarez <https://github.com/danielpa9708>
 //                 Kamontat Chantrachirathumrong <https://github.com/kamontat>
+//                 theweirdone <https://github.com/theweirdone>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 2.9
 
 ```
 

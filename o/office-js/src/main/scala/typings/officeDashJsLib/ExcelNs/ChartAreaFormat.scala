@@ -24,7 +24,7 @@ class ChartAreaFormat ()
   val border: ChartBorder = js.native
   /**
     *
-    * Returns or sets an integer that represents the color scheme for the chart. Read/Write.
+    * Returns or sets color scheme of the chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -48,7 +48,7 @@ class ChartAreaFormat ()
   val font: ChartFont = js.native
   /**
     *
-    * True if the chart area of the chart has rounded corners. Read/Write.
+    * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */

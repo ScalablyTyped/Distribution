@@ -171,6 +171,7 @@
 | 0.8518399236352588 | [follow-redirects](./f/follow-redirects) | HTTP and HTTPS modules that follow redirects.
 | 0.851608278496842 | [lodash_dot_isinteger](./l/lodash_dot_isinteger) | The lodash method _.isInteger exported as a module.
 | 0.8512935005795108 | [deepmerge](./d/deepmerge) | A library for deep (recursive) merging of Javascript objects
+| 0.8512926108473748 | [kind-of](./k/kind-of) | Get the native type of a value.
 | 0.8511713445742385 | [debug](./d/debug) | small debugging utility
 | 0.851113491282626 | [slash](./s/slash) | Convert Windows backslash paths to slash paths
 | 0.851060048877158 | [yargs-parser](./y/yargs-parser) | the mighty option parser used by yargs
@@ -2233,6 +2234,7 @@
 | 0.699965835522536 | [angular-clipboard](./a/angular-clipboard) | Copy to clipboard with AngularJS directive, without using Flash.
 | 0.6999490988141568 | [koa-sslify](./k/koa-sslify) | Enforces HTTPS for node.js koa projects
 | 0.6999468572796952 | [node-schedule](./n/node-schedule) | A cron-like and not-cron-like job scheduler for Node.
+| 0.6999315522933989 | [jest-expect-message](./j/jest-expect-message) | Add custom message to Jest expects
 | 0.699886423634549 | [sql-bricks](./s/sql-bricks) | Transparent, Schemaless SQL Generation
 | 0.6998404769040105 | [dva](./d/dva) | React and redux based, lightweight and elm-style framework.
 | 0.6997252092376708 | [nodemailer-mailgun-transport](./n/nodemailer-mailgun-transport) | A transport module to use with nodemailer to leverage Mailgun's REST API
@@ -2646,6 +2648,7 @@
 | 0.6813990803583552 | [which-pm](./w/which-pm) | Detects what package manager was used for installation
 | 0.681392100636266 | [rmc-pull-to-refresh](./r/rmc-pull-to-refresh) | React Mobile Pull To Refresh Component
 | 0.6813608621892604 | [pouchdb-browser](./p/pouchdb-browser) | PouchDB, the browser-only edition.
+| 0.681322863820504 | [squirrelly](./s/squirrelly) | Simple and powerful template engine that supports helpers, partials, filters, native code, and Express.
 | 0.6812797059424929 | [react-widgets-moment](./r/react-widgets-moment) | A moment.js localizer for react-widgets
 | 0.6812748717233361 | [int64-buffer](./i/int64-buffer) | 64bit Long Integer on Buffer/Array/ArrayBuffer in Pure JavaScript
 | 0.6812288367194916 | [create-html-element](./c/create-html-element) | Create a HTML element string
@@ -3003,6 +3006,7 @@
 | 0.665269969740784 | [parchment](./p/parchment) | A document model for rich text editors
 | 0.6652612957542421 | [hapi__glue](./h/hapi__glue) | Server composer for hapi.js
 | 0.6652573554416863 | [ascii-art](./a/ascii-art) | Ansi codes, figlet fonts, and ascii art. 100% JS
+| 0.665244118579083 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue
 | 0.6651750796585449 | [crumb](./c/crumb) | CSRF crumb generation and validation plugin
 | 0.6651241055062017 | [grammarkdown](./g/grammarkdown) | Markdown-like DSL for defining syntactic grammars for programming languages.
 | 0.665121535102387 | [pg-format](./p/pg-format) | Node.js implementation of PostgreSQL's format() to safely create dynamic SQL queries.
@@ -3258,6 +3262,7 @@
 | 0.6514777759818853 | [vscode-languageclient](./v/vscode-languageclient) | VSCode Language client implementation
 | 0.651469777948052 | [react-latex-next](./r/react-latex-next) | Render LaTeX in React apps
 | 0.6514290936204287 | [browser-bunyan](./b/browser-bunyan) | Bunyan logging specifically for the browser
+| 0.6513270268255207 | [express-async-wrap](./e/express-async-wrap) | Allows the use of ES2016 async functions as Express route handlers
 | 0.6511926796080174 | [docker-file-parser](./d/docker-file-parser) | Parses a Dockerfile and returns an array of commands.
 | 0.651175282831609 | [react-paginate](./r/react-paginate) | A ReactJS component that creates a pagination.
 | 0.6511578743401281 | [tabtab](./t/tabtab) | tab completion helpers, for node cli programs. Inspired by npm completion.
@@ -3429,6 +3434,7 @@
 | 0.6409932668300442 | [ts-pnp](./t/ts-pnp) | plug'n'play resolver for TypeScript
 | 0.6408451898671881 | [kss](./k/kss) | The Node.js port of KSS: A methodology for documenting CSS and building style guides
 | 0.6407907535776065 | [o_dot_js](./o/o_dot_js) | o.js is a isomorphic Odata Javascript library to simplify the request of data. The main goal is to build a standalone, lightweight and easy to understand Odata lib.
+| 0.6407826184723665 | [fundamental-react](./f/fundamental-react) | SAP Fiori Fundamentals, implemented in React
 | 0.6406835002975229 | [ngmap](./n/ngmap) | The Simplest AngularJS Google Maps V3 Directive
 | 0.6406178044559508 | [geoip-lite](./g/geoip-lite) | A light weight native JavaScript implementation of GeoIP API from MaxMind
 | 0.6405774856788037 | [mark_dot_js](./m/mark_dot_js) | Highlight keywords using JavaScript. Intended for every use case. Can e.g. be used to mark text in search results.
@@ -4060,6 +4066,7 @@
 | 0.5757906335332574 | [dayzed](./d/dayzed) | Primitives to build simple, flexible, WAI-ARIA compliant React datepicker components.
 | 0.5756421781968437 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js
 | 0.5751903205471058 | [tabris](./t/tabris) | Mobile apps with native UIs in JavaScript
+| 0.5751350608111138 | [djv](./d/djv) | dynamic json-schema validator
 | 0.5750593881667232 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle containing external modules from TypeScript files.
 | 0.5750321168320068 | [require-directory](./r/require-directory) | Recursively iterates over specified directory, require()'ing each file, and returning a nested hash structure containing those modules.
 | 0.5748109847162775 | [event-stream](./e/event-stream) | construct pipes of streams of events
@@ -4272,6 +4279,7 @@
 | 0.5387215941233046 | [enzyme-redux](./e/enzyme-redux) | Test utils to simplify testing of containers in redux with enzyme.
 | 0.5386764176762392 | [launchpad](./l/launchpad) | You can launch browsers
 | 0.5385156224291963 | [matter-js](./m/matter-js) | a 2D rigid body physics engine for the web
+| 0.5380668778986687 | [simplecrawler](./s/simplecrawler) | Very straightforward, event driven web crawler. Features a flexible queue interface and a basic cache mechanism with extensible backend.
 | 0.5377606226195322 | [viewability-helper](./v/viewability-helper) | Lightweight cross-browser library that enables you to create a watcher for a given element, and get back a callback when it has entered the viewport
 | 0.5377558208662263 | [prosemirror-test-builder](./p/prosemirror-test-builder) | Helpers for programatically building ProseMirror test documents
 | 0.5376778867100251 | [angular-gettext](./a/angular-gettext) | Gettext support for Angular.js
@@ -4308,6 +4316,7 @@
 | 0.5338148387665608 | [react-list](./r/react-list) | A versatile infinite scroll 
 | 0.5336933224274456 | [react-router-hash-link](./r/react-router-hash-link) | Hash link scroll functionality for React Router v4
 | 0.5336892176395861 | [leaflet-editable](./l/leaflet-editable) | Make geometries editable in Leaflet
+| 0.5334938523464257 | [secure-random-password](./s/secure-random-password) | Generate passwords using a cryptographically-strong source of randomness
 | 0.533349990473235 | [passport-twitter](./p/passport-twitter) | Twitter authentication strategy for Passport.
 | 0.5327033263979091 | [node-xmpp-core](./n/node-xmpp-core) | core files for the node-xmpp project
 | 0.5325738968761402 | [angular-permission](./a/angular-permission) | Fully featured role and permission based access control for your angular applications

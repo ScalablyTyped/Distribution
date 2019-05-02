@@ -20,29 +20,28 @@ class ChartPivotOptions ()
   var context_ChartPivotOptions: RequestContext = js.native
   /**
     *
-    * Represents whether to display axis field buttons on a PivotChart.
-    The ShowAxisFieldButtons property corresponds to the Show Axis Field Buttons command on the Field Buttons drop-down list of the Analyze tab, which is available when a PivotChart is selected.
+    * Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showAxisFieldButtons: scala.Boolean = js.native
   /**
     *
-    * Represents whether to display legend field buttons on a PivotChart.
+    * Specifies whether or not to display the legend field buttons on a PivotChart
     *
     * [Api set: ExcelApi 1.9]
     */
   var showLegendFieldButtons: scala.Boolean = js.native
   /**
     *
-    * Represents whether to display report filter field buttons on a PivotChart.
+    * Specifies whether or not to display the report filter field buttons on a PivotChart.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showReportFilterFieldButtons: scala.Boolean = js.native
   /**
     *
-    * Represents whether to display show value field buttons on a PivotChart.
+    * Specifies whether or not to display the show value field buttons on a PivotChart
     *
     * [Api set: ExcelApi 1.9]
     */

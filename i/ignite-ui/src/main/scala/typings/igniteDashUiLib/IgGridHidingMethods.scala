@@ -20,10 +20,10 @@ trait IgGridHidingMethods extends js.Object {
   def destroy(): scala.Unit = js.native
   /**
   	 * Hides a visible column. If the column is hidden the method does nothing.
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
+  	 * Note: This method is asynchronous, which means that it returns immediately, and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
   	 *
-  	 * @param column An identifier for the column. If a number is provided it will be used as a column index else if a strings is provided it will be used as a column key.
-  	 * @param callback Specifies a custom function to be called when the column is hidden(optional)
+  	 * @param column An identifier for the column. If a number is provided it will be used as a column index; else if a string is provided, it will be used as a column key.
+  	 * @param callback Specifies a custom function to be called after the column gets hidden(optional)
   	 */
   def hideColumn(column: js.Object): scala.Unit = js.native
   def hideColumn(column: js.Object, callback: js.Function): scala.Unit = js.native
@@ -58,10 +58,10 @@ trait IgGridHidingMethods extends js.Object {
   def resetHidingColumnChooser(): scala.Unit = js.native
   /**
   	 * Shows a hidden column. If the column is not hidden the method does nothing.
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
+  	 * Note: This method is asynchronous, which means that it returns immediately, and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
   	 *
-  	 * @param column An identifier for the column. If a number is provided it will be used as a column index else if a strings is provided it will be used as a column key.
-  	 * @param callback Specifies a custom function to be called when the column(s) is shown(optional)
+  	 * @param column An identifier for the column. If a number is provided it will be used as a column index; else if a string is provided, it will be used as a column key.
+  	 * @param callback Specifies a custom function to be called after the column gets shown(optional)
   	 */
   def showColumn(column: js.Object): scala.Unit = js.native
   def showColumn(column: js.Object, callback: js.Function): scala.Unit = js.native

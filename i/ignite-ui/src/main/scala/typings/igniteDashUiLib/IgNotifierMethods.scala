@@ -39,7 +39,7 @@ trait IgNotifierMethods extends js.Object {
   /**
   	 * Returns true if the notification is currently visible
   	 */
-  def isVisible(): scala.Unit = js.native
+  def isVisible(): scala.Boolean = js.native
   /**
   	 * Triggers a notification with a certain state and optional message. The [notifyLevel](ui.ignotifier#options:notifyLevel) option determines if the notification will be displayed.
   	 *

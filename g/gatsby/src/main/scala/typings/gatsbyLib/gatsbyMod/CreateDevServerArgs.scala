@@ -5,26 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait CreateDevServerArgs extends ParentSpanPluginArgs {
-  @JSName("app")
-  var app_Original: expressLib.expressMod.Application = js.native
-  /**
-    * Express instance itself is a request handler, which could be invoked without
-    * third argument.
-    */
-  def app(
-    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
-    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
-  ): js.Any = js.native
-  def app(
-    req: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request,
-    res: nodeLib.httpMod.ServerResponse
-  ): js.Any = js.native
-  def app(
-    req: nodeLib.httpMod.IncomingMessage,
-    res: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response
-  ): js.Any = js.native
-  def app(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): js.Any = js.native
+  var app: js.Any
+}
+
+object CreateDevServerArgs {
+  @scala.inline
+  def apply(
+    actions: Actions,
+    app: js.Any,
+    boundActionCreators: Actions,
+    cache: Cache,
+    createContentDigest: js.Function,
+    createNodeId: js.Function,
+    emitter: nodeLib.eventsMod.EventEmitter,
+    getNode: js.Function,
+    getNodeAndSavePathDependency: js.Function,
+    getNodes: js.Function,
+    getNodesByType: js.Function,
+    hasNodeChanged: js.Function,
+    loadNodeContent: js.Function,
+    parentSpan: js.Object,
+    pathPrefix: java.lang.String,
+    reporter: Reporter,
+    store: Store,
+    tracing: Tracing
+  ): CreateDevServerArgs = {
+    val __obj = js.Dynamic.literal(actions = actions, app = app, boundActionCreators = boundActionCreators, cache = cache, createContentDigest = createContentDigest, createNodeId = createNodeId, emitter = emitter, getNode = getNode, getNodeAndSavePathDependency = getNodeAndSavePathDependency, getNodes = getNodes, getNodesByType = getNodesByType, hasNodeChanged = hasNodeChanged, loadNodeContent = loadNodeContent, parentSpan = parentSpan, pathPrefix = pathPrefix, reporter = reporter, store = store, tracing = tracing)
+  
+    __obj.asInstanceOf[CreateDevServerArgs]
+  }
 }
 

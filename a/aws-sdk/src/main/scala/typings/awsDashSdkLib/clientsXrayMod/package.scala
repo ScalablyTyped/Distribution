@@ -33,6 +33,7 @@ package object clientsXrayMod {
     - java.lang.String
   */
   type EncryptionType = _EncryptionType | java.lang.String
+  type EntitySelectorExpression = java.lang.String
   type ErrorRootCauseEntityPath = js.Array[ErrorRootCauseEntity]
   type ErrorRootCauseServices = js.Array[ErrorRootCauseService]
   type ErrorRootCauses = js.Array[ErrorRootCause]
@@ -67,6 +68,12 @@ package object clientsXrayMod {
   type SamplingRuleRecordList = js.Array[SamplingRuleRecord]
   type SamplingStatisticSummaryList = js.Array[SamplingStatisticSummary]
   type SamplingStatisticsDocumentList = js.Array[SamplingStatisticsDocument]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PartialScan
+    - awsDashSdkLib.awsDashSdkLibStrings.FixedRate
+    - java.lang.String
+  */
+  type SamplingStrategyName = _SamplingStrategyName | java.lang.String
   type SamplingTargetDocumentList = js.Array[SamplingTargetDocument]
   type SegmentDocument = java.lang.String
   type SegmentId = java.lang.String
@@ -78,6 +85,13 @@ package object clientsXrayMod {
   type ServiceType = java.lang.String
   type String = java.lang.String
   type TelemetryRecordList = js.Array[TelemetryRecord]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TraceId
+    - awsDashSdkLib.awsDashSdkLibStrings.Event
+    - java.lang.String
+  */
+  type TimeRangeType = _TimeRangeType | java.lang.String
+  type TimeSeriesServiceStatisticsList = js.Array[TimeSeriesServiceStatistics]
   type Timestamp = stdLib.Date
   type TraceAvailabilityZones = js.Array[AvailabilityZoneDetail]
   type TraceId = java.lang.String

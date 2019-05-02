@@ -28,6 +28,7 @@ object IAccountUpdateOptions {
     business_logo: java.lang.String = null,
     business_name: java.lang.String = null,
     business_primary_color: java.lang.String = null,
+    business_profile: stripeLib.Anon_Mcc = null,
     business_url: java.lang.String = null,
     debit_negative_balances: js.UndefOr[scala.Boolean] = js.undefined,
     decline_charge_on: stripeLib.Anon_Avsfailure = null,
@@ -41,6 +42,7 @@ object IAccountUpdateOptions {
     payout_schedule: stripeLib.Anon_Daily = null,
     payout_statement_descriptor: java.lang.String = null,
     product_description: java.lang.String = null,
+    settings: stripeLib.Anon_Branding = null,
     statement_descriptor: java.lang.String = null,
     support_email: java.lang.String = null,
     support_phone: java.lang.String = null,
@@ -51,6 +53,7 @@ object IAccountUpdateOptions {
     if (business_logo != null) __obj.updateDynamic("business_logo")(business_logo)
     if (business_name != null) __obj.updateDynamic("business_name")(business_name)
     if (business_primary_color != null) __obj.updateDynamic("business_primary_color")(business_primary_color)
+    if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile)
     if (business_url != null) __obj.updateDynamic("business_url")(business_url)
     if (!js.isUndefined(debit_negative_balances)) __obj.updateDynamic("debit_negative_balances")(debit_negative_balances)
     if (decline_charge_on != null) __obj.updateDynamic("decline_charge_on")(decline_charge_on)
@@ -64,6 +67,7 @@ object IAccountUpdateOptions {
     if (payout_schedule != null) __obj.updateDynamic("payout_schedule")(payout_schedule)
     if (payout_statement_descriptor != null) __obj.updateDynamic("payout_statement_descriptor")(payout_statement_descriptor)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (support_email != null) __obj.updateDynamic("support_email")(support_email)
     if (support_phone != null) __obj.updateDynamic("support_phone")(support_phone)

@@ -91,7 +91,7 @@ trait ChartData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Encapsulates the options for the pivot chart. Read-only.
+    * Encapsulates the options for a pivot chart. Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */

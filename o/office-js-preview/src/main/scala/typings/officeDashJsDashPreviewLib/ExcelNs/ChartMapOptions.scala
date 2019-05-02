@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Encapsulates the properties for Map chart.
+  * Encapsulates the properties for a region map chart.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -20,21 +20,21 @@ class ChartMapOptions ()
   var context_ChartMapOptions: RequestContext = js.native
   /**
     *
-    * Returns or sets series map labels strategy of a region map chart. Read/Write.
+    * Returns or sets the series map labels strategy of a region map chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: ChartMapLabelStrategy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BestFit | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShowAll = js.native
   /**
     *
-    * Returns or sets series map area of a region map chart. Read/Write.
+    * Returns or sets the series mapping level of a region map chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var level: ChartMapAreaLevel | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DataOnly | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.City | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.County | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.State | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Country | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Continent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.World = js.native
   /**
     *
-    * Returns or sets series projection type of a region map chart. Read/Write.
+    * Returns or sets the series projection type of a region map chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */

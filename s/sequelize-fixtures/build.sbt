@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "sequelize-fixtures"
-version := "0.6.0-dt-20190322Z-f01ac4"
+version := "0.6.0-dt-20190322Z-37017b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-0bae51",
-  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-00df9f",
+  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-a3f999",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-407536",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
-  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190412Z-8a08b6",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
+  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190412Z-fb366b",
   "org.scalablytyped" %%% "std" % "3.4-495f93",
   "org.scalablytyped" %%% "validator" % "v10.11.0-dt-20190329Z-1b1624")
 publishArtifact in packageDoc := false

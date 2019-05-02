@@ -1,7 +1,7 @@
 
 # Scala.js typings for ignite-ui
 
-Typings are for version 18.2
+Typings are for version 19.1
 
 ## Library description:
 Ignite UI by Infragistics
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Ignite UI 18.2
+// Type definitions for Ignite UI 19.1
 // Project: https://github.com/IgniteUI/ignite-ui
 // Definitions by: Ignite UI <https://github.com/IgniteUI>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

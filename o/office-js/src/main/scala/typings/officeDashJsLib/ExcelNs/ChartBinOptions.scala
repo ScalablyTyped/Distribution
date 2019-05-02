@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Encapsulates the bon options only for histogram chart and pareto chart.
+  * Encapsulates the bin options for histogram charts and pareto charts.
   *
   * [Api set: ExcelApi 1.9]
   */
@@ -17,14 +17,14 @@ class ChartBinOptions ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
+    * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var allowOverflow: scala.Boolean = js.native
   /**
     *
-    * Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.
+    * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -34,35 +34,35 @@ class ChartBinOptions ()
   var context_ChartBinOptions: RequestContext = js.native
   /**
     *
-    * Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var count: scala.Double = js.native
   /**
     *
-    * Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var overflowValue: scala.Double = js.native
   /**
     *
-    * Returns or sets bin type of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var `type`: ChartBinType | officeDashJsLib.officeDashJsLibStrings.Category | officeDashJsLib.officeDashJsLibStrings.Auto | officeDashJsLib.officeDashJsLibStrings.BinWidth | officeDashJsLib.officeDashJsLibStrings.BinCount = js.native
   /**
     *
-    * Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var underflowValue: scala.Double = js.native
   /**
     *
-    * Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.
+    * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */

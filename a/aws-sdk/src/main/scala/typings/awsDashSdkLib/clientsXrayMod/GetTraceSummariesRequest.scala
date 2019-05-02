@@ -23,9 +23,17 @@ trait GetTraceSummariesRequest extends js.Object {
     */
   var Sampling: js.UndefOr[NullableBoolean] = js.undefined
   /**
+    * A paramater to indicate whether to enable sampling on trace summaries. Input parameters are Name and Value.
+    */
+  var SamplingStrategy: js.UndefOr[SamplingStrategy] = js.undefined
+  /**
     * The start of the time frame for which to retrieve traces.
     */
   var StartTime: Timestamp
+  /**
+    * A parameter to indicate whether to query trace summaries by TraceId or Event time.
+    */
+  var TimeRangeType: js.UndefOr[TimeRangeType] = js.undefined
 }
 
 object GetTraceSummariesRequest {
@@ -35,12 +43,16 @@ object GetTraceSummariesRequest {
     StartTime: Timestamp,
     FilterExpression: FilterExpression = null,
     NextToken: String = null,
-    Sampling: js.UndefOr[NullableBoolean] = js.undefined
+    Sampling: js.UndefOr[NullableBoolean] = js.undefined,
+    SamplingStrategy: SamplingStrategy = null,
+    TimeRangeType: TimeRangeType = null
   ): GetTraceSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime, StartTime = StartTime)
     if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (!js.isUndefined(Sampling)) __obj.updateDynamic("Sampling")(Sampling)
+    if (SamplingStrategy != null) __obj.updateDynamic("SamplingStrategy")(SamplingStrategy)
+    if (TimeRangeType != null) __obj.updateDynamic("TimeRangeType")(TimeRangeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesRequest]
   }
 }

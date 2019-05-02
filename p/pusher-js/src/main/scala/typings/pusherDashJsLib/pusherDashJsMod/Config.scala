@@ -57,8 +57,13 @@ trait Config extends js.Object {
   var enabledTransports: js.UndefOr[js.Array[Transport]] = js.undefined
   /**
     * Forces the connection to use encrypted transports.
+    * @deprecated
     */
   var encrypted: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Forces the connection to use encrypted transports.
+    */
+  var forceTLS: js.UndefOr[scala.Boolean] = js.undefined
   var httpHost: js.UndefOr[java.lang.String] = js.undefined
   var httpPort: js.UndefOr[scala.Double] = js.undefined
   var httpsPort: js.UndefOr[scala.Double] = js.undefined
@@ -90,6 +95,7 @@ object Config {
     disabledTransports: js.Array[Transport] = null,
     enabledTransports: js.Array[Transport] = null,
     encrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    forceTLS: js.UndefOr[scala.Boolean] = js.undefined,
     httpHost: java.lang.String = null,
     httpPort: scala.Int | scala.Double = null,
     httpsPort: scala.Int | scala.Double = null,
@@ -111,6 +117,7 @@ object Config {
     if (disabledTransports != null) __obj.updateDynamic("disabledTransports")(disabledTransports)
     if (enabledTransports != null) __obj.updateDynamic("enabledTransports")(enabledTransports)
     if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted)
+    if (!js.isUndefined(forceTLS)) __obj.updateDynamic("forceTLS")(forceTLS)
     if (httpHost != null) __obj.updateDynamic("httpHost")(httpHost)
     if (httpPort != null) __obj.updateDynamic("httpPort")(httpPort.asInstanceOf[js.Any])
     if (httpsPort != null) __obj.updateDynamic("httpsPort")(httpsPort.asInstanceOf[js.Any])

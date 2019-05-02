@@ -20,7 +20,7 @@ class ChartErrorBarsFormat ()
   var context_ChartErrorBarsFormat: RequestContext = js.native
   /**
     *
-    * Represents chart line formatting.
+    * Represents the chart line formatting.
     *
     * [Api set: ExcelApi 1.9]
     */

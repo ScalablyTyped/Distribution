@@ -13,8 +13,9 @@ trait PromptObject[T /* <: java.lang.String */] extends js.Object {
   var hint: js.UndefOr[java.lang.String] = js.undefined
   var inactive: js.UndefOr[java.lang.String] = js.undefined
   var increment: js.UndefOr[scala.Double] = js.undefined
-  var initial: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
+  var initial: js.UndefOr[java.lang.String | scala.Double | scala.Boolean | stdLib.Date] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined
+  var mask: js.UndefOr[java.lang.String] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var message: js.UndefOr[ValueOrFunc[java.lang.String]] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
@@ -47,8 +48,9 @@ object PromptObject {
     hint: java.lang.String = null,
     inactive: java.lang.String = null,
     increment: scala.Int | scala.Double = null,
-    initial: java.lang.String | scala.Double | scala.Boolean = null,
+    initial: java.lang.String | scala.Double | scala.Boolean | stdLib.Date = null,
     limit: scala.Int | scala.Double = null,
+    mask: java.lang.String = null,
     max: scala.Int | scala.Double = null,
     message: ValueOrFunc[java.lang.String] = null,
     min: scala.Int | scala.Double = null,
@@ -70,6 +72,7 @@ object PromptObject {
     if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

@@ -23,21 +23,21 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var axisGroup: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Encapsulates the bin options only for histogram chart and pareto chart.
+    * For EACH ITEM in the collection: Encapsulates the bin options for histogram charts and pareto charts.
     *
     * [Api set: ExcelApi 1.9]
     */
   var binOptions: js.UndefOr[ChartBinOptionsLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Encapsulates the options for the Box & Whisker chart.
+    * For EACH ITEM in the collection: Encapsulates the options for the box and whisker charts.
     *
     * [Api set: ExcelApi 1.9]
     */
   var boxwhiskerOptions: js.UndefOr[ChartBoxwhiskerOptionsLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
+    * For EACH ITEM in the collection: This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -102,7 +102,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var gapWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the Color for maximum value of a region map chart series. Read/Write.
+    * For EACH ITEM in the collection: Returns or sets the color for maximum value of a region map chart series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -123,7 +123,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var gradientMaximumValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
+    * For EACH ITEM in the collection: Returns or sets the color for midpoint value of a region map chart series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -144,7 +144,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var gradientMidpointValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the Color for minimum value of a region map chart series. Read/Write.
+    * For EACH ITEM in the collection: Returns or sets the color for minimum value of a region map chart series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -193,7 +193,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var invertIfNegative: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Encapsulates the options for the Map chart.
+    * For EACH ITEM in the collection: Encapsulates the options for a region map chart.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -242,7 +242,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var overlap: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets series parent label strategy area of a treemap chart. Read/Write.
+    * For EACH ITEM in the collection: Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -270,14 +270,14 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var secondPlotSize: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets if connector lines show in a waterfall chart. Read/Write.
+    * For EACH ITEM in the collection: Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
   var showConnectorLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
+    * For EACH ITEM in the collection: Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -305,7 +305,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var splitType: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
+    * For EACH ITEM in the collection: Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
     *
     * [Api set: ExcelApi 1.9]
     */
@@ -319,14 +319,14 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var varyByCategories: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the error bar object for a chart series.
+    * For EACH ITEM in the collection: Represents the error bar object of a chart series.
     *
     * [Api set: ExcelApi 1.9]
     */
   var xErrorBars: js.UndefOr[ChartErrorBarsLoadOptions] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the error bar object for a chart series.
+    * For EACH ITEM in the collection: Represents the error bar object of a chart series.
     *
     * [Api set: ExcelApi 1.9]
     */

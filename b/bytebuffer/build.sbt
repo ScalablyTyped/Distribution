@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bytebuffer"
-version := "5.0.0-dt-20190322Z-5bef1c"
+version := "5.0.0-dt-20190322Z-8b6156"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-35e746",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190429Z-40b461",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
   "org.scalablytyped" %%% "std" % "3.4-495f93")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

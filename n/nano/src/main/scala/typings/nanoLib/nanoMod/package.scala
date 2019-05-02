@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object nanoMod {
   type Callback[R] = js.Function3[/* error */ js.Any, /* response */ R, /* headers */ js.UndefOr[js.Any], scala.Unit]
   type FollowUpdatesParamsFilterFunction = js.Function2[/* doc */ js.Any, /* req */ js.Any, scala.Boolean]
-  type MangoValue = scala.Double | java.lang.String | stdLib.Date | scala.Boolean
+  type MangoValue = scala.Double | java.lang.String | stdLib.Date | scala.Boolean | scala.Null
   type RequestFunction = js.Function2[
     /* options */ js.UndefOr[RequestOptions | java.lang.String], 
     /* callback */ js.UndefOr[Callback[js.Any]], 

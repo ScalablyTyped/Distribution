@@ -21,6 +21,7 @@ trait ReactCrop
   def onDocMouseTouchMove(e: stdLib.MouseEvent): scala.Unit = js.native
   def onImageLoad(image: stdLib.HTMLImageElement): scala.Unit = js.native
   def resizeCrop(): Crop = js.native
+  def resolveCrop(crop: Crop, image: stdLib.HTMLImageElement): Crop = js.native
   def straightenYPath(clientX: scala.Double): scala.Double = js.native
 }
 

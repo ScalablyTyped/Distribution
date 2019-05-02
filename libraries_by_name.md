@@ -1221,6 +1221,7 @@
 | [dispatchr](./d/dispatchr) | A Flux dispatcher for applications that run on the server and the client. |
 | [disposable-email-domains](./d/disposable-email-domains) | A list of  |
 | [distributions](./d/distributions) | A collection of probability distribution functions |
+| [djv](./d/djv) | dynamic json-schema validator |
 | [dlv](./d/dlv) | Safely get a dot-notated property within an object. |
 | [dmg-builder](./d/dmg-builder) | Utilities to build DMG. Used by  |
 | [dnd-core](./d/dnd-core) | Drag and drop sans the GUI |
@@ -1514,6 +1515,7 @@
 | [expo__vector-icons](./e/expo__vector-icons) | Built-in support for popular icon fonts and the tooling to create your own Icon components from your font and glyph map. This is a wrapper around react-native-vector-icons to make it compatible with Expo. |
 | [expr-eval](./e/expr-eval) | Mathematical expression evaluator |
 | [express](./e/express) | Fast, unopinionated, minimalist web framework |
+| [express-async-wrap](./e/express-async-wrap) | Allows the use of ES2016 async functions as Express route handlers |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express routes that rate limits incoming requests |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute |
 | [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. |
@@ -1825,6 +1827,7 @@
 | [fullcalendar](./f/fullcalendar) | Full-sized drag & drop event calendar |
 | [fullname](./f/fullname) | Get the fullname of the current user |
 | [fullpage_dot_js](./f/fullpage_dot_js) | Create beautiful fullscreen scrolling websites |
+| [fundamental-react](./f/fundamental-react) | SAP Fiori Fundamentals, implemented in React |
 | [fusioncharts](./f/fusioncharts) | FusionCharts JavaScript charting framework |
 | [fuzzaldrin](./f/fuzzaldrin) | Fuzzy filtering and string scoring |
 | [fuzzaldrin-plus](./f/fuzzaldrin-plus) | Fuzzy filtering and string similarity scoring - compatible with fuzzaldrin |
@@ -2715,6 +2718,7 @@
 | [jest-docblock](./j/jest-docblock) | jest-docblock is a package that can extract and parse a specially-formatted comment called a "docblock" at the top of a file. |
 | [jest-each](./j/jest-each) | Parameterised tests for Jest |
 | [jest-environment-puppeteer](./j/jest-environment-puppeteer) | Puppeteer environment for Jest. |
+| [jest-expect-message](./j/jest-expect-message) | Add custom message to Jest expects |
 | [jest-get-type](./j/jest-get-type) | A utility function to get the type of a value |
 | [jest-image-snapshot](./j/jest-image-snapshot) | Jest matcher for image comparisons. Most commonly used for visual regression testing. |
 | [jest-in-case](./j/jest-in-case) | Jest utility for creating variations of the same test |
@@ -3043,6 +3047,7 @@
 | [keyv__sqlite](./k/keyv__sqlite) | SQLite storage adapter for Keyv |
 | [kii-cloud-sdk](./k/kii-cloud-sdk) | This is the Kii Cloud SDK |
 | [kik-browser](./k/kik-browser) | - |
+| [kind-of](./k/kind-of) | Get the native type of a value. |
 | [kineticjs](./k/kineticjs) | - |
 | [kissfft-js](./k/kissfft-js) | Javascript port of KissFFT via Emscripten |
 | [klaw](./k/klaw) | File system walker with Readable stream interface. |
@@ -5622,6 +5627,7 @@
 | [season](./s/season) | CSON utilities |
 | [secp256k1](./s/secp256k1) | This module provides native bindings to ecdsa secp256k1 functions |
 | [secure-password](./s/secure-password) | Making Password storage safer for all |
+| [secure-random-password](./s/secure-random-password) | Generate passwords using a cryptographically-strong source of randomness |
 | [seed-random](./s/seed-random) | Generate random numbers with a seed, useful for reproducible tests |
 | [seededshuffle](./s/seededshuffle) | Shuffle and unshuffle an array by seed/key. |
 | [seedrandom](./s/seedrandom) | Seeded random number generator for Javascript. |
@@ -5747,6 +5753,7 @@
 | [simple-websocket](./s/simple-websocket) | Simple, EventEmitter API for WebSockets (browser) |
 | [simple-xml](./s/simple-xml) | A naive XML parser and builder based on libxmljs |
 | [simplebar](./s/simplebar) | Scrollbars, simpler. |
+| [simplecrawler](./s/simplecrawler) | Very straightforward, event driven web crawler. Features a flexible queue interface and a basic cache mechanism with extensible backend. |
 | [simplemde](./s/simplemde) | A simple, beautiful, and embeddable JavaScript Markdown editor. Features autosaving and spell checking. |
 | [simplesignal](./s/simplesignal) | Super-simple signals class |
 | [simplesmtp](./s/simplesmtp) | Simple SMTP server module to create custom SMTP servers |
@@ -5892,6 +5899,7 @@
 | [sqs-producer](./s/sqs-producer) | Enqueues messages onto a given SQS queue |
 | [square-connect](./s/square-connect) | JavaScript client library for the Square Connect v2 API |
 | [squirejs](./s/squirejs) | Squire.js is a dependency injector for Require.js users to make mocking dependencies easy |
+| [squirrelly](./s/squirrelly) | Simple and powerful template engine that supports helpers, partials, filters, native code, and Express. |
 | [srcset](./s/srcset) | Parse and stringify the HTML <img> srcset attribute |
 | [srp](./s/srp) | Secure Remote Password (SRP) |
 | [ss-utils](./s/ss-utils) | ServiceStack's JavaScript library providing a number of convenience utilities in developing javascript web apps. Integrates with ServiceStack's Server features including Error Handling, Validation and Server Events |
@@ -6527,6 +6535,7 @@
 | [vue-scrollto](./v/vue-scrollto) | Adds a directive that listens for click events and scrolls to elements. |
 | [vue-select](./v/vue-select) | Everything you wish the HTML <select> element could do, wrapped up into a lightweight, extensible Vue component. |
 | [vue-server-renderer](./v/vue-server-renderer) | server renderer for Vue 2.0 |
+| [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue |
 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2 |
 | [vue__component-compiler-utils](./v/vue__component-compiler-utils) | Lower level utilities for compiling Vue single file components |
 | [vuex](./v/vuex) | state management for Vue.js |

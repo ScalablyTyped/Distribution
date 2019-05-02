@@ -16,7 +16,7 @@ trait ChartErrorBarsFormatLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents chart line formatting.
+    * Represents the chart line formatting.
     *
     * [Api set: ExcelApi 1.9]
     */

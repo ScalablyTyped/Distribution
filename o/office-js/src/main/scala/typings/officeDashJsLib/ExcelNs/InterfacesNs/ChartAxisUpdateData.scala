@@ -59,7 +59,7 @@ trait ChartAxisUpdateData extends js.Object {
   var isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+    * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
     *
     * [Api set: ExcelApi 1.9]
     */
