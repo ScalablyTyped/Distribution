@@ -1352,7 +1352,11 @@ object ^ extends js.Object {
   def matcher(selector: java.lang.String): js.ThisFunction0[/* this */ BaseType, scala.Boolean] = js.native
   def mouse(container: ContainerElement): js.Tuple2[scala.Double, scala.Double] = js.native
   def namespace(prefixedLocal: java.lang.String): NamespaceLocalObject | java.lang.String = js.native
-  def select[GElement /* <: BaseType */, OldDatum](node: GElement): Selection[GElement, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  def select[OldDatum](): Selection[scala.Null, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  def select[OldDatum](node: EnterElement): Selection[EnterElement, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  def select[OldDatum](node: stdLib.Document): Selection[stdLib.Document, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  def select[OldDatum](node: stdLib.Element): Selection[stdLib.Element, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  def select[OldDatum](node: stdLib.Window): Selection[stdLib.Window, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
   def select[GElement /* <: BaseType */, OldDatum](selector: java.lang.String): Selection[GElement, OldDatum, stdLib.HTMLElement, _] = js.native
   def selectAll(): Selection[scala.Null, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   def selectAll[GElement /* <: BaseType */, OldDatum](nodes: ArrayLike[GElement]): Selection[GElement, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native

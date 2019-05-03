@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "element-ready"
-version := "3.1.0-1f3fd7"
+version := "3.1.0-e3dded"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "p-cancelable" % "1.1.0-501dce",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "p-cancelable" % "1.1.0-5b3235",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

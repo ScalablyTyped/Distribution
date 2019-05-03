@@ -15,7 +15,7 @@ trait ListGrantsResponse extends js.Object {
     */
   var NextMarker: js.UndefOr[MarkerType] = js.undefined
   /**
-    * A flag that indicates whether there are more items in the list. When this value is true, the list in this response is truncated. To get more items, pass the value of the NextMarker element in this response to the Marker parameter in a subsequent request.
+    * A flag that indicates whether there are more items in the list. When this value is true, the list in this response is truncated. To get more items, pass the value of the NextMarker element in thisresponse to the Marker parameter in a subsequent request.
     */
   var Truncated: js.UndefOr[BooleanType] = js.undefined
 }

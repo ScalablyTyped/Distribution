@@ -35,7 +35,7 @@ trait Run extends js.Object {
   /**
     * Specifies the default encoding for any artifact object that refers to a text file.
     */
-  var defaultFileEncoding: js.UndefOr[java.lang.String] = js.undefined
+  var defaultEncoding: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Specifies the default source language for any artifact object that refers to a text file that contains source
     * code.
@@ -54,19 +54,16 @@ trait Run extends js.Object {
     */
   var invocations: js.UndefOr[js.Array[Invocation]] = js.undefined
   /**
-    * The language of the messages emitted into the log file during this run (expressed as an ISO 649 two-letter
-    * lowercase culture code) and region (expressed as an ISO 3166 two-letter uppercase subculture code associated
-    * with a country or region).
+    * The language of the messages emitted into the log file during this run (expressed as an ISO 639-1 two-letter
+    * lowercase culture code) and an optional region (expressed as an ISO 3166-1 two-letter uppercase subculture code
+    * associated with a country or region). The casing is recommended but not required (in order for this data to
+    * conform to RFC5646).
     */
   var language: js.UndefOr[java.lang.String] = js.undefined
   /**
     * An array of logical locations such as namespaces, types or functions.
     */
   var logicalLocations: js.UndefOr[js.Array[LogicalLocation]] = js.undefined
-  /**
-    * The MIME type of all Markdown text message properties in the run. Default: "text/markdown;variant=GFM"
-    */
-  var markdownMessageMimeType: js.UndefOr[java.lang.String] = js.undefined
   /**
     * An ordered list of character sequences that were treated as line breaks when computing region information for
     * the run.
@@ -87,9 +84,9 @@ trait Run extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * The string used to replace sensitive information in a redaction-aware property.
+    * An array of strings used to replace sensitive information in a redaction-aware property.
     */
-  var redactionToken: js.UndefOr[java.lang.String] = js.undefined
+  var redactionTokens: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * The set of results contained in an SARIF log. The results array can be omitted when a run is solely exporting
     * rules metadata. It must be present (but may be empty) if a log file represents an actual scan.
@@ -99,6 +96,10 @@ trait Run extends js.Object {
     * Automation details that describe the aggregate of runs to which this run belongs.
     */
   var runAggregates: js.UndefOr[js.Array[RunAutomationDetails]] = js.undefined
+  /**
+    * A specialLocations object that defines locations of special significance to SARIF consumers.
+    */
+  var specialLocations: js.UndefOr[SpecialLocations] = js.undefined
   /**
     * An array of toolComponent objects relevant to a taxonomy in which results are categorized.
     */
@@ -121,6 +122,14 @@ trait Run extends js.Object {
     * Specifies the revision in version control of the artifacts that were scanned.
     */
   var versionControlProvenance: js.UndefOr[js.Array[VersionControlDetails]] = js.undefined
+  /**
+    * An array of request objects cached at run level.
+    */
+  var webRequests: js.UndefOr[js.Array[WebRequest]] = js.undefined
+  /**
+    * An array of response objects cached at run level.
+    */
+  var webResponses: js.UndefOr[js.Array[WebResponse]] = js.undefined
 }
 
 object Run {
@@ -133,25 +142,27 @@ object Run {
     baselineGuid: java.lang.String = null,
     columnKind: sarifLib.sarifMod.RunNs.columnKind = null,
     conversion: Conversion = null,
-    defaultFileEncoding: java.lang.String = null,
+    defaultEncoding: java.lang.String = null,
     defaultSourceLanguage: java.lang.String = null,
     externalPropertyFileReferences: ExternalPropertyFileReferences = null,
     graphs: js.Array[Graph] = null,
     invocations: js.Array[Invocation] = null,
     language: java.lang.String = null,
     logicalLocations: js.Array[LogicalLocation] = null,
-    markdownMessageMimeType: java.lang.String = null,
     newlineSequences: js.Array[java.lang.String] = null,
     originalUriBaseIds: org.scalablytyped.runtime.StringDictionary[ArtifactLocation] = null,
     policies: js.Array[ToolComponent] = null,
     properties: PropertyBag = null,
-    redactionToken: java.lang.String = null,
+    redactionTokens: js.Array[java.lang.String] = null,
     results: js.Array[Result] = null,
     runAggregates: js.Array[RunAutomationDetails] = null,
+    specialLocations: SpecialLocations = null,
     taxonomies: js.Array[ToolComponent] = null,
     threadFlowLocations: js.Array[ThreadFlowLocation] = null,
     translations: js.Array[ToolComponent] = null,
-    versionControlProvenance: js.Array[VersionControlDetails] = null
+    versionControlProvenance: js.Array[VersionControlDetails] = null,
+    webRequests: js.Array[WebRequest] = null,
+    webResponses: js.Array[WebResponse] = null
   ): Run = {
     val __obj = js.Dynamic.literal(tool = tool)
     if (addresses != null) __obj.updateDynamic("addresses")(addresses)
@@ -160,25 +171,27 @@ object Run {
     if (baselineGuid != null) __obj.updateDynamic("baselineGuid")(baselineGuid)
     if (columnKind != null) __obj.updateDynamic("columnKind")(columnKind)
     if (conversion != null) __obj.updateDynamic("conversion")(conversion)
-    if (defaultFileEncoding != null) __obj.updateDynamic("defaultFileEncoding")(defaultFileEncoding)
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
     if (defaultSourceLanguage != null) __obj.updateDynamic("defaultSourceLanguage")(defaultSourceLanguage)
     if (externalPropertyFileReferences != null) __obj.updateDynamic("externalPropertyFileReferences")(externalPropertyFileReferences)
     if (graphs != null) __obj.updateDynamic("graphs")(graphs)
     if (invocations != null) __obj.updateDynamic("invocations")(invocations)
     if (language != null) __obj.updateDynamic("language")(language)
     if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
-    if (markdownMessageMimeType != null) __obj.updateDynamic("markdownMessageMimeType")(markdownMessageMimeType)
     if (newlineSequences != null) __obj.updateDynamic("newlineSequences")(newlineSequences)
     if (originalUriBaseIds != null) __obj.updateDynamic("originalUriBaseIds")(originalUriBaseIds)
     if (policies != null) __obj.updateDynamic("policies")(policies)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (redactionToken != null) __obj.updateDynamic("redactionToken")(redactionToken)
+    if (redactionTokens != null) __obj.updateDynamic("redactionTokens")(redactionTokens)
     if (results != null) __obj.updateDynamic("results")(results)
     if (runAggregates != null) __obj.updateDynamic("runAggregates")(runAggregates)
+    if (specialLocations != null) __obj.updateDynamic("specialLocations")(specialLocations)
     if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
     if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
     if (translations != null) __obj.updateDynamic("translations")(translations)
     if (versionControlProvenance != null) __obj.updateDynamic("versionControlProvenance")(versionControlProvenance)
+    if (webRequests != null) __obj.updateDynamic("webRequests")(webRequests)
+    if (webResponses != null) __obj.updateDynamic("webResponses")(webResponses)
     __obj.asInstanceOf[Run]
   }
 }

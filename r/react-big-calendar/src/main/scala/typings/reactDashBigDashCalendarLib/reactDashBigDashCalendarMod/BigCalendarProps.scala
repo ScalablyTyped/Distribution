@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   extends reactLib.reactMod.Props[BigCalendar[TEvent, TResource]] {
-  var allDayAccessor: js.UndefOr[java.lang.String] = js.undefined
+  var allDayAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, scala.Boolean])] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var components: js.UndefOr[Components[TEvent]] = js.undefined
   var culture: js.UndefOr[java.lang.String] = js.undefined
@@ -17,7 +17,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var defaultView: js.UndefOr[View] = js.undefined
   var drilldownView: js.UndefOr[View | scala.Null] = js.undefined
   var elementProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement]] = js.undefined
-  var endAccessor: js.UndefOr[java.lang.String] = js.undefined
+  var endAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, stdLib.Date])] = js.undefined
   var eventPropGetter: js.UndefOr[EventPropGetter[TEvent]] = js.undefined
   var events: js.UndefOr[js.Array[TEvent]] = js.undefined
   var formats: js.UndefOr[Formats] = js.undefined
@@ -70,9 +70,9 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onView: js.UndefOr[js.Function1[/* view */ View, scala.Unit]] = js.undefined
   var popup: js.UndefOr[scala.Boolean] = js.undefined
   var popupOffset: js.UndefOr[scala.Double | reactDashBigDashCalendarLib.Anon_X] = js.undefined
-  var resourceAccessor: js.UndefOr[java.lang.String] = js.undefined
-  var resourceIdAccessor: js.UndefOr[java.lang.String] = js.undefined
-  var resourceTitleAccessor: js.UndefOr[java.lang.String] = js.undefined
+  var resourceAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, _])] = js.undefined
+  var resourceIdAccessor: js.UndefOr[java.lang.String | (js.Function1[/* resource */ TResource, _])] = js.undefined
+  var resourceTitleAccessor: js.UndefOr[java.lang.String | (js.Function1[/* resource */ TResource, java.lang.String])] = js.undefined
   var resources: js.UndefOr[js.Array[TResource]] = js.undefined
   var rtl: js.UndefOr[scala.Boolean] = js.undefined
   var scrollToTime: js.UndefOr[stdLib.Date] = js.undefined
@@ -82,12 +82,12 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var selected: js.UndefOr[js.Any] = js.undefined
   var showMultiDayTimes: js.UndefOr[scala.Boolean] = js.undefined
   var slotPropGetter: js.UndefOr[SlotPropGetter] = js.undefined
-  var startAccessor: js.UndefOr[java.lang.String] = js.undefined
+  var startAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, stdLib.Date])] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
   var timeslots: js.UndefOr[scala.Double] = js.undefined
-  var titleAccessor: js.UndefOr[java.lang.String] = js.undefined
+  var titleAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, java.lang.String])] = js.undefined
   var toolbar: js.UndefOr[scala.Boolean] = js.undefined
-  var tooltipAccessor: js.UndefOr[java.lang.String] = js.undefined
+  var tooltipAccessor: js.UndefOr[java.lang.String | (js.Function1[/* event */ TEvent, java.lang.String])] = js.undefined
   var view: js.UndefOr[View] = js.undefined
   var views: js.UndefOr[Views] = js.undefined
 }
@@ -96,7 +96,7 @@ object BigCalendarProps {
   @scala.inline
   def apply[TEvent /* <: Event */, TResource /* <: js.Object */](
     localizer: DateLocalizer,
-    allDayAccessor: java.lang.String = null,
+    allDayAccessor: java.lang.String | (js.Function1[/* event */ TEvent, scala.Boolean]) = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     components: Components[TEvent] = null,
@@ -107,7 +107,7 @@ object BigCalendarProps {
     defaultView: View = null,
     drilldownView: View = null,
     elementProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
-    endAccessor: java.lang.String = null,
+    endAccessor: java.lang.String | (js.Function1[/* event */ TEvent, stdLib.Date]) = null,
     eventPropGetter: EventPropGetter[TEvent] = null,
     events: js.Array[TEvent] = null,
     formats: Formats = null,
@@ -130,9 +130,9 @@ object BigCalendarProps {
     popup: js.UndefOr[scala.Boolean] = js.undefined,
     popupOffset: scala.Double | reactDashBigDashCalendarLib.Anon_X = null,
     ref: reactLib.reactMod.LegacyRef[BigCalendar[TEvent, TResource]] = null,
-    resourceAccessor: java.lang.String = null,
-    resourceIdAccessor: java.lang.String = null,
-    resourceTitleAccessor: java.lang.String = null,
+    resourceAccessor: java.lang.String | (js.Function1[/* event */ TEvent, _]) = null,
+    resourceIdAccessor: java.lang.String | (js.Function1[/* resource */ TResource, _]) = null,
+    resourceTitleAccessor: java.lang.String | (js.Function1[/* resource */ TResource, java.lang.String]) = null,
     resources: js.Array[TResource] = null,
     rtl: js.UndefOr[scala.Boolean] = js.undefined,
     scrollToTime: stdLib.Date = null,
@@ -140,17 +140,17 @@ object BigCalendarProps {
     selected: js.Any = null,
     showMultiDayTimes: js.UndefOr[scala.Boolean] = js.undefined,
     slotPropGetter: SlotPropGetter = null,
-    startAccessor: java.lang.String = null,
+    startAccessor: java.lang.String | (js.Function1[/* event */ TEvent, stdLib.Date]) = null,
     step: scala.Int | scala.Double = null,
     timeslots: scala.Int | scala.Double = null,
-    titleAccessor: java.lang.String = null,
+    titleAccessor: java.lang.String | (js.Function1[/* event */ TEvent, java.lang.String]) = null,
     toolbar: js.UndefOr[scala.Boolean] = js.undefined,
-    tooltipAccessor: java.lang.String = null,
+    tooltipAccessor: java.lang.String | (js.Function1[/* event */ TEvent, java.lang.String]) = null,
     view: View = null,
     views: Views = null
   ): BigCalendarProps[TEvent, TResource] = {
     val __obj = js.Dynamic.literal(localizer = localizer)
-    if (allDayAccessor != null) __obj.updateDynamic("allDayAccessor")(allDayAccessor)
+    if (allDayAccessor != null) __obj.updateDynamic("allDayAccessor")(allDayAccessor.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (components != null) __obj.updateDynamic("components")(components)
@@ -161,7 +161,7 @@ object BigCalendarProps {
     if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView)
     if (drilldownView != null) __obj.updateDynamic("drilldownView")(drilldownView)
     if (elementProps != null) __obj.updateDynamic("elementProps")(elementProps)
-    if (endAccessor != null) __obj.updateDynamic("endAccessor")(endAccessor)
+    if (endAccessor != null) __obj.updateDynamic("endAccessor")(endAccessor.asInstanceOf[js.Any])
     if (eventPropGetter != null) __obj.updateDynamic("eventPropGetter")(eventPropGetter)
     if (events != null) __obj.updateDynamic("events")(events)
     if (formats != null) __obj.updateDynamic("formats")(formats)
@@ -184,9 +184,9 @@ object BigCalendarProps {
     if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
     if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (resourceAccessor != null) __obj.updateDynamic("resourceAccessor")(resourceAccessor)
-    if (resourceIdAccessor != null) __obj.updateDynamic("resourceIdAccessor")(resourceIdAccessor)
-    if (resourceTitleAccessor != null) __obj.updateDynamic("resourceTitleAccessor")(resourceTitleAccessor)
+    if (resourceAccessor != null) __obj.updateDynamic("resourceAccessor")(resourceAccessor.asInstanceOf[js.Any])
+    if (resourceIdAccessor != null) __obj.updateDynamic("resourceIdAccessor")(resourceIdAccessor.asInstanceOf[js.Any])
+    if (resourceTitleAccessor != null) __obj.updateDynamic("resourceTitleAccessor")(resourceTitleAccessor.asInstanceOf[js.Any])
     if (resources != null) __obj.updateDynamic("resources")(resources)
     if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
     if (scrollToTime != null) __obj.updateDynamic("scrollToTime")(scrollToTime)
@@ -194,12 +194,12 @@ object BigCalendarProps {
     if (selected != null) __obj.updateDynamic("selected")(selected)
     if (!js.isUndefined(showMultiDayTimes)) __obj.updateDynamic("showMultiDayTimes")(showMultiDayTimes)
     if (slotPropGetter != null) __obj.updateDynamic("slotPropGetter")(slotPropGetter)
-    if (startAccessor != null) __obj.updateDynamic("startAccessor")(startAccessor)
+    if (startAccessor != null) __obj.updateDynamic("startAccessor")(startAccessor.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (timeslots != null) __obj.updateDynamic("timeslots")(timeslots.asInstanceOf[js.Any])
-    if (titleAccessor != null) __obj.updateDynamic("titleAccessor")(titleAccessor)
+    if (titleAccessor != null) __obj.updateDynamic("titleAccessor")(titleAccessor.asInstanceOf[js.Any])
     if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar)
-    if (tooltipAccessor != null) __obj.updateDynamic("tooltipAccessor")(tooltipAccessor)
+    if (tooltipAccessor != null) __obj.updateDynamic("tooltipAccessor")(tooltipAccessor.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view)
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[BigCalendarProps[TEvent, TResource]]

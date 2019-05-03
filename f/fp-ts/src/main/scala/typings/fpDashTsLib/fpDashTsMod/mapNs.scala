@@ -22,18 +22,138 @@ object mapNs extends js.Object {
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
-  def fromFoldable[K, F /* <: fpDashTsLib.libHKTMod.URIS */](S: fpDashTsLib.libSetoidMod.Setoid[K], F: fpDashTsLib.libFoldable2vMod.Foldable2v1[F]): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type[F, js.Tuple2[K, _]], 
+  @JSName("fromFoldable")
+  def fromFoldable_Array[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Array]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, js.Tuple2[K, _]], 
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
-  def fromFoldable[K, F /* <: fpDashTsLib.libHKTMod.URIS2 */](S: fpDashTsLib.libSetoidMod.Setoid[K], F: fpDashTsLib.libFoldable2vMod.Foldable2v2[F]): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type2[F, _, js.Tuple2[K, _]], 
+  @JSName("fromFoldable")
+  def fromFoldable_FreeGroup[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, js.Tuple2[K, _]], 
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
-  def fromFoldable[K, F /* <: fpDashTsLib.libHKTMod.URIS3 */](S: fpDashTsLib.libSetoidMod.Setoid[K], F: fpDashTsLib.libFoldable2vMod.Foldable2v3[F]): js.Function2[
-    /* ta */ fpDashTsLib.libHKTMod.Type3[F, _, _, js.Tuple2[K, _]], 
+  @JSName("fromFoldable")
+  def fromFoldable_IO[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.IO]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Identity[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Identity]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_IxIO[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v3[fpDashTsLib.fpDashTsLibStrings.IxIO]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Map[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.fpDashTsLibStrings.Map]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_NonEmptyArray[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_NonEmptyArray2v[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Option[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Option]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Pair[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Pair]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_ReaderTaskEither[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_StrMap[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.StrMap]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Task[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Task]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Tree[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Tree]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, js.Tuple2[K, _]], 
+    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    stdLib.Map[K, _]
+  ] = js.native
+  @JSName("fromFoldable")
+  def fromFoldable_Zipper[K](
+    S: fpDashTsLib.libSetoidMod.Setoid[K],
+    F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Zipper]
+  ): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, js.Tuple2[K, _]], 
     /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
@@ -63,7 +183,102 @@ object mapNs extends js.Object {
   def size[K, A](d: stdLib.Map[K, A]): scala.Double = js.native
   def toArray[K](O: fpDashTsLib.libOrdMod.Ord[K]): js.Function1[/* m */ stdLib.Map[K, _], fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[K, _]]] = js.native
   def toUnfoldable[K, F](O: fpDashTsLib.libOrdMod.Ord[K], unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function1[/* d */ stdLib.Map[K, _], fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[K, _]]] = js.native
-  def toUnfoldable[K, F /* <: fpDashTsLib.libHKTMod.URIS */](O: fpDashTsLib.libOrdMod.Ord[K], unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[F]): js.Function1[/* d */ stdLib.Map[K, _], fpDashTsLib.libHKTMod.Type[F, js.Tuple2[K, _]]] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Array[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Array]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_FreeGroup[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_IO[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.IO]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Identity[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Identity]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_NonEmptyArray[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_NonEmptyArray2v[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Option[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Option]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Pair[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Pair]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_StrMap[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.StrMap]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Task[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Task]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Tree[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Tree]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, js.Tuple2[K, _]]
+  ] = js.native
+  @JSName("toUnfoldable")
+  def toUnfoldable_Zipper[K](
+    O: fpDashTsLib.libOrdMod.Ord[K],
+    unfoldable: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Zipper]
+  ): js.Function1[
+    /* d */ stdLib.Map[K, _], 
+    fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, js.Tuple2[K, _]]
+  ] = js.native
   def values[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[/* m */ stdLib.Map[_, A], fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
 }
 

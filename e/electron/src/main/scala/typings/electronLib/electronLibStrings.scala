@@ -499,9 +499,6 @@ object electronLibStrings {
   sealed trait gotpointercapture extends js.Object
   
   @js.native
-  sealed trait `gpu-crashed` extends js.Object
-  
-  @js.native
   sealed trait `gpu-process-crashed` extends js.Object
   
   @js.native
@@ -1594,8 +1591,6 @@ object electronLibStrings {
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
-  @scala.inline
-  def `gpu-crashed`: `gpu-crashed` = "gpu-crashed".asInstanceOf[`gpu-crashed`]
   @scala.inline
   def `gpu-process-crashed`: `gpu-process-crashed` = "gpu-process-crashed".asInstanceOf[`gpu-process-crashed`]
   @scala.inline

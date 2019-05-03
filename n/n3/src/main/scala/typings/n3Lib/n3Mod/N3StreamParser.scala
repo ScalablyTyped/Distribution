@@ -48,8 +48,10 @@ trait N3StreamParser[Q /* <: BaseQuad */]
   /* InferMemberOverrides */
   override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def pause(): this.type = js.native
-  def pipe[T /* <: nodeLib.NodeJSNs.WritableStream | rdfDashJsLib.rdfDashJsMod.Stream[Q] */](destination: T): T = js.native
-  def pipe[T /* <: nodeLib.NodeJSNs.WritableStream | rdfDashJsLib.rdfDashJsMod.Stream[Q] */](destination: T, options: n3Lib.Anon_End): T = js.native
+  def pipe(destination: nodeLib.NodeJSNs.WritableStream): nodeLib.NodeJSNs.WritableStream = js.native
+  def pipe(destination: nodeLib.NodeJSNs.WritableStream, options: n3Lib.Anon_End): nodeLib.NodeJSNs.WritableStream = js.native
+  def pipe(destination: rdfDashJsLib.rdfDashJsMod.Stream[Q]): rdfDashJsLib.rdfDashJsMod.Stream[Q] = js.native
+  def pipe(destination: rdfDashJsLib.rdfDashJsMod.Stream[Q], options: n3Lib.Anon_End): rdfDashJsLib.rdfDashJsMod.Stream[Q] = js.native
   // Added in Node 6...
   /* InferMemberOverrides */
   override def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native

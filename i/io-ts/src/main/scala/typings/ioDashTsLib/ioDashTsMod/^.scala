@@ -46,8 +46,14 @@ object ^ extends js.Object {
     name: N
   ): BrandC[C, B] = js.native
   def clean[A, O, I](codec: Type[A, O, I]): Type[A, O, I] = js.native
-  def exact[C /* <: HasProps */](codec: C): ExactC[C] = js.native
-  def exact[C /* <: HasProps */](codec: C, name: java.lang.String): ExactC[C] = js.native
+  def exact(codec: HasPropsIntersection): ExactC[HasPropsIntersection] = js.native
+  def exact(codec: HasPropsIntersection, name: java.lang.String): ExactC[HasPropsIntersection] = js.native
+  def exact(codec: HasPropsReadonly): ExactC[HasPropsReadonly] = js.native
+  def exact(codec: HasPropsReadonly, name: java.lang.String): ExactC[HasPropsReadonly] = js.native
+  def exact(codec: HasPropsRefinement): ExactC[HasPropsRefinement] = js.native
+  def exact(codec: HasPropsRefinement, name: java.lang.String): ExactC[HasPropsRefinement] = js.native
+  def exact[C /* <: (InterfaceType[_, _, _, _]) | (StrictType[_, _, _, _]) | (PartialType[_, _, _, _]) */](codec: C): ExactC[C] = js.native
+  def exact[C /* <: (InterfaceType[_, _, _, _]) | (StrictType[_, _, _, _]) | (PartialType[_, _, _, _]) */](codec: C, name: java.lang.String): ExactC[C] = js.native
   def failure[T](value: js.Any, context: Context): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
   def failure[T](value: js.Any, context: Context, message: java.lang.String): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
   def failures[T](errors: Errors): fpDashTsLib.libEitherMod.Either[Errors, T] = js.native
@@ -68,8 +74,12 @@ object ^ extends js.Object {
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */, E /* <: Mixed */](codecs: js.Tuple5[A, B, C, D, E], name: java.lang.String): IntersectionC[js.Tuple5[A, B, C, D, E]] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): KeyofC[D] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): KeyofC[D] = js.native
-  def literal[V /* <: LiteralValue */](value: V): LiteralC[V] = js.native
-  def literal[V /* <: LiteralValue */](value: V, name: java.lang.String): LiteralC[V] = js.native
+  def literal(value: java.lang.String): LiteralC[java.lang.String] = js.native
+  def literal(value: java.lang.String, name: java.lang.String): LiteralC[java.lang.String] = js.native
+  def literal(value: scala.Boolean): LiteralC[scala.Boolean] = js.native
+  def literal(value: scala.Boolean, name: java.lang.String): LiteralC[scala.Boolean] = js.native
+  def literal(value: scala.Double): LiteralC[scala.Double] = js.native
+  def literal(value: scala.Double, name: java.lang.String): LiteralC[scala.Double] = js.native
   def partial[P /* <: Props */](props: P): PartialC[P] = js.native
   def partial[P /* <: Props */](props: P, name: java.lang.String): PartialC[P] = js.native
   def readonly[C /* <: Mixed */](codec: C): ReadonlyC[C] = js.native

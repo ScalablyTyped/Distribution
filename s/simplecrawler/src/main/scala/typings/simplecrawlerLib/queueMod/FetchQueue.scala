@@ -16,7 +16,7 @@ trait FetchQueue
     queueItem: QueueItem,
     force: scala.Boolean,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* queueItem */ js.UndefOr[QueueItem], 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ trait FetchQueue
   def avg(
     statisticName: java.lang.String,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* average */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -34,7 +34,7 @@ trait FetchQueue
   def countItems(
     comparator: js.Object,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* count */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -42,12 +42,12 @@ trait FetchQueue
   def defrost(filename: java.lang.String): scala.Unit = js.native
   def defrost(
     filename: java.lang.String,
-    callback: js.Function1[/* error */ js.UndefOr[simplecrawlerLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def exists(
     url: java.lang.String,
     callback: js.Function2[
-      /* error */ simplecrawlerLib.Error | scala.Null, 
+      /* error */ stdLib.Error | scala.Null, 
       /* exists */ simplecrawlerLib.simplecrawlerLibNumbers.`0` | simplecrawlerLib.simplecrawlerLibNumbers.`1`, 
       scala.Unit
     ]
@@ -56,7 +56,7 @@ trait FetchQueue
   def filterItems(
     comparator: js.Object,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* items */ js.UndefOr[js.Array[QueueItem]], 
       scala.Unit
     ]
@@ -64,13 +64,13 @@ trait FetchQueue
   def freeze(filename: java.lang.String): scala.Unit = js.native
   def freeze(
     filename: java.lang.String,
-    callback: js.Function1[/* error */ js.UndefOr[simplecrawlerLib.Error], scala.Unit]
+    callback: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def get(index: scala.Double): scala.Unit = js.native
   def get(
     index: scala.Double,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* queueItem */ js.UndefOr[QueueItem], 
       scala.Unit
     ]
@@ -78,7 +78,7 @@ trait FetchQueue
   def getLength(): scala.Unit = js.native
   def getLength(
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* length */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -87,7 +87,7 @@ trait FetchQueue
   def max(
     statisticName: java.lang.String,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* maximum */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -96,7 +96,7 @@ trait FetchQueue
   def min(
     statisticName: java.lang.String,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* minimum */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
@@ -104,7 +104,7 @@ trait FetchQueue
   def oldestUnfetchedItem(): scala.Unit = js.native
   def oldestUnfetchedItem(
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* queueItem */ js.UndefOr[QueueItem], 
       scala.Unit
     ]
@@ -114,7 +114,7 @@ trait FetchQueue
     id: scala.Double,
     updates: js.Object,
     callback: js.Function2[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* queueItem */ js.UndefOr[QueueItem], 
       scala.Unit
     ]

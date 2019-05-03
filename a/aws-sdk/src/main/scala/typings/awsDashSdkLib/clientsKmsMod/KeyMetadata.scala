@@ -47,7 +47,7 @@ trait KeyMetadata extends js.Object {
     */
   var KeyId: KeyIdType
   /**
-    * The CMK's manager. CMKs are either customer-managed or AWS-managed. For more information about the difference, see Customer Master Keys in the AWS Key Management Service Developer Guide.
+    * The manager of the CMK. CMKs in your AWS account are either customer managed or AWS managed. For more information about the difference, see Customer Master Keys in the AWS Key Management Service Developer Guide.
     */
   var KeyManager: js.UndefOr[KeyManagerType] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait KeyMetadata extends js.Object {
     */
   var KeyState: js.UndefOr[KeyState] = js.undefined
   /**
-    * The cryptographic operations for which you can use the CMK. Currently the only allowed value is ENCRYPT_DECRYPT, which means you can use the CMK for the Encrypt and Decrypt operations.
+    * The cryptographic operations for which you can use the CMK. The only valid value is ENCRYPT_DECRYPT, which means you can use the CMK to encrypt and decrypt data.
     */
   var KeyUsage: js.UndefOr[KeyUsageType] = js.undefined
   /**

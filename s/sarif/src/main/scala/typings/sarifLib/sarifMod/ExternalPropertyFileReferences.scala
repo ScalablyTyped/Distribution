@@ -67,6 +67,14 @@ trait ExternalPropertyFileReferences extends js.Object {
     * An array of external property files containing run.translations arrays to be merged with the root log file.
     */
   var translations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
+  /**
+    * An array of external property files containing run.requests arrays to be merged with the root log file.
+    */
+  var webRequests: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
+  /**
+    * An array of external property files containing run.responses arrays to be merged with the root log file.
+    */
+  var webResponses: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
 }
 
 object ExternalPropertyFileReferences {
@@ -86,7 +94,9 @@ object ExternalPropertyFileReferences {
     results: js.Array[ExternalPropertyFileReference] = null,
     taxonomies: js.Array[ExternalPropertyFileReference] = null,
     threadFlowLocations: js.Array[ExternalPropertyFileReference] = null,
-    translations: js.Array[ExternalPropertyFileReference] = null
+    translations: js.Array[ExternalPropertyFileReference] = null,
+    webRequests: js.Array[ExternalPropertyFileReference] = null,
+    webResponses: js.Array[ExternalPropertyFileReference] = null
   ): ExternalPropertyFileReferences = {
     val __obj = js.Dynamic.literal()
     if (addresses != null) __obj.updateDynamic("addresses")(addresses)
@@ -104,6 +114,8 @@ object ExternalPropertyFileReferences {
     if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
     if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
     if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (webRequests != null) __obj.updateDynamic("webRequests")(webRequests)
+    if (webResponses != null) __obj.updateDynamic("webResponses")(webResponses)
     __obj.asInstanceOf[ExternalPropertyFileReferences]
   }
 }

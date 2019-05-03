@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-native-dialogflow"
-version := "3.2-dt-20180806Z-d83a1b"
+version := "3.2-dt-20180806Z-1118e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

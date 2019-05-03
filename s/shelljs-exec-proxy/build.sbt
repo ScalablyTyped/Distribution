@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "shelljs-exec-proxy"
-version := "0.1-dt-20190124Z-826d1a"
+version := "0.1-dt-20190124Z-f7be66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-766ce7",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-307dea",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190412Z-9526a6",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-573195",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-f20c2f",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190412Z-5c5a75",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

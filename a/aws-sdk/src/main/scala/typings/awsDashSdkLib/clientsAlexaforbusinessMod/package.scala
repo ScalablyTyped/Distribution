@@ -15,10 +15,13 @@ package object clientsAlexaforbusinessMod {
   type ApplianceFriendlyName = java.lang.String
   type ApplianceManufacturerName = java.lang.String
   type Arn = java.lang.String
+  type AudioList = js.Array[Audio]
+  type AudioLocation = java.lang.String
   type AuthorizationResult = org.scalablytyped.runtime.StringDictionary[Value]
   type Boolean = scala.Boolean
   type BulletPoint = java.lang.String
   type BulletPoints = js.Array[BulletPoint]
+  type BusinessReportDeliveryTime = stdLib.Date
   type BusinessReportDownloadUrl = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACCESS_DENIED
@@ -91,6 +94,7 @@ package object clientsAlexaforbusinessMod {
   type DeveloperName = java.lang.String
   type DeviceDataList = js.Array[DeviceData]
   type DeviceEventList = js.Array[DeviceEvent]
+  type DeviceEventTime = stdLib.Date
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.CONNECTION_STATUS
     - awsDashSdkLib.awsDashSdkLibStrings.DEVICE_STATUS
@@ -176,6 +180,7 @@ package object clientsAlexaforbusinessMod {
   type IconUrl = java.lang.String
   type InvocationPhrase = java.lang.String
   type Key = java.lang.String
+  type Locale = awsDashSdkLib.awsDashSdkLibStrings.`en-US` | java.lang.String
   type MacAddress = java.lang.String
   type MaxResults = scala.Double
   type MaxVolumeLimit = scala.Double
@@ -245,6 +250,8 @@ package object clientsAlexaforbusinessMod {
     - java.lang.String
   */
   type SortValue = _SortValue | java.lang.String
+  type SsmlList = js.Array[Ssml]
+  type SsmlValue = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
@@ -255,7 +262,9 @@ package object clientsAlexaforbusinessMod {
     - java.lang.String
   */
   type TemperatureUnit = _TemperatureUnit | java.lang.String
-  type Timestamp = stdLib.Date
+  type TextList = js.Array[Text]
+  type TextValue = java.lang.String
+  type TimeToLiveInSeconds = scala.Double
   type Timezone = java.lang.String
   type TotalCount = scala.Double
   type Url = java.lang.String

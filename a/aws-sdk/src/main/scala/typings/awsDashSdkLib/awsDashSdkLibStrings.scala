@@ -10454,6 +10454,7 @@ object awsDashSdkLibStrings {
   sealed trait INTERNAL_ERROR
     extends awsDashSdkLib.clientsInspectorMod._AssessmentRunNotificationSnsStatusCode
        with awsDashSdkLib.clientsEmrMod._ClusterStateChangeReasonCode
+       with awsDashSdkLib.clientsKmsMod._ConnectionErrorCodeType
        with awsDashSdkLib.clientsCodedeployMod._ErrorCode
        with awsDashSdkLib.clientsInspectorMod._FailedItemErrorCode
        with awsDashSdkLib.clientsAppstreamMod._ImageBuilderStateChangeReasonCode

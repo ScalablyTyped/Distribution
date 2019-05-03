@@ -37,37 +37,37 @@ trait LowdbFpAsync[SchemaT] extends LowdbBase[SchemaT] {
   ): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */](path: js.Tuple2[TKey, TSubKey]): FpReturnAsync[
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */](path: js.Tuple2[TKey, TSubKey]): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */](
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */](
     path: js.Tuple2[TKey, TSubKey],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey] */ js.Any
   ): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */, TSubKey2 /* <: java.lang.String */](path: js.Tuple3[TKey, TSubKey, TSubKey2]): FpReturnAsync[
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */, TSubKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey] */ js.Any */](path: js.Tuple3[TKey, TSubKey, TSubKey2]): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */, TSubKey2 /* <: java.lang.String */](
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */, TSubKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey] */ js.Any */](
     path: js.Tuple3[TKey, TSubKey, TSubKey2],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2] */ js.Any
   ): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */, TSubKey2 /* <: java.lang.String */, TSubKey3 /* <: java.lang.String */](path: js.Tuple4[TKey, TSubKey, TSubKey2, TSubKey3]): FpReturnAsync[
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */, TSubKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey] */ js.Any */, TSubKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey][TSubKey2] */ js.Any */](path: js.Tuple4[TKey, TSubKey, TSubKey2, TSubKey3]): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2][TSubKey3] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */, TSubKey2 /* <: java.lang.String */, TSubKey3 /* <: java.lang.String */](
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */, TSubKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey] */ js.Any */, TSubKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey][TSubKey2] */ js.Any */](
     path: js.Tuple4[TKey, TSubKey, TSubKey2, TSubKey3],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2][TSubKey3] */ js.Any
   ): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2][TSubKey3] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */, TSubKey2 /* <: java.lang.String */, TSubKey3 /* <: java.lang.String */, TSubKey4 /* <: java.lang.String */](path: js.Tuple5[TKey, TSubKey, TSubKey2, TSubKey3, TSubKey4]): FpReturnAsync[
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */, TSubKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey] */ js.Any */, TSubKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey][TSubKey2] */ js.Any */, TSubKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey][TSubKey2][TSubKey3] */ js.Any */](path: js.Tuple5[TKey, TSubKey, TSubKey2, TSubKey3, TSubKey4]): FpReturnAsync[
     /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2][TSubKey3][TSubKey4] */ js.Any
   ] = js.native
-  def apply[TKey /* <: java.lang.String */, TSubKey /* <: java.lang.String */, TSubKey2 /* <: java.lang.String */, TSubKey3 /* <: java.lang.String */, TSubKey4 /* <: java.lang.String */](
+  def apply[TKey /* <: java.lang.String */, TSubKey /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey] */ js.Any */, TSubKey2 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey] */ js.Any */, TSubKey3 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey][TSubKey2] */ js.Any */, TSubKey4 /* <: /* import warning: ImportType.apply Failed type conversion: keyof SchemaT[TKey][TSubKey][TSubKey2][TSubKey3] */ js.Any */](
     path: js.Tuple5[TKey, TSubKey, TSubKey2, TSubKey3, TSubKey4],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: SchemaT[TKey][TSubKey][TSubKey2][TSubKey3][TSubKey4] */ js.Any
   ): FpReturnAsync[

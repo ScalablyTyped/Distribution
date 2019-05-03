@@ -76,37 +76,16 @@ trait Browser
     eventName: puppeteerLib.puppeteerLibStrings.disconnected,
     handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-    * Adds the listener function to the end of the listeners array for the event named `eventName`.
-    * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
-    * `eventName` and listener will result in the listener being added, and called, multiple times.
-    * @param event The name of the event.
-    * @param handler The callback function.
-    */
   @JSName("on")
   def on_targetchanged(
     eventName: puppeteerLib.puppeteerLibStrings.targetchanged,
     handler: js.Function2[/* e */ Target, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-    * Adds the listener function to the end of the listeners array for the event named `eventName`.
-    * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
-    * `eventName` and listener will result in the listener being added, and called, multiple times.
-    * @param event The name of the event.
-    * @param handler The callback function.
-    */
   @JSName("on")
   def on_targetcreated(
     eventName: puppeteerLib.puppeteerLibStrings.targetcreated,
     handler: js.Function2[/* e */ Target, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-    * Adds the listener function to the end of the listeners array for the event named `eventName`.
-    * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
-    * `eventName` and listener will result in the listener being added, and called, multiple times.
-    * @param event The name of the event.
-    * @param handler The callback function.
-    */
   @JSName("on")
   def on_targetdestroyed(
     eventName: puppeteerLib.puppeteerLibStrings.targetdestroyed,
@@ -127,34 +106,16 @@ trait Browser
     eventName: puppeteerLib.puppeteerLibStrings.disconnected,
     handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-    * Adds a one time listener function for the event named `eventName`.
-    * The next time `eventName` is triggered, this listener is removed and then invoked.
-    * @param event The name of the event.
-    * @param handler The callback function.
-    */
   @JSName("once")
   def once_targetchanged(
     eventName: puppeteerLib.puppeteerLibStrings.targetchanged,
     handler: js.Function2[/* e */ Target, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-    * Adds a one time listener function for the event named `eventName`.
-    * The next time `eventName` is triggered, this listener is removed and then invoked.
-    * @param event The name of the event.
-    * @param handler The callback function.
-    */
   @JSName("once")
   def once_targetcreated(
     eventName: puppeteerLib.puppeteerLibStrings.targetcreated,
     handler: js.Function2[/* e */ Target, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-    * Adds a one time listener function for the event named `eventName`.
-    * The next time `eventName` is triggered, this listener is removed and then invoked.
-    * @param event The name of the event.
-    * @param handler The callback function.
-    */
   @JSName("once")
   def once_targetdestroyed(
     eventName: puppeteerLib.puppeteerLibStrings.targetdestroyed,

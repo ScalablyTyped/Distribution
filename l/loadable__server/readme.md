@@ -1,7 +1,7 @@
 
 # Scala.js typings for loadable__server
 
-Typings are for version 5.8
+Typings are for version 5.9
 
 ## Library description:
 Server utilities for loadable.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for @loadable/server 5.8
+// Type definitions for @loadable/server 5.9
 // Project: https://github.com/smooth-code/loadable-components
 // Definitions by: Martynas Kadiša <https://github.com/martynaskadisa>
 //                 Luis Herranz <https://github.com/luisherranz>

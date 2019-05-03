@@ -36,12 +36,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_apply(
     action: sharedbLib.sharedbLibStrings.apply,
@@ -51,12 +45,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_commit(
     action: sharedbLib.sharedbLibStrings.commit,
@@ -66,12 +54,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_connect(
     action: sharedbLib.sharedbLibStrings.connect,
@@ -81,12 +63,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_doc(
     action: sharedbLib.sharedbLibStrings.doc,
@@ -96,12 +72,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_op(
     action: sharedbLib.sharedbLibStrings.op,
@@ -111,12 +81,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_query(
     action: sharedbLib.sharedbLibStrings.query,
@@ -126,12 +90,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_readSnapshots(
     action: sharedbLib.sharedbLibStrings.readSnapshots,
@@ -141,12 +99,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_receive(
     action: sharedbLib.sharedbLibStrings.receive,
@@ -156,12 +108,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_reply(
     action: sharedbLib.sharedbLibStrings.reply,
@@ -171,12 +117,6 @@ trait sharedb extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Registers a server middleware function.
-    *
-    * @param action name of an action from https://github.com/share/sharedb#middlewares
-    * @param fn listener invoked when the specified action occurs
-    */
   @JSName("use")
   def use_submit(
     action: sharedbLib.sharedbLibStrings.submit,

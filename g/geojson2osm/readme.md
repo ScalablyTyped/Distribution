@@ -3,6 +3,21 @@
 
 Typings are for version 0.0.5
 
+## Library description:
+Convert geojson to osm
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | geojson2osm |
+| Keywords           | osm, geojson |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 368 |
+| # stars            | 0 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/geojson2osm)
+    
 
 
 ## Note

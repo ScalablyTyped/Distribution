@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "shipit-utils"
-version := "1.4-dt-20190221Z-51a023"
+version := "1.4-dt-20190221Z-b3f6b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "shipit-cli" % "1.5-dt-20190214Z-a3c0b7",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "shipit-cli" % "1.5-dt-20190214Z-8b89b6",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

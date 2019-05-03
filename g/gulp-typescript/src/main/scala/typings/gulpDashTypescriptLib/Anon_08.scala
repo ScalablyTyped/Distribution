@@ -1898,7 +1898,8 @@ trait Anon_08 extends js.Object {
     name: typescriptLib.typescriptMod.PropertyName,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createModifier[T /* <: js.UndefOr[typescriptLib.typescriptMod.SyntaxKind] */](kind: T): typescriptLib.typescriptMod.Token[T] = js.native
+  def createModifier(): typescriptLib.typescriptMod.Token[js.UndefOr[scala.Nothing]] = js.native
+  def createModifier(kind: typescriptLib.typescriptMod.SyntaxKind): typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind] = js.native
   def createModifiersFromModifierFlags(flags: typescriptLib.typescriptMod.ModifierFlags): js.Array[typescriptLib.typescriptMod.Modifier] = js.native
   def createModuleBlock(statements: js.Array[typescriptLib.typescriptMod.Statement]): typescriptLib.typescriptMod.ModuleBlock = js.native
   def createModuleDeclaration(

@@ -3,6 +3,21 @@
 
 Typings are for version 1.3
 
+## Library description:
+jQuery grid plugin
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | jqgrid |
+| Keywords           | - |
+| # releases         | 1 |
+| # dependents       | 0 |
+| # downloads        | 6665 |
+| # stars            | 1 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/jqgrid)
+    
 
 
 ## Note

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "readable-stream"
-version := "2.3-dt-20190227Z-2c924f"
+version := "2.3-dt-20190227Z-ea6076"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-6ba87e",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-3f9294",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

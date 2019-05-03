@@ -25,6 +25,7 @@ package object clientsKmsMod {
     - awsDashSdkLib.awsDashSdkLibStrings.INVALID_CREDENTIALS
     - awsDashSdkLib.awsDashSdkLibStrings.CLUSTER_NOT_FOUND
     - awsDashSdkLib.awsDashSdkLibStrings.NETWORK_ERRORS
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_ERROR
     - awsDashSdkLib.awsDashSdkLibStrings.INSUFFICIENT_CLOUDHSM_HSMS
     - awsDashSdkLib.awsDashSdkLibStrings.USER_LOCKED_OUT
     - java.lang.String

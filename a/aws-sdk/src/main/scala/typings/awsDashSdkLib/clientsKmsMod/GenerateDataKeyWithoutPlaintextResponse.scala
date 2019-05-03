@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait GenerateDataKeyWithoutPlaintextResponse extends js.Object {
   /**
-    * The encrypted data encryption key. When you use the HTTP API or the AWS CLI, the value is Base64-encdoded. Otherwise, it is not encoded.
+    * The encrypted data key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.
     */
   var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   /**
-    * The identifier of the CMK under which the data encryption key was generated and encrypted.
+    * The identifier of the CMK that encrypted the data key.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }

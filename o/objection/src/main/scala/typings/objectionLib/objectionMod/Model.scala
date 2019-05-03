@@ -82,6 +82,30 @@ class Model () extends js.Object {
     QM, 
     /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
+  @JSName("$loadRelated")
+  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression): QueryBuilder[
+    QM, 
+    QM, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  @JSName("$loadRelated")
+  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilder[
+    QM, 
+    QM, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  @JSName("$loadRelated")
+  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
+    QM, 
+    QM, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  @JSName("$loadRelated")
+  def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
+    QM, 
+    QM, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
   @JSName("$omit")
   def $omit[T](`this`: T, keys: java.lang.String): T = js.native
   @JSName("$omit")

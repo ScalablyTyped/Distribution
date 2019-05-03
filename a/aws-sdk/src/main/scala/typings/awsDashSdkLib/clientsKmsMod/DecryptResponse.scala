@@ -11,7 +11,7 @@ trait DecryptResponse extends js.Object {
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   /**
-    * Decrypted plaintext data. When you use the HTTP API or the AWS CLI, the value is Base64-encdoded. Otherwise, it is not encoded.
+    * Decrypted plaintext data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.
     */
   var Plaintext: js.UndefOr[PlaintextType] = js.undefined
 }

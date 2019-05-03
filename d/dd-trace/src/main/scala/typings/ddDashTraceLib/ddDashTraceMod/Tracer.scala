@@ -92,11 +92,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_amqp10(plugin: ddDashTraceLib.ddDashTraceLibStrings.amqp10, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_amqplib(plugin: ddDashTraceLib.ddDashTraceLibStrings.amqplib): this.type = js.native
   @JSName("use")
@@ -106,11 +101,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_amqplib(plugin: ddDashTraceLib.ddDashTraceLibStrings.amqplib, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_bluebird(plugin: ddDashTraceLib.ddDashTraceLibStrings.bluebird): this.type = js.native
   @JSName("use")
@@ -120,11 +110,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_bluebird(plugin: ddDashTraceLib.ddDashTraceLibStrings.bluebird, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_bunyan(plugin: ddDashTraceLib.ddDashTraceLibStrings.bunyan): this.type = js.native
   @JSName("use")
@@ -134,11 +119,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_bunyan(plugin: ddDashTraceLib.ddDashTraceLibStrings.bunyan, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def `use_cassandra-driver`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`): this.type = js.native
   @JSName("use")
@@ -148,11 +128,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def `use_cassandra-driver`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_dns(plugin: ddDashTraceLib.ddDashTraceLibStrings.dns): this.type = js.native
   @JSName("use")
@@ -162,11 +137,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_dns(plugin: ddDashTraceLib.ddDashTraceLibStrings.dns, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_elasticsearch(plugin: ddDashTraceLib.ddDashTraceLibStrings.elasticsearch): this.type = js.native
   @JSName("use")
@@ -176,11 +146,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_elasticsearch(plugin: ddDashTraceLib.ddDashTraceLibStrings.elasticsearch, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_express(plugin: ddDashTraceLib.ddDashTraceLibStrings.express): this.type = js.native
   @JSName("use")
@@ -190,11 +155,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_express(plugin: ddDashTraceLib.ddDashTraceLibStrings.express, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def `use_generic-pool`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`): this.type = js.native
   @JSName("use")
@@ -204,11 +164,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def `use_generic-pool`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_graphql(plugin: ddDashTraceLib.ddDashTraceLibStrings.graphql): this.type = js.native
   @JSName("use")
@@ -218,11 +173,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_graphql(plugin: ddDashTraceLib.ddDashTraceLibStrings.graphql, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_hapi(plugin: ddDashTraceLib.ddDashTraceLibStrings.hapi): this.type = js.native
   @JSName("use")
@@ -232,11 +182,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_hapi(plugin: ddDashTraceLib.ddDashTraceLibStrings.hapi, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_http(plugin: ddDashTraceLib.ddDashTraceLibStrings.http): this.type = js.native
   @JSName("use")
@@ -246,11 +191,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_http(plugin: ddDashTraceLib.ddDashTraceLibStrings.http, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_ioredis(plugin: ddDashTraceLib.ddDashTraceLibStrings.ioredis): this.type = js.native
   @JSName("use")
@@ -260,11 +200,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_ioredis(plugin: ddDashTraceLib.ddDashTraceLibStrings.ioredis, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_koa(plugin: ddDashTraceLib.ddDashTraceLibStrings.koa): this.type = js.native
   @JSName("use")
@@ -274,11 +209,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_koa(plugin: ddDashTraceLib.ddDashTraceLibStrings.koa, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_memcached(plugin: ddDashTraceLib.ddDashTraceLibStrings.memcached): this.type = js.native
   @JSName("use")
@@ -288,11 +218,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_memcached(plugin: ddDashTraceLib.ddDashTraceLibStrings.memcached, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def `use_mongodb-core`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`): this.type = js.native
   @JSName("use")
@@ -302,11 +227,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def `use_mongodb-core`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_mysql(plugin: ddDashTraceLib.ddDashTraceLibStrings.mysql): this.type = js.native
   @JSName("use")
@@ -316,11 +236,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_mysql(plugin: ddDashTraceLib.ddDashTraceLibStrings.mysql, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_mysql2(plugin: ddDashTraceLib.ddDashTraceLibStrings.mysql2): this.type = js.native
   @JSName("use")
@@ -330,11 +245,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_mysql2(plugin: ddDashTraceLib.ddDashTraceLibStrings.mysql2, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_net(plugin: ddDashTraceLib.ddDashTraceLibStrings.net): this.type = js.native
   @JSName("use")
@@ -344,11 +254,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_net(plugin: ddDashTraceLib.ddDashTraceLibStrings.net, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_pg(plugin: ddDashTraceLib.ddDashTraceLibStrings.pg): this.type = js.native
   @JSName("use")
@@ -358,11 +263,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_pg(plugin: ddDashTraceLib.ddDashTraceLibStrings.pg, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_pino(plugin: ddDashTraceLib.ddDashTraceLibStrings.pino): this.type = js.native
   @JSName("use")
@@ -372,22 +272,12 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_pino(plugin: ddDashTraceLib.ddDashTraceLibStrings.pino, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_q(plugin: ddDashTraceLib.ddDashTraceLibStrings.q): this.type = js.native
   @JSName("use")
   def use_q(plugin: ddDashTraceLib.ddDashTraceLibStrings.q, config: ddDashTraceLib.ddDashTraceMod.pluginsNs.q): this.type = js.native
   @JSName("use")
   def use_q(plugin: ddDashTraceLib.ddDashTraceLibStrings.q, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_redis(plugin: ddDashTraceLib.ddDashTraceLibStrings.redis): this.type = js.native
   @JSName("use")
@@ -397,11 +287,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_redis(plugin: ddDashTraceLib.ddDashTraceLibStrings.redis, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_restify(plugin: ddDashTraceLib.ddDashTraceLibStrings.restify): this.type = js.native
   @JSName("use")
@@ -411,11 +296,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_restify(plugin: ddDashTraceLib.ddDashTraceLibStrings.restify, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_router(plugin: ddDashTraceLib.ddDashTraceLibStrings.router): this.type = js.native
   @JSName("use")
@@ -425,11 +305,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_router(plugin: ddDashTraceLib.ddDashTraceLibStrings.router, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_when(plugin: ddDashTraceLib.ddDashTraceLibStrings.when): this.type = js.native
   @JSName("use")
@@ -439,11 +314,6 @@ trait Tracer extends js.Object {
   ): this.type = js.native
   @JSName("use")
   def use_when(plugin: ddDashTraceLib.ddDashTraceLibStrings.when, config: scala.Boolean): this.type = js.native
-  /**
-    * Enable and optionally configure a plugin.
-    * @param plugin The name of a built-in plugin.
-    * @param config Configuration options. Can also be `false` to disable the plugin.
-    */
   @JSName("use")
   def use_winston(plugin: ddDashTraceLib.ddDashTraceLibStrings.winston): this.type = js.native
   @JSName("use")

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "expo"
-version := "32.0-dt-20190502Z-27e46a"
+version := "32.0-dt-20190502Z-f4a4d3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-908b0a",
-  "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20190322Z-70489a",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-e0e6aa",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-aae4f0",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190429Z-947d92",
-  "org.scalablytyped" %%% "react-native-svg" % "9.4.0-0757a8",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "fbemitter" % "2.0.0-dt-20190322Z-97d765",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-19278e",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190429Z-a0305f",
+  "org.scalablytyped" %%% "react-native-svg" % "9.4.0-2230c5",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-rte"
-version := "0.16-dt-20181209Z-d59ae8"
+version := "0.16-dt-20181209Z-b0e56e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-908b0a",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190329Z-9f1561",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-a6c927",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-e0e6aa",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-aae4f0",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190329Z-9d5574",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-18676c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-19278e",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

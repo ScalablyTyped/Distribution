@@ -14,12 +14,18 @@ package object EventTargetNs {
     - NonStandardEvent
     - (stdLib.Pick[
   / * import warning: ImportType.apply Failed type conversion: TEvents[TEventType] * / js.Any, 
-  stdLib.Exclude[java.lang.String, OmittableEventKeys]]) with (stdLib.Partial[
+  stdLib.Exclude[
+    / * import warning: ImportType.apply Failed type conversion: keyof TEvents[TEventType] * / js.Any, 
+    OmittableEventKeys
+  ]]) with (stdLib.Partial[
   stdLib.Pick[eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event, OmittableEventKeys]])
   */
   type EventData[TEvents /* <: EventDefinition */, TEventType /* <: java.lang.String */, TMode /* <: Mode */] = (_EventData[TEvents, TEventType, TMode]) | ((stdLib.Pick[
     /* import warning: ImportType.apply Failed type conversion: TEvents[TEventType] */ js.Any, 
-    stdLib.Exclude[java.lang.String, OmittableEventKeys]
+    stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: keyof TEvents[TEventType] */ js.Any, 
+      OmittableEventKeys
+    ]
   ]) with (stdLib.Partial[
     stdLib.Pick[eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event, OmittableEventKeys]
   ]))

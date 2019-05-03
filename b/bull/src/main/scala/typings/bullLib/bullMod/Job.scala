@@ -25,6 +25,10 @@ trait Job[T] extends js.Object {
     */
   var name: java.lang.String = js.native
   /**
+    * Options of the job
+    */
+  var opts: JobOptions = js.native
+  /**
     * When this job was started (unix milliseconds)
     */
   var processedOn: js.UndefOr[scala.Double] = js.native

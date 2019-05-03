@@ -17,18 +17,18 @@ trait PowerSourceInfo extends js.Object {
     * Type of power source
     * @see PowerSourceType
     */
-  var `type`: java.lang.String
+  var `type`: java.lang.String | PowerSourceType
 }
 
 object PowerSourceInfo {
   @scala.inline
   def apply(
     active: scala.Boolean,
-    `type`: java.lang.String,
+    `type`: java.lang.String | PowerSourceType,
     maxPower: js.UndefOr[chromeDashAppsLib.chromeNs.double] = js.undefined
   ): PowerSourceInfo = {
     val __obj = js.Dynamic.literal(active = active)
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(maxPower)) __obj.updateDynamic("maxPower")(maxPower)
     __obj.asInstanceOf[PowerSourceInfo]
   }

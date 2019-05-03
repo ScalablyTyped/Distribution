@@ -232,6 +232,8 @@ class KiiThing () extends KiiACLSubject {
     * @return true if the thing is online, false otherwise. The return value will be null initially until the thing is connected for the first time.
     */
   def isOnline(): scala.Boolean = js.native
+  def isOwner(owner: KiiGroup): js.Promise[js.Tuple3[KiiThing, KiiGroup, scala.Boolean]] = js.native
+  def isOwner(owner: KiiGroup, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureIsOwnerSuccess): js.Promise[js.Tuple3[KiiThing, KiiGroup, scala.Boolean]] = js.native
   /**
     * Check if user/ group is owner of the thing.
     * <br>This API is authorized by owner of thing.
@@ -296,8 +298,8 @@ class KiiThing () extends KiiACLSubject {
     *         }
     *     );
     */
-  def isOwner[T /* <: KiiUser | KiiGroup */](owner: T): js.Promise[js.Tuple3[KiiThing, T, scala.Boolean]] = js.native
-  def isOwner[T /* <: KiiUser | KiiGroup */](owner: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureIsOwner[T]): js.Promise[js.Tuple3[KiiThing, T, scala.Boolean]] = js.native
+  def isOwner(owner: KiiUser): js.Promise[js.Tuple3[KiiThing, KiiUser, scala.Boolean]] = js.native
+  def isOwner(owner: KiiUser, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureIsOwner): js.Promise[js.Tuple3[KiiThing, KiiUser, scala.Boolean]] = js.native
   /**
     * Gets a list of topics in this thing scope
     *
@@ -419,6 +421,8 @@ class KiiThing () extends KiiACLSubject {
     */
   def refresh(): js.Promise[KiiThing] = js.native
   def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccess): js.Promise[KiiThing] = js.native
+  def registerOwner(owner: KiiGroup): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
+  def registerOwner(owner: KiiGroup, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccessThingAny): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
   /**
     * Register user/group as owner of this thing.
     * <br>Need user login before execute this API.
@@ -471,8 +475,8 @@ class KiiThing () extends KiiACLSubject {
     *         }
     *     );
     */
-  def registerOwner[T /* <: KiiUser | KiiGroup */](owner: T): js.Promise[js.Tuple2[KiiThing, T]] = js.native
-  def registerOwner[T /* <: KiiUser | KiiGroup */](owner: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccess[T]): js.Promise[js.Tuple2[KiiThing, T]] = js.native
+  def registerOwner(owner: KiiUser): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
+  def registerOwner(owner: KiiUser, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccessThing): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
   /**
     * Instantiate topic belongs to this thing.
     *
@@ -481,6 +485,8 @@ class KiiThing () extends KiiACLSubject {
     * @return topic instance.
     */
   def topicWithName(topicName: java.lang.String): KiiTopic = js.native
+  def unregisterOwner(owner: KiiGroup): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
+  def unregisterOwner(owner: KiiGroup, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccessThingAny): js.Promise[js.Tuple2[KiiThing, KiiGroup]] = js.native
   /**
     * Remove ownership of thing from specified user/group.
     * <br>This API is authorized by owner of thing.
@@ -532,8 +538,8 @@ class KiiThing () extends KiiACLSubject {
     *         }
     *     );
     */
-  def unregisterOwner[T /* <: KiiUser | KiiGroup */](owner: T): js.Promise[js.Tuple2[KiiThing, T]] = js.native
-  def unregisterOwner[T /* <: KiiUser | KiiGroup */](owner: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccess[T]): js.Promise[js.Tuple2[KiiThing, T]] = js.native
+  def unregisterOwner(owner: KiiUser): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
+  def unregisterOwner(owner: KiiUser, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccessThing): js.Promise[js.Tuple2[KiiThing, KiiUser]] = js.native
   /**
     * Update registered thing information in Kii Cloud
     * <br>This API is authorized by owner of thing.
@@ -769,6 +775,12 @@ object KiiThing extends js.Object {
     fields: kiiDashCloudDashSdkLib.KiiCloudNs.KiiThingFields,
     callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccess
   ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing] = js.native
+  def registerOwnerWithThingID(thingID: java.lang.String, owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup] = js.native
+  def registerOwnerWithThingID(
+    thingID: java.lang.String,
+    owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccess
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup] = js.native
   /**
     * Register user/group as owner of specified thing.
     * <br>Need user login before execute this API.
@@ -819,8 +831,18 @@ object KiiThing extends js.Object {
     *         }
     *     );
     */
-  def registerOwnerWithThingID[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](thingID: java.lang.String, owner: T): js.Promise[T] = js.native
-  def registerOwnerWithThingID[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](thingID: java.lang.String, owner: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup[T]): js.Promise[T] = js.native
+  def registerOwnerWithThingID(thingID: java.lang.String, owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def registerOwnerWithThingID(
+    thingID: java.lang.String,
+    owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def registerOwnerWithVendorThingID(vendorThingID: java.lang.String, owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup] = js.native
+  def registerOwnerWithVendorThingID(
+    vendorThingID: java.lang.String,
+    owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccess
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup] = js.native
   /**
     * Register user/group as owner of specified thing.
     * <br>Need user login before execute this API.
@@ -870,11 +892,11 @@ object KiiThing extends js.Object {
     *         }
     *     );
     */
-  def registerOwnerWithVendorThingID[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](vendorThingID: java.lang.String, owner: T): js.Promise[T] = js.native
-  def registerOwnerWithVendorThingID[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](
+  def registerOwnerWithVendorThingID(vendorThingID: java.lang.String, owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def registerOwnerWithVendorThingID(
     vendorThingID: java.lang.String,
-    owner: T,
-    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup[T]
-  ): js.Promise[T] = js.native
+    owner: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
 }
 

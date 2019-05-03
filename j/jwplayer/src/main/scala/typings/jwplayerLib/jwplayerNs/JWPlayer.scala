@@ -40,7 +40,10 @@ trait JWPlayer extends js.Object {
   def getWidth(): scala.Double = js.native
   def load(playlist: java.lang.String): scala.Unit = js.native
   def load(playlist: js.Array[_]): scala.Unit = js.native
-  def off(event: java.lang.String): scala.Unit = js.native
+  def off(
+    event: jwplayerLib.jwplayerLibStrings.adClick | jwplayerLib.jwplayerLibStrings.adCompanions | jwplayerLib.jwplayerLibStrings.adComplete | jwplayerLib.jwplayerLibStrings.adSkipped | jwplayerLib.jwplayerLibStrings.adError | jwplayerLib.jwplayerLibStrings.adRequest | jwplayerLib.jwplayerLibStrings.adSchedule | jwplayerLib.jwplayerLibStrings.adStarted | jwplayerLib.jwplayerLibStrings.adImpression | jwplayerLib.jwplayerLibStrings.adPlay | jwplayerLib.jwplayerLibStrings.adPause | jwplayerLib.jwplayerLibStrings.adTime | jwplayerLib.jwplayerLibStrings.cast | jwplayerLib.jwplayerLibStrings.meta | jwplayerLib.jwplayerLibStrings.audioTracks | jwplayerLib.jwplayerLibStrings.audioTrackChanged | jwplayerLib.jwplayerLibStrings.firstFrame | jwplayerLib.jwplayerLibStrings.buffer | jwplayerLib.jwplayerLibStrings.bufferChange | jwplayerLib.jwplayerLibStrings.captionsChanged | jwplayerLib.jwplayerLibStrings.captionsList | jwplayerLib.jwplayerLibStrings.controls | jwplayerLib.jwplayerLibStrings.error | jwplayerLib.jwplayerLibStrings.fullscreen | jwplayerLib.jwplayerLibStrings.idle | jwplayerLib.jwplayerLibStrings.levelsChanged | jwplayerLib.jwplayerLibStrings.mute | jwplayerLib.jwplayerLibStrings.volume | jwplayerLib.jwplayerLibStrings.pause | jwplayerLib.jwplayerLibStrings.play | jwplayerLib.jwplayerLibStrings.playlist | jwplayerLib.jwplayerLibStrings.playlistItem | jwplayerLib.jwplayerLibStrings.ready | jwplayerLib.jwplayerLibStrings.resize | jwplayerLib.jwplayerLibStrings.visualQuality | jwplayerLib.jwplayerLibStrings.levels | jwplayerLib.jwplayerLibStrings.seek | jwplayerLib.jwplayerLibStrings.setupError | jwplayerLib.jwplayerLibStrings.time
+  ): scala.Unit = js.native
+  def off(event: NoParamEvent): scala.Unit = js.native
   def on(event: NoParamEvent, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
   def on_adClick(event: jwplayerLib.jwplayerLibStrings.adClick, callback: EventCallback[AdProgressParam]): scala.Unit = js.native

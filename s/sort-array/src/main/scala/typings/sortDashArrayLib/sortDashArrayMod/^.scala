@@ -14,7 +14,6 @@ object ^ extends js.Object {
     columnNames: java.lang.String | js.Array[java.lang.String],
     customOrder: stdLib.Record[java.lang.String, js.Array[_]]
   ): js.Array[js.Object] = js.native
-  def apply[T](recordset: js.Array[T], columnNames: ColumnNames[T]): js.Array[T] = js.native
   def apply[T](
     recordset: js.Array[T],
     columnNames: ColumnNames[T],

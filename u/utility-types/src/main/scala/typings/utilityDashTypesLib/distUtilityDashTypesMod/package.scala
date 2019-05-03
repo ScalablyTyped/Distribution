@@ -13,7 +13,7 @@ package object distUtilityDashTypesMod {
   ]
   type $ElementType[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in K & any ]: any}
-    */ utilityDashTypesLib.utilityDashTypesLibStrings.DOLLARElementType with js.Any */, K /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
+    */ utilityDashTypesLib.utilityDashTypesLibStrings.DOLLARElementType with js.Any */, K /* <: java.lang.String | scala.Double */] = /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
   type $Keys[T /* <: js.Object */] = java.lang.String
   type $PropertyType[T /* <: js.Object */, K /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
   type $ReadOnly[T /* <: js.Object */] = utilityDashTypesLib.distMappedDashTypesMod.DeepReadonly[T]

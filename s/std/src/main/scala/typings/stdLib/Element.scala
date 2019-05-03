@@ -106,189 +106,84 @@ trait Element
     */
   @JSName("closest")
   def closest_a(selector: stdLib.stdLibStrings.a): HTMLAnchorElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_abbr(selector: stdLib.stdLibStrings.abbr): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_address(selector: stdLib.stdLibStrings.address): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_applet(selector: stdLib.stdLibStrings.applet): HTMLAppletElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_area(selector: stdLib.stdLibStrings.area): HTMLAreaElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_article(selector: stdLib.stdLibStrings.article): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_aside(selector: stdLib.stdLibStrings.aside): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_audio(selector: stdLib.stdLibStrings.audio): HTMLAudioElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_b(selector: stdLib.stdLibStrings.b): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_base(selector: stdLib.stdLibStrings.base): HTMLBaseElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_basefont(selector: stdLib.stdLibStrings.basefont): HTMLBaseFontElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_bdi(selector: stdLib.stdLibStrings.bdi): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_bdo(selector: stdLib.stdLibStrings.bdo): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_blockquote(selector: stdLib.stdLibStrings.blockquote): HTMLQuoteElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_body(selector: stdLib.stdLibStrings.body): HTMLBodyElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_br(selector: stdLib.stdLibStrings.br): HTMLBRElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_button(selector: stdLib.stdLibStrings.button): HTMLButtonElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_canvas(selector: stdLib.stdLibStrings.canvas): HTMLCanvasElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_caption(selector: stdLib.stdLibStrings.caption): HTMLTableCaptionElement | scala.Null = js.native
   @JSName("closest")
   def closest_circle(selector: stdLib.stdLibStrings.circle): SVGCircleElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_cite(selector: stdLib.stdLibStrings.cite): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_clipPath(selector: stdLib.stdLibStrings.clipPath): SVGClipPathElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_code(selector: stdLib.stdLibStrings.code): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_col(selector: stdLib.stdLibStrings.col): HTMLTableColElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_colgroup(selector: stdLib.stdLibStrings.colgroup): HTMLTableColElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_data(selector: stdLib.stdLibStrings.data): HTMLDataElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_datalist(selector: stdLib.stdLibStrings.datalist): HTMLDataListElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_dd(selector: stdLib.stdLibStrings.dd): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_defs(selector: stdLib.stdLibStrings.defs): SVGDefsElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_del(selector: stdLib.stdLibStrings.del): HTMLModElement | scala.Null = js.native
   @JSName("closest")
   def closest_desc(selector: stdLib.stdLibStrings.desc): SVGDescElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_details(selector: stdLib.stdLibStrings.details): HTMLDetailsElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_dfn(selector: stdLib.stdLibStrings.dfn): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_dialog(selector: stdLib.stdLibStrings.dialog): HTMLDialogElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_dir(selector: stdLib.stdLibStrings.dir): HTMLDirectoryElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_div(selector: stdLib.stdLibStrings.div): HTMLDivElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_dl(selector: stdLib.stdLibStrings.dl): HTMLDListElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_dt(selector: stdLib.stdLibStrings.dt): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_ellipse(selector: stdLib.stdLibStrings.ellipse): SVGEllipseElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_em(selector: stdLib.stdLibStrings.em): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_embed(selector: stdLib.stdLibStrings.embed): HTMLEmbedElement | scala.Null = js.native
   @JSName("closest")
@@ -339,366 +234,168 @@ trait Element
   def closest_feTile(selector: stdLib.stdLibStrings.feTile): SVGFETileElement | scala.Null = js.native
   @JSName("closest")
   def closest_feTurbulence(selector: stdLib.stdLibStrings.feTurbulence): SVGFETurbulenceElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_fieldset(selector: stdLib.stdLibStrings.fieldset): HTMLFieldSetElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_figcaption(selector: stdLib.stdLibStrings.figcaption): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_figure(selector: stdLib.stdLibStrings.figure): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_filter(selector: stdLib.stdLibStrings.filter): SVGFilterElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_font(selector: stdLib.stdLibStrings.font): HTMLFontElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_footer(selector: stdLib.stdLibStrings.footer): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_foreignObject(selector: stdLib.stdLibStrings.foreignObject): SVGForeignObjectElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_form(selector: stdLib.stdLibStrings.form): HTMLFormElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_frame(selector: stdLib.stdLibStrings.frame): HTMLFrameElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_frameset(selector: stdLib.stdLibStrings.frameset): HTMLFrameSetElement | scala.Null = js.native
   @JSName("closest")
   def closest_g(selector: stdLib.stdLibStrings.g): SVGGElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_h1(selector: stdLib.stdLibStrings.h1): HTMLHeadingElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_h2(selector: stdLib.stdLibStrings.h2): HTMLHeadingElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_h3(selector: stdLib.stdLibStrings.h3): HTMLHeadingElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_h4(selector: stdLib.stdLibStrings.h4): HTMLHeadingElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_h5(selector: stdLib.stdLibStrings.h5): HTMLHeadingElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_h6(selector: stdLib.stdLibStrings.h6): HTMLHeadingElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_head(selector: stdLib.stdLibStrings.head): HTMLHeadElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_header(selector: stdLib.stdLibStrings.header): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_hgroup(selector: stdLib.stdLibStrings.hgroup): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_hr(selector: stdLib.stdLibStrings.hr): HTMLHRElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_html(selector: stdLib.stdLibStrings.html): HTMLHtmlElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_i(selector: stdLib.stdLibStrings.i): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_iframe(selector: stdLib.stdLibStrings.iframe): HTMLIFrameElement | scala.Null = js.native
   @JSName("closest")
   def closest_image(selector: stdLib.stdLibStrings.image): SVGImageElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_img(selector: stdLib.stdLibStrings.img): HTMLImageElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_input(selector: stdLib.stdLibStrings.input): HTMLInputElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_ins(selector: stdLib.stdLibStrings.ins): HTMLModElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_kbd(selector: stdLib.stdLibStrings.kbd): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_label(selector: stdLib.stdLibStrings.label): HTMLLabelElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_legend(selector: stdLib.stdLibStrings.legend): HTMLLegendElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_li(selector: stdLib.stdLibStrings.li): HTMLLIElement | scala.Null = js.native
   @JSName("closest")
   def closest_line(selector: stdLib.stdLibStrings.line): SVGLineElement | scala.Null = js.native
   @JSName("closest")
   def closest_linearGradient(selector: stdLib.stdLibStrings.linearGradient): SVGLinearGradientElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_link(selector: stdLib.stdLibStrings.link): HTMLLinkElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_main(selector: stdLib.stdLibStrings.main): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_map(selector: stdLib.stdLibStrings.map): HTMLMapElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_mark(selector: stdLib.stdLibStrings.mark): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_marker(selector: stdLib.stdLibStrings.marker): SVGMarkerElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_marquee(selector: stdLib.stdLibStrings.marquee): HTMLMarqueeElement | scala.Null = js.native
   @JSName("closest")
   def closest_mask(selector: stdLib.stdLibStrings.mask): SVGMaskElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_menu(selector: stdLib.stdLibStrings.menu): HTMLMenuElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_meta(selector: stdLib.stdLibStrings.meta): HTMLMetaElement | scala.Null = js.native
   @JSName("closest")
   def closest_metadata(selector: stdLib.stdLibStrings.metadata): SVGMetadataElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_meter(selector: stdLib.stdLibStrings.meter): HTMLMeterElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_nav(selector: stdLib.stdLibStrings.nav): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_noscript(selector: stdLib.stdLibStrings.noscript): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_object(selector: stdLib.stdLibStrings.`object`): HTMLObjectElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_ol(selector: stdLib.stdLibStrings.ol): HTMLOListElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_optgroup(selector: stdLib.stdLibStrings.optgroup): HTMLOptGroupElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_option(selector: stdLib.stdLibStrings.option): HTMLOptionElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_output(selector: stdLib.stdLibStrings.output): HTMLOutputElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_p(selector: stdLib.stdLibStrings.p): HTMLParagraphElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_param(selector: stdLib.stdLibStrings.param): HTMLParamElement | scala.Null = js.native
   @JSName("closest")
   def closest_path(selector: stdLib.stdLibStrings.path): SVGPathElement | scala.Null = js.native
   @JSName("closest")
   def closest_pattern(selector: stdLib.stdLibStrings.pattern): SVGPatternElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_picture(selector: stdLib.stdLibStrings.picture): HTMLPictureElement | scala.Null = js.native
   @JSName("closest")
   def closest_polygon(selector: stdLib.stdLibStrings.polygon): SVGPolygonElement | scala.Null = js.native
   @JSName("closest")
   def closest_polyline(selector: stdLib.stdLibStrings.polyline): SVGPolylineElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_pre(selector: stdLib.stdLibStrings.pre): HTMLPreElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_progress(selector: stdLib.stdLibStrings.progress): HTMLProgressElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_q(selector: stdLib.stdLibStrings.q): HTMLQuoteElement | scala.Null = js.native
   @JSName("closest")
   def closest_radialGradient(selector: stdLib.stdLibStrings.radialGradient): SVGRadialGradientElement | scala.Null = js.native
   @JSName("closest")
   def closest_rect(selector: stdLib.stdLibStrings.rect): SVGRectElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_rp(selector: stdLib.stdLibStrings.rp): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_rt(selector: stdLib.stdLibStrings.rt): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_ruby(selector: stdLib.stdLibStrings.ruby): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_s(selector: stdLib.stdLibStrings.s): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_samp(selector: stdLib.stdLibStrings.samp): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_script(selector: stdLib.stdLibStrings.script): HTMLScriptElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_section(selector: stdLib.stdLibStrings.section): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_select(selector: stdLib.stdLibStrings.select): HTMLSelectElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_slot(selector: stdLib.stdLibStrings.slot): HTMLSlotElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_small(selector: stdLib.stdLibStrings.small): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_source(selector: stdLib.stdLibStrings.source): HTMLSourceElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_span(selector: stdLib.stdLibStrings.span): HTMLSpanElement | scala.Null = js.native
   @JSName("closest")
   def closest_stop(selector: stdLib.stdLibStrings.stop): SVGStopElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_strong(selector: stdLib.stdLibStrings.strong): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_style(selector: stdLib.stdLibStrings.style): HTMLStyleElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_sub(selector: stdLib.stdLibStrings.sub): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_summary(selector: stdLib.stdLibStrings.summary): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_sup(selector: stdLib.stdLibStrings.sup): HTMLElement | scala.Null = js.native
   @JSName("closest")
@@ -707,99 +404,48 @@ trait Element
   def closest_switch(selector: stdLib.stdLibStrings.switch): SVGSwitchElement | scala.Null = js.native
   @JSName("closest")
   def closest_symbol(selector: stdLib.stdLibStrings.symbol): SVGSymbolElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_table(selector: stdLib.stdLibStrings.table): HTMLTableElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_tbody(selector: stdLib.stdLibStrings.tbody): HTMLTableSectionElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_td(selector: stdLib.stdLibStrings.td): HTMLTableDataCellElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_template(selector: stdLib.stdLibStrings.template): HTMLTemplateElement | scala.Null = js.native
   @JSName("closest")
   def closest_text(selector: stdLib.stdLibStrings.text): SVGTextElement | scala.Null = js.native
   @JSName("closest")
   def closest_textPath(selector: stdLib.stdLibStrings.textPath): SVGTextPathElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_textarea(selector: stdLib.stdLibStrings.textarea): HTMLTextAreaElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_tfoot(selector: stdLib.stdLibStrings.tfoot): HTMLTableSectionElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_th(selector: stdLib.stdLibStrings.th): HTMLTableHeaderCellElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_thead(selector: stdLib.stdLibStrings.thead): HTMLTableSectionElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_time(selector: stdLib.stdLibStrings.time): HTMLTimeElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_title(selector: stdLib.stdLibStrings.title): HTMLTitleElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_tr(selector: stdLib.stdLibStrings.tr): HTMLTableRowElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_track(selector: stdLib.stdLibStrings.track): HTMLTrackElement | scala.Null = js.native
   @JSName("closest")
   def closest_tspan(selector: stdLib.stdLibStrings.tspan): SVGTSpanElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_u(selector: stdLib.stdLibStrings.u): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_ul(selector: stdLib.stdLibStrings.ul): HTMLUListElement | scala.Null = js.native
   @JSName("closest")
   def closest_use(selector: stdLib.stdLibStrings.use): SVGUseElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_var(selector: stdLib.stdLibStrings.`var`): HTMLElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_video(selector: stdLib.stdLibStrings.video): HTMLVideoElement | scala.Null = js.native
   @JSName("closest")
   def closest_view(selector: stdLib.stdLibStrings.view): SVGViewElement | scala.Null = js.native
-  /**
-    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-    */
   @JSName("closest")
   def closest_wbr(selector: stdLib.stdLibStrings.wbr): HTMLElement | scala.Null = js.native
   /**

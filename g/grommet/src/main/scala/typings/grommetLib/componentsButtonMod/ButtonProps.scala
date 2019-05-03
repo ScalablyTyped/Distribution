@@ -62,7 +62,7 @@ object ButtonProps {
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)

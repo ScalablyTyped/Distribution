@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libApplyMod {
-  type EnforceNonEmptyRecord[R] = java.lang.String
+  type EnforceNonEmptyRecord[R] = R
   type SequenceT[F] = js.Function1[
     /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.HKT[F, _]]) with fpDashTsLib.Anon_0AnyFHKT[F], 
     fpDashTsLib.libHKTMod.HKT[

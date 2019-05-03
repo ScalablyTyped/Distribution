@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "w3c-image-capture"
-version := "1.0-dt-20190213Z-23391e"
+version := "1.0-dt-20190213Z-11ea22"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.4-495f93",
-  "org.scalablytyped" %%% "webrtc" % "2016-09-13-dt-20190415Z-03a967")
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2",
+  "org.scalablytyped" %%% "webrtc" % "2016-09-13-dt-20190415Z-382dad")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

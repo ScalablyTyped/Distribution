@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch-core"
-version := "5.2-dt-20190425Z-b62333"
+version := "5.2-dt-20190425Z-05d4b6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "algoliasearch" % "3.30.1-dt-20190404Z-5b5fb7",
-  "org.scalablytyped" %%% "algoliasearch-helper" % "2.26-dt-20190212Z-6abe88",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-908b0a",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-e0e6aa",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-aae4f0",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "algoliasearch" % "3.30.1-dt-20190404Z-85e835",
+  "org.scalablytyped" %%% "algoliasearch-helper" % "2.26-dt-20190212Z-bfec18",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-19278e",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

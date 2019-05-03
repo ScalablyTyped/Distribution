@@ -11,7 +11,6 @@ trait Result extends js.Object {
   var app: InitializedKoa = js.native
   /** Access to a frozen copy of the internal options object used by the module. */
   var options: InitializedOptions = js.native
-  /** A function which binds a serve event-name to a function */
   @JSName("on")
   def `on_build-finished`(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`build-finished`,
@@ -23,19 +22,16 @@ trait Result extends js.Object {
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`build-started`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_Compiler, scala.Unit]
   ): scala.Unit = js.native
-  /** A function which binds a serve event-name to a function */
   @JSName("on")
   def `on_compiler-error`(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`compiler-error`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStatsAny, scala.Unit]
   ): scala.Unit = js.native
-  /** A function which binds a serve event-name to a function */
   @JSName("on")
   def `on_compiler-warning`(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`compiler-warning`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStatsAny, scala.Unit]
   ): scala.Unit = js.native
-  /** A function which binds a serve event-name to a function */
   @JSName("on")
   def on_listening(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.listening,

@@ -23,13 +23,13 @@ trait Notification extends js.Object {
     */
   var level: js.UndefOr[sarifLib.sarifMod.NotificationNs.level] = js.undefined
   /**
+    * The locations relevant to this notification.
+    */
+  var locations: js.UndefOr[js.Array[Location]] = js.undefined
+  /**
     * A message that describes the condition that was encountered.
     */
   var message: Message
-  /**
-    * The artifact and region relevant to this notification.
-    */
-  var physicalLocation: js.UndefOr[PhysicalLocation] = js.undefined
   /**
     * Key/value pairs that provide additional information about the notification.
     */
@@ -52,7 +52,7 @@ object Notification {
     descriptor: ReportingDescriptorReference = null,
     exception: Exception = null,
     level: sarifLib.sarifMod.NotificationNs.level = null,
-    physicalLocation: PhysicalLocation = null,
+    locations: js.Array[Location] = null,
     properties: PropertyBag = null,
     threadId: scala.Int | scala.Double = null,
     timeUtc: java.lang.String = null
@@ -62,7 +62,7 @@ object Notification {
     if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor)
     if (exception != null) __obj.updateDynamic("exception")(exception)
     if (level != null) __obj.updateDynamic("level")(level)
-    if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     if (timeUtc != null) __obj.updateDynamic("timeUtc")(timeUtc)

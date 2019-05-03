@@ -21,8 +21,14 @@ object ^ extends js.Object {
   def goBack(): goBackAction = js.native
   def goForward(): goForwardAction = js.native
   def locationChange[P /* <: historyLib.historyMod.Pathname */, S /* <: historyLib.historyMod.Search */, H /* <: historyLib.historyMod.Hash */](`_`: reduxDashFirstDashRoutingLib.Anon_HashPathname[P, S, H]): locationChangeAction[P, S, H] = js.native
-  def push[T /* <: historyLib.historyMod.Path | historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] */](href: T): pushAction[T] = js.native
-  def replace[T /* <: historyLib.historyMod.Path | historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] */](href: T): replaceAction[T] = js.native
+  def push(href: historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState]): pushAction[
+    historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState]
+  ] = js.native
+  def push(href: java.lang.String): pushAction[java.lang.String] = js.native
+  def replace(href: historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState]): replaceAction[
+    historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState]
+  ] = js.native
+  def replace(href: java.lang.String): replaceAction[java.lang.String] = js.native
   def routerMiddleware(history: historyLib.historyMod.History[historyLib.historyMod.LocationState]): reduxLib.reduxMod.Middleware[_, State, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
   def startListener(
     history: historyLib.historyMod.History[historyLib.historyMod.LocationState],

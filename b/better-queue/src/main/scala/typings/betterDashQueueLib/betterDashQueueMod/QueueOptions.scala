@@ -23,7 +23,13 @@ trait QueueOptions[T, K] extends js.Object {
       scala.Unit
     ]
   ] = js.native
-  var id: js.UndefOr[java.lang.String] = js.native
+  var id: js.UndefOr[
+    java.lang.String | (js.Function2[
+      /* task */ T, 
+      /* cb */ js.Function2[/* error */ js.Any, /* id */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ])
+  ] = js.native
   var maxRetries: js.UndefOr[scala.Double] = js.native
   var maxTimeout: js.UndefOr[scala.Double] = js.native
   var merge: js.UndefOr[

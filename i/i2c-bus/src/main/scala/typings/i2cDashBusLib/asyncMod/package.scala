@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object asyncMod {
-  type AsyncAutoTask[R1, R /* <: Dictionary[_] */, E] = (AsyncAutoTaskFunctionWithoutDependencies[R1, E]) | js.Array[java.lang.String]
+  type AsyncAutoTask[R1, R /* <: Dictionary[_] */, E] = (AsyncAutoTaskFunctionWithoutDependencies[R1, E]) | (js.Array[java.lang.String | (AsyncAutoTaskFunction[R1, R, E])])
   type AsyncAutoTaskFunction[R1, R /* <: Dictionary[_] */, E] = js.Function2[
     /* results */ R, 
     /* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], 

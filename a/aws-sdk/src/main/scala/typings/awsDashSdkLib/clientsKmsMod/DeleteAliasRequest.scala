@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteAliasRequest extends js.Object {
   /**
-    * The alias to be deleted. The name must start with the word "alias" followed by a forward slash (alias/). Aliases that begin with "alias/aws" are reserved.
+    * The alias to be deleted. The alias name must begin with alias/ followed by the alias name, such as alias/ExampleAlias.
     */
   var AliasName: AliasNameType
 }

@@ -301,14 +301,22 @@ object ^ extends js.Object {
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
-  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_Buffer[TBuffer]] = js.native
-  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+  def read(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_Buffer] = js.native
+  def read(
     fd: scala.Double,
-    buffer: TBuffer,
+    buffer: nodeLib.Buffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_Buffer[TBuffer]] = js.native
+  ): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_Buffer] = js.native
+  def read(fd: scala.Double, buffer: stdLib.Uint8Array, offset: scala.Double, length: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesRead] = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double
+  ): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesRead] = js.native
   def readFile(path: nodeLib.fsMod.PathLike): bluebirdLib.bluebirdMod.^[java.lang.String] = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
@@ -578,21 +586,31 @@ object ^ extends js.Object {
     options: nodeLib.Anon_Interval,
     listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
   ): scala.Unit = js.native
-  def write(fd: scala.Double, string: js.Any): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(fd: scala.Double, string: js.Any, position: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double, buffer: TBuffer): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+  def write(fd: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten] = js.native
+  def write(fd: scala.Double, buffer: nodeLib.Buffer): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten] = js.native
+  def write(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten] = js.native
+  def write(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten] = js.native
+  def write(
     fd: scala.Double,
-    buffer: TBuffer,
+    buffer: nodeLib.Buffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  ): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWritten] = js.native
+  def write(fd: scala.Double, buffer: stdLib.Uint8Array): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(fd: scala.Double, buffer: stdLib.Uint8Array, offset: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(fd: scala.Double, buffer: stdLib.Uint8Array, offset: scala.Double, length: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double
+  ): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(fd: scala.Double, string: js.Any): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumberString] = js.native
+  def write(fd: scala.Double, string: js.Any, position: scala.Double): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumberString] = js.native
+  def write(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumberString] = js.native
+  def write(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): bluebirdLib.bluebirdMod.^[hexoDashFsLib.Anon_BufferBytesWrittenNumberString] = js.native
   def writeFile(path: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def writeFile(path: java.lang.String, data: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def writeFile(path: java.lang.String, data: js.Any, options: hexoDashFsLib.Anon_EncodingFlag): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native

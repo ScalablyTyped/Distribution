@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object flatpickrLibStrings {
   @js.native
+  sealed trait Anon_A extends js.Object
+  
+  @js.native
   sealed trait D
     extends flatpickrLib.distUtilsFormattingMod.token
   
@@ -737,6 +740,8 @@ object flatpickrLibStrings {
   sealed trait zh_tw
     extends flatpickrLib.distTypesLocaleMod.key
   
+  @scala.inline
+  def Anon_A: Anon_A = "Anon_A".asInstanceOf[Anon_A]
   @scala.inline
   def D: D = "D".asInstanceOf[D]
   @scala.inline

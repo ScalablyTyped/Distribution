@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jsreport-html-embedded-in-docx"
-version := "1.0-dt-20180926Z-481a16"
+version := "1.0-dt-20180926Z-f1246a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-a799cc",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-56176b",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

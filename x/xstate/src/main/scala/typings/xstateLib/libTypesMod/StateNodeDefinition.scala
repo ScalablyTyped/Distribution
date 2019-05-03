@@ -53,7 +53,7 @@ object StateNodeDefinition {
     entry: SingleOrArray[Action[TContext, TEvent]] = null,
     exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: scala.Boolean | xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep = null,
-    initial: java.lang.String = null,
+    initial: /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any = null,
     invoke: InvokesConfig[TContext, TEvent] = null,
     onDone: java.lang.String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]]) = null,
     parallel: js.UndefOr[scala.Boolean] = js.undefined,

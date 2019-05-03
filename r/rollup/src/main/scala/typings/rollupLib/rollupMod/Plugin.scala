@@ -5,95 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Plugin extends js.Object {
+trait Plugin extends PluginHooks {
   var banner: js.UndefOr[AddonHook] = js.undefined
-  var buildEnd: js.UndefOr[
-    js.ThisFunction1[
-      /* this */ PluginContext, 
-      /* err */ js.UndefOr[stdLib.Error], 
-      js.Promise[scala.Unit] | scala.Unit
-    ]
-  ] = js.undefined
-  var buildStart: js.UndefOr[
-    js.ThisFunction1[
-      /* this */ PluginContext, 
-      /* options */ InputOptions, 
-      js.Promise[scala.Unit] | scala.Unit
-    ]
-  ] = js.undefined
   var cacheKey: js.UndefOr[java.lang.String] = js.undefined
   var footer: js.UndefOr[AddonHook] = js.undefined
-  var generateBundle: js.UndefOr[
-    js.ThisFunction3[
-      /* this */ PluginContext, 
-      /* options */ OutputOptions, 
-      /* bundle */ OutputBundle, 
-      /* isWrite */ scala.Boolean, 
-      scala.Unit | js.Promise[scala.Unit]
-    ]
-  ] = js.undefined
   var intro: js.UndefOr[AddonHook] = js.undefined
-  var load: js.UndefOr[LoadHook] = js.undefined
   var name: java.lang.String
-  /** @deprecated */
-  var ongenerate: js.UndefOr[
-    js.ThisFunction2[
-      /* this */ PluginContext, 
-      /* options */ OutputOptions, 
-      /* chunk */ OutputChunk, 
-      scala.Unit | js.Promise[scala.Unit]
-    ]
-  ] = js.undefined
-  /** @deprecated */
-  var onwrite: js.UndefOr[
-    js.ThisFunction2[
-      /* this */ PluginContext, 
-      /* options */ OutputOptions, 
-      /* chunk */ OutputChunk, 
-      scala.Unit | js.Promise[scala.Unit]
-    ]
-  ] = js.undefined
-  var options: js.UndefOr[
-    js.ThisFunction1[
-      /* this */ MinimalPluginContext, 
-      /* options */ InputOptions, 
-      InputOptions | scala.Unit | scala.Null
-    ]
-  ] = js.undefined
-  var outputOptions: js.UndefOr[
-    js.ThisFunction1[
-      /* this */ PluginContext, 
-      /* options */ OutputOptions, 
-      OutputOptions | scala.Unit | scala.Null
-    ]
-  ] = js.undefined
   var outro: js.UndefOr[AddonHook] = js.undefined
-  var renderChunk: js.UndefOr[RenderChunkHook] = js.undefined
-  var renderError: js.UndefOr[
-    js.ThisFunction1[
-      /* this */ PluginContext, 
-      /* err */ js.UndefOr[stdLib.Error], 
-      js.Promise[scala.Unit] | scala.Unit
-    ]
-  ] = js.undefined
-  var renderStart: js.UndefOr[js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit]] = js.undefined
-  var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.undefined
-  var resolveDynamicImport: js.UndefOr[ResolveDynamicImportHook] = js.undefined
-  var resolveId: js.UndefOr[ResolveIdHook] = js.undefined
-  var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.undefined
-  var transform: js.UndefOr[TransformHook] = js.undefined
-  /** @deprecated */
-  var transformBundle: js.UndefOr[TransformChunkHook] = js.undefined
-  /** @deprecated */
-  var transformChunk: js.UndefOr[TransformChunkHook] = js.undefined
-  var watchChange: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
-  var writeBundle: js.UndefOr[
-    js.ThisFunction1[
-      /* this */ PluginContext, 
-      /* bundle */ OutputBundle, 
-      scala.Unit | js.Promise[scala.Unit]
-    ]
-  ] = js.undefined
 }
 
 object Plugin {
@@ -124,13 +42,13 @@ object Plugin {
     load: LoadHook = null,
     ongenerate: js.ThisFunction2[
       /* this */ PluginContext, 
-      /* options */ OutputOptions, 
+      /* options */ OnGenerateOptions, 
       /* chunk */ OutputChunk, 
       scala.Unit | js.Promise[scala.Unit]
     ] = null,
     onwrite: js.ThisFunction2[
       /* this */ PluginContext, 
-      /* options */ OutputOptions, 
+      /* options */ OnWriteOptions, 
       /* chunk */ OutputChunk, 
       scala.Unit | js.Promise[scala.Unit]
     ] = null,
@@ -154,6 +72,7 @@ object Plugin {
     renderStart: js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit] = null,
     resolveAssetUrl: ResolveAssetUrlHook = null,
     resolveDynamicImport: ResolveDynamicImportHook = null,
+    resolveFileUrl: ResolveFileUrlHook = null,
     resolveId: ResolveIdHook = null,
     resolveImportMeta: ResolveImportMetaHook = null,
     transform: TransformHook = null,
@@ -185,6 +104,7 @@ object Plugin {
     if (renderStart != null) __obj.updateDynamic("renderStart")(renderStart)
     if (resolveAssetUrl != null) __obj.updateDynamic("resolveAssetUrl")(resolveAssetUrl)
     if (resolveDynamicImport != null) __obj.updateDynamic("resolveDynamicImport")(resolveDynamicImport)
+    if (resolveFileUrl != null) __obj.updateDynamic("resolveFileUrl")(resolveFileUrl)
     if (resolveId != null) __obj.updateDynamic("resolveId")(resolveId)
     if (resolveImportMeta != null) __obj.updateDynamic("resolveImportMeta")(resolveImportMeta)
     if (transform != null) __obj.updateDynamic("transform")(transform)

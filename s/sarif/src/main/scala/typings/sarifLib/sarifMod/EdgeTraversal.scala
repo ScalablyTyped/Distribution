@@ -13,7 +13,7 @@ trait EdgeTraversal extends js.Object {
   /**
     * The values of relevant expressions after the edge has been traversed.
     */
-  var finalState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var finalState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[MultiformatMessageString]] = js.undefined
   /**
     * A message to display to the user as the edge is traversed.
     */
@@ -32,7 +32,7 @@ object EdgeTraversal {
   @scala.inline
   def apply(
     edgeId: java.lang.String,
-    finalState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    finalState: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     message: Message = null,
     properties: PropertyBag = null,
     stepOverEdgeCount: scala.Int | scala.Double = null

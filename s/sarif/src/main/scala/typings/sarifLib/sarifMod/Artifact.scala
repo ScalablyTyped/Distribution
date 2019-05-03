@@ -11,6 +11,10 @@ trait Artifact extends js.Object {
     */
   var contents: js.UndefOr[ArtifactContent] = js.undefined
   /**
+    * A short description of the artifact.
+    */
+  var description: js.UndefOr[Message] = js.undefined
+  /**
     * Specifies the encoding for an artifact object that refers to a text file.
     */
   var encoding: js.UndefOr[java.lang.String] = js.undefined
@@ -62,6 +66,7 @@ object Artifact {
   @scala.inline
   def apply(
     contents: ArtifactContent = null,
+    description: Message = null,
     encoding: java.lang.String = null,
     hashes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     lastModifiedTimeUtc: java.lang.String = null,
@@ -76,6 +81,7 @@ object Artifact {
   ): Artifact = {
     val __obj = js.Dynamic.literal()
     if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (description != null) __obj.updateDynamic("description")(description)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (hashes != null) __obj.updateDynamic("hashes")(hashes)
     if (lastModifiedTimeUtc != null) __obj.updateDynamic("lastModifiedTimeUtc")(lastModifiedTimeUtc)

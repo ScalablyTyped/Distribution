@@ -37,6 +37,12 @@ object styledDashSystemLibStrings {
   sealed trait mt extends js.Object
   
   @js.native
+  sealed trait mx extends js.Object
+  
+  @js.native
+  sealed trait my extends js.Object
+  
+  @js.native
   sealed trait p extends js.Object
   
   @js.native
@@ -66,6 +72,12 @@ object styledDashSystemLibStrings {
   @js.native
   sealed trait pt extends js.Object
   
+  @js.native
+  sealed trait px extends js.Object
+  
+  @js.native
+  sealed trait py extends js.Object
+  
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   @scala.inline
@@ -87,6 +99,10 @@ object styledDashSystemLibStrings {
   @scala.inline
   def mt: mt = "mt".asInstanceOf[mt]
   @scala.inline
+  def mx: mx = "mx".asInstanceOf[mx]
+  @scala.inline
+  def my: my = "my".asInstanceOf[my]
+  @scala.inline
   def p: p = "p".asInstanceOf[p]
   @scala.inline
   def padding: padding = "padding".asInstanceOf[padding]
@@ -106,5 +122,9 @@ object styledDashSystemLibStrings {
   def pr: pr = "pr".asInstanceOf[pr]
   @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
+  @scala.inline
+  def px: px = "px".asInstanceOf[px]
+  @scala.inline
+  def py: py = "py".asInstanceOf[py]
 }
 

@@ -88,6 +88,17 @@ trait Anon_A extends js.Object {
   def parseDate(date: stdLib.Date, givenFormat: java.lang.String): js.UndefOr[stdLib.Date] = js.native
   def parseDate(date: stdLib.Date, givenFormat: java.lang.String, timeless: scala.Boolean): js.UndefOr[stdLib.Date] = js.native
   def redraw(): scala.Unit = js.native
+  def set(
+    option: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}
+    */ flatpickrLib.flatpickrLibStrings.Anon_A with flatpickrLib.distTypesOptionsMod.Options
+  ): scala.Unit = js.native
+  def set(
+    option: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]}
+    */ flatpickrLib.flatpickrLibStrings.Anon_A with flatpickrLib.distTypesOptionsMod.Options,
+    value: js.Any
+  ): scala.Unit = js.native
   def set(option: java.lang.String): scala.Unit = js.native
   def set(option: java.lang.String, value: js.Any): scala.Unit = js.native
   def setDate(date: flatpickrLib.distTypesOptionsMod.DateOption): scala.Unit = js.native

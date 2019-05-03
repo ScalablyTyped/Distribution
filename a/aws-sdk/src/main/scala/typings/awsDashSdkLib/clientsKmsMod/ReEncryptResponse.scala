@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ReEncryptResponse extends js.Object {
   /**
-    * The reencrypted data. When you use the HTTP API or the AWS CLI, the value is Base64-encdoded. Otherwise, it is not encoded.
+    * The reencrypted data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.
     */
   var CiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   /**

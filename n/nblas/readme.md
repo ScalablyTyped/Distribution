@@ -3,6 +3,21 @@
 
 Typings are for version 1.2
 
+## Library description:
+C++ bindings for all single- and double-precision CBLAS (Basic Linear Algebra Subprograms) routines.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | nblas |
+| Keywords           | - |
+| # releases         | 6 |
+| # dependents       | 2 |
+| # downloads        | 27029 |
+| # stars            | 1 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/nblas)
+    
 
 
 ## Note

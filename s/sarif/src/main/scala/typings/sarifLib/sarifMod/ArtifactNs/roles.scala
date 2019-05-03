@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
   - sarifLib.sarifLibStrings.responseFile
   - sarifLib.sarifLibStrings.resultFile
   - sarifLib.sarifLibStrings.standardStream
-  - sarifLib.sarifLibStrings.traceFile
-  - sarifLib.sarifLibStrings.unmodifiedFile
-  - sarifLib.sarifLibStrings.modifiedFile
-  - sarifLib.sarifLibStrings.addedFile
-  - sarifLib.sarifLibStrings.deletedFile
-  - sarifLib.sarifLibStrings.renamedFile
-  - sarifLib.sarifLibStrings.uncontrolledFile
+  - sarifLib.sarifLibStrings.tracedFile
+  - sarifLib.sarifLibStrings.unmodified
+  - sarifLib.sarifLibStrings.modified
+  - sarifLib.sarifLibStrings.added
+  - sarifLib.sarifLibStrings.deleted
+  - sarifLib.sarifLibStrings.renamed
+  - sarifLib.sarifLibStrings.uncontrolled
   - sarifLib.sarifLibStrings.driver
   - sarifLib.sarifLibStrings.extension
   - sarifLib.sarifLibStrings.translation
@@ -25,6 +25,10 @@ import scala.scalajs.js.annotation._
   - sarifLib.sarifLibStrings.policy
   - sarifLib.sarifLibStrings.referencedOnCommandLine
   - sarifLib.sarifLibStrings.memoryContents
+  - sarifLib.sarifLibStrings.directory
+  - sarifLib.sarifLibStrings.userSpecifiedConfiguration
+  - sarifLib.sarifLibStrings.toolSpecifiedConfiguration
+  - sarifLib.sarifLibStrings.debugOutputFile
 */
 trait roles extends js.Object
 

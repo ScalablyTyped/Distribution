@@ -595,6 +595,12 @@ class KiiAppAdminContext () extends js.Object {
     members: js.Array[KiiUser],
     callbacks: kiiDashCloudDashSdkLib.Anon_AddMembersArray
   ): js.Promise[KiiAppAdminContext] = js.native
+  def registerOwnerWithThingID(thingID: java.lang.String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
+  def registerOwnerWithThingID(
+    thingID: java.lang.String,
+    owner: KiiGroup,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccess
+  ): js.Promise[KiiGroup] = js.native
   /**
     * Register user/group as owner of specified thing by app admin.
     *
@@ -646,8 +652,18 @@ class KiiAppAdminContext () extends js.Object {
     *         }
     *     );
     */
-  def registerOwnerWithThingID[T /* <: KiiUser | KiiGroup */](thingID: java.lang.String, owner: T): js.Promise[T] = js.native
-  def registerOwnerWithThingID[T /* <: KiiUser | KiiGroup */](thingID: java.lang.String, owner: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup[T]): js.Promise[T] = js.native
+  def registerOwnerWithThingID(thingID: java.lang.String, owner: KiiUser): js.Promise[KiiUser] = js.native
+  def registerOwnerWithThingID(
+    thingID: java.lang.String,
+    owner: KiiUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup
+  ): js.Promise[KiiUser] = js.native
+  def registerOwnerWithVendorThingID(vendorThingID: java.lang.String, owner: KiiGroup): js.Promise[KiiGroup] = js.native
+  def registerOwnerWithVendorThingID(
+    vendorThingID: java.lang.String,
+    owner: KiiGroup,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroupSuccess
+  ): js.Promise[KiiGroup] = js.native
   /**
     * Register user/group as owner of specified thing by app admin.
     *
@@ -698,12 +714,12 @@ class KiiAppAdminContext () extends js.Object {
     *         }
     *     );
     */
-  def registerOwnerWithVendorThingID[T /* <: KiiUser | KiiGroup */](vendorThingID: java.lang.String, owner: T): js.Promise[T] = js.native
-  def registerOwnerWithVendorThingID[T /* <: KiiUser | KiiGroup */](
+  def registerOwnerWithVendorThingID(vendorThingID: java.lang.String, owner: KiiUser): js.Promise[KiiUser] = js.native
+  def registerOwnerWithVendorThingID(
     vendorThingID: java.lang.String,
-    owner: T,
-    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup[T]
-  ): js.Promise[T] = js.native
+    owner: KiiUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup
+  ): js.Promise[KiiUser] = js.native
   /**
     * Register thing by app admin.
     * Method interface is same as {@link KiiThing#register()}.

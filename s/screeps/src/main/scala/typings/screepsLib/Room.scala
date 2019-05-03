@@ -307,16 +307,6 @@ trait Room extends js.Object {
     ConstructionSite[BuildableStructureConstant], 
     screepsLib.screepsLibStrings.constructionSite
   ] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_creep(
     `type`: screepsLib.screepsLibStrings.creep,
@@ -334,16 +324,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Creep, screepsLib.screepsLibStrings.creep] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_creep(
     `type`: screepsLib.screepsLibStrings.creep,
@@ -353,16 +333,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Creep, screepsLib.screepsLibStrings.creep] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_energy(
     `type`: screepsLib.screepsLibStrings.energy,
@@ -380,16 +350,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_energy(
     `type`: screepsLib.screepsLibStrings.energy,
@@ -399,16 +359,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_exit(
     `type`: screepsLib.screepsLibStrings.exit,
@@ -426,16 +376,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[_, screepsLib.screepsLibStrings.exit] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_exit(
     `type`: screepsLib.screepsLibStrings.exit,
@@ -445,16 +385,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[_, screepsLib.screepsLibStrings.exit] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_flag(
     `type`: screepsLib.screepsLibStrings.flag,
@@ -472,16 +402,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Flag, screepsLib.screepsLibStrings.flag] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_flag(
     `type`: screepsLib.screepsLibStrings.flag,
@@ -491,16 +411,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Flag, screepsLib.screepsLibStrings.flag] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_mineral(
     `type`: screepsLib.screepsLibStrings.mineral,
@@ -518,16 +428,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_mineral(
     `type`: screepsLib.screepsLibStrings.mineral,
@@ -537,16 +437,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_nuke(
     `type`: screepsLib.screepsLibStrings.nuke,
@@ -564,16 +454,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_nuke(
     `type`: screepsLib.screepsLibStrings.nuke,
@@ -583,16 +463,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_resource(
     `type`: screepsLib.screepsLibStrings.resource,
@@ -610,16 +480,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_resource(
     `type`: screepsLib.screepsLibStrings.resource,
@@ -629,16 +489,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_source(
     `type`: screepsLib.screepsLibStrings.source,
@@ -656,16 +506,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Source, screepsLib.screepsLibStrings.source] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_source(
     `type`: screepsLib.screepsLibStrings.source,
@@ -675,16 +515,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Source, screepsLib.screepsLibStrings.source] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_structure(
     `type`: screepsLib.screepsLibStrings.structure,
@@ -702,16 +532,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_structure(
     `type`: screepsLib.screepsLibStrings.structure,
@@ -721,16 +541,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_terrain(
     `type`: screepsLib.screepsLibStrings.terrain,
@@ -748,16 +558,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_terrain(
     `type`: screepsLib.screepsLibStrings.terrain,
@@ -767,16 +567,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An object with the sstructure object[X coord][y coord] as an array of found objects.
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_tombstone(
     `type`: screepsLib.screepsLibStrings.tombstone,
@@ -794,16 +584,6 @@ trait Room extends js.Object {
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`false`
   ): LookForAtAreaResultMatrix[Tombstone, screepsLib.screepsLibStrings.tombstone] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
   @JSName("lookForAtArea")
   def lookForAtArea_tombstone(
     `type`: screepsLib.screepsLibStrings.tombstone,
@@ -832,213 +612,70 @@ trait Room extends js.Object {
     */
   @JSName("lookForAt")
   def lookForAt_constructionSite(`type`: screepsLib.screepsLibStrings.constructionSite, x: scala.Double, y: scala.Double): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_creep(`type`: screepsLib.screepsLibStrings.creep, target: RoomPosition): js.Array[Creep] = js.native
   @JSName("lookForAt")
   def lookForAt_creep(`type`: screepsLib.screepsLibStrings.creep, target: _HasRoomPosition): js.Array[Creep] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_creep(`type`: screepsLib.screepsLibStrings.creep, x: scala.Double, y: scala.Double): js.Array[Creep] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_energy(`type`: screepsLib.screepsLibStrings.energy, target: RoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
   def lookForAt_energy(`type`: screepsLib.screepsLibStrings.energy, target: _HasRoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_energy(`type`: screepsLib.screepsLibStrings.energy, x: scala.Double, y: scala.Double): js.Array[Resource[RESOURCE_ENERGY]] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_exit(`type`: screepsLib.screepsLibStrings.exit, target: RoomPosition): js.Array[_] = js.native
   @JSName("lookForAt")
   def lookForAt_exit(`type`: screepsLib.screepsLibStrings.exit, target: _HasRoomPosition): js.Array[_] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_exit(`type`: screepsLib.screepsLibStrings.exit, x: scala.Double, y: scala.Double): js.Array[_] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_flag(`type`: screepsLib.screepsLibStrings.flag, target: RoomPosition): js.Array[Flag] = js.native
   @JSName("lookForAt")
   def lookForAt_flag(`type`: screepsLib.screepsLibStrings.flag, target: _HasRoomPosition): js.Array[Flag] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_flag(`type`: screepsLib.screepsLibStrings.flag, x: scala.Double, y: scala.Double): js.Array[Flag] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_mineral(`type`: screepsLib.screepsLibStrings.mineral, target: RoomPosition): js.Array[Mineral[MineralConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_mineral(`type`: screepsLib.screepsLibStrings.mineral, target: _HasRoomPosition): js.Array[Mineral[MineralConstant]] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_mineral(`type`: screepsLib.screepsLibStrings.mineral, x: scala.Double, y: scala.Double): js.Array[Mineral[MineralConstant]] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_nuke(`type`: screepsLib.screepsLibStrings.nuke, target: RoomPosition): js.Array[Nuke] = js.native
   @JSName("lookForAt")
   def lookForAt_nuke(`type`: screepsLib.screepsLibStrings.nuke, target: _HasRoomPosition): js.Array[Nuke] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_nuke(`type`: screepsLib.screepsLibStrings.nuke, x: scala.Double, y: scala.Double): js.Array[Nuke] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_resource(`type`: screepsLib.screepsLibStrings.resource, target: RoomPosition): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_resource(`type`: screepsLib.screepsLibStrings.resource, target: _HasRoomPosition): js.Array[Resource[ResourceConstant]] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_resource(`type`: screepsLib.screepsLibStrings.resource, x: scala.Double, y: scala.Double): js.Array[Resource[ResourceConstant]] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_source(`type`: screepsLib.screepsLibStrings.source, target: RoomPosition): js.Array[Source] = js.native
   @JSName("lookForAt")
   def lookForAt_source(`type`: screepsLib.screepsLibStrings.source, target: _HasRoomPosition): js.Array[Source] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_source(`type`: screepsLib.screepsLibStrings.source, x: scala.Double, y: scala.Double): js.Array[Source] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_structure(`type`: screepsLib.screepsLibStrings.structure, target: RoomPosition): js.Array[Structure[StructureConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_structure(`type`: screepsLib.screepsLibStrings.structure, target: _HasRoomPosition): js.Array[Structure[StructureConstant]] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_structure(`type`: screepsLib.screepsLibStrings.structure, x: scala.Double, y: scala.Double): js.Array[Structure[StructureConstant]] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_terrain(`type`: screepsLib.screepsLibStrings.terrain, target: RoomPosition): js.Array[Terrain] = js.native
   @JSName("lookForAt")
   def lookForAt_terrain(`type`: screepsLib.screepsLibStrings.terrain, target: _HasRoomPosition): js.Array[Terrain] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_terrain(`type`: screepsLib.screepsLibStrings.terrain, x: scala.Double, y: scala.Double): js.Array[Terrain] = js.native
-  /**
-    * Get the objects at the given RoomPosition.
-    * @param type One of the LOOK_* constants.
-    * @param target Can be a RoomPosition object or any object containing RoomPosition.
-    * @returns An array of Creeps at the specified position if found.
-    */
   @JSName("lookForAt")
   def lookForAt_tombstone(`type`: screepsLib.screepsLibStrings.tombstone, target: RoomPosition): js.Array[Tombstone] = js.native
   @JSName("lookForAt")
   def lookForAt_tombstone(`type`: screepsLib.screepsLibStrings.tombstone, target: _HasRoomPosition): js.Array[Tombstone] = js.native
-  /**
-    * Get the objects at the given position.
-    * @param type One of the LOOK_* constants.
-    * @param x The X position.
-    * @param y The Y position.
-    * @returns An array of Creep at the given position.
-    */
   @JSName("lookForAt")
   def lookForAt_tombstone(`type`: screepsLib.screepsLibStrings.tombstone, x: scala.Double, y: scala.Double): js.Array[Tombstone] = js.native
 }

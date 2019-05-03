@@ -395,11 +395,6 @@ trait Schema[T]
   def requiredPaths(): js.Array[java.lang.String] = js.native
   def requiredPaths(invalidate: scala.Boolean): js.Array[java.lang.String] = js.native
   def set(key: mongooseLib.mongooseLibStrings.strict, value: mongooseLib.mongooseLibStrings.`throw`): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set__id(key: mongooseLib.mongooseLibStrings._id): scala.Boolean = js.native
   @JSName("set")
@@ -413,20 +408,10 @@ trait Schema[T]
   def set_autoIndex(key: mongooseLib.mongooseLibStrings.autoIndex): scala.Boolean = js.native
   @JSName("set")
   def set_autoIndex(key: mongooseLib.mongooseLibStrings.autoIndex, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_bufferCommands(key: mongooseLib.mongooseLibStrings.bufferCommands): scala.Boolean = js.native
   @JSName("set")
   def set_bufferCommands(key: mongooseLib.mongooseLibStrings.bufferCommands, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_capped(key: mongooseLib.mongooseLibStrings.capped): scala.Boolean | scala.Double | mongooseLib.Anon_AutoIndexId = js.native
   @JSName("set")
@@ -435,215 +420,100 @@ trait Schema[T]
   def set_capped(key: mongooseLib.mongooseLibStrings.capped, value: scala.Boolean): this.type = js.native
   @JSName("set")
   def set_capped(key: mongooseLib.mongooseLibStrings.capped, value: scala.Double): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_collation(key: mongooseLib.mongooseLibStrings.collation): CollationOptions = js.native
   @JSName("set")
   def set_collation(key: mongooseLib.mongooseLibStrings.collation, value: CollationOptions): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_collection(key: mongooseLib.mongooseLibStrings.collection): java.lang.String = js.native
   @JSName("set")
   def set_collection(key: mongooseLib.mongooseLibStrings.collection, value: java.lang.String): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_discriminatorKey(key: mongooseLib.mongooseLibStrings.discriminatorKey): java.lang.String = js.native
   @JSName("set")
   def set_discriminatorKey(key: mongooseLib.mongooseLibStrings.discriminatorKey, value: java.lang.String): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_emitIndexErrors(key: mongooseLib.mongooseLibStrings.emitIndexErrors): scala.Boolean = js.native
   @JSName("set")
   def set_emitIndexErrors(key: mongooseLib.mongooseLibStrings.emitIndexErrors, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_excludeIndexes(key: mongooseLib.mongooseLibStrings.excludeIndexes): js.Any = js.native
   @JSName("set")
   def set_excludeIndexes(key: mongooseLib.mongooseLibStrings.excludeIndexes, value: js.Any): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_id(key: mongooseLib.mongooseLibStrings.id): scala.Boolean = js.native
   @JSName("set")
   def set_id(key: mongooseLib.mongooseLibStrings.id, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_minimize(key: mongooseLib.mongooseLibStrings.minimize): scala.Boolean = js.native
   @JSName("set")
   def set_minimize(key: mongooseLib.mongooseLibStrings.minimize, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_read(key: mongooseLib.mongooseLibStrings.read): java.lang.String = js.native
   @JSName("set")
   def set_read(key: mongooseLib.mongooseLibStrings.read, value: java.lang.String): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_safe(key: mongooseLib.mongooseLibStrings.safe): scala.Boolean | mongooseLib.Anon_J = js.native
   @JSName("set")
   def set_safe(key: mongooseLib.mongooseLibStrings.safe, value: mongooseLib.Anon_J): this.type = js.native
   @JSName("set")
   def set_safe(key: mongooseLib.mongooseLibStrings.safe, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_selectPopulatedPaths(key: mongooseLib.mongooseLibStrings.selectPopulatedPaths): scala.Boolean = js.native
   @JSName("set")
   def set_selectPopulatedPaths(key: mongooseLib.mongooseLibStrings.selectPopulatedPaths, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey): js.Object = js.native
   @JSName("set")
   def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey, value: js.Object): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_skipVersioning(key: mongooseLib.mongooseLibStrings.skipVersioning): js.Any = js.native
   @JSName("set")
   def set_skipVersioning(key: mongooseLib.mongooseLibStrings.skipVersioning, value: js.Any): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_storeSubdocValidationError(key: mongooseLib.mongooseLibStrings.storeSubdocValidationError): scala.Boolean = js.native
   @JSName("set")
   def set_storeSubdocValidationError(key: mongooseLib.mongooseLibStrings.storeSubdocValidationError, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_strict(key: mongooseLib.mongooseLibStrings.strict): scala.Boolean | mongooseLib.mongooseLibStrings.`throw` = js.native
   @JSName("set")
   def set_strict(key: mongooseLib.mongooseLibStrings.strict, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_timestamps(key: mongooseLib.mongooseLibStrings.timestamps): scala.Boolean | SchemaTimestampsConfig = js.native
   @JSName("set")
   def set_timestamps(key: mongooseLib.mongooseLibStrings.timestamps, value: SchemaTimestampsConfig): this.type = js.native
   @JSName("set")
   def set_timestamps(key: mongooseLib.mongooseLibStrings.timestamps, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_toJSON(key: mongooseLib.mongooseLibStrings.toJSON): DocumentToObjectOptions = js.native
   @JSName("set")
   def set_toJSON(key: mongooseLib.mongooseLibStrings.toJSON, value: DocumentToObjectOptions): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_toObject(key: mongooseLib.mongooseLibStrings.toObject): DocumentToObjectOptions = js.native
   @JSName("set")
   def set_toObject(key: mongooseLib.mongooseLibStrings.toObject, value: DocumentToObjectOptions): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_typeKey(key: mongooseLib.mongooseLibStrings.typeKey): java.lang.String = js.native
   @JSName("set")
   def set_typeKey(key: mongooseLib.mongooseLibStrings.typeKey, value: java.lang.String): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_useNestedStrict(key: mongooseLib.mongooseLibStrings.useNestedStrict): scala.Boolean = js.native
   @JSName("set")
   def set_useNestedStrict(key: mongooseLib.mongooseLibStrings.useNestedStrict, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_usePushEach(key: mongooseLib.mongooseLibStrings.usePushEach): scala.Boolean = js.native
   @JSName("set")
   def set_usePushEach(key: mongooseLib.mongooseLibStrings.usePushEach, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_validateBeforeSave(key: mongooseLib.mongooseLibStrings.validateBeforeSave): scala.Boolean = js.native
   @JSName("set")
   def set_validateBeforeSave(key: mongooseLib.mongooseLibStrings.validateBeforeSave, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_versionKey(key: mongooseLib.mongooseLibStrings.versionKey): java.lang.String | scala.Boolean = js.native
   @JSName("set")
   def set_versionKey(key: mongooseLib.mongooseLibStrings.versionKey, value: java.lang.String): this.type = js.native
   @JSName("set")
   def set_versionKey(key: mongooseLib.mongooseLibStrings.versionKey, value: scala.Boolean): this.type = js.native
-  /**
-    * Sets/gets a schema option.
-    * @param key option name
-    * @param value if not passed, the current option value is returned
-    */
   @JSName("set")
   def set_writeConcern(key: mongooseLib.mongooseLibStrings.writeConcern): WriteConcern = js.native
   @JSName("set")

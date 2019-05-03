@@ -51,7 +51,9 @@ trait IListItemsProps[T]
     * simply provide the name of a boolean property on the item that exposes
     * its disabled state.
     */
-  var itemDisabled: js.UndefOr[java.lang.String] = js.native
+  var itemDisabled: js.UndefOr[
+    java.lang.String | (js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean])
+  ] = js.native
   /**
     * Customize querying of entire `items` array. Return new list of items.
     * This method can reorder, add, or remove items at will.

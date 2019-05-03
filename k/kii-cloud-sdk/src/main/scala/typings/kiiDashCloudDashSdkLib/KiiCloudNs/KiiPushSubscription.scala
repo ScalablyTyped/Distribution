@@ -72,8 +72,10 @@ class KiiPushSubscription () extends js.Object {
     *         }
     *     );
     */
-  def isSubscribed[T /* <: KiiBucket | KiiTopic */](target: T): js.Promise[js.Tuple3[KiiPushSubscription, T, scala.Boolean]] = js.native
-  def isSubscribed[T /* <: KiiBucket | KiiTopic */](target: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureIsSubscribed[T]): js.Promise[js.Tuple3[KiiPushSubscription, T, scala.Boolean]] = js.native
+  def isSubscribed(target: KiiBucket): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, scala.Boolean]] = js.native
+  def isSubscribed(target: KiiBucket, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureIsSubscribed): js.Promise[js.Tuple3[KiiPushSubscription, KiiBucket, scala.Boolean]] = js.native
+  def isSubscribed(target: KiiTopic): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, scala.Boolean]] = js.native
+  def isSubscribed(target: KiiTopic, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureIsSubscribedSubscription): js.Promise[js.Tuple3[KiiPushSubscription, KiiTopic, scala.Boolean]] = js.native
   /**
     * Subscribe to bucket or topic.
     *
@@ -123,8 +125,10 @@ class KiiPushSubscription () extends js.Object {
     *         }
     *     );
     */
-  def subscribe[T /* <: KiiBucket | KiiTopic */](target: T): js.Promise[js.Tuple2[KiiPushSubscription, T]] = js.native
-  def subscribe[T /* <: KiiBucket | KiiTopic */](target: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSubscription[T]): js.Promise[js.Tuple2[KiiPushSubscription, T]] = js.native
+  def subscribe(target: KiiBucket): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def subscribe(target: KiiBucket, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSubscription): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def subscribe(target: KiiTopic): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
+  def subscribe(target: KiiTopic, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSubscriptionSuccess): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
   /**
     * Unsubscribe to bucket or topic.
     *
@@ -174,7 +178,9 @@ class KiiPushSubscription () extends js.Object {
     *         }
     *     );
     */
-  def unsubscribe[T /* <: KiiBucket | KiiTopic */](target: T): js.Promise[js.Tuple2[KiiPushSubscription, T]] = js.native
-  def unsubscribe[T /* <: KiiBucket | KiiTopic */](target: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSubscription[T]): js.Promise[js.Tuple2[KiiPushSubscription, T]] = js.native
+  def unsubscribe(target: KiiBucket): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def unsubscribe(target: KiiBucket, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSubscription): js.Promise[js.Tuple2[KiiPushSubscription, KiiBucket]] = js.native
+  def unsubscribe(target: KiiTopic): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
+  def unsubscribe(target: KiiTopic, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSubscriptionSuccess): js.Promise[js.Tuple2[KiiPushSubscription, KiiTopic]] = js.native
 }
 

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "amqp-connection-manager"
-version := "2.0-dt-20181206Z-e72445"
+version := "2.0-dt-20181206Z-718d7f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20190226Z-17ac03",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-0bae51",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "amqplib" % "0.5-dt-20190226Z-3538cd",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-aac16e",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

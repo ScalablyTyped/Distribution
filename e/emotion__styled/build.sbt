@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "emotion__styled"
-version := "10.0.10-f563c1"
+version := "10.0.10-f2a9ec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-908b0a",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-3df7e5",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-36c4b7",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.1-104157",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-e0e6aa",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-aae4f0",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-f77f96",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-e399d0",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.1-0e800f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190429Z-19278e",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

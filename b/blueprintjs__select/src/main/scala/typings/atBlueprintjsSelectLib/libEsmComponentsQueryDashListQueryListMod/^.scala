@@ -17,5 +17,20 @@ object ^ extends js.Object {
     direction: scala.Double,
     startIndex: scala.Double
   ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]
+  ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean],
+    direction: scala.Double
+  ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean],
+    direction: scala.Double,
+    startIndex: scala.Double
+  ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
 }
 

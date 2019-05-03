@@ -21,7 +21,7 @@ object CompoundStateNodeConfig {
     exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep | scala.Boolean = null,
     id: java.lang.String = null,
-    initial: java.lang.String = null,
+    initial: /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any = null,
     invoke: InvokesConfig[TContext, TEvent] = null,
     key: java.lang.String = null,
     meta: js.Any = null,

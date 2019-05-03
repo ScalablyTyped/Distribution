@@ -793,29 +793,289 @@ object fsNs extends js.Object {
     * @param length The number of bytes to read.
     * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
     */
-  def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def read(
     fd: scala.Double,
-    buffer: TBuffer,
+    buffer: nodeLib.Buffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double,
     callback: js.Function3[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* bytesRead */ scala.Double, 
-      /* buffer */ TBuffer, 
+      /* buffer */ nodeLib.Buffer, 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def read(
     fd: scala.Double,
-    buffer: TBuffer,
+    buffer: nodeLib.Buffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Null,
     callback: js.Function3[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* bytesRead */ scala.Double, 
-      /* buffer */ TBuffer, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def read(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* bytesRead */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1766,6 +2026,1832 @@ object fsNs extends js.Object {
     listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
   /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    */
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
+    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
+    */
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    */
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+    * @param fd A file descriptor.
+    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
+    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
+    */
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: nodeLib.Buffer,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.DataView,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.DataView, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float32Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Float64Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Float64Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int16Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int32Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Int8Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Int8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint16Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint16Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint32Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint32Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8Array,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8Array, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: js.UndefOr[scala.Nothing],
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: js.UndefOr[scala.Double | scala.Null],
+    length: js.UndefOr[scala.Double | scala.Null],
+    position: js.UndefOr[scala.Double | scala.Null],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: js.UndefOr[scala.Nothing],
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Null,
+    length: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Null,
+    length: scala.Double,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def write(
+    fd: scala.Double,
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Null,
+    length: scala.Null,
+    callback: js.Function3[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* written */ scala.Double, 
+      /* buffer */ stdLib.Uint8ClampedArray, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
     * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
     * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
@@ -1931,192 +4017,6 @@ object fsNs extends js.Object {
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* written */ scala.Double, 
       /* str */ java.lang.String, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-    */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Double | scala.Null],
-    length: js.UndefOr[scala.Double | scala.Null],
-    position: js.UndefOr[scala.Double | scala.Null],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Double,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
-    * @param fd A file descriptor.
-    * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
-    * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
-    */
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Double,
-    length: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Double,
-    length: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Null,
-    length: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Null,
-    length: scala.Double,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def write[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Null,
-    length: scala.Null,
-    callback: js.Function3[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* written */ scala.Double, 
-      /* buffer */ TBuffer, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -2812,48 +4712,90 @@ object fsNs extends js.Object {
       * @param position The offset from the beginning of the file from which data should be read. If
       * `null`, data will be read from the current position.
       */
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Null,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Null,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Null,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Null,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Null,
+      length: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Null,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def read(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Null,
+      length: scala.Null,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
     /**
       * Asynchronously reads the entire contents of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -2989,29 +4931,6 @@ object fsNs extends js.Object {
     def utimes(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
     def utimes(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
     /**
-      * Asynchronously writes `string` to the file referenced by the supplied `FileHandle`.
-      * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
-      * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
-      * @param handle A `FileHandle`.
-      * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
-      * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-      * @param encoding The expected string encoding.
-      */
-    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def write(
-      handle: nodeLib.fsMod.promisesNs.FileHandle,
-      string: js.Any,
-      position: scala.Double,
-      encoding: java.lang.String
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def write(
-      handle: nodeLib.fsMod.promisesNs.FileHandle,
-      string: js.Any,
-      position: scala.Null,
-      encoding: java.lang.String
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    /**
       * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
       * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
       * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
@@ -3021,48 +4940,113 @@ object fsNs extends js.Object {
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: nodeLib.Buffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Null,
       length: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Null,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(
       handle: nodeLib.fsMod.promisesNs.FileHandle,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Null,
       length: scala.Null,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, buffer: stdLib.Uint8Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Null,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Null,
+      length: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Null,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Null,
+      length: scala.Null,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    /**
+      * Asynchronously writes `string` to the file referenced by the supplied `FileHandle`.
+      * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
+      * to be resolved (or rejected). For this scenario, `fs.createWriteStream` is strongly recommended.
+      * @param handle A `FileHandle`.
+      * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
+      * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
+      * @param encoding The expected string encoding.
+      */
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+    def write(handle: nodeLib.fsMod.promisesNs.FileHandle, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      string: js.Any,
+      position: scala.Double,
+      encoding: java.lang.String
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+    def write(
+      handle: nodeLib.fsMod.promisesNs.FileHandle,
+      string: js.Any,
+      position: scala.Null,
+      encoding: java.lang.String
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
     /**
       * Asynchronously writes data to a file, replacing the file if it already exists.
       * It is unsafe to call `fsPromises.writeFile()` multiple times on the same file without waiting for the `Promise` to be resolved (or rejected).
@@ -3131,7 +5115,7 @@ object fsNs extends js.Object {
   @JSName("read")
   @js.native
   object readNs extends js.Object {
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
     /**
       * @param fd A file descriptor.
       * @param buffer The buffer that the data will be written to.
@@ -3139,13 +5123,93 @@ object fsNs extends js.Object {
       * @param length The number of bytes to read.
       * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
       */
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+    def __promisify__(
       fd: scala.Double,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BufferBytesRead] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadDataView] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.DataView,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadDataView] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadFloat32Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Float32Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadFloat32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float64Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadFloat64Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Float64Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadFloat64Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int16Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadInt16Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Int16Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadInt16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadInt32Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Int32Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadInt32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int8Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadInt8Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Int8Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadInt8Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint16Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumberUint16Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint16Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumberUint16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumberUint32Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint32Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumberUint32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumber] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8ClampedArray, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumberUint8ClampedArray] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint8ClampedArray,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesReadNumberUint8ClampedArray] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3445,34 +5509,134 @@ object fsNs extends js.Object {
   @js.native
   object writeNs extends js.Object {
     /**
-      * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
-      * @param fd A file descriptor.
-      * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
-      * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
-      * @param encoding The expected string encoding.
-      */
-    def __promisify__(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    /**
       * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
       * @param fd A file descriptor.
       * @param offset The part of the buffer to be written. If not supplied, defaults to `0`.
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+    def __promisify__(fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def __promisify__(fd: scala.Double, buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def __promisify__(
       fd: scala.Double,
-      buffer: TBuffer,
+      buffer: nodeLib.Buffer,
       offset: scala.Double,
       length: scala.Double,
       position: scala.Double
-    ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    ): js.Promise[nodeLib.Anon_BufferBytesWritten] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.DataView): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.DataView, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.DataView,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenDataView] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Float32Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float64Array): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat64Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float64Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat64Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Float64Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat64Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Float64Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenFloat64Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int16Array): js.Promise[nodeLib.Anon_BufferBytesWrittenInt16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int16Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenInt16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int16Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenInt16Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Int16Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenInt16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int32Array): js.Promise[nodeLib.Anon_BufferBytesWrittenInt32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int32Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenInt32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenInt32Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Int32Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenInt32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int8Array): js.Promise[nodeLib.Anon_BufferBytesWrittenInt8Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int8Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenInt8Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Int8Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenInt8Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Int8Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenInt8Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint16Array): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint16Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint16Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint16Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint16Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint16Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint32Array): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint32Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint32Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint32Array] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint32Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint32Array] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8Array): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8Array, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8Array, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint8Array,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8ClampedArray): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint8ClampedArray] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8ClampedArray, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint8ClampedArray] = js.native
+    def __promisify__(fd: scala.Double, buffer: stdLib.Uint8ClampedArray, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint8ClampedArray] = js.native
+    def __promisify__(
+      fd: scala.Double,
+      buffer: stdLib.Uint8ClampedArray,
+      offset: scala.Double,
+      length: scala.Double,
+      position: scala.Double
+    ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberUint8ClampedArray] = js.native
+    /**
+      * Asynchronously writes `string` to the file referenced by the supplied file descriptor.
+      * @param fd A file descriptor.
+      * @param string A string to write. If something other than a string is supplied it will be coerced to a string.
+      * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
+      * @param encoding The expected string encoding.
+      */
+    def __promisify__(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberString] = js.native
   }
   
 }

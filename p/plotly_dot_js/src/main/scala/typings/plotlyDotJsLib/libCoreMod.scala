@@ -344,8 +344,16 @@ object libCoreMod extends js.Object {
     val utcYear_Original: d3DashTimeLib.d3DashTimeMod.CountableTimeInterval = js.native
     val version: java.lang.String = js.native
     val zoomIdentity: d3DashZoomLib.d3DashZoomMod.ZoomTransform = js.native
-    def active[GElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: GElement): (d3DashTransitionLib.d3DashTransitionMod.Transition[GElement, Datum, PElement, PDatum]) | scala.Null = js.native
-    def active[GElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: GElement, name: java.lang.String): (d3DashTransitionLib.d3DashTransitionMod.Transition[GElement, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](): (d3DashTransitionLib.d3DashTransitionMod.Transition[scala.Null, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: d3DashSelectionLib.d3DashSelectionMod.EnterElement): (d3DashTransitionLib.d3DashTransitionMod.Transition[d3DashSelectionLib.d3DashSelectionMod.EnterElement, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: d3DashSelectionLib.d3DashSelectionMod.EnterElement, name: java.lang.String): (d3DashTransitionLib.d3DashTransitionMod.Transition[d3DashSelectionLib.d3DashSelectionMod.EnterElement, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: scala.Null, name: java.lang.String): (d3DashTransitionLib.d3DashTransitionMod.Transition[scala.Null, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: stdLib.Document): (d3DashTransitionLib.d3DashTransitionMod.Transition[stdLib.Document, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: stdLib.Document, name: java.lang.String): (d3DashTransitionLib.d3DashTransitionMod.Transition[stdLib.Document, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: stdLib.Element): (d3DashTransitionLib.d3DashTransitionMod.Transition[stdLib.Element, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: stdLib.Element, name: java.lang.String): (d3DashTransitionLib.d3DashTransitionMod.Transition[stdLib.Element, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: stdLib.Window): (d3DashTransitionLib.d3DashTransitionMod.Transition[stdLib.Window, Datum, PElement, PDatum]) | scala.Null = js.native
+    def active[Datum, PElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, PDatum](node: stdLib.Window, name: java.lang.String): (d3DashTransitionLib.d3DashTransitionMod.Transition[stdLib.Window, Datum, PElement, PDatum]) | scala.Null = js.native
     def arc(): d3DashShapeLib.d3DashShapeMod.Arc[_, d3DashShapeLib.d3DashShapeMod.DefaultArcObject] = js.native
     @JSName("arc")
     def arc_Datum[Datum](): d3DashShapeLib.d3DashShapeMod.Arc[_, Datum] = js.native
@@ -3285,7 +3293,16 @@ object libCoreMod extends js.Object {
     ): js.UndefOr[scala.Double] = js.native
     @JSName("scan")
     def scan_T[T](array: stdLib.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, scala.Double]): js.UndefOr[scala.Double] = js.native
-    def select[GElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, OldDatum](node: GElement): d3DashSelectionLib.d3DashSelectionMod.Selection[GElement, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+    def select[OldDatum](): d3DashSelectionLib.d3DashSelectionMod.Selection[scala.Null, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+    def select[OldDatum](node: d3DashSelectionLib.d3DashSelectionMod.EnterElement): d3DashSelectionLib.d3DashSelectionMod.Selection[
+        d3DashSelectionLib.d3DashSelectionMod.EnterElement, 
+        OldDatum, 
+        scala.Null, 
+        js.UndefOr[scala.Nothing]
+      ] = js.native
+    def select[OldDatum](node: stdLib.Document): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.Document, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+    def select[OldDatum](node: stdLib.Element): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.Element, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
+    def select[OldDatum](node: stdLib.Window): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.Window, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native
     def select[GElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, OldDatum](selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[GElement, OldDatum, stdLib.HTMLElement, _] = js.native
     def selectAll(): d3DashSelectionLib.d3DashSelectionMod.Selection[scala.Null, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
     def selectAll[GElement /* <: d3DashSelectionLib.d3DashSelectionMod.BaseType */, OldDatum](nodes: d3DashSelectionLib.d3DashSelectionMod.ArrayLike[GElement]): d3DashSelectionLib.d3DashSelectionMod.Selection[GElement, OldDatum, scala.Null, js.UndefOr[scala.Nothing]] = js.native

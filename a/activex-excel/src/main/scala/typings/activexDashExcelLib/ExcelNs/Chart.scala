@@ -248,15 +248,15 @@ class Chart protected () extends Sheet {
   def Pictures(Index: js.Any): js.Any = js.native
   def PieGroups(): js.Any = js.native
   def PieGroups(Index: js.Any): js.Any = js.native
-  def PrintOut[T /* <: js.UndefOr[scala.Boolean] */](
+  def PrintOut(
     From: js.UndefOr[scala.Double],
     To: js.UndefOr[scala.Double],
     Copies: js.UndefOr[scala.Double],
     Preview: js.UndefOr[scala.Boolean],
     ActivePrinter: js.UndefOr[java.lang.String],
-    PrintToFile: js.UndefOr[T],
+    PrintToFile: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
     Collate: js.UndefOr[scala.Boolean],
-    PrToFileName: js.UndefOr[PrintToFileName[T]]
+    PrToFileName: js.UndefOr[PrintToFileName[scala.Boolean | js.UndefOr[scala.Nothing]]]
   ): js.Any = js.native
   def PrintPreview(): scala.Unit = js.native
   def PrintPreview(EnableChanges: scala.Boolean): scala.Unit = js.native

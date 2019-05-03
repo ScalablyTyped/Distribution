@@ -424,9 +424,17 @@ trait JQueryStatic extends js.Object {
   def contains(container: stdLib.Element, contained: stdLib.Element): scala.Boolean = js.native
   def css(elem: stdLib.Element, name: java.lang.String): js.Any = js.native
   def data(element: jqueryLib.JQueryNs.PlainObject[_]): js.Any = js.native
-  def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String): js.Any = js.native
+  def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String): scala.Null = js.native
+  def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: java.lang.String): java.lang.String = js.native
+  def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: js.Symbol): js.Symbol = js.native
+  def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: scala.Boolean): scala.Boolean = js.native
+  def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: scala.Double): scala.Double = js.native
   def data(element: stdLib.Document): js.Any = js.native
-  def data(element: stdLib.Document, key: java.lang.String): js.Any = js.native
+  def data(element: stdLib.Document, key: java.lang.String): scala.Null = js.native
+  def data(element: stdLib.Document, key: java.lang.String, value: java.lang.String): java.lang.String = js.native
+  def data(element: stdLib.Document, key: java.lang.String, value: js.Symbol): js.Symbol = js.native
+  def data(element: stdLib.Document, key: java.lang.String, value: scala.Boolean): scala.Boolean = js.native
+  def data(element: stdLib.Document, key: java.lang.String, value: scala.Double): scala.Double = js.native
   /**
     * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
     * @param element The DOM element to query for the data.
@@ -475,23 +483,7 @@ trait JQueryStatic extends js.Object {
   ```
     */
   def data(element: stdLib.Element): js.Any = js.native
-  /**
-    * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-    * @param element The DOM element to query for the data.
-    * @param key Name of the data stored.
-    * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
-    *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
-    * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-    * @since 1.2.3
-    */
-  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
-  // results in potential confusion for users from an unexpected parameter.
-  // tslint:disable-next-line:unified-signatures
-  def data(element: stdLib.Element, key: java.lang.String): js.Any = js.native
-  def data(element: stdLib.Window): js.Any = js.native
-  def data(element: stdLib.Window, key: java.lang.String): js.Any = js.native
-  def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: T): T = js.native
-  def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: stdLib.Document, key: java.lang.String, value: T): T = js.native
+  def data(element: stdLib.Element, key: java.lang.String): scala.Null = js.native
   /**
     * Store arbitrary data associated with the specified element. Returns the value that was set.
     * @param element The DOM element to associate with the data.
@@ -563,8 +555,40 @@ trait JQueryStatic extends js.Object {
   </html>
   ```
     */
-  def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: stdLib.Element, key: java.lang.String, value: T): T = js.native
-  def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: stdLib.Window, key: java.lang.String, value: T): T = js.native
+  def data(element: stdLib.Element, key: java.lang.String, value: java.lang.String): java.lang.String = js.native
+  def data(element: stdLib.Element, key: java.lang.String, value: js.Symbol): js.Symbol = js.native
+  def data(element: stdLib.Element, key: java.lang.String, value: scala.Boolean): scala.Boolean = js.native
+  def data(element: stdLib.Element, key: java.lang.String, value: scala.Double): scala.Double = js.native
+  def data(element: stdLib.Window): js.Any = js.native
+  def data(element: stdLib.Window, key: java.lang.String): scala.Null = js.native
+  def data(element: stdLib.Window, key: java.lang.String, value: java.lang.String): java.lang.String = js.native
+  def data(element: stdLib.Window, key: java.lang.String, value: js.Symbol): js.Symbol = js.native
+  def data(element: stdLib.Window, key: java.lang.String, value: scala.Boolean): scala.Boolean = js.native
+  def data(element: stdLib.Window, key: java.lang.String, value: scala.Double): scala.Double = js.native
+  def data[T /* <: js.Object */](element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: T): T = js.native
+  def data[T /* <: js.Object */](element: stdLib.Document, key: java.lang.String, value: T): T = js.native
+  def data[T /* <: js.Object */](element: stdLib.Element, key: java.lang.String, value: T): T = js.native
+  def data[T /* <: js.Object */](element: stdLib.Window, key: java.lang.String, value: T): T = js.native
+  @JSName("data")
+  def data_Any(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String): js.Any = js.native
+  @JSName("data")
+  def data_Any(element: stdLib.Document, key: java.lang.String): js.Any = js.native
+  /**
+    * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
+    * @param element The DOM element to query for the data.
+    * @param key Name of the data stored.
+    * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
+    *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
+    * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
+    * @since 1.2.3
+    */
+  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
+  // results in potential confusion for users from an unexpected parameter.
+  // tslint:disable-next-line:unified-signatures
+  @JSName("data")
+  def data_Any(element: stdLib.Element, key: java.lang.String): js.Any = js.native
+  @JSName("data")
+  def data_Any(element: stdLib.Window, key: java.lang.String): js.Any = js.native
   /**
     * Execute the next function on the queue for the matched element.
     * @param element A DOM element from which to remove and execute a queued function.

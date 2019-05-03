@@ -24,9 +24,9 @@ trait ThreadFlowLocation extends js.Object {
     */
   var index: js.UndefOr[scala.Double] = js.undefined
   /**
-    * A set of distinct strings that categorize the thread flow location. Well-known kinds include acquire, release,
-    * enter, exit, call, return, branch, implicit, false, true, caution, danger, unknown, unreachable, taint,
-    * function, handler, lock, memory, resource, and scope.
+    * A set of distinct strings that categorize the thread flow location. Well-known kinds include 'acquire',
+    * 'release', 'enter', 'exit', 'call', 'return', 'branch', 'implicit', 'false', 'true', 'caution', 'danger',
+    * 'unknown', 'unreachable', 'taint', 'function', 'handler', 'lock', 'memory', 'resource', 'scope' and 'value'.
     */
   var kinds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
@@ -54,7 +54,20 @@ trait ThreadFlowLocation extends js.Object {
     * the variable or expression value. For an annotation of kind 'continuation', for example, this dictionary might
     * hold the current assumed values of a set of global variables.
     */
-  var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[MultiformatMessageString]] = js.undefined
+  /**
+    * An array of references to rule or taxonomy reporting descriptors that are applicable to the thread flow
+    * location.
+    */
+  var taxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
+  /**
+    * A web request associated with this thread flow location.
+    */
+  var webRequest: js.UndefOr[WebRequest] = js.undefined
+  /**
+    * A web response associated with this thread flow location.
+    */
+  var webResponse: js.UndefOr[WebResponse] = js.undefined
 }
 
 object ThreadFlowLocation {
@@ -70,7 +83,10 @@ object ThreadFlowLocation {
     nestingLevel: scala.Int | scala.Double = null,
     properties: PropertyBag = null,
     stack: Stack = null,
-    state: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+    state: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
+    taxa: js.Array[ReportingDescriptorReference] = null,
+    webRequest: WebRequest = null,
+    webResponse: WebResponse = null
   ): ThreadFlowLocation = {
     val __obj = js.Dynamic.literal()
     if (executionOrder != null) __obj.updateDynamic("executionOrder")(executionOrder.asInstanceOf[js.Any])
@@ -84,6 +100,9 @@ object ThreadFlowLocation {
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     if (state != null) __obj.updateDynamic("state")(state)
+    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
+    if (webRequest != null) __obj.updateDynamic("webRequest")(webRequest)
+    if (webResponse != null) __obj.updateDynamic("webResponse")(webResponse)
     __obj.asInstanceOf[ThreadFlowLocation]
   }
 }

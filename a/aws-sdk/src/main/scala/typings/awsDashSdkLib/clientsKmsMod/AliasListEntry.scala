@@ -11,7 +11,7 @@ trait AliasListEntry extends js.Object {
     */
   var AliasArn: js.UndefOr[ArnType] = js.undefined
   /**
-    * String that contains the alias.
+    * String that contains the alias. This value begins with alias/.
     */
   var AliasName: js.UndefOr[AliasNameType] = js.undefined
   /**

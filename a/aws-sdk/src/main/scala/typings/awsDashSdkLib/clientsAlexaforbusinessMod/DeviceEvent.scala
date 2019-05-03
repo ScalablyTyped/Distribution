@@ -9,7 +9,7 @@ trait DeviceEvent extends js.Object {
   /**
     * The time (in epoch) when the event occurred. 
     */
-  var Timestamp: js.UndefOr[Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[DeviceEventTime] = js.undefined
   /**
     * The type of device event.
     */
@@ -22,7 +22,7 @@ trait DeviceEvent extends js.Object {
 
 object DeviceEvent {
   @scala.inline
-  def apply(Timestamp: Timestamp = null, Type: DeviceEventType = null, Value: DeviceEventValue = null): DeviceEvent = {
+  def apply(Timestamp: DeviceEventTime = null, Type: DeviceEventType = null, Value: DeviceEventValue = null): DeviceEvent = {
     val __obj = js.Dynamic.literal()
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])

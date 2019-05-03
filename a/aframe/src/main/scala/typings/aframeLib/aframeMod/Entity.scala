@@ -24,7 +24,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_El], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def `addEventListener_child-detached`(
     `type`: aframeLib.aframeLibStrings.`child-detached`,
@@ -36,7 +35,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_El], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_componentchanged(
     `type`: aframeLib.aframeLibStrings.componentchanged,
@@ -48,7 +46,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_Id], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_componentremoved(
     `type`: aframeLib.aframeLibStrings.componentremoved,
@@ -60,7 +57,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_IdName], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_loaded(
     `type`: aframeLib.aframeLibStrings.loaded,
@@ -72,7 +68,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with stdLib.EventListener, scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_pause(
     `type`: aframeLib.aframeLibStrings.pause,
@@ -84,7 +79,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with stdLib.EventListener, scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_play(
     `type`: aframeLib.aframeLibStrings.play,
@@ -96,7 +90,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with stdLib.EventListener, scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_schemachanged(
     `type`: aframeLib.aframeLibStrings.schemachanged,
@@ -114,7 +107,6 @@ trait Entity[C] extends ANode {
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_stateadded(
     `type`: aframeLib.aframeLibStrings.stateadded,
@@ -126,7 +118,6 @@ trait Entity[C] extends ANode {
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_State], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  // addEventListener specific usages
   @JSName("addEventListener")
   def addEventListener_stateremoved(
     `type`: aframeLib.aframeLibStrings.stateremoved,

@@ -5,20 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ErrorFailureSubscription[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket | kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic */] extends js.Object {
+trait Anon_ErrorFailureSubscription extends js.Object {
   def failure(error: stdLib.Error): js.Any
-  def success(subscription: kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, topic: T): js.Any
+  def success(
+    subscription: kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription,
+    topic: kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket
+  ): js.Any
 }
 
 object Anon_ErrorFailureSubscription {
   @scala.inline
-  def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket | kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic */](
+  def apply(
     failure: stdLib.Error => js.Any,
-    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, T) => js.Any
-  ): Anon_ErrorFailureSubscription[T] = {
+    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket) => js.Any
+  ): Anon_ErrorFailureSubscription = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction2(success))
   
-    __obj.asInstanceOf[Anon_ErrorFailureSubscription[T]]
+    __obj.asInstanceOf[Anon_ErrorFailureSubscription]
   }
 }
 

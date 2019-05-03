@@ -1,7 +1,7 @@
 
 # Scala.js typings for sarif
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 
 
@@ -17,14 +17,14 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for non-npm package Sarif 2.0
+// Type definitions for non-npm package Sarif 2.1
 // Project: https://github.com/Microsoft/sarif-sdk
 // Definitions by: Rusty Scrivens <https://github.com/rscrivens>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 /**
- * Static Analysis Results Format (SARIF) Version 2.0.0-csd.2.beta-2019-04-03 JSON Schema: a standard format for the
- * output of static analysis tools.
+ * Static Analysis Results Format (SARIF) Version 2.1.0-rtm.0 JSON Schema: a standard format for the output of static
+ * analysis tools.
  */
 
 ```

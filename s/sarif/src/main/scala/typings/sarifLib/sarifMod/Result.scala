@@ -120,6 +120,14 @@ trait Result extends js.Object {
     */
   var taxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
   /**
+    * A web request associated with this result.
+    */
+  var webRequest: js.UndefOr[WebRequest] = js.undefined
+  /**
+    * A web response associated with this result.
+    */
+  var webResponse: js.UndefOr[WebResponse] = js.undefined
+  /**
     * The URIs of the work items associated with this result.
     */
   var workItemUris: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -155,6 +163,8 @@ object Result {
     stacks: js.Array[Stack] = null,
     suppressions: js.Array[Suppression] = null,
     taxa: js.Array[ReportingDescriptorReference] = null,
+    webRequest: WebRequest = null,
+    webResponse: WebResponse = null,
     workItemUris: js.Array[java.lang.String] = null
   ): Result = {
     val __obj = js.Dynamic.literal(message = message)
@@ -184,6 +194,8 @@ object Result {
     if (stacks != null) __obj.updateDynamic("stacks")(stacks)
     if (suppressions != null) __obj.updateDynamic("suppressions")(suppressions)
     if (taxa != null) __obj.updateDynamic("taxa")(taxa)
+    if (webRequest != null) __obj.updateDynamic("webRequest")(webRequest)
+    if (webResponse != null) __obj.updateDynamic("webResponse")(webResponse)
     if (workItemUris != null) __obj.updateDynamic("workItemUris")(workItemUris)
     __obj.asInstanceOf[Result]
   }

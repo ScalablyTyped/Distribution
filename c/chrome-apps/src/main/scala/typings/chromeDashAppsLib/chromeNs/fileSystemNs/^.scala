@@ -77,11 +77,18 @@ object ^ extends js.Object {
     * @since Chrome 44.
     */
   def getVolumeList(callback: js.Function1[/* volumes */ js.Array[Volume], scala.Unit]): scala.Unit = js.native
+  def getWritableEntry(
+    entry: filesystemLib.DirectoryEntry,
+    callback: js.Function1[/* entry */ filesystemLib.DirectoryEntry, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Get a writable Entry from another Entry. This call will fail with a runtime error if the application does not have the 'write' permission under 'fileSystem'.
     * If entry is a DirectoryEntry, this call will fail if the application does not have the 'directory' permission under 'fileSystem'.
     */
-  def getWritableEntry[T /* <: filesystemLib.FileEntry | filesystemLib.DirectoryEntry */](entry: T, callback: js.Function1[/* entry */ T, scala.Unit]): scala.Unit = js.native
+  def getWritableEntry(
+    entry: filesystemLib.FileEntry,
+    callback: js.Function1[/* entry */ filesystemLib.FileEntry, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Returns whether the app has permission to restore the entry with the given id.
     * @since Chrome 29.

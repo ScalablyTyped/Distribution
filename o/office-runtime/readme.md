@@ -27,7 +27,9 @@ office-runtime
 Copyright (c) Microsoft Corporation
 */
 
-/** Office Runtime namespace */
+/**
+ * Office runtime namespace.
+ */
 
 ```
 

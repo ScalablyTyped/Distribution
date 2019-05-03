@@ -5,15 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @beta
-  * Object representing the dialog box.
-  */
+/** Object representing the dialog box. */
 trait Dialog extends js.Object {
-  /**
-    * @beta
-    * Method that closes a dialog box.
-    */
+  /** Method to close a dialog box. Returns a Promise. */
   def close(): js.Promise[scala.Unit]
 }
 

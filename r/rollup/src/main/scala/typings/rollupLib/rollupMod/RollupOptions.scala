@@ -12,7 +12,6 @@ trait RollupOptions extends InputOptions {
 object RollupOptions {
   @scala.inline
   def apply(
-    input: InputOption,
     acorn: js.Any = null,
     acornInjectPlugins: js.Array[js.Function] = null,
     cache: rollupLib.rollupLibNumbers.`false` | RollupCache = null,
@@ -23,7 +22,8 @@ object RollupOptions {
     experimentalTopLevelAwait: js.UndefOr[scala.Boolean] = js.undefined,
     external: ExternalOption = null,
     inlineDynamicImports: js.UndefOr[scala.Boolean] = js.undefined,
-    manualChunks: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    input: InputOption = null,
+    manualChunks: ManualChunksOption = null,
     moduleContext: (js.Function1[/* id */ java.lang.String, java.lang.String]) | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     onwarn: WarningHandler = null,
     output: OutputOptions = null,
@@ -35,7 +35,7 @@ object RollupOptions {
     treeshake: scala.Boolean | TreeshakingOptions = null,
     watch: WatcherOptions = null
   ): RollupOptions = {
-    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (acorn != null) __obj.updateDynamic("acorn")(acorn)
     if (acornInjectPlugins != null) __obj.updateDynamic("acornInjectPlugins")(acornInjectPlugins)
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
@@ -46,7 +46,8 @@ object RollupOptions {
     if (!js.isUndefined(experimentalTopLevelAwait)) __obj.updateDynamic("experimentalTopLevelAwait")(experimentalTopLevelAwait)
     if (external != null) __obj.updateDynamic("external")(external.asInstanceOf[js.Any])
     if (!js.isUndefined(inlineDynamicImports)) __obj.updateDynamic("inlineDynamicImports")(inlineDynamicImports)
-    if (manualChunks != null) __obj.updateDynamic("manualChunks")(manualChunks)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (manualChunks != null) __obj.updateDynamic("manualChunks")(manualChunks.asInstanceOf[js.Any])
     if (moduleContext != null) __obj.updateDynamic("moduleContext")(moduleContext.asInstanceOf[js.Any])
     if (onwarn != null) __obj.updateDynamic("onwarn")(onwarn)
     if (output != null) __obj.updateDynamic("output")(output)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for worker-farm
 
-Typings are for version 1.6.0
+Typings are for version 1.7.0
 
 ## Library description:
 Distribute processing tasks to child processes with an über-simple API and baked-in durability & custom concurrency options.

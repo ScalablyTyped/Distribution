@@ -44,42 +44,138 @@ object Field extends js.Object {
     * @param [defaultValue] Default value
     * @returns Decorator function
     */
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
     fieldId: scala.Double,
     fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
     fieldId: scala.Double,
-    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
     fieldRule: protobufjsLib.protobufjsLibStrings.optional
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
+    fieldRule: protobufjsLib.protobufjsLibStrings.optional,
+    defaultValue: protobufjsLib.protobufjsMod.Buffer | stdLib.Uint8Array
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
     fieldId: scala.Double,
     fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
     fieldRule: protobufjsLib.protobufjsLibStrings.optional,
-    defaultValue: T
+    defaultValue: java.lang.String
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
+    fieldRule: protobufjsLib.protobufjsLibStrings.optional,
+    defaultValue: js.Array[
+      scala.Boolean | protobufjsLib.protobufjsMod.Buffer | scala.Double | protobufjsLib.protobufjsMod.Long | java.lang.String | stdLib.Uint8Array
+    ]
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
     fieldId: scala.Double,
     fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.optional,
+    defaultValue: protobufjsLib.protobufjsMod.Long
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.optional,
+    defaultValue: scala.Boolean
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.optional,
+    defaultValue: scala.Double
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
     fieldRule: protobufjsLib.protobufjsLibStrings.repeated
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
+    fieldRule: protobufjsLib.protobufjsLibStrings.repeated,
+    defaultValue: protobufjsLib.protobufjsMod.Buffer | stdLib.Uint8Array
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
     fieldId: scala.Double,
     fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
     fieldRule: protobufjsLib.protobufjsLibStrings.repeated,
-    defaultValue: T
+    defaultValue: java.lang.String
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
+    fieldRule: protobufjsLib.protobufjsLibStrings.repeated,
+    defaultValue: js.Array[
+      scala.Boolean | protobufjsLib.protobufjsMod.Buffer | scala.Double | protobufjsLib.protobufjsMod.Long | java.lang.String | stdLib.Uint8Array
+    ]
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
     fieldId: scala.Double,
     fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.repeated,
+    defaultValue: protobufjsLib.protobufjsMod.Long
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.repeated,
+    defaultValue: scala.Boolean
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.repeated,
+    defaultValue: scala.Double
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
     fieldRule: protobufjsLib.protobufjsLibStrings.required
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
-  def d[T /* <: scala.Double | js.Array[scala.Double] | protobufjsLib.protobufjsMod.Long | js.Array[protobufjsLib.protobufjsMod.Long] | java.lang.String | js.Array[java.lang.String] | scala.Boolean | js.Array[scala.Boolean] | stdLib.Uint8Array | js.Array[stdLib.Uint8Array] | protobufjsLib.protobufjsMod.Buffer | js.Array[protobufjsLib.protobufjsMod.Buffer] */](
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
+    fieldRule: protobufjsLib.protobufjsLibStrings.required,
+    defaultValue: protobufjsLib.protobufjsMod.Buffer | stdLib.Uint8Array
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
     fieldId: scala.Double,
     fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
     fieldRule: protobufjsLib.protobufjsLibStrings.required,
-    defaultValue: T
+    defaultValue: java.lang.String
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: js.Object | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.uint64,
+    fieldRule: protobufjsLib.protobufjsLibStrings.required,
+    defaultValue: js.Array[
+      scala.Boolean | protobufjsLib.protobufjsMod.Buffer | scala.Double | protobufjsLib.protobufjsMod.Long | java.lang.String | stdLib.Uint8Array
+    ]
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.required,
+    defaultValue: protobufjsLib.protobufjsMod.Long
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.required,
+    defaultValue: scala.Boolean
+  ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
+  def d(
+    fieldId: scala.Double,
+    fieldType: protobufjsLib.protobufjsLibStrings.double | protobufjsLib.protobufjsLibStrings.float | protobufjsLib.protobufjsLibStrings.int32 | protobufjsLib.protobufjsLibStrings.uint32 | protobufjsLib.protobufjsLibStrings.sint32 | protobufjsLib.protobufjsLibStrings.fixed32 | protobufjsLib.protobufjsLibStrings.sfixed32 | protobufjsLib.protobufjsLibStrings.int64 | protobufjsLib.protobufjsLibStrings.uint64 | protobufjsLib.protobufjsLibStrings.sint64 | protobufjsLib.protobufjsLibStrings.fixed64 | protobufjsLib.protobufjsLibStrings.sfixed64 | protobufjsLib.protobufjsLibStrings.string | protobufjsLib.protobufjsLibStrings.bool | protobufjsLib.protobufjsLibStrings.bytes | js.Object,
+    fieldRule: protobufjsLib.protobufjsLibStrings.required,
+    defaultValue: scala.Double
   ): protobufjsLib.protobufjsMod.FieldDecorator = js.native
   def d[T /* <: protobufjsLib.protobufjsMod.Message[T] */](fieldId: scala.Double, fieldType: java.lang.String): protobufjsLib.protobufjsMod.FieldDecorator = js.native
   /**

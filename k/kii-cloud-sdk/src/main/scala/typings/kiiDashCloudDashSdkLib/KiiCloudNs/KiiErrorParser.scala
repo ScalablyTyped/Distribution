@@ -39,6 +39,7 @@ object KiiErrorParser extends js.Object {
     *     var errorCode = err.code;
     *     var errorMessage = err.message;
     */
-  def parse[T /* <: java.lang.String | stdLib.Error */](error: T): kiiDashCloudDashSdkLib.KiiCloudNs.KiiError = js.native
+  def parse(error: java.lang.String): kiiDashCloudDashSdkLib.KiiCloudNs.KiiError = js.native
+  def parse(error: stdLib.Error): kiiDashCloudDashSdkLib.KiiCloudNs.KiiError = js.native
 }
 

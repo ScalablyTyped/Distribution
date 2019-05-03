@@ -29,8 +29,13 @@ object ^ extends js.Object {
   def assertWrappingType(`type`: js.Any): GraphQLWrappingType = js.native
   def getNamedType(`type`: GraphQLType): GraphQLNamedType = js.native
   def getNamedType(`type`: scala.Unit): js.UndefOr[scala.Nothing] = js.native
+  def getNullableType(`type`: GraphQLEnumType): GraphQLEnumType = js.native
+  def getNullableType(`type`: GraphQLInputObjectType): GraphQLInputObjectType = js.native
+  def getNullableType(`type`: GraphQLInterfaceType): GraphQLInterfaceType = js.native
+  def getNullableType(`type`: GraphQLScalarType): GraphQLScalarType = js.native
+  def getNullableType(`type`: GraphQLUnionType): GraphQLUnionType = js.native
   def getNullableType(`type`: scala.Unit): js.UndefOr[scala.Nothing] = js.native
-  def getNullableType[T /* <: GraphQLNullableType */](`type`: T): T = js.native
+  def getNullableType[T /* <: (GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | GraphQLList[_] */](`type`: T): T = js.native
   def getNullableType[T /* <: GraphQLNullableType */](`type`: GraphQLNonNull[T]): T = js.native
   def isAbstractType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLAbstractType */ scala.Boolean = js.native
   def isCompositeType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLCompositeType */ scala.Boolean = js.native

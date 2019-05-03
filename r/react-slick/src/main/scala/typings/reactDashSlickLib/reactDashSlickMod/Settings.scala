@@ -61,6 +61,7 @@ trait Settings extends js.Object {
   var useTransform: js.UndefOr[scala.Boolean] = js.undefined
   var variableWidth: js.UndefOr[scala.Boolean] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
+  var verticalSwiping: js.UndefOr[scala.Boolean] = js.undefined
   var waitForAnimate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -118,6 +119,7 @@ object Settings {
     useTransform: js.UndefOr[scala.Boolean] = js.undefined,
     variableWidth: js.UndefOr[scala.Boolean] = js.undefined,
     vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalSwiping: js.UndefOr[scala.Boolean] = js.undefined,
     waitForAnimate: js.UndefOr[scala.Boolean] = js.undefined
   ): Settings = {
     val __obj = js.Dynamic.literal()
@@ -172,6 +174,7 @@ object Settings {
     if (!js.isUndefined(useTransform)) __obj.updateDynamic("useTransform")(useTransform)
     if (!js.isUndefined(variableWidth)) __obj.updateDynamic("variableWidth")(variableWidth)
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(verticalSwiping)) __obj.updateDynamic("verticalSwiping")(verticalSwiping)
     if (!js.isUndefined(waitForAnimate)) __obj.updateDynamic("waitForAnimate")(waitForAnimate)
     __obj.asInstanceOf[Settings]
   }

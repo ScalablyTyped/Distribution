@@ -230,6 +230,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def andHaving(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andHaving(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andHaving(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andHaving(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andHaving(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andHaving(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -287,6 +308,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhere(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhere(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhere(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhere(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhere(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhere(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -345,6 +387,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -402,6 +465,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNot(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNot(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNot(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNot(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNot(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNot(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -460,6 +544,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -624,6 +729,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def having(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def having(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def having(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def having(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def having(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def having(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   // Having
   def having(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   // Having
@@ -925,6 +1051,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def orHaving(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orHaving(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orHaving(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orHaving(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orHaving(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orHaving(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1086,6 +1233,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhere(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhere(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhere(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhere(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhere(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhere(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1144,6 +1312,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1249,6 +1438,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNot(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNot(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNot(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNot(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNot(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNot(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1307,6 +1517,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1625,6 +1856,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def where(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def where(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def where(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def where(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def where(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def where(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   // Wheres
   def where(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   // Wheres
@@ -1688,6 +1940,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1793,6 +2066,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNot(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNot(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereNot(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereNot(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNot(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereNot(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1851,6 +2145,27 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       scala.Unit
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(
+    column: ColumnRef,
+    operator: java.lang.String,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: ColumnRef, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(
+    column: ColumnRef,
+    value: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: ColumnRef, value: Value): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native

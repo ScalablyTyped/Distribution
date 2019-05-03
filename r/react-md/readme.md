@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md
 
-Typings are for version 1.10.1
+Typings are for version 1.10.2
 
 ## Library description:
 React material design components

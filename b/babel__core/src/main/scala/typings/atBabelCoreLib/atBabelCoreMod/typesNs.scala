@@ -1160,8 +1160,452 @@ object typesNs extends js.Object {
     readonly: js.UndefOr[scala.Boolean | scala.Null],
     _static: js.UndefOr[scala.Boolean | scala.Null]
   ): atBabelTypesLib.atBabelTypesMod.ClassProperty = js.native
-  def clone[T /* <: atBabelTypesLib.atBabelTypesMod.Node */](n: T): T = js.native
-  def cloneDeep[T /* <: atBabelTypesLib.atBabelTypesMod.Node */](n: T): T = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation): atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder): atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ArrayExpression): atBabelTypesLib.atBabelTypesMod.ArrayExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ArrayPattern): atBabelTypesLib.atBabelTypesMod.ArrayPattern = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.AssignmentExpression): atBabelTypesLib.atBabelTypesMod.AssignmentExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.AssignmentPattern): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.AwaitExpression): atBabelTypesLib.atBabelTypesMod.AwaitExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BigIntLiteral): atBabelTypesLib.atBabelTypesMod.BigIntLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BinaryExpression): atBabelTypesLib.atBabelTypesMod.BinaryExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BindExpression): atBabelTypesLib.atBabelTypesMod.BindExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BlockStatement): atBabelTypesLib.atBabelTypesMod.BlockStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteral): atBabelTypesLib.atBabelTypesMod.BooleanLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation): atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.BreakStatement): atBabelTypesLib.atBabelTypesMod.BreakStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.CallExpression): atBabelTypesLib.atBabelTypesMod.CallExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.CatchClause): atBabelTypesLib.atBabelTypesMod.CatchClause = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassBody): atBabelTypesLib.atBabelTypesMod.ClassBody = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassDeclaration): atBabelTypesLib.atBabelTypesMod.ClassDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassExpression): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassImplements): atBabelTypesLib.atBabelTypesMod.ClassImplements = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassMethod): atBabelTypesLib.atBabelTypesMod.ClassMethod = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod): atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty): atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ClassProperty): atBabelTypesLib.atBabelTypesMod.ClassProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ConditionalExpression): atBabelTypesLib.atBabelTypesMod.ConditionalExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ContinueStatement): atBabelTypesLib.atBabelTypesMod.ContinueStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DebuggerStatement): atBabelTypesLib.atBabelTypesMod.DebuggerStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareClass): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration): atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration): atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareFunction): atBabelTypesLib.atBabelTypesMod.DeclareFunction = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareInterface): atBabelTypesLib.atBabelTypesMod.DeclareInterface = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareModule): atBabelTypesLib.atBabelTypesMod.DeclareModule = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareModuleExports): atBabelTypesLib.atBabelTypesMod.DeclareModuleExports = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType): atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias): atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclareVariable): atBabelTypesLib.atBabelTypesMod.DeclareVariable = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DeclaredPredicate): atBabelTypesLib.atBabelTypesMod.DeclaredPredicate = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Decorator): atBabelTypesLib.atBabelTypesMod.Decorator = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Directive): atBabelTypesLib.atBabelTypesMod.Directive = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DirectiveLiteral): atBabelTypesLib.atBabelTypesMod.DirectiveLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DoExpression): atBabelTypesLib.atBabelTypesMod.DoExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.DoWhileStatement): atBabelTypesLib.atBabelTypesMod.DoWhileStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.EmptyStatement): atBabelTypesLib.atBabelTypesMod.EmptyStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation): atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration): atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration): atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier): atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier): atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExportSpecifier): atBabelTypesLib.atBabelTypesMod.ExportSpecifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ExpressionStatement): atBabelTypesLib.atBabelTypesMod.ExpressionStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.File): atBabelTypesLib.atBabelTypesMod.File = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ForInStatement): atBabelTypesLib.atBabelTypesMod.ForInStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ForOfStatement): atBabelTypesLib.atBabelTypesMod.ForOfStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ForStatement): atBabelTypesLib.atBabelTypesMod.ForStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.FunctionDeclaration): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.FunctionExpression): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeParam): atBabelTypesLib.atBabelTypesMod.FunctionTypeParam = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.Identifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.IfStatement): atBabelTypesLib.atBabelTypesMod.IfStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Import): atBabelTypesLib.atBabelTypesMod.Import = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ImportDeclaration): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier): atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier): atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ImportSpecifier): atBabelTypesLib.atBabelTypesMod.ImportSpecifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.InferredPredicate): atBabelTypesLib.atBabelTypesMod.InferredPredicate = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration): atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.InterfaceExtends): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation): atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.InterpreterDirective): atBabelTypesLib.atBabelTypesMod.InterpreterDirective = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXAttribute): atBabelTypesLib.atBabelTypesMod.JSXAttribute = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXClosingElement): atBabelTypesLib.atBabelTypesMod.JSXClosingElement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXClosingFragment): atBabelTypesLib.atBabelTypesMod.JSXClosingFragment = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXElement): atBabelTypesLib.atBabelTypesMod.JSXElement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression): atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer): atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXFragment): atBabelTypesLib.atBabelTypesMod.JSXFragment = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXIdentifier): atBabelTypesLib.atBabelTypesMod.JSXIdentifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXMemberExpression): atBabelTypesLib.atBabelTypesMod.JSXMemberExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXNamespacedName): atBabelTypesLib.atBabelTypesMod.JSXNamespacedName = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningElement): atBabelTypesLib.atBabelTypesMod.JSXOpeningElement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment): atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute): atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadChild): atBabelTypesLib.atBabelTypesMod.JSXSpreadChild = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.JSXText): atBabelTypesLib.atBabelTypesMod.JSXText = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.LabeledStatement): atBabelTypesLib.atBabelTypesMod.LabeledStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.LogicalExpression): atBabelTypesLib.atBabelTypesMod.LogicalExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.MemberExpression): atBabelTypesLib.atBabelTypesMod.MemberExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.MetaProperty): atBabelTypesLib.atBabelTypesMod.MetaProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation): atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NewExpression): atBabelTypesLib.atBabelTypesMod.NewExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Noop): atBabelTypesLib.atBabelTypesMod.Noop = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NullLiteral): atBabelTypesLib.atBabelTypesMod.NullLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.NumericLiteral): atBabelTypesLib.atBabelTypesMod.NumericLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectExpression): atBabelTypesLib.atBabelTypesMod.ObjectExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectMethod): atBabelTypesLib.atBabelTypesMod.ObjectMethod = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectPattern): atBabelTypesLib.atBabelTypesMod.ObjectPattern = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectProperty): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer): atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot): atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.OpaqueType): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.OptionalCallExpression): atBabelTypesLib.atBabelTypesMod.OptionalCallExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression): atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression): atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.PipelineBareFunction): atBabelTypesLib.atBabelTypesMod.PipelineBareFunction = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference): atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression): atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Placeholder): atBabelTypesLib.atBabelTypesMod.Placeholder = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.PrivateName): atBabelTypesLib.atBabelTypesMod.PrivateName = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Program): atBabelTypesLib.atBabelTypesMod.Program = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier): atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.RegExpLiteral): atBabelTypesLib.atBabelTypesMod.RegExpLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.RestElement): atBabelTypesLib.atBabelTypesMod.RestElement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ReturnStatement): atBabelTypesLib.atBabelTypesMod.ReturnStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.SequenceExpression): atBabelTypesLib.atBabelTypesMod.SequenceExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.SpreadElement): atBabelTypesLib.atBabelTypesMod.SpreadElement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.StringLiteral): atBabelTypesLib.atBabelTypesMod.StringLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation): atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Super): atBabelTypesLib.atBabelTypesMod.Super = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.SwitchCase): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.SwitchStatement): atBabelTypesLib.atBabelTypesMod.SwitchStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSAnyKeyword): atBabelTypesLib.atBabelTypesMod.TSAnyKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSArrayType): atBabelTypesLib.atBabelTypesMod.TSArrayType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSAsExpression): atBabelTypesLib.atBabelTypesMod.TSAsExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword): atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration): atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSConditionalType): atBabelTypesLib.atBabelTypesMod.TSConditionalType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration): atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSConstructorType): atBabelTypesLib.atBabelTypesMod.TSConstructorType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSDeclareFunction): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSDeclareMethod): atBabelTypesLib.atBabelTypesMod.TSDeclareMethod = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration): atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSEnumMember): atBabelTypesLib.atBabelTypesMod.TSEnumMember = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSExportAssignment): atBabelTypesLib.atBabelTypesMod.TSExportAssignment = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments): atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference): atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSFunctionType): atBabelTypesLib.atBabelTypesMod.TSFunctionType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration): atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSImportType): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSIndexSignature): atBabelTypesLib.atBabelTypesMod.TSIndexSignature = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType): atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSInferType): atBabelTypesLib.atBabelTypesMod.TSInferType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceBody): atBabelTypesLib.atBabelTypesMod.TSInterfaceBody = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration): atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSIntersectionType): atBabelTypesLib.atBabelTypesMod.TSIntersectionType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSLiteralType): atBabelTypesLib.atBabelTypesMod.TSLiteralType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSMappedType): atBabelTypesLib.atBabelTypesMod.TSMappedType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSMethodSignature): atBabelTypesLib.atBabelTypesMod.TSMethodSignature = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSModuleBlock): atBabelTypesLib.atBabelTypesMod.TSModuleBlock = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration): atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration): atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSNeverKeyword): atBabelTypesLib.atBabelTypesMod.TSNeverKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSNonNullExpression): atBabelTypesLib.atBabelTypesMod.TSNonNullExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSNullKeyword): atBabelTypesLib.atBabelTypesMod.TSNullKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSNumberKeyword): atBabelTypesLib.atBabelTypesMod.TSNumberKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSObjectKeyword): atBabelTypesLib.atBabelTypesMod.TSObjectKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSOptionalType): atBabelTypesLib.atBabelTypesMod.TSOptionalType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSParameterProperty): atBabelTypesLib.atBabelTypesMod.TSParameterProperty = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSParenthesizedType): atBabelTypesLib.atBabelTypesMod.TSParenthesizedType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSPropertySignature): atBabelTypesLib.atBabelTypesMod.TSPropertySignature = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSQualifiedName): atBabelTypesLib.atBabelTypesMod.TSQualifiedName = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSRestType): atBabelTypesLib.atBabelTypesMod.TSRestType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSStringKeyword): atBabelTypesLib.atBabelTypesMod.TSStringKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword): atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSThisType): atBabelTypesLib.atBabelTypesMod.TSThisType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTupleType): atBabelTypesLib.atBabelTypesMod.TSTupleType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration): atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeAssertion): atBabelTypesLib.atBabelTypesMod.TSTypeAssertion = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeLiteral): atBabelTypesLib.atBabelTypesMod.TSTypeLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeOperator): atBabelTypesLib.atBabelTypesMod.TSTypeOperator = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameter): atBabelTypesLib.atBabelTypesMod.TSTypeParameter = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration): atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation): atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypePredicate): atBabelTypesLib.atBabelTypesMod.TSTypePredicate = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeQuery): atBabelTypesLib.atBabelTypesMod.TSTypeQuery = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSTypeReference): atBabelTypesLib.atBabelTypesMod.TSTypeReference = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword): atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSUnionType): atBabelTypesLib.atBabelTypesMod.TSUnionType = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword): atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TSVoidKeyword): atBabelTypesLib.atBabelTypesMod.TSVoidKeyword = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression): atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TemplateElement): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TemplateLiteral): atBabelTypesLib.atBabelTypesMod.TemplateLiteral = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ThisExpression): atBabelTypesLib.atBabelTypesMod.ThisExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.ThrowStatement): atBabelTypesLib.atBabelTypesMod.ThrowStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TryStatement): atBabelTypesLib.atBabelTypesMod.TryStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeAlias): atBabelTypesLib.atBabelTypesMod.TypeAlias = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeAnnotation): atBabelTypesLib.atBabelTypesMod.TypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeCastExpression): atBabelTypesLib.atBabelTypesMod.TypeCastExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeParameter): atBabelTypesLib.atBabelTypesMod.TypeParameter = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration): atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation): atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.UnaryExpression): atBabelTypesLib.atBabelTypesMod.UnaryExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.UpdateExpression): atBabelTypesLib.atBabelTypesMod.UpdateExpression = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.VariableDeclaration): atBabelTypesLib.atBabelTypesMod.VariableDeclaration = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.VariableDeclarator): atBabelTypesLib.atBabelTypesMod.VariableDeclarator = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.Variance): atBabelTypesLib.atBabelTypesMod.Variance = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation): atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.WhileStatement): atBabelTypesLib.atBabelTypesMod.WhileStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.WithStatement): atBabelTypesLib.atBabelTypesMod.WithStatement = js.native
+  def clone(n: atBabelTypesLib.atBabelTypesMod.YieldExpression): atBabelTypesLib.atBabelTypesMod.YieldExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation): atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder): atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayExpression): atBabelTypesLib.atBabelTypesMod.ArrayExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayPattern): atBabelTypesLib.atBabelTypesMod.ArrayPattern = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.AssignmentExpression): atBabelTypesLib.atBabelTypesMod.AssignmentExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.AssignmentPattern): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.AwaitExpression): atBabelTypesLib.atBabelTypesMod.AwaitExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BigIntLiteral): atBabelTypesLib.atBabelTypesMod.BigIntLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BinaryExpression): atBabelTypesLib.atBabelTypesMod.BinaryExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BindExpression): atBabelTypesLib.atBabelTypesMod.BindExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BlockStatement): atBabelTypesLib.atBabelTypesMod.BlockStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteral): atBabelTypesLib.atBabelTypesMod.BooleanLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation): atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.BreakStatement): atBabelTypesLib.atBabelTypesMod.BreakStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.CallExpression): atBabelTypesLib.atBabelTypesMod.CallExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.CatchClause): atBabelTypesLib.atBabelTypesMod.CatchClause = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassBody): atBabelTypesLib.atBabelTypesMod.ClassBody = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassDeclaration): atBabelTypesLib.atBabelTypesMod.ClassDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassExpression): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassImplements): atBabelTypesLib.atBabelTypesMod.ClassImplements = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassMethod): atBabelTypesLib.atBabelTypesMod.ClassMethod = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod): atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty): atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ClassProperty): atBabelTypesLib.atBabelTypesMod.ClassProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ConditionalExpression): atBabelTypesLib.atBabelTypesMod.ConditionalExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ContinueStatement): atBabelTypesLib.atBabelTypesMod.ContinueStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DebuggerStatement): atBabelTypesLib.atBabelTypesMod.DebuggerStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareClass): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration): atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration): atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareFunction): atBabelTypesLib.atBabelTypesMod.DeclareFunction = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareInterface): atBabelTypesLib.atBabelTypesMod.DeclareInterface = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareModule): atBabelTypesLib.atBabelTypesMod.DeclareModule = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareModuleExports): atBabelTypesLib.atBabelTypesMod.DeclareModuleExports = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType): atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias): atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareVariable): atBabelTypesLib.atBabelTypesMod.DeclareVariable = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DeclaredPredicate): atBabelTypesLib.atBabelTypesMod.DeclaredPredicate = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Decorator): atBabelTypesLib.atBabelTypesMod.Decorator = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Directive): atBabelTypesLib.atBabelTypesMod.Directive = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DirectiveLiteral): atBabelTypesLib.atBabelTypesMod.DirectiveLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DoExpression): atBabelTypesLib.atBabelTypesMod.DoExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.DoWhileStatement): atBabelTypesLib.atBabelTypesMod.DoWhileStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.EmptyStatement): atBabelTypesLib.atBabelTypesMod.EmptyStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation): atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration): atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration): atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier): atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier): atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExportSpecifier): atBabelTypesLib.atBabelTypesMod.ExportSpecifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ExpressionStatement): atBabelTypesLib.atBabelTypesMod.ExpressionStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.File): atBabelTypesLib.atBabelTypesMod.File = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ForInStatement): atBabelTypesLib.atBabelTypesMod.ForInStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ForOfStatement): atBabelTypesLib.atBabelTypesMod.ForOfStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ForStatement): atBabelTypesLib.atBabelTypesMod.ForStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionDeclaration): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionExpression): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeParam): atBabelTypesLib.atBabelTypesMod.FunctionTypeParam = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.Identifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.IfStatement): atBabelTypesLib.atBabelTypesMod.IfStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Import): atBabelTypesLib.atBabelTypesMod.Import = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ImportDeclaration): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier): atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier): atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ImportSpecifier): atBabelTypesLib.atBabelTypesMod.ImportSpecifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.InferredPredicate): atBabelTypesLib.atBabelTypesMod.InferredPredicate = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration): atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceExtends): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation): atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.InterpreterDirective): atBabelTypesLib.atBabelTypesMod.InterpreterDirective = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXAttribute): atBabelTypesLib.atBabelTypesMod.JSXAttribute = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXClosingElement): atBabelTypesLib.atBabelTypesMod.JSXClosingElement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXClosingFragment): atBabelTypesLib.atBabelTypesMod.JSXClosingFragment = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXElement): atBabelTypesLib.atBabelTypesMod.JSXElement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression): atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer): atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXFragment): atBabelTypesLib.atBabelTypesMod.JSXFragment = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXIdentifier): atBabelTypesLib.atBabelTypesMod.JSXIdentifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXMemberExpression): atBabelTypesLib.atBabelTypesMod.JSXMemberExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXNamespacedName): atBabelTypesLib.atBabelTypesMod.JSXNamespacedName = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningElement): atBabelTypesLib.atBabelTypesMod.JSXOpeningElement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment): atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute): atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadChild): atBabelTypesLib.atBabelTypesMod.JSXSpreadChild = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.JSXText): atBabelTypesLib.atBabelTypesMod.JSXText = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.LabeledStatement): atBabelTypesLib.atBabelTypesMod.LabeledStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.LogicalExpression): atBabelTypesLib.atBabelTypesMod.LogicalExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.MemberExpression): atBabelTypesLib.atBabelTypesMod.MemberExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.MetaProperty): atBabelTypesLib.atBabelTypesMod.MetaProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation): atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NewExpression): atBabelTypesLib.atBabelTypesMod.NewExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Noop): atBabelTypesLib.atBabelTypesMod.Noop = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NullLiteral): atBabelTypesLib.atBabelTypesMod.NullLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.NumericLiteral): atBabelTypesLib.atBabelTypesMod.NumericLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectExpression): atBabelTypesLib.atBabelTypesMod.ObjectExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectMethod): atBabelTypesLib.atBabelTypesMod.ObjectMethod = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectPattern): atBabelTypesLib.atBabelTypesMod.ObjectPattern = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectProperty): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer): atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot): atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.OpaqueType): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.OptionalCallExpression): atBabelTypesLib.atBabelTypesMod.OptionalCallExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression): atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression): atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.PipelineBareFunction): atBabelTypesLib.atBabelTypesMod.PipelineBareFunction = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference): atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression): atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Placeholder): atBabelTypesLib.atBabelTypesMod.Placeholder = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.PrivateName): atBabelTypesLib.atBabelTypesMod.PrivateName = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Program): atBabelTypesLib.atBabelTypesMod.Program = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier): atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.RegExpLiteral): atBabelTypesLib.atBabelTypesMod.RegExpLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.RestElement): atBabelTypesLib.atBabelTypesMod.RestElement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ReturnStatement): atBabelTypesLib.atBabelTypesMod.ReturnStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.SequenceExpression): atBabelTypesLib.atBabelTypesMod.SequenceExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.SpreadElement): atBabelTypesLib.atBabelTypesMod.SpreadElement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.StringLiteral): atBabelTypesLib.atBabelTypesMod.StringLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation): atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Super): atBabelTypesLib.atBabelTypesMod.Super = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.SwitchCase): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.SwitchStatement): atBabelTypesLib.atBabelTypesMod.SwitchStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSAnyKeyword): atBabelTypesLib.atBabelTypesMod.TSAnyKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSArrayType): atBabelTypesLib.atBabelTypesMod.TSArrayType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSAsExpression): atBabelTypesLib.atBabelTypesMod.TSAsExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword): atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration): atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSConditionalType): atBabelTypesLib.atBabelTypesMod.TSConditionalType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration): atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSConstructorType): atBabelTypesLib.atBabelTypesMod.TSConstructorType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSDeclareFunction): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSDeclareMethod): atBabelTypesLib.atBabelTypesMod.TSDeclareMethod = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration): atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSEnumMember): atBabelTypesLib.atBabelTypesMod.TSEnumMember = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSExportAssignment): atBabelTypesLib.atBabelTypesMod.TSExportAssignment = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments): atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference): atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSFunctionType): atBabelTypesLib.atBabelTypesMod.TSFunctionType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration): atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSImportType): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSIndexSignature): atBabelTypesLib.atBabelTypesMod.TSIndexSignature = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType): atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSInferType): atBabelTypesLib.atBabelTypesMod.TSInferType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceBody): atBabelTypesLib.atBabelTypesMod.TSInterfaceBody = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration): atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSIntersectionType): atBabelTypesLib.atBabelTypesMod.TSIntersectionType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSLiteralType): atBabelTypesLib.atBabelTypesMod.TSLiteralType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSMappedType): atBabelTypesLib.atBabelTypesMod.TSMappedType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSMethodSignature): atBabelTypesLib.atBabelTypesMod.TSMethodSignature = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSModuleBlock): atBabelTypesLib.atBabelTypesMod.TSModuleBlock = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration): atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration): atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSNeverKeyword): atBabelTypesLib.atBabelTypesMod.TSNeverKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSNonNullExpression): atBabelTypesLib.atBabelTypesMod.TSNonNullExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSNullKeyword): atBabelTypesLib.atBabelTypesMod.TSNullKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSNumberKeyword): atBabelTypesLib.atBabelTypesMod.TSNumberKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSObjectKeyword): atBabelTypesLib.atBabelTypesMod.TSObjectKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSOptionalType): atBabelTypesLib.atBabelTypesMod.TSOptionalType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSParameterProperty): atBabelTypesLib.atBabelTypesMod.TSParameterProperty = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSParenthesizedType): atBabelTypesLib.atBabelTypesMod.TSParenthesizedType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSPropertySignature): atBabelTypesLib.atBabelTypesMod.TSPropertySignature = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSQualifiedName): atBabelTypesLib.atBabelTypesMod.TSQualifiedName = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSRestType): atBabelTypesLib.atBabelTypesMod.TSRestType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSStringKeyword): atBabelTypesLib.atBabelTypesMod.TSStringKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword): atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSThisType): atBabelTypesLib.atBabelTypesMod.TSThisType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTupleType): atBabelTypesLib.atBabelTypesMod.TSTupleType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration): atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAssertion): atBabelTypesLib.atBabelTypesMod.TSTypeAssertion = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeLiteral): atBabelTypesLib.atBabelTypesMod.TSTypeLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeOperator): atBabelTypesLib.atBabelTypesMod.TSTypeOperator = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameter): atBabelTypesLib.atBabelTypesMod.TSTypeParameter = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration): atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation): atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypePredicate): atBabelTypesLib.atBabelTypesMod.TSTypePredicate = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeQuery): atBabelTypesLib.atBabelTypesMod.TSTypeQuery = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeReference): atBabelTypesLib.atBabelTypesMod.TSTypeReference = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword): atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSUnionType): atBabelTypesLib.atBabelTypesMod.TSUnionType = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword): atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TSVoidKeyword): atBabelTypesLib.atBabelTypesMod.TSVoidKeyword = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression): atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TemplateElement): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TemplateLiteral): atBabelTypesLib.atBabelTypesMod.TemplateLiteral = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ThisExpression): atBabelTypesLib.atBabelTypesMod.ThisExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.ThrowStatement): atBabelTypesLib.atBabelTypesMod.ThrowStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TryStatement): atBabelTypesLib.atBabelTypesMod.TryStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeAlias): atBabelTypesLib.atBabelTypesMod.TypeAlias = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeAnnotation): atBabelTypesLib.atBabelTypesMod.TypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeCastExpression): atBabelTypesLib.atBabelTypesMod.TypeCastExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameter): atBabelTypesLib.atBabelTypesMod.TypeParameter = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration): atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation): atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.UnaryExpression): atBabelTypesLib.atBabelTypesMod.UnaryExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.UpdateExpression): atBabelTypesLib.atBabelTypesMod.UpdateExpression = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.VariableDeclaration): atBabelTypesLib.atBabelTypesMod.VariableDeclaration = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.VariableDeclarator): atBabelTypesLib.atBabelTypesMod.VariableDeclarator = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.Variance): atBabelTypesLib.atBabelTypesMod.Variance = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation): atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.WhileStatement): atBabelTypesLib.atBabelTypesMod.WhileStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.WithStatement): atBabelTypesLib.atBabelTypesMod.WithStatement = js.native
+  def cloneDeep(n: atBabelTypesLib.atBabelTypesMod.YieldExpression): atBabelTypesLib.atBabelTypesMod.YieldExpression = js.native
   def conditionalExpression(
     test: atBabelTypesLib.atBabelTypesMod.Expression,
     consequent: atBabelTypesLib.atBabelTypesMod.Expression,
@@ -5105,8 +5549,665 @@ object typesNs extends js.Object {
   def regExpLiteral(pattern: java.lang.String, flags: java.lang.String): atBabelTypesLib.atBabelTypesMod.RegExpLiteral = js.native
   def removeProperties(n: atBabelTypesLib.atBabelTypesMod.Node): scala.Unit = js.native
   def removeProperties(n: atBabelTypesLib.atBabelTypesMod.Node, opts: atBabelTypesLib.Anon_PreserveComments): scala.Unit = js.native
-  def removePropertiesDeep[T /* <: atBabelTypesLib.atBabelTypesMod.Node */](n: T): T = js.native
-  def removePropertiesDeep[T /* <: atBabelTypesLib.atBabelTypesMod.Node */](n: T, opts: atBabelTypesLib.Anon_PreserveComments): T = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation): atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.AnyTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder): atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ArgumentPlaceholder = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayExpression): atBabelTypesLib.atBabelTypesMod.ArrayExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ArrayExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayPattern): atBabelTypesLib.atBabelTypesMod.ArrayPattern = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayPattern, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ArrayPattern = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AssignmentExpression): atBabelTypesLib.atBabelTypesMod.AssignmentExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.AssignmentExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.AssignmentExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AssignmentPattern): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AssignmentPattern, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.AssignmentPattern = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AwaitExpression): atBabelTypesLib.atBabelTypesMod.AwaitExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.AwaitExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.AwaitExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BigIntLiteral): atBabelTypesLib.atBabelTypesMod.BigIntLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BigIntLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.BigIntLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BinaryExpression): atBabelTypesLib.atBabelTypesMod.BinaryExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BinaryExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.BinaryExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BindExpression): atBabelTypesLib.atBabelTypesMod.BindExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BindExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.BindExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BlockStatement): atBabelTypesLib.atBabelTypesMod.BlockStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BlockStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.BlockStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteral): atBabelTypesLib.atBabelTypesMod.BooleanLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.BooleanLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.BooleanLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation): atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.BooleanTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BreakStatement): atBabelTypesLib.atBabelTypesMod.BreakStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.BreakStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.BreakStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.CallExpression): atBabelTypesLib.atBabelTypesMod.CallExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.CallExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.CallExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.CatchClause): atBabelTypesLib.atBabelTypesMod.CatchClause = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.CatchClause, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.CatchClause = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassBody): atBabelTypesLib.atBabelTypesMod.ClassBody = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassBody, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassBody = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassDeclaration): atBabelTypesLib.atBabelTypesMod.ClassDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassDeclaration, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassExpression): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassImplements): atBabelTypesLib.atBabelTypesMod.ClassImplements = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassImplements, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassImplements = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassMethod): atBabelTypesLib.atBabelTypesMod.ClassMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassMethod, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod): atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassPrivateMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty): atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ClassPrivateProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassProperty): atBabelTypesLib.atBabelTypesMod.ClassProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ClassProperty, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ClassProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ConditionalExpression): atBabelTypesLib.atBabelTypesMod.ConditionalExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ConditionalExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ConditionalExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ContinueStatement): atBabelTypesLib.atBabelTypesMod.ContinueStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ContinueStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ContinueStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DebuggerStatement): atBabelTypesLib.atBabelTypesMod.DebuggerStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DebuggerStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DebuggerStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareClass): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareClass, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration): atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.DeclareExportAllDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration): atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.DeclareExportDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareFunction): atBabelTypesLib.atBabelTypesMod.DeclareFunction = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareFunction, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareFunction = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareInterface): atBabelTypesLib.atBabelTypesMod.DeclareInterface = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareInterface, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareInterface = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareModule): atBabelTypesLib.atBabelTypesMod.DeclareModule = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareModuleExports): atBabelTypesLib.atBabelTypesMod.DeclareModuleExports = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.DeclareModuleExports,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.DeclareModuleExports = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareModule, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareModule = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType): atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareOpaqueType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias): atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareTypeAlias = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareVariable): atBabelTypesLib.atBabelTypesMod.DeclareVariable = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclareVariable, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclareVariable = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclaredPredicate): atBabelTypesLib.atBabelTypesMod.DeclaredPredicate = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DeclaredPredicate, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DeclaredPredicate = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Decorator): atBabelTypesLib.atBabelTypesMod.Decorator = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Decorator, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Decorator = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Directive): atBabelTypesLib.atBabelTypesMod.Directive = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DirectiveLiteral): atBabelTypesLib.atBabelTypesMod.DirectiveLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DirectiveLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DirectiveLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Directive, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Directive = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DoExpression): atBabelTypesLib.atBabelTypesMod.DoExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DoExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DoExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DoWhileStatement): atBabelTypesLib.atBabelTypesMod.DoWhileStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.DoWhileStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.DoWhileStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.EmptyStatement): atBabelTypesLib.atBabelTypesMod.EmptyStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.EmptyStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.EmptyStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation): atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.EmptyTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExistsTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration): atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExportAllDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration): atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier): atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier): atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportSpecifier): atBabelTypesLib.atBabelTypesMod.ExportSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExportSpecifier, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ExportSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ExpressionStatement): atBabelTypesLib.atBabelTypesMod.ExpressionStatement = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ExpressionStatement,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ExpressionStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.File): atBabelTypesLib.atBabelTypesMod.File = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.File, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.File = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ForInStatement): atBabelTypesLib.atBabelTypesMod.ForInStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ForInStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ForInStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ForOfStatement): atBabelTypesLib.atBabelTypesMod.ForOfStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ForOfStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ForOfStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ForStatement): atBabelTypesLib.atBabelTypesMod.ForStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ForStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ForStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionDeclaration): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.FunctionDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionExpression): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.FunctionTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeParam): atBabelTypesLib.atBabelTypesMod.FunctionTypeParam = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.FunctionTypeParam, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.FunctionTypeParam = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.Identifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Identifier, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Identifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.IfStatement): atBabelTypesLib.atBabelTypesMod.IfStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.IfStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.IfStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Import): atBabelTypesLib.atBabelTypesMod.Import = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ImportDeclaration): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ImportDeclaration, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier): atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier): atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ImportSpecifier): atBabelTypesLib.atBabelTypesMod.ImportSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ImportSpecifier, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ImportSpecifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Import, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Import = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InferredPredicate): atBabelTypesLib.atBabelTypesMod.InferredPredicate = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InferredPredicate, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.InferredPredicate = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration): atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.InterfaceDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceExtends): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceExtends, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation): atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.InterfaceTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.InterpreterDirective): atBabelTypesLib.atBabelTypesMod.InterpreterDirective = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.InterpreterDirective,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.InterpreterDirective = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.IntersectionTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXAttribute): atBabelTypesLib.atBabelTypesMod.JSXAttribute = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXAttribute, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXAttribute = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXClosingElement): atBabelTypesLib.atBabelTypesMod.JSXClosingElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXClosingElement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXClosingElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXClosingFragment): atBabelTypesLib.atBabelTypesMod.JSXClosingFragment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXClosingFragment, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXClosingFragment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXElement): atBabelTypesLib.atBabelTypesMod.JSXElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXElement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression): atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXEmptyExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer): atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.JSXExpressionContainer = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXFragment): atBabelTypesLib.atBabelTypesMod.JSXFragment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXFragment, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXFragment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXIdentifier): atBabelTypesLib.atBabelTypesMod.JSXIdentifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXIdentifier, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXIdentifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXMemberExpression): atBabelTypesLib.atBabelTypesMod.JSXMemberExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.JSXMemberExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.JSXMemberExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXNamespacedName): atBabelTypesLib.atBabelTypesMod.JSXNamespacedName = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXNamespacedName, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXNamespacedName = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningElement): atBabelTypesLib.atBabelTypesMod.JSXOpeningElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningElement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXOpeningElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment): atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXOpeningFragment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute): atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXSpreadAttribute = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadChild): atBabelTypesLib.atBabelTypesMod.JSXSpreadChild = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXSpreadChild, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXSpreadChild = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXText): atBabelTypesLib.atBabelTypesMod.JSXText = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.JSXText, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.JSXText = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.LabeledStatement): atBabelTypesLib.atBabelTypesMod.LabeledStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.LabeledStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.LabeledStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.LogicalExpression): atBabelTypesLib.atBabelTypesMod.LogicalExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.LogicalExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.LogicalExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.MemberExpression): atBabelTypesLib.atBabelTypesMod.MemberExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.MemberExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.MemberExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.MetaProperty): atBabelTypesLib.atBabelTypesMod.MetaProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.MetaProperty, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.MetaProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation): atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.MixedTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NewExpression): atBabelTypesLib.atBabelTypesMod.NewExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NewExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.NewExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Noop): atBabelTypesLib.atBabelTypesMod.Noop = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Noop, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Noop = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NullLiteral): atBabelTypesLib.atBabelTypesMod.NullLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.NullLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NullLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.NullLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.NullableTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.NumberLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation): atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.NumberTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NumericLiteral): atBabelTypesLib.atBabelTypesMod.NumericLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.NumericLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.NumericLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectExpression): atBabelTypesLib.atBabelTypesMod.ObjectExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ObjectExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectMethod): atBabelTypesLib.atBabelTypesMod.ObjectMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectMethod, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ObjectMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectPattern): atBabelTypesLib.atBabelTypesMod.ObjectPattern = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectPattern, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ObjectPattern = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectProperty): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectProperty, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ObjectTypeCallProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer): atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ObjectTypeIndexer = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot): atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ObjectTypeInternalSlot = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ObjectTypeProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty): atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ObjectTypeSpreadProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.OpaqueType): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.OpaqueType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.OptionalCallExpression): atBabelTypesLib.atBabelTypesMod.OptionalCallExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.OptionalCallExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.OptionalCallExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression): atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.OptionalMemberExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression): atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.ParenthesizedExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.PipelineBareFunction): atBabelTypesLib.atBabelTypesMod.PipelineBareFunction = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.PipelineBareFunction,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.PipelineBareFunction = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference): atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.PipelinePrimaryTopicReference = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression): atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.PipelineTopicExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Placeholder): atBabelTypesLib.atBabelTypesMod.Placeholder = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Placeholder, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Placeholder = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.PrivateName): atBabelTypesLib.atBabelTypesMod.PrivateName = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.PrivateName, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.PrivateName = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Program): atBabelTypesLib.atBabelTypesMod.Program = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Program, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Program = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier): atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.RegExpLiteral): atBabelTypesLib.atBabelTypesMod.RegExpLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.RegExpLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.RegExpLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.RestElement): atBabelTypesLib.atBabelTypesMod.RestElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.RestElement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.RestElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ReturnStatement): atBabelTypesLib.atBabelTypesMod.ReturnStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ReturnStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ReturnStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SequenceExpression): atBabelTypesLib.atBabelTypesMod.SequenceExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SequenceExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.SequenceExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SpreadElement): atBabelTypesLib.atBabelTypesMod.SpreadElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SpreadElement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.SpreadElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.StringLiteral): atBabelTypesLib.atBabelTypesMod.StringLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation): atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.StringLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.StringLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation): atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Super): atBabelTypesLib.atBabelTypesMod.Super = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Super, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Super = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SwitchCase): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SwitchCase, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SwitchStatement): atBabelTypesLib.atBabelTypesMod.SwitchStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.SwitchStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.SwitchStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSAnyKeyword): atBabelTypesLib.atBabelTypesMod.TSAnyKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSAnyKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSAnyKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSArrayType): atBabelTypesLib.atBabelTypesMod.TSArrayType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSArrayType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSArrayType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSAsExpression): atBabelTypesLib.atBabelTypesMod.TSAsExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSAsExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSAsExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword): atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSBooleanKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration): atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSCallSignatureDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSConditionalType): atBabelTypesLib.atBabelTypesMod.TSConditionalType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSConditionalType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSConditionalType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration): atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSConstructSignatureDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSConstructorType): atBabelTypesLib.atBabelTypesMod.TSConstructorType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSConstructorType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSConstructorType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSDeclareFunction): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSDeclareFunction, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSDeclareMethod): atBabelTypesLib.atBabelTypesMod.TSDeclareMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSDeclareMethod, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSDeclareMethod = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration): atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSEnumDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSEnumMember): atBabelTypesLib.atBabelTypesMod.TSEnumMember = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSEnumMember, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSEnumMember = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSExportAssignment): atBabelTypesLib.atBabelTypesMod.TSExportAssignment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSExportAssignment, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSExportAssignment = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments): atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference): atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSFunctionType): atBabelTypesLib.atBabelTypesMod.TSFunctionType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSFunctionType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSFunctionType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration): atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSImportType): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSImportType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSIndexSignature): atBabelTypesLib.atBabelTypesMod.TSIndexSignature = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSIndexSignature, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSIndexSignature = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType): atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSIndexedAccessType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSInferType): atBabelTypesLib.atBabelTypesMod.TSInferType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSInferType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSInferType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceBody): atBabelTypesLib.atBabelTypesMod.TSInterfaceBody = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceBody, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSInterfaceBody = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration): atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSInterfaceDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSIntersectionType): atBabelTypesLib.atBabelTypesMod.TSIntersectionType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSIntersectionType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSIntersectionType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSLiteralType): atBabelTypesLib.atBabelTypesMod.TSLiteralType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSLiteralType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSLiteralType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSMappedType): atBabelTypesLib.atBabelTypesMod.TSMappedType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSMappedType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSMappedType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSMethodSignature): atBabelTypesLib.atBabelTypesMod.TSMethodSignature = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSMethodSignature, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSMethodSignature = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSModuleBlock): atBabelTypesLib.atBabelTypesMod.TSModuleBlock = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSModuleBlock, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSModuleBlock = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration): atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSModuleDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration): atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSNamespaceExportDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNeverKeyword): atBabelTypesLib.atBabelTypesMod.TSNeverKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNeverKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSNeverKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNonNullExpression): atBabelTypesLib.atBabelTypesMod.TSNonNullExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSNonNullExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSNonNullExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNullKeyword): atBabelTypesLib.atBabelTypesMod.TSNullKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNullKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSNullKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNumberKeyword): atBabelTypesLib.atBabelTypesMod.TSNumberKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSNumberKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSNumberKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSObjectKeyword): atBabelTypesLib.atBabelTypesMod.TSObjectKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSObjectKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSObjectKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSOptionalType): atBabelTypesLib.atBabelTypesMod.TSOptionalType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSOptionalType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSOptionalType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSParameterProperty): atBabelTypesLib.atBabelTypesMod.TSParameterProperty = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSParameterProperty,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSParameterProperty = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSParenthesizedType): atBabelTypesLib.atBabelTypesMod.TSParenthesizedType = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSParenthesizedType,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSParenthesizedType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSPropertySignature): atBabelTypesLib.atBabelTypesMod.TSPropertySignature = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSPropertySignature,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSPropertySignature = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSQualifiedName): atBabelTypesLib.atBabelTypesMod.TSQualifiedName = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSQualifiedName, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSQualifiedName = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSRestType): atBabelTypesLib.atBabelTypesMod.TSRestType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSRestType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSRestType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSStringKeyword): atBabelTypesLib.atBabelTypesMod.TSStringKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSStringKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSStringKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword): atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSSymbolKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSThisType): atBabelTypesLib.atBabelTypesMod.TSThisType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSThisType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSThisType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTupleType): atBabelTypesLib.atBabelTypesMod.TSTupleType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTupleType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTupleType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration): atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSTypeAliasDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAssertion): atBabelTypesLib.atBabelTypesMod.TSTypeAssertion = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeAssertion, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeAssertion = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeLiteral): atBabelTypesLib.atBabelTypesMod.TSTypeLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeOperator): atBabelTypesLib.atBabelTypesMod.TSTypeOperator = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeOperator, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeOperator = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameter): atBabelTypesLib.atBabelTypesMod.TSTypeParameter = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration): atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation): atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeParameter, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeParameter = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypePredicate): atBabelTypesLib.atBabelTypesMod.TSTypePredicate = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypePredicate, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypePredicate = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeQuery): atBabelTypesLib.atBabelTypesMod.TSTypeQuery = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeQuery, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeQuery = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeReference): atBabelTypesLib.atBabelTypesMod.TSTypeReference = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSTypeReference, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSTypeReference = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword): atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSUndefinedKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSUnionType): atBabelTypesLib.atBabelTypesMod.TSUnionType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSUnionType, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSUnionType = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword): atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSUnknownKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSVoidKeyword): atBabelTypesLib.atBabelTypesMod.TSVoidKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TSVoidKeyword, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TSVoidKeyword = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression): atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TaggedTemplateExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TemplateElement): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TemplateElement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TemplateElement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TemplateLiteral): atBabelTypesLib.atBabelTypesMod.TemplateLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TemplateLiteral, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TemplateLiteral = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ThisExpression): atBabelTypesLib.atBabelTypesMod.ThisExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ThisExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ThisExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation): atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ThisTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ThrowStatement): atBabelTypesLib.atBabelTypesMod.ThrowStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.ThrowStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.ThrowStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TryStatement): atBabelTypesLib.atBabelTypesMod.TryStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TryStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TryStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TupleTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeAlias): atBabelTypesLib.atBabelTypesMod.TypeAlias = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeAlias, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TypeAlias = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeAnnotation): atBabelTypesLib.atBabelTypesMod.TypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeAnnotation, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeCastExpression): atBabelTypesLib.atBabelTypesMod.TypeCastExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeCastExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TypeCastExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameter): atBabelTypesLib.atBabelTypesMod.TypeParameter = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration): atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation): atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeParameter, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.TypeParameter = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation): atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.TypeofTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.UnaryExpression): atBabelTypesLib.atBabelTypesMod.UnaryExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.UnaryExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.UnaryExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation): atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.UnionTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.UpdateExpression): atBabelTypesLib.atBabelTypesMod.UpdateExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.UpdateExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.UpdateExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.VariableDeclaration): atBabelTypesLib.atBabelTypesMod.VariableDeclaration = js.native
+  def removePropertiesDeep(
+    n: atBabelTypesLib.atBabelTypesMod.VariableDeclaration,
+    opts: atBabelTypesLib.Anon_PreserveComments
+  ): atBabelTypesLib.atBabelTypesMod.VariableDeclaration = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.VariableDeclarator): atBabelTypesLib.atBabelTypesMod.VariableDeclarator = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.VariableDeclarator, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.VariableDeclarator = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Variance): atBabelTypesLib.atBabelTypesMod.Variance = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.Variance, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.Variance = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation): atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.VoidTypeAnnotation = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.WhileStatement): atBabelTypesLib.atBabelTypesMod.WhileStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.WhileStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.WhileStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.WithStatement): atBabelTypesLib.atBabelTypesMod.WithStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.WithStatement, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.WithStatement = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.YieldExpression): atBabelTypesLib.atBabelTypesMod.YieldExpression = js.native
+  def removePropertiesDeep(n: atBabelTypesLib.atBabelTypesMod.YieldExpression, opts: atBabelTypesLib.Anon_PreserveComments): atBabelTypesLib.atBabelTypesMod.YieldExpression = js.native
   def restElement(argument: atBabelTypesLib.atBabelTypesMod.LVal): atBabelTypesLib.atBabelTypesMod.RestElement = js.native
   def restElement(
     argument: atBabelTypesLib.atBabelTypesMod.LVal,

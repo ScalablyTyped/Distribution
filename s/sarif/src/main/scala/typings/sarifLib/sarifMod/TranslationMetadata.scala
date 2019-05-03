@@ -19,7 +19,7 @@ trait TranslationMetadata extends js.Object {
     */
   var fullName: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The absolute URI from whichinformation related to the translation metadata can be downloaded.
+    * The absolute URI from which information related to the translation metadata can be downloaded.
     */
   var informationUri: js.UndefOr[java.lang.String] = js.undefined
   /**

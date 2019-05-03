@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ErrorFailureGroup[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */] extends js.Object {
+trait Anon_ErrorFailureGroup extends js.Object {
   def failure(error: stdLib.Error): js.Any
-  def success(group: T): js.Any
+  def success(group: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser): js.Any
 }
 
 object Anon_ErrorFailureGroup {
   @scala.inline
-  def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](failure: stdLib.Error => js.Any, success: T => js.Any): Anon_ErrorFailureGroup[T] = {
+  def apply(failure: stdLib.Error => js.Any, success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser => js.Any): Anon_ErrorFailureGroup = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction1(success))
   
-    __obj.asInstanceOf[Anon_ErrorFailureGroup[T]]
+    __obj.asInstanceOf[Anon_ErrorFailureGroup]
   }
 }
 

@@ -55,37 +55,31 @@ trait XMLHttpRequestEventTarget extends js.Object {
     `type`: reactDashNativeLib.reactDashNativeLibStrings.abort,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
   ): scala.Unit = js.native
-  //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.error,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
   ): scala.Unit = js.native
-  //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
   def removeEventListener_load(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.load,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
   ): scala.Unit = js.native
-  //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
   def removeEventListener_loadend(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.loadend,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
   ): scala.Unit = js.native
-  //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
   def removeEventListener_loadstart(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.loadstart,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
   ): scala.Unit = js.native
-  //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
   def removeEventListener_progress(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.progress,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
   ): scala.Unit = js.native
-  //  addEventListener(type: string, listener: EventListenerOrEventListenerObject): void;
   @JSName("removeEventListener")
   def removeEventListener_timeout(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.timeout,

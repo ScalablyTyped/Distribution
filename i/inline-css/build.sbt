@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "inline-css"
-version := "0.0-unknown-dt-20190322Z-52ca57"
+version := "0.0-unknown-dt-20190322Z-500975"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-0bae51",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-aac16e",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

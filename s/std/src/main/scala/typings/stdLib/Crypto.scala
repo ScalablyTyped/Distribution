@@ -6,19 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The Crypto interface represents basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives. */
+@js.native
 trait Crypto extends js.Object {
-  val subtle: SubtleCrypto
-  def getRandomValues[T /* <: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | scala.Null */](array: T): T
+  val subtle: SubtleCrypto = js.native
+  def getRandomValues(): scala.Null = js.native
+  def getRandomValues(array: DataView): DataView = js.native
+  def getRandomValues(array: Float32Array): Float32Array = js.native
+  def getRandomValues(array: Float64Array): Float64Array = js.native
+  def getRandomValues(array: Int16Array): Int16Array = js.native
+  def getRandomValues(array: Int32Array): Int32Array = js.native
+  def getRandomValues(array: Int8Array): Int8Array = js.native
+  def getRandomValues(array: Uint16Array): Uint16Array = js.native
+  def getRandomValues(array: Uint32Array): Uint32Array = js.native
+  def getRandomValues(array: Uint8Array): Uint8Array = js.native
+  def getRandomValues(array: Uint8ClampedArray): Uint8ClampedArray = js.native
 }
 
 @JSGlobal("Crypto")
 @js.native
-class CryptoCls () extends Crypto {
-  /* CompleteClass */
-  override val subtle: SubtleCrypto = js.native
-  /* CompleteClass */
-  override def getRandomValues[T /* <: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | scala.Null */](array: T): T = js.native
-}
+class CryptoCls () extends Crypto
 
 @JSGlobal("Crypto")
 @js.native

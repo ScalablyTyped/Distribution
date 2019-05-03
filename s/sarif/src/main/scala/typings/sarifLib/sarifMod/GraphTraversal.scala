@@ -17,11 +17,11 @@ trait GraphTraversal extends js.Object {
   /**
     * Values of relevant expressions at the start of the graph traversal that remain constant for the graph traversal.
     */
-  var immutableState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var immutableState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[MultiformatMessageString]] = js.undefined
   /**
     * Values of relevant expressions at the start of the graph traversal that may change during graph traversal.
     */
-  var initialState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var initialState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[MultiformatMessageString]] = js.undefined
   /**
     * Key/value pairs that provide additional information about the graph traversal.
     */
@@ -41,8 +41,8 @@ object GraphTraversal {
   def apply(
     description: Message = null,
     edgeTraversals: js.Array[EdgeTraversal] = null,
-    immutableState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    initialState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    immutableState: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
+    initialState: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     properties: PropertyBag = null,
     resultGraphIndex: scala.Int | scala.Double = null,
     runGraphIndex: scala.Int | scala.Double = null

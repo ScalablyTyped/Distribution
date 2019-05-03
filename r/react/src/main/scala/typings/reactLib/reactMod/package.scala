@@ -31,7 +31,7 @@ package object reactMod {
     * NOTE: prefer ComponentPropsWithRef, if the ref is forwarded,
     * or ComponentPropsWithoutRef when refs are not supported.
     */
-  type ComponentProps[T /* <: java.lang.String */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
+  type ComponentProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
   type ComponentPropsWithRef[T /* <: ElementType[_] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[_] with RefAttributes[stdLib.InstanceType[T]])
   type ComponentPropsWithoutRef[T /* <: ElementType[_] */] = PropsWithoutRef[ComponentProps[T]]
   type ComponentState = js.Any
@@ -132,7 +132,7 @@ package object reactMod {
   // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
   type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   type ReactChild = ReactElement[js.Any] | ReactText
-  type ReactComponentElement[T /* <: java.lang.String */, P] = ReactElement[P]
+  type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, P] = ReactElement[P]
   type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, reactLib.Event]]
   type ReactFragment = js.Object | ReactNodeArray
   // ReactHTML for ReactHTMLElement

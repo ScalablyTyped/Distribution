@@ -7,12 +7,23 @@ import scala.scalajs.js.annotation._
 
 package object rollupMod {
   type AddonHook = java.lang.String | (js.ThisFunction0[/* this */ PluginContext, java.lang.String | js.Promise[java.lang.String]])
+  type EmitAsset = js.Function2[
+    /* name */ java.lang.String, 
+    /* source */ js.UndefOr[java.lang.String | nodeLib.Buffer], 
+    java.lang.String
+  ]
+  type EmitChunk = js.Function2[
+    /* name */ java.lang.String, 
+    /* options */ js.UndefOr[rollupLib.Anon_Name], 
+    java.lang.String
+  ]
   type ExternalOption = js.Array[java.lang.String] | IsExternal
+  type GetManualChunk = js.Function1[/* id */ java.lang.String, java.lang.String | scala.Unit]
   type GlobalsOption = org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* name */ java.lang.String, java.lang.String])
   type InputOption = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type IsExternal = js.Function3[
-    /* id */ java.lang.String, 
-    /* parentId */ java.lang.String, 
+    /* source */ java.lang.String, 
+    /* importer */ java.lang.String, 
     /* isResolved */ scala.Boolean, 
     scala.Boolean | scala.Unit
   ]
@@ -21,8 +32,10 @@ package object rollupMod {
     /* id */ java.lang.String, 
     (js.Promise[SourceDescription | java.lang.String | scala.Null]) | SourceDescription | java.lang.String | scala.Null
   ]
+  type ManualChunksOption = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | GetManualChunk
   type OptionsPaths = (stdLib.Record[java.lang.String, java.lang.String]) | (js.Function1[/* id */ java.lang.String, java.lang.String])
   type OutputBundle = org.scalablytyped.runtime.StringDictionary[OutputAsset | OutputChunk]
+  type PartialResolvedId = stdLib.Partial[ResolvedId] with rollupLib.Anon_IdString
   type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
   type RenderChunkHook = js.ThisFunction3[
     /* this */ PluginContext, 
@@ -39,22 +52,21 @@ package object rollupMod {
   type ResolveDynamicImportHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* specifier */ java.lang.String | estreeLib.estreeMod.Node, 
-    /* parentId */ java.lang.String, 
-    (js.Promise[java.lang.String | scala.Unit]) | java.lang.String | scala.Unit
+    /* importer */ java.lang.String, 
+    js.Promise[ResolveIdResult] | ResolveIdResult
+  ]
+  type ResolveFileUrlHook = js.ThisFunction1[
+    /* this */ PluginContext, 
+    /* options */ rollupLib.Anon_AssetReferenceId, 
+    java.lang.String | scala.Unit
   ]
   type ResolveIdHook = js.ThisFunction2[
     /* this */ PluginContext, 
-    /* id */ java.lang.String, 
-    /* parent */ java.lang.String, 
+    /* source */ java.lang.String, 
+    /* importer */ java.lang.String, 
     js.Promise[ResolveIdResult] | ResolveIdResult
   ]
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - rollupLib.rollupLibNumbers.`false`
-    - scala.Unit
-    - ResolvedId
-  */
-  type ResolveIdResult = _ResolveIdResult | java.lang.String | scala.Unit
+  type ResolveIdResult = java.lang.String | rollupLib.rollupLibNumbers.`false` | scala.Unit | PartialResolvedId
   type ResolveImportMetaHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* prop */ java.lang.String | scala.Null, 

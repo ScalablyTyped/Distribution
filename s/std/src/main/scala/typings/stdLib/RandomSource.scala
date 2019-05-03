@@ -5,16 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RandomSource extends js.Object {
-  def getRandomValues[T /* <: Int8Array | Uint8ClampedArray | Uint8Array | Int16Array | Uint16Array | Int32Array | Uint32Array */](array: T): T
+  def getRandomValues(array: Int16Array): Int16Array = js.native
+  def getRandomValues(array: Int32Array): Int32Array = js.native
+  def getRandomValues(array: Int8Array): Int8Array = js.native
+  def getRandomValues(array: Uint16Array): Uint16Array = js.native
+  def getRandomValues(array: Uint32Array): Uint32Array = js.native
+  def getRandomValues(array: Uint8Array): Uint8Array = js.native
+  def getRandomValues(array: Uint8ClampedArray): Uint8ClampedArray = js.native
 }
 
 @JSGlobal("RandomSource")
 @js.native
-class RandomSourceCls () extends RandomSource {
-  /* CompleteClass */
-  override def getRandomValues[T /* <: Int8Array | Uint8ClampedArray | Uint8Array | Int16Array | Uint16Array | Int32Array | Uint32Array */](array: T): T = js.native
-}
+class RandomSourceCls () extends RandomSource
 
 @JSGlobal("RandomSource")
 @js.native

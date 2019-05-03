@@ -12,5 +12,6 @@ object ^ extends js.Object {
   def `lazy`[T](loadFn: js.Function1[/* props */ T, js.Promise[DefaultComponent[T]]]): LoadableComponent[T] = js.native
   def loadableReady(): js.Promise[scala.Unit] = js.native
   def loadableReady(done: js.Function0[_]): js.Promise[scala.Unit] = js.native
+  def loadableReady(done: js.Function0[_], options: LoadableReadyOptions): js.Promise[scala.Unit] = js.native
 }
 

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - sarifLib.sarifLibStrings.fail
   - sarifLib.sarifLibStrings.review
   - sarifLib.sarifLibStrings.open
+  - sarifLib.sarifLibStrings.informational
 */
 trait kind extends js.Object
 

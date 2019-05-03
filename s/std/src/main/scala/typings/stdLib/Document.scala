@@ -619,514 +619,258 @@ trait Document
   def createElement_a(tagName: stdLib.stdLibStrings.a): HTMLAnchorElement = js.native
   @JSName("createElement")
   def createElement_a(tagName: stdLib.stdLibStrings.a, options: ElementCreationOptions): HTMLAnchorElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_abbr(tagName: stdLib.stdLibStrings.abbr): HTMLElement = js.native
   @JSName("createElement")
   def createElement_abbr(tagName: stdLib.stdLibStrings.abbr, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_address(tagName: stdLib.stdLibStrings.address): HTMLElement = js.native
   @JSName("createElement")
   def createElement_address(tagName: stdLib.stdLibStrings.address, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_applet(tagName: stdLib.stdLibStrings.applet): HTMLAppletElement = js.native
   @JSName("createElement")
   def createElement_applet(tagName: stdLib.stdLibStrings.applet, options: ElementCreationOptions): HTMLAppletElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_area(tagName: stdLib.stdLibStrings.area): HTMLAreaElement = js.native
   @JSName("createElement")
   def createElement_area(tagName: stdLib.stdLibStrings.area, options: ElementCreationOptions): HTMLAreaElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_article(tagName: stdLib.stdLibStrings.article): HTMLElement = js.native
   @JSName("createElement")
   def createElement_article(tagName: stdLib.stdLibStrings.article, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_aside(tagName: stdLib.stdLibStrings.aside): HTMLElement = js.native
   @JSName("createElement")
   def createElement_aside(tagName: stdLib.stdLibStrings.aside, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_audio(tagName: stdLib.stdLibStrings.audio): HTMLAudioElement = js.native
   @JSName("createElement")
   def createElement_audio(tagName: stdLib.stdLibStrings.audio, options: ElementCreationOptions): HTMLAudioElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_b(tagName: stdLib.stdLibStrings.b): HTMLElement = js.native
   @JSName("createElement")
   def createElement_b(tagName: stdLib.stdLibStrings.b, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_base(tagName: stdLib.stdLibStrings.base): HTMLBaseElement = js.native
   @JSName("createElement")
   def createElement_base(tagName: stdLib.stdLibStrings.base, options: ElementCreationOptions): HTMLBaseElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_basefont(tagName: stdLib.stdLibStrings.basefont): HTMLBaseFontElement = js.native
   @JSName("createElement")
   def createElement_basefont(tagName: stdLib.stdLibStrings.basefont, options: ElementCreationOptions): HTMLBaseFontElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_bdi(tagName: stdLib.stdLibStrings.bdi): HTMLElement = js.native
   @JSName("createElement")
   def createElement_bdi(tagName: stdLib.stdLibStrings.bdi, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_bdo(tagName: stdLib.stdLibStrings.bdo): HTMLElement = js.native
   @JSName("createElement")
   def createElement_bdo(tagName: stdLib.stdLibStrings.bdo, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_blockquote(tagName: stdLib.stdLibStrings.blockquote): HTMLQuoteElement = js.native
   @JSName("createElement")
   def createElement_blockquote(tagName: stdLib.stdLibStrings.blockquote, options: ElementCreationOptions): HTMLQuoteElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_body(tagName: stdLib.stdLibStrings.body): HTMLBodyElement = js.native
   @JSName("createElement")
   def createElement_body(tagName: stdLib.stdLibStrings.body, options: ElementCreationOptions): HTMLBodyElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_br(tagName: stdLib.stdLibStrings.br): HTMLBRElement = js.native
   @JSName("createElement")
   def createElement_br(tagName: stdLib.stdLibStrings.br, options: ElementCreationOptions): HTMLBRElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_button(tagName: stdLib.stdLibStrings.button): HTMLButtonElement = js.native
   @JSName("createElement")
   def createElement_button(tagName: stdLib.stdLibStrings.button, options: ElementCreationOptions): HTMLButtonElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_canvas(tagName: stdLib.stdLibStrings.canvas): HTMLCanvasElement = js.native
   @JSName("createElement")
   def createElement_canvas(tagName: stdLib.stdLibStrings.canvas, options: ElementCreationOptions): HTMLCanvasElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_caption(tagName: stdLib.stdLibStrings.caption): HTMLTableCaptionElement = js.native
   @JSName("createElement")
   def createElement_caption(tagName: stdLib.stdLibStrings.caption, options: ElementCreationOptions): HTMLTableCaptionElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_cite(tagName: stdLib.stdLibStrings.cite): HTMLElement = js.native
   @JSName("createElement")
   def createElement_cite(tagName: stdLib.stdLibStrings.cite, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_code(tagName: stdLib.stdLibStrings.code): HTMLElement = js.native
   @JSName("createElement")
   def createElement_code(tagName: stdLib.stdLibStrings.code, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_col(tagName: stdLib.stdLibStrings.col): HTMLTableColElement = js.native
   @JSName("createElement")
   def createElement_col(tagName: stdLib.stdLibStrings.col, options: ElementCreationOptions): HTMLTableColElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_colgroup(tagName: stdLib.stdLibStrings.colgroup): HTMLTableColElement = js.native
   @JSName("createElement")
   def createElement_colgroup(tagName: stdLib.stdLibStrings.colgroup, options: ElementCreationOptions): HTMLTableColElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_data(tagName: stdLib.stdLibStrings.data): HTMLDataElement = js.native
   @JSName("createElement")
   def createElement_data(tagName: stdLib.stdLibStrings.data, options: ElementCreationOptions): HTMLDataElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_datalist(tagName: stdLib.stdLibStrings.datalist): HTMLDataListElement = js.native
   @JSName("createElement")
   def createElement_datalist(tagName: stdLib.stdLibStrings.datalist, options: ElementCreationOptions): HTMLDataListElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_dd(tagName: stdLib.stdLibStrings.dd): HTMLElement = js.native
   @JSName("createElement")
   def createElement_dd(tagName: stdLib.stdLibStrings.dd, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_del(tagName: stdLib.stdLibStrings.del): HTMLModElement = js.native
   @JSName("createElement")
   def createElement_del(tagName: stdLib.stdLibStrings.del, options: ElementCreationOptions): HTMLModElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_details(tagName: stdLib.stdLibStrings.details): HTMLDetailsElement = js.native
   @JSName("createElement")
   def createElement_details(tagName: stdLib.stdLibStrings.details, options: ElementCreationOptions): HTMLDetailsElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_dfn(tagName: stdLib.stdLibStrings.dfn): HTMLElement = js.native
   @JSName("createElement")
   def createElement_dfn(tagName: stdLib.stdLibStrings.dfn, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_dialog(tagName: stdLib.stdLibStrings.dialog): HTMLDialogElement = js.native
   @JSName("createElement")
   def createElement_dialog(tagName: stdLib.stdLibStrings.dialog, options: ElementCreationOptions): HTMLDialogElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_dir(tagName: stdLib.stdLibStrings.dir): HTMLDirectoryElement = js.native
   @JSName("createElement")
   def createElement_dir(tagName: stdLib.stdLibStrings.dir, options: ElementCreationOptions): HTMLDirectoryElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_div(tagName: stdLib.stdLibStrings.div): HTMLDivElement = js.native
   @JSName("createElement")
   def createElement_div(tagName: stdLib.stdLibStrings.div, options: ElementCreationOptions): HTMLDivElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_dl(tagName: stdLib.stdLibStrings.dl): HTMLDListElement = js.native
   @JSName("createElement")
   def createElement_dl(tagName: stdLib.stdLibStrings.dl, options: ElementCreationOptions): HTMLDListElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_dt(tagName: stdLib.stdLibStrings.dt): HTMLElement = js.native
   @JSName("createElement")
   def createElement_dt(tagName: stdLib.stdLibStrings.dt, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_em(tagName: stdLib.stdLibStrings.em): HTMLElement = js.native
   @JSName("createElement")
   def createElement_em(tagName: stdLib.stdLibStrings.em, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_embed(tagName: stdLib.stdLibStrings.embed): HTMLEmbedElement = js.native
   @JSName("createElement")
   def createElement_embed(tagName: stdLib.stdLibStrings.embed, options: ElementCreationOptions): HTMLEmbedElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_fieldset(tagName: stdLib.stdLibStrings.fieldset): HTMLFieldSetElement = js.native
   @JSName("createElement")
   def createElement_fieldset(tagName: stdLib.stdLibStrings.fieldset, options: ElementCreationOptions): HTMLFieldSetElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_figcaption(tagName: stdLib.stdLibStrings.figcaption): HTMLElement = js.native
   @JSName("createElement")
   def createElement_figcaption(tagName: stdLib.stdLibStrings.figcaption, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_figure(tagName: stdLib.stdLibStrings.figure): HTMLElement = js.native
   @JSName("createElement")
   def createElement_figure(tagName: stdLib.stdLibStrings.figure, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_font(tagName: stdLib.stdLibStrings.font): HTMLFontElement = js.native
   @JSName("createElement")
   def createElement_font(tagName: stdLib.stdLibStrings.font, options: ElementCreationOptions): HTMLFontElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_footer(tagName: stdLib.stdLibStrings.footer): HTMLElement = js.native
   @JSName("createElement")
   def createElement_footer(tagName: stdLib.stdLibStrings.footer, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_form(tagName: stdLib.stdLibStrings.form): HTMLFormElement = js.native
   @JSName("createElement")
   def createElement_form(tagName: stdLib.stdLibStrings.form, options: ElementCreationOptions): HTMLFormElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_frame(tagName: stdLib.stdLibStrings.frame): HTMLFrameElement = js.native
   @JSName("createElement")
   def createElement_frame(tagName: stdLib.stdLibStrings.frame, options: ElementCreationOptions): HTMLFrameElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_frameset(tagName: stdLib.stdLibStrings.frameset): HTMLFrameSetElement = js.native
   @JSName("createElement")
   def createElement_frameset(tagName: stdLib.stdLibStrings.frameset, options: ElementCreationOptions): HTMLFrameSetElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_h1(tagName: stdLib.stdLibStrings.h1): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h1(tagName: stdLib.stdLibStrings.h1, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_h2(tagName: stdLib.stdLibStrings.h2): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h2(tagName: stdLib.stdLibStrings.h2, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_h3(tagName: stdLib.stdLibStrings.h3): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h3(tagName: stdLib.stdLibStrings.h3, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_h4(tagName: stdLib.stdLibStrings.h4): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h4(tagName: stdLib.stdLibStrings.h4, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_h5(tagName: stdLib.stdLibStrings.h5): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h5(tagName: stdLib.stdLibStrings.h5, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_h6(tagName: stdLib.stdLibStrings.h6): HTMLHeadingElement = js.native
   @JSName("createElement")
   def createElement_h6(tagName: stdLib.stdLibStrings.h6, options: ElementCreationOptions): HTMLHeadingElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_head(tagName: stdLib.stdLibStrings.head): HTMLHeadElement = js.native
   @JSName("createElement")
   def createElement_head(tagName: stdLib.stdLibStrings.head, options: ElementCreationOptions): HTMLHeadElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_header(tagName: stdLib.stdLibStrings.header): HTMLElement = js.native
   @JSName("createElement")
   def createElement_header(tagName: stdLib.stdLibStrings.header, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_hgroup(tagName: stdLib.stdLibStrings.hgroup): HTMLElement = js.native
   @JSName("createElement")
   def createElement_hgroup(tagName: stdLib.stdLibStrings.hgroup, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_hr(tagName: stdLib.stdLibStrings.hr): HTMLHRElement = js.native
   @JSName("createElement")
   def createElement_hr(tagName: stdLib.stdLibStrings.hr, options: ElementCreationOptions): HTMLHRElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_html(tagName: stdLib.stdLibStrings.html): HTMLHtmlElement = js.native
   @JSName("createElement")
   def createElement_html(tagName: stdLib.stdLibStrings.html, options: ElementCreationOptions): HTMLHtmlElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_i(tagName: stdLib.stdLibStrings.i): HTMLElement = js.native
   @JSName("createElement")
   def createElement_i(tagName: stdLib.stdLibStrings.i, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_iframe(tagName: stdLib.stdLibStrings.iframe): HTMLIFrameElement = js.native
   @JSName("createElement")
   def createElement_iframe(tagName: stdLib.stdLibStrings.iframe, options: ElementCreationOptions): HTMLIFrameElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_img(tagName: stdLib.stdLibStrings.img): HTMLImageElement = js.native
   @JSName("createElement")
   def createElement_img(tagName: stdLib.stdLibStrings.img, options: ElementCreationOptions): HTMLImageElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_input(tagName: stdLib.stdLibStrings.input): HTMLInputElement = js.native
   @JSName("createElement")
   def createElement_input(tagName: stdLib.stdLibStrings.input, options: ElementCreationOptions): HTMLInputElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_ins(tagName: stdLib.stdLibStrings.ins): HTMLModElement = js.native
   @JSName("createElement")
   def createElement_ins(tagName: stdLib.stdLibStrings.ins, options: ElementCreationOptions): HTMLModElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_kbd(tagName: stdLib.stdLibStrings.kbd): HTMLElement = js.native
   @JSName("createElement")
   def createElement_kbd(tagName: stdLib.stdLibStrings.kbd, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_label(tagName: stdLib.stdLibStrings.label): HTMLLabelElement = js.native
   @JSName("createElement")
   def createElement_label(tagName: stdLib.stdLibStrings.label, options: ElementCreationOptions): HTMLLabelElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_legend(tagName: stdLib.stdLibStrings.legend): HTMLLegendElement = js.native
   @JSName("createElement")
   def createElement_legend(tagName: stdLib.stdLibStrings.legend, options: ElementCreationOptions): HTMLLegendElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_li(tagName: stdLib.stdLibStrings.li): HTMLLIElement = js.native
   @JSName("createElement")
   def createElement_li(tagName: stdLib.stdLibStrings.li, options: ElementCreationOptions): HTMLLIElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_link(tagName: stdLib.stdLibStrings.link): HTMLLinkElement = js.native
   @JSName("createElement")
@@ -1136,439 +880,222 @@ trait Document
   def createElement_listing(tagName: stdLib.stdLibStrings.listing): HTMLPreElement = js.native
   @JSName("createElement")
   def createElement_listing(tagName: stdLib.stdLibStrings.listing, options: ElementCreationOptions): HTMLPreElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_main(tagName: stdLib.stdLibStrings.main): HTMLElement = js.native
   @JSName("createElement")
   def createElement_main(tagName: stdLib.stdLibStrings.main, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_map(tagName: stdLib.stdLibStrings.map): HTMLMapElement = js.native
   @JSName("createElement")
   def createElement_map(tagName: stdLib.stdLibStrings.map, options: ElementCreationOptions): HTMLMapElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_mark(tagName: stdLib.stdLibStrings.mark): HTMLElement = js.native
   @JSName("createElement")
   def createElement_mark(tagName: stdLib.stdLibStrings.mark, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_marquee(tagName: stdLib.stdLibStrings.marquee): HTMLMarqueeElement = js.native
   @JSName("createElement")
   def createElement_marquee(tagName: stdLib.stdLibStrings.marquee, options: ElementCreationOptions): HTMLMarqueeElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_menu(tagName: stdLib.stdLibStrings.menu): HTMLMenuElement = js.native
   @JSName("createElement")
   def createElement_menu(tagName: stdLib.stdLibStrings.menu, options: ElementCreationOptions): HTMLMenuElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_meta(tagName: stdLib.stdLibStrings.meta): HTMLMetaElement = js.native
   @JSName("createElement")
   def createElement_meta(tagName: stdLib.stdLibStrings.meta, options: ElementCreationOptions): HTMLMetaElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_meter(tagName: stdLib.stdLibStrings.meter): HTMLMeterElement = js.native
   @JSName("createElement")
   def createElement_meter(tagName: stdLib.stdLibStrings.meter, options: ElementCreationOptions): HTMLMeterElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_nav(tagName: stdLib.stdLibStrings.nav): HTMLElement = js.native
   @JSName("createElement")
   def createElement_nav(tagName: stdLib.stdLibStrings.nav, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_noscript(tagName: stdLib.stdLibStrings.noscript): HTMLElement = js.native
   @JSName("createElement")
   def createElement_noscript(tagName: stdLib.stdLibStrings.noscript, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_object(tagName: stdLib.stdLibStrings.`object`): HTMLObjectElement = js.native
   @JSName("createElement")
   def createElement_object(tagName: stdLib.stdLibStrings.`object`, options: ElementCreationOptions): HTMLObjectElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_ol(tagName: stdLib.stdLibStrings.ol): HTMLOListElement = js.native
   @JSName("createElement")
   def createElement_ol(tagName: stdLib.stdLibStrings.ol, options: ElementCreationOptions): HTMLOListElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_optgroup(tagName: stdLib.stdLibStrings.optgroup): HTMLOptGroupElement = js.native
   @JSName("createElement")
   def createElement_optgroup(tagName: stdLib.stdLibStrings.optgroup, options: ElementCreationOptions): HTMLOptGroupElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_option(tagName: stdLib.stdLibStrings.option): HTMLOptionElement = js.native
   @JSName("createElement")
   def createElement_option(tagName: stdLib.stdLibStrings.option, options: ElementCreationOptions): HTMLOptionElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_output(tagName: stdLib.stdLibStrings.output): HTMLOutputElement = js.native
   @JSName("createElement")
   def createElement_output(tagName: stdLib.stdLibStrings.output, options: ElementCreationOptions): HTMLOutputElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_p(tagName: stdLib.stdLibStrings.p): HTMLParagraphElement = js.native
   @JSName("createElement")
   def createElement_p(tagName: stdLib.stdLibStrings.p, options: ElementCreationOptions): HTMLParagraphElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_param(tagName: stdLib.stdLibStrings.param): HTMLParamElement = js.native
   @JSName("createElement")
   def createElement_param(tagName: stdLib.stdLibStrings.param, options: ElementCreationOptions): HTMLParamElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_picture(tagName: stdLib.stdLibStrings.picture): HTMLPictureElement = js.native
   @JSName("createElement")
   def createElement_picture(tagName: stdLib.stdLibStrings.picture, options: ElementCreationOptions): HTMLPictureElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_pre(tagName: stdLib.stdLibStrings.pre): HTMLPreElement = js.native
   @JSName("createElement")
   def createElement_pre(tagName: stdLib.stdLibStrings.pre, options: ElementCreationOptions): HTMLPreElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_progress(tagName: stdLib.stdLibStrings.progress): HTMLProgressElement = js.native
   @JSName("createElement")
   def createElement_progress(tagName: stdLib.stdLibStrings.progress, options: ElementCreationOptions): HTMLProgressElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_q(tagName: stdLib.stdLibStrings.q): HTMLQuoteElement = js.native
   @JSName("createElement")
   def createElement_q(tagName: stdLib.stdLibStrings.q, options: ElementCreationOptions): HTMLQuoteElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_rp(tagName: stdLib.stdLibStrings.rp): HTMLElement = js.native
   @JSName("createElement")
   def createElement_rp(tagName: stdLib.stdLibStrings.rp, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_rt(tagName: stdLib.stdLibStrings.rt): HTMLElement = js.native
   @JSName("createElement")
   def createElement_rt(tagName: stdLib.stdLibStrings.rt, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_ruby(tagName: stdLib.stdLibStrings.ruby): HTMLElement = js.native
   @JSName("createElement")
   def createElement_ruby(tagName: stdLib.stdLibStrings.ruby, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_s(tagName: stdLib.stdLibStrings.s): HTMLElement = js.native
   @JSName("createElement")
   def createElement_s(tagName: stdLib.stdLibStrings.s, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_samp(tagName: stdLib.stdLibStrings.samp): HTMLElement = js.native
   @JSName("createElement")
   def createElement_samp(tagName: stdLib.stdLibStrings.samp, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_script(tagName: stdLib.stdLibStrings.script): HTMLScriptElement = js.native
   @JSName("createElement")
   def createElement_script(tagName: stdLib.stdLibStrings.script, options: ElementCreationOptions): HTMLScriptElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_section(tagName: stdLib.stdLibStrings.section): HTMLElement = js.native
   @JSName("createElement")
   def createElement_section(tagName: stdLib.stdLibStrings.section, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_select(tagName: stdLib.stdLibStrings.select): HTMLSelectElement = js.native
   @JSName("createElement")
   def createElement_select(tagName: stdLib.stdLibStrings.select, options: ElementCreationOptions): HTMLSelectElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_slot(tagName: stdLib.stdLibStrings.slot): HTMLSlotElement = js.native
   @JSName("createElement")
   def createElement_slot(tagName: stdLib.stdLibStrings.slot, options: ElementCreationOptions): HTMLSlotElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_small(tagName: stdLib.stdLibStrings.small): HTMLElement = js.native
   @JSName("createElement")
   def createElement_small(tagName: stdLib.stdLibStrings.small, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_source(tagName: stdLib.stdLibStrings.source): HTMLSourceElement = js.native
   @JSName("createElement")
   def createElement_source(tagName: stdLib.stdLibStrings.source, options: ElementCreationOptions): HTMLSourceElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_span(tagName: stdLib.stdLibStrings.span): HTMLSpanElement = js.native
   @JSName("createElement")
   def createElement_span(tagName: stdLib.stdLibStrings.span, options: ElementCreationOptions): HTMLSpanElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_strong(tagName: stdLib.stdLibStrings.strong): HTMLElement = js.native
   @JSName("createElement")
   def createElement_strong(tagName: stdLib.stdLibStrings.strong, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_style(tagName: stdLib.stdLibStrings.style): HTMLStyleElement = js.native
   @JSName("createElement")
   def createElement_style(tagName: stdLib.stdLibStrings.style, options: ElementCreationOptions): HTMLStyleElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_sub(tagName: stdLib.stdLibStrings.sub): HTMLElement = js.native
   @JSName("createElement")
   def createElement_sub(tagName: stdLib.stdLibStrings.sub, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_summary(tagName: stdLib.stdLibStrings.summary): HTMLElement = js.native
   @JSName("createElement")
   def createElement_summary(tagName: stdLib.stdLibStrings.summary, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_sup(tagName: stdLib.stdLibStrings.sup): HTMLElement = js.native
   @JSName("createElement")
   def createElement_sup(tagName: stdLib.stdLibStrings.sup, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_table(tagName: stdLib.stdLibStrings.table): HTMLTableElement = js.native
   @JSName("createElement")
   def createElement_table(tagName: stdLib.stdLibStrings.table, options: ElementCreationOptions): HTMLTableElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_tbody(tagName: stdLib.stdLibStrings.tbody): HTMLTableSectionElement = js.native
   @JSName("createElement")
   def createElement_tbody(tagName: stdLib.stdLibStrings.tbody, options: ElementCreationOptions): HTMLTableSectionElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_td(tagName: stdLib.stdLibStrings.td): HTMLTableDataCellElement = js.native
   @JSName("createElement")
   def createElement_td(tagName: stdLib.stdLibStrings.td, options: ElementCreationOptions): HTMLTableDataCellElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_template(tagName: stdLib.stdLibStrings.template): HTMLTemplateElement = js.native
   @JSName("createElement")
   def createElement_template(tagName: stdLib.stdLibStrings.template, options: ElementCreationOptions): HTMLTemplateElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_textarea(tagName: stdLib.stdLibStrings.textarea): HTMLTextAreaElement = js.native
   @JSName("createElement")
   def createElement_textarea(tagName: stdLib.stdLibStrings.textarea, options: ElementCreationOptions): HTMLTextAreaElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_tfoot(tagName: stdLib.stdLibStrings.tfoot): HTMLTableSectionElement = js.native
   @JSName("createElement")
   def createElement_tfoot(tagName: stdLib.stdLibStrings.tfoot, options: ElementCreationOptions): HTMLTableSectionElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_th(tagName: stdLib.stdLibStrings.th): HTMLTableHeaderCellElement = js.native
   @JSName("createElement")
   def createElement_th(tagName: stdLib.stdLibStrings.th, options: ElementCreationOptions): HTMLTableHeaderCellElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_thead(tagName: stdLib.stdLibStrings.thead): HTMLTableSectionElement = js.native
   @JSName("createElement")
   def createElement_thead(tagName: stdLib.stdLibStrings.thead, options: ElementCreationOptions): HTMLTableSectionElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_time(tagName: stdLib.stdLibStrings.time): HTMLTimeElement = js.native
   @JSName("createElement")
   def createElement_time(tagName: stdLib.stdLibStrings.time, options: ElementCreationOptions): HTMLTimeElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_title(tagName: stdLib.stdLibStrings.title): HTMLTitleElement = js.native
   @JSName("createElement")
   def createElement_title(tagName: stdLib.stdLibStrings.title, options: ElementCreationOptions): HTMLTitleElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_tr(tagName: stdLib.stdLibStrings.tr): HTMLTableRowElement = js.native
   @JSName("createElement")
   def createElement_tr(tagName: stdLib.stdLibStrings.tr, options: ElementCreationOptions): HTMLTableRowElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_track(tagName: stdLib.stdLibStrings.track): HTMLTrackElement = js.native
   @JSName("createElement")
   def createElement_track(tagName: stdLib.stdLibStrings.track, options: ElementCreationOptions): HTMLTrackElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_u(tagName: stdLib.stdLibStrings.u): HTMLElement = js.native
   @JSName("createElement")
   def createElement_u(tagName: stdLib.stdLibStrings.u, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_ul(tagName: stdLib.stdLibStrings.ul): HTMLUListElement = js.native
   @JSName("createElement")
   def createElement_ul(tagName: stdLib.stdLibStrings.ul, options: ElementCreationOptions): HTMLUListElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_var(tagName: stdLib.stdLibStrings.`var`): HTMLElement = js.native
   @JSName("createElement")
   def createElement_var(tagName: stdLib.stdLibStrings.`var`, options: ElementCreationOptions): HTMLElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_video(tagName: stdLib.stdLibStrings.video): HTMLVideoElement = js.native
   @JSName("createElement")
   def createElement_video(tagName: stdLib.stdLibStrings.video, options: ElementCreationOptions): HTMLVideoElement = js.native
-  /**
-    * Creates an instance of the element for the specified tag.
-    * @param tagName The name of an element.
-    */
   @JSName("createElement")
   def createElement_wbr(tagName: stdLib.stdLibStrings.wbr): HTMLElement = js.native
   @JSName("createElement")
   def createElement_wbr(tagName: stdLib.stdLibStrings.wbr, options: ElementCreationOptions): HTMLElement = js.native
-  /** @deprecated */
   @JSName("createElement")
   def createElement_xmp(tagName: stdLib.stdLibStrings.xmp): HTMLPreElement = js.native
   @JSName("createElement")
@@ -1850,224 +1377,84 @@ trait Document
     */
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: stdLib.stdLibStrings.a): HTMLCollectionOf[HTMLAnchorElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_abbr(qualifiedName: stdLib.stdLibStrings.abbr): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_address(qualifiedName: stdLib.stdLibStrings.address): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_applet(qualifiedName: stdLib.stdLibStrings.applet): HTMLCollectionOf[HTMLAppletElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_area(qualifiedName: stdLib.stdLibStrings.area): HTMLCollectionOf[HTMLAreaElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_article(qualifiedName: stdLib.stdLibStrings.article): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_aside(qualifiedName: stdLib.stdLibStrings.aside): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_audio(qualifiedName: stdLib.stdLibStrings.audio): HTMLCollectionOf[HTMLAudioElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_b(qualifiedName: stdLib.stdLibStrings.b): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_base(qualifiedName: stdLib.stdLibStrings.base): HTMLCollectionOf[HTMLBaseElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_basefont(qualifiedName: stdLib.stdLibStrings.basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdi(qualifiedName: stdLib.stdLibStrings.bdi): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdo(qualifiedName: stdLib.stdLibStrings.bdo): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_blockquote(qualifiedName: stdLib.stdLibStrings.blockquote): HTMLCollectionOf[HTMLQuoteElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_body(qualifiedName: stdLib.stdLibStrings.body): HTMLCollectionOf[HTMLBodyElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_br(qualifiedName: stdLib.stdLibStrings.br): HTMLCollectionOf[HTMLBRElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_button(qualifiedName: stdLib.stdLibStrings.button): HTMLCollectionOf[HTMLButtonElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_canvas(qualifiedName: stdLib.stdLibStrings.canvas): HTMLCollectionOf[HTMLCanvasElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_caption(qualifiedName: stdLib.stdLibStrings.caption): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_circle(qualifiedName: stdLib.stdLibStrings.circle): HTMLCollectionOf[SVGCircleElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_cite(qualifiedName: stdLib.stdLibStrings.cite): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_clipPath(qualifiedName: stdLib.stdLibStrings.clipPath): HTMLCollectionOf[SVGClipPathElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_code(qualifiedName: stdLib.stdLibStrings.code): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_col(qualifiedName: stdLib.stdLibStrings.col): HTMLCollectionOf[HTMLTableColElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_colgroup(qualifiedName: stdLib.stdLibStrings.colgroup): HTMLCollectionOf[HTMLTableColElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_data(qualifiedName: stdLib.stdLibStrings.data): HTMLCollectionOf[HTMLDataElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_datalist(qualifiedName: stdLib.stdLibStrings.datalist): HTMLCollectionOf[HTMLDataListElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_dd(qualifiedName: stdLib.stdLibStrings.dd): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_defs(qualifiedName: stdLib.stdLibStrings.defs): HTMLCollectionOf[SVGDefsElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_del(qualifiedName: stdLib.stdLibStrings.del): HTMLCollectionOf[HTMLModElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_desc(qualifiedName: stdLib.stdLibStrings.desc): HTMLCollectionOf[SVGDescElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_details(qualifiedName: stdLib.stdLibStrings.details): HTMLCollectionOf[HTMLDetailsElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_dfn(qualifiedName: stdLib.stdLibStrings.dfn): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_dialog(qualifiedName: stdLib.stdLibStrings.dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_dir(qualifiedName: stdLib.stdLibStrings.dir): HTMLCollectionOf[HTMLDirectoryElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_div(qualifiedName: stdLib.stdLibStrings.div): HTMLCollectionOf[HTMLDivElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_dl(qualifiedName: stdLib.stdLibStrings.dl): HTMLCollectionOf[HTMLDListElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_dt(qualifiedName: stdLib.stdLibStrings.dt): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ellipse(qualifiedName: stdLib.stdLibStrings.ellipse): HTMLCollectionOf[SVGEllipseElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_em(qualifiedName: stdLib.stdLibStrings.em): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_embed(qualifiedName: stdLib.stdLibStrings.embed): HTMLCollectionOf[HTMLEmbedElement] = js.native
   @JSName("getElementsByTagName")
@@ -2118,432 +1505,168 @@ trait Document
   def getElementsByTagName_feTile(qualifiedName: stdLib.stdLibStrings.feTile): HTMLCollectionOf[SVGFETileElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_feTurbulence(qualifiedName: stdLib.stdLibStrings.feTurbulence): HTMLCollectionOf[SVGFETurbulenceElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_fieldset(qualifiedName: stdLib.stdLibStrings.fieldset): HTMLCollectionOf[HTMLFieldSetElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_figcaption(qualifiedName: stdLib.stdLibStrings.figcaption): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_figure(qualifiedName: stdLib.stdLibStrings.figure): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_filter(qualifiedName: stdLib.stdLibStrings.filter): HTMLCollectionOf[SVGFilterElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_font(qualifiedName: stdLib.stdLibStrings.font): HTMLCollectionOf[HTMLFontElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_footer(qualifiedName: stdLib.stdLibStrings.footer): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_foreignObject(qualifiedName: stdLib.stdLibStrings.foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_form(qualifiedName: stdLib.stdLibStrings.form): HTMLCollectionOf[HTMLFormElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_frame(qualifiedName: stdLib.stdLibStrings.frame): HTMLCollectionOf[HTMLFrameElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_frameset(qualifiedName: stdLib.stdLibStrings.frameset): HTMLCollectionOf[HTMLFrameSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_g(qualifiedName: stdLib.stdLibStrings.g): HTMLCollectionOf[SVGGElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_h1(qualifiedName: stdLib.stdLibStrings.h1): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_h2(qualifiedName: stdLib.stdLibStrings.h2): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_h3(qualifiedName: stdLib.stdLibStrings.h3): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_h4(qualifiedName: stdLib.stdLibStrings.h4): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_h5(qualifiedName: stdLib.stdLibStrings.h5): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_h6(qualifiedName: stdLib.stdLibStrings.h6): HTMLCollectionOf[HTMLHeadingElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_head(qualifiedName: stdLib.stdLibStrings.head): HTMLCollectionOf[HTMLHeadElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_header(qualifiedName: stdLib.stdLibStrings.header): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_hgroup(qualifiedName: stdLib.stdLibStrings.hgroup): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_hr(qualifiedName: stdLib.stdLibStrings.hr): HTMLCollectionOf[HTMLHRElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_html(qualifiedName: stdLib.stdLibStrings.html): HTMLCollectionOf[HTMLHtmlElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_i(qualifiedName: stdLib.stdLibStrings.i): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_iframe(qualifiedName: stdLib.stdLibStrings.iframe): HTMLCollectionOf[HTMLIFrameElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_image(qualifiedName: stdLib.stdLibStrings.image): HTMLCollectionOf[SVGImageElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_img(qualifiedName: stdLib.stdLibStrings.img): HTMLCollectionOf[HTMLImageElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_input(qualifiedName: stdLib.stdLibStrings.input): HTMLCollectionOf[HTMLInputElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_ins(qualifiedName: stdLib.stdLibStrings.ins): HTMLCollectionOf[HTMLModElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_kbd(qualifiedName: stdLib.stdLibStrings.kbd): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_label(qualifiedName: stdLib.stdLibStrings.label): HTMLCollectionOf[HTMLLabelElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_legend(qualifiedName: stdLib.stdLibStrings.legend): HTMLCollectionOf[HTMLLegendElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_li(qualifiedName: stdLib.stdLibStrings.li): HTMLCollectionOf[HTMLLIElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_line(qualifiedName: stdLib.stdLibStrings.line): HTMLCollectionOf[SVGLineElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_linearGradient(qualifiedName: stdLib.stdLibStrings.linearGradient): HTMLCollectionOf[SVGLinearGradientElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: stdLib.stdLibStrings.link): HTMLCollectionOf[HTMLLinkElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_main(qualifiedName: stdLib.stdLibStrings.main): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: stdLib.stdLibStrings.map): HTMLCollectionOf[HTMLMapElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_mark(qualifiedName: stdLib.stdLibStrings.mark): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_marker(qualifiedName: stdLib.stdLibStrings.marker): HTMLCollectionOf[SVGMarkerElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_marquee(qualifiedName: stdLib.stdLibStrings.marquee): HTMLCollectionOf[HTMLMarqueeElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_mask(qualifiedName: stdLib.stdLibStrings.mask): HTMLCollectionOf[SVGMaskElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_menu(qualifiedName: stdLib.stdLibStrings.menu): HTMLCollectionOf[HTMLMenuElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_meta(qualifiedName: stdLib.stdLibStrings.meta): HTMLCollectionOf[HTMLMetaElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_metadata(qualifiedName: stdLib.stdLibStrings.metadata): HTMLCollectionOf[SVGMetadataElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_meter(qualifiedName: stdLib.stdLibStrings.meter): HTMLCollectionOf[HTMLMeterElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_nav(qualifiedName: stdLib.stdLibStrings.nav): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_noscript(qualifiedName: stdLib.stdLibStrings.noscript): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_object(qualifiedName: stdLib.stdLibStrings.`object`): HTMLCollectionOf[HTMLObjectElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_ol(qualifiedName: stdLib.stdLibStrings.ol): HTMLCollectionOf[HTMLOListElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_optgroup(qualifiedName: stdLib.stdLibStrings.optgroup): HTMLCollectionOf[HTMLOptGroupElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_option(qualifiedName: stdLib.stdLibStrings.option): HTMLCollectionOf[HTMLOptionElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_output(qualifiedName: stdLib.stdLibStrings.output): HTMLCollectionOf[HTMLOutputElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_p(qualifiedName: stdLib.stdLibStrings.p): HTMLCollectionOf[HTMLParagraphElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_param(qualifiedName: stdLib.stdLibStrings.param): HTMLCollectionOf[HTMLParamElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_path(qualifiedName: stdLib.stdLibStrings.path): HTMLCollectionOf[SVGPathElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_pattern(qualifiedName: stdLib.stdLibStrings.pattern): HTMLCollectionOf[SVGPatternElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_picture(qualifiedName: stdLib.stdLibStrings.picture): HTMLCollectionOf[HTMLPictureElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_polygon(qualifiedName: stdLib.stdLibStrings.polygon): HTMLCollectionOf[SVGPolygonElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_polyline(qualifiedName: stdLib.stdLibStrings.polyline): HTMLCollectionOf[SVGPolylineElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_pre(qualifiedName: stdLib.stdLibStrings.pre): HTMLCollectionOf[HTMLPreElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_progress(qualifiedName: stdLib.stdLibStrings.progress): HTMLCollectionOf[HTMLProgressElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_q(qualifiedName: stdLib.stdLibStrings.q): HTMLCollectionOf[HTMLQuoteElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_radialGradient(qualifiedName: stdLib.stdLibStrings.radialGradient): HTMLCollectionOf[SVGRadialGradientElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_rect(qualifiedName: stdLib.stdLibStrings.rect): HTMLCollectionOf[SVGRectElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_rp(qualifiedName: stdLib.stdLibStrings.rp): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: stdLib.stdLibStrings.rt): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_ruby(qualifiedName: stdLib.stdLibStrings.ruby): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_s(qualifiedName: stdLib.stdLibStrings.s): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_samp(qualifiedName: stdLib.stdLibStrings.samp): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_script(qualifiedName: stdLib.stdLibStrings.script): HTMLCollectionOf[HTMLScriptElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_section(qualifiedName: stdLib.stdLibStrings.section): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: stdLib.stdLibStrings.select): HTMLCollectionOf[HTMLSelectElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_slot(qualifiedName: stdLib.stdLibStrings.slot): HTMLCollectionOf[HTMLSlotElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_small(qualifiedName: stdLib.stdLibStrings.small): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_source(qualifiedName: stdLib.stdLibStrings.source): HTMLCollectionOf[HTMLSourceElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_span(qualifiedName: stdLib.stdLibStrings.span): HTMLCollectionOf[HTMLSpanElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_stop(qualifiedName: stdLib.stdLibStrings.stop): HTMLCollectionOf[SVGStopElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_strong(qualifiedName: stdLib.stdLibStrings.strong): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_style(qualifiedName: stdLib.stdLibStrings.style): HTMLCollectionOf[HTMLStyleElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_sub(qualifiedName: stdLib.stdLibStrings.sub): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_summary(qualifiedName: stdLib.stdLibStrings.summary): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_sup(qualifiedName: stdLib.stdLibStrings.sup): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -2552,116 +1675,48 @@ trait Document
   def getElementsByTagName_switch(qualifiedName: stdLib.stdLibStrings.switch): HTMLCollectionOf[SVGSwitchElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_symbol(qualifiedName: stdLib.stdLibStrings.symbol): HTMLCollectionOf[SVGSymbolElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_table(qualifiedName: stdLib.stdLibStrings.table): HTMLCollectionOf[HTMLTableElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_tbody(qualifiedName: stdLib.stdLibStrings.tbody): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_td(qualifiedName: stdLib.stdLibStrings.td): HTMLCollectionOf[HTMLTableDataCellElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_template(qualifiedName: stdLib.stdLibStrings.template): HTMLCollectionOf[HTMLTemplateElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_text(qualifiedName: stdLib.stdLibStrings.text): HTMLCollectionOf[SVGTextElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_textPath(qualifiedName: stdLib.stdLibStrings.textPath): HTMLCollectionOf[SVGTextPathElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_textarea(qualifiedName: stdLib.stdLibStrings.textarea): HTMLCollectionOf[HTMLTextAreaElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_tfoot(qualifiedName: stdLib.stdLibStrings.tfoot): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_th(qualifiedName: stdLib.stdLibStrings.th): HTMLCollectionOf[HTMLTableHeaderCellElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_thead(qualifiedName: stdLib.stdLibStrings.thead): HTMLCollectionOf[HTMLTableSectionElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_time(qualifiedName: stdLib.stdLibStrings.time): HTMLCollectionOf[HTMLTimeElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_title(qualifiedName: stdLib.stdLibStrings.title): HTMLCollectionOf[HTMLTitleElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_tr(qualifiedName: stdLib.stdLibStrings.tr): HTMLCollectionOf[HTMLTableRowElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_track(qualifiedName: stdLib.stdLibStrings.track): HTMLCollectionOf[HTMLTrackElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_tspan(qualifiedName: stdLib.stdLibStrings.tspan): HTMLCollectionOf[SVGTSpanElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_u(qualifiedName: stdLib.stdLibStrings.u): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_ul(qualifiedName: stdLib.stdLibStrings.ul): HTMLCollectionOf[HTMLUListElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_use(qualifiedName: stdLib.stdLibStrings.use): HTMLCollectionOf[SVGUseElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_var(qualifiedName: stdLib.stdLibStrings.`var`): HTMLCollectionOf[HTMLElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_video(qualifiedName: stdLib.stdLibStrings.video): HTMLCollectionOf[HTMLVideoElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_view(qualifiedName: stdLib.stdLibStrings.view): HTMLCollectionOf[SVGViewElement] = js.native
-  /**
-    * Retrieves a collection of objects based on the specified element name.
-    * @param name Specifies the name of an element.
-    */
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: stdLib.stdLibStrings.wbr): HTMLCollectionOf[HTMLElement] = js.native
   /**

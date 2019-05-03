@@ -18,37 +18,37 @@ trait ImmutableObjectMixin[T] extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */](propertyPath: js.Tuple2[K, L]): Immutable[
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */](propertyPath: js.Tuple2[K, L]): Immutable[
     /* import warning: ImportType.apply Failed type conversion: T[K][L] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */](
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */](
     propertyPath: js.Tuple2[K, L],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: T[K][L] */ js.Any
   ): Immutable[
     /* import warning: ImportType.apply Failed type conversion: T[K][L] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */](propertyPath: js.Tuple3[K, L, M]): Immutable[
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */](propertyPath: js.Tuple3[K, L, M]): Immutable[
     /* import warning: ImportType.apply Failed type conversion: T[K][L][M] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */](propertyPath: js.Tuple4[K, L, M, N]): Immutable[
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */](propertyPath: js.Tuple4[K, L, M, N]): Immutable[
     /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */](
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */](
     propertyPath: js.Tuple4[K, L, M, N],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N] */ js.Any
   ): Immutable[
     /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */, O /* <: java.lang.String */](propertyPath: js.Tuple5[K, L, M, N, O]): Immutable[
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */, O /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M][N] */ js.Any */](propertyPath: js.Tuple5[K, L, M, N, O]): Immutable[
     /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N][O] */ js.Any, 
     js.Object
   ] = js.native
-  def getIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */, O /* <: java.lang.String */](
+  def getIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */, O /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M][N] */ js.Any */](
     propertyPath: js.Tuple5[K, L, M, N, O],
     defaultValue: /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N][O] */ js.Any
   ): Immutable[
@@ -71,19 +71,19 @@ trait ImmutableObjectMixin[T] extends js.Object {
     propertyPath: js.Array[K],
     value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
   ): Immutable[T, js.Object] = js.native
-  def setIn[K /* <: java.lang.String */, L /* <: java.lang.String */](
+  def setIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */](
     propertyPath: js.Tuple2[K, L],
     value: /* import warning: ImportType.apply Failed type conversion: T[K][L] */ js.Any
   ): Immutable[T, js.Object] = js.native
-  def setIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */](
+  def setIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */](
     propertyPath: js.Tuple3[K, L, M],
     value: /* import warning: ImportType.apply Failed type conversion: T[K][L][M] */ js.Any
   ): Immutable[T, js.Object] = js.native
-  def setIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */](
+  def setIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */](
     propertyPath: js.Tuple4[K, L, M, N],
     value: /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N] */ js.Any
   ): Immutable[T, js.Object] = js.native
-  def setIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */, O /* <: java.lang.String */](
+  def setIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */, O /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M][N] */ js.Any */](
     propertyPath: js.Tuple5[K, L, M, N, O],
     value: /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N][O] */ js.Any
   ): Immutable[T, js.Object] = js.native
@@ -106,7 +106,7 @@ trait ImmutableObjectMixin[T] extends js.Object {
     updaterFunction: js.Function2[/* value */ TValue, /* repeated */ js.Any, _],
     additionalArguments: js.Any*
   ): Immutable[T, js.Object] = js.native
-  def updateIn[K /* <: java.lang.String */, L /* <: java.lang.String */](
+  def updateIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */](
     propertyPath: js.Tuple2[K, L],
     updaterFunction: js.Function2[
       /* import warning: ImportType.apply Failed type conversion: T[K][L] */ /* value */ js.Any, 
@@ -115,7 +115,7 @@ trait ImmutableObjectMixin[T] extends js.Object {
     ],
     additionalArguments: js.Any*
   ): Immutable[T, js.Object] = js.native
-  def updateIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */](
+  def updateIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */](
     propertyPath: js.Tuple3[K, L, M],
     updaterFunction: js.Function2[
       /* import warning: ImportType.apply Failed type conversion: T[K][L][M] */ /* value */ js.Any, 
@@ -124,7 +124,7 @@ trait ImmutableObjectMixin[T] extends js.Object {
     ],
     additionalArguments: js.Any*
   ): Immutable[T, js.Object] = js.native
-  def updateIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */](
+  def updateIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */](
     propertyPath: js.Tuple4[K, L, M, N],
     updaterFunction: js.Function2[
       /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N] */ /* value */ js.Any, 
@@ -133,7 +133,7 @@ trait ImmutableObjectMixin[T] extends js.Object {
     ],
     additionalArguments: js.Any*
   ): Immutable[T, js.Object] = js.native
-  def updateIn[K /* <: java.lang.String */, L /* <: java.lang.String */, M /* <: java.lang.String */, N /* <: java.lang.String */, O /* <: java.lang.String */](
+  def updateIn[K /* <: java.lang.String */, L /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M] */ js.Any */, O /* <: /* import warning: ImportType.apply Failed type conversion: keyof T[K][L][M][N] */ js.Any */](
     propertyPath: js.Tuple5[K, L, M, N, O],
     updaterFunction: js.Function2[
       /* import warning: ImportType.apply Failed type conversion: T[K][L][M][N][O] */ /* value */ js.Any, 

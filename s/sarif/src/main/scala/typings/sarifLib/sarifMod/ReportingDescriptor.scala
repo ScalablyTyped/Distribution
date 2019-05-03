@@ -44,7 +44,7 @@ trait ReportingDescriptor extends js.Object {
   /**
     * A stable, opaque identifier for the report.
     */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var id: java.lang.String
   /**
     * A set of name/value pairs with arbitrary names. Each value is a multiformatMessageString object, which holds
     * message strings in plain text and (optionally) Markdown format. The strings can include placeholders, which can
@@ -73,6 +73,7 @@ trait ReportingDescriptor extends js.Object {
 object ReportingDescriptor {
   @scala.inline
   def apply(
+    id: java.lang.String,
     defaultConfiguration: ReportingConfiguration = null,
     deprecatedGuids: js.Array[java.lang.String] = null,
     deprecatedIds: js.Array[java.lang.String] = null,
@@ -81,14 +82,13 @@ object ReportingDescriptor {
     guid: java.lang.String = null,
     help: MultiformatMessageString = null,
     helpUri: java.lang.String = null,
-    id: java.lang.String = null,
     messageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     name: java.lang.String = null,
     properties: PropertyBag = null,
     relationships: js.Array[ReportingDescriptorRelationship] = null,
     shortDescription: MultiformatMessageString = null
   ): ReportingDescriptor = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(id = id)
     if (defaultConfiguration != null) __obj.updateDynamic("defaultConfiguration")(defaultConfiguration)
     if (deprecatedGuids != null) __obj.updateDynamic("deprecatedGuids")(deprecatedGuids)
     if (deprecatedIds != null) __obj.updateDynamic("deprecatedIds")(deprecatedIds)
@@ -97,7 +97,6 @@ object ReportingDescriptor {
     if (guid != null) __obj.updateDynamic("guid")(guid)
     if (help != null) __obj.updateDynamic("help")(help)
     if (helpUri != null) __obj.updateDynamic("helpUri")(helpUri)
-    if (id != null) __obj.updateDynamic("id")(id)
     if (messageStrings != null) __obj.updateDynamic("messageStrings")(messageStrings)
     if (name != null) __obj.updateDynamic("name")(name)
     if (properties != null) __obj.updateDynamic("properties")(properties)

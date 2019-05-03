@@ -666,7 +666,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * If multi-column sort is active, this is an array of columns.
   	 * If there should be no active sort, both sortName and sortOrder should be undefined.
   	 */
-  var sortName: js.UndefOr[java.lang.String] = js.undefined
+  var sortName: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
   	 * Specify whether the sort should be ascending or descending.
   	 * If multi-column sort is active, this is an array of sortOrder items.
@@ -787,7 +787,7 @@ object Options {
     sizePerPageDropDown: /* props */ SizePerPageFunctionProps => reactLib.reactMod.ReactElement[_] = null,
     sizePerPageList: SizePerPageList = null,
     sortIndicator: js.UndefOr[scala.Boolean] = js.undefined,
-    sortName: java.lang.String = null,
+    sortName: java.lang.String | js.Array[java.lang.String] = null,
     sortOrder: SortOrder | js.Array[SortOrder] = null,
     toolBar: /* props */ ToolBarProps => reactLib.reactMod.ReactElement[_] = null,
     withFirstAndLast: js.UndefOr[scala.Boolean] = js.undefined,
@@ -875,7 +875,7 @@ object Options {
     if (sizePerPageDropDown != null) __obj.updateDynamic("sizePerPageDropDown")(js.Any.fromFunction1(sizePerPageDropDown))
     if (sizePerPageList != null) __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
     if (!js.isUndefined(sortIndicator)) __obj.updateDynamic("sortIndicator")(sortIndicator)
-    if (sortName != null) __obj.updateDynamic("sortName")(sortName)
+    if (sortName != null) __obj.updateDynamic("sortName")(sortName.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (toolBar != null) __obj.updateDynamic("toolBar")(js.Any.fromFunction1(toolBar))
     if (!js.isUndefined(withFirstAndLast)) __obj.updateDynamic("withFirstAndLast")(withFirstAndLast)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Crawler
-  extends simplecrawlerLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var acceptCookies: scala.Boolean = js.native
   var allowInitialDomainChange: scala.Boolean = js.native
   var allowedProtocols: js.Array[stdLib.RegExp] = js.native
@@ -23,8 +23,8 @@ trait Crawler
   var downloadUnsupported: scala.Boolean = js.native
   var filterByDomain: scala.Boolean = js.native
   var host: java.lang.String = js.native
-  var httpAgent: simplecrawlerLib.httpMod.Agent = js.native
-  var httpsAgent: simplecrawlerLib.httpsMod.Agent = js.native
+  var httpAgent: nodeLib.httpMod.Agent = js.native
+  var httpsAgent: nodeLib.httpsMod.Agent = js.native
   var ignoreInvalidSSL: scala.Boolean = js.native
   var ignoreWWWDomain: scala.Boolean = js.native
   var initialURL: java.lang.String = js.native
@@ -54,7 +54,7 @@ trait Crawler
   def addDownloadCondition(
     callback: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): scala.Double = js.native
@@ -71,8 +71,8 @@ trait Crawler
     * @deprecated
     */
   def crawl(): scala.Nothing = js.native
-  def decodeBuffer(buffer: simplecrawlerLib.Buffer): java.lang.String = js.native
-  def decodeBuffer(buffer: simplecrawlerLib.Buffer, contentTypeHeader: java.lang.String): java.lang.String = js.native
+  def decodeBuffer(buffer: nodeLib.Buffer): java.lang.String = js.native
+  def decodeBuffer(buffer: nodeLib.Buffer, contentTypeHeader: java.lang.String): java.lang.String = js.native
   def discoverResources(resourceText: java.lang.String): js.Array[java.lang.String] = js.native
   def domainValid(host: java.lang.String): scala.Boolean = js.native
   def fetchQueueItem(queueItem: simplecrawlerLib.queueMod.QueueItem): this.type = js.native
@@ -80,16 +80,16 @@ trait Crawler
   def getRobotsTxt(
     url: java.lang.String,
     callback: js.Function3[
-      /* error */ js.UndefOr[simplecrawlerLib.Error], 
+      /* error */ js.UndefOr[stdLib.Error], 
       /* href */ js.UndefOr[java.lang.String], 
       /* responseBody */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
   ): this.type = js.native
-  def handleResponse(queueItem: simplecrawlerLib.queueMod.QueueItem, response: simplecrawlerLib.httpMod.IncomingMessage): java.lang.String = js.native
+  def handleResponse(queueItem: simplecrawlerLib.queueMod.QueueItem, response: nodeLib.httpMod.IncomingMessage): java.lang.String = js.native
   def handleResponse(
     queueItem: simplecrawlerLib.queueMod.QueueItem,
-    response: simplecrawlerLib.httpMod.IncomingMessage,
+    response: nodeLib.httpMod.IncomingMessage,
     timeCommenced: stdLib.Date
   ): java.lang.String = js.native
   def mimeTypeSupported(mimetype: java.lang.String): scala.Boolean = js.native
@@ -100,7 +100,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.cookieerror,
     listener: js.Function3[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* error */ simplecrawlerLib.Error, 
+      /* error */ stdLib.Error, 
       /* cookie */ java.lang.String, 
       scala.Unit
     ]
@@ -126,7 +126,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.downloadprevented,
     listener: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -135,7 +135,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.fetch404,
     listener: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -144,7 +144,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.fetch410,
     listener: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -162,8 +162,8 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.fetchcomplete,
     listener: js.Function3[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* responseBody */ java.lang.String | simplecrawlerLib.Buffer, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* responseBody */ java.lang.String | nodeLib.Buffer, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -177,7 +177,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.fetchdataerror,
     listener: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -191,7 +191,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.fetcherror,
     listener: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -200,7 +200,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.fetchheaders,
     listener: js.Function2[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -219,7 +219,7 @@ trait Crawler
     listener: js.Function3[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
       /* redirectQueueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -246,8 +246,8 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.gziperror,
     listener: js.Function3[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* responseBody */ java.lang.String | simplecrawlerLib.Buffer, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* responseBody */ java.lang.String | nodeLib.Buffer, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -261,7 +261,7 @@ trait Crawler
     event: simplecrawlerLib.simplecrawlerLibStrings.notmodified,
     listener: js.Function3[
       /* queueItem */ simplecrawlerLib.queueMod.QueueItem, 
-      /* response */ simplecrawlerLib.httpMod.IncomingMessage, 
+      /* response */ nodeLib.httpMod.IncomingMessage, 
       /* cacheObject */ simplecrawlerLib.cacheMod.default, 
       scala.Unit
     ]
@@ -292,13 +292,13 @@ trait Crawler
   @JSName("on")
   def on_robotstxterror(
     event: simplecrawlerLib.simplecrawlerLibStrings.robotstxterror,
-    listener: js.Function1[/* error */ simplecrawlerLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   def processURL(url: java.lang.String): simplecrawlerLib.queueMod.QueueItem = js.native
   def processURL(url: java.lang.String, referer: simplecrawlerLib.queueMod.QueueItem): simplecrawlerLib.queueMod.QueueItem = js.native
   def protocolSupported(url: java.lang.String): scala.Boolean = js.native
   def queueLinkedItems(resourceData: java.lang.String, queueItem: simplecrawlerLib.queueMod.QueueItem): this.type = js.native
-  def queueLinkedItems(resourceData: simplecrawlerLib.Buffer, queueItem: simplecrawlerLib.queueMod.QueueItem): this.type = js.native
+  def queueLinkedItems(resourceData: nodeLib.Buffer, queueItem: simplecrawlerLib.queueMod.QueueItem): this.type = js.native
   def queueURL(url: java.lang.String): scala.Boolean = js.native
   def queueURL(url: java.lang.String, referrer: simplecrawlerLib.queueMod.QueueItem): scala.Boolean = js.native
   def queueURL(url: java.lang.String, referrer: simplecrawlerLib.queueMod.QueueItem, force: scala.Boolean): scala.Boolean = js.native

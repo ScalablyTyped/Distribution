@@ -17,16 +17,15 @@ trait MultiformatMessageString extends js.Object {
   /**
     * A plain text message string or format string.
     */
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: java.lang.String
 }
 
 object MultiformatMessageString {
   @scala.inline
-  def apply(markdown: java.lang.String = null, properties: PropertyBag = null, text: java.lang.String = null): MultiformatMessageString = {
-    val __obj = js.Dynamic.literal()
+  def apply(text: java.lang.String, markdown: java.lang.String = null, properties: PropertyBag = null): MultiformatMessageString = {
+    val __obj = js.Dynamic.literal(text = text)
     if (markdown != null) __obj.updateDynamic("markdown")(markdown)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[MultiformatMessageString]
   }
 }

@@ -75,7 +75,7 @@ object puppeteerLibStrings {
     extends puppeteerLib.puppeteerMod.SameSiteSetting
   
   @js.native
-  sealed trait Tabload
+  sealed trait Tabloid
     extends puppeteerLib.puppeteerMod.PDFFormat
   
   @js.native
@@ -539,7 +539,7 @@ object puppeteerLibStrings {
   @scala.inline
   def Strict: Strict = "Strict".asInstanceOf[Strict]
   @scala.inline
-  def Tabload: Tabload = "Tabload".asInstanceOf[Tabload]
+  def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline

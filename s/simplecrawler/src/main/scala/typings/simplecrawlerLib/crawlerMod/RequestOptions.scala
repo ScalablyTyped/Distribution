@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
-  var agent: simplecrawlerLib.httpMod.Agent | simplecrawlerLib.httpsMod.Agent
+  var agent: nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent
   var headers: simplecrawlerLib.Anon_Accept
   var host: java.lang.String
   var method: HTTPMethods
@@ -16,7 +16,7 @@ trait RequestOptions extends js.Object {
 object RequestOptions {
   @scala.inline
   def apply(
-    agent: simplecrawlerLib.httpMod.Agent | simplecrawlerLib.httpsMod.Agent,
+    agent: nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent,
     headers: simplecrawlerLib.Anon_Accept,
     host: java.lang.String,
     method: HTTPMethods,

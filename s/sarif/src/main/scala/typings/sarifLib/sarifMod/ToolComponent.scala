@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ToolComponent extends js.Object {
   /**
-    * The indices within the run artifacts array of the artifact objects associated with the tool component.
-    */
-  var artifactIndices: js.UndefOr[js.Array[scala.Double]] = js.undefined
-  /**
     * The component which is strongly associated with this component. For a translation, this refers to the component
     * which has been translated. For an extension, this is the driver that provides the extension's plugin model.
     */
@@ -49,14 +45,19 @@ trait ToolComponent extends js.Object {
     */
   var guid: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The absolute URI at which information about this version of the tool component can be found.
+    */
+  var informationUri: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Specifies whether this object contains a complete definition of the localizable and/or non-localizable data for
     * this component, as opposed to including only data that is relevant to the results persisted to this log file.
     */
   var isComprehensive: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The language of the the localized strings defined in this component (expressed as an ISO 649 two-letter
-    * lowercase culture code) and region (expressed as an ISO 3166 two-letter uppercase subculture code associated
-    * with a country or region).
+    * The language of the messages emitted into the log file during this run (expressed as an ISO 639-1 two-letter
+    * lowercase language code) and an optional region (expressed as an ISO 3166-1 two-letter uppercase subculture code
+    * associated with a country or region). The casing is recommended but not required (in order for this data to
+    * conform to RFC5646).
     */
   var language: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -64,6 +65,10 @@ trait ToolComponent extends js.Object {
     * translations.
     */
   var localizedDataSemanticVersion: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * An array of the artifactLocation objects associated with the tool component.
+    */
+  var locations: js.UndefOr[js.Array[ArtifactLocation]] = js.undefined
   /**
     * The minimum value of localizedDataSemanticVersion required in translations consumed by this component; used by
     * components that consume translations.
@@ -133,7 +138,6 @@ object ToolComponent {
   @scala.inline
   def apply(
     name: java.lang.String,
-    artifactIndices: js.Array[scala.Double] = null,
     associatedComponent: ToolComponentReference = null,
     contents: js.Array[sarifLib.sarifMod.ToolComponentNs.contents] = null,
     dottedQuadFileVersion: java.lang.String = null,
@@ -142,9 +146,11 @@ object ToolComponent {
     fullName: java.lang.String = null,
     globalMessageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     guid: java.lang.String = null,
+    informationUri: java.lang.String = null,
     isComprehensive: js.UndefOr[scala.Boolean] = js.undefined,
     language: java.lang.String = null,
     localizedDataSemanticVersion: java.lang.String = null,
+    locations: js.Array[ArtifactLocation] = null,
     minimumRequiredLocalizedDataSemanticVersion: java.lang.String = null,
     notifications: js.Array[ReportingDescriptor] = null,
     organization: java.lang.String = null,
@@ -161,7 +167,6 @@ object ToolComponent {
     version: java.lang.String = null
   ): ToolComponent = {
     val __obj = js.Dynamic.literal(name = name)
-    if (artifactIndices != null) __obj.updateDynamic("artifactIndices")(artifactIndices)
     if (associatedComponent != null) __obj.updateDynamic("associatedComponent")(associatedComponent)
     if (contents != null) __obj.updateDynamic("contents")(contents)
     if (dottedQuadFileVersion != null) __obj.updateDynamic("dottedQuadFileVersion")(dottedQuadFileVersion)
@@ -170,9 +175,11 @@ object ToolComponent {
     if (fullName != null) __obj.updateDynamic("fullName")(fullName)
     if (globalMessageStrings != null) __obj.updateDynamic("globalMessageStrings")(globalMessageStrings)
     if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (informationUri != null) __obj.updateDynamic("informationUri")(informationUri)
     if (!js.isUndefined(isComprehensive)) __obj.updateDynamic("isComprehensive")(isComprehensive)
     if (language != null) __obj.updateDynamic("language")(language)
     if (localizedDataSemanticVersion != null) __obj.updateDynamic("localizedDataSemanticVersion")(localizedDataSemanticVersion)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
     if (minimumRequiredLocalizedDataSemanticVersion != null) __obj.updateDynamic("minimumRequiredLocalizedDataSemanticVersion")(minimumRequiredLocalizedDataSemanticVersion)
     if (notifications != null) __obj.updateDynamic("notifications")(notifications)
     if (organization != null) __obj.updateDynamic("organization")(organization)

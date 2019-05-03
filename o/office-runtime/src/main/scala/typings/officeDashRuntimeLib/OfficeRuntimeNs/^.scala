@@ -9,14 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
-    * Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions.
+    * Asynchronous, global, and persistent key-value storage.
     */
-  val AsyncStorage: officeDashRuntimeLib.OfficeRuntimeNs.AsyncStorage = js.native
+  val storage: Storage = js.native
   /**
-    * Enables you to pop up a web dialog box.
-    * @param url
-    * @param options
+    * Method that enables a pop up web dialog box.
+    * @param url Must be a string.
+    * @param options Optional parameter. Must be of type DisplayWebDialogOptions.
     */
+  def displayWebDialog(url: java.lang.String): js.Promise[Dialog] = js.native
   def displayWebDialog(url: java.lang.String, options: DisplayWebDialogOptions): js.Promise[Dialog] = js.native
 }
 

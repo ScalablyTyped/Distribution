@@ -358,21 +358,204 @@ object cryptoNs extends js.Object {
     size: scala.Double,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def randomFill[T /* <: nodeLib.cryptoMod.Binary */](buffer: T, callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ T, scala.Unit]): scala.Unit = js.native
-  def randomFill[T /* <: nodeLib.cryptoMod.Binary */](
-    buffer: T,
-    offset: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ T, scala.Unit]
+  def randomFill(
+    buffer: nodeLib.Buffer,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def randomFill[T /* <: nodeLib.cryptoMod.Binary */](
-    buffer: T,
+  def randomFill(
+    buffer: nodeLib.Buffer,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: nodeLib.Buffer,
     offset: scala.Double,
     size: scala.Double,
-    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ T, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  def randomFillSync[T /* <: nodeLib.cryptoMod.Binary */](buffer: T): T = js.native
-  def randomFillSync[T /* <: nodeLib.cryptoMod.Binary */](buffer: T, offset: scala.Double): T = js.native
-  def randomFillSync[T /* <: nodeLib.cryptoMod.Binary */](buffer: T, offset: scala.Double, size: scala.Double): T = js.native
+  def randomFill(
+    buffer: stdLib.DataView,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.DataView, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.DataView, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.DataView,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.DataView, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Float32Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Float32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Float32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Float32Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Float32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Float64Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Float64Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Float64Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Float64Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Float64Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int16Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int16Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int16Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int16Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int16Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int32Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int32Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int8Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int8Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int8Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Int8Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Int8Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint16Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint16Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint16Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint16Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint16Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint32Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint32Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint32Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint8Array,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint8Array,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8Array, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint8ClampedArray,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8ClampedArray, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8ClampedArray, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFill(
+    buffer: stdLib.Uint8ClampedArray,
+    offset: scala.Double,
+    size: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ stdLib.Uint8ClampedArray, scala.Unit]
+  ): scala.Unit = js.native
+  def randomFillSync(buffer: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def randomFillSync(buffer: nodeLib.Buffer, offset: scala.Double): nodeLib.Buffer = js.native
+  def randomFillSync(buffer: nodeLib.Buffer, offset: scala.Double, size: scala.Double): nodeLib.Buffer = js.native
+  def randomFillSync(buffer: stdLib.DataView): stdLib.DataView = js.native
+  def randomFillSync(buffer: stdLib.DataView, offset: scala.Double): stdLib.DataView = js.native
+  def randomFillSync(buffer: stdLib.DataView, offset: scala.Double, size: scala.Double): stdLib.DataView = js.native
+  def randomFillSync(buffer: stdLib.Float32Array): stdLib.Float32Array = js.native
+  def randomFillSync(buffer: stdLib.Float32Array, offset: scala.Double): stdLib.Float32Array = js.native
+  def randomFillSync(buffer: stdLib.Float32Array, offset: scala.Double, size: scala.Double): stdLib.Float32Array = js.native
+  def randomFillSync(buffer: stdLib.Float64Array): stdLib.Float64Array = js.native
+  def randomFillSync(buffer: stdLib.Float64Array, offset: scala.Double): stdLib.Float64Array = js.native
+  def randomFillSync(buffer: stdLib.Float64Array, offset: scala.Double, size: scala.Double): stdLib.Float64Array = js.native
+  def randomFillSync(buffer: stdLib.Int16Array): stdLib.Int16Array = js.native
+  def randomFillSync(buffer: stdLib.Int16Array, offset: scala.Double): stdLib.Int16Array = js.native
+  def randomFillSync(buffer: stdLib.Int16Array, offset: scala.Double, size: scala.Double): stdLib.Int16Array = js.native
+  def randomFillSync(buffer: stdLib.Int32Array): stdLib.Int32Array = js.native
+  def randomFillSync(buffer: stdLib.Int32Array, offset: scala.Double): stdLib.Int32Array = js.native
+  def randomFillSync(buffer: stdLib.Int32Array, offset: scala.Double, size: scala.Double): stdLib.Int32Array = js.native
+  def randomFillSync(buffer: stdLib.Int8Array): stdLib.Int8Array = js.native
+  def randomFillSync(buffer: stdLib.Int8Array, offset: scala.Double): stdLib.Int8Array = js.native
+  def randomFillSync(buffer: stdLib.Int8Array, offset: scala.Double, size: scala.Double): stdLib.Int8Array = js.native
+  def randomFillSync(buffer: stdLib.Uint16Array): stdLib.Uint16Array = js.native
+  def randomFillSync(buffer: stdLib.Uint16Array, offset: scala.Double): stdLib.Uint16Array = js.native
+  def randomFillSync(buffer: stdLib.Uint16Array, offset: scala.Double, size: scala.Double): stdLib.Uint16Array = js.native
+  def randomFillSync(buffer: stdLib.Uint32Array): stdLib.Uint32Array = js.native
+  def randomFillSync(buffer: stdLib.Uint32Array, offset: scala.Double): stdLib.Uint32Array = js.native
+  def randomFillSync(buffer: stdLib.Uint32Array, offset: scala.Double, size: scala.Double): stdLib.Uint32Array = js.native
+  def randomFillSync(buffer: stdLib.Uint8Array): stdLib.Uint8Array = js.native
+  def randomFillSync(buffer: stdLib.Uint8Array, offset: scala.Double): stdLib.Uint8Array = js.native
+  def randomFillSync(buffer: stdLib.Uint8Array, offset: scala.Double, size: scala.Double): stdLib.Uint8Array = js.native
+  def randomFillSync(buffer: stdLib.Uint8ClampedArray): stdLib.Uint8ClampedArray = js.native
+  def randomFillSync(buffer: stdLib.Uint8ClampedArray, offset: scala.Double): stdLib.Uint8ClampedArray = js.native
+  def randomFillSync(buffer: stdLib.Uint8ClampedArray, offset: scala.Double, size: scala.Double): stdLib.Uint8ClampedArray = js.native
   def scrypt(
     password: nodeLib.cryptoMod.BinaryLike,
     salt: nodeLib.cryptoMod.BinaryLike,

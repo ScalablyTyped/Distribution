@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "material__top-app-bar"
-version := "0.35-dt-20190213Z-f38de0"
+version := "0.35-dt-20190213Z-84fe3e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "material__base" % "0.35-dt-20190313Z-f909d9",
-  "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20190313Z-2f3f27",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "material__base" % "0.35-dt-20190313Z-85716a",
+  "org.scalablytyped" %%% "material__ripple" % "0.35-dt-20190313Z-dcbdb8",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "encoding-down"
-version := "5.0-dt-20180917Z-d9c39e"
+version := "5.0-dt-20180917Z-a4aa62"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180913Z-712a4a",
+  "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180913Z-80b23a",
   "org.scalablytyped" %%% "level-codec" % "9.0-dt-20180828Z-2a1e73",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

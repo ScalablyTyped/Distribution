@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "sc-framework-health-check"
-version := "2.0-dt-20181218Z-c50944"
+version := "2.0-dt-20181218Z-06b1a3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-cbed34",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-39eb3a",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ca686a",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-2fca98",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-5741df",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-7c1445",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-d681c7",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-565137",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-f5da26",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-75052f",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-430aa7",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-babc1e",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-db9829",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-4760bf",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-5e3ea9",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-aa4650",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-55c1a0",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-a9f802",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-592490",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -9,7 +9,10 @@ package object inkDashSpinnerMod {
   type BooleansPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? boolean}
     */ inkDashSpinnerLib.inkDashSpinnerLibStrings.BooleansPartial with js.Any
-  type ChalkCommons = inkDashSpinnerLib.Omit[chalkLib.chalkMod.Chalk, java.lang.String]
+  type ChalkCommons = inkDashSpinnerLib.Omit[
+    chalkLib.chalkMod.Chalk, 
+    java.lang.String | inkDashSpinnerLib.inkDashSpinnerLibStrings.constructor | inkDashSpinnerLib.inkDashSpinnerLibStrings.level | inkDashSpinnerLib.inkDashSpinnerLibStrings.enabled
+  ]
   type ChalkProps = BooleansPartial[ChalkCommons] with StringifyPartial[inkDashSpinnerLib.ChalkKeywordsAndHexes] with TupleOfNumbersPartial[inkDashSpinnerLib.ChalkColorModels]
   type Spinner = inkLib.inkMod.Component[SpinnerProps with ChalkProps, js.Object, js.Object]
   type StringifyPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 

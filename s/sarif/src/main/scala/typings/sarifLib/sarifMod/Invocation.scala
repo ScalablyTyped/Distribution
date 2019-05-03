@@ -33,6 +33,10 @@ trait Invocation extends js.Object {
     */
   var executableLocation: js.UndefOr[ArtifactLocation] = js.undefined
   /**
+    * Specifies whether the tool's execution completed successfully.
+    */
+  var executionSuccessful: scala.Boolean
+  /**
     * The process exit code.
     */
   var exitCode: js.UndefOr[scala.Double] = js.undefined
@@ -106,10 +110,6 @@ trait Invocation extends js.Object {
     */
   var toolExecutionNotifications: js.UndefOr[js.Array[Notification]] = js.undefined
   /**
-    * A value indicating whether the tool's execution completed successfully.
-    */
-  var toolExecutionSuccessful: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * The working directory for the analysis tool run.
     */
   var workingDirectory: js.UndefOr[ArtifactLocation] = js.undefined
@@ -118,6 +118,7 @@ trait Invocation extends js.Object {
 object Invocation {
   @scala.inline
   def apply(
+    executionSuccessful: scala.Boolean,
     account: java.lang.String = null,
     arguments: js.Array[java.lang.String] = null,
     commandLine: java.lang.String = null,
@@ -142,10 +143,9 @@ object Invocation {
     stdoutStderr: ArtifactLocation = null,
     toolConfigurationNotifications: js.Array[Notification] = null,
     toolExecutionNotifications: js.Array[Notification] = null,
-    toolExecutionSuccessful: js.UndefOr[scala.Boolean] = js.undefined,
     workingDirectory: ArtifactLocation = null
   ): Invocation = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(executionSuccessful = executionSuccessful)
     if (account != null) __obj.updateDynamic("account")(account)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
@@ -170,7 +170,6 @@ object Invocation {
     if (stdoutStderr != null) __obj.updateDynamic("stdoutStderr")(stdoutStderr)
     if (toolConfigurationNotifications != null) __obj.updateDynamic("toolConfigurationNotifications")(toolConfigurationNotifications)
     if (toolExecutionNotifications != null) __obj.updateDynamic("toolExecutionNotifications")(toolExecutionNotifications)
-    if (!js.isUndefined(toolExecutionSuccessful)) __obj.updateDynamic("toolExecutionSuccessful")(toolExecutionSuccessful)
     if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
     __obj.asInstanceOf[Invocation]
   }

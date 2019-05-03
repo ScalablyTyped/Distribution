@@ -17,11 +17,21 @@ trait JQuery extends js.Object {
   @JSName("autocomplete")
   def autocomplete_updateData(method: java.lang.String, data: materializeDashCssLib.MNs.AutocompleteData): JQuery = js.native
   def carousel(): JQuery = js.native
-  def carousel(method: java.lang.String): JQuery = js.native
-  def carousel(method: java.lang.String, n: scala.Double): JQuery = js.native
   def carousel(options: stdLib.Partial[materializeDashCssLib.MNs.CarouselOptions]): JQuery = js.native
   @JSName("carousel")
   def carousel_destroy(method: java.lang.String): JQuery = js.native
+  @JSName("carousel")
+  def carousel_next(method: java.lang.String): JQuery = js.native
+  @JSName("carousel")
+  def carousel_next(method: java.lang.String, n: scala.Double): JQuery = js.native
+  @JSName("carousel")
+  def carousel_prev(method: java.lang.String): JQuery = js.native
+  @JSName("carousel")
+  def carousel_prev(method: java.lang.String, n: scala.Double): JQuery = js.native
+  @JSName("carousel")
+  def carousel_set(method: java.lang.String): JQuery = js.native
+  @JSName("carousel")
+  def carousel_set(method: java.lang.String, n: scala.Double): JQuery = js.native
   def characterCounter(): JQuery = js.native
   @JSName("characterCounter")
   def characterCounter_destroy(method: java.lang.String): JQuery = js.native
@@ -38,10 +48,13 @@ trait JQuery extends js.Object {
   @JSName("chips")
   def chips_selectChip(method: java.lang.String, n: scala.Double): JQuery = js.native
   def collapsible(): JQuery = js.native
-  def collapsible(method: java.lang.String, n: scala.Double): JQuery = js.native
   def collapsible(options: stdLib.Partial[materializeDashCssLib.MNs.CollapsibleOptions]): JQuery = js.native
   @JSName("collapsible")
+  def collapsible_close(method: java.lang.String, n: scala.Double): JQuery = js.native
+  @JSName("collapsible")
   def collapsible_destroy(method: java.lang.String): JQuery = js.native
+  @JSName("collapsible")
+  def collapsible_open(method: java.lang.String, n: scala.Double): JQuery = js.native
   def datepicker(): JQuery = js.native
   def datepicker(method: java.lang.String): JQuery = js.native
   def datepicker(options: stdLib.Partial[materializeDashCssLib.MNs.DatepickerOptions]): JQuery = js.native

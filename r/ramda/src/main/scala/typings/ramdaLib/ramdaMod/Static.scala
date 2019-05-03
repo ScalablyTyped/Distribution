@@ -95,12 +95,20 @@ trait Static extends js.Object {
     * Returns a function that always returns the given value.
     */
   def always[T](`val`: T): js.Function0[T] = js.native
-  def and[T /* <: ramdaLib.Anon_A | scala.Double | scala.Boolean | java.lang.String | scala.Null */](fn1: T): js.Function1[/* val2 */ js.Any, scala.Boolean] = js.native
+  def and(): js.Function1[/* val2 */ js.Any, scala.Boolean] = js.native
+  def and(fn1: java.lang.String): js.Function1[/* val2 */ js.Any, scala.Boolean] = js.native
+  def and(fn1: java.lang.String, val2: js.Any): scala.Boolean = js.native
+  def and(fn1: scala.Boolean): js.Function1[/* val2 */ js.Any, scala.Boolean] = js.native
+  def and(fn1: scala.Boolean, val2: js.Any): scala.Boolean = js.native
+  def and(fn1: scala.Double): js.Function1[/* val2 */ js.Any, scala.Boolean] = js.native
   /**
     * A function that returns the first argument if it's falsy otherwise the second argument. Note that this is
     * NOT short-circuited, meaning that if expressions are passed they are both evaluated.
     */
-  def and[T /* <: ramdaLib.Anon_A | scala.Double | scala.Boolean | java.lang.String | scala.Null */](fn1: T, val2: js.Any): scala.Boolean = js.native
+  def and(fn1: scala.Double, val2: js.Any): scala.Boolean = js.native
+  def and(fn1: scala.Null, val2: js.Any): scala.Boolean = js.native
+  def and[T /* <: ramdaLib.Anon_A */](fn1: T): js.Function1[/* val2 */ js.Any, scala.Boolean] = js.native
+  def and[T /* <: ramdaLib.Anon_A */](fn1: T, val2: js.Any): scala.Boolean = js.native
   def any[T](fn: js.Function1[/* a */ T, scala.Boolean]): js.Function1[/* list */ js.Array[T], scala.Boolean] = js.native
   /**
     * Returns true if at least one of elements of the list match the predicate, false otherwise.
@@ -1053,11 +1061,17 @@ trait Static extends js.Object {
   def mathMod(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def mathMod(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def mathMod(a: scala.Double, b: scala.Double): scala.Double = js.native
-  def max[T /* <: Ord */](a: T): js.Function1[/* b */ T, T] = js.native
+  def max(a: java.lang.String): js.Function1[/* b */ java.lang.String, java.lang.String] = js.native
+  def max(a: java.lang.String, b: java.lang.String): java.lang.String = js.native
+  def max(a: scala.Boolean): js.Function1[/* b */ scala.Boolean, scala.Boolean] = js.native
+  def max(a: scala.Boolean, b: scala.Boolean): scala.Boolean = js.native
+  def max(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   /**
     * Returns the larger of its two arguments.
     */
-  def max[T /* <: Ord */](a: T, b: T): T = js.native
+  def max(a: scala.Double, b: scala.Double): scala.Double = js.native
+  def max(a: stdLib.Date): js.Function1[/* b */ stdLib.Date, stdLib.Date] = js.native
+  def max(a: stdLib.Date, b: stdLib.Date): stdLib.Date = js.native
   def maxBy[T](keyFn: js.Function1[/* a */ T, Ord]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ T, /* b */ T, T]] = js.native
   def maxBy[T](keyFn: js.Function1[/* a */ T, Ord], a: T): js.Function1[/* b */ T, T] = js.native
   /**
@@ -1160,11 +1174,17 @@ trait Static extends js.Object {
     * the returned object if the resulting value is undefined.
     */
   def mergeWithKey[U, V](fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: U, b: V): js.Any = js.native
-  def min[T /* <: Ord */](a: T): js.Function1[/* b */ T, T] = js.native
+  def min(a: java.lang.String): js.Function1[/* b */ java.lang.String, java.lang.String] = js.native
+  def min(a: java.lang.String, b: java.lang.String): java.lang.String = js.native
+  def min(a: scala.Boolean): js.Function1[/* b */ scala.Boolean, scala.Boolean] = js.native
+  def min(a: scala.Boolean, b: scala.Boolean): scala.Boolean = js.native
+  def min(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   /**
     * Returns the smaller of its two arguments.
     */
-  def min[T /* <: Ord */](a: T, b: T): T = js.native
+  def min(a: scala.Double, b: scala.Double): scala.Double = js.native
+  def min(a: stdLib.Date): js.Function1[/* b */ stdLib.Date, stdLib.Date] = js.native
+  def min(a: stdLib.Date, b: stdLib.Date): stdLib.Date = js.native
   def minBy[T](keyFn: js.Function1[/* a */ T, Ord]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ T, /* b */ T, T]] = js.native
   def minBy[T](keyFn: js.Function1[/* a */ T, Ord], a: T): js.Function1[/* b */ T, T] = js.native
   /**

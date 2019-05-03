@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ArtifactLocation extends js.Object {
   /**
+    * A short description of the artifact location.
+    */
+  var description: js.UndefOr[Message] = js.undefined
+  /**
     * The index within the run artifacts array of the artifact object associated with the artifact location.
     */
   var index: js.UndefOr[scala.Double] = js.undefined
@@ -28,12 +32,14 @@ trait ArtifactLocation extends js.Object {
 object ArtifactLocation {
   @scala.inline
   def apply(
+    description: Message = null,
     index: scala.Int | scala.Double = null,
     properties: PropertyBag = null,
     uri: java.lang.String = null,
     uriBaseId: java.lang.String = null
   ): ArtifactLocation = {
     val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (uri != null) __obj.updateDynamic("uri")(uri)

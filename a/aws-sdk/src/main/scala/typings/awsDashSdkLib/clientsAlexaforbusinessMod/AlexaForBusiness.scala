@@ -1613,6 +1613,29 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SearchUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Triggers an asynchronous flow to send text, SSML, or audio announcements to multiple rooms, identified by a search, such as filter. 
+    */
+  def sendAnnouncement(): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def sendAnnouncement(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ SendAnnouncementResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Triggers an asynchronous flow to send text, SSML, or audio announcements to multiple rooms, identified by a search, such as filter. 
+    */
+  def sendAnnouncement(params: SendAnnouncementRequest): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def sendAnnouncement(
+    params: SendAnnouncementRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ SendAnnouncementResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Sends an enrollment invitation email with a URL to a user. The URL is valid for 72 hours or until you call this operation again, whichever comes first. 
     */
   def sendInvitation(): awsDashSdkLib.libRequestMod.Request[SendInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native

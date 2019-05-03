@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Buffer[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */] extends js.Object {
-  var buffer: TBuffer
+trait Anon_Buffer extends js.Object {
+  var buffer: nodeLib.Buffer
   var bytesRead: scala.Double
 }
 
 object Anon_Buffer {
   @scala.inline
-  def apply[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, bytesRead: scala.Double): Anon_Buffer[TBuffer] = {
-    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead)
+  def apply(buffer: nodeLib.Buffer, bytesRead: scala.Double): Anon_Buffer = {
+    val __obj = js.Dynamic.literal(buffer = buffer, bytesRead = bytesRead)
   
-    __obj.asInstanceOf[Anon_Buffer[TBuffer]]
+    __obj.asInstanceOf[Anon_Buffer]
   }
 }
 

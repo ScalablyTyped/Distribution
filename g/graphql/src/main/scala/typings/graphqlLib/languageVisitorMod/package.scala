@@ -29,5 +29,5 @@ package object languageVisitorMod {
   type Visitor[KindToNode, Nodes] = (EnterLeaveVisitor[KindToNode, Nodes]) | (ShapeMapVisitor[KindToNode, Nodes])
   type VisitorKeyMap[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: std.ReadonlyArray<keyof T[P]>}
-    */ graphqlLib.graphqlLibStrings.VisitorKeyMap with T
+    */ graphqlLib.graphqlLibStrings.VisitorKeyMap with js.Any
 }

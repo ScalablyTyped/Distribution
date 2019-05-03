@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GenerateRandomResponse extends js.Object {
   /**
-    * The random byte string. When you use the HTTP API or the AWS CLI, the value is Base64-encdoded. Otherwise, it is not encoded.
+    * The random byte string. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.
     */
   var Plaintext: js.UndefOr[PlaintextType] = js.undefined
 }

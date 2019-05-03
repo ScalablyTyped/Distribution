@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ThemedStyledFunctionBase[C /* <: java.lang.String */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends js.Object {
+trait ThemedStyledFunctionBase[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends js.Object {
   def apply(first: stdLib.TemplateStringsArray): StyledComponent[C, T, O, A] = js.native
   def apply(
     first: stdLib.TemplateStringsArray,

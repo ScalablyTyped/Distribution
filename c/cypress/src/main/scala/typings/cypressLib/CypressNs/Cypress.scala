@@ -325,25 +325,8 @@ trait Cypress extends js.Object {
     ```
     */
   def config(Object: stdLib.Partial[ConfigOptions]): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_animationDistanceThreshold(key: cypressLib.cypressLibStrings.animationDistanceThreshold): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_animationDistanceThreshold(key: cypressLib.cypressLibStrings.animationDistanceThreshold, value: scala.Double): scala.Unit = js.native
   /**
@@ -369,554 +352,112 @@ trait Cypress extends js.Object {
   def config_baseUrl(key: cypressLib.cypressLibStrings.baseUrl, value: java.lang.String): scala.Unit = js.native
   @JSName("config")
   def config_baseUrl_Unit(key: cypressLib.cypressLibStrings.baseUrl): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_chromeWebSecurity(key: cypressLib.cypressLibStrings.chromeWebSecurity): scala.Boolean = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_chromeWebSecurity(key: cypressLib.cypressLibStrings.chromeWebSecurity, value: scala.Boolean): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_defaultCommandTimeout(key: cypressLib.cypressLibStrings.defaultCommandTimeout): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_defaultCommandTimeout(key: cypressLib.cypressLibStrings.defaultCommandTimeout, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_env(key: cypressLib.cypressLibStrings.env): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_env(key: cypressLib.cypressLibStrings.env, value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_execTimeout(key: cypressLib.cypressLibStrings.execTimeout): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_execTimeout(key: cypressLib.cypressLibStrings.execTimeout, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_fileServerFolder(key: cypressLib.cypressLibStrings.fileServerFolder): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_fileServerFolder(key: cypressLib.cypressLibStrings.fileServerFolder, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_fixturesFolder(key: cypressLib.cypressLibStrings.fixturesFolder): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_fixturesFolder(key: cypressLib.cypressLibStrings.fixturesFolder, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_ignoreTestFiles(key: cypressLib.cypressLibStrings.ignoreTestFiles): java.lang.String | js.Array[java.lang.String] = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_ignoreTestFiles(key: cypressLib.cypressLibStrings.ignoreTestFiles, value: java.lang.String): scala.Unit = js.native
   @JSName("config")
   def config_ignoreTestFiles(key: cypressLib.cypressLibStrings.ignoreTestFiles, value: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_integrationFolder(key: cypressLib.cypressLibStrings.integrationFolder): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_integrationFolder(key: cypressLib.cypressLibStrings.integrationFolder, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_numTestsKeptInMemory(key: cypressLib.cypressLibStrings.numTestsKeptInMemory): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_numTestsKeptInMemory(key: cypressLib.cypressLibStrings.numTestsKeptInMemory, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_pageLoadTimeout(key: cypressLib.cypressLibStrings.pageLoadTimeout): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_pageLoadTimeout(key: cypressLib.cypressLibStrings.pageLoadTimeout, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_pluginsFile(key: cypressLib.cypressLibStrings.pluginsFile): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_pluginsFile(key: cypressLib.cypressLibStrings.pluginsFile, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_port(key: cypressLib.cypressLibStrings.port): scala.Double | scala.Null = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_port(key: cypressLib.cypressLibStrings.port, value: scala.Double): scala.Unit = js.native
   @JSName("config")
   def config_port_Unit(key: cypressLib.cypressLibStrings.port): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_reporter(key: cypressLib.cypressLibStrings.reporter): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_reporter(key: cypressLib.cypressLibStrings.reporter, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_requestTimeout(key: cypressLib.cypressLibStrings.requestTimeout): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_requestTimeout(key: cypressLib.cypressLibStrings.requestTimeout, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_responseTimeout(key: cypressLib.cypressLibStrings.responseTimeout): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_responseTimeout(key: cypressLib.cypressLibStrings.responseTimeout, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_screenshotsFolder(key: cypressLib.cypressLibStrings.screenshotsFolder): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_screenshotsFolder(key: cypressLib.cypressLibStrings.screenshotsFolder, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_supportFile(key: cypressLib.cypressLibStrings.supportFile): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_supportFile(key: cypressLib.cypressLibStrings.supportFile, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: cypressLib.cypressLibStrings.trashAssetsBeforeRuns): scala.Boolean = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: cypressLib.cypressLibStrings.trashAssetsBeforeRuns, value: scala.Boolean): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_video(key: cypressLib.cypressLibStrings.video): scala.Boolean = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_video(key: cypressLib.cypressLibStrings.video, value: scala.Boolean): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_videoCompression(key: cypressLib.cypressLibStrings.videoCompression): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_videoCompression(key: cypressLib.cypressLibStrings.videoCompression, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_videoUploadOnPasses(key: cypressLib.cypressLibStrings.videoUploadOnPasses): scala.Boolean = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_videoUploadOnPasses(key: cypressLib.cypressLibStrings.videoUploadOnPasses, value: scala.Boolean): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_videosFolder(key: cypressLib.cypressLibStrings.videosFolder): java.lang.String = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_videosFolder(key: cypressLib.cypressLibStrings.videosFolder, value: java.lang.String): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_viewportHeight(key: cypressLib.cypressLibStrings.viewportHeight): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_viewportHeight(key: cypressLib.cypressLibStrings.viewportHeight, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_viewportWidth(key: cypressLib.cypressLibStrings.viewportWidth): scala.Double = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_viewportWidth(key: cypressLib.cypressLibStrings.viewportWidth, value: scala.Double): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_waitForAnimations(key: cypressLib.cypressLibStrings.waitForAnimations): scala.Boolean = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_waitForAnimations(key: cypressLib.cypressLibStrings.waitForAnimations, value: scala.Boolean): scala.Unit = js.native
-  /**
-    * Returns one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('pageLoadTimeout')
-    // 60000
-    ```
-    */
   @JSName("config")
   def config_watchForFileChanges(key: cypressLib.cypressLibStrings.watchForFileChanges): scala.Boolean = js.native
-  /**
-    * Sets one configuration value.
-    * @see https://on.cypress.io/config
-    * @example
-    ```
-    Cypress.config('viewportWidth', 800)
-    ```
-    */
   @JSName("config")
   def config_watchForFileChanges(key: cypressLib.cypressLibStrings.watchForFileChanges, value: scala.Boolean): scala.Unit = js.native
   // no real way to type without generics

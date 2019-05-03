@@ -16,7 +16,7 @@ package object styledDashSystemMod {
   ]
   type MarginProps = stdLib.Pick[
     SpaceProps[TLengthStyledSystem], 
-    styledDashSystemLib.styledDashSystemLibStrings.m | styledDashSystemLib.styledDashSystemLibStrings.margin | styledDashSystemLib.styledDashSystemLibStrings.mt | styledDashSystemLib.styledDashSystemLibStrings.marginTop | styledDashSystemLib.styledDashSystemLibStrings.mb | styledDashSystemLib.styledDashSystemLibStrings.marginBottom | styledDashSystemLib.styledDashSystemLibStrings.ml | styledDashSystemLib.styledDashSystemLibStrings.marginLeft | styledDashSystemLib.styledDashSystemLibStrings.mr | styledDashSystemLib.styledDashSystemLibStrings.marginRight
+    styledDashSystemLib.styledDashSystemLibStrings.m | styledDashSystemLib.styledDashSystemLibStrings.margin | styledDashSystemLib.styledDashSystemLibStrings.mt | styledDashSystemLib.styledDashSystemLibStrings.marginTop | styledDashSystemLib.styledDashSystemLibStrings.mb | styledDashSystemLib.styledDashSystemLibStrings.marginBottom | styledDashSystemLib.styledDashSystemLibStrings.ml | styledDashSystemLib.styledDashSystemLibStrings.marginLeft | styledDashSystemLib.styledDashSystemLibStrings.mr | styledDashSystemLib.styledDashSystemLibStrings.marginRight | styledDashSystemLib.styledDashSystemLibStrings.my | styledDashSystemLib.styledDashSystemLibStrings.mx
   ]
   type MarginRightProps = stdLib.Pick[
     SpaceProps[TLengthStyledSystem], 
@@ -39,7 +39,7 @@ package object styledDashSystemMod {
   ]
   type PaddingProps = stdLib.Pick[
     SpaceProps[TLengthStyledSystem], 
-    styledDashSystemLib.styledDashSystemLibStrings.p | styledDashSystemLib.styledDashSystemLibStrings.padding | styledDashSystemLib.styledDashSystemLibStrings.pt | styledDashSystemLib.styledDashSystemLibStrings.paddingTop | styledDashSystemLib.styledDashSystemLibStrings.pb | styledDashSystemLib.styledDashSystemLibStrings.paddingBottom | styledDashSystemLib.styledDashSystemLibStrings.pl | styledDashSystemLib.styledDashSystemLibStrings.paddingLeft | styledDashSystemLib.styledDashSystemLibStrings.pr | styledDashSystemLib.styledDashSystemLibStrings.paddingRight
+    styledDashSystemLib.styledDashSystemLibStrings.p | styledDashSystemLib.styledDashSystemLibStrings.padding | styledDashSystemLib.styledDashSystemLibStrings.pt | styledDashSystemLib.styledDashSystemLibStrings.paddingTop | styledDashSystemLib.styledDashSystemLibStrings.pb | styledDashSystemLib.styledDashSystemLibStrings.paddingBottom | styledDashSystemLib.styledDashSystemLibStrings.pl | styledDashSystemLib.styledDashSystemLibStrings.paddingLeft | styledDashSystemLib.styledDashSystemLibStrings.pr | styledDashSystemLib.styledDashSystemLibStrings.paddingRight | styledDashSystemLib.styledDashSystemLibStrings.py | styledDashSystemLib.styledDashSystemLibStrings.px
   ]
   type PaddingRightProps = stdLib.Pick[
     SpaceProps[TLengthStyledSystem], 

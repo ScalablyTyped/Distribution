@@ -87,7 +87,8 @@ object numericMod extends js.Object {
   def minus[X /* <: tstlLib.numericOperatorsMod.Param[Y, Ret, tstlLib.tstlLibStrings.minus] */, Y, Ret](x: X, y: Y): Ret = js.native
   def modules[X /* <: tstlLib.numericOperatorsMod.Param[Y, Ret, tstlLib.tstlLibStrings.modules] */, Y, Ret](x: X, y: Y): Ret = js.native
   def multiplies[X /* <: tstlLib.numericOperatorsMod.Param[Y, Ret, tstlLib.tstlLibStrings.multiplies] */, Y, Ret](x: X, y: Y): Ret = js.native
-  def negate[X /* <: scala.Double | tstlLib.numericINegatableMod.INegatable[Ret] */, Ret](x: X): Ret = js.native
+  def negate[Ret](x: scala.Double): Ret = js.native
+  def negate[Ret](x: tstlLib.numericINegatableMod.INegatable[Ret]): Ret = js.native
   def partial_sum[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
   def partial_sum[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */, OutputIterator /* <: tstlLib.iteratorIFakeMod.Writeonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, OutputIterator]] */](
     first: InputIterator,
@@ -95,7 +96,11 @@ object numericMod extends js.Object {
     output: OutputIterator,
     op: tstlLib.numericOperationsMod.BinaryOperator[T, T]
   ): OutputIterator = js.native
-  def plus[X /* <: tstlLib.numericOperatorsMod.PlusParam[Y, Ret] */, Y, Ret](x: X, y: Y): Ret = js.native
+  def plus[Y, Ret](x: java.lang.String, y: Y): Ret = js.native
+  def plus[Y, Ret](x: scala.Double, y: Y): Ret = js.native
+  def plus[X /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in 'plus' ]: tstl.tstl/numeric/IComputable.IComputable<Y, Ret>[P]}
+    */ tstlLib.tstlLibStrings.plus with (tstlLib.numericIComputableMod.IComputable[Y, Ret]) */, Y, Ret](x: X, y: Y): Ret = js.native
   def riemann_zeta(arg: scala.Double): scala.Double = js.native
   def sph_bessel(n: scala.Double, x: scala.Double): scala.Double = js.native
   def sph_neumann(n: scala.Double, x: scala.Double): scala.Double = js.native

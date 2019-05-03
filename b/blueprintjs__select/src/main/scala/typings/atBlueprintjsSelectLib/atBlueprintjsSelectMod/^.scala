@@ -42,6 +42,21 @@ object ^ extends js.Object {
     direction: scala.Double,
     startIndex: scala.Double
   ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]
+  ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean],
+    direction: scala.Double
+  ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
+  def getFirstEnabledItem[T](
+    items: js.Array[T],
+    itemDisabled: js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean],
+    direction: scala.Double,
+    startIndex: scala.Double
+  ): T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
   def isCreateNewItem[T](): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
   def isCreateNewItem[T](item: T): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
   def isCreateNewItem[T](item: atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native

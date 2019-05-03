@@ -55,7 +55,9 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   /**
     * The initial state node key.
     */
-  var initial: js.UndefOr[java.lang.String] = js.undefined
+  var initial: js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
+  ] = js.undefined
   /**
     * The services to invoke upon entering this state node. These services will be stopped upon exiting this state node.
     */
@@ -132,7 +134,7 @@ object StateNodeConfig {
     exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep | scala.Boolean = null,
     id: java.lang.String = null,
-    initial: java.lang.String = null,
+    initial: /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any = null,
     invoke: InvokesConfig[TContext, TEvent] = null,
     key: java.lang.String = null,
     meta: js.Any = null,

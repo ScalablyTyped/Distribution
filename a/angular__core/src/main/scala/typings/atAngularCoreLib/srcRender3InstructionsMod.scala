@@ -9,11 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3InstructionsMod extends js.Object {
   val CLEAN_PROMISE: js.Promise[scala.Null] = js.native
-  def addToViewTree[T /* <: atAngularCoreLib.srcRender3InterfacesViewMod.LView | atAngularCoreLib.srcRender3InterfacesContainerMod.LContainer */](
+  def addToViewTree(
     lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
     adjustedHostIndex: scala.Double,
-    state: T
-  ): T = js.native
+    state: atAngularCoreLib.srcRender3InterfacesContainerMod.LContainer
+  ): atAngularCoreLib.srcRender3InterfacesContainerMod.LContainer = js.native
+  def addToViewTree(
+    lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
+    adjustedHostIndex: scala.Double,
+    state: atAngularCoreLib.srcRender3InterfacesViewMod.LView
+  ): atAngularCoreLib.srcRender3InterfacesViewMod.LView = js.native
   def allocExpando(view: atAngularCoreLib.srcRender3InterfacesViewMod.LView): scala.Unit = js.native
   def allocHostVars(count: scala.Double): scala.Unit = js.native
   def bind[T](value: T): T | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native

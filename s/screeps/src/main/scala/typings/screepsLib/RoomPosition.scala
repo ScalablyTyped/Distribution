@@ -232,70 +232,26 @@ trait RoomPosition extends js.Object {
     */
   @JSName("lookFor")
   def lookFor_constructionSite(`type`: screepsLib.screepsLibStrings.constructionSite): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_creep(`type`: screepsLib.screepsLibStrings.creep): js.Array[Creep] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_energy(`type`: screepsLib.screepsLibStrings.energy): js.Array[Resource[RESOURCE_ENERGY]] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_exit(`type`: screepsLib.screepsLibStrings.exit): js.Array[_] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_flag(`type`: screepsLib.screepsLibStrings.flag): js.Array[Flag] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_mineral(`type`: screepsLib.screepsLibStrings.mineral): js.Array[Mineral[MineralConstant]] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_nuke(`type`: screepsLib.screepsLibStrings.nuke): js.Array[Nuke] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_resource(`type`: screepsLib.screepsLibStrings.resource): js.Array[Resource[ResourceConstant]] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_source(`type`: screepsLib.screepsLibStrings.source): js.Array[Source] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_structure(`type`: screepsLib.screepsLibStrings.structure): js.Array[Structure[StructureConstant]] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_terrain(`type`: screepsLib.screepsLibStrings.terrain): js.Array[Terrain] = js.native
-  /**
-    * Get an object with the given type at the specified room position.
-    * @param type One of the following string constants: constructionSite, creep, exit, flag, resource, source, structure, terrain
-    */
   @JSName("lookFor")
   def lookFor_tombstone(`type`: screepsLib.screepsLibStrings.tombstone): js.Array[Tombstone] = js.native
 }

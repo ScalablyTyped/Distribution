@@ -15,6 +15,14 @@ trait App extends EventEmitter {
     * production environments.
     */
   var isPackaged: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * A String which is the user agent string Electron will use as a global fallback.
+    * This is the user agent that will be used when no user agent is set at the
+    * webContents or session level.  Useful for ensuring your entire app has the same
+    * user agent.  Set to a custom value as early as possible in your apps
+    * initialization to ensure that your overridden value is used.
+    */
+  var userAgentFallback: js.UndefOr[java.lang.String] = js.native
   @JSName("addListener")
   def `addListener_accessibility-support-changed`(
     event: electronLib.electronLibStrings.`accessibility-support-changed`,

@@ -81,13 +81,20 @@ trait ExternalProperties extends js.Object {
   /**
     * The SARIF format version of this external properties object.
     */
-  var version: sarifLib.sarifMod.ExternalPropertiesNs.version
+  var version: js.UndefOr[sarifLib.sarifMod.ExternalPropertiesNs.version] = js.undefined
+  /**
+    * Requests that will be merged with a separate run.
+    */
+  var webRequests: js.UndefOr[js.Array[WebRequest]] = js.undefined
+  /**
+    * Responses that will be merged with a separate run.
+    */
+  var webResponses: js.UndefOr[js.Array[WebResponse]] = js.undefined
 }
 
 object ExternalProperties {
   @scala.inline
   def apply(
-    version: sarifLib.sarifMod.ExternalPropertiesNs.version,
     addresses: js.Array[Address] = null,
     artifacts: js.Array[Artifact] = null,
     conversion: Conversion = null,
@@ -105,9 +112,12 @@ object ExternalProperties {
     schema: java.lang.String = null,
     taxonomies: js.Array[ToolComponent] = null,
     threadFlowLocations: js.Array[ThreadFlowLocation] = null,
-    translations: js.Array[ToolComponent] = null
+    translations: js.Array[ToolComponent] = null,
+    version: sarifLib.sarifMod.ExternalPropertiesNs.version = null,
+    webRequests: js.Array[WebRequest] = null,
+    webResponses: js.Array[WebResponse] = null
   ): ExternalProperties = {
-    val __obj = js.Dynamic.literal(version = version)
+    val __obj = js.Dynamic.literal()
     if (addresses != null) __obj.updateDynamic("addresses")(addresses)
     if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
     if (conversion != null) __obj.updateDynamic("conversion")(conversion)
@@ -126,6 +136,9 @@ object ExternalProperties {
     if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
     if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
     if (translations != null) __obj.updateDynamic("translations")(translations)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (webRequests != null) __obj.updateDynamic("webRequests")(webRequests)
+    if (webResponses != null) __obj.updateDynamic("webResponses")(webResponses)
     __obj.asInstanceOf[ExternalProperties]
   }
 }

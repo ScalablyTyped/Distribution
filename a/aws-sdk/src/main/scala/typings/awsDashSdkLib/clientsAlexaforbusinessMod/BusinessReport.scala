@@ -9,7 +9,7 @@ trait BusinessReport extends js.Object {
   /**
     * The time of report delivery.
     */
-  var DeliveryTime: js.UndefOr[Timestamp] = js.undefined
+  var DeliveryTime: js.UndefOr[BusinessReportDeliveryTime] = js.undefined
   /**
     * The download link where a user can download the report.
     */
@@ -31,7 +31,7 @@ trait BusinessReport extends js.Object {
 object BusinessReport {
   @scala.inline
   def apply(
-    DeliveryTime: Timestamp = null,
+    DeliveryTime: BusinessReportDeliveryTime = null,
     DownloadUrl: BusinessReportDownloadUrl = null,
     FailureCode: BusinessReportFailureCode = null,
     S3Location: BusinessReportS3Location = null,

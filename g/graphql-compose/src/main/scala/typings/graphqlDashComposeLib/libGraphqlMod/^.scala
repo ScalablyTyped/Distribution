@@ -211,8 +211,13 @@ object ^ extends js.Object {
   def getLocation(source: graphqlLib.languageSourceMod.Source, position: scala.Double): graphqlLib.languageLocationMod.SourceLocation = js.native
   def getNamedType(`type`: graphqlLib.typeDefinitionMod.GraphQLType): graphqlLib.typeDefinitionMod.GraphQLNamedType = js.native
   def getNamedType(`type`: scala.Unit): js.UndefOr[scala.Nothing] = js.native
+  def getNullableType(`type`: graphqlLib.typeDefinitionMod.GraphQLEnumType): graphqlLib.typeDefinitionMod.GraphQLEnumType = js.native
+  def getNullableType(`type`: graphqlLib.typeDefinitionMod.GraphQLInputObjectType): graphqlLib.typeDefinitionMod.GraphQLInputObjectType = js.native
+  def getNullableType(`type`: graphqlLib.typeDefinitionMod.GraphQLInterfaceType): graphqlLib.typeDefinitionMod.GraphQLInterfaceType = js.native
+  def getNullableType(`type`: graphqlLib.typeDefinitionMod.GraphQLScalarType): graphqlLib.typeDefinitionMod.GraphQLScalarType = js.native
+  def getNullableType(`type`: graphqlLib.typeDefinitionMod.GraphQLUnionType): graphqlLib.typeDefinitionMod.GraphQLUnionType = js.native
   def getNullableType(`type`: scala.Unit): js.UndefOr[scala.Nothing] = js.native
-  def getNullableType[T /* <: graphqlLib.typeDefinitionMod.GraphQLNullableType */](`type`: T): T = js.native
+  def getNullableType[T /* <: (graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | graphqlLib.typeDefinitionMod.GraphQLList[_] */](`type`: T): T = js.native
   def getNullableType[T /* <: graphqlLib.typeDefinitionMod.GraphQLNullableType */](`type`: graphqlLib.typeDefinitionMod.GraphQLNonNull[T]): T = js.native
   def getOperationAST(
     documentAST: graphqlLib.languageAstMod.DocumentNode,

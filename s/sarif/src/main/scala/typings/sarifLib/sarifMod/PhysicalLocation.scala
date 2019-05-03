@@ -20,10 +20,6 @@ trait PhysicalLocation extends js.Object {
     */
   var contextRegion: js.UndefOr[Region] = js.undefined
   /**
-    * Value that distinguishes this physical location from all other physical locations in this run object.
-    */
-  var id: js.UndefOr[scala.Double] = js.undefined
-  /**
     * Key/value pairs that provide additional information about the physical location.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
@@ -39,7 +35,6 @@ object PhysicalLocation {
     address: Address = null,
     artifactLocation: ArtifactLocation = null,
     contextRegion: Region = null,
-    id: scala.Int | scala.Double = null,
     properties: PropertyBag = null,
     region: Region = null
   ): PhysicalLocation = {
@@ -47,7 +42,6 @@ object PhysicalLocation {
     if (address != null) __obj.updateDynamic("address")(address)
     if (artifactLocation != null) __obj.updateDynamic("artifactLocation")(artifactLocation)
     if (contextRegion != null) __obj.updateDynamic("contextRegion")(contextRegion)
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (region != null) __obj.updateDynamic("region")(region)
     __obj.asInstanceOf[PhysicalLocation]

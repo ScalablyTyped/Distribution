@@ -18,21 +18,43 @@ object ^ extends js.Object {
     * where each value has been typecast according to the `type` parameter. An array can be
     * provided as `fallback`.
     */
-  def array[T /* <: ParseTypes */](name: java.lang.String): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: getenv.getenv.ParseMappings[T] */ js.Any
-  ] = js.native
-  def array[T /* <: ParseTypes */](name: java.lang.String, `type`: T): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: getenv.getenv.ParseMappings[T] */ js.Any
-  ] = js.native
-  def array[T /* <: ParseTypes */](
+  def array(name: java.lang.String): js.Array[java.lang.String] = js.native
+  @JSName("array")
+  def array_bool(name: java.lang.String, `type`: getenvLib.getenvLibStrings.bool): js.Array[scala.Boolean] = js.native
+  @JSName("array")
+  def array_bool(name: java.lang.String, `type`: getenvLib.getenvLibStrings.bool, fallback: js.Array[scala.Boolean]): js.Array[scala.Boolean] = js.native
+  @JSName("array")
+  def array_boolish(name: java.lang.String, `type`: getenvLib.getenvLibStrings.boolish): js.Array[scala.Boolean] = js.native
+  @JSName("array")
+  def array_boolish(
     name: java.lang.String,
-    `type`: T,
-    fallback: js.Array[
-      /* import warning: ImportType.apply Failed type conversion: getenv.getenv.ParseMappings[T] */ js.Any
-    ]
-  ): js.Array[
-    /* import warning: ImportType.apply Failed type conversion: getenv.getenv.ParseMappings[T] */ js.Any
-  ] = js.native
+    `type`: getenvLib.getenvLibStrings.boolish,
+    fallback: js.Array[scala.Boolean]
+  ): js.Array[scala.Boolean] = js.native
+  @JSName("array")
+  def array_float(name: java.lang.String, `type`: getenvLib.getenvLibStrings.float): js.Array[scala.Double] = js.native
+  @JSName("array")
+  def array_float(name: java.lang.String, `type`: getenvLib.getenvLibStrings.float, fallback: js.Array[scala.Double]): js.Array[scala.Double] = js.native
+  @JSName("array")
+  def array_int(name: java.lang.String, `type`: getenvLib.getenvLibStrings.int): js.Array[scala.Double] = js.native
+  @JSName("array")
+  def array_int(name: java.lang.String, `type`: getenvLib.getenvLibStrings.int, fallback: js.Array[scala.Double]): js.Array[scala.Double] = js.native
+  @JSName("array")
+  def array_string(name: java.lang.String, `type`: getenvLib.getenvLibStrings.string): js.Array[java.lang.String] = js.native
+  @JSName("array")
+  def array_string(
+    name: java.lang.String,
+    `type`: getenvLib.getenvLibStrings.string,
+    fallback: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  @JSName("array")
+  def array_url(name: java.lang.String, `type`: getenvLib.getenvLibStrings.url): js.Array[nodeLib.urlMod.UrlWithStringQuery] = js.native
+  @JSName("array")
+  def array_url(
+    name: java.lang.String,
+    `type`: getenvLib.getenvLibStrings.url,
+    fallback: js.Array[nodeLib.urlMod.UrlWithStringQuery]
+  ): js.Array[nodeLib.urlMod.UrlWithStringQuery] = js.native
   /**
     * Return as boolean. Only allows true/false as valid values.
     */

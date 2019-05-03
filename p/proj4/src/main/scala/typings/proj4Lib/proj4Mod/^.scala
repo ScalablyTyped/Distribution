@@ -13,8 +13,18 @@ object ^ extends js.Object {
   val version: java.lang.String = js.native
   def apply(fromProjection: java.lang.String): Converter = js.native
   def apply(fromProjection: java.lang.String, toProjection: java.lang.String): Converter = js.native
-  def apply[T /* <: TemplateCoordinates */](fromProjection: java.lang.String, toProjection: java.lang.String, coordinates: T): T = js.native
-  def apply[T /* <: TemplateCoordinates */](toProjection: java.lang.String, coordinates: T): T = js.native
+  def apply(
+    fromProjection: java.lang.String,
+    toProjection: java.lang.String,
+    coordinates: js.Array[scala.Double]
+  ): js.Array[scala.Double] = js.native
+  def apply(
+    fromProjection: java.lang.String,
+    toProjection: java.lang.String,
+    coordinates: InterfaceCoordinates
+  ): InterfaceCoordinates = js.native
+  def apply(toProjection: java.lang.String, coordinates: js.Array[scala.Double]): js.Array[scala.Double] = js.native
+  def apply(toProjection: java.lang.String, coordinates: InterfaceCoordinates): InterfaceCoordinates = js.native
   def Point(coordinates: java.lang.String): InterfaceCoordinates = js.native
   def Point(coordinates: TemplateCoordinates): InterfaceCoordinates = js.native
   /**

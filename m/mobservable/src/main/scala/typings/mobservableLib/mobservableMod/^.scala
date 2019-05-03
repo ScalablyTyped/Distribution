@@ -50,23 +50,33 @@ object ^ extends js.Object {
   def isReactive(value: js.Any, property: java.lang.String): scala.Boolean = js.native
   def makeReactive(target: js.Object, key: java.lang.String): js.Any = js.native
   def makeReactive(target: js.Object, key: java.lang.String, baseDescriptor: stdLib.PropertyDescriptor): js.Any = js.native
-  def makeReactive[T /* <: java.lang.String | scala.Double | scala.Boolean | stdLib.Date | stdLib.RegExp | js.Function | scala.Unit */](value: T): mobservableLib.libInterfacesMod.IObservableValue[T] = js.native
+  def makeReactive(value: java.lang.String): mobservableLib.libInterfacesMod.IObservableValue[java.lang.String] = js.native
+  def makeReactive(value: js.Function): mobservableLib.libInterfacesMod.IObservableValue[js.Function] = js.native
+  def makeReactive(value: scala.Boolean): mobservableLib.libInterfacesMod.IObservableValue[scala.Boolean] = js.native
+  def makeReactive(value: scala.Double): mobservableLib.libInterfacesMod.IObservableValue[scala.Double] = js.native
+  def makeReactive(value: scala.Unit): mobservableLib.libInterfacesMod.IObservableValue[scala.Unit] = js.native
+  def makeReactive(value: stdLib.Date): mobservableLib.libInterfacesMod.IObservableValue[stdLib.Date] = js.native
+  def makeReactive(value: stdLib.RegExp): mobservableLib.libInterfacesMod.IObservableValue[stdLib.RegExp] = js.native
+  def makeReactive[T /* <: js.Object */](value: T): T = js.native
   def makeReactive[T](value: js.Array[T]): mobservableLib.libInterfacesMod.IObservableArray[T] = js.native
   def makeReactive[T, S /* <: js.Object */](value: js.Function0[T]): mobservableLib.libInterfacesMod.IObservableValue[T] = js.native
   def makeReactive[T, S /* <: js.Object */](value: js.Function0[T], thisArg: S): mobservableLib.libInterfacesMod.IObservableValue[T] = js.native
-  @JSName("makeReactive")
-  def makeReactive_TObjectT[T /* <: js.Object */](value: T): T = js.native
   def map[V](): mobservableLib.libObservablemapMod.ObservableMap[V] = js.native
   def map[V](initialValues: mobservableLib.libObservablemapMod.KeyValueMap[V]): mobservableLib.libObservablemapMod.ObservableMap[V] = js.native
   def map[V](initialValues: mobservableLib.libObservablemapMod.KeyValueMap[V], valueModifier: js.Function): mobservableLib.libObservablemapMod.ObservableMap[V] = js.native
   def observable(target: js.Object, key: java.lang.String): js.Any = js.native
   def observable(target: js.Object, key: java.lang.String, baseDescriptor: stdLib.PropertyDescriptor): js.Any = js.native
-  def observable[T /* <: java.lang.String | scala.Double | scala.Boolean | stdLib.Date | stdLib.RegExp | js.Function | scala.Unit */](value: T): mobservableLib.libInterfacesMod.IObservableValue[T] = js.native
+  def observable(value: java.lang.String): mobservableLib.libInterfacesMod.IObservableValue[java.lang.String] = js.native
+  def observable(value: js.Function): mobservableLib.libInterfacesMod.IObservableValue[js.Function] = js.native
+  def observable(value: scala.Boolean): mobservableLib.libInterfacesMod.IObservableValue[scala.Boolean] = js.native
+  def observable(value: scala.Double): mobservableLib.libInterfacesMod.IObservableValue[scala.Double] = js.native
+  def observable(value: scala.Unit): mobservableLib.libInterfacesMod.IObservableValue[scala.Unit] = js.native
+  def observable(value: stdLib.Date): mobservableLib.libInterfacesMod.IObservableValue[stdLib.Date] = js.native
+  def observable(value: stdLib.RegExp): mobservableLib.libInterfacesMod.IObservableValue[stdLib.RegExp] = js.native
+  def observable[T /* <: js.Object */](value: T): T = js.native
   def observable[T](value: js.Array[T]): mobservableLib.libInterfacesMod.IObservableArray[T] = js.native
   def observable[T, S /* <: js.Object */](value: js.Function0[T]): mobservableLib.libInterfacesMod.IObservableValue[T] = js.native
   def observable[T, S /* <: js.Object */](value: js.Function0[T], thisArg: S): mobservableLib.libInterfacesMod.IObservableValue[T] = js.native
-  @JSName("observable")
-  def observable_TObjectT[T /* <: js.Object */](value: T): T = js.native
   def observe(func: js.Function0[scala.Unit]): mobservableLib.libInterfacesMod.Lambda = js.native
   def observe[T /* <: js.Object */](
     `object`: T,

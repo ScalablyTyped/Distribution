@@ -86,7 +86,9 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   /**
     * The initial state node key.
     */
-  var initial: js.UndefOr[java.lang.String] = js.native
+  var initial: /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
+  ] = js.native
   /**
     * The initial State instance, which includes all actions to be executed from
     * entering the initial state.

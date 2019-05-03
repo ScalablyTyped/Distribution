@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sasl-scram-sha-1"
-version := "1.2-dt-20181205Z-280c03"
+version := "1.2-dt-20181205Z-281f8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "saslmechanisms" % "0.1-dt-20181126Z-f62138",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "saslmechanisms" % "0.1-dt-20181126Z-6db731",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

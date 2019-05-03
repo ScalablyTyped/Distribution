@@ -1,7 +1,7 @@
 
 # Scala.js typings for mariasql
 
-Typings are for version v0.1.22
+Typings are for version v0.1.23
 
 ## Library description:
 A node.js binding to MariaDB's non-blocking (MySQL-compatible) client library
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for mariasql v0.1.22
+// Type definitions for mariasql v0.1.23
 // Project: https://github.com/mscdex/node-mariasql
 // Definitions by: MichaelBennett <https://github.com/bennett000>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

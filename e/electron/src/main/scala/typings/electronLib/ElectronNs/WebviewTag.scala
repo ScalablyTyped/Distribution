@@ -733,20 +733,6 @@ trait WebviewTag
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.PointerEvent, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  /**
-    * Fired when the gpu process is crashed.
-    */
-  @JSName("addEventListener")
-  def `addEventListener_gpu-crashed`(
-    event: electronLib.electronLibStrings.`gpu-crashed`,
-    listener: js.Function1[/* event */ Event, scala.Unit]
-  ): this.type = js.native
-  @JSName("addEventListener")
-  def `addEventListener_gpu-crashed`(
-    event: electronLib.electronLibStrings.`gpu-crashed`,
-    listener: js.Function1[/* event */ Event, scala.Unit],
-    useCapture: scala.Boolean
-  ): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_input(
     `type`: electronLib.electronLibStrings.input,
@@ -2158,11 +2144,6 @@ trait WebviewTag
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.PointerEvent, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  @JSName("removeEventListener")
-  def `removeEventListener_gpu-crashed`(
-    event: electronLib.electronLibStrings.`gpu-crashed`,
-    listener: js.Function1[/* event */ Event, scala.Unit]
-  ): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_input(
     `type`: electronLib.electronLibStrings.input,

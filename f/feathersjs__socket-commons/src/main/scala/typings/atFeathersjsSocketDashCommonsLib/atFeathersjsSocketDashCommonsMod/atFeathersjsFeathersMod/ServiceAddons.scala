@@ -11,7 +11,7 @@ trait ServiceAddons[T] extends js.Object {
     callback: js.Function2[
       /* data */ T, 
       /* hook */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.HookContext[T], 
-      atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel
+      atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel | js.Array[atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel] | scala.Unit
     ]
   ): this.type = js.native
   def publish(
@@ -19,7 +19,7 @@ trait ServiceAddons[T] extends js.Object {
     callback: js.Function2[
       /* data */ T, 
       /* hook */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.HookContext[T], 
-      atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel
+      atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel | js.Array[atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel] | scala.Unit
     ]
   ): this.type = js.native
 }

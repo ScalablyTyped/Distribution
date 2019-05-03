@@ -3,6 +3,21 @@
 
 Typings are for version 0.6
 
+## Library description:
+<p align="center"><img src ="https://github.com/bokuweb/react-sortable-pane/blob/master/logo.png?raw=true" /></p>
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | react-sortable-pane |
+| Keywords           | React |
+| # releases         | 23 |
+| # dependents       | 2 |
+| # downloads        | 21557 |
+| # stars            | 0 |
+
+## Links
+- [Npm](https://www.npmjs.com/package/react-sortable-pane)
+    
 
 
 ## Note

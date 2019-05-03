@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "leaflet-draw"
-version := "0.4-dt-20190412Z-8281fc"
+version := "0.4-dt-20190412Z-57a219"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-ed63b4",
-  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190417Z-22d9f1",
-  "org.scalablytyped" %%% "std" % "3.4-495f93")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-c5348d",
+  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190417Z-93b9f9",
+  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

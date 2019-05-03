@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - puppeteerLib.puppeteerLibStrings.Letter
   - puppeteerLib.puppeteerLibStrings.Legal
-  - puppeteerLib.puppeteerLibStrings.Tabload
+  - puppeteerLib.puppeteerLibStrings.Tabloid
   - puppeteerLib.puppeteerLibStrings.Ledger
   - puppeteerLib.puppeteerLibStrings.A0
   - puppeteerLib.puppeteerLibStrings.A1

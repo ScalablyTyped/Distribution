@@ -5,20 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ErrorFailureGroupSuccess[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */] extends js.Object {
+trait Anon_ErrorFailureGroupSuccess extends js.Object {
   def failure(error: stdLib.Error): js.Any
-  def success(thing: kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, group: T): js.Any
+  def success(group: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup): js.Any
 }
 
 object Anon_ErrorFailureGroupSuccess {
   @scala.inline
-  def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser | kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup */](
-    failure: stdLib.Error => js.Any,
-    success: (kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, T) => js.Any
-  ): Anon_ErrorFailureGroupSuccess[T] = {
-    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction2(success))
+  def apply(failure: stdLib.Error => js.Any, success: kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup => js.Any): Anon_ErrorFailureGroupSuccess = {
+    val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction1(success))
   
-    __obj.asInstanceOf[Anon_ErrorFailureGroupSuccess[T]]
+    __obj.asInstanceOf[Anon_ErrorFailureGroupSuccess]
   }
 }
 

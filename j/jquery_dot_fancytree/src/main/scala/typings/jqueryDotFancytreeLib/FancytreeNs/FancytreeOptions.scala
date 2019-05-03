@@ -42,7 +42,11 @@ trait FancytreeOptions
   /** Enable titles (default: false) */
   var enableTitles: js.UndefOr[scala.Boolean] = js.undefined
   /** List of active extensions (default: []) */
-  var extensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var extensions: js.UndefOr[
+    js.Array[
+      jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.dnd5 | jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.filter | jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.table | java.lang.String
+    ]
+  ] = js.undefined
   var filter: js.UndefOr[jqueryDotFancytreeLib.FancytreeNs.ExtensionsNs.Filter] = js.undefined
   /** Set focus when node is checked by a mouse click (default: false) */
   var focusOnSelect: js.UndefOr[scala.Boolean] = js.undefined
@@ -141,7 +145,9 @@ object FancytreeOptions {
     enableAspx: js.UndefOr[scala.Boolean] = js.undefined,
     enableTitles: js.UndefOr[scala.Boolean] = js.undefined,
     expand: (/* event */ jqueryLib.JQueryEventObject, /* data */ EventData) => scala.Unit = null,
-    extensions: js.Array[java.lang.String] = null,
+    extensions: js.Array[
+      jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.dnd5 | jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.filter | jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.table | java.lang.String
+    ] = null,
     filter: jqueryDotFancytreeLib.FancytreeNs.ExtensionsNs.Filter = null,
     focus: (/* event */ jqueryLib.JQueryEventObject, /* data */ EventData) => scala.Unit = null,
     focusOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
