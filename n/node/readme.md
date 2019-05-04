@@ -1,7 +1,7 @@
 
 # Scala.js typings for node
 
-Typings are for version 11.13
+Typings are for version 12.0
 
 ## Library description:
 node
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for non-npm package Node.js 11.13
+// Type definitions for non-npm package Node.js 12.0
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <https://github.com/Microsoft>
 //                 DefinitelyTyped <https://github.com/DefinitelyTyped>

@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", "KeyObject")
 @js.native
 class KeyObject protected () extends _KeyLike {
+  /**
+    * For asymmetric keys, this property represents the size of the embedded key in
+    * bytes. This property is `undefined` for symmetric keys.
+    */
+  var asymmetricKeySize: js.UndefOr[scala.Double] = js.native
   var asymmetricKeyType: js.UndefOr[KeyType] = js.native
   var symmetricSize: js.UndefOr[scala.Double] = js.native
   var `type`: KeyObjectType = js.native

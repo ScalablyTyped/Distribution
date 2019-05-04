@@ -3911,6 +3911,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAlexaforbusinessMod._TemperatureUnit
   
   @js.native
+  sealed trait CENC_V1
+    extends awsDashSdkLib.clientsMediaconvertMod._DashIsoPlaybackDeviceCompatibility
+  
+  @js.native
   sealed trait CENTERED
     extends awsDashSdkLib.clientsMedialiveMod._BurnInAlignment
        with awsDashSdkLib.clientsMediaconvertMod._BurninSubtitleAlignment
@@ -20378,6 +20382,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsApigatewayMod._LocationStatusType
   
   @js.native
+  sealed trait UNENCRYPTED_SEI
+    extends awsDashSdkLib.clientsMediaconvertMod._DashIsoPlaybackDeviceCompatibility
+  
+  @js.native
   sealed trait UNHANDLED_DECISION
     extends awsDashSdkLib.clientsSwfMod._CancelWorkflowExecutionFailedCause
        with awsDashSdkLib.clientsSwfMod._CompleteWorkflowExecutionFailedCause
@@ -20532,7 +20540,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait UPDATE_FAILED
-    extends awsDashSdkLib.clientsCloudformationMod._ResourceStatus
+    extends awsDashSdkLib.clientsMedialiveMod._ChannelState
+       with awsDashSdkLib.clientsCloudformationMod._ResourceStatus
   
   @js.native
   sealed trait UPDATE_INITIATED
@@ -20584,6 +20593,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsKinesisanalyticsMod._ApplicationStatus
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod._ApplicationStatus
        with awsDashSdkLib.clientsBatchMod._CEStatus
+       with awsDashSdkLib.clientsMedialiveMod._ChannelState
        with awsDashSdkLib.clientsCloudhsmMod._CloudHsmObjectState
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._DomainStatusType
        with awsDashSdkLib.clientsXrayMod._EncryptionStatus
@@ -29662,6 +29672,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CELSIUS: CELSIUS = "CELSIUS".asInstanceOf[CELSIUS]
   @scala.inline
+  def CENC_V1: CENC_V1 = "CENC_V1".asInstanceOf[CENC_V1]
+  @scala.inline
   def CENTERED: CENTERED = "CENTERED".asInstanceOf[CENTERED]
   @scala.inline
   def CENTOS: CENTOS = "CENTOS".asInstanceOf[CENTOS]
@@ -36417,6 +36429,8 @@ object awsDashSdkLibStrings {
   def UNDER_MAINTENANCE: UNDER_MAINTENANCE = "UNDER_MAINTENANCE".asInstanceOf[UNDER_MAINTENANCE]
   @scala.inline
   def UNDOCUMENTED: UNDOCUMENTED = "UNDOCUMENTED".asInstanceOf[UNDOCUMENTED]
+  @scala.inline
+  def UNENCRYPTED_SEI: UNENCRYPTED_SEI = "UNENCRYPTED_SEI".asInstanceOf[UNENCRYPTED_SEI]
   @scala.inline
   def UNHANDLED_DECISION: UNHANDLED_DECISION = "UNHANDLED_DECISION".asInstanceOf[UNHANDLED_DECISION]
   @scala.inline

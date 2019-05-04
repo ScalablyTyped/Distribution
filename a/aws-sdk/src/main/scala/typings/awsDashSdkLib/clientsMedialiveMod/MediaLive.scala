@@ -210,6 +210,29 @@ trait MediaLive
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Delete all schedule actions on a channel.
+    */
+  def deleteSchedule(): awsDashSdkLib.libRequestMod.Request[DeleteScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteSchedule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Delete all schedule actions on a channel.
+    */
+  def deleteSchedule(params: DeleteScheduleRequest): awsDashSdkLib.libRequestMod.Request[DeleteScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteSchedule(
+    params: DeleteScheduleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Removes tags for a resource
     */
   def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -592,6 +615,29 @@ trait MediaLive
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Changes the class of the channel.
+    */
+  def updateChannelClass(): awsDashSdkLib.libRequestMod.Request[UpdateChannelClassResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateChannelClass(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateChannelClassResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateChannelClassResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Changes the class of the channel.
+    */
+  def updateChannelClass(params: UpdateChannelClassRequest): awsDashSdkLib.libRequestMod.Request[UpdateChannelClassResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateChannelClass(
+    params: UpdateChannelClassRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateChannelClassResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateChannelClassResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an input.
     */

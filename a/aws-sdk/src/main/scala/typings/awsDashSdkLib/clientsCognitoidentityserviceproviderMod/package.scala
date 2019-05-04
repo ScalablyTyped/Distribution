@@ -292,6 +292,7 @@ package object clientsCognitoidentityserviceproviderMod {
   type SupportedIdentityProvidersListType = js.Array[ProviderNameType]
   type TagKeysType = java.lang.String
   type TagValueType = java.lang.String
+  type TemporaryPasswordValidityDaysType = scala.Double
   type TokenModelType = java.lang.String
   type UserFilterType = java.lang.String
   type UserImportJobIdType = java.lang.String

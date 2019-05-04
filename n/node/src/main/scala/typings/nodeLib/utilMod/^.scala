@@ -173,12 +173,8 @@ object ^ extends js.Object {
     /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* result */ TResult, scala.Unit], 
     scala.Unit
   ] = js.native
-  /** @deprecated since v0.11.3 - use `console.error()` instead. */
-  def debug(string: java.lang.String): scala.Unit = js.native
   def debuglog(key: java.lang.String): js.Function2[/* msg */ java.lang.String, /* repeated */ js.Any, scala.Unit] = js.native
   def deprecate[T /* <: js.Function */](fn: T, message: java.lang.String): T = js.native
-  /** @deprecated since v0.11.3 - use `console.error()` instead. */
-  def error(param: js.Any*): scala.Unit = js.native
   def format(format: js.Any, param: js.Any*): java.lang.String = js.native
   def formatWithOptions(inspectOptions: InspectOptions, format: java.lang.String, param: js.Any*): java.lang.String = js.native
   def inherits(constructor: js.Any, superConstructor: js.Any): scala.Unit = js.native
@@ -221,8 +217,6 @@ object ^ extends js.Object {
   def isUndefined(`object`: js.Any): /* is undefined */ scala.Boolean = js.native
   /** @deprecated since v0.11.3 - use a third party module instead. */
   def log(string: java.lang.String): scala.Unit = js.native
-  /** @deprecated since v0.11.3 - use `console.log()` instead. */
-  def print(param: js.Any*): scala.Unit = js.native
   def promisify(fn: js.Function): js.Function = js.native
   def promisify(
     fn: js.Function1[
@@ -347,7 +341,5 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): js.Function0[js.Promise[TResult]] = js.native
-  /** @deprecated since v0.11.3 - use `console.log()` instead. */
-  def puts(param: js.Any*): scala.Unit = js.native
 }
 

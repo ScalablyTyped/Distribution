@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fbemitter"
-version := "2.0.0-dt-20190322Z-97d765"
+version := "2.0.0-dt-20190503Z-97d765"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

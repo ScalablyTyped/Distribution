@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "fluxible"
-version := "1.4-dt-20181009Z-5d463b"
+version := "1.4-dt-20181009Z-3bd4f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180425Z-74520d",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
+  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180425Z-b0d07b",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -199,6 +199,7 @@
 | [ansi-escapes](./a/ansi-escapes) | ANSI escape codes for manipulating the terminal | ansi, terminal, console, cli, string, tty, escape, escapes, formatting, shell, xterm, log, logging, command-line, text, vt100, sequence, control, code, codes, cursor, iterm, iterm2 |
 | [ansi-regex](./a/ansi-regex) | Regular expression for matching ANSI escape codes | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, command-line, text, regex, regexp, re, match, test, find, pattern |
 | [ansi-styles](./a/ansi-styles) | ANSI escape codes for styling strings in the termi | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
+| [ansi_up](./a/ansi_up) | Convert ansi sequences in strings to colorful HTML | ansi, html |
 | [ansicolors](./a/ansicolors) | Functions that surround a string with ansicolor co | ansi, colors, highlight, string |
 | [ant-design__create-react-](./a/ant-design__create-react-context) | A fork of create-react-context in MIT license | react, context, contextTypes, polyfill, ponyfill |
 | [ant-design__icons](./a/ant-design__icons) | Ant Design Icons | - |
@@ -2944,6 +2945,7 @@
 | [json-server](./j/json-server) | Serves JSON files through REST routes. | JSON, server, fake, REST, API, prototyping, mock, mocking, test, testing, rest, data, dummy, sandbox |
 | [json-socket](./j/json-socket) | An easy way to send JSON over TCP using sockets. | - |
 | [json-stable-stringify](./j/json-stable-stringify) | deterministic JSON.stringify() with custom sorting | json, stringify, deterministic, hash, sort, stable |
+| [json-stringify-pretty-com](./j/json-stringify-pretty-compact) | The best of both JSON.stringify(obj) and JSON.stri | JSON, stringify, pretty, print, pretty-print, compact, indent, format, formatter |
 | [json-stringify-safe](./j/json-stringify-safe) | Like JSON.stringify, but doesn't blow up on circul | json, stringify, circular, safe |
 | [json2csv](./j/json2csv) | Convert JSON to CSV | json, to, csv, export, convert, parse |
 | [json2md](./j/json2md) | A JSON to Markdown converter. | json, markdown, converter, generator |
@@ -3000,6 +3002,70 @@
 | [jui-grid](./j/jui-grid) | JUI grid can handle millions of data, and can disp | HTML5, CSS, JS, JavaScript, SVG, Grid, Framework, bootstrap, Web Development, free, MIT |
 | [jump_dot_js](./j/jump_dot_js) | A modern smooth scrolling library. | smooth, scroll |
 | [junk](./j/junk) | Filter out system junk files like .DS_Store and Th | junk, trash, garbage, files, os, ignore, exclude, filter, temp, tmp, system, clean, cleanup |
+| [jupyterlab__application](./j/jupyterlab__application) | JupyterLab - Application | - |
+| [jupyterlab__application-e](./j/jupyterlab__application-extension) | JupyterLab - Application Extension | - |
+| [jupyterlab__apputils](./j/jupyterlab__apputils) | JupyterLab - Application Utilities | - |
+| [jupyterlab__apputils-exte](./j/jupyterlab__apputils-extension) | JupyterLab - Application Utilities Extension | - |
+| [jupyterlab__attachments](./j/jupyterlab__attachments) | JupyterLab - Notebook Cell Attachments | - |
+| [jupyterlab__cells](./j/jupyterlab__cells) | JupyterLab - Notebook Cells | - |
+| [jupyterlab__codeeditor](./j/jupyterlab__codeeditor) | JupyterLab - Abstract Code Editor | - |
+| [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider | - |
+| [jupyterlab__codemirror-ex](./j/jupyterlab__codemirror-extension) | JupyterLab - CodeMirror Provider Extension | - |
+| [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer | - |
+| [jupyterlab__completer-ext](./j/jupyterlab__completer-extension) | JupyterLab - Completer Extension | - |
+| [jupyterlab__console](./j/jupyterlab__console) | JupyterLab - Code Console | - |
+| [jupyterlab__console-exten](./j/jupyterlab__console-extension) | JupyterLab - Code Console Extension | - |
+| [jupyterlab__coreutils](./j/jupyterlab__coreutils) | JupyterLab - Core Utilities | - |
+| [jupyterlab__csvviewer](./j/jupyterlab__csvviewer) | JupyterLab - CSV Widget | - |
+| [jupyterlab__csvviewer-ext](./j/jupyterlab__csvviewer-extension) | JupyterLab - CSV Widget Extension | - |
+| [jupyterlab__docmanager](./j/jupyterlab__docmanager) | JupyterLab - Document Manager | - |
+| [jupyterlab__docmanager-ex](./j/jupyterlab__docmanager-extension) | JupyterLab - Document Manager Extension | - |
+| [jupyterlab__docregistry](./j/jupyterlab__docregistry) | JupyterLab - Document Registry | - |
+| [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager) | JupyterLab - Extension Manager | - |
+| [jupyterlab__extensionmana](./j/jupyterlab__extensionmanager-extension) | JupyterLab - Extension Manager Extension | - |
+| [jupyterlab__faq-extension](./j/jupyterlab__faq-extension) | JupyterLab - FAQ Extension | - |
+| [jupyterlab__filebrowser](./j/jupyterlab__filebrowser) | JupyterLab - FileBrowser Widget | - |
+| [jupyterlab__filebrowser-e](./j/jupyterlab__filebrowser-extension) | JupyterLab - Filebrowser Widget Extension | - |
+| [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget | - |
+| [jupyterlab__fileeditor-ex](./j/jupyterlab__fileeditor-extension) | JupyterLab - Editor Widget Extension | - |
+| [jupyterlab__help-extensio](./j/jupyterlab__help-extension) | JupyterLab - Help Extension | - |
+| [jupyterlab__imageviewer](./j/jupyterlab__imageviewer) | JupyterLab - Image Widget | - |
+| [jupyterlab__imageviewer-e](./j/jupyterlab__imageviewer-extension) | JupyterLab - Image Widget Extension | - |
+| [jupyterlab__inspector](./j/jupyterlab__inspector) | JupyterLab - Code Inspector | - |
+| [jupyterlab__inspector-ext](./j/jupyterlab__inspector-extension) | JupyterLab - Code Inspector Extension | - |
+| [jupyterlab__javascript-ex](./j/jupyterlab__javascript-extension) | JupyterLab - Javascript Renderer | - |
+| [jupyterlab__json-extensio](./j/jupyterlab__json-extension) | JupyterLab - JSON Renderer | - |
+| [jupyterlab__launcher](./j/jupyterlab__launcher) | JupyterLab - Launcher Panel | - |
+| [jupyterlab__launcher-exte](./j/jupyterlab__launcher-extension) | JupyterLab - Launcher Page Extension | - |
+| [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu | - |
+| [jupyterlab__mainmenu-exte](./j/jupyterlab__mainmenu-extension) | JupyterLab - Main Menu Extension | - |
+| [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension | - |
+| [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab | - |
+| [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset | - |
+| [jupyterlab__metapackage](./j/jupyterlab__metapackage) | JupyterLab - Meta Package.  All of the packages us | - |
+| [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook | - |
+| [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension | - |
+| [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes. | - |
+| [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area | - |
+| [jupyterlab__pdf-extension](./j/jupyterlab__pdf-extension) | JupyterLab - PDF Viewer | - |
+| [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime | - |
+| [jupyterlab__rendermime-ex](./j/jupyterlab__rendermime-extension) | A rendermime extension for JupyterLab | - |
+| [jupyterlab__rendermime-in](./j/jupyterlab__rendermime-interfaces) | JupyterLab - Interfaces for Mime Renderers | - |
+| [jupyterlab__running](./j/jupyterlab__running) | JupyterLab - Running Sessions Panel | - |
+| [jupyterlab__running-exten](./j/jupyterlab__running-extension) | JupyterLab - Running Sessions Extension | - |
+| [jupyterlab__services](./j/jupyterlab__services) | Client APIs for the Jupyter services REST APIs | jupyter, notebook, services |
+| [jupyterlab__settingeditor](./j/jupyterlab__settingeditor) | The JupyterLab default setting editor interface | - |
+| [jupyterlab__settingeditor](./j/jupyterlab__settingeditor-extension) | JupyterLab - Setting Editor Extension | - |
+| [jupyterlab__shortcuts-ext](./j/jupyterlab__shortcuts-extension) | JupyterLab - Shortcuts Extension | - |
+| [jupyterlab__tabmanager-ex](./j/jupyterlab__tabmanager-extension) | JupyterLab - Tab Manager Extension | - |
+| [jupyterlab__terminal](./j/jupyterlab__terminal) | JupyterLab - Terminal Emulator Widget | - |
+| [jupyterlab__terminal-exte](./j/jupyterlab__terminal-extension) | JupyterLab - Terminal Emulator Extension | - |
+| [jupyterlab__theme-dark-ex](./j/jupyterlab__theme-dark-extension) | JupyterLab - Default Dark Theme | - |
+| [jupyterlab__theme-light-e](./j/jupyterlab__theme-light-extension) | JupyterLab - Default Light Theme | - |
+| [jupyterlab__tooltip](./j/jupyterlab__tooltip) | JupyterLab - Tooltip Widget | - |
+| [jupyterlab__tooltip-exten](./j/jupyterlab__tooltip-extension) | JupyterLab - Tooltip Extension | - |
+| [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer | - |
+| [jupyterlab__vega4-extensi](./j/jupyterlab__vega4-extension) | JupyterLab - Vega 4 and Vega-Lite 2 Mime Renderer  | - |
 | [just-debounce-it](./j/just-debounce-it) | return a debounced function | function, debounce, no-dependencies, just |
 | [just-extend](./j/just-extend) | extend an object | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
 | [just-pick](./j/just-pick) | copy an object but with only the specified keys | object, pick, keys, no-dependencies, just |
@@ -4452,6 +4518,21 @@
 | [phonegap-plugin-barcodesc](./p/phonegap-plugin-barcodescanner) | You can use the BarcodeScanner plugin to scan diff | ecosystem:cordova, ecosystem:phonegap, cordova-ios, cordova-android, cordova-windows, cordova-browser, cordova:plugin |
 | [phonegap-plugin-push](./p/phonegap-plugin-push) | Register and receive push notifications. | ecosystem:cordova, ecosystem:phonegap, cordova-ios, cordova-android, cordova-windows8, cordova-windows, cordova-wp8, cordova-browser |
 | [phonon](./p/phonon) | Phonon is a lightweight & scalable Javascript/CSS3 | - |
+| [phosphor__algorithm](./p/phosphor__algorithm) | PhosphorJS - Algorithms and Iterators | - |
+| [phosphor__application](./p/phosphor__application) | PhosphorJS - Pluggable Application | - |
+| [phosphor__collections](./p/phosphor__collections) | PhosphorJS - Generic Collections | - |
+| [phosphor__commands](./p/phosphor__commands) | PhosphorJS - Commands | - |
+| [phosphor__coreutils](./p/phosphor__coreutils) | PhosphorJS - Core Utilities | - |
+| [phosphor__datagrid](./p/phosphor__datagrid) | PhosphorJS - Tabular Data Grid | - |
+| [phosphor__disposable](./p/phosphor__disposable) | PhosphorJS - Disposable | - |
+| [phosphor__domutils](./p/phosphor__domutils) | PhosphorJS - DOM Utilities | - |
+| [phosphor__dragdrop](./p/phosphor__dragdrop) | PhosphorJS - Drag and Drop | - |
+| [phosphor__keyboard](./p/phosphor__keyboard) | PhosphorJS - Keyboard | - |
+| [phosphor__messaging](./p/phosphor__messaging) | PhosphorJS - Message Passing | - |
+| [phosphor__properties](./p/phosphor__properties) | PhosphorJS - Attached Properties | - |
+| [phosphor__signaling](./p/phosphor__signaling) | PhosphorJS - Signals and Slots | - |
+| [phosphor__virtualdom](./p/phosphor__virtualdom) | PhosphorJS - Virtual DOM | - |
+| [phosphor__widgets](./p/phosphor__widgets) | PhosphorJS - Widgets | - |
 | [photonui](./p/photonui) | A javascript framework to create user interfaces | - |
 | [photoswipe](./p/photoswipe) | JavaScript gallery | gallery, lightbox, photo, image, touch, swipe, zoom |
 | [physijs](./p/physijs) | - | - |
@@ -6473,6 +6554,12 @@
 | [vec3](./v/vec3) | 3d vector math with good unit tests | point |
 | [vectorious](./v/vectorious) | A high performance linear algebra library. | matrix, vector, linear, algebra |
 | [vega](./v/vega) | The Vega visualization grammar. | vega, visualization, interaction, dataflow, library, data, d3 |
+| [vega-embed](./v/vega-embed) | Publish Vega visualizations as embedded web compon | vega, data, visualization, component, embed |
+| [vega-lib](./v/vega-lib) | Include Vega in projects using minimal dependencie | vega, visualization, interaction, dataflow, library, data, d3 |
+| [vega-lite](./v/vega-lite) | Vega-Lite is a concise high-level language for int | - |
+| [vega-schema-url-parser](./v/vega-schema-url-parser) | A parser to get the library and version from Vega  | vega, vega-lite, schema |
+| [vega-themes](./v/vega-themes) | Themes for stylized Vega and Vega-Lite visualizati | vega, vega-lite, themes, style |
+| [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat | vega-lite, vega, tooltip |
 | [vega-typings](./v/vega-typings) | Typings for Vega. | vega, typescript, typings |
 | [vega-util](./v/vega-util) | JavaScript utilities for Vega. | vega, utilities |
 | [velocity-animate](./v/velocity-animate) | Accelerated JavaScript animation. | velocity, animation, jquery, animate, ui, velocity.js, velocityjs, javascript |

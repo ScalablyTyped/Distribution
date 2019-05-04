@@ -9,7 +9,7 @@ trait ClassModel[T] extends js.Object {
   var behaviors: js.UndefOr[js.Object] = js.undefined
   var collection: js.UndefOr[meteorLib.MongoNs.Collection[T]] = js.undefined
   var events: js.UndefOr[js.Object] = js.undefined
-  var fields: Fields[T]
+  var fields: Fields[Omit[T, meteorDashAstronomyLib.meteorDashAstronomyLibStrings._id]]
   var helpers: js.UndefOr[Helpers[T]] = js.undefined
   var indexes: js.UndefOr[js.Object] = js.undefined
   var meteorMethods: js.UndefOr[js.Object] = js.undefined
@@ -20,7 +20,7 @@ trait ClassModel[T] extends js.Object {
 object ClassModel {
   @scala.inline
   def apply[T](
-    fields: Fields[T],
+    fields: Fields[Omit[T, meteorDashAstronomyLib.meteorDashAstronomyLibStrings._id]],
     name: java.lang.String,
     behaviors: js.Object = null,
     collection: meteorLib.MongoNs.Collection[T] = null,

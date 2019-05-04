@@ -20,6 +20,7 @@ package object MeteorAstronomyNs {
   type MongoQuery[T] = meteorLib.MongoNs.Selector[T] | meteorLib.MongoNs.ObjectID | java.lang.String
   type NonFunctionProperties[T] = stdLib.Pick[T, NonFunctionPropertyNames[T]]
   type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
+  type Omit[T, K] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type RemoveCallback = js.Function2[/* err */ js.Any, /* result */ js.Any, scala.Unit]
   type SaveAndValidateCallback = js.Function2[/* err */ js.Any, /* id */ js.Any, scala.Unit]
   type TypeOptions = TypeOptionsPrimitives | js.Array[TypeOptionsPrimitives] | Class[js.Any] | Enum[js.Any]

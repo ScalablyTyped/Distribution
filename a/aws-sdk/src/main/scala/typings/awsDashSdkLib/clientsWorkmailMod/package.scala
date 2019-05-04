@@ -19,6 +19,8 @@ package object clientsWorkmailMod {
   type EntityState = _EntityState | java.lang.String
   type GroupName = java.lang.String
   type Groups = js.Array[Group]
+  type MailboxQuota = scala.Double
+  type MailboxSize = scala.Double
   type MaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.GROUP

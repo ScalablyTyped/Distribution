@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ffi-napi"
-version := "2.4-dt-20190212Z-fbdcd6"
+version := "2.4-dt-20190212Z-fd81a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190502Z-84ec9f",
-  "org.scalablytyped" %%% "ref-napi" % "1.4-dt-20190322Z-5d42a0",
-  "org.scalablytyped" %%% "ref-struct-di" % "1.1-dt-20190322Z-d6de58",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "ref-napi" % "1.4-dt-20190322Z-c39a0e",
+  "org.scalablytyped" %%% "ref-struct-di" % "1.1-dt-20190322Z-fa98ef",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SignPrivateKeyInput extends PrivateKeyInput {
-  var padding: js.UndefOr[scala.Double] = js.undefined
-  var saltLength: js.UndefOr[scala.Double] = js.undefined
-}
+trait SignPrivateKeyInput
+  extends PrivateKeyInput
+     with SigningOptions
 
 object SignPrivateKeyInput {
   @scala.inline

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateJobRequest extends js.Object {
   /**
-    * This is a beta feature. If you are interested in using this feature, please contact AWS customer support.
+    * Accelerated transcoding can significantly speed up jobs with long, visually complex content. Outputs that use this feature incur pro-tier pricing. For information about feature limitations, see the AWS Elemental MediaConvert User Guide.
     */
   var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
   /**

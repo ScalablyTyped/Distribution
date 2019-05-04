@@ -111,6 +111,9 @@
 [info ] ImportType.scala:223 Failed type conversion: T[K] [id => @ember/object, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object) / TsDeclFunction(getWithDefault) / TsFunParam() / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:223 Failed type conversion: T[K] [id => @ember/object, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object) / TsDeclFunction(get) / TsTypeRef() / TsTypeLookup())] 
 [info ] ImportType.scala:223 Failed type conversion: T[K] [id => @ember/object, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/object/internals) / TsDeclFunction(cacheFor) / TsTypeUnion() / TsTypeRef() / TsTypeLookup())] 
+[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
+- atEmberObjectLib.dashPrivateTypesMod.ComputedPropertyMarker because Inheritance from two classes. Inlined ______getType, ______setType [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(computedMod) / Name(ComputedProperty)] 
+[info ] CompleteClass.scala:62 Completed implementations Vector(`<apply>`) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(computedMod) / Name(default)] 
 [info ] CompleteClass.scala:62 Completed implementations Vector(isDestroyed, concatenatedProperties, isDestroying, willDestroy, _super, init, destroy) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(coreMod) / Name(default)] 
 [info ] CompleteClass.scala:62 Completed implementations Vector(__ember_mixin__) [id => @ember/object, phase => scala.js, this => Name(atEmberObjectLib) / Name(mixinMod) / Name(default)] 
 [debug] PhaseRunner.scala:82 Success [id => @ember/object, phase => scala.js] 
@@ -126,7 +129,7 @@
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 
-[error] ^.scala:117 method set is defined twice;
-  the conflicting method set was defined at line 112:7,   def set[T, K /* <: java.lang.String */](obj: T, key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native [id => @ember/object, phase => build] 
+[error] ^.scala:121 method set is defined twice;
+  the conflicting method set was defined at line 116:7,   def set[T, K /* <: java.lang.String */](obj: T, key: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native [id => @ember/object, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [@ember/object => Compilation failed] [id => @ember/object, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [@ember/object => Compilation failed] [id => @ember/object, phase => publish] 

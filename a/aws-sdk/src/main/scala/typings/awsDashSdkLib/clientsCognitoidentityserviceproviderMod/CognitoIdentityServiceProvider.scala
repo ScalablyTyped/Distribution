@@ -462,6 +462,29 @@ trait CognitoIdentityServiceProvider
     ]
   ): awsDashSdkLib.libRequestMod.Request[AdminSetUserMFAPreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * 
+    */
+  def adminSetUserPassword(): awsDashSdkLib.libRequestMod.Request[AdminSetUserPasswordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def adminSetUserPassword(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AdminSetUserPasswordResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AdminSetUserPasswordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * 
+    */
+  def adminSetUserPassword(params: AdminSetUserPasswordRequest): awsDashSdkLib.libRequestMod.Request[AdminSetUserPasswordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def adminSetUserPassword(
+    params: AdminSetUserPasswordRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AdminSetUserPasswordResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AdminSetUserPasswordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Sets all the user settings for a specified user name. Works on any user. Requires developer credentials.
     */
   def adminSetUserSettings(): awsDashSdkLib.libRequestMod.Request[AdminSetUserSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native

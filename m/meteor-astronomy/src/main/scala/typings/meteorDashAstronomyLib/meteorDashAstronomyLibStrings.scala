@@ -12,9 +12,14 @@ object meteorDashAstronomyLibStrings {
   @js.native
   sealed trait Helpers extends js.Object
   
+  @js.native
+  sealed trait _id extends js.Object
+  
   @scala.inline
   def Fields: Fields = "Fields".asInstanceOf[Fields]
   @scala.inline
   def Helpers: Helpers = "Helpers".asInstanceOf[Helpers]
+  @scala.inline
+  def _id: _id = "_id".asInstanceOf[_id]
 }
 

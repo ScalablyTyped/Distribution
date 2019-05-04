@@ -59,6 +59,7 @@ trait Agent
   def setCustomContext(custom: js.Object): scala.Unit = js.native
   def setFramework(options: elasticDashApmDashNodeLib.Anon_Name): scala.Unit = js.native
   def setTransactionName(name: java.lang.String): scala.Unit = js.native
+   // Deprecated
   def setUserContext(user: UserObject): scala.Unit = js.native
   // Configuration
   def start(): Agent = js.native

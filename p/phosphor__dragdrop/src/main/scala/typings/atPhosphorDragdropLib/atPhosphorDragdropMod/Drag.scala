@@ -1,0 +1,159 @@
+package typings
+package atPhosphorDragdropLib.atPhosphorDragdropMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@phosphor/dragdrop", "Drag")
+@js.native
+class Drag protected ()
+  extends atPhosphorDisposableLib.atPhosphorDisposableMod.IDisposable {
+  /**
+    * Construct a new drag object.
+    *
+    * @param options - The options for initializing the drag.
+    */
+  def this(options: atPhosphorDragdropLib.atPhosphorDragdropMod.DragNs.IOptions) = this()
+  var _currentElement: js.Any = js.native
+  var _currentTarget: js.Any = js.native
+  var _disposed: js.Any = js.native
+  var _dropAction: js.Any = js.native
+  /**
+    * The scroll loop handler function.
+    */
+  var _onScrollFrame: js.Any = js.native
+  var _override: js.Any = js.native
+  var _promise: js.Any = js.native
+  var _resolve: js.Any = js.native
+  var _scrollTarget: js.Any = js.native
+  /**
+    * The drag image element for the drag object.
+    */
+  val dragImage: stdLib.HTMLElement | scala.Null = js.native
+  /**
+    * Test whether the object has been disposed.
+    *
+    * #### Notes
+    * This property is always safe to access.
+    */
+  /* CompleteClass */
+  override val isDisposed: scala.Boolean = js.native
+  /**
+    * The mime data for the drag object.
+    */
+  val mimeData: atPhosphorCoreutilsLib.atPhosphorCoreutilsMod.MimeData = js.native
+  /**
+    * The proposed drop action for the drag object.
+    */
+  val proposedAction: DropAction = js.native
+  /**
+    * Get the drag source for the drag object.
+    */
+  val source: js.Any = js.native
+  /**
+    * The supported drop actions for the drag object.
+    */
+  val supportedActions: SupportedActions = js.native
+  /**
+    * Add the document event listeners for the drag object.
+    */
+  /* private */ def _addListeners(): js.Any = js.native
+  /**
+    * Attach the drag image element at the specified location.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  /* private */ def _attachDragImage(clientX: js.Any, clientY: js.Any): js.Any = js.native
+  /**
+    * Detach the drag image element from the DOM.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  /* private */ def _detachDragImage(): js.Any = js.native
+  /**
+    * Handle the `'keydown'` event for the drag object.
+    */
+  /* private */ def _evtKeyDown(event: js.Any): js.Any = js.native
+  /**
+    * Handle the `'mousemove'` event for the drag object.
+    */
+  /* private */ def _evtMouseMove(event: js.Any): js.Any = js.native
+  /**
+    * Handle the `'mouseup'` event for the drag object.
+    */
+  /* private */ def _evtMouseUp(event: js.Any): js.Any = js.native
+  /**
+    * Finalize the drag operation and resolve the drag promise.
+    */
+  /* private */ def _finalize(action: js.Any): js.Any = js.native
+  /**
+    * Move the drag image element to the specified location.
+    *
+    * This is a no-op if there is no drag image element.
+    */
+  /* private */ def _moveDragImage(clientX: js.Any, clientY: js.Any): js.Any = js.native
+  /**
+    * Remove the document event listeners for the drag object.
+    */
+  /* private */ def _removeListeners(): js.Any = js.native
+  /**
+    * Set the internal drop action state and update the drag cursor.
+    */
+  /* private */ def _setDropAction(action: js.Any): js.Any = js.native
+  /**
+    * Update the current target node using the given mouse event.
+    */
+  /* private */ def _updateCurrentTarget(event: js.Any): js.Any = js.native
+  /**
+    * Update the drag scroll element under the mouse.
+    */
+  /* private */ def _updateDragScroll(event: js.Any): js.Any = js.native
+  /**
+    * Dispose of the resources held by the object.
+    *
+    * #### Notes
+    * If the object's `dispose` method is called more than once, all
+    * calls made after the first will be a no-op.
+    *
+    * #### Undefined Behavior
+    * It is undefined behavior to use any functionality of the object
+    * after it has been disposed unless otherwise explicitly noted.
+    */
+  /* CompleteClass */
+  override def dispose(): scala.Unit = js.native
+  /**
+    * Handle the DOM events for the drag operation.
+    *
+    * @param event - The DOM event sent to the drag object.
+    *
+    * #### Notes
+    * This method implements the DOM `EventListener` interface and is
+    * called in response to events on the document. It should not be
+    * called directly by user code.
+    */
+  def handleEvent(event: stdLib.Event): scala.Unit = js.native
+  /**
+    * Start the drag operation at the specified client position.
+    *
+    * @param clientX - The client X position for the drag start.
+    *
+    * @param clientY - The client Y position for the drag start.
+    *
+    * @returns A promise which resolves to the result of the drag.
+    *
+    * #### Notes
+    * If the drag has already been started, the promise created by the
+    * first call to `start` is returned.
+    *
+    * If the drag operation has ended, or if the drag object has been
+    * disposed, the returned promise will resolve to `'none'`.
+    *
+    * The drag object will be automatically disposed when drag operation
+    * completes. This means `Drag` objects are for single-use only.
+    *
+    * This method assumes the left mouse button is already held down.
+    */
+  def start(clientX: scala.Double, clientY: scala.Double): js.Promise[DropAction] = js.native
+}
+

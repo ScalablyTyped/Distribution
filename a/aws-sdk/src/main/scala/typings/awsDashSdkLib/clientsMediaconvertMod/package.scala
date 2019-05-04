@@ -364,6 +364,12 @@ package object clientsMediaconvertMod {
   */
   type DashIsoHbbtvCompliance = _DashIsoHbbtvCompliance | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CENC_V1
+    - awsDashSdkLib.awsDashSdkLibStrings.UNENCRYPTED_SEI
+    - java.lang.String
+  */
+  type DashIsoPlaybackDeviceCompatibility = _DashIsoPlaybackDeviceCompatibility | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE
     - awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES
     - java.lang.String

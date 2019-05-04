@@ -15,12 +15,14 @@ trait GenericSpan extends Taggable {
 object GenericSpan {
   @scala.inline
   def apply(
-    addTags: Tags => scala.Boolean,
-    setTag: (java.lang.String, TagValue) => scala.Boolean,
+    addLabels: Labels => scala.Boolean,
+    addTags: Labels => scala.Boolean,
+    setLabel: (java.lang.String, LabelValue) => scala.Boolean,
+    setTag: (java.lang.String, LabelValue) => scala.Boolean,
     traceparent: java.lang.String,
     `type`: java.lang.String
   ): GenericSpan = {
-    val __obj = js.Dynamic.literal(addTags = js.Any.fromFunction1(addTags), setTag = js.Any.fromFunction2(setTag), traceparent = traceparent)
+    val __obj = js.Dynamic.literal(addLabels = js.Any.fromFunction1(addLabels), addTags = js.Any.fromFunction1(addTags), setLabel = js.Any.fromFunction2(setLabel), setTag = js.Any.fromFunction2(setTag), traceparent = traceparent)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GenericSpan]
   }

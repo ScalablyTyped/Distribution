@@ -29,16 +29,6 @@ class AsyncResource protected () extends js.Object {
     */
   def asyncId(): scala.Double = js.native
   /**
-    * Call AsyncHooks after callbacks.
-    * @deprecated since 9.6 - Use asyncResource.runInAsyncScope() instead.
-    */
-  def emitAfter(): scala.Unit = js.native
-  /**
-    * Call AsyncHooks before callbacks.
-    * @deprecated since 9.6 - Use asyncResource.runInAsyncScope() instead.
-    */
-  def emitBefore(): scala.Unit = js.native
-  /**
     * Call AsyncHooks destroy callbacks.
     */
   def emitDestroy(): scala.Unit = js.native

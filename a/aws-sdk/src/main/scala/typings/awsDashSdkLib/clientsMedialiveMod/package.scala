@@ -227,6 +227,8 @@ package object clientsMedialiveMod {
     - awsDashSdkLib.awsDashSdkLibStrings.STOPPING
     - awsDashSdkLib.awsDashSdkLibStrings.DELETING
     - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_FAILED
     - java.lang.String
   */
   type ChannelState = _ChannelState | java.lang.String

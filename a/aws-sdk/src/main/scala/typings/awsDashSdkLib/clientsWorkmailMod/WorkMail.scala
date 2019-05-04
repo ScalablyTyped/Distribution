@@ -425,6 +425,29 @@ trait WorkMail
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateMemberFromGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Requests a user's mailbox details for a specified organization and user.
+    */
+  def getMailboxDetails(): awsDashSdkLib.libRequestMod.Request[GetMailboxDetailsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getMailboxDetails(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetMailboxDetailsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetMailboxDetailsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Requests a user's mailbox details for a specified organization and user.
+    */
+  def getMailboxDetails(params: GetMailboxDetailsRequest): awsDashSdkLib.libRequestMod.Request[GetMailboxDetailsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getMailboxDetails(
+    params: GetMailboxDetailsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetMailboxDetailsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetMailboxDetailsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates a paginated call to list the aliases associated with a given entity.
     */
   def listAliases(): awsDashSdkLib.libRequestMod.Request[ListAliasesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -677,6 +700,29 @@ trait WorkMail
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[ResetPasswordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates a user's current mailbox quota for a specified organization and user.
+    */
+  def updateMailboxQuota(): awsDashSdkLib.libRequestMod.Request[UpdateMailboxQuotaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateMailboxQuota(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateMailboxQuotaResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateMailboxQuotaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates a user's current mailbox quota for a specified organization and user.
+    */
+  def updateMailboxQuota(params: UpdateMailboxQuotaRequest): awsDashSdkLib.libRequestMod.Request[UpdateMailboxQuotaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateMailboxQuota(
+    params: UpdateMailboxQuotaRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateMailboxQuotaResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateMailboxQuotaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the primary email for a user, group, or resource. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email), and the email provided in the input is promoted as the primary.
     */

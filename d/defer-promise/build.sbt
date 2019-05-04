@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "defer-promise"
-version := "1.0-dt-20180214Z-750ff7"
+version := "1.0-dt-20190503Z-750ff7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
