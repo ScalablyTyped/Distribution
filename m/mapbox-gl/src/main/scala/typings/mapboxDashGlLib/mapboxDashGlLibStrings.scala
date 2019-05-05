@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 object mapboxDashGlLibStrings {
   @js.native
+  sealed trait `!`
+    extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
+  
+  @js.native
   sealed trait `!=`
     extends mapboxDashGlLib.mapboxDashGlMod.ExpressionName
   
@@ -668,6 +672,8 @@ object mapboxDashGlLibStrings {
   @js.native
   sealed trait zoomstart extends js.Object
   
+  @scala.inline
+  def `!`: `!` = "!".asInstanceOf[`!`]
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]
   @scala.inline

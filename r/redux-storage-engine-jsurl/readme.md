@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/axe312ger/redux-storage-engine-jsurl
 // Definitions by: Christian Rackerseder <https://github.com/screendriver>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 ```
 

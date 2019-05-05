@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-cookie
 
-Typings are for version 2.0.2
+Typings are for version 2.0.3
 
 ## Library description:
 Syncs a cookie's value with a MobX observable, allowing observers to react to its changes.

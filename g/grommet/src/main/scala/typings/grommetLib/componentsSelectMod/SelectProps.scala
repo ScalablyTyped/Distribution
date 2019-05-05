@@ -23,7 +23,9 @@ trait SelectProps extends js.Object {
   var emptySearchMessage: js.UndefOr[java.lang.String] = js.undefined
   var focusIndicator: js.UndefOr[scala.Boolean] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[scala.Boolean | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
+  var icon: js.UndefOr[
+    scala.Boolean | (js.Function1[/* repeated */ js.Any, _]) | reactLib.reactMod.ReactNode
+  ] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var labelKey: js.UndefOr[java.lang.String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
   var margin: js.UndefOr[
@@ -68,7 +70,7 @@ object SelectProps {
     emptySearchMessage: java.lang.String = null,
     focusIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     gridArea: java.lang.String = null,
-    icon: scala.Boolean | (js.Function1[/* repeated */ js.Any, _]) = null,
+    icon: scala.Boolean | (js.Function1[/* repeated */ js.Any, _]) | reactLib.reactMod.ReactNode = null,
     id: java.lang.String = null,
     labelKey: java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,

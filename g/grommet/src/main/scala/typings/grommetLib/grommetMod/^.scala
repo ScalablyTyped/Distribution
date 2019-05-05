@@ -169,7 +169,7 @@ object ^ extends js.Object {
     reactLib.reactMod.ComponentState
   ] = js.native
   val RadioButtonGroup: reactLib.reactMod.ComponentClass[
-    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement]), 
+    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with grommetLib.componentsBoxMod.BoxProps, 
     reactLib.reactMod.ComponentState
   ] = js.native
   val RangeInput: reactLib.reactMod.ComponentClass[

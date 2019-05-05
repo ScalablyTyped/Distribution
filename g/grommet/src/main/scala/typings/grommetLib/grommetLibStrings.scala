@@ -197,6 +197,12 @@ object grommetLibStrings {
     extends grommetLib.utilsMod._PolymorphicType
   
   @js.native
+  sealed trait `break-all` extends js.Object
+  
+  @js.native
+  sealed trait `break-word` extends js.Object
+  
+  @js.native
   sealed trait button
     extends grommetLib.utilsMod._PolymorphicType
   
@@ -597,6 +603,9 @@ object grommetLibStrings {
   @js.native
   sealed trait kbd
     extends grommetLib.utilsMod._PolymorphicType
+  
+  @js.native
+  sealed trait `keep-all` extends js.Object
   
   @js.native
   sealed trait keygen
@@ -1197,6 +1206,10 @@ object grommetLibStrings {
   @scala.inline
   def br: br = "br".asInstanceOf[br]
   @scala.inline
+  def `break-all`: `break-all` = "break-all".asInstanceOf[`break-all`]
+  @scala.inline
+  def `break-word`: `break-word` = "break-word".asInstanceOf[`break-word`]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
@@ -1414,6 +1427,8 @@ object grommetLibStrings {
   def jiggle: jiggle = "jiggle".asInstanceOf[jiggle]
   @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
+  @scala.inline
+  def `keep-all`: `keep-all` = "keep-all".asInstanceOf[`keep-all`]
   @scala.inline
   def keygen: keygen = "keygen".asInstanceOf[keygen]
   @scala.inline

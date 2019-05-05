@@ -14,7 +14,7 @@ trait HeadingProps extends js.Object {
   var color: js.UndefOr[java.lang.String | grommetLib.Anon_Dark] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var level: js.UndefOr[
-    grommetLib.grommetLibStrings.`1` | grommetLib.grommetLibStrings.`2` | grommetLib.grommetLibStrings.`3` | grommetLib.grommetLibStrings.`4` | grommetLib.grommetLibStrings.`5` | grommetLib.grommetLibStrings.`6`
+    grommetLib.grommetLibStrings.`1` | grommetLib.grommetLibStrings.`2` | grommetLib.grommetLibStrings.`3` | grommetLib.grommetLibStrings.`4` | grommetLib.grommetLibStrings.`5` | grommetLib.grommetLibStrings.`6` | grommetLib.grommetLibNumbers.`1` | grommetLib.grommetLibNumbers.`2` | grommetLib.grommetLibNumbers.`3` | grommetLib.grommetLibNumbers.`4` | grommetLib.grommetLibNumbers.`5` | grommetLib.grommetLibNumbers.`6`
   ] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
@@ -37,7 +37,7 @@ object HeadingProps {
     as: grommetLib.utilsMod.PolymorphicType = null,
     color: java.lang.String | grommetLib.Anon_Dark = null,
     gridArea: java.lang.String = null,
-    level: grommetLib.grommetLibStrings.`1` | grommetLib.grommetLibStrings.`2` | grommetLib.grommetLibStrings.`3` | grommetLib.grommetLibStrings.`4` | grommetLib.grommetLibStrings.`5` | grommetLib.grommetLibStrings.`6` = null,
+    level: grommetLib.grommetLibStrings.`1` | grommetLib.grommetLibStrings.`2` | grommetLib.grommetLibStrings.`3` | grommetLib.grommetLibStrings.`4` | grommetLib.grommetLibStrings.`5` | grommetLib.grommetLibStrings.`6` | grommetLib.grommetLibNumbers.`1` | grommetLib.grommetLibNumbers.`2` | grommetLib.grommetLibNumbers.`3` | grommetLib.grommetLibNumbers.`4` | grommetLib.grommetLibNumbers.`5` | grommetLib.grommetLibNumbers.`6` = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,

@@ -27,6 +27,10 @@ trait OnChange extends js.Object {
     */
   var country: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The type of the Element that changed.
+    */
+  var elementType: ElementType
+  /**
     * true if the value is empty
     */
   var empty: scala.Boolean
@@ -53,13 +57,14 @@ object OnChange {
   def apply(
     bankName: java.lang.String,
     complete: scala.Boolean,
+    elementType: ElementType,
     empty: scala.Boolean,
     error: stripejsLib.stripejsMod.StripeError,
     brand: java.lang.String = null,
     country: java.lang.String = null,
     value: js.Any = null
   ): OnChange = {
-    val __obj = js.Dynamic.literal(bankName = bankName, complete = complete, empty = empty, error = error)
+    val __obj = js.Dynamic.literal(bankName = bankName, complete = complete, elementType = elementType, empty = empty, error = error)
     if (brand != null) __obj.updateDynamic("brand")(brand)
     if (country != null) __obj.updateDynamic("country")(country)
     if (value != null) __obj.updateDynamic("value")(value)

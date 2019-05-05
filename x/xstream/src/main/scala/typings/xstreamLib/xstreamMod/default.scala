@@ -437,6 +437,33 @@ object default
     s10: xstreamLib.xstreamMod.Stream[T10]
   ): xstreamLib.xstreamMod.Stream[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
   /**
+    * Combines multiple input streams together to return a stream whose events
+    * are arrays that collect the latest events from each input stream.
+    *
+    * *combine* internally remembers the most recent event from each of the input
+    * streams. When any of the input streams emits an event, that event together
+    * with all the other saved events are combined into an array. That array will
+    * be emitted on the output stream. It's essentially a way of joining together
+    * the events from multiple streams.
+    *
+    * Marble diagram:
+    *
+    * ```text
+    * --1----2-----3--------4---
+    * ----a-----b-----c--d------
+    *          combine
+    * ----1a-2a-2b-3b-3c-3d-4d--
+    * ```
+    *
+    * @factory true
+    * @param {Stream} stream1 A stream to combine together with other streams.
+    * @param {Stream} stream2 A stream to combine together with other streams.
+    * Multiple streams, not just two, may be given as arguments.
+    * @return {Stream}
+    */
+  @JSName("combine")
+  def combine_T[T](stream: xstreamLib.xstreamMod.Stream[T]*): xstreamLib.xstreamMod.Stream[js.Array[T]] = js.native
+  /**
     * Creates a new Stream given a Producer.
     *
     * @factory true

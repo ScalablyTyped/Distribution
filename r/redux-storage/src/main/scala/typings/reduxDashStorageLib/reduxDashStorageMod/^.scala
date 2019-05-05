@@ -18,6 +18,11 @@ object ^ extends js.Object {
     actionBlacklist: js.Array[java.lang.String],
     actionWhitelist: js.Array[java.lang.String]
   ): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
+  def createMiddleware(
+    engine: StorageEngine,
+    actionBlacklist: js.Array[java.lang.String],
+    actionWhitelist: ActionTypeCheckCallback
+  ): reduxLib.reduxMod.Middleware[js.Object, _, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
   def reducer[TState](reducer: reduxLib.reduxMod.Reducer[TState, reduxLib.reduxMod.AnyAction]): reduxLib.reduxMod.Reducer[TState, reduxLib.reduxMod.AnyAction] = js.native
   def reducer[TState](reducer: reduxLib.reduxMod.Reducer[TState, reduxLib.reduxMod.AnyAction], merger: StateMerger): reduxLib.reduxMod.Reducer[TState, reduxLib.reduxMod.AnyAction] = js.native
 }

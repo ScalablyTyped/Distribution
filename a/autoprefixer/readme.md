@@ -1,7 +1,7 @@
 
 # Scala.js typings for autoprefixer
 
-Typings are for version 9.4
+Typings are for version 9.5
 
 ## Library description:
 Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for autoprefixer 9.4
+// Type definitions for autoprefixer 9.5
 // Project: https://github.com/postcss/autoprefixer
 // Definitions by:  Armando Meziat <https://github.com/odnamrataizem>, murt <https://github.com/murt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.2
+// TypeScript Version: 2.7
 
 ```
 

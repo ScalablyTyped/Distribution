@@ -193,7 +193,8 @@ object VictoryLegendProps {
     titleOrientation: OrientationTypes = null,
     width: scala.Int | scala.Double = null,
     x: scala.Int | scala.Double = null,
-    y: scala.Int | scala.Double = null
+    y: scala.Int | scala.Double = null,
+    y0: DataGetterPropType = null
   ): VictoryLegendProps = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate)
@@ -231,6 +232,7 @@ object VictoryLegendProps {
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryLegendProps]
   }
 }

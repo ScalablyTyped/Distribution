@@ -151,7 +151,8 @@ object VictoryBoxPlotProps {
     whiskerWidth: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null,
     x: DataGetterPropType = null,
-    y: DataGetterPropType = null
+    y: DataGetterPropType = null,
+    y0: DataGetterPropType = null
   ): VictoryBoxPlotProps = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate)
@@ -184,6 +185,7 @@ object VictoryBoxPlotProps {
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryBoxPlotProps]
   }
 }

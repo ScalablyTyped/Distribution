@@ -247,9 +247,9 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def RadioButtonGroup: reactLib.reactMod.ComponentType[
-    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])
+    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with grommetLib.componentsBoxMod.BoxProps
   ] = js.constructorOf[grommetLib.grommetMod.RadioButtonGroup].asInstanceOf[reactLib.reactMod.ComponentType[
-  grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with (reactLib.reactMod.DetailedHTMLProps[reactLib.reactMod.HTMLAttributes[reactLib.HTMLDivElement], reactLib.HTMLDivElement])]]
+  grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with grommetLib.componentsBoxMod.BoxProps]]
   @scala.inline
   def RangeInput: reactLib.reactMod.ComponentType[
     grommetLib.componentsRangeInputMod.RangeInputProps with (reactLib.reactMod.DetailedHTMLProps[

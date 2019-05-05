@@ -12,11 +12,11 @@ trait Options extends js.Object {
   var env: js.UndefOr[java.lang.String] = js.undefined
   var flexbox: js.UndefOr[scala.Boolean | autoprefixerLib.autoprefixerLibStrings.`no-2009`] = js.undefined
   var grid: js.UndefOr[
-    scala.Boolean | autoprefixerLib.autoprefixerLibStrings.autoplace | autoprefixerLib.autoprefixerLibStrings.`no-autoplace`
+    autoprefixerLib.autoprefixerLibNumbers.`false` | autoprefixerLib.autoprefixerLibStrings.autoplace | autoprefixerLib.autoprefixerLibStrings.`no-autoplace`
   ] = js.undefined
   var ignoreUnknownVersions: js.UndefOr[scala.Boolean] = js.undefined
   var remove: js.UndefOr[scala.Boolean] = js.undefined
-  var stats: js.UndefOr[js.Any] = js.undefined
+  var stats: js.UndefOr[browserslistLib.browserslistMod.Stats] = js.undefined
   var supports: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -28,10 +28,10 @@ object Options {
     cascade: js.UndefOr[scala.Boolean] = js.undefined,
     env: java.lang.String = null,
     flexbox: scala.Boolean | autoprefixerLib.autoprefixerLibStrings.`no-2009` = null,
-    grid: scala.Boolean | autoprefixerLib.autoprefixerLibStrings.autoplace | autoprefixerLib.autoprefixerLibStrings.`no-autoplace` = null,
+    grid: autoprefixerLib.autoprefixerLibNumbers.`false` | autoprefixerLib.autoprefixerLibStrings.autoplace | autoprefixerLib.autoprefixerLibStrings.`no-autoplace` = null,
     ignoreUnknownVersions: js.UndefOr[scala.Boolean] = js.undefined,
     remove: js.UndefOr[scala.Boolean] = js.undefined,
-    stats: js.Any = null,
+    stats: browserslistLib.browserslistMod.Stats = null,
     supports: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()

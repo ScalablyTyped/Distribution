@@ -105,7 +105,8 @@ object VictoryAreaProps {
     theme: VictoryThemeDefinition = null,
     width: scala.Int | scala.Double = null,
     x: DataGetterPropType = null,
-    y: DataGetterPropType = null
+    y: DataGetterPropType = null,
+    y0: DataGetterPropType = null
   ): VictoryAreaProps = {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate)
@@ -131,6 +132,7 @@ object VictoryAreaProps {
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryAreaProps]
   }
 }

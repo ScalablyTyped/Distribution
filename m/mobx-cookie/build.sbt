@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mobx-cookie"
-version := "2.0.2-7b66f9"
+version := "2.0.3-7b66f9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

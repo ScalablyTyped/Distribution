@@ -3158,6 +3158,7 @@
 | 24 | [hapi__joi](./h/hapi__joi) | Object schema validation
 | 24 | [htmltojsx](./h/htmltojsx) | Converts HTML to JSX for use with React
 | 24 | [immediate](./i/immediate) | A cross browser microtask library
+| 24 | [inflation](./i/inflation) | Easily unzip an HTTP stream
 | 24 | [is-path-cwd](./i/is-path-cwd) | Check if a path is CWD
 | 24 | [istanbul-lib-hook](./i/istanbul-lib-hook) | Hooks for require, vm and script used in istanbul
 | 24 | [lodash_dot_forin](./l/lodash_dot_forin) | The lodash method _.forIn exported as a module.

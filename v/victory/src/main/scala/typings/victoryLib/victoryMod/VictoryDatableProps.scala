@@ -70,6 +70,13 @@ trait VictoryDatableProps extends js.Object {
     * @default "y"
     */
   var y: js.UndefOr[DataGetterPropType] = js.undefined
+  /**
+    * Use y0 data accessor prop to determine how the component defines the baseline y0 data.
+    * This prop is useful for defining custom baselines for components like VictoryBar or VictoryArea.
+    * This prop may be given in a variety of formats.
+    * @example 'last_quarter_profit', () => 10, 1, 'employees.salary', ["employees", "salary"]
+    */
+  var y0: js.UndefOr[DataGetterPropType] = js.undefined
 }
 
 object VictoryDatableProps {
@@ -80,7 +87,8 @@ object VictoryDatableProps {
     dataComponent: reactLib.reactMod.ReactElement[_] = null,
     domain: DomainPropType = null,
     x: DataGetterPropType = null,
-    y: DataGetterPropType = null
+    y: DataGetterPropType = null,
+    y0: DataGetterPropType = null
   ): VictoryDatableProps = {
     val __obj = js.Dynamic.literal()
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
@@ -89,6 +97,7 @@ object VictoryDatableProps {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
     __obj.asInstanceOf[VictoryDatableProps]
   }
 }

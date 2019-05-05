@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashStorageMod {
+  type ActionTypeCheckCallback = js.Function1[/* type */ java.lang.String, scala.Boolean]
   /**
     * Loader interface
     */

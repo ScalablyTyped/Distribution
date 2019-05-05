@@ -12,7 +12,7 @@ trait MenuProps extends js.Object {
   ] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dropAlign: js.UndefOr[grommetLib.Anon_BottomLeftRight] = js.undefined
-  var dropBackground: js.UndefOr[java.lang.String | grommetLib.Anon_ColorMedium] = js.undefined
+  var dropBackground: js.UndefOr[java.lang.String | grommetLib.Anon_ColorMediumOpacity] = js.undefined
   var dropProps: js.UndefOr[grommetLib.componentsDropMod.DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
@@ -26,6 +26,7 @@ trait MenuProps extends js.Object {
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
   ] = js.undefined
   var messages: js.UndefOr[grommetLib.Anon_CloseMenu] = js.undefined
+  var open: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[
     grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
@@ -39,7 +40,7 @@ object MenuProps {
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropAlign: grommetLib.Anon_BottomLeftRight = null,
-    dropBackground: java.lang.String | grommetLib.Anon_ColorMedium = null,
+    dropBackground: java.lang.String | grommetLib.Anon_ColorMediumOpacity = null,
     dropProps: grommetLib.componentsDropMod.DropProps = null,
     dropTarget: js.Object = null,
     gridArea: java.lang.String = null,
@@ -48,6 +49,7 @@ object MenuProps {
     label: java.lang.String | reactLib.reactMod.ReactNode = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     messages: grommetLib.Anon_CloseMenu = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal(items = items)
@@ -64,6 +66,7 @@ object MenuProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps]
   }

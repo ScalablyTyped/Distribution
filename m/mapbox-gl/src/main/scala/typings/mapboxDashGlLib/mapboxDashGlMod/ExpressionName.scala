@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   - mapboxDashGlLib.mapboxDashGlLibStrings.get
   - mapboxDashGlLib.mapboxDashGlLibStrings.has
   - mapboxDashGlLib.mapboxDashGlLibStrings.length
+  - mapboxDashGlLib.mapboxDashGlLibStrings.`!`
   - mapboxDashGlLib.mapboxDashGlLibStrings.`!=`
   - mapboxDashGlLib.mapboxDashGlLibStrings.`<`
   - mapboxDashGlLib.mapboxDashGlLibStrings.`<=`

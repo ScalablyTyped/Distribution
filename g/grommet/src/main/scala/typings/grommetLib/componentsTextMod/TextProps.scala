@@ -27,6 +27,9 @@ trait TextProps extends js.Object {
   var weight: js.UndefOr[
     grommetLib.grommetLibStrings.normal | grommetLib.grommetLibStrings.bold | scala.Double
   ] = js.undefined
+  var wordBreak: js.UndefOr[
+    grommetLib.grommetLibStrings.normal | grommetLib.grommetLibStrings.`break-all` | grommetLib.grommetLibStrings.`keep-all` | grommetLib.grommetLibStrings.`break-word`
+  ] = js.undefined
 }
 
 object TextProps {
@@ -42,7 +45,8 @@ object TextProps {
     tag: grommetLib.utilsMod.PolymorphicType = null,
     textAlign: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end = null,
     truncate: js.UndefOr[scala.Boolean] = js.undefined,
-    weight: grommetLib.grommetLibStrings.normal | grommetLib.grommetLibStrings.bold | scala.Double = null
+    weight: grommetLib.grommetLibStrings.normal | grommetLib.grommetLibStrings.bold | scala.Double = null,
+    wordBreak: grommetLib.grommetLibStrings.normal | grommetLib.grommetLibStrings.`break-all` | grommetLib.grommetLibStrings.`keep-all` | grommetLib.grommetLibStrings.`break-word` = null
   ): TextProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
@@ -56,6 +60,7 @@ object TextProps {
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate)
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (wordBreak != null) __obj.updateDynamic("wordBreak")(wordBreak.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextProps]
   }
 }

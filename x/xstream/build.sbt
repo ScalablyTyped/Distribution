@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xstream"
-version := "11.10.0-d9fc8c"
+version := "11.11.0-12238a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

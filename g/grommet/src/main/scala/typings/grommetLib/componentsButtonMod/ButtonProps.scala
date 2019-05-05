@@ -14,8 +14,13 @@ trait ButtonProps extends js.Object {
   var as: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var color: js.UndefOr[java.lang.String | grommetLib.Anon_Dark] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var fill: js.UndefOr[scala.Boolean] = js.undefined
+  var fill: js.UndefOr[
+    grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | scala.Boolean
+  ] = js.undefined
   var focusIndicator: js.UndefOr[scala.Boolean] = js.undefined
+  var gap: js.UndefOr[
+    grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
+  ] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var hoverIndicator: js.UndefOr[
     scala.Boolean | java.lang.String | grommetLib.grommetLibStrings.background | grommetLib.Anon_Background
@@ -44,8 +49,9 @@ object ButtonProps {
     as: grommetLib.utilsMod.PolymorphicType = null,
     color: java.lang.String | grommetLib.Anon_Dark = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | scala.Boolean = null,
     focusIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    gap: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     gridArea: java.lang.String = null,
     hoverIndicator: scala.Boolean | java.lang.String | grommetLib.grommetLibStrings.background | grommetLib.Anon_Background = null,
     href: java.lang.String = null,
@@ -65,8 +71,9 @@ object ButtonProps {
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (hoverIndicator != null) __obj.updateDynamic("hoverIndicator")(hoverIndicator.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href)

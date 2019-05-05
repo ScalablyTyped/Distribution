@@ -1613,6 +1613,7 @@
 | 0.7338864573887431 | [less-middleware](./l/less-middleware) | LESS.js middleware for connect.
 | 0.7338800168498971 | [element-resize-detector](./e/element-resize-detector) | Resize event emitter for elements.
 | 0.7338676430560739 | [wcwidth](./w/wcwidth) | Port of C's wcwidth() and wcswidth()
+| 0.7337634961717867 | [inflation](./i/inflation) | Easily unzip an HTTP stream
 | 0.7337199189473259 | [ngx-infinite-scroll](./n/ngx-infinite-scroll) | An infinite scroll directive for Angular compatibl
 | 0.7336844990000704 | [react-svg](./r/react-svg) | A React component that injects SVG into the DOM.
 | 0.7336664669625816 | [morphdom](./m/morphdom) | Morph a DOM tree to another DOM tree (no virtual D

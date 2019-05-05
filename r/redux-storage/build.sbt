@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-storage"
-version := "4.0.1-dt-20190322Z-1ee962"
+version := "4.1.2-dt-20190504Z-25dbc8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
