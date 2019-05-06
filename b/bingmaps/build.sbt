@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bingmaps"
-version := "2.0.3-e39b3b"
+version := "2.0.3-67665f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

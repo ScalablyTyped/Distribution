@@ -11,7 +11,7 @@ package object objectionMod {
   type ColumnRef = java.lang.String | Raw | Reference | (QueryBuilder[
     js.Any, 
     js.Array[js.Any], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
   ])
   type DeepPartialGraph[T] = T | DeepPartialGraphModel[T] | (DeepPartialGraphArray[/* import warning: ImportType.apply Failed type conversion: T[number] */ js.Any])
   type DeepPartialGraphModel[T] = (GraphModel[
@@ -30,12 +30,12 @@ package object objectionMod {
     /* this */ QueryBuilder[
       QM, 
       js.Array[QM], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
     ], 
     /* queryBuilder */ QueryBuilder[
       QM, 
       js.Array[QM], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
     ], 
     scala.Unit
   ]
@@ -44,12 +44,12 @@ package object objectionMod {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
       ], 
       scala.Unit
     ]
@@ -69,7 +69,7 @@ package object objectionMod {
     QueryBuilder[
       Model, 
       js.Array[Model], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
     ]
   ]
   type JsonObjectOrFieldExpression = js.Object | js.Array[js.Object] | FieldExpression
@@ -80,8 +80,8 @@ package object objectionMod {
     js.Function1[
       /* builder */ QueryBuilder[
         js.Any, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ js.Any, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ js.Any, 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
       ], 
       scala.Unit
     ]
@@ -114,7 +114,7 @@ package object objectionMod {
   type TableName = java.lang.String | Raw | Reference | (QueryBuilder[
     js.Any, 
     js.Array[js.Any], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
   ])
   type TraverserFunction = js.Function3[
     /* model */ Model, 
@@ -157,7 +157,7 @@ package object objectionMod {
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
       ], 
       scala.Unit
     ], 
@@ -169,7 +169,7 @@ package object objectionMod {
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ js.Any
       ], 
       js.Any
     ], 

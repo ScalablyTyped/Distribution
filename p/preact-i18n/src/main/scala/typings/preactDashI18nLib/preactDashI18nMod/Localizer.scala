@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class Localizer ()
   extends preactLib.preactMod.Component[
       preactDashI18nLib.Anon_Children, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for S */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for S */ js.Any
     ]
 

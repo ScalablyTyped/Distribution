@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val SourceConnectedInternalMosaicWindow: reactDashMosaicDashComponentLib.Anon_ChildContextTypes with (reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentClass[
     InternalMosaicWindowProps[_], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for P */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for P */ _
   ]) = js.native
   val SourceDropConnectedInternalMosaicWindow: js.Any = js.native
   def MosaicWindowFactory[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](

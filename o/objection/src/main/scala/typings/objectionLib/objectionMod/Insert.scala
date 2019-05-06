@@ -10,17 +10,17 @@ trait Insert[QM /* <: Model */] extends js.Object {
   def apply(): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def apply(modelOrObject: stdLib.Partial[QM]): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def apply(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
 }
 

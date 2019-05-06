@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:90 Ignored [id => leadfoot, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => leadfoot, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/leadfoot/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/leadfoot),TsIdentLibrarySimple(leadfoot)),TsIdentModule(None,List(leadfoot))) [id => leadfoot, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(leadfoot) [id => leadfoot, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(leadfoot) [id => leadfoot, phase => typescript] 
 [info ] ResolveTypeQueries.scala:136 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Session)))) [id => leadfoot, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(leadfoot/Server) / TsDeclClass(Server) / TsMemberProperty(sessionConstructor) / TsTypeQuery())] 
 [info ] PreferTypeAlias.scala:73 Simplified to function type alias [id => leadfoot, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(leadfoot/Command) / TsDeclInterface(ContextSetter))] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Method) [id => leadfoot, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(leadfoot) / TsDeclInterface(WebDriverError) / TsMemberProperty(request) / TsTypeObject())] 

@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(mangopay2-nodejs-sdk)) [id => mangopay2-nodejs-sdk, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/mangopay2-nodejs-sdk/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/mangopay2-nodejs-sdk),TsIdentLibrarySimple(mangopay2-nodejs-sdk)),TsIdentModule(None,List(mangopay2-nodejs-sdk, types))) [id => mangopay2-nodejs-sdk, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(mangopay2-nodejs-sdk, types)) [id => mangopay2-nodejs-sdk, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(mangopay2-nodejs-sdk) [id => mangopay2-nodejs-sdk, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(mangopay2-nodejs-sdk) [id => mangopay2-nodejs-sdk, phase => typescript] 
 [warn ] ResolveTypeQueries.scala:124 Couldn't resolve typeof MangoPay.models [id => mangopay2-nodejs-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(mangopay2-nodejs-sdk) / TsDeclClass(MangoPay) / TsMemberProperty(models) / TsTypeQuery())] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => mangopay2-nodejs-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(mangopay2-nodejs-sdk) / TsDeclNamespace(bankingAlias) / TsDeclInterface(CreateIBANBankingAlias))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => mangopay2-nodejs-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(mangopay2-nodejs-sdk) / TsDeclNamespace(cardRegistration) / TsDeclInterface(CreateCardRegistration))] 

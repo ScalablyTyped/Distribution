@@ -45,18 +45,18 @@ trait ParallelCoordinatesChart extends Chart {
   def legend(
     selection: d3DashSelectionLib.d3DashSelectionMod.Selection[
       _ | js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
     args: js.Any*
   ): js.Any = js.native
   def legend(
     transition: d3DashTransitionLib.d3DashTransitionMod.Transition[
       _ | js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -75,18 +75,18 @@ trait ParallelCoordinatesChart extends Chart {
   def parallelCoordinates(
     selection: d3DashSelectionLib.d3DashSelectionMod.Selection[
       _ | js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
     args: js.Any*
   ): js.Any = js.native
   def parallelCoordinates(
     transition: d3DashTransitionLib.d3DashTransitionMod.Transition[
       _ | js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
     args: js.Any*
   ): js.Any = js.native

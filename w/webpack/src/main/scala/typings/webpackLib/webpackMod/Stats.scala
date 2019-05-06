@@ -17,8 +17,9 @@ abstract class Stats () extends js.Object {
   /** Returns true if there were warnings while compiling. */
   def hasWarnings(): scala.Boolean = js.native
   /** Returns compilation information as a JSON object. */
-  def toJson(): js.Any = js.native
-  def toJson(options: webpackLib.webpackMod.StatsNs.ToJsonOptions): js.Any = js.native
+  def toJson(): webpackLib.webpackMod.StatsNs.ToJsonOutput = js.native
+  def toJson(options: webpackLib.webpackMod.StatsNs.ToJsonOptions): webpackLib.webpackMod.StatsNs.ToJsonOutput = js.native
+  def toJson(options: webpackLib.webpackMod.StatsNs.ToJsonOptions, forToString: scala.Boolean): webpackLib.webpackMod.StatsNs.ToJsonOutput = js.native
   def toString(options: webpackLib.webpackMod.StatsNs.ToStringOptions): java.lang.String = js.native
 }
 

@@ -12,12 +12,12 @@ trait FindOne[QM /* <: Model */] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -28,12 +28,12 @@ trait FindOne[QM /* <: Model */] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -44,7 +44,7 @@ trait FindOne[QM /* <: Model */] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilderYieldingOneOrNone[QM] = js.native
   def apply(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilderYieldingOneOrNone[QM] = js.native
@@ -54,7 +54,7 @@ trait FindOne[QM /* <: Model */] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilderYieldingOneOrNone[QM] = js.native
   def apply(column: ColumnRef, value: Reference): QueryBuilderYieldingOneOrNone[QM] = js.native

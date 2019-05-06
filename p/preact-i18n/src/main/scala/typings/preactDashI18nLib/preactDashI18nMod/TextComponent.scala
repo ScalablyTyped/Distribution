@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class TextComponent ()
   extends preactLib.preactMod.Component[
       preactDashI18nLib.Anon_Fields, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for S */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for S */ js.Any
     ]
 

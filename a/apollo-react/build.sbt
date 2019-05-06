@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-react"
-version := "0.7.1-b5a3dd"
+version := "0.7.1-12f5d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

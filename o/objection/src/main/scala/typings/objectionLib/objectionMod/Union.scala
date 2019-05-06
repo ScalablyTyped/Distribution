@@ -12,31 +12,31 @@ trait Union[QM /* <: Model */] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def apply(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ],
@@ -44,26 +44,26 @@ trait Union[QM /* <: Model */] extends js.Object {
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def apply(
     callbacks: (js.ThisFunction1[
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ])*
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def apply(
     callbacks: js.Array[
@@ -71,12 +71,12 @@ trait Union[QM /* <: Model */] extends js.Object {
         /* this */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         /* queryBuilder */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         scala.Unit
       ]
@@ -84,7 +84,7 @@ trait Union[QM /* <: Model */] extends js.Object {
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def apply(
     callbacks: js.Array[
@@ -92,12 +92,12 @@ trait Union[QM /* <: Model */] extends js.Object {
         /* this */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         /* queryBuilder */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         scala.Unit
       ]
@@ -106,7 +106,7 @@ trait Union[QM /* <: Model */] extends js.Object {
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
 }
 

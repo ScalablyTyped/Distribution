@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adone"
-version := "0.6-dt-20190311Z-b12572"
+version := "0.6-dt-20190311Z-3d492d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

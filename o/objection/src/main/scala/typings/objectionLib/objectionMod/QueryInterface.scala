@@ -183,12 +183,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -199,7 +199,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -209,7 +209,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -220,12 +220,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -236,7 +236,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -246,7 +246,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -261,12 +261,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -277,7 +277,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -287,7 +287,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -298,12 +298,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -314,7 +314,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -324,7 +324,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -340,12 +340,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -356,7 +356,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -366,7 +366,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -377,12 +377,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -393,7 +393,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -403,7 +403,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -418,12 +418,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -434,7 +434,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -444,7 +444,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -455,12 +455,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -471,7 +471,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -481,7 +481,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -497,12 +497,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -513,7 +513,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -523,7 +523,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -534,12 +534,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -550,7 +550,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -560,7 +560,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -593,8 +593,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def crossJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def crossJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -626,12 +626,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -640,8 +640,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def fullOuterJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def fullOuterJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -679,12 +679,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -695,7 +695,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def having(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -706,7 +706,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def having(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -719,12 +719,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -735,7 +735,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def having(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -745,7 +745,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def having(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -766,12 +766,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -780,7 +780,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def havingExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -790,12 +790,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -805,7 +805,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def havingIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -815,12 +815,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -829,7 +829,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def havingNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -839,12 +839,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -854,7 +854,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def havingNotIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -869,7 +869,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -879,8 +879,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def innerJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def innerJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -905,12 +905,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -920,8 +920,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def join(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   // Joins
@@ -951,8 +951,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def leftJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def leftJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -974,8 +974,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def leftOuterJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def leftOuterJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1004,12 +1004,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1020,7 +1020,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1030,7 +1030,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1041,12 +1041,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1057,7 +1057,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1067,7 +1067,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1083,12 +1083,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1097,7 +1097,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHavingExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1107,12 +1107,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1122,7 +1122,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHavingIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -1132,12 +1132,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1146,7 +1146,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHavingNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1156,12 +1156,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1171,7 +1171,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHavingNotIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -1186,12 +1186,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1202,7 +1202,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1212,7 +1212,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1223,12 +1223,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1239,7 +1239,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1249,7 +1249,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1265,12 +1265,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1281,7 +1281,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1291,7 +1291,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1302,12 +1302,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1318,7 +1318,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1328,7 +1328,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1343,12 +1343,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1357,7 +1357,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1367,12 +1367,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1382,7 +1382,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -1391,12 +1391,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1407,7 +1407,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1417,7 +1417,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1428,12 +1428,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1444,7 +1444,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1454,7 +1454,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1470,12 +1470,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1486,7 +1486,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1496,7 +1496,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1507,12 +1507,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1523,7 +1523,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1533,7 +1533,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1548,12 +1548,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1562,7 +1562,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1572,12 +1572,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1587,7 +1587,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -1606,8 +1606,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def outerJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def outerJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1630,8 +1630,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def rightJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def rightJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1653,8 +1653,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def rightOuterJoin(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def rightOuterJoin(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1682,12 +1682,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1701,31 +1701,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def union(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ],
@@ -1733,7 +1733,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   // Union
   def union(
@@ -1741,19 +1741,19 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ])*
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   // Union
   def union(
@@ -1762,12 +1762,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
         /* this */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         /* queryBuilder */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         scala.Unit
       ]
@@ -1775,7 +1775,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def union(
     callbacks: js.Array[
@@ -1783,12 +1783,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
         /* this */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         /* queryBuilder */ QueryBuilder[
           QM, 
           js.Array[QM], 
-          /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
         ], 
         scala.Unit
       ]
@@ -1797,7 +1797,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   ): QueryBuilder[
     QM, 
     js.Array[QM], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def unionAll(callback: js.Function0[scala.Unit]): this.type = js.native
   // Wheres
@@ -1806,12 +1806,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1822,7 +1822,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def where(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1833,7 +1833,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def where(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1846,12 +1846,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1862,7 +1862,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def where(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1872,7 +1872,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def where(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1893,12 +1893,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1909,7 +1909,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1919,7 +1919,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1930,12 +1930,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1946,7 +1946,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1956,7 +1956,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -1971,12 +1971,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -1985,7 +1985,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -1995,12 +1995,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2010,7 +2010,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -2019,12 +2019,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2035,7 +2035,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2045,7 +2045,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2056,12 +2056,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2072,7 +2072,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2082,7 +2082,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2098,12 +2098,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2114,7 +2114,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2124,7 +2124,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2135,12 +2135,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2151,7 +2151,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2161,7 +2161,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotColumn(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -2176,12 +2176,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2190,7 +2190,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
@@ -2200,12 +2200,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2215,7 +2215,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
@@ -2230,7 +2230,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -2249,7 +2249,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       _
     ]

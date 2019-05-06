@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-box"
-version := "0.0-unknown-dt-20190322Z-63a654"
+version := "0.0-unknown-dt-20190322Z-b02368"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

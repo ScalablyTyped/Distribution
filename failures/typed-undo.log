@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:90 Ignored [id => typed-undo, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => typed-undo, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing typed-undo [id => typed-undo, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Expected code path [id => typed-undo, phase => scala.js] java.lang.RuntimeException: Expected code path

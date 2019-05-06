@@ -41,7 +41,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(routing, router)) [id => @ember/routing, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__routing/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__routing),TsIdentLibraryScoped(ember,Some(routing))),TsIdentModule(Some(ember),List(routing, types))) [id => @ember/routing, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(routing, types)) [id => @ember/routing, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibraryScoped(ember,Some(routing)) [id => @ember/routing, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibraryScoped(ember,Some(routing)) [id => @ember/routing, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/routing, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/routing/auto-location) / TsDeclInterface(AutoLocation))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/routing, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/routing/hash-location) / TsDeclInterface(HashLocation))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/routing, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/routing/history-location) / TsDeclInterface(HistoryLocation))] 

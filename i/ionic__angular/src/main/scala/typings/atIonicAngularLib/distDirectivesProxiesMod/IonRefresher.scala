@@ -1,0 +1,18 @@
+package typings
+package atIonicAngularLib.distDirectivesProxiesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped @ionic/core.@ionic/core/dist/types/stencil.core.Global.StencilElementInterfaces['IonRefresher'] */ @JSImport("@ionic/angular/dist/directives/proxies", "IonRefresher")
+@js.native
+class IonRefresher protected () extends js.Object {
+  def this(c: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, r: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
+  var el: stdLib.HTMLElement = js.native
+  var ionPull: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+  var ionRefresh: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+  var ionStart: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+}
+

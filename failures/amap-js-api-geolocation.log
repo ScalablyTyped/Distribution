@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:82 Success [id => amap-js-api-geolocation, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-geolocation/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-geolocation),TsIdentLibrarySimple(amap-js-api-geolocation)),TsIdentModule(None,List(amap-js-api-geolocation))) [id => amap-js-api-geolocation, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(amap-js-api-geolocation) [id => amap-js-api-geolocation, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(amap-js-api-geolocation) [id => amap-js-api-geolocation, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => amap-js-api-geolocation, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing amap-js-api-geolocation [id => amap-js-api-geolocation, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => amap-js-api-geolocation, phase => scala.js] 

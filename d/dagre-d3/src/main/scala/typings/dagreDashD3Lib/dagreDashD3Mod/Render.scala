@@ -10,9 +10,9 @@ trait Render extends js.Object {
   def apply(
     selection: d3DashSelectionLib.d3DashSelectionMod.Selection[
       _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ],
     g: dagreLib.dagreMod.graphlibNs.Graph
   ): scala.Unit = js.native
@@ -21,9 +21,9 @@ trait Render extends js.Object {
     js.Function4[
       /* parent */ d3DashSelectionLib.d3DashSelectionMod.Selection[
         _, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
         d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
       ], 
       /* id */ java.lang.String, 
       /* edge */ dagreLib.dagreMod.Edge, 
@@ -35,9 +35,9 @@ trait Render extends js.Object {
     js.Function3[
       /* parent */ d3DashSelectionLib.d3DashSelectionMod.Selection[
         _, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
         d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
       ], 
       /* bbox */ js.Any, 
       /* node */ dagreLib.dagreMod.Node, 

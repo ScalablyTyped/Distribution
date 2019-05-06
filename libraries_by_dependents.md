@@ -876,6 +876,7 @@
 | 245 | [ali-oss](./a/ali-oss) | aliyun oss(object storage service) node client
 | 245 | [any-promise](./a/any-promise) | Resolve any installed ES6 compatible promise
 | 245 | [file-exists](./f/file-exists) | Check if filepath exists and is a file
+| 245 | [ionicons](./i/ionicons) | Premium icons for Ionic.
 | 245 | [upath](./u/upath) | A proxy to path, replacing \ with / for all result
 | 244 | [replace-ext](./r/replace-ext) | Replaces a file extension with another one
 | 243 | [gulp-bump](./g/gulp-bump) | Bump npm versions with Gulp (gulpjs.com)
@@ -1243,6 +1244,7 @@
 | 153 | [app-root-dir](./a/app-root-dir) | Simple module to infer the root directory of the c
 | 153 | [bignum](./b/bignum) | Arbitrary-precision integer arithmetic using OpenS
 | 153 | [copy](./c/copy) | Copy files or directories using globs.
+| 153 | [ionic__storage](./i/ionic__storage) | Ionic Storage utility
 | 153 | [normalize-package-data](./n/normalize-package-data) | Normalizes data that can be found in package.json 
 | 153 | [react-dates](./r/react-dates) | A responsive and accessible date range picker comp
 | 153 | [redux-devtools](./r/redux-devtools) | Redux DevTools with hot reloading and time travel
@@ -2272,6 +2274,7 @@
 | 53 | [gulp-svg-sprite](./g/gulp-svg-sprite) | SVG sprites & stacks galore — Gulp plugin wrapping
 | 53 | [gun](./g/gun) | A realtime, decentralized, offline-first, graph da
 | 53 | [incremental-dom](./i/incremental-dom) | An in-place virtual DOM library
+| 53 | [ionic__core](./i/ionic__core) | Base components for Ionic
 | 53 | [iota_dot_lib_dot_js](./i/iota_dot_lib_dot_js) | Javascript Library for IOTA
 | 53 | [is-finite](./i/is-finite) | ES2015 Number.isFinite() ponyfill
 | 53 | [jupyterlab__rendermime](./j/jupyterlab__rendermime) | JupyterLab - RenderMime
@@ -3525,6 +3528,7 @@
 | 17 | [gulp-strip-comments](./g/gulp-strip-comments) | Strip comments from code
 | 17 | [http-cache-semantics](./h/http-cache-semantics) | Parses Cache-Control and other headers. Helps buil
 | 17 | [icepick](./i/icepick) | Utilities for treating frozen JavaScript objects a
+| 17 | [ionic__angular](./i/ionic__angular) | Angular specific wrappers for @ionic/core
 | 17 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b
 | 17 | [keen-tracking](./k/keen-tracking) | Track events - custom user actions, clicks, pagevi
 | 17 | [koa-static-server](./k/koa-static-server) | Static file serving middleware for koa with direct
@@ -6067,6 +6071,7 @@
 | 0 | [instabug-reactnative](./i/instabug-reactnative) | React Native plugin for integrating the Instabug S
 | 0 | [inversify-devtools](./i/inversify-devtools) | inversify-devtools
 | 0 | [iobroker](./i/iobroker) | automate your life - platfom
+| 0 | [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core
 | 0 | [isbn-utils](./i/isbn-utils) | Library to parse and normalize ISBNs
 | 0 | [iso8601-localizer](./i/iso8601-localizer) | Simple to use getTimezoneOffset based ISO8601 loca
 | 0 | [jasmine-data_driven_tests](./j/jasmine-data_driven_tests) | This plugin for Jasmine 2.x allows you to easily c

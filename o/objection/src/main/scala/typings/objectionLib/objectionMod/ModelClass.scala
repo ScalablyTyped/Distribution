@@ -60,13 +60,13 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated(models: js.Array[M], expression: RelationExpression): QueryBuilder[
     M, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated(models: js.Array[M], expression: RelationExpression, filters: Filters[M]): QueryBuilder[
     M, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated(
     models: js.Array[M],
@@ -75,29 +75,29 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     trxOrKnex: knexLib.knexMod.Knex
   ): QueryBuilder[
     M, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated(models: js.Array[M], expression: RelationExpression, filters: Filters[M], trxOrKnex: Transaction): QueryBuilder[
     M, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def omitImpl(f: js.Function2[/* obj */ js.Object, /* prop */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def query(): QueryBuilder[
     M, 
     js.Array[M], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def query(trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
     M, 
     js.Array[M], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def query(trxOrKnex: Transaction): QueryBuilder[
     M, 
     js.Array[M], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def raw(sql: java.lang.String, bindings: (knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder)*): knexLib.knexMod.Raw = js.native
   def raw(sql: java.lang.String, bindings: js.Array[knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder]): knexLib.knexMod.Raw = js.native
@@ -107,7 +107,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def relatedQuery(relationName: java.lang.String): QueryBuilder[
     _, 
     js.Array[_], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def tableMetadata(): TableMetadata = js.native
   def tableMetadata(opt: TableMetadataOptions): TableMetadata = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait columns
   extends stdLib.Array[
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
     ] {
   def add(name: java.lang.String, `type`: js.Function0[ISqlType]): scala.Double = js.native
   def add(name: java.lang.String, `type`: js.Function0[ISqlType], options: IColumnOptions): scala.Double = js.native

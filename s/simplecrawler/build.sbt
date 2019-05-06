@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simplecrawler"
-version := "1.1-dt-20190502Z-57af6e"
+version := "1.1-dt-20190502Z-95ec87"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

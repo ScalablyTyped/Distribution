@@ -16,6 +16,7 @@ trait Levels extends js.Object {
   var TRACE: Level
   var WARN: Level
   var levels: js.Array[Level]
+  def addLevels(customLevels: js.Object): scala.Unit
   def getLevel(level: java.lang.String): Level
 }
 
@@ -31,10 +32,11 @@ object Levels {
     OFF: Level,
     TRACE: Level,
     WARN: Level,
+    addLevels: js.Object => scala.Unit,
     getLevel: java.lang.String => Level,
     levels: js.Array[Level]
   ): Levels = {
-    val __obj = js.Dynamic.literal(ALL = ALL, DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, MARK = MARK, OFF = OFF, TRACE = TRACE, WARN = WARN, getLevel = js.Any.fromFunction1(getLevel), levels = levels)
+    val __obj = js.Dynamic.literal(ALL = ALL, DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, MARK = MARK, OFF = OFF, TRACE = TRACE, WARN = WARN, addLevels = js.Any.fromFunction1(addLevels), getLevel = js.Any.fromFunction1(getLevel), levels = levels)
   
     __obj.asInstanceOf[Levels]
   }

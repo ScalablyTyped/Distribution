@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nvd3"
-version := "1.8.1-dt-20190322Z-09baf5"
+version := "1.8.1-dt-20190322Z-f25012"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

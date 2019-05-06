@@ -10,8 +10,8 @@ trait Join[QM /* <: Model */, RM, RV] extends js.Object {
   def apply(
     queryBuilder: QueryBuilder[
       Model, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(raw: Raw): QueryBuilder[QM, RM, RV] = js.native

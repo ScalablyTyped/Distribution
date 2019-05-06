@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ProviderProps extends js.Object {
   var client: apolloDashClientLib.apolloDashClientMod.default[
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
   ]
   var immutable: js.UndefOr[scala.Boolean] = js.undefined
   var store: js.UndefOr[reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]] = js.undefined
@@ -17,7 +17,7 @@ object ProviderProps {
   @scala.inline
   def apply(
     client: apolloDashClientLib.apolloDashClientMod.default[
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
     ],
     immutable: js.UndefOr[scala.Boolean] = js.undefined,
     store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction] = null

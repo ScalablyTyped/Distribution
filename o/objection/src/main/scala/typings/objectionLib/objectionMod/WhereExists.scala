@@ -12,12 +12,12 @@ trait WhereExists[QM /* <: Model */, RM, RV] extends js.Object {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -26,7 +26,7 @@ trait WhereExists[QM /* <: Model */, RM, RV] extends js.Object {
     query: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(raw: Raw): QueryBuilder[QM, RM, RV] = js.native

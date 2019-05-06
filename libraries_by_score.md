@@ -2141,6 +2141,7 @@
 | 0.7053828103443252 | [gulp-ng-annotate](./g/gulp-ng-annotate) | Add angularjs dependency injection annotations wit
 | 0.7053691599624416 | [koa-basic-auth](./k/koa-basic-auth) | Blanket basic auth middleware for koa
 | 0.7052549915173947 | [koa-static](./k/koa-static) | Static file serving middleware for koa
+| 0.705245590728119 | [ionicons](./i/ionicons) | Premium icons for Ionic.
 | 0.7050917033716824 | [get-urls](./g/get-urls) | Get all URLs in a string
 | 0.7050749224196015 | [semaphore](./s/semaphore) | semaphore for node
 | 0.7050385199145632 | [subscriptions-transport-w](./s/subscriptions-transport-ws) | A websocket transport for GraphQL subscriptions
@@ -4238,6 +4239,7 @@
 | 0.5541185386037835 | [fs-extra-p](./f/fs-extra-p) | fs-extra module promisified with bluebird
 | 0.5539324699518929 | [p-progress](./p/p-progress) | Create a promise that reports progress
 | 0.5538751698270286 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools.
+| 0.5531525107394681 | [ionic__storage](./i/ionic__storage) | Ionic Storage utility
 | 0.5529801320032361 | [google-maps-react](./g/google-maps-react) | Google maps container
 | 0.5529782954160052 | [react-navigation-material](./r/react-navigation-material-bottom-tabs) | Material Bottom Tab Navigation component for React
 | 0.5522781794128191 | [redux-first-router-restor](./r/redux-first-router-restore-scroll) | think of your app in states not routes (and, yes, 
@@ -5958,6 +5960,7 @@
 | 0.2642993087303285 | [webix](./w/webix) | Webix UI
 | 0.2642670560438406 | [jquery-editable-select](./j/jquery-editable-select) | A simple jQuery Plugin that converts a select into
 | 0.26418863069948173 | [asyncblock-generators](./a/asyncblock-generators) | asyncblock without the fibers
+| 0.26372254233513165 | [ionic__core](./i/ionic__core) | Base components for Ionic
 | 0.2635730231413436 | [lodash_dot_uniq](./l/lodash_dot_uniq) | The lodash method _.uniq exported as a module.
 | 0.26346626698337666 | [react-native-sortable-gri](./r/react-native-sortable-grid) | Drag-and-drop sortable grid view for React Native.
 | 0.26343982136805366 | [jsqrcode](./j/jsqrcode) | a node port of Lazar Laszlo's jsqrcode qr code dec
@@ -6022,6 +6025,7 @@
 | 0.24928470318201168 | [datatables_dot_net-rowgro](./d/datatables_dot_net-rowgroup) | RowGroup for DataTables
 | 0.24845831491339465 | [lodash_dot_isstring](./l/lodash_dot_isstring) | The lodash method _.isString exported as a module.
 | 0.24796901102266355 | [angular-fullscreen](./a/angular-fullscreen) | Install ---------
+| 0.24775214757783498 | [ionic__angular](./i/ionic__angular) | Angular specific wrappers for @ionic/core
 | 0.24768863722735718 | [bootstrap-slider](./b/bootstrap-slider) | Slider view component for Twitter Bootstrap.
 | 0.24763946750344212 | [passport-naver](./p/passport-naver) | Naver authentication strategy for Passport
 | 0.24763926864218444 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
@@ -6245,6 +6249,7 @@
 | 0.1622856205382315 | [dwt](./d/dwt) | Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanni
 | 0.15999592179246672 | [get-emoji](./g/get-emoji) | you give emoji name, we give you an emoji
 | 0.15973490352322087 | [rox-react-native](./r/rox-react-native) | Rollout.io ROX JS SDK Client
+| 0.15934205621531827 | [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core
 | 0.1587863390484147 | [office-js](./o/office-js) | Utility for office cloud services.
 | 0.15819674694109281 | [notifyjs-browser](./n/notifyjs-browser) | Notify.js =====
 | 0.15628382494132198 | [cli-interact](./c/cli-interact) | Simple helper tools for interacting synchronously 

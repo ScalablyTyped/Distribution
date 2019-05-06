@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mssql"
-version := "4.0.5-dt-20190322Z-50da7b"
+version := "4.0.5-dt-20190322Z-13b7cb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

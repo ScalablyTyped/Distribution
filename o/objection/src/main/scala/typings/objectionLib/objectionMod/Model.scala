@@ -62,49 +62,49 @@ class Model () extends js.Object {
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: java.lang.String): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: java.lang.String, filters: Filters[QM]): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: java.lang.String, filters: Filters[QM], trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: java.lang.String, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM]): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$loadRelated")
   def $loadRelated[QM /* <: Model */](`this`: QM, expression: RelationExpression, filters: Filters[QM], trxOrKnex: Transaction): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$omit")
   def $omit[T](`this`: T, keys: java.lang.String): T = js.native
@@ -128,19 +128,19 @@ class Model () extends js.Object {
   def $query[QM /* <: Model */](`this`: QM): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$query")
   def $query[QM /* <: Model */](`this`: QM, trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$query")
   def $query[QM /* <: Model */](`this`: QM, trxOrKnex: Transaction): QueryBuilder[
     QM, 
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   /**
     * If you add fields to your model, you get $relatedQuery typings for
@@ -165,19 +165,19 @@ class Model () extends js.Object {
   def $relatedQuery[QM /* <: Model */, RM](relationName: java.lang.String): QueryBuilder[
     QM, 
     RM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$relatedQuery")
   def $relatedQuery[QM /* <: Model */, RM](relationName: java.lang.String, trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
     QM, 
     RM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$relatedQuery")
   def $relatedQuery[QM /* <: Model */, RM](relationName: java.lang.String, trxOrKnex: Transaction): QueryBuilder[
     QM, 
     RM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   @JSName("$set")
   def $set[T](`this`: T, obj: Pojo): T = js.native
@@ -303,8 +303,8 @@ object Model extends js.Object {
     expression: objectionLib.objectionMod.RelationExpression
   ): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated[QM /* <: objectionLib.objectionMod.Model */](
     `this`: objectionLib.objectionMod.Constructor[QM],
@@ -313,8 +313,8 @@ object Model extends js.Object {
     filters: objectionLib.objectionMod.Filters[QM]
   ): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated[QM /* <: objectionLib.objectionMod.Model */](
     `this`: objectionLib.objectionMod.Constructor[QM],
@@ -324,8 +324,8 @@ object Model extends js.Object {
     trxOrKnex: knexLib.knexMod.Knex
   ): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def loadRelated[QM /* <: objectionLib.objectionMod.Model */](
     `this`: objectionLib.objectionMod.Constructor[QM],
@@ -335,27 +335,27 @@ object Model extends js.Object {
     trxOrKnex: objectionLib.objectionMod.Transaction
   ): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def omitImpl(f: js.Function2[/* obj */ js.Object, /* prop */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def query[QM /* <: objectionLib.objectionMod.Model */](`this`: objectionLib.objectionMod.Constructor[QM]): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def query[QM /* <: objectionLib.objectionMod.Model */](`this`: objectionLib.objectionMod.Constructor[QM], trxOrKnex: knexLib.knexMod.Knex): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def query[QM /* <: objectionLib.objectionMod.Model */](
     `this`: objectionLib.objectionMod.Constructor[QM],
     trxOrKnex: objectionLib.objectionMod.Transaction
   ): objectionLib.objectionMod.QueryBuilder[
     QM, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def raw(sql: java.lang.String, bindings: (knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder)*): knexLib.knexMod.Raw = js.native
   def raw(sql: java.lang.String, bindings: js.Array[knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder]): knexLib.knexMod.Raw = js.native
@@ -365,7 +365,7 @@ object Model extends js.Object {
   def relatedQuery(relationName: java.lang.String): objectionLib.objectionMod.QueryBuilder[
     _, 
     js.Array[_], 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
   def tableMetadata(): objectionLib.objectionMod.TableMetadata = js.native
   def tableMetadata(opt: objectionLib.objectionMod.TableMetadataOptions): objectionLib.objectionMod.TableMetadata = js.native

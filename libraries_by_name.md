@@ -2558,8 +2558,12 @@
 | [iobroker](./i/iobroker) | automate your life - platfom | ioBroker, Smarthome, Home Automation, Smart Metering, Homematic, Hue, KNX, Z-Wave, ZigBee, Bidcos, TV, Sonos, AV Receiver |
 | [ion-rangeslider](./i/ion-rangeslider) | Cool, comfortable and easily customizable range sl | jquery-plugin, ecosystem:jquery, jquery, form, input, range, slider, rangeslider, interface, diapason, ui, noui, skins |
 | [ionic](./i/ionic) | A tool for creating and developing Ionic Framework | ionic, ionic framework, ionicframework, mobile, app, hybrid, cordova, native, phonegap |
+| [ionic__angular](./i/ionic__angular) | Angular specific wrappers for @ionic/core | ionic, framework, angular, mobile, app, webapp, capacitor, cordova, progressive web app, pwa |
 | [ionic__cli-framework](./i/ionic__cli-framework) | The foundation framework of the Ionic CLI | - |
+| [ionic__core](./i/ionic__core) | Base components for Ionic | ionic, framework, stencil, mobile, app, webapp, capacitor, cordova, electron, progressive web app, pwa |
 | [ionic__discover](./i/ionic__discover) | Simple UDP based protocol for service discovery im | - |
+| [ionic__react](./i/ionic__react) | React specific wrapper for @ionic/core | ionic, framework, react, mobile, app, hybrid, webapp, cordova, progressive web app, pwa |
+| [ionic__storage](./i/ionic__storage) | Ionic Storage utility | ionic, angular, localforage, cordova, hybrid |
 | [ionic__utils-array](./i/ionic__utils-array) | Array utils | - |
 | [ionic__utils-fs](./i/ionic__utils-fs) | Filesystem utils for Node | - |
 | [ionic__utils-network](./i/ionic__utils-network) | Network utils for Node | - |
@@ -2568,6 +2572,7 @@
 | [ionic__utils-stream](./i/ionic__utils-stream) | Stream utils for NodeJS | - |
 | [ionic__utils-subprocess](./i/ionic__utils-subprocess) | Subprocess utils for NodeJS | - |
 | [ionic__utils-terminal](./i/ionic__utils-terminal) | Terminal utils for NodeJS | - |
+| [ionicons](./i/ionicons) | Premium icons for Ionic. | ionicons, ionic, icon, svg, font, mobile, web component, component, custom element |
 | [iopipe__iopipe](./i/iopipe__iopipe) | The IOpipe agent and plugins | serverless, agent, analytics, metrics, telemetry, tracing, distributed tracing, profiling |
 | [ioredis](./i/ioredis) | A robust, performance-focused and full-featured Re | redis, cluster, sentinel, pipelining |
 | [iota_dot_lib_dot_js](./i/iota_dot_lib_dot_js) | Javascript Library for IOTA | iota, tangle, library, browser, javascript, nodejs, API |

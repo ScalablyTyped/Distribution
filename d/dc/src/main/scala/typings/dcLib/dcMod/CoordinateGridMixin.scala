@@ -22,9 +22,9 @@ trait CoordinateGridMixin[T]
   var g_Original: IGetSet[
     d3DashSelectionLib.d3DashSelectionMod.Selection[
       _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ], 
     T
   ] = js.native
@@ -72,9 +72,9 @@ trait CoordinateGridMixin[T]
   def brushOn(t: scala.Boolean): scala.Boolean = js.native
   def chartBodyG(): d3DashSelectionLib.d3DashSelectionMod.Selection[
     _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
     d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
   ] = js.native
   def clipPadding(): scala.Double = js.native
   def clipPadding(t: scala.Double): scala.Double = js.native
@@ -86,22 +86,22 @@ trait CoordinateGridMixin[T]
   def focus(range: js.Array[_]): scala.Unit = js.native
   def g(): d3DashSelectionLib.d3DashSelectionMod.Selection[
     _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
     d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
   ] = js.native
   def g(
     t: d3DashSelectionLib.d3DashSelectionMod.Selection[
       _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ]
   ): d3DashSelectionLib.d3DashSelectionMod.Selection[
     _, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
     d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
   ] = js.native
   def isOrdinal(): scala.Boolean = js.native
   def mouseZoomable(): scala.Boolean = js.native

@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:82 Success [id => x-ray, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/x-ray/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/x-ray),TsIdentLibrarySimple(x-ray)),TsIdentModule(None,List(x-ray))) [id => x-ray, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(x-ray)) [id => x-ray, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:209 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => x-ray, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing x-ray [id => x-ray, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(NumberDictionary))) at Name(xDashRayLib) / Name(xDashRayMod) / Name(SelectorArray) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(org), Name(scalablytyped), Name(runtime), Name(NumberDictionary))),List(),Comments(1))) [id => x-ray, phase => scala.js, this => Name(xDashRayLib) / Name(xDashRayMod) / Name(SelectorArray)] 

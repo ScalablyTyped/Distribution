@@ -1,0 +1,83 @@
+package typings
+package atIonicCoreLib.distTypesComponentsMod.Global
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait HTMLIonHeaderElement
+  extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement
+     with atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonHeader {
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: stdLib.EventListenerOrEventListenerObject,
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: stdLib.EventListenerOrEventListenerObject,
+    options: stdLib.AddEventListenerOptions
+  ): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: stdLib.EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: stdLib.EventListenerOrEventListenerObject,
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: stdLib.EventListenerOrEventListenerObject,
+    options: stdLib.EventListenerOptions
+  ): scala.Unit = js.native
+}
+
+@JSGlobal("HTMLIonHeaderElement")
+@js.native
+class HTMLIonHeaderElementCls () extends HTMLIonHeaderElement {
+  /* CompleteClass */
+  override val assignedSlot: stdLib.HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var inputMode: java.lang.String = js.native
+  /* CompleteClass */
+  override val isContentEditable: scala.Boolean = js.native
+  /**
+    * The mode determines which platform styles to use.
+    */
+  /* CompleteClass */
+  override var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: stdLib.Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: stdLib.Element | scala.Null = js.native
+  /* CompleteClass */
+  override val style: stdLib.CSSStyleDeclaration = js.native
+  /**
+    * If `true`, the header will be translucent. Note: In order to scroll content behind the header, the `fullscreen` attribute needs to be set on the content.
+    */
+  /* CompleteClass */
+  override var translucent: scala.Boolean = js.native
+}
+
+@JSGlobal("HTMLIonHeaderElement")
+@js.native
+object HTMLIonHeaderElement
+  extends org.scalablytyped.runtime.Instantiable0[HTMLIonHeaderElement]
+

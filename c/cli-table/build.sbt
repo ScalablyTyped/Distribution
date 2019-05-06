@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cli-table"
-version := "0.3-dt-20180515Z-0bfd27"
+version := "0.3-dt-20180515Z-c3e679"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

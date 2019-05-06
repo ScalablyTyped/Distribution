@@ -12,12 +12,12 @@ trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -28,7 +28,7 @@ trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -38,7 +38,7 @@ trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -49,12 +49,12 @@ trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
       /* this */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       /* queryBuilder */ QueryBuilder[
         QM, 
         js.Array[QM], 
-        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
       ], 
       scala.Unit
     ]
@@ -65,7 +65,7 @@ trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(column: ColumnRef, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
@@ -75,7 +75,7 @@ trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
     value: QueryBuilder[
       _, 
       js.Array[_], 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(column: ColumnRef, value: Reference): QueryBuilder[QM, RM, RV] = js.native

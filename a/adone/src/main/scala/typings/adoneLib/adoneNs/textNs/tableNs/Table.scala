@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Table ()
   extends stdLib.Array[
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
     ] {
   def this(options: adoneLib.adoneNs.textNs.tableNs.INs.ConstructorOptions) = this()
   val width: scala.Double = js.native

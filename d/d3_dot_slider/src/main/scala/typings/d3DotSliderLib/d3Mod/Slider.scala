@@ -10,9 +10,9 @@ trait Slider extends js.Object {
   def apply(
     sel: d3DashSelectionLib.d3DashSelectionMod.Selection[
       _, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
       d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
     ]
   ): scala.Unit = js.native
   def animate(): scala.Boolean | scala.Double = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dev-utils
 
-Typings are for version 7.0
+Typings are for version 9.0
 
 ## Library description:
 Webpack utilities used by Create React App
@@ -53,7 +53,7 @@ These comments are from the typescript definitions and might be useful:
  * Finds the currently running process on `port`.
  * Returns a string containing the name and directory.
  */
-// Type definitions for react-dev-utils 7.0
+// Type definitions for react-dev-utils 9.0
 // Project: https://github.com/facebook/create-react-app#readme
 // Definitions by: ark120202 <https://github.com/ark120202>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

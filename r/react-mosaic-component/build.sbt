@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "2.1.0-9e0c83"
+version := "2.1.0-187dfe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
