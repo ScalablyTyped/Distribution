@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emoji-regex"
-version := "7.0-dt-20190212Z-cc6f0b"
+version := "8.0-dt-20190506Z-7eb22f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

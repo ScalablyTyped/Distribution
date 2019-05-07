@@ -9,8 +9,10 @@ import scala.scalajs.js.annotation._
 trait MigrationBuilder extends js.Object {
   var db: DB = js.native
   def addColumn(tableName: Name, newColumns: ColumnDefinitions): scala.Unit = js.native
+  def addColumn(tableName: Name, newColumns: ColumnDefinitions, addOptions: AddOptions): scala.Unit = js.native
   // Columns
   def addColumns(tableName: Name, newColumns: ColumnDefinitions): scala.Unit = js.native
+  def addColumns(tableName: Name, newColumns: ColumnDefinitions, addOptions: AddOptions): scala.Unit = js.native
   // Constraints
   def addConstraint(tableName: Name, constraintName: java.lang.String, expression: java.lang.String): scala.Unit = js.native
   def addConstraint(tableName: Name, constraintName: java.lang.String, expression: ConstraintOptions): scala.Unit = js.native

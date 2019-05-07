@@ -85,6 +85,7 @@ trait DataTableProps extends js.Object {
   var sortMode: js.UndefOr[java.lang.String] = js.undefined
   var sortOrder: js.UndefOr[scala.Double] = js.undefined
   var stateKey: js.UndefOr[java.lang.String] = js.undefined
+  var stateStorage: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabIndex: js.UndefOr[java.lang.String] = js.undefined
   var tableClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -172,6 +173,7 @@ object DataTableProps {
     sortMode: java.lang.String = null,
     sortOrder: scala.Int | scala.Double = null,
     stateKey: java.lang.String = null,
+    stateStorage: java.lang.String = null,
     style: js.Object = null,
     tabIndex: java.lang.String = null,
     tableClassName: java.lang.String = null,
@@ -256,6 +258,7 @@ object DataTableProps {
     if (sortMode != null) __obj.updateDynamic("sortMode")(sortMode)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey)
+    if (stateStorage != null) __obj.updateDynamic("stateStorage")(stateStorage)
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
     if (tableClassName != null) __obj.updateDynamic("tableClassName")(tableClassName)

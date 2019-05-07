@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-telegram-bot-api
 
-Typings are for version 0.30
+Typings are for version 0.31
 
 ## Library description:
 Telegram Bot API
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for node-telegram-bot-api 0.30
+// Type definitions for node-telegram-bot-api 0.31
 // Project: https://github.com/yagop/node-telegram-bot-api
 // Definitions by: Alex Muench <https://github.com/ammuench>
 //                 Agadar <https://github.com/agadar>

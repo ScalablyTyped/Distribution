@@ -519,6 +519,7 @@
 | 456 | [cuid](./c/cuid) | Collision-resistant ids optimized for horizontal s
 | 456 | [lodash_dot_uniq](./l/lodash_dot_uniq) | The lodash method _.uniq exported as a module.
 | 455 | [valid-url](./v/valid-url) | URI validation functions
+| 451 | [fortawesome__fontawesome-](./f/fortawesome__fontawesome-svg-core) | The iconic font, CSS, and SVG framework
 | 451 | [lodash_dot_isfunction](./l/lodash_dot_isfunction) | The Lodash method _.isFunction exported as a modul
 | 451 | [react-modal](./r/react-modal) | Accessible modal dialog component for React.JS
 | 450 | [d3-selection](./d/d3-selection) | Data-driven DOM manipulation: select elements and 
@@ -571,6 +572,7 @@
 | 410 | [babel-template](./b/babel-template) | Generate an AST from a string template.
 | 409 | [imagemin](./i/imagemin) | Minify images
 | 409 | [type-is](./t/type-is) | Infer the content-type of a request.
+| 405 | [fortawesome__free-solid-s](./f/fortawesome__free-solid-svg-icons) | The iconic font, CSS, and SVG framework
 | 405 | [highland](./h/highland) | The high-level streams library
 | 404 | [chance](./c/chance) | Chance - Utility library to generate anything rand
 | 404 | [command-exists](./c/command-exists) | check whether a command line command exists in the
@@ -660,6 +662,7 @@
 | 348 | [soap](./s/soap) | A minimal node SOAP client
 | 347 | [angular-animate](./a/angular-animate) | AngularJS module for animations
 | 347 | [imagemin-pngquant](./i/imagemin-pngquant) | Imagemin plugin for pngquant
+| 346 | [fortawesome__react-fontaw](./f/fortawesome__react-fontawesome) | Official React component for Font Awesome 5
 | 346 | [karma-jasmine](./k/karma-jasmine) | A Karma plugin - adapter for Jasmine testing frame
 | 346 | [xml2json](./x/xml2json) | Converts xml to json and vice-versa, using node-ex
 | 345 | [vue-class-component](./v/vue-class-component) | ES201X/TypeScript class decorator for Vue componen
@@ -769,7 +772,6 @@
 | 290 | [indent-string](./i/indent-string) | Indent each line in a string
 | 289 | [find-root](./f/find-root) | find the closest package.json
 | 288 | [bigi](./b/bigi) | Big integers.
-| 288 | [emotion__core](./e/emotion__core) | > Simple styling in React.
 | 288 | [isarray](./i/isarray) | Array
 | 288 | [p-map](./p/p-map) | Map over promises concurrently
 | 288 | [rc-tooltip](./r/rc-tooltip) | React Tooltip
@@ -1400,7 +1402,6 @@
 | 128 | [reflux](./r/reflux) | A simple library for uni-directional dataflow appl
 | 128 | [stylelint-webpack-plugin](./s/stylelint-webpack-plugin) | A stylelint plugin for webpack
 | 128 | [zen-observable](./z/zen-observable) | An Implementation of ES Observables
-| 127 | [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c
 | 127 | [gulp-angular-templatecach](./g/gulp-angular-templatecache) | Concatenates and registers AngularJS templates in 
 | 127 | [gulp-csso](./g/gulp-csso) | Minify CSS with CSSO.
 | 127 | [gulp-pug](./g/gulp-pug) | Gulp plugin for compiling Pug templates
@@ -2888,7 +2889,6 @@
 | 31 | [rmc-input-number](./r/rmc-input-number) | input-number ui component for react(web & react-na
 | 31 | [rmc-tabs](./r/rmc-tabs) | React Mobile Tabs Component(web & react-native)
 | 31 | [shapefile](./s/shapefile) | An implementation of the shapefile (.shp) spatial 
-| 31 | [storybook__theming](./s/storybook__theming) | Core Storybook Components
 | 31 | [strophe_dot_js](./s/strophe_dot_js) | Strophe.js is an XMPP library for JavaScript
 | 31 | [timm](./t/timm) | Immutability helpers with fast reads and acceptabl
 | 31 | [typeof](./t/typeof) | Node module. typeOf('a string') == 'string', typeO
@@ -3332,7 +3332,6 @@
 | 21 | [rangy](./r/rangy) | A cross-browser DOM range and selection library
 | 21 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization
 | 21 | [react-csv](./r/react-csv) | Build CSV files on the fly basing on Array/literal
-| 21 | [storybook-readme](./s/storybook-readme) | Storybook addon to show components README (for Rea
 | 21 | [stream-meter](./s/stream-meter) | A stream meter that both counts the bytes piped th
 | 21 | [stream-series](./s/stream-series) | Waterfalls for streams
 | 21 | [strong-log-transformer](./s/strong-log-transformer) | Stream transformer that prefixes lines with timest
@@ -4127,6 +4126,7 @@
 | 9 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
 | 9 | [firebase__logger](./f/firebase__logger) | A logger package for use in the Firebase JS SDK
 | 9 | [fluxible-addons-react](./f/fluxible-addons-react) | Fluxible addons for use with React
+| 9 | [fortawesome__fontawesome-](./f/fortawesome__fontawesome-common-types) | The iconic font, CSS, and SVG framework
 | 9 | [fossil-delta](./f/fossil-delta) | Fossil SCM delta compression
 | 9 | [geetest](./g/geetest) | Node SDK for Geetest captcha
 | 9 | [google-maps-react](./g/google-maps-react) | Google maps container
@@ -4307,7 +4307,6 @@
 | 7 | [angular-file-saver](./a/angular-file-saver) | An AngularJS service that implements the HTML5 W3C
 | 7 | [angular-localforage](./a/angular-localforage) | Angular service & directive for https://github.com
 | 7 | [angular-ui-notification](./a/angular-ui-notification) | Angular.js service providing simple notifications 
-| 7 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库
 | 7 | [apollographql__apollo-too](./a/apollographql__apollo-tools) | -
 | 7 | [asana](./a/asana) | Official NodeJS and BrowserJS client for the Asana
 | 7 | [avvio](./a/avvio) | Asynchronous bootstrapping of Node applications
@@ -5361,7 +5360,6 @@
 | 2 | [react-credit-cards](./r/react-credit-cards) | Beautiful credit cards for your payment forms
 | 2 | [react-flag-icon-css](./r/react-flag-icon-css) | React SVG country flags component
 | 2 | [react-fns](./r/react-fns) | Modern React components, hoc's, and utilities func
-| 2 | [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager
 | 2 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API
 | 2 | [react-native-draggable-fl](./r/react-native-draggable-flatlist) | A drag-and-drop-enabled FlatList component for Rea
 | 2 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt

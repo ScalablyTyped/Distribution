@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 trait ConfigConsumerProps extends js.Object {
   var autoInsertSpaceInButton: js.UndefOr[scala.Boolean] = js.native
   var csp: js.UndefOr[CSPConfig] = js.native
-  var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
-  ] = js.native
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.native
   @JSName("renderEmpty")
   var renderEmpty_Original: antdLib.libConfigDashProviderRenderEmptyMod.RenderEmptyHandler = js.native
   var rootPrefixCls: js.UndefOr[java.lang.String] = js.native

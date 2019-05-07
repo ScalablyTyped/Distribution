@@ -15,7 +15,7 @@ trait OrganizationAggregationSource extends js.Object {
     */
   var AwsRegions: js.UndefOr[AggregatorRegionList] = js.undefined
   /**
-    * ARN of the IAM role used to retreive AWS Organization details associated with the aggregator account.
+    * ARN of the IAM role used to retrieve AWS Organization details associated with the aggregator account.
     */
   var RoleArn: String
 }

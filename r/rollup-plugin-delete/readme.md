@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-delete
 
-Typings are for version 0.2
+Typings are for version 1.0.0
 
 ## Library description:
 Delete files and folders using Rollup
@@ -24,22 +24,11 @@ Delete files and folders using Rollup
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for rollup-plugin-delete 0.2
-// Project: https://github.com/vladshcherbin/rollup-plugin-delete#readme
-// Definitions by: Vlad Shcherbin <https://github.com/vladshcherbin>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
-
-```
 

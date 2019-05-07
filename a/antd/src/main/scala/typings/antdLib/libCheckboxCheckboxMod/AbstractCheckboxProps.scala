@@ -6,11 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AbstractCheckboxProps[T] extends js.Object {
+  var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ T, scala.Unit]] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
@@ -27,11 +29,13 @@ trait AbstractCheckboxProps[T] extends js.Object {
 object AbstractCheckboxProps {
   @scala.inline
   def apply[T](
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
     name: java.lang.String = null,
     onChange: /* e */ T => scala.Unit = null,
     onClick: reactLib.reactMod.MouseEventHandler[_] = null,
@@ -45,11 +49,13 @@ object AbstractCheckboxProps {
     value: js.Any = null
   ): AbstractCheckboxProps[T] = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

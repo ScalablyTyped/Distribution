@@ -20,6 +20,6 @@ object TreeSelect extends js.Object {
   var SHOW_CHILD: js.Any = js.native
   var SHOW_PARENT: js.Any = js.native
   var TreeNode: js.Any = js.native
-  var defaultProps: antdLib.Anon_ChoiceTransitionNameShowSearchTransitionName = js.native
+  var defaultProps: antdLib.Anon_ChoiceTransitionNameTransitionName = js.native
 }
 

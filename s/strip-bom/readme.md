@@ -1,7 +1,7 @@
 
 # Scala.js typings for strip-bom
 
-Typings are for version 3.0
+Typings are for version 4.0.0
 
 ## Library description:
 Strip UTF-8 byte order mark (BOM) from a string
@@ -24,7 +24,7 @@ Strip UTF-8 byte order mark (BOM) from a string
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,10 +35,17 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for strip-bom 3.0
-// Project: https://github.com/sindresorhus/strip-bom#readme
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Strip UTF-8 [byte order mark](https://en.wikipedia.org/wiki/Byte_order_mark#UTF-8) (BOM) from a string.
+
+@example
+```
+import stripBom = require('strip-bom');
+
+stripBom('\uFEFFunicorn');
+//=> 'unicorn'
+```
+*/
 
 ```
 

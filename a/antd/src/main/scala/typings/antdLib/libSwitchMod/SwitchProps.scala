@@ -18,6 +18,7 @@ trait SwitchProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var title: js.UndefOr[java.lang.String] = js.undefined
   var unCheckedChildren: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
 }
 
@@ -36,6 +37,7 @@ object SwitchProps {
     prefixCls: java.lang.String = null,
     size: antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.CSSProperties = null,
+    title: java.lang.String = null,
     unCheckedChildren: reactLib.reactMod.ReactNode = null
   ): SwitchProps = {
     val __obj = js.Dynamic.literal()
@@ -51,6 +53,7 @@ object SwitchProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
     if (unCheckedChildren != null) __obj.updateDynamic("unCheckedChildren")(unCheckedChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchProps]
   }

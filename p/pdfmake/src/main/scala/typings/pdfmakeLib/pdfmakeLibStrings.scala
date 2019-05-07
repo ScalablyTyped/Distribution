@@ -28,9 +28,6 @@ object pdfmakeLibStrings {
   sealed trait right
     extends pdfmakeLib.buildPdfmakeMod._Alignment
   
-  @js.native
-  sealed trait string extends js.Object
-  
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
@@ -43,7 +40,5 @@ object pdfmakeLibStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
 }
 

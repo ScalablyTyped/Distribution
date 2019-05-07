@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrawerProps extends js.Object {
+  var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
   var bodyStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closable: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,6 +32,7 @@ trait DrawerProps extends js.Object {
 object DrawerProps {
   @scala.inline
   def apply(
+    afterVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
     bodyStyle: reactLib.reactMod.CSSProperties = null,
     className: java.lang.String = null,
     closable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -53,6 +55,7 @@ object DrawerProps {
     zIndex: scala.Int | scala.Double = null
   ): DrawerProps = {
     val __obj = js.Dynamic.literal()
+    if (afterVisibleChange != null) __obj.updateDynamic("afterVisibleChange")(js.Any.fromFunction1(afterVisibleChange))
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)

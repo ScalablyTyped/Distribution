@@ -9,6 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class ManagementClient protected () extends js.Object {
   def this(options: ManagementClientOptions) = this()
+  def addPermissionsInRole(params: ObjectWithId, data: PermissionsData): js.Promise[scala.Unit] = js.native
+  def addPermissionsInRole(params: ObjectWithId, data: PermissionsData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def assignPermissionsToUser(params: ObjectWithId, data: PermissionsData): js.Promise[scala.Unit] = js.native
+  def assignPermissionsToUser(params: ObjectWithId, data: PermissionsData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  // The lowercase 't' is like this in the auth0 sdk
+  def assignRolestoUser(params: ObjectWithId, data: RolesData): js.Promise[scala.Unit] = js.native
+  def assignRolestoUser(params: ObjectWithId, data: RolesData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def blacklistToken(token: Token): js.Promise[_] = js.native
   def blacklistToken(token: Token, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   def configureEmailProvider(data: Data): js.Promise[_] = js.native
@@ -50,6 +57,8 @@ class ManagementClient protected () extends js.Object {
   ): scala.Unit = js.native
   @JSName("createResourceServer")
   def createResourceServer_Unit(data: CreateResourceServer): scala.Unit = js.native
+  def createRole(data: CreateRoleData): js.Promise[Role] = js.native
+  def createRole(data: CreateRoleData, cb: js.Function2[/* err */ stdLib.Error, /* role */ Role, scala.Unit]): scala.Unit = js.native
   def createRule(data: Data): js.Promise[Rule] = js.native
   def createRule(data: Data, cb: js.Function2[/* err */ stdLib.Error, /* rule */ Rule, scala.Unit]): scala.Unit = js.native
   def createUser(data: CreateUserData): js.Promise[User] = js.native
@@ -73,6 +82,8 @@ class ManagementClient protected () extends js.Object {
   def deleteResourceServer(params: ObjectWithId, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   @JSName("deleteResourceServer")
   def deleteResourceServer_Unit(params: ObjectWithId): scala.Unit = js.native
+  def deleteRole(params: ObjectWithId): js.Promise[scala.Unit] = js.native
+  def deleteRole(params: ObjectWithId, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def deleteRule(params: ObjectWithId): js.Promise[scala.Unit] = js.native
   def deleteRule(params: ObjectWithId, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def deleteUser(params: ObjectWithId): js.Promise[scala.Unit] = js.native
@@ -144,6 +155,11 @@ class ManagementClient protected () extends js.Object {
   def getLogs(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   @JSName("getLogs")
   def getLogs_Unit(): scala.Unit = js.native
+  def getPermissionsInRole(params: ObjectWithId): js.Promise[js.Array[Permission]] = js.native
+  def getPermissionsInRole(
+    params: ObjectWithId,
+    cb: js.Function2[/* err */ stdLib.Error, /* permissions */ js.Array[Permission], scala.Unit]
+  ): scala.Unit = js.native
   def getResourceServer(data: ObjectWithId): js.Promise[ResourceServer] = js.native
   def getResourceServer(
     data: ObjectWithId,
@@ -155,6 +171,21 @@ class ManagementClient protected () extends js.Object {
   def getResourceServers(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Array[ResourceServer], scala.Unit]): scala.Unit = js.native
   @JSName("getResourceServers")
   def getResourceServers_Unit(): scala.Unit = js.native
+  def getRole(params: ObjectWithId): js.Promise[Role] = js.native
+  def getRole(params: ObjectWithId, cb: js.Function2[/* err */ stdLib.Error, /* role */ Role, scala.Unit]): scala.Unit = js.native
+  // Roles
+  def getRoles(): js.Promise[js.Array[Role]] = js.native
+  def getRoles(cb: js.Function2[/* err */ stdLib.Error, /* roles */ js.Array[Role], scala.Unit]): scala.Unit = js.native
+  def getRoles(params: GetRolesData): js.Promise[js.Array[Role]] = js.native
+  def getRoles(params: GetRolesDataPaged): js.Promise[RolePage] = js.native
+  def getRoles(
+    params: GetRolesDataPaged,
+    cb: js.Function2[/* err */ stdLib.Error, /* rolePage */ RolePage, scala.Unit]
+  ): scala.Unit = js.native
+  def getRoles(
+    params: GetRolesData,
+    cb: js.Function2[/* err */ stdLib.Error, /* roles */ js.Array[Role], scala.Unit]
+  ): scala.Unit = js.native
   def getRule(params: ClientParams): js.Promise[Rule] = js.native
   def getRule(params: ClientParams, cb: js.Function2[/* err */ stdLib.Error, /* rule */ Rule, scala.Unit]): scala.Unit = js.native
   // Rules
@@ -167,6 +198,38 @@ class ManagementClient protected () extends js.Object {
   def getTenantSettings_Unit(): scala.Unit = js.native
   def getUser(params: ObjectWithId): js.Promise[User] = js.native
   def getUser(params: ObjectWithId, cb: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
+  def getUserPermissions(params: GetUserPermissionsData): js.Promise[js.Array[Permission]] = js.native
+  def getUserPermissions(params: GetUserPermissionsDataPaged): js.Promise[PermissionPage] = js.native
+  def getUserPermissions(
+    params: GetUserPermissionsDataPaged,
+    cb: js.Function2[/* err */ stdLib.Error, /* permissionPage */ PermissionPage, scala.Unit]
+  ): scala.Unit = js.native
+  def getUserPermissions(
+    params: GetUserPermissionsData,
+    cb: js.Function2[/* err */ stdLib.Error, /* permissions */ js.Array[Permission], scala.Unit]
+  ): scala.Unit = js.native
+  // User permissions
+  def getUserPermissions(params: ObjectWithId): js.Promise[js.Array[Permission]] = js.native
+  def getUserPermissions(
+    params: ObjectWithId,
+    cb: js.Function2[/* err */ stdLib.Error, /* permissions */ js.Array[Permission], scala.Unit]
+  ): scala.Unit = js.native
+  def getUserRoles(params: GetUserRolesData): js.Promise[js.Array[Role]] = js.native
+  def getUserRoles(params: GetUserRolesDataPaged): js.Promise[RolePage] = js.native
+  def getUserRoles(
+    params: GetUserRolesDataPaged,
+    cb: js.Function2[/* err */ stdLib.Error, /* rolePage */ RolePage, scala.Unit]
+  ): scala.Unit = js.native
+  def getUserRoles(
+    params: GetUserRolesData,
+    cb: js.Function2[/* err */ stdLib.Error, /* roles */ js.Array[Role], scala.Unit]
+  ): scala.Unit = js.native
+  // User roles
+  def getUserRoles(params: ObjectWithId): js.Promise[js.Array[Role]] = js.native
+  def getUserRoles(
+    params: ObjectWithId,
+    cb: js.Function2[/* err */ stdLib.Error, /* roles */ js.Array[Role], scala.Unit]
+  ): scala.Unit = js.native
   @JSName("getUser")
   def getUser_Unit(params: ObjectWithId): scala.Unit = js.native
   def getUsers(): js.Promise[js.Array[User]] = js.native
@@ -189,6 +252,21 @@ class ManagementClient protected () extends js.Object {
   ): scala.Unit = js.native
   @JSName("getUsersByEmail")
   def getUsersByEmail_Unit(email: java.lang.String): scala.Unit = js.native
+  def getUsersInRole(params: GetRoleUsersData): js.Promise[js.Array[User]] = js.native
+  def getUsersInRole(params: GetRoleUsersDataPaged): js.Promise[UserPage] = js.native
+  def getUsersInRole(
+    params: GetRoleUsersDataPaged,
+    cb: js.Function2[/* err */ stdLib.Error, /* userPage */ UserPage, scala.Unit]
+  ): scala.Unit = js.native
+  def getUsersInRole(
+    params: GetRoleUsersData,
+    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]
+  ): scala.Unit = js.native
+  def getUsersInRole(params: ObjectWithId): js.Promise[js.Array[User]] = js.native
+  def getUsersInRole(
+    params: ObjectWithId,
+    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]
+  ): scala.Unit = js.native
   @JSName("getUsers")
   def getUsers_Unit(): scala.Unit = js.native
   @JSName("getUsers")
@@ -206,6 +284,12 @@ class ManagementClient protected () extends js.Object {
     params: LinkAccountsParams,
     cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
+  def removePermissionsFromRole(params: ObjectWithId, data: PermissionsData): js.Promise[scala.Unit] = js.native
+  def removePermissionsFromRole(params: ObjectWithId, data: PermissionsData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def removePermissionsFromUser(params: ObjectWithId, data: PermissionsData): js.Promise[scala.Unit] = js.native
+  def removePermissionsFromUser(params: ObjectWithId, data: PermissionsData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def removeRolesFromUser(params: ObjectWithId, data: RolesData): js.Promise[scala.Unit] = js.native
+  def removeRolesFromUser(params: ObjectWithId, data: RolesData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def sendEmailVerification(data: UserIdParams): js.Promise[VerificationEmailJob] = js.native
   def sendEmailVerification(
     data: UserIdParams,
@@ -258,6 +342,12 @@ class ManagementClient protected () extends js.Object {
   ): scala.Unit = js.native
   @JSName("updateResourceServer")
   def updateResourceServer_Unit(params: ObjectWithId, data: ResourceServer): scala.Unit = js.native
+  def updateRole(params: ObjectWithId, data: UpdateRoleData): js.Promise[Role] = js.native
+  def updateRole(
+    params: ObjectWithId,
+    data: UpdateRoleData,
+    cb: js.Function2[/* err */ stdLib.Error, /* role */ Role, scala.Unit]
+  ): scala.Unit = js.native
   def updateRule(params: ObjectWithId, data: Data): js.Promise[Rule] = js.native
   def updateRule(
     params: ObjectWithId,

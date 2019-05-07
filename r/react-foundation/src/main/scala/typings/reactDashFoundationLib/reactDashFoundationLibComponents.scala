@@ -59,6 +59,8 @@ object reactDashFoundationLibComponents {
   @scala.inline
   def MenuItem: reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsMenuMod.MenuItemProps] = reactDashFoundationLib.componentsMenuMod.^.MenuItem.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsMenuMod.MenuItemProps]]
   @scala.inline
+  def MenuText: reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsMenuMod.MenuItemProps] = reactDashFoundationLib.componentsMenuMod.^.asInstanceOf[js.Dynamic].selectDynamic("MenuText").asInstanceOf[reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsMenuMod.MenuItemProps]]
+  @scala.inline
   def NativeProgress: reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsProgressDashBarMod.NativeProgressProps] = reactDashFoundationLib.reactDashFoundationMod.^.NativeProgress.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsProgressDashBarMod.NativeProgressProps]]
   @scala.inline
   def Pagination: reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsPaginationMod.PaginationProps] = reactDashFoundationLib.reactDashFoundationMod.^.Pagination.asInstanceOf[reactLib.reactMod.ComponentType[reactDashFoundationLib.componentsPaginationMod.PaginationProps]]

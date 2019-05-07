@@ -11,7 +11,7 @@ trait UpdateUserRequest extends js.Object {
     */
   var NewPath: js.UndefOr[pathType] = js.undefined
   /**
-    * New name for the user. Include this parameter only if you're changing the user's name. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+    * New name for the user. Include this parameter only if you're changing the user's name. IAM user, group, role, and policy names must be unique within the account. Names are not distinguished by case. For example, you cannot create resources named both "MyResource" and "myresource".
     */
   var NewUserName: js.UndefOr[userNameType] = js.undefined
   /**

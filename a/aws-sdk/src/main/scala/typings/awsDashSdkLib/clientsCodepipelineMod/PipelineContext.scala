@@ -11,11 +11,11 @@ trait PipelineContext extends js.Object {
     */
   var action: js.UndefOr[ActionContext] = js.undefined
   /**
-    * The pipeline execution ID provided to the job worker.
+    * The Amazon Resource Name (ARN) of the pipeline.
     */
   var pipelineArn: js.UndefOr[PipelineArn] = js.undefined
   /**
-    * The pipeline Amazon Resource Name (ARN) provided to the job worker.
+    * The execution ID of the pipeline.
     */
   var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
   /**

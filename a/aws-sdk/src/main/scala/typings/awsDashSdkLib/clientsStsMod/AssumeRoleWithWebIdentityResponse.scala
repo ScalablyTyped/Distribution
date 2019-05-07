@@ -15,7 +15,7 @@ trait AssumeRoleWithWebIdentityResponse extends js.Object {
     */
   var Audience: js.UndefOr[Audience] = js.undefined
   /**
-    * The temporary security credentials, which include an access key ID, a secret access key, and a security token.  Note: The size of the security token that STS APIs return is not fixed. We strongly recommend that you make no assumptions about the maximum size. As of this writing, the typical size is less than 4096 bytes, but that can vary. Also, future updates to AWS might require larger sizes.
+    * The temporary security credentials, which include an access key ID, a secret access key, and a security token.  The size of the security token that STS API operations return is not fixed. We strongly recommend that you make no assumptions about the maximum size. As of this writing, the typical size is less than 4096 bytes, but that can vary. Also, future updates to AWS might require larger sizes. 
     */
   var Credentials: js.UndefOr[Credentials] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait AssumeRoleWithWebIdentityResponse extends js.Object {
     */
   var PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
   /**
-    *  The issuing authority of the web identity token presented. For OpenID Connect ID Tokens this contains the value of the iss field. For OAuth 2.0 access tokens, this contains the value of the ProviderId parameter that was passed in the AssumeRoleWithWebIdentity request.
+    *  The issuing authority of the web identity token presented. For OpenID Connect ID tokens, this contains the value of the iss field. For OAuth 2.0 access tokens, this contains the value of the ProviderId parameter that was passed in the AssumeRoleWithWebIdentity request.
     */
   var Provider: js.UndefOr[Issuer] = js.undefined
   /**

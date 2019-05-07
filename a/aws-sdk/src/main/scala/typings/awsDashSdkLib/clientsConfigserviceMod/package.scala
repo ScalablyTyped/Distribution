@@ -293,6 +293,7 @@ package object clientsConfigserviceMod {
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   type Tags = org.scalablytyped.runtime.StringDictionary[Value]
+  type TagsList = js.Array[Tag]
   type UnprocessedResourceIdentifierList = js.Array[AggregateResourceIdentifier]
   type Value = java.lang.String
   type Version = java.lang.String

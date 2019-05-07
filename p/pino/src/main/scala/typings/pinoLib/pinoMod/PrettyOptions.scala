@@ -24,6 +24,10 @@ trait PrettyOptions extends js.Object {
     */
   var errorProps: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Ignore one or several keys. Example: "time,hostname"
+    */
+  var ignore: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * If set to true, it will print the name of the log level as the first field in the log line. Default: `false`.
     */
   var levelFirst: js.UndefOr[scala.Boolean] = js.undefined
@@ -51,6 +55,7 @@ object PrettyOptions {
     crlf: js.UndefOr[scala.Boolean] = js.undefined,
     errorLikeObjectKeys: js.Array[java.lang.String] = null,
     errorProps: java.lang.String = null,
+    ignore: java.lang.String = null,
     levelFirst: js.UndefOr[scala.Boolean] = js.undefined,
     messageKey: java.lang.String = null,
     search: java.lang.String = null,
@@ -61,6 +66,7 @@ object PrettyOptions {
     if (!js.isUndefined(crlf)) __obj.updateDynamic("crlf")(crlf)
     if (errorLikeObjectKeys != null) __obj.updateDynamic("errorLikeObjectKeys")(errorLikeObjectKeys)
     if (errorProps != null) __obj.updateDynamic("errorProps")(errorProps)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (!js.isUndefined(levelFirst)) __obj.updateDynamic("levelFirst")(levelFirst)
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
     if (search != null) __obj.updateDynamic("search")(search)

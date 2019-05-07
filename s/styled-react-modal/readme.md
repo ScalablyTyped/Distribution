@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-react-modal
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 A React modal built with styled-components.
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for styled-react-modal 1.1
+// Type definitions for styled-react-modal 1.2
 // Project: https://github.com/AlexanderRichey/styled-react-modal
 // Definitions by: Adam Lavin <https://github.com/Lavoaster>
+//                 Greg Perlman <https://github.com/gperl27>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.9
 

@@ -11,7 +11,7 @@ trait DescribeConfigRuleEvaluationStatusRequest extends js.Object {
     */
   var ConfigRuleNames: js.UndefOr[ConfigRuleNames] = js.undefined
   /**
-    * The number of rule evaluation results that you want returned. This parameter is required if the rule limit for your account is more than the default of 50 rules. For information about requesting a rule limit increase, see AWS Config Limits in the AWS General Reference Guide.
+    * The number of rule evaluation results that you want returned. This parameter is required if the rule limit for your account is more than the default of 150 rules. For information about requesting a rule limit increase, see AWS Config Limits in the AWS General Reference Guide.
     */
   var Limit: js.UndefOr[RuleLimit] = js.undefined
   /**

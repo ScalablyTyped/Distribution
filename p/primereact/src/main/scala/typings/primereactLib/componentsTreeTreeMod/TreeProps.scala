@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait TreeProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var contentClassName: js.UndefOr[java.lang.String] = js.undefined
+  var contentStyle: js.UndefOr[js.Object] = js.undefined
   var contextMenuSelectionKey: js.UndefOr[js.Any] = js.undefined
   var dragdropScope: js.UndefOr[java.lang.String] = js.undefined
   var expandedKeys: js.UndefOr[js.Any] = js.undefined
@@ -40,6 +42,8 @@ object TreeProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
+    contentClassName: java.lang.String = null,
+    contentStyle: js.Object = null,
     contextMenuSelectionKey: js.Any = null,
     dragdropScope: java.lang.String = null,
     expandedKeys: js.Any = null,
@@ -70,6 +74,8 @@ object TreeProps {
   ): TreeProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
+    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName)
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
     if (contextMenuSelectionKey != null) __obj.updateDynamic("contextMenuSelectionKey")(contextMenuSelectionKey)
     if (dragdropScope != null) __obj.updateDynamic("dragdropScope")(dragdropScope)
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys)

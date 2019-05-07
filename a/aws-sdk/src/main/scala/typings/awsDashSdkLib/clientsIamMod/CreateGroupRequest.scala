@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateGroupRequest extends js.Object {
   /**
-    * The name of the group to create. Do not include the path in this value. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-. The group name must be unique within the account. Group names are not distinguished by case. For example, you cannot create groups named both "ADMINS" and "admins".
+    * The name of the group to create. Do not include the path in this value. IAM user, group, role, and policy names must be unique within the account. Names are not distinguished by case. For example, you cannot create resources named both "MyResource" and "myresource".
     */
   var GroupName: groupNameType
   /**

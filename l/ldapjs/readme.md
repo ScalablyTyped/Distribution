@@ -1,7 +1,6 @@
 
 # Scala.js typings for ldapjs
 
-Typings are for version 1.0
 
 ## Library description:
 LDAP client and server APIs
@@ -35,9 +34,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for ldapjs 1.0
+// Type definitions for ldapjs
 // Project: http://ldapjs.org
-// Definitions by: Charles Villemure <https://github.com/cvillemure>, Peter Kooijmans <https://github.com/peterkooijmans>, Pablo Moleri <https://github.com/pmoleri>
+// Definitions by: Charles Villemure <https://github.com/cvillemure>, Peter Kooijmans <https://github.com/peterkooijmans>, Pablo Moleri <https://github.com/pmoleri>, Michael Scott-Nelson <https://github.com/mscottnelson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

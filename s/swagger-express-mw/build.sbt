@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-express-mw"
-version := "0.7-dt-20181022Z-7004a5"
+version := "0.7-dt-20181022Z-8b78a0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,12 +21,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-feec7c",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
-  "org.scalablytyped" %%% "restify" % "7.2-dt-20190319Z-6fe271",
+  "org.scalablytyped" %%% "restify" % "7.2-dt-20190506Z-72193d",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-94d189",
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-b82f3b",
   "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-1f8f0a",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "swagger-node-runner" % "0.6-dt-20190212Z-e9c0b5",
+  "org.scalablytyped" %%% "swagger-node-runner" % "0.6-dt-20190212Z-e89e27",
   "org.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20190220Z-6c58fe")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

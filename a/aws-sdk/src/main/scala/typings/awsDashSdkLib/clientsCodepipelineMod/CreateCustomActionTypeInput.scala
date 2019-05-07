@@ -27,7 +27,7 @@ trait CreateCustomActionTypeInput extends js.Object {
     */
   var provider: ActionProvider
   /**
-    * Returns information about the settings for an action type.
+    * URLs that provide users information about this custom action.
     */
   var settings: js.UndefOr[ActionTypeSettings] = js.undefined
   /**

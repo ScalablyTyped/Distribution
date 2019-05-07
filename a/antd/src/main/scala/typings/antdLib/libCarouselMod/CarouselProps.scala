@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CarouselProps
   extends reactDashSlickLib.reactDashSlickMod.Settings {
+  var dotPosition: js.UndefOr[DotPosition] = js.undefined
   var effect: js.UndefOr[CarouselEffect] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var slickGoTo: js.UndefOr[scala.Double] = js.undefined
@@ -30,6 +31,7 @@ object CarouselProps {
     className: java.lang.String = null,
     cssEase: java.lang.String = null,
     customPaging: /* index */ scala.Double => reactLib.reactMod.Global.JSXNs.Element = null,
+    dotPosition: DotPosition = null,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
     dotsClass: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -89,6 +91,7 @@ object CarouselProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssEase != null) __obj.updateDynamic("cssEase")(cssEase)
     if (customPaging != null) __obj.updateDynamic("customPaging")(js.Any.fromFunction1(customPaging))
+    if (dotPosition != null) __obj.updateDynamic("dotPosition")(dotPosition)
     if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)
     if (dotsClass != null) __obj.updateDynamic("dotsClass")(dotsClass)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

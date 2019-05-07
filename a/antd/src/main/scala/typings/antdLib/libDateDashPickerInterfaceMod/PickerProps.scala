@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PickerProps extends js.Object {
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined
+  var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dateRender: js.UndefOr[
     js.Function2[
@@ -30,7 +31,6 @@ trait PickerProps extends js.Object {
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var popupStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var renderExtraFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   var size: js.UndefOr[
     antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default
   ] = js.undefined
@@ -42,6 +42,7 @@ object PickerProps {
   @scala.inline
   def apply(
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     dateRender: (/* current */ momentLib.momentMod.Moment, /* today */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -57,13 +58,13 @@ object PickerProps {
     open: js.UndefOr[scala.Boolean] = js.undefined,
     popupStyle: reactLib.reactMod.CSSProperties = null,
     prefixCls: java.lang.String = null,
-    renderExtraFooter: () => reactLib.reactMod.ReactNode = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.CSSProperties = null,
     suffixIcon: reactLib.reactMod.ReactNode = null
   ): PickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (className != null) __obj.updateDynamic("className")(className)
     if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
@@ -79,7 +80,6 @@ object PickerProps {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction0(renderExtraFooter))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

@@ -12,7 +12,6 @@ object ^ extends js.Object {
   def filterCFServices(filter: ServiceFilter): js.Any = js.native
   def getServices(query: js.Any): js.Any = js.native
   def getServices(query: js.Any, servicesFile: java.lang.String): js.Any = js.native
-  def loadCaCert(): scala.Unit = js.native
   def loadCertificates(): js.Any = js.native
   def loadCertificates(certPath: java.lang.String): js.Any = js.native
   def loadEnv(): scala.Unit = js.native

@@ -9,6 +9,7 @@ trait ModalProps extends js.Object {
   var afterClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var allowScroll: js.UndefOr[scala.Boolean] = js.undefined
+  var backgroundProps: js.UndefOr[js.Object] = js.undefined
   var beforeClose: js.UndefOr[js.Promise[scala.Unit] | js.Function0[scala.Unit]] = js.undefined
   var beforeOpen: js.UndefOr[js.Promise[scala.Unit] | js.Function0[scala.Unit]] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -29,6 +30,7 @@ object ModalProps {
     afterClose: () => scala.Unit = null,
     afterOpen: () => scala.Unit = null,
     allowScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundProps: js.Object = null,
     beforeClose: js.Promise[scala.Unit] | js.Function0[scala.Unit] = null,
     beforeOpen: js.Promise[scala.Unit] | js.Function0[scala.Unit] = null,
     children: reactLib.reactMod.ReactNode = null,
@@ -39,6 +41,7 @@ object ModalProps {
     if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
     if (afterOpen != null) __obj.updateDynamic("afterOpen")(js.Any.fromFunction0(afterOpen))
     if (!js.isUndefined(allowScroll)) __obj.updateDynamic("allowScroll")(allowScroll)
+    if (backgroundProps != null) __obj.updateDynamic("backgroundProps")(backgroundProps)
     if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose.asInstanceOf[js.Any])
     if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

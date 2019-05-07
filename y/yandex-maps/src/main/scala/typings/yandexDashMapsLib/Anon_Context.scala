@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Context extends js.Object {
   var context: js.UndefOr[js.Object] = js.undefined
-  var controllers: js.UndefOr[js.Array[yandexDashMapsLib.ymapsNs.IEventWorkflowController]] = js.undefined
-  var parent: js.UndefOr[yandexDashMapsLib.ymapsNs.IEventManager] = js.undefined
+  var controllers: js.UndefOr[js.Array[yandexDashMapsLib.yandexDashMapsMod.IEventWorkflowController]] = js.undefined
+  var parent: js.UndefOr[yandexDashMapsLib.yandexDashMapsMod.IEventManager] = js.undefined
 }
 
 object Anon_Context {
   @scala.inline
   def apply(
     context: js.Object = null,
-    controllers: js.Array[yandexDashMapsLib.ymapsNs.IEventWorkflowController] = null,
-    parent: yandexDashMapsLib.ymapsNs.IEventManager = null
+    controllers: js.Array[yandexDashMapsLib.yandexDashMapsMod.IEventWorkflowController] = null,
+    parent: yandexDashMapsLib.yandexDashMapsMod.IEventManager = null
   ): Anon_Context = {
     val __obj = js.Dynamic.literal()
     if (context != null) __obj.updateDynamic("context")(context)

@@ -16,7 +16,7 @@ trait Content
   var ol: js.UndefOr[js.Array[Content]] = js.undefined
   var pageBreak: js.UndefOr[pdfmakeLib.pdfmakeLibStrings.before | pdfmakeLib.pdfmakeLibStrings.after] = js.undefined
   var stack: js.UndefOr[js.Array[Content]] = js.undefined
-  var style: js.UndefOr[pdfmakeLib.pdfmakeLibStrings.string] = js.undefined
+  var style: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var table: js.UndefOr[Table] = js.undefined
   var text: js.UndefOr[java.lang.String | js.Array[java.lang.String] | js.Array[Content]] = js.undefined
   var ul: js.UndefOr[js.Array[Content]] = js.undefined
@@ -36,7 +36,7 @@ object Content {
     ol: js.Array[Content] = null,
     pageBreak: pdfmakeLib.pdfmakeLibStrings.before | pdfmakeLib.pdfmakeLibStrings.after = null,
     stack: js.Array[Content] = null,
-    style: pdfmakeLib.pdfmakeLibStrings.string = null,
+    style: java.lang.String | js.Array[java.lang.String] = null,
     table: Table = null,
     text: java.lang.String | js.Array[java.lang.String] | js.Array[Content] = null,
     ul: js.Array[Content] = null,
@@ -53,7 +53,7 @@ object Content {
     if (ol != null) __obj.updateDynamic("ol")(ol)
     if (pageBreak != null) __obj.updateDynamic("pageBreak")(pageBreak.asInstanceOf[js.Any])
     if (stack != null) __obj.updateDynamic("stack")(stack)
-    if (style != null) __obj.updateDynamic("style")(style)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table)
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (ul != null) __obj.updateDynamic("ul")(ul)

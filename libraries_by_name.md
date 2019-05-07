@@ -206,7 +206,6 @@
 | [ant-design__icons-react](./a/ant-design__icons-react) |  Ant Design Icons for React  | - |
 | [antd](./a/antd) | An enterprise-class UI design language and React-b | ant, design, react, react-component, component, components, ui, framework, frontend |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
-| [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -1393,9 +1392,7 @@
 | [emoji-regex](./e/emoji-regex) | A regular expression to match all Emoji-only symbo | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji |
 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for  | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
 | [emotion](./e/emotion) | The Next Generation of CSS-in-JS. | styles, emotion, react, css, css-in-js |
-| [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c | react, theme, theming, emotion, cssinjs, css-in-js |
 | [emotion__cache](./e/emotion__cache) | emotion's cache | - |
-| [emotion__core](./e/emotion__core) | > Simple styling in React. | - |
 | [emotion__css](./e/emotion__css) | a function to serialize css and object styless | - |
 | [emotion__is-prop-valid](./e/emotion__is-prop-valid) | A function to check whether a prop is valid for HT | - |
 | [emotion__serialize](./e/emotion__serialize) | serialization utils for emotion | - |
@@ -1789,6 +1786,10 @@
 | [formik](./f/formik) | Forms in React, without tears | formik, react, react-dom, form, validation, forms, higher order component, hoc |
 | [forms](./f/forms) | An easy way to create, parse, and validate forms | - |
 | [formstate](./f/formstate) | Painless and simple MobX form management | - |
+| [fortawesome__fontawesome-](./f/fortawesome__fontawesome-common-types) | The iconic font, CSS, and SVG framework | font, awesome, fontawesome, icon, svg, bootstrap |
+| [fortawesome__fontawesome-](./f/fortawesome__fontawesome-svg-core) | The iconic font, CSS, and SVG framework | font, awesome, fontawesome, icon, svg, bootstrap |
+| [fortawesome__free-solid-s](./f/fortawesome__free-solid-svg-icons) | The iconic font, CSS, and SVG framework | font, awesome, fontawesome, icon, svg, bootstrap |
+| [fortawesome__react-fontaw](./f/fortawesome__react-fontawesome) | Official React component for Font Awesome 5 | - |
 | [forwarded](./f/forwarded) | Parse HTTP X-Forwarded-For header | x-forwarded-for, http, req |
 | [fossil-delta](./f/fossil-delta) | Fossil SCM delta compression | delta, compression, encoding |
 | [foundation](./f/foundation) | You may also want to checkout: | zurb, foundation, stylus, express |
@@ -5086,7 +5087,6 @@
 | [react-mixin](./r/react-mixin) | - | react, mixin, es6, class, smart-mixin |
 | [react-modal](./r/react-modal) | Accessible modal dialog component for React.JS | react, react-component, modal, dialog |
 | [react-monaco-editor](./r/react-monaco-editor) | Monaco Editor for React | monaco, editor, react, vscode |
-| [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager | ui, palantir, react, component, typescript, tiling-window-manager, window-manager |
 | [react-motion](./r/react-motion) | A spring that solves your animation problems. | react, component, react-component, transitiongroup, spring, tween, motion, animation, transition, ui |
 | [react-motion-loop](./r/react-motion-loop) | Looping animation for react-motion Spring | component, react-component, react |
 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion. | react, component, slider, carousel |
@@ -6035,7 +6035,6 @@
 | [store](./s/store) | A localStorage wrapper for all browsers without us | - |
 | [storm-react-diagrams](./s/storm-react-diagrams) | **PSA**: React Diagrams is currently getting a bit | web, diagram, diagrams, react, typescript, flowchart, simple, links, nodes |
 | [storybook-addon-jsx](./s/storybook-addon-jsx) | Display the JSX of the story | - |
-| [storybook-readme](./s/storybook-readme) | Storybook addon to show components README (for Rea | storybook, react-storybook, docs, readme |
 | [storybook__addon-a11y](./s/storybook__addon-a11y) | a11y addon for storybook | a11y, accessibility, addon, storybook, valid, verify |
 | [storybook__addon-actions](./s/storybook__addon-actions) | Action Logger addon for storybook | storybook |
 | [storybook__addon-backgrou](./s/storybook__addon-backgrounds) | A storybook addon to show different backgrounds fo | addon, background, react, storybook |
@@ -6056,7 +6055,6 @@
 | [storybook__react](./s/storybook__react) | Storybook for React: Develop React Component in is | storybook |
 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo | react, react-native, storybook |
 | [storybook__router](./s/storybook__router) | Core Storybook Router | storybook |
-| [storybook__theming](./s/storybook__theming) | Core Storybook Components | storybook |
 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat | storybook |
 | [strange](./s/strange) | Range aka interval object. Supports exclusive and  | range, ranges, interval, interval-tree, bst, integer, integers, sort, bounds, math |
 | [stream-array](./s/stream-array) | Pipe an Array through Node.js streams | array, readable, stream, pipe |

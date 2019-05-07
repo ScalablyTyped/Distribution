@@ -31,7 +31,12 @@ package object buildPdfmakeMod {
     scala.Unit
   ]
   type Margins = scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
-  type TDocumentHeaderFooterFunction = js.Function2[/* currentPage */ scala.Double, /* pageCount */ scala.Double, js.Any]
+  type TDocumentHeaderFooterFunction = js.Function3[
+    /* currentPage */ scala.Double, 
+    /* pageCount */ scala.Double, 
+    /* pageSize */ js.UndefOr[pdfmakeLib.Anon_Height], 
+    js.Any
+  ]
   type TFontFamily = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type TableRowFunction = js.Function1[/* row */ scala.Double, scala.Double]
 }

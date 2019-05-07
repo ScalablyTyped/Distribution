@@ -27,7 +27,7 @@ trait WebpackPluginServeOptions extends js.Object {
   var progress: js.UndefOr[
     scala.Boolean | webpackDashPluginDashServeLib.webpackDashPluginDashServeLibStrings.minimal
   ] = js.undefined
-  var static: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var static: js.UndefOr[java.lang.String | js.Array[java.lang.String] | StaticObject] = js.undefined
   var status: js.UndefOr[scala.Boolean] = js.undefined
   var waitForBuild: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -48,7 +48,7 @@ object WebpackPluginServeOptions {
     open: scala.Boolean | webpackDashPluginDashServeLib.Anon_App = null,
     port: scala.Double | js.Promise[scala.Double] = null,
     progress: scala.Boolean | webpackDashPluginDashServeLib.webpackDashPluginDashServeLibStrings.minimal = null,
-    static: java.lang.String | js.Array[java.lang.String] = null,
+    static: java.lang.String | js.Array[java.lang.String] | StaticObject = null,
     status: js.UndefOr[scala.Boolean] = js.undefined,
     waitForBuild: js.UndefOr[scala.Boolean] = js.undefined
   ): WebpackPluginServeOptions = {

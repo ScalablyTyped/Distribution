@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AntTreeNodeProps
   extends /* customProp */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var checkable: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -29,6 +30,7 @@ object AntTreeNodeProps {
   @scala.inline
   def apply(
     StringDictionary: /* customProp */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    checkable: js.UndefOr[scala.Boolean] = js.undefined,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
@@ -46,6 +48,7 @@ object AntTreeNodeProps {
   ): AntTreeNodeProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(checkable)) __obj.updateDynamic("checkable")(checkable)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

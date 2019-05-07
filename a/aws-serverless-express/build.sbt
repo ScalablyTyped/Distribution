@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-serverless-express"
-version := "3.3-dt-20180912Z-bf122b"
+version := "3.3-dt-20190506Z-4c1d69"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashPgDashMigrateMod {
+  type AddOptions = IfNotExistsOption
   type ColumnDefinitions = org.scalablytyped.runtime.StringDictionary[ColumnDefinition | java.lang.String]
   type CreatePolicyOptions = CreatePolicyOptionsEn with PolicyOptions
   type DomainOptionsAlter = DomainOptionsAlterEn with DomainOptions

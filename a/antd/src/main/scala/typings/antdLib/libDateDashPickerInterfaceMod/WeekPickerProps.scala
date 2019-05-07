@@ -7,14 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait WeekPickerProps
   extends PickerProps
-     with SinglePickerProps {
-  var placeholder: js.UndefOr[java.lang.String] = js.undefined
-}
+     with SinglePickerProps
 
 object WeekPickerProps {
   @scala.inline
   def apply(
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     dateRender: (/* current */ momentLib.momentMod.Moment, /* today */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
     defaultPickerValue: momentLib.momentMod.Moment = null,
@@ -34,7 +33,7 @@ object WeekPickerProps {
     placeholder: java.lang.String = null,
     popupStyle: reactLib.reactMod.CSSProperties = null,
     prefixCls: java.lang.String = null,
-    renderExtraFooter: () => reactLib.reactMod.ReactNode = null,
+    renderExtraFooter: /* mode */ DatePickerMode => reactLib.reactMod.ReactNode = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.CSSProperties = null,
     suffixIcon: reactLib.reactMod.ReactNode = null,
@@ -42,6 +41,7 @@ object WeekPickerProps {
   ): WeekPickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (className != null) __obj.updateDynamic("className")(className)
     if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue)
@@ -61,7 +61,7 @@ object WeekPickerProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction0(renderExtraFooter))
+    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

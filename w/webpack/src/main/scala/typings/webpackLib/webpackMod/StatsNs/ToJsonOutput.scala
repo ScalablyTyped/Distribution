@@ -14,7 +14,7 @@ trait ToJsonOutput extends js.Object {
   ] = js.undefined
   var builtAt: js.UndefOr[scala.Double] = js.undefined
   var children: js.UndefOr[js.Array[ToJsonOptions] with webpackLib.Anon_Name] = js.undefined
-  var chunks: js.UndefOr[webpackLib.Anon_Children] = js.undefined
+  var chunks: js.UndefOr[js.Array[webpackLib.Anon_Children]] = js.undefined
   var entrypoints: js.UndefOr[stdLib.Record[java.lang.String, ChunkGroup]] = js.undefined
   var env: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var errors: js.Array[java.lang.String]
@@ -42,7 +42,7 @@ object ToJsonOutput {
     assetsByChunkName: stdLib.Record[java.lang.String, stdLib.Record[java.lang.String, js.Array[java.lang.String]]] = null,
     builtAt: scala.Int | scala.Double = null,
     children: js.Array[ToJsonOptions] with webpackLib.Anon_Name = null,
-    chunks: webpackLib.Anon_Children = null,
+    chunks: js.Array[webpackLib.Anon_Children] = null,
     entrypoints: stdLib.Record[java.lang.String, ChunkGroup] = null,
     env: stdLib.Record[java.lang.String, _] = null,
     filteredAssets: scala.Int | scala.Double = null,

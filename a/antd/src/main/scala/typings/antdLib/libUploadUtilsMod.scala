@@ -15,6 +15,9 @@ object libUploadUtilsMod extends js.Object {
     file: antdLib.libUploadInterfaceMod.UploadFile,
     fileList: js.Array[antdLib.libUploadInterfaceMod.UploadFile]
   ): antdLib.libUploadInterfaceMod.UploadFile = js.native
+  def isImageUrl(file: antdLib.libUploadInterfaceMod.UploadFile): scala.Boolean = js.native
+  def previewImage(file: stdLib.Blob): js.Promise[java.lang.String] = js.native
+  def previewImage(file: stdLib.File): js.Promise[java.lang.String] = js.native
   def removeFileItem(
     file: antdLib.libUploadInterfaceMod.UploadFile,
     fileList: js.Array[antdLib.libUploadInterfaceMod.UploadFile]

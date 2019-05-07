@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-plugin-serve
 
-Typings are for version 0.7
+Typings are for version 0.10
 
 ## Library description:
 A Development Server in a Webpack Plugin
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for webpack-plugin-serve 0.7
+// Type definitions for webpack-plugin-serve 0.10
 // Project: https://github.com/shellscape/webpack-plugin-serve
 // Definitions by: Matheus Gonçalves da Silva <https://github.com/PlayMa256>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

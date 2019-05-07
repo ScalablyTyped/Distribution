@@ -14,7 +14,7 @@ trait Options extends js.Object {
     *
     * default: disabled
     */
-  var cleanAfterEveryBuildPatterns: js.Array[java.lang.String]
+  var cleanAfterEveryBuildPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * Removes files once prior to Webpack compilation
     *   Not included in rebuilds (watch mode)
@@ -23,13 +23,13 @@ trait Options extends js.Object {
     *
     * default: ['**\/ *']
     */
-  var cleanOnceBeforeBuildPatterns: js.Array[java.lang.String]
+  var cleanOnceBeforeBuildPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * Automatically remove all unused webpack assets on rebuild
     *
     * default: true
     */
-  var cleanStaleWebpackAssets: scala.Boolean
+  var cleanStaleWebpackAssets: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Allow clean patterns outside of process.cwd()
     *
@@ -37,41 +37,47 @@ trait Options extends js.Object {
     *
     * default: false
     */
-  var dangerouslyAllowCleanPatternsOutsideProject: scala.Boolean
+  var dangerouslyAllowCleanPatternsOutsideProject: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Simulate the removal of files
     *
     * default: false
     */
-  var dry: scala.Boolean
+  var dry: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Do not allow removal of current webpack assets
     *
     * default: true
     */
-  var protectWebpackAssets: scala.Boolean
+  var protectWebpackAssets: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Write Logs to Console
     * (Always enabled when dry is true)
     *
     * default: false
     */
-  var verbose: scala.Boolean
+  var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    cleanAfterEveryBuildPatterns: js.Array[java.lang.String],
-    cleanOnceBeforeBuildPatterns: js.Array[java.lang.String],
-    cleanStaleWebpackAssets: scala.Boolean,
-    dangerouslyAllowCleanPatternsOutsideProject: scala.Boolean,
-    dry: scala.Boolean,
-    protectWebpackAssets: scala.Boolean,
-    verbose: scala.Boolean
+    cleanAfterEveryBuildPatterns: js.Array[java.lang.String] = null,
+    cleanOnceBeforeBuildPatterns: js.Array[java.lang.String] = null,
+    cleanStaleWebpackAssets: js.UndefOr[scala.Boolean] = js.undefined,
+    dangerouslyAllowCleanPatternsOutsideProject: js.UndefOr[scala.Boolean] = js.undefined,
+    dry: js.UndefOr[scala.Boolean] = js.undefined,
+    protectWebpackAssets: js.UndefOr[scala.Boolean] = js.undefined,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(cleanAfterEveryBuildPatterns = cleanAfterEveryBuildPatterns, cleanOnceBeforeBuildPatterns = cleanOnceBeforeBuildPatterns, cleanStaleWebpackAssets = cleanStaleWebpackAssets, dangerouslyAllowCleanPatternsOutsideProject = dangerouslyAllowCleanPatternsOutsideProject, dry = dry, protectWebpackAssets = protectWebpackAssets, verbose = verbose)
-  
+    val __obj = js.Dynamic.literal()
+    if (cleanAfterEveryBuildPatterns != null) __obj.updateDynamic("cleanAfterEveryBuildPatterns")(cleanAfterEveryBuildPatterns)
+    if (cleanOnceBeforeBuildPatterns != null) __obj.updateDynamic("cleanOnceBeforeBuildPatterns")(cleanOnceBeforeBuildPatterns)
+    if (!js.isUndefined(cleanStaleWebpackAssets)) __obj.updateDynamic("cleanStaleWebpackAssets")(cleanStaleWebpackAssets)
+    if (!js.isUndefined(dangerouslyAllowCleanPatternsOutsideProject)) __obj.updateDynamic("dangerouslyAllowCleanPatternsOutsideProject")(dangerouslyAllowCleanPatternsOutsideProject)
+    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry)
+    if (!js.isUndefined(protectWebpackAssets)) __obj.updateDynamic("protectWebpackAssets")(protectWebpackAssets)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[Options]
   }
 }

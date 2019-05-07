@@ -15,10 +15,12 @@ object RadioChangeEventTarget {
   @scala.inline
   def apply(
     checked: scala.Boolean,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
     name: java.lang.String = null,
     onChange: RadioChangeEvent => scala.Unit = null,
     onClick: reactLib.reactMod.MouseEventHandler[_] = null,
@@ -32,10 +34,12 @@ object RadioChangeEventTarget {
     value: js.Any = null
   ): RadioChangeEventTarget = {
     val __obj = js.Dynamic.literal(checked = checked)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

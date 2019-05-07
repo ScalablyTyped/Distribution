@@ -20,8 +20,9 @@ object TooltipProps {
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
-    getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
+    destroyTooltipOnHide: js.UndefOr[scala.Boolean] = js.undefined,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
+    getTooltipContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
@@ -45,6 +46,7 @@ object TooltipProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
+    if (!js.isUndefined(destroyTooltipOnHide)) __obj.updateDynamic("destroyTooltipOnHide")(destroyTooltipOnHide)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])

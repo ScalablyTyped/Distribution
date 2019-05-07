@@ -9,9 +9,7 @@ trait ConfigProviderProps extends js.Object {
   var autoInsertSpaceInButton: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var csp: js.UndefOr[CSPConfig] = js.undefined
-  var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
-  ] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var renderEmpty: js.UndefOr[antdLib.libConfigDashProviderRenderEmptyMod.RenderEmptyHandler] = js.undefined
 }
@@ -22,7 +20,7 @@ object ConfigProviderProps {
     autoInsertSpaceInButton: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     csp: CSPConfig = null,
-    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     prefixCls: java.lang.String = null,
     renderEmpty: antdLib.libConfigDashProviderRenderEmptyMod.RenderEmptyHandler = null
   ): ConfigProviderProps = {

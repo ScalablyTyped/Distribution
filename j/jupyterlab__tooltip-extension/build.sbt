@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__tooltip-extension"
-version := "0.19.1-7bdbea"
+version := "0.19.1-dab31f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
-  "org.scalablytyped" %%% "jupyterlab__application" % "0.19.1-4f6557",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-59de28",
+  "org.scalablytyped" %%% "jupyterlab__application" % "0.19.1-8ced9e",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-849884",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "2.2.1-9b35aa",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-93db50",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-ad1a29",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.1.1-a0d67b",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-88b1c4",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-a20bb6",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.2.1-8e146c",
   "org.scalablytyped" %%% "jupyterlab__services" % "3.2.1-a02d4c",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-5c87e1",

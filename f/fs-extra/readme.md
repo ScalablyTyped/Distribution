@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-extra
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
@@ -35,13 +35,14 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for fs-extra 5.0
+// Type definitions for fs-extra 5.1
 // Project: https://github.com/jprichardson/node-fs-extra
 // Definitions by: Alan Agius <https://github.com/alan-agius4>,
 //                 midknight41 <https://github.com/midknight41>,
 //                 Brendan Forster <https://github.com/shiftkey>,
 //                 Mees van Dijk <https://github.com/mees->,
 //                 Justin Rockwood <https://github.com/jrockwood>
+//                 Sang Dang <https://github.com/sangdth>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

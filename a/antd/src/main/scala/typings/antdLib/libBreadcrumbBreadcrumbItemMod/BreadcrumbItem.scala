@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation._
 trait BreadcrumbItem
   extends reactLib.reactMod.Component[BreadcrumbItemProps, js.Any, js.Any] {
   def renderBreadcrumbItem(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
+  /**
+    * if overlay is have
+    * Wrap a DropDown
+    */
+  def renderBreadcrumbNode(breadcrumbItem: reactLib.reactMod.ReactNode, prefixCls: java.lang.String): js.UndefOr[js.Object | scala.Null] = js.native
 }
 

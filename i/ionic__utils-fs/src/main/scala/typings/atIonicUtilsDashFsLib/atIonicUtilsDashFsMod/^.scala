@@ -341,8 +341,27 @@ object ^ extends js.Object {
   def emptyDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def emptyDirSync(path: java.lang.String): scala.Unit = js.native
   def ensureDir(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def ensureDir(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def ensureDir(path: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.EnsureOptions): js.Promise[scala.Unit] = js.native
+  def ensureDir(
+    path: java.lang.String,
+    options: fsDashExtraLib.fsDashExtraMod.EnsureOptions,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
+  ): scala.Unit = js.native
+  def ensureDir(path: java.lang.String, options: scala.Double): js.Promise[scala.Unit] = js.native
+  def ensureDir(
+    path: java.lang.String,
+    options: scala.Double,
+    callback: js.Function1[/* err */ stdLib.Error, scala.Unit]
+  ): scala.Unit = js.native
   def ensureDirSync(path: java.lang.String): scala.Unit = js.native
+  def ensureDirSync(path: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.EnsureOptions): scala.Unit = js.native
+  def ensureDirSync(path: java.lang.String, options: scala.Double): scala.Unit = js.native
+  @JSName("ensureDir")
+  def ensureDir_Unit(path: java.lang.String): scala.Unit = js.native
+  @JSName("ensureDir")
+  def ensureDir_Unit(path: java.lang.String, options: fsDashExtraLib.fsDashExtraMod.EnsureOptions): scala.Unit = js.native
+  @JSName("ensureDir")
+  def ensureDir_Unit(path: java.lang.String, options: scala.Double): scala.Unit = js.native
   def ensureFile(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureFile(path: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def ensureFileSync(path: java.lang.String): scala.Unit = js.native

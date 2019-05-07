@@ -15,14 +15,13 @@ trait Transfer
   ): antdLib.Anon_ItemUnit = js.native
   def getSelectedKeysName(direction: TransferDirection): antdLib.antdLibStrings.sourceSelectedKeys | antdLib.antdLibStrings.targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[java.lang.String] = js.native
-  @JSName("handleClear")
-  def handleClear_left(direction: antdLib.antdLibStrings.left): scala.Unit = js.native
-  @JSName("handleClear")
-  def handleClear_right(direction: antdLib.antdLibStrings.right): scala.Unit = js.native
-  @JSName("handleFilter")
-  def handleFilter_left(direction: antdLib.antdLibStrings.left, e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
-  @JSName("handleFilter")
-  def handleFilter_right(direction: antdLib.antdLibStrings.right, e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
+  def handleClear(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any
+  ): scala.Unit = js.native
+  def handleFilter(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
+    e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]
+  ): scala.Unit = js.native
   def handleLeftClear(): scala.Unit = js.native
   def handleLeftFilter(e: reactLib.reactMod.ChangeEvent[stdLib.HTMLInputElement]): scala.Unit = js.native
   def handleLeftScroll(e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]): scala.Unit = js.native
@@ -33,39 +32,26 @@ trait Transfer
   def handleRightScroll(e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]): scala.Unit = js.native
   def handleRightSelect(selectedItem: TransferItem, checked: scala.Boolean): scala.Unit = js.native
   def handleRightSelectAll(filteredDataSource: js.Array[TransferItem], checkAll: scala.Boolean): scala.Unit = js.native
-  @JSName("handleScroll")
-  def handleScroll_left(
-    direction: antdLib.antdLibStrings.left,
+  def handleScroll(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
     e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]
   ): scala.Unit = js.native
-  @JSName("handleScroll")
-  def handleScroll_right(
-    direction: antdLib.antdLibStrings.right,
-    e: reactLib.reactMod.SyntheticEvent[stdLib.HTMLDivElement, stdLib.Event]
+  def handleSelect(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
+    selectedItem: TransferItem,
+    checked: scala.Boolean
   ): scala.Unit = js.native
-  @JSName("handleSelectAll")
-  def handleSelectAll_left(
-    direction: antdLib.antdLibStrings.left,
-    filteredDataSource: js.Array[TransferItem],
-    checkAll: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("handleSelectAll")
-  def handleSelectAll_right(
-    direction: antdLib.antdLibStrings.right,
+  def handleSelectAll(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
     filteredDataSource: js.Array[TransferItem],
     checkAll: scala.Boolean
   ): scala.Unit = js.native
   def handleSelectChange(direction: TransferDirection, holder: js.Array[java.lang.String]): scala.Unit = js.native
-  @JSName("handleSelect")
-  def handleSelect_left(direction: antdLib.antdLibStrings.left, selectedItem: TransferItem, checked: scala.Boolean): scala.Unit = js.native
-  @JSName("handleSelect")
-  def handleSelect_right(direction: antdLib.antdLibStrings.right, selectedItem: TransferItem, checked: scala.Boolean): scala.Unit = js.native
+  def moveTo(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any
+  ): scala.Unit = js.native
   def moveToLeft(): scala.Unit = js.native
   def moveToRight(): scala.Unit = js.native
-  @JSName("moveTo")
-  def moveTo_left(direction: antdLib.antdLibStrings.left): scala.Unit = js.native
-  @JSName("moveTo")
-  def moveTo_right(direction: antdLib.antdLibStrings.right): scala.Unit = js.native
   def renderTransfer(transferLocale: TransferLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
   def separateDataSource(props: TransferProps): antdLib.Anon_LeftDataSource = js.native
 }

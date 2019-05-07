@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-plugin-serve"
-version := "0.7-dt-20190326Z-095b70"
+version := "0.10-dt-20190506Z-bda5b0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-6e9d70",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-5ac7c3",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-99402a",
+  "org.scalablytyped" %%% "fast-glob" % "2.2.6-e39317",
   "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-8e95e6",
   "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-1adc14",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-b7c6ed",
@@ -29,7 +30,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-98777a",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-32bf87",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190505Z-5e8831")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190506Z-14c287")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

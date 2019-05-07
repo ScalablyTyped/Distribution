@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait DropdownProps extends js.Object {
   var appendTo: js.UndefOr[js.Any] = js.undefined
+  var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
+  var ariaLabelledBy: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var autoWidth: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -42,6 +44,8 @@ object DropdownProps {
   @scala.inline
   def apply(
     appendTo: js.Any = null,
+    ariaLabel: java.lang.String = null,
+    ariaLabelledBy: java.lang.String = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
@@ -74,6 +78,8 @@ object DropdownProps {
   ): DropdownProps = {
     val __obj = js.Dynamic.literal()
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
     if (className != null) __obj.updateDynamic("className")(className)

@@ -15,7 +15,7 @@ trait GetCallerIdentityResponse extends js.Object {
     */
   var Arn: js.UndefOr[arnType] = js.undefined
   /**
-    * The unique identifier of the calling entity. The exact value depends on the type of entity making the call. The values returned are those listed in the aws:userid column in the Principal table found on the Policy Variables reference page in the IAM User Guide.
+    * The unique identifier of the calling entity. The exact value depends on the type of entity that is making the call. The values returned are those listed in the aws:userid column in the Principal table found on the Policy Variables reference page in the IAM User Guide.
     */
   var UserId: js.UndefOr[userIdType] = js.undefined
 }

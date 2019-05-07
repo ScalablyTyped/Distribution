@@ -49,7 +49,7 @@ object AutoCompleteProps {
       /* option */ reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps], 
       _
     ]) = null,
-    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.Element] => stdLib.HTMLElement = null,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     notFoundContent: reactLib.reactMod.ReactNode = null,

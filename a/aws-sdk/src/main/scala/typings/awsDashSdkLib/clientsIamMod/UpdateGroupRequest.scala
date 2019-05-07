@@ -11,7 +11,7 @@ trait UpdateGroupRequest extends js.Object {
     */
   var GroupName: groupNameType
   /**
-    * New name for the IAM group. Only include this if changing the group's name. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+    * New name for the IAM group. Only include this if changing the group's name. IAM user, group, role, and policy names must be unique within the account. Names are not distinguished by case. For example, you cannot create resources named both "MyResource" and "myresource".
     */
   var NewGroupName: js.UndefOr[groupNameType] = js.undefined
   /**

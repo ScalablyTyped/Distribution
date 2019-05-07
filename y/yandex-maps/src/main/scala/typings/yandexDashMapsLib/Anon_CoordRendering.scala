@@ -13,7 +13,7 @@ trait Anon_CoordRendering extends js.Object {
   var pixelRendering: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.jumpy | yandexDashMapsLib.yandexDashMapsLibStrings.static
   ] = js.undefined
-  var projection: js.UndefOr[yandexDashMapsLib.ymapsNs.IProjection] = js.undefined
+  var projection: js.UndefOr[yandexDashMapsLib.yandexDashMapsMod.IProjection] = js.undefined
   var simplification: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -23,7 +23,7 @@ object Anon_CoordRendering {
     coordRendering: yandexDashMapsLib.yandexDashMapsLibStrings.shortestPath | yandexDashMapsLib.yandexDashMapsLibStrings.straightPath = null,
     geodesic: js.UndefOr[scala.Boolean] = js.undefined,
     pixelRendering: yandexDashMapsLib.yandexDashMapsLibStrings.jumpy | yandexDashMapsLib.yandexDashMapsLibStrings.static = null,
-    projection: yandexDashMapsLib.ymapsNs.IProjection = null,
+    projection: yandexDashMapsLib.yandexDashMapsMod.IProjection = null,
     simplification: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CoordRendering = {
     val __obj = js.Dynamic.literal()

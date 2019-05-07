@@ -93,6 +93,7 @@ object pluginsNs extends js.Object {
       * Set to true if you want to end the request with a UnsupportedMediaTypeError when none of the supported content types was given.
       */
     var rejectUnknown: js.UndefOr[scala.Boolean] = js.undefined
+    var requestBodyOnGet: js.UndefOr[scala.Boolean] = js.undefined
     var reviver: js.UndefOr[js.Any] = js.undefined
     /**
       * Where uploaded files are intermediately stored during transfer before the contents is mapped into req.params. Does nothing if multipartFileHandler is defined.

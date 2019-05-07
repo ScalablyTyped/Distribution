@@ -30,9 +30,7 @@ trait CascaderProps extends js.Object {
   var fieldNames: js.UndefOr[FieldNamesType] = js.undefined
   /** typo props name before antd@3.7.0 */
   var filedNames: js.UndefOr[FieldNamesType] = js.undefined
-  var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
-  ] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var inputPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var loadData: js.UndefOr[
     js.Function1[/* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], scala.Unit]
@@ -81,7 +79,7 @@ object CascaderProps {
     expandTrigger: CascaderExpandTrigger = null,
     fieldNames: FieldNamesType = null,
     filedNames: FieldNamesType = null,
-    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     inputPrefixCls: java.lang.String = null,
     loadData: /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]] => scala.Unit = null,
     notFoundContent: reactLib.reactMod.ReactNode = null,

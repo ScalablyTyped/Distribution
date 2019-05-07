@@ -14,6 +14,7 @@ trait Carousel
   def componentDidMount_MCarousel(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MCarousel(): scala.Unit = js.native
+  def getDotPosition(): DotPosition = js.native
   def goTo(slide: scala.Double): scala.Unit = js.native
   def goTo(slide: scala.Double, dontAnimate: scala.Boolean): scala.Unit = js.native
   def next(): scala.Unit = js.native

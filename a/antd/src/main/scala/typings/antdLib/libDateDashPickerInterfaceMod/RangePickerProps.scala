@@ -40,8 +40,10 @@ trait RangePickerProps extends PickerProps {
   ] = js.undefined
   var placeholder: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var ranges: js.UndefOr[org.scalablytyped.runtime.StringDictionary[RangePickerPresetRange]] = js.undefined
+  var renderExtraFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNode]] = js.undefined
   var separator: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
+  var showToday: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[RangePickerValue] = js.undefined
 }
 
@@ -49,6 +51,7 @@ object RangePickerProps {
   @scala.inline
   def apply(
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     dateRender: (/* current */ momentLib.momentMod.Moment, /* today */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
     defaultPickerValue: RangePickerValue = null,
@@ -77,6 +80,7 @@ object RangePickerProps {
     renderExtraFooter: () => reactLib.reactMod.ReactNode = null,
     separator: reactLib.reactMod.ReactNode = null,
     showTime: antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean = null,
+    showToday: js.UndefOr[scala.Boolean] = js.undefined,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.CSSProperties = null,
     suffixIcon: reactLib.reactMod.ReactNode = null,
@@ -84,6 +88,7 @@ object RangePickerProps {
   ): RangePickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (className != null) __obj.updateDynamic("className")(className)
     if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
@@ -112,6 +117,7 @@ object RangePickerProps {
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction0(renderExtraFooter))
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])

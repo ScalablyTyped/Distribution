@@ -12,11 +12,13 @@ trait CheckboxProps extends AbstractCheckboxProps[CheckboxChangeEvent] {
 object CheckboxProps {
   @scala.inline
   def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
     indeterminate: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     onChange: CheckboxChangeEvent => scala.Unit = null,
@@ -31,11 +33,13 @@ object CheckboxProps {
     value: js.Any = null
   ): CheckboxProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-fileupload
 
-Typings are for version 0.4
+Typings are for version 1.1
 
 ## Library description:
 Simple express file upload middleware that wraps around Busboy
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for express-fileupload 0.4
+// Type definitions for express-fileupload 1.1
 // Project: https://github.com/richardgirges/express-fileupload#readme
 // Definitions by: Gintautas Miselis <https://github.com/Naktibalda>
 //                 Sefa Ilkimen <https://github.com/silkimen>
+//                 Tomas Vosicky <https://github.com/vosatom>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Layout extends js.Object {
   var layout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout]
   ] = js.undefined
   var selectOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var selectableLayout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout]
   ] = js.undefined
   var separatorLayout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout]
   ] = js.undefined
   var `type`: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.selectable | yandexDashMapsLib.yandexDashMapsLibStrings.separator
@@ -25,10 +25,10 @@ trait Anon_Layout extends js.Object {
 object Anon_Layout {
   @scala.inline
   def apply(
-    layout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout] = null,
+    layout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout] = null,
     selectOnClick: js.UndefOr[scala.Boolean] = js.undefined,
-    selectableLayout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout] = null,
-    separatorLayout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISelectableControlLayout] = null,
+    selectableLayout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout] = null,
+    separatorLayout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout] = null,
     `type`: yandexDashMapsLib.yandexDashMapsLibStrings.selectable | yandexDashMapsLib.yandexDashMapsLibStrings.separator = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Layout = {

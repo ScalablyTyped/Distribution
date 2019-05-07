@@ -10,7 +10,7 @@ trait Anon_CancelButtonDisabled extends js.Object {
   var confirmLoading: scala.Boolean
   var maskTransitionName: java.lang.String
   var okButtonDisabled: scala.Boolean
-  var okType: antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger
+  var okType: antdLib.antdLibStrings.link | antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger
   var transitionName: java.lang.String
   var visible: scala.Boolean
   var width: scala.Double
@@ -23,7 +23,7 @@ object Anon_CancelButtonDisabled {
     confirmLoading: scala.Boolean,
     maskTransitionName: java.lang.String,
     okButtonDisabled: scala.Boolean,
-    okType: antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger,
+    okType: antdLib.antdLibStrings.link | antdLib.antdLibStrings.default | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.primary | antdLib.antdLibStrings.ghost | antdLib.antdLibStrings.danger,
     transitionName: java.lang.String,
     visible: scala.Boolean,
     width: scala.Double

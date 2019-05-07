@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-foundation"
-version := "0.9-dt-20190212Z-296a09"
+version := "0.9-dt-20190212Z-23e7e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

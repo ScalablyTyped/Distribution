@@ -18,6 +18,7 @@ trait PutConfigurationAggregatorRequest extends js.Object {
     * An OrganizationAggregationSource object.
     */
   var OrganizationAggregationSource: js.UndefOr[OrganizationAggregationSource] = js.undefined
+  var Tags: js.UndefOr[TagsList] = js.undefined
 }
 
 object PutConfigurationAggregatorRequest {
@@ -25,11 +26,13 @@ object PutConfigurationAggregatorRequest {
   def apply(
     ConfigurationAggregatorName: ConfigurationAggregatorName,
     AccountAggregationSources: AccountAggregationSourceList = null,
-    OrganizationAggregationSource: OrganizationAggregationSource = null
+    OrganizationAggregationSource: OrganizationAggregationSource = null,
+    Tags: TagsList = null
   ): PutConfigurationAggregatorRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName)
     if (AccountAggregationSources != null) __obj.updateDynamic("AccountAggregationSources")(AccountAggregationSources)
     if (OrganizationAggregationSource != null) __obj.updateDynamic("OrganizationAggregationSource")(OrganizationAggregationSource)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[PutConfigurationAggregatorRequest]
   }
 }

@@ -25,7 +25,7 @@ trait Upload
   def componentWillUnmount_MUpload(): scala.Unit = js.native
   def handleManualRemove(file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native
   def handleRemove(file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native
-  def onChange(info: antdLib.libUploadInterfaceMod.UploadChangeParam): scala.Unit = js.native
+  def onChange(info: antdLib.libUploadInterfaceMod.UploadChangeParam[antdLib.libUploadInterfaceMod.UploadFile]): scala.Unit = js.native
   def onError(error: stdLib.Error, response: js.Any, file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native
   def onFileDrop(e: reactLib.reactMod.DragEvent[stdLib.HTMLDivElement]): scala.Unit = js.native
   def onProgress(e: antdLib.Anon_Percent, file: antdLib.libUploadInterfaceMod.UploadFile): scala.Unit = js.native

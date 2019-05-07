@@ -20,7 +20,6 @@ trait DatePickerProps
       scala.Unit
     ]
   ] = js.undefined
-  var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
   var showToday: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -29,6 +28,7 @@ object DatePickerProps {
   @scala.inline
   def apply(
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     dateRender: (/* current */ momentLib.momentMod.Moment, /* today */ momentLib.momentMod.Moment) => reactLib.reactMod.ReactNode = null,
     defaultPickerValue: momentLib.momentMod.Moment = null,
@@ -52,7 +52,7 @@ object DatePickerProps {
     placeholder: java.lang.String = null,
     popupStyle: reactLib.reactMod.CSSProperties = null,
     prefixCls: java.lang.String = null,
-    renderExtraFooter: () => reactLib.reactMod.ReactNode = null,
+    renderExtraFooter: /* mode */ DatePickerMode => reactLib.reactMod.ReactNode = null,
     showTime: antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean = null,
     showToday: js.UndefOr[scala.Boolean] = js.undefined,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
@@ -62,6 +62,7 @@ object DatePickerProps {
   ): DatePickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (className != null) __obj.updateDynamic("className")(className)
     if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2(dateRender))
     if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue)
@@ -85,7 +86,7 @@ object DatePickerProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction0(renderExtraFooter))
+    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

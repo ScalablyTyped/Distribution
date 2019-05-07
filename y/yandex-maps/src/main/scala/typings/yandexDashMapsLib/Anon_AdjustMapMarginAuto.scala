@@ -14,13 +14,13 @@ trait Anon_AdjustMapMarginAuto extends js.Object {
   ] = js.undefined
   var floatIndex: js.UndefOr[scala.Double] = js.undefined
   var formLayout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ILayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout]
   ] = js.undefined
   var kind: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.house | yandexDashMapsLib.yandexDashMapsLibStrings.street | yandexDashMapsLib.yandexDashMapsLibStrings.metro | yandexDashMapsLib.yandexDashMapsLibStrings.district | yandexDashMapsLib.yandexDashMapsLibStrings.locality
   ] = js.undefined
   var layout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISearchControlLayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISearchControlLayout]
   ] = js.undefined
   var maxWidth: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
   var noCentering: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,14 +30,14 @@ trait Anon_AdjustMapMarginAuto extends js.Object {
   var noSuggestPanel: js.UndefOr[scala.Boolean] = js.undefined
   var placeholderContent: js.UndefOr[java.lang.String] = js.undefined
   var popupItemLayout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ILayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout]
   ] = js.undefined
   var popupLayout: js.UndefOr[
-    java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ILayout]
+    java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout]
   ] = js.undefined
   var position: js.UndefOr[Anon_Bottom] = js.undefined
   var provider: js.UndefOr[
-    yandexDashMapsLib.ymapsNs.IGeocodeProvider | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#map` | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#search`
+    yandexDashMapsLib.yandexDashMapsMod.IGeocodeProvider | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#map` | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#search`
   ] = js.undefined
   var searchCoordOrder: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.latlong | yandexDashMapsLib.yandexDashMapsLibStrings.longlat
@@ -60,9 +60,9 @@ object Anon_AdjustMapMarginAuto {
     fitMaxWidth: js.UndefOr[scala.Boolean] = js.undefined,
     float: yandexDashMapsLib.yandexDashMapsLibStrings.none | yandexDashMapsLib.yandexDashMapsLibStrings.left | yandexDashMapsLib.yandexDashMapsLibStrings.right = null,
     floatIndex: scala.Int | scala.Double = null,
-    formLayout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ILayout] = null,
+    formLayout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout] = null,
     kind: yandexDashMapsLib.yandexDashMapsLibStrings.house | yandexDashMapsLib.yandexDashMapsLibStrings.street | yandexDashMapsLib.yandexDashMapsLibStrings.metro | yandexDashMapsLib.yandexDashMapsLibStrings.district | yandexDashMapsLib.yandexDashMapsLibStrings.locality = null,
-    layout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ISearchControlLayout] = null,
+    layout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISearchControlLayout] = null,
     maxWidth: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
     noCentering: js.UndefOr[scala.Boolean] = js.undefined,
     noPlacemark: js.UndefOr[scala.Boolean] = js.undefined,
@@ -70,10 +70,10 @@ object Anon_AdjustMapMarginAuto {
     noSelect: js.UndefOr[scala.Boolean] = js.undefined,
     noSuggestPanel: js.UndefOr[scala.Boolean] = js.undefined,
     placeholderContent: java.lang.String = null,
-    popupItemLayout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ILayout] = null,
-    popupLayout: java.lang.String | yandexDashMapsLib.ymapsNs.IClassConstructor[yandexDashMapsLib.ymapsNs.ILayout] = null,
+    popupItemLayout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout] = null,
+    popupLayout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout] = null,
     position: Anon_Bottom = null,
-    provider: yandexDashMapsLib.ymapsNs.IGeocodeProvider | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#map` | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#search` = null,
+    provider: yandexDashMapsLib.yandexDashMapsMod.IGeocodeProvider | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#map` | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#search` = null,
     searchCoordOrder: yandexDashMapsLib.yandexDashMapsLibStrings.latlong | yandexDashMapsLib.yandexDashMapsLibStrings.longlat = null,
     size: yandexDashMapsLib.yandexDashMapsLibStrings.auto | yandexDashMapsLib.yandexDashMapsLibStrings.small | yandexDashMapsLib.yandexDashMapsLibStrings.medium | yandexDashMapsLib.yandexDashMapsLibStrings.large = null,
     strictBounds: js.UndefOr[scala.Boolean] = js.undefined,

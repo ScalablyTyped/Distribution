@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPushDashNotificationLibStrings {
   @js.native
+  sealed trait alert extends js.Object
+  
+  @js.native
+  sealed trait badge extends js.Object
+  
+  @js.native
   sealed trait day
     extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
@@ -39,6 +45,9 @@ object reactDashNativeDashPushDashNotificationLibStrings {
     extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
   @js.native
+  sealed trait sound extends js.Object
+  
+  @js.native
   sealed trait time
     extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
@@ -46,6 +55,10 @@ object reactDashNativeDashPushDashNotificationLibStrings {
   sealed trait week
     extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
+  @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
+  @scala.inline
+  def badge: badge = "badge".asInstanceOf[badge]
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
@@ -62,6 +75,8 @@ object reactDashNativeDashPushDashNotificationLibStrings {
   def min: min = "min".asInstanceOf[min]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
+  @scala.inline
+  def sound: sound = "sound".asInstanceOf[sound]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline

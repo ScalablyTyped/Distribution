@@ -78,6 +78,7 @@ These comments are from the typescript definitions and might be useful:
 /**
  * Prints hosting instructions after the project is built.
  */
+/** This is an alternative client for WebpackDevServer that shows a syntax error overlay. */
 
 ```
 

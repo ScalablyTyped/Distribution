@@ -13,10 +13,9 @@ trait AbstractTooltipProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
-  var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
-  ] = js.undefined
-  var getTooltipContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.Element, stdLib.HTMLElement]] = js.undefined
+  var destroyTooltipOnHide: js.UndefOr[scala.Boolean] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
+  var getTooltipContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined
@@ -41,8 +40,9 @@ object AbstractTooltipProps {
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
-    getTooltipContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
+    destroyTooltipOnHide: js.UndefOr[scala.Boolean] = js.undefined,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
+    getTooltipContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
     onVisibleChange: /* visible */ scala.Boolean => scala.Unit = null,
@@ -64,6 +64,7 @@ object AbstractTooltipProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
+    if (!js.isUndefined(destroyTooltipOnHide)) __obj.updateDynamic("destroyTooltipOnHide")(destroyTooltipOnHide)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (getTooltipContainer != null) __obj.updateDynamic("getTooltipContainer")(js.Any.fromFunction1(getTooltipContainer))
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])

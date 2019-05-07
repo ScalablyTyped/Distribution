@@ -24,11 +24,12 @@ trait UploadProps extends js.Object {
   var locale: js.UndefOr[UploadLocale] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile], scala.Unit]] = js.undefined
   var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile, scala.Unit]] = js.undefined
   var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile, scala.Unit | scala.Boolean]] = js.undefined
   var openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
+  var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
   var showUploadList: js.UndefOr[scala.Boolean | ShowUploadListInterface] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var supportServerRender: js.UndefOr[scala.Boolean] = js.undefined
@@ -55,11 +56,12 @@ object UploadProps {
     locale: UploadLocale = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
-    onChange: /* info */ UploadChangeParam => scala.Unit = null,
+    onChange: /* info */ UploadChangeParam[UploadFile] => scala.Unit = null,
     onPreview: /* file */ UploadFile => scala.Unit = null,
     onRemove: /* file */ UploadFile => scala.Unit | scala.Boolean = null,
     openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
+    previewFile: PreviewFileHandler = null,
     showUploadList: scala.Boolean | ShowUploadListInterface = null,
     style: reactLib.reactMod.CSSProperties = null,
     supportServerRender: js.UndefOr[scala.Boolean] = js.undefined,
@@ -88,6 +90,7 @@ object UploadProps {
     if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1(onRemove))
     if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (previewFile != null) __obj.updateDynamic("previewFile")(previewFile)
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender)

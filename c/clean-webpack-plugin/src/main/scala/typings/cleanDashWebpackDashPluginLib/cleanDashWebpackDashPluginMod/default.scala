@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("clean-webpack-plugin", JSImport.Default)
 @js.native
 class default () extends CleanWebpackPlugin {
-  def this(options: stdLib.Partial[Options]) = this()
+  def this(options: Options) = this()
   /* CompleteClass */
   override val cleanAfterEveryBuildPatterns: js.Any = js.native
   /* CompleteClass */

@@ -12,9 +12,13 @@ import scala.scalajs.js.annotation._
   var children: js.UndefOr[js.Any] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.Element, stdLib.HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var htmlType: js.UndefOr[antdLib.libButtonButtonMod.ButtonHTMLType] = js.undefined
+  /**
+    * @since 3.17.0
+    */
+  var icon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mouseEnterDelay: js.UndefOr[scala.Double] = js.undefined
   var mouseLeaveDelay: js.UndefOr[scala.Double] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement]] = js.undefined
@@ -43,9 +47,10 @@ object DropdownButtonProps {
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     href: java.lang.String = null,
     htmlType: antdLib.libButtonButtonMod.ButtonHTMLType = null,
+    icon: reactLib.reactMod.ReactNode = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
     onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLButtonElement] = null,
@@ -73,6 +78,7 @@ object DropdownButtonProps {
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (href != null) __obj.updateDynamic("href")(href)
     if (htmlType != null) __obj.updateDynamic("htmlType")(htmlType)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

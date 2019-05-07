@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-fileupload"
-version := "0.4-dt-20181121Z-59fc39"
+version := "1.1-dt-20190506Z-cea1be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

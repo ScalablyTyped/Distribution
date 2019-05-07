@@ -11,6 +11,7 @@ trait FormItemProps extends js.Object {
   var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var hasFeedback: js.UndefOr[scala.Boolean] = js.undefined
   var help: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var htmlFor: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
@@ -32,6 +33,7 @@ object FormItemProps {
     extra: reactLib.reactMod.ReactNode = null,
     hasFeedback: js.UndefOr[scala.Boolean] = js.undefined,
     help: reactLib.reactMod.ReactNode = null,
+    htmlFor: java.lang.String = null,
     id: java.lang.String = null,
     label: reactLib.reactMod.ReactNode = null,
     labelAlign: FormLabelAlign = null,
@@ -48,6 +50,7 @@ object FormItemProps {
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (!js.isUndefined(hasFeedback)) __obj.updateDynamic("hasFeedback")(hasFeedback)
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
+    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)

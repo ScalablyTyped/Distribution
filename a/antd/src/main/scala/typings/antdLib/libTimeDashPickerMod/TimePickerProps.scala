@@ -26,7 +26,7 @@ trait TimePickerProps extends js.Object {
   ] = js.undefined
   var focusOnOpen: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.Element, stdLib.HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined
   var hourStep: js.UndefOr[scala.Double] = js.undefined
   var inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined
@@ -71,7 +71,7 @@ object TimePickerProps {
     disabledSeconds: (/* selectedHour */ scala.Double, /* selectedMinute */ scala.Double) => js.Array[scala.Double] = null,
     focusOnOpen: js.UndefOr[scala.Boolean] = js.undefined,
     format: java.lang.String = null,
-    getPopupContainer: /* triggerNode */ stdLib.Element => stdLib.HTMLElement = null,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined,
     hourStep: scala.Int | scala.Double = null,
     inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined,

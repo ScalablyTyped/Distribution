@@ -16,9 +16,6 @@ import scala.scalajs.js.annotation._
 trait Client extends js.Object {
   def _setWindowSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def acceptAlert(): scala.Unit = js.native
-  def activateApp(): scala.Unit = js.native
-  def activateApp(appId: java.lang.String): scala.Unit = js.native
-  def activateApp(appId: java.lang.String, bundleId: java.lang.String): scala.Unit = js.native
   def activateIME(engine: java.lang.String): scala.Unit = js.native
   def addCookie(cookie: js.Object): scala.Unit = js.native
   def assertPerformance(name: java.lang.String): scala.Boolean = js.native
@@ -75,8 +72,6 @@ trait Client extends js.Object {
   def getAllCookies(): js.Array[js.Object] = js.native
   def getApplicationCacheStatus(): scala.Double = js.native
   def getAvailableEngines(): js.Array[java.lang.String] = js.native
-  def getClipboard(): java.lang.String = js.native
-  def getClipboard(contentType: java.lang.String): java.lang.String = js.native
   def getContext(): java.lang.String | scala.Null = js.native
   def getContexts(): js.Array[java.lang.String] = js.native
   def getCurrentActivity(): scala.Unit = js.native
@@ -110,7 +105,6 @@ trait Client extends js.Object {
   def getPageSource(): java.lang.String = js.native
   @JSName("getPageSource")
   def getPageSource_Unit(): scala.Unit = js.native
-  def getPerformanceData(packageName: java.lang.String, dataType: java.lang.String): scala.Unit = js.native
   def getPerformanceData(packageName: java.lang.String, dataType: java.lang.String, dataReadTimeout: scala.Double): scala.Unit = js.native
   def getPerformanceDataTypes(): scala.Unit = js.native
   def getSession(): js.Object = js.native
@@ -119,8 +113,6 @@ trait Client extends js.Object {
   def getSessionStorageSize(): scala.Double = js.native
   def getSessions(): js.Array[js.Object] = js.native
   def getSettings(): scala.Unit = js.native
-  def getStrings(): scala.Unit = js.native
-  def getStrings(language: java.lang.String): scala.Unit = js.native
   def getStrings(language: java.lang.String, stringFile: java.lang.String): scala.Unit = js.native
   def getSystemBars(): scala.Unit = js.native
   def getTimeouts(): js.Object = js.native
@@ -134,13 +126,8 @@ trait Client extends js.Object {
   def getWindowRect(): js.Object = js.native
   def getWindowSize(): js.Object = js.native
   def gsmCall(phoneNumber: java.lang.String, action: java.lang.String): scala.Unit = js.native
-  def gsmSignal(signalStrength: java.lang.String): scala.Unit = js.native
   def gsmSignal(signalStrength: java.lang.String, signalStrengh: java.lang.String): scala.Unit = js.native
   def gsmVoice(state: java.lang.String): scala.Unit = js.native
-  def hideKeyboard(): scala.Unit = js.native
-  def hideKeyboard(strategy: java.lang.String): scala.Unit = js.native
-  def hideKeyboard(strategy: java.lang.String, key: java.lang.String): scala.Unit = js.native
-  def hideKeyboard(strategy: java.lang.String, key: java.lang.String, keyCode: java.lang.String): scala.Unit = js.native
   def hideKeyboard(
     strategy: java.lang.String,
     key: java.lang.String,
@@ -150,9 +137,7 @@ trait Client extends js.Object {
   def installApp(appPath: java.lang.String): scala.Unit = js.native
   def interceptRequest(rule: js.Object): scala.Unit = js.native
   def isAlertOpen(): scala.Boolean = js.native
-  def isAppInstalled(): scala.Boolean = js.native
-  def isAppInstalled(appId: java.lang.String): scala.Boolean = js.native
-  def isAppInstalled(appId: java.lang.String, bundleId: java.lang.String): scala.Boolean = js.native
+  def isAppInstalled(bundleId: java.lang.String): scala.Unit = js.native
   def isAutoReporting(): scala.Boolean = js.native
   def isElementDisplayed(): scala.Boolean = js.native
   def isElementEnabled(): scala.Boolean = js.native
@@ -163,11 +148,8 @@ trait Client extends js.Object {
   def isLocked(): scala.Unit = js.native
   def launchApp(): scala.Unit = js.native
   def launchApp(id: java.lang.String): scala.Unit = js.native
-  def lock(): scala.Unit = js.native
   def lock(seconds: scala.Double): scala.Unit = js.native
-  def longPressKeyCode(keycode: scala.Double): scala.Unit = js.native
   def longPressKeyCode(keycode: scala.Double, metastate: scala.Double): scala.Unit = js.native
-  def longPressKeyCode(keycode: scala.Double, metastate: scala.Double, flags: scala.Double): scala.Unit = js.native
   def maximizeWindow(): js.Object = js.native
   @JSName("maximizeWindow")
   def maximizeWindow_Unit(): scala.Unit = js.native
@@ -190,35 +172,18 @@ trait Client extends js.Object {
   def positionClick(): scala.Unit = js.native
   def positionClick(button: scala.Double): scala.Unit = js.native
   def positionDoubleClick(): scala.Unit = js.native
-  def powerAC(state: java.lang.String): scala.Unit = js.native
-  def powerCapacity(percent: scala.Double): scala.Unit = js.native
-  def pressKeyCode(keycode: scala.Double): scala.Unit = js.native
   def pressKeyCode(keycode: scala.Double, metastate: scala.Double): scala.Unit = js.native
-  def pressKeyCode(keycode: scala.Double, metastate: scala.Double, flags: scala.Double): scala.Unit = js.native
   def pullFile(path: java.lang.String): scala.Unit = js.native
   def pullFolder(path: java.lang.String): scala.Unit = js.native
   def pushFile(path: java.lang.String, data: java.lang.String): scala.Unit = js.native
-  def queryAppState(): scala.Double = js.native
-  def queryAppState(appId: java.lang.String): scala.Double = js.native
-  def queryAppState(appId: java.lang.String, bundleId: java.lang.String): scala.Double = js.native
   def receiveAsyncResponse(response: js.Object): scala.Unit = js.native
   def receiveAsyncResponse(status: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def refresh(): scala.Unit = js.native
   def releaseActions(): scala.Unit = js.native
-  def removeApp(): scala.Unit = js.native
-  def removeApp(appId: java.lang.String): scala.Unit = js.native
-  def removeApp(appId: java.lang.String, bundleId: java.lang.String): scala.Unit = js.native
+  def removeApp(appId: js.Array[java.lang.String], bundleId: js.Array[java.lang.String]): scala.Unit = js.native
   def replaceValue(value: java.lang.String): scala.Unit = js.native
   def reset(): scala.Unit = js.native
   def resume(): scala.Unit = js.native
-  def rotateDevice(
-    x: scala.Double,
-    y: scala.Double,
-    radius: scala.Double,
-    rotation: scala.Double,
-    touchCount: scala.Double,
-    duration: scala.Double
-  ): scala.Unit = js.native
   def rotateDevice(
     x: scala.Double,
     y: scala.Double,
@@ -231,15 +196,11 @@ trait Client extends js.Object {
   def sendAlertText(text: java.lang.String): scala.Unit = js.native
   def sendCommand(cmd: java.lang.String, params: js.Object): scala.Unit = js.native
   def sendCommandAndGetResult(cmd: java.lang.String, params: js.Object): js.Any = js.native
-  def sendKeyEvent(keycode: java.lang.String): scala.Unit = js.native
   def sendKeyEvent(keycode: java.lang.String, metastate: java.lang.String): scala.Unit = js.native
   def sendKeys(value: js.Array[java.lang.String]): scala.Unit = js.native
   def sendSms(phoneNumber: java.lang.String, message: java.lang.String): scala.Unit = js.native
   def setAsyncTimeout(ms: scala.Double): scala.Unit = js.native
   def setAutoReporting(enabled: scala.Boolean): js.Object | scala.Null = js.native
-  def setClipboard(content: java.lang.String): java.lang.String = js.native
-  def setClipboard(content: java.lang.String, contentType: java.lang.String): java.lang.String = js.native
-  def setClipboard(content: java.lang.String, contentType: java.lang.String, label: java.lang.String): java.lang.String = js.native
   def setGeoLocation(location: js.Object): scala.Unit = js.native
   def setImplicitTimeout(ms: scala.Double): scala.Unit = js.native
   def setLocalStorage(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
@@ -247,7 +208,7 @@ trait Client extends js.Object {
   def setNetworkConditions(network_conditions: js.Object, network_name: java.lang.String): scala.Unit = js.native
   def setNetworkConnection(parameters: js.Object): scala.Double = js.native
   def setNetworkConnection(`type`: scala.Double): scala.Unit = js.native
-  def setOrientation(orientation: java.lang.String): scala.Unit = js.native
+  def setOrientation(engine: java.lang.String): scala.Unit = js.native
   def setSessionStorage(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def setTimeouts(): scala.Unit = js.native
   def setTimeouts(`implicit`: scala.Double): scala.Unit = js.native
@@ -277,13 +238,13 @@ trait Client extends js.Object {
   def startActivity(
     appPackage: java.lang.String,
     appActivity: java.lang.String,
-    appWaitPackage: js.UndefOr[java.lang.String],
-    appWaitActivity: js.UndefOr[java.lang.String],
-    intentAction: js.UndefOr[java.lang.String],
-    intentCategory: js.UndefOr[java.lang.String],
-    intentFlags: js.UndefOr[java.lang.String],
-    optionalIntentArguments: js.UndefOr[java.lang.String],
-    dontStopAppOnReset: js.UndefOr[java.lang.String]
+    appWaitPackage: java.lang.String,
+    appWaitActivity: java.lang.String,
+    intentAction: java.lang.String,
+    intentCategory: java.lang.String,
+    intentFlags: java.lang.String,
+    optionalIntentArguments: java.lang.String,
+    dontStopAppOnReset: java.lang.String
   ): scala.Unit = js.native
   def startRecordingScreen(
     remotePath: js.UndefOr[java.lang.String],
@@ -321,35 +282,32 @@ trait Client extends js.Object {
   def takeElementScreenshot(scroll: scala.Boolean): java.lang.String = js.native
   def takeHeapSnapshot(): js.Object = js.native
   def takeScreenshot(): java.lang.String = js.native
-  def terminateApp(): scala.Unit = js.native
-  def terminateApp(appId: java.lang.String): scala.Unit = js.native
-  def terminateApp(appId: java.lang.String, bundleId: java.lang.String): scala.Unit = js.native
   def throttleNetwork(condition: java.lang.String): scala.Unit = js.native
   def throttleNetwork(condition: js.Object): scala.Unit = js.native
   def toggleAirplaneMode(): scala.Unit = js.native
   def toggleData(): scala.Unit = js.native
-  def toggleEnrollTouchId(): scala.Unit = js.native
   def toggleEnrollTouchId(enabled: scala.Boolean): scala.Unit = js.native
   def toggleLocationServices(): scala.Unit = js.native
   def toggleWiFi(): scala.Unit = js.native
   def touchClick(element: java.lang.String): scala.Unit = js.native
   def touchDoubleClick(element: java.lang.String): scala.Unit = js.native
+  def touchDown(): scala.Unit = js.native
+  def touchDown(x: scala.Double): scala.Unit = js.native
   def touchDown(x: scala.Double, y: scala.Double): scala.Unit = js.native
-  def touchFlick(
-    xoffset: js.UndefOr[scala.Double],
-    yoffset: js.UndefOr[scala.Double],
-    element: js.UndefOr[java.lang.String],
-    speed: js.UndefOr[scala.Double],
-    xspeed: js.UndefOr[scala.Double],
-    yspeed: js.UndefOr[scala.Double]
-  ): scala.Unit = js.native
+  def touchFlick(xoffset: scala.Double, yoffset: scala.Double): scala.Unit = js.native
+  def touchFlick(xoffset: scala.Double, yoffset: scala.Double, element: java.lang.String): scala.Unit = js.native
+  def touchFlick(xoffset: scala.Double, yoffset: scala.Double, element: java.lang.String, speed: scala.Double): scala.Unit = js.native
   def touchId(`match`: scala.Boolean): scala.Unit = js.native
   def touchLongClick(element: java.lang.String): scala.Unit = js.native
+  def touchMove(): scala.Unit = js.native
+  def touchMove(x: scala.Double): scala.Unit = js.native
   def touchMove(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def touchPerform(actions: js.Array[js.Object]): scala.Unit = js.native
   def touchPinch(x: scala.Double, y: scala.Double, scale: scala.Double): scala.Unit = js.native
   def touchScroll(xoffset: scala.Double, yoffset: scala.Double): scala.Unit = js.native
   def touchScroll(xoffset: scala.Double, yoffset: scala.Double, element: java.lang.String): scala.Unit = js.native
+  def touchUp(): scala.Unit = js.native
+  def touchUp(x: scala.Double): scala.Unit = js.native
   def touchUp(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def unlock(): scala.Unit = js.native
   def updateSettings(settings: js.Object): scala.Unit = js.native

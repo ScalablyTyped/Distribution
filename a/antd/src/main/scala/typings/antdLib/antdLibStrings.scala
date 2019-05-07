@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT16DOT6` extends js.Object
+  sealed trait `3DOT17DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -228,7 +228,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait bottom
-    extends antdLib.libMentionMod.MentionPlacement
+    extends antdLib.libCarouselMod.DotPosition
+       with antdLib.libMentionMod.MentionPlacement
        with antdLib.libTabsMod.TabsPosition
        with antdLib.libTooltipMod.TooltipPlacement
   
@@ -318,6 +319,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait checkmenuitem extends js.Object
+  
+  @js.native
+  sealed trait children extends js.Object
   
   @js.native
   sealed trait circle extends js.Object
@@ -670,7 +674,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait left
-    extends antdLib.libFormFormItemMod.FormLabelAlign
+    extends antdLib.libCarouselMod.DotPosition
+       with antdLib.libCollapseCollapseMod.ExpandIconPosition
+       with antdLib.libFormFormItemMod.FormLabelAlign
        with antdLib.libTabsMod.TabsPosition
        with antdLib.libTooltipMod.TooltipPlacement
        with antdLib.libTransferMod.TransferDirection
@@ -705,6 +711,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait linearRGB extends js.Object
+  
+  @js.native
+  sealed trait link extends js.Object
   
   @js.native
   sealed trait listbox extends js.Object
@@ -1126,7 +1135,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait right
-    extends antdLib.libFormFormItemMod.FormLabelAlign
+    extends antdLib.libCarouselMod.DotPosition
+       with antdLib.libCollapseCollapseMod.ExpandIconPosition
+       with antdLib.libFormFormItemMod.FormLabelAlign
        with antdLib.libTabsMod.TabsPosition
        with antdLib.libTooltipMod.TooltipPlacement
        with antdLib.libTransferMod.TransferDirection
@@ -1477,7 +1488,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait top
-    extends antdLib.libMentionMod.MentionPlacement
+    extends antdLib.libCarouselMod.DotPosition
+       with antdLib.libMentionMod.MentionPlacement
        with antdLib.libTabsMod.TabsPosition
        with antdLib.libTooltipMod.TooltipPlacement
   
@@ -1704,7 +1716,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT16DOT6`: `3DOT16DOT6` = "3.16.6".asInstanceOf[`3DOT16DOT6`]
+  def `3DOT17DOT0`: `3DOT17DOT0` = "3.17.0".asInstanceOf[`3DOT17DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -1841,6 +1853,8 @@ object antdLibStrings {
   def `checkbox-label`: `checkbox-label` = "checkbox-label".asInstanceOf[`checkbox-label`]
   @scala.inline
   def checkmenuitem: checkmenuitem = "checkmenuitem".asInstanceOf[checkmenuitem]
+  @scala.inline
+  def children: children = "children".asInstanceOf[children]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
@@ -2065,6 +2079,8 @@ object antdLibStrings {
   def line: line = "line".asInstanceOf[line]
   @scala.inline
   def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
   @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   @scala.inline

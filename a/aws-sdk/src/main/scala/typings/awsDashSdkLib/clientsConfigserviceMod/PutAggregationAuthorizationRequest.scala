@@ -14,13 +14,14 @@ trait PutAggregationAuthorizationRequest extends js.Object {
     * The region authorized to collect aggregated data.
     */
   var AuthorizedAwsRegion: AwsRegion
+  var Tags: js.UndefOr[TagsList] = js.undefined
 }
 
 object PutAggregationAuthorizationRequest {
   @scala.inline
-  def apply(AuthorizedAccountId: AccountId, AuthorizedAwsRegion: AwsRegion): PutAggregationAuthorizationRequest = {
+  def apply(AuthorizedAccountId: AccountId, AuthorizedAwsRegion: AwsRegion, Tags: TagsList = null): PutAggregationAuthorizationRequest = {
     val __obj = js.Dynamic.literal(AuthorizedAccountId = AuthorizedAccountId, AuthorizedAwsRegion = AuthorizedAwsRegion)
-  
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[PutAggregationAuthorizationRequest]
   }
 }

@@ -10,9 +10,7 @@ trait MenuProps extends js.Object {
   var defaultOpenKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var defaultSelectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var focusable: js.UndefOr[scala.Boolean] = js.undefined
-  var getPopupContainer: js.UndefOr[
-    js.Function1[/* triggerNode */ js.UndefOr[stdLib.HTMLElement], stdLib.HTMLElement]
-  ] = js.undefined
+  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined
   var inlineIndent: js.UndefOr[scala.Double] = js.undefined
@@ -43,7 +41,7 @@ object MenuProps {
     defaultOpenKeys: js.Array[java.lang.String] = null,
     defaultSelectedKeys: js.Array[java.lang.String] = null,
     focusable: js.UndefOr[scala.Boolean] = js.undefined,
-    getPopupContainer: /* triggerNode */ js.UndefOr[stdLib.HTMLElement] => stdLib.HTMLElement = null,
+    getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
     inlineIndent: scala.Int | scala.Double = null,
