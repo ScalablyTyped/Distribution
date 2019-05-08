@@ -1,7 +1,7 @@
 
 # Scala.js typings for survey-knockout
 
-Typings are for version 1.0.83
+Typings are for version 1.0.84
 
 ## Library description:
 survey.js is a JavaScript Survey Library. It is a modern way to add a survey to your website. It uses JSON for survey metadata and results.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-/*Type definitions for Survey JavaScript library v1.0.83
+/*Type definitions for Survey JavaScript library v1.0.84
 Copyright (c) 2015-2019 Devsoft Baltic OÜ  - http://surveyjs.io/
 Definitions by: Devsoft Baltic OÜ <https://github.com/surveyjs/>
 */

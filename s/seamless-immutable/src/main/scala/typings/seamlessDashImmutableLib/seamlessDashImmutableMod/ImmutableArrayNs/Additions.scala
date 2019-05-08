@@ -8,8 +8,14 @@ import scala.scalajs.js.annotation._
 /** New methods added by seamless-immutable. */
 @js.native
 trait Additions[T] extends js.Object {
-  def asMutable(): js.Array[T] = js.native
-  def asMutable(opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions): js.Array[T] = js.native
+  def asMutable(): js.Array[seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T, js.Object]] = js.native
+  def asMutable(
+    opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions[
+      seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`false` | seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`true`
+    ]
+  ): js.Array[seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T, js.Object]] = js.native
+  @JSName("asMutable")
+  def `asMutable_<union>`(opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions[scala.Boolean]): js.Array[T] | (js.Array[seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T, js.Object]]) = js.native
   def asObject[U /* <: js.Object */, K /* <: java.lang.String */](
     toKeyValue: js.Function1[
       /* item */ T, 

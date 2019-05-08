@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("survey-knockout", "ChoicesRestfull")
 @js.native
 class ChoicesRestfull () extends Base {
+  var allowEmptyResponse: scala.Boolean = js.native
   var error: SurveyError = js.native
   val isEmpty: scala.Boolean = js.native
   val isRunning: scala.Boolean = js.native

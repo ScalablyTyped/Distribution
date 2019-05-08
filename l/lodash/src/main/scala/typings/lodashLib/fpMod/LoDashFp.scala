@@ -4602,13 +4602,16 @@ trait LoDashFp extends js.Object {
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def partition[T](callback: lodashLib.lodashMod.ValueIteratee[T], collection: lodashLib.lodashMod.List[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def partition[T /* <: js.Object */](callback: lodashLib.lodashMod.__): LodashPartition2x2[T] = js.native
-  def partition[T /* <: js.Object */](callback: lodashLib.lodashMod.__, collection: T): LodashPartition2x2[T] = js.native
+  def partition[T](callback: lodashLib.lodashMod.__): LodashPartition1x2[T] = js.native
+  def partition[T /* <: js.Object */](callback: lodashLib.lodashMod.__, collection: T): LodashPartition3x2[T] = js.native
   def partition[T](callback: lodashLib.lodashMod.__, collection: lodashLib.lodashMod.List[T]): LodashPartition1x2[T] = js.native
+  def partition[T, U /* <: T */](callback: lodashLib.lodashMod.ValueIteratorTypeGuard[T, U]): LodashPartition1x1[T, U] = js.native
+  def partition[T, U /* <: T */](
+    callback: lodashLib.lodashMod.ValueIteratorTypeGuard[T, U],
+    collection: lodashLib.lodashMod.List[T]
+  ): js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]] = js.native
   @JSName("partition")
-  def partition_TLodashPartition1x1[T](callback: lodashLib.lodashMod.ValueIteratee[T]): LodashPartition1x1[T] = js.native
-  @JSName("partition")
-  def partition_TLodashPartition1x2[T](callback: lodashLib.lodashMod.__): LodashPartition1x2[T] = js.native
+  def partition_TLodashPartition2x1[T](callback: lodashLib.lodashMod.ValueIteratee[T]): LodashPartition2x1[T] = js.native
   @JSName("partition")
   def partition_TObject[T /* <: js.Object */](
     callback: lodashLib.lodashMod.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
@@ -4616,6 +4619,10 @@ trait LoDashFp extends js.Object {
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
+  @JSName("partition")
+  def partition_TObjectLodashPartition3x2[T /* <: js.Object */](callback: lodashLib.lodashMod.__): LodashPartition3x2[T] = js.native
+  @JSName("partition")
+  def partition_TUTTuple2[T, U /* <: T */](callback: lodashLib.lodashMod.ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]] = js.native
   def path(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def path(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
   def path(path: lodashLib.lodashMod.__): LodashPath5x2 = js.native

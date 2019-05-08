@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsAppsyncMod {
+  type AdditionalAuthenticationProviders = js.Array[AdditionalAuthenticationProvider]
   type ApiKeys = js.Array[ApiKey]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.API_KEY
@@ -17,6 +18,7 @@ package object clientsAppsyncMod {
   type AuthenticationType = _AuthenticationType | java.lang.String
   type AuthorizationType = awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM | java.lang.String
   type Boolean = scala.Boolean
+  type BooleanValue = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.AWS_LAMBDA
@@ -64,15 +66,23 @@ package object clientsAppsyncMod {
   */
   type ResolverKind = _ResolverKind | java.lang.String
   type Resolvers = js.Array[Resolver]
+  type ResourceArn = java.lang.String
   type ResourceName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.PROCESSING
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_APPLICABLE
     - java.lang.String
   */
   type SchemaStatus = _SchemaStatus | java.lang.String
   type String = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagMap = org.scalablytyped.runtime.StringDictionary[TagValue]
+  type TagValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.SDL
     - awsDashSdkLib.awsDashSdkLibStrings.JSON

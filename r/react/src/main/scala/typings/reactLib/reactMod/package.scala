@@ -105,7 +105,11 @@ package object reactMod {
   type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement[js.Any] | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
+  type LazyExoticComponent[T /* <: ComponentType[_] */] = ExoticComponent[ComponentPropsWithRef[T]] with reactLib.Anon_Result[T]
   type LegacyRef[T] = java.lang.String | Ref[T]
+  // will show `Memo(${Component.displayName || Component.name})` in devtools by default,
+  // but can be given its own specific name
+  type MemoExoticComponent[T /* <: ComponentType[_] */] = NamedExoticComponent[ComponentPropsWithRef[T]] with reactLib.Anon_Type[T]
   // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
   type MergePropTypes[P, T] = ((stdLib.Pick[P, reactLib.NotExactlyAnyPropertyKeys[P]]) with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, reactLib.NotExactlyAnyPropertyKeys[P]]]) with (stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]])) | P | T
   type MouseEventHandler[T] = EventHandler[MouseEvent[T, reactLib.NativeMouseEvent]]

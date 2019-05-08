@@ -29,6 +29,12 @@ trait EngineReportingOptions[TContext] extends js.Object {
   var requestAgent: js.UndefOr[
     apolloDashServerDashEnvLib.distFetchMod.RequestAgent | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibNumbers.`false`
   ] = js.undefined
+  var rewriteError: js.UndefOr[
+    js.Function1[
+      /* err */ graphqlLib.graphqlMod.GraphQLError, 
+      graphqlLib.graphqlMod.GraphQLError | scala.Null
+    ]
+  ] = js.undefined
   var schemaTag: js.UndefOr[java.lang.String] = js.undefined
   var sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -51,6 +57,7 @@ object EngineReportingOptions {
     reportErrorFunction: /* err */ stdLib.Error => scala.Unit = null,
     reportIntervalMs: scala.Int | scala.Double = null,
     requestAgent: apolloDashServerDashEnvLib.distFetchMod.RequestAgent | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibNumbers.`false` = null,
+    rewriteError: /* err */ graphqlLib.graphqlMod.GraphQLError => graphqlLib.graphqlMod.GraphQLError | scala.Null = null,
     schemaTag: java.lang.String = null,
     sendReportsImmediately: js.UndefOr[scala.Boolean] = js.undefined
   ): EngineReportingOptions[TContext] = {
@@ -70,6 +77,7 @@ object EngineReportingOptions {
     if (reportErrorFunction != null) __obj.updateDynamic("reportErrorFunction")(js.Any.fromFunction1(reportErrorFunction))
     if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
     if (requestAgent != null) __obj.updateDynamic("requestAgent")(requestAgent.asInstanceOf[js.Any])
+    if (rewriteError != null) __obj.updateDynamic("rewriteError")(js.Any.fromFunction1(rewriteError))
     if (schemaTag != null) __obj.updateDynamic("schemaTag")(schemaTag)
     if (!js.isUndefined(sendReportsImmediately)) __obj.updateDynamic("sendReportsImmediately")(sendReportsImmediately)
     __obj.asInstanceOf[EngineReportingOptions[TContext]]

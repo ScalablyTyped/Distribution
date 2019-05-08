@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /*
   * section querycursor.js
-  * http://mongoosejs.com/docs/api.html#querycursor-js
+  * https://mongoosejs.com/docs/api.html#querycursor-js
   *
-  * Callback signatures are from: http://mongodb.github.io/node-mongodb-native/2.1/api/Cursor.html#close
+  * Callback signatures are from: https://mongodb.github.io/node-mongodb-native/2.1/api/Cursor.html#close
   * QueryCursor can only be accessed by query#cursor(), we only
   *   expose its interface to enable type-checking.
   */

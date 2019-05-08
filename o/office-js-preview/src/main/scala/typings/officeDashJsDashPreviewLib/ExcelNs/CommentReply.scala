@@ -18,7 +18,7 @@ class CommentReply ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * Get author email of the comment reply.
+    * Gets the email of the comment reply's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -26,7 +26,7 @@ class CommentReply ()
   val authorEmail: java.lang.String = js.native
   /**
     *
-    * Get author name of the comment reply.
+    * Gets the name of the comment reply's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -34,7 +34,7 @@ class CommentReply ()
   val authorName: java.lang.String = js.native
   /**
     *
-    * Get or set the content.
+    * Gets or sets the comment's content.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -45,7 +45,7 @@ class CommentReply ()
   var context_CommentReply: RequestContext = js.native
   /**
     *
-    * Get creation time of the comment reply.
+    * Gets the creation time of the comment reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -69,7 +69,7 @@ class CommentReply ()
   def delete(): scala.Unit = js.native
   /**
     *
-    * Get location of the comment reply.
+    * Gets the cell where this comment reply is located.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -77,7 +77,7 @@ class CommentReply ()
   def getLocation(): Range = js.native
   /**
     *
-    * Get its parent comment of this reply.
+    * Gets the parent comment of this reply.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

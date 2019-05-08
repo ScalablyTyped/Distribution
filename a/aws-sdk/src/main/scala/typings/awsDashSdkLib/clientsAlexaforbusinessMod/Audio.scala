@@ -11,7 +11,7 @@ trait Audio extends js.Object {
     */
   var Locale: awsDashSdkLib.clientsAlexaforbusinessMod.Locale
   /**
-    * The location of the audio file. Currently, S3 URLs are supported. Only S3 locations comprised of safe character are valid. For more information, see Safe Characters.
+    * The location of the audio file. Currently, S3 URLs are supported. Only S3 locations comprised of safe characters are valid. For more information, see Safe Characters.
     */
   var Location: AudioLocation
 }

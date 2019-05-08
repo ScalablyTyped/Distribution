@@ -97,6 +97,10 @@ trait CarouselProps extends js.Object {
     */
   var initialSlideWidth: js.UndefOr[scala.Double] = js.undefined
   /**
+    * optional callback function
+    */
+  var onDragStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /**
     * Window onResize callback
     */
   var onResize: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -108,39 +112,39 @@ trait CarouselProps extends js.Object {
   /**
     * Function for rendering bottom center control
     */
-  var renderBottomCenterControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderBottomCenterControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering bottom left control
     */
-  var renderBottomLeftControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderBottomLeftControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering bottom right control
     */
-  var renderBottomRightControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderBottomRightControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering center center control
     */
-  var renderCenterCenterControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderCenterCenterControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering center left control
     */
-  var renderCenterLeftControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderCenterLeftControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering center right control
     */
-  var renderCenterRightControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderCenterRightControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering top center control
     */
-  var renderTopCenterControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderTopCenterControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering top left control
     */
-  var renderTopLeftControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderTopLeftControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Function for rendering top right control
     */
-  var renderTopRightControls: js.UndefOr[CarouselRenderControl] = js.undefined
+  var renderTopRightControls: js.UndefOr[CarouselRenderControl | scala.Null] = js.undefined
   /**
     * Manually set the index of the slide to be shown
     */
@@ -219,6 +223,7 @@ object CarouselProps {
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: scala.Int | scala.Double = null,
     initialSlideWidth: scala.Int | scala.Double = null,
+    onDragStart: () => scala.Unit = null,
     onResize: () => scala.Unit = null,
     pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     renderBottomCenterControls: CarouselRenderControl = null,
@@ -262,6 +267,7 @@ object CarouselProps {
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode)
     if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
     if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
     if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(renderBottomCenterControls)

@@ -670,7 +670,9 @@ package object clientsSsmMod {
   type PatchDescription = java.lang.String
   type PatchFailedCount = scala.Double
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PATCH_SET
     - awsDashSdkLib.awsDashSdkLibStrings.PRODUCT
+    - awsDashSdkLib.awsDashSdkLibStrings.PRODUCT_FAMILY
     - awsDashSdkLib.awsDashSdkLibStrings.CLASSIFICATION
     - awsDashSdkLib.awsDashSdkLibStrings.MSRC_SEVERITY
     - awsDashSdkLib.awsDashSdkLibStrings.PATCH_ID
@@ -710,7 +712,25 @@ package object clientsSsmMod {
   type PatchOrchestratorFilterValues = js.Array[PatchOrchestratorFilterValue]
   type PatchProduct = java.lang.String
   type PatchProductFamily = java.lang.String
+  type PatchPropertiesList = js.Array[PatchPropertyEntry]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PRODUCT
+    - awsDashSdkLib.awsDashSdkLibStrings.PRODUCT_FAMILY
+    - awsDashSdkLib.awsDashSdkLibStrings.CLASSIFICATION
+    - awsDashSdkLib.awsDashSdkLibStrings.MSRC_SEVERITY
+    - awsDashSdkLib.awsDashSdkLibStrings.PRIORITY
+    - awsDashSdkLib.awsDashSdkLibStrings.SEVERITY
+    - java.lang.String
+  */
+  type PatchProperty = _PatchProperty | java.lang.String
+  type PatchPropertyEntry = org.scalablytyped.runtime.StringDictionary[AttributeValue]
   type PatchRuleList = js.Array[PatchRule]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OS
+    - awsDashSdkLib.awsDashSdkLibStrings.APPLICATION
+    - java.lang.String
+  */
+  type PatchSet = _PatchSet | java.lang.String
   type PatchSeverity = java.lang.String
   type PatchSourceConfiguration = java.lang.String
   type PatchSourceList = js.Array[PatchSource]
@@ -718,6 +738,7 @@ package object clientsSsmMod {
   type PatchSourceProduct = java.lang.String
   type PatchSourceProductList = js.Array[PatchSourceProduct]
   type PatchTitle = java.lang.String
+  type PatchUnreportedNotApplicableCount = scala.Double
   type PatchVendor = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.Online

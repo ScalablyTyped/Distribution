@@ -28,11 +28,13 @@ trait Document extends js.Object {
   def getFootnotes(): js.Array[Footnote] = js.native
   def getHeader(): HeaderSection = js.native
   def getId(): java.lang.String = js.native
+  def getLanguage(): java.lang.String = js.native
   def getName(): java.lang.String = js.native
   def getNamedRangeById(id: java.lang.String): NamedRange = js.native
   def getNamedRanges(): js.Array[NamedRange] = js.native
   def getNamedRanges(name: java.lang.String): js.Array[NamedRange] = js.native
   def getSelection(): Range = js.native
+  def getSupportedLanguageCodes(): js.Array[java.lang.String] = js.native
   def getUrl(): java.lang.String = js.native
   def getViewers(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native
   def newPosition(element: Element, offset: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Position = js.native
@@ -43,6 +45,7 @@ trait Document extends js.Object {
   def removeViewer(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Document = js.native
   def saveAndClose(): scala.Unit = js.native
   def setCursor(position: Position): Document = js.native
+  def setLanguage(languageCode: java.lang.String): Document = js.native
   def setName(name: java.lang.String): Document = js.native
   def setSelection(range: Range): Document = js.native
 }

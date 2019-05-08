@@ -10,7 +10,7 @@ trait ReactPropTypes extends js.Object {
   @JSName("any")
   var any_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
   @JSName("arrayOf")
-  var arrayOf_Original: reactLib.Anon_Type = js.native
+  var arrayOf_Original: reactLib.Anon_TypeArray = js.native
   @JSName("array")
   var array_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
   @JSName("bool")

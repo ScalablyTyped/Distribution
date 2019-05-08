@@ -14,6 +14,8 @@ class GraphQLExtensionStack[TContext] protected () extends js.Object {
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.native
   var handleDidStart: js.Any = js.native
+  def didEncounterErrors(errors: js.Array[graphqlLib.graphqlMod.GraphQLError]): scala.Unit = js.native
+  def didResolveOperation(o: graphqlDashExtensionsLib.Anon_RequestContext[TContext]): scala.Unit = js.native
   def executionDidStart(o: graphqlDashExtensionsLib.Anon_ExecutionArgs): EndHandler = js.native
   def format(): js.Object = js.native
   def parsingDidStart(o: graphqlDashExtensionsLib.Anon_QueryString): EndHandler = js.native

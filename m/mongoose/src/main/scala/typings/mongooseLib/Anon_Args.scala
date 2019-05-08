@@ -16,7 +16,7 @@ trait Anon_Args extends js.Object {
   ] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
-  var STATES: js.Any = js.native
+  var STATES: mongooseLib.mongooseMod.ConnectionStates = js.native
   val SchemaNs: Anon_Types = js.native
   // Interfaces specific to schema type options should be scoped in this namespace
   val SchemaTypeOptsNs: js.Any = js.native
@@ -28,18 +28,18 @@ trait Anon_Args extends js.Object {
   def connect(
     uris: java.lang.String,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
-  ): scala.Null = js.native
+  ): js.Promise[mongooseLib.mongooseMod.Mongoose] = js.native
   def connect(uris: java.lang.String, options: mongooseLib.mongooseMod.ConnectionOptions): js.Promise[mongooseLib.mongooseMod.Mongoose] = js.native
   def connect(
     uris: java.lang.String,
     options: mongooseLib.mongooseMod.ConnectionOptions,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
-  ): scala.Null = js.native
+  ): js.Promise[mongooseLib.mongooseMod.Mongoose] = js.native
   def createConnection(): mongooseLib.mongooseMod.Connection = js.native
   def createConnection(uri: java.lang.String): mongooseLib.mongooseMod.Connection with Anon_Catch = js.native
   def createConnection(uri: java.lang.String, options: mongooseLib.mongooseMod.ConnectionOptions): mongooseLib.mongooseMod.Connection with Anon_Catch = js.native
   def disconnect(): js.Promise[scala.Unit] = js.native
-  def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Null = js.native
+  def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
   def get(key: java.lang.String): js.Any = js.native
   def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
   def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): mongooseLib.mongooseMod.Model[T, js.Object] = js.native

@@ -5676,6 +5676,9 @@ trait LoDashStatic extends js.Object {
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def partition[T](collection: js.UndefOr[scala.Nothing], callback: ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+  def partition[T](collection: List[T], callback: ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+  def partition[T](collection: scala.Null, callback: ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+  def partition[T, U /* <: T */](collection: js.UndefOr[scala.Nothing], callback: ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]] = js.native
   /**
     * Creates an array of elements split into two groups, the first of which contains elements predicate returns truthy for,
     * while the second of which contains elements predicate returns falsey for.
@@ -5685,8 +5688,8 @@ trait LoDashStatic extends js.Object {
     * @param callback The function called per iteration.
     * @return Returns the array of grouped elements.
     **/
-  def partition[T](collection: List[T], callback: ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def partition[T](collection: scala.Null, callback: ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
+  def partition[T, U /* <: T */](collection: List[T], callback: ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]] = js.native
+  def partition[T, U /* <: T */](collection: scala.Null, callback: ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]] = js.native
   @JSName("partition")
   def partition_TObject[T /* <: js.Object */](
     collection: js.UndefOr[scala.Nothing],

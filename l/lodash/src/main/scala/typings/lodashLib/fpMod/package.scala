@@ -1052,15 +1052,15 @@ package object fpMod {
     /* func */ lodashLib.lodashMod.Function3[T1, js.Any, T3, js.Any], 
     lodashLib.lodashMod.Function1[js.Any, js.Any]
   ]
-  type LodashPartition1x1[T] = js.Function1[
+  type LodashPartition1x1[T, U] = js.Function1[
+    /* collection */ js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null], 
+    js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]]
+  ]
+  type LodashPartition2x1[T] = js.Function1[
     /* collection */ js.UndefOr[lodashLib.lodashMod.List[T] | js.Object | scala.Null], 
     js.Tuple2[js.Array[T], js.Array[T]]
   ]
-  type LodashPartition1x2[T] = js.Function1[
-    /* callback */ lodashLib.lodashMod.ValueIteratee[T], 
-    js.Tuple2[js.Array[T], js.Array[T]]
-  ]
-  type LodashPartition2x2[T] = js.Function1[
+  type LodashPartition3x2[T] = js.Function1[
     /* callback */ lodashLib.lodashMod.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
     js.Tuple2[
       js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 

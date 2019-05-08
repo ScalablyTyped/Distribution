@@ -18,6 +18,9 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var documentStore: js.UndefOr[
     apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode]
   ] = js.undefined
+  var executor: js.UndefOr[
+    apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]]
+  ] = js.undefined
   var extensions: js.UndefOr[
     js.Array[
       js.Function0[
@@ -60,6 +63,7 @@ object GraphQLServerOptions {
     dataSources: () => DataSources[TContext] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     documentStore: apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode] = null,
+    executor: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLExecutor[stdLib.Record[java.lang.String, _]] = null,
     extensions: js.Array[
       js.Function0[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
@@ -84,6 +88,7 @@ object GraphQLServerOptions {
     if (dataSources != null) __obj.updateDynamic("dataSources")(js.Any.fromFunction0(dataSources))
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (documentStore != null) __obj.updateDynamic("documentStore")(documentStore)
+    if (executor != null) __obj.updateDynamic("executor")(executor)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver)
     if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))

@@ -15,7 +15,7 @@ trait GraphQLRequest extends js.Object {
   ] = js.undefined
   var operationName: js.UndefOr[java.lang.String] = js.undefined
   var query: js.UndefOr[java.lang.String] = js.undefined
-  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var variables: js.UndefOr[VariableValues] = js.undefined
 }
 
 object GraphQLRequest {
@@ -28,7 +28,7 @@ object GraphQLRequest {
     ] = null,
     operationName: java.lang.String = null,
     query: java.lang.String = null,
-    variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+    variables: VariableValues = null
   ): GraphQLRequest = {
     val __obj = js.Dynamic.literal()
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)

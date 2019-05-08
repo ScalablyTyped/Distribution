@@ -41,6 +41,10 @@ object nukaDashCarouselLibStrings {
   sealed trait scroll
     extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselTransitionModeProp
   
+  @js.native
+  sealed trait scroll3d
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselTransitionModeProp
+  
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -59,5 +63,7 @@ object nukaDashCarouselLibStrings {
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def scroll3d: scroll3d = "scroll3d".asInstanceOf[scroll3d]
 }
 

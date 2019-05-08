@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router
 
-Typings are for version 4.4
+Typings are for version 5.0
 
 ## Library description:
 Declarative routing for React
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for React Router 4.4
+// Type definitions for React Router 5.0
 // Project: https://github.com/ReactTraining/react-router
 // Definitions by: Sergey Buturlakin <https://github.com/sergey-buturlakin>
 //                 Yuichi Murata <https://github.com/mrk21>
@@ -58,6 +58,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Ben Smith <https://github.com/8enSmith>
 //                 Wesley Tsai <https://github.com/wezleytsai>
 //                 Sebastian Silbermann <https://github.com/eps1lon>
+//                 Nicholas Hehr <https://github.com/HipsterBrown>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

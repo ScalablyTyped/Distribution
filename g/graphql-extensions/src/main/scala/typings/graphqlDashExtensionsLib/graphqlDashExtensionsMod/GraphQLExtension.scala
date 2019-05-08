@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-extensions", "GraphQLExtension")
 @js.native
 class GraphQLExtension[TContext] () extends js.Object {
+  var didEncounterErrors: js.UndefOr[
+    js.Function1[/* errors */ js.Array[graphqlLib.graphqlMod.GraphQLError], scala.Unit]
+  ] = js.native
+  var didResolveOperation: js.UndefOr[
+    js.Function1[/* o */ graphqlDashExtensionsLib.Anon_RequestContext[TContext], scala.Unit]
+  ] = js.native
   var executionDidStart: js.UndefOr[
     js.Function1[/* o */ graphqlDashExtensionsLib.Anon_ExecutionArgs, EndHandler | scala.Unit]
   ] = js.native

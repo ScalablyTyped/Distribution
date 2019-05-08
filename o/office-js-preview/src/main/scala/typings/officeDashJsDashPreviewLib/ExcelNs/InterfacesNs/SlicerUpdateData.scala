@@ -61,7 +61,7 @@ trait SlicerUpdateData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+    * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 through SlicerStyleLight6, TableStyleOther1 through TableStyleOther2, SlicerStyleDark1 through SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

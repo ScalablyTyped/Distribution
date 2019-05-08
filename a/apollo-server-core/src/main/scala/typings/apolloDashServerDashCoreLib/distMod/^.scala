@@ -37,9 +37,9 @@ object ^ extends js.Object {
   def resolveGraphqlOptions(
     options: js.Function1[
       /* repeated */ js.Any, 
-      (js.Promise[
+      apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.ValueOrPromise[
         apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
-      ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])
+      ]
     ],
     args: js.Any*
   ): js.Promise[

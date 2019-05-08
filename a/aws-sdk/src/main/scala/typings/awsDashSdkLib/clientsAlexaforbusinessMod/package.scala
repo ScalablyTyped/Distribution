@@ -116,11 +116,25 @@ package object clientsAlexaforbusinessMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.DEVICE_SOFTWARE_UPDATE_NEEDED
     - awsDashSdkLib.awsDashSdkLibStrings.DEVICE_WAS_OFFLINE
+    - awsDashSdkLib.awsDashSdkLibStrings.CREDENTIALS_ACCESS_FAILURE
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS_VERSION_MISMATCH
+    - awsDashSdkLib.awsDashSdkLibStrings.ASSOCIATION_REJECTION
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTHENTICATION_FAILURE
+    - awsDashSdkLib.awsDashSdkLibStrings.DHCP_FAILURE
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNET_UNAVAILABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.DNS_FAILURE
+    - awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN_FAILURE
+    - awsDashSdkLib.awsDashSdkLibStrings.CERTIFICATE_ISSUING_LIMIT_EXCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_CERTIFICATE_AUTHORITY
+    - awsDashSdkLib.awsDashSdkLibStrings.NETWORK_PROFILE_NOT_FOUND
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_PASSWORD_STATE
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSWORD_NOT_FOUND
     - java.lang.String
   */
   type DeviceStatusDetailCode = _DeviceStatusDetailCode | java.lang.String
   type DeviceStatusDetails = js.Array[DeviceStatusDetail]
   type DeviceType = java.lang.String
+  type DeviceUsageType = awsDashSdkLib.awsDashSdkLibStrings.VOICE | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.METRIC
     - awsDashSdkLib.awsDashSdkLibStrings.IMPERIAL

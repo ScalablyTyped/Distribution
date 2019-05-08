@@ -3211,6 +3211,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `git-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `git-square`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -6435,6 +6439,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait stackpath
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait staff
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -9559,6 +9567,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def git: git = "git".asInstanceOf[git]
   @scala.inline
+  def `git-alt`: `git-alt` = "git-alt".asInstanceOf[`git-alt`]
+  @scala.inline
   def `git-square`: `git-square` = "git-square".asInstanceOf[`git-square`]
   @scala.inline
   def github: github = "github".asInstanceOf[github]
@@ -11170,6 +11180,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `stack-exchange`: `stack-exchange` = "stack-exchange".asInstanceOf[`stack-exchange`]
   @scala.inline
   def `stack-overflow`: `stack-overflow` = "stack-overflow".asInstanceOf[`stack-overflow`]
+  @scala.inline
+  def stackpath: stackpath = "stackpath".asInstanceOf[stackpath]
   @scala.inline
   def staff: staff = "staff".asInstanceOf[staff]
   @scala.inline

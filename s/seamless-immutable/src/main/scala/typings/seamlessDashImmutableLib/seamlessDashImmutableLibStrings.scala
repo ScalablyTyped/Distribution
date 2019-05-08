@@ -13,6 +13,9 @@ object seamlessDashImmutableLibStrings {
   sealed trait ImmutableObject extends js.Object
   
   @js.native
+  sealed trait ImmutableObjectMixin extends js.Object
+  
+  @js.native
   sealed trait copyWithin extends js.Object
   
   @js.native
@@ -97,6 +100,8 @@ object seamlessDashImmutableLibStrings {
   def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
   @scala.inline
   def ImmutableObject: ImmutableObject = "ImmutableObject".asInstanceOf[ImmutableObject]
+  @scala.inline
+  def ImmutableObjectMixin: ImmutableObjectMixin = "ImmutableObjectMixin".asInstanceOf[ImmutableObjectMixin]
   @scala.inline
   def copyWithin: copyWithin = "copyWithin".asInstanceOf[copyWithin]
   @scala.inline

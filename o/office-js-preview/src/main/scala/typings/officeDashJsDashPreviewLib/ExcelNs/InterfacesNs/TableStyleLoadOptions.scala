@@ -25,7 +25,7 @@ trait TableStyleLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True means that this TableStyle object is read-only. Read-only.
+    * Specifies if this TableStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

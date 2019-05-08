@@ -10,6 +10,7 @@ trait BottomTabNavigatorConfig
      with TabViewConfig {
   var initialLayout: js.UndefOr[reactDashNavigationLib.Anon_HeightWidth] = js.undefined
   var removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined
+  var resetOnBlur: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object BottomTabNavigatorConfig {
@@ -26,6 +27,7 @@ object BottomTabNavigatorConfig {
     order: js.Array[java.lang.String] = null,
     paths: NavigationPathsConfig = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
+    resetOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
     swipeEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     tabBarComponent: reactLib.reactMod.ReactType[_] = null,
     tabBarOptions: reactDashNavigationLib.Anon_ActiveBackgroundColorActiveTintColor = null,
@@ -43,6 +45,7 @@ object BottomTabNavigatorConfig {
     if (order != null) __obj.updateDynamic("order")(order)
     if (paths != null) __obj.updateDynamic("paths")(paths)
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
+    if (!js.isUndefined(resetOnBlur)) __obj.updateDynamic("resetOnBlur")(resetOnBlur)
     if (!js.isUndefined(swipeEnabled)) __obj.updateDynamic("swipeEnabled")(swipeEnabled)
     if (tabBarComponent != null) __obj.updateDynamic("tabBarComponent")(tabBarComponent.asInstanceOf[js.Any])
     if (tabBarOptions != null) __obj.updateDynamic("tabBarOptions")(tabBarOptions)

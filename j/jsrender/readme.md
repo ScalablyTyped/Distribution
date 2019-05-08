@@ -1,6 +1,7 @@
 
 # Scala.js typings for jsrender
 
+Typings are for version 1.0
 
 ## Library description:
 Best-of-breed templating in browser or on Node.js (with Express 4, Hapi and Browserify integration)
@@ -34,9 +35,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for JsRender
+// Type definitions for JsRender 1.0
 // Project: http://www.jsviews.com/#jsrender
-// Definitions by: Kensuke Matsuzaki <https://github.com/zakki>
+// Definitions by: Boris Moore <https://github.com/borismoore>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

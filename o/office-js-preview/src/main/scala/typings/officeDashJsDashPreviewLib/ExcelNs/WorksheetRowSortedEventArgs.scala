@@ -39,7 +39,7 @@ trait WorksheetRowSortedEventArgs extends js.Object {
   var `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetRowSorted
   /**
     *
-    * Gets the id of the worksheet in which the sorting happened.
+    * Gets the id of the worksheet where the sorting happened.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

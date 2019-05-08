@@ -14,7 +14,7 @@ package object ImmutableArrayNs {
   /** These methods are banned by seamless-immutable. */
   type MutatingArrayMethods = stdLib.Extract[
     js.Array[java.lang.String], 
-    seamlessDashImmutableLib.seamlessDashImmutableLibStrings.push | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.pop | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.sort | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.splice | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.shift | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.unshift | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.reverse
+    seamlessDashImmutableLib.seamlessDashImmutableLibStrings.push | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.pop | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.sort | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.splice | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.shift | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.unshift | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.reverse | scala.Double
   ]
   /** The remaining properties on Array<T>, after we remove the mutating functions and the wrapped non-mutating functions. */
   type Remaining[T] = seamlessDashImmutableLib.seamlessDashImmutableMod.Omit[

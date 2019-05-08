@@ -27,7 +27,7 @@ trait NetInfoStatic extends js.Object {
   def addEventListener(
     eventName: java.lang.String,
     listener: js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit]
-  ): scala.Unit
+  ): NetInfoEventListener
   /**
     * This function is deprecated. Use `getConnectionInfo` instead. Returns a promise that
     * resolves with one of the deprecated connectivity types listed above.
@@ -58,7 +58,7 @@ trait NetInfoStatic extends js.Object {
 object NetInfoStatic {
   @scala.inline
   def apply(
-    addEventListener: (java.lang.String, js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit]) => scala.Unit,
+    addEventListener: (java.lang.String, js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit]) => NetInfoEventListener,
     fetch: () => js.Promise[ConnectionType],
     getConnectionInfo: () => js.Promise[ConnectionInfo],
     isConnected: reactDashNativeLib.Anon_AddEventListener,

@@ -1219,6 +1219,29 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribePatchGroupsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Lists the properties of available patches organized by product, product family, classification, severity, and other properties of available patches. You can use the reported properties in the filters you specify in requests for actions such as CreatePatchBaseline, UpdatePatchBaseline, DescribeAvailablePatches, and DescribePatchBaselines. The following section lists the properties that can be used in filters for each major operating system type:  WINDOWS  Valid properties: PRODUCT, PRODUCT_FAMILY, CLASSIFICATION, MSRC_SEVERITY  AMAZON_LINUX  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  AMAZON_LINUX_2  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  UBUNTU   Valid properties: PRODUCT, PRIORITY  REDHAT_ENTERPRISE_LINUX  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  SUSE  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  CENTOS  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  
+    */
+  def describePatchProperties(): awsDashSdkLib.libRequestMod.Request[DescribePatchPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describePatchProperties(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribePatchPropertiesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribePatchPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists the properties of available patches organized by product, product family, classification, severity, and other properties of available patches. You can use the reported properties in the filters you specify in requests for actions such as CreatePatchBaseline, UpdatePatchBaseline, DescribeAvailablePatches, and DescribePatchBaselines. The following section lists the properties that can be used in filters for each major operating system type:  WINDOWS  Valid properties: PRODUCT, PRODUCT_FAMILY, CLASSIFICATION, MSRC_SEVERITY  AMAZON_LINUX  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  AMAZON_LINUX_2  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  UBUNTU   Valid properties: PRODUCT, PRIORITY  REDHAT_ENTERPRISE_LINUX  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  SUSE  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  CENTOS  Valid properties: PRODUCT, CLASSIFICATION, SEVERITY  
+    */
+  def describePatchProperties(params: DescribePatchPropertiesRequest): awsDashSdkLib.libRequestMod.Request[DescribePatchPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describePatchProperties(
+    params: DescribePatchPropertiesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribePatchPropertiesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribePatchPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Retrieves a list of all active sessions (both connected and disconnected) or terminated sessions from the past 30 days.
     */
   def describeSessions(): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native

@@ -471,6 +471,29 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
+    */
+  def deleteDeviceUsageData(): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteDeviceUsageData(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteDeviceUsageDataResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
+    */
+  def deleteDeviceUsageData(params: DeleteDeviceUsageDataRequest): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteDeviceUsageData(
+    params: DeleteDeviceUsageDataRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteDeviceUsageDataResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Deletes a gateway group.
     */
   def deleteGatewayGroup(): awsDashSdkLib.libRequestMod.Request[DeleteGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1613,7 +1636,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SearchUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Triggers an asynchronous flow to send text, SSML, or audio announcements to multiple rooms, identified by a search, such as filter. 
+    * Triggers an asynchronous flow to send text, SSML, or audio announcements to rooms that are identified by a search or filter. 
     */
   def sendAnnouncement(): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendAnnouncement(
@@ -1624,7 +1647,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Triggers an asynchronous flow to send text, SSML, or audio announcements to multiple rooms, identified by a search, such as filter. 
+    * Triggers an asynchronous flow to send text, SSML, or audio announcements to rooms that are identified by a search or filter. 
     */
   def sendAnnouncement(params: SendAnnouncementRequest): awsDashSdkLib.libRequestMod.Request[SendAnnouncementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def sendAnnouncement(

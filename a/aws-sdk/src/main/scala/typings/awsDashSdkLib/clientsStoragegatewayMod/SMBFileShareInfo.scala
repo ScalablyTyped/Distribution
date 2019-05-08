@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SMBFileShareInfo extends js.Object {
+  /**
+    * A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
+    */
+  var AdminUserList: js.UndefOr[FileShareUserList] = js.undefined
   var Authentication: js.UndefOr[Authentication] = js.undefined
   /**
     * The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.
@@ -60,6 +64,7 @@ trait SMBFileShareInfo extends js.Object {
 object SMBFileShareInfo {
   @scala.inline
   def apply(
+    AdminUserList: FileShareUserList = null,
     Authentication: Authentication = null,
     DefaultStorageClass: StorageClass = null,
     FileShareARN: FileShareARN = null,
@@ -81,6 +86,7 @@ object SMBFileShareInfo {
     ValidUserList: FileShareUserList = null
   ): SMBFileShareInfo = {
     val __obj = js.Dynamic.literal()
+    if (AdminUserList != null) __obj.updateDynamic("AdminUserList")(AdminUserList)
     if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication)
     if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass)
     if (FileShareARN != null) __obj.updateDynamic("FileShareARN")(FileShareARN)

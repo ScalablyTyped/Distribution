@@ -25,7 +25,7 @@ trait TimelineStyleCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: True means that this TimelineStyle object is read-only. Read-only.
+    * For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

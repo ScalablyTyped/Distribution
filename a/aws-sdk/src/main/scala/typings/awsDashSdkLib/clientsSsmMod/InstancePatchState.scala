@@ -39,7 +39,7 @@ trait InstancePatchState extends js.Object {
     */
   var MissingCount: js.UndefOr[PatchMissingCount] = js.undefined
   /**
-    * The number of patches from the patch baseline that aren't applicable for the instance and hence aren't installed on the instance.
+    * The number of patches from the patch baseline that aren't applicable for the instance and therefore aren't installed on the instance. This number may be truncated if the list of patch names is very large. The number of patches beyond this limit are reported in UnreportedNotApplicableCount.
     */
   var NotApplicableCount: js.UndefOr[PatchNotApplicableCount] = js.undefined
   /**
@@ -66,6 +66,10 @@ trait InstancePatchState extends js.Object {
     * The ID of the patch baseline snapshot used during the patching operation when this compliance data was collected.
     */
   var SnapshotId: js.UndefOr[SnapshotId] = js.undefined
+  /**
+    * The number of patches beyond the supported limit of NotApplicableCount that are not reported by name to Systems Manager Inventory.
+    */
+  var UnreportedNotApplicableCount: js.UndefOr[PatchUnreportedNotApplicableCount] = js.undefined
 }
 
 object InstancePatchState {
@@ -85,7 +89,8 @@ object InstancePatchState {
     MissingCount: js.UndefOr[PatchMissingCount] = js.undefined,
     NotApplicableCount: js.UndefOr[PatchNotApplicableCount] = js.undefined,
     OwnerInformation: OwnerInformation = null,
-    SnapshotId: SnapshotId = null
+    SnapshotId: SnapshotId = null,
+    UnreportedNotApplicableCount: js.UndefOr[PatchUnreportedNotApplicableCount] = js.undefined
   ): InstancePatchState = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId, InstanceId = InstanceId, Operation = Operation.asInstanceOf[js.Any], OperationEndTime = OperationEndTime, OperationStartTime = OperationStartTime, PatchGroup = PatchGroup)
     if (!js.isUndefined(FailedCount)) __obj.updateDynamic("FailedCount")(FailedCount)
@@ -97,6 +102,7 @@ object InstancePatchState {
     if (!js.isUndefined(NotApplicableCount)) __obj.updateDynamic("NotApplicableCount")(NotApplicableCount)
     if (OwnerInformation != null) __obj.updateDynamic("OwnerInformation")(OwnerInformation)
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId)
+    if (!js.isUndefined(UnreportedNotApplicableCount)) __obj.updateDynamic("UnreportedNotApplicableCount")(UnreportedNotApplicableCount)
     __obj.asInstanceOf[InstancePatchState]
   }
 }

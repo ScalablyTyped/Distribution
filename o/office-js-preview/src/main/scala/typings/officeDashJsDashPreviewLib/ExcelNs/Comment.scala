@@ -18,7 +18,7 @@ class Comment ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * Get author email of the comment.
+    * Gets the email of the comment's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -26,7 +26,7 @@ class Comment ()
   val authorEmail: java.lang.String = js.native
   /**
     *
-    * Get author name of the comment.
+    * Gets the name of the comment's author.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -34,7 +34,7 @@ class Comment ()
   val authorName: java.lang.String = js.native
   /**
     *
-    * Get or set the content.
+    * Gets or sets the comment's content.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -45,7 +45,7 @@ class Comment ()
   var context_Comment: RequestContext = js.native
   /**
     *
-    * Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+    * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -77,7 +77,7 @@ class Comment ()
   def delete(): scala.Unit = js.native
   /**
     *
-    * Get location of the comment.
+    * Gets the cell where this comment is located.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

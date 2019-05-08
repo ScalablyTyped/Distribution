@@ -1804,6 +1804,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsShieldMod._AttackLayer
        with awsDashSdkLib.clientsDiscoveryMod._ConfigurationItemType
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod._MetricsLevel
+       with awsDashSdkLib.clientsSsmMod._PatchSet
   
   @js.native
   sealed trait APPLICATION_CRASH_REPORT
@@ -1971,6 +1972,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53domainsMod._ContactType
   
   @js.native
+  sealed trait ASSOCIATION_REJECTION
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait ASSUME_ROLE_FAILED extends js.Object
   
   @js.native
@@ -2037,6 +2042,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AUDIT
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._AdvancedSecurityModeType
+  
+  @js.native
+  sealed trait AUTHENTICATION_FAILURE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
   @js.native
   sealed trait AUTHOR
@@ -3939,6 +3948,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAcmMod._RevocationReason
   
   @js.native
+  sealed trait CERTIFICATE_ISSUING_LIMIT_EXCEEDED
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait CERTIFICATE_SIGNING
     extends awsDashSdkLib.clientsAcmMod._KeyUsageName
   
@@ -4057,6 +4070,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CLASSIFICATION
     extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+       with awsDashSdkLib.clientsSsmMod._PatchProperty
   
   @js.native
   sealed trait CLEANUP_FAILURE
@@ -4839,6 +4853,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CREATION_IN_PROGRESS
     extends awsDashSdkLib.clientsMqMod._BrokerState
+  
+  @js.native
+  sealed trait CREDENTIALS_ACCESS_FAILURE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
   @js.native
   sealed trait CRITICAL
@@ -6047,6 +6065,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
   @js.native
+  sealed trait DHCP_FAILURE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait DIAGNOSIS
     extends awsDashSdkLib.clientsComprehendmedicalMod._AttributeName
   
@@ -6278,6 +6300,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DNS
     extends awsDashSdkLib.clientsAcmMod._ValidationMethod
+  
+  @js.native
+  sealed trait DNS_FAILURE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
   @js.native
   sealed trait DNS_PRIVATE
@@ -8046,6 +8072,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRamMod._ResourceShareStatus
        with awsDashSdkLib.clientsBackupMod._RestoreJobStatus
        with awsDashSdkLib.clientsRedshiftMod._ScheduleState
+       with awsDashSdkLib.clientsAppsyncMod._SchemaStatus
        with awsDashSdkLib.clientsOpsworkscmMod._ServerStatus
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod._SnapshotStatus
        with awsDashSdkLib.clientsCloudformationMod._StackSetOperationResultStatus
@@ -10490,6 +10517,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsApigatewayMod._ConnectionType
   
   @js.native
+  sealed trait INTERNET_UNAVAILABLE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait INTERPOLATE
     extends awsDashSdkLib.clientsMediaconvertMod._DeinterlaceAlgorithm
        with awsDashSdkLib.clientsMediaconvertMod._H264FramerateConversionAlgorithm
@@ -10553,6 +10584,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMqMod._SanitizationWarningReason
   
   @js.native
+  sealed trait INVALID_CERTIFICATE_AUTHORITY
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait INVALID_CREDENTIALS
     extends awsDashSdkLib.clientsKmsMod._ConnectionErrorCodeType
   
@@ -10571,6 +10606,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait INVALID_LAMBDA_FUNCTION
     extends awsDashSdkLib.clientsCodedeployMod._ErrorCode
+  
+  @js.native
+  sealed trait INVALID_PASSWORD_STATE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
   @js.native
   sealed trait INVALID_PUBLIC_DOMAIN
@@ -12909,6 +12948,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MSRC_SEVERITY
     extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+       with awsDashSdkLib.clientsSsmMod._PatchProperty
   
   @js.native
   sealed trait MS_SMOOTH_GROUP_SETTINGS
@@ -13373,6 +13413,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAppstreamMod._FleetErrorCode
   
   @js.native
+  sealed trait NETWORK_PROFILE_NOT_FOUND
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait NET_AMORTIZED_COST
     extends awsDashSdkLib.clientsCostexplorerMod._Metric
   
@@ -13628,6 +13672,7 @@ object awsDashSdkLibStrings {
   sealed trait NOT_APPLICABLE
     extends awsDashSdkLib.clientsConfigserviceMod._ComplianceType
        with awsDashSdkLib.clientsSsmMod._PatchComplianceDataState
+       with awsDashSdkLib.clientsAppsyncMod._SchemaStatus
   
   @js.native
   sealed trait NOT_AVAILABLE
@@ -14393,6 +14438,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
   
   @js.native
+  sealed trait OS
+    extends awsDashSdkLib.clientsSsmMod._PatchSet
+  
+  @js.native
   sealed trait OSS
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
   
@@ -14673,6 +14722,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._EventFilterType
   
   @js.native
+  sealed trait PASSWORD_NOT_FOUND
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait PASSWORD_VERIFIER
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod._ChallengeNameType
   
@@ -14686,6 +14739,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PATCH_ID
+    extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+  
+  @js.native
+  sealed trait PATCH_SET
     extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
   
   @js.native
@@ -15150,6 +15207,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PRIORITY
     extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+       with awsDashSdkLib.clientsSsmMod._PatchProperty
   
   @js.native
   sealed trait PRIV
@@ -15204,10 +15262,16 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PRODUCT
     extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+       with awsDashSdkLib.clientsSsmMod._PatchProperty
   
   @js.native
   sealed trait PRODUCTION
     extends awsDashSdkLib.clientsAmplifyMod._Stage
+  
+  @js.native
+  sealed trait PRODUCT_FAMILY
+    extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+       with awsDashSdkLib.clientsSsmMod._PatchProperty
   
   @js.native
   sealed trait PROFESSION
@@ -17663,6 +17727,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SEVERITY
     extends awsDashSdkLib.clientsSsmMod._PatchFilterKey
+       with awsDashSdkLib.clientsSsmMod._PatchProperty
   
   @js.native
   sealed trait SE_ID_NUMBER
@@ -18568,6 +18633,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDatasyncMod._PhaseStatus
        with awsDashSdkLib.clientsAcmMod._RenewalStatus
        with awsDashSdkLib.clientsCloudformationMod._ResourceSignalStatus
+       with awsDashSdkLib.clientsAppsyncMod._SchemaStatus
        with awsDashSdkLib.clientsWorkdocsMod._ShareStatusType
        with awsDashSdkLib.clientsDatasyncMod._TaskExecutionStatus
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._VerifySoftwareTokenResponseType
@@ -19705,6 +19771,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsElbv2Mod._ProtocolEnum
   
   @js.native
+  sealed trait TLS_VERSION_MISMATCH
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
+  
+  @js.native
   sealed trait TLS_WEB_CLIENT_AUTHENTICATION
     extends awsDashSdkLib.clientsAcmMod._ExtendedKeyUsageName
   
@@ -20447,6 +20517,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UNKNOWN_FAILURE
     extends awsDashSdkLib.clientsPinpointMod._DeliveryStatus
+       with awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
   @js.native
   sealed trait UNLIMITED
@@ -28832,6 +28903,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ASSOCIATION: ASSOCIATION = "ASSOCIATION".asInstanceOf[ASSOCIATION]
   @scala.inline
+  def ASSOCIATION_REJECTION: ASSOCIATION_REJECTION = "ASSOCIATION_REJECTION".asInstanceOf[ASSOCIATION_REJECTION]
+  @scala.inline
   def ASSUME_ROLE_FAILED: ASSUME_ROLE_FAILED = "ASSUME_ROLE_FAILED".asInstanceOf[ASSUME_ROLE_FAILED]
   @scala.inline
   def AT: AT = "AT".asInstanceOf[AT]
@@ -28859,6 +28932,8 @@ object awsDashSdkLibStrings {
   def AUDIO_ONLY_VARIANT_STREAM: AUDIO_ONLY_VARIANT_STREAM = "AUDIO_ONLY_VARIANT_STREAM".asInstanceOf[AUDIO_ONLY_VARIANT_STREAM]
   @scala.inline
   def AUDIT: AUDIT = "AUDIT".asInstanceOf[AUDIT]
+  @scala.inline
+  def AUTHENTICATION_FAILURE: AUTHENTICATION_FAILURE = "AUTHENTICATION_FAILURE".asInstanceOf[AUTHENTICATION_FAILURE]
   @scala.inline
   def AUTHOR: AUTHOR = "AUTHOR".asInstanceOf[AUTHOR]
   @scala.inline
@@ -29684,6 +29759,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CERTIFICATE_HOLD: CERTIFICATE_HOLD = "CERTIFICATE_HOLD".asInstanceOf[CERTIFICATE_HOLD]
   @scala.inline
+  def CERTIFICATE_ISSUING_LIMIT_EXCEEDED: CERTIFICATE_ISSUING_LIMIT_EXCEEDED = "CERTIFICATE_ISSUING_LIMIT_EXCEEDED".asInstanceOf[CERTIFICATE_ISSUING_LIMIT_EXCEEDED]
+  @scala.inline
   def CERTIFICATE_SIGNING: CERTIFICATE_SIGNING = "CERTIFICATE_SIGNING".asInstanceOf[CERTIFICATE_SIGNING]
   @scala.inline
   def CES: CES = "CES".asInstanceOf[CES]
@@ -30031,6 +30108,8 @@ object awsDashSdkLibStrings {
   def CREATION_FAILED: CREATION_FAILED = "CREATION_FAILED".asInstanceOf[CREATION_FAILED]
   @scala.inline
   def CREATION_IN_PROGRESS: CREATION_IN_PROGRESS = "CREATION_IN_PROGRESS".asInstanceOf[CREATION_IN_PROGRESS]
+  @scala.inline
+  def CREDENTIALS_ACCESS_FAILURE: CREDENTIALS_ACCESS_FAILURE = "CREDENTIALS_ACCESS_FAILURE".asInstanceOf[CREDENTIALS_ACCESS_FAILURE]
   @scala.inline
   def CRITICAL: CRITICAL = "CRITICAL".asInstanceOf[CRITICAL]
   @scala.inline
@@ -30496,6 +30575,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DEVICE_WAS_OFFLINE: DEVICE_WAS_OFFLINE = "DEVICE_WAS_OFFLINE".asInstanceOf[DEVICE_WAS_OFFLINE]
   @scala.inline
+  def DHCP_FAILURE: DHCP_FAILURE = "DHCP_FAILURE".asInstanceOf[DHCP_FAILURE]
+  @scala.inline
   def DIAGNOSIS: DIAGNOSIS = "DIAGNOSIS".asInstanceOf[DIAGNOSIS]
   @scala.inline
   def DIALOGUE: DIALOGUE = "DIALOGUE".asInstanceOf[DIALOGUE]
@@ -30549,6 +30630,8 @@ object awsDashSdkLibStrings {
   def DML: DML = "DML".asInstanceOf[DML]
   @scala.inline
   def DNS: DNS = "DNS".asInstanceOf[DNS]
+  @scala.inline
+  def DNS_FAILURE: DNS_FAILURE = "DNS_FAILURE".asInstanceOf[DNS_FAILURE]
   @scala.inline
   def DNS_PRIVATE: DNS_PRIVATE = "DNS_PRIVATE".asInstanceOf[DNS_PRIVATE]
   @scala.inline
@@ -32234,6 +32317,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def INTERNET: INTERNET = "INTERNET".asInstanceOf[INTERNET]
   @scala.inline
+  def INTERNET_UNAVAILABLE: INTERNET_UNAVAILABLE = "INTERNET_UNAVAILABLE".asInstanceOf[INTERNET_UNAVAILABLE]
+  @scala.inline
   def INTERPOLATE: INTERPOLATE = "INTERPOLATE".asInstanceOf[INTERPOLATE]
   @scala.inline
   def INTERPOLATE_TICKER: INTERPOLATE_TICKER = "INTERPOLATE_TICKER".asInstanceOf[INTERPOLATE_TICKER]
@@ -32262,6 +32347,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def INVALID_ATTRIBUTE_VALUE_REMOVED: INVALID_ATTRIBUTE_VALUE_REMOVED = "INVALID_ATTRIBUTE_VALUE_REMOVED".asInstanceOf[INVALID_ATTRIBUTE_VALUE_REMOVED]
   @scala.inline
+  def INVALID_CERTIFICATE_AUTHORITY: INVALID_CERTIFICATE_AUTHORITY = "INVALID_CERTIFICATE_AUTHORITY".asInstanceOf[INVALID_CERTIFICATE_AUTHORITY]
+  @scala.inline
   def INVALID_CREDENTIALS: INVALID_CREDENTIALS = "INVALID_CREDENTIALS".asInstanceOf[INVALID_CREDENTIALS]
   @scala.inline
   def INVALID_ECS_SERVICE: INVALID_ECS_SERVICE = "INVALID_ECS_SERVICE".asInstanceOf[INVALID_ECS_SERVICE]
@@ -32271,6 +32358,8 @@ object awsDashSdkLibStrings {
   def INVALID_LAMBDA_CONFIGURATION: INVALID_LAMBDA_CONFIGURATION = "INVALID_LAMBDA_CONFIGURATION".asInstanceOf[INVALID_LAMBDA_CONFIGURATION]
   @scala.inline
   def INVALID_LAMBDA_FUNCTION: INVALID_LAMBDA_FUNCTION = "INVALID_LAMBDA_FUNCTION".asInstanceOf[INVALID_LAMBDA_FUNCTION]
+  @scala.inline
+  def INVALID_PASSWORD_STATE: INVALID_PASSWORD_STATE = "INVALID_PASSWORD_STATE".asInstanceOf[INVALID_PASSWORD_STATE]
   @scala.inline
   def INVALID_PUBLIC_DOMAIN: INVALID_PUBLIC_DOMAIN = "INVALID_PUBLIC_DOMAIN".asInstanceOf[INVALID_PUBLIC_DOMAIN]
   @scala.inline
@@ -33474,6 +33563,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def NETWORK_INTERFACE_LIMIT_EXCEEDED: NETWORK_INTERFACE_LIMIT_EXCEEDED = "NETWORK_INTERFACE_LIMIT_EXCEEDED".asInstanceOf[NETWORK_INTERFACE_LIMIT_EXCEEDED]
   @scala.inline
+  def NETWORK_PROFILE_NOT_FOUND: NETWORK_PROFILE_NOT_FOUND = "NETWORK_PROFILE_NOT_FOUND".asInstanceOf[NETWORK_PROFILE_NOT_FOUND]
+  @scala.inline
   def NET_AMORTIZED_COST: NET_AMORTIZED_COST = "NET_AMORTIZED_COST".asInstanceOf[NET_AMORTIZED_COST]
   @scala.inline
   def NET_UNBLENDED_COST: NET_UNBLENDED_COST = "NET_UNBLENDED_COST".asInstanceOf[NET_UNBLENDED_COST]
@@ -33854,6 +33945,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ORM: ORM = "ORM".asInstanceOf[ORM]
   @scala.inline
+  def OS: OS = "OS".asInstanceOf[OS]
+  @scala.inline
   def OSS: OSS = "OSS".asInstanceOf[OSS]
   @scala.inline
   def OSX: OSX = "OSX".asInstanceOf[OSX]
@@ -33980,6 +34073,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PASSWORD_CHANGE: PASSWORD_CHANGE = "PASSWORD_CHANGE".asInstanceOf[PASSWORD_CHANGE]
   @scala.inline
+  def PASSWORD_NOT_FOUND: PASSWORD_NOT_FOUND = "PASSWORD_NOT_FOUND".asInstanceOf[PASSWORD_NOT_FOUND]
+  @scala.inline
   def PASSWORD_VERIFIER: PASSWORD_VERIFIER = "PASSWORD_VERIFIER".asInstanceOf[PASSWORD_VERIFIER]
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
@@ -33987,6 +34082,8 @@ object awsDashSdkLibStrings {
   def PATCHING: PATCHING = "PATCHING".asInstanceOf[PATCHING]
   @scala.inline
   def PATCH_ID: PATCH_ID = "PATCH_ID".asInstanceOf[PATCH_ID]
+  @scala.inline
+  def PATCH_SET: PATCH_SET = "PATCH_SET".asInstanceOf[PATCH_SET]
   @scala.inline
   def PATH_PARAMETER: PATH_PARAMETER = "PATH_PARAMETER".asInstanceOf[PATH_PARAMETER]
   @scala.inline
@@ -34191,6 +34288,8 @@ object awsDashSdkLibStrings {
   def PRODUCT: PRODUCT = "PRODUCT".asInstanceOf[PRODUCT]
   @scala.inline
   def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
+  @scala.inline
+  def PRODUCT_FAMILY: PRODUCT_FAMILY = "PRODUCT_FAMILY".asInstanceOf[PRODUCT_FAMILY]
   @scala.inline
   def PROFESSION: PROFESSION = "PROFESSION".asInstanceOf[PROFESSION]
   @scala.inline
@@ -36121,6 +36220,8 @@ object awsDashSdkLibStrings {
   def TL: TL = "TL".asInstanceOf[TL]
   @scala.inline
   def TLS: TLS = "TLS".asInstanceOf[TLS]
+  @scala.inline
+  def TLS_VERSION_MISMATCH: TLS_VERSION_MISMATCH = "TLS_VERSION_MISMATCH".asInstanceOf[TLS_VERSION_MISMATCH]
   @scala.inline
   def TLS_WEB_CLIENT_AUTHENTICATION: TLS_WEB_CLIENT_AUTHENTICATION = "TLS_WEB_CLIENT_AUTHENTICATION".asInstanceOf[TLS_WEB_CLIENT_AUTHENTICATION]
   @scala.inline

@@ -15,6 +15,7 @@ class EngineReportingExtension[TContext] protected () extends js.Object {
       /* trace */ apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace, 
       scala.Unit
     ]) = this()
+  var addError: js.Any = js.native
   var addTrace: js.Any = js.native
   var documentAST: js.UndefOr[js.Any] = js.native
   var ensureParentNode: js.Any = js.native
@@ -24,8 +25,10 @@ class EngineReportingExtension[TContext] protected () extends js.Object {
   var operationName: js.UndefOr[js.Any] = js.native
   var options: js.Any = js.native
   var queryString: js.UndefOr[js.Any] = js.native
+  var rewriteError: js.Any = js.native
   var startHrTime: js.Any = js.native
   var trace: apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace = js.native
+  def didEncounterErrors(errors: js.Array[graphqlLib.graphqlMod.GraphQLError]): scala.Unit = js.native
   def executionDidStart(o: apolloDashEngineDashReportingLib.Anon_ExecutionArgs): scala.Unit = js.native
   def requestDidStart(o: apolloDashEngineDashReportingLib.Anon_Context[TContext]): js.Any = js.native
   def willResolveField(
@@ -34,6 +37,5 @@ class EngineReportingExtension[TContext] protected () extends js.Object {
     _context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): (js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Any, scala.Unit]) | scala.Unit = js.native
-  def willSendResponse(o: apolloDashEngineDashReportingLib.Anon_GraphqlResponse): scala.Unit = js.native
 }
 

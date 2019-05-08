@@ -1343,7 +1343,6 @@
 | 0.7485032946594887 | [duplicate-package-checker](./d/duplicate-package-checker-webpack-plugin) | Webpack plugin that warns you when multiple versio
 | 0.7484123255572037 | [video_dot_js](./v/video_dot_js) | An HTML5 and Flash video player with a common API 
 | 0.7484026356794412 | [pem](./p/pem) | Create private keys and certificates with node.js 
-| 0.7482961243576062 | [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti
 | 0.748295614581576 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 0.7482908115543735 | [p-waterfall](./p/p-waterfall) | Run promise-returning & async functions in series,
 | 0.7480765187176996 | [countup_dot_js](./c/countup_dot_js) | Animates a numerical value by counting to it
@@ -1362,7 +1361,6 @@
 | 0.7472757980507564 | [base64-url](./b/base64-url) | Base64 encode, decode, escape and unescape for URL
 | 0.7472419821074053 | [memory-pager](./m/memory-pager) | Access memory using small fixed sized buffers
 | 0.7472159104734082 | [swap-case](./s/swap-case) | Swap the case of a string
-| 0.7471883187771023 | [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js
 | 0.7470744258841815 | [lodash_dot_issymbol](./l/lodash_dot_issymbol) | The lodash method _.isSymbol exported as a module.
 | 0.7470549843180687 | [koa-webpack](./k/koa-webpack) | Development and Hot Reload Middleware for Koa2
 | 0.7470199600638469 | [react-avatar-editor](./r/react-avatar-editor) | Avatar / profile picture component. Resize and cro
@@ -1461,6 +1459,7 @@
 | 0.7419930099860006 | [lodash_dot_ceil](./l/lodash_dot_ceil) | The lodash method _.ceil exported as a module.
 | 0.7419728493161666 | [redlock](./r/redlock) | A node.js redlock implementation for distributed r
 | 0.7419585774911541 | [is-online](./i/is-online) | Check if the internet connection is up
+| 0.7419330683400991 | [google-proto-files](./g/google-proto-files) | All of the Google API's protocol buffer files
 | 0.741870544601656 | [lodash_dot_bindkey](./l/lodash_dot_bindkey) | The lodash method _.bindKey exported as a module.
 | 0.7418259074650662 | [parents](./p/parents) | return all the parent directories for a directory
 | 0.7418190869708333 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization
@@ -2832,7 +2831,6 @@
 | 0.6738280841072832 | [named-regexp-groups](./n/named-regexp-groups) | Regular expressions with named capture groups and 
 | 0.6738087136510982 | [move-file](./m/move-file) | Move a file - Even works across devices
 | 0.6737881936255128 | [d3-drag](./d/d3-drag) | Drag and drop SVG, HTML or Canvas using mouse or t
-| 0.6737718106453592 | [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js
 | 0.6737679684683342 | [mustache-express](./m/mustache-express) | Use mustache, including partials, in Express 3
 | 0.6737611424802985 | [prosemirror-history](./p/prosemirror-history) | Undo history for ProseMirror
 | 0.673735532522605 | [each](./e/each) | Chained and parallel async iterator in one elegant
@@ -3240,6 +3238,7 @@
 | 0.6534690244015808 | [react-dnd-multi-backend](./r/react-dnd-multi-backend) | Multi Backend system compatible with React DnD
 | 0.6534246838777072 | [nunjucks-date](./n/nunjucks-date) | Plugin for nunjucks of momentjs format date
 | 0.6533877782989355 | [gun](./g/gun) | A realtime, decentralized, offline-first, graph da
+| 0.6533783969540545 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | -
 | 0.6533019826224313 | [is-compressed](./i/is-compressed) | Check if a file path is a compressed file
 | 0.6532138971978597 | [browser-report](./b/browser-report) | Report browser settings like whatsmybrowser.org.
 | 0.6531750910029396 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz
@@ -3413,6 +3412,7 @@
 | 0.6425680310578489 | [aws-iot-device-sdk](./a/aws-iot-device-sdk) | AWS IoT Node.js SDK for Embedded Devices
 | 0.6425598810357845 | [gulp-plumber](./g/gulp-plumber) | Prevent pipe breaking caused by errors from gulp p
 | 0.6425040017504278 | [react-visibility-sensor](./r/react-visibility-sensor) | Sensor component for React that notifies you when 
+| 0.642483076338188 | [walkdir](./w/walkdir) | Find files simply. Walks a directory tree emitting
 | 0.6424448350955685 | [photoswipe](./p/photoswipe) | JavaScript gallery
 | 0.6424186224325145 | [iopipe__iopipe](./i/iopipe__iopipe) | The IOpipe agent and plugins
 | 0.6422894693725065 | [passport-bnet](./p/passport-bnet) | Bnet authentication strategy for Passport.
@@ -4492,6 +4492,7 @@
 | 0.5098829163683145 | [datatables_dot_net-colreo](./d/datatables_dot_net-colreorder) | ColReorder for DataTables
 | 0.5097848452054672 | [object-path](./o/object-path) | Access deep object properties using a path
 | 0.5097596895190867 | [readline-transform](./r/readline-transform) | Transform stream to read line-by-line and write a 
+| 0.5097580694382219 | [react-big-scheduler](./r/react-big-scheduler) | A scheduler and resource planning component built 
 | 0.5095336216492684 | [bytebuffer](./b/bytebuffer) | The swiss army knife for binary data in JavaScript
 | 0.509298706835649 | [object-refs](./o/object-refs) | Minimal bi-directional object references for JavaS
 | 0.5092271619274773 | [multer-s3](./m/multer-s3) | Streaming multer storage engine for AWS S3
@@ -4590,6 +4591,7 @@
 | 0.4911262006485143 | [socketio-jwt-auth](./s/socketio-jwt-auth) | Socket.io authentication middleware using Json Web
 | 0.49073402526035226 | [react-github-button](./r/react-github-button) | Unofficial GitHub buttons in React.
 | 0.4907115782464338 | [react-notification-system](./r/react-notification-system) | A React Notification System fully customized
+| 0.4906475509472151 | [osenv](./o/osenv) | Look up environment settings specific to different
 | 0.4905429848568138 | [koa-static-cache](./k/koa-static-cache) | Static cache for koa
 | 0.49054287160061394 | [force-graph](./f/force-graph) | 2D force-directed graph rendered on HTML5 canvas
 | 0.49029283160432624 | [tabulator](./t/tabulator) | Put data into tables
@@ -6129,6 +6131,7 @@
 | 0.21408416091560445 | [react-native-sensor-manag](./r/react-native-sensor-manager) | A react-native module that allows you to use the a
 | 0.21289719627081888 | [paho-mqtt](./p/paho-mqtt) | Eclipse Paho JavaScript MQTT client for Browsers
 | 0.21287783116199996 | [jupyterlab__mainmenu](./j/jupyterlab__mainmenu) | JupyterLab - Main Menu
+| 0.21281049990599266 | [grpc-gcp](./g/grpc-gcp) | Extension for supporting Google Cloud Platform spe
 | 0.21273519266237287 | [js-combinatorics](./j/js-combinatorics) | Simple combinatorics like power set, combination, 
 | 0.21236288067731252 | [closure-compiler](./c/closure-compiler) | Bindings to Google's Closure Compiler
 | 0.21225619111292868 | [react-native-background-t](./r/react-native-background-timer) | Emit event periodically (even when app is in the b

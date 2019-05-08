@@ -15,6 +15,7 @@ class StylesManager () extends js.Object {
 @JSImport("survey-knockout", "StylesManager")
 @js.native
 object StylesManager extends js.Object {
+  var Enabled: scala.Boolean = js.native
   var Media: org.scalablytyped.runtime.StringDictionary[surveyDashKnockoutLib.Anon_Media] = js.native
   var Styles: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var ThemeColors: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native

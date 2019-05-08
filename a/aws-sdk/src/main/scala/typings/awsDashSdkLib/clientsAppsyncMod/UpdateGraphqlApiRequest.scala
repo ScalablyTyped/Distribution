@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait UpdateGraphqlApiRequest extends js.Object {
   /**
+    * A list of additional authentication providers for the GraphqlApi API.
+    */
+  var additionalAuthenticationProviders: js.UndefOr[AdditionalAuthenticationProviders] = js.undefined
+  /**
     * The API ID.
     */
   var apiId: String
@@ -37,12 +41,14 @@ object UpdateGraphqlApiRequest {
   def apply(
     apiId: String,
     name: String,
+    additionalAuthenticationProviders: AdditionalAuthenticationProviders = null,
     authenticationType: AuthenticationType = null,
     logConfig: LogConfig = null,
     openIDConnectConfig: OpenIDConnectConfig = null,
     userPoolConfig: UserPoolConfig = null
   ): UpdateGraphqlApiRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId, name = name)
+    if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders)
     if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
     if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig)
     if (openIDConnectConfig != null) __obj.updateDynamic("openIDConnectConfig")(openIDConnectConfig)

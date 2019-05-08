@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val __RouterContext: reactLib.reactMod.Context[
+    RouteComponentProps[js.Object, StaticContext, historyLib.historyMod.LocationState]
+  ] = js.native
   def generatePath(pattern: java.lang.String): java.lang.String = js.native
   def generatePath(
     pattern: java.lang.String,

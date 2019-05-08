@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg"
-version := "2.22.2-dbe50f"
+version := "2.22.2-5069a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-94d189",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "urllib" % "2.33.4-107f97")
+  "org.scalablytyped" %%% "urllib" % "2.34.0-107f97")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

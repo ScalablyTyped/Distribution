@@ -13,9 +13,7 @@ package object seamlessDashImmutableMod {
     seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableNs.MakeImmutable[js.Any, O]
   ])
   /** An ImmutableArray provides read-only access to the array elements, and provides functions (such as `map()`) that return immutable data structures. */
-  type ImmutableArray[T] = stdLib.Readonly[
-    seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.Remaining[T] with seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.Additions[T] with seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.Overrides[T]
-  ]
+  type ImmutableArray[T] = stdLib.Readonly[seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.Remaining[T]] with seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.Additions[T] with seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.Overrides[T] with seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableArrayNs.ReadOnlyIndexer[T]
   /** An ImmutableDate disables the use of mutating functions like `setDate` and `setFullYear`. */
   type ImmutableDate = seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableDateNs.Remaining with seamlessDashImmutableLib.seamlessDashImmutableMod.ImmutableDateNs.Additions
   type ImmutableObject[T] = ImmutableObjectMixin[T] with seamlessDashImmutableLib.seamlessDashImmutableLibStrings.ImmutableObject with T

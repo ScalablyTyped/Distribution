@@ -47,7 +47,7 @@ class SlicerItem ()
   val key: java.lang.String = js.native
   /**
     *
-    * Represents the value displayed on UI.
+    * Represents the value displayed in the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

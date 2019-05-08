@@ -77,5 +77,9 @@ class Fluxible () extends js.Object {
     * @async Rehydration may require more asset loading or async IO calls
     */
   def rehydrate(state: js.Any): scala.Unit = js.native
+  def rehydrate(
+    state: js.Any,
+    callback: js.Function2[/* err */ stdLib.Error, /* context */ FluxibleContext, scala.Unit]
+  ): scala.Unit = js.native
 }
 

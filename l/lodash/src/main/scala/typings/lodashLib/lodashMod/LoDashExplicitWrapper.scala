@@ -2842,6 +2842,13 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     ]
   ): LoDashExplicitWrapper[js.Tuple2[js.Array[T], js.Array[T]]] = js.native
   /**
+    * @see _.partition
+    */
+  def partition[T, U /* <: T */](
+    `this`: LoDashExplicitWrapper[js.UndefOr[List[T] | scala.Null]],
+    callback: ValueIteratorTypeGuard[T, U]
+  ): LoDashExplicitWrapper[js.Tuple2[js.Array[U], js.Array[stdLib.Exclude[T, U]]]] = js.native
+  /**
     * @see _.pick
     */
   def pick[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[T | scala.Null]], props: PropertyPath*): LoDashExplicitWrapper[PartialObject[T]] = js.native

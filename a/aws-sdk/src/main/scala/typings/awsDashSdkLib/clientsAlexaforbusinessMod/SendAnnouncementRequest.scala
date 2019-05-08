@@ -19,7 +19,7 @@ trait SendAnnouncementRequest extends js.Object {
     */
   var RoomFilters: FilterList
   /**
-    * The time to live for an announcement. If delivery doesn't occur within this time, the announcement will not be delivered.
+    * The time to live for an announcement. Default is 300. If delivery doesn't occur within this time, the announcement is not delivered.
     */
   var TimeToLiveInSeconds: js.UndefOr[TimeToLiveInSeconds] = js.undefined
 }

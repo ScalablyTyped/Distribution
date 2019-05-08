@@ -13,4 +13,5 @@ package object nodeDashPushnotificationsMod {
     /* settings */ Settings, 
     scala.Unit
   ]
+  type RegistrationId = java.lang.String | webDashPushLib.webDashPushMod.PushSubscription
 }

@@ -34,6 +34,10 @@ trait DescribePatchGroupStateResult extends js.Object {
     * The number of instances with patches that aren't applicable.
     */
   var InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.undefined
+  /**
+    * The number of instances with NotApplicable patches beyond the supported limit, which are not reported by name to Systems Manager Inventory.
+    */
+  var InstancesWithUnreportedNotApplicablePatches: js.UndefOr[Integer] = js.undefined
 }
 
 object DescribePatchGroupStateResult {
@@ -45,7 +49,8 @@ object DescribePatchGroupStateResult {
     InstancesWithInstalledPatches: js.UndefOr[Integer] = js.undefined,
     InstancesWithInstalledRejectedPatches: js.UndefOr[InstancesCount] = js.undefined,
     InstancesWithMissingPatches: js.UndefOr[Integer] = js.undefined,
-    InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.undefined
+    InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.undefined,
+    InstancesWithUnreportedNotApplicablePatches: js.UndefOr[Integer] = js.undefined
   ): DescribePatchGroupStateResult = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Instances)) __obj.updateDynamic("Instances")(Instances)
@@ -55,6 +60,7 @@ object DescribePatchGroupStateResult {
     if (!js.isUndefined(InstancesWithInstalledRejectedPatches)) __obj.updateDynamic("InstancesWithInstalledRejectedPatches")(InstancesWithInstalledRejectedPatches)
     if (!js.isUndefined(InstancesWithMissingPatches)) __obj.updateDynamic("InstancesWithMissingPatches")(InstancesWithMissingPatches)
     if (!js.isUndefined(InstancesWithNotApplicablePatches)) __obj.updateDynamic("InstancesWithNotApplicablePatches")(InstancesWithNotApplicablePatches)
+    if (!js.isUndefined(InstancesWithUnreportedNotApplicablePatches)) __obj.updateDynamic("InstancesWithUnreportedNotApplicablePatches")(InstancesWithUnreportedNotApplicablePatches)
     __obj.asInstanceOf[DescribePatchGroupStateResult]
   }
 }

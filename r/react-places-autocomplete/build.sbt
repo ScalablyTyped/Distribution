@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-places-autocomplete"
-version := "7.2-dt-20190219Z-4ffb75"
+version := "7.2-dt-20190219Z-297840"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "googlemaps" % "3.30-dt-20190322Z-692ffa",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190504Z-19278e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-c1645f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

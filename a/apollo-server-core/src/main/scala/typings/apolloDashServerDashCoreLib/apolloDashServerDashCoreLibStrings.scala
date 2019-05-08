@@ -10,6 +10,9 @@ object apolloDashServerDashCoreLibStrings {
   sealed trait RecursivePartial extends js.Object
   
   @js.native
+  sealed trait `apq:` extends js.Object
+  
+  @js.native
   sealed trait cache extends js.Object
   
   @js.native
@@ -17,6 +20,12 @@ object apolloDashServerDashCoreLibStrings {
   
   @js.native
   sealed trait debug extends js.Object
+  
+  @js.native
+  sealed trait document extends js.Object
+  
+  @js.native
+  sealed trait executor extends js.Object
   
   @js.native
   sealed trait fieldResolver extends js.Object
@@ -32,6 +41,12 @@ object apolloDashServerDashCoreLibStrings {
   
   @js.native
   sealed trait method extends js.Object
+  
+  @js.native
+  sealed trait operation extends js.Object
+  
+  @js.native
+  sealed trait operationName extends js.Object
   
   @js.native
   sealed trait plugins extends js.Object
@@ -51,11 +66,17 @@ object apolloDashServerDashCoreLibStrings {
   @scala.inline
   def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   @scala.inline
+  def `apq:`: `apq:` = "apq:".asInstanceOf[`apq:`]
+  @scala.inline
   def cache: cache = "cache".asInstanceOf[cache]
   @scala.inline
   def dataSources: dataSources = "dataSources".asInstanceOf[dataSources]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
+  def document: document = "document".asInstanceOf[document]
+  @scala.inline
+  def executor: executor = "executor".asInstanceOf[executor]
   @scala.inline
   def fieldResolver: fieldResolver = "fieldResolver".asInstanceOf[fieldResolver]
   @scala.inline
@@ -66,6 +87,10 @@ object apolloDashServerDashCoreLibStrings {
   def headers: headers = "headers".asInstanceOf[headers]
   @scala.inline
   def method: method = "method".asInstanceOf[method]
+  @scala.inline
+  def operation: operation = "operation".asInstanceOf[operation]
+  @scala.inline
+  def operationName: operationName = "operationName".asInstanceOf[operationName]
   @scala.inline
   def plugins: plugins = "plugins".asInstanceOf[plugins]
   @scala.inline

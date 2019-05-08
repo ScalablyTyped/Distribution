@@ -35,6 +35,8 @@ trait ConnectionBase
     * Each state change emits its associated event name.
     */
   var readyState: scala.Double = js.native
+  /** mapping of ready states */
+  var states: ConnectionStates = js.native
   /** Closes the connection */
   def close(): js.Promise[scala.Unit] = js.native
   def close(callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
@@ -49,9 +51,13 @@ trait ConnectionBase
   def collection(name: java.lang.String): Collection = js.native
   def collection(name: java.lang.String, options: js.Any): Collection = js.native
   /** Helper for creating a collection */
-  def createCollection(name: java.lang.String): js.Promise[scala.Unit] = js.native
-  def createCollection(name: java.lang.String, options: mongodbLib.mongodbMod.CollectionCreateOptions): js.Promise[scala.Unit] = js.native
-  def createCollection(
+  def createCollection[T](name: java.lang.String): js.Promise[mongodbLib.mongodbMod.Collection[T]] = js.native
+  def createCollection[T](
+    name: java.lang.String,
+    cb: js.Function2[/* err */ js.Any, /* collection */ mongodbLib.mongodbMod.Collection[T], scala.Unit]
+  ): js.Promise[scala.Unit] = js.native
+  def createCollection[T](name: java.lang.String, options: mongodbLib.mongodbMod.CollectionCreateOptions): js.Promise[mongodbLib.mongodbMod.Collection[T]] = js.native
+  def createCollection[T](
     name: java.lang.String,
     options: mongodbLib.mongodbMod.CollectionCreateOptions,
     cb: js.Function2[
@@ -59,7 +65,7 @@ trait ConnectionBase
       /* collection */ mongodbLib.mongodbMod.Collection[mongodbLib.Default], 
       scala.Unit
     ]
-  ): js.Promise[scala.Unit] = js.native
+  ): js.Promise[mongodbLib.mongodbMod.Collection[T]] = js.native
   /**
     * Removes the model named `name` from this connection, if it exists. You can
     * use this function to clean up any models you created in your tests to
@@ -100,71 +106,24 @@ trait ConnectionBase
   def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_], collection: java.lang.String): U = js.native
   /**
     * Opens the connection to MongoDB.
-    * @deprecated open() is deprecated in mongoose >= 4.11.0
-    * @param mongodb://uri or the host to which you are connecting
-    * @param database database name
-    * @param port database port
+    * @param uri mongodb connection string
     * @param options Mongoose forces the db option forceServerObjectId false and cannot be overridden.
     *   Mongoose defaults the server auto_reconnect options to true which can be overridden.
     *   See the node-mongodb-native driver instance for options that it understands.
     *   Options passed take precedence over options included in connection strings.
     */
-  def open(connection_string: java.lang.String): js.Any = js.native
-  def open(connection_string: java.lang.String, database: java.lang.String): js.Any = js.native
-  def open(connection_string: java.lang.String, database: java.lang.String, port: scala.Double): js.Any = js.native
-  def open(
-    connection_string: java.lang.String,
-    database: java.lang.String,
-    port: scala.Double,
-    options: ConnectionOpenOptions
-  ): js.Any = js.native
-  def open(
-    connection_string: java.lang.String,
-    database: java.lang.String,
-    port: scala.Double,
-    options: ConnectionOpenOptions,
-    callback: js.Function1[/* err */ js.Any, scala.Unit]
-  ): js.Any = js.native
-  /**
-    * Opens the connection to a replica set.
-    * @param uris comma-separated mongodb:// URIs
-    * @param database database name if not included in uris
-    * @param options passed to the internal driver
-    */
-  def openSet(uris: java.lang.String): js.Any = js.native
-  def openSet(uris: java.lang.String, database: java.lang.String): js.Any = js.native
-  def openSet(uris: java.lang.String, database: java.lang.String, options: ConnectionOpenSetOptions): js.Any = js.native
-  def openSet(
-    uris: java.lang.String,
-    database: java.lang.String,
-    options: ConnectionOpenSetOptions,
-    callback: js.Function1[/* err */ js.Any, scala.Unit]
-  ): js.Any = js.native
-  /**
-    * Opens the connection to MongoDB.
-    * @param mongodb://uri or the host to which you are connecting
-    * @param database database name
-    * @param port database port
-    * @param options Mongoose forces the db option forceServerObjectId false and cannot be overridden.
-    *   Mongoose defaults the server auto_reconnect options to true which can be overridden.
-    *   See the node-mongodb-native driver instance for options that it understands.
-    *   Options passed take precedence over options included in connection strings.
-    */
-  def openUri(connection_string: java.lang.String): js.Any = js.native
-  def openUri(connection_string: java.lang.String, database: java.lang.String): js.Any = js.native
-  def openUri(connection_string: java.lang.String, database: java.lang.String, port: scala.Double): js.Any = js.native
+  def openUri(uri: java.lang.String): js.Promise[Connection] = js.native
   def openUri(
-    connection_string: java.lang.String,
-    database: java.lang.String,
-    port: scala.Double,
-    options: ConnectionOpenOptions
-  ): js.Any = js.native
+    uri: java.lang.String,
+    callback: js.Function2[/* err */ js.Any, /* conn */ js.UndefOr[Connection], scala.Unit]
+  ): Connection = js.native
+  def openUri(uri: java.lang.String, options: ConnectionOptions): js.Promise[Connection] = js.native
   def openUri(
-    connection_string: java.lang.String,
-    database: java.lang.String,
-    port: scala.Double,
-    options: ConnectionOpenOptions,
-    callback: js.Function1[/* err */ js.Any, scala.Unit]
-  ): js.Any = js.native
+    uri: java.lang.String,
+    options: ConnectionOptions,
+    callback: js.Function2[/* err */ js.Any, /* conn */ js.UndefOr[Connection], scala.Unit]
+  ): Connection with mongooseLib.Anon_Catch = js.native
+  @JSName("openUri")
+  def `openUri_<intersection>`(uri: java.lang.String, options: ConnectionOptions): Connection with mongooseLib.Anon_Catch = js.native
 }
 

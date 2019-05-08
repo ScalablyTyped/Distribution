@@ -1,0 +1,7 @@
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibraryScoped(google-cloud,Some(tasks)) [id => @google-cloud/tasks, phase => typescript, file => ../types/google-cloud__tasks/index.d.ts] 
+[debug] PhaseRunner.scala:82 Success [id => @google-cloud/tasks, phase => typescript] 
+[warn ] PhaseRunner.scala:68 Failed because of, [@grpc/grpc-js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js/build/src/client.d.ts): Parse error at 28.16 end of input expected] [id => @google-cloud/tasks, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [@grpc/grpc-js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js/build/src/client.d.ts): Parse error at 28.16 end of input expected] [id => @google-cloud/tasks, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [@grpc/grpc-js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js/build/src/client.d.ts): Parse error at 28.16 end of input expected] [id => @google-cloud/tasks, phase => scala.js] 
+[error] PhaseRunner.scala:86 Failure, [@grpc/grpc-js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js/build/src/client.d.ts): Parse error at 28.16 end of input expected] [id => @google-cloud/tasks, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [@grpc/grpc-js => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@grpc/grpc-js/build/src/client.d.ts): Parse error at 28.16 end of input expected] [id => @google-cloud/tasks, phase => publish] 

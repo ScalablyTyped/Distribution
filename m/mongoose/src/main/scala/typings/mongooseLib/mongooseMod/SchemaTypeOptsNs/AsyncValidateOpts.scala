@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AsyncValidateOpts extends ValidateOptsBase {
+  /** deprecated */
   var isAsync: mongooseLib.mongooseLibNumbers.`true` = js.native
   @JSName("validator")
   var validator_Original: AsyncValidateFn[_] = js.native

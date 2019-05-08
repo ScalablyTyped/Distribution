@@ -36,6 +36,13 @@ object ReduxRouterNs extends js.Object {
   class Switch ()
     extends reduxDashRouterLib.libReduxRouterMod.defaultNs.Switch
   
+  val __RouterContext: reactLib.reactMod.Context[
+    reactDashRouterLib.reactDashRouterMod.RouteComponentProps[
+      js.Object, 
+      reactDashRouterLib.reactDashRouterMod.StaticContext, 
+      historyLib.historyMod.LocationState
+    ]
+  ] = js.native
   def generatePath(pattern: java.lang.String): java.lang.String = js.native
   def generatePath(
     pattern: java.lang.String,

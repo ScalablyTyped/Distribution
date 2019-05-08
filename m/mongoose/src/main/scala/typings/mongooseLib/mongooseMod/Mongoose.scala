@@ -16,7 +16,7 @@ trait Mongoose extends js.Object {
   ] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
-  var STATES: js.Any = js.native
+  var STATES: ConnectionStates = js.native
   val SchemaNs: mongooseLib.Anon_Types = js.native
   // Interfaces specific to schema type options should be scoped in this namespace
   val SchemaTypeOptsNs: js.Any = js.native
@@ -28,18 +28,18 @@ trait Mongoose extends js.Object {
   def connect(
     uris: java.lang.String,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
-  ): scala.Null = js.native
+  ): js.Promise[Mongoose] = js.native
   def connect(uris: java.lang.String, options: ConnectionOptions): js.Promise[Mongoose] = js.native
   def connect(
     uris: java.lang.String,
     options: ConnectionOptions,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
-  ): scala.Null = js.native
+  ): js.Promise[Mongoose] = js.native
   def createConnection(): Connection = js.native
   def createConnection(uri: java.lang.String): Connection with mongooseLib.Anon_Catch = js.native
   def createConnection(uri: java.lang.String, options: ConnectionOptions): Connection with mongooseLib.Anon_Catch = js.native
   def disconnect(): js.Promise[scala.Unit] = js.native
-  def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Null = js.native
+  def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
   def get(key: java.lang.String): js.Any = js.native
   def model[T /* <: Document */](name: java.lang.String): Model[T, js.Object] = js.native
   def model[T /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[T, js.Object] = js.native

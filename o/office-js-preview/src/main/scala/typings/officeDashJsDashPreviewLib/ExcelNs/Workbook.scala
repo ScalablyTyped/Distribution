@@ -266,21 +266,21 @@ class Workbook ()
   def getActiveCell(): Range = js.native
   /**
     *
-    * Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke this statement
+    * Gets the currently active chart in the workbook. If there is no active chart, an exception is thrown.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChart(): Chart = js.native
   /**
     *
-    * Gets the currently active chart in the workbook. If there is no active chart, will return null object
+    * Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChartOrNullObject(): Chart = js.native
   /**
     *
-    * Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke this statement.
+    * Gets the currently active slicer in the workbook. If there is no active slicer, an exception is thrown.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -288,7 +288,7 @@ class Workbook ()
   def getActiveSlicer(): Slicer = js.native
   /**
     *
-    * Gets the currently active slicer in the workbook. If there is no active slicer, will return null object
+    * Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

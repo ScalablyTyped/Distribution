@@ -2096,11 +2096,10 @@
 | [google-cloud__datastore](./g/google-cloud__datastore) | Cloud Datastore Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google datastore, datastore |
 | [google-cloud__kms](./g/google-cloud__kms) | Google Cloud Key Management Service (KMS) API clie | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google kms, kms, Google Cloud Key Management Service (KMS) API |
 | [google-cloud__paginator](./g/google-cloud__paginator) | A result paging utility used by Google node.js mod | - |
+| [google-cloud__precise-dat](./g/google-cloud__precise-date) | - | - |
 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token | - |
 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl | - |
-| [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
 | [google-cloud__storage](./g/google-cloud__storage) | Cloud Storage Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
-| [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
@@ -2110,6 +2109,7 @@
 | [google-maps](./g/google-maps) | Wrapper for asynchronously used Google Maps API | google, maps, asynchronous, browser, wrapper |
 | [google-maps-react](./g/google-maps-react) | Google maps container | - |
 | [google-p12-pem](./g/google-p12-pem) | Convert Google .p12 keys to .pem keys | - |
+| [google-proto-files](./g/google-proto-files) | All of the Google API's protocol buffer files | google, proto, protobuf, protocol buffer, grpc |
 | [google-protobuf](./g/google-protobuf) | Protocol Buffers for JavaScript | - |
 | [google-translate-api](./g/google-translate-api) | A free and unlimited API for Google Translate | translate, translator, google, translate, api, free, language |
 | [google__maps](./g/google__maps) | Node.js client library for Google Maps API Web Ser | google, maps, googlemaps, geo, geocode, timezone, api, client, roads, directions, navigation |
@@ -2174,6 +2174,7 @@
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
 | [grpc](./g/grpc) | gRPC Library for Node | - |
 | [grpc-error](./g/grpc-error) | Utility Error class suitable for gRPC error respon | protocol buffer, protobuf, grpc |
+| [grpc-gcp](./g/grpc-gcp) | Extension for supporting Google Cloud Platform spe | google, grpc, cloud, gcp |
 | [grpc__proto-loader](./g/grpc__proto-loader) | gRPC utility library for loading .proto files | - |
 | [grunt](./g/grunt) | The JavaScript Task Runner | task, async, cli, minify, uglify, build, lodash, unit, test, qunit, nodeunit, server, init, scaffold, make, jake, tool |
 | [gsap](./g/gsap) | GSAP is a JavaScript library for creating high-per | animation, TweenLite, TweenMax, TimelineLite, TimelineMax, GSAP, GreenSock, easing, EasePack, PixiPlugin, CustomEase, jQuery, jquery.gsap.js, Bezier, SVG, 3D, 2D, transform, morph, morphing, svg, tweening |
@@ -4262,7 +4263,6 @@
 | [oboe](./o/oboe) | Oboe.js reads json, giving you the objects as they | json, parser, stream, progressive, http, sax, event, emitter, async, browser |
 | [observe-js](./o/observe-js) | observe-js is a library for observing changes on J | - |
 | [oclazyload](./o/oclazyload) | Load modules on demand (lazy load) with angularJS | lazy load, lazy-load, load on demand, module, angular, angularJS |
-| [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti | octokit, github, api, rest |
 | [octokit__rest](./o/octokit__rest) | GitHub REST API client for Node.js | octokit, github, rest, api-client |
 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s | - |
 | [oembed-parser](./o/oembed-parser) | Get oEmbed data from given URL. | oembed, extractor, parser, util |
@@ -4325,6 +4325,7 @@
 | [os-locale](./o/os-locale) | Get the system locale | locale, lang, language, system, os, string, str, user, country, id, identifier, region |
 | [os-name](./o/os-name) | Get the name of the current operating system. Exam | os, operating, system, platform, name, title, release, version, macos, windows, linux |
 | [os-tmpdir](./o/os-tmpdir) | Node.js os.tmpdir() ponyfill | built-in, core, ponyfill, polyfill, shim, os, tmpdir, tempdir, tmp, temp, dir, directory, env, environment |
+| [osenv](./o/osenv) | Look up environment settings specific to different | environment, variable, home, tmpdir, path, prompt, ps1 |
 | [osmosis](./o/osmosis) | Web scraper for NodeJS | web, scraper, crawler, html, xml, dom, parser |
 | [osmtogeojson](./o/osmtogeojson) | convert OSM to geojson | openstreetmap, geojson |
 | [osrm](./o/osrm) | The Open Source Routing Machine is a high performa | - |
@@ -4908,6 +4909,7 @@
 | [react-beautiful-dnd](./r/react-beautiful-dnd) | Beautiful and accessible drag and drop for lists w | drag and drop, dnd, sortable, reorder, reorderable, react, react.js, natural, beautiful |
 | [react-better-password](./r/react-better-password) | Password input for ReactJS that mimics mobile pass | react, react-component, password, mask, mobile, timeout, last, character |
 | [react-big-calendar](./r/react-big-calendar) | Calendar | scheduler, react-component, react, calendar, events, full calendar |
+| [react-big-scheduler](./r/react-big-scheduler) | A scheduler and resource planning component built  | scheduler, react-component, react, react-big-scheduler, resource planning, antd |
 | [react-blessed](./r/react-blessed) | A react renderer for blessed. | blessed, react, renderer, cli, interface |
 | [react-body-classname](./r/react-body-classname) | A declarative, nested way to manipulate your body' | react, component, react-component, body.className, title, jsx |
 | [react-bootstrap](./r/react-bootstrap) | Bootstrap 4 components built with React | react, ecosystem-react, react-component, bootstrap |
@@ -6646,6 +6648,7 @@
 | [waitme](./w/waitme) | - | - |
 | [wake_on_lan](./w/wake_on_lan) | generate and send Wake-on-LAN magic packets | - |
 | [walk](./w/walk) | A node port of python's os.walk | util, os, sys, fs, walk, walkSync |
+| [walkdir](./w/walkdir) | Find files simply. Walks a directory tree emitting | find, walk, tree, files, fs |
 | [wallabyjs](./w/wallabyjs) | - | - |
 | [wallop](./w/wallop) | wallop is a minimal 4kb library for showing & hidi | slider, css, js, minimal, responsive, wallop |
 | [wallpaper](./w/wallpaper) | Manage the desktop wallpaper | macos, linux, windows, wallpaper, desktop, background, image, picture, photo |

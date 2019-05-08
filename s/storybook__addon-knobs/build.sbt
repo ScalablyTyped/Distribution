@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-knobs"
-version := "5.0-dt-20190418Z-d21f3b"
+version := "5.0-dt-20190418Z-806619"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190504Z-19278e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-c1645f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190213Z-653265")
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190213Z-60b2bf")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

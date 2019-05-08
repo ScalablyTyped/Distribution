@@ -23,7 +23,7 @@ trait WorksheetSingleClickedEventArgs extends js.Object {
   var address: java.lang.String
   /**
     *
-    * It is a double value that represents the distance, in points, from the left-clicked/tapped point to the left(right for RTL) gridline edge of the left-clicked/tapped cell.
+    * The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the left-clicked/tapped cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -31,7 +31,7 @@ trait WorksheetSingleClickedEventArgs extends js.Object {
   var offsetX: scala.Double
   /**
     *
-    * It is a double value that represents the distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped cell.
+    * The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

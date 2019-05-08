@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GraphQLResponse extends js.Object {
   var data: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
-  var errors: js.UndefOr[js.Array[graphqlLib.graphqlMod.GraphQLError]] = js.undefined
+  var errors: js.UndefOr[js.Array[graphqlLib.errorFormatErrorMod.GraphQLFormattedError]] = js.undefined
   var extensions: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var http: js.UndefOr[
     stdLib.Pick[
@@ -21,7 +21,7 @@ object GraphQLResponse {
   @scala.inline
   def apply(
     data: stdLib.Record[java.lang.String, _] = null,
-    errors: js.Array[graphqlLib.graphqlMod.GraphQLError] = null,
+    errors: js.Array[graphqlLib.errorFormatErrorMod.GraphQLFormattedError] = null,
     extensions: stdLib.Record[java.lang.String, _] = null,
     http: stdLib.Pick[
       apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Response, 

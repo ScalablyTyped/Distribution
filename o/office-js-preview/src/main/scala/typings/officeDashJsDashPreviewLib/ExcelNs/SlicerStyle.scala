@@ -29,7 +29,7 @@ class SlicerStyle ()
   var name: java.lang.String = js.native
   /**
     *
-    * True means that this SlicerStyle object is read-only. Read-only.
+    * Specifies if this SlicerStyle object is read-only. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

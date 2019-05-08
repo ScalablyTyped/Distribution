@@ -16,5 +16,8 @@ object ^ extends js.Object {
     input: apolloDashEnvLib.libFetchFetchMod.RequestInfo,
     init: apolloDashEnvLib.libFetchFetchMod.RequestInit
   ): js.Promise[apolloDashEnvLib.libFetchFetchMod.Response] = js.native
+  def isNotNullOrUndefined[T](): /* is T */ scala.Boolean = js.native
+  def isNotNullOrUndefined[T](value: T): /* is T */ scala.Boolean = js.native
+  def mapValues[T, U](`object`: stdLib.Record[java.lang.String, T], callback: js.Function1[/* value */ T, U]): stdLib.Record[java.lang.String, U] = js.native
 }
 

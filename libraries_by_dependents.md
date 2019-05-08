@@ -578,6 +578,7 @@
 | 404 | [command-exists](./c/command-exists) | check whether a command line command exists in the
 | 404 | [content-type](./c/content-type) | Create and parse HTTP Content-Type header
 | 404 | [leveldown](./l/leveldown) | A low-level Node.js LevelDB binding
+| 404 | [osenv](./o/osenv) | Look up environment settings specific to different
 | 403 | [urllib](./u/urllib) | Help in opening URLs (mostly HTTP) in a complex wo
 | 402 | [clipboard](./c/clipboard) | Modern copy to clipboard. No Flash. Just 2kb
 | 402 | [crc](./c/crc) | Module for calculating Cyclic Redundancy Check (CR
@@ -1180,6 +1181,7 @@
 | 167 | [graphql-subscriptions](./g/graphql-subscriptions) | GraphQL subscriptions for node.js
 | 167 | [react-copy-to-clipboard](./r/react-copy-to-clipboard) | Copy-to-clipboard React component
 | 167 | [svg-sprite-loader](./s/svg-sprite-loader) | Webpack loader for creating SVG sprites
+| 167 | [walkdir](./w/walkdir) | Find files simply. Walks a directory tree emitting
 | 166 | [csso](./c/csso) | CSS minifier with structural optimisations
 | 166 | [dot-object](./d/dot-object) | dot-object makes it possible to transform and read
 | 166 | [react-addons-transition-g](./r/react-addons-transition-group) | The code in this package has moved. We recommend y
@@ -1596,7 +1598,6 @@
 | 106 | [simple-peer](./s/simple-peer) | Simple one-to-one WebRTC video/voice and data chan
 | 106 | [uri-js](./u/uri-js) | An RFC 3986/3987 compliant, scheme extendable URI/
 | 105 | [connect-timeout](./c/connect-timeout) | Request timeout middleware for Connect/Express
-| 105 | [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js
 | 105 | [jsonic](./j/jsonic) | A JSON parser that isn't strict.
 | 105 | [page](./p/page) | Tiny client-side router
 | 105 | [through2-map](./t/through2-map) | A through2 to create an Array.prototype.map analog
@@ -3523,6 +3524,7 @@
 | 17 | [express-domain-middleware](./e/express-domain-middleware) | wrap express request/response with node domains
 | 17 | [falcor-json-graph](./f/falcor-json-graph) | A set of factory functions for creating JSON Graph
 | 17 | [geodesy](./g/geodesy) | Libraries of geodesy functions
+| 17 | [google-proto-files](./g/google-proto-files) | All of the Google API's protocol buffer files
 | 17 | [graphlib-dot](./g/graphlib-dot) | A DOT language parser / writer for graphlib
 | 17 | [gulp-strip-comments](./g/gulp-strip-comments) | Strip comments from code
 | 17 | [http-cache-semantics](./h/http-cache-semantics) | Parses Cache-Control and other headers. Helps buil
@@ -4962,6 +4964,7 @@
 | 3 | [get-emoji](./g/get-emoji) | you give emoji name, we give you an emoji
 | 3 | [get-node-dimensions](./g/get-node-dimensions) | Get accurate element dimensions, even if it's hidd
 | 3 | [get-range](./g/get-range) | Lazy number range generator
+| 3 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | -
 | 3 | [graphite-udp](./g/graphite-udp) | Graphite UDP client for Node.js
 | 3 | [graphql-list-fields](./g/graphql-list-fields) | Get a list of fields while resolving a GraphQL que
 | 3 | [gulp-jsonmin](./g/gulp-jsonmin) | Minifies json files by parsing and re-stringifying
@@ -5565,12 +5568,12 @@
 | 1 | [git-add-remote](./g/git-add-remote) | API for adding git remotes.
 | 1 | [gl-react-expo](./g/gl-react-expo) | React Native via Expo implementation of gl-react, 
 | 1 | [go](./g/go) | Create and use boilerplates with ease
-| 1 | [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js
 | 1 | [grammarkdown](./g/grammarkdown) | Markdown-like DSL for defining syntactic grammars 
 | 1 | [graphql-api-koa](./g/graphql-api-koa) | GraphQL API Koa middleware; the first Node.js Grap
 | 1 | [graphql-react](./g/graphql-react) | A lightweight but powerful GraphQL client for Reac
 | 1 | [graphql-resolve-batch](./g/graphql-resolve-batch) | A GraphQL batching model which groups execution by
 | 1 | [graphql-type-uuid](./g/graphql-type-uuid) | UUID scalar type for GraphQL.js
+| 1 | [grpc-gcp](./g/grpc-gcp) | Extension for supporting Google Cloud Platform spe
 | 1 | [gtin](./g/gtin) | GTIN (UPC, EAN, ITF, etc.) utilities.
 | 1 | [gulp-coffeeify](./g/gulp-coffeeify) | Browserify plugin with coffee-script for Gulp.
 | 1 | [gulp-espower](./g/gulp-espower) | A gulp plugin for power-assert
@@ -5712,7 +5715,6 @@
 | 1 | [novnc-core](./n/novnc-core) | noVNC core files for using with node
 | 1 | [nslog](./n/nslog) | Cross platform native logging
 | 1 | [obj-file-parser](./o/obj-file-parser) | Wavefront 3D Object File (.OBJ) Parser
-| 1 | [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti
 | 1 | [oja](./o/oja) | Lightweight pub/sub module with event backlog, tim
 | 1 | [onesignal-cordova-plugin](./o/onesignal-cordova-plugin) | OneSignal is a high volume Push Notification servi
 | 1 | [openstack-wrapper](./o/openstack-wrapper) | A simple js wrapper for the Openstack APIs
@@ -6246,6 +6248,7 @@
 | 0 | [react-albus](./r/react-albus) | React component library for building declarative m
 | 0 | [react-amplitude](./r/react-amplitude) | React Amplitude Analytics
 | 0 | [react-better-password](./r/react-better-password) | Password input for ReactJS that mimics mobile pass
+| 0 | [react-big-scheduler](./r/react-big-scheduler) | A scheduler and resource planning component built 
 | 0 | [react-bytesize-icons](./r/react-bytesize-icons) | Bytesize Icons as React Components.
 | 0 | [react-click-outside-hook](./r/react-click-outside-hook) | Simple to use React Hook with click outside functi
 | 0 | [react-coinhive](./r/react-coinhive) | react-coinhive React component

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait CreateSMBFileShareInput extends js.Object {
   /**
+    * A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.
+    */
+  var AdminUserList: js.UndefOr[FileShareUserList] = js.undefined
+  /**
     * The authentication method that users use to access the file share. Valid values are ActiveDirectory or GuestAccess. The default is ActiveDirectory.
     */
   var Authentication: js.UndefOr[Authentication] = js.undefined
@@ -79,6 +83,7 @@ object CreateSMBFileShareInput {
     GatewayARN: GatewayARN,
     LocationARN: LocationARN,
     Role: Role,
+    AdminUserList: FileShareUserList = null,
     Authentication: Authentication = null,
     DefaultStorageClass: StorageClass = null,
     GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
@@ -93,6 +98,7 @@ object CreateSMBFileShareInput {
     ValidUserList: FileShareUserList = null
   ): CreateSMBFileShareInput = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken, GatewayARN = GatewayARN, LocationARN = LocationARN, Role = Role)
+    if (AdminUserList != null) __obj.updateDynamic("AdminUserList")(AdminUserList)
     if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication)
     if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass)
     if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled)
