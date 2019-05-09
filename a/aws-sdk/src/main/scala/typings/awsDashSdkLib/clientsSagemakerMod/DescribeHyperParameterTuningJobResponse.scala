@@ -53,7 +53,7 @@ trait DescribeHyperParameterTuningJobResponse extends js.Object {
   /**
     * The HyperParameterTrainingJobDefinition object that specifies the definition of the training jobs that this tuning job launches.
     */
-  var TrainingJobDefinition: HyperParameterTrainingJobDefinition
+  var TrainingJobDefinition: js.UndefOr[HyperParameterTrainingJobDefinition] = js.undefined
   /**
     * The TrainingJobStatusCounters object that specifies the number of training jobs, categorized by status, that this tuning job launched.
     */
@@ -73,21 +73,22 @@ object DescribeHyperParameterTuningJobResponse {
     HyperParameterTuningJobName: HyperParameterTuningJobName,
     HyperParameterTuningJobStatus: HyperParameterTuningJobStatus,
     ObjectiveStatusCounters: ObjectiveStatusCounters,
-    TrainingJobDefinition: HyperParameterTrainingJobDefinition,
     TrainingJobStatusCounters: TrainingJobStatusCounters,
     BestTrainingJob: HyperParameterTrainingJobSummary = null,
     FailureReason: FailureReason = null,
     HyperParameterTuningEndTime: Timestamp = null,
     LastModifiedTime: Timestamp = null,
     OverallBestTrainingJob: HyperParameterTrainingJobSummary = null,
+    TrainingJobDefinition: HyperParameterTrainingJobDefinition = null,
     WarmStartConfig: HyperParameterTuningJobWarmStartConfig = null
   ): DescribeHyperParameterTuningJobResponse = {
-    val __obj = js.Dynamic.literal(CreationTime = CreationTime, HyperParameterTuningJobArn = HyperParameterTuningJobArn, HyperParameterTuningJobConfig = HyperParameterTuningJobConfig, HyperParameterTuningJobName = HyperParameterTuningJobName, HyperParameterTuningJobStatus = HyperParameterTuningJobStatus.asInstanceOf[js.Any], ObjectiveStatusCounters = ObjectiveStatusCounters, TrainingJobDefinition = TrainingJobDefinition, TrainingJobStatusCounters = TrainingJobStatusCounters)
+    val __obj = js.Dynamic.literal(CreationTime = CreationTime, HyperParameterTuningJobArn = HyperParameterTuningJobArn, HyperParameterTuningJobConfig = HyperParameterTuningJobConfig, HyperParameterTuningJobName = HyperParameterTuningJobName, HyperParameterTuningJobStatus = HyperParameterTuningJobStatus.asInstanceOf[js.Any], ObjectiveStatusCounters = ObjectiveStatusCounters, TrainingJobStatusCounters = TrainingJobStatusCounters)
     if (BestTrainingJob != null) __obj.updateDynamic("BestTrainingJob")(BestTrainingJob)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
     if (HyperParameterTuningEndTime != null) __obj.updateDynamic("HyperParameterTuningEndTime")(HyperParameterTuningEndTime)
     if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime)
     if (OverallBestTrainingJob != null) __obj.updateDynamic("OverallBestTrainingJob")(OverallBestTrainingJob)
+    if (TrainingJobDefinition != null) __obj.updateDynamic("TrainingJobDefinition")(TrainingJobDefinition)
     if (WarmStartConfig != null) __obj.updateDynamic("WarmStartConfig")(WarmStartConfig)
     __obj.asInstanceOf[DescribeHyperParameterTuningJobResponse]
   }

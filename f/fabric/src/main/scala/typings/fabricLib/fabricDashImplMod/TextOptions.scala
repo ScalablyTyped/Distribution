@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait TextOptions extends IObjectOptions {
   /**
+    * @private
+    * Contains characters bounding boxes for each line and char
+    * @type Array of char grapheme bounding boxes
+    */
+  var __charBounds: js.UndefOr[js.Array[js.Array[fabricLib.Anon_DeltaY]]] = js.undefined
+  /**
   	 * additional space between characters
   	 * expressed in thousands of em unit
   	 * @type Number
@@ -92,6 +98,7 @@ trait TextOptions extends IObjectOptions {
 object TextOptions {
   @scala.inline
   def apply(
+    __charBounds: js.Array[js.Array[fabricLib.Anon_DeltaY]] = null,
     aCoords: fabricLib.Anon_BlBrTlTr = null,
     absolutePositioned: js.UndefOr[scala.Boolean] = js.undefined,
     angle: scala.Int | scala.Double = null,
@@ -196,6 +203,7 @@ object TextOptions {
     width: scala.Int | scala.Double = null
   ): TextOptions = {
     val __obj = js.Dynamic.literal()
+    if (__charBounds != null) __obj.updateDynamic("__charBounds")(__charBounds)
     if (aCoords != null) __obj.updateDynamic("aCoords")(aCoords)
     if (!js.isUndefined(absolutePositioned)) __obj.updateDynamic("absolutePositioned")(absolutePositioned)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])

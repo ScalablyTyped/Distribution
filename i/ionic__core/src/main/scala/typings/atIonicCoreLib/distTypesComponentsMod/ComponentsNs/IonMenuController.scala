@@ -11,63 +11,63 @@ trait IonMenuController extends js.Object {
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MenuControllerI */ _
   ] = js.native
   /**
-    * Close the menu. If no menu is specified, then it will close any menu that is open. If a menu is specified, it will close that menu.
+    * Close the menu. If a menu is specified, it will close that menu. If no menu is specified, then it will close any menu that is open. If it does not find any open menus, it will return `false`.
     */
   def close(): js.Promise[scala.Boolean] = js.native
-  def close(menuId: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def close(menu: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-    * Used to enable or disable a menu. For example, there could be multiple left menus, but only one of them should be able to be opened at the same time. If there are multiple menus on the same side, then enabling one menu will also automatically disable all the others that are on the same side.
+    * Enable or disable a menu. Disabling a menu will not allow gestures for that menu or any calls to open it. This is useful when there are multiple menus on the same side and only one of them should be allowed to open. Enabling a menu will automatically disable all other menus on that side.
     */
-  def enable(shouldEnable: scala.Boolean): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
-  def enable(shouldEnable: scala.Boolean, menuId: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
+  def enable(enable: scala.Boolean): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
+  def enable(enable: scala.Boolean, menu: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
   /**
-    * Used to get a menu instance. If a menu is not provided then it will return the first menu found. If the specified menu is `start` or `end`, then it will return the enabled menu on that side. Otherwise, it will try to find the menu using the menu's `id` property. If a menu is not found then it will return `null`.
+    * Get a menu instance. If a menu is not provided then it will return the first menu found. If the specified menu is `start` or `end`, then it will return the enabled menu on that side. Otherwise, it will try to find the menu using the menu's `id` property. If a menu is not found then it will return `null`.
     */
   def get(): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
-  def get(menuId: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
+  def get(menu: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
   /**
-    * Returns an array of all menu instances.
+    * Get all menu instances.
     */
   def getMenus(): js.Promise[js.Array[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
   /**
-    * Returns the instance of the menu already opened, otherwise `null`.
+    * Get the instance of the opened menu. Returns `null` if a menu is not found.
     */
   def getOpen(): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
   /**
-    * Returns `true` if any menu is currently animating.
+    * Get whether or not a menu is animating. Returns `true` if any menu is currently animating.
     */
   def isAnimating(): js.Promise[scala.Boolean] = js.native
   /**
-    * Returns `true` if the specified menu is enabled.
+    * Get whether or not the menu is enabled. Returns `true` if the specified menu is enabled. Returns `false` if a menu is disabled or not found.
     */
   def isEnabled(): js.Promise[scala.Boolean] = js.native
-  def isEnabled(menuId: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def isEnabled(menu: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-    * Returns `true` if the specified menu is open. If the menu is not specified, it will return `true` if any menu is currently open.
+    * Get whether or not the menu is open. Returns `true` if the specified menu is open. If a menu is not specified, it will return `true` if any menu is currently open.
     */
   def isOpen(): js.Promise[scala.Boolean] = js.native
-  def isOpen(menuId: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def isOpen(menu: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-    * Open the menu.
+    * Open the menu. If a menu is not provided then it will open the first menu found. If the specified menu is `start` or `end`, then it will open the enabled menu on that side. Otherwise, it will try to find the menu using the menu's `id` property. If a menu is not found then it will return `false`.
     */
   def open(): js.Promise[scala.Boolean] = js.native
-  def open(menuId: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def open(menu: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-    * Registers a new animation that can be used in any `ion-menu`.  ```    * <ion-menu type="my-animation">    * ```
+    * Registers a new animation that can be used with any `ion-menu` by passing the name of the animation in its `type` property.
     */
   def registerAnimation(
     name: java.lang.String,
     animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ): scala.Unit = js.native
   /**
-    * Used to enable or disable the ability to swipe open the menu.
+    * Enable or disable the ability to swipe open the menu.
     */
-  def swipeGesture(shouldEnable: scala.Boolean): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
-  def swipeGesture(shouldEnable: scala.Boolean, menuId: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
+  def swipeGesture(enable: scala.Boolean): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
+  def swipeGesture(enable: scala.Boolean, menu: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonMenuElement]] = js.native
   /**
-    * Toggle the menu. If it's closed, it will open, and if opened, it will close.
+    * Toggle the menu open or closed. If the menu is already open, it will try to close the menu, otherwise it will try to open it. Returns `false` if a menu is not found.
     */
   def toggle(): js.Promise[scala.Boolean] = js.native
-  def toggle(menuId: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def toggle(menu: java.lang.String): js.Promise[scala.Boolean] = js.native
 }
 

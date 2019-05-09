@@ -30,6 +30,10 @@ trait CreateApplicationRequest extends js.Object {
     * You can configure application output to write data from any of the in-application streams to up to three destinations. These destinations can be Amazon Kinesis streams, Amazon Kinesis Firehose delivery streams, AWS Lambda destinations, or any combination of the three. In the configuration, you specify the in-application stream name, the destination stream or Lambda function Amazon Resource Name (ARN), and the format to use when writing data. You must also provide an IAM role that Amazon Kinesis Analytics can assume to write to the destination stream or Lambda function on your behalf. In the output configuration, you also provide the output stream or Lambda function ARN. For stream destinations, you provide the format of data in the stream (for example, JSON, CSV). You also must provide an IAM role that Amazon Kinesis Analytics can assume to write to the stream or Lambda function on your behalf.
     */
   var Outputs: js.UndefOr[Outputs] = js.undefined
+  /**
+    * A list of one or more tags to assign to the application. A tag is a key-value pair that identifies an application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management Guide.
+    */
+  var Tags: js.UndefOr[Tags] = js.undefined
 }
 
 object CreateApplicationRequest {
@@ -40,7 +44,8 @@ object CreateApplicationRequest {
     ApplicationDescription: ApplicationDescription = null,
     CloudWatchLoggingOptions: CloudWatchLoggingOptions = null,
     Inputs: Inputs = null,
-    Outputs: Outputs = null
+    Outputs: Outputs = null,
+    Tags: Tags = null
   ): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName)
     if (ApplicationCode != null) __obj.updateDynamic("ApplicationCode")(ApplicationCode)
@@ -48,6 +53,7 @@ object CreateApplicationRequest {
     if (CloudWatchLoggingOptions != null) __obj.updateDynamic("CloudWatchLoggingOptions")(CloudWatchLoggingOptions)
     if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs)
     if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateApplicationRequest]
   }
 }

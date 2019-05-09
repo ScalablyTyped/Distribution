@@ -8,13 +8,12 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLImageElement>, 'data' | 'ref'> ]: react.react.HTMLProps<std.HTMLImageElement>[P]} */ trait ReactCropperProps
   extends cropperjsLib.cropperjsMod.CropperOptions {
-  var ref: java.lang.String | (js.Function1[/* cropper */ scala.Null | ReactCropper, _])
+  var ref: js.UndefOr[java.lang.String | (js.Function1[/* cropper */ scala.Null | ReactCropper, _])] = js.undefined
 }
 
 object ReactCropperProps {
   @scala.inline
   def apply(
-    ref: java.lang.String | (js.Function1[/* cropper */ scala.Null | ReactCropper, _]),
     aspectRatio: scala.Int | scala.Double = null,
     autoCrop: js.UndefOr[scala.Boolean] = js.undefined,
     autoCropArea: scala.Int | scala.Double = null,
@@ -44,6 +43,7 @@ object ReactCropperProps {
     movable: js.UndefOr[scala.Boolean] = js.undefined,
     preview: java.lang.String = null,
     ready: /* event */ cropperjsLib.cropperjsMod.CropperReadyEvent => scala.Unit = null,
+    ref: java.lang.String | (js.Function1[/* cropper */ scala.Null | ReactCropper, _]) = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     restore: js.UndefOr[scala.Boolean] = js.undefined,
     rotatable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -56,7 +56,7 @@ object ReactCropperProps {
     zoomOnWheel: js.UndefOr[scala.Boolean] = js.undefined,
     zoomable: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactCropperProps = {
-    val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCrop)) __obj.updateDynamic("autoCrop")(autoCrop)
     if (autoCropArea != null) __obj.updateDynamic("autoCropArea")(autoCropArea.asInstanceOf[js.Any])
@@ -86,6 +86,7 @@ object ReactCropperProps {
     if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable)
     if (preview != null) __obj.updateDynamic("preview")(preview)
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
     if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore)
     if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable)

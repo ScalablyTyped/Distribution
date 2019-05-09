@@ -58,14 +58,14 @@ trait IonSelect extends js.Object {
     */
   var value: js.UndefOr[js.Any | scala.Null] = js.native
   /**
-    * Opens the select overlay, it could be an alert, action-sheet or popover, based in `ion-select` settings.
+    * Open the select overlay. The overlay is either an alert, action sheet, or popover, depending on the `interface` property on the `ion-select`.
     */
   def open(): js.Promise[
     js.UndefOr[
       atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonActionSheetElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonAlertElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPopoverElement
     ]
   ] = js.native
-  def open(ev: stdLib.UIEvent): js.Promise[
+  def open(event: stdLib.UIEvent): js.Promise[
     js.UndefOr[
       atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonActionSheetElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonAlertElement | atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPopoverElement
     ]

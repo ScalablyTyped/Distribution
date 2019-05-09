@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IonFabList extends js.Object {
   /**
-    * If `true`, the fab list will be show all fab buttons in the list.
+    * If `true`, the fab list will show all fab buttons in the list.
     */
   var activated: scala.Boolean
   /**

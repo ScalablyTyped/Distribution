@@ -11,7 +11,7 @@ trait IonPopoverController extends js.Object {
     * Create a popover overlay with popover options.
     */
   def create[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any */](
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<T> */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PopoverOptions<T> */ js.Any
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPopoverElement] = js.native
   /**
     * Dismiss the open popover overlay.

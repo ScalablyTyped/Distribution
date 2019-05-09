@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sc-broker-cluster"
-version := "6.1-dt-20190415Z-b614bf"
+version := "6.1-dt-20190415Z-f123b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-f5a815",
+  "org.scalablytyped" %%% "async" % "2.4-dt-20190508Z-9205af",
   "org.scalablytyped" %%% "component-emitter" % "v1.2.1-dt-20190322Z-365360",
   "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-ef006c",
   "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-2e6cef",

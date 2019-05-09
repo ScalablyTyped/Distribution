@@ -44,6 +44,7 @@ package object clientsKinesisanalyticsMod {
   type InputStartingPosition = _InputStartingPosition | java.lang.String
   type InputUpdates = js.Array[InputUpdate]
   type Inputs = js.Array[Input]
+  type KinesisAnalyticsARN = java.lang.String
   type ListApplicationsInputLimit = scala.Double
   type LogStreamARN = java.lang.String
   type OutputDescriptions = js.Array[OutputDescription]
@@ -74,6 +75,10 @@ package object clientsKinesisanalyticsMod {
   type ReferenceDataSourceUpdates = js.Array[ReferenceDataSourceUpdate]
   type ResourceARN = java.lang.String
   type RoleARN = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeys = js.Array[TagKey]
+  type TagValue = java.lang.String
+  type Tags = js.Array[Tag]
   type Timestamp = stdLib.Date
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2015-08-14`

@@ -15,6 +15,10 @@ trait UpdateWorkteamRequest extends js.Object {
     */
   var MemberDefinitions: js.UndefOr[MemberDefinitions] = js.undefined
   /**
+    * Configures SNS topic notifications for available or expiring work items
+    */
+  var NotificationConfiguration: js.UndefOr[NotificationConfiguration] = js.undefined
+  /**
     * The name of the work team to update.
     */
   var WorkteamName: awsDashSdkLib.clientsSagemakerMod.WorkteamName
@@ -25,11 +29,13 @@ object UpdateWorkteamRequest {
   def apply(
     WorkteamName: WorkteamName,
     Description: String200 = null,
-    MemberDefinitions: MemberDefinitions = null
+    MemberDefinitions: MemberDefinitions = null,
+    NotificationConfiguration: NotificationConfiguration = null
   ): UpdateWorkteamRequest = {
     val __obj = js.Dynamic.literal(WorkteamName = WorkteamName)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (MemberDefinitions != null) __obj.updateDynamic("MemberDefinitions")(MemberDefinitions)
+    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration)
     __obj.asInstanceOf[UpdateWorkteamRequest]
   }
 }

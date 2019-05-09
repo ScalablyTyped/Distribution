@@ -50,7 +50,7 @@ trait IonMenuAttributes
     */
   var swipeGesture: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The display type of the menu. Available options: `"overlay"`, `"reveal"`, `"push"`.
+    * The animation type of the menu. Available options: `"overlay"`, `"reveal"`, `"push"`. Custom animations can be registered by the menu controller.
     */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }

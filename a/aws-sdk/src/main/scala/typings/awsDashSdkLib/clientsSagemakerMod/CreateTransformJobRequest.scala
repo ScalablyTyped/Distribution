@@ -15,7 +15,7 @@ trait CreateTransformJobRequest extends js.Object {
     */
   var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
   /**
-    * The maximum number of parallel requests that can be sent to each instance in a transform job. The default value is 1. To allow Amazon SageMaker to determine the appropriate number for MaxConcurrentTransforms, set the value to 0.
+    * The maximum number of parallel requests that can be sent to each instance in a transform job. If MaxConcurrentTransforms is set to 0 or left unset, Amazon SageMaker checks the optional execution-parameters to determine the optimal settings for your chosen algorithm. If the execution-parameters endpoint is not enabled, the default value is 1. For more information on execution-parameters, see How Containers Serve Requests. For built-in algorithms, you don't need to set a value for MaxConcurrentTransforms.
     */
   var MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined
   /**

@@ -23,6 +23,10 @@ trait LabelingJobForWorkteamSummary extends js.Object {
     */
   var LabelingJobName: js.UndefOr[LabelingJobName] = js.undefined
   /**
+    * The configured number of workers per data object.
+    */
+  var NumberOfHumanWorkersPerDataObject: js.UndefOr[NumberOfHumanWorkersPerDataObject] = js.undefined
+  /**
     * 
     */
   var WorkRequesterAccountId: AccountId
@@ -35,11 +39,13 @@ object LabelingJobForWorkteamSummary {
     JobReferenceCode: JobReferenceCode,
     WorkRequesterAccountId: AccountId,
     LabelCounters: LabelCountersForWorkteam = null,
-    LabelingJobName: LabelingJobName = null
+    LabelingJobName: LabelingJobName = null,
+    NumberOfHumanWorkersPerDataObject: js.UndefOr[NumberOfHumanWorkersPerDataObject] = js.undefined
   ): LabelingJobForWorkteamSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime, JobReferenceCode = JobReferenceCode, WorkRequesterAccountId = WorkRequesterAccountId)
     if (LabelCounters != null) __obj.updateDynamic("LabelCounters")(LabelCounters)
     if (LabelingJobName != null) __obj.updateDynamic("LabelingJobName")(LabelingJobName)
+    if (!js.isUndefined(NumberOfHumanWorkersPerDataObject)) __obj.updateDynamic("NumberOfHumanWorkersPerDataObject")(NumberOfHumanWorkersPerDataObject)
     __obj.asInstanceOf[LabelingJobForWorkteamSummary]
   }
 }

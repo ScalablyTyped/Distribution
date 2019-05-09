@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "i2c-bus"
-version := "2.4-dt-20190322Z-179d60"
+version := "2.4-dt-20190322Z-742a6d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

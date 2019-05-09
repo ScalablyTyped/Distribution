@@ -11,7 +11,7 @@ trait IonModalController extends js.Object {
     * Create a modal overlay with modal options.
     */
   def create[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any */](
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<T> */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ModalOptions<T> */ js.Any
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonModalElement] = js.native
   /**
     * Dismiss the open modal overlay.

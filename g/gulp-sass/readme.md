@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-sass
 
+Typings are for version 4.0.2
 
 ## Library description:
 Gulp plugin for sass
@@ -34,10 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for gulp-sass
+// Type definitions for gulp-sass 4.0.2
 // Project: https://github.com/dlmanning/gulp-sass
 // Definitions by: Asana <https://asana.com>
+//                 Yuma Hashimoto <https://github.com/yuma84>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 
 ```
 

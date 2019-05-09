@@ -6,9 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTextarea because var conflicts: autocapitalize, spellcheck. Inlined autofocus, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
+- atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonTextarea because var conflicts: autocapitalize, spellcheck. Inlined autoGrow, autofocus, clearOnEdit, color, cols, debounce, disabled, getInputElement, maxlength, minlength, mode, name, placeholder, readonly, required, rows, setFocus, value, wrap */ @js.native
 trait HTMLIonTextareaElement
   extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
+  /**
+    * If `true`, the element height will increase based on the value.
+    */
+  var autoGrow: scala.Boolean = js.native
   /**
     * This Boolean attribute lets you specify that a form control should have input focus when the page loads.
     */

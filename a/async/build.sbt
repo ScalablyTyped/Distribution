@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "async"
-version := "2.4-dt-20190212Z-f5a815"
+version := "2.4-dt-20190508Z-9205af"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

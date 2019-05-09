@@ -15,6 +15,10 @@ trait CreateWorkteamRequest extends js.Object {
     */
   var MemberDefinitions: awsDashSdkLib.clientsSagemakerMod.MemberDefinitions
   /**
+    * Configures notification of workers regarding available or expiring work items.
+    */
+  var NotificationConfiguration: js.UndefOr[NotificationConfiguration] = js.undefined
+  /**
     * 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -30,9 +34,11 @@ object CreateWorkteamRequest {
     Description: String200,
     MemberDefinitions: MemberDefinitions,
     WorkteamName: WorkteamName,
+    NotificationConfiguration: NotificationConfiguration = null,
     Tags: TagList = null
   ): CreateWorkteamRequest = {
     val __obj = js.Dynamic.literal(Description = Description, MemberDefinitions = MemberDefinitions, WorkteamName = WorkteamName)
+    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[CreateWorkteamRequest]
   }

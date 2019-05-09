@@ -41,6 +41,10 @@ trait IonSearchbar extends js.Object {
     */
   var debounce: scala.Double
   /**
+    * If `true`, the user cannot interact with the input.
+    */
+  var disabled: scala.Boolean
+  /**
     * The mode determines which platform styles to use.
     */
   var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
@@ -87,6 +91,7 @@ object IonSearchbar {
     cancelButtonIcon: java.lang.String,
     cancelButtonText: java.lang.String,
     debounce: scala.Double,
+    disabled: scala.Boolean,
     getInputElement: () => js.Promise[stdLib.HTMLInputElement],
     mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any,
     placeholder: java.lang.String,
@@ -99,7 +104,7 @@ object IonSearchbar {
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     value: java.lang.String = null
   ): IonSearchbar = {
-    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton, spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton, spellcheck = spellcheck)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon)
     if (color != null) __obj.updateDynamic("color")(color)

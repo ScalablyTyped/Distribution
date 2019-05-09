@@ -12,7 +12,7 @@ trait IonLoadingController extends js.Object {
     */
   def create(): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonLoadingElement] = js.native
   def create(
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LoadingOptions */ js.Any
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonLoadingElement] = js.native
   /**
     * Dismiss the open loading overlay.

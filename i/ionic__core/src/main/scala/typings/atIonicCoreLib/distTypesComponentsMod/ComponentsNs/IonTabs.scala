@@ -14,17 +14,17 @@ trait IonTabs extends js.Object {
     ]
   ] = js.native
   /**
-    * Get the currently selected tab
+    * Get the currently selected tab.
     */
   def getSelected(): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def getTab(tab: atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonTabElement): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonTabElement]] = js.native
   /**
-    * Get the tab element given the tab name
+    * Get a specific tab by the value of its `tab` property or an element reference.
     */
   def getTab(tab: java.lang.String): js.Promise[js.UndefOr[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonTabElement]] = js.native
   def select(tab: atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonTabElement): js.Promise[scala.Boolean] = js.native
   /**
-    * Index or the Tab instance, of the tab to select.
+    * Select a tab by the value of its `tab` property or an element reference.
     */
   def select(tab: java.lang.String): js.Promise[scala.Boolean] = js.native
   def setRouteId(id: java.lang.String): js.Promise[

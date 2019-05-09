@@ -14,6 +14,11 @@ trait ITextboxOptions extends ITextOptions {
   	 */
   var dynamicMinWidth: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Is the text wrapping
+    * @type Boolean
+    */
+  var isWrapping: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   	 * Minimum width of textbox, in pixels.
   	 * @type Number
   	 */
@@ -30,6 +35,7 @@ trait ITextboxOptions extends ITextOptions {
 object ITextboxOptions {
   @scala.inline
   def apply(
+    __charBounds: js.Array[js.Array[fabricLib.Anon_DeltaY]] = null,
     aCoords: fabricLib.Anon_BlBrTlTr = null,
     absolutePositioned: js.UndefOr[scala.Boolean] = js.undefined,
     angle: scala.Int | scala.Double = null,
@@ -85,6 +91,7 @@ object ITextboxOptions {
     includeDefaultValues: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     isEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    isWrapping: js.UndefOr[scala.Boolean] = js.undefined,
     keysMap: js.Any = null,
     left: scala.Int | scala.Double = null,
     lineHeight: scala.Int | scala.Double = null,
@@ -156,6 +163,7 @@ object ITextboxOptions {
     width: scala.Int | scala.Double = null
   ): ITextboxOptions = {
     val __obj = js.Dynamic.literal()
+    if (__charBounds != null) __obj.updateDynamic("__charBounds")(__charBounds)
     if (aCoords != null) __obj.updateDynamic("aCoords")(aCoords)
     if (!js.isUndefined(absolutePositioned)) __obj.updateDynamic("absolutePositioned")(absolutePositioned)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
@@ -211,6 +219,7 @@ object ITextboxOptions {
     if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
     if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing)
+    if (!js.isUndefined(isWrapping)) __obj.updateDynamic("isWrapping")(isWrapping)
     if (keysMap != null) __obj.updateDynamic("keysMap")(keysMap)
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])

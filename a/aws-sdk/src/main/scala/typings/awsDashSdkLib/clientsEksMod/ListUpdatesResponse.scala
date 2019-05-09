@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListUpdatesResponse extends js.Object {
   /**
-    * The nextToken value to include in a future ListUpdates request. When the results of a ListUpdates request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
+    * The nextToken value to include in a future ListUpdates request. When the results of a ListUpdates request exceed maxResults, you can use this value to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   /**

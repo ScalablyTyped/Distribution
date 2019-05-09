@@ -83,13 +83,13 @@ class Path () extends PathItem {
     * @param location - the curve location at which to divide the existing curve by inserting a new segment
     * @returns the newly inserted segment if the location is valid, {code null} otherwise
     */
-  def divideAt(location: CurveLocation): Path = js.native
+  def divideAt(location: CurveLocation): Segment = js.native
   /**
     * Divides the path on the curve at the given offset into two curves, by inserting a new segment at the given location.
     * @param offset - the offset at which to divide the existing curve by inserting a new segment
     * @returns the newly inserted segment if the location is valid, {code null} otherwise
     */
-  def divideAt(offset: scala.Double): Path = js.native
+  def divideAt(offset: scala.Double): Segment = js.native
   /**
     * Calculates the curvature of the path at the given offset. Curvatures indicate how sharply a path changes direction. A straight line has zero curvature, where as a circle has a constant curvature. The path's radius at the given offset is the reciprocal value of its curvature.
     * @param offset - the offset on the path, where 0 is at the beginning of the path and path.length at the end.

@@ -9,11 +9,11 @@ trait HyperParameterTuningJobConfig extends js.Object {
   /**
     * The HyperParameterTuningJobObjective object that specifies the objective metric for this tuning job.
     */
-  var HyperParameterTuningJobObjective: awsDashSdkLib.clientsSagemakerMod.HyperParameterTuningJobObjective
+  var HyperParameterTuningJobObjective: js.UndefOr[HyperParameterTuningJobObjective] = js.undefined
   /**
     * The ParameterRanges object that specifies the ranges of hyperparameters that this tuning job searches.
     */
-  var ParameterRanges: awsDashSdkLib.clientsSagemakerMod.ParameterRanges
+  var ParameterRanges: js.UndefOr[ParameterRanges] = js.undefined
   /**
     * The ResourceLimits object that specifies the maximum number of training jobs and parallel training jobs for this tuning job.
     */
@@ -31,13 +31,15 @@ trait HyperParameterTuningJobConfig extends js.Object {
 object HyperParameterTuningJobConfig {
   @scala.inline
   def apply(
-    HyperParameterTuningJobObjective: HyperParameterTuningJobObjective,
-    ParameterRanges: ParameterRanges,
     ResourceLimits: ResourceLimits,
     Strategy: HyperParameterTuningJobStrategyType,
+    HyperParameterTuningJobObjective: HyperParameterTuningJobObjective = null,
+    ParameterRanges: ParameterRanges = null,
     TrainingJobEarlyStoppingType: TrainingJobEarlyStoppingType = null
   ): HyperParameterTuningJobConfig = {
-    val __obj = js.Dynamic.literal(HyperParameterTuningJobObjective = HyperParameterTuningJobObjective, ParameterRanges = ParameterRanges, ResourceLimits = ResourceLimits, Strategy = Strategy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ResourceLimits = ResourceLimits, Strategy = Strategy.asInstanceOf[js.Any])
+    if (HyperParameterTuningJobObjective != null) __obj.updateDynamic("HyperParameterTuningJobObjective")(HyperParameterTuningJobObjective)
+    if (ParameterRanges != null) __obj.updateDynamic("ParameterRanges")(ParameterRanges)
     if (TrainingJobEarlyStoppingType != null) __obj.updateDynamic("TrainingJobEarlyStoppingType")(TrainingJobEarlyStoppingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperParameterTuningJobConfig]
   }

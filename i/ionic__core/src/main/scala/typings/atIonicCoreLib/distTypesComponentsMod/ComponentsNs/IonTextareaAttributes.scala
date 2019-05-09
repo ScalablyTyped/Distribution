@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 trait IonTextareaAttributes
   extends atIonicCoreLib.distTypesStencilDotCoreMod.JSXElementsNs.HTMLAttributes[stdLib.HTMLElement] {
   /**
+    * If `true`, the element height will increase based on the value.
+    */
+  var autoGrow: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * This Boolean attribute lets you specify that a form control should have input focus when the page loads.
     */
   var autofocus: js.UndefOr[scala.Boolean] = js.undefined
@@ -115,6 +119,7 @@ object IonTextareaAttributes {
     accessKey: java.lang.String = null,
     autoCapitalize: java.lang.String = null,
     autoCorrect: java.lang.String = null,
+    autoGrow: js.UndefOr[scala.Boolean] = js.undefined,
     autoSave: java.lang.String = null,
     autocapitalize: java.lang.String = null,
     autocorrect: java.lang.String = null,
@@ -284,6 +289,7 @@ object IonTextareaAttributes {
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
+    if (!js.isUndefined(autoGrow)) __obj.updateDynamic("autoGrow")(autoGrow)
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave)
     if (autocapitalize != null) __obj.updateDynamic("autocapitalize")(autocapitalize)
     if (autocorrect != null) __obj.updateDynamic("autocorrect")(autocorrect)

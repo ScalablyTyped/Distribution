@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IonFabListAttributes
   extends atIonicCoreLib.distTypesStencilDotCoreMod.JSXElementsNs.HTMLAttributes[stdLib.HTMLElement] {
   /**
-    * If `true`, the fab list will be show all fab buttons in the list.
+    * If `true`, the fab list will show all fab buttons in the list.
     */
   var activated: js.UndefOr[scala.Boolean] = js.undefined
   /**

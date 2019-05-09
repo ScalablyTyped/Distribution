@@ -22,6 +22,7 @@ trait Workteam extends js.Object {
     * The Amazon Cognito user groups that make up the work team.
     */
   var MemberDefinitions: awsDashSdkLib.clientsSagemakerMod.MemberDefinitions
+  var NotificationConfiguration: js.UndefOr[NotificationConfiguration] = js.undefined
   /**
     * The Amazon Marketplace identifier for a vendor's work team.
     */
@@ -49,12 +50,14 @@ object Workteam {
     WorkteamName: WorkteamName,
     CreateDate: Timestamp = null,
     LastUpdatedDate: Timestamp = null,
+    NotificationConfiguration: NotificationConfiguration = null,
     ProductListingIds: ProductListings = null,
     SubDomain: String = null
   ): Workteam = {
     val __obj = js.Dynamic.literal(Description = Description, MemberDefinitions = MemberDefinitions, WorkteamArn = WorkteamArn, WorkteamName = WorkteamName)
     if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate)
     if (LastUpdatedDate != null) __obj.updateDynamic("LastUpdatedDate")(LastUpdatedDate)
+    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration)
     if (ProductListingIds != null) __obj.updateDynamic("ProductListingIds")(ProductListingIds)
     if (SubDomain != null) __obj.updateDynamic("SubDomain")(SubDomain)
     __obj.asInstanceOf[Workteam]

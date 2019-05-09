@@ -27,7 +27,7 @@ trait IonFab extends js.Object {
     atIonicCoreLib.atIonicCoreLibStrings.top | atIonicCoreLib.atIonicCoreLibStrings.bottom | atIonicCoreLib.atIonicCoreLibStrings.center
   ] = js.undefined
   /**
-    * Close an active FAB list container
+    * Close an active FAB list container.
     */
   def close(): scala.Unit
 }

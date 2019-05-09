@@ -12,6 +12,7 @@ trait ICustomerCreationOptions
     * will be used before attempting any charges to the customer's card; a positive amount will be added to the next invoice.
     */
   var account_balance: js.UndefOr[scala.Double] = js.undefined
+  var address: js.UndefOr[stripeLib.stripeMod.IAddress] = js.undefined
   /**
     * If you provide a coupon code, the customer will have a discount applied on all recurring charges. Charges you create through the
     * API will not have the discount.
@@ -27,6 +28,10 @@ trait ICustomerCreationOptions
     * This can be unset by updating the value to null and then saving.
     */
   var email: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The customer’s full name or business name.
+    */
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The identifier of the plan to subscribe the customer to. If provided, the returned customer object will have a list of subscriptions
     * that the customer is currently subscribed to. If you subscribe a customer to a plan without a free trial, the customer must have a
@@ -65,12 +70,14 @@ object ICustomerCreationOptions {
   @scala.inline
   def apply(
     account_balance: scala.Int | scala.Double = null,
+    address: stripeLib.stripeMod.IAddress = null,
     coupon: java.lang.String = null,
     description: java.lang.String = null,
     email: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
+    name: java.lang.String = null,
     plan: java.lang.String = null,
     quantity: scala.Int | scala.Double = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
@@ -80,12 +87,14 @@ object ICustomerCreationOptions {
   ): ICustomerCreationOptions = {
     val __obj = js.Dynamic.literal()
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address)
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (description != null) __obj.updateDynamic("description")(description)
     if (email != null) __obj.updateDynamic("email")(email)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)

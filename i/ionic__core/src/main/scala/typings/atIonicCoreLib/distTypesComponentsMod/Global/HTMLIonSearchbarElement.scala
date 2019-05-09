@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSearchbar because var conflicts: spellcheck. Inlined animated, autocomplete, autocorrect, cancelButtonIcon, cancelButtonText, clearIcon, color, debounce, getInputElement, mode, placeholder, searchIcon, setFocus, showCancelButton, `type`, value */ @js.native
+- atIonicCoreLib.distTypesComponentsMod.ComponentsNs.IonSearchbar because var conflicts: spellcheck. Inlined animated, autocomplete, autocorrect, cancelButtonIcon, cancelButtonText, clearIcon, color, debounce, disabled, getInputElement, mode, placeholder, searchIcon, setFocus, showCancelButton, `type`, value */ @js.native
 trait HTMLIonSearchbarElement
   extends atIonicCoreLib.distTypesStencilDotCoreMod.Global.HTMLStencilElement {
   /**
@@ -43,6 +43,10 @@ trait HTMLIonSearchbarElement
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke.
     */
   var debounce: scala.Double = js.native
+  /**
+    * If `true`, the user cannot interact with the input.
+    */
+  var disabled: scala.Boolean = js.native
   /**
     * The mode determines which platform styles to use.
     */

@@ -12,7 +12,7 @@ trait IonReorderGroup extends js.Object {
     */
   var disabled: scala.Boolean = js.native
   /**
-    * This method must be called once the `ionItemReorder` event is handled in order to complete the reorder operation.
+    * Completes the reorder operation. Must be called by the `ionItemReorder` event.  If a list of items is passed, the list will be reordered and returned in the proper order.  If no parameters are passed or if `true` is passed in, the reorder will complete and the item will remain in the position it was dragged to. If `false` is passed, the reorder will complete and the item will bounce back to its original position.
     */
   def complete(): js.Promise[_] = js.native
   def complete(listOrReorder: js.Array[_]): js.Promise[_] = js.native

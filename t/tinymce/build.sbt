@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tinymce"
-version := "4.5-dt-20190311Z-a0ae39"
+version := "4.5-dt-20190508Z-867e02"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

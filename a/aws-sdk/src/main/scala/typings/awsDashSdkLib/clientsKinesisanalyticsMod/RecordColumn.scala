@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RecordColumn extends js.Object {
   /**
-    * Reference to the data element in the streaming input of the reference data source.
+    * Reference to the data element in the streaming input or the reference data source. This element is required if the RecordFormatType is JSON.
     */
   var Mapping: js.UndefOr[RecordColumnMapping] = js.undefined
   /**

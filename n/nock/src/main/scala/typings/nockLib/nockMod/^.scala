@@ -14,6 +14,7 @@ object ^ extends js.Object {
   def apply(basePath: java.lang.String | stdLib.RegExp | nodeLib.urlMod.Url): Scope = js.native
   def apply(basePath: java.lang.String | stdLib.RegExp | nodeLib.urlMod.Url, options: Options): Scope = js.native
   def activate(): scala.Unit = js.native
+  def activeMocks(): js.Array[java.lang.String] = js.native
   def cleanAll(): scala.Unit = js.native
   def define(defs: js.Array[NockDefinition]): js.Array[Scope] = js.native
   def disableNetConnect(): scala.Unit = js.native

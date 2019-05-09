@@ -1,11 +1,11 @@
 package typings
-package stripeLib
+package stripeLib.stripeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_CityCountry extends js.Object {
+trait IAddress extends js.Object {
   /**
     * City/Suburb/Town/Village
     */
@@ -32,7 +32,7 @@ trait Anon_CityCountry extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
-object Anon_CityCountry {
+object IAddress {
   @scala.inline
   def apply(
     line1: java.lang.String,
@@ -41,14 +41,14 @@ object Anon_CityCountry {
     line2: java.lang.String = null,
     postal_code: java.lang.String = null,
     state: java.lang.String = null
-  ): Anon_CityCountry = {
+  ): IAddress = {
     val __obj = js.Dynamic.literal(line1 = line1)
     if (city != null) __obj.updateDynamic("city")(city)
     if (country != null) __obj.updateDynamic("country")(country)
     if (line2 != null) __obj.updateDynamic("line2")(line2)
     if (postal_code != null) __obj.updateDynamic("postal_code")(postal_code)
     if (state != null) __obj.updateDynamic("state")(state)
-    __obj.asInstanceOf[Anon_CityCountry]
+    __obj.asInstanceOf[IAddress]
   }
 }
 

@@ -11,7 +11,7 @@ trait IonActionSheetController extends js.Object {
     * Create an action sheet overlay with action sheet options.
     */
   def create(
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetOptions */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActionSheetOptions */ js.Any
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonActionSheetElement] = js.native
   /**
     * Dismiss the open action sheet overlay.

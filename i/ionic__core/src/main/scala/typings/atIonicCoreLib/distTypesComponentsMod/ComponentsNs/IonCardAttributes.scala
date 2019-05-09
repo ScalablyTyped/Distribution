@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 trait IonCardAttributes
   extends atIonicCoreLib.distTypesStencilDotCoreMod.JSXElementsNs.HTMLAttributes[stdLib.HTMLElement] {
   /**
+    * If `true`, a button tag will be rendered and the card will be tappable.
+    */
+  var button: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
   @JSName("color")
@@ -15,10 +19,30 @@ trait IonCardAttributes
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
   ] = js.undefined
   /**
+    * If `true`, the user cannot interact with the card.
+    */
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Contains a URL or a URL fragment that the hyperlink points to. If this property is set, an anchor tag will be rendered.
+    */
+  var href: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The mode determines which platform styles to use.
     */
   var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
+  ] = js.undefined
+  /**
+    * When using a router, it specifies the transition direction when navigating to another page using `href`.
+    */
+  var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
+  ] = js.undefined
+  /**
+    * The type of the button. Only used when an `onclick` or `button` property is present.
+    */
+  var `type`: js.UndefOr[
+    atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button
   ] = js.undefined
 }
 
@@ -33,6 +57,7 @@ object IonCardAttributes {
     autocapitalize: java.lang.String = null,
     autocorrect: java.lang.String = null,
     autosave: java.lang.String = null,
+    button: js.UndefOr[scala.Boolean] = js.undefined,
     `class`: java.lang.String | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     contentEditable: scala.Boolean | java.lang.String = null,
@@ -41,8 +66,10 @@ object IonCardAttributes {
     contextmenu: java.lang.String = null,
     datatype: java.lang.String = null,
     dir: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    href: java.lang.String = null,
     id: java.lang.String = null,
     inlist: js.Any = null,
     innerHTML: java.lang.String = null,
@@ -161,6 +188,7 @@ object IonCardAttributes {
     resource: java.lang.String = null,
     results: scala.Int | scala.Double = null,
     role: java.lang.String = null,
+    routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any = null,
     security: java.lang.String = null,
     slot: java.lang.String = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
@@ -169,6 +197,7 @@ object IonCardAttributes {
     tabIndex: scala.Int | scala.Double = null,
     tabindex: scala.Double | java.lang.String = null,
     title: java.lang.String = null,
+    `type`: atIonicCoreLib.atIonicCoreLibStrings.submit | atIonicCoreLib.atIonicCoreLibStrings.reset | atIonicCoreLib.atIonicCoreLibStrings.button = null,
     typeof: java.lang.String = null,
     unselectable: js.UndefOr[scala.Boolean] = js.undefined,
     vocab: java.lang.String = null
@@ -182,6 +211,7 @@ object IonCardAttributes {
     if (autocapitalize != null) __obj.updateDynamic("autocapitalize")(autocapitalize)
     if (autocorrect != null) __obj.updateDynamic("autocorrect")(autocorrect)
     if (autosave != null) __obj.updateDynamic("autosave")(autosave)
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
     if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
@@ -190,8 +220,10 @@ object IonCardAttributes {
     if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu)
     if (datatype != null) __obj.updateDynamic("datatype")(datatype)
     if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (href != null) __obj.updateDynamic("href")(href)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inlist != null) __obj.updateDynamic("inlist")(inlist)
     if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML)
@@ -310,6 +342,7 @@ object IonCardAttributes {
     if (resource != null) __obj.updateDynamic("resource")(resource)
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role)
+    if (routerDirection != null) __obj.updateDynamic("routerDirection")(routerDirection)
     if (security != null) __obj.updateDynamic("security")(security)
     if (slot != null) __obj.updateDynamic("slot")(slot)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
@@ -318,6 +351,7 @@ object IonCardAttributes {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof)
     if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable)
     if (vocab != null) __obj.updateDynamic("vocab")(vocab)

@@ -3484,6 +3484,7 @@
 | 0.6388689949107165 | [env-editor](./e/env-editor) | Get metadata on the default editor or a specific e
 | 0.6388673786101722 | [tiny-async-pool](./t/tiny-async-pool) | Run multiple promise-returning & async functions w
 | 0.6388022781614692 | [jest-plugin-set](./j/jest-plugin-set) | Declarative JS tests with lazy evaluation using je
+| 0.6387987396007129 | [rebind-host](./r/rebind-host) | Express middleware to bind the correct host
 | 0.6387798471886144 | [eventemitter2](./e/eventemitter2) | A Node.js event emitter implementation with namesp
 | 0.638742305777307 | [express-winston](./e/express-winston) | express.js middleware for flatiron/winston
 | 0.6385481407674489 | [forge-di](./f/forge-di) | a dependency injector for node.js

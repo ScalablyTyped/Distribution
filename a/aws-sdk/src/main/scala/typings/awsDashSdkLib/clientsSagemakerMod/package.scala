@@ -431,6 +431,7 @@ package object clientsSagemakerMod {
   type NotebookInstanceSummaryList = js.Array[NotebookInstanceSummary]
   type NotebookInstanceUrl = java.lang.String
   type NotebookInstanceVolumeSizeInGB = scala.Double
+  type NotificationTopicArn = java.lang.String
   type NumberOfHumanWorkersPerDataObject = scala.Double
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
@@ -618,6 +619,7 @@ package object clientsSagemakerMod {
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.lambda
     - awsDashSdkLib.awsDashSdkLibStrings.ml_m4
     - awsDashSdkLib.awsDashSdkLibStrings.ml_m5
     - awsDashSdkLib.awsDashSdkLibStrings.ml_c4
@@ -626,6 +628,7 @@ package object clientsSagemakerMod {
     - awsDashSdkLib.awsDashSdkLibStrings.ml_p3
     - awsDashSdkLib.awsDashSdkLibStrings.jetson_tx1
     - awsDashSdkLib.awsDashSdkLibStrings.jetson_tx2
+    - awsDashSdkLib.awsDashSdkLibStrings.jetson_nano
     - awsDashSdkLib.awsDashSdkLibStrings.rasp3b
     - awsDashSdkLib.awsDashSdkLibStrings.deeplens
     - awsDashSdkLib.awsDashSdkLibStrings.rk3399

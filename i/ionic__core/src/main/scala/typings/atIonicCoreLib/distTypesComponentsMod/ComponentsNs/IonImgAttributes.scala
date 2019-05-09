@@ -16,9 +16,13 @@ trait IonImgAttributes
     */
   var onIonError: js.UndefOr[js.Function1[/* event */ stdLib.CustomEvent[scala.Unit], scala.Unit]] = js.undefined
   /**
-    * Emitted when the img src has been set
+    * Emitted when the image has finished loading
     */
   var onIonImgDidLoad: js.UndefOr[js.Function1[/* event */ stdLib.CustomEvent[scala.Unit], scala.Unit]] = js.undefined
+  /**
+    * Emitted when the img src has been set
+    */
+  var onIonImgWillLoad: js.UndefOr[js.Function1[/* event */ stdLib.CustomEvent[scala.Unit], scala.Unit]] = js.undefined
   /**
     * The image URL. This attribute is mandatory for the <img> element.
     */
@@ -118,6 +122,7 @@ object IonImgAttributes {
     onInvalidCapture: /* event */ stdLib.Event => scala.Unit = null,
     onIonError: /* event */ stdLib.CustomEvent[scala.Unit] => scala.Unit = null,
     onIonImgDidLoad: /* event */ stdLib.CustomEvent[scala.Unit] => scala.Unit = null,
+    onIonImgWillLoad: /* event */ stdLib.CustomEvent[scala.Unit] => scala.Unit = null,
     onKeyDown: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
     onKeyDownCapture: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
     onKeyPress: /* event */ stdLib.KeyboardEvent => scala.Unit = null,
@@ -270,6 +275,7 @@ object IonImgAttributes {
     if (onInvalidCapture != null) __obj.updateDynamic("onInvalidCapture")(js.Any.fromFunction1(onInvalidCapture))
     if (onIonError != null) __obj.updateDynamic("onIonError")(js.Any.fromFunction1(onIonError))
     if (onIonImgDidLoad != null) __obj.updateDynamic("onIonImgDidLoad")(js.Any.fromFunction1(onIonImgDidLoad))
+    if (onIonImgWillLoad != null) __obj.updateDynamic("onIonImgWillLoad")(js.Any.fromFunction1(onIonImgWillLoad))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
     if (onKeyDownCapture != null) __obj.updateDynamic("onKeyDownCapture")(js.Any.fromFunction1(onKeyDownCapture))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))

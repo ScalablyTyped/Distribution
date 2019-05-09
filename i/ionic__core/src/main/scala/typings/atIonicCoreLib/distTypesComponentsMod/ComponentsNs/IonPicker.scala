@@ -67,7 +67,7 @@ trait IonPicker extends js.Object {
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any, role: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-    * Returns the column the matches the specified name
+    * Get the column that matches the specified name.
     */
   def getColumn(name: java.lang.String): js.Promise[
     js.UndefOr[

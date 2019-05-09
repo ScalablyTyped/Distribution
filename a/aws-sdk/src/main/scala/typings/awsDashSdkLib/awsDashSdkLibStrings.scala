@@ -24732,6 +24732,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsLambdaMod._Runtime
   
   @js.native
+  sealed trait jetson_nano
+    extends awsDashSdkLib.clientsSagemakerMod._TargetDevice
+  
+  @js.native
   sealed trait jetson_tx1
     extends awsDashSdkLib.clientsSagemakerMod._TargetDevice
   
@@ -24788,7 +24792,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait lambda
-    extends awsDashSdkLib.clientsElbv2Mod._TargetTypeEnum
+    extends awsDashSdkLib.clientsSagemakerMod._TargetDevice
+       with awsDashSdkLib.clientsElbv2Mod._TargetTypeEnum
   
   @js.native
   sealed trait lastModifiedDate
@@ -38392,6 +38397,8 @@ object awsDashSdkLibStrings {
   def `java-app`: `java-app` = "java-app".asInstanceOf[`java-app`]
   @scala.inline
   def java8: java8 = "java8".asInstanceOf[java8]
+  @scala.inline
+  def jetson_nano: jetson_nano = "jetson_nano".asInstanceOf[jetson_nano]
   @scala.inline
   def jetson_tx1: jetson_tx1 = "jetson_tx1".asInstanceOf[jetson_tx1]
   @scala.inline

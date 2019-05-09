@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-sass-variables"
-version := "1.2-dt-20190426Z-4c880a"
+version := "1.2-dt-20190508Z-4c880a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

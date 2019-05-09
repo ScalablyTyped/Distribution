@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "adone"
-version := "0.6-dt-20190311Z-240921"
+version := "0.6-dt-20190311Z-326dd1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "assert" % "1.4-dt-20190212Z-982eb3",
-  "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-f5a815",
+  "org.scalablytyped" %%% "async" % "2.4-dt-20190508Z-9205af",
   "org.scalablytyped" %%% "benchmark" % "v1.0.0-dt-20190322Z-4acae0",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190507Z-5e7cae",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",

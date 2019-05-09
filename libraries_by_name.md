@@ -5362,6 +5362,7 @@
 | [reapop](./r/reapop) | A React and Redux notifications system | reapop, react, redux, notifications, notification, component |
 | [rebass](./r/rebass) | React primitive UI components built with styled-sy | components, react, react-component, ui, design-system, styled-system, styled-components, presentational, stateless, functional |
 | [rebass__grid](./r/rebass__grid) | Responsive React grid system built with styled-sys | react, styled-components, styled-system, grid, flexbox, layout, css |
+| [rebind-host](./r/rebind-host) | Express middleware to bind the correct host | - |
 | [recaptcha2](./r/recaptcha2) | Easy API for Google reCAPTCHA version 2 for Node.j | recaptcha, captcha, security, csrf, express |
 | [recase](./r/recase) | Deep rekey Objects and Arrays as either camel case | rekey, key, recase, deep, copy, camel, snake, case, camelcase, snakecase, underscore, underscored |
 | [recharts](./r/recharts) | React charts | react, reactjs, chart, react-component |

@@ -70,10 +70,10 @@ class HTMLIonRippleEffectElementCls () extends HTMLIonRippleEffectElement {
   /* CompleteClass */
   override var `type`: atIonicCoreLib.atIonicCoreLibStrings.bounded | atIonicCoreLib.atIonicCoreLibStrings.unbounded = js.native
   /**
-    * Adds the ripple effect to the parent element
+    * Adds the ripple effect to the parent element.
     */
   /* CompleteClass */
-  override def addRipple(pageX: scala.Double, pageY: scala.Double): js.Promise[js.Function0[scala.Unit]] = js.native
+  override def addRipple(x: scala.Double, y: scala.Double): js.Promise[js.Function0[scala.Unit]] = js.native
 }
 
 @JSGlobal("HTMLIonRippleEffectElement")

@@ -35,6 +35,10 @@ trait IonRefresherAttributes
     */
   var onIonStart: js.UndefOr[js.Function1[/* event */ stdLib.CustomEvent[scala.Unit], scala.Unit]] = js.undefined
   /**
+    * How much to multiply the pull speed by. To slow the pull animation down, pass a number less than `1`. To speed up the pull, pass a number greater than `1`. The default value is `1` which is equal to the speed of the cursor. If a negative value is passed in, the factor will be `1` instead.  For example: If the value passed is `1.2` and the content is dragged by `10` pixels, instead of `10` pixels the content will be pulled by `12` pixels (an increase of 20 percent). If the value passed is `0.8`, the dragged amount will be `8` pixels, less than the amount the cursor has moved.
+    */
+  var pullFactor: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The maximum distance of the pull until the refresher will automatically go into the `refreshing` state. Defaults to the result of `pullMin + 60`.
     */
   var pullMax: js.UndefOr[scala.Double] = js.undefined
@@ -187,6 +191,7 @@ object IonRefresherAttributes {
     onWheelCapture: /* event */ stdLib.WheelEvent => scala.Unit = null,
     prefix: java.lang.String = null,
     property: java.lang.String = null,
+    pullFactor: scala.Int | scala.Double = null,
     pullMax: scala.Int | scala.Double = null,
     pullMin: scala.Int | scala.Double = null,
     radioGroup: java.lang.String = null,
@@ -343,6 +348,7 @@ object IonRefresherAttributes {
     if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)
+    if (pullFactor != null) __obj.updateDynamic("pullFactor")(pullFactor.asInstanceOf[js.Any])
     if (pullMax != null) __obj.updateDynamic("pullMax")(pullMax.asInstanceOf[js.Any])
     if (pullMin != null) __obj.updateDynamic("pullMin")(pullMin.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup)

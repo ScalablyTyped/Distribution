@@ -11,7 +11,7 @@ trait IonPickerController extends js.Object {
     * Create a picker overlay with picker options.
     */
   def create(
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerOptions */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickerOptions */ js.Any
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonPickerElement] = js.native
   /**
     * Dismiss the open picker overlay.

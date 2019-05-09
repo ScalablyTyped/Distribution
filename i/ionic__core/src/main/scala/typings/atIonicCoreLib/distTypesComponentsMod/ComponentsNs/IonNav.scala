@@ -37,14 +37,14 @@ trait IonNav extends js.Object {
     */
   var swipeGesture: js.UndefOr[scala.Boolean] = js.native
   /**
-    * Returns `true` or false if the current view can go back
+    * Returns `true` if the current view can go back.
     */
   def canGoBack(): js.Promise[scala.Boolean] = js.native
   def canGoBack(
     view: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewController */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Gets the active view
+    * Get the active view.
     */
   def getActive(): js.Promise[
     js.UndefOr[
@@ -52,7 +52,7 @@ trait IonNav extends js.Object {
     ]
   ] = js.native
   /**
-    * Returns the view at the index
+    * Get the view at the specified index.
     */
   def getByIndex(index: scala.Double): js.Promise[
     js.UndefOr[
@@ -60,7 +60,7 @@ trait IonNav extends js.Object {
     ]
   ] = js.native
   /**
-    * Gets the previous view
+    * Get the previous view.
     */
   def getPrevious(): js.Promise[
     js.UndefOr[
@@ -80,7 +80,7 @@ trait IonNav extends js.Object {
     ]
   ] = js.native
   /**
-    * Inserts a component into the nav stack at the specified index. This is useful if you need to add a component at any point in your navigation stack.
+    * Inserts a component into the navigation stack at the specified index. This is useful to add a component at any point in the navigation stack.
     */
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](insertIndex: scala.Double, component: T): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -170,7 +170,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Inserts an array of components into the nav stack at the specified index. The last component in the array will become instantiated as a view, and animate in to become the active view.
+    * Inserts an array of components into the navigation stack at the specified index. The last component in the array will become instantiated as a view, and animate in to become the active view.
     */
   def insertPages(
     insertIndex: scala.Double,
@@ -210,7 +210,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Call to navigate back from a current component. Similar to push(), you can also pass navigation options.
+    * Pop a component off of the navigation stack. Navigates back from the current component.
     */
   def pop(): js.Promise[scala.Boolean] = js.native
   def pop(
@@ -251,7 +251,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Pop to a specific index in the navigation stack
+    * Pop to a specific index in the navigation stack.
     */
   def popTo(indexOrViewCtrl: scala.Double): js.Promise[scala.Boolean] = js.native
   def popTo(
@@ -293,7 +293,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Push a new component onto the current navigation stack. Pass any additional information along as an object. This additional information is accessible through NavParams
+    * Push a new component onto the current navigation stack. Pass any additional information along as an object. This additional information is accessible through NavParams.
     */
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](component: T): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -370,7 +370,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Removes a page from the nav stack at the specified index.
+    * Removes a component from the navigation stack at the specified index.
     */
   def removeIndex(startIndex: scala.Double): js.Promise[scala.Boolean] = js.native
   def removeIndex(startIndex: scala.Double, removeCount: scala.Double): js.Promise[scala.Boolean] = js.native
@@ -398,7 +398,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Set the views of the current navigation stack and navigate to the last view. By default animations are disabled, but they can be enabled by passing options to the navigation controller.You can also pass any navigation params to the individual pages in the array.
+    * Set the views of the current navigation stack and navigate to the last view. By default animations are disabled, but they can be enabled by passing options to the navigation controller. Navigation parameters can also be passed to the individual pages in the array.
     */
   def setPages(views: js.Array[_]): js.Promise[scala.Boolean] = js.native
   def setPages(
@@ -421,7 +421,7 @@ trait IonNav extends js.Object {
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   /**
-    * Set the root for the current navigation stack.
+    * Set the root for the current navigation stack to a component.
     */
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](component: T): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](

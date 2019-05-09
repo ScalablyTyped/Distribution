@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IonSplitPaneAttributes
   extends atIonicCoreLib.distTypesStencilDotCoreMod.JSXElementsNs.HTMLAttributes[stdLib.HTMLElement] {
   /**
-    * The content `id` of the split-pane's main content. This property can be used instead of the `[main]` attribute to select the `main` content of the split-pane.  ```html    * <ion-split-pane content-id="my-content">    *   <ion-menu></ion-menu>    *   <div id="my-content">    * </ion-split-pane>    * ```
+    * The content `id` of the split-pane's main content. This property can be used instead of the `[main]` attribute to select the `main` content of the split-pane.
     */
   var contentId: js.UndefOr[java.lang.String] = js.undefined
   /**

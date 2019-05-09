@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IonAlertController extends js.Object {
   /**
-    * Create an alert overlay with alert options
+    * Create an alert overlay with alert options.
     */
   def create(
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AlertOptions */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AlertOptions */ js.Any
   ): js.Promise[atIonicCoreLib.distTypesComponentsMod.Global.HTMLIonAlertElement] = js.native
   /**
     * Dismiss the open alert overlay.

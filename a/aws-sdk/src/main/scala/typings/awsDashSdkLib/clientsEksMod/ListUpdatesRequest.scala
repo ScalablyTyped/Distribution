@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ListUpdatesRequest extends js.Object {
   /**
-    * The maximum number of update results returned by ListUpdates in paginated output. When this parameter is used, ListUpdates only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListUpdates request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListUpdates returns up to 100 results and a nextToken value if applicable.
+    * The maximum number of update results returned by ListUpdates in paginated output. When you use this parameter, ListUpdates returns only maxResults results in a single page along with a nextToken response element. You can see the remaining results of the initial request by sending another ListUpdates request with the returned nextToken value. This value can be between 1 and 100. If you don't use this parameter, ListUpdates returns up to 100 results and a nextToken value if applicable.
     */
   var maxResults: js.UndefOr[ListUpdatesRequestMaxResults] = js.undefined
   /**
-    * The name of the Amazon EKS cluster for which to list updates.
+    * The name of the Amazon EKS cluster to list updates for.
     */
   var name: String
   /**

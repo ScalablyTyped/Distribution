@@ -23,7 +23,7 @@ trait ApplicationSummary extends js.Object {
     */
   var ApplicationVersionId: awsDashSdkLib.clientsKinesisanalyticsv2Mod.ApplicationVersionId
   /**
-    * The runtime environment for the application (SQL-1.0 or JAVA-8-FLINK-1.5).
+    * The runtime environment for the application (SQL-1.0 or FLINK-1_6).
     */
   var RuntimeEnvironment: awsDashSdkLib.clientsKinesisanalyticsv2Mod.RuntimeEnvironment
 }

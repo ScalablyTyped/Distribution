@@ -13,5 +13,6 @@ class IonImg protected () extends js.Object {
   var el: stdLib.HTMLElement = js.native
   var ionError: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
   var ionImgDidLoad: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
+  var ionImgWillLoad: atAngularCoreLib.atAngularCoreMod.EventEmitter[stdLib.CustomEvent[_]] = js.native
 }
 

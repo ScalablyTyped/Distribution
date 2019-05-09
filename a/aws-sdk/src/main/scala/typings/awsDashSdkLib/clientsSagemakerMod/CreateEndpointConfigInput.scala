@@ -15,11 +15,11 @@ trait CreateEndpointConfigInput extends js.Object {
     */
   var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   /**
-    * An array of ProductionVariant objects, one for each model that you want to host at this endpoint.
+    * An list of ProductionVariant objects, one for each model that you want to host at this endpoint.
     */
   var ProductionVariants: ProductionVariantList
   /**
-    * An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+    * A list of key-value pairs. For more information, see Using Cost Allocation Tags in the  AWS Billing and Cost Management User Guide. 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

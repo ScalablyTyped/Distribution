@@ -65,6 +65,7 @@ package object clientsKinesisanalyticsv2Mod {
   type InputUpdates = js.Array[InputUpdate]
   type Inputs = js.Array[Input]
   type JobPlanDescription = java.lang.String
+  type KinesisAnalyticsARN = java.lang.String
   type ListApplicationsInputLimit = scala.Double
   type ListSnapshotsInputLimit = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -139,6 +140,10 @@ package object clientsKinesisanalyticsv2Mod {
   type SnapshotStatus = _SnapshotStatus | java.lang.String
   type SnapshotSummaries = js.Array[SnapshotDetails]
   type SqlRunConfigurations = js.Array[SqlRunConfiguration]
+  type TagKey = java.lang.String
+  type TagKeys = js.Array[TagKey]
+  type TagValue = java.lang.String
+  type Tags = js.Array[Tag]
   type TextContent = java.lang.String
   type Timestamp = stdLib.Date
   type ZipFileContent = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String

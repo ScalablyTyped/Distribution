@@ -75,7 +75,7 @@ class HTMLIonFabElementCls () extends HTMLIonFabElement {
   /* CompleteClass */
   override val style: stdLib.CSSStyleDeclaration = js.native
   /**
-    * Close an active FAB list container
+    * Close an active FAB list container.
     */
   /* CompleteClass */
   override def close(): scala.Unit = js.native

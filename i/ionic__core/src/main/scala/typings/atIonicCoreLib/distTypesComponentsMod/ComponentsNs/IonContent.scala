@@ -34,15 +34,15 @@ trait IonContent extends js.Object {
     */
   var scrollY: scala.Boolean = js.native
   /**
-    * Returns the element where the actual scrolling takes places. This element is the one you could subscribe to `scroll` events or manually modify `scrollTop`, however, it's recommended to use the API provided by `ion-content`:  Ie. Using `ionScroll`, `ionScrollStart`, `ionScrollEnd` for scrolling events and scrollToPoint() to scroll the content into a certain point.
+    * Get the element where the actual scrolling takes place. This element can be used to subscribe to `scroll` events or manually modify `scrollTop`. However, it's recommended to use the API provided by `ion-content`:  i.e. Using `ionScroll`, `ionScrollStart`, `ionScrollEnd` for scrolling events and `scrollToPoint()` to scroll the content into a certain point.
     */
   def getScrollElement(): js.Promise[stdLib.HTMLElement] = js.native
   /**
-    * Scroll by a specified X/Y distance in the component
+    * Scroll by a specified X/Y distance in the component.
     */
   def scrollByPoint(x: scala.Double, y: scala.Double, duration: scala.Double): js.Promise[scala.Unit] = js.native
   /**
-    * Scroll to the bottom of the component
+    * Scroll to the bottom of the component.
     */
   def scrollToBottom(): js.Promise[scala.Unit] = js.native
   def scrollToBottom(duration: scala.Double): js.Promise[scala.Unit] = js.native
@@ -54,7 +54,7 @@ trait IonContent extends js.Object {
   def scrollToPoint(x: scala.Double): js.Promise[scala.Unit] = js.native
   def scrollToPoint(x: scala.Double, y: js.UndefOr[scala.Nothing], duration: scala.Double): js.Promise[scala.Unit] = js.native
   /**
-    * Scroll to a specified X/Y location in the component
+    * Scroll to a specified X/Y location in the component.
     */
   def scrollToPoint(x: scala.Double, y: scala.Double): js.Promise[scala.Unit] = js.native
   def scrollToPoint(x: scala.Double, y: scala.Double, duration: scala.Double): js.Promise[scala.Unit] = js.native
@@ -64,7 +64,7 @@ trait IonContent extends js.Object {
   def scrollToPoint(x: scala.Null, y: scala.Double, duration: scala.Double): js.Promise[scala.Unit] = js.native
   def scrollToPoint(x: scala.Null, y: scala.Null, duration: scala.Double): js.Promise[scala.Unit] = js.native
   /**
-    * Scroll to the top of the component
+    * Scroll to the top of the component.
     */
   def scrollToTop(): js.Promise[scala.Unit] = js.native
   def scrollToTop(duration: scala.Double): js.Promise[scala.Unit] = js.native

@@ -19,6 +19,7 @@ trait ICustomer
     * to any invoice. This balance is only taken into account for recurring charges.
     */
   var account_balance: js.UndefOr[scala.Double] = js.undefined
+  var address: stripeLib.stripeMod.IAddress | scala.Null
   var cards: js.UndefOr[stripeLib.stripeMod.resourcesNs.CustomerCards] = js.undefined
   var created: scala.Double
   /**
@@ -41,6 +42,7 @@ trait ICustomer
   var email: js.UndefOr[java.lang.String] = js.undefined
   var livemode: scala.Boolean
   var metadata: stripeLib.stripeMod.IMetadata
+  var name: java.lang.String | scala.Null
   /**
     * Value is 'customer'
     */
@@ -75,12 +77,14 @@ object ICustomer {
     `object`: stripeLib.stripeLibStrings.customer,
     subscriptions: ICustomerSubscriptions,
     account_balance: scala.Int | scala.Double = null,
+    address: stripeLib.stripeMod.IAddress = null,
     cards: stripeLib.stripeMod.resourcesNs.CustomerCards = null,
     currency: java.lang.String = null,
     default_source: java.lang.String | stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount = null,
     description: java.lang.String = null,
     discount: stripeLib.stripeMod.couponsNs.IDiscount = null,
     email: java.lang.String = null,
+    name: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     sources: stripeLib.stripeMod.IList[
       stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount
@@ -89,12 +93,14 @@ object ICustomer {
     val __obj = js.Dynamic.literal(created = created, delinquent = delinquent, id = id, livemode = livemode, metadata = metadata, subscriptions = subscriptions)
     __obj.updateDynamic("object")(`object`)
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address)
     if (cards != null) __obj.updateDynamic("cards")(cards)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (email != null) __obj.updateDynamic("email")(email)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (sources != null) __obj.updateDynamic("sources")(sources)
     __obj.asInstanceOf[ICustomer]

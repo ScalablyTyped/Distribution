@@ -32,34 +32,34 @@ trait IonMenu extends js.Object {
     */
   var swipeGesture: scala.Boolean = js.native
   /**
-    * The display type of the menu. Available options: `"overlay"`, `"reveal"`, `"push"`.
+    * The animation type of the menu. Available options: `"overlay"`, `"reveal"`, `"push"`. Custom animations can be registered by the menu controller.
     */
   var `type`: js.UndefOr[java.lang.String] = js.native
   /**
-    * Closes the menu. If the menu is already closed or it can't be closed, it returns `false`.
+    * Close the menu. Returns `false` if the menu is already closed or it can't be closed.
     */
   def close(): js.Promise[scala.Boolean] = js.native
   def close(animated: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
-    * Returns `true` is the menu is active.  A menu is active when it can be opened or closed, meaning it's enabled and it's not part of a `ion-split-pane`.
+    * Get whether or not the menu is active. Returns `true` if the menu is active.  A menu is active when it can be opened or closed, meaning it's enabled and it's not part of an `ion-split-pane`.
     */
   def isActive(): js.Promise[scala.Boolean] = js.native
   /**
-    * Returns `true` is the menu is open.
+    * Get whether or not the menu is open. Returns `true` if the menu is open.
     */
   def isOpen(): js.Promise[scala.Boolean] = js.native
   /**
-    * Opens the menu. If the menu is already open or it can't be opened, it returns `false`.
+    * Open the menu. Returns `false` if the menu is already open or it can't be opened.
     */
   def open(): js.Promise[scala.Boolean] = js.native
   def open(animated: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
-    * Opens or closes the button. If the operation can't be completed successfully, it returns `false`.
+    * Sets the menu to open or closed. Returns `false` if the operation can't be completed successfully.
     */
   def setOpen(shouldOpen: scala.Boolean): js.Promise[scala.Boolean] = js.native
   def setOpen(shouldOpen: scala.Boolean, animated: scala.Boolean): js.Promise[scala.Boolean] = js.native
   /**
-    * Toggles the menu. If the menu is already open, it will try to close, otherwise it will try to open it. If the operation can't be completed successfully, it returns `false`.
+    * Toggle the menu open or closed. If the menu is already open, it will try to close the menu, otherwise it will try to open it. Returns `false` if the operation can't be completed successfully.
     */
   def toggle(): js.Promise[scala.Boolean] = js.native
   def toggle(animated: scala.Boolean): js.Promise[scala.Boolean] = js.native

@@ -27,7 +27,7 @@ trait CreateNotebookInstanceInput extends js.Object {
     */
   var InstanceType: awsDashSdkLib.clientsSagemakerMod.InstanceType
   /**
-    *  If you provide a AWS KMS key ID, Amazon SageMaker uses it to encrypt data at rest on the ML storage volume that is attached to your notebook instance. The KMS key you provide must be enabled. For information, see Enabling and Disabling Keys in the AWS Key Management Service Developer Guide.
+    * The Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt data on the storage volume attached to your notebook instance. The KMS key you provide must be enabled. For information, see Enabling and Disabling Keys in the AWS Key Management Service Developer Guide.
     */
   var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   /**

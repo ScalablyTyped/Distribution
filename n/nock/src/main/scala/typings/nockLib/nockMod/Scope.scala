@@ -24,6 +24,7 @@ trait Scope
   var post_Original: InterceptFunction = js.native
   @JSName("put")
   var put_Original: InterceptFunction = js.native
+  def activeMocks(): js.Array[java.lang.String] = js.native
   def defaultReplyHeaders(headers: HttpHeaders): this.type = js.native
   def delete(uri: java.lang.String): Interceptor = js.native
   def delete(uri: java.lang.String, requestBody: java.lang.String): Interceptor = js.native

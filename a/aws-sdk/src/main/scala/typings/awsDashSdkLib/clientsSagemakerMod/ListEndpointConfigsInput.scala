@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListEndpointConfigsInput extends js.Object {
   /**
-    * A filter that returns only endpoint configurations created after the specified time (timestamp).
+    * A filter that returns only endpoint configurations with a creation time greater than or equal to the specified time (timestamp).
     */
   var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   /**

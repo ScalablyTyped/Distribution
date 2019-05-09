@@ -65,13 +65,13 @@ trait IonActionSheet extends js.Object {
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any, role: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-    * Returns a promise that resolves when the action-sheet did dismiss.
+    * Returns a promise that resolves when the action sheet did dismiss.
     */
   def onDidDismiss(): js.Promise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _
   ] = js.native
   /**
-    * Returns a promise that resolves when the action-sheet will dismiss.
+    * Returns a promise that resolves when the action sheet will dismiss.
     */
   def onWillDismiss(): js.Promise[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OverlayEventDetail<any> */ _

@@ -44,17 +44,17 @@ trait IonSlides extends js.Object {
     */
   def length(): js.Promise[scala.Double] = js.native
   /**
-    * Lock or unlock the ability to slide to the next slides.
+    * Lock or unlock the ability to slide to the next slide.
     */
-  def lockSwipeToNext(shouldLockSwipeToNext: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def lockSwipeToNext(lock: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
-    * Lock or unlock the ability to slide to the previous slides.
+    * Lock or unlock the ability to slide to the previous slide.
     */
-  def lockSwipeToPrev(shouldLockSwipeToPrev: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def lockSwipeToPrev(lock: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
-    * Lock or unlock the ability to slide to change slides.
+    * Lock or unlock the ability to slide to the next or previous slide.
     */
-  def lockSwipes(shouldLockSwipes: scala.Boolean): js.Promise[scala.Unit] = js.native
+  def lockSwipes(lock: scala.Boolean): js.Promise[scala.Unit] = js.native
   /**
     * Transition to the next slide.
     */
@@ -89,7 +89,7 @@ trait IonSlides extends js.Object {
     */
   def update(): js.Promise[scala.Unit] = js.native
   /**
-    * Force swiper to update its height (when autoHeight enabled) for the duration equal to 'speed' parameter
+    * Force swiper to update its height (when autoHeight is enabled) for the duration equal to 'speed' parameter.
     */
   def updateAutoHeight(): js.Promise[scala.Unit] = js.native
   def updateAutoHeight(speed: scala.Double): js.Promise[scala.Unit] = js.native

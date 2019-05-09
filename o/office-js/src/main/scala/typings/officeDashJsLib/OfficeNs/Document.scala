@@ -118,7 +118,7 @@ trait Document extends js.Object {
     * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
     * the host:
     *
-    * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+    * Excel for Windows desktop and Excel Online: `Office.FileType.Compressed`
     * 
     * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
     *

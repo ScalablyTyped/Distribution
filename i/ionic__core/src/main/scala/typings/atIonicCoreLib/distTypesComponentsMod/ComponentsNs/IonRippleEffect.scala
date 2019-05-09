@@ -11,9 +11,9 @@ trait IonRippleEffect extends js.Object {
     */
   var `type`: atIonicCoreLib.atIonicCoreLibStrings.bounded | atIonicCoreLib.atIonicCoreLibStrings.unbounded
   /**
-    * Adds the ripple effect to the parent element
+    * Adds the ripple effect to the parent element.
     */
-  def addRipple(pageX: scala.Double, pageY: scala.Double): js.Promise[js.Function0[scala.Unit]]
+  def addRipple(x: scala.Double, y: scala.Double): js.Promise[js.Function0[scala.Unit]]
 }
 
 object IonRippleEffect {

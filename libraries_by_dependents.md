@@ -6296,6 +6296,7 @@
 | 0 | [react-wow](./r/react-wow) | Using CSS animation in your react components.
 | 0 | [react-youtube-embed](./r/react-youtube-embed) | A responsive YouTube embed component for React.
 | 0 | [readmore-js](./r/readmore-js) | A lightweight jQuery plugin for collapsing and exp
+| 0 | [rebind-host](./r/rebind-host) | Express middleware to bind the correct host
 | 0 | [redis-rate-limiter](./r/redis-rate-limiter) | Rate-limit any operation, backed by Redis
 | 0 | [redux-async-queue](./r/redux-async-queue) | Async queue middleware for Redux.
 | 0 | [redux-doghouse](./r/redux-doghouse) | Scoping helpers for building reusable components w

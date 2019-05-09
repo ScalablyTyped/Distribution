@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/osaton/gulp-sass-variables
 // Definitions by: Takesi Tokugawa <https://github.com/TokugawaTakesi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 
 ```
 

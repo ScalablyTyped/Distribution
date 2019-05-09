@@ -55,12 +55,16 @@ class Object ()
   	 */
   def _render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
   /**
+    * @private
+    * @param {CanvasRenderingContext2D} ctx Context to render on
+    */
+  def _renderFill(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  /**
   	 * @private
   	 * @param {CanvasRenderingContext2D} ctx Context to render on
   	 */
   def _renderPaintInOrder(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
   /**
-  	 *
   	 * @param ctx
   	 * @private
   	 */

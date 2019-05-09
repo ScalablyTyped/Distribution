@@ -48,6 +48,10 @@ trait IonSearchbarAttributes
     */
   var debounce: js.UndefOr[scala.Double] = js.undefined
   /**
+    * If `true`, the user cannot interact with the input.
+    */
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The mode determines which platform styles to use.
     */
   var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
@@ -138,6 +142,7 @@ object IonSearchbarAttributes {
     datatype: java.lang.String = null,
     debounce: scala.Int | scala.Double = null,
     dir: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
@@ -306,6 +311,7 @@ object IonSearchbarAttributes {
     if (datatype != null) __obj.updateDynamic("datatype")(datatype)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (id != null) __obj.updateDynamic("id")(id)

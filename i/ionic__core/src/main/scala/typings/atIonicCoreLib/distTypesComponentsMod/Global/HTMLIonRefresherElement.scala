@@ -73,6 +73,11 @@ class HTMLIonRefresherElementCls () extends HTMLIonRefresherElement {
   /* CompleteClass */
   override val previousElementSibling: stdLib.Element | scala.Null = js.native
   /**
+    * How much to multiply the pull speed by. To slow the pull animation down, pass a number less than `1`. To speed up the pull, pass a number greater than `1`. The default value is `1` which is equal to the speed of the cursor. If a negative value is passed in, the factor will be `1` instead.  For example: If the value passed is `1.2` and the content is dragged by `10` pixels, instead of `10` pixels the content will be pulled by `12` pixels (an increase of 20 percent). If the value passed is `0.8`, the dragged amount will be `8` pixels, less than the amount the cursor has moved.
+    */
+  /* CompleteClass */
+  override var pullFactor: scala.Double = js.native
+  /**
     * The maximum distance of the pull until the refresher will automatically go into the `refreshing` state. Defaults to the result of `pullMin + 60`.
     */
   /* CompleteClass */

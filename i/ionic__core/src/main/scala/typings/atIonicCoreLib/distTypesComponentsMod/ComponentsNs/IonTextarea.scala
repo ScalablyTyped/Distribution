@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait IonTextarea extends js.Object {
   /**
+    * If `true`, the element height will increase based on the value.
+    */
+  var autoGrow: scala.Boolean
+  /**
     * Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user.
     */
   var autocapitalize: java.lang.String
@@ -95,6 +99,7 @@ trait IonTextarea extends js.Object {
 object IonTextarea {
   @scala.inline
   def apply(
+    autoGrow: scala.Boolean,
     autocapitalize: java.lang.String,
     autofocus: scala.Boolean,
     clearOnEdit: scala.Boolean,
@@ -116,7 +121,7 @@ object IonTextarea {
     value: java.lang.String = null,
     wrap: atIonicCoreLib.atIonicCoreLibStrings.hard | atIonicCoreLib.atIonicCoreLibStrings.soft | atIonicCoreLib.atIonicCoreLibStrings.off = null
   ): IonTextarea = {
-    val __obj = js.Dynamic.literal(autocapitalize = autocapitalize, autofocus = autofocus, clearOnEdit = clearOnEdit, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(autoGrow = autoGrow, autocapitalize = autocapitalize, autofocus = autofocus, clearOnEdit = clearOnEdit, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, name = name, readonly = readonly, required = required, setFocus = js.Any.fromFunction0(setFocus), spellcheck = spellcheck)
     if (color != null) __obj.updateDynamic("color")(color)
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])

@@ -19,19 +19,19 @@ trait UpdateNotebookInstanceInput extends js.Object {
     */
   var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
   /**
-    * A list of the Elastic Inference (EI) instance types to remove from this notebook instance.
+    * A list of the Elastic Inference (EI) instance types to remove from this notebook instance. This operation is idempotent. If you specify an accelerator type that is not associated with the notebook instance when you call this method, it does not throw an error.
     */
   var DisassociateAcceleratorTypes: js.UndefOr[DisassociateNotebookInstanceAcceleratorTypes] = js.undefined
   /**
-    * A list of names or URLs of the default Git repositories to remove from this notebook instance.
+    * A list of names or URLs of the default Git repositories to remove from this notebook instance. This operation is idempotent. If you specify a Git repository that is not associated with the notebook instance when you call this method, it does not throw an error.
     */
   var DisassociateAdditionalCodeRepositories: js.UndefOr[DisassociateAdditionalCodeRepositories] = js.undefined
   /**
-    * The name or URL of the default Git repository to remove from this notebook instance.
+    * The name or URL of the default Git repository to remove from this notebook instance. This operation is idempotent. If you specify a Git repository that is not associated with the notebook instance when you call this method, it does not throw an error.
     */
   var DisassociateDefaultCodeRepository: js.UndefOr[DisassociateDefaultCodeRepository] = js.undefined
   /**
-    * Set to true to remove the notebook instance lifecycle configuration currently associated with the notebook instance.
+    * Set to true to remove the notebook instance lifecycle configuration currently associated with the notebook instance. This operation is idempotent. If you specify a lifecycle configuration that is not associated with the notebook instance when you call this method, it does not throw an error.
     */
   var DisassociateLifecycleConfig: js.UndefOr[DisassociateNotebookInstanceLifecycleConfig] = js.undefined
   /**

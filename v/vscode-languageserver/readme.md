@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-languageserver
 
-Typings are for version 5.3.0-next.5
+Typings are for version 5.3.0-next.6
 
 ## Library description:
 Language server implementation for node

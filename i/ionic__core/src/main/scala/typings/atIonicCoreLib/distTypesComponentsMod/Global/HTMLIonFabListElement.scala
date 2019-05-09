@@ -43,7 +43,7 @@ trait HTMLIonFabListElement
 @js.native
 class HTMLIonFabListElementCls () extends HTMLIonFabListElement {
   /**
-    * If `true`, the fab list will be show all fab buttons in the list.
+    * If `true`, the fab list will show all fab buttons in the list.
     */
   /* CompleteClass */
   override var activated: scala.Boolean = js.native

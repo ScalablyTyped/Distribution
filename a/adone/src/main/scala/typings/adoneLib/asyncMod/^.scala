@@ -289,17 +289,17 @@ object ^ extends js.Object {
     callback: asyncLib.asyncMod.AsyncResultCallback[R, E]
   ): scala.Unit = js.native
   def reflect[T, E](fn: asyncLib.asyncMod.AsyncFunction[T, E]): js.Function1[
-    /* callback */ js.Function2[/* err */ scala.Null, /* result */ asyncLib.Anon_Error[E, T], scala.Unit], 
+    /* callback */ js.Function2[/* err */ scala.Null, /* result */ asyncLib.Anon_ErrorValue[E, T], scala.Unit], 
     scala.Unit
   ] = js.native
   def reflectAll[T, E](tasks: js.Array[asyncLib.asyncMod.AsyncFunction[T, E]]): js.Array[
     js.Function1[
-      /* callback */ js.Function2[/* err */ scala.Null, /* result */ asyncLib.Anon_Error[E, T], scala.Unit], 
+      /* callback */ js.Function2[/* err */ scala.Null, /* result */ asyncLib.Anon_ErrorValue[E, T], scala.Unit], 
       scala.Unit
     ]
   ] = js.native
   def retry[T, E](
-    opts: asyncLib.Anon_Interval,
+    opts: asyncLib.Anon_Error,
     task: js.Function2[
       /* callback */ asyncLib.asyncMod.AsyncResultCallback[T, E], 
       /* results */ js.Any, 
@@ -316,7 +316,7 @@ object ^ extends js.Object {
     ],
     callback: asyncLib.asyncMod.AsyncResultCallback[_, E]
   ): scala.Unit = js.native
-  def retryable[T, E](opts: asyncLib.Anon_IntervalTimes, task: asyncLib.asyncMod.AsyncFunction[T, E]): asyncLib.asyncMod.AsyncFunction[T, E] = js.native
+  def retryable[T, E](opts: asyncLib.Anon_Interval, task: asyncLib.asyncMod.AsyncFunction[T, E]): asyncLib.asyncMod.AsyncFunction[T, E] = js.native
   def retryable[T, E](opts: scala.Double, task: asyncLib.asyncMod.AsyncFunction[T, E]): asyncLib.asyncMod.AsyncFunction[T, E] = js.native
   def seq(fns: js.Function*): js.Function = js.native
   def series[T, E](tasks: asyncLib.asyncMod.Dictionary[asyncLib.asyncMod.AsyncFunction[T, E]]): scala.Unit = js.native

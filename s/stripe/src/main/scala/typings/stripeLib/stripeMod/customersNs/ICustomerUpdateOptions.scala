@@ -12,6 +12,7 @@ trait ICustomerUpdateOptions
     * will be used before attempting any charges to the customer's card; a positive amount will be added to the next invoice.
     */
   var account_balance: js.UndefOr[scala.Double] = js.undefined
+  var address: js.UndefOr[stripeLib.stripeMod.IAddress] = js.undefined
   /**
     * If you provide a coupon code, the customer will have a discount applied on all recurring charges. Charges you create through the
     * API will not have the discount.
@@ -35,6 +36,10 @@ trait ICustomerUpdateOptions
     * The prefix for the customer used to generate unique invoice numbers.
     */
   var invoice_prefix: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The customer’s full name or business name.
+    */
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var shipping: js.UndefOr[stripeLib.stripeMod.IShippingInformation] = js.undefined
   /**
     * The source can either be a token, like the ones returned by our Stripe.js, or
@@ -52,6 +57,7 @@ object ICustomerUpdateOptions {
   @scala.inline
   def apply(
     account_balance: scala.Int | scala.Double = null,
+    address: stripeLib.stripeMod.IAddress = null,
     coupon: java.lang.String = null,
     default_source: java.lang.String = null,
     description: java.lang.String = null,
@@ -60,11 +66,13 @@ object ICustomerUpdateOptions {
     include: js.Array[java.lang.String] = null,
     invoice_prefix: java.lang.String = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
+    name: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended = null
   ): ICustomerUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address)
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (default_source != null) __obj.updateDynamic("default_source")(default_source)
     if (description != null) __obj.updateDynamic("description")(description)
@@ -73,6 +81,7 @@ object ICustomerUpdateOptions {
     if (include != null) __obj.updateDynamic("include")(include)
     if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerUpdateOptions]

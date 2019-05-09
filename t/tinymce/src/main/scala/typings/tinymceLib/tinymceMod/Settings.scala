@@ -136,6 +136,13 @@ trait Settings extends js.Object {
   var setup: js.UndefOr[js.Function1[/* edtor */ Editor, scala.Unit]] = js.undefined
   var skin: js.UndefOr[java.lang.String] = js.undefined
   var skin_url: js.UndefOr[java.lang.String] = js.undefined
+  var spellchecker_active: js.UndefOr[scala.Boolean] = js.undefined
+  var spellchecker_dialog: js.UndefOr[scala.Boolean] = js.undefined
+  var spellchecker_language: js.UndefOr[java.lang.String] = js.undefined
+  var spellchecker_languages: js.UndefOr[java.lang.String] = js.undefined
+  var spellchecker_on_load: js.UndefOr[scala.Boolean] = js.undefined
+  var spellchecker_rpc_url: js.UndefOr[java.lang.String] = js.undefined
+  var spellchecker_whitelist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var statusbar: js.UndefOr[scala.Boolean] = js.undefined
   var style_formats: js.UndefOr[js.Array[js.Object]] = js.undefined
   var style_formats_autohide: js.UndefOr[scala.Boolean] = js.undefined
@@ -282,6 +289,13 @@ object Settings {
     setup: /* edtor */ Editor => scala.Unit = null,
     skin: java.lang.String = null,
     skin_url: java.lang.String = null,
+    spellchecker_active: js.UndefOr[scala.Boolean] = js.undefined,
+    spellchecker_dialog: js.UndefOr[scala.Boolean] = js.undefined,
+    spellchecker_language: java.lang.String = null,
+    spellchecker_languages: java.lang.String = null,
+    spellchecker_on_load: js.UndefOr[scala.Boolean] = js.undefined,
+    spellchecker_rpc_url: java.lang.String = null,
+    spellchecker_whitelist: js.Array[java.lang.String] = null,
     statusbar: js.UndefOr[scala.Boolean] = js.undefined,
     style_formats: js.Array[js.Object] = null,
     style_formats_autohide: js.UndefOr[scala.Boolean] = js.undefined,
@@ -417,6 +431,13 @@ object Settings {
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
     if (skin != null) __obj.updateDynamic("skin")(skin)
     if (skin_url != null) __obj.updateDynamic("skin_url")(skin_url)
+    if (!js.isUndefined(spellchecker_active)) __obj.updateDynamic("spellchecker_active")(spellchecker_active)
+    if (!js.isUndefined(spellchecker_dialog)) __obj.updateDynamic("spellchecker_dialog")(spellchecker_dialog)
+    if (spellchecker_language != null) __obj.updateDynamic("spellchecker_language")(spellchecker_language)
+    if (spellchecker_languages != null) __obj.updateDynamic("spellchecker_languages")(spellchecker_languages)
+    if (!js.isUndefined(spellchecker_on_load)) __obj.updateDynamic("spellchecker_on_load")(spellchecker_on_load)
+    if (spellchecker_rpc_url != null) __obj.updateDynamic("spellchecker_rpc_url")(spellchecker_rpc_url)
+    if (spellchecker_whitelist != null) __obj.updateDynamic("spellchecker_whitelist")(spellchecker_whitelist)
     if (!js.isUndefined(statusbar)) __obj.updateDynamic("statusbar")(statusbar)
     if (style_formats != null) __obj.updateDynamic("style_formats")(style_formats)
     if (!js.isUndefined(style_formats_autohide)) __obj.updateDynamic("style_formats_autohide")(style_formats_autohide)
