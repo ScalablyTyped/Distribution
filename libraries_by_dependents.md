@@ -4888,6 +4888,7 @@
 | 4 | [spotify-web-api-js](./s/spotify-web-api-js) | A client-side JS wrapper for the Spotify Web API
 | 4 | [subtitle](./s/subtitle) | Parse and manipulate SRT (SubRip)
 | 4 | [sumo-logger](./s/sumo-logger) | Sumo Logic Javascript SDK for sending logs to a HT
+| 4 | [sylvester-es6](./s/sylvester-es6) | Fork of the famous Sylvester vector, matrix and ge
 | 4 | [tape-async](./t/tape-async) | A lite wrapper around tape to simplify async testi
 | 4 | [textversionjs](./t/textversionjs) | A tool for generating the text version of an html 
 | 4 | [tgfancy](./t/tgfancy) | A Fancy, Higher-Level Wrapper for Telegram Bot API
@@ -5214,6 +5215,7 @@
 | 2 | [freedom](./f/freedom) | Embracing a distributed web
 | 2 | [fromjs](./f/fromjs) | Powerful LINQ engine for JavaScript
 | 2 | [fromnow](./f/fromnow) | A tiny (392B) utility for human-readable time diff
+| 2 | [fs-capacitor](./f/fs-capacitor) | Filesystem-buffered, passthrough stream that buffe
 | 2 | [gapi](./g/gapi) | Node implementation of Google's JavaScript Library
 | 2 | [generic-functions](./g/generic-functions) | A generic function library for Node.js
 | 2 | [gently](./g/gently) |  

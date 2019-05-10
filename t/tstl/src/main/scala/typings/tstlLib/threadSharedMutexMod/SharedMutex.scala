@@ -16,15 +16,7 @@ class SharedMutex ()
   /**
     * @hidden
     */
-  var read_lock_count_ : js.Any = js.native
-  /**
-    * @hidden
-    */
-  var resolvers_ : js.Any = js.native
-  /**
-    * @hidden
-    */
-  var write_lock_count_ : js.Any = js.native
+  var mutex_ : js.Any = js.native
   /**
     * Lock until be unlocked.
     */

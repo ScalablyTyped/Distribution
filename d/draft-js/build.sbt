@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "draft-js"
-version := "v0.10.5-dt-20190329Z-a69d71"
+version := "v0.10.5-dt-20190509Z-e00dab"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,23 +10,13 @@ import scala.scalajs.js.annotation._
 object operatorScanMod extends js.Object {
   def scan[T](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    accumulator: js.Function3[
-      (/* acc */ js.Array[T]) | (/* acc */ T), 
-      /* value */ T, 
-      /* index */ scala.Double, 
-      js.Array[T] | T
-    ]
+    accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ scala.Double, T]
   ): rxjsLib.rxjsMod.Observable[T] = js.native
   def scan[T](
     `this`: rxjsLib.rxjsMod.Observable[T],
     accumulator: js.Function3[/* acc */ T, /* value */ T, /* index */ scala.Double, T],
     seed: T
   ): rxjsLib.rxjsMod.Observable[T] = js.native
-  def scan[T](
-    `this`: rxjsLib.rxjsMod.Observable[T],
-    accumulator: js.Function3[/* acc */ js.Array[T], /* value */ T, /* index */ scala.Double, js.Array[T]],
-    seed: js.Array[T]
-  ): rxjsLib.rxjsMod.Observable[js.Array[T]] = js.native
   @JSName("scan")
   def scan_TR[T, R](
     `this`: rxjsLib.rxjsMod.Observable[T],

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "braft-editor"
-version := "1.9-dt-20190311Z-27a7c4"
+version := "1.9-dt-20190311Z-a7c56b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190329Z-a69d71",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190509Z-e00dab",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-18676c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-c1645f",

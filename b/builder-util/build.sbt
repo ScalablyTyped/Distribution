@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "builder-util"
-version := "9.7.0-13c73d"
+version := "9.7.1-3618f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-74afbb",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.1-74afbb",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-da708a",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-6385ca",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",

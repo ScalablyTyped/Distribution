@@ -51,6 +51,11 @@ trait AppXOptions
     * Defaults to company name from the application metadata.
     */
   val publisherDisplayName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * Whether to overlay the app's name on top of tile images on the Start screen. Defaults to `false`. (https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-shownameontiles) in the dependencies.
+    * @default false
+    */
+  val showNameOnTiles: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object AppXOptions {
@@ -67,7 +72,8 @@ object AppXOptions {
     makeappxArgs: js.Array[java.lang.String] = null,
     publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
     publisher: java.lang.String = null,
-    publisherDisplayName: java.lang.String = null
+    publisherDisplayName: java.lang.String = null,
+    showNameOnTiles: js.UndefOr[scala.Boolean] = js.undefined
   ): AppXOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(addAutoLaunchExtension)) __obj.updateDynamic("addAutoLaunchExtension")(addAutoLaunchExtension)
@@ -82,6 +88,7 @@ object AppXOptions {
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher)
     if (publisherDisplayName != null) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
+    if (!js.isUndefined(showNameOnTiles)) __obj.updateDynamic("showNameOnTiles")(showNameOnTiles)
     __obj.asInstanceOf[AppXOptions]
   }
 }

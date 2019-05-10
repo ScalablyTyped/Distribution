@@ -20,15 +20,18 @@ object ecNs extends js.Object {
     def this(ec: ellipticLib.ellipticMod.ec, options: KeyPairOptions) = this()
     var ec: ellipticLib.ellipticMod.ec = js.native
     def derive(pub: js.Any): js.Any = js.native
-     // ?
-    def getPrivate(): nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | java.lang.String = js.native
+    def getPrivate(): js.Any = js.native
     @JSName("getPrivate")
-    def getPrivate_hex(enc: ellipticLib.ellipticLibStrings.hex): nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | java.lang.String = js.native
-     // ?
-    def getPublic(): js.Any = js.native
-    def getPublic(compact: scala.Boolean): js.Any = js.native
-    def getPublic(compact: scala.Boolean, enc: java.lang.String): js.Any = js.native
-    def getPublic(enc: java.lang.String): js.Any = js.native
+    def getPrivate_hex(enc: ellipticLib.ellipticLibStrings.hex): java.lang.String = js.native
+    def getPublic(): ellipticLib.ellipticMod.curveNs.baseNs.BasePoint = js.native
+    @JSName("getPublic")
+    def getPublic_array(compact: scala.Boolean, enc: ellipticLib.ellipticLibStrings.array): java.lang.String | js.Array[scala.Double] = js.native
+    @JSName("getPublic")
+    def getPublic_array(enc: ellipticLib.ellipticLibStrings.array): java.lang.String = js.native
+    @JSName("getPublic")
+    def getPublic_hex(compact: scala.Boolean, enc: ellipticLib.ellipticLibStrings.hex): java.lang.String | js.Array[scala.Double] = js.native
+    @JSName("getPublic")
+    def getPublic_hex(enc: ellipticLib.ellipticLibStrings.hex): java.lang.String = js.native
     def inspect(): java.lang.String = js.native
     def sign(msg: ellipticLib.ellipticMod.BNInput): Signature = js.native
      // ?
@@ -53,7 +56,7 @@ object ecNs extends js.Object {
     var k: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.undefined
-    var pers: js.Any
+    var pers: js.UndefOr[js.Any] = js.undefined
     var persEnc: js.UndefOr[java.lang.String] = js.undefined
   }
   

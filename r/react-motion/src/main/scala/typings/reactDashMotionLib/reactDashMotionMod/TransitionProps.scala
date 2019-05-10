@@ -12,7 +12,7 @@ trait TransitionProps extends js.Object {
   var children: js.UndefOr[
     js.Function1[
       /* interpolatedStyles */ js.Array[TransitionPlainStyle], 
-      reactLib.reactMod.ReactElement[_]
+      reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.undefined
   /**
@@ -45,7 +45,7 @@ object TransitionProps {
   @scala.inline
   def apply(
     styles: js.Array[TransitionStyle] | InterpolateFunction,
-    children: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => reactLib.reactMod.ReactElement[_] = null,
+    children: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => reactLib.reactMod.Global.JSXNs.Element = null,
     defaultStyles: js.Array[TransitionPlainStyle] = null,
     didLeave: /* styleThatLeft */ TransitionStyle => scala.Unit = null,
     willEnter: /* styleThatEntered */ TransitionStyle => PlainStyle = null,

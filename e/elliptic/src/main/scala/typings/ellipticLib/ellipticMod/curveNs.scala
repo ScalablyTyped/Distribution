@@ -98,8 +98,14 @@ object curveNs extends js.Object {
       def add(p: BasePoint): BasePoint = js.native
       def dbl(): BasePoint = js.native
       def dblp(k: scala.Double): BasePoint = js.native
-      def encode(enc: java.lang.String, compact: scala.Boolean): java.lang.String | nodeLib.Buffer = js.native
-      def encodeCompressed(enc: java.lang.String): js.Any = js.native
+      @JSName("encodeCompressed")
+      def encodeCompressed_array(enc: ellipticLib.ellipticLibStrings.array): js.Any = js.native
+      @JSName("encodeCompressed")
+      def encodeCompressed_hex(enc: ellipticLib.ellipticLibStrings.hex): js.Any = js.native
+      @JSName("encode")
+      def encode_array(enc: ellipticLib.ellipticLibStrings.array, compact: scala.Boolean): java.lang.String | nodeLib.Buffer = js.native
+      @JSName("encode")
+      def encode_hex(enc: ellipticLib.ellipticLibStrings.hex, compact: scala.Boolean): java.lang.String | nodeLib.Buffer = js.native
       def eq(p: BasePoint): scala.Boolean = js.native
       def getX(): js.Any = js.native
       def getY(): js.Any = js.native
@@ -159,8 +165,8 @@ object curveNs extends js.Object {
     class ShortPoint ()
       extends ellipticLib.ellipticMod.curveNs.baseNs.BasePoint {
       var inf: scala.Boolean = js.native
-      var x: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
-      var y: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+      var x: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | scala.Null = js.native
+      var y: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | scala.Null = js.native
       def toJSON(): js.Array[ellipticLib.ellipticMod.BNInput] = js.native
     }
     

@@ -32,6 +32,70 @@ class Terminal ()
     */
   val markers: js.Array[IMarker] = js.native
   /**
+    * Adds an event listener for the cursor moves.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onCursorMove")
+  var onCursorMove_Original: IEvent[scala.Unit] = js.native
+  /**
+    * Adds an event listener for when a data event fires. This happens for
+    * example when the user types or pastes into the terminal. The event value
+    * is whatever `string` results, in a typical setup, this should be passed
+    * on to the backing pty.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onData")
+  var onData_Original: IEvent[java.lang.String] = js.native
+  /**
+    * Adds an event listener for a key is pressed. The event value contains the
+    * string that will be sent in the data event as well as the DOM event that
+    * triggered it.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onKey")
+  var onKey_Original: IEvent[xtermLib.Anon_DomEvent] = js.native
+  /**
+    * Adds an event listener for when a line feed is added.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onLineFeed")
+  var onLineFeed_Original: IEvent[scala.Unit] = js.native
+  /**
+    * Adds an event listener for when rows are rendered. The event value
+    * contains the start row and end rows of the rendered area (ranges from `0`
+    * to `Terminal.rows - 1`).
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onRender")
+  var onRender_Original: IEvent[xtermLib.Anon_End] = js.native
+  /**
+    * Adds an event listener for when the terminal is resized. The event value
+    * contains the new size.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onResize")
+  var onResize_Original: IEvent[xtermLib.Anon_Cols] = js.native
+  /**
+    * Adds an event listener for when a scroll occurs. The  event value is the
+    * new position of the viewport.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onScroll")
+  var onScroll_Original: IEvent[scala.Double] = js.native
+  /**
+    * Adds an event listener for when a selection change occurs.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onSelectionChange")
+  var onSelectionChange_Original: IEvent[scala.Unit] = js.native
+  /**
+    * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
+    * The event value is the new title.
+    * @returns an `IDisposable` to stop listening.
+    */
+  @JSName("onTitleChange")
+  var onTitleChange_Original: IEvent[java.lang.String] = js.native
+  /**
     * The number of rows in the terminal's viewport. Use
     * `ITerminalOptions.rows` to set this in the constructor and
     * `Terminal.resize` for when the terminal exists.
@@ -192,15 +256,72 @@ class Terminal ()
     * Deregisters an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener).dispose()` instead.
     */
   def off(
     `type`: xtermLib.xtermLibStrings.blur | xtermLib.xtermLibStrings.focus | xtermLib.xtermLibStrings.linefeed | xtermLib.xtermLibStrings.selection | xtermLib.xtermLibStrings.data | xtermLib.xtermLibStrings.key | xtermLib.xtermLibStrings.keypress | xtermLib.xtermLibStrings.keydown | xtermLib.xtermLibStrings.refresh | xtermLib.xtermLibStrings.resize | xtermLib.xtermLibStrings.scroll | xtermLib.xtermLibStrings.title | java.lang.String,
     listener: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
+    * Adds an event listener for the cursor moves.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onCursorMove(listener: js.Function1[/* e */ scala.Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when a data event fires. This happens for
+    * example when the user types or pastes into the terminal. The event value
+    * is whatever `string` results, in a typical setup, this should be passed
+    * on to the backing pty.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onData(listener: js.Function1[/* e */ java.lang.String, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for a key is pressed. The event value contains the
+    * string that will be sent in the data event as well as the DOM event that
+    * triggered it.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onKey(listener: js.Function1[/* e */ xtermLib.Anon_DomEvent, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when a line feed is added.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onLineFeed(listener: js.Function1[/* e */ scala.Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when rows are rendered. The event value
+    * contains the start row and end rows of the rendered area (ranges from `0`
+    * to `Terminal.rows - 1`).
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onRender(listener: js.Function1[/* e */ xtermLib.Anon_End, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when the terminal is resized. The event value
+    * contains the new size.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onResize(listener: js.Function1[/* e */ xtermLib.Anon_Cols, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when a scroll occurs. The  event value is the
+    * new position of the viewport.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onScroll(listener: js.Function1[/* e */ scala.Double, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when a selection change occurs.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onSelectionChange(listener: js.Function1[/* e */ scala.Unit, _]): IDisposable = js.native
+  /**
+    * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
+    * The event value is the new title.
+    * @returns an `IDisposable` to stop listening.
+    */
+  def onTitleChange(listener: js.Function1[/* e */ java.lang.String, _]): IDisposable = js.native
+  /**
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_blur(`type`: xtermLib.xtermLibStrings.blur, listener: js.Function0[scala.Unit]): scala.Unit = js.native
@@ -208,6 +329,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_data(`type`: xtermLib.xtermLibStrings.data, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
@@ -217,6 +339,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_key(
@@ -232,6 +355,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_keypress(
@@ -244,6 +368,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_refresh(
@@ -254,6 +379,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_resize(
@@ -264,6 +390,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_scroll(
@@ -276,6 +403,7 @@ class Terminal ()
     * Registers an event listener.
     * @param type The type of the event.
     * @param listener The listener.
+    * @deprecated use `Terminal.onEvent(listener)` instead.
     */
   @JSName("on")
   def on_title(

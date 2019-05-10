@@ -17,6 +17,8 @@ class eddsa protected () extends js.Object {
   def hashInt(): js.Any = js.native
   def isPoint(`val`: js.Any): scala.Boolean = js.native
   def keyFromPublic(pub: ellipticLib.ellipticMod.eddsaNs.Bytes): ellipticLib.ellipticMod.eddsaNs.KeyPair = js.native
+  def keyFromPublic(pub: ellipticLib.ellipticMod.eddsaNs.KeyPair): ellipticLib.ellipticMod.eddsaNs.KeyPair = js.native
+  def keyFromPublic(pub: ellipticLib.ellipticMod.eddsaNs.Point): ellipticLib.ellipticMod.eddsaNs.KeyPair = js.native
   def keyFromSecret(secret: ellipticLib.ellipticMod.eddsaNs.Bytes): ellipticLib.ellipticMod.eddsaNs.KeyPair = js.native
   def makeSignature(sig: ellipticLib.ellipticMod.eddsaNs.Signature): ellipticLib.ellipticMod.eddsaNs.Signature = js.native
   def makeSignature(sig: java.lang.String): ellipticLib.ellipticMod.eddsaNs.Signature = js.native

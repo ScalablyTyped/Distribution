@@ -13,7 +13,7 @@ trait Client extends js.Object {
   def disconnect(): js.Promise[_] = js.native
   def message(message: js.Any): js.Promise[_] = js.native
   def onConnect(): scala.Unit = js.native
-  def onDisconnect(): scala.Unit = js.native
+  def onDisconnect(willReconnect: scala.Boolean, log: atHapiNesLib.Anon_Code): scala.Unit = js.native
   def onError(err: js.Any): scala.Unit = js.native
   def onUpdate(message: js.Any): scala.Unit = js.native
   def overrideReconnectionAuth(auth: js.Any): scala.Unit = js.native

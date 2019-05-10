@@ -149,6 +149,17 @@ trait ITerminalOptions extends js.Object {
     * The color theme of the terminal.
     */
   var theme: js.UndefOr[ITheme] = js.undefined
+  /**
+    * Whether "Windows mode" is enabled. Because Windows backends winpty and
+    * conpty operate by doing line wrapping on their side, xterm.js does not
+    * have access to wrapped lines. When Windows mode is enabled the following
+    * changes will be in effect:
+    *
+    * - Reflow is disabled.
+    * - Lines are assumed to be wrapped if the last character of the line is
+    *   not whitespace.
+    */
+  var windowsMode: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object ITerminalOptions {
@@ -179,7 +190,8 @@ object ITerminalOptions {
     screenReaderMode: js.UndefOr[scala.Boolean] = js.undefined,
     scrollback: scala.Int | scala.Double = null,
     tabStopWidth: scala.Int | scala.Double = null,
-    theme: ITheme = null
+    theme: ITheme = null,
+    windowsMode: js.UndefOr[scala.Boolean] = js.undefined
   ): ITerminalOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency)
@@ -208,6 +220,7 @@ object ITerminalOptions {
     if (scrollback != null) __obj.updateDynamic("scrollback")(scrollback.asInstanceOf[js.Any])
     if (tabStopWidth != null) __obj.updateDynamic("tabStopWidth")(tabStopWidth.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(windowsMode)) __obj.updateDynamic("windowsMode")(windowsMode)
     __obj.asInstanceOf[ITerminalOptions]
   }
 }

@@ -1645,6 +1645,7 @@
 | 0.7321872108322147 | [console-log-level](./c/console-log-level) | The most simple logger imaginable
 | 0.7320909431984994 | [contentful-resolve-respon](./c/contentful-resolve-response) | -
 | 0.7320400715165556 | [decimal_dot_js](./d/decimal_dot_js) | An arbitrary-precision Decimal type for JavaScript
+| 0.7320361341447122 | [fs-capacitor](./f/fs-capacitor) | Filesystem-buffered, passthrough stream that buffe
 | 0.7319618173893453 | [tarn](./t/tarn) | Simple and robust resource pool for node.js
 | 0.731887317713158 | [applicationinsights](./a/applicationinsights) | Microsoft Application Insights module for Node.js
 | 0.731875474627949 | [pollyjs__persister](./p/pollyjs__persister) | Extendable base persister class used by @pollyjs
@@ -5060,6 +5061,7 @@
 | 0.4179519360021541 | [react-reconciler](./r/react-reconciler) | React package for creating custom renderers.
 | 0.4178255082283769 | [multisort](./m/multisort) | Sort an array using any number of separate, ranked
 | 0.4177327466456256 | [jsonstream](./j/jsonstream) | rawStream.pipe(JSONStream.parse()).pipe(streamOfOb
+| 0.4174234727478455 | [sylvester-es6](./s/sylvester-es6) | Fork of the famous Sylvester vector, matrix and ge
 | 0.41740940301029095 | [pathfinding](./p/pathfinding) | Comprehensive pathfinding library for grid based g
 | 0.41735083257865174 | [uk_dot_co_dot_workingedge](./u/uk_dot_co_dot_workingedge_dot_phonegap_dot_plugin_dot_istablet) | Cordova/Phonegap plugin to determine if current de
 | 0.4173228621377254 | [gamepad](./g/gamepad) | node bindings to the Gamepad library

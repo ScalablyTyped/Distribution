@@ -16,15 +16,23 @@ class SharedTimedMutex ()
   /**
     * @hidden
     */
-  var read_lock_count_ : js.Any = js.native
+  var _Current_access_type: js.Any = js.native
   /**
     * @hidden
     */
-  var resolvers_ : js.Any = js.native
+  var _Release: js.Any = js.native
   /**
     * @hidden
     */
-  var write_lock_count_ : js.Any = js.native
+  var queue_ : js.Any = js.native
+  /**
+    * @hidden
+    */
+  var reading_ : js.Any = js.native
+  /**
+    * @hidden
+    */
+  var writing_ : js.Any = js.native
   /**
     * Lock until be unlocked.
     */

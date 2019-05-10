@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "dmg-builder"
-version := "6.6.0-6a52d5"
+version := "6.6.1-a1c9ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "app-builder-lib" % "20.39.0-1ee02c",
-  "org.scalablytyped" %%% "builder-util" % "9.7.0-13c73d",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-74afbb",
+  "org.scalablytyped" %%% "app-builder-lib" % "20.40.2-868b07",
+  "org.scalablytyped" %%% "builder-util" % "9.7.1-3618f7",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.1-74afbb",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-da708a",
-  "org.scalablytyped" %%% "electron-publish" % "20.39.0-0e810d",
+  "org.scalablytyped" %%% "electron-publish" % "20.40.0-580237",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-6385ca",
   "org.scalablytyped" %%% "lazy-val" % "1.0.4-39fe74",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",

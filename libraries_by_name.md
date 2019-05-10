@@ -1810,6 +1810,7 @@
 | [from2](./f/from2) | Convenience wrapper for ReadableStream, with an AP | from, stream, readable, pull, convenience, wrapper |
 | [fromjs](./f/fromjs) | Powerful LINQ engine for JavaScript | LINQ, Functional, Enumerable, Array, Arrays, Collections, String, Strings |
 | [fromnow](./f/fromnow) | A tiny (392B) utility for human-readable time diff | ago, date, time, parse, format, moment, from now, fromnow |
+| [fs-capacitor](./f/fs-capacitor) | Filesystem-buffered, passthrough stream that buffe | stream, buffer, file, split, clone |
 | [fs-cson](./f/fs-cson) | Read and write CSON to the filesystem | fs, cson |
 | [fs-ext](./f/fs-ext) | Extensions to core 'fs' module. | fs, filesystem, flock, seek |
 | [fs-extra](./f/fs-extra) | fs-extra contains methods that aren't included in  | fs, file, file system, copy, directory, extra, mkdirp, mkdir, mkdirs, recursive, json, read, write, extra, delete, remove, touch, create, text, output, move |
@@ -6189,6 +6190,7 @@
 | [swiz](./s/swiz) | Serialization and Validation Framework for objects | - |
 | [sxml](./s/sxml) | Simple XML | xml |
 | [sylvester](./s/sylvester) | node.js implementation of James Coglan's "Sylveste | matrix, vector, linear, line, algebra, matrices |
+| [sylvester-es6](./s/sylvester-es6) | Fork of the famous Sylvester vector, matrix and ge | sylvester, glutils, matrix, vector, geometry, es6 |
 | [symbol-observable](./s/symbol-observable) | Symbol.observable ponyfill | symbol, observable, observables, ponyfill, polyfill, shim |
 | [symlink-or-copy](./s/symlink-or-copy) | Symlink files or directories, falling back to copy | - |
 | [synaptic](./s/synaptic) | architecture-free neural network library | neural network, machine learning, long short term memory, perceptron, architecture free |

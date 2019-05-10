@@ -151,6 +151,7 @@ trait DraftEditorProps extends js.Object {
   // temporarily disabling edit behavior or allowing `DraftEditor` rendering
   // to be used for consumption purposes.
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var role: js.UndefOr[java.lang.String] = js.undefined
   // Note: spellcheck is always disabled for IE. If enabled in Safari, OSX
   // autocorrect is enabled as well.
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
@@ -204,6 +205,7 @@ object DraftEditorProps {
     onUpArrow: /* e */ draftDashJsLib.draftDashJsMod.SyntheticKeyboardEvent => scala.Unit = null,
     placeholder: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    role: java.lang.String = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
     stripPastedStyles: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,
@@ -244,6 +246,7 @@ object DraftEditorProps {
     if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(js.Any.fromFunction1(onUpArrow))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (role != null) __obj.updateDynamic("role")(role)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
     if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

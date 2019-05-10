@@ -14,7 +14,7 @@ trait MotionProps extends js.Object {
     * @param interpolatedStyle
     */
   var children: js.UndefOr[
-    js.Function1[/* interpolatedStyle */ PlainStyle, reactLib.reactMod.ReactElement[_]]
+    js.Function1[/* interpolatedStyle */ PlainStyle, reactLib.reactMod.Global.JSXNs.Element]
   ] = js.undefined
   /**
     * The default style. Being ignored on subsequent renders
@@ -36,7 +36,7 @@ object MotionProps {
   @scala.inline
   def apply(
     style: Style,
-    children: /* interpolatedStyle */ PlainStyle => reactLib.reactMod.ReactElement[_] = null,
+    children: /* interpolatedStyle */ PlainStyle => reactLib.reactMod.Global.JSXNs.Element = null,
     defaultStyle: PlainStyle = null,
     onRest: () => scala.Unit = null
   ): MotionProps = {
