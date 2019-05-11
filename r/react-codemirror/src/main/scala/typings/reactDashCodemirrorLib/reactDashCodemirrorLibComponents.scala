@@ -9,7 +9,7 @@ object reactDashCodemirrorLibComponents {
   @scala.inline
   def ReactDashCodemirror: reactLib.reactMod.ComponentType[reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps] = js.constructorOf[reactDashCodemirrorLib.reactDashCodemirrorMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps]]
   @scala.inline
-  def ReactCodeMirrorProps: reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps.type = reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps
-  type ReactCodeMirrorProps = reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps
+  def ReactDashCodemirrorProps: reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps.type = reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps
+  type ReactDashCodemirrorProps = reactDashCodemirrorLib.ReactCodeMirrorNs.ReactCodeMirrorProps
 }
 

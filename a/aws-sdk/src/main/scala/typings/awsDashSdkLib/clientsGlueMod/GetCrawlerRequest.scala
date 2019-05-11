@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetCrawlerRequest extends js.Object {
   /**
-    * Name of the crawler to retrieve metadata for.
+    * The name of the crawler to retrieve metadata for.
     */
   var Name: NameString
 }

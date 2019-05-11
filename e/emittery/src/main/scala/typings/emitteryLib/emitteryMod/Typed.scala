@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 	 * ee.emit('end'); // TS compilation error
 	 * ```
 	 */
-@JSImport("emittery", "Typed")
+@JSImport("emittery/Emittery", "Typed")
 @js.native
 class Typed[EventDataMap /* <: Events */, EmptyEvents /* <: java.lang.String */] () extends Emittery {
   def emit[Name /* <: EmptyEvents */](eventName: Name): js.Promise[scala.Unit] = js.native

@@ -9,7 +9,7 @@ object reactDashJsonDashTreeLibComponents {
   @scala.inline
   def ReactDashJsonDashTree: reactLib.reactMod.ComponentType[reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps] = js.constructorOf[reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps]]
   @scala.inline
-  def JSONTreeProps: reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps.type = reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps
-  type JSONTreeProps = reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps
+  def ReactDashJsonDashTreeProps: reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps.type = reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps
+  type ReactDashJsonDashTreeProps = reactDashJsonDashTreeLib.reactDashJsonDashTreeMod.JSONTreeProps
 }
 

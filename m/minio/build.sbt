@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "minio"
-version := "7.0-dt-20181106Z-9a5261"
+version := "7.0-dt-20181106Z-671e1a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

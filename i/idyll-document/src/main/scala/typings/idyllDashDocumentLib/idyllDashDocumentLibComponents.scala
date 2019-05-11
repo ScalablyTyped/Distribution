@@ -9,7 +9,7 @@ object idyllDashDocumentLibComponents {
   @scala.inline
   def IdyllDashDocument: reactLib.reactMod.ComponentType[idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps] = js.constructorOf[idyllDashDocumentLib.idyllDashDocumentMod.default].asInstanceOf[reactLib.reactMod.ComponentType[idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps]]
   @scala.inline
-  def IdyllDocumentProps: idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps.type = idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps
-  type IdyllDocumentProps = idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps
+  def IdyllDashDocumentProps: idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps.type = idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps
+  type IdyllDashDocumentProps = idyllDashDocumentLib.idyllDashDocumentMod.IdyllDocumentProps
 }
 

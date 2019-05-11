@@ -11,7 +11,7 @@ trait GetPlanResponse extends js.Object {
     */
   var PythonScript: js.UndefOr[PythonScript] = js.undefined
   /**
-    * Scala code to perform the mapping.
+    * The Scala code to perform the mapping.
     */
   var ScalaCode: js.UndefOr[ScalaCode] = js.undefined
 }

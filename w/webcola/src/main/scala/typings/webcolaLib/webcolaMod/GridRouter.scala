@@ -17,8 +17,9 @@ class GridRouter[Node] protected ()
 @JSImport("webcola", "GridRouter")
 @js.native
 object GridRouter extends js.Object {
+  var getOrder: js.Any = js.native
+  var isLeft: js.Any = js.native
   def angleBetween2Lines(line1: js.Array[webcolaLib.distSrcGeomMod.Point], line2: js.Array[webcolaLib.distSrcGeomMod.Point]): scala.Double = js.native
-  /* private */ def getOrder(pairs: js.Any): js.Any = js.native
   def getRoutePath(
     route: js.Array[js.Array[webcolaLib.distSrcGeomMod.Point]],
     cornerradius: scala.Double,
@@ -26,7 +27,6 @@ object GridRouter extends js.Object {
     arrowheight: scala.Double
   ): webcolaLib.Anon_Arrowpath = js.native
   def getSegmentSets(routes: js.Any, x: js.Any, y: js.Any): js.Array[_] = js.native
-  /* private */ def isLeft(a: js.Any, b: js.Any, c: js.Any): js.Any = js.native
   def makeSegments(path: js.Array[webcolaLib.distSrcGeomMod.Point]): js.Array[js.Array[webcolaLib.distSrcGeomMod.Point]] = js.native
   def nudgeSegments(
     routes: js.Any,

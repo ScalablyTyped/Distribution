@@ -9,7 +9,7 @@ object reactDashMediaLibComponents {
   @scala.inline
   def ReactDashMedia: reactLib.reactMod.ComponentType[reactDashMediaLib.reactDashMediaMod.MediaProps] = js.constructorOf[reactDashMediaLib.reactDashMediaMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMediaLib.reactDashMediaMod.MediaProps]]
   @scala.inline
-  def MediaProps: reactDashMediaLib.reactDashMediaMod.MediaProps.type = reactDashMediaLib.reactDashMediaMod.MediaProps
-  type MediaProps = reactDashMediaLib.reactDashMediaMod.MediaProps
+  def ReactDashMediaProps: reactDashMediaLib.reactDashMediaMod.MediaProps.type = reactDashMediaLib.reactDashMediaMod.MediaProps
+  type ReactDashMediaProps = reactDashMediaLib.reactDashMediaMod.MediaProps
 }
 

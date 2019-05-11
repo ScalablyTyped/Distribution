@@ -14,7 +14,7 @@ object atNivoLineLibComponents {
   @scala.inline
   def ResponsiveLine: reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineSvgProps] = js.constructorOf[atNivoLineLib.atNivoLineMod.ResponsiveLine].asInstanceOf[reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineSvgProps]]
   @scala.inline
-  def LineSvgProps: atNivoLineLib.atNivoLineMod.LineSvgProps.type = atNivoLineLib.atNivoLineMod.LineSvgProps
-  type LineSvgProps = atNivoLineLib.atNivoLineMod.LineSvgProps
+  def ResponsiveLineProps: atNivoLineLib.atNivoLineMod.LineSvgProps.type = atNivoLineLib.atNivoLineMod.LineSvgProps
+  type ResponsiveLineProps = atNivoLineLib.atNivoLineMod.LineSvgProps
 }
 

@@ -9,7 +9,7 @@ object rcDashDialogLibComponents {
   @scala.inline
   def RcDashDialog: reactLib.reactMod.ComponentType[rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes] = js.constructorOf[rcDashDialogLib.rcDashDialogMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes]]
   @scala.inline
-  def IDialogPropTypes: rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes.type = rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes
-  type IDialogPropTypes = rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes
+  def RcDashDialogProps: rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes.type = rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes
+  type RcDashDialogProps = rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes
 }
 

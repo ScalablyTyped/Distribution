@@ -10,7 +10,7 @@ trait Anon_CallBack extends js.Object {
   var componentDidMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentDidUpdate: js.UndefOr[
     js.Function3[
-      /* prevProps */ stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps], 
+      /* prevProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
       /* prevState */ stdLib.Readonly[_], 
       /* prevContext */ js.Any, 
       scala.Unit
@@ -19,7 +19,7 @@ trait Anon_CallBack extends js.Object {
   var componentWillMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillReceiveProps: js.UndefOr[
     js.Function2[
-      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps], 
+      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
@@ -27,18 +27,18 @@ trait Anon_CallBack extends js.Object {
   var componentWillUnmount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps], 
+      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
       /* nextState */ stdLib.Readonly[_], 
       /* nextContext */ js.Any, 
       scala.Unit
     ]
   ] = js.native
   var context: js.Any = js.native
-  var props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps] = js.native
+  var props: stdLib.Readonly[Anon_Children] with stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps] = js.native
   var refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactInstance] = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[
-      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.libPickerTypesMod.IPickerProps], 
+      /* nextProps */ stdLib.Readonly[rmcDashPickerLib.esPickerTypesMod.IPickerProps], 
       /* nextState */ stdLib.Readonly[_], 
       /* nextContext */ js.Any, 
       scala.Boolean

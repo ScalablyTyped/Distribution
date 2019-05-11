@@ -32,6 +32,7 @@ package object clientsStsMod {
   type externalIdType = java.lang.String
   type federatedIdType = java.lang.String
   type nonNegativeIntegerType = scala.Double
+  type policyDescriptorListType = js.Array[PolicyDescriptorType]
   type roleDurationSecondsType = scala.Double
   type roleSessionNameType = java.lang.String
   type serialNumberType = java.lang.String

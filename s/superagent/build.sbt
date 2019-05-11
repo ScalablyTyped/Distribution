@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "superagent"
-version := "4.1-dt-20190312Z-9ba89b"
+version := "4.1-dt-20190312Z-6da65d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-527010",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

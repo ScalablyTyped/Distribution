@@ -11,6 +11,6 @@ object reactDashVirtualizedDashSelectLibComponents {
     reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]
   ] = js.constructorOf[reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.default[TValue]].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]]]
-  type VirtualizedSelectProps[TValue] = reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]
+  type ReactDashVirtualizedDashSelectProps[TValue] = reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectMod.VirtualizedSelectProps[TValue]
 }
 

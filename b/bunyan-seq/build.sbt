@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bunyan-seq"
-version := "0.2-dt-20190314Z-796d70"
+version := "0.2-dt-20190314Z-77e7d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-a5f101",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-9948e1",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vinyl"
-version := "2.0-dt-20190409Z-7782e0"
+version := "2.0-dt-20190409Z-a791fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

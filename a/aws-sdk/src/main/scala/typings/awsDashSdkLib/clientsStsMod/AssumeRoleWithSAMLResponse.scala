@@ -15,7 +15,7 @@ trait AssumeRoleWithSAMLResponse extends js.Object {
     */
   var Audience: js.UndefOr[Audience] = js.undefined
   /**
-    * The temporary security credentials, which include an access key ID, a secret access key, and a security (or session) token.  The size of the security token that STS API operations return is not fixed. We strongly recommend that you make no assumptions about the maximum size. As of this writing, the typical size is less than 4096 bytes, but that can vary. Also, future updates to AWS might require larger sizes. 
+    * The temporary security credentials, which include an access key ID, a secret access key, and a security (or session) token.  The size of the security token that STS API operations return is not fixed. We strongly recommend that you make no assumptions about the maximum size. 
     */
   var Credentials: js.UndefOr[Credentials] = js.undefined
   /**

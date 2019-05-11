@@ -30,7 +30,10 @@ class Layout () extends js.Object {
   var _threshold: js.Any = js.native
   var _visibilityGraph: js.Any = js.native
   var event: js.Any = js.native
+  var initialLayout: js.Any = js.native
   var linkAccessor: LinkLengthTypeAccessor = js.native
+  var separateOverlappingComponents: js.Any = js.native
+  var updateNodePositions: js.Any = js.native
   def alpha(): scala.Double = js.native
   def alpha(x: scala.Double): this.type = js.native
   def avoidOverlaps(): scala.Boolean = js.native
@@ -53,7 +56,6 @@ class Layout () extends js.Object {
   def groups(x: js.Array[Group]): this.type = js.native
   def handleDisconnected(): scala.Boolean = js.native
   def handleDisconnected(v: scala.Boolean): this.type = js.native
-  /* private */ def initialLayout(iterations: js.Any, x: js.Any, y: js.Any): js.Any = js.native
   def jaccardLinkLengths(idealLength: scala.Double): this.type = js.native
   def jaccardLinkLengths(idealLength: scala.Double, w: scala.Double): this.type = js.native
   /* protected */ def kick(): scala.Unit = js.native
@@ -75,8 +77,6 @@ class Layout () extends js.Object {
   def prepareEdgeRouting(nodeMargin: scala.Double): scala.Unit = js.native
   def resume(): this.type = js.native
   def routeEdge(edge: js.Any, ah: scala.Double, draw: js.Any): js.Array[_] = js.native
-  /* private */ def separateOverlappingComponents(width: js.Any, height: js.Any): js.Any = js.native
-  /* private */ def separateOverlappingComponents(width: js.Any, height: js.Any, centerGraph: js.Any): js.Any = js.native
   def size(): js.Array[scala.Double] = js.native
   def size(x: js.Array[scala.Double]): this.type = js.native
   def start(
@@ -92,13 +92,14 @@ class Layout () extends js.Object {
   def symmetricDiffLinkLengths(idealLength: scala.Double, w: scala.Double): this.type = js.native
   /* protected */ def tick(): scala.Boolean = js.native
   /* protected */ def trigger(e: Event): scala.Unit = js.native
-  /* private */ def updateNodePositions(): js.Any = js.native
 }
 
 /* static members */
 @JSImport("webcola/dist/src/layout", "Layout")
 @js.native
 object Layout extends js.Object {
+  var stopNode: js.Any = js.native
+  var storeOffset: js.Any = js.native
   def drag(d: webcolaLib.distSrcLayoutMod.Group, position: webcolaLib.Anon_X): scala.Unit = js.native
   def drag(d: webcolaLib.distSrcLayoutMod.Node, position: webcolaLib.Anon_X): scala.Unit = js.native
   def dragEnd(d: js.Any): scala.Unit = js.native
@@ -115,7 +116,5 @@ object Layout extends js.Object {
     link: webcolaLib.distSrcLayoutMod.Link[webcolaLib.distSrcLayoutMod.Node | scala.Double],
     length: scala.Double
   ): scala.Unit = js.native
-  /* private */ def stopNode(v: js.Any): js.Any = js.native
-  /* private */ def storeOffset(d: js.Any, origin: js.Any): js.Any = js.native
 }
 

@@ -9,7 +9,7 @@ object reactDashNativeDashCanvasLibComponents {
   @scala.inline
   def ReactDashNativeDashCanvas: reactLib.reactMod.ComponentType[reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps] = js.constructorOf[reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps]]
   @scala.inline
-  def CanvasProps: reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps.type = reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps
-  type CanvasProps = reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps
+  def ReactDashNativeDashCanvasProps: reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps.type = reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps
+  type ReactDashNativeDashCanvasProps = reactDashNativeDashCanvasLib.reactDashNativeDashCanvasMod.CanvasProps
 }
 

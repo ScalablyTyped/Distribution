@@ -11,7 +11,7 @@ trait GetPlanRequest extends js.Object {
     */
   var Language: js.UndefOr[Language] = js.undefined
   /**
-    * Parameters for the mapping.
+    * The parameters for the mapping.
     */
   var Location: js.UndefOr[Location] = js.undefined
   /**

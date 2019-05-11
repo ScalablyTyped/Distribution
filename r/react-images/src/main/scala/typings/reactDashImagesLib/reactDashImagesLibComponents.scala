@@ -9,7 +9,7 @@ object reactDashImagesLibComponents {
   @scala.inline
   def ReactDashImages: reactLib.reactMod.ComponentType[reactDashImagesLib.reactDashImagesMod.LightboxProps] = js.constructorOf[reactDashImagesLib.reactDashImagesMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashImagesLib.reactDashImagesMod.LightboxProps]]
   @scala.inline
-  def LightboxProps: reactDashImagesLib.reactDashImagesMod.LightboxProps.type = reactDashImagesLib.reactDashImagesMod.LightboxProps
-  type LightboxProps = reactDashImagesLib.reactDashImagesMod.LightboxProps
+  def ReactDashImagesProps: reactDashImagesLib.reactDashImagesMod.LightboxProps.type = reactDashImagesLib.reactDashImagesMod.LightboxProps
+  type ReactDashImagesProps = reactDashImagesLib.reactDashImagesMod.LightboxProps
 }
 

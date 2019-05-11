@@ -17,6 +17,7 @@ class Descent protected () extends js.Object {
   var a: js.Any = js.native
   var b: js.Any = js.native
   var c: js.Any = js.native
+  var computeNextPosition: js.Any = js.native
   var d: js.Any = js.native
   var e: js.Any = js.native
   var g: js.Array[js.Array[scala.Double]] = js.native
@@ -24,27 +25,26 @@ class Descent protected () extends js.Object {
   var ib: js.Any = js.native
   var k: scala.Double = js.native
   var locks: Locks = js.native
+  var matrixApply: js.Any = js.native
   var minD: js.Any = js.native
   var n: scala.Double = js.native
   var numGridSnapNodes: scala.Double = js.native
+  var offsetDir: js.Any = js.native
   var project: js.Array[webcolaLib.Anon_R] = js.native
   var random: js.Any = js.native
   var scaleSnapByMaxH: scala.Boolean = js.native
   var snapGridSize: scala.Double = js.native
   var snapStrength: scala.Double = js.native
+  var stepAndProject: js.Any = js.native
   var threshold: scala.Double = js.native
   var x: js.Array[js.Array[scala.Double]] = js.native
   var xtmp: js.Any = js.native
   def computeDerivatives(x: js.Array[js.Array[scala.Double]]): scala.Unit = js.native
-  /* private */ def computeNextPosition(x0: js.Any, r: js.Any): js.Any = js.native
   def computeStepSize(d: js.Array[js.Array[scala.Double]]): scala.Double = js.native
   def computeStress(): scala.Double = js.native
-  /* private */ def matrixApply(f: js.Any): js.Any = js.native
-  /* private */ def offsetDir(): js.Any = js.native
   def reduceStress(): scala.Double = js.native
   def run(iterations: scala.Double): scala.Double = js.native
   def rungeKutta(): scala.Double = js.native
-  /* private */ def stepAndProject(x0: js.Any, r: js.Any, d: js.Any, stepSize: js.Any): js.Any = js.native
   def takeDescentStep(x: js.Array[scala.Double], d: js.Array[scala.Double], stepSize: scala.Double): scala.Unit = js.native
 }
 
@@ -52,12 +52,12 @@ class Descent protected () extends js.Object {
 @JSImport("webcola/dist/src/descent", "Descent")
 @js.native
 object Descent extends js.Object {
+  var copy: js.Any = js.native
+  var dotProd: js.Any = js.native
+  var mApply: js.Any = js.native
+  var mid: js.Any = js.native
+  var rightMultiply: js.Any = js.native
   var zeroDistance: js.Any = js.native
-  /* private */ def copy(a: js.Any, b: js.Any): js.Any = js.native
   def createSquareMatrix(n: scala.Double, f: js.Function2[/* i */ scala.Double, /* j */ scala.Double, scala.Double]): js.Array[js.Array[scala.Double]] = js.native
-  /* private */ def dotProd(a: js.Any, b: js.Any): js.Any = js.native
-  /* private */ def mApply(m: js.Any, n: js.Any, f: js.Any): js.Any = js.native
-  /* private */ def mid(a: js.Any, b: js.Any, m: js.Any): js.Any = js.native
-  /* private */ def rightMultiply(m: js.Any, v: js.Any, r: js.Any): js.Any = js.native
 }
 

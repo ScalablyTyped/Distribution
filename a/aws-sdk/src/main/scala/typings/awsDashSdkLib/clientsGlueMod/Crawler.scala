@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Crawler extends js.Object {
   /**
-    * A list of custom classifiers associated with the crawler.
+    * A list of UTF-8 strings that specify the custom classifiers that are associated with the crawler.
     */
   var Classifiers: js.UndefOr[ClassifierNameList] = js.undefined
   /**
@@ -19,15 +19,15 @@ trait Crawler extends js.Object {
     */
   var CrawlElapsedTime: js.UndefOr[MillisecondsCount] = js.undefined
   /**
-    * The name of the SecurityConfiguration structure to be used by this Crawler.
+    * The name of the SecurityConfiguration structure to be used by this crawler.
     */
   var CrawlerSecurityConfiguration: js.UndefOr[CrawlerSecurityConfiguration] = js.undefined
   /**
-    * The time when the crawler was created.
+    * The time that the crawler was created.
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The database where metadata is written by this crawler.
+    * The name of the database in which the crawler's output is stored.
     */
   var DatabaseName: js.UndefOr[DatabaseName] = js.undefined
   /**
@@ -39,15 +39,15 @@ trait Crawler extends js.Object {
     */
   var LastCrawl: js.UndefOr[LastCrawlInfo] = js.undefined
   /**
-    * The time the crawler was last updated.
+    * The time that the crawler was last updated.
     */
   var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The crawler name.
+    * The name of the crawler.
     */
   var Name: js.UndefOr[NameString] = js.undefined
   /**
-    * The IAM role (or ARN of an IAM role) used to access customer resources, such as data in Amazon S3.
+    * The Amazon Resource Name (ARN) of an IAM role that's used to access customer resources, such as Amazon Simple Storage Service (Amazon S3) data.
     */
   var Role: js.UndefOr[Role] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait Crawler extends js.Object {
     */
   var Schedule: js.UndefOr[Schedule] = js.undefined
   /**
-    * Sets the behavior when the crawler finds a changed or deleted object.
+    * The policy that specifies update and delete behaviors for the crawler.
     */
   var SchemaChangePolicy: js.UndefOr[SchemaChangePolicy] = js.undefined
   /**

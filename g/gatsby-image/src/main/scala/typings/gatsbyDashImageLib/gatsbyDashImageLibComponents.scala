@@ -9,7 +9,7 @@ object gatsbyDashImageLibComponents {
   @scala.inline
   def GatsbyDashImage: reactLib.reactMod.ComponentType[gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps] = js.constructorOf[gatsbyDashImageLib.gatsbyDashImageMod.default].asInstanceOf[reactLib.reactMod.ComponentType[gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps]]
   @scala.inline
-  def GatsbyImageProps: gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps.type = gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps
-  type GatsbyImageProps = gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps
+  def GatsbyDashImageProps: gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps.type = gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps
+  type GatsbyDashImageProps = gatsbyDashImageLib.gatsbyDashImageMod.GatsbyImageProps
 }
 

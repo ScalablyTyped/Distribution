@@ -10,7 +10,7 @@ trait Anon_BorderedDataSource extends js.Object {
   var dataSource: js.Array[scala.Nothing]
   var loading: scala.Boolean
   var pagination: js.UndefOr[
-    antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig
+    antdLib.antdLibNumbers.`false` | antdLib.esPaginationPaginationMod.PaginationConfig
   ]
   var split: scala.Boolean
 }
@@ -22,7 +22,7 @@ object Anon_BorderedDataSource {
     dataSource: js.Array[scala.Nothing],
     loading: scala.Boolean,
     split: scala.Boolean,
-    pagination: antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig = null
+    pagination: antdLib.antdLibNumbers.`false` | antdLib.esPaginationPaginationMod.PaginationConfig = null
   ): Anon_BorderedDataSource = {
     val __obj = js.Dynamic.literal(bordered = bordered, dataSource = dataSource, loading = loading, split = split)
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])

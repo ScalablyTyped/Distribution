@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "storybook__theming"
-version := "5.0.11-a52f1f"
+version := "5.0.11-aeaa06"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
-  "org.scalablytyped" %%% "emotion-theming" % "10.0.10-09e6eb",
-  "org.scalablytyped" %%% "emotion__core" % "10.0.10-297c00",
+  "org.scalablytyped" %%% "emotion-theming" % "10.0.10-0ca870",
+  "org.scalablytyped" %%% "emotion__core" % "10.0.10-213cc2",
   "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-f77f96",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.10-42e792",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-641d26",
+  "org.scalablytyped" %%% "emotion__styled" % "10.0.10-213adb",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-1e967e",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-0e800f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190504Z-19278e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-a9badf",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

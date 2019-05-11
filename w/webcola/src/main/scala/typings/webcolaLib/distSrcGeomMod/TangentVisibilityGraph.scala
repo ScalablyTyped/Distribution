@@ -13,8 +13,8 @@ class TangentVisibilityGraph protected () extends js.Object {
   var E: js.Array[VisibilityEdge] = js.native
   var P: js.Array[js.Array[TVGPoint]] = js.native
   var V: js.Array[VisibilityVertex] = js.native
+  var intersectsPolys: js.Any = js.native
   def addEdgeIfVisible(u: TVGPoint, v: TVGPoint, i1: scala.Double, i2: scala.Double): scala.Unit = js.native
   def addPoint(p: TVGPoint, i1: scala.Double): VisibilityVertex = js.native
-  /* private */ def intersectsPolys(l: js.Any, i1: js.Any, i2: js.Any): js.Any = js.native
 }
 

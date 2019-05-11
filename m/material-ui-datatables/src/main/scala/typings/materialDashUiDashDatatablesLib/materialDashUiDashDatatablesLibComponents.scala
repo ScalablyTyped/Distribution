@@ -11,6 +11,6 @@ object materialDashUiDashDatatablesLibComponents {
     stdLib.Partial[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.DataTableProps]
   ] = js.constructorOf[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   stdLib.Partial[materialDashUiDashDatatablesLib.materialDashUiDashDatatablesMod.DataTableProps]]]
-  type Partial[T] = stdLib.Partial[T]
+  type MaterialDashUiDashDatatablesProps[T] = stdLib.Partial[T]
 }
 

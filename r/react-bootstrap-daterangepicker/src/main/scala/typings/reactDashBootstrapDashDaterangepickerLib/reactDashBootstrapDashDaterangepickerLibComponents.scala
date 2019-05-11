@@ -9,7 +9,7 @@ object reactDashBootstrapDashDaterangepickerLibComponents {
   @scala.inline
   def DateRangePicker: reactLib.reactMod.ComponentType[reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props] = js.constructorOf[reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.DateRangePicker].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props]]
   @scala.inline
-  def Props: reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props.type = reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props
-  type Props = reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props
+  def DateRangePickerProps: reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props.type = reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props
+  type DateRangePickerProps = reactDashBootstrapDashDaterangepickerLib.ReactBootstrapDaterangepickerNs.Props
 }
 

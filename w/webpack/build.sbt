@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "webpack"
-version := "4.4-dt-20190506Z-14c287"
+version := "4.4-dt-20190506Z-0b4eec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-c5c3e6",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "source-map" % "0.7.3-c62343",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-98777a",

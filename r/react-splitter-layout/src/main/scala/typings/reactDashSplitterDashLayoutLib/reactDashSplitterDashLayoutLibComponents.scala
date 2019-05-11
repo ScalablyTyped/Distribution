@@ -12,7 +12,7 @@ object reactDashSplitterDashLayoutLibComponents {
   ] = js.constructorOf[reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps]]
   @scala.inline
-  def SplitterLayoutProps: reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps.type = reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps
-  type SplitterLayoutProps = reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps
+  def ReactDashSplitterDashLayoutProps: reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps.type = reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps
+  type ReactDashSplitterDashLayoutProps = reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.SplitterLayoutProps
 }
 

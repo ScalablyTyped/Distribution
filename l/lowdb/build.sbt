@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "lowdb"
-version := "1.0-dt-20190509Z-ff53d9"
+version := "1.0-dt-20190509Z-4f50c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190509Z-78ce80",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190510Z-5e7cae",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

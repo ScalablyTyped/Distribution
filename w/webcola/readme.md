@@ -1,7 +1,7 @@
 
 # Scala.js typings for webcola
 
-Typings are for version 3.3.9
+Typings are for version 3.4.0
 
 ## Library description:
 WebCola =======

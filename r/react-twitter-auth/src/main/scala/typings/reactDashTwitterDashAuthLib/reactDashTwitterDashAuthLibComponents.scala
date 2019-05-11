@@ -9,7 +9,7 @@ object reactDashTwitterDashAuthLibComponents {
   @scala.inline
   def ReactDashTwitterDashAuth: reactLib.reactMod.ComponentType[reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps] = reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps]]
   @scala.inline
-  def TwitterLoginProps: reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps.type = reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps
-  type TwitterLoginProps = reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps
+  def ReactDashTwitterDashAuthProps: reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps.type = reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps
+  type ReactDashTwitterDashAuthProps = reactDashTwitterDashAuthLib.reactDashTwitterDashAuthMod.TwitterLoginProps
 }
 

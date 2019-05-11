@@ -17,12 +17,12 @@ class Descent protected ()
 @JSImport("webcola", "Descent")
 @js.native
 object Descent extends js.Object {
+  var copy: js.Any = js.native
+  var dotProd: js.Any = js.native
+  var mApply: js.Any = js.native
+  var mid: js.Any = js.native
+  var rightMultiply: js.Any = js.native
   var zeroDistance: js.Any = js.native
-  /* private */ def copy(a: js.Any, b: js.Any): js.Any = js.native
   def createSquareMatrix(n: scala.Double, f: js.Function2[/* i */ scala.Double, /* j */ scala.Double, scala.Double]): js.Array[js.Array[scala.Double]] = js.native
-  /* private */ def dotProd(a: js.Any, b: js.Any): js.Any = js.native
-  /* private */ def mApply(m: js.Any, n: js.Any, f: js.Any): js.Any = js.native
-  /* private */ def mid(a: js.Any, b: js.Any, m: js.Any): js.Any = js.native
-  /* private */ def rightMultiply(m: js.Any, v: js.Any, r: js.Any): js.Any = js.native
 }
 

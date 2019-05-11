@@ -9,7 +9,7 @@ object reactDashPlotlyDotJsLibComponents {
   @scala.inline
   def ReactDashPlotlyDotJs: reactLib.reactMod.ComponentType[reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams] = js.constructorOf[reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams]]
   @scala.inline
-  def PlotParams: reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams.type = reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams
-  type PlotParams = reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams
+  def ReactDashPlotlyDotJsProps: reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams.type = reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams
+  type ReactDashPlotlyDotJsProps = reactDashPlotlyDotJsLib.reactDashPlotlyDotJsMod.PlotParams
 }
 

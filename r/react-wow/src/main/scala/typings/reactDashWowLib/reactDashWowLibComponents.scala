@@ -9,7 +9,7 @@ object reactDashWowLibComponents {
   @scala.inline
   def ReactDashWow: reactLib.reactMod.ComponentType[reactDashWowLib.reactDashWowMod.ReactWOWProps] = js.constructorOf[reactDashWowLib.reactDashWowMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashWowLib.reactDashWowMod.ReactWOWProps]]
   @scala.inline
-  def ReactWOWProps: reactDashWowLib.reactDashWowMod.ReactWOWProps.type = reactDashWowLib.reactDashWowMod.ReactWOWProps
-  type ReactWOWProps = reactDashWowLib.reactDashWowMod.ReactWOWProps
+  def ReactDashWowProps: reactDashWowLib.reactDashWowMod.ReactWOWProps.type = reactDashWowLib.reactDashWowMod.ReactWOWProps
+  type ReactDashWowProps = reactDashWowLib.reactDashWowMod.ReactWOWProps
 }
 

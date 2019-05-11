@@ -9,7 +9,7 @@ object reactDashNativeDashSwipeoutLibComponents {
   @scala.inline
   def ReactDashNativeDashSwipeout: reactLib.reactMod.ComponentType[reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties] = js.constructorOf[reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties]]
   @scala.inline
-  def SwipeoutProperties: reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties.type = reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties
-  type SwipeoutProperties = reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties
+  def ReactDashNativeDashSwipeoutProps: reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties.type = reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties
+  type ReactDashNativeDashSwipeoutProps = reactDashNativeDashSwipeoutLib.reactDashNativeDashSwipeoutMod.SwipeoutProperties
 }
 

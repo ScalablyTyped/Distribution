@@ -16,11 +16,11 @@ class Transfer protected ()
 @JSImport("antd", "Transfer")
 @js.native
 object Transfer extends js.Object {
-  var List: antdLib.Anon_DefaultPropsProps = js.native
+  var List: antdLib.Anon_DefaultPropsPropsAnonDataSource = js.native
   var Operation: org.scalablytyped.runtime.Instantiable0[antdLib.libTransferOperationMod.default] = js.native
-  var Search: antdLib.Anon_DefaultPropsAnonPlaceholder = js.native
-  var defaultProps: antdLib.Anon_DataSourceLocale = js.native
-  var propTypes: antdLib.Anon_ArgsBody = js.native
+  var Search: antdLib.Anon_DefaultPropsAnonPlaceholderDefault = js.native
+  var defaultProps: antdLib.Anon_DataSourceLocaleRender = js.native
+  var propTypes: antdLib.Anon_ArgsBodyClassName = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libTransferMod.TransferProps): antdLib.Anon_SourceSelectedKeys | scala.Null = js.native
 }
 

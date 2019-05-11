@@ -12,7 +12,7 @@ object reactDashSwipeableDashViewsLibComponents {
   ] = js.constructorOf[reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps]]
   @scala.inline
-  def SwipeableViewsProps: reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps.type = reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps
-  type SwipeableViewsProps = reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps
+  def ReactDashSwipeableDashViewsProps: reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps.type = reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps
+  type ReactDashSwipeableDashViewsProps = reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.SwipeableViewsProps
 }
 

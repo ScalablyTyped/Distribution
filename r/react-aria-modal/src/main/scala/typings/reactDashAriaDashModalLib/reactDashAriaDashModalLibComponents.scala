@@ -9,7 +9,7 @@ object reactDashAriaDashModalLibComponents {
   @scala.inline
   def ReactDashAriaDashModal: reactLib.reactMod.ComponentType[reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps] = js.constructorOf[reactDashAriaDashModalLib.reactDashAriaDashModalMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps]]
   @scala.inline
-  def AriaModalProps: reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps.type = reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps
-  type AriaModalProps = reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps
+  def ReactDashAriaDashModalProps: reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps.type = reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps
+  type ReactDashAriaDashModalProps = reactDashAriaDashModalLib.reactDashAriaDashModalMod.AriaModalProps
 }
 

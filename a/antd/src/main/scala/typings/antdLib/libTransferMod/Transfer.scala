@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Transfer
   extends reactLib.reactMod.Component[TransferProps, js.Any, js.Any] {
-  var separatedDataSource: antdLib.Anon_LeftDataSource | scala.Null = js.native
+  var separatedDataSource: antdLib.Anon_LeftDataSourceRightDataSource | scala.Null = js.native
   def getLocale(
     transferLocale: TransferLocale,
     renderEmpty: js.Function1[/* componentName */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNode]
@@ -53,6 +53,6 @@ trait Transfer
   def moveToLeft(): scala.Unit = js.native
   def moveToRight(): scala.Unit = js.native
   def renderTransfer(transferLocale: TransferLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def separateDataSource(props: TransferProps): antdLib.Anon_LeftDataSource = js.native
+  def separateDataSource(props: TransferProps): antdLib.Anon_LeftDataSourceRightDataSource = js.native
 }
 

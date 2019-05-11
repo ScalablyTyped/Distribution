@@ -9,7 +9,7 @@ object reactDashRteLibComponents {
   @scala.inline
   def ReactDashRte: reactLib.reactMod.ComponentType[reactDashRteLib.reactDashRteMod.Props] = js.constructorOf[reactDashRteLib.reactDashRteMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashRteLib.reactDashRteMod.Props]]
   @scala.inline
-  def Props: reactDashRteLib.reactDashRteMod.Props.type = reactDashRteLib.reactDashRteMod.Props
-  type Props = reactDashRteLib.reactDashRteMod.Props
+  def ReactDashRteProps: reactDashRteLib.reactDashRteMod.Props.type = reactDashRteLib.reactDashRteMod.Props
+  type ReactDashRteProps = reactDashRteLib.reactDashRteMod.Props
 }
 

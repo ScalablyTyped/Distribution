@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteCrawlerRequest extends js.Object {
   /**
-    * Name of the crawler to remove.
+    * The name of the crawler to remove.
     */
   var Name: NameString
 }

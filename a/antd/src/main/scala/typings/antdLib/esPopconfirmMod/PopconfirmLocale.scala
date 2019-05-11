@@ -1,0 +1,21 @@
+package typings
+package antdLib.esPopconfirmMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PopconfirmLocale extends js.Object {
+  var cancelText: java.lang.String
+  var okText: java.lang.String
+}
+
+object PopconfirmLocale {
+  @scala.inline
+  def apply(cancelText: java.lang.String, okText: java.lang.String): PopconfirmLocale = {
+    val __obj = js.Dynamic.literal(cancelText = cancelText, okText = okText)
+  
+    __obj.asInstanceOf[PopconfirmLocale]
+  }
+}
+

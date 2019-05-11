@@ -9,7 +9,7 @@ object reactDashDropzoneLibComponents {
   @scala.inline
   def ReactDashDropzone: reactLib.reactMod.ComponentType[reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps] = js.constructorOf[reactDashDropzoneLib.reactDashDropzoneMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps]]
   @scala.inline
-  def DropzoneProps: reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps.type = reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps
-  type DropzoneProps = reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps
+  def ReactDashDropzoneProps: reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps.type = reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps
+  type ReactDashDropzoneProps = reactDashDropzoneLib.reactDashDropzoneMod.DropzoneProps
 }
 

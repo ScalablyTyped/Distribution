@@ -14,7 +14,7 @@ class Dropdown ()
 @JSImport("antd", "Dropdown")
 @js.native
 object Dropdown extends js.Object {
-  var Button: antdLib.Anon_DefaultProps = js.native
+  var Button: antdLib.Anon_DefaultPropsAnonBottomCenterBottomLeftBottomRight = js.native
   var defaultProps: antdLib.Anon_BottomCenterBottomLeft = js.native
 }
 

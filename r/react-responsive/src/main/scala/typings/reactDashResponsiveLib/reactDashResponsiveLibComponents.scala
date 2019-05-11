@@ -9,7 +9,7 @@ object reactDashResponsiveLibComponents {
   @scala.inline
   def ReactDashResponsive: reactLib.reactMod.ComponentType[reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps] = js.constructorOf[reactDashResponsiveLib.reactDashResponsiveMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps]]
   @scala.inline
-  def MediaQueryProps: reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps.type = reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps
-  type MediaQueryProps = reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps
+  def ReactDashResponsiveProps: reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps.type = reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps
+  type ReactDashResponsiveProps = reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryProps
 }
 

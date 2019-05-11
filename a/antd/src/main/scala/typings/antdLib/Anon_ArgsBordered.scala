@@ -28,7 +28,7 @@ trait Anon_ArgsBordered extends js.Object {
   @JSName("rowSelection")
   var rowSelection_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   @JSName("size")
-  var size_Original: propDashTypesLib.propDashTypesMod.Requireable[antdLib.libTableInterfaceMod.TableSize] = js.native
+  var size_Original: propDashTypesLib.propDashTypesMod.Requireable[antdLib.esTableInterfaceMod.TableSize] = js.native
   @JSName("sortDirections")
   var sortDirections_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
   @JSName("useFixedHeader")

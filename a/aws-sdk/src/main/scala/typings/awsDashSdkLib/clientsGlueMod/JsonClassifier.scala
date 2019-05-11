@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait JsonClassifier extends js.Object {
   /**
-    * The time this classifier was registered.
+    * The time that this classifier was registered.
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait JsonClassifier extends js.Object {
     */
   var JsonPath: awsDashSdkLib.clientsGlueMod.JsonPath
   /**
-    * The time this classifier was last updated.
+    * The time that this classifier was last updated.
     */
   var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   /**

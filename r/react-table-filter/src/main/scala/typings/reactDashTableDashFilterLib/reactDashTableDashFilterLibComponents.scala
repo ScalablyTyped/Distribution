@@ -9,7 +9,7 @@ object reactDashTableDashFilterLibComponents {
   @scala.inline
   def TableFilter: reactLib.reactMod.ComponentType[reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps] = js.constructorOf[reactDashTableDashFilterLib.reactDashTableDashFilterMod.TableFilter].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps]]
   @scala.inline
-  def TabfilterProps: reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps.type = reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps
-  type TabfilterProps = reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps
+  def TableFilterProps: reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps.type = reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps
+  type TableFilterProps = reactDashTableDashFilterLib.reactDashTableDashFilterMod.TabfilterProps
 }
 

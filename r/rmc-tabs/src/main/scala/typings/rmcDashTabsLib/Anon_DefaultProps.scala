@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_DefaultProps
   extends org.scalablytyped.runtime.Instantiable1[
-      /* props */ rmcDashTabsLib.libDefaultTabBarMod.PropsType, 
-      rmcDashTabsLib.libDefaultTabBarMod.DefaultTabBar
+      /* props */ rmcDashTabsLib.esDefaultTabBarMod.PropsType, 
+      rmcDashTabsLib.esDefaultTabBarMod.DefaultTabBar
     ] {
-  var defaultProps: rmcDashTabsLib.libDefaultTabBarMod.PropsType = js.native
+  var defaultProps: rmcDashTabsLib.esDefaultTabBarMod.PropsType = js.native
 }
 

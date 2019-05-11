@@ -45,7 +45,7 @@ object DirectoryTreeProps {
     onDragStart: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDrop: /* options */ antdLib.libTreeTreeMod.AntTreeNodeDropEvent => scala.Unit = null,
     onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ antdLib.libTreeTreeMod.AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[_] = null,
-    onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_Event) => scala.Unit = null,
+    onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_EventLoad) => scala.Unit = null,
     onRightClick: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onSelect: (/* selectedKeys */ js.Array[java.lang.String], /* e */ antdLib.libTreeTreeMod.AntTreeNodeSelectedEvent) => scala.Unit = null,
     prefixCls: java.lang.String = null,

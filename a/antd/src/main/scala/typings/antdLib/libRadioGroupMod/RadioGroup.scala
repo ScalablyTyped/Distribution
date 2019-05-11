@@ -12,7 +12,7 @@ trait RadioGroup
       antdLib.libRadioInterfaceMod.RadioGroupState, 
       js.Any
     ] {
-  def getChildContext(): antdLib.Anon_RadioGroupAnonDisabledEv = js.native
+  def getChildContext(): antdLib.Anon_RadioGroupAnonDisabledEvName = js.native
   def onRadioChange(ev: antdLib.libRadioInterfaceMod.RadioChangeEvent): scala.Unit = js.native
   def renderGroup(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   @JSName("shouldComponentUpdate")

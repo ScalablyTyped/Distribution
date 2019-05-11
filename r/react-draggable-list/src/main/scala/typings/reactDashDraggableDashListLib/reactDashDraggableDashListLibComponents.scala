@@ -13,7 +13,7 @@ object reactDashDraggableDashListLibComponents {
     _
   ] */]: reactLib.reactMod.ComponentType[reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]] = js.constructorOf[reactDashDraggableDashListLib.reactDashDraggableDashListMod.default[I, C, T]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]]]
   @scala.inline
-  def Props: reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props.type = reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props
-  type Props[I, C, T] = reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]
+  def ReactDashDraggableDashListProps: reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props.type = reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props
+  type ReactDashDraggableDashListProps[I, C, T] = reactDashDraggableDashListLib.reactDashDraggableDashListMod.Props[I, C, T]
 }
 

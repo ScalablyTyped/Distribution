@@ -9,7 +9,7 @@ object linkifyjsLibComponents {
   @scala.inline
   def React: reactLib.reactMod.ComponentType[linkifyjsLib.reactMod.LinkifyProps] = js.constructorOf[linkifyjsLib.reactMod.default].asInstanceOf[reactLib.reactMod.ComponentType[linkifyjsLib.reactMod.LinkifyProps]]
   @scala.inline
-  def LinkifyProps: linkifyjsLib.reactMod.LinkifyProps.type = linkifyjsLib.reactMod.LinkifyProps
-  type LinkifyProps = linkifyjsLib.reactMod.LinkifyProps
+  def ReactProps: linkifyjsLib.reactMod.LinkifyProps.type = linkifyjsLib.reactMod.LinkifyProps
+  type ReactProps = linkifyjsLib.reactMod.LinkifyProps
 }
 

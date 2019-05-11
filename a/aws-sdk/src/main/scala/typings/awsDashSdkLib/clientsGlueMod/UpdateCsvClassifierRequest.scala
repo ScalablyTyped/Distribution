@@ -31,7 +31,7 @@ trait UpdateCsvClassifierRequest extends js.Object {
     */
   var Name: NameString
   /**
-    * A custom symbol to denote what combines content into a single column value. Must be different from the column delimiter.
+    * A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
     */
   var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
 }

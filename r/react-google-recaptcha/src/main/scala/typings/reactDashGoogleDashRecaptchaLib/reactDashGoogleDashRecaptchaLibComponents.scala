@@ -9,7 +9,7 @@ object reactDashGoogleDashRecaptchaLibComponents {
   @scala.inline
   def ReactDashGoogleDashRecaptcha: reactLib.reactMod.ComponentType[reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps] = js.constructorOf[reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps]]
   @scala.inline
-  def ReCAPTCHAProps: reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps.type = reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
-  type ReCAPTCHAProps = reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
+  def ReactDashGoogleDashRecaptchaProps: reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps.type = reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
+  type ReactDashGoogleDashRecaptchaProps = reactDashGoogleDashRecaptchaLib.reactDashGoogleDashRecaptchaMod.ReCAPTCHAProps
 }
 

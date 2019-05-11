@@ -264,7 +264,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchStopJobRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
+    * Creates a classifier in the user's account. This can be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
     */
   def createClassifier(): awsDashSdkLib.libRequestMod.Request[CreateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createClassifier(
@@ -275,7 +275,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
+    * Creates a classifier in the user's account. This can be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
     */
   def createClassifier(params: CreateClassifierRequest): awsDashSdkLib.libRequestMod.Request[CreateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createClassifier(
@@ -586,7 +586,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteConnectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes a specified crawler from the Data Catalog, unless the crawler state is RUNNING.
+    * Removes a specified crawler from the AWS Glue Data Catalog, unless the crawler state is RUNNING.
     */
   def deleteCrawler(): awsDashSdkLib.libRequestMod.Request[DeleteCrawlerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCrawler(
@@ -597,7 +597,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteCrawlerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes a specified crawler from the Data Catalog, unless the crawler state is RUNNING.
+    * Removes a specified crawler from the AWS Glue Data Catalog, unless the crawler state is RUNNING.
     */
   def deleteCrawler(params: DeleteCrawlerRequest): awsDashSdkLib.libRequestMod.Request[DeleteCrawlerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCrawler(

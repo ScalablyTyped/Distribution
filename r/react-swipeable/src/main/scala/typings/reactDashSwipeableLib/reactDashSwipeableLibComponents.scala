@@ -9,7 +9,7 @@ object reactDashSwipeableLibComponents {
   @scala.inline
   def ReactDashSwipeable[T /* <: stdLib.Element */]: reactLib.reactMod.ComponentType[reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps[T]] = js.constructorOf[reactDashSwipeableLib.reactDashSwipeableMod.^[T]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps[T]]]
   @scala.inline
-  def SwipeableProps: reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps.type = reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps
-  type SwipeableProps[T /* <: stdLib.Element */] = reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps[T]
+  def ReactDashSwipeableProps: reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps.type = reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps
+  type ReactDashSwipeableProps[T /* <: stdLib.Element */] = reactDashSwipeableLib.reactDashSwipeableMod.SwipeableProps[T]
 }
 

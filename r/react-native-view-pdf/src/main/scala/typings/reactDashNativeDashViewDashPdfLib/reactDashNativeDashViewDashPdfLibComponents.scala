@@ -9,7 +9,7 @@ object reactDashNativeDashViewDashPdfLibComponents {
   @scala.inline
   def ReactDashNativeDashViewDashPdf: reactLib.reactMod.ComponentType[reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps] = js.constructorOf[reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps]]
   @scala.inline
-  def PDFViewProps: reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps.type = reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps
-  type PDFViewProps = reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps
+  def ReactDashNativeDashViewDashPdfProps: reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps.type = reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps
+  type ReactDashNativeDashViewDashPdfProps = reactDashNativeDashViewDashPdfLib.reactDashNativeDashViewDashPdfMod.PDFViewProps
 }
 

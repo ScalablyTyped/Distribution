@@ -41,7 +41,7 @@ package object libTypesMod {
     java.lang.String | scala.Double, 
     java.lang.String | (SingleOrArray[TransitionConfig[TContext, TEvent]])
   ]) | (js.Array[
-    (TransitionConfig[TContext, TEvent]) with (xstateLib.Anon_Delay[TContext, TEvent])
+    (TransitionConfig[TContext, TEvent]) with (xstateLib.Anon_DelayExpr[TContext, TEvent])
   ])
   type DisposeActivityFunction = js.Function0[scala.Unit]
   type DoneEvent = DoneEventObject with java.lang.String
@@ -50,7 +50,7 @@ package object libTypesMod {
   type Expr[TContext, TEvent /* <: EventObject */, T] = js.Function2[/* context */ TContext, /* event */ TEvent, T]
   type Guard[TContext, TEvent /* <: EventObject */] = (GuardPredicate[TContext, TEvent]) | ((stdLib.Record[java.lang.String, _]) with xstateLib.Anon_TypeString)
   type InvokeCallback = js.Function2[/* sender */ Sender[js.Any], /* onEvent */ Receiver[EventObject], js.Any]
-  type InvokeConfig[TContext, TEvent /* <: EventObject */] = (xstateLib.Anon_Data[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any])
+  type InvokeConfig[TContext, TEvent /* <: EventObject */] = (xstateLib.Anon_DataForward[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any])
   type InvokeCreator[TFinalContext, TContext] = js.Function2[
     /* context */ TContext, 
     /* event */ EventObject, 

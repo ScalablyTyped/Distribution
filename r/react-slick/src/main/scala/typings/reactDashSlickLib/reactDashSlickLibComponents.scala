@@ -9,7 +9,7 @@ object reactDashSlickLibComponents {
   @scala.inline
   def ReactDashSlick: reactLib.reactMod.ComponentType[reactDashSlickLib.reactDashSlickMod.Settings] = js.constructorOf[reactDashSlickLib.reactDashSlickMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSlickLib.reactDashSlickMod.Settings]]
   @scala.inline
-  def Settings: reactDashSlickLib.reactDashSlickMod.Settings.type = reactDashSlickLib.reactDashSlickMod.Settings
-  type Settings = reactDashSlickLib.reactDashSlickMod.Settings
+  def ReactDashSlickProps: reactDashSlickLib.reactDashSlickMod.Settings.type = reactDashSlickLib.reactDashSlickMod.Settings
+  type ReactDashSlickProps = reactDashSlickLib.reactDashSlickMod.Settings
 }
 

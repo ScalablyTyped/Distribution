@@ -10,7 +10,7 @@ trait Anon_ArrowPointAtCenter extends js.Object {
   var autoAdjustOverflow: scala.Boolean
   var mouseEnterDelay: scala.Double
   var mouseLeaveDelay: scala.Double
-  var placement: antdLib.libTooltipMod.TooltipPlacement
+  var placement: antdLib.esTooltipMod.TooltipPlacement
   var transitionName: java.lang.String
 }
 
@@ -21,7 +21,7 @@ object Anon_ArrowPointAtCenter {
     autoAdjustOverflow: scala.Boolean,
     mouseEnterDelay: scala.Double,
     mouseLeaveDelay: scala.Double,
-    placement: antdLib.libTooltipMod.TooltipPlacement,
+    placement: antdLib.esTooltipMod.TooltipPlacement,
     transitionName: java.lang.String
   ): Anon_ArrowPointAtCenter = {
     val __obj = js.Dynamic.literal(arrowPointAtCenter = arrowPointAtCenter, autoAdjustOverflow = autoAdjustOverflow, mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement, transitionName = transitionName)

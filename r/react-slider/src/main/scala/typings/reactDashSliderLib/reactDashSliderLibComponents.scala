@@ -9,7 +9,7 @@ object reactDashSliderLibComponents {
   @scala.inline
   def ReactDashSlider: reactLib.reactMod.ComponentType[reactDashSliderLib.reactDashSliderMod.ReactSliderProps] = js.constructorOf[reactDashSliderLib.reactDashSliderMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSliderLib.reactDashSliderMod.ReactSliderProps]]
   @scala.inline
-  def ReactSliderProps: reactDashSliderLib.reactDashSliderMod.ReactSliderProps.type = reactDashSliderLib.reactDashSliderMod.ReactSliderProps
-  type ReactSliderProps = reactDashSliderLib.reactDashSliderMod.ReactSliderProps
+  def ReactDashSliderProps: reactDashSliderLib.reactDashSliderMod.ReactSliderProps.type = reactDashSliderLib.reactDashSliderMod.ReactSliderProps
+  type ReactDashSliderProps = reactDashSliderLib.reactDashSliderMod.ReactSliderProps
 }
 

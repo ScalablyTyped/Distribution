@@ -32,24 +32,14 @@ abstract class ModelBase[T /* <: Model[_] */] ()
   def keys(): js.Array[java.lang.String] = js.native
   def omit[R /* <: js.Object */](): R = js.native
   def omit[R /* <: js.Object */](attributes: java.lang.String*): R = js.native
-  def omit[R /* <: js.Object */](
-    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any
-  ): R = js.native
-  def omit[R /* <: js.Object */](
-    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any,
-    thisArg: js.Any
-  ): R = js.native
+  def omit[R /* <: js.Object */](predicate: lodashLib.lodashMod.ObjectIterator[_, scala.Boolean]): R = js.native
+  def omit[R /* <: js.Object */](predicate: lodashLib.lodashMod.ObjectIterator[_, scala.Boolean], thisArg: js.Any): R = js.native
   def pairs(): js.Array[js.Array[_]] = js.native
   def parse(response: js.Object): js.Object = js.native
   def pick[R /* <: js.Object */](): R = js.native
   def pick[R /* <: js.Object */](attributes: java.lang.String*): R = js.native
-  def pick[R /* <: js.Object */](
-    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any
-  ): R = js.native
-  def pick[R /* <: js.Object */](
-    predicate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Lodash.ObjectIterator<any, boolean> */ js.Any,
-    thisArg: js.Any
-  ): R = js.native
+  def pick[R /* <: js.Object */](predicate: lodashLib.lodashMod.ObjectIterator[_, scala.Boolean]): R = js.native
+  def pick[R /* <: js.Object */](predicate: lodashLib.lodashMod.ObjectIterator[_, scala.Boolean], thisArg: js.Any): R = js.native
   def previous(attribute: java.lang.String): js.Any = js.native
   def previousAttributes(): js.Any = js.native
   def related[R /* <: Model[_] */](relation: java.lang.String): R | Collection[R] = js.native

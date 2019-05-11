@@ -9,7 +9,7 @@ object materialDashUiDashPaginationLibComponents {
   @scala.inline
   def MaterialDashUiDashPagination: reactLib.reactMod.ComponentType[materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps] = js.constructorOf[materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.default].asInstanceOf[reactLib.reactMod.ComponentType[materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps]]
   @scala.inline
-  def PaginationProps: materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps.type = materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps
-  type PaginationProps = materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps
+  def MaterialDashUiDashPaginationProps: materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps.type = materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps
+  type MaterialDashUiDashPaginationProps = materialDashUiDashPaginationLib.materialDashUiDashPaginationMod.PaginationProps
 }
 

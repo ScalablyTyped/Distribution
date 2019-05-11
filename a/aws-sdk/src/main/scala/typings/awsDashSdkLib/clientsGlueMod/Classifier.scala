@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait Classifier extends js.Object {
   /**
-    * A CSVClassifier object.
+    * A classifier for comma-separated values (CSV).
     */
   var CsvClassifier: js.UndefOr[CsvClassifier] = js.undefined
   /**
-    * A GrokClassifier object.
+    * A classifier that uses grok.
     */
   var GrokClassifier: js.UndefOr[GrokClassifier] = js.undefined
   /**
-    * A JsonClassifier object.
+    * A classifier for JSON content.
     */
   var JsonClassifier: js.UndefOr[JsonClassifier] = js.undefined
   /**
-    * An XMLClassifier object.
+    * A classifier for XML content.
     */
   var XMLClassifier: js.UndefOr[XMLClassifier] = js.undefined
 }

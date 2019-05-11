@@ -12,7 +12,7 @@ object reactDashCloseDashOnDashEscapeLibComponents {
   ] = js.constructorOf[reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps]]
   @scala.inline
-  def CloseOnEscapeProps: reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps.type = reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps
-  type CloseOnEscapeProps = reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps
+  def ReactDashCloseDashOnDashEscapeProps: reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps.type = reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps
+  type ReactDashCloseDashOnDashEscapeProps = reactDashCloseDashOnDashEscapeLib.reactDashCloseDashOnDashEscapeMod.CloseOnEscapeProps
 }
 

@@ -9,7 +9,7 @@ object reactDashUserDashTourLibComponents {
   @scala.inline
   def ReactDashUserDashTour: reactLib.reactMod.ComponentType[reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps] = js.constructorOf[reactDashUserDashTourLib.reactDashUserDashTourMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps]]
   @scala.inline
-  def TourProps: reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps.type = reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps
-  type TourProps = reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps
+  def ReactDashUserDashTourProps: reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps.type = reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps
+  type ReactDashUserDashTourProps = reactDashUserDashTourLib.reactDashUserDashTourMod.TourProps
 }
 

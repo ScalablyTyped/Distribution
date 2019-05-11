@@ -12,9 +12,9 @@ class Solver protected () extends js.Object {
   var bs: Blocks = js.native
   var cs: js.Array[Constraint] = js.native
   var inactive: js.Array[Constraint] = js.native
+  var mostViolated: js.Any = js.native
   var vs: js.Array[Variable] = js.native
   def cost(): scala.Double = js.native
-  /* private */ def mostViolated(): js.Any = js.native
   def satisfy(): scala.Unit = js.native
   def setDesiredPositions(ps: js.Array[scala.Double]): scala.Unit = js.native
   def setStartingPositions(ps: js.Array[scala.Double]): scala.Unit = js.native

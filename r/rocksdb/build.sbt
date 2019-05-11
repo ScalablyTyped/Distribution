@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rocksdb"
-version := "3.0-dt-20180917Z-0695ec"
+version := "3.0-dt-20180917Z-8c96a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180913Z-80b23a",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

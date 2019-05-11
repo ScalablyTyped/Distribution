@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.9.3-fcc70b"
+version := "3.9.3-821d08"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jss" % "9.5-dt-20190227Z-642887",
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-31bede",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-c1645f",
-  "org.scalablytyped" %%% "react-transition-group" % "2.9-dt-20190430Z-4319e1",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-a9badf",
+  "org.scalablytyped" %%% "react-transition-group" % "2.9-dt-20190430Z-23ca12",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

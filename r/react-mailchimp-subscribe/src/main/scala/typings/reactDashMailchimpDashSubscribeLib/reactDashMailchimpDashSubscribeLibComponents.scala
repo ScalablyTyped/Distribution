@@ -12,7 +12,7 @@ object reactDashMailchimpDashSubscribeLibComponents {
   ] = js.constructorOf[reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.default[FormFields]].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props[FormFields]]]
   @scala.inline
-  def Props: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props.type = reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props
-  type Props[FormFields] = reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props[FormFields]
+  def ReactDashMailchimpDashSubscribeProps: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props.type = reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props
+  type ReactDashMailchimpDashSubscribeProps[FormFields] = reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeMod.Props[FormFields]
 }
 

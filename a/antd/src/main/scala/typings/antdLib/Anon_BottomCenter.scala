@@ -9,13 +9,13 @@ trait Anon_BottomCenter extends js.Object {
   var placement: js.UndefOr[
     antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomCenter
   ]
-  var `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+  var `type`: antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
 }
 
 object Anon_BottomCenter {
   @scala.inline
   def apply(
-    `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType,
+    `type`: antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType,
     placement: antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomCenter = null
   ): Anon_BottomCenter = {
     val __obj = js.Dynamic.literal()

@@ -15,6 +15,7 @@ object reactDashNativeDashZssDashRichDashTextDashEditorLibComponents {
   stdLib.Partial[
     reactDashNativeDashZssDashRichDashTextDashEditorLib.reactDashNativeDashZssDashRichDashTextDashEditorMod.RichTextEditorProps
   ]]]
+  type RichTextEditorProps[T] = stdLib.Partial[T]
   @scala.inline
   def RichTextToolbar: reactLib.reactMod.ComponentType[
     stdLib.Partial[
@@ -24,6 +25,6 @@ object reactDashNativeDashZssDashRichDashTextDashEditorLibComponents {
   stdLib.Partial[
     reactDashNativeDashZssDashRichDashTextDashEditorLib.reactDashNativeDashZssDashRichDashTextDashEditorMod.RichTextToolbarProps
   ]]]
-  type Partial[T] = stdLib.Partial[T]
+  type RichTextToolbarProps[T] = stdLib.Partial[T]
 }
 

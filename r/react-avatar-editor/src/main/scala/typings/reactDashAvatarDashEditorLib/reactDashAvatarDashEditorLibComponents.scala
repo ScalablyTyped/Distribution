@@ -9,7 +9,7 @@ object reactDashAvatarDashEditorLibComponents {
   @scala.inline
   def ReactDashAvatarDashEditor: reactLib.reactMod.ComponentType[reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps] = js.constructorOf[reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps]]
   @scala.inline
-  def AvatarEditorProps: reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps.type = reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps
-  type AvatarEditorProps = reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps
+  def ReactDashAvatarDashEditorProps: reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps.type = reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps
+  type ReactDashAvatarDashEditorProps = reactDashAvatarDashEditorLib.reactDashAvatarDashEditorMod.AvatarEditorProps
 }
 

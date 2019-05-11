@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-icons
 
-Typings are for version 3.6.1
+Typings are for version 3.7.0
 
 ## Library description:
 SVG React icons of popular icon packs using ES6 imports
@@ -31,11 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// THIS FILE IS AUTO GENERATED
-
-```
 

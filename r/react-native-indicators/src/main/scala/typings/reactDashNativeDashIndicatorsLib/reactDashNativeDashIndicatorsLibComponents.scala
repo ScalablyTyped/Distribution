@@ -12,69 +12,69 @@ object reactDashNativeDashIndicatorsLibComponents {
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps]]
   @scala.inline
+  def BallIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps
+  type BallIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps
+  @scala.inline
   def BarIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps]]
+  @scala.inline
+  def BarIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps
+  type BarIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps
   @scala.inline
   def DotIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps]]
   @scala.inline
+  def DotIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps
+  type DotIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps
+  @scala.inline
   def MaterialIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps]]
+  @scala.inline
+  def MaterialIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps
+  type MaterialIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps
   @scala.inline
   def PacmanIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps]]
   @scala.inline
+  def PacmanIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps
+  type PacmanIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps
+  @scala.inline
   def PulseIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps]]
+  @scala.inline
+  def PulseIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps
+  type PulseIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps
   @scala.inline
   def SkypeIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps]]
   @scala.inline
+  def SkypeIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps
+  type SkypeIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps
+  @scala.inline
   def UIActivityIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps]]
   @scala.inline
+  def UIActivityIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps
+  type UIActivityIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps
+  @scala.inline
   def WaveIndicator: reactLib.reactMod.ComponentType[
     reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.WaveIndicatorProps
   ] = js.constructorOf[reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.WaveIndicator].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.WaveIndicatorProps]]
-  @scala.inline
-  def BallIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps
-  type BallIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BallIndicatorProps
-  @scala.inline
-  def BarIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps
-  type BarIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.BarIndicatorProps
-  @scala.inline
-  def DotIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps
-  type DotIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.DotIndicatorProps
-  @scala.inline
-  def MaterialIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps
-  type MaterialIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.MaterialIndicatorProps
-  @scala.inline
-  def PacmanIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps
-  type PacmanIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PacmanIndicatorProps
-  @scala.inline
-  def PulseIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps
-  type PulseIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.PulseIndicatorProps
-  @scala.inline
-  def SkypeIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps
-  type SkypeIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.SkypeIndicatorProps
-  @scala.inline
-  def UIActivityIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps
-  type UIActivityIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.UIActivityIndicatorProps
   @scala.inline
   def WaveIndicatorProps: reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.WaveIndicatorProps.type = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.WaveIndicatorProps
   type WaveIndicatorProps = reactDashNativeDashIndicatorsLib.reactDashNativeDashIndicatorsMod.WaveIndicatorProps

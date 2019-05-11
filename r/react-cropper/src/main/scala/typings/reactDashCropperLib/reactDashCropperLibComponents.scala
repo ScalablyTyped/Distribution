@@ -9,7 +9,7 @@ object reactDashCropperLibComponents {
   @scala.inline
   def ReactDashCropper: reactLib.reactMod.ComponentType[reactDashCropperLib.reactDashCropperMod.ReactCropperProps] = js.constructorOf[reactDashCropperLib.reactDashCropperMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCropperLib.reactDashCropperMod.ReactCropperProps]]
   @scala.inline
-  def ReactCropperProps: reactDashCropperLib.reactDashCropperMod.ReactCropperProps.type = reactDashCropperLib.reactDashCropperMod.ReactCropperProps
-  type ReactCropperProps = reactDashCropperLib.reactDashCropperMod.ReactCropperProps
+  def ReactDashCropperProps: reactDashCropperLib.reactDashCropperMod.ReactCropperProps.type = reactDashCropperLib.reactDashCropperMod.ReactCropperProps
+  type ReactDashCropperProps = reactDashCropperLib.reactDashCropperMod.ReactCropperProps
 }
 

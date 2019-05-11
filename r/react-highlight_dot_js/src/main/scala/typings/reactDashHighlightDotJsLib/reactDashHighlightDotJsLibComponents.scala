@@ -9,7 +9,7 @@ object reactDashHighlightDotJsLibComponents {
   @scala.inline
   def ReactDashHighlightDotJs: reactLib.reactMod.ComponentType[reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps] = js.constructorOf[reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps]]
   @scala.inline
-  def HighlightProps: reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps.type = reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps
-  type HighlightProps = reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps
+  def ReactDashHighlightDotJsProps: reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps.type = reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps
+  type ReactDashHighlightDotJsProps = reactDashHighlightDotJsLib.reactDashHighlightDotJsMod.HighlightProps
 }
 

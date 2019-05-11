@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Brief
   extends org.scalablytyped.runtime.Instantiable1[
-      /* props */ antdDashMobileLib.libListListItemMod.ListItemProps, 
-      antdDashMobileLib.libListListItemMod.default
+      /* props */ antdDashMobileLib.esListListItemMod.ListItemProps, 
+      antdDashMobileLib.esListListItemMod.default
     ] {
-  var defaultProps: stdLib.Partial[antdDashMobileLib.libListListItemMod.ListItemProps] = js.native
+  var defaultProps: stdLib.Partial[antdDashMobileLib.esListListItemMod.ListItemProps] = js.native
 }
 

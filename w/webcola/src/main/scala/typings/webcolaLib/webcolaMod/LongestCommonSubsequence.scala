@@ -16,6 +16,6 @@ class LongestCommonSubsequence[T] protected ()
 @JSImport("webcola", "LongestCommonSubsequence")
 @js.native
 object LongestCommonSubsequence extends js.Object {
-  /* private */ def findMatch[T](s: js.Any, t: js.Any): js.Any = js.native
+  var findMatch: js.Any = js.native
 }
 

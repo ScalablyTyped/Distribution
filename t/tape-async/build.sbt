@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "tape-async"
-version := "2.3-dt-20190307Z-55b7c9"
+version := "2.3-dt-20190307Z-2d3a54"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "tape" % "v4.2.30-dt-20190322Z-a9638c")
+  "org.scalablytyped" %%% "tape" % "v4.2.30-dt-20190322Z-763ea7")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

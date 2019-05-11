@@ -12,6 +12,6 @@ trait LocaleProvider
   def componentDidUpdate_MLocaleProvider(prevProps: LocaleProviderProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MLocaleProvider(): scala.Unit = js.native
-  def getChildContext(): antdLib.Anon_AntLocaleAnonCalendar = js.native
+  def getChildContext(): antdLib.Anon_AntLocaleAnonCalendarDatePicker = js.native
 }
 

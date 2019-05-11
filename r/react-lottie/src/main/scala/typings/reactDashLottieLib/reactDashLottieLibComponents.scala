@@ -9,7 +9,7 @@ object reactDashLottieLibComponents {
   @scala.inline
   def ReactDashLottie: reactLib.reactMod.ComponentType[reactDashLottieLib.reactDashLottieMod.LottieProps] = js.constructorOf[reactDashLottieLib.reactDashLottieMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLottieLib.reactDashLottieMod.LottieProps]]
   @scala.inline
-  def LottieProps: reactDashLottieLib.reactDashLottieMod.LottieProps.type = reactDashLottieLib.reactDashLottieMod.LottieProps
-  type LottieProps = reactDashLottieLib.reactDashLottieMod.LottieProps
+  def ReactDashLottieProps: reactDashLottieLib.reactDashLottieMod.LottieProps.type = reactDashLottieLib.reactDashLottieMod.LottieProps
+  type ReactDashLottieProps = reactDashLottieLib.reactDashLottieMod.LottieProps
 }
 

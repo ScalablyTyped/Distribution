@@ -12,7 +12,7 @@ object reactDashNativeDashDatepickerLibComponents {
   ] = js.constructorOf[reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps]]
   @scala.inline
-  def DatePickerProps: reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps.type = reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps
-  type DatePickerProps = reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps
+  def ReactDashNativeDashDatepickerProps: reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps.type = reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps
+  type ReactDashNativeDashDatepickerProps = reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerMod.DatePickerProps
 }
 

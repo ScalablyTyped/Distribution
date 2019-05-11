@@ -39,14 +39,17 @@ object graphqlDashComposeLibStrings {
   @js.native
   sealed trait mutation
     extends graphqlDashComposeLib.libResolverMod.ResolverKinds
+       with graphqlDashComposeLib.esmResolverMod.ResolverKinds
   
   @js.native
   sealed trait query
     extends graphqlDashComposeLib.libResolverMod.ResolverKinds
+       with graphqlDashComposeLib.esmResolverMod.ResolverKinds
   
   @js.native
   sealed trait subscription
     extends graphqlDashComposeLib.libResolverMod.ResolverKinds
+       with graphqlDashComposeLib.esmResolverMod.ResolverKinds
   
   @scala.inline
   def ComposeFieldConfigArgumentMap: ComposeFieldConfigArgumentMap = "ComposeFieldConfigArgumentMap".asInstanceOf[ComposeFieldConfigArgumentMap]

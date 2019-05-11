@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_DefaultPropsAnonPlaceholder
-  extends org.scalablytyped.runtime.Instantiable0[antdLib.libTransferSearchMod.default] {
+  extends org.scalablytyped.runtime.Instantiable0[antdLib.esTransferSearchMod.default] {
   var defaultProps: Anon_Placeholder = js.native
 }
 

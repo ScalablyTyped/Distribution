@@ -12,7 +12,7 @@ object reactDashNativeDashCollapsibleLibComponents {
   ] = js.constructorOf[reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps]]
   @scala.inline
-  def CollapsibleProps: reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps.type = reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps
-  type CollapsibleProps = reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps
+  def ReactDashNativeDashCollapsibleProps: reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps.type = reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps
+  type ReactDashNativeDashCollapsibleProps = reactDashNativeDashCollapsibleLib.reactDashNativeDashCollapsibleMod.CollapsibleProps
 }
 

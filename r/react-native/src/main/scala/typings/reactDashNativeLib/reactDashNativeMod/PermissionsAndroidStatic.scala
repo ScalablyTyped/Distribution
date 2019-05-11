@@ -35,14 +35,18 @@ trait PermissionsAndroidStatic
     * (https://developer.android.com/training/permissions/requesting.html#explain)
     * and then shows the system permission dialog
     */
-  def request(permission: Permission): js.Promise[java.lang.String] = js.native
-  def request(permission: Permission, rationale: Rationale): js.Promise[java.lang.String] = js.native
+  def request(permission: Permission): js.Promise[PermissionStatus] = js.native
+  def request(permission: Permission, rationale: Rationale): js.Promise[PermissionStatus] = js.native
   /**
     * Prompts the user to enable multiple permissions in the same dialog and
     * returns an object with the permissions as keys and strings as values
     * indicating whether the user allowed or denied the request
     */
-  def requestMultiple(permissions: js.Array[java.lang.String]): js.Promise[org.scalablytyped.runtime.StringDictionary[PermissionStatus]] = js.native
+  def requestMultiple(permissions: js.Array[Permission]): js.Promise[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in react-native.react-native.Permission ]: react-native.react-native.PermissionStatus}
+    */ reactDashNativeLib.reactDashNativeLibStrings.PermissionsAndroidStatic with js.Any
+  ] = js.native
   /**
     * Deprecated
     */

@@ -9,7 +9,7 @@ object reactDashPlyrLibComponents {
   @scala.inline
   def ReactDashPlyr: reactLib.reactMod.ComponentType[reactDashPlyrLib.reactDashPlyrMod.Props] = js.constructorOf[reactDashPlyrLib.reactDashPlyrMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPlyrLib.reactDashPlyrMod.Props]]
   @scala.inline
-  def Props: reactDashPlyrLib.reactDashPlyrMod.Props.type = reactDashPlyrLib.reactDashPlyrMod.Props
-  type Props = reactDashPlyrLib.reactDashPlyrMod.Props
+  def ReactDashPlyrProps: reactDashPlyrLib.reactDashPlyrMod.Props.type = reactDashPlyrLib.reactDashPlyrMod.Props
+  type ReactDashPlyrProps = reactDashPlyrLib.reactDashPlyrMod.Props
 }
 

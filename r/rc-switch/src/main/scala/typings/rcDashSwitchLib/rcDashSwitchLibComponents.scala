@@ -9,7 +9,7 @@ object rcDashSwitchLibComponents {
   @scala.inline
   def RcDashSwitch: reactLib.reactMod.ComponentType[rcDashSwitchLib.rcDashSwitchMod.Props] = js.constructorOf[rcDashSwitchLib.rcDashSwitchMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rcDashSwitchLib.rcDashSwitchMod.Props]]
   @scala.inline
-  def Props: rcDashSwitchLib.rcDashSwitchMod.Props.type = rcDashSwitchLib.rcDashSwitchMod.Props
-  type Props = rcDashSwitchLib.rcDashSwitchMod.Props
+  def RcDashSwitchProps: rcDashSwitchLib.rcDashSwitchMod.Props.type = rcDashSwitchLib.rcDashSwitchMod.Props
+  type RcDashSwitchProps = rcDashSwitchLib.rcDashSwitchMod.Props
 }
 

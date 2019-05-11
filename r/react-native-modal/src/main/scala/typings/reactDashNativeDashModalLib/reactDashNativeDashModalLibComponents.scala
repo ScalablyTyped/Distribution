@@ -9,7 +9,7 @@ object reactDashNativeDashModalLibComponents {
   @scala.inline
   def ReactDashNativeDashModal: reactLib.reactMod.ComponentType[reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps] = js.constructorOf[reactDashNativeDashModalLib.reactDashNativeDashModalMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps]]
   @scala.inline
-  def ModalProps: reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps.type = reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps
-  type ModalProps = reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps
+  def ReactDashNativeDashModalProps: reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps.type = reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps
+  type ReactDashNativeDashModalProps = reactDashNativeDashModalLib.reactDashNativeDashModalMod.ModalProps
 }
 

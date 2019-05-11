@@ -16,7 +16,7 @@ class Block protected ()
 @JSImport("webcola", "Block")
 @js.native
 object Block extends js.Object {
-  /* private */ def createSplitBlock(startVar: js.Any): js.Any = js.native
+  var createSplitBlock: js.Any = js.native
   def split(c: webcolaLib.distSrcVpscMod.Constraint): js.Array[webcolaLib.distSrcVpscMod.Block] = js.native
 }
 

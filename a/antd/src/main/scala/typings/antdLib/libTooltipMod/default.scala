@@ -15,7 +15,7 @@ class default protected () extends Tooltip {
 @JSImport("antd/lib/tooltip", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_ArrowPointAtCenter = js.native
+  var defaultProps: antdLib.Anon_ArrowPointAtCenterAutoAdjustOverflow = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libTooltipMod.TooltipProps): antdLib.Anon_Visible | scala.Null = js.native
 }
 

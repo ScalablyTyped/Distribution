@@ -7,8 +7,14 @@ import scala.scalajs.js.annotation._
 
 object rmcDashTabsLibComponents {
   @scala.inline
-  def DefaultTabBar: reactLib.reactMod.ComponentType[rmcDashTabsLib.libDefaultTabBarMod.PropsType] = js.constructorOf[rmcDashTabsLib.rmcDashTabsMod.DefaultTabBar].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashTabsLib.libDefaultTabBarMod.PropsType]]
+  def DefaultTabBar: reactLib.reactMod.ComponentType[rmcDashTabsLib.esDefaultTabBarMod.PropsType] = js.constructorOf[rmcDashTabsLib.esMod.DefaultTabBar].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashTabsLib.esDefaultTabBarMod.PropsType]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ComponentType[rmcDashTabsLib.libTabsMod.PropsType] = js.constructorOf[rmcDashTabsLib.libTabsMod.Tabs].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashTabsLib.libTabsMod.PropsType]]
+  def DefaultTabBarProps: rmcDashTabsLib.esDefaultTabBarMod.PropsType.type = rmcDashTabsLib.esDefaultTabBarMod.PropsType
+  type DefaultTabBarProps = rmcDashTabsLib.esDefaultTabBarMod.PropsType
+  @scala.inline
+  def Tabs: reactLib.reactMod.ComponentType[rmcDashTabsLib.esTabsMod.PropsType] = js.constructorOf[rmcDashTabsLib.esMod.Tabs].asInstanceOf[reactLib.reactMod.ComponentType[rmcDashTabsLib.esTabsMod.PropsType]]
+  @scala.inline
+  def TabsProps: rmcDashTabsLib.esTabsMod.PropsType.type = rmcDashTabsLib.esTabsMod.PropsType
+  type TabsProps = rmcDashTabsLib.esTabsMod.PropsType
 }
 

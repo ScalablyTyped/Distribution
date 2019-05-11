@@ -27,6 +27,8 @@ package object clientsGlueMod {
   type CatalogEncryptionMode = _CatalogEncryptionMode | java.lang.String
   type CatalogEntries = js.Array[CatalogEntry]
   type CatalogIdString = java.lang.String
+  type CatalogTablesList = js.Array[NameString]
+  type CatalogTargetList = js.Array[CatalogTarget]
   type Classification = java.lang.String
   type ClassifierList = js.Array[Classifier]
   type ClassifierNameList = js.Array[NameString]

@@ -11,7 +11,7 @@ trait BatchGetCrawlersResponse extends js.Object {
     */
   var Crawlers: js.UndefOr[CrawlerList] = js.undefined
   /**
-    * A list of names of crawlers not found.
+    * A list of names of crawlers that were not found.
     */
   var CrawlersNotFound: js.UndefOr[CrawlerNameList] = js.undefined
 }

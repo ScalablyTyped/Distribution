@@ -9,7 +9,7 @@ object prismDashReactDashRendererLibComponents {
   @scala.inline
   def PrismDashReactDashRenderer: reactLib.reactMod.ComponentType[prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps] = js.constructorOf[prismDashReactDashRendererLib.prismDashReactDashRendererMod.default].asInstanceOf[reactLib.reactMod.ComponentType[prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps]]
   @scala.inline
-  def HighlightProps: prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps.type = prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps
-  type HighlightProps = prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps
+  def PrismDashReactDashRendererProps: prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps.type = prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps
+  type PrismDashReactDashRendererProps = prismDashReactDashRendererLib.prismDashReactDashRendererMod.HighlightProps
 }
 

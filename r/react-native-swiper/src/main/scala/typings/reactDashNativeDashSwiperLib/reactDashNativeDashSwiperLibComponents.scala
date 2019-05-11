@@ -9,7 +9,7 @@ object reactDashNativeDashSwiperLibComponents {
   @scala.inline
   def ReactDashNativeDashSwiper: reactLib.reactMod.ComponentType[reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties] = js.constructorOf[reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties]]
   @scala.inline
-  def SwiperProperties: reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties.type = reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties
-  type SwiperProperties = reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties
+  def ReactDashNativeDashSwiperProps: reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties.type = reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties
+  type ReactDashNativeDashSwiperProps = reactDashNativeDashSwiperLib.reactDashNativeDashSwiperMod.SwiperProperties
 }
 

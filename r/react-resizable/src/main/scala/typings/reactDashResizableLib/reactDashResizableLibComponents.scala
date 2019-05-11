@@ -9,10 +9,10 @@ object reactDashResizableLibComponents {
   @scala.inline
   def Resizable: reactLib.reactMod.ComponentType[reactDashResizableLib.reactDashResizableMod.ResizableProps] = js.constructorOf[reactDashResizableLib.reactDashResizableMod.Resizable].asInstanceOf[reactLib.reactMod.ComponentType[reactDashResizableLib.reactDashResizableMod.ResizableProps]]
   @scala.inline
-  def ResizableBox: reactLib.reactMod.ComponentType[reactDashResizableLib.reactDashResizableMod.ResizableBoxProps] = js.constructorOf[reactDashResizableLib.reactDashResizableMod.ResizableBox].asInstanceOf[reactLib.reactMod.ComponentType[reactDashResizableLib.reactDashResizableMod.ResizableBoxProps]]
-  type ResizableBoxProps = reactDashResizableLib.reactDashResizableMod.ResizableBoxProps
-  @scala.inline
   def ResizableProps: reactDashResizableLib.reactDashResizableMod.ResizableProps.type = reactDashResizableLib.reactDashResizableMod.ResizableProps
   type ResizableProps = reactDashResizableLib.reactDashResizableMod.ResizableProps
+  @scala.inline
+  def ResizableBox: reactLib.reactMod.ComponentType[reactDashResizableLib.reactDashResizableMod.ResizableBoxProps] = js.constructorOf[reactDashResizableLib.reactDashResizableMod.ResizableBox].asInstanceOf[reactLib.reactMod.ComponentType[reactDashResizableLib.reactDashResizableMod.ResizableBoxProps]]
+  type ResizableBoxProps = reactDashResizableLib.reactDashResizableMod.ResizableBoxProps
 }
 

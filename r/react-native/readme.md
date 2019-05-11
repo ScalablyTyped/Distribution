@@ -43,7 +43,6 @@ These comments are from the typescript definitions and might be useful:
 //                 Simon Knott <https://github.com/skn0tt>
 //                 Tim Wang <https://github.com/timwangdev>
 //                 Kamal Mahyuddin <https://github.com/kamal>
-//                 Naoufal El Yousfi <https://github.com/nelyousfi>
 //                 Alex Dunne <https://github.com/alexdunne>
 //                 Manuel Alabor <https://github.com/swissmanu>
 //                 Michele Bombardi <https://github.com/bm-software>
@@ -58,6 +57,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Francesco Moro <https://github.com/franzmoro>
 //                 Wojciech Tyczynski <https://github.com/tykus160>
 //                 Jake Bloom <https://github.com/jakebloom>
+//                 Ceyhun Ozugur <https://github.com/ceyhun>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

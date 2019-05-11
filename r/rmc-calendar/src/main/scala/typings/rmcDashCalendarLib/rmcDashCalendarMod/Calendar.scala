@@ -16,7 +16,7 @@ class Calendar protected ()
 @JSImport("rmc-calendar", "Calendar")
 @js.native
 object Calendar extends js.Object {
-  var DefaultHeader: rmcDashCalendarLib.Anon_DefaultProps = js.native
+  var DefaultHeader: rmcDashCalendarLib.Anon_DefaultPropsAnonCloseIcon = js.native
   var DefaultShortcut: org.scalablytyped.runtime.Instantiable0[rmcDashCalendarLib.libCalendarShortcutPanelMod.default] = js.native
   var defaultProps: rmcDashCalendarLib.libCalendarPropsMod.PropsType = js.native
 }

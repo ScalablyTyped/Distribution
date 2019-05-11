@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchGetCrawlersRequest extends js.Object {
   /**
-    * A list of crawler names, which may be the names returned from the ListCrawlers operation.
+    * A list of crawler names, which might be the names returned from the ListCrawlers operation.
     */
   var CrawlerNames: CrawlerNameList
 }

@@ -12,7 +12,7 @@ object reactDashScrollableDashAnchorLibComponents {
   ] = js.constructorOf[reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps]]
   @scala.inline
-  def ScrollableAnchorProps: reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps.type = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
-  type ScrollableAnchorProps = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
+  def ReactDashScrollableDashAnchorProps: reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps.type = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
+  type ReactDashScrollableDashAnchorProps = reactDashScrollableDashAnchorLib.reactDashScrollableDashAnchorMod.ScrollableAnchorProps
 }
 

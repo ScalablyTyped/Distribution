@@ -15,7 +15,7 @@ class ListView ()
 @js.native
 object ListView extends js.Object {
   var DataSource: js.Any = js.native
-  var IndexedList: antdDashMobileLib.Anon_DefaultPropsAnonListPrefixClsListViewPrefixCls = js.native
+  var IndexedList: antdDashMobileLib.Anon_DefaultPropsAnonListPrefixClsListViewPrefixClsDefault = js.native
   var defaultProps: antdDashMobileLib.Anon_ListPrefixCls = js.native
 }
 

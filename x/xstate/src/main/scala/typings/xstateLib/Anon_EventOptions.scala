@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_EventOptions extends js.Object {
-  def apply[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): xstateLib.libTypesMod.SendAction[TContext, TEvent] = js.native
-  def apply[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
-    event: xstateLib.libTypesMod.Event[TEvent],
-    options: xstateLib.libTypesMod.SendActionOptions[TContext, TEvent]
-  ): xstateLib.libTypesMod.SendAction[TContext, TEvent] = js.native
-  def apply[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.SendExpr[TContext, TEvent]): xstateLib.libTypesMod.SendAction[TContext, TEvent] = js.native
-  def apply[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
-    event: xstateLib.libTypesMod.SendExpr[TContext, TEvent],
-    options: xstateLib.libTypesMod.SendActionOptions[TContext, TEvent]
-  ): xstateLib.libTypesMod.SendAction[TContext, TEvent] = js.native
+  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](event: xstateLib.esTypesMod.Event[TEvent]): xstateLib.esTypesMod.SendAction[TContext, TEvent] = js.native
+  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    event: xstateLib.esTypesMod.Event[TEvent],
+    options: xstateLib.esTypesMod.SendActionOptions[TContext, TEvent]
+  ): xstateLib.esTypesMod.SendAction[TContext, TEvent] = js.native
+  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](event: xstateLib.esTypesMod.SendExpr[TContext, TEvent]): xstateLib.esTypesMod.SendAction[TContext, TEvent] = js.native
+  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    event: xstateLib.esTypesMod.SendExpr[TContext, TEvent],
+    options: xstateLib.esTypesMod.SendActionOptions[TContext, TEvent]
+  ): xstateLib.esTypesMod.SendAction[TContext, TEvent] = js.native
 }
 

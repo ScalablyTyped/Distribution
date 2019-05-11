@@ -9,7 +9,7 @@ object reactDashLoaderLibComponents {
   @scala.inline
   def ReactDashLoader: reactLib.reactMod.ComponentType[reactDashLoaderLib.reactDashLoaderMod.LoaderProps] = js.constructorOf[reactDashLoaderLib.reactDashLoaderMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashLoaderLib.reactDashLoaderMod.LoaderProps]]
   @scala.inline
-  def LoaderProps: reactDashLoaderLib.reactDashLoaderMod.LoaderProps.type = reactDashLoaderLib.reactDashLoaderMod.LoaderProps
-  type LoaderProps = reactDashLoaderLib.reactDashLoaderMod.LoaderProps
+  def ReactDashLoaderProps: reactDashLoaderLib.reactDashLoaderMod.LoaderProps.type = reactDashLoaderLib.reactDashLoaderMod.LoaderProps
+  type ReactDashLoaderProps = reactDashLoaderLib.reactDashLoaderMod.LoaderProps
 }
 

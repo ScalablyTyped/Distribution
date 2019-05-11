@@ -9,7 +9,7 @@ object reactjsDashPopupLibComponents {
   @scala.inline
   def ReactjsDashPopup: reactLib.reactMod.ComponentType[reactjsDashPopupLib.reactjsDashPopupMod.Props] = js.constructorOf[reactjsDashPopupLib.reactjsDashPopupMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactjsDashPopupLib.reactjsDashPopupMod.Props]]
   @scala.inline
-  def Props: reactjsDashPopupLib.reactjsDashPopupMod.Props.type = reactjsDashPopupLib.reactjsDashPopupMod.Props
-  type Props = reactjsDashPopupLib.reactjsDashPopupMod.Props
+  def ReactjsDashPopupProps: reactjsDashPopupLib.reactjsDashPopupMod.Props.type = reactjsDashPopupLib.reactjsDashPopupMod.Props
+  type ReactjsDashPopupProps = reactjsDashPopupLib.reactjsDashPopupMod.Props
 }
 

@@ -9,7 +9,7 @@ object reactDashGithubDashButtonLibComponents {
   @scala.inline
   def ReactDashGithubDashButton: reactLib.reactMod.ComponentType[reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps] = js.constructorOf[reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps]]
   @scala.inline
-  def ReactGitHubButtonProps: reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps.type = reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps
-  type ReactGitHubButtonProps = reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps
+  def ReactDashGithubDashButtonProps: reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps.type = reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps
+  type ReactDashGithubDashButtonProps = reactDashGithubDashButtonLib.reactDashGithubDashButtonMod.ReactGitHubButtonProps
 }
 

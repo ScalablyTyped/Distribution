@@ -9,7 +9,7 @@ object reactDashSplitDashPaneLibComponents {
   @scala.inline
   def ReactDashSplitDashPane: reactLib.reactMod.ComponentType[reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props] = js.constructorOf[reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props]]
   @scala.inline
-  def Props: reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props.type = reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props
-  type Props = reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props
+  def ReactDashSplitDashPaneProps: reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props.type = reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props
+  type ReactDashSplitDashPaneProps = reactDashSplitDashPaneLib.reactDashSplitDashPaneMod.Props
 }
 

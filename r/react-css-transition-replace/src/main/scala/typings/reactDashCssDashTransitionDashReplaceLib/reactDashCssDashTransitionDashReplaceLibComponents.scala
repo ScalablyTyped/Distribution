@@ -12,7 +12,7 @@ object reactDashCssDashTransitionDashReplaceLibComponents {
   ] = js.constructorOf[reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Class].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props]]
   @scala.inline
-  def Props: reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props.type = reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
-  type Props = reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
+  def ClassProps: reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props.type = reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
+  type ClassProps = reactDashCssDashTransitionDashReplaceLib.reactDashCssDashTransitionDashReplaceMod.Props
 }
 

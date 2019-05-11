@@ -14,6 +14,6 @@ class default () extends Tabs
 @js.native
 object default extends js.Object {
   var TabPane: reactLib.reactMod.ClassicComponentClass[antdLib.libTabsMod.TabPaneProps] = js.native
-  var defaultProps: antdLib.Anon_HideAdd = js.native
+  var defaultProps: antdLib.Anon_HideAddTabPosition = js.native
 }
 

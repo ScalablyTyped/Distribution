@@ -28,9 +28,9 @@ object libActionsMod extends js.Object {
   def doneInvoke(id: java.lang.String, data: js.Any): xstateLib.libTypesMod.DoneEvent = js.native
   def error(data: js.Any, src: java.lang.String): xstateLib.libTypesMod.ErrorExecutionEvent = js.native
   def isActionObject[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](action: xstateLib.libTypesMod.Action[TContext, TEvent]): /* is xstate.xstate/lib/types.ActionObject<TContext, TEvent> */ scala.Boolean = js.native
-  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
-  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
-  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: java.lang.String): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](): xstateLib.Anon_CtxEventExpr[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): xstateLib.Anon_CtxEventExpr[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: java.lang.String): xstateLib.Anon_CtxEventExpr[TContext, TEvent] = js.native
   def raise[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): xstateLib.libTypesMod.RaiseEvent[TContext, TEvent] = js.native
   def resolveSend[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](action: xstateLib.libTypesMod.SendAction[TContext, TEvent], ctx: TContext, event: TEvent): xstateLib.libTypesMod.SendActionObject[TContext, xstateLib.libTypesMod.OmniEventObject[TEvent]] = js.native
   def send[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): xstateLib.libTypesMod.SendAction[TContext, TEvent] = js.native

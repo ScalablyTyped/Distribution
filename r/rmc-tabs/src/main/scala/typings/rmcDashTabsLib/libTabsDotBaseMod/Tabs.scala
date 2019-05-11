@@ -63,7 +63,7 @@ abstract class Tabs[P /* <: rmcDashTabsLib.libPropsTypeMod.PropsType */, S /* <:
     /* allPrefix */ js.UndefOr[java.lang.String], 
     org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNode]
   ] = js.native
-  def getTabBarBaseProps(): rmcDashTabsLib.Anon_ActiveTab[S, P] = js.native
+  def getTabBarBaseProps(): rmcDashTabsLib.Anon_ActiveTabAnimated[S, P] = js.native
   def getTabIndex(props: P): scala.Double = js.native
   def goToTab(index: scala.Double): scala.Boolean = js.native
   def goToTab(index: scala.Double, force: scala.Boolean): scala.Boolean = js.native

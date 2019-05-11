@@ -11,18 +11,18 @@ object reactDashNativeDashSnapDashCarouselLibComponents {
     reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.PaginationProperties
   ] = js.constructorOf[reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.Pagination].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.PaginationProperties]]
+  type PaginationProps = reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.PaginationProperties
   @scala.inline
   def ParallaxImage: reactLib.reactMod.ComponentType[
     reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties
   ] = js.constructorOf[reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.ParallaxImage].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties]]
+  type ParallaxImageProps = reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties
   @scala.inline
   def ReactDashNativeDashSnapDashCarousel[T]: reactLib.reactMod.ComponentType[
     reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.CarouselProperties[T]
   ] = js.constructorOf[reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.default[T]].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.CarouselProperties[T]]]
-  type CarouselProperties[T] = reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.CarouselProperties[T]
-  type PaginationProperties = reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.PaginationProperties
-  type ParallaxImageProperties = reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.ParallaxImageProperties
+  type ReactDashNativeDashSnapDashCarouselProps[T] = reactDashNativeDashSnapDashCarouselLib.reactDashNativeDashSnapDashCarouselMod.CarouselProperties[T]
 }
 

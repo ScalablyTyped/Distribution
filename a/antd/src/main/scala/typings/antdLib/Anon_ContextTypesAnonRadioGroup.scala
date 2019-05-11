@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ContextTypesAnonRadioGroup
-  extends org.scalablytyped.runtime.Instantiable0[antdLib.libRadioRadioButtonMod.default] {
+  extends org.scalablytyped.runtime.Instantiable0[antdLib.esRadioRadioButtonMod.default] {
   var contextTypes: Anon_RadioGroup = js.native
 }
 

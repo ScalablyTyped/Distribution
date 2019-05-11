@@ -12,7 +12,7 @@ object reactDashDaterangeDashPickerLibComponents {
   ] = js.constructorOf[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.DateRangePicker]]]
   @scala.inline
-  def Props: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props.type = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props
-  type Props[T] = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[T]
+  def ReactDashDaterangeDashPickerProps: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props.type = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props
+  type ReactDashDaterangeDashPickerProps[T] = reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerMod.Props[T]
 }
 

@@ -9,9 +9,12 @@ object reactDashCollapseLibComponents {
   @scala.inline
   def Collapse: reactLib.reactMod.ComponentType[reactDashCollapseLib.reactDashCollapseMod.CollapseProps] = js.constructorOf[reactDashCollapseLib.reactDashCollapseMod.Collapse].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCollapseLib.reactDashCollapseMod.CollapseProps]]
   @scala.inline
-  def UnmountClosed: reactLib.reactMod.ComponentType[reactDashCollapseLib.reactDashCollapseMod.CollapseProps] = js.constructorOf[reactDashCollapseLib.reactDashCollapseMod.UnmountClosed].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCollapseLib.reactDashCollapseMod.CollapseProps]]
-  @scala.inline
   def CollapseProps: reactDashCollapseLib.reactDashCollapseMod.CollapseProps.type = reactDashCollapseLib.reactDashCollapseMod.CollapseProps
   type CollapseProps = reactDashCollapseLib.reactDashCollapseMod.CollapseProps
+  @scala.inline
+  def UnmountClosed: reactLib.reactMod.ComponentType[reactDashCollapseLib.reactDashCollapseMod.CollapseProps] = js.constructorOf[reactDashCollapseLib.reactDashCollapseMod.UnmountClosed].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCollapseLib.reactDashCollapseMod.CollapseProps]]
+  @scala.inline
+  def UnmountClosedProps: reactDashCollapseLib.reactDashCollapseMod.CollapseProps.type = reactDashCollapseLib.reactDashCollapseMod.CollapseProps
+  type UnmountClosedProps = reactDashCollapseLib.reactDashCollapseMod.CollapseProps
 }
 

@@ -9,7 +9,7 @@ object reactDashCreditDashCardsLibComponents {
   @scala.inline
   def ReactDashCreditDashCards: reactLib.reactMod.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps] = js.constructorOf[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps]]
   @scala.inline
-  def ReactCreditCardProps: reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps.type = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
-  type ReactCreditCardProps = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
+  def ReactDashCreditDashCardsProps: reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps.type = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
+  type ReactDashCreditDashCardsProps = reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.ReactCreditCardProps
 }
 

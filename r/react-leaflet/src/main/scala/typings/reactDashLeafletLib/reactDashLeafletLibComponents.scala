@@ -36,10 +36,16 @@ object reactDashLeafletLibComponents {
   ] = reactDashLeafletLib.reactDashLeafletMod.^.LeafletConsumer.asInstanceOf[reactLib.reactMod.ComponentType[
   reactLib.reactMod.ConsumerProps[reactDashLeafletLib.reactDashLeafletMod.LeafletContext]]]
   @scala.inline
+  def LeafletConsumerProps: reactLib.reactMod.ConsumerProps.type = reactLib.reactMod.ConsumerProps
+  type LeafletConsumerProps[T] = reactLib.reactMod.ConsumerProps[T]
+  @scala.inline
   def LeafletProvider: reactLib.reactMod.ComponentType[
     reactLib.reactMod.ProviderProps[reactDashLeafletLib.reactDashLeafletMod.LeafletContext]
   ] = reactDashLeafletLib.reactDashLeafletMod.^.LeafletProvider.asInstanceOf[reactLib.reactMod.ComponentType[
   reactLib.reactMod.ProviderProps[reactDashLeafletLib.reactDashLeafletMod.LeafletContext]]]
+  @scala.inline
+  def LeafletProviderProps: reactLib.reactMod.ProviderProps.type = reactLib.reactMod.ProviderProps
+  type LeafletProviderProps[T] = reactLib.reactMod.ProviderProps[T]
   @scala.inline
   def Map[P /* <: reactDashLeafletLib.reactDashLeafletMod.MapProps */, E /* <: leafletLib.leafletMod.Map */]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reactDashLeafletLib.reactDashLeafletMod.Map[P, E]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline
@@ -76,11 +82,5 @@ object reactDashLeafletLibComponents {
   def WMSTileLayer[P /* <: reactDashLeafletLib.reactDashLeafletMod.WMSTileLayerProps */, E /* <: leafletLib.leafletMod.TileLayerNs.WMS */]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reactDashLeafletLib.reactDashLeafletMod.WMSTileLayer[P, E]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline
   def ZoomControl[P /* <: reactDashLeafletLib.reactDashLeafletMod.ZoomControlProps */, E /* <: leafletLib.leafletMod.ControlNs.Zoom */]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reactDashLeafletLib.reactDashLeafletMod.ZoomControl[P, E]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
-  @scala.inline
-  def ConsumerProps: reactLib.reactMod.ConsumerProps.type = reactLib.reactMod.ConsumerProps
-  type ConsumerProps[T] = reactLib.reactMod.ConsumerProps[T]
-  @scala.inline
-  def ProviderProps: reactLib.reactMod.ProviderProps.type = reactLib.reactMod.ProviderProps
-  type ProviderProps[T] = reactLib.reactMod.ProviderProps[T]
 }
 

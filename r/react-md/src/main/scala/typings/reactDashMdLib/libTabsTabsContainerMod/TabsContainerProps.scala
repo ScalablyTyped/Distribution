@@ -13,6 +13,7 @@ trait TabsContainerProps
   var children: js.UndefOr[reactLib.reactMod.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps]] = js.undefined
   var colored: js.UndefOr[scala.Boolean] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var componentRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   var defaultTabIndex: js.UndefOr[scala.Double] = js.undefined
   var fixed: js.UndefOr[scala.Boolean] = js.undefined
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -51,6 +52,7 @@ object TabsContainerProps {
     className: java.lang.String = null,
     colored: js.UndefOr[scala.Boolean] = js.undefined,
     component: reactLib.reactMod.ReactType[_] = null,
+    componentRef: reactLib.reactMod.Ref[_] = null,
     defaultTabIndex: scala.Int | scala.Double = null,
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     headerClassName: java.lang.String = null,
@@ -101,6 +103,7 @@ object TabsContainerProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(colored)) __obj.updateDynamic("colored")(colored)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (defaultTabIndex != null) __obj.updateDynamic("defaultTabIndex")(defaultTabIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)

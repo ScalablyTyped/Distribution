@@ -11,19 +11,19 @@ trait GrokClassifier extends js.Object {
     */
   var Classification: awsDashSdkLib.clientsGlueMod.Classification
   /**
-    * The time this classifier was registered.
+    * The time that this classifier was registered.
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * Optional custom grok patterns defined by this classifier. For more information, see custom patterns in Writing Custom Classifers.
+    * Optional custom grok patterns defined by this classifier. For more information, see custom patterns in Writing Custom Classifiers.
     */
   var CustomPatterns: js.UndefOr[CustomPatterns] = js.undefined
   /**
-    * The grok pattern applied to a data store by this classifier. For more information, see built-in patterns in Writing Custom Classifers.
+    * The grok pattern applied to a data store by this classifier. For more information, see built-in patterns in Writing Custom Classifiers.
     */
   var GrokPattern: awsDashSdkLib.clientsGlueMod.GrokPattern
   /**
-    * The time this classifier was last updated.
+    * The time that this classifier was last updated.
     */
   var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   /**

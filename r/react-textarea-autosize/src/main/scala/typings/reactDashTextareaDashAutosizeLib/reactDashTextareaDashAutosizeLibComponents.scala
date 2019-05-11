@@ -12,7 +12,7 @@ object reactDashTextareaDashAutosizeLibComponents {
   ] = js.constructorOf[reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps]]
   @scala.inline
-  def TextareaAutosizeProps: reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps.type = reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps
-  type TextareaAutosizeProps = reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps
+  def ReactDashTextareaDashAutosizeProps: reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps.type = reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps
+  type ReactDashTextareaDashAutosizeProps = reactDashTextareaDashAutosizeLib.reactDashTextareaDashAutosizeMod.TextareaAutosizeProps
 }
 

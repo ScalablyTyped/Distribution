@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "socketio-wildcard"
-version := "2.0-dt-20180314Z-99dff4"
+version := "2.0-dt-20180314Z-a64a79"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-785a64",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-4764dc",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

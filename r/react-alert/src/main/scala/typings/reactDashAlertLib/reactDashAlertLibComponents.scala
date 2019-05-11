@@ -9,7 +9,7 @@ object reactDashAlertLibComponents {
   @scala.inline
   def Provider: reactLib.reactMod.ComponentType[reactDashAlertLib.reactDashAlertMod.AlertProviderProps] = js.constructorOf[reactDashAlertLib.reactDashAlertMod.Provider].asInstanceOf[reactLib.reactMod.ComponentType[reactDashAlertLib.reactDashAlertMod.AlertProviderProps]]
   @scala.inline
-  def AlertProviderProps: reactDashAlertLib.reactDashAlertMod.AlertProviderProps.type = reactDashAlertLib.reactDashAlertMod.AlertProviderProps
-  type AlertProviderProps = reactDashAlertLib.reactDashAlertMod.AlertProviderProps
+  def ProviderProps: reactDashAlertLib.reactDashAlertMod.AlertProviderProps.type = reactDashAlertLib.reactDashAlertMod.AlertProviderProps
+  type ProviderProps = reactDashAlertLib.reactDashAlertMod.AlertProviderProps
 }
 

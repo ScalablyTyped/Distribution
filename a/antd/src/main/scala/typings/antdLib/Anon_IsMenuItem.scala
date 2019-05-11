@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_IsMenuItem
-  extends org.scalablytyped.runtime.Instantiable0[antdLib.libMenuMenuItemMod.default] {
+  extends org.scalablytyped.runtime.Instantiable0[antdLib.esMenuMenuItemMod.default] {
   var isMenuItem: scala.Boolean = js.native
 }
 

@@ -18,9 +18,9 @@ object atNivoPieLibComponents {
   atNivoPieLib.atNivoPieMod.PieCanvasProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsivePie: reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieSvgProps] = js.constructorOf[atNivoPieLib.atNivoPieMod.ResponsivePie].asInstanceOf[reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieSvgProps]]
+  type ResponsivePieProps = atNivoPieLib.atNivoPieMod.PieSvgProps
   @scala.inline
   def ResponsivePieCanvas: reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieCanvasProps] = js.constructorOf[atNivoPieLib.atNivoPieMod.ResponsivePieCanvas].asInstanceOf[reactLib.reactMod.ComponentType[atNivoPieLib.atNivoPieMod.PieCanvasProps]]
-  type PieCanvasProps = atNivoPieLib.atNivoPieMod.PieCanvasProps
-  type PieSvgProps = atNivoPieLib.atNivoPieMod.PieSvgProps
+  type ResponsivePieCanvasProps = atNivoPieLib.atNivoPieMod.PieCanvasProps
 }
 

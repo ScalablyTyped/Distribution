@@ -12,7 +12,7 @@ trait Anon_ArgsBody extends js.Object {
   @JSName("className")
   var className_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
   @JSName("dataSource")
-  var dataSource_Original: propDashTypesLib.propDashTypesMod.Validator[js.Array[antdLib.libTransferMod.TransferItem]] = js.native
+  var dataSource_Original: propDashTypesLib.propDashTypesMod.Validator[js.Array[antdLib.esTransferMod.TransferItem]] = js.native
   @JSName("disabled")
   var disabled_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
   @JSName("filterOption")

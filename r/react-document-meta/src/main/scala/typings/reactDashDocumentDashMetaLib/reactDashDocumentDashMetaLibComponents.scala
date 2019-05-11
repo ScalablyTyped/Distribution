@@ -9,7 +9,7 @@ object reactDashDocumentDashMetaLibComponents {
   @scala.inline
   def ReactDashDocumentDashMeta: reactLib.reactMod.ComponentType[reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps] = js.constructorOf[reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps]]
   @scala.inline
-  def DocumentMetaProps: reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps.type = reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps
-  type DocumentMetaProps = reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps
+  def ReactDashDocumentDashMetaProps: reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps.type = reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps
+  type ReactDashDocumentDashMetaProps = reactDashDocumentDashMetaLib.reactDashDocumentDashMetaMod.DocumentMetaProps
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/utils/stackingUtils", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val normalizeKey: (js.Function1[/* key */ js.Any, java.lang.String]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MemoizedFunction */ js.Any) = js.native
+  val normalizeKey: (js.Function1[/* key */ js.Any, java.lang.String]) with lodashLib.lodashMod.MemoizedFunction = js.native
   def stack(
     datasets: js.Array[plottableLib.buildSrcCoreDatasetMod.Dataset],
     keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],

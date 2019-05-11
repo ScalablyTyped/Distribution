@@ -9,7 +9,7 @@ object reactDashToastrLibComponents {
   @scala.inline
   def ToastContainer: reactLib.reactMod.ComponentType[Anon_ClassName] = js.constructorOf[reactDashToastrLib.reactDashToastrMod.ToastContainer].asInstanceOf[reactLib.reactMod.ComponentType[reactDashToastrLib.Anon_ClassName]]
   @scala.inline
-  def Anon_ClassName: reactDashToastrLib.Anon_ClassName.type = reactDashToastrLib.Anon_ClassName
-  type Anon_ClassName = reactDashToastrLib.Anon_ClassName
+  def ToastContainerProps: Anon_ClassName.type = reactDashToastrLib.Anon_ClassName
+  type ToastContainerProps = Anon_ClassName
 }
 

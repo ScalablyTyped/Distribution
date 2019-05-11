@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Calculator[Link] protected () extends js.Object {
   def this(n: scala.Double, es: js.Array[Link], getSourceIndex: js.Function1[/* l */ Link, scala.Double], getTargetIndex: js.Function1[/* l */ Link, scala.Double], getLength: js.Function1[/* l */ Link, scala.Double]) = this()
+  var dijkstraNeighbours: js.Any = js.native
   var es: js.Array[Link] = js.native
   var n: scala.Double = js.native
   var neighbours: js.Any = js.native
@@ -20,7 +21,5 @@ class Calculator[Link] protected () extends js.Object {
     end: scala.Double,
     prevCost: js.Function3[/* u */ scala.Double, /* v */ scala.Double, /* w */ scala.Double, scala.Double]
   ): js.Array[scala.Double] = js.native
-  /* private */ def dijkstraNeighbours(start: js.Any): js.Any = js.native
-  /* private */ def dijkstraNeighbours(start: js.Any, dest: js.Any): js.Any = js.native
 }
 

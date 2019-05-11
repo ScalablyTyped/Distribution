@@ -14,6 +14,8 @@ class Layout ()
 @JSImport("webcola", "Layout")
 @js.native
 object Layout extends js.Object {
+  var stopNode: js.Any = js.native
+  var storeOffset: js.Any = js.native
   def drag(d: webcolaLib.distSrcLayoutMod.Group, position: webcolaLib.Anon_X): scala.Unit = js.native
   def drag(d: webcolaLib.distSrcLayoutMod.Node, position: webcolaLib.Anon_X): scala.Unit = js.native
   def dragEnd(d: js.Any): scala.Unit = js.native
@@ -30,7 +32,5 @@ object Layout extends js.Object {
     link: webcolaLib.distSrcLayoutMod.Link[webcolaLib.distSrcLayoutMod.Node | scala.Double],
     length: scala.Double
   ): scala.Unit = js.native
-  /* private */ def stopNode(v: js.Any): js.Any = js.native
-  /* private */ def storeOffset(d: js.Any, origin: js.Any): js.Any = js.native
 }
 

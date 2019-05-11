@@ -165,6 +165,7 @@ object antdLibStrings {
   @js.native
   sealed trait ascend
     extends antdLib.libTableInterfaceMod.SortOrder
+       with antdLib.esTableInterfaceMod.SortOrder
   
   @js.native
   sealed trait auto extends js.Object
@@ -228,9 +229,13 @@ object antdLibStrings {
   
   @js.native
   sealed trait bottom
-    extends antdLib.libCarouselMod.DotPosition
+    extends antdLib.esCarouselMod.DotPosition
+       with antdLib.libCarouselMod.DotPosition
        with antdLib.libMentionMod.MentionPlacement
+       with antdLib.esMentionMod.MentionPlacement
+       with antdLib.esTabsMod.TabsPosition
        with antdLib.libTabsMod.TabsPosition
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
@@ -239,11 +244,15 @@ object antdLibStrings {
   @js.native
   sealed trait bottomLeft
     extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait bottomRight
     extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
@@ -287,7 +296,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait card
-    extends antdLib.libTabsMod.TabsType
+    extends antdLib.esTabsMod.TabsType
+       with antdLib.libTabsMod.TabsType
   
   @js.native
   sealed trait caret extends js.Object
@@ -310,6 +320,7 @@ object antdLibStrings {
   @js.native
   sealed trait checkbox
     extends antdLib.libTableInterfaceMod.RowSelectionType
+       with antdLib.esTableInterfaceMod.RowSelectionType
   
   @js.native
   sealed trait `checkbox-container` extends js.Object
@@ -335,12 +346,16 @@ object antdLibStrings {
   @js.native
   sealed trait click
     extends antdLib.libCascaderMod.CascaderExpandTrigger
+       with antdLib.esCascaderMod.CascaderExpandTrigger
+       with antdLib.esTreeDirectoryTreeMod.ExpandAction
        with antdLib.libTreeDirectoryTreeMod.ExpandAction
+       with antdLib.esTooltipMod.TooltipTrigger
        with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait clickTrigger
     extends antdLib.libLayoutSiderMod.CollapseType
+       with antdLib.esLayoutSiderMod.CollapseType
   
   @js.native
   sealed trait clip extends js.Object
@@ -362,7 +377,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait column
-    extends antdLib.libListMod.ColumnType
+    extends antdLib.esListMod.ColumnType
+       with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait `column-reverse` extends js.Object
@@ -378,11 +394,13 @@ object antdLibStrings {
   
   @js.native
   sealed trait contextMenu
-    extends antdLib.libTooltipMod.TooltipTrigger
+    extends antdLib.esTooltipMod.TooltipTrigger
+       with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait countdown
-    extends antdLib.libStatisticUtilsMod._Formatter
+    extends antdLib.esStatisticUtilsMod._Formatter
+       with antdLib.libStatisticUtilsMod._Formatter
   
   @js.native
   sealed trait cover extends js.Object
@@ -395,12 +413,15 @@ object antdLibStrings {
   
   @js.native
   sealed trait danger
-    extends antdLib.libTypographyBaseMod.BaseType
+    extends antdLib.esTypographyBaseMod.BaseType
+       with antdLib.libTypographyBaseMod.BaseType
   
   @js.native
   sealed trait dark
     extends antdLib.libMenuMod.MenuTheme
+       with antdLib.esMenuMod.MenuTheme
        with antdLib.libLayoutSiderMod.SiderTheme
+       with antdLib.esLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait darken extends js.Object
@@ -411,13 +432,18 @@ object antdLibStrings {
   @js.native
   sealed trait dashed
     extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+       with antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait default
-    extends antdLib.libCardMod.CardSize
+    extends antdLib.esCardMod.CardSize
+       with antdLib.libCardMod.CardSize
+       with antdLib.esListMod.ListSize
        with antdLib.libListMod.ListSize
+       with antdLib.esProgressProgressMod.ProgressSize
        with antdLib.libProgressProgressMod.ProgressSize
        with antdLib.libTableInterfaceMod.TableSize
+       with antdLib.esTableInterfaceMod.TableSize
   
   @js.native
   sealed trait `default-button` extends js.Object
@@ -425,10 +451,12 @@ object antdLibStrings {
   @js.native
   sealed trait defaultValue
     extends antdLib.libInputDashNumberMod.OmitAttrs
+       with antdLib.esInputDashNumberMod.OmitAttrs
   
   @js.native
   sealed trait descend
     extends antdLib.libTableInterfaceMod.SortOrder
+       with antdLib.esTableInterfaceMod.SortOrder
   
   @js.native
   sealed trait difference extends js.Object
@@ -439,6 +467,7 @@ object antdLibStrings {
   @js.native
   sealed trait done
     extends antdLib.libUploadInterfaceMod.UploadFileStatus
+       with antdLib.esUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait dotted extends js.Object
@@ -448,11 +477,13 @@ object antdLibStrings {
   
   @js.native
   sealed trait doubleClick
-    extends antdLib.libTreeDirectoryTreeMod.ExpandAction
+    extends antdLib.esTreeDirectoryTreeMod.ExpandAction
+       with antdLib.libTreeDirectoryTreeMod.ExpandAction
   
   @js.native
   sealed trait drag
     extends antdLib.libUploadInterfaceMod.UploadType
+       with antdLib.esUploadInterfaceMod.UploadType
   
   @js.native
   sealed trait dualbutton extends js.Object
@@ -462,7 +493,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait `editable-card`
-    extends antdLib.libTabsMod.TabsType
+    extends antdLib.esTabsMod.TabsType
+       with antdLib.libTabsMod.TabsType
   
   @js.native
   sealed trait element extends js.Object
@@ -479,8 +511,11 @@ object antdLibStrings {
   @js.native
   sealed trait error
     extends antdLib.libNotificationMod.IconType
+       with antdLib.esNotificationMod.IconType
+       with antdLib.esMessageMod.NoticeType
        with antdLib.libMessageMod.NoticeType
        with antdLib.libUploadInterfaceMod.UploadFileStatus
+       with antdLib.esUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait evenodd extends js.Object
@@ -496,7 +531,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait fade
-    extends antdLib.libCarouselMod.CarouselEffect
+    extends antdLib.esCarouselMod.CarouselEffect
+       with antdLib.libCarouselMod.CarouselEffect
   
   @js.native
   sealed trait `false` extends js.Object
@@ -510,6 +546,7 @@ object antdLibStrings {
   @js.native
   sealed trait filled
     extends antdLib.libIconMod.ThemeType
+       with antdLib.esIconMod.ThemeType
   
   @js.native
   sealed trait finish extends js.Object
@@ -525,7 +562,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait focus
-    extends antdLib.libTooltipMod.TooltipTrigger
+    extends antdLib.esTooltipMod.TooltipTrigger
+       with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait footer extends js.Object
@@ -542,6 +580,7 @@ object antdLibStrings {
   @js.native
   sealed trait ghost
     extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+       with antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait grippers extends js.Object
@@ -554,7 +593,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait gutter
-    extends antdLib.libListMod.ColumnType
+    extends antdLib.esListMod.ColumnType
+       with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait hanging extends js.Object
@@ -573,8 +613,10 @@ object antdLibStrings {
   
   @js.native
   sealed trait horizontal
-    extends antdLib.libListMod.ListItemLayout
+    extends antdLib.esListMod.ListItemLayout
+       with antdLib.libListMod.ListItemLayout
        with antdLib.libMenuMod.MenuMode
+       with antdLib.esMenuMod.MenuMode
   
   @js.native
   sealed trait `horizontal-tb` extends js.Object
@@ -582,6 +624,8 @@ object antdLibStrings {
   @js.native
   sealed trait hover
     extends antdLib.libCascaderMod.CascaderExpandTrigger
+       with antdLib.esCascaderMod.CascaderExpandTrigger
+       with antdLib.esTooltipMod.TooltipTrigger
        with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
@@ -611,6 +655,8 @@ object antdLibStrings {
   @js.native
   sealed trait info
     extends antdLib.libNotificationMod.IconType
+       with antdLib.esNotificationMod.IconType
+       with antdLib.esMessageMod.NoticeType
        with antdLib.libMessageMod.NoticeType
   
   @js.native
@@ -622,6 +668,7 @@ object antdLibStrings {
   @js.native
   sealed trait `inline`
     extends antdLib.libMenuMod.MenuMode
+       with antdLib.esMenuMod.MenuMode
   
   @js.native
   sealed trait `inline-axis` extends js.Object
@@ -670,34 +717,47 @@ object antdLibStrings {
   
   @js.native
   sealed trait large
-    extends antdLib.libListMod.ListSize
+    extends antdLib.esListMod.ListSize
+       with antdLib.libListMod.ListSize
   
   @js.native
   sealed trait left
-    extends antdLib.libCarouselMod.DotPosition
+    extends antdLib.esCarouselMod.DotPosition
+       with antdLib.libCarouselMod.DotPosition
        with antdLib.libCollapseCollapseMod.ExpandIconPosition
+       with antdLib.esCollapseCollapseMod.ExpandIconPosition
        with antdLib.libFormFormItemMod.FormLabelAlign
+       with antdLib.esFormFormItemMod.FormLabelAlign
+       with antdLib.esTabsMod.TabsPosition
        with antdLib.libTabsMod.TabsPosition
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
+       with antdLib.esTransferMod.TransferDirection
        with antdLib.libTransferMod.TransferDirection
   
   @js.native
   sealed trait leftBottom
-    extends antdLib.libTooltipMod.TooltipPlacement
+    extends antdLib.esTooltipMod.TooltipPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait leftTop
-    extends antdLib.libTooltipMod.TooltipPlacement
+    extends antdLib.esTooltipMod.TooltipPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait lg
     extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.esGridRowMod.Breakpoint
+       with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait light
     extends antdLib.libMenuMod.MenuTheme
+       with antdLib.esMenuMod.MenuTheme
        with antdLib.libLayoutSiderMod.SiderTheme
+       with antdLib.esLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait lighten extends js.Object
@@ -707,7 +767,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait line
-    extends antdLib.libTabsMod.TabsType
+    extends antdLib.esTabsMod.TabsType
+       with antdLib.libTabsMod.TabsType
   
   @js.native
   sealed trait linearRGB extends js.Object
@@ -726,7 +787,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait loading
-    extends antdLib.libMessageMod.NoticeType
+    extends antdLib.esMessageMod.NoticeType
+       with antdLib.libMessageMod.NoticeType
   
   @js.native
   sealed trait loose extends js.Object
@@ -770,6 +832,8 @@ object antdLibStrings {
   @js.native
   sealed trait md
     extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.esGridRowMod.Breakpoint
+       with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
@@ -880,6 +944,7 @@ object antdLibStrings {
   @js.native
   sealed trait middle
     extends antdLib.libTableInterfaceMod.TableSize
+       with antdLib.esTableInterfaceMod.TableSize
   
   @js.native
   sealed trait miter extends js.Object
@@ -890,6 +955,7 @@ object antdLibStrings {
   @js.native
   sealed trait month
     extends antdLib.libCalendarMod.CalendarMode
+       with antdLib.esCalendarMod.CalendarMode
   
   @js.native
   sealed trait multiple extends js.Object
@@ -929,7 +995,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait number
-    extends antdLib.libStatisticUtilsMod._Formatter
+    extends antdLib.esStatisticUtilsMod._Formatter
+       with antdLib.libStatisticUtilsMod._Formatter
   
   @js.native
   sealed trait ok extends js.Object
@@ -937,22 +1004,27 @@ object antdLibStrings {
   @js.native
   sealed trait onChange
     extends antdLib.libInputDashNumberMod.OmitAttrs
+       with antdLib.esInputDashNumberMod.OmitAttrs
   
   @js.native
   sealed trait onSelect
     extends antdLib.libTableInterfaceMod.TableSelectWay
+       with antdLib.esTableInterfaceMod.TableSelectWay
   
   @js.native
   sealed trait onSelectAll
     extends antdLib.libTableInterfaceMod.TableSelectWay
+       with antdLib.esTableInterfaceMod.TableSelectWay
   
   @js.native
   sealed trait onSelectInvert
     extends antdLib.libTableInterfaceMod.TableSelectWay
+       with antdLib.esTableInterfaceMod.TableSelectWay
   
   @js.native
   sealed trait onSelectMultiple
     extends antdLib.libTableInterfaceMod.TableSelectWay
+       with antdLib.esTableInterfaceMod.TableSelectWay
   
   @js.native
   sealed trait optimizeLegibility extends js.Object
@@ -966,10 +1038,12 @@ object antdLibStrings {
   @js.native
   sealed trait outline
     extends antdLib.libRadioInterfaceMod.RadioGroupButtonStyle
+       with antdLib.esRadioInterfaceMod.RadioGroupButtonStyle
   
   @js.native
   sealed trait outlined
     extends antdLib.libIconMod.ThemeType
+       with antdLib.esIconMod.ThemeType
   
   @js.native
   sealed trait outset extends js.Object
@@ -1001,10 +1075,12 @@ object antdLibStrings {
   @js.native
   sealed trait picture
     extends antdLib.libUploadInterfaceMod.UploadListType
+       with antdLib.esUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait `picture-card`
     extends antdLib.libUploadInterfaceMod.UploadListType
+       with antdLib.esUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait pixelated extends js.Object
@@ -1030,6 +1106,7 @@ object antdLibStrings {
   @js.native
   sealed trait primary
     extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+       with antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait process extends js.Object
@@ -1064,6 +1141,7 @@ object antdLibStrings {
   @js.native
   sealed trait radio
     extends antdLib.libTableInterfaceMod.RowSelectionType
+       with antdLib.esTableInterfaceMod.RowSelectionType
   
   @js.native
   sealed trait `radio-container` extends js.Object
@@ -1104,6 +1182,7 @@ object antdLibStrings {
   @js.native
   sealed trait removed
     extends antdLib.libUploadInterfaceMod.UploadFileStatus
+       with antdLib.esUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait repeat extends js.Object
@@ -1123,6 +1202,7 @@ object antdLibStrings {
   @js.native
   sealed trait responsive
     extends antdLib.libLayoutSiderMod.CollapseType
+       with antdLib.esLayoutSiderMod.CollapseType
   
   @js.native
   sealed trait reverse extends js.Object
@@ -1135,20 +1215,28 @@ object antdLibStrings {
   
   @js.native
   sealed trait right
-    extends antdLib.libCarouselMod.DotPosition
+    extends antdLib.esCarouselMod.DotPosition
+       with antdLib.libCarouselMod.DotPosition
        with antdLib.libCollapseCollapseMod.ExpandIconPosition
+       with antdLib.esCollapseCollapseMod.ExpandIconPosition
        with antdLib.libFormFormItemMod.FormLabelAlign
+       with antdLib.esFormFormItemMod.FormLabelAlign
+       with antdLib.esTabsMod.TabsPosition
        with antdLib.libTabsMod.TabsPosition
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
+       with antdLib.esTransferMod.TransferDirection
        with antdLib.libTransferMod.TransferDirection
   
   @js.native
   sealed trait rightBottom
-    extends antdLib.libTooltipMod.TooltipPlacement
+    extends antdLib.esTooltipMod.TooltipPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait rightTop
-    extends antdLib.libTooltipMod.TooltipPlacement
+    extends antdLib.esTooltipMod.TooltipPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait rl extends js.Object
@@ -1230,7 +1318,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait scrollx
-    extends antdLib.libCarouselMod.CarouselEffect
+    extends antdLib.esCarouselMod.CarouselEffect
+       with antdLib.libCarouselMod.CarouselEffect
   
   @js.native
   sealed trait searchfield extends js.Object
@@ -1249,7 +1338,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait secondary
-    extends antdLib.libTypographyBaseMod.BaseType
+    extends antdLib.esTypographyBaseMod.BaseType
+       with antdLib.libTypographyBaseMod.BaseType
   
   @js.native
   sealed trait section extends js.Object
@@ -1257,6 +1347,7 @@ object antdLibStrings {
   @js.native
   sealed trait select
     extends antdLib.libUploadInterfaceMod.UploadType
+       with antdLib.esUploadInterfaceMod.UploadType
   
   @js.native
   sealed trait `select-after` extends js.Object
@@ -1300,6 +1391,7 @@ object antdLibStrings {
   @js.native
   sealed trait size
     extends antdLib.libInputDashNumberMod.OmitAttrs
+       with antdLib.esInputDashNumberMod.OmitAttrs
   
   @js.native
   sealed trait slice extends js.Object
@@ -1319,14 +1411,20 @@ object antdLibStrings {
   @js.native
   sealed trait sm
     extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.esGridRowMod.Breakpoint
+       with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait small
-    extends antdLib.libCardMod.CardSize
+    extends antdLib.esCardMod.CardSize
+       with antdLib.libCardMod.CardSize
+       with antdLib.esListMod.ListSize
        with antdLib.libListMod.ListSize
+       with antdLib.esProgressProgressMod.ProgressSize
        with antdLib.libProgressProgressMod.ProgressSize
        with antdLib.libTableInterfaceMod.TableSize
+       with antdLib.esTableInterfaceMod.TableSize
   
   @js.native
   sealed trait `small-caps` extends js.Object
@@ -1340,6 +1438,7 @@ object antdLibStrings {
   @js.native
   sealed trait solid
     extends antdLib.libRadioInterfaceMod.RadioGroupButtonStyle
+       with antdLib.esRadioInterfaceMod.RadioGroupButtonStyle
   
   @js.native
   sealed trait sourceSelectedKeys extends js.Object
@@ -1413,8 +1512,11 @@ object antdLibStrings {
   @js.native
   sealed trait success
     extends antdLib.libNotificationMod.IconType
+       with antdLib.esNotificationMod.IconType
+       with antdLib.esMessageMod.NoticeType
        with antdLib.libMessageMod.NoticeType
        with antdLib.libUploadInterfaceMod.UploadFileStatus
+       with antdLib.esUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait `super` extends js.Object
@@ -1446,6 +1548,7 @@ object antdLibStrings {
   @js.native
   sealed trait text
     extends antdLib.libUploadInterfaceMod.UploadListType
+       with antdLib.esUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait `text-after-edge` extends js.Object
@@ -1488,9 +1591,13 @@ object antdLibStrings {
   
   @js.native
   sealed trait top
-    extends antdLib.libCarouselMod.DotPosition
+    extends antdLib.esCarouselMod.DotPosition
+       with antdLib.libCarouselMod.DotPosition
        with antdLib.libMentionMod.MentionPlacement
+       with antdLib.esMentionMod.MentionPlacement
+       with antdLib.esTabsMod.TabsPosition
        with antdLib.libTabsMod.TabsPosition
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
@@ -1499,11 +1606,15 @@ object antdLibStrings {
   @js.native
   sealed trait topLeft
     extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait topRight
     extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
@@ -1539,6 +1650,7 @@ object antdLibStrings {
   @js.native
   sealed trait twoTone
     extends antdLib.libIconMod.ThemeType
+       with antdLib.esIconMod.ThemeType
   
   @js.native
   sealed trait `type` extends js.Object
@@ -1555,6 +1667,7 @@ object antdLibStrings {
   @js.native
   sealed trait uploading
     extends antdLib.libUploadInterfaceMod.UploadFileStatus
+       with antdLib.esUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait uppercase extends js.Object
@@ -1573,12 +1686,15 @@ object antdLibStrings {
   
   @js.native
   sealed trait vertical
-    extends antdLib.libListMod.ListItemLayout
+    extends antdLib.esListMod.ListItemLayout
+       with antdLib.libListMod.ListItemLayout
        with antdLib.libMenuMod.MenuMode
+       with antdLib.esMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-left`
     extends antdLib.libMenuMod.MenuMode
+       with antdLib.esMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-lr` extends js.Object
@@ -1586,6 +1702,7 @@ object antdLibStrings {
   @js.native
   sealed trait `vertical-right`
     extends antdLib.libMenuMod.MenuMode
+       with antdLib.esMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-rl` extends js.Object
@@ -1613,8 +1730,11 @@ object antdLibStrings {
   
   @js.native
   sealed trait warning
-    extends antdLib.libTypographyBaseMod.BaseType
+    extends antdLib.esTypographyBaseMod.BaseType
+       with antdLib.libTypographyBaseMod.BaseType
        with antdLib.libNotificationMod.IconType
+       with antdLib.esNotificationMod.IconType
+       with antdLib.esMessageMod.NoticeType
        with antdLib.libMessageMod.NoticeType
   
   @js.native
@@ -1632,21 +1752,28 @@ object antdLibStrings {
   @js.native
   sealed trait xl
     extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.esGridRowMod.Breakpoint
+       with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait xs
     extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.esGridRowMod.Breakpoint
+       with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait xxl
     extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.esGridRowMod.Breakpoint
+       with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait year
     extends antdLib.libCalendarMod.CalendarMode
+       with antdLib.esCalendarMod.CalendarMode
   
   @js.native
   sealed trait zoom extends js.Object

@@ -12,7 +12,7 @@ trait List[T]
   var keys: js.Any = js.native
   var onPaginationChange: js.Any = js.native
   var onPaginationShowSizeChange: js.Any = js.native
-  def getChildContext(): antdLib.Anon_GridHorizontal = js.native
+  def getChildContext(): antdLib.Anon_GridHorizontalItemLayout = js.native
   def isSomethingAfterLastItem(): scala.Boolean = js.native
   def renderEmpty(
     prefixCls: java.lang.String,

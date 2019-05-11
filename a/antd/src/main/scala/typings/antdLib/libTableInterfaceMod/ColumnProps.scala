@@ -43,7 +43,7 @@ trait ColumnProps[T] extends js.Object {
   var sortOrder: js.UndefOr[SortOrder | scala.Boolean] = js.undefined
   var sorter: js.UndefOr[scala.Boolean | CompareFn[T]] = js.undefined
   var title: js.UndefOr[
-    reactLib.reactMod.ReactNode | (js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* options */ antdLib.Anon_FiltersSortOrder, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
@@ -74,7 +74,7 @@ object ColumnProps {
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | scala.Boolean = null,
     sorter: scala.Boolean | CompareFn[T] = null,
-    title: reactLib.reactMod.ReactNode | (js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNode]) = null,
+    title: reactLib.reactMod.ReactNode | (js.Function1[/* options */ antdLib.Anon_FiltersSortOrder, reactLib.reactMod.ReactNode]) = null,
     width: java.lang.String | scala.Double = null
   ): ColumnProps[T] = {
     val __obj = js.Dynamic.literal()

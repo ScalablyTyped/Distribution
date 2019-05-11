@@ -12,63 +12,72 @@ object reactDashBootstrapDashTableLibComponents {
   ] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTable].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps]]
   @scala.inline
+  def BootstrapTableProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps
+  type BootstrapTableProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps
+  @scala.inline
   def ClearSearchButton: reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ClearSearchButton].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps]]
+  @scala.inline
+  def ClearSearchButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
+  type ClearSearchButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
   @scala.inline
   def CustomFilterElement: reactLib.reactMod.ComponentType[js.Any] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.CustomFilterElement].asInstanceOf[reactLib.reactMod.ComponentType[js.Any]]
   @scala.inline
   def DeleteButton: reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DeleteButton].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps]]
   @scala.inline
+  def DeleteButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
+  type DeleteButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
+  @scala.inline
   def ExportCSVButton: reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ExportCSVButton].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps]]
   @scala.inline
+  def ExportCSVButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
+  type ExportCSVButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
+  @scala.inline
   def InsertButton: reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertButton].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps]]
+  @scala.inline
+  def InsertButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
+  type InsertButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
   @scala.inline
   def InsertModalFooter: reactLib.reactMod.ComponentType[
     reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps
   ] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooter].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps]]
   @scala.inline
+  def InsertModalFooterProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps
+  type InsertModalFooterProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps
+  @scala.inline
   def InsertModalHeader: reactLib.reactMod.ComponentType[
     reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps
   ] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeader].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps]]
   @scala.inline
+  def InsertModalHeaderProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps
+  type InsertModalHeaderProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps
+  @scala.inline
   def SearchField: reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchField].asInstanceOf[reactLib.reactMod.ComponentType[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps]]
+  @scala.inline
+  def SearchFieldProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps
+  type SearchFieldProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps
   @scala.inline
   def ShowSelectedOnlyButton: reactLib.reactMod.ComponentType[
     reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps
   ] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedOnlyButton].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps]]
   @scala.inline
+  def ShowSelectedOnlyButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps
+  type ShowSelectedOnlyButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps
+  @scala.inline
   def SizePerPageDropDown: reactLib.reactMod.ComponentType[
     reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps
   ] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDown].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps]]
   @scala.inline
+  def SizePerPageDropDownProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps
+  type SizePerPageDropDownProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps
+  @scala.inline
   def TableHeaderColumn: reactLib.reactMod.ComponentType[
     reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.TableHeaderColumnProps
   ] = js.constructorOf[reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.TableHeaderColumn].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.TableHeaderColumnProps]]
-  @scala.inline
-  def BootstrapTableProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps
-  type BootstrapTableProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapTableProps
-  @scala.inline
-  def ButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
-  type ButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ButtonProps
-  @scala.inline
-  def InsertModalFooterProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps
-  type InsertModalFooterProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalFooterProps
-  @scala.inline
-  def InsertModalHeaderProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps
-  type InsertModalHeaderProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.InsertModalHeaderProps
-  @scala.inline
-  def SearchFieldProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps
-  type SearchFieldProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SearchFieldProps
-  @scala.inline
-  def ShowSelectedButtonProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps
-  type ShowSelectedButtonProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ShowSelectedButtonProps
-  @scala.inline
-  def SizePerPageDropDownProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps
-  type SizePerPageDropDownProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDownProps
   @scala.inline
   def TableHeaderColumnProps: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.TableHeaderColumnProps.type = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.TableHeaderColumnProps
   type TableHeaderColumnProps = reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.TableHeaderColumnProps

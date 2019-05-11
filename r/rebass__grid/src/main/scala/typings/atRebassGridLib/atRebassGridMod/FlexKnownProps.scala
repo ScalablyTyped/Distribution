@@ -26,7 +26,6 @@ object FlexKnownProps {
     ] = null,
     children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
-    css: styledDashComponentsLib.styledDashComponentsMod.Interpolation[_] = null,
     flex: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.FlexProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -123,7 +122,6 @@ object FlexKnownProps {
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
     if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])

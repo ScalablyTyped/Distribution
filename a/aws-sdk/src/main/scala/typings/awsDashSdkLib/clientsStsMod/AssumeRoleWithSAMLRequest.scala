@@ -11,9 +11,13 @@ trait AssumeRoleWithSAMLRequest extends js.Object {
     */
   var DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined
   /**
-    * An IAM policy in JSON format. The policy parameter is optional. If you pass a policy to this operation, the resulting temporary credentials have the permissions of the assumed role and the policy that you pass. This gives you a way to further restrict the permissions for the resulting temporary security credentials. You cannot use the passed policy to grant permissions that are in excess of those allowed by the permissions policy of the role that is being assumed. For more information, see  Permissions for AssumeRole, AssumeRoleWithSAML, and AssumeRoleWithWebIdentity  in the IAM User Guide.  The format for this parameter, as described by its regex pattern, is a string of characters up to 2048 characters in length. The characters can be any ASCII character from the space character to the end of the valid character list (\\u0020-\\u00FF). It can also include the tab (\\u0009), linefeed (\\u000A), and carriage return (\\u000D) characters.  The policy plaintext must be 2048 bytes or shorter. However, an internal conversion compresses it into a packed binary format with a separate limit. The PackedPolicySize response element indicates by percentage how close to the upper size limit the policy is, where 100 percent is the maximum allowed size. 
+    * An IAM policy in JSON format that you want to use as an inline session policy. This parameter is optional. Passing policies to this operation returns new temporary credentials. The resulting session's permissions are the intersection of the role's identity-based policy and the session policies. You can use the role's temporary credentials in subsequent AWS API calls to access resources in the account that owns the role. You cannot use session policies to grant more permissions than those allowed by the identity-based policy of the role that is being assumed. For more information, see Session Policies in the IAM User Guide.  The plain text that you use for both inline and managed session policies shouldn't exceed 2048 characters. The JSON policy characters can be any ASCII character from the space character to the end of the valid character list (\\u0020 through \\u00FF). It can also include the tab (\\u0009), linefeed (\\u000A), and carriage return (\\u000D) characters.  The characters in this parameter count towards the 2048 character session policy guideline. However, an AWS conversion compresses the session policies into a packed binary format that has a separate limit. This is the enforced limit. The PackedPolicySize response element indicates by percentage how close the policy is to the upper size limit. 
     */
   var Policy: js.UndefOr[sessionPolicyDocumentType] = js.undefined
+  /**
+    * The Amazon Resource Names (ARNs) of the IAM managed policies that you want to use as managed session policies. The policies must exist in the same account as the role. This parameter is optional. You can provide up to 10 managed policy ARNs. However, the plain text that you use for both inline and managed session policies shouldn't exceed 2048 characters. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.  The characters in this parameter count towards the 2048 character session policy guideline. However, an AWS conversion compresses the session policies into a packed binary format that has a separate limit. This is the enforced limit. The PackedPolicySize response element indicates by percentage how close the policy is to the upper size limit.  Passing policies to this operation returns new temporary credentials. The resulting session's permissions are the intersection of the role's identity-based policy and the session policies. You can use the role's temporary credentials in subsequent AWS API calls to access resources in the account that owns the role. You cannot use session policies to grant more permissions than those allowed by the identity-based policy of the role that is being assumed. For more information, see Session Policies in the IAM User Guide.
+    */
+  var PolicyArns: js.UndefOr[policyDescriptorListType] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the SAML provider in IAM that describes the IdP.
     */
@@ -35,11 +39,13 @@ object AssumeRoleWithSAMLRequest {
     RoleArn: arnType,
     SAMLAssertion: SAMLAssertionType,
     DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined,
-    Policy: sessionPolicyDocumentType = null
+    Policy: sessionPolicyDocumentType = null,
+    PolicyArns: policyDescriptorListType = null
   ): AssumeRoleWithSAMLRequest = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn, RoleArn = RoleArn, SAMLAssertion = SAMLAssertion)
     if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds)
     if (Policy != null) __obj.updateDynamic("Policy")(Policy)
+    if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns)
     __obj.asInstanceOf[AssumeRoleWithSAMLRequest]
   }
 }

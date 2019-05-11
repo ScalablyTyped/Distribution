@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Location extends js.Object {
   /**
-    * A DynamoDB Table location.
+    * An Amazon DynamoDB table location.
     */
   var DynamoDB: js.UndefOr[CodeGenNodeArgs] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait Location extends js.Object {
     */
   var Jdbc: js.UndefOr[CodeGenNodeArgs] = js.undefined
   /**
-    * An Amazon S3 location.
+    * An Amazon Simple Storage Service (Amazon S3) location.
     */
   var S3: js.UndefOr[CodeGenNodeArgs] = js.undefined
 }

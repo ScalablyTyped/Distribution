@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Paragraph extends js.Object {
-  var Paragraph: reactLib.reactMod.SFC[antdLib.libTypographyParagraphMod.ParagraphProps]
-  var Text: reactLib.reactMod.SFC[antdLib.libTypographyTextMod.TextProps]
-  var Title: reactLib.reactMod.SFC[antdLib.libTypographyTitleMod.TitleProps]
+  var Paragraph: reactLib.reactMod.SFC[antdLib.esTypographyParagraphMod.ParagraphProps]
+  var Text: reactLib.reactMod.SFC[antdLib.esTypographyTextMod.TextProps]
+  var Title: reactLib.reactMod.SFC[antdLib.esTypographyTitleMod.TitleProps]
 }
 
 object Anon_Paragraph {
   @scala.inline
   def apply(
-    Paragraph: reactLib.reactMod.SFC[antdLib.libTypographyParagraphMod.ParagraphProps],
-    Text: reactLib.reactMod.SFC[antdLib.libTypographyTextMod.TextProps],
-    Title: reactLib.reactMod.SFC[antdLib.libTypographyTitleMod.TitleProps]
+    Paragraph: reactLib.reactMod.SFC[antdLib.esTypographyParagraphMod.ParagraphProps],
+    Text: reactLib.reactMod.SFC[antdLib.esTypographyTextMod.TextProps],
+    Title: reactLib.reactMod.SFC[antdLib.esTypographyTitleMod.TitleProps]
   ): Anon_Paragraph = {
     val __obj = js.Dynamic.literal(Paragraph = Paragraph, Text = Text, Title = Title)
   

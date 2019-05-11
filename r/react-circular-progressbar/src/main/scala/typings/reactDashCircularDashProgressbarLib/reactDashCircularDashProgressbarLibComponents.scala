@@ -9,7 +9,7 @@ object reactDashCircularDashProgressbarLibComponents {
   @scala.inline
   def ReactDashCircularDashProgressbar: reactLib.reactMod.ComponentType[reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props] = js.constructorOf[reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props]]
   @scala.inline
-  def Props: reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props.type = reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props
-  type Props = reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props
+  def ReactDashCircularDashProgressbarProps: reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props.type = reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props
+  type ReactDashCircularDashProgressbarProps = reactDashCircularDashProgressbarLib.reactDashCircularDashProgressbarMod.Props
 }
 

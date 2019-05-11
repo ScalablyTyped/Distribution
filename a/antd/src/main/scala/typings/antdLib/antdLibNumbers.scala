@@ -11,39 +11,49 @@ object antdLibNumbers {
   
   @js.native
   sealed trait `1`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `12`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `2`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `24`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `3`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `4`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `6`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `8`
-    extends antdLib.libListMod.ColumnCount
+    extends antdLib.esListMod.ColumnCount
+       with antdLib.libListMod.ColumnCount
   
   @js.native
   sealed trait `false`
-    extends antdLib.libTreeDirectoryTreeMod.ExpandAction
+    extends antdLib.esTreeDirectoryTreeMod.ExpandAction
+       with antdLib.libTreeDirectoryTreeMod.ExpandAction
+       with antdLib.esStatisticUtilsMod._Formatter
        with antdLib.libStatisticUtilsMod._Formatter
   
   @js.native

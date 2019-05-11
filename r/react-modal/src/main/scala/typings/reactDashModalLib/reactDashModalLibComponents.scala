@@ -9,7 +9,7 @@ object reactDashModalLibComponents {
   @scala.inline
   def ReactDashModal: reactLib.reactMod.ComponentType[reactDashModalLib.reactDashModalMod.Props] = js.constructorOf[reactDashModalLib.reactDashModalMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashModalLib.reactDashModalMod.Props]]
   @scala.inline
-  def Props: reactDashModalLib.reactDashModalMod.Props.type = reactDashModalLib.reactDashModalMod.Props
-  type Props = reactDashModalLib.reactDashModalMod.Props
+  def ReactDashModalProps: reactDashModalLib.reactDashModalMod.Props.type = reactDashModalLib.reactDashModalMod.Props
+  type ReactDashModalProps = reactDashModalLib.reactDashModalMod.Props
 }
 

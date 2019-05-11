@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class default[C /* <: Context */, R] protected () extends UniversalRouter[C, R] {
   def this(routes: Route[C, R]) = this()
   def this(routes: Routes[C, R]) = this()
-  def this(routes: Route[C, R], options: Options[C, _]) = this()
-  def this(routes: Routes[C, R], options: Options[C, _]) = this()
+  def this(routes: Route[C, R], options: Options[C, R]) = this()
+  def this(routes: Routes[C, R], options: Options[C, R]) = this()
 }
 
 /* static members */

@@ -22,6 +22,6 @@ class LongestCommonSubsequence[T] protected () extends js.Object {
 @JSImport("webcola/dist/src/gridrouter", "LongestCommonSubsequence")
 @js.native
 object LongestCommonSubsequence extends js.Object {
-  /* private */ def findMatch[T](s: js.Any, t: js.Any): js.Any = js.native
+  var findMatch: js.Any = js.native
 }
 

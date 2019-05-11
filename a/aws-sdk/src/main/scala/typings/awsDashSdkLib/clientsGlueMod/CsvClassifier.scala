@@ -15,7 +15,7 @@ trait CsvClassifier extends js.Object {
     */
   var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
   /**
-    * The time this classifier was registered.
+    * The time that this classifier was registered.
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait CsvClassifier extends js.Object {
     */
   var Header: js.UndefOr[CsvHeader] = js.undefined
   /**
-    * The time this classifier was last updated.
+    * The time that this classifier was last updated.
     */
   var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait CsvClassifier extends js.Object {
     */
   var Name: NameString
   /**
-    * A custom symbol to denote what combines content into a single column value. Must be different from the column delimiter.
+    * A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
     */
   var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
   /**

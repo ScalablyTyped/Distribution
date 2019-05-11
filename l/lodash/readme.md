@@ -35,6 +35,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
+// AUTO-GENERATED: do not modify this file directly.
+// If you need to make changes, modify generate-fp.ts (if necessary), then open a terminal in types/lodash/scripts, and do:
+// npm install && npm run generate
 // Type definitions for Lo-Dash 4.14
 // Project: https://lodash.com
 // Definitions by: Brian Zengel <https://github.com/bczengel>,

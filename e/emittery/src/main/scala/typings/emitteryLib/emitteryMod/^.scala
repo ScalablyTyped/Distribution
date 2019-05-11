@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("emittery", JSImport.Namespace)
+@JSImport("emittery/Emittery", JSImport.Namespace)
 @js.native
 class ^ () extends Emittery
 

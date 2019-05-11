@@ -9,7 +9,7 @@ object reactDashNativeDashNavbarLibComponents {
   @scala.inline
   def ReactDashNativeDashNavbar: reactLib.reactMod.ComponentType[reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps] = js.constructorOf[reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps]]
   @scala.inline
-  def NavigationBarProps: reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps.type = reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps
-  type NavigationBarProps = reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps
+  def ReactDashNativeDashNavbarProps: reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps.type = reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps
+  type ReactDashNativeDashNavbarProps = reactDashNativeDashNavbarLib.reactDashNativeDashNavbarMod.NavigationBarProps
 }
 

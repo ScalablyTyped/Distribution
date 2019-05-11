@@ -11,6 +11,6 @@ object reactDashGoogleDashMapsDashLoaderLibComponents {
     reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
   ] = js.constructorOf[reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props]]
-  type Props = reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
+  type ReactDashGoogleDashMapsDashLoaderProps = reactDashGoogleDashMapsDashLoaderLib.reactDashGoogleDashMapsDashLoaderMod.ReactGoogleMapsLoaderNs.Props
 }
 

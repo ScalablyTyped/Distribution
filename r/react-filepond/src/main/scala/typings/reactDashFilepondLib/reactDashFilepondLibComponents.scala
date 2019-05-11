@@ -9,12 +9,12 @@ object reactDashFilepondLibComponents {
   @scala.inline
   def File: reactLib.reactMod.ComponentType[reactDashFilepondLib.reactDashFilepondMod.FileProps] = js.constructorOf[reactDashFilepondLib.reactDashFilepondMod.File].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFilepondLib.reactDashFilepondMod.FileProps]]
   @scala.inline
+  def FileProps: reactDashFilepondLib.reactDashFilepondMod.FileProps.type = reactDashFilepondLib.reactDashFilepondMod.FileProps
+  type FileProps = reactDashFilepondLib.reactDashFilepondMod.FileProps
+  @scala.inline
   def FilePond: reactLib.reactMod.ComponentType[reactDashFilepondLib.reactDashFilepondMod.FilePondProps] = js.constructorOf[reactDashFilepondLib.reactDashFilepondMod.FilePond].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFilepondLib.reactDashFilepondMod.FilePondProps]]
   @scala.inline
   def FilePondProps: reactDashFilepondLib.reactDashFilepondMod.FilePondProps.type = reactDashFilepondLib.reactDashFilepondMod.FilePondProps
   type FilePondProps = reactDashFilepondLib.reactDashFilepondMod.FilePondProps
-  @scala.inline
-  def FileProps: reactDashFilepondLib.reactDashFilepondMod.FileProps.type = reactDashFilepondLib.reactDashFilepondMod.FileProps
-  type FileProps = reactDashFilepondLib.reactDashFilepondMod.FileProps
 }
 

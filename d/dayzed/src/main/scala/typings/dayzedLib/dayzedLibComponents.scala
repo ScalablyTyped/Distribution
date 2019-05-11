@@ -9,7 +9,7 @@ object dayzedLibComponents {
   @scala.inline
   def Dayzed: reactLib.reactMod.ComponentType[dayzedLib.dayzedMod.Props] = js.constructorOf[dayzedLib.dayzedMod.default].asInstanceOf[reactLib.reactMod.ComponentType[dayzedLib.dayzedMod.Props]]
   @scala.inline
-  def Props: dayzedLib.dayzedMod.Props.type = dayzedLib.dayzedMod.Props
-  type Props = dayzedLib.dayzedMod.Props
+  def DayzedProps: dayzedLib.dayzedMod.Props.type = dayzedLib.dayzedMod.Props
+  type DayzedProps = dayzedLib.dayzedMod.Props
 }
 

@@ -27,12 +27,12 @@ object default extends js.Object {
   var warn_Original: antdLib.libModalModalMod.ModalFunc = js.native
   @JSName("warning")
   var warning_Original: antdLib.libModalModalMod.ModalFunc = js.native
-  def confirm(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Destroy = js.native
+  def confirm(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_DestroyNewConfig = js.native
   def destroyAll(): scala.Unit = js.native
-  def error(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Destroy = js.native
-  def info(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Destroy = js.native
-  def success(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Destroy = js.native
-  def warn(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Destroy = js.native
-  def warning(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_Destroy = js.native
+  def error(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_DestroyNewConfig = js.native
+  def info(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_DestroyNewConfig = js.native
+  def success(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_DestroyNewConfig = js.native
+  def warn(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_DestroyNewConfig = js.native
+  def warning(props: antdLib.libModalModalMod.ModalFuncProps): antdLib.Anon_DestroyNewConfig = js.native
 }
 

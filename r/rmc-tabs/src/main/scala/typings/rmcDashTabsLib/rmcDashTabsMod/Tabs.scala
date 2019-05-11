@@ -16,7 +16,7 @@ class Tabs protected ()
 @JSImport("rmc-tabs", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: rmcDashTabsLib.Anon_DefaultProps = js.native
+  var DefaultTabBar: rmcDashTabsLib.Anon_DefaultPropsProps = js.native
   var defaultProps: rmcDashTabsLib.libTabsMod.PropsType = js.native
 }
 

@@ -11,7 +11,7 @@ package object libInputTypeComposerMod {
   type ComposeInputType = InputTypeComposer[js.Any] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[js.Any] | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[js.Any] | graphqlLib.typeDefinitionMod.GraphQLInputType | graphqlDashComposeLib.libTypeMapperMod.TypeAsString | (js.Array[
     InputTypeComposer[js.Any] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[js.Any] | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[js.Any] | graphqlLib.typeDefinitionMod.GraphQLInputType | graphqlDashComposeLib.libTypeMapperMod.TypeAsString
   ])
-  type GraphQLInputObjectTypeExtended = graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType with graphqlDashComposeLib.Anon_GqcExtensionsGqcFields
+  type GraphQLInputObjectTypeExtended = graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType with graphqlDashComposeLib.Anon_GqcExtensionsGqcFieldsComposeInputFieldConfigMap
   /* Rewritten from type alias, can be one of: 
     - graphqlDashComposeLib.libTypeMapperMod.TypeAsString
     - ComposeInputObjectTypeConfig

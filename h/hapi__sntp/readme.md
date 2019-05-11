@@ -3,6 +3,24 @@
 
 Typings are for version 3.1
 
+## Library description:
+SNTP Client
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @hapi/sntp |
+| Keywords           | sntp, ntp, time |
+| # releases         | 4 |
+| # dependents       | 1 |
+| # downloads        | 1217 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/hapijs/sntp#readme)
+- [Bugs](https://github.com/hapijs/sntp/issues)
+- [Repository](https://github.com/hapijs/sntp)
+- [Npm](https://www.npmjs.com/package/%40hapi%2Fsntp)
+    
 
 
 ## Note

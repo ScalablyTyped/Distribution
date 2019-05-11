@@ -9,7 +9,7 @@ object nextDashSeoLibComponents {
   @scala.inline
   def NextDashSeo: reactLib.reactMod.ComponentType[nextDashSeoLib.nextDashSeoMod.NextSeoProps] = js.constructorOf[nextDashSeoLib.nextDashSeoMod.default].asInstanceOf[reactLib.reactMod.ComponentType[nextDashSeoLib.nextDashSeoMod.NextSeoProps]]
   @scala.inline
-  def NextSeoProps: nextDashSeoLib.nextDashSeoMod.NextSeoProps.type = nextDashSeoLib.nextDashSeoMod.NextSeoProps
-  type NextSeoProps = nextDashSeoLib.nextDashSeoMod.NextSeoProps
+  def NextDashSeoProps: nextDashSeoLib.nextDashSeoMod.NextSeoProps.type = nextDashSeoLib.nextDashSeoMod.NextSeoProps
+  type NextDashSeoProps = nextDashSeoLib.nextDashSeoMod.NextSeoProps
 }
 

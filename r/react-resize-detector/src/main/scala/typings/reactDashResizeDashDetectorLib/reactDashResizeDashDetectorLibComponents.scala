@@ -12,7 +12,7 @@ object reactDashResizeDashDetectorLibComponents {
   ] = js.constructorOf[reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps]]
   @scala.inline
-  def ReactResizeDetectorProps: reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps.type = reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps
-  type ReactResizeDetectorProps = reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps
+  def ReactDashResizeDashDetectorProps: reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps.type = reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps
+  type ReactDashResizeDashDetectorProps = reactDashResizeDashDetectorLib.reactDashResizeDashDetectorMod.ReactResizeDetectorProps
 }
 

@@ -14,7 +14,7 @@ class Module protected () extends js.Object {
   def this(id: scala.Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet) = this()
   def this(id: scala.Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet, definition: js.Any) = this()
   var children: ModuleSet = js.native
-  var definition: js.Any = js.native
+  var definition: js.UndefOr[js.Any] = js.native
   var gid: scala.Double = js.native
   var id: scala.Double = js.native
   var incoming: LinkSets = js.native

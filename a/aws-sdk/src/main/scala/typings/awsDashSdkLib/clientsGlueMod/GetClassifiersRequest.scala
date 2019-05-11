@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetClassifiersRequest extends js.Object {
   /**
-    * Size of the list to return (optional).
+    * The size of the list to return (optional).
     */
   var MaxResults: js.UndefOr[PageSize] = js.undefined
   /**

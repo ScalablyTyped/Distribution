@@ -9,7 +9,7 @@ object reactDashTextDashTruncateLibComponents {
   @scala.inline
   def ReactDashTextDashTruncate: reactLib.reactMod.ComponentType[reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps] = js.constructorOf[reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps]]
   @scala.inline
-  def TextTruncateProps: reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps.type = reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps
-  type TextTruncateProps = reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps
+  def ReactDashTextDashTruncateProps: reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps.type = reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps
+  type ReactDashTextDashTruncateProps = reactDashTextDashTruncateLib.reactDashTextDashTruncateMod.TextTruncateProps
 }
 

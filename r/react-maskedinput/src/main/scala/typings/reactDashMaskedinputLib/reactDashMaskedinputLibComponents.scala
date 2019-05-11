@@ -9,7 +9,7 @@ object reactDashMaskedinputLibComponents {
   @scala.inline
   def ReactDashMaskedinput: reactLib.reactMod.ComponentType[reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps] = js.constructorOf[reactDashMaskedinputLib.reactDashMaskedinputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps]]
   @scala.inline
-  def MaskedInputProps: reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps.type = reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps
-  type MaskedInputProps = reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps
+  def ReactDashMaskedinputProps: reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps.type = reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps
+  type ReactDashMaskedinputProps = reactDashMaskedinputLib.reactDashMaskedinputMod.MaskedInputProps
 }
 

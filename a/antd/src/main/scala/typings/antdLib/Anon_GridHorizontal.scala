@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_GridHorizontal extends js.Object {
-  var grid: js.UndefOr[antdLib.libListMod.ListGridType]
+  var grid: js.UndefOr[antdLib.esListMod.ListGridType]
   var itemLayout: js.UndefOr[antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical]
 }
 
 object Anon_GridHorizontal {
   @scala.inline
   def apply(
-    grid: antdLib.libListMod.ListGridType = null,
+    grid: antdLib.esListMod.ListGridType = null,
     itemLayout: antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical = null
   ): Anon_GridHorizontal = {
     val __obj = js.Dynamic.literal()

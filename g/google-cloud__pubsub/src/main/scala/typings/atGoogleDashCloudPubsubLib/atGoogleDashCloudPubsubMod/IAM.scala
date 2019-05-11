@@ -5,26 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// Allow this interface to start with 'I', since it's an acronym!
-// tslint:disable-next-line interface-name
+@JSImport("@google-cloud/pubsub", "IAM")
 @js.native
-trait IAM extends js.Object {
-  def getPolicy(): js.Promise[js.Array[_]] = js.native
-  def getPolicy(callback: atGoogleDashCloudPubsubLib.atGoogleDashCloudPubsubMod.IAMNs.GetPolicyCallback): scala.Unit = js.native
-  def setPolicy(policy: atGoogleDashCloudPubsubLib.atGoogleDashCloudPubsubMod.IAMNs.Policy): js.Promise[js.Array[_]] = js.native
-  def setPolicy(
-    policy: atGoogleDashCloudPubsubLib.atGoogleDashCloudPubsubMod.IAMNs.Policy,
-    callback: atGoogleDashCloudPubsubLib.atGoogleDashCloudPubsubMod.IAMNs.SetPolicyCallback
-  ): scala.Unit = js.native
-  def testPermissions(permissions: java.lang.String): js.Promise[js.Array[_]] = js.native
-  def testPermissions(
-    permissions: java.lang.String,
-    callback: atGoogleDashCloudPubsubLib.atGoogleDashCloudPubsubMod.IAMNs.TestPermissionsCallback
-  ): scala.Unit = js.native
-  def testPermissions(permissions: js.Array[java.lang.String]): js.Promise[js.Array[_]] = js.native
-  def testPermissions(
-    permissions: js.Array[java.lang.String],
-    callback: atGoogleDashCloudPubsubLib.atGoogleDashCloudPubsubMod.IAMNs.TestPermissionsCallback
-  ): scala.Unit = js.native
+class IAM protected ()
+  extends atGoogleDashCloudPubsubLib.buildSrcIamMod.IAM {
+  def this(pubsub: atGoogleDashCloudPubsubLib.buildSrcPubsubMod.PubSub, id: java.lang.String) = this()
 }
 

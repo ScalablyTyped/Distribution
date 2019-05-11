@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ActiveTab[S /* <: rmcDashTabsLib.libTabsDotBaseMod.StateType */, P /* <: rmcDashTabsLib.libPropsTypeMod.PropsType */] extends js.Object {
+trait Anon_ActiveTab[S /* <: rmcDashTabsLib.esTabsDotBaseMod.StateType */, P /* <: rmcDashTabsLib.esPropsTypeMod.PropsType */] extends js.Object {
   var activeTab: /* import warning: ImportType.apply Failed type conversion: S['currentTab'] */ js.Any
   var animated: scala.Boolean
   var goToTab: js.Any
@@ -22,7 +22,7 @@ trait Anon_ActiveTab[S /* <: rmcDashTabsLib.libTabsDotBaseMod.StateType */, P /*
 
 object Anon_ActiveTab {
   @scala.inline
-  def apply[S /* <: rmcDashTabsLib.libTabsDotBaseMod.StateType */, P /* <: rmcDashTabsLib.libPropsTypeMod.PropsType */](
+  def apply[S /* <: rmcDashTabsLib.esTabsDotBaseMod.StateType */, P /* <: rmcDashTabsLib.esPropsTypeMod.PropsType */](
     activeTab: /* import warning: ImportType.apply Failed type conversion: S['currentTab'] */ js.Any,
     animated: scala.Boolean,
     goToTab: js.Any,

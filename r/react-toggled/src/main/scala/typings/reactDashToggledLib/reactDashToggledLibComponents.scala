@@ -9,7 +9,7 @@ object reactDashToggledLibComponents {
   @scala.inline
   def ReactDashToggled: reactLib.reactMod.ComponentType[reactDashToggledLib.reactDashToggledMod.ReactToggledProps] = js.constructorOf[reactDashToggledLib.reactDashToggledMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashToggledLib.reactDashToggledMod.ReactToggledProps]]
   @scala.inline
-  def ReactToggledProps: reactDashToggledLib.reactDashToggledMod.ReactToggledProps.type = reactDashToggledLib.reactDashToggledMod.ReactToggledProps
-  type ReactToggledProps = reactDashToggledLib.reactDashToggledMod.ReactToggledProps
+  def ReactDashToggledProps: reactDashToggledLib.reactDashToggledMod.ReactToggledProps.type = reactDashToggledLib.reactDashToggledMod.ReactToggledProps
+  type ReactDashToggledProps = reactDashToggledLib.reactDashToggledMod.ReactToggledProps
 }
 

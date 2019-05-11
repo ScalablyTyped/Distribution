@@ -9,7 +9,7 @@ object reactDashEventDashListenerLibComponents {
   @scala.inline
   def ReactDashEventDashListener: reactLib.reactMod.ComponentType[reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps] = js.constructorOf[reactDashEventDashListenerLib.reactDashEventDashListenerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps]]
   @scala.inline
-  def EventListenerProps: reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps.type = reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps
-  type EventListenerProps = reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps
+  def ReactDashEventDashListenerProps: reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps.type = reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps
+  type ReactDashEventDashListenerProps = reactDashEventDashListenerLib.reactDashEventDashListenerMod.EventListenerProps
 }
 

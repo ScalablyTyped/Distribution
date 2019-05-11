@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Calendar extends js.Object {
   var Calendar: js.UndefOr[js.Object] = js.undefined
   var DatePicker: js.UndefOr[js.Object] = js.undefined
-  var Modal: js.UndefOr[antdLib.libModalLocaleMod.ModalLocale] = js.undefined
+  var Modal: js.UndefOr[antdLib.esModalLocaleMod.ModalLocale] = js.undefined
   var Pagination: js.UndefOr[js.Object] = js.undefined
   var Popconfirm: js.UndefOr[js.Object] = js.undefined
   var Select: js.UndefOr[js.Object] = js.undefined
@@ -27,7 +27,7 @@ object Anon_Calendar {
     locale: java.lang.String,
     Calendar: js.Object = null,
     DatePicker: js.Object = null,
-    Modal: antdLib.libModalLocaleMod.ModalLocale = null,
+    Modal: antdLib.esModalLocaleMod.ModalLocale = null,
     Pagination: js.Object = null,
     Popconfirm: js.Object = null,
     Select: js.Object = null,

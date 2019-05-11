@@ -21,17 +21,17 @@ object actions extends js.Object {
     xstateLib.libTypesMod.DoneEventObject
   ] = js.native
   @JSName("log")
-  var log_Original: xstateLib.Anon_CtxEvent = js.native
+  var log_Original: xstateLib.Anon_CtxEventExprLabel = js.native
   @JSName("raise")
-  var raise_Original: xstateLib.Anon_Event = js.native
+  var raise_Original: xstateLib.Anon_EventEventObject = js.native
   @JSName("sendParent")
-  var sendParent_Original: xstateLib.Anon_EventOptions = js.native
+  var sendParent_Original: xstateLib.Anon_EventOptionsEventObject = js.native
   @JSName("send")
-  var send_Original: xstateLib.Anon_EventOptions = js.native
+  var send_Original: xstateLib.Anon_EventOptionsEventObject = js.native
   @JSName("start")
-  var start_Original: xstateLib.Anon_Activity = js.native
+  var start_Original: xstateLib.Anon_ActivityActivityActionObject = js.native
   @JSName("stop")
-  var stop_Original: xstateLib.Anon_Activity = js.native
+  var stop_Original: xstateLib.Anon_ActivityActivityActionObject = js.native
   def after(delayRef: java.lang.String): java.lang.String = js.native
   def after(delayRef: java.lang.String, id: java.lang.String): java.lang.String = js.native
   def after(delayRef: scala.Double): java.lang.String = js.native
@@ -50,9 +50,9 @@ object actions extends js.Object {
   def cancel(sendId: scala.Double): js.Any = js.native
   def done(id: java.lang.String): xstateLib.libTypesMod.DoneEventObject = js.native
   def done(id: java.lang.String, data: js.Any): xstateLib.libTypesMod.DoneEventObject = js.native
-  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
-  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
-  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: java.lang.String): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](): xstateLib.Anon_CtxEventExpr[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): xstateLib.Anon_CtxEventExpr[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: java.lang.String): xstateLib.Anon_CtxEventExpr[TContext, TEvent] = js.native
   def raise[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): xstateLib.libTypesMod.RaiseEvent[TContext, TEvent] = js.native
   def send[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): xstateLib.libTypesMod.SendAction[TContext, TEvent] = js.native
   def send[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](

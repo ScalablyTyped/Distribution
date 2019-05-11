@@ -12,7 +12,7 @@ object reactDashMediumDashImageDashZoomLibComponents {
   ] = js.constructorOf[reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps]]
   @scala.inline
-  def ImageZoomProps: reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps.type = reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps
-  type ImageZoomProps = reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps
+  def ReactDashMediumDashImageDashZoomProps: reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps.type = reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps
+  type ReactDashMediumDashImageDashZoomProps = reactDashMediumDashImageDashZoomLib.reactDashMediumDashImageDashZoomMod.ImageZoomProps
 }
 

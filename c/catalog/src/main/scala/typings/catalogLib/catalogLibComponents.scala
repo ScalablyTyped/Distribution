@@ -14,6 +14,9 @@ object catalogLibComponents {
   @scala.inline
   def Catalog: reactLib.reactMod.ComponentType[catalogLib.catalogMod.Config] = js.constructorOf[catalogLib.catalogMod.Catalog].asInstanceOf[reactLib.reactMod.ComponentType[catalogLib.catalogMod.Config]]
   @scala.inline
+  def CatalogProps: catalogLib.catalogMod.Config.type = catalogLib.catalogMod.Config
+  type CatalogProps = catalogLib.catalogMod.Config
+  @scala.inline
   def CodeSpecimen: reactLib.reactMod.ComponentType[catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.CodeSpecimenProps] = js.constructorOf[catalogLib.catalogMod.CodeSpecimen].asInstanceOf[reactLib.reactMod.ComponentType[catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.CodeSpecimenProps]]
   @scala.inline
   def ColorPaletteSpecimen: reactLib.reactMod.ComponentType[
@@ -41,6 +44,7 @@ object catalogLibComponents {
   catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.ImageSpecimenProps]]
   @scala.inline
   def Page: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[catalogLib.catalogMod.Page].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
+  type PageProps = js.Object
   @scala.inline
   def ReactSpecimen: reactLib.reactMod.ComponentType[
     catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.ReactSpecimenProps
@@ -58,9 +62,5 @@ object catalogLibComponents {
     catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.VideoSpecimenProps
   ] = js.constructorOf[catalogLib.catalogMod.VideoSpecimen].asInstanceOf[reactLib.reactMod.ComponentType[
   catalogLib.catalogMod.SpecimenProps with catalogLib.catalogMod.VideoSpecimenProps]]
-  @scala.inline
-  def Config: catalogLib.catalogMod.Config.type = catalogLib.catalogMod.Config
-  type Config = catalogLib.catalogMod.Config
-  type Object = js.Object
 }
 

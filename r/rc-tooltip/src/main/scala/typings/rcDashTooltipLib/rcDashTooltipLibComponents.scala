@@ -9,7 +9,7 @@ object rcDashTooltipLibComponents {
   @scala.inline
   def RcDashTooltip: reactLib.reactMod.ComponentType[rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props] = js.constructorOf[rcDashTooltipLib.rcDashTooltipMod.default].asInstanceOf[reactLib.reactMod.ComponentType[rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props]]
   @scala.inline
-  def Props: rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props.type = rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props
-  type Props = rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props
+  def RcDashTooltipProps: rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props.type = rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props
+  type RcDashTooltipProps = rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Props
 }
 

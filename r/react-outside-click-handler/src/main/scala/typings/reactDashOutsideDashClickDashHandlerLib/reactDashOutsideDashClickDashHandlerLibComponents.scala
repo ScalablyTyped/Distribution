@@ -12,7 +12,7 @@ object reactDashOutsideDashClickDashHandlerLibComponents {
   ] = js.constructorOf[reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props]]
   @scala.inline
-  def Props: reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props.type = reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props
-  type Props = reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props
+  def ReactDashOutsideDashClickDashHandlerProps: reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props.type = reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props
+  type ReactDashOutsideDashClickDashHandlerProps = reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerMod.Props
 }
 

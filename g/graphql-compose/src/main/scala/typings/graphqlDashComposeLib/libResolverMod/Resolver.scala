@@ -55,7 +55,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   // Misc methods
   // -----------------------------------------------
   def getFieldConfig(): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
-  def getFieldConfig(opts: graphqlDashComposeLib.Anon_ProjectionProjectionType): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
+  def getFieldConfig(opts: graphqlDashComposeLib.Anon_ProjectionProjectionTypeOptional): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
   def getKind(): ResolverKinds | scala.Unit = js.native
   // -----------------------------------------------
   // Debug methods

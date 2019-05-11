@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libEnumTypeComposerMod {
-  type ComposeEnumTypeConfig = graphqlLib.typeDefinitionMod.GraphQLEnumTypeConfig with graphqlDashComposeLib.Anon_Extensions
+  type ComposeEnumTypeConfig = graphqlLib.typeDefinitionMod.GraphQLEnumTypeConfig with graphqlDashComposeLib.Anon_ExtensionsOptional
   type EnumTypeComposeDefinition = graphqlDashComposeLib.libTypeMapperMod.TypeAsString | ComposeEnumTypeConfig | graphqlDashComposeLib.libGraphqlMod.GraphQLEnumType
-  type GraphQLEnumTypeExtended = graphqlDashComposeLib.libGraphqlMod.GraphQLEnumType with graphqlDashComposeLib.Anon_GqcExtensions
+  type GraphQLEnumTypeExtended = graphqlDashComposeLib.libGraphqlMod.GraphQLEnumType with graphqlDashComposeLib.Anon_GqcExtensionsExtensions
 }

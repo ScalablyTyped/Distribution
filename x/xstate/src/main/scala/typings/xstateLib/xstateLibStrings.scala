@@ -32,26 +32,31 @@ object xstateLibStrings {
   
   @js.native
   sealed trait atomic
-    extends xstateLib.libTypesMod._StateTypes
+    extends xstateLib.esTypesMod._StateTypes
+       with xstateLib.libTypesMod._StateTypes
   
   @js.native
   sealed trait compound
-    extends xstateLib.libTypesMod._StateTypes
+    extends xstateLib.esTypesMod._StateTypes
+       with xstateLib.libTypesMod._StateTypes
   
   @js.native
   sealed trait deep extends js.Object
   
   @js.native
   sealed trait `final`
-    extends xstateLib.libTypesMod._StateTypes
+    extends xstateLib.esTypesMod._StateTypes
+       with xstateLib.libTypesMod._StateTypes
   
   @js.native
   sealed trait history
-    extends xstateLib.libTypesMod._StateTypes
+    extends xstateLib.esTypesMod._StateTypes
+       with xstateLib.libTypesMod._StateTypes
   
   @js.native
   sealed trait parallel
-    extends xstateLib.libTypesMod._StateTypes
+    extends xstateLib.esTypesMod._StateTypes
+       with xstateLib.libTypesMod._StateTypes
   
   @js.native
   sealed trait shallow extends js.Object

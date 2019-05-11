@@ -1,0 +1,25 @@
+package typings
+package antdLib.esFormFormMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("antd/es/form/Form", JSImport.Default)
+@js.native
+class default protected () extends Form {
+  def this(props: FormProps) = this()
+}
+
+/* static members */
+@JSImport("antd/es/form/Form", JSImport.Default)
+@js.native
+object default extends js.Object {
+  var Item: antdLib.Anon_DefaultPropsPropTypes = js.native
+  var createFormField: js.Any = js.native
+  var defaultProps: antdLib.Anon_Colon = js.native
+  var propTypes: antdLib.Anon_ArgsChildren = js.native
+  def create[TOwnProps /* <: antdLib.esFormFormMod.FormComponentProps[_] */](): antdLib.esFormInterfaceMod.FormWrappedProps[TOwnProps] = js.native
+  def create[TOwnProps /* <: antdLib.esFormFormMod.FormComponentProps[_] */](options: antdLib.esFormFormMod.FormCreateOption[TOwnProps]): antdLib.esFormInterfaceMod.FormWrappedProps[TOwnProps] = js.native
+}
+

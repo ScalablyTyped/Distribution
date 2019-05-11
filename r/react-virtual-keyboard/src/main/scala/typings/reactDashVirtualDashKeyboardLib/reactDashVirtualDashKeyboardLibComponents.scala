@@ -9,7 +9,7 @@ object reactDashVirtualDashKeyboardLibComponents {
   @scala.inline
   def ReactDashVirtualDashKeyboard: reactLib.reactMod.ComponentType[reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps] = js.constructorOf[reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps]]
   @scala.inline
-  def KeyboardProps: reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps.type = reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps
-  type KeyboardProps = reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps
+  def ReactDashVirtualDashKeyboardProps: reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps.type = reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps
+  type ReactDashVirtualDashKeyboardProps = reactDashVirtualDashKeyboardLib.reactDashVirtualDashKeyboardMod.KeyboardProps
 }
 

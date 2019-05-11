@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protobufjs"
-version := "6.8.8-33488f"
+version := "6.8.8-303c7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -84,6 +84,7 @@ object antdDashMobileLibStrings {
   @js.native
   sealed trait hidden
     extends antdDashMobileLib.libCarouselMod.IFrameOverFlow
+       with antdDashMobileLib.esCarouselMod.IFrameOverFlow
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -211,6 +212,7 @@ object antdDashMobileLibStrings {
   @js.native
   sealed trait visible
     extends antdDashMobileLib.libCarouselMod.IFrameOverFlow
+       with antdDashMobileLib.esCarouselMod.IFrameOverFlow
   
   @js.native
   sealed trait warning extends js.Object

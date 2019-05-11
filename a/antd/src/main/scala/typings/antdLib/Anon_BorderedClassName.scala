@@ -13,7 +13,7 @@ trait Anon_BorderedClassName extends js.Object {
   var loading: scala.Boolean
   var rowKey: java.lang.String
   var showHeader: scala.Boolean
-  var size: antdLib.libTableInterfaceMod.TableSize
+  var size: antdLib.esTableInterfaceMod.TableSize
   var sortDirections: js.Array[java.lang.String]
   var useFixedHeader: scala.Boolean
 }
@@ -28,7 +28,7 @@ object Anon_BorderedClassName {
     loading: scala.Boolean,
     rowKey: java.lang.String,
     showHeader: scala.Boolean,
-    size: antdLib.libTableInterfaceMod.TableSize,
+    size: antdLib.esTableInterfaceMod.TableSize,
     sortDirections: js.Array[java.lang.String],
     useFixedHeader: scala.Boolean
   ): Anon_BorderedClassName = {

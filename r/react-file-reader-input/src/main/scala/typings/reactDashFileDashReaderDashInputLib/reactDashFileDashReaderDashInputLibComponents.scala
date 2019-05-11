@@ -9,7 +9,7 @@ object reactDashFileDashReaderDashInputLibComponents {
   @scala.inline
   def ReactDashFileDashReaderDashInput: reactLib.reactMod.ComponentType[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props] = js.constructorOf[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.^].asInstanceOf[reactLib.reactMod.ComponentType[reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props]]
   @scala.inline
-  def Props: reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props.type = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
-  type Props = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
+  def ReactDashFileDashReaderDashInputProps: reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props.type = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
+  type ReactDashFileDashReaderDashInputProps = reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.Props
 }
 

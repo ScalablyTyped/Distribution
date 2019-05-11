@@ -19,7 +19,7 @@ trait CodeGenNode extends js.Object {
     */
   var LineNumber: js.UndefOr[Integer] = js.undefined
   /**
-    * The type of node this is.
+    * The type of node that this is.
     */
   var NodeType: CodeGenNodeType
 }

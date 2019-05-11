@@ -77,7 +77,7 @@ trait Table[T]
   def prepareParamsArguments(state: js.Any): antdLib.libTableInterfaceMod.PrepareParamsArgumentsReturn[T] = js.native
   def recursiveSort(data: js.Array[T], sorterFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]): js.Array[T] = js.native
   def renderColumnTitle(): reactLib.reactMod.ReactNode = js.native
-  def renderColumnTitle(title: js.Function1[/* options */ antdLib.Anon_Filters, reactLib.reactMod.ReactNode]): reactLib.reactMod.ReactNode = js.native
+  def renderColumnTitle(title: js.Function1[/* options */ antdLib.Anon_FiltersSortOrder, reactLib.reactMod.ReactNode]): reactLib.reactMod.ReactNode = js.native
   def renderColumnTitle(title: reactLib.reactMod.ReactNode): reactLib.reactMod.ReactNode = js.native
   def renderColumnsDropdown(
     prefixCls: java.lang.String,

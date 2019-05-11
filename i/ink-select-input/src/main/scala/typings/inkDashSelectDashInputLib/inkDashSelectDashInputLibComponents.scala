@@ -12,7 +12,7 @@ object inkDashSelectDashInputLibComponents {
   ] = js.constructorOf[inkDashSelectDashInputLib.inkDashSelectDashInputMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps[inkDashSelectDashInputLib.inkDashSelectDashInputMod.ItemOfSelectInput]]]
   @scala.inline
-  def SelectInputProps: inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps.type = inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps
-  type SelectInputProps[T /* <: inkDashSelectDashInputLib.inkDashSelectDashInputMod.ItemOfSelectInput */] = inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps[T]
+  def InkDashSelectDashInputProps: inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps.type = inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps
+  type InkDashSelectDashInputProps[T /* <: inkDashSelectDashInputLib.inkDashSelectDashInputMod.ItemOfSelectInput */] = inkDashSelectDashInputLib.inkDashSelectDashInputMod.SelectInputProps[T]
 }
 

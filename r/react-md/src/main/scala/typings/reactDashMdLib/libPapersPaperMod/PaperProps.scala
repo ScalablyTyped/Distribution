@@ -11,6 +11,7 @@ trait PaperProps
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
+  var componentRef: js.UndefOr[reactLib.reactMod.Ref[_]] = js.undefined
   var raiseOnHover: js.UndefOr[scala.Boolean] = js.undefined
   var zDepth: js.UndefOr[scala.Double] = js.undefined
 }
@@ -23,6 +24,7 @@ object PaperProps {
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     component: reactLib.reactMod.ReactType[_] = null,
+    componentRef: reactLib.reactMod.Ref[_] = null,
     onBlur: /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLElement] => scala.Unit = null,
     onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     onDrag: /* event */ reactLib.reactMod.DragEvent[stdLib.HTMLElement] => scala.Unit = null,
@@ -56,6 +58,7 @@ object PaperProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))

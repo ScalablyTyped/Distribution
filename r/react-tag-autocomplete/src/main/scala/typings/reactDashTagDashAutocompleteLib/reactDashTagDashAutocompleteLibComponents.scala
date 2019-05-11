@@ -9,7 +9,7 @@ object reactDashTagDashAutocompleteLibComponents {
   @scala.inline
   def ReactDashTagDashAutocomplete: reactLib.reactMod.ComponentType[reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps] = js.constructorOf[reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps]]
   @scala.inline
-  def ReactTagsProps: reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps.type = reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps
-  type ReactTagsProps = reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps
+  def ReactDashTagDashAutocompleteProps: reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps.type = reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps
+  type ReactDashTagDashAutocompleteProps = reactDashTagDashAutocompleteLib.reactDashTagDashAutocompleteMod.ReactTagsProps
 }
 

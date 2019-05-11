@@ -12,7 +12,7 @@ object reactDashFacebookDashLoginLibComponents {
   ] = js.constructorOf[reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps]]
   @scala.inline
-  def ReactFacebookLoginProps: reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps.type = reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps
-  type ReactFacebookLoginProps = reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps
+  def ReactDashFacebookDashLoginProps: reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps.type = reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps
+  type ReactDashFacebookDashLoginProps = reactDashFacebookDashLoginLib.reactDashFacebookDashLoginMod.ReactFacebookLoginProps
 }
 

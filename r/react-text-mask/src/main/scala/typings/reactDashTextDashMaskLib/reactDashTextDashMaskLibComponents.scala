@@ -9,7 +9,7 @@ object reactDashTextDashMaskLibComponents {
   @scala.inline
   def ReactDashTextDashMask: reactLib.reactMod.ComponentType[reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps] = js.constructorOf[reactDashTextDashMaskLib.reactDashTextDashMaskMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps]]
   @scala.inline
-  def MaskedInputProps: reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps.type = reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps
-  type MaskedInputProps = reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps
+  def ReactDashTextDashMaskProps: reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps.type = reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps
+  type ReactDashTextDashMaskProps = reactDashTextDashMaskLib.reactDashTextDashMaskMod.MaskedInputProps
 }
 

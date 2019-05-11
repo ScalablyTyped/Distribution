@@ -83,7 +83,7 @@ trait TreeProps extends js.Object {
   var onLoad: js.UndefOr[
     js.Function2[
       /* loadedKeys */ js.Array[java.lang.String], 
-      /* info */ antdLib.Anon_Event, 
+      /* info */ antdLib.Anon_EventLoad, 
       scala.Unit
     ]
   ] = js.undefined
@@ -141,7 +141,7 @@ object TreeProps {
     onDragStart: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDrop: /* options */ AntTreeNodeDropEvent => scala.Unit = null,
     onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[_] = null,
-    onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_Event) => scala.Unit = null,
+    onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_EventLoad) => scala.Unit = null,
     onRightClick: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onSelect: (/* selectedKeys */ js.Array[java.lang.String], /* e */ AntTreeNodeSelectedEvent) => scala.Unit = null,
     prefixCls: java.lang.String = null,

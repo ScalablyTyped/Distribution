@@ -9,7 +9,7 @@ object reactDashOwlDashCarouselLibComponents {
   @scala.inline
   def ReactDashOwlDashCarousel: reactLib.reactMod.ComponentType[reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options] = js.constructorOf[reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options]]
   @scala.inline
-  def Options: reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options.type = reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options
-  type Options = reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options
+  def ReactDashOwlDashCarouselProps: reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options.type = reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options
+  type ReactDashOwlDashCarouselProps = reactDashOwlDashCarouselLib.reactDashOwlDashCarouselMod.Options
 }
 

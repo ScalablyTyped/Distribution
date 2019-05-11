@@ -18,9 +18,9 @@ object atNivoBarLibComponents {
   atNivoBarLib.atNivoBarMod.BarCanvasProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsiveBar: reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarSvgProps] = js.constructorOf[atNivoBarLib.atNivoBarMod.ResponsiveBar].asInstanceOf[reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarSvgProps]]
+  type ResponsiveBarProps = atNivoBarLib.atNivoBarMod.BarSvgProps
   @scala.inline
   def ResponsiveBarCanvas: reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarCanvasProps] = js.constructorOf[atNivoBarLib.atNivoBarMod.ResponsiveBarCanvas].asInstanceOf[reactLib.reactMod.ComponentType[atNivoBarLib.atNivoBarMod.BarCanvasProps]]
-  type BarCanvasProps = atNivoBarLib.atNivoBarMod.BarCanvasProps
-  type BarSvgProps = atNivoBarLib.atNivoBarMod.BarSvgProps
+  type ResponsiveBarCanvasProps = atNivoBarLib.atNivoBarMod.BarCanvasProps
 }
 

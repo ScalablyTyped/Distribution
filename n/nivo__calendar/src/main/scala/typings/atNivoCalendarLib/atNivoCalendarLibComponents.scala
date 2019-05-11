@@ -13,6 +13,6 @@ object atNivoCalendarLibComponents {
   atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
   def ResponsiveCalendar: reactLib.reactMod.ComponentType[atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps] = js.constructorOf[atNivoCalendarLib.atNivoCalendarMod.ResponsiveCalendar].asInstanceOf[reactLib.reactMod.ComponentType[atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps]]
-  type CalendarSvgProps = atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps
+  type ResponsiveCalendarProps = atNivoCalendarLib.atNivoCalendarMod.CalendarSvgProps
 }
 

@@ -9,7 +9,7 @@ object reactDashPlayerLibComponents {
   @scala.inline
   def ReactDashPlayer: reactLib.reactMod.ComponentType[reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps] = js.constructorOf[reactDashPlayerLib.reactDashPlayerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps]]
   @scala.inline
-  def ReactPlayerProps: reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps.type = reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps
-  type ReactPlayerProps = reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps
+  def ReactDashPlayerProps: reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps.type = reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps
+  type ReactDashPlayerProps = reactDashPlayerLib.reactDashPlayerMod.ReactPlayerProps
 }
 

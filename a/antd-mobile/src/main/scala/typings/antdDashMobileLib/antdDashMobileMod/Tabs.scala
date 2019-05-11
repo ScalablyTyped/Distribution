@@ -14,7 +14,7 @@ class Tabs ()
 @JSImport("antd-mobile", "Tabs")
 @js.native
 object Tabs extends js.Object {
-  var DefaultTabBar: antdDashMobileLib.Anon_DefaultPropsAny = js.native
+  var DefaultTabBar: antdDashMobileLib.Anon_DefaultPropsAnyDefaultTabBar = js.native
   var defaultProps: antdDashMobileLib.Anon_PrefixCls = js.native
 }
 

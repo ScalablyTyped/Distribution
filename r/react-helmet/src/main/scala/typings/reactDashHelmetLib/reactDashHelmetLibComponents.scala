@@ -9,9 +9,12 @@ object reactDashHelmetLibComponents {
   @scala.inline
   def Helmet: reactLib.reactMod.ComponentType[reactDashHelmetLib.reactDashHelmetMod.HelmetProps] = js.constructorOf[reactDashHelmetLib.reactDashHelmetMod.Helmet].asInstanceOf[reactLib.reactMod.ComponentType[reactDashHelmetLib.reactDashHelmetMod.HelmetProps]]
   @scala.inline
-  def ReactDashHelmet: reactLib.reactMod.ComponentType[reactDashHelmetLib.reactDashHelmetMod.HelmetProps] = js.constructorOf[reactDashHelmetLib.reactDashHelmetMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashHelmetLib.reactDashHelmetMod.HelmetProps]]
-  @scala.inline
   def HelmetProps: reactDashHelmetLib.reactDashHelmetMod.HelmetProps.type = reactDashHelmetLib.reactDashHelmetMod.HelmetProps
   type HelmetProps = reactDashHelmetLib.reactDashHelmetMod.HelmetProps
+  @scala.inline
+  def ReactDashHelmet: reactLib.reactMod.ComponentType[reactDashHelmetLib.reactDashHelmetMod.HelmetProps] = js.constructorOf[reactDashHelmetLib.reactDashHelmetMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashHelmetLib.reactDashHelmetMod.HelmetProps]]
+  @scala.inline
+  def ReactDashHelmetProps: reactDashHelmetLib.reactDashHelmetMod.HelmetProps.type = reactDashHelmetLib.reactDashHelmetMod.HelmetProps
+  type ReactDashHelmetProps = reactDashHelmetLib.reactDashHelmetMod.HelmetProps
 }
 

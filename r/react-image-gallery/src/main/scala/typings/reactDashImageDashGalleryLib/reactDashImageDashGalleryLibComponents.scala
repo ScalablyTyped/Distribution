@@ -9,7 +9,7 @@ object reactDashImageDashGalleryLibComponents {
   @scala.inline
   def ReactDashImageDashGallery: reactLib.reactMod.ComponentType[reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps] = js.constructorOf[reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps]]
   @scala.inline
-  def ReactImageGalleryProps: reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps.type = reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps
-  type ReactImageGalleryProps = reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps
+  def ReactDashImageDashGalleryProps: reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps.type = reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps
+  type ReactDashImageDashGalleryProps = reactDashImageDashGalleryLib.reactDashImageDashGalleryMod.ReactImageGalleryProps
 }
 

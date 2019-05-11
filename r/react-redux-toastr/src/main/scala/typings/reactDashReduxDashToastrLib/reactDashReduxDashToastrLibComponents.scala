@@ -9,7 +9,7 @@ object reactDashReduxDashToastrLibComponents {
   @scala.inline
   def ReactDashReduxDashToastr: reactLib.reactMod.ComponentType[reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps] = js.constructorOf[reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps]]
   @scala.inline
-  def ReduxToastrProps: reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps.type = reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps
-  type ReduxToastrProps = reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps
+  def ReactDashReduxDashToastrProps: reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps.type = reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps
+  type ReactDashReduxDashToastrProps = reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ReduxToastrProps
 }
 

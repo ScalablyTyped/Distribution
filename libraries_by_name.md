@@ -206,6 +206,7 @@
 | [ant-design__icons-react](./a/ant-design__icons-react) |  Ant Design Icons for React  | - |
 | [antd](./a/antd) | An enterprise-class UI design language and React-b | ant, design, react, react-component, component, components, ui, framework, frontend |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
+| [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
 | [antlr4-autosuggest](./a/antlr4-autosuggest) | Autosuggest engine for ANTLR4 grammars | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an | mysql, postgres, pg, sqlite, sqlite3 |
@@ -1392,7 +1393,9 @@
 | [emoji-regex](./e/emoji-regex) | A regular expression to match all Emoji-only symbo | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji |
 | [emojione](./e/emojione) | EmojiOne is a complete set of emojis designed for  | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
 | [emotion](./e/emotion) | The Next Generation of CSS-in-JS. | styles, emotion, react, css, css-in-js |
+| [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c | react, theme, theming, emotion, cssinjs, css-in-js |
 | [emotion__cache](./e/emotion__cache) | emotion's cache | - |
+| [emotion__core](./e/emotion__core) | > Simple styling in React. | - |
 | [emotion__css](./e/emotion__css) | a function to serialize css and object styless | - |
 | [emotion__is-prop-valid](./e/emotion__is-prop-valid) | A function to check whether a prop is valid for HT | - |
 | [emotion__serialize](./e/emotion__serialize) | serialization utils for emotion | - |
@@ -2100,10 +2103,13 @@
 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | - | - |
 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token | - |
 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl | - |
+| [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
 | [google-cloud__storage](./g/google-cloud__storage) | Cloud Storage Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
+| [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
 | [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
+| [google-gax](./g/google-gax) | Google API Extensions | grpc |
 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP | google, images, google images, image search |
 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe | browserify, e164, format, formatting, international, libphonenumber, number, phone, phonenumber, rfc3966, standardize, wrapper |
 | [google-map-react](./g/google-map-react) | isomorphic google map react component, allows rend | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
@@ -2308,7 +2314,7 @@
 | [hapi__catbox-redis](./h/hapi__catbox-redis) | Redis adapter for catbox | cache, catbox, redis |
 | [hapi__code](./h/hapi__code) | assertion library | test, expect, assertion |
 | [hapi__cookie](./h/hapi__cookie) | Cookie authentication plugin | hapi, plugin, auth, cookie, session |
-| [hapi__crumb](./h/hapi__crumb) | - | - |
+| [hapi__crumb](./h/hapi__crumb) | CSRF crumb generation and validation plugin | hapi, plugin, cookies, csrf, session |
 | [hapi__cryptiles](./h/hapi__cryptiles) | General purpose crypto utilities | cryptography, security, utilites |
 | [hapi__glue](./h/hapi__glue) | Server composer for hapi.js | server, pack, composer, manifest, hapi |
 | [hapi__h2o2](./h/hapi__h2o2) | Proxy handler plugin for hapi.js | HTTP, proxy, handler, hapi, plugin |
@@ -2322,11 +2328,11 @@
 | [hapi__nes](./h/hapi__nes) | WebSocket adapter plugin for hapi routes | hapi, plugin, websocket |
 | [hapi__podium](./h/hapi__podium) | Node compatible event emitter with extra features | emitter, event |
 | [hapi__shot](./h/hapi__shot) | Injects a fake HTTP request/response into a node H | utilities, http, debug, test |
-| [hapi__sntp](./h/hapi__sntp) | - | - |
+| [hapi__sntp](./h/hapi__sntp) | SNTP Client | sntp, ntp, time |
 | [hapi__topo](./h/hapi__topo) | Topological sorting with grouping support | topological, sort, toposort, topsort |
 | [hapi__vision](./h/hapi__vision) | Templates rendering plugin support for hapi.js | view, render, template, hapi |
 | [hapi__wreck](./h/hapi__wreck) | HTTP Client Utilities | utilities, http, client |
-| [hapi__yar](./h/hapi__yar) | - | - |
+| [hapi__yar](./h/hapi__yar) | Cookie jar plugin for Hapi | hapi, plugin, cookies, jar, session |
 | [happypack](./h/happypack) | webpack speed booster, makes you happy | webpack, plugin, fast, speed, performance, compilation, transformer, loader, happiness, happy |
 | [har-format](./h/har-format) | - | - |
 | [hard-rejection](./h/hard-rejection) | Make unhandled promise rejections fail hard right  | promise, promises, unhandled, uncaught, rejection, hard, fail, catch, throw, handler, exit, debug, debugging, verbose, immediate, immediately |
@@ -4516,6 +4522,7 @@
 | [phantom](./p/phantom) | PhantomJS integration module for NodeJS | phantom, phantomjs, driver |
 | [phantomcss](./p/phantomcss) | A CasperJS module for automating visual regression | css, phantomjs, casperjs, testing, visual regression, responsive |
 | [phantomjs](./p/phantomjs) | Headless WebKit with JS API | phantomjs, headless, webkit |
+| [phaser](./p/phaser) | A fast, free and fun HTML5 Game Framework for Desk | 2d, HTML5, WebGL, canvas, game, javascript, physics, tweens, typescript, web audio |
 | [phenomnomnominal__tsquery](./p/phenomnomnominal__tsquery) | Query TypeScript ASTs with the esquery API | - |
 | [phin](./p/phin) | The ultra-lightweight Node.js HTTP client | http, https, request, fetch, ajax, url, uri |
 | [phoenix](./p/phoenix) | The official JavaScript client for the Phoenix web | - |
@@ -5090,6 +5097,7 @@
 | [react-mixin](./r/react-mixin) | - | react, mixin, es6, class, smart-mixin |
 | [react-modal](./r/react-modal) | Accessible modal dialog component for React.JS | react, react-component, modal, dialog |
 | [react-monaco-editor](./r/react-monaco-editor) | Monaco Editor for React | monaco, editor, react, vscode |
+| [react-mosaic-component](./r/react-mosaic-component) | A React Tiling Window Manager | ui, palantir, react, component, typescript, tiling-window-manager, window-manager |
 | [react-motion](./r/react-motion) | A spring that solves your animation problems. | react, component, react-component, transitiongroup, spring, tween, motion, animation, transition, ui |
 | [react-motion-loop](./r/react-motion-loop) | Looping animation for react-motion Spring | component, react-component, react |
 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion. | react, component, slider, carousel |
@@ -6039,6 +6047,7 @@
 | [store](./s/store) | A localStorage wrapper for all browsers without us | - |
 | [storm-react-diagrams](./s/storm-react-diagrams) | **PSA**: React Diagrams is currently getting a bit | web, diagram, diagrams, react, typescript, flowchart, simple, links, nodes |
 | [storybook-addon-jsx](./s/storybook-addon-jsx) | Display the JSX of the story | - |
+| [storybook-readme](./s/storybook-readme) | Storybook addon to show components README (for Rea | storybook, react-storybook, docs, readme |
 | [storybook__addon-a11y](./s/storybook__addon-a11y) | a11y addon for storybook | a11y, accessibility, addon, storybook, valid, verify |
 | [storybook__addon-actions](./s/storybook__addon-actions) | Action Logger addon for storybook | storybook |
 | [storybook__addon-backgrou](./s/storybook__addon-backgrounds) | A storybook addon to show different backgrounds fo | addon, background, react, storybook |
@@ -6059,6 +6068,7 @@
 | [storybook__react](./s/storybook__react) | Storybook for React: Develop React Component in is | storybook |
 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo | react, react-native, storybook |
 | [storybook__router](./s/storybook__router) | Core Storybook Router | storybook |
+| [storybook__theming](./s/storybook__theming) | Core Storybook Components | storybook |
 | [storybook__vue](./s/storybook__vue) | Storybook for Vue: Develop Vue Component in isolat | storybook |
 | [strange](./s/strange) | Range aka interval object. Supports exclusive and  | range, ranges, interval, interval-tree, bst, integer, integers, sort, bounds, math |
 | [stream-array](./s/stream-array) | Pipe an Array through Node.js streams | array, readable, stream, pipe |

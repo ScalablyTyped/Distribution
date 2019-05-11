@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ContextTypesMeta
-  extends org.scalablytyped.runtime.Instantiable0[antdLib.libListItemMod.default] {
+  extends org.scalablytyped.runtime.Instantiable0[antdLib.esListItemMod.default] {
   var contextTypes: Anon_Grid = js.native
 }
 

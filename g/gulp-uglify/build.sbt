@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "gulp-uglify"
-version := "3.0-dt-20181015Z-8e3167"
+version := "3.0-dt-20181015Z-d56b81"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-6753fb",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
   "org.scalablytyped" %%% "source-map" % "0.7.3-c62343",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-32bf87")

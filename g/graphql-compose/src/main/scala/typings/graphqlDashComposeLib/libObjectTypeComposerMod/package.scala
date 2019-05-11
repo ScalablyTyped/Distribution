@@ -34,7 +34,7 @@ package object libObjectTypeComposerMod {
     graphqlLib.typeDefinitionMod.GraphQLOutputType | (ObjectTypeComposer[TReturn, TContext]) | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] | graphqlDashComposeLib.libTypeMapperMod.TypeAsString | (graphqlDashComposeLib.libResolverMod.Resolver[js.Any, TContext, js.Any, js.Any]) | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[TReturn, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TReturn, TContext])
   ]) | graphqlLib.typeDefinitionMod.GraphQLOutputType | graphqlDashComposeLib.libTypeMapperMod.TypeAsString
   type GetRecordIdFn[TSource, TContext] = js.Function3[/* source */ TSource, /* args */ js.Any, /* context */ TContext, java.lang.String]
-  type GraphQLObjectTypeExtended[TSource, TContext] = (graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) with (graphqlDashComposeLib.Anon_Description[TContext, TSource])
+  type GraphQLObjectTypeExtended[TSource, TContext] = (graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) with (graphqlDashComposeLib.Anon_DescriptionGqcExtensions[TContext, TSource])
   type GraphqlFieldConfigExtended[TSource, TContext] = (graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) with graphqlDashComposeLib.Anon_Projection
   type ObjectTypeComposeDefinition[TSource, TContext] = graphqlDashComposeLib.libTypeMapperMod.TypeAsString | (ComposeObjectTypeConfig[TSource, TContext]) | (graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]])
   type RelationArgsMapper[TSource, TContext, TArgs] = org.scalablytyped.runtime.StringDictionary[
@@ -48,7 +48,7 @@ package object libObjectTypeComposerMod {
     js.Any
   ]
   type RelationOpts[TRelationSource, TSource, TContext, TArgs] = (RelationOptsWithResolver[TRelationSource, TSource, TContext, TArgs]) | (RelationOptsWithFieldConfig[TSource, TContext, TArgs])
-  type RelationOptsWithFieldConfig[TSource, TContext, TArgs] = (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) with (graphqlDashComposeLib.Anon_Resolve[TSource, TContext, TArgs])
+  type RelationOptsWithFieldConfig[TSource, TContext, TArgs] = (ComposeFieldConfigAsObject[TSource, TContext, TArgs]) with (graphqlDashComposeLib.Anon_ResolveGraphQLFieldResolver[TSource, TContext, TArgs])
   type RelationThunkMap[TSource, TContext] = org.scalablytyped.runtime.StringDictionary[
     graphqlDashComposeLib.libUtilsDefinitionsMod.Thunk[RelationOpts[TSource, TContext, ArgsMap, ArgsMap]]
   ]

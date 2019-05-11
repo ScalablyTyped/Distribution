@@ -11,11 +11,11 @@ trait XMLClassifier extends js.Object {
     */
   var Classification: awsDashSdkLib.clientsGlueMod.Classification
   /**
-    * The time this classifier was registered.
+    * The time that this classifier was registered.
     */
   var CreationTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The time this classifier was last updated.
+    * The time that this classifier was last updated.
     */
   var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait XMLClassifier extends js.Object {
     */
   var Name: NameString
   /**
-    * The XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a="A" item_b="B"&gt;&lt;/row&gt; is okay, but &lt;row item_a="A" item_b="B" /&gt; is not).
+    * The XML tag designating the element that contains each record in an XML document being parsed. This can't identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a="A" item_b="B"&gt;&lt;/row&gt; is okay, but &lt;row item_a="A" item_b="B" /&gt; is not).
     */
   var RowTag: js.UndefOr[RowTag] = js.undefined
   /**

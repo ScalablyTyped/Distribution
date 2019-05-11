@@ -160,6 +160,9 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
+  sealed trait PermissionsAndroidStatic extends js.Object
+  
+  @js.native
   sealed trait PhotoStream
     extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
@@ -1455,6 +1458,8 @@ object reactDashNativeLibStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PROXY: PROXY = "PROXY".asInstanceOf[PROXY]
+  @scala.inline
+  def PermissionsAndroidStatic: PermissionsAndroidStatic = "PermissionsAndroidStatic".asInstanceOf[PermissionsAndroidStatic]
   @scala.inline
   def PhotoStream: PhotoStream = "PhotoStream".asInstanceOf[PhotoStream]
   @scala.inline

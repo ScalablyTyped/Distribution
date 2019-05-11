@@ -9,13 +9,13 @@ trait Anon_DisabledEv extends js.Object {
   var disabled: js.UndefOr[scala.Boolean]
   var name: js.UndefOr[java.lang.String]
   var value: js.Any
-  def onChange(ev: antdLib.libRadioInterfaceMod.RadioChangeEvent): scala.Unit
+  def onChange(ev: antdLib.esRadioInterfaceMod.RadioChangeEvent): scala.Unit
 }
 
 object Anon_DisabledEv {
   @scala.inline
   def apply(
-    onChange: antdLib.libRadioInterfaceMod.RadioChangeEvent => scala.Unit,
+    onChange: antdLib.esRadioInterfaceMod.RadioChangeEvent => scala.Unit,
     value: js.Any,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null

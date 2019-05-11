@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait Anon_CancelValue extends js.Object {
   var disabled: js.UndefOr[scala.Boolean]
   var name: js.UndefOr[java.lang.String]
-  var value: js.Array[antdLib.libCheckboxGroupMod.CheckboxValueType]
+  var value: js.Array[antdLib.esCheckboxGroupMod.CheckboxValueType]
   def cancelValue(value: java.lang.String): scala.Unit
   def registerValue(value: java.lang.String): scala.Unit
-  def toggleOption(option: antdLib.libCheckboxGroupMod.CheckboxOptionType): scala.Unit
+  def toggleOption(option: antdLib.esCheckboxGroupMod.CheckboxOptionType): scala.Unit
 }
 
 object Anon_CancelValue {
@@ -19,8 +19,8 @@ object Anon_CancelValue {
   def apply(
     cancelValue: java.lang.String => scala.Unit,
     registerValue: java.lang.String => scala.Unit,
-    toggleOption: antdLib.libCheckboxGroupMod.CheckboxOptionType => scala.Unit,
-    value: js.Array[antdLib.libCheckboxGroupMod.CheckboxValueType],
+    toggleOption: antdLib.esCheckboxGroupMod.CheckboxOptionType => scala.Unit,
+    value: js.Array[antdLib.esCheckboxGroupMod.CheckboxValueType],
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null
   ): Anon_CancelValue = {
