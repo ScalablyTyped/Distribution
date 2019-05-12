@@ -1028,6 +1028,7 @@
 | [csv2json](./c/csv2json) | Stream and CLI to convert CSV to JSON | csv, json, csv2json, csvtojson, stream |
 | [csvrow](./c/csvrow) | parse a CSV row string | csv, parse |
 | [csvtojson](./c/csvtojson) | A tool concentrating on converting csv data to JSO | csv, csv parser, parse csv, csvtojson, json, csv to json, csv convert, tojson, convert csv to json, csv-json |
+| [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas.  | - |
 | [cucumber](./c/cucumber) | The official JavaScript implementation of Cucumber | testing, bdd, cucumber, gherkin, tests |
 | [cuid](./c/cuid) | Collision-resistant ids optimized for horizontal s | guid, id, uid, unique id, uuid |
 | [cuint](./c/cuint) | Unsigned integers for Javascript | C, unsigned, integer, 32bits, 64bits |

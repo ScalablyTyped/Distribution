@@ -5983,6 +5983,7 @@
 | 0 | [cordovarduino](./c/cordovarduino) | Cordova plugin to communicate with the android USB
 | 0 | [create-xpub](./c/create-xpub) | Create a BIP32 extended public key
 | 0 | [crpc](./c/crpc) | Simple library for making requests to Cuvva-style 
+| 0 | [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas. 
 | 0 | [cypress-axe](./c/cypress-axe) | Custom cypress commands to inject axe-core and tes
 | 0 | [d3-box](./d/d3-box) | An NPM mirror of mbostock's box.js.
 | 0 | [d3pie](./d/d3pie) | A highly configurable, re-usable library built on 

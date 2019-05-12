@@ -3812,6 +3812,7 @@
 | 0.6102952355064419 | [atom-mocha-test-runner](./a/atom-mocha-test-runner) | Run your Atom package tests using Mocha
 | 0.6102501513578058 | [bitcore-lib](./b/bitcore-lib) | A pure and powerful JavaScript Bitcoin library.
 | 0.6102148705563804 | [jwt-simple](./j/jwt-simple) | JWT(JSON Web Token) encode and decode module
+| 0.6097799116180841 | [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas. 
 | 0.6096922934543529 | [recase](./r/recase) | Deep rekey Objects and Arrays as either camel case
 | 0.6096788668647866 | [postcss-url](./p/postcss-url) | PostCSS plugin to rebase or inline on url().
 | 0.6092609265801108 | [fluent-ffmpeg](./f/fluent-ffmpeg) | A fluent API to FFMPEG (http://www.ffmpeg.org)

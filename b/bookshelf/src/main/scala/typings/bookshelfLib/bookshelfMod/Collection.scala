@@ -30,8 +30,13 @@ class Collection[T /* <: Model[_] */] () extends CollectionBase[T] {
   def orderBy(column: java.lang.String): Collection[T] = js.native
   def orderBy(column: java.lang.String, order: SortOrder): Collection[T] = js.native
   // Declaration order matters otherwise TypeScript gets confused between query() and query(...query: string[])
-  def query(): knexLib.knexMod.QueryBuilder = js.native
-  def query(callback: js.Function1[/* qb */ knexLib.knexMod.QueryBuilder, scala.Unit]): Collection[T] = js.native
+  def query(): knexLib.knexMod.QueryBuilder[js.Object, js.Array[stdLib.Partial[js.Object]]] = js.native
+  def query(
+    callback: js.Function1[
+      /* qb */ knexLib.knexMod.QueryBuilder[js.Object, js.Array[stdLib.Partial[js.Object]]], 
+      scala.Unit
+    ]
+  ): Collection[T] = js.native
   def query(query: java.lang.String*): Collection[T] = js.native
   def query(query: org.scalablytyped.runtime.StringDictionary[js.Any]): Collection[T] = js.native
   def resetQuery(): Collection[T] = js.native

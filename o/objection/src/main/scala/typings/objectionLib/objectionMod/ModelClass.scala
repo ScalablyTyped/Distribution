@@ -40,7 +40,12 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var uidRefProp: java.lang.String = js.native
   var useLimitInFirst: js.UndefOr[scala.Boolean] = js.native
   var virtualAttributes: js.Array[java.lang.String] = js.native
-  def bindKnex(knex: knexLib.knexMod.Knex): this.type = js.native
+  def bindKnex(
+    knex: knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ]
+  ): this.type = js.native
   def bindTransaction(transaction: Transaction): this.type = js.native
   def createNotFoundError(): stdLib.Error = js.native
   def createValidationError(args: CreateValidationErrorArgs): stdLib.Error = js.native
@@ -50,12 +55,31 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def fromDatabaseJson(row: js.Object): M = js.native
   def fromJson(json: js.Object): M = js.native
   def fromJson(json: js.Object, opt: ModelOptions): M = js.native
-  def knex(): knexLib.knexMod.Knex = js.native
-  def knex(knex: knexLib.knexMod.Knex): knexLib.knexMod.Knex = js.native
-  def knexQuery(): knexLib.knexMod.QueryBuilder = js.native
+  def knex(): knexLib.knexMod.Knex[
+    js.Object, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+  ] = js.native
+  def knex(
+    knex: knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ]
+  ): knexLib.knexMod.Knex[
+    js.Object, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+  ] = js.native
+  def knexQuery(): knexLib.knexMod.QueryBuilder[js.Object, js.Array[stdLib.Partial[js.Object]]] = js.native
   def loadRelated(model: M, expression: RelationExpression): QueryBuilderYieldingOne[M] = js.native
   def loadRelated(model: M, expression: RelationExpression, filters: Filters[M]): QueryBuilderYieldingOne[M] = js.native
-  def loadRelated(model: M, expression: RelationExpression, filters: Filters[M], trxOrKnex: knexLib.knexMod.Knex): QueryBuilderYieldingOne[M] = js.native
+  def loadRelated(
+    model: M,
+    expression: RelationExpression,
+    filters: Filters[M],
+    trxOrKnex: knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ]
+  ): QueryBuilderYieldingOne[M] = js.native
   def loadRelated(model: M, expression: RelationExpression, filters: Filters[M], trxOrKnex: Transaction): QueryBuilderYieldingOne[M] = js.native
   // loadRelated is overloaded to support both Model and Model[] variants:
   def loadRelated(models: js.Array[M], expression: RelationExpression): QueryBuilder[
@@ -72,7 +96,10 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     models: js.Array[M],
     expression: RelationExpression,
     filters: Filters[M],
-    trxOrKnex: knexLib.knexMod.Knex
+    trxOrKnex: knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ]
   ): QueryBuilder[
     M, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
@@ -89,7 +116,12 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     js.Array[M], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query(trxOrKnex: knexLib.knexMod.Knex): QueryBuilder[
+  def query(
+    trxOrKnex: knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ]
+  ): QueryBuilder[
     M, 
     js.Array[M], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -99,10 +131,16 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     js.Array[M], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def raw(sql: java.lang.String, bindings: (knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder)*): knexLib.knexMod.Raw = js.native
-  def raw(sql: java.lang.String, bindings: js.Array[knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder]): knexLib.knexMod.Raw = js.native
-  def raw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): knexLib.knexMod.Raw = js.native
-  def raw(value: knexLib.knexMod.Value): knexLib.knexMod.Raw = js.native
+  def raw[TResult](sql: java.lang.String, bindings: knexLib.knexMod.Value*): knexLib.knexMod.Raw[TResult] = js.native
+  def raw[TResult](sql: java.lang.String, bindings: js.Array[knexLib.knexMod.Value]): knexLib.knexMod.Raw[TResult] = js.native
+  def raw[TResult](sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): knexLib.knexMod.Raw[TResult] = js.native
+  def raw[TResult](value: knexLib.knexMod.Value): knexLib.knexMod.Raw[TResult] = js.native
+  @JSName("raw")
+  def raw_TRecordTResult[TRecord, TResult](sql: java.lang.String, bindings: (knexLib.knexMod.QueryBuilder[TRecord, TResult])*): knexLib.knexMod.Raw[TResult] = js.native
+  @JSName("raw")
+  def raw_TRecordTResult[TRecord, TResult](sql: java.lang.String, bindings: js.Array[knexLib.knexMod.QueryBuilder[TRecord, TResult]]): knexLib.knexMod.Raw[TResult] = js.native
+  @JSName("raw")
+  def raw_TRecordTResult[TRecord, TResult](sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): knexLib.knexMod.Raw[TResult] = js.native
   // This can only be used as a subquery so the result model type is irrelevant.
   def relatedQuery(relationName: java.lang.String): QueryBuilder[
     _, 

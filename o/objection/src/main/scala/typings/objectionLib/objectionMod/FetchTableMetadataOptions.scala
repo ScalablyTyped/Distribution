@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait FetchTableMetadataOptions extends js.Object {
   var force: js.UndefOr[scala.Boolean] = js.undefined
-  var knex: js.UndefOr[knexLib.knexMod.Knex] = js.undefined
+  var knex: js.UndefOr[
+    knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ]
+  ] = js.undefined
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -15,7 +20,10 @@ object FetchTableMetadataOptions {
   @scala.inline
   def apply(
     force: js.UndefOr[scala.Boolean] = js.undefined,
-    knex: knexLib.knexMod.Knex = null,
+    knex: knexLib.knexMod.Knex[
+      js.Object, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
+    ] = null,
     table: java.lang.String = null
   ): FetchTableMetadataOptions = {
     val __obj = js.Dynamic.literal()

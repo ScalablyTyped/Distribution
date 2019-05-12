@@ -14,7 +14,9 @@ object LoadOptions {
   def apply(
     withRelated: js.Array[java.lang.String | WithRelatedQuery],
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.Transaction = null,
+    transacting: knexLib.knexMod.Transaction[
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ _
+    ] = null,
     withSchema: java.lang.String = null
   ): LoadOptions = {
     val __obj = js.Dynamic.literal(withRelated = withRelated)

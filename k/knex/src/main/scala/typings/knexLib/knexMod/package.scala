@@ -8,40 +8,44 @@ import scala.scalajs.js.annotation._
 package object knexMod {
   type AlterColumnBuilder = ColumnBuilder
   type AlterTableBuilder = TableBuilder
-  type As = js.Function1[/* columnName */ java.lang.String, QueryBuilder]
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - Raw
-    - QueryBuilder
-    - org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  */
-  type ColumnName = _ColumnName | org.scalablytyped.runtime.StringDictionary[java.lang.String] | java.lang.String
+  type AnyQueryBuilder = QueryBuilder[js.Any, js.Array[stdLib.Partial[js.Any]]]
+  type ColumnDescriptor[TRecord, TResult] = java.lang.String | Raw[js.Any] | (QueryBuilder[TRecord, TResult]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type CountQueryBuilder[TRecord] = QueryBuilder[
+    TRecord, 
+    js.Array[org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]]
+  ]
   type CreateTableBuilder = TableBuilder
-  type Distinct = ColumnNameQueryBuilder
-  type HavingIn = js.Function2[/* columnName */ java.lang.String, /* values */ js.Array[Value], QueryBuilder]
+  type Distinct[TRecord /* <: js.Object */, TResult] = ColumnNameQueryBuilder[TRecord, TResult]
   type Identifier = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type JoinCallback = js.ThisFunction1[/* this */ JoinClause, /* join */ JoinClause, scala.Unit]
-  type JoinRaw = js.Function2[
+  type JoinRaw[TRecord, TResult] = js.Function2[
     /* tableName */ java.lang.String, 
     /* binding */ js.UndefOr[Value | ValueMap], 
-    QueryBuilder
+    QueryBuilder[TRecord, TResult]
   ]
+  type MaybeArray[T] = T | js.Array[T]
+  type MaybeArrayMember[T] = T
   type MySqlAlterTableBuilder = AlterTableBuilder
   //
   // QueryBuilder
   //
-  type QueryCallback = js.ThisFunction1[/* this */ QueryBuilder, /* builder */ QueryBuilder, scala.Unit]
-  type QueryCallbackWithArgs = js.ThisFunction2[/* this */ QueryBuilder, /* builder */ QueryBuilder, /* repeated */ js.Any, scala.Unit]
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - Raw
-    - QueryBuilder
-  */
-  type TableName = _TableName | java.lang.String
-  type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[scala.Boolean] | nodeLib.Buffer | Raw
-  type ValueMap = org.scalablytyped.runtime.StringDictionary[Value | QueryBuilder]
-  type WhereBetween = js.Function2[/* columnName */ java.lang.String, /* range */ js.Tuple2[Value, Value], QueryBuilder]
-  type WhereNull = js.Function1[/* columnName */ java.lang.String, QueryBuilder]
-  type WhereWrapped = js.Function1[/* callback */ QueryCallback, QueryBuilder]
-  type WithSchema = js.Function1[/* schema */ java.lang.String, QueryBuilder]
+  type QueryCallback = js.ThisFunction1[
+    /* this */ QueryBuilder[js.Any, js.Any], 
+    /* builder */ QueryBuilder[js.Any, js.Any], 
+    scala.Unit
+  ]
+  type QueryCallbackWithArgs = js.ThisFunction2[
+    /* this */ QueryBuilder[js.Any, js.Any], 
+    /* builder */ QueryBuilder[js.Any, js.Any], 
+    /* repeated */ js.Any, 
+    scala.Unit
+  ]
+  type ResolveResult[S] = knexLib.knexMod.DeferredKeySelectionNs.Resolve[S]
+  type SafePick[T, K /* <: java.lang.String */] = stdLib.Pick[T, K]
+  type TableName = java.lang.String | Raw[js.Any] | AnyQueryBuilder
+  type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[scala.Boolean] | nodeLib.Buffer | Raw[js.Any]
+  type ValueMap = org.scalablytyped.runtime.StringDictionary[Value | AnyQueryBuilder]
+  type WhereResult[TRecord, TResult] = (QueryBuilder[TRecord, TResult]) with (ChainableInterface[js.Array[TResult] | js.Array[TRecord]])
+  type WhereWrapped[TRecord, TResult] = js.Function1[/* callback */ QueryCallback, WhereResult[TRecord, TResult]]
+  type WithSchema[TRecord, TResult] = js.Function1[/* schema */ java.lang.String, QueryBuilder[TRecord, TResult]]
 }

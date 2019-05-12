@@ -6,20 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait QueryBuilder
-  extends ChainableInterface
-     with QueryInterface
-     with _ColumnName
-     with _TableName {
-  var and: QueryBuilder = js.native
-  var or: QueryBuilder = js.native
-  //TODO: Promise?
+trait QueryBuilder[TRecord /* <: js.Object */, TResult]
+  extends ChainableInterface[ResolveResult[TResult]]
+     with QueryInterface[TRecord, TResult] {
+  // [TODO] Doesn't seem to be available
+  // or: QueryBuilder;
+  var and: QueryBuilder[TRecord, TResult] = js.native
+  // TODO: Promise?
   def columnInfo(): bluebirdLib.bluebirdMod.^[ColumnInfo] = js.native
   def columnInfo(column: java.lang.String): bluebirdLib.bluebirdMod.^[ColumnInfo] = js.native
-  def forShare(tableNames: java.lang.String*): QueryBuilder = js.native
-  def forShare(tableNames: js.Array[java.lang.String]): QueryBuilder = js.native
-  def forUpdate(tableNames: java.lang.String*): QueryBuilder = js.native
-  def forUpdate(tableNames: js.Array[java.lang.String]): QueryBuilder = js.native
+  def forShare(tableNames: java.lang.String*): QueryBuilder[TRecord, TResult] = js.native
+  def forShare(tableNames: js.Array[java.lang.String]): QueryBuilder[TRecord, TResult] = js.native
+  def forUpdate(tableNames: java.lang.String*): QueryBuilder[TRecord, TResult] = js.native
+  def forUpdate(tableNames: js.Array[java.lang.String]): QueryBuilder[TRecord, TResult] = js.native
   /**
     * See if the underlying promise was cancelled at the creation time of this inspection object.
     */
@@ -40,8 +39,8 @@ trait QueryBuilder
     */
   /* InferMemberOverrides */
   override def isRejected(): scala.Boolean = js.native
-  def on(event: java.lang.String, callback: js.Function): QueryBuilder = js.native
-  def queryContext(context: js.Any): QueryBuilder = js.native
+  def on(event: java.lang.String, callback: js.Function): QueryBuilder[TRecord, TResult] = js.native
+  def queryContext(context: js.Any): QueryBuilder[TRecord, TResult] = js.native
   /**
     * Get the rejection reason for the underlying promise. Throws if the promise wasn't rejected at the creation time of this inspection object.
     *
@@ -56,6 +55,6 @@ trait QueryBuilder
     * throws `TypeError`
     */
   /* InferMemberOverrides */
-  override def value(): js.Any = js.native
+  override def value(): ResolveResult[TResult] = js.native
 }
 

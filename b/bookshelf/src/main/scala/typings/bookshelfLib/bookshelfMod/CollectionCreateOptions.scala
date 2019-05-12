@@ -24,7 +24,9 @@ object CollectionCreateOptions {
     require: js.UndefOr[scala.Boolean] = js.undefined,
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     tableName: java.lang.String = null,
-    transacting: knexLib.knexMod.Transaction = null,
+    transacting: knexLib.knexMod.Transaction[
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ _
+    ] = null,
     withSchema: java.lang.String = null
   ): CollectionCreateOptions = {
     val __obj = js.Dynamic.literal()

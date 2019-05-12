@@ -6,49 +6,49 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Join extends js.Object {
-  def apply(raw: Raw): QueryBuilder = js.native
-  def apply(tableName: Identifier, clause: JoinCallback): QueryBuilder = js.native
-  def apply(tableName: Identifier, column1: java.lang.String, column2: java.lang.String): QueryBuilder = js.native
-  def apply(
+trait Join[TRecord /* <: js.Object */, TResult /* <: js.Object */] extends js.Object {
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: Identifier, clause: JoinCallback): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: Identifier, column1: java.lang.String, column2: java.lang.String): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](
     tableName: Identifier,
     column1: java.lang.String,
     operator: java.lang.String,
     column2: java.lang.String
-  ): QueryBuilder = js.native
-  def apply(tableName: Identifier, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
-  def apply(
+  ): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: Identifier, column1: java.lang.String, raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](
     tableName: Identifier,
-    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw]
-  ): QueryBuilder = js.native
-  def apply(tableName: Identifier, raw: Raw): QueryBuilder = js.native
-  def apply(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
-  def apply(tableName: QueryCallback, column1: java.lang.String, column2: java.lang.String): QueryBuilder = js.native
-  def apply(
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw[_]]
+  ): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: Identifier, raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: QueryCallback, clause: JoinCallback): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: QueryCallback, column1: java.lang.String, column2: java.lang.String): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](
     tableName: QueryCallback,
     column1: java.lang.String,
     operator: java.lang.String,
     column2: java.lang.String
-  ): QueryBuilder = js.native
-  def apply(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
-  def apply(
+  ): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: QueryCallback, column1: java.lang.String, raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](
     tableName: QueryCallback,
-    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw]
-  ): QueryBuilder = js.native
-  def apply(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
-  def apply(tableName: TableName, clause: JoinCallback): QueryBuilder = js.native
-  def apply(tableName: TableName, column1: java.lang.String, column2: java.lang.String): QueryBuilder = js.native
-  def apply(
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw[_]]
+  ): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: QueryCallback, raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableName, clause: JoinCallback): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableName, column1: java.lang.String, column2: java.lang.String): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](
     tableName: TableName,
     column1: java.lang.String,
     operator: java.lang.String,
     column2: java.lang.String
-  ): QueryBuilder = js.native
-  def apply(tableName: TableName, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
-  def apply(
+  ): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableName, column1: java.lang.String, raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](
     tableName: TableName,
-    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw]
-  ): QueryBuilder = js.native
-  def apply(tableName: TableName, raw: Raw): QueryBuilder = js.native
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw[_]]
+  ): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
+  def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableName, raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
 }
 

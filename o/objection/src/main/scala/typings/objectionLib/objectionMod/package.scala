@@ -101,7 +101,7 @@ package object objectionMod {
   type Properties = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]
   type QueryBuilderYieldingOneOrNone[QM /* <: Model */] = QueryBuilder[QM, QM, js.UndefOr[QM]]
-  type Raw = knexLib.knexMod.Raw
+  type Raw = knexLib.knexMod.Raw[js.Any]
   type Reference = Castable
   type ReferenceBuilder = js.Function1[/* expression */ java.lang.String, Reference]
   /**
