@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 package object knexMod {
   type AlterColumnBuilder = ColumnBuilder
   type AlterTableBuilder = TableBuilder
-  type AnyQueryBuilder = QueryBuilder[js.Any, js.Array[stdLib.Partial[js.Any]]]
   type ColumnDescriptor[TRecord, TResult] = java.lang.String | Raw[js.Any] | (QueryBuilder[TRecord, TResult]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type CountQueryBuilder[TRecord] = QueryBuilder[
     TRecord, 
@@ -42,9 +41,9 @@ package object knexMod {
   ]
   type ResolveResult[S] = knexLib.knexMod.DeferredKeySelectionNs.Resolve[S]
   type SafePick[T, K /* <: java.lang.String */] = stdLib.Pick[T, K]
-  type TableName = java.lang.String | Raw[js.Any] | AnyQueryBuilder
+  type TableName = java.lang.String | Raw[js.Any] | (QueryBuilder[js.Any, js.Array[stdLib.Partial[js.Any]]])
   type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[scala.Boolean] | nodeLib.Buffer | Raw[js.Any]
-  type ValueMap = org.scalablytyped.runtime.StringDictionary[Value | AnyQueryBuilder]
+  type ValueMap = org.scalablytyped.runtime.StringDictionary[Value | (QueryBuilder[js.Any, js.Array[stdLib.Partial[js.Any]]])]
   type WhereResult[TRecord, TResult] = (QueryBuilder[TRecord, TResult]) with (ChainableInterface[js.Array[TResult] | js.Array[TRecord]])
   type WhereWrapped[TRecord, TResult] = js.Function1[/* callback */ QueryCallback, WhereResult[TRecord, TResult]]
   type WithSchema[TRecord, TResult] = js.Function1[/* schema */ java.lang.String, QueryBuilder[TRecord, TResult]]

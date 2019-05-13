@@ -1329,6 +1329,7 @@
 | 0.7493770606757872 | [array-sort](./a/array-sort) | Fast and powerful array sorting. Sort an array of 
 | 0.7493668272105343 | [postgres-interval](./p/postgres-interval) | Parse Postgres interval columns
 | 0.7492652151256096 | [lodash_dot_gt](./l/lodash_dot_gt) | The lodash method _.gt exported as a module.
+| 0.7491729739620266 | [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node
 | 0.7491684367660272 | [react-bootstrap-typeahead](./r/react-bootstrap-typeahead) | React typeahead with Bootstrap styling
 | 0.7490897278934019 | [map-age-cleaner](./m/map-age-cleaner) | Automatically cleanup expired items in a Map
 | 0.7490431218576215 | [google-gax](./g/google-gax) | Google API Extensions

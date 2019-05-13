@@ -267,6 +267,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def avgDistinct[TResult2 /* <: js.Object */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   def avgDistinct[TResult2 /* <: js.Object */](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
   def clearCounters(): QueryBuilder[TRecord, TResult] = js.native
+  def clearHaving(): QueryBuilder[TRecord, TResult] = js.native
   def clearOrder(): QueryBuilder[TRecord, TResult] = js.native
   // Clear
   def clearSelect(): QueryBuilder[TRecord, TResult] = js.native
@@ -285,6 +286,10 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def column_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: ColNameUT*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("column")
   def column_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: js.Array[ColNameUT]): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("column")
+  def column_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("column")
+  def column_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
   // For non-inferrable column selection, we will allow consumer to
   // specify result type and if not widen the result to entire record type with any omissions permitted
   def columns[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
@@ -299,6 +304,10 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def columns_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: ColNameUT*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("columns")
   def columns_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: js.Array[ColNameUT]): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("columns")
+  def columns_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("columns")
+  def columns_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
   def count(columnName: Raw[_]): CountQueryBuilder[TRecord] = js.native
   // Aggregation
   def count(columnNames: java.lang.String*): CountQueryBuilder[TRecord] = js.native
@@ -397,6 +406,12 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   // Others
   @JSName("first")
   def first_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: js.Array[ColNameUT]): QueryBuilder[TRecord, TResult2] = js.native
+  // Others
+  @JSName("first")
+  def first_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  // Others
+  @JSName("first")
+  def first_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
   def from[TRecord2, TResult2](callback: js.Function): QueryBuilder[TRecord2, TResult2] = js.native
   def from[TRecord2, TResult2](raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def from[TRecord2, TResult2](tableName: Identifier): QueryBuilder[TRecord2, TResult2] = js.native
@@ -1087,6 +1102,10 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def select_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: ColNameUT*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("select")
   def select_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: js.Array[ColNameUT]): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("select")
+  def select_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("select")
+  def select_TInnerRecordTInnerResultTResult2[TInnerRecord, TInnerResult, TResult2](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
   def sum[TResult2 /* <: js.Object */](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
   def sum[TResult2 /* <: js.Object */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   def sum[TResult2 /* <: js.Object */](

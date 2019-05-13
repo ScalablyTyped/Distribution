@@ -40,12 +40,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var uidRefProp: java.lang.String = js.native
   var useLimitInFirst: js.UndefOr[scala.Boolean] = js.native
   var virtualAttributes: js.Array[java.lang.String] = js.native
-  def bindKnex(
-    knex: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ]
-  ): this.type = js.native
+  def bindKnex(knex: knexLib.knexMod.Knex[_, js.Array[_]]): this.type = js.native
   def bindTransaction(transaction: Transaction): this.type = js.native
   def createNotFoundError(): stdLib.Error = js.native
   def createValidationError(args: CreateValidationErrorArgs): stdLib.Error = js.native
@@ -55,30 +50,16 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def fromDatabaseJson(row: js.Object): M = js.native
   def fromJson(json: js.Object): M = js.native
   def fromJson(json: js.Object, opt: ModelOptions): M = js.native
-  def knex(): knexLib.knexMod.Knex[
-    js.Object, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-  ] = js.native
-  def knex(
-    knex: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ]
-  ): knexLib.knexMod.Knex[
-    js.Object, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-  ] = js.native
-  def knexQuery(): knexLib.knexMod.QueryBuilder[js.Object, js.Array[stdLib.Partial[js.Object]]] = js.native
+  def knex(): knexLib.knexMod.Knex[_, js.Array[_]] = js.native
+  def knex(knex: knexLib.knexMod.Knex[_, js.Array[_]]): knexLib.knexMod.Knex[_, js.Array[_]] = js.native
+  def knexQuery(): knexLib.knexMod.QueryBuilder[_, js.Array[stdLib.Partial[_]]] = js.native
   def loadRelated(model: M, expression: RelationExpression): QueryBuilderYieldingOne[M] = js.native
   def loadRelated(model: M, expression: RelationExpression, filters: Filters[M]): QueryBuilderYieldingOne[M] = js.native
   def loadRelated(
     model: M,
     expression: RelationExpression,
     filters: Filters[M],
-    trxOrKnex: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ]
+    trxOrKnex: knexLib.knexMod.Knex[_, js.Array[_]]
   ): QueryBuilderYieldingOne[M] = js.native
   def loadRelated(model: M, expression: RelationExpression, filters: Filters[M], trxOrKnex: Transaction): QueryBuilderYieldingOne[M] = js.native
   // loadRelated is overloaded to support both Model and Model[] variants:
@@ -96,10 +77,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     models: js.Array[M],
     expression: RelationExpression,
     filters: Filters[M],
-    trxOrKnex: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ]
+    trxOrKnex: knexLib.knexMod.Knex[_, js.Array[_]]
   ): QueryBuilder[
     M, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
@@ -116,12 +94,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
     js.Array[M], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query(
-    trxOrKnex: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ]
-  ): QueryBuilder[
+  def query(trxOrKnex: knexLib.knexMod.Knex[_, js.Array[_]]): QueryBuilder[
     M, 
     js.Array[M], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _

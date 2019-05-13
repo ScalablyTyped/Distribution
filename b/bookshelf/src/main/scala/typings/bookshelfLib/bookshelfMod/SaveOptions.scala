@@ -20,9 +20,7 @@ object SaveOptions {
     method: java.lang.String = null,
     patch: js.UndefOr[scala.Boolean] = js.undefined,
     require: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.Transaction[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ _
-    ] = null,
+    transacting: knexLib.knexMod.Transaction[_] = null,
     withSchema: java.lang.String = null
   ): SaveOptions = {
     val __obj = js.Dynamic.literal()

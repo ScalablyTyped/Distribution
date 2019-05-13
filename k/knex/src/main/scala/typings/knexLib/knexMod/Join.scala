@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Join[TRecord /* <: js.Object */, TResult /* <: js.Object */] extends js.Object {
+trait Join[TRecord /* <: js.Object */, TResult] extends js.Object {
   def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](raw: Raw[_]): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
   def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: Identifier, clause: JoinCallback): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native
   def apply[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: Identifier, column1: java.lang.String, column2: java.lang.String): (QueryBuilder[TRecord2, TResult2]) with ChainableInterface[js.Array[TRecord2]] = js.native

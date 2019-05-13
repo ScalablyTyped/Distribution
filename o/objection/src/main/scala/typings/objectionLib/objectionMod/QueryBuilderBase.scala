@@ -438,7 +438,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def onBuild(fn: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def onBuildKnex(
     fn: js.Function2[
-      /* knexBuilder */ knexLib.knexMod.QueryBuilder[js.Object, js.Array[stdLib.Partial[js.Object]]], 
+      /* knexBuilder */ knexLib.knexMod.QueryBuilder[_, js.Array[stdLib.Partial[_]]], 
       /* builder */ this.type, 
       scala.Unit
     ]

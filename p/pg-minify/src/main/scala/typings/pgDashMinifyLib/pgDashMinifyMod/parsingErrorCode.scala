@@ -11,13 +11,8 @@ sealed trait parsingErrorCode extends js.Object
 @JSImport("pg-minify", "parsingErrorCode")
 @js.native
 object parsingErrorCode extends js.Object {
-      // Multi-line quoted identifiers are not supported.
   @js.native
   sealed trait multiLineQI
-    extends pgDashMinifyLib.pgDashMinifyMod.parsingErrorCode
-  
-  @js.native
-  sealed trait nestedMLC
     extends pgDashMinifyLib.pgDashMinifyMod.parsingErrorCode
   
       // Unclosed multi-line comment.
@@ -36,7 +31,6 @@ object parsingErrorCode extends js.Object {
     extends pgDashMinifyLib.pgDashMinifyMod.parsingErrorCode
   
   /* 3 */ val multiLineQI: multiLineQI with scala.Double = js.native
-  /* 4 */ val nestedMLC: nestedMLC with scala.Double = js.native
   /* 0 */ val unclosedMLC: unclosedMLC with scala.Double = js.native
   /* 2 */ val unclosedQI: unclosedQI with scala.Double = js.native
   /* 1 */ val unclosedText: unclosedText with scala.Double = js.native

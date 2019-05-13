@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Transaction
-  extends knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ js.Any
-    ] {
+  extends knexLib.knexMod.Knex[js.Any, js.Array[js.Any]] {
   def commit[QM](): js.Promise[QM] = js.native
   def commit[QM](value: js.Any): js.Promise[QM] = js.native
   def rollback[QM](): js.Promise[QM] = js.native
@@ -21,10 +18,7 @@ trait Transaction
 @js.native
 trait transaction[T] extends js.Object {
   def apply[V](
-    knex: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ],
+    knex: knexLib.knexMod.Knex[_, js.Array[_]],
     callback: js.Function1[/* trx */ Transaction, js.Promise[V]]
   ): js.Promise[V] = js.native
   def apply[MC /* <: ModelClass[_] */, V](
@@ -83,12 +77,7 @@ trait transaction[T] extends js.Object {
       js.Promise[V]
     ]
   ): js.Promise[V] = js.native
-  def start(
-    knexOrModel: knexLib.knexMod.Knex[
-      js.Object, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TResult */ _
-    ]
-  ): js.Promise[Transaction] = js.native
+  def start(knexOrModel: knexLib.knexMod.Knex[_, js.Array[_]]): js.Promise[Transaction] = js.native
   def start(knexOrModel: ModelClass[_]): js.Promise[Transaction] = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 // commons
 @js.native
-trait ColumnNameQueryBuilder[TRecord, TResult /* <: js.Any | js.Array[js.Object] */] extends js.Object {
+trait ColumnNameQueryBuilder[TRecord, TResult] extends js.Object {
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
   def apply(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[TRecord, TRecord] = js.native

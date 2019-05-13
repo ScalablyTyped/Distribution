@@ -6490,6 +6490,7 @@
 | [universal-analytics](./u/universal-analytics) | A node module for Google's Universal Analytics tra | google, analytics, universal, tracking |
 | [universal-cookie](./u/universal-cookie) | Universal cookies for JavaScript | universal, isomophic, cookie |
 | [universal-router](./u/universal-router) | Isomorphic router for JavaScript web applications | isomorphic, universal, router, routing, routes, route |
+| [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node | - |
 | [unorm](./u/unorm) | JavaScript Unicode 8.0 Normalization - NFC, NFD, N | - |
 | [unsplash-js](./u/unsplash-js) | A Universal JavaScript wrapper for the Unsplash AP | unsplash, photos, api, images, splash, free |
 | [untildify](./u/untildify) | Convert a tilde path to an absolute path: ~/dev => | tilde, expansion, expand, untildify, path, home, dir, directory, user, shell, bash |

@@ -4746,6 +4746,7 @@
 | 5 | [typescript-optional](./t/typescript-optional) | Optional (like Java) implementation in TypeScript
 | 5 | [typescript-tuple](./t/typescript-tuple) | Generics to work with tuples in TypeScript
 | 5 | [ua-string](./u/ua-string) | Get the user agent of a recent Chrome version to p
+| 5 | [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node
 | 5 | [urlparser](./u/urlparser) | Url parser
 | 5 | [viewport-list](./v/viewport-list) | Return a list of devices and their viewports
 | 5 | [webpack-plugin-serve](./w/webpack-plugin-serve) | A Development Server in a Webpack Plugin
