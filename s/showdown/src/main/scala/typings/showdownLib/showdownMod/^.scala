@@ -8,75 +8,128 @@ import scala.scalajs.js.annotation._
 @JSImport("showdown", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  /** Constructor function for a Converter */
+  /**
+    * Constructor function for a Converter.
+    */
   var Converter: ConverterStatic = js.native
   /**
-    * Showdown helper
+    * Showdown extensions.
+    */
+  var extensions: ShowdownExtensions = js.native
+  /**
+    * Showdown helper.
     */
   var helper: Helper = js.native
-  /** 
-    * Registered extensions
+  /**
+    * Get a registered extension.
     *
-    * @prarm name
-    * @param extenstion
+    * @param name - The extension name.
+    * @returns Returns the extension of the given `name`.
+    * @throws Throws if `name` is not of type string.
+    * @throws Throws if the extension is not exists.
     */
-  def extension(name: java.lang.String, extension: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): scala.Unit = js.native
-  def extension(name: java.lang.String, extension: ShowdownExtension): scala.Unit = js.native
+  def extension(name: java.lang.String): js.Array[ShowdownExtension] = js.native
+  def extension(name: java.lang.String, ext: js.Array[ShowdownExtension]): scala.Unit = js.native
   /**
-    * @return all extensions.
+    * Register a extension.
+    *
+    * @param name - The name of the new extension.
+    * @param ext - The extension.
+    * @throws Throws if `name` is not of type string.
     */
-  def getAllExtensions(): org.scalablytyped.runtime.StringDictionary[js.Array[ShowdownExtension]] = js.native
+  def extension(name: java.lang.String, ext: js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]): scala.Unit = js.native
+  def extension(name: java.lang.String, ext: ShowdownExtension): scala.Unit = js.native
   /**
-    * Retrieve the default options.
+    * Get the "global" extensions.
+    *
+    * @return Returns all extensions.
     */
-  def getDefaultOptions(): ShowdownOptions = js.native
+  def getAllExtensions(): ShowdownExtensions = js.native
   /**
-    * Retrieve previous set global option.
-    * @param optionKey
+    * Get the default options.
+    *
+    * @param [simple=true] - If to returns the default showdown options or the showdown options schema.
+    * @returns Returns the options schema if `simple` is `false`, otherwise the default showdown options.
     */
-  def getOption(optionKey: java.lang.String): js.Any = js.native
+  def getDefaultOptions(): ShowdownOptionsSchema | ShowdownOptions = js.native
+  def getDefaultOptions(simple: scala.Boolean): ShowdownOptionsSchema | ShowdownOptions = js.native
   /**
-    * Retrieve previous set global options.
+    * Get the "global" currently set flavor.
+    *
+    * @returns Returns string flavor name.
+    */
+  def getFlavor(): Flavor = js.native
+  /**
+    * Get the options of a specified flavor. Returns undefined if the flavor was not found.
+    *
+    * @param name - Name of the flavor.
+    * @returns Returns options object of the given flavor `name`.
+    */
+  def getFlavorOptions(name: Flavor): js.UndefOr[ShowdownOptions] = js.native
+  /**
+    * Get a "global" option.
+    *
+    * @param key - the option key.
+    * @returns Returns the value of the given `key`.
+    */
+  def getOption(key: java.lang.String): js.Any = js.native
+  /**
+    * Get the "global" options.
+    *
+    * @returns Returns a options object.
     */
   def getOptions(): ShowdownOptions = js.native
   /**
     * Remove an extension.
     *
-    * @param name
+    * @param name - The extension name.
     */
   def removeExtension(name: java.lang.String): scala.Unit = js.native
   /**
-    * Get an extension.
-    *
-    * @param name
-    * @return The extensions array.
+    * Removes all extensions.
     */
   def resetExtensions(): scala.Unit = js.native
   /**
-    * Reset options.
+    * Reset "global" options to the default values.
     */
   def resetOptions(): scala.Unit = js.native
-  @JSName("setFlavor")
-  def setFlavor_allOn(name: showdownLib.showdownLibStrings.allOn): scala.Unit = js.native
-  @JSName("setFlavor")
-  def setFlavor_ghost(name: showdownLib.showdownLibStrings.ghost): scala.Unit = js.native
   /**
-    * Setting a "global" flavor affects all instances of showdown
+    * Setting a "global" flavor affects all instances of showdown.
     *
-    * @param name
+    * @param name - The flavor name.
     */
-  @JSName("setFlavor")
-  def setFlavor_github(name: showdownLib.showdownLibStrings.github): scala.Unit = js.native
-  @JSName("setFlavor")
-  def setFlavor_original(name: showdownLib.showdownLibStrings.original): scala.Unit = js.native
-  @JSName("setFlavor")
-  def setFlavor_vanilla(name: showdownLib.showdownLibStrings.vanilla): scala.Unit = js.native
+  def setFlavor(name: Flavor): scala.Unit = js.native
   /**
-    * Setting a "global" option affects all instances of showdown
+    * Setting a "global" option affects all instances of showdown.
     * 
-    * @param optionKey
-    * @param value
+    * @param key - the option key.
+    * @param value - the option value.
     */
-  def setOption(optionKey: java.lang.String, value: js.Any): scala.Unit = js.native
+  def setOption(key: java.lang.String, value: js.Any): js.Any = js.native
+  /**
+    * Get a registered subParser.
+    *
+    * @param name - The parser name.
+    * @returns Returns the parser of the given `name`.
+    * @throws Throws if `name` is not of type string.
+    * @throws Throws if the parser is not exists.
+    */
+  def subParser(name: java.lang.String): SubParser = js.native
+  /**
+    * Register a subParser.
+    *
+    * @param name - The name of the new parser.
+    * @param func - The handler function of the new parser.
+    * @throws Throws if `name` is not of type string.
+    */
+  def subParser(name: java.lang.String, func: SubParser): scala.Unit = js.native
+  /**
+    * Checks if the given `ext` is a valid showdown extension.
+    *
+    * @param ext - The extension to checks.
+    * @returns Returns `true` if the extension is valid showdown extension, otherwise `false`.
+    */
+  def validateExtension(ext: js.Array[ShowdownExtension]): scala.Boolean = js.native
+  def validateExtension(ext: ShowdownExtension): scala.Boolean = js.native
 }
 

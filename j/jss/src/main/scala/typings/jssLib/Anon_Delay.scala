@@ -6,27 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Delay extends js.Object {
-  var delay: scala.Nothing
-  var direction: scala.Nothing
-  var duration: scala.Nothing
-  var iterationCount: scala.Nothing
-  var name: scala.Nothing
-  var playState: scala.Nothing
-  var timingFunction: scala.Nothing
+  var delay: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionDelay'] */ js.Any
+  var duration: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionDuration'] */ js.Any
+  var property: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionProperty'] */ js.Any
+  var timingFunction: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionTimingFunction'] */ js.Any
 }
 
 object Anon_Delay {
   @scala.inline
   def apply(
-    delay: scala.Nothing,
-    direction: scala.Nothing,
-    duration: scala.Nothing,
-    iterationCount: scala.Nothing,
-    name: scala.Nothing,
-    playState: scala.Nothing,
-    timingFunction: scala.Nothing
+    delay: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionDelay'] */ js.Any,
+    duration: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionDuration'] */ js.Any,
+    property: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionProperty'] */ js.Any,
+    timingFunction: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['transitionTimingFunction'] */ js.Any
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal(delay = delay, direction = direction, duration = duration, iterationCount = iterationCount, name = name, playState = playState, timingFunction = timingFunction)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration, property = property, timingFunction = timingFunction)
   
     __obj.asInstanceOf[Anon_Delay]
   }

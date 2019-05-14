@@ -110,7 +110,7 @@ object ^ extends js.Object {
     * ```
     */
   def multi[S /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof S ]: string | getenv.getenv.ParseMappings[S[P][2]]}
+  {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
     */ getenvLib.getenvLibStrings.multi with js.Any = js.native
   /**
     * Return as string.

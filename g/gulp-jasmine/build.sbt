@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-jasmine"
-version := "2.4-dt-20181026Z-25a743"
+version := "2.4-dt-20181026Z-f12d0a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190316Z-998380",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190316Z-48a54f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

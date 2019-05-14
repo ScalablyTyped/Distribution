@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait ojOptionEventMap
   extends stdLib.HTMLElementEventMap {
   var disabledChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean]
-  var valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
+  var valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+    /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+  ]
 }
 
 object ojOptionEventMap {
@@ -103,7 +105,9 @@ object ojOptionEventMap {
     transitionend: stdLib.TransitionEvent,
     transitionrun: stdLib.TransitionEvent,
     transitionstart: stdLib.TransitionEvent,
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+    ],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,
     wheel: stdLib.WheelEvent

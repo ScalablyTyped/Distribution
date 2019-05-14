@@ -32,8 +32,8 @@ package object eggMod {
   // plain object
   type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
   type PowerPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ U in keyof T ]:? T[U]}
-    */ eggLib.eggLibStrings.PowerPartial with T
+  {[ U in keyof T ]:? T[U] extends object? object : T[U]}
+    */ eggLib.eggLibStrings.PowerPartial with js.Any
   // Remove specific property from the specific class
   type RemoveSpecProp[T, P] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, P]]
   type RequestArrayBody = js.Array[js.Any]

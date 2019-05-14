@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped react.react.PropsWithRef<react.react.ComponentProps<'span'>> | react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> */ trait BadgeProps extends js.Object {
+- Dropped 'span' extends react.react.ComponentClass<infer P, react.react.ComponentState> ? react.react.PropsWithoutRef<any> & react.react.RefAttributes<std.InstanceType<'span'>> : react.react.PropsWithRef<react.react.ComponentProps<'span'>> */ trait BadgeProps extends js.Object {
   var accentColor: js.UndefOr[java.lang.String] = js.undefined
 }
 

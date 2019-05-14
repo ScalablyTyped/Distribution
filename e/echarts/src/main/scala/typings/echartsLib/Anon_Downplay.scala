@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Downplay extends js.Object {
   /**
     * Item style when mouse is hovering unrelated items. See
@@ -17,7 +16,7 @@ trait Anon_Downplay extends js.Object {
     */
   var downplay: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor
-  ] = js.native
+  ] = js.undefined
   /**
     * Item style when mouse is hovering. See
     * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
@@ -28,7 +27,7 @@ trait Anon_Downplay extends js.Object {
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor
-  ] = js.native
+  ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
     * [highlightPolicy](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.highlightPolicy)
@@ -39,7 +38,7 @@ trait Anon_Downplay extends js.Object {
     */
   var highlight: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor
-  ] = js.native
+  ] = js.undefined
   /**
     * Style of Sunburst sectors.
     *
@@ -75,7 +74,7 @@ trait Anon_Downplay extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.levels.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.native
+  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -99,6 +98,25 @@ trait Anon_Downplay extends js.Object {
     */
   var label: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight
-  ] = js.native
+  ] = js.undefined
+}
+
+object Anon_Downplay {
+  @scala.inline
+  def apply(
+    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor = null,
+    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor = null,
+    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeightAnonBorderColor = null,
+    itemStyle: Anon_BorderColor = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null
+  ): Anon_Downplay = {
+    val __obj = js.Dynamic.literal()
+    if (downplay != null) __obj.updateDynamic("downplay")(downplay)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Anon_Downplay]
+  }
 }
 

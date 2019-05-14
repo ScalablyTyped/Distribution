@@ -20,7 +20,9 @@ trait ojTableEventMap[K, D]
   var editModeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.rowEdit
   ]
-  var firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
+  var firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+    /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
+  ]
   var horizontalGridVisibleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled
   ]
@@ -101,7 +103,9 @@ object ojTableEventMap {
     emptied: stdLib.Event,
     ended: stdLib.Event,
     error: stdLib.ErrorEvent,
-    firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
+    firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojtable.ojTable<K, D>['firstSelectedRow'] */ js.Any
+    ],
     focus: stdLib.FocusEvent,
     fullscreenchange: stdLib.Event,
     fullscreenerror: stdLib.Event,

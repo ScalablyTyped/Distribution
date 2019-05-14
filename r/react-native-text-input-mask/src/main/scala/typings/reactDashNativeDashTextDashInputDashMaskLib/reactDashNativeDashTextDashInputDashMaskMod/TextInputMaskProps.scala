@@ -74,7 +74,7 @@ trait TextInputMaskProps
     * The following values work on Android: - visible-password
     */
   var keyboardType: js.UndefOr[reactDashNativeLib.reactDashNativeMod.KeyboardTypeOptions] = js.native
-  var mask: java.lang.String = js.native
+  var mask: js.UndefOr[java.lang.String] = js.native
   var maskDefaultValue: js.UndefOr[scala.Boolean] = js.native
   /**
     * Limits the maximum number of characters that can be entered.
@@ -227,6 +227,7 @@ trait TextInputMaskProps
     * or set/update maxLength to prevent unwanted edits without flicker.
     */
   var value: js.UndefOr[java.lang.String] = js.native
+  def onChangeText(formatted: java.lang.String): scala.Unit = js.native
   def onChangeText(formatted: java.lang.String, extracted: java.lang.String): scala.Unit = js.native
 }
 

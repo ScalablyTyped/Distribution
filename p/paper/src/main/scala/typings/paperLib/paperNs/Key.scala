@@ -14,7 +14,7 @@ class Key () extends js.Object
 @js.native
 object Key extends js.Object {
   /**
-    * 
+    *
     * The current state of the keyboard modifiers.
     *   modifiers.shift - true if the shift key is pressed, false otherwise.
     *   modifiers.control - true if the control key is pressed, false otherwise.

@@ -835,5 +835,37 @@ trait Lambda
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the functionExists state by periodically calling the underlying Lambda.getFunctionoperation every 1 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_functionExists(state: awsDashSdkLib.awsDashSdkLibStrings.functionExists): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_functionExists(
+    state: awsDashSdkLib.awsDashSdkLibStrings.functionExists,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetFunctionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the functionExists state by periodically calling the underlying Lambda.getFunctionoperation every 1 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_functionExists(
+    state: awsDashSdkLib.awsDashSdkLibStrings.functionExists,
+    params: GetFunctionRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_functionExists(
+    state: awsDashSdkLib.awsDashSdkLibStrings.functionExists,
+    params: GetFunctionRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetFunctionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

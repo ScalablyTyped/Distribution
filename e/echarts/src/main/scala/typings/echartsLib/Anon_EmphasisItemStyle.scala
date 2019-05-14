@@ -5,28 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_EmphasisItemStyle extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.emphasis
     */
   var emphasis: js.UndefOr[
     Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor
-  ] = js.native
+  ] = js.undefined
   /**
     * The style of node in this category.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.native
+  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
   /**
     * The label style of node in this category.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.native
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
   /**
     * Name of category, which is used to correspond with
     * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
@@ -37,7 +36,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.name
     */
-  var name: js.UndefOr[java.lang.String] = js.native
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Symbol of node of this category.
     *
@@ -77,14 +76,14 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbol
     */
-  var symbol: js.UndefOr[java.lang.String] = js.native
+  var symbol: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[scala.Boolean] = js.native
+  var symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Offset of node of this category symbol relative to original
     * position.
@@ -107,7 +106,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     * [0, 0]
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Rotate degree of node of this category symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
@@ -117,7 +116,7 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolRotate
     */
-  var symbolRotate: js.UndefOr[scala.Double] = js.native
+  var symbolRotate: js.UndefOr[scala.Double] = js.undefined
   /**
     * node of this category symbol size.
     * It can be set to single numbers like `10`, or use an array
@@ -128,6 +127,33 @@ trait Anon_EmphasisItemStyle extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | scala.Double] = js.native
+  var symbolSize: js.UndefOr[js.Array[_] | scala.Double] = js.undefined
+}
+
+object Anon_EmphasisItemStyle {
+  @scala.inline
+  def apply(
+    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor = null,
+    itemStyle: Anon_BorderColor = null,
+    label: Anon_AlignBackgroundColorBorderColor = null,
+    name: java.lang.String = null,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | scala.Double = null
+  ): Anon_EmphasisItemStyle = {
+    val __obj = js.Dynamic.literal()
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EmphasisItemStyle]
+  }
 }
 

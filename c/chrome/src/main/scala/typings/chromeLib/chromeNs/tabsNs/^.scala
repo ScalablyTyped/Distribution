@@ -39,6 +39,8 @@ object ^ extends js.Object {
   def create(createProperties: CreateProperties, callback: js.Function1[/* tab */ Tab, scala.Unit]): scala.Unit = js.native
   def detectLanguage(callback: js.Function1[/* language */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def detectLanguage(tabId: scala.Double, callback: js.Function1[/* language */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def discard(): scala.Unit = js.native
+  def discard(tabId: scala.Double): scala.Unit = js.native
   def discard(tabId: scala.Double, callback: js.Function1[/* tab */ Tab, scala.Unit]): scala.Unit = js.native
   def duplicate(tabId: scala.Double): scala.Unit = js.native
   def duplicate(tabId: scala.Double, callback: js.Function1[/* tab */ js.UndefOr[Tab], scala.Unit]): scala.Unit = js.native

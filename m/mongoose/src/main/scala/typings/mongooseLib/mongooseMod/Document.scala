@@ -30,12 +30,14 @@ trait Document
   var discriminators: js.Any = js.native
   /** The name of the model */
   var modelName: java.lang.String = js.native
+  /** whether mongoose thinks this doc is deleted. */
+  @JSName("$isDeleted")
+  def $isDeleted(): scala.Boolean = js.native
+  /** Override whether mongoose thinks this doc is deleted or not */
+  @JSName("$isDeleted")
+  def $isDeleted(isDeleted: scala.Boolean): scala.Unit = js.native
   /** Signal that we desire an increment of this documents version. */
   def increment(): this.type = js.native
-  /** whether mongoose thinks this doc is deleted. */
-  def isDeleted(): scala.Boolean = js.native
-  /** Override whether mongoose thinks this doc is deleted or not */
-  def isDeleted(isDeleted: scala.Boolean): scala.Unit = js.native
   /**
     * Returns another Model instance.
     * @param name model name

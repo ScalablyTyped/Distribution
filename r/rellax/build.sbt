@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rellax"
-version := "1.7-dt-20190212Z-0b2ec9"
+version := "1.7-dt-20190513Z-e2c04f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

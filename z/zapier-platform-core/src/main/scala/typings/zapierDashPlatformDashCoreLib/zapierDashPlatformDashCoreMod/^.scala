@@ -16,7 +16,7 @@ object ^ extends js.Object {
       js.Promise[_]
     ], 
     /* bundle */ js.UndefOr[stdLib.Partial[Bundle[org.scalablytyped.runtime.StringDictionary[_]]]], 
-    js.Promise[_] | _
+    js.Promise[_]
   ] = js.native
   def createAppTester(appRaw: js.Object, options: zapierDashPlatformDashCoreLib.Anon_CustomStoreKey): js.Function2[
     /* func */ js.Function2[
@@ -25,7 +25,7 @@ object ^ extends js.Object {
       js.Promise[_]
     ], 
     /* bundle */ js.UndefOr[stdLib.Partial[Bundle[org.scalablytyped.runtime.StringDictionary[_]]]], 
-    js.Promise[_] | _
+    js.Promise[_]
   ] = js.native
 }
 

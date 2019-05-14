@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def rangeSpec(schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6): IRangeSpec = js.native
-  def resolveSchema(
+  @JSName("resolveSchema")
+  def resolveSchema_definitions(
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6Definition,
-    definitions: scala.Nothing,
+    definitions: /* import warning: ImportType.apply Failed type conversion: react-jsonschema-form.Anon_Definitions['definitions'] */ js.Any,
     formData: js.Object
   ): jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6 = js.native
 }

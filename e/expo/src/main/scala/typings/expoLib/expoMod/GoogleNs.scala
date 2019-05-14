@@ -18,14 +18,13 @@ object GoogleNs extends js.Object {
     var webClientId: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  @js.native
   trait LogInResult extends js.Object {
-    var accessToken: js.UndefOr[java.lang.String] = js.native
-    var idToken: js.UndefOr[java.lang.String] = js.native
-    var refreshToken: js.UndefOr[java.lang.String] = js.native
-    var serverAuthCode: js.UndefOr[java.lang.String] = js.native
-    var `type`: js.UndefOr[expoLib.expoLibStrings.cancel | expoLib.expoLibStrings.success] = js.native
-    var user: js.UndefOr[expoLib.Anon_Email] = js.native
+    var accessToken: js.UndefOr[java.lang.String] = js.undefined
+    var idToken: js.UndefOr[java.lang.String] = js.undefined
+    var refreshToken: js.UndefOr[java.lang.String] = js.undefined
+    var serverAuthCode: js.UndefOr[java.lang.String] = js.undefined
+    var `type`: js.UndefOr[expoLib.expoLibStrings.cancel | expoLib.expoLibStrings.success] = js.undefined
+    var user: js.UndefOr[expoLib.Anon_Email] = js.undefined
   }
   
   def logInAsync(config: LogInConfig): js.Promise[LogInResult] = js.native

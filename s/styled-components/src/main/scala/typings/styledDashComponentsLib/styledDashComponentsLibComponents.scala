@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 object styledDashComponentsLibComponents {
   @scala.inline
   def StyleSheetManager: reactLib.reactMod.ComponentType[styledDashComponentsLib.styledDashComponentsMod.StyleSheetManagerProps] = js.constructorOf[styledDashComponentsLib.macroMod.StyleSheetManager].asInstanceOf[reactLib.reactMod.ComponentType[styledDashComponentsLib.styledDashComponentsMod.StyleSheetManagerProps]]
+  @scala.inline
+  def StyleSheetManagerProps: styledDashComponentsLib.styledDashComponentsMod.StyleSheetManagerProps.type = styledDashComponentsLib.styledDashComponentsMod.StyleSheetManagerProps
   type StyleSheetManagerProps = styledDashComponentsLib.styledDashComponentsMod.StyleSheetManagerProps
   @scala.inline
   def ThemeConsumer: reactLib.reactMod.ComponentType[

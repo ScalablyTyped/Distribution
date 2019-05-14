@@ -1,19 +1,19 @@
-[debug] PhaseRunner.scala:82 Success [id => cytoscape, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape),TsIdentLibrarySimple(cytoscape)),TsIdentModule(None,List(cytoscape))) [id => cytoscape, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => cytoscape, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/cytoscape),TsIdentLibrarySimple(cytoscape)),TsIdentModule(None,List(cytoscape))) [id => cytoscape, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(cytoscape)) [id => cytoscape, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(cytoscape) [id => cytoscape, phase => typescript] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_H) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CoreViewportManipulation) / TsMemberFunction(extent) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Source) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Parent) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_X) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(NodeSingularLayout) / TsMemberFunction(layoutDimensions) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Both) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering) / TsMemberFunction(diff) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Ele) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering) / TsMemberFunction(min) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Ele) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering) / TsMemberFunction(max) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Cut) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionAlgorithms) / TsMemberFunction(kargerStein) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Weight) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(SortableNode) / TsMemberProperty(data) / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Col) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(GridLayoutOptions) / TsMemberFunction(position) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Degree) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(ConcentricLayoutOptions) / TsMemberFunction(concentric) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_MaxDegree) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(ConcentricLayoutOptions) / TsMemberFunction(levelWidth) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(cytoscape) [id => cytoscape, phase => typescript] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_H) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CoreViewportManipulation) / TsMemberFunction(extent) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Source) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Parent) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionGraphManipulation) / TsMemberFunction(move) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_X) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(NodeSingularLayout) / TsMemberFunction(layoutDimensions) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Both) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering) / TsMemberFunction(diff) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Ele) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering) / TsMemberFunction(min) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Ele) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering) / TsMemberFunction(max) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Cut) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionAlgorithms) / TsMemberFunction(kargerStein) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Weight) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(SortableNode) / TsMemberProperty(data) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Col) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(GridLayoutOptions) / TsMemberFunction(position) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Degree) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(ConcentricLayoutOptions) / TsMemberFunction(concentric) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_MaxDegree) [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(ConcentricLayoutOptions) / TsMemberFunction(levelWidth) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExpandCallables.scala:48 Expanded union into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering))] 
 [info ] ExpandCallables.scala:48 Expanded u into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering))] 
 [info ] ExpandCallables.scala:48 Expanded add into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering))] 
@@ -40,17 +40,17 @@
 [info ] ExpandCallables.scala:48 Expanded (+) into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering))] 
 [info ] ExpandCallables.scala:48 Expanded (-) into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(CollectionBuildingFiltering))] 
 [info ] ExpandCallables.scala:48 Expanded weight into 1 methods [id => cytoscape, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(cytoscape) / TsDeclInterface(SearchFloydWarshallOptions))] 
-[debug] PhaseRunner.scala:82 Success [id => cytoscape, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:40 Processing cytoscape [id => cytoscape, phase => scala.js] 
+[debug] PhaseRunner.scala:84 Success [id => cytoscape, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing cytoscape [id => cytoscape, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => cytoscape, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
 	at scala.sys.package$.error(package.scala:30)
 	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:48)
 	at com.olvind.tso.scalajs.FieldTree.renamed(tree.scala:122)
 	at com.olvind.tso.scalajs.FieldTree.withSuffix(tree.scala:117)
-	at com.olvind.tso.importer.ImportTree$.hack(ImportTree.scala:447)
-	at com.olvind.tso.importer.ImportTree$.tsMemberProperty(ImportTree.scala:433)
-	at com.olvind.tso.importer.ImportTree$.tsMember(ImportTree.scala:304)
-	at com.olvind.tso.importer.ImportTree$.$anonfun$decl$5(ImportTree.scala:202)
+	at com.olvind.tso.importer.ImportTree$.hack(ImportTree.scala:457)
+	at com.olvind.tso.importer.ImportTree$.tsMemberProperty(ImportTree.scala:443)
+	at com.olvind.tso.importer.ImportTree$.tsMember(ImportTree.scala:310)
+	at com.olvind.tso.importer.ImportTree$.$anonfun$decl$5(ImportTree.scala:206)
 	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:244)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -61,57 +61,57 @@
 	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:244)
 	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:241)
 	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
-	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:202)
-	at com.olvind.tso.importer.ImportContainer$.$anonfun$apply$1(ImportContainer.scala:98)
+	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:206)
+	at com.olvind.tso.importer.ImportContainer$.$anonfun$apply$1(ImportContainer.scala:100)
 	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:244)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:244)
 	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:241)
 	at scala.collection.immutable.List.flatMap(List.scala:355)
-	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:98)
+	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:100)
 	at com.olvind.tso.importer.ImportTree$.decl(ImportTree.scala:68)
-	at com.olvind.tso.importer.ImportContainer$.$anonfun$apply$1(ImportContainer.scala:98)
+	at com.olvind.tso.importer.ImportContainer$.$anonfun$apply$1(ImportContainer.scala:100)
 	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:244)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:244)
 	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:241)
 	at scala.collection.immutable.List.flatMap(List.scala:355)
-	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:98)
+	at com.olvind.tso.importer.ImportContainer$.apply(ImportContainer.scala:100)
 	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:27)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:61)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:63)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
-	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:30)
+	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:32)
 	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:13)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:76)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:78)
 	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:76)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:78)
 	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:23)
 	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:21)
 	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:30)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:76)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:47)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
 	at scala.Option.foreach(Option.scala:274)
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:52)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:47)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
 	at scala.Option.foreach(Option.scala:274)
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:52)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:47)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
 	at scala.Option.foreach(Option.scala:274)
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:214)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:218)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
 	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)
@@ -151,6 +151,6 @@
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 
-[error] PhaseRunner.scala:86 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => scala.js] 
-[error] PhaseRunner.scala:86 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => publish] 
+[error] PhaseRunner.scala:88 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [cytoscape => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => cytoscape, phase => publish] 

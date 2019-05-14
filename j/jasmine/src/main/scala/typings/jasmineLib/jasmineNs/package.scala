@@ -24,7 +24,7 @@ package object jasmineNs {
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], scala.Unit]
   type SpyObj[T] = T with jasmineLib.jasmineLibStrings.SpyObj with js.Any
   type SpyObjMethodNames[T] = js.Array[java.lang.String] | (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? std.ReturnType<T[P]>}
-    */ jasmineLib.jasmineLibStrings.SpyObjMethodNames with T) | org.scalablytyped.runtime.StringDictionary[js.Any]
+  {[ P in keyof T ]:? std.ReturnType<T[P] extends (args : ...any): any? T[P] : any>}
+    */ jasmineLib.jasmineLibStrings.SpyObjMethodNames with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any]
   type StringPrettyPrinter = PrettyPrinter
 }

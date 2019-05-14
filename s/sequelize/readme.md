@@ -1,7 +1,7 @@
 
 # Scala.js typings for sequelize
 
-Typings are for version 4.27.11
+Typings are for version 4.28.0
 
 ## Library description:
 Multi dialect ORM for Node.JS
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Sequelize 4.27.11
+// Type definitions for Sequelize 4.28.0
 // Project: http://sequelizejs.com, https://github.com/sequelize/sequelize
 // Definitions by: samuelneff <https://github.com/samuelneff>
 //                 Peter Harris <https://github.com/codeanimal>
@@ -54,6 +54,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Antoine Boisadam <https://github.com/Antoine38660>
 //                 Dima Smirnov <https://github.com/smff>
 //                 Duy Truong <https://github.com/truongkhanhduy95>
+//                 Emmanuel Gautier <https://github.com/emmanuelgautier>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 // ***************************** IMPORTANT NOTE *****************************

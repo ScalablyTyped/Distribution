@@ -595,6 +595,38 @@ trait Witherable[T]
     * Partition a structure with effects
     */
   @JSName("wilt")
+  def wilt_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.HKT[T, _]]
+    ]
+  ] = js.native
+  /**
+    * Partition a structure with effects
+    */
+  @JSName("wilt")
+  def wilt_Traced[FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, FL]): js.Function2[
+    /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.libEitherMod.Either[_, _]]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      FL, 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.HKT[T, _]]
+    ]
+  ] = js.native
+  /**
+    * Partition a structure with effects
+    */
+  @JSName("wilt")
   def wilt_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -1149,6 +1181,30 @@ trait Witherable[T]
       fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.libOptionMod.Option[_]]
     ], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.libHKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Filter a structure  with effects
+    */
+  @JSName("wither")
+  def wither_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libHKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Filter a structure  with effects
+    */
+  @JSName("wither")
+  def wither_Traced[FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, FL]): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.libOptionMod.Option[_]]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   /**
     * Filter a structure  with effects

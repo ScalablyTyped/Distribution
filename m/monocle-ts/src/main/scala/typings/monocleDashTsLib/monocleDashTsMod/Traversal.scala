@@ -450,6 +450,28 @@ class Traversal[S, A] protected () extends js.Object {
     ]
   ] = js.native
   @JSName("modifyF")
+  def modifyF_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[monocleDashTsLib.monocleDashTsLibStrings.Traced]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ A, 
+      fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Traced, _, A]
+    ], 
+    js.Function1[
+      /* s */ S, 
+      fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Traced, _, S]
+    ]
+  ] = js.native
+  @JSName("modifyF")
+  def modifyF_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[monocleDashTsLib.monocleDashTsLibStrings.Traced, L]): js.Function1[
+    /* f */ js.Function1[
+      /* a */ A, 
+      fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Traced, L, A]
+    ], 
+    js.Function1[
+      /* s */ S, 
+      fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Traced, L, S]
+    ]
+  ] = js.native
+  @JSName("modifyF")
   def modifyF_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[monocleDashTsLib.monocleDashTsLibStrings.Tree]): js.Function1[
     /* f */ js.Function1[
       /* a */ A, 

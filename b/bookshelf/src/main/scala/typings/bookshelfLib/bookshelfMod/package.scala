@@ -14,9 +14,6 @@ package object bookshelfMod {
   ]
   type FetchAllOptions = FetchOptions
   type WithRelatedQuery = org.scalablytyped.runtime.StringDictionary[
-    js.Function1[
-      /* query */ knexLib.knexMod.QueryBuilder[js.Any, js.Array[stdLib.Partial[js.Any]]], 
-      knexLib.knexMod.QueryBuilder[js.Any, js.Array[stdLib.Partial[js.Any]]]
-    ]
+    js.Function1[/* query */ knexLib.knexMod.QueryBuilder, knexLib.knexMod.QueryBuilder]
   ]
 }

@@ -90,10 +90,8 @@ class Model[T /* <: Model[_] */] () extends ModelBase[T] {
   def orderBy(column: java.lang.String): T = js.native
   def orderBy(column: java.lang.String, order: SortOrder): T = js.native
   // Declaration order matters otherwise TypeScript gets confused between query() and query(...query: string[])
-  def query(): knexLib.knexMod.QueryBuilder[_, js.Array[stdLib.Partial[_]]] = js.native
-  def query(
-    callback: js.Function1[/* qb */ knexLib.knexMod.QueryBuilder[_, js.Array[stdLib.Partial[_]]], scala.Unit]
-  ): T = js.native
+  def query(): knexLib.knexMod.QueryBuilder = js.native
+  def query(callback: js.Function1[/* qb */ knexLib.knexMod.QueryBuilder, scala.Unit]): T = js.native
   def query(query: java.lang.String*): T = js.native
   def query(query: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
   def refresh(): bluebirdLib.bluebirdMod.^[T] = js.native

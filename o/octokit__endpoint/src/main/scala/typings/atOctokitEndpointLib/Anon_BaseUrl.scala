@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BaseUrl extends js.Object {
   var baseUrl: java.lang.String
-  var headers: Anon_AcceptUseragent
+  var headers: atOctokitEndpointLib.distDashTypesTypesMod.Headers with Anon_Accept
   var mediaType: Anon_FormatPreviews
-  var method: atOctokitEndpointLib.libTypesMod.Method
+  var method: atOctokitEndpointLib.distDashTypesTypesMod.Method
 }
 
 object Anon_BaseUrl {
   @scala.inline
   def apply(
     baseUrl: java.lang.String,
-    headers: Anon_AcceptUseragent,
+    headers: atOctokitEndpointLib.distDashTypesTypesMod.Headers with Anon_Accept,
     mediaType: Anon_FormatPreviews,
-    method: atOctokitEndpointLib.libTypesMod.Method
+    method: atOctokitEndpointLib.distDashTypesTypesMod.Method
   ): Anon_BaseUrl = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl, headers = headers, mediaType = mediaType, method = method)
   

@@ -316,6 +316,24 @@ object foldableNs extends js.Object {
     scala.Boolean
   ] = js.native
   @JSName("elem")
+  def elem_Traced[A](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    S: fpDashTsLib.libSetoidMod.Setoid[A]
+  ): js.Function2[
+    /* a */ A, 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A], 
+    scala.Boolean
+  ] = js.native
+  @JSName("elem")
+  def elem_Traced[A, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    S: fpDashTsLib.libSetoidMod.Setoid[A]
+  ): js.Function2[
+    /* a */ A, 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A], 
+    scala.Boolean
+  ] = js.native
+  @JSName("elem")
   def elem_Tree[A](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     S: fpDashTsLib.libSetoidMod.Setoid[A]
@@ -597,6 +615,18 @@ object foldableNs extends js.Object {
     fpDashTsLib.libOptionMod.Option[_]
   ] = js.native
   @JSName("find")
+  def find_Traced(F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* p */ fpDashTsLib.libFunctionMod.Predicate[_], 
+    fpDashTsLib.libOptionMod.Option[_]
+  ] = js.native
+  @JSName("find")
+  def find_Traced[L](F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    /* p */ fpDashTsLib.libFunctionMod.Predicate[_], 
+    fpDashTsLib.libOptionMod.Option[_]
+  ] = js.native
+  @JSName("find")
   def find_Tree(F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* fa */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
     /* p */ fpDashTsLib.libFunctionMod.Predicate[_], 
@@ -667,7 +697,7 @@ object foldableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     M: fpDashTsLib.libMonadMod.Monad2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function3[
     /* f */ js.Function2[
@@ -701,7 +731,7 @@ object foldableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     M: fpDashTsLib.libMonadMod.Monad2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       L
     ]
   ): js.Function3[
@@ -1215,6 +1245,24 @@ object foldableNs extends js.Object {
     M
   ] = js.native
   @JSName("foldMap")
+  def foldMap_Traced[M](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    M: fpDashTsLib.libMonoidMod.Monoid[M]
+  ): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* f */ js.Function1[/* a */ js.Any, M], 
+    M
+  ] = js.native
+  @JSName("foldMap")
+  def foldMap_Traced[M, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    M: fpDashTsLib.libMonoidMod.Monoid[M]
+  ): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    /* f */ js.Function1[/* a */ js.Any, M], 
+    M
+  ] = js.native
+  @JSName("foldMap")
   def foldMap_Tree[M](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     M: fpDashTsLib.libMonoidMod.Monoid[M]
@@ -1526,6 +1574,22 @@ object foldableNs extends js.Object {
     M
   ] = js.native
   @JSName("fold")
+  def fold_Traced[M](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    M: fpDashTsLib.libMonoidMod.Monoid[M]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, M], 
+    M
+  ] = js.native
+  @JSName("fold")
+  def fold_Traced[M, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    M: fpDashTsLib.libMonoidMod.Monoid[M]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, M], 
+    M
+  ] = js.native
+  @JSName("fold")
   def fold_Tree[M](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     M: fpDashTsLib.libMonoidMod.Monoid[M]
@@ -1828,6 +1892,20 @@ object foldableNs extends js.Object {
     _
   ] = js.native
   @JSName("foldr")
+  def foldr_Traced(F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function3[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* b */ js.Any, 
+    /* f */ js.Function2[/* a */ js.Any, /* b */ js.Any, _], 
+    _
+  ] = js.native
+  @JSName("foldr")
+  def foldr_Traced[L](F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function3[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    /* b */ js.Any, 
+    /* f */ js.Function2[/* a */ js.Any, /* b */ js.Any, _], 
+    _
+  ] = js.native
+  @JSName("foldr")
   def foldr_Tree(F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function3[
     /* fa */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
     /* b */ js.Any, 
@@ -1896,12 +1974,12 @@ object foldableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     G: fpDashTsLib.libFoldableMod.Foldable2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): fpDashTsLib.libFoldableMod.FoldableComposition12[fpDashTsLib.fpDashTsLibStrings.StrMap, fpDashTsLib.fpDashTsLibStrings.Writer] = js.native
   def getFoldableComposition(
     F: fpDashTsLib.libFoldableMod.Foldable2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     G: fpDashTsLib.libFoldableMod.Foldable1[
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
@@ -1909,19 +1987,19 @@ object foldableNs extends js.Object {
   ): fpDashTsLib.libFoldableMod.FoldableComposition21[fpDashTsLib.fpDashTsLibStrings.Writer, fpDashTsLib.fpDashTsLibStrings.StrMap] = js.native
   def getFoldableComposition(
     F: fpDashTsLib.libFoldableMod.Foldable2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     G: fpDashTsLib.libFoldableMod.Foldable2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): fpDashTsLib.libFoldableMod.FoldableComposition22[fpDashTsLib.fpDashTsLibStrings.Writer, fpDashTsLib.fpDashTsLibStrings.IOEither] = js.native
   def getFoldableComposition[LG](
     F: fpDashTsLib.libFoldableMod.Foldable2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       LG
     ],
     G: fpDashTsLib.libFoldableMod.Foldable2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): fpDashTsLib.libFoldableMod.FoldableComposition22C[fpDashTsLib.fpDashTsLibStrings.Writer, fpDashTsLib.fpDashTsLibStrings.IOEither, LG] = js.native
   def getFoldableComposition[UF, LF](
@@ -2103,6 +2181,16 @@ object foldableNs extends js.Object {
     F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.These, LG],
     G: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.These]
   ): fpDashTsLib.libFoldableMod.FoldableComposition22C[fpDashTsLib.fpDashTsLibStrings.These, fpDashTsLib.fpDashTsLibStrings.These, LG] = js.native
+  @JSName("getFoldableComposition")
+  def getFoldableComposition_Traced(
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    G: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced]
+  ): fpDashTsLib.libFoldableMod.FoldableComposition22[fpDashTsLib.fpDashTsLibStrings.Traced, fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
+  @JSName("getFoldableComposition")
+  def getFoldableComposition_Traced[LG](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, LG],
+    G: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced]
+  ): fpDashTsLib.libFoldableMod.FoldableComposition22C[fpDashTsLib.fpDashTsLibStrings.Traced, fpDashTsLib.fpDashTsLibStrings.Traced, LG] = js.native
   @JSName("getFoldableComposition")
   def getFoldableComposition_Tree(
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
@@ -2493,6 +2581,28 @@ object foldableNs extends js.Object {
     ]
   ] = js.native
   @JSName("intercalate")
+  def intercalate_Traced[M](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    M: fpDashTsLib.libMonoidMod.Monoid[M]
+  ): js.Function1[
+    /* sep */ M, 
+    js.Function1[
+      /* fm */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, M], 
+      M
+    ]
+  ] = js.native
+  @JSName("intercalate")
+  def intercalate_Traced[M, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    M: fpDashTsLib.libMonoidMod.Monoid[M]
+  ): js.Function1[
+    /* sep */ M, 
+    js.Function1[
+      /* fm */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, M], 
+      M
+    ]
+  ] = js.native
+  @JSName("intercalate")
   def intercalate_Tree[M](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     M: fpDashTsLib.libMonoidMod.Monoid[M]
@@ -2848,6 +2958,22 @@ object foldableNs extends js.Object {
     fpDashTsLib.libOptionMod.Option[A]
   ] = js.native
   @JSName("maximum")
+  def maximum_Traced[A](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    O: fpDashTsLib.libOrdMod.Ord[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A], 
+    fpDashTsLib.libOptionMod.Option[A]
+  ] = js.native
+  @JSName("maximum")
+  def maximum_Traced[A, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    O: fpDashTsLib.libOrdMod.Ord[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A], 
+    fpDashTsLib.libOptionMod.Option[A]
+  ] = js.native
+  @JSName("maximum")
   def maximum_Tree[A](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     O: fpDashTsLib.libOrdMod.Ord[A]
@@ -3185,6 +3311,22 @@ object foldableNs extends js.Object {
     fpDashTsLib.libOptionMod.Option[A]
   ] = js.native
   @JSName("minimum")
+  def minimum_Traced[A](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    O: fpDashTsLib.libOrdMod.Ord[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A], 
+    fpDashTsLib.libOptionMod.Option[A]
+  ] = js.native
+  @JSName("minimum")
+  def minimum_Traced[A, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    O: fpDashTsLib.libOrdMod.Ord[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A], 
+    fpDashTsLib.libOptionMod.Option[A]
+  ] = js.native
+  @JSName("minimum")
   def minimum_Tree[A](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     O: fpDashTsLib.libOrdMod.Ord[A]
@@ -3267,7 +3409,7 @@ object foldableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     P: fpDashTsLib.libPlusMod.Plus2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ]
   ): js.Function1[
     /* fga */ fpDashTsLib.libHKTMod.Type[
@@ -3295,7 +3437,7 @@ object foldableNs extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
     ],
     P: fpDashTsLib.libPlusMod.Plus2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       L
     ]
   ): js.Function1[
@@ -3698,6 +3840,22 @@ object foldableNs extends js.Object {
     A
   ] = js.native
   @JSName("product")
+  def product_Traced[A](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    S: fpDashTsLib.libSemiringMod.Semiring[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A], 
+    A
+  ] = js.native
+  @JSName("product")
+  def product_Traced[A, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    S: fpDashTsLib.libSemiringMod.Semiring[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A], 
+    A
+  ] = js.native
+  @JSName("product")
   def product_Tree[A](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     S: fpDashTsLib.libSemiringMod.Semiring[A]
@@ -3771,7 +3929,7 @@ object foldableNs extends js.Object {
   ] = js.native
   def sequence_(
     M: fpDashTsLib.libApplicativeMod.Applicative2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     F: fpDashTsLib.libFoldableMod.Foldable1[
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
@@ -3799,7 +3957,7 @@ object foldableNs extends js.Object {
   ] = js.native
   def sequence_[L](
     M: fpDashTsLib.libApplicativeMod.Applicative2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       L
     ],
     F: fpDashTsLib.libFoldableMod.Foldable1[
@@ -4205,6 +4363,22 @@ object foldableNs extends js.Object {
     A
   ] = js.native
   @JSName("sum")
+  def sum_Traced[A](
+    F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced],
+    S: fpDashTsLib.libSemiringMod.Semiring[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A], 
+    A
+  ] = js.native
+  @JSName("sum")
+  def sum_Traced[A, L](
+    F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L],
+    S: fpDashTsLib.libSemiringMod.Semiring[A]
+  ): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A], 
+    A
+  ] = js.native
+  @JSName("sum")
   def sum_Tree[A](
     F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree],
     S: fpDashTsLib.libSemiringMod.Semiring[A]
@@ -4434,6 +4608,16 @@ object foldableNs extends js.Object {
     fpDashTsLib.libArrayMod.Global.Array[_]
   ] = js.native
   @JSName("toArray")
+  def toArray_Traced(F: fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libArrayMod.Global.Array[_]
+  ] = js.native
+  @JSName("toArray")
+  def toArray_Traced[L](F: fpDashTsLib.libFoldableMod.Foldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    fpDashTsLib.libArrayMod.Global.Array[_]
+  ] = js.native
+  @JSName("toArray")
   def toArray_Tree(F: fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
     fpDashTsLib.libArrayMod.Global.Array[_]
@@ -4490,7 +4674,7 @@ object foldableNs extends js.Object {
   ] = js.native
   def traverse(
     M: fpDashTsLib.libApplicativeMod.Applicative2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     F: fpDashTsLib.libFoldableMod.Foldable1[
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
@@ -4520,7 +4704,7 @@ object foldableNs extends js.Object {
   ] = js.native
   def traverse[L](
     M: fpDashTsLib.libApplicativeMod.Applicative2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       L
     ],
     F: fpDashTsLib.libFoldableMod.Foldable1[
@@ -4573,7 +4757,7 @@ object foldableNs extends js.Object {
   ] = js.native
   def traverse_(
     M: fpDashTsLib.libApplicativeMod.Applicative2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     F: fpDashTsLib.libFoldableMod.Foldable1[
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
@@ -4603,7 +4787,7 @@ object foldableNs extends js.Object {
   ] = js.native
   def traverse_[L](
     M: fpDashTsLib.libApplicativeMod.Applicative2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       L
     ],
     F: fpDashTsLib.libFoldableMod.Foldable1[

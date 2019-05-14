@@ -35,25 +35,32 @@ object yogDashLogLibStrings {
     extends yogDashLogLib.yogDashLogMod.LevelInt
   
   @js.native
-  sealed trait ACCESS extends js.Object
+  sealed trait ACCESS
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @js.native
-  sealed trait ACCESS_ERROR extends js.Object
+  sealed trait ACCESS_ERROR
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @js.native
-  sealed trait DEBUG extends js.Object
+  sealed trait DEBUG
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @js.native
-  sealed trait FATAL extends js.Object
+  sealed trait FATAL
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @js.native
-  sealed trait NOTICE extends js.Object
+  sealed trait NOTICE
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait TRACE
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @js.native
-  sealed trait WARNING extends js.Object
+  sealed trait WARNING
+    extends yogDashLogLib.yogDashLogMod.LevelName
   
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]

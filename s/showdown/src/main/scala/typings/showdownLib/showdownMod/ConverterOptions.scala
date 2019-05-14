@@ -6,7 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConverterOptions extends ShowdownOptions {
-  var extensions: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  /**
+    * Add extensions to the new converter can be showdown extensions or "global" extensions name.
+    */
+  var extensions: js.UndefOr[
+    js.Array[
+      (js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]) | js.Array[ShowdownExtension] | ShowdownExtension | java.lang.String
+    ]
+  ] = js.undefined
 }
 
 object ConverterOptions {
@@ -17,8 +24,11 @@ object ConverterOptions {
     customizedHeaderId: js.UndefOr[scala.Boolean] = js.undefined,
     disableForced4SpacesIndentedSublists: js.UndefOr[scala.Boolean] = js.undefined,
     emoji: js.UndefOr[scala.Boolean] = js.undefined,
+    encodeEmails: js.UndefOr[scala.Boolean] = js.undefined,
     excludeTrailingPunctuationFromURLs: js.UndefOr[scala.Boolean] = js.undefined,
-    extensions: java.lang.String | js.Array[java.lang.String] = null,
+    extensions: js.Array[
+      (js.Function0[js.Array[ShowdownExtension] | ShowdownExtension]) | js.Array[ShowdownExtension] | ShowdownExtension | java.lang.String
+    ] = null,
     ghCodeBlocks: js.UndefOr[scala.Boolean] = js.undefined,
     ghCompatibleHeaderId: js.UndefOr[scala.Boolean] = js.undefined,
     ghMentions: js.UndefOr[scala.Boolean] = js.undefined,
@@ -31,6 +41,8 @@ object ConverterOptions {
     openLinksInNewWindow: js.UndefOr[scala.Boolean] = js.undefined,
     parseImgDimensions: js.UndefOr[scala.Boolean] = js.undefined,
     prefixHeaderId: java.lang.String | scala.Boolean = null,
+    rawHeaderId: js.UndefOr[scala.Boolean] = js.undefined,
+    rawPrefixHeaderId: js.UndefOr[scala.Boolean] = js.undefined,
     requireSpaceBeforeHeadingText: js.UndefOr[scala.Boolean] = js.undefined,
     simpleLineBreaks: js.UndefOr[scala.Boolean] = js.undefined,
     simplifiedAutoLink: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,8 +61,9 @@ object ConverterOptions {
     if (!js.isUndefined(customizedHeaderId)) __obj.updateDynamic("customizedHeaderId")(customizedHeaderId)
     if (!js.isUndefined(disableForced4SpacesIndentedSublists)) __obj.updateDynamic("disableForced4SpacesIndentedSublists")(disableForced4SpacesIndentedSublists)
     if (!js.isUndefined(emoji)) __obj.updateDynamic("emoji")(emoji)
+    if (!js.isUndefined(encodeEmails)) __obj.updateDynamic("encodeEmails")(encodeEmails)
     if (!js.isUndefined(excludeTrailingPunctuationFromURLs)) __obj.updateDynamic("excludeTrailingPunctuationFromURLs")(excludeTrailingPunctuationFromURLs)
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(ghCodeBlocks)) __obj.updateDynamic("ghCodeBlocks")(ghCodeBlocks)
     if (!js.isUndefined(ghCompatibleHeaderId)) __obj.updateDynamic("ghCompatibleHeaderId")(ghCompatibleHeaderId)
     if (!js.isUndefined(ghMentions)) __obj.updateDynamic("ghMentions")(ghMentions)
@@ -63,6 +76,8 @@ object ConverterOptions {
     if (!js.isUndefined(openLinksInNewWindow)) __obj.updateDynamic("openLinksInNewWindow")(openLinksInNewWindow)
     if (!js.isUndefined(parseImgDimensions)) __obj.updateDynamic("parseImgDimensions")(parseImgDimensions)
     if (prefixHeaderId != null) __obj.updateDynamic("prefixHeaderId")(prefixHeaderId.asInstanceOf[js.Any])
+    if (!js.isUndefined(rawHeaderId)) __obj.updateDynamic("rawHeaderId")(rawHeaderId)
+    if (!js.isUndefined(rawPrefixHeaderId)) __obj.updateDynamic("rawPrefixHeaderId")(rawPrefixHeaderId)
     if (!js.isUndefined(requireSpaceBeforeHeadingText)) __obj.updateDynamic("requireSpaceBeforeHeadingText")(requireSpaceBeforeHeadingText)
     if (!js.isUndefined(simpleLineBreaks)) __obj.updateDynamic("simpleLineBreaks")(simpleLineBreaks)
     if (!js.isUndefined(simplifiedAutoLink)) __obj.updateDynamic("simplifiedAutoLink")(simplifiedAutoLink)

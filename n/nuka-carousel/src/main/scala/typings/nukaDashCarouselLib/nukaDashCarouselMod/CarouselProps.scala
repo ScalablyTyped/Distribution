@@ -53,6 +53,11 @@ trait CarouselProps extends js.Object {
     */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Disable slides animation
+    * @default false
+    */
+  var disableAnimation: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Enable mouse swipe/dragging
     */
   var dragging: js.UndefOr[scala.Boolean] = js.undefined
@@ -83,6 +88,12 @@ trait CarouselProps extends js.Object {
     * @example '500px'
     */
   var framePadding: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Used to hardcode the slider height
+    * @example '80%'
+    * @example '500px'
+    */
+  var height: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Change the height of the slides based either on the first slide,
     * the current slide, or the maximum height of all slides.
@@ -214,12 +225,14 @@ object CarouselProps {
     cellAlign: CarouselCellAlignProp = null,
     cellSpacing: scala.Int | scala.Double = null,
     className: java.lang.String = null,
+    disableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
     dragging: js.UndefOr[scala.Boolean] = js.undefined,
     easing: java.lang.String = null,
     edgeEasing: java.lang.String = null,
     enableKeyboardControls: js.UndefOr[scala.Boolean] = js.undefined,
     frameOverflow: java.lang.String = null,
     framePadding: java.lang.String = null,
+    height: java.lang.String = null,
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: scala.Int | scala.Double = null,
     initialSlideWidth: scala.Int | scala.Double = null,
@@ -258,12 +271,14 @@ object CarouselProps {
     if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign)
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation)
     if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (edgeEasing != null) __obj.updateDynamic("edgeEasing")(edgeEasing)
     if (!js.isUndefined(enableKeyboardControls)) __obj.updateDynamic("enableKeyboardControls")(enableKeyboardControls)
     if (frameOverflow != null) __obj.updateDynamic("frameOverflow")(frameOverflow)
     if (framePadding != null) __obj.updateDynamic("framePadding")(framePadding)
+    if (height != null) __obj.updateDynamic("height")(height)
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode)
     if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
     if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])

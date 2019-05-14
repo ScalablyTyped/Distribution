@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("hapi-auth-jwt2", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[hapiLib.hapiMod.Plugin[RegisterOptions]]
+  extends org.scalablytyped.runtime.TopLevel[atHapiHapiLib.atHapiHapiMod.Plugin[RegisterOptions]]
 

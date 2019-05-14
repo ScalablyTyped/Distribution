@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Drawer/Drawer.DrawerProps, 'onClose' | 'open'> ]: @material-ui/core.@material-ui/core/Drawer/Drawer.DrawerProps[P]} */ @js.native
+- Dropped @material-ui/core.@material-ui/core/Drawer/Drawer.DrawerProps extends any ? std.Pick<@material-ui/core.@material-ui/core/Drawer/Drawer.DrawerProps, std.Exclude<keyof @material-ui/core.@material-ui/core/Drawer/Drawer.DrawerProps, 'onClose' | 'open'>> : never */ @js.native
 trait SwipeableDrawerProps extends js.Object {
   var SwipeAreaProps: js.UndefOr[js.Object] = js.native
   var disableBackdropTransition: js.UndefOr[scala.Boolean] = js.native

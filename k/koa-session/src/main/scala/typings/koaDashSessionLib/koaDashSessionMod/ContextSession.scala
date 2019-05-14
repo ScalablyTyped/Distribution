@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ContextSession extends js.Object {
-  var app: scala.Nothing
+  var app: /* import warning: ImportType.apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any
   var ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context
   var opts: koaDashSessionLib.koaDashSessionMod.opts
   var prevHash: java.lang.String
@@ -34,7 +34,7 @@ trait ContextSession extends js.Object {
 object ContextSession {
   @scala.inline
   def apply(
-    app: scala.Nothing,
+    app: /* import warning: ImportType.apply Failed type conversion: koa-session.koa-session.koa.Context['app'] */ js.Any,
     commit: () => js.Promise[scala.Unit],
     ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context,
     get: () => Session,

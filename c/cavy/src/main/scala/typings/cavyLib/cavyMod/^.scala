@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def hook[T /* <: js.Object */](component: reactLib.reactMod.ComponentClass[WithTestHook[T], reactLib.reactMod.ComponentState]): reactLib.reactMod.ComponentClass[T, reactLib.reactMod.ComponentState] = js.native
+  def useCavy(): TestHookGenerator = js.native
 }
 

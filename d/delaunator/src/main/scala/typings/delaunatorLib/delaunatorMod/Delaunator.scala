@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Delaunator[P] extends js.Object {
   /**
-    * A flat Int32Array array of triangle half-edge indices that allows you to traverse the triangulation.
+    * An array of input coordinates in the form [x0, y0, x1, y1, ....], of the type provided in the constructor (or Float64Array if you used Delaunator.from).
+    */
+  var coords: stdLib.ArrayLike[scala.Double] | stdLib.Float64Array
+  /**
+    * A Int32Array array of triangle half-edge indices that allows you to traverse the triangulation.
     * i-th half-edge in the array corresponds to vertex triangles[i] the half-edge is coming from.
     * halfedges[i] is the index of a twin half-edge in an adjacent triangle (or -1 for outer half-edges on the convex hull).
     *
@@ -15,19 +19,25 @@ trait Delaunator[P] extends js.Object {
     */
   var halfedges: stdLib.Int32Array
   /**
-    * A circular doubly-linked list that holds a convex hull of the delaunay triangulation.
+    * A Uint32Array array of indices that reference points on the convex hull of the input data, counter-clockwise.
     */
-  var hull: Node
+  var hull: stdLib.Uint32Array
   /**
-    * A flat Uint32Array array of triangle vertex indices (each group of three numbers forms a triangle). All triangles are directed counterclockwise.
+    * A Uint32Array array of triangle vertex indices (each group of three numbers forms a triangle).
+    * All triangles are directed counterclockwise.
     */
   var triangles: stdLib.Uint32Array
 }
 
 object Delaunator {
   @scala.inline
-  def apply[P](halfedges: stdLib.Int32Array, hull: Node, triangles: stdLib.Uint32Array): Delaunator[P] = {
-    val __obj = js.Dynamic.literal(halfedges = halfedges, hull = hull, triangles = triangles)
+  def apply[P](
+    coords: stdLib.ArrayLike[scala.Double] | stdLib.Float64Array,
+    halfedges: stdLib.Int32Array,
+    hull: stdLib.Uint32Array,
+    triangles: stdLib.Uint32Array
+  ): Delaunator[P] = {
+    val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], halfedges = halfedges, hull = hull, triangles = triangles)
   
     __obj.asInstanceOf[Delaunator[P]]
   }

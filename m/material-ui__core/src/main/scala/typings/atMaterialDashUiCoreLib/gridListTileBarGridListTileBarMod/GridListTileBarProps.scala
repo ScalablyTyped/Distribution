@@ -5,14 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof {}, 'classes' | never> ]: {}[P]} */ trait GridListTileBarProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListTileBarClassKey]
-     with atMaterialDashUiCoreLib.Anon_ClassName {
+/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/core.@material-ui/core/GridListTileBar/GridListTileBar.GridListTileBarClassKey, never> */
+trait GridListTileBarProps extends js.Object {
   var actionIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var actionPosition: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right
   ] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
+  var classes: js.UndefOr[
+    stdLib.Partial[
+      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridListTileBarClassKey]
+    ]
+  ] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subtitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var titlePosition: js.UndefOr[

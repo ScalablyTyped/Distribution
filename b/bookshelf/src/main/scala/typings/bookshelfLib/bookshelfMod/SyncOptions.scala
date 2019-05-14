@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SyncOptions extends js.Object {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
-  var transacting: js.UndefOr[knexLib.knexMod.Transaction[_]] = js.undefined
+  var transacting: js.UndefOr[knexLib.knexMod.Transaction] = js.undefined
   var withSchema: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -15,7 +15,7 @@ object SyncOptions {
   @scala.inline
   def apply(
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.Transaction[_] = null,
+    transacting: knexLib.knexMod.Transaction = null,
     withSchema: java.lang.String = null
   ): SyncOptions = {
     val __obj = js.Dynamic.literal()

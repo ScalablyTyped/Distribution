@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.View")
 @js.native
-class View () extends js.Object {
+class View () extends Base {
   /**
     * Controls whether the view is automatically updated in the next animation frame on changes, or whether you prefer to manually call update() or requestUpdate() after changes. Note that this is true by default, except for Node.js, where manual updates make more sense.
     */
@@ -96,11 +96,6 @@ class View () extends js.Object {
     * @param type - the event type: ‘frame’, ‘resize’, ‘mousedown’, ‘mouseup’, ‘mousedrag’, ‘click’, ‘doubleclick’, ‘mousemove’, ‘mouseenter’, ‘mouseleave’
     * @param callback - The function to be detached
     */
-  /**
-    * Detach an event handler from the view.
-    * @param type - the event type: ‘frame’, ‘resize’, ‘mousedown’, ‘mouseup’, ‘mousedrag’, ‘click’, ‘doubleclick’, ‘mousemove’, ‘mouseenter’, ‘mouseleave’
-    * @param callback - The function to be detached
-    */       
   def off(
     `type`: java.lang.String,
     callback: js.Function1[(/* event */ Event) | (/* event */ IFrameEvent), scala.Boolean | scala.Unit]

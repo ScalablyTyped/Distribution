@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-pagination
 
-Typings are for version 1.17.14
+Typings are for version 1.18.0
 
 ## Library description:
 pagination ui component for react

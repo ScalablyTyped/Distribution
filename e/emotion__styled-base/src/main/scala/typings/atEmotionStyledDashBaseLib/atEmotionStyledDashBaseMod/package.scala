@@ -14,5 +14,5 @@ package object atEmotionStyledDashBaseMod {
   ]
   type JSXInEl = reactLib.reactMod.Global.JSXNs.IntrinsicElements
   type ReactClassPropKeys = java.lang.String
-  type WithTheme[P, T] = (P with atEmotionStyledDashBaseLib.Anon_Theme[T]) | (P with atEmotionStyledDashBaseLib.Anon_ThemeAny)
+  type WithTheme[P, T] = (P with atEmotionStyledDashBaseLib.Anon_ThemeT[T]) | (P with atEmotionStyledDashBaseLib.Anon_ThemeAny)
 }

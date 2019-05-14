@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi-auth-jwt2
 
-Typings are for version 8.0
+Typings are for version 8.6.1
 
 ## Library description:
 Hapi.js Authentication Plugin/Scheme using JSON Web Tokens (JWT)
@@ -24,23 +24,11 @@ Hapi.js Authentication Plugin/Scheme using JSON Web Tokens (JWT)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for hapi-auth-jwt2 8.0
-// Project: https://github.com/dwyl/hapi-auth-jwt2
-// Definitions by: Warren Seymour <https://github.com/warrenseymour>
-//                 Simon Schick <https://github.com/SimonSchick>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
-
-```
 

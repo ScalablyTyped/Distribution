@@ -5,9 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_AppId extends js.Object {
   //  小程序appId
-  var appId: java.lang.String = js.native
+  var appId: java.lang.String
+}
+
+object Anon_AppId {
+  @scala.inline
+  def apply(appId: java.lang.String): Anon_AppId = {
+    val __obj = js.Dynamic.literal(appId = appId)
+  
+    __obj.asInstanceOf[Anon_AppId]
+  }
 }
 

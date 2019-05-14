@@ -16,7 +16,7 @@ package object propDashTypesMod {
   type ReactNodeLike = js.UndefOr[
     js.Object | ReactElementLike | ReactNodeArray | java.lang.String | scala.Double | scala.Boolean | scala.Null
   ]
-  type RequiredKeys[V] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof V ]: -? K}[keyof V] */ js.Any
+  type RequiredKeys[V] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof V ]: -? std.Exclude<V[K], undefined> extends prop-types.prop-types.Validator<infer T>? prop-types.prop-types.IsOptional<any> extends true? never : K : never}[keyof V] */ js.Any
   type ValidationMap[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]:? prop-types.prop-types.Validator<T[K]>}
     */ propDashTypesLib.propDashTypesLibStrings.ValidationMap with T

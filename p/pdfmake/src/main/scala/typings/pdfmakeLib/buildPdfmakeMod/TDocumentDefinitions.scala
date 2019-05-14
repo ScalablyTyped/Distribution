@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TDocumentDefinitions extends js.Object {
   var background: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   var compress: js.UndefOr[scala.Boolean] = js.undefined
-  var content: java.lang.String | Content
+  var content: java.lang.String | Content | (js.Array[java.lang.String | Content])
   var defaultStyle: js.UndefOr[Style] = js.undefined
   var footer: js.UndefOr[TDocumentHeaderFooterFunction] = js.undefined
   var header: js.UndefOr[TDocumentHeaderFooterFunction] = js.undefined
@@ -32,7 +32,7 @@ trait TDocumentDefinitions extends js.Object {
 object TDocumentDefinitions {
   @scala.inline
   def apply(
-    content: java.lang.String | Content,
+    content: java.lang.String | Content | (js.Array[java.lang.String | Content]),
     background: () => java.lang.String = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
     defaultStyle: Style = null,

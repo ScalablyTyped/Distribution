@@ -1,14 +1,14 @@
-[debug] PhaseRunner.scala:82 Success [id => @ember/polyfills, phase => typescript] 
-[debug] PhaseRunner.scala:82 Success [id => @ember/polyfills, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills),TsIdentLibraryScoped(ember,Some(polyfills))),TsIdentModule(Some(ember),List(polyfills))) [id => @ember/polyfills, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => @ember/polyfills, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => @ember/polyfills, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills),TsIdentLibraryScoped(ember,Some(polyfills))),TsIdentModule(Some(ember),List(polyfills))) [id => @ember/polyfills, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(polyfills)) [id => @ember/polyfills, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills),TsIdentLibraryScoped(ember,Some(polyfills))),TsIdentModule(Some(ember),List(polyfills, types))) [id => @ember/polyfills, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills),TsIdentLibraryScoped(ember,Some(polyfills))),TsIdentModule(Some(ember),List(polyfills, types))) [id => @ember/polyfills, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(polyfills, types)) [id => @ember/polyfills, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibraryScoped(ember,Some(polyfills)) [id => @ember/polyfills, phase => typescript] 
-[debug] PhaseRunner.scala:82 Success [id => @ember/polyfills, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:40 Processing @ember/polyfills [id => @ember/polyfills, phase => scala.js] 
-[debug] PhaseRunner.scala:82 Success [id => @ember/polyfills, phase => scala.js] 
-[warn ] Npmjs.scala:106 Could't fetch metadata for TsIdentLibraryScoped(ember,Some(polyfills)) [id => @ember/polyfills, phase => build] gigahorse.StatusError: Unexpected status: 404
+[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibraryScoped(ember,Some(polyfills)) [id => @ember/polyfills, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => @ember/polyfills, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing @ember/polyfills [id => @ember/polyfills, phase => scala.js] 
+[debug] PhaseRunner.scala:84 Success [id => @ember/polyfills, phase => scala.js] 
+[warn ] Npmjs.scala:108 Could't fetch metadata for TsIdentLibraryScoped(ember,Some(polyfills)) [id => @ember/polyfills, phase => build] gigahorse.StatusError: Unexpected status: 404
 	at gigahorse.StatusError$.apply(StatusError.scala:29)
 	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
 	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
@@ -24,5 +24,5 @@
 [error] atEmberPolyfillsMod.scala:14 cyclic aliasing or subtyping involving type Mix,   def assign[T /* <: js.Object */, U /* <: js.Object */, V /* <: js.Object */, W /* <: js.Object */](target: T, source1: U, source2: V, source3: W): atEmberPolyfillsLib.typesMod.Mix4[T, U, V, W] = js.native [id => @ember/polyfills, phase => build] 
 [error] package.scala:10 cyclic aliasing or subtyping involving type Mix,   type Mix3[A, B, C] = Mix[Mix[A, B], C] [id => @ember/polyfills, phase => build] 
 [error] package.scala:11 typings.atEmberPolyfillsLib.typesMod.package.Mix3 does not take type parameters,   type Mix4[A, B, C, D] = Mix3[Mix[A, B], C, D] [id => @ember/polyfills, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => publish] 
+[error] PhaseRunner.scala:88 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => publish] 

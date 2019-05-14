@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait SnackbarProps
+- Dropped react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps> extends any ? std.Pick<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never>> : never */ trait SnackbarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SnackbarClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ClickAwayListenerProps: js.UndefOr[
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
   var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[_]] = js.undefined
   var open: scala.Boolean
   var resumeHideDuration: js.UndefOr[scala.Double] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
 }
 
 object SnackbarProps {
@@ -63,7 +63,7 @@ object SnackbarProps {
     onMouseLeave: reactLib.reactMod.MouseEventHandler[_] = null,
     resumeHideDuration: scala.Int | scala.Double = null,
     style: reactLib.reactMod.CSSProperties = null,
-    transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null
   ): SnackbarProps = {
     val __obj = js.Dynamic.literal(open = open)
     if (ClickAwayListenerProps != null) __obj.updateDynamic("ClickAwayListenerProps")(ClickAwayListenerProps)
@@ -83,7 +83,7 @@ object SnackbarProps {
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (resumeHideDuration != null) __obj.updateDynamic("resumeHideDuration")(resumeHideDuration.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarProps]
   }
 }

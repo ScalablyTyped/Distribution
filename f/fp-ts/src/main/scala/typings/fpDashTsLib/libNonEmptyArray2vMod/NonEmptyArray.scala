@@ -10,7 +10,6 @@ trait NonEmptyArray[A]
   var `0`: A
   def concat(as: fpDashTsLib.libArrayMod.Global.Array[A]): NonEmptyArray[A]
   def map[B](f: js.Function3[/* a */ A, /* index */ scala.Double, /* nea */ NonEmptyArray[A], B]): NonEmptyArray[B]
-  def reverse(): NonEmptyArray[A]
 }
 
 object NonEmptyArray {
@@ -20,10 +19,9 @@ object NonEmptyArray {
     _A: A,
     _URI: fpDashTsLib.libArrayMod.URI,
     concat: fpDashTsLib.libArrayMod.Global.Array[A] => NonEmptyArray[A],
-    map: js.Function3[/* a */ A, /* index */ scala.Double, /* nea */ NonEmptyArray[A], js.Any] => NonEmptyArray[js.Any],
-    reverse: () => NonEmptyArray[A]
+    map: js.Function3[/* a */ A, /* index */ scala.Double, /* nea */ NonEmptyArray[A], js.Any] => NonEmptyArray[js.Any]
   ): NonEmptyArray[A] = {
-    val __obj = js.Dynamic.literal(_A = _A.asInstanceOf[js.Any], _URI = _URI, concat = js.Any.fromFunction1(concat), map = js.Any.fromFunction1(map), reverse = js.Any.fromFunction0(reverse))
+    val __obj = js.Dynamic.literal(_A = _A.asInstanceOf[js.Any], _URI = _URI, concat = js.Any.fromFunction1(concat), map = js.Any.fromFunction1(map))
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonEmptyArray[A]]
   }

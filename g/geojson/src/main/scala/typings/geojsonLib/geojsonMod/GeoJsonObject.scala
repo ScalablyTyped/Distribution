@@ -28,7 +28,7 @@ object GeoJsonObject {
   @scala.inline
   def apply(`type`: GeoJsonTypes, bbox: BBox = null): GeoJsonObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJsonObject]
   }

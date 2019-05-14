@@ -13,11 +13,10 @@ object LocalAuthenticationNs extends js.Object {
     var FINGERPRINT: scala.Double
   }
   
-  @js.native
   trait LocalAuthenticationResult extends js.Object {
     /** Error code in the case where authentication fails. */
-    var error: js.UndefOr[java.lang.String] = js.native
-    var success: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
+    var error: js.UndefOr[java.lang.String] = js.undefined
+    var success: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.undefined
   }
   
   /**

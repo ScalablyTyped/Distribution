@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Item")
 @js.native
-class Item () extends js.Object {
+class Item () extends Base {
   /**
     * Controls whether the transformations applied to the item (e.g. through transform(matrix), rotate(angle), scale(scale), etc.) are stored in its matrix property, or whether they are directly applied to its contents or children (passed on to the segments in Path items, the children of Group items, etc.).
     */
@@ -208,7 +208,7 @@ class Item () extends js.Object {
   /**
     * The path style of the item.
     */
-  var style: Style = js.native
+  var style: stdLib.Partial[Style] = js.native
   /**
     * The tangential vector to the #curve at the given location.
     */
@@ -295,14 +295,6 @@ class Item () extends js.Object {
     */
   def emit(`type`: java.lang.String, event: js.Any): scala.Boolean = js.native
   /**
-    * Exports (serializes) the project with all its layers and child items to a JSON data string.
-    * @param options [optional] - default {asString: true, precision: 5}
-    * @param options.asString - whether the JSON is returned as a Object or a String.
-    * @param options.precision - the amount of fractional digits in numbers used in JSON data.
-    */
-  def exportJSON(): java.lang.String = js.native
-  def exportJSON(options: paperLib.Anon_AsString): java.lang.String = js.native
-  /**
     * Exports the project with all its layers and child items as an SVG DOM, all contained in one top level SVG group node.
     * @param options [optional] the export options, default: { asString: false, precision: 5, matchShapes: false, bounds: 'view', matrix: paper.view.matrix, embedImages: true  }
     * @param options.asString - whether a SVG node or a String is to be returned.
@@ -313,7 +305,7 @@ class Item () extends js.Object {
     * @param options.embedImages: whether raster images should be embedded as base64 data inlined in the xlink:href attribute, or kept as a link to their external URL.
     */
   def exportSVG(): stdLib.SVGElement = js.native
-  def exportSVG(options: paperLib.Anon_AsStringBounds): stdLib.SVGElement = js.native
+  def exportSVG(options: paperLib.Anon_AsString): stdLib.SVGElement = js.native
   /**
     * Transform the item so that its bounds fit within the specified rectangle, without changing its aspect ratio.
     * @param rectangle -
@@ -321,6 +313,7 @@ class Item () extends js.Object {
     */
   def fitBounds(rectangle: Rectangle): scala.Unit = js.native
   def fitBounds(rectangle: Rectangle, fill: scala.Boolean): scala.Unit = js.native
+  def getFillColor(): Color = js.native
   /**
     * Fetch the first descendant (child or child of child) of this item that matches the properties in the specified object.
     * Extended matching is possible by providing a compare function or regular expression. Matching points, colors only work as a comparison of the full object, not partial matching (e.g. only providing the x- coordinate to match all points with that x-value). Partial matching does work for item.data.
@@ -342,6 +335,10 @@ class Item () extends js.Object {
     * Gets the current rotation of the item.
     */
   def getRotation(): scala.Double = js.native
+  def getSelectedColor(): Color = js.native
+  def getShadowColor(): Color = js.native
+  def getStrokeColor(): Color = js.native
+  def getStyle(): Style = js.native
   /**
     * Converts the specified point from global project coordinate space to the item's own local coordinate space.
     * @param point - the point to be transformed
@@ -405,11 +402,6 @@ class Item () extends js.Object {
     * */
   def hitTestAll(point: Point): js.Array[HitResult] = js.native
   def hitTestAll(point: Point, options: IHitTestOptions): js.Array[HitResult] = js.native
-  /**
-    * Imports (deserializes) the stored JSON data into the project.
-    * Note that the project is not cleared first. You can call project.clear() to do so.
-    */
-  def importJSON(json: java.lang.String): scala.Unit = js.native
   def importSVG(svg: java.lang.String): Item = js.native
   def importSVG(
     svg: java.lang.String,
@@ -599,7 +591,7 @@ class Item () extends js.Object {
     */
   def onClick(event: MouseEvent): scala.Unit | scala.Boolean = js.native
   /**
-    * The function to be called when the mouse double clicks on the item. The function receives a MouseEvent object which contains information about the mouse event.         * 
+    * The function to be called when the mouse double clicks on the item. The function receives a MouseEvent object which contains information about the mouse event.         *
     * Note that such mouse events bubble up the scene graph hierarchy and will reach the view, unless they are stopped with event.stopPropagation() or by returning false from the handler.
     */
   def onDoubleClick(event: MouseEvent): scala.Unit | scala.Boolean = js.native
@@ -744,6 +736,18 @@ class Item () extends js.Object {
     * Sets those properties of the passed object literal on this item to the values defined in the object literal, if the item has property of the given name (or a setter defined for it).
     */
   def set(props: js.Any): Item = js.native
+  def setFillColor(): scala.Unit = js.native
+  def setFillColor(value: java.lang.String): scala.Unit = js.native
+  def setFillColor(value: Color): scala.Unit = js.native
+  def setSelectedColor(value: java.lang.String): scala.Unit = js.native
+  def setSelectedColor(value: Color): scala.Unit = js.native
+  def setShadowColor(): scala.Unit = js.native
+  def setShadowColor(value: java.lang.String): scala.Unit = js.native
+  def setShadowColor(value: Color): scala.Unit = js.native
+  def setStrokeColor(): scala.Unit = js.native
+  def setStrokeColor(value: java.lang.String): scala.Unit = js.native
+  def setStrokeColor(value: Color): scala.Unit = js.native
+  def setStyle(value: stdLib.Partial[Style]): scala.Unit = js.native
   /**
     * Shears the item by the given values from its center point, or optionally by a supplied point.
     * @param hor - the horizontal shear factor

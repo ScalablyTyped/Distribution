@@ -7,13 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait CreateTaskRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that is used to monitor and log events in the task. For more information on these groups, see Working with Log Groups and Log Streams in the Amazon CloudWatch User Guide.   For more information about how to useCloudWatchLogs with DataSync, see Monitoring Your Task.
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that is used to monitor and log events in the task.  For more information on these groups, see "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html" (Working with Log Groups and Log Streams) in the Amazon CloudWatch User Guide. For more information about how to useCloudWatchLogs with DataSync, see "https://docs.aws.amazon.com/datasync/latest/userguide/monitor-datasync.html" (Monitoring Your Task)
     */
   var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of an AWS storage resource's location. 
     */
   var DestinationLocationArn: LocationArn
+  /**
+    *  A filter that determines which files to exclude from a task based on the specified pattern. Transfers all files in the task’s subdirectory, except files that match the filter that is set. 
+    */
+  var Excludes: js.UndefOr[FilterList] = js.undefined
   /**
     * The name of a task. This value is a text reference that is used to identify the task in the console. 
     */
@@ -38,12 +42,14 @@ object CreateTaskRequest {
     DestinationLocationArn: LocationArn,
     SourceLocationArn: LocationArn,
     CloudWatchLogGroupArn: LogGroupArn = null,
+    Excludes: FilterList = null,
     Name: TagValue = null,
     Options: Options = null,
     Tags: TagList = null
   ): CreateTaskRequest = {
     val __obj = js.Dynamic.literal(DestinationLocationArn = DestinationLocationArn, SourceLocationArn = SourceLocationArn)
     if (CloudWatchLogGroupArn != null) __obj.updateDynamic("CloudWatchLogGroupArn")(CloudWatchLogGroupArn)
+    if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Options != null) __obj.updateDynamic("Options")(Options)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)

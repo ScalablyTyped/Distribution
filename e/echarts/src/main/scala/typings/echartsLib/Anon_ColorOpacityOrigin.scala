@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ColorOpacityOrigin extends js.Object {
   /**
     * Fill color.
@@ -25,7 +24,7 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     * "#000"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.color
     */
-  var color: js.UndefOr[java.lang.String] = js.native
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Opacity of the component.
     * Supports value from 0 to 1, and the component will not be
@@ -34,7 +33,7 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.opacity
     */
-  var opacity: js.UndefOr[scala.Double] = js.native
+  var opacity: js.UndefOr[scala.Double] = js.undefined
   /**
     * Origin position of area.
     *
@@ -56,7 +55,7 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     * "auto"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.origin
     */
-  var origin: js.UndefOr[java.lang.String] = js.native
+  var origin: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Size of shadow blur.
     * This attribute should be used along with `shadowColor`,`shadowOffsetX`,
@@ -69,27 +68,50 @@ trait Anon_ColorOpacityOrigin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowBlur
     */
-  var shadowBlur: js.UndefOr[scala.Double] = js.native
+  var shadowBlur: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowColor
     */
-  var shadowColor: js.UndefOr[java.lang.String] = js.native
+  var shadowColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[scala.Double] = js.native
+  var shadowOffsetX: js.UndefOr[scala.Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[scala.Double] = js.native
+  var shadowOffsetY: js.UndefOr[scala.Double] = js.undefined
+}
+
+object Anon_ColorOpacityOrigin {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    origin: java.lang.String = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null
+  ): Anon_ColorOpacityOrigin = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColorOpacityOrigin]
+  }
 }
 

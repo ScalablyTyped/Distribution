@@ -12,7 +12,7 @@ package object outputMod {
   type LiftedObject[T, K /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in K ]: @pulumi/pulumi.@pulumi/pulumi/output.Output<T[P]>}
     */ atPulumiPulumiLib.atPulumiPulumiLibStrings.LiftedObject with T
-  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
+  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   type Output[T] = OutputInstance[T] with Lifted[T]
   type Unwrap[T] = UnwrapSimple[T] | UnwrapSimple[js.Any]
   type UnwrapSimple[T] = UnwrappedObject[T] | UnwrappedArray[js.Any] | T

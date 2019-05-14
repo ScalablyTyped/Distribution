@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scc-broker-client"
-version := "6.1-dt-20181218Z-bdc56b"
+version := "6.1-dt-20181218Z-e765ee"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,17 +9,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "component-emitter" % "v1.2.1-dt-20190322Z-365360",
   "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-ef006c",
   "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-2e6cef",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-859b06",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-4bdb85",
-  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-b1c5a0",
-  "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20190415Z-1308c2",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-31d6b3",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-af815c",
+  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-d96021",
+  "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20190415Z-1e956c",
   "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181130Z-452946",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-d97789",
-  "org.scalablytyped" %%% "socketcluster-client" % "13.0-dt-20190212Z-e9fa40",
-  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190415Z-8ad664",
+  "org.scalablytyped" %%% "sc-errors" % "1.4-dt-20190513Z-53d5c8",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-165a13",
+  "org.scalablytyped" %%% "socketcluster-client" % "13.0-dt-20190513Z-136e19",
+  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190415Z-fcb612",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-1ac760")
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-04fd62")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

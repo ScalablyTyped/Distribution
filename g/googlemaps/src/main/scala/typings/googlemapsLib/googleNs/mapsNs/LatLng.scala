@@ -11,6 +11,12 @@ class LatLng protected ()
   extends googlemapsLib.googleNs.mapsNs.placesNs._LocationBias {
   /**
     * Creates a LatLng object representing a geographic point.
+    * @param literal Object literal.
+    * @param noWrap Set noWrap to true to enable values outside of this range.
+    */
+  def this(literal: LatLngLiteral) = this()
+  /**
+    * Creates a LatLng object representing a geographic point.
     * Note the ordering of latitude and longitude.
     * @param lat Latitude is specified in degrees within the range [-90, 90].
     * @param lng Longitude is specified in degrees within the range [-180,
@@ -18,6 +24,7 @@ class LatLng protected ()
     * @param noWrap Set noWrap to true to enable values outside of this range.
     */
   def this(lat: scala.Double, lng: scala.Double) = this()
+  def this(literal: LatLngLiteral, noWrap: scala.Boolean) = this()
   def this(lat: scala.Double, lng: scala.Double, noWrap: scala.Boolean) = this()
   /** Comparison function. */
   def equals(other: LatLng): scala.Boolean = js.native

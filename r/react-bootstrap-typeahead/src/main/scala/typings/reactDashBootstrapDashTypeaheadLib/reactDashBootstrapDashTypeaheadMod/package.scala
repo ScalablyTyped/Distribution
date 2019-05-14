@@ -24,7 +24,7 @@ package object reactDashBootstrapDashTypeaheadMod {
     TypeaheadProps[js.Any], 
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.align | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.dropup | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.flip | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onMenuHide | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onMenuShow | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onMenuToggle
   ]
-  type StringPropertyNames[T /* <: js.Object */] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
+  type StringPropertyNames[T /* <: js.Object */] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends string? K : never}[keyof T] */ js.Any
   type TypeaheadInputProps[T /* <: TypeaheadModel */] = stdLib.Pick[TypeaheadProps[T], TypeaheadInputPropKeys]
   type TypeaheadLabelKey[T /* <: TypeaheadModel */] = StringPropertyNames[T] | (js.Function1[/* option */ T, java.lang.String])
   type TypeaheadModel = java.lang.String | js.Object

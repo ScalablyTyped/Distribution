@@ -5,8 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait CacheConfig extends js.Object {
-  var percentageLeft: scala.Double = js.native
+  var percentageLeft: scala.Double
+}
+
+object CacheConfig {
+  @scala.inline
+  def apply(percentageLeft: scala.Double): CacheConfig = {
+    val __obj = js.Dynamic.literal(percentageLeft = percentageLeft)
+  
+    __obj.asInstanceOf[CacheConfig]
+  }
 }
 

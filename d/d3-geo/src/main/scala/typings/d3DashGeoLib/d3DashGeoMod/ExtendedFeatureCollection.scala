@@ -18,7 +18,7 @@ object ExtendedFeatureCollection {
     bbox: geojsonLib.geojsonMod.BBox = null
   ): ExtendedFeatureCollection[FeatureType] = {
     val __obj = js.Dynamic.literal(features = features)
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedFeatureCollection[FeatureType]]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'children'> ]: @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait DialogProps
+- Dropped @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps> extends any ? std.Pick<@material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, std.Exclude<keyof @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'children'>> : never */ trait DialogProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[DialogClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var PaperComponent: js.UndefOr[
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   var scroll: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.body | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paper
   ] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
 }
 
 object DialogProps {
@@ -45,7 +45,7 @@ object DialogProps {
     maxWidth: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xs | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sm | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.md | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.lg | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xl | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibNumbers.`false` = null,
     scroll: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.body | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paper = null,
     style: reactLib.reactMod.CSSProperties = null,
-    transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null
   ): DialogProps = {
     val __obj = js.Dynamic.literal()
     if (PaperComponent != null) __obj.updateDynamic("PaperComponent")(PaperComponent.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object DialogProps {
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogProps]
   }
 }

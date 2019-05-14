@@ -1,7 +1,7 @@
 
 # Scala.js typings for pump
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 pipe streams together and close all of them if one of them closes
@@ -35,9 +35,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for pump 1.0
+// Type definitions for pump 1.1
 // Project: https://github.com/mafintosh/pump
-// Definitions by: Tomek Łaziuk <https://github.com/tlaziuk>
+// Definitions by: Tomek Łaziuk <https://github.com/tlaziuk>, Jason Cordial <https://github.com/jcordial>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

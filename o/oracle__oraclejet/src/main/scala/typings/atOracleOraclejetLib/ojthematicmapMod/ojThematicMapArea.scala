@@ -26,7 +26,9 @@ trait ojThematicMapArea
     _
   ]) | scala.Null = js.native
   var onLabelStyleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var onLocationChanged: (js.Function1[
@@ -52,7 +54,9 @@ trait ojThematicMapArea
     _
   ]) | scala.Null = js.native
   var onSvgStyleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var opacity: scala.Double = js.native
@@ -60,6 +64,27 @@ trait ojThematicMapArea
   var shortDesc: java.lang.String = js.native
   var svgClassName: java.lang.String = js.native
   var svgStyle: js.Object = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
   def addEventListener(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectableChanged,
     listener: js.ThisFunction1[
@@ -76,6 +101,27 @@ trait ojThematicMapArea
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
         atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any
       ], 
       _
     ],
@@ -563,25 +609,6 @@ trait ojThematicMapArea
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_labelStyleChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_labelStyleChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1092,25 +1119,6 @@ trait ojThematicMapArea
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_svgStyleChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_svgStyleChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_timeupdate(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.timeupdate,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -1261,7 +1269,7 @@ trait ojThematicMapArea
   @JSName("getProperty")
   def getProperty_label(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.label): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_labelStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyle): scala.Nothing = js.native
+  def getProperty_labelStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['labelStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_location(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.location): java.lang.String = js.native
   @JSName("getProperty")
@@ -1273,7 +1281,7 @@ trait ojThematicMapArea
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): scala.Nothing = js.native
+  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapArea['svgStyle'] */ js.Any = js.native
   def setProperties(properties: ojThematicMapAreaSettablePropertiesLenient): scala.Unit = js.native
   def setProperty(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectable,

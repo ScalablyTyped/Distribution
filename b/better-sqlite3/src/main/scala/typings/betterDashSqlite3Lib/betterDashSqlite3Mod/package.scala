@@ -15,7 +15,7 @@ package object betterDashSqlite3Mod {
     /* code */ java.lang.String, 
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias better-sqlite3.better-sqlite3.SqliteError */ js.Object
   ]
-  type Statement = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Statement
+  type Statement[BindParameters /* <: js.Array[_] | js.Object */] = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Statement[js.Array[BindParameters]] | betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Statement[BindParameters]
   type Transaction = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Transaction[VariableArgFunction]
   type VariableArgFunction = js.Function1[/* repeated */ js.Any, js.Any]
 }

@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Having[TRecord, TResult]
-  extends WhereWrapped[TRecord, TResult]
-     with RawQueryBuilder[TRecord, TResult] {
+trait Having
+  extends WhereWrapped
+     with RawQueryBuilder {
   /* InferMemberOverrides */
-  override def apply(T0: /* callback */ QueryCallback): WhereResult[TRecord, TResult] = js.native
+  override def apply(T0: /* callback */ QueryCallback): QueryBuilder = js.native
   def apply(
     tableName: java.lang.String,
     column1: java.lang.String,
     operator: java.lang.String,
     column2: java.lang.String
-  ): QueryBuilder[TRecord, TResult] = js.native
-  def apply[K1 /* <: java.lang.String */, K2 /* <: java.lang.String */](tableName: java.lang.String, column1: K1, operator: ComparisionOperator, column2: K2): QueryBuilder[TRecord, TResult] = js.native
+  ): QueryBuilder = js.native
 }
 

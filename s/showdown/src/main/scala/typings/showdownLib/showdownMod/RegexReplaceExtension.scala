@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation._
 /**
   * Regex/replace style extensions are very similar to javascript's string.replace function.
   * Two properties are given, `regex` and `replace`.
+  * 
+  * @example
+  * ```ts
+  * let myExt: RegexReplaceExtension = {
+  *   type: 'lang',
+  *   regex: /markdown/g,
+  *   replace: 'showdown'
+  * };
+  * ```
   */
 trait RegexReplaceExtension extends Extension {
   /**
@@ -27,9 +36,15 @@ trait RegexReplaceExtension extends Extension {
 
 object RegexReplaceExtension {
   @scala.inline
-  def apply(`type`: java.lang.String, regex: java.lang.String | stdLib.RegExp = null, replace: js.Any = null): RegexReplaceExtension = {
+  def apply(
+    `type`: java.lang.String,
+    listeners: org.scalablytyped.runtime.StringDictionary[EventListener] = null,
+    regex: java.lang.String | stdLib.RegExp = null,
+    replace: js.Any = null
+  ): RegexReplaceExtension = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace)
     __obj.asInstanceOf[RegexReplaceExtension]

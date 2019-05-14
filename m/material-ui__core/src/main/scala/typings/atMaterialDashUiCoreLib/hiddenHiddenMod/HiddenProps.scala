@@ -5,14 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof {}, 'classes' | never> ]: {}[P]} */ trait HiddenProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[scala.Nothing]
-     with atMaterialDashUiCoreLib.Anon_ClassName {
+/* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, never, never> */
+trait HiddenProps extends js.Object {
+  var className: js.UndefOr[java.lang.String] = js.undefined
+  var classes: js.UndefOr[
+    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[scala.Nothing]]
+  ] = js.undefined
   var implementation: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.JS | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.css
   ] = js.undefined
   var initialWidth: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint] = js.undefined
+  var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
   var lgDown: js.UndefOr[scala.Boolean] = js.undefined
   var lgUp: js.UndefOr[scala.Boolean] = js.undefined
   var mdDown: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,6 +25,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var smDown: js.UndefOr[scala.Boolean] = js.undefined
   var smUp: js.UndefOr[scala.Boolean] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var xlDown: js.UndefOr[scala.Boolean] = js.undefined
   var xlUp: js.UndefOr[scala.Boolean] = js.undefined
   var xsDown: js.UndefOr[scala.Boolean] = js.undefined

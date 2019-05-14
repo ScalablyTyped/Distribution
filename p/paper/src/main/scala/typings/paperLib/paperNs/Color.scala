@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Color")
 @js.native
-class Color protected () extends js.Object {
+class Color protected () extends Base {
   /**
     * Creates a RGB Color object from CSS string
     * @param css - the RGB color in hex, i.e. #000000, rbga, i.e. rgba(0,0,0,0) or named color.

@@ -313,6 +313,24 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
   ] = js.native
   @JSName("flatten")
+  def flatten_Traced(chain: Chain2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* mma */ fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("flatten")
+  def flatten_Traced[L](chain: Chain2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* mma */ fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      L, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+  ] = js.native
+  @JSName("flatten")
   def flatten_Tree(chain: Chain1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* mma */ fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Tree, 

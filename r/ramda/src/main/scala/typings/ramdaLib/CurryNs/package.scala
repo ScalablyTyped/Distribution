@@ -21,7 +21,7 @@ package object CurryNs {
     TN
   ])
   type Gaps[T /* <: js.Array[_] */] = CleanedGaps[PartialGaps[T]]
-  type GapsOf[T1 /* <: js.Array[_] */, T2 /* <: js.Array[_] */, TN /* <: js.Array[_] */, I /* <: js.Array[_] */] = /* import warning: ImportType.apply Failed type conversion: ramda.Anon_01Any<TN>[0 | 1] */ js.Any
+  type GapsOf[T1 /* <: js.Array[_] */, T2 /* <: js.Array[_] */, TN /* <: js.Array[_] */, I /* <: js.Array[_] */] = /* import warning: ImportType.apply Failed type conversion: ramda.Anon_01Any<TN, I, T2>[ramda.Tools.Pos<I> extends ramda.Tools.Length<T1> ? 1 : 0] */ js.Any
   type PartialGaps[T /* <: js.Array[_] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]:? T[K] | ramda.ramda.Placeholder}
     */ ramdaLib.ramdaLibStrings.PartialGaps with T

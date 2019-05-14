@@ -41,7 +41,9 @@ These comments are from the typescript definitions and might be useful:
 //                  Jon Lucas <https://github.com/Xakaloz>,
 //                  Sebastian Lopez <https://github.com/sebaswebdev>
 //                  Ryan Friedman <https://github.com/rfried>
+//                  Mikhaylov Anton <https://github.com/anion155>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 ```
 

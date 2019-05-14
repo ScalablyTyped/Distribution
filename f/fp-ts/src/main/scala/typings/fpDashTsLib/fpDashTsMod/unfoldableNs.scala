@@ -80,6 +80,10 @@ object unfoldableNs extends js.Object {
   @JSName("empty")
   def empty_These[L, A](U: fpDashTsLib.libUnfoldableMod.Unfoldable2C[fpDashTsLib.fpDashTsLibStrings.These, L]): fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, A] = js.native
   @JSName("empty")
+  def empty_Traced[L, A](U: fpDashTsLib.libUnfoldableMod.Unfoldable2[fpDashTsLib.fpDashTsLibStrings.Traced]): fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A] = js.native
+  @JSName("empty")
+  def empty_Traced[L, A](U: fpDashTsLib.libUnfoldableMod.Unfoldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A] = js.native
+  @JSName("empty")
   def empty_Tree[A](U: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Tree]): fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, A] = js.native
   @JSName("empty")
   def empty_Tuple[L, A](U: fpDashTsLib.libUnfoldableMod.Unfoldable2[fpDashTsLib.fpDashTsLibStrings.Tuple]): fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, A] = js.native
@@ -98,7 +102,7 @@ object unfoldableNs extends js.Object {
   def replicate[F](U: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.HKT[F, _]] = js.native
   def replicateA(
     A: fpDashTsLib.libApplicativeMod.Applicative2[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer
     ],
     UT: (fpDashTsLib.libUnfoldableMod.Unfoldable1[
       fpDashTsLib.fpDashTsLibStrings.Array | fpDashTsLib.fpDashTsLibStrings.FreeGroup | fpDashTsLib.fpDashTsLibStrings.IO | fpDashTsLib.fpDashTsLibStrings.Identity | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray | fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v | fpDashTsLib.fpDashTsLibStrings.Option | fpDashTsLib.fpDashTsLibStrings.Pair | fpDashTsLib.fpDashTsLibStrings.StrMap | fpDashTsLib.fpDashTsLibStrings.Task | fpDashTsLib.fpDashTsLibStrings.Tree | fpDashTsLib.fpDashTsLibStrings.Zipper
@@ -152,7 +156,7 @@ object unfoldableNs extends js.Object {
   ] = js.native
   def replicateA[L](
     A: fpDashTsLib.libApplicativeMod.Applicative2C[
-      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
+      fpDashTsLib.fpDashTsLibStrings.Const | fpDashTsLib.fpDashTsLibStrings.Either | fpDashTsLib.fpDashTsLibStrings.Free | fpDashTsLib.fpDashTsLibStrings.IOEither | fpDashTsLib.fpDashTsLibStrings.Map | fpDashTsLib.fpDashTsLibStrings.Reader | fpDashTsLib.fpDashTsLibStrings.State | fpDashTsLib.fpDashTsLibStrings.Store | fpDashTsLib.fpDashTsLibStrings.TaskEither | fpDashTsLib.fpDashTsLibStrings.These | fpDashTsLib.fpDashTsLibStrings.Traced | fpDashTsLib.fpDashTsLibStrings.Tuple | fpDashTsLib.fpDashTsLibStrings.Validation | fpDashTsLib.fpDashTsLibStrings.Writer, 
       L
     ],
     UT: (fpDashTsLib.libUnfoldableMod.Unfoldable1[
@@ -541,6 +545,18 @@ object unfoldableNs extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
   ] = js.native
   @JSName("replicate")
+  def replicate_Traced(U: fpDashTsLib.libUnfoldableMod.Unfoldable2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* a */ js.Any, 
+    /* n */ scala.Double, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("replicate")
+  def replicate_Traced[L](U: fpDashTsLib.libUnfoldableMod.Unfoldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* a */ js.Any, 
+    /* n */ scala.Double, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+  ] = js.native
+  @JSName("replicate")
   def replicate_Tree(U: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* a */ js.Any, 
     /* n */ scala.Double, 
@@ -751,6 +767,16 @@ object unfoldableNs extends js.Object {
   def singleton_These[L](U: fpDashTsLib.libUnfoldableMod.Unfoldable2C[fpDashTsLib.fpDashTsLibStrings.These, L]): js.Function1[
     /* a */ js.Any, 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
+  ] = js.native
+  @JSName("singleton")
+  def singleton_Traced(U: fpDashTsLib.libUnfoldableMod.Unfoldable2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* a */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("singleton")
+  def singleton_Traced[L](U: fpDashTsLib.libUnfoldableMod.Unfoldable2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* a */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
   ] = js.native
   @JSName("singleton")
   def singleton_Tree(U: fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]] = js.native

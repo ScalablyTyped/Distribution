@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 // Schema builder
 //
 @js.native
-trait SchemaBuilder
-  extends ChainableInterface[scala.Unit] {
+trait SchemaBuilder extends ChainableInterface {
   def alterTable(tableName: java.lang.String, callback: js.Function1[/* tableBuilder */ CreateTableBuilder, _]): SchemaBuilder = js.native
   def createTable(tableName: java.lang.String, callback: js.Function1[/* tableBuilder */ CreateTableBuilder, _]): SchemaBuilder = js.native
   def createTableIfNotExists(tableName: java.lang.String, callback: js.Function1[/* tableBuilder */ CreateTableBuilder, _]): SchemaBuilder = js.native

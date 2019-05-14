@@ -59,7 +59,7 @@ package object esTypesMod {
   type InvokesConfig[TContext, TEvent /* <: EventObject */] = SingleOrArray[InvokeConfig[TContext, TEvent]]
   type Mapper[TContext, TEvent /* <: EventObject */] = js.Function2[/* context */ TContext, /* event */ TEvent, js.Any]
   type MetaObject = stdLib.Record[java.lang.String, js.Any]
-  type OmniEvent[TEvent /* <: EventObject */] = (/* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any) | js.UndefOr[ActionTypes] | OmniEventObject[TEvent]
+  type OmniEvent[TEvent /* <: EventObject */] = (/* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any) | OmniEventObject[TEvent]
   type OmniEventObject[TEvent /* <: EventObject */] = TEvent | BuiltInEvent[TEvent]
   type PathMap[TContext, TEvent /* <: EventObject */] = org.scalablytyped.runtime.StringDictionary[js.Array[Segment[TContext, TEvent]]]
   type PathsMap[TContext, TEvent /* <: EventObject */] = org.scalablytyped.runtime.StringDictionary[PathsItem[TContext, TEvent]]
@@ -99,7 +99,7 @@ package object esTypesMod {
     */ xstateLib.xstateLibStrings.StatesDefinition with TStateSchema
   type Transition[TContext, TEvent /* <: EventObject */] = java.lang.String | (TransitionConfig[TContext, TEvent]) | (ConditionalTransitionConfig[TContext, TEvent])
   type TransitionsConfig[TContext, TEvent /* <: EventObject */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in TEvent['type'] | xstate.xstate/es/types.ActionTypes | undefined ]:? string | number | xstate.xstate/es/StateNode.StateNode<TContext, any, xstate.xstate/es/types.OmniEventObject<xstate.xstate/es/types.EventObject>> | xstate.xstate/es/types.SingleOrArray<xstate.xstate/es/types.TransitionConfig<TContext, std.Extract<TEvent, {  type  :K}>>>}
+  {[ K in TEvent['type'] | xstate.xstate/es/types.BuiltInEvent<TEvent>['type'] ]:? string | number | xstate.xstate/es/StateNode.StateNode<TContext, any, xstate.xstate/es/types.OmniEventObject<xstate.xstate/es/types.EventObject>> | xstate.xstate/es/types.SingleOrArray<xstate.xstate/es/types.TransitionConfig<TContext, std.Extract<TEvent, {  type  :K}>>>}
     */ xstateLib.xstateLibStrings.TransitionsConfig with js.Any
   type TransitionsDefinition[TContext, TEvent /* <: EventObject */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in TEvent['type'] ]: std.Array<xstate.xstate/es/types.TransitionDefinition<TContext, std.Extract<TEvent, {  type  :K}>>>}

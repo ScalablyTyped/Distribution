@@ -10,8 +10,8 @@ trait QueryContext
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("transaction")
   var transaction_Original: Transaction = js.native
-  def transaction[TRecord2, TResult2](): (knexLib.knexMod.QueryBuilder[TRecord2, TResult2]) with knexLib.knexMod.ChainableInterface[js.Array[TRecord2]] = js.native
-  def transaction[TRecord2, TResult2](tableName: knexLib.knexMod.Identifier): (knexLib.knexMod.QueryBuilder[TRecord2, TResult2]) with knexLib.knexMod.ChainableInterface[js.Array[TRecord2]] = js.native
-  def transaction[TRecord2, TResult2](tableName: knexLib.knexMod.TableName): (knexLib.knexMod.QueryBuilder[TRecord2, TResult2]) with knexLib.knexMod.ChainableInterface[js.Array[TRecord2]] = js.native
+  def transaction(): knexLib.knexMod.QueryBuilder = js.native
+  def transaction(tableName: knexLib.knexMod.Identifier): knexLib.knexMod.QueryBuilder = js.native
+  def transaction(tableName: knexLib.knexMod.TableName): knexLib.knexMod.QueryBuilder = js.native
 }
 

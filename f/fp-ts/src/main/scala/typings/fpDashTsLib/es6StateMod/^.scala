@@ -1,0 +1,18 @@
+package typings
+package fpDashTsLib.es6StateMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("fp-ts/es6/State", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val URI: fpDashTsLib.fpDashTsLibStrings.State = js.native
+  val state: fpDashTsLib.es6MonadMod.Monad2[URI] = js.native
+  def get[S](): State[S, S] = js.native
+  def gets[S, A](f: js.Function1[/* s */ S, A]): State[S, A] = js.native
+  def modify[S](f: js.Function1[/* s */ S, S]): State[S, js.UndefOr[scala.Nothing]] = js.native
+  def put[S](s: S): State[S, scala.Unit] = js.native
+}
+

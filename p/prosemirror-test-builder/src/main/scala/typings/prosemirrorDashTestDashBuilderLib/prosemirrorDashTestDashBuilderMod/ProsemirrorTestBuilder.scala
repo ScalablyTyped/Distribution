@@ -77,7 +77,7 @@ trait ProsemirrorTestBuilder extends js.Object {
   def br(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: prosemirrorDashTestDashBuilderLib.Args
   ): TaggedProsemirrorNode[TestSchema] = js.native
-  def builders[Obj /* <: stdLib.Record[java.lang.String, NodeTypeAttributes | MarkTypeAttributes] */, N /* <: java.lang.String */, M /* <: java.lang.String */](testSchema: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[N, M], names: Obj): (stdLib.Record[N, NodeBuilderMethod[prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[N, M]]]) with (stdLib.Record[M, MarkBuilderMethod[prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[N, M]]]) with prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderLibStrings.ProsemirrorTestBuilder with js.Any = js.native
+  def builders[Obj /* <: stdLib.Record[java.lang.String, NodeTypeAttributes | MarkTypeAttributes] */, N /* <: java.lang.String */, M /* <: java.lang.String */](testSchema: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[N, M], names: Obj): (stdLib.Record[N, NodeBuilderMethod[prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[N, M]]]) with (stdLib.Record[M, MarkBuilderMethod[prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[N, M]]]) with prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderLibStrings.ProsemirrorTestBuilder with Obj = js.native
   def bullet_list(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: prosemirrorDashTestDashBuilderLib.Args
   ): TaggedProsemirrorNode[TestSchema] = js.native

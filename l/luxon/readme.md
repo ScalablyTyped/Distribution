@@ -1,7 +1,7 @@
 
 # Scala.js typings for luxon
 
-Typings are for version 1.12
+Typings are for version 1.13
 
 ## Library description:
 Immutable date wrapper
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for luxon 1.12
+// Type definitions for luxon 1.13
 // Project: https://github.com/moment/luxon#readme
 // Definitions by: Colby DeHart <https://github.com/colbydehart>
 //                 Hyeonseok Yang <https://github.com/FourwingsY>
@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Matt R. Wilson <https://github.com/mastermatt>
 //                 Pietro Vismara <https://github.com/pietrovismara>
 //                 Janeene Beeforth <https://github.com/dawnmist>
+//                 Jason Yu <https://github.com/ycmjason>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

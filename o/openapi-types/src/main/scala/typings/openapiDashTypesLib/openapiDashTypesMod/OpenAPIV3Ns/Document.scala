@@ -11,7 +11,7 @@ trait Document
   var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   var info: InfoObject
   var openapi: java.lang.String
-  var paths: org.scalablytyped.runtime.StringDictionary[PathItemObject]
+  var paths: PathsObject
   var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
   var servers: js.UndefOr[js.Array[ServerObject]] = js.undefined
   var tags: js.UndefOr[js.Array[TagObject]] = js.undefined
@@ -22,7 +22,7 @@ object Document {
   def apply(
     info: InfoObject,
     openapi: java.lang.String,
-    paths: org.scalablytyped.runtime.StringDictionary[PathItemObject],
+    paths: PathsObject,
     components: ComponentsObject = null,
     externalDocs: ExternalDocumentationObject = null,
     security: js.Array[SecurityRequirementObject] = null,

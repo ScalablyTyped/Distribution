@@ -2087,6 +2087,7 @@ object awsDashSdkLibStrings {
   sealed trait AUTOMATIC
     extends awsDashSdkLib.clientsFsxMod._BackupType
        with awsDashSdkLib.clientsMediaconvertMod._FontScript
+       with awsDashSdkLib.clientsDatasyncMod._NfsVersion
        with awsDashSdkLib.clientsSmsMod._ReplicationRunType
   
   @js.native
@@ -13470,6 +13471,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsStoragegatewayMod._FileShareType
   
   @js.native
+  sealed trait NFS3
+    extends awsDashSdkLib.clientsDatasyncMod._NfsVersion
+  
+  @js.native
+  sealed trait NFS4_0
+    extends awsDashSdkLib.clientsDatasyncMod._NfsVersion
+  
+  @js.native
+  sealed trait NFS4_1
+    extends awsDashSdkLib.clientsDatasyncMod._NfsVersion
+  
+  @js.native
   sealed trait NG
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
@@ -17853,6 +17866,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SIMPLE_AD
     extends awsDashSdkLib.clientsWorkspacesMod._WorkspaceDirectoryType
+  
+  @js.native
+  sealed trait SIMPLE_PATTERN extends js.Object
   
   @js.native
   sealed trait SIN
@@ -24059,6 +24075,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDmsMod._MigrationTypeValue
   
   @js.native
+  sealed trait functionExists extends js.Object
+  
+  @js.native
   sealed trait g2DOT2xlarge
     extends awsDashSdkLib.clientsEc2Mod._InstanceType
   
@@ -25866,6 +25885,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `nodejs-app`
     extends awsDashSdkLib.clientsOpsworksMod._LayerType
+  
+  @js.native
+  sealed trait nodejs10DOTx
+    extends awsDashSdkLib.clientsLambdaMod._Runtime
   
   @js.native
   sealed trait nodejs4DOT3
@@ -33592,6 +33615,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def NFS: NFS = "NFS".asInstanceOf[NFS]
   @scala.inline
+  def NFS3: NFS3 = "NFS3".asInstanceOf[NFS3]
+  @scala.inline
+  def NFS4_0: NFS4_0 = "NFS4_0".asInstanceOf[NFS4_0]
+  @scala.inline
+  def NFS4_1: NFS4_1 = "NFS4_1".asInstanceOf[NFS4_1]
+  @scala.inline
   def NG: NG = "NG".asInstanceOf[NG]
   @scala.inline
   def NI: NI = "NI".asInstanceOf[NI]
@@ -35443,6 +35472,8 @@ object awsDashSdkLibStrings {
   def SIMPLE: SIMPLE = "SIMPLE".asInstanceOf[SIMPLE]
   @scala.inline
   def SIMPLE_AD: SIMPLE_AD = "SIMPLE_AD".asInstanceOf[SIMPLE_AD]
+  @scala.inline
+  def SIMPLE_PATTERN: SIMPLE_PATTERN = "SIMPLE_PATTERN".asInstanceOf[SIMPLE_PATTERN]
   @scala.inline
   def SIN: SIN = "SIN".asInstanceOf[SIN]
   @scala.inline
@@ -38070,6 +38101,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `full-load-and-cdc`: `full-load-and-cdc` = "full-load-and-cdc".asInstanceOf[`full-load-and-cdc`]
   @scala.inline
+  def functionExists: functionExists = "functionExists".asInstanceOf[functionExists]
+  @scala.inline
   def g2DOT2xlarge: g2DOT2xlarge = "g2.2xlarge".asInstanceOf[g2DOT2xlarge]
   @scala.inline
   def g2DOT8xlarge: g2DOT8xlarge = "g2.8xlarge".asInstanceOf[g2DOT8xlarge]
@@ -38829,6 +38862,8 @@ object awsDashSdkLibStrings {
   def nodejs: nodejs = "nodejs".asInstanceOf[nodejs]
   @scala.inline
   def `nodejs-app`: `nodejs-app` = "nodejs-app".asInstanceOf[`nodejs-app`]
+  @scala.inline
+  def nodejs10DOTx: nodejs10DOTx = "nodejs10.x".asInstanceOf[nodejs10DOTx]
   @scala.inline
   def nodejs4DOT3: nodejs4DOT3 = "nodejs4.3".asInstanceOf[nodejs4DOT3]
   @scala.inline

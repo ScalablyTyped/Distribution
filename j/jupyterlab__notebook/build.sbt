@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__notebook"
-version := "0.19.2-d84d0a"
+version := "0.19.2-1a8da7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-2af274",
-  "org.scalablytyped" %%% "jupyterlab__attachments" % "0.19.1-fc3e18",
-  "org.scalablytyped" %%% "jupyterlab__cells" % "0.19.1-a08d53",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-8acb89",
+  "org.scalablytyped" %%% "jupyterlab__attachments" % "0.19.1-6f65f9",
+  "org.scalablytyped" %%% "jupyterlab__cells" % "0.19.1-60a37b",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "2.2.1-9b35aa",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-02b831",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-091364",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.1.1-a0d67b",
-  "org.scalablytyped" %%% "jupyterlab__outputarea" % "0.19.1-c3866a",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-f43c07",
+  "org.scalablytyped" %%% "jupyterlab__outputarea" % "0.19.1-43aeb0",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-f7d3f0",
   "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.2.1-8e146c",
   "org.scalablytyped" %%% "jupyterlab__services" % "3.2.1-a02d4c",
   "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-5c87e1",
@@ -24,8 +24,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "phosphor__signaling" % "1.2.2-ada9c2",
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.1.2-d794d9",
   "org.scalablytyped" %%% "phosphor__widgets" % "1.6.0-193f21",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-a9badf",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

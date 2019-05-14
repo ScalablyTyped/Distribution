@@ -16,7 +16,7 @@ trait Rules extends js.Object {
   var nodes: js.UndefOr[js.Array[slateLib.Anon_Match]] = js.undefined
   var normalize: js.UndefOr[js.Function2[/* editor */ Editor, /* error */ SlateError, scala.Unit]] = js.undefined
   var parent: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
-  var text: js.UndefOr[stdLib.RegExp] = js.undefined
+  var text: js.UndefOr[stdLib.RegExp | (js.Function1[/* text */ java.lang.String, scala.Boolean])] = js.undefined
 }
 
 object Rules {
@@ -30,7 +30,7 @@ object Rules {
     nodes: js.Array[slateLib.Anon_Match] = null,
     normalize: (/* editor */ Editor, /* error */ SlateError) => scala.Unit = null,
     parent: ObjectAndType | js.Array[ObjectAndType] = null,
-    text: stdLib.RegExp = null
+    text: stdLib.RegExp | (js.Function1[/* text */ java.lang.String, scala.Boolean]) = null
   ): Rules = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)
@@ -41,7 +41,7 @@ object Rules {
     if (nodes != null) __obj.updateDynamic("nodes")(nodes)
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction2(normalize))
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules]
   }
 }

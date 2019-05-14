@@ -82,7 +82,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
   /**
     * Returns the outer most DOMComponent of the current wrapper.
     */
-  def getDOMNode(): stdLib.Element = js.native
+  def getDOMNode[T /* <: stdLib.Element */](): T = js.native
   /**
     * Returns the wrapper's underlying node.
     */

@@ -13,6 +13,11 @@ trait Database extends js.Object {
   var open: scala.Boolean = js.native
   var readonly: scala.Boolean = js.native
   def aggregate(name: java.lang.String, options: betterDashSqlite3Lib.betterDashSqlite3Mod.AggregateOptions): this.type = js.native
+  def backup(destinationFile: java.lang.String): js.Promise[betterDashSqlite3Lib.betterDashSqlite3Mod.BackupMetadata] = js.native
+  def backup(
+    destinationFile: java.lang.String,
+    options: betterDashSqlite3Lib.betterDashSqlite3Mod.BackupOptions
+  ): js.Promise[betterDashSqlite3Lib.betterDashSqlite3Mod.BackupMetadata] = js.native
   def checkpoint(): this.type = js.native
   def checkpoint(databaseName: java.lang.String): this.type = js.native
   def close(): this.type = js.native
@@ -28,7 +33,8 @@ trait Database extends js.Object {
   def loadExtension(path: java.lang.String): this.type = js.native
   def pragma(source: java.lang.String): js.Any = js.native
   def pragma(source: java.lang.String, options: betterDashSqlite3Lib.betterDashSqlite3Mod.PragmaOptions): js.Any = js.native
-  def prepare(source: java.lang.String): Statement = js.native
+  // tslint:disable-next-line no-unnecessary-generics
+  def prepare[BindParameters /* <: js.Array[_] | js.Object */](source: java.lang.String): Statement[js.Array[BindParameters]] | Statement[BindParameters] = js.native
   def transaction[F /* <: betterDashSqlite3Lib.betterDashSqlite3Mod.VariableArgFunction */](fn: F): Transaction[F] = js.native
 }
 

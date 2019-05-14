@@ -45,7 +45,9 @@ trait TernOptions extends js.Object {
     ]
   ] = js.undefined
   /** An object mapping plugin names to configuration options. */
-  var plugins: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Object]] = js.undefined
+  var plugins: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any
+  ] = js.undefined
   /** This function will be applied to the Tern responses before treating them */
   var responseFilter: js.UndefOr[
     js.Function5[
@@ -54,7 +56,7 @@ trait TernOptions extends js.Object {
       /* request */ ternLib.libTernMod.Document, 
       /* error */ js.UndefOr[stdLib.Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[never]['result'] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[tern.tern/lib/tern.Query['type']]['result'] */ js.Any
       ], 
       _
     ]
@@ -94,9 +96,9 @@ object TernOptions {
     defs: js.Array[ternLib.libTernMod.Def] = null,
     fileFilter: (/* value */ java.lang.String, /* docName */ java.lang.String, /* doc */ Doc) => java.lang.String = null,
     getFile: (/* name */ java.lang.String, /* callback */ js.Function1[/* doc */ Doc | scala.Null, _]) => _ = null,
-    plugins: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
+    plugins: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any = null,
     responseFilter: (/* doc */ Doc, /* query */ ternLib.libTernMod.Query, /* request */ ternLib.libTernMod.Document, /* error */ js.UndefOr[stdLib.Error], /* data */ js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[never]['result'] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[tern.tern/lib/tern.Query['type']]['result'] */ js.Any
     ]) => _ = null,
     showError: (/* editor */ Editor, /* message */ stdLib.Error) => _ = null,
     switchToDoc: (/* name */ java.lang.String, /* doc */ Doc) => _ = null,

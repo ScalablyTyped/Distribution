@@ -80,7 +80,7 @@ trait MUIDataTableOptions extends js.Object {
   ] = js.undefined
   var onSearchChange: js.UndefOr[js.Function1[/* searchText */ java.lang.String, scala.Unit]] = js.undefined
   var onTableChange: js.UndefOr[
-    js.Function2[/* action */ java.lang.String, /* tableState */ js.Object, scala.Unit]
+    js.Function2[/* action */ java.lang.String, /* tableState */ MUIDataTableState, scala.Unit]
   ] = js.undefined
   var page: js.UndefOr[scala.Double] = js.undefined
   var pagination: js.UndefOr[scala.Boolean] = js.undefined
@@ -138,7 +138,7 @@ object MUIDataTableOptions {
     onRowsDelete: /* rowsDeleted */ js.Array[_] => scala.Unit = null,
     onRowsSelect: (/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_]) => scala.Unit = null,
     onSearchChange: /* searchText */ java.lang.String => scala.Unit = null,
-    onTableChange: (/* action */ java.lang.String, /* tableState */ js.Object) => scala.Unit = null,
+    onTableChange: (/* action */ java.lang.String, /* tableState */ MUIDataTableState) => scala.Unit = null,
     page: scala.Int | scala.Double = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
     print: js.UndefOr[scala.Boolean] = js.undefined,

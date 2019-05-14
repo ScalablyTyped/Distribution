@@ -18,7 +18,9 @@ object ^ extends js.Object {
   def getStack(): java.lang.String = js.native
   def hasMonitor(): scala.Boolean = js.native
   def isDryRun(): scala.Boolean = js.native
+  def isQueryMode(): scala.Boolean = js.native
   def isTestModeEnabled(): scala.Boolean = js.native
+  def monitorSupportsSecrets(): js.Promise[scala.Boolean] = js.native
   def rpcKeepAlive(): js.Function0[scala.Unit] = js.native
   def serialize(): scala.Boolean = js.native
   def setRootResource(res: atPulumiPulumiLib.resourceMod.ComponentResource): js.Promise[scala.Unit] = js.native

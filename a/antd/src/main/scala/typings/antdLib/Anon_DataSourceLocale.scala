@@ -5,12 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_DataSourceLocale extends js.Object {
-  var dataSource: js.Array[scala.Nothing] = js.native
-  @JSName("render")
-  var render_Original: antdLib.esTransferMod.TransferRender = js.native
-  var showSearch: scala.Boolean = js.native
-  def render(record: antdLib.esTransferMod.TransferItem): reactLib.reactMod.ReactNode = js.native
+  var dataSource: js.Array[scala.Nothing]
+  var showSearch: scala.Boolean
+}
+
+object Anon_DataSourceLocale {
+  @scala.inline
+  def apply(dataSource: js.Array[scala.Nothing], showSearch: scala.Boolean): Anon_DataSourceLocale = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource, showSearch = showSearch)
+  
+    __obj.asInstanceOf[Anon_DataSourceLocale]
+  }
 }
 

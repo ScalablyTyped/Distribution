@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.PaperScope")
 @js.native
-class PaperScope () extends js.Object {
+class PaperScope () extends Base {
   /**
     * The currently active project.
     */

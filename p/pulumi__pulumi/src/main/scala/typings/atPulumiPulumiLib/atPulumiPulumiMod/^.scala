@@ -133,5 +133,7 @@ object ^ extends js.Object {
   def interpolate(literals: stdLib.TemplateStringsArray, placeholders: atPulumiPulumiLib.outputMod.Input[_]*): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   def output[T](): atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Unwrap[js.UndefOr[T]]] = js.native
   def output[T](`val`: atPulumiPulumiLib.outputMod.Input[T]): atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Unwrap[T]] = js.native
+  def secret[T](): atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Unwrap[js.UndefOr[T]]] = js.native
+  def secret[T](`val`: atPulumiPulumiLib.outputMod.Input[T]): atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Unwrap[T]] = js.native
 }
 

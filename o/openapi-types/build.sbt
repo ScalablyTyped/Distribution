@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openapi-types"
-version := "1.3.4-b63ba9"
+version := "1.3.5-834fda"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

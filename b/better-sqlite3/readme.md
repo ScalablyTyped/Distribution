@@ -1,7 +1,7 @@
 
 # Scala.js typings for better-sqlite3
 
-Typings are for version 5.2
+Typings are for version 5.4
 
 ## Library description:
 The fastest and simplest library for SQLite3 in Node.js.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for better-sqlite3 5.2
+// Type definitions for better-sqlite3 5.4
 // Project: http://github.com/JoshuaWise/better-sqlite3
 // Definitions by: Ben Davies <https://github.com/Morfent>
 //                 Mathew Rumsey <https://github.com/matrumz>

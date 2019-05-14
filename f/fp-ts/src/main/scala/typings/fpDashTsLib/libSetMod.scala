@@ -31,6 +31,7 @@ object libSetMod extends js.Object {
   def fromArray[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[A], stdLib.Set[A]] = js.native
   def getIntersectionSemigroup[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSemigroupMod.Semigroup[stdLib.Set[A]] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[stdLib.Set[A]] = js.native
+  def getShow[A](SA: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[stdLib.Set[A]] = js.native
   def getUnionMonoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libMonoidMod.Monoid[stdLib.Set[A]] = js.native
   def insert[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* x */ stdLib.Set[A], stdLib.Set[A]] = js.native
   def intersection[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* x */ stdLib.Set[A], /* y */ stdLib.Set[A], stdLib.Set[A]] = js.native

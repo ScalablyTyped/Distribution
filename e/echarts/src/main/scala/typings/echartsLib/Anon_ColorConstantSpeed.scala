@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ColorConstantSpeed extends js.Object {
   /**
     * The color of special effect symbol, which defaults to be
@@ -16,7 +15,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.color
     */
-  var color: js.UndefOr[java.lang.String] = js.native
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     * If symbol movement of special effect has a constant speed,
     * which unit is pixel per second.
@@ -26,7 +25,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.constantSpeed
     */
-  var constantSpeed: js.UndefOr[scala.Double] = js.native
+  var constantSpeed: js.UndefOr[scala.Double] = js.undefined
   /**
     * Effect animation delay.
     * Can be number or callback function.
@@ -34,7 +33,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.delay
     */
-  var delay: js.UndefOr[js.Function | scala.Double] = js.native
+  var delay: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Whether to loop the special effect animation.
     *
@@ -43,7 +42,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     * "true"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.loop
     */
-  var loop: js.UndefOr[scala.Boolean] = js.native
+  var loop: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The duration of special effect, which unit is second.
     *
@@ -52,14 +51,14 @@ trait Anon_ColorConstantSpeed extends js.Object {
     * 4
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.period
     */
-  var period: js.UndefOr[scala.Double] = js.native
+  var period: js.UndefOr[scala.Double] = js.undefined
   /**
     * Whether to show special effect.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.show
     */
-  var show: js.UndefOr[scala.Boolean] = js.native
+  var show: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The symbol of special effect.
     *
@@ -110,7 +109,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     * "circle"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.symbol
     */
-  var symbol: js.UndefOr[java.lang.String] = js.native
+  var symbol: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The symbol size of special effect, which could be set as
     * single number such as `10`.
@@ -124,7 +123,7 @@ trait Anon_ColorConstantSpeed extends js.Object {
     * 3
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | scala.Double] = js.native
+  var symbolSize: js.UndefOr[js.Array[_] | scala.Double] = js.undefined
   /**
     * The length of trail of special effect.
     * The values from 0 to 1 could be set.
@@ -135,6 +134,33 @@ trait Anon_ColorConstantSpeed extends js.Object {
     * 0.2
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect.trailLength
     */
-  var trailLength: js.UndefOr[scala.Double] = js.native
+  var trailLength: js.UndefOr[scala.Double] = js.undefined
+}
+
+object Anon_ColorConstantSpeed {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    constantSpeed: scala.Int | scala.Double = null,
+    delay: js.Function | scala.Double = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    period: scala.Int | scala.Double = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    symbol: java.lang.String = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    trailLength: scala.Int | scala.Double = null
+  ): Anon_ColorConstantSpeed = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (constantSpeed != null) __obj.updateDynamic("constantSpeed")(constantSpeed.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (trailLength != null) __obj.updateDynamic("trailLength")(trailLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColorConstantSpeed]
+  }
 }
 

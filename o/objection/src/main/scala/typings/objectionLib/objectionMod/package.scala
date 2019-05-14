@@ -87,7 +87,7 @@ package object objectionMod {
     ]
   ]
   type NodeStyleCallback = js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit]
-  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
+  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   type OrderBy[QM /* <: Model */, RM, RV] = js.Function2[
     /* column */ ColumnRef, 
     /* direction */ js.UndefOr[java.lang.String], 
@@ -101,7 +101,7 @@ package object objectionMod {
   type Properties = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]
   type QueryBuilderYieldingOneOrNone[QM /* <: Model */] = QueryBuilder[QM, QM, js.UndefOr[QM]]
-  type Raw = knexLib.knexMod.Raw[js.Any]
+  type Raw = knexLib.knexMod.Raw
   type Reference = Castable
   type ReferenceBuilder = js.Function1[/* expression */ java.lang.String, Reference]
   /**

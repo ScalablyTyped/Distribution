@@ -100,6 +100,9 @@ object monocleDashTsLibStrings {
   sealed trait These extends js.Object
   
   @js.native
+  sealed trait Traced extends js.Object
+  
+  @js.native
   sealed trait Traversal extends js.Object
   
   @js.native
@@ -179,6 +182,8 @@ object monocleDashTsLibStrings {
   def TaskEither: TaskEither = "TaskEither".asInstanceOf[TaskEither]
   @scala.inline
   def These: These = "These".asInstanceOf[These]
+  @scala.inline
+  def Traced: Traced = "Traced".asInstanceOf[Traced]
   @scala.inline
   def Traversal: Traversal = "Traversal".asInstanceOf[Traversal]
   @scala.inline

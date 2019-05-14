@@ -293,6 +293,21 @@ object readerTNs extends js.Object {
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
   ] = js.native
   @JSName("ap")
+  def ap_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fab */ js.Function1[
+      /* e */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, js.Function1[/* a */ _, _]]
+    ], 
+    /* fa */ js.Function1[
+      /* e */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("ap")
   def ap_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* fab */ js.Function1[
       /* e */ js.Any, 
@@ -469,6 +484,13 @@ object readerTNs extends js.Object {
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
   ] = js.native
   @JSName("ask")
+  def ask_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function0[
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("ask")
   def ask_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function0[
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]]
   ] = js.native
@@ -631,6 +653,14 @@ object readerTNs extends js.Object {
   def asks_These(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.These]): js.Function1[
     /* f */ js.Function1[/* e */ js.Any, _], 
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
+  ] = js.native
+  @JSName("asks")
+  def asks_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* f */ js.Function1[/* e */ js.Any, _], 
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
   ] = js.native
   @JSName("asks")
   def asks_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
@@ -972,6 +1002,24 @@ object readerTNs extends js.Object {
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
   ] = js.native
   @JSName("chain")
+  def chain_Traced(F: fpDashTsLib.libChainMod.Chain2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      js.Function1[
+        /* e */ _, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      ]
+    ], 
+    /* fa */ js.Function1[
+      /* e */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("chain")
   def chain_Tree(F: fpDashTsLib.libChainMod.Chain1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* f */ js.Function1[
       /* a */ js.Any, 
@@ -1179,6 +1227,14 @@ object readerTNs extends js.Object {
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
   ] = js.native
   @JSName("fromReader")
+  def fromReader_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fa */ fpDashTsLib.libReaderMod.Reader[_, _], 
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("fromReader")
   def fromReader_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* fa */ fpDashTsLib.libReaderMod.Reader[_, _], 
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]]
@@ -1256,6 +1312,8 @@ object readerTNs extends js.Object {
   @JSName("getReaderT2v")
   def getReaderT2v_These(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.These]): fpDashTsLib.libReaderTMod.ReaderT2v2[fpDashTsLib.fpDashTsLibStrings.These] = js.native
   @JSName("getReaderT2v")
+  def getReaderT2v_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): fpDashTsLib.libReaderTMod.ReaderT2v2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
+  @JSName("getReaderT2v")
   def getReaderT2v_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): fpDashTsLib.libReaderTMod.ReaderT2v1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("getReaderT2v")
   def getReaderT2v_Tuple(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Tuple]): fpDashTsLib.libReaderTMod.ReaderT2v2[fpDashTsLib.fpDashTsLibStrings.Tuple] = js.native
@@ -1309,6 +1367,8 @@ object readerTNs extends js.Object {
   def getReaderT_TaskEither(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.TaskEither]): fpDashTsLib.libReaderTMod.ReaderT2[fpDashTsLib.fpDashTsLibStrings.TaskEither] = js.native
   @JSName("getReaderT")
   def getReaderT_These(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.These]): fpDashTsLib.libReaderTMod.ReaderT2[fpDashTsLib.fpDashTsLibStrings.These] = js.native
+  @JSName("getReaderT")
+  def getReaderT_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): fpDashTsLib.libReaderTMod.ReaderT2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
   @JSName("getReaderT")
   def getReaderT_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): fpDashTsLib.libReaderTMod.ReaderT1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("getReaderT")
@@ -1538,6 +1598,18 @@ object readerTNs extends js.Object {
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
   ] = js.native
   @JSName("map")
+  def map_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* f */ js.Function1[/* a */ js.Any, _], 
+    /* fa */ js.Function1[
+      /* e */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("map")
   def map_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, _], 
     /* fa */ js.Function1[/* e */ js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]], 
@@ -1719,6 +1791,14 @@ object readerTNs extends js.Object {
   def of_These(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.These]): js.Function1[
     /* a */ js.Any, 
     js.Function1[/* e */ _, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]]
+  ] = js.native
+  @JSName("of")
+  def of_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* a */ js.Any, 
+    js.Function1[
+      /* e */ _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
   ] = js.native
   @JSName("of")
   def of_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[

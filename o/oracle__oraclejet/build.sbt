@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oracle__oraclejet"
-version := "6.1-dt-20190115Z-7707a8"
+version := "6.1-dt-20190115Z-8878e3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

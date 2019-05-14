@@ -5,9 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_80FramesIntervalU2801 extends js.Object {
-  var frames: js.Array[js.Any] = js.native
-  var interval: adoneLib.adoneLibNumbers.`80` = js.native
+  var frames: js.Array[js.Any]
+  var interval: adoneLib.adoneLibNumbers.`80`
+}
+
+object Anon_80FramesIntervalU2801 {
+  @scala.inline
+  def apply(frames: js.Array[js.Any], interval: adoneLib.adoneLibNumbers.`80`): Anon_80FramesIntervalU2801 = {
+    val __obj = js.Dynamic.literal(frames = frames, interval = interval)
+  
+    __obj.asInstanceOf[Anon_80FramesIntervalU2801]
+  }
 }
 

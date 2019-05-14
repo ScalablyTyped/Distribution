@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val phantom: js.Any = js.native
+  def absurd[A](`_`: scala.Nothing): A = js.native
   def and[A](p1: Predicate[A], p2: Predicate[A]): Predicate[A] = js.native
   @JSName("apply")
   def apply[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = js.native

@@ -317,6 +317,24 @@ object optionTNs extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, fpDashTsLib.libOptionMod.Option[_]]
   ] = js.native
   @JSName("chain")
+  def chain_Traced(F: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]]
+    ], 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("chain")
+  def chain_Traced[L](F: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]]
+    ], 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("chain")
   def chain_Tree(F: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* f */ js.Function1[
       /* a */ js.Any, 
@@ -624,6 +642,20 @@ object optionTNs extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
   ] = js.native
   @JSName("fold")
+  def fold_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function3[
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("fold")
+  def fold_Traced[L](F: fpDashTsLib.libFunctorMod.Functor2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function3[
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+  ] = js.native
+  @JSName("fold")
   def fold_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function3[
     /* onNone */ js.Any, 
     /* onSome */ js.Function1[/* a */ js.Any, _], 
@@ -851,6 +883,16 @@ object optionTNs extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, fpDashTsLib.libOptionMod.Option[_]]
   ] = js.native
   @JSName("fromOption")
+  def fromOption_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fa */ fpDashTsLib.libOptionMod.Option[_], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("fromOption")
+  def fromOption_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* fa */ fpDashTsLib.libOptionMod.Option[_], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("fromOption")
   def fromOption_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* fa */ fpDashTsLib.libOptionMod.Option[_], 
     fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.libOptionMod.Option[_]]
@@ -957,6 +999,10 @@ object optionTNs extends js.Object {
   @JSName("getOptionT2v")
   def getOptionT2v_These[L](M: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, L]): fpDashTsLib.libOptionTMod.OptionT2v2C[fpDashTsLib.fpDashTsLibStrings.These, L] = js.native
   @JSName("getOptionT2v")
+  def getOptionT2v_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): fpDashTsLib.libOptionTMod.OptionT2v2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
+  @JSName("getOptionT2v")
+  def getOptionT2v_Traced[L](M: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): fpDashTsLib.libOptionTMod.OptionT2v2C[fpDashTsLib.fpDashTsLibStrings.Traced, L] = js.native
+  @JSName("getOptionT2v")
   def getOptionT2v_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): fpDashTsLib.libOptionTMod.OptionT2v1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("getOptionT2v")
   def getOptionT2v_Tuple(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Tuple]): fpDashTsLib.libOptionTMod.OptionT2v2[fpDashTsLib.fpDashTsLibStrings.Tuple] = js.native
@@ -1036,6 +1082,10 @@ object optionTNs extends js.Object {
   def getOptionT_These(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.These]): fpDashTsLib.libOptionTMod.OptionT2[fpDashTsLib.fpDashTsLibStrings.These] = js.native
   @JSName("getOptionT")
   def getOptionT_These[L](M: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, L]): fpDashTsLib.libOptionTMod.OptionT2C[fpDashTsLib.fpDashTsLibStrings.These, L] = js.native
+  @JSName("getOptionT")
+  def getOptionT_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): fpDashTsLib.libOptionTMod.OptionT2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
+  @JSName("getOptionT")
+  def getOptionT_Traced[L](M: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): fpDashTsLib.libOptionTMod.OptionT2C[fpDashTsLib.fpDashTsLibStrings.Traced, L] = js.native
   @JSName("getOptionT")
   def getOptionT_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): fpDashTsLib.libOptionTMod.OptionT1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("getOptionT")
@@ -1321,6 +1371,22 @@ object optionTNs extends js.Object {
     ]
   ] = js.native
   @JSName("getOrElse")
+  def getOrElse_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* a */ js.Any, 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]], 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("getOrElse")
+  def getOrElse_Traced[L](F: fpDashTsLib.libFunctorMod.Functor2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* a */ js.Any, 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]], 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+    ]
+  ] = js.native
+  @JSName("getOrElse")
   def getOrElse_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* a */ js.Any, 
     js.Function1[
@@ -1552,6 +1618,16 @@ object optionTNs extends js.Object {
   def liftF_These[L](F: fpDashTsLib.libFunctorMod.Functor2C[fpDashTsLib.fpDashTsLibStrings.These, L]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("liftF")
+  def liftF_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("liftF")
+  def liftF_Traced[L](F: fpDashTsLib.libFunctorMod.Functor2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]]
   ] = js.native
   @JSName("liftF")
   def liftF_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
@@ -1842,6 +1918,22 @@ object optionTNs extends js.Object {
     ]
   ] = js.native
   @JSName("none")
+  def none_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function0[
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      fpDashTsLib.libOptionMod.Option[scala.Nothing]
+    ]
+  ] = js.native
+  @JSName("none")
+  def none_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function0[
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      L, 
+      fpDashTsLib.libOptionMod.Option[scala.Nothing]
+    ]
+  ] = js.native
+  @JSName("none")
   def none_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function0[
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Tree, 
@@ -2070,6 +2162,16 @@ object optionTNs extends js.Object {
   def some_These[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.These, L]): js.Function1[
     /* a */ js.Any, 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("some")
+  def some_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* a */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libOptionMod.Option[_]]
+  ] = js.native
+  @JSName("some")
+  def some_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* a */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libOptionMod.Option[_]]
   ] = js.native
   @JSName("some")
   def some_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[

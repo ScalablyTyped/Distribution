@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 // Chainable interface
 //
 @js.native
-trait ChainableInterface[T]
-  extends bluebirdLib.bluebirdMod.^[T] {
+trait ChainableInterface
+  extends bluebirdLib.bluebirdMod.^[js.Any] {
   def asCallback(callback: js.Function): this.type = js.native
   def connection(connection: js.Any): this.type = js.native
   def debug(enabled: scala.Boolean): this.type = js.native
@@ -25,6 +25,6 @@ trait ChainableInterface[T]
     handler: js.Function1[/* readable */ nodeLib.streamMod.PassThrough, _]
   ): bluebirdLib.bluebirdMod.^[_] = js.native
   def toQuery(): java.lang.String = js.native
-  def transacting(trx: Transaction[T]): this.type = js.native
+  def transacting(trx: Transaction): this.type = js.native
 }
 

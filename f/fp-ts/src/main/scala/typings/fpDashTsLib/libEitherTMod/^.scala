@@ -167,6 +167,13 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.libEitherMod.Either[_, _]]
   ] = js.native
   @JSName("bimap")
+  def bimap_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function3[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]], 
+    /* f */ js.Function1[/* l */ js.Any, _], 
+    /* g */ js.Function1[/* a */ js.Any, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
+  ] = js.native
+  @JSName("bimap")
   def bimap_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function3[
     /* fa */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.libEitherMod.Either[_, _]], 
     /* f */ js.Function1[/* l */ js.Any, _], 
@@ -408,6 +415,15 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.libEitherMod.Either[_, _]]
   ] = js.native
   @JSName("chain")
+  def chain_Traced(F: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
+    ], 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
+  ] = js.native
+  @JSName("chain")
   def chain_Tree(F: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* f */ js.Function1[
       /* a */ js.Any, 
@@ -605,6 +621,13 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
   ] = js.native
   @JSName("fold")
+  def fold_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function3[
+    /* left */ js.Function1[/* l */ js.Any, _], 
+    /* right */ js.Function1[/* a */ js.Any, _], 
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("fold")
   def fold_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function3[
     /* left */ js.Function1[/* l */ js.Any, _], 
     /* right */ js.Function1[/* a */ js.Any, _], 
@@ -750,6 +773,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.libEitherMod.Either[_, _]]
   ] = js.native
   @JSName("fromEither")
+  def fromEither_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fa */ fpDashTsLib.libEitherMod.Either[_, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
+  ] = js.native
+  @JSName("fromEither")
   def fromEither_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* fa */ fpDashTsLib.libEitherMod.Either[_, _], 
     fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, fpDashTsLib.libEitherMod.Either[_, _]]
@@ -817,6 +845,8 @@ object ^ extends js.Object {
   @JSName("getEitherT2v")
   def getEitherT2v_These(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.These]): EitherT2v2[fpDashTsLib.fpDashTsLibStrings.These] = js.native
   @JSName("getEitherT2v")
+  def getEitherT2v_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): EitherT2v2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
+  @JSName("getEitherT2v")
   def getEitherT2v_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): EitherT2v1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("getEitherT2v")
   def getEitherT2v_Tuple(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Tuple]): EitherT2v2[fpDashTsLib.fpDashTsLibStrings.Tuple] = js.native
@@ -866,6 +896,8 @@ object ^ extends js.Object {
   def getEitherT_TaskEither(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.TaskEither]): EitherT2[fpDashTsLib.fpDashTsLibStrings.TaskEither] = js.native
   @JSName("getEitherT")
   def getEitherT_These(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.These]): EitherT2[fpDashTsLib.fpDashTsLibStrings.These] = js.native
+  @JSName("getEitherT")
+  def getEitherT_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): EitherT2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
   @JSName("getEitherT")
   def getEitherT_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): EitherT1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("getEitherT")
@@ -985,6 +1017,11 @@ object ^ extends js.Object {
   def left_These(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.These]): js.Function1[
     /* fl */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.libEitherMod.Either[_, _]]
+  ] = js.native
+  @JSName("left")
+  def left_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fl */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
   ] = js.native
   @JSName("left")
   def left_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
@@ -1191,6 +1228,14 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("mapLeft")
+  def mapLeft_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* f */ js.Function1[/* l */ js.Any, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]], 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
+    ]
+  ] = js.native
+  @JSName("mapLeft")
   def mapLeft_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* f */ js.Function1[/* l */ js.Any, _], 
     js.Function1[
@@ -1339,6 +1384,11 @@ object ^ extends js.Object {
   def right_These(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.These]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, fpDashTsLib.libEitherMod.Either[_, _]]
+  ] = js.native
+  @JSName("right")
+  def right_Traced(F: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libEitherMod.Either[_, _]]
   ] = js.native
   @JSName("right")
   def right_Tree(F: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[

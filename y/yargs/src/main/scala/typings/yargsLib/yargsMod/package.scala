@@ -17,7 +17,7 @@ package object yargsMod {
   type CommandBuilder[T, U] = org.scalablytyped.runtime.StringDictionary[Options] | (js.Function1[/* args */ Argv[T], Argv[U]])
   /** Remove undefined as a possible value for keys K in T */
   type Defined[T, K /* <: java.lang.String */] = (Omit[T, K]) with yargsLib.yargsLibStrings.Defined with T
-  type InferredOptionType[O /* <: Options | PositionalOptions */] = js.UndefOr[RequiredOptionType[O] | scala.Double]
+  type InferredOptionType[O /* <: Options | PositionalOptions */] = js.UndefOr[RequiredOptionType[O]] | RequiredOptionType[O] | scala.Double
   type InferredOptionTypes[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof O ]: yargs.yargs.InferredOptionType<O[key]>}
     */ yargsLib.yargsLibStrings.InferredOptionTypes with O

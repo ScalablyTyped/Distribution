@@ -429,6 +429,30 @@ trait Traversable[T]
     * Runs an action for every element in a data structure and accumulates the results
     */
   @JSName("traverse")
+  def traverse_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libHKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Runs an action for every element in a data structure and accumulates the results
+    */
+  @JSName("traverse")
+  def traverse_Traced[FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, FL]): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.libHKTMod.HKT[T, _]]
+  ] = js.native
+  /**
+    * Runs an action for every element in a data structure and accumulates the results
+    */
+  @JSName("traverse")
   def traverse_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]], 

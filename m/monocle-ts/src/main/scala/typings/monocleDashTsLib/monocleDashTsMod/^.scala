@@ -143,6 +143,13 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("fromFoldable")
+  def fromFoldable_Traced(F: fpDashTsLib.libFoldableMod.Foldable2[monocleDashTsLib.monocleDashTsLibStrings.Traced]): js.Function0[
+    Fold[
+      fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Traced, _, _], 
+      _
+    ]
+  ] = js.native
+  @JSName("fromFoldable")
   def fromFoldable_Tree(F: fpDashTsLib.libFoldableMod.Foldable1[monocleDashTsLib.monocleDashTsLibStrings.Tree]): js.Function0[
     Fold[fpDashTsLib.libHKTMod.Type[monocleDashTsLib.monocleDashTsLibStrings.Tree, _], _]
   ] = js.native
@@ -308,6 +315,13 @@ object ^ extends js.Object {
   def fromTraversable_These(T: fpDashTsLib.libTraversableMod.Traversable2[monocleDashTsLib.monocleDashTsLibStrings.These]): js.Function0[
     Traversal[
       fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.These, _, _], 
+      _
+    ]
+  ] = js.native
+  @JSName("fromTraversable")
+  def fromTraversable_Traced(T: fpDashTsLib.libTraversableMod.Traversable2[monocleDashTsLib.monocleDashTsLibStrings.Traced]): js.Function0[
+    Traversal[
+      fpDashTsLib.libHKTMod.Type2[monocleDashTsLib.monocleDashTsLibStrings.Traced, _, _], 
       _
     ]
   ] = js.native

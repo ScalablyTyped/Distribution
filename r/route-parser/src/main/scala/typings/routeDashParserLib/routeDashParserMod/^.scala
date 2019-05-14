@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("route-parser", JSImport.Namespace)
 @js.native
-class ^ protected () extends Route {
+class ^[TParams /* <: js.Object */] protected () extends Route[TParams] {
   /**
     * Represents a route
     * @example
@@ -27,7 +27,9 @@ class ^ protected () extends Route {
     * route.match('/foo/bar/') // -> {one: 'foo', two: 'bar'}
     */
   /* CompleteClass */
-  override def `match`(pathname: java.lang.String): org.scalablytyped.runtime.StringDictionary[java.lang.String] | routeDashParserLib.routeDashParserLibNumbers.`false` = js.native
+  override def `match`(pathname: java.lang.String): (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof TParams ]: string}
+    */ routeDashParserLib.routeDashParserLibStrings.Route with js.Any) | routeDashParserLib.routeDashParserLibNumbers.`false` = js.native
   /**
     * Reverse a route specification to a path, returning false if it can't be
     * fulfilled
@@ -36,6 +38,6 @@ class ^ protected () extends Route {
     * route.reverse({one: 'foo', two: 'bar'}) -> '/foo/bar'
     */
   /* CompleteClass */
-  override def reverse(params: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false` = js.native
+  override def reverse(params: TParams): java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false` = js.native
 }
 

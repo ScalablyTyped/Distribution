@@ -36,7 +36,9 @@ package object rechartsMod {
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
   type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, reactLib.reactMod.ReactNode]
   type LegendValueFormatter = js.Function3[
-    /* value */ js.UndefOr[scala.Nothing], 
+    /* import warning: ImportType.apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ /* value */ js.UndefOr[
+      /* import warning: ImportType.apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
+    ], 
     /* entry */ js.UndefOr[LegendPayload], 
     /* i */ js.UndefOr[scala.Double], 
     js.Any

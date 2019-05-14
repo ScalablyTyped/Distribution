@@ -1,7 +1,7 @@
-[debug] PhaseRunner.scala:82 Success [id => numeric, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:163 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric),TsIdentLibrarySimple(numeric)),TsIdentModule(None,List(numeric))) [id => numeric, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric),TsIdentLibrarySimple(numeric)),TsIdentModule(None,List(numeric))) [id => numeric, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(numeric)) [id => numeric, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:205 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abs) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abseq) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(acos) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
@@ -66,21 +66,21 @@
 [info ] ExpandTypeParams.scala:61 Expanding 14 members for TsIdentSimple(min) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 14 members for TsIdentSimple(getBlock) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 14 members for TsIdentSimple(setBlock) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Tensor) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Random) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberProperty(seedrandom) / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_H) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(toUpperHessenberg) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_B) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(QRFrancis) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Hinv) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_F) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LU) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LUsolve) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_A) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(echelonize) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Iterations) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveLP) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Iact) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveQP) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_S) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(svd) / TsFunSig() / TsTypeObject())] 
-[debug] PhaseRunner.scala:82 Success [id => numeric, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:40 Processing numeric [id => numeric, phase => scala.js] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Tensor) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Random) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberProperty(seedrandom) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_H) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(toUpperHessenberg) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_B) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(QRFrancis) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Hinv) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_F) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LU) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LUsolve) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_A) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(echelonize) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Iterations) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveLP) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Iact) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveQP) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_S) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(svd) / TsFunSig() / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing numeric [id => numeric, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => numeric, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
 	at scala.sys.package$.error(package.scala:30)
 	at com.olvind.tso.scalajs.Annotation$.renamedFrom(Annotation.scala:48)
@@ -115,63 +115,63 @@
 	at com.olvind.tso.scalajs.transforms.CombineOverloads$.combineOverloads(CombineOverloads.scala:123)
 	at com.olvind.tso.scalajs.transforms.CombineOverloads$.enterClassTree(CombineOverloads.scala:27)
 	at com.olvind.tso.scalajs.TreeTransformation.visitClassTree(TreeTransformation.scala:36)
-	at com.olvind.tso.scalajs.TreeTransformation.visitTree(TreeTransformation.scala:201)
-	at com.olvind.tso.scalajs.TreeTransformation.$anonfun$visitPackageTree$1(TreeTransformation.scala:121)
+	at com.olvind.tso.scalajs.TreeTransformation.visitTree(TreeTransformation.scala:207)
+	at com.olvind.tso.scalajs.TreeTransformation.$anonfun$visitPackageTree$1(TreeTransformation.scala:123)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:121)
-	at com.olvind.tso.scalajs.TreeTransformation.visitContainerTree(TreeTransformation.scala:186)
-	at com.olvind.tso.scalajs.TreeTransformation.visitTree(TreeTransformation.scala:200)
-	at com.olvind.tso.scalajs.TreeTransformation.$anonfun$visitPackageTree$1(TreeTransformation.scala:121)
+	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:123)
+	at com.olvind.tso.scalajs.TreeTransformation.visitContainerTree(TreeTransformation.scala:192)
+	at com.olvind.tso.scalajs.TreeTransformation.visitTree(TreeTransformation.scala:206)
+	at com.olvind.tso.scalajs.TreeTransformation.$anonfun$visitPackageTree$1(TreeTransformation.scala:123)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.immutable.List.foreach(List.scala:392)
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.immutable.List.map(List.scala:298)
-	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:121)
-	at com.olvind.tso.scalajs.TreeTransformation.visitContainerTree(TreeTransformation.scala:186)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$10(Phase2ToScalaJs.scala:53)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$15(Phase2ToScalaJs.scala:62)
+	at com.olvind.tso.scalajs.TreeTransformation.visitPackageTree(TreeTransformation.scala:123)
+	at com.olvind.tso.scalajs.TreeTransformation.visitContainerTree(TreeTransformation.scala:192)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$10(Phase2ToScalaJs.scala:55)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$15(Phase2ToScalaJs.scala:64)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)
-	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:61)
+	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:63)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
 	at com.olvind.tso.phases.PhaseRes$Ok.map(PhaseRes.scala:30)
-	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:30)
+	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:32)
 	at com.olvind.tso.importer.Phase2ToScalaJs.apply(Phase2ToScalaJs.scala:13)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:76)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:78)
 	at com.olvind.tso.phases.PhaseRes$.attempt(PhaseRes.scala:71)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:76)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$4(PhaseRunner.scala:78)
 	at com.olvind.tso.phases.PhaseRes.flatMap(PhaseRes.scala:23)
 	at com.olvind.tso.phases.PhaseRes.flatMap$(PhaseRes.scala:21)
 	at com.olvind.tso.phases.PhaseRes$Ok.flatMap(PhaseRes.scala:30)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:76)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:47)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:78)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
 	at scala.Option.foreach(Option.scala:274)
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:52)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:47)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
 	at scala.Option.foreach(Option.scala:274)
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:52)
-	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:47)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:54)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
 	at scala.Option.foreach(Option.scala:274)
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
-	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
-	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:214)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:218)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
 	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)
@@ -211,6 +211,6 @@
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 
-[error] PhaseRunner.scala:86 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => scala.js] 
-[error] PhaseRunner.scala:86 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => publish] 
+[error] PhaseRunner.scala:88 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => publish] 

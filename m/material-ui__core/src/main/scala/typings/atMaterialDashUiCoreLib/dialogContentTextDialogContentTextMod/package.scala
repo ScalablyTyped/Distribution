@@ -7,9 +7,4 @@ import scala.scalajs.js.annotation._
 
 package object dialogContentTextDialogContentTextMod {
   type DialogContentTextClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root
-  type DialogContentTextProps = atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.StandardProps[
-    atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps, 
-    DialogContentTextClassKey, 
-    scala.Nothing
-  ]
 }

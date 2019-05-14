@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "webpack-watched-glob-entries-plugin"
-version := "2.1-dt-20190304Z-f864ba"
+version := "2.1-dt-20190304Z-d4e909"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-c5c3e6",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-c3c02f",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e5a95c",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-f20c2f",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
   "org.scalablytyped" %%% "source-map" % "0.7.3-c62343",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-98777a",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-32bf87",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190506Z-0b4eec")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190506Z-147a1c")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

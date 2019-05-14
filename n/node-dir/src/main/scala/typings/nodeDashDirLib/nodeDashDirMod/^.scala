@@ -12,6 +12,7 @@ object ^ extends js.Object {
     dir: java.lang.String,
     callback: js.Function2[/* error */ js.Any, /* files */ js.Array[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
+  def files(dir: java.lang.String, syncOption: nodeDashDirLib.Anon_Sync): js.Array[java.lang.String] = js.native
   def paths(
     dir: java.lang.String,
     callback: js.Function2[/* error */ js.Any, /* paths */ PathsResult, scala.Unit]
@@ -21,6 +22,7 @@ object ^ extends js.Object {
     combine: scala.Boolean,
     callback: js.Function2[/* error */ js.Any, /* paths */ js.Array[java.lang.String] | PathsResult, scala.Unit]
   ): scala.Unit = js.native
+  def promiseFiles(dir: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def readFiles(dir: java.lang.String, fileCallback: FileCallback): scala.Unit = js.native
   def readFiles(dir: java.lang.String, fileCallback: FileCallback, finishedCallback: FinishedCallback): scala.Unit = js.native
   def readFiles(dir: java.lang.String, fileCallback: FileNamedCallback): scala.Unit = js.native

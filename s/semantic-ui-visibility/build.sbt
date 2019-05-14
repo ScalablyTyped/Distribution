@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-visibility"
-version := "2.2-dt-20180214Z-944b83"
+version := "2.2-dt-20180214Z-83c02f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

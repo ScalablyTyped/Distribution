@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param stops [optional] - Array of GradientStops
   * @param radial [optional] - Whether the gradient is radial or linear
   */
-class Gradient () extends js.Object {
+class Gradient () extends Base {
   def this(`object`: js.Any) = this()
   def this(stops: js.Array[(js.Array[java.lang.String | scala.Double]) | GradientStop | java.lang.String]) = this()
   def this(stops: js.Array[(js.Array[java.lang.String | scala.Double]) | GradientStop | java.lang.String], radial: scala.Boolean) = this()

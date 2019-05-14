@@ -40,11 +40,6 @@ trait ojRadioset[K, D]
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
-  @JSName("onValueChanged")
-  var onValueChanged_ojRadioset: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-    _
-  ]) | scala.Null = js.native
   var optionRenderer: js.UndefOr[
     (js.Function1[
       /* param0 */ atOracleOraclejetLib.ojradiosetMod.ojRadiosetNs.OptionContext[D], 
@@ -56,6 +51,27 @@ trait ojRadioset[K, D]
   var required: scala.Boolean = js.native
   @JSName("translations")
   var translations_ojRadioset: atOracleOraclejetLib.Anon_Required = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojradioset.ojRadioset<K, D>['value'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_labelledByChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelledByChanged,

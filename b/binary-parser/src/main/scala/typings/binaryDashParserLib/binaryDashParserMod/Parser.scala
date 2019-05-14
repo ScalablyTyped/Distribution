@@ -105,7 +105,7 @@ trait Parser[O /* <: js.UndefOr[js.Object] */] extends js.Object {
   def int8[N /* <: java.lang.String */](name: N): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, scala.Double] = js.native
   def int8[N /* <: java.lang.String */](name: N, options: binaryDashParserLib.binaryDashParserMod.ParserNs.Options): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, scala.Double] = js.native
      /* [sic] */ def namely(alias: java.lang.String): Parser[O] = js.native
-  def nest[N /* <: java.lang.String */, Q /* <: binaryDashParserLib.binaryDashParserMod.ParserNs.NestOptions */](name: N, options: Q): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, _ | js.Object] = js.native
+  def nest[N /* <: java.lang.String */, Q /* <: binaryDashParserLib.binaryDashParserMod.ParserNs.NestOptions */](name: N, options: Q): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, js.Object] = js.native
   def parse(buffer: nodeLib.Buffer): binaryDashParserLib.binaryDashParserMod.ParserNs.Parsed[O] = js.native
   def parse(
     buffer: nodeLib.Buffer,

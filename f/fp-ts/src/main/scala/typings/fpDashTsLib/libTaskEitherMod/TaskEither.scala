@@ -81,6 +81,15 @@ class TaskEither[L, A] protected () extends js.Object {
     onLeft: js.Function1[/* l */ L, TaskEither[M, B]],
     onRight: js.Function1[/* a */ A, TaskEither[M, B]]
   ): TaskEither[M, B] = js.native
+  /**
+    * Similar to `fold`, return the value from Right or the given argument if Left.
+    * @since 1.17.0
+    */
+  def getOrElse(a: A): fpDashTsLib.libTaskMod.Task[A] = js.native
+  /**
+    * @since 1.17.0
+    */
+  def getOrElseL(f: js.Function1[/* l */ L, A]): fpDashTsLib.libTaskMod.Task[A] = js.native
   def map[B](f: js.Function1[/* a */ A, B]): TaskEither[L, B] = js.native
   def mapLeft[M](f: js.Function1[/* l */ L, M]): TaskEither[M, A] = js.native
   /**

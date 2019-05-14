@@ -16,6 +16,7 @@ trait URI2HKT2[L, A] extends js.Object {
   var Store: fpDashTsLib.libStoreMod.Store[L, A]
   var TaskEither: fpDashTsLib.libTaskEitherMod.TaskEither[L, A]
   var These: fpDashTsLib.libTheseMod.These[L, A]
+  var Traced: fpDashTsLib.libTracedMod.Traced[L, A]
   var Tuple: fpDashTsLib.libTupleMod.Tuple[L, A]
   var Validation: fpDashTsLib.libValidationMod.Validation[L, A]
   var Writer: fpDashTsLib.libWriterMod.Writer[L, A]
@@ -34,11 +35,12 @@ object URI2HKT2 {
     Store: fpDashTsLib.libStoreMod.Store[L, A],
     TaskEither: fpDashTsLib.libTaskEitherMod.TaskEither[L, A],
     These: fpDashTsLib.libTheseMod.These[L, A],
+    Traced: fpDashTsLib.libTracedMod.Traced[L, A],
     Tuple: fpDashTsLib.libTupleMod.Tuple[L, A],
     Validation: fpDashTsLib.libValidationMod.Validation[L, A],
     Writer: fpDashTsLib.libWriterMod.Writer[L, A]
   ): URI2HKT2[L, A] = {
-    val __obj = js.Dynamic.literal(Const = Const, Either = Either, Free = Free.asInstanceOf[js.Any], IOEither = IOEither, Map = Map, Reader = Reader, State = State, Store = Store, TaskEither = TaskEither, These = These, Tuple = Tuple, Validation = Validation, Writer = Writer)
+    val __obj = js.Dynamic.literal(Const = Const, Either = Either, Free = Free.asInstanceOf[js.Any], IOEither = IOEither, Map = Map, Reader = Reader, State = State, Store = Store, TaskEither = TaskEither, These = These, Traced = Traced, Tuple = Tuple, Validation = Validation, Writer = Writer)
   
     __obj.asInstanceOf[URI2HKT2[L, A]]
   }

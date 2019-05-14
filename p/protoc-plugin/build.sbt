@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "protoc-plugin"
-version := "0.0-dt-20190314Z-c2dacf"
+version := "0.0-dt-20190314Z-0cf4b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180214Z-fa02ee",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190503Z-cb8223",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

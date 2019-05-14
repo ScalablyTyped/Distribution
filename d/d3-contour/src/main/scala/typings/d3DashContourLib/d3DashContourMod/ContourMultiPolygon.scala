@@ -23,7 +23,7 @@ object ContourMultiPolygon {
     bbox: geojsonLib.geojsonMod.BBox = null
   ): ContourMultiPolygon = {
     val __obj = js.Dynamic.literal(coordinates = coordinates, value = value)
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.updateDynamic("type")(type_MultiPolygon)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContourMultiPolygon]

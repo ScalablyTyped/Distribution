@@ -19,7 +19,9 @@ object zipperNs extends js.Object {
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libZipperMod.Zipper[A]] = js.native
   def fromArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A], focusIndex: scala.Double): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libZipperMod.Zipper[A]] = js.native
   def fromNonEmptyArray[A](nea: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]): fpDashTsLib.libZipperMod.Zipper[A] = js.native
+  def fromNonEmptyArray2v[A](nea: fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A]): fpDashTsLib.libZipperMod.Zipper[A] = js.native
   def getMonoid[A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libZipperMod.Zipper[A]] = js.native
   def getSemigroup[A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libZipperMod.Zipper[A]] = js.native
+  def getShow[A](S: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libZipperMod.Zipper[A]] = js.native
 }
 

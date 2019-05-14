@@ -76,13 +76,13 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var watchPaths: js.Any
   var workersNumber: js.Any
   @JSName("apply")
-  def apply(compiler: webpackLib.webpackMod.Compiler): scala.Unit
+  def apply(compiler: js.Any): scala.Unit
 }
 
 object ForkTsCheckerWebpackPlugin {
   @scala.inline
   def apply(
-    apply: webpackLib.webpackMod.Compiler => scala.Unit,
+    apply: js.Any => scala.Unit,
     async: js.Any,
     checkDone: js.Any,
     checkSyntacticErrors: js.Any,

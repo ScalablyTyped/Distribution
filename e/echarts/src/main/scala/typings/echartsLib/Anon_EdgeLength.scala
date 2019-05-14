@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_EdgeLength extends js.Object {
   /**
     * The distance between 2 nodes on edge.
@@ -23,7 +22,7 @@ trait Anon_EdgeLength extends js.Object {
     * 30
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.edgeLength
     */
-  var edgeLength: js.UndefOr[js.Array[_] | scala.Double] = js.native
+  var edgeLength: js.UndefOr[js.Array[_] | scala.Double] = js.undefined
   /**
     * The gravity factor enforcing nodes approach to the center.
     * The nodes will be closer to the center as the value becomes
@@ -34,7 +33,7 @@ trait Anon_EdgeLength extends js.Object {
     * 0.1
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.gravity
     */
-  var gravity: js.UndefOr[scala.Double] = js.native
+  var gravity: js.UndefOr[scala.Double] = js.undefined
   /**
     * The initial layout before force-directed layout, which will
     * influence on the result of force-directed layout.
@@ -53,7 +52,7 @@ trait Anon_EdgeLength extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.initLayout
     */
-  var initLayout: js.UndefOr[java.lang.String] = js.native
+  var initLayout: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Because the force-directed layout will be steady after several
     * iterations, this parameter will be decide whether to show
@@ -67,7 +66,7 @@ trait Anon_EdgeLength extends js.Object {
     * "true"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.layoutAnimation
     */
-  var layoutAnimation: js.UndefOr[scala.Boolean] = js.native
+  var layoutAnimation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The repulsion factor between nodes.
     * The repulsion will be stronger and the distance between 2
@@ -82,6 +81,25 @@ trait Anon_EdgeLength extends js.Object {
     * 50
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.force.repulsion
     */
-  var repulsion: js.UndefOr[js.Array[_] | scala.Double] = js.native
+  var repulsion: js.UndefOr[js.Array[_] | scala.Double] = js.undefined
+}
+
+object Anon_EdgeLength {
+  @scala.inline
+  def apply(
+    edgeLength: js.Array[_] | scala.Double = null,
+    gravity: scala.Int | scala.Double = null,
+    initLayout: java.lang.String = null,
+    layoutAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    repulsion: js.Array[_] | scala.Double = null
+  ): Anon_EdgeLength = {
+    val __obj = js.Dynamic.literal()
+    if (edgeLength != null) __obj.updateDynamic("edgeLength")(edgeLength.asInstanceOf[js.Any])
+    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (initLayout != null) __obj.updateDynamic("initLayout")(initLayout)
+    if (!js.isUndefined(layoutAnimation)) __obj.updateDynamic("layoutAnimation")(layoutAnimation)
+    if (repulsion != null) __obj.updateDynamic("repulsion")(repulsion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EdgeLength]
+  }
 }
 

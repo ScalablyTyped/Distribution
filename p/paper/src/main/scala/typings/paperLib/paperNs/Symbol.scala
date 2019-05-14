@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Symbol")
 @js.native
-class Symbol protected () extends js.Object {
+class Symbol protected () extends Base {
   /**
     * Creates a Symbol item.
     * @param item - the source item which is copied as the definition of the symbol

@@ -13,7 +13,7 @@ package object distTypeDashHelpersMod {
     typesafeDashActionsLib.Anon_Type[T] with TCustomAction
   ]) | (js.Function1[/* payload */ TPayloadArg, typesafeDashActionsLib.Anon_Type[T] with TCustomAction]) | (js.Function0[typesafeDashActionsLib.Anon_Type[T] with TCustomAction])
   type ActionCreator[T /* <: StringType */] = js.Function1[/* repeated */ js.Any, typesafeDashActionsLib.Anon_Type[T]]
-  type ActionType[ActionCreatorOrMap] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof ActionCreatorOrMap ]: object}[keyof ActionCreatorOrMap] */ js.Any) | stdLib.ReturnType[ActionCreatorOrMap]
+  type ActionType[ActionCreatorOrMap] = js.Any | stdLib.ReturnType[ActionCreatorOrMap]
   type EmptyAC[T /* <: StringType */] = js.Function0[EmptyAction[T]]
   type IsEmpty[T] = T
   type PayloadAC[T /* <: StringType */, P] = js.Function1[/* payload */ P, PayloadAction[T, P]]

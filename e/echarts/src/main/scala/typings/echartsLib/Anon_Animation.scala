@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Animation extends js.Object {
   /**
     * Whether to enable animation.
@@ -15,7 +14,7 @@ trait Anon_Animation extends js.Object {
     * "true"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animation
     */
-  var animation: js.UndefOr[scala.Boolean] = js.native
+  var animation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Delay before updating the first animation, which supports
     * callback function for different data to have different animation
@@ -32,7 +31,7 @@ trait Anon_Animation extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDelay: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Delay before updating animation, which supports callback
     * function for different data to have different animation effect.
@@ -50,7 +49,7 @@ trait Anon_Animation extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
@@ -62,7 +61,7 @@ trait Anon_Animation extends js.Object {
     * 1000
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDuration: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -74,7 +73,7 @@ trait Anon_Animation extends js.Object {
     * 300
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -86,7 +85,7 @@ trait Anon_Animation extends js.Object {
     * "cubicOut"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationEasing
     */
-  var animationEasing: js.UndefOr[java.lang.String] = js.native
+  var animationEasing: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Easing method used for animation.
     *
@@ -95,7 +94,7 @@ trait Anon_Animation extends js.Object {
     * "cubicOut"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[java.lang.String] = js.native
+  var animationEasingUpdate: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger
@@ -106,7 +105,7 @@ trait Anon_Animation extends js.Object {
     * 2000
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.animationThreshold
     */
-  var animationThreshold: js.UndefOr[scala.Double] = js.native
+  var animationThreshold: js.UndefOr[scala.Double] = js.undefined
   /**
     * Data array for mark points, each of which is an object.
     * Here are some ways to assign mark point position.
@@ -141,21 +140,21 @@ trait Anon_Animation extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.data
     */
-  var data: js.UndefOr[js.Array[Anon_Coord]] = js.native
+  var data: js.UndefOr[js.Array[Anon_Coord]] = js.undefined
   /**
     * Mark point style.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.native
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * Label of mark point.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.native
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadius] = js.undefined
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
@@ -164,7 +163,7 @@ trait Anon_Animation extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.silent
     */
-  var silent: js.UndefOr[scala.Boolean] = js.native
+  var silent: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Symbol of .
     *
@@ -206,14 +205,14 @@ trait Anon_Animation extends js.Object {
     * "pin"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.symbol
     */
-  var symbol: js.UndefOr[java.lang.String] = js.native
+  var symbol: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[scala.Boolean] = js.native
+  var symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Offset of symbol relative to original position.
     * By default, symbol will be put in the center position of
@@ -235,7 +234,7 @@ trait Anon_Animation extends js.Object {
     * [0, 0]
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Rotate degree of symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
@@ -245,7 +244,7 @@ trait Anon_Animation extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.symbolRotate
     */
-  var symbolRotate: js.UndefOr[scala.Double] = js.native
+  var symbolRotate: js.UndefOr[scala.Double] = js.undefined
   /**
     * symbol size.
     * It can be set to single numbers like `10`, or use an array
@@ -271,6 +270,49 @@ trait Anon_Animation extends js.Object {
     * 50
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | js.Function | scala.Double] = js.native
+  var symbolSize: js.UndefOr[js.Array[_] | js.Function | scala.Double] = js.undefined
+}
+
+object Anon_Animation {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    data: js.Array[Anon_Coord] = null,
+    itemStyle: Anon_BorderColorBorderType = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadius = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | js.Function | scala.Double = null
+  ): Anon_Animation = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Animation]
+  }
 }
 

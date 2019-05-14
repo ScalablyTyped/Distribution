@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   // callback have to be passed as last argument
-  def apply(streams: (Stream | Callback)*): js.Array[Stream] = js.native
-  def apply(streams: js.Array[Stream]): js.Array[Stream] = js.native
-  def apply(streams: js.Array[Stream], callback: Callback): js.Array[Stream] = js.native
+  def apply(streams: (Stream | Callback)*): Stream = js.native
+  def apply(streams: js.Array[Stream]): Stream = js.native
+  def apply(streams: js.Array[Stream], callback: Callback): Stream = js.native
 }
 

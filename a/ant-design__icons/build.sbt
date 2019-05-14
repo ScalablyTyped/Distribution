@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons"
-version := "1.2.1-05dba0"
+version := "2.0.0-1fe89e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -41,8 +41,8 @@ object semigroupNs extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param semigroups because its type T is not an array type */ semigroups: T
   ): fpDashTsLib.libSemigroupMod.Semigroup[
     /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.getTupleSemigroup with js.Any
+  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Semigroup.Semigroup<infer A>? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleSemigroup with T
   ] = js.native
 }
 

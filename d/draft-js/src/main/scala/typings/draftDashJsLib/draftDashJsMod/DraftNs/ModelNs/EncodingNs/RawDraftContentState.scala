@@ -16,14 +16,14 @@ import scala.scalajs.js.annotation._
   */
 trait RawDraftContentState extends js.Object {
   var blocks: js.Array[RawDraftContentBlock]
-  var entityMap: org.scalablytyped.runtime.StringDictionary[RawDraftEntity]
+  var entityMap: org.scalablytyped.runtime.StringDictionary[RawDraftEntity[org.scalablytyped.runtime.StringDictionary[_]]]
 }
 
 object RawDraftContentState {
   @scala.inline
   def apply(
     blocks: js.Array[RawDraftContentBlock],
-    entityMap: org.scalablytyped.runtime.StringDictionary[RawDraftEntity]
+    entityMap: org.scalablytyped.runtime.StringDictionary[RawDraftEntity[org.scalablytyped.runtime.StringDictionary[_]]]
   ): RawDraftContentState = {
     val __obj = js.Dynamic.literal(blocks = blocks, entityMap = entityMap)
   

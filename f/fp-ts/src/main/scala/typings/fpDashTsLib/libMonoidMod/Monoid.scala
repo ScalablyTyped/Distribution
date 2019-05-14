@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Monoid[A]
-  extends fpDashTsLib.libSemigroupMod.Semigroup[A] {
+  extends fpDashTsLib.libMagmaMod.Magma[A] {
   val empty: A
 }
 

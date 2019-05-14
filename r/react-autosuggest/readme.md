@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Terry Bayne <https://github.com/tbayne>
 //                 Christopher Deutsch <https://github.com/cdeutsch>
 //                 Kevin Ross <https://github.com/rosskevin>
+//                 Thomas den Hollander <https://github.com/ThomasdenH>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

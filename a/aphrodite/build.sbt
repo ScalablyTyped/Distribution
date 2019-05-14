@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aphrodite"
-version := "0.5.0-dt-20190322Z-011f19"
+version := "0.5.0-dt-20190322Z-f16bbd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

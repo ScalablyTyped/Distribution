@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-types
 
-Typings are for version 1.3.4
+Typings are for version 1.3.5
 
 ## Library description:
 Types for OpenAPI documents.

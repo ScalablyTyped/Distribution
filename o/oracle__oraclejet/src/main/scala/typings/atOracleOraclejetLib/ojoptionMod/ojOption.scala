@@ -14,10 +14,33 @@ trait ojOption
     _
   ]) | scala.Null = js.native
   var onValueChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var value: js.Any = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.abort,
@@ -1006,25 +1029,6 @@ trait ojOption
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_valueChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_valueChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_volumechange(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.volumechange,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -1061,7 +1065,7 @@ trait ojOption
   @JSName("getProperty")
   def getProperty_disabled(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled): scala.Boolean = js.native
   @JSName("getProperty")
-  def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): scala.Nothing = js.native
+  def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojoption.ojOption['value'] */ js.Any = js.native
   def refresh(): scala.Unit = js.native
   def setProperties(properties: ojOptionSettablePropertiesLenient): scala.Unit = js.native
   def setProperty[T /* <: java.lang.String */](

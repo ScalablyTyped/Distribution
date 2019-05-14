@@ -42,14 +42,13 @@ object FileSystemNs extends js.Object {
   */
   trait EncodingType extends js.Object
   
-  @js.native
   trait FileInfo extends js.Object {
-    var exists: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
-    var isDirectory: js.UndefOr[scala.Boolean | expoLib.expoLibNumbers.`false`] = js.native
-    var md5: js.UndefOr[expoLib.expoMod.Md5] = js.native
-    var modificationTime: js.UndefOr[scala.Double] = js.native
-    var size: js.UndefOr[scala.Double] = js.native
-    var uri: js.UndefOr[java.lang.String] = js.native
+    var exists: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.undefined
+    var isDirectory: js.UndefOr[scala.Boolean | expoLib.expoLibNumbers.`false`] = js.undefined
+    var md5: js.UndefOr[expoLib.expoMod.Md5] = js.undefined
+    var modificationTime: js.UndefOr[scala.Double] = js.undefined
+    var size: js.UndefOr[scala.Double] = js.undefined
+    var uri: js.UndefOr[java.lang.String] = js.undefined
   }
   
   trait PauseResult extends js.Object {

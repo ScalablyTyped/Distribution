@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
   /**
     * The border color and gap color of a node.
@@ -15,7 +14,7 @@ trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
     * "#fff',"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.borderColor
     */
-  var borderColor: js.UndefOr[java.lang.String] = js.native
+  var borderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The color saturation of a border or gap.
     * The value range is between 0 ~ 1.
@@ -50,7 +49,7 @@ trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.borderColorSaturation
     */
-  var borderColorSaturation: js.UndefOr[java.lang.String] = js.native
+  var borderColorSaturation: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The border width of a node.
     * There is no border when it is set as `0`.
@@ -61,7 +60,7 @@ trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.borderWidth
     */
-  var borderWidth: js.UndefOr[scala.Double] = js.native
+  var borderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * The color of a node. It use global palette
     * [option.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#color)
@@ -70,7 +69,7 @@ trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.color
     */
-  var color: js.UndefOr[java.lang.String] = js.native
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The tranparent rate of a node, the range is between 0
     * ~ 1.
@@ -78,7 +77,7 @@ trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.colorAlpha
     */
-  var colorAlpha: js.UndefOr[scala.Double] = js.native
+  var colorAlpha: js.UndefOr[scala.Double] = js.undefined
   /**
     * The color saturation of a node.
     * The range is between 0 ~ 1.
@@ -86,27 +85,54 @@ trait Anon_BorderColorBorderColorSaturationBorderWidth extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.colorSaturation
     */
-  var colorSaturation: js.UndefOr[scala.Double] = js.native
+  var colorSaturation: js.UndefOr[scala.Double] = js.undefined
   /**
     * Gaps between child nodes.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.gapWidth
     */
-  var gapWidth: js.UndefOr[scala.Double] = js.native
+  var gapWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * Stroke color of each rect.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.strokeColor
     */
-  var strokeColor: js.UndefOr[java.lang.String] = js.native
+  var strokeColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Stroke width of each rect.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle.strokeWidth
     */
-  var strokeWidth: js.UndefOr[scala.Double] = js.native
+  var strokeWidth: js.UndefOr[scala.Double] = js.undefined
+}
+
+object Anon_BorderColorBorderColorSaturationBorderWidth {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    borderColorSaturation: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    colorAlpha: scala.Int | scala.Double = null,
+    colorSaturation: scala.Int | scala.Double = null,
+    gapWidth: scala.Int | scala.Double = null,
+    strokeColor: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null
+  ): Anon_BorderColorBorderColorSaturationBorderWidth = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColorSaturation != null) __obj.updateDynamic("borderColorSaturation")(borderColorSaturation)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha.asInstanceOf[js.Any])
+    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (gapWidth != null) __obj.updateDynamic("gapWidth")(gapWidth.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BorderColorBorderColorSaturationBorderWidth]
+  }
 }
 

@@ -144,7 +144,7 @@ class PathItem () extends Item {
     * @param path - the path to intersect with
     * @param options [optional] - the boolean operation options. default { insert: true, trace: true }
     * @param options.insert - whether the resulting item should be inserted back into the scene graph, above both paths involved in the operation.
-    * @param options.trace - whether the tracing method is used, treating both paths as areas when determining which parts of the paths are to be kept in the result, or whether the first path is only to be split at intersections, keeping the parts of the curves that intersect with the area of the second path. 
+    * @param options.trace - whether the tracing method is used, treating both paths as areas when determining which parts of the paths are to be kept in the result, or whether the first path is only to be split at intersections, keeping the parts of the curves that intersect with the area of the second path.
     */
   def intersect(path: PathItem): PathItem = js.native
   def intersect(path: PathItem, options: paperLib.Anon_InsertTrace): PathItem = js.native
@@ -227,7 +227,7 @@ class PathItem () extends Item {
     * @param path - the path to subtract
     * @param options [optional] - the boolean operation options. default { insert: true, trace: true }
     * @param options.insert - whether the resulting item should be inserted back into the scene graph, above both paths involved in the operation.
-    * @param options.trace - whether the tracing method is used, treating both paths as areas when determining which parts of the paths are to be kept in the result, or whether the first path is only to be split at intersections, keeping the parts of the curves that intersect with the area of the second path. 
+    * @param options.trace - whether the tracing method is used, treating both paths as areas when determining which parts of the paths are to be kept in the result, or whether the first path is only to be split at intersections, keeping the parts of the curves that intersect with the area of the second path.
     */
   def subtract(path: PathItem): PathItem = js.native
   def subtract(path: PathItem, options: paperLib.Anon_InsertTrace): PathItem = js.native

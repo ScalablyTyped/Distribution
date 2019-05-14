@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "delaunator"
-version := "2.0-dt-20180910Z-4627c3"
+version := "3.0-dt-20190513Z-ed9328"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

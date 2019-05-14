@@ -88,6 +88,12 @@ object profunctorNs extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
   ] = js.native
   @JSName("lmap")
+  def lmap_Traced(profunctor: fpDashTsLib.libProfunctorMod.Profunctor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fbc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* f */ js.Function1[/* a */ js.Any, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("lmap")
   def lmap_Tuple(profunctor: fpDashTsLib.libProfunctorMod.Profunctor2[fpDashTsLib.fpDashTsLibStrings.Tuple]): js.Function2[
     /* fbc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _], 
     /* f */ js.Function1[/* a */ js.Any, _], 
@@ -183,6 +189,12 @@ object profunctorNs extends js.Object {
     /* fbc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     /* g */ js.Function1[/* c */ js.Any, _], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+  ] = js.native
+  @JSName("rmap")
+  def rmap_Traced(profunctor: fpDashTsLib.libProfunctorMod.Profunctor2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fbc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* g */ js.Function1[/* c */ js.Any, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
   ] = js.native
   @JSName("rmap")
   def rmap_Tuple(profunctor: fpDashTsLib.libProfunctorMod.Profunctor2[fpDashTsLib.fpDashTsLibStrings.Tuple]): js.Function2[

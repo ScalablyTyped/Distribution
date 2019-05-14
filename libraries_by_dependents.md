@@ -2140,6 +2140,7 @@
 | 61 | [lodash_dot_padstart](./l/lodash_dot_padstart) | The lodash method _.padStart exported as a module.
 | 61 | [parsimmon](./p/parsimmon) | A monadic LL(infinity) parser combinator library
 | 61 | [react-native-scrollable-t](./r/react-native-scrollable-tab-view) | -
+| 61 | [react-pose](./r/react-pose) | A declarative animation library for React
 | 61 | [rebass](./r/rebass) | React primitive UI components built with styled-sy
 | 61 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text
 | 61 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs
@@ -2447,6 +2448,7 @@
 | 47 | [murmurhash-js](./m/murmurhash-js) | Native JS murmur hash implementation
 | 47 | [newman](./n/newman) | Command-line companion utility for Postman
 | 47 | [passport-saml](./p/passport-saml) | SAML 2.0 authentication strategy for Passport
+| 47 | [popmotion](./p/popmotion) | A functional, reactive motion library.
 | 47 | [react-media](./r/react-media) | CSS media queries for React
 | 47 | [react-native-communicatio](./r/react-native-communications) | Open a web address or call, email, text or iMessag
 | 47 | [redux-immutable-state-inv](./r/redux-immutable-state-invariant) | Redux middleware that detects mutations between an
@@ -3369,6 +3371,7 @@
 | 20 | [fuzzyset_dot_js](./f/fuzzyset_dot_js) | A fuzzy string set for JavaScript
 | 20 | [git-repo-name](./g/git-repo-name) | Get the repository name from the git remote origin
 | 20 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl
+| 20 | [graphql-upload](./g/graphql-upload) | Middleware and an Upload scalar to add support for
 | 20 | [hashlru](./h/hashlru) | simpler faster substitute for LRU
 | 20 | [http-string-parser](./h/http-string-parser) | Parse HTTP Request and Response from String
 | 20 | [ibm_db](./i/ibm_db) | IBM DB2 and IBM Informix bindings for node
@@ -3446,6 +3449,7 @@
 | 19 | [rmc-steps](./r/rmc-steps) | steps ui component for react mobile
 | 19 | [rmc-tooltip](./r/rmc-tooltip) | React Tooltip
 | 19 | [roman-numerals](./r/roman-numerals) | Roman numerals conversion module
+| 19 | [sc-errors](./s/sc-errors) | Error types for use throughout SocketCluster
 | 19 | [sort-object-keys](./s/sort-object-keys) | Sort an object's keys, including an optional key l
 | 19 | [sparqljs](./s/sparqljs) | A parser for the SPARQL query language
 | 19 | [spellchecker](./s/spellchecker) | Bindings to native spellchecker
@@ -3574,6 +3578,7 @@
 | 17 | [subscribe-ui-event](./s/subscribe-ui-event) | A single, throttle built-in solution to subscribe 
 | 17 | [swag](./s/swag) | Give your handlebars.js templates some swag son
 | 17 | [tesseract_dot_js](./t/tesseract_dot_js) | Pure Javascript Multilingual OCR
+| 17 | [ts-essentials](./t/ts-essentials) | All essential Typescript types in one place
 | 17 | [vfile-location](./v/vfile-location) | Convert between positions (line and column-based) 
 | 17 | [vimeo__player](./v/vimeo__player) | Interact with and control an embedded Vimeo Player
 | 17 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the 
@@ -3708,6 +3713,7 @@
 | 14 | [geokdbush](./g/geokdbush) | A geographic extension for 
 | 14 | [graphql-compose](./g/graphql-compose) | GraphQL schema builder from different data sources
 | 14 | [gulp-image](./g/gulp-image) | Optimize PNG, JPG, GIF, SVG images with gulp task.
+| 14 | [hey-listen](./h/hey-listen) | Warning and invariant dev-ex messaging.
 | 14 | [ionic](./i/ionic) | A tool for creating and developing Ionic Framework
 | 14 | [ipify](./i/ipify) | Get your public IP address
 | 14 | [jasmine-expect](./j/jasmine-expect) | Write Beautiful Specs with Custom Matchers
@@ -4228,6 +4234,7 @@
 | 8 | [firebase__functions](./f/firebase__functions) | This is the Firebase Functions component of the Fi
 | 8 | [firebase__polyfill](./f/firebase__polyfill) | This is the a set of polyfills/shims used by the F
 | 8 | [flightplan](./f/flightplan) | Library for streamlining application deployment or
+| 8 | [framesync](./f/framesync) | A Unity-inspired render loop for JavaScript
 | 8 | [gcp-metadata](./g/gcp-metadata) | Get the metadata from a Google Cloud Platform envi
 | 8 | [git-root-dir](./g/git-root-dir) | Find the root directory of a git repository
 | 8 | [global-paths](./g/global-paths) | Returns an array of unique "global" directories ba
@@ -4274,6 +4281,7 @@
 | 8 | [phonegap-plugin-push](./p/phonegap-plugin-push) | Register and receive push notifications.
 | 8 | [pino-multi-stream](./p/pino-multi-stream) | A wrapper for the Pino logger that provides Bunyan
 | 8 | [pkg-versions](./p/pkg-versions) | Get the version numbers of a package from the npm 
+| 8 | [popmotion__easing](./p/popmotion__easing) | Easing functions, modifiers and generators compati
 | 8 | [promise-memoize](./p/promise-memoize) | Memoize promise-returning functions. Includes cach
 | 8 | [prompt-sync-history](./p/prompt-sync-history) | History manager for prompt-sync
 | 8 | [ptomasroos__react-native-](./p/ptomasroos__react-native-multi-slider) | Android and iOS supported pure JS slider component
@@ -4300,6 +4308,7 @@
 | 8 | [single-spa-react](./s/single-spa-react) | A single spa plugin for React apps
 | 8 | [slonik](./s/slonik) | A PostgreSQL client with strict types, detail logg
 | 8 | [smoothie](./s/smoothie) | Smoothie Charts: smooooooth JavaScript charts for 
+| 8 | [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path 
 | 8 | [superagent-no-cache](./s/superagent-no-cache) | Plugin for visionmedia/superagent that adds header
 | 8 | [text-buffer](./t/text-buffer) | A container for large mutable strings with annotat
 | 8 | [text-extensions](./t/text-extensions) | List of text file extensions
@@ -4400,6 +4409,7 @@
 | 7 | [pinkyswear](./p/pinkyswear) | Minimalistic Promises/A+ implementation, <500 byte
 | 7 | [pleasejs](./p/pleasejs) | JS library to generate random pleasing colors/colo
 | 7 | [plurals-cldr](./p/plurals-cldr) | Plurals suport, generated from CLDR.
+| 7 | [popmotion-pose](./p/popmotion-pose) | A declarative animation library for HTML and SVG
 | 7 | [postgres-array](./p/postgres-array) | Parse postgres array columns
 | 7 | [pouchdb-adapter-node-webs](./p/pouchdb-adapter-node-websql) | PouchDB adapter using Node-based SQLite as its dat
 | 7 | [power-assert-formatter](./p/power-assert-formatter) | Power Assert output formatter
@@ -4550,6 +4560,7 @@
 | 6 | [png-async](./p/png-async) | A simple and non-blocking PNG encoder / decoder.
 | 6 | [pollyjs__adapter](./p/pollyjs__adapter) | Extendable base adapter class used by @pollyjs
 | 6 | [poly2tri](./p/poly2tri) | A 2D constrained Delaunay triangulation library
+| 6 | [popmotion__popcorn](./p/popmotion__popcorn) | Utility functions for animation and interactions.
 | 6 | [raspi](./r/raspi) | Provides access to Raspberry Pi peripherals from N
 | 6 | [react-body-classname](./r/react-body-classname) | A declarative, nested way to manipulate your body'
 | 6 | [react-currency-formatter](./r/react-currency-formatter) | react currency formatter Component
@@ -4577,6 +4588,7 @@
 | 6 | [sinon-chrome](./s/sinon-chrome) | Mock of chrome extensions API for unit testing und
 | 6 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep
 | 6 | [stringify-attributes](./s/stringify-attributes) | Turn an object into a string of HTML attributes
+| 6 | [style-value-types](./s/style-value-types) | Parsers, transformers and tests for special value 
 | 6 | [survey-knockout](./s/survey-knockout) | survey.js is a JavaScript Survey Library. It is a 
 | 6 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator
 | 6 | [tea-merge](./t/tea-merge) | Deep object merge utility.
@@ -5353,6 +5365,7 @@
 | 2 | [phone-formatter](./p/phone-formatter) | Parse and format telephone numbers.
 | 2 | [plottable](./p/plottable) | A modular charting library built on D3
 | 2 | [pollyjs__adapter-fetch](./p/pollyjs__adapter-fetch) | Fetch adapter for @pollyjs
+| 2 | [pose-core](./p/pose-core) | Factory for Pose animation state machines
 | 2 | [positive-zero](./p/positive-zero) | Check if a number is positive zero
 | 2 | [pouch-redux-middleware](./p/pouch-redux-middleware) | PouchDB Redux Middleware
 | 2 | [pouchdb-adapter-localstor](./p/pouchdb-adapter-localstorage) | PouchDB adapter using LocalStorage as its data sto
@@ -5474,6 +5487,7 @@
 | 1 | [angular-promise-tracker](./a/angular-promise-tracker) | angular-promise-tracker =======================
 | 1 | [angular-toasty](./a/angular-toasty) | Angular Toasty ================= **Angular Toasty*
 | 1 | [angular-wizard](./a/angular-wizard) | Easy to use Wizard library for Angular JS
+| 1 | [apple-mapkit-js](./a/apple-mapkit-js) | An NPM installable package of Apple's Mapkit JS
 | 1 | [argon2-browser](./a/argon2-browser) | Argon2 library compiled for browser runtime
 | 1 | [aspnet-identity-pw](./a/aspnet-identity-pw) | Utility for hashing and validating passwords using
 | 1 | [asyncblock-generators](./a/asyncblock-generators) | asyncblock without the fibers
@@ -5729,6 +5743,7 @@
 | 1 | [novnc-core](./n/novnc-core) | noVNC core files for using with node
 | 1 | [nslog](./n/nslog) | Cross platform native logging
 | 1 | [obj-file-parser](./o/obj-file-parser) | Wavefront 3D Object File (.OBJ) Parser
+| 1 | [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti
 | 1 | [oja](./o/oja) | Lightweight pub/sub module with event backlog, tim
 | 1 | [onesignal-cordova-plugin](./o/onesignal-cordova-plugin) | OneSignal is a high volume Push Notification servi
 | 1 | [openstack-wrapper](./o/openstack-wrapper) | A simple js wrapper for the Openstack APIs

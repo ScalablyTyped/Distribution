@@ -37,9 +37,13 @@ trait ICustomerUpdateOptions
     */
   var invoice_prefix: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The customer’s full name or business name.
+    * The customer’s full name or business name. This can be unset by updating the value to null and then saving.
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The customer’s phone number. This can be unset by updating the value to null and then saving.
+    */
+  var phone: js.UndefOr[java.lang.String] = js.undefined
   var shipping: js.UndefOr[stripeLib.stripeMod.IShippingInformation] = js.undefined
   /**
     * The source can either be a token, like the ones returned by our Stripe.js, or
@@ -67,6 +71,7 @@ object ICustomerUpdateOptions {
     invoice_prefix: java.lang.String = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
     name: java.lang.String = null,
+    phone: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended = null
   ): ICustomerUpdateOptions = {
@@ -82,6 +87,7 @@ object ICustomerUpdateOptions {
     if (invoice_prefix != null) __obj.updateDynamic("invoice_prefix")(invoice_prefix)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerUpdateOptions]

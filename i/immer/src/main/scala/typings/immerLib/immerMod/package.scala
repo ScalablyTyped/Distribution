@@ -12,7 +12,7 @@ package object immerMod {
     /* import warning: ImportType.apply Failed type conversion: {[ P in immer.Indices<T> ]: immer.immer.Draft<T[P]>}[immer.Indices<T>] */ js.Any
   ]
   type DraftTuple[T /* <: js.Array[_] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]: immer.immer.Draft<T[P]>}
+  {[ P in keyof T ]: P extends immer.Indices<T>? immer.immer.Draft<T[P]> : never}
     */ immerLib.immerLibStrings.DraftTuple with T
   /** Converts `nothing` into `undefined` */
   type FromNothing[T] = js.UndefOr[T | (stdLib.Exclude[T, Nothing])]

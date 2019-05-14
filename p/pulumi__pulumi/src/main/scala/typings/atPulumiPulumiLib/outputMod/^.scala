@@ -73,5 +73,7 @@ object ^ extends js.Object {
   def interpolate(literals: stdLib.TemplateStringsArray, placeholders: Input[_]*): Output[java.lang.String] = js.native
   def output[T](): Output[Unwrap[js.UndefOr[T]]] = js.native
   def output[T](`val`: Input[T]): Output[Unwrap[T]] = js.native
+  def secret[T](): Output[Unwrap[js.UndefOr[T]]] = js.native
+  def secret[T](`val`: Input[T]): Output[Unwrap[T]] = js.native
 }
 

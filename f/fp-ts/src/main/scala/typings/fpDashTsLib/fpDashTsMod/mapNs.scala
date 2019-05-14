@@ -19,7 +19,7 @@ object mapNs extends js.Object {
   def elem[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* m */ stdLib.Map[_, A], scala.Boolean] = js.native
   def fromFoldable[K, F](S: fpDashTsLib.libSetoidMod.Setoid[K], F: fpDashTsLib.libFoldable2vMod.Foldable2v[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[F, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -28,7 +28,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Array]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -37,7 +37,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.FreeGroup]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -46,7 +46,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.IO]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -55,7 +55,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Identity]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -64,7 +64,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v3[fpDashTsLib.fpDashTsLibStrings.IxIO]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -73,7 +73,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.fpDashTsLibStrings.Map]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -82,7 +82,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -91,7 +91,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -100,7 +100,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Option]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -109,7 +109,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Pair]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -118,7 +118,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -127,7 +127,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.StrMap]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -136,7 +136,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Task]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -145,7 +145,7 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Tree]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   @JSName("fromFoldable")
@@ -154,12 +154,13 @@ object mapNs extends js.Object {
     F: fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.fpDashTsLibStrings.Zipper]
   ): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, js.Tuple2[K, _]], 
-    /* f */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
+    /* onConflict */ js.Function2[/* existing */ js.Any, /* a */ js.Any, _], 
     stdLib.Map[K, _]
   ] = js.native
   def getFilterableWithIndex[K](): fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex2C[fpDashTsLib.fpDashTsLibStrings.Map, K, K] = js.native
   def getMonoid[K, A](SK: fpDashTsLib.libSetoidMod.Setoid[K], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libMonoidMod.Monoid[stdLib.Map[K, A]] = js.native
   def getSetoid[K, A](SK: fpDashTsLib.libSetoidMod.Setoid[K], SA: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[stdLib.Map[K, A]] = js.native
+  def getShow[K, A](SK: fpDashTsLib.libShowMod.Show[K], SA: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[stdLib.Map[K, A]] = js.native
   def getTraversableWithIndex[K](O: fpDashTsLib.libOrdMod.Ord[K]): fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex2C[fpDashTsLib.fpDashTsLibStrings.Map, K, K] = js.native
   def getWitherable[K](O: fpDashTsLib.libOrdMod.Ord[K]): fpDashTsLib.libWitherableMod.Witherable2C[fpDashTsLib.fpDashTsLibStrings.Map, K] = js.native
   def insert[K](S: fpDashTsLib.libSetoidMod.Setoid[K]): js.Function3[/* k */ K, /* a */ js.Any, /* m */ stdLib.Map[K, _], stdLib.Map[K, _]] = js.native

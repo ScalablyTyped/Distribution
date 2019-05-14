@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 trait ojGanttDependency
   extends atOracleOraclejetLib.atOracleOraclejetMod.JetElement[ojGanttDependencySettableProperties] {
   var onPredecessorTaskIdChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var onShortDescChanged: (js.Function1[
@@ -17,7 +19,9 @@ trait ojGanttDependency
     _
   ]) | scala.Null = js.native
   var onSuccessorTaskIdChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var onSvgClassNameChanged: (js.Function1[
@@ -25,7 +29,9 @@ trait ojGanttDependency
     _
   ]) | scala.Null = js.native
   var onSvgStyleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var onTypeChanged: (js.Function1[
@@ -40,6 +46,69 @@ trait ojGanttDependency
   var svgClassName: java.lang.String = js.native
   var svgStyle: js.Object = js.native
   var `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.predecessorTaskIdChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.predecessorTaskIdChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.successorTaskIdChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.successorTaskIdChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
   def addEventListener(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.typeChanged,
     listener: js.ThisFunction1[
@@ -766,25 +835,6 @@ trait ojGanttDependency
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_predecessorTaskIdChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.predecessorTaskIdChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_predecessorTaskIdChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.predecessorTaskIdChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_progress(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.progress,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.ProgressEvent, _]
@@ -947,25 +997,6 @@ trait ojGanttDependency
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_successorTaskIdChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.successorTaskIdChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_successorTaskIdChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.successorTaskIdChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_suspend(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.suspend,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -991,25 +1022,6 @@ trait ojGanttDependency
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_svgStyleChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_svgStyleChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1159,15 +1171,15 @@ trait ojGanttDependency
   ): scala.Unit = js.native
   def getProperty(property: java.lang.String): js.Any = js.native
   @JSName("getProperty")
-  def getProperty_predecessorTaskId(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.predecessorTaskId): scala.Nothing = js.native
+  def getProperty_predecessorTaskId(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.predecessorTaskId): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['predecessorTaskId'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_shortDesc(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.shortDesc): java.lang.String | scala.Null = js.native
   @JSName("getProperty")
-  def getProperty_successorTaskId(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.successorTaskId): scala.Nothing = js.native
+  def getProperty_successorTaskId(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.successorTaskId): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['successorTaskId'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): scala.Nothing = js.native
+  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttDependency['svgStyle'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_type(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.`type`): atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish = js.native
   def setProperties(properties: ojGanttDependencySettablePropertiesLenient): scala.Unit = js.native

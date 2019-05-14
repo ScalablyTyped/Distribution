@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Point")
 @js.native
-class Point protected () extends js.Object {
+class Point protected () extends Base {
   /**
     * Creates a Point object using the properties in the given object.
     * @param object - the object describing the point's properties

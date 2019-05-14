@@ -46,6 +46,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Torgeir Hovden <https://github.com/thovden>
 //                 Martin Hochel <https://github.com/hotell>
 //                 Christian Rackerseder <https://github.com/screendriver>
+//                 Mateusz Sokoła <https://github.com/mateuszsokola>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.1
 

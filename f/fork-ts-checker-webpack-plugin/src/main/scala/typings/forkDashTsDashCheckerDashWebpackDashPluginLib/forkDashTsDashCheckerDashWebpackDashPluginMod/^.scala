@@ -126,7 +126,7 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   override var workersNumber: js.Any = js.native
   /* CompleteClass */
   @JSName("apply")
-  override def apply(compiler: webpackLib.webpackMod.Compiler): scala.Unit = js.native
+  override def apply(compiler: js.Any): scala.Unit = js.native
 }
 
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
@@ -138,9 +138,6 @@ object ^ extends js.Object {
   val ONE_CPU_FREE: scala.Double = js.native
   val TWO_CPUS_FREE: scala.Double = js.native
   var createFormatter: js.Any = js.native
-  def getCompilerHooks(compiler: webpackLib.webpackMod.Compiler): stdLib.Record[
-    forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceBeforeStart | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.cancel | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceStartError | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.waiting | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceStart | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.receive | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.serviceOutOfMemory | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.emit | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.done, 
-    (tapableLib.tapableMod.SyncHook[_, _, _]) | (tapableLib.tapableMod.AsyncSeriesHook[_, _, _])
-  ] = js.native
+  def getCompilerHooks(compiler: js.Any): stdLib.Record[forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks, _] = js.native
 }
 

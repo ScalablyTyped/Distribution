@@ -14,7 +14,9 @@ trait Tokenizr extends js.Object {
   /**
     * Execute multiple alternative callbacks
     */
-  def alternatives(alternatives: (js.ThisFunction0[/* this */ this.type, _])*): js.Any = js.native
+  def alternatives[X /* <: js.Array[js.ThisFunction0[/* this */ this.type, _]] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param alternatives because its type X is not an array type */ alternatives: X
+  ): stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: X[number] */ js.Any] = js.native
   /**
     * Configure a tokenization before-rule callback
     */
@@ -30,7 +32,8 @@ trait Tokenizr extends js.Object {
   /**
     * Consume the current token (by expecting it to be a particular symbol)
     */
-  def consume(`type`: java.lang.String, value: js.Any): Token = js.native
+  def consume(`type`: java.lang.String): Token[_] = js.native
+  def consume(`type`: java.lang.String, value: js.Any): Token[_] = js.native
   /**
     * Configure debug operation
     */
@@ -55,8 +58,8 @@ trait Tokenizr extends js.Object {
   /**
     * Peek at the next token or token at particular offset
     */
-  def peek(): Token = js.native
-  def peek(offset: scala.Double): Token = js.native
+  def peek(): Token[_] = js.native
+  def peek(offset: scala.Double): Token[_] = js.native
   /**
     * Pop state
     */
@@ -103,11 +106,11 @@ trait Tokenizr extends js.Object {
   /**
     * Determine and return next token
     */
-  def token(): Token | scala.Null = js.native
+  def token(): Token[_] | scala.Null = js.native
   /**
     * Determine and return all tokens
     */
-  def tokens(): js.Array[Token] = js.native
+  def tokens(): js.Array[Token[_]] = js.native
   /**
     * Unset a tag
     */

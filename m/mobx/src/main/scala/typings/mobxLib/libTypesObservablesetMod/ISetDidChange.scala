@@ -5,11 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ISetDidChange[T] extends js.Object {
-  var newValue: js.UndefOr[T] = js.native
-  var `object`: js.UndefOr[ObservableSet[T]] = js.native
-  var oldValue: js.UndefOr[T] = js.native
-  var `type`: js.UndefOr[mobxLib.mobxLibStrings.add | mobxLib.mobxLibStrings.delete] = js.native
+  var newValue: js.UndefOr[T] = js.undefined
+  var `object`: js.UndefOr[ObservableSet[T]] = js.undefined
+  var oldValue: js.UndefOr[T] = js.undefined
+  var `type`: js.UndefOr[mobxLib.mobxLibStrings.add | mobxLib.mobxLibStrings.delete] = js.undefined
+}
+
+object ISetDidChange {
+  @scala.inline
+  def apply[T](
+    newValue: T = null,
+    `object`: ObservableSet[T] = null,
+    oldValue: T = null,
+    `type`: mobxLib.mobxLibStrings.add = null
+  ): ISetDidChange[T] = {
+    val __obj = js.Dynamic.literal()
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ISetDidChange[T]]
+  }
 }
 

@@ -9,7 +9,7 @@ trait FilterableComposition11[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpD
   extends fpDashTsLib.libCompactableMod.CompactableComposition11[F, G] {
   def filter[A](
     fa: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]],
-    p: fpDashTsLib.libFunctionMod.Predicate[A]
+    predicate: fpDashTsLib.libFunctionMod.Predicate[A]
   ): fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]]
   def filterMap[A, B](
     fa: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]],
@@ -17,7 +17,7 @@ trait FilterableComposition11[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpD
   ): fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, B]]
   def partition[A](
     fa: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]],
-    p: fpDashTsLib.libFunctionMod.Predicate[A]
+    predicate: fpDashTsLib.libFunctionMod.Predicate[A]
   ): fpDashTsLib.libCompactableMod.Separated[
     fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]], 
     fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]]

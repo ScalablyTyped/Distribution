@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Size")
 @js.native
-class Size protected () extends js.Object {
+class Size protected () extends Base {
   /**
     * Creates a Size object using the numbers in the given array as dimensions.
     * @param array - an array of numbers
@@ -99,14 +99,14 @@ class Size protected () extends js.Object {
     */
   def round(): Size = js.native
   /**
-  		 * Sets the size using the numbers in the given array as dimensions.
+    * Sets the size using the numbers in the given array as dimensions.
     * @param array - an array of numbers
-  		 */
+    */
   def set(array: js.Array[scala.Double]): Size = js.native
   /**
-  		 * Sets the size using the properties in the given object.
+    * Sets the size using the properties in the given object.
     * @param object - the object literal containing properies (width:10, height:10 etc)
-  		 */
+    */
   def set(`object`: js.Any): Size = js.native
   /**
     * Sets the size using the point.x and point.y values of the given Point object.
@@ -114,15 +114,15 @@ class Size protected () extends js.Object {
     */
   def set(point: Point): Size = js.native
   /**
-  		 * Sets the size using the coordinates of the given Size object.
+    * Sets the size using the coordinates of the given Size object.
     * @param size - the size to duplicate from
     */
   def set(size: Size): Size = js.native
   /**
-  		 * Sets the size with the given width and height values.
+    * Sets the size with the given width and height values.
     * @param width - the width
     * @param height - the height
-  		 */
+    */
   def set(width: scala.Double, height: scala.Double): Size = js.native
   def subtract(size: js.Array[scala.Double]): Size = js.native
   /*

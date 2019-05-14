@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Matrix")
 @js.native
-class Matrix protected () extends js.Object {
+class Matrix protected () extends Base {
   /**
     * Creates a 2D affine transformation matrix
     * @param matrix - the matrix to copy the values from

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ChildrenVisibleMin extends js.Object {
   /**
     * Children will not be shown when area size of a node is smaller
@@ -39,7 +38,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.childrenVisibleMin
     */
-  var childrenVisibleMin: js.UndefOr[scala.Double] = js.native
+  var childrenVisibleMin: js.UndefOr[scala.Double] = js.undefined
   /**
     * A color list for a level.
     * Each node in the level will obtain a color from the color
@@ -68,7 +67,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.color
     */
-  var color: js.UndefOr[js.Array[_]] = js.native
+  var color: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * It indicates the range of tranparent rate (color alpha) for
     * nodes in a level . The range of values is 0 ~ 1.
@@ -98,7 +97,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.colorAlpha
     */
-  var colorAlpha: js.UndefOr[js.Array[_]] = js.native
+  var colorAlpha: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Specify the rule according to which each node obtain color
     * from
@@ -165,7 +164,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     * "index"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.colorMappingBy
     */
-  var colorMappingBy: js.UndefOr[java.lang.String] = js.native
+  var colorMappingBy: js.UndefOr[java.lang.String] = js.undefined
   /**
     * It indicates the range of saturation (color alpha) for nodes
     * in a level . The range of values is 0 ~ 1.
@@ -195,11 +194,11 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.colorSaturation
     */
-  var colorSaturation: js.UndefOr[scala.Double] = js.native
+  var colorSaturation: js.UndefOr[scala.Double] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelUpperLabel] = js.native
+  var emphasis: js.UndefOr[Anon_ItemStyleLabelUpperLabel] = js.undefined
   /**
     *
     * > Tps: In treemap, `itemStyle` attribute could appear in
@@ -221,7 +220,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderColorSaturation] = js.native
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -244,7 +243,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.native
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
   /**
     * `upperLabel` is used to specify whether show label when the
     * node has children. When
@@ -293,7 +292,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     */
   var upperLabel: js.UndefOr[
     Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-  ] = js.native
+  ] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than
     * this value (unit: px square).
@@ -329,7 +328,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     * 10
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.visibleMin
     */
-  var visibleMin: js.UndefOr[scala.Double] = js.native
+  var visibleMin: js.UndefOr[scala.Double] = js.undefined
   /**
     * `treemap` is able to map any dimensions of data to visual.
     *
@@ -363,7 +362,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.visualDimension
     */
-  var visualDimension: js.UndefOr[scala.Double] = js.native
+  var visualDimension: js.UndefOr[scala.Double] = js.undefined
   /**
     * The maximal value of current level.
     * Auto-statistics by default.
@@ -376,7 +375,7 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.visualMax
     */
-  var visualMax: js.UndefOr[scala.Double] = js.native
+  var visualMax: js.UndefOr[scala.Double] = js.undefined
   /**
     * The minimal value of current level.
     * Auto-statistics by default.
@@ -389,6 +388,41 @@ trait Anon_ChildrenVisibleMin extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels.visualMin
     */
-  var visualMin: js.UndefOr[scala.Double] = js.native
+  var visualMin: js.UndefOr[scala.Double] = js.undefined
+}
+
+object Anon_ChildrenVisibleMin {
+  @scala.inline
+  def apply(
+    childrenVisibleMin: scala.Int | scala.Double = null,
+    color: js.Array[_] = null,
+    colorAlpha: js.Array[_] = null,
+    colorMappingBy: java.lang.String = null,
+    colorSaturation: scala.Int | scala.Double = null,
+    emphasis: Anon_ItemStyleLabelUpperLabel = null,
+    itemStyle: Anon_BorderColorBorderColorSaturation = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    upperLabel: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily = null,
+    visibleMin: scala.Int | scala.Double = null,
+    visualDimension: scala.Int | scala.Double = null,
+    visualMax: scala.Int | scala.Double = null,
+    visualMin: scala.Int | scala.Double = null
+  ): Anon_ChildrenVisibleMin = {
+    val __obj = js.Dynamic.literal()
+    if (childrenVisibleMin != null) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha)
+    if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy)
+    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel)
+    if (visibleMin != null) __obj.updateDynamic("visibleMin")(visibleMin.asInstanceOf[js.Any])
+    if (visualDimension != null) __obj.updateDynamic("visualDimension")(visualDimension.asInstanceOf[js.Any])
+    if (visualMax != null) __obj.updateDynamic("visualMax")(visualMax.asInstanceOf[js.Any])
+    if (visualMin != null) __obj.updateDynamic("visualMin")(visualMin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ChildrenVisibleMin]
+  }
 }
 

@@ -30,8 +30,8 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param setoids because its type T is not an array type */ setoids: T
   ): Setoid[
     /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.getTupleSetoid with js.Any
+  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Setoid.Setoid<infer A>? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleSetoid with T
   ] = js.native
   def strictEqual[A](a: A, b: A): scala.Boolean = js.native
 }

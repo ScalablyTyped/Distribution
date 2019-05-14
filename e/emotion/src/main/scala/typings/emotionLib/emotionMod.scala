@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("emotion", JSImport.Namespace)
 @js.native
 object emotionMod extends js.Object {
-  val cache: scala.Nothing = js.native
+  val cache: /* import warning: ImportType.apply Failed type conversion: create-emotion.create-emotion.Emotion['cache'] */ js.Any = js.native
   val css: js.Function1[
     /* repeated */ createDashEmotionLib.createDashEmotionMod.Interpolation, 
     java.lang.String

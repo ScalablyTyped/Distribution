@@ -9,7 +9,7 @@ trait TagListEntry extends js.Object {
   /**
     * The key for an AWS resource tag.
     */
-  var Key: js.UndefOr[TagKey] = js.undefined
+  var Key: TagKey
   /**
     * The value for an AWS resource tag.
     */
@@ -18,9 +18,8 @@ trait TagListEntry extends js.Object {
 
 object TagListEntry {
   @scala.inline
-  def apply(Key: TagKey = null, Value: TagValue = null): TagListEntry = {
-    val __obj = js.Dynamic.literal()
-    if (Key != null) __obj.updateDynamic("Key")(Key)
+  def apply(Key: TagKey, Value: TagValue = null): TagListEntry = {
+    val __obj = js.Dynamic.literal(Key = Key)
     if (Value != null) __obj.updateDynamic("Value")(Value)
     __obj.asInstanceOf[TagListEntry]
   }

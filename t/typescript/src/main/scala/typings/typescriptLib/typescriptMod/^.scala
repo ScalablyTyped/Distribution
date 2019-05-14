@@ -1503,7 +1503,7 @@ object ^ extends js.Object {
     name: PropertyName,
     questionToken: QuestionToken
   ): MethodSignature = js.native
-  def createModifier[T /* <: js.UndefOr[SyntaxKind] */](kind: T): Token[T] = js.native
+  def createModifier[T /* <: /* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any */](kind: T): Token[T] = js.native
   def createModifiersFromModifierFlags(flags: ModifierFlags): js.Array[Modifier] = js.native
   def createModuleBlock(statements: js.Array[Statement]): ModuleBlock = js.native
   def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native

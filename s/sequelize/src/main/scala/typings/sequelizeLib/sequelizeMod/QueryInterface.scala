@@ -68,9 +68,6 @@ trait QueryInterface extends js.Object {
     attributes: js.Array[java.lang.String],
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
-  /**
-    * Adds a new index to a table
-    */
   def addIndex(tableName: java.lang.String, attributes: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def addIndex(tableName: java.lang.String, attributes: js.Array[java.lang.String], options: DefineIndexOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def addIndex(
@@ -79,12 +76,27 @@ trait QueryInterface extends js.Object {
     options: DefineIndexOptions,
     rawTablename: java.lang.String
   ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  /**
+    * Adds a new index to a table
+    */
+  def addIndex(tableName: java.lang.String, options: DefineIndexOptions with sequelizeLib.Anon_FieldsArray): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def addIndex(
+    tableName: java.lang.String,
+    options: DefineIndexOptions with sequelizeLib.Anon_FieldsArray,
+    rawTablename: java.lang.String
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def addIndex(tableName: js.Object, attributes: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def addIndex(tableName: js.Object, attributes: js.Array[java.lang.String], options: DefineIndexOptions): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   def addIndex(
     tableName: js.Object,
     attributes: js.Array[java.lang.String],
     options: DefineIndexOptions,
+    rawTablename: java.lang.String
+  ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def addIndex(tableName: js.Object, options: DefineIndexOptions with sequelizeLib.Anon_FieldsArray): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
+  def addIndex(
+    tableName: js.Object,
+    options: DefineIndexOptions with sequelizeLib.Anon_FieldsArray,
     rawTablename: java.lang.String
   ): bluebirdLib.bluebirdMod.^[scala.Unit] = js.native
   /**

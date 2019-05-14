@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Curve")
 @js.native
-class Curve protected () extends js.Object {
+class Curve protected () extends Base {
   /**
     * Creates a new curve object.
     * @param segment1 -

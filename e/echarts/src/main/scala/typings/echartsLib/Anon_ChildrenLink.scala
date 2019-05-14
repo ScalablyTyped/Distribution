@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ChildrenLink extends js.Object {
   /**
     * child nodes, recursive definition, configurations are the
@@ -16,7 +15,7 @@ trait Anon_ChildrenLink extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.children
     */
-  var children: js.UndefOr[js.Array[_]] = js.native
+  var children: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Enable hyperlink jump when clicking on node.
     * It is avaliable when
@@ -30,7 +29,7 @@ trait Anon_ChildrenLink extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.link
     */
-  var link: js.UndefOr[java.lang.String] = js.native
+  var link: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The same meaning as `target` in `html` `<a>` label, See
     * [series-treemap.data.link](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.link)
@@ -41,13 +40,30 @@ trait Anon_ChildrenLink extends js.Object {
     * "blank"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.target
     */
-  var target: js.UndefOr[java.lang.String] = js.native
+  var target: js.UndefOr[java.lang.String] = js.undefined
   /**
     * tooltip settings in this series data.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColorBorderWidth] = js.native
+  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColorBorderWidth] = js.undefined
+}
+
+object Anon_ChildrenLink {
+  @scala.inline
+  def apply(
+    children: js.Array[_] = null,
+    link: java.lang.String = null,
+    target: java.lang.String = null,
+    tooltip: Anon_BackgroundColorBorderColorBorderWidth = null
+  ): Anon_ChildrenLink = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[Anon_ChildrenLink]
+  }
 }
 

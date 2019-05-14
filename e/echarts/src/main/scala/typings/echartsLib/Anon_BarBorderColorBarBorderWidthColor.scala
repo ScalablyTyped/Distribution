@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_BarBorderColorBarBorderWidthColor extends js.Object {
   /**
     * The bodrder color of bar.
@@ -15,14 +14,14 @@ trait Anon_BarBorderColorBarBorderWidthColor extends js.Object {
     * '#000'
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.barBorderColor
     */
-  var barBorderColor: js.UndefOr[java.lang.String] = js.native
+  var barBorderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The bodrder width of bar. defaults to have no border.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.barBorderWidth
     */
-  var barBorderWidth: js.UndefOr[scala.Double] = js.native
+  var barBorderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * Bar color..
     *
@@ -31,7 +30,7 @@ trait Anon_BarBorderColorBarBorderWidthColor extends js.Object {
     * "auto"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.color
     */
-  var color: js.UndefOr[java.lang.String] = js.native
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Opacity of the component.
     * Supports value from 0 to 1, and the component will not
@@ -40,7 +39,7 @@ trait Anon_BarBorderColorBarBorderWidthColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.opacity
     */
-  var opacity: js.UndefOr[scala.Double] = js.native
+  var opacity: js.UndefOr[scala.Double] = js.undefined
   /**
     * Size of shadow blur.
     * This attribute should be used along with `shadowColor`,`shadowOffsetX`,
@@ -53,27 +52,52 @@ trait Anon_BarBorderColorBarBorderWidthColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.shadowBlur
     */
-  var shadowBlur: js.UndefOr[scala.Double] = js.native
+  var shadowBlur: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow color. Support same format as `color`.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.shadowColor
     */
-  var shadowColor: js.UndefOr[java.lang.String] = js.native
+  var shadowColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Offset distance on the horizontal direction of shadow.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[scala.Double] = js.native
+  var shadowOffsetX: js.UndefOr[scala.Double] = js.undefined
   /**
     * Offset distance on the vertical direction of shadow.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[scala.Double] = js.native
+  var shadowOffsetY: js.UndefOr[scala.Double] = js.undefined
+}
+
+object Anon_BarBorderColorBarBorderWidthColor {
+  @scala.inline
+  def apply(
+    barBorderColor: java.lang.String = null,
+    barBorderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null
+  ): Anon_BarBorderColorBarBorderWidthColor = {
+    val __obj = js.Dynamic.literal()
+    if (barBorderColor != null) __obj.updateDynamic("barBorderColor")(barBorderColor)
+    if (barBorderWidth != null) __obj.updateDynamic("barBorderWidth")(barBorderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BarBorderColorBarBorderWidthColor]
+  }
 }
 

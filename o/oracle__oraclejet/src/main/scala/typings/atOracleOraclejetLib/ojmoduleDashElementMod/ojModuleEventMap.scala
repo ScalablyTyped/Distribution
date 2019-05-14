@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ojModuleEventMap
   extends stdLib.HTMLElementEventMap {
-  var animationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
+  var animationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+    /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+  ]
   var configChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_CleanupMode]
   var ojTransitionEnd: atOracleOraclejetLib.ojmoduleDashElementMod.ojModuleNs.ojTransitionEnd
   var ojTransitionStart: atOracleOraclejetLib.ojmoduleDashElementMod.ojModuleNs.ojTransitionStart
@@ -19,7 +21,9 @@ object ojModuleEventMap {
   @scala.inline
   def apply(
     abort: stdLib.UIEvent,
-    animationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
+    animationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+    ],
     animationcancel: stdLib.AnimationEvent,
     animationend: stdLib.AnimationEvent,
     animationiteration: stdLib.AnimationEvent,

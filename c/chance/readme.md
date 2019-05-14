@@ -42,6 +42,9 @@ These comments are from the typescript definitions and might be useful:
 //                 Carlos Sanchez <https://github.com/cafesanu>
 //                 Colby M. White <https://github.com/colbywhite>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
+// a bit of cleverness from jcalz at https://stackoverflow.com/a/48244432
+// this will ensure that empty objects are not allowed for objects with optional parameters
 
 ```
 

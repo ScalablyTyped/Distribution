@@ -76,8 +76,11 @@ object ^ extends js.Object {
   def getJsDoc(node: typescriptLib.typescriptMod.Node, sourceFile: typescriptLib.typescriptMod.SourceFile): js.Array[typescriptLib.typescriptMod.JSDoc] = js.native
   def getLineBreakStyle(sourceFile: typescriptLib.typescriptMod.SourceFile): tsutilsLib.tsutilsLibStrings.BACKSLASHn | tsutilsLib.tsutilsLibStrings.BACKSLASHrBACKSLASHn = js.native
   def getLineRanges(sourceFile: typescriptLib.typescriptMod.SourceFile): js.Array[tsutilsLib.utilUtilMod.LineRange] = js.native
-  def getModifier(node: typescriptLib.typescriptMod.Node): js.UndefOr[typescriptLib.typescriptMod.Modifier] = js.native
-  def getModifier(node: typescriptLib.typescriptMod.Node, kind: typescriptLib.typescriptMod.SyntaxKind): js.UndefOr[typescriptLib.typescriptMod.Modifier] = js.native
+  @JSName("getModifier")
+  def getModifier_kind(
+    node: typescriptLib.typescriptMod.Node,
+    kind: /* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
+  ): js.UndefOr[typescriptLib.typescriptMod.Modifier] = js.native
   def getNextStatement(statement: typescriptLib.typescriptMod.Statement): js.UndefOr[typescriptLib.typescriptMod.Statement] = js.native
   def getNextToken(node: typescriptLib.typescriptMod.Node): js.UndefOr[typescriptLib.typescriptMod.Node] = js.native
   def getNextToken(node: typescriptLib.typescriptMod.Node, sourceFile: typescriptLib.typescriptMod.SourceFile): js.UndefOr[typescriptLib.typescriptMod.Node] = js.native
@@ -96,10 +99,14 @@ object ^ extends js.Object {
   def getWrappedNodeAtPosition(wrap: tsutilsLib.utilConvertDashAstMod.NodeWrap, pos: scala.Double): js.UndefOr[tsutilsLib.utilConvertDashAstMod.NodeWrap] = js.native
   def hasAccessModifier(node: typescriptLib.typescriptMod.ClassElement): scala.Boolean = js.native
   def hasAccessModifier(node: typescriptLib.typescriptMod.ParameterDeclaration): scala.Boolean = js.native
-  def hasModifier(kinds: js.UndefOr[typescriptLib.typescriptMod.SyntaxKind]*): scala.Boolean = js.native
-  def hasModifier(
+  @JSName("hasModifier")
+  def hasModifier_kind(
+    kinds: (/* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
+  ): scala.Boolean = js.native
+  @JSName("hasModifier")
+  def hasModifier_kind(
     modifiers: typescriptLib.typescriptMod.ModifiersArray,
-    kinds: js.UndefOr[typescriptLib.typescriptMod.SyntaxKind]*
+    kinds: (/* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
   ): scala.Boolean = js.native
   def hasOwnThisReference(node: typescriptLib.typescriptMod.Node): scala.Boolean = js.native
   def hasSideEffects(node: typescriptLib.typescriptMod.Expression): scala.Boolean = js.native

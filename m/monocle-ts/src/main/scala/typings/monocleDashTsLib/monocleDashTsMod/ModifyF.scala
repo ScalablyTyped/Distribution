@@ -23,7 +23,7 @@ trait ModifyF[S, A] extends js.Object {
   ] = js.native
   def apply(
     F: fpDashTsLib.libApplicativeMod.Applicative2[
-      monocleDashTsLib.monocleDashTsLibStrings.Const | monocleDashTsLib.monocleDashTsLibStrings.Either | monocleDashTsLib.monocleDashTsLibStrings.Free | monocleDashTsLib.monocleDashTsLibStrings.IOEither | monocleDashTsLib.monocleDashTsLibStrings.Map | monocleDashTsLib.monocleDashTsLibStrings.Reader | monocleDashTsLib.monocleDashTsLibStrings.State | monocleDashTsLib.monocleDashTsLibStrings.Store | monocleDashTsLib.monocleDashTsLibStrings.TaskEither | monocleDashTsLib.monocleDashTsLibStrings.These | monocleDashTsLib.monocleDashTsLibStrings.Tuple | monocleDashTsLib.monocleDashTsLibStrings.Validation | monocleDashTsLib.monocleDashTsLibStrings.Writer
+      monocleDashTsLib.monocleDashTsLibStrings.Const | monocleDashTsLib.monocleDashTsLibStrings.Either | monocleDashTsLib.monocleDashTsLibStrings.Free | monocleDashTsLib.monocleDashTsLibStrings.IOEither | monocleDashTsLib.monocleDashTsLibStrings.Map | monocleDashTsLib.monocleDashTsLibStrings.Reader | monocleDashTsLib.monocleDashTsLibStrings.State | monocleDashTsLib.monocleDashTsLibStrings.Store | monocleDashTsLib.monocleDashTsLibStrings.TaskEither | monocleDashTsLib.monocleDashTsLibStrings.These | monocleDashTsLib.monocleDashTsLibStrings.Traced | monocleDashTsLib.monocleDashTsLibStrings.Tuple | monocleDashTsLib.monocleDashTsLibStrings.Validation | monocleDashTsLib.monocleDashTsLibStrings.Writer
     ]
   ): js.Function1[
     /* f */ js.Function1[
@@ -55,7 +55,7 @@ trait ModifyF[S, A] extends js.Object {
   ] = js.native
   def apply[L](
     F: fpDashTsLib.libApplicativeMod.Applicative2C[
-      monocleDashTsLib.monocleDashTsLibStrings.Const | monocleDashTsLib.monocleDashTsLibStrings.Either | monocleDashTsLib.monocleDashTsLibStrings.Free | monocleDashTsLib.monocleDashTsLibStrings.IOEither | monocleDashTsLib.monocleDashTsLibStrings.Map | monocleDashTsLib.monocleDashTsLibStrings.Reader | monocleDashTsLib.monocleDashTsLibStrings.State | monocleDashTsLib.monocleDashTsLibStrings.Store | monocleDashTsLib.monocleDashTsLibStrings.TaskEither | monocleDashTsLib.monocleDashTsLibStrings.These | monocleDashTsLib.monocleDashTsLibStrings.Tuple | monocleDashTsLib.monocleDashTsLibStrings.Validation | monocleDashTsLib.monocleDashTsLibStrings.Writer, 
+      monocleDashTsLib.monocleDashTsLibStrings.Const | monocleDashTsLib.monocleDashTsLibStrings.Either | monocleDashTsLib.monocleDashTsLibStrings.Free | monocleDashTsLib.monocleDashTsLibStrings.IOEither | monocleDashTsLib.monocleDashTsLibStrings.Map | monocleDashTsLib.monocleDashTsLibStrings.Reader | monocleDashTsLib.monocleDashTsLibStrings.State | monocleDashTsLib.monocleDashTsLibStrings.Store | monocleDashTsLib.monocleDashTsLibStrings.TaskEither | monocleDashTsLib.monocleDashTsLibStrings.These | monocleDashTsLib.monocleDashTsLibStrings.Traced | monocleDashTsLib.monocleDashTsLibStrings.Tuple | monocleDashTsLib.monocleDashTsLibStrings.Validation | monocleDashTsLib.monocleDashTsLibStrings.Writer, 
       L
     ]
   ): js.Function1[

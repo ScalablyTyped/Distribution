@@ -52,8 +52,12 @@ trait Options extends js.Object {
     */
   var responseFunc: js.UndefOr[
     js.Function2[
-      /* request */ hapiLib.hapiMod.Request, 
-      /* reply */ js.Function2[/* err */ js.Any, /* response */ hapiLib.hapiMod.ResponseObject, scala.Unit], 
+      /* request */ atHapiHapiLib.atHapiHapiMod.Request, 
+      /* reply */ js.Function2[
+        /* err */ js.Any, 
+        /* response */ atHapiHapiLib.atHapiHapiMod.ResponseObject, 
+        scala.Unit
+      ], 
       scala.Unit
     ]
   ] = js.undefined
@@ -78,19 +82,27 @@ trait Options extends js.Object {
     * @param decoded the *decoded* and *verified* JWT received from the client in *request.headers.authorization*
     * @param request the original *request* received from the client
     */
-  def validate(decoded: js.Object, request: hapiLib.hapiMod.Request, tk: hapiLib.hapiMod.ResponseToolkit): ValidationResult | js.Promise[ValidationResult]
+  def validate(
+    decoded: js.Object,
+    request: atHapiHapiLib.atHapiHapiMod.Request,
+    tk: atHapiHapiLib.atHapiHapiMod.ResponseToolkit
+  ): ValidationResult | js.Promise[ValidationResult]
 }
 
 object Options {
   @scala.inline
   def apply(
-    validate: (js.Object, hapiLib.hapiMod.Request, hapiLib.hapiMod.ResponseToolkit) => ValidationResult | js.Promise[ValidationResult],
+    validate: (js.Object, atHapiHapiLib.atHapiHapiMod.Request, atHapiHapiLib.atHapiHapiMod.ResponseToolkit) => ValidationResult | js.Promise[ValidationResult],
     complete: js.UndefOr[scala.Boolean] = js.undefined,
     cookieKey: java.lang.String | scala.Boolean = null,
     errorFunc: /* ctx */ ErrorContext => ErrorContext = null,
     headerKey: java.lang.String | scala.Boolean = null,
     key: java.lang.String | js.Array[java.lang.String] | js.Promise[hapiDashAuthDashJwt2Lib.Anon_ExtraInfo] = null,
-    responseFunc: (/* request */ hapiLib.hapiMod.Request, /* reply */ js.Function2[/* err */ js.Any, /* response */ hapiLib.hapiMod.ResponseObject, scala.Unit]) => scala.Unit = null,
+    responseFunc: (/* request */ atHapiHapiLib.atHapiHapiMod.Request, /* reply */ js.Function2[
+      /* err */ js.Any, 
+      /* response */ atHapiHapiLib.atHapiHapiMod.ResponseObject, 
+      scala.Unit
+    ]) => scala.Unit = null,
     tokenType: java.lang.String = null,
     urlKey: java.lang.String | scala.Boolean = null,
     verifyOptions: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions = null

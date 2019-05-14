@@ -130,12 +130,16 @@ object atMaterialDashUiCoreLibComponents {
   type DialogActionsProps = atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps
   @scala.inline
   def DialogContent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps] = js.constructorOf[atMaterialDashUiCoreLib.dialogContentMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps]]
+  @scala.inline
+  def DialogContentProps: atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps.type = atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps
   type DialogContentProps = atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps
   @scala.inline
   def DialogContentText: reactLib.reactMod.ComponentType[
     atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
   ] = js.constructorOf[atMaterialDashUiCoreLib.dialogContentTextMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps]]
+  @scala.inline
+  def DialogContentTextProps: atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps.type = atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
   type DialogContentTextProps = atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
   @scala.inline
   def DialogTitle: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps] = js.constructorOf[atMaterialDashUiCoreLib.dialogTitleMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps]]
@@ -162,12 +166,16 @@ object atMaterialDashUiCoreLibComponents {
     atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
   ] = js.constructorOf[atMaterialDashUiCoreLib.expansionPanelActionsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps]]
+  @scala.inline
+  def ExpansionPanelActionsProps: atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps.type = atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
   type ExpansionPanelActionsProps = atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
   @scala.inline
   def ExpansionPanelDetails: reactLib.reactMod.ComponentType[
     atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
   ] = js.constructorOf[atMaterialDashUiCoreLib.expansionPanelDetailsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps]]
+  @scala.inline
+  def ExpansionPanelDetailsProps: atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps.type = atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
   type ExpansionPanelDetailsProps = atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
   @scala.inline
   def ExpansionPanelSummary: reactLib.reactMod.ComponentType[
@@ -302,6 +310,8 @@ object atMaterialDashUiCoreLibComponents {
   type ListItemProps = atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps
   @scala.inline
   def ListItemAvatar: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemAvatarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps]]
+  @scala.inline
+  def ListItemAvatarProps: atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps.type = atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps
   type ListItemAvatarProps = atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps
   @scala.inline
   def ListItemIcon: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemIconMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps]]
@@ -313,6 +323,8 @@ object atMaterialDashUiCoreLibComponents {
     atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
   ] = js.constructorOf[atMaterialDashUiCoreLib.listItemSecondaryActionMod.default].asInstanceOf[reactLib.reactMod.ComponentType[
   atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps]]
+  @scala.inline
+  def ListItemSecondaryActionProps: atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps.type = atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
   type ListItemSecondaryActionProps = atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
   @scala.inline
   def ListItemText: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemTextMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps]]
@@ -548,6 +560,8 @@ object atMaterialDashUiCoreLibComponents {
   type TabsProps = atMaterialDashUiCoreLib.tabsTabsMod.TabsProps
   @scala.inline
   def TextField: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps] = js.constructorOf[atMaterialDashUiCoreLib.textFieldMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps]]
+  @scala.inline
+  def TextFieldProps: atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps.type = atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps
   type TextFieldProps = atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps
   @scala.inline
   def Toolbar: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps] = js.constructorOf[atMaterialDashUiCoreLib.toolbarMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps]]

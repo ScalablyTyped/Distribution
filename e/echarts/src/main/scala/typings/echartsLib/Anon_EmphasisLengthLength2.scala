@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_EmphasisLengthLength2
   extends /**
   * Some properties like "normal" or "emphasis" are not documented.
@@ -18,32 +17,32 @@ trait Anon_EmphasisLengthLength2
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.emphasis
     */
-  var emphasis: js.UndefOr[Anon_LineStyle] = js.native
+  var emphasis: js.UndefOr[Anon_LineStyle] = js.undefined
   /**
     * The length of the first segment of visual guide line.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.length
     */
-  var length: js.UndefOr[scala.Double] = js.native
+  var length: js.UndefOr[scala.Double] = js.undefined
   /**
     * The length of the second segment of visual guide line.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.length2
     */
-  var length2: js.UndefOr[scala.Double] = js.native
+  var length2: js.UndefOr[scala.Double] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.native
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
     * Whether to show the visual guide ine.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.show
     */
-  var show: js.UndefOr[scala.Boolean] = js.native
+  var show: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Whether to smooth the visual guide line.
     * It defaults to be `false` and can be set as `true` or the
@@ -52,6 +51,33 @@ trait Anon_EmphasisLengthLength2
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.labelLine.smooth
     */
-  var smooth: js.UndefOr[scala.Boolean | scala.Double] = js.native
+  var smooth: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
+}
+
+object Anon_EmphasisLengthLength2 {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Some properties like "normal" or "emphasis" are not documented.
+    * Please, write description for them
+    */
+  /* unknownProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    emphasis: Anon_LineStyle = null,
+    length: scala.Int | scala.Double = null,
+    length2: scala.Int | scala.Double = null,
+    lineStyle: Anon_ColorOpacityShadowBlur = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    smooth: scala.Boolean | scala.Double = null
+  ): Anon_EmphasisLengthLength2 = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (length2 != null) __obj.updateDynamic("length2")(length2.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EmphasisLengthLength2]
+  }
 }
 

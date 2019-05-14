@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object scryptDashJsMod extends js.Object {
   def apply(
-    password: nodeLib.Buffer,
-    salt: nodeLib.Buffer,
+    password: nodeLib.Buffer | js.Array[scala.Double] | stdLib.Uint8Array,
+    salt: nodeLib.Buffer | js.Array[scala.Double] | stdLib.Uint8Array,
     N: scala.Double,
     r: scala.Double,
     p: scala.Double,

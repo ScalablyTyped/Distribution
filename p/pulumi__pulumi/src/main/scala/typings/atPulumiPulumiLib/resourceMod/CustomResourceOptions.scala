@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait CustomResourceOptions extends ResourceOptions {
   /**
+    * The names of outputs for this resource that should be treated as secrets. This augments the list that
+    * the resource provider and pulumi engine already determine based on inputs to your resource. It can be used
+    * to mark certain ouputs as a secrets on a per resource basis.
+    */
+  var additionalSecretOutputs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
     * When set to true, deleteBeforeReplace indicates that this resource should be deleted before its replacement
     * is created when replacement is necessary.
     */
@@ -22,6 +28,7 @@ trait CustomResourceOptions extends ResourceOptions {
 object CustomResourceOptions {
   @scala.inline
   def apply(
+    additionalSecretOutputs: js.Array[java.lang.String] = null,
     deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
     dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]]] | atPulumiPulumiLib.outputMod.Input[Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
@@ -32,6 +39,7 @@ object CustomResourceOptions {
     version: java.lang.String = null
   ): CustomResourceOptions = {
     val __obj = js.Dynamic.literal()
+    if (additionalSecretOutputs != null) __obj.updateDynamic("additionalSecretOutputs")(additionalSecretOutputs)
     if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

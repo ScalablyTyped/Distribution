@@ -40,7 +40,9 @@ trait ojSunburstEventMap[K, D]
   var ojDrill: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojDrill
   var ojExpand: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojExpand
   var ojRotateInput: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojRotateInput
-  var rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
+  var rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+    /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
+  ]
   var rootNodeContentChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRendererAnonInsertD[K, D]]
   var rotationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
@@ -164,7 +166,9 @@ object ojSunburstEventMap {
     ratechange: stdLib.Event,
     reset: stdLib.Event,
     resize: stdLib.UIEvent,
-    rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
+    rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojsunburst.ojSunburst<K, D>['rootNode'] */ js.Any
+    ],
     rootNodeContentChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRendererAnonInsertD[K, D]],
     rotationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on

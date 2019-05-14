@@ -13,6 +13,7 @@ package object tokenizrMod {
     /* rule */ tokenizrLib.Anon_Action, 
     scala.Unit
   ]
+  type IToken[T] = Token[T]
   type RuleAction = js.ThisFunction2[
     /* this */ ActionContext, 
     /* ctx */ ActionContext, 

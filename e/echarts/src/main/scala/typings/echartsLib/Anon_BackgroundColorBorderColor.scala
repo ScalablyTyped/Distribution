@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_BackgroundColorBorderColor extends js.Object {
   /**
     *
@@ -20,7 +19,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     * "rgba(50,50,50,0.7)"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.backgroundColor
     */
-  var backgroundColor: js.UndefOr[java.lang.String] = js.native
+  var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -34,7 +33,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     * '#333'
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.borderColor
     */
-  var borderColor: js.UndefOr[java.lang.String] = js.native
+  var borderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -46,7 +45,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.borderWidth
     */
-  var borderWidth: js.UndefOr[scala.Double] = js.native
+  var borderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -64,7 +63,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.extraCssText
     */
-  var extraCssText: js.UndefOr[java.lang.String] = js.native
+  var extraCssText: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -148,7 +147,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.formatter
     */
-  var formatter: js.UndefOr[js.Function | java.lang.String] = js.native
+  var formatter: js.UndefOr[js.Function | java.lang.String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -170,7 +169,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     * 5
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.padding
     */
-  var padding: js.UndefOr[scala.Double] = js.native
+  var padding: js.UndefOr[scala.Double] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -260,7 +259,7 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.position
     */
-  var position: js.UndefOr[js.Array[_] | java.lang.String] = js.native
+  var position: js.UndefOr[js.Array[_] | java.lang.String] = js.undefined
   /**
     *
     * > **Notice：**series.tooltip only works when
@@ -272,6 +271,31 @@ trait Anon_BackgroundColorBorderColor extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip.textStyle
     */
-  var textStyle: js.UndefOr[Anon_ColorFontFamily] = js.native
+  var textStyle: js.UndefOr[Anon_ColorFontFamily] = js.undefined
+}
+
+object Anon_BackgroundColorBorderColor {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    extraCssText: java.lang.String = null,
+    formatter: js.Function | java.lang.String = null,
+    padding: scala.Int | scala.Double = null,
+    position: js.Array[_] | java.lang.String = null,
+    textStyle: Anon_ColorFontFamily = null
+  ): Anon_BackgroundColorBorderColor = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (extraCssText != null) __obj.updateDynamic("extraCssText")(extraCssText)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    __obj.asInstanceOf[Anon_BackgroundColorBorderColor]
+  }
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Event")
 @js.native
-class Event () extends js.Object {
+class Event () extends Base {
   /**
     * The current state of the keyboard modifiers.
     * Read Only

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "vega"
-version := "5.4.0-3781e0"
+version := "5.4.0-10802c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "vega-typings" % "0.6.2-04578a",
+  "org.scalablytyped" %%% "vega-typings" % "0.6.2-c88a5f",
   "org.scalablytyped" %%% "vega-util" % "1.10.0-eb8c07")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "dygraphs"
-version := "1.1.3-dt-20190322Z-43f43a"
+version := "1.1.3-dt-20190322Z-ca3ea8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "google_dot_visualization" % "0.0-unknown-dt-20190507Z-09227e",
+  "org.scalablytyped" %%% "google_dot_visualization" % "0.0-unknown-dt-20190513Z-f00030",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-excel"
-version := "14.0-dt-20190213Z-39550e"
+version := "14.0-dt-20190213Z-3021ea"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

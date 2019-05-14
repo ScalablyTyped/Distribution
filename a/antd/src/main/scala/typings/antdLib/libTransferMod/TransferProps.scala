@@ -12,6 +12,12 @@ trait TransferProps extends js.Object {
       reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
+  var children: js.UndefOr[
+    js.Function1[
+      /* props */ antdLib.libTransferRenderListBodyMod.TransferListBodyProps, 
+      reactLib.reactMod.ReactNode
+    ]
+  ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dataSource: js.Array[TransferItem]
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -66,6 +72,7 @@ trait TransferProps extends js.Object {
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var selectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var showSearch: js.UndefOr[scala.Boolean] = js.undefined
+  var showSelectAll: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var targetKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var titles: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -76,6 +83,7 @@ object TransferProps {
   def apply(
     dataSource: js.Array[TransferItem],
     body: /* props */ antdLib.libTransferListMod.TransferListProps => reactLib.reactMod.ReactNode = null,
+    children: /* props */ antdLib.libTransferRenderListBodyMod.TransferListBodyProps => reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     filterOption: (/* inputValue */ js.Any, /* item */ js.Any) => scala.Boolean = null,
@@ -97,12 +105,14 @@ object TransferProps {
     searchPlaceholder: java.lang.String = null,
     selectedKeys: js.Array[java.lang.String] = null,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    showSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
     targetKeys: js.Array[java.lang.String] = null,
     titles: js.Array[java.lang.String] = null
   ): TransferProps = {
     val __obj = js.Dynamic.literal(dataSource = dataSource)
     if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1(body))
+    if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2(filterOption))
@@ -124,6 +134,7 @@ object TransferProps {
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)
+    if (!js.isUndefined(showSelectAll)) __obj.updateDynamic("showSelectAll")(showSelectAll)
     if (style != null) __obj.updateDynamic("style")(style)
     if (targetKeys != null) __obj.updateDynamic("targetKeys")(targetKeys)
     if (titles != null) __obj.updateDynamic("titles")(titles)

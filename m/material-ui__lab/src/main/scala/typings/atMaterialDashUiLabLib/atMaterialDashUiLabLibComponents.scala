@@ -13,8 +13,6 @@ object atMaterialDashUiLabLibComponents {
   type BreadcrumbsProps = atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps
   @scala.inline
   def Slider: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps] = js.constructorOf[atMaterialDashUiLabLib.sliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps]]
-  @scala.inline
-  def SliderProps: atMaterialDashUiLabLib.sliderSliderMod.SliderProps.type = atMaterialDashUiLabLib.sliderSliderMod.SliderProps
   type SliderProps = atMaterialDashUiLabLib.sliderSliderMod.SliderProps
   @scala.inline
   def SpeedDial: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps] = js.constructorOf[atMaterialDashUiLabLib.speedDialMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps]]

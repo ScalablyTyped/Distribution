@@ -32,12 +32,15 @@ object validationNs extends js.Object {
   def getCompactable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libCompactableMod.Compactable2C[fpDashTsLib.libValidationMod.URI, L] = js.native
   def getFilterable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libFilterableMod.Filterable2C[fpDashTsLib.libValidationMod.URI, L] = js.native
   def getMonad[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Validation, L] = js.native
+  def getMonadThrow[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libMonadThrowMod.MonadThrow2C[fpDashTsLib.fpDashTsLibStrings.Validation, L] = js.native
   def getMonoid[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libValidationMod.Validation[L, A]] = js.native
   def getSemigroup[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libValidationMod.Validation[L, A]] = js.native
   def getSetoid[L, A](SL: fpDashTsLib.libSetoidMod.Setoid[L], SA: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libValidationMod.Validation[L, A]] = js.native
+  def getShow[L, A](SL: fpDashTsLib.libShowMod.Show[L], SA: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libValidationMod.Validation[L, A]] = js.native
   def getWitherable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libWitherableMod.Witherable2C[fpDashTsLib.libValidationMod.URI, L] = js.native
   def isFailure[L, A](fa: fpDashTsLib.libValidationMod.Validation[L, A]): /* is fp-ts.fp-ts/lib/Validation.Failure<L, A> */ scala.Boolean = js.native
   def isSuccess[L, A](fa: fpDashTsLib.libValidationMod.Validation[L, A]): /* is fp-ts.fp-ts/lib/Validation.Success<L, A> */ scala.Boolean = js.native
   def success[L, A](a: A): fpDashTsLib.libValidationMod.Validation[L, A] = js.native
+  def tryCatch[L, A](f: fpDashTsLib.libFunctionMod.Lazy[A], onError: js.Function1[/* e */ js.Any, L]): fpDashTsLib.libValidationMod.Validation[L, A] = js.native
 }
 

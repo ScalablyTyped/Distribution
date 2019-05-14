@@ -25,5 +25,6 @@ object tupleNs extends js.Object {
   def getOrd[L, A](OL: fpDashTsLib.libOrdMod.Ord[L], OA: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[fpDashTsLib.libTupleMod.Tuple[L, A]] = js.native
   def getSemigroup[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTupleMod.Tuple[L, A]] = js.native
   def getSetoid[L, A](SA: fpDashTsLib.libSetoidMod.Setoid[L], SB: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libTupleMod.Tuple[L, A]] = js.native
+  def getShow[L, A](SL: fpDashTsLib.libShowMod.Show[L], SA: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libTupleMod.Tuple[L, A]] = js.native
 }
 

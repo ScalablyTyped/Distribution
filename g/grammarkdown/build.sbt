@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grammarkdown"
-version := "2.0.12-401301"
+version := "2.0.12-288920"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1192,8 +1192,8 @@ object jestNs extends js.Object {
       *
       * Note: `jest.fn(implementation)` is a shorthand for `jest.fn().mockImplementation(implementation)`.
       */
-    def mockImplementation(): Mock[T, Y] = js.native
-    def mockImplementation(fn: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
+    def mockImplementation(): this.type = js.native
+    def mockImplementation(fn: js.Function1[/* args */ Y, T]): this.type = js.native
     /**
       * Accepts a function that will be used as an implementation of the mock for one call to the mocked function.
       * Can be chained so that multiple function calls produce different results.
@@ -1209,9 +1209,9 @@ object jestNs extends js.Object {
       *
       * myMockFn((err, val) => console.log(val)); // false
       */
-    def mockImplementationOnce(fn: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
+    def mockImplementationOnce(fn: js.Function1[/* args */ Y, T]): this.type = js.native
     /** Sets the name of the mock`. */
-    def mockName(name: java.lang.String): Mock[T, Y] = js.native
+    def mockName(name: java.lang.String): this.type = js.native
     /**
       * Simple sugar function for: `jest.fn().mockImplementation(() => Promise.reject(value));`
       *
@@ -1223,7 +1223,7 @@ object jestNs extends js.Object {
       *   await asyncMock(); // throws "Async error"
       * });
       */
-    def mockRejectedValue(value: RejectedValue[T]): Mock[T, Y] = js.native
+    def mockRejectedValue(value: RejectedValue[T]): this.type = js.native
     /**
       * Simple sugar function for: `jest.fn().mockImplementationOnce(() => Promise.reject(value));`
       *
@@ -1240,7 +1240,7 @@ object jestNs extends js.Object {
       * });
       *
       */
-    def mockRejectedValueOnce(value: RejectedValue[T]): Mock[T, Y] = js.native
+    def mockRejectedValueOnce(value: RejectedValue[T]): this.type = js.native
     /**
       * Resets all information stored in the mock, including any initial implementation and mock name given.
       *
@@ -1254,7 +1254,7 @@ object jestNs extends js.Object {
     /**
       * Simple sugar function for: `jest.fn().mockImplementation(() => Promise.resolve(value));`
       */
-    def mockResolvedValue(value: ResolvedValue[T]): Mock[T, Y] = js.native
+    def mockResolvedValue(value: ResolvedValue[T]): this.type = js.native
     /**
       * Simple sugar function for: `jest.fn().mockImplementationOnce(() => Promise.resolve(value));`
       *
@@ -1274,7 +1274,7 @@ object jestNs extends js.Object {
       * });
       *
       */
-    def mockResolvedValueOnce(value: ResolvedValue[T]): Mock[T, Y] = js.native
+    def mockResolvedValueOnce(value: ResolvedValue[T]): this.type = js.native
     /**
       * Does everything that `mockFn.mockReset()` does, and also restores the original (non-mocked) implementation.
       *
@@ -1296,7 +1296,7 @@ object jestNs extends js.Object {
       *     return this;
       *   });
       */
-    def mockReturnThis(): Mock[T, Y] = js.native
+    def mockReturnThis(): this.type = js.native
     /**
       * Accepts a value that will be returned whenever the mock function is called.
       *
@@ -1308,7 +1308,7 @@ object jestNs extends js.Object {
       * mock.mockReturnValue(43);
       * mock(); // 43
       */
-    def mockReturnValue(value: T): Mock[T, Y] = js.native
+    def mockReturnValue(value: T): this.type = js.native
     /**
       * Accepts a value that will be returned for one call to the mock function. Can be chained so that
       * successive calls to the mock function return different values. When there are no more
@@ -1325,7 +1325,7 @@ object jestNs extends js.Object {
       * console.log(myMockFn(), myMockFn(), myMockFn(), myMockFn());
       *
       */
-    def mockReturnValueOnce(value: T): Mock[T, Y] = js.native
+    def mockReturnValueOnce(value: T): this.type = js.native
   }
   
   trait MockOptions extends js.Object {
@@ -1811,7 +1811,7 @@ object jestNs extends js.Object {
   type EmptyFunction = js.Function0[scala.Unit]
   type Environment = $JestEnvironment
   type ExpectExtendMap = org.scalablytyped.runtime.StringDictionary[CustomMatcher]
-  type FunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any) with java.lang.String
+  type FunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with java.lang.String
   type Glob = java.lang.String
   // Global
   type Global = js.Object
@@ -1850,7 +1850,7 @@ object jestNs extends js.Object {
   type ModuleMap = js.Any
   type ModuleMocker = js.Any
   // see https://github.com/Microsoft/TypeScript/issues/25215
-  type NonFunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any) with java.lang.String
+  type NonFunctionPropertyNames[T] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with java.lang.String
   // Config
   type Path = java.lang.String
   type ProvidesCallback = js.Function1[/* cb */ DoneCallback, js.Any]

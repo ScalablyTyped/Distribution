@@ -10,11 +10,11 @@ trait WrappedFormUtils[V] extends js.Object {
   def getFieldDecorator[T /* <: js.Object */](id: java.lang.String): js.Function1[/* node */ reactLib.reactMod.ReactNode, reactLib.reactMod.ReactNode] = js.native
   def getFieldDecorator[T /* <: js.Object */](id: java.lang.String, options: GetFieldDecoratorOptions): js.Function1[/* node */ reactLib.reactMod.ReactNode, reactLib.reactMod.ReactNode] = js.native
   /** 获取某个输入控件的 Error */
-  def getFieldError(name: java.lang.String): js.Array[js.Object] = js.native
+  def getFieldError(name: java.lang.String): js.UndefOr[js.Array[java.lang.String]] = js.native
   /** 获取一个输入控件的值 */
   def getFieldValue(fieldName: java.lang.String): js.Any = js.native
-  def getFieldsError(): js.Object = js.native
-  def getFieldsError(names: js.Array[java.lang.String]): js.Object = js.native
+  def getFieldsError(): stdLib.Record[java.lang.String, js.UndefOr[js.Array[java.lang.String]]] = js.native
+  def getFieldsError(names: js.Array[java.lang.String]): stdLib.Record[java.lang.String, js.UndefOr[js.Array[java.lang.String]]] = js.native
   /** 获取一组输入控件的值，如不传入参数，则获取全部组件的值 */
   def getFieldsValue(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getFieldsValue(fieldNames: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native

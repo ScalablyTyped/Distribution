@@ -12,14 +12,14 @@ trait Anon_Options extends js.Object {
     *
     * @deprecated use endpoint.DEFAULTS instead
     */
-  def apply(): atOctokitEndpointLib.libTypesMod.Defaults = js.native
+  def apply(): atOctokitEndpointLib.distDashTypesTypesMod.Defaults = js.native
   /**
     * Merges current endpoint defaults with passed route and parameters,
     * without transforming them into request options.
     *
     * @param {object} endpoint Must set `method` and `url`. Plus URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
     */
-  def apply(options: atOctokitEndpointLib.libTypesMod.Parameters): atOctokitEndpointLib.libTypesMod.Defaults = js.native
+  def apply(options: atOctokitEndpointLib.distDashTypesTypesMod.Parameters): atOctokitEndpointLib.distDashTypesTypesMod.Defaults = js.native
   /**
     * Merges current endpoint defaults with passed route and parameters,
     * without transforming them into request options.
@@ -28,10 +28,10 @@ trait Anon_Options extends js.Object {
     * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
     *
     */
-  def apply(route: atOctokitEndpointLib.libTypesMod.Route): atOctokitEndpointLib.libTypesMod.Defaults = js.native
+  def apply(route: atOctokitEndpointLib.distDashTypesTypesMod.Route): atOctokitEndpointLib.distDashTypesTypesMod.Defaults = js.native
   def apply(
-    route: atOctokitEndpointLib.libTypesMod.Route,
-    parameters: atOctokitEndpointLib.libTypesMod.Parameters
-  ): atOctokitEndpointLib.libTypesMod.Defaults = js.native
+    route: atOctokitEndpointLib.distDashTypesTypesMod.Route,
+    parameters: atOctokitEndpointLib.distDashTypesTypesMod.Parameters
+  ): atOctokitEndpointLib.distDashTypesTypesMod.Defaults = js.native
 }
 

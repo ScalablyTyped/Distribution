@@ -11,11 +11,16 @@ class Scrollbar protected ()
   extends smoothDashScrollbarLib.interfacesScrollbarMod.Scrollbar {
   def this(containerEl: stdLib.HTMLElement) = this()
   def this(containerEl: stdLib.HTMLElement, options: stdLib.Partial[smoothDashScrollbarLib.interfacesScrollbarMod.ScrollbarOptions]) = this()
+  var _init: js.Any = js.native
   var _listeners: js.Any = js.native
   var _momentum: js.Any = js.native
+  var _nextTick: js.Any = js.native
   var _observer: js.Any = js.native
   var _plugins: js.Any = js.native
+  var _render: js.Any = js.native
   var _renderID: js.Any = js.native
+  var _shouldPropagateMomentum: js.Any = js.native
+  var _updateDebounced: js.Any = js.native
   /**
     * Container bounding rect
     */
@@ -43,12 +48,5 @@ class Scrollbar protected ()
   val parent_Scrollbar: Scrollbar | scala.Null = js.native
   @JSName("track")
   val track_Scrollbar: smoothDashScrollbarLib.trackMod.TrackController = js.native
-  /* private */ def _init(): js.Any = js.native
-  /* private */ def _nextTick(direction: js.Any): js.Any = js.native
-  /* private */ def _render(): js.Any = js.native
-  /* private */ def _shouldPropagateMomentum(): js.Any = js.native
-  /* private */ def _shouldPropagateMomentum(deltaX: js.Any): js.Any = js.native
-  /* private */ def _shouldPropagateMomentum(deltaX: js.Any, deltaY: js.Any): js.Any = js.native
-  /* private */ def _updateDebounced(): js.Any = js.native
 }
 

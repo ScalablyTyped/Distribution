@@ -285,6 +285,22 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("lift")
+  def lift_Traced(contravariant: Contravariant2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* f */ js.Function1[/* b */ js.Any, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("lift")
+  def lift_Traced[L](contravariant: Contravariant2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* f */ js.Function1[/* b */ js.Any, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+    ]
+  ] = js.native
+  @JSName("lift")
   def lift_Tree(contravariant: Contravariant1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* f */ js.Function1[/* b */ js.Any, _], 
     js.Function1[

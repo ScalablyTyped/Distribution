@@ -365,6 +365,26 @@ trait TraversableWithIndex[T, I]
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, FL, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   @JSName("traverseWithIndex")
+  def traverseWithIndex_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function2[
+      /* i */ I, 
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libHKTMod.HKT[T, _]]
+  ] = js.native
+  @JSName("traverseWithIndex")
+  def traverseWithIndex_Traced[FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, FL]): js.Function2[
+    /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
+    /* f */ js.Function2[
+      /* i */ I, 
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, FL, fpDashTsLib.libHKTMod.HKT[T, _]]
+  ] = js.native
+  @JSName("traverseWithIndex")
   def traverseWithIndex_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function2[

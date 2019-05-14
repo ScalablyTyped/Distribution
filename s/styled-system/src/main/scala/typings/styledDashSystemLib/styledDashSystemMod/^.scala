@@ -98,7 +98,7 @@ object ^ extends js.Object {
   def getPx(n: js.Any, scale: js.Any): java.lang.String = js.native
   def is(n: js.Any): scala.Boolean = js.native
   def isObject(n: js.Any): scala.Boolean = js.native
-  def mapProps(mapper: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* func */ js.Array[_], js.Function1[/* repeated */ _, _]] = js.native
+  def mapProps(mapper: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* func */ js.Any, js.Function1[/* repeated */ _, _]] = js.native
   def num(n: js.Any): scala.Boolean = js.native
   def px(n: js.Any): java.lang.String = js.native
   def style(args: LowLevelStylefunctionArguments): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native

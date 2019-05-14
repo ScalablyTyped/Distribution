@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-system
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 Responsive, theme-based style props for building design systems with React
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for styled-system 4.1
+// Type definitions for styled-system 4.2
 // Project: https://github.com/jxnblk/styled-system#readme
 // Definitions by: Marshall Bowers <https://github.com/maxdeviant>
 //                 Ben McCormick <https://github.com/phobon>
@@ -49,6 +49,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Sara F-P <https://github.com/gretzky>
 //                 Chris LoPresto <https://github.com/chrislopresto>
 //                 Pedro Duarte <https://github.com/peduarte>
+//                 Dhalton Huber <https://github.com/Dhalton>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

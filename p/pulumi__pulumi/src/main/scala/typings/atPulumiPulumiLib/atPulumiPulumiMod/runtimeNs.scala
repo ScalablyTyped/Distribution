@@ -68,7 +68,9 @@ object runtimeNs extends js.Object {
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[_] = js.native
   def isDryRun(): scala.Boolean = js.native
+  def isQueryMode(): scala.Boolean = js.native
   def isTestModeEnabled(): scala.Boolean = js.native
+  def monitorSupportsSecrets(): js.Promise[scala.Boolean] = js.native
   def readResource(
     res: atPulumiPulumiLib.resourceMod.Resource,
     t: java.lang.String,
@@ -95,7 +97,10 @@ object runtimeNs extends js.Object {
   ): scala.Unit = js.native
   def resolveProperties(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    resolvers: stdLib.Record[java.lang.String, js.Function2[/* v */ _, /* isKnown */ scala.Boolean, scala.Unit]],
+    resolvers: stdLib.Record[
+      java.lang.String, 
+      js.Function3[/* v */ _, /* isKnown */ scala.Boolean, /* isSecret */ scala.Boolean, scala.Unit]
+    ],
     t: java.lang.String,
     name: java.lang.String,
     allProps: js.Any

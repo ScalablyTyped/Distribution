@@ -218,6 +218,18 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
   ] = js.native
   @JSName("applyFirst")
+  def applyFirst_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("applyFirst")
+  def applyFirst_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+  ] = js.native
+  @JSName("applyFirst")
   def applyFirst_Tree(F: Apply1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* fa */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
     /* fb */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
@@ -475,6 +487,18 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
   ] = js.native
   @JSName("applySecond")
+  def applySecond_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("applySecond")
+  def applySecond_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+  ] = js.native
+  @JSName("applySecond")
   def applySecond_Tree(F: Apply1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
     /* fa */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
     /* fb */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
@@ -680,6 +704,14 @@ object ^ extends js.Object {
   @JSName("getSemigroup")
   def getSemigroup_These[L, A](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.These, L], S: fpDashTsLib.libSemigroupMod.Semigroup[A]): js.Function0[
     fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, A]]
+  ] = js.native
+  @JSName("getSemigroup")
+  def getSemigroup_Traced[A](F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced], S: fpDashTsLib.libSemigroupMod.Semigroup[A]): js.Function0[
+    fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, A]]
+  ] = js.native
+  @JSName("getSemigroup")
+  def getSemigroup_Traced[L, A](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L], S: fpDashTsLib.libSemigroupMod.Semigroup[A]): js.Function0[
+    fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, A]]
   ] = js.native
   @JSName("getSemigroup")
   def getSemigroup_Tree[A](F: Apply1[fpDashTsLib.fpDashTsLibStrings.Tree], S: fpDashTsLib.libSemigroupMod.Semigroup[A]): js.Function0[
@@ -1075,6 +1107,28 @@ object ^ extends js.Object {
       js.Function1[
         /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _], 
         fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
+      ]
+    ]
+  ] = js.native
+  @JSName("liftA2")
+  def liftA2_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* f */ fpDashTsLib.libFunctionMod.Curried2[_, _, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+      js.Function1[
+        /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      ]
+    ]
+  ] = js.native
+  @JSName("liftA2")
+  def liftA2_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* f */ fpDashTsLib.libFunctionMod.Curried2[_, _, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+      js.Function1[
+        /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
       ]
     ]
   ] = js.native
@@ -1603,6 +1657,34 @@ object ^ extends js.Object {
         js.Function1[
           /* fc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _], 
           fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
+        ]
+      ]
+    ]
+  ] = js.native
+  @JSName("liftA3")
+  def liftA3_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* f */ fpDashTsLib.libFunctionMod.Curried3[_, _, _, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+      js.Function1[
+        /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+        js.Function1[
+          /* fc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+          fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+        ]
+      ]
+    ]
+  ] = js.native
+  @JSName("liftA3")
+  def liftA3_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* f */ fpDashTsLib.libFunctionMod.Curried3[_, _, _, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+      js.Function1[
+        /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+        js.Function1[
+          /* fc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+          fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
         ]
       ]
     ]
@@ -2240,6 +2322,40 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("liftA4")
+  def liftA4_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* f */ fpDashTsLib.libFunctionMod.Curried4[_, _, _, _, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+      js.Function1[
+        /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+        js.Function1[
+          /* fc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+          js.Function1[
+            /* fd */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+            fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+          ]
+        ]
+      ]
+    ]
+  ] = js.native
+  @JSName("liftA4")
+  def liftA4_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* f */ fpDashTsLib.libFunctionMod.Curried4[_, _, _, _, _], 
+    js.Function1[
+      /* fa */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+      js.Function1[
+        /* fb */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+        js.Function1[
+          /* fc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+          js.Function1[
+            /* fd */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+            fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+          ]
+        ]
+      ]
+    ]
+  ] = js.native
+  @JSName("liftA4")
   def liftA4_Tree(F: Apply1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* f */ fpDashTsLib.libFunctionMod.Curried4[_, _, _, _, _], 
     fpDashTsLib.libFunctionMod.Curried4[
@@ -2368,8 +2484,8 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.HKT[
       F, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.HKT<F, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.HKT<F, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.HKT<F, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.HKT<F, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.HKT[F, _]])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2383,8 +2499,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Array, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Array', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Array', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Array', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Array', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Array, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2402,8 +2521,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Const', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Const', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Const', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Const', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2418,8 +2540,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Const, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Const', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Const', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Const', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Const', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Const, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2437,8 +2562,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Either, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Either', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Either', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Either', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Either', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2453,8 +2581,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Either, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Either', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Either', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Either', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Either', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Either, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2472,8 +2603,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Free, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Free', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Free', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Free', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Free', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2488,8 +2622,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Free, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Free', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Free', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Free', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Free', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Free, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2503,8 +2640,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.FreeGroup, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'FreeGroup', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'FreeGroup', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'FreeGroup', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'FreeGroup', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.FreeGroup, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2515,8 +2655,8 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.IO, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'IO', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'IO', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'IO', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'IO', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.IO, _]])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2534,8 +2674,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'IOEither', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'IOEither', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'IOEither', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'IOEither', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2550,8 +2693,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.IOEither, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'IOEither', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'IOEither', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'IOEither', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'IOEither', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.IOEither, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2565,8 +2711,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Identity, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Identity', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Identity', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Identity', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Identity', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Identity, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2585,8 +2734,11 @@ object ^ extends js.Object {
       _, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'IxIO', any, any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'IxIO', any, any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'IxIO', any, any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type3<'IxIO', any, any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, _, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2602,8 +2754,11 @@ object ^ extends js.Object {
       U, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'IxIO', U, L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'IxIO', U, L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'IxIO', U, L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type3<'IxIO', any, any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.IxIO, U, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2621,8 +2776,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Map, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Map', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Map', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Map', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Map', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2637,8 +2795,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Map, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Map', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Map', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Map', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Map', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Map, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2652,8 +2813,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2667,8 +2831,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray2v', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray2v', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray2v', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'NonEmptyArray2v', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2682,8 +2849,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Option, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Option', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Option', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Option', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Option', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Option, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2697,8 +2867,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Pair, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Pair', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Pair', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Pair', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Pair', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Pair, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2716,8 +2889,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Reader', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Reader', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Reader', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Reader', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2732,8 +2908,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Reader, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Reader', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Reader', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Reader', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Reader', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Reader, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2752,8 +2931,11 @@ object ^ extends js.Object {
       _, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', any, any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', any, any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', any, any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', any, any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, _, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2769,8 +2951,11 @@ object ^ extends js.Object {
       U, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', U, L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', U, L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', U, L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type3<'ReaderTaskEither', any, any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type3[fpDashTsLib.fpDashTsLibStrings.ReaderTaskEither, U, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2788,8 +2973,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.State, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'State', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'State', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'State', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'State', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2804,8 +2992,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.State, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'State', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'State', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'State', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'State', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.State, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2823,8 +3014,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Store, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Store', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Store', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Store', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Store', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2839,8 +3033,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Store, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Store', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Store', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Store', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Store', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Store, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2854,8 +3051,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.StrMap, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'StrMap', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'StrMap', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'StrMap', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'StrMap', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.StrMap, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2869,8 +3069,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Task, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Task', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Task', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Task', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Task', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Task, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2888,8 +3091,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2904,8 +3110,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.TaskEither, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'TaskEither', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.TaskEither, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2923,8 +3132,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.These, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'These', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'These', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'These', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'These', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2939,8 +3151,52 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.These, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'These', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'These', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'These', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'These', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
+      ])
+    ]
+  ] = js.native
+  @JSName("sequenceS")
+  def sequenceS_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* r */ (EnforceNonEmptyRecord[
+      stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      ]
+    ]) with (stdLib.Record[
+      java.lang.String, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]), 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Traced', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Traced', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Traced', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+      ])
+    ]
+  ] = js.native
+  @JSName("sequenceS")
+  def sequenceS_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* r */ EnforceNonEmptyRecord[
+      stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+      ]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      L, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Traced', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Traced', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Traced', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2954,8 +3210,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Tree, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Tree', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Tree', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Tree', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Tree', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2973,8 +3232,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Tuple', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Tuple', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Tuple', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Tuple', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -2989,8 +3251,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Tuple, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Tuple', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Tuple', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Tuple', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Tuple', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Tuple, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -3008,8 +3273,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Validation', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Validation', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Validation', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Validation', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -3024,8 +3292,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Validation, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Validation', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Validation', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Validation', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Validation', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Validation, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -3043,8 +3314,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       _, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Writer', any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Writer', any, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Writer', any, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Writer', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, _, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -3059,8 +3333,11 @@ object ^ extends js.Object {
       fpDashTsLib.fpDashTsLibStrings.Writer, 
       L, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Writer', L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Writer', L, any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type2<'Writer', L, any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type2<'Writer', any, infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Writer, L, _]
+      ])
     ]
   ] = js.native
   @JSName("sequenceS")
@@ -3074,8 +3351,11 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type[
       fpDashTsLib.fpDashTsLibStrings.Zipper, 
       /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Zipper', any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Zipper', any>> ]: [std.Record<string, fp-ts.fp-ts/lib/HKT.Type<'Zipper', any>>[K]] extends [fp-ts.fp-ts/lib/HKT.Type<'Zipper', infer A>]? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with (stdLib.Record[
+        java.lang.String, 
+        fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Zipper, _]
+      ])
     ]
   ] = js.native
   def sequenceT[F](F: Apply[F]): SequenceT[F] = js.native
@@ -3147,6 +3427,10 @@ object ^ extends js.Object {
   def sequenceT_These(F: Apply2[fpDashTsLib.fpDashTsLibStrings.These]): SequenceT2[fpDashTsLib.fpDashTsLibStrings.These] = js.native
   @JSName("sequenceT")
   def sequenceT_These[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.These, L]): SequenceT2C[fpDashTsLib.fpDashTsLibStrings.These, L] = js.native
+  @JSName("sequenceT")
+  def sequenceT_Traced(F: Apply2[fpDashTsLib.fpDashTsLibStrings.Traced]): SequenceT2[fpDashTsLib.fpDashTsLibStrings.Traced] = js.native
+  @JSName("sequenceT")
+  def sequenceT_Traced[L](F: Apply2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): SequenceT2C[fpDashTsLib.fpDashTsLibStrings.Traced, L] = js.native
   @JSName("sequenceT")
   def sequenceT_Tree(F: Apply1[fpDashTsLib.fpDashTsLibStrings.Tree]): SequenceT1[fpDashTsLib.fpDashTsLibStrings.Tree] = js.native
   @JSName("sequenceT")

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'open' | 'children'> ]: @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait DrawerProps
+- Dropped @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps> extends any ? std.Pick<@material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, std.Exclude<keyof @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'open' | 'children'>> : never */ trait DrawerProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[DrawerClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ModalProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps]] = js.undefined
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.permanent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.persistent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.temporary
   ] = js.undefined
@@ -40,7 +40,7 @@ object DrawerProps {
     open: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
-    transitionDuration: js.UndefOr[scala.Nothing] = js.undefined,
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.permanent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.persistent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.temporary = null
   ): DrawerProps = {
     val __obj = js.Dynamic.literal()
@@ -56,7 +56,7 @@ object DrawerProps {
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (style != null) __obj.updateDynamic("style")(style)
     if (theme != null) __obj.updateDynamic("theme")(theme)
-    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]
   }

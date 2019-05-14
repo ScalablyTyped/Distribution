@@ -12,6 +12,7 @@ trait ProxyOptions extends js.Object {
     * See https://github.com/stream-utils/raw-body/blob/master/index.d.ts
     */
   var limit: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var preserveHostHdr: js.UndefOr[scala.Boolean] = js.undefined
   var proxyErrorHandler: js.UndefOr[
     js.Function3[
       /* err */ js.Any, 
@@ -44,6 +45,7 @@ object ProxyOptions {
   @scala.inline
   def apply(
     limit: scala.Double | java.lang.String = null,
+    preserveHostHdr: js.UndefOr[scala.Boolean] = js.undefined,
     proxyErrorHandler: (/* err */ js.Any, /* res */ expressLib.expressMod.Response, /* next */ expressLib.expressMod.NextFunction) => _ = null,
     proxyReqOptDecorator: (/* proxyReqOpts */ nodeLib.httpMod.RequestOptions, /* srcReq */ expressLib.expressMod.Request) => nodeLib.httpMod.RequestOptions = null,
     proxyReqPathResolver: /* req */ expressLib.expressMod.Request => java.lang.String = null,
@@ -51,6 +53,7 @@ object ProxyOptions {
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveHostHdr)) __obj.updateDynamic("preserveHostHdr")(preserveHostHdr)
     if (proxyErrorHandler != null) __obj.updateDynamic("proxyErrorHandler")(js.Any.fromFunction3(proxyErrorHandler))
     if (proxyReqOptDecorator != null) __obj.updateDynamic("proxyReqOptDecorator")(js.Any.fromFunction2(proxyReqOptDecorator))
     if (proxyReqPathResolver != null) __obj.updateDynamic("proxyReqPathResolver")(js.Any.fromFunction1(proxyReqPathResolver))

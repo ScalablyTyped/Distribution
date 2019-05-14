@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Showdown converter extensions store object.
+  */
 trait ConverterExtensions extends js.Object {
   var language: js.Array[ShowdownExtension]
   var output: js.Array[ShowdownExtension]

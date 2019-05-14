@@ -365,6 +365,7 @@ object libMod extends js.Object {
   val HighlightFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val HighlightOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val HighlightTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val HistoryOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val HomeFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val HomeOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val HomeTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
@@ -459,7 +460,6 @@ object libMod extends js.Object {
   val MoneyCollectTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val MonitorOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val MoreOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
-  val MrOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val NotificationFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val NotificationOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val NotificationTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
@@ -514,6 +514,7 @@ object libMod extends js.Object {
   val PropertySafetyFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val PropertySafetyOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val PropertySafetyTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val PullRequestOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val PushpinFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val PushpinOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val PushpinTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
@@ -544,7 +545,6 @@ object libMod extends js.Object {
   val RedditSquareFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val RedoOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val ReloadOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
-  val ReloadTimeOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val RestFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val RestOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val RestTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native

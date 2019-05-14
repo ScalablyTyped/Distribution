@@ -52,6 +52,20 @@ trait Transfer
   ): scala.Unit = js.native
   def moveToLeft(): scala.Unit = js.native
   def moveToRight(): scala.Unit = js.native
+  def onItemSelect(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
+    selectedKey: java.lang.String,
+    checked: scala.Boolean
+  ): scala.Unit = js.native
+  def onItemSelectAll(
+    direction: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_antd/lib/collapse/Collapse.ExpandIconPosition */ js.Any,
+    selectedKeys: js.Array[java.lang.String],
+    checkAll: scala.Boolean
+  ): scala.Unit = js.native
+  def onLeftItemSelect(selectedKey: java.lang.String, checked: scala.Boolean): scala.Unit = js.native
+  def onLeftItemSelectAll(selectedKeys: js.Array[java.lang.String], checkAll: scala.Boolean): scala.Unit = js.native
+  def onRightItemSelect(selectedKey: java.lang.String, checked: scala.Boolean): scala.Unit = js.native
+  def onRightItemSelectAll(selectedKeys: js.Array[java.lang.String], checkAll: scala.Boolean): scala.Unit = js.native
   def renderTransfer(transferLocale: TransferLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
   def separateDataSource(props: TransferProps): antdLib.Anon_LeftDataSourceRightDataSource = js.native
 }

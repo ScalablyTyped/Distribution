@@ -15,7 +15,7 @@ trait ColumnProps[T] extends js.Object {
   var dataIndex: js.UndefOr[java.lang.String] = js.undefined
   var defaultSortOrder: js.UndefOr[SortOrder] = js.undefined
   var filterDropdown: js.UndefOr[
-    reactLib.reactMod.ReactNode | (js.Function1[/* props */ js.Object, reactLib.reactMod.ReactNode])
+    reactLib.reactMod.ReactNode | (js.Function1[/* props */ FilterDropdownProps, reactLib.reactMod.ReactNode])
   ] = js.undefined
   var filterDropdownVisible: js.UndefOr[scala.Boolean] = js.undefined
   var filterIcon: js.UndefOr[
@@ -57,7 +57,7 @@ object ColumnProps {
     colSpan: scala.Int | scala.Double = null,
     dataIndex: java.lang.String = null,
     defaultSortOrder: SortOrder = null,
-    filterDropdown: reactLib.reactMod.ReactNode | (js.Function1[/* props */ js.Object, reactLib.reactMod.ReactNode]) = null,
+    filterDropdown: reactLib.reactMod.ReactNode | (js.Function1[/* props */ FilterDropdownProps, reactLib.reactMod.ReactNode]) = null,
     filterDropdownVisible: js.UndefOr[scala.Boolean] = js.undefined,
     filterIcon: reactLib.reactMod.ReactNode | (js.Function1[/* filtered */ scala.Boolean, reactLib.reactMod.ReactNode]) = null,
     filterMultiple: js.UndefOr[scala.Boolean] = js.undefined,

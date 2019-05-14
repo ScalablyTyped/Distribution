@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'children'> ]: @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait PopoverProps
+- Dropped @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps> extends any ? std.Pick<@material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, std.Exclude<keyof @material-ui/core.@material-ui/core/Modal/Modal.ModalProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | 'children'>> : never */ trait PopoverProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[PopoverClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ModalClasses: js.UndefOr[
@@ -35,7 +35,9 @@ import scala.scalajs.js.annotation._
   var modal: js.UndefOr[scala.Boolean] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var transformOrigin: js.UndefOr[PopoverOrigin] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
+  var transitionDuration: js.UndefOr[
+    (js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter]) | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
+  ] = js.undefined
 }
 
 object PopoverProps {
@@ -63,7 +65,7 @@ object PopoverProps {
     role: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     transformOrigin: PopoverOrigin = null,
-    transitionDuration: scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
+    transitionDuration: (js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter]) | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): PopoverProps = {
     val __obj = js.Dynamic.literal()
     if (ModalClasses != null) __obj.updateDynamic("ModalClasses")(ModalClasses)

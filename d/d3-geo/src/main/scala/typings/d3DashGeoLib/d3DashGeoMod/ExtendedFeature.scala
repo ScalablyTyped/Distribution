@@ -22,7 +22,7 @@ object ExtendedFeature {
     id: java.lang.String | scala.Double = null
   ): ExtendedFeature[GeometryType, Properties] = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedFeature[GeometryType, Properties]]

@@ -10,7 +10,12 @@ trait Options[T] extends js.Object {
   var breadcrumbCategory: js.UndefOr[java.lang.String] = js.undefined
   var breadcrumbDataFromAction: js.UndefOr[js.Function1[/* action */ reduxLib.reduxMod.Action[_], _]] = js.undefined
   var filterBreadcrumbActions: js.UndefOr[js.Function1[/* action */ reduxLib.reduxMod.Action[_], scala.Boolean]] = js.undefined
-  var getTags: js.UndefOr[js.Function1[/* state */ T, scala.Nothing]] = js.undefined
+  var getTags: js.UndefOr[
+    js.Function1[
+      /* state */ T, 
+      /* import warning: ImportType.apply Failed type conversion: any['tags'] */ js.Any
+    ]
+  ] = js.undefined
   var getUserContext: js.UndefOr[
     js.Function1[
       /* state */ T, 
@@ -27,7 +32,7 @@ object Options {
     breadcrumbCategory: java.lang.String = null,
     breadcrumbDataFromAction: /* action */ reduxLib.reduxMod.Action[_] => _ = null,
     filterBreadcrumbActions: /* action */ reduxLib.reduxMod.Action[_] => scala.Boolean = null,
-    getTags: /* state */ T => scala.Nothing = null,
+    getTags: /* state */ T => /* import warning: ImportType.apply Failed type conversion: any['tags'] */ js.Any = null,
     getUserContext: /* state */ T => /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _ = null,
     stateTransformer: /* state */ T => _ = null
   ): Options[T] = {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate extends js.Object {
   /**
     * Whether to enable animation.
@@ -15,7 +14,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * "true"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animation
     */
-  var animation: js.UndefOr[scala.Boolean] = js.native
+  var animation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Delay before updating the first animation, which supports
     * callback function for different data to have different animation
@@ -32,7 +31,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDelay: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Delay before updating animation, which supports callback
     * function for different data to have different animation effect.
@@ -48,7 +47,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDelayUpdate: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
@@ -60,7 +59,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * 1000
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDuration: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -72,7 +71,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * 300
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.native
+  var animationDurationUpdate: js.UndefOr[js.Function | scala.Double] = js.undefined
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -84,7 +83,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * "cubicOut"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationEasing
     */
-  var animationEasing: js.UndefOr[java.lang.String] = js.native
+  var animationEasing: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Easing method used for animation.
     *
@@ -93,7 +92,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * "cubicOut"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[java.lang.String] = js.native
+  var animationEasingUpdate: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger
@@ -104,7 +103,7 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     * 2000
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.animationThreshold
     */
-  var animationThreshold: js.UndefOr[scala.Double] = js.native
+  var animationThreshold: js.UndefOr[scala.Double] = js.undefined
   /**
     * The scope of the area is defined by `data`, which is an array
     * with two item, representing the left-top point and the right-bottom
@@ -128,21 +127,21 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.data
     */
-  var data: js.UndefOr[Anon_01AnonItemStyleLabelValue] = js.native
+  var data: js.UndefOr[Anon_01AnonItemStyleLabelValue] = js.undefined
   /**
     * Style of the mark area.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.native
+  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
   /**
     * Label in mark area.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.native
+  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to
@@ -151,6 +150,39 @@ trait Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimation
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.markArea.silent
     */
-  var silent: js.UndefOr[scala.Boolean] = js.native
+  var silent: js.UndefOr[scala.Boolean] = js.undefined
+}
+
+object Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    data: Anon_01AnonItemStyleLabelValue = null,
+    itemStyle: Anon_BorderColorBorderType = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    __obj.asInstanceOf[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate]
+  }
 }
 

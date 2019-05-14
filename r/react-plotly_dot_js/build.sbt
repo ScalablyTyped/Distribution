@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-plotly_dot_js"
-version := "2.2-dt-20181012Z-cfa609"
+version := "2.2-dt-20181012Z-d8f431"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,14 +12,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-chord" % "1.0-dt-20190212Z-6cbe4b",
   "org.scalablytyped" %%% "d3-collection" % "1.0-dt-20190212Z-7902e6",
   "org.scalablytyped" %%% "d3-color" % "1.2-dt-20190212Z-757cbd",
-  "org.scalablytyped" %%% "d3-contour" % "1.3-dt-20190205Z-01b525",
+  "org.scalablytyped" %%% "d3-contour" % "1.3-dt-20190205Z-51694f",
   "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-edfd01",
   "org.scalablytyped" %%% "d3-drag" % "1.2-dt-20190212Z-c42084",
   "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20190326Z-3bdbd7",
   "org.scalablytyped" %%% "d3-ease" % "1.0-dt-20190212Z-c5c6cc",
   "org.scalablytyped" %%% "d3-force" % "1.2-dt-20190212Z-d7918b",
   "org.scalablytyped" %%% "d3-format" % "1.3-dt-20190212Z-dfc9ae",
-  "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190212Z-e8765a",
+  "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190212Z-7bc2c7",
   "org.scalablytyped" %%% "d3-hierarchy" % "1.1-dt-20190212Z-4a88a2",
   "org.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20190212Z-7add4f",
   "org.scalablytyped" %%% "d3-path" % "1.0-dt-20190212Z-f6c341",
@@ -34,10 +34,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-transition" % "1.1-dt-20190212Z-3e94a2",
   "org.scalablytyped" %%% "d3-voronoi" % "1.1-dt-20190212Z-a98106",
   "org.scalablytyped" %%% "d3-zoom" % "1.7-dt-20190212Z-96a3fe",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-c5348d",
-  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20190506Z-4823c8",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-a9badf",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-dbce77",
+  "org.scalablytyped" %%% "plotly_dot_js" % "1.44-dt-20190506Z-31cb81",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

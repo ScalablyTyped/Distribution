@@ -64,6 +64,7 @@ class Request ()
   def pause(): scala.Boolean = js.native
   def pipe(stream: nodeLib.NodeJSNs.WritableStream): nodeLib.NodeJSNs.WritableStream = js.native
   def query(command: java.lang.String): js.Promise[IResult[_]] = js.native
+  def query(command: stdLib.TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[_]] = js.native
   def query[Entity](
     command: java.lang.String,
     callback: js.Function2[
@@ -74,6 +75,8 @@ class Request ()
   ): scala.Unit = js.native
   @JSName("query")
   def query_Entity[Entity](command: java.lang.String): js.Promise[IResult[Entity]] = js.native
+  @JSName("query")
+  def query_Entity[Entity](command: stdLib.TemplateStringsArray, interpolations: js.Any*): js.Promise[IResult[Entity]] = js.native
   def resume(): scala.Boolean = js.native
 }
 

@@ -61,7 +61,11 @@ trait Dom extends js.Object {
   def offset(elem: stdLib.HTMLElement): js.Object = js.native
   def outerHeight(elem: stdLib.HTMLElement): scala.Double = js.native
   def outerWidth(element: stdLib.HTMLElement): scala.Double = js.native
-  def overlayContainsElement(overlayType: java.lang.String, element: stdLib.HTMLElement): scala.Boolean = js.native
+  def overlayContainsElement(
+    overlayType: handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType,
+    element: stdLib.HTMLElement,
+    root: stdLib.HTMLElement
+  ): scala.Boolean = js.native
   def pageX(event: stdLib.Event): scala.Double = js.native
   def pageY(event: stdLib.Event): scala.Double = js.native
   def polymerUnwrap(element: stdLib.HTMLElement): js.Any | scala.Unit = js.native

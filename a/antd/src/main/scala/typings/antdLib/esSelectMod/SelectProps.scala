@@ -16,6 +16,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var maxTagPlaceholder: js.UndefOr[
     reactLib.reactMod.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNode])
   ] = js.undefined
+  var maxTagTextLength: js.UndefOr[scala.Double] = js.undefined
   var menuItemSelectedIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var mode: js.UndefOr[
     antdLib.antdLibStrings.default | antdLib.antdLibStrings.multiple | antdLib.antdLibStrings.tags | antdLib.antdLibStrings.combobox | java.lang.String
@@ -88,6 +89,7 @@ object SelectProps {
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     maxTagCount: scala.Int | scala.Double = null,
     maxTagPlaceholder: reactLib.reactMod.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNode]) = null,
+    maxTagTextLength: scala.Int | scala.Double = null,
     menuItemSelectedIcon: reactLib.reactMod.ReactNode = null,
     mode: antdLib.antdLibStrings.default | antdLib.antdLibStrings.multiple | antdLib.antdLibStrings.tags | antdLib.antdLibStrings.combobox | java.lang.String = null,
     notFoundContent: reactLib.reactMod.ReactNode = null,
@@ -144,6 +146,7 @@ object SelectProps {
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])
     if (maxTagPlaceholder != null) __obj.updateDynamic("maxTagPlaceholder")(maxTagPlaceholder.asInstanceOf[js.Any])
+    if (maxTagTextLength != null) __obj.updateDynamic("maxTagTextLength")(maxTagTextLength.asInstanceOf[js.Any])
     if (menuItemSelectedIcon != null) __obj.updateDynamic("menuItemSelectedIcon")(menuItemSelectedIcon.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])

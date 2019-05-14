@@ -42,12 +42,19 @@ trait ICustomer
   var email: js.UndefOr[java.lang.String] = js.undefined
   var livemode: scala.Boolean
   var metadata: stripeLib.stripeMod.IMetadata
-  var name: java.lang.String | scala.Null
+  /**
+    * The customer’s full name or business name.
+    */
+  var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
     * Value is 'customer'
     */
   @JSName("object")
   var object_ICustomer: stripeLib.stripeLibStrings.customer
+  /**
+    * The customer’s phone number.
+    */
+  var phone: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Shipping information associated with the customer.
     */
@@ -85,6 +92,7 @@ object ICustomer {
     discount: stripeLib.stripeMod.couponsNs.IDiscount = null,
     email: java.lang.String = null,
     name: java.lang.String = null,
+    phone: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     sources: stripeLib.stripeMod.IList[
       stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount
@@ -101,6 +109,7 @@ object ICustomer {
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (email != null) __obj.updateDynamic("email")(email)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (sources != null) __obj.updateDynamic("sources")(sources)
     __obj.asInstanceOf[ICustomer]

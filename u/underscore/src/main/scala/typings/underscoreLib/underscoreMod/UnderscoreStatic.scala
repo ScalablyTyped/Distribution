@@ -134,8 +134,8 @@ trait UnderscoreStatic extends js.Object {
   /**
     * @see _.map
     **/
-  def collect[T](list: List[T], iterator: IterateePropertyShorthand): js.Array[T] = js.native
-  def collect[T](list: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[T] = js.native
+  def collect[T](list: List[T], iterator: IterateePropertyShorthand): js.Array[_] = js.native
+  def collect[T](list: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[_] = js.native
   /**
     * @see _.map
     **/
@@ -777,8 +777,8 @@ trait UnderscoreStatic extends js.Object {
   def lastIndexOf[T](array: List[T], value: T, from: scala.Double): scala.Double = js.native
   def map[T](list: List[T], iterator: IterateeMatcherShorthand[_]): js.Array[scala.Boolean] = js.native
   def map[T](list: List[T], iterator: IterateeMatcherShorthand[_], context: js.Any): js.Array[scala.Boolean] = js.native
-  def map[T](list: List[T], iterator: IterateePropertyShorthand): js.Array[T] = js.native
-  def map[T](list: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[T] = js.native
+  def map[T](list: List[T], iterator: IterateePropertyShorthand): js.Array[_] = js.native
+  def map[T](list: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[_] = js.native
   /**
     * Produces a new array of values by mapping each value in list through a transformation function
     * (iterator). If the native map method exists, it will be used instead. If list is a JavaScript
@@ -889,8 +889,8 @@ trait UnderscoreStatic extends js.Object {
     * @param hashFn Hash function for storing the result of `fn`.
     * @return Memoized version of `fn`.
     **/
-  def memoize(fn: js.Function): js.Function = js.native
-  def memoize(fn: js.Function, hashFn: js.Function1[/* repeated */ js.Any, java.lang.String]): js.Function = js.native
+  def memoize[T](fn: T): T = js.native
+  def memoize[T](fn: T, hashFn: js.Function1[/* repeated */ js.Any, java.lang.String]): T = js.native
   /**
     * @see _functions
     **/

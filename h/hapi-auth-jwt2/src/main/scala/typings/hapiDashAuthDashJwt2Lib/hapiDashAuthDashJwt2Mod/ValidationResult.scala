@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ValidationResult extends js.Object {
   var credentials: js.UndefOr[js.Any] = js.undefined
   var isValid: scala.Boolean
-  var response: js.UndefOr[hapiLib.hapiMod.ResponseObject] = js.undefined
+  var response: js.UndefOr[atHapiHapiLib.atHapiHapiMod.ResponseObject] = js.undefined
 }
 
 object ValidationResult {
@@ -16,7 +16,7 @@ object ValidationResult {
   def apply(
     isValid: scala.Boolean,
     credentials: js.Any = null,
-    response: hapiLib.hapiMod.ResponseObject = null
+    response: atHapiHapiLib.atHapiHapiMod.ResponseObject = null
   ): ValidationResult = {
     val __obj = js.Dynamic.literal(isValid = isValid)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.HitResult")
 @js.native
-class HitResult () extends js.Object {
+class HitResult () extends Base {
   /**
     * If the HitResult has a type of 'pixel', this property refers to the color of the pixel on the Raster that was hit.
     */

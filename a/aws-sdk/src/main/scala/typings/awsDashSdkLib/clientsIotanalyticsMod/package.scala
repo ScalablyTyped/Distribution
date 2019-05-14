@@ -12,6 +12,8 @@ package object clientsIotanalyticsMod {
   type AttributeNameMapping = org.scalablytyped.runtime.StringDictionary[AttributeName]
   type AttributeNames = js.Array[AttributeName]
   type BatchPutMessageErrorEntries = js.Array[BatchPutMessageErrorEntry]
+  type BucketKeyExpression = java.lang.String
+  type BucketName = java.lang.String
   type ChannelArn = java.lang.String
   type ChannelName = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -76,6 +78,8 @@ package object clientsIotanalyticsMod {
   type ErrorCode = java.lang.String
   type ErrorMessage = java.lang.String
   type FilterExpression = java.lang.String
+  type GlueDatabaseName = java.lang.String
+  type GlueTableName = java.lang.String
   type Image = java.lang.String
   type IncludeStatisticsFlag = scala.Boolean
   type IotEventsInputName = java.lang.String

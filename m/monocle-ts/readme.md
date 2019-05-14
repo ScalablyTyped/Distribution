@@ -1,7 +1,7 @@
 
 # Scala.js typings for monocle-ts
 
-Typings are for version 1.7.1
+Typings are for version 1.7.2
 
 ## Library description:
 A porting of scala monocle library to TypeScript

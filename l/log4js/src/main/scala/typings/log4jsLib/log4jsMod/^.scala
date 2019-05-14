@@ -15,7 +15,7 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def configure(config: Configuration): Log4js = js.native
   def configure(filename: java.lang.String): Log4js = js.native
-  def connectLogger(logger: Logger, options: log4jsLib.Anon_FormatLevel): js.Any = js.native
+  def connectLogger(logger: Logger, options: log4jsLib.Anon_Context): js.Any = js.native
   def getLogger(): Logger = js.native
   def getLogger(category: java.lang.String): Logger = js.native
   def shutdown(): scala.Unit | scala.Null = js.native

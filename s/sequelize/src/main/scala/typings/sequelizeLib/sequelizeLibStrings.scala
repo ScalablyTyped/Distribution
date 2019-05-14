@@ -25,7 +25,8 @@ object sequelizeLibStrings {
   sealed trait EXCLUSIVE extends js.Object
   
   @js.native
-  sealed trait FULLTEXT extends js.Object
+  sealed trait FULLTEXT
+    extends sequelizeLib.sequelizeMod.IndexType
   
   @js.native
   sealed trait IMMEDIATE extends js.Object
@@ -52,10 +53,12 @@ object sequelizeLibStrings {
   sealed trait SHARE extends js.Object
   
   @js.native
-  sealed trait SPATIAL extends js.Object
+  sealed trait SPATIAL
+    extends sequelizeLib.sequelizeMod.IndexType
   
   @js.native
-  sealed trait UNIQUE extends js.Object
+  sealed trait UNIQUE
+    extends sequelizeLib.sequelizeMod.IndexType
   
   @js.native
   sealed trait UPDATE extends js.Object

@@ -15,7 +15,7 @@ trait DescribeAgentResponse extends js.Object {
     */
   var CreationTime: js.UndefOr[Time] = js.undefined
   /**
-    * The time that the agent was last connected.
+    * The time that the agent last connected to DataSyc.
     */
   var LastConnectionTime: js.UndefOr[Time] = js.undefined
   /**

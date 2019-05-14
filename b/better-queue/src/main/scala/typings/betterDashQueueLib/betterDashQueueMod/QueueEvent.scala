@@ -15,6 +15,8 @@ import scala.scalajs.js.annotation._
   - betterDashQueueLib.betterDashQueueLibStrings.batch_finish
   - betterDashQueueLib.betterDashQueueLibStrings.batch_failed
   - betterDashQueueLib.betterDashQueueLibStrings.batch_progress
+  - betterDashQueueLib.betterDashQueueLibStrings.drain
+  - betterDashQueueLib.betterDashQueueLibStrings.empty
   - betterDashQueueLib.betterDashQueueLibStrings.error
 */
 trait QueueEvent extends js.Object

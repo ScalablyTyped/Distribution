@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Family extends js.Object {
-  var family: scala.Nothing
-  var size: scala.Nothing
-  var stretch: scala.Nothing
-  var style: scala.Nothing
-  var variant: scala.Nothing
-  var weight: scala.Nothing
+  var family: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontFamily'] */ js.Any
+  var size: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontSize'] */ js.Any
+  var stretch: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontStretch'] */ js.Any
+  var style: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontStyle'] */ js.Any
+  var variant: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontVariant'] */ js.Any
+  var weight: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontWeight'] */ js.Any
 }
 
 object Anon_Family {
   @scala.inline
   def apply(
-    family: scala.Nothing,
-    size: scala.Nothing,
-    stretch: scala.Nothing,
-    style: scala.Nothing,
-    variant: scala.Nothing,
-    weight: scala.Nothing
+    family: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontFamily'] */ js.Any,
+    size: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontSize'] */ js.Any,
+    stretch: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontStretch'] */ js.Any,
+    style: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontStyle'] */ js.Any,
+    variant: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontVariant'] */ js.Any,
+    weight: /* import warning: ImportType.apply Failed type conversion: jss.jss/css.CSSProperties['fontWeight'] */ js.Any
   ): Anon_Family = {
     val __obj = js.Dynamic.literal(family = family, size = size, stretch = stretch, style = style, variant = variant, weight = weight)
   

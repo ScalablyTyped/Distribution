@@ -12,6 +12,7 @@ class ScrollbarThumb protected ()
   def this(_direction: smoothDashScrollbarLib.trackDirectionMod.TrackDirection) = this()
   def this(_direction: smoothDashScrollbarLib.trackDirectionMod.TrackDirection, _minSize: scala.Double) = this()
   var _direction: js.Any = js.native
+  var _getStyle: js.Any = js.native
   var _minSize: js.Any = js.native
   /* CompleteClass */
   override var displaySize: scala.Double = js.native
@@ -26,7 +27,6 @@ class ScrollbarThumb protected ()
   override var offset: scala.Double = js.native
   /* CompleteClass */
   override var realSize: scala.Double = js.native
-  /* private */ def _getStyle(): js.Any = js.native
   /* CompleteClass */
   override def attachTo(track: stdLib.HTMLElement): scala.Unit = js.native
   /* CompleteClass */

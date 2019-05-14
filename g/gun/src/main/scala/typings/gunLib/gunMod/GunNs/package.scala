@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object GunNs {
   type AccessObject[T] = T | (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof T ]: any}
-    */ gunLib.gunLibStrings.AccessObject with js.Any)
+  {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : object}
+    */ gunLib.gunLibStrings.AccessObject with T)
   type AckCallback = js.Function1[/* ack */ gunLib.Anon_Err | gunLib.Anon_ErrOk, scala.Unit]
   /** Gun does not accept Array value, so we need extract to make types correct */
   type AllowArray[T] = ArrayOf[T] | T

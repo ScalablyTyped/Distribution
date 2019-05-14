@@ -14,8 +14,8 @@ object ringNs extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rings because its type T is not an array type */ rings: T
   ): fpDashTsLib.libRingMod.Ring[
     /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.getTupleRing with js.Any
+  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ring.Ring<infer A>? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleRing with T
   ] = js.native
   def negate[A](ring: fpDashTsLib.libRingMod.Ring[A]): js.Function1[/* a */ A, A] = js.native
 }

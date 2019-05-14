@@ -29,9 +29,13 @@ trait ICustomerCreationOptions
     */
   var email: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The customer’s full name or business name.
+    * The customer’s full name or business name. This can be unset by updating the value to null and then saving.
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The customer’s phone number. This can be unset by updating the value to null and then saving.
+    */
+  var phone: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The identifier of the plan to subscribe the customer to. If provided, the returned customer object will have a list of subscriptions
     * that the customer is currently subscribed to. If you subscribe a customer to a plan without a free trial, the customer must have a
@@ -78,6 +82,7 @@ object ICustomerCreationOptions {
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
     name: java.lang.String = null,
+    phone: java.lang.String = null,
     plan: java.lang.String = null,
     quantity: scala.Int | scala.Double = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
@@ -95,6 +100,7 @@ object ICustomerCreationOptions {
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)

@@ -124,6 +124,9 @@ object fpDashTsLibStrings {
   sealed trait This extends js.Object
   
   @js.native
+  sealed trait Traced extends js.Object
+  
+  @js.native
   sealed trait Tree extends js.Object
   
   @js.native
@@ -157,6 +160,9 @@ object fpDashTsLibStrings {
   sealed trait getStructSetoid extends js.Object
   
   @js.native
+  sealed trait getStructShow extends js.Object
+  
+  @js.native
   sealed trait getTupleMonoid extends js.Object
   
   @js.native
@@ -170,6 +176,9 @@ object fpDashTsLibStrings {
   
   @js.native
   sealed trait getTupleSetoid extends js.Object
+  
+  @js.native
+  sealed trait getTupleShow extends js.Object
   
   @js.native
   sealed trait sequenceS extends js.Object
@@ -253,6 +262,8 @@ object fpDashTsLibStrings {
   @scala.inline
   def This: This = "This".asInstanceOf[This]
   @scala.inline
+  def Traced: Traced = "Traced".asInstanceOf[Traced]
+  @scala.inline
   def Tree: Tree = "Tree".asInstanceOf[Tree]
   @scala.inline
   def Tuple: Tuple = "Tuple".asInstanceOf[Tuple]
@@ -275,6 +286,8 @@ object fpDashTsLibStrings {
   @scala.inline
   def getStructSetoid: getStructSetoid = "getStructSetoid".asInstanceOf[getStructSetoid]
   @scala.inline
+  def getStructShow: getStructShow = "getStructShow".asInstanceOf[getStructShow]
+  @scala.inline
   def getTupleMonoid: getTupleMonoid = "getTupleMonoid".asInstanceOf[getTupleMonoid]
   @scala.inline
   def getTupleOrd: getTupleOrd = "getTupleOrd".asInstanceOf[getTupleOrd]
@@ -284,6 +297,8 @@ object fpDashTsLibStrings {
   def getTupleSemigroup: getTupleSemigroup = "getTupleSemigroup".asInstanceOf[getTupleSemigroup]
   @scala.inline
   def getTupleSetoid: getTupleSetoid = "getTupleSetoid".asInstanceOf[getTupleSetoid]
+  @scala.inline
+  def getTupleShow: getTupleShow = "getTupleShow".asInstanceOf[getTupleShow]
   @scala.inline
   def sequenceS: sequenceS = "sequenceS".asInstanceOf[sequenceS]
 }

@@ -19,5 +19,6 @@ object constNs extends js.Object {
   def getApplicative[L](M: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Const, L] = js.native
   def getApply[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libApplyMod.Apply2C[fpDashTsLib.fpDashTsLibStrings.Const, L] = js.native
   def getSetoid[L, A](S: fpDashTsLib.libSetoidMod.Setoid[L]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libConstMod.Const[L, A]] = js.native
+  def getShow[L, A](S: fpDashTsLib.libShowMod.Show[L]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libConstMod.Const[L, A]] = js.native
 }
 

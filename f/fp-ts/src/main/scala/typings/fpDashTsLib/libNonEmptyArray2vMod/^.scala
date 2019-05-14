@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val URI: fpDashTsLib.fpDashTsLibStrings.NonEmptyArray2v = js.native
   val nonEmptyArray: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[URI, scala.Double]) with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[URI, scala.Double]) = js.native
+  def cons[A](a: A, as: fpDashTsLib.libArrayMod.Global.Array[A]): NonEmptyArray[A] = js.native
+  def copy[A](nea: NonEmptyArray[A]): NonEmptyArray[A] = js.native
   def filter[A](nea: NonEmptyArray[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
   def filterWithIndex[A](nea: NonEmptyArray[A], predicate: js.Function2[/* i */ scala.Double, /* a */ A, scala.Boolean]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
   @JSName("filter")
@@ -26,6 +28,7 @@ object ^ extends js.Object {
   def fromNonEmptyArray[A](as: fpDashTsLib.libArrayMod.Global.Array[A] with fpDashTsLib.Anon_0A[A]): NonEmptyArray[A] = js.native
   def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[NonEmptyArray[A]] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[NonEmptyArray[A]] = js.native
+  def getShow[A](S: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[NonEmptyArray[A]] = js.native
   def group[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function1[
     /* as */ fpDashTsLib.libArrayMod.Global.Array[A], 
     fpDashTsLib.libArrayMod.Global.Array[NonEmptyArray[A]]
@@ -41,6 +44,9 @@ object ^ extends js.Object {
   def make[A](head: A, tail: fpDashTsLib.libArrayMod.Global.Array[A]): NonEmptyArray[A] = js.native
   def max[A](ord: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[/* nea */ NonEmptyArray[A], A] = js.native
   def min[A](ord: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[/* nea */ NonEmptyArray[A], A] = js.native
+  def modifyAt[A](nea: NonEmptyArray[A], i: scala.Double, f: js.Function1[/* a */ A, A]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
+  def reverse[A](nea: NonEmptyArray[A]): NonEmptyArray[A] = js.native
+  def snoc[A](as: fpDashTsLib.libArrayMod.Global.Array[A], a: A): NonEmptyArray[A] = js.native
   def sort[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[/* nea */ NonEmptyArray[A], NonEmptyArray[A]] = js.native
   def tail[A](nea: NonEmptyArray[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def updateAt[A](i: scala.Double, a: A, nea: NonEmptyArray[A]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native

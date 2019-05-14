@@ -11,7 +11,7 @@ trait Ec2Config extends js.Object {
     */
   var SecurityGroupArns: Ec2SecurityGroupArnList
   /**
-    * The ARN of the subnet that the Amazon EC2 resource belongs in. 
+    * The ARN of the subnet and the security group that DataSync uses to access the target EFS file system.
     */
   var SubnetArn: Ec2SubnetArn
 }

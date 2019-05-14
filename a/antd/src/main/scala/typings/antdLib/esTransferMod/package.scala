@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esTransferMod {
-  type TransferRender = js.Function1[/* record */ TransferItem, reactLib.reactMod.ReactNode]
+  type RenderResult = reactLib.reactMod.ReactElement[js.Any] | RenderResultObject | java.lang.String | scala.Null
+  type TransferRender = js.Function1[/* item */ TransferItem, RenderResult]
 }

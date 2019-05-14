@@ -208,6 +208,13 @@ trait Sharp
     */
   def metadata(callback: js.Function2[/* err */ stdLib.Error, /* metadata */ Metadata, scala.Unit]): Sharp = js.native
   /**
+    * Transforms the image using brightness, saturation and hue rotation.
+    * @param options describes the modulation
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def modulate(): Sharp = js.native
+  def modulate(options: sharpLib.Anon_Brightness): Sharp = js.native
+  /**
     * Produce the "negative" of the image.
     * @param negate true to enable and false to disable (defaults to true)
     * @returns A sharp instance that can be used to chain operations

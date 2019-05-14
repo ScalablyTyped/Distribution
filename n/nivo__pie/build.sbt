@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "nivo__pie"
-version := "0.55.0-9324b3"
+version := "0.55.0-1993a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
-  "org.scalablytyped" %%% "nivo__core" % "0.55.0-b5a48e",
-  "org.scalablytyped" %%% "nivo__legends" % "0.55.0-44a2dc",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-a9badf",
+  "org.scalablytyped" %%% "nivo__core" % "0.55.0-4664fa",
+  "org.scalablytyped" %%% "nivo__legends" % "0.55.0-263a45",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

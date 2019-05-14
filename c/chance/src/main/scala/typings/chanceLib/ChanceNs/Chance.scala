@@ -36,7 +36,7 @@ trait Chance extends Seeded {
   def birthday_Date(): stdLib.Date = js.native
   // Basics
   def bool(): scala.Boolean = js.native
-  def bool(opts: Options): scala.Boolean = js.native
+  def bool(opts: chanceLib.Anon_Likelihood): scala.Boolean = js.native
   // Helpers
   def capitalize(str: java.lang.String): java.lang.String = js.native
   // Finance
@@ -80,7 +80,14 @@ trait Chance extends Seeded {
   def domain(): java.lang.String = js.native
   def domain(opts: Options): java.lang.String = js.native
   def email(): java.lang.String = js.native
-  def email(opts: Options): java.lang.String = js.native
+  def email(
+    opts: chanceLib.AtLeastOneKey[
+      EmailOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'length' | 'domain' ]: std.Pick<chance.Chance.EmailOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def euro(): java.lang.String = js.native
   def euro(opts: Options): java.lang.String = js.native
   def exp(): java.lang.String = js.native
@@ -91,7 +98,14 @@ trait Chance extends Seeded {
   def exp_year(opts: Options): java.lang.String = js.native
   def fbid(): java.lang.String = js.native
   def first(): java.lang.String = js.native
-  def first(opts: Options): java.lang.String = js.native
+  def first(
+    opts: chanceLib.AtLeastOneKey[
+      FirstNameOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'gender' | 'nationality' ]: std.Pick<chance.Chance.FirstNameOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def floating(): scala.Double = js.native
   def floating(opts: Options): scala.Double = js.native
   def gender(): java.lang.String = js.native
@@ -107,20 +121,27 @@ trait Chance extends Seeded {
   def hour(): scala.Double = js.native
   def hour(opts: Options): scala.Double = js.native
   def integer(): scala.Double = js.native
-  def integer(opts: Options): scala.Double = js.native
+  def integer(
+    opts: chanceLib.AtLeastOneKey[
+      IntegerOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'min' | 'max' ]: std.Pick<chance.Chance.IntegerOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): scala.Double = js.native
   def ip(): java.lang.String = js.native
   def ipv6(): java.lang.String = js.native
   def klout(): java.lang.String = js.native
   def last(): java.lang.String = js.native
-  def last(opts: Options): java.lang.String = js.native
+  def last(opts: LastNameOptions): java.lang.String = js.native
   def latitude(): scala.Double = js.native
   def latitude(opts: Options): scala.Double = js.native
   def letter(): java.lang.String = js.native
   def letter(opts: Options): java.lang.String = js.native
   def locale(): java.lang.String = js.native
-  def locale(opts: LocaleOptions): java.lang.String = js.native
-  def locales(): java.lang.String = js.native
-  def locales(opts: LocaleOptions): java.lang.String = js.native
+  def locale(opts: chanceLib.Anon_Region): java.lang.String = js.native
+  def locales(): js.Array[java.lang.String] = js.native
+  def locales(opts: chanceLib.Anon_Region): js.Array[java.lang.String] = js.native
   def longitude(): scala.Double = js.native
   def longitude(opts: Options): scala.Double = js.native
   def mersenne_twister(): js.Any = js.native
@@ -135,12 +156,26 @@ trait Chance extends Seeded {
   def n[T](generator: js.Function0[T], count: scala.Double): js.Array[T] = js.native
   def n[T](generator: js.Function0[T], count: scala.Double, opts: Options): js.Array[T] = js.native
   def name(): java.lang.String = js.native
-  def name(opts: Options): java.lang.String = js.native
+  def name(
+    opts: chanceLib.AtLeastOneKey[
+      NameOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof chance.Chance.NameOptions ]: std.Pick<chance.Chance.NameOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def name_prefix(): java.lang.String = js.native
-  def name_prefix(opts: Options): java.lang.String = js.native
+  def name_prefix(
+    opts: chanceLib.AtLeastOneKey[
+      PrefixOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof chance.Chance.PrefixOptions ]: std.Pick<chance.Chance.PrefixOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def name_prefixes(): js.Array[Name] = js.native
   def name_suffix(): java.lang.String = js.native
-  def name_suffix(opts: Options): java.lang.String = js.native
+  def name_suffix(opts: SuffixOptions): java.lang.String = js.native
   def natural(): scala.Double = js.native
   def natural(opts: Options): scala.Double = js.native
   def normal(): scala.Double = js.native
@@ -165,7 +200,14 @@ trait Chance extends Seeded {
   def pickset[T](arr: js.Array[T], count: scala.Double): js.Array[T] = js.native
   def postal(): java.lang.String = js.native
   def prefix(): java.lang.String = js.native
-  def prefix(opts: Options): java.lang.String = js.native
+  def prefix(
+    opts: chanceLib.AtLeastOneKey[
+      PrefixOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof chance.Chance.PrefixOptions ]: std.Pick<chance.Chance.PrefixOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def profession(): java.lang.String = js.native
   def profession(opts: Options): java.lang.String = js.native
   def province(): java.lang.String = js.native
@@ -179,7 +221,14 @@ trait Chance extends Seeded {
   def `rpg_<union>`(dice: java.lang.String): js.Array[scala.Double] | scala.Double = js.native
   def second(): scala.Double = js.native
   def sentence(): java.lang.String = js.native
-  def sentence(opts: Options): java.lang.String = js.native
+  def sentence(
+    opts: chanceLib.AtLeastOneKey[
+      SentenceOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'words' | 'punctuation' ]: std.Pick<chance.Chance.SentenceOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def set[T](key: java.lang.String, values: js.Array[T]): js.Any = js.native
   @JSName("set")
   def set_armed_forces(key: chanceLib.chanceLibStrings.armed_forces, values: js.Array[java.lang.String]): js.Any = js.native
@@ -212,9 +261,16 @@ trait Chance extends Seeded {
   def street_suffix(): Name = js.native
   def street_suffixes(): js.Array[Name] = js.native
   def string(): java.lang.String = js.native
-  def string(opts: Options): java.lang.String = js.native
+  def string(
+    opts: chanceLib.AtLeastOneKey[
+      StringOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'length' | 'pool' ]: std.Pick<chance.Chance.StringOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def suffix(): java.lang.String = js.native
-  def suffix(opts: Options): java.lang.String = js.native
+  def suffix(opts: SuffixOptions): java.lang.String = js.native
   def syllable(): java.lang.String = js.native
   def syllable(opts: Options): java.lang.String = js.native
   def timestamp(): scala.Double = js.native
@@ -226,11 +282,25 @@ trait Chance extends Seeded {
   def unique[T](generator: js.Function0[T], count: scala.Double): js.Array[T] = js.native
   def unique[T](generator: js.Function0[T], count: scala.Double, opts: Options): js.Array[T] = js.native
   def url(): java.lang.String = js.native
-  def url(opts: Options): java.lang.String = js.native
+  def url(
+    opts: chanceLib.AtLeastOneKey[
+      UrlOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'protocol' | 'domain' | 'domain_prefix' | 'path' | 'extensions' ]: std.Pick<chance.Chance.UrlOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def weekday(opts: Options): chanceLib.chanceLibStrings.Monday | chanceLib.chanceLibStrings.Tuesday | chanceLib.chanceLibStrings.Wednesday | chanceLib.chanceLibStrings.Thursday | chanceLib.chanceLibStrings.Friday | chanceLib.chanceLibStrings.Saturday | chanceLib.chanceLibStrings.Sunday = js.native
   def weighted[T](values: js.Array[T], weights: js.Array[scala.Double]): T = js.native
   def word(): java.lang.String = js.native
-  def word(opts: Options): java.lang.String = js.native
+  def word(
+    opts: chanceLib.AtLeastOneKey[
+      WordOptions, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in 'length' | 'syllables' | 'capitalize' ]: std.Pick<chance.Chance.WordOptions, K>}
+    */ chanceLib.chanceLibStrings.Chance with js.Any
+    ]
+  ): java.lang.String = js.native
   def wp7_anid(): java.lang.String = js.native
   def wp8_anid2(): java.lang.String = js.native
   def year(): java.lang.String = js.native

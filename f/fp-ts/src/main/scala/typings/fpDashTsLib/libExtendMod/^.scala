@@ -313,6 +313,24 @@ object ^ extends js.Object {
     ]
   ] = js.native
   @JSName("duplicate")
+  def duplicate_Traced(E: Extend2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* ma */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ]
+  ] = js.native
+  @JSName("duplicate")
+  def duplicate_Traced[L](E: Extend2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* ma */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      L, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+    ]
+  ] = js.native
+  @JSName("duplicate")
   def duplicate_Tree(E: Extend1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* ma */ fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _], 
     fpDashTsLib.libHKTMod.Type[

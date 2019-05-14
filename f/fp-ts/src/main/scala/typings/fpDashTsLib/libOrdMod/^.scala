@@ -23,8 +23,8 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param ords because its type T is not an array type */ ords: T
   ): Ord[
     /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.getTupleOrd with js.Any
+  {[ K in keyof T ]: T[K] extends fp-ts.fp-ts/lib/Ord.Ord<infer A>? any : never}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleOrd with T
   ] = js.native
   def greaterThan[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def greaterThanOrEq[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native

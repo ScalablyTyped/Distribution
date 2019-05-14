@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 6.38.1
+Typings are for version 6.38.3
 
 ## Library description:
 Office UI Fabric utilities for building React components.
@@ -220,8 +220,10 @@ These comments are from the typescript definitions and might be useful:
  * @public
  */
 /**
- * Helper to get the window object. Note that in popup scenarios the window object
- * may not be the window use ex
+ * Helper to get the window object. The helper will make sure to use a cached variable
+ * of "window", to avoid overhead and memory leaks in IE11. Note that in popup scenarios the
+ * window object won't match the "global" window object, and for these scenarios, you should
+ * pass in an element hosted within the popup.
  *
  * @public
  */

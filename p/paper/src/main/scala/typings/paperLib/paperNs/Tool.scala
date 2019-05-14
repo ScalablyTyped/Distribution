@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Tool")
 @js.native
-class Tool () extends js.Object {
+class Tool () extends Base {
   /**
     *
     */

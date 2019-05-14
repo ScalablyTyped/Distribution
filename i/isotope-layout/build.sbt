@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "isotope-layout"
-version := "3.0-dt-20190222Z-6e7be2"
+version := "3.0-dt-20190513Z-3c16df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

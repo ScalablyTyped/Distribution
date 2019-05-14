@@ -18,6 +18,10 @@ trait DescribeLocationNfsResponse extends js.Object {
     * The URL of the source NFS location that was described.
     */
   var LocationUri: js.UndefOr[LocationUri] = js.undefined
+  /**
+    * The NFS mount options that DataSync used to mount your NFS share.
+    */
+  var MountOptions: js.UndefOr[NfsMountOptions] = js.undefined
   var OnPremConfig: js.UndefOr[OnPremConfig] = js.undefined
 }
 
@@ -27,12 +31,14 @@ object DescribeLocationNfsResponse {
     CreationTime: Time = null,
     LocationArn: LocationArn = null,
     LocationUri: LocationUri = null,
+    MountOptions: NfsMountOptions = null,
     OnPremConfig: OnPremConfig = null
   ): DescribeLocationNfsResponse = {
     val __obj = js.Dynamic.literal()
     if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
     if (LocationArn != null) __obj.updateDynamic("LocationArn")(LocationArn)
     if (LocationUri != null) __obj.updateDynamic("LocationUri")(LocationUri)
+    if (MountOptions != null) __obj.updateDynamic("MountOptions")(MountOptions)
     if (OnPremConfig != null) __obj.updateDynamic("OnPremConfig")(OnPremConfig)
     __obj.asInstanceOf[DescribeLocationNfsResponse]
   }

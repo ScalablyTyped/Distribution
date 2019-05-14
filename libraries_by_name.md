@@ -257,6 +257,7 @@
 | [app-root-path](./a/app-root-path) | Determine an app's root path from anywhere inside  | root, path, utility, util, node, module, modules, node_modules, require, app |
 | [appdmg](./a/appdmg) | Generate beautiful DMG-images for your OS X applic | - |
 | [appframework](./a/appframework) | - | - |
+| [apple-mapkit-js](./a/apple-mapkit-js) | An NPM installable package of Apple's Mapkit JS | apple, mapkit |
 | [applepayjs](./a/applepayjs) | - | - |
 | [appletvjs](./a/appletvjs) | - | - |
 | [applicationinsights](./a/applicationinsights) | Microsoft Application Insights module for Node.js | exception monitoring, request monitoring, performance monitoring, application insights, microsoft, azure, cloud, tracing, telemetry, analytics, apm |
@@ -1802,6 +1803,7 @@
 | [fpsmeter](./f/fpsmeter) | Sexy, fast, and themable FPS meter. | - |
 | [frac](./f/frac) | Rational approximation with bounded denominator | math, fraction, rational, approximation |
 | [framebus](./f/framebus) | Framebus allows you to easily send messages across | - |
+| [framesync](./f/framesync) | A Unity-inspired render loop for JavaScript | animation, raf |
 | [franc](./f/franc) | Detect the language of text | natural, language, writing, system, detect, guess |
 | [frctl__fractal](./f/frctl__fractal) | A tool to help you build and document web componen | - |
 | [freedom](./f/freedom) | Embracing a distributed web | - |
@@ -2167,6 +2169,7 @@
 | [graphql-tools](./g/graphql-tools) | Useful tools to create and manipulate GraphQL sche | GraphQL, Apollo, JavaScript, TypeScript, Mock, Schema, Schema Language, Tools |
 | [graphql-type-json](./g/graphql-type-json) | JSON scalar types for GraphQL.js | graphql |
 | [graphql-type-uuid](./g/graphql-type-uuid) | UUID scalar type for GraphQL.js | graphql, uuid |
+| [graphql-upload](./g/graphql-upload) | Middleware and an Upload scalar to add support for | graphql, upload, file, multipart, server, koa, express, apollo, esm, mjs |
 | [graphviz](./g/graphviz) | Node.js interface to the GraphViz graphing tool | graphviz, dot |
 | [grasp](./g/grasp) | JavaScript structural search, replace, and refacto | javascript, search, replace, refactor, structural, ast |
 | [gravatar](./g/gravatar) | Gravatar Node.js library | gravatar, avatar, package.json |
@@ -2354,6 +2357,7 @@
 | [hashset](./h/hashset) | A simple hash set in JavaScript | HashSet, JavaScript, Node |
 | [hashtable](./h/hashtable) | Native HashTable and ES6 compatible Map for Node.j | hash, map, hashmap, hashtable, container |
 | [hashtag-regex](./h/hashtag-regex) | A regular expression to match hashtag identifiers  | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji, hashtag, hashtags |
+| [hast-format](./h/hast-format) | - | - |
 | [hat](./h/hat) | generate random IDs and avoid collisions | id, uid, uuid, random, hat, rack, unique |
 | [haversine](./h/haversine) | A simple haversine module | haversine, distance, coordinates, geolocation |
 | [hbs](./h/hbs) | Express.js template engine plugin for Handlebars | - |
@@ -2378,6 +2382,7 @@
 | [hexo-fs](./h/hexo-fs) | File system module for Hexo. | file, file system, fs, hexo |
 | [hexo-log](./h/hexo-log) | Logger for Hexo | website, blog, cms, framework, hexo |
 | [hexo-util](./h/hexo-util) | Utilities for Hexo. | hexo, util, utilities |
+| [hey-listen](./h/hey-listen) | Warning and invariant dev-ex messaging. | warning, invariant |
 | [hibp](./h/hibp) | A Promise-based API for querying the 'Have I been  | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
 | [highcharts](./h/highcharts) | JavaScript charting framework | charts, dataviz, graphs, visualization, data, browserify, webpack |
 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng | angular |
@@ -4271,6 +4276,7 @@
 | [oboe](./o/oboe) | Oboe.js reads json, giving you the objects as they | json, parser, stream, progressive, http, sax, event, emitter, async, browser |
 | [observe-js](./o/observe-js) | observe-js is a library for observing changes on J | - |
 | [oclazyload](./o/oclazyload) | Load modules on demand (lazy load) with angularJS | lazy load, lazy-load, load on demand, module, angular, angularJS |
+| [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti | octokit, github, api, rest |
 | [octokit__rest](./o/octokit__rest) | GitHub REST API client for Node.js | octokit, github, rest, api-client |
 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s | - |
 | [oembed-parser](./o/oembed-parser) | Get oEmbed data from given URL. | oembed, extractor, parser, util |
@@ -4622,9 +4628,14 @@
 | [polymer](./p/polymer) | Pre-processor for the Harp APF | - |
 | [polymer-ts](./p/polymer-ts) | Polymer 1.0 for TypeScript | polymer, typescript |
 | [popcorn](./p/popcorn) | Pop up made easy | - |
+| [popmotion](./p/popmotion) | A functional, reactive motion library. | animation, ux, ui, popmotion, canvas animation, dom animation, dom, pointer tracking, mouse, mouse tracking, touch, touch tracking, physics, interaction, interface, svg |
+| [popmotion-pose](./p/popmotion-pose) | A declarative animation library for HTML and SVG | animation, dom, declarative, popmotion |
+| [popmotion__easing](./p/popmotion__easing) | Easing functions, modifiers and generators compati | animation, ux, ui, popmotion, canvas animation, dom animation, dom, physics, interaction, interface |
+| [popmotion__popcorn](./p/popmotion__popcorn) | Utility functions for animation and interactions. | animation, raf |
 | [popper_dot_js](./p/popper_dot_js) | A kickass library to manage your poppers | popperjs, component, drop, tooltip, popover, position, attached |
 | [portfinder](./p/portfinder) | A simple tool to find an open port on the current  | http, ports, utilities |
 | [portscanner](./p/portscanner) | Asynchronous port scanner for Node.js | portscanner, port, scanner, checker, status |
+| [pose-core](./p/pose-core) | Factory for Pose animation state machines | animation, dom, declarative, popmotion |
 | [positive-zero](./p/positive-zero) | Check if a number is positive zero | number, is, check, detect, positive, zero |
 | [postal](./p/postal) | Pub/Sub library providing wildcard subscriptions,  | pub/sub, pub, sub, messaging, message, bus, event, mediator, broker, envelope |
 | [postcss](./p/postcss) | Tool for transforming styles with JS plugins | css, postcss, rework, preprocessor, parser, source map, transform, manipulation, transpiler |
@@ -5228,6 +5239,7 @@
 | [react-popper](./r/react-popper) | React wrapper around Popper.js | react, react-popper, popperjs, component, drop, tooltip, popover |
 | [react-popper-tooltip](./r/react-popper-tooltip) | React tooltip library built around react-popper | react, tooltip, popover, overlay, react-tooltip, react-popper |
 | [react-portal](./r/react-portal) | To make your life with React Portals easier. | react, react-component, modal, lightbox, react-portal, portal, transportation |
+| [react-pose](./r/react-pose) | A declarative animation library for React | animation, dom, declarative, popmotion, react, react animation |
 | [react-primitives](./r/react-primitives) | Primitive React Interfaces Across Targets | react |
 | [react-props-decorators](./r/react-props-decorators) | Define props of React components by ES7 decorators | - |
 | [react-qr-reader](./r/react-qr-reader) | A react component for reading QR codes from the we | react, qr, qrcode, qrreader |
@@ -5693,6 +5705,7 @@
 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker | store, broker, message broker, key value server, session, socketcluster |
 | [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine | broker, cluster, realtime, socket, engine, socketcluster |
 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster | channel, socketcluster, pubsub, publish, subscribe |
+| [sc-errors](./s/sc-errors) | Error types for use throughout SocketCluster | errors, socketcluster |
 | [sc-framework-health-check](./s/sc-framework-health-check) | Health check plugin for SocketCluster. | socketcluster, health, check |
 | [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes. | socketcluter, reboot, reload, monitor, debugging |
 | [scalike](./s/scalike) | - | immutable, data, datastructure, functional, collection, stateless, scala, monad, option, maybe, either, future |
@@ -6123,11 +6136,13 @@
 | [strophe_dot_js](./s/strophe_dot_js) | Strophe.js is an XMPP library for JavaScript | xmpp, message, bosh, websocket, browser |
 | [strophejs-plugin-roster](./s/strophejs-plugin-roster) | A strophe.js plugin for Roster Versioning (XEP-023 | - |
 | [structured-source](./s/structured-source) | Provides StructuredSource and functionality for co | location, range, abstract, syntax, tree |
+| [style-value-types](./s/style-value-types) | Parsers, transformers and tests for special value  | css, svg, hex, rgba, hsla |
 | [styled-components](./s/styled-components) | Visual primitives for the component age. Use the b | react, css, css-in-js, styled-components, babel-macro, babel-macros, styling |
 | [styled-jsx](./s/styled-jsx) | Full CSS support for JSX without compromises | babel-plugin-macros, zeit, css-in-js, css |
 | [styled-react-modal](./s/styled-react-modal) | A React modal built with styled-components. | react-modal, styled-components, modal, react |
 | [styled-system](./s/styled-system) | Responsive, theme-based style props for building d | react, css-in-js, styled-components, emotion |
 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components | - |
+| [stylefire](./s/stylefire) | Performant, simplified stylers for CSS, SVG, path  | css, svg, svg, path, scroll, animation |
 | [stylelint](./s/stylelint) | A mighty, modern CSS linter. | css, less, sass, scss, sugarss, lint, linter, stylelint |
 | [stylelint-webpack-plugin](./s/stylelint-webpack-plugin) | A stylelint plugin for webpack | stylelint, lint, linter, node-sass, webpack, plugin, webpack-plugin |
 | [stylenames](./s/stylenames) | Improves usage of html inline styles in javascript | inline-styles, styles, es6, middleware |
@@ -6372,6 +6387,7 @@
 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
 | [tryer](./t/tryer) | Because everyone loves a tryer | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
+| [ts-essentials](./t/ts-essentials) | All essential Typescript types in one place | typescript, types, essentials |
 | [ts-invariant](./t/ts-invariant) | TypeScript implementation of invariant(condition,  | invariant, assertion, precondition, TypeScript |
 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript | mock, typescript, tests, fake, stub, spy, javascript |
 | [ts-nameof](./t/ts-nameof) | nameof in TypeScript | nameof, typescript, transformer, custom-transformer |

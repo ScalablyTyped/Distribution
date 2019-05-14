@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT17DOT0` extends js.Object
+  sealed trait `3DOT18DOT1` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -113,6 +113,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait Matching extends js.Object
+  
+  @js.native
+  sealed trait NonReactStatics extends js.Object
   
   @js.native
   sealed trait PM extends js.Object
@@ -214,6 +217,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait `block-start` extends js.Object
+  
+  @js.native
+  sealed trait body extends js.Object
   
   @js.native
   sealed trait bold extends js.Object
@@ -327,6 +333,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait `checkbox-label` extends js.Object
+  
+  @js.native
+  sealed trait checkedKeys extends js.Object
   
   @js.native
   sealed trait checkmenuitem extends js.Object
@@ -595,6 +604,18 @@ object antdLibStrings {
   sealed trait gutter
     extends antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
+  
+  @js.native
+  sealed trait handleClear extends js.Object
+  
+  @js.native
+  sealed trait handleFilter extends js.Object
+  
+  @js.native
+  sealed trait handleSelect extends js.Object
+  
+  @js.native
+  sealed trait handleSelectAll extends js.Object
   
   @js.native
   sealed trait hanging extends js.Object
@@ -1843,13 +1864,15 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT17DOT0`: `3DOT17DOT0` = "3.17.0".asInstanceOf[`3DOT17DOT0`]
+  def `3DOT18DOT1`: `3DOT18DOT1` = "3.18.1".asInstanceOf[`3DOT18DOT1`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def Matching: Matching = "Matching".asInstanceOf[Matching]
+  @scala.inline
+  def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
   @scala.inline
   def PM: PM = "PM".asInstanceOf[PM]
   @scala.inline
@@ -1917,6 +1940,8 @@ object antdLibStrings {
   @scala.inline
   def `block-start`: `block-start` = "block-start".asInstanceOf[`block-start`]
   @scala.inline
+  def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
@@ -1978,6 +2003,8 @@ object antdLibStrings {
   def `checkbox-container`: `checkbox-container` = "checkbox-container".asInstanceOf[`checkbox-container`]
   @scala.inline
   def `checkbox-label`: `checkbox-label` = "checkbox-label".asInstanceOf[`checkbox-label`]
+  @scala.inline
+  def checkedKeys: checkedKeys = "checkedKeys".asInstanceOf[checkedKeys]
   @scala.inline
   def checkmenuitem: checkmenuitem = "checkmenuitem".asInstanceOf[checkmenuitem]
   @scala.inline
@@ -2116,6 +2143,14 @@ object antdLibStrings {
   def groupbox: groupbox = "groupbox".asInstanceOf[groupbox]
   @scala.inline
   def gutter: gutter = "gutter".asInstanceOf[gutter]
+  @scala.inline
+  def handleClear: handleClear = "handleClear".asInstanceOf[handleClear]
+  @scala.inline
+  def handleFilter: handleFilter = "handleFilter".asInstanceOf[handleFilter]
+  @scala.inline
+  def handleSelect: handleSelect = "handleSelect".asInstanceOf[handleSelect]
+  @scala.inline
+  def handleSelectAll: handleSelectAll = "handleSelectAll".asInstanceOf[handleSelectAll]
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   @scala.inline

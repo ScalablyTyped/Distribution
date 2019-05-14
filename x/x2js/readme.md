@@ -1,7 +1,7 @@
 
 # Scala.js typings for x2js
 
-Typings are for version 3.2.6
+Typings are for version 3.3.0
 
 ## Library description:
 Transforms between XML string and JavaScript object trees.

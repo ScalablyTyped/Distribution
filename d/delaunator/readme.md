@@ -1,7 +1,7 @@
 
 # Scala.js typings for delaunator
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 An incredibly fast JavaScript library for Delaunay triangulation of 2D points
@@ -35,11 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for delaunator 2.0
+// Type definitions for delaunator 3.0
 // Project: https://github.com/mapbox/delaunator#readme
 // Definitions by: Denis Carriere <https://github.com/DenisCarriere>
 //                 Bradley Odell <https://github.com/BTOdell>
+//                 Tobias Kraus <https://github.com/tobiaskraus>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 
 ```
 

@@ -10,22 +10,16 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait `@global` extends js.Object
   
   @js.native
-  sealed trait BreakpointValues extends js.Object
-  
-  @js.native
-  sealed trait ComponentsProps extends js.Object
-  
-  @js.native
   sealed trait ConsistentWith extends js.Object
+  
+  @js.native
+  sealed trait DialogContentTextProps extends js.Object
   
   @js.native
   sealed trait JS extends js.Object
   
   @js.native
-  sealed trait Overrides extends js.Object
-  
-  @js.native
-  sealed trait PartialTypeObject extends js.Object
+  sealed trait LinkProps extends js.Object
   
   @js.native
   sealed trait TypographyProps extends js.Object
@@ -66,6 +60,12 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
   sealed trait adornedEnd
     extends atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey
        with atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputClassKey
@@ -74,6 +74,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait adornedStart
     extends atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey
        with atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputClassKey
+  
+  @js.native
+  sealed trait `after-edge` extends js.Object
   
   @js.native
   sealed trait `align-content-xs-center`
@@ -136,6 +139,12 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait alphabetic extends js.Object
+  
+  @js.native
   sealed trait alternativeLabel
     extends atMaterialDashUiCoreLib.stepStepMod.StepClasskey
        with atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorClasskey
@@ -184,6 +193,12 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait asc
     extends atMaterialDashUiCoreLib.tableCellTableCellMod.SortDirection
+  
+  @js.native
+  sealed trait ascending extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait asterisk
@@ -252,6 +267,12 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.gridGridMod.GridItemsAlignment
   
   @js.native
+  sealed trait `before-edge` extends js.Object
+  
+  @js.native
+  sealed trait bevel extends js.Object
+  
+  @js.native
   sealed trait body
     extends atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellClassKey
   
@@ -264,6 +285,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait body2
     extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
        with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
+  
+  @js.native
+  sealed trait both extends js.Object
   
   @js.native
   sealed trait bottom
@@ -280,6 +304,9 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait buffer
     extends atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressClassKey
+  
+  @js.native
+  sealed trait butt extends js.Object
   
   @js.native
   sealed trait button
@@ -304,6 +331,9 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait centered
     extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
+  
+  @js.native
+  sealed trait central extends js.Object
   
   @js.native
   sealed trait checkbox
@@ -361,9 +391,6 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait clickableSecondary
     extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
-  
-  @js.native
-  sealed trait color extends js.Object
   
   @js.native
   sealed trait colorAction
@@ -475,6 +502,9 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
   
   @js.native
+  sealed trait copy extends js.Object
+  
+  @js.native
   sealed trait css extends js.Object
   
   @js.native
@@ -492,6 +522,9 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait dashedColorSecondary
     extends atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressClassKey
+  
+  @js.native
+  sealed trait date extends js.Object
   
   @js.native
   sealed trait default
@@ -547,8 +580,14 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.tableCellTableCellMod.SortDirection
   
   @js.native
+  sealed trait descending extends js.Object
+  
+  @js.native
   sealed trait determinate
     extends atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressClassKey
+  
+  @js.native
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait direction
@@ -765,6 +804,12 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelClasskey
   
   @js.native
+  sealed trait evenodd extends js.Object
+  
+  @js.native
+  sealed trait execute extends js.Object
+  
+  @js.native
   sealed trait expandIcon
     extends atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
   
@@ -784,6 +829,9 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait fab
     extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+  
+  @js.native
+  sealed trait `false` extends js.Object
   
   @js.native
   sealed trait filled
@@ -850,12 +898,6 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait fontFamily extends js.Object
-  
-  @js.native
-  sealed trait fontSize extends js.Object
-  
-  @js.native
   sealed trait fontSizeInherit
     extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
        with atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconClassKey
@@ -869,9 +911,6 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait fontSizeSmall
     extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
        with atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconClassKey
-  
-  @js.native
-  sealed trait fontWeight extends js.Object
   
   @js.native
   sealed trait footer
@@ -891,6 +930,12 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseClassKey
        with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
        with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
+  
+  @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
   
   @js.native
   sealed trait `grid-xs-1`
@@ -990,6 +1035,9 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
+  sealed trait hanging extends js.Object
+  
+  @js.native
   sealed trait head
     extends atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellClassKey
        with atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowClassKey
@@ -1045,6 +1093,9 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionClassKey
   
   @js.native
+  sealed trait ideographic extends js.Object
+  
+  @js.native
   sealed trait img
     extends atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey
   
@@ -1074,6 +1125,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait inherit
     extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
        with atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color
+  
+  @js.native
+  sealed trait initial extends js.Object
   
   @js.native
   sealed trait `inline`
@@ -1136,6 +1190,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait invisible
     extends atMaterialDashUiCoreLib.backdropBackdropMod.BackdropClassKey
        with atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
+  
+  @js.native
+  sealed trait isolated extends js.Object
   
   @js.native
   sealed trait item
@@ -1208,9 +1265,6 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait letterSpacing extends js.Object
-  
-  @js.native
   sealed trait lg
     extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
        with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
@@ -1225,15 +1279,27 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorClasskey
   
   @js.native
-  sealed trait lineHeight extends js.Object
-  
-  @js.native
   sealed trait lineHorizontal
     extends atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorClasskey
   
   @js.native
   sealed trait lineVertical
     extends atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorClasskey
+  
+  @js.native
+  sealed trait linearRGB extends js.Object
+  
+  @js.native
+  sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait list extends js.Object
+  
+  @js.native
+  sealed trait listbox extends js.Object
+  
+  @js.native
+  sealed trait location extends js.Object
   
   @js.native
   sealed trait ltr
@@ -1250,6 +1316,9 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.formControlFormControlMod.FormControlClassKey
   
   @js.native
+  sealed trait mathematical extends js.Object
+  
+  @js.native
   sealed trait md
     extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
        with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
@@ -1259,7 +1328,13 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaClassKey
   
   @js.native
+  sealed trait medial extends js.Object
+  
+  @js.native
   sealed trait medium extends js.Object
+  
+  @js.native
+  sealed trait menu extends js.Object
   
   @js.native
   sealed trait menuItem
@@ -1278,6 +1353,12 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
+  sealed trait miter extends js.Object
+  
+  @js.native
+  sealed trait mixed extends js.Object
+  
+  @js.native
   sealed trait modal
     extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
@@ -1286,11 +1367,17 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
+  sealed trait move extends js.Object
+  
+  @js.native
   sealed trait multiline
     extends atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey
        with atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseClassKey
        with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
        with atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputClassKey
+  
+  @js.native
+  sealed trait no extends js.Object
   
   @js.native
   sealed trait noWrap
@@ -1302,6 +1389,9 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.tableCellTableCellMod.Padding
        with atMaterialDashUiCoreLib.tableTableMod.Padding
        with atMaterialDashUiCoreLib.popoverPopoverMod.PopoverReference
+  
+  @js.native
+  sealed trait nonzero extends js.Object
   
   @js.native
   sealed trait normal
@@ -1365,6 +1455,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait onTouchStart extends js.Object
   
   @js.native
+  sealed trait other extends js.Object
+  
+  @js.native
   sealed trait outlined
     extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
        with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
@@ -1402,6 +1495,9 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait paddingNone
     extends atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellClassKey
+  
+  @js.native
+  sealed trait page extends js.Object
   
   @js.native
   sealed trait paper
@@ -1487,12 +1583,18 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait persistent extends js.Object
   
   @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
   sealed trait popper
     extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
   sealed trait popperInteractive
     extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
+  
+  @js.native
+  sealed trait popup extends js.Object
   
   @js.native
   sealed trait positionAbsolute
@@ -1563,6 +1665,12 @@ object atMaterialDashUiCoreLibStrings {
   
   @js.native
   sealed trait relative extends js.Object
+  
+  @js.native
+  sealed trait removals extends js.Object
+  
+  @js.native
+  sealed trait replace extends js.Object
   
   @js.native
   sealed trait required
@@ -1696,6 +1804,9 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Direction
   
   @js.native
+  sealed trait sRGB extends js.Object
+  
+  @js.native
   sealed trait scrollBody
     extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
@@ -1820,6 +1931,12 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
+  sealed trait spelling extends js.Object
+  
+  @js.native
+  sealed trait square extends js.Object
+  
+  @js.native
   sealed trait srOnly
     extends atMaterialDashUiCoreLib.typographyTypographyMod.Style
        with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
@@ -1834,6 +1951,9 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait static
     extends atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressClassKey
+  
+  @js.native
+  sealed trait step extends js.Object
   
   @js.native
   sealed trait sticky
@@ -1872,6 +1992,9 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
+  sealed trait sum extends js.Object
+  
+  @js.native
   sealed trait svg
     extends atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressClassKey
   
@@ -1883,9 +2006,18 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait temporary extends js.Object
   
   @js.native
+  sealed trait terminal extends js.Object
+  
+  @js.native
   sealed trait text
     extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
        with atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconClasskey
+  
+  @js.native
+  sealed trait `text-after-edge` extends js.Object
+  
+  @js.native
+  sealed trait `text-before-edge` extends js.Object
   
   @js.native
   sealed trait textColorInherit
@@ -1912,11 +2044,11 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait textTransform extends js.Object
-  
-  @js.native
   sealed trait tile
     extends atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileClassKey
+  
+  @js.native
+  sealed trait time extends js.Object
   
   @js.native
   sealed trait timeout
@@ -1998,6 +2130,12 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentClasskey
   
   @js.native
+  sealed trait tree extends js.Object
+  
+  @js.native
+  sealed trait `true` extends js.Object
+  
+  @js.native
   sealed trait underline
     extends atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey
        with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
@@ -2067,20 +2205,19 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
        with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
+  @js.native
+  sealed trait yes extends js.Object
+  
   @scala.inline
   def `@global`: `@global` = "@global".asInstanceOf[`@global`]
   @scala.inline
-  def BreakpointValues: BreakpointValues = "BreakpointValues".asInstanceOf[BreakpointValues]
-  @scala.inline
-  def ComponentsProps: ComponentsProps = "ComponentsProps".asInstanceOf[ComponentsProps]
-  @scala.inline
   def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
+  @scala.inline
+  def DialogContentTextProps: DialogContentTextProps = "DialogContentTextProps".asInstanceOf[DialogContentTextProps]
   @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
-  def Overrides: Overrides = "Overrides".asInstanceOf[Overrides]
-  @scala.inline
-  def PartialTypeObject: PartialTypeObject = "PartialTypeObject".asInstanceOf[PartialTypeObject]
+  def LinkProps: LinkProps = "LinkProps".asInstanceOf[LinkProps]
   @scala.inline
   def TypographyProps: TypographyProps = "TypographyProps".asInstanceOf[TypographyProps]
   @scala.inline
@@ -2098,9 +2235,15 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def addEndListener: addEndListener = "addEndListener".asInstanceOf[addEndListener]
   @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
   def adornedEnd: adornedEnd = "adornedEnd".asInstanceOf[adornedEnd]
   @scala.inline
   def adornedStart: adornedStart = "adornedStart".asInstanceOf[adornedStart]
+  @scala.inline
+  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
   @scala.inline
   def `align-content-xs-center`: `align-content-xs-center` = "align-content-xs-center".asInstanceOf[`align-content-xs-center`]
   @scala.inline
@@ -2132,6 +2275,10 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def alignRight: alignRight = "alignRight".asInstanceOf[alignRight]
   @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  @scala.inline
   def alternativeLabel: alternativeLabel = "alternativeLabel".asInstanceOf[alternativeLabel]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
@@ -2155,6 +2302,10 @@ object atMaterialDashUiCoreLibStrings {
   def animated: animated = "animated".asInstanceOf[animated]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def asterisk: asterisk = "asterisk".asInstanceOf[asterisk]
   @scala.inline
@@ -2188,11 +2339,17 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   @scala.inline
+  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  @scala.inline
+  def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def body1: body1 = "body1".asInstanceOf[body1]
   @scala.inline
   def body2: body2 = "body2".asInstanceOf[body2]
+  @scala.inline
+  def both: both = "both".asInstanceOf[both]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
@@ -2202,6 +2359,8 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   @scala.inline
+  def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
@@ -2209,6 +2368,8 @@ object atMaterialDashUiCoreLibStrings {
   def center: center = "center".asInstanceOf[center]
   @scala.inline
   def centered: centered = "centered".asInstanceOf[centered]
+  @scala.inline
+  def central: central = "central".asInstanceOf[central]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
@@ -2237,8 +2398,6 @@ object atMaterialDashUiCoreLibStrings {
   def clickablePrimary: clickablePrimary = "clickablePrimary".asInstanceOf[clickablePrimary]
   @scala.inline
   def clickableSecondary: clickableSecondary = "clickableSecondary".asInstanceOf[clickableSecondary]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
   @scala.inline
   def colorAction: colorAction = "colorAction".asInstanceOf[colorAction]
   @scala.inline
@@ -2274,6 +2433,8 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def css: css = "css".asInstanceOf[css]
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
@@ -2283,6 +2444,8 @@ object atMaterialDashUiCoreLibStrings {
   def dashedColorPrimary: dashedColorPrimary = "dashedColorPrimary".asInstanceOf[dashedColorPrimary]
   @scala.inline
   def dashedColorSecondary: dashedColorSecondary = "dashedColorSecondary".asInstanceOf[dashedColorSecondary]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -2306,7 +2469,11 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  @scala.inline
   def determinate: determinate = "determinate".asInstanceOf[determinate]
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def direction: direction = "direction".asInstanceOf[direction]
   @scala.inline
@@ -2400,6 +2567,10 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
+  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
+  @scala.inline
   def expandIcon: expandIcon = "expandIcon".asInstanceOf[expandIcon]
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
@@ -2409,6 +2580,8 @@ object atMaterialDashUiCoreLibStrings {
   def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
   @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
+  @scala.inline
+  def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def filled: filled = "filled".asInstanceOf[filled]
   @scala.inline
@@ -2432,23 +2605,21 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   @scala.inline
-  def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
-  @scala.inline
-  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
-  @scala.inline
   def fontSizeInherit: fontSizeInherit = "fontSizeInherit".asInstanceOf[fontSizeInherit]
   @scala.inline
   def fontSizeLarge: fontSizeLarge = "fontSizeLarge".asInstanceOf[fontSizeLarge]
   @scala.inline
   def fontSizeSmall: fontSizeSmall = "fontSizeSmall".asInstanceOf[fontSizeSmall]
   @scala.inline
-  def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
-  @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
   @scala.inline
   def formControl: formControl = "formControl".asInstanceOf[formControl]
   @scala.inline
   def fullWidth: fullWidth = "fullWidth".asInstanceOf[fullWidth]
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def `grid-xs-1`: `grid-xs-1` = "grid-xs-1".asInstanceOf[`grid-xs-1`]
   @scala.inline
@@ -2494,6 +2665,8 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
   @scala.inline
+  def hanging: hanging = "hanging".asInstanceOf[hanging]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
   @scala.inline
   def headline: headline = "headline".asInstanceOf[headline]
@@ -2516,6 +2689,8 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def iconOnly: iconOnly = "iconOnly".asInstanceOf[iconOnly]
   @scala.inline
+  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
   def imgFullHeight: imgFullHeight = "imgFullHeight".asInstanceOf[imgFullHeight]
@@ -2529,6 +2704,8 @@ object atMaterialDashUiCoreLibStrings {
   def indicator: indicator = "indicator".asInstanceOf[indicator]
   @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
+  def initial: initial = "initial".asInstanceOf[initial]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   @scala.inline
@@ -2551,6 +2728,8 @@ object atMaterialDashUiCoreLibStrings {
   def inset: inset = "inset".asInstanceOf[inset]
   @scala.inline
   def invisible: invisible = "invisible".asInstanceOf[invisible]
+  @scala.inline
+  def isolated: isolated = "isolated".asInstanceOf[isolated]
   @scala.inline
   def item: item = "item".asInstanceOf[item]
   @scala.inline
@@ -2582,19 +2761,25 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
   @scala.inline
-  def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
-  @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   @scala.inline
   def line: line = "line".asInstanceOf[line]
   @scala.inline
-  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
-  @scala.inline
   def lineHorizontal: lineHorizontal = "lineHorizontal".asInstanceOf[lineHorizontal]
   @scala.inline
   def lineVertical: lineVertical = "lineVertical".asInstanceOf[lineVertical]
+  @scala.inline
+  def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
   @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
   @scala.inline
@@ -2602,11 +2787,17 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def marginNormal: marginNormal = "marginNormal".asInstanceOf[marginNormal]
   @scala.inline
+  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  @scala.inline
   def md: md = "md".asInstanceOf[md]
   @scala.inline
   def media: media = "media".asInstanceOf[media]
   @scala.inline
+  def medial: medial = "medial".asInstanceOf[medial]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
+  def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def menuItem: menuItem = "menuItem".asInstanceOf[menuItem]
   @scala.inline
@@ -2616,15 +2807,25 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def mini: mini = "mini".asInstanceOf[mini]
   @scala.inline
+  def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
   def modal: modal = "modal".asInstanceOf[modal]
   @scala.inline
   def mountOnEnter: mountOnEnter = "mountOnEnter".asInstanceOf[mountOnEnter]
   @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def multiline: multiline = "multiline".asInstanceOf[multiline]
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
   @scala.inline
   def noWrap: noWrap = "noWrap".asInstanceOf[noWrap]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
@@ -2660,6 +2861,8 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
   @scala.inline
+  def other: other = "other".asInstanceOf[other]
+  @scala.inline
   def outlined: outlined = "outlined".asInstanceOf[outlined]
   @scala.inline
   def outlinedPrimary: outlinedPrimary = "outlinedPrimary".asInstanceOf[outlinedPrimary]
@@ -2675,6 +2878,8 @@ object atMaterialDashUiCoreLibStrings {
   def paddingDense: paddingDense = "paddingDense".asInstanceOf[paddingDense]
   @scala.inline
   def paddingNone: paddingNone = "paddingNone".asInstanceOf[paddingNone]
+  @scala.inline
+  def page: page = "page".asInstanceOf[page]
   @scala.inline
   def paper: paper = "paper".asInstanceOf[paper]
   @scala.inline
@@ -2718,9 +2923,13 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def persistent: persistent = "persistent".asInstanceOf[persistent]
   @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
   def popper: popper = "popper".asInstanceOf[popper]
   @scala.inline
   def popperInteractive: popperInteractive = "popperInteractive".asInstanceOf[popperInteractive]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def positionAbsolute: positionAbsolute = "positionAbsolute".asInstanceOf[positionAbsolute]
   @scala.inline
@@ -2756,6 +2965,10 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def required: required = "required".asInstanceOf[required]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
@@ -2785,6 +2998,8 @@ object atMaterialDashUiCoreLibStrings {
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @scala.inline
+  def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   @scala.inline
   def scrollBody: scrollBody = "scrollBody".asInstanceOf[scrollBody]
   @scala.inline
@@ -2842,6 +3057,10 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def `spacing-xs-8`: `spacing-xs-8` = "spacing-xs-8".asInstanceOf[`spacing-xs-8`]
   @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
+  def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def srOnly: srOnly = "srOnly".asInstanceOf[srOnly]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
@@ -2849,6 +3068,8 @@ object atMaterialDashUiCoreLibStrings {
   def start: start = "start".asInstanceOf[start]
   @scala.inline
   def static: static = "static".asInstanceOf[static]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def sticky: sticky = "sticky".asInstanceOf[sticky]
   @scala.inline
@@ -2866,13 +3087,21 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def subtitle2: subtitle2 = "subtitle2".asInstanceOf[subtitle2]
   @scala.inline
+  def sum: sum = "sum".asInstanceOf[sum]
+  @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
   @scala.inline
   def switchBase: switchBase = "switchBase".asInstanceOf[switchBase]
   @scala.inline
   def temporary: temporary = "temporary".asInstanceOf[temporary]
   @scala.inline
+  def terminal: terminal = "terminal".asInstanceOf[terminal]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  @scala.inline
+  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   @scala.inline
   def textColorInherit: textColorInherit = "textColorInherit".asInstanceOf[textColorInherit]
   @scala.inline
@@ -2886,9 +3115,9 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def textSecondary: textSecondary = "textSecondary".asInstanceOf[textSecondary]
   @scala.inline
-  def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
-  @scala.inline
   def tile: tile = "tile".asInstanceOf[tile]
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
@@ -2928,6 +3157,10 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def transition: transition = "transition".asInstanceOf[transition]
   @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
+  def `true`: `true` = "true".asInstanceOf[`true`]
+  @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline
   def underlineAlways: underlineAlways = "underlineAlways".asInstanceOf[underlineAlways]
@@ -2957,5 +3190,7 @@ object atMaterialDashUiCoreLibStrings {
   def xl: xl = "xl".asInstanceOf[xl]
   @scala.inline
   def xs: xs = "xs".asInstanceOf[xs]
+  @scala.inline
+  def yes: yes = "yes".asInstanceOf[yes]
 }
 

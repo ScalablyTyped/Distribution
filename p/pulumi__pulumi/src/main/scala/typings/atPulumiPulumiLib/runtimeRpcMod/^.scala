@@ -17,7 +17,10 @@ object ^ extends js.Object {
   def deserializeProperty(prop: js.Any): js.Any = js.native
   def resolveProperties(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    resolvers: stdLib.Record[java.lang.String, js.Function2[/* v */ _, /* isKnown */ scala.Boolean, scala.Unit]],
+    resolvers: stdLib.Record[
+      java.lang.String, 
+      js.Function3[/* v */ _, /* isKnown */ scala.Boolean, /* isSecret */ scala.Boolean, scala.Unit]
+    ],
     t: java.lang.String,
     name: java.lang.String,
     allProps: js.Any

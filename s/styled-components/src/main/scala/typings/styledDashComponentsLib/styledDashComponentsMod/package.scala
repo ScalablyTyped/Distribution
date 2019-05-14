@@ -77,6 +77,6 @@ package object styledDashComponentsMod {
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/pull/31945
   // and https://github.com/DefinitelyTyped/DefinitelyTyped/pull/32843
   type WithChildrenIfReactComponentClass[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */] = js.Object | styledDashComponentsLib.Anon_Children
-  type WithOptionalTheme[P /* <: styledDashComponentsLib.Anon_Theme[T] */, T] = P with styledDashComponentsLib.Anon_Theme[T]
+  type WithOptionalTheme[P /* <: styledDashComponentsLib.Anon_ThemeT[T] */, T] = P with styledDashComponentsLib.Anon_ThemeT[T]
   type WithThemeFnInterface[T /* <: js.Object */] = BaseWithThemeFnInterface[AnyIfEmpty[T]]
 }

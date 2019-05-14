@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeTaskResponse extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that was used to monitor and log events in the task. For more information on these groups, see Working with Log Groups and Log Streams in the Amazon CloudWatch User Guide. 
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that was used to monitor and log events in the task. For more information on these groups, see "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html" (Working with Log Groups and Log Streams) in the Amazon CloudWatch UserGuide.
     */
   var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   /**
@@ -31,6 +31,10 @@ trait DescribeTaskResponse extends js.Object {
     */
   var ErrorDetail: js.UndefOr[java.lang.String] = js.undefined
   /**
+    *  Specifies that the task excludes files in the transfer based on the specified pattern in the filter. Transfers all files in the task’s subdirectory, except files that match the filter that is set. 
+    */
+  var Excludes: js.UndefOr[FilterList] = js.undefined
+  /**
     * The name of the task that was described.
     */
   var Name: js.UndefOr[TagValue] = js.undefined
@@ -43,7 +47,7 @@ trait DescribeTaskResponse extends js.Object {
     */
   var SourceLocationArn: js.UndefOr[LocationArn] = js.undefined
   /**
-    * The status of the task that was described. For detailed information about sync statuses, see Understanding Sync Task Statuses.
+    * The status of the task that was described. For detailed information about task execution statuses, see "https://docs.aws.amazon.com/datasync/latest/userguide/working-with-tasks.html#understand-task-creation-statuses" (Understanding Task Statuses).
     */
   var Status: js.UndefOr[TaskStatus] = js.undefined
   /**
@@ -61,6 +65,7 @@ object DescribeTaskResponse {
     DestinationLocationArn: LocationArn = null,
     ErrorCode: java.lang.String = null,
     ErrorDetail: java.lang.String = null,
+    Excludes: FilterList = null,
     Name: TagValue = null,
     Options: Options = null,
     SourceLocationArn: LocationArn = null,
@@ -74,6 +79,7 @@ object DescribeTaskResponse {
     if (DestinationLocationArn != null) __obj.updateDynamic("DestinationLocationArn")(DestinationLocationArn)
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
     if (ErrorDetail != null) __obj.updateDynamic("ErrorDetail")(ErrorDetail)
+    if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     if (Options != null) __obj.updateDynamic("Options")(Options)
     if (SourceLocationArn != null) __obj.updateDynamic("SourceLocationArn")(SourceLocationArn)

@@ -424,6 +424,30 @@ trait Traversable2vComposition11[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: 
     ]
   ] = js.native
   @JSName("sequence")
+  def sequence_Traced(H: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* fga */ fpDashTsLib.libHKTMod.Type[
+      F, 
+      fpDashTsLib.libHKTMod.Type[G, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]]
+    ]
+  ] = js.native
+  @JSName("sequence")
+  def sequence_Traced[HL](H: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, HL]): js.Function1[
+    /* fga */ fpDashTsLib.libHKTMod.Type[
+      F, 
+      fpDashTsLib.libHKTMod.Type[G, fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, HL, _]]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      HL, 
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]]
+    ]
+  ] = js.native
+  @JSName("sequence")
   def sequence_Tree(H: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* fga */ fpDashTsLib.libHKTMod.Type[
       F, 
@@ -947,6 +971,32 @@ trait Traversable2vComposition11[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: 
     ], 
     fpDashTsLib.libHKTMod.Type2[
       fpDashTsLib.fpDashTsLibStrings.These, 
+      HL, 
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]]
+    ]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Traced(H: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* fga */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
+      _, 
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]]
+    ]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Traced[HL](H: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, HL]): js.Function2[
+    /* fga */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, HL, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
       HL, 
       fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, _]]
     ]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for oracledb
 
-Typings are for version v1.11.0
+Typings are for version v3.1.2
 
 ## Library description:
 A Node.js module for Oracle Database access
@@ -35,10 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for oracledb v1.11.0
+// Type definitions for oracledb v3.1.2
 // Project: https://github.com/oracle/node-oracledb
 // Definitions by: Richard Natal <https://github.com/Bigous>
+//                 Connor Fitzgerald <https://github.com/CFitzgerald1995>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 3.2
 
 ```
 

@@ -19,12 +19,12 @@ trait Anon_Context extends js.Object {
   def apply[T](
     list: underscoreLib.underscoreMod.List[T],
     iterator: underscoreLib.underscoreMod.IterateePropertyShorthand
-  ): js.Array[T] = js.native
+  ): js.Array[_] = js.native
   def apply[T](
     list: underscoreLib.underscoreMod.List[T],
     iterator: underscoreLib.underscoreMod.IterateePropertyShorthand,
     context: js.Any
-  ): js.Array[T] = js.native
+  ): js.Array[_] = js.native
   def apply[T, TResult](
     list: underscoreLib.underscoreMod.List[T],
     iterator: underscoreLib.underscoreMod.ListIterator[T, TResult]

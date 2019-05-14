@@ -195,68 +195,67 @@ object MongoNs extends js.Object {
   trait CursorStatic
     extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
   
-  @js.native
   trait FieldExpression[T] extends js.Object {
     @JSName("$all")
-    var $all: js.UndefOr[js.Array[T]] = js.native
+    var $all: js.UndefOr[js.Array[T]] = js.undefined
     @JSName("$bitsAllClear")
-    var $bitsAllClear: js.UndefOr[js.Any] = js.native
+    var $bitsAllClear: js.UndefOr[js.Any] = js.undefined
     @JSName("$bitsAllSet")
-    var $bitsAllSet: js.UndefOr[js.Any] = js.native
+    var $bitsAllSet: js.UndefOr[js.Any] = js.undefined
     @JSName("$bitsAnyClear")
-    var $bitsAnyClear: js.UndefOr[js.Any] = js.native
+    var $bitsAnyClear: js.UndefOr[js.Any] = js.undefined
     @JSName("$bitsAnySet")
-    var $bitsAnySet: js.UndefOr[js.Any] = js.native
+    var $bitsAnySet: js.UndefOr[js.Any] = js.undefined
     @JSName("$comment")
-    var $comment: js.UndefOr[java.lang.String] = js.native
+    var $comment: js.UndefOr[java.lang.String] = js.undefined
     @JSName("$elemMatch")
-    var $elemMatch: js.UndefOr[FieldExpression[T] | Query[T]] = js.native
+    var $elemMatch: js.UndefOr[FieldExpression[T] | Query[T]] = js.undefined
     @JSName("$eq")
-    var $eq: js.UndefOr[T] = js.native
+    var $eq: js.UndefOr[T] = js.undefined
     @JSName("$exists")
-    var $exists: js.UndefOr[scala.Boolean] = js.native
+    var $exists: js.UndefOr[scala.Boolean] = js.undefined
     @JSName("$expr")
-    var $expr: js.UndefOr[FieldExpression[T]] = js.native
+    var $expr: js.UndefOr[FieldExpression[T]] = js.undefined
     @JSName("$geoIntersects")
-    var $geoIntersects: js.UndefOr[js.Any] = js.native
+    var $geoIntersects: js.UndefOr[js.Any] = js.undefined
     @JSName("$geoWithin")
-    var $geoWithin: js.UndefOr[js.Any] = js.native
+    var $geoWithin: js.UndefOr[js.Any] = js.undefined
     @JSName("$gt")
-    var $gt: js.UndefOr[T] = js.native
+    var $gt: js.UndefOr[T] = js.undefined
     @JSName("$gte")
-    var $gte: js.UndefOr[T] = js.native
+    var $gte: js.UndefOr[T] = js.undefined
     @JSName("$in")
-    var $in: js.UndefOr[js.Array[T]] = js.native
+    var $in: js.UndefOr[js.Array[T]] = js.undefined
     @JSName("$jsonSchema")
-    var $jsonSchema: js.UndefOr[js.Any] = js.native
+    var $jsonSchema: js.UndefOr[js.Any] = js.undefined
     @JSName("$lt")
-    var $lt: js.UndefOr[T] = js.native
+    var $lt: js.UndefOr[T] = js.undefined
     @JSName("$lte")
-    var $lte: js.UndefOr[T] = js.native
+    var $lte: js.UndefOr[T] = js.undefined
     @JSName("$mod")
-    var $mod: js.UndefOr[js.Array[scala.Double]] = js.native
+    var $mod: js.UndefOr[js.Array[scala.Double]] = js.undefined
     @JSName("$ne")
-    var $ne: js.UndefOr[T] = js.native
+    var $ne: js.UndefOr[T] = js.undefined
     @JSName("$near")
-    var $near: js.UndefOr[js.Any] = js.native
+    var $near: js.UndefOr[js.Any] = js.undefined
     @JSName("$nearSphere")
-    var $nearSphere: js.UndefOr[js.Any] = js.native
+    var $nearSphere: js.UndefOr[js.Any] = js.undefined
     @JSName("$nin")
-    var $nin: js.UndefOr[js.Array[T]] = js.native
+    var $nin: js.UndefOr[js.Array[T]] = js.undefined
     @JSName("$not")
-    var $not: js.UndefOr[FieldExpression[T]] = js.native
+    var $not: js.UndefOr[FieldExpression[T]] = js.undefined
     @JSName("$options")
-    var $options: js.UndefOr[java.lang.String] = js.native
+    var $options: js.UndefOr[java.lang.String] = js.undefined
     @JSName("$regex")
-    var $regex: js.UndefOr[stdLib.RegExp | java.lang.String] = js.native
+    var $regex: js.UndefOr[stdLib.RegExp | java.lang.String] = js.undefined
     @JSName("$size")
-    var $size: js.UndefOr[scala.Double] = js.native
+    var $size: js.UndefOr[scala.Double] = js.undefined
     @JSName("$text")
-    var $text: js.UndefOr[meteorLib.Anon_CaseSensitive] = js.native
+    var $text: js.UndefOr[meteorLib.Anon_CaseSensitive] = js.undefined
     @JSName("$type")
-    var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.native
+    var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.undefined
     @JSName("$where")
-    var $where: js.UndefOr[java.lang.String | js.Function] = js.native
+    var $where: js.UndefOr[java.lang.String | js.Function] = js.undefined
   }
   
   trait ObjectID extends js.Object {
@@ -324,32 +323,31 @@ object MongoNs extends js.Object {
     var removed: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
   }
   
-  @js.native
   trait QueryWithModifiers[T] extends js.Object {
     @JSName("$comment")
-    var $comment: js.UndefOr[java.lang.String] = js.native
+    var $comment: js.UndefOr[java.lang.String] = js.undefined
     @JSName("$explain")
-    var $explain: js.UndefOr[js.Any] = js.native
+    var $explain: js.UndefOr[js.Any] = js.undefined
     @JSName("$hint")
-    var $hint: js.UndefOr[js.Any] = js.native
+    var $hint: js.UndefOr[js.Any] = js.undefined
     @JSName("$max")
-    var $max: js.UndefOr[js.Any] = js.native
+    var $max: js.UndefOr[js.Any] = js.undefined
     @JSName("$maxScan")
-    var $maxScan: js.UndefOr[js.Any] = js.native
+    var $maxScan: js.UndefOr[js.Any] = js.undefined
     @JSName("$maxTimeMS")
-    var $maxTimeMS: js.UndefOr[js.Any] = js.native
+    var $maxTimeMS: js.UndefOr[js.Any] = js.undefined
     @JSName("$min")
-    var $min: js.UndefOr[js.Any] = js.native
+    var $min: js.UndefOr[js.Any] = js.undefined
     @JSName("$natural")
-    var $natural: js.UndefOr[js.Any] = js.native
+    var $natural: js.UndefOr[js.Any] = js.undefined
     @JSName("$orderby")
-    var $orderby: js.UndefOr[js.Any] = js.native
+    var $orderby: js.UndefOr[js.Any] = js.undefined
     @JSName("$query")
-    var $query: Query[T] = js.native
+    var $query: Query[T]
     @JSName("$returnKey")
-    var $returnKey: js.UndefOr[js.Any] = js.native
+    var $returnKey: js.UndefOr[js.Any] = js.undefined
     @JSName("$showDiskLoc")
-    var $showDiskLoc: js.UndefOr[js.Any] = js.native
+    var $showDiskLoc: js.UndefOr[js.Any] = js.undefined
   }
   
   trait SortSpecifier extends js.Object

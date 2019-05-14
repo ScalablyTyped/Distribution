@@ -34,7 +34,9 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
     _
   ]) | scala.Null = js.native
   var onValueChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var value: js.Any = js.native
@@ -101,40 +103,42 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disabledChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
+      ], 
       _
     ]
   ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disabledChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
+      ], 
       _
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_valueChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+  def addEventListener_disabledChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ]
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_valueChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+  def addEventListener_disabledChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ],
     useCapture: scala.Boolean
@@ -148,7 +152,7 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
   @JSName("getProperty")
   def getProperty_focusManagement(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.focusManagement): atOracleOraclejetLib.atOracleOraclejetLibStrings.oneTabstop | atOracleOraclejetLib.atOracleOraclejetLibStrings.none = js.native
   @JSName("getProperty")
-  def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): scala.Nothing = js.native
+  def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any = js.native
   def setProperties(properties: ojButtonsetOneSettablePropertiesLenient): scala.Unit = js.native
   def setProperty(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.chroming,

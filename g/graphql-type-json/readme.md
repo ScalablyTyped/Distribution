@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-type-json
 
-Typings are for version 0.1
+Typings are for version 0.3
 
 ## Library description:
 JSON scalar types for GraphQL.js
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for graphql-type-json 0.1
+// Type definitions for graphql-type-json 0.3
 // Project: https://github.com/taion/graphql-type-json#readme
 // Definitions by: Pavel Ivanov <https://github.com/schfkt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

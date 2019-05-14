@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize extends js.Object {
   /**
     * Background color of the text fregment.
@@ -27,7 +26,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "transparent"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.backgroundColor
     */
-  var backgroundColor: js.UndefOr[js.Object | java.lang.String] = js.native
+  var backgroundColor: js.UndefOr[js.Object | java.lang.String] = js.undefined
   /**
     * Border color of the text fregment.
     *
@@ -39,21 +38,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "transparent"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.borderColor
     */
-  var borderColor: js.UndefOr[java.lang.String] = js.native
+  var borderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Border radius of the text fregment.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.borderRadius
     */
-  var borderRadius: js.UndefOr[scala.Double] = js.native
+  var borderRadius: js.UndefOr[scala.Double] = js.undefined
   /**
     * Border width of the text fregment.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.borderWidth
     */
-  var borderWidth: js.UndefOr[scala.Double] = js.native
+  var borderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * text color.
     *
@@ -65,7 +64,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * '#000'
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.color
     */
-  var color: js.UndefOr[java.lang.String] = js.native
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Distance to the host graphic element.
     * Works when position is string value (like `'top'`、`'insideRight'`).
@@ -79,7 +78,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * 5
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.distance
     */
-  var distance: js.UndefOr[scala.Double] = js.native
+  var distance: js.UndefOr[scala.Double] = js.undefined
   /**
     * font family
     *
@@ -90,7 +89,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "sans-serif"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.fontFamily
     */
-  var fontFamily: js.UndefOr[java.lang.String] = js.native
+  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   /**
     * font size
     *
@@ -99,7 +98,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * 11
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.fontSize
     */
-  var fontSize: js.UndefOr[scala.Double] = js.native
+  var fontSize: js.UndefOr[scala.Double] = js.undefined
   /**
     * font style
     *
@@ -114,7 +113,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "normal"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.fontStyle
     */
-  var fontStyle: js.UndefOr[java.lang.String] = js.native
+  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
   /**
     * font thick weight
     *
@@ -131,7 +130,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "normal"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.fontWeight
     */
-  var fontWeight: js.UndefOr[java.lang.String] = js.native
+  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Height of the text block.
     * It is the width of the text by default.
@@ -146,7 +145,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.height
     */
-  var height: js.UndefOr[scala.Double | java.lang.String] = js.native
+  var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
     * Line height of the text fregment.
     *
@@ -158,7 +157,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.lineHeight
     */
-  var lineHeight: js.UndefOr[scala.Double] = js.native
+  var lineHeight: js.UndefOr[scala.Double] = js.undefined
   /**
     * Whether to move text slightly.
     * For example: `[30, 40]` means move `30` horizontally and
@@ -167,7 +166,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.offset
     */
-  var offset: js.UndefOr[js.Array[_]] = js.native
+  var offset: js.UndefOr[js.Array[_]] = js.undefined
   /**
     * Padding of the text fregment, for example:
     *
@@ -182,7 +181,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.padding
     */
-  var padding: js.UndefOr[js.Array[_] | scala.Double] = js.native
+  var padding: js.UndefOr[js.Array[_] | scala.Double] = js.undefined
   /**
     * Label position.
     *
@@ -220,7 +219,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "left"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.position
     */
-  var position: js.UndefOr[js.Array[_] | java.lang.String] = js.native
+  var position: js.UndefOr[js.Array[_] | java.lang.String] = js.undefined
   /**
     * "Rich text styles" can be defined in this `rich` property.
     * For example:
@@ -242,7 +241,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.rich.%3Cuser%20defined%20style%20name%3E
     */
   org.scalablytyped.runtime.StringDictionary[Anon_Align]
-  ] = js.native
+  ] = js.undefined
   /**
     * Rotate label, from -90 degree to 90, positive value represents
     * rotate anti-clockwise.
@@ -254,14 +253,14 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.rotate
     */
-  var rotate: js.UndefOr[scala.Double] = js.native
+  var rotate: js.UndefOr[scala.Double] = js.undefined
   /**
     * Show blur of the text block.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.shadowBlur
     */
-  var shadowBlur: js.UndefOr[scala.Double] = js.native
+  var shadowBlur: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow color of the text block.
     *
@@ -270,21 +269,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "transparent"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.shadowColor
     */
-  var shadowColor: js.UndefOr[java.lang.String] = js.native
+  var shadowColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Shadow X offset of the text block.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[scala.Double] = js.native
+  var shadowOffsetX: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow Y offset of the text block.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[scala.Double] = js.native
+  var shadowOffsetY: js.UndefOr[scala.Double] = js.undefined
   /**
     * Whether to show label.
     *
@@ -293,7 +292,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "true"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.show
     */
-  var show: js.UndefOr[scala.Boolean] = js.native
+  var show: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Storke color of the text.
     *
@@ -305,21 +304,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "transparent"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.textBorderColor
     */
-  var textBorderColor: js.UndefOr[java.lang.String] = js.native
+  var textBorderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Storke line width of the text.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.textBorderWidth
     */
-  var textBorderWidth: js.UndefOr[scala.Double] = js.native
+  var textBorderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow blue of the text itself.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.textShadowBlur
     */
-  var textShadowBlur: js.UndefOr[scala.Double] = js.native
+  var textShadowBlur: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow color of the text itself.
     *
@@ -328,21 +327,21 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     * "transparent"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.textShadowColor
     */
-  var textShadowColor: js.UndefOr[java.lang.String] = js.native
+  var textShadowColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Shadow X offset of the text itself.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.textShadowOffsetX
     */
-  var textShadowOffsetX: js.UndefOr[scala.Double] = js.native
+  var textShadowOffsetX: js.UndefOr[scala.Double] = js.undefined
   /**
     * Shadow Y offset of the text itself.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.textShadowOffsetY
     */
-  var textShadowOffsetY: js.UndefOr[scala.Double] = js.native
+  var textShadowOffsetY: js.UndefOr[scala.Double] = js.undefined
   /**
     * Width of the text block.
     * It is the width of the text by default.
@@ -365,6 +364,76 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFam
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.width
     */
-  var width: js.UndefOr[scala.Double | java.lang.String] = js.native
+  var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+}
+
+object Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Object | java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderRadius: scala.Int | scala.Double = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    distance: scala.Int | scala.Double = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    lineHeight: scala.Int | scala.Double = null,
+    offset: js.Array[_] = null,
+    padding: js.Array[_] | scala.Double = null,
+    position: js.Array[_] | java.lang.String = null,
+    rich: /**
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label.rich.%3Cuser%20defined%20style%20name%3E
+    */
+  org.scalablytyped.runtime.StringDictionary[Anon_Align] = null,
+    rotate: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    textBorderColor: java.lang.String = null,
+    textBorderWidth: scala.Int | scala.Double = null,
+    textShadowBlur: scala.Int | scala.Double = null,
+    textShadowColor: java.lang.String = null,
+    textShadowOffsetX: scala.Int | scala.Double = null,
+    textShadowOffsetY: scala.Int | scala.Double = null,
+    width: scala.Double | java.lang.String = null
+  ): Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (rich != null) __obj.updateDynamic("rich")(rich)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (textBorderColor != null) __obj.updateDynamic("textBorderColor")(textBorderColor)
+    if (textBorderWidth != null) __obj.updateDynamic("textBorderWidth")(textBorderWidth.asInstanceOf[js.Any])
+    if (textShadowBlur != null) __obj.updateDynamic("textShadowBlur")(textShadowBlur.asInstanceOf[js.Any])
+    if (textShadowColor != null) __obj.updateDynamic("textShadowColor")(textShadowColor)
+    if (textShadowOffsetX != null) __obj.updateDynamic("textShadowOffsetX")(textShadowOffsetX.asInstanceOf[js.Any])
+    if (textShadowOffsetY != null) __obj.updateDynamic("textShadowOffsetY")(textShadowOffsetY.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize]
+  }
 }
 

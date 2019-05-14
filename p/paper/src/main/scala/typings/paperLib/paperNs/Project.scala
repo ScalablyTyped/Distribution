@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Project")
 @js.native
-class Project protected () extends js.Object {
+class Project protected () extends Base {
   def this(element: java.lang.String) = this()
   /**
     * Creates a Paper.js project containing one empty Layer, referenced by project.activeLayer.
@@ -22,7 +22,7 @@ class Project protected () extends js.Object {
   /**
     * The currently active path style. All selected items and newly created items will be styled with this style.
     */
-  var currentStyle: Style = js.native
+  var currentStyle: stdLib.Partial[Style] = js.native
   /**
     * The index of the project in the paperScope.projects list.
     * Read Only
@@ -64,14 +64,6 @@ class Project protected () extends js.Object {
     */
   def deselectAll(): scala.Unit = js.native
   /**
-    * Exports (serializes) the project with all its layers and child items to a JSON data string.
-    * @param options [optional] - default {asString: true, precision: 5}
-    * @param options.asString - whether the JSON is returned as a Object or a String.
-    * @param options.precision - the amount of fractional digits in numbers used in JSON data.
-    */
-  def exportJSON(): java.lang.String = js.native
-  def exportJSON(options: paperLib.Anon_AsString): java.lang.String = js.native
-  /**
     * Exports the project with all its layers and child items as an SVG DOM, all contained in one top level SVG group node.
     * @param options [optional] the export options, default: { asString: false, precision: 5, matchShapes: false, bounds: 'view', matrix: paper.view.matrix, embedImages: true  }
     * @param options.asString - whether a SVG node or a String is to be returned.
@@ -82,7 +74,8 @@ class Project protected () extends js.Object {
     * @param options.embedImages: whether raster images should be embedded as base64 data inlined in the xlink:href attribute, or kept as a link to their external URL.
     */
   def exportSVG(): stdLib.SVGElement = js.native
-  def exportSVG(options: paperLib.Anon_AsStringBounds): stdLib.SVGElement = js.native
+  def exportSVG(options: paperLib.Anon_AsString): stdLib.SVGElement = js.native
+  def getCurrentStyle(): Style = js.native
   /**
     * Fetch the first item contained within the project whose properties match the criteria in the specified object.
     * Extended matching is possible by providing a compare function or regular expression. Matching points, colors only work as a comparison of the full object, not partial matching (e.g. only providing the x- coordinate to match all points with that x-value). Partial matching does work for item.data.
@@ -141,11 +134,6 @@ class Project protected () extends js.Object {
     * */
   def hitTestAll(point: Point): js.Array[HitResult] = js.native
   def hitTestAll(point: Point, options: IHitTestOptions): js.Array[HitResult] = js.native
-  /**
-    * Imports (deserializes) the stored JSON data into the project.
-    * Note that the project is not cleared first. You can call project.clear() to do so.
-    */
-  def importJSON(json: java.lang.String): scala.Unit = js.native
   def importSVG(svg: java.lang.String): Item = js.native
   def importSVG(
     svg: java.lang.String,
@@ -185,5 +173,6 @@ class Project protected () extends js.Object {
     * Selects all items in the project.
     */
   def selectAll(): scala.Unit = js.native
+  def setCurrentStyle(value: stdLib.Partial[Style]): scala.Unit = js.native
 }
 

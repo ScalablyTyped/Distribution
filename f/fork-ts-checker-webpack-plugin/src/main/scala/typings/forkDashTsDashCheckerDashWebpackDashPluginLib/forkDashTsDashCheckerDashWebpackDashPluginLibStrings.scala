@@ -10,7 +10,8 @@ object forkDashTsDashCheckerDashWebpackDashPluginLibStrings {
   sealed trait INTERNAL_ERROR extends js.Object
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait cancel
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
   sealed trait codeframe extends js.Object
@@ -23,10 +24,12 @@ object forkDashTsDashCheckerDashWebpackDashPluginLibStrings {
     extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.ErrorType
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait done
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
-  sealed trait emit extends js.Object
+  sealed trait emit
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
   sealed trait error
@@ -37,22 +40,28 @@ object forkDashTsDashCheckerDashWebpackDashPluginLibStrings {
     extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.ErrorType
   
   @js.native
-  sealed trait receive extends js.Object
+  sealed trait receive
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
-  sealed trait serviceBeforeStart extends js.Object
+  sealed trait serviceBeforeStart
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
-  sealed trait serviceOutOfMemory extends js.Object
+  sealed trait serviceOutOfMemory
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
-  sealed trait serviceStart extends js.Object
+  sealed trait serviceStart
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
-  sealed trait serviceStartError extends js.Object
+  sealed trait serviceStartError
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libHooksMod.ForkTsCheckerHooks
   
   @js.native
   sealed trait warning

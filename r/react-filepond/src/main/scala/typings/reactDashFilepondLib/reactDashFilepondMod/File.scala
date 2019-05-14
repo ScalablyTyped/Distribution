@@ -10,12 +10,7 @@ import scala.scalajs.js.annotation._
 class File ()
   extends reactLib.reactMod.Component[FileProps, js.Object, js.Any] {
   var archived: scala.Boolean = js.native
-  // Note that this duplicates the JS File type declaration, but is necessary
-  // to avoid duplicating the name 'File' in this module
-  // see: https://developer.mozilla.org/en-US/docs/Web/API/File
-  // see: https://github.com/Microsoft/dtslint/issues/173
-  // see: https://stackoverflow.com/q/53876793/2517147
-  var file: stdLib.Blob with reactDashFilepondLib.Anon_LastModified = js.native
+  var file: ActualFileObject = js.native
   var fileExtension: java.lang.String = js.native
   var fileSize: scala.Double = js.native
   var fileType: java.lang.String = js.native

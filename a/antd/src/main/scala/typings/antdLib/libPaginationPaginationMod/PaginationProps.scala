@@ -10,6 +10,7 @@ trait PaginationProps extends js.Object {
   var current: js.UndefOr[scala.Double] = js.undefined
   var defaultCurrent: js.UndefOr[scala.Double] = js.undefined
   var defaultPageSize: js.UndefOr[scala.Double] = js.undefined
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var hideOnSinglePage: js.UndefOr[scala.Boolean] = js.undefined
   var itemRender: js.UndefOr[
     js.Function3[
@@ -52,6 +53,7 @@ object PaginationProps {
     current: scala.Int | scala.Double = null,
     defaultCurrent: scala.Int | scala.Double = null,
     defaultPageSize: scala.Int | scala.Double = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
     hideOnSinglePage: js.UndefOr[scala.Boolean] = js.undefined,
     itemRender: (/* page */ scala.Double, /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, /* originalElement */ reactLib.reactMod.ReactElement[stdLib.HTMLElement]) => reactLib.reactMod.ReactNode = null,
     locale: js.Object = null,
@@ -76,6 +78,7 @@ object PaginationProps {
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (defaultCurrent != null) __obj.updateDynamic("defaultCurrent")(defaultCurrent.asInstanceOf[js.Any])
     if (defaultPageSize != null) __obj.updateDynamic("defaultPageSize")(defaultPageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(hideOnSinglePage)) __obj.updateDynamic("hideOnSinglePage")(hideOnSinglePage)
     if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction3(itemRender))
     if (locale != null) __obj.updateDynamic("locale")(locale)

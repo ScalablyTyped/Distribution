@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation._
 trait WhenMock[T, Y /* <: js.Array[_] */] extends js.Object {
   def calledWith(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param matchers because its type Y is not an array type */ matchers: Y
-  ): WhenMock[T, Y] = js.native
+  ): this.type = js.native
   def expectCalledWith(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param matchers because its type Y is not an array type */ matchers: Y
-  ): WhenMock[T, Y] = js.native
-  def mockImplementation(fn: js.Function1[/* args */ Y, T]): WhenMock[T, Y] = js.native
-  def mockImplementationOnce(): WhenMock[T, Y] = js.native
-  def mockImplementationOnce(fn: js.Function1[/* args */ Y, T]): WhenMock[T, Y] = js.native
+  ): this.type = js.native
+  def mockImplementation(fn: js.Function1[/* args */ Y, T]): this.type = js.native
+  def mockImplementationOnce(): this.type = js.native
+  def mockImplementationOnce(fn: js.Function1[/* args */ Y, T]): this.type = js.native
   def mockRejectedValue(
     value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.RejectedValue<T> */ js.Any
-  ): WhenMock[T, Y] = js.native
+  ): this.type = js.native
   def mockRejectedValueOnce(
     value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.RejectedValue<T> */ js.Any
-  ): WhenMock[T, Y] = js.native
+  ): this.type = js.native
   def mockResolvedValue(
     value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ResolvedValue<T> */ js.Any
-  ): WhenMock[T, Y] = js.native
+  ): this.type = js.native
   def mockResolvedValueOnce(
     value: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify jest.ResolvedValue<T> */ js.Any
-  ): WhenMock[T, Y] = js.native
-  def mockReturnValue(value: T): WhenMock[T, Y] = js.native
-  def mockReturnValueOnce(value: T): WhenMock[T, Y] = js.native
+  ): this.type = js.native
+  def mockReturnValue(value: T): this.type = js.native
+  def mockReturnValueOnce(value: T): this.type = js.native
 }
 

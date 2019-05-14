@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__datetime"
-version := "3.9.0-6eeab2"
+version := "3.9.0-aa11ab"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "blueprintjs__core" % "3.15.1-33ee4c",
+  "org.scalablytyped" %%% "blueprintjs__core" % "3.15.1-3addd5",
   "org.scalablytyped" %%% "blueprintjs__icons" % "3.8.0-cde091",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-31bede",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-66be5f",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-a9badf",
-  "org.scalablytyped" %%% "react-day-picker" % "7.3.0-3412ce",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
+  "org.scalablytyped" %%% "react-day-picker" % "7.3.0-a626eb",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

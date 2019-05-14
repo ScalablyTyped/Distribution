@@ -155,10 +155,15 @@ object handsontableLibStrings {
     extends handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.PredefinedMenuItemKey
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType
   
   @js.native
   sealed trait `bottom-left-corner` extends js.Object
+  
+  @js.native
+  sealed trait bottom_left_corner
+    extends handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType
   
   @js.native
   sealed trait by_value
@@ -258,6 +263,10 @@ object handsontableLibStrings {
   @js.native
   sealed trait dateValidate
     extends handsontableLib.handsontableMod.HandsontableNs.ChangeSource
+  
+  @js.native
+  sealed trait debug
+    extends handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType
   
   @js.native
   sealed trait desc
@@ -431,7 +440,8 @@ object handsontableLibStrings {
   sealed trait last extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType
   
   @js.native
   sealed trait loadData
@@ -633,10 +643,15 @@ object handsontableLibStrings {
     extends handsontableLib.handsontableMod.HandsontableNs.ChangeSource
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType
   
   @js.native
   sealed trait `top-left-corner` extends js.Object
+  
+  @js.native
+  sealed trait top_left_corner
+    extends handsontableLib.handsontableMod.HandsontableNs.wotNs.OverlayType
   
   @js.native
   sealed trait touchScroll extends js.Object
@@ -748,6 +763,8 @@ object handsontableLibStrings {
   @scala.inline
   def `bottom-left-corner`: `bottom-left-corner` = "bottom-left-corner".asInstanceOf[`bottom-left-corner`]
   @scala.inline
+  def bottom_left_corner: bottom_left_corner = "bottom_left_corner".asInstanceOf[bottom_left_corner]
+  @scala.inline
   def by_value: by_value = "by_value".asInstanceOf[by_value]
   @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
@@ -801,6 +818,8 @@ object handsontableLibStrings {
   def date: date = "date".asInstanceOf[date]
   @scala.inline
   def dateValidate: dateValidate = "dateValidate".asInstanceOf[dateValidate]
+  @scala.inline
+  def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
@@ -1015,6 +1034,8 @@ object handsontableLibStrings {
   def top: top = "top".asInstanceOf[top]
   @scala.inline
   def `top-left-corner`: `top-left-corner` = "top-left-corner".asInstanceOf[`top-left-corner`]
+  @scala.inline
+  def top_left_corner: top_left_corner = "top_left_corner".asInstanceOf[top_left_corner]
   @scala.inline
   def touchScroll: touchScroll = "touchScroll".asInstanceOf[touchScroll]
   @scala.inline

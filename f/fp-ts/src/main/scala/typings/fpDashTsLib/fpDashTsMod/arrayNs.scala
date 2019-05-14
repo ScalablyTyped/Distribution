@@ -49,7 +49,7 @@ object arrayNs extends js.Object {
     f: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, scala.Boolean],
     g: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, R]
   ): fpDashTsLib.libArrayMod.Global.Array[R] = js.native
-  def cons[A](a: A, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
+  def cons[A](a: A, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A] = js.native
   def copy[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def deleteAt[A](i: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
   def difference[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[
@@ -68,6 +68,10 @@ object arrayNs extends js.Object {
     predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]
   ): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
   def findFirst[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  def findFirstMap[A, B](
+    arr: fpDashTsLib.libArrayMod.Global.Array[A],
+    f: js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]]
+  ): fpDashTsLib.libOptionMod.Option[B] = js.native
   @JSName("findFirst")
   def findFirst_ABA[A, B /* <: A */](
     as: fpDashTsLib.libArrayMod.Global.Array[A],
@@ -76,6 +80,10 @@ object arrayNs extends js.Object {
   def findIndex[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[scala.Double] = js.native
   def findLast[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
   def findLastIndex[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[scala.Double] = js.native
+  def findLastMap[A, B](
+    arr: fpDashTsLib.libArrayMod.Global.Array[A],
+    f: js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]]
+  ): fpDashTsLib.libOptionMod.Option[B] = js.native
   @JSName("findLast")
   def findLast_ABA[A, B /* <: A */](
     as: fpDashTsLib.libArrayMod.Global.Array[A],
@@ -105,6 +113,7 @@ object arrayNs extends js.Object {
   def getMonoid[A](): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
   def getOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
+  def getShow[A](S: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
   def head[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
   def index[A](i: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
   def init[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
@@ -148,7 +157,7 @@ object arrayNs extends js.Object {
   def rotate[A](n: scala.Double, xs: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def scanLeft[A, B](as: fpDashTsLib.libArrayMod.Global.Array[A], b: B, f: js.Function2[/* b */ B, /* a */ A, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
   def scanRight[A, B](as: fpDashTsLib.libArrayMod.Global.Array[A], b: B, f: js.Function2[/* a */ A, /* b */ B, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
-  def snoc[A](as: fpDashTsLib.libArrayMod.Global.Array[A], a: A): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
+  def snoc[A](as: fpDashTsLib.libArrayMod.Global.Array[A], a: A): fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A] = js.native
   def sort[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function1[
     /* as */ fpDashTsLib.libArrayMod.Global.Array[A], 
     fpDashTsLib.libArrayMod.Global.Array[A]
@@ -423,6 +432,24 @@ object arrayNs extends js.Object {
       fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
     ], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, fpDashTsLib.libArrayMod.Global.Array[_]]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* ta */ fpDashTsLib.libArrayMod.Global.Array[_], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, fpDashTsLib.libArrayMod.Global.Array[_]]
+  ] = js.native
+  @JSName("traverse")
+  def traverse_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* ta */ fpDashTsLib.libArrayMod.Global.Array[_], 
+    /* f */ js.Function1[
+      /* a */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, fpDashTsLib.libArrayMod.Global.Array[_]]
   ] = js.native
   @JSName("traverse")
   def traverse_Tuple(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Tuple]): js.Function2[

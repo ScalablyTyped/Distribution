@@ -95,7 +95,7 @@ trait IsotopeOptions extends js.Object {
   /**
     * Sorts items according to which property of getSortData. The value of sortBy needs to match a key name in getSortData.
     */
-  var sortBy: js.UndefOr[java.lang.String] = js.undefined
+  var sortBy: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
     * Staggers item transitions, so items transition incrementally after one another. Set as a CSS time format, '0.03s', or as a number in milliseconds, 30.
     */
@@ -142,7 +142,7 @@ object IsotopeOptions {
     percentPosition: js.UndefOr[scala.Boolean] = js.undefined,
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     sortAscending: scala.Boolean | SortOrder = null,
-    sortBy: java.lang.String = null,
+    sortBy: java.lang.String | js.Array[java.lang.String] = null,
     stagger: scala.Double | java.lang.String = null,
     stamp: java.lang.String = null,
     transitionDuration: scala.Double | java.lang.String = null,
@@ -169,7 +169,7 @@ object IsotopeOptions {
     if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition)
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (stagger != null) __obj.updateDynamic("stagger")(stagger.asInstanceOf[js.Any])
     if (stamp != null) __obj.updateDynamic("stamp")(stamp)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])

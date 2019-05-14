@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tokenizr"
-version := "1.5-dt-20190216Z-237e3b"
+version := "1.5-dt-20190513Z-509356"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -183,6 +183,16 @@ object libTraceMod extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, scala.Unit]
   ] = js.native
   @JSName("traceA")
+  def traceA_Traced(F: fpDashTsLib.libApplicativeMod.Applicative2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* message */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, scala.Unit]
+  ] = js.native
+  @JSName("traceA")
+  def traceA_Traced[L](F: fpDashTsLib.libApplicativeMod.Applicative2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* message */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, scala.Unit]
+  ] = js.native
+  @JSName("traceA")
   def traceA_Tree(F: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[
     /* message */ js.Any, 
     fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, scala.Unit]
@@ -382,6 +392,16 @@ object libTraceMod extends js.Object {
   def traceM_These[L](F: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, L]): js.Function1[
     /* a */ js.Any, 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, _]
+  ] = js.native
+  @JSName("traceM")
+  def traceM_Traced(F: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function1[
+    /* a */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _]
+  ] = js.native
+  @JSName("traceM")
+  def traceM_Traced[L](F: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function1[
+    /* a */ js.Any, 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, _]
   ] = js.native
   @JSName("traceM")
   def traceM_Tree(F: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type[fpDashTsLib.fpDashTsLibStrings.Tree, _]] = js.native

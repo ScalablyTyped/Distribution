@@ -116,6 +116,13 @@ trait Options extends js.Object {
     * @memberOf X2JS.Options
     */
   var useDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * If "object" then <empty></empty> will be transformed to {}.
+    *
+    * @type {'object'}
+    * @memberOf X2JS.Options
+    */
+  var xmldomOptions: js.UndefOr[x2jsLib.x2jsLibStrings.`object`] = js.undefined
 }
 
 object Options {
@@ -142,7 +149,8 @@ object Options {
     selfClosingElements: js.UndefOr[scala.Boolean] = js.undefined,
     skipEmptyTextNodesForObj: js.UndefOr[scala.Boolean] = js.undefined,
     stripWhitespaces: js.UndefOr[scala.Boolean] = js.undefined,
-    useDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined
+    useDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined,
+    xmldomOptions: x2jsLib.x2jsLibStrings.`object` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (arrayAccessForm != null) __obj.updateDynamic("arrayAccessForm")(arrayAccessForm.asInstanceOf[js.Any])
@@ -159,6 +167,7 @@ object Options {
     if (!js.isUndefined(skipEmptyTextNodesForObj)) __obj.updateDynamic("skipEmptyTextNodesForObj")(skipEmptyTextNodesForObj)
     if (!js.isUndefined(stripWhitespaces)) __obj.updateDynamic("stripWhitespaces")(stripWhitespaces)
     if (!js.isUndefined(useDoubleQuotes)) __obj.updateDynamic("useDoubleQuotes")(useDoubleQuotes)
+    if (xmldomOptions != null) __obj.updateDynamic("xmldomOptions")(xmldomOptions)
     __obj.asInstanceOf[Options]
   }
 }

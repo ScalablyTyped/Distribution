@@ -15,6 +15,6 @@ class default protected () extends TransferList {
 @JSImport("antd/es/transfer/list", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_DataSourceLazy = js.native
+  var defaultProps: antdLib.Anon_DataSource = js.native
 }
 

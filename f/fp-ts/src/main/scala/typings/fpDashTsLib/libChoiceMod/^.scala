@@ -115,6 +115,14 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, fpDashTsLib.libEitherMod.Either[_, _], _]
   ] = js.native
   @JSName("fanin")
+  def fanin_Traced(
+    F: fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.fpDashTsLibStrings.Traced] with Choice2[fpDashTsLib.fpDashTsLibStrings.Traced]
+  ): js.Function2[
+    /* pac */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* pbc */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, fpDashTsLib.libEitherMod.Either[_, _], _]
+  ] = js.native
+  @JSName("fanin")
   def fanin_Tuple(
     F: fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.fpDashTsLibStrings.Tuple] with Choice2[fpDashTsLib.fpDashTsLibStrings.Tuple]
   ): js.Function2[
@@ -285,6 +293,18 @@ object ^ extends js.Object {
     /* pcd */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     fpDashTsLib.libHKTMod.Type2[
       fpDashTsLib.fpDashTsLibStrings.These, 
+      fpDashTsLib.libEitherMod.Either[_, _], 
+      fpDashTsLib.libEitherMod.Either[_, _]
+    ]
+  ] = js.native
+  @JSName("splitChoice")
+  def splitChoice_Traced(
+    F: fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.fpDashTsLibStrings.Traced] with Choice2[fpDashTsLib.fpDashTsLibStrings.Traced]
+  ): js.Function2[
+    /* pab */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* pcd */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[
+      fpDashTsLib.fpDashTsLibStrings.Traced, 
       fpDashTsLib.libEitherMod.Either[_, _], 
       fpDashTsLib.libEitherMod.Either[_, _]
     ]

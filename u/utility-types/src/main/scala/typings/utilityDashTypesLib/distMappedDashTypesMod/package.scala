@@ -9,9 +9,9 @@ package object distMappedDashTypesMod {
   type Assign[T /* <: js.Object */, U /* <: js.Object */, I] = stdLib.Pick[I, java.lang.String]
   type DeepReadonly[T] = T | _DeepReadonlyObject[T] | (_DeepReadonlyArray[/* import warning: ImportType.apply Failed type conversion: T[number] */ js.Any])
   type Diff[T /* <: js.Object */, U /* <: js.Object */] = stdLib.Pick[T, SetDifference[java.lang.String, java.lang.String]]
-  type FunctionKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
+  type FunctionKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? K : never}[keyof T] */ js.Any
   type Intersection[T /* <: js.Object */, U /* <: js.Object */] = stdLib.Pick[T, SetIntersection[java.lang.String, java.lang.String]]
-  type NonFunctionKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
+  type NonFunctionKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Function? never : K}[keyof T] */ js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, SetComplement[java.lang.String, K]]
   type Overwrite[T /* <: js.Object */, U /* <: js.Object */, I] = stdLib.Pick[I, java.lang.String]
   type PromiseType[T] = T

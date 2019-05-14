@@ -14,6 +14,7 @@ object ^ extends js.Object {
   def drawTree(tree: Tree[java.lang.String]): java.lang.String = js.native
   def elem[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* fa */ Tree[A], scala.Boolean] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[Tree[A]] = js.native
+  def getShow[A](S: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[Tree[A]] = js.native
   def unfoldForest[A, B](
     bs: fpDashTsLib.libArrayMod.Global.Array[B],
     f: js.Function1[/* b */ B, js.Tuple2[A, fpDashTsLib.libArrayMod.Global.Array[B]]]
@@ -341,6 +342,32 @@ object ^ extends js.Object {
       ]
     ], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, Forest[_]]
+  ] = js.native
+  @JSName("unfoldForestM")
+  def unfoldForestM_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* bs */ fpDashTsLib.libArrayMod.Global.Array[_], 
+    /* f */ js.Function1[
+      /* b */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[
+        fpDashTsLib.fpDashTsLibStrings.Traced, 
+        _, 
+        js.Tuple2[_, fpDashTsLib.libArrayMod.Global.Array[_]]
+      ]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, Forest[_]]
+  ] = js.native
+  @JSName("unfoldForestM")
+  def unfoldForestM_Traced[L](M: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* bs */ fpDashTsLib.libArrayMod.Global.Array[_], 
+    /* f */ js.Function1[
+      /* b */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[
+        fpDashTsLib.fpDashTsLibStrings.Traced, 
+        L, 
+        js.Tuple2[_, fpDashTsLib.libArrayMod.Global.Array[_]]
+      ]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, Forest[_]]
   ] = js.native
   @JSName("unfoldForestM")
   def unfoldForestM_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[
@@ -756,6 +783,32 @@ object ^ extends js.Object {
       ]
     ], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, L, Tree[_]]
+  ] = js.native
+  @JSName("unfoldTreeM")
+  def unfoldTreeM_Traced(M: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.fpDashTsLibStrings.Traced]): js.Function2[
+    /* b */ js.Any, 
+    /* f */ js.Function1[
+      /* b */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[
+        fpDashTsLib.fpDashTsLibStrings.Traced, 
+        _, 
+        js.Tuple2[_, fpDashTsLib.libArrayMod.Global.Array[_]]
+      ]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, Tree[_]]
+  ] = js.native
+  @JSName("unfoldTreeM")
+  def unfoldTreeM_Traced[L](M: fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.Traced, L]): js.Function2[
+    /* b */ js.Any, 
+    /* f */ js.Function1[
+      /* b */ js.Any, 
+      fpDashTsLib.libHKTMod.Type2[
+        fpDashTsLib.fpDashTsLibStrings.Traced, 
+        L, 
+        js.Tuple2[_, fpDashTsLib.libArrayMod.Global.Array[_]]
+      ]
+    ], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, L, Tree[_]]
   ] = js.native
   @JSName("unfoldTreeM")
   def unfoldTreeM_Tree(M: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.fpDashTsLibStrings.Tree]): js.Function2[

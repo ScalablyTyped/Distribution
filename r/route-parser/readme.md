@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: http://github.com/rcs/route-parser
 // Definitions by: Ian Ker-Seymer <https://github.com/ianks>, Bob Buehler <https://github.com/bobbuehler>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 ```
 

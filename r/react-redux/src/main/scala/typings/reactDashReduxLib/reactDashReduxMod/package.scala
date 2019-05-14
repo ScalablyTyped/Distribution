@@ -45,7 +45,7 @@ package object reactDashReduxMod {
     (MapStateToPropsFactory[TStateProps, TOwnProps, State]) | (MapStateToProps[TStateProps, TOwnProps, State]) | scala.Null
   ]
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
+  {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
     */ reactDashReduxLib.reactDashReduxLibStrings.Matching with js.Any
   type MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps] = js.Function3[
     /* stateProps */ TStateProps, 
@@ -64,6 +64,6 @@ package object reactDashReduxMod {
     Selector[S, TProps, TOwnProps]
   ]
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? DecorationTargetProps[P]}
-    */ reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
+  {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
+    */ reactDashReduxLib.reactDashReduxLibStrings.Shared with js.Any
 }

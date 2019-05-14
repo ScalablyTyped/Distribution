@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scheduler"
-version := "0.12-dt-20190407Z-edc6c2"
+version := "0.12-dt-20190407Z-e1addf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

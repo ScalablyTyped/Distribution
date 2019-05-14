@@ -78,7 +78,7 @@ package object ramdaMod {
   {[ P in keyof E ]:? ramda.ramda.Evolved<E[P]>}
     */ ramdaLib.ramdaLibStrings.Evolvable with E
   type Evolve[O /* <: Evolvable[E] */, E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof O ]: O[P] | ramda.ramda.EvolveValue<O[P], E[P]>}
+  {[ P in keyof O ]: P extends keyof E? ramda.ramda.EvolveValue<O[P], E[P]> : O[P]}
     */ ramdaLib.ramdaLibStrings.Evolve with js.Any
   type EvolveNestedValue[V, E /* <: Evolver */] = Evolve[V, E]
   type EvolveValue[V, E] = (EvolveNestedValue[V, E]) | stdLib.ReturnType[E]

@@ -82,6 +82,7 @@ package object clientsLambdaMod {
     - awsDashSdkLib.awsDashSdkLibStrings.nodejs4DOT3
     - awsDashSdkLib.awsDashSdkLibStrings.nodejs6DOT10
     - awsDashSdkLib.awsDashSdkLibStrings.nodejs8DOT10
+    - awsDashSdkLib.awsDashSdkLibStrings.nodejs10DOTx
     - awsDashSdkLib.awsDashSdkLibStrings.java8
     - awsDashSdkLib.awsDashSdkLibStrings.python2DOT7
     - awsDashSdkLib.awsDashSdkLibStrings.python3DOT6

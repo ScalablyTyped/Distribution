@@ -11,7 +11,9 @@ trait ojModule
   var animation: js.Object = js.native
   var config: atOracleOraclejetLib.Anon_CleanupMode = js.native
   var onAnimationChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+      /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+    ], 
     _
   ]) | scala.Null = js.native
   var onConfigChanged: (js.Function1[
@@ -34,6 +36,27 @@ trait ojModule
     /* event */ atOracleOraclejetLib.ojmoduleDashElementMod.ojModuleNs.ojViewDisconnected, 
     _
   ]) | scala.Null = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.animationChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.animationChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.abort,
@@ -43,25 +66,6 @@ trait ojModule
   def addEventListener_abort(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.abort,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_animationChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.animationChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_animationChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.animationChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
-      _
-    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1151,7 +1155,7 @@ trait ojModule
   ): scala.Unit = js.native
   def getProperty(property: java.lang.String): js.Any = js.native
   @JSName("getProperty")
-  def getProperty_animation(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.animation): scala.Nothing = js.native
+  def getProperty_animation(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.animation): /* import warning: ImportType.apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojmodule-element.ojModule['animation'] */ js.Any = js.native
   @JSName("getProperty")
   def getProperty_config(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.config): atOracleOraclejetLib.Anon_CleanupMode = js.native
   def setProperties(properties: ojModuleSettablePropertiesLenient): scala.Unit = js.native

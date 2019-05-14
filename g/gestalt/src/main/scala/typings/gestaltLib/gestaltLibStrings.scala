@@ -16,6 +16,14 @@ object gestaltLibStrings {
   sealed trait absolute extends js.Object
   
   @js.native
+  sealed trait ad
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `ad-group`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait add
     extends gestaltLib.gestaltMod.Icons
   
@@ -28,10 +36,54 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait alert
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait alertdialog extends js.Object
   
   @js.native
+  sealed trait `align-bottom`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-bottom-center`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-bottom-left`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-bottom-right`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-middle`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-top`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-top-center`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-top-left`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `align-top-right`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait `angled-pin`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait apps
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
@@ -50,11 +102,23 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `arrow-circle-up`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait `arrow-down`
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `arrow-end`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait `arrow-forward`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `arrow-start`
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
@@ -94,11 +158,23 @@ object gestaltLibStrings {
   sealed trait button extends js.Object
   
   @js.native
+  sealed trait calendar
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait camera
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `camera-roll`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait cancel
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `canonical-pin`
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
@@ -132,10 +208,18 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `color-picker`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait column extends js.Object
   
   @js.native
   sealed trait compass
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait compose
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
@@ -146,6 +230,10 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait cover extends js.Object
+  
+  @js.native
+  sealed trait crop
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait `current-password` extends js.Object
@@ -170,6 +258,14 @@ object gestaltLibStrings {
   sealed trait down extends js.Object
   
   @js.native
+  sealed trait download
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait duplicate
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait edit
     extends gestaltLib.gestaltMod.Icons
   
@@ -189,6 +285,10 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait end extends js.Object
+  
+  @js.native
+  sealed trait envelope
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait eye
@@ -211,6 +311,14 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `fill-opaque`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `fill-transparent`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait filter
     extends gestaltLib.gestaltMod.Icons
   
@@ -229,6 +337,14 @@ object gestaltLibStrings {
   sealed trait flex extends js.Object
   
   @js.native
+  sealed trait flipHorizontal
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait flipVertical
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait gif
     extends gestaltLib.gestaltMod.Icons
   
@@ -238,6 +354,14 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait `globe-checked`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait gmail
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `google-plus`
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
@@ -279,10 +403,18 @@ object gestaltLibStrings {
   sealed trait hidden extends js.Object
   
   @js.native
+  sealed trait impressum
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait inlineBlock extends js.Object
   
   @js.native
   sealed trait justify extends js.Object
+  
+  @js.native
+  sealed trait key
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait knoop
@@ -305,6 +437,10 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `lightning-bolt-circle`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait link
     extends gestaltLib.gestaltMod.Icons
   
@@ -317,6 +453,30 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `logo-large`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `logo-small`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait logout
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `margins-large`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `margins-medium`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `margins-small`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait maroon extends js.Object
   
   @js.native
@@ -325,6 +485,10 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait md extends js.Object
+  
+  @js.native
+  sealed trait megaphone
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait menu
@@ -382,6 +546,10 @@ object gestaltLibStrings {
   sealed trait orchid extends js.Object
   
   @js.native
+  sealed trait `overlay-text`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait password extends js.Object
   
   @js.native
@@ -436,10 +604,18 @@ object gestaltLibStrings {
   sealed trait red extends js.Object
   
   @js.native
+  sealed trait refresh
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait relative extends js.Object
   
   @js.native
   sealed trait remove
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `reorder-images`
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
@@ -448,6 +624,10 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait rotate
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait rounded extends js.Object
@@ -481,6 +661,10 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait security
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait self extends js.Object
   
   @js.native
@@ -510,6 +694,14 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `sort-ascending`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `sort-descending`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait sound
     extends gestaltLib.gestaltMod.Icons
   
@@ -525,6 +717,10 @@ object gestaltLibStrings {
   sealed trait square extends js.Object
   
   @js.native
+  sealed trait star
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait start extends js.Object
   
   @js.native
@@ -535,6 +731,10 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait submit extends js.Object
+  
+  @js.native
+  sealed trait `switch-account`
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait tag
@@ -560,7 +760,47 @@ object gestaltLibStrings {
     extends gestaltLib.gestaltMod.Icons
   
   @js.native
+  sealed trait `text-all-caps`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-extra-small`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-large`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-line-height`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-medium`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-sentence-case`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-size`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-small`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
+  sealed trait `text-spacing`
+    extends gestaltLib.gestaltMod.Icons
+  
+  @js.native
   sealed trait transparent extends js.Object
+  
+  @js.native
+  sealed trait `trash-can`
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait twitter
@@ -574,6 +814,10 @@ object gestaltLibStrings {
   
   @js.native
   sealed trait username extends js.Object
+  
+  @js.native
+  sealed trait `video-camera`
+    extends gestaltLib.gestaltMod.Icons
   
   @js.native
   sealed trait `video/m3u8` extends js.Object
@@ -627,15 +871,41 @@ object gestaltLibStrings {
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
+  def ad: ad = "ad".asInstanceOf[ad]
+  @scala.inline
+  def `ad-group`: `ad-group` = "ad-group".asInstanceOf[`ad-group`]
+  @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
   def `add-circle`: `add-circle` = "add-circle".asInstanceOf[`add-circle`]
   @scala.inline
   def `add-pin`: `add-pin` = "add-pin".asInstanceOf[`add-pin`]
   @scala.inline
+  def alert: alert = "alert".asInstanceOf[alert]
+  @scala.inline
   def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
   @scala.inline
+  def `align-bottom`: `align-bottom` = "align-bottom".asInstanceOf[`align-bottom`]
+  @scala.inline
+  def `align-bottom-center`: `align-bottom-center` = "align-bottom-center".asInstanceOf[`align-bottom-center`]
+  @scala.inline
+  def `align-bottom-left`: `align-bottom-left` = "align-bottom-left".asInstanceOf[`align-bottom-left`]
+  @scala.inline
+  def `align-bottom-right`: `align-bottom-right` = "align-bottom-right".asInstanceOf[`align-bottom-right`]
+  @scala.inline
+  def `align-middle`: `align-middle` = "align-middle".asInstanceOf[`align-middle`]
+  @scala.inline
+  def `align-top`: `align-top` = "align-top".asInstanceOf[`align-top`]
+  @scala.inline
+  def `align-top-center`: `align-top-center` = "align-top-center".asInstanceOf[`align-top-center`]
+  @scala.inline
+  def `align-top-left`: `align-top-left` = "align-top-left".asInstanceOf[`align-top-left`]
+  @scala.inline
+  def `align-top-right`: `align-top-right` = "align-top-right".asInstanceOf[`align-top-right`]
+  @scala.inline
   def `angled-pin`: `angled-pin` = "angled-pin".asInstanceOf[`angled-pin`]
+  @scala.inline
+  def apps: apps = "apps".asInstanceOf[apps]
   @scala.inline
   def around: around = "around".asInstanceOf[around]
   @scala.inline
@@ -645,9 +915,15 @@ object gestaltLibStrings {
   @scala.inline
   def `arrow-circle-forward`: `arrow-circle-forward` = "arrow-circle-forward".asInstanceOf[`arrow-circle-forward`]
   @scala.inline
+  def `arrow-circle-up`: `arrow-circle-up` = "arrow-circle-up".asInstanceOf[`arrow-circle-up`]
+  @scala.inline
   def `arrow-down`: `arrow-down` = "arrow-down".asInstanceOf[`arrow-down`]
   @scala.inline
+  def `arrow-end`: `arrow-end` = "arrow-end".asInstanceOf[`arrow-end`]
+  @scala.inline
   def `arrow-forward`: `arrow-forward` = "arrow-forward".asInstanceOf[`arrow-forward`]
+  @scala.inline
+  def `arrow-start`: `arrow-start` = "arrow-start".asInstanceOf[`arrow-start`]
   @scala.inline
   def `arrow-up`: `arrow-up` = "arrow-up".asInstanceOf[`arrow-up`]
   @scala.inline
@@ -671,9 +947,15 @@ object gestaltLibStrings {
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
+  def calendar: calendar = "calendar".asInstanceOf[calendar]
+  @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   @scala.inline
+  def `camera-roll`: `camera-roll` = "camera-roll".asInstanceOf[`camera-roll`]
+  @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
+  @scala.inline
+  def `canonical-pin`: `canonical-pin` = "canonical-pin".asInstanceOf[`canonical-pin`]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -691,15 +973,21 @@ object gestaltLibStrings {
   @scala.inline
   def cog: cog = "cog".asInstanceOf[cog]
   @scala.inline
+  def `color-picker`: `color-picker` = "color-picker".asInstanceOf[`color-picker`]
+  @scala.inline
   def column: column = "column".asInstanceOf[column]
   @scala.inline
   def compass: compass = "compass".asInstanceOf[compass]
+  @scala.inline
+  def compose: compose = "compose".asInstanceOf[compose]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
+  @scala.inline
+  def crop: crop = "crop".asInstanceOf[crop]
   @scala.inline
   def `current-password`: `current-password` = "current-password".asInstanceOf[`current-password`]
   @scala.inline
@@ -715,6 +1003,10 @@ object gestaltLibStrings {
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
+  def download: download = "download".asInstanceOf[download]
+  @scala.inline
+  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
+  @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   @scala.inline
   def eggplant: eggplant = "eggplant".asInstanceOf[eggplant]
@@ -727,6 +1019,8 @@ object gestaltLibStrings {
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
+  def envelope: envelope = "envelope".asInstanceOf[envelope]
+  @scala.inline
   def eye: eye = "eye".asInstanceOf[eye]
   @scala.inline
   def `face-happy`: `face-happy` = "face-happy".asInstanceOf[`face-happy`]
@@ -736,6 +1030,10 @@ object gestaltLibStrings {
   def `face-smiley`: `face-smiley` = "face-smiley".asInstanceOf[`face-smiley`]
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
+  @scala.inline
+  def `fill-opaque`: `fill-opaque` = "fill-opaque".asInstanceOf[`fill-opaque`]
+  @scala.inline
+  def `fill-transparent`: `fill-transparent` = "fill-transparent".asInstanceOf[`fill-transparent`]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
@@ -747,11 +1045,19 @@ object gestaltLibStrings {
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   @scala.inline
+  def flipHorizontal: flipHorizontal = "flipHorizontal".asInstanceOf[flipHorizontal]
+  @scala.inline
+  def flipVertical: flipVertical = "flipVertical".asInstanceOf[flipVertical]
+  @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
   @scala.inline
   def globe: globe = "globe".asInstanceOf[globe]
   @scala.inline
   def `globe-checked`: `globe-checked` = "globe-checked".asInstanceOf[`globe-checked`]
+  @scala.inline
+  def gmail: gmail = "gmail".asInstanceOf[gmail]
+  @scala.inline
+  def `google-plus`: `google-plus` = "google-plus".asInstanceOf[`google-plus`]
   @scala.inline
   def grab: grab = "grab".asInstanceOf[grab]
   @scala.inline
@@ -775,9 +1081,13 @@ object gestaltLibStrings {
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
+  def impressum: impressum = "impressum".asInstanceOf[impressum]
+  @scala.inline
   def inlineBlock: inlineBlock = "inlineBlock".asInstanceOf[inlineBlock]
   @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
+  @scala.inline
+  def key: key = "key".asInstanceOf[key]
   @scala.inline
   def knoop: knoop = "knoop".asInstanceOf[knoop]
   @scala.inline
@@ -791,17 +1101,33 @@ object gestaltLibStrings {
   @scala.inline
   def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
   @scala.inline
+  def `lightning-bolt-circle`: `lightning-bolt-circle` = "lightning-bolt-circle".asInstanceOf[`lightning-bolt-circle`]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   @scala.inline
+  def `logo-large`: `logo-large` = "logo-large".asInstanceOf[`logo-large`]
+  @scala.inline
+  def `logo-small`: `logo-small` = "logo-small".asInstanceOf[`logo-small`]
+  @scala.inline
+  def logout: logout = "logout".asInstanceOf[logout]
+  @scala.inline
+  def `margins-large`: `margins-large` = "margins-large".asInstanceOf[`margins-large`]
+  @scala.inline
+  def `margins-medium`: `margins-medium` = "margins-medium".asInstanceOf[`margins-medium`]
+  @scala.inline
+  def `margins-small`: `margins-small` = "margins-small".asInstanceOf[`margins-small`]
+  @scala.inline
   def maroon: maroon = "maroon".asInstanceOf[maroon]
   @scala.inline
   def maximize: maximize = "maximize".asInstanceOf[maximize]
   @scala.inline
   def md: md = "md".asInstanceOf[md]
+  @scala.inline
+  def megaphone: megaphone = "megaphone".asInstanceOf[megaphone]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
@@ -837,6 +1163,8 @@ object gestaltLibStrings {
   @scala.inline
   def orchid: orchid = "orchid".asInstanceOf[orchid]
   @scala.inline
+  def `overlay-text`: `overlay-text` = "overlay-text".asInstanceOf[`overlay-text`]
+  @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
@@ -867,13 +1195,19 @@ object gestaltLibStrings {
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   @scala.inline
+  def refresh: refresh = "refresh".asInstanceOf[refresh]
+  @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
+  def `reorder-images`: `reorder-images` = "reorder-images".asInstanceOf[`reorder-images`]
+  @scala.inline
   def report: report = "report".asInstanceOf[report]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def rotate: rotate = "rotate".asInstanceOf[rotate]
   @scala.inline
   def rounded: rounded = "rounded".asInstanceOf[rounded]
   @scala.inline
@@ -895,6 +1229,8 @@ object gestaltLibStrings {
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline
+  def security: security = "security".asInstanceOf[security]
+  @scala.inline
   def self: self = "self".asInstanceOf[self]
   @scala.inline
   def send: send = "send".asInstanceOf[send]
@@ -911,6 +1247,10 @@ object gestaltLibStrings {
   @scala.inline
   def `smiley-outline`: `smiley-outline` = "smiley-outline".asInstanceOf[`smiley-outline`]
   @scala.inline
+  def `sort-ascending`: `sort-ascending` = "sort-ascending".asInstanceOf[`sort-ascending`]
+  @scala.inline
+  def `sort-descending`: `sort-descending` = "sort-descending".asInstanceOf[`sort-descending`]
+  @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
   @scala.inline
   def speech: speech = "speech".asInstanceOf[speech]
@@ -919,6 +1259,8 @@ object gestaltLibStrings {
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   @scala.inline
+  def star: star = "star".asInstanceOf[star]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
   def static: static = "static".asInstanceOf[static]
@@ -926,6 +1268,8 @@ object gestaltLibStrings {
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
+  @scala.inline
+  def `switch-account`: `switch-account` = "switch-account".asInstanceOf[`switch-account`]
   @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
   @scala.inline
@@ -939,7 +1283,27 @@ object gestaltLibStrings {
   @scala.inline
   def `text-align-right`: `text-align-right` = "text-align-right".asInstanceOf[`text-align-right`]
   @scala.inline
+  def `text-all-caps`: `text-all-caps` = "text-all-caps".asInstanceOf[`text-all-caps`]
+  @scala.inline
+  def `text-extra-small`: `text-extra-small` = "text-extra-small".asInstanceOf[`text-extra-small`]
+  @scala.inline
+  def `text-large`: `text-large` = "text-large".asInstanceOf[`text-large`]
+  @scala.inline
+  def `text-line-height`: `text-line-height` = "text-line-height".asInstanceOf[`text-line-height`]
+  @scala.inline
+  def `text-medium`: `text-medium` = "text-medium".asInstanceOf[`text-medium`]
+  @scala.inline
+  def `text-sentence-case`: `text-sentence-case` = "text-sentence-case".asInstanceOf[`text-sentence-case`]
+  @scala.inline
+  def `text-size`: `text-size` = "text-size".asInstanceOf[`text-size`]
+  @scala.inline
+  def `text-small`: `text-small` = "text-small".asInstanceOf[`text-small`]
+  @scala.inline
+  def `text-spacing`: `text-spacing` = "text-spacing".asInstanceOf[`text-spacing`]
+  @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
+  @scala.inline
+  def `trash-can`: `trash-can` = "trash-can".asInstanceOf[`trash-can`]
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   @scala.inline
@@ -948,6 +1312,8 @@ object gestaltLibStrings {
   def url: url = "url".asInstanceOf[url]
   @scala.inline
   def username: username = "username".asInstanceOf[username]
+  @scala.inline
+  def `video-camera`: `video-camera` = "video-camera".asInstanceOf[`video-camera`]
   @scala.inline
   def `video/m3u8`: `video/m3u8` = "video/m3u8".asInstanceOf[`video/m3u8`]
   @scala.inline

@@ -46,8 +46,6 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
   ] = js.native
   @JSName("ListView")
   var ListView_Original: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_DataSource, T] = js.native
-  @JSName("MapView")
-  var MapView_Original: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_PinColors, T] = js.native
   @JSName("Modal")
   var Modal_Original: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Modal], 
@@ -1140,74 +1138,6 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_DataSource, T, js.Object with U, scala.Nothing] = js.native
-  def MapView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object, scala.Nothing] = js.native
-  def MapView(
-    first: stdLib.TemplateStringsArray,
-    rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object, 
-        T
-      ]
-    ])*
-  ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object, scala.Nothing] = js.native
-  def MapView(
-    first: styledDashComponentsLib.styledDashComponentsMod.CSSObject,
-    rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object, 
-        T
-      ]
-    ])*
-  ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object, scala.Nothing] = js.native
-  def MapView(
-    first: styledDashComponentsLib.styledDashComponentsMod.InterpolationFunction[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object, 
-        T
-      ]
-    ],
-    rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object, 
-        T
-      ]
-    ])*
-  ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object, scala.Nothing] = js.native
-  @JSName("MapView")
-  def MapView_UObject[U /* <: js.Object */](
-    first: stdLib.TemplateStringsArray,
-    rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object with U, 
-        T
-      ]
-    ])*
-  ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object with U, scala.Nothing] = js.native
-  @JSName("MapView")
-  def MapView_UObject[U /* <: js.Object */](
-    first: styledDashComponentsLib.styledDashComponentsMod.CSSObject,
-    rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object with U, 
-        T
-      ]
-    ])*
-  ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object with U, scala.Nothing] = js.native
-  @JSName("MapView")
-  def MapView_UObject[U /* <: js.Object */](
-    first: styledDashComponentsLib.styledDashComponentsMod.InterpolationFunction[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object with U, 
-        T
-      ]
-    ],
-    rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
-        styledDashComponentsLib.styledDashComponentsMod.StyledComponentPropsWithRef[styledDashComponentsLib.Anon_PinColors] with js.Object with U, 
-        T
-      ]
-    ])*
-  ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object with U, scala.Nothing] = js.native
   def Modal(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Modal], 
     T, 

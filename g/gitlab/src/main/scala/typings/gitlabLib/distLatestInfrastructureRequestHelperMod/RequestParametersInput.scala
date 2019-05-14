@@ -10,7 +10,7 @@ trait RequestParametersInput extends js.Object {
   var formData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any
   ] = js.undefined
-  var headers: scala.Nothing
+  var headers: /* import warning: ImportType.apply Failed type conversion: any['headers'] */ js.Any
   var json: js.UndefOr[scala.Boolean] = js.undefined
   var qs: js.UndefOr[js.Object] = js.undefined
   var qsStringifyOptions: js.UndefOr[js.Object] = js.undefined
@@ -22,7 +22,7 @@ trait RequestParametersInput extends js.Object {
 object RequestParametersInput {
   @scala.inline
   def apply(
-    headers: scala.Nothing,
+    headers: /* import warning: ImportType.apply Failed type conversion: any['headers'] */ js.Any,
     body: js.Object = null,
     formData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any = null,
     json: js.UndefOr[scala.Boolean] = js.undefined,

@@ -36,6 +36,7 @@ object optionNs extends js.Object {
   def getOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[fpDashTsLib.libOptionMod.Option[A]] = js.native
   def getRefinement[A, B /* <: A */](getOption: js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]]): fpDashTsLib.libFunctionMod.Refinement[A, B] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libOptionMod.Option[A]] = js.native
+  def getShow[A](S: fpDashTsLib.libShowMod.Show[A]): fpDashTsLib.libShowMod.Show[fpDashTsLib.libOptionMod.Option[A]] = js.native
   def isNone[A](fa: fpDashTsLib.libOptionMod.Option[A]): /* is fp-ts.fp-ts/lib/Option.None<A> */ scala.Boolean = js.native
   def isSome[A](fa: fpDashTsLib.libOptionMod.Option[A]): /* is fp-ts.fp-ts/lib/Option.Some<A> */ scala.Boolean = js.native
   def some[A](a: A): fpDashTsLib.libOptionMod.Option[A] = js.native

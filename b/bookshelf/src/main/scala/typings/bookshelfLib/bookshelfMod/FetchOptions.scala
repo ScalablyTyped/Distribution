@@ -17,7 +17,7 @@ object FetchOptions {
     columns: java.lang.String | js.Array[java.lang.String] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     require: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.Transaction[_] = null,
+    transacting: knexLib.knexMod.Transaction = null,
     withRelated: js.Array[java.lang.String | WithRelatedQuery] = null,
     withSchema: java.lang.String = null
   ): FetchOptions = {

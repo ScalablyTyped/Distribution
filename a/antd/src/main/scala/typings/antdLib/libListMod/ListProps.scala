@@ -26,6 +26,7 @@ trait ListProps[T] extends js.Object {
   var rowKey: js.UndefOr[js.Any] = js.undefined
   var size: js.UndefOr[ListSize] = js.undefined
   var split: js.UndefOr[scala.Boolean] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   def renderItem(item: T, index: scala.Double): reactLib.reactMod.ReactNode
 }
 
@@ -50,7 +51,8 @@ object ListProps {
     prefixCls: java.lang.String = null,
     rowKey: js.Any = null,
     size: ListSize = null,
-    split: js.UndefOr[scala.Boolean] = js.undefined
+    split: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.CSSProperties = null
   ): ListProps[T] = {
     val __obj = js.Dynamic.literal(dataSource = dataSource, renderItem = js.Any.fromFunction2(renderItem))
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
@@ -70,6 +72,7 @@ object ListProps {
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
+    if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ListProps[T]]
   }
 }

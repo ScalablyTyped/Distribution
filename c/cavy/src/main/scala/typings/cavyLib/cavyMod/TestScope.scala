@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TestScope () extends js.Object {
   var component: Tester = js.native
+  def beforeEach(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   def describe(label: java.lang.String, fn: js.Function0[scala.Unit]): scala.Unit = js.native
   def exists(identifier: java.lang.String): js.Promise[cavyLib.cavyLibNumbers.`true`] = js.native
   def fillIn(identifier: java.lang.String, str: java.lang.String): js.Promise[scala.Unit] = js.native

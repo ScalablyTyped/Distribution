@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object atMaterialDashUiCoreMod {
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
+  {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
     */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.ConsistentWith with js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type Overwrite[T, U] = (Omit[T, java.lang.String]) with U

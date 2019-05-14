@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("paper.Rectangle")
 @js.native
-class Rectangle protected () extends js.Object {
+class Rectangle protected () extends Base {
   /**
     * Creates a Rectangle object.
     * @param object - an object containing properties to be set on the rectangle.

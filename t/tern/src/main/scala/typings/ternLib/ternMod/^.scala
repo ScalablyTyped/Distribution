@@ -21,7 +21,7 @@ object ^ extends js.Object {
   def analyze(ast: estreeLib.estreeMod.Program, name: java.lang.String): scala.Unit = js.native
   def analyze(ast: estreeLib.estreeMod.Program, name: java.lang.String, scope: ternLib.libInferMod.Scope): scala.Unit = js.native
   def cx(): ternLib.libInferMod.Context = js.native
-  def defineQueryType[T /* <: scala.Nothing */](name: T, desc: ternLib.libTernMod.Desc[T]): scala.Unit = js.native
+  def defineQueryType[T /* <: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.Query['type'] */ js.Any */](name: T, desc: ternLib.libTernMod.Desc[T]): scala.Unit = js.native
   def didGuess(): scala.Boolean = js.native
   def expressionType(expr: ternLib.Anon_NodeState): ternLib.libInferMod.AVal | ternLib.libInferMod.Type = js.native
   def findClosestExpression(ast: estreeLib.estreeMod.Program, start: js.UndefOr[scala.Nothing], end: scala.Double): ternLib.Anon_Node | scala.Null = js.native

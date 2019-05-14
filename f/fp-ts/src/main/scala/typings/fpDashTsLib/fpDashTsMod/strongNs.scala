@@ -115,6 +115,14 @@ object strongNs extends js.Object {
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, js.Tuple2[_, _]]
   ] = js.native
   @JSName("fanout")
+  def fanout_Traced(
+    F: fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.fpDashTsLibStrings.Traced] with fpDashTsLib.libStrongMod.Strong2[fpDashTsLib.fpDashTsLibStrings.Traced]
+  ): js.Function2[
+    /* pab */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* pac */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, js.Tuple2[_, _]]
+  ] = js.native
+  @JSName("fanout")
   def fanout_Tuple(
     F: fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.fpDashTsLibStrings.Tuple] with fpDashTsLib.libStrongMod.Strong2[fpDashTsLib.fpDashTsLibStrings.Tuple]
   ): js.Function2[
@@ -243,6 +251,14 @@ object strongNs extends js.Object {
     /* pab */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     /* pcd */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, _, _], 
     fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.These, js.Tuple2[_, _], js.Tuple2[_, _]]
+  ] = js.native
+  @JSName("splitStrong")
+  def splitStrong_Traced(
+    F: fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.fpDashTsLibStrings.Traced] with fpDashTsLib.libStrongMod.Strong2[fpDashTsLib.fpDashTsLibStrings.Traced]
+  ): js.Function2[
+    /* pab */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    /* pcd */ fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, _, _], 
+    fpDashTsLib.libHKTMod.Type2[fpDashTsLib.fpDashTsLibStrings.Traced, js.Tuple2[_, _], js.Tuple2[_, _]]
   ] = js.native
   @JSName("splitStrong")
   def splitStrong_Tuple(

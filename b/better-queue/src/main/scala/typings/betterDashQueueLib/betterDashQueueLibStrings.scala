@@ -23,6 +23,14 @@ object betterDashQueueLibStrings {
     extends betterDashQueueLib.betterDashQueueMod.QueueEvent
   
   @js.native
+  sealed trait drain
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
+  
+  @js.native
+  sealed trait empty
+    extends betterDashQueueLib.betterDashQueueMod.QueueEvent
+  
+  @js.native
   sealed trait error
     extends betterDashQueueLib.betterDashQueueMod.QueueEvent
        with betterDashQueueLib.betterDashQueueMod.TicketEvent
@@ -79,6 +87,10 @@ object betterDashQueueLibStrings {
   def batch_finish: batch_finish = "batch_finish".asInstanceOf[batch_finish]
   @scala.inline
   def batch_progress: batch_progress = "batch_progress".asInstanceOf[batch_progress]
+  @scala.inline
+  def drain: drain = "drain".asInstanceOf[drain]
+  @scala.inline
+  def empty: empty = "empty".asInstanceOf[empty]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

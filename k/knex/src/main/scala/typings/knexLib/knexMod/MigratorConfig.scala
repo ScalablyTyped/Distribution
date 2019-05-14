@@ -10,8 +10,6 @@ trait MigratorConfig extends js.Object {
   var directory: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var disableTransactions: js.UndefOr[scala.Boolean] = js.undefined
   var extension: js.UndefOr[java.lang.String] = js.undefined
-  var loadExtensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var migrationSource: js.UndefOr[js.Any] = js.undefined
   var schemaName: js.UndefOr[java.lang.String] = js.undefined
   var sortDirsSeparately: js.UndefOr[scala.Boolean] = js.undefined
   var tableName: js.UndefOr[java.lang.String] = js.undefined
@@ -24,8 +22,6 @@ object MigratorConfig {
     directory: java.lang.String | js.Array[java.lang.String] = null,
     disableTransactions: js.UndefOr[scala.Boolean] = js.undefined,
     extension: java.lang.String = null,
-    loadExtensions: js.Array[java.lang.String] = null,
-    migrationSource: js.Any = null,
     schemaName: java.lang.String = null,
     sortDirsSeparately: js.UndefOr[scala.Boolean] = js.undefined,
     tableName: java.lang.String = null
@@ -35,8 +31,6 @@ object MigratorConfig {
     if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
     if (!js.isUndefined(disableTransactions)) __obj.updateDynamic("disableTransactions")(disableTransactions)
     if (extension != null) __obj.updateDynamic("extension")(extension)
-    if (loadExtensions != null) __obj.updateDynamic("loadExtensions")(loadExtensions)
-    if (migrationSource != null) __obj.updateDynamic("migrationSource")(migrationSource)
     if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
     if (!js.isUndefined(sortDirsSeparately)) __obj.updateDynamic("sortDirsSeparately")(sortDirsSeparately)
     if (tableName != null) __obj.updateDynamic("tableName")(tableName)

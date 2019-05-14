@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param handleIn [optional] - the handle point relative to the anchor point of the segment that describes the in tangent of the segment default: {x: 0, y: 0}
   * @param handleOut [optional] - the handle point relative to the anchor point of the segment that describes the out tangent of the segment default: {x: 0, y: 0}
   */
-class Segment () extends js.Object {
+class Segment () extends Base {
   def this(`object`: js.Any) = this()
   def this(point: Point) = this()
   def this(point: Point, handleIn: Point) = this()

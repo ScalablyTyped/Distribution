@@ -19,7 +19,7 @@ package object prosemirrorDashTestDashBuilderMod {
       MarkBuilderMethod[
         prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[java.lang.String, java.lang.String]
       ]
-    ]) with prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderLibStrings.Builder with js.Any
+    ]) with prosemirrorDashTestDashBuilderLib.prosemirrorDashTestDashBuilderLibStrings.Builder with (stdLib.Record[java.lang.String, NodeTypeAttributes | MarkTypeAttributes])
   ]
   type MarkBuilderMethod[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] = js.Function1[/* args */ prosemirrorDashTestDashBuilderLib.Args, TaggedFlatObject[S]]
   type NodeBuilderMethod[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] = js.Function1[/* args */ prosemirrorDashTestDashBuilderLib.Args, TaggedProsemirrorNode[S]]

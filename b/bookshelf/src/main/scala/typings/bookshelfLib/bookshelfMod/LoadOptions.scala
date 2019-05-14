@@ -14,7 +14,7 @@ object LoadOptions {
   def apply(
     withRelated: js.Array[java.lang.String | WithRelatedQuery],
     debug: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.Transaction[_] = null,
+    transacting: knexLib.knexMod.Transaction = null,
     withSchema: java.lang.String = null
   ): LoadOptions = {
     val __obj = js.Dynamic.literal(withRelated = withRelated)

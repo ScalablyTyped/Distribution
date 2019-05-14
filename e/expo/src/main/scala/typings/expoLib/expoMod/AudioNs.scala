@@ -85,12 +85,11 @@ object AudioNs extends js.Object {
     var ios: expoLib.Anon_AudioQuality
   }
   
-  @js.native
   trait RecordingStatus extends js.Object {
-    var canRecord: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
-    var durationMillis: js.UndefOr[scala.Double] = js.native
-    var isDoneRecording: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.native
-    var isRecording: js.UndefOr[scala.Boolean] = js.native
+    var canRecord: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.undefined
+    var durationMillis: js.UndefOr[scala.Double] = js.undefined
+    var isDoneRecording: js.UndefOr[expoLib.expoLibNumbers.`false` | expoLib.expoLibNumbers.`true`] = js.undefined
+    var isRecording: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   /** This class represents a sound corresponding to an Asset or URL. */

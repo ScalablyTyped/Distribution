@@ -1,7 +1,7 @@
 
 # Scala.js typings for knex
 
-Typings are for version 0.16.7
+Typings are for version 0.16.5
 
 ## Library description:
 A batteries-included SQL query & schema builder for Postgres, MySQL and SQLite3 and the Browser
@@ -35,13 +35,15 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
+// Type definitions for Knex.js
+// -----
 // Originally based on contributions to DefinitelyTyped:
 // Definitions by: Qubo <https://github.com/tkQubo>
 //                 Pablo Rodríguez <https://github.com/MeLlamoPablo>
 //                 Matt R. Wilson <https://github.com/mastermatt>
 //                 Satana Charuwichitratana <https://github.com/micksatana>
 //                 Shrey Jain <https://github.com/shreyjain1994>
-// TypeScript Version: 3.2
+// TypeScript Version: 2.8
 
 ```
 

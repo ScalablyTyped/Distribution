@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof aphrodite.aphrodite.BaseCSSProperties, 'fontFamily' | 'transition' | 'animationName'> ]: aphrodite.aphrodite.BaseCSSProperties[P]} */ trait OpenCSSProperties
   extends aphroditeLib.Anon_AnimationName
      with /* k */ org.scalablytyped.runtime.StringDictionary[
-      (js.UndefOr[
-        FontFamily | js.Array[FontFamily] | java.lang.String | OpenCSSProperties | js.Array[OpenCSSProperties]
-      ]) | CSSProperties
+      (/* import warning: ImportType.apply Failed type conversion: aphrodite.aphrodite.CSSProperties[keyof aphrodite.aphrodite.CSSProperties] */ js.Any) | CSSProperties
     ]
 
 object OpenCSSProperties {
   @scala.inline
   def apply(
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[
-      (js.UndefOr[
-        FontFamily | js.Array[FontFamily] | java.lang.String | OpenCSSProperties | js.Array[OpenCSSProperties]
-      ]) | CSSProperties
+      (/* import warning: ImportType.apply Failed type conversion: aphrodite.aphrodite.CSSProperties[keyof aphrodite.aphrodite.CSSProperties] */ js.Any) | CSSProperties
     ] = null,
     animationName: java.lang.String | OpenCSSProperties | js.Array[OpenCSSProperties] = null,
     fontFamily: FontFamily | js.Array[FontFamily] = null

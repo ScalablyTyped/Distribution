@@ -29,6 +29,9 @@ package object clientsDatasyncMod {
   type Ec2SecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
   type Ec2SubnetArn = java.lang.String
   type EfsFilesystemArn = java.lang.String
+  type FilterList = js.Array[FilterRule]
+  type FilterType = awsDashSdkLib.awsDashSdkLibStrings.SIMPLE_PATTERN | java.lang.String
+  type FilterValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.NONE
     - awsDashSdkLib.awsDashSdkLibStrings.INT_VALUE
@@ -50,6 +53,15 @@ package object clientsDatasyncMod {
   */
   type Mtime = _Mtime | java.lang.String
   type NextToken = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC
+    - awsDashSdkLib.awsDashSdkLibStrings.NFS3
+    - awsDashSdkLib.awsDashSdkLibStrings.NFS4_0
+    - awsDashSdkLib.awsDashSdkLibStrings.NFS4_1
+    - java.lang.String
+  */
+  type NfsVersion = _NfsVersion | java.lang.String
+  type NonEmptySubdirectory = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.PENDING
     - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS

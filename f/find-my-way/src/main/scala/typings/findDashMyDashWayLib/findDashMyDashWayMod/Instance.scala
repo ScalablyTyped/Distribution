@@ -123,14 +123,15 @@ trait Instance[V /* <: HTTPVersion */] extends js.Object {
   def lock(path: java.lang.String, handler: Handler[V], store: js.Any): scala.Unit = js.native
   def lock(path: java.lang.String, opts: RouteOptions, handler: Handler[V]): scala.Unit = js.native
   def lock(path: java.lang.String, opts: RouteOptions, handler: Handler[V], store: js.Any): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.http2Mod.Http2ServerRequest, res: nodeLib.http2Mod.Http2ServerResponse): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.http2Mod.Http2ServerRequest, res: nodeLib.http2Mod.Http2ServerResponse, ctx: Context): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.http2Mod.Http2ServerRequest, res: nodeLib.httpMod.ServerResponse): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.http2Mod.Http2ServerRequest, res: nodeLib.httpMod.ServerResponse, ctx: Context): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.httpMod.IncomingMessage, res: nodeLib.http2Mod.Http2ServerResponse): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.httpMod.IncomingMessage, res: nodeLib.http2Mod.Http2ServerResponse, ctx: Context): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): scala.Unit = js.native
-  def lookup[Context](req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse, ctx: Context): scala.Unit = js.native
+  def lookup[Context](
+    req: nodeLib.http2Mod.Http2ServerRequest | nodeLib.httpMod.IncomingMessage,
+    res: nodeLib.http2Mod.Http2ServerResponse | nodeLib.httpMod.ServerResponse
+  ): scala.Unit = js.native
+  def lookup[Context](
+    req: nodeLib.http2Mod.Http2ServerRequest | nodeLib.httpMod.IncomingMessage,
+    res: nodeLib.http2Mod.Http2ServerResponse | nodeLib.httpMod.ServerResponse,
+    ctx: Context
+  ): scala.Unit = js.native
   def `m-search`(path: java.lang.String, handler: Handler[V]): scala.Unit = js.native
   def `m-search`(path: java.lang.String, handler: Handler[V], store: js.Any): scala.Unit = js.native
   def `m-search`(path: java.lang.String, opts: RouteOptions, handler: Handler[V]): scala.Unit = js.native
