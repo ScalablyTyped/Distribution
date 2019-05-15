@@ -33,6 +33,7 @@ object AssociationOptionsBelongsTo {
     keyType: DataTypeAbstract = null,
     onDelete: java.lang.String = null,
     onUpdate: java.lang.String = null,
+    scope: AssociationScope = null,
     targetKey: java.lang.String = null
   ): AssociationOptionsBelongsTo = {
     val __obj = js.Dynamic.literal()
@@ -44,6 +45,7 @@ object AssociationOptionsBelongsTo {
     if (keyType != null) __obj.updateDynamic("keyType")(keyType)
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
     if (targetKey != null) __obj.updateDynamic("targetKey")(targetKey)
     __obj.asInstanceOf[AssociationOptionsBelongsTo]
   }

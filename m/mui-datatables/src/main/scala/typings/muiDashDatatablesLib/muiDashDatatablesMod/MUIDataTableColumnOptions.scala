@@ -29,6 +29,9 @@ trait MUIDataTableColumnOptions extends js.Object {
   var filter: js.UndefOr[scala.Boolean] = js.undefined
   var filterList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var filterOptions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var filterType: js.UndefOr[
+    muiDashDatatablesLib.muiDashDatatablesLibStrings.dropdown | muiDashDatatablesLib.muiDashDatatablesLibStrings.checkbox | muiDashDatatablesLib.muiDashDatatablesLibStrings.multiselect | muiDashDatatablesLib.muiDashDatatablesLibStrings.textField
+  ] = js.undefined
   var hint: js.UndefOr[java.lang.String] = js.undefined
   var print: js.UndefOr[scala.Boolean] = js.undefined
   var searchable: js.UndefOr[scala.Boolean] = js.undefined
@@ -57,6 +60,7 @@ object MUIDataTableColumnOptions {
     filter: js.UndefOr[scala.Boolean] = js.undefined,
     filterList: js.Array[java.lang.String] = null,
     filterOptions: js.Array[java.lang.String] = null,
+    filterType: muiDashDatatablesLib.muiDashDatatablesLibStrings.dropdown | muiDashDatatablesLib.muiDashDatatablesLibStrings.checkbox | muiDashDatatablesLib.muiDashDatatablesLibStrings.multiselect | muiDashDatatablesLib.muiDashDatatablesLibStrings.textField = null,
     hint: java.lang.String = null,
     print: js.UndefOr[scala.Boolean] = js.undefined,
     searchable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -73,6 +77,7 @@ object MUIDataTableColumnOptions {
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
     if (filterList != null) __obj.updateDynamic("filterList")(filterList)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (hint != null) __obj.updateDynamic("hint")(hint)
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
     if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)

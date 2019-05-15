@@ -121,6 +121,8 @@ class Vector protected () extends js.Object {
     * and a line if it is 3D. Be careful with line directions!
     */
   def rotate(t: scala.Double, obj: Vector): Vector = js.native
+  def rotate(t: Matrix, obj: Line): Vector = js.native
+  def rotate(t: Matrix, obj: Vector): Vector = js.native
   /**
     * Returns the result of rounding the elements of the vector.
     */

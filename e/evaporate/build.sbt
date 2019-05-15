@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "evaporate"
-version := "2.1-dt-20180829Z-cc6438"
+version := "2.1-dt-20190514Z-cc6438"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

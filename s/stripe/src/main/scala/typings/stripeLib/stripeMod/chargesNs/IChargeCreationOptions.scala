@@ -15,15 +15,13 @@ trait IChargeCreationOptions
     */
   var amount: scala.Double
   /**
-    * A fee in pence that will be applied to the charge and transferred to the
-    * application owner's Stripe account. To use an application fee, the request
-    * must be made on behalf of another account, using the Stripe-Account
-    * header, an OAuth key, or the destination parameter. For more
-    * information, see the application fees documentation.
-    *
-    * Connect only.
+    * A fee in cents that will be applied to the charge and transferred
+    * to the application owner’s Stripe account. The request must be
+    * made with an OAuth key or the Stripe-Account header in order to
+    * take an application fee. For more information, see the
+    * application fees documentation.
     */
-  var application_fee: js.UndefOr[scala.Double] = js.undefined
+  var application_fee_amount: js.UndefOr[scala.Double] = js.undefined
   /**
     * Whether or not to immediately capture the charge. When false, the charge
     * issues an authorization (or pre-authorization), and will need to be
@@ -115,7 +113,7 @@ object IChargeCreationOptions {
   def apply(
     amount: scala.Double,
     currency: java.lang.String,
-    application_fee: scala.Int | scala.Double = null,
+    application_fee_amount: scala.Int | scala.Double = null,
     capture: js.UndefOr[scala.Boolean] = js.undefined,
     customer: java.lang.String = null,
     description: java.lang.String = null,
@@ -131,7 +129,7 @@ object IChargeCreationOptions {
     transfer_group: java.lang.String = null
   ): IChargeCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency)
-    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (application_fee_amount != null) __obj.updateDynamic("application_fee_amount")(application_fee_amount.asInstanceOf[js.Any])
     if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (description != null) __obj.updateDynamic("description")(description)

@@ -11,7 +11,7 @@ trait DescribeAggregateIdFormatResult extends js.Object {
     */
   var Statuses: js.UndefOr[IdFormatList] = js.undefined
   /**
-    * Indicates whether all resource types in the region are configured to use longer IDs. This value is only true if all users are configured to use longer IDs for all resources types in the region.
+    * Indicates whether all resource types in the Region are configured to use longer IDs. This value is only true if all users are configured to use longer IDs for all resources types in the Region.
     */
   var UseLongIdsAggregated: js.UndefOr[Boolean] = js.undefined
 }

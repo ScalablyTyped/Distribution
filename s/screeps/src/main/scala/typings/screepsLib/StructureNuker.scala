@@ -52,6 +52,11 @@ class StructureNukerCls protected () extends StructureNuker {
   /* CompleteClass */
   override var cooldown: scala.Double = js.native
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The amount of energy contained in this structure.
     */
   /* CompleteClass */
@@ -149,6 +154,7 @@ object StructureNuker {
   def apply(
     cooldown: scala.Double,
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     energy: scala.Double,
     energyCapacity: scala.Double,
     ghodium: scala.Double,
@@ -165,7 +171,7 @@ object StructureNuker {
     room: Room,
     structureType: STRUCTURE_NUKER
   ): StructureNuker = {
-    val __obj = js.Dynamic.literal(cooldown = cooldown, destroy = js.Any.fromFunction0(destroy), energy = energy, energyCapacity = energyCapacity, ghodium = ghodium, ghodiumCapacity = ghodiumCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), launchNuke = js.Any.fromFunction1(launchNuke), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(cooldown = cooldown, destroy = js.Any.fromFunction0(destroy), effects = effects, energy = energy, energyCapacity = energyCapacity, ghodium = ghodium, ghodiumCapacity = ghodiumCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), launchNuke = js.Any.fromFunction1(launchNuke), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructureNuker]
   }

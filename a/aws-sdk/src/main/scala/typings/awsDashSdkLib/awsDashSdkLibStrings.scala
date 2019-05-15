@@ -5092,6 +5092,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPollyMod._VoiceId
   
   @js.native
+  sealed trait ChatBot extends js.Object
+  
+  @js.native
   sealed trait ChildHealthChecks
     extends awsDashSdkLib.clientsRoute53Mod._ResettableElementName
   
@@ -30228,6 +30231,8 @@ object awsDashSdkLibStrings {
   def ChangeInCapacity: ChangeInCapacity = "ChangeInCapacity".asInstanceOf[ChangeInCapacity]
   @scala.inline
   def Chantal: Chantal = "Chantal".asInstanceOf[Chantal]
+  @scala.inline
+  def ChatBot: ChatBot = "ChatBot".asInstanceOf[ChatBot]
   @scala.inline
   def ChildHealthChecks: ChildHealthChecks = "ChildHealthChecks".asInstanceOf[ChildHealthChecks]
   @scala.inline

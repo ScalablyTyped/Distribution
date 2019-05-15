@@ -32,6 +32,11 @@ trait StructureRampart
 class StructureRampartCls protected () extends StructureRampart {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The current amount of hit points of the structure.
     */
   /* CompleteClass */
@@ -118,6 +123,7 @@ object StructureRampart {
   @scala.inline
   def apply(
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
@@ -132,7 +138,7 @@ object StructureRampart {
     structureType: STRUCTURE_RAMPART,
     ticksToDecay: scala.Double
   ): StructureRampart = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), isPublic = isPublic, my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, setPublic = js.Any.fromFunction1(setPublic), structureType = structureType, ticksToDecay = ticksToDecay)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), isPublic = isPublic, my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, setPublic = js.Any.fromFunction1(setPublic), structureType = structureType, ticksToDecay = ticksToDecay)
   
     __obj.asInstanceOf[StructureRampart]
   }

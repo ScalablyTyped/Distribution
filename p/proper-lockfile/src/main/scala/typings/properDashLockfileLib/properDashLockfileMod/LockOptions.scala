@@ -15,7 +15,7 @@ trait LockOptions extends js.Object {
    // default: 0
   var realpath: js.UndefOr[scala.Boolean] = js.undefined
    // default: stale/2
-  var retries: js.UndefOr[scala.Double] = js.undefined
+  var retries: js.UndefOr[scala.Double | retryLib.retryMod.TimeoutsOptions] = js.undefined
   var stale: js.UndefOr[scala.Double] = js.undefined
    // default: 10000
   var update: js.UndefOr[scala.Double] = js.undefined
@@ -28,7 +28,7 @@ object LockOptions {
     lockfilePath: java.lang.String = null,
     onCompromised: /* err */ stdLib.Error => _ = null,
     realpath: js.UndefOr[scala.Boolean] = js.undefined,
-    retries: scala.Int | scala.Double = null,
+    retries: scala.Double | retryLib.retryMod.TimeoutsOptions = null,
     stale: scala.Int | scala.Double = null,
     update: scala.Int | scala.Double = null
   ): LockOptions = {

@@ -11,6 +11,7 @@ trait Request extends js.Object {
   var entity: js.UndefOr[js.Any] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
+  var mixin: js.UndefOr[js.Any] = js.undefined
   var originator: js.UndefOr[js.Function1[/* request */ js.UndefOr[Request], ResponsePromise]] = js.undefined
   var params: js.UndefOr[js.Any] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
@@ -24,6 +25,7 @@ object Request {
     entity: js.Any = null,
     headers: js.Any = null,
     method: java.lang.String = null,
+    mixin: js.Any = null,
     originator: /* request */ js.UndefOr[Request] => ResponsePromise = null,
     params: js.Any = null,
     path: java.lang.String = null
@@ -34,6 +36,7 @@ object Request {
     if (entity != null) __obj.updateDynamic("entity")(entity)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)
+    if (mixin != null) __obj.updateDynamic("mixin")(mixin)
     if (originator != null) __obj.updateDynamic("originator")(js.Any.fromFunction1(originator))
     if (params != null) __obj.updateDynamic("params")(params)
     if (path != null) __obj.updateDynamic("path")(path)

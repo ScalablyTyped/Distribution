@@ -35,6 +35,14 @@ class View[TModel /* <: Model */] () extends js.Object {
   def events(): EventsHash = js.native
   def initialize(): scala.Unit = js.native
   def initialize(options: ViewOptions[TModel]): scala.Unit = js.native
+  /**
+    * For use with views as ES classes. If you define a preinitialize
+    * method, it will be invoked when the view is first created, before any
+    * instantiation logic is run.
+    * @see https://backbonejs.org/#View-preinitialize
+    */
+  def preinitialize(): scala.Unit = js.native
+  def preinitialize(options: ViewOptions[TModel]): scala.Unit = js.native
   def remove(): View[TModel] = js.native
   def render(): View[TModel] = js.native
   def setElement(element: jqueryLib.JQuery[stdLib.HTMLElement]): View[TModel] = js.native

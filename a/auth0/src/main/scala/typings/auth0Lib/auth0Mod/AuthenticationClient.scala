@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class AuthenticationClient protected () extends js.Object {
   def this(options: AuthenticationClientOptions) = this()
   // Members
-  var database: js.UndefOr[DatabaseAuthenticator] = js.native
+  var database: js.UndefOr[DatabaseAuthenticator[AppMetadata, UserMetadata]] = js.native
   var oauth: js.UndefOr[OAuthAuthenticator] = js.native
   var passwordless: js.UndefOr[PasswordlessAuthenticator] = js.native
   var tokens: js.UndefOr[TokenManager] = js.native
-  var users: js.UndefOr[UsersManager] = js.native
+  var users: js.UndefOr[UsersManager[AppMetadata, UserMetadata]] = js.native
   def changePassword(data: ResetPasswordOptions): js.Promise[_] = js.native
   def changePassword(
     data: ResetPasswordOptions,

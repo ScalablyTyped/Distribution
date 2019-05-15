@@ -388,6 +388,7 @@
 | [azure](./a/azure) | Microsoft Azure Client Library for node | node, azure |
 | [azure-mobile-services-cli](./a/azure-mobile-services-client) | - | - |
 | [azure-sb](./a/azure-sb) | Microsoft Azure Service Bus Service Library for no | node, azure |
+| [b2a](./b/b2a) | btoa and atob (ie base64 encoding and decoding) su | btoa, encode, decode, atob, base64, unicode, 16-bit, 8-bit, homoglyphs |
 | [b64-lite](./b/b64-lite) | isomorphic base64 library in 152 bytes | b64, isomorphic, small, atob, btoa |
 | [b_](./b/b_) | BEM class name generator | bem, naming, className, class, generator |
 | [babel-code-frame](./b/babel-code-frame) | Generate errors that contain a code frame that poi | - |
@@ -802,6 +803,7 @@
 | [codependency](./c/codependency) | Optional peer dependencies | peer, dependency, dependencies, require, module, semver |
 | [coffeeify](./c/coffeeify) | browserify plugin for coffeescript with support fo | coffeescript, coffee-script, browserify, v2, js, plugin, transform |
 | [coinbase](./c/coinbase) | The Coinbase API for Node.js | API, bitcoin, coinbase, real-time, payments |
+| [coinbase-commerce-node](./c/coinbase-commerce-node) | The Official Coinbase Commerce SDK for Node.js | API, bitcoin, coinbase, commerce, payments |
 | [coinlist](./c/coinlist) | Comprehensive list of cryptocurrencies with metada | crypto, cryptocurrencies, cryptocoins, list |
 | [coinstring](./c/coinstring) | Create and parse crypto currency addresses and wal | cryptography, crypto, bitcoin, litecoin, dogecoin, currency, cryptocurrency, address, wif, base58, bip32 |
 | [collections](./c/collections) | data structures with idiomatic JavaScript collecti | collections, data structures, observable, list, set, map, splay |
@@ -1001,6 +1003,7 @@
 | [crossroads](./c/crossroads) | Flexible router which can be used in multiple envi | routes, event, observer, routing, router |
 | [crpc](./c/crpc) | Simple library for making requests to Cuvva-style  | crpc, cuvva, rpc, client, api |
 | [crumb](./c/crumb) | CSRF crumb generation and validation plugin | hapi, plugin, cookies, csrf, session |
+| [cryptex](./c/cryptex) | Secure secret storage and cryptographic key retrie | crypto, key, keys, secret, secrets, passwords, encrypt, decrypt, encryption, decryption |
 | [cryptiles](./c/cryptiles) | General purpose crypto utilities | cryptography, security, utilites |
 | [crypto-hash](./c/crypto-hash) | Tiny hashing module that uses the native crypto AP | crypto, hash, isomorphic, hashing, hasher, cryptography, sha1, sha256, sha384, sha512, browser |
 | [crypto-js](./c/crypto-js) | JavaScript library of crypto standards. | security, crypto, Hash, MD5, SHA1, SHA-1, SHA256, SHA-256, RC4, Rabbit, AES, DES, PBKDF2, HMAC, OFB, CFB, CTR, CBC, Base64 |
@@ -1177,6 +1180,7 @@
 | [deployjava](./d/deployjava) | - | - |
 | [deprecate](./d/deprecate) | Mark methods as deprecated and warn the user when  | deprecate |
 | [deprecated-decorator](./d/deprecated-decorator) | A simple decorator for deprecated methods and prop | deprecated, decorator, typescript, babel, es7 |
+| [deprecation](./d/deprecation) | Log a deprecation message with stack | deprecate, deprecated, deprecation |
 | [deps-sort](./d/deps-sort) | sort module-deps output for deterministic browseri | dependency, graph, browser, browserify, module-deps, browser-pack, sorted, determinism |
 | [derhuerst__cli-on-key](./d/derhuerst__cli-on-key) | Read command line key presses from process.stdin. | command line, cli, key, keypress, stdin, event |
 | [destroy](./d/destroy) | destroy a stream if possible | stream, streams, destroy, cleanup, leak, fd |
@@ -1213,12 +1217,14 @@
 | [diff-match-patch](./d/diff-match-patch) | npm package for https://github.com/google/diff-mat | diff, diff-match-patch, google-diff-match-patch |
 | [diff2html](./d/diff2html) | Fast Diff to colorized HTML | git, diff, pretty, side, line, side-by-side, line-by-line, character, highlight, pretty, color, html, diff2html, difftohtml, colorized |
 | [diffie-hellman](./d/diffie-hellman) | pure js diffie-hellman | diffie, hellman, diffiehellman, dh |
+| [difflib](./d/difflib) | text diff library ported from Python's difflib mod | diff |
 | [digibyte](./d/digibyte) | A pure and powerful JavaScript DigiByte library. | bitcoin, digibyte, transaction, address, p2p, ecies, cryptocurrency, blockchain, payment, bip21, bip32, bip37, bip69, bip70, multisig |
 | [dinero_dot_js](./d/dinero_dot_js) | An immutable library to create, calculate and form | money, monetary, amount, immutable |
 | [dingtalk-robot-sender](./d/dingtalk-robot-sender) | 钉钉机器人消息推送 | dingtalk, robot |
 | [dir-glob](./d/dir-glob) | Convert directories to glob compatible strings | convert, directory, extensions, files, glob |
 | [dir-resolve](./d/dir-resolve) | Extension for require.resolve which will resolve d | require, resolve, directory |
 | [dirname-regex](./d/dirname-regex) | Regular expression for matching the directory part | dir, directory, dirname, expression, filepath, match, path, regex, regexp, regular |
+| [dirty-chai](./d/dirty-chai) | Extends Chai with lint-friendly terminating assert | chai, chai-plugin, browser, testing |
 | [discontinuous-range](./d/discontinuous-range) | for adding, subtracting, and indexing discontinuou | discontinuous, range, set |
 | [discord-rpc](./d/discord-rpc) | A simple RPC client for Discord | discord, rpc, rich presence, remote procedural call |
 | [discourse-sso](./d/discourse-sso) | Single-sign-on helper package for Discourse | discourse, sso, login, helper package |
@@ -2400,6 +2406,7 @@
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
 | [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
+| [hookrouter](./h/hookrouter) | A hook based router for React | - |
 | [hopscotch](./h/hopscotch) | A framework to make it easy for developers to add  | - |
 | [host-validation](./h/host-validation) | Node.js middleware to validate Host and Referer he | express, middleware, headers, host, header, dns, rebind, validation |
 | [hosted-git-info](./h/hosted-git-info) | Provides metadata and conversions from repository  | git, github, bitbucket, gitlab |
@@ -3090,6 +3097,7 @@
 | [just-debounce-it](./j/just-debounce-it) | return a debounced function | function, debounce, no-dependencies, just |
 | [just-extend](./j/just-extend) | extend an object | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
 | [just-pick](./j/just-pick) | copy an object but with only the specified keys | object, pick, keys, no-dependencies, just |
+| [just-snake-case](./j/just-snake-case) | convert a string to snake case | snake, snake_case, string, no-dependencies, just |
 | [jweixin](./j/jweixin) | wechat js-sdk | - |
 | [jwplayer](./j/jwplayer) | 'jwplayer node js module to make request to jwplay | jwplayer, platform, jwplayer, API |
 | [jws](./j/jws) | Implementation of JSON Web Signatures | jws, json, web, signatures |
@@ -3962,6 +3970,7 @@
 | [morphdom](./m/morphdom) | Morph a DOM tree to another DOM tree (no virtual D | dom, diff, patch, virtual, browser |
 | [morris_dot_js](./m/morris_dot_js) | Easy, pretty charts | - |
 | [mosca](./m/mosca) | MQTT broker as a module | mqtt, mqtt server, publish, subscribe, pubsub, rabbitmq, zeromq, 0mq, amqp, mosquitto, websocket |
+| [motion-scroll](./m/motion-scroll) | scroll to an element or a position with easing | scroll, element, easing, window |
 | [motor-hat](./m/motor-hat) | Node Module to control Adafruits MotorHAT for the  | raspberry, pi, raspberrypi, motor, dc, stepper, servo, motorhat, hat |
 | [mousetrap](./m/mousetrap) | Simple library for handling keyboard shortcuts | keyboard, shortcuts, events |
 | [move-concurrently](./m/move-concurrently) | Promises of moves of files or directories with ren | move |
@@ -4314,6 +4323,7 @@
 | [openapi-factory](./o/openapi-factory) | Build API's and serverless code using node and fir | aws, cloudfront, package creation, microservice, api gateway, serverless, api gateway, aws api gateway, lambda, aws lambda, api, openapi, api factory, openapi factory |
 | [openapi-types](./o/openapi-types) | Types for OpenAPI documents. | openapi, swagger, types, typescript |
 | [opener](./o/opener) | Opens stuff, like webpages and files and executabl | - |
+| [openid-client](./o/openid-client) | OpenID Connect Relying Party (RP, Client) implemen | auth, authentication, basic, certified, client, connect, dynamic, hybrid, identity, implicit, oauth, oauth2, oidc, openid, relying party, passport, strategy |
 | [openjscad](./o/openjscad) | - | - |
 | [openlayers](./o/openlayers) | Build tools and sources for developing OpenLayers  | map, mapping, ol |
 | [openpgp](./o/openpgp) | OpenPGP.js is a Javascript implementation of the O | crypto, pgp, gpg, openpgp |
@@ -5513,6 +5523,7 @@
 | [require-directory](./r/require-directory) | Recursively iterates over specified directory, req | require, directory, library, recursive |
 | [require-from-string](./r/require-from-string) | Require module from string | - |
 | [require-relative](./r/require-relative) | require and resolve modules relative to a path of  | require, resolve, modules, relative |
+| [requireindex](./r/requireindex) | Write minimal node index.js files that require and | require, index, index.js |
 | [requirejs](./r/requirejs) | Node adapter for RequireJS, for loading AMD module | - |
 | [requirejs-domready](./r/requirejs-domready) | An AMD loader plugin for detecting DOM ready. An A | requirejs |
 | [requires-port](./r/requires-port) | Check if a protocol requires a certain port number | port, require, http, https, ws, wss, gopher, file, ftp, requires, requried, portnumber, url, parsing, validation, cows |
@@ -6146,6 +6157,8 @@
 | [stylelint](./s/stylelint) | A mighty, modern CSS linter. | css, less, sass, scss, sugarss, lint, linter, stylelint |
 | [stylelint-webpack-plugin](./s/stylelint-webpack-plugin) | A stylelint plugin for webpack | stylelint, lint, linter, node-sass, webpack, plugin, webpack-plugin |
 | [stylenames](./s/stylenames) | Improves usage of html inline styles in javascript | inline-styles, styles, es6, middleware |
+| [styletron-react](./s/styletron-react) | React bindings for Styletron | - |
+| [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron | - |
 | [stylis](./s/stylis) | light - weight css preprocessor | css, preprocessor |
 | [stylus](./s/stylus) | Robust, expressive, and feature-rich CSS superset | css, parser, style, stylesheets, jade, language |
 | [subscribe-ui-event](./s/subscribe-ui-event) | A single, throttle built-in solution to subscribe  | addEventListener, browser, events, requestAnimationFrame, resize, scroll, subscribe, throttle |
@@ -6384,6 +6397,7 @@
 | [triple-beam](./t/triple-beam) | Definitions of levels for logging purposes & share | winstonjs, winston, logging, logform, symbols, logs, levels |
 | [triplesec](./t/triplesec) | A CommonJS-compliant system for secure encryption  | - |
 | [trouter](./t/trouter) | 🐟 A fast, small-but-mighty, familiar ~fish~ route | route, router, routing |
+| [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider | ethereum, private key, wallet, provider, truffle provider |
 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
 | [tryer](./t/tryer) | Because everyone loves a tryer | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
@@ -6402,6 +6416,7 @@
 | [tsutils](./t/tsutils) | utilities for working with typescript's AST | typescript, ts, ast, typeguard, utils, helper, node |
 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones. | ttf, woff2, fonts |
 | [tunnel](./t/tunnel) | Node HTTP/HTTPS Agents for tunneling proxies | http, https, agent, proxy, tunnel |
+| [tunnel-ssh](./t/tunnel-ssh) | Easy extendable SSH tunnel | tunnel, ssh, mysql, develop, net |
 | [turbolinks](./t/turbolinks) | Turbolinks makes navigating your web application f | turbolinks, browser, pushstate |
 | [turndown](./t/turndown) | A library that converts HTML to Markdown | converter, html, markdown |
 | [tus-js-client](./t/tus-js-client) | A pure JavaScript client for the tus resumable upl | tus, resumable, upload, protocol, progress, file, browser |
@@ -6663,6 +6678,7 @@
 | [vue-server-renderer](./v/vue-server-renderer) | server renderer for Vue 2.0 | vue, server, ssr |
 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue | vue, telephone, phone, vue-tel-input, phone input, telephone input |
 | [vue2-datepicker](./v/vue2-datepicker) | A Datepicker Component For Vue2 | vue, datepicker |
+| [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open  | vue, vue-component, quill, html editor, text editor |
 | [vue__component-compiler-u](./v/vue__component-compiler-utils) | Lower level utilities for compiling Vue single fil | vue, sfc, component, compiler |
 | [vuex](./v/vuex) | state management for Vue.js | - |
 | [vuex-i18n](./v/vuex-i18n) | Easy localization for vue-components using vuex as | localization, translation, vuex, vue, i18n |
@@ -6813,6 +6829,7 @@
 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work | worker, rpc |
 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads | pool, worker, workers, thread, threads, worker_threads, parallel |
 | [workerpool](./w/workerpool) | Offload tasks to a pool of workers on node.js and  | worker, web worker, cluster, pool, isomorphic |
+| [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j | react, router, tiny, routing, hooks |
 | [wpapi](./w/wpapi) | An isomorphic JavaScript client for interacting wi | api, client, cms, wordpress |
 | [wrap-ansi](./w/wrap-ansi) | Wordwrap a string with ANSI escape codes | wrap, break, wordwrap, wordbreak, linewrap, ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
 | [wreck](./w/wreck) | HTTP Client Utilities | utilities, http, client |
@@ -6837,6 +6854,7 @@
 | [xlsx](./x/xlsx) | SheetJS Spreadsheet data parser and writer | excel, xls, xlsx, xlsb, xlsm, ods, csv, dbf, dif, sylk, office, spreadsheet |
 | [xml](./x/xml) | Fast and simple xml generator. Supports attributes | xml, create, builder, json, simple |
 | [xml-core](./x/xml-core) | xml-core is a set of classes that make it easier t | xml |
+| [xml-escape](./x/xml-escape) | Escape XML | Escape, XML, Unesacpe, encoding, xml-escape |
 | [xml-js](./x/xml-js) | A convertor between XML text and Javascript object | XML, xml, js, JSON, json, cdata, CDATA, doctype, processing instruction, Javascript, js2xml, json2xml, xml2js, xml2json, transform, transformer, transforming, transformation, convert, convertor, converting, conversion, parse, parser, parsing |
 | [xml-parser](./x/xml-parser) | the little xml parser that could | xml, sucks |
 | [xml2js](./x/xml2js) | Simple XML to JavaScript object converter. | xml, json |
@@ -6865,6 +6883,7 @@
 | [xtuc__long](./x/xtuc__long) | A Long class for representing a 64-bit two's-compl | math |
 | [xxhashjs](./x/xxhashjs) | xxHash in Javascript | xxhash, xxh |
 | [y18n](./y/y18n) | the bare-bones internationalization library used b | i18n, internationalization, yargs |
+| [yadda](./y/yadda) | A true BDD framework for JavaScript | BDD, Specification, Natural, Test, Behaviour, Driven, Jasmine, Mocha, QUnit, Nodeunit |
 | [yallist](./y/yallist) | Yet Another Linked List | - |
 | [yaml](./y/yaml) | JavaScript parser and stringifier for YAML | YAML, parser, stringifier |
 | [yamljs](./y/yamljs) | Standalone JavaScript YAML 1.2 Parser & Encoder. W | yaml, json, yaml2json, json2yaml |

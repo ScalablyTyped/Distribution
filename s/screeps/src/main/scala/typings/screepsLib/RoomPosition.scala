@@ -245,6 +245,8 @@ trait RoomPosition extends js.Object {
   @JSName("lookFor")
   def lookFor_nuke(`type`: screepsLib.screepsLibStrings.nuke): js.Array[Nuke] = js.native
   @JSName("lookFor")
+  def lookFor_powerCreep(`type`: screepsLib.screepsLibStrings.powerCreep): js.Array[PowerCreep] = js.native
+  @JSName("lookFor")
   def lookFor_resource(`type`: screepsLib.screepsLibStrings.resource): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookFor")
   def lookFor_source(`type`: screepsLib.screepsLibStrings.source): js.Array[Source] = js.native

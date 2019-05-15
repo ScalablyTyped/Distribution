@@ -27,7 +27,8 @@ object AssociationOptionsHasOne {
     hooks: js.UndefOr[scala.Boolean] = js.undefined,
     keyType: DataTypeAbstract = null,
     onDelete: java.lang.String = null,
-    onUpdate: java.lang.String = null
+    onUpdate: java.lang.String = null,
+    scope: AssociationScope = null
   ): AssociationOptionsHasOne = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
@@ -38,6 +39,7 @@ object AssociationOptionsHasOne {
     if (keyType != null) __obj.updateDynamic("keyType")(keyType)
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[AssociationOptionsHasOne]
   }
 }

@@ -64,6 +64,11 @@ trait Flag extends RoomObject {
 class FlagCls protected () extends Flag {
   def this(name: java.lang.String, color: ColorConstant, secondaryColor: ColorConstant, roomName: java.lang.String, x: scala.Double, y: scala.Double) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * An object representing the position of this object in the room.
     */
   /* CompleteClass */

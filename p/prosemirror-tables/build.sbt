@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prosemirror-tables"
-version := "0.7-dt-20190430Z-423165"
+version := "0.8-dt-20190514Z-8be594"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

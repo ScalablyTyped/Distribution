@@ -25,12 +25,12 @@ trait StructureTower
     * Remotely attack any creep in the room. Consumes 10 energy units per tick. Attack power depends on the distance to the target: from 600 hits at range 10 to 300 hits at range 40.
     * @param target The target creep.
     */
-  def attack(target: Creep): ScreepsReturnCode
+  def attack(target: AnyCreep): ScreepsReturnCode
   /**
     * Remotely heal any creep in the room. Consumes 10 energy units per tick. Heal power depends on the distance to the target: from 400 hits at range 10 to 200 hits at range 40.
     * @param target The target creep.
     */
-  def heal(target: Creep): ScreepsReturnCode
+  def heal(target: AnyCreep): ScreepsReturnCode
   /**
     * Remotely repair any structure in the room. Consumes 10 energy units per tick. Repair power depends on the distance to the target: from 600 hits at range 10 to 300 hits at range 40.
     * @param target The target structure.
@@ -42,6 +42,11 @@ trait StructureTower
 @js.native
 class StructureTowerCls protected () extends StructureTower {
   def this(id: java.lang.String) = this()
+  /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * The amount of energy containing in this structure.
     */
@@ -106,7 +111,7 @@ class StructureTowerCls protected () extends StructureTower {
     * @param target The target creep.
     */
   /* CompleteClass */
-  override def attack(target: Creep): ScreepsReturnCode = js.native
+  override def attack(target: AnyCreep): ScreepsReturnCode = js.native
   /**
     * Destroy this structure immediately.
     */
@@ -117,7 +122,7 @@ class StructureTowerCls protected () extends StructureTower {
     * @param target The target creep.
     */
   /* CompleteClass */
-  override def heal(target: Creep): ScreepsReturnCode = js.native
+  override def heal(target: AnyCreep): ScreepsReturnCode = js.native
   /**
     * Check whether this structure can be used. If the room controller level is not enough, then this method will return false, and the structure will be highlighted with red in the game.
     */
@@ -140,11 +145,12 @@ class StructureTowerCls protected () extends StructureTower {
 object StructureTower {
   @scala.inline
   def apply(
-    attack: Creep => ScreepsReturnCode,
+    attack: AnyCreep => ScreepsReturnCode,
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     energy: scala.Double,
     energyCapacity: scala.Double,
-    heal: Creep => ScreepsReturnCode,
+    heal: AnyCreep => ScreepsReturnCode,
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
@@ -157,7 +163,7 @@ object StructureTower {
     room: Room,
     structureType: STRUCTURE_TOWER
   ): StructureTower = {
-    val __obj = js.Dynamic.literal(attack = js.Any.fromFunction1(attack), destroy = js.Any.fromFunction0(destroy), energy = energy, energyCapacity = energyCapacity, heal = js.Any.fromFunction1(heal), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, repair = js.Any.fromFunction1(repair), room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(attack = js.Any.fromFunction1(attack), destroy = js.Any.fromFunction0(destroy), effects = effects, energy = energy, energyCapacity = energyCapacity, heal = js.Any.fromFunction1(heal), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, repair = js.Any.fromFunction1(repair), room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructureTower]
   }

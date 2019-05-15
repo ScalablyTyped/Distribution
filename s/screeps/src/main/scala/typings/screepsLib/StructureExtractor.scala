@@ -27,6 +27,11 @@ class StructureExtractorCls protected () extends StructureExtractor {
   /* CompleteClass */
   override var cooldown: scala.Double = js.native
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The current amount of hit points of the structure.
     */
   /* CompleteClass */
@@ -98,6 +103,7 @@ object StructureExtractor {
   def apply(
     cooldown: scala.Double,
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
@@ -109,7 +115,7 @@ object StructureExtractor {
     room: Room,
     structureType: STRUCTURE_EXTRACTOR
   ): StructureExtractor = {
-    val __obj = js.Dynamic.literal(cooldown = cooldown, destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(cooldown = cooldown, destroy = js.Any.fromFunction0(destroy), effects = effects, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructureExtractor]
   }

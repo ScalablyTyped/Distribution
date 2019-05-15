@@ -54,6 +54,10 @@ trait EntitiesDetectionJobProperties extends js.Object {
     * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+  /**
+    *  Configuration parameters for a private Virtual Private Cloud (VPC) containing the resources you are using for your entity detection job. For more information, see Amazon VPC. 
+    */
+  var VpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
 
 object EntitiesDetectionJobProperties {
@@ -70,7 +74,8 @@ object EntitiesDetectionJobProperties {
     Message: AnyLengthString = null,
     OutputDataConfig: OutputDataConfig = null,
     SubmitTime: Timestamp = null,
-    VolumeKmsKeyId: KmsKeyId = null
+    VolumeKmsKeyId: KmsKeyId = null,
+    VpcConfig: VpcConfig = null
   ): EntitiesDetectionJobProperties = {
     val __obj = js.Dynamic.literal()
     if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn)
@@ -85,6 +90,7 @@ object EntitiesDetectionJobProperties {
     if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig)
     if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime)
     if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId)
+    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)
     __obj.asInstanceOf[EntitiesDetectionJobProperties]
   }
 }

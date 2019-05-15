@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for sqs-producer 1.5
 // Project: https://github.com/BBC/sqs-producer
 // Definitions by: Daniel Chao <http://dchao.co/>
+//                 John Hamelink <https://johnhamelink.com/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

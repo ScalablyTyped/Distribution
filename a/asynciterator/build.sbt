@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "asynciterator"
-version := "1.1-dt-20181116Z-d69f0f"
+version := "1.1-dt-20181116Z-93292d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

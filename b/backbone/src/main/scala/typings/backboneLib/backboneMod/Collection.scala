@@ -144,6 +144,15 @@ class Collection[TModel /* <: Model */] () extends js.Object {
   def pluck(attribute: java.lang.String): js.Array[_] = js.native
   def pop(): TModel = js.native
   def pop(options: Silenceable): TModel = js.native
+  /**
+    * For use with collections as ES classes. If you define a preinitialize
+    * method, it will be invoked when the Collection is first created and
+    * before any instantiation logic is run for the Collection.
+    * @see https://backbonejs.org/#Collection-preinitialize
+    */
+  def preinitialize(): scala.Unit = js.native
+  def preinitialize(models: js.Array[js.Object | TModel]): scala.Unit = js.native
+  def preinitialize(models: js.Array[js.Object | TModel], options: js.Any): scala.Unit = js.native
   def push(model: TModel): TModel = js.native
   def push(model: TModel, options: AddOptions): TModel = js.native
   def reduce[TResult](iterator: underscoreLib.underscoreMod.MemoIterator[TModel, TResult]): TResult = js.native

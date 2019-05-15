@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateTransitGatewayRouteRequest extends js.Object {
   /**
-    * Indicates whether to drop traffic if the target isn't available.
+    * Indicates whether to drop traffic that matches this route.
     */
   var Blackhole: js.UndefOr[Boolean] = js.undefined
   /**

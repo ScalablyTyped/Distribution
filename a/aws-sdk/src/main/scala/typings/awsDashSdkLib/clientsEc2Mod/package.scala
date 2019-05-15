@@ -313,12 +313,14 @@ package object clientsEc2Mod {
   type DeleteLaunchTemplateVersionsResponseErrorSet = js.Array[DeleteLaunchTemplateVersionsResponseErrorItem]
   type DeleteLaunchTemplateVersionsResponseSuccessSet = js.Array[DeleteLaunchTemplateVersionsResponseSuccessItem]
   type DescribeConversionTaskList = js.Array[ConversionTask]
+  type DescribeDhcpOptionsMaxResults = scala.Double
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
   type DescribeHostReservationsMaxResults = scala.Double
   type DescribeInstanceCreditSpecificationsMaxResults = scala.Double
   type DescribeInternetGatewaysMaxResults = scala.Double
   type DescribeNetworkAclsMaxResults = scala.Double
+  type DescribeSubnetsMaxResults = scala.Double
   type DescribeVpcPeeringConnectionsMaxResults = scala.Double
   type DescribeVpcsMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 

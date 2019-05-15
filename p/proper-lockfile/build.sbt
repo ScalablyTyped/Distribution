@@ -1,10 +1,11 @@
 organization := "org.scalablytyped"
 name := "proper-lockfile"
-version := "3.0-dt-20190221Z-714033"
+version := "4.1-dt-20190514Z-dc0370"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
+  "org.scalablytyped" %%% "retry" % "0.12-dt-20181229Z-55516b",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

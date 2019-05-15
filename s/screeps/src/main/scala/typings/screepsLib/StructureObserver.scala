@@ -13,7 +13,7 @@ trait StructureObserver
      with AnyOwnedStructure {
   /**
     * Provide visibility into a distant room from your script. The target room object will be available on the next tick. The maximum range is 5 rooms.
-    * @param roomName
+    * @param roomName The room to observe.
     */
   def observeRoom(roomName: java.lang.String): ScreepsReturnCode
 }
@@ -22,6 +22,11 @@ trait StructureObserver
 @js.native
 class StructureObserverCls protected () extends StructureObserver {
   def this(id: java.lang.String) = this()
+  /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * The current amount of hit points of the structure.
     */
@@ -89,7 +94,7 @@ class StructureObserverCls protected () extends StructureObserver {
   override def notifyWhenAttacked(enabled: scala.Boolean): ScreepsReturnCode = js.native
   /**
     * Provide visibility into a distant room from your script. The target room object will be available on the next tick. The maximum range is 5 rooms.
-    * @param roomName
+    * @param roomName The room to observe.
     */
   /* CompleteClass */
   override def observeRoom(roomName: java.lang.String): ScreepsReturnCode = js.native
@@ -99,6 +104,7 @@ object StructureObserver {
   @scala.inline
   def apply(
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
@@ -111,7 +117,7 @@ object StructureObserver {
     room: Room,
     structureType: STRUCTURE_OBSERVER
   ): StructureObserver = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), observeRoom = js.Any.fromFunction1(observeRoom), owner = owner, pos = pos, room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), observeRoom = js.Any.fromFunction1(observeRoom), owner = owner, pos = pos, room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructureObserver]
   }

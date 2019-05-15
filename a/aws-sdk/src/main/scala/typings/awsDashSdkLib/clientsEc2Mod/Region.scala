@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Region extends js.Object {
   /**
-    * The region service endpoint.
+    * The Region service endpoint.
     */
   var Endpoint: js.UndefOr[String] = js.undefined
   /**
-    * The name of the region.
+    * The name of the Region.
     */
   var RegionName: js.UndefOr[String] = js.undefined
 }

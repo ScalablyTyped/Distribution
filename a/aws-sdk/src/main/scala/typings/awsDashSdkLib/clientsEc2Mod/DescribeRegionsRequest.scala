@@ -11,11 +11,11 @@ trait DescribeRegionsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * The filters.    endpoint - The endpoint of the region (for example, ec2.us-east-1.amazonaws.com).    region-name - The name of the region (for example, us-east-1).  
+    * The filters.    endpoint - The endpoint of the Region (for example, ec2.us-east-1.amazonaws.com).    region-name - The name of the Region (for example, us-east-1).  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * The names of the regions.
+    * The names of the Regions.
     */
   var RegionNames: js.UndefOr[RegionNameStringList] = js.undefined
 }

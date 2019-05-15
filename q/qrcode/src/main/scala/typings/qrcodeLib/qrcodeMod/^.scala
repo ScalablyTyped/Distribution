@@ -16,11 +16,11 @@ object ^ extends js.Object {
     text: java.lang.String,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def toCanvas(canvasElement: stdLib.HTMLCanvasElement, text: java.lang.String, options: QRCodeOptions): js.Promise[_] = js.native
+  def toCanvas(canvasElement: stdLib.HTMLCanvasElement, text: java.lang.String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
   def toCanvas(
     canvasElement: stdLib.HTMLCanvasElement,
     text: java.lang.String,
-    options: QRCodeOptions,
+    options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def toCanvas(canvasElement: stdLib.HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
@@ -29,11 +29,15 @@ object ^ extends js.Object {
     text: js.Array[QRCodeSegment],
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def toCanvas(canvasElement: stdLib.HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeOptions): js.Promise[_] = js.native
   def toCanvas(
     canvasElement: stdLib.HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
-    options: QRCodeOptions,
+    options: QRCodeRenderersOptions
+  ): js.Promise[_] = js.native
+  def toCanvas(
+    canvasElement: stdLib.HTMLCanvasElement,
+    text: js.Array[QRCodeSegment],
+    options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def toCanvas(canvas: js.Any, text: java.lang.String): js.Promise[_] = js.native
@@ -42,11 +46,11 @@ object ^ extends js.Object {
     text: java.lang.String,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def toCanvas(canvas: js.Any, text: java.lang.String, options: QRCodeOptions): js.Promise[_] = js.native
+  def toCanvas(canvas: js.Any, text: java.lang.String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
   def toCanvas(
     canvas: js.Any,
     text: java.lang.String,
-    options: QRCodeOptions,
+    options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
@@ -55,11 +59,11 @@ object ^ extends js.Object {
     text: js.Array[QRCodeSegment],
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment], options: QRCodeOptions): js.Promise[_] = js.native
+  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[_] = js.native
   def toCanvas(
     canvas: js.Any,
     text: js.Array[QRCodeSegment],
-    options: QRCodeOptions,
+    options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def toCanvas(text: java.lang.String): js.Promise[_] = js.native
@@ -67,10 +71,10 @@ object ^ extends js.Object {
     text: java.lang.String,
     callback: js.Function2[/* error */ stdLib.Error, /* canvas */ stdLib.HTMLCanvasElement, scala.Unit]
   ): scala.Unit = js.native
-  def toCanvas(text: java.lang.String, options: QRCodeOptions): js.Promise[_] = js.native
+  def toCanvas(text: java.lang.String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
   def toCanvas(
     text: java.lang.String,
-    options: QRCodeOptions,
+    options: QRCodeRenderersOptions,
     callback: js.Function2[/* error */ stdLib.Error, /* canvas */ stdLib.HTMLCanvasElement, scala.Unit]
   ): scala.Unit = js.native
   def toCanvas(text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
@@ -78,10 +82,10 @@ object ^ extends js.Object {
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ stdLib.Error, /* canvas */ stdLib.HTMLCanvasElement, scala.Unit]
   ): scala.Unit = js.native
-  def toCanvas(text: js.Array[QRCodeSegment], options: QRCodeOptions): js.Promise[_] = js.native
+  def toCanvas(text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[_] = js.native
   def toCanvas(
     text: js.Array[QRCodeSegment],
-    options: QRCodeOptions,
+    options: QRCodeRenderersOptions,
     callback: js.Function2[/* error */ stdLib.Error, /* canvas */ stdLib.HTMLCanvasElement, scala.Unit]
   ): scala.Unit = js.native
   def toDataURL(canvasElement: stdLib.HTMLCanvasElement, text: java.lang.String): js.Promise[_] = js.native
@@ -168,11 +172,11 @@ object ^ extends js.Object {
     text: java.lang.String,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def toFileStream(stream: nodeLib.streamMod.Writable, text: java.lang.String, options: QRCodeOptions): js.Promise[_] = js.native
+  def toFileStream(stream: nodeLib.streamMod.Writable, text: java.lang.String, options: QRCodeToFileStreamOptions): js.Promise[_] = js.native
   def toFileStream(
     stream: nodeLib.streamMod.Writable,
     text: java.lang.String,
-    options: QRCodeOptions,
+    options: QRCodeToFileStreamOptions,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def toFileStream(stream: nodeLib.streamMod.Writable, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
@@ -181,11 +185,15 @@ object ^ extends js.Object {
     text: js.Array[QRCodeSegment],
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
-  def toFileStream(stream: nodeLib.streamMod.Writable, text: js.Array[QRCodeSegment], options: QRCodeOptions): js.Promise[_] = js.native
   def toFileStream(
     stream: nodeLib.streamMod.Writable,
     text: js.Array[QRCodeSegment],
-    options: QRCodeOptions,
+    options: QRCodeToFileStreamOptions
+  ): js.Promise[_] = js.native
+  def toFileStream(
+    stream: nodeLib.streamMod.Writable,
+    text: js.Array[QRCodeSegment],
+    options: QRCodeToFileStreamOptions,
     callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def toString(text: java.lang.String): js.Promise[_] = js.native

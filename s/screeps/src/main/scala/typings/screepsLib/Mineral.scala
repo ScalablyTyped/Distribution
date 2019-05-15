@@ -42,6 +42,11 @@ class MineralCls protected () extends Mineral[MineralConstant] {
   /* CompleteClass */
   override var density: scala.Double = js.native
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   /* CompleteClass */
@@ -79,6 +84,7 @@ object Mineral {
   @scala.inline
   def apply[T /* <: MineralConstant */](
     density: scala.Double,
+    effects: js.Array[RoomObjectEffect],
     id: java.lang.String,
     mineralAmount: scala.Double,
     mineralType: T,
@@ -86,7 +92,7 @@ object Mineral {
     ticksToRegeneration: scala.Double,
     room: Room = null
   ): Mineral[T] = {
-    val __obj = js.Dynamic.literal(density = density, id = id, mineralAmount = mineralAmount, mineralType = mineralType.asInstanceOf[js.Any], pos = pos, ticksToRegeneration = ticksToRegeneration)
+    val __obj = js.Dynamic.literal(density = density, effects = effects, id = id, mineralAmount = mineralAmount, mineralType = mineralType.asInstanceOf[js.Any], pos = pos, ticksToRegeneration = ticksToRegeneration)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Mineral[T]]
   }

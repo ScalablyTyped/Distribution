@@ -58,12 +58,15 @@ trait Index extends js.Object {
     * Add list of objects
     * https://github.com/algolia/algoliasearch-client-js#add-objects---addobjects
     */
-  def addObjects(objects: js.Array[js.Object]): js.Promise[Task] = js.native
+  def addObjects(objects: js.Array[js.Object]): js.Promise[MultiObjectTask] = js.native
   /**
     * Add list of objects
     * https://github.com/algolia/algoliasearch-client-js#add-objects---addobjects
     */
-  def addObjects(objects: js.Array[js.Object], cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]): scala.Unit = js.native
+  def addObjects(
+    objects: js.Array[js.Object],
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ MultiObjectTask, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Save a rule object
     */

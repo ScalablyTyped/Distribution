@@ -11,7 +11,7 @@ trait AvailabilityZone extends js.Object {
     */
   var Messages: js.UndefOr[AvailabilityZoneMessageList] = js.undefined
   /**
-    * The name of the region.
+    * The name of the Region.
     */
   var RegionName: js.UndefOr[String] = js.undefined
   /**

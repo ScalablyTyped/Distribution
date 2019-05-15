@@ -22,7 +22,9 @@ object ^ extends js.Object {
   def setIcon(details: chromeLib.chromeNs.pageActionNs.IconDetails): scala.Unit = js.native
   def setIcon(details: chromeLib.chromeNs.pageActionNs.IconDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def setPopup(details: chromeLib.chromeNs.pageActionNs.PopupDetails): scala.Unit = js.native
+  def setPopup(details: chromeLib.chromeNs.pageActionNs.PopupDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def setTitle(details: chromeLib.chromeNs.pageActionNs.TitleDetails): scala.Unit = js.native
+  def setTitle(details: chromeLib.chromeNs.pageActionNs.TitleDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def show(tabId: scala.Double): scala.Unit = js.native
   def show(tabId: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }

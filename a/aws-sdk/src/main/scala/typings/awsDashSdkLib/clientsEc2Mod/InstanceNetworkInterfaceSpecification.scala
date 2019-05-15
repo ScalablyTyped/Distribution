@@ -19,7 +19,7 @@ trait InstanceNetworkInterfaceSpecification extends js.Object {
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
-    * The index of the device on the instance for the network interface attachment. If you are specifying a network interface in a RunInstances request, you must provide the device index.
+    * The position of the network interface in the attachment order. A primary network interface has a device index of 0. If you specify a network interface when launching an instance, you must specify the device index.
     */
   var DeviceIndex: js.UndefOr[Integer] = js.undefined
   /**

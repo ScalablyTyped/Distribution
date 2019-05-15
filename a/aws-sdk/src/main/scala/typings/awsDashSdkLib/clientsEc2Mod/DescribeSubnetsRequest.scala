@@ -15,6 +15,14 @@ trait DescribeSubnetsRequest extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
+    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+    */
+  var MaxResults: js.UndefOr[DescribeSubnetsMaxResults] = js.undefined
+  /**
+    * The token for the next page of results.
+    */
+  var NextToken: js.UndefOr[String] = js.undefined
+  /**
     * One or more subnet IDs. Default: Describes all your subnets.
     */
   var SubnetIds: js.UndefOr[SubnetIdStringList] = js.undefined
@@ -25,11 +33,15 @@ object DescribeSubnetsRequest {
   def apply(
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
+    MaxResults: js.UndefOr[DescribeSubnetsMaxResults] = js.undefined,
+    NextToken: String = null,
     SubnetIds: SubnetIdStringList = null
   ): DescribeSubnetsRequest = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds)
     __obj.asInstanceOf[DescribeSubnetsRequest]
   }

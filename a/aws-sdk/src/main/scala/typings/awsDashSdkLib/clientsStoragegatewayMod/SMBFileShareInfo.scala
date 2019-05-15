@@ -48,7 +48,7 @@ trait SMBFileShareInfo extends js.Object {
   var RequesterPays: js.UndefOr[Boolean] = js.undefined
   var Role: js.UndefOr[Role] = js.undefined
   /**
-    * If this value is set to "true", indicates that ACL (access control list) is enabled on the SMB file share. If it is set to "false", it indicates that file and directory permissions are mapped to the POSIX permission.
+    * If this value is set to "true", indicates that ACL (access control list) is enabled on the SMB file share. If it is set to "false", it indicates that file and directory permissions are mapped to the POSIX permission. For more information, see https://docs.aws.amazon.com/storagegateway/latest/userguide/smb-acl.html in the Storage Gateway User Guide.
     */
   var SMBACLEnabled: js.UndefOr[Boolean] = js.undefined
   /**

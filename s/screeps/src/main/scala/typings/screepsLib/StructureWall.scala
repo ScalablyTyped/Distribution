@@ -22,6 +22,11 @@ trait StructureWall
 class StructureWallCls protected () extends StructureWall {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The current amount of hit points of the structure.
     */
   /* CompleteClass */
@@ -87,6 +92,7 @@ object StructureWall {
   @scala.inline
   def apply(
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
@@ -97,7 +103,7 @@ object StructureWall {
     structureType: STRUCTURE_WALL,
     ticksToLive: scala.Double
   ): StructureWall = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos, room = room, structureType = structureType, ticksToLive = ticksToLive)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), pos = pos, room = room, structureType = structureType, ticksToLive = ticksToLive)
   
     __obj.asInstanceOf[StructureWall]
   }

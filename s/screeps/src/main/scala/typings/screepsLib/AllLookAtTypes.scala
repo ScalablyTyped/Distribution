@@ -14,6 +14,7 @@ trait AllLookAtTypes extends js.Object {
   var flag: Flag
   var mineral: Mineral[MineralConstant]
   var nuke: Nuke
+  var powerCreep: PowerCreep
   var resource: Resource[ResourceConstant]
   var source: Source
   var structure: Structure[StructureConstant]
@@ -31,13 +32,14 @@ object AllLookAtTypes {
     flag: Flag,
     mineral: Mineral[MineralConstant],
     nuke: Nuke,
+    powerCreep: PowerCreep,
     resource: Resource[ResourceConstant],
     source: Source,
     structure: Structure[StructureConstant],
     terrain: Terrain,
     tombstone: Tombstone
   ): AllLookAtTypes = {
-    val __obj = js.Dynamic.literal(constructionSite = constructionSite, creep = creep, energy = energy, exit = exit, flag = flag, mineral = mineral, nuke = nuke, resource = resource, source = source, structure = structure, terrain = terrain, tombstone = tombstone)
+    val __obj = js.Dynamic.literal(constructionSite = constructionSite, creep = creep, energy = energy, exit = exit, flag = flag, mineral = mineral, nuke = nuke, powerCreep = powerCreep, resource = resource, source = source, structure = structure, terrain = terrain, tombstone = tombstone)
   
     __obj.asInstanceOf[AllLookAtTypes]
   }

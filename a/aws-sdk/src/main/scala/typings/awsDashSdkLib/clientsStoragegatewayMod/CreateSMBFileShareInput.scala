@@ -63,7 +63,7 @@ trait CreateSMBFileShareInput extends js.Object {
     */
   var Role: awsDashSdkLib.clientsStoragegatewayMod.Role
   /**
-    * Set this value to "true to enable ACL (access control list) on the SMB file share. Set it to "false" to map file and directory permissions to the POSIX permissions.
+    * Set this value to "true to enable ACL (access control list) on the SMB file share. Set it to "false" to map file and directory permissions to the POSIX permissions. For more information, see https://docs.aws.amazon.com/storagegateway/latest/userguide/smb-acl.html in the Storage Gateway User Guide.
     */
   var SMBACLEnabled: js.UndefOr[Boolean] = js.undefined
   /**

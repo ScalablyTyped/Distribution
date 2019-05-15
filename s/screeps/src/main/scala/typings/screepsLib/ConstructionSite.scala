@@ -45,6 +45,11 @@ trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject
 class ConstructionSiteCls protected () extends ConstructionSite[BuildableStructureConstant] {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   /* CompleteClass */
@@ -97,6 +102,7 @@ class ConstructionSiteCls protected () extends ConstructionSite[BuildableStructu
 object ConstructionSite {
   @scala.inline
   def apply[T /* <: BuildableStructureConstant */](
+    effects: js.Array[RoomObjectEffect],
     id: java.lang.String,
     my: scala.Boolean,
     owner: Owner,
@@ -107,7 +113,7 @@ object ConstructionSite {
     structureType: T,
     room: Room = null
   ): ConstructionSite[T] = {
-    val __obj = js.Dynamic.literal(id = id, my = my, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, remove = js.Any.fromFunction0(remove), structureType = structureType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(effects = effects, id = id, my = my, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, remove = js.Any.fromFunction0(remove), structureType = structureType.asInstanceOf[js.Any])
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[ConstructionSite[T]]
   }

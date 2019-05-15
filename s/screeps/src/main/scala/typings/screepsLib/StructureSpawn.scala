@@ -98,7 +98,7 @@ trait StructureSpawn
   /**
     * Start the creep spawning process. The required energy amount can be withdrawn from all spawns and extensions in the room.
     *
-    * @param {BodyPartConstant[]} body An array describing the new creep’s body. Should contain 1 to 50 elements with one of these constants:
+    * @param body An array describing the new creep’s body. Should contain 1 to 50 elements with one of these constants:
     *  * WORK
     *  * MOVE
     *  * CARRY
@@ -107,9 +107,9 @@ trait StructureSpawn
     *  * HEAL
     *  * TOUGH
     *  * CLAIM
-    * @param {string} name The name of a new creep. It must be a unique creep name, i.e. the Game.creeps object should not contain another creep with the same name (hash key).
-    * @param {SpawnOptions} opts An object with additional options for the spawning process.
-    * @returns {ScreepsReturnCode} One of the following codes:
+    * @param name The name of a new creep. It must be a unique creep name, i.e. the Game.creeps object should not contain another creep with the same name (hash key).
+    * @param opts An object with additional options for the spawning process.
+    * @returns One of the following codes:
     * ```
     * OK                       0   The operation has been scheduled successfully.
     * ERR_NOT_OWNER            -1  You are not the owner of this spawn.
@@ -128,6 +128,11 @@ trait StructureSpawn
 @js.native
 class StructureSpawnCls protected () extends StructureSpawn {
   def this(id: java.lang.String) = this()
+  /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * The current amount of hit points of the structure.
     */

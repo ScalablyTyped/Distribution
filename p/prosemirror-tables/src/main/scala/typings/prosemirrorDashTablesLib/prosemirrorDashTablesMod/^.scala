@@ -144,6 +144,56 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Boolean = js.native
+  @JSName("toggleHeader")
+  def toggleHeader_column[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](`type`: prosemirrorDashTablesLib.prosemirrorDashTablesLibStrings.column): js.Function2[
+    /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+    /* dispatch */ js.UndefOr[
+      js.Function1[
+        /* tr */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], 
+        scala.Unit
+      ]
+    ], 
+    scala.Boolean
+  ] = js.native
+  @JSName("toggleHeader")
+  def toggleHeader_column[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    `type`: prosemirrorDashTablesLib.prosemirrorDashTablesLibStrings.column,
+    options: prosemirrorDashTablesLib.Anon_UseDeprecatedLogic
+  ): js.Function2[
+    /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+    /* dispatch */ js.UndefOr[
+      js.Function1[
+        /* tr */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], 
+        scala.Unit
+      ]
+    ], 
+    scala.Boolean
+  ] = js.native
+  @JSName("toggleHeader")
+  def toggleHeader_row[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](`type`: prosemirrorDashTablesLib.prosemirrorDashTablesLibStrings.row): js.Function2[
+    /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+    /* dispatch */ js.UndefOr[
+      js.Function1[
+        /* tr */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], 
+        scala.Unit
+      ]
+    ], 
+    scala.Boolean
+  ] = js.native
+  @JSName("toggleHeader")
+  def toggleHeader_row[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    `type`: prosemirrorDashTablesLib.prosemirrorDashTablesLibStrings.row,
+    options: prosemirrorDashTablesLib.Anon_UseDeprecatedLogic
+  ): js.Function2[
+    /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+    /* dispatch */ js.UndefOr[
+      js.Function1[
+        /* tr */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], 
+        scala.Unit
+      ]
+    ], 
+    scala.Boolean
+  ] = js.native
   def updateColumnsOnResize(
     node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[_],
     colgroup: stdLib.Element,

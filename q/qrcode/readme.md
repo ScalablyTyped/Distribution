@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for qrcode 1.3
 // Project: http://github.com/soldair/node-qrcode
 // Definitions by: York Yao <https://github.com/plantain-00>
+//                 Michael Nahkies <https://github.com/mnahkies>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

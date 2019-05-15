@@ -42,9 +42,8 @@ trait CPU extends js.Object {
     * Allocate CPU limits to different shards. Total amount of CPU should remain equal to `Game.cpu.shardLimits`.
     * This method can be used only once per 12 hours.
     *
-    * @param {CPUShardLimits} limits An object with CPU values for each shard in the same format as `Game.cpu.shardLimits`.
-    * @returns {(OK | ERR_BUSY | ERR_INVALID_ARGS)} One of the following codes: `OK | ERR_BUSY | ERR_INVALID_ARGS`
-    * @memberof CPU
+    * @param limits An object with CPU values for each shard in the same format as `Game.cpu.shardLimits`.
+    * @returns One of the following codes: `OK | ERR_BUSY | ERR_INVALID_ARGS`
     */
   def setShardLimits(limits: CPUShardLimits): OK | ERR_BUSY | ERR_INVALID_ARGS
 }

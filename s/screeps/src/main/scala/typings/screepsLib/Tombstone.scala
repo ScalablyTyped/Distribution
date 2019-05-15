@@ -15,7 +15,7 @@ trait Tombstone extends RoomObject {
   /**
     * An object containing the deceased creep.
     */
-  var creep: Creep
+  var creep: AnyCreep
   /**
     * Time of death.
     */
@@ -47,12 +47,17 @@ class TombstoneCls protected () extends Tombstone {
     * An object containing the deceased creep.
     */
   /* CompleteClass */
-  override var creep: Creep = js.native
+  override var creep: AnyCreep = js.native
   /**
     * Time of death.
     */
   /* CompleteClass */
   override var deathTime: scala.Double = js.native
+  /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * A unique object identificator.
     * You can use {@link Game.getObjectById} method to retrieve an object instance by its id.
@@ -90,15 +95,16 @@ class TombstoneCls protected () extends Tombstone {
 object Tombstone {
   @scala.inline
   def apply(
-    creep: Creep,
+    creep: AnyCreep,
     deathTime: scala.Double,
+    effects: js.Array[RoomObjectEffect],
     id: java.lang.String,
     pos: RoomPosition,
     store: StoreDefinition,
     ticksToDecay: scala.Double,
     room: Room = null
   ): Tombstone = {
-    val __obj = js.Dynamic.literal(creep = creep, deathTime = deathTime, id = id, pos = pos, store = store, ticksToDecay = ticksToDecay)
+    val __obj = js.Dynamic.literal(creep = creep, deathTime = deathTime, effects = effects, id = id, pos = pos, store = store, ticksToDecay = ticksToDecay)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Tombstone]
   }

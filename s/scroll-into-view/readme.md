@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for scroll-into-view 1.6.0
 // Project: https://github.com/KoryNunn/scroll-into-view
 // Definitions by: zivni <https://github.com/zivni>
+//                 Thibaut <https://github.com/Thibaut-Fatus>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

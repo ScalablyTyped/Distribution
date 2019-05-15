@@ -31,6 +31,10 @@ trait Game extends js.Object {
     */
   var gcl: GlobalControlLevel = js.native
   /**
+    * Your clobal Power Level
+    */
+  var gpl: GlobalPowerLevel = js.native
+  /**
     * A global object representing world GameMap.
     */
   var map: GameMap = js.native
@@ -38,6 +42,10 @@ trait Game extends js.Object {
     * A global object representing the in-game market.
     */
   var market: Market = js.native
+  /**
+    * A hash containing all your power creeps with their names as hash keys. Even power creeps not spawned in the world can be accessed here.
+    */
+  var powerCreeps: org.scalablytyped.runtime.StringDictionary[PowerCreep] = js.native
   /**
     * An object with your global resources that are bound to the account, like subscription tokens. Each object key is a resource constant, values are resources amounts.
     */

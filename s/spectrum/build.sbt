@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spectrum"
-version := "1.5.1-dt-20190322Z-c8c46d"
+version := "1.5.1-dt-20190514Z-11b506"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f3f7a8",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-fbd298",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20180731Z-fbeec6")
+  "org.scalablytyped" %%% "tinycolor2" % "1.4-dt-20190514Z-fbeec6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

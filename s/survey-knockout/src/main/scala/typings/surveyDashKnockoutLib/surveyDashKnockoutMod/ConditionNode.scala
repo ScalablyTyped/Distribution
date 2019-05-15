@@ -15,5 +15,6 @@ class ConditionNode () extends js.Object {
   def clear(): scala.Unit = js.native
   def fillVariables(vars: js.Array[java.lang.String]): scala.Unit = js.native
   def getVariables(): js.Array[java.lang.String] = js.native
+  def hasFunction(): scala.Boolean = js.native
 }
 

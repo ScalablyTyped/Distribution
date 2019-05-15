@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   var mapStyle: js.UndefOr[java.lang.String | js.Object] = js.undefined
   var mapboxApiAccessToken: js.UndefOr[java.lang.String] = js.undefined
   var onError: js.UndefOr[js.Function1[/* e */ MapError, scala.Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* event */ MapLoadEvent, scala.Unit]] = js.undefined
   var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
   var reuseMap: js.UndefOr[scala.Boolean] = js.undefined
   var reuseMaps: js.UndefOr[scala.Boolean] = js.undefined
@@ -43,7 +43,7 @@ object MapboxProps {
     mapStyle: java.lang.String | js.Object = null,
     mapboxApiAccessToken: java.lang.String = null,
     onError: /* e */ MapError => scala.Unit = null,
-    onLoad: () => scala.Unit = null,
+    onLoad: /* event */ MapLoadEvent => scala.Unit = null,
     preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
     reuseMap: js.UndefOr[scala.Boolean] = js.undefined,
     reuseMaps: js.UndefOr[scala.Boolean] = js.undefined,
@@ -59,7 +59,7 @@ object MapboxProps {
     if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
     if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
     if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap)
     if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps)

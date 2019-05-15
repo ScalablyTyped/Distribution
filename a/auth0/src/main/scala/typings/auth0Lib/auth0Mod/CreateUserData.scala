@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CreateUserData extends UserData {
+trait CreateUserData extends UserData[AppMetadata, UserMetadata] {
   var connection: java.lang.String
 }
 

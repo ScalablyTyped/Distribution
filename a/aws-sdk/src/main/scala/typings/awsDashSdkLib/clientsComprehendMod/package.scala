@@ -114,6 +114,8 @@ package object clientsComprehendMod {
   */
   type PartOfSpeechTagType = _PartOfSpeechTagType | java.lang.String
   type S3Uri = java.lang.String
+  type SecurityGroupId = java.lang.String
+  type SecurityGroupIds = js.Array[SecurityGroupId]
   type SentimentDetectionJobPropertiesList = js.Array[SentimentDetectionJobProperties]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.POSITIVE
@@ -125,6 +127,8 @@ package object clientsComprehendMod {
   type SentimentType = _SentimentType | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
+  type SubnetId = java.lang.String
+  type Subnets = js.Array[SubnetId]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.en
     - awsDashSdkLib.awsDashSdkLibStrings.es

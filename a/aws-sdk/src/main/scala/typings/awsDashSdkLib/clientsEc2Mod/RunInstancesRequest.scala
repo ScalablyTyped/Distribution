@@ -27,7 +27,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var CpuOptions: js.UndefOr[CpuOptionsRequest] = js.undefined
   /**
-    * The credit option for CPU usage of the T2 or T3 instance. Valid values are standard and unlimited. To change this attribute after launch, use ModifyInstanceCreditSpecification. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide. Default: standard (T2 instances) or unlimited (T3 instances)
+    * The credit option for CPU usage of the T2 or T3 instance. Valid values are standard and unlimited. To change this attribute after launch, use  ModifyInstanceCreditSpecification. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide. Default: standard (T2 instances) or unlimited (T3 instances)
     */
   var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   /**
-    * The network interfaces to associate with the instance.
+    * The network interfaces to associate with the instance. If you specify a network interface, you must specify any security groups as part of the network interface.
     */
   var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   /**
@@ -127,11 +127,11 @@ trait RunInstancesRequest extends js.Object {
     */
   var RamdiskId: js.UndefOr[String] = js.undefined
   /**
-    * The IDs of the security groups. You can create a security group using CreateSecurityGroup. Default: Amazon EC2 uses the default security group. You cannot specify this option and the network interfaces option in the same request.
+    * The IDs of the security groups. You can create a security group using CreateSecurityGroup. If you specify a network interface, you must specify any security groups as part of the network interface.
     */
   var SecurityGroupIds: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
-    * [EC2-Classic, default VPC] The names of the security groups. For a nondefault VPC, you must use security group IDs instead. You cannot specify this option and the network interfaces option in the same request. Default: Amazon EC2 uses the default security group.
+    * [EC2-Classic, default VPC] The names of the security groups. For a nondefault VPC, you must use security group IDs instead. If you specify a network interface, you must specify any security groups as part of the network interface. Default: Amazon EC2 uses the default security group.
     */
   var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.undefined
   /**

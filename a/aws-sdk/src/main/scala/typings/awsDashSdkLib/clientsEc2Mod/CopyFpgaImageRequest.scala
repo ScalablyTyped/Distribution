@@ -27,7 +27,7 @@ trait CopyFpgaImageRequest extends js.Object {
     */
   var SourceFpgaImageId: String
   /**
-    * The region that contains the source AFI.
+    * The Region that contains the source AFI.
     */
   var SourceRegion: String
 }

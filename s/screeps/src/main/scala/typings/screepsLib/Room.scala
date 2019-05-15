@@ -464,6 +464,32 @@ trait Room extends js.Object {
     asArray: screepsLib.screepsLibNumbers.`true`
   ): LookForAtAreaResultArray[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
   @JSName("lookForAtArea")
+  def lookForAtArea_powerCreep(
+    `type`: screepsLib.screepsLibStrings.powerCreep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double
+  ): LookForAtAreaResultMatrix[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
+  @JSName("lookForAtArea")
+  def lookForAtArea_powerCreep(
+    `type`: screepsLib.screepsLibStrings.powerCreep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
+  @JSName("lookForAtArea")
+  def lookForAtArea_powerCreep(
+    `type`: screepsLib.screepsLibStrings.powerCreep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
+  @JSName("lookForAtArea")
   def lookForAtArea_resource(
     `type`: screepsLib.screepsLibStrings.resource,
     top: scala.Double,
@@ -648,6 +674,12 @@ trait Room extends js.Object {
   def lookForAt_nuke(`type`: screepsLib.screepsLibStrings.nuke, target: _HasRoomPosition): js.Array[Nuke] = js.native
   @JSName("lookForAt")
   def lookForAt_nuke(`type`: screepsLib.screepsLibStrings.nuke, x: scala.Double, y: scala.Double): js.Array[Nuke] = js.native
+  @JSName("lookForAt")
+  def lookForAt_powerCreep(`type`: screepsLib.screepsLibStrings.powerCreep, target: RoomPosition): js.Array[PowerCreep] = js.native
+  @JSName("lookForAt")
+  def lookForAt_powerCreep(`type`: screepsLib.screepsLibStrings.powerCreep, target: _HasRoomPosition): js.Array[PowerCreep] = js.native
+  @JSName("lookForAt")
+  def lookForAt_powerCreep(`type`: screepsLib.screepsLibStrings.powerCreep, x: scala.Double, y: scala.Double): js.Array[PowerCreep] = js.native
   @JSName("lookForAt")
   def lookForAt_resource(`type`: screepsLib.screepsLibStrings.resource, target: RoomPosition): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookForAt")

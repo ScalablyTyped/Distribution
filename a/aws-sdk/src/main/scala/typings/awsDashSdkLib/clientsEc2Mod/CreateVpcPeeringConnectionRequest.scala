@@ -15,7 +15,7 @@ trait CreateVpcPeeringConnectionRequest extends js.Object {
     */
   var PeerOwnerId: js.UndefOr[String] = js.undefined
   /**
-    * The region code for the accepter VPC, if the accepter VPC is located in a region other than the region in which you make the request. Default: The region in which you make the request.
+    * The Region code for the accepter VPC, if the accepter VPC is located in a Region other than the Region in which you make the request. Default: The Region in which you make the request.
     */
   var PeerRegion: js.UndefOr[String] = js.undefined
   /**

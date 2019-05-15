@@ -30,6 +30,12 @@ object XRegExpNs extends js.Object {
   ): scala.Unit = js.native
   def build(pattern: java.lang.String, subs: js.Array[java.lang.String]): stdLib.RegExp = js.native
   def build(pattern: java.lang.String, subs: js.Array[java.lang.String], flags: java.lang.String): stdLib.RegExp = js.native
+  def build(pattern: java.lang.String, subs: org.scalablytyped.runtime.StringDictionary[stdLib.RegExp]): stdLib.RegExp = js.native
+  def build(
+    pattern: java.lang.String,
+    subs: org.scalablytyped.runtime.StringDictionary[stdLib.RegExp],
+    flags: java.lang.String
+  ): stdLib.RegExp = js.native
   def cache(pattern: java.lang.String): stdLib.RegExp = js.native
   def cache(pattern: java.lang.String, flags: java.lang.String): stdLib.RegExp = js.native
   def escape(str: java.lang.String): java.lang.String = js.native

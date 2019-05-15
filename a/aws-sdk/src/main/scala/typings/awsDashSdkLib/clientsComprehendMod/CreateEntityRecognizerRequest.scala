@@ -34,6 +34,10 @@ trait CreateEntityRecognizerRequest extends js.Object {
     * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+  /**
+    * Configuration parameters for an optional private Virtual Private Cloud (VPC) containing the resources you are using for your custom entity recognizer. For more information, see Amazon VPC. 
+    */
+  var VpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
 
 object CreateEntityRecognizerRequest {
@@ -45,12 +49,14 @@ object CreateEntityRecognizerRequest {
     RecognizerName: ComprehendArnName,
     ClientRequestToken: ClientRequestTokenString = null,
     Tags: TagList = null,
-    VolumeKmsKeyId: KmsKeyId = null
+    VolumeKmsKeyId: KmsKeyId = null,
+    VpcConfig: VpcConfig = null
   ): CreateEntityRecognizerRequest = {
     val __obj = js.Dynamic.literal(DataAccessRoleArn = DataAccessRoleArn, InputDataConfig = InputDataConfig, LanguageCode = LanguageCode.asInstanceOf[js.Any], RecognizerName = RecognizerName)
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId)
+    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig)
     __obj.asInstanceOf[CreateEntityRecognizerRequest]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("auth0", "ManagementClient")
 @js.native
-class ManagementClient protected () extends js.Object {
+class ManagementClient[A, U] protected () extends js.Object {
   def this(options: ManagementClientOptions) = this()
   def addPermissionsInRole(params: ObjectWithId, data: PermissionsData): js.Promise[scala.Unit] = js.native
   def addPermissionsInRole(params: ObjectWithId, data: PermissionsData, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
@@ -32,7 +32,7 @@ class ManagementClient protected () extends js.Object {
     data: CreateConnection,
     cb: js.Function2[/* err */ stdLib.Error, /* connection */ Connection, scala.Unit]
   ): scala.Unit = js.native
-  def createDevicePublicKey(data: Data): js.Promise[User] = js.native
+  def createDevicePublicKey(data: Data): js.Promise[User[A, U]] = js.native
   def createDevicePublicKey(data: Data, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   def createEmailVerificationTicket(data: EmailVerificationTicketOptions): js.Promise[_] = js.native
   def createEmailVerificationTicket(
@@ -61,10 +61,10 @@ class ManagementClient protected () extends js.Object {
   def createRole(data: CreateRoleData, cb: js.Function2[/* err */ stdLib.Error, /* role */ Role, scala.Unit]): scala.Unit = js.native
   def createRule(data: Data): js.Promise[Rule] = js.native
   def createRule(data: Data, cb: js.Function2[/* err */ stdLib.Error, /* rule */ Rule, scala.Unit]): scala.Unit = js.native
-  def createUser(data: CreateUserData): js.Promise[User] = js.native
-  def createUser(data: CreateUserData, cb: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
+  def createUser(data: CreateUserData): js.Promise[User[A, U]] = js.native
+  def createUser(data: CreateUserData, cb: js.Function2[/* err */ stdLib.Error, /* user */ User[A, U], scala.Unit]): scala.Unit = js.native
   // Should be removed from auth0 also. Doesn't exist in api.
-  def deleteAllUsers(): js.Promise[User] = js.native
+  def deleteAllUsers(): js.Promise[User[A, U]] = js.native
   def deleteAllUsers(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   def deleteClient(params: ClientParams): js.Promise[scala.Unit] = js.native
   def deleteClient(params: ClientParams, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
@@ -72,7 +72,7 @@ class ManagementClient protected () extends js.Object {
   def deleteClientGrant(params: ObjectWithId, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def deleteConnection(params: ObjectWithId): js.Promise[scala.Unit] = js.native
   def deleteConnection(params: ObjectWithId, cb: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
-  def deleteDeviceCredential(params: ClientParams): js.Promise[User] = js.native
+  def deleteDeviceCredential(params: ClientParams): js.Promise[User[A, U]] = js.native
   def deleteDeviceCredential(params: ClientParams, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   def deleteEmailProvider(): js.Promise[_] = js.native
   def deleteEmailProvider(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
@@ -134,7 +134,7 @@ class ManagementClient protected () extends js.Object {
   def getDailyStats(data: StatsParams): js.Promise[_] = js.native
   def getDailyStats(data: StatsParams, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   // Device Keys
-  def getDeviceCredentials(): js.Promise[User] = js.native
+  def getDeviceCredentials(): js.Promise[User[A, U]] = js.native
   def getDeviceCredentials(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   // Providers
   def getEmailProvider(): js.Promise[_] = js.native
@@ -196,8 +196,8 @@ class ManagementClient protected () extends js.Object {
   def getTenantSettings(cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   @JSName("getTenantSettings")
   def getTenantSettings_Unit(): scala.Unit = js.native
-  def getUser(params: ObjectWithId): js.Promise[User] = js.native
-  def getUser(params: ObjectWithId, cb: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
+  def getUser(params: ObjectWithId): js.Promise[User[A, U]] = js.native
+  def getUser(params: ObjectWithId, cb: js.Function2[/* err */ stdLib.Error, /* user */ User[A, U], scala.Unit]): scala.Unit = js.native
   def getUserPermissions(params: GetUserPermissionsData): js.Promise[js.Array[Permission]] = js.native
   def getUserPermissions(params: GetUserPermissionsDataPaged): js.Promise[PermissionPage] = js.native
   def getUserPermissions(
@@ -232,40 +232,40 @@ class ManagementClient protected () extends js.Object {
   ): scala.Unit = js.native
   @JSName("getUser")
   def getUser_Unit(params: ObjectWithId): scala.Unit = js.native
-  def getUsers(): js.Promise[js.Array[User]] = js.native
-  def getUsers(cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]): scala.Unit = js.native
-  def getUsers(params: GetUsersData): js.Promise[js.Array[User]] = js.native
+  def getUsers(): js.Promise[js.Array[User[A, U]]] = js.native
+  def getUsers(cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User[A, U]], scala.Unit]): scala.Unit = js.native
+  def getUsers(params: GetUsersData): js.Promise[js.Array[User[A, U]]] = js.native
   // Users
-  def getUsers(params: GetUsersDataPaged): js.Promise[UserPage] = js.native
+  def getUsers(params: GetUsersDataPaged): js.Promise[UserPage[A, U]] = js.native
   def getUsers(
     params: GetUsersDataPaged,
-    cb: js.Function2[/* err */ stdLib.Error, /* userPage */ UserPage, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* userPage */ UserPage[A, U], scala.Unit]
   ): scala.Unit = js.native
   def getUsers(
     params: GetUsersData,
-    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User[A, U]], scala.Unit]
   ): scala.Unit = js.native
-  def getUsersByEmail(email: java.lang.String): js.Promise[js.Array[User]] = js.native
+  def getUsersByEmail(email: java.lang.String): js.Promise[js.Array[User[A, U]]] = js.native
   def getUsersByEmail(
     email: java.lang.String,
-    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User[A, U]], scala.Unit]
   ): scala.Unit = js.native
   @JSName("getUsersByEmail")
   def getUsersByEmail_Unit(email: java.lang.String): scala.Unit = js.native
-  def getUsersInRole(params: GetRoleUsersData): js.Promise[js.Array[User]] = js.native
-  def getUsersInRole(params: GetRoleUsersDataPaged): js.Promise[UserPage] = js.native
+  def getUsersInRole(params: GetRoleUsersData): js.Promise[js.Array[User[A, U]]] = js.native
+  def getUsersInRole(params: GetRoleUsersDataPaged): js.Promise[UserPage[A, U]] = js.native
   def getUsersInRole(
     params: GetRoleUsersDataPaged,
-    cb: js.Function2[/* err */ stdLib.Error, /* userPage */ UserPage, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* userPage */ UserPage[A, U], scala.Unit]
   ): scala.Unit = js.native
   def getUsersInRole(
     params: GetRoleUsersData,
-    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User[A, U]], scala.Unit]
   ): scala.Unit = js.native
-  def getUsersInRole(params: ObjectWithId): js.Promise[js.Array[User]] = js.native
+  def getUsersInRole(params: ObjectWithId): js.Promise[js.Array[User[A, U]]] = js.native
   def getUsersInRole(
     params: ObjectWithId,
-    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User], scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* users */ js.Array[User[A, U]], scala.Unit]
   ): scala.Unit = js.native
   @JSName("getUsers")
   def getUsers_Unit(): scala.Unit = js.native
@@ -302,11 +302,11 @@ class ManagementClient protected () extends js.Object {
     params: UnlinkAccountsParams,
     cb: js.Function2[/* err */ stdLib.Error, /* data */ UnlinkAccountsResponse, scala.Unit]
   ): scala.Unit = js.native
-  def updateAppMetadata(params: ObjectWithId, data: AppMetadata): js.Promise[User] = js.native
+  def updateAppMetadata(params: ObjectWithId, data: A): js.Promise[User[A, U]] = js.native
   def updateAppMetadata(
     params: ObjectWithId,
-    data: AppMetadata,
-    cb: js.Function2[/* err */ stdLib.Error, /* data */ User, scala.Unit]
+    data: A,
+    cb: js.Function2[/* err */ stdLib.Error, /* data */ User[A, U], scala.Unit]
   ): scala.Unit = js.native
   def updateClient(params: ClientParams, data: Data): js.Promise[Client] = js.native
   def updateClient(
@@ -358,17 +358,17 @@ class ManagementClient protected () extends js.Object {
   def updateTenantSettings(data: Data, cb: js.Function2[/* err */ stdLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
   @JSName("updateTenantSettings")
   def updateTenantSettings_Unit(data: Data): scala.Unit = js.native
-  def updateUser(params: ObjectWithId, data: UpdateUserData): js.Promise[User] = js.native
+  def updateUser(params: ObjectWithId, data: UpdateUserData): js.Promise[User[A, U]] = js.native
   def updateUser(
     params: ObjectWithId,
     data: UpdateUserData,
-    cb: js.Function2[/* err */ stdLib.Error, /* data */ User, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* data */ User[A, U], scala.Unit]
   ): scala.Unit = js.native
-  def updateUserMetadata(params: ObjectWithId, data: UserMetadata): js.Promise[User] = js.native
+  def updateUserMetadata(params: ObjectWithId, data: U): js.Promise[User[A, U]] = js.native
   def updateUserMetadata(
     params: ObjectWithId,
-    data: UserMetadata,
-    cb: js.Function2[/* err */ stdLib.Error, /* data */ User, scala.Unit]
+    data: U,
+    cb: js.Function2[/* err */ stdLib.Error, /* data */ User[A, U], scala.Unit]
   ): scala.Unit = js.native
 }
 

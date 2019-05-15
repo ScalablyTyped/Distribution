@@ -53,6 +53,7 @@ trait AssociationOptions extends js.Object {
     * Defaults to 'CASCADE'
     */
   var onUpdate: js.UndefOr[java.lang.String] = js.undefined
+  var scope: js.UndefOr[AssociationScope] = js.undefined
 }
 
 object AssociationOptions {
@@ -64,7 +65,8 @@ object AssociationOptions {
     foreignKeyConstraint: js.UndefOr[scala.Boolean] = js.undefined,
     hooks: js.UndefOr[scala.Boolean] = js.undefined,
     onDelete: java.lang.String = null,
-    onUpdate: java.lang.String = null
+    onUpdate: java.lang.String = null,
+    scope: AssociationScope = null
   ): AssociationOptions = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
@@ -74,6 +76,7 @@ object AssociationOptions {
     if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[AssociationOptions]
   }
 }

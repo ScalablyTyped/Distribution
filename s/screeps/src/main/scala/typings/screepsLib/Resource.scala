@@ -33,6 +33,11 @@ class ResourceCls protected () extends Resource[ResourceConstant] {
   /* CompleteClass */
   override var amount: scala.Double = js.native
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
     */
   /* CompleteClass */
@@ -58,8 +63,15 @@ class ResourceCls protected () extends Resource[ResourceConstant] {
 
 object Resource {
   @scala.inline
-  def apply[T /* <: ResourceConstant */](amount: scala.Double, id: java.lang.String, pos: RoomPosition, resourceType: T, room: Room = null): Resource[T] = {
-    val __obj = js.Dynamic.literal(amount = amount, id = id, pos = pos, resourceType = resourceType.asInstanceOf[js.Any])
+  def apply[T /* <: ResourceConstant */](
+    amount: scala.Double,
+    effects: js.Array[RoomObjectEffect],
+    id: java.lang.String,
+    pos: RoomPosition,
+    resourceType: T,
+    room: Room = null
+  ): Resource[T] = {
+    val __obj = js.Dynamic.literal(amount = amount, effects = effects, id = id, pos = pos, resourceType = resourceType.asInstanceOf[js.Any])
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Resource[T]]
   }

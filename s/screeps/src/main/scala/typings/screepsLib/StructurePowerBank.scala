@@ -26,6 +26,11 @@ trait StructurePowerBank
 class StructurePowerBankCls protected () extends StructurePowerBank {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The current amount of hit points of the structure.
     */
   /* CompleteClass */
@@ -106,6 +111,7 @@ object StructurePowerBank {
   @scala.inline
   def apply(
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
@@ -119,7 +125,7 @@ object StructurePowerBank {
     structureType: STRUCTURE_POWER_BANK,
     ticksToDecay: scala.Double
   ): StructurePowerBank = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, power = power, room = room, structureType = structureType, ticksToDecay = ticksToDecay)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, power = power, room = room, structureType = structureType, ticksToDecay = ticksToDecay)
   
     __obj.asInstanceOf[StructurePowerBank]
   }

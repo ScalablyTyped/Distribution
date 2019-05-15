@@ -28,6 +28,11 @@ trait Nuke extends RoomObject {
 class NukeCls protected () extends Nuke {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * A unique object identifier. You can use Game.getObjectById method to retrieve an object instance by its id.
     */
   /* CompleteClass */
@@ -59,13 +64,14 @@ class NukeCls protected () extends Nuke {
 object Nuke {
   @scala.inline
   def apply(
+    effects: js.Array[RoomObjectEffect],
     id: java.lang.String,
     launchRoomName: java.lang.String,
     pos: RoomPosition,
     timeToLand: scala.Double,
     room: Room = null
   ): Nuke = {
-    val __obj = js.Dynamic.literal(id = id, launchRoomName = launchRoomName, pos = pos, timeToLand = timeToLand)
+    val __obj = js.Dynamic.literal(effects = effects, id = id, launchRoomName = launchRoomName, pos = pos, timeToLand = timeToLand)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Nuke]
   }

@@ -38,6 +38,11 @@ trait Source extends RoomObject {
 class SourceCls protected () extends Source {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The remaining amount of energy.
     */
   /* CompleteClass */
@@ -81,6 +86,7 @@ class SourceCls protected () extends Source {
 object Source {
   @scala.inline
   def apply(
+    effects: js.Array[RoomObjectEffect],
     energy: scala.Double,
     energyCapacity: scala.Double,
     id: java.lang.String,
@@ -88,7 +94,7 @@ object Source {
     room: Room,
     ticksToRegeneration: scala.Double
   ): Source = {
-    val __obj = js.Dynamic.literal(energy = energy, energyCapacity = energyCapacity, id = id, pos = pos, room = room, ticksToRegeneration = ticksToRegeneration)
+    val __obj = js.Dynamic.literal(effects = effects, energy = energy, energyCapacity = energyCapacity, id = id, pos = pos, room = room, ticksToRegeneration = ticksToRegeneration)
   
     __obj.asInstanceOf[Source]
   }

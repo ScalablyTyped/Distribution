@@ -36,8 +36,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/bgrins/TinyColor
 // Definitions by: Mordechai Zuber <https://github.com/M-Zuber>,
 //                 Geert Jansen <https://github.com/geertjansen>,
-//                 Niels van Hoorn <https://github.com/nvh>,
-//                 Junyoung Clare Jang <https://github.com/Ailrun>
+//                 Niels van Hoorn <https://github.com/nvh>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 

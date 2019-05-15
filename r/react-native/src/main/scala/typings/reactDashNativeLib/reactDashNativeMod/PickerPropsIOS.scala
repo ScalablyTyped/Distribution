@@ -10,7 +10,7 @@ trait PickerPropsIOS extends ViewProps {
     * Style to apply to each of the item labels.
     * @platform ios
     */
-  var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 
 object PickerPropsIOS {
@@ -33,7 +33,7 @@ object PickerPropsIOS {
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
-    itemStyle: StyleProp[ViewStyle] = null,
+    itemStyle: StyleProp[TextStyle] = null,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
     onAccessibilityAction: () => scala.Unit = null,

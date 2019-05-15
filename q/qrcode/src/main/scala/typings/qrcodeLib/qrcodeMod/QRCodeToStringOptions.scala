@@ -19,7 +19,7 @@ object QRCodeToStringOptions {
   @scala.inline
   def apply(
     color: qrcodeLib.Anon_Dark = null,
-    errorCorrectionLevel: qrcodeLib.qrcodeLibStrings.low | qrcodeLib.qrcodeLibStrings.medium | qrcodeLib.qrcodeLibStrings.quartile | qrcodeLib.qrcodeLibStrings.high | qrcodeLib.qrcodeLibStrings.L | qrcodeLib.qrcodeLibStrings.M | qrcodeLib.qrcodeLibStrings.Q | qrcodeLib.qrcodeLibStrings.H = null,
+    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
     margin: scala.Int | scala.Double = null,
     scale: scala.Int | scala.Double = null,
     toSJISFunc: /* codePoint */ java.lang.String => scala.Double = null,
@@ -29,7 +29,7 @@ object QRCodeToStringOptions {
   ): QRCodeToStringOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
+    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(js.Any.fromFunction1(toSJISFunc))

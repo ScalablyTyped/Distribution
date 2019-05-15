@@ -11,13 +11,7 @@ import scala.scalajs.js.annotation._
   * @see AssociationOptionsHasMany
   * @see AssociationOptionsBelongsToMany
   */
-trait AssociationOptionsManyToMany extends AssociationOptions {
-  /**
-    * A key/value set that will be used for association create and find defaults on the target.
-    * (sqlite not supported for N:M)
-    */
-  var scope: js.UndefOr[AssociationScope] = js.undefined
-}
+trait AssociationOptionsManyToMany extends AssociationOptions
 
 object AssociationOptionsManyToMany {
   @scala.inline

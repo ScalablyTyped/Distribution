@@ -28,7 +28,7 @@ object StaticMapProps {
     mapStyle: java.lang.String | js.Object = null,
     mapboxApiAccessToken: java.lang.String = null,
     onError: /* e */ MapError => scala.Unit = null,
-    onLoad: () => scala.Unit = null,
+    onLoad: /* event */ MapLoadEvent => scala.Unit = null,
     onResize: /* dimensions */ reactDashMapDashGlLib.Anon_Height => scala.Unit = null,
     preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
     preventStyleDiffing: js.UndefOr[scala.Boolean] = js.undefined,
@@ -50,7 +50,7 @@ object StaticMapProps {
     if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
     if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken)
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1(onResize))
     if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
     if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing)

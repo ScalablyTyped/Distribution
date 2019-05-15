@@ -45,7 +45,6 @@ These comments are from the typescript definitions and might be useful:
 //                 Synarque <https://github.com/synarque>
 //                 Justin Rockwood <https://github.com/jrockwood>
 //                 Keith Kelly <https://github.com/kwkelly>
-//                 Junyoung Clare Jang <https://github.com/Ailrun>
 //                 Richard Lea <https://github.com/chigix>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8

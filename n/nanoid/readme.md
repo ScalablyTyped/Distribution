@@ -1,7 +1,7 @@
 
 # Scala.js typings for nanoid
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
 A tiny (141 bytes), secure URL-friendly unique string ID generator
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for nanoid 1.2
+// Type definitions for nanoid 2.0
 // Project: https://github.com/ai/nanoid
 // Definitions by: Ruben Schmidmeister <https://github.com/bash>
 //                 Daniel Zhang <https://github.com/fadezhanger>

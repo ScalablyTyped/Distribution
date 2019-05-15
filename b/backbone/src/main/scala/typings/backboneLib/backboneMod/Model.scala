@@ -75,6 +75,15 @@ class Model () extends js.Object {
   def pick(fn: js.Function3[/* value */ js.Any, /* key */ js.Any, /* object */ js.Any, _]): js.Any = js.native
   def pick(keys: java.lang.String*): js.Any = js.native
   def pick(keys: js.Array[java.lang.String]): js.Any = js.native
+  /**
+    * For use with models as ES classes. If you define a preinitialize
+    * method, it will be invoked when the Model is first created, before
+    * any instantiation logic is run for the Model.
+    * @see https://backbonejs.org/#Model-preinitialize
+    */
+  def preinitialize(): scala.Unit = js.native
+  def preinitialize(attributes: js.Any): scala.Unit = js.native
+  def preinitialize(attributes: js.Any, options: js.Any): scala.Unit = js.native
   def previous(attribute: java.lang.String): js.Any = js.native
   def previousAttributes(): js.Array[_] = js.native
   def save(): js.Any = js.native

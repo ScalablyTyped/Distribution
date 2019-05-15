@@ -42,7 +42,7 @@ trait PathFinderOpts extends js.Object {
     * single room and in a single tick you may consider caching your CostMatrix to speed up your code. Please read the
     * CostMatrix documentation below for more information on CostMatrix.
     *
-    * @param roomName
+    * @param roomName The name of the room the pathfinder needs a cost matrix for.
     */
   var roomCallback: js.UndefOr[js.Function1[/* roomName */ java.lang.String, scala.Boolean | CostMatrix]] = js.undefined
   /**

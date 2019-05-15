@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd-mobile-rn"
-version := "2.3.3-ba31de"
+version := "2.3.3-a74b8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
   "org.scalablytyped" %%% "rc-gesture" % "0.0.22-56a071",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190510Z-a57471",
-  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-78204b",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190514Z-5934c5",
+  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-92aa76",
   "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-ff944e",
   "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-dc3367",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")

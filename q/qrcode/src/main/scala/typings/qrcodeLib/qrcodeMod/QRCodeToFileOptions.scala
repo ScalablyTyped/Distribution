@@ -20,7 +20,7 @@ object QRCodeToFileOptions {
   @scala.inline
   def apply(
     color: qrcodeLib.Anon_Dark = null,
-    errorCorrectionLevel: qrcodeLib.qrcodeLibStrings.low | qrcodeLib.qrcodeLibStrings.medium | qrcodeLib.qrcodeLibStrings.quartile | qrcodeLib.qrcodeLibStrings.high | qrcodeLib.qrcodeLibStrings.L | qrcodeLib.qrcodeLibStrings.M | qrcodeLib.qrcodeLibStrings.Q | qrcodeLib.qrcodeLibStrings.H = null,
+    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
     margin: scala.Int | scala.Double = null,
     rendererOpts: qrcodeLib.Anon_DeflateLevel = null,
     scale: scala.Int | scala.Double = null,
@@ -31,7 +31,7 @@ object QRCodeToFileOptions {
   ): QRCodeToFileOptions = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color)
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
+    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (rendererOpts != null) __obj.updateDynamic("rendererOpts")(rendererOpts)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

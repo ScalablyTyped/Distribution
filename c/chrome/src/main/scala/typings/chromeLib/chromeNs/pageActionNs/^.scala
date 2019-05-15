@@ -16,7 +16,9 @@ object ^ extends js.Object {
   def setIcon(details: IconDetails): scala.Unit = js.native
   def setIcon(details: IconDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def setPopup(details: PopupDetails): scala.Unit = js.native
+  def setPopup(details: PopupDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def setTitle(details: TitleDetails): scala.Unit = js.native
+  def setTitle(details: TitleDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def show(tabId: scala.Double): scala.Unit = js.native
   def show(tabId: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }

@@ -14,6 +14,12 @@ trait StructureController
   extends OwnedStructure[STRUCTURE_CONTROLLER]
      with AnyOwnedStructure {
   /**
+    * Whether using power is enabled in this room.
+    *
+    * Use `PowerCreep.enableRoom()` to turn powers on.
+    */
+  var isPowerEnabled: scala.Boolean
+  /**
     * Current controller level, from 0 to 8.
     */
   var level: scala.Double
@@ -69,6 +75,11 @@ trait StructureController
 class StructureControllerCls protected () extends StructureController {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The current amount of hit points of the structure.
     */
   /* CompleteClass */
@@ -83,6 +94,13 @@ class StructureControllerCls protected () extends StructureController {
     */
   /* CompleteClass */
   override var id: java.lang.String = js.native
+  /**
+    * Whether using power is enabled in this room.
+    *
+    * Use `PowerCreep.enableRoom()` to turn powers on.
+    */
+  /* CompleteClass */
+  override var isPowerEnabled: scala.Boolean = js.native
   /**
     * Current controller level, from 0 to 8.
     */
@@ -191,10 +209,12 @@ object StructureController {
   def apply(
     activateSafeMode: () => ScreepsReturnCode,
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     hits: scala.Double,
     hitsMax: scala.Double,
     id: java.lang.String,
     isActive: () => scala.Boolean,
+    isPowerEnabled: scala.Boolean,
     level: scala.Double,
     my: scala.Boolean,
     notifyWhenAttacked: scala.Boolean => ScreepsReturnCode,
@@ -213,7 +233,7 @@ object StructureController {
     safeModeCooldown: scala.Int | scala.Double = null,
     sign: SignDefinition = null
   ): StructureController = {
-    val __obj = js.Dynamic.literal(activateSafeMode = js.Any.fromFunction0(activateSafeMode), destroy = js.Any.fromFunction0(destroy), hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), level = level, my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, room = room, safeModeAvailable = safeModeAvailable, structureType = structureType, ticksToDowngrade = ticksToDowngrade, unclaim = js.Any.fromFunction0(unclaim), upgradeBlocked = upgradeBlocked)
+    val __obj = js.Dynamic.literal(activateSafeMode = js.Any.fromFunction0(activateSafeMode), destroy = js.Any.fromFunction0(destroy), effects = effects, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), isPowerEnabled = isPowerEnabled, level = level, my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, room = room, safeModeAvailable = safeModeAvailable, structureType = structureType, ticksToDowngrade = ticksToDowngrade, unclaim = js.Any.fromFunction0(unclaim), upgradeBlocked = upgradeBlocked)
     if (reservation != null) __obj.updateDynamic("reservation")(reservation)
     if (safeMode != null) __obj.updateDynamic("safeMode")(safeMode.asInstanceOf[js.Any])
     if (safeModeCooldown != null) __obj.updateDynamic("safeModeCooldown")(safeModeCooldown.asInstanceOf[js.Any])

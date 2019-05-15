@@ -70,7 +70,7 @@ object PickerProps {
     hitSlop: Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
-    itemStyle: StyleProp[ViewStyle] = null,
+    itemStyle: StyleProp[TextStyle] = null,
     mode: reactDashNativeLib.reactDashNativeLibStrings.dialog | reactDashNativeLib.reactDashNativeLibStrings.dropdown = null,
     nativeID: java.lang.String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,

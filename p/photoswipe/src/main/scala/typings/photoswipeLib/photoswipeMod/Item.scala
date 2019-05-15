@@ -32,6 +32,10 @@ trait Item extends js.Object {
     */
   var loadError: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * The url to small image placeholder, large image will be loaded on top
+    */
+  var msrc: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The url of this image.
     */
   var src: java.lang.String
@@ -56,6 +60,7 @@ object Item {
     initialPosition: js.Any = null,
     initialZoomLevel: scala.Int | scala.Double = null,
     loadError: js.UndefOr[scala.Boolean] = js.undefined,
+    msrc: java.lang.String = null,
     vGap: photoswipeLib.Anon_BottomTop = null
   ): Item = {
     val __obj = js.Dynamic.literal(h = h, src = src, w = w)
@@ -64,6 +69,7 @@ object Item {
     if (initialPosition != null) __obj.updateDynamic("initialPosition")(initialPosition)
     if (initialZoomLevel != null) __obj.updateDynamic("initialZoomLevel")(initialZoomLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(loadError)) __obj.updateDynamic("loadError")(loadError)
+    if (msrc != null) __obj.updateDynamic("msrc")(msrc)
     if (vGap != null) __obj.updateDynamic("vGap")(vGap)
     __obj.asInstanceOf[Item]
   }

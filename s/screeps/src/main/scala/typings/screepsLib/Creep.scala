@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation._
   * Each creep consists of up to 50 body parts with the following possible types:
   */
 @js.native
-trait Creep extends RoomObject {
+trait Creep
+  extends RoomObject
+     with AnyCreep {
   /**
     * An array describing the creep's body.
     */
@@ -86,7 +88,7 @@ trait Creep extends RoomObject {
     *
     * @returns Result Code: OK, ERR_NOT_OWNER, ERR_BUSY, ERR_INVALID_TARGET, ERR_NOT_IN_RANGE, ERR_NO_BODYPART
     */
-  def attack(target: Creep): CreepActionReturnCode = js.native
+  def attack(target: AnyCreep): CreepActionReturnCode = js.native
   def attack(target: Structure[StructureConstant]): CreepActionReturnCode = js.native
   /**
     * Decreases the controller's downgrade or reservation timer for 1 tick per
@@ -172,12 +174,15 @@ trait Creep extends RoomObject {
     * The target has to be at adjacent square to the creep.
     * @param target The target creep object.
     */
-  def heal(target: Creep): CreepActionReturnCode = js.native
+  def heal(target: AnyCreep): CreepActionReturnCode = js.native
   /**
-    * Move the creep one square in the specified direction. Needs the MOVE body part.
-    * @param direction
+    * Move the creep one square in the specified direction or towards a creep that is pulling it.
+    *
+    * Requires the MOVE body part if not being pulled.
+    * @param direction The direction to move in (`TOP`, `TOP_LEFT`...)
     */
   def move(direction: DirectionConstant): CreepMoveReturnCode = js.native
+  def move(target: Creep): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_NOT_IN_RANGE | ERR_INVALID_ARGS = js.native
   def moveByPath(path: java.lang.String): CreepMoveReturnCode | ERR_NOT_FOUND | ERR_INVALID_ARGS = js.native
   /**
     * Move the creep using the specified predefined path. Needs the MOVE body part.
@@ -220,6 +225,13 @@ trait Creep extends RoomObject {
     */
   def pickup(target: Resource[ResourceConstant]): CreepActionReturnCode | ERR_FULL = js.native
   /**
+    * Allow another creep to follow this creep. The fatigue generated for the target's move will be added to the creep instead of the target.
+    *
+    * Requires the MOVE body part. The target must be adjacent to the creep. The creep must move elsewhere, and the target must move towards the creep.
+    * @param target The target creep to be pulled.
+    */
+  def pull(target: Creep): OK | ERR_NOT_OWNER | ERR_BUSY | ERR_INVALID_TARGET | ERR_NOT_IN_RANGE | ERR_NO_BODYPART = js.native
+  /**
     * A ranged attack against another creep or structure.
     *
     * Needs the RANGED_ATTACK body part. If the target is inside a rampart, the rampart is attacked instead.
@@ -227,7 +239,7 @@ trait Creep extends RoomObject {
     * The target has to be within 3 squares range of the creep.
     * @param target The target object to be attacked.
     */
-  def rangedAttack(target: Creep): CreepActionReturnCode = js.native
+  def rangedAttack(target: AnyCreep): CreepActionReturnCode = js.native
   def rangedAttack(target: Structure[StructureConstant]): CreepActionReturnCode = js.native
   /**
     * Heal another creep at a distance.
@@ -237,7 +249,7 @@ trait Creep extends RoomObject {
     * Needs the HEAL body part. The target has to be within 3 squares range of the creep.
     * @param target The target creep object.
     */
-  def rangedHeal(target: Creep): CreepActionReturnCode = js.native
+  def rangedHeal(target: AnyCreep): CreepActionReturnCode = js.native
   /**
     * A ranged attack against all hostile creeps or structures within 3 squares range.
     *
@@ -292,8 +304,8 @@ trait Creep extends RoomObject {
     * @param resourceType One of the RESOURCE_* constants
     * @param amount The amount of resources to be transferred. If omitted, all the available carried amount is used.
     */
-  def transfer(target: Creep, resourceType: ResourceConstant): ScreepsReturnCode = js.native
-  def transfer(target: Creep, resourceType: ResourceConstant, amount: scala.Double): ScreepsReturnCode = js.native
+  def transfer(target: AnyCreep, resourceType: ResourceConstant): ScreepsReturnCode = js.native
+  def transfer(target: AnyCreep, resourceType: ResourceConstant, amount: scala.Double): ScreepsReturnCode = js.native
   def transfer(target: Structure[StructureConstant], resourceType: ResourceConstant): ScreepsReturnCode = js.native
   def transfer(target: Structure[StructureConstant], resourceType: ResourceConstant, amount: scala.Double): ScreepsReturnCode = js.native
   /**
@@ -333,6 +345,11 @@ trait Creep extends RoomObject {
 @js.native
 class CreepCls protected () extends Creep {
   def this(id: java.lang.String) = this()
+  /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * An object representing the position of this object in the room.
     */

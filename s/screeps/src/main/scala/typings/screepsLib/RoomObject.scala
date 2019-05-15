@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
   */
 trait RoomObject extends js.Object {
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  var effects: js.Array[RoomObjectEffect]
+  /**
     * An object representing the position of this object in the room.
     */
   var pos: RoomPosition
@@ -27,6 +31,11 @@ trait RoomObject extends js.Object {
 class RoomObjectCls protected () extends RoomObject {
   def this(x: scala.Double, y: scala.Double, roomName: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * An object representing the position of this object in the room.
     */
   /* CompleteClass */
@@ -42,8 +51,8 @@ class RoomObjectCls protected () extends RoomObject {
 
 object RoomObject {
   @scala.inline
-  def apply(pos: RoomPosition, room: Room = null): RoomObject = {
-    val __obj = js.Dynamic.literal(pos = pos)
+  def apply(effects: js.Array[RoomObjectEffect], pos: RoomPosition, room: Room = null): RoomObject = {
+    val __obj = js.Dynamic.literal(effects = effects, pos = pos)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[RoomObject]
   }

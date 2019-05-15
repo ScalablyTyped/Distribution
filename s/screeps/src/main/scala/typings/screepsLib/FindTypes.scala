@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FindTypes
   extends /* key */ org.scalablytyped.runtime.NumberDictionary[
-      RoomPosition | Creep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
+      RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
     ] {
   var `1`: RoomPosition
    // FIND_EXIT_LEFT
@@ -48,6 +48,12 @@ trait FindTypes
   var `117`: Nuke
    // FIND_NUKES
   var `118`: Tombstone
+   // FIND_TOMBSTONES
+  var `119`: PowerCreep
+   // FIND_POWER_CREEPS
+  var `120`: PowerCreep
+   // FIND_MY_POWER_CREEPS
+  var `121`: PowerCreep
    // FIND_EXIT_TOP
   var `3`: RoomPosition
    // FIND_EXIT_RIGHT
@@ -79,11 +85,14 @@ object FindTypes {
     `116`: Mineral[MineralConstant],
     `117`: Nuke,
     `118`: Tombstone,
+    `119`: PowerCreep,
+    `120`: PowerCreep,
+    `121`: PowerCreep,
     `3`: RoomPosition,
     `5`: RoomPosition,
     `7`: RoomPosition,
     NumberDictionary: /* key */ org.scalablytyped.runtime.NumberDictionary[
-      RoomPosition | Creep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
+      RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
     ] = null
   ): FindTypes = {
     val __obj = js.Dynamic.literal()
@@ -107,6 +116,9 @@ object FindTypes {
     __obj.updateDynamic("116")(`116`)
     __obj.updateDynamic("117")(`117`)
     __obj.updateDynamic("118")(`118`)
+    __obj.updateDynamic("119")(`119`)
+    __obj.updateDynamic("120")(`120`)
+    __obj.updateDynamic("121")(`121`)
     __obj.updateDynamic("3")(`3`)
     __obj.updateDynamic("5")(`5`)
     __obj.updateDynamic("7")(`7`)

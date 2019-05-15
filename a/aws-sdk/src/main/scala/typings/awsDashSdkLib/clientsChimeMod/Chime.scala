@@ -92,7 +92,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchDeletePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
+    * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissasociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
     */
   def batchSuspendUser(): awsDashSdkLib.libRequestMod.Request[BatchSuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchSuspendUser(
@@ -103,7 +103,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchSuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
+    * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissasociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
     */
   def batchSuspendUser(params: BatchSuspendUserRequest): awsDashSdkLib.libRequestMod.Request[BatchSuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchSuspendUser(
@@ -207,6 +207,29 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a bot for an Amazon Chime Enterprise account.
+    */
+  def createBot(): awsDashSdkLib.libRequestMod.Request[CreateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createBot(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateBotResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a bot for an Amazon Chime Enterprise account.
+    */
+  def createBot(params: CreateBotRequest): awsDashSdkLib.libRequestMod.Request[CreateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createBot(
+    params: CreateBotRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateBotResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
     */
   def createPhoneNumberOrder(): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -275,6 +298,21 @@ trait Chime
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the events configuration that allows a bot to receive outgoing events.
+    */
+  def deleteEventsConfiguration(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteEventsConfiguration(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes the events configuration that allows a bot to receive outgoing events.
+    */
+  def deleteEventsConfiguration(params: DeleteEventsConfigurationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteEventsConfiguration(
+    params: DeleteEventsConfigurationRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Moves the specified phone number into the Deletion queue. A phone number must be disassociated from any users or Amazon Chime Voice Connectors before it can be deleted. Deleted phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
     */
@@ -454,6 +492,44 @@ trait Chime
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves details for the specified bot, such as bot email address, bot type, status, and display name.
+    */
+  def getBot(): awsDashSdkLib.libRequestMod.Request[GetBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getBot(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetBotResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves details for the specified bot, such as bot email address, bot type, status, and display name.
+    */
+  def getBot(params: GetBotRequest): awsDashSdkLib.libRequestMod.Request[GetBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getBot(
+    params: GetBotRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetBotResponse, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[GetBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Gets details for an events configuration that allows a bot to receive outgoing events, such as an HTTPS endpoint or Lambda function ARN. 
+    */
+  def getEventsConfiguration(): awsDashSdkLib.libRequestMod.Request[GetEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getEventsConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetEventsConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Gets details for an events configuration that allows a bot to receive outgoing events, such as an HTTPS endpoint or Lambda function ARN. 
+    */
+  def getEventsConfiguration(params: GetEventsConfigurationRequest): awsDashSdkLib.libRequestMod.Request[GetEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getEventsConfiguration(
+    params: GetEventsConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetEventsConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
     */
@@ -688,6 +764,29 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListAccountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Lists the bots associated with the administrator's Amazon Chime Enterprise account ID.
+    */
+  def listBots(): awsDashSdkLib.libRequestMod.Request[ListBotsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listBots(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListBotsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListBotsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Lists the bots associated with the administrator's Amazon Chime Enterprise account ID.
+    */
+  def listBots(params: ListBotsRequest): awsDashSdkLib.libRequestMod.Request[ListBotsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listBots(
+    params: ListBotsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListBotsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListBotsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Lists the phone number orders for the administrator's Amazon Chime account.
     */
   def listPhoneNumberOrders(): awsDashSdkLib.libRequestMod.Request[ListPhoneNumberOrdersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -838,6 +937,29 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[LogoutUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates an events configuration that allows a bot to receive outgoing events sent by Amazon Chime. Choose either an HTTPS endpoint or a Lambda function ARN. For more information, see Bot.
+    */
+  def putEventsConfiguration(): awsDashSdkLib.libRequestMod.Request[PutEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putEventsConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutEventsConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates an events configuration that allows a bot to receive outgoing events sent by Amazon Chime. Choose either an HTTPS endpoint or a Lambda function ARN. For more information, see Bot.
+    */
+  def putEventsConfiguration(params: PutEventsConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def putEventsConfiguration(
+    params: PutEventsConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ PutEventsConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[PutEventsConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Adds origination settings for the specified Amazon Chime Voice Connector.
     */
   def putVoiceConnectorOrigination(): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -898,6 +1020,29 @@ trait Chime
     params: PutVoiceConnectorTerminationCredentialsRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Regenerates the security token for a bot.
+    */
+  def regenerateSecurityToken(): awsDashSdkLib.libRequestMod.Request[RegenerateSecurityTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def regenerateSecurityToken(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RegenerateSecurityTokenResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RegenerateSecurityTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Regenerates the security token for a bot.
+    */
+  def regenerateSecurityToken(params: RegenerateSecurityTokenRequest): awsDashSdkLib.libRequestMod.Request[RegenerateSecurityTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def regenerateSecurityToken(
+    params: RegenerateSecurityTokenRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ RegenerateSecurityTokenResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[RegenerateSecurityTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Resets the personal meeting PIN for the specified user on an Amazon Chime account. Returns the User object with the updated personal meeting PIN.
     */
@@ -1013,6 +1158,29 @@ trait Chime
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the status of the specified bot, such as starting or stopping the bot from running in your Amazon Chime Enterprise account.
+    */
+  def updateBot(): awsDashSdkLib.libRequestMod.Request[UpdateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateBot(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateBotResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates the status of the specified bot, such as starting or stopping the bot from running in your Amazon Chime Enterprise account.
+    */
+  def updateBot(params: UpdateBotRequest): awsDashSdkLib.libRequestMod.Request[UpdateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateBot(
+    params: UpdateBotRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateBotResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
     */

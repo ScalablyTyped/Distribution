@@ -144,10 +144,12 @@ trait Vector extends js.Object {
     * Rotates the vector about the given object. The object should be a point if the vector is 2D,
     * and a line if it is 3D. Be careful with line directions!
     *
-    * @param {number} t The angle in radians.
+    * @param {number|Matrix} t The angle in radians or in rotation matrix.
     * @param {Vector|Line} obj The rotation axis.
     */
   def rotate(t: scala.Double, obj: Vector): Vector = js.native
+  def rotate(t: Matrix, obj: Line): Vector = js.native
+  def rotate(t: Matrix, obj: Vector): Vector = js.native
   /**
     * Returns the result of rounding the elements of the vector.
     */

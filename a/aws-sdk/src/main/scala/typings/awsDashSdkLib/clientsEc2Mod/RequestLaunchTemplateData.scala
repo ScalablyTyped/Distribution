@@ -79,7 +79,7 @@ trait RequestLaunchTemplateData extends js.Object {
     */
   var Monitoring: js.UndefOr[LaunchTemplatesMonitoringRequest] = js.undefined
   /**
-    * One or more network interfaces.
+    * One or more network interfaces. If you specify a network interface, you must specify any security groups as part of the network interface.
     */
   var NetworkInterfaces: js.UndefOr[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList] = js.undefined
   /**

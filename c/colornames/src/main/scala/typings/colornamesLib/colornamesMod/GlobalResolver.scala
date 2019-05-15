@@ -18,7 +18,7 @@ trait GlobalResolver extends js.Object {
   /**
     * Gets the color with the specified name.
     */
-  def apply(name: java.lang.String): Color = js.native
+  def apply(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
   /**
     * Gets all available colors.
     */

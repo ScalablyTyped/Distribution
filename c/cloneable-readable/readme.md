@@ -1,7 +1,7 @@
 
 # Scala.js typings for cloneable-readable
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Clone a Readable stream, safely
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for cloneable-readable 1.1
+// Type definitions for cloneable-readable 2.0
 // Project: https://github.com/mcollina/cloneable-readable#readme
 // Definitions by: Nikita Volodin <https://github.com/qlonik>
+//                 Oleg Vaskevich <https://github.com/vaskevich>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

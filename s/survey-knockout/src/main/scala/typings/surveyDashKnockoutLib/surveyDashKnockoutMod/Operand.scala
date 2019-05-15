@@ -13,5 +13,6 @@ class Operand protected () extends js.Object {
   var origionalValue: js.Any = js.native
   def fillVariables(vars: js.Array[java.lang.String]): scala.Unit = js.native
   def getValue(processValue: ProcessValue): js.Any = js.native
+  def hasFunction(): scala.Boolean = js.native
 }
 

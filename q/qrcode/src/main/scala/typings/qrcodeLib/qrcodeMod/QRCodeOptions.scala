@@ -11,9 +11,7 @@ trait QRCodeOptions extends js.Object {
     * Possible values are low, medium, quartile, high or L, M, Q, H.
     * Default: M
     */
-  var errorCorrectionLevel: js.UndefOr[
-    qrcodeLib.qrcodeLibStrings.low | qrcodeLib.qrcodeLibStrings.medium | qrcodeLib.qrcodeLibStrings.quartile | qrcodeLib.qrcodeLibStrings.high | qrcodeLib.qrcodeLibStrings.L | qrcodeLib.qrcodeLibStrings.M | qrcodeLib.qrcodeLibStrings.Q | qrcodeLib.qrcodeLibStrings.H
-  ] = js.undefined
+  var errorCorrectionLevel: js.UndefOr[QRCodeErrorCorrectionLevel] = js.undefined
   /**
     * Helper function used internally to convert a kanji to its Shift JIS value.
     * Provide this function if you need support for Kanji mode.
@@ -28,12 +26,12 @@ trait QRCodeOptions extends js.Object {
 object QRCodeOptions {
   @scala.inline
   def apply(
-    errorCorrectionLevel: qrcodeLib.qrcodeLibStrings.low | qrcodeLib.qrcodeLibStrings.medium | qrcodeLib.qrcodeLibStrings.quartile | qrcodeLib.qrcodeLibStrings.high | qrcodeLib.qrcodeLibStrings.L | qrcodeLib.qrcodeLibStrings.M | qrcodeLib.qrcodeLibStrings.Q | qrcodeLib.qrcodeLibStrings.H = null,
+    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
     toSJISFunc: /* codePoint */ java.lang.String => scala.Double = null,
     version: scala.Int | scala.Double = null
   ): QRCodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
+    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
     if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(js.Any.fromFunction1(toSJISFunc))
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRCodeOptions]

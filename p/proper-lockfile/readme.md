@@ -1,7 +1,7 @@
 
 # Scala.js typings for proper-lockfile
 
-Typings are for version 3.0
+Typings are for version 4.1
 
 ## Library description:
 A inter-process and inter-machine lockfile utility that works on a local or network file system
@@ -35,11 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for proper-lockfile 3.0
+// Type definitions for proper-lockfile 4.1
 // Project: https://github.com/moxystudio/node-proper-lockfile
 // Definitions by: Nikita Volodin <https://github.com/qlonik>
 //                 Linus Unnebäck <https://github.com/LinusU>
+//                 ulrichb <https://github.com/ulrichb>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 ```
 

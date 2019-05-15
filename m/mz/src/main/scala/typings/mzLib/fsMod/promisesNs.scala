@@ -305,9 +305,15 @@ object promisesNs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypesBufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
+  /**
+    * Asynchronous readdir(3) - read a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
+    */
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingTrue): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("readdir")
   def readdir_buffer(path: nodeLib.fsMod.PathLike, options: mzLib.mzLibStrings.buffer): js.Promise[js.Array[nodeLib.Buffer]] = js.native

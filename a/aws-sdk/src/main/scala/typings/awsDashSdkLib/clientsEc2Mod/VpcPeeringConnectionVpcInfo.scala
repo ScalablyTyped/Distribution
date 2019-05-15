@@ -27,7 +27,7 @@ trait VpcPeeringConnectionVpcInfo extends js.Object {
     */
   var PeeringOptions: js.UndefOr[VpcPeeringConnectionOptionsDescription] = js.undefined
   /**
-    * The region in which the VPC is located.
+    * The Region in which the VPC is located.
     */
   var Region: js.UndefOr[String] = js.undefined
   /**

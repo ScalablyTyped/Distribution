@@ -16,9 +16,14 @@ class Strategy protected ()
   def generateServiceProviderMetadata(): java.lang.String = js.native
   def generateServiceProviderMetadata(decryptionCert: java.lang.String): java.lang.String = js.native
   def generateServiceProviderMetadata(decryptionCert: java.lang.String, signingCert: java.lang.String): java.lang.String = js.native
+  def generateServiceProviderMetadata(decryptionCert: scala.Null, signingCert: java.lang.String): java.lang.String = js.native
   def logout(
     req: expressLib.expressMod.Request,
-    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* url */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* err */ stdLib.Error | scala.Null, 
+      /* url */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

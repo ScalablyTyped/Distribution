@@ -501,6 +501,7 @@
 | 483 | [tough-cookie](./t/tough-cookie) | RFC6265 Cookies and Cookie Jar for node.js
 | 482 | [pretty-bytes](./p/pretty-bytes) | Convert bytes to a human readable string: 1337 → 1
 | 480 | [bcrypt-nodejs](./b/bcrypt-nodejs) | A native JS bcrypt library for NodeJS.
+| 480 | [requireindex](./r/requireindex) | Write minimal node index.js files that require and
 | 480 | [svgo](./s/svgo) | Nodejs-based tool for optimizing SVG vector graphi
 | 477 | [jasmine](./j/jasmine) | Command line jasmine
 | 476 | [draft-js](./d/draft-js) | A React framework for building text editors.
@@ -2193,6 +2194,7 @@
 | 58 | [react-tether](./r/react-tether) | Drop content anywhere on the page.
 | 58 | [swagger-jsdoc](./s/swagger-jsdoc) | Generates swagger doc based on JSDoc
 | 58 | [validatorjs](./v/validatorjs) | Validation library inspired by Laravel's Validator
+| 58 | [xml-escape](./x/xml-escape) | Escape XML
 | 57 | [comment-json](./c/comment-json) | Parse and stringify JSON file with comments
 | 57 | [depcheck](./d/depcheck) | Check dependencies in your node module
 | 57 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js
@@ -2344,6 +2346,7 @@
 | 51 | [mersenne-twister](./m/mersenne-twister) | Mersenne twister pseudorandom number generator
 | 51 | [mock-fs](./m/mock-fs) | A configurable mock file system.  You know, for te
 | 51 | [nodemailer-mailgun-transp](./n/nodemailer-mailgun-transport) | A transport module to use with nodemailer to lever
+| 51 | [openid-client](./o/openid-client) | OpenID Connect Relying Party (RP, Client) implemen
 | 51 | [p-map-series](./p/p-map-series) | Map over promises serially
 | 51 | [react-autocomplete](./r/react-autocomplete) | Accessible, extensible, Autocomplete for React.js
 | 51 | [react-data-grid](./r/react-data-grid) | Excel-like grid component built with React, with e
@@ -2693,6 +2696,7 @@
 | 37 | [argon2](./a/argon2) | An Argon2 library for Node
 | 37 | [chai-enzyme](./c/chai-enzyme) | Chai.js assertions for enzyme
 | 37 | [cleave_dot_js](./c/cleave_dot_js) | JavaScript library for formatting input text conte
+| 37 | [dirty-chai](./d/dirty-chai) | Extends Chai with lint-friendly terminating assert
 | 37 | [electron-json-storage](./e/electron-json-storage) | Easily write and read user settings in Electron ap
 | 37 | [eslint-scope](./e/eslint-scope) | ECMAScript scope analyzer for ESLint
 | 37 | [eth-lightwallet](./e/eth-lightwallet) | A lightweight ethereum javascript wallet.
@@ -2851,6 +2855,7 @@
 | 33 | [undertaker-registry](./u/undertaker-registry) | Default registry in gulp 4.
 | 33 | [unique-string](./u/unique-string) | Generate a unique random string
 | 33 | [urix](./u/urix) | Makes Windows-style paths more unix and URI friend
+| 33 | [yadda](./y/yadda) | A true BDD framework for JavaScript
 | 32 | [airtable](./a/airtable) | The official Airtable JavaScript library.
 | 32 | [architect](./a/architect) | A Simple yet powerful plugin system for node appli
 | 32 | [array-sort](./a/array-sort) | Fast and powerful array sorting. Sort an array of 
@@ -2986,6 +2991,7 @@
 | 29 | [react-map-gl](./r/react-map-gl) | A React wrapper for MapboxGL-js and overlay API.
 | 29 | [resemblejs](./r/resemblejs) | Image analysis and comparison with HTML5
 | 29 | [throng](./t/throng) | A simple worker-manager for clustered apps
+| 29 | [tunnel-ssh](./t/tunnel-ssh) | Easy extendable SSH tunnel
 | 29 | [twix](./t/twix) | Twix.js allows you to work with date ranges
 | 29 | [typed-rest-client](./t/typed-rest-client) | Node Rest and Http Clients for use with TypeScript
 | 28 | [angular-toastr](./a/angular-toastr) | -
@@ -3413,6 +3419,7 @@
 | 19 | [bootstrap-switch](./b/bootstrap-switch) | Turn checkboxes and radio buttons into toggle swit
 | 19 | [cli-box](./c/cli-box) | A library to generate ASCII boxes via NodeJS
 | 19 | [copy-text-to-clipboard](./c/copy-text-to-clipboard) | Copy text to the clipboard in modern browsers (0.2
+| 19 | [difflib](./d/difflib) | text diff library ported from Python's difflib mod
 | 19 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 19 | [falcor](./f/falcor) | A JavaScript library for efficient data fetching.
 | 19 | [ftpd](./f/ftpd) | Node FTP Server
@@ -3826,10 +3833,12 @@
 | 13 | [retry-request](./r/retry-request) | Retry a request.
 | 13 | [roll](./r/roll) | node.js package for rolling dice and adding modifi
 | 13 | [spdx-satisfies](./s/spdx-satisfies) | test whether SPDX expressions satisfy licensing cr
+| 13 | [styletron-react](./s/styletron-react) | React bindings for Styletron
 | 13 | [svg-path-parser](./s/svg-path-parser) | A parser for SVG's path syntax
 | 13 | [transducers-js](./t/transducers-js) | A Transducers implementation for JavaScript
 | 13 | [two_dot_js](./t/two_dot_js) | A renderer agnostic two-dimensional drawing api fo
 | 13 | [vivus](./v/vivus) | JavaScript library to make drawing animation on SV
+| 13 | [vue2-editor](./v/vue2-editor) | HTML editor using Vue.js 2, and Quill.js, an open 
 | 13 | [websql](./w/websql) | WebSQL Database API, implemented for Node using sq
 | 13 | [wikidata-sdk](./w/wikidata-sdk) | A javascript tool-suite to query Wikidata and simp
 | 13 | [xmpp__jid](./x/xmpp__jid) | XMPP identifiers (JID) for JavaScript
@@ -3864,6 +3873,7 @@
 | 12 | [intercom-client](./i/intercom-client) | Official Node bindings to the Intercom API
 | 12 | [is-unc-path](./i/is-unc-path) | Returns true if a filepath is a windows UNC file p
 | 12 | [is-uuid](./i/is-uuid) | UUID check for Node and the browser
+| 12 | [just-snake-case](./j/just-snake-case) | convert a string to snake case
 | 12 | [leaflet-rotatedmarker](./l/leaflet-rotatedmarker) | Enables rotation of marker icons in Leaflet.
 | 12 | [lodash_dot_assignwith](./l/lodash_dot_assignwith) | The lodash method _.assignWith exported as a modul
 | 12 | [lodash_dot_inrange](./l/lodash_dot_inrange) | The lodash method _.inRange exported as a module.
@@ -4112,6 +4122,7 @@
 | 10 | [tableify](./t/tableify) | Create HTML tables from Javascript Objects
 | 10 | [theo](./t/theo) | Design Tokens formatter
 | 10 | [tokenizr](./t/tokenizr) | String Tokenization Library for JavaScript
+| 10 | [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider
 | 10 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
 | 10 | [virtual-keyboard](./v/virtual-keyboard) | Virtual Keyboard using jQuery UI
 | 10 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a
@@ -4589,6 +4600,7 @@
 | 6 | [storybook__addon-jest](./s/storybook__addon-jest) | React storybook addon that show component jest rep
 | 6 | [stringify-attributes](./s/stringify-attributes) | Turn an object into a string of HTML attributes
 | 6 | [style-value-types](./s/style-value-types) | Parsers, transformers and tests for special value 
+| 6 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron
 | 6 | [survey-knockout](./s/survey-knockout) | survey.js is a JavaScript Survey Library. It is a 
 | 6 | [svg-path-bounding-box](./s/svg-path-bounding-box) | SVG path bounding box calculator
 | 6 | [tea-merge](./t/tea-merge) | Deep object merge utility.
@@ -4965,6 +4977,7 @@
 | 3 | [csvrow](./c/csvrow) | parse a CSV row string
 | 3 | [d3-graphviz](./d/d3-graphviz) | Graphviz DOT rendering and animated transitions fo
 | 3 | [d3kit](./d/d3kit) | A kit of tools to speed D3 related project develop
+| 3 | [deprecation](./d/deprecation) | Log a deprecation message with stack
 | 3 | [detect-touch-events](./d/detect-touch-events) | Detect if the browser supports the touch events ap
 | 3 | [dir-resolve](./d/dir-resolve) | Extension for require.resolve which will resolve d
 | 3 | [dmg-builder](./d/dmg-builder) | Utilities to build DMG. Used by 
@@ -5184,6 +5197,7 @@
 | 2 | [atlassian-crowd-client](./a/atlassian-crowd-client) | Atlassian Crowd API client for Node
 | 2 | [atom](./a/atom) | shared, synchronous, independent state for javascr
 | 2 | [axios-token-interceptor](./a/axios-token-interceptor) | An interceptor which makes it easier to work with 
+| 2 | [b2a](./b/b2a) | btoa and atob (ie base64 encoding and decoding) su
 | 2 | [backbone_dot_layoutmanage](./b/backbone_dot_layoutmanager) | A layout and template manager for Backbone.js appl
 | 2 | [badgen](./b/badgen) | Fast svg badge generator.
 | 2 | [bash-glob](./b/bash-glob) | Bash-powered globbing for node.js
@@ -5527,6 +5541,7 @@
 | 1 | [cordova-plugin-insomnia](./c/cordova-plugin-insomnia) | Prevent the screen of the mobile device from falli
 | 1 | [country-select-js](./c/country-select-js) | A jQuery plugin for selecting a country
 | 1 | [coverup](./c/coverup) | Conceal a string with asterisks
+| 1 | [cryptex](./c/cryptex) | Secure secret storage and cryptographic key retrie
 | 1 | [css-modules](./c/css-modules) | -
 | 1 | [cycled](./c/cycled) | Cycle through the items of an array
 | 1 | [d3-hsv](./d/d3-hsv) | The HSV (Hue, Saturation, Value) color space.
@@ -5609,6 +5624,7 @@
 | 1 | [hexo-bunyan](./h/hexo-bunyan) | a JSON logging library for node.js services(remove
 | 1 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng
 | 1 | [homeworks](./h/homeworks) | Front End framework that supported view binding.
+| 1 | [hookrouter](./h/hookrouter) | A hook based router for React
 | 1 | [hummus-recipe](./h/hummus-recipe) | A powerful PDF tool for NodeJS based on HummusJS
 | 1 | [ink-testing-library](./i/ink-testing-library) | Utilities for testing Ink apps
 | 1 | [inversify-restify-utils](./i/inversify-restify-utils) | Some utilities for the development of restify appl
@@ -5978,6 +5994,7 @@
 | 0 | [chordsheetjs](./c/chordsheetjs) | A JavaScript library for parsing and formatting ch
 | 0 | [chui](./c/chui) | A module for creating Web apps with ChocolateChip-
 | 0 | [clovelced-plugin-audioman](./c/clovelced-plugin-audiomanagement) | A plugin to manage audio mode and volume
+| 0 | [coinbase-commerce-node](./c/coinbase-commerce-node) | The Official Coinbase Commerce SDK for Node.js
 | 0 | [color-check](./c/color-check) | Color Check is a very tine library for checking yo
 | 0 | [com_dot_darktalker_dot_co](./c/com_dot_darktalker_dot_cordova_dot_screenshot) | screenshot PhoneGap Plugin for Android
 | 0 | [com_dot_wikitude_dot_phon](./c/com_dot_wikitude_dot_phonegap_dot_wikitudeplugin) | Augmented Reality Wikitude SDK Plugin 
@@ -6203,6 +6220,7 @@
 | 0 | [mongoose-promise](./m/mongoose-promise) | -
 | 0 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily
 | 0 | [mongration](./m/mongration) | Node.js mongodb migration framework
+| 0 | [motion-scroll](./m/motion-scroll) | scroll to an element or a position with easing
 | 0 | [motor-hat](./m/motor-hat) | Node Module to control Adafruits MotorHAT for the 
 | 0 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
 | 0 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
@@ -6451,6 +6469,7 @@
 | 0 | [whitelist-object](./w/whitelist-object) | returns specified keys for passed in object
 | 0 | [windows-service](./w/windows-service) | Run Node.JS programs as native Windows Services.
 | 0 | [winston-dynamodb](./w/winston-dynamodb) | A Winston transport for Amazon DynamoDB
+| 0 | [wouter](./w/wouter) | A minimalistic routing for React. Nothing extra, j
 | 0 | [xrm](./x/xrm) | -
 | 0 | [xsockets](./x/xsockets) | a socket optimized for cross-domain use for the we
 | 0 | [yandex-money-sdk](./y/yandex-money-sdk) | SDK for working with yandex money API |

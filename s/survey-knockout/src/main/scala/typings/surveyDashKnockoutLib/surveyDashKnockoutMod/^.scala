@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("survey-knockout", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var Serializer: JsonMetadata = js.native
   var Version: java.lang.String = js.native
   var __assign: js.Any = js.native
   var __decorate: js.Function4[

@@ -34,6 +34,7 @@ class JsonMetadata () extends js.Object {
   def getPropertiesByObj(obj: js.Any): js.Array[JsonObjectProperty] = js.native
   def getRequiredProperties(name: java.lang.String): js.Array[java.lang.String] = js.native
   def isDescendantOf(className: java.lang.String, ancestorClassName: java.lang.String): scala.Boolean = js.native
+  def overrideClassCreator(name: java.lang.String, creator: js.Function0[_]): scala.Unit = js.native
   def overrideClassCreatore(name: java.lang.String, creator: js.Function0[_]): scala.Unit = js.native
   def removeProperty(className: java.lang.String, propertyName: java.lang.String): scala.Boolean = js.native
 }

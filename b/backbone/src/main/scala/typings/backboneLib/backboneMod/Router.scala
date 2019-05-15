@@ -24,6 +24,14 @@ class Router () extends js.Object {
   def navigate(fragment: java.lang.String): Router = js.native
   def navigate(fragment: java.lang.String, options: NavigateOptions): Router = js.native
   def navigate(fragment: java.lang.String, trigger: scala.Boolean): Router = js.native
+  /**
+    * For use with Router as ES classes. If you define a preinitialize method,
+    * it will be invoked when the Router is first created, before any
+    * instantiation logic is run for the Router.
+    * @see https://backbonejs.org/#Router-preinitialize
+    */
+  def preinitialize(): scala.Unit = js.native
+  def preinitialize(options: RouterOptions): scala.Unit = js.native
   def route(route: java.lang.String, name: java.lang.String): Router = js.native
   def route(route: java.lang.String, name: java.lang.String, callback: js.Function): Router = js.native
   def route(route: stdLib.RegExp, name: java.lang.String): Router = js.native

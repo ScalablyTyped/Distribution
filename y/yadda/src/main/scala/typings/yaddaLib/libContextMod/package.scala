@@ -1,0 +1,10 @@
+package typings
+package yaddaLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object libContextMod {
+  type Properties = org.scalablytyped.runtime.StringDictionary[js.Any]
+}

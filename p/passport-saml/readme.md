@@ -1,7 +1,7 @@
 
 # Scala.js typings for passport-saml
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 SAML 2.0 authentication strategy for Passport
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for passport-saml 1.0
+// Type definitions for passport-saml 1.1
 // Project: https://github.com/bergie/passport-saml
 // Definitions by: Chris Barth <https://github.com/cjbarth>
 //                 Damian Assennato <https://github.com/dassennato>

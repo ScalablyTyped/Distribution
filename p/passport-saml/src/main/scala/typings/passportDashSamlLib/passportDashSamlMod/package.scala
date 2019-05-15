@@ -26,5 +26,5 @@ package object passportDashSamlMod {
     /* done */ VerifiedCallback, 
     scala.Unit
   ]
-  type VerifyWithoutRequest = js.Function2[/* profile */ js.Object, /* done */ VerifiedCallback, scala.Unit]
+  type VerifyWithoutRequest = js.Function2[/* profile */ Profile, /* done */ VerifiedCallback, scala.Unit]
 }

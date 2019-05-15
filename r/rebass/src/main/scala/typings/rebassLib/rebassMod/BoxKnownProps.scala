@@ -28,7 +28,7 @@ object BoxKnownProps {
     ] = null,
     children: reactLib.reactMod.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
-    css: styledDashComponentsLib.styledDashComponentsMod.CSSObject = null,
+    css: styledDashComponentsLib.styledDashComponentsMod.CSSObject | styledDashComponentsLib.styledDashComponentsMod.FlattenSimpleInterpolation | java.lang.String = null,
     flex: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.FlexProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
@@ -121,7 +121,7 @@ object BoxKnownProps {
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css)
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

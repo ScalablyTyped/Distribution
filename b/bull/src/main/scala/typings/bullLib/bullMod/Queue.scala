@@ -334,6 +334,10 @@ trait Queue[T]
     */
   def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) with bullLib.Anon_JobId): js.Promise[scala.Unit] = js.native
   /**
+    * Removes a given repeatable job by key.
+    */
+  def removeRepeatableByKey(key: java.lang.String): js.Promise[scala.Unit] = js.native
+  /**
     * Returns a promise that resolves when the queue is resumed after being paused.
     *
     * The resume can be either local or global. If global, all workers in all queue instances for a given queue

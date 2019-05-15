@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("auth0", "UsersManager")
 @js.native
-class UsersManager protected () extends js.Object {
+class UsersManager[A, U] protected () extends js.Object {
   def this(options: UsersOptions) = this()
-  def getInfo(accessToken: java.lang.String): js.Promise[User] = js.native
+  def getInfo(accessToken: java.lang.String): js.Promise[User[A, U]] = js.native
   def getInfo(
     accessToken: java.lang.String,
-    cb: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* user */ User[A, U], scala.Unit]
   ): scala.Unit = js.native
   def impersonate(userId: java.lang.String, settings: ImpersonateSettingOptions): js.Promise[_] = js.native
   def impersonate(

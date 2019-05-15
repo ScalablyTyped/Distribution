@@ -17,6 +17,8 @@ package object clientsChimeMod {
   */
   type AccountType = _AccountType | java.lang.String
   type Boolean = scala.Boolean
+  type BotList = js.Array[Bot]
+  type BotType = awsDashSdkLib.awsDashSdkLibStrings.ChatBot | java.lang.String
   type CallingRegion = java.lang.String
   type CallingRegionList = js.Array[CallingRegion]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions

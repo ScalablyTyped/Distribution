@@ -15,7 +15,7 @@ trait GridMenuOptions extends js.Object {
   var selectedRightPadding: js.UndefOr[java.lang.String] = js.undefined
   var selectedStyle: js.UndefOr[CTerminal] = js.undefined
   var style: js.UndefOr[CTerminal] = js.undefined
-  var width: scala.Double
+  var width: js.UndefOr[scala.Double] = js.undefined
   var x: js.UndefOr[scala.Double] = js.undefined
   var y: js.UndefOr[scala.Double] = js.undefined
 }
@@ -23,7 +23,6 @@ trait GridMenuOptions extends js.Object {
 object GridMenuOptions {
   @scala.inline
   def apply(
-    width: scala.Double,
     exitOnUnexpectedKey: js.UndefOr[scala.Boolean] = js.undefined,
     itemMaxWidth: scala.Int | scala.Double = null,
     keyBindings: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
@@ -33,10 +32,11 @@ object GridMenuOptions {
     selectedRightPadding: java.lang.String = null,
     selectedStyle: CTerminal = null,
     style: CTerminal = null,
+    width: scala.Int | scala.Double = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): GridMenuOptions = {
-    val __obj = js.Dynamic.literal(width = width)
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey)
     if (itemMaxWidth != null) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.asInstanceOf[js.Any])
     if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings)
@@ -46,6 +46,7 @@ object GridMenuOptions {
     if (selectedRightPadding != null) __obj.updateDynamic("selectedRightPadding")(selectedRightPadding)
     if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
     if (style != null) __obj.updateDynamic("style")(style)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridMenuOptions]

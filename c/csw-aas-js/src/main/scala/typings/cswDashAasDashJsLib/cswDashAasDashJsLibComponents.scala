@@ -23,9 +23,9 @@ object cswDashAasDashJsLibComponents {
   type ClientRoleProps = cswDashAasDashJsLib.cswDashAasDashJsMod.ClientRoleProps
   @scala.inline
   def Consumer: reactLib.reactMod.ComponentType[
-    reactLib.reactMod.ConsumerProps[cswDashAasDashJsLib.cswDashAasDashJsMod.AuthContext]
+    reactLib.reactMod.ConsumerProps[cswDashAasDashJsLib.cswDashAasDashJsMod.IAuthContext]
   ] = cswDashAasDashJsLib.cswDashAasDashJsMod.^.Consumer.asInstanceOf[reactLib.reactMod.ComponentType[
-  reactLib.reactMod.ConsumerProps[cswDashAasDashJsLib.cswDashAasDashJsMod.AuthContext]]]
+  reactLib.reactMod.ConsumerProps[cswDashAasDashJsLib.cswDashAasDashJsMod.IAuthContext]]]
   @scala.inline
   def ConsumerProps: reactLib.reactMod.ConsumerProps.type = reactLib.reactMod.ConsumerProps
   type ConsumerProps[T] = reactLib.reactMod.ConsumerProps[T]

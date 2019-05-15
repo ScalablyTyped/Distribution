@@ -28,6 +28,11 @@ trait StructureExtension
 class StructureExtensionCls protected () extends StructureExtension {
   def this(id: java.lang.String) = this()
   /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
+  /**
     * The amount of energy containing in the extension.
     */
   /* CompleteClass */
@@ -108,6 +113,7 @@ object StructureExtension {
   @scala.inline
   def apply(
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     energy: scala.Double,
     energyCapacity: scala.Double,
     hits: scala.Double,
@@ -121,7 +127,7 @@ object StructureExtension {
     room: Room,
     structureType: STRUCTURE_EXTENSION
   ): StructureExtension = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects, energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructureExtension]
   }

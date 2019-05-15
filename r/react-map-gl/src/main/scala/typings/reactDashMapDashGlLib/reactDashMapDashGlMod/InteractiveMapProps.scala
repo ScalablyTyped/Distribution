@@ -80,7 +80,7 @@ object InteractiveMapProps {
     onError: /* e */ MapError => scala.Unit = null,
     onHover: /* event */ PointerEvent => scala.Unit = null,
     onInteractionStateChange: /* state */ ExtraState => scala.Unit = null,
-    onLoad: () => scala.Unit = null,
+    onLoad: /* event */ MapLoadEvent => scala.Unit = null,
     onMouseDown: /* event */ PointerEvent => scala.Unit = null,
     onMouseEnter: /* event */ PointerEvent => scala.Unit = null,
     onMouseLeave: /* event */ PointerEvent => scala.Unit = null,
@@ -143,7 +143,7 @@ object InteractiveMapProps {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1(onHover))
     if (onInteractionStateChange != null) __obj.updateDynamic("onInteractionStateChange")(js.Any.fromFunction1(onInteractionStateChange))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))

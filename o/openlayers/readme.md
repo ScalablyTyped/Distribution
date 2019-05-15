@@ -39,7 +39,6 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://openlayers.org
 // Definitions by: Olivier Sechet <https://github.com/osechet>
 //                 Bin Wang <https://github.com/wb14123>
-//                 Junyoung Clare Jang <https://github.com/ailrun>
 //                 Alexandre Melard <https://github.com/mylen>
 //                 Chad Johnston <https://github.com/iamthechad>
 //                 Dan Manastireanu <https://github.com/danmana>

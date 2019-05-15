@@ -29,11 +29,6 @@ trait StructurePowerSpawn
     */
   var powerCapacity: scala.Double
   /**
-    * Create a power creep. Currently in development
-    * @param name The name of the power creep.
-    */
-  def createPowerCreep(name: java.lang.String): ScreepsReturnCode
-  /**
     * Register power resource units into your account. Registered power allows to develop power creeps skills. Consumes 1 power resource unit and 50 energy resource units.
     */
   def processPower(): ScreepsReturnCode
@@ -43,6 +38,11 @@ trait StructurePowerSpawn
 @js.native
 class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
   def this(id: java.lang.String) = this()
+  /**
+    * Applied effects, an array of objects with the following properties:
+    */
+  /* CompleteClass */
+  override var effects: js.Array[RoomObjectEffect] = js.native
   /**
     * The amount of energy containing in this structure.
     */
@@ -113,12 +113,6 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
   /* CompleteClass */
   override var structureType: STRUCTURE_POWER_SPAWN = js.native
   /**
-    * Create a power creep. Currently in development
-    * @param name The name of the power creep.
-    */
-  /* CompleteClass */
-  override def createPowerCreep(name: java.lang.String): ScreepsReturnCode = js.native
-  /**
     * Destroy this structure immediately.
     */
   /* CompleteClass */
@@ -144,8 +138,8 @@ class StructurePowerSpawnCls protected () extends StructurePowerSpawn {
 object StructurePowerSpawn {
   @scala.inline
   def apply(
-    createPowerCreep: java.lang.String => ScreepsReturnCode,
     destroy: () => ScreepsReturnCode,
+    effects: js.Array[RoomObjectEffect],
     energy: scala.Double,
     energyCapacity: scala.Double,
     hits: scala.Double,
@@ -162,7 +156,7 @@ object StructurePowerSpawn {
     room: Room,
     structureType: STRUCTURE_POWER_SPAWN
   ): StructurePowerSpawn = {
-    val __obj = js.Dynamic.literal(createPowerCreep = js.Any.fromFunction1(createPowerCreep), destroy = js.Any.fromFunction0(destroy), energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, power = power, powerCapacity = powerCapacity, processPower = js.Any.fromFunction0(processPower), room = room, structureType = structureType)
+    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), effects = effects, energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = js.Any.fromFunction0(isActive), my = my, notifyWhenAttacked = js.Any.fromFunction1(notifyWhenAttacked), owner = owner, pos = pos, power = power, powerCapacity = powerCapacity, processPower = js.Any.fromFunction0(processPower), room = room, structureType = structureType)
   
     __obj.asInstanceOf[StructurePowerSpawn]
   }

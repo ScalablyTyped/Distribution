@@ -59,7 +59,7 @@ trait ReservedInstancesOffering extends js.Object {
     */
   var ReservedInstancesOfferingId: js.UndefOr[String] = js.undefined
   /**
-    * Whether the Reserved Instance is applied to instances in a region or an Availability Zone.
+    * Whether the Reserved Instance is applied to instances in a Region or an Availability Zone.
     */
   var Scope: js.UndefOr[scope] = js.undefined
   /**

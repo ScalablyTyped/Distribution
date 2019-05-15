@@ -6,16 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NockDefinition extends js.Object {
-  var body: js.UndefOr[java.lang.String | js.Any] = js.undefined
+  var body: js.UndefOr[RequestBodyMatcher] = js.undefined
   var headers: js.UndefOr[HttpHeaders] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[Options] = js.undefined
   var path: java.lang.String
   var port: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var reqheaders: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp | nockLib.Anon_HeaderValue]
-  ] = js.undefined
-  var response: js.UndefOr[java.lang.String | js.Any] = js.undefined
+  var reqheaders: js.UndefOr[RequestHeaderMatcher] = js.undefined
+  var response: js.UndefOr[ReplyBody] = js.undefined
   var scope: java.lang.String
   var status: js.UndefOr[scala.Double] = js.undefined
 }
@@ -25,13 +23,13 @@ object NockDefinition {
   def apply(
     path: java.lang.String,
     scope: java.lang.String,
-    body: java.lang.String | js.Any = null,
+    body: RequestBodyMatcher = null,
     headers: HttpHeaders = null,
     method: java.lang.String = null,
     options: Options = null,
     port: scala.Double | java.lang.String = null,
-    reqheaders: org.scalablytyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp | nockLib.Anon_HeaderValue] = null,
-    response: java.lang.String | js.Any = null,
+    reqheaders: RequestHeaderMatcher = null,
+    response: ReplyBody = null,
     status: scala.Int | scala.Double = null
   ): NockDefinition = {
     val __obj = js.Dynamic.literal(path = path, scope = scope)

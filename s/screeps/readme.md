@@ -43,8 +43,10 @@ These comments are from the typescript definitions and might be useful:
 //                 Resi Respati <https://github.com/resir014>
 //                 Adam Laycock <https://github.com/Arcath>
 //                 Dominic Marcuse <https://github.com/dmarcuse>
+//                 Skyler Kehren <https://github.com/pyrodogg>
+//                 Kieran Carnegie <https://github.com/kotarou>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.6
+// TypeScript Version: 2.7
 // Game Constants
 
 ```

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tracking"
-version := "5.0-dt-20180806Z-266bef"
+version := "5.0-dt-20190514Z-266bef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

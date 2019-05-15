@@ -1,7 +1,7 @@
 
 # Scala.js typings for backbone
 
-Typings are for version 1.3.3
+Typings are for version 1.4.0
 
 ## Library description:
 Give your JS App some Backbone with Models, Views, Collections, and Events.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Backbone 1.3.3
+// Type definitions for Backbone 1.4.0
 // Project: http://backbonejs.org/
 //          https://github.com/jashkenas/backbone
 // Definitions by: Boris Yankov <https://github.com/borisyankov>
@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 kenjiru <https://github.com/kenjiru>
 //                 jjoekoullas <https://github.com/jjoekoullas>
 //                 Julian Gonggrijp <https://github.com/jgonggrijp>
+//                 Kyle Scully <https://github.com/zieka>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

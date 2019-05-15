@@ -12,6 +12,7 @@ class Condition () extends js.Object {
   var operator: java.lang.String = js.native
   var right: Operand = js.native
   def fillVariables(vars: js.Array[java.lang.String]): scala.Unit = js.native
+  def hasFunction(): scala.Boolean = js.native
   def perform(): scala.Boolean = js.native
   def perform(left: js.Any): scala.Boolean = js.native
   def perform(left: js.Any, right: js.Any): scala.Boolean = js.native

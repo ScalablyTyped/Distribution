@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
 trait CostMatrix
   extends /**
   * Creates a new CostMatrix containing 0's for all positions.
-  * @constructor
   */
 org.scalablytyped.runtime.Instantiable0[CostMatrix] {
   /**

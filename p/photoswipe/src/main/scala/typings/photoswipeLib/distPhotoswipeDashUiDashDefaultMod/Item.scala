@@ -24,6 +24,7 @@ object Item {
     initialPosition: js.Any = null,
     initialZoomLevel: scala.Int | scala.Double = null,
     loadError: js.UndefOr[scala.Boolean] = js.undefined,
+    msrc: java.lang.String = null,
     title: java.lang.String = null,
     vGap: photoswipeLib.Anon_BottomTop = null
   ): Item = {
@@ -33,6 +34,7 @@ object Item {
     if (initialPosition != null) __obj.updateDynamic("initialPosition")(initialPosition)
     if (initialZoomLevel != null) __obj.updateDynamic("initialZoomLevel")(initialZoomLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(loadError)) __obj.updateDynamic("loadError")(loadError)
+    if (msrc != null) __obj.updateDynamic("msrc")(msrc)
     if (title != null) __obj.updateDynamic("title")(title)
     if (vGap != null) __obj.updateDynamic("vGap")(vGap)
     __obj.asInstanceOf[Item]

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object qrcodeLibStrings {
   @js.native
-  sealed trait H extends js.Object
+  sealed trait H
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
-  sealed trait Q extends js.Object
+  sealed trait Q
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
   sealed trait alphanumeric extends js.Object
@@ -25,7 +29,8 @@ object qrcodeLibStrings {
   sealed trait byte extends js.Object
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait high
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
   sealed trait `image/jpeg` extends js.Object
@@ -40,10 +45,12 @@ object qrcodeLibStrings {
   sealed trait kanji extends js.Object
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait low
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
   sealed trait numeric extends js.Object
@@ -52,7 +59,8 @@ object qrcodeLibStrings {
   sealed trait png extends js.Object
   
   @js.native
-  sealed trait quartile extends js.Object
+  sealed trait quartile
+    extends qrcodeLib.qrcodeMod.QRCodeErrorCorrectionLevel
   
   @js.native
   sealed trait svg extends js.Object

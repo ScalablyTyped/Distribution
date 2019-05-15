@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for @tinajs/tina 1.4
 // Project: https://github.com/tinajs/tina, https://tina.js.org
 // Definitions by: Jiayu Liu <https://github.com/Jimexist>
+//                 Strange Fish <https://github.com/strange-fish>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped/tinajs__tina
 // TypeScript Version: 2.2
 

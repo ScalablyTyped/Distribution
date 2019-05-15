@@ -1296,6 +1296,16 @@ class SurveyModel ()
     * @param page
     */
   def removePage(page: PageModel): scala.Unit = js.native
+  /**
+    * Perform the calculation of the given expression and true or false
+    * @param expression
+    */
+  def runCondition(expression: java.lang.String): scala.Boolean = js.native
+  /**
+    * Perform the calculation of the given expression and returns the result value
+    * @param expression
+    */
+  def runExpression(expression: java.lang.String): js.Any = js.native
   def scrollToTopOnPageChange(): scala.Unit = js.native
   /**
     * Send the survey result into [dxsurvey.com](http://www.dxsurvey.com) service.

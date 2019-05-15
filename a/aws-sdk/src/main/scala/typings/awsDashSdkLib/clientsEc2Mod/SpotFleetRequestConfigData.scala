@@ -15,7 +15,7 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   /**
-    * Indicates whether running Spot Instances should be terminated if the target capacity of the Spot Fleet request is decreased below the current size of the Spot Fleet.
+    * Indicates whether running Spot Instances should be terminated if you decrease the target capacity of the Spot Fleet request below the current size of the Spot Fleet.
     */
   var ExcessCapacityTerminationPolicy: js.UndefOr[ExcessCapacityTerminationPolicy] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var FulfilledCapacity: js.UndefOr[Double] = js.undefined
   /**
-    * Grants the Spot Fleet permission to terminate Spot Instances on your behalf when you cancel its Spot Fleet request using CancelSpotFleetRequests or when the Spot Fleet request expires, if you set terminateInstancesWithExpiration.
+    * The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that grants the Spot Fleet the permission to request, launch, terminate, and tag instances on your behalf. For more information, see Spot Fleet Prerequisites in the Amazon EC2 User Guide for Linux Instances. Spot Fleet can terminate Spot Instances on your behalf when you cancel its Spot Fleet request using CancelSpotFleetRequests or when the Spot Fleet request expires, if you set TerminateInstancesWithExpiration.
     */
   var IamFleetRole: String
   /**
@@ -35,11 +35,11 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined
   /**
-    * The launch specifications for the Spot Fleet request. If you specify LaunchSpecifications, you can't specify LaunchTemplateConfigs.
+    * The launch specifications for the Spot Fleet request. If you specify LaunchSpecifications, you can't specify LaunchTemplateConfigs. If you include On-Demand capacity in your request, you must use LaunchTemplateConfigs.
     */
   var LaunchSpecifications: js.UndefOr[LaunchSpecsList] = js.undefined
   /**
-    * The launch template and overrides. If you specify LaunchTemplateConfigs, you can't specify LaunchSpecifications.
+    * The launch template and overrides. If you specify LaunchTemplateConfigs, you can't specify LaunchSpecifications. If you include On-Demand capacity in your request, you must use LaunchTemplateConfigs.
     */
   var LaunchTemplateConfigs: js.UndefOr[LaunchTemplateConfigList] = js.undefined
   /**
@@ -67,11 +67,11 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var SpotPrice: js.UndefOr[String] = js.undefined
   /**
-    * The number of units to request. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O. If the request type is maintain, you can specify a target capacity of 0 and add capacity later.
+    * The number of units to request for the Spot Fleet. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O. If the request type is maintain, you can specify a target capacity of 0 and add capacity later.
     */
   var TargetCapacity: Integer
   /**
-    * Indicates whether running Spot Instances should be terminated when the Spot Fleet request expires.
+    * Indicates whether running Spot Instances are terminated when the Spot Fleet request expires.
     */
   var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined
   /**
@@ -79,11 +79,11 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var Type: js.UndefOr[FleetType] = js.undefined
   /**
-    * The start date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). The default is to start fulfilling the request immediately.
+    * The start date and time of the request, in UTC format (YYYY-MM-DDTHH:MM:SSZ). By default, Amazon EC2 starts fulfilling the request immediately.
     */
   var ValidFrom: js.UndefOr[DateTime] = js.undefined
   /**
-    * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot Instance requests are placed or able to fulfill the request. If no value is specified, the Spot Fleet request remains until you cancel it.
+    * The end date and time of the request, in UTC format (YYYY-MM-DDTHH:MM:SSZ). After the end date and time, no new Spot Instance requests are placed or able to fulfill the request. If no value is specified, the Spot Fleet request remains until you cancel it.
     */
   var ValidUntil: js.UndefOr[DateTime] = js.undefined
 }

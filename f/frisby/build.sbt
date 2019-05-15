@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "frisby"
-version := "2.0-dt-20190212Z-fe0bda"
+version := "2.0-dt-20190212Z-06fccb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c4b8ce",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
-  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190425Z-535e67",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190425Z-e03538",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

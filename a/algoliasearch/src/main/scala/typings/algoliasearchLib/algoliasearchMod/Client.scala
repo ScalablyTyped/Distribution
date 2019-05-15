@@ -37,12 +37,15 @@ trait Client extends js.Object {
     * Perform multiple operations with one API call to reduce latency
     * https://github.com/algolia/algoliasearch-client-js#custom-batch---batch
     */
-  def batch(action: js.Array[Action]): js.Promise[Task] = js.native
+  def batch(action: js.Array[Action]): js.Promise[BatchTask] = js.native
   /**
     * Perform multiple operations with one API call to reduce latency
     * https://github.com/algolia/algoliasearch-client-js#custom-batch---batch
     */
-  def batch(action: js.Array[Action], cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]): scala.Unit = js.native
+  def batch(
+    action: js.Array[Action],
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ BatchTask, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * clear browser cache
     * https://github.com/algolia/algoliasearch-client-js#cache
@@ -52,7 +55,7 @@ trait Client extends js.Object {
     * Copy settings of an index from a specific index to a new one
     * https://github.com/algolia/algoliasearch-client-js#copy-index---copyindex
     */
-  def copyIndex(from: java.lang.String, to: java.lang.String): js.Promise[Task] = js.native
+  def copyIndex(from: java.lang.String, to: java.lang.String): js.Promise[UpdateIndexTask] = js.native
   /**
     * Copy an index from a specific index to a new one
     * https://github.com/algolia/algoliasearch-client-js#copy-index---copyindex
@@ -60,7 +63,7 @@ trait Client extends js.Object {
   def copyIndex(
     from: java.lang.String,
     to: java.lang.String,
-    cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ UpdateIndexTask, scala.Unit]
   ): scala.Unit = js.native
   def copyIndex(
     from: java.lang.String,
@@ -68,7 +71,7 @@ trait Client extends js.Object {
     scope: js.Array[
       algoliasearchLib.algoliasearchLibStrings.settings | algoliasearchLib.algoliasearchLibStrings.synonyms | algoliasearchLib.algoliasearchLibStrings.rules
     ]
-  ): js.Promise[Task] = js.native
+  ): js.Promise[UpdateIndexTask] = js.native
   /**
     * Copy settings of an index from a specific index to a new one
     * https://github.com/algolia/algoliasearch-client-js#copy-index---copyindex
@@ -79,7 +82,7 @@ trait Client extends js.Object {
     scope: js.Array[
       algoliasearchLib.algoliasearchLibStrings.settings | algoliasearchLib.algoliasearchLibStrings.synonyms | algoliasearchLib.algoliasearchLibStrings.rules
     ],
-    cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ UpdateIndexTask, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Deletes a global key
@@ -167,7 +170,7 @@ trait Client extends js.Object {
     * Move index to a new one (and will overwrite the original one)
     * https://github.com/algolia/algoliasearch-client-js#move-index---moveindex
     */
-  def moveIndex(from: java.lang.String, to: java.lang.String): js.Promise[Task] = js.native
+  def moveIndex(from: java.lang.String, to: java.lang.String): js.Promise[UpdateIndexTask] = js.native
   /**
     * Move index to a new one (and will overwrite the original one)
     * https://github.com/algolia/algoliasearch-client-js#move-index---moveindex
@@ -175,7 +178,7 @@ trait Client extends js.Object {
   def moveIndex(
     from: java.lang.String,
     to: java.lang.String,
-    cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ UpdateIndexTask, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Query on multiple index

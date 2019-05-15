@@ -226,6 +226,12 @@ object screepsLibStrings {
   sealed trait observer extends js.Object
   
   @js.native
+  sealed trait operator extends js.Object
+  
+  @js.native
+  sealed trait ops extends js.Object
+  
+  @js.native
   sealed trait plain extends Terrain
   
   @js.native
@@ -236,6 +242,9 @@ object screepsLibStrings {
   
   @js.native
   sealed trait powerBank extends js.Object
+  
+  @js.native
+  sealed trait powerCreep extends js.Object
   
   @js.native
   sealed trait powerSpawn extends js.Object
@@ -447,6 +456,10 @@ object screepsLibStrings {
   @scala.inline
   def observer: observer = "observer".asInstanceOf[observer]
   @scala.inline
+  def operator: operator = "operator".asInstanceOf[operator]
+  @scala.inline
+  def ops: ops = "ops".asInstanceOf[ops]
+  @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
   @scala.inline
   def portal: portal = "portal".asInstanceOf[portal]
@@ -454,6 +467,8 @@ object screepsLibStrings {
   def power: power = "power".asInstanceOf[power]
   @scala.inline
   def powerBank: powerBank = "powerBank".asInstanceOf[powerBank]
+  @scala.inline
+  def powerCreep: powerCreep = "powerCreep".asInstanceOf[powerCreep]
   @scala.inline
   def powerSpawn: powerSpawn = "powerSpawn".asInstanceOf[powerSpawn]
   @scala.inline

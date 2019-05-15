@@ -23,7 +23,7 @@ trait ReservedInstancesConfiguration extends js.Object {
     */
   var Platform: js.UndefOr[String] = js.undefined
   /**
-    * Whether the Reserved Instance is applied to instances in a region or instances in a specific Availability Zone.
+    * Whether the Reserved Instance is applied to instances in a Region or instances in a specific Availability Zone.
     */
   var Scope: js.UndefOr[scope] = js.undefined
 }

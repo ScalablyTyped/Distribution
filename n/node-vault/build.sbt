@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "node-vault"
-version := "0.5-dt-20180620Z-6b6c0f"
+version := "0.5-dt-20180620Z-dd3f1c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-2a9eae",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-8149f4",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-89ebef",
   "org.scalablytyped" %%% "mustache" % "0.8.4-dt-20190322Z-82071e",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190513Z-e9c6e7",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-f66566",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-5c7da3",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-2b35e8")
 publishArtifact in packageDoc := false

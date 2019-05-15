@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ComponentDefinitions extends ComponentLifecycles {
   var data: org.scalablytyped.runtime.StringDictionary[js.Any]
-  var methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction0[/* this */ Component, _]]
+  var methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]]
   var mixins: js.Array[stdLib.Partial[ComponentDefinitions]]
   var properties: ComponentProperties
   def compute(data: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any]
@@ -21,7 +21,7 @@ object ComponentDefinitions {
     created: () => scala.Unit,
     data: org.scalablytyped.runtime.StringDictionary[js.Any],
     detached: () => scala.Unit,
-    methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction0[/* this */ Component, _]],
+    methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, _]],
     mixins: js.Array[stdLib.Partial[ComponentDefinitions]],
     moved: () => scala.Unit,
     properties: ComponentProperties,
