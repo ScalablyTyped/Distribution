@@ -25,7 +25,7 @@ trait DescribeLaunchTemplatesRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 1 and 200.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeLaunchTemplatesMaxResults] = js.undefined
   /**
     * The token to request the next page of results.
     */
@@ -39,7 +39,7 @@ object DescribeLaunchTemplatesRequest {
     Filters: FilterList = null,
     LaunchTemplateIds: ValueStringList = null,
     LaunchTemplateNames: LaunchTemplateNameStringList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeLaunchTemplatesMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeLaunchTemplatesRequest = {
     val __obj = js.Dynamic.literal()

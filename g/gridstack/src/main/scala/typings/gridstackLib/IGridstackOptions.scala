@@ -31,7 +31,7 @@ trait IGridstackOptions extends js.Object {
     */
   var cellHeight: js.UndefOr[scala.Double] = js.undefined
   /**
-    * class that implement drag'n'drop functionallity for gridstack. 
+    * class that implement drag'n'drop functionallity for gridstack.
     * If false grid will be static. (default: null - first available plugin will be used)
     */
   var ddPlugin: js.UndefOr[js.Any] = js.undefined
@@ -88,7 +88,7 @@ trait IGridstackOptions extends js.Object {
     */
   var placeholderText: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * if true widgets could be removed by dragging outside of the grid. It could also be a jQuery selector string, 
+    * if true widgets could be removed by dragging outside of the grid. It could also be a jQuery selector string,
     */
   var removable: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   /**

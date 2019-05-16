@@ -18,6 +18,9 @@ trait CreateDBClusterParameterGroupMessage extends js.Object {
     * The description for the DB cluster parameter group.
     */
   var Description: String
+  /**
+    * Tags to assign to the DB cluster parameter group.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 

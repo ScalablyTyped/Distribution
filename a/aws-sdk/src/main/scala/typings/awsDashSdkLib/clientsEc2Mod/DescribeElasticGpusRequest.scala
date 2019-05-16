@@ -21,7 +21,7 @@ trait DescribeElasticGpusRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 5 and 1000.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeElasticGpusMaxResults] = js.undefined
   /**
     * The token to request the next page of results.
     */
@@ -34,7 +34,7 @@ object DescribeElasticGpusRequest {
     DryRun: js.UndefOr[Boolean] = js.undefined,
     ElasticGpuIds: ElasticGpuIdSet = null,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeElasticGpusMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeElasticGpusRequest = {
     val __obj = js.Dynamic.literal()

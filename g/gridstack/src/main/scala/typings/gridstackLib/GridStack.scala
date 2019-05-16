@@ -18,7 +18,7 @@ trait GridStack extends js.Object {
     maxWidth: js.UndefOr[scala.Double],
     minHeight: js.UndefOr[scala.Double],
     maxHeight: js.UndefOr[scala.Double],
-    id: js.UndefOr[scala.Double]
+    id: js.UndefOr[scala.Double | java.lang.String]
   ): JQuery = js.native
   /**
     * Creates new widget and returns it.
@@ -26,11 +26,16 @@ trait GridStack extends js.Object {
     *   Widget will be always placed even if result height is more than actual grid height. You need to use willItFit method before calling addWidget for additional check.
     *
     * @param {string | HTMLElement | JQuery} el widget to add
-    * @param {number} x widget position x
-    * @param {number} y widget position y
-    * @param {number} width  widget dimension width
-    * @param {number} height widget dimension height
-    * @param {boolean} autoPosition if true then x, y parameters will be ignored and widget will be places on the first available position
+    * @param {number} x widget position x (optional)
+    * @param {number} y widget position y (optional)
+    * @param {number} width  widget dimension width (optional)
+    * @param {number} height widget dimension height (optional)
+    * @param {boolean} autoPosition if true then x, y parameters will be ignored and widget will be places on the first available position (optional)
+    * @param {number} minWidth minimum width allowed during resize/creation (optional)
+    * @param {number} maxWidth maximum width allowed during resize/creation (optional)
+    * @param {number} minHeight minimum height allowed during resize/creation (optional)
+    * @param {number} maxHeight maximum height allowed during resize/creation (optional)
+    * @param {number | string} id value for data-gs-id (optional)
     */
   def addWidget(
     el: java.lang.String,
@@ -43,7 +48,7 @@ trait GridStack extends js.Object {
     maxWidth: js.UndefOr[scala.Double],
     minHeight: js.UndefOr[scala.Double],
     maxHeight: js.UndefOr[scala.Double],
-    id: js.UndefOr[scala.Double]
+    id: js.UndefOr[scala.Double | java.lang.String]
   ): JQuery = js.native
   def addWidget(
     el: stdLib.HTMLElement,
@@ -56,7 +61,7 @@ trait GridStack extends js.Object {
     maxWidth: js.UndefOr[scala.Double],
     minHeight: js.UndefOr[scala.Double],
     maxHeight: js.UndefOr[scala.Double],
-    id: js.UndefOr[scala.Double]
+    id: js.UndefOr[scala.Double | java.lang.String]
   ): JQuery = js.native
   /**
     * Initializes batch updates. You will see no changes until commit method is called.
@@ -97,17 +102,17 @@ trait GridStack extends js.Object {
     * Enables/disables widget moving.
     * This is a shortcut for:
     * grid.movable(this.container.children('.' + this.opts.itemClass), doEnable);
-    * @param {boolean} doEnable 
+    * @param {boolean} doEnable
     * @param {boolean} includeNewWidgets will force new widgets to be draggable
     */
   def enableMove(doEnable: scala.Boolean, includeNewWidgets: scala.Boolean): scala.Unit = js.native
   /**
     * Enables/disables widget resizing.
-    * @param {boolean} doEnable 
+    * @param {boolean} doEnable
     * @param {boolean} includeNewWidgets will force new widgets to be resizable
     */
   def enableResize(doEnable: scala.Boolean, includeNewWidgets: scala.Boolean): scala.Unit = js.native
-  /** 
+  /**
     * Get the position of the cell under a pixel on screen.
     * @param  {MousePosition}  position the position of the pixel to resolve in absolute coordinates, as an object with top and leftproperties
     * @param  {boolean}  useOffset if true, value will be based on offset vs position (Optional. Default false). Useful when grid is within position: relative element.
@@ -130,7 +135,7 @@ trait GridStack extends js.Object {
   def locked(el: stdLib.HTMLElement, `val`: scala.Boolean): scala.Unit = js.native
   def makeWidget(el: JQuery): JQuery = js.native
   /**
-    * If you add elements to your gridstack container by hand, you have to tell gridstack afterwards to make them widgets. 
+    * If you add elements to your gridstack container by hand, you have to tell gridstack afterwards to make them widgets.
     *
     *   If you want gridstack to add the elements for you, use addWidget instead. Makes the given element a widget and returns it.
     *
@@ -162,7 +167,7 @@ trait GridStack extends js.Object {
     * @param {number} val A numeric value of the number of columns
     */
   def minWidth(el: stdLib.HTMLElement, `val`: scala.Double): scala.Unit = js.native
-  /** 
+  /**
     * Enables/Disables moving.
     * @param {HTMLElement} el widget to modify.
     * @param {number} val if true widget will be draggable.
@@ -208,8 +213,8 @@ trait GridStack extends js.Object {
     */
   def setAnimation(doAnimate: scala.Boolean): scala.Unit = js.native
   /**
-    * (Experimental) Modify number of columns in the grid. 
-    * Will attempt to update existing widgets to conform to new number of columns. 
+    * (Experimental) Modify number of columns in the grid.
+    * Will attempt to update existing widgets to conform to new number of columns.
     * Requires gridstack-extra.css or gridstack-extra.min.css.
     * @param {number} gridWidth Integer between 1 and 12.
     * @param {boolean} doNotPropagate if true existing widgets will not be updated.

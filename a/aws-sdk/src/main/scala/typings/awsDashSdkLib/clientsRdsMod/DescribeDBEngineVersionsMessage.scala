@@ -11,7 +11,7 @@ trait DescribeDBEngineVersionsMessage extends js.Object {
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   /**
-    * Indicates that only the default version of the specified engine or engine and major version combination is returned.
+    * A value that indicates whether only the default version of the specified engine or engine and major version combination is returned.
     */
   var DefaultOnly: js.UndefOr[Boolean] = js.undefined
   /**
@@ -27,11 +27,11 @@ trait DescribeDBEngineVersionsMessage extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * If this parameter is specified and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version. 
+    * A value that indicates whether to list the supported character sets for each engine version. If this parameter is enabled and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version. 
     */
   var ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * If this parameter is specified and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version. 
+    * A value that indicates whether to list the supported time zones for each engine version. If this parameter is enabled and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version. 
     */
   var ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined
   /**

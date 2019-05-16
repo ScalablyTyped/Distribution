@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "form-urlencoded"
-version := "2.0-dt-20180214Z-dae7c4"
+version := "2.0-dt-20190515Z-967adc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

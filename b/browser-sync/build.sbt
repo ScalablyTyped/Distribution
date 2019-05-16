@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "browser-sync"
-version := "0.0-unknown-dt-20190322Z-88bd26"
+version := "0.0-unknown-dt-20190322Z-46f677"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-69305c",
+  "org.scalablytyped" %%% "chokidar" % "2.1.6-69305c",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-59d609",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",

@@ -40,7 +40,24 @@ object facebookDashJsDashSdkLibStrings {
   sealed trait async extends js.Object
   
   @js.native
-  sealed trait authorization_expired extends js.Object
+  sealed trait authDOTauthResponseChange
+    extends facebookDashJsDashSdkLib.facebookNs.FacebookEventType
+  
+  @js.native
+  sealed trait authDOTlogin
+    extends facebookDashJsDashSdkLib.facebookNs.FacebookEventType
+  
+  @js.native
+  sealed trait authDOTlogout
+    extends facebookDashJsDashSdkLib.facebookNs.FacebookEventType
+  
+  @js.native
+  sealed trait authDOTstatusChange
+    extends facebookDashJsDashSdkLib.facebookNs.FacebookEventType
+  
+  @js.native
+  sealed trait authorization_expired
+    extends facebookDashJsDashSdkLib.facebookNs.LoginStatus
   
   @js.native
   sealed trait canvas_editor extends js.Object
@@ -52,13 +69,20 @@ object facebookDashJsDashSdkLibStrings {
   sealed trait completed extends js.Object
   
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected
+    extends facebookDashJsDashSdkLib.facebookNs.LoginStatus
   
   @js.native
   sealed trait create extends js.Object
   
   @js.native
   sealed trait create_offer extends js.Object
+  
+  @js.native
+  sealed trait delete extends js.Object
+  
+  @js.native
+  sealed trait get extends js.Object
   
   @js.native
   sealed trait iframe extends js.Object
@@ -73,7 +97,8 @@ object facebookDashJsDashSdkLibStrings {
   sealed trait live_broadcast extends js.Object
   
   @js.native
-  sealed trait not_authorized extends js.Object
+  sealed trait not_authorized
+    extends facebookDashJsDashSdkLib.facebookNs.LoginStatus
   
   @js.native
   sealed trait page extends js.Object
@@ -86,6 +111,9 @@ object facebookDashJsDashSdkLibStrings {
   
   @js.native
   sealed trait popup extends js.Object
+  
+  @js.native
+  sealed trait post extends js.Object
   
   @js.native
   sealed trait publish extends js.Object
@@ -118,7 +146,12 @@ object facebookDashJsDashSdkLibStrings {
   sealed trait turn extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends facebookDashJsDashSdkLib.facebookNs.LoginStatus
+  
+  @js.native
+  sealed trait xfbmlDOTrender
+    extends facebookDashJsDashSdkLib.facebookNs.FacebookEventType
   
   @scala.inline
   def APP_INSTALLS: APP_INSTALLS = "APP_INSTALLS".asInstanceOf[APP_INSTALLS]
@@ -143,6 +176,14 @@ object facebookDashJsDashSdkLibStrings {
   @scala.inline
   def async: async = "async".asInstanceOf[async]
   @scala.inline
+  def authDOTauthResponseChange: authDOTauthResponseChange = "auth.authResponseChange".asInstanceOf[authDOTauthResponseChange]
+  @scala.inline
+  def authDOTlogin: authDOTlogin = "auth.login".asInstanceOf[authDOTlogin]
+  @scala.inline
+  def authDOTlogout: authDOTlogout = "auth.logout".asInstanceOf[authDOTlogout]
+  @scala.inline
+  def authDOTstatusChange: authDOTstatusChange = "auth.statusChange".asInstanceOf[authDOTstatusChange]
+  @scala.inline
   def authorization_expired: authorization_expired = "authorization_expired".asInstanceOf[authorization_expired]
   @scala.inline
   def canvas_editor: canvas_editor = "canvas_editor".asInstanceOf[canvas_editor]
@@ -156,6 +197,10 @@ object facebookDashJsDashSdkLibStrings {
   def create: create = "create".asInstanceOf[create]
   @scala.inline
   def create_offer: create_offer = "create_offer".asInstanceOf[create_offer]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
@@ -174,6 +219,8 @@ object facebookDashJsDashSdkLibStrings {
   def pay: pay = "pay".asInstanceOf[pay]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
+  @scala.inline
+  def post: post = "post".asInstanceOf[post]
   @scala.inline
   def publish: publish = "publish".asInstanceOf[publish]
   @scala.inline
@@ -196,5 +243,7 @@ object facebookDashJsDashSdkLibStrings {
   def turn: turn = "turn".asInstanceOf[turn]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def xfbmlDOTrender: xfbmlDOTrender = "xfbml.render".asInstanceOf[xfbmlDOTrender]
 }
 

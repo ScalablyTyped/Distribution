@@ -20,8 +20,9 @@ trait Googletag extends js.Object {
   def destroySlots(opt_slots: js.Array[Slot]): scala.Boolean = js.native
   def disablePublisherConsole(): scala.Unit = js.native
   def display(): scala.Unit = js.native
-  def display(div: java.lang.String): scala.Unit = js.native
-  def display(div: stdLib.Element): scala.Unit = js.native
+  def display(divOrSlot: Slot): scala.Unit = js.native
+  def display(divOrSlot: java.lang.String): scala.Unit = js.native
+  def display(divOrSlot: stdLib.Element): scala.Unit = js.native
   def enableServices(): scala.Unit = js.native
   def getVersion(): java.lang.String = js.native
   def openConsole(): scala.Unit = js.native

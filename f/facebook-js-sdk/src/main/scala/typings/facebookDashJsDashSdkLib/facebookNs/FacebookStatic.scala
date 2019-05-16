@@ -9,9 +9,35 @@ import scala.scalajs.js.annotation._
 trait FacebookStatic extends js.Object {
   var AppEvents: js.Any = js.native
   var Canvas: js.Any = js.native
-  var Event: js.Any = js.native
+  var Event: FacebookStaticEvent = js.native
   var XFBML: js.Any = js.native
-  var api: js.Any = js.native
+  def api[TResponse](path: java.lang.String, callback: js.Function1[/* response */ TResponse, scala.Unit]): scala.Unit = js.native
+  def api[TParams /* <: js.Object */, TResponse](
+    path: java.lang.String,
+    params: TParams,
+    callback: js.Function1[/* response */ TResponse, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("api")
+  def api_delete[TParams /* <: js.Object */, TResponse](
+    path: java.lang.String,
+    method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.delete,
+    params: TParams,
+    callback: js.Function1[/* response */ TResponse, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("api")
+  def api_get[TParams /* <: js.Object */, TResponse](
+    path: java.lang.String,
+    method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.get,
+    params: TParams,
+    callback: js.Function1[/* response */ TResponse, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("api")
+  def api_post[TParams /* <: js.Object */, TResponse](
+    path: java.lang.String,
+    method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.post,
+    params: TParams,
+    callback: js.Function1[/* response */ TResponse, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * The method FB.getAuthResponse() is a synchronous accessor for the current authResponse.
     * The synchronous nature of this method is what sets it apart from the other login methods.

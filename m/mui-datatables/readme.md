@@ -1,7 +1,7 @@
 
 # Scala.js typings for mui-datatables
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 Datatables for React using Material-UI
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for mui-datatables 2.0
+// Type definitions for mui-datatables 2.1
 // Project: https://github.com/gregnb/mui-datatables
 // Definitions by: Jeroen "Favna" Claassens <https://github.com/favna>
 //                 Ankith Konda <https://github.com/ankithkonda>

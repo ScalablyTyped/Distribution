@@ -85,6 +85,18 @@ object mongoNs extends js.Object {
     extends mongodbLib.mongodbMod.MinKey
   
   @js.native
+  class MongoNetworkError protected ()
+    extends mongodbLib.mongodbMod.MongoNetworkError {
+    def this(message: java.lang.String) = this()
+  }
+  
+  @js.native
+  class MongoParseError protected ()
+    extends mongodbLib.mongodbMod.MongoParseError {
+    def this(message: java.lang.String) = this()
+  }
+  
+  @js.native
   class Mongos protected ()
     extends mongodbLib.mongodbMod.Mongos {
     def this(servers: js.Array[mongodbLib.mongodbMod.Server]) = this()

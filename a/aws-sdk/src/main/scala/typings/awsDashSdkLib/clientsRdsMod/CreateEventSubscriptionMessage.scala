@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateEventSubscriptionMessage extends js.Object {
   /**
-    *  A Boolean value; set to true to activate the subscription, set to false to create the subscription but not active it. 
+    *  A value that indicates whether to activate the subscription. If the event notification subscription is not activated, the subscription is created but not active. 
     */
   var Enabled: js.UndefOr[BooleanOptional] = js.undefined
   /**

@@ -12,11 +12,11 @@ trait PluginContext extends MinimalPluginContext {
   var emitAsset_Original: EmitAsset = js.native
   @JSName("emitChunk")
   var emitChunk_Original: EmitChunk = js.native
-  /** @deprecated */
+  /** @deprecated Use `this.resolve` instead */
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
   var moduleIds: stdLib.IterableIterator[java.lang.String] = js.native
-  /** @deprecated */
+  /** @deprecated Use `this.addWatchFile` and the `watchChange` hook instead  */
   var watcher: nodeLib.eventsMod.EventEmitter = js.native
   def addWatchFile(id: java.lang.String): scala.Unit = js.native
   def emitAsset(name: java.lang.String): java.lang.String = js.native
@@ -30,12 +30,13 @@ trait PluginContext extends MinimalPluginContext {
   def error(err: RollupError, pos: rollupLib.Anon_ColumnLine): scala.Unit = js.native
   def getAssetFileName(assetReferenceId: java.lang.String): java.lang.String = js.native
   def getChunkFileName(chunkReferenceId: java.lang.String): java.lang.String = js.native
-  def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_Id = js.native
-  /** @deprecated */
+  def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_HasModuleSideEffects = js.native
+  /** @deprecated Use `this.resolve` instead */
   def isExternal(source: java.lang.String, importer: java.lang.String, isResolved: scala.Boolean): scala.Boolean | scala.Unit = js.native
   def parse(input: java.lang.String, options: js.Any): estreeLib.estreeMod.Program = js.native
   def resolve(source: java.lang.String, importer: java.lang.String): js.Promise[ResolvedId | scala.Null] = js.native
-  /** @deprecated */
+  def resolve(source: java.lang.String, importer: java.lang.String, options: rollupLib.Anon_SkipSelf): js.Promise[ResolvedId | scala.Null] = js.native
+  /** @deprecated Use `this.resolve` instead */
   def resolveId(source: java.lang.String, importer: java.lang.String): js.Promise[java.lang.String | scala.Null] = js.native
   def setAssetSource(assetReferenceId: java.lang.String, source: java.lang.String): scala.Unit = js.native
   def setAssetSource(assetReferenceId: java.lang.String, source: nodeLib.Buffer): scala.Unit = js.native

@@ -31,6 +31,10 @@ trait ServiceDetail extends js.Object {
     */
   var PrivateDnsName: js.UndefOr[String] = js.undefined
   /**
+    * The ID of the endpoint service.
+    */
+  var ServiceId: js.UndefOr[String] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) of the service.
     */
   var ServiceName: js.UndefOr[String] = js.undefined
@@ -38,6 +42,10 @@ trait ServiceDetail extends js.Object {
     * The type of service.
     */
   var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.undefined
+  /**
+    * Any tags assigned to the service.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
   /**
     * Indicates whether the service supports endpoint policies.
     */
@@ -53,8 +61,10 @@ object ServiceDetail {
     ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined,
     Owner: String = null,
     PrivateDnsName: String = null,
+    ServiceId: String = null,
     ServiceName: String = null,
     ServiceType: ServiceTypeDetailSet = null,
+    Tags: TagList = null,
     VpcEndpointPolicySupported: js.UndefOr[Boolean] = js.undefined
   ): ServiceDetail = {
     val __obj = js.Dynamic.literal()
@@ -64,8 +74,10 @@ object ServiceDetail {
     if (!js.isUndefined(ManagesVpcEndpoints)) __obj.updateDynamic("ManagesVpcEndpoints")(ManagesVpcEndpoints)
     if (Owner != null) __obj.updateDynamic("Owner")(Owner)
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName)
+    if (ServiceId != null) __obj.updateDynamic("ServiceId")(ServiceId)
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (ServiceType != null) __obj.updateDynamic("ServiceType")(ServiceType)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (!js.isUndefined(VpcEndpointPolicySupported)) __obj.updateDynamic("VpcEndpointPolicySupported")(VpcEndpointPolicySupported)
     __obj.asInstanceOf[ServiceDetail]
   }

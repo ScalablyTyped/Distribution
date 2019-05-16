@@ -30,7 +30,7 @@ trait PluginHooks extends js.Object {
     ]
   ] = js.undefined
   var load: js.UndefOr[LoadHook] = js.undefined
-  /** @deprecated */
+  /** @deprecated Use `generateBundle` instead */
   var ongenerate: js.UndefOr[
     js.ThisFunction2[
       /* this */ PluginContext, 
@@ -39,7 +39,7 @@ trait PluginHooks extends js.Object {
       scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
-  /** @deprecated */
+  /** @deprecated Use `writeBundle` instead */
   var onwrite: js.UndefOr[
     js.ThisFunction2[
       /* this */ PluginContext, 
@@ -71,16 +71,16 @@ trait PluginHooks extends js.Object {
     ]
   ] = js.undefined
   var renderStart: js.UndefOr[js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit]] = js.undefined
-  /** @deprecated */
+  /** @deprecated Use `resolveFileUrl` instead */
   var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.undefined
   var resolveDynamicImport: js.UndefOr[ResolveDynamicImportHook] = js.undefined
   var resolveFileUrl: js.UndefOr[ResolveFileUrlHook] = js.undefined
   var resolveId: js.UndefOr[ResolveIdHook] = js.undefined
   var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.undefined
   var transform: js.UndefOr[TransformHook] = js.undefined
-  /** @deprecated */
+  /** @deprecated Use `renderChunk` instead */
   var transformBundle: js.UndefOr[TransformChunkHook] = js.undefined
-  /** @deprecated */
+  /** @deprecated Use `renderChunk` instead */
   var transformChunk: js.UndefOr[TransformChunkHook] = js.undefined
   var watchChange: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
   var writeBundle: js.UndefOr[

@@ -7,16 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait StatusResponse extends js.Object {
   var authResponse: AuthResponse
-  var status: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.authorization_expired | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.connected | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.not_authorized | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.unknown
+  var status: LoginStatus
 }
 
 object StatusResponse {
   @scala.inline
-  def apply(
-    authResponse: AuthResponse,
-    status: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.authorization_expired | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.connected | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.not_authorized | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.unknown
-  ): StatusResponse = {
-    val __obj = js.Dynamic.literal(authResponse = authResponse, status = status.asInstanceOf[js.Any])
+  def apply(authResponse: AuthResponse, status: LoginStatus): StatusResponse = {
+    val __obj = js.Dynamic.literal(authResponse = authResponse, status = status)
   
     __obj.asInstanceOf[StatusResponse]
   }

@@ -18,6 +18,9 @@ trait CreateDBSubnetGroupMessage extends js.Object {
     * The EC2 Subnet IDs for the DB subnet group.
     */
   var SubnetIds: SubnetIdentifierList
+  /**
+    * Tags to assign to the DB subnet group.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "terminal-kit"
-version := "1.26-dt-20190514Z-f0dd18"
+version := "1.28-dt-20190515Z-50fd42"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

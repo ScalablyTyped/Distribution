@@ -2588,6 +2588,7 @@
 | 41 | [dlv](./d/dlv) | Safely get a dot-notated property within an object
 | 41 | [express-xml-bodyparser](./e/express-xml-bodyparser) | Simple XML body parser connect/express middleware
 | 41 | [feathersjs__express](./f/feathersjs__express) | Feathers Express framework bindings and REST provi
+| 41 | [flat-cache](./f/flat-cache) | A stupidly simple key/value storage using files to
 | 41 | [getopts](./g/getopts) | High performance Node.js CLI options parser.
 | 41 | [grommet](./g/grommet) | focus on the essential experience
 | 41 | [iarna__toml](./i/iarna__toml) | Better TOML parsing and stringifying all in that f
@@ -3084,6 +3085,7 @@
 | 27 | [wiring-pi](./w/wiring-pi) | Bindings to wiringPi
 | 26 | [apicache](./a/apicache) | An ultra-simplified API response caching middlewar
 | 26 | [applicationinsights-js](./a/applicationinsights-js) | Microsoft Application Insights JavaScript SDK
+| 26 | [braintree](./b/braintree) | A library for integrating with Braintree.
 | 26 | [cannon](./c/cannon) | A lightweight 3D physics engine written in JavaScr
 | 26 | [codependency](./c/codependency) | Optional peer dependencies
 | 26 | [colornames](./c/colornames) | Map color names to HEX color values.
@@ -3113,10 +3115,12 @@
 | 26 | [parchment](./p/parchment) | A document model for rich text editors
 | 26 | [path-parser](./p/path-parser) | A small utility to parse, match and generate paths
 | 26 | [phosphor__virtualdom](./p/phosphor__virtualdom) | PhosphorJS - Virtual DOM
+| 26 | [random-useragent](./r/random-useragent) | Get a random useragent (with an optional filter)
 | 26 | [react-big-calendar](./r/react-big-calendar) | Calendar
 | 26 | [react-hyperscript](./r/react-hyperscript) | Hyperscript syntax for React.js markup
 | 26 | [react-icon-base](./r/react-icon-base) | base element for react-icons
 | 26 | [react-native-datepicker](./r/react-native-datepicker) | React Native DatePicker component for both Android
+| 26 | [react-pdf](./r/react-pdf) | Display PDFs in your React app as easily as if the
 | 26 | [react-rangeslider](./r/react-rangeslider) | A lightweight react component that acts as a HTML5
 | 26 | [react-truncate](./r/react-truncate) | React component for truncating multi-line spans an
 | 26 | [regression](./r/regression) | Javascript least squares data fitting methods
@@ -3255,6 +3259,7 @@
 | 22 | [custom-error-generator](./c/custom-error-generator) | Custom errors and exceptions in Node.js
 | 22 | [d3-chord](./d/d3-chord) | Visualize relationships or network flow with an ae
 | 22 | [d3-quadtree](./d/d3-quadtree) | Two-dimensional recursive spatial subdivision.
+| 22 | [dbus](./d/dbus) | A D-Bus binding for Node
 | 22 | [dc](./d/dc) | A multi-dimensional charting library built to work
 | 22 | [enzyme-adapter-react-15](./e/enzyme-adapter-react-15) | JavaScript Testing utilities for React
 | 22 | [feathersjs__configuration](./f/feathersjs__configuration) | A small configuration module for your Feathers app
@@ -3268,6 +3273,7 @@
 | 22 | [is-odd](./i/is-odd) | Returns true if the given number is odd, and is an
 | 22 | [jalaali-js](./j/jalaali-js) | Converts Gregorian and Jalaali calendars to each o
 | 22 | [jqueryui](./j/jqueryui) | A curated set of user interface interactions, effe
+| 22 | [jsonpack](./j/jsonpack) | A compression algorithm for JSON
 | 22 | [jupyterlab__fileeditor](./j/jupyterlab__fileeditor) | JupyterLab - Editor Widget
 | 22 | [jupyterlab__observables](./j/jupyterlab__observables) | Data structures which may be observed for changes.
 | 22 | [lasso](./l/lasso) | Lasso.js is a build tool and runtime library for b
@@ -3821,6 +3827,7 @@
 | 13 | [protobufjs__aspromise](./p/protobufjs__aspromise) | Returns a promise from a node-style callback funct
 | 13 | [protobufjs__fetch](./p/protobufjs__fetch) | Fetches the contents of a file accross node and br
 | 13 | [react-medium-image-zoom](./r/react-medium-image-zoom) | Medium.com style image zoom for React
+| 13 | [react-native-actionsheet](./r/react-native-actionsheet) | Cross platform ActionSheet. This component impleme
 | 13 | [react-native-sqlite-stora](./r/react-native-sqlite-storage) | SQLite3 bindings for React Native (Android & iOS)
 | 13 | [react-native-status-bar-h](./r/react-native-status-bar-height) | Get status bar height for React Native App
 | 13 | [react-notify-toast](./r/react-notify-toast) | Toast notifications for React.js
@@ -3935,6 +3942,7 @@
 | 11 | [cldrjs](./c/cldrjs) | Simple CLDR traverser
 | 11 | [db-migrate-pg](./d/db-migrate-pg) | A postgresql driver for db-migrate
 | 11 | [discord-rpc](./d/discord-rpc) | A simple RPC client for Discord
+| 11 | [dynamodb](./d/dynamodb) | DynamoDB data mapper for node.js
 | 11 | [elastic-apm-node](./e/elastic-apm-node) | The official Elastic APM agent for Node.js
 | 11 | [emotion__serialize](./e/emotion__serialize) | serialization utils for emotion
 | 11 | [escape-latex](./e/escape-latex) | Escape LaTeX special characters with Javascript
@@ -4002,6 +4010,7 @@
 | 11 | [react-motion-ui-pack](./r/react-motion-ui-pack) | Addon component wrappers for common UI transitions
 | 11 | [react-native-htmlview](./r/react-native-htmlview) | A component which renders HTML content as native v
 | 11 | [react-native-keyboard-spa](./r/react-native-keyboard-spacer) | Plug and play react-Native keyboard spacer view.
+| 11 | [react-native-swipe-gestur](./r/react-native-swipe-gestures) | 4-directional swipe gestures for react-native
 | 11 | [react-simple-code-editor](./r/react-simple-code-editor) | Simple no-frills code editor with syntax highlight
 | 11 | [react-sparklines](./r/react-sparklines) | Beautiful and expressive Sparklines component for 
 | 11 | [react-stickynode](./r/react-stickynode) | A performant and comprehensive React sticky
@@ -4632,6 +4641,7 @@
 | 5 | [bootstrap-3-typeahead](./b/bootstrap-3-typeahead) | Bootstrap 3 Typeahead: The typeahead autocomplete 
 | 5 | [bootstrap-fileinput](./b/bootstrap-fileinput) | An enhanced HTML 5 file input for Bootstrap 3.x wi
 | 5 | [cacheable-request](./c/cacheable-request) | Wrap native HTTP requests with RFC compliant cache
+| 5 | [camelcase-keys-deep](./c/camelcase-keys-deep) | Deeply convert the keys of an object to camelCase
 | 5 | [chai-json-schema](./c/chai-json-schema) | Chai plugin for JSON Schema v4
 | 5 | [cheap-ruler](./c/cheap-ruler) | A collection of fast approximations to common geog
 | 5 | [cloud-env](./c/cloud-env) | Consistent naming for cloud-provided server config
@@ -4865,6 +4875,7 @@
 | 4 | [lodash_dot_tointeger](./l/lodash_dot_tointeger) | The lodash method _.toInteger exported as a module
 | 4 | [lodash_dot_update](./l/lodash_dot_update) | The lodash method _.update exported as a module.
 | 4 | [lodash_dot_uppercase](./l/lodash_dot_uppercase) | The lodash method _.upperCase exported as a module
+| 4 | [log-process-errors](./l/log-process-errors) | Show some ❤️ to process errors
 | 4 | [map-age-cleaner](./m/map-age-cleaner) | Automatically cleanup expired items in a Map
 | 4 | [match-media-mock](./m/match-media-mock) | server side compatible replacement for Window.matc
 | 4 | [merkle](./m/merkle) | Javascript implementation of merkle trees
@@ -6317,6 +6328,7 @@
 | 0 | [react-motion-slider](./r/react-motion-slider) | Slider/Carousel powered by React Motion.
 | 0 | [react-native-android-task](./r/react-native-android-taskdescription) | TaskDescription Android React Native module
 | 0 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native.
+| 0 | [react-native-audio](./r/react-native-audio) | React Native extension for recording audio
 | 0 | [react-native-bluetooth-se](./r/react-native-bluetooth-serial) | 'Bluetooth serial for react native'
 | 0 | [react-native-canvas](./r/react-native-canvas) |   react-native-canvas 
 | 0 | [react-native-goby](./r/react-native-goby) | React Native plugin for the Goby service

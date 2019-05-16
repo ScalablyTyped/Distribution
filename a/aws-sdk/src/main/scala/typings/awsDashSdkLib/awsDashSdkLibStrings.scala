@@ -13923,6 +13923,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsClouddirectoryMod._RuleType
   
   @js.native
+  sealed trait NUMBER_WITH_DURATION
+    extends awsDashSdkLib.clientsMediapackageMod._SegmentTemplateFormat
+  
+  @js.native
   sealed trait NUMBER_WITH_TIMELINE
     extends awsDashSdkLib.clientsMediapackageMod._SegmentTemplateFormat
   
@@ -23706,6 +23710,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `en-IN`
     extends awsDashSdkLib.clientsPollyMod._LanguageCode
+       with awsDashSdkLib.clientsTranscribeserviceMod._LanguageCode
   
   @js.native
   sealed trait `en-US`
@@ -24208,6 +24213,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `hi-IN`
     extends awsDashSdkLib.clientsPollyMod._LanguageCode
+       with awsDashSdkLib.clientsTranscribeserviceMod._LanguageCode
   
   @js.native
   sealed trait hi1DOT4xlarge
@@ -33765,6 +33771,8 @@ object awsDashSdkLibStrings {
   def NUMBER: NUMBER = "NUMBER".asInstanceOf[NUMBER]
   @scala.inline
   def NUMBER_COMPARISON: NUMBER_COMPARISON = "NUMBER_COMPARISON".asInstanceOf[NUMBER_COMPARISON]
+  @scala.inline
+  def NUMBER_WITH_DURATION: NUMBER_WITH_DURATION = "NUMBER_WITH_DURATION".asInstanceOf[NUMBER_WITH_DURATION]
   @scala.inline
   def NUMBER_WITH_TIMELINE: NUMBER_WITH_TIMELINE = "NUMBER_WITH_TIMELINE".asInstanceOf[NUMBER_WITH_TIMELINE]
   @scala.inline

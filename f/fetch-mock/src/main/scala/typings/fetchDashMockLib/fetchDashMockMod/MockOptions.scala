@@ -12,7 +12,7 @@ trait MockOptions extends js.Object {
   /**
     * key/value map of headers to match
     */
-  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]] = js.undefined
   /**
     * Automatically sets a content-length header on each response.
     * @default true
@@ -71,7 +71,7 @@ trait MockOptions extends js.Object {
 object MockOptions {
   @scala.inline
   def apply(
-    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] = null,
     includeContentLength: js.UndefOr[scala.Boolean] = js.undefined,
     matcher: MockMatcher = null,
     method: java.lang.String = null,

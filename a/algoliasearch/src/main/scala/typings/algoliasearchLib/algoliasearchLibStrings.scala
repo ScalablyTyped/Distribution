@@ -13,7 +13,13 @@ object algoliasearchLibStrings {
   sealed trait addObject extends js.Object
   
   @js.native
+  sealed trait address extends js.Object
+  
+  @js.native
   sealed trait af extends js.Object
+  
+  @js.native
+  sealed trait airport extends js.Object
   
   @js.native
   sealed trait all extends js.Object
@@ -46,7 +52,13 @@ object algoliasearchLibStrings {
   sealed trait bn extends js.Object
   
   @js.native
+  sealed trait busStop extends js.Object
+  
+  @js.native
   sealed trait ca extends js.Object
+  
+  @js.native
+  sealed trait city extends js.Object
   
   @js.native
   sealed trait clear extends js.Object
@@ -56,6 +68,9 @@ object algoliasearchLibStrings {
   
   @js.native
   sealed trait count extends js.Object
+  
+  @js.native
+  sealed trait country extends js.Object
   
   @js.native
   sealed trait cs extends js.Object
@@ -319,7 +334,13 @@ object algoliasearchLibStrings {
   sealed trait tn extends js.Object
   
   @js.native
+  sealed trait townhall extends js.Object
+  
+  @js.native
   sealed trait tr extends js.Object
+  
+  @js.native
+  sealed trait trainStation extends js.Object
   
   @js.native
   sealed trait tt extends js.Object
@@ -350,7 +371,11 @@ object algoliasearchLibStrings {
   @scala.inline
   def addObject: addObject = "addObject".asInstanceOf[addObject]
   @scala.inline
+  def address: address = "address".asInstanceOf[address]
+  @scala.inline
   def af: af = "af".asInstanceOf[af]
+  @scala.inline
+  def airport: airport = "airport".asInstanceOf[airport]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -372,13 +397,19 @@ object algoliasearchLibStrings {
   @scala.inline
   def bn: bn = "bn".asInstanceOf[bn]
   @scala.inline
+  def busStop: busStop = "busStop".asInstanceOf[busStop]
+  @scala.inline
   def ca: ca = "ca".asInstanceOf[ca]
+  @scala.inline
+  def city: city = "city".asInstanceOf[city]
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
   @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
+  def country: country = "country".asInstanceOf[country]
   @scala.inline
   def cs: cs = "cs".asInstanceOf[cs]
   @scala.inline
@@ -554,7 +585,11 @@ object algoliasearchLibStrings {
   @scala.inline
   def tn: tn = "tn".asInstanceOf[tn]
   @scala.inline
+  def townhall: townhall = "townhall".asInstanceOf[townhall]
+  @scala.inline
   def tr: tr = "tr".asInstanceOf[tr]
+  @scala.inline
+  def trainStation: trainStation = "trainStation".asInstanceOf[trainStation]
   @scala.inline
   def tt: tt = "tt".asInstanceOf[tt]
   @scala.inline

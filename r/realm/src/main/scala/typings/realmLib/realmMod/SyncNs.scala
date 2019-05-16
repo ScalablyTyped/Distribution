@@ -94,6 +94,7 @@ object SyncNs extends js.Object {
     ]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
+  def localListenerRealms(regex: java.lang.String): js.Array[realmLib.RealmNs.SyncNs.LocalRealm] = js.native
   def reconnect(): scala.Unit = js.native
   def removeAllListeners(): js.Promise[scala.Unit] = js.native
   def removeListener(
@@ -108,7 +109,7 @@ object SyncNs extends js.Object {
   def setLogLevel(logLevel: realmLib.RealmNs.SyncNs.LogLevel): scala.Unit = js.native
   def setLogger(
     callback: js.Function2[
-      /* level */ realmLib.RealmNs.SyncNs.LogLevel, 
+      /* level */ realmLib.RealmNs.SyncNs.NumericLogLevel, 
       /* message */ java.lang.String, 
       scala.Unit
     ]
@@ -143,6 +144,21 @@ object SyncNs extends js.Object {
     def nickname(value: java.lang.String, isAdmin: scala.Boolean): realmLib.RealmNs.SyncNs.Credentials = js.native
     def usernamePassword(username: java.lang.String, password: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
     def usernamePassword(username: java.lang.String, password: java.lang.String, createUser: scala.Boolean): realmLib.RealmNs.SyncNs.Credentials = js.native
+  }
+  
+  @js.native
+  object NumericLogLevel extends js.Object {
+    val All: realmLib.RealmNs.SyncNs.NumericLogLevel.All with java.lang.String = js.native
+    val Debug: realmLib.RealmNs.SyncNs.NumericLogLevel.Debug with java.lang.String = js.native
+    val Detail: realmLib.RealmNs.SyncNs.NumericLogLevel.Detail with java.lang.String = js.native
+    val Error: realmLib.RealmNs.SyncNs.NumericLogLevel.Error with java.lang.String = js.native
+    val Fatal: realmLib.RealmNs.SyncNs.NumericLogLevel.Fatal with java.lang.String = js.native
+    val Info: realmLib.RealmNs.SyncNs.NumericLogLevel.Info with java.lang.String = js.native
+    val Off: realmLib.RealmNs.SyncNs.NumericLogLevel.Off with java.lang.String = js.native
+    val Trace: realmLib.RealmNs.SyncNs.NumericLogLevel.Trace with java.lang.String = js.native
+    val Warn: realmLib.RealmNs.SyncNs.NumericLogLevel.Warn with java.lang.String = js.native
+    @JSBracketAccess
+    def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.NumericLogLevel with java.lang.String] = js.native
   }
   
   @js.native

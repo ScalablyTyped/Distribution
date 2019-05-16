@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-material-design-searchbar"
-version := "1.1-dt-20181017Z-471b8f"
+version := "1.1-dt-20181017Z-b50515"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190514Z-5934c5",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190515Z-2bde84",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

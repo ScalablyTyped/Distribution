@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MentionsInputProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, 'onChange' | 'onBlur' | 'onKeyDown' | 'onSelect'> ]: react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>[P]} */ trait MentionsInputProps extends js.Object {
   /**
     * If set to `true` spaces will not interrupt matching suggestions
     */

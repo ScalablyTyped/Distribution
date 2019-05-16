@@ -13,11 +13,11 @@ trait DescribeStaleSecurityGroupsRequest extends js.Object {
   /**
     * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[DescribeStaleSecurityGroupsMaxResults] = js.undefined
   /**
     * The token for the next set of items to return. (You received this token from a prior call.)
     */
-  var NextToken: js.UndefOr[NextToken] = js.undefined
+  var NextToken: js.UndefOr[DescribeStaleSecurityGroupsNextToken] = js.undefined
   /**
     * The ID of the VPC.
     */
@@ -29,8 +29,8 @@ object DescribeStaleSecurityGroupsRequest {
   def apply(
     VpcId: String,
     DryRun: js.UndefOr[Boolean] = js.undefined,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
+    MaxResults: js.UndefOr[DescribeStaleSecurityGroupsMaxResults] = js.undefined,
+    NextToken: DescribeStaleSecurityGroupsNextToken = null
   ): DescribeStaleSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)

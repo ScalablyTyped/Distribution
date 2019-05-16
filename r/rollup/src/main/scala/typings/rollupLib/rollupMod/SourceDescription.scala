@@ -9,6 +9,7 @@ trait SourceDescription extends js.Object {
   var ast: js.UndefOr[estreeLib.estreeMod.Program] = js.undefined
   var code: java.lang.String
   var map: js.UndefOr[java.lang.String | RawSourceMap] = js.undefined
+  var moduleSideEffects: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
 }
 
 object SourceDescription {
@@ -16,11 +17,13 @@ object SourceDescription {
   def apply(
     code: java.lang.String,
     ast: estreeLib.estreeMod.Program = null,
-    map: java.lang.String | RawSourceMap = null
+    map: java.lang.String | RawSourceMap = null,
+    moduleSideEffects: js.UndefOr[scala.Boolean] = js.undefined
   ): SourceDescription = {
     val __obj = js.Dynamic.literal(code = code)
     if (ast != null) __obj.updateDynamic("ast")(ast)
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
     __obj.asInstanceOf[SourceDescription]
   }
 }

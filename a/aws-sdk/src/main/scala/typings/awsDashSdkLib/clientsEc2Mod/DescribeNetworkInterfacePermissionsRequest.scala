@@ -13,7 +13,7 @@ trait DescribeNetworkInterfacePermissionsRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. If this parameter is not specified, up to 50 results are returned by default.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.undefined
   /**
     * One or more network interface permission IDs.
     */
@@ -28,7 +28,7 @@ object DescribeNetworkInterfacePermissionsRequest {
   @scala.inline
   def apply(
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeNetworkInterfacePermissionsMaxResults] = js.undefined,
     NetworkInterfacePermissionIds: NetworkInterfacePermissionIdList = null,
     NextToken: String = null
   ): DescribeNetworkInterfacePermissionsRequest = {

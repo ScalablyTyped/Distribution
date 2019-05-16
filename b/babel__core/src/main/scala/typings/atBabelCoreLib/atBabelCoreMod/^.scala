@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val DEFAULT_EXTENSIONS: js.Tuple5[
+    atBabelCoreLib.atBabelCoreLibStrings.DOTjs, 
+    atBabelCoreLib.atBabelCoreLibStrings.DOTjsx, 
+    atBabelCoreLib.atBabelCoreLibStrings.DOTes6, 
+    atBabelCoreLib.atBabelCoreLibStrings.DOTes, 
+    atBabelCoreLib.atBabelCoreLibStrings.DOTmjs
+  ] = js.native
   val template: atBabelTemplateLib.atBabelTemplateMod.DefaultTemplateBuilder = js.native
   val version: java.lang.String = js.native
   def createConfigItem(value: PluginTarget): ConfigItem = js.native

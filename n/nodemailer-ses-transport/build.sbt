@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "nodemailer-ses-transport"
-version := "3.1-dt-20190212Z-537602"
+version := "3.1-dt-20190212Z-6aa81f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.455.0-3fe247",
+  "org.scalablytyped" %%% "aws-sdk" % "2.456.0-897647",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
   "org.scalablytyped" %%% "nodemailer" % "4.6-dt-20190426Z-81c299",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")

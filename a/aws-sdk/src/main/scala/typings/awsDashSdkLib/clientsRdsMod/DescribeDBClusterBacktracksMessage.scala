@@ -15,7 +15,7 @@ trait DescribeDBClusterBacktracksMessage extends js.Object {
     */
   var DBClusterIdentifier: String
   /**
-    * A filter that specifies one or more DB clusters to describe. Supported filters include the following:    db-cluster-backtrack-id - Accepts backtrack identifiers. The results list includes information about only the backtracks identified by these identifiers.    db-cluster-backtrack-status - Accepts any of the following backtrack status values:    applying     completed     failed     pending    The results list includes information about only the backtracks identified by these values. For more information about backtrack status values, see DBClusterBacktrack.  
+    * A filter that specifies one or more DB clusters to describe. Supported filters include the following:    db-cluster-backtrack-id - Accepts backtrack identifiers. The results list includes information about only the backtracks identified by these identifiers.    db-cluster-backtrack-status - Accepts any of the following backtrack status values:    applying     completed     failed     pending    The results list includes information about only the backtracks identified by these values.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongodb"
-version := "3.1-dt-20190501Z-aaea2f"
+version := "3.1-dt-20190515Z-7a3ee5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

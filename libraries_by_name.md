@@ -572,6 +572,7 @@
 | [brace-expansion](./b/brace-expansion) | Brace expansion as known from sh/bash | - |
 | [braces](./b/braces) | Bash-like brace expansion, implemented in JavaScri | alpha, alphabetical, bash, brace, braces, expand, expansion, filepath, fill, fs, glob, globbing, letter, match, matches, matching, number, numerical, path, range, ranges, sh |
 | [braft-editor](./b/braft-editor) | Rich Text Editor Based On Draft.js | braft, draft, draft-js, rich, text, editor, rich-text-editor, wysiwyg |
+| [braintree](./b/braintree) | A library for integrating with Braintree. | braintree, payments |
 | [braintree-web](./b/braintree-web) | A suite of tools for integrating Braintree in the  | braintree, payments |
 | [breeze](./b/breeze) | Functional async flow control library | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | [bricks_dot_js](./b/bricks_dot_js) | A blazing fast masonry layout generator for fixed  | grid, masonry, layout, packing |
@@ -643,6 +644,7 @@
 | [camel-case](./c/camel-case) | Camel case a string | camel, case, camelcase, camel-case, dash, hyphen, dot, underscore, lodash, separator, string, text, convert |
 | [camelcase](./c/camelcase) | Convert a dash/dot/underscore/space separated stri | camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, pascalcase, pascal-case |
 | [camelcase-keys](./c/camelcase-keys) | Convert object keys to camel case | map, obj, object, key, keys, value, values, val, iterate, camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, deep, recurse, recursive |
+| [camelcase-keys-deep](./c/camelcase-keys-deep) | Deeply convert the keys of an object to camelCase | map, obj, object, key, keys, value, values, val, camelcase, camel-case, case, dash, hyphen, dot, underscore, separator, string, text, convert, deep, recursive |
 | [camljs](./c/camljs) | Library for creating SharePoint CAML queries clien | sharepoint, caml |
 | [camo](./c/camo) | A class-based ES6 ODM for Mongo-like databases. | es6, odm, mongodb, nedb, nosql, document, model, schema, database, data, datastore, query, db |
 | [cancan](./c/cancan) | Authorize easily | acl, authorization |
@@ -1129,6 +1131,7 @@
 | [db-migrate-base](./d/db-migrate-base) | db-migrate base driver | db-migrate, migration, base, driver, database, db, migrate |
 | [db-migrate-pg](./d/db-migrate-pg) | A postgresql driver for db-migrate | db-migrate, migrate, migration, pg, postgres, postgresql, sql, database, db, migrator, driver |
 | [db_dot_js](./d/db_dot_js) | db.js is a wrapper for IndexedDB to make it easier | indexeddb |
+| [dbus](./d/dbus) | A D-Bus binding for Node | - |
 | [dc](./d/dc) | A multi-dimensional charting library built to work | visualization, svg, animation, canvas, chart, dimensional, crossfilter, d3 |
 | [dd-trace](./d/dd-trace) | Datadog APM tracing client for JavaScript | datadog, trace, tracing, opentracing, apm |
 | [deasync](./d/deasync) | Turns async function into sync via JavaScript wrap | async, sync, sleep, async wrapper |
@@ -1313,6 +1316,7 @@
 | [dwt](./d/dwt) | Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanni | TWAIN, JavaScript, document, scanning, web, browser, cross-platform, scanner, document management, HTML5 scan, JavaScript scan, Web scan, HTML5 scanner, JavaScript scanner, web scanner, HTML5 scanning, JavaScript scanning, Web scanning, TWAIN, WIA, Web TWAIN, document scanning, SANE |
 | [dygraphs](./d/dygraphs) | dygraphs is a fast, flexible open source JavaScrip | dygraphs, javascript, visualization, canvas, chart, timeseries |
 | [dymo-label-framework](./d/dymo-label-framework) | - | - |
+| [dynamodb](./d/dynamodb) | DynamoDB data mapper for node.js | datamapper, DynamoDB, aws, amazon, nosql |
 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap | dynamodb |
 | [dynatrace](./d/dynatrace) | This package is no longer supported and has been d | - |
 | [dynogels](./d/dynogels) | DynamoDB data mapper | datamapper, DynamoDB, dynamodb, aws, amazon, nosql |
@@ -1744,6 +1748,7 @@
 | [flagged-respawn](./f/flagged-respawn) | A tool for respawning node binaries when special f | respawn, flags |
 | [flake-idgen](./f/flake-idgen) | Flake ID generator yields k-ordered, conflict-free | id, unique, twitter, snowflake, flake, distributed |
 | [flat](./f/flat) | Take a nested Javascript object and flatten it, or | flat, json, flatten, unflatten, split, object, nested |
+| [flat-cache](./f/flat-cache) | A stupidly simple key/value storage using files to | json cache, simple cache, file cache, key par, key value, cache |
 | [flatbuffers](./f/flatbuffers) | Memory Efficient Serialization Library | flatbuffers |
 | [flatpickr](./f/flatpickr) | A lightweight, powerful javascript datetime picker | javascript, datetimepicker, calendar, date, time, picker, lightweight |
 | [flatted](./f/flatted) | A super light and fast circular JSON parser. | circular, JSON, fast, parser, minimal |
@@ -2993,6 +2998,7 @@
 | [jsonminify](./j/jsonminify) | JSON.minify() minifies blocks of JSON-like content | node, json, JSON-like, comment |
 | [jsonnet](./j/jsonnet) | jsonnet wrapper for Node.js | jsonnet, json |
 | [jsonp](./j/jsonp) | A sane JSONP implementation. | - |
+| [jsonpack](./j/jsonpack) | A compression algorithm for JSON | compress, json |
 | [jsonpath](./j/jsonpath) | Query JavaScript objects with JSONPath expressions | JSONPath, jsonpath, json-path, object, traversal, json, path, data structures |
 | [jsonquery](./j/jsonquery) | MongoDB query language implemented as a node.js St | json, mongodb, mongo, stream, filter, query, database, levelup, leveldb |
 | [jsonrpc-serializer](./j/jsonrpc-serializer) | A simple library to serialize/deserialize JSON-RPC | json, jsonrpc, json-rpc, jsonrpc2 |
@@ -3650,6 +3656,7 @@
 | [lodash_dot_zipobject](./l/lodash_dot_zipobject) | The lodash method _.zipObject exported as a module | lodash-modularized, zipobject |
 | [lodash_dot_zipobjectdeep](./l/lodash_dot_zipobjectdeep) | The lodash method _.zipObjectDeep exported as a mo | lodash-modularized, zipobjectdeep |
 | [lodash_dot_zipwith](./l/lodash_dot_zipwith) | The lodash method _.zipWith exported as a module. | lodash-modularized, zipwith |
+| [log-process-errors](./l/log-process-errors) | Show some ❤️ to process errors | process, error-handling, error-handler, error, handling, handler, exception, promise, warnings, logging, uncaught, uncaught-exceptions, uncaughtException, unhandledRejection, rejectionHandled, multipleResolves, debugging, testing, test |
 | [log-symbols](./l/log-symbols) | Colored symbols for various log levels. Example: ✔ | unicode, cli, cmd, command-line, characters, symbol, symbols, figure, figures, fallback, windows, log, logging, terminal, stdout |
 | [log-update](./l/log-update) | Log by overwriting the previous output in the term | log, logger, logging, cli, terminal, term, console, shell, update, refresh, overwrite, output, stdout, progress, bar, animation |
 | [log4javascript](./l/log4javascript) | log4javascript | log4javascript, logging, js, json |
@@ -4859,6 +4866,7 @@
 | [random-obj-prop](./r/random-obj-prop) | Get a random property from an object | random, randomize, math, object, property, prop, pick, select, choice |
 | [random-seed](./r/random-seed) | GRC's UHE PRNG in node (Ultra-High Entropy Pseudo- | random, number, generator, seed, uhe, prng |
 | [random-string](./r/random-string) | Simple Module for generating Random Strings | random, string |
+| [random-useragent](./r/random-useragent) | Get a random useragent (with an optional filter) | random, useragent, user-agent, user, agent, data, web, developer |
 | [randoma](./r/randoma) | User-friendly pseudorandom number generator (PRNG) | pseudorandom, number, generator, algorithm, random, integer, int, float, boolean, date, seed, seeded, prng, rng |
 | [randombytes](./r/randombytes) | random bytes from browserify stand alone | crypto, random |
 | [randomcolor](./r/randomcolor) | A tiny script for generating attractive random col | attractive, random, color, generator |
@@ -5127,9 +5135,11 @@
 | [react-move](./r/react-move) | Beautiful, data-driven animations for React. | react-move, resonance, d3, svg, react, charts, graphs, animation, transitions, interpolation |
 | [react-multi-ref](./r/react-multi-ref) | Utility for keeping references to multiple React e | react, ref |
 | [react-native](./r/react-native) | A framework for building native apps using React | - |
+| [react-native-actionsheet](./r/react-native-actionsheet) | Cross platform ActionSheet. This component impleme | actionsheet, action sheet, react-native, react-native-action-sheet, react-native-actionsheet, custom-action-sheet |
 | [react-native-android-task](./r/react-native-android-taskdescription) | TaskDescription Android React Native module | react, native, taskdescription, android |
 | [react-native-animatable](./r/react-native-animatable) | Easy to use declarative transitions and animations | react-native, react-component, react-native-component, react, mobile, ios, android, ui, fade, bounce, slide, animatable, transition, animation |
 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native. | React, Native, js |
+| [react-native-audio](./r/react-native-audio) | React Native extension for recording audio | react-native, audio, record |
 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API | react-native, react, auth0, jwt, authentication, lock, auth0-lock, login, sdk, api |
 | [react-native-autocomplete](./r/react-native-autocomplete-input) | Pure javascript autocomplete input for react-nativ | react-native, iOS, input, Android, autocomplete |
 | [react-native-background-t](./r/react-native-background-timer) | Emit event periodically (even when app is in the b | android, ios, react-component, react-native, timer |
@@ -5211,6 +5221,7 @@
 | [react-native-svg](./r/react-native-svg) | SVG library for react-native | react-component, react-native, ios, android, SVG, ART, VML, gradient |
 | [react-native-svg-charts](./r/react-native-svg-charts) | Customizable charts (Line, Bar, Area, Pie, Circle, | react-native, react-component, react-native-component, react, mobile, ios, android, vector, charts, chart, d3 |
 | [react-native-svg-uri](./r/react-native-svg-uri) | Render an SVG Image from an URL | react-native, svg, url, uri, http |
+| [react-native-swipe-gestur](./r/react-native-swipe-gestures) | 4-directional swipe gestures for react-native | react-native, swipe, gesture |
 | [react-native-swipeout](./r/react-native-swipeout) | iOS-style swipeout buttons behind component | react-native, react-component, ios, swipeout, button, swipe, ui |
 | [react-native-swiper](./r/react-native-swiper) | Swiper component for React Native. | react-component, react-native, ios |
 | [react-native-tab-navigato](./r/react-native-tab-navigator) | A tab bar that switches between scenes, written in | react-native, tab-bar, navigator, ios, android |
@@ -5240,6 +5251,7 @@
 | [react-owl-carousel](./r/react-owl-carousel) | React.js + Owl Carousel | react, OwlCarousel, gallery |
 | [react-paginate](./r/react-paginate) | A ReactJS component that creates a pagination. | react-component, paginate, paginator, pagination |
 | [react-panelgroup](./r/react-panelgroup) | react-panelgroup React component | react-component |
+| [react-pdf](./r/react-pdf) | Display PDFs in your React app as easily as if the | pdf, pdf-viewer, react |
 | [react-places-autocomplete](./r/react-places-autocomplete) | A React component for Google Maps Places Autocompl | React.js, React, react-component, place, places, google-maps, google-map, places-autocomplete, autocomplete, google, maps, latitude, longitude, geocode, geocoder |
 | [react-player](./r/react-player) | A React component for playing a variety of URLs, i | react, media, player, video, audio, youtube, facebook, twitch, soundcloud, streamable, vimeo, wistia, dailymotion, hls, dash, react-component |
 | [react-plotly_dot_js](./r/react-plotly_dot_js) | A plotly.js react component from Plotly | graphing, plotting, data, visualization, plotly, react |

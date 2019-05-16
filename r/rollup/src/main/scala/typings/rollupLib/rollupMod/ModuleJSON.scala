@@ -5,19 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ModuleJSON extends js.Object {
-  var ast: estreeLib.estreeMod.Program
-  var code: java.lang.String
-  // note if plugins use new this.cache to opt-out auto transform cache
-  var customTransformCache: scala.Boolean
+trait ModuleJSON extends TransformModuleJSON {
   var dependencies: js.Array[java.lang.String]
   var id: java.lang.String
-  var originalCode: java.lang.String
-  var originalSourcemap: RawSourceMap | scala.Unit
-  var resolvedIds: ResolvedIdMap
-  var sourcemapChain: js.Array[RawSourceMap]
   var transformAssets: js.Array[Asset] | scala.Unit
-  var transformDependencies: js.Array[java.lang.String] | scala.Null
 }
 
 object ModuleJSON {
@@ -30,12 +21,15 @@ object ModuleJSON {
     id: java.lang.String,
     originalCode: java.lang.String,
     originalSourcemap: RawSourceMap | scala.Unit,
-    resolvedIds: ResolvedIdMap,
-    sourcemapChain: js.Array[RawSourceMap],
+    sourcemapChain: js.Array[RawSourceMap | rollupLib.Anon_Missing],
     transformAssets: js.Array[Asset] | scala.Unit,
+    moduleSideEffects: js.UndefOr[scala.Boolean] = js.undefined,
+    resolvedIds: ResolvedIdMap = null,
     transformDependencies: js.Array[java.lang.String] = null
   ): ModuleJSON = {
-    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, dependencies = dependencies, id = id, originalCode = originalCode, originalSourcemap = originalSourcemap.asInstanceOf[js.Any], resolvedIds = resolvedIds, sourcemapChain = sourcemapChain, transformAssets = transformAssets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, dependencies = dependencies, id = id, originalCode = originalCode, originalSourcemap = originalSourcemap.asInstanceOf[js.Any], sourcemapChain = sourcemapChain, transformAssets = transformAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(moduleSideEffects)) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects)
+    if (resolvedIds != null) __obj.updateDynamic("resolvedIds")(resolvedIds)
     if (transformDependencies != null) __obj.updateDynamic("transformDependencies")(transformDependencies)
     __obj.asInstanceOf[ModuleJSON]
   }

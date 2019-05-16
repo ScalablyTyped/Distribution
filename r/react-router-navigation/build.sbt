@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-navigation"
-version := "1.0-dt-20190212Z-6ea50e"
+version := "1.0-dt-20190212Z-9d3dd4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-0e3323",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190514Z-5934c5",
-  "org.scalablytyped" %%% "react-navigation" % "3.0-dt-20190507Z-c56d23",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190515Z-2bde84",
+  "org.scalablytyped" %%% "react-navigation" % "3.0-dt-20190507Z-805814",
   "org.scalablytyped" %%% "react-router" % "5.0-dt-20190507Z-4c0559",
-  "org.scalablytyped" %%% "react-router-navigation-core" % "1.0-dt-20181017Z-b6e6dc",
+  "org.scalablytyped" %%% "react-router-navigation-core" % "1.0-dt-20181017Z-53bb1f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

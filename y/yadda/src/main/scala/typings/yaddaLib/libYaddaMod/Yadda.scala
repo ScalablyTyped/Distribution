@@ -15,11 +15,20 @@ trait Yadda extends js.Object {
   ): scala.Unit = js.native
   def run(
     scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
-    scenarioContext: yaddaLib.libContextMod.^
+    scenario_context: yaddaLib.libContextMod.Properties
   ): scala.Unit = js.native
   def run(
     scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
-    scenarioContext: yaddaLib.libContextMod.^,
+    scenario_context: yaddaLib.libContextMod.Properties,
+    next: js.Function1[stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  def run(
+    scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
+    scenario_context: yaddaLib.libContextMod.^
+  ): scala.Unit = js.native
+  def run(
+    scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
+    scenario_context: yaddaLib.libContextMod.^,
     next: js.Function1[stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def run(scenario: yaddaLib.libMod.Scenario): scala.Unit = js.native
@@ -27,18 +36,30 @@ trait Yadda extends js.Object {
     scenario: yaddaLib.libMod.Scenario,
     next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
-  def run(scenario: yaddaLib.libMod.Scenario, scenarioContext: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def run(scenario: yaddaLib.libMod.Scenario, scenario_context: yaddaLib.libContextMod.Properties): scala.Unit = js.native
   def run(
     scenario: yaddaLib.libMod.Scenario,
-    scenarioContext: yaddaLib.libContextMod.^,
+    scenario_context: yaddaLib.libContextMod.Properties,
+    next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  def run(scenario: yaddaLib.libMod.Scenario, scenario_context: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def run(
+    scenario: yaddaLib.libMod.Scenario,
+    scenario_context: yaddaLib.libContextMod.^,
     next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def run(step: yaddaLib.libMod.Step): scala.Unit = js.native
   def run(step: yaddaLib.libMod.Step, next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
-  def run(step: yaddaLib.libMod.Step, scenarioContext: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def run(step: yaddaLib.libMod.Step, scenario_context: yaddaLib.libContextMod.Properties): scala.Unit = js.native
   def run(
     step: yaddaLib.libMod.Step,
-    scenarioContext: yaddaLib.libContextMod.^,
+    scenario_context: yaddaLib.libContextMod.Properties,
+    next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  def run(step: yaddaLib.libMod.Step, scenario_context: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def run(
+    step: yaddaLib.libMod.Step,
+    scenario_context: yaddaLib.libContextMod.^,
     next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def yadda(scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step]): scala.Unit = js.native
@@ -48,11 +69,20 @@ trait Yadda extends js.Object {
   ): scala.Unit = js.native
   def yadda(
     scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
-    scenarioContext: yaddaLib.libContextMod.^
+    scenario_context: yaddaLib.libContextMod.Properties
   ): scala.Unit = js.native
   def yadda(
     scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
-    scenarioContext: yaddaLib.libContextMod.^,
+    scenario_context: yaddaLib.libContextMod.Properties,
+    next: js.Function1[stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  def yadda(
+    scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
+    scenario_context: yaddaLib.libContextMod.^
+  ): scala.Unit = js.native
+  def yadda(
+    scenario: js.Array[yaddaLib.libMod.Scenario | yaddaLib.libMod.Step],
+    scenario_context: yaddaLib.libContextMod.^,
     next: js.Function1[stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def yadda(scenario: yaddaLib.libMod.Scenario): scala.Unit = js.native
@@ -60,18 +90,30 @@ trait Yadda extends js.Object {
     scenario: yaddaLib.libMod.Scenario,
     next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
-  def yadda(scenario: yaddaLib.libMod.Scenario, scenarioContext: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def yadda(scenario: yaddaLib.libMod.Scenario, scenario_context: yaddaLib.libContextMod.Properties): scala.Unit = js.native
   def yadda(
     scenario: yaddaLib.libMod.Scenario,
-    scenarioContext: yaddaLib.libContextMod.^,
+    scenario_context: yaddaLib.libContextMod.Properties,
+    next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  def yadda(scenario: yaddaLib.libMod.Scenario, scenario_context: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def yadda(
+    scenario: yaddaLib.libMod.Scenario,
+    scenario_context: yaddaLib.libContextMod.^,
     next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def yadda(step: yaddaLib.libMod.Step): scala.Unit = js.native
   def yadda(step: yaddaLib.libMod.Step, next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
-  def yadda(step: yaddaLib.libMod.Step, scenarioContext: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def yadda(step: yaddaLib.libMod.Step, scenario_context: yaddaLib.libContextMod.Properties): scala.Unit = js.native
   def yadda(
     step: yaddaLib.libMod.Step,
-    scenarioContext: yaddaLib.libContextMod.^,
+    scenario_context: yaddaLib.libContextMod.Properties,
+    next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  def yadda(step: yaddaLib.libMod.Step, scenario_context: yaddaLib.libContextMod.^): scala.Unit = js.native
+  def yadda(
+    step: yaddaLib.libMod.Step,
+    scenario_context: yaddaLib.libContextMod.^,
     next: js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chokidar"
-version := "2.1.5-69305c"
+version := "2.1.6-69305c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

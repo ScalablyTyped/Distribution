@@ -43,6 +43,7 @@ package object clientsMediapackageMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.NUMBER_WITH_TIMELINE
     - awsDashSdkLib.awsDashSdkLibStrings.TIME_WITH_TIMELINE
+    - awsDashSdkLib.awsDashSdkLibStrings.NUMBER_WITH_DURATION
     - java.lang.String
   */
   type SegmentTemplateFormat = _SegmentTemplateFormat | java.lang.String

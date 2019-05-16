@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyDBClusterMessage extends js.Object {
   /**
-    * A value that specifies whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is set to false, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values. If you set the ApplyImmediately parameter value to false, then changes to the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
+    * A value that indicates whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is disabled, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values. If the ApplyImmediately parameter is disabled, then changes to the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. By default, this parameter is disabled.
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var CloudwatchLogsExportConfiguration: js.UndefOr[CloudwatchLogsExportConfiguration] = js.undefined
   /**
-    * True to copy all tags from the DB cluster to snapshots of the DB cluster, and otherwise false. The default is false.
+    * A value that indicates whether to copy all tags from the DB cluster to snapshots of the DB cluster. The default is not to copy them.
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.undefined
   /**
-    * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when this value is set to true. 
+    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -43,11 +43,11 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
+    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled.
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The version number of the database engine to which you want to upgrade. Changing this parameter results in an outage. The change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true. For a list of valid engine versions, see CreateDBCluster, or call DescribeDBEngineVersions.
+    * The version number of the database engine to which you want to upgrade. Changing this parameter results in an outage. The change is applied during the next maintenance window unless ApplyImmediately is enabled. For a list of valid engine versions, use DescribeDBEngineVersions.
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var NewDBClusterIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates that the DB cluster should be associated with the specified option group. Changing this parameter doesn't result in an outage except in the following case, and the change is applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. If the parameter change results in an option group that enables OEM, this change can cause a brief (sub-second) period during which new connections are rejected but existing connections are not interrupted.  Permanent options can't be removed from an option group. The option group can't be removed from a DB cluster once it is associated with a DB cluster.
+    * A value that indicates that the DB cluster should be associated with the specified option group. Changing this parameter doesn't result in an outage except in the following case, and the change is applied during the next maintenance window unless the ApplyImmediately is enabled for this request. If the parameter change results in an option group that enables OEM, this change can cause a brief (sub-second) period during which new connections are rejected but existing connections are not interrupted.  Permanent options can't be removed from an option group. The option group can't be removed from a DB cluster once it is associated with a DB cluster.
     */
   var OptionGroupName: js.UndefOr[String] = js.undefined
   /**

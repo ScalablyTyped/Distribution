@@ -50,6 +50,8 @@ object mongo extends js.Object {
   var MinKey: org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.MinKey] = js.native
   var MongoClient: mongooseLib.Anon_Callback = js.native
   var MongoError: mongooseLib.Anon_Create = js.native
+  var MongoNetworkError: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, mongodbLib.mongodbMod.MongoNetworkError] = js.native
+  var MongoParseError: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, mongodbLib.mongodbMod.MongoParseError] = js.native
   var Mongos: org.scalablytyped.runtime.Instantiable1[/* servers */ js.Array[mongodbLib.mongodbMod.Server], mongodbLib.mongodbMod.Mongos] = js.native
   var ObjectID: mongooseLib.Anon_CacheHexStringCreateFromHexString = js.native
   var ObjectId: mongooseLib.Anon_CacheHexString = js.native

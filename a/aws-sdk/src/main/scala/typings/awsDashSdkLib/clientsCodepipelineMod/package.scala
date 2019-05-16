@@ -141,6 +141,7 @@ package object clientsCodepipelineMod {
   type PipelineStageDeclarationList = js.Array[StageDeclaration]
   type PipelineVersion = scala.Double
   type QueryParamMap = org.scalablytyped.runtime.StringDictionary[ActionConfigurationQueryableValue]
+  type ResourceArn = java.lang.String
   type Revision = java.lang.String
   type RevisionChangeIdentifier = java.lang.String
   type RevisionSummary = java.lang.String
@@ -170,6 +171,10 @@ package object clientsCodepipelineMod {
     - java.lang.String
   */
   type StageTransitionType = _StageTransitionType | java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type ThirdPartyJobId = java.lang.String
   type ThirdPartyJobList = js.Array[ThirdPartyJob]
   type Time = stdLib.Date

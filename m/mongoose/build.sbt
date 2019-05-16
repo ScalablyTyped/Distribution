@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mongoose"
-version := "5.5-dt-20190513Z-87984d"
+version := "5.5-dt-20190513Z-196271"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-b5bf4f",
-  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190501Z-aaea2f",
+  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190515Z-7a3ee5",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false

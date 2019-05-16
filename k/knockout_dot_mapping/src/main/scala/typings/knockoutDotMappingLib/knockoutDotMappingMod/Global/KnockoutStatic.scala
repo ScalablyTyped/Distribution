@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KnockoutStatic extends js.Object {
+  // this is a declaration merging with knockout's interface
   var mapping: KnockoutMapping
 }
 

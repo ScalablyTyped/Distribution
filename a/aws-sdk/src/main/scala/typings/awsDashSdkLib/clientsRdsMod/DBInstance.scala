@@ -67,7 +67,7 @@ trait DBInstance extends js.Object {
     */
   var DBParameterGroups: js.UndefOr[DBParameterGroupStatusList] = js.undefined
   /**
-    *  Provides List of DB security group elements containing only DBSecurityGroup.Name and DBSecurityGroup.Status subelements. 
+    *  A list of DB security group elements containing DBSecurityGroup.Name and DBSecurityGroup.Status subelements. 
     */
   var DBSecurityGroups: js.UndefOr[DBSecurityGroupMembershipList] = js.undefined
   /**
@@ -83,7 +83,7 @@ trait DBInstance extends js.Object {
     */
   var DbiResourceId: js.UndefOr[String] = js.undefined
   /**
-    * Indicates if the DB instance has deletion protection enabled. The database can't be deleted when this value is set to true. For more information, see  Deleting a DB Instance. 
+    * Indicates if the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. For more information, see  Deleting a DB Instance. 
     */
   var DeletionProtection: js.UndefOr[Boolean] = js.undefined
   /**

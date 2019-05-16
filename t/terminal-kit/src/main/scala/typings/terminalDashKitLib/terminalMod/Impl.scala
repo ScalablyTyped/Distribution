@@ -123,6 +123,8 @@ trait Impl extends js.Object {
   var italic_Original: CTerminal = js.native
   @JSName("magenta")
   var magenta_Original: CTerminal = js.native
+  @JSName("markupOnly")
+  var markupOnly_Original: CTerminal = js.native
   @JSName("mouseButton")
   var mouseButton_Original: Terminal = js.native
   @JSName("mouseDrag")
@@ -133,6 +135,8 @@ trait Impl extends js.Object {
   var mouseSGR_Original: Terminal = js.native
   @JSName("moveTo")
   var moveTo_Original: CTerminal = js.native
+  @JSName("noFormat")
+  var noFormat_Original: CTerminal = js.native
   @JSName("red")
   var red_Original: CTerminal = js.native
   @JSName("requestCursorLocation")
@@ -208,7 +212,10 @@ trait Impl extends js.Object {
   def bgBrightBlue(): Terminal = js.native
   def bgBrightBlue(args: js.Any*): Terminal = js.native
   def bgBrightBlue(str: java.lang.String): Terminal = js.native
-  def bgBrightColor(register: scala.Double): Terminal = js.native
+  def bgBrightColor(color: java.lang.String): Terminal = js.native
+  def bgBrightColor(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def bgBrightColor(color: scala.Double): Terminal = js.native
+  def bgBrightColor(color: scala.Double, str: java.lang.String): Terminal = js.native
   def bgBrightCyan(): Terminal = js.native
   def bgBrightCyan(args: js.Any*): Terminal = js.native
   def bgBrightCyan(str: java.lang.String): Terminal = js.native
@@ -227,15 +234,27 @@ trait Impl extends js.Object {
   def bgBrightYellow(): Terminal = js.native
   def bgBrightYellow(args: js.Any*): Terminal = js.native
   def bgBrightYellow(str: java.lang.String): Terminal = js.native
-  def bgColor(register: scala.Double): Terminal = js.native
-  def bgColor256(register: scala.Double): Terminal = js.native
+  def bgColor(color: java.lang.String): Terminal = js.native
+  def bgColor(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def bgColor(color: scala.Double): Terminal = js.native
+  def bgColor(color: scala.Double, str: java.lang.String): Terminal = js.native
+  def bgColor256(color: java.lang.String): Terminal = js.native
+  def bgColor256(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def bgColor256(color: scala.Double): Terminal = js.native
+  def bgColor256(color: scala.Double, str: java.lang.String): Terminal = js.native
   def bgColorGrayscale(I: scala.Double): Terminal = js.native
+  def bgColorGrayscale(I: scala.Double, str: java.lang.String): Terminal = js.native
   def bgColorRgb(r: scala.Double, g: scala.Double, b: scala.Double): Terminal = js.native
+  def bgColorRgb(r: scala.Double, g: scala.Double, b: scala.Double, str: java.lang.String): Terminal = js.native
   def bgColorRgbHex(rgb: java.lang.String): Terminal = js.native
+  def bgColorRgbHex(rgb: java.lang.String, str: java.lang.String): Terminal = js.native
   def bgCyan(): Terminal = js.native
   def bgCyan(args: js.Any*): Terminal = js.native
   def bgCyan(str: java.lang.String): Terminal = js.native
-  def bgDarkColor(register: scala.Double): Terminal = js.native
+  def bgDarkColor(color: java.lang.String): Terminal = js.native
+  def bgDarkColor(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def bgDarkColor(color: scala.Double): Terminal = js.native
+  def bgDarkColor(color: scala.Double, str: java.lang.String): Terminal = js.native
   def bgDefaultColor(): Terminal = js.native
   def bgDefaultColor(args: js.Any*): Terminal = js.native
   def bgDefaultColor(str: java.lang.String): Terminal = js.native
@@ -279,7 +298,10 @@ trait Impl extends js.Object {
   def brightBlue(): Terminal = js.native
   def brightBlue(args: js.Any*): Terminal = js.native
   def brightBlue(str: java.lang.String): Terminal = js.native
-  def brightColor(register: scala.Double): Terminal = js.native
+  def brightColor(color: java.lang.String): Terminal = js.native
+  def brightColor(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def brightColor(color: scala.Double): Terminal = js.native
+  def brightColor(color: scala.Double, str: java.lang.String): Terminal = js.native
   def brightCyan(): Terminal = js.native
   def brightCyan(args: js.Any*): Terminal = js.native
   def brightCyan(str: java.lang.String): Terminal = js.native
@@ -301,17 +323,29 @@ trait Impl extends js.Object {
   def clear(): Terminal = js.native
   def clear(args: js.Any*): Terminal = js.native
   def clear(str: java.lang.String): Terminal = js.native
-  def color(register: scala.Double): Terminal = js.native
-  def color256(register: scala.Double): Terminal = js.native
+  def color(color: java.lang.String): Terminal = js.native
+  def color(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def color(color: scala.Double): Terminal = js.native
+  def color(color: scala.Double, str: java.lang.String): Terminal = js.native
+  def color256(color: java.lang.String): Terminal = js.native
+  def color256(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def color256(color: scala.Double): Terminal = js.native
+  def color256(color: scala.Double, str: java.lang.String): Terminal = js.native
   def colorGrayscale(I: scala.Double): Terminal = js.native
+  def colorGrayscale(I: scala.Double, str: java.lang.String): Terminal = js.native
   def colorRgb(r: scala.Double, g: scala.Double, b: scala.Double): Terminal = js.native
+  def colorRgb(r: scala.Double, g: scala.Double, b: scala.Double, str: java.lang.String): Terminal = js.native
   def colorRgbHex(rgb: java.lang.String): Terminal = js.native
+  def colorRgbHex(rgb: java.lang.String, str: java.lang.String): Terminal = js.native
   def column(x: scala.Double): Terminal = js.native
   def cwd(uri: java.lang.String): Terminal = js.native
   def cyan(): Terminal = js.native
   def cyan(args: js.Any*): Terminal = js.native
   def cyan(str: java.lang.String): Terminal = js.native
-  def darkColor(register: scala.Double): Terminal = js.native
+  def darkColor(color: java.lang.String): Terminal = js.native
+  def darkColor(color: java.lang.String, str: java.lang.String): Terminal = js.native
+  def darkColor(color: scala.Double): Terminal = js.native
+  def darkColor(color: scala.Double, str: java.lang.String): Terminal = js.native
   def defaultColor(): Terminal = js.native
   def defaultColor(args: js.Any*): Terminal = js.native
   def defaultColor(str: java.lang.String): Terminal = js.native
@@ -421,6 +455,8 @@ trait Impl extends js.Object {
   def magenta(): Terminal = js.native
   def magenta(args: js.Any*): Terminal = js.native
   def magenta(str: java.lang.String): Terminal = js.native
+  def markupOnly(): Terminal = js.native
+  def markupOnly(args: js.Any*): Terminal = js.native
   def markupOnly(str: java.lang.String): Terminal = js.native
   def mouseButton(): Terminal = js.native
   def mouseButton(args: js.Any*): Terminal = js.native
@@ -439,6 +475,8 @@ trait Impl extends js.Object {
   def moveTo(args: js.Any*): Terminal = js.native
   def moveTo(str: java.lang.String): Terminal = js.native
   def nextLine(n: scala.Double): Terminal = js.native
+  def noFormat(): Terminal = js.native
+  def noFormat(args: js.Any*): Terminal = js.native
   def noFormat(str: java.lang.String): Terminal = js.native
   def notify(title: java.lang.String, text: java.lang.String): Terminal = js.native
   def previousLine(n: scala.Double): Terminal = js.native

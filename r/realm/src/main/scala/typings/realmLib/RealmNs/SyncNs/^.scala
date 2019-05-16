@@ -25,6 +25,7 @@ object ^ extends js.Object {
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, js.Promise[scala.Unit] | scala.Unit]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
+  def localListenerRealms(regex: java.lang.String): js.Array[LocalRealm] = js.native
   def reconnect(): scala.Unit = js.native
   def removeAllListeners(): js.Promise[scala.Unit] = js.native
   def removeListener(
@@ -37,7 +38,7 @@ object ^ extends js.Object {
     */
   def setFeatureToken(token: java.lang.String): scala.Unit = js.native
   def setLogLevel(logLevel: LogLevel): scala.Unit = js.native
-  def setLogger(callback: js.Function2[/* level */ LogLevel, /* message */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def setLogger(callback: js.Function2[/* level */ NumericLogLevel, /* message */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def setUserAgent(userAgent: java.lang.String): scala.Unit = js.native
 }
 

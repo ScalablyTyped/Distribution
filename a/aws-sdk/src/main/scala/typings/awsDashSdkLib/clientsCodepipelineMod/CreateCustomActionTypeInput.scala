@@ -31,6 +31,10 @@ trait CreateCustomActionTypeInput extends js.Object {
     */
   var settings: js.UndefOr[ActionTypeSettings] = js.undefined
   /**
+    * The tags for the custom action.
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
+  /**
     * The version identifier of the custom action.
     */
   var version: Version
@@ -45,11 +49,13 @@ object CreateCustomActionTypeInput {
     provider: ActionProvider,
     version: Version,
     configurationProperties: ActionConfigurationPropertyList = null,
-    settings: ActionTypeSettings = null
+    settings: ActionTypeSettings = null,
+    tags: TagList = null
   ): CreateCustomActionTypeInput = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], inputArtifactDetails = inputArtifactDetails, outputArtifactDetails = outputArtifactDetails, provider = provider, version = version)
     if (configurationProperties != null) __obj.updateDynamic("configurationProperties")(configurationProperties)
     if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateCustomActionTypeInput]
   }
 }

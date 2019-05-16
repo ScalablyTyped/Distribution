@@ -64,13 +64,22 @@ trait MUIDataTableOptions extends js.Object {
   var onColumnViewChange: js.UndefOr[
     js.Function2[/* changedColumn */ java.lang.String, /* action */ java.lang.String, scala.Unit]
   ] = js.undefined
+  var onDownload: js.UndefOr[
+    js.Function4[
+      /* buildHead */ js.Function1[/* columns */ js.Any, java.lang.String], 
+      /* buildBody */ js.Function1[/* data */ js.Any, java.lang.String], 
+      /* columns */ js.Any, 
+      /* data */ js.Any, 
+      java.lang.String
+    ]
+  ] = js.undefined
   var onFilterChange: js.UndefOr[
     js.Function2[/* changedColumn */ java.lang.String, /* filterList */ js.Array[_], scala.Unit]
   ] = js.undefined
   var onRowClick: js.UndefOr[
     js.Function2[
       /* rowData */ js.Array[java.lang.String], 
-      /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex, 
+      /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex, 
       scala.Unit
     ]
   ] = js.undefined
@@ -88,7 +97,7 @@ trait MUIDataTableOptions extends js.Object {
   var renderExpandableRow: js.UndefOr[
     js.Function2[
       /* rowData */ js.Array[java.lang.String], 
-      /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex, 
+      /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex, 
       reactLib.reactMod.ReactNode
     ]
   ] = js.undefined
@@ -133,8 +142,9 @@ object MUIDataTableOptions {
     onChangeRowsPerPage: /* numberOfRows */ scala.Double => scala.Unit = null,
     onColumnSortChange: (/* changedColumn */ java.lang.String, /* direction */ java.lang.String) => scala.Unit = null,
     onColumnViewChange: (/* changedColumn */ java.lang.String, /* action */ java.lang.String) => scala.Unit = null,
+    onDownload: (/* buildHead */ js.Function1[/* columns */ js.Any, java.lang.String], /* buildBody */ js.Function1[/* data */ js.Any, java.lang.String], /* columns */ js.Any, /* data */ js.Any) => java.lang.String = null,
     onFilterChange: (/* changedColumn */ java.lang.String, /* filterList */ js.Array[_]) => scala.Unit = null,
-    onRowClick: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex) => scala.Unit = null,
+    onRowClick: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex) => scala.Unit = null,
     onRowsDelete: /* rowsDeleted */ js.Array[_] => scala.Unit = null,
     onRowsSelect: (/* currentRowsSelected */ js.Array[_], /* rowsSelected */ js.Array[_]) => scala.Unit = null,
     onSearchChange: /* searchText */ java.lang.String => scala.Unit = null,
@@ -142,7 +152,7 @@ object MUIDataTableOptions {
     page: scala.Int | scala.Double = null,
     pagination: js.UndefOr[scala.Boolean] = js.undefined,
     print: js.UndefOr[scala.Boolean] = js.undefined,
-    renderExpandableRow: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex) => reactLib.reactMod.ReactNode = null,
+    renderExpandableRow: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex) => reactLib.reactMod.ReactNode = null,
     resizableColumns: js.UndefOr[scala.Boolean] = js.undefined,
     responsive: muiDashDatatablesLib.muiDashDatatablesLibStrings.stacked | muiDashDatatablesLib.muiDashDatatablesLibStrings.scroll = null,
     rowHover: js.UndefOr[scala.Boolean] = js.undefined,
@@ -179,6 +189,7 @@ object MUIDataTableOptions {
     if (onChangeRowsPerPage != null) __obj.updateDynamic("onChangeRowsPerPage")(js.Any.fromFunction1(onChangeRowsPerPage))
     if (onColumnSortChange != null) __obj.updateDynamic("onColumnSortChange")(js.Any.fromFunction2(onColumnSortChange))
     if (onColumnViewChange != null) __obj.updateDynamic("onColumnViewChange")(js.Any.fromFunction2(onColumnViewChange))
+    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction4(onDownload))
     if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(js.Any.fromFunction2(onFilterChange))
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction2(onRowClick))
     if (onRowsDelete != null) __obj.updateDynamic("onRowsDelete")(js.Any.fromFunction1(onRowsDelete))

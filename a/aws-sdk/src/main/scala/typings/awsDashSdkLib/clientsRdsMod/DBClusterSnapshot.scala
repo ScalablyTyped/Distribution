@@ -11,7 +11,7 @@ trait DBClusterSnapshot extends js.Object {
     */
   var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   /**
-    * Provides the list of EC2 Availability Zones that instances in the DB cluster snapshot can be restored in.
+    * Provides the list of Availability Zones (AZs) where instances in the DB cluster snapshot can be restored.
     */
   var AvailabilityZones: js.UndefOr[AvailabilityZones] = js.undefined
   /**

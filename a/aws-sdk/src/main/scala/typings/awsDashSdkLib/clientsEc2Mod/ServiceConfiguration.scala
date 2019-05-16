@@ -46,6 +46,10 @@ trait ServiceConfiguration extends js.Object {
     * The type of service.
     */
   var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.undefined
+  /**
+    * Any tags assigned to the service.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 
 object ServiceConfiguration {
@@ -60,7 +64,8 @@ object ServiceConfiguration {
     ServiceId: String = null,
     ServiceName: String = null,
     ServiceState: ServiceState = null,
-    ServiceType: ServiceTypeDetailSet = null
+    ServiceType: ServiceTypeDetailSet = null,
+    Tags: TagList = null
   ): ServiceConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired)
@@ -73,6 +78,7 @@ object ServiceConfiguration {
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (ServiceState != null) __obj.updateDynamic("ServiceState")(ServiceState.asInstanceOf[js.Any])
     if (ServiceType != null) __obj.updateDynamic("ServiceType")(ServiceType)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     __obj.asInstanceOf[ServiceConfiguration]
   }
 }

@@ -33,7 +33,7 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
     */
   def pop(): T = js.native
   /**
-    * Adds a new item to the end of array.
+    * Adds new item or items to the end of array.
     * @param items Items  to be added.
     */
   def push(items: T*): scala.Unit = js.native
@@ -93,7 +93,7 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
     */
   def splice(start: scala.Double, deleteCount: scala.Double, items: T*): js.Array[T] = js.native
   /**
-    * Inserts a new item at the beginning of the array.
+    * Inserts new item or items at the beginning of the array.
     * @param items Items to be added.
     */
   def unshift(items: T*): scala.Double = js.native

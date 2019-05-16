@@ -85,6 +85,21 @@ object atBabelCoreLibStrings {
   sealed trait CommonJS extends js.Object
   
   @js.native
+  sealed trait DOTes extends js.Object
+  
+  @js.native
+  sealed trait DOTes6 extends js.Object
+  
+  @js.native
+  sealed trait DOTjs extends js.Object
+  
+  @js.native
+  sealed trait DOTjsx extends js.Object
+  
+  @js.native
+  sealed trait DOTmjs extends js.Object
+  
+  @js.native
   sealed trait Declaration extends js.Object
   
   @js.native
@@ -271,6 +286,16 @@ object atBabelCoreLibStrings {
   def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
   @scala.inline
   def CommonJS: CommonJS = "CommonJS".asInstanceOf[CommonJS]
+  @scala.inline
+  def DOTes: DOTes = ".es".asInstanceOf[DOTes]
+  @scala.inline
+  def DOTes6: DOTes6 = ".es6".asInstanceOf[DOTes6]
+  @scala.inline
+  def DOTjs: DOTjs = ".js".asInstanceOf[DOTjs]
+  @scala.inline
+  def DOTjsx: DOTjsx = ".jsx".asInstanceOf[DOTjsx]
+  @scala.inline
+  def DOTmjs: DOTmjs = ".mjs".asInstanceOf[DOTmjs]
   @scala.inline
   def Declaration: Declaration = "Declaration".asInstanceOf[Declaration]
   @scala.inline

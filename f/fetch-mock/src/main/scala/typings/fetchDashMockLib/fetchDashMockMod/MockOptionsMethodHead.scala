@@ -13,7 +13,7 @@ trait MockOptionsMethodHead extends MockOptions {
 object MockOptionsMethodHead {
   @scala.inline
   def apply(
-    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] = null,
     includeContentLength: js.UndefOr[scala.Boolean] = js.undefined,
     matcher: MockMatcher = null,
     method: fetchDashMockLib.fetchDashMockLibStrings.HEAD = null,

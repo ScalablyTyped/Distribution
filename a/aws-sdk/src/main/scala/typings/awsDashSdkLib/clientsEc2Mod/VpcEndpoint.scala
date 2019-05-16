@@ -51,6 +51,10 @@ trait VpcEndpoint extends js.Object {
     */
   var SubnetIds: js.UndefOr[ValueStringList] = js.undefined
   /**
+    * Any tags assigned to the VPC endpoint.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
+  /**
     * The ID of the VPC endpoint.
     */
   var VpcEndpointId: js.UndefOr[String] = js.undefined
@@ -78,6 +82,7 @@ object VpcEndpoint {
     ServiceName: String = null,
     State: State = null,
     SubnetIds: ValueStringList = null,
+    Tags: TagList = null,
     VpcEndpointId: String = null,
     VpcEndpointType: VpcEndpointType = null,
     VpcId: String = null
@@ -94,6 +99,7 @@ object VpcEndpoint {
     if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName)
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId)
     if (VpcEndpointType != null) __obj.updateDynamic("VpcEndpointType")(VpcEndpointType.asInstanceOf[js.Any])
     if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)

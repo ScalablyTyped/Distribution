@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyCurrentDBClusterCapacityMessage extends js.Object {
   /**
-    * The DB cluster capacity. When you change the capacity of a paused Aurora Serverless DB cluster, it automatically resumes. Constraints:   Value must be 2, 4, 8, 16, 32, 64, 128, or 256.  
+    * The DB cluster capacity. When you change the capacity of a paused Aurora Serverless DB cluster, it automatically resumes. Constraints:   Value must be 1, 2, 4, 8, 16, 32, 64, 128, or 256.  
     */
   var Capacity: js.UndefOr[IntegerOptional] = js.undefined
   /**

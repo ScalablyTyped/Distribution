@@ -25,7 +25,7 @@ trait DescribeSecurityGroupsRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another request with the returned NextToken value. This value can be between 5 and 1000. If this parameter is not specified, then all results are returned.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeSecurityGroupsMaxResults] = js.undefined
   /**
     * The token to request the next page of results.
     */
@@ -39,7 +39,7 @@ object DescribeSecurityGroupsRequest {
     Filters: FilterList = null,
     GroupIds: GroupIdStringList = null,
     GroupNames: GroupNameStringList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeSecurityGroupsMaxResults] = js.undefined,
     NextToken: String = null
   ): DescribeSecurityGroupsRequest = {
     val __obj = js.Dynamic.literal()

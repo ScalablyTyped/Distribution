@@ -7,21 +7,25 @@ import scala.scalajs.js.annotation._
 
 trait TreeshakingOptions extends js.Object {
   var annotations: js.UndefOr[scala.Boolean] = js.undefined
+  var moduleSideEffects: js.UndefOr[ModuleSideEffectsOption] = js.undefined
   var propertyReadSideEffects: js.UndefOr[scala.Boolean] = js.undefined
-  var pureExternalModules: js.UndefOr[scala.Boolean] = js.undefined
+  /** @deprecated Use `moduleSideEffects` instead */
+  var pureExternalModules: js.UndefOr[PureModulesOption] = js.undefined
 }
 
 object TreeshakingOptions {
   @scala.inline
   def apply(
     annotations: js.UndefOr[scala.Boolean] = js.undefined,
+    moduleSideEffects: ModuleSideEffectsOption = null,
     propertyReadSideEffects: js.UndefOr[scala.Boolean] = js.undefined,
-    pureExternalModules: js.UndefOr[scala.Boolean] = js.undefined
+    pureExternalModules: PureModulesOption = null
   ): TreeshakingOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(annotations)) __obj.updateDynamic("annotations")(annotations)
+    if (moduleSideEffects != null) __obj.updateDynamic("moduleSideEffects")(moduleSideEffects.asInstanceOf[js.Any])
     if (!js.isUndefined(propertyReadSideEffects)) __obj.updateDynamic("propertyReadSideEffects")(propertyReadSideEffects)
-    if (!js.isUndefined(pureExternalModules)) __obj.updateDynamic("pureExternalModules")(pureExternalModules)
+    if (pureExternalModules != null) __obj.updateDynamic("pureExternalModules")(pureExternalModules.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeshakingOptions]
   }
 }

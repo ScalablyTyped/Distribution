@@ -1,7 +1,7 @@
 
 # Scala.js typings for chokidar
 
-Typings are for version 2.1.5
+Typings are for version 2.1.6
 
 ## Library description:
 A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.

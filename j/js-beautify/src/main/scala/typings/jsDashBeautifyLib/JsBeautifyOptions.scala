@@ -24,6 +24,7 @@ trait JsBeautifyOptions extends js.Object {
   var preserve_newlines: js.UndefOr[scala.Boolean] = js.undefined
   var space_after_anon_function: js.UndefOr[scala.Boolean] = js.undefined
   var space_before_conditional: js.UndefOr[scala.Boolean] = js.undefined
+  var space_in_empty_paren: js.UndefOr[scala.Boolean] = js.undefined
   var unescape_strings: js.UndefOr[scala.Boolean] = js.undefined
   var wrap_attributes: js.UndefOr[
     jsDashBeautifyLib.jsDashBeautifyLibStrings.auto | jsDashBeautifyLib.jsDashBeautifyLibStrings.force
@@ -51,6 +52,7 @@ object JsBeautifyOptions {
     preserve_newlines: js.UndefOr[scala.Boolean] = js.undefined,
     space_after_anon_function: js.UndefOr[scala.Boolean] = js.undefined,
     space_before_conditional: js.UndefOr[scala.Boolean] = js.undefined,
+    space_in_empty_paren: js.UndefOr[scala.Boolean] = js.undefined,
     unescape_strings: js.UndefOr[scala.Boolean] = js.undefined,
     wrap_attributes: jsDashBeautifyLib.jsDashBeautifyLibStrings.auto | jsDashBeautifyLib.jsDashBeautifyLibStrings.force = null,
     wrap_attributes_indent_size: scala.Int | scala.Double = null,
@@ -73,6 +75,7 @@ object JsBeautifyOptions {
     if (!js.isUndefined(preserve_newlines)) __obj.updateDynamic("preserve_newlines")(preserve_newlines)
     if (!js.isUndefined(space_after_anon_function)) __obj.updateDynamic("space_after_anon_function")(space_after_anon_function)
     if (!js.isUndefined(space_before_conditional)) __obj.updateDynamic("space_before_conditional")(space_before_conditional)
+    if (!js.isUndefined(space_in_empty_paren)) __obj.updateDynamic("space_in_empty_paren")(space_in_empty_paren)
     if (!js.isUndefined(unescape_strings)) __obj.updateDynamic("unescape_strings")(unescape_strings)
     if (wrap_attributes != null) __obj.updateDynamic("wrap_attributes")(wrap_attributes.asInstanceOf[js.Any])
     if (wrap_attributes_indent_size != null) __obj.updateDynamic("wrap_attributes_indent_size")(wrap_attributes_indent_size.asInstanceOf[js.Any])

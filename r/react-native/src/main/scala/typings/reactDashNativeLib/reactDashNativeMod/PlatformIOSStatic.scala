@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PlatformIOSStatic extends PlatformStatic {
+  var OS: reactDashNativeLib.reactDashNativeLibStrings.ios
   var isPad: scala.Boolean
   var isTVOS: scala.Boolean
 }
@@ -13,7 +14,7 @@ trait PlatformIOSStatic extends PlatformStatic {
 object PlatformIOSStatic {
   @scala.inline
   def apply(
-    OS: PlatformOSType,
+    OS: reactDashNativeLib.reactDashNativeLibStrings.ios,
     Version: scala.Double | java.lang.String,
     isPad: scala.Boolean,
     isTV: scala.Boolean,

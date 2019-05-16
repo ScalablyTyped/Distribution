@@ -49,8 +49,7 @@ object ^ extends js.Object {
   val PanResponder: PanResponderStatic = js.native
   val PermissionsAndroid: PermissionsAndroidStatic = js.native
   val PixelRatio: PixelRatioStatic = js.native
-  val Platform: PlatformStatic = js.native
-  val PlatformIOS: PlatformIOSStatic = js.native
+  val Platform: PlatformIOSStatic | PlatformAndroidStatic | PlatformWindowsOSStatic | PlatformMacOSStatic | PlatformWebStatic = js.native
   val PointPropType: reactLib.reactMod.Validator[PointPropType] = js.native
   val PushNotificationIOS: PushNotificationIOSStatic = js.native
   val SectionList: SectionListStatic[js.Any] = js.native

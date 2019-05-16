@@ -22,6 +22,9 @@ trait CreateOptionGroupMessage extends js.Object {
     * Specifies the name of the option group to be created. Constraints:   Must be 1 to 255 letters, numbers, or hyphens   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: myoptiongroup 
     */
   var OptionGroupName: String
+  /**
+    * Tags to assign to the option group.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 

@@ -17,7 +17,7 @@ trait DescribeNetworkInterfacesRequest extends js.Object {
   /**
     * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeNetworkInterfacesMaxResults] = js.undefined
   /**
     * One or more network interface IDs. Default: Describes all your network interfaces.
     */
@@ -33,7 +33,7 @@ object DescribeNetworkInterfacesRequest {
   def apply(
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeNetworkInterfacesMaxResults] = js.undefined,
     NetworkInterfaceIds: NetworkInterfaceIdList = null,
     NextToken: String = null
   ): DescribeNetworkInterfacesRequest = {

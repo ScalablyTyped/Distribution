@@ -20,6 +20,22 @@ trait Service extends js.Object {
     ]
   ): Service = js.native
   @JSName("addEventListener")
+  def addEventListener_slotRequested(
+    eventType: doubleclickDashGptLib.doubleclickDashGptLibStrings.slotRequested,
+    listener: js.Function1[
+      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.SlotRequestedEvent, 
+      scala.Unit
+    ]
+  ): Service = js.native
+  @JSName("addEventListener")
+  def addEventListener_slotResponseReceived(
+    eventType: doubleclickDashGptLib.doubleclickDashGptLibStrings.slotResponseReceived,
+    listener: js.Function1[
+      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.SlotResponseReceived, 
+      scala.Unit
+    ]
+  ): Service = js.native
+  @JSName("addEventListener")
   def addEventListener_slotVisibilityChanged(
     eventType: doubleclickDashGptLib.doubleclickDashGptLibStrings.slotVisibilityChanged,
     listener: js.Function1[

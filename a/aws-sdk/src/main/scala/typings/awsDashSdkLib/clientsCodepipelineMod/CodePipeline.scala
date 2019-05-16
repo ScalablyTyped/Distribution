@@ -416,6 +416,29 @@ trait CodePipeline
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListPipelinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Gets the set of key/value pairs (metadata) that are used to manage the resource.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Gets the set of key/value pairs (metadata) that are used to manage the resource.
+    */
+  def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Gets a listing of all the webhooks in this region for this account. The output lists all webhooks and includes the webhook URL and ARN, as well the configuration for each webhook.
     */
   def listWebhooks(): awsDashSdkLib.libRequestMod.Request[ListWebhooksOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -682,6 +705,52 @@ trait CodePipeline
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[StartPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource. 
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource. 
+    */
+  def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags from an AWS resource.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags from an AWS resource.
+    */
+  def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure in conjunction with UpdatePipeline to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
     */

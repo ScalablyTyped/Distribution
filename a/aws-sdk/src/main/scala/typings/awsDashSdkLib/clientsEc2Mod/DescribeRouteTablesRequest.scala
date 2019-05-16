@@ -17,7 +17,7 @@ trait DescribeRouteTablesRequest extends js.Object {
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: js.UndefOr[Integer] = js.undefined
+  var MaxResults: js.UndefOr[DescribeRouteTablesMaxResults] = js.undefined
   /**
     * The token for the next page of results.
     */
@@ -33,7 +33,7 @@ object DescribeRouteTablesRequest {
   def apply(
     DryRun: js.UndefOr[Boolean] = js.undefined,
     Filters: FilterList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
+    MaxResults: js.UndefOr[DescribeRouteTablesMaxResults] = js.undefined,
     NextToken: String = null,
     RouteTableIds: ValueStringList = null
   ): DescribeRouteTablesRequest = {

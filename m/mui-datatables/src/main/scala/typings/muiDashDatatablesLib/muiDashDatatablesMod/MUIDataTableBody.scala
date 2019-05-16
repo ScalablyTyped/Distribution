@@ -14,7 +14,7 @@ trait MUIDataTableBody extends js.Object {
   var onRowClick: js.UndefOr[
     js.Function2[
       /* rowData */ js.Array[java.lang.String], 
-      /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex, 
+      /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex, 
       scala.Unit
     ]
   ] = js.undefined
@@ -34,7 +34,7 @@ object MUIDataTableBody {
     data: js.Array[js.Object | js.Array[scala.Double] | js.Array[java.lang.String]],
     options: js.Object,
     filterList: js.Array[js.Array[java.lang.String]] = null,
-    onRowClick: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndex) => scala.Unit = null,
+    onRowClick: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex) => scala.Unit = null,
     searchText: java.lang.String = null,
     selectRowUpdate: /* args */ js.Any => _ = null,
     selectedRows: js.Object = null,

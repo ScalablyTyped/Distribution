@@ -2938,12 +2938,13 @@ trait UnderscoreStatic extends js.Object {
     * @return Function which accept an object an returns the value of key in that object.
     **/
   def property(key: java.lang.String): js.Function1[/* object */ js.Object, _] = js.native
+  def property(key: js.Array[java.lang.String]): js.Function1[/* object */ js.Object, _] = js.native
   /**
     * Returns a function that will itself return the value of a object key property.
     * @param key The object to get the property value from.
     * @return Function which accept a key property in `object` and returns its value.
     **/
-  def propertyOf(`object`: js.Object): js.Function1[/* key */ java.lang.String, _] = js.native
+  def propertyOf(`object`: js.Object): js.Function1[/* key */ java.lang.String | js.Array[java.lang.String], _] = js.native
   /**
     * Returns a random integer between min and max, inclusive. If you only pass one argument,
     * it will return a number between 0 and that number.

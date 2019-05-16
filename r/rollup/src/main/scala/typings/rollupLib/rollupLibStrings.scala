@@ -50,6 +50,9 @@ object rollupLibStrings {
   sealed trait named extends js.Object
   
   @js.native
+  sealed trait `no-external` extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -84,6 +87,8 @@ object rollupLibStrings {
   def module: module = "module".asInstanceOf[module]
   @scala.inline
   def named: named = "named".asInstanceOf[named]
+  @scala.inline
+  def `no-external`: `no-external` = "no-external".asInstanceOf[`no-external`]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

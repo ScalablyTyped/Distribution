@@ -440,6 +440,7 @@
 | 0.8152452728539129 | [package-json](./p/package-json) | Get metadata of a package from the npm registry
 | 0.8152420414463519 | [lodash_dot_pickby](./l/lodash_dot_pickby) | The lodash method _.pickBy exported as a module.
 | 0.8152297391946445 | [plugin-error](./p/plugin-error) | Error handling for Vinyl plugins.
+| 0.8152238723285735 | [flat-cache](./f/flat-cache) | A stupidly simple key/value storage using files to
 | 0.8150831213768911 | [is-callable](./i/is-callable) | Is this JS value callable? Works with Functions an
 | 0.814993267999401 | [compression-webpack-plugi](./c/compression-webpack-plugin) | Prepare compressed versions of assets to serve the
 | 0.8149503905628186 | [apollo-client](./a/apollo-client) | A simple yet functional GraphQL client.
@@ -1153,6 +1154,7 @@
 | 0.7610470508382802 | [bip39](./b/bip39) | Bitcoin BIP39: Mnemonic code for generating determ
 | 0.7610360787272412 | [gaxios](./g/gaxios) | A simple common HTTP client specifically for Googl
 | 0.7608967975581482 | [reduce-reducers](./r/reduce-reducers) | Reduce multiple reducers into a single reducer
+| 0.7608237770718338 | [react-pdf](./r/react-pdf) | Display PDFs in your React app as easily as if the
 | 0.7608057772405468 | [env-ci](./e/env-ci) | Get environment variables exposed by CI services
 | 0.760722714637242 | [nise](./n/nise) | Fake XHR and server
 | 0.7606051501429878 | [response-time](./r/response-time) | Response time for Node.js servers
@@ -2409,6 +2411,7 @@
 | 0.6928103197508695 | [redux-devtools-extension](./r/redux-devtools-extension) | Wrappers for Redux DevTools Extension.
 | 0.6927789737281737 | [node-cleanup](./n/node-cleanup) | installs custom cleanup handlers that run on exiti
 | 0.6926879435922793 | [standard-http-error](./s/standard-http-error) | Standard HTTP error class. Proper serialization, n
+| 0.6926753785543864 | [log-process-errors](./l/log-process-errors) | Show some ❤️ to process errors
 | 0.6925962167293996 | [koa-json-error](./k/koa-json-error) | Error handler for pure-JSON Koa apps
 | 0.6925121735124299 | [file-exists](./f/file-exists) | Check if filepath exists and is a file
 | 0.6925115596552711 | [in-app-purchase](./i/in-app-purchase) | In-App-Purchase validation and subscription manage
@@ -2451,6 +2454,7 @@
 | 0.6908936424595209 | [express-minify](./e/express-minify) | Automatically minify and cache your javascript and
 | 0.6908779809404912 | [unsplash-js](./u/unsplash-js) | A Universal JavaScript wrapper for the Unsplash AP
 | 0.6908680809925105 | [egjs__component](./e/egjs__component) | A base class utility that manages events and optio
+| 0.690866715200045 | [jsonpack](./j/jsonpack) | A compression algorithm for JSON
 | 0.6908400377370272 | [react-fns](./r/react-fns) | Modern React components, hoc's, and utilities func
 | 0.6905492766266569 | [react-image-fallback](./r/react-image-fallback) | if your image doesn't exist, fallback onto another
 | 0.6905443362162562 | [iso-3166-2](./i/iso-3166-2) | Lookup information about ISO-3166-2 subdivisions.
@@ -2910,6 +2914,7 @@
 | 0.6717612731184497 | [tunnel-ssh](./t/tunnel-ssh) | Easy extendable SSH tunnel
 | 0.6717555377653497 | [priorityqueuejs](./p/priorityqueuejs) | a simple priority queue data structure
 | 0.6717176044837172 | [katex](./k/katex) | Fast math typesetting for the web.
+| 0.6717005833289373 | [braintree](./b/braintree) | A library for integrating with Braintree.
 | 0.6716358607718017 | [sasl-scram-sha-1](./s/sasl-scram-sha-1) | JavaScript implementation of SCRAM-SHA-1 SASL mech
 | 0.6716169640385095 | [viewport-list](./v/viewport-list) | Return a list of devices and their viewports
 | 0.6716114559421644 | [badgen](./b/badgen) | Fast svg badge generator.
@@ -4476,6 +4481,7 @@
 | 0.5198065308121045 | [raspi-serial](./r/raspi-serial) | Provides access to the serial port on the Raspberr
 | 0.5197821384371939 | [layzr_dot_js](./l/layzr_dot_js) | A modern lazy loading library for images.
 | 0.5197380200833916 | [list_dot_js](./l/list_dot_js) | The perfect library for lists. Supports search, so
+| 0.5197040122433947 | [react-native-audio](./r/react-native-audio) | React Native extension for recording audio
 | 0.5196117681624028 | [iban](./i/iban) | A javascript library to validate, format and conve
 | 0.5195359165261607 | [inputmask](./i/inputmask) | Inputmask is a javascript library which creates an
 | 0.5194955791281469 | [react-images](./r/react-images) | A simple, responsive lightbox component for displa
@@ -4760,9 +4766,11 @@
 | 0.469584898477001 | [pathwatcher](./p/pathwatcher) | Watch files and directories for changes
 | 0.4694189638024803 | [vue-loader](./v/vue-loader) | Vue single-file component loader for Webpack
 | 0.4693387598588751 | [sqlanywhere](./s/sqlanywhere) | SQL Anywhere JavaScript Driver.
+| 0.46931113343959874 | [dynamodb](./d/dynamodb) | DynamoDB data mapper for node.js
 | 0.4692250627805992 | [react-native-sortable-lis](./r/react-native-sortable-list) | React Native Sortable List component
 | 0.4691574841962214 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native.
 | 0.4691260243156069 | [mockery](./m/mockery) | Simplifying the use of mocks with Node.js
+| 0.4687738108024164 | [dbus](./d/dbus) | A D-Bus binding for Node
 | 0.4687132228648571 | [vitalsigns](./v/vitalsigns) | Powerful and customizable application health monit
 | 0.46865562755765044 | [cordova-plugin-device-nam](./c/cordova-plugin-device-name) | Cordova Device Name Plugin
 | 0.46832335524190893 | [protractor-helpers](./p/protractor-helpers) | Additional matchers / locators and helpers for sys
@@ -4836,6 +4844,7 @@
 | 0.4582326994726247 | [recorder-js](./r/recorder-js) | Record audio in your browser
 | 0.45815856949729117 | [stack-trace](./s/stack-trace) | Get v8 stack traces as an array of CallSite object
 | 0.4581213624291346 | [mcrypt](./m/mcrypt) | MCrypt bindings
+| 0.458047937217427 | [react-native-swipe-gestur](./r/react-native-swipe-gestures) | 4-directional swipe gestures for react-native
 | 0.4579904954828341 | [optics-agent](./o/optics-agent) | Apollo Optics Agent for GraphQL-js
 | 0.45793429228650473 | [babylon-walk](./b/babylon-walk) | Lightweight Babylon AST traversal
 | 0.4578201502460029 | [orchestrator](./o/orchestrator) | A module for sequencing and executing tasks and de
@@ -5033,6 +5042,7 @@
 | 0.4287646079914569 | [util-deprecate](./u/util-deprecate) | The Node.js util.deprecate() function with browser
 | 0.42841806966512447 | [enzyme-async-helpers](./e/enzyme-async-helpers) | Async helpers for testing React components with En
 | 0.42830594628990803 | [moviedb](./m/moviedb) | Library for interacting with themoviedb.com API
+| 0.4282968327050146 | [react-native-actionsheet](./r/react-native-actionsheet) | Cross platform ActionSheet. This component impleme
 | 0.42778793949290767 | [react-bootstrap-date-pick](./r/react-bootstrap-date-picker) | React-Bootstrap based date picker.
 | 0.42752065604660316 | [sasl-plain](./s/sasl-plain) | JavaScript implementation of PLAIN SASL mechanism.
 | 0.427434877661997 | [bootstrap-maxlength](./b/bootstrap-maxlength) | An visual feedback indicator for the MaxLength att
@@ -5160,6 +5170,7 @@
 | 0.40985866229697704 | [musicmetadata](./m/musicmetadata) | Streaming music metadata parser for node and the b
 | 0.40935139229439077 | [rx-lite-virtualtime](./r/rx-lite-virtualtime) | Lightweight library with virtual time functions fo
 | 0.4090581649963611 | [dynogels](./d/dynogels) | DynamoDB data mapper
+| 0.40884712309423016 | [camelcase-keys-deep](./c/camelcase-keys-deep) | Deeply convert the keys of an object to camelCase
 | 0.4086602878611604 | [fluxxor](./f/fluxxor) | Flux architecture tools for React
 | 0.4083827976591474 | [roslib](./r/roslib) | The standard ROS Javascript Library
 | 0.40832651741183834 | [kuromoji](./k/kuromoji) | JavaScript implementation of Japanese morphologica
@@ -5333,6 +5344,7 @@
 | 0.3868633760408989 | [easystarjs](./e/easystarjs) | Asynchronous A* Pathfinding API
 | 0.38685589862213016 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo
 | 0.38631108389844543 | [jspath](./j/jspath) | DSL that enables you to navigate and find data wit
+| 0.3859437111546162 | [random-useragent](./r/random-useragent) | Get a random useragent (with an optional filter)
 | 0.3858254197467405 | [countdown](./c/countdown) | A simple JavaScript API for producing an accurate,
 | 0.38539401232393594 | [yog2-kernel](./y/yog2-kernel) | yog2 kernel
 | 0.385234090427654 | [form-serializer](./f/form-serializer) | serialize form fields into an object or JSON

@@ -22,6 +22,8 @@ package object clientsTranscribeserviceMod {
     - awsDashSdkLib.awsDashSdkLibStrings.`it-IT`
     - awsDashSdkLib.awsDashSdkLibStrings.`ko-KR`
     - awsDashSdkLib.awsDashSdkLibStrings.`es-ES`
+    - awsDashSdkLib.awsDashSdkLibStrings.`en-IN`
+    - awsDashSdkLib.awsDashSdkLibStrings.`hi-IN`
     - java.lang.String
   */
   type LanguageCode = _LanguageCode | java.lang.String

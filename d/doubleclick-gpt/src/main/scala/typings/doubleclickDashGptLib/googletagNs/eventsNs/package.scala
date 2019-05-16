@@ -10,4 +10,8 @@ package object eventsNs {
   type ImpressionViewableEvent = Event
   // tslint:disable-next-line:no-empty-interface
   type SlotOnloadEvent = Event
+  // tslint:disable-next-line:no-empty-interface
+  type SlotRequestedEvent = Event
+  // tslint:disable-next-line:no-empty-interface
+  type SlotResponseReceived = Event
 }

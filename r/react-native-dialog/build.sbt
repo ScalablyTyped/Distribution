@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-dialog"
-version := "5.5-dt-20190228Z-ee8b1c"
+version := "5.5-dt-20190228Z-58e8f0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190514Z-5934c5",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190515Z-2bde84",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

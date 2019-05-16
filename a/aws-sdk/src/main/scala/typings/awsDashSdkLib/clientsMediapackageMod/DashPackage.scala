@@ -40,7 +40,7 @@ trait DashPackage extends js.Object {
     */
   var SegmentDurationSeconds: js.UndefOr[__integer] = js.undefined
   /**
-    * Determines the type of SegmentTimeline included in the Media Presentation Description (MPD).  When set to NUMBER_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Number$ media URLs.  When set to TIME_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Time$ media URLs.
+    * Determines the type of SegmentTemplate included in the Media Presentation Description (MPD).  When set to NUMBER_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Number$ media URLs.  When set to TIME_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Time$ media URLs. When set to NUMBER_WITH_DURATION, only a duration is included in each SegmentTemplate, with $Number$ media URLs.
     */
   var SegmentTemplateFormat: js.UndefOr[SegmentTemplateFormat] = js.undefined
   var StreamSelection: js.UndefOr[StreamSelection] = js.undefined

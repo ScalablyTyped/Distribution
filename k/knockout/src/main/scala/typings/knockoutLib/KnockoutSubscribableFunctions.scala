@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KnockoutSubscribableFunctions[T] extends js.Object {
   /**
-    * Notify subscribers of knockout "change" event. This doesn't acctually change the observable value.
+    * Notify subscribers of knockout "change" event. This doesn't actually change the observable value.
     * @param eventValue A value to be sent with the event.
     * @param event The knockout event.
     */
