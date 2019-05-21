@@ -11,7 +11,7 @@ trait DownloadDelta extends js.Object {
   /** Optional. The change in danger, if any.  */
   var danger: js.UndefOr[StringDelta] = js.undefined
   /** Optional. The change in endTime, if any.  */
-  var endTime: js.UndefOr[DoubleDelta] = js.undefined
+  var endTime: js.UndefOr[StringDelta] = js.undefined
   /** Optional. The change in error, if any.  */
   var error: js.UndefOr[StringDelta] = js.undefined
   /** Optional. The change in exists, if any.  */
@@ -20,6 +20,11 @@ trait DownloadDelta extends js.Object {
   var fileSize: js.UndefOr[DoubleDelta] = js.undefined
   /** Optional. The change in filename, if any.  */
   var filename: js.UndefOr[StringDelta] = js.undefined
+  /**
+    * Optional. The change in finalUrl, if any.
+    * @since Since Chrome 54.
+    */
+  var finalUrl: StringDelta
   /** The id of the DownloadItem that changed. */
   var id: scala.Double
   /** Optional. The change in mime, if any.  */
@@ -27,7 +32,7 @@ trait DownloadDelta extends js.Object {
   /** Optional. The change in paused, if any.  */
   var paused: js.UndefOr[BooleanDelta] = js.undefined
   /** Optional. The change in startTime, if any.  */
-  var startTime: js.UndefOr[DoubleDelta] = js.undefined
+  var startTime: js.UndefOr[StringDelta] = js.undefined
   /** Optional. The change in state, if any.  */
   var state: js.UndefOr[StringDelta] = js.undefined
   /** Optional. The change in totalBytes, if any.  */
@@ -39,22 +44,23 @@ trait DownloadDelta extends js.Object {
 object DownloadDelta {
   @scala.inline
   def apply(
+    finalUrl: StringDelta,
     id: scala.Double,
     canResume: BooleanDelta = null,
     danger: StringDelta = null,
-    endTime: DoubleDelta = null,
+    endTime: StringDelta = null,
     error: StringDelta = null,
     exists: BooleanDelta = null,
     fileSize: DoubleDelta = null,
     filename: StringDelta = null,
     mime: StringDelta = null,
     paused: BooleanDelta = null,
-    startTime: DoubleDelta = null,
+    startTime: StringDelta = null,
     state: StringDelta = null,
     totalBytes: DoubleDelta = null,
     url: StringDelta = null
   ): DownloadDelta = {
-    val __obj = js.Dynamic.literal(id = id)
+    val __obj = js.Dynamic.literal(finalUrl = finalUrl, id = id)
     if (canResume != null) __obj.updateDynamic("canResume")(canResume)
     if (danger != null) __obj.updateDynamic("danger")(danger)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)

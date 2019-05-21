@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
      with astDashTypesLib.genKindsMod.PrintableKind {
   var accessibility: js.UndefOr[
     astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected`
-  ]
+  ] = js.undefined
   var parameter: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.AssignmentPatternKind
   var readonly: scala.Boolean
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSParameterProperty

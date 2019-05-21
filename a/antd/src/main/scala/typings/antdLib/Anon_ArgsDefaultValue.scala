@@ -5,43 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ArgsDefaultValue extends js.Object {
-  @JSName("defaultValue")
-  var defaultValue_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
-  @JSName("onChange")
-  var onChange_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("options")
-  var options_Original: propDashTypesLib.propDashTypesMod.Validator[js.Array[_]] = js.native
-  @JSName("value")
-  var value_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
-  def defaultValue(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onChange(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def options(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def value(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var defaultValue: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+  var onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var options: propDashTypesLib.propDashTypesMod.Validator[js.Array[_]]
+  var value: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+}
+
+object Anon_ArgsDefaultValue {
+  @scala.inline
+  def apply(
+    defaultValue: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    options: propDashTypesLib.propDashTypesMod.Validator[js.Array[_]],
+    value: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+  ): Anon_ArgsDefaultValue = {
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, onChange = onChange, options = options, value = value)
+  
+    __obj.asInstanceOf[Anon_ArgsDefaultValue]
+  }
 }
 

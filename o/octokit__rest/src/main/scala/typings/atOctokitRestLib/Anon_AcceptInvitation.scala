@@ -78,7 +78,7 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
     *
-    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in reverse chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     *
     * **Working with large comparisons**
     *
@@ -256,8 +256,18 @@ trait Anon_AcceptInvitation extends js.Object {
   var delete_Original: Anon_EndpointParamsPromiseReposDeleteParams = js.native
   @JSName("disablePagesSite")
   var disablePagesSite_Original: Anon_EndpointParamsPromiseReposDisablePagesSiteParams = js.native
+  /**
+    * Disables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
+    */
+  @JSName("disableVulnerabilityAlerts")
+  var disableVulnerabilityAlerts_Original: Anon_EndpointParamsPromiseReposDisableVulnerabilityAlertsParams = js.native
   @JSName("enablePagesSite")
   var enablePagesSite_Original: Anon_EndpointParamsPromiseReposEnablePagesSiteParams = js.native
+  /**
+    * Enables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
+    */
+  @JSName("enableVulnerabilityAlerts")
+  var enableVulnerabilityAlerts_Original: Anon_EndpointParamsPromiseReposEnableVulnerabilityAlertsParams = js.native
   /**
     * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use the `Location` header to make a second `GET` request.
     *
@@ -978,7 +988,7 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
     *
-    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in reverse chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     *
     * **Working with large comparisons**
     *
@@ -1236,11 +1246,29 @@ trait Anon_AcceptInvitation extends js.Object {
   def disablePagesSite(params: atOctokitRestLib.atOctokitRestMod.ReposDisablePagesSiteParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisablePagesSiteResponse]
   ] = js.native
+  /**
+    * Disables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
+    */
+  def disableVulnerabilityAlerts(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisableVulnerabilityAlertsResponse]
+  ] = js.native
+  def disableVulnerabilityAlerts(params: atOctokitRestLib.atOctokitRestMod.ReposDisableVulnerabilityAlertsParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisableVulnerabilityAlertsResponse]
+  ] = js.native
   def enablePagesSite(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnablePagesSiteResponse]
   ] = js.native
   def enablePagesSite(params: atOctokitRestLib.atOctokitRestMod.ReposEnablePagesSiteParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnablePagesSiteResponse]
+  ] = js.native
+  /**
+    * Enables vulnerability alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)" in the GitHub Help documentation.
+    */
+  def enableVulnerabilityAlerts(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnableVulnerabilityAlertsResponse]
+  ] = js.native
+  def enableVulnerabilityAlerts(params: atOctokitRestLib.atOctokitRestMod.ReposEnableVulnerabilityAlertsParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnableVulnerabilityAlertsResponse]
   ] = js.native
   /**
     * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.

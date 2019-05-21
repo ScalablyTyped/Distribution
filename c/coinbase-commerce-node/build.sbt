@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "coinbase-commerce-node"
-version := "1.0-dt-20190514Z-b42215"
+version := "1.0-dt-20190516Z-705263"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,8 +10,8 @@ trait EXCEPINFO extends js.Object {
   val bstrHelpFile: java.lang.String
   val bstrSource: java.lang.String
   val dwHelpContext: scala.Double
-  val pfnDeferredFillIn: js.UndefOr[scala.Nothing]
-  val pvReserved: js.UndefOr[scala.Nothing]
+  val pfnDeferredFillIn: js.UndefOr[scala.Nothing] = js.undefined
+  val pvReserved: js.UndefOr[scala.Nothing] = js.undefined
   val scode: js.Any
   val wCode: scala.Double
   val wReserved: scala.Double

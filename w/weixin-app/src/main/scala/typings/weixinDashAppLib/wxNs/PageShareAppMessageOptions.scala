@@ -11,7 +11,7 @@ trait PageShareAppMessageOptions extends js.Object {
   /** 转发事件来源。button：页面内转发按钮；menu：右上角转发菜单 */
   var from: weixinDashAppLib.weixinDashAppLibStrings.button | weixinDashAppLib.weixinDashAppLibStrings.menu
   /** 如果 from 值是 button，则 target 是触发这次转发事件的 button，否则为 undefined */
-  var target: js.UndefOr[js.Object]
+  var target: js.UndefOr[js.Object] = js.undefined
 }
 
 object PageShareAppMessageOptions {

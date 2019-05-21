@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for workerpool 2.3
 // Project: https://github.com/josdejong/workerpool
 // Definitions by: Alorel <https://github.com/Alorel>
+//                 Seulgi Kim <https://github.com/sgkim126>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

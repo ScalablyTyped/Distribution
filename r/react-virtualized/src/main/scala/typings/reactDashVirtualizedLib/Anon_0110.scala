@@ -5,22 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_0110 extends js.Object {
-  var disableHeader: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false` = js.native
-  var estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30` = js.native
-  var headerHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0` = js.native
-  @JSName("headerRowRenderer")
-  var headerRowRenderer_Original: reactDashVirtualizedLib.distEsTableMod.TableHeaderRenderer = js.native
-  var overscanRowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`10` = js.native
-  @JSName("rowRenderer")
-  var rowRenderer_Original: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer = js.native
-  var scrollToAlignment: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.auto = js.native
-  var scrollToIndex: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`-1` = js.native
-  def headerRowRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableHeaderProps): reactLib.reactMod.ReactNode = js.native
-  def noRowsRenderer(): scala.Null = js.native
-  def onRowsRendered(): scala.Null = js.native
-  def onScroll(): scala.Null = js.native
-  def rowRenderer(props: reactDashVirtualizedLib.distEsTableMod.TableRowProps): reactLib.reactMod.ReactNode = js.native
+  var disableHeader: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`
+  var estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30`
+  var headerHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`
+  var headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRenderer
+  var overscanRowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`10`
+  var rowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer
+  var scrollToAlignment: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.auto
+  var scrollToIndex: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`-1`
+  def noRowsRenderer(): scala.Null
+  def onRowsRendered(): scala.Null
+  def onScroll(): scala.Null
+}
+
+object Anon_0110 {
+  @scala.inline
+  def apply(
+    disableHeader: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
+    estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30`,
+    headerHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
+    headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRenderer,
+    noRowsRenderer: () => scala.Null,
+    onRowsRendered: () => scala.Null,
+    onScroll: () => scala.Null,
+    overscanRowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`10`,
+    rowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer,
+    scrollToAlignment: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.auto,
+    scrollToIndex: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`-1`
+  ): Anon_0110 = {
+    val __obj = js.Dynamic.literal(disableHeader = disableHeader, estimatedRowSize = estimatedRowSize, headerHeight = headerHeight, headerRowRenderer = headerRowRenderer, noRowsRenderer = js.Any.fromFunction0(noRowsRenderer), onRowsRendered = js.Any.fromFunction0(onRowsRendered), onScroll = js.Any.fromFunction0(onScroll), overscanRowCount = overscanRowCount, rowRenderer = rowRenderer, scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex)
+  
+    __obj.asInstanceOf[Anon_0110]
+  }
 }
 

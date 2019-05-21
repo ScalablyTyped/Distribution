@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConstructorMetadata extends js.Object {
-  var compilerGeneratedMetadata: js.UndefOr[js.Array[js.Function]]
+  var compilerGeneratedMetadata: js.UndefOr[js.Array[js.Function]] = js.undefined
   var userGeneratedMetadata: MetadataMap
 }
 

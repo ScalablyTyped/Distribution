@@ -23,7 +23,7 @@ trait DescribeUserStackAssociationsRequest extends js.Object {
     */
   var StackName: js.UndefOr[String] = js.undefined
   /**
-    * The email address of the user who is associated with the stack.
+    * The email address of the user who is associated with the stack.  Users' email addresses are case-sensitive. 
     */
   var UserName: js.UndefOr[Username] = js.undefined
 }

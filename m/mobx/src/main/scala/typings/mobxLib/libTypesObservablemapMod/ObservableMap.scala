@@ -25,10 +25,6 @@ class ObservableMap[K, V] ()
   var dehancer: js.Any = js.native
   @JSName("enhancer")
   var enhancer_Original: mobxLib.libTypesModifiersMod.IEnhancer[V] = js.native
-  /* CompleteClass */
-  override var interceptors: js.UndefOr[
-    js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IMapWillChange[K, V]]]
-  ] = js.native
   var name: java.lang.String = js.native
   @JSName(scala.scalajs.js.Symbol.toStringTag)
   var toStringTag_ObservableMap: mobxLib.mobxLibStrings.Map = js.native

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "activex-msforms"
-version := "2.0-dt-20190213Z-eaf98a"
+version := "2.0-dt-20190213Z-7a9b81"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-3f2faf",
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-235348",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

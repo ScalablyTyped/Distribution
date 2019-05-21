@@ -5,15 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait DragPreviewImageProps extends js.Object {
-  @JSName("connect")
-  var connect_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview = js.native
-  var src: java.lang.String = js.native
-  def connect(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def connect(
-    elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement,
-    options: reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions
-  ): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  var connect: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview
+  var src: java.lang.String
+}
+
+object DragPreviewImageProps {
+  @scala.inline
+  def apply(connect: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview, src: java.lang.String): DragPreviewImageProps = {
+    val __obj = js.Dynamic.literal(connect = connect, src = src)
+  
+    __obj.asInstanceOf[DragPreviewImageProps]
+  }
 }
 

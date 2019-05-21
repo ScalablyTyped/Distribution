@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Session extends js.Object {
   /**
-    * The authentication method. The user is authenticated using a streaming URL (API), SAML 2.0 federation (SAML), or the AppStream 2.0 user pool (USERPOOL). The default is to authenticate users using a streaming URL. 
+    * The authentication method. The user is authenticated using a streaming URL (API) or SAML 2.0 federation (SAML).
     */
   var AuthenticationType: js.UndefOr[AuthenticationType] = js.undefined
   /**
-    * Specifies whether a user is connected to the streaming session. 
+    * Specifies whether a user is connected to the streaming session.
     */
   var ConnectionState: js.UndefOr[SessionConnectionState] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait Session extends js.Object {
     */
   var StackName: String
   /**
-    * The time when a streaming instance is dedicated for the user. 
+    * The time when a streaming instance is dedicated for the user.
     */
   var StartTime: js.UndefOr[Timestamp] = js.undefined
   /**

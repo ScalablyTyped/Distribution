@@ -39,7 +39,7 @@ object DirectoryTreeProps {
     onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ antdLib.libTreeTreeMod.AntTreeNode) => scala.Unit = null,
     onDoubleClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ antdLib.libTreeTreeMod.AntTreeNode) => scala.Unit = null,
     onDragEnd: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
-    onDragEnter: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
+    onDragEnter: /* options */ antdLib.libTreeTreeMod.AntTreeNodeDragEnterEvent => scala.Unit = null,
     onDragLeave: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDragOver: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,
     onDragStart: /* options */ antdLib.libTreeTreeMod.AntTreeNodeMouseEvent => scala.Unit = null,

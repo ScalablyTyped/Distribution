@@ -14,19 +14,19 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   var altKey_KeyboardEventBase: scala.Boolean
   // MouseEvent
   @JSName("button")
-  var button_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var button_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("buttons")
-  var buttons_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var buttons_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // TouchEvent
   @JSName("changedTouches")
-  var changedTouches_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var changedTouches_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("charCode")
   var charCode_KeyboardEventBase: scala.Double
   @JSName("clientX")
-  var clientX_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var clientX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientY")
-  var clientY_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var clientY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("ctrlKey")
   var ctrlKey_KeyboardEventBase: scala.Boolean
   /** @deprecated */
@@ -73,9 +73,9 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   @JSName("metaKey")
   var metaKey_KeyboardEventBase: scala.Boolean
   @JSName("offsetX")
-  var offsetX_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var offsetX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("offsetY")
-  var offsetY_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var offsetY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("originalEvent")
   var originalEvent_KeyboardEventBase: js.UndefOr[jqueryLib._KeyboardEvent] = js.undefined
   /**
@@ -114,7 +114,7 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   ```
     */
   @JSName("pageX")
-  var pageX_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var pageX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -151,12 +151,12 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   ```
     */
   @JSName("pageY")
-  var pageY_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var pageY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // PointerEvent
   @JSName("pointerId")
-  var pointerId_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var pointerId_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("pointerType")
-  var pointerType_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var pointerType_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -170,18 +170,18 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
     */
   var relatedTarget: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenX")
-  var screenX_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var screenX_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenY")
-  var screenY_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var screenY_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("shiftKey")
   var shiftKey_KeyboardEventBase: scala.Boolean
   @JSName("targetTouches")
-  var targetTouches_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var targetTouches_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("toElement")
-  var toElement_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var toElement_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("touches")
-  var touches_KeyboardEventBase: js.UndefOr[scala.Nothing]
+  var touches_KeyboardEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.

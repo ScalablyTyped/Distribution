@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TransitionData[TContext, TEvent /* <: EventObject */] extends js.Object {
   var actions: ActionMap[TContext, TEvent]
   var activities: js.UndefOr[ActivityMap] = js.undefined
-  var value: js.UndefOr[StateValue]
+  var value: js.UndefOr[StateValue] = js.undefined
 }
 
 object TransitionData {

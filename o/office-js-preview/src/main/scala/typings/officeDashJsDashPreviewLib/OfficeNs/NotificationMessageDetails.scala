@@ -44,20 +44,20 @@ trait NotificationMessageDetails extends js.Object {
     * Including them will result in an ArgumentException. 
     * If type is ProgressIndicator, the developer should remove or replace the progress indicator when the action is complete.
     */
-  var `type`: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ItemNotificationMessageType
+  var `type`: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ItemNotificationMessageType | java.lang.String
 }
 
 object NotificationMessageDetails {
   @scala.inline
   def apply(
     message: java.lang.String,
-    `type`: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ItemNotificationMessageType,
+    `type`: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ItemNotificationMessageType | java.lang.String,
     icon: java.lang.String = null,
     key: java.lang.String = null,
     persistent: js.UndefOr[scala.Boolean] = js.undefined
   ): NotificationMessageDetails = {
     val __obj = js.Dynamic.literal(message = message)
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (key != null) __obj.updateDynamic("key")(key)
     if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 // saucelabs types
 @js.native
 trait Client extends js.Object {
+  def _getWindowSize(): js.Object = js.native
   def _setWindowSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def acceptAlert(): scala.Unit = js.native
   def activateApp(): scala.Unit = js.native
@@ -128,7 +129,6 @@ trait Client extends js.Object {
   def getWindowHandles(): js.Array[java.lang.String] = js.native
   def getWindowPosition(): js.Object = js.native
   def getWindowRect(): js.Object = js.native
-  def getWindowSize(): js.Object = js.native
   def gsmCall(phoneNumber: java.lang.String, action: java.lang.String): scala.Unit = js.native
   def gsmSignal(signalStrength: java.lang.String): scala.Unit = js.native
   def gsmSignal(signalStrength: java.lang.String, signalStrengh: java.lang.String): scala.Unit = js.native

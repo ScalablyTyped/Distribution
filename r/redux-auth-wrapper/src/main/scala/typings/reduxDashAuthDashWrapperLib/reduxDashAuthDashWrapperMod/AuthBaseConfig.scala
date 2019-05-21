@@ -5,11 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AuthBaseConfig[OwnProps, State] extends AuthConfig {
-  @JSName("authenticatedSelector")
-  var authenticatedSelector_Original: StateSelector[State, OwnProps, scala.Boolean] = js.native
-  var authenticatingSelector: js.UndefOr[StateSelector[State, OwnProps, scala.Boolean]] = js.native
-  def authenticatedSelector(state: State, props: OwnProps): scala.Boolean = js.native
+  var authenticatedSelector: StateSelector[State, OwnProps, scala.Boolean]
+  var authenticatingSelector: js.UndefOr[StateSelector[State, OwnProps, scala.Boolean]] = js.undefined
+}
+
+object AuthBaseConfig {
+  @scala.inline
+  def apply[OwnProps, State](
+    authenticatedSelector: StateSelector[State, OwnProps, scala.Boolean],
+    AuthenticatingComponent: reactLib.reactMod.ReactType[_] = null,
+    authenticatingSelector: StateSelector[State, OwnProps, scala.Boolean] = null,
+    wrapperDisplayName: java.lang.String = null
+  ): AuthBaseConfig[OwnProps, State] = {
+    val __obj = js.Dynamic.literal(authenticatedSelector = authenticatedSelector)
+    if (AuthenticatingComponent != null) __obj.updateDynamic("AuthenticatingComponent")(AuthenticatingComponent.asInstanceOf[js.Any])
+    if (authenticatingSelector != null) __obj.updateDynamic("authenticatingSelector")(authenticatingSelector)
+    if (wrapperDisplayName != null) __obj.updateDynamic("wrapperDisplayName")(wrapperDisplayName)
+    __obj.asInstanceOf[AuthBaseConfig[OwnProps, State]]
+  }
 }
 

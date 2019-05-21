@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GraphQLOperationLoading[T] extends js.Object {
   var cacheKey: GraphQLCacheKey
-  var cacheValue: js.UndefOr[GraphQLCacheValue[T]]
+  var cacheValue: js.UndefOr[GraphQLCacheValue[T]] = js.undefined
   var cacheValuePromise: js.Promise[GraphQLCacheValue[T]]
 }
 

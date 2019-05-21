@@ -22,7 +22,7 @@ trait EmailAddressDetails extends js.Object {
     * This property applies to only an attendee of an appointment, as represented by the optionalAttendees or requiredAttendees property. 
     * This property returns undefined in other scenarios.
     */
-  var appointmentResponse: officeDashJsLib.OfficeNs.MailboxEnumsNs.ResponseType
+  var appointmentResponse: officeDashJsLib.OfficeNs.MailboxEnumsNs.ResponseType | java.lang.String
   /**
     * Gets the display name associated with an email address.
     */
@@ -34,18 +34,18 @@ trait EmailAddressDetails extends js.Object {
   /**
     * Gets the email address type of a recipient.
     */
-  var recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
+  var recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType | java.lang.String
 }
 
 object EmailAddressDetails {
   @scala.inline
   def apply(
-    appointmentResponse: officeDashJsLib.OfficeNs.MailboxEnumsNs.ResponseType,
+    appointmentResponse: officeDashJsLib.OfficeNs.MailboxEnumsNs.ResponseType | java.lang.String,
     displayName: java.lang.String,
     emailAddress: java.lang.String,
-    recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
+    recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType | java.lang.String
   ): EmailAddressDetails = {
-    val __obj = js.Dynamic.literal(appointmentResponse = appointmentResponse, displayName = displayName, emailAddress = emailAddress, recipientType = recipientType)
+    val __obj = js.Dynamic.literal(appointmentResponse = appointmentResponse.asInstanceOf[js.Any], displayName = displayName, emailAddress = emailAddress, recipientType = recipientType.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EmailAddressDetails]
   }

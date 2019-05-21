@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-popper-tooltip"
-version := "2.8.2-ab0ade"
+version := "2.8.2-f7e3f0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-31bede",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
-  "org.scalablytyped" %%% "react-popper" % "1.3.3-74335c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-56dde3",
+  "org.scalablytyped" %%% "react-popper" % "1.3.3-ae30a0",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

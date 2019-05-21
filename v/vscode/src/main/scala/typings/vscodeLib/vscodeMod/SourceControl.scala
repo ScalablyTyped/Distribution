@@ -47,7 +47,7 @@ trait SourceControl extends js.Object {
   /**
   		 * The (optional) Uri of the root of this source control.
   		 */
-  val rootUri: js.UndefOr[Uri]
+  val rootUri: js.UndefOr[Uri] = js.undefined
   /**
   		 * Optional status bar commands.
   		 *

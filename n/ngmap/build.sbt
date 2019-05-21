@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ngmap"
-version := "v1.17.3-dt-20190322Z-70806d"
+version := "v1.17.3-dt-20190322Z-b7429b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-d7819f",
-  "org.scalablytyped" %%% "googlemaps" % "3.30-dt-20190513Z-46e6e4",
+  "org.scalablytyped" %%% "googlemaps" % "3.36-dt-20190520Z-2b654d",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

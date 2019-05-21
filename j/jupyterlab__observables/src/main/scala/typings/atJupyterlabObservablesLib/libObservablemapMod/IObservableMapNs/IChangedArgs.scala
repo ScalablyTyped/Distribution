@@ -16,11 +16,11 @@ trait IChangedArgs[T] extends js.Object {
   /**
     * The new value of the change.
     */
-  var newValue: js.UndefOr[T]
+  var newValue: js.UndefOr[T] = js.undefined
   /**
     * The old value of the change.
     */
-  var oldValue: js.UndefOr[T]
+  var oldValue: js.UndefOr[T] = js.undefined
   /**
     * The type of change undergone by the map.
     */

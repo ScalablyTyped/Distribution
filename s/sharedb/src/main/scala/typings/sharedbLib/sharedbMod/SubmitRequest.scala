@@ -14,7 +14,7 @@ trait SubmitRequest extends js.Object {
   var op: Op
   var ops: js.Array[sharedbLib.libSharedbMod.Op]
   var options: js.Any
-  var projection: js.UndefOr[Projection]
+  var projection: js.UndefOr[Projection] = js.undefined
   var retries: scala.Double
   var saveMilestoneSnapshot: scala.Boolean | scala.Null
   var snapshot: sharedbLib.libSharedbMod.Snapshot | scala.Null

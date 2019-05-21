@@ -14,7 +14,7 @@ trait IQueryListState[T] extends js.Object {
     * this element will be used to hide the "Create Item" option if its value
     * matches the current `query`.
     */
-  var createNewItem: js.UndefOr[T]
+  var createNewItem: js.UndefOr[T] = js.undefined
   /** The original `items` array filtered by `itemListPredicate` or `itemPredicate`. */
   var filteredItems: js.Array[T]
   /** The current query string. */

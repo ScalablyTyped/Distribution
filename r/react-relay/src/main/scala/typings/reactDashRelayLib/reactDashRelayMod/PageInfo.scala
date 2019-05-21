@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PageInfo extends js.Object {
-  var endCursor: js.UndefOr[java.lang.String | scala.Null]
+  var endCursor: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var hasNextPage: scala.Boolean
   var hasPreviousPage: scala.Boolean
-  var startCursor: js.UndefOr[java.lang.String | scala.Null]
+  var startCursor: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
 object PageInfo {

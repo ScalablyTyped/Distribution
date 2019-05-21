@@ -38,10 +38,6 @@ trait OptionsTopBar extends js.Object {
     */
   var borderHeight: js.UndefOr[AndroidDensityNumber] = js.undefined
   /**
-    * Change button colors in the top bar
-    */
-  var buttonColor: js.UndefOr[Color] = js.undefined
-  /**
     * Draw behind the navbar
     */
   var drawBehind: js.UndefOr[scala.Boolean] = js.undefined
@@ -70,6 +66,11 @@ trait OptionsTopBar extends js.Object {
     */
   var largeTitle: js.UndefOr[OptionsTopBarLargeTitle] = js.undefined
   /**
+    * Change button colors in the top bar
+    */
+  var leftButtonColor: js.UndefOr[Color] = js.undefined
+  var leftButtonDisabledColor: js.UndefOr[Color] = js.undefined
+  /**
     * List of buttons to the left
     */
   var leftButtons: js.UndefOr[js.Array[OptionsTopBarButton]] = js.undefined
@@ -79,6 +80,8 @@ trait OptionsTopBar extends js.Object {
     * @default false
     */
   var noBorder: js.UndefOr[scala.Boolean] = js.undefined
+  var rightButtonColor: js.UndefOr[Color] = js.undefined
+  var rightButtonDisabledColor: js.UndefOr[Color] = js.undefined
   /**
     * List of buttons to the right
     */
@@ -130,15 +133,18 @@ object OptionsTopBar {
     barStyle: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.default | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.black = null,
     borderColor: Color = null,
     borderHeight: js.UndefOr[AndroidDensityNumber] = js.undefined,
-    buttonColor: Color = null,
     drawBehind: js.UndefOr[scala.Boolean] = js.undefined,
     elevation: js.UndefOr[AndroidDensityNumber] = js.undefined,
     height: js.UndefOr[AndroidDensityNumber] = js.undefined,
     hideNavBarOnFocusSearchBar: js.UndefOr[scala.Boolean] = js.undefined,
     hideOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
     largeTitle: OptionsTopBarLargeTitle = null,
+    leftButtonColor: Color = null,
+    leftButtonDisabledColor: Color = null,
     leftButtons: js.Array[OptionsTopBarButton] = null,
     noBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    rightButtonColor: Color = null,
+    rightButtonDisabledColor: Color = null,
     rightButtons: js.Array[OptionsTopBarButton] = null,
     searchBar: js.UndefOr[scala.Boolean] = js.undefined,
     searchBarHiddenWhenScrolling: js.UndefOr[scala.Boolean] = js.undefined,
@@ -156,15 +162,18 @@ object OptionsTopBar {
     if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (!js.isUndefined(borderHeight)) __obj.updateDynamic("borderHeight")(borderHeight)
-    if (buttonColor != null) __obj.updateDynamic("buttonColor")(buttonColor)
     if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind)
     if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation)
     if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(hideNavBarOnFocusSearchBar)) __obj.updateDynamic("hideNavBarOnFocusSearchBar")(hideNavBarOnFocusSearchBar)
     if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
     if (largeTitle != null) __obj.updateDynamic("largeTitle")(largeTitle)
+    if (leftButtonColor != null) __obj.updateDynamic("leftButtonColor")(leftButtonColor)
+    if (leftButtonDisabledColor != null) __obj.updateDynamic("leftButtonDisabledColor")(leftButtonDisabledColor)
     if (leftButtons != null) __obj.updateDynamic("leftButtons")(leftButtons)
     if (!js.isUndefined(noBorder)) __obj.updateDynamic("noBorder")(noBorder)
+    if (rightButtonColor != null) __obj.updateDynamic("rightButtonColor")(rightButtonColor)
+    if (rightButtonDisabledColor != null) __obj.updateDynamic("rightButtonDisabledColor")(rightButtonDisabledColor)
     if (rightButtons != null) __obj.updateDynamic("rightButtons")(rightButtons)
     if (!js.isUndefined(searchBar)) __obj.updateDynamic("searchBar")(searchBar)
     if (!js.isUndefined(searchBarHiddenWhenScrolling)) __obj.updateDynamic("searchBarHiddenWhenScrolling")(searchBarHiddenWhenScrolling)

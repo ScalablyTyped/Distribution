@@ -13,7 +13,7 @@ package object distTypesMod {
   type FormikErrors[Values] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Values ]:? Values[K] extends object? object : string}
     */ formikLib.formikLibStrings.FormikErrors with Values
-  type FormikProps[Values] = FormikSharedConfig with FormikState[Values] with FormikActions[Values] with FormikHandlers with FormikComputedProps[Values] with FormikRegistration
+  type FormikProps[Values] = FormikSharedConfig[js.Object] with FormikState[Values] with FormikActions[Values] with FormikHandlers with FormikComputedProps[Values] with FormikRegistration
   type FormikTouched[Values] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Values ]:? Values[K] extends object? object : boolean}
     */ formikLib.formikLibStrings.FormikTouched with Values

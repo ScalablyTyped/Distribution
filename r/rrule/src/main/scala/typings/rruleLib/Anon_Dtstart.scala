@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Dtstart extends js.Object {
-  var dtstart: js.UndefOr[stdLib.Date | scala.Null]
+  var dtstart: js.UndefOr[stdLib.Date | scala.Null] = js.undefined
   var exdatevals: js.Array[stdLib.Date]
   var exrulevals: js.Array[stdLib.Partial[rruleLib.distEsmSrcTypesMod.Options]]
   var rdatevals: js.Array[stdLib.Date]
   var rrulevals: js.Array[stdLib.Partial[rruleLib.distEsmSrcTypesMod.Options]]
-  var tzid: js.UndefOr[java.lang.String | scala.Null]
+  var tzid: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
 object Anon_Dtstart {

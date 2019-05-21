@@ -30,39 +30,43 @@ object ^ extends js.Object {
     pathsFilter: scala.Null,
     opts: graphqlDashComposeLib.libUtilsFilterByDotPathsMod.FilterOpts
   ): js.Object = js.native
-  def getFlatProjectionFromAST(context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
+  def forEachKey[V](
+    arrayOrObject: org.scalablytyped.runtime.StringDictionary[V],
+    callback: js.Function2[/* value */ V, /* key */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  def getFlatProjectionFromAST(info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   def getFlatProjectionFromAST(
-    context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
+    info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldNodes: graphqlLib.languageAstMod.FieldNode
   ): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   def getFlatProjectionFromAST(
-    context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
+    info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldNodes: graphqlLib.languageAstMod.FragmentDefinitionNode
   ): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   def getFlatProjectionFromAST(
-    context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
+    info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldNodes: graphqlLib.languageAstMod.InlineFragmentNode
   ): org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
   def getGraphqlVersion(): scala.Double = js.native
   def getPluralName(name: java.lang.String): java.lang.String = js.native
-  def getProjectionFromAST(context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo): graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType = js.native
+  def getProjectionFromAST(info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo): graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType = js.native
   def getProjectionFromAST(
-    context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
+    info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldNode: graphqlLib.languageAstMod.FieldNode
   ): graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType = js.native
   def getProjectionFromAST(
-    context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
+    info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldNode: graphqlLib.languageAstMod.FragmentDefinitionNode
   ): graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType = js.native
   def getProjectionFromAST(
-    context: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
+    info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
     fieldNode: graphqlLib.languageAstMod.InlineFragmentNode
   ): graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType = js.native
   def inspect(value: js.Any): java.lang.String = js.native
   def isComposeInputType(`type`: js.Any): scala.Boolean = js.native
   def isComposeOutputType(`type`: js.Any): scala.Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
-  def isObject(value: js.Any): /* is boolean */ scala.Boolean = js.native
+  def isObject(value: js.Any): /* is object */ scala.Boolean = js.native
   def isString(value: js.Any): /* is string */ scala.Boolean = js.native
   def omit(obj: js.Object, keys: js.Array[java.lang.String]): js.Object = js.native
   def only(obj: js.Object, keys: js.Array[java.lang.String]): js.Object = js.native

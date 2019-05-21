@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, @material-ui/core.@material-ui/core/Collapse/Collapse.CollapseClassKey, 'timeout'> */
 trait CollapseProps extends js.Object {
-  var addEndListener: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EndHandler]
-  var appear: js.UndefOr[scala.Boolean]
+  var addEndListener: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EndHandler] = js.undefined
+  var appear: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[
@@ -16,23 +16,23 @@ trait CollapseProps extends js.Object {
   ] = js.undefined
   var collapsedHeight: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[CollapseProps]] = js.undefined
-  var enter: js.UndefOr[scala.Boolean]
-  var exit: js.UndefOr[scala.Boolean]
-  var in: js.UndefOr[scala.Boolean]
+  var enter: js.UndefOr[scala.Boolean] = js.undefined
+  var exit: js.UndefOr[scala.Boolean] = js.undefined
+  var in: js.UndefOr[scala.Boolean] = js.undefined
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
-  var mountOnEnter: js.UndefOr[scala.Boolean]
-  var onEnter: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler]
-  var onEntered: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler]
-  var onEntering: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler]
-  var onExit: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler]
-  var onExited: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler]
-  var onExiting: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler]
-  var style: js.UndefOr[reactLib.reactMod.CSSProperties]
+  var mountOnEnter: js.UndefOr[scala.Boolean] = js.undefined
+  var onEnter: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler] = js.undefined
+  var onEntered: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler] = js.undefined
+  var onEntering: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler] = js.undefined
+  var onExit: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
+  var onExited: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
+  var onExiting: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
   var timeout: js.UndefOr[
     (js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter]) | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
   ] = js.undefined
-  var unmountOnExit: js.UndefOr[scala.Boolean]
+  var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object CollapseProps {

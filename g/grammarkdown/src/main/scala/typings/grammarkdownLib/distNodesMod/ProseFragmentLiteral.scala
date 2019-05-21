@@ -12,7 +12,5 @@ class ProseFragmentLiteral[TKind /* <: grammarkdownLib.distTokensMod.ProseFragme
      with TextContent {
   def this(kind: grammarkdownLib.distTokensMod.SyntaxKind) = this()
   def this(kind: grammarkdownLib.distTokensMod.SyntaxKind, text: java.lang.String) = this()
-  /* CompleteClass */
-  override var text: js.UndefOr[java.lang.String] = js.native
 }
 

@@ -5,73 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ChildrenIsRowLoaded extends js.Object {
-  @JSName("children")
-  var children_Original: reactLib.reactMod.Validator[
+  var children: reactLib.reactMod.Validator[
     js.Function1[
       /* props */ reactDashVirtualizedLib.distEsInfiniteLoaderMod.InfiniteLoaderChildProps, 
       reactLib.reactMod.ReactNode
     ]
-  ] = js.native
-  @JSName("isRowLoaded")
-  var isRowLoaded_Original: reactLib.reactMod.Validator[
+  ]
+  var isRowLoaded: reactLib.reactMod.Validator[
     js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Boolean]
-  ] = js.native
-  @JSName("loadMoreRows")
-  var loadMoreRows_Original: reactLib.reactMod.Validator[
+  ]
+  var loadMoreRows: reactLib.reactMod.Validator[
     js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange, 
       js.Promise[_]
     ]
-  ] = js.native
-  @JSName("minimumBatchSize")
-  var minimumBatchSize_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("rowCount")
-  var rowCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("threshold")
-  var threshold_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  def children(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def isRowLoaded(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def loadMoreRows(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def minimumBatchSize(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowCount(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def threshold(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  ]
+  var minimumBatchSize: reactLib.reactMod.Validator[scala.Double]
+  var rowCount: reactLib.reactMod.Validator[scala.Double]
+  var threshold: reactLib.reactMod.Validator[scala.Double]
+}
+
+object Anon_ChildrenIsRowLoaded {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.Validator[
+      js.Function1[
+        /* props */ reactDashVirtualizedLib.distEsInfiniteLoaderMod.InfiniteLoaderChildProps, 
+        reactLib.reactMod.ReactNode
+      ]
+    ],
+    isRowLoaded: reactLib.reactMod.Validator[
+      js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Boolean]
+    ],
+    loadMoreRows: reactLib.reactMod.Validator[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange, 
+        js.Promise[_]
+      ]
+    ],
+    minimumBatchSize: reactLib.reactMod.Validator[scala.Double],
+    rowCount: reactLib.reactMod.Validator[scala.Double],
+    threshold: reactLib.reactMod.Validator[scala.Double]
+  ): Anon_ChildrenIsRowLoaded = {
+    val __obj = js.Dynamic.literal(children = children, isRowLoaded = isRowLoaded, loadMoreRows = loadMoreRows, minimumBatchSize = minimumBatchSize, rowCount = rowCount, threshold = threshold)
+  
+    __obj.asInstanceOf[Anon_ChildrenIsRowLoaded]
+  }
 }
 

@@ -1412,6 +1412,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_increase(chainer: cypressLib.cypressLibStrings.increase, value: js.Object, property: java.lang.String): Chainable[Subject] = js.native
   /**
+    * Assert that the selection matches a given selector, using `.is()`. Note that this overrides the built-in chai assertion. If the object asserted against is not a jQuery object, the original implementation will be called.
+    * @example
+    *    cy.get('#result').should('match', ':empty')
+    * @see http://chaijs.com/plugins/chai-jquery/#matchselector
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_match(chainer: cypressLib.cypressLibStrings.`match`, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Asserts that the target matches the given regular expression `re`.
     * @example
     *    cy.wrap('foobar').should('match', /^foo/)
@@ -1424,8 +1439,6 @@ trait Chainable[Subject] extends js.Object {
     * @alias should
     * @see https://on.cypress.io/and
     */
-  @JSName("and")
-  def and_match(chainer: cypressLib.cypressLibStrings.`match`, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
   def and_match(chainer: cypressLib.cypressLibStrings.`match`, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
@@ -2743,6 +2756,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_notincrease(chainer: cypressLib.cypressLibStrings.notDOTincrease, value: js.Object, property: java.lang.String): Chainable[Subject] = js.native
   /**
+    * Assert that the selection does not match a given selector, using `.is()`. Note that this overrides the built-in chai assertion. If the object asserted against is not a jQuery object, the original implementation will be called.
+    * @example
+    *    cy.get('#result').should('not.match', ':empty')
+    * @see http://chaijs.com/plugins/chai-jquery/#matchselector
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notmatch(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Asserts that the target does not match the given regular expression `re`.
     * @example
     *    cy.wrap('foobar').should('not.match', /baz$/)
@@ -2755,8 +2783,6 @@ trait Chainable[Subject] extends js.Object {
     * @alias should
     * @see https://on.cypress.io/and
     */
-  @JSName("and")
-  def and_notmatch(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("and")
   def and_notmatch(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
@@ -3614,13 +3640,13 @@ trait Chainable[Subject] extends js.Object {
   def clock(
     now: scala.Double,
     functions: js.Array[
-      cypressLib.cypressLibStrings.setTimeout | cypressLib.cypressLibStrings.clearTimeout | cypressLib.cypressLibStrings.setInterval | cypressLib.cypressLibStrings.clearInterval
+      cypressLib.cypressLibStrings.setTimeout | cypressLib.cypressLibStrings.clearTimeout | cypressLib.cypressLibStrings.setInterval | cypressLib.cypressLibStrings.clearInterval | cypressLib.cypressLibStrings.Date
     ]
   ): Chainable[Clock] = js.native
   def clock(
     now: scala.Double,
     functions: js.Array[
-      cypressLib.cypressLibStrings.setTimeout | cypressLib.cypressLibStrings.clearTimeout | cypressLib.cypressLibStrings.setInterval | cypressLib.cypressLibStrings.clearInterval
+      cypressLib.cypressLibStrings.setTimeout | cypressLib.cypressLibStrings.clearTimeout | cypressLib.cypressLibStrings.setInterval | cypressLib.cypressLibStrings.clearInterval | cypressLib.cypressLibStrings.Date
     ],
     options: Loggable
   ): Chainable[Clock] = js.native
@@ -8834,7 +8860,7 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/hash
     */
   def hash(): Chainable[java.lang.String] = js.native
-  def hash(options: stdLib.Partial[Loggable]): Chainable[java.lang.String] = js.native
+  def hash(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[java.lang.String] = js.native
   /**
     * Invoke a function on the previously yielded subject.
     * This isn't possible to strongly type without generic override yet.
@@ -17221,6 +17247,20 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_increase(chainer: cypressLib.cypressLibStrings.increase, value: js.Object, property: java.lang.String): Chainable[Subject] = js.native
   /**
+    * Assert that the selection matches a given selector, using `.is()`. Note that this overrides the built-in chai assertion. If the object asserted against is not a jQuery object, the original implementation will be called.
+    * @example
+    *    cy.get('#result').should('match', ':empty')
+    * @see http://chaijs.com/plugins/chai-jquery/#matchselector
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_match(chainer: cypressLib.cypressLibStrings.`match`, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Asserts that the target matches the given regular expression `re`.
     * @example
     *    cy.wrap('foobar').should('match', /^foo/)
@@ -17232,8 +17272,6 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/should
     */
-  @JSName("should")
-  def should_match(chainer: cypressLib.cypressLibStrings.`match`, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
   def should_match(chainer: cypressLib.cypressLibStrings.`match`, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
@@ -18469,6 +18507,20 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_notincrease(chainer: cypressLib.cypressLibStrings.notDOTincrease, value: js.Object, property: java.lang.String): Chainable[Subject] = js.native
   /**
+    * Assert that the selection does not match a given selector, using `.is()`. Note that this overrides the built-in chai assertion. If the object asserted against is not a jQuery object, the original implementation will be called.
+    * @example
+    *    cy.get('#result').should('not.match', ':empty')
+    * @see http://chaijs.com/plugins/chai-jquery/#matchselector
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_notmatch(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Asserts that the target does not match the given regular expression `re`.
     * @example
     *    cy.wrap('foobar').should('not.match', /baz$/)
@@ -18480,8 +18532,6 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/should
     */
-  @JSName("should")
-  def should_notmatch(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: java.lang.String): Chainable[Subject] = js.native
   @JSName("should")
   def should_notmatch(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
@@ -19372,7 +19422,11 @@ trait Chainable[Subject] extends js.Object {
   def trigger(eventName: java.lang.String): Chainable[Subject] = js.native
   def trigger(eventName: java.lang.String, options: stdLib.Partial[TriggerOptions with ObjectLike]): Chainable[Subject] = js.native
   def trigger(eventName: java.lang.String, position: PositionType): Chainable[Subject] = js.native
-  def trigger(eventName: java.lang.String, position: PositionType, options: stdLib.Partial[TriggerOptions]): Chainable[Subject] = js.native
+  def trigger(
+    eventName: java.lang.String,
+    position: PositionType,
+    options: stdLib.Partial[TriggerOptions with ObjectLike]
+  ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
     * Custom events... If the following were `.triggerCustom`,
@@ -19387,14 +19441,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: java.lang.String,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions]
+    options: stdLib.Partial[TriggerOptions with ObjectLike]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_abort(eventName: cypressLib.cypressLibStrings.abort): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_abort(
     eventName: cypressLib.cypressLibStrings.abort,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.UIEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_abort(eventName: cypressLib.cypressLibStrings.abort, position: PositionType): Chainable[Subject] = js.native
@@ -19402,7 +19456,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_abort(
     eventName: cypressLib.cypressLibStrings.abort,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.UIEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_abort(eventName: cypressLib.cypressLibStrings.abort, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19411,14 +19465,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.abort,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.UIEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationcancel(eventName: cypressLib.cypressLibStrings.animationcancel): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationcancel(
     eventName: cypressLib.cypressLibStrings.animationcancel,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationcancel(eventName: cypressLib.cypressLibStrings.animationcancel, position: PositionType): Chainable[Subject] = js.native
@@ -19426,7 +19480,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_animationcancel(
     eventName: cypressLib.cypressLibStrings.animationcancel,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationcancel(eventName: cypressLib.cypressLibStrings.animationcancel, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19435,14 +19489,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.animationcancel,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationend(eventName: cypressLib.cypressLibStrings.animationend): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationend(
     eventName: cypressLib.cypressLibStrings.animationend,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationend(eventName: cypressLib.cypressLibStrings.animationend, position: PositionType): Chainable[Subject] = js.native
@@ -19450,7 +19504,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_animationend(
     eventName: cypressLib.cypressLibStrings.animationend,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationend(eventName: cypressLib.cypressLibStrings.animationend, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19459,14 +19513,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.animationend,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationiteration(eventName: cypressLib.cypressLibStrings.animationiteration): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationiteration(
     eventName: cypressLib.cypressLibStrings.animationiteration,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationiteration(eventName: cypressLib.cypressLibStrings.animationiteration, position: PositionType): Chainable[Subject] = js.native
@@ -19474,7 +19528,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_animationiteration(
     eventName: cypressLib.cypressLibStrings.animationiteration,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationiteration(eventName: cypressLib.cypressLibStrings.animationiteration, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19483,14 +19537,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.animationiteration,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationstart(eventName: cypressLib.cypressLibStrings.animationstart): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationstart(
     eventName: cypressLib.cypressLibStrings.animationstart,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationstart(eventName: cypressLib.cypressLibStrings.animationstart, position: PositionType): Chainable[Subject] = js.native
@@ -19498,7 +19552,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_animationstart(
     eventName: cypressLib.cypressLibStrings.animationstart,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_animationstart(eventName: cypressLib.cypressLibStrings.animationstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19507,14 +19561,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.animationstart,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.AnimationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.AnimationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_auxclick(eventName: cypressLib.cypressLibStrings.auxclick): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_auxclick(
     eventName: cypressLib.cypressLibStrings.auxclick,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_auxclick(eventName: cypressLib.cypressLibStrings.auxclick, position: PositionType): Chainable[Subject] = js.native
@@ -19522,7 +19576,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_auxclick(
     eventName: cypressLib.cypressLibStrings.auxclick,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_auxclick(eventName: cypressLib.cypressLibStrings.auxclick, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19531,14 +19585,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.auxclick,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_blur(eventName: cypressLib.cypressLibStrings.blur): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_blur(
     eventName: cypressLib.cypressLibStrings.blur,
-    options: stdLib.Partial[TriggerOptions with stdLib.FocusEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.FocusEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_blur(eventName: cypressLib.cypressLibStrings.blur, position: PositionType): Chainable[Subject] = js.native
@@ -19546,7 +19600,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_blur(
     eventName: cypressLib.cypressLibStrings.blur,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.FocusEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.FocusEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_blur(eventName: cypressLib.cypressLibStrings.blur, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19555,14 +19609,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.blur,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.FocusEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.FocusEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cancel(eventName: cypressLib.cypressLibStrings.cancel): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cancel(
     eventName: cypressLib.cypressLibStrings.cancel,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cancel(eventName: cypressLib.cypressLibStrings.cancel, position: PositionType): Chainable[Subject] = js.native
@@ -19570,7 +19624,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_cancel(
     eventName: cypressLib.cypressLibStrings.cancel,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cancel(eventName: cypressLib.cypressLibStrings.cancel, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19579,14 +19633,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.cancel,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplay(eventName: cypressLib.cypressLibStrings.canplay): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplay(
     eventName: cypressLib.cypressLibStrings.canplay,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplay(eventName: cypressLib.cypressLibStrings.canplay, position: PositionType): Chainable[Subject] = js.native
@@ -19594,7 +19648,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_canplay(
     eventName: cypressLib.cypressLibStrings.canplay,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplay(eventName: cypressLib.cypressLibStrings.canplay, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19603,14 +19657,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.canplay,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplaythrough(eventName: cypressLib.cypressLibStrings.canplaythrough): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplaythrough(
     eventName: cypressLib.cypressLibStrings.canplaythrough,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplaythrough(eventName: cypressLib.cypressLibStrings.canplaythrough, position: PositionType): Chainable[Subject] = js.native
@@ -19618,7 +19672,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_canplaythrough(
     eventName: cypressLib.cypressLibStrings.canplaythrough,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_canplaythrough(eventName: cypressLib.cypressLibStrings.canplaythrough, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19627,14 +19681,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.canplaythrough,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_change(eventName: cypressLib.cypressLibStrings.change): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_change(
     eventName: cypressLib.cypressLibStrings.change,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_change(eventName: cypressLib.cypressLibStrings.change, position: PositionType): Chainable[Subject] = js.native
@@ -19642,7 +19696,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_change(
     eventName: cypressLib.cypressLibStrings.change,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_change(eventName: cypressLib.cypressLibStrings.change, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19651,14 +19705,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.change,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_click(eventName: cypressLib.cypressLibStrings.click): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_click(
     eventName: cypressLib.cypressLibStrings.click,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_click(eventName: cypressLib.cypressLibStrings.click, position: PositionType): Chainable[Subject] = js.native
@@ -19666,7 +19720,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_click(
     eventName: cypressLib.cypressLibStrings.click,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_click(eventName: cypressLib.cypressLibStrings.click, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19675,14 +19729,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.click,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_close(eventName: cypressLib.cypressLibStrings.close): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_close(
     eventName: cypressLib.cypressLibStrings.close,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_close(eventName: cypressLib.cypressLibStrings.close, position: PositionType): Chainable[Subject] = js.native
@@ -19690,7 +19744,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_close(
     eventName: cypressLib.cypressLibStrings.close,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_close(eventName: cypressLib.cypressLibStrings.close, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19699,14 +19753,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.close,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_contextmenu(eventName: cypressLib.cypressLibStrings.contextmenu): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_contextmenu(
     eventName: cypressLib.cypressLibStrings.contextmenu,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_contextmenu(eventName: cypressLib.cypressLibStrings.contextmenu, position: PositionType): Chainable[Subject] = js.native
@@ -19714,7 +19768,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_contextmenu(
     eventName: cypressLib.cypressLibStrings.contextmenu,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_contextmenu(eventName: cypressLib.cypressLibStrings.contextmenu, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19723,14 +19777,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.contextmenu,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_copy(eventName: cypressLib.cypressLibStrings.copy): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_copy(
     eventName: cypressLib.cypressLibStrings.copy,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_copy(eventName: cypressLib.cypressLibStrings.copy, position: PositionType): Chainable[Subject] = js.native
@@ -19738,7 +19792,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_copy(
     eventName: cypressLib.cypressLibStrings.copy,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_copy(eventName: cypressLib.cypressLibStrings.copy, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19747,14 +19801,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.copy,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cuechange(eventName: cypressLib.cypressLibStrings.cuechange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cuechange(
     eventName: cypressLib.cypressLibStrings.cuechange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cuechange(eventName: cypressLib.cypressLibStrings.cuechange, position: PositionType): Chainable[Subject] = js.native
@@ -19762,7 +19816,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_cuechange(
     eventName: cypressLib.cypressLibStrings.cuechange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cuechange(eventName: cypressLib.cypressLibStrings.cuechange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19771,14 +19825,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.cuechange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cut(eventName: cypressLib.cypressLibStrings.cut): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cut(
     eventName: cypressLib.cypressLibStrings.cut,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cut(eventName: cypressLib.cypressLibStrings.cut, position: PositionType): Chainable[Subject] = js.native
@@ -19786,7 +19840,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_cut(
     eventName: cypressLib.cypressLibStrings.cut,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_cut(eventName: cypressLib.cypressLibStrings.cut, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19795,14 +19849,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.cut,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dblclick(eventName: cypressLib.cypressLibStrings.dblclick): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dblclick(
     eventName: cypressLib.cypressLibStrings.dblclick,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dblclick(eventName: cypressLib.cypressLibStrings.dblclick, position: PositionType): Chainable[Subject] = js.native
@@ -19810,7 +19864,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dblclick(
     eventName: cypressLib.cypressLibStrings.dblclick,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dblclick(eventName: cypressLib.cypressLibStrings.dblclick, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19819,14 +19873,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dblclick,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drag(eventName: cypressLib.cypressLibStrings.drag): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drag(
     eventName: cypressLib.cypressLibStrings.drag,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drag(eventName: cypressLib.cypressLibStrings.drag, position: PositionType): Chainable[Subject] = js.native
@@ -19834,7 +19888,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_drag(
     eventName: cypressLib.cypressLibStrings.drag,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drag(eventName: cypressLib.cypressLibStrings.drag, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19843,14 +19897,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.drag,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragend(eventName: cypressLib.cypressLibStrings.dragend): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragend(
     eventName: cypressLib.cypressLibStrings.dragend,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragend(eventName: cypressLib.cypressLibStrings.dragend, position: PositionType): Chainable[Subject] = js.native
@@ -19858,7 +19912,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dragend(
     eventName: cypressLib.cypressLibStrings.dragend,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragend(eventName: cypressLib.cypressLibStrings.dragend, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19867,14 +19921,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dragend,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragenter(eventName: cypressLib.cypressLibStrings.dragenter): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragenter(
     eventName: cypressLib.cypressLibStrings.dragenter,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragenter(eventName: cypressLib.cypressLibStrings.dragenter, position: PositionType): Chainable[Subject] = js.native
@@ -19882,7 +19936,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dragenter(
     eventName: cypressLib.cypressLibStrings.dragenter,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragenter(eventName: cypressLib.cypressLibStrings.dragenter, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19891,14 +19945,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dragenter,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragexit(eventName: cypressLib.cypressLibStrings.dragexit): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragexit(
     eventName: cypressLib.cypressLibStrings.dragexit,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragexit(eventName: cypressLib.cypressLibStrings.dragexit, position: PositionType): Chainable[Subject] = js.native
@@ -19906,7 +19960,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dragexit(
     eventName: cypressLib.cypressLibStrings.dragexit,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragexit(eventName: cypressLib.cypressLibStrings.dragexit, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19915,14 +19969,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dragexit,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragleave(eventName: cypressLib.cypressLibStrings.dragleave): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragleave(
     eventName: cypressLib.cypressLibStrings.dragleave,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragleave(eventName: cypressLib.cypressLibStrings.dragleave, position: PositionType): Chainable[Subject] = js.native
@@ -19930,7 +19984,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dragleave(
     eventName: cypressLib.cypressLibStrings.dragleave,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragleave(eventName: cypressLib.cypressLibStrings.dragleave, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19939,14 +19993,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dragleave,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragover(eventName: cypressLib.cypressLibStrings.dragover): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragover(
     eventName: cypressLib.cypressLibStrings.dragover,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragover(eventName: cypressLib.cypressLibStrings.dragover, position: PositionType): Chainable[Subject] = js.native
@@ -19954,7 +20008,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dragover(
     eventName: cypressLib.cypressLibStrings.dragover,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragover(eventName: cypressLib.cypressLibStrings.dragover, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19963,14 +20017,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dragover,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragstart(eventName: cypressLib.cypressLibStrings.dragstart): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragstart(
     eventName: cypressLib.cypressLibStrings.dragstart,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragstart(eventName: cypressLib.cypressLibStrings.dragstart, position: PositionType): Chainable[Subject] = js.native
@@ -19978,7 +20032,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_dragstart(
     eventName: cypressLib.cypressLibStrings.dragstart,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_dragstart(eventName: cypressLib.cypressLibStrings.dragstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19987,14 +20041,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.dragstart,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drop(eventName: cypressLib.cypressLibStrings.drop): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drop(
     eventName: cypressLib.cypressLibStrings.drop,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drop(eventName: cypressLib.cypressLibStrings.drop, position: PositionType): Chainable[Subject] = js.native
@@ -20002,7 +20056,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_drop(
     eventName: cypressLib.cypressLibStrings.drop,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_drop(eventName: cypressLib.cypressLibStrings.drop, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20011,14 +20065,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.drop,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.DragEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.DragEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_durationchange(eventName: cypressLib.cypressLibStrings.durationchange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_durationchange(
     eventName: cypressLib.cypressLibStrings.durationchange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_durationchange(eventName: cypressLib.cypressLibStrings.durationchange, position: PositionType): Chainable[Subject] = js.native
@@ -20026,7 +20080,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_durationchange(
     eventName: cypressLib.cypressLibStrings.durationchange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_durationchange(eventName: cypressLib.cypressLibStrings.durationchange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20035,14 +20089,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.durationchange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_emptied(eventName: cypressLib.cypressLibStrings.emptied): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_emptied(
     eventName: cypressLib.cypressLibStrings.emptied,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_emptied(eventName: cypressLib.cypressLibStrings.emptied, position: PositionType): Chainable[Subject] = js.native
@@ -20050,7 +20104,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_emptied(
     eventName: cypressLib.cypressLibStrings.emptied,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_emptied(eventName: cypressLib.cypressLibStrings.emptied, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20059,14 +20113,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.emptied,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ended(eventName: cypressLib.cypressLibStrings.ended): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ended(
     eventName: cypressLib.cypressLibStrings.ended,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ended(eventName: cypressLib.cypressLibStrings.ended, position: PositionType): Chainable[Subject] = js.native
@@ -20074,7 +20128,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_ended(
     eventName: cypressLib.cypressLibStrings.ended,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ended(eventName: cypressLib.cypressLibStrings.ended, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20083,14 +20137,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.ended,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_error(eventName: cypressLib.cypressLibStrings.error): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_error(
     eventName: cypressLib.cypressLibStrings.error,
-    options: stdLib.Partial[TriggerOptions with stdLib.ErrorEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ErrorEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_error(eventName: cypressLib.cypressLibStrings.error, position: PositionType): Chainable[Subject] = js.native
@@ -20098,7 +20152,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_error(
     eventName: cypressLib.cypressLibStrings.error,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ErrorEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ErrorEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_error(eventName: cypressLib.cypressLibStrings.error, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20107,14 +20161,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.error,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ErrorEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ErrorEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_focus(eventName: cypressLib.cypressLibStrings.focus): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_focus(
     eventName: cypressLib.cypressLibStrings.focus,
-    options: stdLib.Partial[TriggerOptions with stdLib.FocusEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.FocusEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_focus(eventName: cypressLib.cypressLibStrings.focus, position: PositionType): Chainable[Subject] = js.native
@@ -20122,7 +20176,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_focus(
     eventName: cypressLib.cypressLibStrings.focus,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.FocusEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.FocusEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_focus(eventName: cypressLib.cypressLibStrings.focus, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20131,7 +20185,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.focus,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.FocusEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.FocusEvent]
   ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
@@ -20143,7 +20197,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_fullscreenchange(
     eventName: cypressLib.cypressLibStrings.fullscreenchange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_fullscreenchange(eventName: cypressLib.cypressLibStrings.fullscreenchange, position: PositionType): Chainable[Subject] = js.native
@@ -20151,7 +20205,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_fullscreenchange(
     eventName: cypressLib.cypressLibStrings.fullscreenchange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
@@ -20165,14 +20219,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.fullscreenchange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_fullscreenerror(eventName: cypressLib.cypressLibStrings.fullscreenerror): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_fullscreenerror(
     eventName: cypressLib.cypressLibStrings.fullscreenerror,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_fullscreenerror(eventName: cypressLib.cypressLibStrings.fullscreenerror, position: PositionType): Chainable[Subject] = js.native
@@ -20180,7 +20234,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_fullscreenerror(
     eventName: cypressLib.cypressLibStrings.fullscreenerror,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_fullscreenerror(eventName: cypressLib.cypressLibStrings.fullscreenerror, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20189,14 +20243,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.fullscreenerror,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_gotpointercapture(eventName: cypressLib.cypressLibStrings.gotpointercapture): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_gotpointercapture(
     eventName: cypressLib.cypressLibStrings.gotpointercapture,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_gotpointercapture(eventName: cypressLib.cypressLibStrings.gotpointercapture, position: PositionType): Chainable[Subject] = js.native
@@ -20204,7 +20258,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_gotpointercapture(
     eventName: cypressLib.cypressLibStrings.gotpointercapture,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_gotpointercapture(eventName: cypressLib.cypressLibStrings.gotpointercapture, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20213,14 +20267,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.gotpointercapture,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_input(eventName: cypressLib.cypressLibStrings.input): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_input(
     eventName: cypressLib.cypressLibStrings.input,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_input(eventName: cypressLib.cypressLibStrings.input, position: PositionType): Chainable[Subject] = js.native
@@ -20228,7 +20282,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_input(
     eventName: cypressLib.cypressLibStrings.input,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_input(eventName: cypressLib.cypressLibStrings.input, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20237,14 +20291,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.input,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_invalid(eventName: cypressLib.cypressLibStrings.invalid): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_invalid(
     eventName: cypressLib.cypressLibStrings.invalid,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_invalid(eventName: cypressLib.cypressLibStrings.invalid, position: PositionType): Chainable[Subject] = js.native
@@ -20252,7 +20306,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_invalid(
     eventName: cypressLib.cypressLibStrings.invalid,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_invalid(eventName: cypressLib.cypressLibStrings.invalid, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20261,14 +20315,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.invalid,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keydown(eventName: cypressLib.cypressLibStrings.keydown): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keydown(
     eventName: cypressLib.cypressLibStrings.keydown,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keydown(eventName: cypressLib.cypressLibStrings.keydown, position: PositionType): Chainable[Subject] = js.native
@@ -20276,7 +20330,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_keydown(
     eventName: cypressLib.cypressLibStrings.keydown,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keydown(eventName: cypressLib.cypressLibStrings.keydown, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20285,14 +20339,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.keydown,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keypress(eventName: cypressLib.cypressLibStrings.keypress): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keypress(
     eventName: cypressLib.cypressLibStrings.keypress,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keypress(eventName: cypressLib.cypressLibStrings.keypress, position: PositionType): Chainable[Subject] = js.native
@@ -20300,7 +20354,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_keypress(
     eventName: cypressLib.cypressLibStrings.keypress,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keypress(eventName: cypressLib.cypressLibStrings.keypress, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20309,14 +20363,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.keypress,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keyup(eventName: cypressLib.cypressLibStrings.keyup): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keyup(
     eventName: cypressLib.cypressLibStrings.keyup,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keyup(eventName: cypressLib.cypressLibStrings.keyup, position: PositionType): Chainable[Subject] = js.native
@@ -20324,7 +20378,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_keyup(
     eventName: cypressLib.cypressLibStrings.keyup,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_keyup(eventName: cypressLib.cypressLibStrings.keyup, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20333,14 +20387,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.keyup,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.KeyboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.KeyboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_load(eventName: cypressLib.cypressLibStrings.load): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_load(
     eventName: cypressLib.cypressLibStrings.load,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_load(eventName: cypressLib.cypressLibStrings.load, position: PositionType): Chainable[Subject] = js.native
@@ -20348,7 +20402,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_load(
     eventName: cypressLib.cypressLibStrings.load,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_load(eventName: cypressLib.cypressLibStrings.load, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20357,14 +20411,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.load,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadeddata(eventName: cypressLib.cypressLibStrings.loadeddata): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadeddata(
     eventName: cypressLib.cypressLibStrings.loadeddata,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadeddata(eventName: cypressLib.cypressLibStrings.loadeddata, position: PositionType): Chainable[Subject] = js.native
@@ -20372,7 +20426,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_loadeddata(
     eventName: cypressLib.cypressLibStrings.loadeddata,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadeddata(eventName: cypressLib.cypressLibStrings.loadeddata, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20381,14 +20435,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.loadeddata,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadedmetadata(eventName: cypressLib.cypressLibStrings.loadedmetadata): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadedmetadata(
     eventName: cypressLib.cypressLibStrings.loadedmetadata,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadedmetadata(eventName: cypressLib.cypressLibStrings.loadedmetadata, position: PositionType): Chainable[Subject] = js.native
@@ -20396,7 +20450,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_loadedmetadata(
     eventName: cypressLib.cypressLibStrings.loadedmetadata,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadedmetadata(eventName: cypressLib.cypressLibStrings.loadedmetadata, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20405,14 +20459,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.loadedmetadata,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(eventName: cypressLib.cypressLibStrings.loadend): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(
     eventName: cypressLib.cypressLibStrings.loadend,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(eventName: cypressLib.cypressLibStrings.loadend, position: PositionType): Chainable[Subject] = js.native
@@ -20420,7 +20474,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_loadend(
     eventName: cypressLib.cypressLibStrings.loadend,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadend(eventName: cypressLib.cypressLibStrings.loadend, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20429,14 +20483,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.loadend,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadstart(eventName: cypressLib.cypressLibStrings.loadstart): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadstart(
     eventName: cypressLib.cypressLibStrings.loadstart,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadstart(eventName: cypressLib.cypressLibStrings.loadstart, position: PositionType): Chainable[Subject] = js.native
@@ -20444,7 +20498,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_loadstart(
     eventName: cypressLib.cypressLibStrings.loadstart,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_loadstart(eventName: cypressLib.cypressLibStrings.loadstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20453,14 +20507,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.loadstart,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_lostpointercapture(eventName: cypressLib.cypressLibStrings.lostpointercapture): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_lostpointercapture(
     eventName: cypressLib.cypressLibStrings.lostpointercapture,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_lostpointercapture(eventName: cypressLib.cypressLibStrings.lostpointercapture, position: PositionType): Chainable[Subject] = js.native
@@ -20468,7 +20522,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_lostpointercapture(
     eventName: cypressLib.cypressLibStrings.lostpointercapture,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_lostpointercapture(eventName: cypressLib.cypressLibStrings.lostpointercapture, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20477,14 +20531,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.lostpointercapture,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousedown(eventName: cypressLib.cypressLibStrings.mousedown): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousedown(
     eventName: cypressLib.cypressLibStrings.mousedown,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousedown(eventName: cypressLib.cypressLibStrings.mousedown, position: PositionType): Chainable[Subject] = js.native
@@ -20492,7 +20546,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mousedown(
     eventName: cypressLib.cypressLibStrings.mousedown,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousedown(eventName: cypressLib.cypressLibStrings.mousedown, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20501,14 +20555,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mousedown,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseenter(eventName: cypressLib.cypressLibStrings.mouseenter): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseenter(
     eventName: cypressLib.cypressLibStrings.mouseenter,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseenter(eventName: cypressLib.cypressLibStrings.mouseenter, position: PositionType): Chainable[Subject] = js.native
@@ -20516,7 +20570,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mouseenter(
     eventName: cypressLib.cypressLibStrings.mouseenter,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseenter(eventName: cypressLib.cypressLibStrings.mouseenter, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20525,14 +20579,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mouseenter,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseleave(eventName: cypressLib.cypressLibStrings.mouseleave): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseleave(
     eventName: cypressLib.cypressLibStrings.mouseleave,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseleave(eventName: cypressLib.cypressLibStrings.mouseleave, position: PositionType): Chainable[Subject] = js.native
@@ -20540,7 +20594,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mouseleave(
     eventName: cypressLib.cypressLibStrings.mouseleave,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseleave(eventName: cypressLib.cypressLibStrings.mouseleave, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20549,14 +20603,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mouseleave,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousemove(eventName: cypressLib.cypressLibStrings.mousemove): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousemove(
     eventName: cypressLib.cypressLibStrings.mousemove,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousemove(eventName: cypressLib.cypressLibStrings.mousemove, position: PositionType): Chainable[Subject] = js.native
@@ -20564,7 +20618,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mousemove(
     eventName: cypressLib.cypressLibStrings.mousemove,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mousemove(eventName: cypressLib.cypressLibStrings.mousemove, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20573,14 +20627,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mousemove,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseout(eventName: cypressLib.cypressLibStrings.mouseout): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseout(
     eventName: cypressLib.cypressLibStrings.mouseout,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseout(eventName: cypressLib.cypressLibStrings.mouseout, position: PositionType): Chainable[Subject] = js.native
@@ -20588,7 +20642,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mouseout(
     eventName: cypressLib.cypressLibStrings.mouseout,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseout(eventName: cypressLib.cypressLibStrings.mouseout, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20597,14 +20651,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mouseout,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseover(eventName: cypressLib.cypressLibStrings.mouseover): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseover(
     eventName: cypressLib.cypressLibStrings.mouseover,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseover(eventName: cypressLib.cypressLibStrings.mouseover, position: PositionType): Chainable[Subject] = js.native
@@ -20612,7 +20666,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mouseover(
     eventName: cypressLib.cypressLibStrings.mouseover,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseover(eventName: cypressLib.cypressLibStrings.mouseover, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20621,14 +20675,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mouseover,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseup(eventName: cypressLib.cypressLibStrings.mouseup): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseup(
     eventName: cypressLib.cypressLibStrings.mouseup,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseup(eventName: cypressLib.cypressLibStrings.mouseup, position: PositionType): Chainable[Subject] = js.native
@@ -20636,7 +20690,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_mouseup(
     eventName: cypressLib.cypressLibStrings.mouseup,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_mouseup(eventName: cypressLib.cypressLibStrings.mouseup, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20645,14 +20699,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.mouseup,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.MouseEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_paste(eventName: cypressLib.cypressLibStrings.paste): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_paste(
     eventName: cypressLib.cypressLibStrings.paste,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_paste(eventName: cypressLib.cypressLibStrings.paste, position: PositionType): Chainable[Subject] = js.native
@@ -20660,7 +20714,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_paste(
     eventName: cypressLib.cypressLibStrings.paste,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_paste(eventName: cypressLib.cypressLibStrings.paste, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20669,14 +20723,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.paste,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ClipboardEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ClipboardEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pause(eventName: cypressLib.cypressLibStrings.pause): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pause(
     eventName: cypressLib.cypressLibStrings.pause,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pause(eventName: cypressLib.cypressLibStrings.pause, position: PositionType): Chainable[Subject] = js.native
@@ -20684,7 +20738,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pause(
     eventName: cypressLib.cypressLibStrings.pause,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pause(eventName: cypressLib.cypressLibStrings.pause, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20693,14 +20747,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pause,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_play(eventName: cypressLib.cypressLibStrings.play): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_play(
     eventName: cypressLib.cypressLibStrings.play,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_play(eventName: cypressLib.cypressLibStrings.play, position: PositionType): Chainable[Subject] = js.native
@@ -20708,7 +20762,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_play(
     eventName: cypressLib.cypressLibStrings.play,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_play(eventName: cypressLib.cypressLibStrings.play, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20717,14 +20771,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.play,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_playing(eventName: cypressLib.cypressLibStrings.playing): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_playing(
     eventName: cypressLib.cypressLibStrings.playing,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_playing(eventName: cypressLib.cypressLibStrings.playing, position: PositionType): Chainable[Subject] = js.native
@@ -20732,7 +20786,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_playing(
     eventName: cypressLib.cypressLibStrings.playing,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_playing(eventName: cypressLib.cypressLibStrings.playing, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20741,14 +20795,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.playing,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointercancel(eventName: cypressLib.cypressLibStrings.pointercancel): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointercancel(
     eventName: cypressLib.cypressLibStrings.pointercancel,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointercancel(eventName: cypressLib.cypressLibStrings.pointercancel, position: PositionType): Chainable[Subject] = js.native
@@ -20756,7 +20810,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointercancel(
     eventName: cypressLib.cypressLibStrings.pointercancel,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointercancel(eventName: cypressLib.cypressLibStrings.pointercancel, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20765,14 +20819,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointercancel,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerdown(eventName: cypressLib.cypressLibStrings.pointerdown): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerdown(
     eventName: cypressLib.cypressLibStrings.pointerdown,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerdown(eventName: cypressLib.cypressLibStrings.pointerdown, position: PositionType): Chainable[Subject] = js.native
@@ -20780,7 +20834,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerdown(
     eventName: cypressLib.cypressLibStrings.pointerdown,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerdown(eventName: cypressLib.cypressLibStrings.pointerdown, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20789,14 +20843,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerdown,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerenter(eventName: cypressLib.cypressLibStrings.pointerenter): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerenter(
     eventName: cypressLib.cypressLibStrings.pointerenter,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerenter(eventName: cypressLib.cypressLibStrings.pointerenter, position: PositionType): Chainable[Subject] = js.native
@@ -20804,7 +20858,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerenter(
     eventName: cypressLib.cypressLibStrings.pointerenter,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerenter(eventName: cypressLib.cypressLibStrings.pointerenter, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20813,14 +20867,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerenter,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerleave(eventName: cypressLib.cypressLibStrings.pointerleave): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerleave(
     eventName: cypressLib.cypressLibStrings.pointerleave,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerleave(eventName: cypressLib.cypressLibStrings.pointerleave, position: PositionType): Chainable[Subject] = js.native
@@ -20828,7 +20882,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerleave(
     eventName: cypressLib.cypressLibStrings.pointerleave,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerleave(eventName: cypressLib.cypressLibStrings.pointerleave, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20837,14 +20891,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerleave,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockchange(eventName: cypressLib.cypressLibStrings.pointerlockchange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockchange(
     eventName: cypressLib.cypressLibStrings.pointerlockchange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockchange(eventName: cypressLib.cypressLibStrings.pointerlockchange, position: PositionType): Chainable[Subject] = js.native
@@ -20852,7 +20906,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerlockchange(
     eventName: cypressLib.cypressLibStrings.pointerlockchange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockchange(eventName: cypressLib.cypressLibStrings.pointerlockchange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20861,14 +20915,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerlockchange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockerror(eventName: cypressLib.cypressLibStrings.pointerlockerror): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockerror(
     eventName: cypressLib.cypressLibStrings.pointerlockerror,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockerror(eventName: cypressLib.cypressLibStrings.pointerlockerror, position: PositionType): Chainable[Subject] = js.native
@@ -20876,7 +20930,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerlockerror(
     eventName: cypressLib.cypressLibStrings.pointerlockerror,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerlockerror(eventName: cypressLib.cypressLibStrings.pointerlockerror, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20885,14 +20939,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerlockerror,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointermove(eventName: cypressLib.cypressLibStrings.pointermove): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointermove(
     eventName: cypressLib.cypressLibStrings.pointermove,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointermove(eventName: cypressLib.cypressLibStrings.pointermove, position: PositionType): Chainable[Subject] = js.native
@@ -20900,7 +20954,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointermove(
     eventName: cypressLib.cypressLibStrings.pointermove,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointermove(eventName: cypressLib.cypressLibStrings.pointermove, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20909,14 +20963,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointermove,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerout(eventName: cypressLib.cypressLibStrings.pointerout): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerout(
     eventName: cypressLib.cypressLibStrings.pointerout,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerout(eventName: cypressLib.cypressLibStrings.pointerout, position: PositionType): Chainable[Subject] = js.native
@@ -20924,7 +20978,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerout(
     eventName: cypressLib.cypressLibStrings.pointerout,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerout(eventName: cypressLib.cypressLibStrings.pointerout, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20933,14 +20987,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerout,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerover(eventName: cypressLib.cypressLibStrings.pointerover): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerover(
     eventName: cypressLib.cypressLibStrings.pointerover,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerover(eventName: cypressLib.cypressLibStrings.pointerover, position: PositionType): Chainable[Subject] = js.native
@@ -20948,7 +21002,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerover(
     eventName: cypressLib.cypressLibStrings.pointerover,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerover(eventName: cypressLib.cypressLibStrings.pointerover, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20957,14 +21011,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerover,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerup(eventName: cypressLib.cypressLibStrings.pointerup): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerup(
     eventName: cypressLib.cypressLibStrings.pointerup,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerup(eventName: cypressLib.cypressLibStrings.pointerup, position: PositionType): Chainable[Subject] = js.native
@@ -20972,7 +21026,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_pointerup(
     eventName: cypressLib.cypressLibStrings.pointerup,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointerup(eventName: cypressLib.cypressLibStrings.pointerup, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -20981,14 +21035,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.pointerup,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.PointerEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.PointerEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(eventName: cypressLib.cypressLibStrings.progress): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(
     eventName: cypressLib.cypressLibStrings.progress,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(eventName: cypressLib.cypressLibStrings.progress, position: PositionType): Chainable[Subject] = js.native
@@ -20996,7 +21050,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_progress(
     eventName: cypressLib.cypressLibStrings.progress,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_progress(eventName: cypressLib.cypressLibStrings.progress, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21005,14 +21059,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.progress,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ratechange(eventName: cypressLib.cypressLibStrings.ratechange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ratechange(
     eventName: cypressLib.cypressLibStrings.ratechange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ratechange(eventName: cypressLib.cypressLibStrings.ratechange, position: PositionType): Chainable[Subject] = js.native
@@ -21020,7 +21074,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_ratechange(
     eventName: cypressLib.cypressLibStrings.ratechange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_ratechange(eventName: cypressLib.cypressLibStrings.ratechange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21029,14 +21083,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.ratechange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(eventName: cypressLib.cypressLibStrings.readystatechange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(
     eventName: cypressLib.cypressLibStrings.readystatechange,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(eventName: cypressLib.cypressLibStrings.readystatechange, position: PositionType): Chainable[Subject] = js.native
@@ -21044,7 +21098,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_readystatechange(
     eventName: cypressLib.cypressLibStrings.readystatechange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_readystatechange(eventName: cypressLib.cypressLibStrings.readystatechange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21053,14 +21107,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.readystatechange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.ProgressEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.ProgressEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_reset(eventName: cypressLib.cypressLibStrings.reset): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_reset(
     eventName: cypressLib.cypressLibStrings.reset,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_reset(eventName: cypressLib.cypressLibStrings.reset, position: PositionType): Chainable[Subject] = js.native
@@ -21068,7 +21122,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_reset(
     eventName: cypressLib.cypressLibStrings.reset,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_reset(eventName: cypressLib.cypressLibStrings.reset, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21077,14 +21131,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.reset,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_resize(eventName: cypressLib.cypressLibStrings.resize): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_resize(
     eventName: cypressLib.cypressLibStrings.resize,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.UIEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_resize(eventName: cypressLib.cypressLibStrings.resize, position: PositionType): Chainable[Subject] = js.native
@@ -21092,7 +21146,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_resize(
     eventName: cypressLib.cypressLibStrings.resize,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.UIEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_resize(eventName: cypressLib.cypressLibStrings.resize, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21101,14 +21155,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.resize,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.UIEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_scroll(eventName: cypressLib.cypressLibStrings.scroll): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_scroll(
     eventName: cypressLib.cypressLibStrings.scroll,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_scroll(eventName: cypressLib.cypressLibStrings.scroll, position: PositionType): Chainable[Subject] = js.native
@@ -21116,7 +21170,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_scroll(
     eventName: cypressLib.cypressLibStrings.scroll,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_scroll(eventName: cypressLib.cypressLibStrings.scroll, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21125,14 +21179,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.scroll,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_securitypolicyviolation(eventName: cypressLib.cypressLibStrings.securitypolicyviolation): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_securitypolicyviolation(
     eventName: cypressLib.cypressLibStrings.securitypolicyviolation,
-    options: stdLib.Partial[TriggerOptions with stdLib.SecurityPolicyViolationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.SecurityPolicyViolationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_securitypolicyviolation(eventName: cypressLib.cypressLibStrings.securitypolicyviolation, position: PositionType): Chainable[Subject] = js.native
@@ -21140,7 +21194,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_securitypolicyviolation(
     eventName: cypressLib.cypressLibStrings.securitypolicyviolation,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.SecurityPolicyViolationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.SecurityPolicyViolationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_securitypolicyviolation(eventName: cypressLib.cypressLibStrings.securitypolicyviolation, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21149,14 +21203,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.securitypolicyviolation,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.SecurityPolicyViolationEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.SecurityPolicyViolationEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeked(eventName: cypressLib.cypressLibStrings.seeked): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeked(
     eventName: cypressLib.cypressLibStrings.seeked,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeked(eventName: cypressLib.cypressLibStrings.seeked, position: PositionType): Chainable[Subject] = js.native
@@ -21164,7 +21218,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_seeked(
     eventName: cypressLib.cypressLibStrings.seeked,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeked(eventName: cypressLib.cypressLibStrings.seeked, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21173,14 +21227,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.seeked,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeking(eventName: cypressLib.cypressLibStrings.seeking): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeking(
     eventName: cypressLib.cypressLibStrings.seeking,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeking(eventName: cypressLib.cypressLibStrings.seeking, position: PositionType): Chainable[Subject] = js.native
@@ -21188,7 +21242,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_seeking(
     eventName: cypressLib.cypressLibStrings.seeking,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_seeking(eventName: cypressLib.cypressLibStrings.seeking, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21197,14 +21251,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.seeking,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_select(eventName: cypressLib.cypressLibStrings.select): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_select(
     eventName: cypressLib.cypressLibStrings.select,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_select(eventName: cypressLib.cypressLibStrings.select, position: PositionType): Chainable[Subject] = js.native
@@ -21212,7 +21266,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_select(
     eventName: cypressLib.cypressLibStrings.select,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_select(eventName: cypressLib.cypressLibStrings.select, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21221,14 +21275,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.select,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectionchange(eventName: cypressLib.cypressLibStrings.selectionchange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectionchange(
     eventName: cypressLib.cypressLibStrings.selectionchange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectionchange(eventName: cypressLib.cypressLibStrings.selectionchange, position: PositionType): Chainable[Subject] = js.native
@@ -21236,7 +21290,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_selectionchange(
     eventName: cypressLib.cypressLibStrings.selectionchange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectionchange(eventName: cypressLib.cypressLibStrings.selectionchange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21245,14 +21299,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.selectionchange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectstart(eventName: cypressLib.cypressLibStrings.selectstart): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectstart(
     eventName: cypressLib.cypressLibStrings.selectstart,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectstart(eventName: cypressLib.cypressLibStrings.selectstart, position: PositionType): Chainable[Subject] = js.native
@@ -21260,7 +21314,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_selectstart(
     eventName: cypressLib.cypressLibStrings.selectstart,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_selectstart(eventName: cypressLib.cypressLibStrings.selectstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21269,14 +21323,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.selectstart,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_stalled(eventName: cypressLib.cypressLibStrings.stalled): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_stalled(
     eventName: cypressLib.cypressLibStrings.stalled,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_stalled(eventName: cypressLib.cypressLibStrings.stalled, position: PositionType): Chainable[Subject] = js.native
@@ -21284,7 +21338,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_stalled(
     eventName: cypressLib.cypressLibStrings.stalled,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_stalled(eventName: cypressLib.cypressLibStrings.stalled, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21293,14 +21347,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.stalled,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_submit(eventName: cypressLib.cypressLibStrings.submit): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_submit(
     eventName: cypressLib.cypressLibStrings.submit,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_submit(eventName: cypressLib.cypressLibStrings.submit, position: PositionType): Chainable[Subject] = js.native
@@ -21308,7 +21362,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_submit(
     eventName: cypressLib.cypressLibStrings.submit,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_submit(eventName: cypressLib.cypressLibStrings.submit, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21317,14 +21371,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.submit,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_suspend(eventName: cypressLib.cypressLibStrings.suspend): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_suspend(
     eventName: cypressLib.cypressLibStrings.suspend,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_suspend(eventName: cypressLib.cypressLibStrings.suspend, position: PositionType): Chainable[Subject] = js.native
@@ -21332,7 +21386,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_suspend(
     eventName: cypressLib.cypressLibStrings.suspend,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_suspend(eventName: cypressLib.cypressLibStrings.suspend, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21341,14 +21395,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.suspend,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_timeupdate(eventName: cypressLib.cypressLibStrings.timeupdate): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_timeupdate(
     eventName: cypressLib.cypressLibStrings.timeupdate,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_timeupdate(eventName: cypressLib.cypressLibStrings.timeupdate, position: PositionType): Chainable[Subject] = js.native
@@ -21356,7 +21410,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_timeupdate(
     eventName: cypressLib.cypressLibStrings.timeupdate,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_timeupdate(eventName: cypressLib.cypressLibStrings.timeupdate, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21365,14 +21419,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.timeupdate,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_toggle(eventName: cypressLib.cypressLibStrings.toggle): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_toggle(
     eventName: cypressLib.cypressLibStrings.toggle,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_toggle(eventName: cypressLib.cypressLibStrings.toggle, position: PositionType): Chainable[Subject] = js.native
@@ -21380,7 +21434,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_toggle(
     eventName: cypressLib.cypressLibStrings.toggle,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_toggle(eventName: cypressLib.cypressLibStrings.toggle, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21389,14 +21443,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.toggle,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchcancel(eventName: cypressLib.cypressLibStrings.touchcancel): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchcancel(
     eventName: cypressLib.cypressLibStrings.touchcancel,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchcancel(eventName: cypressLib.cypressLibStrings.touchcancel, position: PositionType): Chainable[Subject] = js.native
@@ -21404,7 +21458,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_touchcancel(
     eventName: cypressLib.cypressLibStrings.touchcancel,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchcancel(eventName: cypressLib.cypressLibStrings.touchcancel, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21413,14 +21467,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.touchcancel,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchend(eventName: cypressLib.cypressLibStrings.touchend): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchend(
     eventName: cypressLib.cypressLibStrings.touchend,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchend(eventName: cypressLib.cypressLibStrings.touchend, position: PositionType): Chainable[Subject] = js.native
@@ -21428,7 +21482,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_touchend(
     eventName: cypressLib.cypressLibStrings.touchend,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchend(eventName: cypressLib.cypressLibStrings.touchend, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21437,14 +21491,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.touchend,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchmove(eventName: cypressLib.cypressLibStrings.touchmove): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchmove(
     eventName: cypressLib.cypressLibStrings.touchmove,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchmove(eventName: cypressLib.cypressLibStrings.touchmove, position: PositionType): Chainable[Subject] = js.native
@@ -21452,7 +21506,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_touchmove(
     eventName: cypressLib.cypressLibStrings.touchmove,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchmove(eventName: cypressLib.cypressLibStrings.touchmove, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21461,14 +21515,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.touchmove,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchstart(eventName: cypressLib.cypressLibStrings.touchstart): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchstart(
     eventName: cypressLib.cypressLibStrings.touchstart,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchstart(eventName: cypressLib.cypressLibStrings.touchstart, position: PositionType): Chainable[Subject] = js.native
@@ -21476,7 +21530,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_touchstart(
     eventName: cypressLib.cypressLibStrings.touchstart,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_touchstart(eventName: cypressLib.cypressLibStrings.touchstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21485,14 +21539,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.touchstart,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TouchEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TouchEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitioncancel(eventName: cypressLib.cypressLibStrings.transitioncancel): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitioncancel(
     eventName: cypressLib.cypressLibStrings.transitioncancel,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitioncancel(eventName: cypressLib.cypressLibStrings.transitioncancel, position: PositionType): Chainable[Subject] = js.native
@@ -21500,7 +21554,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_transitioncancel(
     eventName: cypressLib.cypressLibStrings.transitioncancel,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitioncancel(eventName: cypressLib.cypressLibStrings.transitioncancel, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21509,14 +21563,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.transitioncancel,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionend(eventName: cypressLib.cypressLibStrings.transitionend): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionend(
     eventName: cypressLib.cypressLibStrings.transitionend,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionend(eventName: cypressLib.cypressLibStrings.transitionend, position: PositionType): Chainable[Subject] = js.native
@@ -21524,7 +21578,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_transitionend(
     eventName: cypressLib.cypressLibStrings.transitionend,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionend(eventName: cypressLib.cypressLibStrings.transitionend, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21533,14 +21587,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.transitionend,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionrun(eventName: cypressLib.cypressLibStrings.transitionrun): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionrun(
     eventName: cypressLib.cypressLibStrings.transitionrun,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionrun(eventName: cypressLib.cypressLibStrings.transitionrun, position: PositionType): Chainable[Subject] = js.native
@@ -21548,7 +21602,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_transitionrun(
     eventName: cypressLib.cypressLibStrings.transitionrun,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionrun(eventName: cypressLib.cypressLibStrings.transitionrun, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21557,14 +21611,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.transitionrun,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionstart(eventName: cypressLib.cypressLibStrings.transitionstart): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionstart(
     eventName: cypressLib.cypressLibStrings.transitionstart,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionstart(eventName: cypressLib.cypressLibStrings.transitionstart, position: PositionType): Chainable[Subject] = js.native
@@ -21572,7 +21626,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_transitionstart(
     eventName: cypressLib.cypressLibStrings.transitionstart,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_transitionstart(eventName: cypressLib.cypressLibStrings.transitionstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21581,14 +21635,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.transitionstart,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.TransitionEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.TransitionEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_visibilitychange(eventName: cypressLib.cypressLibStrings.visibilitychange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_visibilitychange(
     eventName: cypressLib.cypressLibStrings.visibilitychange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_visibilitychange(eventName: cypressLib.cypressLibStrings.visibilitychange, position: PositionType): Chainable[Subject] = js.native
@@ -21596,7 +21650,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_visibilitychange(
     eventName: cypressLib.cypressLibStrings.visibilitychange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_visibilitychange(eventName: cypressLib.cypressLibStrings.visibilitychange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21605,14 +21659,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.visibilitychange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_volumechange(eventName: cypressLib.cypressLibStrings.volumechange): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_volumechange(
     eventName: cypressLib.cypressLibStrings.volumechange,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_volumechange(eventName: cypressLib.cypressLibStrings.volumechange, position: PositionType): Chainable[Subject] = js.native
@@ -21620,7 +21674,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_volumechange(
     eventName: cypressLib.cypressLibStrings.volumechange,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_volumechange(eventName: cypressLib.cypressLibStrings.volumechange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21629,14 +21683,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.volumechange,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_waiting(eventName: cypressLib.cypressLibStrings.waiting): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_waiting(
     eventName: cypressLib.cypressLibStrings.waiting,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_waiting(eventName: cypressLib.cypressLibStrings.waiting, position: PositionType): Chainable[Subject] = js.native
@@ -21644,7 +21698,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_waiting(
     eventName: cypressLib.cypressLibStrings.waiting,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_waiting(eventName: cypressLib.cypressLibStrings.waiting, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21653,14 +21707,14 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.waiting,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_wheel(eventName: cypressLib.cypressLibStrings.wheel): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_wheel(
     eventName: cypressLib.cypressLibStrings.wheel,
-    options: stdLib.Partial[TriggerOptions with stdLib.WheelEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.WheelEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_wheel(eventName: cypressLib.cypressLibStrings.wheel, position: PositionType): Chainable[Subject] = js.native
@@ -21668,7 +21722,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_wheel(
     eventName: cypressLib.cypressLibStrings.wheel,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.WheelEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.WheelEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_wheel(eventName: cypressLib.cypressLibStrings.wheel, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -21677,7 +21731,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.wheel,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.WheelEvent]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.WheelEvent]
   ): Chainable[Subject] = js.native
   /**
     * Type into a DOM element.

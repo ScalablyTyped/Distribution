@@ -103,7 +103,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[CopyImageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a Directory Config object in AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.
+    * Creates a Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
   def createDirectoryConfig(): awsDashSdkLib.libRequestMod.Request[CreateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDirectoryConfig(
@@ -114,7 +114,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a Directory Config object in AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.
+    * Creates a Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
   def createDirectoryConfig(params: CreateDirectoryConfigRequest): awsDashSdkLib.libRequestMod.Request[CreateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createDirectoryConfig(
@@ -240,6 +240,29 @@ trait AppStream
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateStreamingURLResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a usage report subscription. Usage reports are generated daily.
+    */
+  def createUsageReportSubscription(): awsDashSdkLib.libRequestMod.Request[CreateUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createUsageReportSubscription(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateUsageReportSubscriptionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a usage report subscription. Usage reports are generated daily.
+    */
+  def createUsageReportSubscription(params: CreateUsageReportSubscriptionRequest): awsDashSdkLib.libRequestMod.Request[CreateUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createUsageReportSubscription(
+    params: CreateUsageReportSubscriptionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateUsageReportSubscriptionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new user in the user pool.
     */
@@ -402,6 +425,29 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteStackResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Disables usage report generation.
+    */
+  def deleteUsageReportSubscription(): awsDashSdkLib.libRequestMod.Request[DeleteUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteUsageReportSubscription(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteUsageReportSubscriptionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Disables usage report generation.
+    */
+  def deleteUsageReportSubscription(params: DeleteUsageReportSubscriptionRequest): awsDashSdkLib.libRequestMod.Request[DeleteUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteUsageReportSubscription(
+    params: DeleteUsageReportSubscriptionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteUsageReportSubscriptionResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteUsageReportSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Deletes a user from the user pool.
     */
   def deleteUser(): awsDashSdkLib.libRequestMod.Request[DeleteUserResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -425,7 +471,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteUserResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a list that describes one or more specified Directory Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise, all Directory Config objects in the account are described. These objects include the information required to join streaming instances to an Active Directory domain.  Although the response syntax in this topic includes the account password, this password is not returned in the actual response.
+    * Retrieves a list that describes one or more specified Directory Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise, all Directory Config objects in the account are described. These objects include the configuration information required to join fleets and image builders to Microsoft Active Directory domains.  Although the response syntax in this topic includes the account password, this password is not returned in the actual response.
     */
   def describeDirectoryConfigs(): awsDashSdkLib.libRequestMod.Request[DescribeDirectoryConfigsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDirectoryConfigs(
@@ -436,7 +482,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeDirectoryConfigsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a list that describes one or more specified Directory Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise, all Directory Config objects in the account are described. These objects include the information required to join streaming instances to an Active Directory domain.  Although the response syntax in this topic includes the account password, this password is not returned in the actual response.
+    * Retrieves a list that describes one or more specified Directory Config objects for AppStream 2.0, if the names for these objects are provided. Otherwise, all Directory Config objects in the account are described. These objects include the configuration information required to join fleets and image builders to Microsoft Active Directory domains.  Although the response syntax in this topic includes the account password, this password is not returned in the actual response.
     */
   def describeDirectoryConfigs(params: DescribeDirectoryConfigsRequest): awsDashSdkLib.libRequestMod.Request[DescribeDirectoryConfigsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeDirectoryConfigs(
@@ -540,7 +586,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a list that describes the active streaming sessions for a specified stack and fleet. If a value for UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+    * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
     */
   def describeSessions(): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeSessions(
@@ -551,7 +597,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a list that describes the active streaming sessions for a specified stack and fleet. If a value for UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+    * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
     */
   def describeSessions(params: DescribeSessionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeSessions(
@@ -585,6 +631,29 @@ trait AppStream
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeStacksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list that describes one or more usage report subscriptions.
+    */
+  def describeUsageReportSubscriptions(): awsDashSdkLib.libRequestMod.Request[DescribeUsageReportSubscriptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeUsageReportSubscriptions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeUsageReportSubscriptionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeUsageReportSubscriptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list that describes one or more usage report subscriptions.
+    */
+  def describeUsageReportSubscriptions(params: DescribeUsageReportSubscriptionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeUsageReportSubscriptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeUsageReportSubscriptions(
+    params: DescribeUsageReportSubscriptionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeUsageReportSubscriptionsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeUsageReportSubscriptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list that describes the UserStackAssociation objects. You must specify either or both of the following:   The stack name   The user name (email address of the user associated with the stack) and the authentication type for the user  
     */
@@ -923,7 +992,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the specified Directory Config object in AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.
+    * Updates the specified Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
   def updateDirectoryConfig(): awsDashSdkLib.libRequestMod.Request[UpdateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDirectoryConfig(
@@ -934,7 +1003,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the specified Directory Config object in AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.
+    * Updates the specified Directory Config object in AppStream 2.0. This object includes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
     */
   def updateDirectoryConfig(params: UpdateDirectoryConfigRequest): awsDashSdkLib.libRequestMod.Request[UpdateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateDirectoryConfig(
@@ -946,7 +1015,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDirectoryConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName and ComputeCapacity attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
+    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
     */
   def updateFleet(): awsDashSdkLib.libRequestMod.Request[UpdateFleetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFleet(
@@ -957,7 +1026,7 @@ trait AppStream
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateFleetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName and ComputeCapacity attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
+    * Updates the specified fleet. If the fleet is in the STOPPED state, you can update any attribute except the fleet name. If the fleet is in the RUNNING state, you can update the DisplayName, ComputeCapacity, ImageARN, ImageName, and DisconnectTimeoutInSeconds attributes. If the fleet is in the STARTING or STOPPING state, you can't update it.
     */
   def updateFleet(params: UpdateFleetRequest): awsDashSdkLib.libRequestMod.Request[UpdateFleetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateFleet(

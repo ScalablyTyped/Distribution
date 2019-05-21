@@ -181,6 +181,7 @@ trait State extends js.Object {
   def highlightStyle(style: java.lang.String): State = js.native
   def iconGeometry(geometry: java.lang.String): State = js.native
   def identify(callback: GetterCallback[ImageInfo]): State = js.native
+  def identify(format: java.lang.String, callback: GetterCallback[java.lang.String]): State = js.native
   def identify(opts: GetterOptions, callback: GetterCallback[ImageInfo]): State = js.native
   def implode(): State = js.native
   def implode(factor: scala.Double): State = js.native

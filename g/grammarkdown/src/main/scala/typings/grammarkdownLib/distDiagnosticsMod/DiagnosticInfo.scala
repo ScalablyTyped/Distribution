@@ -10,11 +10,11 @@ trait DiagnosticInfo extends js.Object {
   var diagnosticIndex: scala.Double
   var formattedMessage: js.UndefOr[java.lang.String] = js.undefined
   var message: java.lang.String
-  var messageArguments: js.UndefOr[js.Array[_]]
-  var node: js.UndefOr[grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind]]
+  var messageArguments: js.UndefOr[js.Array[_]] = js.undefined
+  var node: js.UndefOr[grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind]] = js.undefined
   var pos: scala.Double
-  var range: js.UndefOr[grammarkdownLib.distCoreMod.Range]
-  var sourceFile: js.UndefOr[grammarkdownLib.distNodesMod.SourceFile]
+  var range: js.UndefOr[grammarkdownLib.distCoreMod.Range] = js.undefined
+  var sourceFile: js.UndefOr[grammarkdownLib.distNodesMod.SourceFile] = js.undefined
   var warning: scala.Boolean
 }
 

@@ -42,7 +42,7 @@ trait TransactionRequest extends js.Object {
   var taxAmount: js.UndefOr[java.lang.String] = js.undefined
   var taxExempt: js.UndefOr[scala.Boolean] = js.undefined
   var threeDSecurePassThru: js.UndefOr[braintreeLib.Anon_Cavv] = js.undefined
-  var transactionSource: js.UndefOr[java.lang.String] = js.undefined
+  var transactionSource: js.UndefOr[TransactionRequestSource] = js.undefined
 }
 
 object TransactionRequest {
@@ -83,7 +83,7 @@ object TransactionRequest {
     taxAmount: java.lang.String = null,
     taxExempt: js.UndefOr[scala.Boolean] = js.undefined,
     threeDSecurePassThru: braintreeLib.Anon_Cavv = null,
-    transactionSource: java.lang.String = null
+    transactionSource: TransactionRequestSource = null
   ): TransactionRequest = {
     val __obj = js.Dynamic.literal(amount = amount)
     if (billing != null) __obj.updateDynamic("billing")(billing)

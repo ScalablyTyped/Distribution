@@ -9,7 +9,7 @@ trait SendAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TCo
   var delay: js.UndefOr[scala.Double | java.lang.String | (Expr[TContext, TEvent, scala.Double])] = js.undefined
   var event: TEvent | (SendExpr[TContext, TEvent])
   var id: java.lang.String | scala.Double
-  var to: js.UndefOr[java.lang.String]
+  var to: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object SendAction {

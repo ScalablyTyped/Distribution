@@ -9,12 +9,12 @@ trait IDevice extends js.Object {
   /**
     * Determined dynamically
     */
-  var model: js.UndefOr[java.lang.String]
+  var model: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Possible type:
     * console, mobile, tablet, smarttv, wearable, embedded
     */
-  var `type`: js.UndefOr[java.lang.String]
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Possible vendor:
     * Acer, Alcatel, Amazon, Apple, Archos, Asus, BenQ, BlackBerry, Dell, GeeksPhone,
@@ -22,7 +22,7 @@ trait IDevice extends js.Object {
     * Nintendo, Nokia, Nvidia, Ouya, Palm, Panasonic, Polytron, RIM, Samsung, Sharp,
     * Siemens, Sony-Ericsson, Sprint, Xbox, ZTE
     */
-  var vendor: js.UndefOr[java.lang.String]
+  var vendor: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IDevice {

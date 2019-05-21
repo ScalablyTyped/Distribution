@@ -778,6 +778,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsTransferMod._apiVersion
   
   @js.native
+  sealed trait `2018-11-07`
+    extends awsDashSdkLib.clientsMediapackagevodMod._apiVersion
+  
+  @js.native
   sealed trait `2018-11-09`
     extends awsDashSdkLib.clientsDatasyncMod._apiVersion
   
@@ -905,6 +909,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAlexaforbusinessMod._BusinessReportFailureCode
        with awsDashSdkLib.clientsInspectorMod._FailedItemErrorCode
        with awsDashSdkLib.clientsApigatewayMod._GatewayResponseType
+       with awsDashSdkLib.clientsAppstreamMod._UsageReportExecutionErrorCode
   
   @js.native
   sealed trait ACCOUNT
@@ -1193,6 +1198,7 @@ object awsDashSdkLibStrings {
   sealed trait AES_128
     extends awsDashSdkLib.clientsKmsMod._DataKeySpec
        with awsDashSdkLib.clientsMediapackageMod._EncryptionMethod
+       with awsDashSdkLib.clientsMediapackagevodMod._EncryptionMethod
   
   @js.native
   sealed trait AES_256
@@ -9546,6 +9552,7 @@ object awsDashSdkLibStrings {
   sealed trait HBBTV_1_5
     extends awsDashSdkLib.clientsMediaconvertMod._DashIsoHbbtvCompliance
        with awsDashSdkLib.clientsMediapackageMod._Profile
+       with awsDashSdkLib.clientsMediapackagevodMod._Profile
   
   @js.native
   sealed trait HD
@@ -10514,6 +10521,7 @@ object awsDashSdkLibStrings {
   sealed trait INTERNAL_SERVICE_ERROR
     extends awsDashSdkLib.clientsAppstreamMod._FleetErrorCode
        with awsDashSdkLib.clientsAppstreamMod._StackErrorCode
+       with awsDashSdkLib.clientsAppstreamMod._UsageReportExecutionErrorCode
   
   @js.native
   sealed trait INTERNET
@@ -13542,6 +13550,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._Ac3DrcProfile
        with awsDashSdkLib.clientsMediaconvertMod._Ac3DynamicRangeCompressionProfile
        with awsDashSdkLib.clientsMediapackageMod._AdMarkers
+       with awsDashSdkLib.clientsMediapackagevodMod._AdMarkers
        with awsDashSdkLib.clientsMediaconvertMod._AfdSignaling
        with awsDashSdkLib.clientsMedialiveMod._AfdSignaling
        with awsDashSdkLib.clientsCodebuildMod._ArtifactNamespace
@@ -13608,6 +13617,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDatasyncMod._PosixPermissions
        with awsDashSdkLib.clientsDatasyncMod._PreserveDevices
        with awsDashSdkLib.clientsMediapackageMod._Profile
+       with awsDashSdkLib.clientsMediapackagevodMod._Profile
        with awsDashSdkLib.clientsMediaconvertMod._ProresTelecine
        with awsDashSdkLib.clientsRekognitionMod._QualityFilter
        with awsDashSdkLib.clientsMachinelearningMod._RealtimeEndpointStatus
@@ -14444,6 +14454,7 @@ object awsDashSdkLibStrings {
   sealed trait ORIGINAL
     extends awsDashSdkLib.clientsWorkdocsMod._DocumentSourceType
        with awsDashSdkLib.clientsMediapackageMod._StreamOrder
+       with awsDashSdkLib.clientsMediapackagevodMod._StreamOrder
   
   @js.native
   sealed trait ORIGINAL_VALUE
@@ -14718,6 +14729,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PASSTHROUGH
     extends awsDashSdkLib.clientsMediapackageMod._AdMarkers
+       with awsDashSdkLib.clientsMediapackagevodMod._AdMarkers
        with awsDashSdkLib.clientsMediaconvertMod._AudioCodec
        with awsDashSdkLib.clientsMedialiveMod._M2tsEbifControl
        with awsDashSdkLib.clientsMedialiveMod._M2tsKlv
@@ -16477,6 +16489,7 @@ object awsDashSdkLibStrings {
   sealed trait RESOURCE_NOT_FOUND
     extends awsDashSdkLib.clientsApigatewayMod._GatewayResponseType
        with awsDashSdkLib.clientsServicecatalogMod._ServiceActionAssociationErrorCode
+       with awsDashSdkLib.clientsAppstreamMod._UsageReportExecutionErrorCode
   
   @js.native
   sealed trait RESOURCE_TYPE
@@ -17340,6 +17353,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SAMPLE_AES
     extends awsDashSdkLib.clientsMediapackageMod._EncryptionMethod
+       with awsDashSdkLib.clientsMediapackagevodMod._EncryptionMethod
        with awsDashSdkLib.clientsMediaconvertMod._HlsEncryptionType
        with awsDashSdkLib.clientsMedialiveMod._HlsEncryptionType
   
@@ -17435,6 +17449,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SCTE35_ENHANCED
     extends awsDashSdkLib.clientsMediapackageMod._AdMarkers
+       with awsDashSdkLib.clientsMediapackagevodMod._AdMarkers
   
   @js.native
   sealed trait SCTE_35
@@ -21240,10 +21255,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VIDEO_BITRATE_ASCENDING
     extends awsDashSdkLib.clientsMediapackageMod._StreamOrder
+       with awsDashSdkLib.clientsMediapackagevodMod._StreamOrder
   
   @js.native
   sealed trait VIDEO_BITRATE_DESCENDING
     extends awsDashSdkLib.clientsMediapackageMod._StreamOrder
+       with awsDashSdkLib.clientsMediapackagevodMod._StreamOrder
   
   @js.native
   sealed trait VIDEO_INTERVAL
@@ -22750,6 +22767,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait changeSetCreateComplete extends js.Object
+  
+  @js.native
+  sealed trait channelCreated extends js.Object
+  
+  @js.native
+  sealed trait channelDeleted extends js.Object
+  
+  @js.native
+  sealed trait channelRunning extends js.Object
+  
+  @js.native
+  sealed trait channelStopped extends js.Object
   
   @js.native
   sealed trait chinBottom
@@ -24952,6 +24981,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsNeptuneMod._apiVersion
        with awsDashSdkLib.clientsClouddirectoryMod._apiVersion
        with awsDashSdkLib.clientsTransferMod._apiVersion
+       with awsDashSdkLib.clientsMediapackagevodMod._apiVersion
        with awsDashSdkLib.clientsMarketplacemeteringMod._apiVersion
        with awsDashSdkLib.clientsApplicationautoscalingMod._apiVersion
        with awsDashSdkLib.clientsDmsMod._apiVersion
@@ -28447,6 +28477,8 @@ object awsDashSdkLibStrings {
   def `2018-10-30`: `2018-10-30` = "2018-10-30".asInstanceOf[`2018-10-30`]
   @scala.inline
   def `2018-11-05`: `2018-11-05` = "2018-11-05".asInstanceOf[`2018-11-05`]
+  @scala.inline
+  def `2018-11-07`: `2018-11-07` = "2018-11-07".asInstanceOf[`2018-11-07`]
   @scala.inline
   def `2018-11-09`: `2018-11-09` = "2018-11-09".asInstanceOf[`2018-11-09`]
   @scala.inline
@@ -37539,6 +37571,14 @@ object awsDashSdkLibStrings {
   def cg1DOT4xlarge: cg1DOT4xlarge = "cg1.4xlarge".asInstanceOf[cg1DOT4xlarge]
   @scala.inline
   def changeSetCreateComplete: changeSetCreateComplete = "changeSetCreateComplete".asInstanceOf[changeSetCreateComplete]
+  @scala.inline
+  def channelCreated: channelCreated = "channelCreated".asInstanceOf[channelCreated]
+  @scala.inline
+  def channelDeleted: channelDeleted = "channelDeleted".asInstanceOf[channelDeleted]
+  @scala.inline
+  def channelRunning: channelRunning = "channelRunning".asInstanceOf[channelRunning]
+  @scala.inline
+  def channelStopped: channelStopped = "channelStopped".asInstanceOf[channelStopped]
   @scala.inline
   def chinBottom: chinBottom = "chinBottom".asInstanceOf[chinBottom]
   @scala.inline

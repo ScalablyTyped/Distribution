@@ -12,7 +12,7 @@ trait Anon_BoxSizing extends js.Object {
   var height: java.lang.String
   var position: java.lang.String
   var visibility: java.lang.String
-  var width: js.UndefOr[java.lang.String]
+  var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_BoxSizing {

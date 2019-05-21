@@ -30,14 +30,17 @@ trait LocationIdentifier extends js.Object {
   /**
     * The location's type.
     */
-  var `type`: officeDashJsLib.OfficeNs.MailboxEnumsNs.LocationType
+  var `type`: officeDashJsLib.OfficeNs.MailboxEnumsNs.LocationType | java.lang.String
 }
 
 object LocationIdentifier {
   @scala.inline
-  def apply(id: java.lang.String, `type`: officeDashJsLib.OfficeNs.MailboxEnumsNs.LocationType): LocationIdentifier = {
+  def apply(
+    id: java.lang.String,
+    `type`: officeDashJsLib.OfficeNs.MailboxEnumsNs.LocationType | java.lang.String
+  ): LocationIdentifier = {
     val __obj = js.Dynamic.literal(id = id)
-    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationIdentifier]
   }
 }

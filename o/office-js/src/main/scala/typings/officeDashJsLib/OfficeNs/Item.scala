@@ -44,7 +44,7 @@ trait Item extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var itemType: officeDashJsLib.OfficeNs.MailboxEnumsNs.ItemType = js.native
+  var itemType: officeDashJsLib.OfficeNs.MailboxEnumsNs.ItemType | java.lang.String = js.native
   /**
     * Gets the notification messages for an item.
     *
@@ -80,6 +80,19 @@ trait Item extends js.Object {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var seriesId: java.lang.String = js.native
+  def addHandlerAsync(eventType: java.lang.String, handler: js.Any): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: java.lang.String,
+    handler: js.Any,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def addHandlerAsync(eventType: java.lang.String, handler: js.Any, options: AsyncContextOptions): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: java.lang.String,
+    handler: js.Any,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Adds an event handler for a supported event.
     * 
@@ -257,6 +270,17 @@ trait Item extends js.Object {
   def loadCustomPropertiesAsync(
     callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], scala.Unit],
     userContext: js.Any
+  ): scala.Unit = js.native
+  def removeHandlerAsync(eventType: java.lang.String): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: java.lang.String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def removeHandlerAsync(eventType: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: java.lang.String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Removes the event handlers for a supported event type.

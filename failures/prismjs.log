@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => prismjs, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/prismjs/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/prismjs),TsIdentLibrarySimple(prismjs)),TsIdentModule(None,List(prismjs))) [id => prismjs, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(prismjs)) [id => prismjs, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(prismjs) [id => prismjs, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibrarySimple(prismjs) [id => prismjs, phase => typescript] 
 [info ] ExpandTypeParams.scala:74 Expanding 9 members for TsIdentSimple(add) [id => prismjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(prismjs) / TsDeclNamespace(hooks))] 
 [info ] ExpandTypeParams.scala:74 Expanding 9 members for TsIdentSimple(run) [id => prismjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(prismjs) / TsDeclNamespace(hooks))] 
 [info ] UnionTypesFromKeyOf.scala:11 Expanded keyof TsQIdent(List(TsIdentLibrarySimple(prismjs), TsIdentModule(None,List(prismjs)), TsIdentNamespace(hooks), TsIdentSimple(HookEnvironmentMap))) [id => prismjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(prismjs) / TsDeclNamespace(hooks) / TsDeclTypeAlias(HookTypes) / TsTypeKeyOf())] 

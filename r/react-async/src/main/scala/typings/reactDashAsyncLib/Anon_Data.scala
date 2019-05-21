@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Data extends js.Object {
-  var data: js.UndefOr[scala.Nothing]
-  var error: js.UndefOr[scala.Nothing]
-  var finishedAt: js.UndefOr[scala.Nothing]
+  var data: js.UndefOr[scala.Nothing] = js.undefined
+  var error: js.UndefOr[scala.Nothing] = js.undefined
+  var finishedAt: js.UndefOr[scala.Nothing] = js.undefined
   var initialValue: js.UndefOr[scala.Nothing] = js.undefined
   var isFulfilled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var isInitial: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
@@ -17,9 +17,9 @@ trait Anon_Data extends js.Object {
   var isRejected: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var isResolved: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
-  var startedAt: js.UndefOr[scala.Nothing]
+  var startedAt: js.UndefOr[scala.Nothing] = js.undefined
   var status: reactDashAsyncLib.reactDashAsyncLibStrings.initial
-  var value: js.UndefOr[scala.Nothing]
+  var value: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object Anon_Data {

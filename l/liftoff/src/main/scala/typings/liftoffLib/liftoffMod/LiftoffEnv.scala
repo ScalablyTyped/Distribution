@@ -9,13 +9,13 @@ trait LiftoffEnv extends js.Object {
   /**
     * the base directory of your configuration file (if found)
     */
-  var configBase: js.UndefOr[java.lang.String]
+  var configBase: js.UndefOr[java.lang.String] = js.undefined
   /**
     * an object of filepaths for each found config file (filepath values will be null if not found)
     */
   var configFiles: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]]
-  ]
+  ] = js.undefined
   /**
     * the config files searched for
     */
@@ -23,7 +23,7 @@ trait LiftoffEnv extends js.Object {
   /**
     * the full path to your configuration file (if found)
     */
-  var configPath: js.UndefOr[java.lang.String]
+  var configPath: js.UndefOr[java.lang.String] = js.undefined
   /**
     * the current working directory
     */
@@ -31,11 +31,11 @@ trait LiftoffEnv extends js.Object {
   /**
     * the contents of the local module's package.json (if found)
     */
-  var modulePackage: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]
+  var modulePackage: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.undefined
   /**
     * the full path to the local module your project relies on (if found)
     */
-  var modulePath: js.UndefOr[java.lang.String]
+  var modulePath: js.UndefOr[java.lang.String] = js.undefined
   /**
     * an array of modules that liftoff tried to pre-load
     */

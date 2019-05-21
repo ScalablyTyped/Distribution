@@ -13,7 +13,7 @@ trait ComposeUnionTypeConfig[TSource, TContext] extends js.Object {
     (graphqlLib.typeDefinitionMod.GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null
   ] = js.undefined
   var types: js.UndefOr[
-    graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[js.Array[graphqlDashComposeLib.esmTypeMapperMod.ComposeObjectType]]
+    graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[js.Array[graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeObjectType]]
   ] = js.undefined
 }
 
@@ -24,7 +24,7 @@ object ComposeUnionTypeConfig {
     description: java.lang.String = null,
     extensions: graphqlDashComposeLib.esmUtilsDefinitionsMod.Extensions = null,
     resolveType: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]] = null,
-    types: graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[js.Array[graphqlDashComposeLib.esmTypeMapperMod.ComposeObjectType]] = null
+    types: graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[js.Array[graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeObjectType]] = null
   ): ComposeUnionTypeConfig[TSource, TContext] = {
     val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)

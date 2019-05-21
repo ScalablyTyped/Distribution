@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait About extends js.Object {
   var additionalRoleInfo: js.UndefOr[js.Array[AboutAdditionalRoleInfo]] = js.undefined
+  var canCreateDrives: js.UndefOr[scala.Boolean] = js.undefined
   var canCreateTeamDrives: js.UndefOr[scala.Boolean] = js.undefined
   var domainSharingPolicy: js.UndefOr[java.lang.String] = js.undefined
+  var driveThemes: js.UndefOr[js.Array[AboutDriveThemes]] = js.undefined
   var etag: js.UndefOr[java.lang.String] = js.undefined
   var exportFormats: js.UndefOr[js.Array[AboutExportFormats]] = js.undefined
   var features: js.UndefOr[js.Array[AboutFeatures]] = js.undefined
@@ -38,8 +40,10 @@ object About {
   @scala.inline
   def apply(
     additionalRoleInfo: js.Array[AboutAdditionalRoleInfo] = null,
+    canCreateDrives: js.UndefOr[scala.Boolean] = js.undefined,
     canCreateTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
     domainSharingPolicy: java.lang.String = null,
+    driveThemes: js.Array[AboutDriveThemes] = null,
     etag: java.lang.String = null,
     exportFormats: js.Array[AboutExportFormats] = null,
     features: js.Array[AboutFeatures] = null,
@@ -66,8 +70,10 @@ object About {
   ): About = {
     val __obj = js.Dynamic.literal()
     if (additionalRoleInfo != null) __obj.updateDynamic("additionalRoleInfo")(additionalRoleInfo)
+    if (!js.isUndefined(canCreateDrives)) __obj.updateDynamic("canCreateDrives")(canCreateDrives)
     if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives)
     if (domainSharingPolicy != null) __obj.updateDynamic("domainSharingPolicy")(domainSharingPolicy)
+    if (driveThemes != null) __obj.updateDynamic("driveThemes")(driveThemes)
     if (etag != null) __obj.updateDynamic("etag")(etag)
     if (exportFormats != null) __obj.updateDynamic("exportFormats")(exportFormats)
     if (features != null) __obj.updateDynamic("features")(features)

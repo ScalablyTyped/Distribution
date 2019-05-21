@@ -10,7 +10,7 @@ trait ServerInfo extends js.Object {
     * the active IP address the connection was bound to after starting. Set to undefined until the server has been
     * started or when using a non TCP port (e.g. UNIX domain socket).
     */
-  var address: js.UndefOr[java.lang.String]
+  var address: js.UndefOr[java.lang.String] = js.undefined
   /**
     * server creation timestamp.
     */

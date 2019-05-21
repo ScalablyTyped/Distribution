@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Bucket extends js.Object {
-  var Bucket: js.UndefOr[java.lang.String]
-  var Key: js.UndefOr[java.lang.String]
+  var Bucket: js.UndefOr[java.lang.String] = js.undefined
+  var Key: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_Bucket {

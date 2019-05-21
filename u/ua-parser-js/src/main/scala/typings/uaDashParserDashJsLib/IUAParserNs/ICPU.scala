@@ -11,7 +11,7 @@ trait ICPU extends js.Object {
     *  68k, amd64, arm, arm64, avr, ia32, ia64, irix, irix64, mips, mips64, pa-risc,
     *  ppc, sparc, sparc64
     */
-  var architecture: js.UndefOr[java.lang.String]
+  var architecture: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ICPU {

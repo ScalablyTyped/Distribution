@@ -16,12 +16,17 @@ trait FileCapabilities extends js.Object {
   var canDownload: js.UndefOr[scala.Boolean] = js.undefined
   var canEdit: js.UndefOr[scala.Boolean] = js.undefined
   var canListChildren: js.UndefOr[scala.Boolean] = js.undefined
+  var canMoveChildrenOutOfDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canMoveChildrenOutOfTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
+  var canMoveChildrenWithinDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canMoveChildrenWithinTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canMoveItemIntoTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
+  var canMoveItemOutOfDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canMoveItemOutOfTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
+  var canMoveItemWithinDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canMoveItemWithinTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canMoveTeamDriveItem: js.UndefOr[scala.Boolean] = js.undefined
+  var canReadDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canReadRevisions: js.UndefOr[scala.Boolean] = js.undefined
   var canReadTeamDrive: js.UndefOr[scala.Boolean] = js.undefined
   var canRemoveChildren: js.UndefOr[scala.Boolean] = js.undefined
@@ -45,12 +50,17 @@ object FileCapabilities {
     canDownload: js.UndefOr[scala.Boolean] = js.undefined,
     canEdit: js.UndefOr[scala.Boolean] = js.undefined,
     canListChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    canMoveChildrenOutOfDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canMoveChildrenOutOfTeamDrive: js.UndefOr[scala.Boolean] = js.undefined,
+    canMoveChildrenWithinDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canMoveChildrenWithinTeamDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canMoveItemIntoTeamDrive: js.UndefOr[scala.Boolean] = js.undefined,
+    canMoveItemOutOfDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canMoveItemOutOfTeamDrive: js.UndefOr[scala.Boolean] = js.undefined,
+    canMoveItemWithinDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canMoveItemWithinTeamDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canMoveTeamDriveItem: js.UndefOr[scala.Boolean] = js.undefined,
+    canReadDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canReadRevisions: js.UndefOr[scala.Boolean] = js.undefined,
     canReadTeamDrive: js.UndefOr[scala.Boolean] = js.undefined,
     canRemoveChildren: js.UndefOr[scala.Boolean] = js.undefined,
@@ -71,12 +81,17 @@ object FileCapabilities {
     if (!js.isUndefined(canDownload)) __obj.updateDynamic("canDownload")(canDownload)
     if (!js.isUndefined(canEdit)) __obj.updateDynamic("canEdit")(canEdit)
     if (!js.isUndefined(canListChildren)) __obj.updateDynamic("canListChildren")(canListChildren)
+    if (!js.isUndefined(canMoveChildrenOutOfDrive)) __obj.updateDynamic("canMoveChildrenOutOfDrive")(canMoveChildrenOutOfDrive)
     if (!js.isUndefined(canMoveChildrenOutOfTeamDrive)) __obj.updateDynamic("canMoveChildrenOutOfTeamDrive")(canMoveChildrenOutOfTeamDrive)
+    if (!js.isUndefined(canMoveChildrenWithinDrive)) __obj.updateDynamic("canMoveChildrenWithinDrive")(canMoveChildrenWithinDrive)
     if (!js.isUndefined(canMoveChildrenWithinTeamDrive)) __obj.updateDynamic("canMoveChildrenWithinTeamDrive")(canMoveChildrenWithinTeamDrive)
     if (!js.isUndefined(canMoveItemIntoTeamDrive)) __obj.updateDynamic("canMoveItemIntoTeamDrive")(canMoveItemIntoTeamDrive)
+    if (!js.isUndefined(canMoveItemOutOfDrive)) __obj.updateDynamic("canMoveItemOutOfDrive")(canMoveItemOutOfDrive)
     if (!js.isUndefined(canMoveItemOutOfTeamDrive)) __obj.updateDynamic("canMoveItemOutOfTeamDrive")(canMoveItemOutOfTeamDrive)
+    if (!js.isUndefined(canMoveItemWithinDrive)) __obj.updateDynamic("canMoveItemWithinDrive")(canMoveItemWithinDrive)
     if (!js.isUndefined(canMoveItemWithinTeamDrive)) __obj.updateDynamic("canMoveItemWithinTeamDrive")(canMoveItemWithinTeamDrive)
     if (!js.isUndefined(canMoveTeamDriveItem)) __obj.updateDynamic("canMoveTeamDriveItem")(canMoveTeamDriveItem)
+    if (!js.isUndefined(canReadDrive)) __obj.updateDynamic("canReadDrive")(canReadDrive)
     if (!js.isUndefined(canReadRevisions)) __obj.updateDynamic("canReadRevisions")(canReadRevisions)
     if (!js.isUndefined(canReadTeamDrive)) __obj.updateDynamic("canReadTeamDrive")(canReadTeamDrive)
     if (!js.isUndefined(canRemoveChildren)) __obj.updateDynamic("canRemoveChildren")(canRemoveChildren)

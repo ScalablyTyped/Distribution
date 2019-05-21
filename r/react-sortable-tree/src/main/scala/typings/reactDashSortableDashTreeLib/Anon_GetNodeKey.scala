@@ -5,13 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_GetNodeKey extends js.Object {
-  @JSName("getNodeKey")
-  var getNodeKey_Original: reactDashSortableDashTreeLib.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction = js.native
-  var index: scala.Double = js.native
-  def getNodeKey(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeIndex with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeNode
-  ): java.lang.String | scala.Double = js.native
+  var getNodeKey: reactDashSortableDashTreeLib.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction
+  var index: scala.Double
+}
+
+object Anon_GetNodeKey {
+  @scala.inline
+  def apply(
+    getNodeKey: reactDashSortableDashTreeLib.utilsTreeDashDataDashUtilsMod.GetNodeKeyFunction,
+    index: scala.Double
+  ): Anon_GetNodeKey = {
+    val __obj = js.Dynamic.literal(getNodeKey = getNodeKey, index = index)
+  
+    __obj.asInstanceOf[Anon_GetNodeKey]
+  }
 }
 

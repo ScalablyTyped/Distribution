@@ -10,7 +10,7 @@ trait RouteView extends js.Object {
   var id: scala.Double
   var ref: atAngularCoreLib.atAngularCoreMod.ComponentRef[_]
   var savedData: js.UndefOr[js.Any] = js.undefined
-  var stackId: js.UndefOr[java.lang.String]
+  var stackId: js.UndefOr[java.lang.String] = js.undefined
   var url: java.lang.String
   def unlistenEvents(): scala.Unit
 }

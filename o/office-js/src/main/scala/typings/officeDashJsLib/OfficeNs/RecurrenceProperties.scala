@@ -24,16 +24,16 @@ trait RecurrenceProperties extends js.Object {
   /**
     * Represents the day of the week or type of day, for example, weekend day vs weekday.
     */
-  var dayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
+  var dayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days | java.lang.String
   /**
     * Represents the set of days for this recurrence. Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
     */
-  var days: js.Array[officeDashJsLib.OfficeNs.MailboxEnumsNs.Days]
+  var days: js.Array[officeDashJsLib.OfficeNs.MailboxEnumsNs.Days] | js.Array[java.lang.String]
   /**
     * Represents your chosen first day of the week otherwise the default is the value in the current user's settings. 
     * Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
     */
-  var firstDayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
+  var firstDayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days | java.lang.String
   /**
     * Represents the period between instances of the same recurring series.
     */
@@ -41,25 +41,25 @@ trait RecurrenceProperties extends js.Object {
   /**
     * Represents the month.
     */
-  var month: officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
+  var month: officeDashJsLib.OfficeNs.MailboxEnumsNs.Month | java.lang.String
   /**
     * Represents the number of the week in the selected month e.g. 'first' for first week of the month.
     */
-  var weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
+  var weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber | java.lang.String
 }
 
 object RecurrenceProperties {
   @scala.inline
   def apply(
     dayOfMonth: scala.Double,
-    dayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days,
-    days: js.Array[officeDashJsLib.OfficeNs.MailboxEnumsNs.Days],
-    firstDayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days,
+    dayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days | java.lang.String,
+    days: js.Array[officeDashJsLib.OfficeNs.MailboxEnumsNs.Days] | js.Array[java.lang.String],
+    firstDayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days | java.lang.String,
     interval: scala.Double,
-    month: officeDashJsLib.OfficeNs.MailboxEnumsNs.Month,
-    weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
+    month: officeDashJsLib.OfficeNs.MailboxEnumsNs.Month | java.lang.String,
+    weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber | java.lang.String
   ): RecurrenceProperties = {
-    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth, dayOfWeek = dayOfWeek, days = days, firstDayOfWeek = firstDayOfWeek, interval = interval, month = month, weekNumber = weekNumber)
+    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth, dayOfWeek = dayOfWeek.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], firstDayOfWeek = firstDayOfWeek.asInstanceOf[js.Any], interval = interval, month = month.asInstanceOf[js.Any], weekNumber = weekNumber.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RecurrenceProperties]
   }

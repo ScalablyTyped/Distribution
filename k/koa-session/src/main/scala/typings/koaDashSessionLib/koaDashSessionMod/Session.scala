@@ -21,7 +21,7 @@ trait Session
   /**
     * get/set session maxAge
     */
-  var maxAge: js.UndefOr[scala.Double | koaDashSessionLib.koaDashSessionLibStrings.session]
+  var maxAge: js.UndefOr[scala.Double | koaDashSessionLib.koaDashSessionLibStrings.session] = js.undefined
   /**
     * populated flag, which is just a boolean alias of .length.
     */

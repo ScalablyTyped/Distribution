@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait QueueItem extends js.Object {
   var args: js.Array[js.Object]
   var method: java.lang.String
-  var stack: js.UndefOr[java.lang.String]
+  var stack: js.UndefOr[java.lang.String] = js.undefined
   var target: js.Object
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for urijs
 
-Typings are for version 1.19.1
+Typings are for version 1.19
 
 ## Library description:
 URI.js is a Javascript library for working with URLs.
@@ -35,12 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for URI.js 1.19.1
-// Project: https://github.com/medialize/URI.js
+// Type definitions for URI.js 1.19
+// Project: http://medialize.github.io/URI.js
 // Definitions by: RodneyJT <https://github.com/RodneyJT>
 //                 Brian Surowiec <https://github.com/xt0rted>
 //                 Pete Johanson <https://github.com/petejohanson>
 //                 Zhibin Liu <https://github.com/ljqx>
+//                 TeamworkGuy2 <https://github.com/teamworkguy2>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

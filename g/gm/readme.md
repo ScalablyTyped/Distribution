@@ -40,6 +40,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by:  Joel Spadin <https://github.com/ChaosinaCan>
 //                  Maarten van Vliet <https://github.com/maartenvanvliet>
 //                  Vaclav Mlejnsky <https://github.com/mlejva>
+//                  Dimitry Kooijmans <https://github.com/mrcageman>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

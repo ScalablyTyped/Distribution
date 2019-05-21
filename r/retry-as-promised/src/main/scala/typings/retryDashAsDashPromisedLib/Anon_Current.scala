@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Current extends js.Object {
-  var current: js.UndefOr[scala.Double]
+  var current: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Anon_Current {

@@ -19,6 +19,11 @@ trait VictoryGroupProps
     */
   var categories: js.UndefOr[CategoryPropType] = js.undefined
   /**
+    * The color prop is an optional prop that defines a single color to be applied to the
+    * children of VictoryGroup. The color prop will override colors specified via colorScale.
+    */
+  var color: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The colorScale prop is an optional prop that defines the color scale the chart's bars
     * will be created on. This prop should be given as an array of CSS colors, or as a string
     * corresponding to one of the built in color scales. VictoryBar will automatically assign
@@ -115,6 +120,7 @@ object VictoryGroupProps {
   def apply(
     animate: AnimatePropTypeInterface = null,
     categories: CategoryPropType = null,
+    color: java.lang.String = null,
     colorScale: ColorScalePropType = null,
     containerComponent: reactLib.reactMod.ReactElement[_] = null,
     domain: DomainPropType = null,
@@ -143,6 +149,7 @@ object VictoryGroupProps {
     val __obj = js.Dynamic.literal()
     if (animate != null) __obj.updateDynamic("animate")(animate)
     if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
     if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
     if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])

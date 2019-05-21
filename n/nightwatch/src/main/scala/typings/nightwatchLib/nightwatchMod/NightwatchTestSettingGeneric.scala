@@ -46,7 +46,7 @@ trait NightwatchTestSettingGeneric extends js.Object {
   /**
     * An object which will be made available within the test and can be overwritten per environment. Example:"globals" : {  "myGlobal" : "some_global" }
     */
-  var globals: js.Any
+  var globals: NightwatchGlobals
   /**
     * A url which can be used later in the tests as the main url to load. Can be useful if your tests will run on different environments, each one with a different url.
     */
@@ -100,7 +100,7 @@ object NightwatchTestSettingGeneric {
     end_session_on_fail: scala.Boolean,
     exclude: js.Array[java.lang.String],
     filter: java.lang.String,
-    globals: js.Any,
+    globals: NightwatchGlobals,
     launch_url: java.lang.String,
     log_screenshot_data: scala.Boolean,
     output: scala.Boolean,

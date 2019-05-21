@@ -1154,6 +1154,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class MediaPackageVod ()
+    extends awsDashSdkLib.awsDashSdkMod.MediaPackageVod {
+    def this(options: awsDashSdkLib.clientsMediapackagevodMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class MediaStore ()
     extends awsDashSdkLib.awsDashSdkMod.MediaStore {
     def this(options: awsDashSdkLib.clientsMediastoreMod.ClientConfiguration) = this()

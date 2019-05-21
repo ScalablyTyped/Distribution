@@ -5,44 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait EasingStatic extends js.Object {
-  @JSName("bounce")
-  var bounce_Original: EasingFunction = js.native
-  @JSName("circle")
-  var circle_Original: EasingFunction = js.native
-  @JSName("cubic")
-  var cubic_Original: EasingFunction = js.native
-  @JSName("ease")
-  var ease_Original: EasingFunction = js.native
-  @JSName("exp")
-  var exp_Original: EasingFunction = js.native
-  @JSName("linear")
-  var linear_Original: EasingFunction = js.native
-  @JSName("quad")
-  var quad_Original: EasingFunction = js.native
-  @JSName("sin")
-  var sin_Original: EasingFunction = js.native
-  @JSName("step0")
-  var step0_Original: EasingFunction = js.native
-  @JSName("step1")
-  var step1_Original: EasingFunction = js.native
-  def back(s: scala.Double): EasingFunction = js.native
-  def bezier(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): EasingFunction = js.native
-  def bounce(value: scala.Double): scala.Double = js.native
-  def circle(value: scala.Double): scala.Double = js.native
-  def cubic(value: scala.Double): scala.Double = js.native
-  def ease(value: scala.Double): scala.Double = js.native
-  def elastic(bounciness: scala.Double): EasingFunction = js.native
-  def exp(value: scala.Double): scala.Double = js.native
-  def in(easing: EasingFunction): EasingFunction = js.native
-  def inOut(easing: EasingFunction): EasingFunction = js.native
-  def linear(value: scala.Double): scala.Double = js.native
-  def out(easing: EasingFunction): EasingFunction = js.native
-  def poly(n: scala.Double): EasingFunction = js.native
-  def quad(value: scala.Double): scala.Double = js.native
-  def sin(value: scala.Double): scala.Double = js.native
-  def step0(value: scala.Double): scala.Double = js.native
-  def step1(value: scala.Double): scala.Double = js.native
+  var bounce: EasingFunction
+  var circle: EasingFunction
+  var cubic: EasingFunction
+  var ease: EasingFunction
+  var exp: EasingFunction
+  var linear: EasingFunction
+  var quad: EasingFunction
+  var sin: EasingFunction
+  var step0: EasingFunction
+  var step1: EasingFunction
+  def back(s: scala.Double): EasingFunction
+  def bezier(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): EasingFunction
+  def elastic(bounciness: scala.Double): EasingFunction
+  def in(easing: EasingFunction): EasingFunction
+  def inOut(easing: EasingFunction): EasingFunction
+  def out(easing: EasingFunction): EasingFunction
+  def poly(n: scala.Double): EasingFunction
+}
+
+object EasingStatic {
+  @scala.inline
+  def apply(
+    back: scala.Double => EasingFunction,
+    bezier: (scala.Double, scala.Double, scala.Double, scala.Double) => EasingFunction,
+    bounce: EasingFunction,
+    circle: EasingFunction,
+    cubic: EasingFunction,
+    ease: EasingFunction,
+    elastic: scala.Double => EasingFunction,
+    exp: EasingFunction,
+    in: EasingFunction => EasingFunction,
+    inOut: EasingFunction => EasingFunction,
+    linear: EasingFunction,
+    out: EasingFunction => EasingFunction,
+    poly: scala.Double => EasingFunction,
+    quad: EasingFunction,
+    sin: EasingFunction,
+    step0: EasingFunction,
+    step1: EasingFunction
+  ): EasingStatic = {
+    val __obj = js.Dynamic.literal(back = js.Any.fromFunction1(back), bezier = js.Any.fromFunction4(bezier), bounce = bounce, circle = circle, cubic = cubic, ease = ease, elastic = js.Any.fromFunction1(elastic), exp = exp, in = js.Any.fromFunction1(in), inOut = js.Any.fromFunction1(inOut), linear = linear, out = js.Any.fromFunction1(out), poly = js.Any.fromFunction1(poly), quad = quad, sin = sin, step0 = step0, step1 = step1)
+  
+    __obj.asInstanceOf[EasingStatic]
+  }
 }
 

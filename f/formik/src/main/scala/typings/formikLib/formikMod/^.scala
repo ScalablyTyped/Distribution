@@ -18,10 +18,7 @@ object ^ extends js.Object {
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
     ]
   ] = js.native
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(FormikConsumer) */ val FormikProvider: reactLib.reactMod.ComponentClass[
-    createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]], 
-    js.Any
-  ] = js.native
+  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(FormikConsumer) */ val FormikProvider: reactLib.reactMod.ProviderExoticComponent[reactLib.reactMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]] = js.native
   def connect[OuterProps, Values](Comp: reactLib.reactMod.ComponentType[OuterProps with formikLib.Anon_FormikFormikContext[Values]]): reactLib.reactMod.ComponentType[OuterProps] = js.native
   def getActiveElement(): stdLib.Element | scala.Null = js.native
   def getActiveElement(doc: stdLib.Document): stdLib.Element | scala.Null = js.native

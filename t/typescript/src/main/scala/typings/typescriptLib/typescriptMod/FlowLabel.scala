@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait FlowLabel
   extends FlowNodeBase
      with FlowNode {
-  var antecedents: js.UndefOr[js.Array[FlowNode]]
+  var antecedents: js.UndefOr[js.Array[FlowNode]] = js.undefined
 }
 
 object FlowLabel {

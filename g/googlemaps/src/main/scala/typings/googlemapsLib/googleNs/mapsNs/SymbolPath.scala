@@ -11,37 +11,52 @@ sealed trait SymbolPath extends js.Object
 @JSGlobal("google.maps.SymbolPath")
 @js.native
 object SymbolPath extends js.Object {
-  /** A backward-pointing closed arrow. */
+  /**
+    * A backward-pointing closed arrow.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath.BACKWARD_CLOSED_ARROW Maps JavaScript API}
+    */
   @js.native
   sealed trait BACKWARD_CLOSED_ARROW
     extends googlemapsLib.googleNs.mapsNs.SymbolPath
   
-  /** A backward-pointing open arrow. */
+  /**
+    * A backward-pointing open arrow.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath.BACKWARD_OPEN_ARROW Maps JavaScript API}
+    */
   @js.native
   sealed trait BACKWARD_OPEN_ARROW
     extends googlemapsLib.googleNs.mapsNs.SymbolPath
   
-  /** A circle. */
+  /**
+    * A circle.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath.CIRCLE Maps JavaScript API}
+    */
   @js.native
   sealed trait CIRCLE
     extends googlemapsLib.googleNs.mapsNs.SymbolPath
   
-  /** A forward-pointing closed arrow. */
+  /**
+    * A forward-pointing closed arrow.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath.FORWARD_CLOSED_ARROW Maps JavaScript API}
+    */
   @js.native
   sealed trait FORWARD_CLOSED_ARROW
     extends googlemapsLib.googleNs.mapsNs.SymbolPath
   
-  /** A forward-pointing open arrow. */
+  /**
+    * A forward-pointing open arrow.
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#SymbolPath.FORWARD_OPEN_ARROW Maps JavaScript API}
+    */
   @js.native
   sealed trait FORWARD_OPEN_ARROW
     extends googlemapsLib.googleNs.mapsNs.SymbolPath
   
-  val BACKWARD_CLOSED_ARROW: BACKWARD_CLOSED_ARROW with java.lang.String = js.native
-  val BACKWARD_OPEN_ARROW: BACKWARD_OPEN_ARROW with java.lang.String = js.native
-  val CIRCLE: CIRCLE with java.lang.String = js.native
-  val FORWARD_CLOSED_ARROW: FORWARD_CLOSED_ARROW with java.lang.String = js.native
-  val FORWARD_OPEN_ARROW: FORWARD_OPEN_ARROW with java.lang.String = js.native
+  /* 3 */ val BACKWARD_CLOSED_ARROW: BACKWARD_CLOSED_ARROW with scala.Double = js.native
+  /* 4 */ val BACKWARD_OPEN_ARROW: BACKWARD_OPEN_ARROW with scala.Double = js.native
+  /* 0 */ val CIRCLE: CIRCLE with scala.Double = js.native
+  /* 1 */ val FORWARD_CLOSED_ARROW: FORWARD_CLOSED_ARROW with scala.Double = js.native
+  /* 2 */ val FORWARD_OPEN_ARROW: FORWARD_OPEN_ARROW with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[googlemapsLib.googleNs.mapsNs.SymbolPath with java.lang.String] = js.native
+  def apply(value: scala.Double): js.UndefOr[googlemapsLib.googleNs.mapsNs.SymbolPath with scala.Double] = js.native
 }
 

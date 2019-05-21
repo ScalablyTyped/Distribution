@@ -7,27 +7,24 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Required<{  fontFamily  :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontFamily'],   fontSize  :number,   fontWeightLight  :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightRegular  :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightMedium  :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight']}> */
 trait FontStyle extends js.Object {
-  var fontFamily: js.UndefOr[csstypeLib.csstypeMod.FontFamilyProperty]
+  var fontFamily: csstypeLib.csstypeMod.FontFamilyProperty
   var fontSize: scala.Double
-  var fontWeightLight: js.UndefOr[csstypeLib.csstypeMod.FontWeightProperty]
-  var fontWeightMedium: js.UndefOr[csstypeLib.csstypeMod.FontWeightProperty]
-  var fontWeightRegular: js.UndefOr[csstypeLib.csstypeMod.FontWeightProperty]
+  var fontWeightLight: csstypeLib.csstypeMod.FontWeightProperty
+  var fontWeightMedium: csstypeLib.csstypeMod.FontWeightProperty
+  var fontWeightRegular: csstypeLib.csstypeMod.FontWeightProperty
 }
 
 object FontStyle {
   @scala.inline
   def apply(
+    fontFamily: csstypeLib.csstypeMod.FontFamilyProperty,
     fontSize: scala.Double,
-    fontFamily: csstypeLib.csstypeMod.FontFamilyProperty = null,
-    fontWeightLight: csstypeLib.csstypeMod.FontWeightProperty = null,
-    fontWeightMedium: csstypeLib.csstypeMod.FontWeightProperty = null,
-    fontWeightRegular: csstypeLib.csstypeMod.FontWeightProperty = null
+    fontWeightLight: csstypeLib.csstypeMod.FontWeightProperty,
+    fontWeightMedium: csstypeLib.csstypeMod.FontWeightProperty,
+    fontWeightRegular: csstypeLib.csstypeMod.FontWeightProperty
   ): FontStyle = {
-    val __obj = js.Dynamic.literal(fontSize = fontSize)
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontWeightLight != null) __obj.updateDynamic("fontWeightLight")(fontWeightLight.asInstanceOf[js.Any])
-    if (fontWeightMedium != null) __obj.updateDynamic("fontWeightMedium")(fontWeightMedium.asInstanceOf[js.Any])
-    if (fontWeightRegular != null) __obj.updateDynamic("fontWeightRegular")(fontWeightRegular.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize, fontWeightLight = fontWeightLight.asInstanceOf[js.Any], fontWeightMedium = fontWeightMedium.asInstanceOf[js.Any], fontWeightRegular = fontWeightRegular.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FontStyle]
   }
 }

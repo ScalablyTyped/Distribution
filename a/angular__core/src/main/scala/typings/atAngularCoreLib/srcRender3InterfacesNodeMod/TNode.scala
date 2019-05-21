@@ -55,7 +55,7 @@ trait TNode extends js.Object {
     */
   var index: scala.Double
   /** Information about input properties that need to be set once from attribute data. */
-  var initialInputs: js.UndefOr[InitialInputData | scala.Null]
+  var initialInputs: js.UndefOr[InitialInputData | scala.Null] = js.undefined
   /**
     * The index of the closest injector in this node's LView.
     *
@@ -76,7 +76,7 @@ trait TNode extends js.Object {
     * - `undefined` means that the prop has not been initialized yet,
     * - `null` means that the prop has been initialized but no inputs have been found.
     */
-  var inputs: js.UndefOr[PropertyAliases | scala.Null]
+  var inputs: js.UndefOr[PropertyAliases | scala.Null] = js.undefined
   /**
     * A set of local names under which a given element is exported in a template and
     * visible to queries. An entry in this array can be created for different reasons:
@@ -106,7 +106,7 @@ trait TNode extends js.Object {
     * - `undefined` means that the prop has not been initialized yet,
     * - `null` means that the prop has been initialized but no outputs have been found.
     */
-  var outputs: js.UndefOr[PropertyAliases | scala.Null]
+  var outputs: js.UndefOr[PropertyAliases | scala.Null] = js.undefined
   /**
     * Parent node (in the same view only).
     *

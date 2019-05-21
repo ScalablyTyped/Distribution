@@ -14,30 +14,30 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   var altKey_TouchEventBase: scala.Boolean
   // MouseEvent
   @JSName("button")
-  var button_TouchEventBase: js.UndefOr[scala.Nothing]
+  var button_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("buttons")
-  var buttons_TouchEventBase: js.UndefOr[scala.Nothing]
+  var buttons_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // TouchEvent
   @JSName("changedTouches")
   var changedTouches_TouchEventBase: stdLib.TouchList
   /** @deprecated */
   @JSName("charCode")
-  var charCode_TouchEventBase: js.UndefOr[scala.Nothing]
+  var charCode_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
-  var char_TouchEventBase: js.UndefOr[scala.Nothing]
+  var char_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientX")
-  var clientX_TouchEventBase: js.UndefOr[scala.Nothing]
+  var clientX_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientY")
-  var clientY_TouchEventBase: js.UndefOr[scala.Nothing]
+  var clientY_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("ctrlKey")
   var ctrlKey_TouchEventBase: scala.Boolean
   /** @deprecated */
   @JSName("keyCode")
-  var keyCode_TouchEventBase: js.UndefOr[scala.Nothing]
+  var keyCode_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("key")
-  var key_TouchEventBase: js.UndefOr[scala.Nothing]
+  var key_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -77,9 +77,9 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   @JSName("metaKey")
   var metaKey_TouchEventBase: scala.Boolean
   @JSName("offsetX")
-  var offsetX_TouchEventBase: js.UndefOr[scala.Nothing]
+  var offsetX_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("offsetY")
-  var offsetY_TouchEventBase: js.UndefOr[scala.Nothing]
+  var offsetY_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("originalEvent")
   var originalEvent_TouchEventBase: js.UndefOr[jqueryLib._TouchEvent] = js.undefined
   /**
@@ -118,7 +118,7 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("pageX")
-  var pageX_TouchEventBase: js.UndefOr[scala.Nothing]
+  var pageX_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -155,12 +155,12 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("pageY")
-  var pageY_TouchEventBase: js.UndefOr[scala.Nothing]
+  var pageY_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // PointerEvent
   @JSName("pointerId")
-  var pointerId_TouchEventBase: js.UndefOr[scala.Nothing]
+  var pointerId_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("pointerType")
-  var pointerType_TouchEventBase: js.UndefOr[scala.Nothing]
+  var pointerType_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -174,16 +174,16 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   var relatedTarget: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenX")
-  var screenX_TouchEventBase: js.UndefOr[scala.Nothing]
+  var screenX_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenY")
-  var screenY_TouchEventBase: js.UndefOr[scala.Nothing]
+  var screenY_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("shiftKey")
   var shiftKey_TouchEventBase: scala.Boolean
   @JSName("targetTouches")
   var targetTouches_TouchEventBase: stdLib.TouchList
   /** @deprecated */
   @JSName("toElement")
-  var toElement_TouchEventBase: js.UndefOr[scala.Nothing]
+  var toElement_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("touches")
   var touches_TouchEventBase: stdLib.TouchList
   // MouseEvent, KeyboardEvent
@@ -240,7 +240,7 @@ trait TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("which")
-  var which_TouchEventBase: js.UndefOr[scala.Nothing]
+  var which_TouchEventBase: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object TouchEventBase {

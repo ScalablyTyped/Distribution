@@ -36,7 +36,7 @@ trait Token extends js.Object {
   /**
     * For non-punctuation tokens, represents the interpreted value of the token.
     */
-  val value: js.UndefOr[java.lang.String]
+  val value: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Token {

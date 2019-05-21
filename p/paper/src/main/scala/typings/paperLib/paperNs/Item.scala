@@ -379,8 +379,8 @@ class Item () extends Base {
     * @param options.guides - hit-test items that have Item#guide set to true.
     * @param options.selected - only hit selected items.
     */
-  def hitTest(point: Point): HitResult = js.native
-  def hitTest(point: Point, options: IHitTestOptions): HitResult = js.native
+  def hitTest(point: Point): HitResult | scala.Null = js.native
+  def hitTest(point: Point, options: IHitTestOptions): HitResult | scala.Null = js.native
   /**
     * Performs a hit-test on the item and its children (if it is a Group or Layer) at the location of the specified point, returning all found hits.
     * The options object allows you to control the specifics of the hit-test and may contain a combination of the following values:

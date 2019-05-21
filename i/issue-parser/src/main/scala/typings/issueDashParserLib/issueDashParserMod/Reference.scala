@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Reference extends js.Object {
   var issue: java.lang.String
-  var prefix: js.UndefOr[java.lang.String]
+  var prefix: js.UndefOr[java.lang.String] = js.undefined
   var raw: java.lang.String
-  var slug: js.UndefOr[java.lang.String]
+  var slug: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Reference {

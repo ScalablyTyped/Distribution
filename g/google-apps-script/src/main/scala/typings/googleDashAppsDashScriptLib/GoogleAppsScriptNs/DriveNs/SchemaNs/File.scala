@@ -17,6 +17,7 @@ trait File extends js.Object {
   var defaultOpenWithLink: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var downloadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var driveId: js.UndefOr[java.lang.String] = js.undefined
   var editable: js.UndefOr[scala.Boolean] = js.undefined
   var embedLink: js.UndefOr[java.lang.String] = js.undefined
   var etag: js.UndefOr[java.lang.String] = js.undefined
@@ -89,6 +90,7 @@ object File {
     defaultOpenWithLink: java.lang.String = null,
     description: java.lang.String = null,
     downloadUrl: java.lang.String = null,
+    driveId: java.lang.String = null,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     embedLink: java.lang.String = null,
     etag: java.lang.String = null,
@@ -158,6 +160,7 @@ object File {
     if (defaultOpenWithLink != null) __obj.updateDynamic("defaultOpenWithLink")(defaultOpenWithLink)
     if (description != null) __obj.updateDynamic("description")(description)
     if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl)
+    if (driveId != null) __obj.updateDynamic("driveId")(driveId)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (embedLink != null) __obj.updateDynamic("embedLink")(embedLink)
     if (etag != null) __obj.updateDynamic("etag")(etag)

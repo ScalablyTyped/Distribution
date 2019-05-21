@@ -24,9 +24,13 @@ object reactDashDndLibComponents {
   type DragDropContextConsumerProps[T] = reactLib.reactMod.ConsumerProps[T]
   @scala.inline
   def DragDropContextProvider: reactLib.reactMod.ComponentType[reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps[js.Any]] = reactDashDndLib.reactDashDndMod.DragDropContextProvider.asInstanceOf[reactLib.reactMod.ComponentType[reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps[js.Any]]]
+  @scala.inline
+  def DragDropContextProviderProps: reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps.type = reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps
   type DragDropContextProviderProps[BackendContext] = reactDashDndLib.libCjsDragDropContextMod.DragDropContextProviderProps[BackendContext]
   @scala.inline
   def DragPreviewImage: reactLib.reactMod.ComponentType[reactDashDndLib.libCjsDragPreviewImageMod.DragPreviewImageProps] = reactDashDndLib.libCjsDragPreviewImageMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[reactDashDndLib.libCjsDragPreviewImageMod.DragPreviewImageProps]]
+  @scala.inline
+  def DragPreviewImageProps: reactDashDndLib.libCjsDragPreviewImageMod.DragPreviewImageProps.type = reactDashDndLib.libCjsDragPreviewImageMod.DragPreviewImageProps
   type DragPreviewImageProps = reactDashDndLib.libCjsDragPreviewImageMod.DragPreviewImageProps
 }
 

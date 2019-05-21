@@ -5,11 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait StoryObject extends js.Object {
-  var name: java.lang.String = js.native
-  @JSName("render")
-  var render_Original: RenderFunction = js.native
-  def render(): Renderable | js.Array[Renderable] = js.native
+  var name: java.lang.String
+  var render: RenderFunction
+}
+
+object StoryObject {
+  @scala.inline
+  def apply(name: java.lang.String, render: RenderFunction): StoryObject = {
+    val __obj = js.Dynamic.literal(name = name, render = render)
+  
+    __obj.asInstanceOf[StoryObject]
+  }
 }
 

@@ -12,7 +12,7 @@ trait ModalEventHandler[TElement]
     * For `show.bs.modal` and `shown.bs.modal` is the clicked element, when caused by a _click_.
     * Otherwise is undefined.
     */
-  var relatedTarget: js.UndefOr[stdLib.HTMLElement]
+  var relatedTarget: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
 object ModalEventHandler {

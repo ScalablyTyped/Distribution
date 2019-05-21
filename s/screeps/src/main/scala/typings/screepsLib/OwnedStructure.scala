@@ -60,13 +60,6 @@ class OwnedStructureCls protected () extends OwnedStructure[StructureConstant] {
   /* CompleteClass */
   override var pos: RoomPosition = js.native
   /**
-    * The link to the Room object. May be undefined in case if an object is a
-    * flag or a construction site and is placed in a room that is not visible
-    * to you.
-    */
-  /* CompleteClass */
-  override var room: js.UndefOr[Room] = js.native
-  /**
     * If you can get an instance of a Structure, you can see it.
     * If you can see the Structure, you can see the room it's in.
     */

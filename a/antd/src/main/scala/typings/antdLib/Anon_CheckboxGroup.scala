@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_CheckboxGroup extends js.Object {
-  @JSName("checkboxGroup")
-  var checkboxGroup_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
-  def checkboxGroup(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var checkboxGroup: propDashTypesLib.propDashTypesMod.Requireable[_]
+}
+
+object Anon_CheckboxGroup {
+  @scala.inline
+  def apply(checkboxGroup: propDashTypesLib.propDashTypesMod.Requireable[_]): Anon_CheckboxGroup = {
+    val __obj = js.Dynamic.literal(checkboxGroup = checkboxGroup)
+  
+    __obj.asInstanceOf[Anon_CheckboxGroup]
+  }
 }
 

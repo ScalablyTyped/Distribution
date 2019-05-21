@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Listenable extends js.Object {
-  @JSName("listen")
-  var listen_Original: ListenFn = js.native
-  def listen(params: js.Any*): js.Any = js.native
+  var listen: ListenFn
+}
+
+object Listenable {
+  @scala.inline
+  def apply(listen: ListenFn): Listenable = {
+    val __obj = js.Dynamic.literal(listen = listen)
+  
+    __obj.asInstanceOf[Listenable]
+  }
 }
 

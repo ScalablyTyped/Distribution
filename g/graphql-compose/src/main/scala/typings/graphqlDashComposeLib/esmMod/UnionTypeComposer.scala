@@ -16,10 +16,16 @@ class UnionTypeComposer[TSource, TContext] protected ()
 @JSImport("graphql-compose/esm", "UnionTypeComposer")
 @js.native
 object UnionTypeComposer extends js.Object {
+  /**
+    * Create `UnionTypeComposer` with adding it by name to the `SchemaComposer`.
+    */
   def create[TSrc, TCtx](
     typeDef: graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeComposeDefinition[TSrc, TCtx],
     schemaComposer: graphqlDashComposeLib.esmSchemaComposerMod.SchemaComposer[TCtx]
   ): graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
+  /**
+    * Create `UnionTypeComposer` without adding it to the `SchemaComposer`. This method may be usefull in plugins, when you need to create type temporary.
+    */
   def createTemp[TSrc, TCtx](typeDef: graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeComposeDefinition[TSrc, TCtx]): graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
   def createTemp[TSrc, TCtx](
     typeDef: graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeComposeDefinition[TSrc, TCtx],

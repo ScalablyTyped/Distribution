@@ -36,12 +36,9 @@ object formikLibComponents {
   def FormikProps: formikLib.distTypesMod.FormikConfig.type = formikLib.distTypesMod.FormikConfig
   type FormikProps[Values] = formikLib.distTypesMod.FormikConfig[Values]
   @scala.inline
-  def FormikProvider: reactLib.reactMod.ComponentType[
-    createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]
-  ] = js.constructorOf[formikLib.formikMod.FormikProvider].asInstanceOf[reactLib.reactMod.ComponentType[
-  createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]]]
+  def FormikProvider: reactLib.reactMod.ComponentType[reactLib.reactMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]] = formikLib.formikMod.^.FormikProvider.asInstanceOf[reactLib.reactMod.ComponentType[reactLib.reactMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]]]
   @scala.inline
-  def FormikProviderProps: createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps.type = createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps
-  type FormikProviderProps[T] = createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[T]
+  def FormikProviderProps: reactLib.reactMod.ProviderProps.type = reactLib.reactMod.ProviderProps
+  type FormikProviderProps[T] = reactLib.reactMod.ProviderProps[T]
 }
 

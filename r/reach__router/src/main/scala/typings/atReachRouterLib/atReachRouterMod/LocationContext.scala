@@ -5,12 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait LocationContext extends js.Object {
-  var location: WindowLocation = js.native
-  @JSName("navigate")
-  var navigate_Original: NavigateFn = js.native
-  def navigate(to: java.lang.String): scala.Unit = js.native
-  def navigate(to: java.lang.String, options: NavigateOptions[js.Object]): scala.Unit = js.native
+  var location: WindowLocation
+  var navigate: NavigateFn
+}
+
+object LocationContext {
+  @scala.inline
+  def apply(location: WindowLocation, navigate: NavigateFn): LocationContext = {
+    val __obj = js.Dynamic.literal(location = location, navigate = navigate)
+  
+    __obj.asInstanceOf[LocationContext]
+  }
 }
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait Anon_AlignDisabled extends js.Object {
   var align: Anon_Offset
   var disabled: scala.Boolean
-  var disabledHours: js.UndefOr[scala.Nothing]
-  var disabledMinutes: js.UndefOr[scala.Nothing]
-  var disabledSeconds: js.UndefOr[scala.Nothing]
+  var disabledHours: js.UndefOr[scala.Nothing] = js.undefined
+  var disabledMinutes: js.UndefOr[scala.Nothing] = js.undefined
+  var disabledSeconds: js.UndefOr[scala.Nothing] = js.undefined
   var focusOnOpen: scala.Boolean
   var hideDisabledOptions: scala.Boolean
   var placement: java.lang.String

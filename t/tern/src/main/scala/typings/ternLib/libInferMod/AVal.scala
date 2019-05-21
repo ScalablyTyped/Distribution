@@ -6,14 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AVal extends js.Object {
-  /**
-    * Abstract values that are used to represent variables
-    * or properties will have, when possible, an `originNode`
-    * property pointing to an AST node.
-    */
+trait AVal extends ANull {
   var originNode: js.UndefOr[estreeLib.estreeMod.Node] = js.native
   val propertyOf: js.UndefOr[Obj] = js.native
+  /** An object mapping the object’s known properties to AVals. Don’t manipulate this directly (ever), only use it if you have to iterate over the properties. */
+  var props: stdLib.Partial[stdLib.Readonly[org.scalablytyped.runtime.StringDictionary[AVal]]] = js.native
   val types: js.Array[Type] = js.native
   /**
     * Add a type to this abstract value. If the type is already in there,
@@ -25,6 +22,21 @@ trait AVal extends js.Object {
     */
   def addType(`type`: Type): scala.Unit = js.native
   def addType(`type`: Type, weight: scala.Double): scala.Unit = js.native
+  /** Call the given function for all properties of the object, including properties that are added in the future. */
+  def forAllProps(
+    f: js.Function3[
+      /* prop */ java.lang.String, 
+      /* val */ this.type, 
+      /* local */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Abstract values that are used to represent variables
+    * or properties will have, when possible, an `originNode`
+    * property pointing to an AST node.
+    */
+  def gatherProperties(f: js.Function1[/* repeated */ js.Any, scala.Unit], depth: scala.Double): scala.Unit = js.native
   /**
     * Asks the AVal if it contains a function type. Useful when
     * you aren’t interested in other kinds of types.
@@ -59,5 +71,36 @@ trait AVal extends js.Object {
 
 @JSImport("tern/lib/infer", "AVal")
 @js.native
-class AValCls () extends AVal
+class AValCls () extends AVal {
+  /* CompleteClass */
+  override def addType(args: js.Any*): scala.Unit = js.native
+  /* CompleteClass */
+  override def forAllProps(args: js.Any*): scala.Unit = js.native
+  /* CompleteClass */
+  override def gatherProperties(args: js.Any*): scala.Unit = js.native
+  /* CompleteClass */
+  override def getFunctionType(args: js.Any*): js.UndefOr[ANull] = js.native
+  /* CompleteClass */
+  override def getObjType(args: js.Any*): js.UndefOr[ANull | scala.Null] = js.native
+  /* CompleteClass */
+  override def getProp(args: js.Any*): ANull = js.native
+  /* CompleteClass */
+  override def getSymbolType(args: js.Any*): js.UndefOr[ANull] = js.native
+  /* CompleteClass */
+  override def getType(args: js.Any*): js.UndefOr[ANull | scala.Null] = js.native
+  /* CompleteClass */
+  override def hasType(args: js.Any*): scala.Boolean = js.native
+  /* CompleteClass */
+  override def isEmpty(args: js.Any*): scala.Boolean = js.native
+  /* CompleteClass */
+  override def propHint(args: js.Any*): js.UndefOr[java.lang.String] = js.native
+  /* CompleteClass */
+  override def propagate(args: js.Any*): scala.Unit = js.native
+  /* CompleteClass */
+  override def propagatesTo(): js.Any = js.native
+  /* CompleteClass */
+  override def toString(args: js.Any*): java.lang.String = js.native
+  /* CompleteClass */
+  override def typeHint(args: js.Any*): js.UndefOr[ANull | scala.Null] = js.native
+}
 

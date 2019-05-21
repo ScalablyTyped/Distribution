@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteWrite extends js.Object {
   var changed: scala.Boolean
-  var element: js.UndefOr[stdLib.HTMLElement]
+  var element: js.UndefOr[stdLib.HTMLElement] = js.undefined
   var markVisible: js.UndefOr[js.Function0[scala.Unit | js.Promise[scala.Unit]]] = js.undefined
 }
 

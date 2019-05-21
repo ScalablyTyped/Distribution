@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Done extends FindResult {
   var done: findDashPackageDashJsonLib.findDashPackageDashJsonLibNumbers.`true`
-  var filename: js.UndefOr[scala.Nothing]
-  var value: js.UndefOr[scala.Nothing]
+  var filename: js.UndefOr[scala.Nothing] = js.undefined
+  var value: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object Done {

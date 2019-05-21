@@ -107,6 +107,23 @@ trait Mailbox extends js.Object {
     * More information is under {@link Office.UserProfile}
     */
   var userProfile: UserProfile = js.native
+  def addHandlerAsync(eventType: java.lang.String, handler: js.Function1[/* type */ EventType, scala.Unit]): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: java.lang.String,
+    handler: js.Function1[/* type */ EventType, scala.Unit],
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: java.lang.String,
+    handler: js.Function1[/* type */ EventType, scala.Unit],
+    options: AsyncContextOptions
+  ): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: java.lang.String,
+    handler: js.Function1[/* type */ EventType, scala.Unit],
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Adds an event handler for a supported event.
     *
@@ -145,6 +162,7 @@ trait Mailbox extends js.Object {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
+  def convertToEwsId(itemId: java.lang.String, restVersion: java.lang.String): java.lang.String = js.native
   /**
     * Converts an item ID formatted for REST into EWS format.
     *
@@ -189,6 +207,7 @@ trait Mailbox extends js.Object {
     * @param timeValue - A Date object.
     */
   def convertToLocalClientTime(timeValue: stdLib.Date): LocalClientTime = js.native
+  def convertToRestId(itemId: java.lang.String, restVersion: java.lang.String): java.lang.String = js.native
   /**
     * Converts an item ID formatted for EWS into REST format.
     *
@@ -518,6 +537,17 @@ trait Mailbox extends js.Object {
     data: js.Any,
     callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit],
     userContext: js.Any
+  ): scala.Unit = js.native
+  def removeHandlerAsync(eventType: java.lang.String): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: java.lang.String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def removeHandlerAsync(eventType: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: java.lang.String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Removes the event handlers for a supported event type.

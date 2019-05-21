@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CancelValue extends js.Object {
-  var disabled: js.UndefOr[scala.Boolean]
-  var name: js.UndefOr[java.lang.String]
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var value: js.Array[antdLib.esCheckboxGroupMod.CheckboxValueType]
   def cancelValue(value: java.lang.String): scala.Unit
   def registerValue(value: java.lang.String): scala.Unit

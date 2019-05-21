@@ -44,35 +44,45 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   ): this.type = js.native
   def get(path: java.lang.String): js.Any = js.native
   def get(path: js.Array[java.lang.String]): js.Any = js.native
-  def getArg(argName: java.lang.String): graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeArgumentConfig = js.native
+  def getArg(argName: java.lang.String): graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeArgumentConfigAsObject = js.native
   def getArgConfig(argName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLArgumentConfig = js.native
   def getArgNames(): js.Array[java.lang.String] = js.native
   def getArgTC(argName: java.lang.String): graphqlDashComposeLib.esmInputTypeComposerMod.InputTypeComposer[TContext] = js.native
   def getArgType(argName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLInputType = js.native
   def getArgs(): graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeFieldConfigArgumentMap[TArgs] = js.native
   def getDescription(): java.lang.String | scala.Null = js.native
-  // -----------------------------------------------
-  // Misc methods
-  // -----------------------------------------------
+  /**
+    *  -----------------------------------------------
+    * Misc methods
+    * -----------------------------------------------
+    */
   def getFieldConfig(): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
   def getFieldConfig(opts: graphqlDashComposeLib.Anon_ProjectionProjectionType): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[TSource, TContext, TArgs] = js.native
   def getKind(): ResolverKinds | scala.Unit = js.native
-  // -----------------------------------------------
-  // Debug methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Debug methods
+    * -----------------------------------------------
+    */
   def getNestedName(): java.lang.String = js.native
-  // -----------------------------------------------
-  // Resolve methods
-  // -----------------------------------------------
+  /**
+    *  -----------------------------------------------
+    * Resolve methods
+    * -----------------------------------------------
+    */
   def getResolve(): ResolverRpCb[TSource, TContext, TArgs] = js.native
-  // -----------------------------------------------
-  // Output type methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Output type methods
+    * -----------------------------------------------
+    */
   def getType(): graphqlLib.typeDefinitionMod.GraphQLOutputType = js.native
   def getTypeComposer(): graphqlDashComposeLib.esmObjectTypeComposerMod.ObjectTypeComposer[TSource, TContext] = js.native
-  // -----------------------------------------------
-  // Args methods
-  // -----------------------------------------------
+  /**
+    *  -----------------------------------------------
+    * Args methods
+    * -----------------------------------------------
+    */
   def hasArg(argName: java.lang.String): scala.Boolean = js.native
   def isRequired(argName: java.lang.String): scala.Boolean = js.native
   def makeOptional(argNameOrArray: java.lang.String): this.type = js.native
@@ -99,9 +109,42 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   def toDebugStructure(): js.Object = js.native
   def toDebugStructure(colors: scala.Boolean): js.Object = js.native
   def toString(colors: scala.Boolean): java.lang.String = js.native
-  // -----------------------------------------------
-  // Wrap methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Wrap methods
+    * -----------------------------------------------
+    */
+  /**
+    * You may construct a new resolver with wrapped logic:
+    *
+    * @example
+    *     const log = [];
+    *
+    *     const mw1 = async (resolve, source, args, context, info) => {
+    *       log.push('m1.before');
+    *       const res = await resolve(source, args, context, info);
+    *       log.push('m1.after');
+    *       return res;
+    *     };
+    *
+    *     const mw2 = async (resolve, source, args, context, info) => {
+    *       log.push('m2.before');
+    *       const res = await resolve(source, args, context, info);
+    *       log.push('m2.after');
+    *       return res;
+    *     };
+    *
+    *     const newResolver = Resolver.withMiddlewares([mw1, mw2]);
+    *     await newResolver.resolve({});
+    *
+    *     expect(log).toEqual([
+    *       'm1.before',
+    *       'm2.before',
+    *       'call resolve',
+    *       'm2.after',
+    *       'm1.after'
+    *     ]);
+    */
   def withMiddlewares(middlewares: js.Array[ResolverMiddleware[TSource, TContext, TArgs]]): Resolver[TSource, TContext, TArgs, _] = js.native
   def wrap[TNewSource, TNewArgs](): Resolver[TNewSource, TContext, TNewArgs, _] = js.native
   def wrap[TNewSource, TNewArgs](cb: ResolverWrapCb[TNewSource, TSource, TContext, TNewArgs, TArgs]): Resolver[TNewSource, TContext, TNewArgs, _] = js.native

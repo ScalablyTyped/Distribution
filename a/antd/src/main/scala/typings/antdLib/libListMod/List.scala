@@ -18,7 +18,7 @@ trait List[T]
     prefixCls: java.lang.String,
     renderEmpty: js.Function1[/* componentName */ js.UndefOr[java.lang.String], reactLib.reactMod.ReactNode]
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderItem(item: js.Any, index: scala.Double): reactLib.reactMod.ReactNode = js.native
+  def renderItem(item: js.Any, index: scala.Double): js.UndefOr[js.Object | scala.Null] = js.native
   def renderList(hasGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def triggerPaginationEvent(eventName: java.lang.String): js.Function2[/* page */ scala.Double, /* pageSize */ scala.Double, scala.Unit] = js.native
 }

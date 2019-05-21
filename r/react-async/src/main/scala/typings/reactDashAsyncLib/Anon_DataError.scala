@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DataError[T] extends js.Object {
-  var data: js.UndefOr[T]
-  var error: js.UndefOr[stdLib.Error]
-  var finishedAt: js.UndefOr[scala.Nothing]
+  var data: js.UndefOr[T] = js.undefined
+  var error: js.UndefOr[stdLib.Error] = js.undefined
+  var finishedAt: js.UndefOr[scala.Nothing] = js.undefined
   var isFulfilled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var isInitial: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var isLoading: reactDashAsyncLib.reactDashAsyncLibNumbers.`true`
@@ -18,7 +18,7 @@ trait Anon_DataError[T] extends js.Object {
   var isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var startedAt: stdLib.Date
   var status: reactDashAsyncLib.reactDashAsyncLibStrings.pending
-  var value: js.UndefOr[T | stdLib.Error]
+  var value: js.UndefOr[T | stdLib.Error] = js.undefined
 }
 
 object Anon_DataError {

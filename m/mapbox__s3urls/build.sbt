@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__s3urls"
-version := "1.5-dt-20190128Z-5899d9"
+version := "1.5-dt-20190128Z-c3bee6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeSessionsRequest extends js.Object {
   /**
-    * The authentication method. Specify API for a user authenticated using a streaming URL, SAML for a SAML 2.0-federated user, or USERPOOL for a user in the AppStream 2.0 user pool. The default is to authenticate users using a streaming URL.
+    * The authentication method. Specify API for a user authenticated using a streaming URL or SAML for a SAML federated user. The default is to authenticate users using a streaming URL.
     */
   var AuthenticationType: js.UndefOr[AuthenticationType] = js.undefined
   /**

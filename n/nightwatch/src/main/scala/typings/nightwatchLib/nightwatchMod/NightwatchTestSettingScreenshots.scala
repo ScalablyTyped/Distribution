@@ -30,7 +30,7 @@ object NightwatchTestSettingScreenshots {
     end_session_on_fail: scala.Boolean,
     exclude: js.Array[java.lang.String],
     filter: java.lang.String,
-    globals: js.Any,
+    globals: NightwatchGlobals,
     launch_url: java.lang.String,
     log_screenshot_data: scala.Boolean,
     output: scala.Boolean,

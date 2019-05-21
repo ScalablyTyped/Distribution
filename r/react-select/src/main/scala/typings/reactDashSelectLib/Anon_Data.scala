@@ -5,21 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Data extends js.Object {
-  var data: js.Any = js.native
-  var id: scala.Double = js.native
-  var index: scala.Double = js.native
-  var isDisabled: scala.Boolean = js.native
-  var isFocused: scala.Boolean = js.native
-  var isSelected: scala.Boolean = js.native
-  var label: java.lang.String = js.native
-  @JSName("onClick")
-  var onClick_Original: reactDashSelectLib.libTypesMod.MouseEventHandler = js.native
-  @JSName("onMouseOver")
-  var onMouseOver_Original: reactDashSelectLib.libTypesMod.MouseEventHandler = js.native
-  var value: js.Any = js.native
-  def onClick(event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  def onMouseOver(event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  var data: js.Any
+  var id: scala.Double
+  var index: scala.Double
+  var isDisabled: scala.Boolean
+  var isFocused: scala.Boolean
+  var isSelected: scala.Boolean
+  var label: java.lang.String
+  var onClick: reactDashSelectLib.libTypesMod.MouseEventHandler
+  var onMouseOver: reactDashSelectLib.libTypesMod.MouseEventHandler
+  var value: js.Any
+}
+
+object Anon_Data {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    id: scala.Double,
+    index: scala.Double,
+    isDisabled: scala.Boolean,
+    isFocused: scala.Boolean,
+    isSelected: scala.Boolean,
+    label: java.lang.String,
+    onClick: reactDashSelectLib.libTypesMod.MouseEventHandler,
+    onMouseOver: reactDashSelectLib.libTypesMod.MouseEventHandler,
+    value: js.Any
+  ): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data, id = id, index = index, isDisabled = isDisabled, isFocused = isFocused, isSelected = isSelected, label = label, onClick = onClick, onMouseOver = onMouseOver, value = value)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
 }
 

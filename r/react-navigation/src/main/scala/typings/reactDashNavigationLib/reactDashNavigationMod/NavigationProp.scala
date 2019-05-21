@@ -5,11 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait NavigationProp[S] extends js.Object {
-  @JSName("dispatch")
-  var dispatch_Original: NavigationDispatch = js.native
-  var state: S = js.native
-  def dispatch(action: NavigationAction): scala.Boolean = js.native
+  var dispatch: NavigationDispatch
+  var state: S
+}
+
+object NavigationProp {
+  @scala.inline
+  def apply[S](dispatch: NavigationDispatch, state: S): NavigationProp[S] = {
+    val __obj = js.Dynamic.literal(dispatch = dispatch, state = state.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[NavigationProp[S]]
+  }
 }
 

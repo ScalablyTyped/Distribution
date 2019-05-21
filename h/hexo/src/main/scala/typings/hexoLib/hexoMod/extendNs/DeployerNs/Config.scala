@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Config
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  val `type`: js.UndefOr[java.lang.String]
+  val `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Config {

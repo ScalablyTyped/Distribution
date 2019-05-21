@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IMeteorService extends js.Object {
-  @JSName("loginWithFacebook")
-  var loginWithFacebook_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithGithub")
-  var loginWithGithub_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithGoogle")
-  var loginWithGoogle_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithMeetup")
-  var loginWithMeetup_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithTwitter")
-  var loginWithTwitter_Original: ILoginWithExternalService = js.native
-  @JSName("loginWithWeibo")
-  var loginWithWeibo_Original: ILoginWithExternalService = js.native
+  var loginWithFacebook: ILoginWithExternalService = js.native
+  var loginWithGithub: ILoginWithExternalService = js.native
+  var loginWithGoogle: ILoginWithExternalService = js.native
+  var loginWithMeetup: ILoginWithExternalService = js.native
+  var loginWithTwitter: ILoginWithExternalService = js.native
+  var loginWithWeibo: ILoginWithExternalService = js.native
   // <- User Authentication END
   // $meteorUtils BEGIN ->
   /**
@@ -124,10 +118,6 @@ trait IMeteorService extends js.Object {
     */
   def getPicture(): angularLib.angularMod.IPromise[_] = js.native
   def getPicture(options: angularDashMeteorLib.Anon_Height): angularLib.angularMod.IPromise[_] = js.native
-  def loginWithFacebook(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
-  def loginWithGithub(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
-  def loginWithGoogle(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
-  def loginWithMeetup(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
   def loginWithPassword(user: angularDashMeteorLib.Anon_Email, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
   def loginWithPassword(user: angularDashMeteorLib.Anon_Id, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
   def loginWithPassword(user: angularDashMeteorLib.Anon_Username, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
@@ -138,8 +128,6 @@ trait IMeteorService extends js.Object {
     * @param password - The user's password.
     */
   def loginWithPassword(user: java.lang.String, password: java.lang.String): angularLib.angularMod.IPromise[scala.Unit] = js.native
-  def loginWithTwitter(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
-  def loginWithWeibo(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.IPromise[scala.Unit] = js.native
   /**
     * Log the user out.
     *

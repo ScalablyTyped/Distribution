@@ -16,8 +16,7 @@ class EditorCore protected ()
 @JSImport("rc-editor-core/es", "EditorCore")
 @js.native
 object EditorCore extends js.Object {
-  @JSName("GetText")
-  var GetText_Original: js.Function2[
+  var GetText: js.Function2[
     /* editorState */ draftDashJsLib.draftDashJsMod.EditorState, 
     /* options */ js.UndefOr[rcDashEditorDashCoreLib.Anon_Encode], 
     java.lang.String
@@ -25,11 +24,6 @@ object EditorCore extends js.Object {
   var childContextTypes: rcDashEditorDashCoreLib.Anon_GetEditorState = js.native
   var defaultProps: rcDashEditorDashCoreLib.Anon_MultiLines = js.native
   def GetHTML(editorState: js.Any): js.Any = js.native
-  def GetText(editorState: draftDashJsLib.draftDashJsMod.EditorState): java.lang.String = js.native
-  def GetText(
-    editorState: draftDashJsLib.draftDashJsMod.EditorState,
-    options: rcDashEditorDashCoreLib.Anon_Encode
-  ): java.lang.String = js.native
   def ToEditorState(text: java.lang.String): draftDashJsLib.draftDashJsMod.EditorState = js.native
 }
 

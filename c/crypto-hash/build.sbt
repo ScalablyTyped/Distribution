@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "crypto-hash"
-version := "1.2.0-fa9f40"
+version := "1.2.1-fa9f40"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

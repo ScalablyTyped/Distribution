@@ -5,20 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait CommonFieldInputProps extends js.Object {
-  var name: java.lang.String = js.native
-  @JSName("onDragStart")
-  var onDragStart_Original: EventHandler[reactLib.reactMod.DragEvent[_]] = js.native
-  @JSName("onDrop")
-  var onDrop_Original: EventHandler[reactLib.reactMod.DragEvent[_]] = js.native
-  @JSName("onFocus")
-  var onFocus_Original: EventHandler[reactLib.reactMod.FocusEvent[_]] = js.native
-  def onDragStart(event: reactLib.reactMod.DragEvent[_]): scala.Unit = js.native
-  def onDragStart(event: reactLib.reactMod.DragEvent[_], name: java.lang.String): scala.Unit = js.native
-  def onDrop(event: reactLib.reactMod.DragEvent[_]): scala.Unit = js.native
-  def onDrop(event: reactLib.reactMod.DragEvent[_], name: java.lang.String): scala.Unit = js.native
-  def onFocus(event: reactLib.reactMod.FocusEvent[_]): scala.Unit = js.native
-  def onFocus(event: reactLib.reactMod.FocusEvent[_], name: java.lang.String): scala.Unit = js.native
+  var name: java.lang.String
+  var onDragStart: EventHandler[reactLib.reactMod.DragEvent[_]]
+  var onDrop: EventHandler[reactLib.reactMod.DragEvent[_]]
+  var onFocus: EventHandler[reactLib.reactMod.FocusEvent[_]]
+}
+
+object CommonFieldInputProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    onDragStart: EventHandler[reactLib.reactMod.DragEvent[_]],
+    onDrop: EventHandler[reactLib.reactMod.DragEvent[_]],
+    onFocus: EventHandler[reactLib.reactMod.FocusEvent[_]]
+  ): CommonFieldInputProps = {
+    val __obj = js.Dynamic.literal(name = name, onDragStart = onDragStart, onDrop = onDrop, onFocus = onFocus)
+  
+    __obj.asInstanceOf[CommonFieldInputProps]
+  }
 }
 

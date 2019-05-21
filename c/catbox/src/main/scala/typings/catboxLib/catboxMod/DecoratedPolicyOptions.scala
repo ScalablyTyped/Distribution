@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   /**
     * @default false
     */
-  var getDecoratedValue: js.UndefOr[scala.Boolean]
+  var getDecoratedValue: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object DecoratedPolicyOptions {

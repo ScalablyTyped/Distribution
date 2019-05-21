@@ -428,7 +428,7 @@ trait Anon_Absolute extends js.Object {
   var backgroundAttachment: js.UndefOr[java.lang.String] = js.undefined
   var backgroundBlendMode: js.UndefOr[java.lang.String] = js.undefined
   var backgroundClip: js.UndefOr[java.lang.String] = js.undefined
-  var backgroundColor: js.UndefOr[java.lang.String]
+  var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var backgroundImage: js.UndefOr[java.lang.String] = js.undefined
   var backgroundOrigin: js.UndefOr[java.lang.String] = js.undefined
   var backgroundPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined

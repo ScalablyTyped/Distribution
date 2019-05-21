@@ -10,7 +10,7 @@ trait WithStylesOptions[ClassKey /* <: java.lang.String */] extends js.Object {
   var classNamePrefix: js.UndefOr[java.lang.String] = js.undefined
   var element: js.UndefOr[stdLib.HTMLStyleElement] = js.undefined
   var flip: js.UndefOr[scala.Boolean] = js.undefined
-  var generateClassName: js.UndefOr[jssLib.jssMod.GenerateClassName[ClassKey]] = js.undefined
+  var generateClassName: js.UndefOr[js.Function1[/* rule */ jssLib.jssMod.Rule, java.lang.String]] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined
   var link: js.UndefOr[scala.Boolean] = js.undefined
   var media: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +25,7 @@ object WithStylesOptions {
     classNamePrefix: java.lang.String = null,
     element: stdLib.HTMLStyleElement = null,
     flip: js.UndefOr[scala.Boolean] = js.undefined,
-    generateClassName: jssLib.jssMod.GenerateClassName[ClassKey] = null,
+    generateClassName: /* rule */ jssLib.jssMod.Rule => java.lang.String = null,
     index: scala.Int | scala.Double = null,
     link: js.UndefOr[scala.Boolean] = js.undefined,
     media: java.lang.String = null,
@@ -37,7 +37,7 @@ object WithStylesOptions {
     if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix)
     if (element != null) __obj.updateDynamic("element")(element)
     if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
-    if (generateClassName != null) __obj.updateDynamic("generateClassName")(generateClassName)
+    if (generateClassName != null) __obj.updateDynamic("generateClassName")(js.Any.fromFunction1(generateClassName))
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
     if (media != null) __obj.updateDynamic("media")(media)

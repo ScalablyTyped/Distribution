@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
      with astDashTypesLib.genKindsMod.NodeKind
      with astDashTypesLib.genKindsMod.PatternKind
      with astDashTypesLib.genKindsMod.PrintableKind {
-  var constraint: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeKind]
-  var default: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeKind]
+  var constraint: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeKind] = js.undefined
+  var default: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeKind] = js.undefined
   var name: java.lang.String
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameter
 }

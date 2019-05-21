@@ -15,11 +15,11 @@ trait IOS extends js.Object {
     * RIM Tablet OS, RISC OS, Sailfish, Series40, Slackware, Solaris, SUSE, Symbian, Tizen,
     * Ubuntu, UNIX, VectorLinux, WebOS, Windows [Phone/Mobile], Zenwalk
     */
-  var name: js.UndefOr[java.lang.String]
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Determined dynamically
     */
-  var version: js.UndefOr[java.lang.String]
+  var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IOS {

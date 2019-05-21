@@ -9,7 +9,7 @@ trait LocalizationProps extends js.Object {
   /**
     * Country code for your device
     */
-  var country: js.UndefOr[java.lang.String | scala.Null]
+  var country: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
     * This will return `true` if the current language is Right-to-Left
     */
@@ -17,7 +17,7 @@ trait LocalizationProps extends js.Object {
   /**
     * A list of all the supported ISO codes
     */
-  var isoCurrencyCodes: js.UndefOr[js.Array[java.lang.String] | scala.Null]
+  var isoCurrencyCodes: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
   /**
     * Native device language, returned in standard format. ex: `en-US`, `es-US`
     */

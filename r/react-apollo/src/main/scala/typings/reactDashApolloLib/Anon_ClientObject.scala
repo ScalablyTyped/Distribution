@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ClientObject extends js.Object {
-  @JSName("client")
-  var client_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  def client(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var client: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+}
+
+object Anon_ClientObject {
+  @scala.inline
+  def apply(client: propDashTypesLib.propDashTypesMod.Requireable[js.Object]): Anon_ClientObject = {
+    val __obj = js.Dynamic.literal(client = client)
+  
+    __obj.asInstanceOf[Anon_ClientObject]
+  }
 }
 

@@ -9,7 +9,7 @@ trait FormCreateOption[T] extends js.Object {
   var mapPropsToFields: js.UndefOr[js.Function1[/* props */ T, scala.Unit]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onFieldsChange: js.UndefOr[
-    js.Function3[/* props */ T, /* fields */ js.Object, /* allFields */ js.Any, scala.Unit]
+    js.Function3[/* props */ T, /* fields */ js.Any, /* allFields */ js.Any, scala.Unit]
   ] = js.undefined
   var onValuesChange: js.UndefOr[
     js.Function3[/* props */ T, /* changedValues */ js.Any, /* allValues */ js.Any, scala.Unit]
@@ -23,7 +23,7 @@ object FormCreateOption {
   def apply[T](
     mapPropsToFields: /* props */ T => scala.Unit = null,
     name: java.lang.String = null,
-    onFieldsChange: (/* props */ T, /* fields */ js.Object, /* allFields */ js.Any) => scala.Unit = null,
+    onFieldsChange: (/* props */ T, /* fields */ js.Any, /* allFields */ js.Any) => scala.Unit = null,
     onValuesChange: (/* props */ T, /* changedValues */ js.Any, /* allValues */ js.Any) => scala.Unit = null,
     validateMessages: FormCreateOptionMessages = null,
     withRef: js.UndefOr[scala.Boolean] = js.undefined

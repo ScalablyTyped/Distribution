@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aframe"
-version := "0.8-dt-20190328Z-56efd2"
+version := "0.8-dt-20190328Z-39213f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -225,6 +225,15 @@ trait ItemCompose extends Item {
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], scala.Unit]
   ): scala.Unit = js.native
+  def getSelectedDataAsync(
+    coercionType: java.lang.String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[_], scala.Unit]
+  ): scala.Unit = js.native
+  def getSelectedDataAsync(
+    coercionType: java.lang.String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[_], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Asynchronously returns selected data from the subject or body of a message.
     *

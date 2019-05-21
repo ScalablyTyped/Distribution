@@ -18,7 +18,7 @@ object OperationNs extends js.Object {
     extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.AllowTrust]
        with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var assetCode: java.lang.String
-    var authorize: js.UndefOr[scala.Boolean]
+    var authorize: js.UndefOr[scala.Boolean] = js.undefined
     var trustor: java.lang.String
   }
   

@@ -9,12 +9,12 @@ trait StateTransition[TContext, TEvent /* <: EventObject */] extends js.Object {
   var actions: js.Array[ActionObject[TContext, TEvent]]
   var reentryStates: js.UndefOr[
     stdLib.Set[xstateLib.libStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]]]
-  ]
+  ] = js.undefined
   /**
     * The source state that preceded the transition.
     */
-  var source: js.UndefOr[xstateLib.libStateMod.State[TContext, EventObject]]
-  var tree: js.UndefOr[xstateLib.libStateTreeMod.StateTree]
+  var source: js.UndefOr[xstateLib.libStateMod.State[TContext, EventObject]] = js.undefined
+  var tree: js.UndefOr[xstateLib.libStateTreeMod.StateTree] = js.undefined
 }
 
 object StateTransition {

@@ -17,8 +17,6 @@ class default protected () extends Attributor {
   /* CompleteClass */
   override var scope: parchmentLib.distSrcRegistryMod.Scope = js.native
   /* CompleteClass */
-  override var whitelist: js.UndefOr[js.Array[java.lang.String]] = js.native
-  /* CompleteClass */
   override def add(node: stdLib.HTMLElement, value: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */
   override def canAdd(node: stdLib.HTMLElement, value: js.Any): scala.Boolean = js.native

@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.5.0-7cad6b"
+version := "2.5.0-996576"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.11-3e2f2b",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-1927bb",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a3203b",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-06048e",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-36041d",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-59d609",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-06a24b",
-  "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-de1c00",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-18143d",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.11-987548",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-9371e4",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d00fa7",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-129a2d",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-b7b8c5",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-f78ef5",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-3a9110",
+  "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-9f17d6",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-68c78c",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-2d4b37",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-58ff5f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-6e8907")
 publishArtifact in packageDoc := false

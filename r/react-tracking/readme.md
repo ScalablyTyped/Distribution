@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tracking
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 Declarative tracking for React apps.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-tracking 5.0
+// Type definitions for react-tracking 6.0
 // Project: https://github.com/NYTimes/react-tracking
 // Definitions by: Eloy Durán <https://github.com/alloy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

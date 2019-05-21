@@ -13,7 +13,7 @@ trait BrokerSoftwareInfo extends js.Object {
   /**
     * The revision of the configuration to use.
     */
-  var ConfigurationRevision: js.UndefOr[__string] = js.undefined
+  var ConfigurationRevision: js.UndefOr[__long] = js.undefined
   /**
     * The version of Apache Kafka.
     */
@@ -24,12 +24,12 @@ object BrokerSoftwareInfo {
   @scala.inline
   def apply(
     ConfigurationArn: __string = null,
-    ConfigurationRevision: __string = null,
+    ConfigurationRevision: js.UndefOr[__long] = js.undefined,
     KafkaVersion: __string = null
   ): BrokerSoftwareInfo = {
     val __obj = js.Dynamic.literal()
     if (ConfigurationArn != null) __obj.updateDynamic("ConfigurationArn")(ConfigurationArn)
-    if (ConfigurationRevision != null) __obj.updateDynamic("ConfigurationRevision")(ConfigurationRevision)
+    if (!js.isUndefined(ConfigurationRevision)) __obj.updateDynamic("ConfigurationRevision")(ConfigurationRevision)
     if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion)
     __obj.asInstanceOf[BrokerSoftwareInfo]
   }

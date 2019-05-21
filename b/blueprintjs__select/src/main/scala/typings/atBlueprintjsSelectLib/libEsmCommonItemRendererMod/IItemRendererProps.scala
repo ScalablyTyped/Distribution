@@ -5,17 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait IItemRendererProps extends js.Object {
   /** Click event handler to select this item. */
-  @JSName("handleClick")
-  var handleClick_Original: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement] = js.native
-  var index: js.UndefOr[scala.Double] = js.native
+  var handleClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement]
+  var index: js.UndefOr[scala.Double] = js.undefined
   /** Modifiers that describe how to render this item, such as `active` or `disabled`. */
-  var modifiers: IItemModifiers = js.native
+  var modifiers: IItemModifiers
   /** The current query string used to filter the items. */
-  var query: java.lang.String = js.native
-  /** Click event handler to select this item. */
-  def handleClick(event: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  var query: java.lang.String
+}
+
+object IItemRendererProps {
+  @scala.inline
+  def apply(
+    handleClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLElement],
+    modifiers: IItemModifiers,
+    query: java.lang.String,
+    index: scala.Int | scala.Double = null
+  ): IItemRendererProps = {
+    val __obj = js.Dynamic.literal(handleClick = handleClick, modifiers = modifiers, query = query)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IItemRendererProps]
+  }
 }
 

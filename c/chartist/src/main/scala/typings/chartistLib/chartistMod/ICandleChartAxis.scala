@@ -13,7 +13,7 @@ trait ICandleChartAxis extends js.Object {
   /**
     * Allows you to correct label positioning on this axis by positive or negative x and y offset.
     */
-  var labelOffset: js.UndefOr[chartistLib.Anon_X] = js.undefined
+  var labelOffset: js.UndefOr[chartistLib.Anon_XY] = js.undefined
   /**
     * The offset of the chart drawing area to the border of the container
     */
@@ -40,7 +40,7 @@ object ICandleChartAxis {
   @scala.inline
   def apply(
     labelInterpolationFnc: js.Function = null,
-    labelOffset: chartistLib.Anon_X = null,
+    labelOffset: chartistLib.Anon_XY = null,
     offset: scala.Int | scala.Double = null,
     position: java.lang.String = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,

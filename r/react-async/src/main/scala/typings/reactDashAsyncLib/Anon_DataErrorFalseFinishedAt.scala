@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DataErrorFalseFinishedAt[T] extends js.Object {
-  var data: js.UndefOr[T]
+  var data: js.UndefOr[T] = js.undefined
   var error: stdLib.Error
   var finishedAt: stdLib.Date
   var isFulfilled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`

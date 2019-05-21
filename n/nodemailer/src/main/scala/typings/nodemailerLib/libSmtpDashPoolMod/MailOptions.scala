@@ -15,6 +15,7 @@ object MailOptions {
   @scala.inline
   def apply(
     alternatives: js.Array[nodemailerLib.libMailerMod.Attachment] = null,
+    amp: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.AmpAttachment = null,
     attachments: js.Array[nodemailerLib.libMailerMod.Attachment] = null,
     auth: nodemailerLib.libSmtpDashConnectionMod.AuthenticationType = null,
     bcc: java.lang.String | nodemailerLib.libMailerMod.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.Address]) = null,
@@ -47,6 +48,7 @@ object MailOptions {
   ): MailOptions = {
     val __obj = js.Dynamic.literal()
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])

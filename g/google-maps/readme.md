@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://www.npmjs.com/package/google-maps
 // Definitions by: Deividas Bakanas <https://github.com/DeividasBakanas>, Giedrius Grabauskas <https://github.com/GiedriusGrabauskas>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 
 ```
 

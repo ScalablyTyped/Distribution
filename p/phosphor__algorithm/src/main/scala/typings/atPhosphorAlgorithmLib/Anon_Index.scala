@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Index[T] extends js.Object {
   var index: scala.Double
-  var value: js.UndefOr[T]
+  var value: js.UndefOr[T] = js.undefined
 }
 
 object Anon_Index {

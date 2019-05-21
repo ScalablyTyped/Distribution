@@ -48,6 +48,8 @@ object reactDashNativeLibComponents {
   type DrawerLayoutAndroidProps = reactDashNativeLib.reactDashNativeMod.DrawerLayoutAndroidProps
   @scala.inline
   def FlatList[ItemT]: reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.FlatListProps[ItemT]] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.FlatList[ItemT]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.FlatListProps[ItemT]]]
+  @scala.inline
+  def FlatListProps: reactDashNativeLib.reactDashNativeMod.FlatListProps.type = reactDashNativeLib.reactDashNativeMod.FlatListProps
   type FlatListProps[ItemT] = reactDashNativeLib.reactDashNativeMod.FlatListProps[ItemT]
   @scala.inline
   def Group: reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.ARTGroupProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.Group].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.ARTGroupProps]]
@@ -77,11 +79,6 @@ object reactDashNativeLibComponents {
   @scala.inline
   def ListView: reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.ListViewProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.ListView].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.ListViewProps]]
   type ListViewProps = reactDashNativeLib.reactDashNativeMod.ListViewProps
-  @scala.inline
-  def MapView: reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.MapViewProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.MapView].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.MapViewProps]]
-  @scala.inline
-  def MapViewProps: reactDashNativeLib.reactDashNativeMod.MapViewProps.type = reactDashNativeLib.reactDashNativeMod.MapViewProps
-  type MapViewProps = reactDashNativeLib.reactDashNativeMod.MapViewProps
   @scala.inline
   def MaskedViewIOS: reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.MaskedViewIOSProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.MaskedViewIOS].asInstanceOf[reactLib.reactMod.ComponentType[reactDashNativeLib.reactDashNativeMod.MaskedViewIOSProps]]
   @scala.inline

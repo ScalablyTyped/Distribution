@@ -82,28 +82,9 @@ object reactDashDndMod extends js.Object {
   ): reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentEnhancer[CollectedProps] = js.native
   @js.native
   object __EXPERIMENTAL_DND_HOOKS_THAT_MAY_CHANGE_AND_BREAK_MY_BUILD__ extends js.Object {
-    @JSName("useDragLayer")
-    var useDragLayer_Original: reactDashDndLib.Anon_Collect = js.native
-    @JSName("useDrag")
-    var useDrag_Original: reactDashDndLib.Anon_Spec = js.native
-    @JSName("useDrop")
-    var useDrop_Original: reactDashDndLib.Anon_SpecCollectedProps = js.native
-    def useDrag[DragObject /* <: reactDashDndLib.libCjsInterfacesHooksApiMod.DragObjectWithType */, DropResult, CollectedProps](
-      spec: reactDashDndLib.libCjsInterfacesHooksApiMod.DragSourceHookSpec[DragObject, DropResult, CollectedProps]
-    ): js.Tuple3[
-        CollectedProps, 
-        reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragSource, 
-        reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview
-      ] = js.native
-    def useDragLayer[CollectedProps](
-      collect: js.Function1[
-          /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragLayerMonitor, 
-          CollectedProps
-        ]
-    ): CollectedProps = js.native
-    def useDrop[DragObject /* <: reactDashDndLib.libCjsInterfacesHooksApiMod.DragObjectWithType */, DropResult, CollectedProps](
-      spec: reactDashDndLib.libCjsInterfacesHooksApiMod.DropTargetHookSpec[DragObject, DropResult, CollectedProps]
-    ): js.Tuple2[CollectedProps, reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget] = js.native
+    var useDrag: reactDashDndLib.Anon_Spec = js.native
+    var useDragLayer: reactDashDndLib.Anon_Collect = js.native
+    var useDrop: reactDashDndLib.Anon_SpecCollectedProps = js.native
   }
   
 }

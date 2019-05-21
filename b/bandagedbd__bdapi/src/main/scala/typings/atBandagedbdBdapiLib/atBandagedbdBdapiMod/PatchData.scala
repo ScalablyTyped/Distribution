@@ -5,15 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait PatchData extends js.Object {
-  @JSName("CancelPatch")
-  var CancelPatch_Original: CancelPatch = js.native
-  var methodArguments: js.Array[_] = js.native
-  var returnValue: js.Any = js.native
-  var thisObject: js.Object = js.native
-  def CancelPatch(): scala.Unit = js.native
-  def callOriginalMethod(): scala.Unit = js.native
-  def originalMethod(): scala.Unit = js.native
+  var CancelPatch: atBandagedbdBdapiLib.atBandagedbdBdapiMod.CancelPatch
+  var methodArguments: js.Array[_]
+  var returnValue: js.Any
+  var thisObject: js.Object
+  def callOriginalMethod(): scala.Unit
+  def originalMethod(): scala.Unit
+}
+
+object PatchData {
+  @scala.inline
+  def apply(
+    CancelPatch: CancelPatch,
+    callOriginalMethod: () => scala.Unit,
+    methodArguments: js.Array[_],
+    originalMethod: () => scala.Unit,
+    returnValue: js.Any,
+    thisObject: js.Object
+  ): PatchData = {
+    val __obj = js.Dynamic.literal(CancelPatch = CancelPatch, callOriginalMethod = js.Any.fromFunction0(callOriginalMethod), methodArguments = methodArguments, originalMethod = js.Any.fromFunction0(originalMethod), returnValue = returnValue, thisObject = thisObject)
+  
+    __obj.asInstanceOf[PatchData]
+  }
 }
 

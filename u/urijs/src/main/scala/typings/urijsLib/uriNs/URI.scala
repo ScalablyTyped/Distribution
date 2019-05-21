@@ -11,8 +11,10 @@ trait URI extends js.Object {
   def absoluteTo(path: URI): URI = js.native
   def addFragment(fragment: java.lang.String): URI = js.native
   def addQuery(qry: java.lang.String): URI = js.native
+  // tslint:disable-next-line:unified-signatures
   def addQuery(qry: java.lang.String, value: js.Any): URI = js.native
   def addQuery(qry: js.Object): URI = js.native
+  // tslint:disable-next-line:unified-signatures
   def addSearch(key: java.lang.String, value: js.Any): URI = js.native
   def addSearch(qry: java.lang.String): URI = js.native
   def addSearch(qry: js.Object): URI = js.native
@@ -34,74 +36,48 @@ trait URI extends js.Object {
   def fragment(): java.lang.String = js.native
   def fragment(fragment: java.lang.String): URI = js.native
   def fragmentPrefix(prefix: java.lang.String): URI = js.native
-  def hasQuery(name: java.lang.String): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: java.lang.String): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: java.lang.String): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
   def hasQuery(
-    name: java.lang.String,
+    name: /*string | */ js.Any,
     value: js.Array[scala.Boolean | scala.Double | java.lang.String],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: js.Function): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: js.Function, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: scala.Boolean, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: scala.Double): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: scala.Double, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: stdLib.RegExp): scala.Boolean = js.native
-  def hasQuery(name: java.lang.String, value: stdLib.RegExp, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: java.lang.String): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, _]): scala.Boolean = js.native
   def hasQuery(
-    name: js.Any,
-    value: js.Array[scala.Boolean | scala.Double | java.lang.String],
+    name: /*string | */ js.Any,
+    value: js.Function1[/* repeated */ js.Any, _],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: js.Function): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: js.Function, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: scala.Boolean, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: scala.Double): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: scala.Double, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: stdLib.RegExp): scala.Boolean = js.native
-  def hasQuery(name: js.Any, value: stdLib.RegExp, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: java.lang.String): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: scala.Boolean): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: scala.Boolean, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: scala.Double): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: scala.Double, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: stdLib.RegExp): scala.Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: stdLib.RegExp, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: java.lang.String): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
   def hasSearch(
-    name: java.lang.String,
+    name: /*string | */ js.Any,
     value: js.Array[scala.Boolean | scala.Double | java.lang.String],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: js.Function): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: js.Function, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: scala.Boolean, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: scala.Double): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: scala.Double, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: stdLib.RegExp): scala.Boolean = js.native
-  def hasSearch(name: java.lang.String, value: stdLib.RegExp, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: java.lang.String): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: java.lang.String, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: js.Array[scala.Boolean | scala.Double | java.lang.String]): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: js.Function1[/* repeated */ js.Any, _]): scala.Boolean = js.native
   def hasSearch(
-    name: js.Any,
-    value: js.Array[scala.Boolean | scala.Double | java.lang.String],
+    name: /*string | */ js.Any,
+    value: js.Function1[/* repeated */ js.Any, _],
     withinArray: scala.Boolean
   ): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: js.Function): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: js.Function, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: scala.Boolean, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: scala.Double): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: scala.Double, withinArray: scala.Boolean): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: stdLib.RegExp): scala.Boolean = js.native
-  def hasSearch(name: js.Any, value: stdLib.RegExp, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: scala.Boolean): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: scala.Boolean, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: scala.Double): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: scala.Double, withinArray: scala.Boolean): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: stdLib.RegExp): scala.Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: stdLib.RegExp, withinArray: scala.Boolean): scala.Boolean = js.native
   def hash(): java.lang.String = js.native
   def hash(hash: java.lang.String): URI = js.native
   def host(): java.lang.String = js.native
@@ -145,9 +121,11 @@ trait URI extends js.Object {
   def query(qry: scala.Boolean): js.Object = js.native
   def readable(): java.lang.String = js.native
   def relativeTo(path: java.lang.String): URI = js.native
+  // tslint:disable-next-line:unified-signatures
   def removeQuery(name: java.lang.String, value: java.lang.String): URI = js.native
   def removeQuery(qry: java.lang.String): URI = js.native
   def removeQuery(qry: js.Object): URI = js.native
+  // tslint:disable-next-line:unified-signatures
   def removeSearch(name: java.lang.String, value: java.lang.String): URI = js.native
   def removeSearch(qry: java.lang.String): URI = js.native
   def removeSearch(qry: js.Object): URI = js.native
@@ -162,12 +140,12 @@ trait URI extends js.Object {
   def segment(): js.Array[java.lang.String] = js.native
   def segment(position: scala.Double): js.UndefOr[java.lang.String] = js.native
   def segment(position: scala.Double, level: java.lang.String): URI = js.native
-  def segment(segment: java.lang.String): URI = js.native
+  def segment(segments: java.lang.String): URI = js.native
   def segment(segments: js.Array[java.lang.String]): URI = js.native
   def segmentCoded(): js.Array[java.lang.String] = js.native
   def segmentCoded(position: scala.Double): java.lang.String = js.native
   def segmentCoded(position: scala.Double, level: java.lang.String): URI = js.native
-  def segmentCoded(segment: java.lang.String): URI = js.native
+  def segmentCoded(segments: java.lang.String): URI = js.native
   def segmentCoded(segments: js.Array[java.lang.String]): URI = js.native
   def setQuery(key: java.lang.String, value: java.lang.String): URI = js.native
   def setQuery(qry: js.Object): URI = js.native

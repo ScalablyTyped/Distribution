@@ -5,403 +5,200 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ArialabelAutoHeight extends js.Object {
-  @JSName("aria-label")
-  var `aria-label_Original`: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("autoHeight")
-  var autoHeight_Original: reactLib.reactMod.Requireable[scala.Boolean] = js.native
-  @JSName("children")
-  var children_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.Column] = js.native
-  @JSName("className")
-  var className_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("disableHeader")
-  var disableHeader_Original: reactLib.reactMod.Requireable[scala.Boolean] = js.native
-  @JSName("estimatedRowSize")
-  var estimatedRowSize_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("gridClassName")
-  var gridClassName_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("gridStyle")
-  var gridStyle_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
-  @JSName("headerClassName")
-  var headerClassName_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("headerHeight")
-  var headerHeight_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("headerRowRenderer")
-  var headerRowRenderer_Original: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer] = js.native
-  @JSName("headerStyle")
-  var headerStyle_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
-  @JSName("height")
-  var height_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("id")
-  var id_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("noRowsRenderer")
-  var noRowsRenderer_Original: reactLib.reactMod.Requireable[js.Function0[reactLib.reactMod.Global.JSXNs.Element]] = js.native
-  @JSName("onHeaderClick")
-  var onHeaderClick_Original: reactLib.reactMod.Requireable[
+  var `aria-label`: reactLib.reactMod.Requireable[java.lang.String]
+  var autoHeight: reactLib.reactMod.Requireable[scala.Boolean]
+  var children: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.Column]
+  var className: reactLib.reactMod.Requireable[java.lang.String]
+  var disableHeader: reactLib.reactMod.Requireable[scala.Boolean]
+  var estimatedRowSize: reactLib.reactMod.Validator[scala.Double]
+  var gridClassName: reactLib.reactMod.Requireable[java.lang.String]
+  var gridStyle: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties]
+  var headerClassName: reactLib.reactMod.Requireable[java.lang.String]
+  var headerHeight: reactLib.reactMod.Validator[scala.Double]
+  var headerRowRenderer: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer]
+  var headerStyle: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties]
+  var height: reactLib.reactMod.Validator[scala.Double]
+  var id: reactLib.reactMod.Requireable[java.lang.String]
+  var noRowsRenderer: reactLib.reactMod.Requireable[js.Function0[reactLib.reactMod.Global.JSXNs.Element]]
+  var onHeaderClick: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.HeaderMouseEventHandlerParams, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onRowClick")
-  var onRowClick_Original: reactLib.reactMod.Requireable[
+  ]
+  var onRowClick: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onRowDoubleClick")
-  var onRowDoubleClick_Original: reactLib.reactMod.Requireable[
+  ]
+  var onRowDoubleClick: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onRowMouseOut")
-  var onRowMouseOut_Original: reactLib.reactMod.Requireable[
+  ]
+  var onRowMouseOut: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onRowMouseOver")
-  var onRowMouseOver_Original: reactLib.reactMod.Requireable[
+  ]
+  var onRowMouseOver: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onRowsRendered")
-  var onRowsRendered_Original: reactLib.reactMod.Requireable[
+  ]
+  var onRowsRendered: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onScroll")
-  var onScroll_Original: reactLib.reactMod.Requireable[
+  ]
+  var onScroll: reactLib.reactMod.Requireable[
     js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.ScrollEventData, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("overscanRowCount")
-  var overscanRowCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("rowClassName")
-  var rowClassName_Original: reactLib.reactMod.Requireable[
+  ]
+  var overscanRowCount: reactLib.reactMod.Validator[scala.Double]
+  var rowClassName: reactLib.reactMod.Requireable[
     java.lang.String | (js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
       java.lang.String
     ])
-  ] = js.native
-  @JSName("rowCount")
-  var rowCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("rowGetter")
-  var rowGetter_Original: reactLib.reactMod.Validator[
+  ]
+  var rowCount: reactLib.reactMod.Validator[scala.Double]
+  var rowGetter: reactLib.reactMod.Validator[
     js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, _]
-  ] = js.native
-  @JSName("rowHeight")
-  var rowHeight_Original: reactLib.reactMod.Validator[
+  ]
+  var rowHeight: reactLib.reactMod.Validator[
     scala.Double | (js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double])
-  ] = js.native
-  @JSName("rowRenderer")
-  var rowRenderer_Original: reactLib.reactMod.Requireable[
+  ]
+  var rowRenderer: reactLib.reactMod.Requireable[
     js.Function1[
       /* props */ reactDashVirtualizedLib.distEsTableMod.TableRowProps, 
       reactLib.reactMod.ReactNode
     ]
-  ] = js.native
-  @JSName("rowStyle")
-  var rowStyle_Original: reactLib.reactMod.Validator[
+  ]
+  var rowStyle: reactLib.reactMod.Validator[
     reactLib.reactMod.CSSProperties | (js.Function1[
       /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
       reactLib.reactMod.CSSProperties
     ])
-  ] = js.native
-  @JSName("scrollToAlignment")
-  var scrollToAlignment_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment] = js.native
-  @JSName("scrollToIndex")
-  var scrollToIndex_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("scrollTop")
-  var scrollTop_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("sortBy")
-  var sortBy_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("sortDirection")
-  var sortDirection_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.SortDirectionType] = js.native
-  @JSName("sort")
-  var sort_Original: reactLib.reactMod.Requireable[js.Function1[/* params */ Anon_SortBy, scala.Unit]] = js.native
-  @JSName("style")
-  var style_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
-  @JSName("tabIndex")
-  var tabIndex_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("width")
-  var width_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  def `aria-label`(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def autoHeight(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def children(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def className(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def disableHeader(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def estimatedRowSize(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def gridClassName(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def gridStyle(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def headerClassName(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def headerHeight(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def headerRowRenderer(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def headerStyle(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def height(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def id(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def noRowsRenderer(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onHeaderClick(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onRowClick(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onRowDoubleClick(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onRowMouseOut(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onRowMouseOver(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onRowsRendered(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onScroll(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def overscanRowCount(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowClassName(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowCount(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowGetter(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowHeight(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowRenderer(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowStyle(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def scrollToAlignment(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def scrollToIndex(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def scrollTop(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def sort(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def sortBy(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def sortDirection(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def style(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def tabIndex(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def width(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  ]
+  var scrollToAlignment: reactLib.reactMod.Validator[reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment]
+  var scrollToIndex: reactLib.reactMod.Validator[scala.Double]
+  var scrollTop: reactLib.reactMod.Requireable[scala.Double]
+  var sort: reactLib.reactMod.Requireable[js.Function1[/* params */ Anon_SortBy, scala.Unit]]
+  var sortBy: reactLib.reactMod.Requireable[java.lang.String]
+  var sortDirection: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.SortDirectionType]
+  var style: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties]
+  var tabIndex: reactLib.reactMod.Requireable[scala.Double]
+  var width: reactLib.reactMod.Validator[scala.Double]
+}
+
+object Anon_ArialabelAutoHeight {
+  @scala.inline
+  def apply(
+    `aria-label`: reactLib.reactMod.Requireable[java.lang.String],
+    autoHeight: reactLib.reactMod.Requireable[scala.Boolean],
+    children: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.Column],
+    className: reactLib.reactMod.Requireable[java.lang.String],
+    disableHeader: reactLib.reactMod.Requireable[scala.Boolean],
+    estimatedRowSize: reactLib.reactMod.Validator[scala.Double],
+    gridClassName: reactLib.reactMod.Requireable[java.lang.String],
+    gridStyle: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties],
+    headerClassName: reactLib.reactMod.Requireable[java.lang.String],
+    headerHeight: reactLib.reactMod.Validator[scala.Double],
+    headerRowRenderer: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer],
+    headerStyle: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties],
+    height: reactLib.reactMod.Validator[scala.Double],
+    id: reactLib.reactMod.Requireable[java.lang.String],
+    noRowsRenderer: reactLib.reactMod.Requireable[js.Function0[reactLib.reactMod.Global.JSXNs.Element]],
+    onHeaderClick: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.distEsTableMod.HeaderMouseEventHandlerParams, 
+        scala.Unit
+      ]
+    ],
+    onRowClick: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+        scala.Unit
+      ]
+    ],
+    onRowDoubleClick: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+        scala.Unit
+      ]
+    ],
+    onRowMouseOut: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+        scala.Unit
+      ]
+    ],
+    onRowMouseOver: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+        scala.Unit
+      ]
+    ],
+    onRowsRendered: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+        scala.Unit
+      ]
+    ],
+    onScroll: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.ScrollEventData, 
+        scala.Unit
+      ]
+    ],
+    overscanRowCount: reactLib.reactMod.Validator[scala.Double],
+    rowClassName: reactLib.reactMod.Requireable[
+      java.lang.String | (js.Function1[
+        /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
+        java.lang.String
+      ])
+    ],
+    rowCount: reactLib.reactMod.Validator[scala.Double],
+    rowGetter: reactLib.reactMod.Validator[
+      js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, _]
+    ],
+    rowHeight: reactLib.reactMod.Validator[
+      scala.Double | (js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double])
+    ],
+    rowRenderer: reactLib.reactMod.Requireable[
+      js.Function1[
+        /* props */ reactDashVirtualizedLib.distEsTableMod.TableRowProps, 
+        reactLib.reactMod.ReactNode
+      ]
+    ],
+    rowStyle: reactLib.reactMod.Validator[
+      reactLib.reactMod.CSSProperties | (js.Function1[
+        /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
+        reactLib.reactMod.CSSProperties
+      ])
+    ],
+    scrollToAlignment: reactLib.reactMod.Validator[reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment],
+    scrollToIndex: reactLib.reactMod.Validator[scala.Double],
+    scrollTop: reactLib.reactMod.Requireable[scala.Double],
+    sort: reactLib.reactMod.Requireable[js.Function1[/* params */ Anon_SortBy, scala.Unit]],
+    sortBy: reactLib.reactMod.Requireable[java.lang.String],
+    sortDirection: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.SortDirectionType],
+    style: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties],
+    tabIndex: reactLib.reactMod.Requireable[scala.Double],
+    width: reactLib.reactMod.Validator[scala.Double]
+  ): Anon_ArialabelAutoHeight = {
+    val __obj = js.Dynamic.literal(autoHeight = autoHeight, children = children, className = className, disableHeader = disableHeader, estimatedRowSize = estimatedRowSize, gridClassName = gridClassName, gridStyle = gridStyle, headerClassName = headerClassName, headerHeight = headerHeight, headerRowRenderer = headerRowRenderer, headerStyle = headerStyle, height = height, id = id, noRowsRenderer = noRowsRenderer, onHeaderClick = onHeaderClick, onRowClick = onRowClick, onRowDoubleClick = onRowDoubleClick, onRowMouseOut = onRowMouseOut, onRowMouseOver = onRowMouseOver, onRowsRendered = onRowsRendered, onScroll = onScroll, overscanRowCount = overscanRowCount, rowClassName = rowClassName, rowCount = rowCount, rowGetter = rowGetter, rowHeight = rowHeight, rowRenderer = rowRenderer, rowStyle = rowStyle, scrollToAlignment = scrollToAlignment, scrollToIndex = scrollToIndex, scrollTop = scrollTop, sort = sort, sortBy = sortBy, sortDirection = sortDirection, style = style, tabIndex = tabIndex, width = width)
+    __obj.updateDynamic("aria-label")(`aria-label`)
+    __obj.asInstanceOf[Anon_ArialabelAutoHeight]
+  }
 }
 

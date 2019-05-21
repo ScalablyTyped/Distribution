@@ -10,7 +10,7 @@ trait CommitResult extends js.Object {
   var hash: CommitHash
   var status: js.UndefOr[
     webgmeLib.webgmeLibStrings.SYNCED | webgmeLib.webgmeLibStrings.FORKED | webgmeLib.webgmeLibStrings.CANCELED
-  ]
+  ] = js.undefined
 }
 
 object CommitResult {

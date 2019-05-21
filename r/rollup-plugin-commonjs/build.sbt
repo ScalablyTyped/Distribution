@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-commonjs"
-version := "9.3.4-ecc77a"
+version := "9.3.4-a820c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-4bb05f",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
-  "org.scalablytyped" %%% "rollup" % "1.12.0-c01775",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
+  "org.scalablytyped" %%% "rollup" % "1.12.3-5e63c1",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

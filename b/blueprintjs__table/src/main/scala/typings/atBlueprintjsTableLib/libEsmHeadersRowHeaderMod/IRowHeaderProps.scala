@@ -13,15 +13,10 @@ trait IRowHeaderProps
   /**
     * A callback invoked when user is done resizing the column
     */
-  @JSName("onRowHeightChanged")
-  var onRowHeightChanged_Original: atBlueprintjsTableLib.libEsmInteractionsResizableMod.IIndexedResizeCallback = js.native
+  var onRowHeightChanged: atBlueprintjsTableLib.libEsmInteractionsResizableMod.IIndexedResizeCallback = js.native
   /**
     * Renders the cell for each row header
     */
   var rowHeaderCellRenderer: js.UndefOr[IRowHeaderRenderer] = js.native
-  /**
-    * A callback invoked when user is done resizing the column
-    */
-  def onRowHeightChanged(index: scala.Double, size: scala.Double): scala.Unit = js.native
 }
 

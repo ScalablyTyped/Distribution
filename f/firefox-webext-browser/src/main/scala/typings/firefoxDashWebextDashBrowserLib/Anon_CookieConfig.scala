@@ -29,7 +29,7 @@ trait Anon_CookieConfig extends js.Object {
     * run protected content. The value of this preference is of type boolean, and the default value is `true`.
     * @deprecated Unsupported on Firefox at this time.
     */
-  val protectedContentEnabled: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting]
+  val protectedContentEnabled: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting] = js.undefined
   /**
     * If enabled, the browser sends `referer` headers with your requests. Yes, the name of this preference doesn't
     * match the misspelled header. No, we're not going to change it. The value of this preference is of type boolean,
@@ -50,7 +50,7 @@ trait Anon_CookieConfig extends js.Object {
     * boolean, and the default value is `true`.
     * @deprecated Unsupported on Firefox at this time.
     */
-  val thirdPartyCookiesAllowed: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting]
+  val thirdPartyCookiesAllowed: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting] = js.undefined
   /**
     * Allow users to specify the mode for tracking protection. This setting's value is of type
     * TrackingProtectionModeOption, defaulting to `private_browsing_only`.

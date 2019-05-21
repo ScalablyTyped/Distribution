@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MockjsToJSONSchemaRs extends js.Object {
   var items: js.UndefOr[js.Array[MockjsToJSONSchemaRs]] = js.undefined
-  var name: js.UndefOr[S]
+  var name: js.UndefOr[S] = js.undefined
   var path: js.Array[S]
   var properties: js.UndefOr[js.Array[MockjsToJSONSchemaRs]] = js.undefined
   var rule: js.Object

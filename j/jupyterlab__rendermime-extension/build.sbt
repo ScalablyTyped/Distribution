@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__rendermime-extension"
-version := "0.13.1-df8861"
+version := "0.13.1-b71d40"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
-  "org.scalablytyped" %%% "jupyterlab__application" % "0.19.1-c70871",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-8acb89",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "2.2.1-9b35aa",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-091364",
-  "org.scalablytyped" %%% "jupyterlab__observables" % "2.1.1-a0d67b",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-f7d3f0",
-  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.2.1-8e146c",
-  "org.scalablytyped" %%% "jupyterlab__services" % "3.2.1-a02d4c",
-  "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-5c87e1",
-  "org.scalablytyped" %%% "phosphor__application" % "1.6.0-8fb3e4",
-  "org.scalablytyped" %%% "phosphor__commands" % "1.6.1-4e0b1d",
+  "org.scalablytyped" %%% "jupyterlab__application" % "0.19.1-2eaec4",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "0.19.1-782928",
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "2.2.1-3233d1",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "0.19.1-ea40b6",
+  "org.scalablytyped" %%% "jupyterlab__observables" % "2.1.1-b90faa",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "0.19.1-bc968c",
+  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.2.1-73f556",
+  "org.scalablytyped" %%% "jupyterlab__services" % "3.2.1-bd4353",
+  "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-bf1ab8",
+  "org.scalablytyped" %%% "phosphor__application" % "1.6.0-f1f661",
+  "org.scalablytyped" %%% "phosphor__commands" % "1.6.1-e316ce",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.0-e670f1",
-  "org.scalablytyped" %%% "phosphor__disposable" % "1.1.2-ac46d5",
+  "org.scalablytyped" %%% "phosphor__disposable" % "1.1.2-662fe3",
   "org.scalablytyped" %%% "phosphor__messaging" % "1.2.2-56ae61",
   "org.scalablytyped" %%% "phosphor__signaling" % "1.2.2-ada9c2",
   "org.scalablytyped" %%% "phosphor__virtualdom" % "1.1.2-d794d9",
-  "org.scalablytyped" %%% "phosphor__widgets" % "1.6.0-193f21",
+  "org.scalablytyped" %%% "phosphor__widgets" % "1.6.0-76fa1c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-56dde3",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

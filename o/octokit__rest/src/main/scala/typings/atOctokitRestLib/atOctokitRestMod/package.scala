@@ -170,6 +170,8 @@ package object atOctokitRestMod {
   type ReposDeleteReleaseAssetResponse = js.Object
   type ReposDeleteReleaseResponse = js.Object
   type ReposDisablePagesSiteResponse = js.Object
+  type ReposDisableVulnerabilityAlertsResponse = js.Object
+  type ReposEnableVulnerabilityAlertsResponse = js.Object
   type ReposGetArchiveLinkResponse = js.Object
   type ReposGetCodeFrequencyStatsResponse = js.Array[js.Array[scala.Double]]
   type ReposGetCommitActivityStatsResponse = js.Array[ReposGetCommitActivityStatsResponseItem]

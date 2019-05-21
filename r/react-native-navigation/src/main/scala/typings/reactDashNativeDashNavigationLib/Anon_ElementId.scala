@@ -5,25 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ElementId extends js.Object {
-  @JSName("elementId")
-  var elementId_Original: propDashTypesLib.propDashTypesMod.Validator[java.lang.String] = js.native
-  @JSName("resizeMode")
-  var resizeMode_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  def elementId(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def resizeMode(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var elementId: propDashTypesLib.propDashTypesMod.Validator[java.lang.String]
+  var resizeMode: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+}
+
+object Anon_ElementId {
+  @scala.inline
+  def apply(
+    elementId: propDashTypesLib.propDashTypesMod.Validator[java.lang.String],
+    resizeMode: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_ElementId = {
+    val __obj = js.Dynamic.literal(elementId = elementId, resizeMode = resizeMode)
+  
+    __obj.asInstanceOf[Anon_ElementId]
+  }
 }
 

@@ -56,10 +56,6 @@ class ComputedValue[T] protected ()
   var observers_ComputedValue: stdLib.Set[_] = js.native
   @JSName("observing")
   var observing_ComputedValue: js.Array[mobxLib.libCoreObservableMod.IObservable] = js.native
-  /* CompleteClass */
-  override var onBecomeObservedListeners: js.UndefOr[stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda]] = js.native
-  /* CompleteClass */
-  override var onBecomeUnobservedListeners: js.UndefOr[stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda]] = js.native
   var requiresReaction: js.Any = js.native
   var runId: scala.Double = js.native
   var scope: js.UndefOr[js.Object] = js.native

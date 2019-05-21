@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DragDropContext[BC] extends js.Object {
-  var dragDropManager: js.UndefOr[dndDashCoreLib.libCjsInterfacesMod.DragDropManager[BC]]
+  var dragDropManager: js.UndefOr[dndDashCoreLib.libCjsInterfacesMod.DragDropManager[BC]] = js.undefined
 }
 
 object DragDropContext {

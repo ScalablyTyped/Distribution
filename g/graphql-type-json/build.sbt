@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "graphql-type-json"
-version := "0.3-dt-20190513Z-1061e0"
+version := "0.3-dt-20190513Z-585251"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-06a24b",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-3a9110",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

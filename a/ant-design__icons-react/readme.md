@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons-react
 
-Typings are for version 2.0.0
+Typings are for version 2.0.1
 
 ## Library description:
 <h1 align="center"> Ant Design Icons for React </h1>

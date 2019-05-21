@@ -15,7 +15,7 @@ trait UpdateDirectoryConfigRequest extends js.Object {
     */
   var OrganizationalUnitDistinguishedNames: js.UndefOr[OrganizationalUnitDistinguishedNamesList] = js.undefined
   /**
-    * The credentials for the service account used by the streaming instance to connect to the directory.
+    * The credentials for the service account used by the fleet or image builder to connect to the directory.
     */
   var ServiceAccountCredentials: js.UndefOr[ServiceAccountCredentials] = js.undefined
 }

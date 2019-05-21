@@ -23,7 +23,7 @@ trait CreateUserRequest extends js.Object {
     */
   var MessageAction: js.UndefOr[MessageAction] = js.undefined
   /**
-    * The email address of the user.
+    * The email address of the user.  Users' email addresses are case-sensitive. During login, if they specify an email address that doesn't use the same capitalization as the email address specified when their user pool account was created, a "user does not exist" error message displays. 
     */
   var UserName: Username
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_KeyValueValuesAny[RollupType] extends js.Object {
   var key: java.lang.String
-  var value: js.UndefOr[RollupType]
+  var value: js.UndefOr[RollupType] = js.undefined
   var values: js.Any
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ComponentDescriptor[T /* <: Component[_, System[_]] */] extends js.Object {
   var Component: ComponentConstructor[T]
-  var dependencies: js.UndefOr[js.Array[java.lang.String]]
-  var multiple: js.UndefOr[scala.Boolean]
+  var dependencies: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var multiple: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object ComponentDescriptor {

@@ -53,11 +53,9 @@ object nodeFetchNs extends js.Object {
     def this(body: nodeDashFetchLib.nodeDashFetchMod.BodyInit, init: nodeDashFetchLib.nodeDashFetchMod.ResponseInit) = this()
   }
   
-  def default(url: java.lang.String): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
-  def default(url: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
-  def default(url: nodeDashFetchLib.nodeDashFetchMod.Request): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(url: nodeDashFetchLib.nodeDashFetchMod.RequestInfo): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
   def default(
-    url: nodeDashFetchLib.nodeDashFetchMod.Request,
+    url: nodeDashFetchLib.nodeDashFetchMod.RequestInfo,
     init: nodeDashFetchLib.nodeDashFetchMod.RequestInit
   ): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
   /* static members */

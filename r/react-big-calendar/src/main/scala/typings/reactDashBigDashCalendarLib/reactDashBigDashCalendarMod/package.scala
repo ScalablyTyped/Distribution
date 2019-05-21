@@ -21,7 +21,6 @@ package object reactDashBigDashCalendarMod {
     java.lang.String
   ]
   type DayPropGetter = js.Function1[/* date */ stdLib.Date, reactDashBigDashCalendarLib.Anon_ClassName]
-  type Event = js.Object
   type EventPropGetter[T] = js.Function4[
     /* event */ T, 
     /* start */ stringOrDate, 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_QueryUndefined extends js.Object {
-  var query: js.UndefOr[scala.Nothing]
+  var query: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object Anon_QueryUndefined {

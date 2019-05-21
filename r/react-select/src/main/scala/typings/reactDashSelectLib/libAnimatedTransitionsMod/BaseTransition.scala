@@ -5,14 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait BaseTransition extends js.Object {
   /** Whether we are in a transition. */
-  var in: scala.Boolean = js.native
+  var in: scala.Boolean
   /** Function to be called once transition finishes. */
-  @JSName("onExited")
-  var onExited_Original: fn = js.native
-  /** Function to be called once transition finishes. */
-  def onExited(): scala.Unit = js.native
+  var onExited: fn
+}
+
+object BaseTransition {
+  @scala.inline
+  def apply(in: scala.Boolean, onExited: fn): BaseTransition = {
+    val __obj = js.Dynamic.literal(in = in, onExited = onExited)
+  
+    __obj.asInstanceOf[BaseTransition]
+  }
 }
 

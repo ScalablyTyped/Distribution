@@ -23,10 +23,6 @@ class ObservableValue[T] protected ()
   @JSName("equals")
   var equals_FObservableValue: js.Any = js.native
   var hasUnreportedChange: scala.Boolean = js.native
-  /* CompleteClass */
-  override var interceptors: js.UndefOr[
-    js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IValueWillChange[T]]]
-  ] = js.native
   var prepareNewValue: js.Any = js.native
   @JSName(scala.scalajs.js.Symbol.toPrimitive)
   var toPrimitive: js.Function0[T] = js.native

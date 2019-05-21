@@ -9,7 +9,7 @@ trait ListProps[T] extends js.Object {
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var dataSource: js.Array[T]
+  var dataSource: js.UndefOr[js.Array[T]] = js.undefined
   var extra: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var grid: js.UndefOr[ListGridType] = js.undefined
@@ -23,21 +23,22 @@ trait ListProps[T] extends js.Object {
     antdLib.esPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false`
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
+  var renderItem: js.UndefOr[
+    js.Function2[/* item */ T, /* index */ scala.Double, reactLib.reactMod.ReactNode]
+  ] = js.undefined
   var rowKey: js.UndefOr[js.Any] = js.undefined
   var size: js.UndefOr[ListSize] = js.undefined
   var split: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  def renderItem(item: T, index: scala.Double): reactLib.reactMod.ReactNode
 }
 
 object ListProps {
   @scala.inline
   def apply[T](
-    dataSource: js.Array[T],
-    renderItem: (T, scala.Double) => reactLib.reactMod.ReactNode,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
+    dataSource: js.Array[T] = null,
     extra: reactLib.reactMod.ReactNode = null,
     footer: reactLib.reactMod.ReactNode = null,
     grid: ListGridType = null,
@@ -49,15 +50,17 @@ object ListProps {
     locale: ListLocale = null,
     pagination: antdLib.esPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false` = null,
     prefixCls: java.lang.String = null,
+    renderItem: (/* item */ T, /* index */ scala.Double) => reactLib.reactMod.ReactNode = null,
     rowKey: js.Any = null,
     size: ListSize = null,
     split: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null
   ): ListProps[T] = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource, renderItem = js.Any.fromFunction2(renderItem))
+    val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (grid != null) __obj.updateDynamic("grid")(grid)
@@ -69,6 +72,7 @@ object ListProps {
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction2(renderItem))
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)

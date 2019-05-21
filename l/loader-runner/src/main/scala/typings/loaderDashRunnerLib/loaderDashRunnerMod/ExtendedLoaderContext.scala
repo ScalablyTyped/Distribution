@@ -18,8 +18,8 @@ trait ExtendedLoaderContext extends js.Object {
   var remainingRequest: java.lang.String
   var request: java.lang.String
   var resource: java.lang.String
-  var resourcePath: js.UndefOr[java.lang.String]
-  var resourceQuery: js.UndefOr[java.lang.String]
+  var resourcePath: js.UndefOr[java.lang.String] = js.undefined
+  var resourceQuery: js.UndefOr[java.lang.String] = js.undefined
   def addContextDependency(context: java.lang.String): scala.Unit
   def addDependency(file: java.lang.String): scala.Unit
   def cacheable(flag: scala.Boolean): scala.Unit

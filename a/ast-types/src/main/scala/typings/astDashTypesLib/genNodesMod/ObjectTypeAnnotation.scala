@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   var callProperties: js.Array[astDashTypesLib.genKindsMod.ObjectTypeCallPropertyKind]
   var exact: scala.Boolean
   var indexers: js.Array[astDashTypesLib.genKindsMod.ObjectTypeIndexerKind]
-  var inexact: js.UndefOr[scala.Boolean]
+  var inexact: js.UndefOr[scala.Boolean] = js.undefined
   var internalSlots: js.Array[astDashTypesLib.genKindsMod.ObjectTypeInternalSlotKind]
   var properties: js.Array[
     astDashTypesLib.genKindsMod.ObjectTypePropertyKind | astDashTypesLib.genKindsMod.ObjectTypeSpreadPropertyKind

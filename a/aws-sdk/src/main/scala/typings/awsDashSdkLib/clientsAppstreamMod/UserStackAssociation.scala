@@ -19,7 +19,7 @@ trait UserStackAssociation extends js.Object {
     */
   var StackName: String
   /**
-    * The email address of the user who is associated with the stack.
+    * The email address of the user who is associated with the stack.  Users' email addresses are case-sensitive. 
     */
   var UserName: Username
 }

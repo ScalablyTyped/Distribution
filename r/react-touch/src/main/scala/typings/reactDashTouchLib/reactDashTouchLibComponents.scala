@@ -13,6 +13,8 @@ object reactDashTouchLibComponents {
   type CustomGestureProps = reactDashTouchLib.reactDashTouchMod.CustomGestureProps
   @scala.inline
   def Draggable: reactLib.reactMod.ComponentType[reactDashTouchLib.reactDashTouchMod.DraggableProps] = js.constructorOf[reactDashTouchLib.reactDashTouchMod.Draggable].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTouchLib.reactDashTouchMod.DraggableProps]]
+  @scala.inline
+  def DraggableProps: reactDashTouchLib.reactDashTouchMod.DraggableProps.type = reactDashTouchLib.reactDashTouchMod.DraggableProps
   type DraggableProps = reactDashTouchLib.reactDashTouchMod.DraggableProps
   @scala.inline
   def Holdable: reactLib.reactMod.ComponentType[reactDashTouchLib.reactDashTouchMod.HoldableProps] = js.constructorOf[reactDashTouchLib.reactDashTouchMod.Holdable].asInstanceOf[reactLib.reactMod.ComponentType[reactDashTouchLib.reactDashTouchMod.HoldableProps]]

@@ -17,7 +17,7 @@ object CommandRegistryNs extends js.Object {
       *
       * This will be `undefined` when the type is `'many-changed'`.
       */
-    val id: js.UndefOr[java.lang.String]
+    val id: js.UndefOr[java.lang.String] = js.undefined
     /**
       * Whether the command was added, removed, or changed.
       */

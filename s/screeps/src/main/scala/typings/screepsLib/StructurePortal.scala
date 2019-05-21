@@ -22,7 +22,7 @@ trait StructurePortal
   /**
     * The amount of game ticks when the portal disappears, or undefined when the portal is stable.
     */
-  var ticksToDecay: js.UndefOr[scala.Double]
+  var ticksToDecay: js.UndefOr[scala.Double] = js.undefined
 }
 
 @JSGlobal("StructurePortal")
@@ -62,13 +62,6 @@ class StructurePortalCls protected () extends StructurePortal {
   /* CompleteClass */
   override var pos: RoomPosition = js.native
   /**
-    * The link to the Room object. May be undefined in case if an object is a
-    * flag or a construction site and is placed in a room that is not visible
-    * to you.
-    */
-  /* CompleteClass */
-  override var room: js.UndefOr[Room] = js.native
-  /**
     * If you can get an instance of a Structure, you can see it.
     * If you can see the Structure, you can see the room it's in.
     */
@@ -80,11 +73,6 @@ class StructurePortalCls protected () extends StructurePortal {
     */
   /* CompleteClass */
   override var structureType: STRUCTURE_PORTAL = js.native
-  /**
-    * The amount of game ticks when the portal disappears, or undefined when the portal is stable.
-    */
-  /* CompleteClass */
-  override var ticksToDecay: js.UndefOr[scala.Double] = js.native
   /**
     * Destroy this structure immediately.
     */

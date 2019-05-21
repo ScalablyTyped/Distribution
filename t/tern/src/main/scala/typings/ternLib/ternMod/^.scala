@@ -14,8 +14,10 @@ object ^ extends js.Object {
   val Context: ternLib.libInferMod.ContextConstructor = js.native
   val Fn: ternLib.libInferMod.FnConstructor = js.native
   val Obj: ternLib.libInferMod.ObjConstructor = js.native
+  val Prim: ternLib.libInferMod.PrimConstructor = js.native
   val Scope: ternLib.libInferMod.ScopeConstructor = js.native
   val Server: ternLib.libTernMod.TernConstructor = js.native
+  val Type: ternLib.libInferMod.TypeConstructor = js.native
   val constraint: ternLib.libInferMod.ConstraintConstructor = js.native
   val version: java.lang.String = js.native
   def analyze(ast: estreeLib.estreeMod.Program, name: java.lang.String): scala.Unit = js.native

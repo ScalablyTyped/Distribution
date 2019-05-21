@@ -7,319 +7,319 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelBaseProps, @material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelClassKey, never> */
 trait FormLabelProps extends js.Object {
-  var about: js.UndefOr[java.lang.String]
-  var accessKey: js.UndefOr[java.lang.String]
-  var `aria-activedescendant`: js.UndefOr[java.lang.String]
+  var about: js.UndefOr[java.lang.String] = js.undefined
+  var accessKey: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-atomic`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-autocomplete`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`inline` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.list | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.both
-  ]
+  ] = js.undefined
   var `aria-busy`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-checked`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.mixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-colcount`: js.UndefOr[scala.Double]
-  var `aria-colindex`: js.UndefOr[scala.Double]
-  var `aria-colspan`: js.UndefOr[scala.Double]
-  var `aria-controls`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-colcount`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-colindex`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-colspan`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-controls`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-current`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.page | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.step | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.location | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.date | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.time
-  ]
-  var `aria-describedby`: js.UndefOr[java.lang.String]
-  var `aria-details`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-describedby`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-details`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-disabled`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-dropeffect`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.copy | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.execute | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.link | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.move | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.popup
-  ]
-  var `aria-errormessage`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-errormessage`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-expanded`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-flowto`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-flowto`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-grabbed`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-haspopup`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.menu | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.listbox | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tree | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.grid | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dialog
-  ]
+  ] = js.undefined
   var `aria-hidden`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-invalid`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.grammar | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.spelling
-  ]
-  var `aria-keyshortcuts`: js.UndefOr[java.lang.String]
-  var `aria-label`: js.UndefOr[java.lang.String]
-  var `aria-labelledby`: js.UndefOr[java.lang.String]
-  var `aria-level`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-keyshortcuts`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-labelledby`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-level`: js.UndefOr[scala.Double] = js.undefined
   var `aria-live`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.assertive | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.polite
-  ]
+  ] = js.undefined
   var `aria-modal`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-multiline`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-multiselectable`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-orientation`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.horizontal | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.vertical
-  ]
-  var `aria-owns`: js.UndefOr[java.lang.String]
-  var `aria-placeholder`: js.UndefOr[java.lang.String]
-  var `aria-posinset`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-owns`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-placeholder`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-posinset`: js.UndefOr[scala.Double] = js.undefined
   var `aria-pressed`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.mixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-readonly`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-relevant`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.additions | (atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`additions text`) | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.all | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.removals | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.text
-  ]
+  ] = js.undefined
   var `aria-required`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-roledescription`: js.UndefOr[java.lang.String]
-  var `aria-rowcount`: js.UndefOr[scala.Double]
-  var `aria-rowindex`: js.UndefOr[scala.Double]
-  var `aria-rowspan`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-roledescription`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-rowcount`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-rowindex`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-rowspan`: js.UndefOr[scala.Double] = js.undefined
   var `aria-selected`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-setsize`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-setsize`: js.UndefOr[scala.Double] = js.undefined
   var `aria-sort`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.ascending | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.descending | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.other
-  ]
-  var `aria-valuemax`: js.UndefOr[scala.Double]
-  var `aria-valuemin`: js.UndefOr[scala.Double]
-  var `aria-valuenow`: js.UndefOr[scala.Double]
-  var `aria-valuetext`: js.UndefOr[java.lang.String]
-  var autoCapitalize: js.UndefOr[java.lang.String]
-  var autoCorrect: js.UndefOr[java.lang.String]
-  var autoSave: js.UndefOr[java.lang.String]
-  var children: js.UndefOr[reactLib.reactMod.ReactNode]
-  var className: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-valuemax`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-valuemin`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-valuenow`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-valuetext`: js.UndefOr[java.lang.String] = js.undefined
+  var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
+  var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
+  var autoSave: js.UndefOr[java.lang.String] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[FormLabelClassKey]]
   ] = js.undefined
-  var color: js.UndefOr[java.lang.String]
+  var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[FormLabelBaseProps]] = js.undefined
-  var contentEditable: js.UndefOr[scala.Boolean]
-  var contextMenu: js.UndefOr[java.lang.String]
-  var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html]
-  var datatype: js.UndefOr[java.lang.String]
-  var defaultChecked: js.UndefOr[scala.Boolean]
-  var defaultValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]]
-  var dir: js.UndefOr[java.lang.String]
+  var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
+  var contextMenu: js.UndefOr[java.lang.String] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html] = js.undefined
+  var datatype: js.UndefOr[java.lang.String] = js.undefined
+  var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
+  var defaultValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var dir: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var draggable: js.UndefOr[scala.Boolean]
+  var draggable: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
   var filled: js.UndefOr[scala.Boolean] = js.undefined
   var focused: js.UndefOr[scala.Boolean] = js.undefined
-  var form: js.UndefOr[java.lang.String]
-  var hidden: js.UndefOr[scala.Boolean]
-  var htmlFor: js.UndefOr[java.lang.String]
-  var id: js.UndefOr[java.lang.String]
-  var inlist: js.UndefOr[_]
+  var form: js.UndefOr[java.lang.String] = js.undefined
+  var hidden: js.UndefOr[scala.Boolean] = js.undefined
+  var htmlFor: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
+  var inlist: js.UndefOr[js.Any] = js.undefined
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
-  var inputMode: js.UndefOr[java.lang.String]
-  var is: js.UndefOr[java.lang.String]
-  var itemID: js.UndefOr[java.lang.String]
-  var itemProp: js.UndefOr[java.lang.String]
-  var itemRef: js.UndefOr[java.lang.String]
-  var itemScope: js.UndefOr[scala.Boolean]
-  var itemType: js.UndefOr[java.lang.String]
-  var lang: js.UndefOr[java.lang.String]
-  var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onAnimationEnd: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]]
-  var onAnimationEndCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]]
-  var onAnimationIteration: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]]
-  var onAnimationIterationCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]]
-  var onAnimationStart: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]]
-  var onAnimationStartCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]]
-  var onAuxClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onAuxClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onBeforeInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onBeforeInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]]
-  var onBlurCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]]
-  var onCanPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onCanPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onCanPlayThrough: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onCanPlayThroughCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onChangeCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onCompositionEnd: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]]
-  var onCompositionEndCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]]
-  var onCompositionStart: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]]
-  var onCompositionStartCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]]
-  var onCompositionUpdate: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]]
-  var onCompositionUpdateCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]]
-  var onContextMenu: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onContextMenuCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onCopy: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]]
-  var onCopyCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]]
-  var onCut: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]]
-  var onCutCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]]
-  var onDoubleClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onDoubleClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onDrag: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragEnd: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragEndCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragEnter: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragEnterCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragExit: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragExitCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragLeave: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragLeaveCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragOver: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragOverCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragStart: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDragStartCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDrop: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDropCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]]
-  var onDurationChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onDurationChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onEmptied: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onEmptiedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onEncrypted: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onEncryptedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onEnded: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onEndedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onError: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onErrorCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]]
-  var onFocusCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]]
-  var onGotPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onGotPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onInvalid: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onInvalidCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]]
-  var onKeyDownCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]]
-  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]]
-  var onKeyPressCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]]
-  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]]
-  var onKeyUpCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]]
-  var onLoad: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadStart: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadStartCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadedData: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadedDataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadedMetadata: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLoadedMetadataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onLostPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onLostPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseDown: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseDownCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseMove: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseMoveCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseOut: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseOutCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseOver: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseOverCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseUp: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onMouseUpCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]]
-  var onPaste: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]]
-  var onPasteCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]]
-  var onPause: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onPauseCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onPlaying: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onPlayingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerCancel: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerCancelCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerDown: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerDownCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerEnter: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerEnterCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerLeave: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerLeaveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerMove: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerMoveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerOut: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerOutCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerOver: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerOverCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerUp: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onPointerUpCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]]
-  var onProgress: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onProgressCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onRateChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onRateChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onReset: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onResetCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLLabelElement]]
-  var onScrollCapture: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLLabelElement]]
-  var onSeeked: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSeekedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSeeking: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSeekingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSelect: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSelectCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onStalled: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onStalledCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSubmit: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onSubmitCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]]
-  var onSuspend: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onSuspendCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onTimeUpdate: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onTimeUpdateCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchCancel: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchCancelCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchEnd: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchEndCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchMove: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchMoveCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTouchStartCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]]
-  var onTransitionEnd: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.HTMLLabelElement]]
-  var onTransitionEndCapture: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.HTMLLabelElement]]
-  var onVolumeChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onVolumeChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onWaiting: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]]
-  var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLLabelElement]]
-  var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLLabelElement]]
-  var placeholder: js.UndefOr[java.lang.String]
-  var prefix: js.UndefOr[java.lang.String]
-  var property: js.UndefOr[java.lang.String]
-  var radioGroup: js.UndefOr[java.lang.String]
+  var inputMode: js.UndefOr[java.lang.String] = js.undefined
+  var is: js.UndefOr[java.lang.String] = js.undefined
+  var itemID: js.UndefOr[java.lang.String] = js.undefined
+  var itemProp: js.UndefOr[java.lang.String] = js.undefined
+  var itemRef: js.UndefOr[java.lang.String] = js.undefined
+  var itemScope: js.UndefOr[scala.Boolean] = js.undefined
+  var itemType: js.UndefOr[java.lang.String] = js.undefined
+  var lang: js.UndefOr[java.lang.String] = js.undefined
+  var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAnimationEnd: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAnimationEndCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAnimationIteration: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAnimationIterationCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAnimationStartCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAuxClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onAuxClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onBeforeInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onBeforeInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onBlurCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCanPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCanPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCanPlayThroughCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onChangeCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCompositionEndCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCompositionStart: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCompositionStartCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCompositionUpdateCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onContextMenu: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onContextMenuCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCopy: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCopyCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCut: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onCutCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDoubleClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDoubleClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDrag: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragEnd: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragEndCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragEnter: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragEnterCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragExit: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragExitCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragLeave: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragLeaveCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragOver: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragOverCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragStart: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDragStartCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDrop: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDropCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDurationChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onDurationChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onEmptied: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onEmptiedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onEncrypted: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onEncryptedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onEnded: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onEndedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onError: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onErrorCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onFocusCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onGotPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onGotPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onInvalid: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onInvalidCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onKeyDownCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onKeyPressCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onKeyUpCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoad: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadStart: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadStartCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadedData: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadedDataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLoadedMetadataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLostPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onLostPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseDown: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseDownCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseMove: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseMoveCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseOut: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseOutCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseOver: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseOverCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseUp: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onMouseUpCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPaste: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPasteCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPause: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPauseCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPlaying: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPlayingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerCancel: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerCancelCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerDown: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerDownCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerEnter: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerEnterCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerLeave: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerLeaveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerMove: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerMoveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerOut: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerOutCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerOver: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerOverCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerUp: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onPointerUpCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onProgress: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onProgressCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onRateChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onRateChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onReset: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onResetCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onScrollCapture: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSeeked: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSeekedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSeeking: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSeekingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSelect: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSelectCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onStalled: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onStalledCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSubmit: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSubmitCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSuspend: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onSuspendCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTimeUpdate: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTimeUpdateCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchCancelCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchEndCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchMove: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchMoveCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTouchStartCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onTransitionEndCapture: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onVolumeChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onVolumeChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onWaiting: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLLabelElement]] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String] = js.undefined
+  var prefix: js.UndefOr[java.lang.String] = js.undefined
+  var property: js.UndefOr[java.lang.String] = js.undefined
+  var radioGroup: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
-  var resource: js.UndefOr[java.lang.String]
-  var results: js.UndefOr[scala.Double]
-  var role: js.UndefOr[java.lang.String]
-  var security: js.UndefOr[java.lang.String]
-  var slot: js.UndefOr[java.lang.String]
-  var spellCheck: js.UndefOr[scala.Boolean]
-  var style: js.UndefOr[reactLib.reactMod.CSSProperties]
-  var suppressContentEditableWarning: js.UndefOr[scala.Boolean]
-  var suppressHydrationWarning: js.UndefOr[scala.Boolean]
-  var tabIndex: js.UndefOr[scala.Double]
-  var title: js.UndefOr[java.lang.String]
-  var typeof: js.UndefOr[java.lang.String]
+  var resource: js.UndefOr[java.lang.String] = js.undefined
+  var results: js.UndefOr[scala.Double] = js.undefined
+  var role: js.UndefOr[java.lang.String] = js.undefined
+  var security: js.UndefOr[java.lang.String] = js.undefined
+  var slot: js.UndefOr[java.lang.String] = js.undefined
+  var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined
+  var suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
+  var title: js.UndefOr[java.lang.String] = js.undefined
+  var typeof: js.UndefOr[java.lang.String] = js.undefined
   var unselectable: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off
-  ]
-  var vocab: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object FormLabelProps {
@@ -410,165 +410,84 @@ object FormLabelProps {
     itemType: java.lang.String = null,
     lang: java.lang.String = null,
     onAbort: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onAbortCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onAnimationEnd: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement] = null,
-    onAnimationEndCapture: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement] = null,
     onAnimationIteration: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement] = null,
-    onAnimationIterationCapture: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement] = null,
     onAnimationStart: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement] = null,
-    onAnimationStartCapture: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLLabelElement] = null,
     onAuxClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onAuxClickCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onBeforeInput: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
-    onBeforeInputCapture: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
     onBlur: reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement] = null,
-    onBlurCapture: reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement] = null,
     onCanPlay: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onCanPlayCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onCanPlayThrough: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onCanPlayThroughCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
-    onChangeCapture: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
     onClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onClickCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onCompositionEnd: reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement] = null,
-    onCompositionEndCapture: reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement] = null,
     onCompositionStart: reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement] = null,
-    onCompositionStartCapture: reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement] = null,
     onCompositionUpdate: reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement] = null,
-    onCompositionUpdateCapture: reactLib.reactMod.CompositionEventHandler[stdLib.HTMLLabelElement] = null,
     onContextMenu: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onContextMenuCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onCopy: reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement] = null,
-    onCopyCapture: reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement] = null,
     onCut: reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement] = null,
-    onCutCapture: reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement] = null,
     onDoubleClick: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onDoubleClickCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onDrag: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDragEnd: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragEndCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDragEnter: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragEnterCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDragExit: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragExitCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDragLeave: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragLeaveCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDragOver: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragOverCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDragStart: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDragStartCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDrop: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
-    onDropCapture: reactLib.reactMod.DragEventHandler[stdLib.HTMLLabelElement] = null,
     onDurationChange: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onDurationChangeCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onEmptied: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onEmptiedCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onEncrypted: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onEncryptedCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onEnded: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onEndedCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onError: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onErrorCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onFocus: reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement] = null,
-    onFocusCapture: reactLib.reactMod.FocusEventHandler[stdLib.HTMLLabelElement] = null,
-    onGotPointerCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onGotPointerCaptureCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onInput: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
-    onInputCapture: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
     onInvalid: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
-    onInvalidCapture: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
     onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement] = null,
-    onKeyDownCapture: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement] = null,
     onKeyPress: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement] = null,
-    onKeyPressCapture: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement] = null,
     onKeyUp: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement] = null,
-    onKeyUpCapture: reactLib.reactMod.KeyboardEventHandler[stdLib.HTMLLabelElement] = null,
     onLoad: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onLoadCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onLoadStart: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onLoadStartCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onLoadedData: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onLoadedDataCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onLoadedMetadata: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onLoadedMetadataCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onLostPointerCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onLostPointerCaptureCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseDown: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onMouseDownCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseEnter: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseLeave: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseMove: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onMouseMoveCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseOut: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onMouseOutCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseOver: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onMouseOverCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onMouseUp: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
-    onMouseUpCapture: reactLib.reactMod.MouseEventHandler[stdLib.HTMLLabelElement] = null,
     onPaste: reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement] = null,
-    onPasteCapture: reactLib.reactMod.ClipboardEventHandler[stdLib.HTMLLabelElement] = null,
     onPause: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onPauseCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onPlay: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onPlayCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onPlaying: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onPlayingCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerCancel: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerCancelCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerDown: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerDownCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerEnter: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerEnterCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerLeave: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerLeaveCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerMove: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerMoveCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerOut: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerOutCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerOver: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerOverCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onPointerUp: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
-    onPointerUpCapture: reactLib.reactMod.PointerEventHandler[stdLib.HTMLLabelElement] = null,
     onProgress: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onProgressCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onRateChange: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onRateChangeCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onReset: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
-    onResetCapture: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
     onScroll: reactLib.reactMod.UIEventHandler[stdLib.HTMLLabelElement] = null,
-    onScrollCapture: reactLib.reactMod.UIEventHandler[stdLib.HTMLLabelElement] = null,
     onSeeked: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onSeekedCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onSeeking: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onSeekingCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onSelect: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onSelectCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onStalled: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onStalledCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onSubmit: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
-    onSubmitCapture: reactLib.reactMod.FormEventHandler[stdLib.HTMLLabelElement] = null,
     onSuspend: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onSuspendCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onTimeUpdate: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onTimeUpdateCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onTouchCancel: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
-    onTouchCancelCapture: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
     onTouchEnd: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
-    onTouchEndCapture: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
     onTouchMove: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
-    onTouchMoveCapture: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
     onTouchStart: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
-    onTouchStartCapture: reactLib.reactMod.TouchEventHandler[stdLib.HTMLLabelElement] = null,
     onTransitionEnd: reactLib.reactMod.TransitionEventHandler[stdLib.HTMLLabelElement] = null,
-    onTransitionEndCapture: reactLib.reactMod.TransitionEventHandler[stdLib.HTMLLabelElement] = null,
     onVolumeChange: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onVolumeChangeCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onWaiting: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
-    onWaitingCapture: reactLib.reactMod.ReactEventHandler[stdLib.HTMLLabelElement] = null,
     onWheel: reactLib.reactMod.WheelEventHandler[stdLib.HTMLLabelElement] = null,
-    onWheelCapture: reactLib.reactMod.WheelEventHandler[stdLib.HTMLLabelElement] = null,
     placeholder: java.lang.String = null,
     prefix: java.lang.String = null,
     property: java.lang.String = null,
@@ -578,7 +497,16 @@ object FormLabelProps {
     results: scala.Int | scala.Double = null,
     role: java.lang.String = null,
     security: java.lang.String = null,
-    slot: java.lang.String = null
+    slot: java.lang.String = null,
+    spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.CSSProperties = null,
+    suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    typeof: java.lang.String = null,
+    unselectable: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
+    vocab: java.lang.String = null
   ): FormLabelProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about)
@@ -666,165 +594,84 @@ object FormLabelProps {
     if (itemType != null) __obj.updateDynamic("itemType")(itemType)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort)
-    if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture)
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(onAnimationEndCapture)
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration)
-    if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture)
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
-    if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture)
     if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick)
-    if (onAuxClickCapture != null) __obj.updateDynamic("onAuxClickCapture")(onAuxClickCapture)
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
-    if (onBeforeInputCapture != null) __obj.updateDynamic("onBeforeInputCapture")(onBeforeInputCapture)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onBlurCapture != null) __obj.updateDynamic("onBlurCapture")(onBlurCapture)
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay)
-    if (onCanPlayCapture != null) __obj.updateDynamic("onCanPlayCapture")(onCanPlayCapture)
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(onCanPlayThrough)
-    if (onCanPlayThroughCapture != null) __obj.updateDynamic("onCanPlayThroughCapture")(onCanPlayThroughCapture)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeCapture != null) __obj.updateDynamic("onChangeCapture")(onChangeCapture)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onClickCapture != null) __obj.updateDynamic("onClickCapture")(onClickCapture)
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd)
-    if (onCompositionEndCapture != null) __obj.updateDynamic("onCompositionEndCapture")(onCompositionEndCapture)
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart)
-    if (onCompositionStartCapture != null) __obj.updateDynamic("onCompositionStartCapture")(onCompositionStartCapture)
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(onCompositionUpdate)
-    if (onCompositionUpdateCapture != null) __obj.updateDynamic("onCompositionUpdateCapture")(onCompositionUpdateCapture)
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu)
-    if (onContextMenuCapture != null) __obj.updateDynamic("onContextMenuCapture")(onContextMenuCapture)
     if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
-    if (onCopyCapture != null) __obj.updateDynamic("onCopyCapture")(onCopyCapture)
     if (onCut != null) __obj.updateDynamic("onCut")(onCut)
-    if (onCutCapture != null) __obj.updateDynamic("onCutCapture")(onCutCapture)
     if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick)
-    if (onDoubleClickCapture != null) __obj.updateDynamic("onDoubleClickCapture")(onDoubleClickCapture)
     if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onDragCapture != null) __obj.updateDynamic("onDragCapture")(onDragCapture)
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragEndCapture != null) __obj.updateDynamic("onDragEndCapture")(onDragEndCapture)
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
-    if (onDragEnterCapture != null) __obj.updateDynamic("onDragEnterCapture")(onDragEnterCapture)
     if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
-    if (onDragExitCapture != null) __obj.updateDynamic("onDragExitCapture")(onDragExitCapture)
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
-    if (onDragLeaveCapture != null) __obj.updateDynamic("onDragLeaveCapture")(onDragLeaveCapture)
     if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
-    if (onDragOverCapture != null) __obj.updateDynamic("onDragOverCapture")(onDragOverCapture)
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDragStartCapture != null) __obj.updateDynamic("onDragStartCapture")(onDragStartCapture)
     if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onDropCapture != null) __obj.updateDynamic("onDropCapture")(onDropCapture)
     if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange)
-    if (onDurationChangeCapture != null) __obj.updateDynamic("onDurationChangeCapture")(onDurationChangeCapture)
     if (onEmptied != null) __obj.updateDynamic("onEmptied")(onEmptied)
-    if (onEmptiedCapture != null) __obj.updateDynamic("onEmptiedCapture")(onEmptiedCapture)
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted)
-    if (onEncryptedCapture != null) __obj.updateDynamic("onEncryptedCapture")(onEncryptedCapture)
     if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded)
-    if (onEndedCapture != null) __obj.updateDynamic("onEndedCapture")(onEndedCapture)
     if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(onErrorCapture)
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(onFocusCapture)
-    if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(onGotPointerCapture)
-    if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(onGotPointerCaptureCapture)
     if (onInput != null) __obj.updateDynamic("onInput")(onInput)
-    if (onInputCapture != null) __obj.updateDynamic("onInputCapture")(onInputCapture)
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid)
-    if (onInvalidCapture != null) __obj.updateDynamic("onInvalidCapture")(onInvalidCapture)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
-    if (onKeyDownCapture != null) __obj.updateDynamic("onKeyDownCapture")(onKeyDownCapture)
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
-    if (onKeyPressCapture != null) __obj.updateDynamic("onKeyPressCapture")(onKeyPressCapture)
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
-    if (onKeyUpCapture != null) __obj.updateDynamic("onKeyUpCapture")(onKeyUpCapture)
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
-    if (onLoadCapture != null) __obj.updateDynamic("onLoadCapture")(onLoadCapture)
     if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
-    if (onLoadStartCapture != null) __obj.updateDynamic("onLoadStartCapture")(onLoadStartCapture)
     if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData)
-    if (onLoadedDataCapture != null) __obj.updateDynamic("onLoadedDataCapture")(onLoadedDataCapture)
     if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(onLoadedMetadata)
-    if (onLoadedMetadataCapture != null) __obj.updateDynamic("onLoadedMetadataCapture")(onLoadedMetadataCapture)
-    if (onLostPointerCapture != null) __obj.updateDynamic("onLostPointerCapture")(onLostPointerCapture)
-    if (onLostPointerCaptureCapture != null) __obj.updateDynamic("onLostPointerCaptureCapture")(onLostPointerCaptureCapture)
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
-    if (onMouseDownCapture != null) __obj.updateDynamic("onMouseDownCapture")(onMouseDownCapture)
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
-    if (onMouseMoveCapture != null) __obj.updateDynamic("onMouseMoveCapture")(onMouseMoveCapture)
     if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
-    if (onMouseOutCapture != null) __obj.updateDynamic("onMouseOutCapture")(onMouseOutCapture)
     if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
-    if (onMouseOverCapture != null) __obj.updateDynamic("onMouseOverCapture")(onMouseOverCapture)
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
-    if (onMouseUpCapture != null) __obj.updateDynamic("onMouseUpCapture")(onMouseUpCapture)
     if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
-    if (onPasteCapture != null) __obj.updateDynamic("onPasteCapture")(onPasteCapture)
     if (onPause != null) __obj.updateDynamic("onPause")(onPause)
-    if (onPauseCapture != null) __obj.updateDynamic("onPauseCapture")(onPauseCapture)
     if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
-    if (onPlayCapture != null) __obj.updateDynamic("onPlayCapture")(onPlayCapture)
     if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying)
-    if (onPlayingCapture != null) __obj.updateDynamic("onPlayingCapture")(onPlayingCapture)
     if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(onPointerCancel)
-    if (onPointerCancelCapture != null) __obj.updateDynamic("onPointerCancelCapture")(onPointerCancelCapture)
     if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(onPointerDown)
-    if (onPointerDownCapture != null) __obj.updateDynamic("onPointerDownCapture")(onPointerDownCapture)
     if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(onPointerEnter)
-    if (onPointerEnterCapture != null) __obj.updateDynamic("onPointerEnterCapture")(onPointerEnterCapture)
     if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(onPointerLeave)
-    if (onPointerLeaveCapture != null) __obj.updateDynamic("onPointerLeaveCapture")(onPointerLeaveCapture)
     if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(onPointerMove)
-    if (onPointerMoveCapture != null) __obj.updateDynamic("onPointerMoveCapture")(onPointerMoveCapture)
     if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut)
-    if (onPointerOutCapture != null) __obj.updateDynamic("onPointerOutCapture")(onPointerOutCapture)
     if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver)
-    if (onPointerOverCapture != null) __obj.updateDynamic("onPointerOverCapture")(onPointerOverCapture)
     if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp)
-    if (onPointerUpCapture != null) __obj.updateDynamic("onPointerUpCapture")(onPointerUpCapture)
     if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
-    if (onProgressCapture != null) __obj.updateDynamic("onProgressCapture")(onProgressCapture)
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange)
-    if (onRateChangeCapture != null) __obj.updateDynamic("onRateChangeCapture")(onRateChangeCapture)
     if (onReset != null) __obj.updateDynamic("onReset")(onReset)
-    if (onResetCapture != null) __obj.updateDynamic("onResetCapture")(onResetCapture)
     if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
-    if (onScrollCapture != null) __obj.updateDynamic("onScrollCapture")(onScrollCapture)
     if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked)
-    if (onSeekedCapture != null) __obj.updateDynamic("onSeekedCapture")(onSeekedCapture)
     if (onSeeking != null) __obj.updateDynamic("onSeeking")(onSeeking)
-    if (onSeekingCapture != null) __obj.updateDynamic("onSeekingCapture")(onSeekingCapture)
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
-    if (onSelectCapture != null) __obj.updateDynamic("onSelectCapture")(onSelectCapture)
     if (onStalled != null) __obj.updateDynamic("onStalled")(onStalled)
-    if (onStalledCapture != null) __obj.updateDynamic("onStalledCapture")(onStalledCapture)
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
-    if (onSubmitCapture != null) __obj.updateDynamic("onSubmitCapture")(onSubmitCapture)
     if (onSuspend != null) __obj.updateDynamic("onSuspend")(onSuspend)
-    if (onSuspendCapture != null) __obj.updateDynamic("onSuspendCapture")(onSuspendCapture)
     if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
-    if (onTimeUpdateCapture != null) __obj.updateDynamic("onTimeUpdateCapture")(onTimeUpdateCapture)
     if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    if (onTouchCancelCapture != null) __obj.updateDynamic("onTouchCancelCapture")(onTouchCancelCapture)
     if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
-    if (onTouchMoveCapture != null) __obj.updateDynamic("onTouchMoveCapture")(onTouchMoveCapture)
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
-    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(onTouchStartCapture)
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
-    if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(onTransitionEndCapture)
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
-    if (onVolumeChangeCapture != null) __obj.updateDynamic("onVolumeChangeCapture")(onVolumeChangeCapture)
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting)
-    if (onWaitingCapture != null) __obj.updateDynamic("onWaitingCapture")(onWaitingCapture)
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel)
-    if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(onWheelCapture)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (property != null) __obj.updateDynamic("property")(property)
@@ -835,6 +682,15 @@ object FormLabelProps {
     if (role != null) __obj.updateDynamic("role")(role)
     if (security != null) __obj.updateDynamic("security")(security)
     if (slot != null) __obj.updateDynamic("slot")(slot)
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning)
+    if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (typeof != null) __obj.updateDynamic("typeof")(typeof)
+    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (vocab != null) __obj.updateDynamic("vocab")(vocab)
     __obj.asInstanceOf[FormLabelProps]
   }
 }

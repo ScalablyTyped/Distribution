@@ -40,6 +40,11 @@ trait Archiver
   @JSName("on")
   def on_drain(event: archiverLib.archiverLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
+  def on_entry(
+    event: archiverLib.archiverLibStrings.entry,
+    listener: js.Function1[/* entry */ EntryData, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
   def on_error(
     event: archiverLib.archiverLibStrings.error,
     listener: js.Function1[/* error */ ArchiverError, scala.Unit]

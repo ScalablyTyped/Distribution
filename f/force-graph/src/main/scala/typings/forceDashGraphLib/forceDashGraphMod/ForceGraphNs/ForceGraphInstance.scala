@@ -166,6 +166,7 @@ trait ForceGraphInstance extends js.Object {
   def onNodeRightClick(callback: NodeEventCallback): ForceGraphInstance = js.native
   // Render control
   def pauseAnimation(): ForceGraphInstance = js.native
+  def refresh(): ForceGraphInstance = js.native
    // Alias for pauseAnimation()
   def resumeAnimation(): ForceGraphInstance = js.native
   def stopAnimation(): ForceGraphInstance = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_GqcExtensionsGqcTypeMap[TSource, TContext] extends js.Object {
   var _gqcExtensions: js.UndefOr[graphqlDashComposeLib.esmUtilsDefinitionsMod.Extensions] = js.undefined
-  var _gqcTypeMap: stdLib.Map[java.lang.String, graphqlDashComposeLib.esmTypeMapperMod.ComposeObjectType]
+  var _gqcTypeMap: stdLib.Map[java.lang.String, graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeObjectType]
   var _gqcTypeResolvers: js.UndefOr[
     graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeResolversMap[TSource, TContext]
   ] = js.undefined
@@ -16,7 +16,7 @@ trait Anon_GqcExtensionsGqcTypeMap[TSource, TContext] extends js.Object {
 object Anon_GqcExtensionsGqcTypeMap {
   @scala.inline
   def apply[TSource, TContext](
-    _gqcTypeMap: stdLib.Map[java.lang.String, graphqlDashComposeLib.esmTypeMapperMod.ComposeObjectType],
+    _gqcTypeMap: stdLib.Map[java.lang.String, graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeObjectType],
     _gqcExtensions: graphqlDashComposeLib.esmUtilsDefinitionsMod.Extensions = null,
     _gqcTypeResolvers: graphqlDashComposeLib.esmUnionTypeComposerMod.UnionTypeResolversMap[TSource, TContext] = null
   ): Anon_GqcExtensionsGqcTypeMap[TSource, TContext] = {

@@ -34,13 +34,16 @@ trait AttachmentContent extends js.Object {
     * 
     * For cloud attachments, the formatting is a URL string.
     */
-  var format: officeDashJsLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat
+  var format: officeDashJsLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat | java.lang.String
 }
 
 object AttachmentContent {
   @scala.inline
-  def apply(content: java.lang.String, format: officeDashJsLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat): AttachmentContent = {
-    val __obj = js.Dynamic.literal(content = content, format = format)
+  def apply(
+    content: java.lang.String,
+    format: officeDashJsLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat | java.lang.String
+  ): AttachmentContent = {
+    val __obj = js.Dynamic.literal(content = content, format = format.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttachmentContent]
   }

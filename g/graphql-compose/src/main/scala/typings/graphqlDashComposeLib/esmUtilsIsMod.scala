@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmUtilsIsMod extends js.Object {
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
-  def isObject(value: js.Any): /* is boolean */ scala.Boolean = js.native
+  def isObject(value: js.Any): /* is object */ scala.Boolean = js.native
   def isString(value: js.Any): /* is string */ scala.Boolean = js.native
 }
 

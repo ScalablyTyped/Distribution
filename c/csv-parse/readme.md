@@ -1,7 +1,7 @@
 
 # Scala.js typings for csv-parse
 
-Typings are for version 1.1
+Typings are for version 4.4.1
 
 ## Library description:
 CSV parsing implementing the Node.js `stream.Transform` API
@@ -24,7 +24,7 @@ CSV parsing implementing the Node.js `stream.Transform` API
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
@@ -35,11 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for csv-parse 1.1
-// Project: https://github.com/wdavidw/node-csv-parse, https://csv.js.org/parse
-// Definitions by: David Muller <https://github.com/davidm77>
-//                 Jan Sziegaud <https://github.com/obi-jan-kenobi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Original definitions in https://github.com/DefinitelyTyped/DefinitelyTyped by: David Muller <https://github.com/davidm77>
 
 ```
 

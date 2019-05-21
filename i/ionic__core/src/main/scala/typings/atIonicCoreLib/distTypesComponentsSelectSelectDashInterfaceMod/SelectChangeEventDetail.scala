@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectChangeEventDetail extends js.Object {
-  var value: js.UndefOr[js.Any | js.Array[_] | scala.Null]
+  var value: js.UndefOr[js.Any | js.Array[_] | scala.Null] = js.undefined
 }
 
 object SelectChangeEventDetail {

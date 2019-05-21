@@ -12,7 +12,9 @@ trait ComposeObjectTypeConfig[TSource, TContext] extends js.Object {
     graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[ComposeFieldConfigMap[TSource, TContext]]
   ] = js.undefined
   var interfaces: js.UndefOr[
-    graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[js.Array[graphqlLib.graphqlMod.GraphQLInterfaceType] | scala.Null]
+    graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[
+      js.Array[graphqlDashComposeLib.esmInterfaceTypeComposerMod.ComposeInterfaceType] | scala.Null
+    ]
   ] = js.undefined
   var isIntrospection: js.UndefOr[scala.Boolean] = js.undefined
   var isTypeOf: js.UndefOr[(graphqlLib.typeDefinitionMod.GraphQLIsTypeOfFn[TSource, TContext]) | scala.Null] = js.undefined
@@ -26,7 +28,9 @@ object ComposeObjectTypeConfig {
     description: java.lang.String = null,
     extensions: graphqlDashComposeLib.esmUtilsDefinitionsMod.Extensions = null,
     fields: graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[ComposeFieldConfigMap[TSource, TContext]] = null,
-    interfaces: graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[js.Array[graphqlLib.graphqlMod.GraphQLInterfaceType] | scala.Null] = null,
+    interfaces: graphqlDashComposeLib.esmUtilsDefinitionsMod.Thunk[
+      js.Array[graphqlDashComposeLib.esmInterfaceTypeComposerMod.ComposeInterfaceType] | scala.Null
+    ] = null,
     isIntrospection: js.UndefOr[scala.Boolean] = js.undefined,
     isTypeOf: graphqlLib.typeDefinitionMod.GraphQLIsTypeOfFn[TSource, TContext] = null
   ): ComposeObjectTypeConfig[TSource, TContext] = {

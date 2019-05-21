@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-rx
 
-Typings are for version 6.1.0
+Typings are for version 6.2.0
 
 ## Library description:
 RxJS bindings for Vue

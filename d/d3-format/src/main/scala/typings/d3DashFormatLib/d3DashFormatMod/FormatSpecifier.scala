@@ -31,7 +31,7 @@ trait FormatSpecifier extends js.Object {
     *
     * See precisionFixed and precisionRound for help picking an appropriate precision.
     */
-  var precision: js.UndefOr[scala.Double]
+  var precision: js.UndefOr[scala.Double] = js.undefined
   /**
     * The sign can be:
     *
@@ -81,7 +81,7 @@ trait FormatSpecifier extends js.Object {
     * The width defines the minimum field width;
     * if not specified, then the width will be determined by the content.
     */
-  var width: js.UndefOr[scala.Double]
+  var width: js.UndefOr[scala.Double] = js.undefined
   /**
     * The zero (0) option enables zero-padding; this implicitly sets fill to 0 and align to =.
     */

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReadyState[T /* <: relayDashRuntimeLib.relayDashRuntimeMod.Variables */] extends js.Object {
-  var error: js.UndefOr[stdLib.Error | scala.Null]
-  var props: js.UndefOr[T | scala.Null]
+  var error: js.UndefOr[stdLib.Error | scala.Null] = js.undefined
+  var props: js.UndefOr[T | scala.Null] = js.undefined
   var retry: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 

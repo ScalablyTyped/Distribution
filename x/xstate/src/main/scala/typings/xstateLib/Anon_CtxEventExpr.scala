@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CtxEventExpr[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */] extends js.Object {
-  var label: js.UndefOr[java.lang.String]
+  var label: js.UndefOr[java.lang.String] = js.undefined
   var `type`: xstateLib.libTypesMod.ActionTypes
   def expr(ctx: TContext, event: TEvent): js.Any
 }

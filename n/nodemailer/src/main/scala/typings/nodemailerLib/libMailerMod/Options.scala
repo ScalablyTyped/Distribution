@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /** An array of alternative text contents (in addition to text and html parts) */
   var alternatives: js.UndefOr[js.Array[Attachment]] = js.undefined
+  /** AMP4EMAIL specific HTML version of the message, same usage as with text and html. Make sure it is a full and valid AMP4EMAIL document, otherwise the displaying email client falls back to html and ignores the amp part */
+  var amp: js.UndefOr[java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | AmpAttachment] = js.undefined
   /** An array of attachment objects */
   var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
   /** Comma separated list or an array of recipients e-mail addresses that will appear on the Bcc: field */
@@ -69,6 +71,7 @@ object Options {
   @scala.inline
   def apply(
     alternatives: js.Array[Attachment] = null,
+    amp: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | AmpAttachment = null,
     attachments: js.Array[Attachment] = null,
     bcc: java.lang.String | Address | (js.Array[java.lang.String | Address]) = null,
     cc: java.lang.String | Address | (js.Array[java.lang.String | Address]) = null,
@@ -99,6 +102,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])

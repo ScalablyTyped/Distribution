@@ -94,6 +94,12 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
     content: ProsemirrorNode[S],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
+  def create(attrs: scala.Null, content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: scala.Null, content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: scala.Null, content: Fragment[S]): ProsemirrorNode[S] = js.native
+  def create(attrs: scala.Null, content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def create(attrs: scala.Null, content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
+  def create(attrs: scala.Null, content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   /**
     * Like [`create`](#model.NodeType.create), but see if it is necessary to
     * add nodes to the start or end of the given fragment to make it
@@ -122,6 +128,12 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
     content: ProsemirrorNode[S],
     marks: js.Array[Mark[S]]
   ): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: scala.Null, content: js.Array[ProsemirrorNode[S]]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: scala.Null, content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: scala.Null, content: Fragment[S]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: scala.Null, content: Fragment[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: scala.Null, content: ProsemirrorNode[S]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
+  def createAndFill(attrs: scala.Null, content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.native
   /**
     * Like [`create`](#model.NodeType.create), but check the given content
     * against the node type's content restrictions, and throw an error
@@ -147,6 +159,12 @@ class NodeType[S /* <: Schema[_, _] */] () extends js.Object {
     content: ProsemirrorNode[S],
     marks: js.Array[Mark[S]]
   ): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: scala.Null, content: js.Array[ProsemirrorNode[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: scala.Null, content: js.Array[ProsemirrorNode[S]], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: scala.Null, content: Fragment[S]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: scala.Null, content: Fragment[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: scala.Null, content: ProsemirrorNode[S]): ProsemirrorNode[S] = js.native
+  def createChecked(attrs: scala.Null, content: ProsemirrorNode[S], marks: js.Array[Mark[S]]): ProsemirrorNode[S] = js.native
   /**
     * Returns true if the given fragment is valid content for this node
     * type with the given attributes.

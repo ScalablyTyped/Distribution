@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => dts-dom, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/dts-dom/bin/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/dts-dom),TsIdentLibrarySimple(dts-dom)),TsIdentModule(None,List(dts-dom))) [id => dts-dom, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(dts-dom)) [id => dts-dom, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(dts-dom) [id => dts-dom, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibrarySimple(dts-dom) [id => dts-dom, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => dts-dom, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing dts-dom [id => dts-dom, phase => scala.js] 
 [info ] RemoveMultipleInheritance.scala:43 Dropped parents 

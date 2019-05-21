@@ -5,73 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Palette extends js.Object {
-  var action: TypeAction = js.native
-  @JSName("augmentColor")
-  var augmentColor_Original: atMaterialDashUiCoreLib.Anon_Color = js.native
-  var background: TypeBackground = js.native
-  var common: atMaterialDashUiCoreLib.colorsCommonMod.CommonColors = js.native
-  var contrastThreshold: scala.Double = js.native
-  var divider: TypeDivider = js.native
-  var error: PaletteColor = js.native
-  var grey: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Color = js.native
-  var primary: PaletteColor = js.native
-  var secondary: PaletteColor = js.native
-  var text: TypeText = js.native
-  var tonalOffset: scala.Double = js.native
-  var `type`: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType = js.native
-  def augmentColor(color: ColorPartial): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: java.lang.String): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: java.lang.String, lightShade: java.lang.String): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: java.lang.String,
-    lightShade: java.lang.String,
-    darkShade: java.lang.String
-  ): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: java.lang.String,
-    lightShade: java.lang.String,
-    darkShade: scala.Double
-  ): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: java.lang.String, lightShade: scala.Double): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: java.lang.String,
-    lightShade: scala.Double,
-    darkShade: java.lang.String
-  ): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: java.lang.String,
-    lightShade: scala.Double,
-    darkShade: scala.Double
-  ): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: scala.Double): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: scala.Double, lightShade: java.lang.String): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: scala.Double,
-    lightShade: java.lang.String,
-    darkShade: java.lang.String
-  ): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: scala.Double,
-    lightShade: java.lang.String,
-    darkShade: scala.Double
-  ): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: scala.Double, lightShade: scala.Double): scala.Unit = js.native
-  def augmentColor(
-    color: ColorPartial,
-    mainShade: scala.Double,
-    lightShade: scala.Double,
-    darkShade: java.lang.String
-  ): scala.Unit = js.native
-  def augmentColor(color: ColorPartial, mainShade: scala.Double, lightShade: scala.Double, darkShade: scala.Double): scala.Unit = js.native
-  def augmentColor(color: PaletteColorOptions): scala.Unit = js.native
-  def getContrastText(background: java.lang.String): java.lang.String = js.native
+  var action: TypeAction
+  var augmentColor: atMaterialDashUiCoreLib.Anon_Color
+  var background: TypeBackground
+  var common: atMaterialDashUiCoreLib.colorsCommonMod.CommonColors
+  var contrastThreshold: scala.Double
+  var divider: TypeDivider
+  var error: PaletteColor
+  var grey: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Color
+  var primary: PaletteColor
+  var secondary: PaletteColor
+  var text: TypeText
+  var tonalOffset: scala.Double
+  var `type`: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType
+  def getContrastText(background: java.lang.String): java.lang.String
+}
+
+object Palette {
+  @scala.inline
+  def apply(
+    action: TypeAction,
+    augmentColor: atMaterialDashUiCoreLib.Anon_Color,
+    background: TypeBackground,
+    common: atMaterialDashUiCoreLib.colorsCommonMod.CommonColors,
+    contrastThreshold: scala.Double,
+    divider: TypeDivider,
+    error: PaletteColor,
+    getContrastText: java.lang.String => java.lang.String,
+    grey: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Color,
+    primary: PaletteColor,
+    secondary: PaletteColor,
+    text: TypeText,
+    tonalOffset: scala.Double,
+    `type`: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType
+  ): Palette = {
+    val __obj = js.Dynamic.literal(action = action, augmentColor = augmentColor, background = background, common = common, contrastThreshold = contrastThreshold, divider = divider, error = error, getContrastText = js.Any.fromFunction1(getContrastText), grey = grey, primary = primary, secondary = secondary, text = text, tonalOffset = tonalOffset)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Palette]
+  }
 }
 

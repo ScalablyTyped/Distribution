@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esmTypeMapperMod {
-  type ComposeObjectType = (graphqlDashComposeLib.esmObjectTypeComposerMod.ObjectTypeComposer[js.Any, js.Any]) | (graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | TypeDefinitionString | TypeAsString
   type TypeAsString = TypeDefinitionString | TypeWrappedString | TypeNameString
   type TypeDefinitionString = java.lang.String
   type TypeNameString = java.lang.String

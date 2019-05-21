@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ErrOk extends js.Object {
-  var err: js.UndefOr[scala.Nothing]
+  var err: js.UndefOr[scala.Nothing] = js.undefined
   var ok: java.lang.String
 }
 

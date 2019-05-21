@@ -15,7 +15,7 @@ trait CreateDirectoryConfigRequest extends js.Object {
     */
   var OrganizationalUnitDistinguishedNames: OrganizationalUnitDistinguishedNamesList
   /**
-    * The credentials for the service account used by the streaming instance to connect to the directory.
+    * The credentials for the service account used by the fleet or image builder to connect to the directory.
     */
   var ServiceAccountCredentials: awsDashSdkLib.clientsAppstreamMod.ServiceAccountCredentials
 }

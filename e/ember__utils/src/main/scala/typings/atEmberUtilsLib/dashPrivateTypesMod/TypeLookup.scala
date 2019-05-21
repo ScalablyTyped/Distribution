@@ -15,7 +15,7 @@ trait TypeLookup extends js.Object {
   var number: scala.Double
   var regexp: stdLib.RegExp
   var string: java.lang.String
-  var undefined: js.UndefOr[scala.Nothing]
+  var undefined: js.UndefOr[scala.Nothing] = js.undefined
   def function(args: js.Any*): js.Any
 }
 

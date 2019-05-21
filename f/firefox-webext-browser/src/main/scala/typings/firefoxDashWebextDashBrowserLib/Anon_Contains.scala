@@ -18,7 +18,7 @@ trait Anon_Contains extends js.Object {
         scala.Unit
       ]
     ]
-  ]
+  ] = js.undefined
   /**
     * Fired when permissions are removed from the extension.
     * @deprecated Unsupported on Firefox at this time.
@@ -30,7 +30,7 @@ trait Anon_Contains extends js.Object {
         scala.Unit
       ]
     ]
-  ]
+  ] = js.undefined
   /** Check if the extension has the given permissions. */
   def contains(permissions: firefoxDashWebextDashBrowserLib.browserNs.permissionsNs.AnyPermissions): js.Promise[scala.Boolean]
   /* permissions functions */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for force-graph
 
-Typings are for version 1.14
+Typings are for version 1.15
 
 ## Library description:
 2D force-directed graph rendered on HTML5 canvas
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for force-graph 1.14
+// Type definitions for force-graph 1.15
 // Project: https://github.com/vasturiano/force-graph
 // Definitions by: Peter Kimberley <https://github.com/p-kimberley>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

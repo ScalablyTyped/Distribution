@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MongoStoreFactory
   extends org.scalablytyped.runtime.Instantiable1[
-      (/* options */ MogooseConnectionOptions) | (/* options */ MongoUrlOptions) | (/* options */ NativeMongoOptions) | (/* options */ NativeMongoPromiseOptions), 
+      (/* options */ MongoUrlOptions) | (/* options */ MongooseConnectionOptions) | (/* options */ NativeMongoOptions) | (/* options */ NativeMongoPromiseOptions), 
       MongoStore
     ]
 

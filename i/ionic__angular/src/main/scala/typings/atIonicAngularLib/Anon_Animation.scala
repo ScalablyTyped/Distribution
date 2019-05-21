@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Animation extends js.Object {
   var animation: js.UndefOr[
     atIonicAngularLib.atIonicAngularLibStrings.forward | atIonicAngularLib.atIonicAngularLibStrings.back
-  ]
+  ] = js.undefined
   var direction: atIonicCoreLib.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
 }
 

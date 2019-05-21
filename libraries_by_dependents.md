@@ -2898,6 +2898,7 @@
 | 31 | [picturefill](./p/picturefill) | A responsive image polyfill.
 | 31 | [pkijs](./p/pkijs) | Public Key Infrastructure (PKI) is the basis of ho
 | 31 | [polyline](./p/polyline) | Polyline encoding and decoding
+| 31 | [react-native-maps](./r/react-native-maps) | React Native Mapview component for iOS + Android
 | 31 | [react-popover](./r/react-popover) | A specification backed popover for react
 | 31 | [react-svg](./r/react-svg) | A React component that injects SVG into the DOM.
 | 31 | [rmc-input-number](./r/rmc-input-number) | input-number ui component for react(web & react-na
@@ -3165,7 +3166,6 @@
 | 24 | [contains-path](./c/contains-path) | Return true if a file path contains the given path
 | 24 | [cordova-sqlite-storage](./c/cordova-sqlite-storage) | Native interface to SQLite for PhoneGap/Cordova - 
 | 24 | [deprecated-decorator](./d/deprecated-decorator) | A simple decorator for deprecated methods and prop
-| 24 | [dialogflow](./d/dialogflow) | Dialogflow API client for Node.js
 | 24 | [each](./e/each) | Chained and parallel async iterator in one elegant
 | 24 | [electron-osx-sign](./e/electron-osx-sign) | Codesign Electron macOS apps
 | 24 | [feathersjs__authenticatio](./f/feathersjs__authentication-local) | Local authentication strategy for @feathers/authen
@@ -4098,6 +4098,7 @@
 | 10 | [nanoscroller](./n/nanoscroller) | A jQuery plugin that offers a simplistic way of im
 | 10 | [ng-tags-input](./n/ng-tags-input) | Tags input directive for AngularJS
 | 10 | [node-ral](./n/node-ral) | a rpc client for node
+| 10 | [octokit__request](./o/octokit__request) | Send parameterized requests to GitHub’s APIs with 
 | 10 | [p-catch-if](./p/p-catch-if) | Conditional promise catch handler
 | 10 | [pollyjs__utils](./p/pollyjs__utils) | Shared utilities and constants between @pollyjs pa
 | 10 | [precond](./p/precond) | Precondition checking utilities.
@@ -4657,6 +4658,7 @@
 | 5 | [egg-mock](./e/egg-mock) | mock server for egg
 | 5 | [electron-unhandled](./e/electron-unhandled) | Catch unhandled errors and promise rejections in y
 | 5 | [emotion__stylis](./e/emotion__stylis) | A custom build of Stylis
+| 5 | [engine-check](./e/engine-check) | Enforce node engine version from package.json
 | 5 | [expectations](./e/expectations) | jasmine-style 'expect' calls for mocha and other t
 | 5 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute
 | 5 | [extract-stack](./e/extract-stack) | Extract the actual stack of an error
@@ -4742,6 +4744,7 @@
 | 5 | [pulumi__kubernetes](./p/pulumi__kubernetes) | A Pulumi package for creating and managing Kuberne
 | 5 | [raspi-gpio](./r/raspi-gpio) | Provides access to GPIO on the Raspberry Pi from N
 | 5 | [raspi-i2c](./r/raspi-i2c) | Provides access to I2C on the Raspberry Pi from No
+| 5 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages.
 | 5 | [react-confirm](./r/react-confirm) | Small library which makes your Dialog component ca
 | 5 | [react-css-collapse](./r/react-css-collapse) | Component-wrapper for collapse animation with css 
 | 5 | [react-filepond](./r/react-filepond) | A handy FilePond adapter component for React
@@ -5189,6 +5192,7 @@
 | 3 | [webpack-watched-glob-entr](./w/webpack-watched-glob-entries-plugin) | Webpack plugin to glob directories for entry files
 | 3 | [webscopeio__react-textare](./w/webscopeio__react-textarea-autocomplete) | Offers autocomplete over textarea in style of GitH
 | 3 | [windows-release](./w/windows-release) | Get the name of a Windows version from the release
+| 3 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru
 | 3 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work
 | 3 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js
 | 3 | [yesql](./y/yesql) | Read named SQL statements from .sql files. Also na
@@ -5201,6 +5205,7 @@
 | 2 | [angular-gridster](./a/angular-gridster) | This directive gives you gridster behavior
 | 2 | [angular-permission](./a/angular-permission) | Fully featured role and permission based access co
 | 2 | [angular-xeditable](./a/angular-xeditable) | Edit-in-place for angular.js
+| 2 | [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design
 | 2 | [apollo-engine-reporting-p](./a/apollo-engine-reporting-protobuf) | Protobuf format for Apollo Engine
 | 2 | [arcgis-to-geojson-utils](./a/arcgis-to-geojson-utils) | Tools to convert ArcGIS JSON geometries to GeoJSON
 | 2 | [artyom_dot_js](./a/artyom_dot_js) | Artyom is a Robust Wrapper of the Google Chrome Sp
@@ -5461,6 +5466,7 @@
 | 2 | [squirejs](./s/squirejs) | Squire.js is a dependency injector for Require.js 
 | 2 | [srp](./s/srp) | Secure Remote Password (SRP)
 | 2 | [sticky-cluster](./s/sticky-cluster) | Sticky session balancer, 10x faster and with much 
+| 2 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio
 | 2 | [stream-chain](./s/stream-chain) | Chain functions as transform streams.
 | 2 | [strophe](./s/strophe) | Strophe.js is an XMPP library for JavaScript
 | 2 | [subsume](./s/subsume) | Embed data in other data and easily extract it whe
@@ -5823,6 +5829,7 @@
 | 1 | [react-native-doc-viewer](./r/react-native-doc-viewer) | React Native Native Module Bridge Quicklock Docume
 | 1 | [react-native-dotenv](./r/react-native-dotenv) | A Babel preset let you import application configs 
 | 1 | [react-native-fabric](./r/react-native-fabric) | A React Native library for Fabric, Crashlytics and
+| 1 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 1 | [react-native-material-des](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar
 | 1 | [react-native-mauron85-bac](./r/react-native-mauron85-background-geolocation) | optimized background location tracking
 | 1 | [react-native-snackbar-com](./r/react-native-snackbar-component) | A snackbar component for Android and iOS
@@ -6259,6 +6266,7 @@
 | 0 | [oakdex-pokedex](./o/oakdex-pokedex) | Comprehensive Pokedex for Gen 1-7
 | 0 | [object-keys-mapping](./o/object-keys-mapping) | mapping object keys
 | 0 | [oblo-util](./o/oblo-util) | Utilities module suitable for both Node.js and cli
+| 0 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
 | 0 | [ofe](./o/ofe) | Overwrite OnFatalError to produce heapdump
 | 0 | [office-js](./o/office-js) | Utility for office cloud services.
 | 0 | [okta__okta-vue](./o/okta__okta-vue) | Vue support for Okta
@@ -6474,6 +6482,7 @@
 | 0 | [weapp-api](./w/weapp-api) | wechat api
 | 0 | [web-bluetooth](./w/web-bluetooth) | Library for interacting with Bluetooth 4.0 devices
 | 0 | [webcl](./w/webcl) | OpenCL bindings for Node.js
+| 0 | [webicon](./w/webicon) | Icon library
 | 0 | [webpack-env](./w/webpack-env) | read variables from a .env.js file and make them a
 | 0 | [webprogbase-console-view](./w/webprogbase-console-view) | Console browser and server app module with simplif
 | 0 | [week](./w/week) | Get the current week number.

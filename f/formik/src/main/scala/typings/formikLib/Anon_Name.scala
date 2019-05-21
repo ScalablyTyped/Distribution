@@ -5,17 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Name extends js.Object {
-  var name: java.lang.String = js.native
-  @JSName("onBlur")
-  var onBlur_Original: Anon_EFieldOrEvent = js.native
-  @JSName("onChange")
-  var onChange_Original: Anon_EField = js.native
-  var value: js.Any = js.native
-  def onBlur(e: reactLib.reactMod.FocusEvent[_]): scala.Unit = js.native
-  def onBlur[T](fieldOrEvent: T): scala.Unit | (js.Function1[/* e */ js.Any, scala.Unit]) = js.native
-  def onChange(e: reactLib.reactMod.ChangeEvent[_]): scala.Unit = js.native
-  def onChange[T](field: T): (js.Function1[/* e */ js.Any | reactLib.reactMod.ChangeEvent[_], scala.Unit]) | scala.Unit = js.native
+  var name: java.lang.String
+  var onBlur: Anon_EFieldOrEvent
+  var onChange: Anon_EField
+  var value: js.Any
+}
+
+object Anon_Name {
+  @scala.inline
+  def apply(name: java.lang.String, onBlur: Anon_EFieldOrEvent, onChange: Anon_EField, value: js.Any): Anon_Name = {
+    val __obj = js.Dynamic.literal(name = name, onBlur = onBlur, onChange = onChange, value = value)
+  
+    __obj.asInstanceOf[Anon_Name]
+  }
 }
 

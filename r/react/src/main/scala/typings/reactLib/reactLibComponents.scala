@@ -25,6 +25,8 @@ object reactLibComponents {
   type SuspenseProps = reactLib.reactMod.SuspenseProps
   @scala.inline
   def unstable_Profiler: reactLib.reactMod.ComponentType[reactLib.reactMod.ProfilerProps] = reactLib.reactMod.^.unstable_Profiler.asInstanceOf[reactLib.reactMod.ComponentType[reactLib.reactMod.ProfilerProps]]
+  @scala.inline
+  def unstable_ProfilerProps: reactLib.reactMod.ProfilerProps.type = reactLib.reactMod.ProfilerProps
   type unstable_ProfilerProps = reactLib.reactMod.ProfilerProps
 }
 

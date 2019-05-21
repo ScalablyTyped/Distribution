@@ -25,7 +25,7 @@ trait HandleObject[TTarget, TData] extends js.Object {
   /**
     * For delegated events, this is the selector used to filter descendant elements and determine if the handler should be called. For directly bound events, this property is `null`.
     */
-  val selector: js.UndefOr[java.lang.String | scala.Null]
+  val selector: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
     * The type of event, such as `"click"`. When special event mapping is used via `bindType` or `delegateType`, this will be the mapped type.
     */

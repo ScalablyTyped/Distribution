@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait LayerOptions extends js.Object {
   var hd: scala.Boolean
-  var overlayMap: js.UndefOr[scala.Boolean]
-  var zIndex: js.UndefOr[scala.Double]
+  var overlayMap: js.UndefOr[scala.Boolean] = js.undefined
+  var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
 object LayerOptions {

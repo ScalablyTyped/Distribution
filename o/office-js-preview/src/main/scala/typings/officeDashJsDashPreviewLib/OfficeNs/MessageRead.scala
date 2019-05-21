@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsDashPreviewLib.OfficeNs.ItemRead because var conflicts: body, categories, itemType, notificationMessages, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, displayReplyForm, displayReplyForm, getEntities, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
+- officeDashJsDashPreviewLib.OfficeNs.ItemRead because var conflicts: body, categories, itemType, notificationMessages, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, displayReplyForm, displayReplyForm, getEntities, getEntitiesByType, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
 trait MessageRead extends Message {
   /**
     * Gets the item's attachments as an array.
@@ -419,6 +419,7 @@ trait MessageRead extends Message {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     */
   def getEntities(): Entities = js.native
+  def getEntitiesByType(entityType: java.lang.String): js.Array[java.lang.String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *

@@ -5,34 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_MosaicActionsMosaicId extends js.Object {
-  @JSName("mosaicActions")
-  var mosaicActions_Original: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_Args]] = js.native
-  @JSName("mosaicId")
-  var mosaicId_Original: propDashTypesLib.propDashTypesMod.Validator[java.lang.String] = js.native
-  @JSName("mosaicWindowActions")
-  var mosaicWindowActions_Original: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_ArgsConnectDragSource]] = js.native
-  def mosaicActions(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def mosaicId(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def mosaicWindowActions(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var mosaicActions: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_Args]]
+  var mosaicId: propDashTypesLib.propDashTypesMod.Validator[java.lang.String]
+  var mosaicWindowActions: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_ArgsConnectDragSource]]
+}
+
+object Anon_MosaicActionsMosaicId {
+  @scala.inline
+  def apply(
+    mosaicActions: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_Args]],
+    mosaicId: propDashTypesLib.propDashTypesMod.Validator[java.lang.String],
+    mosaicWindowActions: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_ArgsConnectDragSource]]
+  ): Anon_MosaicActionsMosaicId = {
+    val __obj = js.Dynamic.literal(mosaicActions = mosaicActions, mosaicId = mosaicId, mosaicWindowActions = mosaicWindowActions)
+  
+    __obj.asInstanceOf[Anon_MosaicActionsMosaicId]
+  }
 }
 

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object ternLibStrings {
   @js.native
+  sealed trait Array extends js.Object
+  
+  @js.native
+  sealed trait bool extends js.Object
+  
+  @js.native
   sealed trait completions extends js.Object
   
   @js.native
@@ -31,6 +37,9 @@ object ternLibStrings {
   sealed trait local extends js.Object
   
   @js.native
+  sealed trait number extends js.Object
+  
+  @js.native
   sealed trait part extends js.Object
   
   @js.native
@@ -43,8 +52,15 @@ object ternLibStrings {
   sealed trait rename extends js.Object
   
   @js.native
+  sealed trait string extends js.Object
+  
+  @js.native
   sealed trait `type` extends js.Object
   
+  @scala.inline
+  def Array: Array = "Array".asInstanceOf[Array]
+  @scala.inline
+  def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
   def completions: completions = "completions".asInstanceOf[completions]
   @scala.inline
@@ -62,6 +78,8 @@ object ternLibStrings {
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def part: part = "part".asInstanceOf[part]
   @scala.inline
   def properties: properties = "properties".asInstanceOf[properties]
@@ -69,6 +87,8 @@ object ternLibStrings {
   def refs: refs = "refs".asInstanceOf[refs]
   @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
 }

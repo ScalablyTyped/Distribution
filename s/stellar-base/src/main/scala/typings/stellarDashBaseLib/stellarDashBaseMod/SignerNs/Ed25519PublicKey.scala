@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Ed25519PublicKey
   extends stellarDashBaseLib.stellarDashBaseMod.Signer {
   var ed25519PublicKey: java.lang.String
-  var weight: js.UndefOr[scala.Double]
+  var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Ed25519PublicKey {

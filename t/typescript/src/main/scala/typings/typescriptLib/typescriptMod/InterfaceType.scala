@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 /** Class and interface types (ObjectFlags.Class and ObjectFlags.Interface). */
 trait InterfaceType extends ObjectType {
-  var localTypeParameters: js.UndefOr[js.Array[TypeParameter]]
-  var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]]
-  var thisType: js.UndefOr[TypeParameter]
-  var typeParameters: js.UndefOr[js.Array[TypeParameter]]
+  var localTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
+  var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
+  var thisType: js.UndefOr[TypeParameter] = js.undefined
+  var typeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
 }
 
 object InterfaceType {

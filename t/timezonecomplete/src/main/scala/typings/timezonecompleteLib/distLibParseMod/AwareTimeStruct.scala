@@ -13,7 +13,7 @@ trait AwareTimeStruct extends js.Object {
   /**
     * The time zone (can be undefined)
     */
-  var zone: js.UndefOr[timezonecompleteLib.distLibTimezoneMod.TimeZone]
+  var zone: js.UndefOr[timezonecompleteLib.distLibTimezoneMod.TimeZone] = js.undefined
 }
 
 object AwareTimeStruct {

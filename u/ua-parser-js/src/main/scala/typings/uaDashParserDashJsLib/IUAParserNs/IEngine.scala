@@ -11,11 +11,11 @@ trait IEngine extends js.Object {
     * Amaya, EdgeHTML, Gecko, iCab, KHTML, Links, Lynx, NetFront, NetSurf, Presto,
     * Tasman, Trident, w3m, WebKit
     */
-  var name: js.UndefOr[java.lang.String]
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Determined dynamically
     */
-  var version: js.UndefOr[java.lang.String]
+  var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IEngine {

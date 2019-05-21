@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esmUnionTypeComposerMod {
+  type ComposeUnionType = (UnionTypeComposer[js.Any, js.Any]) | graphqlLib.graphqlMod.GraphQLUnionType | graphqlDashComposeLib.esmTypeMapperMod.TypeDefinitionString | graphqlDashComposeLib.esmTypeMapperMod.TypeAsString
   type GraphQLUnionTypeExtended[TSource, TContext] = graphqlLib.graphqlMod.GraphQLUnionType with (graphqlDashComposeLib.Anon_GqcExtensionsGqcTypeMap[TSource, TContext])
   type UnionTypeComposeDefinition[TSource, TContext] = graphqlDashComposeLib.esmTypeMapperMod.TypeAsString | (ComposeUnionTypeConfig[TSource, TContext])
   type UnionTypeResolverCheckFn[TSource, TContext] = js.Function3[
@@ -15,7 +16,7 @@ package object esmUnionTypeComposerMod {
     graphqlDashComposeLib.esmUtilsDefinitionsMod.MaybePromise[scala.Boolean | scala.Null | scala.Unit]
   ]
   type UnionTypeResolversMap[TSource, TContext] = stdLib.Map[
-    graphqlDashComposeLib.esmTypeMapperMod.ComposeObjectType, 
+    graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeObjectType, 
     UnionTypeResolverCheckFn[TSource, TContext]
   ]
 }

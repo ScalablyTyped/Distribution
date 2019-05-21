@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait DayModifiers
   extends /* other */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]] {
-  var outside: js.UndefOr[scala.Boolean]
-  var today: js.UndefOr[scala.Boolean]
+  var outside: js.UndefOr[scala.Boolean] = js.undefined
+  var today: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object DayModifiers {

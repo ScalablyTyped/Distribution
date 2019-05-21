@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_GridHorizontal extends js.Object {
-  var grid: js.UndefOr[antdLib.esListMod.ListGridType]
-  var itemLayout: js.UndefOr[antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical]
+  var grid: js.UndefOr[antdLib.esListMod.ListGridType] = js.undefined
+  var itemLayout: js.UndefOr[antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical] = js.undefined
 }
 
 object Anon_GridHorizontal {

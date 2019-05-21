@@ -729,9 +729,6 @@ object reactDashNativeLibStrings {
   sealed trait history extends js.Object
   
   @js.native
-  sealed trait hybrid extends js.Object
-  
-  @js.native
   sealed trait identity
     extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ExtrapolateType
   
@@ -1151,9 +1148,6 @@ object reactDashNativeLibStrings {
        with RequestMode_
   
   @js.native
-  sealed trait satellite extends js.Object
-  
-  @js.native
   sealed trait scale extends js.Object
   
   @js.native
@@ -1221,9 +1215,6 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait square extends js.Object
-  
-  @js.native
-  sealed trait standard extends js.Object
   
   @js.native
   sealed trait start extends js.Object
@@ -1783,8 +1774,6 @@ object reactDashNativeLibStrings {
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
   def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
@@ -2029,8 +2018,6 @@ object reactDashNativeLibStrings {
   @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   @scala.inline
-  def satellite: satellite = "satellite".asInstanceOf[satellite]
-  @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
@@ -2070,8 +2057,6 @@ object reactDashNativeLibStrings {
   def spinner: spinner = "spinner".asInstanceOf[spinner]
   @scala.inline
   def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline

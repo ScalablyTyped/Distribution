@@ -10,43 +10,43 @@ import scala.scalajs.js.annotation._
 trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
   // MouseEvent, KeyboardEvent, TouchEvent
   @JSName("altKey")
-  var altKey_EventBase: js.UndefOr[scala.Nothing]
+  var altKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   // Event
   @JSName("bubbles")
   var bubbles_EventBase: scala.Boolean
   // MouseEvent
   @JSName("button")
-  var button_EventBase: js.UndefOr[scala.Nothing]
+  var button_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("buttons")
-  var buttons_EventBase: js.UndefOr[scala.Nothing]
+  var buttons_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("cancelable")
   var cancelable_EventBase: scala.Boolean
   // TouchEvent
   @JSName("changedTouches")
-  var changedTouches_EventBase: js.UndefOr[scala.Nothing]
+  var changedTouches_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("charCode")
-  var charCode_EventBase: js.UndefOr[scala.Nothing]
+  var charCode_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
-  var char_EventBase: js.UndefOr[scala.Nothing]
+  var char_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientX")
-  var clientX_EventBase: js.UndefOr[scala.Nothing]
+  var clientX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientY")
-  var clientY_EventBase: js.UndefOr[scala.Nothing]
+  var clientY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("ctrlKey")
-  var ctrlKey_EventBase: js.UndefOr[scala.Nothing]
+  var ctrlKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   // UIEvent
   @JSName("detail")
-  var detail_EventBase: js.UndefOr[scala.Nothing]
+  var detail_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("eventPhase")
   var eventPhase_EventBase: scala.Double
   /** @deprecated */
   @JSName("keyCode")
-  var keyCode_EventBase: js.UndefOr[scala.Nothing]
+  var keyCode_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("key")
-  var key_EventBase: js.UndefOr[scala.Nothing]
+  var key_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -84,11 +84,11 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("metaKey")
-  var metaKey_EventBase: js.UndefOr[scala.Nothing]
+  var metaKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("offsetX")
-  var offsetX_EventBase: js.UndefOr[scala.Nothing]
+  var offsetX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("offsetY")
-  var offsetY_EventBase: js.UndefOr[scala.Nothing]
+  var offsetY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The mouse position relative to the left edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageX/ }\`
@@ -125,7 +125,7 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("pageX")
-  var pageX_EventBase: js.UndefOr[scala.Nothing]
+  var pageX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -162,12 +162,12 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("pageY")
-  var pageY_EventBase: js.UndefOr[scala.Nothing]
+  var pageY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   // PointerEvent
   @JSName("pointerId")
-  var pointerId_EventBase: js.UndefOr[scala.Nothing]
+  var pointerId_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("pointerType")
-  var pointerType_EventBase: js.UndefOr[scala.Nothing]
+  var pointerType_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -181,20 +181,20 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
     */
   var relatedTarget: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenX")
-  var screenX_EventBase: js.UndefOr[scala.Nothing]
+  var screenX_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenY")
-  var screenY_EventBase: js.UndefOr[scala.Nothing]
+  var screenY_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("shiftKey")
-  var shiftKey_EventBase: js.UndefOr[scala.Nothing]
+  var shiftKey_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("targetTouches")
-  var targetTouches_EventBase: js.UndefOr[scala.Nothing]
+  var targetTouches_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("toElement")
-  var toElement_EventBase: js.UndefOr[scala.Nothing]
+  var toElement_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("touches")
-  var touches_EventBase: js.UndefOr[scala.Nothing]
+  var touches_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("view")
-  var view_EventBase: js.UndefOr[scala.Nothing]
+  var view_EventBase: js.UndefOr[scala.Nothing] = js.undefined
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.
@@ -249,7 +249,7 @@ trait EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigger
   ```
     */
   @JSName("which")
-  var which_EventBase: js.UndefOr[scala.Nothing]
+  var which_EventBase: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object EventBase {

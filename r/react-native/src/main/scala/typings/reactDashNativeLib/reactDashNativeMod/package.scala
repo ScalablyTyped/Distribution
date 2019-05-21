@@ -68,10 +68,6 @@ package object reactDashNativeMod {
   ]
   type ListViewComponent = reactLib.reactMod.Component[ListViewProps, js.Object, js.Any]
   /**
-    * @see https://facebook.github.io/react-native/docs/mapview.html#content
-    */
-  type MapViewComponent = reactLib.reactMod.Component[MapViewProps, js.Object, js.Any]
-  /**
     * @see https://facebook.github.io/react-native/docs/maskedviewios.html
     */
   type MaskedViewComponent = reactLib.reactMod.Component[MaskedViewIOSProps, js.Object, js.Any]

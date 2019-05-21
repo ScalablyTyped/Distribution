@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait MapContext extends js.Object {
   /**
-    * 获取原生地图对象
+    * 获取原生地图对象 plus.maps.Map
     */
   @JSName("$getAppMap")
-  def $getAppMap(): js.Object
+  def $getAppMap(): js.Any
   /**
     * 获取当前地图中心的经纬度，返回的是 gcj02 坐标系，可以用于 uni.openLocation
     */
@@ -40,7 +40,7 @@ trait MapContext extends js.Object {
 object MapContext {
   @scala.inline
   def apply(
-    $getAppMap: () => js.Object,
+    $getAppMap: () => js.Any,
     getCenterLocation: MapContextGetCenterLocationOptions => scala.Unit,
     getRegion: MapContextGetRegionOptions => scala.Unit,
     getScale: MapContextGetScaleOptions => scala.Unit,

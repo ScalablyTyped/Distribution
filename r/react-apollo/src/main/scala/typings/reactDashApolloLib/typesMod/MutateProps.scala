@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait MutateProps[TData, TGraphQLVariables] extends js.Object {
-  @JSName("mutate")
-  var mutate_Original: reactDashApolloLib.mutationMod.MutationFn[TData, TGraphQLVariables] = js.native
-  def mutate(): js.Promise[
-    scala.Unit | (reactDashApolloLib.mutationMod.FetchResult[TData, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]])
-  ] = js.native
-  def mutate(options: reactDashApolloLib.mutationMod.MutationOptions[TData, TGraphQLVariables]): js.Promise[
-    scala.Unit | (reactDashApolloLib.mutationMod.FetchResult[TData, stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]])
-  ] = js.native
+  var mutate: reactDashApolloLib.mutationMod.MutationFn[TData, TGraphQLVariables]
+}
+
+object MutateProps {
+  @scala.inline
+  def apply[TData, TGraphQLVariables](mutate: reactDashApolloLib.mutationMod.MutationFn[TData, TGraphQLVariables]): MutateProps[TData, TGraphQLVariables] = {
+    val __obj = js.Dynamic.literal(mutate = mutate)
+  
+    __obj.asInstanceOf[MutateProps[TData, TGraphQLVariables]]
+  }
 }
 

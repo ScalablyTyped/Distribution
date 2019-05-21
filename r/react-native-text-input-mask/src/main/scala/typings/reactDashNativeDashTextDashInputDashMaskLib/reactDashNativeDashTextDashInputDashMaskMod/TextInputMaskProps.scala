@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait TextInputMaskProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps
      with reactDashNativeLib.reactDashNativeMod.TextInputIOSProps
@@ -17,7 +16,7 @@ trait TextInputMaskProps
     * Specifies whether fonts should scale to respect Text Size accessibility settings.
     * The default is `true`.
     */
-  var allowFontScaling: js.UndefOr[scala.Boolean] = js.native
+  var allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Can tell TextInput to automatically capitalize certain characters.
     *      characters: all characters,
@@ -29,42 +28,42 @@ trait TextInputMaskProps
     */
   var autoCapitalize: js.UndefOr[
     reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.none | reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.sentences | reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.words | reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.characters
-  ] = js.native
+  ] = js.undefined
   /**
     * If false, disables auto-correct.
     * The default value is true.
     */
-  var autoCorrect: js.UndefOr[scala.Boolean] = js.native
+  var autoCorrect: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If true, focuses the input on componentDidMount.
     * The default value is false.
     */
-  var autoFocus: js.UndefOr[scala.Boolean] = js.native
+  var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If true, the text field will blur when submitted.
     * The default value is true.
     */
-  var blurOnSubmit: js.UndefOr[scala.Boolean] = js.native
+  var blurOnSubmit: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If true, caret is hidden. The default value is false.
     */
-  var caretHidden: js.UndefOr[scala.Boolean] = js.native
+  var caretHidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Provides an initial value that will change when the user starts typing.
     * Useful for simple use-cases where you don't want to deal with listening to events
     * and updating the value prop to keep the controlled state in sync.
     */
-  var defaultValue: js.UndefOr[java.lang.String] = js.native
+  var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   /**
     * If false, text is not editable. The default value is true.
     */
-  var editable: js.UndefOr[scala.Boolean] = js.native
+  var editable: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Used to connect to an InputAccessoryView. Not part of react-natives documentation, but present in examples and
     * code.
     * See https://facebook.github.io/react-native/docs/inputaccessoryview.html for more information.
     */
-  var inputAccessoryViewID: js.UndefOr[java.lang.String] = js.native
+  var inputAccessoryViewID: js.UndefOr[java.lang.String] = js.undefined
   /**
     * enum("default", 'numeric', 'email-address', "ascii-capable", 'numbers-and-punctuation', 'url', 'number-pad', 'phone-pad', 'name-phone-pad',
     * 'decimal-pad', 'twitter', 'web-search', 'visible-password')
@@ -73,18 +72,18 @@ trait TextInputMaskProps
     * The following values work on iOS: - ascii-capable - numbers-and-punctuation - url - number-pad - name-phone-pad - decimal-pad - twitter - web-search
     * The following values work on Android: - visible-password
     */
-  var keyboardType: js.UndefOr[reactDashNativeLib.reactDashNativeMod.KeyboardTypeOptions] = js.native
-  var mask: js.UndefOr[java.lang.String] = js.native
-  var maskDefaultValue: js.UndefOr[scala.Boolean] = js.native
+  var keyboardType: js.UndefOr[reactDashNativeLib.reactDashNativeMod.KeyboardTypeOptions] = js.undefined
+  var mask: js.UndefOr[java.lang.String] = js.undefined
+  var maskDefaultValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Limits the maximum number of characters that can be entered.
     * Use this instead of implementing the logic in JS to avoid flicker.
     */
-  var maxLength: js.UndefOr[scala.Double] = js.native
+  var maxLength: js.UndefOr[scala.Double] = js.undefined
   /**
     * If true, the text input can be multiple lines. The default value is false.
     */
-  var multiline: js.UndefOr[scala.Boolean] = js.native
+  var multiline: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Callback that is called when the text input is blurred
     */
@@ -93,7 +92,7 @@ trait TextInputMaskProps
       /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Callback that is called when the text input's text changes.
     */
@@ -102,9 +101,8 @@ trait TextInputMaskProps
       /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEvent, 
       scala.Unit
     ]
-  ] = js.native
-  @JSName("onChangeText")
-  var onChangeText_Original: onChangeTextCallback = js.native
+  ] = js.undefined
+  var onChangeText: onChangeTextCallback
   /**
     * Callback that is called when the text input's content size changes.
     * This will be called with
@@ -117,7 +115,7 @@ trait TextInputMaskProps
       /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonContentSizeAnonHeight, 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Callback that is called when text input ends.
     */
@@ -126,7 +124,7 @@ trait TextInputMaskProps
       /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonText, 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Callback that is called when the text input is focused
     */
@@ -135,7 +133,7 @@ trait TextInputMaskProps
       /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Callback that is called when a key is pressed.
     * This will be called with
@@ -150,7 +148,7 @@ trait TextInputMaskProps
       /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputKeyPressEventData], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Invoked on content scroll with
     *  `{ nativeEvent: { contentOffset: { x, y } } }`.
@@ -162,7 +160,7 @@ trait TextInputMaskProps
       /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputScrollEventData], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Callback that is called when the text input selection is changed.
     */
@@ -171,7 +169,7 @@ trait TextInputMaskProps
       /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputSelectionChangeEventData], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * Callback that is called when the text input's submit button is pressed.
     */
@@ -180,45 +178,45 @@ trait TextInputMaskProps
       /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonText, 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   /**
     * The string that will be rendered before text input has been entered
     */
-  var placeholder: js.UndefOr[java.lang.String] = js.native
+  var placeholder: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The text color of the placeholder string
     */
-  var placeholderTextColor: js.UndefOr[java.lang.String] = js.native
+  var placeholderTextColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * enum('default', 'go', 'google', 'join', 'next', 'route', 'search', 'send', 'yahoo', 'done', 'emergency-call')
     * Determines how the return key should look.
     */
-  var returnKeyType: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeOptions] = js.native
+  var returnKeyType: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeOptions] = js.undefined
   /**
     * If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
     * The default value is false.
     */
-  var secureTextEntry: js.UndefOr[scala.Boolean] = js.native
+  var secureTextEntry: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If true, all text will automatically be selected on focus
     */
-  var selectTextOnFocus: js.UndefOr[scala.Boolean] = js.native
+  var selectTextOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[reactDashNativeDashTextDashInputDashMaskLib.Anon_End] = js.native
+  var selection: js.UndefOr[reactDashNativeDashTextDashInputDashMaskLib.Anon_End] = js.undefined
   /**
     * The highlight (and cursor on ios) color of the text input
     */
-  var selectionColor: js.UndefOr[java.lang.String] = js.native
+  var selectionColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Styles
     */
   @JSName("style")
   var style_TextInputMaskProps: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
-  ] = js.native
+  ] = js.undefined
   /**
     * The value to show for the text input. TextInput is a controlled component,
     * which means the native value will be forced to match this value prop if provided.
@@ -226,8 +224,216 @@ trait TextInputMaskProps
     * In addition to simply setting the same value, either set editable={false},
     * or set/update maxLength to prevent unwanted edits without flicker.
     */
-  var value: js.UndefOr[java.lang.String] = js.native
-  def onChangeText(formatted: java.lang.String): scala.Unit = js.native
-  def onChangeText(formatted: java.lang.String, extracted: java.lang.String): scala.Unit = js.native
+  var value: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object TextInputMaskProps {
+  @scala.inline
+  def apply(
+    onChangeText: onChangeTextCallback,
+    accessibilityActions: js.Array[java.lang.String] = null,
+    accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
+    accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityHint: java.lang.String = null,
+    accessibilityIgnoresInvertColors: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityLabel: java.lang.String = null,
+    accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
+    accessibilityRole: reactDashNativeLib.reactDashNativeMod.AccessibilityRole = null,
+    accessibilityStates: js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityState] = null,
+    accessibilityTraits: reactDashNativeLib.reactDashNativeMod.AccessibilityTrait | js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityTrait] = null,
+    accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
+    accessible: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCapitalize: reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.none | reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.sentences | reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.words | reactDashNativeDashTextDashInputDashMaskLib.reactDashNativeDashTextDashInputDashMaskLibStrings.characters = null,
+    autoCompleteType: reactDashNativeLib.reactDashNativeLibStrings.`cc-csc` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-month` | reactDashNativeLib.reactDashNativeLibStrings.`cc-exp-year` | reactDashNativeLib.reactDashNativeLibStrings.`cc-number` | reactDashNativeLib.reactDashNativeLibStrings.email | reactDashNativeLib.reactDashNativeLibStrings.name | reactDashNativeLib.reactDashNativeLibStrings.password | reactDashNativeLib.reactDashNativeLibStrings.`postal-code` | reactDashNativeLib.reactDashNativeLibStrings.`street-address` | reactDashNativeLib.reactDashNativeLibStrings.tel | reactDashNativeLib.reactDashNativeLibStrings.username | reactDashNativeLib.reactDashNativeLibStrings.off = null,
+    autoCorrect: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    blurOnSubmit: js.UndefOr[scala.Boolean] = js.undefined,
+    caretHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    clearButtonMode: reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.`while-editing` | reactDashNativeLib.reactDashNativeLibStrings.`unless-editing` | reactDashNativeLib.reactDashNativeLibStrings.always = null,
+    clearTextOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsable: js.UndefOr[scala.Boolean] = js.undefined,
+    dataDetectorTypes: reactDashNativeLib.reactDashNativeMod.DataDetectorTypes | js.Array[reactDashNativeLib.reactDashNativeMod.DataDetectorTypes] = null,
+    defaultValue: java.lang.String = null,
+    disableFullscreenUI: js.UndefOr[scala.Boolean] = js.undefined,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    enablesReturnKeyAutomatically: js.UndefOr[scala.Boolean] = js.undefined,
+    hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
+    importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    inlineImageLeft: java.lang.String = null,
+    inlineImagePadding: scala.Int | scala.Double = null,
+    inputAccessoryViewID: java.lang.String = null,
+    isTVSelectable: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardAppearance: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.light | reactDashNativeLib.reactDashNativeLibStrings.dark = null,
+    keyboardType: reactDashNativeLib.reactDashNativeMod.KeyboardTypeOptions = null,
+    mask: java.lang.String = null,
+    maskDefaultValue: js.UndefOr[scala.Boolean] = js.undefined,
+    maxLength: scala.Int | scala.Double = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    nativeID: java.lang.String = null,
+    needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
+    numberOfLines: scala.Int | scala.Double = null,
+    onAccessibilityAction: () => scala.Unit = null,
+    onAccessibilityTap: () => scala.Unit = null,
+    onBlur: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData] => scala.Unit = null,
+    onChange: /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEvent => scala.Unit = null,
+    onContentSizeChange: /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonContentSizeAnonHeight => scala.Unit = null,
+    onEndEditing: /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonText => scala.Unit = null,
+    onFocus: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputFocusEventData] => scala.Unit = null,
+    onKeyPress: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputKeyPressEventData] => scala.Unit = null,
+    onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,
+    onMagicTap: () => scala.Unit = null,
+    onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onResponderEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderGrant: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderReject: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderRelease: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminate: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onScroll: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputScrollEventData] => scala.Unit = null,
+    onSelectionChange: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TextInputSelectionChangeEventData] => scala.Unit = null,
+    onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
+    onSubmitEditing: /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonText => scala.Unit = null,
+    onTouchCancel: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEnd: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchEndCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchMove: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    onTouchStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
+    placeholder: java.lang.String = null,
+    placeholderTextColor: java.lang.String = null,
+    pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
+    removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
+    renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
+    returnKeyLabel: java.lang.String = null,
+    returnKeyType: reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeOptions = null,
+    scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    secureTextEntry: js.UndefOr[scala.Boolean] = js.undefined,
+    selectTextOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    selection: reactDashNativeDashTextDashInputDashMaskLib.Anon_End = null,
+    selectionColor: java.lang.String = null,
+    selectionState: reactDashNativeLib.reactDashNativeMod.DocumentSelectionState = null,
+    shouldRasterizeIOS: js.UndefOr[scala.Boolean] = js.undefined,
+    spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    testID: java.lang.String = null,
+    textAlignVertical: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.top | reactDashNativeLib.reactDashNativeLibStrings.bottom | reactDashNativeLib.reactDashNativeLibStrings.center = null,
+    textBreakStrategy: reactDashNativeLib.reactDashNativeLibStrings.simple | reactDashNativeLib.reactDashNativeLibStrings.highQuality | reactDashNativeLib.reactDashNativeLibStrings.balanced = null,
+    textContentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.URL | reactDashNativeLib.reactDashNativeLibStrings.addressCity | reactDashNativeLib.reactDashNativeLibStrings.addressCityAndState | reactDashNativeLib.reactDashNativeLibStrings.addressState | reactDashNativeLib.reactDashNativeLibStrings.countryName | reactDashNativeLib.reactDashNativeLibStrings.creditCardNumber | reactDashNativeLib.reactDashNativeLibStrings.emailAddress | reactDashNativeLib.reactDashNativeLibStrings.familyName | reactDashNativeLib.reactDashNativeLibStrings.fullStreetAddress | reactDashNativeLib.reactDashNativeLibStrings.givenName | reactDashNativeLib.reactDashNativeLibStrings.jobTitle | reactDashNativeLib.reactDashNativeLibStrings.location | reactDashNativeLib.reactDashNativeLibStrings.middleName | reactDashNativeLib.reactDashNativeLibStrings.name | reactDashNativeLib.reactDashNativeLibStrings.namePrefix | reactDashNativeLib.reactDashNativeLibStrings.nameSuffix | reactDashNativeLib.reactDashNativeLibStrings.nickname | reactDashNativeLib.reactDashNativeLibStrings.organizationName | reactDashNativeLib.reactDashNativeLibStrings.postalCode | reactDashNativeLib.reactDashNativeLibStrings.streetAddressLine1 | reactDashNativeLib.reactDashNativeLibStrings.streetAddressLine2 | reactDashNativeLib.reactDashNativeLibStrings.sublocality | reactDashNativeLib.reactDashNativeLibStrings.telephoneNumber | reactDashNativeLib.reactDashNativeLibStrings.username | reactDashNativeLib.reactDashNativeLibStrings.password | reactDashNativeLib.reactDashNativeLibStrings.newPassword | reactDashNativeLib.reactDashNativeLibStrings.oneTimeCode = null,
+    tvParallaxMagnification: scala.Int | scala.Double = null,
+    tvParallaxProperties: reactDashNativeLib.reactDashNativeMod.TVParallaxProperties = null,
+    tvParallaxShiftDistanceX: scala.Int | scala.Double = null,
+    tvParallaxShiftDistanceY: scala.Int | scala.Double = null,
+    tvParallaxTiltAngle: scala.Int | scala.Double = null,
+    underlineColorAndroid: java.lang.String = null,
+    value: java.lang.String = null
+  ): TextInputMaskProps = {
+    val __obj = js.Dynamic.literal(onChangeText = onChangeText)
+    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
+    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
+    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
+    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
+    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
+    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
+    if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(blurOnSubmit)) __obj.updateDynamic("blurOnSubmit")(blurOnSubmit)
+    if (!js.isUndefined(caretHidden)) __obj.updateDynamic("caretHidden")(caretHidden)
+    if (clearButtonMode != null) __obj.updateDynamic("clearButtonMode")(clearButtonMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearTextOnFocus)) __obj.updateDynamic("clearTextOnFocus")(clearTextOnFocus)
+    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
+    if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (!js.isUndefined(enablesReturnKeyAutomatically)) __obj.updateDynamic("enablesReturnKeyAutomatically")(enablesReturnKeyAutomatically)
+    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
+    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
+    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft)
+    if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
+    if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID)
+    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable)
+    if (keyboardAppearance != null) __obj.updateDynamic("keyboardAppearance")(keyboardAppearance.asInstanceOf[js.Any])
+    if (keyboardType != null) __obj.updateDynamic("keyboardType")(keyboardType.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(maskDefaultValue)) __obj.updateDynamic("maskDefaultValue")(maskDefaultValue)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
+    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
+    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction0(onAccessibilityAction))
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction1(onContentSizeChange))
+    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(js.Any.fromFunction1(onEndEditing))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
+    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1(onResponderEnd))
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1(onResponderGrant))
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1(onResponderMove))
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1(onResponderReject))
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1(onResponderRelease))
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction1(onSelectionChange))
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
+    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction1(onSubmitEditing))
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor)
+    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
+    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
+    if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel)
+    if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType)
+    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
+    if (!js.isUndefined(secureTextEntry)) __obj.updateDynamic("secureTextEntry")(secureTextEntry)
+    if (!js.isUndefined(selectTextOnFocus)) __obj.updateDynamic("selectTextOnFocus")(selectTextOnFocus)
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (selectionState != null) __obj.updateDynamic("selectionState")(selectionState)
+    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS)
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (textAlignVertical != null) __obj.updateDynamic("textAlignVertical")(textAlignVertical.asInstanceOf[js.Any])
+    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
+    if (textContentType != null) __obj.updateDynamic("textContentType")(textContentType.asInstanceOf[js.Any])
+    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
+    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties)
+    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
+    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
+    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
+    if (underlineColorAndroid != null) __obj.updateDynamic("underlineColorAndroid")(underlineColorAndroid)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TextInputMaskProps]
+  }
 }
 

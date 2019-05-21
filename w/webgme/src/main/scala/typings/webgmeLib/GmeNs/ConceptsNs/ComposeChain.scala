@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ComposeChain extends js.Object {
   var objId: java.lang.String
-  var subCompId: js.UndefOr[java.lang.String]
+  var subCompId: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ComposeChain {

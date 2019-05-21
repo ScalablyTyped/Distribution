@@ -67,7 +67,7 @@ trait TreeProps extends js.Object {
     ]
   ] = js.undefined
   var onDragEnd: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
-  var onDragEnter: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
+  var onDragEnter: js.UndefOr[js.Function1[/* options */ AntTreeNodeDragEnterEvent, scala.Unit]] = js.undefined
   var onDragLeave: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
   var onDragOver: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
   var onDragStart: js.UndefOr[js.Function1[/* options */ AntTreeNodeMouseEvent, scala.Unit]] = js.undefined
@@ -135,7 +135,7 @@ object TreeProps {
     onClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ AntTreeNode) => scala.Unit = null,
     onDoubleClick: (/* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* node */ AntTreeNode) => scala.Unit = null,
     onDragEnd: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
-    onDragEnter: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
+    onDragEnter: /* options */ AntTreeNodeDragEnterEvent => scala.Unit = null,
     onDragLeave: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDragOver: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDragStart: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,

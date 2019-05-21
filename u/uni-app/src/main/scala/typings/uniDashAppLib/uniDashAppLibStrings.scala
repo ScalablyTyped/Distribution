@@ -70,9 +70,6 @@ object uniDashAppLibStrings {
   sealed trait bevel extends js.Object
   
   @js.native
-  sealed trait bold extends js.Object
-  
-  @js.native
   sealed trait butt extends js.Object
   
   @js.native
@@ -118,12 +115,6 @@ object uniDashAppLibStrings {
   sealed trait image extends js.Object
   
   @js.native
-  sealed trait inherit extends js.Object
-  
-  @js.native
-  sealed trait italic extends js.Object
-  
-  @js.native
   sealed trait linear extends js.Object
   
   @js.native
@@ -142,13 +133,7 @@ object uniDashAppLibStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait normal extends js.Object
-  
-  @js.native
   sealed trait oauth extends js.Object
-  
-  @js.native
-  sealed trait oblique extends js.Object
   
   @js.native
   sealed trait payment extends js.Object
@@ -197,9 +182,6 @@ object uniDashAppLibStrings {
   
   @js.native
   sealed trait `slide-out-top` extends js.Object
-  
-  @js.native
-  sealed trait `small-caps` extends js.Object
   
   @js.native
   sealed trait speech extends js.Object
@@ -286,8 +268,6 @@ object uniDashAppLibStrings {
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
@@ -318,10 +298,6 @@ object uniDashAppLibStrings {
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def italic: italic = "italic".asInstanceOf[italic]
-  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
@@ -334,11 +310,7 @@ object uniDashAppLibStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
   def oauth: oauth = "oauth".asInstanceOf[oauth]
-  @scala.inline
-  def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
   @scala.inline
@@ -371,8 +343,6 @@ object uniDashAppLibStrings {
   def `slide-out-right`: `slide-out-right` = "slide-out-right".asInstanceOf[`slide-out-right`]
   @scala.inline
   def `slide-out-top`: `slide-out-top` = "slide-out-top".asInstanceOf[`slide-out-top`]
-  @scala.inline
-  def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
   @scala.inline
   def speech: speech = "speech".asInstanceOf[speech]
   @scala.inline

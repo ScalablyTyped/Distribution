@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.Omit<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, 'timeout'> */
 trait GrowProps extends js.Object {
-  var addEndListener: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EndHandler]
-  var appear: js.UndefOr[scala.Boolean]
-  var enter: js.UndefOr[scala.Boolean]
-  var exit: js.UndefOr[scala.Boolean]
-  var in: js.UndefOr[scala.Boolean]
-  var mountOnEnter: js.UndefOr[scala.Boolean]
-  var onEnter: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler]
-  var onEntered: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler]
-  var onEntering: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler]
-  var onExit: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler]
-  var onExited: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler]
-  var onExiting: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler]
-  var style: js.UndefOr[reactLib.reactMod.CSSProperties]
+  var addEndListener: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EndHandler] = js.undefined
+  var appear: js.UndefOr[scala.Boolean] = js.undefined
+  var enter: js.UndefOr[scala.Boolean] = js.undefined
+  var exit: js.UndefOr[scala.Boolean] = js.undefined
+  var in: js.UndefOr[scala.Boolean] = js.undefined
+  var mountOnEnter: js.UndefOr[scala.Boolean] = js.undefined
+  var onEnter: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler] = js.undefined
+  var onEntered: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler] = js.undefined
+  var onEntering: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.EnterHandler] = js.undefined
+  var onExit: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
+  var onExited: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
+  var onExiting: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
   var timeout: js.UndefOr[
     (js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter]) | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
   ] = js.undefined
-  var unmountOnExit: js.UndefOr[scala.Boolean]
+  var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object GrowProps {

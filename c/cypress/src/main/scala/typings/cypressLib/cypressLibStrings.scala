@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation._
 
 object cypressLibStrings {
   @js.native
-  sealed trait CONNECT
-    extends cypressLib.CypressNs.HttpMethod
-  
-  @js.native
   sealed trait Canary extends js.Object
   
   @js.native
@@ -20,11 +16,10 @@ object cypressLibStrings {
   sealed trait Chromium extends js.Object
   
   @js.native
-  sealed trait DELETE
-    extends cypressLib.CypressNs.HttpMethod
+  sealed trait DOLLARel extends js.Object
   
   @js.native
-  sealed trait DOLLARel extends js.Object
+  sealed trait Date extends js.Object
   
   @js.native
   sealed trait Electron extends js.Object
@@ -33,38 +28,16 @@ object cypressLibStrings {
   sealed trait FireFox extends js.Object
   
   @js.native
-  sealed trait GET
-    extends cypressLib.CypressNs.HttpMethod
+  sealed trait GET extends js.Object
   
   @js.native
-  sealed trait HEAD
-    extends cypressLib.CypressNs.HttpMethod
-  
-  @js.native
-  sealed trait OPTIONS
-    extends cypressLib.CypressNs.HttpMethod
-  
-  @js.native
-  sealed trait PATCH
-    extends cypressLib.CypressNs.HttpMethod
-  
-  @js.native
-  sealed trait POST
-    extends cypressLib.CypressNs.HttpMethod
-  
-  @js.native
-  sealed trait PUT
-    extends cypressLib.CypressNs.HttpMethod
+  sealed trait POST extends js.Object
   
   @js.native
   sealed trait ResolvableProps extends js.Object
   
   @js.native
   sealed trait SinonStubbedInstance extends js.Object
-  
-  @js.native
-  sealed trait TRACE
-    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
   sealed trait a extends js.Object
@@ -78,6 +51,12 @@ object cypressLibStrings {
   
   @js.native
   sealed trait address extends js.Object
+  
+  @js.native
+  sealed trait after extends js.Object
+  
+  @js.native
+  sealed trait afterEach extends js.Object
   
   @js.native
   sealed trait alwaysDOTreturned extends js.Object
@@ -264,6 +243,12 @@ object cypressLibStrings {
   
   @js.native
   sealed trait beDOTwithin extends js.Object
+  
+  @js.native
+  sealed trait before extends js.Object
+  
+  @js.native
+  sealed trait beforeEach extends js.Object
   
   @js.native
   sealed trait binary
@@ -1626,17 +1611,15 @@ object cypressLibStrings {
   sealed trait xml extends js.Object
   
   @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
   def Canary: Canary = "Canary".asInstanceOf[Canary]
   @scala.inline
   def Chrome: Chrome = "Chrome".asInstanceOf[Chrome]
   @scala.inline
   def Chromium: Chromium = "Chromium".asInstanceOf[Chromium]
   @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
   def DOLLARel: DOLLARel = "$el".asInstanceOf[DOLLARel]
+  @scala.inline
+  def Date: Date = "Date".asInstanceOf[Date]
   @scala.inline
   def Electron: Electron = "Electron".asInstanceOf[Electron]
   @scala.inline
@@ -1644,21 +1627,11 @@ object cypressLibStrings {
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
   @scala.inline
   def SinonStubbedInstance: SinonStubbedInstance = "SinonStubbedInstance".asInstanceOf[SinonStubbedInstance]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
@@ -1667,6 +1640,10 @@ object cypressLibStrings {
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
+  @scala.inline
+  def after: after = "after".asInstanceOf[after]
+  @scala.inline
+  def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   @scala.inline
   def alwaysDOTreturned: alwaysDOTreturned = "always.returned".asInstanceOf[alwaysDOTreturned]
   @scala.inline
@@ -1789,6 +1766,10 @@ object cypressLibStrings {
   def beDOTvisible: beDOTvisible = "be.visible".asInstanceOf[beDOTvisible]
   @scala.inline
   def beDOTwithin: beDOTwithin = "be.within".asInstanceOf[beDOTwithin]
+  @scala.inline
+  def before: before = "before".asInstanceOf[before]
+  @scala.inline
+  def beforeEach: beforeEach = "beforeEach".asInstanceOf[beforeEach]
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   @scala.inline

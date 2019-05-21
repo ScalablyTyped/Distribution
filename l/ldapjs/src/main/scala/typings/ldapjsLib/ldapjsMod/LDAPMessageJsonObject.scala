@@ -9,7 +9,7 @@ trait LDAPMessageJsonObject
   extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var controls: js.Array[Control]
   var messageID: scala.Double
-  var protocolOp: js.UndefOr[java.lang.String]
+  var protocolOp: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object LDAPMessageJsonObject {

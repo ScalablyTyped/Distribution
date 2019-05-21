@@ -5,16 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_MosaicWindowActions extends js.Object {
-  @JSName("mosaicWindowActions")
-  var mosaicWindowActions_Original: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_ArgsConnectDragSource]] = js.native
-  def mosaicWindowActions(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var mosaicWindowActions: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_ArgsConnectDragSource]]
+}
+
+object Anon_MosaicWindowActions {
+  @scala.inline
+  def apply(
+    mosaicWindowActions: propDashTypesLib.propDashTypesMod.Validator[propDashTypesLib.propDashTypesMod.InferProps[Anon_ArgsConnectDragSource]]
+  ): Anon_MosaicWindowActions = {
+    val __obj = js.Dynamic.literal(mosaicWindowActions = mosaicWindowActions)
+  
+    __obj.asInstanceOf[Anon_MosaicWindowActions]
+  }
 }
 

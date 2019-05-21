@@ -5,483 +5,152 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Abort extends js.Object {
-  def abort(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def abort(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def abort(element: stdLib.Element): scala.Unit = js.native
-  def abort(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def animationEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def animationEnd(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def animationEnd(element: stdLib.Element): scala.Unit = js.native
-  def animationEnd(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def animationIteration(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def animationIteration(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def animationIteration(element: stdLib.Element): scala.Unit = js.native
-  def animationIteration(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def animationStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def animationStart(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def animationStart(element: stdLib.Element): scala.Unit = js.native
-  def animationStart(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def blur(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def blur(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def blur(element: stdLib.Element): scala.Unit = js.native
-  def blur(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def canPlay(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def canPlay(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def canPlay(element: stdLib.Element): scala.Unit = js.native
-  def canPlay(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def canPlayThrough(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def canPlayThrough(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def canPlayThrough(element: stdLib.Element): scala.Unit = js.native
-  def canPlayThrough(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def change(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def change(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def change(element: stdLib.Element): scala.Unit = js.native
-  def change(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def click(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def click(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def click(element: stdLib.Element): scala.Unit = js.native
-  def click(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def compositionEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def compositionEnd(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def compositionEnd(element: stdLib.Element): scala.Unit = js.native
-  def compositionEnd(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def compositionStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def compositionStart(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def compositionStart(element: stdLib.Element): scala.Unit = js.native
-  def compositionStart(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def compositionUpdate(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def compositionUpdate(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def compositionUpdate(element: stdLib.Element): scala.Unit = js.native
-  def compositionUpdate(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def contextMenu(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def contextMenu(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def contextMenu(element: stdLib.Element): scala.Unit = js.native
-  def contextMenu(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def copy(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def copy(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def copy(element: stdLib.Element): scala.Unit = js.native
-  def copy(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def cut(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def cut(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def cut(element: stdLib.Element): scala.Unit = js.native
-  def cut(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def doubleClick(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def doubleClick(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def doubleClick(element: stdLib.Element): scala.Unit = js.native
-  def doubleClick(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def drag(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def drag(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def drag(element: stdLib.Element): scala.Unit = js.native
-  def drag(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def dragEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def dragEnd(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def dragEnd(element: stdLib.Element): scala.Unit = js.native
-  def dragEnd(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def dragEnter(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def dragEnter(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def dragEnter(element: stdLib.Element): scala.Unit = js.native
-  def dragEnter(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def dragExit(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def dragExit(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def dragExit(element: stdLib.Element): scala.Unit = js.native
-  def dragExit(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def dragLeave(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def dragLeave(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def dragLeave(element: stdLib.Element): scala.Unit = js.native
-  def dragLeave(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def dragOver(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def dragOver(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def dragOver(element: stdLib.Element): scala.Unit = js.native
-  def dragOver(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def dragStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def dragStart(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def dragStart(element: stdLib.Element): scala.Unit = js.native
-  def dragStart(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def drop(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def drop(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def drop(element: stdLib.Element): scala.Unit = js.native
-  def drop(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def durationChange(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def durationChange(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def durationChange(element: stdLib.Element): scala.Unit = js.native
-  def durationChange(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def emptied(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def emptied(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def emptied(element: stdLib.Element): scala.Unit = js.native
-  def emptied(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def encrypted(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def encrypted(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def encrypted(element: stdLib.Element): scala.Unit = js.native
-  def encrypted(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def ended(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def ended(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def ended(element: stdLib.Element): scala.Unit = js.native
-  def ended(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def error(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def error(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def error(element: stdLib.Element): scala.Unit = js.native
-  def error(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def focus(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def focus(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def focus(element: stdLib.Element): scala.Unit = js.native
-  def focus(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def input(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def input(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def input(element: stdLib.Element): scala.Unit = js.native
-  def input(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def invalid(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def invalid(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def invalid(element: stdLib.Element): scala.Unit = js.native
-  def invalid(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def keyDown(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def keyDown(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def keyDown(element: stdLib.Element): scala.Unit = js.native
-  def keyDown(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def keyPress(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def keyPress(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def keyPress(element: stdLib.Element): scala.Unit = js.native
-  def keyPress(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def keyUp(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def keyUp(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def keyUp(element: stdLib.Element): scala.Unit = js.native
-  def keyUp(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def load(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def load(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def load(element: stdLib.Element): scala.Unit = js.native
-  def load(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def loadStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def loadStart(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def loadStart(element: stdLib.Element): scala.Unit = js.native
-  def loadStart(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def loadedData(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def loadedData(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def loadedData(element: stdLib.Element): scala.Unit = js.native
-  def loadedData(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def loadedMetadata(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def loadedMetadata(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def loadedMetadata(element: stdLib.Element): scala.Unit = js.native
-  def loadedMetadata(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseDown(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseDown(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseDown(element: stdLib.Element): scala.Unit = js.native
-  def mouseDown(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseEnter(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseEnter(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseEnter(element: stdLib.Element): scala.Unit = js.native
-  def mouseEnter(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseLeave(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseLeave(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseLeave(element: stdLib.Element): scala.Unit = js.native
-  def mouseLeave(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseMove(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseMove(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseMove(element: stdLib.Element): scala.Unit = js.native
-  def mouseMove(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseOut(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseOut(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseOut(element: stdLib.Element): scala.Unit = js.native
-  def mouseOut(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseOver(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseOver(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseOver(element: stdLib.Element): scala.Unit = js.native
-  def mouseOver(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def mouseUp(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def mouseUp(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def mouseUp(element: stdLib.Element): scala.Unit = js.native
-  def mouseUp(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def paste(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def paste(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def paste(element: stdLib.Element): scala.Unit = js.native
-  def paste(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def pause(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def pause(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def pause(element: stdLib.Element): scala.Unit = js.native
-  def pause(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def play(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def play(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def play(element: stdLib.Element): scala.Unit = js.native
-  def play(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def playing(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def playing(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def playing(element: stdLib.Element): scala.Unit = js.native
-  def playing(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def progress(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def progress(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def progress(element: stdLib.Element): scala.Unit = js.native
-  def progress(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def rateChange(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def rateChange(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def rateChange(element: stdLib.Element): scala.Unit = js.native
-  def rateChange(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def scroll(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def scroll(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def scroll(element: stdLib.Element): scala.Unit = js.native
-  def scroll(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def seeked(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def seeked(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def seeked(element: stdLib.Element): scala.Unit = js.native
-  def seeked(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def seeking(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def seeking(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def seeking(element: stdLib.Element): scala.Unit = js.native
-  def seeking(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def select(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def select(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def select(element: stdLib.Element): scala.Unit = js.native
-  def select(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def stalled(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def stalled(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def stalled(element: stdLib.Element): scala.Unit = js.native
-  def stalled(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def submit(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def submit(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def submit(element: stdLib.Element): scala.Unit = js.native
-  def submit(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def suspend(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def suspend(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def suspend(element: stdLib.Element): scala.Unit = js.native
-  def suspend(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def timeUpdate(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def timeUpdate(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def timeUpdate(element: stdLib.Element): scala.Unit = js.native
-  def timeUpdate(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def touchCancel(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def touchCancel(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def touchCancel(element: stdLib.Element): scala.Unit = js.native
-  def touchCancel(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def touchEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def touchEnd(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def touchEnd(element: stdLib.Element): scala.Unit = js.native
-  def touchEnd(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def touchMove(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def touchMove(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def touchMove(element: stdLib.Element): scala.Unit = js.native
-  def touchMove(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def touchStart(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def touchStart(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def touchStart(element: stdLib.Element): scala.Unit = js.native
-  def touchStart(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def transitionEnd(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def transitionEnd(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def transitionEnd(element: stdLib.Element): scala.Unit = js.native
-  def transitionEnd(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def volumeChange(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def volumeChange(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def volumeChange(element: stdLib.Element): scala.Unit = js.native
-  def volumeChange(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def waiting(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def waiting(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def waiting(element: stdLib.Element): scala.Unit = js.native
-  def waiting(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
-  def wheel(element: reactLib.reactMod.Component[_, js.Object, _]): scala.Unit = js.native
-  def wheel(
-    element: reactLib.reactMod.Component[_, js.Object, _],
-    eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData
-  ): scala.Unit = js.native
-  def wheel(element: stdLib.Element): scala.Unit = js.native
-  def wheel(element: stdLib.Element, eventData: reactDashDomLib.testDashUtilsMod.SyntheticEventData): scala.Unit = js.native
+  val abort: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val animationEnd: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val animationIteration: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val animationStart: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val blur: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val canPlay: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val canPlayThrough: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val change: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val click: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val compositionEnd: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val compositionStart: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val compositionUpdate: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val contextMenu: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val copy: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val cut: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val doubleClick: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val drag: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val dragEnd: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val dragEnter: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val dragExit: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val dragLeave: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val dragOver: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val dragStart: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val drop: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val durationChange: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val emptied: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val encrypted: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val ended: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val error: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val focus: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val input: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val invalid: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val keyDown: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val keyPress: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val keyUp: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val load: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val loadStart: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val loadedData: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val loadedMetadata: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseDown: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseEnter: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseLeave: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseMove: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseOut: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseOver: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val mouseUp: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val paste: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val pause: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val play: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val playing: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val progress: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val rateChange: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val scroll: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val seeked: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val seeking: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val select: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val stalled: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val submit: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val suspend: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val timeUpdate: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val touchCancel: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val touchEnd: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val touchMove: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val touchStart: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val transitionEnd: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val volumeChange: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val waiting: reactDashDomLib.testDashUtilsMod.EventSimulator
+  val wheel: reactDashDomLib.testDashUtilsMod.EventSimulator
+}
+
+object Anon_Abort {
+  @scala.inline
+  def apply(
+    abort: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    animationEnd: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    animationIteration: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    animationStart: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    blur: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    canPlay: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    canPlayThrough: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    change: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    click: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    compositionEnd: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    compositionStart: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    compositionUpdate: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    contextMenu: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    copy: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    cut: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    doubleClick: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    drag: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    dragEnd: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    dragEnter: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    dragExit: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    dragLeave: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    dragOver: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    dragStart: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    drop: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    durationChange: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    emptied: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    encrypted: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    ended: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    error: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    focus: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    input: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    invalid: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    keyDown: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    keyPress: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    keyUp: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    load: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    loadStart: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    loadedData: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    loadedMetadata: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseDown: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseEnter: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseLeave: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseMove: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseOut: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseOver: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    mouseUp: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    paste: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    pause: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    play: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    playing: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    progress: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    rateChange: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    scroll: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    seeked: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    seeking: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    select: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    stalled: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    submit: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    suspend: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    timeUpdate: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    touchCancel: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    touchEnd: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    touchMove: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    touchStart: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    transitionEnd: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    volumeChange: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    waiting: reactDashDomLib.testDashUtilsMod.EventSimulator,
+    wheel: reactDashDomLib.testDashUtilsMod.EventSimulator
+  ): Anon_Abort = {
+    val __obj = js.Dynamic.literal(abort = abort, animationEnd = animationEnd, animationIteration = animationIteration, animationStart = animationStart, blur = blur, canPlay = canPlay, canPlayThrough = canPlayThrough, change = change, click = click, compositionEnd = compositionEnd, compositionStart = compositionStart, compositionUpdate = compositionUpdate, contextMenu = contextMenu, copy = copy, cut = cut, doubleClick = doubleClick, drag = drag, dragEnd = dragEnd, dragEnter = dragEnter, dragExit = dragExit, dragLeave = dragLeave, dragOver = dragOver, dragStart = dragStart, drop = drop, durationChange = durationChange, emptied = emptied, encrypted = encrypted, ended = ended, error = error, focus = focus, input = input, invalid = invalid, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, load = load, loadStart = loadStart, loadedData = loadedData, loadedMetadata = loadedMetadata, mouseDown = mouseDown, mouseEnter = mouseEnter, mouseLeave = mouseLeave, mouseMove = mouseMove, mouseOut = mouseOut, mouseOver = mouseOver, mouseUp = mouseUp, paste = paste, pause = pause, play = play, playing = playing, progress = progress, rateChange = rateChange, scroll = scroll, seeked = seeked, seeking = seeking, select = select, stalled = stalled, submit = submit, suspend = suspend, timeUpdate = timeUpdate, touchCancel = touchCancel, touchEnd = touchEnd, touchMove = touchMove, touchStart = touchStart, transitionEnd = transitionEnd, volumeChange = volumeChange, waiting = waiting, wheel = wheel)
+  
+    __obj.asInstanceOf[Anon_Abort]
+  }
 }
 

@@ -25,7 +25,7 @@ object RollupWatchOptions {
     input: InputOption = null,
     manualChunks: ManualChunksOption = null,
     moduleContext: (js.Function1[/* id */ java.lang.String, java.lang.String]) | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    onwarn: WarningHandler = null,
+    onwarn: WarningHandlerWithDefault = null,
     output: OutputOptions | js.Array[OutputOptions] = null,
     perf: js.UndefOr[scala.Boolean] = js.undefined,
     plugins: js.Array[Plugin] = null,

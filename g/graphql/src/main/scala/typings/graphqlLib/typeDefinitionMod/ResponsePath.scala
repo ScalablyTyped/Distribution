@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ResponsePath extends js.Object {
   val key: java.lang.String | scala.Double
-  val prev: js.UndefOr[ResponsePath]
+  val prev: js.UndefOr[ResponsePath] = js.undefined
 }
 
 object ResponsePath {

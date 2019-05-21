@@ -5,26 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Accept extends js.Object {
-  var accept: java.lang.String = js.native
-  var disableDelete: scala.Boolean = js.native
-  var files: js.Array[scala.Nothing] = js.native
-  var length: scala.Double = js.native
-  var multiple: scala.Boolean = js.native
-  @JSName("onAddImageClick")
-  var onAddImageClick_Original: js.Function0[scala.Unit] = js.native
-  @JSName("onChange")
-  var onChange_Original: js.Function0[scala.Unit] = js.native
-  @JSName("onFail")
-  var onFail_Original: js.Function0[scala.Unit] = js.native
-  @JSName("onImageClick")
-  var onImageClick_Original: js.Function0[scala.Unit] = js.native
-  var prefixCls: java.lang.String = js.native
-  var selectable: scala.Boolean = js.native
-  def onAddImageClick(): scala.Unit = js.native
-  def onChange(): scala.Unit = js.native
-  def onFail(): scala.Unit = js.native
-  def onImageClick(): scala.Unit = js.native
+  var accept: java.lang.String
+  var disableDelete: scala.Boolean
+  var files: js.Array[scala.Nothing]
+  var length: scala.Double
+  var multiple: scala.Boolean
+  var onAddImageClick: js.Function0[scala.Unit]
+  var onChange: js.Function0[scala.Unit]
+  var onFail: js.Function0[scala.Unit]
+  var onImageClick: js.Function0[scala.Unit]
+  var prefixCls: java.lang.String
+  var selectable: scala.Boolean
+}
+
+object Anon_Accept {
+  @scala.inline
+  def apply(
+    accept: java.lang.String,
+    disableDelete: scala.Boolean,
+    files: js.Array[scala.Nothing],
+    length: scala.Double,
+    multiple: scala.Boolean,
+    onAddImageClick: () => scala.Unit,
+    onChange: () => scala.Unit,
+    onFail: () => scala.Unit,
+    onImageClick: () => scala.Unit,
+    prefixCls: java.lang.String,
+    selectable: scala.Boolean
+  ): Anon_Accept = {
+    val __obj = js.Dynamic.literal(accept = accept, disableDelete = disableDelete, files = files, length = length, multiple = multiple, onAddImageClick = js.Any.fromFunction0(onAddImageClick), onChange = js.Any.fromFunction0(onChange), onFail = js.Any.fromFunction0(onFail), onImageClick = js.Any.fromFunction0(onImageClick), prefixCls = prefixCls, selectable = selectable)
+  
+    __obj.asInstanceOf[Anon_Accept]
+  }
 }
 

@@ -19,6 +19,17 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Body extends js.Object {
+  def getAsync(coercionType: java.lang.String): scala.Unit = js.native
+  def getAsync(
+    coercionType: java.lang.String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
+  def getAsync(coercionType: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
+  def getAsync(
+    coercionType: java.lang.String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Returns the current body in a specified format.
     *

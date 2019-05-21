@@ -7,549 +7,549 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.SVGProps<std.SVGSVGElement>, @material-ui/core.@material-ui/core/SvgIcon/SvgIcon.SvgIconClassKey, never> */
 trait SvgIconProps extends js.Object {
-  var accentHeight: js.UndefOr[scala.Double | java.lang.String]
+  var accentHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var accumulate: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sum
-  ]
+  ] = js.undefined
   var additive: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.replace | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sum
-  ]
+  ] = js.undefined
   var alignmentBaseline: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.baseline | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`before-edge` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`text-before-edge` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.middle | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.central | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`after-edge` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`text-after-edge` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.ideographic | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.alphabetic | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.hanging | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.mathematical | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
-  ]
+  ] = js.undefined
   var allowReorder: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.no | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.yes
-  ]
-  var alphabetic: js.UndefOr[scala.Double | java.lang.String]
-  var amplitude: js.UndefOr[scala.Double | java.lang.String]
+  ] = js.undefined
+  var alphabetic: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var amplitude: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var arabicForm: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.initial | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.medial | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.terminal | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.isolated
-  ]
-  var `aria-activedescendant`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-atomic`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-autocomplete`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`inline` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.list | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.both
-  ]
+  ] = js.undefined
   var `aria-busy`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-checked`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.mixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-colcount`: js.UndefOr[scala.Double]
-  var `aria-colindex`: js.UndefOr[scala.Double]
-  var `aria-colspan`: js.UndefOr[scala.Double]
-  var `aria-controls`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-colcount`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-colindex`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-colspan`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-controls`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-current`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.page | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.step | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.location | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.date | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.time
-  ]
-  var `aria-describedby`: js.UndefOr[java.lang.String]
-  var `aria-details`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-describedby`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-details`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-disabled`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-dropeffect`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.copy | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.execute | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.link | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.move | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.popup
-  ]
-  var `aria-errormessage`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-errormessage`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-expanded`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-flowto`: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-flowto`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-grabbed`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-haspopup`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.menu | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.listbox | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tree | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.grid | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dialog
-  ]
+  ] = js.undefined
   var `aria-hidden`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-invalid`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.grammar | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.spelling
-  ]
-  var `aria-keyshortcuts`: js.UndefOr[java.lang.String]
-  var `aria-label`: js.UndefOr[java.lang.String]
-  var `aria-labelledby`: js.UndefOr[java.lang.String]
-  var `aria-level`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-keyshortcuts`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-labelledby`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-level`: js.UndefOr[scala.Double] = js.undefined
   var `aria-live`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.assertive | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.polite
-  ]
+  ] = js.undefined
   var `aria-modal`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-multiline`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-multiselectable`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-orientation`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.horizontal | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.vertical
-  ]
-  var `aria-owns`: js.UndefOr[java.lang.String]
-  var `aria-placeholder`: js.UndefOr[java.lang.String]
-  var `aria-posinset`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-owns`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-placeholder`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-posinset`: js.UndefOr[scala.Double] = js.undefined
   var `aria-pressed`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.mixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-readonly`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
+  ] = js.undefined
   var `aria-relevant`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.additions | (atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`additions text`) | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.all | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.removals | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.text
-  ]
+  ] = js.undefined
   var `aria-required`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-roledescription`: js.UndefOr[java.lang.String]
-  var `aria-rowcount`: js.UndefOr[scala.Double]
-  var `aria-rowindex`: js.UndefOr[scala.Double]
-  var `aria-rowspan`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-roledescription`: js.UndefOr[java.lang.String] = js.undefined
+  var `aria-rowcount`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-rowindex`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-rowspan`: js.UndefOr[scala.Double] = js.undefined
   var `aria-selected`: js.UndefOr[
     scala.Boolean | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`false` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`true`
-  ]
-  var `aria-setsize`: js.UndefOr[scala.Double]
+  ] = js.undefined
+  var `aria-setsize`: js.UndefOr[scala.Double] = js.undefined
   var `aria-sort`: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.ascending | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.descending | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.other
-  ]
-  var `aria-valuemax`: js.UndefOr[scala.Double]
-  var `aria-valuemin`: js.UndefOr[scala.Double]
-  var `aria-valuenow`: js.UndefOr[scala.Double]
-  var `aria-valuetext`: js.UndefOr[java.lang.String]
-  var ascent: js.UndefOr[scala.Double | java.lang.String]
-  var attributeName: js.UndefOr[java.lang.String]
-  var attributeType: js.UndefOr[java.lang.String]
-  var autoReverse: js.UndefOr[scala.Double | java.lang.String]
-  var azimuth: js.UndefOr[scala.Double | java.lang.String]
-  var baseFrequency: js.UndefOr[scala.Double | java.lang.String]
-  var baseProfile: js.UndefOr[scala.Double | java.lang.String]
-  var baselineShift: js.UndefOr[scala.Double | java.lang.String]
-  var bbox: js.UndefOr[scala.Double | java.lang.String]
-  var begin: js.UndefOr[scala.Double | java.lang.String]
-  var bias: js.UndefOr[scala.Double | java.lang.String]
-  var by: js.UndefOr[scala.Double | java.lang.String]
-  var calcMode: js.UndefOr[scala.Double | java.lang.String]
-  var capHeight: js.UndefOr[scala.Double | java.lang.String]
-  var children: js.UndefOr[reactLib.reactMod.ReactNode]
-  var className: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var `aria-valuemax`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-valuemin`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-valuenow`: js.UndefOr[scala.Double] = js.undefined
+  var `aria-valuetext`: js.UndefOr[java.lang.String] = js.undefined
+  var ascent: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var attributeName: js.UndefOr[java.lang.String] = js.undefined
+  var attributeType: js.UndefOr[java.lang.String] = js.undefined
+  var autoReverse: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var azimuth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var baseFrequency: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var baseProfile: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var baselineShift: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var bbox: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var begin: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var bias: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var by: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var calcMode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var capHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var classes: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SvgIconClassKey]]
   ] = js.undefined
-  var clip: js.UndefOr[scala.Double | java.lang.String]
-  var clipPath: js.UndefOr[java.lang.String]
-  var clipPathUnits: js.UndefOr[scala.Double | java.lang.String]
-  var clipRule: js.UndefOr[scala.Double | java.lang.String]
+  var clip: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var clipPath: js.UndefOr[java.lang.String] = js.undefined
+  var clipPathUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var clipRule: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
-  var colorInterpolation: js.UndefOr[scala.Double | java.lang.String]
+  var colorInterpolation: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var colorInterpolationFilters: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sRGB | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.linearRGB | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
-  ]
-  var colorProfile: js.UndefOr[scala.Double | java.lang.String]
-  var colorRendering: js.UndefOr[scala.Double | java.lang.String]
+  ] = js.undefined
+  var colorProfile: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var colorRendering: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[SvgIconProps]] = js.undefined
-  var contentScriptType: js.UndefOr[scala.Double | java.lang.String]
-  var contentStyleType: js.UndefOr[scala.Double | java.lang.String]
-  var cursor: js.UndefOr[scala.Double | java.lang.String]
-  var cx: js.UndefOr[scala.Double | java.lang.String]
-  var cy: js.UndefOr[scala.Double | java.lang.String]
-  var d: js.UndefOr[java.lang.String]
-  var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html]
-  var decelerate: js.UndefOr[scala.Double | java.lang.String]
-  var descent: js.UndefOr[scala.Double | java.lang.String]
-  var diffuseConstant: js.UndefOr[scala.Double | java.lang.String]
-  var direction: js.UndefOr[scala.Double | java.lang.String]
-  var display: js.UndefOr[scala.Double | java.lang.String]
-  var divisor: js.UndefOr[scala.Double | java.lang.String]
-  var dominantBaseline: js.UndefOr[scala.Double | java.lang.String]
-  var dur: js.UndefOr[scala.Double | java.lang.String]
-  var dx: js.UndefOr[scala.Double | java.lang.String]
-  var dy: js.UndefOr[scala.Double | java.lang.String]
-  var edgeMode: js.UndefOr[scala.Double | java.lang.String]
-  var elevation: js.UndefOr[scala.Double | java.lang.String]
-  var enableBackground: js.UndefOr[scala.Double | java.lang.String]
-  var end: js.UndefOr[scala.Double | java.lang.String]
-  var exponent: js.UndefOr[scala.Double | java.lang.String]
-  var externalResourcesRequired: js.UndefOr[scala.Double | java.lang.String]
-  var fill: js.UndefOr[java.lang.String]
-  var fillOpacity: js.UndefOr[scala.Double | java.lang.String]
+  var contentScriptType: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var contentStyleType: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var cursor: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var cx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var cy: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var d: js.UndefOr[java.lang.String] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[reactLib.Anon_Html] = js.undefined
+  var decelerate: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var descent: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var diffuseConstant: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var direction: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var display: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var divisor: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var dominantBaseline: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var dur: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var dx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var dy: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var edgeMode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var elevation: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var enableBackground: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var end: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var exponent: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var externalResourcesRequired: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fill: js.UndefOr[java.lang.String] = js.undefined
+  var fillOpacity: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var fillRule: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.nonzero | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.evenodd | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
-  ]
-  var filter: js.UndefOr[java.lang.String]
-  var filterRes: js.UndefOr[scala.Double | java.lang.String]
-  var filterUnits: js.UndefOr[scala.Double | java.lang.String]
-  var floodColor: js.UndefOr[scala.Double | java.lang.String]
-  var floodOpacity: js.UndefOr[scala.Double | java.lang.String]
-  var focusable: js.UndefOr[scala.Double | java.lang.String]
-  var fontFamily: js.UndefOr[java.lang.String]
+  ] = js.undefined
+  var filter: js.UndefOr[java.lang.String] = js.undefined
+  var filterRes: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var filterUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var floodColor: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var floodOpacity: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var focusable: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   var fontSize: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large
   ] = js.undefined
-  var fontSizeAdjust: js.UndefOr[scala.Double | java.lang.String]
-  var fontStretch: js.UndefOr[scala.Double | java.lang.String]
-  var fontStyle: js.UndefOr[scala.Double | java.lang.String]
-  var fontVariant: js.UndefOr[scala.Double | java.lang.String]
-  var fontWeight: js.UndefOr[scala.Double | java.lang.String]
-  var format: js.UndefOr[scala.Double | java.lang.String]
-  var from: js.UndefOr[scala.Double | java.lang.String]
-  var fx: js.UndefOr[scala.Double | java.lang.String]
-  var fy: js.UndefOr[scala.Double | java.lang.String]
-  var g1: js.UndefOr[scala.Double | java.lang.String]
-  var g2: js.UndefOr[scala.Double | java.lang.String]
-  var glyphName: js.UndefOr[scala.Double | java.lang.String]
-  var glyphOrientationHorizontal: js.UndefOr[scala.Double | java.lang.String]
-  var glyphOrientationVertical: js.UndefOr[scala.Double | java.lang.String]
-  var glyphRef: js.UndefOr[scala.Double | java.lang.String]
-  var gradientTransform: js.UndefOr[java.lang.String]
-  var gradientUnits: js.UndefOr[java.lang.String]
-  var hanging: js.UndefOr[scala.Double | java.lang.String]
-  var height: js.UndefOr[scala.Double | java.lang.String]
-  var horizAdvX: js.UndefOr[scala.Double | java.lang.String]
-  var horizOriginX: js.UndefOr[scala.Double | java.lang.String]
-  var href: js.UndefOr[java.lang.String]
-  var id: js.UndefOr[java.lang.String]
-  var ideographic: js.UndefOr[scala.Double | java.lang.String]
-  var imageRendering: js.UndefOr[scala.Double | java.lang.String]
-  var in: js.UndefOr[java.lang.String]
-  var in2: js.UndefOr[scala.Double | java.lang.String]
+  var fontSizeAdjust: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fontStretch: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fontStyle: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fontVariant: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fontWeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var format: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var from: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fy: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var g1: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var g2: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var glyphName: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var glyphOrientationHorizontal: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var glyphOrientationVertical: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var glyphRef: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var gradientTransform: js.UndefOr[java.lang.String] = js.undefined
+  var gradientUnits: js.UndefOr[java.lang.String] = js.undefined
+  var hanging: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var horizAdvX: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var horizOriginX: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var href: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
+  var ideographic: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var imageRendering: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var in: js.UndefOr[java.lang.String] = js.undefined
+  var in2: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
-  var intercept: js.UndefOr[scala.Double | java.lang.String]
-  var k: js.UndefOr[scala.Double | java.lang.String]
-  var k1: js.UndefOr[scala.Double | java.lang.String]
-  var k2: js.UndefOr[scala.Double | java.lang.String]
-  var k3: js.UndefOr[scala.Double | java.lang.String]
-  var k4: js.UndefOr[scala.Double | java.lang.String]
-  var kernelMatrix: js.UndefOr[scala.Double | java.lang.String]
-  var kernelUnitLength: js.UndefOr[scala.Double | java.lang.String]
-  var kerning: js.UndefOr[scala.Double | java.lang.String]
-  var key: js.UndefOr[reactLib.reactMod.Key]
-  var keyPoints: js.UndefOr[scala.Double | java.lang.String]
-  var keySplines: js.UndefOr[scala.Double | java.lang.String]
-  var keyTimes: js.UndefOr[scala.Double | java.lang.String]
-  var lang: js.UndefOr[java.lang.String]
-  var lengthAdjust: js.UndefOr[scala.Double | java.lang.String]
-  var letterSpacing: js.UndefOr[scala.Double | java.lang.String]
-  var lightingColor: js.UndefOr[scala.Double | java.lang.String]
-  var limitingConeAngle: js.UndefOr[scala.Double | java.lang.String]
-  var local: js.UndefOr[scala.Double | java.lang.String]
-  var markerEnd: js.UndefOr[java.lang.String]
-  var markerHeight: js.UndefOr[scala.Double | java.lang.String]
-  var markerMid: js.UndefOr[java.lang.String]
-  var markerStart: js.UndefOr[java.lang.String]
-  var markerUnits: js.UndefOr[scala.Double | java.lang.String]
-  var markerWidth: js.UndefOr[scala.Double | java.lang.String]
-  var mask: js.UndefOr[java.lang.String]
-  var maskContentUnits: js.UndefOr[scala.Double | java.lang.String]
-  var maskUnits: js.UndefOr[scala.Double | java.lang.String]
-  var mathematical: js.UndefOr[scala.Double | java.lang.String]
-  var max: js.UndefOr[scala.Double | java.lang.String]
-  var media: js.UndefOr[java.lang.String]
-  var method: js.UndefOr[java.lang.String]
-  var min: js.UndefOr[scala.Double | java.lang.String]
-  var mode: js.UndefOr[scala.Double | java.lang.String]
-  var name: js.UndefOr[java.lang.String]
+  var intercept: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var k: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var k1: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var k2: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var k3: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var k4: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var kernelMatrix: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var kernelUnitLength: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var kerning: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
+  var keyPoints: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var keySplines: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var keyTimes: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var lang: js.UndefOr[java.lang.String] = js.undefined
+  var lengthAdjust: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var letterSpacing: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var lightingColor: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var limitingConeAngle: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var local: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var markerEnd: js.UndefOr[java.lang.String] = js.undefined
+  var markerHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var markerMid: js.UndefOr[java.lang.String] = js.undefined
+  var markerStart: js.UndefOr[java.lang.String] = js.undefined
+  var markerUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var markerWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var mask: js.UndefOr[java.lang.String] = js.undefined
+  var maskContentUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var maskUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var mathematical: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var max: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var media: js.UndefOr[java.lang.String] = js.undefined
+  var method: js.UndefOr[java.lang.String] = js.undefined
+  var min: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var mode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var nativeColor: js.UndefOr[java.lang.String] = js.undefined
-  var numOctaves: js.UndefOr[scala.Double | java.lang.String]
-  var offset: js.UndefOr[scala.Double | java.lang.String]
-  var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onAnimationEnd: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]]
-  var onAnimationEndCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]]
-  var onAnimationIteration: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]]
-  var onAnimationIterationCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]]
-  var onAnimationStart: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]]
-  var onAnimationStartCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]]
-  var onAuxClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onAuxClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onBeforeInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onBeforeInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]]
-  var onBlurCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]]
-  var onCanPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onCanPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onCanPlayThrough: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onCanPlayThroughCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onChangeCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onCompositionEnd: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]]
-  var onCompositionEndCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]]
-  var onCompositionStart: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]]
-  var onCompositionStartCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]]
-  var onCompositionUpdate: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]]
-  var onCompositionUpdateCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]]
-  var onContextMenu: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onContextMenuCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onCopy: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]]
-  var onCopyCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]]
-  var onCut: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]]
-  var onCutCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]]
-  var onDoubleClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onDoubleClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onDrag: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragEnd: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragEndCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragEnter: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragEnterCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragExit: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragExitCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragLeave: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragLeaveCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragOver: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragOverCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragStart: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDragStartCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDrop: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDropCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]]
-  var onDurationChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onDurationChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onEmptied: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onEmptiedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onEncrypted: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onEncryptedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onEnded: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onEndedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onError: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onErrorCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]]
-  var onFocusCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]]
-  var onGotPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onGotPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onInvalid: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onInvalidCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]]
-  var onKeyDownCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]]
-  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]]
-  var onKeyPressCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]]
-  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]]
-  var onKeyUpCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]]
-  var onLoad: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadStart: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadStartCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadedData: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadedDataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadedMetadata: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLoadedMetadataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onLostPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onLostPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onMouseDown: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseDownCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseMove: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseMoveCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseOut: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseOutCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseOver: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseOverCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseUp: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onMouseUpCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]]
-  var onPaste: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]]
-  var onPasteCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]]
-  var onPause: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onPauseCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onPlaying: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onPlayingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onPointerCancel: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerCancelCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerDown: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerDownCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerEnter: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerEnterCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerLeave: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerLeaveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerMove: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerMoveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerOut: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerOutCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerOver: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerOverCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerUp: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onPointerUpCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]]
-  var onProgress: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onProgressCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onRateChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onRateChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onReset: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onResetCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.SVGSVGElement]]
-  var onScrollCapture: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.SVGSVGElement]]
-  var onSeeked: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSeekedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSeeking: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSeekingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSelect: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSelectCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onStalled: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onStalledCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSubmit: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onSubmitCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]]
-  var onSuspend: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onSuspendCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onTimeUpdate: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onTimeUpdateCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onTouchCancel: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchCancelCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchEnd: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchEndCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchMove: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchMoveCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTouchStartCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]]
-  var onTransitionEnd: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.SVGSVGElement]]
-  var onTransitionEndCapture: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.SVGSVGElement]]
-  var onVolumeChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onVolumeChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onWaiting: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]]
-  var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.SVGSVGElement]]
-  var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.SVGSVGElement]]
-  var opacity: js.UndefOr[scala.Double | java.lang.String]
-  var operator: js.UndefOr[scala.Double | java.lang.String]
-  var order: js.UndefOr[scala.Double | java.lang.String]
-  var orient: js.UndefOr[scala.Double | java.lang.String]
-  var orientation: js.UndefOr[scala.Double | java.lang.String]
-  var origin: js.UndefOr[scala.Double | java.lang.String]
-  var overflow: js.UndefOr[scala.Double | java.lang.String]
-  var overlinePosition: js.UndefOr[scala.Double | java.lang.String]
-  var overlineThickness: js.UndefOr[scala.Double | java.lang.String]
-  var paintOrder: js.UndefOr[scala.Double | java.lang.String]
-  var panose1: js.UndefOr[scala.Double | java.lang.String]
-  var pathLength: js.UndefOr[scala.Double | java.lang.String]
-  var patternContentUnits: js.UndefOr[java.lang.String]
-  var patternTransform: js.UndefOr[scala.Double | java.lang.String]
-  var patternUnits: js.UndefOr[java.lang.String]
-  var pointerEvents: js.UndefOr[scala.Double | java.lang.String]
-  var points: js.UndefOr[java.lang.String]
-  var pointsAtX: js.UndefOr[scala.Double | java.lang.String]
-  var pointsAtY: js.UndefOr[scala.Double | java.lang.String]
-  var pointsAtZ: js.UndefOr[scala.Double | java.lang.String]
-  var preserveAlpha: js.UndefOr[scala.Double | java.lang.String]
-  var preserveAspectRatio: js.UndefOr[java.lang.String]
-  var primitiveUnits: js.UndefOr[scala.Double | java.lang.String]
-  var r: js.UndefOr[scala.Double | java.lang.String]
-  var radius: js.UndefOr[scala.Double | java.lang.String]
-  var ref: js.UndefOr[reactLib.reactMod.LegacyRef[stdLib.SVGSVGElement]]
-  var refX: js.UndefOr[scala.Double | java.lang.String]
-  var refY: js.UndefOr[scala.Double | java.lang.String]
-  var renderingIntent: js.UndefOr[scala.Double | java.lang.String]
-  var repeatCount: js.UndefOr[scala.Double | java.lang.String]
-  var repeatDur: js.UndefOr[scala.Double | java.lang.String]
-  var requiredExtensions: js.UndefOr[scala.Double | java.lang.String]
-  var requiredFeatures: js.UndefOr[scala.Double | java.lang.String]
-  var restart: js.UndefOr[scala.Double | java.lang.String]
-  var result: js.UndefOr[java.lang.String]
-  var role: js.UndefOr[java.lang.String]
-  var rotate: js.UndefOr[scala.Double | java.lang.String]
-  var rx: js.UndefOr[scala.Double | java.lang.String]
-  var ry: js.UndefOr[scala.Double | java.lang.String]
-  var scale: js.UndefOr[scala.Double | java.lang.String]
-  var seed: js.UndefOr[scala.Double | java.lang.String]
+  var numOctaves: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var offset: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAnimationEnd: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAnimationEndCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAnimationIteration: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAnimationIterationCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAnimationStart: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAnimationStartCapture: js.UndefOr[reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAuxClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onAuxClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onBeforeInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onBeforeInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onBlur: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onBlurCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCanPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCanPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCanPlayThrough: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCanPlayThroughCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onChange: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onChangeCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCompositionEnd: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCompositionEndCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCompositionStart: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCompositionStartCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCompositionUpdate: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCompositionUpdateCapture: js.UndefOr[reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onContextMenu: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onContextMenuCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCopy: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCopyCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCut: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onCutCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDoubleClick: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDoubleClickCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDrag: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragEnd: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragEndCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragEnter: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragEnterCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragExit: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragExitCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragLeave: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragLeaveCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragOver: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragOverCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragStart: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDragStartCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDrop: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDropCapture: js.UndefOr[reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDurationChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onDurationChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onEmptied: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onEmptiedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onEncrypted: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onEncryptedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onEnded: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onEndedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onError: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onErrorCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onFocus: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onFocusCapture: js.UndefOr[reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onGotPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onGotPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onInput: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onInputCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onInvalid: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onInvalidCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onKeyDown: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onKeyDownCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onKeyPress: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onKeyPressCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onKeyUpCapture: js.UndefOr[reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoad: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadStart: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadStartCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadedData: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadedDataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadedMetadata: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLoadedMetadataCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLostPointerCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onLostPointerCaptureCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseDown: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseDownCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseEnter: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseLeave: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseMove: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseMoveCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseOut: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseOutCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseOver: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseOverCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseUp: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onMouseUpCapture: js.UndefOr[reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPaste: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPasteCapture: js.UndefOr[reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPause: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPauseCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPlay: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPlayCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPlaying: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPlayingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerCancel: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerCancelCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerDown: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerDownCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerEnter: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerEnterCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerLeave: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerLeaveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerMove: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerMoveCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerOut: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerOutCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerOver: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerOverCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerUp: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onPointerUpCapture: js.UndefOr[reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onProgress: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onProgressCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onRateChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onRateChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onReset: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onResetCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onScrollCapture: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSeeked: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSeekedCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSeeking: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSeekingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSelect: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSelectCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onStalled: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onStalledCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSubmit: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSubmitCapture: js.UndefOr[reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSuspend: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onSuspendCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTimeUpdate: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTimeUpdateCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchCancel: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchCancelCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchEnd: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchEndCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchMove: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchMoveCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchStart: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTouchStartCapture: js.UndefOr[reactLib.reactMod.TouchEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTransitionEnd: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onTransitionEndCapture: js.UndefOr[reactLib.reactMod.TransitionEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onVolumeChange: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onVolumeChangeCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onWaiting: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.SVGSVGElement]] = js.undefined
+  var opacity: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var operator: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var order: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var orient: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var orientation: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var origin: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var overflow: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var overlinePosition: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var overlineThickness: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var paintOrder: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var panose1: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var pathLength: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var patternContentUnits: js.UndefOr[java.lang.String] = js.undefined
+  var patternTransform: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var patternUnits: js.UndefOr[java.lang.String] = js.undefined
+  var pointerEvents: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var points: js.UndefOr[java.lang.String] = js.undefined
+  var pointsAtX: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var pointsAtY: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var pointsAtZ: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var preserveAlpha: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
+  var primitiveUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var r: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var radius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var ref: js.UndefOr[reactLib.reactMod.LegacyRef[stdLib.SVGSVGElement]] = js.undefined
+  var refX: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var refY: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var renderingIntent: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var repeatCount: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var repeatDur: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var requiredExtensions: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var requiredFeatures: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var restart: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var result: js.UndefOr[java.lang.String] = js.undefined
+  var role: js.UndefOr[java.lang.String] = js.undefined
+  var rotate: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var rx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var ry: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var scale: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var seed: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var shapeRendering: js.UndefOr[java.lang.String] = js.undefined
-  var slope: js.UndefOr[scala.Double | java.lang.String]
-  var spacing: js.UndefOr[scala.Double | java.lang.String]
-  var specularConstant: js.UndefOr[scala.Double | java.lang.String]
-  var specularExponent: js.UndefOr[scala.Double | java.lang.String]
-  var speed: js.UndefOr[scala.Double | java.lang.String]
-  var spreadMethod: js.UndefOr[java.lang.String]
-  var startOffset: js.UndefOr[scala.Double | java.lang.String]
-  var stdDeviation: js.UndefOr[scala.Double | java.lang.String]
-  var stemh: js.UndefOr[scala.Double | java.lang.String]
-  var stemv: js.UndefOr[scala.Double | java.lang.String]
-  var stitchTiles: js.UndefOr[scala.Double | java.lang.String]
-  var stopColor: js.UndefOr[java.lang.String]
-  var stopOpacity: js.UndefOr[scala.Double | java.lang.String]
-  var strikethroughPosition: js.UndefOr[scala.Double | java.lang.String]
-  var strikethroughThickness: js.UndefOr[scala.Double | java.lang.String]
-  var string: js.UndefOr[scala.Double | java.lang.String]
-  var stroke: js.UndefOr[java.lang.String]
-  var strokeDasharray: js.UndefOr[java.lang.String | scala.Double]
-  var strokeDashoffset: js.UndefOr[java.lang.String | scala.Double]
+  var slope: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var spacing: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var specularConstant: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var specularExponent: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var speed: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var spreadMethod: js.UndefOr[java.lang.String] = js.undefined
+  var startOffset: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var stdDeviation: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var stemh: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var stemv: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var stitchTiles: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var stopColor: js.UndefOr[java.lang.String] = js.undefined
+  var stopOpacity: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var strikethroughPosition: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var strikethroughThickness: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var string: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var stroke: js.UndefOr[java.lang.String] = js.undefined
+  var strokeDasharray: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var strokeDashoffset: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var strokeLinecap: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.butt | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.round | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.square | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
-  ]
+  ] = js.undefined
   var strokeLinejoin: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.miter | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.round | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bevel | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
-  ]
-  var strokeMiterlimit: js.UndefOr[scala.Double | java.lang.String]
-  var strokeOpacity: js.UndefOr[scala.Double | java.lang.String]
-  var strokeWidth: js.UndefOr[scala.Double | java.lang.String]
-  var style: js.UndefOr[reactLib.reactMod.CSSProperties]
-  var surfaceScale: js.UndefOr[scala.Double | java.lang.String]
-  var systemLanguage: js.UndefOr[scala.Double | java.lang.String]
-  var tabIndex: js.UndefOr[scala.Double]
-  var tableValues: js.UndefOr[scala.Double | java.lang.String]
-  var target: js.UndefOr[java.lang.String]
-  var targetX: js.UndefOr[scala.Double | java.lang.String]
-  var targetY: js.UndefOr[scala.Double | java.lang.String]
-  var textAnchor: js.UndefOr[java.lang.String]
-  var textDecoration: js.UndefOr[scala.Double | java.lang.String]
-  var textLength: js.UndefOr[scala.Double | java.lang.String]
-  var textRendering: js.UndefOr[scala.Double | java.lang.String]
+  ] = js.undefined
+  var strokeMiterlimit: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var strokeOpacity: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var strokeWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
+  var surfaceScale: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var systemLanguage: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
+  var tableValues: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var target: js.UndefOr[java.lang.String] = js.undefined
+  var targetX: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var targetY: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var textAnchor: js.UndefOr[java.lang.String] = js.undefined
+  var textDecoration: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var textLength: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var textRendering: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var titleAccess: js.UndefOr[java.lang.String] = js.undefined
-  var to: js.UndefOr[scala.Double | java.lang.String]
-  var transform: js.UndefOr[java.lang.String]
-  var `type`: js.UndefOr[java.lang.String]
-  var u1: js.UndefOr[scala.Double | java.lang.String]
-  var u2: js.UndefOr[scala.Double | java.lang.String]
-  var underlinePosition: js.UndefOr[scala.Double | java.lang.String]
-  var underlineThickness: js.UndefOr[scala.Double | java.lang.String]
-  var unicode: js.UndefOr[scala.Double | java.lang.String]
-  var unicodeBidi: js.UndefOr[scala.Double | java.lang.String]
-  var unicodeRange: js.UndefOr[scala.Double | java.lang.String]
-  var unitsPerEm: js.UndefOr[scala.Double | java.lang.String]
-  var vAlphabetic: js.UndefOr[scala.Double | java.lang.String]
-  var vHanging: js.UndefOr[scala.Double | java.lang.String]
-  var vIdeographic: js.UndefOr[scala.Double | java.lang.String]
-  var vMathematical: js.UndefOr[scala.Double | java.lang.String]
-  var values: js.UndefOr[java.lang.String]
-  var vectorEffect: js.UndefOr[scala.Double | java.lang.String]
-  var version: js.UndefOr[java.lang.String]
-  var vertAdvY: js.UndefOr[scala.Double | java.lang.String]
-  var vertOriginX: js.UndefOr[scala.Double | java.lang.String]
-  var vertOriginY: js.UndefOr[scala.Double | java.lang.String]
+  var to: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var transform: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var u1: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var u2: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var underlinePosition: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var underlineThickness: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var unicode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var unicodeBidi: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var unicodeRange: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var unitsPerEm: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var vAlphabetic: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var vHanging: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var vIdeographic: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var vMathematical: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var values: js.UndefOr[java.lang.String] = js.undefined
+  var vectorEffect: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var version: js.UndefOr[java.lang.String] = js.undefined
+  var vertAdvY: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var vertOriginX: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var vertOriginY: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
-  var viewTarget: js.UndefOr[scala.Double | java.lang.String]
-  var visibility: js.UndefOr[scala.Double | java.lang.String]
-  var width: js.UndefOr[scala.Double | java.lang.String]
-  var widths: js.UndefOr[scala.Double | java.lang.String]
-  var wordSpacing: js.UndefOr[scala.Double | java.lang.String]
-  var writingMode: js.UndefOr[scala.Double | java.lang.String]
-  var x: js.UndefOr[scala.Double | java.lang.String]
-  var x1: js.UndefOr[scala.Double | java.lang.String]
-  var x2: js.UndefOr[scala.Double | java.lang.String]
-  var xChannelSelector: js.UndefOr[java.lang.String]
-  var xHeight: js.UndefOr[scala.Double | java.lang.String]
-  var xlinkActuate: js.UndefOr[java.lang.String]
-  var xlinkArcrole: js.UndefOr[java.lang.String]
-  var xlinkHref: js.UndefOr[java.lang.String]
-  var xlinkRole: js.UndefOr[java.lang.String]
-  var xlinkShow: js.UndefOr[java.lang.String]
-  var xlinkTitle: js.UndefOr[java.lang.String]
-  var xlinkType: js.UndefOr[java.lang.String]
-  var xmlBase: js.UndefOr[java.lang.String]
-  var xmlLang: js.UndefOr[java.lang.String]
-  var xmlSpace: js.UndefOr[java.lang.String]
-  var xmlns: js.UndefOr[java.lang.String]
-  var xmlnsXlink: js.UndefOr[java.lang.String]
-  var y: js.UndefOr[scala.Double | java.lang.String]
-  var y1: js.UndefOr[scala.Double | java.lang.String]
-  var y2: js.UndefOr[scala.Double | java.lang.String]
-  var yChannelSelector: js.UndefOr[java.lang.String]
-  var z: js.UndefOr[scala.Double | java.lang.String]
-  var zoomAndPan: js.UndefOr[java.lang.String]
+  var viewTarget: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var visibility: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var widths: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var wordSpacing: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var writingMode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var x: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var x1: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var x2: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var xChannelSelector: js.UndefOr[java.lang.String] = js.undefined
+  var xHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var xlinkActuate: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkArcrole: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkHref: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkRole: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkShow: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkTitle: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkType: js.UndefOr[java.lang.String] = js.undefined
+  var xmlBase: js.UndefOr[java.lang.String] = js.undefined
+  var xmlLang: js.UndefOr[java.lang.String] = js.undefined
+  var xmlSpace: js.UndefOr[java.lang.String] = js.undefined
+  var xmlns: js.UndefOr[java.lang.String] = js.undefined
+  var xmlnsXlink: js.UndefOr[java.lang.String] = js.undefined
+  var y: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var y1: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var y2: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var yChannelSelector: js.UndefOr[java.lang.String] = js.undefined
+  var z: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var zoomAndPan: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object SvgIconProps {
@@ -739,76 +739,76 @@ object SvgIconProps {
     numOctaves: scala.Double | java.lang.String = null,
     offset: scala.Double | java.lang.String = null,
     onAbort: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onAbortCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onAnimationEnd: reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement] = null,
-    onAnimationEndCapture: reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement] = null,
     onAnimationIteration: reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement] = null,
-    onAnimationIterationCapture: reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement] = null,
     onAnimationStart: reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement] = null,
-    onAnimationStartCapture: reactLib.reactMod.AnimationEventHandler[stdLib.SVGSVGElement] = null,
     onAuxClick: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
-    onAuxClickCapture: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
     onBeforeInput: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
-    onBeforeInputCapture: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
     onBlur: reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement] = null,
-    onBlurCapture: reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement] = null,
     onCanPlay: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onCanPlayCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onCanPlayThrough: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onCanPlayThroughCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onChange: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
-    onChangeCapture: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
     onClick: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
-    onClickCapture: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
     onCompositionEnd: reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement] = null,
-    onCompositionEndCapture: reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement] = null,
     onCompositionStart: reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement] = null,
-    onCompositionStartCapture: reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement] = null,
     onCompositionUpdate: reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement] = null,
-    onCompositionUpdateCapture: reactLib.reactMod.CompositionEventHandler[stdLib.SVGSVGElement] = null,
     onContextMenu: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
-    onContextMenuCapture: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
     onCopy: reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement] = null,
-    onCopyCapture: reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement] = null,
     onCut: reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement] = null,
-    onCutCapture: reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement] = null,
     onDoubleClick: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
-    onDoubleClickCapture: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
     onDrag: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDragEnd: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragEndCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDragEnter: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragEnterCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDragExit: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragExitCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDragLeave: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragLeaveCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDragOver: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragOverCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDragStart: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDragStartCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDrop: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
-    onDropCapture: reactLib.reactMod.DragEventHandler[stdLib.SVGSVGElement] = null,
     onDurationChange: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onDurationChangeCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onEmptied: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onEmptiedCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onEncrypted: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onEncryptedCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onEnded: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onEndedCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onError: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
-    onErrorCapture: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
     onFocus: reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement] = null,
-    onFocusCapture: reactLib.reactMod.FocusEventHandler[stdLib.SVGSVGElement] = null,
-    onGotPointerCapture: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
-    onGotPointerCaptureCapture: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
     onInput: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
-    onInputCapture: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
     onInvalid: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
-    onInvalidCapture: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
-    onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement] = null
+    onKeyDown: reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement] = null,
+    onKeyPress: reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement] = null,
+    onKeyUp: reactLib.reactMod.KeyboardEventHandler[stdLib.SVGSVGElement] = null,
+    onLoad: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onLoadStart: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onLoadedData: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onLoadedMetadata: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseDown: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseEnter: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseLeave: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseMove: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseOut: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseOver: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onMouseUp: reactLib.reactMod.MouseEventHandler[stdLib.SVGSVGElement] = null,
+    onPaste: reactLib.reactMod.ClipboardEventHandler[stdLib.SVGSVGElement] = null,
+    onPause: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onPlay: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onPlaying: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerCancel: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerDown: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerEnter: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerLeave: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerMove: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerOut: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerOver: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onPointerUp: reactLib.reactMod.PointerEventHandler[stdLib.SVGSVGElement] = null,
+    onProgress: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onRateChange: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onReset: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
+    onScroll: reactLib.reactMod.UIEventHandler[stdLib.SVGSVGElement] = null,
+    onSeeked: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onSeeking: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onSelect: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onStalled: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onSubmit: reactLib.reactMod.FormEventHandler[stdLib.SVGSVGElement] = null,
+    onSuspend: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null,
+    onTimeUpdate: reactLib.reactMod.ReactEventHandler[stdLib.SVGSVGElement] = null
   ): SvgIconProps = {
     val __obj = js.Dynamic.literal()
     if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
@@ -995,76 +995,76 @@ object SvgIconProps {
     if (numOctaves != null) __obj.updateDynamic("numOctaves")(numOctaves.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort)
-    if (onAbortCapture != null) __obj.updateDynamic("onAbortCapture")(onAbortCapture)
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
-    if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(onAnimationEndCapture)
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration)
-    if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture)
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
-    if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture)
     if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick)
-    if (onAuxClickCapture != null) __obj.updateDynamic("onAuxClickCapture")(onAuxClickCapture)
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
-    if (onBeforeInputCapture != null) __obj.updateDynamic("onBeforeInputCapture")(onBeforeInputCapture)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
-    if (onBlurCapture != null) __obj.updateDynamic("onBlurCapture")(onBlurCapture)
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay)
-    if (onCanPlayCapture != null) __obj.updateDynamic("onCanPlayCapture")(onCanPlayCapture)
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(onCanPlayThrough)
-    if (onCanPlayThroughCapture != null) __obj.updateDynamic("onCanPlayThroughCapture")(onCanPlayThroughCapture)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
-    if (onChangeCapture != null) __obj.updateDynamic("onChangeCapture")(onChangeCapture)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
-    if (onClickCapture != null) __obj.updateDynamic("onClickCapture")(onClickCapture)
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(onCompositionEnd)
-    if (onCompositionEndCapture != null) __obj.updateDynamic("onCompositionEndCapture")(onCompositionEndCapture)
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(onCompositionStart)
-    if (onCompositionStartCapture != null) __obj.updateDynamic("onCompositionStartCapture")(onCompositionStartCapture)
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(onCompositionUpdate)
-    if (onCompositionUpdateCapture != null) __obj.updateDynamic("onCompositionUpdateCapture")(onCompositionUpdateCapture)
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu)
-    if (onContextMenuCapture != null) __obj.updateDynamic("onContextMenuCapture")(onContextMenuCapture)
     if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
-    if (onCopyCapture != null) __obj.updateDynamic("onCopyCapture")(onCopyCapture)
     if (onCut != null) __obj.updateDynamic("onCut")(onCut)
-    if (onCutCapture != null) __obj.updateDynamic("onCutCapture")(onCutCapture)
     if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick)
-    if (onDoubleClickCapture != null) __obj.updateDynamic("onDoubleClickCapture")(onDoubleClickCapture)
     if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
-    if (onDragCapture != null) __obj.updateDynamic("onDragCapture")(onDragCapture)
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
-    if (onDragEndCapture != null) __obj.updateDynamic("onDragEndCapture")(onDragEndCapture)
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
-    if (onDragEnterCapture != null) __obj.updateDynamic("onDragEnterCapture")(onDragEnterCapture)
     if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
-    if (onDragExitCapture != null) __obj.updateDynamic("onDragExitCapture")(onDragExitCapture)
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
-    if (onDragLeaveCapture != null) __obj.updateDynamic("onDragLeaveCapture")(onDragLeaveCapture)
     if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
-    if (onDragOverCapture != null) __obj.updateDynamic("onDragOverCapture")(onDragOverCapture)
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
-    if (onDragStartCapture != null) __obj.updateDynamic("onDragStartCapture")(onDragStartCapture)
     if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
-    if (onDropCapture != null) __obj.updateDynamic("onDropCapture")(onDropCapture)
     if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(onDurationChange)
-    if (onDurationChangeCapture != null) __obj.updateDynamic("onDurationChangeCapture")(onDurationChangeCapture)
     if (onEmptied != null) __obj.updateDynamic("onEmptied")(onEmptied)
-    if (onEmptiedCapture != null) __obj.updateDynamic("onEmptiedCapture")(onEmptiedCapture)
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted)
-    if (onEncryptedCapture != null) __obj.updateDynamic("onEncryptedCapture")(onEncryptedCapture)
     if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded)
-    if (onEndedCapture != null) __obj.updateDynamic("onEndedCapture")(onEndedCapture)
     if (onError != null) __obj.updateDynamic("onError")(onError)
-    if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(onErrorCapture)
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
-    if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(onFocusCapture)
-    if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(onGotPointerCapture)
-    if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(onGotPointerCaptureCapture)
     if (onInput != null) __obj.updateDynamic("onInput")(onInput)
-    if (onInputCapture != null) __obj.updateDynamic("onInputCapture")(onInputCapture)
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid)
-    if (onInvalidCapture != null) __obj.updateDynamic("onInvalidCapture")(onInvalidCapture)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
+    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData)
+    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(onLoadedMetadata)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
+    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
+    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
+    if (onPlaying != null) __obj.updateDynamic("onPlaying")(onPlaying)
+    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(onPointerCancel)
+    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(onPointerDown)
+    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(onPointerEnter)
+    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(onPointerLeave)
+    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(onPointerMove)
+    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(onPointerOut)
+    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(onPointerOver)
+    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(onPointerUp)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onRateChange != null) __obj.updateDynamic("onRateChange")(onRateChange)
+    if (onReset != null) __obj.updateDynamic("onReset")(onReset)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked)
+    if (onSeeking != null) __obj.updateDynamic("onSeeking")(onSeeking)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onStalled != null) __obj.updateDynamic("onStalled")(onStalled)
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onSuspend != null) __obj.updateDynamic("onSuspend")(onSuspend)
+    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
     __obj.asInstanceOf[SvgIconProps]
   }
 }

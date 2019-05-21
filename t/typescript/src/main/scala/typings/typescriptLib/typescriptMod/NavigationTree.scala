@@ -15,7 +15,7 @@ trait NavigationTree extends js.Object {
   var kind: ScriptElementKind
   /** ScriptElementKindModifier separated by commas, e.g. "public,abstract" */
   var kindModifiers: java.lang.String
-  var nameSpan: js.UndefOr[TextSpan]
+  var nameSpan: js.UndefOr[TextSpan] = js.undefined
   /**
     * Spans of the nodes that generated this declaration.
     * There will be more than one if this is the result of merging.

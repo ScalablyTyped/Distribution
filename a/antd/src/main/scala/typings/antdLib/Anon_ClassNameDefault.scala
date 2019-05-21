@@ -5,34 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ClassNameDefault extends js.Object {
-  @JSName("className")
-  var className_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("prefixCls")
-  var prefixCls_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("size")
-  var size_Original: propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default]] = js.native
-  def className(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def prefixCls(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def size(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default]]
+}
+
+object Anon_ClassNameDefault {
+  @scala.inline
+  def apply(
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    size: propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default]]
+  ): Anon_ClassNameDefault = {
+    val __obj = js.Dynamic.literal(className = className, prefixCls = prefixCls, size = size)
+  
+    __obj.asInstanceOf[Anon_ClassNameDefault]
+  }
 }
 

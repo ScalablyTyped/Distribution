@@ -707,5 +707,133 @@ trait MediaLive
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelCreated state by periodically calling the underlying MediaLive.describeChanneloperation every 3 seconds (at most 5 times). Wait until a channel has been created
+    */
+  @JSName("waitFor")
+  def waitFor_channelCreated(state: awsDashSdkLib.awsDashSdkLibStrings.channelCreated): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelCreated,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelCreated state by periodically calling the underlying MediaLive.describeChanneloperation every 3 seconds (at most 5 times). Wait until a channel has been created
+    */
+  @JSName("waitFor")
+  def waitFor_channelCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelCreated,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelCreated(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelCreated,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
+    */
+  @JSName("waitFor")
+  def waitFor_channelDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.channelDeleted): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelDeleted,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelDeleted state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 20 times). Wait until a channel has been deleted
+    */
+  @JSName("waitFor")
+  def waitFor_channelDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelDeleted,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelDeleted,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelRunning state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 120 times). Wait until a channel is running
+    */
+  @JSName("waitFor")
+  def waitFor_channelRunning(state: awsDashSdkLib.awsDashSdkLibStrings.channelRunning): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelRunning(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelRunning,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelRunning state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 120 times). Wait until a channel is running
+    */
+  @JSName("waitFor")
+  def waitFor_channelRunning(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelRunning,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelRunning(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelRunning,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
+    */
+  @JSName("waitFor")
+  def waitFor_channelStopped(state: awsDashSdkLib.awsDashSdkLibStrings.channelStopped): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelStopped(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelStopped,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Waits for the channelStopped state by periodically calling the underlying MediaLive.describeChanneloperation every 5 seconds (at most 28 times). Wait until a channel has is stopped
+    */
+  @JSName("waitFor")
+  def waitFor_channelStopped(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelStopped,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_channelStopped(
+    state: awsDashSdkLib.awsDashSdkLibStrings.channelStopped,
+    params: DescribeChannelRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

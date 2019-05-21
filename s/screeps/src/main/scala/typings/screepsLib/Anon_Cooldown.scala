@@ -9,7 +9,7 @@ trait Anon_Cooldown extends js.Object {
   /**
     * Cooldown ticks remaining, or undefined if the power creep is not spawned in the world.
     */
-  var cooldown: js.UndefOr[scala.Double]
+  var cooldown: js.UndefOr[scala.Double] = js.undefined
   /**
     * Current level of the power
     */

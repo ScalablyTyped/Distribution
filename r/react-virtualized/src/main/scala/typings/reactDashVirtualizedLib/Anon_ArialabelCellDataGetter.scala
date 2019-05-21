@@ -5,160 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ArialabelCellDataGetter extends js.Object {
-  @JSName("aria-label")
-  var `aria-label_Original`: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("cellDataGetter")
-  var cellDataGetter_Original: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellDataGetter] = js.native
-  @JSName("cellRenderer")
-  var cellRenderer_Original: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellRenderer] = js.native
-  @JSName("className")
-  var className_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("columnData")
-  var columnData_Original: reactLib.reactMod.Requireable[js.Object] = js.native
-  @JSName("dataKey")
-  var dataKey_Original: reactLib.reactMod.Validator[java.lang.String] = js.native
-  @JSName("disableSort")
-  var disableSort_Original: reactLib.reactMod.Requireable[scala.Boolean] = js.native
-  @JSName("flexGrow")
-  var flexGrow_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("flexShrink")
-  var flexShrink_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("headerClassName")
-  var headerClassName_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("headerRenderer")
-  var headerRenderer_Original: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer] = js.native
-  @JSName("id")
-  var id_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("label")
-  var label_Original: reactLib.reactMod.Requireable[java.lang.String] = js.native
-  @JSName("maxWidth")
-  var maxWidth_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("minWidth")
-  var minWidth_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("style")
-  var style_Original: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties] = js.native
-  @JSName("width")
-  var width_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  def `aria-label`(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def cellDataGetter(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def cellRenderer(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def className(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def columnData(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def dataKey(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def disableSort(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def flexGrow(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def flexShrink(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def headerClassName(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def headerRenderer(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def id(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def label(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def maxWidth(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def minWidth(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def style(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def width(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var `aria-label`: reactLib.reactMod.Requireable[java.lang.String]
+  var cellDataGetter: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellDataGetter]
+  var cellRenderer: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellRenderer]
+  var className: reactLib.reactMod.Requireable[java.lang.String]
+  var columnData: reactLib.reactMod.Requireable[js.Object]
+  var dataKey: reactLib.reactMod.Validator[java.lang.String]
+  var disableSort: reactLib.reactMod.Requireable[scala.Boolean]
+  var flexGrow: reactLib.reactMod.Requireable[scala.Double]
+  var flexShrink: reactLib.reactMod.Requireable[scala.Double]
+  var headerClassName: reactLib.reactMod.Requireable[java.lang.String]
+  var headerRenderer: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer]
+  var id: reactLib.reactMod.Requireable[java.lang.String]
+  var label: reactLib.reactMod.Requireable[java.lang.String]
+  var maxWidth: reactLib.reactMod.Requireable[scala.Double]
+  var minWidth: reactLib.reactMod.Requireable[scala.Double]
+  var style: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties]
+  var width: reactLib.reactMod.Validator[scala.Double]
+}
+
+object Anon_ArialabelCellDataGetter {
+  @scala.inline
+  def apply(
+    `aria-label`: reactLib.reactMod.Requireable[java.lang.String],
+    cellDataGetter: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellDataGetter],
+    cellRenderer: reactLib.reactMod.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellRenderer],
+    className: reactLib.reactMod.Requireable[java.lang.String],
+    columnData: reactLib.reactMod.Requireable[js.Object],
+    dataKey: reactLib.reactMod.Validator[java.lang.String],
+    disableSort: reactLib.reactMod.Requireable[scala.Boolean],
+    flexGrow: reactLib.reactMod.Requireable[scala.Double],
+    flexShrink: reactLib.reactMod.Requireable[scala.Double],
+    headerClassName: reactLib.reactMod.Requireable[java.lang.String],
+    headerRenderer: reactLib.reactMod.Validator[reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer],
+    id: reactLib.reactMod.Requireable[java.lang.String],
+    label: reactLib.reactMod.Requireable[java.lang.String],
+    maxWidth: reactLib.reactMod.Requireable[scala.Double],
+    minWidth: reactLib.reactMod.Requireable[scala.Double],
+    style: reactLib.reactMod.Requireable[reactLib.reactMod.CSSProperties],
+    width: reactLib.reactMod.Validator[scala.Double]
+  ): Anon_ArialabelCellDataGetter = {
+    val __obj = js.Dynamic.literal(cellDataGetter = cellDataGetter, cellRenderer = cellRenderer, className = className, columnData = columnData, dataKey = dataKey, disableSort = disableSort, flexGrow = flexGrow, flexShrink = flexShrink, headerClassName = headerClassName, headerRenderer = headerRenderer, id = id, label = label, maxWidth = maxWidth, minWidth = minWidth, style = style, width = width)
+    __obj.updateDynamic("aria-label")(`aria-label`)
+    __obj.asInstanceOf[Anon_ArialabelCellDataGetter]
+  }
 }
 

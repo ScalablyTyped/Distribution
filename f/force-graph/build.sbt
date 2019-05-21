@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "force-graph"
-version := "1.14-dt-20190331Z-eed383"
+version := "1.15-dt-20190520Z-8b32fc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

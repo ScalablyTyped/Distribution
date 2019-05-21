@@ -54,7 +54,7 @@ trait ITimezonePickerProps
     * The currently selected timezone UTC identifier, e.g. "Pacific/Honolulu".
     * See https://www.iana.org/time-zones for more information.
     */
-  var value: js.UndefOr[java.lang.String]
+  var value: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Format to use when displaying the selected (or default) timezone within the target element.
     * This prop will be ignored if `children` is provided.

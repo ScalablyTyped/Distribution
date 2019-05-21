@@ -5,32 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Context extends js.Object {
-  var context: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.StoryContext = js.native
-  @JSName("renderShallowTree")
-  var renderShallowTree_Original: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.RenderTree = js.native
-  @JSName("renderTree")
-  var renderTree_Original: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.RenderTree = js.native
-  var snapshotFileName: java.lang.String = js.native
-  var story: atStorybookReactLib.atStorybookReactMod.StoryObject = js.native
-  def renderShallowTree(
-    story: atStorybookReactLib.atStorybookReactMod.StoryObject,
-    context: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.StoryContext
-  ): js.UndefOr[scala.Unit | js.Promise[scala.Unit]] = js.native
-  def renderShallowTree(
-    story: atStorybookReactLib.atStorybookReactMod.StoryObject,
+  var context: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.StoryContext
+  var renderShallowTree: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.RenderTree
+  var renderTree: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.RenderTree
+  var snapshotFileName: java.lang.String
+  var story: atStorybookReactLib.atStorybookReactMod.StoryObject
+}
+
+object Anon_Context {
+  @scala.inline
+  def apply(
     context: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.StoryContext,
-    options: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.SnapshotOptions
-  ): js.UndefOr[scala.Unit | js.Promise[scala.Unit]] = js.native
-  def renderTree(
-    story: atStorybookReactLib.atStorybookReactMod.StoryObject,
-    context: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.StoryContext
-  ): js.UndefOr[scala.Unit | js.Promise[scala.Unit]] = js.native
-  def renderTree(
-    story: atStorybookReactLib.atStorybookReactMod.StoryObject,
-    context: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.StoryContext,
-    options: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.SnapshotOptions
-  ): js.UndefOr[scala.Unit | js.Promise[scala.Unit]] = js.native
+    renderShallowTree: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.RenderTree,
+    renderTree: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsMod.RenderTree,
+    snapshotFileName: java.lang.String,
+    story: atStorybookReactLib.atStorybookReactMod.StoryObject
+  ): Anon_Context = {
+    val __obj = js.Dynamic.literal(context = context, renderShallowTree = renderShallowTree, renderTree = renderTree, snapshotFileName = snapshotFileName, story = story)
+  
+    __obj.asInstanceOf[Anon_Context]
+  }
 }
 

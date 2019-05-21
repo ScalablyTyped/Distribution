@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteEntry extends js.Object {
   var id: java.lang.String
-  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]
+  var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.undefined
   var path: js.Array[java.lang.String]
 }
 

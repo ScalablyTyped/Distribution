@@ -9,7 +9,7 @@ trait Anon_Node extends js.Object {
   var node: stdLib.HTMLInputElement
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
-  ]
+  ] = js.undefined
 }
 
 object Anon_Node {

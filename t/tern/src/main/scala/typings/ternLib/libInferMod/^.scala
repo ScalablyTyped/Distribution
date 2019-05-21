@@ -14,7 +14,9 @@ object ^ extends js.Object {
   val Context: ContextConstructor = js.native
   val Fn: FnConstructor = js.native
   val Obj: ObjConstructor = js.native
+  val Prim: PrimConstructor = js.native
   val Scope: ScopeConstructor = js.native
+  val Type: TypeConstructor = js.native
   val constraint: ConstraintConstructor = js.native
   def analyze(ast: estreeLib.estreeMod.Program, name: java.lang.String): scala.Unit = js.native
   def analyze(ast: estreeLib.estreeMod.Program, name: java.lang.String, scope: Scope): scala.Unit = js.native

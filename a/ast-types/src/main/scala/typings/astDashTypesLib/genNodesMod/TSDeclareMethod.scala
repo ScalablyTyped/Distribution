@@ -17,10 +17,10 @@ import scala.scalajs.js.annotation._
   var `abstract`: scala.Boolean
   var access: js.UndefOr[
     astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected`
-  ]
+  ] = js.undefined
   var accessibility: js.UndefOr[
     astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected`
-  ]
+  ] = js.undefined
   var async: scala.Boolean
   var computed: scala.Boolean
   var decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] | scala.Null

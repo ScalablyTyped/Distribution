@@ -80,13 +80,6 @@ class ConstructionSiteCls protected () extends ConstructionSite[BuildableStructu
   /* CompleteClass */
   override var progressTotal: scala.Double = js.native
   /**
-    * The link to the Room object. May be undefined in case if an object is a
-    * flag or a construction site and is placed in a room that is not visible
-    * to you.
-    */
-  /* CompleteClass */
-  override var room: js.UndefOr[Room] = js.native
-  /**
     * One of the `STRUCTURE_*` constants.
     */
   /* CompleteClass */

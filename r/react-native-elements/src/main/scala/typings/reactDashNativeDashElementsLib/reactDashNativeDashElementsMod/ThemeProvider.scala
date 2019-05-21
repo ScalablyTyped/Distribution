@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ThemeProvider[T] ()
   extends reactLib.reactMod.Component[ThemeProviderProps[T], js.Object, js.Any] {
-  @JSName("updateTheme")
-  var updateTheme_Original: UpdateTheme = js.native
+  var updateTheme: UpdateTheme = js.native
   def getTheme(): Theme[T] = js.native
-  def updateTheme(updates: RecursivePartial[FullTheme]): scala.Unit = js.native
 }
 

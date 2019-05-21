@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Brand extends js.Object {
-  var image: js.UndefOr[java.lang.String | scala.Null]
-  var title: js.UndefOr[java.lang.String]
-  var url: js.UndefOr[java.lang.String | scala.Null]
+  var image: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  var title: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
 object Brand {

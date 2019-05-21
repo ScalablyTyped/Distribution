@@ -19,7 +19,7 @@ object IChartistFixedScaleAxis {
     divisor: scala.Int | scala.Double = null,
     high: scala.Int | scala.Double = null,
     labelInterpolationFnc: js.Function = null,
-    labelOffset: chartistLib.Anon_X = null,
+    labelOffset: chartistLib.Anon_XY = null,
     low: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
     position: java.lang.String = null,

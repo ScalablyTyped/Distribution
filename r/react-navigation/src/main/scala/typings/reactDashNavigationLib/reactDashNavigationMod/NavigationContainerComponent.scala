@@ -12,8 +12,6 @@ trait NavigationContainerComponent
       js.Object, 
       js.Any
     ] {
-  @JSName("dispatch")
-  var dispatch_Original: NavigationDispatch = js.native
-  def dispatch(action: NavigationAction): scala.Boolean = js.native
+  var dispatch: NavigationDispatch = js.native
 }
 

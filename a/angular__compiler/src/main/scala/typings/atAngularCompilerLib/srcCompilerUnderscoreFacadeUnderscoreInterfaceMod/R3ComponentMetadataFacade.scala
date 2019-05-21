@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
-  var animations: js.UndefOr[js.Array[_]]
+  var animations: js.UndefOr[js.Array[_]] = js.undefined
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
   var directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelector]
   var encapsulation: ViewEncapsulation

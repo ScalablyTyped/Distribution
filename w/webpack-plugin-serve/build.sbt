@@ -1,36 +1,36 @@
 organization := "org.scalablytyped"
 name := "webpack-plugin-serve"
-version := "0.10-dt-20190506Z-a00ac9"
+version := "0.10-dt-20190506Z-2b45d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-94fd30",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-0af1bc",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-c5c3e6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-1927bb",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a3203b",
-  "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190326Z-3bc678",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-77f2c0",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-36041d",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-59d609",
-  "org.scalablytyped" %%% "fast-glob" % "2.2.6-5b0273",
-  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-d0808d",
-  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-4ec576",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-9371e4",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d00fa7",
+  "org.scalablytyped" %%% "connect-history-api-fallback" % "1.3-dt-20190326Z-8c4f56",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-4bead6",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-b7b8c5",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-f78ef5",
+  "org.scalablytyped" %%% "fast-glob" % "2.2.6-932c41",
+  "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-b1ea57",
+  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-be23b8",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-b7c6ed",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-330fcf",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-2b4168",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-f5f2f9",
-  "org.scalablytyped" %%% "koa-compress" % "v2.x-dt-20190326Z-2cc4b0",
-  "org.scalablytyped" %%% "koa-send" % "4.1-dt-20190218Z-8e5852",
-  "org.scalablytyped" %%% "koa-static" % "4.0-dt-20190207Z-9d741f",
+  "org.scalablytyped" %%% "koa-compress" % "v2.x-dt-20190326Z-c49308",
+  "org.scalablytyped" %%% "koa-send" % "4.1-dt-20190218Z-be361c",
+  "org.scalablytyped" %%% "koa-static" % "4.0-dt-20190207Z-32c8a9",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190514Z-07594f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-2d4b37",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-58ff5f",
   "org.scalablytyped" %%% "source-map" % "0.7.3-c62343",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-98777a",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-32bf87",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190506Z-fe1bcb")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190506Z-89e48a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

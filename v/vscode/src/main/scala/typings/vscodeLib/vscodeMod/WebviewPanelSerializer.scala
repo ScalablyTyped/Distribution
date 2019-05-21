@@ -46,7 +46,7 @@ trait WebviewPanelSerializer extends js.Object {
   		 * serializer must restore the webview's `.html` and hook up all webview events.
   		 * @param state Persisted state from the webview content.
   		 *
-  		 * @return Thenble indicating that the webview has been fully restored.
+  		 * @return Thenable indicating that the webview has been fully restored.
   		 */
   def deserializeWebviewPanel(webviewPanel: WebviewPanel, state: js.Any): vscodeLib.Thenable[scala.Unit]
 }

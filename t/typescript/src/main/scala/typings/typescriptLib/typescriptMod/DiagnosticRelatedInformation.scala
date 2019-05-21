@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait DiagnosticRelatedInformation extends js.Object {
   var category: DiagnosticCategory
   var code: scala.Double
-  var file: js.UndefOr[SourceFile]
-  var length: js.UndefOr[scala.Double]
+  var file: js.UndefOr[SourceFile] = js.undefined
+  var length: js.UndefOr[scala.Double] = js.undefined
   var messageText: java.lang.String | DiagnosticMessageChain
-  var start: js.UndefOr[scala.Double]
+  var start: js.UndefOr[scala.Double] = js.undefined
 }
 
 object DiagnosticRelatedInformation {

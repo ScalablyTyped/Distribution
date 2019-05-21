@@ -22,6 +22,7 @@ object Options {
   def apply(
     sendmail: nodemailerLib.nodemailerLibNumbers.`true`,
     alternatives: js.Array[nodemailerLib.libMailerMod.Attachment] = null,
+    amp: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.AmpAttachment = null,
     args: js.Array[java.lang.String] = null,
     attachments: js.Array[nodemailerLib.libMailerMod.Attachment] = null,
     bcc: java.lang.String | nodemailerLib.libMailerMod.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.Address]) = null,
@@ -56,6 +57,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(sendmail = sendmail)
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])

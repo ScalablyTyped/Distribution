@@ -15,6 +15,10 @@ trait CreateClusterRequest extends js.Object {
     */
   var ClusterName: __stringMin1Max64
   /**
+    * Comprises of the Configuration to be used on Kafka brokers in a cluster.
+    */
+  var ConfigurationInfo: js.UndefOr[ConfigurationInfo] = js.undefined
+  /**
     * Includes all encryption-related information.
     */
   var EncryptionInfo: js.UndefOr[EncryptionInfo] = js.undefined
@@ -39,10 +43,12 @@ object CreateClusterRequest {
     ClusterName: __stringMin1Max64,
     KafkaVersion: __stringMin1Max128,
     NumberOfBrokerNodes: __integerMin1Max15,
+    ConfigurationInfo: ConfigurationInfo = null,
     EncryptionInfo: EncryptionInfo = null,
     EnhancedMonitoring: EnhancedMonitoring = null
   ): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(BrokerNodeGroupInfo = BrokerNodeGroupInfo, ClusterName = ClusterName, KafkaVersion = KafkaVersion, NumberOfBrokerNodes = NumberOfBrokerNodes)
+    if (ConfigurationInfo != null) __obj.updateDynamic("ConfigurationInfo")(ConfigurationInfo)
     if (EncryptionInfo != null) __obj.updateDynamic("EncryptionInfo")(EncryptionInfo)
     if (EnhancedMonitoring != null) __obj.updateDynamic("EnhancedMonitoring")(EnhancedMonitoring.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]

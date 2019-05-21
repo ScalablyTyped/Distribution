@@ -15,9 +15,9 @@ trait IHitTestOptions extends js.Object {
     */
   var center: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * only hit-test again a certain item class and its sub-classes: Group, Layer, Path, CompoundPath, Shape, Raster, PlacedSymbol, PointText, etc.
+    * only hit-test against a certain item class and its sub-classes: Group, Layer, Path, CompoundPath, Shape, Raster, PlacedSymbol, PointText, etc.
     */
-  var `class`: js.UndefOr[java.lang.String] = js.undefined
+  var `class`: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Item]] = js.undefined
   /**
     * hit-test the curves of path items, without taking the stroke color or width into account.
     */
@@ -69,7 +69,7 @@ object IHitTestOptions {
   def apply(
     bounds: js.UndefOr[scala.Boolean] = js.undefined,
     center: js.UndefOr[scala.Boolean] = js.undefined,
-    `class`: java.lang.String = null,
+    `class`: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Item] = null,
     curves: js.UndefOr[scala.Boolean] = js.undefined,
     ends: js.UndefOr[scala.Boolean] = js.undefined,
     fill: js.UndefOr[scala.Boolean] = js.undefined,

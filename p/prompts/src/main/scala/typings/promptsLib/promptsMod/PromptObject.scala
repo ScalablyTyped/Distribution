@@ -32,15 +32,15 @@ trait PromptObject[T /* <: java.lang.String */] extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var `type`: ValueOrFunc[PromptType] | Falsy
-  var validate: js.UndefOr[PrevCaller[T, scala.Unit]] = js.undefined
+  var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])
+  var validate: js.UndefOr[PrevCaller[T, scala.Boolean | java.lang.String]] = js.undefined
 }
 
 object PromptObject {
   @scala.inline
   def apply[T /* <: java.lang.String */](
     name: ValueOrFunc[T],
-    `type`: ValueOrFunc[PromptType] | Falsy,
+    `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy]),
     active: java.lang.String = null,
     choices: js.Array[Choice] = null,
     float: js.UndefOr[scala.Boolean] = js.undefined,
@@ -59,7 +59,7 @@ object PromptObject {
     seperator: java.lang.String = null,
     style: java.lang.String = null,
     suggest: (/* prev */ js.Any, /* values */ js.Any, /* prompt */ PromptObject[java.lang.String]) => scala.Unit = null,
-    validate: PrevCaller[T, scala.Unit] = null
+    validate: PrevCaller[T, scala.Boolean | java.lang.String] = null
   ): PromptObject[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

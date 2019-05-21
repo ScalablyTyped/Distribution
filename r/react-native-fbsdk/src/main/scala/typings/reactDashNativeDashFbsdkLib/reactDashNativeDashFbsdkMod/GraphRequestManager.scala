@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-fbsdk", "GraphRequestManager")
 @js.native
 class GraphRequestManager () extends js.Object {
-  @JSName("batchCallback")
-  var batchCallback_Original: GraphRequestCallback = js.native
+  var batchCallback: GraphRequestCallback = js.native
   var requestBatch: js.Array[GraphRequest] = js.native
   var requestCallbacks: js.Array[GraphRequestCallback | scala.Null] = js.native
   /**
@@ -22,9 +21,6 @@ class GraphRequestManager () extends js.Object {
     * Add a graph request.
     */
   def addRequest(request: GraphRequest): GraphRequestManager = js.native
-  def batchCallback(): scala.Unit = js.native
-  def batchCallback(error: js.Object): scala.Unit = js.native
-  def batchCallback(error: js.Object, result: js.Object): scala.Unit = js.native
   /**
     * Executes requests in a batch.
     * Note that when there's an issue with network connection the batch callback

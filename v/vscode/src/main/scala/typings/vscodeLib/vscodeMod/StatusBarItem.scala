@@ -13,12 +13,12 @@ trait StatusBarItem extends js.Object {
   /**
   		 * The foreground color for this entry.
   		 */
-  var color: js.UndefOr[java.lang.String | ThemeColor]
+  var color: js.UndefOr[java.lang.String | ThemeColor] = js.undefined
   /**
   		 * The identifier of a command to run on click. The command must be
   		 * [known](#commands.getCommands).
   		 */
-  var command: js.UndefOr[java.lang.String]
+  var command: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * The priority of this item. Higher value means the item should
   		 * be shown more to the left.
@@ -36,7 +36,7 @@ trait StatusBarItem extends js.Object {
   /**
   		 * The tooltip text when you hover over this entry.
   		 */
-  var tooltip: js.UndefOr[java.lang.String]
+  var tooltip: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * Dispose and free associated resources. Call
   		 * [hide](#StatusBarItem.hide).

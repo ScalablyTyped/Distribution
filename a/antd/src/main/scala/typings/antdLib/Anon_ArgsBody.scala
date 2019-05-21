@@ -5,205 +5,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ArgsBody extends js.Object {
-  @JSName("body")
-  var body_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("className")
-  var className_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("dataSource")
-  var dataSource_Original: propDashTypesLib.propDashTypesMod.Validator[js.Array[antdLib.esTransferMod.TransferItem]] = js.native
-  @JSName("disabled")
-  var disabled_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
-  @JSName("filterOption")
-  var filterOption_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("footer")
-  var footer_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("height")
-  var height_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
-  @JSName("lazy")
-  var lazy_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | js.Object] = js.native
-  @JSName("listStyle")
-  var listStyle_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  @JSName("locale")
-  var locale_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  @JSName("notFoundContent")
-  var notFoundContent_Original: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike] = js.native
-  @JSName("onChange")
-  var onChange_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("operationStyle")
-  var operationStyle_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  @JSName("operations")
-  var operations_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
-  @JSName("prefixCls")
-  var prefixCls_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("render")
-  var render_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("rowKey")
-  var rowKey_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("searchPlaceholder")
-  var searchPlaceholder_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("showSearch")
-  var showSearch_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
-  @JSName("style")
-  var style_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  @JSName("targetKeys")
-  var targetKeys_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
-  @JSName("titles")
-  var titles_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
-  def body(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def className(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def dataSource(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def disabled(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def filterOption(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def footer(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def height(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def `lazy`(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def listStyle(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def locale(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def notFoundContent(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onChange(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def operationStyle(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def operations(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def prefixCls(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def render(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def rowKey(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def searchPlaceholder(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def showSearch(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def style(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def targetKeys(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def titles(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var body: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var dataSource: propDashTypesLib.propDashTypesMod.Validator[js.Array[antdLib.esTransferMod.TransferItem]]
+  var disabled: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  var filterOption: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var footer: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var height: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
+  var `lazy`: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | js.Object]
+  var listStyle: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var locale: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var notFoundContent: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
+  var onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var operationStyle: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var operations: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+  var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var render: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var rowKey: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var searchPlaceholder: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var showSearch: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  var style: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var targetKeys: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+  var titles: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+}
+
+object Anon_ArgsBody {
+  @scala.inline
+  def apply(
+    body: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    dataSource: propDashTypesLib.propDashTypesMod.Validator[js.Array[antdLib.esTransferMod.TransferItem]],
+    disabled: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    filterOption: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    footer: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    height: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    `lazy`: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | js.Object],
+    listStyle: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    locale: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    notFoundContent: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike],
+    onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    operationStyle: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    operations: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    render: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    rowKey: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    searchPlaceholder: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    showSearch: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    style: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    targetKeys: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    titles: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
+  ): Anon_ArgsBody = {
+    val __obj = js.Dynamic.literal(body = body, className = className, dataSource = dataSource, disabled = disabled, filterOption = filterOption, footer = footer, height = height, listStyle = listStyle, locale = locale, notFoundContent = notFoundContent, onChange = onChange, operationStyle = operationStyle, operations = operations, prefixCls = prefixCls, render = render, rowKey = rowKey, searchPlaceholder = searchPlaceholder, showSearch = showSearch, style = style, targetKeys = targetKeys, titles = titles)
+    __obj.updateDynamic("lazy")(`lazy`)
+    __obj.asInstanceOf[Anon_ArgsBody]
+  }
 }
 

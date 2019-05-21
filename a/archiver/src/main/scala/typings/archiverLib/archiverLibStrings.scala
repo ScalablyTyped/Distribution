@@ -16,6 +16,9 @@ object archiverLibStrings {
   sealed trait drain extends js.Object
   
   @js.native
+  sealed trait entry extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -47,6 +50,8 @@ object archiverLibStrings {
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def drain: drain = "drain".asInstanceOf[drain]
+  @scala.inline
+  def entry: entry = "entry".asInstanceOf[entry]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

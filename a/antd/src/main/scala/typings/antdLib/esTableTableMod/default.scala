@@ -17,7 +17,7 @@ class default[T] protected () extends Table[T] {
 object default extends js.Object {
   var Column: org.scalablytyped.runtime.Instantiable0[antdLib.esTableColumnMod.default[js.Object]] = js.native
   var ColumnGroup: antdLib.Anon_ANTTABLECOLUMNGROUP = js.native
-  var defaultProps: antdLib.Anon_BorderedClassName = js.native
+  var defaultProps: antdLib.Anon_BorderedChildrenColumnName = js.native
   var propTypes: antdLib.Anon_ArgsBordered = js.native
 }
 

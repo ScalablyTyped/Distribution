@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
      with astDashTypesLib.genKindsMod.StatementKind {
   var access: js.UndefOr[
     astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected`
-  ]
+  ] = js.undefined
   var computed: scala.Boolean
   var key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind
   var static: scala.Boolean

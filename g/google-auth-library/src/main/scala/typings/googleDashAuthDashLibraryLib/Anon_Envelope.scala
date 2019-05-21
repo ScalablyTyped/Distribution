@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Envelope extends js.Object {
-  var envelope: js.UndefOr[java.lang.String]
-  var payload: js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.TokenPayload]
+  var envelope: js.UndefOr[java.lang.String] = js.undefined
+  var payload: js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.TokenPayload] = js.undefined
 }
 
 object Anon_Envelope {

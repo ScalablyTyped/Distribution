@@ -19,12 +19,9 @@ trait Select[OptionType]
   // ------------------------------
   var controlRef: ElRef = js.native
   var focusedOptionRef: ElRef = js.native
-  @JSName("formatGroupLabel")
-  var formatGroupLabel_Original: reactDashSelectLib.libBuiltinsMod.formatGroupLabel[OptionType] = js.native
-  @JSName("getOptionLabel")
-  var getOptionLabel_Original: reactDashSelectLib.libBuiltinsMod.getOptionLabel[OptionType] = js.native
-  @JSName("getOptionValue")
-  var getOptionValue_Original: reactDashSelectLib.libBuiltinsMod.getOptionValue[OptionType] = js.native
+  var formatGroupLabel: reactDashSelectLib.libBuiltinsMod.formatGroupLabel[OptionType] = js.native
+  var getOptionLabel: reactDashSelectLib.libBuiltinsMod.getOptionLabel[OptionType] = js.native
+  var getOptionValue: reactDashSelectLib.libBuiltinsMod.getOptionValue[OptionType] = js.native
   var hasGroups: scala.Boolean = js.native
   var initialTouchX: scala.Double = js.native
   var initialTouchY: scala.Double = js.native
@@ -67,7 +64,6 @@ trait Select[OptionType]
   def focusValue_next(direction: reactDashSelectLib.reactDashSelectLibStrings.next): scala.Unit = js.native
   @JSName("focusValue")
   def focusValue_previous(direction: reactDashSelectLib.reactDashSelectLibStrings.previous): scala.Unit = js.native
-  def formatGroupLabel(group: reactDashSelectLib.libTypesMod.GroupType[OptionType]): reactLib.reactMod.ReactNode = js.native
   def formatOptionLabel(data: OptionType, context: FormatOptionLabelContext): reactLib.reactMod.ReactNode = js.native
   def getActiveDescendentId(): js.Any = js.native
   // ==============================
@@ -88,8 +84,6 @@ trait Select[OptionType]
   def getMenuListRef(ref: stdLib.HTMLElement): scala.Unit = js.native
   def getNextFocusedOption(options: reactDashSelectLib.libTypesMod.OptionsType[OptionType]): OptionType = js.native
   def getNextFocusedValue(nextSelectValue: reactDashSelectLib.libTypesMod.OptionsType[OptionType]): OptionType = js.native
-  def getOptionLabel(option: OptionType): java.lang.String = js.native
-  def getOptionValue(option: OptionType): java.lang.String = js.native
   def getStyles(key: java.lang.String, props: js.Object): js.Object = js.native
   // ==============================
   // Focus Handlers

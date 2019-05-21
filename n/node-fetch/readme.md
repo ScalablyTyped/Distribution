@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Antonio Román <https://github.com/kyranet>
 //                 Andrew Leedham <https://github.com/AndrewLeedham>
 //                 Jason Li <https://github.com/JasonLi914>
+//                 Brandon Wilson <https://github.com/wilsonianb>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

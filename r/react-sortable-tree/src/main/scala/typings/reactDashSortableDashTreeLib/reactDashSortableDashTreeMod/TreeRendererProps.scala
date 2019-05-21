@@ -5,29 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait TreeRendererProps extends js.Object {
-  var canDrop: js.UndefOr[scala.Boolean] = js.native
-  var children: js.Array[reactLib.reactMod.Global.JSXNs.Element] = js.native
+  var canDrop: js.UndefOr[scala.Boolean] = js.undefined
+  var children: js.Array[reactLib.reactMod.Global.JSXNs.Element]
   // Drop target
-  @JSName("connectDropTarget")
-  var connectDropTarget_Original: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget = js.native
-  var draggedNode: js.UndefOr[TreeItem] = js.native
-  var isOver: scala.Boolean = js.native
-  var listIndex: scala.Double = js.native
-  var lowerSiblingCounts: js.Array[scala.Double] = js.native
-  var node: TreeItem = js.native
-  var path: reactDashSortableDashTreeLib.NumberOrStringArray = js.native
-  var scaffoldBlockPxWidth: scala.Double = js.native
-  var swapDepth: js.UndefOr[scala.Double] = js.native
-  var swapFrom: js.UndefOr[scala.Double] = js.native
-  var swapLength: js.UndefOr[scala.Double] = js.native
-  var treeId: java.lang.String = js.native
-  var treeIndex: scala.Double = js.native
-  // Drop target
-  def connectDropTarget(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
-  def connectDropTarget(elementOrNode: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectableElement, options: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  var connectDropTarget: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget
+  var draggedNode: js.UndefOr[TreeItem] = js.undefined
+  var isOver: scala.Boolean
+  var listIndex: scala.Double
+  var lowerSiblingCounts: js.Array[scala.Double]
+  var node: TreeItem
+  var path: reactDashSortableDashTreeLib.NumberOrStringArray
+  var scaffoldBlockPxWidth: scala.Double
+  var swapDepth: js.UndefOr[scala.Double] = js.undefined
+  var swapFrom: js.UndefOr[scala.Double] = js.undefined
+  var swapLength: js.UndefOr[scala.Double] = js.undefined
+  var treeId: java.lang.String
+  var treeIndex: scala.Double
   // used in dndManager
-  def getPrevRow(): FlatDataItem | scala.Null = js.native
+  def getPrevRow(): FlatDataItem | scala.Null
+}
+
+object TreeRendererProps {
+  @scala.inline
+  def apply(
+    children: js.Array[reactLib.reactMod.Global.JSXNs.Element],
+    connectDropTarget: reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget,
+    getPrevRow: () => FlatDataItem | scala.Null,
+    isOver: scala.Boolean,
+    listIndex: scala.Double,
+    lowerSiblingCounts: js.Array[scala.Double],
+    node: TreeItem,
+    path: reactDashSortableDashTreeLib.NumberOrStringArray,
+    scaffoldBlockPxWidth: scala.Double,
+    treeId: java.lang.String,
+    treeIndex: scala.Double,
+    canDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    draggedNode: TreeItem = null,
+    swapDepth: scala.Int | scala.Double = null,
+    swapFrom: scala.Int | scala.Double = null,
+    swapLength: scala.Int | scala.Double = null
+  ): TreeRendererProps = {
+    val __obj = js.Dynamic.literal(children = children, connectDropTarget = connectDropTarget, getPrevRow = js.Any.fromFunction0(getPrevRow), isOver = isOver, listIndex = listIndex, lowerSiblingCounts = lowerSiblingCounts, node = node, path = path, scaffoldBlockPxWidth = scaffoldBlockPxWidth, treeId = treeId, treeIndex = treeIndex)
+    if (!js.isUndefined(canDrop)) __obj.updateDynamic("canDrop")(canDrop)
+    if (draggedNode != null) __obj.updateDynamic("draggedNode")(draggedNode)
+    if (swapDepth != null) __obj.updateDynamic("swapDepth")(swapDepth.asInstanceOf[js.Any])
+    if (swapFrom != null) __obj.updateDynamic("swapFrom")(swapFrom.asInstanceOf[js.Any])
+    if (swapLength != null) __obj.updateDynamic("swapLength")(swapLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeRendererProps]
+  }
 }
 

@@ -23,7 +23,7 @@ trait RoomObject extends js.Object {
     * flag or a construction site and is placed in a room that is not visible
     * to you.
     */
-  var room: js.UndefOr[Room]
+  var room: js.UndefOr[Room] = js.undefined
 }
 
 @JSGlobal("RoomObject")
@@ -40,13 +40,6 @@ class RoomObjectCls protected () extends RoomObject {
     */
   /* CompleteClass */
   override var pos: RoomPosition = js.native
-  /**
-    * The link to the Room object. May be undefined in case if an object is a
-    * flag or a construction site and is placed in a room that is not visible
-    * to you.
-    */
-  /* CompleteClass */
-  override var room: js.UndefOr[Room] = js.native
 }
 
 object RoomObject {

@@ -17,21 +17,22 @@ object ^ extends js.Object {
   def getTitle(): java.lang.String = js.native
   def getWorkingPath(parentRouterId: java.lang.String): java.lang.String = js.native
   def interceptRoute(previousRoute: java.lang.String, nextRoute: java.lang.String): js.Array[java.lang.String] = js.native
-  def navigate(url: java.lang.String, replace: hookrouterLib.hookrouterLibNumbers.`true`): scala.Unit = js.native
+  def navigate(url: java.lang.String): scala.Unit = js.native
+  def navigate(url: java.lang.String, replace: scala.Boolean): scala.Unit = js.native
   def navigate(
     url: java.lang.String,
-    replace: hookrouterLib.hookrouterLibNumbers.`true`,
+    replace: scala.Boolean,
     queryParams: hookrouterLib.hookrouterMod.HookRouterNs.QueryParams
   ): scala.Unit = js.native
   def navigate(
     url: java.lang.String,
-    replace: hookrouterLib.hookrouterLibNumbers.`true`,
+    replace: scala.Boolean,
     queryParams: hookrouterLib.hookrouterMod.HookRouterNs.QueryParams,
     replaceQueryParams: scala.Boolean
   ): scala.Unit = js.native
   def navigate(
     url: java.lang.String,
-    replace: hookrouterLib.hookrouterLibNumbers.`true`,
+    replace: scala.Boolean,
     queryParams: scala.Null,
     replaceQueryParams: scala.Boolean
   ): scala.Unit = js.native
@@ -84,7 +85,7 @@ object ^ extends js.Object {
     queryParams: scala.Null,
     replace: scala.Boolean
   ): scala.Unit = js.native
-  def useRoutes(routeObj: hookrouterLib.hookrouterMod.HookRouterNs.RouteObject): reactLib.reactMod.ReactNode = js.native
+  def useRoutes(routeObj: hookrouterLib.hookrouterMod.HookRouterNs.RouteObject): js.Any = js.native
   def useTitle(inString: java.lang.String): scala.Unit = js.native
 }
 

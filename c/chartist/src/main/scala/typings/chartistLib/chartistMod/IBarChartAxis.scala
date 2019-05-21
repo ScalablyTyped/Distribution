@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IBarChartAxis extends js.Object {
   var labelInterpolationFnc: js.UndefOr[js.Function] = js.undefined
-  var labelOffset: js.UndefOr[chartistLib.Anon_X] = js.undefined
+  var labelOffset: js.UndefOr[chartistLib.Anon_XY] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
   var onlyInteger: js.UndefOr[scala.Boolean] = js.undefined
   var position: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ object IBarChartAxis {
   @scala.inline
   def apply(
     labelInterpolationFnc: js.Function = null,
-    labelOffset: chartistLib.Anon_X = null,
+    labelOffset: chartistLib.Anon_XY = null,
     offset: scala.Int | scala.Double = null,
     onlyInteger: js.UndefOr[scala.Boolean] = js.undefined,
     position: java.lang.String = null,

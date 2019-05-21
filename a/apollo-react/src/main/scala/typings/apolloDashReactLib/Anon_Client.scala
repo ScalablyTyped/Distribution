@@ -5,25 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Client extends js.Object {
-  @JSName("client")
-  var client_Original: reactLib.reactMod.Validator[_] = js.native
-  @JSName("store")
-  var store_Original: reactLib.reactMod.Validator[_] = js.native
-  def client(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def store(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var client: reactLib.reactMod.Validator[_]
+  var store: reactLib.reactMod.Validator[_]
+}
+
+object Anon_Client {
+  @scala.inline
+  def apply(client: reactLib.reactMod.Validator[_], store: reactLib.reactMod.Validator[_]): Anon_Client = {
+    val __obj = js.Dynamic.literal(client = client, store = store)
+  
+    __obj.asInstanceOf[Anon_Client]
+  }
 }
 

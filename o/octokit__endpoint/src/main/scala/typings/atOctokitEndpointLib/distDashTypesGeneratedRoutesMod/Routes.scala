@@ -6,1311 +6,1269 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Routes extends js.Object {
-  var `DELETE /app/installations/:installation_id`: js.Tuple2[AppsDeleteInstallation_Options, AppsDeleteInstallation_RequestOptions]
+  var `DELETE /app/installations/:installation_id`: js.Tuple2[AppsDeleteInstallationEndpoint, AppsDeleteInstallationRequestOptions]
   var `DELETE /applications/:client_id/grants/:access_token`: js.Tuple2[
-    OauthAuthorizationsRevokeGrantForApplication_Options, 
-    OauthAuthorizationsRevokeGrantForApplication_RequestOptions
+    OauthAuthorizationsRevokeGrantForApplicationEndpoint, 
+    OauthAuthorizationsRevokeGrantForApplicationRequestOptions
   ]
   var `DELETE /applications/:client_id/tokens/:access_token`: js.Tuple2[
-    OauthAuthorizationsRevokeAuthorizationForApplication_Options, 
-    OauthAuthorizationsRevokeAuthorizationForApplication_RequestOptions
+    OauthAuthorizationsRevokeAuthorizationForApplicationEndpoint, 
+    OauthAuthorizationsRevokeAuthorizationForApplicationRequestOptions
   ]
   var `DELETE /applications/grants/:grant_id`: js.Tuple2[
-    OauthAuthorizationsDeleteGrant_Options, 
-    OauthAuthorizationsDeleteGrant_RequestOptions
+    OauthAuthorizationsDeleteGrantEndpoint, 
+    OauthAuthorizationsDeleteGrantRequestOptions
   ]
   var `DELETE /authorizations/:authorization_id`: js.Tuple2[
-    OauthAuthorizationsDeleteAuthorization_Options, 
-    OauthAuthorizationsDeleteAuthorization_RequestOptions
+    OauthAuthorizationsDeleteAuthorizationEndpoint, 
+    OauthAuthorizationsDeleteAuthorizationRequestOptions
   ]
-  var `DELETE /gists/:gist_id`: js.Tuple2[GistsDelete_Options, GistsDelete_RequestOptions]
-  var `DELETE /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsDeleteComment_Options, GistsDeleteComment_RequestOptions]
-  var `DELETE /gists/:gist_id/star`: js.Tuple2[GistsUnstar_Options, GistsUnstar_RequestOptions]
+  var `DELETE /gists/:gist_id`: js.Tuple2[GistsDeleteEndpoint, GistsDeleteRequestOptions]
+  var `DELETE /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsDeleteCommentEndpoint, GistsDeleteCommentRequestOptions]
+  var `DELETE /gists/:gist_id/star`: js.Tuple2[GistsUnstarEndpoint, GistsUnstarRequestOptions]
   var `DELETE /notifications/threads/:thread_id/subscription`: js.Tuple2[
-    ActivityDeleteThreadSubscription_Options, 
-    ActivityDeleteThreadSubscription_RequestOptions
+    ActivityDeleteThreadSubscriptionEndpoint, 
+    ActivityDeleteThreadSubscriptionRequestOptions
   ]
-  var `DELETE /orgs/:org/blocks/:username`: js.Tuple2[OrgsUnblockUser_Options, OrgsUnblockUser_RequestOptions]
+  var `DELETE /orgs/:org/blocks/:username`: js.Tuple2[OrgsUnblockUserEndpoint, OrgsUnblockUserRequestOptions]
   var `DELETE /orgs/:org/credential-authorizations/:credential_id`: js.Tuple2[
-    OrgsRemoveCredentialAuthorization_Options, 
-    OrgsRemoveCredentialAuthorization_RequestOptions
+    OrgsRemoveCredentialAuthorizationEndpoint, 
+    OrgsRemoveCredentialAuthorizationRequestOptions
   ]
-  var `DELETE /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsDeleteHook_Options, OrgsDeleteHook_RequestOptions]
+  var `DELETE /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsDeleteHookEndpoint, OrgsDeleteHookRequestOptions]
   var `DELETE /orgs/:org/interaction-limits`: js.Tuple2[
-    InteractionsRemoveRestrictionsForOrg_Options, 
-    InteractionsRemoveRestrictionsForOrg_RequestOptions
+    InteractionsRemoveRestrictionsForOrgEndpoint, 
+    InteractionsRemoveRestrictionsForOrgRequestOptions
   ]
-  var `DELETE /orgs/:org/members/:username`: js.Tuple2[OrgsRemoveMember_Options, OrgsRemoveMember_RequestOptions]
-  var `DELETE /orgs/:org/memberships/:username`: js.Tuple2[OrgsRemoveMembership_Options, OrgsRemoveMembership_RequestOptions]
-  var `DELETE /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[
-    MigrationsDeleteArchiveForOrg_Options, 
-    MigrationsDeleteArchiveForOrg_RequestOptions
-  ]
-  var `DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock`: js.Tuple2[MigrationsUnlockRepoForOrg_Options, MigrationsUnlockRepoForOrg_RequestOptions]
-  var `DELETE /orgs/:org/outside_collaborators/:username`: js.Tuple2[
-    OrgsRemoveOutsideCollaborator_Options, 
-    OrgsRemoveOutsideCollaborator_RequestOptions
-  ]
-  var `DELETE /orgs/:org/public_members/:username`: js.Tuple2[OrgsConcealMembership_Options, OrgsConcealMembership_RequestOptions]
-  var `DELETE /projects/:project_id`: js.Tuple2[ProjectsDelete_Options, ProjectsDelete_RequestOptions]
-  var `DELETE /projects/:project_id/collaborators/:username`: js.Tuple2[ProjectsRemoveCollaborator_Options, ProjectsRemoveCollaborator_RequestOptions]
-  var `DELETE /projects/columns/:column_id`: js.Tuple2[ProjectsDeleteColumn_Options, ProjectsDeleteColumn_RequestOptions]
-  var `DELETE /projects/columns/cards/:card_id`: js.Tuple2[ProjectsDeleteCard_Options, ProjectsDeleteCard_RequestOptions]
-  var `DELETE /reactions/:reaction_id`: js.Tuple2[ReactionsDelete_Options, ReactionsDelete_RequestOptions]
-  var `DELETE /repos/:owner/:repo`: js.Tuple2[ReposDelete_Options, ReposDelete_RequestOptions]
-  var `DELETE /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposRemoveBranchProtection_Options, ReposRemoveBranchProtection_RequestOptions]
+  var `DELETE /orgs/:org/members/:username`: js.Tuple2[OrgsRemoveMemberEndpoint, OrgsRemoveMemberRequestOptions]
+  var `DELETE /orgs/:org/memberships/:username`: js.Tuple2[OrgsRemoveMembershipEndpoint, OrgsRemoveMembershipRequestOptions]
+  var `DELETE /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[MigrationsDeleteArchiveForOrgEndpoint, MigrationsDeleteArchiveForOrgRequestOptions]
+  var `DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock`: js.Tuple2[MigrationsUnlockRepoForOrgEndpoint, MigrationsUnlockRepoForOrgRequestOptions]
+  var `DELETE /orgs/:org/outside_collaborators/:username`: js.Tuple2[OrgsRemoveOutsideCollaboratorEndpoint, OrgsRemoveOutsideCollaboratorRequestOptions]
+  var `DELETE /orgs/:org/public_members/:username`: js.Tuple2[OrgsConcealMembershipEndpoint, OrgsConcealMembershipRequestOptions]
+  var `DELETE /projects/:project_id`: js.Tuple2[ProjectsDeleteEndpoint, ProjectsDeleteRequestOptions]
+  var `DELETE /projects/:project_id/collaborators/:username`: js.Tuple2[ProjectsRemoveCollaboratorEndpoint, ProjectsRemoveCollaboratorRequestOptions]
+  var `DELETE /projects/columns/:column_id`: js.Tuple2[ProjectsDeleteColumnEndpoint, ProjectsDeleteColumnRequestOptions]
+  var `DELETE /projects/columns/cards/:card_id`: js.Tuple2[ProjectsDeleteCardEndpoint, ProjectsDeleteCardRequestOptions]
+  var `DELETE /reactions/:reaction_id`: js.Tuple2[ReactionsDeleteEndpoint, ReactionsDeleteRequestOptions]
+  var `DELETE /repos/:owner/:repo`: js.Tuple2[ReposDeleteEndpoint, ReposDeleteRequestOptions]
+  var `DELETE /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposRemoveBranchProtectionEndpoint, ReposRemoveBranchProtectionRequestOptions]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins`: js.Tuple2[
-    ReposRemoveProtectedBranchAdminEnforcement_Options, 
-    ReposRemoveProtectedBranchAdminEnforcement_RequestOptions
+    ReposRemoveProtectedBranchAdminEnforcementEndpoint, 
+    ReposRemoveProtectedBranchAdminEnforcementRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews`: js.Tuple2[
-    ReposRemoveProtectedBranchPullRequestReviewEnforcement_Options, 
-    ReposRemoveProtectedBranchPullRequestReviewEnforcement_RequestOptions
+    ReposRemoveProtectedBranchPullRequestReviewEnforcementEndpoint, 
+    ReposRemoveProtectedBranchPullRequestReviewEnforcementRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures`: js.Tuple2[
-    ReposRemoveProtectedBranchRequiredSignatures_Options, 
-    ReposRemoveProtectedBranchRequiredSignatures_RequestOptions
+    ReposRemoveProtectedBranchRequiredSignaturesEndpoint, 
+    ReposRemoveProtectedBranchRequiredSignaturesRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks`: js.Tuple2[
-    ReposRemoveProtectedBranchRequiredStatusChecks_Options, 
-    ReposRemoveProtectedBranchRequiredStatusChecks_RequestOptions
+    ReposRemoveProtectedBranchRequiredStatusChecksEndpoint, 
+    ReposRemoveProtectedBranchRequiredStatusChecksRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
-    ReposRemoveProtectedBranchRequiredStatusChecksContexts_Options, 
-    ReposRemoveProtectedBranchRequiredStatusChecksContexts_RequestOptions
+    ReposRemoveProtectedBranchRequiredStatusChecksContextsEndpoint, 
+    ReposRemoveProtectedBranchRequiredStatusChecksContextsRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions`: js.Tuple2[
-    ReposRemoveProtectedBranchRestrictions_Options, 
-    ReposRemoveProtectedBranchRestrictions_RequestOptions
+    ReposRemoveProtectedBranchRestrictionsEndpoint, 
+    ReposRemoveProtectedBranchRestrictionsRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-    ReposRemoveProtectedBranchTeamRestrictions_Options, 
-    ReposRemoveProtectedBranchTeamRestrictions_RequestOptions
+    ReposRemoveProtectedBranchTeamRestrictionsEndpoint, 
+    ReposRemoveProtectedBranchTeamRestrictionsRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-    ReposRemoveProtectedBranchUserRestrictions_Options, 
-    ReposRemoveProtectedBranchUserRestrictions_RequestOptions
+    ReposRemoveProtectedBranchUserRestrictionsEndpoint, 
+    ReposRemoveProtectedBranchUserRestrictionsRequestOptions
   ]
-  var `DELETE /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposRemoveCollaborator_Options, ReposRemoveCollaborator_RequestOptions]
-  var `DELETE /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposDeleteCommitComment_Options, ReposDeleteCommitComment_RequestOptions]
-  var `DELETE /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposDeleteFile_Options, ReposDeleteFile_RequestOptions]
-  var `DELETE /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposDeleteDownload_Options, ReposDeleteDownload_RequestOptions]
-  var `DELETE /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitDeleteRef_Options, GitDeleteRef_RequestOptions]
-  var `DELETE /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposDeleteHook_Options, ReposDeleteHook_RequestOptions]
-  var `DELETE /repos/:owner/:repo/import`: js.Tuple2[MigrationsCancelImport_Options, MigrationsCancelImport_RequestOptions]
+  var `DELETE /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposRemoveCollaboratorEndpoint, ReposRemoveCollaboratorRequestOptions]
+  var `DELETE /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposDeleteCommitCommentEndpoint, ReposDeleteCommitCommentRequestOptions]
+  var `DELETE /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposDeleteFileEndpoint, ReposDeleteFileRequestOptions]
+  var `DELETE /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposDeleteDownloadEndpoint, ReposDeleteDownloadRequestOptions]
+  var `DELETE /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitDeleteRefEndpoint, GitDeleteRefRequestOptions]
+  var `DELETE /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposDeleteHookEndpoint, ReposDeleteHookRequestOptions]
+  var `DELETE /repos/:owner/:repo/import`: js.Tuple2[MigrationsCancelImportEndpoint, MigrationsCancelImportRequestOptions]
   var `DELETE /repos/:owner/:repo/interaction-limits`: js.Tuple2[
-    InteractionsRemoveRestrictionsForRepo_Options, 
-    InteractionsRemoveRestrictionsForRepo_RequestOptions
+    InteractionsRemoveRestrictionsForRepoEndpoint, 
+    InteractionsRemoveRestrictionsForRepoRequestOptions
   ]
-  var `DELETE /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposDeleteInvitation_Options, ReposDeleteInvitation_RequestOptions]
-  var `DELETE /repos/:owner/:repo/issues/:issue_number/assignees`: js.Tuple2[IssuesRemoveAssignees_Options, IssuesRemoveAssignees_RequestOptions]
-  var `DELETE /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesRemoveLabels_Options, IssuesRemoveLabels_RequestOptions]
-  var `DELETE /repos/:owner/:repo/issues/:issue_number/labels/:name`: js.Tuple2[IssuesRemoveLabel_Options, IssuesRemoveLabel_RequestOptions]
-  var `DELETE /repos/:owner/:repo/issues/:issue_number/lock`: js.Tuple2[IssuesUnlock_Options, IssuesUnlock_RequestOptions]
-  var `DELETE /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesDeleteComment_Options, IssuesDeleteComment_RequestOptions]
-  var `DELETE /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposRemoveDeployKey_Options, ReposRemoveDeployKey_RequestOptions]
-  var `DELETE /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesDeleteLabel_Options, IssuesDeleteLabel_RequestOptions]
-  var `DELETE /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesDeleteMilestone_Options, IssuesDeleteMilestone_RequestOptions]
-  var `DELETE /repos/:owner/:repo/pages`: js.Tuple2[ReposDisablePagesSite_Options, ReposDisablePagesSite_RequestOptions]
-  var `DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsDeleteReviewRequest_Options, PullsDeleteReviewRequest_RequestOptions]
-  var `DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsDeletePendingReview_Options, PullsDeletePendingReview_RequestOptions]
-  var `DELETE /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsDeleteComment_Options, PullsDeleteComment_RequestOptions]
-  var `DELETE /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposDeleteRelease_Options, ReposDeleteRelease_RequestOptions]
-  var `DELETE /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposDeleteReleaseAsset_Options, ReposDeleteReleaseAsset_RequestOptions]
+  var `DELETE /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposDeleteInvitationEndpoint, ReposDeleteInvitationRequestOptions]
+  var `DELETE /repos/:owner/:repo/issues/:issue_number/assignees`: js.Tuple2[IssuesRemoveAssigneesEndpoint, IssuesRemoveAssigneesRequestOptions]
+  var `DELETE /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesRemoveLabelsEndpoint, IssuesRemoveLabelsRequestOptions]
+  var `DELETE /repos/:owner/:repo/issues/:issue_number/labels/:name`: js.Tuple2[IssuesRemoveLabelEndpoint, IssuesRemoveLabelRequestOptions]
+  var `DELETE /repos/:owner/:repo/issues/:issue_number/lock`: js.Tuple2[IssuesUnlockEndpoint, IssuesUnlockRequestOptions]
+  var `DELETE /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesDeleteCommentEndpoint, IssuesDeleteCommentRequestOptions]
+  var `DELETE /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposRemoveDeployKeyEndpoint, ReposRemoveDeployKeyRequestOptions]
+  var `DELETE /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesDeleteLabelEndpoint, IssuesDeleteLabelRequestOptions]
+  var `DELETE /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesDeleteMilestoneEndpoint, IssuesDeleteMilestoneRequestOptions]
+  var `DELETE /repos/:owner/:repo/pages`: js.Tuple2[ReposDisablePagesSiteEndpoint, ReposDisablePagesSiteRequestOptions]
+  var `DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsDeleteReviewRequestEndpoint, PullsDeleteReviewRequestRequestOptions]
+  var `DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsDeletePendingReviewEndpoint, PullsDeletePendingReviewRequestOptions]
+  var `DELETE /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsDeleteCommentEndpoint, PullsDeleteCommentRequestOptions]
+  var `DELETE /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposDeleteReleaseEndpoint, ReposDeleteReleaseRequestOptions]
+  var `DELETE /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposDeleteReleaseAssetEndpoint, ReposDeleteReleaseAssetRequestOptions]
   var `DELETE /repos/:owner/:repo/subscription`: js.Tuple2[
-    ActivityDeleteRepoSubscription_Options, 
-    ActivityDeleteRepoSubscription_RequestOptions
+    ActivityDeleteRepoSubscriptionEndpoint, 
+    ActivityDeleteRepoSubscriptionRequestOptions
   ]
   var `DELETE /repos/:owner/:repo/vulnerability-alerts`: js.Tuple2[
-    ReposDisableVulnerabilityAlerts_Options, 
-    ReposDisableVulnerabilityAlerts_RequestOptions
+    ReposDisableVulnerabilityAlertsEndpoint, 
+    ReposDisableVulnerabilityAlertsRequestOptions
   ]
-  var `DELETE /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[ScimRemoveUserFromOrg_Options, ScimRemoveUserFromOrg_RequestOptions]
-  var `DELETE /teams/:team_id`: js.Tuple2[TeamsDelete_Options, TeamsDelete_RequestOptions]
-  var `DELETE /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsDeleteDiscussion_Options, TeamsDeleteDiscussion_RequestOptions]
-  var `DELETE /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsDeleteDiscussionComment_Options, TeamsDeleteDiscussionComment_RequestOptions]
-  var `DELETE /teams/:team_id/members/:username`: js.Tuple2[TeamsRemoveMember_Options, TeamsRemoveMember_RequestOptions]
-  var `DELETE /teams/:team_id/memberships/:username`: js.Tuple2[TeamsRemoveMembership_Options, TeamsRemoveMembership_RequestOptions]
-  var `DELETE /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsRemoveProject_Options, TeamsRemoveProject_RequestOptions]
-  var `DELETE /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsRemoveRepo_Options, TeamsRemoveRepo_RequestOptions]
-  var `DELETE /user/blocks/:username`: js.Tuple2[UsersUnblock_Options, UsersUnblock_RequestOptions]
-  var `DELETE /user/emails`: js.Tuple2[UsersDeleteEmails_Options, UsersDeleteEmails_RequestOptions]
-  var `DELETE /user/following/:username`: js.Tuple2[UsersUnfollow_Options, UsersUnfollow_RequestOptions]
-  var `DELETE /user/gpg_keys/:gpg_key_id`: js.Tuple2[UsersDeleteGpgKey_Options, UsersDeleteGpgKey_RequestOptions]
+  var `DELETE /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[ScimRemoveUserFromOrgEndpoint, ScimRemoveUserFromOrgRequestOptions]
+  var `DELETE /teams/:team_id`: js.Tuple2[TeamsDeleteEndpoint, TeamsDeleteRequestOptions]
+  var `DELETE /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsDeleteDiscussionEndpoint, TeamsDeleteDiscussionRequestOptions]
+  var `DELETE /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsDeleteDiscussionCommentEndpoint, TeamsDeleteDiscussionCommentRequestOptions]
+  var `DELETE /teams/:team_id/members/:username`: js.Tuple2[TeamsRemoveMemberEndpoint, TeamsRemoveMemberRequestOptions]
+  var `DELETE /teams/:team_id/memberships/:username`: js.Tuple2[TeamsRemoveMembershipEndpoint, TeamsRemoveMembershipRequestOptions]
+  var `DELETE /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsRemoveProjectEndpoint, TeamsRemoveProjectRequestOptions]
+  var `DELETE /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsRemoveRepoEndpoint, TeamsRemoveRepoRequestOptions]
+  var `DELETE /user/blocks/:username`: js.Tuple2[UsersUnblockEndpoint, UsersUnblockRequestOptions]
+  var `DELETE /user/emails`: js.Tuple2[UsersDeleteEmailsEndpoint, UsersDeleteEmailsRequestOptions]
+  var `DELETE /user/following/:username`: js.Tuple2[UsersUnfollowEndpoint, UsersUnfollowRequestOptions]
+  var `DELETE /user/gpg_keys/:gpg_key_id`: js.Tuple2[UsersDeleteGpgKeyEndpoint, UsersDeleteGpgKeyRequestOptions]
   var `DELETE /user/installations/:installation_id/repositories/:repository_id`: js.Tuple2[
-    AppsRemoveRepoFromInstallation_Options, 
-    AppsRemoveRepoFromInstallation_RequestOptions
+    AppsRemoveRepoFromInstallationEndpoint, 
+    AppsRemoveRepoFromInstallationRequestOptions
   ]
-  var `DELETE /user/keys/:key_id`: js.Tuple2[UsersDeletePublicKey_Options, UsersDeletePublicKey_RequestOptions]
+  var `DELETE /user/keys/:key_id`: js.Tuple2[UsersDeletePublicKeyEndpoint, UsersDeletePublicKeyRequestOptions]
   var `DELETE /user/migrations/:migration_id/archive`: js.Tuple2[
-    MigrationsDeleteArchiveForAuthenticatedUser_Options, 
-    MigrationsDeleteArchiveForAuthenticatedUser_RequestOptions
+    MigrationsDeleteArchiveForAuthenticatedUserEndpoint, 
+    MigrationsDeleteArchiveForAuthenticatedUserRequestOptions
   ]
   var `DELETE /user/migrations/:migration_id/repos/:repo_name/lock`: js.Tuple2[
-    MigrationsUnlockRepoForAuthenticatedUser_Options, 
-    MigrationsUnlockRepoForAuthenticatedUser_RequestOptions
+    MigrationsUnlockRepoForAuthenticatedUserEndpoint, 
+    MigrationsUnlockRepoForAuthenticatedUserRequestOptions
   ]
-  var `DELETE /user/repository_invitations/:invitation_id`: js.Tuple2[ReposDeclineInvitation_Options, ReposDeclineInvitation_RequestOptions]
-  var `DELETE /user/starred/:owner/:repo`: js.Tuple2[ActivityUnstarRepo_Options, ActivityUnstarRepo_RequestOptions]
+  var `DELETE /user/repository_invitations/:invitation_id`: js.Tuple2[ReposDeclineInvitationEndpoint, ReposDeclineInvitationRequestOptions]
+  var `DELETE /user/starred/:owner/:repo`: js.Tuple2[ActivityUnstarRepoEndpoint, ActivityUnstarRepoRequestOptions]
   var `DELETE /user/subscriptions/:owner/:repo`: js.Tuple2[
-    ActivityStopWatchingRepoLegacy_Options, 
-    ActivityStopWatchingRepoLegacy_RequestOptions
+    ActivityStopWatchingRepoLegacyEndpoint, 
+    ActivityStopWatchingRepoLegacyRequestOptions
   ]
-  var `GET /app`: js.Tuple2[AppsGetAuthenticated_Options, AppsGetAuthenticated_RequestOptions]
-  var `GET /app/installations`: js.Tuple2[AppsListInstallations_Options, AppsListInstallations_RequestOptions]
-  var `GET /app/installations/:installation_id`: js.Tuple2[AppsGetInstallation_Options, AppsGetInstallation_RequestOptions]
+  var `GET /app`: js.Tuple2[AppsGetAuthenticatedEndpoint, AppsGetAuthenticatedRequestOptions]
+  var `GET /app/installations`: js.Tuple2[AppsListInstallationsEndpoint, AppsListInstallationsRequestOptions]
+  var `GET /app/installations/:installation_id`: js.Tuple2[AppsGetInstallationEndpoint, AppsGetInstallationRequestOptions]
   var `GET /applications/:client_id/tokens/:access_token`: js.Tuple2[
-    OauthAuthorizationsCheckAuthorization_Options, 
-    OauthAuthorizationsCheckAuthorization_RequestOptions
+    OauthAuthorizationsCheckAuthorizationEndpoint, 
+    OauthAuthorizationsCheckAuthorizationRequestOptions
   ]
-  var `GET /applications/grants`: js.Tuple2[
-    OauthAuthorizationsListGrants_Options, 
-    OauthAuthorizationsListGrants_RequestOptions
-  ]
-  var `GET /applications/grants/:grant_id`: js.Tuple2[OauthAuthorizationsGetGrant_Options, OauthAuthorizationsGetGrant_RequestOptions]
-  var `GET /apps/:app_slug`: js.Tuple2[AppsGetBySlug_Options, AppsGetBySlug_RequestOptions]
+  var `GET /applications/grants`: js.Tuple2[OauthAuthorizationsListGrantsEndpoint, OauthAuthorizationsListGrantsRequestOptions]
+  var `GET /applications/grants/:grant_id`: js.Tuple2[OauthAuthorizationsGetGrantEndpoint, OauthAuthorizationsGetGrantRequestOptions]
+  var `GET /apps/:app_slug`: js.Tuple2[AppsGetBySlugEndpoint, AppsGetBySlugRequestOptions]
   var `GET /authorizations`: js.Tuple2[
-    OauthAuthorizationsListAuthorizations_Options, 
-    OauthAuthorizationsListAuthorizations_RequestOptions
+    OauthAuthorizationsListAuthorizationsEndpoint, 
+    OauthAuthorizationsListAuthorizationsRequestOptions
   ]
   var `GET /authorizations/:authorization_id`: js.Tuple2[
-    OauthAuthorizationsGetAuthorization_Options, 
-    OauthAuthorizationsGetAuthorization_RequestOptions
+    OauthAuthorizationsGetAuthorizationEndpoint, 
+    OauthAuthorizationsGetAuthorizationRequestOptions
   ]
   var `GET /codes_of_conduct`: js.Tuple2[
-    CodesOfConductListConductCodes_Options, 
-    CodesOfConductListConductCodes_RequestOptions
+    CodesOfConductListConductCodesEndpoint, 
+    CodesOfConductListConductCodesRequestOptions
   ]
-  var `GET /codes_of_conduct/:key`: js.Tuple2[CodesOfConductGetConductCode_Options, CodesOfConductGetConductCode_RequestOptions]
-  var `GET /emojis`: js.Tuple2[EmojisGet_Options, EmojisGet_RequestOptions]
-  var `GET /events`: js.Tuple2[ActivityListPublicEvents_Options, ActivityListPublicEvents_RequestOptions]
-  var `GET /feeds`: js.Tuple2[ActivityListFeeds_Options, ActivityListFeeds_RequestOptions]
-  var `GET /gists`: js.Tuple2[GistsList_Options, GistsList_RequestOptions]
-  var `GET /gists/:gist_id`: js.Tuple2[GistsGet_Options, GistsGet_RequestOptions]
-  var `GET /gists/:gist_id/:sha`: js.Tuple2[GistsGetRevision_Options, GistsGetRevision_RequestOptions]
-  var `GET /gists/:gist_id/comments`: js.Tuple2[GistsListComments_Options, GistsListComments_RequestOptions]
-  var `GET /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsGetComment_Options, GistsGetComment_RequestOptions]
-  var `GET /gists/:gist_id/commits`: js.Tuple2[GistsListCommits_Options, GistsListCommits_RequestOptions]
-  var `GET /gists/:gist_id/forks`: js.Tuple2[GistsListForks_Options, GistsListForks_RequestOptions]
-  var `GET /gists/:gist_id/star`: js.Tuple2[GistsCheckIsStarred_Options, GistsCheckIsStarred_RequestOptions]
-  var `GET /gists/public`: js.Tuple2[GistsListPublic_Options, GistsListPublic_RequestOptions]
-  var `GET /gists/starred`: js.Tuple2[GistsListStarred_Options, GistsListStarred_RequestOptions]
-  var `GET /gitignore/templates`: js.Tuple2[GitignoreListTemplates_Options, GitignoreListTemplates_RequestOptions]
-  var `GET /gitignore/templates/:name`: js.Tuple2[GitignoreGetTemplate_Options, GitignoreGetTemplate_RequestOptions]
-  var `GET /installation/repositories`: js.Tuple2[AppsListRepos_Options, AppsListRepos_RequestOptions]
-  var `GET /issues`: js.Tuple2[IssuesList_Options, IssuesList_RequestOptions]
-  var `GET /legacy/issues/search/:owner/:repository/:state/:keyword`: js.Tuple2[SearchIssuesLegacy_Options, SearchIssuesLegacy_RequestOptions]
-  var `GET /legacy/repos/search/:keyword`: js.Tuple2[SearchReposLegacy_Options, SearchReposLegacy_RequestOptions]
-  var `GET /legacy/user/email/:email`: js.Tuple2[SearchEmailLegacy_Options, SearchEmailLegacy_RequestOptions]
-  var `GET /legacy/user/search/:keyword`: js.Tuple2[SearchUsersLegacy_Options, SearchUsersLegacy_RequestOptions]
+  var `GET /codes_of_conduct/:key`: js.Tuple2[CodesOfConductGetConductCodeEndpoint, CodesOfConductGetConductCodeRequestOptions]
+  var `GET /emojis`: js.Tuple2[EmojisGetEndpoint, EmojisGetRequestOptions]
+  var `GET /events`: js.Tuple2[ActivityListPublicEventsEndpoint, ActivityListPublicEventsRequestOptions]
+  var `GET /feeds`: js.Tuple2[ActivityListFeedsEndpoint, ActivityListFeedsRequestOptions]
+  var `GET /gists`: js.Tuple2[GistsListEndpoint, GistsListRequestOptions]
+  var `GET /gists/:gist_id`: js.Tuple2[GistsGetEndpoint, GistsGetRequestOptions]
+  var `GET /gists/:gist_id/:sha`: js.Tuple2[GistsGetRevisionEndpoint, GistsGetRevisionRequestOptions]
+  var `GET /gists/:gist_id/comments`: js.Tuple2[GistsListCommentsEndpoint, GistsListCommentsRequestOptions]
+  var `GET /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsGetCommentEndpoint, GistsGetCommentRequestOptions]
+  var `GET /gists/:gist_id/commits`: js.Tuple2[GistsListCommitsEndpoint, GistsListCommitsRequestOptions]
+  var `GET /gists/:gist_id/forks`: js.Tuple2[GistsListForksEndpoint, GistsListForksRequestOptions]
+  var `GET /gists/:gist_id/star`: js.Tuple2[GistsCheckIsStarredEndpoint, GistsCheckIsStarredRequestOptions]
+  var `GET /gists/public`: js.Tuple2[GistsListPublicEndpoint, GistsListPublicRequestOptions]
+  var `GET /gists/starred`: js.Tuple2[GistsListStarredEndpoint, GistsListStarredRequestOptions]
+  var `GET /gitignore/templates`: js.Tuple2[GitignoreListTemplatesEndpoint, GitignoreListTemplatesRequestOptions]
+  var `GET /gitignore/templates/:name`: js.Tuple2[GitignoreGetTemplateEndpoint, GitignoreGetTemplateRequestOptions]
+  var `GET /installation/repositories`: js.Tuple2[AppsListReposEndpoint, AppsListReposRequestOptions]
+  var `GET /issues`: js.Tuple2[IssuesListEndpoint, IssuesListRequestOptions]
+  var `GET /legacy/issues/search/:owner/:repository/:state/:keyword`: js.Tuple2[SearchIssuesLegacyEndpoint, SearchIssuesLegacyRequestOptions]
+  var `GET /legacy/repos/search/:keyword`: js.Tuple2[SearchReposLegacyEndpoint, SearchReposLegacyRequestOptions]
+  var `GET /legacy/user/email/:email`: js.Tuple2[SearchEmailLegacyEndpoint, SearchEmailLegacyRequestOptions]
+  var `GET /legacy/user/search/:keyword`: js.Tuple2[SearchUsersLegacyEndpoint, SearchUsersLegacyRequestOptions]
   var `GET /licenses`: js.Tuple2[
-    LicensesListCommonlyUsed_Options | LicensesList_Options, 
-    LicensesListCommonlyUsed_RequestOptions | LicensesList_RequestOptions
+    LicensesListCommonlyUsedEndpoint | LicensesListEndpoint, 
+    LicensesListCommonlyUsedRequestOptions | LicensesListRequestOptions
   ]
-  var `GET /licenses/:license`: js.Tuple2[LicensesGet_Options, LicensesGet_RequestOptions]
+  var `GET /licenses/:license`: js.Tuple2[LicensesGetEndpoint, LicensesGetRequestOptions]
   var `GET /marketplace_listing/accounts/:account_id`: js.Tuple2[
-    AppsCheckAccountIsAssociatedWithAny_Options, 
-    AppsCheckAccountIsAssociatedWithAny_RequestOptions
+    AppsCheckAccountIsAssociatedWithAnyEndpoint, 
+    AppsCheckAccountIsAssociatedWithAnyRequestOptions
   ]
-  var `GET /marketplace_listing/plans`: js.Tuple2[AppsListPlans_Options, AppsListPlans_RequestOptions]
+  var `GET /marketplace_listing/plans`: js.Tuple2[AppsListPlansEndpoint, AppsListPlansRequestOptions]
   var `GET /marketplace_listing/plans/:plan_id/accounts`: js.Tuple2[
-    AppsListAccountsUserOrOrgOnPlan_Options, 
-    AppsListAccountsUserOrOrgOnPlan_RequestOptions
+    AppsListAccountsUserOrOrgOnPlanEndpoint, 
+    AppsListAccountsUserOrOrgOnPlanRequestOptions
   ]
   var `GET /marketplace_listing/stubbed/accounts/:account_id`: js.Tuple2[
-    AppsCheckAccountIsAssociatedWithAnyStubbed_Options, 
-    AppsCheckAccountIsAssociatedWithAnyStubbed_RequestOptions
+    AppsCheckAccountIsAssociatedWithAnyStubbedEndpoint, 
+    AppsCheckAccountIsAssociatedWithAnyStubbedRequestOptions
   ]
-  var `GET /marketplace_listing/stubbed/plans`: js.Tuple2[AppsListPlansStubbed_Options, AppsListPlansStubbed_RequestOptions]
+  var `GET /marketplace_listing/stubbed/plans`: js.Tuple2[AppsListPlansStubbedEndpoint, AppsListPlansStubbedRequestOptions]
   var `GET /marketplace_listing/stubbed/plans/:plan_id/accounts`: js.Tuple2[
-    AppsListAccountsUserOrOrgOnPlanStubbed_Options, 
-    AppsListAccountsUserOrOrgOnPlanStubbed_RequestOptions
+    AppsListAccountsUserOrOrgOnPlanStubbedEndpoint, 
+    AppsListAccountsUserOrOrgOnPlanStubbedRequestOptions
   ]
-  var `GET /meta`: js.Tuple2[MetaGet_Options, MetaGet_RequestOptions]
+  var `GET /meta`: js.Tuple2[MetaGetEndpoint, MetaGetRequestOptions]
   var `GET /networks/:owner/:repo/events`: js.Tuple2[
-    ActivityListPublicEventsForRepoNetwork_Options, 
-    ActivityListPublicEventsForRepoNetwork_RequestOptions
+    ActivityListPublicEventsForRepoNetworkEndpoint, 
+    ActivityListPublicEventsForRepoNetworkRequestOptions
   ]
-  var `GET /notifications`: js.Tuple2[ActivityListNotifications_Options, ActivityListNotifications_RequestOptions]
-  var `GET /notifications/threads/:thread_id`: js.Tuple2[ActivityGetThread_Options, ActivityGetThread_RequestOptions]
-  var `GET /notifications/threads/:thread_id/subscription`: js.Tuple2[
-    ActivityGetThreadSubscription_Options, 
-    ActivityGetThreadSubscription_RequestOptions
-  ]
-  var `GET /organizations`: js.Tuple2[OrgsList_Options, OrgsList_RequestOptions]
-  var `GET /orgs/:org`: js.Tuple2[OrgsGet_Options, OrgsGet_RequestOptions]
-  var `GET /orgs/:org/blocks`: js.Tuple2[OrgsListBlockedUsers_Options, OrgsListBlockedUsers_RequestOptions]
-  var `GET /orgs/:org/blocks/:username`: js.Tuple2[OrgsCheckBlockedUser_Options, OrgsCheckBlockedUser_RequestOptions]
+  var `GET /notifications`: js.Tuple2[ActivityListNotificationsEndpoint, ActivityListNotificationsRequestOptions]
+  var `GET /notifications/threads/:thread_id`: js.Tuple2[ActivityGetThreadEndpoint, ActivityGetThreadRequestOptions]
+  var `GET /notifications/threads/:thread_id/subscription`: js.Tuple2[ActivityGetThreadSubscriptionEndpoint, ActivityGetThreadSubscriptionRequestOptions]
+  var `GET /organizations`: js.Tuple2[OrgsListEndpoint, OrgsListRequestOptions]
+  var `GET /orgs/:org`: js.Tuple2[OrgsGetEndpoint, OrgsGetRequestOptions]
+  var `GET /orgs/:org/blocks`: js.Tuple2[OrgsListBlockedUsersEndpoint, OrgsListBlockedUsersRequestOptions]
+  var `GET /orgs/:org/blocks/:username`: js.Tuple2[OrgsCheckBlockedUserEndpoint, OrgsCheckBlockedUserRequestOptions]
   var `GET /orgs/:org/credential-authorizations`: js.Tuple2[
-    OrgsListCredentialAuthorizations_Options, 
-    OrgsListCredentialAuthorizations_RequestOptions
+    OrgsListCredentialAuthorizationsEndpoint, 
+    OrgsListCredentialAuthorizationsRequestOptions
   ]
   var `GET /orgs/:org/events`: js.Tuple2[
-    ActivityListPublicEventsForOrg_Options, 
-    ActivityListPublicEventsForOrg_RequestOptions
+    ActivityListPublicEventsForOrgEndpoint, 
+    ActivityListPublicEventsForOrgRequestOptions
   ]
-  var `GET /orgs/:org/hooks`: js.Tuple2[OrgsListHooks_Options, OrgsListHooks_RequestOptions]
-  var `GET /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsGetHook_Options, OrgsGetHook_RequestOptions]
+  var `GET /orgs/:org/hooks`: js.Tuple2[OrgsListHooksEndpoint, OrgsListHooksRequestOptions]
+  var `GET /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsGetHookEndpoint, OrgsGetHookRequestOptions]
   var `GET /orgs/:org/installation`: js.Tuple2[
-    AppsGetOrgInstallation_Options | AppsFindOrgInstallation_Options, 
-    AppsGetOrgInstallation_RequestOptions | AppsFindOrgInstallation_RequestOptions
+    AppsGetOrgInstallationEndpoint | AppsFindOrgInstallationEndpoint, 
+    AppsGetOrgInstallationRequestOptions | AppsFindOrgInstallationRequestOptions
   ]
   var `GET /orgs/:org/interaction-limits`: js.Tuple2[
-    InteractionsGetRestrictionsForOrg_Options, 
-    InteractionsGetRestrictionsForOrg_RequestOptions
+    InteractionsGetRestrictionsForOrgEndpoint, 
+    InteractionsGetRestrictionsForOrgRequestOptions
   ]
-  var `GET /orgs/:org/invitations`: js.Tuple2[OrgsListPendingInvitations_Options, OrgsListPendingInvitations_RequestOptions]
-  var `GET /orgs/:org/invitations/:invitation_id/teams`: js.Tuple2[OrgsListInvitationTeams_Options, OrgsListInvitationTeams_RequestOptions]
-  var `GET /orgs/:org/issues`: js.Tuple2[IssuesListForOrg_Options, IssuesListForOrg_RequestOptions]
-  var `GET /orgs/:org/members`: js.Tuple2[OrgsListMembers_Options, OrgsListMembers_RequestOptions]
-  var `GET /orgs/:org/members/:username`: js.Tuple2[OrgsCheckMembership_Options, OrgsCheckMembership_RequestOptions]
-  var `GET /orgs/:org/memberships/:username`: js.Tuple2[OrgsGetMembership_Options, OrgsGetMembership_RequestOptions]
-  var `GET /orgs/:org/migrations`: js.Tuple2[MigrationsListForOrg_Options, MigrationsListForOrg_RequestOptions]
-  var `GET /orgs/:org/migrations/:migration_id`: js.Tuple2[MigrationsGetStatusForOrg_Options, MigrationsGetStatusForOrg_RequestOptions]
-  var `GET /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[MigrationsGetArchiveForOrg_Options, MigrationsGetArchiveForOrg_RequestOptions]
-  var `GET /orgs/:org/outside_collaborators`: js.Tuple2[OrgsListOutsideCollaborators_Options, OrgsListOutsideCollaborators_RequestOptions]
-  var `GET /orgs/:org/projects`: js.Tuple2[ProjectsListForOrg_Options, ProjectsListForOrg_RequestOptions]
-  var `GET /orgs/:org/public_members`: js.Tuple2[OrgsListPublicMembers_Options, OrgsListPublicMembers_RequestOptions]
-  var `GET /orgs/:org/public_members/:username`: js.Tuple2[OrgsCheckPublicMembership_Options, OrgsCheckPublicMembership_RequestOptions]
-  var `GET /orgs/:org/repos`: js.Tuple2[ReposListForOrg_Options, ReposListForOrg_RequestOptions]
-  var `GET /orgs/:org/teams`: js.Tuple2[TeamsList_Options, TeamsList_RequestOptions]
-  var `GET /orgs/:org/teams/:team_slug`: js.Tuple2[TeamsGetByName_Options, TeamsGetByName_RequestOptions]
-  var `GET /projects/:project_id`: js.Tuple2[ProjectsGet_Options, ProjectsGet_RequestOptions]
-  var `GET /projects/:project_id/collaborators`: js.Tuple2[ProjectsListCollaborators_Options, ProjectsListCollaborators_RequestOptions]
+  var `GET /orgs/:org/invitations`: js.Tuple2[OrgsListPendingInvitationsEndpoint, OrgsListPendingInvitationsRequestOptions]
+  var `GET /orgs/:org/invitations/:invitation_id/teams`: js.Tuple2[OrgsListInvitationTeamsEndpoint, OrgsListInvitationTeamsRequestOptions]
+  var `GET /orgs/:org/issues`: js.Tuple2[IssuesListForOrgEndpoint, IssuesListForOrgRequestOptions]
+  var `GET /orgs/:org/members`: js.Tuple2[OrgsListMembersEndpoint, OrgsListMembersRequestOptions]
+  var `GET /orgs/:org/members/:username`: js.Tuple2[OrgsCheckMembershipEndpoint, OrgsCheckMembershipRequestOptions]
+  var `GET /orgs/:org/memberships/:username`: js.Tuple2[OrgsGetMembershipEndpoint, OrgsGetMembershipRequestOptions]
+  var `GET /orgs/:org/migrations`: js.Tuple2[MigrationsListForOrgEndpoint, MigrationsListForOrgRequestOptions]
+  var `GET /orgs/:org/migrations/:migration_id`: js.Tuple2[MigrationsGetStatusForOrgEndpoint, MigrationsGetStatusForOrgRequestOptions]
+  var `GET /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[MigrationsGetArchiveForOrgEndpoint, MigrationsGetArchiveForOrgRequestOptions]
+  var `GET /orgs/:org/outside_collaborators`: js.Tuple2[OrgsListOutsideCollaboratorsEndpoint, OrgsListOutsideCollaboratorsRequestOptions]
+  var `GET /orgs/:org/projects`: js.Tuple2[ProjectsListForOrgEndpoint, ProjectsListForOrgRequestOptions]
+  var `GET /orgs/:org/public_members`: js.Tuple2[OrgsListPublicMembersEndpoint, OrgsListPublicMembersRequestOptions]
+  var `GET /orgs/:org/public_members/:username`: js.Tuple2[OrgsCheckPublicMembershipEndpoint, OrgsCheckPublicMembershipRequestOptions]
+  var `GET /orgs/:org/repos`: js.Tuple2[ReposListForOrgEndpoint, ReposListForOrgRequestOptions]
+  var `GET /orgs/:org/teams`: js.Tuple2[TeamsListEndpoint, TeamsListRequestOptions]
+  var `GET /orgs/:org/teams/:team_slug`: js.Tuple2[TeamsGetByNameEndpoint, TeamsGetByNameRequestOptions]
+  var `GET /projects/:project_id`: js.Tuple2[ProjectsGetEndpoint, ProjectsGetRequestOptions]
+  var `GET /projects/:project_id/collaborators`: js.Tuple2[ProjectsListCollaboratorsEndpoint, ProjectsListCollaboratorsRequestOptions]
   var `GET /projects/:project_id/collaborators/:username/permission`: js.Tuple2[
-    ProjectsReviewUserPermissionLevel_Options, 
-    ProjectsReviewUserPermissionLevel_RequestOptions
+    ProjectsReviewUserPermissionLevelEndpoint, 
+    ProjectsReviewUserPermissionLevelRequestOptions
   ]
-  var `GET /projects/:project_id/columns`: js.Tuple2[ProjectsListColumns_Options, ProjectsListColumns_RequestOptions]
-  var `GET /projects/columns/:column_id`: js.Tuple2[ProjectsGetColumn_Options, ProjectsGetColumn_RequestOptions]
-  var `GET /projects/columns/:column_id/cards`: js.Tuple2[ProjectsListCards_Options, ProjectsListCards_RequestOptions]
-  var `GET /projects/columns/cards/:card_id`: js.Tuple2[ProjectsGetCard_Options, ProjectsGetCard_RequestOptions]
-  var `GET /rate_limit`: js.Tuple2[RateLimitGet_Options, RateLimitGet_RequestOptions]
-  var `GET /repos/:owner/:repo`: js.Tuple2[ReposGet_Options, ReposGet_RequestOptions]
-  var `GET /repos/:owner/:repo/:archive_format/:ref`: js.Tuple2[ReposGetArchiveLink_Options, ReposGetArchiveLink_RequestOptions]
-  var `GET /repos/:owner/:repo/assignees`: js.Tuple2[IssuesListAssignees_Options, IssuesListAssignees_RequestOptions]
-  var `GET /repos/:owner/:repo/assignees/:assignee`: js.Tuple2[IssuesCheckAssignee_Options, IssuesCheckAssignee_RequestOptions]
-  var `GET /repos/:owner/:repo/branches`: js.Tuple2[ReposListBranches_Options, ReposListBranches_RequestOptions]
-  var `GET /repos/:owner/:repo/branches/:branch`: js.Tuple2[ReposGetBranch_Options, ReposGetBranch_RequestOptions]
-  var `GET /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposGetBranchProtection_Options, ReposGetBranchProtection_RequestOptions]
+  var `GET /projects/:project_id/columns`: js.Tuple2[ProjectsListColumnsEndpoint, ProjectsListColumnsRequestOptions]
+  var `GET /projects/columns/:column_id`: js.Tuple2[ProjectsGetColumnEndpoint, ProjectsGetColumnRequestOptions]
+  var `GET /projects/columns/:column_id/cards`: js.Tuple2[ProjectsListCardsEndpoint, ProjectsListCardsRequestOptions]
+  var `GET /projects/columns/cards/:card_id`: js.Tuple2[ProjectsGetCardEndpoint, ProjectsGetCardRequestOptions]
+  var `GET /rate_limit`: js.Tuple2[RateLimitGetEndpoint, RateLimitGetRequestOptions]
+  var `GET /repos/:owner/:repo`: js.Tuple2[ReposGetEndpoint, ReposGetRequestOptions]
+  var `GET /repos/:owner/:repo/:archive_format/:ref`: js.Tuple2[ReposGetArchiveLinkEndpoint, ReposGetArchiveLinkRequestOptions]
+  var `GET /repos/:owner/:repo/assignees`: js.Tuple2[IssuesListAssigneesEndpoint, IssuesListAssigneesRequestOptions]
+  var `GET /repos/:owner/:repo/assignees/:assignee`: js.Tuple2[IssuesCheckAssigneeEndpoint, IssuesCheckAssigneeRequestOptions]
+  var `GET /repos/:owner/:repo/branches`: js.Tuple2[ReposListBranchesEndpoint, ReposListBranchesRequestOptions]
+  var `GET /repos/:owner/:repo/branches/:branch`: js.Tuple2[ReposGetBranchEndpoint, ReposGetBranchRequestOptions]
+  var `GET /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposGetBranchProtectionEndpoint, ReposGetBranchProtectionRequestOptions]
   var `GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins`: js.Tuple2[
-    ReposGetProtectedBranchAdminEnforcement_Options, 
-    ReposGetProtectedBranchAdminEnforcement_RequestOptions
+    ReposGetProtectedBranchAdminEnforcementEndpoint, 
+    ReposGetProtectedBranchAdminEnforcementRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews`: js.Tuple2[
-    ReposGetProtectedBranchPullRequestReviewEnforcement_Options, 
-    ReposGetProtectedBranchPullRequestReviewEnforcement_RequestOptions
+    ReposGetProtectedBranchPullRequestReviewEnforcementEndpoint, 
+    ReposGetProtectedBranchPullRequestReviewEnforcementRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/required_signatures`: js.Tuple2[
-    ReposGetProtectedBranchRequiredSignatures_Options, 
-    ReposGetProtectedBranchRequiredSignatures_RequestOptions
+    ReposGetProtectedBranchRequiredSignaturesEndpoint, 
+    ReposGetProtectedBranchRequiredSignaturesRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks`: js.Tuple2[
-    ReposGetProtectedBranchRequiredStatusChecks_Options, 
-    ReposGetProtectedBranchRequiredStatusChecks_RequestOptions
+    ReposGetProtectedBranchRequiredStatusChecksEndpoint, 
+    ReposGetProtectedBranchRequiredStatusChecksRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
-    ReposListProtectedBranchRequiredStatusChecksContexts_Options, 
-    ReposListProtectedBranchRequiredStatusChecksContexts_RequestOptions
+    ReposListProtectedBranchRequiredStatusChecksContextsEndpoint, 
+    ReposListProtectedBranchRequiredStatusChecksContextsRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/restrictions`: js.Tuple2[
-    ReposGetProtectedBranchRestrictions_Options, 
-    ReposGetProtectedBranchRestrictions_RequestOptions
+    ReposGetProtectedBranchRestrictionsEndpoint, 
+    ReposGetProtectedBranchRestrictionsRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-    ReposListProtectedBranchTeamRestrictions_Options, 
-    ReposListProtectedBranchTeamRestrictions_RequestOptions
+    ReposListProtectedBranchTeamRestrictionsEndpoint, 
+    ReposListProtectedBranchTeamRestrictionsRequestOptions
   ]
   var `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-    ReposListProtectedBranchUserRestrictions_Options, 
-    ReposListProtectedBranchUserRestrictions_RequestOptions
+    ReposListProtectedBranchUserRestrictionsEndpoint, 
+    ReposListProtectedBranchUserRestrictionsRequestOptions
   ]
-  var `GET /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksGet_Options, ChecksGet_RequestOptions]
-  var `GET /repos/:owner/:repo/check-runs/:check_run_id/annotations`: js.Tuple2[ChecksListAnnotations_Options, ChecksListAnnotations_RequestOptions]
-  var `GET /repos/:owner/:repo/check-suites/:check_suite_id`: js.Tuple2[ChecksGetSuite_Options, ChecksGetSuite_RequestOptions]
-  var `GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs`: js.Tuple2[ChecksListForSuite_Options, ChecksListForSuite_RequestOptions]
-  var `GET /repos/:owner/:repo/collaborators`: js.Tuple2[ReposListCollaborators_Options, ReposListCollaborators_RequestOptions]
-  var `GET /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposCheckCollaborator_Options, ReposCheckCollaborator_RequestOptions]
+  var `GET /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksGetEndpoint, ChecksGetRequestOptions]
+  var `GET /repos/:owner/:repo/check-runs/:check_run_id/annotations`: js.Tuple2[ChecksListAnnotationsEndpoint, ChecksListAnnotationsRequestOptions]
+  var `GET /repos/:owner/:repo/check-suites/:check_suite_id`: js.Tuple2[ChecksGetSuiteEndpoint, ChecksGetSuiteRequestOptions]
+  var `GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs`: js.Tuple2[ChecksListForSuiteEndpoint, ChecksListForSuiteRequestOptions]
+  var `GET /repos/:owner/:repo/collaborators`: js.Tuple2[ReposListCollaboratorsEndpoint, ReposListCollaboratorsRequestOptions]
+  var `GET /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposCheckCollaboratorEndpoint, ReposCheckCollaboratorRequestOptions]
   var `GET /repos/:owner/:repo/collaborators/:username/permission`: js.Tuple2[
-    ReposGetCollaboratorPermissionLevel_Options, 
-    ReposGetCollaboratorPermissionLevel_RequestOptions
+    ReposGetCollaboratorPermissionLevelEndpoint, 
+    ReposGetCollaboratorPermissionLevelRequestOptions
   ]
-  var `GET /repos/:owner/:repo/comments`: js.Tuple2[ReposListCommitComments_Options, ReposListCommitComments_RequestOptions]
-  var `GET /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposGetCommitComment_Options, ReposGetCommitComment_RequestOptions]
-  var `GET /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[
-    ReactionsListForCommitComment_Options, 
-    ReactionsListForCommitComment_RequestOptions
-  ]
-  var `GET /repos/:owner/:repo/commits`: js.Tuple2[ReposListCommits_Options, ReposListCommits_RequestOptions]
-  var `GET /repos/:owner/:repo/commits/:commit_sha`: js.Tuple2[ReposGetCommit_Options, ReposGetCommit_RequestOptions]
+  var `GET /repos/:owner/:repo/comments`: js.Tuple2[ReposListCommitCommentsEndpoint, ReposListCommitCommentsRequestOptions]
+  var `GET /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposGetCommitCommentEndpoint, ReposGetCommitCommentRequestOptions]
+  var `GET /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForCommitCommentEndpoint, ReactionsListForCommitCommentRequestOptions]
+  var `GET /repos/:owner/:repo/commits`: js.Tuple2[ReposListCommitsEndpoint, ReposListCommitsRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:commit_sha`: js.Tuple2[ReposGetCommitEndpoint, ReposGetCommitRequestOptions]
   var `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`: js.Tuple2[
-    ReposListBranchesForHeadCommit_Options, 
-    ReposListBranchesForHeadCommit_RequestOptions
+    ReposListBranchesForHeadCommitEndpoint, 
+    ReposListBranchesForHeadCommitRequestOptions
   ]
   var `GET /repos/:owner/:repo/commits/:commit_sha/pulls`: js.Tuple2[
-    ReposListPullRequestsAssociatedWithCommit_Options, 
-    ReposListPullRequestsAssociatedWithCommit_RequestOptions
+    ReposListPullRequestsAssociatedWithCommitEndpoint, 
+    ReposListPullRequestsAssociatedWithCommitRequestOptions
   ]
-  var `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitRefSha_Options, ReposGetCommitRefSha_RequestOptions]
-  var `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRef_Options, ChecksListForRef_RequestOptions]
-  var `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRef_Options, ChecksListSuitesForRef_RequestOptions]
-  var `GET /repos/:owner/:repo/commits/:ref/comments`: js.Tuple2[ReposListCommentsForCommit_Options, ReposListCommentsForCommit_RequestOptions]
-  var `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRef_Options, ReposGetCombinedStatusForRef_RequestOptions]
-  var `GET /repos/:owner/:repo/commits/:ref/statuses`: js.Tuple2[ReposListStatusesForRef_Options, ReposListStatusesForRef_RequestOptions]
-  var `GET /repos/:owner/:repo/community/code_of_conduct`: js.Tuple2[CodesOfConductGetForRepo_Options, CodesOfConductGetForRepo_RequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitRefShaEndpoint, ReposGetCommitRefShaRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRefEndpoint, ChecksListForRefRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRefEndpoint, ChecksListSuitesForRefRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref/comments`: js.Tuple2[ReposListCommentsForCommitEndpoint, ReposListCommentsForCommitRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRefEndpoint, ReposGetCombinedStatusForRefRequestOptions]
+  var `GET /repos/:owner/:repo/commits/:ref/statuses`: js.Tuple2[ReposListStatusesForRefEndpoint, ReposListStatusesForRefRequestOptions]
+  var `GET /repos/:owner/:repo/community/code_of_conduct`: js.Tuple2[CodesOfConductGetForRepoEndpoint, CodesOfConductGetForRepoRequestOptions]
   var `GET /repos/:owner/:repo/community/profile`: js.Tuple2[
-    ReposRetrieveCommunityProfileMetrics_Options, 
-    ReposRetrieveCommunityProfileMetrics_RequestOptions
+    ReposRetrieveCommunityProfileMetricsEndpoint, 
+    ReposRetrieveCommunityProfileMetricsRequestOptions
   ]
-  var `GET /repos/:owner/:repo/compare/:base...:head`: js.Tuple2[ReposCompareCommits_Options, ReposCompareCommits_RequestOptions]
-  var `GET /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposGetContents_Options, ReposGetContents_RequestOptions]
-  var `GET /repos/:owner/:repo/contributors`: js.Tuple2[ReposListContributors_Options, ReposListContributors_RequestOptions]
-  var `GET /repos/:owner/:repo/deployments`: js.Tuple2[ReposListDeployments_Options, ReposListDeployments_RequestOptions]
-  var `GET /repos/:owner/:repo/deployments/:deployment_id`: js.Tuple2[ReposGetDeployment_Options, ReposGetDeployment_RequestOptions]
-  var `GET /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposListDeploymentStatuses_Options, ReposListDeploymentStatuses_RequestOptions]
-  var `GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id`: js.Tuple2[ReposGetDeploymentStatus_Options, ReposGetDeploymentStatus_RequestOptions]
-  var `GET /repos/:owner/:repo/downloads`: js.Tuple2[ReposListDownloads_Options, ReposListDownloads_RequestOptions]
-  var `GET /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposGetDownload_Options, ReposGetDownload_RequestOptions]
-  var `GET /repos/:owner/:repo/events`: js.Tuple2[ActivityListRepoEvents_Options, ActivityListRepoEvents_RequestOptions]
-  var `GET /repos/:owner/:repo/forks`: js.Tuple2[ReposListForks_Options, ReposListForks_RequestOptions]
-  var `GET /repos/:owner/:repo/git/blobs/:file_sha`: js.Tuple2[GitGetBlob_Options, GitGetBlob_RequestOptions]
-  var `GET /repos/:owner/:repo/git/commits/:commit_sha`: js.Tuple2[GitGetCommit_Options, GitGetCommit_RequestOptions]
-  var `GET /repos/:owner/:repo/git/refs/:namespace`: js.Tuple2[GitListRefs_Options, GitListRefs_RequestOptions]
-  var `GET /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitGetRef_Options, GitGetRef_RequestOptions]
-  var `GET /repos/:owner/:repo/git/tags/:tag_sha`: js.Tuple2[GitGetTag_Options, GitGetTag_RequestOptions]
-  var `GET /repos/:owner/:repo/git/trees/:tree_sha`: js.Tuple2[GitGetTree_Options, GitGetTree_RequestOptions]
-  var `GET /repos/:owner/:repo/hooks`: js.Tuple2[ReposListHooks_Options, ReposListHooks_RequestOptions]
-  var `GET /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposGetHook_Options, ReposGetHook_RequestOptions]
-  var `GET /repos/:owner/:repo/import`: js.Tuple2[MigrationsGetImportProgress_Options, MigrationsGetImportProgress_RequestOptions]
-  var `GET /repos/:owner/:repo/import/authors`: js.Tuple2[MigrationsGetCommitAuthors_Options, MigrationsGetCommitAuthors_RequestOptions]
-  var `GET /repos/:owner/:repo/import/large_files`: js.Tuple2[MigrationsGetLargeFiles_Options, MigrationsGetLargeFiles_RequestOptions]
+  var `GET /repos/:owner/:repo/compare/:base...:head`: js.Tuple2[ReposCompareCommitsEndpoint, ReposCompareCommitsRequestOptions]
+  var `GET /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposGetContentsEndpoint, ReposGetContentsRequestOptions]
+  var `GET /repos/:owner/:repo/contributors`: js.Tuple2[ReposListContributorsEndpoint, ReposListContributorsRequestOptions]
+  var `GET /repos/:owner/:repo/deployments`: js.Tuple2[ReposListDeploymentsEndpoint, ReposListDeploymentsRequestOptions]
+  var `GET /repos/:owner/:repo/deployments/:deployment_id`: js.Tuple2[ReposGetDeploymentEndpoint, ReposGetDeploymentRequestOptions]
+  var `GET /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposListDeploymentStatusesEndpoint, ReposListDeploymentStatusesRequestOptions]
+  var `GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id`: js.Tuple2[ReposGetDeploymentStatusEndpoint, ReposGetDeploymentStatusRequestOptions]
+  var `GET /repos/:owner/:repo/downloads`: js.Tuple2[ReposListDownloadsEndpoint, ReposListDownloadsRequestOptions]
+  var `GET /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposGetDownloadEndpoint, ReposGetDownloadRequestOptions]
+  var `GET /repos/:owner/:repo/events`: js.Tuple2[ActivityListRepoEventsEndpoint, ActivityListRepoEventsRequestOptions]
+  var `GET /repos/:owner/:repo/forks`: js.Tuple2[ReposListForksEndpoint, ReposListForksRequestOptions]
+  var `GET /repos/:owner/:repo/git/blobs/:file_sha`: js.Tuple2[GitGetBlobEndpoint, GitGetBlobRequestOptions]
+  var `GET /repos/:owner/:repo/git/commits/:commit_sha`: js.Tuple2[GitGetCommitEndpoint, GitGetCommitRequestOptions]
+  var `GET /repos/:owner/:repo/git/refs/:namespace`: js.Tuple2[GitListRefsEndpoint, GitListRefsRequestOptions]
+  var `GET /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitGetRefEndpoint, GitGetRefRequestOptions]
+  var `GET /repos/:owner/:repo/git/tags/:tag_sha`: js.Tuple2[GitGetTagEndpoint, GitGetTagRequestOptions]
+  var `GET /repos/:owner/:repo/git/trees/:tree_sha`: js.Tuple2[GitGetTreeEndpoint, GitGetTreeRequestOptions]
+  var `GET /repos/:owner/:repo/hooks`: js.Tuple2[ReposListHooksEndpoint, ReposListHooksRequestOptions]
+  var `GET /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposGetHookEndpoint, ReposGetHookRequestOptions]
+  var `GET /repos/:owner/:repo/import`: js.Tuple2[MigrationsGetImportProgressEndpoint, MigrationsGetImportProgressRequestOptions]
+  var `GET /repos/:owner/:repo/import/authors`: js.Tuple2[MigrationsGetCommitAuthorsEndpoint, MigrationsGetCommitAuthorsRequestOptions]
+  var `GET /repos/:owner/:repo/import/large_files`: js.Tuple2[MigrationsGetLargeFilesEndpoint, MigrationsGetLargeFilesRequestOptions]
   var `GET /repos/:owner/:repo/installation`: js.Tuple2[
-    AppsGetRepoInstallation_Options | AppsFindRepoInstallation_Options, 
-    AppsGetRepoInstallation_RequestOptions | AppsFindRepoInstallation_RequestOptions
+    AppsGetRepoInstallationEndpoint | AppsFindRepoInstallationEndpoint, 
+    AppsGetRepoInstallationRequestOptions | AppsFindRepoInstallationRequestOptions
   ]
   var `GET /repos/:owner/:repo/interaction-limits`: js.Tuple2[
-    InteractionsGetRestrictionsForRepo_Options, 
-    InteractionsGetRestrictionsForRepo_RequestOptions
+    InteractionsGetRestrictionsForRepoEndpoint, 
+    InteractionsGetRestrictionsForRepoRequestOptions
   ]
-  var `GET /repos/:owner/:repo/invitations`: js.Tuple2[ReposListInvitations_Options, ReposListInvitations_RequestOptions]
-  var `GET /repos/:owner/:repo/issues`: js.Tuple2[IssuesListForRepo_Options, IssuesListForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesGet_Options, IssuesGet_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/:issue_number/comments`: js.Tuple2[IssuesListComments_Options, IssuesListComments_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/:issue_number/events`: js.Tuple2[IssuesListEvents_Options, IssuesListEvents_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesListLabelsOnIssue_Options, IssuesListLabelsOnIssue_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/:issue_number/reactions`: js.Tuple2[ReactionsListForIssue_Options, ReactionsListForIssue_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/:issue_number/timeline`: js.Tuple2[IssuesListEventsForTimeline_Options, IssuesListEventsForTimeline_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/comments`: js.Tuple2[IssuesListCommentsForRepo_Options, IssuesListCommentsForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesGetComment_Options, IssuesGetComment_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForIssueComment_Options, ReactionsListForIssueComment_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/events`: js.Tuple2[IssuesListEventsForRepo_Options, IssuesListEventsForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/issues/events/:event_id`: js.Tuple2[IssuesGetEvent_Options, IssuesGetEvent_RequestOptions]
-  var `GET /repos/:owner/:repo/keys`: js.Tuple2[ReposListDeployKeys_Options, ReposListDeployKeys_RequestOptions]
-  var `GET /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposGetDeployKey_Options, ReposGetDeployKey_RequestOptions]
-  var `GET /repos/:owner/:repo/labels`: js.Tuple2[IssuesListLabelsForRepo_Options, IssuesListLabelsForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesGetLabel_Options, IssuesGetLabel_RequestOptions]
-  var `GET /repos/:owner/:repo/languages`: js.Tuple2[ReposListLanguages_Options, ReposListLanguages_RequestOptions]
-  var `GET /repos/:owner/:repo/license`: js.Tuple2[LicensesGetForRepo_Options, LicensesGetForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/milestones`: js.Tuple2[IssuesListMilestonesForRepo_Options, IssuesListMilestonesForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesGetMilestone_Options, IssuesGetMilestone_RequestOptions]
-  var `GET /repos/:owner/:repo/milestones/:milestone_number/labels`: js.Tuple2[IssuesListLabelsForMilestone_Options, IssuesListLabelsForMilestone_RequestOptions]
+  var `GET /repos/:owner/:repo/invitations`: js.Tuple2[ReposListInvitationsEndpoint, ReposListInvitationsRequestOptions]
+  var `GET /repos/:owner/:repo/issues`: js.Tuple2[IssuesListForRepoEndpoint, IssuesListForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesGetEndpoint, IssuesGetRequestOptions]
+  var `GET /repos/:owner/:repo/issues/:issue_number/comments`: js.Tuple2[IssuesListCommentsEndpoint, IssuesListCommentsRequestOptions]
+  var `GET /repos/:owner/:repo/issues/:issue_number/events`: js.Tuple2[IssuesListEventsEndpoint, IssuesListEventsRequestOptions]
+  var `GET /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesListLabelsOnIssueEndpoint, IssuesListLabelsOnIssueRequestOptions]
+  var `GET /repos/:owner/:repo/issues/:issue_number/reactions`: js.Tuple2[ReactionsListForIssueEndpoint, ReactionsListForIssueRequestOptions]
+  var `GET /repos/:owner/:repo/issues/:issue_number/timeline`: js.Tuple2[IssuesListEventsForTimelineEndpoint, IssuesListEventsForTimelineRequestOptions]
+  var `GET /repos/:owner/:repo/issues/comments`: js.Tuple2[IssuesListCommentsForRepoEndpoint, IssuesListCommentsForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesGetCommentEndpoint, IssuesGetCommentRequestOptions]
+  var `GET /repos/:owner/:repo/issues/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForIssueCommentEndpoint, ReactionsListForIssueCommentRequestOptions]
+  var `GET /repos/:owner/:repo/issues/events`: js.Tuple2[IssuesListEventsForRepoEndpoint, IssuesListEventsForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/issues/events/:event_id`: js.Tuple2[IssuesGetEventEndpoint, IssuesGetEventRequestOptions]
+  var `GET /repos/:owner/:repo/keys`: js.Tuple2[ReposListDeployKeysEndpoint, ReposListDeployKeysRequestOptions]
+  var `GET /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposGetDeployKeyEndpoint, ReposGetDeployKeyRequestOptions]
+  var `GET /repos/:owner/:repo/labels`: js.Tuple2[IssuesListLabelsForRepoEndpoint, IssuesListLabelsForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesGetLabelEndpoint, IssuesGetLabelRequestOptions]
+  var `GET /repos/:owner/:repo/languages`: js.Tuple2[ReposListLanguagesEndpoint, ReposListLanguagesRequestOptions]
+  var `GET /repos/:owner/:repo/license`: js.Tuple2[LicensesGetForRepoEndpoint, LicensesGetForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/milestones`: js.Tuple2[IssuesListMilestonesForRepoEndpoint, IssuesListMilestonesForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesGetMilestoneEndpoint, IssuesGetMilestoneRequestOptions]
+  var `GET /repos/:owner/:repo/milestones/:milestone_number/labels`: js.Tuple2[IssuesListLabelsForMilestoneEndpoint, IssuesListLabelsForMilestoneRequestOptions]
   var `GET /repos/:owner/:repo/notifications`: js.Tuple2[
-    ActivityListNotificationsForRepo_Options, 
-    ActivityListNotificationsForRepo_RequestOptions
+    ActivityListNotificationsForRepoEndpoint, 
+    ActivityListNotificationsForRepoRequestOptions
   ]
-  var `GET /repos/:owner/:repo/pages`: js.Tuple2[ReposGetPages_Options, ReposGetPages_RequestOptions]
-  var `GET /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposListPagesBuilds_Options, ReposListPagesBuilds_RequestOptions]
-  var `GET /repos/:owner/:repo/pages/builds/:build_id`: js.Tuple2[ReposGetPagesBuild_Options, ReposGetPagesBuild_RequestOptions]
-  var `GET /repos/:owner/:repo/pages/builds/latest`: js.Tuple2[ReposGetLatestPagesBuild_Options, ReposGetLatestPagesBuild_RequestOptions]
-  var `GET /repos/:owner/:repo/projects`: js.Tuple2[ProjectsListForRepo_Options, ProjectsListForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls`: js.Tuple2[PullsList_Options, PullsList_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsGet_Options, PullsGet_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[PullsListComments_Options, PullsListComments_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/commits`: js.Tuple2[PullsListCommits_Options, PullsListCommits_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/files`: js.Tuple2[PullsListFiles_Options, PullsListFiles_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsCheckIfMerged_Options, PullsCheckIfMerged_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsListReviewRequests_Options, PullsListReviewRequests_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsListReviews_Options, PullsListReviews_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsGetReview_Options, PullsGetReview_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments`: js.Tuple2[PullsGetCommentsForReview_Options, PullsGetCommentsForReview_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/comments`: js.Tuple2[PullsListCommentsForRepo_Options, PullsListCommentsForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsGetComment_Options, PullsGetComment_RequestOptions]
+  var `GET /repos/:owner/:repo/pages`: js.Tuple2[ReposGetPagesEndpoint, ReposGetPagesRequestOptions]
+  var `GET /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposListPagesBuildsEndpoint, ReposListPagesBuildsRequestOptions]
+  var `GET /repos/:owner/:repo/pages/builds/:build_id`: js.Tuple2[ReposGetPagesBuildEndpoint, ReposGetPagesBuildRequestOptions]
+  var `GET /repos/:owner/:repo/pages/builds/latest`: js.Tuple2[ReposGetLatestPagesBuildEndpoint, ReposGetLatestPagesBuildRequestOptions]
+  var `GET /repos/:owner/:repo/projects`: js.Tuple2[ProjectsListForRepoEndpoint, ProjectsListForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/pulls`: js.Tuple2[PullsListEndpoint, PullsListRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsGetEndpoint, PullsGetRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[PullsListCommentsEndpoint, PullsListCommentsRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/commits`: js.Tuple2[PullsListCommitsEndpoint, PullsListCommitsRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/files`: js.Tuple2[PullsListFilesEndpoint, PullsListFilesRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsCheckIfMergedEndpoint, PullsCheckIfMergedRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsListReviewRequestsEndpoint, PullsListReviewRequestsRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsListReviewsEndpoint, PullsListReviewsRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsGetReviewEndpoint, PullsGetReviewRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments`: js.Tuple2[PullsGetCommentsForReviewEndpoint, PullsGetCommentsForReviewRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/comments`: js.Tuple2[PullsListCommentsForRepoEndpoint, PullsListCommentsForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsGetCommentEndpoint, PullsGetCommentRequestOptions]
   var `GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions`: js.Tuple2[
-    ReactionsListForPullRequestReviewComment_Options, 
-    ReactionsListForPullRequestReviewComment_RequestOptions
+    ReactionsListForPullRequestReviewCommentEndpoint, 
+    ReactionsListForPullRequestReviewCommentRequestOptions
   ]
-  var `GET /repos/:owner/:repo/readme`: js.Tuple2[ReposGetReadme_Options, ReposGetReadme_RequestOptions]
-  var `GET /repos/:owner/:repo/releases`: js.Tuple2[ReposListReleases_Options, ReposListReleases_RequestOptions]
-  var `GET /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposGetRelease_Options, ReposGetRelease_RequestOptions]
-  var `GET /repos/:owner/:repo/releases/:release_id/assets`: js.Tuple2[ReposListAssetsForRelease_Options, ReposListAssetsForRelease_RequestOptions]
-  var `GET /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposGetReleaseAsset_Options, ReposGetReleaseAsset_RequestOptions]
-  var `GET /repos/:owner/:repo/releases/latest`: js.Tuple2[ReposGetLatestRelease_Options, ReposGetLatestRelease_RequestOptions]
-  var `GET /repos/:owner/:repo/releases/tags/:tag`: js.Tuple2[ReposGetReleaseByTag_Options, ReposGetReleaseByTag_RequestOptions]
-  var `GET /repos/:owner/:repo/stargazers`: js.Tuple2[
-    ActivityListStargazersForRepo_Options, 
-    ActivityListStargazersForRepo_RequestOptions
-  ]
-  var `GET /repos/:owner/:repo/stats/code_frequency`: js.Tuple2[ReposGetCodeFrequencyStats_Options, ReposGetCodeFrequencyStats_RequestOptions]
-  var `GET /repos/:owner/:repo/stats/commit_activity`: js.Tuple2[ReposGetCommitActivityStats_Options, ReposGetCommitActivityStats_RequestOptions]
-  var `GET /repos/:owner/:repo/stats/contributors`: js.Tuple2[ReposGetContributorsStats_Options, ReposGetContributorsStats_RequestOptions]
-  var `GET /repos/:owner/:repo/stats/participation`: js.Tuple2[ReposGetParticipationStats_Options, ReposGetParticipationStats_RequestOptions]
-  var `GET /repos/:owner/:repo/stats/punch_card`: js.Tuple2[ReposGetPunchCardStats_Options, ReposGetPunchCardStats_RequestOptions]
-  var `GET /repos/:owner/:repo/subscribers`: js.Tuple2[ActivityListWatchersForRepo_Options, ActivityListWatchersForRepo_RequestOptions]
-  var `GET /repos/:owner/:repo/subscription`: js.Tuple2[ActivityGetRepoSubscription_Options, ActivityGetRepoSubscription_RequestOptions]
-  var `GET /repos/:owner/:repo/tags`: js.Tuple2[ReposListTags_Options, ReposListTags_RequestOptions]
-  var `GET /repos/:owner/:repo/teams`: js.Tuple2[ReposListTeams_Options, ReposListTeams_RequestOptions]
-  var `GET /repos/:owner/:repo/topics`: js.Tuple2[ReposListTopics_Options, ReposListTopics_RequestOptions]
-  var `GET /repos/:owner/:repo/traffic/clones`: js.Tuple2[ReposGetClones_Options, ReposGetClones_RequestOptions]
-  var `GET /repos/:owner/:repo/traffic/popular/paths`: js.Tuple2[ReposGetTopPaths_Options, ReposGetTopPaths_RequestOptions]
-  var `GET /repos/:owner/:repo/traffic/popular/referrers`: js.Tuple2[ReposGetTopReferrers_Options, ReposGetTopReferrers_RequestOptions]
-  var `GET /repos/:owner/:repo/traffic/views`: js.Tuple2[ReposGetViews_Options, ReposGetViews_RequestOptions]
-  var `GET /repositories`: js.Tuple2[ReposListPublic_Options, ReposListPublic_RequestOptions]
-  var `GET /scim/v2/organizations/:org/Users`: js.Tuple2[
-    ScimListProvisionedIdentities_Options, 
-    ScimListProvisionedIdentities_RequestOptions
-  ]
+  var `GET /repos/:owner/:repo/readme`: js.Tuple2[ReposGetReadmeEndpoint, ReposGetReadmeRequestOptions]
+  var `GET /repos/:owner/:repo/releases`: js.Tuple2[ReposListReleasesEndpoint, ReposListReleasesRequestOptions]
+  var `GET /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposGetReleaseEndpoint, ReposGetReleaseRequestOptions]
+  var `GET /repos/:owner/:repo/releases/:release_id/assets`: js.Tuple2[ReposListAssetsForReleaseEndpoint, ReposListAssetsForReleaseRequestOptions]
+  var `GET /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposGetReleaseAssetEndpoint, ReposGetReleaseAssetRequestOptions]
+  var `GET /repos/:owner/:repo/releases/latest`: js.Tuple2[ReposGetLatestReleaseEndpoint, ReposGetLatestReleaseRequestOptions]
+  var `GET /repos/:owner/:repo/releases/tags/:tag`: js.Tuple2[ReposGetReleaseByTagEndpoint, ReposGetReleaseByTagRequestOptions]
+  var `GET /repos/:owner/:repo/stargazers`: js.Tuple2[ActivityListStargazersForRepoEndpoint, ActivityListStargazersForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/stats/code_frequency`: js.Tuple2[ReposGetCodeFrequencyStatsEndpoint, ReposGetCodeFrequencyStatsRequestOptions]
+  var `GET /repos/:owner/:repo/stats/commit_activity`: js.Tuple2[ReposGetCommitActivityStatsEndpoint, ReposGetCommitActivityStatsRequestOptions]
+  var `GET /repos/:owner/:repo/stats/contributors`: js.Tuple2[ReposGetContributorsStatsEndpoint, ReposGetContributorsStatsRequestOptions]
+  var `GET /repos/:owner/:repo/stats/participation`: js.Tuple2[ReposGetParticipationStatsEndpoint, ReposGetParticipationStatsRequestOptions]
+  var `GET /repos/:owner/:repo/stats/punch_card`: js.Tuple2[ReposGetPunchCardStatsEndpoint, ReposGetPunchCardStatsRequestOptions]
+  var `GET /repos/:owner/:repo/subscribers`: js.Tuple2[ActivityListWatchersForRepoEndpoint, ActivityListWatchersForRepoRequestOptions]
+  var `GET /repos/:owner/:repo/subscription`: js.Tuple2[ActivityGetRepoSubscriptionEndpoint, ActivityGetRepoSubscriptionRequestOptions]
+  var `GET /repos/:owner/:repo/tags`: js.Tuple2[ReposListTagsEndpoint, ReposListTagsRequestOptions]
+  var `GET /repos/:owner/:repo/teams`: js.Tuple2[ReposListTeamsEndpoint, ReposListTeamsRequestOptions]
+  var `GET /repos/:owner/:repo/topics`: js.Tuple2[ReposListTopicsEndpoint, ReposListTopicsRequestOptions]
+  var `GET /repos/:owner/:repo/traffic/clones`: js.Tuple2[ReposGetClonesEndpoint, ReposGetClonesRequestOptions]
+  var `GET /repos/:owner/:repo/traffic/popular/paths`: js.Tuple2[ReposGetTopPathsEndpoint, ReposGetTopPathsRequestOptions]
+  var `GET /repos/:owner/:repo/traffic/popular/referrers`: js.Tuple2[ReposGetTopReferrersEndpoint, ReposGetTopReferrersRequestOptions]
+  var `GET /repos/:owner/:repo/traffic/views`: js.Tuple2[ReposGetViewsEndpoint, ReposGetViewsRequestOptions]
+  var `GET /repositories`: js.Tuple2[ReposListPublicEndpoint, ReposListPublicRequestOptions]
+  var `GET /scim/v2/organizations/:org/Users`: js.Tuple2[ScimListProvisionedIdentitiesEndpoint, ScimListProvisionedIdentitiesRequestOptions]
   var `GET /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[
-    ScimGetProvisioningDetailsForUser_Options, 
-    ScimGetProvisioningDetailsForUser_RequestOptions
+    ScimGetProvisioningDetailsForUserEndpoint, 
+    ScimGetProvisioningDetailsForUserRequestOptions
   ]
-  var `GET /search/code`: js.Tuple2[SearchCode_Options, SearchCode_RequestOptions]
-  var `GET /search/commits`: js.Tuple2[SearchCommits_Options, SearchCommits_RequestOptions]
+  var `GET /search/code`: js.Tuple2[SearchCodeEndpoint, SearchCodeRequestOptions]
+  var `GET /search/commits`: js.Tuple2[SearchCommitsEndpoint, SearchCommitsRequestOptions]
   var `GET /search/issues`: js.Tuple2[
-    SearchIssuesAndPullRequests_Options | SearchIssues_Options, 
-    SearchIssuesAndPullRequests_RequestOptions | SearchIssues_RequestOptions
+    SearchIssuesAndPullRequestsEndpoint | SearchIssuesEndpoint, 
+    SearchIssuesAndPullRequestsRequestOptions | SearchIssuesRequestOptions
   ]
-  var `GET /search/labels`: js.Tuple2[SearchLabels_Options, SearchLabels_RequestOptions]
-  var `GET /search/repositories`: js.Tuple2[SearchRepos_Options, SearchRepos_RequestOptions]
-  var `GET /search/topics`: js.Tuple2[SearchTopics_Options, SearchTopics_RequestOptions]
-  var `GET /search/users`: js.Tuple2[SearchUsers_Options, SearchUsers_RequestOptions]
-  var `GET /teams/:team_id`: js.Tuple2[TeamsGet_Options, TeamsGet_RequestOptions]
-  var `GET /teams/:team_id/discussions`: js.Tuple2[TeamsListDiscussions_Options, TeamsListDiscussions_RequestOptions]
-  var `GET /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsGetDiscussion_Options, TeamsGetDiscussion_RequestOptions]
-  var `GET /teams/:team_id/discussions/:discussion_number/comments`: js.Tuple2[TeamsListDiscussionComments_Options, TeamsListDiscussionComments_RequestOptions]
-  var `GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsGetDiscussionComment_Options, TeamsGetDiscussionComment_RequestOptions]
+  var `GET /search/labels`: js.Tuple2[SearchLabelsEndpoint, SearchLabelsRequestOptions]
+  var `GET /search/repositories`: js.Tuple2[SearchReposEndpoint, SearchReposRequestOptions]
+  var `GET /search/topics`: js.Tuple2[SearchTopicsEndpoint, SearchTopicsRequestOptions]
+  var `GET /search/users`: js.Tuple2[SearchUsersEndpoint, SearchUsersRequestOptions]
+  var `GET /teams/:team_id`: js.Tuple2[TeamsGetEndpoint, TeamsGetRequestOptions]
+  var `GET /teams/:team_id/discussions`: js.Tuple2[TeamsListDiscussionsEndpoint, TeamsListDiscussionsRequestOptions]
+  var `GET /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsGetDiscussionEndpoint, TeamsGetDiscussionRequestOptions]
+  var `GET /teams/:team_id/discussions/:discussion_number/comments`: js.Tuple2[TeamsListDiscussionCommentsEndpoint, TeamsListDiscussionCommentsRequestOptions]
+  var `GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsGetDiscussionCommentEndpoint, TeamsGetDiscussionCommentRequestOptions]
   var `GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions`: js.Tuple2[
-    ReactionsListForTeamDiscussionComment_Options, 
-    ReactionsListForTeamDiscussionComment_RequestOptions
+    ReactionsListForTeamDiscussionCommentEndpoint, 
+    ReactionsListForTeamDiscussionCommentRequestOptions
   ]
   var `GET /teams/:team_id/discussions/:discussion_number/reactions`: js.Tuple2[
-    ReactionsListForTeamDiscussion_Options, 
-    ReactionsListForTeamDiscussion_RequestOptions
+    ReactionsListForTeamDiscussionEndpoint, 
+    ReactionsListForTeamDiscussionRequestOptions
   ]
-  var `GET /teams/:team_id/invitations`: js.Tuple2[TeamsListPendingInvitations_Options, TeamsListPendingInvitations_RequestOptions]
-  var `GET /teams/:team_id/members`: js.Tuple2[TeamsListMembers_Options, TeamsListMembers_RequestOptions]
-  var `GET /teams/:team_id/members/:username`: js.Tuple2[TeamsGetMember_Options, TeamsGetMember_RequestOptions]
-  var `GET /teams/:team_id/memberships/:username`: js.Tuple2[TeamsGetMembership_Options, TeamsGetMembership_RequestOptions]
-  var `GET /teams/:team_id/projects`: js.Tuple2[TeamsListProjects_Options, TeamsListProjects_RequestOptions]
-  var `GET /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsReviewProject_Options, TeamsReviewProject_RequestOptions]
-  var `GET /teams/:team_id/repos`: js.Tuple2[TeamsListRepos_Options, TeamsListRepos_RequestOptions]
-  var `GET /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsCheckManagesRepo_Options, TeamsCheckManagesRepo_RequestOptions]
-  var `GET /teams/:team_id/teams`: js.Tuple2[TeamsListChild_Options, TeamsListChild_RequestOptions]
-  var `GET /user`: js.Tuple2[UsersGetAuthenticated_Options, UsersGetAuthenticated_RequestOptions]
-  var `GET /user/blocks`: js.Tuple2[UsersListBlocked_Options, UsersListBlocked_RequestOptions]
-  var `GET /user/blocks/:username`: js.Tuple2[UsersCheckBlocked_Options, UsersCheckBlocked_RequestOptions]
-  var `GET /user/emails`: js.Tuple2[UsersListEmails_Options, UsersListEmails_RequestOptions]
+  var `GET /teams/:team_id/invitations`: js.Tuple2[TeamsListPendingInvitationsEndpoint, TeamsListPendingInvitationsRequestOptions]
+  var `GET /teams/:team_id/members`: js.Tuple2[TeamsListMembersEndpoint, TeamsListMembersRequestOptions]
+  var `GET /teams/:team_id/members/:username`: js.Tuple2[TeamsGetMemberEndpoint, TeamsGetMemberRequestOptions]
+  var `GET /teams/:team_id/memberships/:username`: js.Tuple2[TeamsGetMembershipEndpoint, TeamsGetMembershipRequestOptions]
+  var `GET /teams/:team_id/projects`: js.Tuple2[TeamsListProjectsEndpoint, TeamsListProjectsRequestOptions]
+  var `GET /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsReviewProjectEndpoint, TeamsReviewProjectRequestOptions]
+  var `GET /teams/:team_id/repos`: js.Tuple2[TeamsListReposEndpoint, TeamsListReposRequestOptions]
+  var `GET /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsCheckManagesRepoEndpoint, TeamsCheckManagesRepoRequestOptions]
+  var `GET /teams/:team_id/teams`: js.Tuple2[TeamsListChildEndpoint, TeamsListChildRequestOptions]
+  var `GET /user`: js.Tuple2[UsersGetAuthenticatedEndpoint, UsersGetAuthenticatedRequestOptions]
+  var `GET /user/blocks`: js.Tuple2[UsersListBlockedEndpoint, UsersListBlockedRequestOptions]
+  var `GET /user/blocks/:username`: js.Tuple2[UsersCheckBlockedEndpoint, UsersCheckBlockedRequestOptions]
+  var `GET /user/emails`: js.Tuple2[UsersListEmailsEndpoint, UsersListEmailsRequestOptions]
   var `GET /user/followers`: js.Tuple2[
-    UsersListFollowersForAuthenticatedUser_Options, 
-    UsersListFollowersForAuthenticatedUser_RequestOptions
+    UsersListFollowersForAuthenticatedUserEndpoint, 
+    UsersListFollowersForAuthenticatedUserRequestOptions
   ]
   var `GET /user/following`: js.Tuple2[
-    UsersListFollowingForAuthenticatedUser_Options, 
-    UsersListFollowingForAuthenticatedUser_RequestOptions
+    UsersListFollowingForAuthenticatedUserEndpoint, 
+    UsersListFollowingForAuthenticatedUserRequestOptions
   ]
-  var `GET /user/following/:username`: js.Tuple2[UsersCheckFollowing_Options, UsersCheckFollowing_RequestOptions]
-  var `GET /user/gpg_keys`: js.Tuple2[UsersListGpgKeys_Options, UsersListGpgKeys_RequestOptions]
-  var `GET /user/gpg_keys/:gpg_key_id`: js.Tuple2[UsersGetGpgKey_Options, UsersGetGpgKey_RequestOptions]
+  var `GET /user/following/:username`: js.Tuple2[UsersCheckFollowingEndpoint, UsersCheckFollowingRequestOptions]
+  var `GET /user/gpg_keys`: js.Tuple2[UsersListGpgKeysEndpoint, UsersListGpgKeysRequestOptions]
+  var `GET /user/gpg_keys/:gpg_key_id`: js.Tuple2[UsersGetGpgKeyEndpoint, UsersGetGpgKeyRequestOptions]
   var `GET /user/installations`: js.Tuple2[
-    AppsListInstallationsForAuthenticatedUser_Options, 
-    AppsListInstallationsForAuthenticatedUser_RequestOptions
+    AppsListInstallationsForAuthenticatedUserEndpoint, 
+    AppsListInstallationsForAuthenticatedUserRequestOptions
   ]
   var `GET /user/installations/:installation_id/repositories`: js.Tuple2[
-    AppsListInstallationReposForAuthenticatedUser_Options, 
-    AppsListInstallationReposForAuthenticatedUser_RequestOptions
+    AppsListInstallationReposForAuthenticatedUserEndpoint, 
+    AppsListInstallationReposForAuthenticatedUserRequestOptions
   ]
   var `GET /user/issues`: js.Tuple2[
-    IssuesListForAuthenticatedUser_Options, 
-    IssuesListForAuthenticatedUser_RequestOptions
+    IssuesListForAuthenticatedUserEndpoint, 
+    IssuesListForAuthenticatedUserRequestOptions
   ]
-  var `GET /user/keys`: js.Tuple2[UsersListPublicKeys_Options, UsersListPublicKeys_RequestOptions]
-  var `GET /user/keys/:key_id`: js.Tuple2[UsersGetPublicKey_Options, UsersGetPublicKey_RequestOptions]
+  var `GET /user/keys`: js.Tuple2[UsersListPublicKeysEndpoint, UsersListPublicKeysRequestOptions]
+  var `GET /user/keys/:key_id`: js.Tuple2[UsersGetPublicKeyEndpoint, UsersGetPublicKeyRequestOptions]
   var `GET /user/marketplace_purchases`: js.Tuple2[
-    AppsListMarketplacePurchasesForAuthenticatedUser_Options, 
-    AppsListMarketplacePurchasesForAuthenticatedUser_RequestOptions
+    AppsListMarketplacePurchasesForAuthenticatedUserEndpoint, 
+    AppsListMarketplacePurchasesForAuthenticatedUserRequestOptions
   ]
   var `GET /user/marketplace_purchases/stubbed`: js.Tuple2[
-    AppsListMarketplacePurchasesForAuthenticatedUserStubbed_Options, 
-    AppsListMarketplacePurchasesForAuthenticatedUserStubbed_RequestOptions
+    AppsListMarketplacePurchasesForAuthenticatedUserStubbedEndpoint, 
+    AppsListMarketplacePurchasesForAuthenticatedUserStubbedRequestOptions
   ]
-  var `GET /user/memberships/orgs`: js.Tuple2[OrgsListMemberships_Options, OrgsListMemberships_RequestOptions]
+  var `GET /user/memberships/orgs`: js.Tuple2[OrgsListMembershipsEndpoint, OrgsListMembershipsRequestOptions]
   var `GET /user/memberships/orgs/:org`: js.Tuple2[
-    OrgsGetMembershipForAuthenticatedUser_Options, 
-    OrgsGetMembershipForAuthenticatedUser_RequestOptions
+    OrgsGetMembershipForAuthenticatedUserEndpoint, 
+    OrgsGetMembershipForAuthenticatedUserRequestOptions
   ]
   var `GET /user/migrations`: js.Tuple2[
-    MigrationsListForAuthenticatedUser_Options, 
-    MigrationsListForAuthenticatedUser_RequestOptions
+    MigrationsListForAuthenticatedUserEndpoint, 
+    MigrationsListForAuthenticatedUserRequestOptions
   ]
   var `GET /user/migrations/:migration_id`: js.Tuple2[
-    MigrationsGetStatusForAuthenticatedUser_Options, 
-    MigrationsGetStatusForAuthenticatedUser_RequestOptions
+    MigrationsGetStatusForAuthenticatedUserEndpoint, 
+    MigrationsGetStatusForAuthenticatedUserRequestOptions
   ]
   var `GET /user/migrations/:migration_id/archive`: js.Tuple2[
-    MigrationsGetArchiveForAuthenticatedUser_Options, 
-    MigrationsGetArchiveForAuthenticatedUser_RequestOptions
+    MigrationsGetArchiveForAuthenticatedUserEndpoint, 
+    MigrationsGetArchiveForAuthenticatedUserRequestOptions
   ]
-  var `GET /user/orgs`: js.Tuple2[OrgsListForAuthenticatedUser_Options, OrgsListForAuthenticatedUser_RequestOptions]
-  var `GET /user/public_emails`: js.Tuple2[UsersListPublicEmails_Options, UsersListPublicEmails_RequestOptions]
-  var `GET /user/repos`: js.Tuple2[ReposList_Options, ReposList_RequestOptions]
+  var `GET /user/orgs`: js.Tuple2[OrgsListForAuthenticatedUserEndpoint, OrgsListForAuthenticatedUserRequestOptions]
+  var `GET /user/public_emails`: js.Tuple2[UsersListPublicEmailsEndpoint, UsersListPublicEmailsRequestOptions]
+  var `GET /user/repos`: js.Tuple2[ReposListEndpoint, ReposListRequestOptions]
   var `GET /user/repository_invitations`: js.Tuple2[
-    ReposListInvitationsForAuthenticatedUser_Options, 
-    ReposListInvitationsForAuthenticatedUser_RequestOptions
+    ReposListInvitationsForAuthenticatedUserEndpoint, 
+    ReposListInvitationsForAuthenticatedUserRequestOptions
   ]
   var `GET /user/starred`: js.Tuple2[
-    ActivityListReposStarredByAuthenticatedUser_Options, 
-    ActivityListReposStarredByAuthenticatedUser_RequestOptions
+    ActivityListReposStarredByAuthenticatedUserEndpoint, 
+    ActivityListReposStarredByAuthenticatedUserRequestOptions
   ]
-  var `GET /user/starred/:owner/:repo`: js.Tuple2[ActivityCheckStarringRepo_Options, ActivityCheckStarringRepo_RequestOptions]
+  var `GET /user/starred/:owner/:repo`: js.Tuple2[ActivityCheckStarringRepoEndpoint, ActivityCheckStarringRepoRequestOptions]
   var `GET /user/subscriptions`: js.Tuple2[
-    ActivityListWatchedReposForAuthenticatedUser_Options, 
-    ActivityListWatchedReposForAuthenticatedUser_RequestOptions
+    ActivityListWatchedReposForAuthenticatedUserEndpoint, 
+    ActivityListWatchedReposForAuthenticatedUserRequestOptions
   ]
   var `GET /user/subscriptions/:owner/:repo`: js.Tuple2[
-    ActivityCheckWatchingRepoLegacy_Options, 
-    ActivityCheckWatchingRepoLegacy_RequestOptions
+    ActivityCheckWatchingRepoLegacyEndpoint, 
+    ActivityCheckWatchingRepoLegacyRequestOptions
   ]
-  var `GET /user/teams`: js.Tuple2[
-    TeamsListForAuthenticatedUser_Options, 
-    TeamsListForAuthenticatedUser_RequestOptions
-  ]
-  var `GET /users`: js.Tuple2[UsersList_Options, UsersList_RequestOptions]
-  var `GET /users/:username`: js.Tuple2[UsersGetByUsername_Options, UsersGetByUsername_RequestOptions]
-  var `GET /users/:username/events`: js.Tuple2[ActivityListEventsForUser_Options, ActivityListEventsForUser_RequestOptions]
-  var `GET /users/:username/events/orgs/:org`: js.Tuple2[ActivityListEventsForOrg_Options, ActivityListEventsForOrg_RequestOptions]
+  var `GET /user/teams`: js.Tuple2[TeamsListForAuthenticatedUserEndpoint, TeamsListForAuthenticatedUserRequestOptions]
+  var `GET /users`: js.Tuple2[UsersListEndpoint, UsersListRequestOptions]
+  var `GET /users/:username`: js.Tuple2[UsersGetByUsernameEndpoint, UsersGetByUsernameRequestOptions]
+  var `GET /users/:username/events`: js.Tuple2[ActivityListEventsForUserEndpoint, ActivityListEventsForUserRequestOptions]
+  var `GET /users/:username/events/orgs/:org`: js.Tuple2[ActivityListEventsForOrgEndpoint, ActivityListEventsForOrgRequestOptions]
   var `GET /users/:username/events/public`: js.Tuple2[
-    ActivityListPublicEventsForUser_Options, 
-    ActivityListPublicEventsForUser_RequestOptions
+    ActivityListPublicEventsForUserEndpoint, 
+    ActivityListPublicEventsForUserRequestOptions
   ]
-  var `GET /users/:username/followers`: js.Tuple2[UsersListFollowersForUser_Options, UsersListFollowersForUser_RequestOptions]
-  var `GET /users/:username/following`: js.Tuple2[UsersListFollowingForUser_Options, UsersListFollowingForUser_RequestOptions]
-  var `GET /users/:username/following/:target_user`: js.Tuple2[UsersCheckFollowingForUser_Options, UsersCheckFollowingForUser_RequestOptions]
-  var `GET /users/:username/gists`: js.Tuple2[GistsListPublicForUser_Options, GistsListPublicForUser_RequestOptions]
-  var `GET /users/:username/gpg_keys`: js.Tuple2[UsersListGpgKeysForUser_Options, UsersListGpgKeysForUser_RequestOptions]
-  var `GET /users/:username/hovercard`: js.Tuple2[UsersGetContextForUser_Options, UsersGetContextForUser_RequestOptions]
+  var `GET /users/:username/followers`: js.Tuple2[UsersListFollowersForUserEndpoint, UsersListFollowersForUserRequestOptions]
+  var `GET /users/:username/following`: js.Tuple2[UsersListFollowingForUserEndpoint, UsersListFollowingForUserRequestOptions]
+  var `GET /users/:username/following/:target_user`: js.Tuple2[UsersCheckFollowingForUserEndpoint, UsersCheckFollowingForUserRequestOptions]
+  var `GET /users/:username/gists`: js.Tuple2[GistsListPublicForUserEndpoint, GistsListPublicForUserRequestOptions]
+  var `GET /users/:username/gpg_keys`: js.Tuple2[UsersListGpgKeysForUserEndpoint, UsersListGpgKeysForUserRequestOptions]
+  var `GET /users/:username/hovercard`: js.Tuple2[UsersGetContextForUserEndpoint, UsersGetContextForUserRequestOptions]
   var `GET /users/:username/installation`: js.Tuple2[
-    AppsGetUserInstallation_Options | AppsFindUserInstallation_Options, 
-    AppsGetUserInstallation_RequestOptions | AppsFindUserInstallation_RequestOptions
+    AppsGetUserInstallationEndpoint | AppsFindUserInstallationEndpoint, 
+    AppsGetUserInstallationRequestOptions | AppsFindUserInstallationRequestOptions
   ]
-  var `GET /users/:username/keys`: js.Tuple2[UsersListPublicKeysForUser_Options, UsersListPublicKeysForUser_RequestOptions]
-  var `GET /users/:username/orgs`: js.Tuple2[OrgsListForUser_Options, OrgsListForUser_RequestOptions]
-  var `GET /users/:username/projects`: js.Tuple2[ProjectsListForUser_Options, ProjectsListForUser_RequestOptions]
+  var `GET /users/:username/keys`: js.Tuple2[UsersListPublicKeysForUserEndpoint, UsersListPublicKeysForUserRequestOptions]
+  var `GET /users/:username/orgs`: js.Tuple2[OrgsListForUserEndpoint, OrgsListForUserRequestOptions]
+  var `GET /users/:username/projects`: js.Tuple2[ProjectsListForUserEndpoint, ProjectsListForUserRequestOptions]
   var `GET /users/:username/received_events`: js.Tuple2[
-    ActivityListReceivedEventsForUser_Options, 
-    ActivityListReceivedEventsForUser_RequestOptions
+    ActivityListReceivedEventsForUserEndpoint, 
+    ActivityListReceivedEventsForUserRequestOptions
   ]
   var `GET /users/:username/received_events/public`: js.Tuple2[
-    ActivityListReceivedPublicEventsForUser_Options, 
-    ActivityListReceivedPublicEventsForUser_RequestOptions
+    ActivityListReceivedPublicEventsForUserEndpoint, 
+    ActivityListReceivedPublicEventsForUserRequestOptions
   ]
-  var `GET /users/:username/repos`: js.Tuple2[ReposListForUser_Options, ReposListForUser_RequestOptions]
+  var `GET /users/:username/repos`: js.Tuple2[ReposListForUserEndpoint, ReposListForUserRequestOptions]
   var `GET /users/:username/starred`: js.Tuple2[
-    ActivityListReposStarredByUser_Options, 
-    ActivityListReposStarredByUser_RequestOptions
+    ActivityListReposStarredByUserEndpoint, 
+    ActivityListReposStarredByUserRequestOptions
   ]
   var `GET /users/:username/subscriptions`: js.Tuple2[
-    ActivityListReposWatchedByUser_Options, 
-    ActivityListReposWatchedByUser_RequestOptions
+    ActivityListReposWatchedByUserEndpoint, 
+    ActivityListReposWatchedByUserRequestOptions
   ]
   var `PATCH /authorizations/:authorization_id`: js.Tuple2[
-    OauthAuthorizationsUpdateAuthorization_Options, 
-    OauthAuthorizationsUpdateAuthorization_RequestOptions
+    OauthAuthorizationsUpdateAuthorizationEndpoint, 
+    OauthAuthorizationsUpdateAuthorizationRequestOptions
   ]
-  var `PATCH /gists/:gist_id`: js.Tuple2[GistsUpdate_Options, GistsUpdate_RequestOptions]
-  var `PATCH /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsUpdateComment_Options, GistsUpdateComment_RequestOptions]
-  var `PATCH /notifications/threads/:thread_id`: js.Tuple2[ActivityMarkThreadAsRead_Options, ActivityMarkThreadAsRead_RequestOptions]
-  var `PATCH /orgs/:org`: js.Tuple2[OrgsUpdate_Options, OrgsUpdate_RequestOptions]
-  var `PATCH /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsUpdateHook_Options, OrgsUpdateHook_RequestOptions]
-  var `PATCH /projects/:project_id`: js.Tuple2[ProjectsUpdate_Options, ProjectsUpdate_RequestOptions]
-  var `PATCH /projects/columns/:column_id`: js.Tuple2[ProjectsUpdateColumn_Options, ProjectsUpdateColumn_RequestOptions]
-  var `PATCH /projects/columns/cards/:card_id`: js.Tuple2[ProjectsUpdateCard_Options, ProjectsUpdateCard_RequestOptions]
-  var `PATCH /repos/:owner/:repo`: js.Tuple2[ReposUpdate_Options, ReposUpdate_RequestOptions]
+  var `PATCH /gists/:gist_id`: js.Tuple2[GistsUpdateEndpoint, GistsUpdateRequestOptions]
+  var `PATCH /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsUpdateCommentEndpoint, GistsUpdateCommentRequestOptions]
+  var `PATCH /notifications/threads/:thread_id`: js.Tuple2[ActivityMarkThreadAsReadEndpoint, ActivityMarkThreadAsReadRequestOptions]
+  var `PATCH /orgs/:org`: js.Tuple2[OrgsUpdateEndpoint, OrgsUpdateRequestOptions]
+  var `PATCH /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsUpdateHookEndpoint, OrgsUpdateHookRequestOptions]
+  var `PATCH /projects/:project_id`: js.Tuple2[ProjectsUpdateEndpoint, ProjectsUpdateRequestOptions]
+  var `PATCH /projects/columns/:column_id`: js.Tuple2[ProjectsUpdateColumnEndpoint, ProjectsUpdateColumnRequestOptions]
+  var `PATCH /projects/columns/cards/:card_id`: js.Tuple2[ProjectsUpdateCardEndpoint, ProjectsUpdateCardRequestOptions]
+  var `PATCH /repos/:owner/:repo`: js.Tuple2[ReposUpdateEndpoint, ReposUpdateRequestOptions]
   var `PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews`: js.Tuple2[
-    ReposUpdateProtectedBranchPullRequestReviewEnforcement_Options, 
-    ReposUpdateProtectedBranchPullRequestReviewEnforcement_RequestOptions
+    ReposUpdateProtectedBranchPullRequestReviewEnforcementEndpoint, 
+    ReposUpdateProtectedBranchPullRequestReviewEnforcementRequestOptions
   ]
   var `PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks`: js.Tuple2[
-    ReposUpdateProtectedBranchRequiredStatusChecks_Options, 
-    ReposUpdateProtectedBranchRequiredStatusChecks_RequestOptions
+    ReposUpdateProtectedBranchRequiredStatusChecksEndpoint, 
+    ReposUpdateProtectedBranchRequiredStatusChecksRequestOptions
   ]
-  var `PATCH /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksUpdate_Options, ChecksUpdate_RequestOptions]
-  var `PATCH /repos/:owner/:repo/check-suites/preferences`: js.Tuple2[ChecksSetSuitesPreferences_Options, ChecksSetSuitesPreferences_RequestOptions]
-  var `PATCH /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposUpdateCommitComment_Options, ReposUpdateCommitComment_RequestOptions]
-  var `PATCH /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitUpdateRef_Options, GitUpdateRef_RequestOptions]
-  var `PATCH /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposUpdateHook_Options, ReposUpdateHook_RequestOptions]
-  var `PATCH /repos/:owner/:repo/import`: js.Tuple2[MigrationsUpdateImport_Options, MigrationsUpdateImport_RequestOptions]
-  var `PATCH /repos/:owner/:repo/import/authors/:author_id`: js.Tuple2[MigrationsMapCommitAuthor_Options, MigrationsMapCommitAuthor_RequestOptions]
-  var `PATCH /repos/:owner/:repo/import/lfs`: js.Tuple2[MigrationsSetLfsPreference_Options, MigrationsSetLfsPreference_RequestOptions]
-  var `PATCH /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposUpdateInvitation_Options, ReposUpdateInvitation_RequestOptions]
-  var `PATCH /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesUpdate_Options, IssuesUpdate_RequestOptions]
-  var `PATCH /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesUpdateComment_Options, IssuesUpdateComment_RequestOptions]
-  var `PATCH /repos/:owner/:repo/labels/:current_name`: js.Tuple2[IssuesUpdateLabel_Options, IssuesUpdateLabel_RequestOptions]
-  var `PATCH /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesUpdateMilestone_Options, IssuesUpdateMilestone_RequestOptions]
-  var `PATCH /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsUpdate_Options, PullsUpdate_RequestOptions]
-  var `PATCH /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsUpdateComment_Options, PullsUpdateComment_RequestOptions]
-  var `PATCH /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposUpdateRelease_Options, ReposUpdateRelease_RequestOptions]
-  var `PATCH /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposUpdateReleaseAsset_Options, ReposUpdateReleaseAsset_RequestOptions]
-  var `PATCH /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[ScimUpdateUserAttribute_Options, ScimUpdateUserAttribute_RequestOptions]
-  var `PATCH /teams/:team_id`: js.Tuple2[TeamsUpdate_Options, TeamsUpdate_RequestOptions]
-  var `PATCH /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsUpdateDiscussion_Options, TeamsUpdateDiscussion_RequestOptions]
-  var `PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsUpdateDiscussionComment_Options, TeamsUpdateDiscussionComment_RequestOptions]
-  var `PATCH /user`: js.Tuple2[UsersUpdateAuthenticated_Options, UsersUpdateAuthenticated_RequestOptions]
+  var `PATCH /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksUpdateEndpoint, ChecksUpdateRequestOptions]
+  var `PATCH /repos/:owner/:repo/check-suites/preferences`: js.Tuple2[ChecksSetSuitesPreferencesEndpoint, ChecksSetSuitesPreferencesRequestOptions]
+  var `PATCH /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposUpdateCommitCommentEndpoint, ReposUpdateCommitCommentRequestOptions]
+  var `PATCH /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitUpdateRefEndpoint, GitUpdateRefRequestOptions]
+  var `PATCH /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposUpdateHookEndpoint, ReposUpdateHookRequestOptions]
+  var `PATCH /repos/:owner/:repo/import`: js.Tuple2[MigrationsUpdateImportEndpoint, MigrationsUpdateImportRequestOptions]
+  var `PATCH /repos/:owner/:repo/import/authors/:author_id`: js.Tuple2[MigrationsMapCommitAuthorEndpoint, MigrationsMapCommitAuthorRequestOptions]
+  var `PATCH /repos/:owner/:repo/import/lfs`: js.Tuple2[MigrationsSetLfsPreferenceEndpoint, MigrationsSetLfsPreferenceRequestOptions]
+  var `PATCH /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposUpdateInvitationEndpoint, ReposUpdateInvitationRequestOptions]
+  var `PATCH /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesUpdateEndpoint, IssuesUpdateRequestOptions]
+  var `PATCH /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesUpdateCommentEndpoint, IssuesUpdateCommentRequestOptions]
+  var `PATCH /repos/:owner/:repo/labels/:current_name`: js.Tuple2[IssuesUpdateLabelEndpoint, IssuesUpdateLabelRequestOptions]
+  var `PATCH /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesUpdateMilestoneEndpoint, IssuesUpdateMilestoneRequestOptions]
+  var `PATCH /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsUpdateEndpoint, PullsUpdateRequestOptions]
+  var `PATCH /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsUpdateCommentEndpoint, PullsUpdateCommentRequestOptions]
+  var `PATCH /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposUpdateReleaseEndpoint, ReposUpdateReleaseRequestOptions]
+  var `PATCH /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposUpdateReleaseAssetEndpoint, ReposUpdateReleaseAssetRequestOptions]
+  var `PATCH /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[ScimUpdateUserAttributeEndpoint, ScimUpdateUserAttributeRequestOptions]
+  var `PATCH /teams/:team_id`: js.Tuple2[TeamsUpdateEndpoint, TeamsUpdateRequestOptions]
+  var `PATCH /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsUpdateDiscussionEndpoint, TeamsUpdateDiscussionRequestOptions]
+  var `PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsUpdateDiscussionCommentEndpoint, TeamsUpdateDiscussionCommentRequestOptions]
+  var `PATCH /user`: js.Tuple2[UsersUpdateAuthenticatedEndpoint, UsersUpdateAuthenticatedRequestOptions]
   var `PATCH /user/email/visibility`: js.Tuple2[
-    UsersTogglePrimaryEmailVisibility_Options, 
-    UsersTogglePrimaryEmailVisibility_RequestOptions
+    UsersTogglePrimaryEmailVisibilityEndpoint, 
+    UsersTogglePrimaryEmailVisibilityRequestOptions
   ]
-  var `PATCH /user/memberships/orgs/:org`: js.Tuple2[OrgsUpdateMembership_Options, OrgsUpdateMembership_RequestOptions]
-  var `PATCH /user/repository_invitations/:invitation_id`: js.Tuple2[ReposAcceptInvitation_Options, ReposAcceptInvitation_RequestOptions]
-  var `POST /app-manifests/:code/conversions`: js.Tuple2[AppsCreateFromManifest_Options, AppsCreateFromManifest_RequestOptions]
-  var `POST /app/installations/:installation_id/access_tokens`: js.Tuple2[AppsCreateInstallationToken_Options, AppsCreateInstallationToken_RequestOptions]
+  var `PATCH /user/memberships/orgs/:org`: js.Tuple2[OrgsUpdateMembershipEndpoint, OrgsUpdateMembershipRequestOptions]
+  var `PATCH /user/repository_invitations/:invitation_id`: js.Tuple2[ReposAcceptInvitationEndpoint, ReposAcceptInvitationRequestOptions]
+  var `POST /app-manifests/:code/conversions`: js.Tuple2[AppsCreateFromManifestEndpoint, AppsCreateFromManifestRequestOptions]
+  var `POST /app/installations/:installation_id/access_tokens`: js.Tuple2[AppsCreateInstallationTokenEndpoint, AppsCreateInstallationTokenRequestOptions]
   var `POST /applications/:client_id/tokens/:access_token`: js.Tuple2[
-    OauthAuthorizationsResetAuthorization_Options, 
-    OauthAuthorizationsResetAuthorization_RequestOptions
+    OauthAuthorizationsResetAuthorizationEndpoint, 
+    OauthAuthorizationsResetAuthorizationRequestOptions
   ]
   var `POST /authorizations`: js.Tuple2[
-    OauthAuthorizationsCreateAuthorization_Options, 
-    OauthAuthorizationsCreateAuthorization_RequestOptions
+    OauthAuthorizationsCreateAuthorizationEndpoint, 
+    OauthAuthorizationsCreateAuthorizationRequestOptions
   ]
-  var `POST /content_references/:content_reference_id/attachments`: js.Tuple2[AppsCreateContentAttachment_Options, AppsCreateContentAttachment_RequestOptions]
-  var `POST /gists`: js.Tuple2[GistsCreate_Options, GistsCreate_RequestOptions]
-  var `POST /gists/:gist_id/comments`: js.Tuple2[GistsCreateComment_Options, GistsCreateComment_RequestOptions]
-  var `POST /gists/:gist_id/forks`: js.Tuple2[GistsFork_Options, GistsFork_RequestOptions]
-  var `POST /markdown`: js.Tuple2[MarkdownRender_Options, MarkdownRender_RequestOptions]
-  var `POST /markdown/raw`: js.Tuple2[MarkdownRenderRaw_Options, MarkdownRenderRaw_RequestOptions]
-  var `POST /orgs/:org/hooks`: js.Tuple2[OrgsCreateHook_Options, OrgsCreateHook_RequestOptions]
-  var `POST /orgs/:org/hooks/:hook_id/pings`: js.Tuple2[OrgsPingHook_Options, OrgsPingHook_RequestOptions]
-  var `POST /orgs/:org/invitations`: js.Tuple2[OrgsCreateInvitation_Options, OrgsCreateInvitation_RequestOptions]
-  var `POST /orgs/:org/migrations`: js.Tuple2[MigrationsStartForOrg_Options, MigrationsStartForOrg_RequestOptions]
-  var `POST /orgs/:org/projects`: js.Tuple2[ProjectsCreateForOrg_Options, ProjectsCreateForOrg_RequestOptions]
-  var `POST /orgs/:org/repos`: js.Tuple2[ReposCreateInOrg_Options, ReposCreateInOrg_RequestOptions]
-  var `POST /orgs/:org/teams`: js.Tuple2[TeamsCreate_Options, TeamsCreate_RequestOptions]
-  var `POST /projects/:project_id/columns`: js.Tuple2[ProjectsCreateColumn_Options, ProjectsCreateColumn_RequestOptions]
-  var `POST /projects/columns/:column_id/cards`: js.Tuple2[ProjectsCreateCard_Options, ProjectsCreateCard_RequestOptions]
-  var `POST /projects/columns/:column_id/moves`: js.Tuple2[ProjectsMoveColumn_Options, ProjectsMoveColumn_RequestOptions]
-  var `POST /projects/columns/cards/:card_id/moves`: js.Tuple2[ProjectsMoveCard_Options, ProjectsMoveCard_RequestOptions]
+  var `POST /content_references/:content_reference_id/attachments`: js.Tuple2[AppsCreateContentAttachmentEndpoint, AppsCreateContentAttachmentRequestOptions]
+  var `POST /gists`: js.Tuple2[GistsCreateEndpoint, GistsCreateRequestOptions]
+  var `POST /gists/:gist_id/comments`: js.Tuple2[GistsCreateCommentEndpoint, GistsCreateCommentRequestOptions]
+  var `POST /gists/:gist_id/forks`: js.Tuple2[GistsForkEndpoint, GistsForkRequestOptions]
+  var `POST /markdown`: js.Tuple2[MarkdownRenderEndpoint, MarkdownRenderRequestOptions]
+  var `POST /markdown/raw`: js.Tuple2[MarkdownRenderRawEndpoint, MarkdownRenderRawRequestOptions]
+  var `POST /orgs/:org/hooks`: js.Tuple2[OrgsCreateHookEndpoint, OrgsCreateHookRequestOptions]
+  var `POST /orgs/:org/hooks/:hook_id/pings`: js.Tuple2[OrgsPingHookEndpoint, OrgsPingHookRequestOptions]
+  var `POST /orgs/:org/invitations`: js.Tuple2[OrgsCreateInvitationEndpoint, OrgsCreateInvitationRequestOptions]
+  var `POST /orgs/:org/migrations`: js.Tuple2[MigrationsStartForOrgEndpoint, MigrationsStartForOrgRequestOptions]
+  var `POST /orgs/:org/projects`: js.Tuple2[ProjectsCreateForOrgEndpoint, ProjectsCreateForOrgRequestOptions]
+  var `POST /orgs/:org/repos`: js.Tuple2[ReposCreateInOrgEndpoint, ReposCreateInOrgRequestOptions]
+  var `POST /orgs/:org/teams`: js.Tuple2[TeamsCreateEndpoint, TeamsCreateRequestOptions]
+  var `POST /projects/:project_id/columns`: js.Tuple2[ProjectsCreateColumnEndpoint, ProjectsCreateColumnRequestOptions]
+  var `POST /projects/columns/:column_id/cards`: js.Tuple2[ProjectsCreateCardEndpoint, ProjectsCreateCardRequestOptions]
+  var `POST /projects/columns/:column_id/moves`: js.Tuple2[ProjectsMoveColumnEndpoint, ProjectsMoveColumnRequestOptions]
+  var `POST /projects/columns/cards/:card_id/moves`: js.Tuple2[ProjectsMoveCardEndpoint, ProjectsMoveCardRequestOptions]
   var `POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins`: js.Tuple2[
-    ReposAddProtectedBranchAdminEnforcement_Options, 
-    ReposAddProtectedBranchAdminEnforcement_RequestOptions
+    ReposAddProtectedBranchAdminEnforcementEndpoint, 
+    ReposAddProtectedBranchAdminEnforcementRequestOptions
   ]
   var `POST /repos/:owner/:repo/branches/:branch/protection/required_signatures`: js.Tuple2[
-    ReposAddProtectedBranchRequiredSignatures_Options, 
-    ReposAddProtectedBranchRequiredSignatures_RequestOptions
+    ReposAddProtectedBranchRequiredSignaturesEndpoint, 
+    ReposAddProtectedBranchRequiredSignaturesRequestOptions
   ]
   var `POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
-    ReposAddProtectedBranchRequiredStatusChecksContexts_Options, 
-    ReposAddProtectedBranchRequiredStatusChecksContexts_RequestOptions
+    ReposAddProtectedBranchRequiredStatusChecksContextsEndpoint, 
+    ReposAddProtectedBranchRequiredStatusChecksContextsRequestOptions
   ]
   var `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-    ReposAddProtectedBranchTeamRestrictions_Options, 
-    ReposAddProtectedBranchTeamRestrictions_RequestOptions
+    ReposAddProtectedBranchTeamRestrictionsEndpoint, 
+    ReposAddProtectedBranchTeamRestrictionsRequestOptions
   ]
   var `POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-    ReposAddProtectedBranchUserRestrictions_Options, 
-    ReposAddProtectedBranchUserRestrictions_RequestOptions
+    ReposAddProtectedBranchUserRestrictionsEndpoint, 
+    ReposAddProtectedBranchUserRestrictionsRequestOptions
   ]
-  var `POST /repos/:owner/:repo/check-runs`: js.Tuple2[ChecksCreate_Options, ChecksCreate_RequestOptions]
-  var `POST /repos/:owner/:repo/check-suites`: js.Tuple2[ChecksCreateSuite_Options, ChecksCreateSuite_RequestOptions]
-  var `POST /repos/:owner/:repo/check-suites/:check_suite_id/rerequest`: js.Tuple2[ChecksRerequestSuite_Options, ChecksRerequestSuite_RequestOptions]
+  var `POST /repos/:owner/:repo/check-runs`: js.Tuple2[ChecksCreateEndpoint, ChecksCreateRequestOptions]
+  var `POST /repos/:owner/:repo/check-suites`: js.Tuple2[ChecksCreateSuiteEndpoint, ChecksCreateSuiteRequestOptions]
+  var `POST /repos/:owner/:repo/check-suites/:check_suite_id/rerequest`: js.Tuple2[ChecksRerequestSuiteEndpoint, ChecksRerequestSuiteRequestOptions]
   var `POST /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[
-    ReactionsCreateForCommitComment_Options, 
-    ReactionsCreateForCommitComment_RequestOptions
+    ReactionsCreateForCommitCommentEndpoint, 
+    ReactionsCreateForCommitCommentRequestOptions
   ]
-  var `POST /repos/:owner/:repo/commits/:sha/comments`: js.Tuple2[ReposCreateCommitComment_Options, ReposCreateCommitComment_RequestOptions]
-  var `POST /repos/:owner/:repo/deployments`: js.Tuple2[ReposCreateDeployment_Options, ReposCreateDeployment_RequestOptions]
-  var `POST /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposCreateDeploymentStatus_Options, ReposCreateDeploymentStatus_RequestOptions]
-  var `POST /repos/:owner/:repo/forks`: js.Tuple2[ReposCreateFork_Options, ReposCreateFork_RequestOptions]
-  var `POST /repos/:owner/:repo/git/blobs`: js.Tuple2[GitCreateBlob_Options, GitCreateBlob_RequestOptions]
-  var `POST /repos/:owner/:repo/git/commits`: js.Tuple2[GitCreateCommit_Options, GitCreateCommit_RequestOptions]
-  var `POST /repos/:owner/:repo/git/refs`: js.Tuple2[GitCreateRef_Options, GitCreateRef_RequestOptions]
-  var `POST /repos/:owner/:repo/git/tags`: js.Tuple2[GitCreateTag_Options, GitCreateTag_RequestOptions]
-  var `POST /repos/:owner/:repo/git/trees`: js.Tuple2[GitCreateTree_Options, GitCreateTree_RequestOptions]
-  var `POST /repos/:owner/:repo/hooks`: js.Tuple2[ReposCreateHook_Options, ReposCreateHook_RequestOptions]
-  var `POST /repos/:owner/:repo/hooks/:hook_id/pings`: js.Tuple2[ReposPingHook_Options, ReposPingHook_RequestOptions]
-  var `POST /repos/:owner/:repo/hooks/:hook_id/tests`: js.Tuple2[ReposTestPushHook_Options, ReposTestPushHook_RequestOptions]
-  var `POST /repos/:owner/:repo/issues`: js.Tuple2[IssuesCreate_Options, IssuesCreate_RequestOptions]
-  var `POST /repos/:owner/:repo/issues/:issue_number/assignees`: js.Tuple2[IssuesAddAssignees_Options, IssuesAddAssignees_RequestOptions]
-  var `POST /repos/:owner/:repo/issues/:issue_number/comments`: js.Tuple2[IssuesCreateComment_Options, IssuesCreateComment_RequestOptions]
-  var `POST /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesAddLabels_Options, IssuesAddLabels_RequestOptions]
-  var `POST /repos/:owner/:repo/issues/:issue_number/reactions`: js.Tuple2[ReactionsCreateForIssue_Options, ReactionsCreateForIssue_RequestOptions]
+  var `POST /repos/:owner/:repo/commits/:sha/comments`: js.Tuple2[ReposCreateCommitCommentEndpoint, ReposCreateCommitCommentRequestOptions]
+  var `POST /repos/:owner/:repo/deployments`: js.Tuple2[ReposCreateDeploymentEndpoint, ReposCreateDeploymentRequestOptions]
+  var `POST /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposCreateDeploymentStatusEndpoint, ReposCreateDeploymentStatusRequestOptions]
+  var `POST /repos/:owner/:repo/forks`: js.Tuple2[ReposCreateForkEndpoint, ReposCreateForkRequestOptions]
+  var `POST /repos/:owner/:repo/git/blobs`: js.Tuple2[GitCreateBlobEndpoint, GitCreateBlobRequestOptions]
+  var `POST /repos/:owner/:repo/git/commits`: js.Tuple2[GitCreateCommitEndpoint, GitCreateCommitRequestOptions]
+  var `POST /repos/:owner/:repo/git/refs`: js.Tuple2[GitCreateRefEndpoint, GitCreateRefRequestOptions]
+  var `POST /repos/:owner/:repo/git/tags`: js.Tuple2[GitCreateTagEndpoint, GitCreateTagRequestOptions]
+  var `POST /repos/:owner/:repo/git/trees`: js.Tuple2[GitCreateTreeEndpoint, GitCreateTreeRequestOptions]
+  var `POST /repos/:owner/:repo/hooks`: js.Tuple2[ReposCreateHookEndpoint, ReposCreateHookRequestOptions]
+  var `POST /repos/:owner/:repo/hooks/:hook_id/pings`: js.Tuple2[ReposPingHookEndpoint, ReposPingHookRequestOptions]
+  var `POST /repos/:owner/:repo/hooks/:hook_id/tests`: js.Tuple2[ReposTestPushHookEndpoint, ReposTestPushHookRequestOptions]
+  var `POST /repos/:owner/:repo/issues`: js.Tuple2[IssuesCreateEndpoint, IssuesCreateRequestOptions]
+  var `POST /repos/:owner/:repo/issues/:issue_number/assignees`: js.Tuple2[IssuesAddAssigneesEndpoint, IssuesAddAssigneesRequestOptions]
+  var `POST /repos/:owner/:repo/issues/:issue_number/comments`: js.Tuple2[IssuesCreateCommentEndpoint, IssuesCreateCommentRequestOptions]
+  var `POST /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesAddLabelsEndpoint, IssuesAddLabelsRequestOptions]
+  var `POST /repos/:owner/:repo/issues/:issue_number/reactions`: js.Tuple2[ReactionsCreateForIssueEndpoint, ReactionsCreateForIssueRequestOptions]
   var `POST /repos/:owner/:repo/issues/comments/:comment_id/reactions`: js.Tuple2[
-    ReactionsCreateForIssueComment_Options, 
-    ReactionsCreateForIssueComment_RequestOptions
+    ReactionsCreateForIssueCommentEndpoint, 
+    ReactionsCreateForIssueCommentRequestOptions
   ]
-  var `POST /repos/:owner/:repo/keys`: js.Tuple2[ReposAddDeployKey_Options, ReposAddDeployKey_RequestOptions]
-  var `POST /repos/:owner/:repo/labels`: js.Tuple2[IssuesCreateLabel_Options, IssuesCreateLabel_RequestOptions]
-  var `POST /repos/:owner/:repo/merges`: js.Tuple2[ReposMerge_Options, ReposMerge_RequestOptions]
-  var `POST /repos/:owner/:repo/milestones`: js.Tuple2[IssuesCreateMilestone_Options, IssuesCreateMilestone_RequestOptions]
-  var `POST /repos/:owner/:repo/pages`: js.Tuple2[ReposEnablePagesSite_Options, ReposEnablePagesSite_RequestOptions]
-  var `POST /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposRequestPageBuild_Options, ReposRequestPageBuild_RequestOptions]
-  var `POST /repos/:owner/:repo/projects`: js.Tuple2[ProjectsCreateForRepo_Options, ProjectsCreateForRepo_RequestOptions]
+  var `POST /repos/:owner/:repo/keys`: js.Tuple2[ReposAddDeployKeyEndpoint, ReposAddDeployKeyRequestOptions]
+  var `POST /repos/:owner/:repo/labels`: js.Tuple2[IssuesCreateLabelEndpoint, IssuesCreateLabelRequestOptions]
+  var `POST /repos/:owner/:repo/merges`: js.Tuple2[ReposMergeEndpoint, ReposMergeRequestOptions]
+  var `POST /repos/:owner/:repo/milestones`: js.Tuple2[IssuesCreateMilestoneEndpoint, IssuesCreateMilestoneRequestOptions]
+  var `POST /repos/:owner/:repo/pages`: js.Tuple2[ReposEnablePagesSiteEndpoint, ReposEnablePagesSiteRequestOptions]
+  var `POST /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposRequestPageBuildEndpoint, ReposRequestPageBuildRequestOptions]
+  var `POST /repos/:owner/:repo/projects`: js.Tuple2[ProjectsCreateForRepoEndpoint, ProjectsCreateForRepoRequestOptions]
   var `POST /repos/:owner/:repo/pulls`: js.Tuple2[
-    PullsCreate_Options | PullsCreateFromIssue_Options, 
-    PullsCreate_RequestOptions | PullsCreateFromIssue_RequestOptions
+    PullsCreateEndpoint | PullsCreateFromIssueEndpoint, 
+    PullsCreateRequestOptions | PullsCreateFromIssueRequestOptions
   ]
   var `POST /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[
-    PullsCreateComment_Options | PullsCreateCommentReply_Options, 
-    PullsCreateComment_RequestOptions | PullsCreateCommentReply_RequestOptions
+    PullsCreateCommentEndpoint | PullsCreateCommentReplyEndpoint, 
+    PullsCreateCommentRequestOptions | PullsCreateCommentReplyRequestOptions
   ]
-  var `POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsCreateReviewRequest_Options, PullsCreateReviewRequest_RequestOptions]
-  var `POST /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsCreateReview_Options, PullsCreateReview_RequestOptions]
-  var `POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events`: js.Tuple2[PullsSubmitReview_Options, PullsSubmitReview_RequestOptions]
+  var `POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsCreateReviewRequestEndpoint, PullsCreateReviewRequestRequestOptions]
+  var `POST /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsCreateReviewEndpoint, PullsCreateReviewRequestOptions]
+  var `POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events`: js.Tuple2[PullsSubmitReviewEndpoint, PullsSubmitReviewRequestOptions]
   var `POST /repos/:owner/:repo/pulls/comments/:comment_id/reactions`: js.Tuple2[
-    ReactionsCreateForPullRequestReviewComment_Options, 
-    ReactionsCreateForPullRequestReviewComment_RequestOptions
+    ReactionsCreateForPullRequestReviewCommentEndpoint, 
+    ReactionsCreateForPullRequestReviewCommentRequestOptions
   ]
-  var `POST /repos/:owner/:repo/releases`: js.Tuple2[ReposCreateRelease_Options, ReposCreateRelease_RequestOptions]
-  var `POST /repos/:owner/:repo/statuses/:sha`: js.Tuple2[ReposCreateStatus_Options, ReposCreateStatus_RequestOptions]
-  var `POST /repos/:owner/:repo/transfer`: js.Tuple2[ReposTransfer_Options, ReposTransfer_RequestOptions]
+  var `POST /repos/:owner/:repo/releases`: js.Tuple2[ReposCreateReleaseEndpoint, ReposCreateReleaseRequestOptions]
+  var `POST /repos/:owner/:repo/statuses/:sha`: js.Tuple2[ReposCreateStatusEndpoint, ReposCreateStatusRequestOptions]
+  var `POST /repos/:owner/:repo/transfer`: js.Tuple2[ReposTransferEndpoint, ReposTransferRequestOptions]
   var `POST /scim/v2/organizations/:org/Users`: js.Tuple2[
-    ScimProvisionAndInviteUsers_Options | ScimProvisionInviteUsers_Options, 
-    ScimProvisionAndInviteUsers_RequestOptions | ScimProvisionInviteUsers_RequestOptions
+    ScimProvisionAndInviteUsersEndpoint | ScimProvisionInviteUsersEndpoint, 
+    ScimProvisionAndInviteUsersRequestOptions | ScimProvisionInviteUsersRequestOptions
   ]
-  var `POST /teams/:team_id/discussions`: js.Tuple2[TeamsCreateDiscussion_Options, TeamsCreateDiscussion_RequestOptions]
-  var `POST /teams/:team_id/discussions/:discussion_number/comments`: js.Tuple2[TeamsCreateDiscussionComment_Options, TeamsCreateDiscussionComment_RequestOptions]
+  var `POST /teams/:team_id/discussions`: js.Tuple2[TeamsCreateDiscussionEndpoint, TeamsCreateDiscussionRequestOptions]
+  var `POST /teams/:team_id/discussions/:discussion_number/comments`: js.Tuple2[TeamsCreateDiscussionCommentEndpoint, TeamsCreateDiscussionCommentRequestOptions]
   var `POST /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions`: js.Tuple2[
-    ReactionsCreateForTeamDiscussionComment_Options, 
-    ReactionsCreateForTeamDiscussionComment_RequestOptions
+    ReactionsCreateForTeamDiscussionCommentEndpoint, 
+    ReactionsCreateForTeamDiscussionCommentRequestOptions
   ]
   var `POST /teams/:team_id/discussions/:discussion_number/reactions`: js.Tuple2[
-    ReactionsCreateForTeamDiscussion_Options, 
-    ReactionsCreateForTeamDiscussion_RequestOptions
+    ReactionsCreateForTeamDiscussionEndpoint, 
+    ReactionsCreateForTeamDiscussionRequestOptions
   ]
-  var `POST /user/emails`: js.Tuple2[UsersAddEmails_Options, UsersAddEmails_RequestOptions]
-  var `POST /user/gpg_keys`: js.Tuple2[UsersCreateGpgKey_Options, UsersCreateGpgKey_RequestOptions]
-  var `POST /user/keys`: js.Tuple2[UsersCreatePublicKey_Options, UsersCreatePublicKey_RequestOptions]
+  var `POST /user/emails`: js.Tuple2[UsersAddEmailsEndpoint, UsersAddEmailsRequestOptions]
+  var `POST /user/gpg_keys`: js.Tuple2[UsersCreateGpgKeyEndpoint, UsersCreateGpgKeyRequestOptions]
+  var `POST /user/keys`: js.Tuple2[UsersCreatePublicKeyEndpoint, UsersCreatePublicKeyRequestOptions]
   var `POST /user/migrations`: js.Tuple2[
-    MigrationsStartForAuthenticatedUser_Options, 
-    MigrationsStartForAuthenticatedUser_RequestOptions
+    MigrationsStartForAuthenticatedUserEndpoint, 
+    MigrationsStartForAuthenticatedUserRequestOptions
   ]
   var `POST /user/projects`: js.Tuple2[
-    ProjectsCreateForAuthenticatedUser_Options, 
-    ProjectsCreateForAuthenticatedUser_RequestOptions
+    ProjectsCreateForAuthenticatedUserEndpoint, 
+    ProjectsCreateForAuthenticatedUserRequestOptions
   ]
   var `POST /user/repos`: js.Tuple2[
-    ReposCreateForAuthenticatedUser_Options, 
-    ReposCreateForAuthenticatedUser_RequestOptions
+    ReposCreateForAuthenticatedUserEndpoint, 
+    ReposCreateForAuthenticatedUserRequestOptions
   ]
-  var `POST :url`: js.Tuple2[ReposUploadReleaseAsset_Options, ReposUploadReleaseAsset_RequestOptions]
+  var `POST :url`: js.Tuple2[ReposUploadReleaseAssetEndpoint, ReposUploadReleaseAssetRequestOptions]
   var `PUT /authorizations/clients/:client_id`: js.Tuple2[
-    OauthAuthorizationsGetOrCreateAuthorizationForApp_Options, 
-    OauthAuthorizationsGetOrCreateAuthorizationForApp_RequestOptions
+    OauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint, 
+    OauthAuthorizationsGetOrCreateAuthorizationForAppRequestOptions
   ]
   var `PUT /authorizations/clients/:client_id/:fingerprint`: js.Tuple2[
-    OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprint_Options | OauthAuthorizationsGetOrCreateAuthorizationForAppFingerprint_Options, 
-    OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprint_RequestOptions | OauthAuthorizationsGetOrCreateAuthorizationForAppFingerprint_RequestOptions
+    OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintEndpoint | OauthAuthorizationsGetOrCreateAuthorizationForAppFingerprintEndpoint, 
+    OauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintRequestOptions | OauthAuthorizationsGetOrCreateAuthorizationForAppFingerprintRequestOptions
   ]
-  var `PUT /gists/:gist_id/star`: js.Tuple2[GistsStar_Options, GistsStar_RequestOptions]
-  var `PUT /notifications`: js.Tuple2[ActivityMarkAsRead_Options, ActivityMarkAsRead_RequestOptions]
-  var `PUT /notifications/threads/:thread_id/subscription`: js.Tuple2[
-    ActivitySetThreadSubscription_Options, 
-    ActivitySetThreadSubscription_RequestOptions
-  ]
-  var `PUT /orgs/:org/blocks/:username`: js.Tuple2[OrgsBlockUser_Options, OrgsBlockUser_RequestOptions]
+  var `PUT /gists/:gist_id/star`: js.Tuple2[GistsStarEndpoint, GistsStarRequestOptions]
+  var `PUT /notifications`: js.Tuple2[ActivityMarkAsReadEndpoint, ActivityMarkAsReadRequestOptions]
+  var `PUT /notifications/threads/:thread_id/subscription`: js.Tuple2[ActivitySetThreadSubscriptionEndpoint, ActivitySetThreadSubscriptionRequestOptions]
+  var `PUT /orgs/:org/blocks/:username`: js.Tuple2[OrgsBlockUserEndpoint, OrgsBlockUserRequestOptions]
   var `PUT /orgs/:org/interaction-limits`: js.Tuple2[
-    InteractionsAddOrUpdateRestrictionsForOrg_Options, 
-    InteractionsAddOrUpdateRestrictionsForOrg_RequestOptions
+    InteractionsAddOrUpdateRestrictionsForOrgEndpoint, 
+    InteractionsAddOrUpdateRestrictionsForOrgRequestOptions
   ]
-  var `PUT /orgs/:org/memberships/:username`: js.Tuple2[OrgsAddOrUpdateMembership_Options, OrgsAddOrUpdateMembership_RequestOptions]
+  var `PUT /orgs/:org/memberships/:username`: js.Tuple2[OrgsAddOrUpdateMembershipEndpoint, OrgsAddOrUpdateMembershipRequestOptions]
   var `PUT /orgs/:org/outside_collaborators/:username`: js.Tuple2[
-    OrgsConvertMemberToOutsideCollaborator_Options, 
-    OrgsConvertMemberToOutsideCollaborator_RequestOptions
+    OrgsConvertMemberToOutsideCollaboratorEndpoint, 
+    OrgsConvertMemberToOutsideCollaboratorRequestOptions
   ]
-  var `PUT /orgs/:org/public_members/:username`: js.Tuple2[OrgsPublicizeMembership_Options, OrgsPublicizeMembership_RequestOptions]
-  var `PUT /projects/:project_id/collaborators/:username`: js.Tuple2[ProjectsAddCollaborator_Options, ProjectsAddCollaborator_RequestOptions]
-  var `PUT /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposUpdateBranchProtection_Options, ReposUpdateBranchProtection_RequestOptions]
+  var `PUT /orgs/:org/public_members/:username`: js.Tuple2[OrgsPublicizeMembershipEndpoint, OrgsPublicizeMembershipRequestOptions]
+  var `PUT /projects/:project_id/collaborators/:username`: js.Tuple2[ProjectsAddCollaboratorEndpoint, ProjectsAddCollaboratorRequestOptions]
+  var `PUT /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposUpdateBranchProtectionEndpoint, ReposUpdateBranchProtectionRequestOptions]
   var `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
-    ReposReplaceProtectedBranchRequiredStatusChecksContexts_Options, 
-    ReposReplaceProtectedBranchRequiredStatusChecksContexts_RequestOptions
+    ReposReplaceProtectedBranchRequiredStatusChecksContextsEndpoint, 
+    ReposReplaceProtectedBranchRequiredStatusChecksContextsRequestOptions
   ]
   var `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-    ReposReplaceProtectedBranchTeamRestrictions_Options, 
-    ReposReplaceProtectedBranchTeamRestrictions_RequestOptions
+    ReposReplaceProtectedBranchTeamRestrictionsEndpoint, 
+    ReposReplaceProtectedBranchTeamRestrictionsRequestOptions
   ]
   var `PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-    ReposReplaceProtectedBranchUserRestrictions_Options, 
-    ReposReplaceProtectedBranchUserRestrictions_RequestOptions
+    ReposReplaceProtectedBranchUserRestrictionsEndpoint, 
+    ReposReplaceProtectedBranchUserRestrictionsRequestOptions
   ]
-  var `PUT /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposAddCollaborator_Options, ReposAddCollaborator_RequestOptions]
+  var `PUT /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposAddCollaboratorEndpoint, ReposAddCollaboratorRequestOptions]
   var `PUT /repos/:owner/:repo/contents/:path`: js.Tuple2[
-    ReposCreateFile_Options | ReposUpdateFile_Options, 
-    ReposCreateFile_RequestOptions | ReposUpdateFile_RequestOptions
+    ReposCreateFileEndpoint | ReposUpdateFileEndpoint, 
+    ReposCreateFileRequestOptions | ReposUpdateFileRequestOptions
   ]
-  var `PUT /repos/:owner/:repo/import`: js.Tuple2[MigrationsStartImport_Options, MigrationsStartImport_RequestOptions]
+  var `PUT /repos/:owner/:repo/import`: js.Tuple2[MigrationsStartImportEndpoint, MigrationsStartImportRequestOptions]
   var `PUT /repos/:owner/:repo/interaction-limits`: js.Tuple2[
-    InteractionsAddOrUpdateRestrictionsForRepo_Options, 
-    InteractionsAddOrUpdateRestrictionsForRepo_RequestOptions
+    InteractionsAddOrUpdateRestrictionsForRepoEndpoint, 
+    InteractionsAddOrUpdateRestrictionsForRepoRequestOptions
   ]
-  var `PUT /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesReplaceLabels_Options, IssuesReplaceLabels_RequestOptions]
-  var `PUT /repos/:owner/:repo/issues/:issue_number/lock`: js.Tuple2[IssuesLock_Options, IssuesLock_RequestOptions]
+  var `PUT /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesReplaceLabelsEndpoint, IssuesReplaceLabelsRequestOptions]
+  var `PUT /repos/:owner/:repo/issues/:issue_number/lock`: js.Tuple2[IssuesLockEndpoint, IssuesLockRequestOptions]
   var `PUT /repos/:owner/:repo/notifications`: js.Tuple2[
-    ActivityMarkNotificationsAsReadForRepo_Options, 
-    ActivityMarkNotificationsAsReadForRepo_RequestOptions
+    ActivityMarkNotificationsAsReadForRepoEndpoint, 
+    ActivityMarkNotificationsAsReadForRepoRequestOptions
   ]
   var `PUT /repos/:owner/:repo/pages`: js.Tuple2[
-    ReposUpdateInformationAboutPagesSite_Options, 
-    ReposUpdateInformationAboutPagesSite_RequestOptions
+    ReposUpdateInformationAboutPagesSiteEndpoint, 
+    ReposUpdateInformationAboutPagesSiteRequestOptions
   ]
-  var `PUT /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsMerge_Options, PullsMerge_RequestOptions]
-  var `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsUpdateReview_Options, PullsUpdateReview_RequestOptions]
-  var `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals`: js.Tuple2[PullsDismissReview_Options, PullsDismissReview_RequestOptions]
-  var `PUT /repos/:owner/:repo/subscription`: js.Tuple2[ActivitySetRepoSubscription_Options, ActivitySetRepoSubscription_RequestOptions]
-  var `PUT /repos/:owner/:repo/topics`: js.Tuple2[ReposReplaceTopics_Options, ReposReplaceTopics_RequestOptions]
+  var `PUT /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsMergeEndpoint, PullsMergeRequestOptions]
+  var `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsUpdateReviewEndpoint, PullsUpdateReviewRequestOptions]
+  var `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals`: js.Tuple2[PullsDismissReviewEndpoint, PullsDismissReviewRequestOptions]
+  var `PUT /repos/:owner/:repo/subscription`: js.Tuple2[ActivitySetRepoSubscriptionEndpoint, ActivitySetRepoSubscriptionRequestOptions]
+  var `PUT /repos/:owner/:repo/topics`: js.Tuple2[ReposReplaceTopicsEndpoint, ReposReplaceTopicsRequestOptions]
   var `PUT /repos/:owner/:repo/vulnerability-alerts`: js.Tuple2[
-    ReposEnableVulnerabilityAlerts_Options, 
-    ReposEnableVulnerabilityAlerts_RequestOptions
+    ReposEnableVulnerabilityAlertsEndpoint, 
+    ReposEnableVulnerabilityAlertsRequestOptions
   ]
   var `PUT /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[
-    ScimReplaceProvisionedUserInformation_Options | ScimUpdateProvisionedOrgMembership_Options, 
-    ScimReplaceProvisionedUserInformation_RequestOptions | ScimUpdateProvisionedOrgMembership_RequestOptions
+    ScimReplaceProvisionedUserInformationEndpoint | ScimUpdateProvisionedOrgMembershipEndpoint, 
+    ScimReplaceProvisionedUserInformationRequestOptions | ScimUpdateProvisionedOrgMembershipRequestOptions
   ]
-  var `PUT /teams/:team_id/members/:username`: js.Tuple2[TeamsAddMember_Options, TeamsAddMember_RequestOptions]
-  var `PUT /teams/:team_id/memberships/:username`: js.Tuple2[TeamsAddOrUpdateMembership_Options, TeamsAddOrUpdateMembership_RequestOptions]
-  var `PUT /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsAddOrUpdateProject_Options, TeamsAddOrUpdateProject_RequestOptions]
-  var `PUT /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsAddOrUpdateRepo_Options, TeamsAddOrUpdateRepo_RequestOptions]
-  var `PUT /user/blocks/:username`: js.Tuple2[UsersBlock_Options, UsersBlock_RequestOptions]
-  var `PUT /user/following/:username`: js.Tuple2[UsersFollow_Options, UsersFollow_RequestOptions]
-  var `PUT /user/installations/:installation_id/repositories/:repository_id`: js.Tuple2[AppsAddRepoToInstallation_Options, AppsAddRepoToInstallation_RequestOptions]
-  var `PUT /user/starred/:owner/:repo`: js.Tuple2[ActivityStarRepo_Options, ActivityStarRepo_RequestOptions]
-  var `PUT /user/subscriptions/:owner/:repo`: js.Tuple2[ActivityWatchRepoLegacy_Options, ActivityWatchRepoLegacy_RequestOptions]
+  var `PUT /teams/:team_id/members/:username`: js.Tuple2[TeamsAddMemberEndpoint, TeamsAddMemberRequestOptions]
+  var `PUT /teams/:team_id/memberships/:username`: js.Tuple2[TeamsAddOrUpdateMembershipEndpoint, TeamsAddOrUpdateMembershipRequestOptions]
+  var `PUT /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsAddOrUpdateProjectEndpoint, TeamsAddOrUpdateProjectRequestOptions]
+  var `PUT /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsAddOrUpdateRepoEndpoint, TeamsAddOrUpdateRepoRequestOptions]
+  var `PUT /user/blocks/:username`: js.Tuple2[UsersBlockEndpoint, UsersBlockRequestOptions]
+  var `PUT /user/following/:username`: js.Tuple2[UsersFollowEndpoint, UsersFollowRequestOptions]
+  var `PUT /user/installations/:installation_id/repositories/:repository_id`: js.Tuple2[AppsAddRepoToInstallationEndpoint, AppsAddRepoToInstallationRequestOptions]
+  var `PUT /user/starred/:owner/:repo`: js.Tuple2[ActivityStarRepoEndpoint, ActivityStarRepoRequestOptions]
+  var `PUT /user/subscriptions/:owner/:repo`: js.Tuple2[ActivityWatchRepoLegacyEndpoint, ActivityWatchRepoLegacyRequestOptions]
 }
 
 object Routes {
   @scala.inline
   def apply(
-    `DELETE /app/installations/:installation_id`: js.Tuple2[AppsDeleteInstallation_Options, AppsDeleteInstallation_RequestOptions],
+    `DELETE /app/installations/:installation_id`: js.Tuple2[AppsDeleteInstallationEndpoint, AppsDeleteInstallationRequestOptions],
     `DELETE /applications/:client_id/grants/:access_token`: js.Tuple2[
-      OauthAuthorizationsRevokeGrantForApplication_Options, 
-      OauthAuthorizationsRevokeGrantForApplication_RequestOptions
+      OauthAuthorizationsRevokeGrantForApplicationEndpoint, 
+      OauthAuthorizationsRevokeGrantForApplicationRequestOptions
     ],
     `DELETE /applications/:client_id/tokens/:access_token`: js.Tuple2[
-      OauthAuthorizationsRevokeAuthorizationForApplication_Options, 
-      OauthAuthorizationsRevokeAuthorizationForApplication_RequestOptions
+      OauthAuthorizationsRevokeAuthorizationForApplicationEndpoint, 
+      OauthAuthorizationsRevokeAuthorizationForApplicationRequestOptions
     ],
     `DELETE /applications/grants/:grant_id`: js.Tuple2[
-      OauthAuthorizationsDeleteGrant_Options, 
-      OauthAuthorizationsDeleteGrant_RequestOptions
+      OauthAuthorizationsDeleteGrantEndpoint, 
+      OauthAuthorizationsDeleteGrantRequestOptions
     ],
     `DELETE /authorizations/:authorization_id`: js.Tuple2[
-      OauthAuthorizationsDeleteAuthorization_Options, 
-      OauthAuthorizationsDeleteAuthorization_RequestOptions
+      OauthAuthorizationsDeleteAuthorizationEndpoint, 
+      OauthAuthorizationsDeleteAuthorizationRequestOptions
     ],
-    `DELETE /gists/:gist_id`: js.Tuple2[GistsDelete_Options, GistsDelete_RequestOptions],
-    `DELETE /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsDeleteComment_Options, GistsDeleteComment_RequestOptions],
-    `DELETE /gists/:gist_id/star`: js.Tuple2[GistsUnstar_Options, GistsUnstar_RequestOptions],
+    `DELETE /gists/:gist_id`: js.Tuple2[GistsDeleteEndpoint, GistsDeleteRequestOptions],
+    `DELETE /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsDeleteCommentEndpoint, GistsDeleteCommentRequestOptions],
+    `DELETE /gists/:gist_id/star`: js.Tuple2[GistsUnstarEndpoint, GistsUnstarRequestOptions],
     `DELETE /notifications/threads/:thread_id/subscription`: js.Tuple2[
-      ActivityDeleteThreadSubscription_Options, 
-      ActivityDeleteThreadSubscription_RequestOptions
+      ActivityDeleteThreadSubscriptionEndpoint, 
+      ActivityDeleteThreadSubscriptionRequestOptions
     ],
-    `DELETE /orgs/:org/blocks/:username`: js.Tuple2[OrgsUnblockUser_Options, OrgsUnblockUser_RequestOptions],
+    `DELETE /orgs/:org/blocks/:username`: js.Tuple2[OrgsUnblockUserEndpoint, OrgsUnblockUserRequestOptions],
     `DELETE /orgs/:org/credential-authorizations/:credential_id`: js.Tuple2[
-      OrgsRemoveCredentialAuthorization_Options, 
-      OrgsRemoveCredentialAuthorization_RequestOptions
+      OrgsRemoveCredentialAuthorizationEndpoint, 
+      OrgsRemoveCredentialAuthorizationRequestOptions
     ],
-    `DELETE /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsDeleteHook_Options, OrgsDeleteHook_RequestOptions],
+    `DELETE /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsDeleteHookEndpoint, OrgsDeleteHookRequestOptions],
     `DELETE /orgs/:org/interaction-limits`: js.Tuple2[
-      InteractionsRemoveRestrictionsForOrg_Options, 
-      InteractionsRemoveRestrictionsForOrg_RequestOptions
+      InteractionsRemoveRestrictionsForOrgEndpoint, 
+      InteractionsRemoveRestrictionsForOrgRequestOptions
     ],
-    `DELETE /orgs/:org/members/:username`: js.Tuple2[OrgsRemoveMember_Options, OrgsRemoveMember_RequestOptions],
-    `DELETE /orgs/:org/memberships/:username`: js.Tuple2[OrgsRemoveMembership_Options, OrgsRemoveMembership_RequestOptions],
-    `DELETE /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[
-      MigrationsDeleteArchiveForOrg_Options, 
-      MigrationsDeleteArchiveForOrg_RequestOptions
-    ],
-    `DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock`: js.Tuple2[MigrationsUnlockRepoForOrg_Options, MigrationsUnlockRepoForOrg_RequestOptions],
-    `DELETE /orgs/:org/outside_collaborators/:username`: js.Tuple2[
-      OrgsRemoveOutsideCollaborator_Options, 
-      OrgsRemoveOutsideCollaborator_RequestOptions
-    ],
-    `DELETE /orgs/:org/public_members/:username`: js.Tuple2[OrgsConcealMembership_Options, OrgsConcealMembership_RequestOptions],
-    `DELETE /projects/:project_id`: js.Tuple2[ProjectsDelete_Options, ProjectsDelete_RequestOptions],
-    `DELETE /projects/:project_id/collaborators/:username`: js.Tuple2[ProjectsRemoveCollaborator_Options, ProjectsRemoveCollaborator_RequestOptions],
-    `DELETE /projects/columns/:column_id`: js.Tuple2[ProjectsDeleteColumn_Options, ProjectsDeleteColumn_RequestOptions],
-    `DELETE /projects/columns/cards/:card_id`: js.Tuple2[ProjectsDeleteCard_Options, ProjectsDeleteCard_RequestOptions],
-    `DELETE /reactions/:reaction_id`: js.Tuple2[ReactionsDelete_Options, ReactionsDelete_RequestOptions],
-    `DELETE /repos/:owner/:repo`: js.Tuple2[ReposDelete_Options, ReposDelete_RequestOptions],
-    `DELETE /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposRemoveBranchProtection_Options, ReposRemoveBranchProtection_RequestOptions],
+    `DELETE /orgs/:org/members/:username`: js.Tuple2[OrgsRemoveMemberEndpoint, OrgsRemoveMemberRequestOptions],
+    `DELETE /orgs/:org/memberships/:username`: js.Tuple2[OrgsRemoveMembershipEndpoint, OrgsRemoveMembershipRequestOptions],
+    `DELETE /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[MigrationsDeleteArchiveForOrgEndpoint, MigrationsDeleteArchiveForOrgRequestOptions],
+    `DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock`: js.Tuple2[MigrationsUnlockRepoForOrgEndpoint, MigrationsUnlockRepoForOrgRequestOptions],
+    `DELETE /orgs/:org/outside_collaborators/:username`: js.Tuple2[OrgsRemoveOutsideCollaboratorEndpoint, OrgsRemoveOutsideCollaboratorRequestOptions],
+    `DELETE /orgs/:org/public_members/:username`: js.Tuple2[OrgsConcealMembershipEndpoint, OrgsConcealMembershipRequestOptions],
+    `DELETE /projects/:project_id`: js.Tuple2[ProjectsDeleteEndpoint, ProjectsDeleteRequestOptions],
+    `DELETE /projects/:project_id/collaborators/:username`: js.Tuple2[ProjectsRemoveCollaboratorEndpoint, ProjectsRemoveCollaboratorRequestOptions],
+    `DELETE /projects/columns/:column_id`: js.Tuple2[ProjectsDeleteColumnEndpoint, ProjectsDeleteColumnRequestOptions],
+    `DELETE /projects/columns/cards/:card_id`: js.Tuple2[ProjectsDeleteCardEndpoint, ProjectsDeleteCardRequestOptions],
+    `DELETE /reactions/:reaction_id`: js.Tuple2[ReactionsDeleteEndpoint, ReactionsDeleteRequestOptions],
+    `DELETE /repos/:owner/:repo`: js.Tuple2[ReposDeleteEndpoint, ReposDeleteRequestOptions],
+    `DELETE /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposRemoveBranchProtectionEndpoint, ReposRemoveBranchProtectionRequestOptions],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins`: js.Tuple2[
-      ReposRemoveProtectedBranchAdminEnforcement_Options, 
-      ReposRemoveProtectedBranchAdminEnforcement_RequestOptions
+      ReposRemoveProtectedBranchAdminEnforcementEndpoint, 
+      ReposRemoveProtectedBranchAdminEnforcementRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews`: js.Tuple2[
-      ReposRemoveProtectedBranchPullRequestReviewEnforcement_Options, 
-      ReposRemoveProtectedBranchPullRequestReviewEnforcement_RequestOptions
+      ReposRemoveProtectedBranchPullRequestReviewEnforcementEndpoint, 
+      ReposRemoveProtectedBranchPullRequestReviewEnforcementRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures`: js.Tuple2[
-      ReposRemoveProtectedBranchRequiredSignatures_Options, 
-      ReposRemoveProtectedBranchRequiredSignatures_RequestOptions
+      ReposRemoveProtectedBranchRequiredSignaturesEndpoint, 
+      ReposRemoveProtectedBranchRequiredSignaturesRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks`: js.Tuple2[
-      ReposRemoveProtectedBranchRequiredStatusChecks_Options, 
-      ReposRemoveProtectedBranchRequiredStatusChecks_RequestOptions
+      ReposRemoveProtectedBranchRequiredStatusChecksEndpoint, 
+      ReposRemoveProtectedBranchRequiredStatusChecksRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
-      ReposRemoveProtectedBranchRequiredStatusChecksContexts_Options, 
-      ReposRemoveProtectedBranchRequiredStatusChecksContexts_RequestOptions
+      ReposRemoveProtectedBranchRequiredStatusChecksContextsEndpoint, 
+      ReposRemoveProtectedBranchRequiredStatusChecksContextsRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions`: js.Tuple2[
-      ReposRemoveProtectedBranchRestrictions_Options, 
-      ReposRemoveProtectedBranchRestrictions_RequestOptions
+      ReposRemoveProtectedBranchRestrictionsEndpoint, 
+      ReposRemoveProtectedBranchRestrictionsRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-      ReposRemoveProtectedBranchTeamRestrictions_Options, 
-      ReposRemoveProtectedBranchTeamRestrictions_RequestOptions
+      ReposRemoveProtectedBranchTeamRestrictionsEndpoint, 
+      ReposRemoveProtectedBranchTeamRestrictionsRequestOptions
     ],
     `DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-      ReposRemoveProtectedBranchUserRestrictions_Options, 
-      ReposRemoveProtectedBranchUserRestrictions_RequestOptions
+      ReposRemoveProtectedBranchUserRestrictionsEndpoint, 
+      ReposRemoveProtectedBranchUserRestrictionsRequestOptions
     ],
-    `DELETE /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposRemoveCollaborator_Options, ReposRemoveCollaborator_RequestOptions],
-    `DELETE /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposDeleteCommitComment_Options, ReposDeleteCommitComment_RequestOptions],
-    `DELETE /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposDeleteFile_Options, ReposDeleteFile_RequestOptions],
-    `DELETE /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposDeleteDownload_Options, ReposDeleteDownload_RequestOptions],
-    `DELETE /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitDeleteRef_Options, GitDeleteRef_RequestOptions],
-    `DELETE /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposDeleteHook_Options, ReposDeleteHook_RequestOptions],
-    `DELETE /repos/:owner/:repo/import`: js.Tuple2[MigrationsCancelImport_Options, MigrationsCancelImport_RequestOptions],
+    `DELETE /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposRemoveCollaboratorEndpoint, ReposRemoveCollaboratorRequestOptions],
+    `DELETE /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposDeleteCommitCommentEndpoint, ReposDeleteCommitCommentRequestOptions],
+    `DELETE /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposDeleteFileEndpoint, ReposDeleteFileRequestOptions],
+    `DELETE /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposDeleteDownloadEndpoint, ReposDeleteDownloadRequestOptions],
+    `DELETE /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitDeleteRefEndpoint, GitDeleteRefRequestOptions],
+    `DELETE /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposDeleteHookEndpoint, ReposDeleteHookRequestOptions],
+    `DELETE /repos/:owner/:repo/import`: js.Tuple2[MigrationsCancelImportEndpoint, MigrationsCancelImportRequestOptions],
     `DELETE /repos/:owner/:repo/interaction-limits`: js.Tuple2[
-      InteractionsRemoveRestrictionsForRepo_Options, 
-      InteractionsRemoveRestrictionsForRepo_RequestOptions
+      InteractionsRemoveRestrictionsForRepoEndpoint, 
+      InteractionsRemoveRestrictionsForRepoRequestOptions
     ],
-    `DELETE /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposDeleteInvitation_Options, ReposDeleteInvitation_RequestOptions],
-    `DELETE /repos/:owner/:repo/issues/:issue_number/assignees`: js.Tuple2[IssuesRemoveAssignees_Options, IssuesRemoveAssignees_RequestOptions],
-    `DELETE /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesRemoveLabels_Options, IssuesRemoveLabels_RequestOptions],
-    `DELETE /repos/:owner/:repo/issues/:issue_number/labels/:name`: js.Tuple2[IssuesRemoveLabel_Options, IssuesRemoveLabel_RequestOptions],
-    `DELETE /repos/:owner/:repo/issues/:issue_number/lock`: js.Tuple2[IssuesUnlock_Options, IssuesUnlock_RequestOptions],
-    `DELETE /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesDeleteComment_Options, IssuesDeleteComment_RequestOptions],
-    `DELETE /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposRemoveDeployKey_Options, ReposRemoveDeployKey_RequestOptions],
-    `DELETE /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesDeleteLabel_Options, IssuesDeleteLabel_RequestOptions],
-    `DELETE /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesDeleteMilestone_Options, IssuesDeleteMilestone_RequestOptions],
-    `DELETE /repos/:owner/:repo/pages`: js.Tuple2[ReposDisablePagesSite_Options, ReposDisablePagesSite_RequestOptions],
-    `DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsDeleteReviewRequest_Options, PullsDeleteReviewRequest_RequestOptions],
-    `DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsDeletePendingReview_Options, PullsDeletePendingReview_RequestOptions],
-    `DELETE /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsDeleteComment_Options, PullsDeleteComment_RequestOptions],
-    `DELETE /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposDeleteRelease_Options, ReposDeleteRelease_RequestOptions],
-    `DELETE /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposDeleteReleaseAsset_Options, ReposDeleteReleaseAsset_RequestOptions],
+    `DELETE /repos/:owner/:repo/invitations/:invitation_id`: js.Tuple2[ReposDeleteInvitationEndpoint, ReposDeleteInvitationRequestOptions],
+    `DELETE /repos/:owner/:repo/issues/:issue_number/assignees`: js.Tuple2[IssuesRemoveAssigneesEndpoint, IssuesRemoveAssigneesRequestOptions],
+    `DELETE /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesRemoveLabelsEndpoint, IssuesRemoveLabelsRequestOptions],
+    `DELETE /repos/:owner/:repo/issues/:issue_number/labels/:name`: js.Tuple2[IssuesRemoveLabelEndpoint, IssuesRemoveLabelRequestOptions],
+    `DELETE /repos/:owner/:repo/issues/:issue_number/lock`: js.Tuple2[IssuesUnlockEndpoint, IssuesUnlockRequestOptions],
+    `DELETE /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesDeleteCommentEndpoint, IssuesDeleteCommentRequestOptions],
+    `DELETE /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposRemoveDeployKeyEndpoint, ReposRemoveDeployKeyRequestOptions],
+    `DELETE /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesDeleteLabelEndpoint, IssuesDeleteLabelRequestOptions],
+    `DELETE /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesDeleteMilestoneEndpoint, IssuesDeleteMilestoneRequestOptions],
+    `DELETE /repos/:owner/:repo/pages`: js.Tuple2[ReposDisablePagesSiteEndpoint, ReposDisablePagesSiteRequestOptions],
+    `DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsDeleteReviewRequestEndpoint, PullsDeleteReviewRequestRequestOptions],
+    `DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: js.Tuple2[PullsDeletePendingReviewEndpoint, PullsDeletePendingReviewRequestOptions],
+    `DELETE /repos/:owner/:repo/pulls/comments/:comment_id`: js.Tuple2[PullsDeleteCommentEndpoint, PullsDeleteCommentRequestOptions],
+    `DELETE /repos/:owner/:repo/releases/:release_id`: js.Tuple2[ReposDeleteReleaseEndpoint, ReposDeleteReleaseRequestOptions],
+    `DELETE /repos/:owner/:repo/releases/assets/:asset_id`: js.Tuple2[ReposDeleteReleaseAssetEndpoint, ReposDeleteReleaseAssetRequestOptions],
     `DELETE /repos/:owner/:repo/subscription`: js.Tuple2[
-      ActivityDeleteRepoSubscription_Options, 
-      ActivityDeleteRepoSubscription_RequestOptions
+      ActivityDeleteRepoSubscriptionEndpoint, 
+      ActivityDeleteRepoSubscriptionRequestOptions
     ],
     `DELETE /repos/:owner/:repo/vulnerability-alerts`: js.Tuple2[
-      ReposDisableVulnerabilityAlerts_Options, 
-      ReposDisableVulnerabilityAlerts_RequestOptions
+      ReposDisableVulnerabilityAlertsEndpoint, 
+      ReposDisableVulnerabilityAlertsRequestOptions
     ],
-    `DELETE /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[ScimRemoveUserFromOrg_Options, ScimRemoveUserFromOrg_RequestOptions],
-    `DELETE /teams/:team_id`: js.Tuple2[TeamsDelete_Options, TeamsDelete_RequestOptions],
-    `DELETE /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsDeleteDiscussion_Options, TeamsDeleteDiscussion_RequestOptions],
-    `DELETE /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsDeleteDiscussionComment_Options, TeamsDeleteDiscussionComment_RequestOptions],
-    `DELETE /teams/:team_id/members/:username`: js.Tuple2[TeamsRemoveMember_Options, TeamsRemoveMember_RequestOptions],
-    `DELETE /teams/:team_id/memberships/:username`: js.Tuple2[TeamsRemoveMembership_Options, TeamsRemoveMembership_RequestOptions],
-    `DELETE /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsRemoveProject_Options, TeamsRemoveProject_RequestOptions],
-    `DELETE /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsRemoveRepo_Options, TeamsRemoveRepo_RequestOptions],
-    `DELETE /user/blocks/:username`: js.Tuple2[UsersUnblock_Options, UsersUnblock_RequestOptions],
-    `DELETE /user/emails`: js.Tuple2[UsersDeleteEmails_Options, UsersDeleteEmails_RequestOptions],
-    `DELETE /user/following/:username`: js.Tuple2[UsersUnfollow_Options, UsersUnfollow_RequestOptions],
-    `DELETE /user/gpg_keys/:gpg_key_id`: js.Tuple2[UsersDeleteGpgKey_Options, UsersDeleteGpgKey_RequestOptions],
+    `DELETE /scim/v2/organizations/:org/Users/:scim_user_id`: js.Tuple2[ScimRemoveUserFromOrgEndpoint, ScimRemoveUserFromOrgRequestOptions],
+    `DELETE /teams/:team_id`: js.Tuple2[TeamsDeleteEndpoint, TeamsDeleteRequestOptions],
+    `DELETE /teams/:team_id/discussions/:discussion_number`: js.Tuple2[TeamsDeleteDiscussionEndpoint, TeamsDeleteDiscussionRequestOptions],
+    `DELETE /teams/:team_id/discussions/:discussion_number/comments/:comment_number`: js.Tuple2[TeamsDeleteDiscussionCommentEndpoint, TeamsDeleteDiscussionCommentRequestOptions],
+    `DELETE /teams/:team_id/members/:username`: js.Tuple2[TeamsRemoveMemberEndpoint, TeamsRemoveMemberRequestOptions],
+    `DELETE /teams/:team_id/memberships/:username`: js.Tuple2[TeamsRemoveMembershipEndpoint, TeamsRemoveMembershipRequestOptions],
+    `DELETE /teams/:team_id/projects/:project_id`: js.Tuple2[TeamsRemoveProjectEndpoint, TeamsRemoveProjectRequestOptions],
+    `DELETE /teams/:team_id/repos/:owner/:repo`: js.Tuple2[TeamsRemoveRepoEndpoint, TeamsRemoveRepoRequestOptions],
+    `DELETE /user/blocks/:username`: js.Tuple2[UsersUnblockEndpoint, UsersUnblockRequestOptions],
+    `DELETE /user/emails`: js.Tuple2[UsersDeleteEmailsEndpoint, UsersDeleteEmailsRequestOptions],
+    `DELETE /user/following/:username`: js.Tuple2[UsersUnfollowEndpoint, UsersUnfollowRequestOptions],
+    `DELETE /user/gpg_keys/:gpg_key_id`: js.Tuple2[UsersDeleteGpgKeyEndpoint, UsersDeleteGpgKeyRequestOptions],
     `DELETE /user/installations/:installation_id/repositories/:repository_id`: js.Tuple2[
-      AppsRemoveRepoFromInstallation_Options, 
-      AppsRemoveRepoFromInstallation_RequestOptions
+      AppsRemoveRepoFromInstallationEndpoint, 
+      AppsRemoveRepoFromInstallationRequestOptions
     ],
-    `DELETE /user/keys/:key_id`: js.Tuple2[UsersDeletePublicKey_Options, UsersDeletePublicKey_RequestOptions],
+    `DELETE /user/keys/:key_id`: js.Tuple2[UsersDeletePublicKeyEndpoint, UsersDeletePublicKeyRequestOptions],
     `DELETE /user/migrations/:migration_id/archive`: js.Tuple2[
-      MigrationsDeleteArchiveForAuthenticatedUser_Options, 
-      MigrationsDeleteArchiveForAuthenticatedUser_RequestOptions
+      MigrationsDeleteArchiveForAuthenticatedUserEndpoint, 
+      MigrationsDeleteArchiveForAuthenticatedUserRequestOptions
     ],
     `DELETE /user/migrations/:migration_id/repos/:repo_name/lock`: js.Tuple2[
-      MigrationsUnlockRepoForAuthenticatedUser_Options, 
-      MigrationsUnlockRepoForAuthenticatedUser_RequestOptions
+      MigrationsUnlockRepoForAuthenticatedUserEndpoint, 
+      MigrationsUnlockRepoForAuthenticatedUserRequestOptions
     ],
-    `DELETE /user/repository_invitations/:invitation_id`: js.Tuple2[ReposDeclineInvitation_Options, ReposDeclineInvitation_RequestOptions],
-    `DELETE /user/starred/:owner/:repo`: js.Tuple2[ActivityUnstarRepo_Options, ActivityUnstarRepo_RequestOptions],
+    `DELETE /user/repository_invitations/:invitation_id`: js.Tuple2[ReposDeclineInvitationEndpoint, ReposDeclineInvitationRequestOptions],
+    `DELETE /user/starred/:owner/:repo`: js.Tuple2[ActivityUnstarRepoEndpoint, ActivityUnstarRepoRequestOptions],
     `DELETE /user/subscriptions/:owner/:repo`: js.Tuple2[
-      ActivityStopWatchingRepoLegacy_Options, 
-      ActivityStopWatchingRepoLegacy_RequestOptions
+      ActivityStopWatchingRepoLegacyEndpoint, 
+      ActivityStopWatchingRepoLegacyRequestOptions
     ],
-    `GET /app`: js.Tuple2[AppsGetAuthenticated_Options, AppsGetAuthenticated_RequestOptions],
-    `GET /app/installations`: js.Tuple2[AppsListInstallations_Options, AppsListInstallations_RequestOptions],
-    `GET /app/installations/:installation_id`: js.Tuple2[AppsGetInstallation_Options, AppsGetInstallation_RequestOptions],
+    `GET /app`: js.Tuple2[AppsGetAuthenticatedEndpoint, AppsGetAuthenticatedRequestOptions],
+    `GET /app/installations`: js.Tuple2[AppsListInstallationsEndpoint, AppsListInstallationsRequestOptions],
+    `GET /app/installations/:installation_id`: js.Tuple2[AppsGetInstallationEndpoint, AppsGetInstallationRequestOptions],
     `GET /applications/:client_id/tokens/:access_token`: js.Tuple2[
-      OauthAuthorizationsCheckAuthorization_Options, 
-      OauthAuthorizationsCheckAuthorization_RequestOptions
+      OauthAuthorizationsCheckAuthorizationEndpoint, 
+      OauthAuthorizationsCheckAuthorizationRequestOptions
     ],
-    `GET /applications/grants`: js.Tuple2[
-      OauthAuthorizationsListGrants_Options, 
-      OauthAuthorizationsListGrants_RequestOptions
-    ],
-    `GET /applications/grants/:grant_id`: js.Tuple2[OauthAuthorizationsGetGrant_Options, OauthAuthorizationsGetGrant_RequestOptions],
-    `GET /apps/:app_slug`: js.Tuple2[AppsGetBySlug_Options, AppsGetBySlug_RequestOptions],
+    `GET /applications/grants`: js.Tuple2[OauthAuthorizationsListGrantsEndpoint, OauthAuthorizationsListGrantsRequestOptions],
+    `GET /applications/grants/:grant_id`: js.Tuple2[OauthAuthorizationsGetGrantEndpoint, OauthAuthorizationsGetGrantRequestOptions],
+    `GET /apps/:app_slug`: js.Tuple2[AppsGetBySlugEndpoint, AppsGetBySlugRequestOptions],
     `GET /authorizations`: js.Tuple2[
-      OauthAuthorizationsListAuthorizations_Options, 
-      OauthAuthorizationsListAuthorizations_RequestOptions
+      OauthAuthorizationsListAuthorizationsEndpoint, 
+      OauthAuthorizationsListAuthorizationsRequestOptions
     ],
     `GET /authorizations/:authorization_id`: js.Tuple2[
-      OauthAuthorizationsGetAuthorization_Options, 
-      OauthAuthorizationsGetAuthorization_RequestOptions
+      OauthAuthorizationsGetAuthorizationEndpoint, 
+      OauthAuthorizationsGetAuthorizationRequestOptions
     ],
     `GET /codes_of_conduct`: js.Tuple2[
-      CodesOfConductListConductCodes_Options, 
-      CodesOfConductListConductCodes_RequestOptions
+      CodesOfConductListConductCodesEndpoint, 
+      CodesOfConductListConductCodesRequestOptions
     ],
-    `GET /codes_of_conduct/:key`: js.Tuple2[CodesOfConductGetConductCode_Options, CodesOfConductGetConductCode_RequestOptions],
-    `GET /emojis`: js.Tuple2[EmojisGet_Options, EmojisGet_RequestOptions],
-    `GET /events`: js.Tuple2[ActivityListPublicEvents_Options, ActivityListPublicEvents_RequestOptions],
-    `GET /feeds`: js.Tuple2[ActivityListFeeds_Options, ActivityListFeeds_RequestOptions],
-    `GET /gists`: js.Tuple2[GistsList_Options, GistsList_RequestOptions],
-    `GET /gists/:gist_id`: js.Tuple2[GistsGet_Options, GistsGet_RequestOptions],
-    `GET /gists/:gist_id/:sha`: js.Tuple2[GistsGetRevision_Options, GistsGetRevision_RequestOptions],
-    `GET /gists/:gist_id/comments`: js.Tuple2[GistsListComments_Options, GistsListComments_RequestOptions],
-    `GET /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsGetComment_Options, GistsGetComment_RequestOptions],
-    `GET /gists/:gist_id/commits`: js.Tuple2[GistsListCommits_Options, GistsListCommits_RequestOptions],
-    `GET /gists/:gist_id/forks`: js.Tuple2[GistsListForks_Options, GistsListForks_RequestOptions],
-    `GET /gists/:gist_id/star`: js.Tuple2[GistsCheckIsStarred_Options, GistsCheckIsStarred_RequestOptions],
-    `GET /gists/public`: js.Tuple2[GistsListPublic_Options, GistsListPublic_RequestOptions],
-    `GET /gists/starred`: js.Tuple2[GistsListStarred_Options, GistsListStarred_RequestOptions],
-    `GET /gitignore/templates`: js.Tuple2[GitignoreListTemplates_Options, GitignoreListTemplates_RequestOptions],
-    `GET /gitignore/templates/:name`: js.Tuple2[GitignoreGetTemplate_Options, GitignoreGetTemplate_RequestOptions],
-    `GET /installation/repositories`: js.Tuple2[AppsListRepos_Options, AppsListRepos_RequestOptions],
-    `GET /issues`: js.Tuple2[IssuesList_Options, IssuesList_RequestOptions],
-    `GET /legacy/issues/search/:owner/:repository/:state/:keyword`: js.Tuple2[SearchIssuesLegacy_Options, SearchIssuesLegacy_RequestOptions],
-    `GET /legacy/repos/search/:keyword`: js.Tuple2[SearchReposLegacy_Options, SearchReposLegacy_RequestOptions],
-    `GET /legacy/user/email/:email`: js.Tuple2[SearchEmailLegacy_Options, SearchEmailLegacy_RequestOptions],
-    `GET /legacy/user/search/:keyword`: js.Tuple2[SearchUsersLegacy_Options, SearchUsersLegacy_RequestOptions],
+    `GET /codes_of_conduct/:key`: js.Tuple2[CodesOfConductGetConductCodeEndpoint, CodesOfConductGetConductCodeRequestOptions],
+    `GET /emojis`: js.Tuple2[EmojisGetEndpoint, EmojisGetRequestOptions],
+    `GET /events`: js.Tuple2[ActivityListPublicEventsEndpoint, ActivityListPublicEventsRequestOptions],
+    `GET /feeds`: js.Tuple2[ActivityListFeedsEndpoint, ActivityListFeedsRequestOptions],
+    `GET /gists`: js.Tuple2[GistsListEndpoint, GistsListRequestOptions],
+    `GET /gists/:gist_id`: js.Tuple2[GistsGetEndpoint, GistsGetRequestOptions],
+    `GET /gists/:gist_id/:sha`: js.Tuple2[GistsGetRevisionEndpoint, GistsGetRevisionRequestOptions],
+    `GET /gists/:gist_id/comments`: js.Tuple2[GistsListCommentsEndpoint, GistsListCommentsRequestOptions],
+    `GET /gists/:gist_id/comments/:comment_id`: js.Tuple2[GistsGetCommentEndpoint, GistsGetCommentRequestOptions],
+    `GET /gists/:gist_id/commits`: js.Tuple2[GistsListCommitsEndpoint, GistsListCommitsRequestOptions],
+    `GET /gists/:gist_id/forks`: js.Tuple2[GistsListForksEndpoint, GistsListForksRequestOptions],
+    `GET /gists/:gist_id/star`: js.Tuple2[GistsCheckIsStarredEndpoint, GistsCheckIsStarredRequestOptions],
+    `GET /gists/public`: js.Tuple2[GistsListPublicEndpoint, GistsListPublicRequestOptions],
+    `GET /gists/starred`: js.Tuple2[GistsListStarredEndpoint, GistsListStarredRequestOptions],
+    `GET /gitignore/templates`: js.Tuple2[GitignoreListTemplatesEndpoint, GitignoreListTemplatesRequestOptions],
+    `GET /gitignore/templates/:name`: js.Tuple2[GitignoreGetTemplateEndpoint, GitignoreGetTemplateRequestOptions],
+    `GET /installation/repositories`: js.Tuple2[AppsListReposEndpoint, AppsListReposRequestOptions],
+    `GET /issues`: js.Tuple2[IssuesListEndpoint, IssuesListRequestOptions],
+    `GET /legacy/issues/search/:owner/:repository/:state/:keyword`: js.Tuple2[SearchIssuesLegacyEndpoint, SearchIssuesLegacyRequestOptions],
+    `GET /legacy/repos/search/:keyword`: js.Tuple2[SearchReposLegacyEndpoint, SearchReposLegacyRequestOptions],
+    `GET /legacy/user/email/:email`: js.Tuple2[SearchEmailLegacyEndpoint, SearchEmailLegacyRequestOptions],
+    `GET /legacy/user/search/:keyword`: js.Tuple2[SearchUsersLegacyEndpoint, SearchUsersLegacyRequestOptions],
     `GET /licenses`: js.Tuple2[
-      LicensesListCommonlyUsed_Options | LicensesList_Options, 
-      LicensesListCommonlyUsed_RequestOptions | LicensesList_RequestOptions
+      LicensesListCommonlyUsedEndpoint | LicensesListEndpoint, 
+      LicensesListCommonlyUsedRequestOptions | LicensesListRequestOptions
     ],
-    `GET /licenses/:license`: js.Tuple2[LicensesGet_Options, LicensesGet_RequestOptions],
+    `GET /licenses/:license`: js.Tuple2[LicensesGetEndpoint, LicensesGetRequestOptions],
     `GET /marketplace_listing/accounts/:account_id`: js.Tuple2[
-      AppsCheckAccountIsAssociatedWithAny_Options, 
-      AppsCheckAccountIsAssociatedWithAny_RequestOptions
+      AppsCheckAccountIsAssociatedWithAnyEndpoint, 
+      AppsCheckAccountIsAssociatedWithAnyRequestOptions
     ],
-    `GET /marketplace_listing/plans`: js.Tuple2[AppsListPlans_Options, AppsListPlans_RequestOptions],
+    `GET /marketplace_listing/plans`: js.Tuple2[AppsListPlansEndpoint, AppsListPlansRequestOptions],
     `GET /marketplace_listing/plans/:plan_id/accounts`: js.Tuple2[
-      AppsListAccountsUserOrOrgOnPlan_Options, 
-      AppsListAccountsUserOrOrgOnPlan_RequestOptions
+      AppsListAccountsUserOrOrgOnPlanEndpoint, 
+      AppsListAccountsUserOrOrgOnPlanRequestOptions
     ],
     `GET /marketplace_listing/stubbed/accounts/:account_id`: js.Tuple2[
-      AppsCheckAccountIsAssociatedWithAnyStubbed_Options, 
-      AppsCheckAccountIsAssociatedWithAnyStubbed_RequestOptions
+      AppsCheckAccountIsAssociatedWithAnyStubbedEndpoint, 
+      AppsCheckAccountIsAssociatedWithAnyStubbedRequestOptions
     ],
-    `GET /marketplace_listing/stubbed/plans`: js.Tuple2[AppsListPlansStubbed_Options, AppsListPlansStubbed_RequestOptions],
+    `GET /marketplace_listing/stubbed/plans`: js.Tuple2[AppsListPlansStubbedEndpoint, AppsListPlansStubbedRequestOptions],
     `GET /marketplace_listing/stubbed/plans/:plan_id/accounts`: js.Tuple2[
-      AppsListAccountsUserOrOrgOnPlanStubbed_Options, 
-      AppsListAccountsUserOrOrgOnPlanStubbed_RequestOptions
+      AppsListAccountsUserOrOrgOnPlanStubbedEndpoint, 
+      AppsListAccountsUserOrOrgOnPlanStubbedRequestOptions
     ],
-    `GET /meta`: js.Tuple2[MetaGet_Options, MetaGet_RequestOptions],
+    `GET /meta`: js.Tuple2[MetaGetEndpoint, MetaGetRequestOptions],
     `GET /networks/:owner/:repo/events`: js.Tuple2[
-      ActivityListPublicEventsForRepoNetwork_Options, 
-      ActivityListPublicEventsForRepoNetwork_RequestOptions
+      ActivityListPublicEventsForRepoNetworkEndpoint, 
+      ActivityListPublicEventsForRepoNetworkRequestOptions
     ],
-    `GET /notifications`: js.Tuple2[ActivityListNotifications_Options, ActivityListNotifications_RequestOptions],
-    `GET /notifications/threads/:thread_id`: js.Tuple2[ActivityGetThread_Options, ActivityGetThread_RequestOptions],
-    `GET /notifications/threads/:thread_id/subscription`: js.Tuple2[
-      ActivityGetThreadSubscription_Options, 
-      ActivityGetThreadSubscription_RequestOptions
-    ],
-    `GET /organizations`: js.Tuple2[OrgsList_Options, OrgsList_RequestOptions],
-    `GET /orgs/:org`: js.Tuple2[OrgsGet_Options, OrgsGet_RequestOptions],
-    `GET /orgs/:org/blocks`: js.Tuple2[OrgsListBlockedUsers_Options, OrgsListBlockedUsers_RequestOptions],
-    `GET /orgs/:org/blocks/:username`: js.Tuple2[OrgsCheckBlockedUser_Options, OrgsCheckBlockedUser_RequestOptions],
+    `GET /notifications`: js.Tuple2[ActivityListNotificationsEndpoint, ActivityListNotificationsRequestOptions],
+    `GET /notifications/threads/:thread_id`: js.Tuple2[ActivityGetThreadEndpoint, ActivityGetThreadRequestOptions],
+    `GET /notifications/threads/:thread_id/subscription`: js.Tuple2[ActivityGetThreadSubscriptionEndpoint, ActivityGetThreadSubscriptionRequestOptions],
+    `GET /organizations`: js.Tuple2[OrgsListEndpoint, OrgsListRequestOptions],
+    `GET /orgs/:org`: js.Tuple2[OrgsGetEndpoint, OrgsGetRequestOptions],
+    `GET /orgs/:org/blocks`: js.Tuple2[OrgsListBlockedUsersEndpoint, OrgsListBlockedUsersRequestOptions],
+    `GET /orgs/:org/blocks/:username`: js.Tuple2[OrgsCheckBlockedUserEndpoint, OrgsCheckBlockedUserRequestOptions],
     `GET /orgs/:org/credential-authorizations`: js.Tuple2[
-      OrgsListCredentialAuthorizations_Options, 
-      OrgsListCredentialAuthorizations_RequestOptions
+      OrgsListCredentialAuthorizationsEndpoint, 
+      OrgsListCredentialAuthorizationsRequestOptions
     ],
     `GET /orgs/:org/events`: js.Tuple2[
-      ActivityListPublicEventsForOrg_Options, 
-      ActivityListPublicEventsForOrg_RequestOptions
+      ActivityListPublicEventsForOrgEndpoint, 
+      ActivityListPublicEventsForOrgRequestOptions
     ],
-    `GET /orgs/:org/hooks`: js.Tuple2[OrgsListHooks_Options, OrgsListHooks_RequestOptions],
-    `GET /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsGetHook_Options, OrgsGetHook_RequestOptions],
+    `GET /orgs/:org/hooks`: js.Tuple2[OrgsListHooksEndpoint, OrgsListHooksRequestOptions],
+    `GET /orgs/:org/hooks/:hook_id`: js.Tuple2[OrgsGetHookEndpoint, OrgsGetHookRequestOptions],
     `GET /orgs/:org/installation`: js.Tuple2[
-      AppsGetOrgInstallation_Options | AppsFindOrgInstallation_Options, 
-      AppsGetOrgInstallation_RequestOptions | AppsFindOrgInstallation_RequestOptions
+      AppsGetOrgInstallationEndpoint | AppsFindOrgInstallationEndpoint, 
+      AppsGetOrgInstallationRequestOptions | AppsFindOrgInstallationRequestOptions
     ],
     `GET /orgs/:org/interaction-limits`: js.Tuple2[
-      InteractionsGetRestrictionsForOrg_Options, 
-      InteractionsGetRestrictionsForOrg_RequestOptions
+      InteractionsGetRestrictionsForOrgEndpoint, 
+      InteractionsGetRestrictionsForOrgRequestOptions
     ],
-    `GET /orgs/:org/invitations`: js.Tuple2[OrgsListPendingInvitations_Options, OrgsListPendingInvitations_RequestOptions],
-    `GET /orgs/:org/invitations/:invitation_id/teams`: js.Tuple2[OrgsListInvitationTeams_Options, OrgsListInvitationTeams_RequestOptions],
-    `GET /orgs/:org/issues`: js.Tuple2[IssuesListForOrg_Options, IssuesListForOrg_RequestOptions],
-    `GET /orgs/:org/members`: js.Tuple2[OrgsListMembers_Options, OrgsListMembers_RequestOptions],
-    `GET /orgs/:org/members/:username`: js.Tuple2[OrgsCheckMembership_Options, OrgsCheckMembership_RequestOptions],
-    `GET /orgs/:org/memberships/:username`: js.Tuple2[OrgsGetMembership_Options, OrgsGetMembership_RequestOptions],
-    `GET /orgs/:org/migrations`: js.Tuple2[MigrationsListForOrg_Options, MigrationsListForOrg_RequestOptions],
-    `GET /orgs/:org/migrations/:migration_id`: js.Tuple2[MigrationsGetStatusForOrg_Options, MigrationsGetStatusForOrg_RequestOptions],
-    `GET /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[MigrationsGetArchiveForOrg_Options, MigrationsGetArchiveForOrg_RequestOptions],
-    `GET /orgs/:org/outside_collaborators`: js.Tuple2[OrgsListOutsideCollaborators_Options, OrgsListOutsideCollaborators_RequestOptions],
-    `GET /orgs/:org/projects`: js.Tuple2[ProjectsListForOrg_Options, ProjectsListForOrg_RequestOptions],
-    `GET /orgs/:org/public_members`: js.Tuple2[OrgsListPublicMembers_Options, OrgsListPublicMembers_RequestOptions],
-    `GET /orgs/:org/public_members/:username`: js.Tuple2[OrgsCheckPublicMembership_Options, OrgsCheckPublicMembership_RequestOptions],
-    `GET /orgs/:org/repos`: js.Tuple2[ReposListForOrg_Options, ReposListForOrg_RequestOptions],
-    `GET /orgs/:org/teams`: js.Tuple2[TeamsList_Options, TeamsList_RequestOptions],
-    `GET /orgs/:org/teams/:team_slug`: js.Tuple2[TeamsGetByName_Options, TeamsGetByName_RequestOptions],
-    `GET /projects/:project_id`: js.Tuple2[ProjectsGet_Options, ProjectsGet_RequestOptions],
-    `GET /projects/:project_id/collaborators`: js.Tuple2[ProjectsListCollaborators_Options, ProjectsListCollaborators_RequestOptions],
+    `GET /orgs/:org/invitations`: js.Tuple2[OrgsListPendingInvitationsEndpoint, OrgsListPendingInvitationsRequestOptions],
+    `GET /orgs/:org/invitations/:invitation_id/teams`: js.Tuple2[OrgsListInvitationTeamsEndpoint, OrgsListInvitationTeamsRequestOptions],
+    `GET /orgs/:org/issues`: js.Tuple2[IssuesListForOrgEndpoint, IssuesListForOrgRequestOptions],
+    `GET /orgs/:org/members`: js.Tuple2[OrgsListMembersEndpoint, OrgsListMembersRequestOptions],
+    `GET /orgs/:org/members/:username`: js.Tuple2[OrgsCheckMembershipEndpoint, OrgsCheckMembershipRequestOptions],
+    `GET /orgs/:org/memberships/:username`: js.Tuple2[OrgsGetMembershipEndpoint, OrgsGetMembershipRequestOptions],
+    `GET /orgs/:org/migrations`: js.Tuple2[MigrationsListForOrgEndpoint, MigrationsListForOrgRequestOptions],
+    `GET /orgs/:org/migrations/:migration_id`: js.Tuple2[MigrationsGetStatusForOrgEndpoint, MigrationsGetStatusForOrgRequestOptions],
+    `GET /orgs/:org/migrations/:migration_id/archive`: js.Tuple2[MigrationsGetArchiveForOrgEndpoint, MigrationsGetArchiveForOrgRequestOptions],
+    `GET /orgs/:org/outside_collaborators`: js.Tuple2[OrgsListOutsideCollaboratorsEndpoint, OrgsListOutsideCollaboratorsRequestOptions],
+    `GET /orgs/:org/projects`: js.Tuple2[ProjectsListForOrgEndpoint, ProjectsListForOrgRequestOptions],
+    `GET /orgs/:org/public_members`: js.Tuple2[OrgsListPublicMembersEndpoint, OrgsListPublicMembersRequestOptions],
+    `GET /orgs/:org/public_members/:username`: js.Tuple2[OrgsCheckPublicMembershipEndpoint, OrgsCheckPublicMembershipRequestOptions],
+    `GET /orgs/:org/repos`: js.Tuple2[ReposListForOrgEndpoint, ReposListForOrgRequestOptions],
+    `GET /orgs/:org/teams`: js.Tuple2[TeamsListEndpoint, TeamsListRequestOptions],
+    `GET /orgs/:org/teams/:team_slug`: js.Tuple2[TeamsGetByNameEndpoint, TeamsGetByNameRequestOptions],
+    `GET /projects/:project_id`: js.Tuple2[ProjectsGetEndpoint, ProjectsGetRequestOptions],
+    `GET /projects/:project_id/collaborators`: js.Tuple2[ProjectsListCollaboratorsEndpoint, ProjectsListCollaboratorsRequestOptions],
     `GET /projects/:project_id/collaborators/:username/permission`: js.Tuple2[
-      ProjectsReviewUserPermissionLevel_Options, 
-      ProjectsReviewUserPermissionLevel_RequestOptions
+      ProjectsReviewUserPermissionLevelEndpoint, 
+      ProjectsReviewUserPermissionLevelRequestOptions
     ],
-    `GET /projects/:project_id/columns`: js.Tuple2[ProjectsListColumns_Options, ProjectsListColumns_RequestOptions],
-    `GET /projects/columns/:column_id`: js.Tuple2[ProjectsGetColumn_Options, ProjectsGetColumn_RequestOptions],
-    `GET /projects/columns/:column_id/cards`: js.Tuple2[ProjectsListCards_Options, ProjectsListCards_RequestOptions],
-    `GET /projects/columns/cards/:card_id`: js.Tuple2[ProjectsGetCard_Options, ProjectsGetCard_RequestOptions],
-    `GET /rate_limit`: js.Tuple2[RateLimitGet_Options, RateLimitGet_RequestOptions],
-    `GET /repos/:owner/:repo`: js.Tuple2[ReposGet_Options, ReposGet_RequestOptions],
-    `GET /repos/:owner/:repo/:archive_format/:ref`: js.Tuple2[ReposGetArchiveLink_Options, ReposGetArchiveLink_RequestOptions],
-    `GET /repos/:owner/:repo/assignees`: js.Tuple2[IssuesListAssignees_Options, IssuesListAssignees_RequestOptions],
-    `GET /repos/:owner/:repo/assignees/:assignee`: js.Tuple2[IssuesCheckAssignee_Options, IssuesCheckAssignee_RequestOptions],
-    `GET /repos/:owner/:repo/branches`: js.Tuple2[ReposListBranches_Options, ReposListBranches_RequestOptions],
-    `GET /repos/:owner/:repo/branches/:branch`: js.Tuple2[ReposGetBranch_Options, ReposGetBranch_RequestOptions],
-    `GET /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposGetBranchProtection_Options, ReposGetBranchProtection_RequestOptions],
+    `GET /projects/:project_id/columns`: js.Tuple2[ProjectsListColumnsEndpoint, ProjectsListColumnsRequestOptions],
+    `GET /projects/columns/:column_id`: js.Tuple2[ProjectsGetColumnEndpoint, ProjectsGetColumnRequestOptions],
+    `GET /projects/columns/:column_id/cards`: js.Tuple2[ProjectsListCardsEndpoint, ProjectsListCardsRequestOptions],
+    `GET /projects/columns/cards/:card_id`: js.Tuple2[ProjectsGetCardEndpoint, ProjectsGetCardRequestOptions],
+    `GET /rate_limit`: js.Tuple2[RateLimitGetEndpoint, RateLimitGetRequestOptions],
+    `GET /repos/:owner/:repo`: js.Tuple2[ReposGetEndpoint, ReposGetRequestOptions],
+    `GET /repos/:owner/:repo/:archive_format/:ref`: js.Tuple2[ReposGetArchiveLinkEndpoint, ReposGetArchiveLinkRequestOptions],
+    `GET /repos/:owner/:repo/assignees`: js.Tuple2[IssuesListAssigneesEndpoint, IssuesListAssigneesRequestOptions],
+    `GET /repos/:owner/:repo/assignees/:assignee`: js.Tuple2[IssuesCheckAssigneeEndpoint, IssuesCheckAssigneeRequestOptions],
+    `GET /repos/:owner/:repo/branches`: js.Tuple2[ReposListBranchesEndpoint, ReposListBranchesRequestOptions],
+    `GET /repos/:owner/:repo/branches/:branch`: js.Tuple2[ReposGetBranchEndpoint, ReposGetBranchRequestOptions],
+    `GET /repos/:owner/:repo/branches/:branch/protection`: js.Tuple2[ReposGetBranchProtectionEndpoint, ReposGetBranchProtectionRequestOptions],
     `GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins`: js.Tuple2[
-      ReposGetProtectedBranchAdminEnforcement_Options, 
-      ReposGetProtectedBranchAdminEnforcement_RequestOptions
+      ReposGetProtectedBranchAdminEnforcementEndpoint, 
+      ReposGetProtectedBranchAdminEnforcementRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews`: js.Tuple2[
-      ReposGetProtectedBranchPullRequestReviewEnforcement_Options, 
-      ReposGetProtectedBranchPullRequestReviewEnforcement_RequestOptions
+      ReposGetProtectedBranchPullRequestReviewEnforcementEndpoint, 
+      ReposGetProtectedBranchPullRequestReviewEnforcementRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/required_signatures`: js.Tuple2[
-      ReposGetProtectedBranchRequiredSignatures_Options, 
-      ReposGetProtectedBranchRequiredSignatures_RequestOptions
+      ReposGetProtectedBranchRequiredSignaturesEndpoint, 
+      ReposGetProtectedBranchRequiredSignaturesRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks`: js.Tuple2[
-      ReposGetProtectedBranchRequiredStatusChecks_Options, 
-      ReposGetProtectedBranchRequiredStatusChecks_RequestOptions
+      ReposGetProtectedBranchRequiredStatusChecksEndpoint, 
+      ReposGetProtectedBranchRequiredStatusChecksRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: js.Tuple2[
-      ReposListProtectedBranchRequiredStatusChecksContexts_Options, 
-      ReposListProtectedBranchRequiredStatusChecksContexts_RequestOptions
+      ReposListProtectedBranchRequiredStatusChecksContextsEndpoint, 
+      ReposListProtectedBranchRequiredStatusChecksContextsRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/restrictions`: js.Tuple2[
-      ReposGetProtectedBranchRestrictions_Options, 
-      ReposGetProtectedBranchRestrictions_RequestOptions
+      ReposGetProtectedBranchRestrictionsEndpoint, 
+      ReposGetProtectedBranchRestrictionsRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams`: js.Tuple2[
-      ReposListProtectedBranchTeamRestrictions_Options, 
-      ReposListProtectedBranchTeamRestrictions_RequestOptions
+      ReposListProtectedBranchTeamRestrictionsEndpoint, 
+      ReposListProtectedBranchTeamRestrictionsRequestOptions
     ],
     `GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users`: js.Tuple2[
-      ReposListProtectedBranchUserRestrictions_Options, 
-      ReposListProtectedBranchUserRestrictions_RequestOptions
+      ReposListProtectedBranchUserRestrictionsEndpoint, 
+      ReposListProtectedBranchUserRestrictionsRequestOptions
     ],
-    `GET /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksGet_Options, ChecksGet_RequestOptions],
-    `GET /repos/:owner/:repo/check-runs/:check_run_id/annotations`: js.Tuple2[ChecksListAnnotations_Options, ChecksListAnnotations_RequestOptions],
-    `GET /repos/:owner/:repo/check-suites/:check_suite_id`: js.Tuple2[ChecksGetSuite_Options, ChecksGetSuite_RequestOptions],
-    `GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs`: js.Tuple2[ChecksListForSuite_Options, ChecksListForSuite_RequestOptions],
-    `GET /repos/:owner/:repo/collaborators`: js.Tuple2[ReposListCollaborators_Options, ReposListCollaborators_RequestOptions],
-    `GET /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposCheckCollaborator_Options, ReposCheckCollaborator_RequestOptions],
+    `GET /repos/:owner/:repo/check-runs/:check_run_id`: js.Tuple2[ChecksGetEndpoint, ChecksGetRequestOptions],
+    `GET /repos/:owner/:repo/check-runs/:check_run_id/annotations`: js.Tuple2[ChecksListAnnotationsEndpoint, ChecksListAnnotationsRequestOptions],
+    `GET /repos/:owner/:repo/check-suites/:check_suite_id`: js.Tuple2[ChecksGetSuiteEndpoint, ChecksGetSuiteRequestOptions],
+    `GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs`: js.Tuple2[ChecksListForSuiteEndpoint, ChecksListForSuiteRequestOptions],
+    `GET /repos/:owner/:repo/collaborators`: js.Tuple2[ReposListCollaboratorsEndpoint, ReposListCollaboratorsRequestOptions],
+    `GET /repos/:owner/:repo/collaborators/:username`: js.Tuple2[ReposCheckCollaboratorEndpoint, ReposCheckCollaboratorRequestOptions],
     `GET /repos/:owner/:repo/collaborators/:username/permission`: js.Tuple2[
-      ReposGetCollaboratorPermissionLevel_Options, 
-      ReposGetCollaboratorPermissionLevel_RequestOptions
+      ReposGetCollaboratorPermissionLevelEndpoint, 
+      ReposGetCollaboratorPermissionLevelRequestOptions
     ],
-    `GET /repos/:owner/:repo/comments`: js.Tuple2[ReposListCommitComments_Options, ReposListCommitComments_RequestOptions],
-    `GET /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposGetCommitComment_Options, ReposGetCommitComment_RequestOptions],
-    `GET /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[
-      ReactionsListForCommitComment_Options, 
-      ReactionsListForCommitComment_RequestOptions
-    ],
-    `GET /repos/:owner/:repo/commits`: js.Tuple2[ReposListCommits_Options, ReposListCommits_RequestOptions],
-    `GET /repos/:owner/:repo/commits/:commit_sha`: js.Tuple2[ReposGetCommit_Options, ReposGetCommit_RequestOptions],
+    `GET /repos/:owner/:repo/comments`: js.Tuple2[ReposListCommitCommentsEndpoint, ReposListCommitCommentsRequestOptions],
+    `GET /repos/:owner/:repo/comments/:comment_id`: js.Tuple2[ReposGetCommitCommentEndpoint, ReposGetCommitCommentRequestOptions],
+    `GET /repos/:owner/:repo/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForCommitCommentEndpoint, ReactionsListForCommitCommentRequestOptions],
+    `GET /repos/:owner/:repo/commits`: js.Tuple2[ReposListCommitsEndpoint, ReposListCommitsRequestOptions],
+    `GET /repos/:owner/:repo/commits/:commit_sha`: js.Tuple2[ReposGetCommitEndpoint, ReposGetCommitRequestOptions],
     `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`: js.Tuple2[
-      ReposListBranchesForHeadCommit_Options, 
-      ReposListBranchesForHeadCommit_RequestOptions
+      ReposListBranchesForHeadCommitEndpoint, 
+      ReposListBranchesForHeadCommitRequestOptions
     ],
     `GET /repos/:owner/:repo/commits/:commit_sha/pulls`: js.Tuple2[
-      ReposListPullRequestsAssociatedWithCommit_Options, 
-      ReposListPullRequestsAssociatedWithCommit_RequestOptions
+      ReposListPullRequestsAssociatedWithCommitEndpoint, 
+      ReposListPullRequestsAssociatedWithCommitRequestOptions
     ],
-    `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitRefSha_Options, ReposGetCommitRefSha_RequestOptions],
-    `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRef_Options, ChecksListForRef_RequestOptions],
-    `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRef_Options, ChecksListSuitesForRef_RequestOptions],
-    `GET /repos/:owner/:repo/commits/:ref/comments`: js.Tuple2[ReposListCommentsForCommit_Options, ReposListCommentsForCommit_RequestOptions],
-    `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRef_Options, ReposGetCombinedStatusForRef_RequestOptions],
-    `GET /repos/:owner/:repo/commits/:ref/statuses`: js.Tuple2[ReposListStatusesForRef_Options, ReposListStatusesForRef_RequestOptions],
-    `GET /repos/:owner/:repo/community/code_of_conduct`: js.Tuple2[CodesOfConductGetForRepo_Options, CodesOfConductGetForRepo_RequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref`: js.Tuple2[ReposGetCommitRefShaEndpoint, ReposGetCommitRefShaRequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref/check-runs`: js.Tuple2[ChecksListForRefEndpoint, ChecksListForRefRequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref/check-suites`: js.Tuple2[ChecksListSuitesForRefEndpoint, ChecksListSuitesForRefRequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref/comments`: js.Tuple2[ReposListCommentsForCommitEndpoint, ReposListCommentsForCommitRequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref/status`: js.Tuple2[ReposGetCombinedStatusForRefEndpoint, ReposGetCombinedStatusForRefRequestOptions],
+    `GET /repos/:owner/:repo/commits/:ref/statuses`: js.Tuple2[ReposListStatusesForRefEndpoint, ReposListStatusesForRefRequestOptions],
+    `GET /repos/:owner/:repo/community/code_of_conduct`: js.Tuple2[CodesOfConductGetForRepoEndpoint, CodesOfConductGetForRepoRequestOptions],
     `GET /repos/:owner/:repo/community/profile`: js.Tuple2[
-      ReposRetrieveCommunityProfileMetrics_Options, 
-      ReposRetrieveCommunityProfileMetrics_RequestOptions
+      ReposRetrieveCommunityProfileMetricsEndpoint, 
+      ReposRetrieveCommunityProfileMetricsRequestOptions
     ],
-    `GET /repos/:owner/:repo/compare/:base...:head`: js.Tuple2[ReposCompareCommits_Options, ReposCompareCommits_RequestOptions],
-    `GET /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposGetContents_Options, ReposGetContents_RequestOptions],
-    `GET /repos/:owner/:repo/contributors`: js.Tuple2[ReposListContributors_Options, ReposListContributors_RequestOptions],
-    `GET /repos/:owner/:repo/deployments`: js.Tuple2[ReposListDeployments_Options, ReposListDeployments_RequestOptions],
-    `GET /repos/:owner/:repo/deployments/:deployment_id`: js.Tuple2[ReposGetDeployment_Options, ReposGetDeployment_RequestOptions],
-    `GET /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposListDeploymentStatuses_Options, ReposListDeploymentStatuses_RequestOptions],
-    `GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id`: js.Tuple2[ReposGetDeploymentStatus_Options, ReposGetDeploymentStatus_RequestOptions],
-    `GET /repos/:owner/:repo/downloads`: js.Tuple2[ReposListDownloads_Options, ReposListDownloads_RequestOptions],
-    `GET /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposGetDownload_Options, ReposGetDownload_RequestOptions],
-    `GET /repos/:owner/:repo/events`: js.Tuple2[ActivityListRepoEvents_Options, ActivityListRepoEvents_RequestOptions],
-    `GET /repos/:owner/:repo/forks`: js.Tuple2[ReposListForks_Options, ReposListForks_RequestOptions],
-    `GET /repos/:owner/:repo/git/blobs/:file_sha`: js.Tuple2[GitGetBlob_Options, GitGetBlob_RequestOptions],
-    `GET /repos/:owner/:repo/git/commits/:commit_sha`: js.Tuple2[GitGetCommit_Options, GitGetCommit_RequestOptions],
-    `GET /repos/:owner/:repo/git/refs/:namespace`: js.Tuple2[GitListRefs_Options, GitListRefs_RequestOptions],
-    `GET /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitGetRef_Options, GitGetRef_RequestOptions],
-    `GET /repos/:owner/:repo/git/tags/:tag_sha`: js.Tuple2[GitGetTag_Options, GitGetTag_RequestOptions],
-    `GET /repos/:owner/:repo/git/trees/:tree_sha`: js.Tuple2[GitGetTree_Options, GitGetTree_RequestOptions],
-    `GET /repos/:owner/:repo/hooks`: js.Tuple2[ReposListHooks_Options, ReposListHooks_RequestOptions],
-    `GET /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposGetHook_Options, ReposGetHook_RequestOptions],
-    `GET /repos/:owner/:repo/import`: js.Tuple2[MigrationsGetImportProgress_Options, MigrationsGetImportProgress_RequestOptions],
-    `GET /repos/:owner/:repo/import/authors`: js.Tuple2[MigrationsGetCommitAuthors_Options, MigrationsGetCommitAuthors_RequestOptions],
-    `GET /repos/:owner/:repo/import/large_files`: js.Tuple2[MigrationsGetLargeFiles_Options, MigrationsGetLargeFiles_RequestOptions],
+    `GET /repos/:owner/:repo/compare/:base...:head`: js.Tuple2[ReposCompareCommitsEndpoint, ReposCompareCommitsRequestOptions],
+    `GET /repos/:owner/:repo/contents/:path`: js.Tuple2[ReposGetContentsEndpoint, ReposGetContentsRequestOptions],
+    `GET /repos/:owner/:repo/contributors`: js.Tuple2[ReposListContributorsEndpoint, ReposListContributorsRequestOptions],
+    `GET /repos/:owner/:repo/deployments`: js.Tuple2[ReposListDeploymentsEndpoint, ReposListDeploymentsRequestOptions],
+    `GET /repos/:owner/:repo/deployments/:deployment_id`: js.Tuple2[ReposGetDeploymentEndpoint, ReposGetDeploymentRequestOptions],
+    `GET /repos/:owner/:repo/deployments/:deployment_id/statuses`: js.Tuple2[ReposListDeploymentStatusesEndpoint, ReposListDeploymentStatusesRequestOptions],
+    `GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id`: js.Tuple2[ReposGetDeploymentStatusEndpoint, ReposGetDeploymentStatusRequestOptions],
+    `GET /repos/:owner/:repo/downloads`: js.Tuple2[ReposListDownloadsEndpoint, ReposListDownloadsRequestOptions],
+    `GET /repos/:owner/:repo/downloads/:download_id`: js.Tuple2[ReposGetDownloadEndpoint, ReposGetDownloadRequestOptions],
+    `GET /repos/:owner/:repo/events`: js.Tuple2[ActivityListRepoEventsEndpoint, ActivityListRepoEventsRequestOptions],
+    `GET /repos/:owner/:repo/forks`: js.Tuple2[ReposListForksEndpoint, ReposListForksRequestOptions],
+    `GET /repos/:owner/:repo/git/blobs/:file_sha`: js.Tuple2[GitGetBlobEndpoint, GitGetBlobRequestOptions],
+    `GET /repos/:owner/:repo/git/commits/:commit_sha`: js.Tuple2[GitGetCommitEndpoint, GitGetCommitRequestOptions],
+    `GET /repos/:owner/:repo/git/refs/:namespace`: js.Tuple2[GitListRefsEndpoint, GitListRefsRequestOptions],
+    `GET /repos/:owner/:repo/git/refs/:ref`: js.Tuple2[GitGetRefEndpoint, GitGetRefRequestOptions],
+    `GET /repos/:owner/:repo/git/tags/:tag_sha`: js.Tuple2[GitGetTagEndpoint, GitGetTagRequestOptions],
+    `GET /repos/:owner/:repo/git/trees/:tree_sha`: js.Tuple2[GitGetTreeEndpoint, GitGetTreeRequestOptions],
+    `GET /repos/:owner/:repo/hooks`: js.Tuple2[ReposListHooksEndpoint, ReposListHooksRequestOptions],
+    `GET /repos/:owner/:repo/hooks/:hook_id`: js.Tuple2[ReposGetHookEndpoint, ReposGetHookRequestOptions],
+    `GET /repos/:owner/:repo/import`: js.Tuple2[MigrationsGetImportProgressEndpoint, MigrationsGetImportProgressRequestOptions],
+    `GET /repos/:owner/:repo/import/authors`: js.Tuple2[MigrationsGetCommitAuthorsEndpoint, MigrationsGetCommitAuthorsRequestOptions],
+    `GET /repos/:owner/:repo/import/large_files`: js.Tuple2[MigrationsGetLargeFilesEndpoint, MigrationsGetLargeFilesRequestOptions],
     `GET /repos/:owner/:repo/installation`: js.Tuple2[
-      AppsGetRepoInstallation_Options | AppsFindRepoInstallation_Options, 
-      AppsGetRepoInstallation_RequestOptions | AppsFindRepoInstallation_RequestOptions
+      AppsGetRepoInstallationEndpoint | AppsFindRepoInstallationEndpoint, 
+      AppsGetRepoInstallationRequestOptions | AppsFindRepoInstallationRequestOptions
     ],
     `GET /repos/:owner/:repo/interaction-limits`: js.Tuple2[
-      InteractionsGetRestrictionsForRepo_Options, 
-      InteractionsGetRestrictionsForRepo_RequestOptions
+      InteractionsGetRestrictionsForRepoEndpoint, 
+      InteractionsGetRestrictionsForRepoRequestOptions
     ],
-    `GET /repos/:owner/:repo/invitations`: js.Tuple2[ReposListInvitations_Options, ReposListInvitations_RequestOptions],
-    `GET /repos/:owner/:repo/issues`: js.Tuple2[IssuesListForRepo_Options, IssuesListForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesGet_Options, IssuesGet_RequestOptions],
-    `GET /repos/:owner/:repo/issues/:issue_number/comments`: js.Tuple2[IssuesListComments_Options, IssuesListComments_RequestOptions],
-    `GET /repos/:owner/:repo/issues/:issue_number/events`: js.Tuple2[IssuesListEvents_Options, IssuesListEvents_RequestOptions],
-    `GET /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesListLabelsOnIssue_Options, IssuesListLabelsOnIssue_RequestOptions],
-    `GET /repos/:owner/:repo/issues/:issue_number/reactions`: js.Tuple2[ReactionsListForIssue_Options, ReactionsListForIssue_RequestOptions],
-    `GET /repos/:owner/:repo/issues/:issue_number/timeline`: js.Tuple2[IssuesListEventsForTimeline_Options, IssuesListEventsForTimeline_RequestOptions],
-    `GET /repos/:owner/:repo/issues/comments`: js.Tuple2[IssuesListCommentsForRepo_Options, IssuesListCommentsForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesGetComment_Options, IssuesGetComment_RequestOptions],
-    `GET /repos/:owner/:repo/issues/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForIssueComment_Options, ReactionsListForIssueComment_RequestOptions],
-    `GET /repos/:owner/:repo/issues/events`: js.Tuple2[IssuesListEventsForRepo_Options, IssuesListEventsForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/issues/events/:event_id`: js.Tuple2[IssuesGetEvent_Options, IssuesGetEvent_RequestOptions],
-    `GET /repos/:owner/:repo/keys`: js.Tuple2[ReposListDeployKeys_Options, ReposListDeployKeys_RequestOptions],
-    `GET /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposGetDeployKey_Options, ReposGetDeployKey_RequestOptions],
-    `GET /repos/:owner/:repo/labels`: js.Tuple2[IssuesListLabelsForRepo_Options, IssuesListLabelsForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesGetLabel_Options, IssuesGetLabel_RequestOptions],
-    `GET /repos/:owner/:repo/languages`: js.Tuple2[ReposListLanguages_Options, ReposListLanguages_RequestOptions],
-    `GET /repos/:owner/:repo/license`: js.Tuple2[LicensesGetForRepo_Options, LicensesGetForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/milestones`: js.Tuple2[IssuesListMilestonesForRepo_Options, IssuesListMilestonesForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesGetMilestone_Options, IssuesGetMilestone_RequestOptions],
-    `GET /repos/:owner/:repo/milestones/:milestone_number/labels`: js.Tuple2[IssuesListLabelsForMilestone_Options, IssuesListLabelsForMilestone_RequestOptions],
+    `GET /repos/:owner/:repo/invitations`: js.Tuple2[ReposListInvitationsEndpoint, ReposListInvitationsRequestOptions],
+    `GET /repos/:owner/:repo/issues`: js.Tuple2[IssuesListForRepoEndpoint, IssuesListForRepoRequestOptions],
+    `GET /repos/:owner/:repo/issues/:issue_number`: js.Tuple2[IssuesGetEndpoint, IssuesGetRequestOptions],
+    `GET /repos/:owner/:repo/issues/:issue_number/comments`: js.Tuple2[IssuesListCommentsEndpoint, IssuesListCommentsRequestOptions],
+    `GET /repos/:owner/:repo/issues/:issue_number/events`: js.Tuple2[IssuesListEventsEndpoint, IssuesListEventsRequestOptions],
+    `GET /repos/:owner/:repo/issues/:issue_number/labels`: js.Tuple2[IssuesListLabelsOnIssueEndpoint, IssuesListLabelsOnIssueRequestOptions],
+    `GET /repos/:owner/:repo/issues/:issue_number/reactions`: js.Tuple2[ReactionsListForIssueEndpoint, ReactionsListForIssueRequestOptions],
+    `GET /repos/:owner/:repo/issues/:issue_number/timeline`: js.Tuple2[IssuesListEventsForTimelineEndpoint, IssuesListEventsForTimelineRequestOptions],
+    `GET /repos/:owner/:repo/issues/comments`: js.Tuple2[IssuesListCommentsForRepoEndpoint, IssuesListCommentsForRepoRequestOptions],
+    `GET /repos/:owner/:repo/issues/comments/:comment_id`: js.Tuple2[IssuesGetCommentEndpoint, IssuesGetCommentRequestOptions],
+    `GET /repos/:owner/:repo/issues/comments/:comment_id/reactions`: js.Tuple2[ReactionsListForIssueCommentEndpoint, ReactionsListForIssueCommentRequestOptions],
+    `GET /repos/:owner/:repo/issues/events`: js.Tuple2[IssuesListEventsForRepoEndpoint, IssuesListEventsForRepoRequestOptions],
+    `GET /repos/:owner/:repo/issues/events/:event_id`: js.Tuple2[IssuesGetEventEndpoint, IssuesGetEventRequestOptions],
+    `GET /repos/:owner/:repo/keys`: js.Tuple2[ReposListDeployKeysEndpoint, ReposListDeployKeysRequestOptions],
+    `GET /repos/:owner/:repo/keys/:key_id`: js.Tuple2[ReposGetDeployKeyEndpoint, ReposGetDeployKeyRequestOptions],
+    `GET /repos/:owner/:repo/labels`: js.Tuple2[IssuesListLabelsForRepoEndpoint, IssuesListLabelsForRepoRequestOptions],
+    `GET /repos/:owner/:repo/labels/:name`: js.Tuple2[IssuesGetLabelEndpoint, IssuesGetLabelRequestOptions],
+    `GET /repos/:owner/:repo/languages`: js.Tuple2[ReposListLanguagesEndpoint, ReposListLanguagesRequestOptions],
+    `GET /repos/:owner/:repo/license`: js.Tuple2[LicensesGetForRepoEndpoint, LicensesGetForRepoRequestOptions],
+    `GET /repos/:owner/:repo/milestones`: js.Tuple2[IssuesListMilestonesForRepoEndpoint, IssuesListMilestonesForRepoRequestOptions],
+    `GET /repos/:owner/:repo/milestones/:milestone_number`: js.Tuple2[IssuesGetMilestoneEndpoint, IssuesGetMilestoneRequestOptions],
+    `GET /repos/:owner/:repo/milestones/:milestone_number/labels`: js.Tuple2[IssuesListLabelsForMilestoneEndpoint, IssuesListLabelsForMilestoneRequestOptions],
     `GET /repos/:owner/:repo/notifications`: js.Tuple2[
-      ActivityListNotificationsForRepo_Options, 
-      ActivityListNotificationsForRepo_RequestOptions
+      ActivityListNotificationsForRepoEndpoint, 
+      ActivityListNotificationsForRepoRequestOptions
     ],
-    `GET /repos/:owner/:repo/pages`: js.Tuple2[ReposGetPages_Options, ReposGetPages_RequestOptions],
-    `GET /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposListPagesBuilds_Options, ReposListPagesBuilds_RequestOptions],
-    `GET /repos/:owner/:repo/pages/builds/:build_id`: js.Tuple2[ReposGetPagesBuild_Options, ReposGetPagesBuild_RequestOptions],
-    `GET /repos/:owner/:repo/pages/builds/latest`: js.Tuple2[ReposGetLatestPagesBuild_Options, ReposGetLatestPagesBuild_RequestOptions],
-    `GET /repos/:owner/:repo/projects`: js.Tuple2[ProjectsListForRepo_Options, ProjectsListForRepo_RequestOptions],
-    `GET /repos/:owner/:repo/pulls`: js.Tuple2[PullsList_Options, PullsList_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsGet_Options, PullsGet_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[PullsListComments_Options, PullsListComments_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/commits`: js.Tuple2[PullsListCommits_Options, PullsListCommits_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/files`: js.Tuple2[PullsListFiles_Options, PullsListFiles_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsCheckIfMerged_Options, PullsCheckIfMerged_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsListReviewRequests_Options, PullsListReviewRequests_RequestOptions],
-    `GET /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsListReviews_Options, PullsListReviews_RequestOptions]
+    `GET /repos/:owner/:repo/pages`: js.Tuple2[ReposGetPagesEndpoint, ReposGetPagesRequestOptions],
+    `GET /repos/:owner/:repo/pages/builds`: js.Tuple2[ReposListPagesBuildsEndpoint, ReposListPagesBuildsRequestOptions],
+    `GET /repos/:owner/:repo/pages/builds/:build_id`: js.Tuple2[ReposGetPagesBuildEndpoint, ReposGetPagesBuildRequestOptions],
+    `GET /repos/:owner/:repo/pages/builds/latest`: js.Tuple2[ReposGetLatestPagesBuildEndpoint, ReposGetLatestPagesBuildRequestOptions],
+    `GET /repos/:owner/:repo/projects`: js.Tuple2[ProjectsListForRepoEndpoint, ProjectsListForRepoRequestOptions],
+    `GET /repos/:owner/:repo/pulls`: js.Tuple2[PullsListEndpoint, PullsListRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number`: js.Tuple2[PullsGetEndpoint, PullsGetRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number/comments`: js.Tuple2[PullsListCommentsEndpoint, PullsListCommentsRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number/commits`: js.Tuple2[PullsListCommitsEndpoint, PullsListCommitsRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number/files`: js.Tuple2[PullsListFilesEndpoint, PullsListFilesRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number/merge`: js.Tuple2[PullsCheckIfMergedEndpoint, PullsCheckIfMergedRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers`: js.Tuple2[PullsListReviewRequestsEndpoint, PullsListReviewRequestsRequestOptions],
+    `GET /repos/:owner/:repo/pulls/:pull_number/reviews`: js.Tuple2[PullsListReviewsEndpoint, PullsListReviewsRequestOptions]
   ): Routes = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("DELETE /app/installations/:installation_id")(`DELETE /app/installations/:installation_id`)

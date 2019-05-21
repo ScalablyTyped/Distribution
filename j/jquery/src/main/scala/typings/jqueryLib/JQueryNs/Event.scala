@@ -16,31 +16,31 @@ import scala.scalajs.js.annotation._
   */
 trait Event extends js.Object {
   // MouseEvent, KeyboardEvent, TouchEvent
-  var altKey: js.UndefOr[scala.Boolean]
+  var altKey: js.UndefOr[scala.Boolean] = js.undefined
   // region Copied properties
   // #region Copied properties
   // Event
-  var bubbles: js.UndefOr[scala.Boolean]
+  var bubbles: js.UndefOr[scala.Boolean] = js.undefined
   // MouseEvent
-  var button: js.UndefOr[scala.Double]
-  var buttons: js.UndefOr[scala.Double]
-  var cancelable: js.UndefOr[scala.Boolean]
+  var button: js.UndefOr[scala.Double] = js.undefined
+  var buttons: js.UndefOr[scala.Double] = js.undefined
+  var cancelable: js.UndefOr[scala.Boolean] = js.undefined
   // TouchEvent
-  var changedTouches: js.UndefOr[stdLib.TouchList]
+  var changedTouches: js.UndefOr[stdLib.TouchList] = js.undefined
   // KeyboardEvent
   /** @deprecated */
-  var char: js.UndefOr[java.lang.String]
+  var char: js.UndefOr[java.lang.String] = js.undefined
   /** @deprecated */
-  var charCode: js.UndefOr[scala.Double]
-  var clientX: js.UndefOr[scala.Double]
-  var clientY: js.UndefOr[scala.Double]
-  var ctrlKey: js.UndefOr[scala.Boolean]
+  var charCode: js.UndefOr[scala.Double] = js.undefined
+  var clientX: js.UndefOr[scala.Double] = js.undefined
+  var clientY: js.UndefOr[scala.Double] = js.undefined
+  var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined
   // UIEvent
-  var detail: js.UndefOr[scala.Double]
-  var eventPhase: js.UndefOr[scala.Double]
-  var key: js.UndefOr[java.lang.String]
+  var detail: js.UndefOr[scala.Double] = js.undefined
+  var eventPhase: js.UndefOr[scala.Double] = js.undefined
+  var key: js.UndefOr[java.lang.String] = js.undefined
   /** @deprecated */
-  var keyCode: js.UndefOr[scala.Double]
+  var keyCode: js.UndefOr[scala.Double] = js.undefined
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -77,9 +77,9 @@ trait Event extends js.Object {
   </html>
   ```
     */
-  var metaKey: js.UndefOr[scala.Boolean]
-  var offsetX: js.UndefOr[scala.Double]
-  var offsetY: js.UndefOr[scala.Double]
+  var metaKey: js.UndefOr[scala.Boolean] = js.undefined
+  var offsetX: js.UndefOr[scala.Double] = js.undefined
+  var offsetY: js.UndefOr[scala.Double] = js.undefined
   /**
     * The mouse position relative to the left edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageX/ }\`
@@ -115,7 +115,7 @@ trait Event extends js.Object {
   </html>
   ```
     */
-  var pageX: js.UndefOr[scala.Double]
+  var pageX: js.UndefOr[scala.Double] = js.undefined
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -151,14 +151,14 @@ trait Event extends js.Object {
   </html>
   ```
     */
-  var pageY: js.UndefOr[scala.Double]
+  var pageY: js.UndefOr[scala.Double] = js.undefined
   // PointerEvent
-  var pointerId: js.UndefOr[scala.Double]
-  var pointerType: js.UndefOr[java.lang.String]
-  var screenX: js.UndefOr[scala.Double]
-  var screenY: js.UndefOr[scala.Double]
-  var shiftKey: js.UndefOr[scala.Boolean]
-  var targetTouches: js.UndefOr[stdLib.TouchList]
+  var pointerId: js.UndefOr[scala.Double] = js.undefined
+  var pointerType: js.UndefOr[java.lang.String] = js.undefined
+  var screenX: js.UndefOr[scala.Double] = js.undefined
+  var screenY: js.UndefOr[scala.Double] = js.undefined
+  var shiftKey: js.UndefOr[scala.Boolean] = js.undefined
+  var targetTouches: js.UndefOr[stdLib.TouchList] = js.undefined
   // #endregion
   /**
     * The difference in milliseconds between the time the browser created the event and January 1, 1970.
@@ -205,8 +205,8 @@ trait Event extends js.Object {
     */
   var timeStamp: scala.Double
   /** @deprecated */
-  var toElement: js.UndefOr[stdLib.Element]
-  var touches: js.UndefOr[stdLib.TouchList]
+  var toElement: js.UndefOr[stdLib.Element] = js.undefined
+  var touches: js.UndefOr[stdLib.TouchList] = js.undefined
   /**
     * Describes the nature of the event.
     * @see \`{@link https://api.jquery.com/event.type/ }\`
@@ -219,7 +219,7 @@ trait Event extends js.Object {
   ```
     */
   var `type`: java.lang.String
-  var view: js.UndefOr[stdLib.Window]
+  var view: js.UndefOr[stdLib.Window] = js.undefined
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.
@@ -273,7 +273,7 @@ trait Event extends js.Object {
   </html>
   ```
     */
-  var which: js.UndefOr[scala.Double]
+  var which: js.UndefOr[scala.Double] = js.undefined
   /**
     * Returns whether event.preventDefault() was ever called on this event object.
     * @see \`{@link https://api.jquery.com/event.isDefaultPrevented/ }\`

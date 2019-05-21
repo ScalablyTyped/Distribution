@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HistoryValue extends js.Object {
-  var current: js.UndefOr[StateValue]
+  var current: js.UndefOr[StateValue] = js.undefined
   var states: stdLib.Record[java.lang.String, js.UndefOr[HistoryValue]]
 }
 

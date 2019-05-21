@@ -1243,6 +1243,7 @@
 | 0.755484347617081 | [angular-strap](./a/angular-strap) | AngularStrap - AngularJS directives for Bootstrap
 | 0.7554505379270045 | [upper-case-first](./u/upper-case-first) | Upper case the first character of a string
 | 0.7553452862720675 | [express-fileupload](./e/express-fileupload) | Simple express file upload middleware that wraps a
+| 0.7552543512846988 | [octokit__request](./o/octokit__request) | Send parameterized requests to GitHub’s APIs with 
 | 0.7552317280448658 | [double-ended-queue](./d/double-ended-queue) | Extremely fast double-ended queue implementation
 | 0.7552088469237859 | [lodash_dot_intersectionwi](./l/lodash_dot_intersectionwith) | The lodash method _.intersectionWith exported as a
 | 0.7551482561292696 | [discontinuous-range](./d/discontinuous-range) | for adding, subtracting, and indexing discontinuou
@@ -1682,6 +1683,7 @@
 | 0.7308214182435558 | [rmc-date-picker](./r/rmc-date-picker) | React Mobile DatePicker Component for web and reac
 | 0.7307989190362905 | [rev-hash](./r/rev-hash) | Create a hash for file revving
 | 0.730733088337647 | [git-remote-origin-url](./g/git-remote-origin-url) | Get the remote origin url of a Git repository
+| 0.7306555118183612 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru
 | 0.7304437902842356 | [react-instantsearch-dom](./r/react-instantsearch-dom) | ⚡ Lightning-fast search for React DOM, by Algolia
 | 0.7303879461772753 | [vlq](./v/vlq) | Generate, and decode, base64 VLQ mappings for sour
 | 0.7303339802862869 | [backbone_dot_localstorage](./b/backbone_dot_localstorage) | -
@@ -2103,7 +2105,6 @@
 | 0.7085543407111214 | [argon2](./a/argon2) | An Argon2 library for Node
 | 0.7085519068220276 | [facepaint](./f/facepaint) | Responsive style values for css-in-js.
 | 0.7085067567385734 | [hellosign-embedded](./h/hellosign-embedded) | Embed HelloSign signature requests and templates f
-| 0.7084526488591212 | [dialogflow](./d/dialogflow) | Dialogflow API client for Node.js
 | 0.7083600090059592 | [react-instantsearch-nativ](./r/react-instantsearch-native) | ⚡ Lightning-fast search for React Native, by Algol
 | 0.708347108642133 | [encoding-japanese](./e/encoding-japanese) | Converts character encoding
 | 0.7083046710576566 | [p-series](./p/p-series) | Run promise-returning & async functions in series
@@ -2559,6 +2560,7 @@
 | 0.6867239577908621 | [custom-error-generator](./c/custom-error-generator) | Custom errors and exceptions in Node.js
 | 0.6866011095625817 | [react-monaco-editor](./r/react-monaco-editor) | Monaco Editor for React
 | 0.6865467645348259 | [raspi-board](./r/raspi-board) | Pin mapping functionality for the Raspberry Pi in 
+| 0.6865291097096956 | [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design
 | 0.6864591111996253 | [node-json-db](./n/node-json-db) | Database using JSON file as storage for Node.JS
 | 0.6864064575797372 | [node-machine-id](./n/node-machine-id) | Unique machine (desktop) id (no admin privileges r
 | 0.6863708074302425 | [enhanced-resolve](./e/enhanced-resolve) | Offers a async require.resolve function. It's high
@@ -3636,6 +3638,7 @@
 | 0.62957897725424 | [chai-uuid](./c/chai-uuid) | Chai plugin for performing assertions on UUIDs
 | 0.6295450472757168 | [new-github-issue-url](./n/new-github-issue-url) | Generate a URL for opening a new GitHub issue with
 | 0.6295059441179841 | [yeoman-environment](./y/yeoman-environment) | Handles the lifecyle and bootstrapping of generato
+| 0.6294784128518338 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
 | 0.6293025328217952 | [gulp-typedoc](./g/gulp-typedoc) | Gulp plugin for the TypeDoc typescript documentati
 | 0.629252748088124 | [vega-util](./v/vega-util) | JavaScript utilities for Vega.
 | 0.62919224431418 | [hapi__bell](./h/hapi__bell) | Third-party login plugin for hapi
@@ -4059,6 +4062,7 @@
 | 0.5845259806260339 | [mobx-devtools-mst](./m/mobx-devtools-mst) | Allows debugging mobx-state-tree roots. See 
 | 0.584432952949019 | [bindings](./b/bindings) | Helper module for loading your native module's .no
 | 0.584234274189019 | [react-amplitude](./r/react-amplitude) | React Amplitude Analytics
+| 0.5838911646770788 | [react-native-maps](./r/react-native-maps) | React Native Mapview component for iOS + Android
 | 0.5837945926322724 | [react-native-share](./r/react-native-share) | Social share, sending simple data to other apps.
 | 0.5836375215939507 | [react-simple-maps](./r/react-simple-maps) | An svg map component built with and for React
 | 0.5834811155017207 | [type-fest](./t/type-fest) | A collection of essential TypeScript types
@@ -5475,6 +5479,7 @@
 | 0.36570616095138553 | [icheck](./i/icheck) | Highly customizable checkboxes and radio buttons (
 | 0.36567861441538513 | [lil-uri](./l/lil-uri) | Tiny URI parser and builder with chainable API
 | 0.36541759999248347 | [imap](./i/imap) | An IMAP module for node.js that makes communicatin
+| 0.36500441100933845 | [engine-check](./e/engine-check) | Enforce node engine version from package.json
 | 0.3649243894084272 | [temp-file](./t/temp-file) | typescript export function getTempName(prefix?: st
 | 0.3646963111179154 | [json-editor](./j/json-editor) | JSON Schema based editor
 | 0.36467282467659046 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery
@@ -5541,6 +5546,7 @@
 | 0.3552913597949616 | [json-query](./j/json-query) | Retrieves values from JSON objects for data bindin
 | 0.35513580248669113 | [jui-grid](./j/jui-grid) | JUI grid can handle millions of data, and can disp
 | 0.3549415901341093 | [msgpack](./m/msgpack) | A space-efficient object serialization library for
+| 0.35490310205323 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
 | 0.3548590216480919 | [ethjs-signer](./e/ethjs-signer) | A simple module for signing Ethereum transactions.
 | 0.3547823335430428 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript
 | 0.35476985597432287 | [iscroll](./i/iscroll) | Smooth scrolling for the web
@@ -5585,6 +5591,7 @@
 | 0.34921485706016625 | [angular-modal](./a/angular-modal) | easily add a modal to your angular app
 | 0.3487730746978246 | [istanbul-middleware](./i/istanbul-middleware) | Connect middleware for Istanbul to handle server-s
 | 0.34871561485202146 | [jupyterlab__outputarea](./j/jupyterlab__outputarea) | JupyterLab - Notebook Output Area
+| 0.3486700901248488 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio
 | 0.3485362986917547 | [app-root-dir](./a/app-root-dir) | Simple module to infer the root directory of the c
 | 0.3485362003398511 | [selectables](./s/selectables) | Select html elements on webpage using mouse
 | 0.3484357407848645 | [superagent-prefix](./s/superagent-prefix) | A plugin for superagent that prefixes absolute URL
@@ -5598,6 +5605,7 @@
 | 0.34747953669990744 | [zenscroll](./z/zenscroll) | A module to smooth-scroll web pages and scrollable
 | 0.3472357171931895 | [redux-storage-engine-jsur](./r/redux-storage-engine-jsurl) | jsurl engine for redux-store. Store your state in 
 | 0.3470463256712284 | [json-js](./j/json-js) | JSON in JavaScript
+| 0.34700509497762233 | [webicon](./w/webicon) | Icon library
 | 0.34680540301615237 | [ez-plus](./e/ez-plus) | A jQuery image zoom plug-in, with tints, easing an
 | 0.346707174655458 | [jupyterlab__completer](./j/jupyterlab__completer) | JupyterLab - Completer
 | 0.3466264391182379 | [knockout-amd-helpers](./k/knockout-amd-helpers) | Makes Knockout and AMD modules work better togethe
@@ -6108,6 +6116,7 @@
 | 0.24475940324150736 | [gl-react-dom](./g/gl-react-dom) | DOM implementation of gl-react, an universal React
 | 0.24473973041007896 | [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension
 | 0.24469509999961347 | [traceback](./t/traceback) | Easy access to the call stack, written in pure Jav
+| 0.24453959647817508 | [reach__alert](./r/reach__alert) | Screenreader friendly alert messages.
 | 0.24453053664589347 | [fpsmeter](./f/fpsmeter) | Sexy, fast, and themable FPS meter.
 | 0.24445279053979568 | [react-copy-write](./r/react-copy-write) |  react-copy-write
 | 0.2439302319737026 | [bunyan-blackhole](./b/bunyan-blackhole) | create a fully functional bunyan logger that doesn

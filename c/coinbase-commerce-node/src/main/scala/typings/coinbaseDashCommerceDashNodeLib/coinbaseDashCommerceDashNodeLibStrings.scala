@@ -124,6 +124,9 @@ object coinbaseDashCommerceDashNodeLibStrings {
   sealed trait `charge:pending` extends js.Object
   
   @js.native
+  sealed trait `charge:resolved` extends js.Object
+  
+  @js.native
   sealed trait checkout extends js.Object
   
   @js.native
@@ -225,6 +228,8 @@ object coinbaseDashCommerceDashNodeLibStrings {
   def `charge:failed`: `charge:failed` = "charge:failed".asInstanceOf[`charge:failed`]
   @scala.inline
   def `charge:pending`: `charge:pending` = "charge:pending".asInstanceOf[`charge:pending`]
+  @scala.inline
+  def `charge:resolved`: `charge:resolved` = "charge:resolved".asInstanceOf[`charge:resolved`]
   @scala.inline
   def checkout: checkout = "checkout".asInstanceOf[checkout]
   @scala.inline

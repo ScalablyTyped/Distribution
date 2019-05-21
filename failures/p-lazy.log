@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/p-lazy/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/p-lazy),TsIdentLibrarySimple(p-lazy)),TsIdentModule(None,List(p-lazy))) [id => p-lazy, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(p-lazy)) [id => p-lazy, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(p-lazy) [id => p-lazy, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibrarySimple(p-lazy) [id => p-lazy, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => p-lazy, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(p-lazy) / TsDeclInterface(PLazy))] 
 [debug] PhaseRunner.scala:84 Success [id => p-lazy, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing p-lazy [id => p-lazy, phase => scala.js] 

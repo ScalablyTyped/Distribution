@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PatchOptions extends js.Object {
   var enabled: scala.Boolean
-  var version: js.UndefOr[java.lang.String]
+  var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object PatchOptions {

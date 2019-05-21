@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Itinfo extends js.Object {
   val itinfo: scala.Double
   val lcid: scala.Double
-  var pptinfo: js.UndefOr[scala.Nothing]
+  var pptinfo: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object Anon_Itinfo {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-fs"
-version := "2.8-dt-20190212Z-526932"
+version := "2.8-dt-20190212Z-6a40b3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

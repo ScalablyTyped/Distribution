@@ -67,6 +67,8 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var having_Original: Where[QM, RM, RV] = js.native
   @JSName("innerJoin")
   var innerJoin_Original: Join[QM, RM, RV] = js.native
+  @JSName("intersect")
+  var intersect_Original: SetOperations[QM] = js.native
   @JSName("into")
   var into_Original: Table[QM, RM, RV] = js.native
   @JSName("joinRaw")
@@ -139,9 +141,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var select_Original: Select[QM, RM, RV] = js.native
   @JSName("table")
   var table_Original: Table[QM, RM, RV] = js.native
+  @JSName("unionAll")
+  var unionAll_Original: SetOperations[QM] = js.native
   // Union
   @JSName("union")
-  var union_Original: Union[QM] = js.native
+  var union_Original: SetOperations[QM] = js.native
   @JSName("whereBetween")
   var whereBetween_Original: WhereBetween[QM, RM, RV] = js.native
   @JSName("whereColumn")
@@ -577,6 +581,7 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def as(alias: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
   def avg(columnName: java.lang.String): this.type = js.native
   def avgDistinct(columnName: java.lang.String): this.type = js.native
+  def clearOrder(): this.type = js.native
   // Clear
   def clearSelect(): this.type = js.native
   def clearWhere(): this.type = js.native
@@ -785,6 +790,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   ): QueryBuilder[QM, RM, RV] = js.native
   def havingExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def havingIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def havingIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def havingIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
+  def havingIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
@@ -833,6 +863,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def havingNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def havingNotIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def havingNotIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def havingNotIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def havingNotIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
@@ -899,7 +954,107 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def innerJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
-  def intersect(callback: js.Function0[scala.Unit]): this.type = js.native
+  def intersect(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def intersect(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ],
+    wrap: scala.Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def intersect(
+    callbacks: (js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ])*
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def intersect(
+    callbacks: js.Array[
+      js.ThisFunction1[
+        /* this */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        /* queryBuilder */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        scala.Unit
+      ]
+    ]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def intersect(
+    callbacks: js.Array[
+      js.ThisFunction1[
+        /* this */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        /* queryBuilder */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        scala.Unit
+      ]
+    ],
+    wrap: scala.Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
   def into(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
@@ -1102,6 +1257,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHavingExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def orHavingIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orHavingIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orHavingIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
+  def orHavingIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
@@ -1150,6 +1330,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHavingNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def orHavingNotIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orHavingNotIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orHavingNotIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def orHavingNotIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
@@ -1362,6 +1567,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def orWhereIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[
@@ -1566,6 +1796,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
@@ -1799,7 +2054,107 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     js.Array[QM], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def unionAll(callback: js.Function0[scala.Unit]): this.type = js.native
+  def unionAll(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ],
+    wrap: scala.Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    callbacks: (js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ])*
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    callbacks: js.Array[
+      js.ThisFunction1[
+        /* this */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        /* queryBuilder */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        scala.Unit
+      ]
+    ]
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
+  def unionAll(
+    callbacks: js.Array[
+      js.ThisFunction1[
+        /* this */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        /* queryBuilder */ QueryBuilder[
+          QM, 
+          js.Array[QM], 
+          /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+        ], 
+        scala.Unit
+      ]
+    ],
+    wrap: scala.Boolean
+  ): QueryBuilder[
+    QM, 
+    js.Array[QM], 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+  ] = js.native
   // Wheres
   def where(
     callback: js.ThisFunction1[
@@ -1989,6 +2344,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def whereIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def whereIn(
     column: ColumnRef,
     callback: js.ThisFunction1[
@@ -2194,6 +2574,31 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNotExists(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotIn(
+    column: js.Array[ColumnRef],
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      /* queryBuilder */ QueryBuilder[
+        QM, 
+        js.Array[QM], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+      ], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotIn(
+    column: js.Array[ColumnRef],
+    query: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotIn(column: js.Array[ColumnRef], values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def whereNotIn(
     column: ColumnRef,
     callback: js.ThisFunction1[

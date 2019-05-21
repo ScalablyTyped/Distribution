@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluent-react"
-version := "0.8-dt-20190326Z-e69b56"
+version := "0.8-dt-20190326Z-73ba17"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "fluent" % "0.11-dt-20190326Z-6512c1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-56dde3",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

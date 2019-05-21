@@ -12,11 +12,7 @@ trait Anon_Description[TContext, TSource] extends js.Object {
   ] = js.undefined
   var _gqcGetRecordIdFn: js.UndefOr[graphqlDashComposeLib.esmObjectTypeComposerMod.GetRecordIdFn[TSource, TContext]] = js.undefined
   var _gqcInputTypeComposer: js.UndefOr[graphqlDashComposeLib.esmInputTypeComposerMod.InputTypeComposer[TContext]] = js.undefined
-  var _gqcInterfaces: js.UndefOr[
-    js.Array[
-      graphqlLib.graphqlMod.GraphQLInterfaceType | (graphqlDashComposeLib.esmInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext])
-    ]
-  ] = js.undefined
+  var _gqcInterfaces: js.UndefOr[js.Array[graphqlDashComposeLib.esmInterfaceTypeComposerMod.ComposeInterfaceType]] = js.undefined
   var _gqcRelations: js.UndefOr[
     graphqlDashComposeLib.esmObjectTypeComposerMod.RelationThunkMap[TSource, TContext]
   ] = js.undefined
@@ -36,9 +32,7 @@ object Anon_Description {
     _gqcFields: graphqlDashComposeLib.esmObjectTypeComposerMod.ComposeFieldConfigMap[TSource, TContext] = null,
     _gqcGetRecordIdFn: graphqlDashComposeLib.esmObjectTypeComposerMod.GetRecordIdFn[TSource, TContext] = null,
     _gqcInputTypeComposer: graphqlDashComposeLib.esmInputTypeComposerMod.InputTypeComposer[TContext] = null,
-    _gqcInterfaces: js.Array[
-      graphqlLib.graphqlMod.GraphQLInterfaceType | (graphqlDashComposeLib.esmInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext])
-    ] = null,
+    _gqcInterfaces: js.Array[graphqlDashComposeLib.esmInterfaceTypeComposerMod.ComposeInterfaceType] = null,
     _gqcRelations: graphqlDashComposeLib.esmObjectTypeComposerMod.RelationThunkMap[TSource, TContext] = null,
     _gqcResolvers: stdLib.Map[
       java.lang.String, 

@@ -5,53 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Options extends js.Object {
-  var bounds: reactDashRndLib.reactDashRndLibStrings.parent | reactDashRndLib.reactDashRndLibStrings.window | reactDashRndLib.reactDashRndLibStrings.body | java.lang.String = js.native
-  var className: java.lang.String = js.native
-  var default: reactDashRndLib.Anon_Height = js.native
-  var disableDragging: js.UndefOr[scala.Boolean] = js.native
-  var enableResizing: js.UndefOr[Enable] = js.native
-  var height: scala.Double | java.lang.String = js.native
-  var lockAspectRatio: scala.Boolean = js.native
-  var maxHeight: scala.Double | java.lang.String = js.native
-  var maxWidth: scala.Double | java.lang.String = js.native
-  var minHeight: scala.Double | java.lang.String = js.native
-  var minWidth: scala.Double | java.lang.String = js.native
-  @JSName("onDragStart")
-  var onDragStart_Original: DraggableEventHandler = js.native
-  @JSName("onDragStop")
-  var onDragStop_Original: DraggableEventHandler = js.native
-  @JSName("onDrag")
-  var onDrag_Original: DraggableEventHandler = js.native
-  @JSName("onResizeStop")
-  var onResizeStop_Original: ResizeHandler = js.native
-  var resizeHandleClasses: HandleClasses = js.native
-  var resizeHandleStyles: HandleStyles = js.native
-  var style: js.Any = js.native
-  var width: scala.Double | java.lang.String = js.native
-  var z: scala.Double = js.native
-  def onDrag(e: stdLib.MouseEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDrag(e: stdLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDragStart(e: stdLib.MouseEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDragStart(e: stdLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDragStop(e: stdLib.MouseEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onDragStop(e: stdLib.TouchEvent, data: DraggableData): scala.Unit | reactDashRndLib.reactDashRndLibNumbers.`false` = js.native
-  def onResize(): scala.Unit = js.native
-  def onResizeStart(): scala.Unit = js.native
-  def onResizeStop(
-    e: stdLib.MouseEvent,
-    direction: Direction,
-    ref: stdLib.HTMLDivElement,
-    delta: Size,
-    position: Position
-  ): scala.Unit = js.native
-  def onResizeStop(
-    e: stdLib.TouchEvent,
-    direction: Direction,
-    ref: stdLib.HTMLDivElement,
-    delta: Size,
-    position: Position
-  ): scala.Unit = js.native
+  var bounds: reactDashRndLib.reactDashRndLibStrings.parent | reactDashRndLib.reactDashRndLibStrings.window | reactDashRndLib.reactDashRndLibStrings.body | java.lang.String
+  var className: java.lang.String
+  var default: reactDashRndLib.Anon_Height
+  var disableDragging: js.UndefOr[scala.Boolean] = js.undefined
+  var enableResizing: js.UndefOr[Enable] = js.undefined
+  var height: scala.Double | java.lang.String
+  var lockAspectRatio: scala.Boolean
+  var maxHeight: scala.Double | java.lang.String
+  var maxWidth: scala.Double | java.lang.String
+  var minHeight: scala.Double | java.lang.String
+  var minWidth: scala.Double | java.lang.String
+  var onDrag: DraggableEventHandler
+  var onDragStart: DraggableEventHandler
+  var onDragStop: DraggableEventHandler
+  var onResizeStop: ResizeHandler
+  var position: js.UndefOr[reactDashRndLib.Anon_X] = js.undefined
+  var resizeHandleClasses: HandleClasses
+  var resizeHandleStyles: HandleStyles
+  var style: js.Any
+  var width: scala.Double | java.lang.String
+  var z: scala.Double
+  def onResize(): scala.Unit
+  def onResizeStart(): scala.Unit
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    bounds: reactDashRndLib.reactDashRndLibStrings.parent | reactDashRndLib.reactDashRndLibStrings.window | reactDashRndLib.reactDashRndLibStrings.body | java.lang.String,
+    className: java.lang.String,
+    default: reactDashRndLib.Anon_Height,
+    height: scala.Double | java.lang.String,
+    lockAspectRatio: scala.Boolean,
+    maxHeight: scala.Double | java.lang.String,
+    maxWidth: scala.Double | java.lang.String,
+    minHeight: scala.Double | java.lang.String,
+    minWidth: scala.Double | java.lang.String,
+    onDrag: DraggableEventHandler,
+    onDragStart: DraggableEventHandler,
+    onDragStop: DraggableEventHandler,
+    onResize: () => scala.Unit,
+    onResizeStart: () => scala.Unit,
+    onResizeStop: ResizeHandler,
+    resizeHandleClasses: HandleClasses,
+    resizeHandleStyles: HandleStyles,
+    style: js.Any,
+    width: scala.Double | java.lang.String,
+    z: scala.Double,
+    disableDragging: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResizing: Enable = null,
+    position: reactDashRndLib.Anon_X = null
+  ): Options = {
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], className = className, default = default, height = height.asInstanceOf[js.Any], lockAspectRatio = lockAspectRatio, maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any], onDrag = onDrag, onDragStart = onDragStart, onDragStop = onDragStop, onResize = js.Any.fromFunction0(onResize), onResizeStart = js.Any.fromFunction0(onResizeStart), onResizeStop = onResizeStop, resizeHandleClasses = resizeHandleClasses, resizeHandleStyles = resizeHandleStyles, style = style, width = width.asInstanceOf[js.Any], z = z)
+    if (!js.isUndefined(disableDragging)) __obj.updateDynamic("disableDragging")(disableDragging)
+    if (enableResizing != null) __obj.updateDynamic("enableResizing")(enableResizing)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Options]
+  }
 }
 

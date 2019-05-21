@@ -12,7 +12,7 @@ trait ModelProperties extends js.Object {
     * If this is a discriminator model, baseModelName is the
     * name of the base model.
     */
-  var baseModelName: js.UndefOr[java.lang.String]
+  var baseModelName: js.UndefOr[java.lang.String] = js.undefined
   /** Collection the model uses. */
   var collection: Collection
   /** Connection the model uses. */

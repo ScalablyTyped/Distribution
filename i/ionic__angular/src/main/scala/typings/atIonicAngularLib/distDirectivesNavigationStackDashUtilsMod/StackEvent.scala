@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StackEvent extends js.Object {
-  var animation: js.UndefOr[atIonicCoreLib.distTypesComponentsNavNavDashInterfaceMod.NavDirection]
+  var animation: js.UndefOr[atIonicCoreLib.distTypesComponentsNavNavDashInterfaceMod.NavDirection] = js.undefined
   var direction: atIonicCoreLib.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
   var enteringView: RouteView
   var tabSwitch: scala.Boolean

@@ -13,6 +13,8 @@ object atReachRouterLibComponents {
   type LinkProps[TState] = atReachRouterLib.atReachRouterMod.LinkProps[TState]
   @scala.inline
   def Location: reactLib.reactMod.ComponentType[atReachRouterLib.atReachRouterMod.LocationProps] = js.constructorOf[atReachRouterLib.atReachRouterMod.Location].asInstanceOf[reactLib.reactMod.ComponentType[atReachRouterLib.atReachRouterMod.LocationProps]]
+  @scala.inline
+  def LocationProps: atReachRouterLib.atReachRouterMod.LocationProps.type = atReachRouterLib.atReachRouterMod.LocationProps
   type LocationProps = atReachRouterLib.atReachRouterMod.LocationProps
   @scala.inline
   def LocationProvider: reactLib.reactMod.ComponentType[atReachRouterLib.atReachRouterMod.LocationProviderProps] = js.constructorOf[atReachRouterLib.atReachRouterMod.LocationProvider].asInstanceOf[reactLib.reactMod.ComponentType[atReachRouterLib.atReachRouterMod.LocationProviderProps]]
@@ -21,6 +23,8 @@ object atReachRouterLibComponents {
   type LocationProviderProps = atReachRouterLib.atReachRouterMod.LocationProviderProps
   @scala.inline
   def Match[TParams]: reactLib.reactMod.ComponentType[atReachRouterLib.atReachRouterMod.MatchProps[TParams]] = js.constructorOf[atReachRouterLib.atReachRouterMod.Match[TParams]].asInstanceOf[reactLib.reactMod.ComponentType[atReachRouterLib.atReachRouterMod.MatchProps[TParams]]]
+  @scala.inline
+  def MatchProps: atReachRouterLib.atReachRouterMod.MatchProps.type = atReachRouterLib.atReachRouterMod.MatchProps
   type MatchProps[TParams] = atReachRouterLib.atReachRouterMod.MatchProps[TParams]
   @scala.inline
   def Redirect[TState]: reactLib.reactMod.ComponentType[

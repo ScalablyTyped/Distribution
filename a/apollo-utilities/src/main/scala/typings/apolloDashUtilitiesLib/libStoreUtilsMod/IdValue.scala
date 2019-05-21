@@ -9,7 +9,7 @@ trait IdValue extends js.Object {
   var generated: scala.Boolean
   var id: java.lang.String
   var `type`: apolloDashUtilitiesLib.apolloDashUtilitiesLibStrings.id
-  var typename: js.UndefOr[java.lang.String]
+  var typename: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IdValue {

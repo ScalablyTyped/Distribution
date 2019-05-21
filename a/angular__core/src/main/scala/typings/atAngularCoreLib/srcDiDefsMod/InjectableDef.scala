@@ -18,7 +18,7 @@ trait InjectableDef[T] extends js.Object {
   /**
     * In a case of no explicit injector, a location where the instance of the injectable is stored.
     */
-  var value: js.UndefOr[T]
+  var value: js.UndefOr[T] = js.undefined
   /**
     * Factory method to execute to create an instance of the injectable.
     */

@@ -17,6 +17,9 @@ trait GatsbyImageProps extends js.Object {
   var fluid: js.UndefOr[FluidObject] = js.undefined
   var imgStyle: js.UndefOr[js.Object] = js.undefined
   var itemProp: js.UndefOr[java.lang.String] = js.undefined
+  var loading: js.UndefOr[
+    gatsbyDashImageLib.gatsbyDashImageLibStrings.auto | gatsbyDashImageLib.gatsbyDashImageLibStrings.`lazy` | gatsbyDashImageLib.gatsbyDashImageLibStrings.eager
+  ] = js.undefined
   var onError: js.UndefOr[js.Function1[/* event */ js.Any, scala.Unit]] = js.undefined
   var onLoad: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onStartLoad: js.UndefOr[js.Function1[/* param */ gatsbyDashImageLib.Anon_WasCached, scala.Unit]] = js.undefined
@@ -41,6 +44,7 @@ object GatsbyImageProps {
     fluid: FluidObject = null,
     imgStyle: js.Object = null,
     itemProp: java.lang.String = null,
+    loading: gatsbyDashImageLib.gatsbyDashImageLibStrings.auto | gatsbyDashImageLib.gatsbyDashImageLibStrings.`lazy` | gatsbyDashImageLib.gatsbyDashImageLibStrings.eager = null,
     onError: /* event */ js.Any => scala.Unit = null,
     onLoad: () => scala.Unit = null,
     onStartLoad: /* param */ gatsbyDashImageLib.Anon_WasCached => scala.Unit = null,
@@ -62,6 +66,7 @@ object GatsbyImageProps {
     if (fluid != null) __obj.updateDynamic("fluid")(fluid)
     if (imgStyle != null) __obj.updateDynamic("imgStyle")(imgStyle)
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp)
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
     if (onStartLoad != null) __obj.updateDynamic("onStartLoad")(js.Any.fromFunction1(onStartLoad))

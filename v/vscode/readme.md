@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode
 
-Typings are for version 1.33
+Typings are for version 1.34
 
 ## Library description:
 The vscode NPM module provides VS Code extension authors tools to write extensions. It provides the vscode.d.ts node module (all accessible API for extensions) as well as commands for compiling and testing extensions.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Visual Studio Code 1.33
+// Type definitions for Visual Studio Code 1.34
 // Project: https://github.com/microsoft/vscode
 // Definitions by: Visual Studio Code Team, Microsoft <https://github.com/Microsoft>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -46,7 +46,7 @@ These comments are from the typescript definitions and might be useful:
  *--------------------------------------------------------------------------------------------*/
 
 /**
- * Type Definition for Visual Studio Code 1.33 Extension API
+ * Type Definition for Visual Studio Code 1.34 Extension API
  * See https://code.visualstudio.com/api for more information
  */
 

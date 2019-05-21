@@ -134,6 +134,7 @@ package object clientsAppstreamMod {
   */
   type ImageStateChangeReasonCode = _ImageStateChangeReasonCode | java.lang.String
   type Integer = scala.Double
+  type LastReportGenerationExecutionErrors = js.Array[LastReportGenerationExecutionError]
   type Long = scala.Double
   type MaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -212,6 +213,15 @@ package object clientsAppstreamMod {
   type TagValue = java.lang.String
   type Tags = org.scalablytyped.runtime.StringDictionary[TagValue]
   type Timestamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_NOT_FOUND
+    - awsDashSdkLib.awsDashSdkLibStrings.ACCESS_DENIED
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_SERVICE_ERROR
+    - java.lang.String
+  */
+  type UsageReportExecutionErrorCode = _UsageReportExecutionErrorCode | java.lang.String
+  type UsageReportSchedule = awsDashSdkLib.awsDashSdkLibStrings.DAILY | java.lang.String
+  type UsageReportSubscriptionList = js.Array[UsageReportSubscription]
   type UserAttributeValue = java.lang.String
   type UserId = java.lang.String
   type UserList = js.Array[User]

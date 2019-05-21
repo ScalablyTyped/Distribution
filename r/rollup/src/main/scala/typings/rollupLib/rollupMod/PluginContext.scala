@@ -24,10 +24,10 @@ trait PluginContext extends MinimalPluginContext {
   def emitAsset(name: java.lang.String, source: nodeLib.Buffer): java.lang.String = js.native
   def emitChunk(name: java.lang.String): java.lang.String = js.native
   def emitChunk(name: java.lang.String, options: rollupLib.Anon_Name): java.lang.String = js.native
-  def error(err: java.lang.String): scala.Unit = js.native
-  def error(err: java.lang.String, pos: rollupLib.Anon_ColumnLine): scala.Unit = js.native
-  def error(err: RollupError): scala.Unit = js.native
-  def error(err: RollupError, pos: rollupLib.Anon_ColumnLine): scala.Unit = js.native
+  def error(err: java.lang.String): scala.Nothing = js.native
+  def error(err: java.lang.String, pos: rollupLib.Anon_ColumnLine): scala.Nothing = js.native
+  def error(err: RollupError): scala.Nothing = js.native
+  def error(err: RollupError, pos: rollupLib.Anon_ColumnLine): scala.Nothing = js.native
   def getAssetFileName(assetReferenceId: java.lang.String): java.lang.String = js.native
   def getChunkFileName(chunkReferenceId: java.lang.String): java.lang.String = js.native
   def getModuleInfo(moduleId: java.lang.String): rollupLib.Anon_HasModuleSideEffects = js.native

@@ -488,6 +488,8 @@ object atMaterialDashUiCoreLibComponents {
   type SvgIconProps = atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps
   @scala.inline
   def SwipeableDrawer: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps] = js.constructorOf[atMaterialDashUiCoreLib.swipeableDrawerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps]]
+  @scala.inline
+  def SwipeableDrawerProps: atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps.type = atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps
   type SwipeableDrawerProps = atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps
   @scala.inline
   def Switch: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps] = js.constructorOf[atMaterialDashUiCoreLib.switchMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps]]

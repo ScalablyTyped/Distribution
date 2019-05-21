@@ -5,52 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ArgsConnectDragSource extends js.Object {
-  @JSName("connectDragSource")
-  var connectDragSource_Original: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("getPath")
-  var getPath_Original: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("replaceWithNew")
-  var replaceWithNew_Original: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("setAdditionalControlsOpen")
-  var setAdditionalControlsOpen_Original: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("split")
-  var split_Original: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]] = js.native
-  def connectDragSource(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def getPath(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def replaceWithNew(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def setAdditionalControlsOpen(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def split(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var connectDragSource: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]]
+  var getPath: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]]
+  var replaceWithNew: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]]
+  var setAdditionalControlsOpen: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]]
+  var split: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]]
+}
+
+object Anon_ArgsConnectDragSource {
+  @scala.inline
+  def apply(
+    connectDragSource: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]],
+    getPath: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]],
+    replaceWithNew: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]],
+    setAdditionalControlsOpen: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]],
+    split: propDashTypesLib.propDashTypesMod.Validator[js.Function1[/* repeated */ _, _]]
+  ): Anon_ArgsConnectDragSource = {
+    val __obj = js.Dynamic.literal(connectDragSource = connectDragSource, getPath = getPath, replaceWithNew = replaceWithNew, setAdditionalControlsOpen = setAdditionalControlsOpen, split = split)
+  
+    __obj.asInstanceOf[Anon_ArgsConnectDragSource]
+  }
 }
 

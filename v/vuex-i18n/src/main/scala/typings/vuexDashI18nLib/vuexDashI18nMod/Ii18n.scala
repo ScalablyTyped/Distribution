@@ -49,6 +49,12 @@ trait Ii18n extends js.Object {
     * get localized string from store. note that we pass the arguments passed
     * to the function directly to the translateInLanguage function
     */
+  def translate(key: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  /**
+    * get localized string from store. note that we pass the arguments passed
+    * to the function directly to the translateInLanguage function
+    */
+  def translate(key: java.lang.String, defaultValue: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def translate(key: java.lang.String, defaultValue: java.lang.String, options: js.Any): js.UndefOr[java.lang.String] = js.native
   def translate(
     key: java.lang.String,
@@ -56,10 +62,6 @@ trait Ii18n extends js.Object {
     options: js.Any,
     pluralization: scala.Double
   ): js.UndefOr[java.lang.String] = js.native
-  /**
-    * get localized string from store. note that we pass the arguments passed
-    * to the function directly to the translateInLanguage function
-    */
   def translate(key: java.lang.String, options: js.Any): js.UndefOr[java.lang.String] = js.native
   def translate(key: java.lang.String, options: js.Any, pluralization: scala.Double): js.UndefOr[java.lang.String] = js.native
   /**

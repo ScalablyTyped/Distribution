@@ -26,10 +26,19 @@ trait ProxyOptions extends js.Object {
     js.Function2[
       /* proxyReqOpts */ nodeLib.httpMod.RequestOptions, 
       /* srcReq */ expressLib.expressMod.Request, 
-      nodeLib.httpMod.RequestOptions
+      nodeLib.httpMod.RequestOptions | js.Promise[nodeLib.httpMod.RequestOptions]
     ]
   ] = js.undefined
   var proxyReqPathResolver: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.Request, java.lang.String]] = js.undefined
+  var userResDecorator: js.UndefOr[
+    js.Function4[
+      /* proxyRes */ expressLib.expressMod.Response, 
+      /* proxyResData */ js.Any, 
+      /* userReq */ expressLib.expressMod.Request, 
+      /* userRes */ expressLib.expressMod.Response, 
+      nodeLib.Buffer | java.lang.String | (js.Promise[nodeLib.Buffer | java.lang.String])
+    ]
+  ] = js.undefined
   var userResHeaderDecorator: js.UndefOr[
     js.Function5[
       /* headers */ nodeLib.httpMod.IncomingHttpHeaders, 
@@ -49,8 +58,9 @@ object ProxyOptions {
     parseReqBody: js.UndefOr[scala.Boolean] = js.undefined,
     preserveHostHdr: js.UndefOr[scala.Boolean] = js.undefined,
     proxyErrorHandler: (/* err */ js.Any, /* res */ expressLib.expressMod.Response, /* next */ expressLib.expressMod.NextFunction) => _ = null,
-    proxyReqOptDecorator: (/* proxyReqOpts */ nodeLib.httpMod.RequestOptions, /* srcReq */ expressLib.expressMod.Request) => nodeLib.httpMod.RequestOptions = null,
+    proxyReqOptDecorator: (/* proxyReqOpts */ nodeLib.httpMod.RequestOptions, /* srcReq */ expressLib.expressMod.Request) => nodeLib.httpMod.RequestOptions | js.Promise[nodeLib.httpMod.RequestOptions] = null,
     proxyReqPathResolver: /* req */ expressLib.expressMod.Request => java.lang.String = null,
+    userResDecorator: (/* proxyRes */ expressLib.expressMod.Response, /* proxyResData */ js.Any, /* userReq */ expressLib.expressMod.Request, /* userRes */ expressLib.expressMod.Response) => nodeLib.Buffer | java.lang.String | (js.Promise[nodeLib.Buffer | java.lang.String]) = null,
     userResHeaderDecorator: (/* headers */ nodeLib.httpMod.IncomingHttpHeaders, /* userReq */ expressLib.expressMod.Request, /* userRes */ expressLib.expressMod.Response, /* proxyReq */ expressLib.expressMod.Request, /* proxyRes */ expressLib.expressMod.Response) => nodeLib.httpMod.OutgoingHttpHeaders = null
   ): ProxyOptions = {
     val __obj = js.Dynamic.literal()
@@ -60,6 +70,7 @@ object ProxyOptions {
     if (proxyErrorHandler != null) __obj.updateDynamic("proxyErrorHandler")(js.Any.fromFunction3(proxyErrorHandler))
     if (proxyReqOptDecorator != null) __obj.updateDynamic("proxyReqOptDecorator")(js.Any.fromFunction2(proxyReqOptDecorator))
     if (proxyReqPathResolver != null) __obj.updateDynamic("proxyReqPathResolver")(js.Any.fromFunction1(proxyReqPathResolver))
+    if (userResDecorator != null) __obj.updateDynamic("userResDecorator")(js.Any.fromFunction4(userResDecorator))
     if (userResHeaderDecorator != null) __obj.updateDynamic("userResHeaderDecorator")(js.Any.fromFunction5(userResHeaderDecorator))
     __obj.asInstanceOf[ProxyOptions]
   }

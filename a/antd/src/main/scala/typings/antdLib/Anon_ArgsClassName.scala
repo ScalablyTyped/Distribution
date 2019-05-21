@@ -5,124 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ArgsClassName extends js.Object {
-  @JSName("className")
-  var className_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("dateCellRender")
-  var dateCellRender_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("dateFullCellRender")
-  var dateFullCellRender_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("fullscreen")
-  var fullscreen_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
-  @JSName("locale")
-  var locale_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  @JSName("monthCellRender")
-  var monthCellRender_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("monthFullCellRender")
-  var monthFullCellRender_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("onChange")
-  var onChange_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("onPanelChange")
-  var onPanelChange_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("onSelect")
-  var onSelect_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("prefixCls")
-  var prefixCls_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("style")
-  var style_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
-  @JSName("value")
-  var value_Original: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.Moment] = js.native
-  def className(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def dateCellRender(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def dateFullCellRender(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def fullscreen(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def locale(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def monthCellRender(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def monthFullCellRender(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onChange(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onPanelChange(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def onSelect(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def prefixCls(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def style(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def value(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var dateCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var dateFullCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var fullscreen: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  var locale: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var monthCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var monthFullCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var onPanelChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var onSelect: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var style: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+  var value: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.Moment]
+}
+
+object Anon_ArgsClassName {
+  @scala.inline
+  def apply(
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    dateCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    dateFullCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    fullscreen: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    locale: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    monthCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    monthFullCellRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    onPanelChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    onSelect: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    style: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    value: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.Moment]
+  ): Anon_ArgsClassName = {
+    val __obj = js.Dynamic.literal(className = className, dateCellRender = dateCellRender, dateFullCellRender = dateFullCellRender, fullscreen = fullscreen, locale = locale, monthCellRender = monthCellRender, monthFullCellRender = monthFullCellRender, onChange = onChange, onPanelChange = onPanelChange, onSelect = onSelect, prefixCls = prefixCls, style = style, value = value)
+  
+    __obj.asInstanceOf[Anon_ArgsClassName]
+  }
 }
 

@@ -5,21 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_AddBaseLayer extends js.Object {
-  @JSName("addBaseLayer")
-  var addBaseLayer_Original: reactDashLeafletLib.reactDashLeafletMod.AddLayerHandler = js.native
-  @JSName("addOverlay")
-  var addOverlay_Original: reactDashLeafletLib.reactDashLeafletMod.AddLayerHandler = js.native
-  @JSName("removeLayerControl")
-  var removeLayerControl_Original: reactDashLeafletLib.reactDashLeafletMod.RemoveLayerHandler = js.native
-  @JSName("removeLayer")
-  var removeLayer_Original: reactDashLeafletLib.reactDashLeafletMod.RemoveLayerHandler = js.native
-  def addBaseLayer(layer: leafletLib.leafletMod.Layer, name: java.lang.String): scala.Unit = js.native
-  def addBaseLayer(layer: leafletLib.leafletMod.Layer, name: java.lang.String, checked: scala.Boolean): scala.Unit = js.native
-  def addOverlay(layer: leafletLib.leafletMod.Layer, name: java.lang.String): scala.Unit = js.native
-  def addOverlay(layer: leafletLib.leafletMod.Layer, name: java.lang.String, checked: scala.Boolean): scala.Unit = js.native
-  def removeLayer(layer: leafletLib.leafletMod.Layer): scala.Unit = js.native
-  def removeLayerControl(layer: leafletLib.leafletMod.Layer): scala.Unit = js.native
+  var addBaseLayer: reactDashLeafletLib.reactDashLeafletMod.AddLayerHandler
+  var addOverlay: reactDashLeafletLib.reactDashLeafletMod.AddLayerHandler
+  var removeLayer: reactDashLeafletLib.reactDashLeafletMod.RemoveLayerHandler
+  var removeLayerControl: reactDashLeafletLib.reactDashLeafletMod.RemoveLayerHandler
+}
+
+object Anon_AddBaseLayer {
+  @scala.inline
+  def apply(
+    addBaseLayer: reactDashLeafletLib.reactDashLeafletMod.AddLayerHandler,
+    addOverlay: reactDashLeafletLib.reactDashLeafletMod.AddLayerHandler,
+    removeLayer: reactDashLeafletLib.reactDashLeafletMod.RemoveLayerHandler,
+    removeLayerControl: reactDashLeafletLib.reactDashLeafletMod.RemoveLayerHandler
+  ): Anon_AddBaseLayer = {
+    val __obj = js.Dynamic.literal(addBaseLayer = addBaseLayer, addOverlay = addOverlay, removeLayer = removeLayer, removeLayerControl = removeLayerControl)
+  
+    __obj.asInstanceOf[Anon_AddBaseLayer]
+  }
 }
 

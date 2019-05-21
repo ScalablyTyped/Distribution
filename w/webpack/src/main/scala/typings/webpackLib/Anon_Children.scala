@@ -11,15 +11,15 @@ trait Anon_Children extends js.Object {
   var entry: scala.Boolean
   var files: js.Array[java.lang.String]
   var filteredModules: js.UndefOr[scala.Boolean] = js.undefined
-  var hash: js.UndefOr[java.lang.String]
+  var hash: js.UndefOr[java.lang.String] = js.undefined
   var id: scala.Double
   var initial: scala.Boolean
   var modules: js.UndefOr[js.Array[webpackLib.webpackMod.StatsNs.FnModules]] = js.undefined
   var names: js.Array[java.lang.String]
   var origins: js.UndefOr[js.Array[Anon_Loc]] = js.undefined
   var parents: js.Array[scala.Double]
-  var reason: js.UndefOr[java.lang.String]
-  var recorded: js.UndefOr[scala.Nothing]
+  var reason: js.UndefOr[java.lang.String] = js.undefined
+  var recorded: js.UndefOr[scala.Nothing] = js.undefined
   var rendered: scala.Boolean
   var siblings: js.Array[scala.Double]
   var size: scala.Double

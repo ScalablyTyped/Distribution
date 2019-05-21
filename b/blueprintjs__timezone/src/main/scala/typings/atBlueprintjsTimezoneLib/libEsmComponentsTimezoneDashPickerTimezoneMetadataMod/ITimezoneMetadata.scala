@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITimezoneMetadata extends js.Object {
-  var abbreviation: js.UndefOr[java.lang.String]
+  var abbreviation: js.UndefOr[java.lang.String] = js.undefined
   var offset: scala.Double
   var offsetAsString: java.lang.String
-  var population: js.UndefOr[scala.Double]
+  var population: js.UndefOr[scala.Double] = js.undefined
   var timezone: java.lang.String
 }
 

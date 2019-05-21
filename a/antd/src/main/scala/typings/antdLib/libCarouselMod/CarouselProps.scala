@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CarouselProps
   extends reactDashSlickLib.reactDashSlickMod.Settings {
+  var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var dotPosition: js.UndefOr[DotPosition] = js.undefined
   var effect: js.UndefOr[CarouselEffect] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
@@ -28,6 +29,7 @@ object CarouselProps {
     beforeChange: (/* currentSlide */ scala.Double, /* nextSlide */ scala.Double) => scala.Unit = null,
     centerMode: js.UndefOr[scala.Boolean] = js.undefined,
     centerPadding: java.lang.String = null,
+    children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     cssEase: java.lang.String = null,
     customPaging: /* index */ scala.Double => reactLib.reactMod.Global.JSXNs.Element = null,
@@ -88,6 +90,7 @@ object CarouselProps {
     if (beforeChange != null) __obj.updateDynamic("beforeChange")(js.Any.fromFunction2(beforeChange))
     if (!js.isUndefined(centerMode)) __obj.updateDynamic("centerMode")(centerMode)
     if (centerPadding != null) __obj.updateDynamic("centerPadding")(centerPadding)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssEase != null) __obj.updateDynamic("cssEase")(cssEase)
     if (customPaging != null) __obj.updateDynamic("customPaging")(js.Any.fromFunction1(customPaging))

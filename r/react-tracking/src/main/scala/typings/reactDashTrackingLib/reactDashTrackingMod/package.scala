@@ -24,6 +24,7 @@ package object reactDashTrackingMod {
     /* options */ js.UndefOr[Options[stdLib.Partial[T]]], 
     Decorator
   ]
+  type TrackingContext[T] = reactLib.reactMod.Context[reactDashTrackingLib.Anon_Tracking[T]]
   type TrackingInfo[T, P, S] = T | (js.Function3[
     /* props */ P, 
     /* state */ S, 

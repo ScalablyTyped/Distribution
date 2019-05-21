@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WithFormikConfig[Props, Values /* <: formikLib.distTypesMod.FormikValues */, DeprecatedPayload]
-  extends formikLib.distTypesMod.FormikSharedConfig {
+  extends formikLib.distTypesMod.FormikSharedConfig[Props] {
   var displayName: js.UndefOr[java.lang.String] = js.undefined
   var mapPropsToStatus: js.UndefOr[js.Function1[/* props */ Props, _]] = js.undefined
   var mapPropsToValues: js.UndefOr[js.Function1[/* props */ Props, Values]] = js.undefined
@@ -24,7 +24,7 @@ object WithFormikConfig {
     handleSubmit: (Values, FormikBag[Props, Values]) => scala.Unit,
     displayName: java.lang.String = null,
     enableReinitialize: js.UndefOr[scala.Boolean] = js.undefined,
-    isInitialValid: scala.Boolean | (js.Function1[/* props */ js.Object, js.UndefOr[scala.Boolean]]) = null,
+    isInitialValid: scala.Boolean | (js.Function1[Props, scala.Boolean]) = null,
     mapPropsToStatus: /* props */ Props => _ = null,
     mapPropsToValues: /* props */ Props => Values = null,
     mapValuesToPayload: /* values */ Values => DeprecatedPayload = null,

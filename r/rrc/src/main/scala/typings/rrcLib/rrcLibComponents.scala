@@ -13,6 +13,8 @@ object rrcLibComponents {
   type ConfigSwitchProps = rrcLib.rrcMod.SwitchProps
   @scala.inline
   def OnUpdate: reactLib.reactMod.ComponentType[rrcLib.rrcMod.OnUpdateProps] = js.constructorOf[rrcLib.rrcMod.OnUpdate].asInstanceOf[reactLib.reactMod.ComponentType[rrcLib.rrcMod.OnUpdateProps]]
+  @scala.inline
+  def OnUpdateProps: rrcLib.rrcMod.OnUpdateProps.type = rrcLib.rrcMod.OnUpdateProps
   type OnUpdateProps = rrcLib.rrcMod.OnUpdateProps
   @scala.inline
   def ScrollIntoView: reactLib.reactMod.ComponentType[rrcLib.rrcMod.ScrollIntoViewProps] = js.constructorOf[rrcLib.rrcMod.ScrollIntoView].asInstanceOf[reactLib.reactMod.ComponentType[rrcLib.rrcMod.ScrollIntoViewProps]]

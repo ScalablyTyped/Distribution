@@ -23,11 +23,11 @@ trait SlidingMarkerOptions
 object SlidingMarkerOptions {
   @scala.inline
   def apply(
-    position: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral,
     anchorPoint: googlemapsLib.googleNs.mapsNs.Point = null,
     animateFunctionAdapter: (/* marker */ googlemapsLib.googleNs.mapsNs.Marker, /* destPoint */ googlemapsLib.googleNs.mapsNs.LatLng, /* easing */ markerDashAnimateDashUnobtrusiveLib.markerDashAnimateDashUnobtrusiveLibStrings.linear | markerDashAnimateDashUnobtrusiveLib.jQueryNs.easingNs.IEasingType, /* duration */ scala.Double) => scala.Unit = null,
     animation: googlemapsLib.googleNs.mapsNs.Animation = null,
     clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    crossOnDrag: js.UndefOr[scala.Boolean] = js.undefined,
     cursor: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Int | scala.Double = null,
@@ -37,17 +37,18 @@ object SlidingMarkerOptions {
     map: googlemapsLib.googleNs.mapsNs.Map | googlemapsLib.googleNs.mapsNs.StreetViewPanorama = null,
     opacity: scala.Int | scala.Double = null,
     optimized: js.UndefOr[scala.Boolean] = js.undefined,
-    place: googlemapsLib.googleNs.mapsNs.Place = null,
+    position: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
     shape: googlemapsLib.googleNs.mapsNs.MarkerShape = null,
     title: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): SlidingMarkerOptions = {
-    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
     if (animateFunctionAdapter != null) __obj.updateDynamic("animateFunctionAdapter")(js.Any.fromFunction4(animateFunctionAdapter))
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (!js.isUndefined(crossOnDrag)) __obj.updateDynamic("crossOnDrag")(crossOnDrag)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
@@ -57,7 +58,7 @@ object SlidingMarkerOptions {
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (!js.isUndefined(optimized)) __obj.updateDynamic("optimized")(optimized)
-    if (place != null) __obj.updateDynamic("place")(place)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape)
     if (title != null) __obj.updateDynamic("title")(title)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

@@ -39,6 +39,10 @@ trait Cypress extends js.Object {
     */
   var Cookies: cypressLib.Anon_Debug = js.native
   /**
+    * Internal class for LocalStorage management.
+    */
+  var LocalStorage: cypressLib.CypressNs.LocalStorage = js.native
+  /**
     * Cypress automatically includes Bluebird and exposes it as Cypress.Promise.
     *
     * @see https://on.cypress.io/promise
@@ -491,6 +495,15 @@ trait Cypress extends js.Object {
     *    Cypress.env({ host: "http://server.dev.local", foo: "foo" })
     */
   def env(`object`: ObjectLike): scala.Unit = js.native
+  def isCy(obj: js.Any): /* is cypress.Cypress.Chainable<any> */ scala.Boolean = js.native
+  /**
+    * Checks if a variable is a valid instance of `cy` or a `cy` chainable.
+    *
+    * @see https://on.cypress.io/iscy
+    * @example
+    *    Cypress.isCy(cy) // => true
+    */
+  def isCy[TSubject](obj: Chainable[TSubject]): /* is cypress.Cypress.Chainable<TSubject> */ scala.Boolean = js.native
   /**
     * Internal options for "cy.log" used in custom commands.
     *

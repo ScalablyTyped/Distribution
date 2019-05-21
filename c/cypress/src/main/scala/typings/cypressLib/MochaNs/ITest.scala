@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ITest extends IRunnable {
   var parent: ISuite
   var pending: scala.Boolean
-  var state: js.UndefOr[cypressLib.cypressLibStrings.failed | cypressLib.cypressLibStrings.passed]
+  var state: js.UndefOr[cypressLib.cypressLibStrings.failed | cypressLib.cypressLibStrings.passed] = js.undefined
   def fullTitle(): java.lang.String
 }
 

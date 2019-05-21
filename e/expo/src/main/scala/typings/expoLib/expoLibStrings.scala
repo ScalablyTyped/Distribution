@@ -515,6 +515,9 @@ object expoLibStrings {
     extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
+  sealed trait google extends js.Object
+  
+  @js.native
   sealed trait granted
     extends expoLib.expoMod.PermissionsNs.PermissionStatus
   
@@ -1205,6 +1208,8 @@ object expoLibStrings {
   def front: front = "front".asInstanceOf[front]
   @scala.inline
   def fullBanner: fullBanner = "fullBanner".asInstanceOf[fullBanner]
+  @scala.inline
+  def google: google = "google".asInstanceOf[google]
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
   @scala.inline

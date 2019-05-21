@@ -5,13 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_OnMouseDown extends js.Object {
-  @JSName("onMouseDown")
-  var onMouseDown_Original: reactLib.reactMod.MouseEventHandler[reactLib.Element] = js.native
-  @JSName("onTouchStart")
-  var onTouchStart_Original: reactLib.reactMod.TouchEventHandler[reactLib.Element] = js.native
-  def onMouseDown(event: reactLib.reactMod.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  def onTouchStart(event: reactLib.reactMod.TouchEvent[reactLib.Element]): scala.Unit = js.native
+  var onMouseDown: reactLib.reactMod.MouseEventHandler[reactLib.Element]
+  var onTouchStart: reactLib.reactMod.TouchEventHandler[reactLib.Element]
+}
+
+object Anon_OnMouseDown {
+  @scala.inline
+  def apply(
+    onMouseDown: reactLib.reactMod.MouseEventHandler[reactLib.Element],
+    onTouchStart: reactLib.reactMod.TouchEventHandler[reactLib.Element]
+  ): Anon_OnMouseDown = {
+    val __obj = js.Dynamic.literal(onMouseDown = onMouseDown, onTouchStart = onTouchStart)
+  
+    __obj.asInstanceOf[Anon_OnMouseDown]
+  }
 }
 

@@ -15,7 +15,7 @@ object IChartistStepAxis {
   @scala.inline
   def apply(
     labelInterpolationFnc: js.Function = null,
-    labelOffset: chartistLib.Anon_X = null,
+    labelOffset: chartistLib.Anon_XY = null,
     offset: scala.Int | scala.Double = null,
     position: java.lang.String = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,

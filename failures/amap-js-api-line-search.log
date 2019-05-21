@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api-line-search, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-line-search/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/amap-js-api-line-search),TsIdentLibrarySimple(amap-js-api-line-search)),TsIdentModule(None,List(amap-js-api-line-search))) [id => amap-js-api-line-search, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(amap-js-api-line-search) [id => amap-js-api-line-search, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibrarySimple(amap-js-api-line-search) [id => amap-js-api-line-search, phase => typescript] 
 [info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Info) [id => amap-js-api-line-search, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclNamespace(LineSearch) / TsDeclInterface(EventMap) / TsMemberProperty(error) / TsTypeRef() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api-line-search, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing amap-js-api-line-search [id => amap-js-api-line-search, phase => scala.js] 

@@ -15,7 +15,7 @@ trait Anon_DocumentMutationIdMutationResult extends js.Object {
       /* mutationResult */ js.Object, 
       scala.Unit
     ]
-  ]
+  ] = js.undefined
   var updateQueries: org.scalablytyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater]
   var variables: js.Any
 }

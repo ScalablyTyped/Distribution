@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DecorationAttrs extends js.Object {
+trait DecorationAttrs
+  extends /**
+  * Specify additional attrs that will be mapped directly to the
+  * target node's DOM attributes.
+  */
+/* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Null]] {
   /**
     * A CSS class name or a space-separated set of class names to be
     * _added_ to the classes that the node already had.
@@ -25,11 +30,17 @@ trait DecorationAttrs extends js.Object {
 object DecorationAttrs {
   @scala.inline
   def apply(
+    StringDictionary: /**
+    * Specify additional attrs that will be mapped directly to the
+    * target node's DOM attributes.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Null]] = null,
     `class`: java.lang.String = null,
     nodeName: java.lang.String = null,
     style: java.lang.String = null
   ): DecorationAttrs = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (nodeName != null) __obj.updateDynamic("nodeName")(nodeName)
     if (style != null) __obj.updateDynamic("style")(style)

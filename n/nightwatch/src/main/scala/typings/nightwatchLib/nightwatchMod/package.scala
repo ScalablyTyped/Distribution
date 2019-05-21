@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nightwatchMod {
+  type EnhancedPageObject[Commands, Elements, Sections /* <: EnhancedPageObjectSections */] = Nightwatch with SharedCommands with NightwatchCustomCommands with Commands with nightwatchLib.Anon_Callback[Sections]
+  type EnhancedSectionInstance[Commands, Elements, Sections] = EnhancedPageObject[Commands, Elements, Sections]
   type NightwatchAssert = js.Function6[
     /* passed */ scala.Boolean, 
     /* receivedValue */ js.UndefOr[js.Any], 
@@ -15,10 +17,11 @@ package object nightwatchMod {
     /* originalStackTrace */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
-  type NightwatchCallbackResult = NightwatchTypedCallbackResult[js.Any]
   type NightwatchTest = js.Function1[/* browser */ NightwatchBrowser, scala.Unit]
-  type NightwatchTestFunctions = org.scalablytyped.runtime.StringDictionary[NightwatchTest]
-  type NightwatchTestHook = js.Function2[/* browser */ NightwatchBrowser, /* done */ js.Function0[scala.Unit], scala.Unit]
+  type NightwatchTestHook = (js.Function2[
+    /* browser */ NightwatchBrowser, 
+    /* done */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], 
+    scala.Unit
+  ]) | (js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], scala.Unit])
   type NightwatchTestSettings = org.scalablytyped.runtime.StringDictionary[NightwatchTestSettingScreenshots]
-  type NightwatchTests = NightwatchTestFunctions | NightwatchTestHooks
 }

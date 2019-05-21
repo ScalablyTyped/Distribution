@@ -1,7 +1,7 @@
 
 # Scala.js typings for nightwatch
 
-Typings are for version 0.9
+Typings are for version 1.1
 
 ## Library description:
 Easy to use Node.js based End-to-End testing solution for browser based apps and websites, using the W3C WebDriver API.
@@ -35,12 +35,14 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for nightwatch 0.9
+// Type definitions for nightwatch 1.1
 // Project: http://nightwatchjs.org
 // Definitions by: Rahul Kavalapara <https://github.com/rkavalap>
 //                 Connor Schlesiger <https://github.com/schlesiger>
 //                 Clayton Astrom <https://github.com/ClaytonAstrom>
+//                 Lukas Beranek <https://github.com/lloiser>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 
 ```
 

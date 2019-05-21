@@ -5,34 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_HrefPrefixCls extends js.Object {
-  @JSName("href")
-  var href_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("prefixCls")
-  var prefixCls_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("separator")
-  var separator_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | propDashTypesLib.propDashTypesMod.ReactElementLike] = js.native
-  def href(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def prefixCls(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def separator(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var href: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var separator: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | propDashTypesLib.propDashTypesMod.ReactElementLike]
+}
+
+object Anon_HrefPrefixCls {
+  @scala.inline
+  def apply(
+    href: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    separator: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | propDashTypesLib.propDashTypesMod.ReactElementLike]
+  ): Anon_HrefPrefixCls = {
+    val __obj = js.Dynamic.literal(href = href, prefixCls = prefixCls, separator = separator)
+  
+    __obj.asInstanceOf[Anon_HrefPrefixCls]
+  }
 }
 

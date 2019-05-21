@@ -15,13 +15,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Chainer[Subject] extends js.Object {
   /**
+    * Assert that the selection matches a given selector, using `.is()`. Note that this overrides the built-in chai assertion. If the object asserted against is not a jQuery object, the original implementation will be called.
+    * @example
+    *    cy.get('#result').should('match', ':empty')
+    * @see http://chaijs.com/plugins/chai-jquery/#matchselector
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.`match`, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Asserts that the target matches the given regular expression `re`.
     * @example
     *    cy.wrap('foobar').should('match', /^foo/)
     * @see http://chaijs.com/api/bdd/#method_match
     * @see https://on.cypress.io/assertions
     */
-  def apply(chainer: cypressLib.cypressLibStrings.`match`, value: java.lang.String): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.`match`, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
     * When no arguments are provided, `.throw` invokes the target function and asserts that an error is thrown.
@@ -1502,13 +1509,20 @@ trait Chainer[Subject] extends js.Object {
     */
   def apply(chainer: cypressLib.cypressLibStrings.notDOTincrease, value: js.Object, property: java.lang.String): Chainable[Subject] = js.native
   /**
+    * Assert that the selection does not match a given selector, using `.is()`. Note that this overrides the built-in chai assertion. If the object asserted against is not a jQuery object, the original implementation will be called.
+    * @example
+    *    cy.get('#result').should('not.match', ':empty')
+    * @see http://chaijs.com/plugins/chai-jquery/#matchselector
+    * @see https://on.cypress.io/assertions
+    */
+  def apply(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: java.lang.String): Chainable[Subject] = js.native
+  /**
     * Asserts that the target does not match the given regular expression `re`.
     * @example
     *    cy.wrap('foobar').should('not.match', /baz$/)
     * @see http://chaijs.com/api/bdd/#method_match
     * @see https://on.cypress.io/assertions
     */
-  def apply(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: java.lang.String): Chainable[Subject] = js.native
   def apply(chainer: cypressLib.cypressLibStrings.notDOTmatch, value: stdLib.RegExp): Chainable[Subject] = js.native
   /**
     * When the target is a non-function object, `.respondTo` asserts that the target does not have a `method` with the given name method. The method can be own or inherited, and it can be enumerable or non-enumerable.

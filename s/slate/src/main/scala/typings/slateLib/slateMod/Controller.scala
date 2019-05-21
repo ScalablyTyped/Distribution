@@ -752,7 +752,7 @@ trait Controller extends js.Object {
     * Use it sparingly and strategically, as it can be very expensive.
     */
   def normalize(): Controller = js.native
-  def query(query: java.lang.String, args: js.Any*): Controller = js.native
+  def query(query: java.lang.String, args: js.Any*): js.Any = js.native
   // History Commands //
   /**
     * Move forward one step in the history

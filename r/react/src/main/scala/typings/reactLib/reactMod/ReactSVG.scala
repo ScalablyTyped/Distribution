@@ -5,392 +5,126 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ReactSVG extends js.Object {
-  @JSName("animate")
-  var animate_Original: SVGFactory = js.native
-  @JSName("circle")
-  var circle_Original: SVGFactory = js.native
-  @JSName("clipPath")
-  var clipPath_Original: SVGFactory = js.native
-  @JSName("defs")
-  var defs_Original: SVGFactory = js.native
-  @JSName("desc")
-  var desc_Original: SVGFactory = js.native
-  @JSName("ellipse")
-  var ellipse_Original: SVGFactory = js.native
-  @JSName("feBlend")
-  var feBlend_Original: SVGFactory = js.native
-  @JSName("feColorMatrix")
-  var feColorMatrix_Original: SVGFactory = js.native
-  @JSName("feComponentTransfer")
-  var feComponentTransfer_Original: SVGFactory = js.native
-  @JSName("feComposite")
-  var feComposite_Original: SVGFactory = js.native
-  @JSName("feConvolveMatrix")
-  var feConvolveMatrix_Original: SVGFactory = js.native
-  @JSName("feDiffuseLighting")
-  var feDiffuseLighting_Original: SVGFactory = js.native
-  @JSName("feDisplacementMap")
-  var feDisplacementMap_Original: SVGFactory = js.native
-  @JSName("feDistantLight")
-  var feDistantLight_Original: SVGFactory = js.native
-  @JSName("feDropShadow")
-  var feDropShadow_Original: SVGFactory = js.native
-  @JSName("feFlood")
-  var feFlood_Original: SVGFactory = js.native
-  @JSName("feFuncA")
-  var feFuncA_Original: SVGFactory = js.native
-  @JSName("feFuncB")
-  var feFuncB_Original: SVGFactory = js.native
-  @JSName("feFuncG")
-  var feFuncG_Original: SVGFactory = js.native
-  @JSName("feFuncR")
-  var feFuncR_Original: SVGFactory = js.native
-  @JSName("feGaussianBlur")
-  var feGaussianBlur_Original: SVGFactory = js.native
-  @JSName("feImage")
-  var feImage_Original: SVGFactory = js.native
-  @JSName("feMergeNode")
-  var feMergeNode_Original: SVGFactory = js.native
-  @JSName("feMerge")
-  var feMerge_Original: SVGFactory = js.native
-  @JSName("feMorphology")
-  var feMorphology_Original: SVGFactory = js.native
-  @JSName("feOffset")
-  var feOffset_Original: SVGFactory = js.native
-  @JSName("fePointLight")
-  var fePointLight_Original: SVGFactory = js.native
-  @JSName("feSpecularLighting")
-  var feSpecularLighting_Original: SVGFactory = js.native
-  @JSName("feSpotLight")
-  var feSpotLight_Original: SVGFactory = js.native
-  @JSName("feTile")
-  var feTile_Original: SVGFactory = js.native
-  @JSName("feTurbulence")
-  var feTurbulence_Original: SVGFactory = js.native
-  @JSName("filter")
-  var filter_Original: SVGFactory = js.native
-  @JSName("foreignObject")
-  var foreignObject_Original: SVGFactory = js.native
-  @JSName("g")
-  var g_Original: SVGFactory = js.native
-  @JSName("image")
-  var image_Original: SVGFactory = js.native
-  @JSName("line")
-  var line_Original: SVGFactory = js.native
-  @JSName("linearGradient")
-  var linearGradient_Original: SVGFactory = js.native
-  @JSName("marker")
-  var marker_Original: SVGFactory = js.native
-  @JSName("mask")
-  var mask_Original: SVGFactory = js.native
-  @JSName("metadata")
-  var metadata_Original: SVGFactory = js.native
-  @JSName("path")
-  var path_Original: SVGFactory = js.native
-  @JSName("pattern")
-  var pattern_Original: SVGFactory = js.native
-  @JSName("polygon")
-  var polygon_Original: SVGFactory = js.native
-  @JSName("polyline")
-  var polyline_Original: SVGFactory = js.native
-  @JSName("radialGradient")
-  var radialGradient_Original: SVGFactory = js.native
-  @JSName("rect")
-  var rect_Original: SVGFactory = js.native
-  @JSName("stop")
-  var stop_Original: SVGFactory = js.native
-  @JSName("svg")
-  var svg_Original: SVGFactory = js.native
-  @JSName("switch")
-  var switch_Original: SVGFactory = js.native
-  @JSName("symbol")
-  var symbol_Original: SVGFactory = js.native
-  @JSName("textPath")
-  var textPath_Original: SVGFactory = js.native
-  @JSName("text")
-  var text_Original: SVGFactory = js.native
-  @JSName("tspan")
-  var tspan_Original: SVGFactory = js.native
-  @JSName("use")
-  var use_Original: SVGFactory = js.native
-  @JSName("view")
-  var view_Original: SVGFactory = js.native
-  def animate(): ReactSVGElement = js.native
-  def animate(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def circle(): ReactSVGElement = js.native
-  def circle(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def clipPath(): ReactSVGElement = js.native
-  def clipPath(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def defs(): ReactSVGElement = js.native
-  def defs(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def desc(): ReactSVGElement = js.native
-  def desc(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def ellipse(): ReactSVGElement = js.native
-  def ellipse(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feBlend(): ReactSVGElement = js.native
-  def feBlend(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feColorMatrix(): ReactSVGElement = js.native
-  def feColorMatrix(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feComponentTransfer(): ReactSVGElement = js.native
-  def feComponentTransfer(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feComposite(): ReactSVGElement = js.native
-  def feComposite(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feConvolveMatrix(): ReactSVGElement = js.native
-  def feConvolveMatrix(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feDiffuseLighting(): ReactSVGElement = js.native
-  def feDiffuseLighting(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feDisplacementMap(): ReactSVGElement = js.native
-  def feDisplacementMap(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feDistantLight(): ReactSVGElement = js.native
-  def feDistantLight(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feDropShadow(): ReactSVGElement = js.native
-  def feDropShadow(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feFlood(): ReactSVGElement = js.native
-  def feFlood(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feFuncA(): ReactSVGElement = js.native
-  def feFuncA(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feFuncB(): ReactSVGElement = js.native
-  def feFuncB(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feFuncG(): ReactSVGElement = js.native
-  def feFuncG(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feFuncR(): ReactSVGElement = js.native
-  def feFuncR(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feGaussianBlur(): ReactSVGElement = js.native
-  def feGaussianBlur(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feImage(): ReactSVGElement = js.native
-  def feImage(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feMerge(): ReactSVGElement = js.native
-  def feMerge(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feMergeNode(): ReactSVGElement = js.native
-  def feMergeNode(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feMorphology(): ReactSVGElement = js.native
-  def feMorphology(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feOffset(): ReactSVGElement = js.native
-  def feOffset(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def fePointLight(): ReactSVGElement = js.native
-  def fePointLight(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feSpecularLighting(): ReactSVGElement = js.native
-  def feSpecularLighting(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feSpotLight(): ReactSVGElement = js.native
-  def feSpotLight(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feTile(): ReactSVGElement = js.native
-  def feTile(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def feTurbulence(): ReactSVGElement = js.native
-  def feTurbulence(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def filter(): ReactSVGElement = js.native
-  def filter(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def foreignObject(): ReactSVGElement = js.native
-  def foreignObject(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def g(): ReactSVGElement = js.native
-  def g(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def image(): ReactSVGElement = js.native
-  def image(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def line(): ReactSVGElement = js.native
-  def line(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def linearGradient(): ReactSVGElement = js.native
-  def linearGradient(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def marker(): ReactSVGElement = js.native
-  def marker(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def mask(): ReactSVGElement = js.native
-  def mask(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def metadata(): ReactSVGElement = js.native
-  def metadata(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def path(): ReactSVGElement = js.native
-  def path(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def pattern(): ReactSVGElement = js.native
-  def pattern(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def polygon(): ReactSVGElement = js.native
-  def polygon(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def polyline(): ReactSVGElement = js.native
-  def polyline(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def radialGradient(): ReactSVGElement = js.native
-  def radialGradient(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def rect(): ReactSVGElement = js.native
-  def rect(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def stop(): ReactSVGElement = js.native
-  def stop(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def svg(): ReactSVGElement = js.native
-  def svg(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def switch(): ReactSVGElement = js.native
-  def switch(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def symbol(): ReactSVGElement = js.native
-  def symbol(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def text(): ReactSVGElement = js.native
-  def text(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def textPath(): ReactSVGElement = js.native
-  def textPath(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def tspan(): ReactSVGElement = js.native
-  def tspan(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def use(): ReactSVGElement = js.native
-  def use(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
-  def view(): ReactSVGElement = js.native
-  def view(
-    props: ClassAttributes[reactLib.SVGElement] with (SVGAttributes[reactLib.SVGElement] | scala.Null),
-    children: ReactNode*
-  ): ReactSVGElement = js.native
+  var animate: SVGFactory
+  var circle: SVGFactory
+  var clipPath: SVGFactory
+  var defs: SVGFactory
+  var desc: SVGFactory
+  var ellipse: SVGFactory
+  var feBlend: SVGFactory
+  var feColorMatrix: SVGFactory
+  var feComponentTransfer: SVGFactory
+  var feComposite: SVGFactory
+  var feConvolveMatrix: SVGFactory
+  var feDiffuseLighting: SVGFactory
+  var feDisplacementMap: SVGFactory
+  var feDistantLight: SVGFactory
+  var feDropShadow: SVGFactory
+  var feFlood: SVGFactory
+  var feFuncA: SVGFactory
+  var feFuncB: SVGFactory
+  var feFuncG: SVGFactory
+  var feFuncR: SVGFactory
+  var feGaussianBlur: SVGFactory
+  var feImage: SVGFactory
+  var feMerge: SVGFactory
+  var feMergeNode: SVGFactory
+  var feMorphology: SVGFactory
+  var feOffset: SVGFactory
+  var fePointLight: SVGFactory
+  var feSpecularLighting: SVGFactory
+  var feSpotLight: SVGFactory
+  var feTile: SVGFactory
+  var feTurbulence: SVGFactory
+  var filter: SVGFactory
+  var foreignObject: SVGFactory
+  var g: SVGFactory
+  var image: SVGFactory
+  var line: SVGFactory
+  var linearGradient: SVGFactory
+  var marker: SVGFactory
+  var mask: SVGFactory
+  var metadata: SVGFactory
+  var path: SVGFactory
+  var pattern: SVGFactory
+  var polygon: SVGFactory
+  var polyline: SVGFactory
+  var radialGradient: SVGFactory
+  var rect: SVGFactory
+  var stop: SVGFactory
+  var svg: SVGFactory
+  var switch: SVGFactory
+  var symbol: SVGFactory
+  var text: SVGFactory
+  var textPath: SVGFactory
+  var tspan: SVGFactory
+  var use: SVGFactory
+  var view: SVGFactory
+}
+
+object ReactSVG {
+  @scala.inline
+  def apply(
+    animate: SVGFactory,
+    circle: SVGFactory,
+    clipPath: SVGFactory,
+    defs: SVGFactory,
+    desc: SVGFactory,
+    ellipse: SVGFactory,
+    feBlend: SVGFactory,
+    feColorMatrix: SVGFactory,
+    feComponentTransfer: SVGFactory,
+    feComposite: SVGFactory,
+    feConvolveMatrix: SVGFactory,
+    feDiffuseLighting: SVGFactory,
+    feDisplacementMap: SVGFactory,
+    feDistantLight: SVGFactory,
+    feDropShadow: SVGFactory,
+    feFlood: SVGFactory,
+    feFuncA: SVGFactory,
+    feFuncB: SVGFactory,
+    feFuncG: SVGFactory,
+    feFuncR: SVGFactory,
+    feGaussianBlur: SVGFactory,
+    feImage: SVGFactory,
+    feMerge: SVGFactory,
+    feMergeNode: SVGFactory,
+    feMorphology: SVGFactory,
+    feOffset: SVGFactory,
+    fePointLight: SVGFactory,
+    feSpecularLighting: SVGFactory,
+    feSpotLight: SVGFactory,
+    feTile: SVGFactory,
+    feTurbulence: SVGFactory,
+    filter: SVGFactory,
+    foreignObject: SVGFactory,
+    g: SVGFactory,
+    image: SVGFactory,
+    line: SVGFactory,
+    linearGradient: SVGFactory,
+    marker: SVGFactory,
+    mask: SVGFactory,
+    metadata: SVGFactory,
+    path: SVGFactory,
+    pattern: SVGFactory,
+    polygon: SVGFactory,
+    polyline: SVGFactory,
+    radialGradient: SVGFactory,
+    rect: SVGFactory,
+    stop: SVGFactory,
+    svg: SVGFactory,
+    switch: SVGFactory,
+    symbol: SVGFactory,
+    text: SVGFactory,
+    textPath: SVGFactory,
+    tspan: SVGFactory,
+    use: SVGFactory,
+    view: SVGFactory
+  ): ReactSVG = {
+    val __obj = js.Dynamic.literal(animate = animate, circle = circle, clipPath = clipPath, defs = defs, desc = desc, ellipse = ellipse, feBlend = feBlend, feColorMatrix = feColorMatrix, feComponentTransfer = feComponentTransfer, feComposite = feComposite, feConvolveMatrix = feConvolveMatrix, feDiffuseLighting = feDiffuseLighting, feDisplacementMap = feDisplacementMap, feDistantLight = feDistantLight, feDropShadow = feDropShadow, feFlood = feFlood, feFuncA = feFuncA, feFuncB = feFuncB, feFuncG = feFuncG, feFuncR = feFuncR, feGaussianBlur = feGaussianBlur, feImage = feImage, feMerge = feMerge, feMergeNode = feMergeNode, feMorphology = feMorphology, feOffset = feOffset, fePointLight = fePointLight, feSpecularLighting = feSpecularLighting, feSpotLight = feSpotLight, feTile = feTile, feTurbulence = feTurbulence, filter = filter, foreignObject = foreignObject, g = g, image = image, line = line, linearGradient = linearGradient, marker = marker, mask = mask, metadata = metadata, path = path, pattern = pattern, polygon = polygon, polyline = polyline, radialGradient = radialGradient, rect = rect, stop = stop, svg = svg, switch = switch, symbol = symbol, text = text, textPath = textPath, tspan = tspan, use = use, view = view)
+  
+    __obj.asInstanceOf[ReactSVG]
+  }
 }
 

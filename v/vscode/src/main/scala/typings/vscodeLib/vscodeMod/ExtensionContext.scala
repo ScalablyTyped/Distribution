@@ -37,7 +37,7 @@ trait ExtensionContext extends js.Object {
   		 * Use [`workspaceState`](#ExtensionContext.workspaceState) or
   		 * [`globalState`](#ExtensionContext.globalState) to store key value data.
   		 */
-  var storagePath: js.UndefOr[java.lang.String]
+  var storagePath: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * An array to which disposables can be added. When this
   		 * extension is deactivated the disposables will be disposed.

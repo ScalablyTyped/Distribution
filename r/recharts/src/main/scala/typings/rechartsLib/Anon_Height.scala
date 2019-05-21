@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Height extends js.Object {
-  var height: js.UndefOr[scala.Double]
-  var offset: js.UndefOr[js.Object]
-  var width: js.UndefOr[scala.Double]
-  var yAxis: js.UndefOr[js.Object]
+  var height: js.UndefOr[scala.Double] = js.undefined
+  var offset: js.UndefOr[js.Object] = js.undefined
+  var width: js.UndefOr[scala.Double] = js.undefined
+  var yAxis: js.UndefOr[js.Object] = js.undefined
 }
 
 object Anon_Height {

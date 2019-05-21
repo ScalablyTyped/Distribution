@@ -20,7 +20,7 @@ trait RecurrenceTimeZone extends js.Object {
   /**
     * Represents the name of the recurrence time zone.
     */
-  var name: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecurrenceTimeZone
+  var name: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecurrenceTimeZone | java.lang.String
   /**
     * Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began.
     */
@@ -29,8 +29,11 @@ trait RecurrenceTimeZone extends js.Object {
 
 object RecurrenceTimeZone {
   @scala.inline
-  def apply(name: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecurrenceTimeZone, offset: scala.Double): RecurrenceTimeZone = {
-    val __obj = js.Dynamic.literal(name = name, offset = offset)
+  def apply(
+    name: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecurrenceTimeZone | java.lang.String,
+    offset: scala.Double
+  ): RecurrenceTimeZone = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], offset = offset)
   
     __obj.asInstanceOf[RecurrenceTimeZone]
   }

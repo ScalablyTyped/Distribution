@@ -11,7 +11,7 @@ trait DisableUserRequest extends js.Object {
     */
   var AuthenticationType: awsDashSdkLib.clientsAppstreamMod.AuthenticationType
   /**
-    * The email address of the user.
+    * The email address of the user.  Users' email addresses are case-sensitive. 
     */
   var UserName: Username
 }

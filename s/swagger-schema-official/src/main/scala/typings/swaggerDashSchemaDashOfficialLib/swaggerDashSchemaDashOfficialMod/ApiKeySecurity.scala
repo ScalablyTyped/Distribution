@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ApiKeySecurity
   extends BaseSecurity
-     with _Security {
+     with Security {
   var in: java.lang.String
   var name: java.lang.String
+  @JSName("type")
+  var type_ApiKeySecurity: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.apiKey
 }
 
 object ApiKeySecurity {
@@ -17,7 +19,7 @@ object ApiKeySecurity {
   def apply(
     in: java.lang.String,
     name: java.lang.String,
-    `type`: java.lang.String,
+    `type`: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.apiKey,
     description: java.lang.String = null
   ): ApiKeySecurity = {
     val __obj = js.Dynamic.literal(in = in, name = name)

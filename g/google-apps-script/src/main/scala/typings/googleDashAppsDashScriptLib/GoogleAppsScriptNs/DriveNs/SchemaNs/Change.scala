@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Change extends js.Object {
   var deleted: js.UndefOr[scala.Boolean] = js.undefined
+  var drive: js.UndefOr[Drive] = js.undefined
+  var driveId: js.UndefOr[java.lang.String] = js.undefined
   var file: js.UndefOr[File] = js.undefined
   var fileId: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -22,6 +24,8 @@ object Change {
   @scala.inline
   def apply(
     deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    drive: Drive = null,
+    driveId: java.lang.String = null,
     file: File = null,
     fileId: java.lang.String = null,
     id: java.lang.String = null,
@@ -34,6 +38,8 @@ object Change {
   ): Change = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (drive != null) __obj.updateDynamic("drive")(drive)
+    if (driveId != null) __obj.updateDynamic("driveId")(driveId)
     if (file != null) __obj.updateDynamic("file")(file)
     if (fileId != null) __obj.updateDynamic("fileId")(fileId)
     if (id != null) __obj.updateDynamic("id")(id)

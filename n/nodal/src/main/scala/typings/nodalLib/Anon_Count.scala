@@ -10,7 +10,7 @@ trait Anon_Count extends js.Object {
   var error: js.Any
   var offset: scala.Double
   var resource: js.Any
-  var summary: js.UndefOr[java.lang.String | scala.Null]
+  var summary: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var total: scala.Double
 }
 

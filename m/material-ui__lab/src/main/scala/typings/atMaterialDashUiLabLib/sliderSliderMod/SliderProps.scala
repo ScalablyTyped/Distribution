@@ -124,7 +124,7 @@ trait SliderProps extends js.Object {
   var draggable: js.UndefOr[scala.Boolean] = js.native
   var hidden: js.UndefOr[scala.Boolean] = js.native
   var id: js.UndefOr[java.lang.String] = js.native
-  var inlist: js.UndefOr[_] = js.native
+  var inlist: js.UndefOr[js.Any] = js.native
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.native
   var inputMode: js.UndefOr[java.lang.String] = js.native
   var is: js.UndefOr[java.lang.String] = js.native

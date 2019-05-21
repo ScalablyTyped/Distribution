@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "snabbdom"
-version := "0.7.3-07555b"
+version := "0.7.3-89823b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

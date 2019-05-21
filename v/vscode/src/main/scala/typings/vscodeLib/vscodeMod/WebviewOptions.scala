@@ -26,6 +26,17 @@ trait WebviewOptions extends js.Object {
   		 * Pass in an empty array to disallow access to any local resources.
   		 */
   val localResourceRoots: js.UndefOr[js.Array[Uri]] = js.undefined
+  /**
+  		 * Mappings of localhost ports used inside the webview.
+  		 *
+  		 * Port mapping allow webviews to transparently define how localhost ports are resolved. This can be used
+  		 * to allow using a static localhost port inside the webview that is resolved to random port that a service is
+  		 * running on.
+  		 *
+  		 * If a webview accesses localhost content, we recomend that you specify port mappings even if
+  		 * the `webviewPort` and `extensionHostPort` ports are the same.
+  		 */
+  val portMapping: js.UndefOr[js.Array[WebviewPortMapping]] = js.undefined
 }
 
 object WebviewOptions {
@@ -33,12 +44,14 @@ object WebviewOptions {
   def apply(
     enableCommandUris: js.UndefOr[scala.Boolean] = js.undefined,
     enableScripts: js.UndefOr[scala.Boolean] = js.undefined,
-    localResourceRoots: js.Array[Uri] = null
+    localResourceRoots: js.Array[Uri] = null,
+    portMapping: js.Array[WebviewPortMapping] = null
   ): WebviewOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enableCommandUris)) __obj.updateDynamic("enableCommandUris")(enableCommandUris)
     if (!js.isUndefined(enableScripts)) __obj.updateDynamic("enableScripts")(enableScripts)
     if (localResourceRoots != null) __obj.updateDynamic("localResourceRoots")(localResourceRoots)
+    if (portMapping != null) __obj.updateDynamic("portMapping")(portMapping)
     __obj.asInstanceOf[WebviewOptions]
   }
 }

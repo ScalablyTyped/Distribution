@@ -5,14 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait History extends js.Object {
-  val location: HistoryLocation = js.native
-  @JSName("navigate")
-  var navigate_Original: NavigateFn = js.native
-  val transitioning: scala.Boolean = js.native
-  def listen(listener: HistoryListener): HistoryUnsubscribe = js.native
-  def navigate(to: java.lang.String): scala.Unit = js.native
-  def navigate(to: java.lang.String, options: NavigateOptions[js.Object]): scala.Unit = js.native
+  val location: HistoryLocation
+  var navigate: NavigateFn
+  val transitioning: scala.Boolean
+  def listen(listener: HistoryListener): HistoryUnsubscribe
+}
+
+object History {
+  @scala.inline
+  def apply(
+    listen: HistoryListener => HistoryUnsubscribe,
+    location: HistoryLocation,
+    navigate: NavigateFn,
+    transitioning: scala.Boolean
+  ): History = {
+    val __obj = js.Dynamic.literal(listen = js.Any.fromFunction1(listen), location = location, navigate = navigate, transitioning = transitioning)
+  
+    __obj.asInstanceOf[History]
+  }
 }
 

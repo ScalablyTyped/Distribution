@@ -5,11 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AntTreeNodeMouseEvent extends js.Object {
-  @JSName("event")
-  var event_Original: reactLib.reactMod.MouseEventHandler[_] = js.native
-  var node: AntTreeNode = js.native
-  def event(event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]): scala.Unit = js.native
+  var event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]
+  var node: AntTreeNode
+}
+
+object AntTreeNodeMouseEvent {
+  @scala.inline
+  def apply(event: reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent], node: AntTreeNode): AntTreeNodeMouseEvent = {
+    val __obj = js.Dynamic.literal(event = event, node = node)
+  
+    __obj.asInstanceOf[AntTreeNodeMouseEvent]
+  }
 }
 

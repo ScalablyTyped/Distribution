@@ -28,6 +28,11 @@ trait DownloadItem extends js.Object {
   var fileSize: scala.Double
   /** Absolute local path. */
   var filename: java.lang.String
+  /**
+    * The absolute URL that this download is being made from, after all redirects.
+    * @since Since Chrome 54.
+    */
+  var finalUrl: java.lang.String
   /** An identifier that is persistent across browser sessions. */
   var id: scala.Double
   /** False if this download is recorded in the history, true if it is not recorded. */
@@ -44,7 +49,7 @@ trait DownloadItem extends js.Object {
   var state: java.lang.String
   /** Number of bytes in the whole file, without considering file compression, or -1 if unknown. */
   var totalBytes: scala.Double
-  /** Absolute URL. */
+  /** The absolute URL that this download initiated from, before any redirects. */
   var url: java.lang.String
 }
 
@@ -57,6 +62,7 @@ object DownloadItem {
     exists: scala.Boolean,
     fileSize: scala.Double,
     filename: java.lang.String,
+    finalUrl: java.lang.String,
     id: scala.Double,
     incognito: scala.Boolean,
     mime: java.lang.String,
@@ -72,7 +78,7 @@ object DownloadItem {
     error: java.lang.String = null,
     estimatedEndTime: java.lang.String = null
   ): DownloadItem = {
-    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, canResume = canResume, danger = danger, exists = exists, fileSize = fileSize, filename = filename, id = id, incognito = incognito, mime = mime, paused = paused, referrer = referrer, startTime = startTime, state = state, totalBytes = totalBytes, url = url)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, canResume = canResume, danger = danger, exists = exists, fileSize = fileSize, filename = filename, finalUrl = finalUrl, id = id, incognito = incognito, mime = mime, paused = paused, referrer = referrer, startTime = startTime, state = state, totalBytes = totalBytes, url = url)
     if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId)
     if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)

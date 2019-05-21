@@ -5,14 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait CollectionCellGroupRendererParams extends js.Object {
-  @JSName("cellRenderer")
-  var cellRenderer_Original: CollectionCellRenderer = js.native
-  @JSName("cellSizeAndPositionGetter")
-  var cellSizeAndPositionGetter_Original: CollectionCellSizeAndPositionGetter = js.native
-  var indices: js.Array[scala.Double] = js.native
-  def cellRenderer(params: CollectionCellRendererParams): reactLib.reactMod.ReactNode = js.native
-  def cellSizeAndPositionGetter(params: reactDashVirtualizedLib.reactDashVirtualizedMod.Index): CollectionCellSizeAndPosition = js.native
+  var cellRenderer: CollectionCellRenderer
+  var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter
+  var indices: js.Array[scala.Double]
+}
+
+object CollectionCellGroupRendererParams {
+  @scala.inline
+  def apply(
+    cellRenderer: CollectionCellRenderer,
+    cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter,
+    indices: js.Array[scala.Double]
+  ): CollectionCellGroupRendererParams = {
+    val __obj = js.Dynamic.literal(cellRenderer = cellRenderer, cellSizeAndPositionGetter = cellSizeAndPositionGetter, indices = indices)
+  
+    __obj.asInstanceOf[CollectionCellGroupRendererParams]
+  }
 }
 

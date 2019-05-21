@@ -18,9 +18,9 @@ trait FnModules extends js.Object {
   var identifier: java.lang.String
   var index: scala.Double
   var index2: scala.Double
-  var issuer: js.UndefOr[java.lang.String]
-  var issuerId: js.UndefOr[scala.Double | java.lang.String]
-  var issuerName: js.UndefOr[java.lang.String]
+  var issuer: js.UndefOr[java.lang.String] = js.undefined
+  var issuerId: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var issuerName: js.UndefOr[java.lang.String] = js.undefined
   var issuerPath: js.Array[webpackLib.Anon_Id]
   var modules: js.Array[FnModules]
   var name: java.lang.String

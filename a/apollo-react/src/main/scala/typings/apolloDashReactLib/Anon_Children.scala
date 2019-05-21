@@ -5,43 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Children extends js.Object {
-  @JSName("children")
-  var children_Original: reactLib.reactMod.Validator[_] = js.native
-  @JSName("client")
-  var client_Original: reactLib.reactMod.Validator[_] = js.native
-  @JSName("immutable")
-  var immutable_Original: reactLib.reactMod.Requireable[_] = js.native
-  @JSName("store")
-  var store_Original: reactLib.reactMod.Requireable[_] = js.native
-  def children(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def client(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def immutable(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def store(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var children: reactLib.reactMod.Validator[_]
+  var client: reactLib.reactMod.Validator[_]
+  var immutable: reactLib.reactMod.Requireable[_]
+  var store: reactLib.reactMod.Requireable[_]
+}
+
+object Anon_Children {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.Validator[_],
+    client: reactLib.reactMod.Validator[_],
+    immutable: reactLib.reactMod.Requireable[_],
+    store: reactLib.reactMod.Requireable[_]
+  ): Anon_Children = {
+    val __obj = js.Dynamic.literal(children = children, client = client, immutable = immutable, store = store)
+  
+    __obj.asInstanceOf[Anon_Children]
+  }
 }
 

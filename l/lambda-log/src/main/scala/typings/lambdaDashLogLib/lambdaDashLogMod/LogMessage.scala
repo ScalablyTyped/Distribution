@@ -13,10 +13,11 @@ class LogMessage protected () extends js.Object {
   var log: LogRecord = js.native
   var meta: js.UndefOr[js.Any] = js.native
   var msg: java.lang.String = js.native
+  var tags: js.UndefOr[js.Array[java.lang.String]] = js.native
   var `throw`: js.UndefOr[scala.Nothing] = js.native
   var value: LogRecord = js.native
   def toJSON(): java.lang.String = js.native
-  def toJSON(format: scala.Double): java.lang.String = js.native
+  def toJSON(format: scala.Boolean): java.lang.String = js.native
 }
 
 /* static members */

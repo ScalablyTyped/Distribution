@@ -5,63 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_ClassName extends js.Object {
-  @JSName("className")
-  var className_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("indicator")
-  var indicator_Original: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike] = js.native
-  @JSName("prefixCls")
-  var prefixCls_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("size")
-  var size_Original: propDashTypesLib.propDashTypesMod.Requireable[
+  var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var indicator: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike]
+  var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[
     antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
-  ] = js.native
-  @JSName("spinning")
-  var spinning_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
-  @JSName("wrapperClassName")
-  var wrapperClassName_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  def className(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def indicator(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def prefixCls(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def size(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def spinning(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def wrapperClassName(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  ]
+  var spinning: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  var wrapperClassName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+}
+
+object Anon_ClassName {
+  @scala.inline
+  def apply(
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    indicator: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    size: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+    ],
+    spinning: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    wrapperClassName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_ClassName = {
+    val __obj = js.Dynamic.literal(className = className, indicator = indicator, prefixCls = prefixCls, size = size, spinning = spinning, wrapperClassName = wrapperClassName)
+  
+    __obj.asInstanceOf[Anon_ClassName]
+  }
 }
 

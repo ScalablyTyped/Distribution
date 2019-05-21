@@ -5,27 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait SettingType[TItem] extends js.Object {
   /**
     * Show autocomplete only if it's preceded by whitespace. Cannot be combined with allowWhitespace.
     * @default false
     */
-  var afterWhitespace: js.UndefOr[scala.Boolean] = js.native
+  var afterWhitespace: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Set this to true if you want to provide autocomplete for words (tokens) containing whitespace.
     * @default false
     */
-  var allowWhitespace: js.UndefOr[scala.Boolean] = js.native
+  var allowWhitespace: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
     */
-  var component: reactLib.reactMod.SFC[ItemComponentProps[TItem]] = js.native
+  var component: reactLib.reactMod.SFC[ItemComponentProps[TItem]]
   /**
     * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
     */
-  @JSName("dataProvider")
-  var dataProvider_Original: DataProviderType[TItem] = js.native
+  var dataProvider: DataProviderType[TItem]
   /**
     * (Optional for string based item. If the item is an object this method is required) This function defines text
     * which will be placed into textarea after the user makes a selection.
@@ -45,10 +43,23 @@ trait SettingType[TItem] extends js.Object {
       /* trigger */ js.UndefOr[java.lang.String], 
       TextToReplaceType | java.lang.String
     ]
-  ] = js.native
-  /**
-    * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
-    */
-  def dataProvider(token: java.lang.String): js.Promise[js.Array[TItem]] | js.Array[TItem] = js.native
+  ] = js.undefined
+}
+
+object SettingType {
+  @scala.inline
+  def apply[TItem](
+    component: reactLib.reactMod.SFC[ItemComponentProps[TItem]],
+    dataProvider: DataProviderType[TItem],
+    afterWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    allowWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    output: (/* item */ TItem, /* trigger */ js.UndefOr[java.lang.String]) => TextToReplaceType | java.lang.String = null
+  ): SettingType[TItem] = {
+    val __obj = js.Dynamic.literal(component = component, dataProvider = dataProvider)
+    if (!js.isUndefined(afterWhitespace)) __obj.updateDynamic("afterWhitespace")(afterWhitespace)
+    if (!js.isUndefined(allowWhitespace)) __obj.updateDynamic("allowWhitespace")(allowWhitespace)
+    if (output != null) __obj.updateDynamic("output")(js.Any.fromFunction2(output))
+    __obj.asInstanceOf[SettingType[TItem]]
+  }
 }
 

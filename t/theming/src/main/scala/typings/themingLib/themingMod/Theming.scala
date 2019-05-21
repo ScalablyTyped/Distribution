@@ -5,15 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Theming[C /* <: java.lang.String */] extends js.Object {
-  var ThemeProvider: themingLib.themingMod.ThemeProvider = js.native
-  var channel: C = js.native
-  var themeListener: ThemeListener[C] = js.native
-  @JSName("withTheme")
-  var withTheme_Original: themingLib.Anon_Component = js.native
-  def withTheme[P](component: reactLib.reactMod.ComponentType[P with themingLib.Anon_Theme]): reactLib.reactMod.ComponentType[
-    stdLib.Pick[P, stdLib.Exclude[java.lang.String, themingLib.themingLibStrings.theme]]
-  ] = js.native
+  var ThemeProvider: themingLib.themingMod.ThemeProvider
+  var channel: C
+  var themeListener: ThemeListener[C]
+  var withTheme: themingLib.Anon_Component
+}
+
+object Theming {
+  @scala.inline
+  def apply[C /* <: java.lang.String */](
+    ThemeProvider: ThemeProvider,
+    channel: C,
+    themeListener: ThemeListener[C],
+    withTheme: themingLib.Anon_Component
+  ): Theming[C] = {
+    val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider, channel = channel.asInstanceOf[js.Any], themeListener = themeListener, withTheme = withTheme)
+  
+    __obj.asInstanceOf[Theming[C]]
+  }
 }
 

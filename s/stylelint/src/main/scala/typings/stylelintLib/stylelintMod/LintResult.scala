@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait LintResult extends js.Object {
   var deprecations: js.Array[java.lang.String]
-  var errored: js.UndefOr[scala.Boolean]
-  var ignored: js.UndefOr[scala.Boolean]
+  var errored: js.UndefOr[scala.Boolean] = js.undefined
+  var ignored: js.UndefOr[scala.Boolean] = js.undefined
   var invalidOptionWarnings: js.Array[_]
   var source: java.lang.String
   var warnings: js.Array[java.lang.String]

@@ -96,7 +96,7 @@ trait Recurrence extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var recurrenceType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType = js.native
+  var recurrenceType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType | java.lang.String = js.native
   /**
     * The {@link Office.SeriesTime} object enables you to manage the start and end dates of the recurring appointment series and the usual start 
     * and end times of instances. **This object is not in UTC time.** 

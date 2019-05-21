@@ -9,11 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object UpdatesNs extends js.Object {
   /** An optional params object passed to fetchUpdateAsync. */
-  @js.native
   trait FetchUpdateAsyncParams extends js.Object {
-    @JSName("eventListener")
-    var eventListener_Original: UpdateEventListener = js.native
-    def eventListener(event: UpdateEvent): js.Any = js.native
+    var eventListener: UpdateEventListener
   }
   
   trait UpdateBundle extends js.Object {

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Configuration of a columns cell section */
-@js.native
 trait CellProps extends js.Object {
   /**
     * Default: undefined
@@ -15,26 +14,34 @@ trait CellProps extends js.Object {
     * @example 'Cell Value'
     * @example ({data, column}) => <div>Cell Value</div>,
     */
-  var Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer = js.native
+  var Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer
   /**
     * Set the classname of the `td` element of the column
     * @default string
     */
-  var className: java.lang.String = js.native
+  var className: java.lang.String
   /**
     * @default () => ({})
     */
-  @JSName("getProps")
-  var getProps_Original: reactDashTableLib.reactDashTableMod.ReactTableFunction = js.native
+  var getProps: reactDashTableLib.reactDashTableMod.ReactTableFunction
   /**
     * Set the style of the `td` element of the column
     * @default {}
     */
-  var style: js.Object = js.native
-  /**
-    * @default () => ({})
-    */
-  def getProps(): scala.Unit = js.native
-  def getProps(value: js.Any): scala.Unit = js.native
+  var style: js.Object
+}
+
+object CellProps {
+  @scala.inline
+  def apply(
+    Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer,
+    className: java.lang.String,
+    getProps: reactDashTableLib.reactDashTableMod.ReactTableFunction,
+    style: js.Object
+  ): CellProps = {
+    val __obj = js.Dynamic.literal(Cell = Cell.asInstanceOf[js.Any], className = className, getProps = getProps, style = style)
+  
+    __obj.asInstanceOf[CellProps]
+  }
 }
 

@@ -5,11 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_GenerateTestHook extends js.Object {
-  @JSName("generateTestHook")
-  var generateTestHook_Original: cavyLib.cavyMod.TestHookGenerator = js.native
-  def generateTestHook(label: java.lang.String): cavyLib.cavyMod.RefCallback = js.native
-  def generateTestHook(label: java.lang.String, callback: cavyLib.cavyMod.RefCallback): cavyLib.cavyMod.RefCallback = js.native
+  var generateTestHook: cavyLib.cavyMod.TestHookGenerator
+}
+
+object Anon_GenerateTestHook {
+  @scala.inline
+  def apply(generateTestHook: cavyLib.cavyMod.TestHookGenerator): Anon_GenerateTestHook = {
+    val __obj = js.Dynamic.literal(generateTestHook = generateTestHook)
+  
+    __obj.asInstanceOf[Anon_GenerateTestHook]
+  }
 }
 

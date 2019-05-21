@@ -283,6 +283,8 @@ object atPulumiAwsMod extends js.Object {
     val MediaLiveNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
     var MediaPackage: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.MediaPackage] = js.native
     val MediaPackageNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
+    var MediaPackageVod: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.MediaPackageVod] = js.native
+    val MediaPackageVodNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native
     var MediaStore: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.MediaStore] = js.native
     var MediaStoreData: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.MediaStoreData] = js.native
     val MediaStoreDataNs: atPulumiAwsLib.Anon_TypesReadOnly = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NavigationEventPayload extends js.Object {
   var action: NavigationAction
-  var lastState: js.UndefOr[NavigationState | scala.Null]
+  var lastState: js.UndefOr[NavigationState | scala.Null] = js.undefined
   var state: NavigationState
   var `type`: EventType
 }

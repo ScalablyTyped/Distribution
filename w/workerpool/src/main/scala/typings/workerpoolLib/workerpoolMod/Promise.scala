@@ -23,6 +23,6 @@ class Promise[T, E] () extends js.Object {
 @JSImport("workerpool", "Promise")
 @js.native
 object Promise extends js.Object {
-  def all(promises: js.Array[workerpoolLib.workerpoolMod.Promise[_, _]]): js.Array[workerpoolLib.workerpoolMod.Promise[_, _]] = js.native
+  def all(promises: js.Array[workerpoolLib.workerpoolMod.Promise[_, _]]): workerpoolLib.workerpoolMod.Promise[js.Array[_], _] = js.native
 }
 

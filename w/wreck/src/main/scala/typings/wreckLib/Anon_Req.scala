@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Req extends js.Object {
   var req: nodeLib.httpMod.ClientRequest
-  var res: js.UndefOr[nodeLib.httpMod.IncomingMessage]
+  var res: js.UndefOr[nodeLib.httpMod.IncomingMessage] = js.undefined
   var start: scala.Double
   var url: nodeLib.urlMod.URL
 }

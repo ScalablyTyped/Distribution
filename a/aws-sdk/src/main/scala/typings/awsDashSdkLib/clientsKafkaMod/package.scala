@@ -25,13 +25,16 @@ package object clientsKafkaMod {
   type EnhancedMonitoring = _EnhancedMonitoring | java.lang.String
   type MaxResults = scala.Double
   type NodeType = awsDashSdkLib.awsDashSdkLibStrings.BROKER | java.lang.String
+  type __blob = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   type __double = scala.Double
   type __integer = scala.Double
   type __integerMin1Max15 = scala.Double
   type __integerMin1Max16384 = scala.Double
   type __listOfClusterInfo = js.Array[ClusterInfo]
+  type __listOfConfiguration = js.Array[Configuration]
   type __listOfNodeInfo = js.Array[NodeInfo]
   type __listOf__string = js.Array[__string]
+  type __long = scala.Double
   type __mapOf__string = org.scalablytyped.runtime.StringDictionary[__string]
   type __string = java.lang.String
   type __stringMin1Max128 = java.lang.String

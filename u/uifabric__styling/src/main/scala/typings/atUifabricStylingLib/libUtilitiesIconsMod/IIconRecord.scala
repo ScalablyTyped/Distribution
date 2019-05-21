@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IIconRecord extends js.Object {
-  var code: js.UndefOr[java.lang.String]
+  var code: js.UndefOr[java.lang.String] = js.undefined
   var subset: IIconSubsetRecord
 }
 

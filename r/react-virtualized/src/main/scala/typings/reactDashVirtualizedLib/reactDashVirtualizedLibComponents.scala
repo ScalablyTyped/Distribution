@@ -23,6 +23,8 @@ object reactDashVirtualizedLibComponents {
   type CellMeasurerProps = reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerProps
   @scala.inline
   def Collection: reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsCollectionMod.CollectionProps] = js.constructorOf[reactDashVirtualizedLib.distEsCollectionMod.Collection].asInstanceOf[reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsCollectionMod.CollectionProps]]
+  @scala.inline
+  def CollectionProps: reactDashVirtualizedLib.distEsCollectionMod.CollectionProps.type = reactDashVirtualizedLib.distEsCollectionMod.CollectionProps
   type CollectionProps = reactDashVirtualizedLib.distEsCollectionMod.CollectionProps
   @scala.inline
   def Column: reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsTableMod.ColumnProps] = js.constructorOf[reactDashVirtualizedLib.distEsTableMod.Column].asInstanceOf[reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsTableMod.ColumnProps]]
@@ -47,6 +49,8 @@ object reactDashVirtualizedLibComponents {
   type ListProps = reactDashVirtualizedLib.distEsListMod.ListProps
   @scala.inline
   def Masonry: reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsMasonryMod.MasonryProps] = js.constructorOf[reactDashVirtualizedLib.distEsMasonryMod.Masonry].asInstanceOf[reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsMasonryMod.MasonryProps]]
+  @scala.inline
+  def MasonryProps: reactDashVirtualizedLib.distEsMasonryMod.MasonryProps.type = reactDashVirtualizedLib.distEsMasonryMod.MasonryProps
   type MasonryProps = reactDashVirtualizedLib.distEsMasonryMod.MasonryProps
   @scala.inline
   def MultiGrid: reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsMultiGridMod.MultiGridProps] = js.constructorOf[reactDashVirtualizedLib.distEsMultiGridMod.MultiGrid].asInstanceOf[reactLib.reactMod.ComponentType[reactDashVirtualizedLib.distEsMultiGridMod.MultiGridProps]]

@@ -5,439 +5,128 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_FindAllByAltText extends js.Object {
-  def findAllByAltText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByDisplayValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByLabelText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByPlaceholderText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByRole(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findAllByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[js.Array[stdLib.HTMLElement]] = js.native
-  def findByAltText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByDisplayValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByLabelText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByPlaceholderText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByRole(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Promise[stdLib.HTMLElement] = js.native
-  def findByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def findByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions,
-    waitForElementOptions: domDashTestingDashLibraryLib.typingsWaitDashForDashElementMod.WaitForElementOptions
-  ): js.Promise[stdLib.HTMLElement] = js.native
-  def getAllByAltText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByDisplayValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByLabelText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByPlaceholderText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByRole(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getByAltText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByDisplayValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByLabelText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByPlaceholderText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByRole(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def queryAllByAltText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByDisplayValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByLabelText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByPlaceholderText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByRole(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryByAltText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByAltText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByDisplayValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByDisplayValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByLabelText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByLabelText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByPlaceholderText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByPlaceholderText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByRole(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByRole(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByTestId(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsQueryDashHelpersMod.SelectorMatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByValue(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
+  val findAllByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute
+  val findAllByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute
+  val findAllByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByText
+  val findAllByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute
+  val findAllByRole: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute
+  val findAllByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute
+  val findAllByText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByText
+  val findAllByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute
+  val findByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute
+  val findByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute
+  val findByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByText
+  val findByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute
+  val findByRole: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute
+  val findByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute
+  val findByText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByText
+  val findByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute
+  val getAllByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText
+  val getAllByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllByRole: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllByText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText
+  val getAllByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getAllByValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val getByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByText
+  val getByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getByRole: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getByText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByText
+  val getByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val getByValue: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute
+  val queryAllByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText
+  val queryAllByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllByRole: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllByText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText
+  val queryAllByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryAllByValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute
+  val queryByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByText
+  val queryByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryByRole: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryByText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByText
+  val queryByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  val queryByValue: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+}
+
+object Anon_FindAllByAltText {
+  @scala.inline
+  def apply(
+    findAllByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute,
+    findAllByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute,
+    findAllByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByText,
+    findAllByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute,
+    findAllByRole: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute,
+    findAllByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute,
+    findAllByText: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByText,
+    findAllByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.FindAllByBoundAttribute,
+    findByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute,
+    findByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute,
+    findByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByText,
+    findByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute,
+    findByRole: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute,
+    findByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute,
+    findByText: domDashTestingDashLibraryLib.typingsQueriesMod.FindByText,
+    findByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.FindByBoundAttribute,
+    getAllByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText,
+    getAllByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllByRole: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllByText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText,
+    getAllByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getAllByValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    getByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByText,
+    getByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getByRole: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getByText: domDashTestingDashLibraryLib.typingsQueriesMod.GetByText,
+    getByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    getByValue: domDashTestingDashLibraryLib.typingsQueriesMod.GetByBoundAttribute,
+    queryAllByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText,
+    queryAllByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllByRole: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllByText: domDashTestingDashLibraryLib.typingsQueriesMod.AllByText,
+    queryAllByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryAllByValue: domDashTestingDashLibraryLib.typingsQueriesMod.AllByBoundAttribute,
+    queryByAltText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryByDisplayValue: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryByLabelText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByText,
+    queryByPlaceholderText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryByRole: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryBySelectText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryByTestId: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryByText: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByText,
+    queryByTitle: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute,
+    queryByValue: domDashTestingDashLibraryLib.typingsQueriesMod.QueryByBoundAttribute
+  ): Anon_FindAllByAltText = {
+    val __obj = js.Dynamic.literal(findAllByAltText = findAllByAltText, findAllByDisplayValue = findAllByDisplayValue, findAllByLabelText = findAllByLabelText, findAllByPlaceholderText = findAllByPlaceholderText, findAllByRole = findAllByRole, findAllByTestId = findAllByTestId, findAllByText = findAllByText, findAllByTitle = findAllByTitle, findByAltText = findByAltText, findByDisplayValue = findByDisplayValue, findByLabelText = findByLabelText, findByPlaceholderText = findByPlaceholderText, findByRole = findByRole, findByTestId = findByTestId, findByText = findByText, findByTitle = findByTitle, getAllByAltText = getAllByAltText, getAllByDisplayValue = getAllByDisplayValue, getAllByLabelText = getAllByLabelText, getAllByPlaceholderText = getAllByPlaceholderText, getAllByRole = getAllByRole, getAllBySelectText = getAllBySelectText, getAllByTestId = getAllByTestId, getAllByText = getAllByText, getAllByTitle = getAllByTitle, getAllByValue = getAllByValue, getByAltText = getByAltText, getByDisplayValue = getByDisplayValue, getByLabelText = getByLabelText, getByPlaceholderText = getByPlaceholderText, getByRole = getByRole, getBySelectText = getBySelectText, getByTestId = getByTestId, getByText = getByText, getByTitle = getByTitle, getByValue = getByValue, queryAllByAltText = queryAllByAltText, queryAllByDisplayValue = queryAllByDisplayValue, queryAllByLabelText = queryAllByLabelText, queryAllByPlaceholderText = queryAllByPlaceholderText, queryAllByRole = queryAllByRole, queryAllBySelectText = queryAllBySelectText, queryAllByTestId = queryAllByTestId, queryAllByText = queryAllByText, queryAllByTitle = queryAllByTitle, queryAllByValue = queryAllByValue, queryByAltText = queryByAltText, queryByDisplayValue = queryByDisplayValue, queryByLabelText = queryByLabelText, queryByPlaceholderText = queryByPlaceholderText, queryByRole = queryByRole, queryBySelectText = queryBySelectText, queryByTestId = queryByTestId, queryByText = queryByText, queryByTitle = queryByTitle, queryByValue = queryByValue)
+  
+    __obj.asInstanceOf[Anon_FindAllByAltText]
+  }
 }
 

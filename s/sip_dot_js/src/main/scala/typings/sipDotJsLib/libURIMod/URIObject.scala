@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait URIObject extends js.Object {
   var host: java.lang.String
-  var port: js.UndefOr[scala.Double]
+  var port: js.UndefOr[scala.Double] = js.undefined
   var scheme: java.lang.String
-  var user: js.UndefOr[java.lang.String]
+  var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object URIObject {

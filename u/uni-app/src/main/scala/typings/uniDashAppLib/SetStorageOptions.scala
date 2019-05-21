@@ -11,9 +11,9 @@ trait SetStorageOptions extends js.Object {
     */
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-    * 需要存储的内容
+    * 需要存储的内容，只支持原生类型、及能够通过 JSON.stringify 序列化的对象
     */
-  var data: js.UndefOr[js.Object | java.lang.String] = js.undefined
+  var data: js.UndefOr[js.Any] = js.undefined
   /**
     * 接口调用失败的回调函数
     */
@@ -32,14 +32,14 @@ object SetStorageOptions {
   @scala.inline
   def apply(
     complete: () => scala.Unit = null,
-    data: js.Object | java.lang.String = null,
+    data: js.Any = null,
     fail: () => scala.Unit = null,
     key: java.lang.String = null,
     success: () => scala.Unit = null
   ): SetStorageOptions = {
     val __obj = js.Dynamic.literal()
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
     if (key != null) __obj.updateDynamic("key")(key)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))

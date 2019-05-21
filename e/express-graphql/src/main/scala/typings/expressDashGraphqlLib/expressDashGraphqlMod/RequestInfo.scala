@@ -13,11 +13,11 @@ trait RequestInfo extends js.Object {
   /**
     * The parsed GraphQL document.
     */
-  var document: js.UndefOr[graphqlLib.languageAstMod.DocumentNode | scala.Null]
+  var document: js.UndefOr[graphqlLib.languageAstMod.DocumentNode | scala.Null] = js.undefined
   /**
     * The (optional) operation name requested.
     */
-  var operationName: js.UndefOr[java.lang.String | scala.Null]
+  var operationName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
     * The result of executing the operation.
     */
@@ -25,7 +25,7 @@ trait RequestInfo extends js.Object {
   /**
     * The variable values used at runtime.
     */
-  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
 }
 
 object RequestInfo {

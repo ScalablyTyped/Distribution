@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait HistoryStateNodeConfig[TContext, TEvent /* <: EventObject */] extends AtomicStateNodeConfig[TContext, TEvent] {
   @JSName("history")
   var history_HistoryStateNodeConfig: xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep | xstateLib.xstateLibNumbers.`true`
-  var target: js.UndefOr[StateValue]
+  var target: js.UndefOr[StateValue] = js.undefined
 }
 
 object HistoryStateNodeConfig {

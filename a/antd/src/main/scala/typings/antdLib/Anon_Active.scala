@@ -5,119 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Active extends js.Object {
-  @JSName("default")
-  var default_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("format")
-  var format_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
-  @JSName("gapDegree")
-  var gapDegree_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
-  @JSName("percent")
-  var percent_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
-  @JSName("showInfo")
-  var showInfo_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
-  @JSName("status")
-  var status_Original: propDashTypesLib.propDashTypesMod.Requireable[
+  var default: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var format: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  var gapDegree: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
+  var percent: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
+  var showInfo: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
+  var status: propDashTypesLib.propDashTypesMod.Requireable[
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success | antdLib.antdLibStrings.exception
-  ] = js.native
-  @JSName("strokeColor")
-  var strokeColor_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | js.Object] = js.native
-  @JSName("strokeLinecap")
-  var strokeLinecap_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("strokeWidth")
-  var strokeWidth_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
-  @JSName("trailColor")
-  var trailColor_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
-  @JSName("type")
-  var type_Original: propDashTypesLib.propDashTypesMod.Requireable[
+  ]
+  var strokeColor: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | js.Object]
+  var strokeLinecap: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var strokeWidth: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
+  var trailColor: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  var `type`: propDashTypesLib.propDashTypesMod.Requireable[
     antdLib.antdLibStrings.circle | antdLib.antdLibStrings.line | antdLib.antdLibStrings.dashboard
-  ] = js.native
-  @JSName("width")
-  var width_Original: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
-  def default(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def format(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def gapDegree(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def percent(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def showInfo(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def status(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def strokeColor(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def strokeLinecap(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def strokeWidth(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def trailColor(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def `type`(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def width(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  ]
+  var width: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
+}
+
+object Anon_Active {
+  @scala.inline
+  def apply(
+    default: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    format: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    gapDegree: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    percent: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    showInfo: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    status: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.normal | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success | antdLib.antdLibStrings.exception
+    ],
+    strokeColor: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | js.Object],
+    strokeLinecap: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    strokeWidth: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    trailColor: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    `type`: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.circle | antdLib.antdLibStrings.line | antdLib.antdLibStrings.dashboard
+    ],
+    width: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
+  ): Anon_Active = {
+    val __obj = js.Dynamic.literal(default = default, format = format, gapDegree = gapDegree, percent = percent, showInfo = showInfo, status = status, strokeColor = strokeColor, strokeLinecap = strokeLinecap, strokeWidth = strokeWidth, trailColor = trailColor, width = width)
+    __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_Active]
+  }
 }
 

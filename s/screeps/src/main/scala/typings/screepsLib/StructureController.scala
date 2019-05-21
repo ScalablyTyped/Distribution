@@ -34,7 +34,7 @@ trait StructureController
   /**
     * An object with the controller reservation info if present: username, ticksToEnd
     */
-  var reservation: js.UndefOr[ReservationDefinition]
+  var reservation: js.UndefOr[ReservationDefinition] = js.undefined
   /**
     * How many ticks of safe mode are remaining, or undefined.
     */
@@ -50,7 +50,7 @@ trait StructureController
   /**
     * An object with the controller sign info if present
     */
-  var sign: js.UndefOr[SignDefinition]
+  var sign: js.UndefOr[SignDefinition] = js.undefined
   /**
     * The amount of game ticks when this controller will lose one level. This timer can be reset by using Creep.upgradeController.
     */
@@ -132,18 +132,6 @@ class StructureControllerCls protected () extends StructureController {
   /* CompleteClass */
   override var progressTotal: scala.Double = js.native
   /**
-    * An object with the controller reservation info if present: username, ticksToEnd
-    */
-  /* CompleteClass */
-  override var reservation: js.UndefOr[ReservationDefinition] = js.native
-  /**
-    * The link to the Room object. May be undefined in case if an object is a
-    * flag or a construction site and is placed in a room that is not visible
-    * to you.
-    */
-  /* CompleteClass */
-  override var room: js.UndefOr[Room] = js.native
-  /**
     * If you can get an instance of a Structure, you can see it.
     * If you can see the Structure, you can see the room it's in.
     */
@@ -155,11 +143,6 @@ class StructureControllerCls protected () extends StructureController {
     */
   /* CompleteClass */
   override var safeModeAvailable: scala.Double = js.native
-  /**
-    * An object with the controller sign info if present
-    */
-  /* CompleteClass */
-  override var sign: js.UndefOr[SignDefinition] = js.native
   /**
     * One of the STRUCTURE_* constants.
     */

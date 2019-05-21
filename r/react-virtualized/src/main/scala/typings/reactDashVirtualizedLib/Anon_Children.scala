@@ -5,57 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Children extends js.Object {
-  @JSName("children")
-  var children_Original: reactLib.reactMod.Validator[
+  var children: reactLib.reactMod.Validator[
     js.Function1[
       /* props */ reactDashVirtualizedLib.distEsColumnSizerMod.SizedColumnProps, 
       reactLib.reactMod.ReactNode
     ]
-  ] = js.native
-  @JSName("columnCount")
-  var columnCount_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  @JSName("columnMaxWidth")
-  var columnMaxWidth_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("columnMinWidth")
-  var columnMinWidth_Original: reactLib.reactMod.Requireable[scala.Double] = js.native
-  @JSName("width")
-  var width_Original: reactLib.reactMod.Validator[scala.Double] = js.native
-  def children(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def columnCount(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def columnMaxWidth(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def columnMinWidth(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
-  def width(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  ]
+  var columnCount: reactLib.reactMod.Validator[scala.Double]
+  var columnMaxWidth: reactLib.reactMod.Requireable[scala.Double]
+  var columnMinWidth: reactLib.reactMod.Requireable[scala.Double]
+  var width: reactLib.reactMod.Validator[scala.Double]
+}
+
+object Anon_Children {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.Validator[
+      js.Function1[
+        /* props */ reactDashVirtualizedLib.distEsColumnSizerMod.SizedColumnProps, 
+        reactLib.reactMod.ReactNode
+      ]
+    ],
+    columnCount: reactLib.reactMod.Validator[scala.Double],
+    columnMaxWidth: reactLib.reactMod.Requireable[scala.Double],
+    columnMinWidth: reactLib.reactMod.Requireable[scala.Double],
+    width: reactLib.reactMod.Validator[scala.Double]
+  ): Anon_Children = {
+    val __obj = js.Dynamic.literal(children = children, columnCount = columnCount, columnMaxWidth = columnMaxWidth, columnMinWidth = columnMinWidth, width = width)
+  
+    __obj.asInstanceOf[Anon_Children]
+  }
 }
 

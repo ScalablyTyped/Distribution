@@ -39,8 +39,6 @@ trait Expect
   var visible: this.type = js.native
   /**
     * Checks if the type (i.e. tag name) of a specified element is of an expected value.
-    * @param value: The expected type
-    * @param message: Optional log message to display in the output. If missing, one is displayed by default.
     */
   def a(value: java.lang.String): this.type = js.native
   def a(value: java.lang.String, message: java.lang.String): this.type = js.native
@@ -49,8 +47,6 @@ trait Expect
   def an(value: java.lang.String, message: java.lang.String): this.type = js.native
   /**
     * Checks if a given attribute of an element exists and optionally if it has the expected value.
-    * @param attribute: The attribute name
-    * @param message: Optional log message to display in the output. If missing, one is displayed by default.
     */
   def attribute(name: java.lang.String): this.type = js.native
   def attribute(name: java.lang.String, message: java.lang.String): this.type = js.native
@@ -59,20 +55,17 @@ trait Expect
     * before or after can be chained to any assertion and thus adding retry capability. You can change the polling interval by defining
     * a waitForConditionPollInterval property (in milliseconds) as a global property in your nightwatch.json or in
     * your external globals file. Similarly, a default timeout can be specified as a global waitForConditionTimeout property (in milliseconds).
-    * @param value: Number of milliseconds to wait to perform and operation of check
     */
   def before(value: scala.Double): this.type = js.native
   def contain(value: java.lang.String): this.type = js.native
+  def contains(value: java.lang.String): this.type = js.native
   /**
     * Checks a given css property of an element exists and optionally if it has the expected value.
-    * @param property: The css property name
-    * @param message: Optional log message to display in the output. If missing, one is displayed by default.
     */
   def css(property: java.lang.String): this.type = js.native
   def css(property: java.lang.String, message: java.lang.String): this.type = js.native
   /**
     * Returns the DOM Element
-    * @param property: Css / Id property of the DOM element
     */
   def element(property: java.lang.String): this.type = js.native
   /**
@@ -80,6 +73,8 @@ trait Expect
     * The targets can be an attribute value, the element's inner text and a css property.
     */
   def equal(value: java.lang.String): this.type = js.native
+  def equals(value: java.lang.String): this.type = js.native
   def `match`(value: java.lang.String): this.type = js.native
+  def `match`(value: stdLib.RegExp): this.type = js.native
 }
 

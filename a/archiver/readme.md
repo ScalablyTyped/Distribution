@@ -1,7 +1,7 @@
 
 # Scala.js typings for archiver
 
-Typings are for version 2.1
+Typings are for version 3.0.0
 
 ## Library description:
 a streaming interface for archive generation
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for archiver 2.1
+// Type definitions for archiver 3.0.0
 // Project: https://github.com/archiverjs/node-archiver
 // Definitions by: Esri <https://github.com/archiverjs/node-archiver>, Dolan Miu <https://github.com/dolanmiu>, Crevil <https://github.com/crevil>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

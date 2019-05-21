@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Done[T] extends js.Object {
   var done: collectionsLib.collectionsLibNumbers.`true`
-  var value: js.UndefOr[T | scala.Null]
+  var value: js.UndefOr[T | scala.Null] = js.undefined
 }
 
 object Anon_Done {

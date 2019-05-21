@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Creates a SMTP pool transport object for Nodemailer
+  */
 @JSImport("nodemailer/lib/smtp-pool", JSImport.Namespace)
 @js.native
 class ^ protected () extends SMTPPool {

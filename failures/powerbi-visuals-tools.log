@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => powerbi-visuals-tools, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/powerbi-visuals-tools/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/powerbi-visuals-tools),TsIdentLibrarySimple(powerbi-visuals-tools)),TsIdentModule(None,List(powerbi-visuals-tools))) [id => powerbi-visuals-tools, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(powerbi-visuals-tools)) [id => powerbi-visuals-tools, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibrarySimple(powerbi-visuals-tools) [id => powerbi-visuals-tools, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibrarySimple(powerbi-visuals-tools) [id => powerbi-visuals-tools, phase => typescript] 
 [warn ] QualifyReferences.scala:32 Couldn't qualify SemanticFilter [id => powerbi-visuals-tools, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(powerbi-visuals-tools) / TsExport() / TsExporteeTree() / TsDeclTypeAlias(StructuralObjectValue) / TsTypeUnion() / TsTypeRef())] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => powerbi-visuals-tools, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(powerbi-visuals-tools) / TsDeclInterface(IPromise))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => powerbi-visuals-tools, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(powerbi-visuals-tools) / TsDeclInterface(IDeferred))] 

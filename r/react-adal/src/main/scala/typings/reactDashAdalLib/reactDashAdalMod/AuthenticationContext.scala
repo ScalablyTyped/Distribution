@@ -15,8 +15,7 @@ class AuthenticationContext protected () extends js.Object {
     */
   var REQUEST_TYPE: RequestType = js.native
   var RESPONSE_TYPE: ResponseType = js.native
-  @JSName("callback")
-  var callback_Original: TokenCallback = js.native
+  var callback: TokenCallback = js.native
   var config: AdalConfig = js.native
   var instance: java.lang.String = js.native
   var isAngular: scala.Boolean = js.native
@@ -98,10 +97,6 @@ class AuthenticationContext protected () extends js.Object {
   def acquireTokenRedirect(resource: java.lang.String, extraQueryParameters: java.lang.String): scala.Unit = js.native
   def acquireTokenRedirect(resource: java.lang.String, extraQueryParameters: java.lang.String, claims: java.lang.String): scala.Unit = js.native
   def acquireTokenRedirect(resource: java.lang.String, extraQueryParameters: scala.Null, claims: java.lang.String): scala.Unit = js.native
-  def callback(errorDesc: java.lang.String, token: java.lang.String, error: js.Any): scala.Unit = js.native
-  def callback(errorDesc: java.lang.String, token: scala.Null, error: js.Any): scala.Unit = js.native
-  def callback(errorDesc: scala.Null, token: java.lang.String, error: js.Any): scala.Unit = js.native
-  def callback(errorDesc: scala.Null, token: scala.Null, error: js.Any): scala.Unit = js.native
   /**
     * Clears cache items.
     */

@@ -5,24 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait StackViewTransitionConfigsType extends js.Object {
-  var FadeInFromBottomAndroid: TransitionConfig = js.native
-  var FadeOutToBottomAndroid: TransitionConfig = js.native
-  var ModalSlideFromBottomIOS: TransitionConfig = js.native
-  var SlideFromRightIOS: TransitionConfig = js.native
-  @JSName("defaultTransitionConfig")
-  var defaultTransitionConfig_Original: TransitionConfigurer = js.native
-  def defaultTransitionConfig(
-    transitionProps: NavigationTransitionProps,
-    prevTransitionProps: NavigationTransitionProps,
-    isModal: scala.Boolean
-  ): TransitionConfig = js.native
+  var FadeInFromBottomAndroid: TransitionConfig
+  var FadeOutToBottomAndroid: TransitionConfig
+  var ModalSlideFromBottomIOS: TransitionConfig
+  var SlideFromRightIOS: TransitionConfig
+  var defaultTransitionConfig: TransitionConfigurer
   def getTransitionConfig(
     transitionConfigurer: TransitionConfigurer,
     transitionProps: NavigationTransitionProps,
     prevTransitionProps: NavigationTransitionProps,
     isModal: scala.Boolean
-  ): TransitionConfig = js.native
+  ): TransitionConfig
+}
+
+object StackViewTransitionConfigsType {
+  @scala.inline
+  def apply(
+    FadeInFromBottomAndroid: TransitionConfig,
+    FadeOutToBottomAndroid: TransitionConfig,
+    ModalSlideFromBottomIOS: TransitionConfig,
+    SlideFromRightIOS: TransitionConfig,
+    defaultTransitionConfig: TransitionConfigurer,
+    getTransitionConfig: (TransitionConfigurer, NavigationTransitionProps, NavigationTransitionProps, scala.Boolean) => TransitionConfig
+  ): StackViewTransitionConfigsType = {
+    val __obj = js.Dynamic.literal(FadeInFromBottomAndroid = FadeInFromBottomAndroid, FadeOutToBottomAndroid = FadeOutToBottomAndroid, ModalSlideFromBottomIOS = ModalSlideFromBottomIOS, SlideFromRightIOS = SlideFromRightIOS, defaultTransitionConfig = defaultTransitionConfig, getTransitionConfig = js.Any.fromFunction4(getTransitionConfig))
+  
+    __obj.asInstanceOf[StackViewTransitionConfigsType]
+  }
 }
 

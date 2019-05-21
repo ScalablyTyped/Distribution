@@ -45,6 +45,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Stack Builders <https://github.com/stackbuilders>
 //                 Esteban Ibarra <https://github.com/ibarrae>
 //                 Dominic Lee <https://github.com/dominictwlee>
+//                 Dave Vedder <https://github.com/veddermatic>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

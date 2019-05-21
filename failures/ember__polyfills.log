@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(polyfills)) [id => @ember/polyfills, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__polyfills),TsIdentLibraryScoped(ember,Some(polyfills))),TsIdentModule(Some(ember),List(polyfills, types))) [id => @ember/polyfills, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(polyfills, types)) [id => @ember/polyfills, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:218 Processing TsIdentLibraryScoped(ember,Some(polyfills)) [id => @ember/polyfills, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibraryScoped(ember,Some(polyfills)) [id => @ember/polyfills, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => @ember/polyfills, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @ember/polyfills [id => @ember/polyfills, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => @ember/polyfills, phase => scala.js] 

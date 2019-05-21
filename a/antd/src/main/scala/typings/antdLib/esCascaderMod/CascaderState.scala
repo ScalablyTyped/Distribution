@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CascaderState extends js.Object {
-  var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]]
+  var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]] = js.undefined
   var inputFocused: scala.Boolean
   var inputValue: java.lang.String
-  var popupVisible: js.UndefOr[scala.Boolean]
+  var popupVisible: js.UndefOr[scala.Boolean] = js.undefined
   var prevProps: CascaderProps
   var value: js.Array[java.lang.String]
 }

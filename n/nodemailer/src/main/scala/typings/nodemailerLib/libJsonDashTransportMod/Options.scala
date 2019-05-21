@@ -17,6 +17,7 @@ object Options {
   def apply(
     jsonTransport: nodemailerLib.nodemailerLibNumbers.`true`,
     alternatives: js.Array[nodemailerLib.libMailerMod.Attachment] = null,
+    amp: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.AmpAttachment = null,
     attachments: js.Array[nodemailerLib.libMailerMod.Attachment] = null,
     bcc: java.lang.String | nodemailerLib.libMailerMod.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.Address]) = null,
     cc: java.lang.String | nodemailerLib.libMailerMod.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.Address]) = null,
@@ -49,6 +50,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(jsonTransport = jsonTransport)
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    if (amp != null) __obj.updateDynamic("amp")(amp.asInstanceOf[js.Any])
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
     if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])

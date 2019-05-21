@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait OAuth2ApplicationSecurity
   extends BaseOAuthSecuirty
-     with _Security {
+     with Security {
+  @JSName("flow")
+  var flow_OAuth2ApplicationSecurity: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.application
   var scopes: js.UndefOr[js.Array[OAuthScope]] = js.undefined
   var tokenUrl: java.lang.String
 }
@@ -15,9 +17,9 @@ trait OAuth2ApplicationSecurity
 object OAuth2ApplicationSecurity {
   @scala.inline
   def apply(
-    flow: java.lang.String,
+    flow: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.application,
     tokenUrl: java.lang.String,
-    `type`: java.lang.String,
+    `type`: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.oauth2,
     description: java.lang.String = null,
     scopes: js.Array[OAuthScope] = null
   ): OAuth2ApplicationSecurity = {

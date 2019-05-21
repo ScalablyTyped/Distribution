@@ -11,33 +11,33 @@ import scala.scalajs.js.annotation._
 trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
   // MouseEvent, KeyboardEvent, TouchEvent
   @JSName("altKey")
-  var altKey_FocusEventBase: js.UndefOr[scala.Nothing]
+  var altKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // MouseEvent
   @JSName("button")
-  var button_FocusEventBase: js.UndefOr[scala.Nothing]
+  var button_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("buttons")
-  var buttons_FocusEventBase: js.UndefOr[scala.Nothing]
+  var buttons_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // TouchEvent
   @JSName("changedTouches")
-  var changedTouches_FocusEventBase: js.UndefOr[scala.Nothing]
+  var changedTouches_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("charCode")
-  var charCode_FocusEventBase: js.UndefOr[scala.Nothing]
+  var charCode_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
-  var char_FocusEventBase: js.UndefOr[scala.Nothing]
+  var char_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientX")
-  var clientX_FocusEventBase: js.UndefOr[scala.Nothing]
+  var clientX_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientY")
-  var clientY_FocusEventBase: js.UndefOr[scala.Nothing]
+  var clientY_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("ctrlKey")
-  var ctrlKey_FocusEventBase: js.UndefOr[scala.Nothing]
+  var ctrlKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("keyCode")
-  var keyCode_FocusEventBase: js.UndefOr[scala.Nothing]
+  var keyCode_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("key")
-  var key_FocusEventBase: js.UndefOr[scala.Nothing]
+  var key_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -75,11 +75,11 @@ trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("metaKey")
-  var metaKey_FocusEventBase: js.UndefOr[scala.Nothing]
+  var metaKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("offsetX")
-  var offsetX_FocusEventBase: js.UndefOr[scala.Nothing]
+  var offsetX_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("offsetY")
-  var offsetY_FocusEventBase: js.UndefOr[scala.Nothing]
+  var offsetY_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("originalEvent")
   var originalEvent_FocusEventBase: js.UndefOr[jqueryLib._FocusEvent] = js.undefined
   /**
@@ -118,7 +118,7 @@ trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("pageX")
-  var pageX_FocusEventBase: js.UndefOr[scala.Nothing]
+  var pageX_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The mouse position relative to the top edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -155,12 +155,12 @@ trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("pageY")
-  var pageY_FocusEventBase: js.UndefOr[scala.Nothing]
+  var pageY_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // PointerEvent
   @JSName("pointerId")
-  var pointerId_FocusEventBase: js.UndefOr[scala.Nothing]
+  var pointerId_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("pointerType")
-  var pointerType_FocusEventBase: js.UndefOr[scala.Nothing]
+  var pointerType_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -174,18 +174,18 @@ trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
     */
   var relatedTarget: js.UndefOr[stdLib.EventTarget | scala.Null] = js.undefined
   @JSName("screenX")
-  var screenX_FocusEventBase: js.UndefOr[scala.Nothing]
+  var screenX_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenY")
-  var screenY_FocusEventBase: js.UndefOr[scala.Nothing]
+  var screenY_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("shiftKey")
-  var shiftKey_FocusEventBase: js.UndefOr[scala.Nothing]
+  var shiftKey_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("targetTouches")
-  var targetTouches_FocusEventBase: js.UndefOr[scala.Nothing]
+  var targetTouches_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("toElement")
-  var toElement_FocusEventBase: js.UndefOr[scala.Nothing]
+  var toElement_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("touches")
-  var touches_FocusEventBase: js.UndefOr[scala.Nothing]
+  var touches_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.
@@ -240,7 +240,7 @@ trait FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   ```
     */
   @JSName("which")
-  var which_FocusEventBase: js.UndefOr[scala.Nothing]
+  var which_FocusEventBase: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object FocusEventBase {

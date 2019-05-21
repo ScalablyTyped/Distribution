@@ -5,14 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Lib extends js.Object {
-  @JSName("lib")
-  var lib_Original: Anon_LoadFnOptions = js.native
-  def lib[T](loadFn: js.Function1[/* props */ js.Object, js.Promise[T]]): atLoadableComponentLib.atLoadableComponentMod.LoadableLibrary[T] = js.native
-  def lib[T](
-    loadFn: js.Function1[/* props */ js.Object, js.Promise[T]],
-    options: atLoadableComponentLib.atLoadableComponentMod.Options
-  ): atLoadableComponentLib.atLoadableComponentMod.LoadableLibrary[T] = js.native
+  var lib: Anon_LoadFnOptions
+}
+
+object Anon_Lib {
+  @scala.inline
+  def apply(lib: Anon_LoadFnOptions): Anon_Lib = {
+    val __obj = js.Dynamic.literal(lib = lib)
+  
+    __obj.asInstanceOf[Anon_Lib]
+  }
 }
 

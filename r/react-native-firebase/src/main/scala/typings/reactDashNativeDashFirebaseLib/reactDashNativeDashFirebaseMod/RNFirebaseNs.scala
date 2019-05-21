@@ -1420,14 +1420,9 @@ object RNFirebaseNs extends js.Object {
     @JSName("DocumentReference")
     @js.native
     object DocumentReferenceNs extends js.Object {
-      @js.native
       trait Observer extends js.Object {
-        var error: js.UndefOr[ObserverOnError] = js.native
-        @JSName("next")
-        var next_Original: ObserverOnNext = js.native
-        def next(
-          documentSnapshot: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.DocumentSnapshot
-        ): scala.Unit = js.native
+        var error: js.UndefOr[ObserverOnError] = js.undefined
+        var next: ObserverOnNext
       }
       
       type ObserverOnError = js.Function1[
@@ -1493,14 +1488,9 @@ object RNFirebaseNs extends js.Object {
         var `type`: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.fieldpath | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.string
       }
       
-      @js.native
       trait Observer extends js.Object {
-        var error: js.UndefOr[ObserverOnError] = js.native
-        @JSName("next")
-        var next_Original: ObserverOnNext = js.native
-        def next(
-          querySnapshot: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.QuerySnapshot
-        ): scala.Unit = js.native
+        var error: js.UndefOr[ObserverOnError] = js.undefined
+        var next: ObserverOnNext
       }
       
       trait QueryOptions extends js.Object {

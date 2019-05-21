@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait ResponderProvided extends js.Object {
-  @JSName("announce")
-  var announce_Original: Announce = js.native
-  def announce(message: java.lang.String): scala.Unit = js.native
+  var announce: Announce
+}
+
+object ResponderProvided {
+  @scala.inline
+  def apply(announce: Announce): ResponderProvided = {
+    val __obj = js.Dynamic.literal(announce = announce)
+  
+    __obj.asInstanceOf[ResponderProvided]
+  }
 }
 

@@ -41,7 +41,6 @@ trait Table[T]
   def getFiltersFromColumns(): js.Any = js.native
   def getFiltersFromColumns(columns: js.Array[antdLib.esTableInterfaceMod.ColumnProps[T]]): js.Any = js.native
   def getFlatCurrentPageData(): js.Array[_] = js.native
-  def getFlatCurrentPageData(childrenColumnName: java.lang.String): js.Array[_] = js.native
   def getFlatData(): js.Array[_] = js.native
   def getLocalData(): js.Array[T] = js.native
   def getLocalData(state: antdLib.esTableInterfaceMod.TableState[T]): js.Array[T] = js.native

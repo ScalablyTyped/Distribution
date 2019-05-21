@@ -93,8 +93,7 @@ trait IListItemsProps[T]
     * this item is active (selected by keyboard arrows) and an `onClick` event handler that
     * should be attached to the returned element.
     */
-  @JSName("itemRenderer")
-  var itemRenderer_Original: atBlueprintjsSelectLib.libEsmCommonItemRendererMod.ItemRenderer[T] = js.native
+  var itemRenderer: atBlueprintjsSelectLib.libEsmCommonItemRendererMod.ItemRenderer[T] = js.native
   /** Array of items in the list. */
   var items: js.Array[T] = js.native
   /**
@@ -177,12 +176,6 @@ trait IListItemsProps[T]
     * @default true
     */
   var scrollToActiveItem: js.UndefOr[scala.Boolean] = js.native
-  /**
-    * Custom renderer for an item in the dropdown list. Receives a boolean indicating whether
-    * this item is active (selected by keyboard arrows) and an `onClick` event handler that
-    * should be attached to the returned element.
-    */
-  def itemRenderer(item: T, itemProps: atBlueprintjsSelectLib.libEsmCommonItemRendererMod.IItemRendererProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   /**
     * Callback invoked when an item from the list is selected,
     * typically by clicking or pressing `enter` key.

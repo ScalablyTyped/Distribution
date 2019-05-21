@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StackInfo extends js.Object {
   var message: java.lang.String
-  var stack: js.UndefOr[java.lang.String]
+  var stack: js.UndefOr[java.lang.String] = js.undefined
   var stacktrace: js.Any
 }
 

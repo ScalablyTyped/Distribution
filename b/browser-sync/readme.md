@@ -1,6 +1,7 @@
 
 # Scala.js typings for browser-sync
 
+Typings are for version 2.26
 
 ## Library description:
 Live CSS Reload & Browser Syncing
@@ -34,12 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for browser-sync
+// Type definitions for browser-sync 2.26
 // Project: http://www.browsersync.io/
 // Definitions by: Asana <https://asana.com>,
 //                 Joe Skeen <https://github.com/joeskeen>
 //                 Thomas "Thasmo" Deinhamer <https://thasmo.com/>
 //                 Kiyotoshi Ichikawa <https://github.com/aznnomness>
+//                 Yuma Hashimoto <https://github.com/yuma84>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

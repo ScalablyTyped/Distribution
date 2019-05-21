@@ -12,10 +12,10 @@ trait Scalar extends Node {
     */
   var format: js.UndefOr[
     yamlLib.yamlLibStrings.BIN | yamlLib.yamlLibStrings.HEX | yamlLib.yamlLibStrings.OCT | yamlLib.yamlLibStrings.TIME
-  ]
+  ] = js.undefined
   var `type`: js.UndefOr[
     yamlLib.yamlLibStrings.BLOCK_FOLDED | yamlLib.yamlLibStrings.BLOCK_LITERAL | yamlLib.yamlLibStrings.PLAIN | yamlLib.yamlLibStrings.QUOTE_DOUBLE | yamlLib.yamlLibStrings.QUOTE_SINGLE
-  ]
+  ] = js.undefined
   var value: scala.Null | scala.Boolean | scala.Double | java.lang.String
 }
 

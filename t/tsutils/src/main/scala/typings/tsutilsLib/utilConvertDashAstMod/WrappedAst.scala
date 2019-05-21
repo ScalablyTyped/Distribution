@@ -9,9 +9,9 @@ trait WrappedAst extends NodeWrap {
   @JSName("next")
   var next_WrappedAst: NodeWrap
   @JSName("parent")
-  var parent_WrappedAst: js.UndefOr[scala.Nothing]
+  var parent_WrappedAst: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("skip")
-  var skip_WrappedAst: js.UndefOr[scala.Nothing]
+  var skip_WrappedAst: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object WrappedAst {

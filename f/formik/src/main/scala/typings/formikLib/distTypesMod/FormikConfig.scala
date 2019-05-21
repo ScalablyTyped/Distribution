@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormikConfig[Values] extends FormikSharedConfig {
+trait FormikConfig[Values]
+  extends FormikSharedConfig[js.Object] {
   var children: js.UndefOr[
     (js.Function1[/* props */ FormikProps[Values], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   ] = js.undefined
@@ -34,7 +35,7 @@ object FormikConfig {
     component: reactLib.reactMod.ComponentType[FormikProps[Values]] | reactLib.reactMod.ReactNode = null,
     enableReinitialize: js.UndefOr[scala.Boolean] = js.undefined,
     initialStatus: js.Any = null,
-    isInitialValid: scala.Boolean | (js.Function1[/* props */ js.Object, js.UndefOr[scala.Boolean]]) = null,
+    isInitialValid: scala.Boolean | (js.Function1[js.Object, scala.Boolean]) = null,
     onReset: (/* values */ Values, /* formikActions */ FormikActions[Values]) => scala.Unit = null,
     render: /* props */ FormikProps[Values] => reactLib.reactMod.ReactNode = null,
     validate: /* values */ Values => scala.Unit | js.Object | js.Promise[FormikErrors[Values]] = null,

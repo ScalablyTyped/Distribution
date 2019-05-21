@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Linking: LinkingStatic = js.native
+  val PROVIDER_DEFAULT: scala.Null = js.native
+  val PROVIDER_GOOGLE: expoLib.expoLibStrings.google = js.native
   def registerRootComponent(component: reactLib.reactMod.ComponentType[js.Object]): scala.Unit = js.native
   def takeSnapshotAsync(node: reactLib.reactMod.ReactElement[_]): js.Promise[java.lang.String] = js.native
   def takeSnapshotAsync(node: reactLib.reactMod.ReactElement[_], options: expoLib.Anon_Base64): js.Promise[java.lang.String] = js.native

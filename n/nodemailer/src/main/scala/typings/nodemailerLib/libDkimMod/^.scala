@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends DKIM {
   def this(options: Options) = this()
-  /* CompleteClass */
-  override var keys: js.Array[java.lang.String | nodemailerLib.Anon_Key] = js.native
-  /* CompleteClass */
-  override var options: Options = js.native
 }
 

@@ -5,11 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait MatchProps[TParams] extends js.Object {
-  @JSName("children")
-  var children_Original: MatchRenderFn[TParams] = js.native
-  var path: java.lang.String = js.native
-  def children(props: MatchRenderProps[TParams]): reactLib.reactMod.ReactNode = js.native
+  var children: MatchRenderFn[TParams]
+  var path: java.lang.String
+}
+
+object MatchProps {
+  @scala.inline
+  def apply[TParams](children: MatchRenderFn[TParams], path: java.lang.String): MatchProps[TParams] = {
+    val __obj = js.Dynamic.literal(children = children, path = path)
+  
+    __obj.asInstanceOf[MatchProps[TParams]]
+  }
 }
 

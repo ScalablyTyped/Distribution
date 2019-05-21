@@ -13,7 +13,7 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema */, TEvent /*
   @JSName("history")
   var history_StateNodeDefinition: js.UndefOr[
     scala.Boolean | xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep
-  ]
+  ] = js.undefined
   @JSName("id")
   var id_StateNodeDefinition: java.lang.String
   @JSName("key")
@@ -30,7 +30,7 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema */, TEvent /*
   var states_StateNodeDefinition: StatesDefinition[TContext, TStateSchema, TEvent]
   @JSName("type")
   var type_StateNodeDefinition: StateTypes
-  var version: js.UndefOr[java.lang.String]
+  var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object StateNodeDefinition {

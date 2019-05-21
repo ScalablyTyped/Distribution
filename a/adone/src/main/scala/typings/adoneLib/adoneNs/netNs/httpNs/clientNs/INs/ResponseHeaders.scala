@@ -7,65 +7,65 @@ import scala.scalajs.js.annotation._
 
 trait ResponseHeaders
   extends /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
-  var `accept-patch`: js.UndefOr[java.lang.String]
-  var `accept-ranges`: js.UndefOr[java.lang.String]
-  var `access-control-allow-credentials`: js.UndefOr[java.lang.String]
-  var `access-control-allow-headers`: js.UndefOr[java.lang.String]
-  var `access-control-allow-methods`: js.UndefOr[java.lang.String]
-  var `access-control-allow-origin`: js.UndefOr[java.lang.String]
-  var `access-control-expose-headers`: js.UndefOr[java.lang.String]
-  var `access-control-max-age`: js.UndefOr[java.lang.String]
-  var age: js.UndefOr[java.lang.String]
-  var allow: js.UndefOr[java.lang.String]
-  var `alt-svc`: js.UndefOr[java.lang.String]
-  var `cache-control`: js.UndefOr[java.lang.String]
-  var connection: js.UndefOr[java.lang.String]
-  var `content-disposition`: js.UndefOr[java.lang.String]
-  var `content-encoding`: js.UndefOr[java.lang.String]
-  var `content-language`: js.UndefOr[java.lang.String]
-  var `content-length`: js.UndefOr[java.lang.String]
-  var `content-location`: js.UndefOr[java.lang.String]
-  var `content-md5`: js.UndefOr[java.lang.String]
-  var `content-range`: js.UndefOr[java.lang.String]
-  var `content-security-policy`: js.UndefOr[java.lang.String]
-  var `content-type`: js.UndefOr[java.lang.String]
-  var date: js.UndefOr[java.lang.String]
-  var etag: js.UndefOr[java.lang.String]
-  var expires: js.UndefOr[java.lang.String]
-  var `keep-alive`: js.UndefOr[java.lang.String]
-  var `last-modified`: js.UndefOr[java.lang.String]
-  var link: js.UndefOr[java.lang.String]
-  var location: js.UndefOr[java.lang.String]
-  var p3p: js.UndefOr[java.lang.String]
-  var pragma: js.UndefOr[java.lang.String]
-  var `proxy-authenticate`: js.UndefOr[java.lang.String]
-  var `public-key-pins`: js.UndefOr[java.lang.String]
-  var `referer-policy`: js.UndefOr[java.lang.String]
-  var refresh: js.UndefOr[java.lang.String]
-  var `retry-after`: js.UndefOr[java.lang.String]
-  var server: js.UndefOr[java.lang.String]
-  var `set-cookie`: js.UndefOr[java.lang.String]
-  var status: js.UndefOr[java.lang.String]
-  var `strict-transport-security`: js.UndefOr[java.lang.String]
-  var `timing-allow-origin`: js.UndefOr[java.lang.String]
-  var tk: js.UndefOr[java.lang.String]
-  var `transfer-encoding`: js.UndefOr[java.lang.String]
-  var upgrade: js.UndefOr[java.lang.String]
-  var `upgrade-insecure-requests`: js.UndefOr[java.lang.String]
-  var vary: js.UndefOr[java.lang.String]
-  var via: js.UndefOr[java.lang.String]
-  var warning: js.UndefOr[java.lang.String]
-  var `www-authenticate`: js.UndefOr[java.lang.String]
-  var `x-content-duration`: js.UndefOr[java.lang.String]
-  var `x-content-security-policy`: js.UndefOr[java.lang.String]
-  var `x-content-type-options`: js.UndefOr[java.lang.String]
-  var `x-correlation-id`: js.UndefOr[java.lang.String]
-  var `x-frame-options`: js.UndefOr[java.lang.String]
-  var `x-powered-by`: js.UndefOr[java.lang.String]
-  var `x-request-id`: js.UndefOr[java.lang.String]
-  var `x-ua-compatible`: js.UndefOr[java.lang.String]
-  var `x-webkit-csp`: js.UndefOr[java.lang.String]
-  var `x-xss-protection`: js.UndefOr[java.lang.String]
+  var `accept-patch`: js.UndefOr[java.lang.String] = js.undefined
+  var `accept-ranges`: js.UndefOr[java.lang.String] = js.undefined
+  var `access-control-allow-credentials`: js.UndefOr[java.lang.String] = js.undefined
+  var `access-control-allow-headers`: js.UndefOr[java.lang.String] = js.undefined
+  var `access-control-allow-methods`: js.UndefOr[java.lang.String] = js.undefined
+  var `access-control-allow-origin`: js.UndefOr[java.lang.String] = js.undefined
+  var `access-control-expose-headers`: js.UndefOr[java.lang.String] = js.undefined
+  var `access-control-max-age`: js.UndefOr[java.lang.String] = js.undefined
+  var age: js.UndefOr[java.lang.String] = js.undefined
+  var allow: js.UndefOr[java.lang.String] = js.undefined
+  var `alt-svc`: js.UndefOr[java.lang.String] = js.undefined
+  var `cache-control`: js.UndefOr[java.lang.String] = js.undefined
+  var connection: js.UndefOr[java.lang.String] = js.undefined
+  var `content-disposition`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-encoding`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-language`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-length`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-location`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-md5`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-range`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-security-policy`: js.UndefOr[java.lang.String] = js.undefined
+  var `content-type`: js.UndefOr[java.lang.String] = js.undefined
+  var date: js.UndefOr[java.lang.String] = js.undefined
+  var etag: js.UndefOr[java.lang.String] = js.undefined
+  var expires: js.UndefOr[java.lang.String] = js.undefined
+  var `keep-alive`: js.UndefOr[java.lang.String] = js.undefined
+  var `last-modified`: js.UndefOr[java.lang.String] = js.undefined
+  var link: js.UndefOr[java.lang.String] = js.undefined
+  var location: js.UndefOr[java.lang.String] = js.undefined
+  var p3p: js.UndefOr[java.lang.String] = js.undefined
+  var pragma: js.UndefOr[java.lang.String] = js.undefined
+  var `proxy-authenticate`: js.UndefOr[java.lang.String] = js.undefined
+  var `public-key-pins`: js.UndefOr[java.lang.String] = js.undefined
+  var `referer-policy`: js.UndefOr[java.lang.String] = js.undefined
+  var refresh: js.UndefOr[java.lang.String] = js.undefined
+  var `retry-after`: js.UndefOr[java.lang.String] = js.undefined
+  var server: js.UndefOr[java.lang.String] = js.undefined
+  var `set-cookie`: js.UndefOr[java.lang.String] = js.undefined
+  var status: js.UndefOr[java.lang.String] = js.undefined
+  var `strict-transport-security`: js.UndefOr[java.lang.String] = js.undefined
+  var `timing-allow-origin`: js.UndefOr[java.lang.String] = js.undefined
+  var tk: js.UndefOr[java.lang.String] = js.undefined
+  var `transfer-encoding`: js.UndefOr[java.lang.String] = js.undefined
+  var upgrade: js.UndefOr[java.lang.String] = js.undefined
+  var `upgrade-insecure-requests`: js.UndefOr[java.lang.String] = js.undefined
+  var vary: js.UndefOr[java.lang.String] = js.undefined
+  var via: js.UndefOr[java.lang.String] = js.undefined
+  var warning: js.UndefOr[java.lang.String] = js.undefined
+  var `www-authenticate`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-content-duration`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-content-security-policy`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-content-type-options`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-correlation-id`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-frame-options`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-powered-by`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-request-id`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-ua-compatible`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-webkit-csp`: js.UndefOr[java.lang.String] = js.undefined
+  var `x-xss-protection`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ResponseHeaders {

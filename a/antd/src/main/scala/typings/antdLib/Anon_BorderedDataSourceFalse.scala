@@ -11,7 +11,7 @@ trait Anon_BorderedDataSourceFalse extends js.Object {
   var loading: scala.Boolean
   var pagination: js.UndefOr[
     antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig
-  ]
+  ] = js.undefined
   var split: scala.Boolean
 }
 

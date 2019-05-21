@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HandlerIds extends js.Object {
-  var handlerIds: js.UndefOr[js.Array[dndDashCoreLib.libCjsInterfacesMod.Identifier]]
+  var handlerIds: js.UndefOr[js.Array[dndDashCoreLib.libCjsInterfacesMod.Identifier]] = js.undefined
 }
 
 object Anon_HandlerIds {

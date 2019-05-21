@@ -207,6 +207,7 @@ trait ItemRead extends Item {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
     */
   def getEntities(): Entities = js.native
+  def getEntitiesByType(entityType: java.lang.String): js.Array[java.lang.String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *

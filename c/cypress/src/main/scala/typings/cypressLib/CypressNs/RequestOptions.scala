@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
   */
 trait RequestOptions
   extends Loggable
-     with Timeoutable {
+     with Timeoutable
+     with Failable {
   var auth: js.Object
   var body: RequestBody
-  var failOnStatusCode: scala.Boolean
   var followRedirect: scala.Boolean
   var form: scala.Boolean
   var gzip: scala.Boolean
@@ -36,10 +36,12 @@ object RequestOptions {
     log: scala.Boolean,
     method: HttpMethod,
     qs: js.Object,
+    retryOnNetworkFailure: scala.Boolean,
+    retryOnStatusCodeFailure: scala.Boolean,
     timeout: scala.Double,
     url: java.lang.String
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal(auth = auth, body = body.asInstanceOf[js.Any], failOnStatusCode = failOnStatusCode, followRedirect = followRedirect, form = form, gzip = gzip, headers = headers, log = log, method = method, qs = qs, timeout = timeout, url = url)
+    val __obj = js.Dynamic.literal(auth = auth, body = body.asInstanceOf[js.Any], failOnStatusCode = failOnStatusCode, followRedirect = followRedirect, form = form, gzip = gzip, headers = headers, log = log, method = method, qs = qs, retryOnNetworkFailure = retryOnNetworkFailure, retryOnStatusCodeFailure = retryOnStatusCodeFailure, timeout = timeout, url = url)
   
     __obj.asInstanceOf[RequestOptions]
   }

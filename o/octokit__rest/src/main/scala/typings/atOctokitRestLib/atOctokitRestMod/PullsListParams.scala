@@ -17,7 +17,7 @@ trait PullsListParams extends js.Object {
     atOctokitRestLib.atOctokitRestLibStrings.asc | atOctokitRestLib.atOctokitRestLibStrings.desc
   ] = js.undefined
   /**
-    * Filter pulls by head user and branch name in the format of `user:ref-name`. Example: `github:new-script-format`.
+    * Filter pulls by head user or head organization and branch name in the format of `user:ref-name` or `organization:ref-name`. For example: `github:new-script-format` or `octocat:test-branch`.
     */
   var head: js.UndefOr[java.lang.String] = js.undefined
   var owner: java.lang.String

@@ -61,5 +61,9 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def resolveHostname(
+    options: ResolveHostnameValue,
+    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* value */ ResolveHostnameValue, scala.Unit]
+  ): scala.Unit = js.native
 }
 

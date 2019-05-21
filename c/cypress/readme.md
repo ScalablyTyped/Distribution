@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress
 
-Typings are for version 3.2.0
+Typings are for version 3.3.0
 
 ## Library description:
 Cypress.io end to end testing tool
@@ -103,6 +103,12 @@ These comments are from the typescript definitions and might be useful:
 //                 Shaun Luttin <https://github.com/shaunluttin>
 //                 Gintautas Miselis <https://github.com/Naktibalda>
 // <reference types="assertion-error"/>
+//
+// Cypress NPM api type declarations
+// https://on.cypress.io/module-api
+// https://github.com/cypress-io/cypress/issues/2141
+// in the future the NPM module itself will be in TypeScript
+// but for now describe it as an ambient module
 // Type definitions for jquery 3.3
 // Project: https://jquery.com
 // Definitions by: Leonard Thieu <https://github.com/leonard-thieu>

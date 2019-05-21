@@ -11,11 +11,11 @@ trait DownloadQuery extends js.Object {
   /** Optional. Indication of whether this download is thought to be safe or known to be suspicious.  */
   var danger: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. The time when the download ended in ISO 8601 format.  */
-  var endTime: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. Limits results to DownloadItem that ended after the given ms since the epoch.  */
-  var endedAfter: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. Limits results to DownloadItem that ended before the given ms since the epoch.  */
-  var endedBefore: js.UndefOr[scala.Double] = js.undefined
+  var endTime: js.UndefOr[java.lang.String] = js.undefined
+  /** Optional. Limits results to DownloadItem that ended after the time in ISO 8601 format.  */
+  var endedAfter: js.UndefOr[java.lang.String] = js.undefined
+  /** Optional. Limits results to DownloadItem that ended before the time in ISO 8601 format.  */
+  var endedBefore: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. Why a download was interrupted.  */
   var error: js.UndefOr[scala.Double] = js.undefined
   /** Optional. Whether the downloaded file exists;  */
@@ -39,11 +39,11 @@ trait DownloadQuery extends js.Object {
   /** Optional. This array of search terms limits results to DownloadItem whose filename or url contain all of the search terms that do not begin with a dash '-' and none of the search terms that do begin with a dash.  */
   var query: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Optional. The time when the download began in ISO 8601 format.  */
-  var startTime: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. Limits results to DownloadItem that started after the given ms since the epoch.  */
-  var startedAfter: js.UndefOr[scala.Double] = js.undefined
-  /** Optional. Limits results to DownloadItem that started before the given ms since the epoch.  */
-  var startedBefore: js.UndefOr[scala.Double] = js.undefined
+  var startTime: js.UndefOr[java.lang.String] = js.undefined
+  /** Optional. Limits results to DownloadItem that started after the time in ISO 8601 format.  */
+  var startedAfter: js.UndefOr[java.lang.String] = js.undefined
+  /** Optional. Limits results to DownloadItem that started before the time in ISO 8601 format.  */
+  var startedBefore: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. Indicates whether the download is progressing, interrupted, or complete.  */
   var state: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. Number of bytes in the whole file, without considering file compression, or -1 if unknown.  */
@@ -63,9 +63,9 @@ object DownloadQuery {
   def apply(
     bytesReceived: scala.Int | scala.Double = null,
     danger: java.lang.String = null,
-    endTime: scala.Int | scala.Double = null,
-    endedAfter: scala.Int | scala.Double = null,
-    endedBefore: scala.Int | scala.Double = null,
+    endTime: java.lang.String = null,
+    endedAfter: java.lang.String = null,
+    endedBefore: java.lang.String = null,
     error: scala.Int | scala.Double = null,
     exists: js.UndefOr[scala.Boolean] = js.undefined,
     fileSize: scala.Int | scala.Double = null,
@@ -77,9 +77,9 @@ object DownloadQuery {
     orderBy: js.Array[java.lang.String] = null,
     paused: js.UndefOr[scala.Boolean] = js.undefined,
     query: js.Array[java.lang.String] = null,
-    startTime: scala.Int | scala.Double = null,
-    startedAfter: scala.Int | scala.Double = null,
-    startedBefore: scala.Int | scala.Double = null,
+    startTime: java.lang.String = null,
+    startedAfter: java.lang.String = null,
+    startedBefore: java.lang.String = null,
     state: java.lang.String = null,
     totalBytes: scala.Int | scala.Double = null,
     totalBytesGreater: scala.Int | scala.Double = null,
@@ -90,9 +90,9 @@ object DownloadQuery {
     val __obj = js.Dynamic.literal()
     if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
     if (danger != null) __obj.updateDynamic("danger")(danger)
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (endedAfter != null) __obj.updateDynamic("endedAfter")(endedAfter.asInstanceOf[js.Any])
-    if (endedBefore != null) __obj.updateDynamic("endedBefore")(endedBefore.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (endedAfter != null) __obj.updateDynamic("endedAfter")(endedAfter)
+    if (endedBefore != null) __obj.updateDynamic("endedBefore")(endedBefore)
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists)
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
@@ -104,9 +104,9 @@ object DownloadQuery {
     if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
     if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
     if (query != null) __obj.updateDynamic("query")(query)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (startedAfter != null) __obj.updateDynamic("startedAfter")(startedAfter.asInstanceOf[js.Any])
-    if (startedBefore != null) __obj.updateDynamic("startedBefore")(startedBefore.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (startedAfter != null) __obj.updateDynamic("startedAfter")(startedAfter)
+    if (startedBefore != null) __obj.updateDynamic("startedBefore")(startedBefore)
     if (state != null) __obj.updateDynamic("state")(state)
     if (totalBytes != null) __obj.updateDynamic("totalBytes")(totalBytes.asInstanceOf[js.Any])
     if (totalBytesGreater != null) __obj.updateDynamic("totalBytesGreater")(totalBytesGreater.asInstanceOf[js.Any])

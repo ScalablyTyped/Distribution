@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Sha256Hash
   extends stellarDashBaseLib.stellarDashBaseMod.Signer {
   var sha256Hash: nodeLib.Buffer
-  var weight: js.UndefOr[scala.Double]
+  var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Sha256Hash {

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DebugInfo extends js.Object {
-  var autorun: js.UndefOr[stdLib.Error | scala.Null]
+  var autorun: js.UndefOr[stdLib.Error | scala.Null] = js.undefined
   var counters: js.Object
   var instanceStack: js.Array[DeferredActionQueues]
   var timers: js.Array[QueueItem]

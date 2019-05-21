@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Explanation extends js.Object {
-  var explanation: js.UndefOr[java.lang.String]
+  var explanation: js.UndefOr[java.lang.String] = js.undefined
   var loc: js.UndefOr[java.lang.String] = js.undefined
   var module: java.lang.String | scala.Null
   var moduleId: scala.Double | java.lang.String | scala.Null

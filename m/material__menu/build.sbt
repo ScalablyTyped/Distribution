@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__menu"
-version := "0.35-dt-20190213Z-7dadeb"
+version := "0.35-dt-20190213Z-2dfa00"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

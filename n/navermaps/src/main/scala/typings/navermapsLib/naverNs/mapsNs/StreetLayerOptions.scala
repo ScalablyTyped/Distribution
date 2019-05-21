@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StreetLayerOptions extends js.Object {
-  var overlayMap: js.UndefOr[scala.Boolean]
-  var zIndex: js.UndefOr[scala.Double]
+  var overlayMap: js.UndefOr[scala.Boolean] = js.undefined
+  var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
 object StreetLayerOptions {

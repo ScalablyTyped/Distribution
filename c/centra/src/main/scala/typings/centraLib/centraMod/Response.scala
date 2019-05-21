@@ -9,7 +9,7 @@ trait Response extends js.Object {
   var body: nodeLib.Buffer
   var coreRes: nodeLib.httpMod.IncomingMessage
   var headers: nodeLib.httpMod.IncomingHttpHeaders
-  var statusCode: js.UndefOr[scala.Double]
+  var statusCode: js.UndefOr[scala.Double] = js.undefined
   def json(): js.Promise[_]
   def text(): js.Promise[java.lang.String]
 }

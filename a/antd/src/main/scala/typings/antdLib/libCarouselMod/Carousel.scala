@@ -12,6 +12,8 @@ trait Carousel
   var slick: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MCarousel(): scala.Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MCarousel(prevProps: CarouselProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MCarousel(): scala.Unit = js.native
   def getDotPosition(): DotPosition = js.native

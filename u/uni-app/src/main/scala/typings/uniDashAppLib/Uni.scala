@@ -15,11 +15,23 @@ class Uni () extends js.Object {
     */
   def addPhoneContact(options: AddPhoneContactOptions): scala.Unit = js.native
   /**
+    * 将 ArrayBuffer 对象转成 Base64 字符串
+    *
+    * 参考: [http://uniapp.dcloud.io/api/arrayBufferToBase64?id=arraybuffertobase64](http://uniapp.dcloud.io/api/arrayBufferToBase64?id=arraybuffertobase64)
+    */
+  def arrayBufferToBase64(arrayBuffer: stdLib.ArrayBuffer): java.lang.String = js.native
+  /**
     * 提前向用户发起授权请求
     *
     * 参考: [http://uniapp.dcloud.io/api/other/authorize?id=authorize](http://uniapp.dcloud.io/api/other/authorize?id=authorize)
     */
   def authorize(options: AuthorizeOptions): scala.Unit = js.native
+  /**
+    * 将 Base64 字符串转成 ArrayBuffer 对象
+    *
+    * 参考: [http://uniapp.dcloud.io/api/base64ToArrayBuffer?id=base64toarraybuffer](http://uniapp.dcloud.io/api/base64ToArrayBuffer?id=base64toarraybuffer)
+    */
+  def base64ToArrayBuffer(base64: java.lang.String): stdLib.ArrayBuffer = js.native
   /**
     * 判断uni-app的API，回调，参数，组件等是否在当前版本可用
     *
@@ -104,6 +116,12 @@ class Uni () extends js.Object {
     * 参考: [http://uniapp.dcloud.io/api/request/websocket?id=closesocket](http://uniapp.dcloud.io/api/request/websocket?id=closesocket)
     */
   def closeSocket(options: CloseSocketOptions): scala.Unit = js.native
+  /**
+    * 压缩图片
+    *
+    * 参考: [http://uniapp.dcloud.io/api/media/image?id=compressimage](http://uniapp.dcloud.io/api/media/image?id=compressimage)
+    */
+  def compressImage(options: CompressImageOptions): scala.Unit = js.native
   /**
     * 创建一个 WebSocket 连接
     *
@@ -289,13 +307,13 @@ class Uni () extends js.Object {
     */
   def getStorage(options: GetStorageOptions): scala.Unit = js.native
   /**
-    * 异步获取当前storage的相关信息
+    * 异步获取当前 storage 的相关信息
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfo](http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfo)
     */
   def getStorageInfo(options: GetStorageInfoOptions): scala.Unit = js.native
   /**
-    * 同步获取当前storage的相关信息
+    * 同步获取当前 storage 的相关信息
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfosync](http://uniapp.dcloud.io/api/storage/storage?id=getstorageinfosync)
     */
@@ -377,7 +395,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/ui/font?id=loadfontface](http://uniapp.dcloud.io/api/ui/font?id=loadfontface)
     */
-  def loadFontFace(options: FontFace): scala.Unit = js.native
+  def loadFontFace(options: LoadFontFaceOptions): scala.Unit = js.native
   /**
     * 登录
     *
@@ -587,7 +605,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=removestoragesync](http://uniapp.dcloud.io/api/storage/storage?id=removestoragesync)
     */
-  def removeStorageSync(key: java.lang.String): js.Any = js.native
+  def removeStorageSync(key: java.lang.String): scala.Unit = js.native
   /**
     * 移除 tabBar 某一项右上角的文本
     *
@@ -701,7 +719,7 @@ class Uni () extends js.Object {
     *
     * 参考: [http://uniapp.dcloud.io/api/storage/storage?id=setstoragesync](http://uniapp.dcloud.io/api/storage/storage?id=setstoragesync)
     */
-  def setStorageSync(key: java.lang.String): js.Any = js.native
+  def setStorageSync(key: java.lang.String, value: js.Any): scala.Unit = js.native
   /**
     * 为 tabBar 某一项的右上角添加文本
     *

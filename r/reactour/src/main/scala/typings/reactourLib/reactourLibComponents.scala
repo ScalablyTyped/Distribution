@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 object reactourLibComponents {
   @scala.inline
   def Arrow: reactLib.reactMod.ComponentType[reactourLib.reactourMod.ArrowProps] = reactourLib.reactourMod.^.asInstanceOf[js.Dynamic].selectDynamic("Arrow").asInstanceOf[reactLib.reactMod.ComponentType[reactourLib.reactourMod.ArrowProps]]
+  @scala.inline
+  def ArrowProps: reactourLib.reactourMod.ArrowProps.type = reactourLib.reactourMod.ArrowProps
   type ArrowProps = reactourLib.reactourMod.ArrowProps
   @scala.inline
   def Badge: reactLib.reactMod.ComponentType[reactourLib.reactourMod.BadgeProps] = reactourLib.reactourMod.^.Badge.asInstanceOf[reactLib.reactMod.ComponentType[reactourLib.reactourMod.BadgeProps]]
@@ -16,6 +18,8 @@ object reactourLibComponents {
   type BadgeProps = reactourLib.reactourMod.BadgeProps
   @scala.inline
   def Close: reactLib.reactMod.ComponentType[reactourLib.reactourMod.CloseProps] = reactourLib.reactourMod.^.asInstanceOf[js.Dynamic].selectDynamic("Close").asInstanceOf[reactLib.reactMod.ComponentType[reactourLib.reactourMod.CloseProps]]
+  @scala.inline
+  def CloseProps: reactourLib.reactourMod.CloseProps.type = reactourLib.reactourMod.CloseProps
   type CloseProps = reactourLib.reactourMod.CloseProps
   @scala.inline
   def Controls: reactLib.reactMod.ComponentType[reactourLib.reactourMod.ControlsProps] = reactourLib.reactourMod.^.Controls.asInstanceOf[reactLib.reactMod.ComponentType[reactourLib.reactourMod.ControlsProps]]

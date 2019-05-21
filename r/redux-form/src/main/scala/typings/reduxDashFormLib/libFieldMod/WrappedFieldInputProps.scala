@@ -5,15 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait WrappedFieldInputProps extends CommonFieldInputProps {
-  var checked: js.UndefOr[scala.Boolean] = js.native
-  @JSName("onBlur")
-  var onBlur_Original: EventOrValueHandler[reactLib.reactMod.FocusEvent[_]] = js.native
-  @JSName("onChange")
-  var onChange_Original: EventOrValueHandler[reactLib.reactMod.ChangeEvent[_]] = js.native
-  var value: js.Any = js.native
-  def onBlur(value: js.Any): scala.Unit = js.native
-  def onChange(value: js.Any): scala.Unit = js.native
+  var checked: js.UndefOr[scala.Boolean] = js.undefined
+  var onBlur: EventOrValueHandler[reactLib.reactMod.FocusEvent[_]]
+  var onChange: EventOrValueHandler[reactLib.reactMod.ChangeEvent[_]]
+  var value: js.Any
+}
+
+object WrappedFieldInputProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    onBlur: EventOrValueHandler[reactLib.reactMod.FocusEvent[_]],
+    onChange: EventOrValueHandler[reactLib.reactMod.ChangeEvent[_]],
+    onDragStart: EventHandler[reactLib.reactMod.DragEvent[_]],
+    onDrop: EventHandler[reactLib.reactMod.DragEvent[_]],
+    onFocus: EventHandler[reactLib.reactMod.FocusEvent[_]],
+    value: js.Any,
+    checked: js.UndefOr[scala.Boolean] = js.undefined
+  ): WrappedFieldInputProps = {
+    val __obj = js.Dynamic.literal(name = name, onBlur = onBlur, onChange = onChange, onDragStart = onDragStart, onDrop = onDrop, onFocus = onFocus, value = value)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    __obj.asInstanceOf[WrappedFieldInputProps]
+  }
 }
 

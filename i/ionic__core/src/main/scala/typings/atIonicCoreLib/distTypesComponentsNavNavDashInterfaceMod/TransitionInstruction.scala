@@ -11,7 +11,7 @@ trait TransitionInstruction extends js.Object {
   var insertStart: js.UndefOr[scala.Double] = js.undefined
   var insertViews: js.UndefOr[js.Array[_]] = js.undefined
   var leavingRequiresTransition: js.UndefOr[scala.Boolean] = js.undefined
-  var opts: js.UndefOr[NavOptions | scala.Null]
+  var opts: js.UndefOr[NavOptions | scala.Null] = js.undefined
   var reject: js.UndefOr[js.Function1[/* rejectReason */ java.lang.String, scala.Unit]] = js.undefined
   var removeCount: js.UndefOr[scala.Double] = js.undefined
   var removeStart: js.UndefOr[scala.Double] = js.undefined

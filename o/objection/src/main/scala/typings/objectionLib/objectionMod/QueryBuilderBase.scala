@@ -94,6 +94,8 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   @JSName("whereJsonSupersetOf")
   var whereJsonSupersetOf_Original: WhereJson[QM, RM, RV] = js.native
   def alias(alias: java.lang.String): this.type = js.native
+  def aliasFor(modelClassOrTableName: java.lang.String, alias: java.lang.String): this.type = js.native
+  def aliasFor(modelClassOrTableName: ModelClass[_], alias: java.lang.String): this.type = js.native
   def allowEager(relationExpression: RelationExpression): QueryBuilder[QM, RM, RV] = js.native
   def allowInsert(relationExpression: RelationExpression): QueryBuilder[QM, RM, RV] = js.native
   def allowUpsert(relationExpression: RelationExpression): QueryBuilder[QM, RM, RV] = js.native
@@ -663,6 +665,15 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
     ]
   ): this.type = js.native
   def whereComposite(column: ColumnRef, value: Value): this.type = js.native
+  def whereInComposite(column: js.Array[ColumnRef], values: js.Array[Value]): this.type = js.native
+  def whereInComposite(
+    column: js.Array[ColumnRef],
+    values: QueryBuilder[
+      _, 
+      js.Array[_], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    ]
+  ): this.type = js.native
   def whereInComposite(column: ColumnRef, values: js.Array[Value]): this.type = js.native
   def whereInComposite(
     column: ColumnRef,

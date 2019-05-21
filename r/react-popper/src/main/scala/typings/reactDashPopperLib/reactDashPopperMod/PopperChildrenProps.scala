@@ -5,16 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait PopperChildrenProps extends js.Object {
-  var arrowProps: PopperArrowProps = js.native
-  var outOfBoundaries: scala.Boolean | scala.Null = js.native
-  var placement: popperDotJsLib.popperDotJsMod.Placement = js.native
-  @JSName("ref")
-  var ref_Original: RefHandler = js.native
-  var style: reactLib.reactMod.CSSProperties = js.native
-  def ref(): scala.Unit = js.native
-  def ref(ref: stdLib.HTMLElement): scala.Unit = js.native
-  def scheduleUpdate(): scala.Unit = js.native
+  var arrowProps: PopperArrowProps
+  var outOfBoundaries: scala.Boolean | scala.Null
+  var placement: popperDotJsLib.popperDotJsMod.Placement
+  var ref: RefHandler
+  var style: reactLib.reactMod.CSSProperties
+  def scheduleUpdate(): scala.Unit
+}
+
+object PopperChildrenProps {
+  @scala.inline
+  def apply(
+    arrowProps: PopperArrowProps,
+    placement: popperDotJsLib.popperDotJsMod.Placement,
+    ref: RefHandler,
+    scheduleUpdate: () => scala.Unit,
+    style: reactLib.reactMod.CSSProperties,
+    outOfBoundaries: js.UndefOr[scala.Boolean] = js.undefined
+  ): PopperChildrenProps = {
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, ref = ref, scheduleUpdate = js.Any.fromFunction0(scheduleUpdate), style = style)
+    if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
+    __obj.asInstanceOf[PopperChildrenProps]
+  }
 }
 

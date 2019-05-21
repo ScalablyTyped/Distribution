@@ -18,10 +18,6 @@ class ObservableSet[T] ()
   var _data: js.Any = js.native
   var dehanceValue: js.Any = js.native
   var dehancer: js.Any = js.native
-  /* CompleteClass */
-  override var interceptors: js.UndefOr[
-    js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[ISetWillChange[js.Any]]]
-  ] = js.native
   var name: java.lang.String = js.native
   @JSName(scala.scalajs.js.Symbol.toStringTag)
   var toStringTag_ObservableSet: mobxLib.mobxLibStrings.Set = js.native

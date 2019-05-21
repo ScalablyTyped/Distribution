@@ -52,13 +52,6 @@ class ResourceCls protected () extends Resource[ResourceConstant] {
     */
   /* CompleteClass */
   override var resourceType: ResourceConstant = js.native
-  /**
-    * The link to the Room object. May be undefined in case if an object is a
-    * flag or a construction site and is placed in a room that is not visible
-    * to you.
-    */
-  /* CompleteClass */
-  override var room: js.UndefOr[Room] = js.native
 }
 
 object Resource {

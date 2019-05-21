@@ -19,7 +19,7 @@ trait UsageRecord extends js.Object {
     */
   var Quantity: js.UndefOr[UsageQuantity] = js.undefined
   /**
-    * Timestamp of the hour, recorded in UTC. The seconds and milliseconds portions of the timestamp will be ignored. Your application can meter usage for up to one hour in the past.
+    * Timestamp, in UTC, for which the usage is being reported. Your application can meter usage for up to one hour in the past. Make sure the timestamp value is not before the start of the software usage.
     */
   var Timestamp: awsDashSdkLib.clientsMarketplacemeteringMod.Timestamp
 }

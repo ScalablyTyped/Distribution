@@ -116,6 +116,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var mediaconvert: js.UndefOr[awsDashSdkLib.clientsMediaconvertMod.apiVersion] = js.undefined
   var medialive: js.UndefOr[awsDashSdkLib.clientsMedialiveMod.apiVersion] = js.undefined
   var mediapackage: js.UndefOr[awsDashSdkLib.clientsMediapackageMod.apiVersion] = js.undefined
+  var mediapackagevod: js.UndefOr[awsDashSdkLib.clientsMediapackagevodMod.apiVersion] = js.undefined
   var mediastore: js.UndefOr[awsDashSdkLib.clientsMediastoreMod.apiVersion] = js.undefined
   var mediastoredata: js.UndefOr[awsDashSdkLib.clientsMediastoredataMod.apiVersion] = js.undefined
   var mediatailor: js.UndefOr[awsDashSdkLib.clientsMediatailorMod.apiVersion] = js.undefined
@@ -295,6 +296,7 @@ object ConfigurationServiceApiVersions {
     mediaconvert: awsDashSdkLib.clientsMediaconvertMod.apiVersion = null,
     medialive: awsDashSdkLib.clientsMedialiveMod.apiVersion = null,
     mediapackage: awsDashSdkLib.clientsMediapackageMod.apiVersion = null,
+    mediapackagevod: awsDashSdkLib.clientsMediapackagevodMod.apiVersion = null,
     mediastore: awsDashSdkLib.clientsMediastoreMod.apiVersion = null,
     mediastoredata: awsDashSdkLib.clientsMediastoredataMod.apiVersion = null,
     mediatailor: awsDashSdkLib.clientsMediatailorMod.apiVersion = null,
@@ -471,6 +473,7 @@ object ConfigurationServiceApiVersions {
     if (mediaconvert != null) __obj.updateDynamic("mediaconvert")(mediaconvert.asInstanceOf[js.Any])
     if (medialive != null) __obj.updateDynamic("medialive")(medialive.asInstanceOf[js.Any])
     if (mediapackage != null) __obj.updateDynamic("mediapackage")(mediapackage.asInstanceOf[js.Any])
+    if (mediapackagevod != null) __obj.updateDynamic("mediapackagevod")(mediapackagevod.asInstanceOf[js.Any])
     if (mediastore != null) __obj.updateDynamic("mediastore")(mediastore.asInstanceOf[js.Any])
     if (mediastoredata != null) __obj.updateDynamic("mediastoredata")(mediastoredata.asInstanceOf[js.Any])
     if (mediatailor != null) __obj.updateDynamic("mediatailor")(mediatailor.asInstanceOf[js.Any])

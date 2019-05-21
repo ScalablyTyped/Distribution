@@ -35,10 +35,6 @@ class Atom () extends IAtom {
   @JSName("observers")
   var observers_Atom: stdLib.Set[_] = js.native
   /* CompleteClass */
-  override var onBecomeObservedListeners: js.UndefOr[stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda]] = js.native
-  /* CompleteClass */
-  override var onBecomeUnobservedListeners: js.UndefOr[stdLib.Set[mobxLib.libUtilsUtilsMod.Lambda]] = js.native
-  /* CompleteClass */
   override def onBecomeObserved(): scala.Unit = js.native
   /* CompleteClass */
   override def onBecomeUnobserved(): scala.Unit = js.native

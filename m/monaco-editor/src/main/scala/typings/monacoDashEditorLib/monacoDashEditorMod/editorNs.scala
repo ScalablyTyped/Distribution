@@ -1807,7 +1807,7 @@ object editorNs extends js.Object {
   }
   
   trait ILineChange extends IChange {
-    val charChanges: js.UndefOr[js.Array[ICharChange]]
+    val charChanges: js.UndefOr[js.Array[ICharChange]] = js.undefined
   }
   
   trait IMarker extends js.Object {
@@ -1984,7 +1984,7 @@ object editorNs extends js.Object {
       * CSS color to render in the overview ruler.
       * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
       */
-    var color: js.UndefOr[java.lang.String | ThemeColor]
+    var color: js.UndefOr[java.lang.String | ThemeColor] = js.undefined
     /**
       * CSS color to render in the overview ruler.
       * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry

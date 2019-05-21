@@ -1,7 +1,7 @@
 
 # Scala.js typings for okta__okta-vue
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Vue support for Okta
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for okta-vue 1.0
+// Type definitions for okta-vue 1.1
 // Project: https://github.com/okta/okta-oidc-js/tree/master/packages/okta-vue, https://github.com/okta/okta-oidc-js
 // Definitions by: Mike Dodge <https://github.com/innovation-team>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

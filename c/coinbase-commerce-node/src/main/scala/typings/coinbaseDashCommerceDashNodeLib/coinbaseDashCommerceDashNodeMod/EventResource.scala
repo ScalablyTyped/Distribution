@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   *
   * @link
   */
-trait EventResource extends js.Object {
+trait EventResource[T] extends js.Object {
   /**
     * API version of the `data` payload.
     */
@@ -23,7 +23,7 @@ trait EventResource extends js.Object {
     * Event Payload.
     * Resource of the associated object at the time of the event.
     */
-  var data: ChargeResource | CheckoutResource
+  var data: T
   /**
     * Event UUID.
     */
@@ -35,22 +35,22 @@ trait EventResource extends js.Object {
   /**
     * Event type.
     */
-  var `type`: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:created` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:confirmed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:failed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:delayed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:pending`
+  var `type`: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:created` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:confirmed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:failed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:delayed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:pending` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:resolved`
 }
 
 object EventResource {
   @scala.inline
-  def apply(
+  def apply[T](
     api_version: java.lang.String,
     created_at: coinbaseDashCommerceDashNodeLib.Timestamp,
-    data: ChargeResource | CheckoutResource,
+    data: T,
     id: java.lang.String,
     resource: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.event,
-    `type`: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:created` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:confirmed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:failed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:delayed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:pending`
-  ): EventResource = {
+    `type`: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:created` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:confirmed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:failed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:delayed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:pending` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:resolved`
+  ): EventResource[T] = {
     val __obj = js.Dynamic.literal(api_version = api_version, created_at = created_at, data = data.asInstanceOf[js.Any], id = id, resource = resource)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EventResource]
+    __obj.asInstanceOf[EventResource[T]]
   }
 }
 

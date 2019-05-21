@@ -9,10 +9,10 @@ trait QueryContext extends BaseContext {
   var channel: java.lang.String
   var collection: java.lang.String
   var db: sharedbLib.sharedbMod.DB | scala.Null
-  var fields: js.UndefOr[sharedbLib.sharedbMod.ProjectionFields]
+  var fields: js.UndefOr[sharedbLib.sharedbMod.ProjectionFields] = js.undefined
   var index: java.lang.String
   var options: sharedbLib.libSharedbMod.JSONObject
-  var projection: js.UndefOr[sharedbLib.sharedbMod.Projection]
+  var projection: js.UndefOr[sharedbLib.sharedbMod.Projection] = js.undefined
   var query: sharedbLib.libSharedbMod.JSONObject
   var snapshotProjection: sharedbLib.sharedbMod.Projection | scala.Null
 }

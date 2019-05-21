@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Data extends js.Object {
-  var data: js.UndefOr[scala.Nothing]
-  var errors: js.UndefOr[scala.Nothing]
+  var data: js.UndefOr[scala.Nothing] = js.undefined
+  var errors: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object Anon_Data {

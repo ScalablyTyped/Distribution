@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Visible extends js.Object {
-  var visible: js.UndefOr[scala.Boolean]
+  var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Anon_Visible {

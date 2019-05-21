@@ -13,11 +13,9 @@ class default[P] () extends Error[P]
 @JSImport("next/error", JSImport.Default)
 @js.native
 object default extends js.Object {
-  @JSName("getInitialProps")
-  var getInitialProps_Original: nextLib.nextMod.GetInitialProps[
+  var getInitialProps: nextLib.nextMod.GetInitialProps[
     nextLib.errorMod.DefaultErrorIProps, 
     nextLib.nextMod.NextContext[nextDashServerLib.routerMod.DefaultQuery, js.Object]
   ] = js.native
-  def getInitialProps(ctx: nextLib.nextMod.NextContext[nextDashServerLib.routerMod.DefaultQuery, js.Object]): js.Promise[nextLib.errorMod.DefaultErrorIProps] | nextLib.errorMod.DefaultErrorIProps = js.native
 }
 

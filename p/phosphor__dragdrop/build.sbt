@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "phosphor__dragdrop"
-version := "1.3.0-495656"
+version := "1.3.0-40e21e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-5c87e1",
+  "org.scalablytyped" %%% "phosphor__algorithm" % "1.1.2-bf1ab8",
   "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.0-e670f1",
-  "org.scalablytyped" %%% "phosphor__disposable" % "1.1.2-ac46d5",
+  "org.scalablytyped" %%% "phosphor__disposable" % "1.1.2-662fe3",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

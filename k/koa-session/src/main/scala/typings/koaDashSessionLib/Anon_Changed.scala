@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Changed extends js.Object {
   var changed: scala.Boolean
-  var rolling: js.UndefOr[scala.Boolean]
+  var rolling: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Anon_Changed {

@@ -5,15 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Consumer[T /* <: js.Object */] extends js.Object {
-  var Consumer: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Consumer[T]] = js.native
-  var Provider: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Provider[T]] = js.native
-  @JSName("createSelector")
-  var createSelector_Original: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.SelectorFn[T] = js.native
-  @JSName("mutate")
-  var mutate_Original: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Mutator[T] = js.native
-  def createSelector(state: T): AnyDeepMemberOfState[T] = js.native
-  def mutate(mutator: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.MutateFn[T]): scala.Unit = js.native
+  var Consumer: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Consumer[T]]
+  var Provider: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Provider[T]]
+  var createSelector: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.SelectorFn[T]
+  var mutate: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Mutator[T]
+}
+
+object Anon_Consumer {
+  @scala.inline
+  def apply[T /* <: js.Object */](
+    Consumer: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Consumer[T]],
+    Provider: org.scalablytyped.runtime.Instantiable0[reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Provider[T]],
+    createSelector: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.SelectorFn[T],
+    mutate: reactDashCopyDashWriteLib.reactDashCopyDashWriteMod.Mutator[T]
+  ): Anon_Consumer[T] = {
+    val __obj = js.Dynamic.literal(Consumer = Consumer, Provider = Provider, createSelector = createSelector, mutate = mutate)
+  
+    __obj.asInstanceOf[Anon_Consumer[T]]
+  }
 }
 

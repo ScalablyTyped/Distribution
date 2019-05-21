@@ -12,7 +12,7 @@ trait CustomPropertyExpression
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   var expressionType: qlikLib.qlikLibStrings.dimension | qlikLib.qlikLibStrings.measure | qlikLib.qlikLibStrings.StringExpr | qlikLib.qlikLibStrings.ValueExpr | qlikLib.qlikLibStrings.ValueExpression | qlikLib.qlikLibStrings.StringExpression
   @JSName("type")
-  var type_CustomPropertyExpression: js.UndefOr[scala.Nothing]
+  var type_CustomPropertyExpression: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object CustomPropertyExpression {

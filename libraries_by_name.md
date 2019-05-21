@@ -201,6 +201,7 @@
 | [ansi-styles](./a/ansi-styles) | ANSI escape codes for styling strings in the termi | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
 | [ansi_up](./a/ansi_up) | Convert ansi sequences in strings to colorful HTML | ansi, html |
 | [ansicolors](./a/ansicolors) | Functions that surround a string with ansicolor co | ansi, colors, highlight, string |
+| [ant-design__colors](./a/ant-design__colors) | Color palettes calculator of Ant Design | - |
 | [ant-design__create-react-](./a/ant-design__create-react-context) | A fork of create-react-context in MIT license | react, context, contextTypes, polyfill, ponyfill |
 | [ant-design__icons](./a/ant-design__icons) | Ant Design Icons | - |
 | [ant-design__icons-react](./a/ant-design__icons-react) |  Ant Design Icons for React  | - |
@@ -1214,7 +1215,6 @@
 | [diacritics](./d/diacritics) | remove diacritics from strings | diacritics, remove, removal, search, string |
 | [diagnostic-channel](./d/diagnostic-channel) | Provides a context-saving pub/sub channel to conne | - |
 | [diagnostic-channel-publis](./d/diagnostic-channel-publishers) | A collection of pre-built module patches that enab | - |
-| [dialogflow](./d/dialogflow) | Dialogflow API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google dialogflow, dialogflow, Dialogflow API |
 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js | parser, parse, parsing, multipart, form-data, streaming |
 | [diff](./d/diff) | A javascript text diff implementation. | diff, javascript |
 | [diff-match-patch](./d/diff-match-patch) | npm package for https://github.com/google/diff-mat | diff, diff-match-patch, google-diff-match-patch |
@@ -1424,6 +1424,7 @@
 | [encoding-down](./e/encoding-down) | LevelDOWN wrapper supporting levelup@1 encodings | level |
 | [encoding-japanese](./e/encoding-japanese) | Converts character encoding | encoding, charset, iconv, japanese, unicode, utf, utf-8, utf-16, utf-32, sjis, shift_jis, eucjp, euc-jp, jis, iso-2022-jp, base64, convert, detect, urlencode, urldecode |
 | [end-of-stream](./e/end-of-stream) | Call a callback when a readable/writable/duplex st | stream, streams, callback, finish, close, end, wait |
+| [engine-check](./e/engine-check) | Enforce node engine version from package.json | node, npm, engines, engine, version, engine version, version check, engine version check |
 | [engine_dot_io](./e/engine_dot_io) | The realtime engine behind Socket.IO. Provides the | - |
 | [engine_dot_io-client](./e/engine_dot_io-client) | Client for the realtime Engine | - |
 | [enhanced-resolve](./e/enhanced-resolve) | Offers a async require.resolve function. It's high | - |
@@ -4293,6 +4294,8 @@
 | [observe-js](./o/observe-js) | observe-js is a library for observing changes on J | - |
 | [oclazyload](./o/oclazyload) | Load modules on demand (lazy load) with angularJS | lazy load, lazy-load, load on demand, module, angular, angularJS |
 | [octokit__endpoint](./o/octokit__endpoint) | Turns REST API endpoints into generic request opti | octokit, github, api, rest |
+| [octokit__request](./o/octokit__request) | Send parameterized requests to GitHub’s APIs with  | octokit, github, api, request |
+| [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors | octokit, github, api, error |
 | [octokit__rest](./o/octokit__rest) | GitHub REST API client for Node.js | octokit, github, rest, api-client |
 | [odata](./o/odata) | o.js is a isomorphic Odata Javascript library to s | - |
 | [oembed-parser](./o/oembed-parser) | Get oEmbed data from given URL. | oembed, extractor, parser, util |
@@ -4917,6 +4920,7 @@
 | [rdflib](./r/rdflib) | an RDF library for node.js. Suitable for client an | linkeddata, linked data, rdf, rdfa, turtle, semantic, web, read-write web |
 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F | - |
 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization | react, redux, reselect, memoize, cache |
+| [reach__alert](./r/reach__alert) | Screenreader friendly alert messages. | - |
 | [reach__router](./r/reach__router) | Next generation Routing for React. | react, react router |
 | [react](./r/react) | React is a JavaScript library for building user in | react |
 | [react-ace](./r/react-ace) | A react component for Ace Editor | ace, ace editor, react-component, react, brace |
@@ -5165,6 +5169,7 @@
 | [react-native-fetch-blob](./r/react-native-fetch-blob) | A module provides upload, download, and files acce | react-native, fetch, blob, fs, upload, file, download, filestream, image header |
 | [react-native-firebase](./r/react-native-firebase) | A well tested, feature rich Firebase implementatio | react, admob, auth, config, digits, fabric, functions, phone-auth, sms, firestore, cloud-firestore, datastore, remote-config, transactions, react-native, react-native-firebase, firebase, fcm, apn, gcm, analytics, messaging, database, android, ios, crash, firestack, performance, firestore, dynamic-links, crashlytics |
 | [react-native-flip-card](./r/react-native-flip-card) | The card component which has a motion of flip for  | react-component, react-native, ios, android, card, flip |
+| [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form  | react-component, react-native, react native form, android, ios |
 | [react-native-fs](./r/react-native-fs) | Native filesystem access for react-native | react-component, react-native, ios, android, fs, filesystem, download, upload, file-transfer |
 | [react-native-goby](./r/react-native-goby) | React Native plugin for the Goby service | react-native, code, push |
 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt | react, native, google, analytics, tracking, native, bridge, events, screen, hits, react-native, ios, android |
@@ -5178,6 +5183,7 @@
 | [react-native-keychain](./r/react-native-keychain) | Keychain Access for React Native | react-native, react-component, react-native-component, react, mobile, ios, android, keychain |
 | [react-native-linear-gradi](./r/react-native-linear-gradient) | A  element for React Native | - |
 | [react-native-loading-spin](./r/react-native-loading-spinner-overlay) | The only pure React Native Native iOS and Android  | activity, android, bar, full, indicator, ios, loading, modal, native, pop-up, popup, progress, react, react-native, screen, spinner, view |
+| [react-native-maps](./r/react-native-maps) | React Native Mapview component for iOS + Android | react, react-native, react-component, map, mapview, google-maps, mapkit |
 | [react-native-material-des](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar | react-native, Search, component, SearchBar, Material Design |
 | [react-native-material-dro](./r/react-native-material-dropdown) | Material dropdown | react, react-component, react-native, ios, android, material, dropdown, spinner, select |
 | [react-native-material-kit](./r/react-native-material-kit) | Bringing Material Design to React Native | react, native, react-component, react-native, react-native-component, ios, android, material design, MaterialKit |
@@ -6101,6 +6107,7 @@
 | [storybook__channels](./s/storybook__channels) | Storybook Channel is similar to an EventEmitter. C | storybook |
 | [storybook__client-logger](./s/storybook__client-logger) | Any client-side logging that is done through story | storybook |
 | [storybook__core-events](./s/storybook__core-events) | Event names used in storybook core | storybook |
+| [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio | storybook |
 | [storybook__preact](./s/storybook__preact) | Storybook for Preact: Develop Preact Component in  | storybook |
 | [storybook__react](./s/storybook__react) | Storybook for React: Develop React Component in is | storybook |
 | [storybook__react-native](./s/storybook__react-native) | A better way to develop React Native Components fo | react, react-native, storybook |
@@ -6744,6 +6751,7 @@
 | [webgl-ext](./w/webgl-ext) | - | - |
 | [webgl2](./w/webgl2) | - | - |
 | [webgme](./w/webgme) | Web-based Generic Modeling Environment | webgme, gme, cooperative, modeling, editor, domain |
+| [webicon](./w/webicon) | Icon library | icons8, i8, icon, icon set, svg icon, svg set, svg sprite, jquery-plugin, angular module |
 | [webidl2](./w/webidl2) | A WebIDL Parser | - |
 | [webix](./w/webix) | Webix UI | webix, ui, tree, datatable, list, chart, form, grid |
 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a | midi, message, web, browser, front-end, webmidi api |
@@ -6837,6 +6845,7 @@
 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to sta | word, wrap, rule, format, column |
 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the  | workbox, workboxjs, service worker, sw |
 | [workbox-webpack-plugin](./w/workbox-webpack-plugin) | A plugin for your Webpack build process, helping y | workbox, workboxjs, webpack, service worker, caching, fetch requests, offline, file manifest |
+| [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru | workbox, workboxjs, service worker, sw, window, message, postMessage |
 | [worker-farm](./w/worker-farm) | Distribute processing tasks to child processes wit | worker, child, processing, farm |
 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work | worker, rpc |
 | [worker-threads-pool](./w/worker-threads-pool) | Easily manage a pool of Node.js Worker Threads | pool, worker, workers, thread, threads, worker_threads, parallel |

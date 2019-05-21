@@ -16,8 +16,6 @@ class ObservableObjectAdministration protected ()
     ], name: java.lang.String, defaultEnhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]) = this()
   @JSName("defaultEnhancer")
   var defaultEnhancer_Original: mobxLib.libTypesModifiersMod.IEnhancer[_] = js.native
-  /* CompleteClass */
-  override var interceptors: js.UndefOr[js.Array[mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IObjectWillChange]]] = js.native
   var keysAtom: mobxLib.libCoreAtomMod.IAtom = js.native
   var name: java.lang.String = js.native
   var pendingKeys: js.Any = js.native

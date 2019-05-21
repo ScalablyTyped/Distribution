@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prompts"
-version := "2.04-dt-20190502Z-cff313"
+version := "2.0-dt-20190520Z-c5404e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-react
 
-Typings are for version 5.4.3
+Typings are for version 5.4.4
 
 ## Library description:
 React bindings for MobX. Create fully reactive components.

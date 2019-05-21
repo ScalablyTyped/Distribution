@@ -5,14 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_OnClick extends js.Object {
-  @JSName("onClick")
-  var onClick_Original: atNivoBarLib.atNivoBarMod.BarClickHandler = js.native
-  var pixelRatio: scala.Double = js.native
-  def onClick(
-    datum: atNivoBarLib.atNivoBarMod.BarExtendedDatum,
-    event: reactLib.reactMod.MouseEvent[stdLib.HTMLCanvasElement, reactLib.NativeMouseEvent]
-  ): scala.Unit = js.native
+  var onClick: atNivoBarLib.atNivoBarMod.BarClickHandler
+  var pixelRatio: scala.Double
+}
+
+object Anon_OnClick {
+  @scala.inline
+  def apply(onClick: atNivoBarLib.atNivoBarMod.BarClickHandler, pixelRatio: scala.Double): Anon_OnClick = {
+    val __obj = js.Dynamic.literal(onClick = onClick, pixelRatio = pixelRatio)
+  
+    __obj.asInstanceOf[Anon_OnClick]
+  }
 }
 

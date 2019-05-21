@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SyncContext extends Context {
   @JSName("callback")
-  var callback_SyncContext: js.UndefOr[scala.Nothing]
+  var callback_SyncContext: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object SyncContext {

@@ -151,8 +151,14 @@ object resourcesNs extends js.Object {
     */
   @js.native
   class Event ()
-    extends Resource[coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.EventResource]
-       with coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.EventResource {
+    extends Resource[
+          coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.EventResource[
+            coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.ChargeResource | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.CheckoutResource
+          ]
+        ]
+       with coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.EventResource[
+          coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.ChargeResource | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.CheckoutResource
+        ] {
     /**
       * API version of the `data` payload.
       */
@@ -183,7 +189,7 @@ object resourcesNs extends js.Object {
       * Event type.
       */
     /* CompleteClass */
-    override var `type`: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:created` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:confirmed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:failed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:delayed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:pending` = js.native
+    override var `type`: coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:created` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:confirmed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:failed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:delayed` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:pending` | coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.`charge:resolved` = js.native
   }
   
   /**
@@ -480,22 +486,6 @@ object resourcesNs extends js.Object {
     ): js.Promise[
         coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.resourcesNs.Event
       ] = js.native
-  }
-  
-  /**
-    * Webhook class.
-    *
-    * @link https://github.com/coinbase/coinbase-commerce-node#webhooks
-    */
-  @JSName("Webhook")
-  @js.native
-  object WebhookNs extends js.Object {
-    /**
-      * Verify a signature header.
-      *
-      * @link https://github.com/coinbase/coinbase-commerce-node#verify-signature-header
-      */
-    def verifySigHeader(rawBody: java.lang.String, signature: java.lang.String, sharedSecret: java.lang.String): scala.Unit = js.native
   }
   
 }

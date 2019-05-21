@@ -5,10 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_RowHeaderCellRenderer extends js.Object {
-  @JSName("rowHeaderCellRenderer")
-  var rowHeaderCellRenderer_Original: js.Function1[/* rowIndex */ scala.Double, reactLib.reactMod.Global.JSXNs.Element] = js.native
-  def rowHeaderCellRenderer(rowIndex: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
+  var rowHeaderCellRenderer: js.Function1[/* rowIndex */ scala.Double, reactLib.reactMod.Global.JSXNs.Element]
+}
+
+object Anon_RowHeaderCellRenderer {
+  @scala.inline
+  def apply(rowHeaderCellRenderer: /* rowIndex */ scala.Double => reactLib.reactMod.Global.JSXNs.Element): Anon_RowHeaderCellRenderer = {
+    val __obj = js.Dynamic.literal(rowHeaderCellRenderer = js.Any.fromFunction1(rowHeaderCellRenderer))
+  
+    __obj.asInstanceOf[Anon_RowHeaderCellRenderer]
+  }
 }
 

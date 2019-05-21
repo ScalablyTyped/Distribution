@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
+- officeDashJsLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getSelectedDataAsync, getSelectedDataAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
 trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
@@ -440,6 +440,15 @@ trait MessageCompose extends Message {
   def getAttachmentsAsync(
     options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetails]], scala.Unit]
+  ): scala.Unit = js.native
+  def getSelectedDataAsync(
+    coercionType: java.lang.String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[_], scala.Unit]
+  ): scala.Unit = js.native
+  def getSelectedDataAsync(
+    coercionType: java.lang.String,
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[_], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously returns selected data from the subject or body of a message.

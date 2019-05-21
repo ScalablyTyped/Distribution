@@ -10,7 +10,7 @@ trait IBrowser extends js.Object {
     * Determined dynamically
     * @deprecated
     */
-  var major: js.UndefOr[java.lang.String]
+  var major: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Possible values :
     * Amaya, Android Browser, Arora, Avant, Baidu, Blazer, Bolt, Camino, Chimera, Chrome,
@@ -23,11 +23,11 @@ trait IBrowser extends js.Object {
     * Tizen, UCBrowser, Vivaldi, w3m, Yandex
     *
     */
-  var name: js.UndefOr[java.lang.String]
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Determined dynamically
     */
-  var version: js.UndefOr[java.lang.String]
+  var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object IBrowser {

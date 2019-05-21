@@ -9,10 +9,10 @@ trait DisconnectedClient extends js.Object {
   var cid: scala.Double
   var clid: scala.Double
   var client_away: scala.Double
-  var client_away_message: js.UndefOr[java.lang.String]
+  var client_away_message: js.UndefOr[java.lang.String] = js.undefined
   var client_channel_group_id: scala.Double
   var client_channel_group_inherited_channel_id: scala.Double
-  var client_country: js.UndefOr[java.lang.String]
+  var client_country: js.UndefOr[java.lang.String] = js.undefined
   var client_created: scala.Double
   var client_database_id: scala.Double
   var client_flag_talking: scala.Double

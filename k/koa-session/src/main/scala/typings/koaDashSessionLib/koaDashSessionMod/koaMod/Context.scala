@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Context extends js.Object {
   var session: koaDashSessionLib.koaDashSessionMod.Session | scala.Null
-  val sessionOptions: js.UndefOr[koaDashSessionLib.koaDashSessionMod.opts]
+  val sessionOptions: js.UndefOr[koaDashSessionLib.koaDashSessionMod.opts] = js.undefined
 }
 
 object Context {

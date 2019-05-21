@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLParams extends js.Object {
-  var operationName: js.UndefOr[java.lang.String | scala.Null]
-  var query: js.UndefOr[java.lang.String | scala.Null]
-  var raw: js.UndefOr[scala.Boolean | scala.Null]
-  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
+  var operationName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  var query: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  var raw: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
+  var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.undefined
 }
 
 object GraphQLParams {

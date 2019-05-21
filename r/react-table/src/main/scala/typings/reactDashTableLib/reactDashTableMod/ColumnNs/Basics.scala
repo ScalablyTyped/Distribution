@@ -16,19 +16,19 @@ trait Basics extends js.Object {
   /**  Used to render the value inside of a Pivot cell */
   var PivotValue: reactDashTableLib.reactDashTableMod.TableCellRenderer
   /** Default: false */
-  var defaultSortDesc: js.UndefOr[scala.Boolean]
+  var defaultSortDesc: js.UndefOr[scala.Boolean] = js.undefined
   /** Default: undefined, use table default */
-  var filterable: js.UndefOr[scala.Boolean]
+  var filterable: js.UndefOr[scala.Boolean] = js.undefined
   /** Default: 100 */
   var minWidth: scala.Double
   /** Default: undefined, use table default */
-  var resizable: js.UndefOr[scala.Boolean]
+  var resizable: js.UndefOr[scala.Boolean] = js.undefined
   /** Default: true */
   var show: scala.Boolean
   /** Default: ... */
-  var sortMethod: js.UndefOr[reactDashTableLib.reactDashTableMod.SortFunction]
+  var sortMethod: js.UndefOr[reactDashTableLib.reactDashTableMod.SortFunction] = js.undefined
   /** Default: undefined, use table default */
-  var sortable: js.UndefOr[scala.Boolean]
+  var sortable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Basics {

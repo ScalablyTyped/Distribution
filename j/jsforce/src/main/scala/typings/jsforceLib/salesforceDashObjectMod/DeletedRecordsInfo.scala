@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeletedRecordsInfo extends js.Object {
-  var deletedRecords: jsforceLib.Anon_DeletedDate
+  var deletedRecords: js.Array[DeletedRecord]
   var earliestDateAvailable: java.lang.String
   var latestDateCovered: java.lang.String
 }
@@ -14,7 +14,7 @@ trait DeletedRecordsInfo extends js.Object {
 object DeletedRecordsInfo {
   @scala.inline
   def apply(
-    deletedRecords: jsforceLib.Anon_DeletedDate,
+    deletedRecords: js.Array[DeletedRecord],
     earliestDateAvailable: java.lang.String,
     latestDateCovered: java.lang.String
   ): DeletedRecordsInfo = {

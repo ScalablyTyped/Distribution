@@ -10,6 +10,7 @@ trait DesiredCapabilities extends Capabilities {
   var addCustomRequestHeaders: js.UndefOr[scala.Boolean] = js.undefined
   var app: js.UndefOr[java.lang.String] = js.undefined
   var applicationCacheEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  var automationName: js.UndefOr[java.lang.String] = js.undefined
   var avoidProxy: js.UndefOr[scala.Boolean] = js.undefined
   var browserAttachTimeout: js.UndefOr[scala.Double] = js.undefined
   var browserConnectionEnabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -101,6 +102,7 @@ object DesiredCapabilities {
     addCustomRequestHeaders: js.UndefOr[scala.Boolean] = js.undefined,
     app: java.lang.String = null,
     applicationCacheEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    automationName: java.lang.String = null,
     avoidProxy: js.UndefOr[scala.Boolean] = js.undefined,
     browserAttachTimeout: scala.Int | scala.Double = null,
     browserConnectionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -185,6 +187,7 @@ object DesiredCapabilities {
     if (!js.isUndefined(addCustomRequestHeaders)) __obj.updateDynamic("addCustomRequestHeaders")(addCustomRequestHeaders)
     if (app != null) __obj.updateDynamic("app")(app)
     if (!js.isUndefined(applicationCacheEnabled)) __obj.updateDynamic("applicationCacheEnabled")(applicationCacheEnabled)
+    if (automationName != null) __obj.updateDynamic("automationName")(automationName)
     if (!js.isUndefined(avoidProxy)) __obj.updateDynamic("avoidProxy")(avoidProxy)
     if (browserAttachTimeout != null) __obj.updateDynamic("browserAttachTimeout")(browserAttachTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(browserConnectionEnabled)) __obj.updateDynamic("browserConnectionEnabled")(browserConnectionEnabled)

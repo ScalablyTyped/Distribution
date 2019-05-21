@@ -1,7 +1,7 @@
 
 # Scala.js typings for uni-app
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 
 
@@ -17,7 +17,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for non-npm package uni-app 1.0
+// Type definitions for non-npm package uni-app 1.1
 // Project: https://github.com/dcloudio/uni-app
 // Definitions by: DCloud <https://github.com/dcloudio>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

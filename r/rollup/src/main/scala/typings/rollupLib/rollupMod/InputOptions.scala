@@ -21,7 +21,7 @@ trait InputOptions extends js.Object {
   var moduleContext: js.UndefOr[
     (js.Function1[/* id */ java.lang.String, java.lang.String]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
-  var onwarn: js.UndefOr[WarningHandler] = js.undefined
+  var onwarn: js.UndefOr[WarningHandlerWithDefault] = js.undefined
   var perf: js.UndefOr[scala.Boolean] = js.undefined
   var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
   var preserveModules: js.UndefOr[scala.Boolean] = js.undefined
@@ -47,7 +47,7 @@ object InputOptions {
     input: InputOption = null,
     manualChunks: ManualChunksOption = null,
     moduleContext: (js.Function1[/* id */ java.lang.String, java.lang.String]) | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    onwarn: WarningHandler = null,
+    onwarn: WarningHandlerWithDefault = null,
     perf: js.UndefOr[scala.Boolean] = js.undefined,
     plugins: js.Array[Plugin] = null,
     preserveModules: js.UndefOr[scala.Boolean] = js.undefined,

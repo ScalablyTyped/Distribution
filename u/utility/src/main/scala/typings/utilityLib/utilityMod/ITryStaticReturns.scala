@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * -----------------0^0------------------------
   */
 trait ITryStaticReturns extends js.Object {
-  var error: js.UndefOr[stdLib.Error]
+  var error: js.UndefOr[stdLib.Error] = js.undefined
   var value: js.Any
 }
 

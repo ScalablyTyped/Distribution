@@ -20,6 +20,7 @@ trait GmailMessage extends js.Object {
   def getCc(): java.lang.String = js.native
   def getDate(): stdLib.Date = js.native
   def getFrom(): java.lang.String = js.native
+  def getHeader(name: java.lang.String): java.lang.String = js.native
   def getId(): java.lang.String = js.native
   def getPlainBody(): java.lang.String = js.native
   def getRawContent(): java.lang.String = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-live
 
-Typings are for version 2.0.1
+Typings are for version 2.1.1
 
 ## Library description:
 A production-focused playground for live editing React code

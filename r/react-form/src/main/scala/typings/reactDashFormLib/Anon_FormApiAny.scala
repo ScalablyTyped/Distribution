@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_FormApiAny extends js.Object {
-  @JSName("formApi")
-  var formApi_Original: reactLib.reactMod.Validator[_] = js.native
-  def formApi(
-    props: js.Object,
-    propName: java.lang.String,
-    componentName: java.lang.String,
-    location: java.lang.String,
-    propFullName: java.lang.String
-  ): stdLib.Error | scala.Null = js.native
+  var formApi: reactLib.reactMod.Validator[_]
+}
+
+object Anon_FormApiAny {
+  @scala.inline
+  def apply(formApi: reactLib.reactMod.Validator[_]): Anon_FormApiAny = {
+    val __obj = js.Dynamic.literal(formApi = formApi)
+  
+    __obj.asInstanceOf[Anon_FormApiAny]
+  }
 }
 

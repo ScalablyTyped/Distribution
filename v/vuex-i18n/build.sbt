@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vuex-i18n"
-version := "1.10-dt-20181106Z-ee4d8b"
+version := "1.10-dt-20190520Z-9c0119"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

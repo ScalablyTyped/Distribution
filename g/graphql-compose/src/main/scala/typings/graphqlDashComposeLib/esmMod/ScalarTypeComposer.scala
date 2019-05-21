@@ -16,10 +16,16 @@ class ScalarTypeComposer[TContext] protected ()
 @JSImport("graphql-compose/esm", "ScalarTypeComposer")
 @js.native
 object ScalarTypeComposer extends js.Object {
+  /**
+    * Create `ScalarTypeComposer` with adding it by name to the `SchemaComposer`. This type became avaliable in SDL by its name.
+    */
   def create[TCtx](
     typeDef: graphqlDashComposeLib.esmScalarTypeComposerMod.ScalarTypeComposeDefinition,
     schemaComposer: graphqlDashComposeLib.esmSchemaComposerMod.SchemaComposer[TCtx]
   ): graphqlDashComposeLib.esmScalarTypeComposerMod.ScalarTypeComposer[TCtx] = js.native
+  /**
+    * Create `ScalarTypeComposer` without adding it to the `SchemaComposer`. This method may be usefull in plugins, when you need to create type temporary.
+    */
   def createTemp[TCtx](typeDef: graphqlDashComposeLib.esmScalarTypeComposerMod.ScalarTypeComposeDefinition): graphqlDashComposeLib.esmScalarTypeComposerMod.ScalarTypeComposer[TCtx] = js.native
   def createTemp[TCtx](
     typeDef: graphqlDashComposeLib.esmScalarTypeComposerMod.ScalarTypeComposeDefinition,

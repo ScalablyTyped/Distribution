@@ -19,6 +19,6 @@ object ^ extends js.Object {
   val Typography: antdLib.libTypographyMod.TypographyProps = js.native
   val message: antdLib.libMessageMod.MessageApi = js.native
   val notification: antdLib.libNotificationMod.NotificationApi = js.native
-  var version: antdLib.antdLibStrings.`3DOT18DOT1` = js.native
+  var version: antdLib.antdLibStrings.`3DOT18DOT2` = js.native
 }
 

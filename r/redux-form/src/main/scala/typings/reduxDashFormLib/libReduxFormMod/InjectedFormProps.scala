@@ -5,59 +5,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait InjectedFormProps[FormData, P, ErrorType] extends js.Object {
-  var anyTouched: scala.Boolean = js.native
-  var array: InjectedArrayProps = js.native
-  var asyncValidating: java.lang.String | scala.Boolean = js.native
-  var dirty: scala.Boolean = js.native
-  var error: ErrorType = js.native
-  var form: java.lang.String = js.native
-  @JSName("handleSubmit")
-  var handleSubmit_Original: SubmitHandler[FormData, P, ErrorType] = js.native
-  var initialValues: stdLib.Partial[FormData] = js.native
-  var initialized: scala.Boolean = js.native
-  var invalid: scala.Boolean = js.native
-  var pristine: scala.Boolean = js.native
-  var registeredFields: org.scalablytyped.runtime.StringDictionary[RegisteredField] = js.native
-  var submitFailed: scala.Boolean = js.native
-  var submitSucceeded: scala.Boolean = js.native
-  var submitting: scala.Boolean = js.native
-  var valid: scala.Boolean = js.native
-  var warning: js.Any = js.native
-  def asyncValidate(): scala.Unit = js.native
-  def autofill(field: java.lang.String, value: js.Any): scala.Unit = js.native
-  def blur(field: java.lang.String, value: js.Any): scala.Unit = js.native
-  def change(field: java.lang.String, value: js.Any): scala.Unit = js.native
-  def clearAsyncError(field: java.lang.String): scala.Unit = js.native
-  def destroy(): scala.Unit = js.native
-  def handleSubmit(event: reactLib.reactMod.SyntheticEvent[_, reactLib.Event]): scala.Unit = js.native
-  def handleSubmit(submit: FormSubmitHandler[FormData, P, ErrorType]): js.Any = js.native
-  def handleSubmit(
-    submit: FormSubmitHandler[FormData, P, ErrorType],
-    props: InjectedFormProps[FormData, P, ErrorType]
-  ): js.Any = js.native
-  def handleSubmit(
-    submit: FormSubmitHandler[FormData, P, ErrorType],
-    props: InjectedFormProps[FormData, P, ErrorType],
-    valid: scala.Boolean
-  ): js.Any = js.native
-  def handleSubmit(
-    submit: FormSubmitHandler[FormData, P, ErrorType],
-    props: InjectedFormProps[FormData, P, ErrorType],
+  var anyTouched: scala.Boolean
+  var array: InjectedArrayProps
+  var asyncValidating: java.lang.String | scala.Boolean
+  var dirty: scala.Boolean
+  var error: ErrorType
+  var form: java.lang.String
+  var handleSubmit: SubmitHandler[FormData, P, ErrorType]
+  var initialValues: stdLib.Partial[FormData]
+  var initialized: scala.Boolean
+  var invalid: scala.Boolean
+  var pristine: scala.Boolean
+  var registeredFields: org.scalablytyped.runtime.StringDictionary[RegisteredField]
+  var submitFailed: scala.Boolean
+  var submitSucceeded: scala.Boolean
+  var submitting: scala.Boolean
+  var valid: scala.Boolean
+  var warning: js.Any
+  def asyncValidate(): scala.Unit
+  def autofill(field: java.lang.String, value: js.Any): scala.Unit
+  def blur(field: java.lang.String, value: js.Any): scala.Unit
+  def change(field: java.lang.String, value: js.Any): scala.Unit
+  def clearAsyncError(field: java.lang.String): scala.Unit
+  def destroy(): scala.Unit
+  def initialize(data: stdLib.Partial[FormData]): scala.Unit
+  def reset(): scala.Unit
+  def touch(field: java.lang.String*): scala.Unit
+  def untouch(field: java.lang.String*): scala.Unit
+}
+
+object InjectedFormProps {
+  @scala.inline
+  def apply[FormData, P, ErrorType](
+    anyTouched: scala.Boolean,
+    array: InjectedArrayProps,
+    asyncValidate: () => scala.Unit,
+    asyncValidating: java.lang.String | scala.Boolean,
+    autofill: (java.lang.String, js.Any) => scala.Unit,
+    blur: (java.lang.String, js.Any) => scala.Unit,
+    change: (java.lang.String, js.Any) => scala.Unit,
+    clearAsyncError: java.lang.String => scala.Unit,
+    destroy: () => scala.Unit,
+    dirty: scala.Boolean,
+    error: ErrorType,
+    form: java.lang.String,
+    handleSubmit: SubmitHandler[FormData, P, ErrorType],
+    initialValues: stdLib.Partial[FormData],
+    initialize: stdLib.Partial[FormData] => scala.Unit,
+    initialized: scala.Boolean,
+    invalid: scala.Boolean,
+    pristine: scala.Boolean,
+    registeredFields: org.scalablytyped.runtime.StringDictionary[RegisteredField],
+    reset: () => scala.Unit,
+    submitFailed: scala.Boolean,
+    submitSucceeded: scala.Boolean,
+    submitting: scala.Boolean,
+    touch: /* repeated */ java.lang.String => scala.Unit,
+    untouch: /* repeated */ java.lang.String => scala.Unit,
     valid: scala.Boolean,
-    asyncValidate: js.Any
-  ): js.Any = js.native
-  def handleSubmit(
-    submit: FormSubmitHandler[FormData, P, ErrorType],
-    props: InjectedFormProps[FormData, P, ErrorType],
-    valid: scala.Boolean,
-    asyncValidate: js.Any,
-    fields: js.Array[java.lang.String]
-  ): js.Any = js.native
-  def initialize(data: stdLib.Partial[FormData]): scala.Unit = js.native
-  def reset(): scala.Unit = js.native
-  def touch(field: java.lang.String*): scala.Unit = js.native
-  def untouch(field: java.lang.String*): scala.Unit = js.native
+    warning: js.Any
+  ): InjectedFormProps[FormData, P, ErrorType] = {
+    val __obj = js.Dynamic.literal(anyTouched = anyTouched, array = array, asyncValidate = js.Any.fromFunction0(asyncValidate), asyncValidating = asyncValidating.asInstanceOf[js.Any], autofill = js.Any.fromFunction2(autofill), blur = js.Any.fromFunction2(blur), change = js.Any.fromFunction2(change), clearAsyncError = js.Any.fromFunction1(clearAsyncError), destroy = js.Any.fromFunction0(destroy), dirty = dirty, error = error.asInstanceOf[js.Any], form = form, handleSubmit = handleSubmit, initialValues = initialValues, initialize = js.Any.fromFunction1(initialize), initialized = initialized, invalid = invalid, pristine = pristine, registeredFields = registeredFields, reset = js.Any.fromFunction0(reset), submitFailed = submitFailed, submitSucceeded = submitSucceeded, submitting = submitting, touch = js.Any.fromFunction1(touch), untouch = js.Any.fromFunction1(untouch), valid = valid, warning = warning)
+  
+    __obj.asInstanceOf[InjectedFormProps[FormData, P, ErrorType]]
+  }
 }
 

@@ -118,6 +118,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var mediaconvert: js.UndefOr[awsDashSdkLib.clientsMediaconvertMod.ClientConfiguration] = js.native
   var medialive: js.UndefOr[awsDashSdkLib.clientsMedialiveMod.ClientConfiguration] = js.native
   var mediapackage: js.UndefOr[awsDashSdkLib.clientsMediapackageMod.ClientConfiguration] = js.native
+  var mediapackagevod: js.UndefOr[awsDashSdkLib.clientsMediapackagevodMod.ClientConfiguration] = js.native
   var mediastore: js.UndefOr[awsDashSdkLib.clientsMediastoreMod.ClientConfiguration] = js.native
   var mediastoredata: js.UndefOr[awsDashSdkLib.clientsMediastoredataMod.ClientConfiguration] = js.native
   var mediatailor: js.UndefOr[awsDashSdkLib.clientsMediatailorMod.ClientConfiguration] = js.native

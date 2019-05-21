@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "prosemirror-transform"
-version := "1.1-dt-20180621Z-bbadbc"
+version := "1.1-dt-20180621Z-7460b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-a9a4b7",
-  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190130Z-d740c8",
+  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190520Z-d4a427",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

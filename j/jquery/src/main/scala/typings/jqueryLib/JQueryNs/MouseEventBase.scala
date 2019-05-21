@@ -18,14 +18,14 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   var buttons_MouseEventBase: scala.Double
   // TouchEvent
   @JSName("changedTouches")
-  var changedTouches_MouseEventBase: js.UndefOr[scala.Nothing]
+  var changedTouches_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("charCode")
-  var charCode_MouseEventBase: js.UndefOr[scala.Nothing]
+  var charCode_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // KeyboardEvent
   /** @deprecated */
   @JSName("char")
-  var char_MouseEventBase: js.UndefOr[scala.Nothing]
+  var char_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("clientX")
   var clientX_MouseEventBase: scala.Double
   @JSName("clientY")
@@ -34,9 +34,9 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   var ctrlKey_MouseEventBase: scala.Boolean
   /** @deprecated */
   @JSName("keyCode")
-  var keyCode_MouseEventBase: js.UndefOr[scala.Nothing]
+  var keyCode_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("key")
-  var key_MouseEventBase: js.UndefOr[scala.Nothing]
+  var key_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * Indicates whether the META key was pressed when the event fired.
     * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -157,9 +157,9 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   var pageY_MouseEventBase: scala.Double
   // PointerEvent
   @JSName("pointerId")
-  var pointerId_MouseEventBase: js.UndefOr[scala.Nothing]
+  var pointerId_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("pointerType")
-  var pointerType_MouseEventBase: js.UndefOr[scala.Nothing]
+  var pointerType_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The other DOM element involved in the event, if any.
     * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
@@ -179,12 +179,12 @@ trait MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UI
   @JSName("shiftKey")
   var shiftKey_MouseEventBase: scala.Boolean
   @JSName("targetTouches")
-  var targetTouches_MouseEventBase: js.UndefOr[scala.Nothing]
+  var targetTouches_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   /** @deprecated */
   @JSName("toElement")
   var toElement_MouseEventBase: stdLib.Element
   @JSName("touches")
-  var touches_MouseEventBase: js.UndefOr[scala.Nothing]
+  var touches_MouseEventBase: js.UndefOr[scala.Nothing] = js.undefined
   // MouseEvent, KeyboardEvent
   /**
     * For key or mouse events, this property indicates the specific key or button that was pressed.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BrowserEventObj extends js.Object {
   /** Emitted when puppeteer gets disconnected from the browser instance. */
-  var disconnected: js.UndefOr[scala.Nothing]
+  var disconnected: js.UndefOr[scala.Nothing] = js.undefined
   /** Emitted when the url of a target changes. */
   var targetchanged: Target
   /** Emitted when a target is created, for example when a new page is opened by `window.open` or `browser.newPage`. */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Snapshot extends js.Object {
-  var data: js.UndefOr[JSONObject]
+  var data: js.UndefOr[JSONObject] = js.undefined
   var id: java.lang.String
   var m: SnapshotMeta | scala.Null
   var `type`: java.lang.String | scala.Null

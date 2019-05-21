@@ -16,6 +16,7 @@ trait Permission extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var kind: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
+  var permissionDetails: js.UndefOr[js.Array[PermissionPermissionDetails]] = js.undefined
   var photoLink: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
@@ -38,6 +39,7 @@ object Permission {
     id: java.lang.String = null,
     kind: java.lang.String = null,
     name: java.lang.String = null,
+    permissionDetails: js.Array[PermissionPermissionDetails] = null,
     photoLink: java.lang.String = null,
     role: java.lang.String = null,
     selfLink: java.lang.String = null,
@@ -57,6 +59,7 @@ object Permission {
     if (id != null) __obj.updateDynamic("id")(id)
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (permissionDetails != null) __obj.updateDynamic("permissionDetails")(permissionDetails)
     if (photoLink != null) __obj.updateDynamic("photoLink")(photoLink)
     if (role != null) __obj.updateDynamic("role")(role)
     if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)

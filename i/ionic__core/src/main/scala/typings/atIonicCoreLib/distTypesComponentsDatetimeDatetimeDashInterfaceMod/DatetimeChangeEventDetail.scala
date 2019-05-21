@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DatetimeChangeEventDetail extends js.Object {
-  var value: js.UndefOr[java.lang.String | scala.Null]
+  var value: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
 object DatetimeChangeEventDetail {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for objection
 
-Typings are for version 1.6.8
+Typings are for version 1.6.9
 
 ## Library description:
 An SQL-friendly ORM for Node.js

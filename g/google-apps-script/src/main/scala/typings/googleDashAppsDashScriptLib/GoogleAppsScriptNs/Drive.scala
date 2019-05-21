@@ -24,6 +24,9 @@ trait Drive extends js.Object {
   var Comments: js.UndefOr[
     googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.CommentsCollection
   ] = js.undefined
+  var Drives: js.UndefOr[
+    googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.DrivesCollection
+  ] = js.undefined
   var Files: js.UndefOr[
     googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.FilesCollection
   ] = js.undefined
@@ -58,6 +61,14 @@ trait Drive extends js.Object {
   def newCommentContext(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.CommentContext
   // Create a new instance of CommentReply
   def newCommentReply(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.CommentReply
+  // Create a new instance of Drive
+  def newDrive(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Drive
+  // Create a new instance of DriveBackgroundImageFile
+  def newDriveBackgroundImageFile(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.DriveBackgroundImageFile
+  // Create a new instance of DriveCapabilities
+  def newDriveCapabilities(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.DriveCapabilities
+  // Create a new instance of DriveRestrictions
+  def newDriveRestrictions(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.DriveRestrictions
   // Create a new instance of File
   def newFile(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.File
   // Create a new instance of FileCapabilities
@@ -78,6 +89,8 @@ trait Drive extends js.Object {
   def newParentReference(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.ParentReference
   // Create a new instance of Permission
   def newPermission(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Permission
+  // Create a new instance of PermissionPermissionDetails
+  def newPermissionPermissionDetails(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.PermissionPermissionDetails
   // Create a new instance of PermissionTeamDrivePermissionDetails
   def newPermissionTeamDrivePermissionDetails(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.PermissionTeamDrivePermissionDetails
   // Create a new instance of Property
@@ -106,6 +119,10 @@ object Drive {
     newComment: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Comment,
     newCommentContext: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.CommentContext,
     newCommentReply: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.CommentReply,
+    newDrive: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Drive,
+    newDriveBackgroundImageFile: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.DriveBackgroundImageFile,
+    newDriveCapabilities: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.DriveCapabilities,
+    newDriveRestrictions: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.DriveRestrictions,
     newFile: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.File,
     newFileCapabilities: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.FileCapabilities,
     newFileImageMediaMetadata: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.FileImageMediaMetadata,
@@ -116,6 +133,7 @@ object Drive {
     newFileVideoMediaMetadata: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.FileVideoMediaMetadata,
     newParentReference: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.ParentReference,
     newPermission: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Permission,
+    newPermissionPermissionDetails: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.PermissionPermissionDetails,
     newPermissionTeamDrivePermissionDetails: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.PermissionTeamDrivePermissionDetails,
     newProperty: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Property,
     newRevision: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.SchemaNs.Revision,
@@ -131,6 +149,7 @@ object Drive {
     Channels: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.ChannelsCollection = null,
     Children: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.ChildrenCollection = null,
     Comments: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.CommentsCollection = null,
+    Drives: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.DrivesCollection = null,
     Files: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.FilesCollection = null,
     Parents: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.ParentsCollection = null,
     Permissions: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.PermissionsCollection = null,
@@ -140,13 +159,14 @@ object Drive {
     Revisions: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.RevisionsCollection = null,
     Teamdrives: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.CollectionNs.TeamdrivesCollection = null
   ): Drive = {
-    val __obj = js.Dynamic.literal(newChannel = js.Any.fromFunction0(newChannel), newChildReference = js.Any.fromFunction0(newChildReference), newComment = js.Any.fromFunction0(newComment), newCommentContext = js.Any.fromFunction0(newCommentContext), newCommentReply = js.Any.fromFunction0(newCommentReply), newFile = js.Any.fromFunction0(newFile), newFileCapabilities = js.Any.fromFunction0(newFileCapabilities), newFileImageMediaMetadata = js.Any.fromFunction0(newFileImageMediaMetadata), newFileImageMediaMetadataLocation = js.Any.fromFunction0(newFileImageMediaMetadataLocation), newFileIndexableText = js.Any.fromFunction0(newFileIndexableText), newFileLabels = js.Any.fromFunction0(newFileLabels), newFileThumbnail = js.Any.fromFunction0(newFileThumbnail), newFileVideoMediaMetadata = js.Any.fromFunction0(newFileVideoMediaMetadata), newParentReference = js.Any.fromFunction0(newParentReference), newPermission = js.Any.fromFunction0(newPermission), newPermissionTeamDrivePermissionDetails = js.Any.fromFunction0(newPermissionTeamDrivePermissionDetails), newProperty = js.Any.fromFunction0(newProperty), newRevision = js.Any.fromFunction0(newRevision), newTeamDrive = js.Any.fromFunction0(newTeamDrive), newTeamDriveBackgroundImageFile = js.Any.fromFunction0(newTeamDriveBackgroundImageFile), newTeamDriveCapabilities = js.Any.fromFunction0(newTeamDriveCapabilities), newTeamDriveRestrictions = js.Any.fromFunction0(newTeamDriveRestrictions), newUser = js.Any.fromFunction0(newUser), newUserPicture = js.Any.fromFunction0(newUserPicture))
+    val __obj = js.Dynamic.literal(newChannel = js.Any.fromFunction0(newChannel), newChildReference = js.Any.fromFunction0(newChildReference), newComment = js.Any.fromFunction0(newComment), newCommentContext = js.Any.fromFunction0(newCommentContext), newCommentReply = js.Any.fromFunction0(newCommentReply), newDrive = js.Any.fromFunction0(newDrive), newDriveBackgroundImageFile = js.Any.fromFunction0(newDriveBackgroundImageFile), newDriveCapabilities = js.Any.fromFunction0(newDriveCapabilities), newDriveRestrictions = js.Any.fromFunction0(newDriveRestrictions), newFile = js.Any.fromFunction0(newFile), newFileCapabilities = js.Any.fromFunction0(newFileCapabilities), newFileImageMediaMetadata = js.Any.fromFunction0(newFileImageMediaMetadata), newFileImageMediaMetadataLocation = js.Any.fromFunction0(newFileImageMediaMetadataLocation), newFileIndexableText = js.Any.fromFunction0(newFileIndexableText), newFileLabels = js.Any.fromFunction0(newFileLabels), newFileThumbnail = js.Any.fromFunction0(newFileThumbnail), newFileVideoMediaMetadata = js.Any.fromFunction0(newFileVideoMediaMetadata), newParentReference = js.Any.fromFunction0(newParentReference), newPermission = js.Any.fromFunction0(newPermission), newPermissionPermissionDetails = js.Any.fromFunction0(newPermissionPermissionDetails), newPermissionTeamDrivePermissionDetails = js.Any.fromFunction0(newPermissionTeamDrivePermissionDetails), newProperty = js.Any.fromFunction0(newProperty), newRevision = js.Any.fromFunction0(newRevision), newTeamDrive = js.Any.fromFunction0(newTeamDrive), newTeamDriveBackgroundImageFile = js.Any.fromFunction0(newTeamDriveBackgroundImageFile), newTeamDriveCapabilities = js.Any.fromFunction0(newTeamDriveCapabilities), newTeamDriveRestrictions = js.Any.fromFunction0(newTeamDriveRestrictions), newUser = js.Any.fromFunction0(newUser), newUserPicture = js.Any.fromFunction0(newUserPicture))
     if (About != null) __obj.updateDynamic("About")(About)
     if (Apps != null) __obj.updateDynamic("Apps")(Apps)
     if (Changes != null) __obj.updateDynamic("Changes")(Changes)
     if (Channels != null) __obj.updateDynamic("Channels")(Channels)
     if (Children != null) __obj.updateDynamic("Children")(Children)
     if (Comments != null) __obj.updateDynamic("Comments")(Comments)
+    if (Drives != null) __obj.updateDynamic("Drives")(Drives)
     if (Files != null) __obj.updateDynamic("Files")(Files)
     if (Parents != null) __obj.updateDynamic("Parents")(Parents)
     if (Permissions != null) __obj.updateDynamic("Permissions")(Permissions)

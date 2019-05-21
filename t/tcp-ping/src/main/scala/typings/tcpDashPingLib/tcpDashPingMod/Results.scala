@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Results extends js.Object {
   var error: js.UndefOr[stdLib.Error] = js.undefined
-  var seq: js.UndefOr[scala.Double]
-  var time: js.UndefOr[scala.Double]
+  var seq: js.UndefOr[scala.Double] = js.undefined
+  var time: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Results {

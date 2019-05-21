@@ -1345,7 +1345,7 @@ object jestNs extends js.Object {
   trait MockResultIncomplete
     extends MockResult[js.Any] {
     var `type`: jestLib.jestLibStrings.incomplete
-    var value: js.UndefOr[scala.Nothing]
+    var value: js.UndefOr[scala.Nothing] = js.undefined
   }
   
   /**

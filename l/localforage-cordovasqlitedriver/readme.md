@@ -1,7 +1,7 @@
 
 # Scala.js typings for localforage-cordovasqlitedriver
 
-Typings are for version 1.7.0
+Typings are for version 1.8.0
 
 ## Library description:
 SQLite driver for Cordova apps using localForage.

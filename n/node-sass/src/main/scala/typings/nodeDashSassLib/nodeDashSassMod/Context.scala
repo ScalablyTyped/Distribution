@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Context
   extends /* data */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var callback: js.UndefOr[SassRenderCallback]
+  var callback: js.UndefOr[SassRenderCallback] = js.undefined
   var options: Options
 }
 

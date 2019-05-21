@@ -35,7 +35,7 @@ trait User extends js.Object {
     */
   var Status: js.UndefOr[String] = js.undefined
   /**
-    * The email address of the user.
+    * The email address of the user.  Users' email addresses are case-sensitive. 
     */
   var UserName: js.UndefOr[Username] = js.undefined
 }

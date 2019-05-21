@@ -9,7 +9,7 @@ trait VNode extends js.Object {
   /**
     * Array of [[VNode]]s to be used as children. This array is already flattened.
     */
-  val children: js.UndefOr[js.Array[VNode]]
+  val children: js.UndefOr[js.Array[VNode]] = js.undefined
   /**
     * Used by maquette to store the domNode that was produced from this [[VNode]].
     */
@@ -17,11 +17,11 @@ trait VNode extends js.Object {
   /**
     * Object containing attributes, properties, event handlers and more, see [[h]].
     */
-  val properties: js.UndefOr[VNodeProperties]
+  val properties: js.UndefOr[VNodeProperties] = js.undefined
   /**
     * Used in a special case when a [[VNode]] only has one child node which is a text node. Only used in combination with children === undefined.
     */
-  val text: js.UndefOr[java.lang.String]
+  val text: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The CSS selector containing tagname, css classnames and id. An empty string is used to denote a text node.
     */

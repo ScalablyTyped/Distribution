@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ extends js.Object {
   var `*`: java.lang.String
-  var children: js.UndefOr[scala.Nothing]
+  var children: js.UndefOr[scala.Nothing] = js.undefined
   var data: js.Object
   var location: js.Object
   var navigate: js.Function

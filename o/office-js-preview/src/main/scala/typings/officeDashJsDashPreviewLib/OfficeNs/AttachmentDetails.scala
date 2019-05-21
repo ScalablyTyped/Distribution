@@ -22,7 +22,7 @@ trait AttachmentDetails extends js.Object {
   /**
     * Gets a value that indicates the type of an attachment.
     */
-  var attachmentType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentType
+  var attachmentType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentType | java.lang.String
   /**
     * Gets the MIME content type of the attachment.
     */
@@ -54,7 +54,7 @@ trait AttachmentDetails extends js.Object {
 object AttachmentDetails {
   @scala.inline
   def apply(
-    attachmentType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentType,
+    attachmentType: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentType | java.lang.String,
     contentType: java.lang.String,
     id: java.lang.String,
     isInline: scala.Boolean,
@@ -62,7 +62,7 @@ object AttachmentDetails {
     size: scala.Double,
     url: java.lang.String
   ): AttachmentDetails = {
-    val __obj = js.Dynamic.literal(attachmentType = attachmentType, contentType = contentType, id = id, isInline = isInline, name = name, size = size, url = url)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType.asInstanceOf[js.Any], contentType = contentType, id = id, isInline = isInline, name = name, size = size, url = url)
   
     __obj.asInstanceOf[AttachmentDetails]
   }

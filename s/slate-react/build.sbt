@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slate-react"
-version := "0.21-dt-20190326Z-7abe3d"
+version := "0.21-dt-20190326Z-f49e5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-18676c",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-49bfe5",
-  "org.scalablytyped" %%% "slate" % "0.44-dt-20190513Z-489faa",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-56dde3",
+  "org.scalablytyped" %%% "slate" % "0.44-dt-20190520Z-fa00c0",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

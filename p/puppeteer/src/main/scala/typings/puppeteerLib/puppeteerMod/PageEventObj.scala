@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PageEventObj extends js.Object {
   /** Emitted when the page closes. */
-  var close: js.UndefOr[scala.Nothing]
+  var close: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * Emitted when JavaScript within the page calls one of console API methods, e.g. console.log or console.dir.
     * Also emitted if the page throws an error or a warning.
@@ -32,7 +32,7 @@ trait PageEventObj extends js.Object {
   /** Emitted when a frame is navigated to a new url. */
   var framenavigated: Frame
   /** Emitted when the JavaScript load event is dispatched. */
-  var load: js.UndefOr[scala.Nothing]
+  var load: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * Emitted when the JavaScript code makes a call to `console.timeStamp`.
     * For the list of metrics see `page.metrics`.

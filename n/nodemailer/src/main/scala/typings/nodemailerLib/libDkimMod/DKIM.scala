@@ -5,17 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DKIM extends js.Object {
-  var keys: js.Array[java.lang.String | nodemailerLib.Anon_Key]
-  var options: Options
-}
-
-object DKIM {
-  @scala.inline
-  def apply(keys: js.Array[java.lang.String | nodemailerLib.Anon_Key], options: Options): DKIM = {
-    val __obj = js.Dynamic.literal(keys = keys, options = options)
-  
-    __obj.asInstanceOf[DKIM]
-  }
+  var keys: js.Array[java.lang.String | nodemailerLib.Anon_Key] = js.native
+  var options: Options = js.native
+  def sign(input: java.lang.String, extraOptions: Options): nodeLib.streamMod.PassThrough = js.native
+  def sign(input: nodeLib.Buffer, extraOptions: Options): nodeLib.streamMod.PassThrough = js.native
+  def sign(input: nodeLib.streamMod.Readable, extraOptions: Options): nodeLib.streamMod.PassThrough = js.native
 }
 

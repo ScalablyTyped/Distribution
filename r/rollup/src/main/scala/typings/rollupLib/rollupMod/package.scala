@@ -99,4 +99,9 @@ package object rollupMod {
   ]
   type TransformResult = java.lang.String | scala.Unit | TransformSourceDescription
   type WarningHandler = js.Function1[/* warning */ java.lang.String | RollupWarning, scala.Unit]
+  type WarningHandlerWithDefault = js.Function2[
+    /* warning */ java.lang.String | RollupWarning, 
+    /* defaultHandler */ WarningHandler, 
+    scala.Unit
+  ]
 }

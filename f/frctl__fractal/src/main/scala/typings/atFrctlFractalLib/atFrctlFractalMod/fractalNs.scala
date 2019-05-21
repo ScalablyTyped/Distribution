@@ -343,14 +343,14 @@ object fractalNs extends js.Object {
         var githubColor: java.lang.String
         var handle: java.lang.String
         var id: java.lang.String
-        val isAsset: js.UndefOr[scala.Nothing]
+        val isAsset: js.UndefOr[scala.Nothing] = js.undefined
         var isBinary: scala.Boolean
-        val isCollection: js.UndefOr[scala.Nothing]
-        val isComponent: js.UndefOr[scala.Nothing]
-        val isDoc: js.UndefOr[scala.Nothing]
+        val isCollection: js.UndefOr[scala.Nothing] = js.undefined
+        val isComponent: js.UndefOr[scala.Nothing] = js.undefined
+        val isDoc: js.UndefOr[scala.Nothing] = js.undefined
         val isFile: atFrctlFractalLib.atFrctlFractalLibNumbers.`true`
         val isImage: scala.Boolean
-        val isVariant: js.UndefOr[scala.Nothing]
+        val isVariant: js.UndefOr[scala.Nothing] = js.undefined
         var lang: java.lang.String
         var mime: java.lang.String
         var name: java.lang.String

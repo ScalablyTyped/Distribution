@@ -22,9 +22,6 @@ object reactLibStrings {
   sealed trait I extends js.Object
   
   @js.native
-  sealed trait ReactPropTypes extends js.Object
-  
-  @js.native
   sealed trait WeakValidationMap extends js.Object
   
   @js.native
@@ -796,8 +793,6 @@ object reactLibStrings {
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def I: I = "I".asInstanceOf[I]
-  @scala.inline
-  def ReactPropTypes: ReactPropTypes = "ReactPropTypes".asInstanceOf[ReactPropTypes]
   @scala.inline
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-stdole"
-version := "2.0-dt-20190213Z-3f2faf"
+version := "2.0-dt-20190213Z-235348"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

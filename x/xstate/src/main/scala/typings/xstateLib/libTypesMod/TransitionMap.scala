@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TransitionMap extends js.Object {
-  var state: js.UndefOr[StateValue]
+  var state: js.UndefOr[StateValue] = js.undefined
 }
 
 object TransitionMap {

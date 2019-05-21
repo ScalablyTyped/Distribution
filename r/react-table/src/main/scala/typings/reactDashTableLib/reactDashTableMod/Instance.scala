@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Instance[D]
   extends reactLib.reactMod.Component[stdLib.Partial[TableProps[D, D]], js.Object, js.Any] {
-  @JSName("onPageChange")
-  var onPageChange_Original: PageChangeFunction = js.native
-  @JSName("onPageSizeChange")
-  var onPageSizeChange_Original: PageSizeChangeFunction = js.native
+  var onPageChange: PageChangeFunction = js.native
+  var onPageSizeChange: PageSizeChangeFunction = js.native
   @JSName("props")
   var props_Instance: stdLib.Partial[TableProps[D, D]] = js.native
   @JSName("state")
@@ -25,8 +23,6 @@ trait Instance[D]
   def getResolvedState(props: js.Any*): js.Any = js.native
   def getSortedData(props: js.Any*): js.Any = js.native
   def getStateOrProp(props: js.Any*): js.Any = js.native
-  def onPageChange(page: scala.Double): scala.Unit = js.native
-  def onPageSizeChange(newPageSize: scala.Double, newPage: scala.Double): scala.Unit = js.native
   def resizeColumnEnd(props: js.Any*): js.Any = js.native
   def resizeColumnMoving(props: js.Any*): js.Any = js.native
   def resizeColumnStart(props: js.Any*): js.Any = js.native

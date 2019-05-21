@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_BottomCenterBottomLeftBottomRight extends js.Object {
   var placement: js.UndefOr[
     antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomCenter
-  ]
+  ] = js.undefined
   var `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
 }
 

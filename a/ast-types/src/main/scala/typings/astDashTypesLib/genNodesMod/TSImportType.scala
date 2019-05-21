@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   var argument: astDashTypesLib.genKindsMod.StringLiteralKind
   var qualifier: js.UndefOr[
     astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind
-  ]
+  ] = js.undefined
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSImportType
 }
 
