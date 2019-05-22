@@ -55,6 +55,7 @@ package object clientsAlexaforbusinessMod {
   type CategoryId = scala.Double
   type CategoryList = js.Array[Category]
   type CategoryName = java.lang.String
+  type CertificateTime = stdLib.Date
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientId = java.lang.String
   type ClientRequestToken = java.lang.String
@@ -90,6 +91,7 @@ package object clientsAlexaforbusinessMod {
   type ContactDataList = js.Array[ContactData]
   type ContactName = java.lang.String
   type CountryCode = java.lang.String
+  type CurrentWiFiPassword = java.lang.String
   type CustomerS3BucketName = java.lang.String
   type DeveloperName = java.lang.String
   type DeviceDataList = js.Array[DeviceData]
@@ -110,6 +112,7 @@ package object clientsAlexaforbusinessMod {
     - awsDashSdkLib.awsDashSdkLibStrings.PENDING
     - awsDashSdkLib.awsDashSdkLibStrings.WAS_OFFLINE
     - awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
     - java.lang.String
   */
   type DeviceStatus = _DeviceStatus | java.lang.String
@@ -173,6 +176,8 @@ package object clientsAlexaforbusinessMod {
     - awsDashSdkLib.awsDashSdkLibStrings.NOTIFICATIONS
     - awsDashSdkLib.awsDashSdkLibStrings.LISTS
     - awsDashSdkLib.awsDashSdkLibStrings.SKILLS
+    - awsDashSdkLib.awsDashSdkLibStrings.NETWORK_PROFILE
+    - awsDashSdkLib.awsDashSdkLibStrings.SETTINGS
     - awsDashSdkLib.awsDashSdkLibStrings.ALL
     - java.lang.String
   */
@@ -198,8 +203,23 @@ package object clientsAlexaforbusinessMod {
   type MacAddress = java.lang.String
   type MaxResults = scala.Double
   type MaxVolumeLimit = scala.Double
+  type NetworkEapMethod = awsDashSdkLib.awsDashSdkLibStrings.EAP_TLS | java.lang.String
+  type NetworkProfileDataList = js.Array[NetworkProfileData]
+  type NetworkProfileDescription = java.lang.String
+  type NetworkProfileName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OPEN
+    - awsDashSdkLib.awsDashSdkLibStrings.WEP
+    - awsDashSdkLib.awsDashSdkLibStrings.WPA_PSK
+    - awsDashSdkLib.awsDashSdkLibStrings.WPA2_PSK
+    - awsDashSdkLib.awsDashSdkLibStrings.WPA2_ENTERPRISE
+    - java.lang.String
+  */
+  type NetworkSecurityType = _NetworkSecurityType | java.lang.String
+  type NetworkSsid = java.lang.String
   type NewInThisVersionBulletPoints = js.Array[BulletPoint]
   type NextToken = java.lang.String
+  type NextWiFiPassword = java.lang.String
   type OneClickIdDelay = java.lang.String
   type OneClickPinDelay = java.lang.String
   type OrganizationName = java.lang.String
@@ -281,6 +301,8 @@ package object clientsAlexaforbusinessMod {
   type TimeToLiveInSeconds = scala.Double
   type Timezone = java.lang.String
   type TotalCount = scala.Double
+  type TrustAnchor = java.lang.String
+  type TrustAnchorList = js.Array[TrustAnchor]
   type Url = java.lang.String
   type UserCode = java.lang.String
   type UserDataList = js.Array[UserData]

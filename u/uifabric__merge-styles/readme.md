@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__merge-styles
 
-Typings are for version 6.17.3
+Typings are for version 6.17.4
 
 ## Library description:
 Office UI Fabric style loading utilities.

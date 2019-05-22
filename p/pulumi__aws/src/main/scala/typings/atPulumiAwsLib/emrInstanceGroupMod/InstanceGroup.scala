@@ -19,19 +19,27 @@ class InstanceGroup protected ()
   def this(name: java.lang.String, args: InstanceGroupArgs) = this()
   def this(name: java.lang.String, args: InstanceGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * The autoscaling policy document. This is a JSON formatted string. See [EMR Auto Scaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html)
+    */
+  val autoscalingPolicy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * If set, the bid price for each EC2 instance in the instance group, expressed in USD. By setting this attribute, the instance group is being declared as a Spot Instance, and will implicitly create a Spot request. Leave this blank to use On-Demand Instances.
+    */
+  val bidPrice: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
     * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
     */
   val clusterId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * One or more `ebs_config` blocks as defined below. Changing this forces a new resource to be created.
     */
-  val ebsConfigs: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Iops]]] = js.native
+  val ebsConfigs: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_Iops]] = js.native
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
     */
   val ebsOptimized: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
-    * Target number of instances for the instance group. Defaults to 0.
+    * target number of instances for the instance group. defaults to 0.
     */
   val instanceCount: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**

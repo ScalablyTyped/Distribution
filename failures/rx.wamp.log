@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp),TsIdentLibrarySimple(rx.wamp)),TsIdentModule(None,List(rx.wamp))) [id => rx.wamp, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rx.wamp)) [id => rx.wamp, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:226 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsAugmentedModule(rx) / TsDeclInterface(ObservableStatic))] 
 [debug] PhaseRunner.scala:84 Success [id => rx.wamp, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing rx.wamp [id => rx.wamp, phase => scala.js] 

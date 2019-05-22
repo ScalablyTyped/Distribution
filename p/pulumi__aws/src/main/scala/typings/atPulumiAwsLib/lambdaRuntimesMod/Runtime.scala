@@ -15,9 +15,11 @@ import scala.scalajs.js.annotation._
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs4DOT3
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs6DOT10
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs8DOT10
+  - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs10DOTx
   - atPulumiAwsLib.atPulumiAwsLibStrings.nodejs
   - atPulumiAwsLib.atPulumiAwsLibStrings.python2DOT7
   - atPulumiAwsLib.atPulumiAwsLibStrings.python3DOT6
+  - atPulumiAwsLib.atPulumiAwsLibStrings.provided
 */
 trait Runtime extends js.Object
 

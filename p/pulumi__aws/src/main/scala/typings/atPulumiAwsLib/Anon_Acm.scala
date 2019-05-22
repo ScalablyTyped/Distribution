@@ -77,6 +77,7 @@ trait Anon_Acm extends js.Object {
   var licensemanager: js.UndefOr[java.lang.String] = js.undefined
   var lightsail: js.UndefOr[java.lang.String] = js.undefined
   var macie: js.UndefOr[java.lang.String] = js.undefined
+  var managedblockchain: js.UndefOr[java.lang.String] = js.undefined
   var mediaconnect: js.UndefOr[java.lang.String] = js.undefined
   var mediaconvert: js.UndefOr[java.lang.String] = js.undefined
   var medialive: js.UndefOr[java.lang.String] = js.undefined
@@ -120,6 +121,7 @@ trait Anon_Acm extends js.Object {
   var wafregional: js.UndefOr[java.lang.String] = js.undefined
   var worklink: js.UndefOr[java.lang.String] = js.undefined
   var workspaces: js.UndefOr[java.lang.String] = js.undefined
+  var xray: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_Acm {
@@ -196,6 +198,7 @@ object Anon_Acm {
     licensemanager: java.lang.String = null,
     lightsail: java.lang.String = null,
     macie: java.lang.String = null,
+    managedblockchain: java.lang.String = null,
     mediaconnect: java.lang.String = null,
     mediaconvert: java.lang.String = null,
     medialive: java.lang.String = null,
@@ -238,7 +241,8 @@ object Anon_Acm {
     waf: java.lang.String = null,
     wafregional: java.lang.String = null,
     worklink: java.lang.String = null,
-    workspaces: java.lang.String = null
+    workspaces: java.lang.String = null,
+    xray: java.lang.String = null
   ): Anon_Acm = {
     val __obj = js.Dynamic.literal()
     if (acm != null) __obj.updateDynamic("acm")(acm)
@@ -312,6 +316,7 @@ object Anon_Acm {
     if (licensemanager != null) __obj.updateDynamic("licensemanager")(licensemanager)
     if (lightsail != null) __obj.updateDynamic("lightsail")(lightsail)
     if (macie != null) __obj.updateDynamic("macie")(macie)
+    if (managedblockchain != null) __obj.updateDynamic("managedblockchain")(managedblockchain)
     if (mediaconnect != null) __obj.updateDynamic("mediaconnect")(mediaconnect)
     if (mediaconvert != null) __obj.updateDynamic("mediaconvert")(mediaconvert)
     if (medialive != null) __obj.updateDynamic("medialive")(medialive)
@@ -355,6 +360,7 @@ object Anon_Acm {
     if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional)
     if (worklink != null) __obj.updateDynamic("worklink")(worklink)
     if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces)
+    if (xray != null) __obj.updateDynamic("xray")(xray)
     __obj.asInstanceOf[Anon_Acm]
   }
 }

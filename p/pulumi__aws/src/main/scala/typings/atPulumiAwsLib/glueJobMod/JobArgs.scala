@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait JobArgs extends js.Object {
   /**
-    * The number of AWS Glue data processing units (DPUs) to allocate to this Job. At least 2 DPUs need to be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory.
+    * **DEPRECATED** (Optional) The number of AWS Glue data processing units (DPUs) to allocate to this Job. At least 2 DPUs need to be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory.
     */
   val allocatedCapacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
@@ -32,6 +32,10 @@ trait JobArgs extends js.Object {
     * Execution property of the job. Defined below.
     */
   val executionProperty: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MaxConcurrentRunsInput]] = js.undefined
+  /**
+    * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
+    */
+  val maxCapacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
     * The maximum number of times to retry this job if it fails.
     */
@@ -64,6 +68,7 @@ object JobArgs {
     defaultArguments: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     executionProperty: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MaxConcurrentRunsInput] = null,
+    maxCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     maxRetries: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     securityConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -75,6 +80,7 @@ object JobArgs {
     if (defaultArguments != null) __obj.updateDynamic("defaultArguments")(defaultArguments.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (executionProperty != null) __obj.updateDynamic("executionProperty")(executionProperty.asInstanceOf[js.Any])
+    if (maxCapacity != null) __obj.updateDynamic("maxCapacity")(maxCapacity.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])

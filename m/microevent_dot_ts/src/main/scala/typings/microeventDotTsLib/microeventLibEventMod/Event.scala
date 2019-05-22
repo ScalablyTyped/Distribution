@@ -9,12 +9,11 @@ import scala.scalajs.js.annotation._
 trait Event[EventPayload]
   extends microeventDotTsLib.microeventLibEventInterfaceMod.EventInterface[EventPayload] {
   var _contexts: js.Any = js.native
+  var _createDispatcher: js.Any = js.native
+  var _getHandlerIndex: js.Any = js.native
   var _handlers: js.Any = js.native
+  var _updateHasHandlers: js.Any = js.native
   var hasHandlers: scala.Boolean = js.native
-  /* private */ def _createDispatcher(): js.Any = js.native
-  /* private */ def _getHandlerIndex[T](handler: js.Any): js.Any = js.native
-  /* private */ def _getHandlerIndex[T](handler: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def _updateHasHandlers(): js.Any = js.native
   def dispatch(payload: EventPayload): scala.Unit = js.native
   def isHandlerAttached[T](
     handler: microeventDotTsLib.microeventLibEventInterfaceMod.EventInterfaceNs.HandlerInterface[EventPayload, T]

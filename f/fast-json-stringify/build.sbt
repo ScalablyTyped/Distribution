@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-json-stringify"
-version := "1.15.1-ab43df"
+version := "1.15.2-ab43df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

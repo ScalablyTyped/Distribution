@@ -26,6 +26,10 @@ trait ActivationArgs extends js.Object {
     * The maximum number of managed instances you want to register. The default value is 1 instance.
     */
   val registrationLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+  /**
+    * A mapping of tags to assign to the object.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object ActivationArgs {
@@ -35,13 +39,15 @@ object ActivationArgs {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     expirationDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    registrationLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+    registrationLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ActivationArgs = {
     val __obj = js.Dynamic.literal(iamRole = iamRole.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (registrationLimit != null) __obj.updateDynamic("registrationLimit")(registrationLimit.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivationArgs]
   }
 }

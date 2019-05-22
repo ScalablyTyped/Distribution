@@ -19,9 +19,9 @@ object MutationOptions {
     context: js.Any = null,
     errorPolicy: ErrorPolicy = null,
     fetchPolicy: FetchPolicy = null,
-    optimisticResponse: js.Object | js.Function = null,
+    optimisticResponse: T | (js.Function1[TVariables, T]) = null,
     refetchQueries: (js.Function1[
-      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault], 
+      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[T], 
       RefetchQueryDescription
     ]) | RefetchQueryDescription = null,
     update: MutationUpdaterFn[T] = null,

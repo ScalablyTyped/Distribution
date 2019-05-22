@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FlattenSimpleInterpolation
   extends stdLib.ReadonlyArray[SimpleInterpolation]
+     with _SimpleInterpolation
 

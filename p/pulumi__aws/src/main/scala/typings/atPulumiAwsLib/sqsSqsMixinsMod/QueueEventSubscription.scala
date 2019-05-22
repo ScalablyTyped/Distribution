@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueueEventSubscription protected ()
   extends atPulumiAwsLib.lambdaMod.EventSubscription {
+  def this(name: java.lang.String, queue: atPulumiAwsLib.sqsSqsMixinsMod.sqsQueueMod.Queue, handler: QueueEventHandler) = this()
   def this(name: java.lang.String, queue: atPulumiAwsLib.sqsSqsMixinsMod.sqsQueueMod.Queue, handler: QueueEventHandler, args: QueueEventSubscriptionArgs) = this()
   def this(name: java.lang.String, queue: atPulumiAwsLib.sqsSqsMixinsMod.sqsQueueMod.Queue, handler: QueueEventHandler, args: QueueEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   /**

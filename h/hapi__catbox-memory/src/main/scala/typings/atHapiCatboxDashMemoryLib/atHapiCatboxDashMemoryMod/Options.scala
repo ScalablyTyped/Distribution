@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options extends js.Object {
+trait Options
+  extends atHapiCatboxLib.atHapiCatboxMod.ClientOptions {
   /**
     * by default, all data is cached as JSON strings, and converted to an object using JSON.parse() on retrieval.
     * By setting this option to true, Buffer data can be stored alongside the stringified data.
@@ -40,13 +41,15 @@ object Options {
     allowMixedContent: js.UndefOr[scala.Boolean] = js.undefined,
     cloneBuffersOnGet: js.UndefOr[scala.Boolean] = js.undefined,
     maxByteSize: scala.Int | scala.Double = null,
-    minCleanupIntervalMsec: scala.Int | scala.Double = null
+    minCleanupIntervalMsec: scala.Int | scala.Double = null,
+    partition: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent)
     if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet)
     if (maxByteSize != null) __obj.updateDynamic("maxByteSize")(maxByteSize.asInstanceOf[js.Any])
     if (minCleanupIntervalMsec != null) __obj.updateDynamic("minCleanupIntervalMsec")(minCleanupIntervalMsec.asInstanceOf[js.Any])
+    if (partition != null) __obj.updateDynamic("partition")(partition)
     __obj.asInstanceOf[Options]
   }
 }

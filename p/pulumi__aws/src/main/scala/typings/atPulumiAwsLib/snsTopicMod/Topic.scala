@@ -96,6 +96,10 @@ class Topic protected ()
     */
   val sqsSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
+    * Key-value mapping of resource tags
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * Creates a new subscription to events fired from this Topic to the handler provided, along
     * with options to control the behavior of the subscription.
     */

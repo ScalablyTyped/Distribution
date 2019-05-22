@@ -18,6 +18,7 @@ object keyNs extends js.Object {
       * @param packetlist The packets that form this key
       */
     def this(packetlist: openpgpLib.openpgpMod.packetNs.List) = this()
+    var primaryKey: Key = js.native
     /**
       * Applies a revocation certificate to a key
       * This adds the first signature packet in the armored text to the key,

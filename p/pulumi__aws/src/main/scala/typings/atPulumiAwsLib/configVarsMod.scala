@@ -16,7 +16,7 @@ object configVarsMod extends js.Object {
   var insecure: js.UndefOr[scala.Boolean] = js.native
   var maxRetries: js.UndefOr[scala.Double] = js.native
   var profile: js.UndefOr[java.lang.String] = js.native
-  var region: atPulumiAwsLib.regionMod.Region = js.native
+  var region: js.UndefOr[atPulumiAwsLib.regionMod.Region] = js.native
   var s3ForcePathStyle: js.UndefOr[scala.Boolean] = js.native
   var secretKey: js.UndefOr[java.lang.String] = js.native
   var sharedCredentialsFile: js.UndefOr[java.lang.String] = js.native

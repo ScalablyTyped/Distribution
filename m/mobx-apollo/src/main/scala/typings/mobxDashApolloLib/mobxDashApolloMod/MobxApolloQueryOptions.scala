@@ -21,13 +21,14 @@ object MobxApolloQueryOptions {
     query: graphqlLib.languageAstMod.DocumentNode,
     context: js.Any = null,
     errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
-    fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
+    fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryFetchPolicy = null,
     fetchResults: js.UndefOr[scala.Boolean] = js.undefined,
     metadata: js.Any = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
     onError: /* error */ apolloDashClientLib.apolloDashClientMod.ApolloError => scala.Unit = null,
     onFetch: /* result */ T => scala.Unit = null,
     pollInterval: scala.Int | scala.Double = null,
+    returnPartialData: js.UndefOr[scala.Boolean] = js.undefined,
     variables: apolloDashClientLib.coreTypesMod.OperationVariables = null
   ): MobxApolloQueryOptions[T] = {
     val __obj = js.Dynamic.literal(client = client, query = query)
@@ -40,6 +41,7 @@ object MobxApolloQueryOptions {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onFetch != null) __obj.updateDynamic("onFetch")(js.Any.fromFunction1(onFetch))
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
     if (variables != null) __obj.updateDynamic("variables")(variables)
     __obj.asInstanceOf[MobxApolloQueryOptions[T]]
   }

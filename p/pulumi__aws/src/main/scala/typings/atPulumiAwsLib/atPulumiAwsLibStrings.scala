@@ -792,6 +792,10 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
+  sealed trait nodejs10DOTx
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
   sealed trait nodejs4DOT3
     extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
@@ -846,6 +850,10 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait `private`
     extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
+  
+  @js.native
+  sealed trait provided
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
   sealed trait `public-read`
@@ -1566,6 +1574,8 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def nodejs: nodejs = "nodejs".asInstanceOf[nodejs]
   @scala.inline
+  def nodejs10DOTx: nodejs10DOTx = "nodejs10.x".asInstanceOf[nodejs10DOTx]
+  @scala.inline
   def nodejs4DOT3: nodejs4DOT3 = "nodejs4.3".asInstanceOf[nodejs4DOT3]
   @scala.inline
   def `nodejs4DOT3-edge`: `nodejs4DOT3-edge` = "nodejs4.3-edge".asInstanceOf[`nodejs4DOT3-edge`]
@@ -1593,6 +1603,8 @@ object atPulumiAwsLibStrings {
   def p3dnDOT24xlarge: p3dnDOT24xlarge = "p3dn.24xlarge".asInstanceOf[p3dnDOT24xlarge]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def provided: provided = "provided".asInstanceOf[provided]
   @scala.inline
   def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
   @scala.inline

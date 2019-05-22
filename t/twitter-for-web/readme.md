@@ -19,9 +19,11 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for Twitter for Websites
 // Project: https://dev.twitter.com/web/
 // Definitions by: Chitoku <https://github.com/chitoku-k>
+//                 Lucretiel <https://github.com/Lucretiel>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /**
- * The interface for Twitter for Websites.
+ * The interface for Twitter for Websites, before with widgets.js script has
+ * loaded. Users should use `ready` to await the script.
  */
 
 ```

@@ -57,6 +57,29 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[AssociateContactWithAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Associates a device with the specified network profile.
+    */
+  def associateDeviceWithNetworkProfile(): awsDashSdkLib.libRequestMod.Request[AssociateDeviceWithNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateDeviceWithNetworkProfile(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateDeviceWithNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateDeviceWithNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Associates a device with the specified network profile.
+    */
+  def associateDeviceWithNetworkProfile(params: AssociateDeviceWithNetworkProfileRequest): awsDashSdkLib.libRequestMod.Request[AssociateDeviceWithNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateDeviceWithNetworkProfile(
+    params: AssociateDeviceWithNetworkProfileRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateDeviceWithNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateDeviceWithNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Associates a device with a given room. This applies all the settings from the room profile to the device, and all the skills in any skill groups added to that room. This operation requires the device to be online, or else a manual sync is required. 
     */
   def associateDeviceWithRoom(): awsDashSdkLib.libRequestMod.Request[AssociateDeviceWithRoomResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -263,6 +286,29 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a network profile with the specified details.
+    */
+  def createNetworkProfile(): awsDashSdkLib.libRequestMod.Request[CreateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createNetworkProfile(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a network profile with the specified details.
+    */
+  def createNetworkProfile(params: CreateNetworkProfileRequest): awsDashSdkLib.libRequestMod.Request[CreateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createNetworkProfile(
+    params: CreateNetworkProfileRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a new room profile with the specified details.
     */
@@ -471,7 +517,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
     */
   def deleteDeviceUsageData(): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDeviceUsageData(
@@ -482,7 +528,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data and associated response data. This action can be called once every 24 hours for a specific shared device.
+    * When this action is called for a specified shared device, it allows authorized users to delete the device's entire previous history of voice input data. This action can be called once every 24 hours for a specific shared device. 
     */
   def deleteDeviceUsageData(params: DeleteDeviceUsageDataRequest): awsDashSdkLib.libRequestMod.Request[DeleteDeviceUsageDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteDeviceUsageData(
@@ -516,6 +562,29 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a network profile by the network profile ARN.
+    */
+  def deleteNetworkProfile(): awsDashSdkLib.libRequestMod.Request[DeleteNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteNetworkProfile(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a network profile by the network profile ARN.
+    */
+  def deleteNetworkProfile(params: DeleteNetworkProfileRequest): awsDashSdkLib.libRequestMod.Request[DeleteNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteNetworkProfile(
+    params: DeleteNetworkProfileRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DeleteNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DeleteNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Deletes a room profile by the profile ARN.
     */
@@ -976,6 +1045,29 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetInvitationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Gets the network profile details by the network profile ARN.
+    */
+  def getNetworkProfile(): awsDashSdkLib.libRequestMod.Request[GetNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getNetworkProfile(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Gets the network profile details by the network profile ARN.
+    */
+  def getNetworkProfile(params: GetNetworkProfileRequest): awsDashSdkLib.libRequestMod.Request[GetNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getNetworkProfile(
+    params: GetNetworkProfileRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets the details of a room profile by profile ARN.
     */
@@ -1544,6 +1636,29 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SearchDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Searches network profiles and lists the ones that meet a set of filter and sort criteria.
+    */
+  def searchNetworkProfiles(): awsDashSdkLib.libRequestMod.Request[SearchNetworkProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def searchNetworkProfiles(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ SearchNetworkProfilesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[SearchNetworkProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Searches network profiles and lists the ones that meet a set of filter and sort criteria.
+    */
+  def searchNetworkProfiles(params: SearchNetworkProfilesRequest): awsDashSdkLib.libRequestMod.Request[SearchNetworkProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def searchNetworkProfiles(
+    params: SearchNetworkProfilesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ SearchNetworkProfilesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[SearchNetworkProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Searches room profiles and lists the ones that meet a set of filter criteria.
     */
   def searchProfiles(): awsDashSdkLib.libRequestMod.Request[SearchProfilesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1682,7 +1797,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendInvitationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Resets a device and its account to the known default settings, by clearing all information and settings set by previous users.
+    * Resets a device and its account to the known default settings. This clears all information and settings set by previous users in the following ways:   Bluetooth - This unpairs all bluetooth devices paired with your echo device.   Volume - This resets the echo device's volume to the default value.   Notifications - This clears all notifications from your echo device.   Lists - This clears all to-do items from your echo device.   Settings - This internally syncs the room's profile (if the device is assigned to a room), contacts, address books, delegation access for account linking, and communications (if enabled on the room profile).  
     */
   def startDeviceSync(): awsDashSdkLib.libRequestMod.Request[StartDeviceSyncResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startDeviceSync(
@@ -1693,7 +1808,7 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[StartDeviceSyncResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Resets a device and its account to the known default settings, by clearing all information and settings set by previous users.
+    * Resets a device and its account to the known default settings. This clears all information and settings set by previous users in the following ways:   Bluetooth - This unpairs all bluetooth devices paired with your echo device.   Volume - This resets the echo device's volume to the default value.   Notifications - This clears all notifications from your echo device.   Lists - This clears all to-do items from your echo device.   Settings - This internally syncs the room's profile (if the device is assigned to a room), contacts, address books, delegation access for account linking, and communications (if enabled on the room profile).  
     */
   def startDeviceSync(params: StartDeviceSyncRequest): awsDashSdkLib.libRequestMod.Request[StartDeviceSyncResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def startDeviceSync(
@@ -1934,6 +2049,29 @@ trait AlexaForBusiness
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateGatewayGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates a network profile by the network profile ARN.
+    */
+  def updateNetworkProfile(): awsDashSdkLib.libRequestMod.Request[UpdateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateNetworkProfile(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Updates a network profile by the network profile ARN.
+    */
+  def updateNetworkProfile(params: UpdateNetworkProfileRequest): awsDashSdkLib.libRequestMod.Request[UpdateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateNetworkProfile(
+    params: UpdateNetworkProfileRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateNetworkProfileResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateNetworkProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates an existing room profile by room profile ARN.
     */

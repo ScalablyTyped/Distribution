@@ -35,6 +35,10 @@ trait Device extends js.Object {
     */
   var MacAddress: js.UndefOr[MacAddress] = js.undefined
   /**
+    * Detailed information about a device's network profile.
+    */
+  var NetworkProfileInfo: js.UndefOr[DeviceNetworkProfileInfo] = js.undefined
+  /**
     * The room ARN of a device.
     */
   var RoomArn: js.UndefOr[Arn] = js.undefined
@@ -54,6 +58,7 @@ object Device {
     DeviceStatusInfo: DeviceStatusInfo = null,
     DeviceType: DeviceType = null,
     MacAddress: MacAddress = null,
+    NetworkProfileInfo: DeviceNetworkProfileInfo = null,
     RoomArn: Arn = null,
     SoftwareVersion: SoftwareVersion = null
   ): Device = {
@@ -65,6 +70,7 @@ object Device {
     if (DeviceStatusInfo != null) __obj.updateDynamic("DeviceStatusInfo")(DeviceStatusInfo)
     if (DeviceType != null) __obj.updateDynamic("DeviceType")(DeviceType)
     if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress)
+    if (NetworkProfileInfo != null) __obj.updateDynamic("NetworkProfileInfo")(NetworkProfileInfo)
     if (RoomArn != null) __obj.updateDynamic("RoomArn")(RoomArn)
     if (SoftwareVersion != null) __obj.updateDynamic("SoftwareVersion")(SoftwareVersion)
     __obj.asInstanceOf[Device]

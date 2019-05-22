@@ -41,7 +41,7 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var logger: js.Any
   var measureTime: js.Any
   var memoryLimit: js.Any
-  var nodeArgs: js.Any
+  var nodeArgs: js.Array[java.lang.String]
   val options: stdLib.Partial[Options]
   var performance: js.Any
   var pluginCompile: js.Any
@@ -54,7 +54,7 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var resolveModuleNameModule: js.Any
   var resolveTypeReferenceDirectiveModule: js.Any
   var service: js.UndefOr[js.Any] = js.undefined
-  var serviceRpc: js.UndefOr[js.Any] = js.undefined
+  var serviceRpc: js.UndefOr[workerDashRpcLib.workerDashRpcMod.RpcProvider] = js.undefined
   var silent: js.Any
   var spawnService: js.Any
   var startAt: js.Any
@@ -109,7 +109,7 @@ object ForkTsCheckerWebpackPlugin {
     logger: js.Any,
     measureTime: js.Any,
     memoryLimit: js.Any,
-    nodeArgs: js.Any,
+    nodeArgs: js.Array[java.lang.String],
     options: stdLib.Partial[Options],
     performance: js.Any,
     pluginCompile: js.Any,
@@ -140,7 +140,7 @@ object ForkTsCheckerWebpackPlugin {
     cancellationToken: js.Any = null,
     elapsed: js.Any = null,
     service: js.Any = null,
-    serviceRpc: js.Any = null,
+    serviceRpc: workerDashRpcLib.workerDashRpcMod.RpcProvider = null,
     started: js.Any = null,
     tsconfigPath: js.Any = null,
     tslint: js.Any = null,

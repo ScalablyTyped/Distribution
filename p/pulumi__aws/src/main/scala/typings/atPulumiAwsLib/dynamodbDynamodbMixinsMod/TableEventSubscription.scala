@@ -12,6 +12,6 @@ class TableEventSubscription protected ()
   def this(name: java.lang.String, table: atPulumiAwsLib.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table, handler: TableEventHandler, args: TableEventSubscriptionArgs) = this()
   def this(name: java.lang.String, table: atPulumiAwsLib.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table, handler: TableEventHandler, args: TableEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   val eventSourceMapping: atPulumiAwsLib.lambdaMod.EventSourceMapping = js.native
-  val table: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table] = js.native
+  val table: atPulumiAwsLib.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table = js.native
 }
 

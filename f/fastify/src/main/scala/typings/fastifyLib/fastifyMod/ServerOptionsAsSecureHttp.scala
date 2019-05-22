@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fastifyLib.fastifyMod.ServerOptionsAsSecure because var conflicts: bodyLimit, ignoreTrailingSlash, logger, maxParamLength, modifyCoreObjects, onProtoPoisoning, pluginTimeout, querystringParser, trustProxy, versioning. Inlined https */ trait ServerOptionsAsSecureHttp extends ServerOptionsAsHttp {
+- fastifyLib.fastifyMod.ServerOptionsAsSecure because var conflicts: bodyLimit, disableRequestLogging, ignoreTrailingSlash, logger, maxParamLength, modifyCoreObjects, onProtoPoisoning, pluginTimeout, querystringParser, trustProxy, versioning. Inlined https */ trait ServerOptionsAsSecureHttp extends ServerOptionsAsHttp {
   var https: nodeLib.http2Mod.SecureServerOptions
 }
 
@@ -15,6 +15,7 @@ object ServerOptionsAsSecureHttp {
   def apply(
     https: nodeLib.http2Mod.SecureServerOptions,
     bodyLimit: scala.Int | scala.Double = null,
+    disableRequestLogging: js.UndefOr[scala.Boolean] = js.undefined,
     http2: fastifyLib.fastifyLibNumbers.`false` = null,
     ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
     logger: js.Any = null,
@@ -28,6 +29,7 @@ object ServerOptionsAsSecureHttp {
   ): ServerOptionsAsSecureHttp = {
     val __obj = js.Dynamic.literal(https = https)
     if (bodyLimit != null) __obj.updateDynamic("bodyLimit")(bodyLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRequestLogging)) __obj.updateDynamic("disableRequestLogging")(disableRequestLogging)
     if (http2 != null) __obj.updateDynamic("http2")(http2)
     if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash)
     if (logger != null) __obj.updateDynamic("logger")(logger)

@@ -234,7 +234,6 @@
 | [apollo-env](./a/apollo-env) | - | - |
 | [apollo-graphql](./a/apollo-graphql) | Apollo GraphQL utility library | - |
 | [apollo-link](./a/apollo-link) | Flexible, lightweight transport layer for GraphQL | - |
-| [apollo-link-dedup](./a/apollo-link-dedup) | Deduplicates queries that are currently on the wir | - |
 | [apollo-link-error](./a/apollo-link-error) | Error Apollo Link for GraphQL Network Stack | - |
 | [apollo-link-http-common](./a/apollo-link-http-common) | Http utilities for Apollo Link shared across all l | apollo, http, network |
 | [apollo-link-ws](./a/apollo-link-ws) | WebSocket transport layer for GraphQL | - |

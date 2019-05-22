@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "file-saver"
-version := "2.0-dt-20181029Z-ce4d94"
+version := "2.0-dt-20190521Z-977b9d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -35,6 +35,14 @@ trait DeviceData extends js.Object {
     */
   var MacAddress: js.UndefOr[MacAddress] = js.undefined
   /**
+    * The ARN of the network profile associated with a device.
+    */
+  var NetworkProfileArn: js.UndefOr[Arn] = js.undefined
+  /**
+    * The name of the network profile associated with a device.
+    */
+  var NetworkProfileName: js.UndefOr[NetworkProfileName] = js.undefined
+  /**
     * The room ARN associated with a device.
     */
   var RoomArn: js.UndefOr[Arn] = js.undefined
@@ -58,6 +66,8 @@ object DeviceData {
     DeviceStatusInfo: DeviceStatusInfo = null,
     DeviceType: DeviceType = null,
     MacAddress: MacAddress = null,
+    NetworkProfileArn: Arn = null,
+    NetworkProfileName: NetworkProfileName = null,
     RoomArn: Arn = null,
     RoomName: RoomName = null,
     SoftwareVersion: SoftwareVersion = null
@@ -70,6 +80,8 @@ object DeviceData {
     if (DeviceStatusInfo != null) __obj.updateDynamic("DeviceStatusInfo")(DeviceStatusInfo)
     if (DeviceType != null) __obj.updateDynamic("DeviceType")(DeviceType)
     if (MacAddress != null) __obj.updateDynamic("MacAddress")(MacAddress)
+    if (NetworkProfileArn != null) __obj.updateDynamic("NetworkProfileArn")(NetworkProfileArn)
+    if (NetworkProfileName != null) __obj.updateDynamic("NetworkProfileName")(NetworkProfileName)
     if (RoomArn != null) __obj.updateDynamic("RoomArn")(RoomArn)
     if (RoomName != null) __obj.updateDynamic("RoomName")(RoomName)
     if (SoftwareVersion != null) __obj.updateDynamic("SoftwareVersion")(SoftwareVersion)

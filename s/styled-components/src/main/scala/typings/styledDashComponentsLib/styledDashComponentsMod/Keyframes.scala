@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Keyframes extends js.Object {
+trait Keyframes extends _InterpolationValue {
   def getName(): java.lang.String
 }
 

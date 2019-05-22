@@ -43,8 +43,8 @@ trait AbstractSelectProps extends js.Object {
   var showAction: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var showArrow: js.UndefOr[scala.Boolean] = js.undefined
   var showSearch: js.UndefOr[scala.Boolean] = js.undefined
-  var size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any
+  var size: js.UndefOr[
+    antdLib.antdLibStrings.default | antdLib.antdLibStrings.large | antdLib.antdLibStrings.small
   ] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
@@ -83,7 +83,7 @@ object AbstractSelectProps {
     showAction: java.lang.String | js.Array[java.lang.String] = null,
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any = null,
+    size: antdLib.antdLibStrings.default | antdLib.antdLibStrings.large | antdLib.antdLibStrings.small = null,
     style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null
@@ -114,7 +114,7 @@ object AbstractSelectProps {
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)

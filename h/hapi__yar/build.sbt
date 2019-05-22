@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hapi__yar"
-version := "9.2-dt-20190425Z-776065"
+version := "9.2-dt-20190425Z-25fa7a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190404Z-9c1cb7",
-  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190520Z-75c548",
-  "org.scalablytyped" %%% "hapi__hapi" % "18.2-dt-20190426Z-ae211a",
+  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-c626c2",
+  "org.scalablytyped" %%% "hapi__hapi" % "18.2-dt-20190426Z-672158",
   "org.scalablytyped" %%% "hapi__iron" % "5.1-dt-20190404Z-3bad2f",
   "org.scalablytyped" %%% "hapi__joi" % "15.0-dt-20190425Z-fb345a",
   "org.scalablytyped" %%% "hapi__mimos" % "4.1-dt-20190404Z-e90234",

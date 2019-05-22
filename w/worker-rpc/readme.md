@@ -1,7 +1,7 @@
 
 # Scala.js typings for worker-rpc
 
-Typings are for version 0.1.0
+Typings are for version 0.1.1
 
 ## Library description:
 A simple RPC layer for communicating with web workers and over other transports

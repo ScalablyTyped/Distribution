@@ -51,6 +51,7 @@ class PatchBaseline protected ()
     * A list of rejected patches.
     */
   val rejectedPatches: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

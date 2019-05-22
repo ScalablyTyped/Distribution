@@ -97,7 +97,7 @@ object TreeSelectProps {
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
     showCheckedStrategy: antdLib.antdLibStrings.SHOW_ALL | antdLib.antdLibStrings.SHOW_PARENT | antdLib.antdLibStrings.SHOW_CHILD = null,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any = null,
+    size: antdLib.antdLibStrings.default | antdLib.antdLibStrings.large | antdLib.antdLibStrings.small = null,
     style: reactLib.reactMod.CSSProperties = null,
     suffixIcon: reactLib.reactMod.ReactNode = null,
     tabIndex: scala.Int | scala.Double = null,
@@ -156,7 +156,7 @@ object TreeSelectProps {
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)
     if (showCheckedStrategy != null) __obj.updateDynamic("showCheckedStrategy")(showCheckedStrategy.asInstanceOf[js.Any])
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

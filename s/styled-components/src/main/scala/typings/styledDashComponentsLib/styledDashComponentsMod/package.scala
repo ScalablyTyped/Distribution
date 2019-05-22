@@ -37,20 +37,30 @@ package object styledDashComponentsMod {
     - FlattenInterpolation[P]
     - InterpolationFunction[P]
   */
-  type Interpolation[P] = _Interpolation[P] | InterpolationValue
-  type InterpolationValue = java.lang.String | scala.Double | FalseyValue | Keyframes | StyledComponentInterpolation | CSSObject
+  type Interpolation[P] = _Interpolation[P] | java.lang.String | scala.Double | FalseyValue | CSSObject
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - FalseyValue
+    - Keyframes
+    - StyledComponentInterpolation
+    - CSSObject
+  */
+  type InterpolationValue = _InterpolationValue | java.lang.String | scala.Double | FalseyValue | CSSObject
   // extracts React defaultProps
   type ReactDefaultProps[C] = js.Any
   type ReactDefaultizedProps[C, P] = P | (Defaultize[P, js.Any])
-  type SimpleInterpolation = InterpolationValue | FlattenSimpleInterpolation
+  /* Rewritten from type alias, can be one of: 
+    - InterpolationValue
+    - FlattenSimpleInterpolation
+  */
+  type SimpleInterpolation = _SimpleInterpolation | java.lang.String | scala.Double | FalseyValue | CSSObject
   type StyledComponent[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (// the "string" allows this to be used as an object key
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
   java.lang.String) with (StyledComponentBase[C, T, O, A])
   type StyledComponentInnerAttrs[C /* <: AnyStyledComponent */] = js.Any
   type StyledComponentInnerComponent[C /* <: reactLib.reactMod.ComponentType[_] */] = C
   type StyledComponentInnerOtherProps[C /* <: AnyStyledComponent */] = js.Any
-  // remove the call signature from StyledComponent so Interpolation can still infer InterpolationFunction
-  type StyledComponentInterpolation = (stdLib.Pick[StyledComponentBase[js.Any, js.Any, js.Any, js.Any], java.lang.String]) | (stdLib.Pick[StyledComponentBase[js.Any, js.Any, js.Any, scala.Nothing], java.lang.String])
   type StyledComponentProps[// The Component from whose props are derived
   C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, // The Theme from the current context
   T /* <: js.Object */, // The other props added by the template
@@ -62,14 +72,10 @@ package object styledDashComponentsMod {
   type StyledComponentPropsWithAs[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_As[C]
   type StyledComponentPropsWithRef[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */] = reactLib.reactMod.ComponentPropsWithRef[C] | reactLib.reactMod.ComponentPropsWithRef[StyledComponentInnerComponent[C]]
   type StyledFunction[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */] = ThemedStyledFunction[C, js.Any, js.Object, scala.Nothing]
-  type StyledInterface = ThemedStyledInterface[DefaultTheme]
   type StyledProps[P] = ThemedStyledProps[P, AnyIfEmpty[DefaultTheme]]
   type ThemeProviderComponent[T /* <: js.Object */, U /* <: js.Object */] = BaseThemeProviderComponent[AnyIfEmpty[T], AnyIfEmpty[U]]
   type ThemedCssFunction[T /* <: js.Object */] = BaseThemedCssFunction[AnyIfEmpty[T]]
   type ThemedGlobalStyledClassProps[P, T] = (WithOptionalTheme[P, T]) with styledDashComponentsLib.Anon_SuppressMultiMountWarning
-  type ThemedStyledComponentFactories[T /* <: js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ TTag in 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' ]: styled-components.styled-components.ThemedStyledFunction<TTag, T, {}, never>}
-    */ styledDashComponentsLib.styledDashComponentsLibStrings.ThemedStyledComponentFactories with js.Any
   type ThemedStyledInterface[T /* <: js.Object */] = ThemedBaseStyledInterface[AnyIfEmpty[T]]
   type ThemedStyledProps[P, T] = P with ThemeProps[T]
   // Because of React typing quirks, when getting props from a React.ComponentClass,

@@ -47,12 +47,6 @@ trait QueryInterface extends js.Object {
     */
   var hitsPerPage: js.UndefOr[scala.Double] = js.undefined
   /**
-    * If specified, restrict the search results to a single language. You can pass two letters country codes (ISO 639-1).
-    * Warning: language parameter is case sensitive and should be lowercase otherwise it will fallback to default language.
-    * https://community.algolia.com/places/api-clients.html#api-options-language
-    */
-  var language: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * Query used to perform the search.
     */
   var query: js.UndefOr[java.lang.String] = js.undefined
@@ -74,7 +68,6 @@ object QueryInterface {
     countries: java.lang.String = null,
     getRankingInfo: js.UndefOr[scala.Boolean] = js.undefined,
     hitsPerPage: scala.Int | scala.Double = null,
-    language: java.lang.String = null,
     query: java.lang.String = null,
     `type`: algoliasearchLib.algoliasearchLibStrings.city | algoliasearchLib.algoliasearchLibStrings.country | algoliasearchLib.algoliasearchLibStrings.address | algoliasearchLib.algoliasearchLibStrings.busStop | algoliasearchLib.algoliasearchLibStrings.trainStation | algoliasearchLib.algoliasearchLibStrings.townhall | algoliasearchLib.algoliasearchLibStrings.airport = null
   ): QueryInterface = {
@@ -85,7 +78,6 @@ object QueryInterface {
     if (countries != null) __obj.updateDynamic("countries")(countries)
     if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo)
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
     if (query != null) __obj.updateDynamic("query")(query)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInterface]

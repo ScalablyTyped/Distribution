@@ -21,6 +21,10 @@ class Application protected ()
   def this(name: java.lang.String, args: ApplicationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   val appversionLifecycle: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteSourceFromS3]] = js.native
   /**
+    * The ARN assigned by AWS for this Elastic Beanstalk Application.
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * Short description of the application
     */
   val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
@@ -28,6 +32,10 @@ class Application protected ()
     * The name of the application, must be unique within your account
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * Key-value mapping of tags for the Elastic Beanstalk Application.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

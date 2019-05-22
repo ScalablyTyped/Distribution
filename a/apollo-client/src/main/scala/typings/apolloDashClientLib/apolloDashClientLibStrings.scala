@@ -12,7 +12,7 @@ object apolloDashClientLibStrings {
   
   @js.native
   sealed trait `cache-and-network`
-    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryFetchPolicy
   
   @js.native
   sealed trait `cache-first`

@@ -61,6 +61,10 @@ trait AnalyticsApplicationState extends js.Object {
     */
   val status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * Key-value mapping of tags for the Kinesis Analytics Application.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * The Version of the application.
     */
   val version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -84,6 +88,7 @@ object AnalyticsApplicationState {
     ] = null,
     referenceDataSources: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdS3Schema] = null,
     status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     version: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): AnalyticsApplicationState = {
     val __obj = js.Dynamic.literal()
@@ -98,6 +103,7 @@ object AnalyticsApplicationState {
     if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
     if (referenceDataSources != null) __obj.updateDynamic("referenceDataSources")(referenceDataSources.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationState]
   }

@@ -54,6 +54,8 @@ object cloudwatchNs extends js.Object {
   @js.native
   class EventRuleEventSubscription protected ()
     extends atPulumiAwsLib.cloudwatchMod.EventRuleEventSubscription {
+    def this(name: java.lang.String, eventRuleOrSchedule: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule, handler: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventHandler) = this()
+    def this(name: java.lang.String, eventRuleOrSchedule: java.lang.String, handler: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventHandler) = this()
     def this(name: java.lang.String, eventRuleOrSchedule: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule, handler: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventHandler, args: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventSubscriptionArgs) = this()
     def this(name: java.lang.String, eventRuleOrSchedule: java.lang.String, handler: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventHandler, args: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventSubscriptionArgs) = this()
     def this(name: java.lang.String, eventRuleOrSchedule: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule, handler: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventHandler, args: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
@@ -120,6 +122,7 @@ object cloudwatchNs extends js.Object {
   @js.native
   class LogGroupEventSubscription protected ()
     extends atPulumiAwsLib.cloudwatchMod.LogGroupEventSubscription {
+    def this(name: java.lang.String, logGroup: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup, handler: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.LogGroupEventHandler) = this()
     def this(name: java.lang.String, logGroup: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup, handler: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.LogGroupEventHandler, args: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.LogGroupEventSubscriptionArgs) = this()
     def this(name: java.lang.String, logGroup: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup, handler: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.LogGroupEventHandler, args: atPulumiAwsLib.cloudwatchLogGroupMixinsMod.LogGroupEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   }

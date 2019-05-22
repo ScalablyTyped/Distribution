@@ -51,10 +51,10 @@ trait CatboxRedisOptions
 object CatboxRedisOptions {
   @scala.inline
   def apply(
-    partition: java.lang.String,
     client: ioredisLib.ioredisMod.Redis = null,
     database: java.lang.String = null,
     host: java.lang.String = null,
+    partition: java.lang.String = null,
     password: java.lang.String = null,
     port: scala.Int | scala.Double = null,
     sentinelName: java.lang.String = null,
@@ -62,10 +62,11 @@ object CatboxRedisOptions {
     socket: java.lang.String = null,
     url: java.lang.String = null
   ): CatboxRedisOptions = {
-    val __obj = js.Dynamic.literal(partition = partition)
+    val __obj = js.Dynamic.literal()
     if (client != null) __obj.updateDynamic("client")(client)
     if (database != null) __obj.updateDynamic("database")(database)
     if (host != null) __obj.updateDynamic("host")(host)
+    if (partition != null) __obj.updateDynamic("partition")(partition)
     if (password != null) __obj.updateDynamic("password")(password)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (sentinelName != null) __obj.updateDynamic("sentinelName")(sentinelName)

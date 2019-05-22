@@ -136,6 +136,12 @@ object antdLibStrings {
   sealed trait active extends js.Object
   
   @js.native
+  sealed trait additions extends js.Object
+  
+  @js.native
+  sealed trait `additions text` extends js.Object
+  
+  @js.native
   sealed trait after extends js.Object
   
   @js.native
@@ -169,6 +175,12 @@ object antdLibStrings {
   sealed trait ascend
     extends antdLib.libTableInterfaceMod.SortOrder
        with antdLib.esTableInterfaceMod.SortOrder
+  
+  @js.native
+  sealed trait ascending extends js.Object
+  
+  @js.native
+  sealed trait assertive extends js.Object
   
   @js.native
   sealed trait auto extends js.Object
@@ -219,7 +231,9 @@ object antdLibStrings {
   sealed trait `block-start` extends js.Object
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait body
+    extends antdLib.libTransferRenderListBodyMod.OmitProp
+       with antdLib.esTransferRenderListBodyMod.OmitProp
   
   @js.native
   sealed trait bold extends js.Object
@@ -243,14 +257,20 @@ object antdLibStrings {
        with antdLib.libTabsMod.TabsPosition
        with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
+       with antdLib.esDrawerMod.placementType
+       with antdLib.libDrawerMod.placementType
   
   @js.native
-  sealed trait bottomCenter extends js.Object
+  sealed trait bottomCenter
+    extends antdLib.libDropdownDropdownMod.Placement
+       with antdLib.esDropdownDropdownMod.Placement
   
   @js.native
   sealed trait bottomLeft
     extends antdLib.libNotificationMod.NotificationPlacement
        with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.libDropdownDropdownMod.Placement
+       with antdLib.esDropdownDropdownMod.Placement
        with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
@@ -258,6 +278,8 @@ object antdLibStrings {
   sealed trait bottomRight
     extends antdLib.libNotificationMod.NotificationPlacement
        with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.libDropdownDropdownMod.Placement
+       with antdLib.esDropdownDropdownMod.Placement
        with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
@@ -274,7 +296,9 @@ object antdLibStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends antdLib.esButtonButtonMod.ButtonHTMLType
+       with antdLib.libButtonButtonMod.ButtonHTMLType
   
   @js.native
   sealed trait `button-arrow-down` extends js.Object
@@ -335,7 +359,9 @@ object antdLibStrings {
   sealed trait `checkbox-label` extends js.Object
   
   @js.native
-  sealed trait checkedKeys extends js.Object
+  sealed trait checkedKeys
+    extends antdLib.libTransferRenderListBodyMod.OmitProp
+       with antdLib.esTransferRenderListBodyMod.OmitProp
   
   @js.native
   sealed trait checkmenuitem extends js.Object
@@ -344,10 +370,16 @@ object antdLibStrings {
   sealed trait children extends js.Object
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends antdLib.esButtonButtonMod.ButtonShape
+       with antdLib.libButtonButtonMod.ButtonShape
+       with antdLib.esProgressProgressMod.ProgressType
+       with antdLib.libProgressProgressMod.ProgressType
   
   @js.native
-  sealed trait `circle-outline` extends js.Object
+  sealed trait `circle-outline`
+    extends antdLib.esButtonButtonMod.ButtonShape
+       with antdLib.libButtonButtonMod.ButtonShape
   
   @js.native
   sealed trait clear extends js.Object
@@ -407,6 +439,9 @@ object antdLibStrings {
        with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
+  sealed trait copy extends js.Object
+  
+  @js.native
   sealed trait countdown
     extends antdLib.esStatisticUtilsMod._Formatter
        with antdLib.libStatisticUtilsMod._Formatter
@@ -424,6 +459,8 @@ object antdLibStrings {
   sealed trait danger
     extends antdLib.esTypographyBaseMod.BaseType
        with antdLib.libTypographyBaseMod.BaseType
+       with antdLib.esButtonButtonMod.ButtonType
+       with antdLib.libButtonButtonMod.ButtonType
   
   @js.native
   sealed trait dark
@@ -436,21 +473,41 @@ object antdLibStrings {
   sealed trait darken extends js.Object
   
   @js.native
-  sealed trait dashboard extends js.Object
+  sealed trait dashboard
+    extends antdLib.esProgressProgressMod.ProgressType
+       with antdLib.libProgressProgressMod.ProgressType
   
   @js.native
   sealed trait dashed
-    extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+    extends antdLib.esButtonButtonMod.ButtonType
+       with antdLib.libButtonButtonMod.ButtonType
+       with antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
        with antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
+  sealed trait date
+    extends antdLib.libDateDashPickerInterfaceMod.DatePickerMode
+       with antdLib.esDateDashPickerInterfaceMod.DatePickerMode
+  
+  @js.native
+  sealed trait decade
+    extends antdLib.libDateDashPickerInterfaceMod.DatePickerMode
+       with antdLib.esDateDashPickerInterfaceMod.DatePickerMode
+  
+  @js.native
   sealed trait default
-    extends antdLib.esCardMod.CardSize
+    extends antdLib.esButtonButtonMod.ButtonSize
+       with antdLib.libButtonButtonMod.ButtonSize
+       with antdLib.esButtonButtonMod.ButtonType
+       with antdLib.libButtonButtonMod.ButtonType
+       with antdLib.esCardMod.CardSize
        with antdLib.libCardMod.CardSize
        with antdLib.esListMod.ListSize
        with antdLib.libListMod.ListSize
        with antdLib.esProgressProgressMod.ProgressSize
        with antdLib.libProgressProgressMod.ProgressSize
+       with antdLib.esSpinMod.SpinSize
+       with antdLib.libSpinMod.SpinSize
        with antdLib.libTableInterfaceMod.TableSize
        with antdLib.esTableInterfaceMod.TableSize
   
@@ -466,6 +523,12 @@ object antdLibStrings {
   sealed trait descend
     extends antdLib.libTableInterfaceMod.SortOrder
        with antdLib.esTableInterfaceMod.SortOrder
+  
+  @js.native
+  sealed trait descending extends js.Object
+  
+  @js.native
+  sealed trait dialog extends js.Object
   
   @js.native
   sealed trait difference extends js.Object
@@ -539,6 +602,9 @@ object antdLibStrings {
   sealed trait exclusion extends js.Object
   
   @js.native
+  sealed trait execute extends js.Object
+  
+  @js.native
   sealed trait fade
     extends antdLib.esCarouselMod.CarouselEffect
        with antdLib.libCarouselMod.CarouselEffect
@@ -588,8 +654,16 @@ object antdLibStrings {
   
   @js.native
   sealed trait ghost
-    extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+    extends antdLib.esButtonButtonMod.ButtonType
+       with antdLib.libButtonButtonMod.ButtonType
+       with antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
        with antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
+  
+  @js.native
+  sealed trait grammar extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
   
   @js.native
   sealed trait grippers extends js.Object
@@ -606,16 +680,24 @@ object antdLibStrings {
        with antdLib.libListMod.ColumnType
   
   @js.native
-  sealed trait handleClear extends js.Object
+  sealed trait handleClear
+    extends antdLib.libTransferRenderListBodyMod.OmitProp
+       with antdLib.esTransferRenderListBodyMod.OmitProp
   
   @js.native
-  sealed trait handleFilter extends js.Object
+  sealed trait handleFilter
+    extends antdLib.libTransferRenderListBodyMod.OmitProp
+       with antdLib.esTransferRenderListBodyMod.OmitProp
   
   @js.native
-  sealed trait handleSelect extends js.Object
+  sealed trait handleSelect
+    extends antdLib.libTransferRenderListBodyMod.OmitProp
+       with antdLib.esTransferRenderListBodyMod.OmitProp
   
   @js.native
-  sealed trait handleSelectAll extends js.Object
+  sealed trait handleSelectAll
+    extends antdLib.libTransferRenderListBodyMod.OmitProp
+       with antdLib.esTransferRenderListBodyMod.OmitProp
   
   @js.native
   sealed trait hanging extends js.Object
@@ -634,7 +716,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait horizontal
-    extends antdLib.esListMod.ListItemLayout
+    extends antdLib.esFormFormMod.FormLayout
+       with antdLib.libFormFormMod.FormLayout
+       with antdLib.esListMod.ListItemLayout
        with antdLib.libListMod.ListItemLayout
        with antdLib.libMenuMod.MenuMode
        with antdLib.esMenuMod.MenuMode
@@ -688,7 +772,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait `inline`
-    extends antdLib.libMenuMod.MenuMode
+    extends antdLib.esFormFormMod.FormLayout
+       with antdLib.libFormFormMod.FormLayout
+       with antdLib.libMenuMod.MenuMode
        with antdLib.esMenuMod.MenuMode
   
   @js.native
@@ -738,8 +824,12 @@ object antdLibStrings {
   
   @js.native
   sealed trait large
-    extends antdLib.esListMod.ListSize
+    extends antdLib.esButtonButtonMod.ButtonSize
+       with antdLib.libButtonButtonMod.ButtonSize
+       with antdLib.esListMod.ListSize
        with antdLib.libListMod.ListSize
+       with antdLib.esSpinMod.SpinSize
+       with antdLib.libSpinMod.SpinSize
   
   @js.native
   sealed trait left
@@ -755,6 +845,8 @@ object antdLibStrings {
        with antdLib.libTooltipMod.TooltipPlacement
        with antdLib.esTransferMod.TransferDirection
        with antdLib.libTransferMod.TransferDirection
+       with antdLib.esDrawerMod.placementType
+       with antdLib.libDrawerMod.placementType
   
   @js.native
   sealed trait leftBottom
@@ -788,14 +880,21 @@ object antdLibStrings {
   
   @js.native
   sealed trait line
-    extends antdLib.esTabsMod.TabsType
+    extends antdLib.esProgressProgressMod.ProgressType
+       with antdLib.libProgressProgressMod.ProgressType
+       with antdLib.esTabsMod.TabsType
        with antdLib.libTabsMod.TabsType
   
   @js.native
   sealed trait linearRGB extends js.Object
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends antdLib.esButtonButtonMod.ButtonType
+       with antdLib.libButtonButtonMod.ButtonType
+  
+  @js.native
+  sealed trait list extends js.Object
   
   @js.native
   sealed trait listbox extends js.Object
@@ -810,6 +909,9 @@ object antdLibStrings {
   sealed trait loading
     extends antdLib.esMessageMod.NoticeType
        with antdLib.libMessageMod.NoticeType
+  
+  @js.native
+  sealed trait location extends js.Object
   
   @js.native
   sealed trait loose extends js.Object
@@ -977,6 +1079,11 @@ object antdLibStrings {
   sealed trait month
     extends antdLib.libCalendarMod.CalendarMode
        with antdLib.esCalendarMod.CalendarMode
+       with antdLib.libDateDashPickerInterfaceMod.DatePickerMode
+       with antdLib.esDateDashPickerInterfaceMod.DatePickerMode
+  
+  @js.native
+  sealed trait move extends js.Object
   
   @js.native
   sealed trait multiple extends js.Object
@@ -1020,7 +1127,13 @@ object antdLibStrings {
        with antdLib.libStatisticUtilsMod._Formatter
   
   @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
   sealed trait ok extends js.Object
+  
+  @js.native
+  sealed trait on extends js.Object
   
   @js.native
   sealed trait onChange
@@ -1055,6 +1168,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait optimizeSpeed extends js.Object
+  
+  @js.native
+  sealed trait other extends js.Object
   
   @js.native
   sealed trait outline
@@ -1110,6 +1226,12 @@ object antdLibStrings {
   sealed trait plaintext extends js.Object
   
   @js.native
+  sealed trait polite extends js.Object
+  
+  @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
   sealed trait pre extends js.Object
   
   @js.native
@@ -1126,7 +1248,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait primary
-    extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
+    extends antdLib.esButtonButtonMod.ButtonType
+       with antdLib.libButtonButtonMod.ButtonType
+       with antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
        with antdLib.esDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
@@ -1201,6 +1325,9 @@ object antdLibStrings {
   sealed trait relative extends js.Object
   
   @js.native
+  sealed trait removals extends js.Object
+  
+  @js.native
   sealed trait removed
     extends antdLib.libUploadInterfaceMod.UploadFileStatus
        with antdLib.esUploadInterfaceMod.UploadFileStatus
@@ -1209,7 +1336,9 @@ object antdLibStrings {
   sealed trait repeat extends js.Object
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait reset
+    extends antdLib.esButtonButtonMod.ButtonHTMLType
+       with antdLib.libButtonButtonMod.ButtonHTMLType
   
   @js.native
   sealed trait `reset-size` extends js.Object
@@ -1248,6 +1377,8 @@ object antdLibStrings {
        with antdLib.libTooltipMod.TooltipPlacement
        with antdLib.esTransferMod.TransferDirection
        with antdLib.libTransferMod.TransferDirection
+       with antdLib.esDrawerMod.placementType
+       with antdLib.libDrawerMod.placementType
   
   @js.native
   sealed trait rightBottom
@@ -1263,7 +1394,9 @@ object antdLibStrings {
   sealed trait rl extends js.Object
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends antdLib.esButtonButtonMod.ButtonShape
+       with antdLib.libButtonButtonMod.ButtonShape
   
   @js.native
   sealed trait row extends js.Object
@@ -1438,12 +1571,16 @@ object antdLibStrings {
   
   @js.native
   sealed trait small
-    extends antdLib.esCardMod.CardSize
+    extends antdLib.esButtonButtonMod.ButtonSize
+       with antdLib.libButtonButtonMod.ButtonSize
+       with antdLib.esCardMod.CardSize
        with antdLib.libCardMod.CardSize
        with antdLib.esListMod.ListSize
        with antdLib.libListMod.ListSize
        with antdLib.esProgressProgressMod.ProgressSize
        with antdLib.libProgressProgressMod.ProgressSize
+       with antdLib.esSpinMod.SpinSize
+       with antdLib.libSpinMod.SpinSize
        with antdLib.libTableInterfaceMod.TableSize
        with antdLib.esTableInterfaceMod.TableSize
   
@@ -1472,6 +1609,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait `space-between` extends js.Object
+  
+  @js.native
+  sealed trait spelling extends js.Object
   
   @js.native
   sealed trait spinner extends js.Object
@@ -1507,6 +1647,9 @@ object antdLibStrings {
   sealed trait statusbarpanel extends js.Object
   
   @js.native
+  sealed trait step extends js.Object
+  
+  @js.native
   sealed trait sticky extends js.Object
   
   @js.native
@@ -1522,13 +1665,12 @@ object antdLibStrings {
   sealed trait stroke extends js.Object
   
   @js.native
-  sealed trait strong extends js.Object
-  
-  @js.native
   sealed trait sub extends js.Object
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends antdLib.esButtonButtonMod.ButtonHTMLType
+       with antdLib.libButtonButtonMod.ButtonHTMLType
   
   @js.native
   sealed trait success
@@ -1590,6 +1732,11 @@ object antdLibStrings {
   sealed trait thin extends js.Object
   
   @js.native
+  sealed trait time
+    extends antdLib.libDateDashPickerInterfaceMod.DatePickerMode
+       with antdLib.esDateDashPickerInterfaceMod.DatePickerMode
+  
+  @js.native
   sealed trait `titling-caps` extends js.Object
   
   @js.native
@@ -1620,14 +1767,20 @@ object antdLibStrings {
        with antdLib.libTabsMod.TabsPosition
        with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
+       with antdLib.esDrawerMod.placementType
+       with antdLib.libDrawerMod.placementType
   
   @js.native
-  sealed trait topCenter extends js.Object
+  sealed trait topCenter
+    extends antdLib.libDropdownDropdownMod.Placement
+       with antdLib.esDropdownDropdownMod.Placement
   
   @js.native
   sealed trait topLeft
     extends antdLib.libNotificationMod.NotificationPlacement
        with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.libDropdownDropdownMod.Placement
+       with antdLib.esDropdownDropdownMod.Placement
        with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
@@ -1635,11 +1788,16 @@ object antdLibStrings {
   sealed trait topRight
     extends antdLib.libNotificationMod.NotificationPlacement
        with antdLib.esNotificationMod.NotificationPlacement
+       with antdLib.libDropdownDropdownMod.Placement
+       with antdLib.esDropdownDropdownMod.Placement
        with antdLib.esTooltipMod.TooltipPlacement
        with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait touch extends js.Object
+  
+  @js.native
+  sealed trait tree extends js.Object
   
   @js.native
   sealed trait treeheader extends js.Object
@@ -1674,9 +1832,6 @@ object antdLibStrings {
        with antdLib.esIconMod.ThemeType
   
   @js.native
-  sealed trait `type` extends js.Object
-  
-  @js.native
   sealed trait under extends js.Object
   
   @js.native
@@ -1707,7 +1862,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait vertical
-    extends antdLib.esListMod.ListItemLayout
+    extends antdLib.esFormFormMod.FormLayout
+       with antdLib.libFormFormMod.FormLayout
+       with antdLib.esListMod.ListItemLayout
        with antdLib.libListMod.ListItemLayout
        with antdLib.libMenuMod.MenuMode
        with antdLib.esMenuMod.MenuMode
@@ -1795,6 +1952,8 @@ object antdLibStrings {
   sealed trait year
     extends antdLib.libCalendarMod.CalendarMode
        with antdLib.esCalendarMod.CalendarMode
+       with antdLib.libDateDashPickerInterfaceMod.DatePickerMode
+       with antdLib.esDateDashPickerInterfaceMod.DatePickerMode
   
   @js.native
   sealed trait zoom extends js.Object
@@ -1886,6 +2045,10 @@ object antdLibStrings {
   @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
+  def additions: additions = "additions".asInstanceOf[additions]
+  @scala.inline
+  def `additions text`: `additions text` = "additions text".asInstanceOf[`additions text`]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
@@ -1907,6 +2070,10 @@ object antdLibStrings {
   def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
   @scala.inline
   def ascend: ascend = "ascend".asInstanceOf[ascend]
+  @scala.inline
+  def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
+  def assertive: assertive = "assertive".asInstanceOf[assertive]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
@@ -2042,6 +2209,8 @@ object antdLibStrings {
   @scala.inline
   def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
   @scala.inline
+  def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def countdown: countdown = "countdown".asInstanceOf[countdown]
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
@@ -2060,6 +2229,10 @@ object antdLibStrings {
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   @scala.inline
+  def date: date = "date".asInstanceOf[date]
+  @scala.inline
+  def decade: decade = "decade".asInstanceOf[decade]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def `default-button`: `default-button` = "default-button".asInstanceOf[`default-button`]
@@ -2067,6 +2240,10 @@ object antdLibStrings {
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   @scala.inline
   def descend: descend = "descend".asInstanceOf[descend]
+  @scala.inline
+  def descending: descending = "descending".asInstanceOf[descending]
+  @scala.inline
+  def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
   def difference: difference = "difference".asInstanceOf[difference]
   @scala.inline
@@ -2106,6 +2283,8 @@ object antdLibStrings {
   @scala.inline
   def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
   @scala.inline
+  def execute: execute = "execute".asInstanceOf[execute]
+  @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
@@ -2135,6 +2314,10 @@ object antdLibStrings {
   def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
   @scala.inline
   def ghost: ghost = "ghost".asInstanceOf[ghost]
+  @scala.inline
+  def grammar: grammar = "grammar".asInstanceOf[grammar]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
   def grippers: grippers = "grippers".asInstanceOf[grippers]
   @scala.inline
@@ -2244,6 +2427,8 @@ object antdLibStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
+  def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
   @scala.inline
   def listitem: listitem = "listitem".asInstanceOf[listitem]
@@ -2251,6 +2436,8 @@ object antdLibStrings {
   def load: load = "load".asInstanceOf[load]
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
+  def location: location = "location".asInstanceOf[location]
   @scala.inline
   def loose: loose = "loose".asInstanceOf[loose]
   @scala.inline
@@ -2358,6 +2545,8 @@ object antdLibStrings {
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
+  def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
   def multiply: multiply = "multiply".asInstanceOf[multiply]
@@ -2384,7 +2573,11 @@ object antdLibStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
+  @scala.inline
+  def on: on = "on".asInstanceOf[on]
   @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   @scala.inline
@@ -2401,6 +2594,8 @@ object antdLibStrings {
   def optimizeQuality: optimizeQuality = "optimizeQuality".asInstanceOf[optimizeQuality]
   @scala.inline
   def optimizeSpeed: optimizeSpeed = "optimizeSpeed".asInstanceOf[optimizeSpeed]
+  @scala.inline
+  def other: other = "other".asInstanceOf[other]
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   @scala.inline
@@ -2431,6 +2626,10 @@ object antdLibStrings {
   def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
   @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  @scala.inline
+  def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
+  def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
@@ -2489,6 +2688,8 @@ object antdLibStrings {
   def region: region = "region".asInstanceOf[region]
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
+  @scala.inline
+  def removals: removals = "removals".asInstanceOf[removals]
   @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
   @scala.inline
@@ -2644,6 +2845,8 @@ object antdLibStrings {
   @scala.inline
   def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   @scala.inline
+  def spelling: spelling = "spelling".asInstanceOf[spelling]
+  @scala.inline
   def spinner: spinner = "spinner".asInstanceOf[spinner]
   @scala.inline
   def `spinner-downbutton`: `spinner-downbutton` = "spinner-downbutton".asInstanceOf[`spinner-downbutton`]
@@ -2666,6 +2869,8 @@ object antdLibStrings {
   @scala.inline
   def statusbarpanel: statusbarpanel = "statusbarpanel".asInstanceOf[statusbarpanel]
   @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  @scala.inline
   def sticky: sticky = "sticky".asInstanceOf[sticky]
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
@@ -2675,8 +2880,6 @@ object antdLibStrings {
   def strict: strict = "strict".asInstanceOf[strict]
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
-  @scala.inline
-  def strong: strong = "strong".asInstanceOf[strong]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
   @scala.inline
@@ -2716,6 +2919,8 @@ object antdLibStrings {
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   @scala.inline
+  def time: time = "time".asInstanceOf[time]
+  @scala.inline
   def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
   @scala.inline
   def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
@@ -2740,6 +2945,8 @@ object antdLibStrings {
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
   @scala.inline
+  def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
   def treeheader: treeheader = "treeheader".asInstanceOf[treeheader]
   @scala.inline
   def treeheadercell: treeheadercell = "treeheadercell".asInstanceOf[treeheadercell]
@@ -2759,8 +2966,6 @@ object antdLibStrings {
   def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def twoTone: twoTone = "twoTone".asInstanceOf[twoTone]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def under: under = "under".asInstanceOf[under]
   @scala.inline

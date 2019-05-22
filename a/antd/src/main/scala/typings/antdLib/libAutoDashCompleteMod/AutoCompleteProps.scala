@@ -66,7 +66,7 @@ object AutoCompleteProps {
     showAction: java.lang.String | js.Array[java.lang.String] = null,
     showArrow: js.UndefOr[scala.Boolean] = js.undefined,
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
-    size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any = null,
+    size: antdLib.antdLibStrings.default | antdLib.antdLibStrings.large | antdLib.antdLibStrings.small = null,
     style: reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null,
@@ -108,7 +108,7 @@ object AutoCompleteProps {
     if (showAction != null) __obj.updateDynamic("showAction")(showAction.asInstanceOf[js.Any])
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)

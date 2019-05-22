@@ -7022,6 +7022,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._AudioCodec
   
   @js.native
+  sealed trait EAP_TLS extends js.Object
+  
+  @js.native
   sealed trait EARLIEST
     extends awsDashSdkLib.clientsKinesisvideomediaMod._StartSelectorType
   
@@ -8027,6 +8030,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWorkspacesMod._DedicatedTenancyModificationStateEnum
        with awsDashSdkLib.clientsIamMod._DeletionTaskStatusType
        with awsDashSdkLib.clientsApigatewayv2Mod._DeploymentStatus
+       with awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatus
        with awsDashSdkLib.clientsPinpointemailMod._DkimStatus
        with awsDashSdkLib.clientsAcmMod._DomainStatus
        with awsDashSdkLib.clientsAmplifyMod._DomainStatus
@@ -13425,6 +13429,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAppstreamMod._FleetErrorCode
   
   @js.native
+  sealed trait NETWORK_PROFILE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._Feature
+  
+  @js.native
   sealed trait NETWORK_PROFILE_NOT_FOUND
     extends awsDashSdkLib.clientsAlexaforbusinessMod._DeviceStatusDetailCode
   
@@ -14316,6 +14324,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPinpointemailMod._EventType
        with awsDashSdkLib.clientsSwfMod._ExecutionStatus
        with awsDashSdkLib.clientsOrganizationsMod._HandshakeState
+       with awsDashSdkLib.clientsAlexaforbusinessMod._NetworkSecurityType
        with awsDashSdkLib.clientsCodecommitMod._PullRequestStatusEnum
   
   @js.native
@@ -17750,6 +17759,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SERVICE_ROLE
     extends awsDashSdkLib.clientsCodebuildMod._ImagePullCredentialsType
+  
+  @js.native
+  sealed trait SETTINGS
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._Feature
   
   @js.native
   sealed trait SETUP
@@ -21573,6 +21586,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsServicediscoveryMod._RoutingPolicy
   
   @js.native
+  sealed trait WEP
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._NetworkSecurityType
+  
+  @js.native
   sealed trait WF
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
@@ -21681,6 +21698,18 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait WORM
     extends awsDashSdkLib.clientsSecurityhubMod._MalwareType
+  
+  @js.native
+  sealed trait WPA2_ENTERPRISE
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._NetworkSecurityType
+  
+  @js.native
+  sealed trait WPA2_PSK
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._NetworkSecurityType
+  
+  @js.native
+  sealed trait WPA_PSK
+    extends awsDashSdkLib.clientsAlexaforbusinessMod._NetworkSecurityType
   
   @js.native
   sealed trait WRITE
@@ -31026,6 +31055,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def EAC3: EAC3 = "EAC3".asInstanceOf[EAC3]
   @scala.inline
+  def EAP_TLS: EAP_TLS = "EAP_TLS".asInstanceOf[EAP_TLS]
+  @scala.inline
   def EARLIEST: EARLIEST = "EARLIEST".asInstanceOf[EARLIEST]
   @scala.inline
   def EBP: EBP = "EBP".asInstanceOf[EBP]
@@ -33634,6 +33665,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def NETWORK_INTERFACE_LIMIT_EXCEEDED: NETWORK_INTERFACE_LIMIT_EXCEEDED = "NETWORK_INTERFACE_LIMIT_EXCEEDED".asInstanceOf[NETWORK_INTERFACE_LIMIT_EXCEEDED]
   @scala.inline
+  def NETWORK_PROFILE: NETWORK_PROFILE = "NETWORK_PROFILE".asInstanceOf[NETWORK_PROFILE]
+  @scala.inline
   def NETWORK_PROFILE_NOT_FOUND: NETWORK_PROFILE_NOT_FOUND = "NETWORK_PROFILE_NOT_FOUND".asInstanceOf[NETWORK_PROFILE_NOT_FOUND]
   @scala.inline
   def NET_AMORTIZED_COST: NET_AMORTIZED_COST = "NET_AMORTIZED_COST".asInstanceOf[NET_AMORTIZED_COST]
@@ -35454,6 +35487,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def SERVICE_ROLE: SERVICE_ROLE = "SERVICE_ROLE".asInstanceOf[SERVICE_ROLE]
   @scala.inline
+  def SETTINGS: SETTINGS = "SETTINGS".asInstanceOf[SETTINGS]
+  @scala.inline
   def SETUP: SETUP = "SETUP".asInstanceOf[SETUP]
   @scala.inline
   def SEVEN_DAYS: SEVEN_DAYS = "SEVEN_DAYS".asInstanceOf[SEVEN_DAYS]
@@ -37066,6 +37101,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def WEIGHTED: WEIGHTED = "WEIGHTED".asInstanceOf[WEIGHTED]
   @scala.inline
+  def WEP: WEP = "WEP".asInstanceOf[WEP]
+  @scala.inline
   def WF: WF = "WF".asInstanceOf[WF]
   @scala.inline
   def WHEN_NO_MATCH: WHEN_NO_MATCH = "WHEN_NO_MATCH".asInstanceOf[WHEN_NO_MATCH]
@@ -37107,6 +37144,12 @@ object awsDashSdkLibStrings {
   def WORK_IN_PROGRESS: WORK_IN_PROGRESS = "WORK_IN_PROGRESS".asInstanceOf[WORK_IN_PROGRESS]
   @scala.inline
   def WORM: WORM = "WORM".asInstanceOf[WORM]
+  @scala.inline
+  def WPA2_ENTERPRISE: WPA2_ENTERPRISE = "WPA2_ENTERPRISE".asInstanceOf[WPA2_ENTERPRISE]
+  @scala.inline
+  def WPA2_PSK: WPA2_PSK = "WPA2_PSK".asInstanceOf[WPA2_PSK]
+  @scala.inline
+  def WPA_PSK: WPA_PSK = "WPA_PSK".asInstanceOf[WPA_PSK]
   @scala.inline
   def WRITE: WRITE = "WRITE".asInstanceOf[WRITE]
   @scala.inline

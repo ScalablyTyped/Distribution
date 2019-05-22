@@ -23,6 +23,10 @@ class ApplicationVersion protected ()
     */
   val application: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
   /**
+    * The ARN assigned by AWS for this Elastic Beanstalk Application.
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * S3 bucket that contains the Application Version source bundle.
     */
   val bucket: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
@@ -43,6 +47,10 @@ class ApplicationVersion protected ()
     * A unique name for the this Application Version.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * Key-value mapping of tags for the Elastic Beanstalk Application Version.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

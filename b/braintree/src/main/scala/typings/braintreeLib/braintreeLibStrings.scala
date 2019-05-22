@@ -28,18 +28,6 @@ object braintreeLibStrings {
     extends braintreeLib.braintreeMod.PaymentMethodType
   
   @js.native
-  sealed trait AuthorizationExpired
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait Authorized
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait Authorizing
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
   sealed trait Canceled
     extends braintreeLib.braintreeMod.SubscriptionStatus
   
@@ -59,14 +47,6 @@ object braintreeLibStrings {
   sealed trait Expired
     extends braintreeLib.braintreeMod.DisputeStatus
        with braintreeLib.braintreeMod.SubscriptionStatus
-  
-  @js.native
-  sealed trait Failed
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait GatewayRejected
-    extends braintreeLib.braintreeMod.TransactionStatus
   
   @js.native
   sealed trait International
@@ -107,36 +87,12 @@ object braintreeLibStrings {
        with braintreeLib.braintreeMod.SubscriptionStatus
   
   @js.native
-  sealed trait ProcessorDeclined
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
   sealed trait Recurring
     extends braintreeLib.braintreeMod.TransactionSource
   
   @js.native
   sealed trait SamsungPayCard
     extends braintreeLib.braintreeMod.PaymentMethodType
-  
-  @js.native
-  sealed trait Settled
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait SettlementPending
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait SettlemnetDeclined
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait Settling
-    extends braintreeLib.braintreeMod.TransactionStatus
-  
-  @js.native
-  sealed trait SubmittedForSettlement
-    extends braintreeLib.braintreeMod.TransactionStatus
   
   @js.native
   sealed trait Suspended
@@ -166,10 +122,6 @@ object braintreeLibStrings {
   @js.native
   sealed trait VisaCheckoutCard
     extends braintreeLib.braintreeMod.PaymentMethodType
-  
-  @js.native
-  sealed trait Voided
-    extends braintreeLib.braintreeMod.TransactionStatus
   
   @js.native
   sealed trait Won
@@ -205,6 +157,18 @@ object braintreeLibStrings {
     extends braintreeLib.braintreeMod.TransactionProcessorResponseType
   
   @js.native
+  sealed trait authorization_expired
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
+  sealed trait authorized
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
+  sealed trait authorizing
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
   sealed trait avs
     extends braintreeLib.braintreeMod.GatewayRejectionReason
   
@@ -229,8 +193,16 @@ object braintreeLibStrings {
     extends braintreeLib.braintreeMod.GatewayRejectionReason
   
   @js.native
+  sealed trait failed
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
   sealed trait fraud
     extends braintreeLib.braintreeMod.GatewayRejectionReason
+  
+  @js.native
+  sealed trait gateway_rejected
+    extends braintreeLib.braintreeMod.TransactionStatus
   
   @js.native
   sealed trait hard_declined
@@ -251,6 +223,10 @@ object braintreeLibStrings {
   @js.native
   sealed trait paypal_account
     extends braintreeLib.braintreeMod.PaymentInstrumentType
+  
+  @js.native
+  sealed trait processor_declined
+    extends braintreeLib.braintreeMod.TransactionStatus
   
   @js.native
   sealed trait recurring
@@ -277,8 +253,28 @@ object braintreeLibStrings {
     extends braintreeLib.braintreeMod.PaymentInstrumentType
   
   @js.native
+  sealed trait settled
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
+  sealed trait settlement_declined
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
+  sealed trait settlement_pending
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
+  sealed trait settling
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
+  @js.native
   sealed trait soft_declined
     extends braintreeLib.braintreeMod.TransactionProcessorResponseType
+  
+  @js.native
+  sealed trait submitted_for_settlement
+    extends braintreeLib.braintreeMod.TransactionStatus
   
   @js.native
   sealed trait three_d_secure
@@ -296,6 +292,10 @@ object braintreeLibStrings {
   sealed trait visa_checkout_card
     extends braintreeLib.braintreeMod.PaymentInstrumentType
   
+  @js.native
+  sealed trait voided
+    extends braintreeLib.braintreeMod.TransactionStatus
+  
   @scala.inline
   def Accepted: Accepted = "Accepted".asInstanceOf[Accepted]
   @scala.inline
@@ -307,12 +307,6 @@ object braintreeLibStrings {
   @scala.inline
   def ApplePayCard: ApplePayCard = "ApplePayCard".asInstanceOf[ApplePayCard]
   @scala.inline
-  def AuthorizationExpired: AuthorizationExpired = "AuthorizationExpired".asInstanceOf[AuthorizationExpired]
-  @scala.inline
-  def Authorized: Authorized = "Authorized".asInstanceOf[Authorized]
-  @scala.inline
-  def Authorizing: Authorizing = "Authorizing".asInstanceOf[Authorizing]
-  @scala.inline
   def Canceled: Canceled = "Canceled".asInstanceOf[Canceled]
   @scala.inline
   def ControlPanel: ControlPanel = "ControlPanel".asInstanceOf[ControlPanel]
@@ -322,10 +316,6 @@ object braintreeLibStrings {
   def Disputed: Disputed = "Disputed".asInstanceOf[Disputed]
   @scala.inline
   def Expired: Expired = "Expired".asInstanceOf[Expired]
-  @scala.inline
-  def Failed: Failed = "Failed".asInstanceOf[Failed]
-  @scala.inline
-  def GatewayRejected: GatewayRejected = "GatewayRejected".asInstanceOf[GatewayRejected]
   @scala.inline
   def International: International = "International".asInstanceOf[International]
   @scala.inline
@@ -343,21 +333,9 @@ object braintreeLibStrings {
   @scala.inline
   def Pending: Pending = "Pending".asInstanceOf[Pending]
   @scala.inline
-  def ProcessorDeclined: ProcessorDeclined = "ProcessorDeclined".asInstanceOf[ProcessorDeclined]
-  @scala.inline
   def Recurring: Recurring = "Recurring".asInstanceOf[Recurring]
   @scala.inline
   def SamsungPayCard: SamsungPayCard = "SamsungPayCard".asInstanceOf[SamsungPayCard]
-  @scala.inline
-  def Settled: Settled = "Settled".asInstanceOf[Settled]
-  @scala.inline
-  def SettlementPending: SettlementPending = "SettlementPending".asInstanceOf[SettlementPending]
-  @scala.inline
-  def SettlemnetDeclined: SettlemnetDeclined = "SettlemnetDeclined".asInstanceOf[SettlemnetDeclined]
-  @scala.inline
-  def Settling: Settling = "Settling".asInstanceOf[Settling]
-  @scala.inline
-  def SubmittedForSettlement: SubmittedForSettlement = "SubmittedForSettlement".asInstanceOf[SubmittedForSettlement]
   @scala.inline
   def Suspended: Suspended = "Suspended".asInstanceOf[Suspended]
   @scala.inline
@@ -370,8 +348,6 @@ object braintreeLibStrings {
   def VenmoAccount: VenmoAccount = "VenmoAccount".asInstanceOf[VenmoAccount]
   @scala.inline
   def VisaCheckoutCard: VisaCheckoutCard = "VisaCheckoutCard".asInstanceOf[VisaCheckoutCard]
-  @scala.inline
-  def Voided: Voided = "Voided".asInstanceOf[Voided]
   @scala.inline
   def Won: Won = "Won".asInstanceOf[Won]
   @scala.inline
@@ -387,6 +363,12 @@ object braintreeLibStrings {
   @scala.inline
   def approved: approved = "approved".asInstanceOf[approved]
   @scala.inline
+  def authorization_expired: authorization_expired = "authorization_expired".asInstanceOf[authorization_expired]
+  @scala.inline
+  def authorized: authorized = "authorized".asInstanceOf[authorized]
+  @scala.inline
+  def authorizing: authorizing = "authorizing".asInstanceOf[authorizing]
+  @scala.inline
   def avs: avs = "avs".asInstanceOf[avs]
   @scala.inline
   def avs_and_cvv: avs_and_cvv = "avs_and_cvv".asInstanceOf[avs_and_cvv]
@@ -399,7 +381,11 @@ object braintreeLibStrings {
   @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def fraud: fraud = "fraud".asInstanceOf[fraud]
+  @scala.inline
+  def gateway_rejected: gateway_rejected = "gateway_rejected".asInstanceOf[gateway_rejected]
   @scala.inline
   def hard_declined: hard_declined = "hard_declined".asInstanceOf[hard_declined]
   @scala.inline
@@ -410,6 +396,8 @@ object braintreeLibStrings {
   def masterpass_card: masterpass_card = "masterpass_card".asInstanceOf[masterpass_card]
   @scala.inline
   def paypal_account: paypal_account = "paypal_account".asInstanceOf[paypal_account]
+  @scala.inline
+  def processor_declined: processor_declined = "processor_declined".asInstanceOf[processor_declined]
   @scala.inline
   def recurring: recurring = "recurring".asInstanceOf[recurring]
   @scala.inline
@@ -423,7 +411,17 @@ object braintreeLibStrings {
   @scala.inline
   def samsung_pay_card: samsung_pay_card = "samsung_pay_card".asInstanceOf[samsung_pay_card]
   @scala.inline
+  def settled: settled = "settled".asInstanceOf[settled]
+  @scala.inline
+  def settlement_declined: settlement_declined = "settlement_declined".asInstanceOf[settlement_declined]
+  @scala.inline
+  def settlement_pending: settlement_pending = "settlement_pending".asInstanceOf[settlement_pending]
+  @scala.inline
+  def settling: settling = "settling".asInstanceOf[settling]
+  @scala.inline
   def soft_declined: soft_declined = "soft_declined".asInstanceOf[soft_declined]
+  @scala.inline
+  def submitted_for_settlement: submitted_for_settlement = "submitted_for_settlement".asInstanceOf[submitted_for_settlement]
   @scala.inline
   def three_d_secure: three_d_secure = "three_d_secure".asInstanceOf[three_d_secure]
   @scala.inline
@@ -432,5 +430,7 @@ object braintreeLibStrings {
   def venmo_account: venmo_account = "venmo_account".asInstanceOf[venmo_account]
   @scala.inline
   def visa_checkout_card: visa_checkout_card = "visa_checkout_card".asInstanceOf[visa_checkout_card]
+  @scala.inline
+  def voided: voided = "voided".asInstanceOf[voided]
 }
 

@@ -33,6 +33,10 @@ trait IRawStyleBase extends IRawFontStyle {
     atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.auto | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.touch
   ] = js.undefined
   /**
+    * (Webkit specific) color of the highlight that appears overa  link while it's being tapped
+    */
+  var WebkitTapHighlightColor: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Aligns a flex container's lines within the flex container when there is extra space
     * in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
     */
@@ -1590,6 +1594,7 @@ object IRawStyleBase {
     WebkitBackdropFilter: ICSSRule | java.lang.String = null,
     WebkitFontSmoothing: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.none | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.antialiased | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.grayscale | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`subpixel-antialiased` = null,
     WebkitOverflowScrolling: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.auto | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.touch = null,
+    WebkitTapHighlightColor: java.lang.String = null,
     alignContent: ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-start` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-end` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.center | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-between` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-around` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.stretch = null,
     alignItems: ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-start` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-end` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.center | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.baseline | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.stretch = null,
     alignSelf: ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.auto | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.normal | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.stretch | ICSSBaselinePositionRule | ICSSOverflowAndSelfPositionRule = null,
@@ -1836,8 +1841,7 @@ object IRawStyleBase {
     voicePitch: ICSSRule | java.lang.String = null,
     voiceRange: ICSSRule | java.lang.String = null,
     voiceRate: ICSSRule | java.lang.String = null,
-    voiceStress: ICSSRule | java.lang.String = null,
-    voiceVolume: ICSSRule | java.lang.String = null
+    voiceStress: ICSSRule | java.lang.String = null
   ): IRawStyleBase = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IRawFontStyle)
@@ -1846,6 +1850,7 @@ object IRawStyleBase {
     if (WebkitBackdropFilter != null) __obj.updateDynamic("WebkitBackdropFilter")(WebkitBackdropFilter.asInstanceOf[js.Any])
     if (WebkitFontSmoothing != null) __obj.updateDynamic("WebkitFontSmoothing")(WebkitFontSmoothing.asInstanceOf[js.Any])
     if (WebkitOverflowScrolling != null) __obj.updateDynamic("WebkitOverflowScrolling")(WebkitOverflowScrolling.asInstanceOf[js.Any])
+    if (WebkitTapHighlightColor != null) __obj.updateDynamic("WebkitTapHighlightColor")(WebkitTapHighlightColor)
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
@@ -2093,7 +2098,6 @@ object IRawStyleBase {
     if (voiceRange != null) __obj.updateDynamic("voiceRange")(voiceRange.asInstanceOf[js.Any])
     if (voiceRate != null) __obj.updateDynamic("voiceRate")(voiceRate.asInstanceOf[js.Any])
     if (voiceStress != null) __obj.updateDynamic("voiceStress")(voiceStress.asInstanceOf[js.Any])
-    if (voiceVolume != null) __obj.updateDynamic("voiceVolume")(voiceVolume.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRawStyleBase]
   }
 }

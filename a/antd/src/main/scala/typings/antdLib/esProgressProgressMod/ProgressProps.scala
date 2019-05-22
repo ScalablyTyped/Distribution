@@ -22,8 +22,8 @@ trait ProgressProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var showInfo: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[ProgressSize] = js.undefined
-  var status: /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.Any
+  var status: js.UndefOr[
+    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.exception | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success
   ] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String | ProgressGradient] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined
@@ -46,7 +46,7 @@ object ProgressProps {
     prefixCls: java.lang.String = null,
     showInfo: js.UndefOr[scala.Boolean] = js.undefined,
     size: ProgressSize = null,
-    status: /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.Any = null,
+    status: antdLib.antdLibStrings.normal | antdLib.antdLibStrings.exception | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success = null,
     strokeColor: java.lang.String | ProgressGradient = null,
     strokeLinecap: java.lang.String = null,
     strokeWidth: scala.Int | scala.Double = null,
@@ -65,7 +65,7 @@ object ProgressProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo)
     if (size != null) __obj.updateDynamic("size")(size)
-    if (status != null) __obj.updateDynamic("status")(status)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])

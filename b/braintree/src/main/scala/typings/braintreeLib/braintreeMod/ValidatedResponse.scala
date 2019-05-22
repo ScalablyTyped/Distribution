@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ValidatedResponse[T] extends js.Object {
   var address: Address
+  var clientToken: java.lang.String
   var creditCard: CreditCard
   var customer: Customer
   var dispute: Dispute
@@ -25,6 +26,7 @@ object ValidatedResponse {
   @scala.inline
   def apply[T](
     address: Address,
+    clientToken: java.lang.String,
     creditCard: CreditCard,
     customer: Customer,
     dispute: Dispute,
@@ -38,7 +40,7 @@ object ValidatedResponse {
     success: scala.Boolean,
     transaction: Transaction
   ): ValidatedResponse[T] = {
-    val __obj = js.Dynamic.literal(address = address, creditCard = creditCard, customer = customer, dispute = dispute, errors = js.Any.fromFunction0(errors), merchantAccount = merchantAccount, message = message, params = params, paymentMethod = paymentMethod, settlementBatchSumary = settlementBatchSumary, subscription = subscription, success = success, transaction = transaction)
+    val __obj = js.Dynamic.literal(address = address, clientToken = clientToken, creditCard = creditCard, customer = customer, dispute = dispute, errors = js.Any.fromFunction0(errors), merchantAccount = merchantAccount, message = message, params = params, paymentMethod = paymentMethod, settlementBatchSumary = settlementBatchSumary, subscription = subscription, success = success, transaction = transaction)
   
     __obj.asInstanceOf[ValidatedResponse[T]]
   }

@@ -17,6 +17,6 @@ class Function protected ()
   def this(name: java.lang.String, options: FunctionOptions, func: Handler, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
   val lambda: atPulumiAwsLib.lambdaMod.Function = js.native
   val options: FunctionOptions = js.native
-  val role: atPulumiAwsLib.iamMod.Role = js.native
+  val role: js.UndefOr[atPulumiAwsLib.iamMod.Role] = js.native
 }
 

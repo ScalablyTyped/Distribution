@@ -75,10 +75,5 @@ object ^ extends js.Object {
   def getRegion(): js.Promise[atPulumiAwsLib.getRegionMod.GetRegionResult] = js.native
   def getRegion(args: atPulumiAwsLib.getRegionMod.GetRegionArgs): js.Promise[atPulumiAwsLib.getRegionMod.GetRegionResult] = js.native
   def getRegion(args: atPulumiAwsLib.getRegionMod.GetRegionArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.getRegionMod.GetRegionResult] = js.native
-  def ifUndefined[T](
-    input: atPulumiPulumiLib.outputMod.Input[T] | js.UndefOr[scala.Nothing],
-    value: atPulumiPulumiLib.outputMod.Input[T]
-  ): atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Unwrap[T]] = js.native
-  def sha1hash(s: java.lang.String): java.lang.String = js.native
 }
 

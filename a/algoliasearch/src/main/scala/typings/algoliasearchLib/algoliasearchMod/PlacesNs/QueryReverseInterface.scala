@@ -22,24 +22,13 @@ trait QueryReverseInterface extends js.Object {
     * https://community.algolia.com/places/api-clients.html#api-options-type
     */
   var hitsPerPage: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * If specified, restrict the search results to a single language. You can pass two letters country codes (ISO 639-1).
-    * Warning: language parameter is case sensitive and should be lowercase otherwise it will fallback to default language.
-    * https://community.algolia.com/places/api-clients.html#api-options-language
-    */
-  var language: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object QueryReverseInterface {
   @scala.inline
-  def apply(
-    aroundLatLng: java.lang.String,
-    hitsPerPage: scala.Int | scala.Double = null,
-    language: java.lang.String = null
-  ): QueryReverseInterface = {
+  def apply(aroundLatLng: java.lang.String, hitsPerPage: scala.Int | scala.Double = null): QueryReverseInterface = {
     val __obj = js.Dynamic.literal(aroundLatLng = aroundLatLng)
     if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language)
     __obj.asInstanceOf[QueryReverseInterface]
   }
 }

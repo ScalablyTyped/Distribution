@@ -19,6 +19,10 @@ object ravenDashJsLibStrings {
     extends ravenDashJsLib.ravenDashJsMod.LogLevel
   
   @js.native
+  sealed trait fatal
+    extends ravenDashJsLib.ravenDashJsMod.LogLevel
+  
+  @js.native
   sealed trait http
     extends ravenDashJsLib.ravenDashJsMod.BreadcrumbType
   
@@ -48,6 +52,8 @@ object ravenDashJsLibStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def fatal: fatal = "fatal".asInstanceOf[fatal]
   @scala.inline
   def http: http = "http".asInstanceOf[http]
   @scala.inline

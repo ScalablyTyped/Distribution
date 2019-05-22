@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "poi"
-version := "12.5-dt-20190414Z-6d3e8f"
+version := "12.5-dt-20190414Z-054684"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-b7b8c5",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-f78ef5",
   "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-9f2fd8",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-152dcb",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-93f861",
   "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-b1ea57",
   "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-be23b8",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
@@ -24,9 +24,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-98777a",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-32bf87",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190506Z-89e48a",
-  "org.scalablytyped" %%% "webpack-chain" % "5.2.4-97ad49",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190330Z-ec005e")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190521Z-b38fdf",
+  "org.scalablytyped" %%% "webpack-chain" % "5.2.4-46e105",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190330Z-8f75a0")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

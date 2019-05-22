@@ -77,6 +77,7 @@ trait Anon_AcmAcmpca extends js.Object {
   var licensemanager: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var lightsail: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var macie: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var managedblockchain: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var mediaconnect: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var mediaconvert: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var medialive: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -120,6 +121,7 @@ trait Anon_AcmAcmpca extends js.Object {
   var wafregional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var worklink: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var workspaces: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var xray: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
 object Anon_AcmAcmpca {
@@ -196,6 +198,7 @@ object Anon_AcmAcmpca {
     licensemanager: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     lightsail: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     macie: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    managedblockchain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     mediaconnect: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     mediaconvert: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     medialive: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -238,7 +241,8 @@ object Anon_AcmAcmpca {
     waf: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     wafregional: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     worklink: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    workspaces: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    workspaces: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    xray: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AcmAcmpca = {
     val __obj = js.Dynamic.literal()
     if (acm != null) __obj.updateDynamic("acm")(acm.asInstanceOf[js.Any])
@@ -312,6 +316,7 @@ object Anon_AcmAcmpca {
     if (licensemanager != null) __obj.updateDynamic("licensemanager")(licensemanager.asInstanceOf[js.Any])
     if (lightsail != null) __obj.updateDynamic("lightsail")(lightsail.asInstanceOf[js.Any])
     if (macie != null) __obj.updateDynamic("macie")(macie.asInstanceOf[js.Any])
+    if (managedblockchain != null) __obj.updateDynamic("managedblockchain")(managedblockchain.asInstanceOf[js.Any])
     if (mediaconnect != null) __obj.updateDynamic("mediaconnect")(mediaconnect.asInstanceOf[js.Any])
     if (mediaconvert != null) __obj.updateDynamic("mediaconvert")(mediaconvert.asInstanceOf[js.Any])
     if (medialive != null) __obj.updateDynamic("medialive")(medialive.asInstanceOf[js.Any])
@@ -355,6 +360,7 @@ object Anon_AcmAcmpca {
     if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional.asInstanceOf[js.Any])
     if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
     if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces.asInstanceOf[js.Any])
+    if (xray != null) __obj.updateDynamic("xray")(xray.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AcmAcmpca]
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for raven-js
 
-Typings are for version 3.27.0
+Typings are for version 3.27.1
 
 ## Library description:
 JavaScript client for Sentry

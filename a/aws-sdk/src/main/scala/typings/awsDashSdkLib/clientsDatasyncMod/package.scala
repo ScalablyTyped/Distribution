@@ -62,6 +62,8 @@ package object clientsDatasyncMod {
   */
   type NfsVersion = _NfsVersion | java.lang.String
   type NonEmptySubdirectory = java.lang.String
+  type PLSecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
+  type PLSubnetArnList = js.Array[Ec2SubnetArn]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.PENDING
     - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS

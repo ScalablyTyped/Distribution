@@ -11,16 +11,20 @@ trait ChunkExtractorOptions extends js.Object {
   	 */
   var entrypoints: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
-    * Optional namespace in case of multiple apps on same page
-    */
+  	 * Optional namespace in case of multiple apps on same page
+  	 */
   var namespace: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Optional output path (only for `requireEntrypoint`)
   	 */
   var outputPath: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	  * Stats generated using `@loadable/webpack-plugin`.
-  	  */
+  	 * Optional public path to override stats.publicPath at runtime
+  	 */
+  var publicPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Stats generated using `@loadable/webpack-plugin`.
+  	 */
   var stats: js.UndefOr[js.Object] = js.undefined
   /**
   	 * Stats file path generated using `@loadable/webpack-plugin`
@@ -34,6 +38,7 @@ object ChunkExtractorOptions {
     entrypoints: java.lang.String | js.Array[java.lang.String] = null,
     namespace: java.lang.String = null,
     outputPath: java.lang.String = null,
+    publicPath: java.lang.String = null,
     stats: js.Object = null,
     statsFile: java.lang.String = null
   ): ChunkExtractorOptions = {
@@ -41,6 +46,7 @@ object ChunkExtractorOptions {
     if (entrypoints != null) __obj.updateDynamic("entrypoints")(entrypoints.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
     if (stats != null) __obj.updateDynamic("stats")(stats)
     if (statsFile != null) __obj.updateDynamic("statsFile")(statsFile)
     __obj.asInstanceOf[ChunkExtractorOptions]

@@ -50,6 +50,7 @@ trait PatchBaselineArgs extends js.Object {
   val rejectedPatches: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object PatchBaselineArgs {
@@ -66,7 +67,8 @@ object PatchBaselineArgs {
     globalFilters: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     operatingSystem: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    rejectedPatches: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+    rejectedPatches: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): PatchBaselineArgs = {
     val __obj = js.Dynamic.literal()
     if (approvalRules != null) __obj.updateDynamic("approvalRules")(approvalRules.asInstanceOf[js.Any])
@@ -77,6 +79,7 @@ object PatchBaselineArgs {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     if (rejectedPatches != null) __obj.updateDynamic("rejectedPatches")(rejectedPatches.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchBaselineArgs]
   }
 }

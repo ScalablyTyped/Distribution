@@ -26,7 +26,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(application, resolver)) [id => @ember/application, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__application/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__application),TsIdentLibraryScoped(ember,Some(application))),TsIdentModule(Some(ember),List(application, types))) [id => @ember/application, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(application, types)) [id => @ember/application, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibraryScoped(ember,Some(application)) [id => @ember/application, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:226 Processing TsIdentLibraryScoped(ember,Some(application)) [id => @ember/application, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/application, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/application/instance) / TsDeclInterface(ApplicationInstance))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/application, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/application/resolver) / TsDeclInterface(Resolver))] 
 [info ] ExtractInterfaces.scala:39 Extracted anonymous interface TsIdentSimple(Anon_Singleton) [id => @ember/application, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/application/-private/registry) / TsDeclInterface(Registry) / TsMemberFunction(register) / TsFunSig() / TsFunParam() / TsTypeObject())] 

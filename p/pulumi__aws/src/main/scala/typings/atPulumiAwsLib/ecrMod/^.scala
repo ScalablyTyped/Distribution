@@ -13,6 +13,8 @@ object ^ extends js.Object {
     args: atPulumiAwsLib.ecrGetCredentialsMod.GetCredentialsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ecrGetCredentialsMod.GetCredentialsResult] = js.native
+  def getImage(args: atPulumiAwsLib.ecrGetImageMod.GetImageArgs): js.Promise[atPulumiAwsLib.ecrGetImageMod.GetImageResult] = js.native
+  def getImage(args: atPulumiAwsLib.ecrGetImageMod.GetImageArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.ecrGetImageMod.GetImageResult] = js.native
   def getRepository(args: atPulumiAwsLib.ecrGetRepositoryMod.GetRepositoryArgs): js.Promise[atPulumiAwsLib.ecrGetRepositoryMod.GetRepositoryResult] = js.native
   def getRepository(
     args: atPulumiAwsLib.ecrGetRepositoryMod.GetRepositoryArgs,

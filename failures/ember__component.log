@@ -32,7 +32,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(component, text-area)) [id => @ember/component, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__component/text-field.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__component),TsIdentLibraryScoped(ember,Some(component))),TsIdentModule(Some(ember),List(component, text-field))) [id => @ember/component, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(component, text-field)) [id => @ember/component, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:224 Processing TsIdentLibraryScoped(ember,Some(component)) [id => @ember/component, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:226 Processing TsIdentLibraryScoped(ember,Some(component)) [id => @ember/component, phase => typescript] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/-private/core-view) / TsDeclInterface(CoreView))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/checkbox) / TsDeclInterface(Checkbox))] 
 [info ] PreferTypeAlias.scala:55 Simplified to type alias [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/text-area) / TsDeclInterface(TextArea))] 

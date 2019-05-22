@@ -35,6 +35,10 @@ trait ParameterState extends js.Object {
     */
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
   /**
+    * The tier of the parameter. If not specified, will default to `Standard`. Valid tiers are `Standard` and `Advanced`. For more information on parameter tiers, see the [AWS SSM Parameter tier comparison and guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html).
+    */
+  val tier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
     */
   val `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -54,6 +58,7 @@ object ParameterState {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     overwrite: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    tier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ParameterState = {
@@ -65,6 +70,7 @@ object ParameterState {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterState]

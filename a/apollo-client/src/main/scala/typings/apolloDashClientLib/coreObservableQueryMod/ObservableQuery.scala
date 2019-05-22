@@ -17,12 +17,14 @@ class ObservableQuery[TData, TVariables] protected ()
   var observers: js.Any = js.native
   var onSubscribe: js.Any = js.native
   var options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[TVariables] = js.native
-  var queryId: java.lang.String = js.native
+  val queryId: java.lang.String = js.native
   var queryManager: js.Any = js.native
+  val queryName: js.UndefOr[java.lang.String] = js.native
   var setUpQuery: js.Any = js.native
   var shouldSubscribe: js.Any = js.native
-  var subscriptionHandles: js.Any = js.native
+  var subscriptions: js.Any = js.native
   var tearDownQuery: js.Any = js.native
+  var updateLastResult: js.Any = js.native
   var variables: TVariables = js.native
   def currentResult(): ApolloCurrentResult[TData] = js.native
   def fetchMore[K /* <: java.lang.String */](
@@ -37,18 +39,18 @@ class ObservableQuery[TData, TVariables] protected ()
   def resetLastResults(): scala.Unit = js.native
   def result(): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def setOptions(
-    opts: apolloDashClientLib.coreWatchQueryOptionsMod.ModifiableWatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
-  def setVariables(variables: TVariables): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
-  def setVariables(variables: TVariables, tryFetch: scala.Boolean): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
-  def setVariables(variables: TVariables, tryFetch: scala.Boolean, fetchResults: scala.Boolean): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
+    opts: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
+  ): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData] | scala.Unit] = js.native
+  def setVariables(variables: TVariables): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData] | scala.Unit] = js.native
+  def setVariables(variables: TVariables, tryFetch: scala.Boolean): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData] | scala.Unit] = js.native
+  def setVariables(variables: TVariables, tryFetch: scala.Boolean, fetchResults: scala.Boolean): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData] | scala.Unit] = js.native
   def startPolling(pollInterval: scala.Double): scala.Unit = js.native
   def stopPolling(): scala.Unit = js.native
-  def subscribeToMore[TSubscriptionData](
-    options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscribeToMoreOptions[TData, TVariables, TSubscriptionData]
+  def subscribeToMore[TSubscriptionData, TSubscriptionVariables](
+    options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscribeToMoreOptions[TData, TSubscriptionVariables, TSubscriptionData]
   ): js.Function0[scala.Unit] = js.native
-  def updateQuery(
-    mapFn: js.Function2[/* previousQueryResult */ TData, /* options */ UpdateQueryOptions[TVariables], TData]
+  def updateQuery[TVars](
+    mapFn: js.Function2[/* previousQueryResult */ TData, /* options */ UpdateQueryOptions[TVars], TData]
   ): scala.Unit = js.native
 }
 

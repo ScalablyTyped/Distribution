@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApolloClientOptions[TCacheShape] extends js.Object {
+  var assumeImmutableResults: js.UndefOr[scala.Boolean] = js.undefined
   var cache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape]
   var connectToDevTools: js.UndefOr[scala.Boolean] = js.undefined
   var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
@@ -28,6 +29,7 @@ object ApolloClientOptions {
   @scala.inline
   def apply[TCacheShape](
     cache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape],
+    assumeImmutableResults: js.UndefOr[scala.Boolean] = js.undefined,
     connectToDevTools: js.UndefOr[scala.Boolean] = js.undefined,
     defaultOptions: DefaultOptions = null,
     fragmentMatcher: apolloDashClientLib.coreLocalStateMod.FragmentMatcher = null,
@@ -41,6 +43,7 @@ object ApolloClientOptions {
     version: java.lang.String = null
   ): ApolloClientOptions[TCacheShape] = {
     val __obj = js.Dynamic.literal(cache = cache)
+    if (!js.isUndefined(assumeImmutableResults)) __obj.updateDynamic("assumeImmutableResults")(assumeImmutableResults)
     if (!js.isUndefined(connectToDevTools)) __obj.updateDynamic("connectToDevTools")(connectToDevTools)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
     if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(fragmentMatcher)

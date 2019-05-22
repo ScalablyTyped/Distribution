@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait MutationBaseOptions[T, TVariables] extends js.Object {
   var awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined
   var errorPolicy: js.UndefOr[ErrorPolicy] = js.undefined
-  var optimisticResponse: js.UndefOr[js.Object | js.Function] = js.undefined
+  var optimisticResponse: js.UndefOr[T | (js.Function1[/* vars */ TVariables, T])] = js.undefined
   var refetchQueries: js.UndefOr[
     (js.Function1[
-      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault], 
+      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[T], 
       RefetchQueryDescription
     ]) | RefetchQueryDescription
   ] = js.undefined
@@ -25,9 +25,9 @@ object MutationBaseOptions {
   def apply[T, TVariables](
     awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined,
     errorPolicy: ErrorPolicy = null,
-    optimisticResponse: js.Object | js.Function = null,
+    optimisticResponse: T | (js.Function1[/* vars */ TVariables, T]) = null,
     refetchQueries: (js.Function1[
-      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault], 
+      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[T], 
       RefetchQueryDescription
     ]) | RefetchQueryDescription = null,
     update: MutationUpdaterFn[T] = null,

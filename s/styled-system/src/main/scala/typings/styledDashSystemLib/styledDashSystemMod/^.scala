@@ -101,7 +101,8 @@ object ^ extends js.Object {
   def mapProps(mapper: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* func */ js.Any, js.Function1[/* repeated */ _, _]] = js.native
   def num(n: js.Any): scala.Boolean = js.native
   def px(n: js.Any): java.lang.String = js.native
-  def style(args: LowLevelStylefunctionArguments): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  def style[N, S](// tslint:disable-next-line no-unnecessary-generics
+  args: LowLevelStylefunctionArguments[N, S]): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def themeGet(keys: java.lang.String): js.Any = js.native
   def themeGet(keys: java.lang.String, fallback: java.lang.String): js.Any = js.native
   def variant(props: VariantArgs): js.Function1[/* repeated */ js.Any, _] = js.native

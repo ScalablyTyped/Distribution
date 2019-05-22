@@ -11,8 +11,6 @@ object distComponentsLoginMod extends js.Object {
   /**
     * React component which renders Login button.
     */
-  var default: js.Function0[
-    reactLib.reactMod.DetailedReactHTMLElement[cswDashAasDashJsLib.Anon_Id, stdLib.HTMLElement]
-  ] = js.native
+  def default(): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

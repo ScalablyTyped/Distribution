@@ -82,6 +82,10 @@ trait TopicState extends js.Object {
     * Percentage of success to sample
     */
   val sqsSuccessFeedbackSampleRate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object TopicState {
@@ -105,7 +109,8 @@ object TopicState {
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sqsFailureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sqsSuccessFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    sqsSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+    sqsSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): TopicState = {
     val __obj = js.Dynamic.literal()
     if (applicationFailureFeedbackRoleArn != null) __obj.updateDynamic("applicationFailureFeedbackRoleArn")(applicationFailureFeedbackRoleArn.asInstanceOf[js.Any])
@@ -127,6 +132,7 @@ object TopicState {
     if (sqsFailureFeedbackRoleArn != null) __obj.updateDynamic("sqsFailureFeedbackRoleArn")(sqsFailureFeedbackRoleArn.asInstanceOf[js.Any])
     if (sqsSuccessFeedbackRoleArn != null) __obj.updateDynamic("sqsSuccessFeedbackRoleArn")(sqsSuccessFeedbackRoleArn.asInstanceOf[js.Any])
     if (sqsSuccessFeedbackSampleRate != null) __obj.updateDynamic("sqsSuccessFeedbackSampleRate")(sqsSuccessFeedbackSampleRate.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicState]
   }
 }

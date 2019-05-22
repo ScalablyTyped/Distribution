@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait InstanceGroupState extends js.Object {
   /**
+    * The autoscaling policy document. This is a JSON formatted string. See [EMR Auto Scaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html)
+    */
+  val autoscalingPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * If set, the bid price for each EC2 instance in the instance group, expressed in USD. By setting this attribute, the instance group is being declared as a Spot Instance, and will implicitly create a Spot request. Leave this blank to use On-Demand Instances.
+    */
+  val bidPrice: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
     */
   val clusterId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -21,7 +29,7 @@ trait InstanceGroupState extends js.Object {
     */
   val ebsOptimized: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
-    * Target number of instances for the instance group. Defaults to 0.
+    * target number of instances for the instance group. defaults to 0.
     */
   val instanceCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
@@ -39,6 +47,8 @@ trait InstanceGroupState extends js.Object {
 object InstanceGroupState {
   @scala.inline
   def apply(
+    autoscalingPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bidPrice: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ebsConfigs: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IopsSize]]] = null,
     ebsOptimized: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
@@ -49,6 +59,8 @@ object InstanceGroupState {
     status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): InstanceGroupState = {
     val __obj = js.Dynamic.literal()
+    if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy.asInstanceOf[js.Any])
+    if (bidPrice != null) __obj.updateDynamic("bidPrice")(bidPrice.asInstanceOf[js.Any])
     if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
     if (ebsConfigs != null) __obj.updateDynamic("ebsConfigs")(ebsConfigs.asInstanceOf[js.Any])
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])

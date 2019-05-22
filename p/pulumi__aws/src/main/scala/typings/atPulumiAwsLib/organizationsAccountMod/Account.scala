@@ -37,6 +37,10 @@ class Account protected ()
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * Parent Organizational Unit ID or Root ID for the account. Defaults to the Organization default Root ID. A configuration must be present for this argument to perform drift detection.
+    */
+  val parentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The name of an IAM role that Organizations automatically preconfigures in the new member account. This role trusts the master account, allowing users in the master account to assume the role, as permitted by the master account administrator. The role has administrator permissions in the new member account.
     */
   val roleName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

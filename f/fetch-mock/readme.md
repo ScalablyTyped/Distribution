@@ -1,7 +1,7 @@
 
 # Scala.js typings for fetch-mock
 
-Typings are for version 7.2
+Typings are for version 7.3
 
 ## Library description:
 Mock http requests made using fetch (or isomorphic-fetch)
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for fetch-mock 7.2
+// Type definitions for fetch-mock 7.3
 // Project: https://github.com/wheresrhys/fetch-mock, http://www.wheresrhys.co.uk/fetch-mock
 // Definitions by: Alexey Svetliakov <https://github.com/asvetliakov>
 //                 Tamir Duberstein <https://github.com/tamird>
@@ -46,6 +46,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Fumiaki Matsushima <https://github.com/mtsmfm>
 //                 Colin Doig <https://github.com/captain-igloo>
 //                 Felix Chen <https://github.com/ChenNima>
+//                 Katsuya Hino <https://github.com/dobogo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for microevent_dot_ts
 
-Typings are for version 0.1.0
+Typings are for version 0.1.1
 
 ## Library description:
 Zero cost events

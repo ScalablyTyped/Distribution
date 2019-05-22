@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class EventRuleEventSubscription protected ()
   extends atPulumiAwsLib.lambdaMod.EventSubscription {
+  def this(name: java.lang.String, eventRuleOrSchedule: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule, handler: EventRuleEventHandler) = this()
+  def this(name: java.lang.String, eventRuleOrSchedule: java.lang.String, handler: EventRuleEventHandler) = this()
   def this(name: java.lang.String, eventRuleOrSchedule: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule, handler: EventRuleEventHandler, args: EventRuleEventSubscriptionArgs) = this()
   def this(name: java.lang.String, eventRuleOrSchedule: java.lang.String, handler: EventRuleEventHandler, args: EventRuleEventSubscriptionArgs) = this()
   def this(name: java.lang.String, eventRuleOrSchedule: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule, handler: EventRuleEventHandler, args: EventRuleEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()

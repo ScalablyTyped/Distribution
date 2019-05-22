@@ -23,6 +23,12 @@ object ^ extends js.Object {
   def file(path: java.lang.String): js.Promise[scala.Double] = js.native
   def file(path: java.lang.String, options: Options): js.Promise[scala.Double] = js.native
   /**
+  	Synchronously get the gzipped size of a file.
+  	@returns The size of the file.
+  	*/
+  def fileSync(path: java.lang.String): scala.Double = js.native
+  def fileSync(path: java.lang.String, options: Options): scala.Double = js.native
+  /**
   	@returns A stream that emits a `gzip-size` event and has a `gzipSize` property.
   	*/
   def stream(): GzipSizeStream = js.native

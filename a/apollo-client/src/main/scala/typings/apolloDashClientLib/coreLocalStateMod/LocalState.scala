@@ -42,7 +42,6 @@ class LocalState[TCacheShape] protected () extends js.Object {
   def setFragmentMatcher(fragmentMatcher: FragmentMatcher): scala.Unit = js.native
   def setResolvers(resolvers: apolloDashClientLib.coreTypesMod.Resolvers): scala.Unit = js.native
   def setResolvers(resolvers: js.Array[apolloDashClientLib.coreTypesMod.Resolvers]): scala.Unit = js.native
-  def shouldForceResolver(field: graphqlLib.languageAstMod.FieldNode): scala.Boolean = js.native
   def shouldForceResolvers(document: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
 }
 

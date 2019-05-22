@@ -50,5 +50,6 @@ package object styledDashSystemMod {
     styledDashSystemLib.styledDashSystemLibStrings.pt | styledDashSystemLib.styledDashSystemLibStrings.paddingTop
   ]
   type ResponsiveValue[T] = T | (js.Array[T | scala.Null]) | org.scalablytyped.runtime.StringDictionary[T]
+  type Scale = js.Object | (js.Array[java.lang.String | scala.Double])
   type TLengthStyledSystem = java.lang.String | styledDashSystemLib.styledDashSystemLibNumbers.`0` | scala.Double
 }

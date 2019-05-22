@@ -19,6 +19,10 @@ trait AccountArgs extends js.Object {
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * Parent Organizational Unit ID or Root ID for the account. Defaults to the Organization default Root ID. A configuration must be present for this argument to perform drift detection.
+    */
+  val parentId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The name of an IAM role that Organizations automatically preconfigures in the new member account. This role trusts the master account, allowing users in the master account to assume the role, as permitted by the master account administrator. The role has administrator permissions in the new member account.
     */
   val roleName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -30,11 +34,13 @@ object AccountArgs {
     email: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     iamUserAccessToBilling: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    parentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): AccountArgs = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     if (iamUserAccessToBilling != null) __obj.updateDynamic("iamUserAccessToBilling")(iamUserAccessToBilling.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
     if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountArgs]
   }

@@ -55,6 +55,7 @@ object snsNs extends js.Object {
   @js.native
   class TopicEventSubscription protected ()
     extends atPulumiAwsLib.snsMod.TopicEventSubscription {
+    def this(name: java.lang.String, topic: atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic, handler: atPulumiAwsLib.snsSnsMixinsMod.TopicEventHandler) = this()
     def this(name: java.lang.String, topic: atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic, handler: atPulumiAwsLib.snsSnsMixinsMod.TopicEventHandler, args: atPulumiAwsLib.snsSnsMixinsMod.TopicEventSubscriptionArgs) = this()
     def this(name: java.lang.String, topic: atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic, handler: atPulumiAwsLib.snsSnsMixinsMod.TopicEventHandler, args: atPulumiAwsLib.snsSnsMixinsMod.TopicEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   }

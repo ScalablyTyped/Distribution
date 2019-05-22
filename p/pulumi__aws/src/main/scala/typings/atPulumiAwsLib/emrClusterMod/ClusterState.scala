@@ -36,11 +36,17 @@ trait ClusterState extends js.Object {
     */
   val configurationsJson: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * Number of Amazon EC2 instances used to execute the job flow. EMR will use one node as the cluster's master node and use the remainder of the nodes (`core_instance_count`-1) as core nodes. Cannot be specified if `instance_groups` is set. Default `1`
+    * Use the `core_instance_group` configuration block `instance_count` argument instead. Number of Amazon EC2 instances used to execute the job flow. EMR will use one node as the cluster's master node and use the remainder of the nodes (`core_instance_count`-1) as core nodes. Cannot be specified if `core_instance_group` or `instance_group` configuration blocks are set. Default `1`
     */
   val coreInstanceCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
-    * The EC2 instance type of the slave nodes. Cannot be specified if `instance_groups` is set
+    * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [core node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-core). Cannot be specified if `core_instance_count` argument, `core_instance_type` argument, or `instance_group` configuration blocks are set. Detailed below.
+    */
+  val coreInstanceGroup: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPriceEbsConfigs]
+  ] = js.undefined
+  /**
+    * Use the `core_instance_group` configuration block `instance_type` argument instead. The EC2 instance type of the slave nodes. Cannot be specified if `core_instance_group` or `instance_group` configuration blocks are set.
     */
   val coreInstanceType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -58,11 +64,13 @@ trait ClusterState extends js.Object {
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups]
   ] = js.undefined
   /**
-    * A list of `instance_group` objects for each instance group in the cluster. Exactly one of `master_instance_type` and `instance_group` must be specified. If `instance_group` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Defined below
+    * Use the `master_instance_group` configuration block, `core_instance_group` configuration block and [`aws_emr_instance_group` resource(s)](https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html) instead. A list of `instance_group` objects for each instance group in the cluster. Exactly one of `master_instance_type` and `instance_group` must be specified. If `instance_group` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `master_instance_group` or `core_instance_group` configuration blocks are set. Defined below
     */
   val instanceGroups: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
-      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPrice]]
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPriceEbsConfigsId]
+      ]
     ]
   ] = js.undefined
   /**
@@ -80,11 +88,16 @@ trait ClusterState extends js.Object {
     */
   val logUri: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The EC2 instance type of the master node. Exactly one of `master_instance_type` and `instance_group` must be specified.
+    * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [master node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-master). Cannot be specified if `master_instance_type` argument or `instance_group` configuration blocks are set. Detailed below.
+    */
+  val masterInstanceGroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BidPriceEbsConfigs]] = js.undefined
+  /**
+    * Use the `master_instance_group` configuration block `instance_type` argument instead. The EC2 instance type of the master node. Cannot be specified if `master_instance_group` or `instance_group` configuration blocks are set.
     */
   val masterInstanceType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The public DNS name of the master EC2 instance.
+    * * `core_instance_group.0.id` - Core node type Instance Group ID, if using Instance Group for this node type.
     */
   val masterPublicDns: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -142,16 +155,20 @@ object ClusterState {
     configurations: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     configurationsJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     coreInstanceCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    coreInstanceGroup: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPriceEbsConfigs] = null,
     coreInstanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     customAmiId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ebsRootVolumeSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     ec2Attributes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups] = null,
     instanceGroups: atPulumiPulumiLib.outputMod.Input[
-      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPrice]]
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPriceEbsConfigsId]
+      ]
     ] = null,
     keepJobFlowAliveWhenNoSteps: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     kerberosAttributes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdDomainJoinPasswordAdDomainJoinUser] = null,
     logUri: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterInstanceGroup: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BidPriceEbsConfigs] = null,
     masterInstanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     masterPublicDns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -177,6 +194,7 @@ object ClusterState {
     if (configurations != null) __obj.updateDynamic("configurations")(configurations.asInstanceOf[js.Any])
     if (configurationsJson != null) __obj.updateDynamic("configurationsJson")(configurationsJson.asInstanceOf[js.Any])
     if (coreInstanceCount != null) __obj.updateDynamic("coreInstanceCount")(coreInstanceCount.asInstanceOf[js.Any])
+    if (coreInstanceGroup != null) __obj.updateDynamic("coreInstanceGroup")(coreInstanceGroup.asInstanceOf[js.Any])
     if (coreInstanceType != null) __obj.updateDynamic("coreInstanceType")(coreInstanceType.asInstanceOf[js.Any])
     if (customAmiId != null) __obj.updateDynamic("customAmiId")(customAmiId.asInstanceOf[js.Any])
     if (ebsRootVolumeSize != null) __obj.updateDynamic("ebsRootVolumeSize")(ebsRootVolumeSize.asInstanceOf[js.Any])
@@ -185,6 +203,7 @@ object ClusterState {
     if (keepJobFlowAliveWhenNoSteps != null) __obj.updateDynamic("keepJobFlowAliveWhenNoSteps")(keepJobFlowAliveWhenNoSteps.asInstanceOf[js.Any])
     if (kerberosAttributes != null) __obj.updateDynamic("kerberosAttributes")(kerberosAttributes.asInstanceOf[js.Any])
     if (logUri != null) __obj.updateDynamic("logUri")(logUri.asInstanceOf[js.Any])
+    if (masterInstanceGroup != null) __obj.updateDynamic("masterInstanceGroup")(masterInstanceGroup.asInstanceOf[js.Any])
     if (masterInstanceType != null) __obj.updateDynamic("masterInstanceType")(masterInstanceType.asInstanceOf[js.Any])
     if (masterPublicDns != null) __obj.updateDynamic("masterPublicDns")(masterPublicDns.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

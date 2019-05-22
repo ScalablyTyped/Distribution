@@ -19,9 +19,9 @@ class Job protected ()
   def this(name: java.lang.String, args: JobArgs) = this()
   def this(name: java.lang.String, args: JobArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * The number of AWS Glue data processing units (DPUs) to allocate to this Job. At least 2 DPUs need to be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory.
+    * **DEPRECATED** (Optional) The number of AWS Glue data processing units (DPUs) to allocate to this Job. At least 2 DPUs need to be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory.
     */
-  val allocatedCapacity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
+  val allocatedCapacity: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The command of the job. Defined below.
     */
@@ -42,6 +42,10 @@ class Job protected ()
     * Execution property of the job. Defined below.
     */
   val executionProperty: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_MaxConcurrentRuns] = js.native
+  /**
+    * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
+    */
+  val maxCapacity: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * The maximum number of times to retry this job if it fails.
     */

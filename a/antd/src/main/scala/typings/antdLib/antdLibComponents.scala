@@ -78,6 +78,8 @@ object antdLibComponents {
   type BreadcrumbItemProps = antdLib.esBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
   @scala.inline
   def Button: reactLib.reactMod.ComponentType[antdLib.esButtonButtonMod.ButtonProps] = js.constructorOf[antdLib.esButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esButtonButtonMod.ButtonProps]]
+  @scala.inline
+  def ButtonProps: antdLib.esButtonButtonMod.ButtonProps.type = antdLib.esButtonButtonMod.ButtonProps
   type ButtonProps = antdLib.esButtonButtonMod.ButtonProps
   @scala.inline
   def ButtonDashGroup: reactLib.reactMod.ComponentType[antdLib.esButtonButtonDashGroupMod.ButtonGroupProps] = antdLib.esButtonButtonDashGroupMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esButtonButtonDashGroupMod.ButtonGroupProps]]
@@ -474,6 +476,8 @@ object antdLibComponents {
   type TimelineItemProps = antdLib.esTimelineTimelineItemMod.TimeLineItemProps
   @scala.inline
   def Title: reactLib.reactMod.ComponentType[antdLib.esTypographyTitleMod.TitleProps] = antdLib.esTypographyTitleMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTypographyTitleMod.TitleProps]]
+  @scala.inline
+  def TitleProps: antdLib.esTypographyTitleMod.TitleProps.type = antdLib.esTypographyTitleMod.TitleProps
   type TitleProps = antdLib.esTypographyTitleMod.TitleProps
   @scala.inline
   def Tooltip: reactLib.reactMod.ComponentType[antdLib.esTooltipMod.TooltipProps] = js.constructorOf[antdLib.esTooltipMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTooltipMod.TooltipProps]]

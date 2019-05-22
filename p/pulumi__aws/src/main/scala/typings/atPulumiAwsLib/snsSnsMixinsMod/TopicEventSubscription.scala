@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TopicEventSubscription protected ()
   extends atPulumiAwsLib.lambdaMod.EventSubscription {
+  def this(name: java.lang.String, topic: atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic, handler: TopicEventHandler) = this()
   def this(name: java.lang.String, topic: atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic, handler: TopicEventHandler, args: TopicEventSubscriptionArgs) = this()
   def this(name: java.lang.String, topic: atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic, handler: TopicEventHandler, args: TopicEventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   /**

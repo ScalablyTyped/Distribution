@@ -31,6 +31,10 @@ trait ApplicationVersionArgs extends js.Object {
     * A unique name for the this Application Version.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Key-value mapping of tags for the Elastic Beanstalk Application Version.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object ApplicationVersionArgs {
@@ -41,12 +45,14 @@ object ApplicationVersionArgs {
     key: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     forceDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ApplicationVersionArgs = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (forceDelete != null) __obj.updateDynamic("forceDelete")(forceDelete.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationVersionArgs]
   }
 }

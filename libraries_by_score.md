@@ -1142,7 +1142,6 @@
 | 0.7614678835757402 | [colorette](./c/colorette) | Node.js library for colorizing text using ANSI esc
 | 0.761423656595895 | [lodash_dot_pull](./l/lodash_dot_pull) | The lodash method _.pull exported as a module.
 | 0.7614183095099342 | [micro](./m/micro) | Asynchronous HTTP microservices
-| 0.7612944132051647 | [apollo-link-dedup](./a/apollo-link-dedup) | Deduplicates queries that are currently on the wir
 | 0.7612457770827332 | [d3-scale-chromatic](./d/d3-scale-chromatic) | Sequential, diverging and categorical color scheme
 | 0.7612187716252091 | [word-wrap](./w/word-wrap) | Wrap words to a specified length.
 | 0.761216763709208 | [email-validator](./e/email-validator) | Provides a fast, pretty robust e-mail validator. O

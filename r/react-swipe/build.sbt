@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-swipe"
-version := "6.0-dt-20190205Z-fcdcc4"
+version := "6.0-dt-20190205Z-34d96c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190508Z-56dde3",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-43357b",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "swipe" % "2.0-dt-20190322Z-e1841a")
 publishArtifact in packageDoc := false

@@ -9,6 +9,7 @@ package object StatsNs {
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
     - webpackLib.webpackLibStrings.`errors-only`
+    - webpackLib.webpackLibStrings.`errors-warnings`
     - webpackLib.webpackLibStrings.minimal
     - webpackLib.webpackLibStrings.none
     - webpackLib.webpackLibStrings.normal

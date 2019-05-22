@@ -13,8 +13,7 @@ trait ClusterArgs extends js.Object {
     */
   val applyImmediately: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
-    * A list of EC2 Availability Zones that
-    * instances in the DB cluster can be created in
+    * A list of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created. RDS automatically assigns 3 AZs if less than 3 AZs are configured, which will show as a difference requiring resource recreation next Terraform apply. It is recommended to specify 3 AZs or use [the `lifecycle` configuration block `ignore_changes` argument](https://www.terraform.io/docs/configuration/resources.html#ignore_changes) if necessary.
     */
   val availabilityZones: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
@@ -41,6 +40,10 @@ trait ClusterArgs extends js.Object {
   val clusterMembers: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
+  /**
+    * Copy all Cluster `tags` to snapshots. Default is `false`.
+    */
+  val copyTagsToSnapshot: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * Name for an automatically created database on cluster creation. There are different naming restrictions per database engine: [RDS Naming Constraints][5]
     */
@@ -172,6 +175,7 @@ object ClusterArgs {
     clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterIdentifierPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterMembers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    copyTagsToSnapshot: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     databaseName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     dbClusterParameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     dbSubnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -208,6 +212,7 @@ object ClusterArgs {
     if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
     if (clusterIdentifierPrefix != null) __obj.updateDynamic("clusterIdentifierPrefix")(clusterIdentifierPrefix.asInstanceOf[js.Any])
     if (clusterMembers != null) __obj.updateDynamic("clusterMembers")(clusterMembers.asInstanceOf[js.Any])
+    if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     if (dbClusterParameterGroupName != null) __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName.asInstanceOf[js.Any])
     if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])

@@ -42,6 +42,10 @@ trait MaintenanceWindowState extends js.Object {
     * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to begin the maintenance window.
     */
   val startDate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
 object MaintenanceWindowState {
@@ -55,7 +59,8 @@ object MaintenanceWindowState {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     schedule: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     scheduleTimezone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    startDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    startDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): MaintenanceWindowState = {
     val __obj = js.Dynamic.literal()
     if (allowUnassociatedTargets != null) __obj.updateDynamic("allowUnassociatedTargets")(allowUnassociatedTargets.asInstanceOf[js.Any])
@@ -67,6 +72,7 @@ object MaintenanceWindowState {
     if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
     if (scheduleTimezone != null) __obj.updateDynamic("scheduleTimezone")(scheduleTimezone.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowState]
   }
 }

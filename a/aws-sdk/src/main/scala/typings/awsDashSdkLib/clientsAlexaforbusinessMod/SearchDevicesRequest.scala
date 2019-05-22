@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SearchDevicesRequest extends js.Object {
   /**
-    * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus, DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, UnassociatedOnly, and ConnectionStatus (ONLINE and OFFLINE).
+    * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus, DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, UnassociatedOnly, ConnectionStatus (ONLINE and OFFLINE), NetworkProfileName, NetworkProfileArn, Feature, and FailureCode.
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait SearchDevicesRequest extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The sort order to use in listing the specified set of devices. Supported sort keys are DeviceName, DeviceStatus, RoomName, DeviceType, DeviceSerialNumber, and ConnectionStatus.
+    * The sort order to use in listing the specified set of devices. Supported sort keys are DeviceName, DeviceStatus, RoomName, DeviceType, DeviceSerialNumber, ConnectionStatus, NetworkProfileName, NetworkProfileArn, Feature, and FailureCode.
     */
   var SortCriteria: js.UndefOr[SortList] = js.undefined
 }

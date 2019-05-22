@@ -199,6 +199,10 @@ object webpackLibStrings {
     extends webpackLib.webpackMod.StatsNs._Preset
   
   @js.native
+  sealed trait `errors-warnings`
+    extends webpackLib.webpackMod.StatsNs._Preset
+  
+  @js.native
   sealed trait eval
     extends webpackLib.webpackMod.OptionsNs._Devtool
   
@@ -435,6 +439,8 @@ object webpackLibStrings {
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
+  @scala.inline
+  def `errors-warnings`: `errors-warnings` = "errors-warnings".asInstanceOf[`errors-warnings`]
   @scala.inline
   def eval: eval = "eval".asInstanceOf[eval]
   @scala.inline

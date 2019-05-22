@@ -14,6 +14,7 @@ object ServerOptionsAsSecure {
   def apply(
     https: nodeLib.http2Mod.SecureServerOptions,
     bodyLimit: scala.Int | scala.Double = null,
+    disableRequestLogging: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
     logger: js.Any = null,
     maxParamLength: scala.Int | scala.Double = null,
@@ -26,6 +27,7 @@ object ServerOptionsAsSecure {
   ): ServerOptionsAsSecure = {
     val __obj = js.Dynamic.literal(https = https)
     if (bodyLimit != null) __obj.updateDynamic("bodyLimit")(bodyLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableRequestLogging)) __obj.updateDynamic("disableRequestLogging")(disableRequestLogging)
     if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash)
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (maxParamLength != null) __obj.updateDynamic("maxParamLength")(maxParamLength.asInstanceOf[js.Any])

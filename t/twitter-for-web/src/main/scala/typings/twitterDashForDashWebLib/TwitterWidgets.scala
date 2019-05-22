@@ -53,8 +53,12 @@ trait TwitterWidgets extends js.Object {
     * @param target The element in which to render the widget.
     * @param options An object hash of additional options to configure the widget.
     */
-  def createTimeline(widgetId: java.lang.String, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
-  def createTimeline(widgetId: java.lang.String, target: stdLib.HTMLElement, options: TwitterTimelineWidgetOptions): js.Promise[stdLib.HTMLElement] = js.native
+  def createTimeline(source: TwitterTimelineWidgetDataSource, target: stdLib.HTMLElement): js.Promise[stdLib.HTMLElement] = js.native
+  def createTimeline(
+    source: TwitterTimelineWidgetDataSource,
+    target: stdLib.HTMLElement,
+    options: TwitterTimelineWidgetOptions
+  ): js.Promise[stdLib.HTMLElement] = js.native
   /**
     * Create an embedded Tweet for a Tweet.
     *

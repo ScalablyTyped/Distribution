@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Twitter extends js.Object {
+/**
+  * The interface for Twitter for Websites.
+  */
+trait Twitter extends TwitterLike {
   /**
     * Twitter events.
     */
@@ -14,19 +17,13 @@ trait Twitter extends js.Object {
     * Twitter widgets.
     */
   var widgets: TwitterWidgets
-  /**
-    * All JavaScript code depending on widgets.js should execute on or after this function.
-    *
-    * @param callback A callback function which will be invoked when widgets.js is ready.
-    */
-  def ready(callback: js.Function1[/* twttr */ this.type, scala.Unit]): scala.Unit
 }
 
 object Twitter {
   @scala.inline
   def apply(
     events: TwitterEvents,
-    ready: js.Function1[Twitter, scala.Unit] => scala.Unit,
+    ready: js.Function1[/* twttr */ Twitter, scala.Unit] => scala.Unit,
     widgets: TwitterWidgets
   ): Twitter = {
     val __obj = js.Dynamic.literal(events = events, ready = js.Any.fromFunction1(ready), widgets = widgets)

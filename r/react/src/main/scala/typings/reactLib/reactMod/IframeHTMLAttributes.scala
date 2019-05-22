@@ -14,6 +14,7 @@ trait IframeHTMLAttributes[T] extends HTMLAttributes[T] {
   var marginHeight: js.UndefOr[scala.Double] = js.undefined
   var marginWidth: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
+  var referrerPolicy: js.UndefOr[java.lang.String] = js.undefined
   var sandbox: js.UndefOr[java.lang.String] = js.undefined
   var scrolling: js.UndefOr[java.lang.String] = js.undefined
   var seamless: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,6 +35,7 @@ object IframeHTMLAttributes {
     marginHeight: scala.Int | scala.Double = null,
     marginWidth: scala.Int | scala.Double = null,
     name: java.lang.String = null,
+    referrerPolicy: java.lang.String = null,
     sandbox: java.lang.String = null,
     scrolling: java.lang.String = null,
     seamless: js.UndefOr[scala.Boolean] = js.undefined,
@@ -51,6 +53,7 @@ object IframeHTMLAttributes {
     if (marginHeight != null) __obj.updateDynamic("marginHeight")(marginHeight.asInstanceOf[js.Any])
     if (marginWidth != null) __obj.updateDynamic("marginWidth")(marginWidth.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
     if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling)
     if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless)

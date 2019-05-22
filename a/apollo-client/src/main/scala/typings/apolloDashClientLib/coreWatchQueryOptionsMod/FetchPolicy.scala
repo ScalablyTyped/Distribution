@@ -7,11 +7,10 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - apolloDashClientLib.apolloDashClientLibStrings.`cache-first`
-  - apolloDashClientLib.apolloDashClientLibStrings.`cache-and-network`
   - apolloDashClientLib.apolloDashClientLibStrings.`network-only`
   - apolloDashClientLib.apolloDashClientLibStrings.`cache-only`
   - apolloDashClientLib.apolloDashClientLibStrings.`no-cache`
   - apolloDashClientLib.apolloDashClientLibStrings.standby
 */
-trait FetchPolicy extends js.Object
+trait FetchPolicy extends WatchQueryFetchPolicy
 

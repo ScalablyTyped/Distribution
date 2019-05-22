@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- apolloDashClientLib.coreWatchQueryOptionsMod.ModifiableWatchQueryOptions because var conflicts: errorPolicy, fetchPolicy, fetchResults, variables. Inlined pollInterval, notifyOnNetworkStatusChange */ trait WatchQueryOptions[TVariables] extends QueryOptions[TVariables] {
-  var notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined
-  var pollInterval: js.UndefOr[scala.Double] = js.undefined
+trait WatchQueryOptions[TVariables] extends ModifiableWatchQueryOptions[TVariables] {
+  var fetchPolicy: js.UndefOr[WatchQueryFetchPolicy] = js.undefined
 }
 
 object WatchQueryOptions {
@@ -17,11 +15,12 @@ object WatchQueryOptions {
     query: graphqlLib.languageAstMod.DocumentNode,
     context: js.Any = null,
     errorPolicy: ErrorPolicy = null,
-    fetchPolicy: FetchPolicy = null,
+    fetchPolicy: WatchQueryFetchPolicy = null,
     fetchResults: js.UndefOr[scala.Boolean] = js.undefined,
     metadata: js.Any = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
     pollInterval: scala.Int | scala.Double = null,
+    returnPartialData: js.UndefOr[scala.Boolean] = js.undefined,
     variables: TVariables = null
   ): WatchQueryOptions[TVariables] = {
     val __obj = js.Dynamic.literal(query = query)
@@ -32,6 +31,7 @@ object WatchQueryOptions {
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange)
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchQueryOptions[TVariables]]
   }

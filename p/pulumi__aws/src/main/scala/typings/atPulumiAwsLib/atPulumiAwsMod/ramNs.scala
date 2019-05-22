@@ -51,6 +51,11 @@ object ramNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.ramResourceShareMod.ResourceShareArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getResourceShare(args: atPulumiAwsLib.ramGetResourceShareMod.GetResourceShareArgs): js.Promise[atPulumiAwsLib.ramGetResourceShareMod.GetResourceShareResult] = js.native
+  def getResourceShare(
+    args: atPulumiAwsLib.ramGetResourceShareMod.GetResourceShareArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.ramGetResourceShareMod.GetResourceShareResult] = js.native
   /* static members */
   @js.native
   object PrincipalAssociation extends js.Object {

@@ -40,6 +40,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: Cyril Schumacher <https://github.com/cyrilschumacher>
 //                 Daniel Roth <https://github.com/DaIgeb>
 //                 Chris Barr <https://github.com/chrismbarr>
+//                 HitkoDev <https://github.com/HitkoDev>
 // Definitions:  https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/file-saver
 
 ```

@@ -43,6 +43,10 @@ class GraphQLApi protected ()
     */
   val schema: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * Map of URIs associated with the API. e.g. `uris["GRAPHQL"] = https://ID.appsync-api.REGION.amazonaws.com/graphql`
     */
   val uris: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native

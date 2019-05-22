@@ -66,6 +66,10 @@ class AnalyticsApplication protected ()
     */
   val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * Key-value mapping of tags for the Kinesis Analytics Application.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * The Version of the application.
     */
   val version: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native

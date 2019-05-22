@@ -50,6 +50,10 @@ class Activation protected ()
     * The maximum number of managed instances you want to register. The default value is 1 instance.
     */
   val registrationLimit: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
+  /**
+    * A mapping of tags to assign to the object.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

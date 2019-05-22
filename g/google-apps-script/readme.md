@@ -49,10 +49,11 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: motemen <https://github.com/motemen/>
 // Type definitions for Google Apps Script 2019-01-23
 // Type definitions for Google Apps Script 2019-04-09
+// Type definitions for Google Apps Script 2019-05-20
 // Type definitions for Google Apps Script 2018-07-11
-// Type definitions for Google Apps Script 2019-04-26
 // Type definitions for Google Apps Script 2019-05-06
 // Type definitions for Google Apps Script 2018-12-26
+// Type definitions for Google Apps Script 2019-04-26
 // Type definitions for Google Apps Script 2015-11-12
 // Type definitions for Google Apps Script 2018-08-08
 //                 takoyaki9n <https://github.com/takoyaki9n>

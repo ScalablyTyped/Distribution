@@ -12,9 +12,9 @@ package object coreWatchQueryOptionsMod {
     scala.Unit
   ]
   type RefetchQueryDescription = js.Array[java.lang.String | apolloDashClientLib.coreTypesMod.PureQueryOptions]
-  type UpdateQueryFn[TData, TVariables, TSubscriptionData] = js.Function2[
+  type UpdateQueryFn[TData, TSubscriptionVariables, TSubscriptionData] = js.Function2[
     /* previousQueryResult */ TData, 
-    /* options */ apolloDashClientLib.Anon_SubscriptionData[TSubscriptionData, TVariables], 
+    /* options */ apolloDashClientLib.Anon_SubscriptionData[TSubscriptionData, TSubscriptionVariables], 
     TData
   ]
 }

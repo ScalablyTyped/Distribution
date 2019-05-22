@@ -69,7 +69,7 @@ class ^ () extends ForkTsCheckerWebpackPlugin {
   /* CompleteClass */
   override var memoryLimit: js.Any = js.native
   /* CompleteClass */
-  override var nodeArgs: js.Any = js.native
+  override var nodeArgs: js.Array[java.lang.String] = js.native
   /* CompleteClass */
   override val options: stdLib.Partial[Options] = js.native
   /* CompleteClass */

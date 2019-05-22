@@ -10,13 +10,13 @@ trait RavenStatic extends js.Object {
   var Plugins: org.scalablytyped.runtime.StringDictionary[RavenPlugin] = js.native
   /** Raven.js version. */
   var VERSION: java.lang.String = js.native
-  /*
+  /**
     * Adds a plugin to Raven
     *
     * @return {Raven}
     */
   def addPlugin(plugin: RavenPlugin, pluginArgs: js.Any*): RavenStatic = js.native
-  /*
+  /**
     * Allow Raven to be configured as soon as it is loaded
     * It uses a global RavenConfig = {dsn: '...', config: {}}
     *
@@ -25,20 +25,16 @@ trait RavenStatic extends js.Object {
   def afterLoad(): scala.Unit = js.native
   /** Log a breadcrumb */
   def captureBreadcrumb(crumb: Breadcrumb): RavenStatic = js.native
-  def captureException(ex: java.lang.String): RavenStatic = js.native
-  def captureException(ex: java.lang.String, options: RavenOptions): RavenStatic = js.native
-  /*
+  /**
     * Manually capture an exception and send it over to Sentry
     *
     * @param {error|ErrorEvent|string} ex An exception to be logged
     * @param {object} options A specific set of options for this error [optional]
     * @return {Raven}
     */
-  def captureException(ex: stdLib.Error): RavenStatic = js.native
-  def captureException(ex: stdLib.ErrorEvent): RavenStatic = js.native
-  def captureException(ex: stdLib.ErrorEvent, options: RavenOptions): RavenStatic = js.native
-  def captureException(ex: stdLib.Error, options: RavenOptions): RavenStatic = js.native
-  /*
+  def captureException(ex: js.Any): RavenStatic = js.native
+  def captureException(ex: js.Any, options: RavenOptions): RavenStatic = js.native
+  /**
     * Manually send a message to Sentry
     *
     * @param {string} msg A plain message to be captured in Sentry
@@ -49,7 +45,7 @@ trait RavenStatic extends js.Object {
   def captureMessage(msg: java.lang.String, options: RavenOptions): RavenStatic = js.native
   /** Clear all of the context. */
   def clearContext(): RavenStatic = js.native
-  /*
+  /**
     * Configure Raven with a DSN and extra options
     *
     * @param {string} dsn The public Sentry DSN
@@ -58,7 +54,7 @@ trait RavenStatic extends js.Object {
     */
   def config(dsn: java.lang.String): RavenStatic = js.native
   def config(dsn: java.lang.String, options: RavenOptions): RavenStatic = js.native
-  /*
+  /**
     * Wrap code within a context so Raven can capture errors
     * reliably across domains that is executed immediately.
     *
@@ -70,7 +66,7 @@ trait RavenStatic extends js.Object {
   def context(options: RavenOptions, func: js.Function, args: js.Any*): scala.Unit = js.native
   /** Get a copy of the current context. This cannot be mutated.*/
   def getContext(): js.Object = js.native
-  /*
+  /**
     * Installs a global window.onerror error handler
     * to capture and report uncaught exceptions.
     * At this point, install() is required to be called due
@@ -85,7 +81,7 @@ trait RavenStatic extends js.Object {
   def lastEventId(): java.lang.String = js.native
   /** Get the latest raw exception that was captured by Raven.*/
   def lastException(): stdLib.Error = js.native
-  /*
+  /**
     * Allow multiple versions of Raven to be installed.
     * Strip Raven from the global context and returns the instance.
     *
@@ -95,7 +91,7 @@ trait RavenStatic extends js.Object {
   /** Specify a callback function that allows you to mutate or filter breadcrumbs when they are captured. */
   def setBreadcrumbCallback(): RavenStatic = js.native
   def setBreadcrumbCallback(callback: RavenCallback): RavenStatic = js.native
-  /*
+  /**
     * Configure Raven DSN
     *
     * @param {string} dsn The public Sentry DSN
@@ -106,7 +102,7 @@ trait RavenStatic extends js.Object {
   def setDataCallback(callback: RavenCallback): RavenStatic = js.native
   /** Set environment of application */
   def setEnvironment(environment: java.lang.String): RavenStatic = js.native
-  /*
+  /**
     * Merge extra attributes to be sent along with the payload.
     *
     * @param {object} context A set of data to be merged with the current extra context data [optional]
@@ -120,7 +116,7 @@ trait RavenStatic extends js.Object {
   /** Specify a callback function that allows you to apply your own filters to determine if the message should be sent to Sentry. */
   def setShouldSendCallback(): RavenStatic = js.native
   def setShouldSendCallback(callback: RavenCallback): RavenStatic = js.native
-  /*
+  /**
     * Merge tags to be sent along with the payload.
     *
     * @param {object} tags A set of data to be merged with the current tag context data [optional]
@@ -131,7 +127,7 @@ trait RavenStatic extends js.Object {
   def setTagsContext(tags: js.Object): RavenStatic = js.native
   /** Override the default HTTP data transport handler. */
   def setTransport(transportFunction: js.Function1[/* options */ RavenTransportOptions, scala.Unit]): RavenStatic = js.native
-  /*
+  /**
     * Set/Clear a user to be sent along with the payload.
     *
     * @param {object} user An object representing user data [optional]
@@ -143,13 +139,13 @@ trait RavenStatic extends js.Object {
   /** Show Sentry user feedback dialog */
   def showReportDialog(): scala.Unit = js.native
   def showReportDialog(options: js.Object): scala.Unit = js.native
-  /*
+  /**
     * Uninstalls the global error handler.
     *
     * @return {Raven}
     */
   def uninstall(): RavenStatic = js.native
-  /*
+  /**
     * Wrap code within a context and returns back a new function to be executed
     *
     * @param {object} options A specific set of options for this context [optional]

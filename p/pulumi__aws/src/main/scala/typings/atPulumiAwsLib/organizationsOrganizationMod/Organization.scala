@@ -20,13 +20,21 @@ class Organization protected ()
   def this(name: java.lang.String, args: OrganizationArgs) = this()
   def this(name: java.lang.String, args: OrganizationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * ARN of the organization
+    * List of organization accounts (including the master account). All elements have these attributes:
+    */
+  val accounts: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ArnEmail]] = js.native
+  /**
+    * ARN of the root
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `feature_set` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
     */
   val awsServiceAccessPrincipals: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  /**
+    * List of Organizations policy types to enable in the Organization Root. Organization must have `feature_set` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+    */
+  val enabledPolicyTypes: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Specify "ALL" (default) or "CONSOLIDATED_BILLING".
     */
@@ -43,6 +51,10 @@ class Organization protected ()
     * Identifier of the master account
     */
   val masterAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * List of organization roots. All elements have these attributes:
+    */
+  val roots: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_ArnId]] = js.native
 }
 
 /* static members */

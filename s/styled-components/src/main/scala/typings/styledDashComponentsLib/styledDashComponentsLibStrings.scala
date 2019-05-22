@@ -13,9 +13,6 @@ object styledDashComponentsLibStrings {
   sealed trait DeprecatedAttrs extends js.Object
   
   @js.native
-  sealed trait ThemedStyledComponentFactories extends js.Object
-  
-  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -104,6 +101,9 @@ object styledDashComponentsLibStrings {
   
   @js.native
   sealed trait dd extends js.Object
+  
+  @js.native
+  sealed trait defaultProps extends js.Object
   
   @js.native
   sealed trait defs extends js.Object
@@ -545,8 +545,6 @@ object styledDashComponentsLibStrings {
   @scala.inline
   def DeprecatedAttrs: DeprecatedAttrs = "DeprecatedAttrs".asInstanceOf[DeprecatedAttrs]
   @scala.inline
-  def ThemedStyledComponentFactories: ThemedStyledComponentFactories = "ThemedStyledComponentFactories".asInstanceOf[ThemedStyledComponentFactories]
-  @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def abbr: abbr = "abbr".asInstanceOf[abbr]
@@ -606,6 +604,8 @@ object styledDashComponentsLibStrings {
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
+  @scala.inline
+  def defaultProps: defaultProps = "defaultProps".asInstanceOf[defaultProps]
   @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   @scala.inline

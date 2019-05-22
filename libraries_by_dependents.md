@@ -4045,7 +4045,6 @@
 | 10 | [angular-strap](./a/angular-strap) | AngularStrap - AngularJS directives for Bootstrap
 | 10 | [any-db-transaction](./a/any-db-transaction) | Transaction object for Any-DB adapters
 | 10 | [aos](./a/aos) | Animate on scroll library
-| 10 | [apollo-link-dedup](./a/apollo-link-dedup) | Deduplicates queries that are currently on the wir
 | 10 | [app-builder-bin](./a/app-builder-bin) | app-builder precompiled binaries
 | 10 | [app-builder-lib](./a/app-builder-lib) | electron-builder lib
 | 10 | [array-foreach](./a/array-foreach) | Array

@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Event/Breadcrumb Severity. `critical` is for Breadcrumbs only and `fatal` is for Events only. */
 /* Rewritten from type alias, can be one of: 
   - ravenDashJsLib.ravenDashJsLibStrings.critical
+  - ravenDashJsLib.ravenDashJsLibStrings.fatal
   - ravenDashJsLib.ravenDashJsLibStrings.error
   - ravenDashJsLib.ravenDashJsLibStrings.warning
   - ravenDashJsLib.ravenDashJsLibStrings.info
