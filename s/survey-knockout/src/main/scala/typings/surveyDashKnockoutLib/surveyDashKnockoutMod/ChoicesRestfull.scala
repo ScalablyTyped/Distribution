@@ -39,6 +39,7 @@ class ChoicesRestfull () extends Base {
 @JSImport("survey-knockout", "ChoicesRestfull")
 @js.native
 object ChoicesRestfull extends js.Object {
+  var EncodeParameters: scala.Boolean = js.native
   def onBeforeSendRequest(
     sender: surveyDashKnockoutLib.surveyDashKnockoutMod.ChoicesRestfull,
     options: surveyDashKnockoutLib.Anon_Request

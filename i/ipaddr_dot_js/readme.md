@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipaddr_dot_js
 
-Typings are for version 1.8.0
+Typings are for version 1.9.0
 
 ## Library description:
 A library for manipulating IPv4 and IPv6 addresses in JavaScript.

@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSAsExpressionBuilder extends js.Object {
-  def apply(expression: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.TSAsExpression = js.native
-  def from(params: astDashTypesLib.Anon_CommentsExpressionExtra): astDashTypesLib.genNodesMod.TSAsExpression = js.native
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAsExpression = js.native
+  def from(params: astDashTypesLib.Anon_CommentsExpressionExtra): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAsExpression = js.native
 }
 

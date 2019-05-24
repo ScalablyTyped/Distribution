@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabLibComponents {
   @scala.inline
-  def Breadcrumbs: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps] = js.constructorOf[atMaterialDashUiLabLib.breadcrumbsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps]]
-  @scala.inline
-  def BreadcrumbsProps: atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps.type = atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps
-  type BreadcrumbsProps = atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps
-  @scala.inline
   def Slider: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps] = js.constructorOf[atMaterialDashUiLabLib.sliderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps]]
   type SliderProps = atMaterialDashUiLabLib.sliderSliderMod.SliderProps
   @scala.inline
@@ -29,11 +24,6 @@ object atMaterialDashUiLabLibComponents {
   @scala.inline
   def SpeedDialIconProps: atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps.type = atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps
   type SpeedDialIconProps = atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps
-  @scala.inline
-  def ToggleButton: reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps] = js.constructorOf[atMaterialDashUiLabLib.toggleButtonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps]]
-  @scala.inline
-  def ToggleButtonProps: atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps.type = atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps
-  type ToggleButtonProps = atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps
   @scala.inline
   def ToggleButtonGroup: reactLib.reactMod.ComponentType[
     atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps

@@ -120,9 +120,7 @@ trait ButtonProps extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ButtonClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapButtonClassKey] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[ButtonProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -423,7 +421,7 @@ object ButtonProps {
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ButtonClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapButtonClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
     component: reactLib.reactMod.ReactType[ButtonProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

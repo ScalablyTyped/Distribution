@@ -12,118 +12,118 @@ trait ObjectMethodBuilder extends js.Object {
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
-  def from(params: astDashTypesLib.Anon_AccessibilityAsync): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
+  def from(params: astDashTypesLib.Anon_AccessibilityAsync): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod = js.native
 }
 

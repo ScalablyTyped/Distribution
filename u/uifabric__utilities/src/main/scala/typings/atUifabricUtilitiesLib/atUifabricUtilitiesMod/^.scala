@@ -40,6 +40,13 @@ object ^ extends js.Object {
     /* styleProps */ js.UndefOr[TStyleProps], 
     atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet]
   ] = js.native
+  def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](options: atUifabricUtilitiesLib.libClassNamesFunctionMod.IClassNamesFunctionOptions): js.Function2[
+    /* getStyles */ js.UndefOr[
+      atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
+    ], 
+    /* styleProps */ js.UndefOr[TStyleProps], 
+    atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet]
+  ] = js.native
   def createArray[T](size: scala.Double, getItem: js.Function1[/* index */ scala.Double, T]): js.Array[T] = js.native
   def createRef[T](): atUifabricUtilitiesLib.libCreateRefMod.RefObject[T] = js.native
   def css(args: atUifabricUtilitiesLib.libCssMod.ICssInput*): java.lang.String = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/StepLabel/StepLabel.StepLabelClasskey, never> */
 trait StepLabelProps extends js.Object {
   var StepIconComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
-  var StepIconProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps]] = js.undefined
+  var StepIconProps: js.UndefOr[atMaterialDashUiCoreLib.PartialStepIconProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -112,9 +112,7 @@ trait StepLabelProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepLabelClasskey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapStepLabelClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -330,7 +328,7 @@ object StepLabelProps {
   def apply(
     children: reactLib.reactMod.ReactNode,
     StepIconComponent: reactLib.reactMod.ReactType[_] = null,
-    StepIconProps: stdLib.Partial[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps] = null,
+    StepIconProps: atMaterialDashUiCoreLib.PartialStepIconProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
@@ -387,7 +385,7 @@ object StepLabelProps {
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepLabelClasskey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapStepLabelClasskey = null,
     color: java.lang.String = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

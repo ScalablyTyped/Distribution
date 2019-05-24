@@ -9,7 +9,7 @@ trait Action extends js.Object {
   var meta: js.UndefOr[Meta] = js.undefined
   var navKey: js.UndefOr[Nullable[java.lang.String]] = js.undefined
   var payload: js.UndefOr[Payload] = js.undefined
-  var query: js.UndefOr[js.Object] = js.undefined
+  var query: js.UndefOr[Query] = js.undefined
   var `type`: java.lang.String
 }
 
@@ -20,7 +20,7 @@ object Action {
     meta: Meta = null,
     navKey: Nullable[java.lang.String] = null,
     payload: Payload = null,
-    query: js.Object = null
+    query: Query = null
   ): Action = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)

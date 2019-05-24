@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 /* Inlined {[ P in keyof @material-ui/core.@material-ui/core/styles/createPalette.TypeObject ]:? std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeObject[P]>} */
 trait PartialTypeObject extends js.Object {
-  var action: js.UndefOr[stdLib.Partial[TypeAction]] = js.undefined
-  var background: js.UndefOr[stdLib.Partial[TypeBackground]] = js.undefined
+  var action: js.UndefOr[atMaterialDashUiCoreLib.PartialTypeAction] = js.undefined
+  var background: js.UndefOr[atMaterialDashUiCoreLib.PartialTypeBackground] = js.undefined
   var divider: js.UndefOr[stdLib.Partial[TypeDivider]] = js.undefined
-  var text: js.UndefOr[stdLib.Partial[TypeText]] = js.undefined
+  var text: js.UndefOr[atMaterialDashUiCoreLib.PartialTypeText] = js.undefined
 }
 
 object PartialTypeObject {
   @scala.inline
   def apply(
-    action: stdLib.Partial[TypeAction] = null,
-    background: stdLib.Partial[TypeBackground] = null,
+    action: atMaterialDashUiCoreLib.PartialTypeAction = null,
+    background: atMaterialDashUiCoreLib.PartialTypeBackground = null,
     divider: stdLib.Partial[TypeDivider] = null,
-    text: stdLib.Partial[TypeText] = null
+    text: atMaterialDashUiCoreLib.PartialTypeText = null
   ): PartialTypeObject = {
     val __obj = js.Dynamic.literal()
     if (action != null) __obj.updateDynamic("action")(action)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SelectInputProps extends js.Object {
   var IconComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
-  var MenuProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
+  var MenuProps: js.UndefOr[atMaterialDashUiCoreLib.PartialMenuProps] = js.undefined
   var SelectDisplayProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var autoWidth: scala.Boolean
@@ -55,7 +55,7 @@ object SelectInputProps {
     native: scala.Boolean,
     value: java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean]),
     IconComponent: reactLib.reactMod.ReactType[_] = null,
-    MenuProps: stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = null,
+    MenuProps: atMaterialDashUiCoreLib.PartialMenuProps = null,
     SelectDisplayProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,

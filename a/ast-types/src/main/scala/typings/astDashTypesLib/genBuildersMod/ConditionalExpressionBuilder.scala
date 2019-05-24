@@ -11,7 +11,7 @@ trait ConditionalExpressionBuilder extends js.Object {
     test: astDashTypesLib.genKindsMod.ExpressionKind,
     consequent: astDashTypesLib.genKindsMod.ExpressionKind,
     alternate: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.ConditionalExpression = js.native
-  def from(params: astDashTypesLib.Anon_AlternateComments): astDashTypesLib.genNodesMod.ConditionalExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ConditionalExpression = js.native
+  def from(params: astDashTypesLib.Anon_AlternateComments): astDashTypesLib.genNamedTypesMod.namedTypesNs.ConditionalExpression = js.native
 }
 

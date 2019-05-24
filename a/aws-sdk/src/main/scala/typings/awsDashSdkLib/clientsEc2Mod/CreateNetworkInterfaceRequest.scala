@@ -19,7 +19,7 @@ trait CreateNetworkInterfaceRequest extends js.Object {
     */
   var Groups: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
-    * Indicates whether the network interface is an Elastic Fabric Adapter (EFA). Only specify this parameter to create an EFA. For more information, see Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA ENI, omit this parameter. 
+    * Indicates the type of network interface. To create an Elastic Fabric Adapter (EFA), specify efa. For more information, see  Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA, specify interface or omit this parameter.
     */
   var InterfaceType: js.UndefOr[NetworkInterfaceCreationType] = js.undefined
   /**

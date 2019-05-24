@@ -11,7 +11,7 @@ trait TSConstructorTypeBuilder extends js.Object {
     parameters: js.Array[
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
-  ): astDashTypesLib.genNodesMod.TSConstructorType = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNodesMod.TSConstructorType = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructorType = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructorType = js.native
 }
 

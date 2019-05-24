@@ -9,9 +9,7 @@ trait BaseOptions extends js.Object {
   /**
   		HTML tag attributes.
   		*/
-  var attributes: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double | js.Array[java.lang.String]]
-  ] = js.undefined
+  var attributes: js.UndefOr[stringifyDashAttributesLib.stringifyDashAttributesMod.Attributes] = js.undefined
   /**
   		HTML tag name.
   		@default 'div'
@@ -22,7 +20,7 @@ trait BaseOptions extends js.Object {
 object BaseOptions {
   @scala.inline
   def apply(
-    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double | js.Array[java.lang.String]] = null,
+    attributes: stringifyDashAttributesLib.stringifyDashAttributesMod.Attributes = null,
     name: java.lang.String = null
   ): BaseOptions = {
     val __obj = js.Dynamic.literal()

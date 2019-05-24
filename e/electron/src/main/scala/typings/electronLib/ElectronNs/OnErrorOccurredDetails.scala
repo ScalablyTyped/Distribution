@@ -13,6 +13,7 @@ trait OnErrorOccurredDetails extends js.Object {
   var fromCache: scala.Boolean
   var id: scala.Double
   var method: java.lang.String
+  var referrer: java.lang.String
   var resourceType: java.lang.String
   var timestamp: scala.Double
   var url: java.lang.String
@@ -26,12 +27,13 @@ object OnErrorOccurredDetails {
     fromCache: scala.Boolean,
     id: scala.Double,
     method: java.lang.String,
+    referrer: java.lang.String,
     resourceType: java.lang.String,
     timestamp: scala.Double,
     url: java.lang.String,
     webContentsId: scala.Int | scala.Double = null
   ): OnErrorOccurredDetails = {
-    val __obj = js.Dynamic.literal(error = error, fromCache = fromCache, id = id, method = method, resourceType = resourceType, timestamp = timestamp, url = url)
+    val __obj = js.Dynamic.literal(error = error, fromCache = fromCache, id = id, method = method, referrer = referrer, resourceType = resourceType, timestamp = timestamp, url = url)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnErrorOccurredDetails]
   }

@@ -646,8 +646,16 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.MeshDepthMaterial
   
   @js.native
+  class MeshDistanceMaterial ()
+    extends threeLib.threeMod.MeshDistanceMaterial
+  
+  @js.native
   class MeshLambertMaterial ()
     extends threeLib.threeMod.MeshLambertMaterial
+  
+  @js.native
+  class MeshMatcapMaterial ()
+    extends threeLib.threeMod.MeshMatcapMaterial
   
   @js.native
   class MeshNormalMaterial ()
@@ -666,6 +674,10 @@ object THREENs extends js.Object {
   @js.native
   class MeshStandardMaterial ()
     extends threeLib.threeMod.MeshStandardMaterial
+  
+  @js.native
+  class MeshToonMaterial ()
+    extends threeLib.threeMod.MeshToonMaterial
   
   @js.native
   class MultiMaterial ()
@@ -1158,16 +1170,12 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.WebGLClipping
   
   @js.native
-  class WebGLColorBuffer protected ()
-    extends threeLib.threeMod.WebGLColorBuffer {
-    def this(gl: js.Any, state: js.Any) = this()
-  }
+  class WebGLColorBuffer ()
+    extends threeLib.threeMod.WebGLColorBuffer
   
   @js.native
-  class WebGLDepthBuffer protected ()
-    extends threeLib.threeMod.WebGLDepthBuffer {
-    def this(gl: js.Any, state: js.Any) = this()
-  }
+  class WebGLDepthBuffer ()
+    extends threeLib.threeMod.WebGLDepthBuffer
   
   @js.native
   class WebGLExtensions protected ()
@@ -1255,7 +1263,7 @@ object THREENs extends js.Object {
   @js.native
   class WebGLShader protected ()
     extends threeLib.threeMod.WebGLShader {
-    def this(gl: js.Any, `type`: java.lang.String, string: java.lang.String) = this()
+    def this(gl: js.Any, `type`: java.lang.String, string: java.lang.String, debug: scala.Boolean) = this()
   }
   
   @js.native
@@ -1267,14 +1275,12 @@ object THREENs extends js.Object {
   @js.native
   class WebGLState protected ()
     extends threeLib.threeMod.WebGLState {
-    def this(gl: js.Any, extensions: js.Any, paramThreeToGL: js.Function) = this()
+    def this(gl: stdLib.WebGLRenderingContext, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, utils: js.Any, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities) = this()
   }
   
   @js.native
-  class WebGLStencilBuffer protected ()
-    extends threeLib.threeMod.WebGLStencilBuffer {
-    def this(gl: js.Any, state: js.Any) = this()
-  }
+  class WebGLStencilBuffer ()
+    extends threeLib.threeMod.WebGLStencilBuffer
   
   @js.native
   class WebGLTextures protected ()

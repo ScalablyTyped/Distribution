@@ -110,9 +110,7 @@ trait OutlinedInputProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[OutlinedInputClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapOutlinedInputClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -414,7 +412,7 @@ object OutlinedInputProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[OutlinedInputClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapOutlinedInputClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

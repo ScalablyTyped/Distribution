@@ -15,6 +15,10 @@ trait AuthorizeClientVpnIngressRequest extends js.Object {
     */
   var AuthorizeAllGroups: js.UndefOr[Boolean] = js.undefined
   /**
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    */
+  var ClientToken: js.UndefOr[String] = js.undefined
+  /**
     * The ID of the Client VPN endpoint.
     */
   var ClientVpnEndpointId: String
@@ -39,12 +43,14 @@ object AuthorizeClientVpnIngressRequest {
     TargetNetworkCidr: String,
     AccessGroupId: String = null,
     AuthorizeAllGroups: js.UndefOr[Boolean] = js.undefined,
+    ClientToken: String = null,
     Description: String = null,
     DryRun: js.UndefOr[Boolean] = js.undefined
   ): AuthorizeClientVpnIngressRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, TargetNetworkCidr = TargetNetworkCidr)
     if (AccessGroupId != null) __obj.updateDynamic("AccessGroupId")(AccessGroupId)
     if (!js.isUndefined(AuthorizeAllGroups)) __obj.updateDynamic("AuthorizeAllGroups")(AuthorizeAllGroups)
+    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AuthorizeClientVpnIngressRequest]

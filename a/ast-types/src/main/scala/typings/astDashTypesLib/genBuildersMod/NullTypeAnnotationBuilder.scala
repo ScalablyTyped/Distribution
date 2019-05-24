@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NullTypeAnnotationBuilder extends js.Object {
-  def apply(): astDashTypesLib.genNodesMod.NullTypeAnnotation = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNodesMod.NullTypeAnnotation = js.native
+  def apply(): astDashTypesLib.genNamedTypesMod.namedTypesNs.NullTypeAnnotation = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.NullTypeAnnotation = js.native
 }
 

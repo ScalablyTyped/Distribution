@@ -21,8 +21,8 @@ trait BrowserWindowConstructorOptions extends js.Object {
   var autoHideMenuBar: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Window's background color as a hexadecimal value, like #66CD00 or #FFF or
-    * #80FFFFFF (alpha is supported if transparent is set to true). Default is #FFF
-    * (white).
+    * #80FFFFFF (alpha in #AARRGGBB format is supported if transparent is set to
+    * true). Default is #FFF (white).
     */
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -166,7 +166,8 @@ trait BrowserWindowConstructorOptions extends js.Object {
     */
   var thickFrame: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Default window title. Default is "Electron".
+    * Default window title. Default is "Electron". If the HTML tag is defined in the
+    * HTML file loaded by loadURL(), this property will be ignored.
     */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**

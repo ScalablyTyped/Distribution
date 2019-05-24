@@ -15,14 +15,6 @@ trait App extends EventEmitter {
     * production environments.
     */
   var isPackaged: js.UndefOr[scala.Boolean] = js.native
-  /**
-    * A String which is the user agent string Electron will use as a global fallback.
-    * This is the user agent that will be used when no user agent is set at the
-    * webContents or session level.  Useful for ensuring your entire app has the same
-    * user agent.  Set to a custom value as early as possible in your apps
-    * initialization to ensure that your overridden value is used.
-    */
-  var userAgentFallback: js.UndefOr[java.lang.String] = js.native
   @JSName("addListener")
   def `addListener_accessibility-support-changed`(
     event: electronLib.electronLibStrings.`accessibility-support-changed`,
@@ -85,6 +77,11 @@ trait App extends EventEmitter {
       /* error */ java.lang.String, 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def `addListener_gpu-process-crashed`(
@@ -231,8 +228,8 @@ trait App extends EventEmitter {
   def `addListener_window-all-closed`(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
   /**
     * Adds path to the recent documents list. This list is managed by the OS. On
-    * Windows you can visit the list from the task bar, and on macOS you can visit it
-    * from dock menu.
+    * Windows, you can visit the list from the task bar, and on macOS, you can visit
+    * it from dock menu.
     */
   def addRecentDocument(path: java.lang.String): scala.Unit = js.native
   /**
@@ -251,19 +248,14 @@ trait App extends EventEmitter {
     */
   def disableHardwareAcceleration(): scala.Unit = js.native
   /**
-    * Enables mixed sandbox mode on the app. This method can only be called before app
-    * is ready.
-    */
-  def enableMixedSandbox(): scala.Unit = js.native
-  /**
     * Enables full sandbox mode on the app. This method can only be called before app
     * is ready.
     */
   def enableSandbox(): scala.Unit = js.native
   /**
     * Exits immediately with exitCode. exitCode defaults to 0. All windows will be
-    * closed immediately without asking user and the before-quit and will-quit events
-    * will not be emitted.
+    * closed immediately without asking the user, and the before-quit and will-quit
+    * events will not be emitted.
     */
   def exit(): scala.Unit = js.native
   def exit(exitCode: scala.Double): scala.Unit = js.native
@@ -280,13 +272,21 @@ trait App extends EventEmitter {
     * Fetches a path's associated icon. On Windows, there a 2 kinds of icons: On Linux
     * and macOS, icons depend on the application associated with file mime type.
     */
+  def getFileIcon(path: java.lang.String): js.Promise[NativeImage] = js.native
+  /**
+    * Fetches a path's associated icon. On Windows, there a 2 kinds of icons: On Linux
+    * and macOS, icons depend on the application associated with file mime type.
+    * Deprecated Soon
+    */
   def getFileIcon(
     path: java.lang.String,
     callback: js.Function2[/* error */ stdLib.Error, /* icon */ NativeImage, scala.Unit]
   ): scala.Unit = js.native
+  def getFileIcon(path: java.lang.String, options: FileIconOptions): js.Promise[NativeImage] = js.native
   /**
     * Fetches a path's associated icon. On Windows, there a 2 kinds of icons: On Linux
     * and macOS, icons depend on the application associated with file mime type.
+    * Deprecated Soon
     */
   def getFileIcon(
     path: java.lang.String,
@@ -307,12 +307,16 @@ trait App extends EventEmitter {
   /**
     * To set the locale, you'll want to use a command line switch at app startup,
     * which may be found here. Note: When distributing your packaged app, you have to
-    * also ship the locales folder. Note: On Windows you have to call it after the
+    * also ship the locales folder. Note: On Windows, you have to call it after the
     * ready events gets emitted.
     */
   def getLocale(): java.lang.String = js.native
   /**
-    * If you provided path and args options to app.setLoginItemSettings then you need
+    * Note: When unable to detect locale country code, it returns empty string.
+    */
+  def getLocaleCountryCode(): java.lang.String = js.native
+  /**
+    * If you provided path and args options to app.setLoginItemSettings, then you need
     * to pass the same arguments here for openAtLogin to be set correctly.
     */
   def getLoginItemSettings(): LoginItemSettings = js.native
@@ -367,11 +371,11 @@ trait App extends EventEmitter {
   def isReady(): scala.Boolean = js.native
   def isUnityRunning(): scala.Boolean = js.native
   /**
-    * No confirmation dialog will be presented by default, if you wish to allow the
-    * user to confirm the operation you may do so using the dialog API. NOTE: This
+    * No confirmation dialog will be presented by default. If you wish to allow the
+    * user to confirm the operation, you may do so using the dialog API. NOTE: This
     * method throws errors if anything other than the user causes the move to fail.
-    * For instance if the user cancels the authorization dialog this method returns
-    * false. If we fail to perform the copy then this method will throw an error. The
+    * For instance if the user cancels the authorization dialog, this method returns
+    * false. If we fail to perform the copy, then this method will throw an error. The
     * message in the error should be informative and tell you exactly what went wrong
     */
   def moveToApplicationsFolder(): scala.Boolean = js.native
@@ -409,9 +413,9 @@ trait App extends EventEmitter {
   ): this.type = js.native
   /**
     * Emitted before the application starts closing its windows. Calling
-    * event.preventDefault() will prevent the default behaviour, which is terminating
+    * event.preventDefault() will prevent the default behavior, which is terminating
     * the application. Note: If application quit was initiated by
-    * autoUpdater.quitAndInstall() then before-quit is emitted after emitting close
+    * autoUpdater.quitAndInstall(), then before-quit is emitted after emitting close
     * event on all windows and closing them. Note: On Windows, this event will not be
     * emitted if the app is closed due to a shutdown/restart of the system or a user
     * logout.
@@ -491,6 +495,15 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   /**
+    * Emitted when desktopCapturer.getSources() is called in the renderer process of
+    * webContents. Calling event.preventDefault() will make it return empty sources.
+    */
+  @JSName("on")
+  def `on_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  /**
     * Emitted when the gpu process crashes or is killed.
     */
   @JSName("on")
@@ -500,7 +513,7 @@ trait App extends EventEmitter {
   ): this.type = js.native
   /**
     * Emitted when webContents wants to do basic auth. The default behavior is to
-    * cancel all authentications, to override this you should prevent the default
+    * cancel all authentications. To override this you should prevent the default
     * behavior with event.preventDefault() and call callback(username, password) with
     * the credentials.
     */
@@ -658,7 +671,8 @@ trait App extends EventEmitter {
     * command line arguments, and workingDirectory is its current working directory.
     * Usually applications respond to this by making their primary window focused and
     * non-minimized. This event is guaranteed to be emitted after the ready event of
-    * app gets emitted.
+    * app gets emitted. Note: Extra command line arguments might be added by Chromium,
+    * such as --original-process-start-time.
     */
   @JSName("on")
   def `on_second-instance`(
@@ -700,8 +714,8 @@ trait App extends EventEmitter {
     * Emitted when Handoff is about to be resumed on another device. If you need to
     * update the state to be transferred, you should call event.preventDefault()
     * immediately, construct a new userInfo dictionary and call
-    * app.updateCurrentActiviy() in a timely manner. Otherwise the operation will fail
-    * and continue-activity-error will be called.
+    * app.updateCurrentActiviy() in a timely manner. Otherwise, the operation will
+    * fail and continue-activity-error will be called.
     */
   @JSName("on")
   def `on_update-activity-state`(
@@ -821,6 +835,11 @@ trait App extends EventEmitter {
       /* error */ java.lang.String, 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def `once_gpu-process-crashed`(
@@ -975,14 +994,14 @@ trait App extends EventEmitter {
     */
   def quit(): scala.Unit = js.native
   /**
-    * Relaunches the app when current instance exits. By default the new instance will
-    * use the same working directory and command line arguments with current instance.
-    * When args is specified, the args will be passed as command line arguments
-    * instead. When execPath is specified, the execPath will be executed for relaunch
-    * instead of current app. Note that this method does not quit the app when
-    * executed, you have to call app.quit or app.exit after calling app.relaunch to
-    * make the app restart. When app.relaunch is called for multiple times, multiple
-    * instances will be started after current instance exited. An example of
+    * Relaunches the app when current instance exits. By default, the new instance
+    * will use the same working directory and command line arguments with current
+    * instance. When args is specified, the args will be passed as command line
+    * arguments instead. When execPath is specified, the execPath will be executed for
+    * relaunch instead of current app. Note that this method does not quit the app
+    * when executed, you have to call app.quit or app.exit after calling app.relaunch
+    * to make the app restart. When app.relaunch is called for multiple times,
+    * multiple instances will be started after current instance exited. An example of
     * restarting current instance immediately and adding a new command line argument
     * to the new instance:
     */
@@ -1062,6 +1081,11 @@ trait App extends EventEmitter {
       /* error */ java.lang.String, 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def `removeListener_gpu-process-crashed`(
@@ -1212,22 +1236,23 @@ trait App extends EventEmitter {
     * single instance of your app is running, and other instances signal this instance
     * and exit. The return value of this method indicates whether or not this instance
     * of your application successfully obtained the lock.  If it failed to obtain the
-    * lock you can assume that another instance of your application is already running
-    * with the lock and exit immediately. I.e. This method returns true if your
-    * process is the primary instance of your application and your app should continue
-    * loading.  It returns false if your process should immediately quit as it has
-    * sent its parameters to another instance that has already acquired the lock. On
-    * macOS the system enforces single instance automatically when users try to open a
-    * second instance of your app in Finder, and the open-file and open-url events
-    * will be emitted for that. However when users start your app in command line the
-    * system's single instance mechanism will be bypassed and you have to use this
-    * method to ensure single instance. An example of activating the window of primary
-    * instance when a second instance starts:
+    * lock, you can assume that another instance of your application is already
+    * running with the lock and exit immediately. I.e. This method returns true if
+    * your process is the primary instance of your application and your app should
+    * continue loading.  It returns false if your process should immediately quit as
+    * it has sent its parameters to another instance that has already acquired the
+    * lock. On macOS, the system enforces single instance automatically when users try
+    * to open a second instance of your app in Finder, and the open-file and open-url
+    * events will be emitted for that. However when users start your app in command
+    * line, the system's single instance mechanism will be bypassed, and you have to
+    * use this method to ensure single instance. An example of activating the window
+    * of primary instance when a second instance starts:
     */
   def requestSingleInstanceLock(): scala.Boolean = js.native
   /**
     * Set the about panel options. This will override the values defined in the app's
-    * .plist file. See the Apple docs for more details.
+    * .plist file on MacOS. See the Apple docs for more details. On Linux, values must
+    * be set in order to be shown; there are no defaults.
     */
   def setAboutPanelOptions(options: AboutPanelOptionsOptions): scala.Unit = js.native
   /**
@@ -1248,9 +1273,9 @@ trait App extends EventEmitter {
     * (aka URI scheme). It allows you to integrate your app deeper into the operating
     * system. Once registered, all links with your-protocol:// will be opened with the
     * current executable. The whole link, including protocol, will be passed to your
-    * application as a parameter. On Windows you can provide optional parameters path,
-    * the path to your executable, and args, an array of arguments to be passed to
-    * your executable when it launches. Note: On macOS, you can only register
+    * application as a parameter. On Windows, you can provide optional parameters
+    * path, the path to your executable, and args, an array of arguments to be passed
+    * to your executable when it launches. Note: On macOS, you can only register
     * protocols that have been added to your app's info.plist, which can not be
     * modified at runtime. You can however change the file with a simple text editor
     * or script during build time. Please refer to Apple's documentation for details.
@@ -1262,8 +1287,8 @@ trait App extends EventEmitter {
   def setAsDefaultProtocolClient(protocol: java.lang.String, path: java.lang.String, args: js.Array[java.lang.String]): scala.Boolean = js.native
   /**
     * Sets the counter badge for current app. Setting the count to 0 will hide the
-    * badge. On macOS it shows on the dock icon. On Linux it only works for Unity
-    * launcher, Note: Unity launcher requires the existence of a .desktop file to
+    * badge. On macOS, it shows on the dock icon. On Linux, it only works for Unity
+    * launcher. Note: Unity launcher requires the existence of a .desktop file to
     * work, for more information please read Desktop Environment Integration.
     */
   def setBadgeCount(count: scala.Double): scala.Boolean = js.native
@@ -1321,8 +1346,8 @@ trait App extends EventEmitter {
     */
   def show(): scala.Unit = js.native
   /**
-    * Show the about panel with the values defined in the app's .plist file or with
-    * the options set via app.setAboutPanelOptions(options).
+    * Show the app's about panel options. These options can be overridden with
+    * app.setAboutPanelOptions(options).
     */
   def showAboutPanel(): scala.Unit = js.native
   /**

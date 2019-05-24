@@ -13,6 +13,7 @@ package object typesSpecEncodeMod {
   type BooleanValueRef = ScaledValueRef[scala.Boolean]
   /* Rewritten from type alias, can be one of: 
     - ScaledValueRef[java.lang.String]
+    - vegaDashTypingsLib.Anon_ValueGradientLinear
     - vegaDashTypingsLib.Anon_Count
     - vegaDashTypingsLib.Anon_Color
   */

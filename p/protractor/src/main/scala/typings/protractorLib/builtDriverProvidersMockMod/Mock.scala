@@ -13,6 +13,6 @@ class Mock ()
   /**
     * An execute function that returns a promise with a test value.
     */
-  def execute(): js.Promise[_] = js.native
+  def execute(): qLib.qMod.Promise[_] = js.native
 }
 

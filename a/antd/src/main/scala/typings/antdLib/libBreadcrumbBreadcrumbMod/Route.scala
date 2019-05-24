@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Route extends js.Object {
   var breadcrumbName: java.lang.String
-  var children: js.UndefOr[
-    js.Array[antdLib.libUnderscoreUtilTypeMod.Omit[Route, antdLib.antdLibStrings.children]]
-  ] = js.undefined
+  var children: js.UndefOr[js.Array[antdLib.OmitRoutechildren]] = js.undefined
   var path: java.lang.String
 }
 
@@ -18,7 +16,7 @@ object Route {
   def apply(
     breadcrumbName: java.lang.String,
     path: java.lang.String,
-    children: js.Array[antdLib.libUnderscoreUtilTypeMod.Omit[Route, antdLib.antdLibStrings.children]] = null
+    children: js.Array[antdLib.OmitRoutechildren] = null
   ): Route = {
     val __obj = js.Dynamic.literal(breadcrumbName = breadcrumbName, path = path)
     if (children != null) __obj.updateDynamic("children")(children)

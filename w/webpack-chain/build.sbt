@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-chain"
-version := "5.2.4-46e105"
+version := "6.0.0-46e105"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

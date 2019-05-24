@@ -7,795 +7,195 @@ import scala.scalajs.js.annotation._
 
 /* Inlined {[ Name in keyof @material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey ]:? std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey[Name]>>} */
 trait Overrides extends js.Object {
-  var MuiAppBar: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarClassKey]
-    ]
-  ] = js.undefined
-  var MuiAvatar: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey]
-    ]
-  ] = js.undefined
-  var MuiBackdrop: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropClassKey]
-    ]
-  ] = js.undefined
-  var MuiBadge: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey]
-    ]
-  ] = js.undefined
-  var MuiBottomNavigation: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.bottomNavigationBottomNavigationMod.BottomNavigationClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiBottomNavigationAction: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiButton: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey]
-    ]
-  ] = js.undefined
-  var MuiButtonBase: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseClassKey]
-    ]
-  ] = js.undefined
-  var MuiCard: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardCardMod.CardClassKey]
-    ]
-  ] = js.undefined
-  var MuiCardActionArea: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardActionAreaCardActionAreaMod.CardActionAreaClassKey]
-    ]
-  ] = js.undefined
-  var MuiCardActions: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsClassKey]
-    ]
-  ] = js.undefined
-  var MuiCardContent: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentClassKey]
-    ]
-  ] = js.undefined
-  var MuiCardHeader: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderClassKey]
-    ]
-  ] = js.undefined
-  var MuiCardMedia: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaClassKey]
-    ]
-  ] = js.undefined
-  var MuiCheckbox: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxClassKey]
-    ]
-  ] = js.undefined
-  var MuiChip: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.chipChipMod.ChipClassKey]
-    ]
-  ] = js.undefined
-  var MuiCircularProgress: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiCollapse: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseClassKey]
-    ]
-  ] = js.undefined
-  var MuiCssBaseline: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineClassKey]
-    ]
-  ] = js.undefined
-  var MuiDialog: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey]
-    ]
-  ] = js.undefined
-  var MuiDialogActions: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsClassKey]
-    ]
-  ] = js.undefined
-  var MuiDialogContent: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentClassKey]
-    ]
-  ] = js.undefined
-  var MuiDialogContentText: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiDialogTitle: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleClassKey]
-    ]
-  ] = js.undefined
-  var MuiDivider: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey]
-    ]
-  ] = js.undefined
-  var MuiDrawer: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey]
-    ]
-  ] = js.undefined
-  var MuiExpansionPanel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelClassKey]
-    ]
-  ] = js.undefined
-  var MuiExpansionPanelActions: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiExpansionPanelDetails: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiExpansionPanelSummary: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiFab: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.fabFabMod.FabClassKey]
-    ]
-  ] = js.undefined
-  var MuiFilledInput: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey]
-    ]
-  ] = js.undefined
-  var MuiFormControl: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlClassKey]
-    ]
-  ] = js.undefined
-  var MuiFormControlLabel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiFormGroup: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupClassKey]
-    ]
-  ] = js.undefined
-  var MuiFormHelperText: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextClassKey]
-    ]
-  ] = js.undefined
-  var MuiFormLabel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelClassKey]
-    ]
-  ] = js.undefined
-  var MuiGrid: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.gridGridMod.GridClassKey]
-    ]
-  ] = js.undefined
-  var MuiGridList: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.gridListGridListMod.GridListClassKey]
-    ]
-  ] = js.undefined
-  var MuiGridListTile: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileClassKey]
-    ]
-  ] = js.undefined
-  var MuiGridListTileBar: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiIcon: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.iconIconMod.IconClassKey]
-    ]
-  ] = js.undefined
-  var MuiIconButton: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonClassKey]
-    ]
-  ] = js.undefined
-  var MuiInput: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputInputMod.InputClassKey]
-    ]
-  ] = js.undefined
-  var MuiInputAdornment: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentClassKey]
-    ]
-  ] = js.undefined
-  var MuiInputBase: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseClassKey]
-    ]
-  ] = js.undefined
-  var MuiInputLabel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelClassKey]
-    ]
-  ] = js.undefined
-  var MuiLinearProgress: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressClassKey]
-    ]
-  ] = js.undefined
-  var MuiLink: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey]
-    ]
-  ] = js.undefined
-  var MuiList: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listListMod.ListClassKey]
-    ]
-  ] = js.undefined
-  var MuiListItem: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemListItemMod.ListItemClassKey]
-    ]
-  ] = js.undefined
-  var MuiListItemAvatar: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarClassKey]
-    ]
-  ] = js.undefined
-  var MuiListItemIcon: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconClassKey]
-    ]
-  ] = js.undefined
-  var MuiListItemSecondaryAction: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiListItemText: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextClassKey]
-    ]
-  ] = js.undefined
-  var MuiListSubheader: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderClassKey]
-    ]
-  ] = js.undefined
-  var MuiMenu: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.menuMenuMod.MenuClassKey]
-    ]
-  ] = js.undefined
-  var MuiMenuItem: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemClassKey]
-    ]
-  ] = js.undefined
-  var MuiMobileStepper: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperClassKey]
-    ]
-  ] = js.undefined
-  var MuiModal: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
-    ]
-  ] = js.undefined
-  var MuiNativeSelect: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectClassKey]
-    ]
-  ] = js.undefined
-  var MuiOutlinedInput: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputClassKey]
-    ]
-  ] = js.undefined
-  var MuiPaper: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey]
-    ]
-  ] = js.undefined
-  var MuiPopover: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
-    ]
-  ] = js.undefined
-  var MuiRadio: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.radioRadioMod.RadioClassKey]
-    ]
-  ] = js.undefined
-  var MuiSelect: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey]
-    ]
-  ] = js.undefined
-  var MuiSnackbar: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey]
-    ]
-  ] = js.undefined
-  var MuiSnackbarContent: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiStep: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepStepMod.StepClasskey]
-    ]
-  ] = js.undefined
-  var MuiStepButton: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonClasskey]
-    ]
-  ] = js.undefined
-  var MuiStepConnector: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorClasskey]
-    ]
-  ] = js.undefined
-  var MuiStepContent: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentClasskey]
-    ]
-  ] = js.undefined
-  var MuiStepIcon: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconClasskey]
-    ]
-  ] = js.undefined
-  var MuiStepLabel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelClasskey]
-    ]
-  ] = js.undefined
-  var MuiStepper: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepperStepperMod.StepperClasskey]
-    ]
-  ] = js.undefined
-  var MuiSvgIcon: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconClassKey]
-    ]
-  ] = js.undefined
-  var MuiSwitch: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey]
-    ]
-  ] = js.undefined
-  var MuiSwitchBase: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseClassKey]
-    ]
-  ] = js.undefined
-  var MuiTab: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tabTabMod.TabClassKey]
-    ]
-  ] = js.undefined
-  var MuiTable: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableTableMod.TableClassKey]
-    ]
-  ] = js.undefined
-  var MuiTableBody: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableBodyTableBodyMod.TableBodyClassKey]
-    ]
-  ] = js.undefined
-  var MuiTableCell: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellClassKey]
-    ]
-  ] = js.undefined
-  var MuiTableFooter: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableFooterTableFooterMod.TableFooterClassKey]
-    ]
-  ] = js.undefined
-  var MuiTableHead: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableHeadTableHeadMod.TableHeadClassKey]
-    ]
-  ] = js.undefined
-  var MuiTablePagination: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationClassKey
-      ]
-    ]
-  ] = js.undefined
-  var MuiTableRow: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowClassKey]
-    ]
-  ] = js.undefined
-  var MuiTableSortLabel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelClassKey]
-    ]
-  ] = js.undefined
-  var MuiTabs: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey]
-    ]
-  ] = js.undefined
-  var MuiToolbar: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey]
-    ]
-  ] = js.undefined
-  var MuiTooltip: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey]
-    ]
-  ] = js.undefined
-  var MuiTouchRipple: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleClassKey]
-    ]
-  ] = js.undefined
-  var MuiTypography: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
-    ]
-  ] = js.undefined
+  var MuiAppBar: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesAppBarClassKey] = js.undefined
+  var MuiAvatar: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesAvatarClassKey] = js.undefined
+  var MuiBackdrop: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesBackdropClassKey] = js.undefined
+  var MuiBadge: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesBadgeClassKey] = js.undefined
+  var MuiBottomNavigation: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesBottomNavigationClassKey] = js.undefined
+  var MuiBottomNavigationAction: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesBottomNavigationActionClassKey] = js.undefined
+  var MuiButton: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesButtonClassKey] = js.undefined
+  var MuiButtonBase: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesButtonBaseClassKey] = js.undefined
+  var MuiCard: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCardClassKey] = js.undefined
+  var MuiCardActionArea: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCardActionAreaClassKey] = js.undefined
+  var MuiCardActions: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCardActionsClassKey] = js.undefined
+  var MuiCardContent: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCardContentClassKey] = js.undefined
+  var MuiCardHeader: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCardHeaderClassKey] = js.undefined
+  var MuiCardMedia: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCardMediaClassKey] = js.undefined
+  var MuiCheckbox: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCheckboxClassKey] = js.undefined
+  var MuiChip: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesChipClassKey] = js.undefined
+  var MuiCircularProgress: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCircularProgressClassKey] = js.undefined
+  var MuiCollapse: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCollapseClassKey] = js.undefined
+  var MuiCssBaseline: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesCssBaselineClassKey] = js.undefined
+  var MuiDialog: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDialogClassKey] = js.undefined
+  var MuiDialogActions: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDialogActionsClassKey] = js.undefined
+  var MuiDialogContent: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDialogContentClassKey] = js.undefined
+  var MuiDialogContentText: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDialogContentTextClassKey] = js.undefined
+  var MuiDialogTitle: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDialogTitleClassKey] = js.undefined
+  var MuiDivider: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDividerClassKey] = js.undefined
+  var MuiDrawer: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesDrawerClassKey] = js.undefined
+  var MuiExpansionPanel: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelClassKey] = js.undefined
+  var MuiExpansionPanelActions: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelActionsClassKey] = js.undefined
+  var MuiExpansionPanelDetails: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelDetailsClassKey] = js.undefined
+  var MuiExpansionPanelSummary: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelSummaryClassKey] = js.undefined
+  var MuiFab: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFabClassKey] = js.undefined
+  var MuiFilledInput: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFilledInputClassKey] = js.undefined
+  var MuiFormControl: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFormControlClassKey] = js.undefined
+  var MuiFormControlLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFormControlLabelClassKey] = js.undefined
+  var MuiFormGroup: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFormGroupClassKey] = js.undefined
+  var MuiFormHelperText: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFormHelperTextClassKey] = js.undefined
+  var MuiFormLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesFormLabelClassKey] = js.undefined
+  var MuiGrid: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesGridClassKey] = js.undefined
+  var MuiGridList: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesGridListClassKey] = js.undefined
+  var MuiGridListTile: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesGridListTileClassKey] = js.undefined
+  var MuiGridListTileBar: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesGridListTileBarClassKey] = js.undefined
+  var MuiIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesIconClassKey] = js.undefined
+  var MuiIconButton: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesIconButtonClassKey] = js.undefined
+  var MuiInput: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesInputClassKey] = js.undefined
+  var MuiInputAdornment: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesInputAdornmentClassKey] = js.undefined
+  var MuiInputBase: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesInputBaseClassKey] = js.undefined
+  var MuiInputLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesInputLabelClassKey] = js.undefined
+  var MuiLinearProgress: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesLinearProgressClassKey] = js.undefined
+  var MuiLink: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesLinkClassKey] = js.undefined
+  var MuiList: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListClassKey] = js.undefined
+  var MuiListItem: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListItemClassKey] = js.undefined
+  var MuiListItemAvatar: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListItemAvatarClassKey] = js.undefined
+  var MuiListItemIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListItemIconClassKey] = js.undefined
+  var MuiListItemSecondaryAction: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListItemSecondaryActionClassKey] = js.undefined
+  var MuiListItemText: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListItemTextClassKey] = js.undefined
+  var MuiListSubheader: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesListSubheaderClassKey] = js.undefined
+  var MuiMenu: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesMenuClassKey] = js.undefined
+  var MuiMenuItem: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesMenuItemClassKey] = js.undefined
+  var MuiMobileStepper: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesMobileStepperClassKey] = js.undefined
+  var MuiModal: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesModalClassKey] = js.undefined
+  var MuiNativeSelect: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesNativeSelectClassKey] = js.undefined
+  var MuiOutlinedInput: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesOutlinedInputClassKey] = js.undefined
+  var MuiPaper: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesPaperClassKey] = js.undefined
+  var MuiPopover: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesPopoverClassKey] = js.undefined
+  var MuiRadio: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesRadioClassKey] = js.undefined
+  var MuiSelect: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesSelectClassKey] = js.undefined
+  var MuiSnackbar: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesSnackbarClassKey] = js.undefined
+  var MuiSnackbarContent: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesSnackbarContentClassKey] = js.undefined
+  var MuiStep: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepClasskey] = js.undefined
+  var MuiStepButton: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepButtonClasskey] = js.undefined
+  var MuiStepConnector: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepConnectorClasskey] = js.undefined
+  var MuiStepContent: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepContentClasskey] = js.undefined
+  var MuiStepIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepIconClasskey] = js.undefined
+  var MuiStepLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepLabelClasskey] = js.undefined
+  var MuiStepper: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesStepperClasskey] = js.undefined
+  var MuiSvgIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesSvgIconClassKey] = js.undefined
+  var MuiSwitch: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesSwitchClassKey] = js.undefined
+  var MuiSwitchBase: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesSwitchBaseClassKey] = js.undefined
+  var MuiTab: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTabClassKey] = js.undefined
+  var MuiTable: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableClassKey] = js.undefined
+  var MuiTableBody: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableBodyClassKey] = js.undefined
+  var MuiTableCell: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableCellClassKey] = js.undefined
+  var MuiTableFooter: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableFooterClassKey] = js.undefined
+  var MuiTableHead: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableHeadClassKey] = js.undefined
+  var MuiTablePagination: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTablePaginationClassKey] = js.undefined
+  var MuiTableRow: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableRowClassKey] = js.undefined
+  var MuiTableSortLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTableSortLabelClassKey] = js.undefined
+  var MuiTabs: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTabsClassKey] = js.undefined
+  var MuiToolbar: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesToolbarClassKey] = js.undefined
+  var MuiTooltip: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTooltipClassKey] = js.undefined
+  var MuiTouchRipple: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTouchRippleClassKey] = js.undefined
+  var MuiTypography: js.UndefOr[atMaterialDashUiCoreLib.PartialStyleRulesTypographyClassKey] = js.undefined
 }
 
 object Overrides {
   @scala.inline
   def apply(
-    MuiAppBar: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarClassKey]
-    ] = null,
-    MuiAvatar: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey]
-    ] = null,
-    MuiBackdrop: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropClassKey]
-    ] = null,
-    MuiBadge: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey]
-    ] = null,
-    MuiBottomNavigation: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.bottomNavigationBottomNavigationMod.BottomNavigationClassKey
-      ]
-    ] = null,
-    MuiBottomNavigationAction: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionClassKey
-      ]
-    ] = null,
-    MuiButton: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey]
-    ] = null,
-    MuiButtonBase: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseClassKey]
-    ] = null,
-    MuiCard: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardCardMod.CardClassKey]
-    ] = null,
-    MuiCardActionArea: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardActionAreaCardActionAreaMod.CardActionAreaClassKey]
-    ] = null,
-    MuiCardActions: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsClassKey]
-    ] = null,
-    MuiCardContent: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentClassKey]
-    ] = null,
-    MuiCardHeader: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderClassKey]
-    ] = null,
-    MuiCardMedia: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaClassKey]
-    ] = null,
-    MuiCheckbox: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxClassKey]
-    ] = null,
-    MuiChip: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.chipChipMod.ChipClassKey]
-    ] = null,
-    MuiCircularProgress: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressClassKey
-      ]
-    ] = null,
-    MuiCollapse: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseClassKey]
-    ] = null,
-    MuiCssBaseline: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineClassKey]
-    ] = null,
-    MuiDialog: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey]
-    ] = null,
-    MuiDialogActions: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsClassKey]
-    ] = null,
-    MuiDialogContent: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentClassKey]
-    ] = null,
-    MuiDialogContentText: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextClassKey
-      ]
-    ] = null,
-    MuiDialogTitle: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleClassKey]
-    ] = null,
-    MuiDivider: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey]
-    ] = null,
-    MuiDrawer: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey]
-    ] = null,
-    MuiExpansionPanel: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelClassKey]
-    ] = null,
-    MuiExpansionPanelActions: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsClassKey
-      ]
-    ] = null,
-    MuiExpansionPanelDetails: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsClassKey
-      ]
-    ] = null,
-    MuiExpansionPanelSummary: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
-      ]
-    ] = null,
-    MuiFab: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.fabFabMod.FabClassKey]
-    ] = null,
-    MuiFilledInput: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey]
-    ] = null,
-    MuiFormControl: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlClassKey]
-    ] = null,
-    MuiFormControlLabel: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelClassKey
-      ]
-    ] = null,
-    MuiFormGroup: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupClassKey]
-    ] = null,
-    MuiFormHelperText: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextClassKey]
-    ] = null,
-    MuiFormLabel: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelClassKey]
-    ] = null,
-    MuiGrid: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.gridGridMod.GridClassKey]
-    ] = null,
-    MuiGridList: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.gridListGridListMod.GridListClassKey]
-    ] = null,
-    MuiGridListTile: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileClassKey]
-    ] = null,
-    MuiGridListTileBar: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarClassKey
-      ]
-    ] = null,
-    MuiIcon: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.iconIconMod.IconClassKey]
-    ] = null,
-    MuiIconButton: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonClassKey]
-    ] = null,
-    MuiInput: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputInputMod.InputClassKey]
-    ] = null,
-    MuiInputAdornment: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentClassKey]
-    ] = null,
-    MuiInputBase: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseClassKey]
-    ] = null,
-    MuiInputLabel: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelClassKey]
-    ] = null,
-    MuiLinearProgress: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressClassKey]
-    ] = null,
-    MuiLink: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey]
-    ] = null,
-    MuiList: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listListMod.ListClassKey]
-    ] = null,
-    MuiListItem: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemListItemMod.ListItemClassKey]
-    ] = null,
-    MuiListItemAvatar: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarClassKey]
-    ] = null,
-    MuiListItemIcon: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconClassKey]
-    ] = null,
-    MuiListItemSecondaryAction: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionClassKey
-      ]
-    ] = null,
-    MuiListItemText: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextClassKey]
-    ] = null,
-    MuiListSubheader: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderClassKey]
-    ] = null,
-    MuiMenu: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.menuMenuMod.MenuClassKey]
-    ] = null,
-    MuiMenuItem: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemClassKey]
-    ] = null,
-    MuiMobileStepper: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperClassKey]
-    ] = null,
-    MuiModal: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
-    ] = null,
-    MuiNativeSelect: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectClassKey]
-    ] = null,
-    MuiOutlinedInput: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputClassKey]
-    ] = null,
-    MuiPaper: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey]
-    ] = null,
-    MuiPopover: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
-    ] = null,
-    MuiRadio: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.radioRadioMod.RadioClassKey]
-    ] = null,
-    MuiSelect: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey]
-    ] = null,
-    MuiSnackbar: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey]
-    ] = null,
-    MuiSnackbarContent: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentClassKey
-      ]
-    ] = null,
-    MuiStep: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepStepMod.StepClasskey]
-    ] = null,
-    MuiStepButton: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonClasskey]
-    ] = null,
-    MuiStepConnector: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorClasskey]
-    ] = null,
-    MuiStepContent: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentClasskey]
-    ] = null,
-    MuiStepIcon: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconClasskey]
-    ] = null,
-    MuiStepLabel: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelClasskey]
-    ] = null,
-    MuiStepper: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.stepperStepperMod.StepperClasskey]
-    ] = null,
-    MuiSvgIcon: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconClassKey]
-    ] = null,
-    MuiSwitch: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey]
-    ] = null,
-    MuiSwitchBase: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseClassKey]
-    ] = null,
-    MuiTab: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tabTabMod.TabClassKey]
-    ] = null,
-    MuiTable: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableTableMod.TableClassKey]
-    ] = null,
-    MuiTableBody: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableBodyTableBodyMod.TableBodyClassKey]
-    ] = null,
-    MuiTableCell: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellClassKey]
-    ] = null,
-    MuiTableFooter: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableFooterTableFooterMod.TableFooterClassKey]
-    ] = null,
-    MuiTableHead: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableHeadTableHeadMod.TableHeadClassKey]
-    ] = null,
-    MuiTablePagination: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[
-        atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationClassKey
-      ]
-    ] = null,
-    MuiTableRow: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowClassKey]
-    ] = null,
-    MuiTableSortLabel: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelClassKey]
-    ] = null,
-    MuiTabs: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey]
-    ] = null,
-    MuiToolbar: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey]
-    ] = null,
-    MuiTooltip: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey]
-    ] = null,
-    MuiTouchRipple: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleClassKey]
-    ] = null,
-    MuiTypography: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
-    ] = null
+    MuiAppBar: atMaterialDashUiCoreLib.PartialStyleRulesAppBarClassKey = null,
+    MuiAvatar: atMaterialDashUiCoreLib.PartialStyleRulesAvatarClassKey = null,
+    MuiBackdrop: atMaterialDashUiCoreLib.PartialStyleRulesBackdropClassKey = null,
+    MuiBadge: atMaterialDashUiCoreLib.PartialStyleRulesBadgeClassKey = null,
+    MuiBottomNavigation: atMaterialDashUiCoreLib.PartialStyleRulesBottomNavigationClassKey = null,
+    MuiBottomNavigationAction: atMaterialDashUiCoreLib.PartialStyleRulesBottomNavigationActionClassKey = null,
+    MuiButton: atMaterialDashUiCoreLib.PartialStyleRulesButtonClassKey = null,
+    MuiButtonBase: atMaterialDashUiCoreLib.PartialStyleRulesButtonBaseClassKey = null,
+    MuiCard: atMaterialDashUiCoreLib.PartialStyleRulesCardClassKey = null,
+    MuiCardActionArea: atMaterialDashUiCoreLib.PartialStyleRulesCardActionAreaClassKey = null,
+    MuiCardActions: atMaterialDashUiCoreLib.PartialStyleRulesCardActionsClassKey = null,
+    MuiCardContent: atMaterialDashUiCoreLib.PartialStyleRulesCardContentClassKey = null,
+    MuiCardHeader: atMaterialDashUiCoreLib.PartialStyleRulesCardHeaderClassKey = null,
+    MuiCardMedia: atMaterialDashUiCoreLib.PartialStyleRulesCardMediaClassKey = null,
+    MuiCheckbox: atMaterialDashUiCoreLib.PartialStyleRulesCheckboxClassKey = null,
+    MuiChip: atMaterialDashUiCoreLib.PartialStyleRulesChipClassKey = null,
+    MuiCircularProgress: atMaterialDashUiCoreLib.PartialStyleRulesCircularProgressClassKey = null,
+    MuiCollapse: atMaterialDashUiCoreLib.PartialStyleRulesCollapseClassKey = null,
+    MuiCssBaseline: atMaterialDashUiCoreLib.PartialStyleRulesCssBaselineClassKey = null,
+    MuiDialog: atMaterialDashUiCoreLib.PartialStyleRulesDialogClassKey = null,
+    MuiDialogActions: atMaterialDashUiCoreLib.PartialStyleRulesDialogActionsClassKey = null,
+    MuiDialogContent: atMaterialDashUiCoreLib.PartialStyleRulesDialogContentClassKey = null,
+    MuiDialogContentText: atMaterialDashUiCoreLib.PartialStyleRulesDialogContentTextClassKey = null,
+    MuiDialogTitle: atMaterialDashUiCoreLib.PartialStyleRulesDialogTitleClassKey = null,
+    MuiDivider: atMaterialDashUiCoreLib.PartialStyleRulesDividerClassKey = null,
+    MuiDrawer: atMaterialDashUiCoreLib.PartialStyleRulesDrawerClassKey = null,
+    MuiExpansionPanel: atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelClassKey = null,
+    MuiExpansionPanelActions: atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelActionsClassKey = null,
+    MuiExpansionPanelDetails: atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelDetailsClassKey = null,
+    MuiExpansionPanelSummary: atMaterialDashUiCoreLib.PartialStyleRulesExpansionPanelSummaryClassKey = null,
+    MuiFab: atMaterialDashUiCoreLib.PartialStyleRulesFabClassKey = null,
+    MuiFilledInput: atMaterialDashUiCoreLib.PartialStyleRulesFilledInputClassKey = null,
+    MuiFormControl: atMaterialDashUiCoreLib.PartialStyleRulesFormControlClassKey = null,
+    MuiFormControlLabel: atMaterialDashUiCoreLib.PartialStyleRulesFormControlLabelClassKey = null,
+    MuiFormGroup: atMaterialDashUiCoreLib.PartialStyleRulesFormGroupClassKey = null,
+    MuiFormHelperText: atMaterialDashUiCoreLib.PartialStyleRulesFormHelperTextClassKey = null,
+    MuiFormLabel: atMaterialDashUiCoreLib.PartialStyleRulesFormLabelClassKey = null,
+    MuiGrid: atMaterialDashUiCoreLib.PartialStyleRulesGridClassKey = null,
+    MuiGridList: atMaterialDashUiCoreLib.PartialStyleRulesGridListClassKey = null,
+    MuiGridListTile: atMaterialDashUiCoreLib.PartialStyleRulesGridListTileClassKey = null,
+    MuiGridListTileBar: atMaterialDashUiCoreLib.PartialStyleRulesGridListTileBarClassKey = null,
+    MuiIcon: atMaterialDashUiCoreLib.PartialStyleRulesIconClassKey = null,
+    MuiIconButton: atMaterialDashUiCoreLib.PartialStyleRulesIconButtonClassKey = null,
+    MuiInput: atMaterialDashUiCoreLib.PartialStyleRulesInputClassKey = null,
+    MuiInputAdornment: atMaterialDashUiCoreLib.PartialStyleRulesInputAdornmentClassKey = null,
+    MuiInputBase: atMaterialDashUiCoreLib.PartialStyleRulesInputBaseClassKey = null,
+    MuiInputLabel: atMaterialDashUiCoreLib.PartialStyleRulesInputLabelClassKey = null,
+    MuiLinearProgress: atMaterialDashUiCoreLib.PartialStyleRulesLinearProgressClassKey = null,
+    MuiLink: atMaterialDashUiCoreLib.PartialStyleRulesLinkClassKey = null,
+    MuiList: atMaterialDashUiCoreLib.PartialStyleRulesListClassKey = null,
+    MuiListItem: atMaterialDashUiCoreLib.PartialStyleRulesListItemClassKey = null,
+    MuiListItemAvatar: atMaterialDashUiCoreLib.PartialStyleRulesListItemAvatarClassKey = null,
+    MuiListItemIcon: atMaterialDashUiCoreLib.PartialStyleRulesListItemIconClassKey = null,
+    MuiListItemSecondaryAction: atMaterialDashUiCoreLib.PartialStyleRulesListItemSecondaryActionClassKey = null,
+    MuiListItemText: atMaterialDashUiCoreLib.PartialStyleRulesListItemTextClassKey = null,
+    MuiListSubheader: atMaterialDashUiCoreLib.PartialStyleRulesListSubheaderClassKey = null,
+    MuiMenu: atMaterialDashUiCoreLib.PartialStyleRulesMenuClassKey = null,
+    MuiMenuItem: atMaterialDashUiCoreLib.PartialStyleRulesMenuItemClassKey = null,
+    MuiMobileStepper: atMaterialDashUiCoreLib.PartialStyleRulesMobileStepperClassKey = null,
+    MuiModal: atMaterialDashUiCoreLib.PartialStyleRulesModalClassKey = null,
+    MuiNativeSelect: atMaterialDashUiCoreLib.PartialStyleRulesNativeSelectClassKey = null,
+    MuiOutlinedInput: atMaterialDashUiCoreLib.PartialStyleRulesOutlinedInputClassKey = null,
+    MuiPaper: atMaterialDashUiCoreLib.PartialStyleRulesPaperClassKey = null,
+    MuiPopover: atMaterialDashUiCoreLib.PartialStyleRulesPopoverClassKey = null,
+    MuiRadio: atMaterialDashUiCoreLib.PartialStyleRulesRadioClassKey = null,
+    MuiSelect: atMaterialDashUiCoreLib.PartialStyleRulesSelectClassKey = null,
+    MuiSnackbar: atMaterialDashUiCoreLib.PartialStyleRulesSnackbarClassKey = null,
+    MuiSnackbarContent: atMaterialDashUiCoreLib.PartialStyleRulesSnackbarContentClassKey = null,
+    MuiStep: atMaterialDashUiCoreLib.PartialStyleRulesStepClasskey = null,
+    MuiStepButton: atMaterialDashUiCoreLib.PartialStyleRulesStepButtonClasskey = null,
+    MuiStepConnector: atMaterialDashUiCoreLib.PartialStyleRulesStepConnectorClasskey = null,
+    MuiStepContent: atMaterialDashUiCoreLib.PartialStyleRulesStepContentClasskey = null,
+    MuiStepIcon: atMaterialDashUiCoreLib.PartialStyleRulesStepIconClasskey = null,
+    MuiStepLabel: atMaterialDashUiCoreLib.PartialStyleRulesStepLabelClasskey = null,
+    MuiStepper: atMaterialDashUiCoreLib.PartialStyleRulesStepperClasskey = null,
+    MuiSvgIcon: atMaterialDashUiCoreLib.PartialStyleRulesSvgIconClassKey = null,
+    MuiSwitch: atMaterialDashUiCoreLib.PartialStyleRulesSwitchClassKey = null,
+    MuiSwitchBase: atMaterialDashUiCoreLib.PartialStyleRulesSwitchBaseClassKey = null,
+    MuiTab: atMaterialDashUiCoreLib.PartialStyleRulesTabClassKey = null,
+    MuiTable: atMaterialDashUiCoreLib.PartialStyleRulesTableClassKey = null,
+    MuiTableBody: atMaterialDashUiCoreLib.PartialStyleRulesTableBodyClassKey = null,
+    MuiTableCell: atMaterialDashUiCoreLib.PartialStyleRulesTableCellClassKey = null,
+    MuiTableFooter: atMaterialDashUiCoreLib.PartialStyleRulesTableFooterClassKey = null,
+    MuiTableHead: atMaterialDashUiCoreLib.PartialStyleRulesTableHeadClassKey = null,
+    MuiTablePagination: atMaterialDashUiCoreLib.PartialStyleRulesTablePaginationClassKey = null,
+    MuiTableRow: atMaterialDashUiCoreLib.PartialStyleRulesTableRowClassKey = null,
+    MuiTableSortLabel: atMaterialDashUiCoreLib.PartialStyleRulesTableSortLabelClassKey = null,
+    MuiTabs: atMaterialDashUiCoreLib.PartialStyleRulesTabsClassKey = null,
+    MuiToolbar: atMaterialDashUiCoreLib.PartialStyleRulesToolbarClassKey = null,
+    MuiTooltip: atMaterialDashUiCoreLib.PartialStyleRulesTooltipClassKey = null,
+    MuiTouchRipple: atMaterialDashUiCoreLib.PartialStyleRulesTouchRippleClassKey = null,
+    MuiTypography: atMaterialDashUiCoreLib.PartialStyleRulesTypographyClassKey = null
   ): Overrides = {
     val __obj = js.Dynamic.literal()
     if (MuiAppBar != null) __obj.updateDynamic("MuiAppBar")(MuiAppBar)

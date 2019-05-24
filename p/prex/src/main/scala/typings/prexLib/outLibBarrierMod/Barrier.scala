@@ -59,6 +59,7 @@ class Barrier protected () extends js.Object {
     * @param token An optional CancellationToken used to cancel the request.
     */
   def signalAndWait(): js.Promise[scala.Unit] = js.native
+  def signalAndWait(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[scala.Unit] = js.native
   def signalAndWait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

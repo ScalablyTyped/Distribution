@@ -11,12 +11,12 @@ trait ForOfStatementBuilder extends js.Object {
     left: astDashTypesLib.genKindsMod.PatternKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.StatementKind
-  ): astDashTypesLib.genNodesMod.ForOfStatement = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForOfStatement = js.native
   def apply(
     left: astDashTypesLib.genKindsMod.VariableDeclarationKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.StatementKind
-  ): astDashTypesLib.genNodesMod.ForOfStatement = js.native
-  def from(params: astDashTypesLib.Anon_BodyCommentsLeftLoc): astDashTypesLib.genNodesMod.ForOfStatement = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForOfStatement = js.native
+  def from(params: astDashTypesLib.Anon_BodyCommentsLeftLoc): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForOfStatement = js.native
 }
 

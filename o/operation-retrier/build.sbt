@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "operation-retrier"
-version := "2.0.0-1dffff"
+version := "2.1.0-d8c09f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

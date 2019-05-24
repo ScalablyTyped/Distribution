@@ -13,6 +13,9 @@ trait Context extends js.Object {
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var ip: java.lang.String
   var ips: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var log: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn}
+    */ serverLib.serverLibStrings.Context with js.Any
   var method: java.lang.String
   var options: serverLib.typingsOptionsMod.Options
   var params: org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -35,6 +38,9 @@ object Context {
     files: formidableLib.formidableMod.Files,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ip: java.lang.String,
+    log: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in server.server/typings/common.LogLevel ]: server.server/typings/common.LogFn}
+    */ serverLib.serverLibStrings.Context with js.Any,
     method: java.lang.String,
     options: serverLib.typingsOptionsMod.Options,
     params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
@@ -48,7 +54,7 @@ object Context {
     xhr: scala.Boolean,
     ips: js.Array[java.lang.String] = null
   ): Context = {
-    val __obj = js.Dynamic.literal(cookie = cookie, data = data, error = error, files = files, headers = headers, ip = ip, method = method, options = options, params = params, path = path, query = query, req = req, res = res, secure = secure, session = session, url = url, xhr = xhr)
+    val __obj = js.Dynamic.literal(cookie = cookie, data = data, error = error, files = files, headers = headers, ip = ip, log = log, method = method, options = options, params = params, path = path, query = query, req = req, res = res, secure = secure, session = session, url = url, xhr = xhr)
     if (ips != null) __obj.updateDynamic("ips")(ips)
     __obj.asInstanceOf[Context]
   }

@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - astDashTypesLib.genNodesMod.Literal
-  - astDashTypesLib.genNodesMod.JSXText
-  - astDashTypesLib.genNodesMod.StringLiteral
-  - astDashTypesLib.genNodesMod.NumericLiteral
-  - astDashTypesLib.genNodesMod.BigIntLiteral
-  - astDashTypesLib.genNodesMod.NullLiteral
-  - astDashTypesLib.genNodesMod.BooleanLiteral
-  - astDashTypesLib.genNodesMod.RegExpLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.Literal
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXText
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.StringLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.NumericLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.BigIntLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.NullLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.RegExpLiteral
 */
 trait LiteralKind extends js.Object
 

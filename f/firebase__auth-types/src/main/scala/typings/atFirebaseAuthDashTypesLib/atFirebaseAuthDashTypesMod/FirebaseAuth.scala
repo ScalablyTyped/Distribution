@@ -15,9 +15,7 @@ class FirebaseAuth protected () extends js.Object {
   def applyActionCode(code: java.lang.String): js.Promise[scala.Unit] = js.native
   def checkActionCode(code: java.lang.String): js.Promise[ActionCodeInfo] = js.native
   def confirmPasswordReset(code: java.lang.String, newPassword: java.lang.String): js.Promise[scala.Unit] = js.native
-  def createUserAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   def createUserWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
-  def fetchProvidersForEmail(email: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def fetchSignInMethodsForEmail(email: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def getRedirectResult(): js.Promise[UserCredential] = js.native
   def isSignInWithEmailLink(emailLink: java.lang.String): scala.Boolean = js.native
@@ -60,11 +58,8 @@ class FirebaseAuth protected () extends js.Object {
   def sendSignInLinkToEmail(email: java.lang.String, actionCodeSettings: ActionCodeSettings): js.Promise[scala.Unit] = js.native
   def setPersistence(persistence: Persistence): js.Promise[scala.Unit] = js.native
   def signInAndRetrieveDataWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
-  def signInAndRetrieveDataWithCustomToken(token: java.lang.String): js.Promise[UserCredential] = js.native
-  def signInAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   def signInAnonymously(): js.Promise[UserCredential] = js.native
-  def signInAnonymouslyAndRetrieveData(): js.Promise[UserCredential] = js.native
-  def signInWithCredential(credential: AuthCredential): js.Promise[User] = js.native
+  def signInWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
   def signInWithCustomToken(token: java.lang.String): js.Promise[UserCredential] = js.native
   def signInWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   def signInWithEmailLink(email: java.lang.String): js.Promise[UserCredential] = js.native

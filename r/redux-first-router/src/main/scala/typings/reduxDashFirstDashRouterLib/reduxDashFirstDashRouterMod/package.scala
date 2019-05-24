@@ -17,8 +17,8 @@ package object reduxDashFirstDashRouterMod {
   type Listener = js.Function2[/* location */ HistoryLocation, /* action */ HistoryAction, scala.Unit]
   type Navigators[TState] = org.scalablytyped.runtime.StringDictionary[Navigator[TState]]
   type Nullable[T] = js.UndefOr[T | scala.Null]
-  type Params = js.Object
-  type Payload = js.Object
+  type Params = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type Query = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type Route[TKeys, TState] = RouteString | (RouteObject[TKeys, TState])
   type RouteObject[TKeys, TState] = TKeys with reduxDashFirstDashRouterLib.Anon_CapitalizedWords[TState]
   type RouteString = java.lang.String

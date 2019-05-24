@@ -37,8 +37,10 @@ object ^ extends js.Object {
   def getUA(): java.lang.String = js.native
   def getValues(obj: js.Any): js.Array[_] = js.native
   def isAdmin(token: js.Any): scala.Boolean = js.native
+  def isBrowser(): scala.Boolean = js.native
   def isEmpty(obj: js.Any): scala.Boolean = js.native
   def isMobileCordova(): scala.Boolean = js.native
+  def isNode(): scala.Boolean = js.native
   def isNodeSdk(): scala.Boolean = js.native
   def isNonNullObject(obj: js.Any): scala.Boolean = js.native
   def isReactNative(): scala.Boolean = js.native

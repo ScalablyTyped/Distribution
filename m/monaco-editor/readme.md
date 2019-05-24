@@ -1,7 +1,7 @@
 
 # Scala.js typings for monaco-editor
 
-Typings are for version 0.16.2
+Typings are for version 0.17.0
 
 ## Library description:
 A browser based code editor
@@ -37,7 +37,7 @@ These comments are from the typescript definitions and might be useful:
 ```
 /*!-----------------------------------------------------------
  * Copyright (c) Microsoft Corporation. All rights reserved.
- * Type definitions for monaco-editor v0.16.2
+ * Type definitions for monaco-editor v0.17.0
  * Released under the MIT license
 *-----------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------

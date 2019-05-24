@@ -16,13 +16,14 @@ package object rollupDashPluginutilsMod {
     /* propertyName */ js.UndefOr[java.lang.String], 
     AttachedScope
   ]
-  type CreateFilter = js.Function2[
+  type CreateFilter = js.Function3[
     /* include */ js.UndefOr[
       (js.Array[java.lang.String | stdLib.RegExp]) | java.lang.String | stdLib.RegExp | scala.Null
     ], 
     /* exclude */ js.UndefOr[
       (js.Array[java.lang.String | stdLib.RegExp]) | java.lang.String | stdLib.RegExp | scala.Null
     ], 
+    /* options */ js.UndefOr[rollupDashPluginutilsLib.Anon_False], 
     js.Function1[/* id */ java.lang.String | js.Any, scala.Boolean]
   ]
   type DataToEsm = js.Function2[/* data */ js.Any, /* options */ js.UndefOr[DataToEsmOptions], java.lang.String]

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular/dist/providers/nav-controller", "NavController")
 @js.native
 class NavController protected () extends js.Object {
-  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location) = this()
-  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location, router: atAngularRouterLib.atAngularRouterMod.Router) = this()
+  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location, serializer: atAngularRouterLib.atAngularRouterMod.UrlSerializer) = this()
+  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location, serializer: atAngularRouterLib.atAngularRouterMod.UrlSerializer, router: atAngularRouterLib.atAngularRouterMod.Router) = this()
   var animated: js.UndefOr[js.Any] = js.native
   var direction: js.Any = js.native
   var guessAnimation: js.UndefOr[js.Any] = js.native
@@ -18,6 +18,7 @@ class NavController protected () extends js.Object {
   var location: js.Any = js.native
   var navigate: js.Any = js.native
   var router: js.UndefOr[js.Any] = js.native
+  var serializer: js.Any = js.native
   var topOutlet: js.UndefOr[js.Any] = js.native
   /**
     * Same as [Location](https://angular.io/api/common/Location)'s back() method.

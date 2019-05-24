@@ -11,13 +11,13 @@ trait TSConstructSignatureDeclarationBuilder extends js.Object {
     parameters: js.Array[
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
-  ): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructSignatureDeclaration = js.native
   def apply(
     parameters: js.Array[
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructSignatureDeclaration = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructSignatureDeclaration = js.native
 }
 

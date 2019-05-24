@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 package object clientsWorklinkMod {
   type AcmCertificateArn = java.lang.String
   type AuditStreamArn = java.lang.String
+  type AuthorizationProviderType = awsDashSdkLib.awsDashSdkLibStrings.SAML | java.lang.String
   type Boolean = scala.Boolean
   type Certificate = java.lang.String
   type CertificateChain = java.lang.String
@@ -65,6 +66,7 @@ package object clientsWorklinkMod {
   type SubnetIds = js.Array[SubnetId]
   type Username = java.lang.String
   type VpcId = java.lang.String
+  type WebsiteAuthorizationProvidersSummaryList = js.Array[WebsiteAuthorizationProviderSummary]
   type WebsiteCaSummaryList = js.Array[WebsiteCaSummary]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2018-09-25`

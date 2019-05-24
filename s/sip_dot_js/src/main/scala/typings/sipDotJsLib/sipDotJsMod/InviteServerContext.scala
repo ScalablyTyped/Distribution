@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class InviteServerContext protected ()
   extends sipDotJsLib.libSessionMod.InviteServerContext {
-  def this(ua: sipDotJsLib.libUAMod.UA, request: sipDotJsLib.libSIPMessageMod.IncomingRequest) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, incomingInviteRequest: sipDotJsLib.libCoreMessagesMethodsInviteMod.IncomingInviteRequest) = this()
 }
 

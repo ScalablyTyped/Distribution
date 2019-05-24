@@ -13,6 +13,7 @@ trait Props extends js.Object {
     /* isOpen */ scala.Boolean, 
     reactLib.reactMod.Global.JSXNs.Element
   ])
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined
   var closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined
   var contentStyle: js.UndefOr[js.Object] = js.undefined
@@ -47,6 +48,7 @@ object Props {
     ]),
     arrow: js.UndefOr[scala.Boolean] = js.undefined,
     arrowStyle: js.Object = null,
+    className: java.lang.String = null,
     closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined,
     closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
     contentStyle: js.Object = null,
@@ -71,6 +73,7 @@ object Props {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(arrow)) __obj.updateDynamic("arrow")(arrow)
     if (arrowStyle != null) __obj.updateDynamic("arrowStyle")(arrowStyle)
+    if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(closeOnDocumentClick)) __obj.updateDynamic("closeOnDocumentClick")(closeOnDocumentClick)
     if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)

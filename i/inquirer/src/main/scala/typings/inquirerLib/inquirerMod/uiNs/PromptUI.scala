@@ -17,14 +17,14 @@ trait PromptUI
       PromptUI
     ] {
   var process: rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Answer] = js.native
-  def fetchAnswer[T](question: inquirerLib.inquirerMod.Question[T]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[T]] = js.native
-  def filterIfRunnable[T](question: inquirerLib.inquirerMod.Question[T]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[T]] = js.native
+  def fetchAnswer[A](question: inquirerLib.inquirerMod.Question[A]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[A]] = js.native
+  def filterIfRunnable[A](question: inquirerLib.inquirerMod.Question[A]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[A]] = js.native
   /**
     * Once all prompt are over
     */
   def onCompletion(): scala.Unit = js.native
-  def processQuestion[T](question: inquirerLib.inquirerMod.Question[T]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[T]] = js.native
-  def run[T](questions: inquirerLib.inquirerMod.Questions[T]): js.Promise[inquirerLib.inquirerMod.Answers] = js.native
-  def setDefaultType[T](question: inquirerLib.inquirerMod.Question[T]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[T]] = js.native
+  def processQuestion[A](question: inquirerLib.inquirerMod.Question[A]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[A]] = js.native
+  def run[A](questions: inquirerLib.inquirerMod.Questions[A]): js.Promise[A] = js.native
+  def setDefaultType[A](question: inquirerLib.inquirerMod.Question[A]): rxjsLib.rxjsMod.Observable[inquirerLib.inquirerMod.Question[A]] = js.native
 }
 

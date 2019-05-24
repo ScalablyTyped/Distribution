@@ -26,6 +26,10 @@ trait ClientCertificate extends js.Object {
     * The PEM-encoded public key of the client certificate, which can be used to configure certificate authentication in the integration endpoint .
     */
   var pemEncodedCertificate: js.UndefOr[String] = js.undefined
+  /**
+    * The collection of tags. Each tag element is associated with a given resource.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
 }
 
 object ClientCertificate {
@@ -35,7 +39,8 @@ object ClientCertificate {
     createdDate: Timestamp = null,
     description: String = null,
     expirationDate: Timestamp = null,
-    pemEncodedCertificate: String = null
+    pemEncodedCertificate: String = null,
+    tags: MapOfStringToString = null
   ): ClientCertificate = {
     val __obj = js.Dynamic.literal()
     if (clientCertificateId != null) __obj.updateDynamic("clientCertificateId")(clientCertificateId)
@@ -43,6 +48,7 @@ object ClientCertificate {
     if (description != null) __obj.updateDynamic("description")(description)
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
     if (pemEncodedCertificate != null) __obj.updateDynamic("pemEncodedCertificate")(pemEncodedCertificate)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[ClientCertificate]
   }
 }

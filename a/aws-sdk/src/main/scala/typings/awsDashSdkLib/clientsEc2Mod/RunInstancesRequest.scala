@@ -31,7 +31,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var CreditSpecification: js.UndefOr[CreditSpecificationRequest] = js.undefined
   /**
-    * If you set this parameter to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can. To change this attribute to false after launch, use ModifyInstanceAttribute. Alternatively, if you set InstanceInitiatedShutdownBehavior to terminate, you can terminate the instance by running the shutdown command from the instance. Default: false 
+    * If you set this parameter to true, you can't terminate the instance using the Amazon EC2 console, CLI, or API; otherwise, you can. To change this attribute after launch, use ModifyInstanceAttribute. Alternatively, if you set InstanceInitiatedShutdownBehavior to terminate, you can terminate the instance by running the shutdown command from the instance. Default: false 
     */
   var DisableApiTermination: js.UndefOr[Boolean] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.undefined
   /**
-    * The ID of the AMI. An AMI is required to launch an instance and must be specified here or in a launch template.
+    * The ID of the AMI. An AMI ID is required to launch an instance and must be specified here or in a launch template.
     */
   var ImageId: js.UndefOr[String] = js.undefined
   /**

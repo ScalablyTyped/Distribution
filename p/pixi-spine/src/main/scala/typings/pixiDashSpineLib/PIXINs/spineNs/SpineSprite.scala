@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("PIXI.spine.SpineSprite")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ @JSGlobal("PIXI.spine.SpineSprite")
 @js.native
-class SpineSprite ()
-  extends pixiDotJsLib.PIXINs.Sprite {
+class SpineSprite () extends js.Object {
   var region: pixiDashSpineLib.PIXINs.spineNs.coreNs.TextureRegion = js.native
 }
 

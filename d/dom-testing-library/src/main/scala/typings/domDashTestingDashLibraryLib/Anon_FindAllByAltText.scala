@@ -229,12 +229,6 @@ trait Anon_FindAllByAltText extends js.Object {
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
   ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
   def getAllByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
   def getAllByTestId(
     container: stdLib.HTMLElement,
@@ -249,12 +243,6 @@ trait Anon_FindAllByAltText extends js.Object {
   ): js.Array[stdLib.HTMLElement] = js.native
   def getAllByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
   def getAllByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def getAllByValue(
     container: stdLib.HTMLElement,
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
@@ -289,12 +277,6 @@ trait Anon_FindAllByAltText extends js.Object {
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
   ): stdLib.HTMLElement = js.native
-  def getBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
   def getByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
   def getByTestId(
     container: stdLib.HTMLElement,
@@ -309,12 +291,6 @@ trait Anon_FindAllByAltText extends js.Object {
   ): stdLib.HTMLElement = js.native
   def getByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
   def getByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement = js.native
-  def getByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement = js.native
-  def getByValue(
     container: stdLib.HTMLElement,
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
@@ -349,12 +325,6 @@ trait Anon_FindAllByAltText extends js.Object {
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
   ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
   def queryAllByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
   def queryAllByTestId(
     container: stdLib.HTMLElement,
@@ -369,12 +339,6 @@ trait Anon_FindAllByAltText extends js.Object {
   ): js.Array[stdLib.HTMLElement] = js.native
   def queryAllByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
   def queryAllByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): js.Array[stdLib.HTMLElement] = js.native
-  def queryAllByValue(
     container: stdLib.HTMLElement,
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
@@ -409,12 +373,6 @@ trait Anon_FindAllByAltText extends js.Object {
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
   ): stdLib.HTMLElement | scala.Null = js.native
-  def queryBySelectText(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryBySelectText(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
   def queryByTestId(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
   def queryByTestId(
     container: stdLib.HTMLElement,
@@ -429,12 +387,6 @@ trait Anon_FindAllByAltText extends js.Object {
   ): stdLib.HTMLElement | scala.Null = js.native
   def queryByTitle(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
   def queryByTitle(
-    container: stdLib.HTMLElement,
-    id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
-    options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions
-  ): stdLib.HTMLElement | scala.Null = js.native
-  def queryByValue(container: stdLib.HTMLElement, id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher): stdLib.HTMLElement | scala.Null = js.native
-  def queryByValue(
     container: stdLib.HTMLElement,
     id: domDashTestingDashLibraryLib.typingsMatchesMod.Matcher,
     options: domDashTestingDashLibraryLib.typingsMatchesMod.MatcherOptions

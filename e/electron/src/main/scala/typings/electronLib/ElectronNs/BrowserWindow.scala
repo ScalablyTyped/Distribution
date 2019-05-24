@@ -11,6 +11,10 @@ class BrowserWindow () extends EventEmitter {
   def this(options: BrowserWindowConstructorOptions) = this()
   var id: scala.Double = js.native
   var webContents: WebContents = js.native
+  /**
+    * Replacement API for setBrowserView supporting work with multi browser views.
+    */
+  def addBrowserView(browserView: BrowserView): scala.Unit = js.native
   @JSName("addListener")
   def `addListener_always-on-top-changed`(
     event: electronLib.electronLibStrings.`always-on-top-changed`,
@@ -52,7 +56,12 @@ class BrowserWindow () extends EventEmitter {
   @JSName("addListener")
   def `addListener_page-title-updated`(
     event: electronLib.electronLibStrings.`page-title-updated`,
-    listener: js.Function2[/* event */ Event, /* title */ java.lang.String, scala.Unit]
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def `addListener_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
@@ -105,11 +114,23 @@ class BrowserWindow () extends EventEmitter {
   def blur(): scala.Unit = js.native
   def blurWebView(): scala.Unit = js.native
   /**
-    * Same as webContents.capturePage([rect, ]callback).
+    * Captures a snapshot of the page within rect. Omitting rect will capture the
+    * whole visible page.
+    */
+  def capturePage(): scala.Unit = js.native
+  /**
+    * Captures a snapshot of the page within rect. Upon completion callback will be
+    * called with callback(image). The image is an instance of NativeImage that stores
+    * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Deprecated Soon
     */
   def capturePage(callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
+  def capturePage(rect: Rectangle): scala.Unit = js.native
   /**
-    * Same as webContents.capturePage([rect, ]callback).
+    * Captures a snapshot of the page within rect. Upon completion callback will be
+    * called with callback(image). The image is an instance of NativeImage that stores
+    * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Deprecated Soon
     */
   def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
   /**
@@ -142,11 +163,13 @@ class BrowserWindow () extends EventEmitter {
   def focus(): scala.Unit = js.native
   def focusOnWebView(): scala.Unit = js.native
   def getBounds(): Rectangle = js.native
-  /**
-    * Note: The BrowserView API is currently experimental and may change or be removed
-    * in future Electron releases.
-    */
   def getBrowserView(): BrowserView | scala.Null = js.native
+  /**
+    * Returns array of BrowserView what was an attached with addBrowserView or
+    * setBrowserView. Note: The BrowserView API is currently experimental and may
+    * change or be removed in future Electron releases.
+    */
+  def getBrowserViews(): scala.Unit = js.native
   def getChildWindows(): js.Array[BrowserWindow] = js.native
   def getContentBounds(): Rectangle = js.native
   def getContentSize(): js.Array[scala.Double] = js.native
@@ -170,7 +193,7 @@ class BrowserWindow () extends EventEmitter {
   def getRepresentedFilename(): java.lang.String = js.native
   def getSize(): js.Array[scala.Double] = js.native
   /**
-    * Note: The title of web page can be different from the title of the native
+    * Note: The title of the web page can be different from the title of the native
     * window.
     */
   def getTitle(): java.lang.String = js.native
@@ -228,8 +251,8 @@ class BrowserWindow () extends EventEmitter {
     * Same as webContents.loadFile, filePath should be a path to an HTML file relative
     * to the root of your application.  See the webContents docs for more information.
     */
-  def loadFile(filePath: java.lang.String): scala.Unit = js.native
-  def loadFile(filePath: java.lang.String, options: LoadFileOptions): scala.Unit = js.native
+  def loadFile(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
+  def loadFile(filePath: java.lang.String, options: LoadFileOptions): js.Promise[scala.Unit] = js.native
   /**
     * Same as webContents.loadURL(url[, options]). The url can be a remote address
     * (e.g. http://) or a path to a local HTML file using the file:// protocol. To
@@ -237,8 +260,8 @@ class BrowserWindow () extends EventEmitter {
     * url.format method: You can load a URL using a POST request with URL-encoded data
     * by doing the following:
     */
-  def loadURL(url: java.lang.String): scala.Unit = js.native
-  def loadURL(url: java.lang.String, options: LoadURLOptions): scala.Unit = js.native
+  def loadURL(url: java.lang.String): js.Promise[scala.Unit] = js.native
+  def loadURL(url: java.lang.String, options: LoadURLOptions): js.Promise[scala.Unit] = js.native
   /**
     * Maximizes the window. This will also show (but not focus) the window if it isn't
     * being displayed already.
@@ -277,7 +300,8 @@ class BrowserWindow () extends EventEmitter {
     * media keys or browser commands, as well as the "Back" button built into some
     * mice on Windows. Commands are lowercased, underscores are replaced with hyphens,
     * and the APPCOMMAND_ prefix is stripped off. e.g. APPCOMMAND_BROWSER_BACKWARD is
-    * emitted as browser-backward.
+    * emitted as browser-backward. The following app commands are explictly supported
+    * on Linux:
     */
   @JSName("on")
   def `on_app-command`(
@@ -367,12 +391,18 @@ class BrowserWindow () extends EventEmitter {
   def `on_new-window-for-tab`(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the document changed its title, calling event.preventDefault() will
-    * prevent the native window's title from changing.
+    * prevent the native window's title from changing. explicitSet is false when title
+    * is synthesized from file url.
     */
   @JSName("on")
   def `on_page-title-updated`(
     event: electronLib.electronLibStrings.`page-title-updated`,
-    listener: js.Function2[/* event */ Event, /* title */ java.lang.String, scala.Unit]
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when the web page has been rendered (while not being shown) and window
@@ -512,7 +542,12 @@ class BrowserWindow () extends EventEmitter {
   @JSName("once")
   def `once_page-title-updated`(
     event: electronLib.electronLibStrings.`page-title-updated`,
-    listener: js.Function2[/* event */ Event, /* title */ java.lang.String, scala.Unit]
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def `once_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
@@ -564,6 +599,7 @@ class BrowserWindow () extends EventEmitter {
     * Same as webContents.reload.
     */
   def reload(): scala.Unit = js.native
+  def removeBrowserView(browserView: BrowserView): scala.Unit = js.native
   @JSName("removeListener")
   def `removeListener_always-on-top-changed`(
     event: electronLib.electronLibStrings.`always-on-top-changed`,
@@ -605,7 +641,12 @@ class BrowserWindow () extends EventEmitter {
   @JSName("removeListener")
   def `removeListener_page-title-updated`(
     event: electronLib.electronLibStrings.`page-title-updated`,
-    listener: js.Function2[/* event */ Event, /* title */ java.lang.String, scala.Unit]
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def `removeListener_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
@@ -648,6 +689,10 @@ class BrowserWindow () extends EventEmitter {
     event: electronLib.electronLibStrings.`will-resize`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
+  /**
+    * Remove the window's menu bar.
+    */
+  def removeMenu(): scala.Unit = js.native
   /**
     * Restores the window from minimized state to its previous state.
     */
@@ -836,8 +881,7 @@ class BrowserWindow () extends EventEmitter {
   def setMaximumSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def setMenu(): scala.Unit = js.native
   /**
-    * Sets the menu as the window's menu bar, setting it to null will remove the menu
-    * bar.
+    * Sets the menu as the window's menu bar.
     */
   def setMenu(menu: Menu): scala.Unit = js.native
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__heatmap
 
-Typings are for version 0.55.0
+Typings are for version 0.58.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/heatmap.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/heatmap)

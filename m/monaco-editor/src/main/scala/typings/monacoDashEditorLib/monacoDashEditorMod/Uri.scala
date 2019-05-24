@@ -43,7 +43,7 @@ class Uri () extends UriComponents {
   override var query: java.lang.String = js.native
   /* CompleteClass */
   override var scheme: java.lang.String = js.native
-  def toJSON(): js.Object = js.native
+  def toJSON(): UriComponents = js.native
   def toString(skipEncoding: scala.Boolean): java.lang.String = js.native
   def `with`(change: monacoDashEditorLib.Anon_Authority): Uri = js.native
 }
@@ -84,7 +84,18 @@ object Uri extends js.Object {
     */
   def parse(value: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
   def parse(value: java.lang.String, _strict: scala.Boolean): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
-  def revive(data: js.Any): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
-  def revive(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
+  def revive(): monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null = js.native
+  def revive(data: monacoDashEditorLib.monacoDashEditorMod.Uri): monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null = js.native
+  def revive(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null = js.native
+  @JSName("revive")
+  def revive_UndefOr(): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
+  @JSName("revive")
+  def revive_UndefOr(data: monacoDashEditorLib.monacoDashEditorMod.Uri): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
+  @JSName("revive")
+  def revive_UndefOr(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
+  @JSName("revive")
+  def revive_Uri(data: monacoDashEditorLib.monacoDashEditorMod.Uri): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
+  @JSName("revive")
+  def revive_Uri(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
 }
 

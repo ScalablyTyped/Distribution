@@ -12,11 +12,7 @@ trait GridListTileBarProps extends js.Object {
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridListTileBarClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapGridListTileBarClassKey] = js.undefined
   var innerRef: js.UndefOr[reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_]] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subtitle: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -32,9 +28,7 @@ object GridListTileBarProps {
     actionIcon: reactLib.reactMod.ReactNode = null,
     actionPosition: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridListTileBarClassKey]
-    ] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapGridListTileBarClassKey = null,
     innerRef: reactLib.reactMod.Ref[_] | reactLib.reactMod.RefObject[_] = null,
     style: reactLib.reactMod.CSSProperties = null,
     subtitle: reactLib.reactMod.ReactNode = null,

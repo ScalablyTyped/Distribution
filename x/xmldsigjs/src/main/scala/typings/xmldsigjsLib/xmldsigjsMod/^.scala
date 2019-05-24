@@ -24,6 +24,10 @@ object ^ extends js.Object {
   val RSA_PKCS1_SHA384_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2001/04/xmldsig-more#rsa-sha384` = js.native
   val RSA_PKCS1_SHA512_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2001/04/xmldsig-more#rsa-sha512` = js.native
   val RSA_PSS: xmldsigjsLib.xmldsigjsLibStrings.`RSA-PSS` = js.native
+  val RSA_PSS_SHA1_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha1-rsa-MGF1` = js.native
+  val RSA_PSS_SHA256_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha256-rsa-MGF1` = js.native
+  val RSA_PSS_SHA384_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1` = js.native
+  val RSA_PSS_SHA512_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1` = js.native
   val RSA_PSS_WITH_PARAMS_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#rsa-pss` = js.native
   val SHA1: xmldsigjsLib.xmldsigjsLibStrings.`SHA-1` = js.native
   val SHA1_NAMESPACE: xmldsigjsLib.xmldsigjsLibStrings.`http://wwwDOTw3DOTorg/2000/09/xmldsig#sha1` = js.native

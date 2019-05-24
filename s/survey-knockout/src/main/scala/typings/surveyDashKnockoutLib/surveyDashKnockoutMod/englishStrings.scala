@@ -31,6 +31,7 @@ object englishStrings extends js.Object {
   var maxSelectError: java.lang.String = js.native
   var minRowCountError: java.lang.String = js.native
   var minSelectError: java.lang.String = js.native
+  var noFileChosen: java.lang.String = js.native
   var noneItemText: java.lang.String = js.native
   var numericError: java.lang.String = js.native
   var numericMax: java.lang.String = js.native

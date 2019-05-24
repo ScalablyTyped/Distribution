@@ -12,14 +12,14 @@ trait TSMethodSignatureBuilder extends js.Object {
     parameters: js.Array[
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
-  ): astDashTypesLib.genNodesMod.TSMethodSignature = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMethodSignature = js.native
   def apply(
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     parameters: js.Array[
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.TSMethodSignature = js.native
-  def from(params: astDashTypesLib.Anon_CommentsComputedKeyLoc): astDashTypesLib.genNodesMod.TSMethodSignature = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMethodSignature = js.native
+  def from(params: astDashTypesLib.Anon_CommentsComputedKeyLoc): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMethodSignature = js.native
 }
 

@@ -69,12 +69,19 @@ class Debugger () extends EventEmitter {
   /**
     * Send given command to the debugging target.
     */
-  def sendCommand(method: java.lang.String): scala.Unit = js.native
-  def sendCommand(method: java.lang.String, commandParams: js.Any): scala.Unit = js.native
+  def sendCommand(method: java.lang.String): js.Promise[_] = js.native
+  def sendCommand(method: java.lang.String, commandParams: js.Any): js.Promise[_] = js.native
   def sendCommand(
     method: java.lang.String,
     commandParams: js.Any,
     callback: js.Function2[/* error */ js.Any, /* result */ js.Any, scala.Unit]
   ): scala.Unit = js.native
+  /**
+    * Send given command to the debugging target. Deprecated Soon
+    */
+  @JSName("sendCommand")
+  def sendCommand_Unit(method: java.lang.String): scala.Unit = js.native
+  @JSName("sendCommand")
+  def sendCommand_Unit(method: java.lang.String, commandParams: js.Any): scala.Unit = js.native
 }
 

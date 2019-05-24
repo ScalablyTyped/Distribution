@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.6-dt-20190212Z-71fa6f"
+version := "0.6-dt-20190212Z-00d98b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-4b420d",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-629aad",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d00fa7",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-b7b8c5",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-f78ef5",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-c82842",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190522Z-5df1c7",
   "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-99988e",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-eaadc6",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-c4b8ce",
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-feec7c",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
   "org.scalablytyped" %%% "restify" % "7.2-dt-20190506Z-8c002d",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-58ff5f",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-e7fc9c",
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-a50041",
   "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-be2294",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",

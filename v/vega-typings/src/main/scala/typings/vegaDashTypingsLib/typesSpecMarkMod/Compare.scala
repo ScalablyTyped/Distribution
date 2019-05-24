@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Compare extends js.Object {
   var field: js.UndefOr[
-    (js.Array[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | java.lang.String
+    (js.Array[
+      java.lang.String | vegaDashTypingsLib.typesSpecExprMod.ExprRef | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+    ]) | vegaDashTypingsLib.typesSpecExprMod.ExprRef | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | java.lang.String
   ] = js.undefined
   var order: js.UndefOr[
     js.Array[vegaDashTypingsLib.typesSpecScaleMod.SortOrder] | vegaDashTypingsLib.typesSpecScaleMod.SortOrder
@@ -17,7 +19,7 @@ trait Compare extends js.Object {
 object Compare {
   @scala.inline
   def apply(
-    field: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    field: java.lang.String | vegaDashTypingsLib.typesSpecExprMod.ExprRef | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     order: vegaDashTypingsLib.typesSpecScaleMod.SortOrder = null
   ): Compare = {
     val __obj = js.Dynamic.literal()

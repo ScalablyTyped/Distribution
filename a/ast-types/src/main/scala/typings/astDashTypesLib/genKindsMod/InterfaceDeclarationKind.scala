@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - astDashTypesLib.genNodesMod.InterfaceDeclaration
-  - astDashTypesLib.genNodesMod.DeclareInterface
-  - astDashTypesLib.genNodesMod.DeclareClass
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceDeclaration
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareInterface
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareClass
 */
 trait InterfaceDeclarationKind extends js.Object
 

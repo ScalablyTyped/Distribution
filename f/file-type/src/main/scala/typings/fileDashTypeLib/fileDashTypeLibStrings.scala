@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 object fileDashTypeLibStrings {
   @js.native
+  sealed trait `3g2`
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait `3gp`
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
@@ -19,7 +23,15 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait ac3
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait aif
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait alias
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -32,6 +44,10 @@ object fileDashTypeLibStrings {
   
   @js.native
   sealed trait ar
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait arw
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -87,7 +103,15 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait dng
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait docx
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait dsf
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -100,6 +124,22 @@ object fileDashTypeLibStrings {
   
   @js.native
   sealed trait exe
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait f4a
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait f4b
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait f4p
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait f4v
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -163,11 +203,23 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait lnk
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait lz
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
   sealed trait m4a
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait m4b
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait m4p
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -227,6 +279,10 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait nef
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait nes
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
@@ -248,6 +304,10 @@ object fileDashTypeLibStrings {
   
   @js.native
   sealed trait opus
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
+  sealed trait orf
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
@@ -315,6 +375,10 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @js.native
+  sealed trait voc
+    extends fileDashTypeLib.fileDashTypeMod.FileType
+  
+  @js.native
   sealed trait wasm
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
@@ -371,19 +435,27 @@ object fileDashTypeLibStrings {
     extends fileDashTypeLib.fileDashTypeMod.FileType
   
   @scala.inline
+  def `3g2`: `3g2` = "3g2".asInstanceOf[`3g2`]
+  @scala.inline
   def `3gp`: `3gp` = "3gp".asInstanceOf[`3gp`]
   @scala.inline
   def `7z`: `7z` = "7z".asInstanceOf[`7z`]
   @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
   @scala.inline
+  def ac3: ac3 = "ac3".asInstanceOf[ac3]
+  @scala.inline
   def aif: aif = "aif".asInstanceOf[aif]
+  @scala.inline
+  def alias: alias = "alias".asInstanceOf[alias]
   @scala.inline
   def amr: amr = "amr".asInstanceOf[amr]
   @scala.inline
   def ape: ape = "ape".asInstanceOf[ape]
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
+  def arw: arw = "arw".asInstanceOf[arw]
   @scala.inline
   def asf: asf = "asf".asInstanceOf[asf]
   @scala.inline
@@ -411,13 +483,25 @@ object fileDashTypeLibStrings {
   @scala.inline
   def dmg: dmg = "dmg".asInstanceOf[dmg]
   @scala.inline
+  def dng: dng = "dng".asInstanceOf[dng]
+  @scala.inline
   def docx: docx = "docx".asInstanceOf[docx]
+  @scala.inline
+  def dsf: dsf = "dsf".asInstanceOf[dsf]
   @scala.inline
   def eot: eot = "eot".asInstanceOf[eot]
   @scala.inline
   def epub: epub = "epub".asInstanceOf[epub]
   @scala.inline
   def exe: exe = "exe".asInstanceOf[exe]
+  @scala.inline
+  def f4a: f4a = "f4a".asInstanceOf[f4a]
+  @scala.inline
+  def f4b: f4b = "f4b".asInstanceOf[f4b]
+  @scala.inline
+  def f4p: f4p = "f4p".asInstanceOf[f4p]
+  @scala.inline
+  def f4v: f4v = "f4v".asInstanceOf[f4v]
   @scala.inline
   def flac: flac = "flac".asInstanceOf[flac]
   @scala.inline
@@ -449,9 +533,15 @@ object fileDashTypeLibStrings {
   @scala.inline
   def ktx: ktx = "ktx".asInstanceOf[ktx]
   @scala.inline
+  def lnk: lnk = "lnk".asInstanceOf[lnk]
+  @scala.inline
   def lz: lz = "lz".asInstanceOf[lz]
   @scala.inline
   def m4a: m4a = "m4a".asInstanceOf[m4a]
+  @scala.inline
+  def m4b: m4b = "m4b".asInstanceOf[m4b]
+  @scala.inline
+  def m4p: m4p = "m4p".asInstanceOf[m4p]
   @scala.inline
   def m4v: m4v = "m4v".asInstanceOf[m4v]
   @scala.inline
@@ -481,6 +571,8 @@ object fileDashTypeLibStrings {
   @scala.inline
   def mxf: mxf = "mxf".asInstanceOf[mxf]
   @scala.inline
+  def nef: nef = "nef".asInstanceOf[nef]
+  @scala.inline
   def nes: nes = "nes".asInstanceOf[nes]
   @scala.inline
   def odp: odp = "odp".asInstanceOf[odp]
@@ -492,6 +584,8 @@ object fileDashTypeLibStrings {
   def ogg: ogg = "ogg".asInstanceOf[ogg]
   @scala.inline
   def opus: opus = "opus".asInstanceOf[opus]
+  @scala.inline
+  def orf: orf = "orf".asInstanceOf[orf]
   @scala.inline
   def otf: otf = "otf".asInstanceOf[otf]
   @scala.inline
@@ -524,6 +618,8 @@ object fileDashTypeLibStrings {
   def tif: tif = "tif".asInstanceOf[tif]
   @scala.inline
   def ttf: ttf = "ttf".asInstanceOf[ttf]
+  @scala.inline
+  def voc: voc = "voc".asInstanceOf[voc]
   @scala.inline
   def wasm: wasm = "wasm".asInstanceOf[wasm]
   @scala.inline

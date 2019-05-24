@@ -5,18 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PayloadMetaAction[T /* <: StringType */, P, M] extends js.Object {
-  var meta: M
-  var payload: P
-  var `type`: T
+trait PayloadMetaAction[TType /* <: TypeConstant */, TPayload, TMeta] extends js.Object {
+  var meta: TMeta
+  var payload: TPayload
+  var `type`: TType
 }
 
 object PayloadMetaAction {
   @scala.inline
-  def apply[T /* <: StringType */, P, M](meta: M, payload: P, `type`: T): PayloadMetaAction[T, P, M] = {
+  def apply[TType /* <: TypeConstant */, TPayload, TMeta](meta: TMeta, payload: TPayload, `type`: TType): PayloadMetaAction[TType, TPayload, TMeta] = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PayloadMetaAction[T, P, M]]
+    __obj.asInstanceOf[PayloadMetaAction[TType, TPayload, TMeta]]
   }
 }
 

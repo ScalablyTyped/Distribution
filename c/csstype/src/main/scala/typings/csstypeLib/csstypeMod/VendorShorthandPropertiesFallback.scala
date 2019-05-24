@@ -16,8 +16,6 @@ trait VendorShorthandPropertiesFallback[TLength] extends js.Object {
   var MozColumns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
   /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
   var MozTransition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
-  /** The **`border-image`** CSS property draws an image in place of an element's `border-style`. */
-  var OBorderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
   /** The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`. */
   var WebkitAnimation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
   /** The **`-webkit-border-before`** CSS property is a shorthand property for setting the individual logical block start border property values in a single place in the style sheet. */
@@ -67,7 +65,6 @@ object VendorShorthandPropertiesFallback {
     MozColumnRule: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
     MozColumns: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
     MozTransition: TransitionProperty | js.Array[TransitionProperty] = null,
-    OBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
     WebkitAnimation: AnimationProperty | js.Array[AnimationProperty] = null,
     WebkitBorderBefore: WebkitBorderBeforeProperty[TLength] | js.Array[WebkitBorderBeforeProperty[TLength]] = null,
     WebkitBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
@@ -94,7 +91,6 @@ object VendorShorthandPropertiesFallback {
     if (MozColumnRule != null) __obj.updateDynamic("MozColumnRule")(MozColumnRule.asInstanceOf[js.Any])
     if (MozColumns != null) __obj.updateDynamic("MozColumns")(MozColumns.asInstanceOf[js.Any])
     if (MozTransition != null) __obj.updateDynamic("MozTransition")(MozTransition.asInstanceOf[js.Any])
-    if (OBorderImage != null) __obj.updateDynamic("OBorderImage")(OBorderImage.asInstanceOf[js.Any])
     if (WebkitAnimation != null) __obj.updateDynamic("WebkitAnimation")(WebkitAnimation.asInstanceOf[js.Any])
     if (WebkitBorderBefore != null) __obj.updateDynamic("WebkitBorderBefore")(WebkitBorderBefore.asInstanceOf[js.Any])
     if (WebkitBorderImage != null) __obj.updateDynamic("WebkitBorderImage")(WebkitBorderImage.asInstanceOf[js.Any])

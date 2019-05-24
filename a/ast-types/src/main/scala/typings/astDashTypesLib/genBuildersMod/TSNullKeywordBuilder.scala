@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSNullKeywordBuilder extends js.Object {
-  def apply(): astDashTypesLib.genNodesMod.TSNullKeyword = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNodesMod.TSNullKeyword = js.native
+  def apply(): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNullKeyword = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNullKeyword = js.native
 }
 

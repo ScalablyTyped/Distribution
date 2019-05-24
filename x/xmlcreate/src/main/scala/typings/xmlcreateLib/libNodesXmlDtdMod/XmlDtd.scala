@@ -6,164 +6,78 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait XmlDtd
-  extends xmlcreateLib.libNodesXmlNodeMod.default {
+trait XmlDtd[Parent] extends js.Object {
+  val _children: js.Any = js.native
   var _name: js.Any = js.native
-  var _pubId: js.UndefOr[js.Any] = js.native
-  var _sysId: js.UndefOr[js.Any] = js.native
+  val _parent: js.Any = js.native
+  var _pubId: js.Any = js.native
+  var _sysId: js.Any = js.native
+  val _validation: js.Any = js.native
+  /**
+    * Appends the XML string representation of a public or system identifier
+    * to an existing string.
+    */
+  var appendId: js.Any = js.native
   /**
     * Gets the name of the DTD.
-    *
-    * @returns The name of the DTD.
     */
   /**
     * Sets the name of the DTD.
-    *
-    * @param name The name of the DTD.
     */
   var name: java.lang.String = js.native
   /**
-    * Gets the public identifier of the DTD, excluding quotation marks.
-    *
-    * @returns The public identifier of the DTD, excluding quotation marks.
-    *          This value may be undefined.
+    * Gets the public identifier of the DTD.
     */
   /**
-    * Sets the public identifier of the DTD, excluding quotation marks. If a
-    * public identifier is provided, a system identifier must be provided as
-    * well.
-    *
-    * @param pubId The public identifier of the DTD, excluding quotation marks.
-    *              This value may be undefined.
+    * Sets the public identifier of the DTD.
     */
   var pubId: js.UndefOr[java.lang.String] = js.native
   /**
-    * Gets the system identifier of the DTD, excluding quotation marks.
-    *
-    * @returns The system identifier of the DTD, excluding quotation marks.
-    *          This value may be undefined.
+    * Gets the system identifier of the DTD.
     */
   /**
-    * Sets the system identifier of the DTD, excluding quotation marks.
-    *
-    * @param sysId The system identifier of the DTD, excluding quotation marks.
-    *              This value may be undefined.
+    * Sets the system identifier of the DTD.
     */
   var sysId: js.UndefOr[java.lang.String] = js.native
   /**
-    * Inserts a new attribute-list declaration at the specified index. If no
-    * index is specified, the node is inserted at the end of this node's
-    * children.
-    *
-    * @param text The text of the attribute-list declaration.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created attribute-list declaration.
+    * Adds an attribute-list declaration to this document type declaration
+    * and returns the new attribute-list declaration.
     */
-  def attlist(text: java.lang.String): xmlcreateLib.libNodesXmlDtdAttlistMod.default = js.native
-  def attlist(text: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlDtdAttlistMod.default = js.native
+  def attlist(options: xmlcreateLib.libNodesXmlDtdAttlistMod.IXmlDtdAttlistOptions): xmlcreateLib.libNodesXmlDtdAttlistMod.default[this.type] = js.native
   /**
-    * Inserts a new comment at the specified index. If no index is specified,
-    * the node is inserted at the end of this node's children.
-    *
-    * @param content The data of the comment.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created comment.
+    * Adds a comment to this document type declaration and returns the
+    * new comment.
     */
-  def comment(content: java.lang.String): xmlcreateLib.libNodesXmlCommentMod.default = js.native
-  def comment(content: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlCommentMod.default = js.native
+  def comment(options: xmlcreateLib.libNodesXmlCommentMod.IXmlCommentOptions): xmlcreateLib.libNodesXmlCommentMod.default[this.type] = js.native
   /**
-    * Inserts a new element declaration at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param text The text of the element declaration.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created element declaration.
+    * Adds an element declaration to this document type declaration
+    * and returns the new element declaration.
     */
-  def element(text: java.lang.String): xmlcreateLib.libNodesXmlDtdElementMod.default = js.native
-  def element(text: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlDtdElementMod.default = js.native
+  def element(options: xmlcreateLib.libNodesXmlDtdElementMod.IXmlDtdElementOptions): xmlcreateLib.libNodesXmlDtdElementMod.default[this.type] = js.native
   /**
-    * Inserts a new entity declaration at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param text The text of the entity declaration.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created entity declaration.
+    * Adds an entity declaration to this document type declaration
+    * and returns the new entity declaration.
     */
-  def entity(text: java.lang.String): xmlcreateLib.libNodesXmlDtdEntityMod.default = js.native
-  def entity(text: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlDtdEntityMod.default = js.native
+  def entity(options: xmlcreateLib.libNodesXmlDtdEntityMod.IXmlDtdEntityOptions): xmlcreateLib.libNodesXmlDtdEntityMod.default[this.type] = js.native
   /**
-    * Inserts the specified node into this node's children at the specified
-    * index. The node is not inserted if it is already present. If this node
-    * already has a parent, it is removed from that parent.
-    *
-    * Only {@link XmlComment}, {@link XmlDtdAttlist}, {@link XmlDtdElement},
-    * {@link XmlDtdEntity}, {@link XmlDtdNotation}, and {@link XmlProcInst}
-    * nodes can be inserted; otherwise an exception will be thrown.
-    *
-    * @param node The node to insert.
-    * @param index The index at which to insert the node. Nodes at or after
-    *              the index are shifted to the right. If no index is
-    *              specified, the node is inserted at the end.
-    *
-    * @returns The node inserted into this node's children, or undefined if no
-    *          node was inserted.
+    * Adds a notation declaration to this document type declaration
+    * and returns the new notation declaration.
     */
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
+  def notation(options: xmlcreateLib.libNodesXmlDtdNotationMod.IXmlDtdNotationOptions): xmlcreateLib.libNodesXmlDtdNotationMod.default[this.type] = js.native
   /**
-    * Inserts a new notation declaration at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param text The text of the notation declaration.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created notation declaration.
+    * Adds a parameter entity reference to this document type declaration
+    * and returns the new parameter entity reference.
     */
-  def notation(text: java.lang.String): xmlcreateLib.libNodesXmlDtdNotationMod.default = js.native
-  def notation(text: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlDtdNotationMod.default = js.native
+  def paramEntityRef(options: xmlcreateLib.libNodesXmlDtdParamEntityRefMod.IXmlDtdParamEntityRefOptions): xmlcreateLib.libNodesXmlDtdParamEntityRefMod.default[this.type] = js.native
   /**
-    * Inserts a new parameter entity reference at the specified index. If no
-    * index is specified, the node is inserted at the end of this node's
-    * children.
-    *
-    * @param entity The entity to reference.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created parameter entity reference.
+    * Adds a processing instruction to this document type declaration
+    * and returns the new processing instruction.
     */
-  def paramEntityRef(entity: java.lang.String): xmlcreateLib.libNodesXmlDtdParamEntityRefMod.default = js.native
-  def paramEntityRef(entity: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlDtdParamEntityRefMod.default = js.native
+  def procInst(options: xmlcreateLib.libNodesXmlProcInstMod.IXmlProcInstOptions): xmlcreateLib.libNodesXmlProcInstMod.default[this.type] = js.native
+  def toString(options: xmlcreateLib.libOptionsMod.IStringOptions): java.lang.String = js.native
   /**
-    * Inserts a new processing instruction at the specified index. If no index
-    * is specified, the node is inserted at the end of this node's children.
-    *
-    * @param target The target of the processing instruction.
-    * @param content The data of the processing instruction, or undefined if
-    *                there is no target.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created processing instruction.
+    * Returns the parent of this attribute.
     */
-  def procInst(target: java.lang.String): xmlcreateLib.libNodesXmlProcInstMod.default = js.native
-  def procInst(target: java.lang.String, content: java.lang.String): xmlcreateLib.libNodesXmlProcInstMod.default = js.native
-  def procInst(target: java.lang.String, content: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlProcInstMod.default = js.native
+  def up(): Parent = js.native
 }
 

@@ -11,6 +11,13 @@ trait Props[OptionType] extends js.Object {
   var defaultValue: js.UndefOr[reactDashSelectLib.libTypesMod.ValueType[OptionType]] = js.undefined
   var inputValue: js.UndefOr[java.lang.String] = js.undefined
   var menuIsOpen: js.UndefOr[scala.Boolean] = js.undefined
+  var onChange: js.UndefOr[
+    js.Function2[
+      /* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], 
+      /* actionMeta */ reactDashSelectLib.libTypesMod.ActionMeta, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var value: js.UndefOr[reactDashSelectLib.libTypesMod.ValueType[OptionType]] = js.undefined
 }
 
@@ -22,6 +29,7 @@ object Props {
     defaultValue: reactDashSelectLib.libTypesMod.ValueType[OptionType] = null,
     inputValue: java.lang.String = null,
     menuIsOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: (/* value */ reactDashSelectLib.libTypesMod.ValueType[OptionType], /* actionMeta */ reactDashSelectLib.libTypesMod.ActionMeta) => scala.Unit = null,
     value: reactDashSelectLib.libTypesMod.ValueType[OptionType] = null
   ): Props[OptionType] = {
     val __obj = js.Dynamic.literal()
@@ -30,6 +38,7 @@ object Props {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue)
     if (!js.isUndefined(menuIsOpen)) __obj.updateDynamic("menuIsOpen")(menuIsOpen)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props[OptionType]]
   }

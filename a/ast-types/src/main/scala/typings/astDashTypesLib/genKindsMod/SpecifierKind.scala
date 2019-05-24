@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - astDashTypesLib.genNodesMod.ImportSpecifier
-  - astDashTypesLib.genNodesMod.ImportNamespaceSpecifier
-  - astDashTypesLib.genNodesMod.ImportDefaultSpecifier
-  - astDashTypesLib.genNodesMod.ExportSpecifier
-  - astDashTypesLib.genNodesMod.ExportBatchSpecifier
-  - astDashTypesLib.genNodesMod.ExportNamespaceSpecifier
-  - astDashTypesLib.genNodesMod.ExportDefaultSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportNamespaceSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDefaultSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportBatchSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamespaceSpecifier
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDefaultSpecifier
 */
 trait SpecifierKind extends js.Object
 

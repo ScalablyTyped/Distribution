@@ -64,8 +64,8 @@ object editorNs extends js.Object {
     val foldingStrategy: monacoDashEditorLib.monacoDashEditorLibStrings.auto | monacoDashEditorLib.monacoDashEditorLibStrings.indentation
     val formatOnPaste: scala.Boolean
     val formatOnType: scala.Boolean
+    val gotoLocation: InternalGoToLocationOptions
     val hover: InternalEditorHoverOptions
-    val iconsInSuggestions: scala.Boolean
     val lightbulbEnabled: scala.Boolean
     val links: scala.Boolean
     val matchBrackets: scala.Boolean
@@ -1394,6 +1394,10 @@ object editorNs extends js.Object {
       */
     var glyphMargin: js.UndefOr[scala.Boolean] = js.undefined
     /**
+      *
+      */
+    var gotoLocation: js.UndefOr[IGotoLocationOptions] = js.undefined
+    /**
       * Should the cursor be hidden in the overview ruler.
       * Defaults to false.
       */
@@ -1407,11 +1411,6 @@ object editorNs extends js.Object {
       * Configure the editor's hover.
       */
     var hover: js.UndefOr[IEditorHoverOptions] = js.undefined
-    /**
-      * Render icons in suggestions box.
-      * Defaults to true.
-      */
-    var iconsInSuggestions: js.UndefOr[scala.Boolean] = js.undefined
     /**
       * The letter spacing
       */
@@ -1523,7 +1522,7 @@ object editorNs extends js.Object {
     var renderControlCharacters: js.UndefOr[scala.Boolean] = js.undefined
     /**
       * Render last line number when the file ends with a newline.
-      * Defaults to true on Windows/Mac and to false on Linux.
+      * Defaults to true.
       */
     var renderFinalNewline: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -1789,6 +1788,15 @@ object editorNs extends js.Object {
     - IDiffEditorViewState
   */
   trait IEditorViewState extends js.Object
+  
+  trait IGotoLocationOptions extends js.Object {
+    /**
+      * Control how goto-command work when having multiple results.
+      */
+    var multiple: js.UndefOr[
+        monacoDashEditorLib.monacoDashEditorLibStrings.peek | monacoDashEditorLib.monacoDashEditorLibStrings.gotoAndPeek | monacoDashEditorLib.monacoDashEditorLibStrings.goto
+      ] = js.undefined
+  }
   
   trait IIdentifiedSingleEditOperation extends js.Object {
     /**
@@ -2116,7 +2124,7 @@ object editorNs extends js.Object {
     /**
       * The text to replace with. This can be null to emulate a simple delete.
       */
-    var text: java.lang.String
+    var text: java.lang.String | scala.Null
   }
   
   trait ISingleEditOperationIdentifier extends js.Object {
@@ -2160,13 +2168,25 @@ object editorNs extends js.Object {
       */
     var filterGraceful: js.UndefOr[scala.Boolean] = js.undefined
     /**
+      * Names of suggestion types to filter.
+      */
+    var filteredTypes: js.UndefOr[stdLib.Record[java.lang.String, scala.Boolean]] = js.undefined
+    /**
       * Favours words that appear close to the cursor.
       */
     var localityBonus: js.UndefOr[scala.Boolean] = js.undefined
     /**
+      * Max suggestions to show in suggestions. Defaults to 12.
+      */
+    var maxVisibleSuggestions: js.UndefOr[scala.Boolean] = js.undefined
+    /**
       * Enable using global storage for remembering suggestions.
       */
     var shareSuggestSelections: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+      * Enable or disable icons in suggestions. Defaults to true.
+      */
+    var showIcons: js.UndefOr[scala.Boolean] = js.undefined
     /**
       * Prevent quick suggestions when a snippet is active. Defaults to true.
       */
@@ -2867,6 +2887,10 @@ object editorNs extends js.Object {
     val stopRenderingLineAfter: scala.Double
   }
   
+  trait InternalGoToLocationOptions extends js.Object {
+    val multiple: monacoDashEditorLib.monacoDashEditorLibStrings.peek | monacoDashEditorLib.monacoDashEditorLibStrings.gotoAndPeek | monacoDashEditorLib.monacoDashEditorLibStrings.goto
+  }
+  
   trait InternalParameterHintOptions extends js.Object {
     val cycle: scala.Boolean
     val enabled: scala.Boolean
@@ -2874,8 +2898,11 @@ object editorNs extends js.Object {
   
   trait InternalSuggestOptions extends js.Object {
     val filterGraceful: scala.Boolean
+    val filteredTypes: stdLib.Record[java.lang.String, scala.Boolean]
     val localityBonus: scala.Boolean
+    val maxVisibleSuggestions: scala.Double
     val shareSuggestSelections: scala.Boolean
+    val showIcons: scala.Boolean
     val snippets: monacoDashEditorLib.monacoDashEditorLibStrings.top | monacoDashEditorLib.monacoDashEditorLibStrings.bottom | monacoDashEditorLib.monacoDashEditorLibStrings.`inline` | monacoDashEditorLib.monacoDashEditorLibStrings.none
     val snippetsPreventQuickSuggestions: scala.Boolean
   }

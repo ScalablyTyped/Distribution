@@ -60,6 +60,8 @@ class MatrixDropdownRowModelBase protected ()
   override def setComment(name: java.lang.String, newValue: java.lang.String): js.Any = js.native
   /* CompleteClass */
   override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
+  /* protected */ def updateCellOnColumnChanged(cell: MatrixDropdownCell): scala.Unit = js.native
+  def updateCellQuestionOnColumnChanged(column: MatrixDropdownColumn): scala.Unit = js.native
 }
 
 /* static members */
@@ -67,6 +69,7 @@ class MatrixDropdownRowModelBase protected ()
 @js.native
 object MatrixDropdownRowModelBase extends js.Object {
   var IndexVariableName: java.lang.String = js.native
+  var OwnerVariableName: java.lang.String = js.native
   var RowVariableName: java.lang.String = js.native
 }
 

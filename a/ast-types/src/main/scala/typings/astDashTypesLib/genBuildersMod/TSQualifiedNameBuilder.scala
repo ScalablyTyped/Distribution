@@ -10,19 +10,19 @@ trait TSQualifiedNameBuilder extends js.Object {
   def apply(
     left: astDashTypesLib.genKindsMod.IdentifierKind,
     right: astDashTypesLib.genKindsMod.IdentifierKind
-  ): astDashTypesLib.genNodesMod.TSQualifiedName = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName = js.native
   def apply(
     left: astDashTypesLib.genKindsMod.IdentifierKind,
     right: astDashTypesLib.genKindsMod.TSQualifiedNameKind
-  ): astDashTypesLib.genNodesMod.TSQualifiedName = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName = js.native
   def apply(
     left: astDashTypesLib.genKindsMod.TSQualifiedNameKind,
     right: astDashTypesLib.genKindsMod.IdentifierKind
-  ): astDashTypesLib.genNodesMod.TSQualifiedName = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName = js.native
   def apply(
     left: astDashTypesLib.genKindsMod.TSQualifiedNameKind,
     right: astDashTypesLib.genKindsMod.TSQualifiedNameKind
-  ): astDashTypesLib.genNodesMod.TSQualifiedName = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLeftLocRightArray): astDashTypesLib.genNodesMod.TSQualifiedName = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLeftLocRightArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName = js.native
 }
 

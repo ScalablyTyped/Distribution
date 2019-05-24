@@ -11,17 +11,17 @@ trait LogicalExpressionBuilder extends js.Object {
     operator: astDashTypesLib.astDashTypesLibStrings.`&&`,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.LogicalExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression = js.native
   def apply(
     operator: astDashTypesLib.astDashTypesLibStrings.`??`,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.LogicalExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression = js.native
   def apply(
     operator: astDashTypesLib.astDashTypesLibStrings.`||`,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.LogicalExpression = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLeftLoc): astDashTypesLib.genNodesMod.LogicalExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLeftLoc): astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression = js.native
 }
 

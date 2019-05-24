@@ -108,9 +108,7 @@ trait InputAdornmentProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputAdornmentClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapInputAdornmentClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[InputAdornmentProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -380,7 +378,7 @@ object InputAdornmentProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputAdornmentClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapInputAdornmentClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[InputAdornmentProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

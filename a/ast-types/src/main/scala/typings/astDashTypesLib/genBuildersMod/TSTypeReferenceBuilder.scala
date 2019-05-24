@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSTypeReferenceBuilder extends js.Object {
-  def apply(typeName: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.TSTypeReference = js.native
+  def apply(typeName: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference = js.native
   def apply(
     typeName: astDashTypesLib.genKindsMod.IdentifierKind,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
-  ): astDashTypesLib.genNodesMod.TSTypeReference = js.native
-  def apply(typeName: astDashTypesLib.genKindsMod.TSQualifiedNameKind): astDashTypesLib.genNodesMod.TSTypeReference = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference = js.native
+  def apply(typeName: astDashTypesLib.genKindsMod.TSQualifiedNameKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference = js.native
   def apply(
     typeName: astDashTypesLib.genKindsMod.TSQualifiedNameKind,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
-  ): astDashTypesLib.genNodesMod.TSTypeReference = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocTypeName): astDashTypesLib.genNodesMod.TSTypeReference = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocTypeName): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference = js.native
 }
 

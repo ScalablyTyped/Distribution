@@ -11,7 +11,7 @@ trait Budgets
   @JSName("config")
   var config_Budgets: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates a budget and, if included, notifications and subscribers. 
+    * Creates a budget and, if included, notifications and subscribers.   Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def createBudget(): awsDashSdkLib.libRequestMod.Request[CreateBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBudget(
@@ -22,7 +22,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a budget and, if included, notifications and subscribers. 
+    * Creates a budget and, if included, notifications and subscribers.   Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def createBudget(params: CreateBudgetRequest): awsDashSdkLib.libRequestMod.Request[CreateBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createBudget(
@@ -149,7 +149,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteSubscriberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes a budget.
+    * Describes a budget.  The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def describeBudget(): awsDashSdkLib.libRequestMod.Request[DescribeBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBudget(
@@ -160,7 +160,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Describes a budget.
+    * Describes a budget.  The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def describeBudget(params: DescribeBudgetRequest): awsDashSdkLib.libRequestMod.Request[DescribeBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBudget(
@@ -195,7 +195,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeBudgetPerformanceHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the budgets that are associated with an account.
+    * Lists the budgets that are associated with an account.  The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def describeBudgets(): awsDashSdkLib.libRequestMod.Request[DescribeBudgetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBudgets(
@@ -206,7 +206,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeBudgetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the budgets that are associated with an account.
+    * Lists the budgets that are associated with an account.  The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def describeBudgets(params: DescribeBudgetsRequest): awsDashSdkLib.libRequestMod.Request[DescribeBudgetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeBudgets(
@@ -264,7 +264,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeSubscribersForNotificationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
+    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def updateBudget(): awsDashSdkLib.libRequestMod.Request[UpdateBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBudget(
@@ -275,7 +275,7 @@ trait Budgets
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
+    * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.  Only one of BudgetLimit or PlannedBudgetLimits can be present in the syntax at one time. Use the syntax that matches your case. The Request Syntax section shows the BudgetLimit syntax. For PlannedBudgetLimits, see the Examples section.  
     */
   def updateBudget(params: UpdateBudgetRequest): awsDashSdkLib.libRequestMod.Request[UpdateBudgetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateBudget(

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FirebaseNamespace extends js.Object {
-  // Inherit the type information of our exported Promise implementation from
-  // es6-promises.
-  var Promise: stdLib.PromiseConstructor = js.native
   // The current SDK version.
   var SDK_VERSION: java.lang.String = js.native
   @JSName("app")

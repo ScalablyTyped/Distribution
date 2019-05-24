@@ -12,7 +12,7 @@ trait LocationState[TKeys, TState] extends js.Object {
   var pathname: java.lang.String
   var payload: Payload
   var prev: Location
-  var query: js.UndefOr[js.Object] = js.undefined
+  var query: js.UndefOr[Query] = js.undefined
   var routesMap: RoutesMap[TKeys, TState]
   var search: js.UndefOr[java.lang.String] = js.undefined
   var `type`: java.lang.String
@@ -29,7 +29,7 @@ object LocationState {
     routesMap: RoutesMap[TKeys, TState],
     `type`: java.lang.String,
     hasSSR: js.UndefOr[scala.Boolean] = js.undefined,
-    query: js.Object = null,
+    query: Query = null,
     search: java.lang.String = null
   ): LocationState[TKeys, TState] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], pathname = pathname, payload = payload, prev = prev, routesMap = routesMap)

@@ -110,9 +110,7 @@ trait StepperProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepperClasskey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapStepperClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var connector: js.UndefOr[reactLib.reactMod.ReactElement[_] | reactLib.reactMod.ReactNode] = js.undefined
@@ -382,7 +380,7 @@ object StepperProps {
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepperClasskey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapStepperClasskey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     connector: reactLib.reactMod.ReactElement[_] | reactLib.reactMod.ReactNode = null,

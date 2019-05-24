@@ -56,13 +56,13 @@ class ^ () extends Subsume {
   	@returns A wrapped version of `text` that you can embed in other content.
   	*/
   /* CompleteClass */
-  override def compose(text: java.lang.String): java.lang.String = js.native
+  override def compose(string: java.lang.String): java.lang.String = js.native
   /**
   	Extract your embedded data from `text`.
-  	@returns an object with properties `.data` for your embedded data and `.rest` for everything else.
+  	@returns An object with properties `.data` for your embedded data and `.rest` for everything else.
   	*/
   /* CompleteClass */
-  override def parse(text: java.lang.String): ParseResult = js.native
+  override def parse(string: java.lang.String): ParseResult = js.native
 }
 
 @JSImport("subsume", JSImport.Namespace)
@@ -72,7 +72,7 @@ object ^ extends js.Object {
   	Extract embedded data with a specific `id` out of `text`.
   	Useful when `text` comes from an external source.
   	*/
-  def parse(text: java.lang.String, id: java.lang.String): ParseResult = js.native
+  def parse(string: java.lang.String, id: java.lang.String): ParseResult = js.native
   /**
   	Extract embedded data corresponding to all IDs in `idArray`, if specified. Otherwise it will extract embedded data for all top-level IDs.
   	@returns An object with a Map with an entry for each parsed ID, and a rest string for what remains after all the required IDs have been parsed, as seen below:
@@ -92,7 +92,7 @@ object ^ extends js.Object {
   	}
   	```
   	*/
-  def parseAll(text: java.lang.String): ParseResults = js.native
-  def parseAll(text: java.lang.String, idArray: js.Array[java.lang.String]): ParseResults = js.native
+  def parseAll(string: java.lang.String): ParseResults = js.native
+  def parseAll(string: java.lang.String, idArray: js.Array[java.lang.String]): ParseResults = js.native
 }
 

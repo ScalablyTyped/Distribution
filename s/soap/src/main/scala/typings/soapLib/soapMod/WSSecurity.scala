@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("soap", "WSSecurity")
 @js.native
-class WSSecurity protected () extends ISecurity {
+class WSSecurity protected ()
+  extends soapLib.libSecurityMod.WSSecurity {
   def this(username: java.lang.String, password: java.lang.String) = this()
-  def this(username: java.lang.String, password: java.lang.String, options: js.Any) = this()
-  /* CompleteClass */
-  override def addOptions(options: js.Any): scala.Unit = js.native
-  /* CompleteClass */
-  override def toXML(): java.lang.String = js.native
+  def this(username: java.lang.String, password: java.lang.String, options: java.lang.String) = this()
+  def this(username: java.lang.String, password: java.lang.String, options: soapLib.libSecurityWSSecurityMod.IWSSecurityOptions) = this()
 }
 

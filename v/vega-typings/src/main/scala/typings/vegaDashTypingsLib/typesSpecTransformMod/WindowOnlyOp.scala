@@ -17,6 +17,8 @@ import scala.scalajs.js.annotation._
   - vegaDashTypingsLib.vegaDashTypingsLibStrings.first_value
   - vegaDashTypingsLib.vegaDashTypingsLibStrings.last_value
   - vegaDashTypingsLib.vegaDashTypingsLibStrings.nth_value
+  - vegaDashTypingsLib.vegaDashTypingsLibStrings.prev_value
+  - vegaDashTypingsLib.vegaDashTypingsLibStrings.next_value
 */
 trait WindowOnlyOp extends js.Object
 

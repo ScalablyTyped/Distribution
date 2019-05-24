@@ -9,9 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class Subscription protected ()
   extends sipDotJsLib.libSubscriptionMod.Subscription {
+  /**
+    * Constructor.
+    * @param ua User agent.
+    * @param target Subscription target.
+    * @param event Subscription event.
+    * @param options Options bucket.
+    */
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String, options: sipDotJsLib.libSubscriptionMod.SubscriptionOptions) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String, options: sipDotJsLib.libSubscriptionMod.SubscriptionOptions) = this()
 }
 

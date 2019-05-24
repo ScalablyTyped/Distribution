@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   - csstypeLib.csstypeLibStrings.`::-ms-fill`
   - csstypeLib.csstypeLibStrings.`::-ms-fill-lower`
   - csstypeLib.csstypeLibStrings.`::-ms-fill-upper`
+  - csstypeLib.csstypeLibStrings.`::-ms-input-placeholder`
   - csstypeLib.csstypeLibStrings.`::-ms-reveal`
   - csstypeLib.csstypeLibStrings.`::-ms-thumb`
   - csstypeLib.csstypeLibStrings.`::-ms-ticks-after`

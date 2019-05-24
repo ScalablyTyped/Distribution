@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 /** @hidden */
 trait HttpClient extends Http {
   /**
+    * Hooks to run before spans are finished.
+    */
+  var hooks: js.UndefOr[ddDashTraceLib.Anon_ReqRequest] = js.undefined
+  /**
     * Use the remote endpoint host as the service name instead of the default.
     *
     * @default false
@@ -24,6 +28,7 @@ object HttpClient {
     ]) = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Array[java.lang.String] = null,
+    hooks: ddDashTraceLib.Anon_ReqRequest = null,
     service: java.lang.String = null,
     splitByDomain: js.UndefOr[scala.Boolean] = js.undefined,
     validateStatus: /* code */ scala.Double => scala.Boolean = null,
@@ -36,6 +41,7 @@ object HttpClient {
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
     if (service != null) __obj.updateDynamic("service")(service)
     if (!js.isUndefined(splitByDomain)) __obj.updateDynamic("splitByDomain")(splitByDomain)
     if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))

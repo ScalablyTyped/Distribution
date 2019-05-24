@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FileType extends js.Object {
-  val fileType: fileDashTypeLib.fileDashTypeMod.FileTypeResult | scala.Null
+  val fileType: js.UndefOr[fileDashTypeLib.fileDashTypeMod.FileTypeResult] = js.undefined
 }
 
 object Anon_FileType {

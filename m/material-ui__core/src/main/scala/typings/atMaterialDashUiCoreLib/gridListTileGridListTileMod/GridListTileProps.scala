@@ -108,9 +108,7 @@ trait GridListTileProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridListTileClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapGridListTileClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[GridListTileProps]] = js.undefined
@@ -375,7 +373,7 @@ object GridListTileProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridListTileClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapGridListTileClassKey = null,
     color: java.lang.String = null,
     cols: scala.Int | scala.Double = null,
     component: reactLib.reactMod.ReactType[GridListTileProps] = null,

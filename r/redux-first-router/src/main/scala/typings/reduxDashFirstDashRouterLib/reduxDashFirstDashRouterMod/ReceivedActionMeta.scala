@@ -9,7 +9,7 @@ trait ReceivedActionMeta extends js.Object {
   var meta: reduxDashFirstDashRouterLib.Anon_NotFoundPath
   var navKey: js.UndefOr[Nullable[java.lang.String]] = js.undefined
   var payload: Payload
-  var query: js.UndefOr[js.Object] = js.undefined
+  var query: js.UndefOr[Query] = js.undefined
   var `type`: java.lang.String
 }
 
@@ -20,7 +20,7 @@ object ReceivedActionMeta {
     payload: Payload,
     `type`: java.lang.String,
     navKey: Nullable[java.lang.String] = null,
-    query: js.Object = null
+    query: Query = null
   ): ReceivedActionMeta = {
     val __obj = js.Dynamic.literal(meta = meta, payload = payload)
     __obj.updateDynamic("type")(`type`)

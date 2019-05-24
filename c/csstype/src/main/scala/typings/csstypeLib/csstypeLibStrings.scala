@@ -12,7 +12,13 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `-moz-fit-content`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._InlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait `-moz-grab`
@@ -36,11 +42,35 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `-moz-max-content`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._FlexBasisProperty[js.Any]
+       with csstypeLib.csstypeMod._HeightProperty[js.Any]
+       with csstypeLib.csstypeMod._InlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxBlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._MinBlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait `-moz-min-content`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._FlexBasisProperty[js.Any]
+       with csstypeLib.csstypeMod._HeightProperty[js.Any]
+       with csstypeLib.csstypeMod._InlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxBlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._MinBlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait `-moz-none`
@@ -172,11 +202,20 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `-webkit-fill-available`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._InlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxBlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinBlockSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait `-webkit-fit-content`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._MinHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait `-webkit-flex`
@@ -196,11 +235,16 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `-webkit-max-content`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait `-webkit-min-content`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
   
   @js.native
   sealed trait `-webkit-optimize-contrast`
@@ -308,6 +352,10 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `::-ms-fill-upper`
+    extends csstypeLib.csstypeMod.SimplePseudos
+  
+  @js.native
+  sealed trait `::-ms-input-placeholder`
     extends csstypeLib.csstypeMod.SimplePseudos
   
   @js.native
@@ -2624,6 +2672,8 @@ object csstypeLibStrings {
   @js.native
   sealed trait all
     extends csstypeLib.csstypeMod._SingleTransition
+       with csstypeLib.csstypeMod.BreakAfterProperty
+       with csstypeLib.csstypeMod.BreakBeforeProperty
        with csstypeLib.csstypeMod.ColumnSpanProperty
        with csstypeLib.csstypeMod.PointerEventsProperty
        with csstypeLib.csstypeMod.UserSelectProperty
@@ -2673,7 +2723,9 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait always
-    extends csstypeLib.csstypeMod.PageBreakAfterProperty
+    extends csstypeLib.csstypeMod.BreakAfterProperty
+       with csstypeLib.csstypeMod.BreakBeforeProperty
+       with csstypeLib.csstypeMod.PageBreakAfterProperty
        with csstypeLib.csstypeMod.PageBreakBeforeProperty
   
   @js.native
@@ -2756,9 +2808,12 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._HeightProperty[js.Any]
        with csstypeLib.csstypeMod._InlineSizeProperty[js.Any]
        with csstypeLib.csstypeMod._InsetBlockEndProperty[js.Any]
+       with csstypeLib.csstypeMod._InsetBlockProperty[js.Any]
        with csstypeLib.csstypeMod._InsetBlockStartProperty[js.Any]
        with csstypeLib.csstypeMod._InsetInlineEndProperty[js.Any]
+       with csstypeLib.csstypeMod._InsetInlineProperty[js.Any]
        with csstypeLib.csstypeMod._InsetInlineStartProperty[js.Any]
+       with csstypeLib.csstypeMod._InsetProperty[js.Any]
        with csstypeLib.csstypeMod._JustifySelfProperty
        with csstypeLib.csstypeMod._LeftProperty[js.Any]
        with csstypeLib.csstypeMod._MarginBlockEndProperty[js.Any]
@@ -3027,7 +3082,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait button
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.AppearanceProperty
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -3048,7 +3104,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `button-bevel`
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -3110,7 +3167,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait checkbox
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -3742,6 +3800,10 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.NamedColor
   
   @js.native
+  sealed trait `full-size-kana`
+    extends csstypeLib.csstypeMod.TextTransformProperty
+  
+  @js.native
   sealed trait `full-width`
     extends csstypeLib.csstypeMod.TextTransformProperty
        with csstypeLib.csstypeMod._FontFaceFontVariantProperty
@@ -3998,7 +4060,10 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait intrinsic
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait invert
@@ -4205,7 +4270,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait linear
-    extends csstypeLib.csstypeMod._SingleTimingFunction
+    extends csstypeLib.csstypeMod._TimingFunction
   
   @js.native
   sealed trait linearRGB
@@ -4227,7 +4292,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait listbox
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -4479,12 +4545,14 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait menulist
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait `menulist-button`
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -4515,7 +4583,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait meter
-    extends csstypeLib.csstypeMod.WebkitAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait meterbar
@@ -4556,7 +4625,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `min-intrinsic`
-    extends csstypeLib.csstypeMod._WidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._MinWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
   @js.native
   sealed trait mintcream
@@ -5129,7 +5199,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `progress-bar`
-    extends csstypeLib.csstypeMod.WebkitAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait `progress-bar-value`
@@ -5177,11 +5248,13 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `push-button`
-    extends csstypeLib.csstypeMod.WebkitAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait radio
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -5513,7 +5586,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait searchfield
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -5659,7 +5733,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `slider-horizontal`
-    extends csstypeLib.csstypeMod.WebkitAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait `slider-vertical`
@@ -5787,7 +5862,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `square-button`
-    extends csstypeLib.csstypeMod.WebkitAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait `stacked-fractions`
@@ -6013,11 +6089,13 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait textarea
-    extends csstypeLib.csstypeMod.WebkitAppearanceProperty
+    extends csstypeLib.csstypeMod.Compat
+       with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
   sealed trait textfield
-    extends csstypeLib.csstypeMod.MozAppearanceProperty
+    extends csstypeLib.csstypeMod.AppearanceProperty
+       with csstypeLib.csstypeMod.MozAppearanceProperty
        with csstypeLib.csstypeMod.WebkitAppearanceProperty
   
   @js.native
@@ -6501,6 +6579,8 @@ object csstypeLibStrings {
   def `::-ms-fill-lower`: `::-ms-fill-lower` = "::-ms-fill-lower".asInstanceOf[`::-ms-fill-lower`]
   @scala.inline
   def `::-ms-fill-upper`: `::-ms-fill-upper` = "::-ms-fill-upper".asInstanceOf[`::-ms-fill-upper`]
+  @scala.inline
+  def `::-ms-input-placeholder`: `::-ms-input-placeholder` = "::-ms-input-placeholder".asInstanceOf[`::-ms-input-placeholder`]
   @scala.inline
   def `::-ms-reveal`: `::-ms-reveal` = "::-ms-reveal".asInstanceOf[`::-ms-reveal`]
   @scala.inline
@@ -8051,6 +8131,8 @@ object csstypeLibStrings {
   def `from-image`: `from-image` = "from-image".asInstanceOf[`from-image`]
   @scala.inline
   def fuchsia: fuchsia = "fuchsia".asInstanceOf[fuchsia]
+  @scala.inline
+  def `full-size-kana`: `full-size-kana` = "full-size-kana".asInstanceOf[`full-size-kana`]
   @scala.inline
   def `full-width`: `full-width` = "full-width".asInstanceOf[`full-width`]
   @scala.inline

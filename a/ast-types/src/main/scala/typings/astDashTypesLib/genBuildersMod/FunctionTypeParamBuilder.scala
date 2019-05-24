@@ -11,7 +11,7 @@ trait FunctionTypeParamBuilder extends js.Object {
     name: astDashTypesLib.genKindsMod.IdentifierKind,
     typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind,
     optional: scala.Boolean
-  ): astDashTypesLib.genNodesMod.FunctionTypeParam = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocNameOptional): astDashTypesLib.genNodesMod.FunctionTypeParam = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionTypeParam = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocNameOptional): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionTypeParam = js.native
 }
 

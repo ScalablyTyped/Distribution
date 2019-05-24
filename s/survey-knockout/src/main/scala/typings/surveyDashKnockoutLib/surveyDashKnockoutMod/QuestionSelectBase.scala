@@ -81,9 +81,14 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def canClearValueAnUnknow(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def canUseFilteredChoices(): scala.Boolean = js.native
   /* protected */ def clearDisabledValuesCore(): scala.Unit = js.native
+  /**
+    * If the clearIncorrectValuesCallback is set, it is used to clear incorrrect values instead of default behaviour.
+    */
+  def clearIncorrectValuesCallback(): scala.Unit = js.native
   /* protected */ def clearIncorrectValuesCore(): scala.Unit = js.native
   /* protected */ def createRestfull(): ChoicesRestfull = js.native
   /* protected */ def filterItems(): scala.Boolean = js.native
+  /* protected */ def getChoices(): js.Array[ItemValue] = js.native
   /* protected */ def getChoicesDisplayValue(items: js.Array[ItemValue], `val`: js.Any): js.Any = js.native
   /* protected */ def getHasOther(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def getStoreOthersAsComment(): scala.Boolean = js.native

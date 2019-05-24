@@ -79,6 +79,11 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_destroyed(event: electronLib.electronLibStrings.destroyed, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def `addListener_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
@@ -203,6 +208,16 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_ipc-message`(
+    event: electronLib.electronLibStrings.`ipc-message`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_ipc-message-sync`(
+    event: electronLib.electronLibStrings.`ipc-message-sync`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_login(
     event: electronLib.electronLibStrings.login,
     listener: js.Function4[
@@ -223,6 +238,16 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_page-title-updated`(
+    event: electronLib.electronLibStrings.`page-title-updated`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
   def addListener_paint(
     event: electronLib.electronLibStrings.paint,
     listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage, scala.Unit]
@@ -234,6 +259,16 @@ class WebContents () extends EventEmitter {
       /* event */ Event, 
       /* name */ java.lang.String, 
       /* version */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_preload-error`(
+    event: electronLib.electronLibStrings.`preload-error`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* preloadPath */ java.lang.String, 
+      /* error */ stdLib.Error, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -355,15 +390,23 @@ class WebContents () extends EventEmitter {
   def canGoForward(): scala.Boolean = js.native
   def canGoToOffset(offset: scala.Double): scala.Boolean = js.native
   /**
-    * Captures a snapshot of the page within rect. Upon completion callback will be
-    * called with callback(image). The image is an instance of NativeImage that stores
-    * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Captures a snapshot of the page within rect. Omitting rect will capture the
+    * whole visible page.
     */
-  def capturePage(callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
+  def capturePage(): scala.Unit = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
     * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Deprecated Soon
+    */
+  def capturePage(callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
+  def capturePage(rect: Rectangle): scala.Unit = js.native
+  /**
+    * Captures a snapshot of the page within rect. Upon completion callback will be
+    * called with callback(image). The image is an instance of NativeImage that stores
+    * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Deprecated Soon
     */
   def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
   /**
@@ -444,16 +487,8 @@ class WebContents () extends EventEmitter {
   def getURL(): java.lang.String = js.native
   def getUserAgent(): java.lang.String = js.native
   def getWebRTCIPHandlingPolicy(): java.lang.String = js.native
-  /**
-    * Sends a request to get current zoom factor, the callback will be called with
-    * callback(zoomFactor).
-    */
-  def getZoomFactor(callback: js.Function1[/* zoomFactor */ scala.Double, scala.Unit]): scala.Unit = js.native
-  /**
-    * Sends a request to get current zoom level, the callback will be called with
-    * callback(zoomLevel).
-    */
-  def getZoomLevel(callback: js.Function1[/* zoomLevel */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def getZoomFactor(): scala.Double = js.native
+  def getZoomLevel(): scala.Double = js.native
   /**
     * Makes the browser go back a web page.
     */
@@ -514,15 +549,15 @@ class WebContents () extends EventEmitter {
     * relative to the root of your application.  For instance an app structure like
     * this: Would require code like this
     */
-  def loadFile(filePath: java.lang.String): scala.Unit = js.native
-  def loadFile(filePath: java.lang.String, options: LoadFileOptions): scala.Unit = js.native
+  def loadFile(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
+  def loadFile(filePath: java.lang.String, options: LoadFileOptions): js.Promise[scala.Unit] = js.native
   /**
     * Loads the url in the window. The url must contain the protocol prefix, e.g. the
     * http:// or file://. If the load should bypass http cache then use the pragma
     * header to achieve it.
     */
-  def loadURL(url: java.lang.String): scala.Unit = js.native
-  def loadURL(url: java.lang.String, options: LoadURLOptions): scala.Unit = js.native
+  def loadURL(url: java.lang.String): js.Promise[scala.Unit] = js.native
+  def loadURL(url: java.lang.String, options: LoadURLOptions): js.Promise[scala.Unit] = js.native
   /**
     * Emitted when the page requests to open a new window for a url. It could be
     * requested by window.open or an external link like <a target='_blank'>. By
@@ -628,6 +663,15 @@ class WebContents () extends EventEmitter {
       /* hotspot */ js.UndefOr[Point], 
       scala.Unit
     ]
+  ): this.type = js.native
+  /**
+    * Emitted when desktopCapturer.getSources() is called in the renderer process.
+    * Calling event.preventDefault() will make it return empty sources.
+    */
+  @JSName("on")
+  def `on_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   /**
     * Emitted when webContents is destroyed.
@@ -825,6 +869,24 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   /**
+    * Emitted when the renderer process sends an asynchronous message via
+    * ipcRenderer.send().
+    */
+  @JSName("on")
+  def `on_ipc-message`(
+    event: electronLib.electronLibStrings.`ipc-message`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the renderer process sends a synchronous message via
+    * ipcRenderer.sendSync().
+    */
+  @JSName("on")
+  def `on_ipc-message-sync`(
+    event: electronLib.electronLibStrings.`ipc-message-sync`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
     * Emitted when webContents wants to do basic auth. The usage is the same with the
     * login event of app.
     */
@@ -858,6 +920,20 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   /**
+    * Fired when page title is set during navigation. explicitSet is false when title
+    * is synthesized from file url.
+    */
+  @JSName("on")
+  def `on_page-title-updated`(
+    event: electronLib.electronLibStrings.`page-title-updated`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
     * Emitted when a new frame is generated. Only the dirty area is passed in the
     * buffer.
     */
@@ -876,6 +952,19 @@ class WebContents () extends EventEmitter {
       /* event */ Event, 
       /* name */ java.lang.String, 
       /* version */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when the preload script preloadPath throws an unhandled exception error.
+    */
+  @JSName("on")
+  def `on_preload-error`(
+    event: electronLib.electronLibStrings.`preload-error`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* preloadPath */ java.lang.String, 
+      /* error */ stdLib.Error, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1111,6 +1200,11 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
+  def `once_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_destroyed(event: electronLib.electronLibStrings.destroyed, listener: js.Function): this.type = js.native
   @JSName("once")
   def `once_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
@@ -1235,6 +1329,16 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   @JSName("once")
+  def `once_ipc-message`(
+    event: electronLib.electronLibStrings.`ipc-message`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_ipc-message-sync`(
+    event: electronLib.electronLibStrings.`ipc-message-sync`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_login(
     event: electronLib.electronLibStrings.login,
     listener: js.Function4[
@@ -1255,6 +1359,16 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("once")
+  def `once_page-title-updated`(
+    event: electronLib.electronLibStrings.`page-title-updated`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
   def once_paint(
     event: electronLib.electronLibStrings.paint,
     listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage, scala.Unit]
@@ -1266,6 +1380,16 @@ class WebContents () extends EventEmitter {
       /* event */ Event, 
       /* name */ java.lang.String, 
       /* version */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_preload-error`(
+    event: electronLib.electronLibStrings.`preload-error`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* preloadPath */ java.lang.String, 
+      /* error */ stdLib.Error, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1472,6 +1596,11 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_desktop-capturer-get-sources`(
+    event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
+    listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_destroyed(event: electronLib.electronLibStrings.destroyed, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def `removeListener_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
@@ -1596,6 +1725,16 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_ipc-message`(
+    event: electronLib.electronLibStrings.`ipc-message`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_ipc-message-sync`(
+    event: electronLib.electronLibStrings.`ipc-message-sync`,
+    listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_login(
     event: electronLib.electronLibStrings.login,
     listener: js.Function4[
@@ -1616,6 +1755,16 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_page-title-updated`(
+    event: electronLib.electronLibStrings.`page-title-updated`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* title */ java.lang.String, 
+      /* explicitSet */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
   def removeListener_paint(
     event: electronLib.electronLibStrings.paint,
     listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage, scala.Unit]
@@ -1627,6 +1776,16 @@ class WebContents () extends EventEmitter {
       /* event */ Event, 
       /* name */ java.lang.String, 
       /* version */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_preload-error`(
+    event: electronLib.electronLibStrings.`preload-error`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* preloadPath */ java.lang.String, 
+      /* error */ stdLib.Error, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -1768,6 +1927,16 @@ class WebContents () extends EventEmitter {
     * object also have following properties:
     */
   def sendInputEvent(event: Event): scala.Unit = js.native
+  /**
+    * Send an asynchronous message to a specific frame in a renderer process via
+    * channel. Arguments will be serialized as JSON internally and as such no
+    * functions or prototype chains will be included. The renderer process can handle
+    * the message by listening to channel with the ipcRenderer module. If you want to
+    * get the frameId of a given renderer context you should use the
+    * webFrame.routingId value.  E.g. You can also read frameId from all incoming IPC
+    * messages in the main process.
+    */
+  def sendToFrame(frameId: scala.Double, channel: java.lang.String, args: js.Any*): scala.Unit = js.native
   /**
     * Mute the audio on the current web page.
     */

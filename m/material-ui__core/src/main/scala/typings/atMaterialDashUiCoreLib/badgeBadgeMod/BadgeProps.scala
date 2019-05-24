@@ -109,9 +109,7 @@ trait BadgeProps extends js.Object {
   var badgeContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BadgeClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapBadgeClassKey] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
@@ -383,7 +381,7 @@ object BadgeProps {
     autoSave: java.lang.String = null,
     badgeContent: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BadgeClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapBadgeClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
     component: reactLib.reactMod.ReactType[BadgeProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

@@ -6,16 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inquirerMod {
-  /**
-    * A key/value hash containing the client answers in each prompt.
-    */
-  type Answers = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type Answers = stdLib.Record[java.lang.String, js.Any]
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - inquirerLib.inquirerMod.objectsNs.ChoiceOption
+    - inquirerLib.inquirerMod.objectsNs.ChoiceOption[A]
     - inquirerLib.inquirerMod.objectsNs.Separator
   */
-  type ChoiceType = _ChoiceType | java.lang.String
+  type ChoiceType[A] = _ChoiceType[A] | java.lang.String
   type Prompts = org.scalablytyped.runtime.StringDictionary[inquirerLib.inquirerMod.promptsNs.Base]
-  type Questions[T] = Question[T] | js.Array[Question[T]] | rxjsLib.rxjsMod.Observable[Question[T]]
+  type Questions[A /* <: Answers */] = Question[A] | js.Array[Question[A]] | rxjsLib.rxjsMod.Observable[Question[A]]
 }

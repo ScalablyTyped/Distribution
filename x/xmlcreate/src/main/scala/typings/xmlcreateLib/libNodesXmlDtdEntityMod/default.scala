@@ -7,12 +7,26 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/nodes/XmlDtdEntity", JSImport.Default)
 @js.native
-class default protected () extends XmlDtdEntity {
+class default[Parent] protected () extends XmlDtdEntity[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: IXmlDtdEntityOptions) = this()
+  /* CompleteClass */
+  override var _charData: js.Any = js.native
+  /* CompleteClass */
+  override val _parent: js.Any = js.native
+  /* CompleteClass */
+  override val _validation: js.Any = js.native
   /**
-    * Initializes a new instance of the {@link XmlDtdEntity} class.
-    *
-    * @param text The text associated with the XML entity declaration.
+    * Gets the text of this entity declaration.
     */
-  def this(text: java.lang.String) = this()
+  /**
+    * Sets the text of this entity declaration.
+    */
+  /* CompleteClass */
+  override var charData: java.lang.String = js.native
+  /**
+    * Returns the parent of this entity declaration.
+    */
+  /* CompleteClass */
+  override def up(): Parent = js.native
 }
 

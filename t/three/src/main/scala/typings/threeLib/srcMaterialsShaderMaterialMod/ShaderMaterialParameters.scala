@@ -10,7 +10,7 @@ trait ShaderMaterialParameters
   var clipping: js.UndefOr[scala.Boolean] = js.undefined
   var defines: js.UndefOr[js.Any] = js.undefined
   var fragmentShader: js.UndefOr[java.lang.String] = js.undefined
-  var lineWidth: js.UndefOr[scala.Double] = js.undefined
+  var linewidth: js.UndefOr[scala.Double] = js.undefined
   var morphNormals: js.UndefOr[scala.Boolean] = js.undefined
   var morphTargets: js.UndefOr[scala.Boolean] = js.undefined
   var skinning: js.UndefOr[scala.Boolean] = js.undefined
@@ -45,7 +45,7 @@ object ShaderMaterialParameters {
     fog: js.UndefOr[scala.Boolean] = js.undefined,
     fragmentShader: java.lang.String = null,
     lights: js.UndefOr[scala.Boolean] = js.undefined,
-    lineWidth: scala.Int | scala.Double = null,
+    linewidth: scala.Int | scala.Double = null,
     morphNormals: js.UndefOr[scala.Boolean] = js.undefined,
     morphTargets: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
@@ -90,7 +90,7 @@ object ShaderMaterialParameters {
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)
     if (fragmentShader != null) __obj.updateDynamic("fragmentShader")(fragmentShader)
     if (!js.isUndefined(lights)) __obj.updateDynamic("lights")(lights)
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (linewidth != null) __obj.updateDynamic("linewidth")(linewidth.asInstanceOf[js.Any])
     if (!js.isUndefined(morphNormals)) __obj.updateDynamic("morphNormals")(morphNormals)
     if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets)
     if (name != null) __obj.updateDynamic("name")(name)

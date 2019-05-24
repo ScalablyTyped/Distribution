@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Value extends js.Object {
-  var Value: java.lang.String
+  var value: java.lang.String
 }
 
 object Anon_Value {
   @scala.inline
-  def apply(Value: java.lang.String): Anon_Value = {
-    val __obj = js.Dynamic.literal(Value = Value)
+  def apply(value: java.lang.String): Anon_Value = {
+    val __obj = js.Dynamic.literal(value = value)
   
     __obj.asInstanceOf[Anon_Value]
   }

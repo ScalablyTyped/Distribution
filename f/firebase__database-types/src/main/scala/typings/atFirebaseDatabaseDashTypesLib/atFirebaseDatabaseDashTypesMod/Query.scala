@@ -28,57 +28,79 @@ trait Query extends js.Object {
   def isEqual(other: Query): scala.Boolean = js.native
   def limitToFirst(limit: scala.Double): Query = js.native
   def limitToLast(limit: scala.Double): Query = js.native
-  def off(): js.Any = js.native
-  def off(eventType: EventType): js.Any = js.native
+  def off(): scala.Unit = js.native
+  def off(eventType: EventType): scala.Unit = js.native
   def off(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _]
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def off(
     eventType: EventType,
     callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     context: js.Object
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def on(
     eventType: EventType,
-    callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _]
-  ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _]
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _] = js.native
   def on(
     eventType: EventType,
-    callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
+    cancelCallbackOrContext: js.Function1[/* a */ stdLib.Error, _]
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _] = js.native
+  def on(
+    eventType: EventType,
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
+    cancelCallbackOrContext: js.Function1[/* a */ stdLib.Error, _],
+    context: js.Object
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _] = js.native
+  def on(
+    eventType: EventType,
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     cancelCallbackOrContext: js.Object
-  ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _] = js.native
   def on(
     eventType: EventType,
-    callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     cancelCallbackOrContext: js.Object,
     context: js.Object
-  ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _] = js.native
   def on(
     eventType: EventType,
-    callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
+    callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     cancelCallbackOrContext: scala.Null,
     context: js.Object
-  ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+  ): js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _] = js.native
   def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
-    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _]
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _]
   ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
-    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
+    failureCallbackOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit]
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
+    failureCallbackOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit],
+    context: js.Object
+  ): js.Promise[DataSnapshot] = js.native
+  def once(
+    eventType: EventType,
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     failureCallbackOrContext: js.Object
   ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
-    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     failureCallbackOrContext: js.Object,
     context: js.Object
   ): js.Promise[DataSnapshot] = js.native
   def once(
     eventType: EventType,
-    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
+    successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
     failureCallbackOrContext: scala.Null,
     context: js.Object
   ): js.Promise[DataSnapshot] = js.native

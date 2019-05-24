@@ -90,7 +90,7 @@ trait Generator
   def npmInstall(pkgs: js.Array[java.lang.String], options: js.Object, spawnOptions: js.Object): scala.Unit = js.native
   def option(name: java.lang.String, config: OptionConfig): this.type = js.native
   def optionsHelp(): java.lang.String = js.native
-  def prompt(questions: Questions): js.Promise[Answers] = js.native
+  def prompt[A /* <: Answers */](questions: Questions[A]): js.Promise[A] = js.native
   def registerTransformStream(stream: js.Array[js.Object]): this.type = js.native
   def registerTransformStream(stream: js.Object): this.type = js.native
   def rootGeneratorName(): java.lang.String = js.native

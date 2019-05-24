@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExistsTypeAnnotationBuilder extends js.Object {
-  def apply(): astDashTypesLib.genNodesMod.ExistsTypeAnnotation = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNodesMod.ExistsTypeAnnotation = js.native
+  def apply(): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExistsTypeAnnotation = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExistsTypeAnnotation = js.native
 }
 

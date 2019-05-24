@@ -13,7 +13,6 @@ class RegisterContext protected ()
   def this(ua: sipDotJsLib.libUAMod.UA, options: js.Any) = this()
   var closeHeaders: js.Any = js.native
   var contact: js.Any = js.native
-  var cseq: scala.Double = js.native
   var expires: js.Any = js.native
   /**
     * Helper Function to generate Contact Header

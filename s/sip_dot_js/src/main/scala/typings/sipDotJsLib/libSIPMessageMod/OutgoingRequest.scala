@@ -15,37 +15,23 @@ class OutgoingRequest protected () extends js.Object {
   def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String]) = this()
   def this(method: java.lang.String, ruri: sipDotJsLib.libURIMod.URI, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String]) = this()
   def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: java.lang.String) = this()
-  def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_Body) = this()
+  def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_BodyContentType) = this()
   def this(method: java.lang.String, ruri: sipDotJsLib.libURIMod.URI, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: java.lang.String) = this()
-  def this(method: java.lang.String, ruri: sipDotJsLib.libURIMod.URI, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_Body) = this()
-  var body: js.UndefOr[java.lang.String | sipDotJsLib.Anon_Body] = js.native
+  def this(method: java.lang.String, ruri: sipDotJsLib.libURIMod.URI, ua: sipDotJsLib.libUAMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_BodyContentType) = this()
+  var body: js.UndefOr[java.lang.String | sipDotJsLib.Anon_BodyContentType] = js.native
   var branch: js.UndefOr[java.lang.String] = js.native
   var callId: java.lang.String = js.native
   var cseq: scala.Double = js.native
-  var dialog: js.UndefOr[sipDotJsLib.libDialogsMod.Dialog] = js.native
   var extraHeaders: js.Array[java.lang.String] = js.native
   var from: js.UndefOr[sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader] = js.native
   var fromTag: java.lang.String = js.native
   var headers: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
-  var logger: js.Any = js.native
   var method: java.lang.String = js.native
-  var reasonPhrase: js.Any = js.native
   var ruri: java.lang.String | sipDotJsLib.libURIMod.URI = js.native
-  var statusCode: js.Any = js.native
   var to: js.UndefOr[sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader] = js.native
   var toTag: js.UndefOr[java.lang.String] = js.native
-  var transaction: js.UndefOr[sipDotJsLib.libTransactionsMod.ClientTransaction] = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
   var ua: sipDotJsLib.libUAMod.UA = js.native
-  /**
-    * Cancel this request.
-    * If this is not an INVITE request, a no-op.
-    * @param reason Reason phrase.
-    * @param extraHeaders Extra headers.
-    */
-  def cancel(): scala.Unit = js.native
-  def cancel(reason: java.lang.String): scala.Unit = js.native
-  def cancel(reason: java.lang.String, extraHeaders: js.Array[java.lang.String]): scala.Unit = js.native
   /**
     * Get the value of the given header name at the given position.
     * @param {String} name header name

@@ -7,12 +7,26 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/nodes/XmlDtdParamEntityRef", JSImport.Default)
 @js.native
-class default protected () extends XmlDtdParamEntityRef {
+class default[Parent] protected () extends XmlDtdParamEntityRef[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: IXmlDtdParamEntityRefOptions) = this()
+  /* CompleteClass */
+  override var _name: js.Any = js.native
+  /* CompleteClass */
+  override val _parent: js.Any = js.native
+  /* CompleteClass */
+  override val _validation: js.Any = js.native
   /**
-    * Initializes a new instance of the {@link XmlDtdParamEntityRef} class.
-    *
-    * @param entity The entity to be referenced.
+    * Gets the name of this parameter entity reference.
     */
-  def this(entity: java.lang.String) = this()
+  /**
+    * Sets the name of this parameter entity reference.
+    */
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+  /**
+    * Returns the parent of this parameter entity reference.
+    */
+  /* CompleteClass */
+  override def up(): Parent = js.native
 }
 

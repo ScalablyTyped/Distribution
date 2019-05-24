@@ -203,6 +203,9 @@ object cypressLibStrings {
   sealed trait beDOTfalse extends js.Object
   
   @js.native
+  sealed trait beDOTfocused extends js.Object
+  
+  @js.native
   sealed trait beDOTgreaterThan extends js.Object
   
   @js.native
@@ -606,6 +609,9 @@ object cypressLibStrings {
   sealed trait haveDOTdescendants extends js.Object
   
   @js.native
+  sealed trait haveDOTfocus extends js.Object
+  
+  @js.native
   sealed trait haveDOThtml extends js.Object
   
   @js.native
@@ -960,6 +966,9 @@ object cypressLibStrings {
   sealed trait notDOTbeDOTfalse extends js.Object
   
   @js.native
+  sealed trait notDOTbeDOTfocused extends js.Object
+  
+  @js.native
   sealed trait notDOTbeDOTgreaterThan extends js.Object
   
   @js.native
@@ -1054,6 +1063,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait notDOThaveDOTdescendants extends js.Object
+  
+  @js.native
+  sealed trait notDOThaveDOTfocus extends js.Object
   
   @js.native
   sealed trait notDOThaveDOThtml extends js.Object
@@ -1739,6 +1751,8 @@ object cypressLibStrings {
   @scala.inline
   def beDOTfalse: beDOTfalse = "be.false".asInstanceOf[beDOTfalse]
   @scala.inline
+  def beDOTfocused: beDOTfocused = "be.focused".asInstanceOf[beDOTfocused]
+  @scala.inline
   def beDOTgreaterThan: beDOTgreaterThan = "be.greaterThan".asInstanceOf[beDOTgreaterThan]
   @scala.inline
   def beDOTgt: beDOTgt = "be.gt".asInstanceOf[beDOTgt]
@@ -2001,6 +2015,8 @@ object cypressLibStrings {
   @scala.inline
   def haveDOTdescendants: haveDOTdescendants = "have.descendants".asInstanceOf[haveDOTdescendants]
   @scala.inline
+  def haveDOTfocus: haveDOTfocus = "have.focus".asInstanceOf[haveDOTfocus]
+  @scala.inline
   def haveDOThtml: haveDOThtml = "have.html".asInstanceOf[haveDOThtml]
   @scala.inline
   def haveDOTid: haveDOTid = "have.id".asInstanceOf[haveDOTid]
@@ -2227,6 +2243,8 @@ object cypressLibStrings {
   @scala.inline
   def notDOTbeDOTfalse: notDOTbeDOTfalse = "not.be.false".asInstanceOf[notDOTbeDOTfalse]
   @scala.inline
+  def notDOTbeDOTfocused: notDOTbeDOTfocused = "not.be.focused".asInstanceOf[notDOTbeDOTfocused]
+  @scala.inline
   def notDOTbeDOTgreaterThan: notDOTbeDOTgreaterThan = "not.be.greaterThan".asInstanceOf[notDOTbeDOTgreaterThan]
   @scala.inline
   def notDOTbeDOTgt: notDOTbeDOTgt = "not.be.gt".asInstanceOf[notDOTbeDOTgt]
@@ -2290,6 +2308,8 @@ object cypressLibStrings {
   def notDOThaveDOTdeepDOTproperty: notDOThaveDOTdeepDOTproperty = "not.have.deep.property".asInstanceOf[notDOThaveDOTdeepDOTproperty]
   @scala.inline
   def notDOThaveDOTdescendants: notDOThaveDOTdescendants = "not.have.descendants".asInstanceOf[notDOThaveDOTdescendants]
+  @scala.inline
+  def notDOThaveDOTfocus: notDOThaveDOTfocus = "not.have.focus".asInstanceOf[notDOThaveDOTfocus]
   @scala.inline
   def notDOThaveDOThtml: notDOThaveDOThtml = "not.have.html".asInstanceOf[notDOThaveDOThtml]
   @scala.inline

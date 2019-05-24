@@ -58,8 +58,8 @@ class Channel protected () extends js.Object {
   def createCall(method: java.lang.String, deadline: stdLib.Date, host: java.lang.String, parentCall: Call): Call = js.native
   /**
     * Create a call object. Call is an opaque type that is used by the Client
-    * and Server classes. This function is called by the gRPC library when 
-    * starting a request. Implementers should return an instance of Call that 
+    * and Server classes. This function is called by the gRPC library when
+    * starting a request. Implementers should return an instance of Call that
     * is returned from calling createCall on an instance of the provided
     * Channel class.
     * @param method The full method string to request.

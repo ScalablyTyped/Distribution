@@ -45,7 +45,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Richard Lea <https://github.com/chigix>
 //                 Devid Farinelli <https://github.com/misterdev>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.3
 
 ```
 

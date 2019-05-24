@@ -10,4 +10,5 @@ package object typingsGetDashQueriesDashForDashElementMod {
   type BoundFunctions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: dom-testing-library.dom-testing-library/typings/get-queries-for-element.BoundFunction<T[P]>}
     */ domDashTestingDashLibraryLib.domDashTestingDashLibraryLibStrings.BoundFunctions with T
+  type Queries = org.scalablytyped.runtime.StringDictionary[Query]
 }

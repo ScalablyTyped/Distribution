@@ -108,9 +108,7 @@ trait CardActionsProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardActionsClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapCardActionsClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -373,7 +371,7 @@ object CardActionsProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardActionsClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapCardActionsClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

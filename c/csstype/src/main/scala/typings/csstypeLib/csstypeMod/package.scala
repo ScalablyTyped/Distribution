@@ -80,7 +80,7 @@ package object csstypeMod {
   type AnimationProperty = _AnimationProperty | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - SingleTimingFunction
+    - TimingFunction
     - java.lang.String
   */
   type AnimationTimingFunctionProperty = _AnimationTimingFunctionProperty | java.lang.String
@@ -208,6 +208,10 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.available
     - csstypeLib.csstypeLibStrings.`fit-content`
@@ -718,6 +722,8 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
     - csstypeLib.csstypeLibStrings.`-webkit-auto`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.available
@@ -1073,6 +1079,8 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.available
     - csstypeLib.csstypeLibStrings.`fit-content`
@@ -1104,6 +1112,10 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.available
     - csstypeLib.csstypeLibStrings.`fit-content`
@@ -1125,6 +1137,13 @@ package object csstypeMod {
     - csstypeLib.csstypeLibStrings.auto
     - java.lang.String
   */
+  type InsetBlockProperty[TLength] = _InsetBlockProperty[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Globals
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - java.lang.String
+  */
   type InsetBlockStartProperty[TLength] = _InsetBlockStartProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
@@ -1139,7 +1158,21 @@ package object csstypeMod {
     - csstypeLib.csstypeLibStrings.auto
     - java.lang.String
   */
+  type InsetInlineProperty[TLength] = _InsetInlineProperty[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Globals
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - java.lang.String
+  */
   type InsetInlineStartProperty[TLength] = _InsetInlineStartProperty[TLength] | TLength | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Globals
+    - TLength
+    - csstypeLib.csstypeLibStrings.auto
+    - java.lang.String
+  */
+  type InsetProperty[TLength] = _InsetProperty[TLength] | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - ContentDistribution
@@ -1443,6 +1476,9 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
     - csstypeLib.csstypeLibStrings.`max-content`
@@ -1454,6 +1490,8 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
     - csstypeLib.csstypeLibStrings.`max-content`
@@ -1465,6 +1503,10 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
     - csstypeLib.csstypeLibStrings.`max-content`
@@ -1482,8 +1524,13 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-max-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-min-content`
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
+    - csstypeLib.csstypeLibStrings.intrinsic
     - csstypeLib.csstypeLibStrings.`max-content`
     - csstypeLib.csstypeLibStrings.`min-content`
     - csstypeLib.csstypeLibStrings.none
@@ -1493,6 +1540,9 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
@@ -1504,9 +1554,14 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fit-content`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
+    - csstypeLib.csstypeLibStrings.intrinsic
     - csstypeLib.csstypeLibStrings.`max-content`
     - csstypeLib.csstypeLibStrings.`min-content`
     - java.lang.String
@@ -1515,6 +1570,12 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
+    - csstypeLib.csstypeLibStrings.`-webkit-max-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-min-content`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
@@ -1526,11 +1587,20 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
+    - csstypeLib.csstypeLibStrings.`-moz-max-content`
+    - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
+    - csstypeLib.csstypeLibStrings.`-webkit-fit-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-max-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-min-content`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
+    - csstypeLib.csstypeLibStrings.intrinsic
     - csstypeLib.csstypeLibStrings.`max-content`
     - csstypeLib.csstypeLibStrings.`min-content`
+    - csstypeLib.csstypeLibStrings.`min-intrinsic`
     - java.lang.String
   */
   type MinWidthProperty[TLength] = _MinWidthProperty[TLength] | TLength | java.lang.String
@@ -2099,7 +2169,7 @@ package object csstypeMod {
   */
   type ShapeOutsideProperty = _ShapeOutsideProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - SingleTimingFunction
+    - TimingFunction
     - SingleAnimationDirection
     - SingleAnimationFillMode
     - csstypeLib.csstypeLibStrings.infinite
@@ -2111,14 +2181,7 @@ package object csstypeMod {
   */
   type SingleAnimation = _SingleAnimation | java.lang.String | scala.Double
   /* Rewritten from type alias, can be one of: 
-    - CubicBezierTimingFunction
-    - StepTimingFunction
-    - csstypeLib.csstypeLibStrings.linear
-    - java.lang.String
-  */
-  type SingleTimingFunction = _SingleTimingFunction | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - SingleTimingFunction
+    - TimingFunction
     - csstypeLib.csstypeLibStrings.all
     - csstypeLib.csstypeLibStrings.none
     - java.lang.String
@@ -2264,6 +2327,12 @@ package object csstypeMod {
   */
   type TextUnderlinePositionProperty = _TextUnderlinePositionProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - CubicBezierTimingFunction
+    - StepTimingFunction
+    - csstypeLib.csstypeLibStrings.linear
+  */
+  type TimingFunction = _TimingFunction | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
     - csstypeLib.csstypeLibStrings.auto
@@ -2327,7 +2396,7 @@ package object csstypeMod {
   type TransitionPropertyProperty = _TransitionPropertyProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
-    - SingleTimingFunction
+    - TimingFunction
     - java.lang.String
   */
   type TransitionTimingFunctionProperty = _TransitionTimingFunctionProperty | java.lang.String
@@ -2521,7 +2590,6 @@ package object csstypeMod {
     - csstypeLib.csstypeLibStrings.`-webkit-fill-available`
     - csstypeLib.csstypeLibStrings.`-webkit-fit-content`
     - csstypeLib.csstypeLibStrings.`-webkit-max-content`
-    - csstypeLib.csstypeLibStrings.`-webkit-min-content`
     - csstypeLib.csstypeLibStrings.auto
     - csstypeLib.csstypeLibStrings.available
     - csstypeLib.csstypeLibStrings.`fit-content`

@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("maxmind", "Reader")
 @js.native
-class Reader[T /* <: Response */] protected () extends js.Object {
-  def this(buffer: nodeLib.Buffer) = this()
-  def this(buffer: nodeLib.Buffer, opts: OpenOpts) = this()
-  var metadata: Metadata = js.native
-  def get(ipAddress: java.lang.String): T | scala.Null = js.native
+class Reader[T /* <: maxmindLib.libReaderResponseMod.Response */] protected ()
+  extends maxmindLib.libReaderMod.default[T] {
+  def this(db: nodeLib.Buffer) = this()
+  def this(db: nodeLib.Buffer, opts: js.Object) = this()
 }
 

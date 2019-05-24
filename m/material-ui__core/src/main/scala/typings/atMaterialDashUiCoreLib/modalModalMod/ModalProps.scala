@@ -10,7 +10,7 @@ trait ModalProps extends js.Object {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
-  var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
+  var BackdropProps: js.UndefOr[atMaterialDashUiCoreLib.PartialBackdropProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.undefined
@@ -112,9 +112,7 @@ trait ModalProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ModalClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapModalClassKey] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[
@@ -342,7 +340,7 @@ object ModalProps {
   def apply(
     open: scala.Boolean,
     BackdropComponent: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
+    BackdropProps: atMaterialDashUiCoreLib.PartialBackdropProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     `aria-activedescendant`: java.lang.String = null,
@@ -398,7 +396,7 @@ object ModalProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ModalClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapModalClassKey = null,
     closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,

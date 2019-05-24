@@ -12,19 +12,19 @@ trait VariableDeclarationBuilder extends js.Object {
     declarations: js.Array[
       astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.IdentifierKind
     ]
-  ): astDashTypesLib.genNodesMod.VariableDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.VariableDeclaration = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.const,
     declarations: js.Array[
       astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.IdentifierKind
     ]
-  ): astDashTypesLib.genNodesMod.VariableDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.VariableDeclaration = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.let,
     declarations: js.Array[
       astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.IdentifierKind
     ]
-  ): astDashTypesLib.genNodesMod.VariableDeclaration = js.native
-  def from(params: astDashTypesLib.Anon_CommentsConst): astDashTypesLib.genNodesMod.VariableDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.VariableDeclaration = js.native
+  def from(params: astDashTypesLib.Anon_CommentsConst): astDashTypesLib.genNamedTypesMod.namedTypesNs.VariableDeclaration = js.native
 }
 

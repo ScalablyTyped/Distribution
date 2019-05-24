@@ -15,7 +15,7 @@ trait CreateClientVpnEndpointRequest extends js.Object {
     */
   var ClientCidrBlock: String
   /**
-    * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see  How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   /**

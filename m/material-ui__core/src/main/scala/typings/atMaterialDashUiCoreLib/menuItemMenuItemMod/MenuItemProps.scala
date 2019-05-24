@@ -128,9 +128,7 @@ trait MenuItemProps extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuItemClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapMenuItemClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[MenuItemProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -428,7 +426,7 @@ object MenuItemProps {
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuItemClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapMenuItemClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[MenuItemProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

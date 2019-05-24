@@ -11,7 +11,7 @@ trait ComprehensionBlockBuilder extends js.Object {
     left: astDashTypesLib.genKindsMod.PatternKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     each: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ComprehensionBlock = js.native
-  def from(params: astDashTypesLib.Anon_CommentsEach): astDashTypesLib.genNodesMod.ComprehensionBlock = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ComprehensionBlock = js.native
+  def from(params: astDashTypesLib.Anon_CommentsEach): astDashTypesLib.genNamedTypesMod.namedTypesNs.ComprehensionBlock = js.native
 }
 

@@ -46,6 +46,7 @@ class CountdownEvent protected () extends js.Object {
     */
   def signal(): scala.Boolean = js.native
   def signal(count: scala.Double): scala.Boolean = js.native
+  def wait(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[scala.Unit] = js.native
   def wait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

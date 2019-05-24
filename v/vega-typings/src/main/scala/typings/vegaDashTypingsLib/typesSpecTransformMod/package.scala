@@ -29,13 +29,16 @@ package object typesSpecTransformMod {
     - IdentifierTransform
     - ImputeTransform
     - JoinAggregateTransform
+    - KDETransform
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.linkpath]
+    - LoessTransform
     - LookupTransform
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.nest]
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.pack]
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.partition]
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.pie]
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.project]
+    - RegressionTransform
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.resolvefilter]
     - SampleTransform
     - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.sequence]

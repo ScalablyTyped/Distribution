@@ -7,13 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate", "XmlDecl")
 @js.native
-/**
-  * Initializes a new instance of the {@link XmlDecl} class.
-  *
-  * @param options The options associated with the XML declaration.
-  */
-class XmlDecl ()
-  extends xmlcreateLib.libNodesXmlDeclMod.default {
-  def this(options: xmlcreateLib.libOptionsMod.IDeclarationOptions) = this()
+class XmlDecl[Parent] protected ()
+  extends xmlcreateLib.libNodesXmlDeclMod.default[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: xmlcreateLib.libNodesXmlDeclMod.IXmlDeclOptions) = this()
 }
 

@@ -13,7 +13,7 @@ class ClientContext protected ()
   def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: sipDotJsLib.libURIMod.URI) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: java.lang.String, options: js.Any) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: sipDotJsLib.libURIMod.URI, options: js.Any) = this()
-  var body: js.Any = js.native
+  var body: js.UndefOr[sipDotJsLib.libSessionDashDescriptionDashHandlerMod.BodyObj] = js.native
   var data: js.Any = js.native
   var localIdentity: sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader = js.native
   var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native

@@ -7,283 +7,181 @@ import scala.scalajs.js.annotation._
 
 /* Inlined {[ Name in keyof @material-ui/core.@material-ui/core/styles/props.ComponentsPropsList ]:? std.Partial<@material-ui/core.@material-ui/core/styles/props.ComponentsPropsList[Name]>} */
 trait ComponentsProps extends js.Object {
-  var MuiAppBar: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps]] = js.undefined
-  var MuiAvatar: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps]] = js.undefined
-  var MuiBackdrop: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
-  var MuiBadge: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps]] = js.undefined
-  var MuiBottomNavigation: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.bottomNavigationBottomNavigationMod.BottomNavigationProps
-    ]
-  ] = js.undefined
-  var MuiBottomNavigationAction: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps
-    ]
-  ] = js.undefined
-  var MuiButton: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]] = js.undefined
-  var MuiButtonBase: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps]] = js.undefined
-  var MuiCard: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.cardCardMod.CardProps]] = js.undefined
-  var MuiCardActions: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsProps]
-  ] = js.undefined
-  var MuiCardContent: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentProps]
-  ] = js.undefined
-  var MuiCardHeader: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderProps]] = js.undefined
-  var MuiCardMedia: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaProps]] = js.undefined
-  var MuiCheckbox: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps]] = js.undefined
-  var MuiChip: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.chipChipMod.ChipProps]] = js.undefined
-  var MuiCircularProgress: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressProps
-    ]
-  ] = js.undefined
-  var MuiCollapse: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps]] = js.undefined
-  var MuiCssBaseline: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineProps]
-  ] = js.undefined
-  var MuiDialog: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.dialogDialogMod.DialogProps]] = js.undefined
-  var MuiDialogActions: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps]
-  ] = js.undefined
-  var MuiDialogContent: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps]
-  ] = js.undefined
-  var MuiDialogContentText: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
-    ]
-  ] = js.undefined
-  var MuiDialogTitle: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps]
-  ] = js.undefined
-  var MuiDivider: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps]] = js.undefined
-  var MuiDrawer: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps]] = js.undefined
-  var MuiExpansionPanel: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps]
-  ] = js.undefined
-  var MuiExpansionPanelActions: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
-    ]
-  ] = js.undefined
-  var MuiExpansionPanelDetails: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
-    ]
-  ] = js.undefined
-  var MuiExpansionPanelSummary: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps
-    ]
-  ] = js.undefined
-  var MuiFormControl: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps]
-  ] = js.undefined
-  var MuiFormControlLabel: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelProps
-    ]
-  ] = js.undefined
-  var MuiFormGroup: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupProps]] = js.undefined
-  var MuiFormHelperText: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps]
-  ] = js.undefined
-  var MuiFormLabel: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps]] = js.undefined
-  var MuiGrid: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.gridGridMod.GridProps]] = js.undefined
-  var MuiGridList: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps]] = js.undefined
-  var MuiGridListTile: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileProps]
-  ] = js.undefined
-  var MuiGridListTileBar: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarProps]
-  ] = js.undefined
-  var MuiIcon: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconIconMod.IconProps]] = js.undefined
-  var MuiIconButton: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.undefined
-  var MuiInput: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.inputInputMod.InputProps]] = js.undefined
-  var MuiInputAdornment: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentProps]
-  ] = js.undefined
-  var MuiInputLabel: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelProps]] = js.undefined
-  var MuiLinearProgress: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps]
-  ] = js.undefined
-  var MuiList: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.listListMod.ListProps]] = js.undefined
-  var MuiListItem: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps]] = js.undefined
-  var MuiListItemAvatar: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps]
-  ] = js.undefined
-  var MuiListItemIcon: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps]
-  ] = js.undefined
-  var MuiListItemSecondaryAction: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
-    ]
-  ] = js.undefined
-  var MuiListItemText: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps]
-  ] = js.undefined
-  var MuiListSubheader: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderProps]
-  ] = js.undefined
-  var MuiMenu: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
-  var MuiMenuItem: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps]] = js.undefined
-  var MuiMobileStepper: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperProps]
-  ] = js.undefined
-  var MuiModal: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps]] = js.undefined
-  var MuiNativeSelect: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectProps]
-  ] = js.undefined
-  var MuiPaper: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var MuiPopover: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps]] = js.undefined
-  var MuiRadio: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.radioRadioMod.RadioProps]] = js.undefined
-  var MuiSelect: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]] = js.undefined
-  var MuiSnackbar: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps]] = js.undefined
-  var MuiSnackbarContent: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps]
-  ] = js.undefined
-  var MuiStep: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepStepMod.StepProps]] = js.undefined
-  var MuiStepButton: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonProps]] = js.undefined
-  var MuiStepConnector: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorProps]
-  ] = js.undefined
-  var MuiStepContent: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentProps]
-  ] = js.undefined
-  var MuiStepIcon: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps]] = js.undefined
-  var MuiStepLabel: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelProps]] = js.undefined
-  var MuiStepper: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepperStepperMod.StepperProps]] = js.undefined
-  var MuiSvgIcon: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps]] = js.undefined
-  var MuiSwitch: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps]] = js.undefined
-  var MuiSwitchBase: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps]] = js.undefined
-  var MuiTab: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabTabMod.TabProps]] = js.undefined
-  var MuiTable: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tableTableMod.TableProps]] = js.undefined
-  var MuiTableCell: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellProps]] = js.undefined
-  var MuiTablePagination: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationProps]
-  ] = js.undefined
-  var MuiTableRow: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowProps]] = js.undefined
-  var MuiTableSortLabel: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelProps]
-  ] = js.undefined
-  var MuiTabs: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps]] = js.undefined
-  var MuiToolbar: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps]] = js.undefined
-  var MuiTooltip: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps]] = js.undefined
+  var MuiAppBar: js.UndefOr[atMaterialDashUiCoreLib.PartialAppBarProps] = js.undefined
+  var MuiAvatar: js.UndefOr[atMaterialDashUiCoreLib.PartialAvatarProps] = js.undefined
+  var MuiBackdrop: js.UndefOr[atMaterialDashUiCoreLib.PartialBackdropProps] = js.undefined
+  var MuiBadge: js.UndefOr[atMaterialDashUiCoreLib.PartialBadgeProps] = js.undefined
+  var MuiBottomNavigation: js.UndefOr[atMaterialDashUiCoreLib.PartialBottomNavigationProps] = js.undefined
+  var MuiBottomNavigationAction: js.UndefOr[atMaterialDashUiCoreLib.PartialBottomNavigationActionProps] = js.undefined
+  var MuiButton: js.UndefOr[atMaterialDashUiCoreLib.PartialButtonProps] = js.undefined
+  var MuiButtonBase: js.UndefOr[atMaterialDashUiCoreLib.PartialButtonBaseProps] = js.undefined
+  var MuiCard: js.UndefOr[atMaterialDashUiCoreLib.PartialCardProps] = js.undefined
+  var MuiCardActions: js.UndefOr[atMaterialDashUiCoreLib.PartialCardActionsProps] = js.undefined
+  var MuiCardContent: js.UndefOr[atMaterialDashUiCoreLib.PartialCardContentProps] = js.undefined
+  var MuiCardHeader: js.UndefOr[atMaterialDashUiCoreLib.PartialCardHeaderProps] = js.undefined
+  var MuiCardMedia: js.UndefOr[atMaterialDashUiCoreLib.PartialCardMediaProps] = js.undefined
+  var MuiCheckbox: js.UndefOr[atMaterialDashUiCoreLib.PartialCheckboxProps] = js.undefined
+  var MuiChip: js.UndefOr[atMaterialDashUiCoreLib.PartialChipProps] = js.undefined
+  var MuiCircularProgress: js.UndefOr[atMaterialDashUiCoreLib.PartialCircularProgressProps] = js.undefined
+  var MuiCollapse: js.UndefOr[atMaterialDashUiCoreLib.PartialCollapseProps] = js.undefined
+  var MuiCssBaseline: js.UndefOr[atMaterialDashUiCoreLib.PartialCssBaselineProps] = js.undefined
+  var MuiDialog: js.UndefOr[atMaterialDashUiCoreLib.PartialDialogProps] = js.undefined
+  var MuiDialogActions: js.UndefOr[atMaterialDashUiCoreLib.PartialDialogActionsProps] = js.undefined
+  var MuiDialogContent: js.UndefOr[atMaterialDashUiCoreLib.PartialDialogContentProps] = js.undefined
+  var MuiDialogContentText: js.UndefOr[atMaterialDashUiCoreLib.PartialDialogContentTextProps] = js.undefined
+  var MuiDialogTitle: js.UndefOr[atMaterialDashUiCoreLib.PartialDialogTitleProps] = js.undefined
+  var MuiDivider: js.UndefOr[atMaterialDashUiCoreLib.PartialDividerProps] = js.undefined
+  var MuiDrawer: js.UndefOr[atMaterialDashUiCoreLib.PartialDrawerProps] = js.undefined
+  var MuiExpansionPanel: js.UndefOr[atMaterialDashUiCoreLib.PartialExpansionPanelProps] = js.undefined
+  var MuiExpansionPanelActions: js.UndefOr[atMaterialDashUiCoreLib.PartialExpansionPanelActionsProps] = js.undefined
+  var MuiExpansionPanelDetails: js.UndefOr[atMaterialDashUiCoreLib.PartialExpansionPanelDetailsProps] = js.undefined
+  var MuiExpansionPanelSummary: js.UndefOr[atMaterialDashUiCoreLib.PartialExpansionPanelSummaryProps] = js.undefined
+  var MuiFormControl: js.UndefOr[atMaterialDashUiCoreLib.PartialFormControlProps] = js.undefined
+  var MuiFormControlLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialFormControlLabelProps] = js.undefined
+  var MuiFormGroup: js.UndefOr[atMaterialDashUiCoreLib.PartialFormGroupProps] = js.undefined
+  var MuiFormHelperText: js.UndefOr[atMaterialDashUiCoreLib.PartialFormHelperTextProps] = js.undefined
+  var MuiFormLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialFormLabelProps] = js.undefined
+  var MuiGrid: js.UndefOr[atMaterialDashUiCoreLib.PartialGridProps] = js.undefined
+  var MuiGridList: js.UndefOr[atMaterialDashUiCoreLib.PartialGridListProps] = js.undefined
+  var MuiGridListTile: js.UndefOr[atMaterialDashUiCoreLib.PartialGridListTileProps] = js.undefined
+  var MuiGridListTileBar: js.UndefOr[atMaterialDashUiCoreLib.PartialGridListTileBarProps] = js.undefined
+  var MuiIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialIconProps] = js.undefined
+  var MuiIconButton: js.UndefOr[atMaterialDashUiCoreLib.PartialIconButtonProps] = js.undefined
+  var MuiInput: js.UndefOr[atMaterialDashUiCoreLib.PartialInputProps] = js.undefined
+  var MuiInputAdornment: js.UndefOr[atMaterialDashUiCoreLib.PartialInputAdornmentProps] = js.undefined
+  var MuiInputLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialInputLabelProps] = js.undefined
+  var MuiLinearProgress: js.UndefOr[atMaterialDashUiCoreLib.PartialLinearProgressProps] = js.undefined
+  var MuiList: js.UndefOr[atMaterialDashUiCoreLib.PartialListProps] = js.undefined
+  var MuiListItem: js.UndefOr[atMaterialDashUiCoreLib.PartialListItemProps] = js.undefined
+  var MuiListItemAvatar: js.UndefOr[atMaterialDashUiCoreLib.PartialListItemAvatarProps] = js.undefined
+  var MuiListItemIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialListItemIconProps] = js.undefined
+  var MuiListItemSecondaryAction: js.UndefOr[atMaterialDashUiCoreLib.PartialListItemSecondaryActionProps] = js.undefined
+  var MuiListItemText: js.UndefOr[atMaterialDashUiCoreLib.PartialListItemTextProps] = js.undefined
+  var MuiListSubheader: js.UndefOr[atMaterialDashUiCoreLib.PartialListSubheaderProps] = js.undefined
+  var MuiMenu: js.UndefOr[atMaterialDashUiCoreLib.PartialMenuProps] = js.undefined
+  var MuiMenuItem: js.UndefOr[atMaterialDashUiCoreLib.PartialMenuItemProps] = js.undefined
+  var MuiMobileStepper: js.UndefOr[atMaterialDashUiCoreLib.PartialMobileStepperProps] = js.undefined
+  var MuiModal: js.UndefOr[atMaterialDashUiCoreLib.PartialModalProps] = js.undefined
+  var MuiNativeSelect: js.UndefOr[atMaterialDashUiCoreLib.PartialNativeSelectProps] = js.undefined
+  var MuiPaper: js.UndefOr[atMaterialDashUiCoreLib.PartialPaperProps] = js.undefined
+  var MuiPopover: js.UndefOr[atMaterialDashUiCoreLib.PartialPopoverProps] = js.undefined
+  var MuiRadio: js.UndefOr[atMaterialDashUiCoreLib.PartialRadioProps] = js.undefined
+  var MuiSelect: js.UndefOr[atMaterialDashUiCoreLib.PartialSelectProps] = js.undefined
+  var MuiSnackbar: js.UndefOr[atMaterialDashUiCoreLib.PartialSnackbarProps] = js.undefined
+  var MuiSnackbarContent: js.UndefOr[atMaterialDashUiCoreLib.PartialSnackbarContentProps] = js.undefined
+  var MuiStep: js.UndefOr[atMaterialDashUiCoreLib.PartialStepProps] = js.undefined
+  var MuiStepButton: js.UndefOr[atMaterialDashUiCoreLib.PartialStepButtonProps] = js.undefined
+  var MuiStepConnector: js.UndefOr[atMaterialDashUiCoreLib.PartialStepConnectorProps] = js.undefined
+  var MuiStepContent: js.UndefOr[atMaterialDashUiCoreLib.PartialStepContentProps] = js.undefined
+  var MuiStepIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialStepIconProps] = js.undefined
+  var MuiStepLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialStepLabelProps] = js.undefined
+  var MuiStepper: js.UndefOr[atMaterialDashUiCoreLib.PartialStepperProps] = js.undefined
+  var MuiSvgIcon: js.UndefOr[atMaterialDashUiCoreLib.PartialSvgIconProps] = js.undefined
+  var MuiSwitch: js.UndefOr[atMaterialDashUiCoreLib.PartialSwitchProps] = js.undefined
+  var MuiSwitchBase: js.UndefOr[atMaterialDashUiCoreLib.PartialSwitchBaseProps] = js.undefined
+  var MuiTab: js.UndefOr[atMaterialDashUiCoreLib.PartialTabProps] = js.undefined
+  var MuiTable: js.UndefOr[atMaterialDashUiCoreLib.PartialTableProps] = js.undefined
+  var MuiTableCell: js.UndefOr[atMaterialDashUiCoreLib.PartialTableCellProps] = js.undefined
+  var MuiTablePagination: js.UndefOr[atMaterialDashUiCoreLib.PartialTablePaginationProps] = js.undefined
+  var MuiTableRow: js.UndefOr[atMaterialDashUiCoreLib.PartialTableRowProps] = js.undefined
+  var MuiTableSortLabel: js.UndefOr[atMaterialDashUiCoreLib.PartialTableSortLabelProps] = js.undefined
+  var MuiTabs: js.UndefOr[atMaterialDashUiCoreLib.PartialTabsProps] = js.undefined
+  var MuiToolbar: js.UndefOr[atMaterialDashUiCoreLib.PartialToolbarProps] = js.undefined
+  var MuiTooltip: js.UndefOr[atMaterialDashUiCoreLib.PartialTooltipProps] = js.undefined
   var MuiTouchRipple: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps]
   ] = js.undefined
-  var MuiTypography: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
-  var MuiWithWidth: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthOptions]] = js.undefined
+  var MuiTypography: js.UndefOr[atMaterialDashUiCoreLib.PartialTypographyProps] = js.undefined
+  var MuiWithWidth: js.UndefOr[atMaterialDashUiCoreLib.PartialWithWidthOptions] = js.undefined
 }
 
 object ComponentsProps {
   @scala.inline
   def apply(
-    MuiAppBar: stdLib.Partial[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps] = null,
-    MuiAvatar: stdLib.Partial[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps] = null,
-    MuiBackdrop: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    MuiBadge: stdLib.Partial[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps] = null,
-    MuiBottomNavigation: stdLib.Partial[
-      atMaterialDashUiCoreLib.bottomNavigationBottomNavigationMod.BottomNavigationProps
-    ] = null,
-    MuiBottomNavigationAction: stdLib.Partial[
-      atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps
-    ] = null,
-    MuiButton: stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps] = null,
-    MuiButtonBase: stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = null,
-    MuiCard: stdLib.Partial[atMaterialDashUiCoreLib.cardCardMod.CardProps] = null,
-    MuiCardActions: stdLib.Partial[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsProps] = null,
-    MuiCardContent: stdLib.Partial[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentProps] = null,
-    MuiCardHeader: stdLib.Partial[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderProps] = null,
-    MuiCardMedia: stdLib.Partial[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaProps] = null,
-    MuiCheckbox: stdLib.Partial[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps] = null,
-    MuiChip: stdLib.Partial[atMaterialDashUiCoreLib.chipChipMod.ChipProps] = null,
-    MuiCircularProgress: stdLib.Partial[
-      atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressProps
-    ] = null,
-    MuiCollapse: stdLib.Partial[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps] = null,
-    MuiCssBaseline: stdLib.Partial[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineProps] = null,
-    MuiDialog: stdLib.Partial[atMaterialDashUiCoreLib.dialogDialogMod.DialogProps] = null,
-    MuiDialogActions: stdLib.Partial[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps] = null,
-    MuiDialogContent: stdLib.Partial[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps] = null,
-    MuiDialogContentText: stdLib.Partial[
-      atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
-    ] = null,
-    MuiDialogTitle: stdLib.Partial[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps] = null,
-    MuiDivider: stdLib.Partial[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps] = null,
-    MuiDrawer: stdLib.Partial[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps] = null,
-    MuiExpansionPanel: stdLib.Partial[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps] = null,
-    MuiExpansionPanelActions: stdLib.Partial[
-      atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
-    ] = null,
-    MuiExpansionPanelDetails: stdLib.Partial[
-      atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
-    ] = null,
-    MuiExpansionPanelSummary: stdLib.Partial[
-      atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps
-    ] = null,
-    MuiFormControl: stdLib.Partial[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps] = null,
-    MuiFormControlLabel: stdLib.Partial[
-      atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelProps
-    ] = null,
-    MuiFormGroup: stdLib.Partial[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupProps] = null,
-    MuiFormHelperText: stdLib.Partial[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps] = null,
-    MuiFormLabel: stdLib.Partial[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps] = null,
-    MuiGrid: stdLib.Partial[atMaterialDashUiCoreLib.gridGridMod.GridProps] = null,
-    MuiGridList: stdLib.Partial[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps] = null,
-    MuiGridListTile: stdLib.Partial[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileProps] = null,
-    MuiGridListTileBar: stdLib.Partial[atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarProps] = null,
-    MuiIcon: stdLib.Partial[atMaterialDashUiCoreLib.iconIconMod.IconProps] = null,
-    MuiIconButton: stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps] = null,
-    MuiInput: stdLib.Partial[atMaterialDashUiCoreLib.inputInputMod.InputProps] = null,
-    MuiInputAdornment: stdLib.Partial[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentProps] = null,
-    MuiInputLabel: stdLib.Partial[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelProps] = null,
-    MuiLinearProgress: stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps] = null,
-    MuiList: stdLib.Partial[atMaterialDashUiCoreLib.listListMod.ListProps] = null,
-    MuiListItem: stdLib.Partial[atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps] = null,
-    MuiListItemAvatar: stdLib.Partial[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps] = null,
-    MuiListItemIcon: stdLib.Partial[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps] = null,
-    MuiListItemSecondaryAction: stdLib.Partial[
-      atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
-    ] = null,
-    MuiListItemText: stdLib.Partial[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps] = null,
-    MuiListSubheader: stdLib.Partial[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderProps] = null,
-    MuiMenu: stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = null,
-    MuiMenuItem: stdLib.Partial[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps] = null,
-    MuiMobileStepper: stdLib.Partial[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperProps] = null,
-    MuiModal: stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps] = null,
-    MuiNativeSelect: stdLib.Partial[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectProps] = null,
-    MuiPaper: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    MuiPopover: stdLib.Partial[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps] = null,
-    MuiRadio: stdLib.Partial[atMaterialDashUiCoreLib.radioRadioMod.RadioProps] = null,
-    MuiSelect: stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps] = null,
-    MuiSnackbar: stdLib.Partial[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps] = null,
-    MuiSnackbarContent: stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps] = null,
-    MuiStep: stdLib.Partial[atMaterialDashUiCoreLib.stepStepMod.StepProps] = null,
-    MuiStepButton: stdLib.Partial[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonProps] = null,
-    MuiStepConnector: stdLib.Partial[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorProps] = null,
-    MuiStepContent: stdLib.Partial[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentProps] = null,
-    MuiStepIcon: stdLib.Partial[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps] = null,
-    MuiStepLabel: stdLib.Partial[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelProps] = null,
-    MuiStepper: stdLib.Partial[atMaterialDashUiCoreLib.stepperStepperMod.StepperProps] = null,
-    MuiSvgIcon: stdLib.Partial[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = null,
-    MuiSwitch: stdLib.Partial[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps] = null,
-    MuiSwitchBase: stdLib.Partial[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps] = null,
-    MuiTab: stdLib.Partial[atMaterialDashUiCoreLib.tabTabMod.TabProps] = null,
-    MuiTable: stdLib.Partial[atMaterialDashUiCoreLib.tableTableMod.TableProps] = null,
-    MuiTableCell: stdLib.Partial[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellProps] = null,
-    MuiTablePagination: stdLib.Partial[atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationProps] = null,
-    MuiTableRow: stdLib.Partial[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowProps] = null,
-    MuiTableSortLabel: stdLib.Partial[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelProps] = null,
-    MuiTabs: stdLib.Partial[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps] = null,
-    MuiToolbar: stdLib.Partial[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps] = null,
-    MuiTooltip: stdLib.Partial[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps] = null,
+    MuiAppBar: atMaterialDashUiCoreLib.PartialAppBarProps = null,
+    MuiAvatar: atMaterialDashUiCoreLib.PartialAvatarProps = null,
+    MuiBackdrop: atMaterialDashUiCoreLib.PartialBackdropProps = null,
+    MuiBadge: atMaterialDashUiCoreLib.PartialBadgeProps = null,
+    MuiBottomNavigation: atMaterialDashUiCoreLib.PartialBottomNavigationProps = null,
+    MuiBottomNavigationAction: atMaterialDashUiCoreLib.PartialBottomNavigationActionProps = null,
+    MuiButton: atMaterialDashUiCoreLib.PartialButtonProps = null,
+    MuiButtonBase: atMaterialDashUiCoreLib.PartialButtonBaseProps = null,
+    MuiCard: atMaterialDashUiCoreLib.PartialCardProps = null,
+    MuiCardActions: atMaterialDashUiCoreLib.PartialCardActionsProps = null,
+    MuiCardContent: atMaterialDashUiCoreLib.PartialCardContentProps = null,
+    MuiCardHeader: atMaterialDashUiCoreLib.PartialCardHeaderProps = null,
+    MuiCardMedia: atMaterialDashUiCoreLib.PartialCardMediaProps = null,
+    MuiCheckbox: atMaterialDashUiCoreLib.PartialCheckboxProps = null,
+    MuiChip: atMaterialDashUiCoreLib.PartialChipProps = null,
+    MuiCircularProgress: atMaterialDashUiCoreLib.PartialCircularProgressProps = null,
+    MuiCollapse: atMaterialDashUiCoreLib.PartialCollapseProps = null,
+    MuiCssBaseline: atMaterialDashUiCoreLib.PartialCssBaselineProps = null,
+    MuiDialog: atMaterialDashUiCoreLib.PartialDialogProps = null,
+    MuiDialogActions: atMaterialDashUiCoreLib.PartialDialogActionsProps = null,
+    MuiDialogContent: atMaterialDashUiCoreLib.PartialDialogContentProps = null,
+    MuiDialogContentText: atMaterialDashUiCoreLib.PartialDialogContentTextProps = null,
+    MuiDialogTitle: atMaterialDashUiCoreLib.PartialDialogTitleProps = null,
+    MuiDivider: atMaterialDashUiCoreLib.PartialDividerProps = null,
+    MuiDrawer: atMaterialDashUiCoreLib.PartialDrawerProps = null,
+    MuiExpansionPanel: atMaterialDashUiCoreLib.PartialExpansionPanelProps = null,
+    MuiExpansionPanelActions: atMaterialDashUiCoreLib.PartialExpansionPanelActionsProps = null,
+    MuiExpansionPanelDetails: atMaterialDashUiCoreLib.PartialExpansionPanelDetailsProps = null,
+    MuiExpansionPanelSummary: atMaterialDashUiCoreLib.PartialExpansionPanelSummaryProps = null,
+    MuiFormControl: atMaterialDashUiCoreLib.PartialFormControlProps = null,
+    MuiFormControlLabel: atMaterialDashUiCoreLib.PartialFormControlLabelProps = null,
+    MuiFormGroup: atMaterialDashUiCoreLib.PartialFormGroupProps = null,
+    MuiFormHelperText: atMaterialDashUiCoreLib.PartialFormHelperTextProps = null,
+    MuiFormLabel: atMaterialDashUiCoreLib.PartialFormLabelProps = null,
+    MuiGrid: atMaterialDashUiCoreLib.PartialGridProps = null,
+    MuiGridList: atMaterialDashUiCoreLib.PartialGridListProps = null,
+    MuiGridListTile: atMaterialDashUiCoreLib.PartialGridListTileProps = null,
+    MuiGridListTileBar: atMaterialDashUiCoreLib.PartialGridListTileBarProps = null,
+    MuiIcon: atMaterialDashUiCoreLib.PartialIconProps = null,
+    MuiIconButton: atMaterialDashUiCoreLib.PartialIconButtonProps = null,
+    MuiInput: atMaterialDashUiCoreLib.PartialInputProps = null,
+    MuiInputAdornment: atMaterialDashUiCoreLib.PartialInputAdornmentProps = null,
+    MuiInputLabel: atMaterialDashUiCoreLib.PartialInputLabelProps = null,
+    MuiLinearProgress: atMaterialDashUiCoreLib.PartialLinearProgressProps = null,
+    MuiList: atMaterialDashUiCoreLib.PartialListProps = null,
+    MuiListItem: atMaterialDashUiCoreLib.PartialListItemProps = null,
+    MuiListItemAvatar: atMaterialDashUiCoreLib.PartialListItemAvatarProps = null,
+    MuiListItemIcon: atMaterialDashUiCoreLib.PartialListItemIconProps = null,
+    MuiListItemSecondaryAction: atMaterialDashUiCoreLib.PartialListItemSecondaryActionProps = null,
+    MuiListItemText: atMaterialDashUiCoreLib.PartialListItemTextProps = null,
+    MuiListSubheader: atMaterialDashUiCoreLib.PartialListSubheaderProps = null,
+    MuiMenu: atMaterialDashUiCoreLib.PartialMenuProps = null,
+    MuiMenuItem: atMaterialDashUiCoreLib.PartialMenuItemProps = null,
+    MuiMobileStepper: atMaterialDashUiCoreLib.PartialMobileStepperProps = null,
+    MuiModal: atMaterialDashUiCoreLib.PartialModalProps = null,
+    MuiNativeSelect: atMaterialDashUiCoreLib.PartialNativeSelectProps = null,
+    MuiPaper: atMaterialDashUiCoreLib.PartialPaperProps = null,
+    MuiPopover: atMaterialDashUiCoreLib.PartialPopoverProps = null,
+    MuiRadio: atMaterialDashUiCoreLib.PartialRadioProps = null,
+    MuiSelect: atMaterialDashUiCoreLib.PartialSelectProps = null,
+    MuiSnackbar: atMaterialDashUiCoreLib.PartialSnackbarProps = null,
+    MuiSnackbarContent: atMaterialDashUiCoreLib.PartialSnackbarContentProps = null,
+    MuiStep: atMaterialDashUiCoreLib.PartialStepProps = null,
+    MuiStepButton: atMaterialDashUiCoreLib.PartialStepButtonProps = null,
+    MuiStepConnector: atMaterialDashUiCoreLib.PartialStepConnectorProps = null,
+    MuiStepContent: atMaterialDashUiCoreLib.PartialStepContentProps = null,
+    MuiStepIcon: atMaterialDashUiCoreLib.PartialStepIconProps = null,
+    MuiStepLabel: atMaterialDashUiCoreLib.PartialStepLabelProps = null,
+    MuiStepper: atMaterialDashUiCoreLib.PartialStepperProps = null,
+    MuiSvgIcon: atMaterialDashUiCoreLib.PartialSvgIconProps = null,
+    MuiSwitch: atMaterialDashUiCoreLib.PartialSwitchProps = null,
+    MuiSwitchBase: atMaterialDashUiCoreLib.PartialSwitchBaseProps = null,
+    MuiTab: atMaterialDashUiCoreLib.PartialTabProps = null,
+    MuiTable: atMaterialDashUiCoreLib.PartialTableProps = null,
+    MuiTableCell: atMaterialDashUiCoreLib.PartialTableCellProps = null,
+    MuiTablePagination: atMaterialDashUiCoreLib.PartialTablePaginationProps = null,
+    MuiTableRow: atMaterialDashUiCoreLib.PartialTableRowProps = null,
+    MuiTableSortLabel: atMaterialDashUiCoreLib.PartialTableSortLabelProps = null,
+    MuiTabs: atMaterialDashUiCoreLib.PartialTabsProps = null,
+    MuiToolbar: atMaterialDashUiCoreLib.PartialToolbarProps = null,
+    MuiTooltip: atMaterialDashUiCoreLib.PartialTooltipProps = null,
     MuiTouchRipple: stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps] = null,
-    MuiTypography: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
-    MuiWithWidth: stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthOptions] = null
+    MuiTypography: atMaterialDashUiCoreLib.PartialTypographyProps = null,
+    MuiWithWidth: atMaterialDashUiCoreLib.PartialWithWidthOptions = null
   ): ComponentsProps = {
     val __obj = js.Dynamic.literal()
     if (MuiAppBar != null) __obj.updateDynamic("MuiAppBar")(MuiAppBar)

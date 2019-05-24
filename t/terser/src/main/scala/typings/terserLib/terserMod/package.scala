@@ -70,5 +70,4 @@ package object terserMod {
     - AST_Expansion
   */
   type ArgType = _ArgType | AST_SymbolFunarg | AST_DefaultAssign
-  type DictEachCallback = js.Function2[/* val */ js.Any, /* key */ java.lang.String, js.Any]
 }

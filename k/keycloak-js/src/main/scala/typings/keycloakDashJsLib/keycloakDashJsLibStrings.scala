@@ -54,6 +54,9 @@ object keycloakDashJsLibStrings {
     extends keycloakDashJsLib.keycloakDashJsMod.KeycloakOnLoad
   
   @js.native
+  sealed trait native extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -91,6 +94,8 @@ object keycloakDashJsLibStrings {
   def login: login = "login".asInstanceOf[login]
   @scala.inline
   def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
+  @scala.inline
+  def native: native = "native".asInstanceOf[native]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

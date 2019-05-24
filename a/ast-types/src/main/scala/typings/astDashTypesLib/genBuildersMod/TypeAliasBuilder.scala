@@ -11,12 +11,12 @@ trait TypeAliasBuilder extends js.Object {
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind,
     right: astDashTypesLib.genKindsMod.FlowTypeKind
-  ): astDashTypesLib.genNodesMod.TypeAlias = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAlias = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     typeParameters: scala.Null,
     right: astDashTypesLib.genKindsMod.FlowTypeKind
-  ): astDashTypesLib.genNodesMod.TypeAlias = js.native
-  def from(params: astDashTypesLib.Anon_CommentsIdLocRight): astDashTypesLib.genNodesMod.TypeAlias = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAlias = js.native
+  def from(params: astDashTypesLib.Anon_CommentsIdLocRight): astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAlias = js.native
 }
 

@@ -132,15 +132,15 @@ object ^ extends js.Object {
   val Zoom: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.zoomZoomMod.ZoomProps] = js.native
   def withMobileDialog[P](): js.Function1[
     /* component */ reactLib.reactMod.ComponentType[
-      P with atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.InjectedProps with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
+      P with atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.InjectedProps with atMaterialDashUiCoreLib.PartialWithWidth
     ], 
-    reactLib.reactMod.ComponentType[P with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]]
+    reactLib.reactMod.ComponentType[P with atMaterialDashUiCoreLib.PartialWithWidth]
   ] = js.native
   def withMobileDialog[P](options: atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.WithMobileDialogOptions): js.Function1[
     /* component */ reactLib.reactMod.ComponentType[
-      P with atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.InjectedProps with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
+      P with atMaterialDashUiCoreLib.withMobileDialogWithMobileDialogMod.InjectedProps with atMaterialDashUiCoreLib.PartialWithWidth
     ], 
-    reactLib.reactMod.ComponentType[P with stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]]
+    reactLib.reactMod.ComponentType[P with atMaterialDashUiCoreLib.PartialWithWidth]
   ] = js.native
   def withWidth(): PropInjector[
     atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth, 

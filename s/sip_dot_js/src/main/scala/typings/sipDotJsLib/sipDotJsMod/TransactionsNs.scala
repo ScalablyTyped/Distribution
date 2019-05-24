@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object TransactionsNs extends js.Object {
   @js.native
   class InviteClientTransaction protected ()
-    extends sipDotJsLib.libTransactionsMod.InviteClientTransaction {
+    extends sipDotJsLib.libCoreTransactionsMod.InviteClientTransaction {
     /**
       * Constructor.
       * Upon construction, the outgoing request's Via header is updated by calling `setViaHeader`.
@@ -22,12 +22,12 @@ object TransactionsNs extends js.Object {
       * @param transport The transport.
       * @param user The transaction user.
       */
-    def this(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libTransactionsMod.ClientTransactionUser) = this()
+    def this(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser) = this()
   }
   
   @js.native
   class InviteServerTransaction protected ()
-    extends sipDotJsLib.libTransactionsMod.InviteServerTransaction {
+    extends sipDotJsLib.libCoreTransactionsMod.InviteServerTransaction {
     /**
       * Constructor.
       * Upon construction, a "100 Trying" reply will be immediately sent.
@@ -38,12 +38,12 @@ object TransactionsNs extends js.Object {
       * @param transport The transport.
       * @param user The transaction user.
       */
-    def this(request: sipDotJsLib.libSIPMessageMod.IncomingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libTransactionsMod.ServerTransactionUser) = this()
+    def this(request: sipDotJsLib.libSIPMessageMod.IncomingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ServerTransactionUser) = this()
   }
   
   @js.native
   class NonInviteClientTransaction protected ()
-    extends sipDotJsLib.libTransactionsMod.NonInviteClientTransaction {
+    extends sipDotJsLib.libCoreTransactionsMod.NonInviteClientTransaction {
     /**
       * Constructor
       * Upon construction, the outgoing request's Via header is updated by calling `setViaHeader`.
@@ -55,12 +55,12 @@ object TransactionsNs extends js.Object {
       * @param transport The transport.
       * @param user The transaction user.
       */
-    def this(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libTransactionsMod.ClientTransactionUser) = this()
+    def this(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser) = this()
   }
   
   @js.native
   class NonInviteServerTransaction protected ()
-    extends sipDotJsLib.libTransactionsMod.NonInviteServerTransaction {
+    extends sipDotJsLib.libCoreTransactionsMod.NonInviteServerTransaction {
     /**
       * Constructor.
       * After construction the transaction will be in the "trying": state and the transaction
@@ -70,7 +70,7 @@ object TransactionsNs extends js.Object {
       * @param transport The transport.
       * @param user The transaction user.
       */
-    def this(request: sipDotJsLib.libSIPMessageMod.IncomingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libTransactionsMod.ServerTransactionUser) = this()
+    def this(request: sipDotJsLib.libSIPMessageMod.IncomingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ServerTransactionUser) = this()
   }
   
 }

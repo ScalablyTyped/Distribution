@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def default(elements: Elements): scala.Unit = js.native
-  def default(elements: Elements, hasDoneEachEvalScriptsRenumerateIRIElements: OptionalArgs): scala.Unit = js.native
+  def default(elements: Elements, hasAfterAllAfterEachBeforeEachEvalScriptsRenumerateIRIElements: OptionalArgs): scala.Unit = js.native
 }
 

@@ -11,7 +11,7 @@ trait BinaryExpressionBuilder extends js.Object {
     operator: astDashTypesLib.astDashTypesLibStrings.`==` | astDashTypesLib.astDashTypesLibStrings.`!=` | astDashTypesLib.astDashTypesLibStrings.`===` | astDashTypesLib.astDashTypesLibStrings.`!==` | astDashTypesLib.astDashTypesLibStrings.`<` | astDashTypesLib.astDashTypesLibStrings.`<=` | astDashTypesLib.astDashTypesLibStrings.`>` | astDashTypesLib.astDashTypesLibStrings.`>=` | astDashTypesLib.astDashTypesLibStrings.`<<` | astDashTypesLib.astDashTypesLibStrings.`>>` | astDashTypesLib.astDashTypesLibStrings.`>>>` | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-` | astDashTypesLib.astDashTypesLibStrings.`*` | astDashTypesLib.astDashTypesLibStrings.`/` | astDashTypesLib.astDashTypesLibStrings.`%` | astDashTypesLib.astDashTypesLibStrings.`**` | astDashTypesLib.astDashTypesLibStrings.`&` | astDashTypesLib.astDashTypesLibStrings.`|` | astDashTypesLib.astDashTypesLibStrings.`_backtick^_backtick` | astDashTypesLib.astDashTypesLibStrings.in | astDashTypesLib.astDashTypesLibStrings.instanceof,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.BinaryExpression = js.native
-  def from(params: astDashTypesLib.Anon_CommentsIn): astDashTypesLib.genNodesMod.BinaryExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.BinaryExpression = js.native
+  def from(params: astDashTypesLib.Anon_CommentsIn): astDashTypesLib.genNamedTypesMod.namedTypesNs.BinaryExpression = js.native
 }
 

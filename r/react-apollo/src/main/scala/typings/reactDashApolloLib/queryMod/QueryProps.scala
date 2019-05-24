@@ -26,12 +26,13 @@ object QueryProps {
     context: reactDashApolloLib.typesMod.Context = null,
     displayName: java.lang.String = null,
     errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
-    fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
+    fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryFetchPolicy = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
     onCompleted: /* data */ TData => scala.Unit = null,
     onError: /* error */ apolloDashClientLib.apolloDashClientMod.ApolloError => scala.Unit = null,
     partialRefetch: js.UndefOr[scala.Boolean] = js.undefined,
     pollInterval: scala.Int | scala.Double = null,
+    returnPartialData: js.UndefOr[scala.Boolean] = js.undefined,
     skip: js.UndefOr[scala.Boolean] = js.undefined,
     ssr: js.UndefOr[scala.Boolean] = js.undefined,
     variables: TVariables = null
@@ -47,6 +48,7 @@ object QueryProps {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (!js.isUndefined(partialRefetch)) __obj.updateDynamic("partialRefetch")(partialRefetch)
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
     if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
     if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])

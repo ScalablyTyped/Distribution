@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLShader protected ()
   extends threeLib.srcRenderersWebglWebGLShaderMod.WebGLShader {
-  def this(gl: js.Any, `type`: java.lang.String, string: java.lang.String) = this()
+  def this(gl: js.Any, `type`: java.lang.String, string: java.lang.String, debug: scala.Boolean) = this()
 }
 

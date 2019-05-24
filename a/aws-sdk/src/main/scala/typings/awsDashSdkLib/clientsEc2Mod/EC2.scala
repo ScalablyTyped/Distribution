@@ -1743,7 +1743,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateVpcPeeringConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
+    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The supported connection types are ipsec.1 and ipsec.2. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnection(): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createVpnConnection(
@@ -1754,7 +1754,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
+    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The supported connection types are ipsec.1 and ipsec.2. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnection(params: CreateVpnConnectionRequest): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createVpnConnection(
@@ -4836,6 +4836,29 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Disables default encryption for EBS volumes that are created in your account in the current region. Call this API if you have enabled default encryption using EnableEbsEncryptionByDefault and want to disable default EBS encryption. Once default EBS encryption is disabled, you can still create an encrypted volume by setting encrypted to true in the API call that creates the volume.  Disabling default EBS encryption will not change the encryption status of any of your existing volumes.
+    */
+  def disableEbsEncryptionByDefault(): awsDashSdkLib.libRequestMod.Request[DisableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disableEbsEncryptionByDefault(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisableEbsEncryptionByDefaultResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DisableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Disables default encryption for EBS volumes that are created in your account in the current region. Call this API if you have enabled default encryption using EnableEbsEncryptionByDefault and want to disable default EBS encryption. Once default EBS encryption is disabled, you can still create an encrypted volume by setting encrypted to true in the API call that creates the volume.  Disabling default EBS encryption will not change the encryption status of any of your existing volumes.
+    */
+  def disableEbsEncryptionByDefault(params: DisableEbsEncryptionByDefaultRequest): awsDashSdkLib.libRequestMod.Request[DisableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def disableEbsEncryptionByDefault(
+    params: DisableEbsEncryptionByDefaultRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisableEbsEncryptionByDefaultResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DisableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Disables the specified resource attachment from propagating routes to the specified propagation route table.
     */
   def disableTransitGatewayRouteTablePropagation(): awsDashSdkLib.libRequestMod.Request[
@@ -5077,6 +5100,29 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateVpcCidrBlockResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Enables default encryption for EBS volumes that are created in your account in the current region. Once encryption is enabled with this action, EBS volumes that are created in your account will always be encrypted even if encryption is not specified at launch. This setting overrides the encrypted setting to true in all API calls that create EBS volumes in your account. A volume will be encrypted even if you specify encryption to be false in the API call that creates the volume. If you do not specify a customer master key (CMK) in the API call that creates the EBS volume, then the volume is encrypted to your AWS account's default CMK. You can specify a default CMK of your choice using ModifyEbsDefaultKmsKeyId. Enabling default encryption for EBS volumes has no effect on existing unencrypted volumes in your account. Encrypting the data in these requires manual action. You can either create an encrypted snapshot of an unencrypted volume, or encrypt a copy of an unencrypted snapshot. Any volume restored from an encrypted snapshot is also encrypted. For more information, see Amazon EBS Snapshots. Once EBS encryption by default is enabled, you can no longer launch older-generation instance types that do not support encryption. For more information, see Supported Instance Types.
+    */
+  def enableEbsEncryptionByDefault(): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def enableEbsEncryptionByDefault(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ EnableEbsEncryptionByDefaultResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Enables default encryption for EBS volumes that are created in your account in the current region. Once encryption is enabled with this action, EBS volumes that are created in your account will always be encrypted even if encryption is not specified at launch. This setting overrides the encrypted setting to true in all API calls that create EBS volumes in your account. A volume will be encrypted even if you specify encryption to be false in the API call that creates the volume. If you do not specify a customer master key (CMK) in the API call that creates the EBS volume, then the volume is encrypted to your AWS account's default CMK. You can specify a default CMK of your choice using ModifyEbsDefaultKmsKeyId. Enabling default encryption for EBS volumes has no effect on existing unencrypted volumes in your account. Encrypting the data in these requires manual action. You can either create an encrypted snapshot of an unencrypted volume, or encrypt a copy of an unencrypted snapshot. Any volume restored from an encrypted snapshot is also encrypted. For more information, see Amazon EBS Snapshots. Once EBS encryption by default is enabled, you can no longer launch older-generation instance types that do not support encryption. For more information, see Supported Instance Types.
+    */
+  def enableEbsEncryptionByDefault(params: EnableEbsEncryptionByDefaultRequest): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def enableEbsEncryptionByDefault(
+    params: EnableEbsEncryptionByDefaultRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ EnableEbsEncryptionByDefaultResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Enables the specified attachment to propagate routes to the specified propagation route table.
     */
   def enableTransitGatewayRouteTablePropagation(): awsDashSdkLib.libRequestMod.Request[
@@ -5314,6 +5360,52 @@ trait EC2
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetConsoleScreenshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don’t specify a CMK in the API call. You can change this default using ModifyEbsDefaultKmsKeyId.
+    */
+  def getEbsDefaultKmsKeyId(): awsDashSdkLib.libRequestMod.Request[GetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getEbsDefaultKmsKeyId(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetEbsDefaultKmsKeyIdResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don’t specify a CMK in the API call. You can change this default using ModifyEbsDefaultKmsKeyId.
+    */
+  def getEbsDefaultKmsKeyId(params: GetEbsDefaultKmsKeyIdRequest): awsDashSdkLib.libRequestMod.Request[GetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getEbsDefaultKmsKeyId(
+    params: GetEbsDefaultKmsKeyIdRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetEbsDefaultKmsKeyIdResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes whether default EBS encryption is enabled for your account in the current region.
+    */
+  def getEbsEncryptionByDefault(): awsDashSdkLib.libRequestMod.Request[GetEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getEbsEncryptionByDefault(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetEbsEncryptionByDefaultResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Describes whether default EBS encryption is enabled for your account in the current region.
+    */
+  def getEbsEncryptionByDefault(params: GetEbsEncryptionByDefaultRequest): awsDashSdkLib.libRequestMod.Request[GetEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getEbsEncryptionByDefault(
+    params: GetEbsEncryptionByDefaultRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetEbsEncryptionByDefaultResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Preview a reservation purchase with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This is a preview of the PurchaseHostReservation action and does not result in the offering being purchased.
     */
@@ -5672,6 +5764,29 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Changes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don’t specify a CMK in the API call. Your account has an AWS-managed default CMK that is used for encrypting an EBS volume when no CMK is specified in the API call that creates the volume. By calling this API, you can specify a customer-managed CMK to use in place of the AWS-managed default CMK. Note: Deleting or disabling the custom CMK that you have specified to act as your default CMK will result in instance-launch failures.
+    */
+  def modifyEbsDefaultKmsKeyId(): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyEbsDefaultKmsKeyId(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyEbsDefaultKmsKeyIdResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Changes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don’t specify a CMK in the API call. Your account has an AWS-managed default CMK that is used for encrypting an EBS volume when no CMK is specified in the API call that creates the volume. By calling this API, you can specify a customer-managed CMK to use in place of the AWS-managed default CMK. Note: Deleting or disabling the custom CMK that you have specified to act as your default CMK will result in instance-launch failures.
+    */
+  def modifyEbsDefaultKmsKeyId(params: ModifyEbsDefaultKmsKeyIdRequest): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def modifyEbsDefaultKmsKeyId(
+    params: ModifyEbsDefaultKmsKeyIdRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ModifyEbsDefaultKmsKeyIdResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Modifies the specified EC2 Fleet. While the EC2 Fleet is being modified, it is in the modifying state.
     */
   def modifyFleet(): awsDashSdkLib.libRequestMod.Request[ModifyFleetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5981,7 +6096,7 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the specified Spot Fleet request. While the Spot Fleet request is being modified, it is in the modifying state. To scale up your Spot Fleet, increase its target capacity. The Spot Fleet launches the additional Spot Instances according to the allocation strategy for the Spot Fleet request. If the allocation strategy is lowestPrice, the Spot Fleet launches instances using the Spot pool with the lowest price. If the allocation strategy is diversified, the Spot Fleet distributes the instances across the Spot pools. To scale down your Spot Fleet, decrease its target capacity. First, the Spot Fleet cancels any open requests that exceed the new target capacity. You can request that the Spot Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowestPrice, the Spot Fleet terminates the instances with the highest price per unit. If the allocation strategy is diversified, the Spot Fleet terminates instances across the Spot pools. Alternatively, you can request that the Spot Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your Spot Fleet for now, but will use it again later, you can set the target capacity to 0.
+    * Modifies the specified Spot Fleet request. You can only modify a Spot Fleet request of type maintain. While the Spot Fleet request is being modified, it is in the modifying state. To scale up your Spot Fleet, increase its target capacity. The Spot Fleet launches the additional Spot Instances according to the allocation strategy for the Spot Fleet request. If the allocation strategy is lowestPrice, the Spot Fleet launches instances using the Spot pool with the lowest price. If the allocation strategy is diversified, the Spot Fleet distributes the instances across the Spot pools. To scale down your Spot Fleet, decrease its target capacity. First, the Spot Fleet cancels any open requests that exceed the new target capacity. You can request that the Spot Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowestPrice, the Spot Fleet terminates the instances with the highest price per unit. If the allocation strategy is diversified, the Spot Fleet terminates instances across the Spot pools. Alternatively, you can request that the Spot Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your Spot Fleet for now, but will use it again later, you can set the target capacity to 0.
     */
   def modifySpotFleetRequest(): awsDashSdkLib.libRequestMod.Request[ModifySpotFleetRequestResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifySpotFleetRequest(
@@ -5992,7 +6107,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifySpotFleetRequestResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the specified Spot Fleet request. While the Spot Fleet request is being modified, it is in the modifying state. To scale up your Spot Fleet, increase its target capacity. The Spot Fleet launches the additional Spot Instances according to the allocation strategy for the Spot Fleet request. If the allocation strategy is lowestPrice, the Spot Fleet launches instances using the Spot pool with the lowest price. If the allocation strategy is diversified, the Spot Fleet distributes the instances across the Spot pools. To scale down your Spot Fleet, decrease its target capacity. First, the Spot Fleet cancels any open requests that exceed the new target capacity. You can request that the Spot Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowestPrice, the Spot Fleet terminates the instances with the highest price per unit. If the allocation strategy is diversified, the Spot Fleet terminates instances across the Spot pools. Alternatively, you can request that the Spot Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your Spot Fleet for now, but will use it again later, you can set the target capacity to 0.
+    * Modifies the specified Spot Fleet request. You can only modify a Spot Fleet request of type maintain. While the Spot Fleet request is being modified, it is in the modifying state. To scale up your Spot Fleet, increase its target capacity. The Spot Fleet launches the additional Spot Instances according to the allocation strategy for the Spot Fleet request. If the allocation strategy is lowestPrice, the Spot Fleet launches instances using the Spot pool with the lowest price. If the allocation strategy is diversified, the Spot Fleet distributes the instances across the Spot pools. To scale down your Spot Fleet, decrease its target capacity. First, the Spot Fleet cancels any open requests that exceed the new target capacity. You can request that the Spot Fleet terminate Spot Instances until the size of the fleet no longer exceeds the new target capacity. If the allocation strategy is lowestPrice, the Spot Fleet terminates the instances with the highest price per unit. If the allocation strategy is diversified, the Spot Fleet terminates instances across the Spot pools. Alternatively, you can request that the Spot Fleet keep the fleet at its current size, but not replace any Spot Instances that are interrupted or that you terminate manually. If you are finished with your Spot Fleet for now, but will use it again later, you can set the target capacity to 0.
     */
   def modifySpotFleetRequest(params: ModifySpotFleetRequestRequest): awsDashSdkLib.libRequestMod.Request[ModifySpotFleetRequestResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifySpotFleetRequest(
@@ -6721,6 +6836,29 @@ trait EC2
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[RequestSpotInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Resets the account's default customer master key (CMK) to the account's AWS-managed default CMK. This default CMK is used to encrypt EBS volumes when you have enabled EBS encryption by default without specifying a CMK in the API call. If you have not enabled encryption by default, then this CMK is used when you set the Encrypted parameter to true without specifying a custom CMK in the API call. Call this API if you have modified the default CMK that is used for encrypting your EBS volume using ModifyEbsDefaultKmsKeyId and you want to reset it to the AWS-managed default CMK. After resetting, you can continue to provide a CMK of your choice in the API call that creates the volume. However, if no CMK is specified, your account will encrypt the volume to the AWS-managed default CMK.
+    */
+  def resetEbsDefaultKmsKeyId(): awsDashSdkLib.libRequestMod.Request[ResetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def resetEbsDefaultKmsKeyId(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ResetEbsDefaultKmsKeyIdResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ResetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Resets the account's default customer master key (CMK) to the account's AWS-managed default CMK. This default CMK is used to encrypt EBS volumes when you have enabled EBS encryption by default without specifying a CMK in the API call. If you have not enabled encryption by default, then this CMK is used when you set the Encrypted parameter to true without specifying a custom CMK in the API call. Call this API if you have modified the default CMK that is used for encrypting your EBS volume using ModifyEbsDefaultKmsKeyId and you want to reset it to the AWS-managed default CMK. After resetting, you can continue to provide a CMK of your choice in the API call that creates the volume. However, if no CMK is specified, your account will encrypt the volume to the AWS-managed default CMK.
+    */
+  def resetEbsDefaultKmsKeyId(params: ResetEbsDefaultKmsKeyIdRequest): awsDashSdkLib.libRequestMod.Request[ResetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def resetEbsDefaultKmsKeyId(
+    params: ResetEbsDefaultKmsKeyIdRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ResetEbsDefaultKmsKeyIdResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ResetEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Resets the specified attribute of the specified Amazon FPGA Image (AFI) to its default value. You can only reset the load permission attribute.
     */

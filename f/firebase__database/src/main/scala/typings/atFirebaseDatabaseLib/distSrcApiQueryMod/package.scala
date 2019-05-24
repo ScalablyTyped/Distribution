@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object distSrcApiQueryMod {
   type SnapshotCallback = js.Function2[
     /* a */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
-    /* b */ js.UndefOr[java.lang.String], 
+    /* b */ js.UndefOr[java.lang.String | scala.Null], 
     js.Any
   ]
 }

@@ -21,6 +21,7 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
   var columnsVisibleIf: java.lang.String = js.native
   var filteredColumns: js.Array[TColumn] = js.native
   var filteredRows: js.Array[ItemValue] = js.native
+  var generatedTotalRow: TRow = js.native
   var generatedVisibleRows: js.Array[TRow] = js.native
   /**
     * The list of rows. A row has a value and an optional text

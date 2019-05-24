@@ -1,7 +1,7 @@
 
 # Scala.js typings for protractor
 
-Typings are for version 6.0.0
+Typings are for version 5.4.2
 
 ## Library description:
 Webdriver E2E test wrapper for Angular.
@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- *  This is a base driver provider class.
- *  It is responsible for setting up the account object, tearing
- *  it down, and setting up the driver correctly.
- */
-
-```
 

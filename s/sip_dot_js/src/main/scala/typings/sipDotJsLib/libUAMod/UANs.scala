@@ -27,6 +27,7 @@ object UANs extends js.Object {
     var dtmfType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DtmfType */ js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DtmfType */ js.Any
       ] = js.undefined
+    var experimentalFeatures: js.UndefOr[scala.Boolean] = js.undefined
     var extraSupported: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     var forceRport: js.UndefOr[scala.Boolean] = js.undefined
     var hackAllowUnregisteredOptionTags: js.UndefOr[scala.Boolean] = js.undefined

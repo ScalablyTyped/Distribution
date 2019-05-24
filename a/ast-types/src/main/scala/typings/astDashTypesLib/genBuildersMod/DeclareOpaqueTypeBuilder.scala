@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DeclareOpaqueTypeBuilder extends js.Object {
-  def apply(id: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.DeclareOpaqueType = js.native
+  def apply(id: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareOpaqueType = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind
-  ): astDashTypesLib.genNodesMod.DeclareOpaqueType = js.native
-  def from(params: astDashTypesLib.Anon_CommentsIdLocRight): astDashTypesLib.genNodesMod.DeclareOpaqueType = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareOpaqueType = js.native
+  def from(params: astDashTypesLib.Anon_CommentsIdLocRight): astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareOpaqueType = js.native
 }
 

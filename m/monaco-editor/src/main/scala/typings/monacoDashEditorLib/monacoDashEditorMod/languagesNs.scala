@@ -249,6 +249,7 @@ object languagesNs extends js.Object {
   }
   
   trait DocumentFormattingEditProvider extends js.Object {
+    val displayName: js.UndefOr[java.lang.String] = js.undefined
     /**
       * Provide formatting edits for a whole document.
       */
@@ -286,6 +287,7 @@ object languagesNs extends js.Object {
   }
   
   trait DocumentRangeFormattingEditProvider extends js.Object {
+    val displayName: js.UndefOr[java.lang.String] = js.undefined
     /**
       * Provide formatting edits for a range in a document.
       *
@@ -518,7 +520,7 @@ object languagesNs extends js.Object {
     /**
       * The string that appears on the last line and closes the doc comment (e.g. ' * /').
       */
-    var close: java.lang.String
+    var close: js.UndefOr[java.lang.String] = js.undefined
     /**
       * The string that starts a doc comment (e.g. '/ **')
       */
@@ -634,6 +636,11 @@ object languagesNs extends js.Object {
   trait ILink extends js.Object {
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
     var url: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri | java.lang.String] = js.undefined
+  }
+  
+  trait ILinksList extends js.Object {
+    var dispose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+    var links: js.Array[ILink]
   }
   
   trait IMonarchLanguage extends js.Object {
@@ -786,7 +793,7 @@ object languagesNs extends js.Object {
     def provideLinks(
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
-    ): ProviderResult[js.Array[ILink]]
+    ): ProviderResult[ILinksList]
   }
   
   trait Location extends js.Object {

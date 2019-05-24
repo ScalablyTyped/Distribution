@@ -5,40 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait XmlDtdParamEntityRef
-  extends xmlcreateLib.libNodesXmlNodeMod.default {
-  var _entity: js.Any = js.native
+trait XmlDtdParamEntityRef[Parent] extends js.Object {
+  var _name: js.Any
+  val _parent: js.Any
+  val _validation: js.Any
   /**
-    * Gets the entity to be referenced.
-    *
-    * @returns The entity to be referenced.
+    * Gets the name of this parameter entity reference.
     */
   /**
-    * Sets the entity to be referenced.
-    *
-    * @param entity The entity to be referenced.
+    * Sets the name of this parameter entity reference.
     */
-  var entity: java.lang.String = js.native
+  var name: java.lang.String
   /**
-    * Throws an exception since {@link XmlDtdParamEntityRef} nodes cannot have
-    * any children.
-    *
-    * @param node This parameter is unused.
-    * @param index This parameter is unused.
-    *
-    * @returns This method does not return.
+    * Returns the parent of this parameter entity reference.
     */
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  /**
-    * Throws an exception since {@link XmlDtdParamEntityRef} nodes cannot have
-    * any children.
-    *
-    * @param node This parameter is unused.
-    *
-    * @returns This method does not return.
-    */
-  def removeChild(node: xmlcreateLib.libNodesXmlNodeMod.default): scala.Boolean = js.native
+  def up(): Parent
+}
+
+object XmlDtdParamEntityRef {
+  @scala.inline
+  def apply[Parent](
+    _name: js.Any,
+    _parent: js.Any,
+    _validation: js.Any,
+    name: java.lang.String,
+    toString: () => java.lang.String,
+    up: () => Parent
+  ): XmlDtdParamEntityRef[Parent] = {
+    val __obj = js.Dynamic.literal(_name = _name, _parent = _parent, _validation = _validation, name = name, toString = js.Any.fromFunction0(toString), up = js.Any.fromFunction0(up))
+  
+    __obj.asInstanceOf[XmlDtdParamEntityRef[Parent]]
+  }
 }
 

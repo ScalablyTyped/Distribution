@@ -12,7 +12,7 @@ trait CallExpressionBuilder extends js.Object {
     argumentsParam: js.Array[
       astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.SpreadElementKind
     ]
-  ): astDashTypesLib.genNodesMod.CallExpression = js.native
-  def from(params: astDashTypesLib.Anon_Arguments): astDashTypesLib.genNodesMod.CallExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CallExpression = js.native
+  def from(params: astDashTypesLib.Anon_Arguments): astDashTypesLib.genNamedTypesMod.namedTypesNs.CallExpression = js.native
 }
 

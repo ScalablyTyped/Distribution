@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ThisExpressionBuilder extends js.Object {
-  def apply(): astDashTypesLib.genNodesMod.ThisExpression = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNodesMod.ThisExpression = js.native
+  def apply(): astDashTypesLib.genNamedTypesMod.namedTypesNs.ThisExpression = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.ThisExpression = js.native
 }
 

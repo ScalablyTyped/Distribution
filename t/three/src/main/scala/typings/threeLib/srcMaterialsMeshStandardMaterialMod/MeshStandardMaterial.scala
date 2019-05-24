@@ -33,6 +33,7 @@ class MeshStandardMaterial ()
   var morphNormals: scala.Boolean = js.native
   var morphTargets: scala.Boolean = js.native
   var normalMap: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
+  var normalMapType: threeLib.srcConstantsMod.NormalMapTypes = js.native
   var normalScale: scala.Double = js.native
   var refractionRatio: scala.Double = js.native
   var roughness: scala.Double = js.native

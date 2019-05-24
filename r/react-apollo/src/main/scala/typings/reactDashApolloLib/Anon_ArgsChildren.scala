@@ -15,6 +15,7 @@ trait Anon_ArgsChildren extends js.Object {
   var partialRefetch: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var pollInterval: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   var query: propDashTypesLib.propDashTypesMod.Validator[js.Object]
+  var returnPartialData: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var ssr: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var variables: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
 }
@@ -31,10 +32,11 @@ object Anon_ArgsChildren {
     partialRefetch: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     pollInterval: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
     query: propDashTypesLib.propDashTypesMod.Validator[js.Object],
+    returnPartialData: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     ssr: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     variables: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
   ): Anon_ArgsChildren = {
-    val __obj = js.Dynamic.literal(children = children, client = client, fetchPolicy = fetchPolicy, notifyOnNetworkStatusChange = notifyOnNetworkStatusChange, onCompleted = onCompleted, onError = onError, partialRefetch = partialRefetch, pollInterval = pollInterval, query = query, ssr = ssr, variables = variables)
+    val __obj = js.Dynamic.literal(children = children, client = client, fetchPolicy = fetchPolicy, notifyOnNetworkStatusChange = notifyOnNetworkStatusChange, onCompleted = onCompleted, onError = onError, partialRefetch = partialRefetch, pollInterval = pollInterval, query = query, returnPartialData = returnPartialData, ssr = ssr, variables = variables)
   
     __obj.asInstanceOf[Anon_ArgsChildren]
   }

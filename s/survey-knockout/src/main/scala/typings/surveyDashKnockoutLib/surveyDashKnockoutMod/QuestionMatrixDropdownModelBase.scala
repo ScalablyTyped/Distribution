@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IMatrixDropdownData because var conflicts: columns. Inlined onRowChanged, onRowChanging, getRowIndex, validateCell, createQuestion, getSurvey */ @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IMatrixDropdownData because var conflicts: columns, value. Inlined onRowChanged, onRowChanging, getRowIndex, validateCell, createQuestion, getSurvey */ @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
 @js.native
 class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseModel[MatrixDropdownRowModelBase, MatrixDropdownColumn] {
   def this(name: java.lang.String) = this()
@@ -33,6 +33,8 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     */
   var columnMinWidth: java.lang.String = js.native
   var columnsLocation: java.lang.String = js.native
+  val hasFooter: scala.Boolean = js.native
+  val hasTotal: scala.Boolean = js.native
   /**
     * Set this property to true to show the horizontal scroll.
     */
@@ -49,6 +51,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     * The default options caption for dropdown cell type.
     */
   var optionsCaption: java.lang.String = js.native
+  val visibleTotalRow: MatrixDropdownRowModelBase = js.native
   def addColumn(name: java.lang.String): MatrixDropdownColumn = js.native
   def addColumn(name: java.lang.String, title: java.lang.String): MatrixDropdownColumn = js.native
   def columnLayoutChangedCallback(): scala.Unit = js.native
@@ -58,6 +61,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def createQuestionCore(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
   /* protected */ def deleteRowValue(newValue: js.Any, row: MatrixDropdownRowModelBase): js.Any = js.native
   /* protected */ def generateRows(): js.Array[MatrixDropdownRowModelBase] = js.native
+  /* protected */ def generateTotalRow(): MatrixDropdownRowModelBase = js.native
   def getCellType(): java.lang.String = js.native
   /**
     * Returns the column by it's name. Retuns null if a column with this name doesn't exist.
@@ -82,6 +86,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def getRowValueCore(row: MatrixDropdownRowModelBase, questionValue: js.Any): js.Any = js.native
   /* protected */ def getRowValueCore(row: MatrixDropdownRowModelBase, questionValue: js.Any, create: scala.Boolean): js.Any = js.native
   def getSurvey(): ISurvey = js.native
+  /* protected */ def getVisibleTotalRow(): MatrixDropdownRowModelBase = js.native
   /* protected */ def isObject(value: js.Any): scala.Boolean = js.native
   /* protected */ def onBeforeValueChanged(`val`: js.Any): scala.Unit = js.native
   /* protected */ def onCellValueChanged(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): scala.Unit = js.native
@@ -90,6 +95,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def onRowChanged(row: MatrixDropdownRowModelBase, columnName: java.lang.String, newRowValue: js.Any): scala.Unit = js.native
   def onRowChanging(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): js.Any = js.native
   /* protected */ def runCellsCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
+  /* protected */ def runTotalsCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /**
     * Set the row value.
     * @param rowIndex row index from 0 to visible row count - 1.
@@ -97,6 +103,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     */
   def setRowValue(rowIndex: scala.Double, rowValue: js.Any): js.Any = js.native
   def updateCellsCallback(): scala.Unit = js.native
+  /* protected */ def updateHasFooter(): scala.Unit = js.native
   def validateCell(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): SurveyError = js.native
 }
 
@@ -104,6 +111,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
 @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
 @js.native
 object QuestionMatrixDropdownModelBase extends js.Object {
+  var defaultCellType: java.lang.String = js.native
   def addDefaultColumns(matrix: surveyDashKnockoutLib.surveyDashKnockoutMod.QuestionMatrixDropdownModelBase): scala.Unit = js.native
 }
 

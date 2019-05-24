@@ -5,9 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @class
+  */
+// properties (get/set) / sync functions
 @js.native
 trait WebTwain extends js.Object {
-  var Addon: WebTwainAddon = js.native
+  /*ignored
+    checkErrorString
+    first
+    getInstance
+    last
+    next
+    on
+    onEvent
+    previous
+    ...other internal ones
+    */
+  var Addon: DynamsoftWebTwainAddon = js.native
   /*ignored
     httpUrl
     objectName
@@ -736,7 +751,7 @@ trait WebTwain extends js.Object {
     * @type {string}
     */
   var containerClass: java.lang.String = js.native
-  /* ignored
+  /* ignored 
     style
     _AutoCropMethod
     */
@@ -935,6 +950,7 @@ trait WebTwain extends js.Object {
     * @param {Array} indices indices specifies which images are to be converted to base64.
     * @param {EnumDWT_ImageType} enumImageType the image format in which the images are to be converted to base64.
     * @return {Base64Result}
+    
     ConvertToBase64(indices: number[], enumImageType: EnumDWT_ImageType): Base64Result;
     */
   /**
@@ -1475,12 +1491,7 @@ trait WebTwain extends js.Object {
     * Return the runtime license info.
     * @method WebTwain#GetLicenseInfo
     */
-  def GetLicenseInfo(): scala.Boolean = js.native
-  def GetLicenseInfo(optionalAsyncSuccessFunc: js.Function1[/* result */ js.Any, scala.Unit]): scala.Boolean = js.native
-  def GetLicenseInfo(
-    optionalAsyncSuccessFunc: js.Function1[/* result */ js.Any, scala.Unit],
-    optionalAsyncFailureFunc: js.Function2[/* errorCode */ scala.Double, /* errorString */ java.lang.String, scala.Unit]
-  ): scala.Boolean = js.native
+  def GetLicenseInfo(): Anon_Detail = js.native
   /**
     * Returns the index of the selected image.
     * @method WebTwain#GetSelectedImageIndex
@@ -1667,32 +1678,6 @@ trait WebTwain extends js.Object {
     indices: js.Array[scala.Double],
     enumImageType: EnumDWT_ImageType,
     dataFormat: EnumDWT_UploadDataFormat,
-    asyncSuccessFunc: js.Function1[/* httppostresponsestring */ java.lang.String, scala.Unit],
-    asyncFailureFunc: js.Function3[
-      /* errorCode */ scala.Double, 
-      /* errorString */ java.lang.String, 
-      /* httppostresponsestring */ java.lang.String, 
-      scala.Unit
-    ]
-  ): scala.Boolean = js.native
-  /**
-    * Uploads the images specified by the indices to the HTTP server.
-    * @method WebTwain#HTTPUpload
-    * @param {string} url the url where the images are sent in a POST request.
-    * @param {Array} indices indices specifies which images are to be uploaded.
-    * @param {EnumDWT_ImageType} enumImageType the image format in which the images are to be uploaded.
-    * @param {EnumDWT_UploadDataFormat} dataFormat whether to upload the images as binary or a base64-based string.
-    * @param {string} fileName the file name
-    * @param {function} asyncSuccessFunc the function to call when the upload succeeds. Please refer to the function prototype OnSuccess.
-    * @param {function} asyncFailureFunc the function to call when the upload fails. Please refer to the function prototype OnFailure.
-    * @return {boolean}
-    */
-  def HTTPUpload(
-    url: java.lang.String,
-    indices: js.Array[scala.Double],
-    enumImageType: EnumDWT_ImageType,
-    dataFormat: EnumDWT_UploadDataFormat,
-    fileName: java.lang.String,
     asyncSuccessFunc: js.Function1[/* httppostresponsestring */ java.lang.String, scala.Unit],
     asyncFailureFunc: js.Function3[
       /* errorCode */ scala.Double, 
@@ -2224,7 +2209,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def MoveImage(sSourceImageIndex: scala.Double, sTargetImageIndex: scala.Double): scala.Boolean = js.native
-  /*ignored
+  /*ignored 
     OnRefreshUI
     */
   /**
@@ -2723,7 +2708,7 @@ trait WebTwain extends js.Object {
     * @param {string} InitialDir The initial directory. The algorithm for selecting the initial directory varies on different platforms.
     * @param {boolean} AllowMultiSelect True -- allows users to select more than one file, False -- only allows to select one file.
     * @param {boolean} OverwritePrompt True -- If a file already exists with the same name, the old file will be simply overwritten, False -- not allows to save and overwrite a same name file.
-    * @param {number} Flags If this parameter equals 0, the program will be initiated with the default flags, otherwise initiated with the cumstom value and parameters "AllowMultiSelect" and "OverwritePrompt" will be useless.
+    * @param {number} Flags If this parameter equals 0, the program will be initiated with the default flags, otherwise initiated with the cumstom value and paramters "AllowMultiSelect" and "OverwritePrompt" will be useless.
     * @return {boolean}
     */
   def ShowFileDialog(
@@ -2742,9 +2727,6 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def ShowImageEditor(): scala.Boolean = js.native
-  def ShowImageEditor(divID: java.lang.String): scala.Boolean = js.native
-  def ShowImageEditor(divID: java.lang.String, divWidth: scala.Double): scala.Boolean = js.native
-  def ShowImageEditor(divID: java.lang.String, divWidth: scala.Double, divHeight: scala.Double): scala.Boolean = js.native
   /**
     * [Deprecated.] Shows the GUI of Image Editor with custom settings.
     * @method WebTwain#ShowImageEditorEx
@@ -2756,7 +2738,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def ShowImageEditorEx(x: scala.Double, y: scala.Double, cx: scala.Double, cy: scala.Double, nCmdShow: scala.Double): scala.Boolean = js.native
-  /*ingored
+  /*ingored    
     SourceNameItems
     */
   /**

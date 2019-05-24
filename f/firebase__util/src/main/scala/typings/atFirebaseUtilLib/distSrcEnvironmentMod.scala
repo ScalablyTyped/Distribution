@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcEnvironmentMod extends js.Object {
   def getUA(): java.lang.String = js.native
+  def isBrowser(): scala.Boolean = js.native
   def isMobileCordova(): scala.Boolean = js.native
+  def isNode(): scala.Boolean = js.native
   def isNodeSdk(): scala.Boolean = js.native
   def isReactNative(): scala.Boolean = js.native
 }

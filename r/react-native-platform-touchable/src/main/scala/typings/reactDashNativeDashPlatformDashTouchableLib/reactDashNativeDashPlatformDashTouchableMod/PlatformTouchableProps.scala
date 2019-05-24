@@ -11,7 +11,7 @@ trait PlatformTouchableProps
   var activeOpacity: js.UndefOr[scala.Double] = js.undefined
   // TouchableNativeFeedback (default Android)
   var background: js.UndefOr[reactDashNativeLib.reactDashNativeMod.BackgroundPropType] = js.undefined
-  var foreground: js.UndefOr[scala.Boolean] = js.undefined
+  var foreground: js.UndefOr[reactDashNativeLib.reactDashNativeMod.BackgroundPropType] = js.undefined
   var onHideUnderlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onShowUnderlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   // TouchableHighlight
@@ -37,7 +37,7 @@ object PlatformTouchableProps {
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    foreground: js.UndefOr[scala.Boolean] = js.undefined,
+    foreground: reactDashNativeLib.reactDashNativeMod.BackgroundPropType = null,
     hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
     hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
@@ -75,7 +75,7 @@ object PlatformTouchableProps {
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
-    if (!js.isUndefined(foreground)) __obj.updateDynamic("foreground")(foreground)
+    if (foreground != null) __obj.updateDynamic("foreground")(foreground)
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

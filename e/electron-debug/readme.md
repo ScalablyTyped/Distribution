@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-debug
 
-Typings are for version 2.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Adds useful debug features to your Electron app

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-utilities
 
-Typings are for version 1.2.1
+Typings are for version 1.3.0
 
 ## Library description:
 Utilities for working with GraphQL ASTs

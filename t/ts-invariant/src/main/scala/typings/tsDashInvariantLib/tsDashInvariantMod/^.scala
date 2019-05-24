@@ -8,9 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("ts-invariant", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var process: nodeLib.NodeJSNs.Process = js.native
   def default(condition: js.Any): scala.Unit = js.native
   def default(condition: js.Any, message: java.lang.String): scala.Unit = js.native
+  def default(condition: js.Any, message: scala.Double): scala.Unit = js.native
   def invariant(condition: js.Any): scala.Unit = js.native
   def invariant(condition: js.Any, message: java.lang.String): scala.Unit = js.native
+  def invariant(condition: js.Any, message: scala.Double): scala.Unit = js.native
 }
 

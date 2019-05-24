@@ -108,9 +108,7 @@ trait FormHelperTextProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[FormHelperTextClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapFormHelperTextClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[FormHelperTextProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -382,7 +380,7 @@ object FormHelperTextProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[FormHelperTextClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapFormHelperTextClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[FormHelperTextProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

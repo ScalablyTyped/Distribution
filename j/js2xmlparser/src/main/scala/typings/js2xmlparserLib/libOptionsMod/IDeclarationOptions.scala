@@ -7,26 +7,25 @@ import scala.scalajs.js.annotation._
 
 trait IDeclarationOptions extends js.Object {
   /**
-    * The XML encoding to be included in the declaration. If defined, this
-    * value must be a valid encoding. If left undefined, no encoding is
-    * included.
+    * The encoding attribute to be included in the declaration. If defined,
+    * this value must be a valid encoding. By default, no encoding attribute
+    * is included.
     */
   var encoding: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `include` is true, an XML declaration is included in the generated
-    * XML. If left undefined, the default value is `true`.
+    * Whether to include a declaration in the generated XML. By default,
+    * one is included.
     */
   var include: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The XML standalone attribute to be included. If defined, this value must
-    * be `"yes"` or `"no"`. If left undefined, no standalone attribute is
-    * included.
+    * The value of the standalone attribute to be included in the declaration.
+    * If defined, this value must be "yes" or "no". By default, no standalone
+    * attribute is included.
     */
   var standalone: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The XML version to be included in the declaration. If defined, this
-    * value must be a valid XML version number. If left undefined, the default
-    * version is `"1.0"`.
+    * value must be a valid XML version number. Defaults to "1.0".
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
 }

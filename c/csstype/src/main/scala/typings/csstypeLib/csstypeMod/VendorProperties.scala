@@ -76,7 +76,6 @@ object VendorProperties {
     MozUserSelect: UserSelectProperty = null,
     MozWindowDragging: MozWindowDraggingProperty = null,
     MozWindowShadow: MozWindowShadowProperty = null,
-    OBorderImage: BorderImageProperty = null,
     OObjectFit: ObjectFitProperty = null,
     OObjectPosition: ObjectPositionProperty[TLength] = null,
     OTabSize: TabSizeProperty[TLength] = null,
@@ -316,7 +315,6 @@ object VendorProperties {
     if (MozUserSelect != null) __obj.updateDynamic("MozUserSelect")(MozUserSelect)
     if (MozWindowDragging != null) __obj.updateDynamic("MozWindowDragging")(MozWindowDragging)
     if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow)
-    if (OBorderImage != null) __obj.updateDynamic("OBorderImage")(OBorderImage.asInstanceOf[js.Any])
     if (OObjectFit != null) __obj.updateDynamic("OObjectFit")(OObjectFit)
     if (OObjectPosition != null) __obj.updateDynamic("OObjectPosition")(OObjectPosition.asInstanceOf[js.Any])
     if (OTabSize != null) __obj.updateDynamic("OTabSize")(OTabSize.asInstanceOf[js.Any])

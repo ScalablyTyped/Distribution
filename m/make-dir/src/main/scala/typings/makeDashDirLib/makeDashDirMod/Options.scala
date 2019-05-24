@@ -7,18 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-  	 * Use a custom `fs` implementation. For example [`graceful-fs`](https://github.com/isaacs/node-graceful-fs).
-  	 *
-  	 * Using a custom `fs` implementation will block the use of the native `recursive` option if `fs.mkdir` or `fs.mkdirSync` is not the native function.
-  	 *
-  	 * @default require('fs')
-  	 */
+  		Use a custom `fs` implementation. For example [`graceful-fs`](https://github.com/isaacs/node-graceful-fs).
+  		Using a custom `fs` implementation will block the use of the native `recursive` option if `fs.mkdir` or `fs.mkdirSync` is not the native function.
+  		@default require('fs')
+  		*/
   val fs: js.UndefOr[makeDashDirLib.Anon_AccessAccessSync] = js.undefined
   /**
-  	 * Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
-  	 *
-  	 * @default 0o777 & (~process.umask())
-  	 */
+  		Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
+  		@default 0o777 & (~process.umask())
+  		*/
   val mode: js.UndefOr[scala.Double] = js.undefined
 }
 

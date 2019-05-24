@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("file-type", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  val default_Original: fileDashTypeLib.Anon_Buffer = js.native
   /**
   	The minimum amount of bytes needed to detect a file type. Currently, it's 4100 bytes, but it can change, so don't hard-code it.
   	*/
@@ -18,7 +15,7 @@ object ^ extends js.Object {
   /**
   	Detect the file type of a `Buffer`/`Uint8Array`/`ArrayBuffer`. The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
   	@param buffer - It only needs the first `.minimumBytes` bytes. The exception is detection of `docx`, `pptx`, and `xlsx` which potentially requires reading the whole file.
-  	@returns An object with the detected file type and MIME type or `null` when there was no match.
+  	@returns The detected file type and MIME type or `undefined` when there was no match.
   	@example
   	```
   	import readChunk = require('read-chunk');
@@ -39,37 +36,9 @@ object ^ extends js.Object {
   	});
   	```
   	*/
-  def apply(buffer: nodeLib.Buffer): FileTypeResult | scala.Null = js.native
-  def apply(buffer: stdLib.ArrayBuffer): FileTypeResult | scala.Null = js.native
-  def apply(buffer: stdLib.Uint8Array): FileTypeResult | scala.Null = js.native
-  /**
-  	Detect the file type of a `Buffer`/`Uint8Array`/`ArrayBuffer`. The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
-  	@param buffer - It only needs the first `.minimumBytes` bytes. The exception is detection of `docx`, `pptx`, and `xlsx` which potentially requires reading the whole file.
-  	@returns An object with the detected file type and MIME type or `null` when there was no match.
-  	@example
-  	```
-  	import readChunk = require('read-chunk');
-  	import fileType = require('file-type');
-  	const buffer = readChunk.sync('unicorn.png', 0, fileType.minimumBytes);
-  	fileType(buffer);
-  	//=> {ext: 'png', mime: 'image/png'}
-  	// Or from a remote location:
-  	import * as http from 'http';
-  	const url = 'https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif';
-  	http.get(url, response => {
-  		response.on('readable', () => {
-  			const chunk = response.read(fileType.minimumBytes);
-  			response.destroy();
-  			console.log(fileType(chunk));
-  			//=> {ext: 'gif', mime: 'image/gif'}
-  		});
-  	});
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default(buffer: nodeLib.Buffer): FileTypeResult | scala.Null = js.native
-  def default(buffer: stdLib.ArrayBuffer): FileTypeResult | scala.Null = js.native
-  def default(buffer: stdLib.Uint8Array): FileTypeResult | scala.Null = js.native
+  def apply(buffer: nodeLib.Buffer): js.UndefOr[FileTypeResult] = js.native
+  def apply(buffer: stdLib.ArrayBuffer): js.UndefOr[FileTypeResult] = js.native
+  def apply(buffer: stdLib.Uint8Array): js.UndefOr[FileTypeResult] = js.native
   /**
   	Detect the file type of a readable stream.
   	@param readableStream - A readable stream containing a file to examine, see: [`stream.Readable`](https://nodejs.org/api/stream.html#stream_class_stream_readable).

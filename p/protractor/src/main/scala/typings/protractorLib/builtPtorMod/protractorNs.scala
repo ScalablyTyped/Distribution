@@ -9,30 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object protractorNs extends js.Object {
   @js.native
-  class Actions protected ()
-    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.Actions {
-    // region Constructors
-    def this(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
-  }
-  
-  @js.native
   // region Constructors
   /**
     * @constructor
     */
   class Builder ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.Builder
-  
-  @js.native
-  class Command protected ()
-    extends seleniumDashWebdriverLib.libCommandMod.Command {
-    // region Constructors
-    /**
-      * @param {!CommandName} name The name of this command.
-      * @constructor
-      */
-    def this(name: java.lang.String) = this()
-  }
   
   @js.native
   // region Constructors

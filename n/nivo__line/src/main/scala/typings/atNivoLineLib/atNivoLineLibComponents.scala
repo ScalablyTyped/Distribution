@@ -12,9 +12,19 @@ object atNivoLineLibComponents {
   ] = js.constructorOf[atNivoLineLib.atNivoLineMod.Line].asInstanceOf[reactLib.reactMod.ComponentType[
   atNivoLineLib.atNivoLineMod.LineSvgProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
   @scala.inline
+  def LineCanvas: reactLib.reactMod.ComponentType[
+    atNivoLineLib.atNivoLineMod.LineCanvasProps with atNivoCoreLib.atNivoCoreMod.Dimensions
+  ] = js.constructorOf[atNivoLineLib.atNivoLineMod.LineCanvas].asInstanceOf[reactLib.reactMod.ComponentType[
+  atNivoLineLib.atNivoLineMod.LineCanvasProps with atNivoCoreLib.atNivoCoreMod.Dimensions]]
+  @scala.inline
   def ResponsiveLine: reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineSvgProps] = js.constructorOf[atNivoLineLib.atNivoLineMod.ResponsiveLine].asInstanceOf[reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineSvgProps]]
   @scala.inline
   def ResponsiveLineProps: atNivoLineLib.atNivoLineMod.LineSvgProps.type = atNivoLineLib.atNivoLineMod.LineSvgProps
   type ResponsiveLineProps = atNivoLineLib.atNivoLineMod.LineSvgProps
+  @scala.inline
+  def ResponsiveLineCanvas: reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineCanvasProps] = js.constructorOf[atNivoLineLib.atNivoLineMod.ResponsiveLineCanvas].asInstanceOf[reactLib.reactMod.ComponentType[atNivoLineLib.atNivoLineMod.LineCanvasProps]]
+  @scala.inline
+  def ResponsiveLineCanvasProps: atNivoLineLib.atNivoLineMod.LineCanvasProps.type = atNivoLineLib.atNivoLineMod.LineCanvasProps
+  type ResponsiveLineCanvasProps = atNivoLineLib.atNivoLineMod.LineCanvasProps
 }
 

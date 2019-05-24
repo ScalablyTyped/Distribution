@@ -48,6 +48,7 @@ package object clientsBudgetsMod {
   type Notifications = js.Array[Notification]
   type NullableBoolean = scala.Boolean
   type NumericValue = java.lang.String
+  type PlannedBudgetLimits = org.scalablytyped.runtime.StringDictionary[Spend]
   type SubscriberAddress = java.lang.String
   type Subscribers = js.Array[Subscriber]
   /* Rewritten from type alias, can be one of: 

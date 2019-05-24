@@ -34,6 +34,29 @@ trait WorkLink
     ]
   ): awsDashSdkLib.libRequestMod.Request[AssociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Associates a website authorization provider with a specified fleet. This is used to authorize users against associated websites in the company network.
+    */
+  def associateWebsiteAuthorizationProvider(): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteAuthorizationProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateWebsiteAuthorizationProvider(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateWebsiteAuthorizationProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteAuthorizationProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Associates a website authorization provider with a specified fleet. This is used to authorize users against associated websites in the company network.
+    */
+  def associateWebsiteAuthorizationProvider(params: AssociateWebsiteAuthorizationProviderRequest): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteAuthorizationProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def associateWebsiteAuthorizationProvider(
+    params: AssociateWebsiteAuthorizationProviderRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssociateWebsiteAuthorizationProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteAuthorizationProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Imports the root certificate of a certificate authority (CA) used to obtain TLS certificates used by associated websites within the company network.
     */
   def associateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[AssociateWebsiteCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -310,6 +333,41 @@ trait WorkLink
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateDomainResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Disassociates a website authorization provider from a specified fleet. After the disassociation, users can't load any associated websites that require this authorization provider.
+    */
+  def disassociateWebsiteAuthorizationProvider(): awsDashSdkLib.libRequestMod.Request[
+    DisassociateWebsiteAuthorizationProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def disassociateWebsiteAuthorizationProvider(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisassociateWebsiteAuthorizationProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    DisassociateWebsiteAuthorizationProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Disassociates a website authorization provider from a specified fleet. After the disassociation, users can't load any associated websites that require this authorization provider.
+    */
+  def disassociateWebsiteAuthorizationProvider(params: DisassociateWebsiteAuthorizationProviderRequest): awsDashSdkLib.libRequestMod.Request[
+    DisassociateWebsiteAuthorizationProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def disassociateWebsiteAuthorizationProvider(
+    params: DisassociateWebsiteAuthorizationProviderRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DisassociateWebsiteAuthorizationProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    DisassociateWebsiteAuthorizationProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Removes a certificate authority (CA).
     */
   def disassociateWebsiteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[
@@ -413,6 +471,29 @@ trait WorkLink
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of website authorization providers associated with a specified fleet.
+    */
+  def listWebsiteAuthorizationProviders(): awsDashSdkLib.libRequestMod.Request[ListWebsiteAuthorizationProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listWebsiteAuthorizationProviders(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListWebsiteAuthorizationProvidersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListWebsiteAuthorizationProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieves a list of website authorization providers associated with a specified fleet.
+    */
+  def listWebsiteAuthorizationProviders(params: ListWebsiteAuthorizationProvidersRequest): awsDashSdkLib.libRequestMod.Request[ListWebsiteAuthorizationProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listWebsiteAuthorizationProviders(
+    params: ListWebsiteAuthorizationProvidersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListWebsiteAuthorizationProvidersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListWebsiteAuthorizationProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieves a list of certificate authorities added for the current account and Region.
     */

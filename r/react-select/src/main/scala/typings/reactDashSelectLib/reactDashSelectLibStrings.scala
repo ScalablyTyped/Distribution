@@ -71,6 +71,9 @@ object reactDashSelectLibStrings {
     extends reactDashSelectLib.libTypesMod.InputActionTypes
   
   @js.native
+  sealed trait inputValue extends js.Object
+  
+  @js.native
   sealed trait last
     extends reactDashSelectLib.libTypesMod.FocusDirection
   
@@ -86,7 +89,22 @@ object reactDashSelectLibStrings {
     extends reactDashSelectLib.libTypesMod.InputActionTypes
   
   @js.native
+  sealed trait menuIsOpen extends js.Object
+  
+  @js.native
   sealed trait next extends js.Object
+  
+  @js.native
+  sealed trait onChange extends js.Object
+  
+  @js.native
+  sealed trait onInputChange extends js.Object
+  
+  @js.native
+  sealed trait onMenuClose extends js.Object
+  
+  @js.native
+  sealed trait onMenuOpen extends js.Object
   
   @js.native
   sealed trait option extends js.Object
@@ -169,6 +187,8 @@ object reactDashSelectLibStrings {
   @scala.inline
   def `input-change`: `input-change` = "input-change".asInstanceOf[`input-change`]
   @scala.inline
+  def inputValue: inputValue = "inputValue".asInstanceOf[inputValue]
+  @scala.inline
   def last: last = "last".asInstanceOf[last]
   @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
@@ -177,7 +197,17 @@ object reactDashSelectLibStrings {
   @scala.inline
   def `menu-close`: `menu-close` = "menu-close".asInstanceOf[`menu-close`]
   @scala.inline
+  def menuIsOpen: menuIsOpen = "menuIsOpen".asInstanceOf[menuIsOpen]
+  @scala.inline
   def next: next = "next".asInstanceOf[next]
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
+  def onInputChange: onInputChange = "onInputChange".asInstanceOf[onInputChange]
+  @scala.inline
+  def onMenuClose: onMenuClose = "onMenuClose".asInstanceOf[onMenuClose]
+  @scala.inline
+  def onMenuOpen: onMenuOpen = "onMenuOpen".asInstanceOf[onMenuOpen]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   @scala.inline

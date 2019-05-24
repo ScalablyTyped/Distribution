@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "p-memoize"
-version := "3.1.0-2db4bc"
+version := "3.1.0-f1d4b0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "mem" % "4.3.0-a52c13",
+  "org.scalablytyped" %%% "mem" % "5.0.0-2adcf1",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

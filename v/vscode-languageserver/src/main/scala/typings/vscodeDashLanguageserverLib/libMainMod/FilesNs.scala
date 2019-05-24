@@ -27,6 +27,22 @@ object FilesNs extends js.Object {
     /* tracer */ js.UndefOr[js.Function1[/* message */ java.lang.String, scala.Unit]], 
     js.UndefOr[java.lang.String]
   ] = js.native
+  var resolveModule: js.Function2[
+    /* workspaceRoot */ java.lang.String, 
+    /* moduleName */ java.lang.String, 
+    vscodeDashLanguageserverLib.Thenable[js.Any]
+  ] = js.native
+  var resolveModule2: js.Function4[
+    /* workspaceRoot */ java.lang.String, 
+    /* moduleName */ java.lang.String, 
+    /* nodePath */ java.lang.String, 
+    /* tracer */ js.Function2[
+      /* message */ java.lang.String, 
+      /* verbose */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ], 
+    vscodeDashLanguageserverLib.Thenable[js.Any]
+  ] = js.native
   var resolveModulePath: js.Function4[
     /* workspaceRoot */ java.lang.String, 
     /* moduleName */ java.lang.String, 

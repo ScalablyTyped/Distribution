@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSGlobal("dynamsoft.BarcodeReader")
 @js.native
 /**
-  * Constructs a new barcode reader
+  * Constructs a new KPainter
   */
 class BarcodeReader () extends js.Object {
   def this(dbrKey: java.lang.String) = this()
   // appendTplStringToRuntimeSettings(b, d):
-  /**
+  /** 
     * Read barcode from the source image.
     * @method BarcodeReader#decode
     * @param {string} source specifies the image to read on
@@ -44,7 +44,8 @@ class BarcodeReader () extends js.Object {
     // ie6-9 does not support '.catch(function(ex){...})'
     if(ex){alert(ex.message||ex);}
     });
-    ```    
+    ```
+    
     */
   def decode(source: java.lang.String): js.Promise[_] = js.native
   /**

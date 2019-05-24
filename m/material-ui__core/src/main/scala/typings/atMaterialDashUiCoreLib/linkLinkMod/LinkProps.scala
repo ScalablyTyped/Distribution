@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement> & @material-ui/core.@material-ui/core/Typography.TypographyProps, @material-ui/core.@material-ui/core/Link/Link.LinkClassKey, 'component'> */
 trait LinkProps extends js.Object {
-  var TypographyClasses: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
-    ]
-  ] = js.undefined
+  var TypographyClasses: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapTypographyClassKey] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var align: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment] = js.undefined
@@ -115,9 +111,7 @@ trait LinkProps extends js.Object {
   var block: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[LinkClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapLinkClassKey] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[LinkProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -130,13 +124,7 @@ trait LinkProps extends js.Object {
   var download: js.UndefOr[js.Any] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined
   var gutterBottom: js.UndefOr[scala.Boolean] = js.undefined
-  var headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.LinkProps with js.Any
-  ] = js.undefined
+  var headlineMapping: js.UndefOr[atMaterialDashUiCoreLib.typeinStylestring] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
   var hrefLang: js.UndefOr[java.lang.String] = js.undefined
@@ -350,9 +338,7 @@ trait LinkProps extends js.Object {
 object LinkProps {
   @scala.inline
   def apply(
-    TypographyClasses: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
-    ] = null,
+    TypographyClasses: atMaterialDashUiCoreLib.PartialClassNameMapTypographyClassKey = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     align: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment = null,
@@ -410,7 +396,7 @@ object LinkProps {
     block: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[LinkClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapLinkClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
     component: reactLib.reactMod.ReactType[LinkProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -423,9 +409,7 @@ object LinkProps {
     download: js.Any = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     gutterBottom: js.UndefOr[scala.Boolean] = js.undefined,
-    headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.LinkProps with js.Any = null,
+    headlineMapping: atMaterialDashUiCoreLib.typeinStylestring = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     href: java.lang.String = null,
     hrefLang: java.lang.String = null,

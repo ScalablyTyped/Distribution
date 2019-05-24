@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLState protected ()
   extends threeLib.srcRenderersWebglWebGLStateMod.WebGLState {
-  def this(gl: js.Any, extensions: js.Any, paramThreeToGL: js.Function) = this()
+  def this(gl: stdLib.WebGLRenderingContext, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, utils: js.Any, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities) = this()
 }
 

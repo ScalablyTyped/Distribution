@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aphrodite"
-version := "0.5.0-dt-20190322Z-f16bbd"
+version := "0.5.0-dt-20190322Z-596404"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

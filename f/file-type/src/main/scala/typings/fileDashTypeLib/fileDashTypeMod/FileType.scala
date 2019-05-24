@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
   - fileDashTypeLib.fileDashTypeLibStrings.webp
   - fileDashTypeLib.fileDashTypeLibStrings.flif
   - fileDashTypeLib.fileDashTypeLibStrings.cr2
+  - fileDashTypeLib.fileDashTypeLibStrings.orf
+  - fileDashTypeLib.fileDashTypeLibStrings.arw
+  - fileDashTypeLib.fileDashTypeLibStrings.dng
+  - fileDashTypeLib.fileDashTypeLibStrings.nef
   - fileDashTypeLib.fileDashTypeLibStrings.tif
   - fileDashTypeLib.fileDashTypeLibStrings.bmp
   - fileDashTypeLib.fileDashTypeLibStrings.jxr
@@ -24,7 +28,6 @@ import scala.scalajs.js.annotation._
   - fileDashTypeLib.fileDashTypeLibStrings.`7z`
   - fileDashTypeLib.fileDashTypeLibStrings.dmg
   - fileDashTypeLib.fileDashTypeLibStrings.mp4
-  - fileDashTypeLib.fileDashTypeLibStrings.m4v
   - fileDashTypeLib.fileDashTypeLibStrings.mid
   - fileDashTypeLib.fileDashTypeLibStrings.mkv
   - fileDashTypeLib.fileDashTypeLibStrings.webm
@@ -76,6 +79,7 @@ import scala.scalajs.js.annotation._
   - fileDashTypeLib.fileDashTypeLibStrings.pptx
   - fileDashTypeLib.fileDashTypeLibStrings.xlsx
   - fileDashTypeLib.fileDashTypeLibStrings.`3gp`
+  - fileDashTypeLib.fileDashTypeLibStrings.`3g2`
   - fileDashTypeLib.fileDashTypeLibStrings.jp2
   - fileDashTypeLib.fileDashTypeLibStrings.jpm
   - fileDashTypeLib.fileDashTypeLibStrings.jpx
@@ -97,6 +101,18 @@ import scala.scalajs.js.annotation._
   - fileDashTypeLib.fileDashTypeLibStrings.ics
   - fileDashTypeLib.fileDashTypeLibStrings.glb
   - fileDashTypeLib.fileDashTypeLibStrings.pcap
+  - fileDashTypeLib.fileDashTypeLibStrings.dsf
+  - fileDashTypeLib.fileDashTypeLibStrings.lnk
+  - fileDashTypeLib.fileDashTypeLibStrings.alias
+  - fileDashTypeLib.fileDashTypeLibStrings.voc
+  - fileDashTypeLib.fileDashTypeLibStrings.ac3
+  - fileDashTypeLib.fileDashTypeLibStrings.m4b
+  - fileDashTypeLib.fileDashTypeLibStrings.m4p
+  - fileDashTypeLib.fileDashTypeLibStrings.m4v
+  - fileDashTypeLib.fileDashTypeLibStrings.f4a
+  - fileDashTypeLib.fileDashTypeLibStrings.f4b
+  - fileDashTypeLib.fileDashTypeLibStrings.f4p
+  - fileDashTypeLib.fileDashTypeLibStrings.f4v
 */
 trait FileType extends js.Object
 

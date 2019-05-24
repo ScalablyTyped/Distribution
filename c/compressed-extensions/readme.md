@@ -1,7 +1,7 @@
 
 # Scala.js typings for compressed-extensions
 
-Typings are for version 2.0.0
+Typings are for version 2.1.0
 
 ## Library description:
 List of compressed file extensions

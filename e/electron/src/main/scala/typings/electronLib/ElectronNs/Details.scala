@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Details extends js.Object {
   /**
-    * The domain of the cookie; this will be normalized with a preceding dot so that
-    * it's also valid for subdomains. Empty by default if omitted.
+    * The domain of the cookie. Empty by default if omitted.
     */
   var domain: js.UndefOr[java.lang.String] = js.undefined
   /**

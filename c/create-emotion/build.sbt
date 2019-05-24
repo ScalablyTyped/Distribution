@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "create-emotion"
-version := "9.2.12-500e14"
+version := "9.2.12-3726ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -15,6 +15,7 @@ class Light ()
   def this(hex: scala.Double, intensity: scala.Double) = this()
   var color: threeLib.srcMathColorMod.Color = js.native
   var intensity: scala.Double = js.native
+  var isLight: threeLib.threeLibNumbers.`true` = js.native
   var shadow: threeLib.srcLightsLightShadowMod.LightShadow = js.native
   /**
     * @deprecated Use shadow.bias instead.

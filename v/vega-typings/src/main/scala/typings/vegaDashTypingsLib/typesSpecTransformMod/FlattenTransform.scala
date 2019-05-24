@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FlattenTransform extends _Transforms {
-  var as: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var as: js.UndefOr[
+    (js.Array[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+  ] = js.undefined
   var fields: (js.Array[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.flatten
 }
@@ -16,11 +18,11 @@ object FlattenTransform {
   def apply(
     fields: (js.Array[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef,
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.flatten,
-    as: js.Array[java.lang.String] = null
+    as: (js.Array[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): FlattenTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
-    if (as != null) __obj.updateDynamic("as")(as)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlattenTransform]
   }
 }

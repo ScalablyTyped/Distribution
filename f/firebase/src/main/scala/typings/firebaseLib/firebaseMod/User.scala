@@ -47,8 +47,12 @@ trait User extends UserInfo {
   def getIdTokenResult(): js.Promise[firebaseLib.firebaseMod.authNs.IdTokenResult] = js.native
   def getIdTokenResult(forceRefresh: scala.Boolean): js.Promise[firebaseLib.firebaseMod.authNs.IdTokenResult] = js.native
   /**
+    * @deprecated
     * Links the user account with the given credentials and returns any available
     * additional user information, such as user name.
+    *
+    * This method is deprecated. Use
+    * {@link firebase.User.linkWithCredential} instead.
     *
     * <h4>Error Codes</h4>
     * <dl>
@@ -80,7 +84,7 @@ trait User extends UserInfo {
     *     ({@link firebase.auth.AuthCredential}) fields are also provided.
     *     You have to link the credential to the existing user with that email if
     *     you wish to continue signing in with that credential. To do so, call
-    *     {@link firebase.auth.Auth.fetchProvidersForEmail}, sign in to
+    *     {@link firebase.auth.Auth.fetchSignInMethodsForEmail}, sign in to
     *     <code>error.email</code> via one of the providers returned and then
     *     {@link firebase.User.linkWithCredential} the original credential to that
     *     newly signed in user.</dd>
@@ -111,9 +115,6 @@ trait User extends UserInfo {
   /**
     * Links the user account with the given credentials.
     *
-    * This method is deprecated. Use
-    * {@link firebase.User.linkAndRetrieveDataWithCredential} instead.
-    *
     * <h4>Error Codes</h4>
     * <dl>
     * <dt>auth/provider-already-linked</dt>
@@ -144,7 +145,7 @@ trait User extends UserInfo {
     *     ({@link firebase.auth.AuthCredential}) fields are also provided.
     *     You have to link the credential to the existing user with that email if
     *     you wish to continue signing in with that credential. To do so, call
-    *     {@link firebase.auth.Auth.fetchProvidersForEmail}, sign in to
+    *     {@link firebase.auth.Auth.fetchSignInMethodsForEmail}, sign in to
     *     <code>error.email</code> via one of the providers returned and then
     *     {@link firebase.User.linkWithCredential} the original credential to that
     *     newly signed in user.</dd>
@@ -171,7 +172,7 @@ trait User extends UserInfo {
     *
     * @param credential The auth credential.
     */
-  def linkWithCredential(credential: firebaseLib.firebaseMod.authNs.AuthCredential): js.Promise[User] = js.native
+  def linkWithCredential(credential: firebaseLib.firebaseMod.authNs.AuthCredential): js.Promise[firebaseLib.firebaseMod.authNs.UserCredential] = js.native
   /**
     * Links the user account with the given phone number.
     *
@@ -251,7 +252,7 @@ trait User extends UserInfo {
     *     ({@link firebase.auth.AuthCredential}) fields are also provided.
     *     You have to link the credential to the existing user with that email if
     *     you wish to continue signing in with that credential. To do so, call
-    *     {@link firebase.auth.Auth.fetchProvidersForEmail}, sign in to
+    *     {@link firebase.auth.Auth.fetchSignInMethodsForEmail}, sign in to
     *     <code>error.email</code> via one of the providers returned and then
     *     {@link firebase.User.linkWithCredential} the original credential to that
     *     newly signed in user.</dd>
@@ -335,10 +336,14 @@ trait User extends UserInfo {
     */
   def linkWithRedirect(provider: firebaseLib.firebaseMod.authNs.AuthProvider): js.Promise[scala.Unit] = js.native
   /**
+    * @deprecated
     * Re-authenticates a user using a fresh credential, and returns any available
     * additional user information, such as user name. Use before operations
     * such as {@link firebase.User.updatePassword} that require tokens from recent
     * sign-in attempts.
+    *
+    * This method is deprecated. Use
+    * {@link firebase.User.reauthenticateWithCredential} instead.
     *
     * <h4>Error Codes</h4>
     * <dl>
@@ -377,9 +382,6 @@ trait User extends UserInfo {
     * such as {@link firebase.User.updatePassword} that require tokens from recent
     * sign-in attempts.
     *
-    * This method is deprecated. Use
-    * {@link firebase.User.reauthenticateAndRetrieveDataWithCredential} instead.
-    *
     * <h4>Error Codes</h4>
     * <dl>
     * <dt>auth/user-mismatch</dt>
@@ -411,7 +413,7 @@ trait User extends UserInfo {
     *
     * @param credential
     */
-  def reauthenticateWithCredential(credential: firebaseLib.firebaseMod.authNs.AuthCredential): js.Promise[scala.Unit] = js.native
+  def reauthenticateWithCredential(credential: firebaseLib.firebaseMod.authNs.AuthCredential): js.Promise[firebaseLib.firebaseMod.authNs.UserCredential] = js.native
   /**
     * Re-authenticates a user using a fresh credential. Use before operations
     * such as {@link firebase.User.updatePassword} that require tokens from recent

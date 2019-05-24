@@ -27,7 +27,7 @@ trait VNodeProperties
       /* projectionOptions */ ProjectionOptions, 
       /* vnodeSelector */ java.lang.String, 
       /* properties */ this.type, 
-      /* children */ js.Array[VNode], 
+      /* children */ js.UndefOr[js.Array[VNode]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -53,7 +53,7 @@ trait VNodeProperties
       /* projectionOptions */ ProjectionOptions, 
       /* vnodeSelector */ java.lang.String, 
       /* properties */ this.type, 
-      /* children */ js.Array[VNode], 
+      /* children */ js.UndefOr[js.Array[VNode]], 
       scala.Unit
     ]
   ] = js.undefined
@@ -205,9 +205,9 @@ object VNodeProperties {
   /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     accessKey: java.lang.String = null,
     action: java.lang.String = null,
-    afterCreate: (/* element */ stdLib.Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ java.lang.String, VNodeProperties, /* children */ js.Array[VNode]) => scala.Unit = null,
+    afterCreate: (/* element */ stdLib.Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ java.lang.String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => scala.Unit = null,
     afterRemoved: /* element */ stdLib.Element => scala.Unit = null,
-    afterUpdate: (/* element */ stdLib.Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ java.lang.String, VNodeProperties, /* children */ js.Array[VNode]) => scala.Unit = null,
+    afterUpdate: (/* element */ stdLib.Element, /* projectionOptions */ ProjectionOptions, /* vnodeSelector */ java.lang.String, VNodeProperties, /* children */ js.UndefOr[js.Array[VNode]]) => scala.Unit = null,
     alt: java.lang.String = null,
     autocomplete: java.lang.String = null,
     bind: js.Object = null,

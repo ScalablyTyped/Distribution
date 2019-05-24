@@ -15,9 +15,9 @@ class TextureRegion () extends js.Object {
   val originalWidth: scala.Double = js.native
   val pixiOffsetY: scala.Double = js.native
   val rotate: scala.Boolean = js.native
-  var size: pixiDotJsLib.PIXINs.Rectangle = js.native
+  var size: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any = js.native
   val spineOffsetY: scala.Double = js.native
-  var texture: pixiDotJsLib.PIXINs.Texture = js.native
+  var texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any = js.native
   val u: scala.Double = js.native
   val u2: scala.Double = js.native
   val v: scala.Double = js.native

@@ -15,6 +15,7 @@ trait Scope extends js.Object {
   var scales: js.UndefOr[js.Array[vegaDashTypingsLib.typesSpecScaleMod.Scale]] = js.undefined
   var signals: js.UndefOr[js.Array[vegaDashTypingsLib.typesSpecSignalMod.Signal]] = js.undefined
   var title: js.UndefOr[java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title] = js.undefined
+  var usermeta: js.UndefOr[js.Object] = js.undefined
 }
 
 object Scope {
@@ -28,7 +29,8 @@ object Scope {
     projections: js.Array[vegaDashTypingsLib.typesSpecProjectionMod.Projection] = null,
     scales: js.Array[vegaDashTypingsLib.typesSpecScaleMod.Scale] = null,
     signals: js.Array[vegaDashTypingsLib.typesSpecSignalMod.Signal] = null,
-    title: java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title = null
+    title: java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title = null,
+    usermeta: js.Object = null
   ): Scope = {
     val __obj = js.Dynamic.literal()
     if (axes != null) __obj.updateDynamic("axes")(axes)
@@ -40,6 +42,7 @@ object Scope {
     if (scales != null) __obj.updateDynamic("scales")(scales)
     if (signals != null) __obj.updateDynamic("signals")(signals)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta)
     __obj.asInstanceOf[Scope]
   }
 }

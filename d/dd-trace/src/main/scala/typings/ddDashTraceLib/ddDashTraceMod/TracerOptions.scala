@@ -17,6 +17,10 @@ trait TracerOptions extends js.Object {
     */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Options specific for the Dogstatsd agent.
+    */
+  var dogstatsd: js.UndefOr[ddDashTraceLib.Anon_Port] = js.undefined
+  /**
     * Whether to enable the tracer.
     * @default true
     */
@@ -58,6 +62,11 @@ trait TracerOptions extends js.Object {
     */
   var port: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
+    * Whether to enable runtime metrics.
+    * @default false
+    */
+  var runtimeMetrics: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Percentage of spans to sample as a float between 0 and 1.
     * @default 1
     */
@@ -83,6 +92,7 @@ object TracerOptions {
   def apply(
     analytics: js.UndefOr[scala.Boolean] = js.undefined,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
+    dogstatsd: ddDashTraceLib.Anon_Port = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     env: java.lang.String = null,
     experimental: js.Object | scala.Boolean = null,
@@ -91,6 +101,7 @@ object TracerOptions {
     logger: ddDashTraceLib.Anon_Debug = null,
     plugins: js.UndefOr[scala.Boolean] = js.undefined,
     port: scala.Double | java.lang.String = null,
+    runtimeMetrics: js.UndefOr[scala.Boolean] = js.undefined,
     sampleRate: scala.Int | scala.Double = null,
     service: java.lang.String = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -99,6 +110,7 @@ object TracerOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(analytics)) __obj.updateDynamic("analytics")(analytics)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (dogstatsd != null) __obj.updateDynamic("dogstatsd")(dogstatsd)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (env != null) __obj.updateDynamic("env")(env)
     if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
@@ -107,6 +119,7 @@ object TracerOptions {
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(runtimeMetrics)) __obj.updateDynamic("runtimeMetrics")(runtimeMetrics)
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     if (service != null) __obj.updateDynamic("service")(service)
     if (tags != null) __obj.updateDynamic("tags")(tags)

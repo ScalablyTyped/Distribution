@@ -23,7 +23,7 @@ trait InstanceNetworkInterface extends js.Object {
     */
   var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   /**
-    * Describes the type of network interface.
+    * Describes the type of network interface. Valid values: interface | efa 
     */
   var InterfaceType: js.UndefOr[String] = js.undefined
   /**

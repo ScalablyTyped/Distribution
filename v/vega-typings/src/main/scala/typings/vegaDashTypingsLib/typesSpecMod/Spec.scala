@@ -41,6 +41,7 @@ object Spec {
     signals: js.Array[vegaDashTypingsLib.typesSpecSignalMod.Signal] = null,
     style: java.lang.String | js.Array[java.lang.String] = null,
     title: java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title = null,
+    usermeta: js.Object = null,
     width: scala.Int | scala.Double = null
   ): Spec = {
     val __obj = js.Dynamic.literal()
@@ -62,6 +63,7 @@ object Spec {
     if (signals != null) __obj.updateDynamic("signals")(signals)
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spec]
   }

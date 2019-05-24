@@ -21,7 +21,9 @@ trait TraversalMethods extends js.Object {
     * Returns a collection containing the paths that create the scope of the
     * currently selected paths. Dedupes the paths.
     */
-  def closestScope(): jscodeshiftLib.srcCollectionMod.Collection[astDashTypesLib.genNodesMod.ASTNode] = js.native
+  def closestScope(): jscodeshiftLib.srcCollectionMod.Collection[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.ASTNode */ _
+  ] = js.native
   /**
     * Find nodes of a specific type within the nodes of this collection.
     */
@@ -43,6 +45,8 @@ trait TraversalMethods extends js.Object {
     *
     * If the callback returns a falsy value, the element is skipped.
     */
-  def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): jscodeshiftLib.srcCollectionMod.Collection[astDashTypesLib.genNodesMod.VariableDeclarator] = js.native
+  def getVariableDeclarators(nameGetter: js.Function1[/* repeated */ js.Any, _]): jscodeshiftLib.srcCollectionMod.Collection[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
+  ] = js.native
 }
 

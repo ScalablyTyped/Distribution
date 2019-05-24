@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-i18next"
-version := "10.10.0-dbdb67"
+version := "10.10.0-d0d19a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "i18next" % "12.1-dt-20181126Z-5d1ce5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-43357b",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-9d1c81",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

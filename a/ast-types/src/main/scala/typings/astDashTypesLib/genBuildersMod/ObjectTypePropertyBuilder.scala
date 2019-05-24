@@ -11,12 +11,12 @@ trait ObjectTypePropertyBuilder extends js.Object {
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.FlowTypeKind,
     optional: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeProperty = js.native
   def apply(
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.FlowTypeKind,
     optional: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native
-  def from(params: astDashTypesLib.Anon_CommentsKey): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeProperty = js.native
+  def from(params: astDashTypesLib.Anon_CommentsKey): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeProperty = js.native
 }
 

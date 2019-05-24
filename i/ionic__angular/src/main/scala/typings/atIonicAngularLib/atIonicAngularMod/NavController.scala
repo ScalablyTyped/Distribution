@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NavController protected ()
   extends atIonicAngularLib.distMod.NavController {
-  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location) = this()
-  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location, router: atAngularRouterLib.atAngularRouterMod.Router) = this()
+  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location, serializer: atAngularRouterLib.atAngularRouterMod.UrlSerializer) = this()
+  def this(platform: atIonicAngularLib.distProvidersPlatformMod.Platform, location: atAngularCommonLib.atAngularCommonMod.Location, serializer: atAngularRouterLib.atAngularRouterMod.UrlSerializer, router: atAngularRouterLib.atAngularRouterMod.Router) = this()
 }
 

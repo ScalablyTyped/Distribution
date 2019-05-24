@@ -40,7 +40,7 @@ trait TableProps[T] extends js.Object {
   var onChange: js.UndefOr[
     js.Function4[
       /* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, 
-      /* filters */ stdLib.Record[java.lang.String, js.Array[java.lang.String]], 
+      /* filters */ antdLib.RecordkeyofTArraystring, 
       /* sorter */ SorterResult[T], 
       /* extra */ TableCurrentDataSource[T], 
       scala.Unit
@@ -104,7 +104,7 @@ object TableProps {
     indentSize: scala.Int | scala.Double = null,
     loading: scala.Boolean | antdLib.libSpinMod.SpinProps = null,
     locale: TableLocale = null,
-    onChange: (/* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, /* filters */ stdLib.Record[java.lang.String, js.Array[java.lang.String]], /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => scala.Unit = null,
+    onChange: (/* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, /* filters */ antdLib.RecordkeyofTArraystring, /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => scala.Unit = null,
     onExpand: (/* expanded */ scala.Boolean, /* record */ T) => scala.Unit = null,
     onExpandedRowsChange: /* expandedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double] => scala.Unit = null,
     onHeaderRow: (/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double) => _ = null,

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "element-ready"
-version := "3.1.0-e3dded"
+version := "3.1.0-a56f34"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "p-cancelable" % "1.1.0-5b3235",
+  "org.scalablytyped" %%% "p-cancelable" % "2.0.0-7a382a",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

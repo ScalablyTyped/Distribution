@@ -64,10 +64,16 @@ trait MenuItemConstructorOptions extends js.Object {
     */
   var registerAccelerator: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Define the action of the menu item, when specified the click property will be
-    * ignored. See .
+    * Can be undo, redo, cut, copy, paste, pasteandmatchstyle, delete, selectall,
+    * reload, forcereload, toggledevtools, resetzoom, zoomin, zoomout,
+    * togglefullscreen, window, minimize, close, help, about, services, hide,
+    * hideothers, unhide, quit, startspeaking, stopspeaking, close, minimize, zoom or
+    * front Define the action of the menu item, when specified the click property will
+    * be ignored. See .
     */
-  var role: js.UndefOr[java.lang.String] = js.undefined
+  var role: js.UndefOr[
+    electronLib.electronLibStrings.undo | electronLib.electronLibStrings.redo | electronLib.electronLibStrings.cut | electronLib.electronLibStrings.copy | electronLib.electronLibStrings.paste | electronLib.electronLibStrings.pasteandmatchstyle | electronLib.electronLibStrings.delete | electronLib.electronLibStrings.selectall | electronLib.electronLibStrings.reload | electronLib.electronLibStrings.forcereload | electronLib.electronLibStrings.toggledevtools | electronLib.electronLibStrings.resetzoom | electronLib.electronLibStrings.zoomin | electronLib.electronLibStrings.zoomout | electronLib.electronLibStrings.togglefullscreen | electronLib.electronLibStrings.window | electronLib.electronLibStrings.minimize | electronLib.electronLibStrings.close | electronLib.electronLibStrings.help | electronLib.electronLibStrings.about | electronLib.electronLibStrings.services | electronLib.electronLibStrings.hide | electronLib.electronLibStrings.hideothers | electronLib.electronLibStrings.unhide | electronLib.electronLibStrings.quit | electronLib.electronLibStrings.startspeaking | electronLib.electronLibStrings.stopspeaking | electronLib.electronLibStrings.zoom | electronLib.electronLibStrings.front
+  ] = js.undefined
   var sublabel: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Should be specified for submenu type menu items. If submenu is specified, the
@@ -102,7 +108,7 @@ object MenuItemConstructorOptions {
     id: java.lang.String = null,
     label: java.lang.String = null,
     registerAccelerator: js.UndefOr[scala.Boolean] = js.undefined,
-    role: java.lang.String = null,
+    role: electronLib.electronLibStrings.undo | electronLib.electronLibStrings.redo | electronLib.electronLibStrings.cut | electronLib.electronLibStrings.copy | electronLib.electronLibStrings.paste | electronLib.electronLibStrings.pasteandmatchstyle | electronLib.electronLibStrings.delete | electronLib.electronLibStrings.selectall | electronLib.electronLibStrings.reload | electronLib.electronLibStrings.forcereload | electronLib.electronLibStrings.toggledevtools | electronLib.electronLibStrings.resetzoom | electronLib.electronLibStrings.zoomin | electronLib.electronLibStrings.zoomout | electronLib.electronLibStrings.togglefullscreen | electronLib.electronLibStrings.window | electronLib.electronLibStrings.minimize | electronLib.electronLibStrings.close | electronLib.electronLibStrings.help | electronLib.electronLibStrings.about | electronLib.electronLibStrings.services | electronLib.electronLibStrings.hide | electronLib.electronLibStrings.hideothers | electronLib.electronLibStrings.unhide | electronLib.electronLibStrings.quit | electronLib.electronLibStrings.startspeaking | electronLib.electronLibStrings.stopspeaking | electronLib.electronLibStrings.zoom | electronLib.electronLibStrings.front = null,
     sublabel: java.lang.String = null,
     submenu: js.Array[MenuItemConstructorOptions] | Menu = null,
     `type`: electronLib.electronLibStrings.normal | electronLib.electronLibStrings.separator | electronLib.electronLibStrings.submenu | electronLib.electronLibStrings.checkbox | electronLib.electronLibStrings.radio = null,
@@ -121,7 +127,7 @@ object MenuItemConstructorOptions {
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(registerAccelerator)) __obj.updateDynamic("registerAccelerator")(registerAccelerator)
-    if (role != null) __obj.updateDynamic("role")(role)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (sublabel != null) __obj.updateDynamic("sublabel")(sublabel)
     if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

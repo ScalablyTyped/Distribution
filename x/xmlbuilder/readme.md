@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmlbuilder
 
-Typings are for version 12.0.1
+Typings are for version 13.0.2
 
 ## Library description:
 An XML builder for node.js
@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for xmlbuilder
-// Project: https://github.com/oozcitak/xmlbuilder-js
-// Definitions by: Wallymathieu <https://github.com/wallymathieu>
-//               : GaikwadPratik <https://github.com/GaikwadPratik>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

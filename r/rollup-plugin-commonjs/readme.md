@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-commonjs
 
-Typings are for version 9.3.4
+Typings are for version 10.0.0
 
 ## Library description:
 Convert CommonJS modules to ES2015

@@ -7,15 +7,28 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/nodes/XmlProcInst", JSImport.Default)
 @js.native
-class default protected () extends XmlProcInst {
+class default[Parent] protected () extends XmlProcInst[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: IXmlProcInstOptions) = this()
+  /* CompleteClass */
+  override var _content: js.Any = js.native
+  /* CompleteClass */
+  override val _parent: js.Any = js.native
+  /* CompleteClass */
+  override var _target: js.Any = js.native
+  /* CompleteClass */
+  override val _validation: js.Any = js.native
   /**
-    * Initializes a new instance of the {@link XmlProcInst} class.
-    *
-    * @param target The target of the processing instruction.
-    * @param content The data of the processing instruction, or undefined if
-    *                there is no target.
+    * Gets the target of this processing instruction.
     */
-  def this(target: java.lang.String) = this()
-  def this(target: java.lang.String, content: java.lang.String) = this()
+  /**
+    * Sets the content of this processing instruction.
+    */
+  /* CompleteClass */
+  override var target: java.lang.String = js.native
+  /**
+    * Returns the parent of this processing instruction.
+    */
+  /* CompleteClass */
+  override def up(): Parent = js.native
 }
 

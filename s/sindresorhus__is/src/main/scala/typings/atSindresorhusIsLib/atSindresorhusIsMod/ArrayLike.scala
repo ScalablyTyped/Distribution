@@ -5,16 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayLike extends js.Object {
-  var length: scala.Double
+trait ArrayLike[T]
+  extends /* index */ org.scalablytyped.runtime.NumberDictionary[T] {
+  val length: scala.Double
 }
 
 object ArrayLike {
   @scala.inline
-  def apply(length: scala.Double): ArrayLike = {
+  def apply[T](
+    length: scala.Double,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[T] = null
+  ): ArrayLike[T] = {
     val __obj = js.Dynamic.literal(length = length)
-  
-    __obj.asInstanceOf[ArrayLike]
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[ArrayLike[T]]
   }
 }
 

@@ -12,10 +12,10 @@ trait Options extends js.Object {
   		*/
   val detectIndent: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  		Indentation as a string or number of spaces. Pass in null for no formatting.
+  		Indentation as a string or number of spaces. Pass in `undefined` for no formatting.
   		@default '\t'
   		*/
-  val indent: js.UndefOr[java.lang.String | scala.Double | scala.Null] = js.undefined
+  val indent: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /**
   		Mode used when writing the file.
   		@default 0o666

@@ -11,7 +11,7 @@ trait InterfaceDeclarationBuilder extends js.Object {
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     body: astDashTypesLib.genKindsMod.ObjectTypeAnnotationKind,
     extendsParam: js.Array[astDashTypesLib.genKindsMod.InterfaceExtendsKind]
-  ): astDashTypesLib.genNodesMod.InterfaceDeclaration = js.native
-  def from(params: astDashTypesLib.Anon_BodyCommentsExtendsId): astDashTypesLib.genNodesMod.InterfaceDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceDeclaration = js.native
+  def from(params: astDashTypesLib.Anon_BodyCommentsExtendsId): astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceDeclaration = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-apollo
 
-Typings are for version 2.5.5
+Typings are for version 2.5.6
 
 ## Library description:
 React data container for Apollo Client

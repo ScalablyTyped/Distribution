@@ -13,6 +13,6 @@ class default () extends Countdown
 @JSImport("antd/lib/statistic/Countdown", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: stdLib.Partial[antdLib.libStatisticCountdownMod.CountdownProps] = js.native
+  var defaultProps: antdLib.PartialCountdownPropsClassName = js.native
 }
 

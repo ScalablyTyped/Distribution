@@ -46,6 +46,9 @@ object ddDashTraceLibStrings {
   sealed trait ioredis extends js.Object
   
   @js.native
+  sealed trait knex extends js.Object
+  
+  @js.native
   sealed trait koa extends js.Object
   
   @js.native
@@ -113,6 +116,8 @@ object ddDashTraceLibStrings {
   def http: http = "http".asInstanceOf[http]
   @scala.inline
   def ioredis: ioredis = "ioredis".asInstanceOf[ioredis]
+  @scala.inline
+  def knex: knex = "knex".asInstanceOf[knex]
   @scala.inline
   def koa: koa = "koa".asInstanceOf[koa]
   @scala.inline

@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libDirectivesMod {
   type DirectiveInfo = org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
+  type InclusionDirectives = js.Array[apolloDashUtilitiesLib.Anon_Directive]
 }

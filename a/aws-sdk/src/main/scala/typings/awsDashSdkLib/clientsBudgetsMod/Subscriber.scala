@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Subscriber extends js.Object {
   /**
-    * The address that AWS sends budget notifications to, either an SNS topic or an email.
+    * The address that AWS sends budget notifications to, either an SNS topic or an email. AWS validates the address for a CreateSubscriber request with the .* regex.
     */
   var Address: SubscriberAddress
   /**

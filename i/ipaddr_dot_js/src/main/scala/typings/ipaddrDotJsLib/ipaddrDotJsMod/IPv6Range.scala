@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - ipaddrDotJsLib.ipaddrDotJsLibStrings.unicast
   - ipaddrDotJsLib.ipaddrDotJsLibStrings.unspecified
   - ipaddrDotJsLib.ipaddrDotJsLibStrings.linkLocal
   - ipaddrDotJsLib.ipaddrDotJsLibStrings.multicast

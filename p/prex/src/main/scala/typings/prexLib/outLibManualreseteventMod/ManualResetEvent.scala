@@ -28,6 +28,7 @@ class ManualResetEvent () extends js.Object {
     * Sets the state of the event to signaled, resolving one or more waiting Promises.
     */
   def set(): scala.Unit = js.native
+  def wait(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[scala.Unit] = js.native
   def wait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

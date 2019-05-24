@@ -26,6 +26,10 @@ trait OCRPro extends js.Object {
     * @return {boolean}
     */
   def IsModuleInstalled(): scala.Boolean = js.native
+  def NewOCRError(): OCRError = js.native
+  def NewOCRReadPara(): OCRReadPara = js.native
+  def NewOCRZone(): OCRZone = js.native
+  def NewSettings(): Settings = js.native
   /**
     *  Performs OCR on a given image. 
     * @param {number} sImageIndex Specifies the index of the image.

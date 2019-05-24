@@ -11,7 +11,7 @@ trait ObjectPatternBuilder extends js.Object {
     properties: js.Array[
       astDashTypesLib.genKindsMod.PropertyKind | astDashTypesLib.genKindsMod.PropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyKind | astDashTypesLib.genKindsMod.ObjectPropertyKind | astDashTypesLib.genKindsMod.RestPropertyKind
     ]
-  ): astDashTypesLib.genNodesMod.ObjectPattern = js.native
-  def from(params: astDashTypesLib.Anon_CommentsDecorators): astDashTypesLib.genNodesMod.ObjectPattern = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectPattern = js.native
+  def from(params: astDashTypesLib.Anon_CommentsDecorators): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectPattern = js.native
 }
 

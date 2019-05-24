@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("prex/out/lib/cancellation", "CancellationToken")
 @js.native
-class CancellationToken () extends js.Object {
+class CancellationToken ()
+  extends atEsfxCancelableLib.distMod.Cancelable {
+  var _signal: js.UndefOr[js.Any] = js.native
   var _source: js.Any = js.native
   /**
     * Gets a value indicating whether the underlying source can be canceled.
@@ -45,17 +47,26 @@ object CancellationToken extends js.Object {
     * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
     * @param tokens An iterable of CancellationToken objects.
     */
-  def all(tokens: stdLib.Iterable[prexLib.outLibCancellationMod.CancellationToken]): prexLib.outLibCancellationMod.CancellationToken = js.native
-  def from(token: prexLib.outLibCancellationMod.AbortSignalLike): prexLib.outLibCancellationMod.CancellationToken = js.native
+  def all(
+    tokens: stdLib.Iterable[
+      prexLib.outLibCancellationMod.CancellationToken | atEsfxCancelableLib.distMod.Cancelable
+    ]
+  ): prexLib.outLibCancellationMod.CancellationToken = js.native
+  def from(cancelable: atEsfxCancelableLib.distMod.Cancelable): prexLib.outLibCancellationMod.CancellationToken = js.native
+  def from(cancelable: prexLib.outLibCancellationMod.AbortSignalLike): prexLib.outLibCancellationMod.CancellationToken = js.native
   /**
     * Adapts a CancellationToken-like primitive from a different library.
     */
-  def from(token: prexLib.outLibCancellationMod.CancellationToken): prexLib.outLibCancellationMod.CancellationToken = js.native
-  def from(token: prexLib.outLibCancellationMod.VSCodeCancellationTokenLike): prexLib.outLibCancellationMod.CancellationToken = js.native
+  def from(cancelable: prexLib.outLibCancellationMod.CancellationToken): prexLib.outLibCancellationMod.CancellationToken = js.native
+  def from(cancelable: prexLib.outLibCancellationMod.VSCodeCancellationTokenLike): prexLib.outLibCancellationMod.CancellationToken = js.native
   /**
     * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
     * @param tokens An iterable of CancellationToken objects.
     */
-  def race(tokens: stdLib.Iterable[prexLib.outLibCancellationMod.CancellationToken]): prexLib.outLibCancellationMod.CancellationToken = js.native
+  def race(
+    tokens: stdLib.Iterable[
+      prexLib.outLibCancellationMod.CancellationToken | atEsfxCancelableLib.distMod.Cancelable
+    ]
+  ): prexLib.outLibCancellationMod.CancellationToken = js.native
 }
 

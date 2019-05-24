@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class ProtractorBy ()
   extends WebdriverBy
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var byRepeaterInner: js.Any = js.native
   def addLocator(name: java.lang.String, script: java.lang.String): scala.Unit = js.native
   /**
     * Add a locator to this instance of ProtractorBy. This locator can then be
@@ -36,7 +35,7 @@ class ProtractorBy ()
     * });
     *
     * // Use the custom locator.
-    * await element(by.buttonTextSimple('Go!')).click();
+    * element(by.buttonTextSimple('Go!')).click();
     *
     * @alias by.addLocator(locatorName, functionOrScript)
     * @param {string} name The name of the new locator.
@@ -62,14 +61,14 @@ class ProtractorBy ()
     *
     * @example
     * var span1 = element(by.binding('person.name'));
-    * expect(await span1.getText()).toBe('Foo');
+    * expect(span1.getText()).toBe('Foo');
     *
     * var span2 = element(by.binding('person.email'));
-    * expect(await span2.getText()).toBe('foo@bar.com');
+    * expect(span2.getText()).toBe('foo@bar.com');
     *
     * // You can also use a substring for a partial match
     * var span1alt = element(by.binding('name'));
-    * expect(await span1alt.getText()).toBe('Foo');
+    * expect(span1alt.getText()).toBe('Foo');
     *
     * // This works for sites using Angular 1.2 but NOT 1.3
     * var deprecatedSyntax = element(by.binding('{{person.name}}'));
@@ -91,6 +90,7 @@ class ProtractorBy ()
     * @returns {ProtractorLocator} location strategy
     */
   def buttonText(searchText: java.lang.String): ProtractorLocator = js.native
+  /* private */ def byRepeaterInner(exact: js.Any, repeatDescriptor: js.Any): js.Any = js.native
   /**
     * Find elements by CSS which contain a certain string.
     *
@@ -105,7 +105,7 @@ class ProtractorBy ()
     * var dog = element(by.cssContainingText('.pet', 'Dog'));
     *
     * @param {string} cssSelector css selector
-    * @param {string|RegExp} searchText text search
+    * @param {string|RegExp} searchString text search
     * @returns {ProtractorLocator} location strategy
     */
   def cssContainingText(cssSelector: java.lang.String, searchText: java.lang.String): ProtractorLocator = js.native
@@ -126,7 +126,7 @@ class ProtractorBy ()
     * </div>
     * @example
     * var spans = element.all(by.deepCss('span'));
-    * expect(await spans.count()).toEqual(3);
+    * expect(spans.count()).toEqual(3);
     *
     * @param {string} selector a css selector within the Shadow DOM.
     * @returns {Locator} location strategy
@@ -141,12 +141,12 @@ class ProtractorBy ()
     * <span>{{person_phone|uppercase}}</span>
     *
     * @example
-    * expect(await element(by.exactBinding('person.name')).isPresent()).toBe(true);
-    * expect(await element(by.exactBinding('person-email')).isPresent()).toBe(true);
-    * expect(await element(by.exactBinding('person')).isPresent()).toBe(false);
-    * expect(await element(by.exactBinding('person_phone')).isPresent()).toBe(true);
-    * expect(await element(by.exactBinding('person_phone|uppercase')).isPresent()).toBe(true);
-    * expect(await element(by.exactBinding('phone')).isPresent()).toBe(false);
+    * expect(element(by.exactBinding('person.name')).isPresent()).toBe(true);
+    * expect(element(by.exactBinding('person-email')).isPresent()).toBe(true);
+    * expect(element(by.exactBinding('person')).isPresent()).toBe(false);
+    * expect(element(by.exactBinding('person_phone')).isPresent()).toBe(true);
+    * expect(element(by.exactBinding('person_phone|uppercase')).isPresent()).toBe(true);
+    * expect(element(by.exactBinding('phone')).isPresent()).toBe(false);
     *
     * @param {string} bindingDescriptor
     * @returns {ProtractorLocator} location strategy
@@ -160,9 +160,12 @@ class ProtractorBy ()
     * <li ng-repeat="car in cars | orderBy:year"></li>
     *
     * @example
-    * expect(await element(by.exactRepeater('person in peopleWithRedHair')).isPresent()).toBe(true);
-    * expect(await element(by.exactRepeater('person in people')).isPresent()).toBe(false);
-    * expect(await element(by.exactRepeater('car in cars')).isPresent()).toBe(true);
+    * expect(element(by.exactRepeater('person in
+    * peopleWithRedHair')).isPresent())
+    *     .toBe(true);
+    * expect(element(by.exactRepeater('person in
+    * people')).isPresent()).toBe(false);
+    * expect(element(by.exactRepeater('car in cars')).isPresent()).toBe(true);
     *
     * @param {string} repeatDescriptor
     * @returns {ProtractorLocator} location strategy
@@ -177,8 +180,8 @@ class ProtractorBy ()
     *
     * @example
     * var input = element(by.model('person.name'));
-    * await input.sendKeys('123');
-    * expect(await input.getAttribute('value')).toBe('Foo123');
+    * input.sendKeys('123');
+    * expect(input.getAttribute('value')).toBe('Foo123');
     *
     * @param {string} model ng-model expression.
     * @returns {ProtractorLocator} location strategy
@@ -196,9 +199,9 @@ class ProtractorBy ()
     *
     * @example
     * var allOptions = element.all(by.options('c for c in colors'));
-    * expect(await allOptions.count()).toEqual(2);
+    * expect(allOptions.count()).toEqual(2);
     * var firstOption = allOptions.first();
-    * expect(await firstOption.getText()).toEqual('red');
+    * expect(firstOption.getText()).toEqual('red');
     *
     * @param {string} optionsDescriptor ng-options expression.
     * @returns {ProtractorLocator} location strategy
@@ -236,36 +239,37 @@ class ProtractorBy ()
     *
     * @example
     * // Returns the DIV for the second cat.
-    * let secondCat = element(by.repeater('cat in pets').row(1));
+    * var secondCat = element(by.repeater('cat in pets').row(1));
     *
     * // Returns the SPAN for the first cat's name.
-    * let firstCatName = element(by.repeater('cat in pets').
+    * var firstCatName = element(by.repeater('cat in pets').
     *     row(0).column('cat.name'));
     *
     * // Returns a promise that resolves to an array of WebElements from a column
-    * let ages = element.all(by.repeater('cat in pets').column('cat.age'));
+    * var ages = element.all(
+    *     by.repeater('cat in pets').column('cat.age'));
     *
     * // Returns a promise that resolves to an array of WebElements containing
     * // all top level elements repeated by the repeater. For 2 pets rows
     * // resolves to an array of 2 elements.
-    * let rows = element.all(by.repeater('cat in pets'));
+    * var rows = element.all(by.repeater('cat in pets'));
     *
     * // Returns a promise that resolves to an array of WebElements containing
     * // all the elements with a binding to the book's name.
-    * let divs = element.all(by.repeater('book in library').column('book.name'));
+    * var divs = element.all(by.repeater('book in library').column('book.name'));
     *
     * // Returns a promise that resolves to an array of WebElements containing
     * // the DIVs for the second book.
-    * let bookInfo = element.all(by.repeater('book in library').row(1));
+    * var bookInfo = element.all(by.repeater('book in library').row(1));
     *
     * // Returns the H4 for the first book's name.
-    * let firstBookName = element(by.repeater('book in library').
+    * var firstBookName = element(by.repeater('book in library').
     *     row(0).column('book.name'));
     *
     * // Returns a promise that resolves to an array of WebElements containing
     * // all top level elements repeated by the repeater. For 2 books divs
     * // resolves to an array of 4 elements.
-    * let divs = element.all(by.repeater('book in library'));
+    * var divs = element.all(by.repeater('book in library'));
     *
     * @param {string} repeatDescriptor
     * @returns {ProtractorLocator} location strategy

@@ -39,6 +39,10 @@ trait CreateRestApiRequest extends js.Object {
     */
   var policy: js.UndefOr[String] = js.undefined
   /**
+    * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
+  /**
     * A version identifier for the API.
     */
   var version: js.UndefOr[String] = js.undefined
@@ -55,6 +59,7 @@ object CreateRestApiRequest {
     endpointConfiguration: EndpointConfiguration = null,
     minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined,
     policy: String = null,
+    tags: MapOfStringToString = null,
     version: String = null
   ): CreateRestApiRequest = {
     val __obj = js.Dynamic.literal(name = name)
@@ -65,6 +70,7 @@ object CreateRestApiRequest {
     if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration)
     if (!js.isUndefined(minimumCompressionSize)) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize)
     if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[CreateRestApiRequest]
   }

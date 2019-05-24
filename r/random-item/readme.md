@@ -1,7 +1,7 @@
 
 # Scala.js typings for random-item
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get a random item from an array
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
-Get a random item from an [Iterable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol).
+Get a random item from an array.
 
 @example
 ```
@@ -44,9 +44,6 @@ import randomItem = require('random-item');
 
 randomItem(['🐴', '🦄', '🌈']);
 //=> '🦄'
-
-randomItem(new Set(['🐴', '🦄', '🌈']);
-//=> '🌈'
 ```
 */
 

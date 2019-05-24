@@ -16,8 +16,8 @@ class LOD ()
   var objects: js.Array[_] = js.native
   @JSName("type")
   var type_LOD: threeLib.threeLibStrings.LOD = js.native
-  def addLevel(`object`: threeLib.srcCoreObject3DMod.Object3D): scala.Unit = js.native
-  def addLevel(`object`: threeLib.srcCoreObject3DMod.Object3D, distance: scala.Double): scala.Unit = js.native
+  def addLevel(`object`: threeLib.srcCoreObject3DMod.Object3D): this.type = js.native
+  def addLevel(`object`: threeLib.srcCoreObject3DMod.Object3D, distance: scala.Double): this.type = js.native
   def getObjectForDistance(distance: scala.Double): threeLib.srcCoreObject3DMod.Object3D = js.native
   def toJSON(meta: js.Any): js.Any = js.native
   def update(camera: threeLib.srcCamerasCameraMod.Camera): scala.Unit = js.native

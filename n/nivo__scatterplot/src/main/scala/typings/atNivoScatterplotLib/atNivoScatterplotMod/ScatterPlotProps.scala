@@ -10,6 +10,7 @@ trait ScatterPlotProps extends js.Object {
   var axisLeft: js.UndefOr[atNivoAxesLib.atNivoAxesMod.AxisProps | scala.Null] = js.undefined
   var axisRight: js.UndefOr[atNivoAxesLib.atNivoAxesMod.AxisProps | scala.Null] = js.undefined
   var axisTop: js.UndefOr[atNivoAxesLib.atNivoAxesMod.AxisProps | scala.Null] = js.undefined
+  var colors: js.UndefOr[atNivoColorsLib.atNivoColorsMod.OrdinalColorsInstruction[_]] = js.undefined
   var data: js.Array[atNivoScatterplotLib.Anon_Data]
   var debugMesh: js.UndefOr[scala.Boolean] = js.undefined
   var enableGridX: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,6 +42,7 @@ object ScatterPlotProps {
     axisLeft: atNivoAxesLib.atNivoAxesMod.AxisProps = null,
     axisRight: atNivoAxesLib.atNivoAxesMod.AxisProps = null,
     axisTop: atNivoAxesLib.atNivoAxesMod.AxisProps = null,
+    colors: atNivoColorsLib.atNivoColorsMod.OrdinalColorsInstruction[_] = null,
     debugMesh: js.UndefOr[scala.Boolean] = js.undefined,
     enableGridX: js.UndefOr[scala.Boolean] = js.undefined,
     enableGridY: js.UndefOr[scala.Boolean] = js.undefined,
@@ -65,6 +67,7 @@ object ScatterPlotProps {
     if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft)
     if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight)
     if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (!js.isUndefined(debugMesh)) __obj.updateDynamic("debugMesh")(debugMesh)
     if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX)
     if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY)

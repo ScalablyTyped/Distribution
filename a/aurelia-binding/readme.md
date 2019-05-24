@@ -1,7 +1,7 @@
 
 # Scala.js typings for aurelia-binding
 
-Typings are for version 2.3.0
+Typings are for version 2.3.1
 
 ## Library description:
 A modern databinding library for JavaScript and HTML.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/ExpansionPanelSummary/ExpansionPanelSummary.ExpansionPanelSummaryClassKey, never> */
 trait ExpansionPanelSummaryProps extends js.Object {
-  var IconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.undefined
+  var IconButtonProps: js.UndefOr[atMaterialDashUiCoreLib.PartialIconButtonProps] = js.undefined
   var TouchRippleProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps]
   ] = js.undefined
@@ -121,11 +121,7 @@ trait ExpansionPanelSummaryProps extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ExpansionPanelSummaryClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapExpansionPanelSummaryClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps]
@@ -359,7 +355,7 @@ trait ExpansionPanelSummaryProps extends js.Object {
 object ExpansionPanelSummaryProps {
   @scala.inline
   def apply(
-    IconButtonProps: stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps] = null,
+    IconButtonProps: atMaterialDashUiCoreLib.PartialIconButtonProps = null,
     TouchRippleProps: stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps] = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
@@ -420,9 +416,7 @@ object ExpansionPanelSummaryProps {
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ExpansionPanelSummaryClassKey]
-    ] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapExpansionPanelSummaryClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

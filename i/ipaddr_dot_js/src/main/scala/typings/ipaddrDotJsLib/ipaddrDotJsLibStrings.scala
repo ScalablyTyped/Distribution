@@ -65,6 +65,11 @@ object ipaddrDotJsLibStrings {
     extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
+  sealed trait unicast
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
+  
+  @js.native
   sealed trait uniqueLocal
     extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
@@ -101,6 +106,8 @@ object ipaddrDotJsLibStrings {
   def rfc6145: rfc6145 = "rfc6145".asInstanceOf[rfc6145]
   @scala.inline
   def teredo: teredo = "teredo".asInstanceOf[teredo]
+  @scala.inline
+  def unicast: unicast = "unicast".asInstanceOf[unicast]
   @scala.inline
   def uniqueLocal: uniqueLocal = "uniqueLocal".asInstanceOf[uniqueLocal]
   @scala.inline

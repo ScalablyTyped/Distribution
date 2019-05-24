@@ -39,6 +39,12 @@ trait KeycloakInitOptions extends js.Object {
   		 */
   var onLoad: js.UndefOr[KeycloakOnLoad] = js.undefined
   /**
+  		 * Set the promise type. If set to `'native'` all methods returning a promise
+  		 * will return a native JavaScript promise. If not set will return
+  		 * Keycloak specific promise objects.
+  		 */
+  var promiseType: js.UndefOr[KeycloakPromiseType] = js.undefined
+  /**
   		 * Specifies a default uri to redirect to after login or logout.
   		 * This is currently supported for adapter 'cordova-native' and 'default'
   		 */
@@ -79,6 +85,7 @@ object KeycloakInitOptions {
     flow: KeycloakFlow = null,
     idToken: java.lang.String = null,
     onLoad: KeycloakOnLoad = null,
+    promiseType: KeycloakPromiseType = null,
     redirectUri: java.lang.String = null,
     refreshToken: java.lang.String = null,
     responseMode: KeycloakResponseMode = null,
@@ -93,6 +100,7 @@ object KeycloakInitOptions {
     if (flow != null) __obj.updateDynamic("flow")(flow)
     if (idToken != null) __obj.updateDynamic("idToken")(idToken)
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (promiseType != null) __obj.updateDynamic("promiseType")(promiseType)
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)

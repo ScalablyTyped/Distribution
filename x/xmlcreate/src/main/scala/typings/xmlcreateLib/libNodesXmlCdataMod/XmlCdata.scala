@@ -5,40 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait XmlCdata
-  extends xmlcreateLib.libNodesXmlNodeMod.default {
-  var _data: js.Any = js.native
+trait XmlCdata[Parent] extends js.Object {
+  var _charData: js.Any
+  val _parent: js.Any
+  val _replaceInvalidCharsInCharData: js.Any
+  val _validation: js.Any
   /**
-    * Gets the character data of the CDATA section.
-    *
-    * @returns The character data of the CDATA section.
+    * Gets the character data of this CDATA section.
     */
   /**
-    * Sets the character data of the CDATA section.
-    *
-    * @param data The character data of the CDATA section.
+    * Sets the character data of this CDATA section.
     */
-  var data: java.lang.String = js.native
+  var charData: java.lang.String
   /**
-    * Throws an exception since {@link XmlCdata} nodes cannot have any
-    * children.
-    *
-    * @param node This parameter is unused.
-    * @param index This parameter is unused.
-    *
-    * @returns This method does not return.
+    * Returns the parent of this CDATA section.
     */
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  /**
-    * Throws an exception since {@link XmlCdata} nodes cannot have any
-    * children.
-    *
-    * @param node This parameter is unused.
-    *
-    * @returns This method does not return.
-    */
-  def removeChild(node: xmlcreateLib.libNodesXmlNodeMod.default): scala.Boolean = js.native
+  def up(): Parent
+}
+
+object XmlCdata {
+  @scala.inline
+  def apply[Parent](
+    _charData: js.Any,
+    _parent: js.Any,
+    _replaceInvalidCharsInCharData: js.Any,
+    _validation: js.Any,
+    charData: java.lang.String,
+    toString: () => java.lang.String,
+    up: () => Parent
+  ): XmlCdata[Parent] = {
+    val __obj = js.Dynamic.literal(_charData = _charData, _parent = _parent, _replaceInvalidCharsInCharData = _replaceInvalidCharsInCharData, _validation = _validation, charData = charData, toString = js.Any.fromFunction0(toString), up = js.Any.fromFunction0(up))
+  
+    __obj.asInstanceOf[XmlCdata[Parent]]
+  }
 }
 

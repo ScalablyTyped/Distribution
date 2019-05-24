@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for koa-compose 3.2
 // Project: https://github.com/koajs/compose
 // Definitions by: jKey Lu <https://github.com/jkeylu>
+//                 Anton Astashov <https://github.com/astashov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

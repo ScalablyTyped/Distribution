@@ -548,6 +548,9 @@ object reactDashNativeLibStrings {
   sealed trait datetime extends js.Object
   
   @js.native
+  sealed trait day extends js.Object
+  
+  @js.native
   sealed trait `decimal-pad`
     extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
@@ -729,6 +732,9 @@ object reactDashNativeLibStrings {
   sealed trait history extends js.Object
   
   @js.native
+  sealed trait hour extends js.Object
+  
+  @js.native
   sealed trait identity
     extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ExtrapolateType
   
@@ -908,7 +914,13 @@ object reactDashNativeLibStrings {
   sealed trait middleName extends js.Object
   
   @js.native
+  sealed trait minute extends js.Object
+  
+  @js.native
   sealed trait miter extends js.Object
+  
+  @js.native
+  sealed trait month extends js.Object
   
   @js.native
   sealed trait more extends js.Object
@@ -1331,6 +1343,9 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
+  sealed trait week extends js.Object
+  
+  @js.native
   sealed trait `while-editing` extends js.Object
   
   @js.native
@@ -1359,6 +1374,9 @@ object reactDashNativeLibStrings {
   @js.native
   sealed trait yahoo
     extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
+  
+  @js.native
+  sealed trait year extends js.Object
   
   @js.native
   sealed trait yes extends js.Object
@@ -1670,6 +1688,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   @scala.inline
+  def day: day = "day".asInstanceOf[day]
+  @scala.inline
   def `decimal-pad`: `decimal-pad` = "decimal-pad".asInstanceOf[`decimal-pad`]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
@@ -1774,6 +1794,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   @scala.inline
+  def hour: hour = "hour".asInstanceOf[hour]
+  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
   def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
@@ -1876,7 +1898,11 @@ object reactDashNativeLibStrings {
   @scala.inline
   def middleName: middleName = "middleName".asInstanceOf[middleName]
   @scala.inline
+  def minute: minute = "minute".asInstanceOf[minute]
+  @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
+  def month: month = "month".asInstanceOf[month]
   @scala.inline
   def more: more = "more".asInstanceOf[more]
   @scala.inline
@@ -2124,6 +2150,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def `web-search`: `web-search` = "web-search".asInstanceOf[`web-search`]
   @scala.inline
+  def week: week = "week".asInstanceOf[week]
+  @scala.inline
   def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
   @scala.inline
   def white: white = "white".asInstanceOf[white]
@@ -2141,6 +2169,8 @@ object reactDashNativeLibStrings {
   def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
   @scala.inline
   def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]
+  @scala.inline
+  def year: year = "year".asInstanceOf[year]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
 }

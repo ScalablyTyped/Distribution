@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait OnHeadersReceivedDetails extends js.Object {
   var id: scala.Double
   var method: java.lang.String
+  var referrer: java.lang.String
   var resourceType: java.lang.String
   var responseHeaders: ResponseHeaders
   var statusCode: scala.Double
@@ -22,6 +23,7 @@ object OnHeadersReceivedDetails {
   def apply(
     id: scala.Double,
     method: java.lang.String,
+    referrer: java.lang.String,
     resourceType: java.lang.String,
     responseHeaders: ResponseHeaders,
     statusCode: scala.Double,
@@ -30,7 +32,7 @@ object OnHeadersReceivedDetails {
     url: java.lang.String,
     webContentsId: scala.Int | scala.Double = null
   ): OnHeadersReceivedDetails = {
-    val __obj = js.Dynamic.literal(id = id, method = method, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, statusLine = statusLine, timestamp = timestamp, url = url)
+    val __obj = js.Dynamic.literal(id = id, method = method, referrer = referrer, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, statusLine = statusLine, timestamp = timestamp, url = url)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHeadersReceivedDetails]
   }

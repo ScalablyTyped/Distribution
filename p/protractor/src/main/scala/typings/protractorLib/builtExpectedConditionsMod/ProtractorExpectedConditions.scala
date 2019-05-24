@@ -14,42 +14,42 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * Expect an alert to be present.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for an alert pops up.
-    * await browser.wait(EC.alertIsPresent(), 5000);
+    * browser.wait(EC.alertIsPresent(), 5000);
     *
     * @alias ExpectedConditions.alertIsPresent
     * @returns {!function} An expected condition that returns a promise
     *     representing whether an alert is present.
     */
-  def alertIsPresent(): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def alertIsPresent(): js.Function = js.native
   /**
     * Chain a number of expected conditions using logical_and, short circuiting
     * at the first expected condition that evaluates to false.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
-    * const titleContainsFoo = EC.titleContains('Foo');
-    * const titleIsNotFooBar = EC.not(EC.titleIs('FooBar'));
+    * var EC = protractor.ExpectedConditions;
+    * var titleContainsFoo = EC.titleContains('Foo');
+    * var titleIsNotFooBar = EC.not(EC.titleIs('FooBar'));
     * // Waits for title to contain 'Foo', but is not 'FooBar'
-    * await browser.wait(EC.and(titleContainsFoo, titleIsNotFooBar), 5000);
+    * browser.wait(EC.and(titleContainsFoo, titleIsNotFooBar), 5000);
     *
     * @alias ExpectedConditions.and
-    * @param {Array.<Function>} args An array of expected conditions to 'and'
+    * @param {Array.<Function>} fns An array of expected conditions to 'and'
     * together.
     *
     * @returns {!function} An expected condition that returns a promise which
     *     evaluates to the result of the logical and.
     */
-  def and(args: js.Function*): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def and(args: js.Function*): js.Function = js.native
   /**
     * An Expectation for checking an element is visible and enabled such that you
     * can click it.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'abc' to be clickable.
-    * await browser.wait(EC.elementToBeClickable($('#abc')), 5000);
+    * browser.wait(EC.elementToBeClickable($('#abc')), 5000);
     *
     * @alias ExpectedConditions.elementToBeClickable
     * @param {!ElementFinder} elementFinder The element to check
@@ -57,14 +57,14 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the element is clickable.
     */
-  def elementToBeClickable(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def elementToBeClickable(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function = js.native
   /**
     * An expectation for checking the selection is selected.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'myCheckbox' to be selected.
-    * await browser.wait(EC.elementToBeSelected($('#myCheckbox')), 5000);
+    * browser.wait(EC.elementToBeSelected($('#myCheckbox')), 5000);
     *
     * @alias ExpectedConditions.elementToBeSelected
     * @param {!ElementFinder} elementFinder The element to check
@@ -72,15 +72,15 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the element is selected.
     */
-  def elementToBeSelected(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def elementToBeSelected(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function = js.native
   /**
     * An expectation for checking that an element is either invisible or not
     * present on the DOM. This is the opposite of 'visibilityOf'.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'abc' to be no longer visible on the dom.
-    * await browser.wait(EC.invisibilityOf($('#abc')), 5000);
+    * browser.wait(EC.invisibilityOf($('#abc')), 5000);
     *
     * @alias ExpectedConditions.invisibilityOf
     * @param {!ElementFinder} elementFinder The element to check
@@ -88,7 +88,7 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the element is invisible.
     */
-  def invisibilityOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def invisibilityOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function = js.native
   /**
     * Helper function that is equivalent to the logical_and if defaultRet==true,
     * or logical_or if defaultRet==false
@@ -100,50 +100,50 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise which
     *     evaluates to the result of the logical chain.
     */
-  def logicalChain_(defaultRet: scala.Boolean, fns: js.Array[js.Function]): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def logicalChain_(defaultRet: scala.Boolean, fns: js.Array[js.Function]): js.Function = js.native
   /**
     * Negates the result of a promise.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
-    * const titleIsNotFoo = EC.not(EC.titleIs('Foo'));
+    * var EC = protractor.ExpectedConditions;
+    * var titleIsNotFoo = EC.not(EC.titleIs('Foo'));
     * // Waits for title to become something besides 'foo'.
-    * await browser.wait(titleIsNotFoo, 5000);
+    * browser.wait(titleIsNotFoo, 5000);
     *
     * @alias ExpectedConditions.not
     * @param {!function} expectedCondition
     *
     * @returns {!function} An expected condition that returns the negated value.
     */
-  def not(expectedCondition: js.Function): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def not(expectedCondition: js.Function): js.Function = js.native
   /**
     * Chain a number of expected conditions using logical_or, short circuiting
     * at the first expected condition that evaluates to true.
     *
     * @alias ExpectedConditions.or
     * @example
-    * const EC = protractor.ExpectedConditions;
-    * const titleContainsFoo = EC.titleContains('Foo');
-    * const titleContainsBar = EC.titleContains('Bar');
+    * var EC = protractor.ExpectedConditions;
+    * var titleContainsFoo = EC.titleContains('Foo');
+    * var titleContainsBar = EC.titleContains('Bar');
     * // Waits for title to contain either 'Foo' or 'Bar'
-    * await browser.wait(EC.or(titleContainsFoo, titleContainsBar), 5000);
+    * browser.wait(EC.or(titleContainsFoo, titleContainsBar), 5000);
     *
-    * @param {Array.<Function>} args An array of expected conditions to 'or'
+    * @param {Array.<Function>} fns An array of expected conditions to 'or'
     * together.
     *
     * @returns {!function} An expected condition that returns a promise which
     *     evaluates to the result of the logical or.
     */
-  def or(args: js.Function*): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def or(args: js.Function*): js.Function = js.native
   /**
     * An expectation for checking that an element is present on the DOM
     * of a page. This does not necessarily mean that the element is visible.
     * This is the opposite of 'stalenessOf'.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'abc' to be present on the dom.
-    * await browser.wait(EC.presenceOf($('#abc')), 5000);
+    * browser.wait(EC.presenceOf($('#abc')), 5000);
     *
     * @alias ExpectedConditions.presenceOf
     * @param {!ElementFinder} elementFinder The element to check
@@ -151,15 +151,15 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the element is present.
     */
-  def presenceOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def presenceOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function = js.native
   /**
     * An expectation for checking that an element is not attached to the DOM
     * of a page. This is the opposite of 'presenceOf'.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'abc' to be no longer present on the dom.
-    * await browser.wait(EC.stalenessOf($('#abc')), 5000);
+    * browser.wait(EC.stalenessOf($('#abc')), 5000);
     *
     * @alias ExpectedConditions.stalenessOf
     * @param {!ElementFinder} elementFinder The element to check
@@ -167,15 +167,15 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the element is stale.
     */
-  def stalenessOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def stalenessOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function = js.native
   /**
     * An expectation for checking if the given text is present in the
     * element. Returns false if the elementFinder does not find an element.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'abc' to contain the text 'foo'.
-    * await browser.wait(EC.textToBePresentInElement($('#abc'), 'foo'), 5000);
+    * browser.wait(EC.textToBePresentInElement($('#abc'), 'foo'), 5000);
     *
     * @alias ExpectedConditions.textToBePresentInElement
     * @param {!ElementFinder} elementFinder The element to check
@@ -184,15 +184,15 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the text is present in the element.
     */
-  def textToBePresentInElement(elementFinder: protractorLib.builtElementMod.ElementFinder, text: java.lang.String): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def textToBePresentInElement(elementFinder: protractorLib.builtElementMod.ElementFinder, text: java.lang.String): js.Function = js.native
   /**
     * An expectation for checking if the given text is present in the element’s
     * value. Returns false if the elementFinder does not find an element.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'myInput' to contain the input 'foo'.
-    * await browser.wait(EC.textToBePresentInElementValue($('#myInput'), 'foo'), 5000);
+    * browser.wait(EC.textToBePresentInElementValue($('#myInput'), 'foo'), 5000);
     *
     * @alias ExpectedConditions.textToBePresentInElementValue
     * @param {!ElementFinder} elementFinder The element to check
@@ -201,15 +201,15 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the text is present in the element's value.
     */
-  def textToBePresentInElementValue(elementFinder: protractorLib.builtElementMod.ElementFinder, text: java.lang.String): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def textToBePresentInElementValue(elementFinder: protractorLib.builtElementMod.ElementFinder, text: java.lang.String): js.Function = js.native
   /**
     * An expectation for checking that the title contains a case-sensitive
     * substring.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the title to contain 'foo'.
-    * await browser.wait(EC.titleContains('foo'), 5000);
+    * browser.wait(EC.titleContains('foo'), 5000);
     *
     * @alias ExpectedConditions.titleContains
     * @param {!string} title The fragment of title expected
@@ -217,14 +217,14 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the title contains the string.
     */
-  def titleContains(title: java.lang.String): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def titleContains(title: java.lang.String): js.Function = js.native
   /**
     * An expectation for checking the title of a page.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the title to be 'foo'.
-    * await browser.wait(EC.titleIs('foo'), 5000);
+    * browser.wait(EC.titleIs('foo'), 5000);
     *
     * @alias ExpectedConditions.titleIs
     * @param {!string} title The expected title, which must be an exact match.
@@ -232,15 +232,15 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the title equals the string.
     */
-  def titleIs(title: java.lang.String): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def titleIs(title: java.lang.String): js.Function = js.native
   /**
     * An expectation for checking that the URL contains a case-sensitive
     * substring.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the URL to contain 'foo'.
-    * await browser.wait(EC.urlContains('foo'), 5000);
+    * browser.wait(EC.urlContains('foo'), 5000);
     *
     * @alias ExpectedConditions.urlContains
     * @param {!string} url The fragment of URL expected
@@ -248,14 +248,14 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the URL contains the string.
     */
-  def urlContains(url: java.lang.String): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def urlContains(url: java.lang.String): js.Function = js.native
   /**
     * An expectation for checking the URL of a page.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the URL to be 'foo'.
-    * await browser.wait(EC.urlIs('foo'), 5000);
+    * browser.wait(EC.urlIs('foo'), 5000);
     *
     * @alias ExpectedConditions.urlIs
     * @param {!string} url The expected URL, which must be an exact match.
@@ -263,7 +263,7 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the url equals the string.
     */
-  def urlIs(url: java.lang.String): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def urlIs(url: java.lang.String): js.Function = js.native
   /**
     * An expectation for checking that an element is present on the DOM of a
     * page and visible. Visibility means that the element is not only displayed
@@ -272,9 +272,9 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * of 'invisibilityOf'.
     *
     * @example
-    * const EC = protractor.ExpectedConditions;
+    * var EC = protractor.ExpectedConditions;
     * // Waits for the element with id 'abc' to be visible on the dom.
-    * await browser.wait(EC.visibilityOf($('#abc')), 5000);
+    * browser.wait(EC.visibilityOf($('#abc')), 5000);
     *
     * @alias ExpectedConditions.visibilityOf
     * @param {!ElementFinder} elementFinder The element to check
@@ -282,6 +282,6 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise
     *     representing whether the element is visible.
     */
-  def visibilityOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function0[js.Promise[scala.Boolean]] = js.native
+  def visibilityOf(elementFinder: protractorLib.builtElementMod.ElementFinder): js.Function = js.native
 }
 

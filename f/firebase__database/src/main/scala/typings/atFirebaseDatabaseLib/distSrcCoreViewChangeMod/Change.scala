@@ -14,7 +14,7 @@ class Change protected () extends js.Object {
   def this(`type`: java.lang.String, snapshotNode: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, childName: java.lang.String, oldSnap: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, prevName: java.lang.String) = this()
   var childName: js.UndefOr[java.lang.String] = js.native
   var oldSnap: js.UndefOr[atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node] = js.native
-  var prevName: js.UndefOr[java.lang.String] = js.native
+  var prevName: js.UndefOr[java.lang.String | scala.Null] = js.native
   var snapshotNode: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node = js.native
   var `type`: java.lang.String = js.native
 }

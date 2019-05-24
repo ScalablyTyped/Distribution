@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-invariant
 
-Typings are for version 0.2.1
+Typings are for version 0.4.2
 
 ## Library description:
 TypeScript implementation of invariant(condition, message)

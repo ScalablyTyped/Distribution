@@ -7,14 +7,8 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Snackbar/Snackbar.SnackbarClassKey, never> */
 trait SnackbarProps extends js.Object {
-  var ClickAwayListenerProps: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
-    ]
-  ] = js.undefined
-  var ContentProps: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps]
-  ] = js.undefined
+  var ClickAwayListenerProps: js.UndefOr[atMaterialDashUiCoreLib.PartialClickAwayListenerProps] = js.undefined
+  var ContentProps: js.UndefOr[atMaterialDashUiCoreLib.PartialSnackbarContentProps] = js.undefined
   var TransitionComponent: js.UndefOr[
     reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
@@ -123,9 +117,7 @@ trait SnackbarProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SnackbarClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapSnackbarClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -351,10 +343,8 @@ object SnackbarProps {
   @scala.inline
   def apply(
     open: scala.Boolean,
-    ClickAwayListenerProps: stdLib.Partial[
-      atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
-    ] = null,
-    ContentProps: stdLib.Partial[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps] = null,
+    ClickAwayListenerProps: atMaterialDashUiCoreLib.PartialClickAwayListenerProps = null,
+    ContentProps: atMaterialDashUiCoreLib.PartialSnackbarContentProps = null,
     TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
     about: java.lang.String = null,
@@ -415,7 +405,7 @@ object SnackbarProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SnackbarClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapSnackbarClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

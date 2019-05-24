@@ -1,7 +1,7 @@
 
 # Scala.js typings for sip_dot_js
 
-Typings are for version 0.13.8
+Typings are for version 0.14.1
 
 ## Library description:
 A simple, intuitive, and powerful JavaScript signaling library
@@ -35,6 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
+/** Transaction state. */
 /**
  * The SessionDescriptionHandler interface SIP.js is expecting.
  */

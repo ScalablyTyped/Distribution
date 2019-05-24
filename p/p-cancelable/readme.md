@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-cancelable
 
-Typings are for version 1.1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Create a promise that can be canceled
@@ -31,15 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
- * Accepts a function that is called when the promise is canceled.
- *
- * You're not required to call this function. You can call this function multiple times to add multiple cancel handlers.
- */
-
-```
 

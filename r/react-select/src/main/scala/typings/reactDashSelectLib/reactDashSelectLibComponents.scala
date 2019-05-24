@@ -92,10 +92,10 @@ object reactDashSelectLibComponents {
   def Placeholder: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsPlaceholderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[js.Any]]]
   type PlaceholderProps[OptionType] = reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[OptionType]
   @scala.inline
-  def ReactDashSelect[OptionType]: reactLib.reactMod.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.reactDashSelectMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]]]
-  @scala.inline
-  def ReactDashSelectProps: reactDashSelectLib.libSelectMod.Props.type = reactDashSelectLib.libSelectMod.Props
-  type ReactDashSelectProps[OptionType] = reactDashSelectLib.libSelectMod.Props[OptionType]
+  def ReactDashSelect[OptionType, T /* <: reactDashSelectLib.libSelectMod.default[OptionType] */]: reactLib.reactMod.ComponentType[
+    reactDashSelectLib.libStateManagerMod.StateProps[reactDashSelectLib.libSelectMod.Props[OptionType]] with reactDashSelectLib.libStateManagerMod.Props[OptionType] with reactDashSelectLib.libSelectMod.Props[OptionType]
+  ] = js.constructorOf[reactDashSelectLib.reactDashSelectMod.default[OptionType, T]].asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashSelectLib.libStateManagerMod.StateProps[reactDashSelectLib.libSelectMod.Props[OptionType]] with reactDashSelectLib.libStateManagerMod.Props[OptionType] with reactDashSelectLib.libSelectMod.Props[OptionType]]]
   @scala.inline
   def Select[OptionType]: reactLib.reactMod.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.libSelectMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]]]
   @scala.inline
@@ -113,10 +113,10 @@ object reactDashSelectLibComponents {
   def SingleValue: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsSingleValueMod.default].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]]]
   type SingleValueProps[OptionType] = reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[OptionType]
   @scala.inline
-  def StateManager[OptionType]: reactLib.reactMod.ComponentType[reactDashSelectLib.libStateManagerMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.libStateManagerMod.StateManager[OptionType]].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSelectLib.libStateManagerMod.Props[OptionType]]]
-  @scala.inline
-  def StateManagerProps: reactDashSelectLib.libStateManagerMod.Props.type = reactDashSelectLib.libStateManagerMod.Props
-  type StateManagerProps[OptionType] = reactDashSelectLib.libStateManagerMod.Props[OptionType]
+  def StateManager[OptionType, T /* <: reactDashSelectLib.libSelectMod.default[OptionType] */]: reactLib.reactMod.ComponentType[
+    reactDashSelectLib.libStateManagerMod.StateProps[reactDashSelectLib.libSelectMod.Props[OptionType]] with reactDashSelectLib.libStateManagerMod.Props[OptionType] with reactDashSelectLib.libSelectMod.Props[OptionType]
+  ] = js.constructorOf[reactDashSelectLib.libStateManagerMod.StateManager[OptionType, T]].asInstanceOf[reactLib.reactMod.ComponentType[
+  reactDashSelectLib.libStateManagerMod.StateProps[reactDashSelectLib.libSelectMod.Props[OptionType]] with reactDashSelectLib.libStateManagerMod.Props[OptionType] with reactDashSelectLib.libSelectMod.Props[OptionType]]]
   @scala.inline
   def ValueContainer: reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsContainersMod.ValueContainer].asInstanceOf[reactLib.reactMod.ComponentType[reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[js.Any]]]
   type ValueContainerProps[OptionType] = reactDashSelectLib.libComponentsContainersMod.ValueContainerProps[OptionType]

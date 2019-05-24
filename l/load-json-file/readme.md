@@ -1,7 +1,7 @@
 
 # Scala.js typings for load-json-file
 
-Typings are for version 5.3.0
+Typings are for version 6.0.0
 
 ## Library description:
 Read and parse a JSON file

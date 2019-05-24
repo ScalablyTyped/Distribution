@@ -10,7 +10,7 @@ trait TSEnumDeclarationBuilder extends js.Object {
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     members: js.Array[astDashTypesLib.genKindsMod.TSEnumMemberKind]
-  ): astDashTypesLib.genNodesMod.TSEnumDeclaration = js.native
-  def from(params: astDashTypesLib.Anon_CommentsConstDeclare): astDashTypesLib.genNodesMod.TSEnumDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSEnumDeclaration = js.native
+  def from(params: astDashTypesLib.Anon_CommentsConstDeclare): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSEnumDeclaration = js.native
 }
 

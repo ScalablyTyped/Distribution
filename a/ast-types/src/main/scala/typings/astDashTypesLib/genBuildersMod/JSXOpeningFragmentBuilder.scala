@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JSXOpeningFragmentBuilder extends js.Object {
-  def apply(): astDashTypesLib.genNodesMod.JSXOpeningFragment = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNodesMod.JSXOpeningFragment = js.native
+  def apply(): astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXOpeningFragment = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXOpeningFragment = js.native
 }
 

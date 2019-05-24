@@ -1,7 +1,7 @@
 
 # Scala.js typings for cp-file
 
-Typings are for version 6.2.0
+Typings are for version 7.0.0
 
 ## Library description:
 Copy a file

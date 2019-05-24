@@ -34,6 +34,10 @@ class WebGLRenderer () extends Renderer {
     * The HTML5 Canvas's 'webgl' context obtained from the canvas where the renderer will draw.
     */
   var context: stdLib.WebGLRenderingContext = js.native
+  /**
+    * Debug configurations.
+    */
+  var debug: WebGLDebug = js.native
   var extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions = js.native
   /**
     * @deprecated
@@ -108,6 +112,10 @@ class WebGLRenderer () extends Renderer {
     depth: scala.Boolean,
     stencil: scala.Boolean
   ): scala.Unit = js.native
+  /**
+    * Compiles all materials in the scene with the camera. This is useful to precompile shaders before the first rendering.
+    */
+  def compile(scene: threeLib.srcScenesSceneMod.Scene, camera: threeLib.srcCamerasCameraMod.Camera): scala.Unit = js.native
   def dispose(): scala.Unit = js.native
   /**
     * @deprecated Use {@link WebGLRenderer#setScissorTest .setScissorTest()} instead.
@@ -130,9 +138,9 @@ class WebGLRenderer () extends Renderer {
   /**
     * @deprecated Use {@link WebGLRenderer#getRenderTarget .getRenderTarget()} instead.
     */
-  def getCurrentRenderTarget(): threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget = js.native
+  def getCurrentRenderTarget(): threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget | scala.Null = js.native
   def getCurrentViewport(target: threeLib.srcMathVector4Mod.Vector4): threeLib.srcMathVector4Mod.Vector4 = js.native
-  def getDrawingBufferSize(): threeLib.Anon_HeightWidth = js.native
+  def getDrawingBufferSize(target: threeLib.srcMathVector2Mod.Vector2): threeLib.srcMathVector2Mod.Vector2 = js.native
   /**
     * @deprecated Use {@link WebGLCapabilities#getMaxAnisotropy .capabilities.getMaxAnisotropy()} instead.
     */
@@ -143,9 +151,9 @@ class WebGLRenderer () extends Renderer {
     */
   def getPrecision(): java.lang.String = js.native
   /**
-    * @deprecated
+    * Returns the current render target. If no render target is set, null is returned.
     */
-  def getRenderTarget(): threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget = js.native
+  def getRenderTarget(): threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget | scala.Null = js.native
   /**
     * Copies the scissor area into target.
     */
@@ -207,6 +215,15 @@ class WebGLRenderer () extends Renderer {
   def setDrawingBufferSize(width: scala.Double, height: scala.Double, pixelRatio: scala.Double): scala.Unit = js.native
   def setPixelRatio(value: scala.Double): scala.Unit = js.native
   def setRenderTarget(): scala.Unit = js.native
+  def setRenderTarget(renderTarget: scala.Null, activeCubeFace: scala.Double): scala.Unit = js.native
+  def setRenderTarget(renderTarget: scala.Null, activeCubeFace: scala.Double, activeMipMapLevel: scala.Double): scala.Unit = js.native
+  /**
+    * Sets the active render target.
+    *
+    * @param renderTarget The {@link WebGLRenderTarget renderTarget} that needs to be activated. When `null` is given, the canvas is set as the active render target instead.
+  	 * @param activeCubeFace Specifies the active cube side (PX 0, NX 1, PY 2, NY 3, PZ 4, NZ 5) of {@link WebGLRenderTargetCube}.
+  	 * @param activeMipMapLevel Specifies the active mipmap level.
+    */
   def setRenderTarget(renderTarget: threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget): scala.Unit = js.native
   def setRenderTarget(
     renderTarget: threeLib.srcRenderersWebglWebGLRenderListsMod.RenderTarget,

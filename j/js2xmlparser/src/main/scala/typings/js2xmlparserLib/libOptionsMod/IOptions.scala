@@ -17,7 +17,7 @@ trait IOptions extends js.Object {
     * {
     *     "abc": {
     *         "=": "def"
-    *         "__val": "ghi"
+    *         "#": "ghi"
     *     }
     * }
     * ```
@@ -28,7 +28,7 @@ trait IOptions extends js.Object {
     * </root>
     * ```
     *
-    * If left undefined, the default value is `"="`.
+    * The default alias string is `"="`.
     */
   var aliasString: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -37,8 +37,9 @@ trait IOptions extends js.Object {
     * said key will be interpreted as attributes for the XML element for that
     * object.
     *
-    * The attribute object must be an object containing keys that map to
-    * primitives (string, number, boolean, null, or undefined).
+    * The keys of the value of `attributeString` are interpreted as attribute
+    * names, while the values mapping to those keys are interpreted as
+    * attribute values.
     *
     * For example, if `attributeString` is `"@"`, then the following object:
     * ```javascript
@@ -64,15 +65,15 @@ trait IOptions extends js.Object {
     * </root>
     * ```
     *
-    * If left undefined, the default value is `"@"`.
+    * The default attribute string is `"@"`.
     */
   var attributeString: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `cdataInvalidChars` is `true`, then any text containing the
-    * characters `<` or `&` shall be enclosed in CDATA sections. Otherwise,
-    * those characters shall be replaced with XML escape characters.
+    * Whether to enclose any text containing the characters `<` or `&`
+    * in CDATA sections. If this is false, these characters shall be replaced
+    * with XML escape characters instead.
     *
-    * If left undefined, the default value is `false`.
+    * By default, this is disabled.
     */
   var cdataInvalidChars: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -106,7 +107,7 @@ trait IOptions extends js.Object {
     * If `cdataKeys` has a key named `"*"`, then that entry will match all
     * keys.
     *
-    * If left undefined, the default value is an empty array.
+    * By default, this is an empty array.
     */
   var cdataKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
@@ -122,23 +123,41 @@ trait IOptions extends js.Object {
     */
   var format: js.UndefOr[IFormatOptions] = js.undefined
   /**
+    * Whether to replace any characters that are not valid in XML in particular
+    * contexts with the Unicode replacement character, U+FFFD.
+    *
+    * At present this is limited to attribute names and values; element names
+    * and character data; CDATA sections; and comments. This may be extended
+    * in future.
+    *
+    * By default, this is disabled.
+    */
+  var replaceInvalidChars: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * If an value has a type (as defined by calling `Object.prototype.toString`
     * on the value) equal to a key in `typeHandlers`, then said value will be
     * replaced by the return value of the function mapped to by the key in
     * `typeHandlers`. This function is called with the value as a parameter.
+    *
+    * If one of these functions returns the sole instance of {@link Absent},
+    * then the value will be suppressed from the XML output altogether.
     *
     * For example, if `typeHandlers` is:
     * ```javascript
     * {
     *     "[object Date]": function(value) {
     *         return value.getYear();
+    *     },
+    *     "[object Null]": function(value) {
+    *         return Absent.instance;
     *     }
     * }
     * ```
     * then the following object:
     * ```javascript
     * {
-    *     "abc": new Date(2012, 10, 31)
+    *     "abc": new Date(2012, 10, 31),
+    *     "def": null
     * }
     * ```
     * will result in the following XML for a root element named `"root"`:
@@ -154,15 +173,35 @@ trait IOptions extends js.Object {
     * Note that normal parsing still occurs for the value returned by the
     * function; it is not directly converted to a string.
     *
-    * If left undefined, the default value is an empty object.
+    * The default value is an empty object.
     */
   var typeHandlers: js.UndefOr[ITypeHandlers] = js.undefined
+  /**
+    * Whether to use a self-closing tag for empty elements.
+    *
+    * For example, the following element will be used:
+    * ```xml
+    * <element/>
+    * ```
+    * instead of:
+    * ```xml
+    * <element></element>
+    * ```
+    *
+    * By default, this is enabled.
+    */
+  var useSelfClosingTagIfEmpty: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Whether to throw an exception if basic XML validation fails while
+    * building the document.
+    *
+    * By default, this is enabled.
+    */
+  var validation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If an object or map contains a key that, when converted to a string,
     * begins with the value of `valueString`, then the value mapped by said key
     * will be represented as bare text within the XML element for that object.
-    * The value must be a primitive (string, number, boolean, null, or
-    * undefined).
     *
     * For example, if `valueString` is `"#"`, then the following object:
     * ```javascript
@@ -181,7 +220,7 @@ trait IOptions extends js.Object {
     * </root>
     * ```
     *
-    * If left undefined, the default value is `"#"`.
+    * The default value is `"#"`.
     */
   var valueString: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -192,9 +231,10 @@ trait IOptions extends js.Object {
     *
     * The key in `wrapHandlers` must map to a function that is called with the
     * key name, as well as the array or set, as parameters. This function must
-    * return a string, which will become the name for each XML element for
-    * each item in the array or set. Alternatively, this function may return
-    * `null` to indicate that no wrapping should occur.
+    * return a string or value that can be converted to a string, which will
+    * become the name for each XML element for each item in the array or set.
+    * Alternatively, this function may return `null` to indicate that no
+    * wrapping should occur.
     *
     * For example, if `wrapHandlers` is:
     * ```javascript
@@ -236,7 +276,7 @@ trait IOptions extends js.Object {
     * If `wrapHandlers` has a key named `"*"`, then that entry will
     * match all arrays and sets, unless there is a more specific entry.
     *
-    * If left undefined, the default value is an empty object.
+    * The default value is an empty object.
     */
   var wrapHandlers: js.UndefOr[IWrapHandlers] = js.undefined
 }
@@ -251,7 +291,10 @@ object IOptions {
     declaration: IDeclarationOptions = null,
     dtd: IDtdOptions = null,
     format: IFormatOptions = null,
+    replaceInvalidChars: js.UndefOr[scala.Boolean] = js.undefined,
     typeHandlers: ITypeHandlers = null,
+    useSelfClosingTagIfEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    validation: js.UndefOr[scala.Boolean] = js.undefined,
     valueString: java.lang.String = null,
     wrapHandlers: IWrapHandlers = null
   ): IOptions = {
@@ -263,7 +306,10 @@ object IOptions {
     if (declaration != null) __obj.updateDynamic("declaration")(declaration)
     if (dtd != null) __obj.updateDynamic("dtd")(dtd)
     if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(replaceInvalidChars)) __obj.updateDynamic("replaceInvalidChars")(replaceInvalidChars)
     if (typeHandlers != null) __obj.updateDynamic("typeHandlers")(typeHandlers)
+    if (!js.isUndefined(useSelfClosingTagIfEmpty)) __obj.updateDynamic("useSelfClosingTagIfEmpty")(useSelfClosingTagIfEmpty)
+    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation)
     if (valueString != null) __obj.updateDynamic("valueString")(valueString)
     if (wrapHandlers != null) __obj.updateDynamic("wrapHandlers")(wrapHandlers)
     __obj.asInstanceOf[IOptions]

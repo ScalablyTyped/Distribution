@@ -855,8 +855,8 @@ object databaseNs extends js.Object {
       * must also be called on any child listeners to remove the callback.
       *
       * If a callback is not specified, all callbacks for the specified eventType
-      * will be removed. Similarly, if no eventType or callback is specified, all
-      * callbacks for the `Reference` will be removed.
+      * will be removed. Similarly, if no eventType is specified, all callbacks
+      * for the `Reference` will be removed.
       *
       * @example
       * ```javascript
@@ -881,22 +881,23 @@ object databaseNs extends js.Object {
       * ```
       *
       * @param eventType One of the following strings: "value",
-      *   "child_added", "child_changed", "child_removed", or "child_moved."
-      * @param callback The
-      *   callback function that was passed to `on()`.
+      *   "child_added", "child_changed", "child_removed", or "child_moved." If
+      *   omitted, all callbacks for the `Reference` will be removed.
+      * @param callback The callback function that was passed to `on()` or
+      *   `undefined` to remove all callbacks.
       * @param context The context that was passed to `on()`.
       */
-    def off(): js.Any = js.native
-    def off(eventType: EventType): js.Any = js.native
+    def off(): scala.Unit = js.native
+    def off(eventType: EventType): scala.Unit = js.native
     def off(
       eventType: EventType,
       callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _]
-    ): js.Any = js.native
+    ): scala.Unit = js.native
     def off(
       eventType: EventType,
       callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       context: js.Object
-    ): js.Any = js.native
+    ): scala.Unit = js.native
     /**
       * Listens for data changes at a particular location.
       *
@@ -1011,25 +1012,41 @@ object databaseNs extends js.Object {
       */
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _]
-    ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _]
+    ): js.Function2[
+        /* a */ DataSnapshot | scala.Null, 
+        /* b */ js.UndefOr[java.lang.String | scala.Null], 
+        _
+      ] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       cancelCallbackOrContext: js.Object
-    ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+    ): js.Function2[
+        /* a */ DataSnapshot | scala.Null, 
+        /* b */ js.UndefOr[java.lang.String | scala.Null], 
+        _
+      ] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       cancelCallbackOrContext: js.Object,
       context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+    ): js.Function2[
+        /* a */ DataSnapshot | scala.Null, 
+        /* b */ js.UndefOr[java.lang.String | scala.Null], 
+        _
+      ] = js.native
     def on(
       eventType: EventType,
-      callback: js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _],
+      callback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       cancelCallbackOrContext: scala.Null,
       context: js.Object
-    ): js.Function2[/* a */ DataSnapshot | scala.Null, /* b */ js.UndefOr[java.lang.String], _] = js.native
+    ): js.Function2[
+        /* a */ DataSnapshot | scala.Null, 
+        /* b */ js.UndefOr[java.lang.String | scala.Null], 
+        _
+      ] = js.native
     /**
       * Listens for exactly one event of the specified event type, and then stops
       * listening.
@@ -1066,22 +1083,33 @@ object databaseNs extends js.Object {
     def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _]
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _]
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
+      failureCallbackOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit]
+    ): js.Promise[DataSnapshot] = js.native
+    def once(
+      eventType: EventType,
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
+      failureCallbackOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit],
+      context: js.Object
+    ): js.Promise[DataSnapshot] = js.native
+    def once(
+      eventType: EventType,
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       failureCallbackOrContext: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       failureCallbackOrContext: js.Object,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native
     def once(
       eventType: EventType,
-      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String], _],
+      successCallback: js.Function2[/* a */ DataSnapshot, /* b */ js.UndefOr[java.lang.String | scala.Null], _],
       failureCallbackOrContext: scala.Null,
       context: js.Object
     ): js.Promise[DataSnapshot] = js.native

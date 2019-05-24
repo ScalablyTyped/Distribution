@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "aurelia-templating"
-version := "1.10.2-50d2eb"
+version := "1.10.2-c998bd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aurelia-binding" % "2.3.0-178daa",
+  "org.scalablytyped" %%% "aurelia-binding" % "2.3.1-178daa",
   "org.scalablytyped" %%% "aurelia-dependency-injection" % "1.4.2-98898e",
   "org.scalablytyped" %%% "aurelia-loader" % "1.0.2-d6560e",
   "org.scalablytyped" %%% "aurelia-metadata" % "1.0.6-549e2a",

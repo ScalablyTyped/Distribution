@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormLabel.FormLabelProps, @material-ui/core.@material-ui/core/InputLabel/InputLabel.InputLabelClassKey, never> */
 trait InputLabelProps extends js.Object {
-  var FormLabelClasses: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelClassKey]
-    ]
-  ] = js.undefined
+  var FormLabelClasses: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapFormLabelClassKey] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.undefined
@@ -113,9 +109,7 @@ trait InputLabelProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputLabelClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapInputLabelClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelBaseProps]
@@ -337,9 +331,7 @@ trait InputLabelProps extends js.Object {
 object InputLabelProps {
   @scala.inline
   def apply(
-    FormLabelClasses: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelClassKey]
-    ] = null,
+    FormLabelClasses: atMaterialDashUiCoreLib.PartialClassNameMapFormLabelClassKey = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     `aria-activedescendant`: java.lang.String = null,
@@ -395,7 +387,7 @@ object InputLabelProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputLabelClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapInputLabelClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelBaseProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-my-way"
-version := "2.0.1-6e8bdb"
+version := "1.18.1-6e8bdb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

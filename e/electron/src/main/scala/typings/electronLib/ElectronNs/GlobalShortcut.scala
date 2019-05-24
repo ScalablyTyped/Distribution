@@ -23,7 +23,17 @@ trait GlobalShortcut extends EventEmitter {
     * on macOS 10.14 Mojave unless the app has been authorized as a trusted
     * accessibility client:
     */
-  def register(accelerator: Accelerator, callback: js.Function): scala.Unit = js.native
+  def register(accelerator: Accelerator, callback: js.Function): scala.Boolean = js.native
+  /**
+    * Registers a global shortcut of all accelerator items in accelerators. The
+    * callback is called when any of the registered shortcuts are pressed by the user.
+    * When a given accelerator is already taken by other applications, this call will
+    * silently fail. This behavior is intended by operating systems, since they don't
+    * want applications to fight for global shortcuts. The following accelerators will
+    * not be registered successfully on macOS 10.14 Mojave unless the app has been
+    * authorized as a trusted accessibility client:
+    */
+  def registerAll(accelerators: js.Array[java.lang.String], callback: js.Function): scala.Unit = js.native
   /**
     * Unregisters the global shortcut of accelerator.
     */

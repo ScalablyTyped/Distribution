@@ -53,7 +53,7 @@ trait Http extends Integration {
   * options.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- ddDashTraceLib.ddDashTraceMod.pluginsNs.HttpServer because var conflicts: analytics, blacklist, enabled, headers, service, validateStatus, whitelist. Inlined hooks */ trait http extends HttpClient {
+- ddDashTraceLib.ddDashTraceMod.pluginsNs.HttpServer because var conflicts: analytics, blacklist, enabled, headers, hooks, service, validateStatus, whitelist. Inlined  */ trait http extends HttpClient {
   /**
     * Configuration for HTTP clients.
     */
@@ -61,7 +61,8 @@ trait Http extends Integration {
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[ddDashTraceLib.Anon_Req] = js.undefined
+  @JSName("hooks")
+  var hooks_http: js.UndefOr[ddDashTraceLib.Anon_ReqRequestRes] = js.undefined
   /**
     * Configuration for HTTP servers.
     */
@@ -105,7 +106,7 @@ object http {
     client: HttpClient = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Array[java.lang.String] = null,
-    hooks: ddDashTraceLib.Anon_Req = null,
+    hooks: ddDashTraceLib.Anon_ReqRequestRes = null,
     server: HttpServer = null,
     service: java.lang.String = null,
     splitByDomain: js.UndefOr[scala.Boolean] = js.undefined,

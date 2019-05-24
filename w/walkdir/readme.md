@@ -1,7 +1,7 @@
 
 # Scala.js typings for walkdir
 
-Typings are for version 0.3.2
+Typings are for version 0.4.0
 
 ## Library description:
 Find files simply. Walks a directory tree emitting events based on what it finds. Presents a familiar callback/emitter/a+sync interface. Walk a tree of any depth.

@@ -9,7 +9,7 @@ trait Meta extends js.Object {
   var location: ActionMetaLocation
   var navigation: js.UndefOr[NavigationAction] = js.undefined
   var notFoundPath: js.UndefOr[java.lang.String] = js.undefined
-  var query: js.UndefOr[js.Object] = js.undefined
+  var query: js.UndefOr[Query] = js.undefined
   var search: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -19,7 +19,7 @@ object Meta {
     location: ActionMetaLocation,
     navigation: NavigationAction = null,
     notFoundPath: java.lang.String = null,
-    query: js.Object = null,
+    query: Query = null,
     search: java.lang.String = null
   ): Meta = {
     val __obj = js.Dynamic.literal(location = location)

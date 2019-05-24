@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Electron.WebRequest")
 @js.native
 class WebRequest () extends EventEmitter {
+  def onBeforeRedirect(): scala.Unit = js.native
+  def onBeforeRedirect(filter: OnBeforeRedirectFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) when a server initiated
     * redirect is about to occur.
@@ -22,6 +24,8 @@ class WebRequest () extends EventEmitter {
     * redirect is about to occur.
     */
   def onBeforeRedirect(listener: js.Function1[/* details */ OnBeforeRedirectDetails, scala.Unit]): scala.Unit = js.native
+  def onBeforeRequest(): scala.Unit = js.native
+  def onBeforeRequest(filter: OnBeforeRequestFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details, callback) when a request is
     * about to occur. The uploadData is an array of UploadData objects. The callback
@@ -47,6 +51,8 @@ class WebRequest () extends EventEmitter {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def onBeforeSendHeaders(): scala.Unit = js.native
+  def onBeforeSendHeaders(filter: OnBeforeSendHeadersFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details, callback) before sending an
     * HTTP request, once the request headers are available. This may occur after a TCP
@@ -74,6 +80,8 @@ class WebRequest () extends EventEmitter {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def onCompleted(): scala.Unit = js.native
+  def onCompleted(filter: OnCompletedFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) when a request is completed.
     */
@@ -82,6 +90,8 @@ class WebRequest () extends EventEmitter {
     * The listener will be called with listener(details) when a request is completed.
     */
   def onCompleted(listener: js.Function1[/* details */ OnCompletedDetails, scala.Unit]): scala.Unit = js.native
+  def onErrorOccurred(): scala.Unit = js.native
+  def onErrorOccurred(filter: OnErrorOccurredFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) when an error occurs.
     */
@@ -93,6 +103,8 @@ class WebRequest () extends EventEmitter {
     * The listener will be called with listener(details) when an error occurs.
     */
   def onErrorOccurred(listener: js.Function1[/* details */ OnErrorOccurredDetails, scala.Unit]): scala.Unit = js.native
+  def onHeadersReceived(): scala.Unit = js.native
+  def onHeadersReceived(filter: OnHeadersReceivedFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details, callback) when HTTP response
     * headers of a request have been received. The callback has to be called with an
@@ -118,6 +130,8 @@ class WebRequest () extends EventEmitter {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def onResponseStarted(): scala.Unit = js.native
+  def onResponseStarted(filter: OnResponseStartedFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) when first byte of the
     * response body is received. For HTTP requests, this means that the status line
@@ -133,6 +147,8 @@ class WebRequest () extends EventEmitter {
     * and response headers are available.
     */
   def onResponseStarted(listener: js.Function1[/* details */ OnResponseStartedDetails, scala.Unit]): scala.Unit = js.native
+  def onSendHeaders(): scala.Unit = js.native
+  def onSendHeaders(filter: OnSendHeadersFilter): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) just before a request is
     * going to be sent to the server, modifications of previous onBeforeSendHeaders

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "locate-path"
-version := "4.0.0-c16f96"
+version := "5.0.0-148614"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

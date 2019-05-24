@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-utilities", JSImport.Namespace)
 @js.native
 object apolloDashUtilitiesMod extends js.Object {
+  val canUseWeakMap: scala.Boolean = js.native
   def addTypenameToDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def argumentsObjectFromField(field: graphqlLib.languageAstMod.DirectiveNode, variables: js.Object): js.Object = js.native
   def argumentsObjectFromField(field: graphqlLib.languageAstMod.FieldNode, variables: js.Object): js.Object = js.native
@@ -34,6 +35,7 @@ object apolloDashUtilitiesMod extends js.Object {
   def getFragmentDefinitions(doc: graphqlLib.languageAstMod.DocumentNode): js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode] = js.native
   def getFragmentQueryDocument(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def getFragmentQueryDocument(document: graphqlLib.languageAstMod.DocumentNode, fragmentName: java.lang.String): graphqlLib.languageAstMod.DocumentNode = js.native
+  def getInclusionDirectives(directives: js.Array[graphqlLib.languageAstMod.DirectiveNode]): apolloDashUtilitiesLib.libDirectivesMod.InclusionDirectives = js.native
   def getMainDefinition(queryDoc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.OperationDefinitionNode | graphqlLib.languageAstMod.FragmentDefinitionNode = js.native
   def getMutationDefinition(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.OperationDefinitionNode = js.native
   def getOperationDefinition(doc: graphqlLib.languageAstMod.DocumentNode): js.UndefOr[graphqlLib.languageAstMod.OperationDefinitionNode] = js.native

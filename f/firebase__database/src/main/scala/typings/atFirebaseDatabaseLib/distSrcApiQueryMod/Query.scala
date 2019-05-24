@@ -109,6 +109,12 @@ class Query protected () extends js.Object {
     cancelCallbackOrContext: js.Object,
     context: js.Object
   ): SnapshotCallback = js.native
+  def on(
+    eventType: java.lang.String,
+    callback: SnapshotCallback,
+    cancelCallbackOrContext: scala.Null,
+    context: js.Object
+  ): SnapshotCallback = js.native
   def onChildEvent(callbacks: org.scalablytyped.runtime.StringDictionary[SnapshotCallback]): scala.Unit = js.native
   def onChildEvent(
     callbacks: org.scalablytyped.runtime.StringDictionary[SnapshotCallback],
@@ -157,7 +163,7 @@ class Query protected () extends js.Object {
     * Attaches a listener, waits for the first event, and then removes the listener
     * @param {!string} eventType
     * @param {!function(!DataSnapshot, string=)} userCallback
-    * @param cancelOrContext
+    * @param failureCallbackOrContext
     * @param context
     * @return {!firebase.Promise}
     */
@@ -166,19 +172,25 @@ class Query protected () extends js.Object {
   def once(
     eventType: java.lang.String,
     userCallback: SnapshotCallback,
-    cancelOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit]
+    failureCallbackOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit]
   ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   def once(
     eventType: java.lang.String,
     userCallback: SnapshotCallback,
-    cancelOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit],
+    failureCallbackOrContext: js.Function1[/* a */ stdLib.Error, scala.Unit],
     context: js.Object
   ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
-  def once(eventType: java.lang.String, userCallback: SnapshotCallback, cancelOrContext: js.Object): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  def once(eventType: java.lang.String, userCallback: SnapshotCallback, failureCallbackOrContext: js.Object): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   def once(
     eventType: java.lang.String,
     userCallback: SnapshotCallback,
-    cancelOrContext: js.Object,
+    failureCallbackOrContext: js.Object,
+    context: js.Object
+  ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
+  def once(
+    eventType: java.lang.String,
+    userCallback: SnapshotCallback,
+    failureCallbackOrContext: scala.Null,
     context: js.Object
   ): js.Promise[atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot] = js.native
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__util
 
-Typings are for version 0.2.14
+Typings are for version 0.2.16
 
 ## Library description:
 _NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a member of the Firebase team, please avoid using this package_
@@ -64,7 +64,7 @@ These comments are from the typescript definitions and might be useful:
  */
 /**
  * Returns navigator.userAgent string or '' if it's not defined.
- * @return {string} user agent string
+ * @return user agent string
  */
 /**
  * @fileoverview Standardized Firebase Error.

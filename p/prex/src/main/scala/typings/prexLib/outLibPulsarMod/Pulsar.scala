@@ -17,6 +17,7 @@ class Pulsar () extends js.Object {
     * Notifies all waiters.
     */
   def pulseAll(): scala.Unit = js.native
+  def wait(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[scala.Unit] = js.native
   def wait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

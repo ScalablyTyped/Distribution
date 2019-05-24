@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Location extends js.Object {
   var pathname: java.lang.String
   var payload: Payload
-  var query: js.UndefOr[js.Object] = js.undefined
+  var query: js.UndefOr[Query] = js.undefined
   var search: js.UndefOr[java.lang.String] = js.undefined
   var `type`: java.lang.String
 }
@@ -19,7 +19,7 @@ object Location {
     pathname: java.lang.String,
     payload: Payload,
     `type`: java.lang.String,
-    query: js.Object = null,
+    query: Query = null,
     search: java.lang.String = null
   ): Location = {
     val __obj = js.Dynamic.literal(pathname = pathname, payload = payload)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for gaxios
 
-Typings are for version 1.8.3
+Typings are for version 1.8.4
 
 ## Library description:
 A simple common HTTP client specifically for Google APIs and services.

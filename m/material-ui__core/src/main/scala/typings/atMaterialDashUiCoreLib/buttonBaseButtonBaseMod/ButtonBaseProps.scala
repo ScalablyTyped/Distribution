@@ -115,9 +115,7 @@ trait ButtonBaseProps extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ButtonBaseClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapButtonBaseClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[ButtonBaseProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -407,7 +405,7 @@ object ButtonBaseProps {
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ButtonBaseClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapButtonBaseClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[ButtonBaseProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

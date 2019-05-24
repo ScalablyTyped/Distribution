@@ -135,6 +135,14 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends
     */
   var labelSeparation: js.UndefOr[NS] = js.undefined
   /**
+    * Custom x-position for legend with orient "none".
+    */
+  var legendX: js.UndefOr[N] = js.undefined
+  /**
+    * Custom y-position for legend with orient "none".
+    */
+  var legendY: js.UndefOr[N] = js.undefined
+  /**
     * The offset in pixels by which to displace the legend from the data rectangle and axes.
     *
     * __Default value:__ `18`.
@@ -299,6 +307,8 @@ object BaseLegend {
     labelOverlap: LO = null,
     labelPadding: N = null,
     labelSeparation: NS = null,
+    legendX: N = null,
+    legendY: N = null,
     offset: N = null,
     orient: LOR = null,
     padding: N = null,
@@ -351,6 +361,8 @@ object BaseLegend {
     if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
+    if (legendX != null) __obj.updateDynamic("legendX")(legendX.asInstanceOf[js.Any])
+    if (legendY != null) __obj.updateDynamic("legendY")(legendY.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

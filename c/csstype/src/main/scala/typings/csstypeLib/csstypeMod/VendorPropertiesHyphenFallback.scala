@@ -133,7 +133,6 @@ object VendorPropertiesHyphenFallback {
     `-ms-wrap-margin`: MsWrapMarginProperty[TLength] | js.Array[MsWrapMarginProperty[TLength]] = null,
     `-ms-wrap-through`: MsWrapThroughProperty | js.Array[MsWrapThroughProperty] = null,
     `-ms-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null,
-    `-o-border-image`: BorderImageProperty | js.Array[BorderImageProperty] = null,
     `-o-object-fit`: ObjectFitProperty | js.Array[ObjectFitProperty] = null,
     `-o-object-position`: ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]] = null,
     `-o-tab-size`: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]] = null,
@@ -373,7 +372,6 @@ object VendorPropertiesHyphenFallback {
     if (`-ms-wrap-margin` != null) __obj.updateDynamic("-ms-wrap-margin")(`-ms-wrap-margin`.asInstanceOf[js.Any])
     if (`-ms-wrap-through` != null) __obj.updateDynamic("-ms-wrap-through")(`-ms-wrap-through`.asInstanceOf[js.Any])
     if (`-ms-writing-mode` != null) __obj.updateDynamic("-ms-writing-mode")(`-ms-writing-mode`.asInstanceOf[js.Any])
-    if (`-o-border-image` != null) __obj.updateDynamic("-o-border-image")(`-o-border-image`.asInstanceOf[js.Any])
     if (`-o-object-fit` != null) __obj.updateDynamic("-o-object-fit")(`-o-object-fit`.asInstanceOf[js.Any])
     if (`-o-object-position` != null) __obj.updateDynamic("-o-object-position")(`-o-object-position`.asInstanceOf[js.Any])
     if (`-o-tab-size` != null) __obj.updateDynamic("-o-tab-size")(`-o-tab-size`.asInstanceOf[js.Any])

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class FSWatcher ()
   extends nodeLib.fsMod.FSWatcher {
   def this(options: WatchOptions) = this()
+  var options: WatchOptions = js.native
   /**
     * Add files, directories, or glob patterns for tracking. Takes an array of strings or just one
     * string.
@@ -25,7 +26,7 @@ class FSWatcher ()
     * the `cwd` option was used), and the values are arrays of the names of the items contained in
     * each directory.
     */
-  def getWatched(): WatchedPaths = js.native
+  def getWatched(): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   def on(
     event: chokidarLib.chokidarLibStrings.all,
     listener: js.Function3[

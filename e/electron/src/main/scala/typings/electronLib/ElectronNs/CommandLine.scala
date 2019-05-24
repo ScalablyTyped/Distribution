@@ -19,5 +19,10 @@ trait CommandLine extends js.Object {
     */
   def appendSwitch(the_switch: java.lang.String): scala.Unit = js.native
   def appendSwitch(the_switch: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Note: When the switch is not present, it returns empty string.
+    */
+  def getSwitchValue(the_switch: java.lang.String): java.lang.String = js.native
+  def hasSwitch(the_switch: java.lang.String): scala.Boolean = js.native
 }
 

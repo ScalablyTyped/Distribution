@@ -11,12 +11,12 @@ trait UpdateExpressionBuilder extends js.Object {
     operator: astDashTypesLib.astDashTypesLibStrings.`++`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
-  ): astDashTypesLib.genNodesMod.UpdateExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UpdateExpression = js.native
   def apply(
     operator: astDashTypesLib.astDashTypesLibStrings.`--`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
-  ): astDashTypesLib.genNodesMod.UpdateExpression = js.native
-  def from(params: astDashTypesLib.Anon_ArgumentCommentsLoc): astDashTypesLib.genNodesMod.UpdateExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UpdateExpression = js.native
+  def from(params: astDashTypesLib.Anon_ArgumentCommentsLoc): astDashTypesLib.genNamedTypesMod.namedTypesNs.UpdateExpression = js.native
 }
 

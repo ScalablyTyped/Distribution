@@ -15,7 +15,7 @@ trait DescribeTagsRequest extends js.Object {
     */
   var Marker: js.UndefOr[Marker] = js.undefined
   /**
-    * (Optional) The maximum number of file system tags to return in the response. Currently, this number is automatically set to 10.
+    * (Optional) The maximum number of file system tags to return in the response. Currently, this number is automatically set to 10, and other values are ignored. The response is paginated at 10 per page if you have more than 10 tags.
     */
   var MaxItems: js.UndefOr[MaxItems] = js.undefined
 }

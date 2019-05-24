@@ -455,6 +455,12 @@ trait ObsoletePropertiesHyphen[TLength] extends js.Object {
     */
   var `-o-background-size`: js.UndefOr[BackgroundSizeProperty[TLength]] = js.undefined
   /**
+    * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
+    *
+    * @deprecated
+    */
+  var `-o-border-image`: js.UndefOr[BorderImageProperty] = js.undefined
+  /**
     * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
     *
     * **Initial value**: `none`
@@ -691,6 +697,14 @@ trait ObsoletePropertiesHyphen[TLength] extends js.Object {
     */
   var `ime-mode`: js.UndefOr[ImeModeProperty] = js.undefined
   /**
+    * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * @deprecated
+    */
+  var `offset-block`: js.UndefOr[InsetBlockProperty[TLength]] = js.undefined
+  /**
     * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
@@ -706,6 +720,14 @@ trait ObsoletePropertiesHyphen[TLength] extends js.Object {
     * @deprecated
     */
   var `offset-block-start`: js.UndefOr[InsetBlockStartProperty[TLength]] = js.undefined
+  /**
+    * The **`inset-inline`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * @deprecated
+    */
+  var `offset-inline`: js.UndefOr[InsetInlineProperty[TLength]] = js.undefined
   /**
     * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
@@ -840,6 +862,7 @@ object ObsoletePropertiesHyphen {
     `-o-animation-play-state`: AnimationPlayStateProperty = null,
     `-o-animation-timing-function`: AnimationTimingFunctionProperty = null,
     `-o-background-size`: BackgroundSizeProperty[TLength] = null,
+    `-o-border-image`: BorderImageProperty = null,
     `-o-transform`: TransformProperty = null,
     `-o-transition`: TransitionProperty = null,
     `-o-transition-delay`: GlobalsString = null,
@@ -870,8 +893,10 @@ object ObsoletePropertiesHyphen {
     `grid-gap`: GridGapProperty[TLength] = null,
     `grid-row-gap`: GridRowGapProperty[TLength] = null,
     `ime-mode`: ImeModeProperty = null,
+    `offset-block`: InsetBlockProperty[TLength] = null,
     `offset-block-end`: InsetBlockEndProperty[TLength] = null,
     `offset-block-start`: InsetBlockStartProperty[TLength] = null,
+    `offset-inline`: InsetInlineProperty[TLength] = null,
     `offset-inline-end`: InsetInlineEndProperty[TLength] = null,
     `offset-inline-start`: InsetInlineStartProperty[TLength] = null,
     `scroll-snap-coordinate`: ScrollSnapCoordinateProperty[TLength] = null,
@@ -940,6 +965,7 @@ object ObsoletePropertiesHyphen {
     if (`-o-animation-play-state` != null) __obj.updateDynamic("-o-animation-play-state")(`-o-animation-play-state`.asInstanceOf[js.Any])
     if (`-o-animation-timing-function` != null) __obj.updateDynamic("-o-animation-timing-function")(`-o-animation-timing-function`.asInstanceOf[js.Any])
     if (`-o-background-size` != null) __obj.updateDynamic("-o-background-size")(`-o-background-size`.asInstanceOf[js.Any])
+    if (`-o-border-image` != null) __obj.updateDynamic("-o-border-image")(`-o-border-image`.asInstanceOf[js.Any])
     if (`-o-transform` != null) __obj.updateDynamic("-o-transform")(`-o-transform`.asInstanceOf[js.Any])
     if (`-o-transition` != null) __obj.updateDynamic("-o-transition")(`-o-transition`.asInstanceOf[js.Any])
     if (`-o-transition-delay` != null) __obj.updateDynamic("-o-transition-delay")(`-o-transition-delay`.asInstanceOf[js.Any])
@@ -970,8 +996,10 @@ object ObsoletePropertiesHyphen {
     if (`grid-gap` != null) __obj.updateDynamic("grid-gap")(`grid-gap`.asInstanceOf[js.Any])
     if (`grid-row-gap` != null) __obj.updateDynamic("grid-row-gap")(`grid-row-gap`.asInstanceOf[js.Any])
     if (`ime-mode` != null) __obj.updateDynamic("ime-mode")(`ime-mode`)
+    if (`offset-block` != null) __obj.updateDynamic("offset-block")(`offset-block`.asInstanceOf[js.Any])
     if (`offset-block-end` != null) __obj.updateDynamic("offset-block-end")(`offset-block-end`.asInstanceOf[js.Any])
     if (`offset-block-start` != null) __obj.updateDynamic("offset-block-start")(`offset-block-start`.asInstanceOf[js.Any])
+    if (`offset-inline` != null) __obj.updateDynamic("offset-inline")(`offset-inline`.asInstanceOf[js.Any])
     if (`offset-inline-end` != null) __obj.updateDynamic("offset-inline-end")(`offset-inline-end`.asInstanceOf[js.Any])
     if (`offset-inline-start` != null) __obj.updateDynamic("offset-inline-start")(`offset-inline-start`.asInstanceOf[js.Any])
     if (`scroll-snap-coordinate` != null) __obj.updateDynamic("scroll-snap-coordinate")(`scroll-snap-coordinate`.asInstanceOf[js.Any])

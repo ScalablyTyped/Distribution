@@ -23,7 +23,7 @@ trait UpdateProvisionedProductInput extends js.Object {
     */
   var ProvisionedProductId: js.UndefOr[Id] = js.undefined
   /**
-    * The updated name of the provisioned product. You cannot specify both ProvisionedProductName and ProvisionedProductId.
+    * The name of the provisioned product. You cannot specify both ProvisionedProductName and ProvisionedProductId.
     */
   var ProvisionedProductName: js.UndefOr[ProvisionedProductNameOrArn] = js.undefined
   /**

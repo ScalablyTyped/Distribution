@@ -14,6 +14,7 @@ trait OnBeforeRedirectDetails extends js.Object {
   var ip: js.UndefOr[java.lang.String] = js.undefined
   var method: java.lang.String
   var redirectURL: java.lang.String
+  var referrer: java.lang.String
   var resourceType: java.lang.String
   var responseHeaders: ResponseHeaders
   var statusCode: scala.Double
@@ -29,6 +30,7 @@ object OnBeforeRedirectDetails {
     id: scala.Double,
     method: java.lang.String,
     redirectURL: java.lang.String,
+    referrer: java.lang.String,
     resourceType: java.lang.String,
     responseHeaders: ResponseHeaders,
     statusCode: scala.Double,
@@ -37,7 +39,7 @@ object OnBeforeRedirectDetails {
     ip: java.lang.String = null,
     webContentsId: scala.Int | scala.Double = null
   ): OnBeforeRedirectDetails = {
-    val __obj = js.Dynamic.literal(fromCache = fromCache, id = id, method = method, redirectURL = redirectURL, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, timestamp = timestamp, url = url)
+    val __obj = js.Dynamic.literal(fromCache = fromCache, id = id, method = method, redirectURL = redirectURL, referrer = referrer, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, timestamp = timestamp, url = url)
     if (ip != null) __obj.updateDynamic("ip")(ip)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeRedirectDetails]

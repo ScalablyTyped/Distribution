@@ -16,9 +16,11 @@ trait ModalProps extends js.Object {
   var backdropTransitionInTiming: js.UndefOr[scala.Double] = js.undefined
   var backdropTransitionOutTiming: js.UndefOr[scala.Double] = js.undefined
   var children: reactLib.reactMod.ReactNode
+  var coverScreen: js.UndefOr[scala.Boolean] = js.undefined
   var deviceHeight: js.UndefOr[scala.Double] = js.undefined
   var deviceWidth: js.UndefOr[scala.Double] = js.undefined
   var hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined
+  var hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined
   var hideModalContentWhileAnimating: js.UndefOr[scala.Boolean] = js.undefined
   var isVisible: scala.Boolean
   var onBackButtonPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -26,6 +28,8 @@ trait ModalProps extends js.Object {
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onModalHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onModalShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onModalWillHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onModalWillShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOrientationChange: js.UndefOr[
     js.Function1[
       /* orientation */ reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.portrait | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.landscape, 
@@ -41,6 +45,7 @@ trait ModalProps extends js.Object {
     reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.fullScreen | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.pageSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.formSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.overFullScreen
   ] = js.undefined
   var propagateSwipe: js.UndefOr[scala.Boolean] = js.undefined
+  var scrollHorizontal: js.UndefOr[scala.Boolean] = js.undefined
   var scrollOffset: js.UndefOr[scala.Double] = js.undefined
   var scrollOffsetMax: js.UndefOr[scala.Double] = js.undefined
   var scrollTo: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined
@@ -48,9 +53,7 @@ trait ModalProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.undefined
-  var swipeDirection: js.UndefOr[
-    reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.up | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.down | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.left | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.right
-  ] = js.undefined
+  var swipeDirection: js.UndefOr[Direction | js.Array[Direction]] = js.undefined
   var swipeThreshold: js.UndefOr[scala.Double] = js.undefined
   var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -69,15 +72,19 @@ object ModalProps {
     backdropOpacity: scala.Int | scala.Double = null,
     backdropTransitionInTiming: scala.Int | scala.Double = null,
     backdropTransitionOutTiming: scala.Int | scala.Double = null,
+    coverScreen: js.UndefOr[scala.Boolean] = js.undefined,
     deviceHeight: scala.Int | scala.Double = null,
     deviceWidth: scala.Int | scala.Double = null,
     hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined,
+    hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
     hideModalContentWhileAnimating: js.UndefOr[scala.Boolean] = js.undefined,
     onBackButtonPress: () => scala.Unit = null,
     onBackdropPress: () => scala.Unit = null,
     onDismiss: () => scala.Unit = null,
     onModalHide: () => scala.Unit = null,
     onModalShow: () => scala.Unit = null,
+    onModalWillHide: () => scala.Unit = null,
+    onModalWillShow: () => scala.Unit = null,
     onOrientationChange: /* orientation */ reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.portrait | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.landscape => scala.Unit = null,
     onShow: () => scala.Unit = null,
     onSwipeCancel: () => scala.Unit = null,
@@ -86,12 +93,13 @@ object ModalProps {
     onSwipeStart: () => scala.Unit = null,
     presentationStyle: reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.fullScreen | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.pageSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.formSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.overFullScreen = null,
     propagateSwipe: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollHorizontal: js.UndefOr[scala.Boolean] = js.undefined,
     scrollOffset: scala.Int | scala.Double = null,
     scrollOffsetMax: scala.Int | scala.Double = null,
     scrollTo: /* e */ js.Any => scala.Unit = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     supportedOrientations: js.Array[Orientation] = null,
-    swipeDirection: reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.up | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.down | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.left | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.right = null,
+    swipeDirection: Direction | js.Array[Direction] = null,
     swipeThreshold: scala.Int | scala.Double = null,
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
   ): ModalProps = {
@@ -105,15 +113,19 @@ object ModalProps {
     if (backdropOpacity != null) __obj.updateDynamic("backdropOpacity")(backdropOpacity.asInstanceOf[js.Any])
     if (backdropTransitionInTiming != null) __obj.updateDynamic("backdropTransitionInTiming")(backdropTransitionInTiming.asInstanceOf[js.Any])
     if (backdropTransitionOutTiming != null) __obj.updateDynamic("backdropTransitionOutTiming")(backdropTransitionOutTiming.asInstanceOf[js.Any])
+    if (!js.isUndefined(coverScreen)) __obj.updateDynamic("coverScreen")(coverScreen)
     if (deviceHeight != null) __obj.updateDynamic("deviceHeight")(deviceHeight.asInstanceOf[js.Any])
     if (deviceWidth != null) __obj.updateDynamic("deviceWidth")(deviceWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)
+    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
     if (!js.isUndefined(hideModalContentWhileAnimating)) __obj.updateDynamic("hideModalContentWhileAnimating")(hideModalContentWhileAnimating)
     if (onBackButtonPress != null) __obj.updateDynamic("onBackButtonPress")(js.Any.fromFunction0(onBackButtonPress))
     if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(js.Any.fromFunction0(onBackdropPress))
     if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction0(onDismiss))
     if (onModalHide != null) __obj.updateDynamic("onModalHide")(js.Any.fromFunction0(onModalHide))
     if (onModalShow != null) __obj.updateDynamic("onModalShow")(js.Any.fromFunction0(onModalShow))
+    if (onModalWillHide != null) __obj.updateDynamic("onModalWillHide")(js.Any.fromFunction0(onModalWillHide))
+    if (onModalWillShow != null) __obj.updateDynamic("onModalWillShow")(js.Any.fromFunction0(onModalWillShow))
     if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1(onOrientationChange))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (onSwipeCancel != null) __obj.updateDynamic("onSwipeCancel")(js.Any.fromFunction0(onSwipeCancel))
@@ -122,6 +134,7 @@ object ModalProps {
     if (onSwipeStart != null) __obj.updateDynamic("onSwipeStart")(js.Any.fromFunction0(onSwipeStart))
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(propagateSwipe)) __obj.updateDynamic("propagateSwipe")(propagateSwipe)
+    if (!js.isUndefined(scrollHorizontal)) __obj.updateDynamic("scrollHorizontal")(scrollHorizontal)
     if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
     if (scrollOffsetMax != null) __obj.updateDynamic("scrollOffsetMax")(scrollOffsetMax.asInstanceOf[js.Any])
     if (scrollTo != null) __obj.updateDynamic("scrollTo")(js.Any.fromFunction1(scrollTo))

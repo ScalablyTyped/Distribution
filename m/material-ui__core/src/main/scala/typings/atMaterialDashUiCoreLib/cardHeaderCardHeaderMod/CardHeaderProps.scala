@@ -110,9 +110,7 @@ trait CardHeaderProps extends js.Object {
   var avatar: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardHeaderClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapCardHeaderClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[CardHeaderProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -308,12 +306,12 @@ trait CardHeaderProps extends js.Object {
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var subheader: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var subheaderTypographyProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
+  var subheaderTypographyProps: js.UndefOr[atMaterialDashUiCoreLib.PartialTypographyProps] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var titleTypographyProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
+  var titleTypographyProps: js.UndefOr[atMaterialDashUiCoreLib.PartialTypographyProps] = js.undefined
   var typeof: js.UndefOr[java.lang.String] = js.undefined
   var unselectable: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off
@@ -381,7 +379,7 @@ object CardHeaderProps {
     avatar: reactLib.reactMod.ReactNode = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CardHeaderClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapCardHeaderClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[CardHeaderProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -496,12 +494,12 @@ object CardHeaderProps {
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
     subheader: reactLib.reactMod.ReactNode = null,
-    subheaderTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
+    subheaderTypographyProps: atMaterialDashUiCoreLib.PartialTypographyProps = null,
     suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,
     title: reactLib.reactMod.ReactNode = null,
-    titleTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
+    titleTypographyProps: atMaterialDashUiCoreLib.PartialTypographyProps = null,
     typeof: java.lang.String = null,
     unselectable: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
     vocab: java.lang.String = null

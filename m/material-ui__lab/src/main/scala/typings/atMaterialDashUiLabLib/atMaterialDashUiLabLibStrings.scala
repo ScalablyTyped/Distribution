@@ -54,6 +54,9 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
   
   @js.native
+  sealed trait contained extends js.Object
+  
+  @js.native
   sealed trait container
     extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
@@ -96,11 +99,17 @@ object atMaterialDashUiLabLibStrings {
   sealed trait execute extends js.Object
   
   @js.native
+  sealed trait extendedFab extends js.Object
+  
+  @js.native
   sealed trait fab
     extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
   sealed trait `false` extends js.Object
+  
+  @js.native
+  sealed trait flat extends js.Object
   
   @js.native
   sealed trait focused
@@ -139,6 +148,9 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
+  sealed trait large extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -160,6 +172,9 @@ object atMaterialDashUiLabLibStrings {
   sealed trait location extends js.Object
   
   @js.native
+  sealed trait medium extends js.Object
+  
+  @js.native
   sealed trait menu extends js.Object
   
   @js.native
@@ -173,10 +188,6 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait off extends js.Object
-  
-  @js.native
-  sealed trait ol
-    extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
   
   @js.native
   sealed trait on extends js.Object
@@ -193,6 +204,9 @@ object atMaterialDashUiLabLibStrings {
   sealed trait other extends js.Object
   
   @js.native
+  sealed trait outlined extends js.Object
+  
+  @js.native
   sealed trait page extends js.Object
   
   @js.native
@@ -202,7 +216,13 @@ object atMaterialDashUiLabLibStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait raised extends js.Object
+  
+  @js.native
   sealed trait removals extends js.Object
+  
+  @js.native
+  sealed trait reset extends js.Object
   
   @js.native
   sealed trait right extends js.Object
@@ -215,8 +235,7 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait root
-    extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
-       with atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
        with atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionClassKey
        with atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
        with atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconClassKey
@@ -228,14 +247,16 @@ object atMaterialDashUiLabLibStrings {
        with atMaterialDashUiLabLib.toggleButtonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
-  sealed trait separator
-    extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
+  sealed trait small extends js.Object
   
   @js.native
   sealed trait spelling extends js.Object
   
   @js.native
   sealed trait step extends js.Object
+  
+  @js.native
+  sealed trait submit extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -318,6 +339,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def buttonClosed: buttonClosed = "buttonClosed".asInstanceOf[buttonClosed]
   @scala.inline
+  def contained: contained = "contained".asInstanceOf[contained]
+  @scala.inline
   def container: container = "container".asInstanceOf[container]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
@@ -342,9 +365,13 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
   @scala.inline
+  def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
+  @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
+  def flat: flat = "flat".asInstanceOf[flat]
   @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   @scala.inline
@@ -366,6 +393,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
+  def large: large = "large".asInstanceOf[large]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def `left-end`: `left-end` = "left-end".asInstanceOf[`left-end`]
@@ -380,6 +409,8 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
@@ -390,8 +421,6 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
-  def ol: ol = "ol".asInstanceOf[ol]
-  @scala.inline
   def on: on = "on".asInstanceOf[on]
   @scala.inline
   def openIcon: openIcon = "openIcon".asInstanceOf[openIcon]
@@ -400,13 +429,19 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
+  def outlined: outlined = "outlined".asInstanceOf[outlined]
+  @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
   @scala.inline
   def popup: popup = "popup".asInstanceOf[popup]
   @scala.inline
+  def raised: raised = "raised".asInstanceOf[raised]
+  @scala.inline
   def removals: removals = "removals".asInstanceOf[removals]
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -418,11 +453,13 @@ object atMaterialDashUiLabLibStrings {
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
   @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
+  def small: small = "small".asInstanceOf[small]
   @scala.inline
   def spelling: spelling = "spelling".asInstanceOf[spelling]
   @scala.inline
   def step: step = "step".asInstanceOf[step]
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

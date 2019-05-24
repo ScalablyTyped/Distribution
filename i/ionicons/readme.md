@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionicons
 
-Typings are for version 4.5.6
+Typings are for version 4.5.8
 
 ## Library description:
 Premium icons for Ionic.

@@ -85,6 +85,7 @@ object ^ extends js.Object {
   val NormalBlending: threeLib.srcConstantsMod.Blending = js.native
   val NotEqualDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var Object3DIdCount: scala.Double = js.native
+  val ObjectSpaceNormalMap: threeLib.srcConstantsMod.NormalMapTypes = js.native
   val OneFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
   val OneMinusDstAlphaFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
   val OneMinusDstColorFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
@@ -136,6 +137,7 @@ object ^ extends js.Object {
   val SrcColorFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
   val SubtractEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
   val SubtractiveBlending: threeLib.srcConstantsMod.Blending = js.native
+  val TangentSpaceNormalMap: threeLib.srcConstantsMod.NormalMapTypes = js.native
   var TextureIdCount: scala.Double = js.native
   val TriangleFanDrawMode: threeLib.srcConstantsMod.TrianglesDrawModes = js.native
   val TriangleStripDrawMode: threeLib.srcConstantsMod.TrianglesDrawModes = js.native

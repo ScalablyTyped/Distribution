@@ -7,13 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate", "XmlDtdElement")
 @js.native
-class XmlDtdElement protected ()
-  extends xmlcreateLib.libNodesXmlDtdElementMod.default {
-  /**
-    * Initializes a new instance of the {@link XmlDtdElement} class.
-    *
-    * @param text The text associated with the XML element declaration.
-    */
-  def this(text: java.lang.String) = this()
+class XmlDtdElement[Parent] protected ()
+  extends xmlcreateLib.libNodesXmlDtdElementMod.default[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: xmlcreateLib.libNodesXmlDtdElementMod.IXmlDtdElementOptions) = this()
 }
 

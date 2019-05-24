@@ -10,9 +10,9 @@ trait ExportSpecifierBuilder extends js.Object {
   def apply(
     local: astDashTypesLib.genKindsMod.IdentifierKind,
     exported: astDashTypesLib.genKindsMod.IdentifierKind
-  ): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
-  def apply(local: js.UndefOr[scala.Nothing], exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
-  def apply(local: scala.Null, exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
-  def from(params: astDashTypesLib.Anon_CommentsExported): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
+  def apply(local: js.UndefOr[scala.Nothing], exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
+  def apply(local: scala.Null, exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
+  def from(params: astDashTypesLib.Anon_CommentsExported): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
 }
 

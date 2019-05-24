@@ -10,39 +10,39 @@ trait TSDeclareFunctionBuilder extends js.Object {
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind]
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.NoopKind
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
-  def apply(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def apply(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.NoopKind
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
-  def apply(id: scala.Null, params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def apply(id: scala.Null, params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: scala.Null,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.NoopKind
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: scala.Null,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
-  def from(params: astDashTypesLib.Anon_AsyncComments): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def from(params: astDashTypesLib.Anon_AsyncComments): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
 }
 

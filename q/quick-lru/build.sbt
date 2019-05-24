@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "quick-lru"
-version := "3.0.0-5759ad"
+version := "4.0.0-a48acb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

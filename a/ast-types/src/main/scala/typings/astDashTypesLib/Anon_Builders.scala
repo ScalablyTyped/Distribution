@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Builders extends js.Object {
-  var Type: Anon_DefFrom = js.native
-  var builders: org.scalablytyped.runtime.StringDictionary[astDashTypesLib.libTypesMod.Builder] = js.native
-  var builtInTypes: Anon_ArrayBoolean = js.native
-  var namedTypes: org.scalablytyped.runtime.StringDictionary[astDashTypesLib.libTypesMod.AnyType] = js.native
+  var Type: Anon_Def = js.native
+  var builders: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/gen/builders.builders */ js.Any = js.native
+  var builtInTypes: Anon_Array = js.native
+  var namedTypes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/gen/namedTypes.NamedTypes */ js.Any = js.native
   def computeSupertypeLookupTable(candidates: js.Any): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def defineMethod(name: js.Any): js.Function = js.native
   def defineMethod(name: js.Any, func: js.Function): js.Function = js.native

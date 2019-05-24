@@ -6,39 +6,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - astDashTypesLib.genNodesMod.TSExpressionWithTypeArguments
-  - astDashTypesLib.genNodesMod.TSTypeReference
-  - astDashTypesLib.genNodesMod.TSAnyKeyword
-  - astDashTypesLib.genNodesMod.TSBigIntKeyword
-  - astDashTypesLib.genNodesMod.TSBooleanKeyword
-  - astDashTypesLib.genNodesMod.TSNeverKeyword
-  - astDashTypesLib.genNodesMod.TSNullKeyword
-  - astDashTypesLib.genNodesMod.TSNumberKeyword
-  - astDashTypesLib.genNodesMod.TSObjectKeyword
-  - astDashTypesLib.genNodesMod.TSStringKeyword
-  - astDashTypesLib.genNodesMod.TSSymbolKeyword
-  - astDashTypesLib.genNodesMod.TSUndefinedKeyword
-  - astDashTypesLib.genNodesMod.TSUnknownKeyword
-  - astDashTypesLib.genNodesMod.TSVoidKeyword
-  - astDashTypesLib.genNodesMod.TSThisType
-  - astDashTypesLib.genNodesMod.TSArrayType
-  - astDashTypesLib.genNodesMod.TSLiteralType
-  - astDashTypesLib.genNodesMod.TSUnionType
-  - astDashTypesLib.genNodesMod.TSIntersectionType
-  - astDashTypesLib.genNodesMod.TSConditionalType
-  - astDashTypesLib.genNodesMod.TSInferType
-  - astDashTypesLib.genNodesMod.TSParenthesizedType
-  - astDashTypesLib.genNodesMod.TSFunctionType
-  - astDashTypesLib.genNodesMod.TSConstructorType
-  - astDashTypesLib.genNodesMod.TSMappedType
-  - astDashTypesLib.genNodesMod.TSTupleType
-  - astDashTypesLib.genNodesMod.TSRestType
-  - astDashTypesLib.genNodesMod.TSOptionalType
-  - astDashTypesLib.genNodesMod.TSIndexedAccessType
-  - astDashTypesLib.genNodesMod.TSTypeOperator
-  - astDashTypesLib.genNodesMod.TSTypeQuery
-  - astDashTypesLib.genNodesMod.TSImportType
-  - astDashTypesLib.genNodesMod.TSTypeLiteral
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExpressionWithTypeArguments
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAnyKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSBigIntKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSBooleanKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNeverKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNullKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNumberKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSObjectKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSStringKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSSymbolKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUndefinedKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUnknownKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSVoidKeyword
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSThisType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSArrayType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSLiteralType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUnionType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIntersectionType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConditionalType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInferType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSParenthesizedType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSFunctionType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructorType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMappedType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTupleType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSRestType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSOptionalType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexedAccessType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeOperator
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeLiteral
 */
 trait TSTypeKind extends js.Object
 

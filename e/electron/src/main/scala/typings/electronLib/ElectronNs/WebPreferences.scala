@@ -27,6 +27,14 @@ trait WebPreferences extends js.Object {
     */
   var allowRunningInsecureContent: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Autoplay policy to apply to content in the window, can be
+    * no-user-gesture-required, user-gesture-required,
+    * document-user-activation-required. Defaults to no-user-gesture-required.
+    */
+  var autoplayPolicy: js.UndefOr[
+    electronLib.electronLibStrings.`no-user-gesture-required` | electronLib.electronLibStrings.`user-gesture-required` | electronLib.electronLibStrings.`document-user-activation-required`
+  ] = js.undefined
+  /**
     * Whether to throttle animations and timers when the page becomes background. This
     * also affects the . Defaults to true.
     */
@@ -97,10 +105,8 @@ trait WebPreferences extends js.Object {
     */
   var minimumFontSize: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Whether to use native window.open(). If set to true, the webPreferences of child
-    * window will always be the same with parent window, regardless of the parameters
-    * passed to window.open(). Defaults to false. This option is currently
-    * experimental.
+    * Whether to use native window.open(). Defaults to false. Child windows will
+    * always have node integration disabled. This option is currently experimental.
     */
   var nativeWindowOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -109,9 +115,15 @@ trait WebPreferences extends js.Object {
     */
   var navigateOnDragDrop: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Whether node integration is enabled. Default is true.
+    * Whether node integration is enabled. Default is false.
     */
   var nodeIntegration: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Experimental option for enabling NodeJS support in sub-frames such as iframes.
+    * All your preloads will load for every iframe, you can use process.isMainFrame to
+    * determine if you are in the main frame or not.
+    */
+  var nodeIntegrationInSubFrames: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Whether node integration is enabled in web workers. Default is false. More about
     * this can be found in .
@@ -191,12 +203,11 @@ trait WebPreferences extends js.Object {
     */
   var webgl: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Whether to enable the . Defaults to the value of the nodeIntegration option. The
-    * preload script configured for the will have node integration enabled when it is
-    * executed so you should ensure remote/untrusted content is not able to create a
-    * tag with a possibly malicious preload script. You can use the
-    * will-attach-webview event on to strip away the preload script and to validate or
-    * alter the 's initial settings.
+    * Whether to enable the . Defaults to false. The preload script configured for the
+    * will have node integration enabled when it is executed so you should ensure
+    * remote/untrusted content is not able to create a tag with a possibly malicious
+    * preload script. You can use the will-attach-webview event on to strip away the
+    * preload script and to validate or alter the 's initial settings.
     */
   var webviewTag: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -211,6 +222,7 @@ object WebPreferences {
     additionalArguments: js.Array[java.lang.String] = null,
     affinity: java.lang.String = null,
     allowRunningInsecureContent: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayPolicy: electronLib.electronLibStrings.`no-user-gesture-required` | electronLib.electronLibStrings.`user-gesture-required` | electronLib.electronLibStrings.`document-user-activation-required` = null,
     backgroundThrottling: js.UndefOr[scala.Boolean] = js.undefined,
     contextIsolation: js.UndefOr[scala.Boolean] = js.undefined,
     defaultEncoding: java.lang.String = null,
@@ -228,6 +240,7 @@ object WebPreferences {
     nativeWindowOpen: js.UndefOr[scala.Boolean] = js.undefined,
     navigateOnDragDrop: js.UndefOr[scala.Boolean] = js.undefined,
     nodeIntegration: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeIntegrationInSubFrames: js.UndefOr[scala.Boolean] = js.undefined,
     nodeIntegrationInWorker: js.UndefOr[scala.Boolean] = js.undefined,
     offscreen: js.UndefOr[scala.Boolean] = js.undefined,
     partition: java.lang.String = null,
@@ -249,6 +262,7 @@ object WebPreferences {
     if (additionalArguments != null) __obj.updateDynamic("additionalArguments")(additionalArguments)
     if (affinity != null) __obj.updateDynamic("affinity")(affinity)
     if (!js.isUndefined(allowRunningInsecureContent)) __obj.updateDynamic("allowRunningInsecureContent")(allowRunningInsecureContent)
+    if (autoplayPolicy != null) __obj.updateDynamic("autoplayPolicy")(autoplayPolicy.asInstanceOf[js.Any])
     if (!js.isUndefined(backgroundThrottling)) __obj.updateDynamic("backgroundThrottling")(backgroundThrottling)
     if (!js.isUndefined(contextIsolation)) __obj.updateDynamic("contextIsolation")(contextIsolation)
     if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
@@ -266,6 +280,7 @@ object WebPreferences {
     if (!js.isUndefined(nativeWindowOpen)) __obj.updateDynamic("nativeWindowOpen")(nativeWindowOpen)
     if (!js.isUndefined(navigateOnDragDrop)) __obj.updateDynamic("navigateOnDragDrop")(navigateOnDragDrop)
     if (!js.isUndefined(nodeIntegration)) __obj.updateDynamic("nodeIntegration")(nodeIntegration)
+    if (!js.isUndefined(nodeIntegrationInSubFrames)) __obj.updateDynamic("nodeIntegrationInSubFrames")(nodeIntegrationInSubFrames)
     if (!js.isUndefined(nodeIntegrationInWorker)) __obj.updateDynamic("nodeIntegrationInWorker")(nodeIntegrationInWorker)
     if (!js.isUndefined(offscreen)) __obj.updateDynamic("offscreen")(offscreen)
     if (partition != null) __obj.updateDynamic("partition")(partition)

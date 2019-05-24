@@ -13,16 +13,13 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait ConsistentWith extends js.Object
   
   @js.native
-  sealed trait DialogContentTextProps extends js.Object
-  
-  @js.native
   sealed trait JS extends js.Object
   
   @js.native
-  sealed trait LinkProps extends js.Object
+  sealed trait PartialDialogContentTextProps extends js.Object
   
   @js.native
-  sealed trait TypographyProps extends js.Object
+  sealed trait PartialTypographyProps extends js.Object
   
   @js.native
   sealed trait absolute
@@ -2213,13 +2210,11 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
   @scala.inline
-  def DialogContentTextProps: DialogContentTextProps = "DialogContentTextProps".asInstanceOf[DialogContentTextProps]
-  @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
-  def LinkProps: LinkProps = "LinkProps".asInstanceOf[LinkProps]
+  def PartialDialogContentTextProps: PartialDialogContentTextProps = "PartialDialogContentTextProps".asInstanceOf[PartialDialogContentTextProps]
   @scala.inline
-  def TypographyProps: TypographyProps = "TypographyProps".asInstanceOf[TypographyProps]
+  def PartialTypographyProps: PartialTypographyProps = "PartialTypographyProps".asInstanceOf[PartialTypographyProps]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline

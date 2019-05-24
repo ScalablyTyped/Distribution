@@ -50,6 +50,10 @@ trait DomainName extends js.Object {
     * The region-specific Amazon Route 53 Hosted Zone ID of the regional endpoint. For more information, see Set up a Regional Custom Domain Name and AWS Regions and Endpoints for API Gateway. 
     */
   var regionalHostedZoneId: js.UndefOr[String] = js.undefined
+  /**
+    * The collection of tags. Each tag element is associated with a given resource.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
 }
 
 object DomainName {
@@ -65,7 +69,8 @@ object DomainName {
     regionalCertificateArn: String = null,
     regionalCertificateName: String = null,
     regionalDomainName: String = null,
-    regionalHostedZoneId: String = null
+    regionalHostedZoneId: String = null,
+    tags: MapOfStringToString = null
   ): DomainName = {
     val __obj = js.Dynamic.literal()
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn)
@@ -79,6 +84,7 @@ object DomainName {
     if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName)
     if (regionalDomainName != null) __obj.updateDynamic("regionalDomainName")(regionalDomainName)
     if (regionalHostedZoneId != null) __obj.updateDynamic("regionalHostedZoneId")(regionalHostedZoneId)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[DomainName]
   }
 }

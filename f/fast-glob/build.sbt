@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-glob"
-version := "2.2.6-932c41"
+version := "2.2.7-932c41"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

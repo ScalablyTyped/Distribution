@@ -170,6 +170,10 @@ trait Swiper extends js.Object {
     */
   var slides: js.Array[DOM7Element] = js.native
   /**
+    * Swiper Thumbs module.
+    */
+  var thumbs: js.UndefOr[js.Object] = js.native
+  /**
     * Object with the following touch event properties:
     */
   var touches: swiperLib.Anon_CurrentX = js.native

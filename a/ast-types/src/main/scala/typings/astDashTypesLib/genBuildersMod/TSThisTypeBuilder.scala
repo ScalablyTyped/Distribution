@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSThisTypeBuilder extends js.Object {
-  def apply(): astDashTypesLib.genNodesMod.TSThisType = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNodesMod.TSThisType = js.native
+  def apply(): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSThisType = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocArray): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSThisType = js.native
 }
 

@@ -15,12 +15,11 @@ class MeshAttachment protected () extends VertexAttachment {
   var parentMesh: js.Any = js.native
   var path: java.lang.String = js.native
   var region: TextureRegion = js.native
-  var regionUVs: ArrayLike[scala.Double] = js.native
+  var regionUVs: stdLib.Float32Array = js.native
   var tempColor: Color = js.native
   var triangles: js.Array[scala.Double] = js.native
   var uvs: ArrayLike[scala.Double] = js.native
   def getParentMesh(): MeshAttachment = js.native
   def setParentMesh(parentMesh: MeshAttachment): scala.Unit = js.native
-  def updateUVs(region: TextureRegion, uvs: ArrayLike[scala.Double]): ArrayLike[scala.Double] = js.native
 }
 

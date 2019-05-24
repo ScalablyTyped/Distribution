@@ -78,6 +78,7 @@ object ^ extends js.Object {
   val NoToneMapping: ToneMapping = js.native
   val NormalBlending: Blending = js.native
   val NotEqualDepth: DepthModes = js.native
+  val ObjectSpaceNormalMap: NormalMapTypes = js.native
   val OneFactor: BlendingDstFactor = js.native
   val OneMinusDstAlphaFactor: BlendingDstFactor = js.native
   val OneMinusDstColorFactor: BlendingDstFactor = js.native
@@ -129,6 +130,7 @@ object ^ extends js.Object {
   val SrcColorFactor: BlendingDstFactor = js.native
   val SubtractEquation: BlendingEquation = js.native
   val SubtractiveBlending: Blending = js.native
+  val TangentSpaceNormalMap: NormalMapTypes = js.native
   val TriangleFanDrawMode: TrianglesDrawModes = js.native
   val TriangleStripDrawMode: TrianglesDrawModes = js.native
   val TrianglesDrawMode: TrianglesDrawModes = js.native

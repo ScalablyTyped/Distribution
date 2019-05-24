@@ -11,7 +11,7 @@ trait TSInterfaceBodyBuilder extends js.Object {
     body: js.Array[
       astDashTypesLib.genKindsMod.TSCallSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSConstructSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSIndexSignatureKind | astDashTypesLib.genKindsMod.TSMethodSignatureKind | astDashTypesLib.genKindsMod.TSPropertySignatureKind
     ]
-  ): astDashTypesLib.genNodesMod.TSInterfaceBody = js.native
-  def from(params: astDashTypesLib.Anon_BodyCommentsLocArrayCommentKindNull): astDashTypesLib.genNodesMod.TSInterfaceBody = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceBody = js.native
+  def from(params: astDashTypesLib.Anon_BodyCommentsLocArrayCommentKindNull): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceBody = js.native
 }
 

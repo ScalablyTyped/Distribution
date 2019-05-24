@@ -11,46 +11,46 @@ trait MethodDefinitionBuilder extends js.Object {
     kind: astDashTypesLib.astDashTypesLibStrings.constructor,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.constructor,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind,
     staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind,
     staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.method,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind,
     staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.FunctionKind,
     staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.MethodDefinition = js.native
-  def from(params: astDashTypesLib.Anon_CommentsComputedConstructor): astDashTypesLib.genNodesMod.MethodDefinition = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
+  def from(params: astDashTypesLib.Anon_CommentsComputedConstructor): astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition = js.native
 }
 

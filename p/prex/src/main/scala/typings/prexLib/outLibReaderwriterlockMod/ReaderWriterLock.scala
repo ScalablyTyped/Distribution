@@ -39,6 +39,7 @@ class ReaderWriterLock () extends js.Object {
     * @param token A CancellationToken used to cancel the request.
     */
   def read(): js.Promise[LockHandle] = js.native
+  def read(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[LockHandle] = js.native
   def read(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
   /**
     * Asynchronously waits for and takes a read lock on a resource
@@ -47,6 +48,7 @@ class ReaderWriterLock () extends js.Object {
     * @param token A CancellationToken used to cancel the request.
     */
   def upgradeableRead(): js.Promise[UpgradeableLockHandle] = js.native
+  def upgradeableRead(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[UpgradeableLockHandle] = js.native
   def upgradeableRead(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[UpgradeableLockHandle] = js.native
   /**
     * Asynchronously waits for and takes a write lock on a resource.
@@ -54,6 +56,7 @@ class ReaderWriterLock () extends js.Object {
     * @param token A CancellationToken used to cancel the request.
     */
   def write(): js.Promise[LockHandle] = js.native
+  def write(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[LockHandle] = js.native
   def write(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
 }
 

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait CreateClientVpnRouteRequest extends js.Object {
   /**
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    */
+  var ClientToken: js.UndefOr[String] = js.undefined
+  /**
     * The ID of the Client VPN endpoint to which to add the route.
     */
   var ClientVpnEndpointId: String
@@ -34,10 +38,12 @@ object CreateClientVpnRouteRequest {
     ClientVpnEndpointId: String,
     DestinationCidrBlock: String,
     TargetVpcSubnetId: String,
+    ClientToken: String = null,
     Description: String = null,
     DryRun: js.UndefOr[Boolean] = js.undefined
   ): CreateClientVpnRouteRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, DestinationCidrBlock = DestinationCidrBlock, TargetVpcSubnetId = TargetVpcSubnetId)
+    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[CreateClientVpnRouteRequest]

@@ -28,10 +28,5 @@ import scala.scalajs.js.annotation._
 	*/
 class ^[T] () extends ElectronStore[T] {
   def this(options: Options[T]) = this()
-  /**
-  	Open the storage file in the user's editor.
-  	*/
-  /* CompleteClass */
-  override def openInEditor(): scala.Unit = js.native
 }
 

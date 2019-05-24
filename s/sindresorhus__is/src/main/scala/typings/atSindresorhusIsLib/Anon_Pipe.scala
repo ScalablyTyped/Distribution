@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Pipe extends js.Object {
-  var pipe: js.Function
+  val pipe: js.Function
 }
 
 object Anon_Pipe {

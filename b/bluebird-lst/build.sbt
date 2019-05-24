@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bluebird-lst"
-version := "1.0.7-a8b419"
+version := "1.0.8-a8b419"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

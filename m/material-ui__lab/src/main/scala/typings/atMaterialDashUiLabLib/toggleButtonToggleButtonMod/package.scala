@@ -12,4 +12,5 @@ package object toggleButtonToggleButtonMod {
     - atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.selected
   */
   type ToggleButtonClassKey = _ToggleButtonClassKey | atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseClassKey
+  type ToggleButtonProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SimplifiedPropsOf<typeof ToggleButton> */ js.Any
 }

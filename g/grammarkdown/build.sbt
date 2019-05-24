@@ -1,11 +1,13 @@
 organization := "org.scalablytyped"
 name := "grammarkdown"
-version := "2.0.12-3ee027"
+version := "2.0.12-67f395"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "prex" % "0.4.5-b812b6",
+  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.5-49523f",
+  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.5-49dc17",
+  "org.scalablytyped" %%% "prex" % "0.4.6-64d238",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

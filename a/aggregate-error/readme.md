@@ -1,7 +1,7 @@
 
 # Scala.js typings for aggregate-error
 
-Typings are for version 2.2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Create an error from multiple errors
@@ -36,8 +36,8 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * Create an error from multiple errors.
- */
+Create an error from multiple errors.
+*/
 
 ```
 

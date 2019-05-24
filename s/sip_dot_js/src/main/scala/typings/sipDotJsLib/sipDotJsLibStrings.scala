@@ -49,12 +49,6 @@ object sipDotJsLibStrings {
   sealed trait `SessionDescriptionHandler-created` extends js.Object
   
   @js.native
-  sealed trait UAC extends js.Object
-  
-  @js.native
-  sealed trait UAS extends js.Object
-  
-  @js.native
   sealed trait UPDATE extends js.Object
   
   @js.native
@@ -134,9 +128,6 @@ object sipDotJsLibStrings {
   
   @js.native
   sealed trait message extends js.Object
-  
-  @js.native
-  sealed trait newTransaction extends js.Object
   
   @js.native
   sealed trait notify extends js.Object
@@ -223,13 +214,13 @@ object sipDotJsLibStrings {
   sealed trait stateChanged extends js.Object
   
   @js.native
+  sealed trait subscribe extends js.Object
+  
+  @js.native
   sealed trait terminated extends js.Object
   
   @js.native
   sealed trait trackAdded extends js.Object
-  
-  @js.native
-  sealed trait transactionDestroyed extends js.Object
   
   @js.native
   sealed trait transportCreated extends js.Object
@@ -274,10 +265,6 @@ object sipDotJsLibStrings {
   def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
   @scala.inline
   def `SessionDescriptionHandler-created`: `SessionDescriptionHandler-created` = "SessionDescriptionHandler-created".asInstanceOf[`SessionDescriptionHandler-created`]
-  @scala.inline
-  def UAC: UAC = "UAC".asInstanceOf[UAC]
-  @scala.inline
-  def UAS: UAS = "UAS".asInstanceOf[UAS]
   @scala.inline
   def UPDATE: UPDATE = "UPDATE".asInstanceOf[UPDATE]
   @scala.inline
@@ -333,8 +320,6 @@ object sipDotJsLibStrings {
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
-  def newTransaction: newTransaction = "newTransaction".asInstanceOf[newTransaction]
-  @scala.inline
   def outOfDialogReferRequested: outOfDialogReferRequested = "outOfDialogReferRequested".asInstanceOf[outOfDialogReferRequested]
   @scala.inline
   def `peerConnection-SetLocalDescriptionFailed`: `peerConnection-SetLocalDescriptionFailed` = "peerConnection-SetLocalDescriptionFailed".asInstanceOf[`peerConnection-SetLocalDescriptionFailed`]
@@ -389,11 +374,11 @@ object sipDotJsLibStrings {
   @scala.inline
   def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   @scala.inline
   def trackAdded: trackAdded = "trackAdded".asInstanceOf[trackAdded]
-  @scala.inline
-  def transactionDestroyed: transactionDestroyed = "transactionDestroyed".asInstanceOf[transactionDestroyed]
   @scala.inline
   def transportCreated: transportCreated = "transportCreated".asInstanceOf[transportCreated]
   @scala.inline

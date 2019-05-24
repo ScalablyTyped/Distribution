@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
   - typesafeDashActionsLib.Anon_Meta[T, M]
   - typesafeDashActionsLib.Anon_Type[T]
 */
-trait PayloadMetaAction[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.StringType */, P, M] extends js.Object
+trait PayloadMetaAction[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant */, P, M] extends js.Object
 

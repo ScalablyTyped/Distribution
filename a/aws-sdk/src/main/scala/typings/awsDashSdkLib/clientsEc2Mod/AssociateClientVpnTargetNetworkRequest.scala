@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait AssociateClientVpnTargetNetworkRequest extends js.Object {
   /**
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    */
+  var ClientToken: js.UndefOr[String] = js.undefined
+  /**
     * The ID of the Client VPN endpoint.
     */
   var ClientVpnEndpointId: String
@@ -22,8 +26,14 @@ trait AssociateClientVpnTargetNetworkRequest extends js.Object {
 
 object AssociateClientVpnTargetNetworkRequest {
   @scala.inline
-  def apply(ClientVpnEndpointId: String, SubnetId: String, DryRun: js.UndefOr[Boolean] = js.undefined): AssociateClientVpnTargetNetworkRequest = {
+  def apply(
+    ClientVpnEndpointId: String,
+    SubnetId: String,
+    ClientToken: String = null,
+    DryRun: js.UndefOr[Boolean] = js.undefined
+  ): AssociateClientVpnTargetNetworkRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId, SubnetId = SubnetId)
+    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
     __obj.asInstanceOf[AssociateClientVpnTargetNetworkRequest]
   }

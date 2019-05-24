@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AssociateDomainRequest extends js.Object {
   /**
-    * The ARN of an issued ACM certificate that is valid for the domain being associated. 
+    * The ARN of an issued ACM certificate that is valid for the domain being associated.
     */
   var AcmCertificateArn: awsDashSdkLib.clientsWorklinkMod.AcmCertificateArn
   /**

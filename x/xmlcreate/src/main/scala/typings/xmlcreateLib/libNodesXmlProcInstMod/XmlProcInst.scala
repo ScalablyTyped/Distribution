@@ -5,54 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait XmlProcInst
-  extends xmlcreateLib.libNodesXmlNodeMod.default {
-  var _content: js.UndefOr[js.Any] = js.native
-  var _target: js.Any = js.native
+trait XmlProcInst[Parent] extends js.Object {
+  var _content: js.Any
+  val _parent: js.Any
+  var _target: js.Any
+  val _validation: js.Any
   /**
-    * Gets the data of the processing instruction.
-    *
-    * @returns The data of the processing instruction. This value may be
-    *          undefined.
+    * Gets the content of this processing instruction.
     */
   /**
-    * Sets the data of the processing instruction.
-    *
-    * @param content The data of the processing instruction. This value may be
-    *                undefined.
+    * Sets the content of this processing instruction.
     */
-  var content: js.UndefOr[java.lang.String] = js.native
+  var content: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Gets the target of the processing instruction.
-    *
-    * @returns The target of the processing instruction.
+    * Gets the target of this processing instruction.
     */
   /**
-    * Sets the target of the processing instruction.
-    *
-    * @param target The target of the processing instruction.
+    * Sets the content of this processing instruction.
     */
-  var target: java.lang.String = js.native
+  var target: java.lang.String
   /**
-    * Throws an exception since {@link XmlProcInst} nodes cannot have any
-    * children.
-    *
-    * @param node This parameter is unused.
-    * @param index This parameter is unused.
-    *
-    * @returns This method does not return.
+    * Returns the parent of this processing instruction.
     */
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  /**
-    * Throws an exception since {@link XmlProcInst} nodes cannot have any
-    * children.
-    *
-    * @param node This parameter is unused.
-    *
-    * @returns This method does not return.
-    */
-  def removeChild(node: xmlcreateLib.libNodesXmlNodeMod.default): scala.Boolean = js.native
+  def up(): Parent
+}
+
+object XmlProcInst {
+  @scala.inline
+  def apply[Parent](
+    _content: js.Any,
+    _parent: js.Any,
+    _target: js.Any,
+    _validation: js.Any,
+    target: java.lang.String,
+    toString: () => java.lang.String,
+    up: () => Parent,
+    content: java.lang.String = null
+  ): XmlProcInst[Parent] = {
+    val __obj = js.Dynamic.literal(_content = _content, _parent = _parent, _target = _target, _validation = _validation, target = target, toString = js.Any.fromFunction0(toString), up = js.Any.fromFunction0(up))
+    if (content != null) __obj.updateDynamic("content")(content)
+    __obj.asInstanceOf[XmlProcInst[Parent]]
+  }
 }
 

@@ -6,13 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object xmlbuilderMod {
-  type XMLStringifier = org.scalablytyped.runtime.StringDictionary[(js.Function1[/* v */ js.Any, java.lang.String]) | java.lang.String]
-  type XMLWriter = org.scalablytyped.runtime.StringDictionary[
-    js.Function3[
-      /* e */ XMLElementOrXMLNode, 
-      /* options */ WriterOptions, 
-      /* level */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ]
-  ]
+  /**
+    * A function to be called when a chunk of XML is written.
+    * 
+    * @param chunk - a chunk of string that was written
+    * @param level - current depth of the XML tree
+    */
+  type OnDataCallback = js.Function2[/* chunk */ java.lang.String, /* level */ scala.Double, scala.Unit]
+  /**
+    * A function to be called when the XML doucment is completed.
+    */
+  type OnEndCallback = js.Function0[scala.Unit]
 }

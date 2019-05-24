@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BorderColor extends js.Object {
-  var borderColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoWaffleLib.atNivoWaffleMod.WaffleDatum]
+  var borderColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoWaffleLib.atNivoWaffleMod.WaffleDatum]
   var borderWidth: scala.Double
   var emptyColor: java.lang.String
   var emptyOpacity: scala.Double
@@ -27,7 +27,7 @@ trait Anon_BorderColor extends js.Object {
 object Anon_BorderColor {
   @scala.inline
   def apply(
-    borderColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoWaffleLib.atNivoWaffleMod.WaffleDatum],
+    borderColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoWaffleLib.atNivoWaffleMod.WaffleDatum],
     borderWidth: scala.Double,
     emptyColor: java.lang.String,
     emptyOpacity: scala.Double,

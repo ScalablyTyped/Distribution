@@ -11,12 +11,12 @@ trait ForInStatementBuilder extends js.Object {
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.StatementKind
-  ): astDashTypesLib.genNodesMod.ForInStatement = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForInStatement = js.native
   def apply(
     left: astDashTypesLib.genKindsMod.VariableDeclarationKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.StatementKind
-  ): astDashTypesLib.genNodesMod.ForInStatement = js.native
-  def from(params: astDashTypesLib.Anon_BodyCommentsLeft): astDashTypesLib.genNodesMod.ForInStatement = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForInStatement = js.native
+  def from(params: astDashTypesLib.Anon_BodyCommentsLeft): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForInStatement = js.native
 }
 

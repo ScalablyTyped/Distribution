@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object pDashProgressMod {
   type ProgressNotifier = js.Function1[/* progress */ scala.Double, scala.Unit]
-  type PromiseFactory[T] = js.Function0[js.Thenable[T]]
+  type PromiseFactory[ValueType] = js.Function0[js.Thenable[ValueType]]
 }

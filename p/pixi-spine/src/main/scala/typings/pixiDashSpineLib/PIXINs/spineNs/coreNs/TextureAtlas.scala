@@ -11,30 +11,47 @@ class TextureAtlas () extends Disposable {
   def this(atlasText: java.lang.String) = this()
   def this(atlasText: java.lang.String, textureLoader: js.Function2[
       /* path */ java.lang.String, 
-      /* loaderFunction */ js.Function1[/* tex */ pixiDotJsLib.PIXINs.BaseTexture, _], 
+      /* loaderFunction */ js.Function1[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
+        _
+      ], 
       _
     ]) = this()
   def this(atlasText: java.lang.String, textureLoader: js.Function2[
       /* path */ java.lang.String, 
-      /* loaderFunction */ js.Function1[/* tex */ pixiDotJsLib.PIXINs.BaseTexture, _], 
+      /* loaderFunction */ js.Function1[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
+        _
+      ], 
       _
     ], callback: js.Function1[/* obj */ TextureAtlas, _]) = this()
+  var load: js.Any = js.native
   var pages: js.Array[TextureAtlasPage] = js.native
   var regions: js.Array[TextureAtlasRegion] = js.native
   def addSpineAtlas(
     atlasText: java.lang.String,
     textureLoader: js.Function2[
       /* path */ java.lang.String, 
-      /* loaderFunction */ js.Function1[/* tex */ pixiDotJsLib.PIXINs.BaseTexture, _], 
+      /* loaderFunction */ js.Function1[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ /* tex */ js.Any, 
+        _
+      ], 
       _
     ],
     callback: js.Function1[/* obj */ this.type, _]
   ): scala.Unit = js.native
-  def addTexture(name: java.lang.String, texture: pixiDotJsLib.PIXINs.Texture): TextureAtlasRegion = js.native
-  def addTextureHash(textures: Map[pixiDotJsLib.PIXINs.Texture], stripExtension: scala.Boolean): scala.Unit = js.native
+  def addTexture(
+    name: java.lang.String,
+    texture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
+  ): TextureAtlasRegion = js.native
+  def addTextureHash(
+    textures: Map[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PIXI.Texture */ _
+    ],
+    stripExtension: scala.Boolean
+  ): scala.Unit = js.native
   /* CompleteClass */
   override def dispose(): scala.Unit = js.native
   def findRegion(name: java.lang.String): TextureAtlasRegion = js.native
-  /* private */ def load(atlasText: js.Any, textureLoader: js.Any, callback: js.Any): js.Any = js.native
 }
 

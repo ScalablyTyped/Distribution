@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IntersectionTypeAnnotationBuilder extends js.Object {
-  def apply(types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]): astDashTypesLib.genNodesMod.IntersectionTypeAnnotation = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocTypes): astDashTypesLib.genNodesMod.IntersectionTypeAnnotation = js.native
+  def apply(types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.IntersectionTypeAnnotation = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocTypes): astDashTypesLib.genNamedTypesMod.namedTypesNs.IntersectionTypeAnnotation = js.native
 }
 

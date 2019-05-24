@@ -13,7 +13,7 @@ object ProposedFeaturesNs extends js.Object {
     vscodeDashLanguageserverLib.libMainMod.`_`, 
     vscodeDashLanguageserverLib.libMainMod.`_`, 
     vscodeDashLanguageserverLib.libMainMod.`_`, 
-    vscodeDashLanguageserverLib.libProposedDotProgressMod.WindowProgress, 
+    vscodeDashLanguageserverLib.libMainMod.`_`, 
     vscodeDashLanguageserverLib.libMainMod.`_`
   ] = js.native
 }

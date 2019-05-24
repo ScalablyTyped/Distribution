@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - astDashTypesLib.genNodesMod.TSExpressionWithTypeArguments
-  - astDashTypesLib.genNodesMod.TSTypeReference
-  - astDashTypesLib.genNodesMod.TSImportType
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExpressionWithTypeArguments
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference
+  - astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType
 */
 trait TSHasOptionalTypeParameterInstantiationKind extends js.Object
 

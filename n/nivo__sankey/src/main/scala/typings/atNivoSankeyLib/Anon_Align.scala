@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Align extends js.Object {
   var align: atNivoSankeyLib.atNivoSankeyLibStrings.center | atNivoSankeyLib.atNivoSankeyLibStrings.justify | atNivoSankeyLib.atNivoSankeyLibStrings.start | atNivoSankeyLib.atNivoSankeyLibStrings.end
+  var colors: atNivoColorsLib.atNivoColorsMod.OrdinalColorsInstruction[_]
   var enableLabels: scala.Boolean
   var enableLinkGradient: scala.Boolean
   var isInteractive: scala.Boolean
@@ -17,7 +18,7 @@ trait Anon_Align extends js.Object {
   var labelPosition: atNivoSankeyLib.atNivoSankeyLibStrings.inside | atNivoSankeyLib.atNivoSankeyLibStrings.outside
   var labelTextColor: js.Any
   var legends: js.Array[atNivoLegendsLib.atNivoLegendsMod.LegendProps]
-  var linkBlendMode: atNivoSankeyLib.atNivoSankeyMod.CssMixBlendMode
+  var linkBlendMode: atNivoCoreLib.atNivoCoreMod.CssMixBlendMode
   var linkContract: scala.Double
   var linkHoverOpacity: scala.Double
   var linkHoverOthersOpacity: scala.Double
@@ -42,6 +43,7 @@ object Anon_Align {
   @scala.inline
   def apply(
     align: atNivoSankeyLib.atNivoSankeyLibStrings.center | atNivoSankeyLib.atNivoSankeyLibStrings.justify | atNivoSankeyLib.atNivoSankeyLibStrings.start | atNivoSankeyLib.atNivoSankeyLibStrings.end,
+    colors: atNivoColorsLib.atNivoColorsMod.OrdinalColorsInstruction[_],
     enableLabels: scala.Boolean,
     enableLinkGradient: scala.Boolean,
     isInteractive: scala.Boolean,
@@ -52,7 +54,7 @@ object Anon_Align {
     labelPosition: atNivoSankeyLib.atNivoSankeyLibStrings.inside | atNivoSankeyLib.atNivoSankeyLibStrings.outside,
     labelTextColor: js.Any,
     legends: js.Array[atNivoLegendsLib.atNivoLegendsMod.LegendProps],
-    linkBlendMode: atNivoSankeyLib.atNivoSankeyMod.CssMixBlendMode,
+    linkBlendMode: atNivoCoreLib.atNivoCoreMod.CssMixBlendMode,
     linkContract: scala.Double,
     linkHoverOpacity: scala.Double,
     linkHoverOthersOpacity: scala.Double,
@@ -72,7 +74,7 @@ object Anon_Align {
     theme: atNivoCoreLib.atNivoCoreMod.Theme,
     tooltipFormat: js.Any
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], enableLabels = enableLabels, enableLinkGradient = enableLinkGradient, isInteractive = isInteractive, label = label, labelFormat = labelFormat, labelOrientation = labelOrientation.asInstanceOf[js.Any], labelPadding = labelPadding, labelPosition = labelPosition.asInstanceOf[js.Any], labelTextColor = labelTextColor, legends = legends, linkBlendMode = linkBlendMode, linkContract = linkContract, linkHoverOpacity = linkHoverOpacity, linkHoverOthersOpacity = linkHoverOthersOpacity, linkOpacity = linkOpacity, linkTooltip = linkTooltip, nodeBorderColor = nodeBorderColor, nodeBorderWidth = nodeBorderWidth, nodeHoverOpacity = nodeHoverOpacity, nodeHoverOthersOpacity = nodeHoverOthersOpacity, nodeInnerPadding = nodeInnerPadding, nodeOpacity = nodeOpacity, nodeSpacing = nodeSpacing, nodeThickness = nodeThickness, nodeTooltip = nodeTooltip, onClick = onClick, sort = sort.asInstanceOf[js.Any], theme = theme, tooltipFormat = tooltipFormat)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], enableLabels = enableLabels, enableLinkGradient = enableLinkGradient, isInteractive = isInteractive, label = label, labelFormat = labelFormat, labelOrientation = labelOrientation.asInstanceOf[js.Any], labelPadding = labelPadding, labelPosition = labelPosition.asInstanceOf[js.Any], labelTextColor = labelTextColor, legends = legends, linkBlendMode = linkBlendMode, linkContract = linkContract, linkHoverOpacity = linkHoverOpacity, linkHoverOthersOpacity = linkHoverOthersOpacity, linkOpacity = linkOpacity, linkTooltip = linkTooltip, nodeBorderColor = nodeBorderColor, nodeBorderWidth = nodeBorderWidth, nodeHoverOpacity = nodeHoverOpacity, nodeHoverOthersOpacity = nodeHoverOthersOpacity, nodeInnerPadding = nodeInnerPadding, nodeOpacity = nodeOpacity, nodeSpacing = nodeSpacing, nodeThickness = nodeThickness, nodeTooltip = nodeTooltip, onClick = onClick, sort = sort.asInstanceOf[js.Any], theme = theme, tooltipFormat = tooltipFormat)
   
     __obj.asInstanceOf[Anon_Align]
   }

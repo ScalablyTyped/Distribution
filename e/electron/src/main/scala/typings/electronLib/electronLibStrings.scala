@@ -37,6 +37,9 @@ object electronLibStrings {
   sealed trait aborted extends js.Object
   
   @js.native
+  sealed trait about extends js.Object
+  
+  @js.native
   sealed trait `accent-color-changed` extends js.Object
   
   @js.native
@@ -62,6 +65,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `activity-was-continued` extends js.Object
+  
+  @js.native
+  sealed trait `alternate-selected-control-text` extends js.Object
   
   @js.native
   sealed trait always extends js.Object
@@ -136,6 +142,9 @@ object electronLibStrings {
   sealed trait `before-quit-for-update` extends js.Object
   
   @js.native
+  sealed trait blue extends js.Object
+  
+  @js.native
   sealed trait blur extends js.Object
   
   @js.native
@@ -143,6 +152,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait bottom extends js.Object
+  
+  @js.native
+  sealed trait brown extends js.Object
   
   @js.native
   sealed trait `browser-window-blur` extends js.Object
@@ -214,6 +226,9 @@ object electronLibStrings {
   sealed trait click extends js.Object
   
   @js.native
+  sealed trait clipboard extends js.Object
+  
+  @js.native
   sealed trait close extends js.Object
   
   @js.native
@@ -239,6 +254,15 @@ object electronLibStrings {
   
   @js.native
   sealed trait `continue-activity-error` extends js.Object
+  
+  @js.native
+  sealed trait control extends js.Object
+  
+  @js.native
+  sealed trait `control-background` extends js.Object
+  
+  @js.native
+  sealed trait `control-text` extends js.Object
   
   @js.native
   sealed trait copy extends js.Object
@@ -292,10 +316,16 @@ object electronLibStrings {
   sealed trait deferred extends js.Object
   
   @js.native
+  sealed trait delete extends js.Object
+  
+  @js.native
   sealed trait denied extends js.Object
   
   @js.native
   sealed trait desktop extends js.Object
+  
+  @js.native
+  sealed trait `desktop-capturer-get-sources` extends js.Object
   
   @js.native
   sealed trait destroyed extends js.Object
@@ -361,6 +391,9 @@ object electronLibStrings {
   sealed trait disable_non_proxied_udp extends js.Object
   
   @js.native
+  sealed trait `disabled-control-text` extends js.Object
+  
+  @js.native
   sealed trait `disabled-text` extends js.Object
   
   @js.native
@@ -371,6 +404,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `display-removed` extends js.Object
+  
+  @js.native
+  sealed trait `document-user-activation-required` extends js.Object
   
   @js.native
   sealed trait `dom-ready` extends js.Object
@@ -466,6 +502,9 @@ object electronLibStrings {
   sealed trait file extends js.Object
   
   @js.native
+  sealed trait `find-highlight` extends js.Object
+  
+  @js.native
   sealed trait finish extends js.Object
   
   @js.native
@@ -481,6 +520,9 @@ object electronLibStrings {
   sealed trait focus extends js.Object
   
   @js.native
+  sealed trait forcereload extends js.Object
+  
+  @js.native
   sealed trait `foreground-tab` extends js.Object
   
   @js.native
@@ -488,6 +530,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait frequent extends js.Object
+  
+  @js.native
+  sealed trait front extends js.Object
   
   @js.native
   sealed trait fullscreenchange extends js.Object
@@ -505,6 +550,21 @@ object electronLibStrings {
   sealed trait granted extends js.Object
   
   @js.native
+  sealed trait gray extends js.Object
+  
+  @js.native
+  sealed trait green extends js.Object
+  
+  @js.native
+  sealed trait grid extends js.Object
+  
+  @js.native
+  sealed trait `header-text` extends js.Object
+  
+  @js.native
+  sealed trait help extends js.Object
+  
+  @js.native
   sealed trait hidden extends js.Object
   
   @js.native
@@ -512,6 +572,12 @@ object electronLibStrings {
   
   @js.native
   sealed trait hide extends js.Object
+  
+  @js.native
+  sealed trait hideothers extends js.Object
+  
+  @js.native
+  sealed trait `high-contrast-color-scheme-changed` extends js.Object
   
   @js.native
   sealed trait highlight extends js.Object
@@ -574,10 +640,16 @@ object electronLibStrings {
   sealed trait `ipc-message` extends js.Object
   
   @js.native
+  sealed trait `ipc-message-sync` extends js.Object
+  
+  @js.native
   sealed trait keepSelection extends js.Object
   
   @js.native
   sealed trait keyboard extends js.Object
+  
+  @js.native
+  sealed trait `keyboard-focus-indicator` extends js.Object
   
   @js.native
   sealed trait keydown extends js.Object
@@ -587,6 +659,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait keyup extends js.Object
+  
+  @js.native
+  sealed trait label extends js.Object
   
   @js.native
   sealed trait large extends js.Object
@@ -602,6 +677,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait light extends js.Object
+  
+  @js.native
+  sealed trait link extends js.Object
   
   @js.native
   sealed trait load extends js.Object
@@ -748,6 +826,9 @@ object electronLibStrings {
   sealed trait `no-referrer-when-downgrade` extends js.Object
   
   @js.native
+  sealed trait `no-user-gesture-required` extends js.Object
+  
+  @js.native
   sealed trait noResolveAliases extends js.Object
   
   @js.native
@@ -784,6 +865,9 @@ object electronLibStrings {
   sealed trait openFile extends js.Object
   
   @js.native
+  sealed trait orange extends js.Object
+  
+  @js.native
   sealed trait origin extends js.Object
   
   @js.native
@@ -811,6 +895,9 @@ object electronLibStrings {
   sealed trait paste extends js.Object
   
   @js.native
+  sealed trait pasteandmatchstyle extends js.Object
+  
+  @js.native
   sealed trait path extends js.Object
   
   @js.native
@@ -818,6 +905,12 @@ object electronLibStrings {
   
   @js.native
   sealed trait paused extends js.Object
+  
+  @js.native
+  sealed trait pink extends js.Object
+  
+  @js.native
+  sealed trait `placeholder-text` extends js.Object
   
   @js.native
   sealed trait play extends js.Object
@@ -865,6 +958,9 @@ object electronLibStrings {
   sealed trait port extends js.Object
   
   @js.native
+  sealed trait `preload-error` extends js.Object
+  
+  @js.native
   sealed trait `prevent-app-suspension` extends js.Object
   
   @js.native
@@ -889,6 +985,12 @@ object electronLibStrings {
   sealed trait purchasing extends js.Object
   
   @js.native
+  sealed trait purple extends js.Object
+  
+  @js.native
+  sealed trait `quaternary-label` extends js.Object
+  
+  @js.native
   sealed trait quit extends js.Object
   
   @js.native
@@ -907,7 +1009,16 @@ object electronLibStrings {
   sealed trait recent extends js.Object
   
   @js.native
+  sealed trait red extends js.Object
+  
+  @js.native
   sealed trait redirect extends js.Object
+  
+  @js.native
+  sealed trait redo extends js.Object
+  
+  @js.native
+  sealed trait reload extends js.Object
   
   @js.native
   sealed trait remote extends js.Object
@@ -938,6 +1049,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait reset extends js.Object
+  
+  @js.native
+  sealed trait resetzoom extends js.Object
   
   @js.native
   sealed trait resize extends js.Object
@@ -997,7 +1111,13 @@ object electronLibStrings {
   sealed trait scrollbar extends js.Object
   
   @js.native
+  sealed trait `scrubber-textured-background` extends js.Object
+  
+  @js.native
   sealed trait `second-instance` extends js.Object
+  
+  @js.native
+  sealed trait `secondary-label` extends js.Object
   
   @js.native
   sealed trait securitypolicyviolation extends js.Object
@@ -1018,6 +1138,27 @@ object electronLibStrings {
   sealed trait `select-client-certificate` extends js.Object
   
   @js.native
+  sealed trait selectall extends js.Object
+  
+  @js.native
+  sealed trait `selected-content-background` extends js.Object
+  
+  @js.native
+  sealed trait `selected-control` extends js.Object
+  
+  @js.native
+  sealed trait `selected-control-text` extends js.Object
+  
+  @js.native
+  sealed trait `selected-menu-item` extends js.Object
+  
+  @js.native
+  sealed trait `selected-text` extends js.Object
+  
+  @js.native
+  sealed trait `selected-text-background` extends js.Object
+  
+  @js.native
   sealed trait selection extends js.Object
   
   @js.native
@@ -1033,6 +1174,9 @@ object electronLibStrings {
   sealed trait separator extends js.Object
   
   @js.native
+  sealed trait services extends js.Object
+  
+  @js.native
   sealed trait session extends js.Object
   
   @js.native
@@ -1040,6 +1184,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `session-end` extends js.Object
+  
+  @js.native
+  sealed trait shadow extends js.Object
   
   @js.native
   sealed trait `sheet-begin` extends js.Object
@@ -1072,7 +1219,13 @@ object electronLibStrings {
   sealed trait stalled extends js.Object
   
   @js.native
+  sealed trait startspeaking extends js.Object
+  
+  @js.native
   sealed trait status extends js.Object
+  
+  @js.native
+  sealed trait stopspeaking extends js.Object
   
   @js.native
   sealed trait `strict-origin` extends js.Object
@@ -1102,6 +1255,15 @@ object electronLibStrings {
   sealed trait tasks extends js.Object
   
   @js.native
+  sealed trait `tertiary-label` extends js.Object
+  
+  @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
+  sealed trait `text-background` extends js.Object
+  
+  @js.native
   sealed trait `textured-rounded` extends js.Object
   
   @js.native
@@ -1115,6 +1277,12 @@ object electronLibStrings {
   
   @js.native
   sealed trait toggle extends js.Object
+  
+  @js.native
+  sealed trait toggledevtools extends js.Object
+  
+  @js.native
+  sealed trait togglefullscreen extends js.Object
   
   @js.native
   sealed trait `torn-off-menu` extends js.Object
@@ -1162,7 +1330,25 @@ object electronLibStrings {
   sealed trait unavailable extends js.Object
   
   @js.native
+  sealed trait `under-page-background` extends js.Object
+  
+  @js.native
+  sealed trait undo extends js.Object
+  
+  @js.native
   sealed trait undocked extends js.Object
+  
+  @js.native
+  sealed trait `unemphasized-selected-content-background` extends js.Object
+  
+  @js.native
+  sealed trait `unemphasized-selected-text` extends js.Object
+  
+  @js.native
+  sealed trait `unemphasized-selected-text-background` extends js.Object
+  
+  @js.native
+  sealed trait unhide extends js.Object
   
   @js.native
   sealed trait unknown extends js.Object
@@ -1202,6 +1388,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait url extends js.Object
+  
+  @js.native
+  sealed trait `user-gesture-required` extends js.Object
   
   @js.native
   sealed trait video extends js.Object
@@ -1258,10 +1447,28 @@ object electronLibStrings {
   sealed trait `window-all-closed` extends js.Object
   
   @js.native
+  sealed trait `window-background` extends js.Object
+  
+  @js.native
   sealed trait `window-frame` extends js.Object
   
   @js.native
+  sealed trait `window-frame-text` extends js.Object
+  
+  @js.native
   sealed trait `window-text` extends js.Object
+  
+  @js.native
+  sealed trait yellow extends js.Object
+  
+  @js.native
+  sealed trait zoom extends js.Object
+  
+  @js.native
+  sealed trait zoomin extends js.Object
+  
+  @js.native
+  sealed trait zoomout extends js.Object
   
   @scala.inline
   def `3d-dark-shadow`: `3d-dark-shadow` = "3d-dark-shadow".asInstanceOf[`3d-dark-shadow`]
@@ -1284,6 +1491,8 @@ object electronLibStrings {
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline
+  def about: about = "about".asInstanceOf[about]
+  @scala.inline
   def `accent-color-changed`: `accent-color-changed` = "accent-color-changed".asInstanceOf[`accent-color-changed`]
   @scala.inline
   def `accessibility-support-changed`: `accessibility-support-changed` = "accessibility-support-changed".asInstanceOf[`accessibility-support-changed`]
@@ -1301,6 +1510,8 @@ object electronLibStrings {
   def `active-caption-gradient`: `active-caption-gradient` = "active-caption-gradient".asInstanceOf[`active-caption-gradient`]
   @scala.inline
   def `activity-was-continued`: `activity-was-continued` = "activity-was-continued".asInstanceOf[`activity-was-continued`]
+  @scala.inline
+  def `alternate-selected-control-text`: `alternate-selected-control-text` = "alternate-selected-control-text".asInstanceOf[`alternate-selected-control-text`]
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   @scala.inline
@@ -1350,11 +1561,15 @@ object electronLibStrings {
   @scala.inline
   def `before-quit-for-update`: `before-quit-for-update` = "before-quit-for-update".asInstanceOf[`before-quit-for-update`]
   @scala.inline
+  def blue: blue = "blue".asInstanceOf[blue]
+  @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def brown: brown = "brown".asInstanceOf[brown]
   @scala.inline
   def `browser-window-blur`: `browser-window-blur` = "browser-window-blur".asInstanceOf[`browser-window-blur`]
   @scala.inline
@@ -1402,6 +1617,8 @@ object electronLibStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
+  def clipboard: clipboard = "clipboard".asInstanceOf[clipboard]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
@@ -1419,6 +1636,12 @@ object electronLibStrings {
   def `continue-activity`: `continue-activity` = "continue-activity".asInstanceOf[`continue-activity`]
   @scala.inline
   def `continue-activity-error`: `continue-activity-error` = "continue-activity-error".asInstanceOf[`continue-activity-error`]
+  @scala.inline
+  def control: control = "control".asInstanceOf[control]
+  @scala.inline
+  def `control-background`: `control-background` = "control-background".asInstanceOf[`control-background`]
+  @scala.inline
+  def `control-text`: `control-text` = "control-text".asInstanceOf[`control-text`]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   @scala.inline
@@ -1454,9 +1677,13 @@ object electronLibStrings {
   @scala.inline
   def deferred: deferred = "deferred".asInstanceOf[deferred]
   @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
+  @scala.inline
+  def `desktop-capturer-get-sources`: `desktop-capturer-get-sources` = "desktop-capturer-get-sources".asInstanceOf[`desktop-capturer-get-sources`]
   @scala.inline
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   @scala.inline
@@ -1500,6 +1727,8 @@ object electronLibStrings {
   @scala.inline
   def disable_non_proxied_udp: disable_non_proxied_udp = "disable_non_proxied_udp".asInstanceOf[disable_non_proxied_udp]
   @scala.inline
+  def `disabled-control-text`: `disabled-control-text` = "disabled-control-text".asInstanceOf[`disabled-control-text`]
+  @scala.inline
   def `disabled-text`: `disabled-text` = "disabled-text".asInstanceOf[`disabled-text`]
   @scala.inline
   def `display-added`: `display-added` = "display-added".asInstanceOf[`display-added`]
@@ -1507,6 +1736,8 @@ object electronLibStrings {
   def `display-metrics-changed`: `display-metrics-changed` = "display-metrics-changed".asInstanceOf[`display-metrics-changed`]
   @scala.inline
   def `display-removed`: `display-removed` = "display-removed".asInstanceOf[`display-removed`]
+  @scala.inline
+  def `document-user-activation-required`: `document-user-activation-required` = "document-user-activation-required".asInstanceOf[`document-user-activation-required`]
   @scala.inline
   def `dom-ready`: `dom-ready` = "dom-ready".asInstanceOf[`dom-ready`]
   @scala.inline
@@ -1570,6 +1801,8 @@ object electronLibStrings {
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
+  def `find-highlight`: `find-highlight` = "find-highlight".asInstanceOf[`find-highlight`]
+  @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
   def flexible: flexible = "flexible".asInstanceOf[flexible]
@@ -1580,11 +1813,15 @@ object electronLibStrings {
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
+  def forcereload: forcereload = "forcereload".asInstanceOf[forcereload]
+  @scala.inline
   def `foreground-tab`: `foreground-tab` = "foreground-tab".asInstanceOf[`foreground-tab`]
   @scala.inline
   def `found-in-page`: `found-in-page` = "found-in-page".asInstanceOf[`found-in-page`]
   @scala.inline
   def frequent: frequent = "frequent".asInstanceOf[frequent]
+  @scala.inline
+  def front: front = "front".asInstanceOf[front]
   @scala.inline
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   @scala.inline
@@ -1596,11 +1833,25 @@ object electronLibStrings {
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
   @scala.inline
+  def gray: gray = "gray".asInstanceOf[gray]
+  @scala.inline
+  def green: green = "green".asInstanceOf[green]
+  @scala.inline
+  def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
+  def `header-text`: `header-text` = "header-text".asInstanceOf[`header-text`]
+  @scala.inline
+  def help: help = "help".asInstanceOf[help]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
   def hiddenInset: hiddenInset = "hiddenInset".asInstanceOf[hiddenInset]
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
+  @scala.inline
+  def hideothers: hideothers = "hideothers".asInstanceOf[hideothers]
+  @scala.inline
+  def `high-contrast-color-scheme-changed`: `high-contrast-color-scheme-changed` = "high-contrast-color-scheme-changed".asInstanceOf[`high-contrast-color-scheme-changed`]
   @scala.inline
   def highlight: highlight = "highlight".asInstanceOf[highlight]
   @scala.inline
@@ -1642,15 +1893,21 @@ object electronLibStrings {
   @scala.inline
   def `ipc-message`: `ipc-message` = "ipc-message".asInstanceOf[`ipc-message`]
   @scala.inline
+  def `ipc-message-sync`: `ipc-message-sync` = "ipc-message-sync".asInstanceOf[`ipc-message-sync`]
+  @scala.inline
   def keepSelection: keepSelection = "keepSelection".asInstanceOf[keepSelection]
   @scala.inline
   def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
+  @scala.inline
+  def `keyboard-focus-indicator`: `keyboard-focus-indicator` = "keyboard-focus-indicator".asInstanceOf[`keyboard-focus-indicator`]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
   def keypress: keypress = "keypress".asInstanceOf[keypress]
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
+  @scala.inline
+  def label: label = "label".asInstanceOf[label]
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   @scala.inline
@@ -1661,6 +1918,8 @@ object electronLibStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def light: light = "light".asInstanceOf[light]
+  @scala.inline
+  def link: link = "link".asInstanceOf[link]
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
@@ -1758,6 +2017,8 @@ object electronLibStrings {
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   @scala.inline
+  def `no-user-gesture-required`: `no-user-gesture-required` = "no-user-gesture-required".asInstanceOf[`no-user-gesture-required`]
+  @scala.inline
   def noResolveAliases: noResolveAliases = "noResolveAliases".asInstanceOf[noResolveAliases]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -1782,6 +2043,8 @@ object electronLibStrings {
   @scala.inline
   def openFile: openFile = "openFile".asInstanceOf[openFile]
   @scala.inline
+  def orange: orange = "orange".asInstanceOf[orange]
+  @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
@@ -1800,11 +2063,17 @@ object electronLibStrings {
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
+  def pasteandmatchstyle: pasteandmatchstyle = "pasteandmatchstyle".asInstanceOf[pasteandmatchstyle]
+  @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
+  @scala.inline
+  def pink: pink = "pink".asInstanceOf[pink]
+  @scala.inline
+  def `placeholder-text`: `placeholder-text` = "placeholder-text".asInstanceOf[`placeholder-text`]
   @scala.inline
   def play: play = "play".asInstanceOf[play]
   @scala.inline
@@ -1836,6 +2105,8 @@ object electronLibStrings {
   @scala.inline
   def port: port = "port".asInstanceOf[port]
   @scala.inline
+  def `preload-error`: `preload-error` = "preload-error".asInstanceOf[`preload-error`]
+  @scala.inline
   def `prevent-app-suspension`: `prevent-app-suspension` = "prevent-app-suspension".asInstanceOf[`prevent-app-suspension`]
   @scala.inline
   def `prevent-display-sleep`: `prevent-display-sleep` = "prevent-display-sleep".asInstanceOf[`prevent-display-sleep`]
@@ -1852,6 +2123,10 @@ object electronLibStrings {
   @scala.inline
   def purchasing: purchasing = "purchasing".asInstanceOf[purchasing]
   @scala.inline
+  def purple: purple = "purple".asInstanceOf[purple]
+  @scala.inline
+  def `quaternary-label`: `quaternary-label` = "quaternary-label".asInstanceOf[`quaternary-label`]
+  @scala.inline
   def quit: quit = "quit".asInstanceOf[quit]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
@@ -1864,7 +2139,13 @@ object electronLibStrings {
   @scala.inline
   def recent: recent = "recent".asInstanceOf[recent]
   @scala.inline
+  def red: red = "red".asInstanceOf[red]
+  @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
+  @scala.inline
+  def redo: redo = "redo".asInstanceOf[redo]
+  @scala.inline
+  def reload: reload = "reload".asInstanceOf[reload]
   @scala.inline
   def remote: remote = "remote".asInstanceOf[remote]
   @scala.inline
@@ -1885,6 +2166,8 @@ object electronLibStrings {
   def reply: reply = "reply".asInstanceOf[reply]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
+  def resetzoom: resetzoom = "resetzoom".asInstanceOf[resetzoom]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
@@ -1924,7 +2207,11 @@ object electronLibStrings {
   @scala.inline
   def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   @scala.inline
+  def `scrubber-textured-background`: `scrubber-textured-background` = "scrubber-textured-background".asInstanceOf[`scrubber-textured-background`]
+  @scala.inline
   def `second-instance`: `second-instance` = "second-instance".asInstanceOf[`second-instance`]
+  @scala.inline
+  def `secondary-label`: `secondary-label` = "secondary-label".asInstanceOf[`secondary-label`]
   @scala.inline
   def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
   @scala.inline
@@ -1938,6 +2225,20 @@ object electronLibStrings {
   @scala.inline
   def `select-client-certificate`: `select-client-certificate` = "select-client-certificate".asInstanceOf[`select-client-certificate`]
   @scala.inline
+  def selectall: selectall = "selectall".asInstanceOf[selectall]
+  @scala.inline
+  def `selected-content-background`: `selected-content-background` = "selected-content-background".asInstanceOf[`selected-content-background`]
+  @scala.inline
+  def `selected-control`: `selected-control` = "selected-control".asInstanceOf[`selected-control`]
+  @scala.inline
+  def `selected-control-text`: `selected-control-text` = "selected-control-text".asInstanceOf[`selected-control-text`]
+  @scala.inline
+  def `selected-menu-item`: `selected-menu-item` = "selected-menu-item".asInstanceOf[`selected-menu-item`]
+  @scala.inline
+  def `selected-text`: `selected-text` = "selected-text".asInstanceOf[`selected-text`]
+  @scala.inline
+  def `selected-text-background`: `selected-text-background` = "selected-text-background".asInstanceOf[`selected-text-background`]
+  @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
   @scala.inline
   def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
@@ -1948,11 +2249,15 @@ object electronLibStrings {
   @scala.inline
   def separator: separator = "separator".asInstanceOf[separator]
   @scala.inline
+  def services: services = "services".asInstanceOf[services]
+  @scala.inline
   def session: session = "session".asInstanceOf[session]
   @scala.inline
   def `session-created`: `session-created` = "session-created".asInstanceOf[`session-created`]
   @scala.inline
   def `session-end`: `session-end` = "session-end".asInstanceOf[`session-end`]
+  @scala.inline
+  def shadow: shadow = "shadow".asInstanceOf[shadow]
   @scala.inline
   def `sheet-begin`: `sheet-begin` = "sheet-begin".asInstanceOf[`sheet-begin`]
   @scala.inline
@@ -1974,7 +2279,11 @@ object electronLibStrings {
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
+  def startspeaking: startspeaking = "startspeaking".asInstanceOf[startspeaking]
+  @scala.inline
   def status: status = "status".asInstanceOf[status]
+  @scala.inline
+  def stopspeaking: stopspeaking = "stopspeaking".asInstanceOf[stopspeaking]
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
   @scala.inline
@@ -1994,6 +2303,12 @@ object electronLibStrings {
   @scala.inline
   def tasks: tasks = "tasks".asInstanceOf[tasks]
   @scala.inline
+  def `tertiary-label`: `tertiary-label` = "tertiary-label".asInstanceOf[`tertiary-label`]
+  @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def `text-background`: `text-background` = "text-background".asInstanceOf[`text-background`]
+  @scala.inline
   def `textured-rounded`: `textured-rounded` = "textured-rounded".asInstanceOf[`textured-rounded`]
   @scala.inline
   def `textured-square`: `textured-square` = "textured-square".asInstanceOf[`textured-square`]
@@ -2003,6 +2318,10 @@ object electronLibStrings {
   def titlebar: titlebar = "titlebar".asInstanceOf[titlebar]
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @scala.inline
+  def toggledevtools: toggledevtools = "toggledevtools".asInstanceOf[toggledevtools]
+  @scala.inline
+  def togglefullscreen: togglefullscreen = "togglefullscreen".asInstanceOf[togglefullscreen]
   @scala.inline
   def `torn-off-menu`: `torn-off-menu` = "torn-off-menu".asInstanceOf[`torn-off-menu`]
   @scala.inline
@@ -2034,7 +2353,19 @@ object electronLibStrings {
   @scala.inline
   def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   @scala.inline
+  def `under-page-background`: `under-page-background` = "under-page-background".asInstanceOf[`under-page-background`]
+  @scala.inline
+  def undo: undo = "undo".asInstanceOf[undo]
+  @scala.inline
   def undocked: undocked = "undocked".asInstanceOf[undocked]
+  @scala.inline
+  def `unemphasized-selected-content-background`: `unemphasized-selected-content-background` = "unemphasized-selected-content-background".asInstanceOf[`unemphasized-selected-content-background`]
+  @scala.inline
+  def `unemphasized-selected-text`: `unemphasized-selected-text` = "unemphasized-selected-text".asInstanceOf[`unemphasized-selected-text`]
+  @scala.inline
+  def `unemphasized-selected-text-background`: `unemphasized-selected-text-background` = "unemphasized-selected-text-background".asInstanceOf[`unemphasized-selected-text-background`]
+  @scala.inline
+  def unhide: unhide = "unhide".asInstanceOf[unhide]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   @scala.inline
@@ -2061,6 +2392,8 @@ object electronLibStrings {
   def updated: updated = "updated".asInstanceOf[updated]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def `user-gesture-required`: `user-gesture-required` = "user-gesture-required".asInstanceOf[`user-gesture-required`]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
@@ -2098,8 +2431,20 @@ object electronLibStrings {
   @scala.inline
   def `window-all-closed`: `window-all-closed` = "window-all-closed".asInstanceOf[`window-all-closed`]
   @scala.inline
+  def `window-background`: `window-background` = "window-background".asInstanceOf[`window-background`]
+  @scala.inline
   def `window-frame`: `window-frame` = "window-frame".asInstanceOf[`window-frame`]
   @scala.inline
+  def `window-frame-text`: `window-frame-text` = "window-frame-text".asInstanceOf[`window-frame-text`]
+  @scala.inline
   def `window-text`: `window-text` = "window-text".asInstanceOf[`window-text`]
+  @scala.inline
+  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  @scala.inline
+  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  @scala.inline
+  def zoomin: zoomin = "zoomin".asInstanceOf[zoomin]
+  @scala.inline
+  def zoomout: zoomout = "zoomout".asInstanceOf[zoomout]
 }
 

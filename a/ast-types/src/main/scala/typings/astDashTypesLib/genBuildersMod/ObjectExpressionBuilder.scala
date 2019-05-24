@@ -11,7 +11,7 @@ trait ObjectExpressionBuilder extends js.Object {
     properties: js.Array[
       astDashTypesLib.genKindsMod.PropertyKind | astDashTypesLib.genKindsMod.ObjectMethodKind | astDashTypesLib.genKindsMod.ObjectPropertyKind | astDashTypesLib.genKindsMod.SpreadPropertyKind | astDashTypesLib.genKindsMod.SpreadElementKind
     ]
-  ): astDashTypesLib.genNodesMod.ObjectExpression = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocProperties): astDashTypesLib.genNodesMod.ObjectExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectExpression = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocProperties): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectExpression = js.native
 }
 

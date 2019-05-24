@@ -21,10 +21,19 @@ class Cookies () extends EventEmitter {
   /**
     * Writes any unwritten cookies data to disk.
     */
+  def flushStore(): js.Promise[scala.Unit] = js.native
+  /**
+    * Writes any unwritten cookies data to disk. Deprecated Soon
+    */
   def flushStore(callback: js.Function): scala.Unit = js.native
   /**
+    * Sends a request to get all cookies matching filter, and resolves a promise with
+    * the response.
+    */
+  def get(filter: Filter): js.Promise[Cookie] = js.native
+  /**
     * Sends a request to get all cookies matching filter, callback will be called with
-    * callback(error, cookies) on complete.
+    * callback(error, cookies) on complete. Deprecated Soon
     */
   def get(
     filter: Filter,
@@ -56,8 +65,12 @@ class Cookies () extends EventEmitter {
     ]
   ): this.type = js.native
   /**
+    * Removes the cookies matching url and name
+    */
+  def remove(url: java.lang.String, name: java.lang.String): js.Promise[scala.Unit] = js.native
+  /**
     * Removes the cookies matching url and name, callback will called with callback()
-    * on complete.
+    * on complete. Deprecated Soon
     */
   def remove(url: java.lang.String, name: java.lang.String, callback: js.Function): scala.Unit = js.native
   def removeListener(
@@ -71,8 +84,12 @@ class Cookies () extends EventEmitter {
     ]
   ): this.type = js.native
   /**
+    * Sets a cookie with details.
+    */
+  def set(details: Details): js.Promise[scala.Unit] = js.native
+  /**
     * Sets a cookie with details, callback will be called with callback(error) on
-    * complete.
+    * complete. Deprecated Soon
     */
   def set(details: Details, callback: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
 }

@@ -14,6 +14,17 @@ trait Process
     */
   var defaultApp: js.UndefOr[scala.Boolean] = js.native
   /**
+    * A Boolean that controls whether or not deprecation warnings are printed to
+    * stderr when formerly callback-based APIs converted to Promises are invoked using
+    * callbacks. Setting this to true will enable deprecation warnings.
+    */
+  var enablePromiseAPIs: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * A Boolean, true when the current renderer context is the "main" renderer frame.
+    * If you want the ID of the current frame you should use webFrame.routingId.
+    */
+  var isMainFrame: js.UndefOr[scala.Boolean] = js.native
+  /**
     * A Boolean. For Mac App Store build, this property is true, for other builds it
     * is undefined.
     */
@@ -60,7 +71,7 @@ trait Process
   var traceProcessWarnings: js.UndefOr[scala.Boolean] = js.native
   /**
     * A String representing the current process's type, can be "browser" (i.e. main
-    * process) or "renderer".
+    * process), "renderer", or "worker" (i.e. web worker).
     */
   var `type`: js.UndefOr[java.lang.String] = js.native
   /**

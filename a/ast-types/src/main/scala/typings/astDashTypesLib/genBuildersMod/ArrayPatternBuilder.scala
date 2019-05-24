@@ -11,7 +11,7 @@ trait ArrayPatternBuilder extends js.Object {
     elements: js.Array[
       astDashTypesLib.genKindsMod.PatternKind | astDashTypesLib.genKindsMod.SpreadElementKind | scala.Null
     ]
-  ): astDashTypesLib.genNodesMod.ArrayPattern = js.native
-  def from(params: astDashTypesLib.Anon_CommentsElementsLoc): astDashTypesLib.genNodesMod.ArrayPattern = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayPattern = js.native
+  def from(params: astDashTypesLib.Anon_CommentsElementsLoc): astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayPattern = js.native
 }
 

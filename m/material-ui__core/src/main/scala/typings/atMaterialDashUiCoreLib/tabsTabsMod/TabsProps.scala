@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/Tabs/Tabs.TabsClassKey, 'onChange' | 'action' | 'component'> */
 trait TabsProps extends js.Object {
   var ScrollButtonComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
-  var TabIndicatorProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]] = js.undefined
+  var TabIndicatorProps: js.UndefOr[atMaterialDashUiCoreLib.PartialTabIndicatorProps] = js.undefined
   var TouchRippleProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps]
   ] = js.undefined
@@ -118,9 +118,7 @@ trait TabsProps extends js.Object {
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TabsClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapTabsClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[TabsProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -369,7 +367,7 @@ object TabsProps {
   def apply(
     value: js.Any,
     ScrollButtonComponent: reactLib.reactMod.ReactType[_] = null,
-    TabIndicatorProps: stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = null,
+    TabIndicatorProps: atMaterialDashUiCoreLib.PartialTabIndicatorProps = null,
     TouchRippleProps: stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps] = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
@@ -431,7 +429,7 @@ object TabsProps {
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TabsClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapTabsClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[TabsProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

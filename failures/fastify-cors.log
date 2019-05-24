@@ -1,0 +1,7 @@
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(fastify-cors) [id => fastify-cors, phase => typescript, file => ../node_modules/fastify-cors/index.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => fastify-cors, phase => typescript] 
+[warn ] PhaseRunner.scala:70 Failed because of, [fastify-plugin => Couldn't resolve fastify] [id => fastify-cors, phase => typescript] 
+[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-cors, phase => typescript] 
+[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-cors, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-cors, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [fastify-plugin => Couldn't resolve fastify] [id => fastify-cors, phase => publish] 

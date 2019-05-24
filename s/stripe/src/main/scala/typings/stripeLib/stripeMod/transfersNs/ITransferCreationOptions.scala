@@ -16,6 +16,12 @@ trait ITransferCreationOptions
     */
   var currency: java.lang.String
   /**
+    * An arbitrary string attached to the object. Often useful for
+    * displaying to users. This can be unset by updating the value
+    * to null and then saving.
+    */
+  var description: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The id of a bank account or a card to send the transfer to, or the
     * string "default_for_currency" to use the default external
     * account for the specified currency.
@@ -46,6 +52,7 @@ object ITransferCreationOptions {
     amount: scala.Double,
     currency: java.lang.String,
     destination: java.lang.String,
+    description: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
@@ -53,6 +60,7 @@ object ITransferCreationOptions {
     transfer_group: java.lang.String = null
   ): ITransferCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency, destination = destination)
+    if (description != null) __obj.updateDynamic("description")(description)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

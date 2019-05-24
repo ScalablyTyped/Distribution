@@ -88,19 +88,6 @@ trait WebFrame extends EventEmitter {
     */
   def insertText(text: java.lang.String): scala.Unit = js.native
   /**
-    * Resources will be loaded from this scheme regardless of the current page's
-    * Content Security Policy.
-    */
-  def registerURLSchemeAsBypassingCSP(scheme: java.lang.String): scala.Unit = js.native
-  /**
-    * Registers the scheme as secure, bypasses content security policy for resources,
-    * allows registering ServiceWorker and supports fetch API. Specify an option with
-    * the value of false to omit it from the registration. An example of registering a
-    * privileged scheme, without bypassing Content Security Policy:
-    */
-  def registerURLSchemeAsPrivileged(scheme: java.lang.String): scala.Unit = js.native
-  def registerURLSchemeAsPrivileged(scheme: java.lang.String, options: RegisterURLSchemeAsPrivilegedOptions): scala.Unit = js.native
-  /**
     * Set the content security policy of the isolated world.
     */
   def setIsolatedWorldContentSecurityPolicy(worldId: scala.Double, csp: java.lang.String): scala.Unit = js.native
@@ -108,6 +95,11 @@ trait WebFrame extends EventEmitter {
     * Set the name of the isolated world. Useful in devtools.
     */
   def setIsolatedWorldHumanReadableName(worldId: scala.Double, name: java.lang.String): scala.Unit = js.native
+  /**
+    * Set the security origin, content security policy and name of the isolated world.
+    * Note: If the csp is specified, then the securityOrigin also has to be specified.
+    */
+  def setIsolatedWorldInfo(worldId: scala.Double, info: Info): scala.Unit = js.native
   /**
     * Set the security origin of the isolated world.
     */
@@ -118,10 +110,12 @@ trait WebFrame extends EventEmitter {
   def setLayoutZoomLevelLimits(minimumLevel: scala.Double, maximumLevel: scala.Double): scala.Unit = js.native
   /**
     * Sets a provider for spell checking in input fields and text areas. The provider
-    * must be an object that has a spellCheck method that returns whether the word
-    * passed is correctly spelled. An example of using node-spellchecker as provider:
+    * must be an object that has a spellCheck method that accepts an array of
+    * individual words for spellchecking. The spellCheck function runs asynchronously
+    * and calls the callback function with an array of misspelt words when complete.
+    * An example of using node-spellchecker as provider:
     */
-  def setSpellCheckProvider(language: java.lang.String, autoCorrectWord: scala.Boolean, provider: Provider): scala.Unit = js.native
+  def setSpellCheckProvider(language: java.lang.String, provider: Provider): scala.Unit = js.native
   /**
     * Sets the maximum and minimum pinch-to-zoom level.
     */

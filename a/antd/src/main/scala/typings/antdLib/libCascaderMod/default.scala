@@ -19,6 +19,6 @@ object default extends js.Object {
   def getDerivedStateFromProps(
     nextProps: antdLib.libCascaderMod.CascaderProps,
     hasPrevProps: antdLib.libCascaderMod.CascaderState
-  ): stdLib.Partial[antdLib.libCascaderMod.CascaderState] = js.native
+  ): antdLib.PartialCascaderStateFlattenOptions = js.native
 }
 

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashModalLibStrings {
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Direction
   
   @js.native
   sealed trait formSheet extends js.Object
@@ -28,7 +29,8 @@ object reactDashNativeDashModalLibStrings {
     extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Direction
   
   @js.native
   sealed trait overFullScreen extends js.Object
@@ -45,10 +47,12 @@ object reactDashNativeDashModalLibStrings {
     extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Direction
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Direction
   
   @scala.inline
   def down: down = "down".asInstanceOf[down]

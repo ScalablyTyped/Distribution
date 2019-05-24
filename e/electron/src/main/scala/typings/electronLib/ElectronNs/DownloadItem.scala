@@ -40,6 +40,7 @@ class DownloadItem () extends EventEmitter {
   def getLastModifiedTime(): java.lang.String = js.native
   def getMimeType(): java.lang.String = js.native
   def getReceivedBytes(): scala.Double = js.native
+  def getSaveDialogOptions(): SaveDialogOptions = js.native
   def getSavePath(): java.lang.String = js.native
   def getStartTime(): scala.Double = js.native
   /**
@@ -124,6 +125,12 @@ class DownloadItem () extends EventEmitter {
     * received bytes and restart the download from the beginning.
     */
   def resume(): scala.Unit = js.native
+  /**
+    * This API allows the user to set custom options for the save dialog that opens
+    * for the download item by default. The API is only available in session's
+    * will-download callback function.
+    */
+  def setSaveDialogOptions(options: SaveDialogOptions): scala.Unit = js.native
   /**
     * The API is only available in session's will-download callback function. If user
     * doesn't set the save path via the API, Electron will use the original routine to

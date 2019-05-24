@@ -1,7 +1,7 @@
 
 # Scala.js typings for crypto-random-string
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Generate a cryptographically strong random string
@@ -31,24 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-/**
-Generate a [cryptographically strong](https://en.m.wikipedia.org/wiki/Strong_cryptography) random string.
-
-@param length - Length of the returned string.
-@returns A [`hex`](https://en.wikipedia.org/wiki/Hexadecimal) string.
-
-@example
-```
-import cryptoRandomString = require('crypto-random-string');
-
-cryptoRandomString(10);
-//=> '2cf05d94db'
-```
-*/
-
-```
 

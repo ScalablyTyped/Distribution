@@ -1,0 +1,21 @@
+package typings
+package sipDotJsLib.libCoreUserDashAgentsInviteDashUserDashAgentDashClientMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest because var conflicts: delegate. Inlined  */ @JSImport("sip.js/lib/Core/user-agents/invite-user-agent-client", "InviteUserAgentClient")
+@js.native
+class InviteUserAgentClient protected ()
+  extends sipDotJsLib.libCoreUserDashAgentsUserDashAgentDashClientMod.UserAgentClient {
+  def this(core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libSIPMessageMod.OutgoingRequest) = this()
+  def this(core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libSIPMessageMod.OutgoingRequest, delegate: sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate) = this()
+  var confirmedDialogAcks: js.Any = js.native
+  var confirmedDialogs: js.Any = js.native
+  @JSName("delegate")
+  var delegate_InviteUserAgentClient: js.UndefOr[sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate] = js.native
+  var earlyDialogs: js.Any = js.native
+}
+

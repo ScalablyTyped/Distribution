@@ -265,9 +265,12 @@ trait Globals
      with _InitialLetterProperty
      with _InlineSizeProperty[js.Any]
      with _InsetBlockEndProperty[js.Any]
+     with _InsetBlockProperty[js.Any]
      with _InsetBlockStartProperty[js.Any]
      with _InsetInlineEndProperty[js.Any]
+     with _InsetInlineProperty[js.Any]
      with _InsetInlineStartProperty[js.Any]
+     with _InsetProperty[js.Any]
      with _JustifyContentProperty
      with _JustifyItemsProperty
      with _JustifySelfProperty

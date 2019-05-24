@@ -11,12 +11,14 @@ trait CompressOptions extends js.Object {
   var booleans: js.UndefOr[scala.Boolean] = js.undefined
   var collapse_vars: js.UndefOr[scala.Boolean] = js.undefined
   var comparisons: js.UndefOr[scala.Boolean] = js.undefined
+  var computed_props: js.UndefOr[scala.Boolean] = js.undefined
   var conditionals: js.UndefOr[scala.Boolean] = js.undefined
   var dead_code: js.UndefOr[scala.Boolean] = js.undefined
   var defaults: js.UndefOr[scala.Boolean] = js.undefined
   var directives: js.UndefOr[scala.Boolean] = js.undefined
   var drop_console: js.UndefOr[scala.Boolean] = js.undefined
   var drop_debugger: js.UndefOr[scala.Boolean] = js.undefined
+  var ecma: js.UndefOr[ECMA] = js.undefined
   var evaluate: js.UndefOr[scala.Boolean] = js.undefined
   var expression: js.UndefOr[scala.Boolean] = js.undefined
   var global_defs: js.UndefOr[js.Object] = js.undefined
@@ -31,6 +33,7 @@ trait CompressOptions extends js.Object {
   var keep_fnames: js.UndefOr[scala.Boolean | stdLib.RegExp] = js.undefined
   var keep_infinity: js.UndefOr[scala.Boolean] = js.undefined
   var loops: js.UndefOr[scala.Boolean] = js.undefined
+  var module: js.UndefOr[scala.Boolean] = js.undefined
   var negate_iife: js.UndefOr[scala.Boolean] = js.undefined
   var passes: js.UndefOr[scala.Double] = js.undefined
   var properties: js.UndefOr[scala.Boolean] = js.undefined
@@ -65,12 +68,14 @@ object CompressOptions {
     booleans: js.UndefOr[scala.Boolean] = js.undefined,
     collapse_vars: js.UndefOr[scala.Boolean] = js.undefined,
     comparisons: js.UndefOr[scala.Boolean] = js.undefined,
+    computed_props: js.UndefOr[scala.Boolean] = js.undefined,
     conditionals: js.UndefOr[scala.Boolean] = js.undefined,
     dead_code: js.UndefOr[scala.Boolean] = js.undefined,
     defaults: js.UndefOr[scala.Boolean] = js.undefined,
     directives: js.UndefOr[scala.Boolean] = js.undefined,
     drop_console: js.UndefOr[scala.Boolean] = js.undefined,
     drop_debugger: js.UndefOr[scala.Boolean] = js.undefined,
+    ecma: ECMA = null,
     evaluate: js.UndefOr[scala.Boolean] = js.undefined,
     expression: js.UndefOr[scala.Boolean] = js.undefined,
     global_defs: js.Object = null,
@@ -85,6 +90,7 @@ object CompressOptions {
     keep_fnames: scala.Boolean | stdLib.RegExp = null,
     keep_infinity: js.UndefOr[scala.Boolean] = js.undefined,
     loops: js.UndefOr[scala.Boolean] = js.undefined,
+    module: js.UndefOr[scala.Boolean] = js.undefined,
     negate_iife: js.UndefOr[scala.Boolean] = js.undefined,
     passes: scala.Int | scala.Double = null,
     properties: js.UndefOr[scala.Boolean] = js.undefined,
@@ -116,12 +122,14 @@ object CompressOptions {
     if (!js.isUndefined(booleans)) __obj.updateDynamic("booleans")(booleans)
     if (!js.isUndefined(collapse_vars)) __obj.updateDynamic("collapse_vars")(collapse_vars)
     if (!js.isUndefined(comparisons)) __obj.updateDynamic("comparisons")(comparisons)
+    if (!js.isUndefined(computed_props)) __obj.updateDynamic("computed_props")(computed_props)
     if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals)
     if (!js.isUndefined(dead_code)) __obj.updateDynamic("dead_code")(dead_code)
     if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
     if (!js.isUndefined(directives)) __obj.updateDynamic("directives")(directives)
     if (!js.isUndefined(drop_console)) __obj.updateDynamic("drop_console")(drop_console)
     if (!js.isUndefined(drop_debugger)) __obj.updateDynamic("drop_debugger")(drop_debugger)
+    if (ecma != null) __obj.updateDynamic("ecma")(ecma)
     if (!js.isUndefined(evaluate)) __obj.updateDynamic("evaluate")(evaluate)
     if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression)
     if (global_defs != null) __obj.updateDynamic("global_defs")(global_defs)
@@ -136,6 +144,7 @@ object CompressOptions {
     if (keep_fnames != null) __obj.updateDynamic("keep_fnames")(keep_fnames.asInstanceOf[js.Any])
     if (!js.isUndefined(keep_infinity)) __obj.updateDynamic("keep_infinity")(keep_infinity)
     if (!js.isUndefined(loops)) __obj.updateDynamic("loops")(loops)
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
     if (!js.isUndefined(negate_iife)) __obj.updateDynamic("negate_iife")(negate_iife)
     if (passes != null) __obj.updateDynamic("passes")(passes.asInstanceOf[js.Any])
     if (!js.isUndefined(properties)) __obj.updateDynamic("properties")(properties)

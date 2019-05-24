@@ -403,6 +403,17 @@ object firestoreNs extends js.Object {
       */
     def collection(collectionPath: java.lang.String): CollectionReference = js.native
     /**
+      * Creates and returns a new Query that includes all documents in the
+      * database that are contained in a collection or subcollection with the
+      * given collectionId.
+      *
+      * @param collectionId Identifies the collections to query over. Every
+      * collection or subcollection with this ID as the last segment of its path
+      * will be included. Cannot contain a slash.
+      * @return The created Query.
+      */
+    def collectionGroup(collectionId: java.lang.String): Query = js.native
+    /**
       * Disables network usage for this instance. It can be re-enabled via
       * {@link firebase.firestore.Firestore.enableNetwork `enableNetwork()`}. While
       * the network is disabled, any snapshot listeners or get() calls will return
@@ -582,13 +593,21 @@ object firestoreNs extends js.Object {
       * shared execution of queries and latency-compensated local document updates
       * across all connected instances.
       *
-      * To enable this mode, `experimentalTabSynchronization:true` needs to be set
-      * globally in all active tabs. If omitted or set to 'false',
-      * `enablePersistence()` will fail in all but the first tab.
-      *
-      * NOTE: This mode is not yet recommended for production use.
+      * @deprecated This setting is deprecated. To enabled synchronization between
+      * multiple tabs, please use `synchronizeTabs: true` instead.
       */
     var experimentalTabSynchronization: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+      * Whether to synchronize the in-memory state of multiple tabs. Setting this
+      * to 'true' in all open tabs enables shared access to local persistence,
+      * shared execution of queries and latency-compensated local document updates
+      * across all connected instances.
+      *
+      * To enable this mode, `synchronizeTabs:true` needs to be set globally in all
+      * active tabs. If omitted or set to 'false', `enablePersistence()` will fail
+      * in all but the first tab.
+      */
+    var synchronizeTabs: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   @js.native

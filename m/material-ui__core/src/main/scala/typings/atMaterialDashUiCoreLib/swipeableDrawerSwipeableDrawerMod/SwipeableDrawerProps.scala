@@ -10,10 +10,10 @@ trait SwipeableDrawerProps extends js.Object {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
-  var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
-  var ModalProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps]] = js.undefined
-  var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var SlideProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.slideSlideMod.SlideProps]] = js.undefined
+  var BackdropProps: js.UndefOr[atMaterialDashUiCoreLib.PartialBackdropProps] = js.undefined
+  var ModalProps: js.UndefOr[atMaterialDashUiCoreLib.PartialModalProps] = js.undefined
+  var PaperProps: js.UndefOr[atMaterialDashUiCoreLib.PartialPaperProps] = js.undefined
+  var SlideProps: js.UndefOr[atMaterialDashUiCoreLib.PartialSlideProps] = js.undefined
   var SwipeAreaProps: js.UndefOr[js.Object] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
@@ -119,11 +119,7 @@ trait SwipeableDrawerProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapDrawerClassKey] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance]] = js.undefined
@@ -370,10 +366,10 @@ object SwipeableDrawerProps {
     onOpen: reactLib.reactMod.ReactEventHandler[js.Object],
     open: scala.Boolean,
     BackdropComponent: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    ModalProps: stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps] = null,
-    PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    SlideProps: stdLib.Partial[atMaterialDashUiCoreLib.slideSlideMod.SlideProps] = null,
+    BackdropProps: atMaterialDashUiCoreLib.PartialBackdropProps = null,
+    ModalProps: atMaterialDashUiCoreLib.PartialModalProps = null,
+    PaperProps: atMaterialDashUiCoreLib.PartialPaperProps = null,
+    SlideProps: atMaterialDashUiCoreLib.PartialSlideProps = null,
     SwipeAreaProps: js.Object = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
@@ -431,9 +427,7 @@ object SwipeableDrawerProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey]
-    ] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapDrawerClassKey = null,
     closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,

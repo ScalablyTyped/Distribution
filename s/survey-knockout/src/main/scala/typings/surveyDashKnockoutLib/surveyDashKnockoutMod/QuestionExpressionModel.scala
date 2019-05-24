@@ -30,11 +30,11 @@ class QuestionExpressionModel protected () extends Question {
   var format: java.lang.String = js.native
   val locFormat: LocalizableString = js.native
   /**
-    * The maximum number of fraction digits to use. Possible values are from 0 to 20. The default value is -1 and it means that this property is not used.
+    * The maximum number of fraction digits to use if displayStyle is not "none". Possible values are from 0 to 20. The default value is -1 and it means that this property is not used.
     */
   var maximumFractionDigits: scala.Double = js.native
   /**
-    * The minimum number of fraction digits to use. Possible values are from 0 to 20. The default value is -1 and it means that this property is not used.
+    * The minimum number of fraction digits to use if displayStyle is not "none". Possible values are from 0 to 20. The default value is -1 and it means that this property is not used.
     */
   var minimumFractionDigits: scala.Double = js.native
   var useGrouping: scala.Boolean = js.native

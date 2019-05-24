@@ -404,9 +404,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     handler: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.RequestHandler[
       vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentPositionParams, 
       js.UndefOr[
-        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition | (js.Array[
-          vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DefinitionLink
-        ]) | scala.Null
+        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition | scala.Null
       ], 
       scala.Unit
     ]
@@ -564,9 +562,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     handler: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.RequestHandler[
       vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentPositionParams, 
       js.UndefOr[
-        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition | (js.Array[
-          vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DefinitionLink
-        ]) | scala.Null
+        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition | scala.Null
       ], 
       scala.Unit
     ]

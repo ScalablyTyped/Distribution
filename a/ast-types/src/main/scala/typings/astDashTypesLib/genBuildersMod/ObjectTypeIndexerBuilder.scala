@@ -11,7 +11,7 @@ trait ObjectTypeIndexerBuilder extends js.Object {
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     key: astDashTypesLib.genKindsMod.FlowTypeKind,
     value: astDashTypesLib.genKindsMod.FlowTypeKind
-  ): astDashTypesLib.genNodesMod.ObjectTypeIndexer = js.native
-  def from(params: astDashTypesLib.Anon_CommentsIdKey): astDashTypesLib.genNodesMod.ObjectTypeIndexer = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeIndexer = js.native
+  def from(params: astDashTypesLib.Anon_CommentsIdKey): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeIndexer = js.native
 }
 

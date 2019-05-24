@@ -11,7 +11,7 @@ trait ArrayExpressionBuilder extends js.Object {
     elements: js.Array[
       astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.SpreadElementKind | astDashTypesLib.genKindsMod.RestElementKind | scala.Null
     ]
-  ): astDashTypesLib.genNodesMod.ArrayExpression = js.native
-  def from(params: astDashTypesLib.Anon_CommentsElements): astDashTypesLib.genNodesMod.ArrayExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayExpression = js.native
+  def from(params: astDashTypesLib.Anon_CommentsElements): astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayExpression = js.native
 }
 

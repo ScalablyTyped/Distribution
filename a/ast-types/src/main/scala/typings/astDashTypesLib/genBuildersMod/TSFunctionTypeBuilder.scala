@@ -11,7 +11,7 @@ trait TSFunctionTypeBuilder extends js.Object {
     parameters: js.Array[
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
-  ): astDashTypesLib.genNodesMod.TSFunctionType = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNodesMod.TSFunctionType = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSFunctionType = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSFunctionType = js.native
 }
 

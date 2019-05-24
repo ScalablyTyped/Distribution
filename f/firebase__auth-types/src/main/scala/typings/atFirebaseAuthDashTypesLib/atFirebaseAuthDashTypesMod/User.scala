@@ -18,12 +18,12 @@ trait User extends UserInfo {
   def getIdTokenResult(): js.Promise[IdTokenResult] = js.native
   def getIdTokenResult(forceRefresh: scala.Boolean): js.Promise[IdTokenResult] = js.native
   def linkAndRetrieveDataWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
-  def linkWithCredential(credential: AuthCredential): js.Promise[User] = js.native
+  def linkWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
   def linkWithPhoneNumber(phoneNumber: java.lang.String, applicationVerifier: ApplicationVerifier): js.Promise[ConfirmationResult] = js.native
   def linkWithPopup(provider: AuthProvider): js.Promise[UserCredential] = js.native
   def linkWithRedirect(provider: AuthProvider): js.Promise[scala.Unit] = js.native
   def reauthenticateAndRetrieveDataWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
-  def reauthenticateWithCredential(credential: AuthCredential): js.Promise[scala.Unit] = js.native
+  def reauthenticateWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
   def reauthenticateWithPhoneNumber(phoneNumber: java.lang.String, applicationVerifier: ApplicationVerifier): js.Promise[ConfirmationResult] = js.native
   def reauthenticateWithPopup(provider: AuthProvider): js.Promise[UserCredential] = js.native
   def reauthenticateWithRedirect(provider: AuthProvider): js.Promise[scala.Unit] = js.native

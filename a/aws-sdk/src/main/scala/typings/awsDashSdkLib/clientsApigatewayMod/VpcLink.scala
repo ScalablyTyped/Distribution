@@ -27,6 +27,10 @@ trait VpcLink extends js.Object {
     */
   var statusMessage: js.UndefOr[String] = js.undefined
   /**
+    * The collection of tags. Each tag element is associated with a given resource.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
+  /**
     * The ARNs of network load balancers of the VPC targeted by the VPC link. The network load balancers must be owned by the same AWS account of the API owner.
     */
   var targetArns: js.UndefOr[ListOfString] = js.undefined
@@ -40,6 +44,7 @@ object VpcLink {
     name: String = null,
     status: VpcLinkStatus = null,
     statusMessage: String = null,
+    tags: MapOfStringToString = null,
     targetArns: ListOfString = null
   ): VpcLink = {
     val __obj = js.Dynamic.literal()
@@ -48,6 +53,7 @@ object VpcLink {
     if (name != null) __obj.updateDynamic("name")(name)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (targetArns != null) __obj.updateDynamic("targetArns")(targetArns)
     __obj.asInstanceOf[VpcLink]
   }

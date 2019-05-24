@@ -54,6 +54,13 @@ trait WebviewTag
     */
   var nodeintegration: js.UndefOr[java.lang.String] = js.native
   /**
+    * Experimental option for enabling NodeJS support in sub-frames such as iframes
+    * inside the webview. All your preloads will load for every iframe, you can use
+    * process.isMainFrame to determine if you are in the main frame or not. This
+    * option is disabled by default in the guest page.
+    */
+  var nodeintegrationinsubframes: js.UndefOr[java.lang.String] = js.native
+  /**
     * Sets the session used by the page. If partition starts with persist:, the page
     * will use a persistent session available to all pages in the app with the same
     * partition. if there is no persist: prefix, the page will use an in-memory
@@ -1531,13 +1538,23 @@ trait WebviewTag
   def canGoForward(): scala.Boolean = js.native
   def canGoToOffset(offset: scala.Double): scala.Boolean = js.native
   /**
-    * Captures a snapshot of the webview's page. Same as
-    * webContents.capturePage([rect, ]callback).
+    * Captures a snapshot of the page within rect. Omitting rect will capture the
+    * whole visible page.
+    */
+  def capturePage(): scala.Unit = js.native
+  /**
+    * Captures a snapshot of the page within rect. Upon completion callback will be
+    * called with callback(image). The image is an instance of NativeImage that stores
+    * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Deprecated Soon
     */
   def capturePage(callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
+  def capturePage(rect: Rectangle): scala.Unit = js.native
   /**
-    * Captures a snapshot of the webview's page. Same as
-    * webContents.capturePage([rect, ]callback).
+    * Captures a snapshot of the page within rect. Upon completion callback will be
+    * called with callback(image). The image is an instance of NativeImage that stores
+    * data of the snapshot. Omitting rect will capture the whole visible page.
+    * Deprecated Soon
     */
   def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage, scala.Unit]): scala.Unit = js.native
   /**
@@ -1590,16 +1607,8 @@ trait WebviewTag
     * is disabled.
     */
   def getWebContents(): WebContents = js.native
-  /**
-    * Sends a request to get current zoom factor, the callback will be called with
-    * callback(zoomFactor).
-    */
-  def getZoomFactor(callback: js.Function1[/* zoomFactor */ scala.Double, scala.Unit]): scala.Unit = js.native
-  /**
-    * Sends a request to get current zoom level, the callback will be called with
-    * callback(zoomLevel).
-    */
-  def getZoomLevel(callback: js.Function1[/* zoomLevel */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def getZoomFactor(): scala.Double = js.native
+  def getZoomLevel(): scala.Double = js.native
   /**
     * Makes the guest page go back.
     */

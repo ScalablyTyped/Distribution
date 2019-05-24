@@ -31,6 +31,10 @@ trait UsagePlan extends js.Object {
     */
   var quota: js.UndefOr[QuotaSettings] = js.undefined
   /**
+    * The collection of tags. Each tag element is associated with a given resource.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
+  /**
     * The request throttle limits of a usage plan.
     */
   var throttle: js.UndefOr[ThrottleSettings] = js.undefined
@@ -45,6 +49,7 @@ object UsagePlan {
     name: String = null,
     productCode: String = null,
     quota: QuotaSettings = null,
+    tags: MapOfStringToString = null,
     throttle: ThrottleSettings = null
   ): UsagePlan = {
     val __obj = js.Dynamic.literal()
@@ -54,6 +59,7 @@ object UsagePlan {
     if (name != null) __obj.updateDynamic("name")(name)
     if (productCode != null) __obj.updateDynamic("productCode")(productCode)
     if (quota != null) __obj.updateDynamic("quota")(quota)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (throttle != null) __obj.updateDynamic("throttle")(throttle)
     __obj.asInstanceOf[UsagePlan]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-env
 
-Typings are for version 0.4.1-alpha.1
+Typings are for version 0.5.1
 
 
 

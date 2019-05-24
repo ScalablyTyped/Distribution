@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "walkdir"
-version := "0.3.2-07584e"
+version := "0.4.0-07584e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

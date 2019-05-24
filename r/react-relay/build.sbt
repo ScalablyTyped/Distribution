@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-relay"
-version := "1.3-dt-20190329Z-3cdde8"
+version := "1.3-dt-20190329Z-22f8df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-225f24",
+  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-43357b",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-9d1c81",
   "org.scalablytyped" %%% "relay-runtime" % "1.3-dt-20190215Z-eb3f3c",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false

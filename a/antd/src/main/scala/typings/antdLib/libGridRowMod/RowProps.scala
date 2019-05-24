@@ -10,7 +10,7 @@ trait RowProps
   var align: js.UndefOr[
     antdLib.antdLibStrings.top | antdLib.antdLibStrings.middle | antdLib.antdLibStrings.bottom
   ] = js.undefined
-  var gutter: js.UndefOr[scala.Double | (stdLib.Partial[stdLib.Record[Breakpoint, scala.Double]])] = js.undefined
+  var gutter: js.UndefOr[scala.Double | antdLib.PartialRecordBreakpointnumber] = js.undefined
   var justify: js.UndefOr[
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.end | antdLib.antdLibStrings.center | antdLib.antdLibStrings.`space-around` | antdLib.antdLibStrings.`space-between`
   ] = js.undefined
@@ -23,7 +23,7 @@ object RowProps {
   def apply(
     HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     align: antdLib.antdLibStrings.top | antdLib.antdLibStrings.middle | antdLib.antdLibStrings.bottom = null,
-    gutter: scala.Double | (stdLib.Partial[stdLib.Record[Breakpoint, scala.Double]]) = null,
+    gutter: scala.Double | antdLib.PartialRecordBreakpointnumber = null,
     justify: antdLib.antdLibStrings.start | antdLib.antdLibStrings.end | antdLib.antdLibStrings.center | antdLib.antdLibStrings.`space-around` | antdLib.antdLibStrings.`space-between` = null,
     prefixCls: java.lang.String = null,
     `type`: antdLib.antdLibStrings.flex = null

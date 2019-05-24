@@ -1,7 +1,7 @@
 
 # Scala.js typings for prex
 
-Typings are for version 0.4.5
+Typings are for version 0.4.6
 
 ## Library description:
 Async coordination primitives and extensions on top of ES6 Promises
@@ -41,9 +41,6 @@ Licensed under the Apache License, Version 2.0.
 
 See LICENSE file in the project root for details.
 ***************************************************************************** */
-/**
- * Signals a CancellationToken that it should be canceled.
- */
 /**
  * Encapsulates a Promise and exposes its resolve and reject callbacks.
  */

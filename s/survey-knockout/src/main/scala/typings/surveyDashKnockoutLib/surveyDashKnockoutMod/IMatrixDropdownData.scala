@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IMatrixDropdownData extends js.Object {
   var columns: js.Array[MatrixDropdownColumn]
+  var value: js.Any
   def createQuestion(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question
   def getLocale(): java.lang.String
   def getMarkdownHtml(text: java.lang.String): java.lang.String
@@ -30,9 +31,10 @@ object IMatrixDropdownData {
     getSurvey: () => ISurvey,
     onRowChanged: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => scala.Unit,
     onRowChanging: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => js.Any,
-    validateCell: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => SurveyError
+    validateCell: (MatrixDropdownRowModelBase, java.lang.String, js.Any) => SurveyError,
+    value: js.Any
   ): IMatrixDropdownData = {
-    val __obj = js.Dynamic.literal(columns = columns, createQuestion = js.Any.fromFunction2(createQuestion), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRowIndex = js.Any.fromFunction1(getRowIndex), getSurvey = js.Any.fromFunction0(getSurvey), onRowChanged = js.Any.fromFunction3(onRowChanged), onRowChanging = js.Any.fromFunction3(onRowChanging), validateCell = js.Any.fromFunction3(validateCell))
+    val __obj = js.Dynamic.literal(columns = columns, createQuestion = js.Any.fromFunction2(createQuestion), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRowIndex = js.Any.fromFunction1(getRowIndex), getSurvey = js.Any.fromFunction0(getSurvey), onRowChanged = js.Any.fromFunction3(onRowChanged), onRowChanging = js.Any.fromFunction3(onRowChanging), validateCell = js.Any.fromFunction3(validateCell), value = value)
   
     __obj.asInstanceOf[IMatrixDropdownData]
   }

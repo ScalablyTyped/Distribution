@@ -13,7 +13,7 @@ trait ObjectTypeInternalSlotBuilder extends js.Object {
     optional: scala.Boolean,
     staticParam: scala.Boolean,
     method: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectTypeInternalSlot = js.native
-  def from(params: astDashTypesLib.Anon_CommentsIdLocMethod): astDashTypesLib.genNodesMod.ObjectTypeInternalSlot = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeInternalSlot = js.native
+  def from(params: astDashTypesLib.Anon_CommentsIdLocMethod): astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeInternalSlot = js.native
 }
 

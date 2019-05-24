@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "aws-iot-device-sdk"
-version := "2.2.0-dt-20190322Z-a53381"
+version := "2.2.0-dt-20190322Z-858742"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "mqtt" % "2.18.8-62112b",
-  "org.scalablytyped" %%% "mqtt-packet" % "5.6.0-3dd1b4",
+  "org.scalablytyped" %%% "mqtt" % "2.18.8-584db3",
+  "org.scalablytyped" %%% "mqtt-packet" % "5.6.1-3dd1b4",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-1ddf2e")

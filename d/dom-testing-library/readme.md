@@ -1,7 +1,7 @@
 
 # Scala.js typings for dom-testing-library
 
-Typings are for version 3.19.1
+Typings are for version 4.1.1
 
 ## Library description:
 Simple and complete DOM testing utilities that encourage good testing practices.

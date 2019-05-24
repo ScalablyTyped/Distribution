@@ -1,7 +1,7 @@
 
 # Scala.js typings for localized-strings
 
-Typings are for version 0.2.1
+Typings are for version 0.2.2
 
 ## Library description:
 Simple module to localize the strings of any JS based program using the same syntax used in the ReactLocalization and ReactNativeLocalization module, use 'npm run build' before publishing

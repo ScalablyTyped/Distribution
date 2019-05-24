@@ -12,8 +12,9 @@ import scala.scalajs.js.annotation._
   *
   * @param linkedTokens An optional iterable of tokens to which to link this source.
   */
-class CancellationTokenSource () extends js.Object {
-  def this(linkedTokens: stdLib.Iterable[CancellationToken]) = this()
+class CancellationTokenSource ()
+  extends atEsfxCancelableLib.distMod.CancelableSource {
+  def this(linkedTokens: stdLib.Iterable[CancellationToken | atEsfxCancelableLib.distMod.Cancelable]) = this()
   /**
     * Executes the provided callback.
     *

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChoiceOption
-  extends inquirerLib.inquirerMod._ChoiceType {
+trait ChoiceOption[A]
+  extends inquirerLib.inquirerMod._ChoiceType[A] {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[java.lang.String | (js.Function1[/* answers */ js.Any, _])] = js.undefined
   var extra: js.UndefOr[js.Any] = js.undefined
@@ -19,7 +19,7 @@ trait ChoiceOption
 
 object ChoiceOption {
   @scala.inline
-  def apply(
+  def apply[A](
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: java.lang.String | (js.Function1[/* answers */ js.Any, _]) = null,
     extra: js.Any = null,
@@ -28,7 +28,7 @@ object ChoiceOption {
     short: java.lang.String = null,
     `type`: java.lang.String = null,
     value: js.Any = null
-  ): ChoiceOption = {
+  ): ChoiceOption[A] = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object ChoiceOption {
     if (short != null) __obj.updateDynamic("short")(short)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
-    __obj.asInstanceOf[ChoiceOption]
+    __obj.asInstanceOf[ChoiceOption[A]]
   }
 }
 

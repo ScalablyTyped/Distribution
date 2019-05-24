@@ -109,11 +109,7 @@ trait SnackbarContentProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SnackbarContentClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapSnackbarContentClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -380,9 +376,7 @@ object SnackbarContentProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SnackbarContentClassKey]
-    ] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapSnackbarContentClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

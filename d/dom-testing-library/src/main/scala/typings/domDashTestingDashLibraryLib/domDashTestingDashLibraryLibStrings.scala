@@ -10,6 +10,9 @@ object domDashTestingDashLibraryLibStrings {
   sealed trait BoundFunctions extends js.Object
   
   @js.native
+  sealed trait CreateObject extends js.Object
+  
+  @js.native
   sealed trait FireObject extends js.Object
   
   @js.native
@@ -298,6 +301,8 @@ object domDashTestingDashLibraryLibStrings {
   
   @scala.inline
   def BoundFunctions: BoundFunctions = "BoundFunctions".asInstanceOf[BoundFunctions]
+  @scala.inline
+  def CreateObject: CreateObject = "CreateObject".asInstanceOf[CreateObject]
   @scala.inline
   def FireObject: FireObject = "FireObject".asInstanceOf[FireObject]
   @scala.inline

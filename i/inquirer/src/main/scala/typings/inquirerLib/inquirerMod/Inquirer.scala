@@ -28,7 +28,7 @@ trait Inquirer extends js.Object {
     * @param questions Questions settings array
     * @return
     */
-  def prompt[T](questions: Questions[T]): js.Promise[T] with inquirerLib.Anon_Ui = js.native
+  def prompt[A](questions: Questions[A]): js.Promise[A] with inquirerLib.Anon_Ui = js.native
   /**
     * Expose helper functions on the top level for easiest usage by common users
     * @param name

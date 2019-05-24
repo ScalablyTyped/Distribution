@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation._
   */
 class CancellationTokenSource ()
   extends prexLib.outLibCancellationMod.CancellationTokenSource {
-  def this(linkedTokens: stdLib.Iterable[prexLib.outLibCancellationMod.CancellationToken]) = this()
+  def this(linkedTokens: stdLib.Iterable[
+      prexLib.outLibCancellationMod.CancellationToken | atEsfxCancelableLib.distMod.Cancelable
+    ]) = this()
 }
 

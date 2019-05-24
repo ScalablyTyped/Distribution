@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- vegaDashTypingsLib.typesSpecBindMod.Binding because Already inherited */ trait BindRadioSelect extends BaseBinding {
+trait BindRadioSelect
+  extends BaseBinding
+     with Binding {
   var input: vegaDashTypingsLib.vegaDashTypingsLibStrings.radio | vegaDashTypingsLib.vegaDashTypingsLibStrings.select
   var options: js.Array[_]
 }

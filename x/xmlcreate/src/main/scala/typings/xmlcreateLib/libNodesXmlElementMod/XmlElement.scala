@@ -6,170 +6,75 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait XmlElement
-  extends xmlcreateLib.libNodesXmlNodeMod.default {
+trait XmlElement[Parent] extends js.Object {
+  val _attributeNames: js.Any = js.native
+  val _children: js.Any = js.native
   var _name: js.Any = js.native
+  val _parent: js.Any = js.native
+  val _replaceInvalidCharsInName: js.Any = js.native
+  val _useSelfClosingTagIfEmpty: js.Any = js.native
+  val _validation: js.Any = js.native
   /**
-    * Gets the name of the element.
-    *
-    * @returns The name of the element.
+    * Returns true if the specified nodes are all character references,
+    * entity references, or character data.
+    */
+  var allSameLineNodes: js.Any = js.native
+  /**
+    * Gets the name of this element.
     */
   /**
-    * Sets the name of the element.
-    *
-    * @param name The name of the element.
+    * Sets the name of this element.
     */
   var name: java.lang.String = js.native
   /**
-    * Inserts an new attribute at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param name The name of the attribute.
-    * @param value The value of the attribute. Strings are converted to
-    *        XmlAttributeText nodes.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns {XmlAttribute} The newly created attribute.
+    * Returns true if the specified nodes are all character references,
+    * entity references, or character data.
     */
-  def attribute(name: java.lang.String, value: java.lang.String): xmlcreateLib.libNodesXmlAttributeMod.default = js.native
-  def attribute(name: java.lang.String, value: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlAttributeMod.default = js.native
-  def attribute(
-    name: java.lang.String,
-    value: js.Array[java.lang.String | xmlcreateLib.libNodesXmlNodeMod.default]
-  ): xmlcreateLib.libNodesXmlAttributeMod.default = js.native
-  def attribute(
-    name: java.lang.String,
-    value: js.Array[java.lang.String | xmlcreateLib.libNodesXmlNodeMod.default],
-    index: scala.Double
-  ): xmlcreateLib.libNodesXmlAttributeMod.default = js.native
-  def attribute(name: java.lang.String, value: xmlcreateLib.libNodesXmlNodeMod.default): xmlcreateLib.libNodesXmlAttributeMod.default = js.native
-  def attribute(name: java.lang.String, value: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): xmlcreateLib.libNodesXmlAttributeMod.default = js.native
+  var onSameLine: js.Any = js.native
   /**
-    * Returns an array containing all of the children of this node that are
-    * instances of {@link XmlAttribute}.
-    *
-    * @returns An array containing all of the children of this node that are
-    *          instances of {@link XmlAttribute}.
+    * Returns an XML string representation of this element using the specified
+    * options and initial indent.
     */
-  def attributes(): js.Array[xmlcreateLib.libNodesXmlAttributeMod.default] = js.native
+  var toStringWithIndent: js.Any = js.native
   /**
-    * Inserts a new CDATA section at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param content The data of the CDATA section.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created CDATA section.
+    * Adds an attribute to this element and returns the new attribute.
     */
-  def cdata(content: java.lang.String): xmlcreateLib.libNodesXmlCdataMod.default = js.native
-  def cdata(content: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlCdataMod.default = js.native
+  def attribute(options: xmlcreateLib.libNodesXmlAttributeMod.IXmlAttributeOptions): xmlcreateLib.libNodesXmlAttributeMod.default[this.type] = js.native
   /**
-    * Inserts some character data at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param charData Character data.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created text node.
+    * Adds a CDATA section to this element and returns the new CDATA section.
     */
-  def charData(charData: java.lang.String): xmlcreateLib.libNodesXmlCharDataMod.default = js.native
-  def charData(charData: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlCharDataMod.default = js.native
+  def cdata(options: xmlcreateLib.libNodesXmlCdataMod.IXmlCdataOptions): xmlcreateLib.libNodesXmlCdataMod.default[this.type] = js.native
   /**
-    * Inserts a new character reference at the specified index. If no index
-    * is specified, the node is inserted at the end of this node's children.
-    *
-    * @param char The character to represent using the reference.
-    * @param hex Whether to use the hexadecimal or decimal representation for
-    *            the reference. If left undefined, decimal is the default.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created character reference.
+    * Adds character data to this element and returns the new character data.
     */
-  def charRef(char: java.lang.String): xmlcreateLib.libNodesXmlCharRefMod.default = js.native
-  def charRef(char: java.lang.String, hex: scala.Boolean): xmlcreateLib.libNodesXmlCharRefMod.default = js.native
-  def charRef(char: java.lang.String, hex: scala.Boolean, index: scala.Double): xmlcreateLib.libNodesXmlCharRefMod.default = js.native
+  def charData(options: xmlcreateLib.libNodesXmlCharDataMod.IXmlCharDataOptions): xmlcreateLib.libNodesXmlCharDataMod.default[this.type] = js.native
   /**
-    * Inserts a new comment at the specified index. If no index is specified,
-    * the node is inserted at the end of this node's children.
-    *
-    * @param content The data of the comment.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created comment.
+    * Adds a character reference to this element and returns the new
+    * character reference.
     */
-  def comment(content: java.lang.String): xmlcreateLib.libNodesXmlCommentMod.default = js.native
-  def comment(content: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlCommentMod.default = js.native
+  def charRef(options: xmlcreateLib.libNodesXmlCharRefMod.IXmlCharRefOptions): xmlcreateLib.libNodesXmlCharRefMod.default[this.type] = js.native
   /**
-    * Inserts a new element at the specified index. If no index is specified,
-    * the node is inserted at the end of this node's children.
-    *
-    * @param name The name of the element.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created element.
+    * Adds a comment to this element and returns the new comment.
     */
-  def element(name: java.lang.String): XmlElement = js.native
-  def element(name: java.lang.String, index: scala.Double): XmlElement = js.native
+  def comment(options: xmlcreateLib.libNodesXmlCommentMod.IXmlCommentOptions): xmlcreateLib.libNodesXmlCommentMod.default[this.type] = js.native
   /**
-    * Inserts a new entity reference at the specified index. If no index is
-    * specified, the node is inserted at the end of this node's children.
-    *
-    * @param entity The entity to be referenced.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this
-    *              node's children.
-    *
-    * @returns The newly created entity reference.
+    * Adds an element to this element and returns the new element.
     */
-  def entityRef(entity: java.lang.String): xmlcreateLib.libNodesXmlEntityRefMod.default = js.native
-  def entityRef(entity: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlEntityRefMod.default = js.native
+  def element(options: IXmlElementOptions): XmlElement[this.type] = js.native
   /**
-    * Inserts the specified node into this node's children at the specified
-    * index. The node is not inserted if it is already present. If this node
-    * already has a parent, it is removed from that parent.
-    *
-    * Note that only {@link XmlAttribute}, {@link XmlCdata},
-    * {@link XmlCharRef}, {@link XmlComment}, {@link XmlElement},
-    * {@link XmlEntityRef}, {@link XmlProcInst}, or {@link XmlCharData} nodes
-    * can be inserted; otherwise, an exception will be thrown.
-    *
-    * @param node The node to insert.
-    * @param index The index at which to insert the node. Nodes at or after
-    *              the index are shifted to the right. If no index is
-    *              specified, the node is inserted at the end.
-    *
-    * @returns The node inserted into this node's children, or undefined if no
-    *          node was inserted.
+    * Adds an entity reference to this element and returns the new entity
+    * reference.
     */
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
+  def entityRef(options: xmlcreateLib.libNodesXmlEntityRefMod.IXmlEntityRefOptions): xmlcreateLib.libNodesXmlEntityRefMod.default[this.type] = js.native
   /**
-    * Inserts a new processing instruction at the specified index. If no index
-    * is specified, the node is inserted at the end of this node's children.
-    *
-    * @param target The target of the processing instruction.
-    * @param content The data of the processing instruction, or undefined if
-    *                there is no target.
-    * @param index The index at which the node should be inserted. If no index
-    *              is specified, the node is inserted at the end of this node's
-    *              children.
-    *
-    * @returns The newly created processing instruction.
+    * Adds a processing instruction to this element and returns the new
+    * processing instruction.
     */
-  def procInst(target: java.lang.String): xmlcreateLib.libNodesXmlProcInstMod.default = js.native
-  def procInst(target: java.lang.String, content: java.lang.String): xmlcreateLib.libNodesXmlProcInstMod.default = js.native
-  def procInst(target: java.lang.String, content: java.lang.String, index: scala.Double): xmlcreateLib.libNodesXmlProcInstMod.default = js.native
+  def procInst(options: xmlcreateLib.libNodesXmlProcInstMod.IXmlProcInstOptions): xmlcreateLib.libNodesXmlProcInstMod.default[this.type] = js.native
+  def toString(options: xmlcreateLib.libOptionsMod.IStringOptions): java.lang.String = js.native
+  /**
+    * Returns the parent of this element.
+    */
+  def up(): Parent = js.native
 }
 

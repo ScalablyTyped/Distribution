@@ -23,7 +23,7 @@ trait CreateFileSystemRequest extends js.Object {
     */
   var PerformanceMode: js.UndefOr[PerformanceMode] = js.undefined
   /**
-    * The throughput, measured in MiB/s, that you want to provision for a file system that you're creating. The limit on throughput is 1024 MiB/s. You can get these limits increased by contacting AWS Support. For more information, see Amazon EFS Limits That You Can Increase in the Amazon EFS User Guide. 
+    * The throughput, measured in MiB/s, that you want to provision for a file system that you're creating. Valid values are 1-1024. Required if ThroughputMode is set to provisioned. The upper limit for throughput is 1024 MiB/s. You can get this limit increased by contacting AWS Support. For more information, see Amazon EFS Limits That You Can Increase in the Amazon EFS User Guide. 
     */
   var ProvisionedThroughputInMibps: js.UndefOr[ProvisionedThroughputInMibps] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait CreateFileSystemRequest extends js.Object {
     */
   var Tags: js.UndefOr[Tags] = js.undefined
   /**
-    * The throughput mode for the file system to be created. There are two throughput modes to choose from for your file system: bursting and provisioned. You can decrease your file system's throughput in Provisioned Throughput mode or change between the throughput modes as long as it’s been more than 24 hours since the last decrease or throughput mode change.
+    * The throughput mode for the file system to be created. There are two throughput modes to choose from for your file system: bursting and provisioned. If you set ThroughputMode to provisioned, you must also set a value for ProvisionedThroughPutInMibps. You can decrease your file system's throughput in Provisioned Throughput mode or change between the throughput modes as long as it’s been more than 24 hours since the last decrease or throughput mode change. For more, see Specifying Throughput with Provisioned Mode in the Amazon EFS User Guide. 
     */
   var ThroughputMode: js.UndefOr[ThroughputMode] = js.undefined
 }

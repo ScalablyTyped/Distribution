@@ -15,7 +15,8 @@ object ^ extends js.Object {
   val Browser: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IBrowser = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   val Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
-  val CommandName: seleniumDashWebdriverLib.libCommandMod.ICommandName = js.native
+  var Command: js.Any = js.native
+  var CommandName: js.Any = js.native
   var ExpectedConditions: protractorLib.builtExpectedConditionsMod.ProtractorExpectedConditions = js.native
   val Key: seleniumDashWebdriverLib.libInputMod.IKey = js.native
   var browser: protractorLib.builtBrowserMod.ProtractorBrowser = js.native

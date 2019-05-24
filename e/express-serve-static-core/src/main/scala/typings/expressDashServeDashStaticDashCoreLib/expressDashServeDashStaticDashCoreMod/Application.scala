@@ -120,64 +120,6 @@ trait Application
   def all(path: PathParams, subApplication: Application): this.type = js.native
   def checkout(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def checkout(path: PathParams, subApplication: Application): this.type = js.native
-  def configure(
-    env0: java.lang.String,
-    env1: java.lang.String,
-    env2: java.lang.String,
-    env3: java.lang.String,
-    env4: java.lang.String,
-    fn: js.Function
-  ): Application = js.native
-  def configure(
-    env0: java.lang.String,
-    env1: java.lang.String,
-    env2: java.lang.String,
-    env3: java.lang.String,
-    fn: js.Function
-  ): Application = js.native
-  def configure(env0: java.lang.String, env1: java.lang.String, env2: java.lang.String, fn: js.Function): Application = js.native
-  def configure(env0: java.lang.String, env1: java.lang.String, fn: js.Function): Application = js.native
-  def configure(env0: java.lang.String, fn: js.Function): Application = js.native
-  /**
-    * Configure callback for zero or more envs,
-    * when no `env` is specified that callback will
-    * be invoked for all environments. Any combination
-    * can be used multiple times, in any order desired.
-    *
-    * Examples:
-    *
-    *    app.configure(function(){
-    *      // executed for all envs
-    *    });
-    *
-    *    app.configure('stage', function(){
-    *      // executed staging env
-    *    });
-    *
-    *    app.configure('stage', 'production', function(){
-    *      // executed for stage and production
-    *    });
-    *
-    * Note:
-    *
-    *  These callbacks are invoked immediately, and
-    *  are effectively sugar for the following:
-    *
-    *     var env = process.env.NODE_ENV || 'development';
-    *
-    *      switch (env) {
-    *        case 'development':
-    *          ...
-    *          break;
-    *        case 'stage':
-    *          ...
-    *          break;
-    *        case 'production':
-    *          ...
-    *          break;
-    *      }
-    */
-  def configure(fn: js.Function): Application = js.native
   def connect(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def connect(path: PathParams, subApplication: Application): this.type = js.native
   def copy(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
@@ -246,7 +188,15 @@ trait Application
     * engines to follow this convention, thus allowing them to
     * work seamlessly within Express.
     */
-  def engine(ext: java.lang.String, fn: js.Function): Application = js.native
+  def engine(
+    ext: java.lang.String,
+    fn: js.Function3[
+      /* path */ java.lang.String, 
+      /* options */ js.Object, 
+      /* callback */ js.Function2[/* e */ js.Any, /* rendered */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ]
+  ): Application = js.native
   /* InferMemberOverrides */
   override def eventNames(): js.Array[java.lang.String | js.Symbol] = js.native
   def get(name: java.lang.String): js.Any = js.native
@@ -265,11 +215,11 @@ trait Application
     */
   def init(): scala.Unit = js.native
   def listen(handle: js.Any): nodeLib.httpMod.Server = js.native
-  def listen(handle: js.Any, listeningListener: js.Function): nodeLib.httpMod.Server = js.native
+  def listen(handle: js.Any, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(path: java.lang.String): nodeLib.httpMod.Server = js.native
-  def listen(path: java.lang.String, callback: js.Function): nodeLib.httpMod.Server = js.native
+  def listen(path: java.lang.String, callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double): nodeLib.httpMod.Server = js.native
-  def listen(port: scala.Double, callback: js.Function): nodeLib.httpMod.Server = js.native
+  def listen(port: scala.Double, callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, hostname: java.lang.String): nodeLib.httpMod.Server = js.native
   /**
     * Listen for connections.
@@ -289,8 +239,13 @@ trait Application
     *    https.createServer({ ... }, app).listen(443);
     */
   def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double): nodeLib.httpMod.Server = js.native
-  def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double, callback: js.Function): nodeLib.httpMod.Server = js.native
-  def listen(port: scala.Double, hostname: java.lang.String, callback: js.Function): nodeLib.httpMod.Server = js.native
+  def listen(
+    port: scala.Double,
+    hostname: java.lang.String,
+    backlog: scala.Double,
+    callback: js.Function0[scala.Unit]
+  ): nodeLib.httpMod.Server = js.native
+  def listen(port: scala.Double, hostname: java.lang.String, callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   /* InferMemberOverrides */
   override def listenerCount(`type`: java.lang.String): scala.Double = js.native
   /* InferMemberOverrides */

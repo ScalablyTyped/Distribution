@@ -11,9 +11,7 @@ class URI protected ()
   extends sipDotJsLib.libURIMod.URI {
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String) = this()
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: scala.Double) = this()
-  def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: js.UndefOr[scala.Nothing], parameters: js.Any) = this()
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: scala.Double, parameters: js.Any) = this()
-  def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: js.UndefOr[scala.Nothing], parameters: js.Any, headers: js.Any) = this()
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: scala.Double, parameters: js.Any, headers: js.Any) = this()
 }
 

@@ -13,7 +13,7 @@ trait TablePaginationProps extends js.Object {
       atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
     ]
   ] = js.native
-  var SelectProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]] = js.native
+  var SelectProps: js.UndefOr[atMaterialDashUiCoreLib.PartialSelectProps] = js.native
   var about: js.UndefOr[java.lang.String] = js.native
   var accessKey: js.UndefOr[java.lang.String] = js.native
   var align: js.UndefOr[
@@ -116,14 +116,10 @@ trait TablePaginationProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.native
   var autoCorrect: js.UndefOr[java.lang.String] = js.native
   var autoSave: js.UndefOr[java.lang.String] = js.native
-  var backIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.native
+  var backIconButtonProps: js.UndefOr[atMaterialDashUiCoreLib.PartialIconButtonProps] = js.native
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   var className: js.UndefOr[java.lang.String] = js.native
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TablePaginationClassKey]
-    ]
-  ] = js.native
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapTablePaginationClassKey] = js.native
   var colSpan: js.UndefOr[scala.Double] = js.native
   var color: js.UndefOr[java.lang.String] = js.native
   var component: js.UndefOr[reactLib.reactMod.ReactType[TablePaginationBaseProps]] = js.native
@@ -153,7 +149,7 @@ trait TablePaginationProps extends js.Object {
   ] = js.native
   var labelRowsPerPage: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   var lang: js.UndefOr[java.lang.String] = js.native
-  var nextIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.native
+  var nextIconButtonProps: js.UndefOr[atMaterialDashUiCoreLib.PartialIconButtonProps] = js.native
   var numeric: js.UndefOr[scala.Boolean] = js.native
   var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLTableHeaderCellElement]] = js.native
   var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLTableHeaderCellElement]] = js.native

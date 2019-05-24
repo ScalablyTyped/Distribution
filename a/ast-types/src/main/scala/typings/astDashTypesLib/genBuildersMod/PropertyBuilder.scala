@@ -11,92 +11,92 @@ trait PropertyBuilder extends js.Object {
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.IdentifierKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
   def apply(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
-  def from(params: astDashTypesLib.Anon_CommentsComputed): astDashTypesLib.genNodesMod.Property = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
+  def from(params: astDashTypesLib.Anon_CommentsComputed): astDashTypesLib.genNamedTypesMod.namedTypesNs.Property = js.native
 }
 

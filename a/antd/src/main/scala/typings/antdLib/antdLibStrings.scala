@@ -367,9 +367,6 @@ object antdLibStrings {
   sealed trait checkmenuitem extends js.Object
   
   @js.native
-  sealed trait children extends js.Object
-  
-  @js.native
   sealed trait circle
     extends antdLib.esButtonButtonMod.ButtonShape
        with antdLib.libButtonButtonMod.ButtonShape
@@ -2174,8 +2171,6 @@ object antdLibStrings {
   def checkedKeys: checkedKeys = "checkedKeys".asInstanceOf[checkedKeys]
   @scala.inline
   def checkmenuitem: checkmenuitem = "checkmenuitem".asInstanceOf[checkmenuitem]
-  @scala.inline
-  def children: children = "children".asInstanceOf[children]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline

@@ -27,6 +27,7 @@ object TableProps {
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     footerRow: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = null,
     headerRow: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = null,
+    headerRows: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = null,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
     padded: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null,
     renderBodyRow: (/* data */ js.Any, /* index */ scala.Double) => _ = null,
@@ -58,6 +59,7 @@ object TableProps {
     if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
     if (footerRow != null) __obj.updateDynamic("footerRow")(footerRow.asInstanceOf[js.Any])
     if (headerRow != null) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
+    if (headerRows != null) __obj.updateDynamic("headerRows")(headerRows)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
     if (padded != null) __obj.updateDynamic("padded")(padded.asInstanceOf[js.Any])
     if (renderBodyRow != null) __obj.updateDynamic("renderBodyRow")(js.Any.fromFunction2(renderBodyRow))

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object pDashPropsLibStrings {
   @js.native
-  sealed trait default extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
 }
 

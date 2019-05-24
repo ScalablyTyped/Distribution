@@ -10,11 +10,11 @@ trait TSInterfaceDeclarationBuilder extends js.Object {
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     body: astDashTypesLib.genKindsMod.TSInterfaceBodyKind
-  ): astDashTypesLib.genNodesMod.TSInterfaceDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceDeclaration = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.TSQualifiedNameKind,
     body: astDashTypesLib.genKindsMod.TSInterfaceBodyKind
-  ): astDashTypesLib.genNodesMod.TSInterfaceDeclaration = js.native
-  def from(params: astDashTypesLib.Anon_BodyCommentsDeclareExtends): astDashTypesLib.genNodesMod.TSInterfaceDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceDeclaration = js.native
+  def from(params: astDashTypesLib.Anon_BodyCommentsDeclareExtends): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceDeclaration = js.native
 }
 

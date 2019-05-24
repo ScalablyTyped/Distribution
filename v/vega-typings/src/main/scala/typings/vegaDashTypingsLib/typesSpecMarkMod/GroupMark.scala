@@ -40,6 +40,7 @@ object GroupMark {
     style: java.lang.String | js.Array[java.lang.String] = null,
     title: java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title = null,
     transform: js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms] = null,
+    usermeta: js.Object = null,
     zindex: scala.Int | scala.Double = null
   ): GroupMark = {
     val __obj = js.Dynamic.literal()
@@ -65,6 +66,7 @@ object GroupMark {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (usermeta != null) __obj.updateDynamic("usermeta")(usermeta)
     if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMark]
   }

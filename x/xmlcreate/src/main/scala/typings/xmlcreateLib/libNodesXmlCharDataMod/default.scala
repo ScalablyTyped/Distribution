@@ -7,12 +7,28 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/nodes/XmlCharData", JSImport.Default)
 @js.native
-class default protected () extends XmlCharData {
+class default[Parent] protected () extends XmlCharData[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: IXmlCharDataOptions) = this()
+  /* CompleteClass */
+  override var _charData: js.Any = js.native
+  /* CompleteClass */
+  override val _parent: js.Any = js.native
+  /* CompleteClass */
+  override val _replaceInvalidCharsInCharData: js.Any = js.native
+  /* CompleteClass */
+  override val _validation: js.Any = js.native
   /**
-    * Initializes a new instance of the {@link XmlCharData} class.
-    *
-    * @param charData Character data.
+    * Gets the text of this character data.
     */
-  def this(charData: java.lang.String) = this()
+  /**
+    * Sets the text of this character data.
+    */
+  /* CompleteClass */
+  override var charData: java.lang.String = js.native
+  /**
+    * Returns the parent of this character data.
+    */
+  /* CompleteClass */
+  override def up(): Parent = js.native
 }
 

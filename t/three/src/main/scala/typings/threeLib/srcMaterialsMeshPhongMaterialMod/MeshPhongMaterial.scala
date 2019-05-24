@@ -34,6 +34,7 @@ class MeshPhongMaterial ()
   var morphNormals: scala.Boolean = js.native
   var morphTargets: scala.Boolean = js.native
   var normalMap: threeLib.srcTexturesTextureMod.Texture | scala.Null = js.native
+  var normalMapType: threeLib.srcConstantsMod.NormalMapTypes = js.native
   var normalScale: threeLib.srcMathVector2Mod.Vector2 = js.native
   var reflectivity: scala.Double = js.native
   var refractionRatio: scala.Double = js.native

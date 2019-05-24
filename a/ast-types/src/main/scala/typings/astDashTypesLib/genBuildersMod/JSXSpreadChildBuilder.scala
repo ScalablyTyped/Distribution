@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JSXSpreadChildBuilder extends js.Object {
-  def apply(expression: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.JSXSpreadChild = js.native
-  def from(params: astDashTypesLib.Anon_CommentsExpression): astDashTypesLib.genNodesMod.JSXSpreadChild = js.native
+  def apply(expression: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXSpreadChild = js.native
+  def from(params: astDashTypesLib.Anon_CommentsExpression): astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXSpreadChild = js.native
 }
 

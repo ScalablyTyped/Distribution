@@ -20,6 +20,7 @@ trait Plugins extends js.Object {
   var hapi: ddDashTraceLib.ddDashTraceMod.pluginsNs.hapi
   var http: ddDashTraceLib.ddDashTraceMod.pluginsNs.http
   var ioredis: ddDashTraceLib.ddDashTraceMod.pluginsNs.ioredis
+  var knex: ddDashTraceLib.ddDashTraceMod.pluginsNs.knex
   var koa: ddDashTraceLib.ddDashTraceMod.pluginsNs.koa
   var memcached: ddDashTraceLib.ddDashTraceMod.pluginsNs.memcached
   var `mongodb-core`: ddDashTraceLib.ddDashTraceMod.pluginsNs.mongodb_core
@@ -52,6 +53,7 @@ object Plugins {
     hapi: ddDashTraceLib.ddDashTraceMod.pluginsNs.hapi,
     http: ddDashTraceLib.ddDashTraceMod.pluginsNs.http,
     ioredis: ddDashTraceLib.ddDashTraceMod.pluginsNs.ioredis,
+    knex: ddDashTraceLib.ddDashTraceMod.pluginsNs.knex,
     koa: ddDashTraceLib.ddDashTraceMod.pluginsNs.koa,
     memcached: ddDashTraceLib.ddDashTraceMod.pluginsNs.memcached,
     `mongodb-core`: ddDashTraceLib.ddDashTraceMod.pluginsNs.mongodb_core,
@@ -67,7 +69,7 @@ object Plugins {
     when: ddDashTraceLib.ddDashTraceMod.pluginsNs.when,
     winston: ddDashTraceLib.ddDashTraceMod.pluginsNs.winston
   ): Plugins = {
-    val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, dns = dns, elasticsearch = elasticsearch, express = express, graphql = graphql, hapi = hapi, http = http, ioredis = ioredis, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, pg = pg, pino = pino, q = q, redis = redis, restify = restify, router = router, when = when, winston = winston)
+    val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, dns = dns, elasticsearch = elasticsearch, express = express, graphql = graphql, hapi = hapi, http = http, ioredis = ioredis, knex = knex, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, pg = pg, pino = pino, q = q, redis = redis, restify = restify, router = router, when = when, winston = winston)
     __obj.updateDynamic("cassandra-driver")(`cassandra-driver`)
     __obj.updateDynamic("generic-pool")(`generic-pool`)
     __obj.updateDynamic("mongodb-core")(`mongodb-core`)

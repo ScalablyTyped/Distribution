@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def SVGInjector(elements: atTanemSvgDashInjectorLib.distSvgDashInjectorMod.Elements): scala.Unit = js.native
   def SVGInjector(
     elements: atTanemSvgDashInjectorLib.distSvgDashInjectorMod.Elements,
-    hasDoneEachEvalScriptsRenumerateIRIElements: atTanemSvgDashInjectorLib.distSvgDashInjectorMod.OptionalArgs
+    hasAfterAllAfterEachBeforeEachEvalScriptsRenumerateIRIElements: atTanemSvgDashInjectorLib.distSvgDashInjectorMod.OptionalArgs
   ): scala.Unit = js.native
 }
 

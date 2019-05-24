@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__projectify
 
-Typings are for version 0.3.3
+Typings are for version 1.0.0
 
 ## Library description:
 A simple utility for replacing the projectid token in objects.

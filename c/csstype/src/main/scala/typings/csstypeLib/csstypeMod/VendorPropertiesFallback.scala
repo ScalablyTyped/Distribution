@@ -76,7 +76,6 @@ object VendorPropertiesFallback {
     MozUserSelect: UserSelectProperty | js.Array[UserSelectProperty] = null,
     MozWindowDragging: MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty] = null,
     MozWindowShadow: MozWindowShadowProperty | js.Array[MozWindowShadowProperty] = null,
-    OBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
     OObjectFit: ObjectFitProperty | js.Array[ObjectFitProperty] = null,
     OObjectPosition: ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]] = null,
     OTabSize: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]] = null,
@@ -316,7 +315,6 @@ object VendorPropertiesFallback {
     if (MozUserSelect != null) __obj.updateDynamic("MozUserSelect")(MozUserSelect.asInstanceOf[js.Any])
     if (MozWindowDragging != null) __obj.updateDynamic("MozWindowDragging")(MozWindowDragging.asInstanceOf[js.Any])
     if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow.asInstanceOf[js.Any])
-    if (OBorderImage != null) __obj.updateDynamic("OBorderImage")(OBorderImage.asInstanceOf[js.Any])
     if (OObjectFit != null) __obj.updateDynamic("OObjectFit")(OObjectFit.asInstanceOf[js.Any])
     if (OObjectPosition != null) __obj.updateDynamic("OObjectPosition")(OObjectPosition.asInstanceOf[js.Any])
     if (OTabSize != null) __obj.updateDynamic("OTabSize")(OTabSize.asInstanceOf[js.Any])

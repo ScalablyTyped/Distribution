@@ -875,7 +875,7 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeProvisioningParametersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct). 
+    * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct).   If a provisioned product was transferred to a new owner using UpdateProvisionedProductProperties, the new owner will be able to describe all past records for that product. The previous owner will no longer be able to describe the records, but will be able to use ListRecordHistory to see the product's history from when he was the owner. 
     */
   def describeRecord(): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeRecord(
@@ -886,7 +886,7 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct). 
+    * Gets information about the specified request operation. Use this operation after calling a request operation (for example, ProvisionProduct, TerminateProvisionedProduct, or UpdateProvisionedProduct).   If a provisioned product was transferred to a new owner using UpdateProvisionedProductProperties, the new owner will be able to describe all past records for that product. The previous owner will no longer be able to describe the records, but will be able to use ListRecordHistory to see the product's history from when he was the owner. 
     */
   def describeRecord(params: DescribeRecordInput): awsDashSdkLib.libRequestMod.Request[DescribeRecordOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeRecord(
@@ -1853,6 +1853,29 @@ trait ServiceCatalog
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Requests updates to the properties of the specified provisioned product.
+    */
+  def updateProvisionedProductProperties(): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductPropertiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateProvisionedProductProperties(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateProvisionedProductPropertiesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductPropertiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Requests updates to the properties of the specified provisioned product.
+    */
+  def updateProvisionedProductProperties(params: UpdateProvisionedProductPropertiesInput): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductPropertiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateProvisionedProductProperties(
+    params: UpdateProvisionedProductPropertiesInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateProvisionedProductPropertiesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateProvisionedProductPropertiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Updates the specified provisioning artifact (also known as a version) for the specified product. You cannot update a provisioning artifact for a product that was shared with you.
     */

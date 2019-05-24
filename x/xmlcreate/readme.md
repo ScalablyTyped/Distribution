@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmlcreate
 
-Typings are for version 1.0.2
+Typings are for version 2.0.1
 
 ## Library description:
 Simple XML builder for Node.js
@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * Copyright (C) 2016 Michael Kourlas
+ * Copyright (C) 2016-2019 Michael Kourlas
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,9 +51,43 @@ These comments are from the typescript definitions and might be useful:
  * limitations under the License.
  */
 /**
- * Formatting options for the string representation of an {@link XmlNode} and
- * its children. This object is used by the `toString` method of
- * {@link XmlNode}.
+ * The options used to create attribute text.
+ */
+/**
+ * The options used to create a CDATA section.
+ */
+/**
+ * The options used to create new character data.
+ */
+/**
+ * The options used to create a new character reference.
+ */
+/**
+ * The options used to create a new comment.
+ */
+/**
+ * The options used to create a new attribute-list declaration.
+ */
+/**
+ * The options used to create a new element declaration.
+ */
+/**
+ * The options used to create a new entity declaration.
+ */
+/**
+ * The options used to create a new notation declaration.
+ */
+/**
+ * The options used to create a new parameter entity reference.
+ */
+/**
+ * The options used to create a new entity reference.
+ */
+/**
+ * The options used to create a new processing instruction.
+ */
+/**
+ * Formatting options for the string representation of an XML node.
  */
 
 ```

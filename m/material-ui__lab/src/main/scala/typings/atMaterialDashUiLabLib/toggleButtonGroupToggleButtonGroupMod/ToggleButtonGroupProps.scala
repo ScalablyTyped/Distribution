@@ -108,11 +108,7 @@ trait ToggleButtonGroupProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ToggleButtonGroupClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiLabLib.PartialClassNameMapToggleButtonGroupClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -310,6 +306,9 @@ trait ToggleButtonGroupProps extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
   var security: js.UndefOr[java.lang.String] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
+  var size: js.UndefOr[
+    atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.small | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.medium | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.large
+  ] = js.undefined
   var slot: js.UndefOr[java.lang.String] = js.undefined
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -383,9 +382,7 @@ object ToggleButtonGroupProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ToggleButtonGroupClassKey]
-    ] = null,
+    classes: atMaterialDashUiLabLib.PartialClassNameMapToggleButtonGroupClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,
@@ -496,6 +493,7 @@ object ToggleButtonGroupProps {
     role: java.lang.String = null,
     security: java.lang.String = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
+    size: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.small | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.medium | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.large = null,
     slot: java.lang.String = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
@@ -675,6 +673,7 @@ object ToggleButtonGroupProps {
     if (role != null) __obj.updateDynamic("role")(role)
     if (security != null) __obj.updateDynamic("security")(security)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
     if (style != null) __obj.updateDynamic("style")(style)

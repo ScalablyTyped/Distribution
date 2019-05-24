@@ -11,9 +11,7 @@ trait CollapseProps extends js.Object {
   var appear: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CollapseClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapCollapseClassKey] = js.undefined
   var collapsedHeight: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[CollapseProps]] = js.undefined
   var enter: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,7 +40,7 @@ object CollapseProps {
     appear: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CollapseClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapCollapseClassKey = null,
     collapsedHeight: java.lang.String = null,
     component: reactLib.reactMod.ReactType[CollapseProps] = null,
     enter: js.UndefOr[scala.Boolean] = js.undefined,

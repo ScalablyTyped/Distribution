@@ -47,7 +47,7 @@ trait FileSystemDescription extends js.Object {
     */
   var PerformanceMode: awsDashSdkLib.clientsEfsMod.PerformanceMode
   /**
-    * The throughput, measured in MiB/s, that you want to provision for a file system. The limit on throughput is 1024 MiB/s. You can get these limits increased by contacting AWS Support. For more information, see Amazon EFS Limits That You Can Increase in the Amazon EFS User Guide. 
+    * The throughput, measured in MiB/s, that you want to provision for a file system. Valid values are 1-1024. Required if ThroughputMode is set to provisioned. The limit on throughput is 1024 MiB/s. You can get these limits increased by contacting AWS Support. For more information, see Amazon EFS Limits That You Can Increase in the Amazon EFS User Guide. 
     */
   var ProvisionedThroughputInMibps: js.UndefOr[ProvisionedThroughputInMibps] = js.undefined
   /**
@@ -59,7 +59,7 @@ trait FileSystemDescription extends js.Object {
     */
   var Tags: awsDashSdkLib.clientsEfsMod.Tags
   /**
-    * The throughput mode for a file system. There are two throughput modes to choose from for your file system: bursting and provisioned. You can decrease your file system's throughput in Provisioned Throughput mode or change between the throughput modes as long as it’s been more than 24 hours since the last decrease or throughput mode change.
+    * The throughput mode for a file system. There are two throughput modes to choose from for your file system: bursting and provisioned. If you set ThroughputMode to provisioned, you must also set a value for ProvisionedThroughPutInMibps. You can decrease your file system's throughput in Provisioned Throughput mode or change between the throughput modes as long as it’s been more than 24 hours since the last decrease or throughput mode change. 
     */
   var ThroughputMode: js.UndefOr[ThroughputMode] = js.undefined
 }

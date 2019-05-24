@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gray-matter"
-version := "2.1.1-e35a25"
+version := "3.1.1-b3eb44"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -133,7 +133,6 @@ object VendorPropertiesHyphen {
     `-ms-wrap-margin`: MsWrapMarginProperty[TLength] = null,
     `-ms-wrap-through`: MsWrapThroughProperty = null,
     `-ms-writing-mode`: WritingModeProperty = null,
-    `-o-border-image`: BorderImageProperty = null,
     `-o-object-fit`: ObjectFitProperty = null,
     `-o-object-position`: ObjectPositionProperty[TLength] = null,
     `-o-tab-size`: TabSizeProperty[TLength] = null,
@@ -373,7 +372,6 @@ object VendorPropertiesHyphen {
     if (`-ms-wrap-margin` != null) __obj.updateDynamic("-ms-wrap-margin")(`-ms-wrap-margin`.asInstanceOf[js.Any])
     if (`-ms-wrap-through` != null) __obj.updateDynamic("-ms-wrap-through")(`-ms-wrap-through`)
     if (`-ms-writing-mode` != null) __obj.updateDynamic("-ms-writing-mode")(`-ms-writing-mode`)
-    if (`-o-border-image` != null) __obj.updateDynamic("-o-border-image")(`-o-border-image`.asInstanceOf[js.Any])
     if (`-o-object-fit` != null) __obj.updateDynamic("-o-object-fit")(`-o-object-fit`)
     if (`-o-object-position` != null) __obj.updateDynamic("-o-object-position")(`-o-object-position`.asInstanceOf[js.Any])
     if (`-o-tab-size` != null) __obj.updateDynamic("-o-tab-size")(`-o-tab-size`.asInstanceOf[js.Any])

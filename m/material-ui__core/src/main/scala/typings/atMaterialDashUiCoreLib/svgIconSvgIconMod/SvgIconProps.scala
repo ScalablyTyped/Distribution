@@ -135,9 +135,7 @@ trait SvgIconProps extends js.Object {
   var capHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SvgIconClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapSvgIconClassKey] = js.undefined
   var clip: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var clipPath: js.UndefOr[java.lang.String] = js.undefined
   var clipPathUnits: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -627,7 +625,7 @@ object SvgIconProps {
     capHeight: scala.Double | java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SvgIconClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapSvgIconClassKey = null,
     clip: scala.Double | java.lang.String = null,
     clipPath: java.lang.String = null,
     clipPathUnits: scala.Double | java.lang.String = null,

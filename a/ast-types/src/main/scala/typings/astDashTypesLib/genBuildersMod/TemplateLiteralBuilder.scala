@@ -10,7 +10,7 @@ trait TemplateLiteralBuilder extends js.Object {
   def apply(
     quasis: js.Array[astDashTypesLib.genKindsMod.TemplateElementKind],
     expressions: js.Array[astDashTypesLib.genKindsMod.ExpressionKind]
-  ): astDashTypesLib.genNodesMod.TemplateLiteral = js.native
-  def from(params: astDashTypesLib.Anon_CommentsExpressionsLoc): astDashTypesLib.genNodesMod.TemplateLiteral = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TemplateLiteral = js.native
+  def from(params: astDashTypesLib.Anon_CommentsExpressionsLoc): astDashTypesLib.genNamedTypesMod.namedTypesNs.TemplateLiteral = js.native
 }
 

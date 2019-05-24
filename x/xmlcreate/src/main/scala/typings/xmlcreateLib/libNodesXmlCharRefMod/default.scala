@@ -7,15 +7,38 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/nodes/XmlCharRef", JSImport.Default)
 @js.native
-class default protected () extends XmlCharRef {
+class default[Parent] protected () extends XmlCharRef[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: IXmlCharRefOptions) = this()
+  /* CompleteClass */
+  override var _char: js.Any = js.native
+  /* CompleteClass */
+  override var _hex: js.Any = js.native
+  /* CompleteClass */
+  override val _parent: js.Any = js.native
+  /* CompleteClass */
+  override val _validation: js.Any = js.native
   /**
-    * Initializes a new instance of the {@link XmlCharRef} class.
-    *
-    * @param char The character to represent using the reference.
-    * @param hex Whether to use the hexadecimal or decimal representation for
-    *            the reference. If left undefined, decimal is the default.
+    * Gets the character of this character reference.
     */
-  def this(char: java.lang.String) = this()
-  def this(char: java.lang.String, hex: scala.Boolean) = this()
+  /**
+    * Sets the character of this character reference.
+    */
+  /* CompleteClass */
+  override var char: java.lang.String = js.native
+  /**
+    * Gets whether the decimal or hexadecimal representation should be used
+    * for this character reference.
+    */
+  /**
+    * Sets whether the decimal or hexadecimal representation should be used
+    * for this character reference.
+    */
+  /* CompleteClass */
+  override var hex: scala.Boolean = js.native
+  /**
+    * Returns the parent of this character reference.
+    */
+  /* CompleteClass */
+  override def up(): Parent = js.native
 }
 

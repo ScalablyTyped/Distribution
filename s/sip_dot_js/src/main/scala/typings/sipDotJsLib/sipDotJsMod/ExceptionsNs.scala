@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "Exceptions")
 @js.native
 object ExceptionsNs extends js.Object {
+  /**
+    * Indicates the session description handler has closed.
+    * Occurs when getDescription() or setDescription() are called after close() has been called.
+    * Occurs when close() is called while getDescription() or setDescription() are in progress.
+    */
+  @js.native
+  class ClosedSessionDescriptionHandlerError ()
+    extends sipDotJsLib.libExceptionsMod.ExceptionsNs.ClosedSessionDescriptionHandlerError
+  
   @js.native
   class ConfigurationError protected ()
     extends sipDotJsLib.libExceptionsMod.ExceptionsNs.ConfigurationError {
@@ -48,11 +57,36 @@ object ExceptionsNs extends js.Object {
   }
   
   /**
+    * Indicates the session terminated before the action completed.
+    */
+  @js.native
+  class TerminatedSessionError ()
+    extends sipDotJsLib.libExceptionsMod.ExceptionsNs.TerminatedSessionError
+  
+  /**
+    * Indicates that the operation could not be completed given the current transaction state.
+    */
+  @js.native
+  class TransactionStateError ()
+    extends sipDotJsLib.libExceptionsMod.ExceptionsNs.TransactionStateError {
+    def this(message: java.lang.String) = this()
+  }
+  
+  /**
     * Transport error.
     */
   @js.native
   class TransportError ()
     extends sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError {
+    def this(message: java.lang.String) = this()
+  }
+  
+  /**
+    * Unsupported session description content type.
+    */
+  @js.native
+  class UnsupportedSessionDescriptionContentTypeError ()
+    extends sipDotJsLib.libExceptionsMod.ExceptionsNs.UnsupportedSessionDescriptionContentTypeError {
     def this(message: java.lang.String) = this()
   }
   

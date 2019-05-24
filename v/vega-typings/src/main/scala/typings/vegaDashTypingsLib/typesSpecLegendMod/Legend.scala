@@ -111,6 +111,8 @@ object Legend {
     labelOverlap: vegaDashTypingsLib.typesSpecAxisMod.LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     labelPadding: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     labelSeparation: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    legendX: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
+    legendY: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     offset: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     opacity: java.lang.String = null,
     orient: LegendOrient | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
@@ -180,6 +182,8 @@ object Legend {
     if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
+    if (legendX != null) __obj.updateDynamic("legendX")(legendX.asInstanceOf[js.Any])
+    if (legendY != null) __obj.updateDynamic("legendY")(legendY.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity)
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])

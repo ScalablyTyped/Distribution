@@ -16,7 +16,7 @@ trait Base
   extends org.scalablytyped.runtime.Instantiable3[
       /* question */ inquirerLib.inquirerMod.Question[js.Object], 
       /* rl */ nodeLib.readlineMod.Interface, 
-      /* answers */ inquirerLib.inquirerMod.Answers, 
+      /* answers */ js.Object, 
       Base
     ] {
   /**

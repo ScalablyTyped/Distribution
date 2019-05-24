@@ -25,6 +25,11 @@ trait SystemPreferences extends EventEmitter {
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_high-contrast-color-scheme-changed`(
+    event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
+    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def `addListener_inverted-color-scheme-changed`(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
@@ -43,6 +48,9 @@ trait SystemPreferences extends EventEmitter {
     */
   @JSName("askForMediaAccess")
   def askForMediaAccess_microphone(mediaType: electronLib.electronLibStrings.microphone): js.Promise[scala.Boolean] = js.native
+  /**
+    * This API is only available on macOS 10.14 Mojave or newer.
+    */
   def getAccentColor(): java.lang.String = js.native
   /**
     * Gets the macOS appearance setting that you have declared you want for your
@@ -50,9 +58,7 @@ trait SystemPreferences extends EventEmitter {
     * setAppLevelAppearance API to set this value.
     */
   def getAppLevelAppearance(): electronLib.electronLibStrings.dark | electronLib.electronLibStrings.light | electronLib.electronLibStrings.unknown = js.native
-  def getColor(
-    color: electronLib.electronLibStrings.`3d-dark-shadow` | electronLib.electronLibStrings.`3d-face` | electronLib.electronLibStrings.`3d-highlight` | electronLib.electronLibStrings.`3d-light` | electronLib.electronLibStrings.`3d-shadow` | electronLib.electronLibStrings.`active-border` | electronLib.electronLibStrings.`active-caption` | electronLib.electronLibStrings.`active-caption-gradient` | electronLib.electronLibStrings.`app-workspace` | electronLib.electronLibStrings.`button-text` | electronLib.electronLibStrings.`caption-text` | electronLib.electronLibStrings.desktop | electronLib.electronLibStrings.`disabled-text` | electronLib.electronLibStrings.highlight | electronLib.electronLibStrings.`highlight-text` | electronLib.electronLibStrings.hotlight | electronLib.electronLibStrings.`inactive-border` | electronLib.electronLibStrings.`inactive-caption` | electronLib.electronLibStrings.`inactive-caption-gradient` | electronLib.electronLibStrings.`inactive-caption-text` | electronLib.electronLibStrings.`info-background` | electronLib.electronLibStrings.`info-text` | electronLib.electronLibStrings.menu | electronLib.electronLibStrings.`menu-highlight` | electronLib.electronLibStrings.menubar | electronLib.electronLibStrings.`menu-text` | electronLib.electronLibStrings.scrollbar | electronLib.electronLibStrings.window | electronLib.electronLibStrings.`window-frame` | electronLib.electronLibStrings.`window-text`
-  ): java.lang.String = js.native
+  def getColor(color: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 62 */ js.Any): java.lang.String = js.native
   /**
     * Gets the macOS appearance setting that is currently applied to your application,
     * maps to NSApplication.effectiveAppearance Please note that until Electron is
@@ -69,6 +75,29 @@ trait SystemPreferences extends EventEmitter {
     * always return granted if your system is running 10.13 High Sierra or lower.
     */
   def getMediaAccessStatus(mediaType: java.lang.String): electronLib.electronLibStrings.`not-determined` | electronLib.electronLibStrings.granted | electronLib.electronLibStrings.denied | electronLib.electronLibStrings.restricted | electronLib.electronLibStrings.unknown = js.native
+  /**
+    * Returns one of several standard system colors that automatically adapt to
+    * vibrancy and changes in accessibility settings like 'Increase contrast' and
+    * 'Reduce transparency'. See Apple Documentation for  more details.
+    */
+  @JSName("getSystemColor")
+  def getSystemColor_blue(color: electronLib.electronLibStrings.blue): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_brown(color: electronLib.electronLibStrings.brown): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_gray(color: electronLib.electronLibStrings.gray): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_green(color: electronLib.electronLibStrings.green): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_orange(color: electronLib.electronLibStrings.orange): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_pink(color: electronLib.electronLibStrings.pink): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_purple(color: electronLib.electronLibStrings.purple): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_red(color: electronLib.electronLibStrings.red): scala.Unit = js.native
+  @JSName("getSystemColor")
+  def getSystemColor_yellow(color: electronLib.electronLibStrings.yellow): scala.Unit = js.native
   @JSName("getUserDefault")
   def getUserDefault_array(key: java.lang.String, `type`: electronLib.electronLibStrings.array): js.Any = js.native
   @JSName("getUserDefault")
@@ -94,6 +123,7 @@ trait SystemPreferences extends EventEmitter {
     */
   def isAeroGlassEnabled(): scala.Boolean = js.native
   def isDarkMode(): scala.Boolean = js.native
+  def isHighContrastColorScheme(): scala.Boolean = js.native
   def isInvertedColorScheme(): scala.Boolean = js.native
   def isSwipeTrackingFromScrollEventsEnabled(): scala.Boolean = js.native
   def isTrustedAccessibilityClient(prompt: scala.Boolean): scala.Boolean = js.native
@@ -120,6 +150,11 @@ trait SystemPreferences extends EventEmitter {
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("on")
+  def `on_high-contrast-color-scheme-changed`(
+    event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
+    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
   def `on_inverted-color-scheme-changed`(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
@@ -142,6 +177,11 @@ trait SystemPreferences extends EventEmitter {
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
+  def `once_high-contrast-color-scheme-changed`(
+    event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
+    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def `once_inverted-color-scheme-changed`(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
@@ -156,6 +196,7 @@ trait SystemPreferences extends EventEmitter {
     * contains the user information dictionary sent along with the notification.
     */
   def postNotification(event: java.lang.String, userInfo: js.Any): scala.Unit = js.native
+  def postNotification(event: java.lang.String, userInfo: js.Any, deliverImmediately: scala.Boolean): scala.Unit = js.native
   /**
     * Posts event as native notifications of macOS. The userInfo is an Object that
     * contains the user information dictionary sent along with the notification.
@@ -181,6 +222,11 @@ trait SystemPreferences extends EventEmitter {
   def `removeListener_color-changed`(
     event: electronLib.electronLibStrings.`color-changed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_high-contrast-color-scheme-changed`(
+    event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
+    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def `removeListener_inverted-color-scheme-changed`(

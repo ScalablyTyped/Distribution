@@ -25,6 +25,7 @@ class AutoResetEvent () extends js.Object {
     * The event is then automatically reset.
     */
   def set(): scala.Unit = js.native
+  def wait(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[scala.Unit] = js.native
   def wait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

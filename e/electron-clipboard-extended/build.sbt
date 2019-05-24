@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "electron-clipboard-extended"
-version := "1.x-dt-20190429Z-e7b252"
+version := "1.x-dt-20190429Z-77b79f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "electron" % "4.2.2-ed3696",
+  "org.scalablytyped" %%% "electron" % "5.0.2-6dcc60",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false

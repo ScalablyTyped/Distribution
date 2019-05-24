@@ -13,6 +13,7 @@ trait Anon_Auto extends js.Object {
   var barComponent: reactLib.reactMod.StatelessComponent[atNivoBarLib.atNivoBarMod.BarItemProps]
   var borderRadius: scala.Double
   var borderWidth: scala.Double
+  var colors: atNivoColorsLib.atNivoColorsMod.OrdinalColorsInstruction[_]
   var enableGridX: scala.Boolean
   var enableGridY: scala.Boolean
   var enableLabel: scala.Boolean
@@ -23,10 +24,10 @@ trait Anon_Auto extends js.Object {
   var keys: js.Array[java.lang.String]
   var label: java.lang.String | atNivoBarLib.atNivoBarMod.AccessorFunc
   var labelFormat: java.lang.String | atNivoBarLib.atNivoBarMod.LabelFormatter
-  var labelLinkColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoBarLib.atNivoBarMod.BarDatumWithColor]
+  var labelLinkColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoBarLib.atNivoBarMod.BarDatumWithColor]
   var labelSkipHeight: scala.Double
   var labelSkipWidth: scala.Double
-  var labelTextColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoBarLib.atNivoBarMod.BarDatumWithColor]
+  var labelTextColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoBarLib.atNivoBarMod.BarDatumWithColor]
   var layout: atNivoBarLib.atNivoBarLibStrings.horizontal | atNivoBarLib.atNivoBarLibStrings.vertical
   var legends: js.Array[Anon_DataFrom with atNivoLegendsLib.atNivoLegendsMod.LegendProps]
   var margin: atNivoCoreLib.atNivoCoreMod.Box
@@ -50,6 +51,7 @@ object Anon_Auto {
     barComponent: reactLib.reactMod.StatelessComponent[atNivoBarLib.atNivoBarMod.BarItemProps],
     borderRadius: scala.Double,
     borderWidth: scala.Double,
+    colors: atNivoColorsLib.atNivoColorsMod.OrdinalColorsInstruction[_],
     enableGridX: scala.Boolean,
     enableGridY: scala.Boolean,
     enableLabel: scala.Boolean,
@@ -60,10 +62,10 @@ object Anon_Auto {
     keys: js.Array[java.lang.String],
     label: java.lang.String | atNivoBarLib.atNivoBarMod.AccessorFunc,
     labelFormat: java.lang.String | atNivoBarLib.atNivoBarMod.LabelFormatter,
-    labelLinkColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoBarLib.atNivoBarMod.BarDatumWithColor],
+    labelLinkColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoBarLib.atNivoBarMod.BarDatumWithColor],
     labelSkipHeight: scala.Double,
     labelSkipWidth: scala.Double,
-    labelTextColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoBarLib.atNivoBarMod.BarDatumWithColor],
+    labelTextColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoBarLib.atNivoBarMod.BarDatumWithColor],
     layout: atNivoBarLib.atNivoBarLibStrings.horizontal | atNivoBarLib.atNivoBarLibStrings.vertical,
     legends: js.Array[Anon_DataFrom with atNivoLegendsLib.atNivoLegendsMod.LegendProps],
     margin: atNivoCoreLib.atNivoCoreMod.Box,
@@ -76,7 +78,7 @@ object Anon_Auto {
     tooltip: atNivoBarLib.atNivoBarMod.TooltipProp,
     tooltipFormat: java.lang.String | atNivoBarLib.atNivoBarMod.ValueFormatter
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal(axisBottom = axisBottom, axisLeft = axisLeft, axisRight = axisRight, axisTop = axisTop, barComponent = barComponent, borderRadius = borderRadius, borderWidth = borderWidth, enableGridX = enableGridX, enableGridY = enableGridY, enableLabel = enableLabel, groupMode = groupMode.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], innerPadding = innerPadding, isInteractive = isInteractive, keys = keys, label = label.asInstanceOf[js.Any], labelFormat = labelFormat.asInstanceOf[js.Any], labelLinkColor = labelLinkColor.asInstanceOf[js.Any], labelSkipHeight = labelSkipHeight, labelSkipWidth = labelSkipWidth, labelTextColor = labelTextColor.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], legends = legends, margin = margin, markers = markers, maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], padding = padding, reverse = reverse, theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axisBottom = axisBottom, axisLeft = axisLeft, axisRight = axisRight, axisTop = axisTop, barComponent = barComponent, borderRadius = borderRadius, borderWidth = borderWidth, colors = colors.asInstanceOf[js.Any], enableGridX = enableGridX, enableGridY = enableGridY, enableLabel = enableLabel, groupMode = groupMode.asInstanceOf[js.Any], indexBy = indexBy.asInstanceOf[js.Any], innerPadding = innerPadding, isInteractive = isInteractive, keys = keys, label = label.asInstanceOf[js.Any], labelFormat = labelFormat.asInstanceOf[js.Any], labelLinkColor = labelLinkColor.asInstanceOf[js.Any], labelSkipHeight = labelSkipHeight, labelSkipWidth = labelSkipWidth, labelTextColor = labelTextColor.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], legends = legends, margin = margin, markers = markers, maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], padding = padding, reverse = reverse, theme = theme, tooltip = tooltip, tooltipFormat = tooltipFormat.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Auto]
   }

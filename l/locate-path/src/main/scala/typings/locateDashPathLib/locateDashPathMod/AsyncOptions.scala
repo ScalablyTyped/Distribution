@@ -22,14 +22,18 @@ trait AsyncOptions extends Options {
 object AsyncOptions {
   @scala.inline
   def apply(
+    allowSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
     concurrency: scala.Int | scala.Double = null,
     cwd: java.lang.String = null,
-    preserveOrder: js.UndefOr[scala.Boolean] = js.undefined
+    preserveOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: locateDashPathLib.locateDashPathLibStrings.file | locateDashPathLib.locateDashPathLibStrings.directory = null
   ): AsyncOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowSymlinks)) __obj.updateDynamic("allowSymlinks")(allowSymlinks)
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (!js.isUndefined(preserveOrder)) __obj.updateDynamic("preserveOrder")(preserveOrder)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncOptions]
   }
 }

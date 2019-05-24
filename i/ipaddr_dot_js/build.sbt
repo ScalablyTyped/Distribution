@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipaddr_dot_js"
-version := "1.8.0-3d4f69"
+version := "1.9.0-f86fcb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

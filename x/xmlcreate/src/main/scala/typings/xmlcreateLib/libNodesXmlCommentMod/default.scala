@@ -7,12 +7,28 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate/lib/nodes/XmlComment", JSImport.Default)
 @js.native
-class default protected () extends XmlComment {
+class default[Parent] protected () extends XmlComment[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: IXmlCommentOptions) = this()
+  /* CompleteClass */
+  override var _charData: js.Any = js.native
+  /* CompleteClass */
+  override val _parent: js.Any = js.native
+  /* CompleteClass */
+  override val _replaceInvalidCharsInCharData: js.Any = js.native
+  /* CompleteClass */
+  override val _validation: js.Any = js.native
   /**
-    * Initializes a new instance of the {@link XmlComment} class.
-    *
-    * @param content The content of the comment.
+    * Gets the text of this comment.
     */
-  def this(content: java.lang.String) = this()
+  /**
+    * Sets the text of this comment.
+    */
+  /* CompleteClass */
+  override var charData: java.lang.String = js.native
+  /**
+    * Returns the parent of this comment.
+    */
+  /* CompleteClass */
+  override def up(): Parent = js.native
 }
 

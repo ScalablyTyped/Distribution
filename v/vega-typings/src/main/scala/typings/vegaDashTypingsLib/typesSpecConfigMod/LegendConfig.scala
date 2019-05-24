@@ -86,6 +86,8 @@ object LegendConfig {
     labelPadding: N = null,
     labelSeparation: NS = null,
     layout: LegendLayout = null,
+    legendX: N = null,
+    legendY: N = null,
     offset: N = null,
     orient: LOR = null,
     padding: N = null,
@@ -147,6 +149,8 @@ object LegendConfig {
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (legendX != null) __obj.updateDynamic("legendX")(legendX.asInstanceOf[js.Any])
+    if (legendY != null) __obj.updateDynamic("legendY")(legendY.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

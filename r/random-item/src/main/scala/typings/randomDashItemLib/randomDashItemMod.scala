@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("random-item", JSImport.Namespace)
 @js.native
 object randomDashItemMod extends js.Object {
-  def apply[T](input: stdLib.Iterable[T]): T = js.native
+  def apply[T](input: js.Array[T]): T = js.native
 }
 

@@ -14,6 +14,6 @@ class Skeleton ()
 @JSImport("antd/es", "Skeleton")
 @js.native
 object Skeleton extends js.Object {
-  var defaultProps: stdLib.Partial[antdLib.esSkeletonMod.SkeletonProps] = js.native
+  var defaultProps: antdLib.PartialSkeletonProps = js.native
 }
 

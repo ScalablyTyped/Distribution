@@ -10,7 +10,7 @@ trait TSIndexedAccessTypeBuilder extends js.Object {
   def apply(
     objectType: astDashTypesLib.genKindsMod.TSTypeKind,
     indexType: astDashTypesLib.genKindsMod.TSTypeKind
-  ): astDashTypesLib.genNodesMod.TSIndexedAccessType = js.native
-  def from(params: astDashTypesLib.Anon_CommentsIndexType): astDashTypesLib.genNodesMod.TSIndexedAccessType = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexedAccessType = js.native
+  def from(params: astDashTypesLib.Anon_CommentsIndexType): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexedAccessType = js.native
 }
 

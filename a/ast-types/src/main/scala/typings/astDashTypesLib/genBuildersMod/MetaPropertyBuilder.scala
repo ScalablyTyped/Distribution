@@ -10,7 +10,7 @@ trait MetaPropertyBuilder extends js.Object {
   def apply(
     meta: astDashTypesLib.genKindsMod.IdentifierKind,
     property: astDashTypesLib.genKindsMod.IdentifierKind
-  ): astDashTypesLib.genNodesMod.MetaProperty = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocMeta): astDashTypesLib.genNodesMod.MetaProperty = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.MetaProperty = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocMeta): astDashTypesLib.genNamedTypesMod.namedTypesNs.MetaProperty = js.native
 }
 

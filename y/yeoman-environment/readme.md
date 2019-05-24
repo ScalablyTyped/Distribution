@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/yeoman/environment, http://yeoman.io
 // Definitions by: c4605 <https://github.com/bolasblack>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.3
 
 ```
 

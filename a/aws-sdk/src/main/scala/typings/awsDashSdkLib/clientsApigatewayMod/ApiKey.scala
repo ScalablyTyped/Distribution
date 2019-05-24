@@ -39,6 +39,10 @@ trait ApiKey extends js.Object {
     */
   var stageKeys: js.UndefOr[ListOfString] = js.undefined
   /**
+    * The collection of tags. Each tag element is associated with a given resource.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
+  /**
     * The value of the API Key.
     */
   var value: js.UndefOr[String] = js.undefined
@@ -55,6 +59,7 @@ object ApiKey {
     lastUpdatedDate: Timestamp = null,
     name: String = null,
     stageKeys: ListOfString = null,
+    tags: MapOfStringToString = null,
     value: String = null
   ): ApiKey = {
     val __obj = js.Dynamic.literal()
@@ -66,6 +71,7 @@ object ApiKey {
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
     if (name != null) __obj.updateDynamic("name")(name)
     if (stageKeys != null) __obj.updateDynamic("stageKeys")(stageKeys)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ApiKey]
   }

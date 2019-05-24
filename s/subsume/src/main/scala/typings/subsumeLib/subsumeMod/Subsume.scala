@@ -25,12 +25,12 @@ trait Subsume extends js.Object {
   /**
   	@returns A wrapped version of `text` that you can embed in other content.
   	*/
-  def compose(text: java.lang.String): java.lang.String
+  def compose(string: java.lang.String): java.lang.String
   /**
   	Extract your embedded data from `text`.
-  	@returns an object with properties `.data` for your embedded data and `.rest` for everything else.
+  	@returns An object with properties `.data` for your embedded data and `.rest` for everything else.
   	*/
-  def parse(text: java.lang.String): ParseResult
+  def parse(string: java.lang.String): ParseResult
 }
 
 object Subsume {

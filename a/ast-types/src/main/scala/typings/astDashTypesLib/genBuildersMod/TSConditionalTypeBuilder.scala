@@ -12,7 +12,7 @@ trait TSConditionalTypeBuilder extends js.Object {
     extendsType: astDashTypesLib.genKindsMod.TSTypeKind,
     trueType: astDashTypesLib.genKindsMod.TSTypeKind,
     falseType: astDashTypesLib.genKindsMod.TSTypeKind
-  ): astDashTypesLib.genNodesMod.TSConditionalType = js.native
-  def from(params: astDashTypesLib.Anon_CheckType): astDashTypesLib.genNodesMod.TSConditionalType = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConditionalType = js.native
+  def from(params: astDashTypesLib.Anon_CheckType): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConditionalType = js.native
 }
 

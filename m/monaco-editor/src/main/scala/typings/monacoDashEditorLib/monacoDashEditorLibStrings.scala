@@ -94,6 +94,12 @@ object monacoDashEditorLibStrings {
   sealed trait `force-expand-multiline` extends js.Object
   
   @js.native
+  sealed trait goto extends js.Object
+  
+  @js.native
+  sealed trait gotoAndPeek extends js.Object
+  
+  @js.native
   sealed trait gutter extends js.Object
   
   @js.native
@@ -160,6 +166,9 @@ object monacoDashEditorLibStrings {
   
   @js.native
   sealed trait onlySnippets extends js.Object
+  
+  @js.native
+  sealed trait peek extends js.Object
   
   @js.native
   sealed trait quotes
@@ -257,6 +266,10 @@ object monacoDashEditorLibStrings {
   @scala.inline
   def `force-expand-multiline`: `force-expand-multiline` = "force-expand-multiline".asInstanceOf[`force-expand-multiline`]
   @scala.inline
+  def goto: goto = "goto".asInstanceOf[goto]
+  @scala.inline
+  def gotoAndPeek: gotoAndPeek = "gotoAndPeek".asInstanceOf[gotoAndPeek]
+  @scala.inline
   def gutter: gutter = "gutter".asInstanceOf[gutter]
   @scala.inline
   def `hc-black`: `hc-black` = "hc-black".asInstanceOf[`hc-black`]
@@ -298,6 +311,8 @@ object monacoDashEditorLibStrings {
   def on: on = "on".asInstanceOf[on]
   @scala.inline
   def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
+  @scala.inline
+  def peek: peek = "peek".asInstanceOf[peek]
   @scala.inline
   def quotes: quotes = "quotes".asInstanceOf[quotes]
   @scala.inline

@@ -8,42 +8,22 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-debug", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  // TODO: Remove this for the next major release
-  @JSName("default")
-  var default_Original: electronDashDebugLib.Anon_Default = js.native
   /**
   	Install keyboard shortcuts and optionally activate DevTools on each created `BrowserWindow`.
   	@example
   	```
   	import {app, BrowserWindow} from 'electron';
-  	import electronDebug = require('electron-debug');
-  	electronDebug();
-  	let win;
+  	import debug = require('electron-debug');
+  	debug();
+  	let mainWindow;
   	(async () => {
   		await app.whenReady();
-  		win = new BrowserWindow();
+  		mainWindow = new BrowserWindow();
   	});
   	```
   	*/
   def apply(): scala.Unit = js.native
   def apply(options: Options): scala.Unit = js.native
-  /**
-  	Install keyboard shortcuts and optionally activate DevTools on each created `BrowserWindow`.
-  	@example
-  	```
-  	import {app, BrowserWindow} from 'electron';
-  	import electronDebug = require('electron-debug');
-  	electronDebug();
-  	let win;
-  	(async () => {
-  		await app.whenReady();
-  		win = new BrowserWindow();
-  	});
-  	```
-  	*/
-  // TODO: Remove this for the next major release
-  def default(): scala.Unit = js.native
-  def default(options: Options): scala.Unit = js.native
   /**
   	Toggle DevTools for the specified `BrowserWindow` instance or the focused one.
   	@param window - Default: `BrowserWindow.getFocusedWindow()`

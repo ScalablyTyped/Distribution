@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait MeshDepthMaterialParameters
   extends threeLib.srcMaterialsMaterialMod.MaterialParameters {
+  var depthPacking: js.UndefOr[threeLib.srcConstantsMod.DepthPackingStrategies] = js.undefined
+  var displacementBias: js.UndefOr[scala.Double] = js.undefined
+  var displacementMap: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
+  var displacementScale: js.UndefOr[scala.Double] = js.undefined
   var wireframe: js.UndefOr[scala.Boolean] = js.undefined
   var wireframeLinewidth: js.UndefOr[scala.Double] = js.undefined
 }
@@ -27,8 +31,12 @@ object MeshDepthMaterialParameters {
     clippingPlanes: js.Array[threeLib.srcMathPlaneMod.Plane] = null,
     colorWrite: js.UndefOr[scala.Boolean] = js.undefined,
     depthFunc: threeLib.srcConstantsMod.DepthModes = null,
+    depthPacking: threeLib.srcConstantsMod.DepthPackingStrategies = null,
     depthTest: js.UndefOr[scala.Boolean] = js.undefined,
     depthWrite: js.UndefOr[scala.Boolean] = js.undefined,
+    displacementBias: scala.Int | scala.Double = null,
+    displacementMap: threeLib.srcTexturesTextureMod.Texture = null,
+    displacementScale: scala.Int | scala.Double = null,
     dithering: js.UndefOr[scala.Boolean] = js.undefined,
     flatShading: js.UndefOr[scala.Boolean] = js.undefined,
     fog: js.UndefOr[scala.Boolean] = js.undefined,
@@ -63,8 +71,12 @@ object MeshDepthMaterialParameters {
     if (clippingPlanes != null) __obj.updateDynamic("clippingPlanes")(clippingPlanes)
     if (!js.isUndefined(colorWrite)) __obj.updateDynamic("colorWrite")(colorWrite)
     if (depthFunc != null) __obj.updateDynamic("depthFunc")(depthFunc)
+    if (depthPacking != null) __obj.updateDynamic("depthPacking")(depthPacking)
     if (!js.isUndefined(depthTest)) __obj.updateDynamic("depthTest")(depthTest)
     if (!js.isUndefined(depthWrite)) __obj.updateDynamic("depthWrite")(depthWrite)
+    if (displacementBias != null) __obj.updateDynamic("displacementBias")(displacementBias.asInstanceOf[js.Any])
+    if (displacementMap != null) __obj.updateDynamic("displacementMap")(displacementMap)
+    if (displacementScale != null) __obj.updateDynamic("displacementScale")(displacementScale.asInstanceOf[js.Any])
     if (!js.isUndefined(dithering)) __obj.updateDynamic("dithering")(dithering)
     if (!js.isUndefined(flatShading)) __obj.updateDynamic("flatShading")(flatShading)
     if (!js.isUndefined(fog)) __obj.updateDynamic("fog")(fog)

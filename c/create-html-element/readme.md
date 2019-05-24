@@ -1,7 +1,7 @@
 
 # Scala.js typings for create-html-element
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Create a HTML element string

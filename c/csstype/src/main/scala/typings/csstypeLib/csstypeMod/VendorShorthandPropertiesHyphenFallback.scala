@@ -28,8 +28,6 @@ trait VendorShorthandPropertiesHyphenFallback[TLength] extends js.Object {
   var `-ms-scroll-snap-x`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
   /** The **`-ms-scroll-snap-x`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-scroll-snap-type` and `-ms-scroll-snap-points-y` properties. */
   var `-ms-scroll-snap-y`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /** The **`border-image`** CSS property draws an image in place of an element's `border-style`. */
-  var `-o-border-image`: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
   /** The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`. */
   var `-webkit-animation`: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
   /** The **`-webkit-border-before`** CSS property is a shorthand property for setting the individual logical block start border property values in a single place in the style sheet. */
@@ -73,7 +71,6 @@ object VendorShorthandPropertiesHyphenFallback {
     `-ms-scroll-limit`: GlobalsString | js.Array[GlobalsString] = null,
     `-ms-scroll-snap-x`: GlobalsString | js.Array[GlobalsString] = null,
     `-ms-scroll-snap-y`: GlobalsString | js.Array[GlobalsString] = null,
-    `-o-border-image`: BorderImageProperty | js.Array[BorderImageProperty] = null,
     `-webkit-animation`: AnimationProperty | js.Array[AnimationProperty] = null,
     `-webkit-border-before`: WebkitBorderBeforeProperty[TLength] | js.Array[WebkitBorderBeforeProperty[TLength]] = null,
     `-webkit-border-image`: BorderImageProperty | js.Array[BorderImageProperty] = null,
@@ -100,7 +97,6 @@ object VendorShorthandPropertiesHyphenFallback {
     if (`-ms-scroll-limit` != null) __obj.updateDynamic("-ms-scroll-limit")(`-ms-scroll-limit`.asInstanceOf[js.Any])
     if (`-ms-scroll-snap-x` != null) __obj.updateDynamic("-ms-scroll-snap-x")(`-ms-scroll-snap-x`.asInstanceOf[js.Any])
     if (`-ms-scroll-snap-y` != null) __obj.updateDynamic("-ms-scroll-snap-y")(`-ms-scroll-snap-y`.asInstanceOf[js.Any])
-    if (`-o-border-image` != null) __obj.updateDynamic("-o-border-image")(`-o-border-image`.asInstanceOf[js.Any])
     if (`-webkit-animation` != null) __obj.updateDynamic("-webkit-animation")(`-webkit-animation`.asInstanceOf[js.Any])
     if (`-webkit-border-before` != null) __obj.updateDynamic("-webkit-border-before")(`-webkit-border-before`.asInstanceOf[js.Any])
     if (`-webkit-border-image` != null) __obj.updateDynamic("-webkit-border-image")(`-webkit-border-image`.asInstanceOf[js.Any])

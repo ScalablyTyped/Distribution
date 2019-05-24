@@ -391,6 +391,12 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     */
   var OBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
   /**
+    * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
+    *
+    * @deprecated
+    */
+  var OBorderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
+  /**
     * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
     *
     * **Initial value**: `none`
@@ -701,6 +707,14 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     */
   var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
   /**
+    * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * @deprecated
+    */
+  var offsetBlock: js.UndefOr[InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]]] = js.undefined
+  /**
     * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
@@ -716,6 +730,14 @@ trait ObsoletePropertiesFallback[TLength] extends js.Object {
     * @deprecated
     */
   var offsetBlockStart: js.UndefOr[InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]]] = js.undefined
+  /**
+    * The **`inset-inline`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * @deprecated
+    */
+  var offsetInline: js.UndefOr[InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]]] = js.undefined
   /**
     * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
@@ -845,6 +867,7 @@ object ObsoletePropertiesFallback {
     OAnimationPlayState: AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty] = null,
     OAnimationTimingFunction: AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty] = null,
     OBackgroundSize: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
+    OBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
     OTransform: TransformProperty | js.Array[TransformProperty] = null,
     OTransition: TransitionProperty | js.Array[TransitionProperty] = null,
     OTransitionDelay: GlobalsString | js.Array[GlobalsString] = null,
@@ -884,8 +907,10 @@ object ObsoletePropertiesFallback {
     msScrollbarHighlightColor: MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty] = null,
     msScrollbarShadowColor: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty] = null,
     msScrollbarTrackColor: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
+    offsetBlock: InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]] = null,
     offsetBlockEnd: InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]] = null,
     offsetBlockStart: InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]] = null,
+    offsetInline: InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]] = null,
     offsetInlineEnd: InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]] = null,
     offsetInlineStart: InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]] = null,
     scrollSnapCoordinate: ScrollSnapCoordinateProperty[TLength] | js.Array[ScrollSnapCoordinateProperty[TLength]] = null,
@@ -945,6 +970,7 @@ object ObsoletePropertiesFallback {
     if (OAnimationPlayState != null) __obj.updateDynamic("OAnimationPlayState")(OAnimationPlayState.asInstanceOf[js.Any])
     if (OAnimationTimingFunction != null) __obj.updateDynamic("OAnimationTimingFunction")(OAnimationTimingFunction.asInstanceOf[js.Any])
     if (OBackgroundSize != null) __obj.updateDynamic("OBackgroundSize")(OBackgroundSize.asInstanceOf[js.Any])
+    if (OBorderImage != null) __obj.updateDynamic("OBorderImage")(OBorderImage.asInstanceOf[js.Any])
     if (OTransform != null) __obj.updateDynamic("OTransform")(OTransform.asInstanceOf[js.Any])
     if (OTransition != null) __obj.updateDynamic("OTransition")(OTransition.asInstanceOf[js.Any])
     if (OTransitionDelay != null) __obj.updateDynamic("OTransitionDelay")(OTransitionDelay.asInstanceOf[js.Any])
@@ -984,8 +1010,10 @@ object ObsoletePropertiesFallback {
     if (msScrollbarHighlightColor != null) __obj.updateDynamic("msScrollbarHighlightColor")(msScrollbarHighlightColor.asInstanceOf[js.Any])
     if (msScrollbarShadowColor != null) __obj.updateDynamic("msScrollbarShadowColor")(msScrollbarShadowColor.asInstanceOf[js.Any])
     if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
+    if (offsetBlock != null) __obj.updateDynamic("offsetBlock")(offsetBlock.asInstanceOf[js.Any])
     if (offsetBlockEnd != null) __obj.updateDynamic("offsetBlockEnd")(offsetBlockEnd.asInstanceOf[js.Any])
     if (offsetBlockStart != null) __obj.updateDynamic("offsetBlockStart")(offsetBlockStart.asInstanceOf[js.Any])
+    if (offsetInline != null) __obj.updateDynamic("offsetInline")(offsetInline.asInstanceOf[js.Any])
     if (offsetInlineEnd != null) __obj.updateDynamic("offsetInlineEnd")(offsetInlineEnd.asInstanceOf[js.Any])
     if (offsetInlineStart != null) __obj.updateDynamic("offsetInlineStart")(offsetInlineStart.asInstanceOf[js.Any])
     if (scrollSnapCoordinate != null) __obj.updateDynamic("scrollSnapCoordinate")(scrollSnapCoordinate.asInstanceOf[js.Any])

@@ -1,6 +1,7 @@
 
 # Scala.js typings for sql_dot_js
 
+Typings are for version 1.0
 
 ## Library description:
 SQLite library with support for opening and writing databases, prepared statements, and more. This SQLite library is in pure javascript (compiled with emscripten).
@@ -34,10 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for sql.js
+// Type definitions for sql.js 1.0
 // Project: https://github.com/kripken/sql.js
-// Definitions by: George Wu <https://github.com/Hozuki>
+// Definitions by: George Wu <https://github.com/Hozuki>,
+//                 Florian Keller <https://github.com/ffflorian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.1
 
 ```
 

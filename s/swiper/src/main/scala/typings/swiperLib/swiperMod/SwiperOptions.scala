@@ -249,6 +249,7 @@ trait SwiperOptions extends js.Object {
     * Threshold value in px. If "touch distance" will be lower than this value then swiper will not move
     */
   var threshold: js.UndefOr[scala.Double] = js.undefined
+  var thumbs: js.UndefOr[ThumbsOptions] = js.undefined
   /**
     * Allowable angle (in degrees) to trigger touch move
     */
@@ -408,6 +409,7 @@ object SwiperOptions {
     speed: scala.Int | scala.Double = null,
     swipeHandler: SelectableElement = null,
     threshold: scala.Int | scala.Double = null,
+    thumbs: ThumbsOptions = null,
     touchAngle: scala.Int | scala.Double = null,
     touchEventsTarget: swiperLib.swiperLibStrings.container | swiperLib.swiperLibStrings.wrapper = null,
     touchMoveStopPropagation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -515,6 +517,7 @@ object SwiperOptions {
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (swipeHandler != null) __obj.updateDynamic("swipeHandler")(swipeHandler.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs)
     if (touchAngle != null) __obj.updateDynamic("touchAngle")(touchAngle.asInstanceOf[js.Any])
     if (touchEventsTarget != null) __obj.updateDynamic("touchEventsTarget")(touchEventsTarget.asInstanceOf[js.Any])
     if (!js.isUndefined(touchMoveStopPropagation)) __obj.updateDynamic("touchMoveStopPropagation")(touchMoveStopPropagation)

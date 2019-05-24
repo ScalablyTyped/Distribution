@@ -13,6 +13,7 @@ trait UpgradeableLockHandle extends LockHandle {
     * @param token A CancellationToken used to cancel the request.
     */
   def upgrade(): js.Promise[LockHandle] = js.native
+  def upgrade(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[LockHandle] = js.native
   def upgrade(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
 }
 

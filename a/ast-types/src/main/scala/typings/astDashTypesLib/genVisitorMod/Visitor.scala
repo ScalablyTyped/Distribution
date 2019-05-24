@@ -9,1827 +9,1830 @@ trait Visitor[M] extends js.Object {
   var visitAnyTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AnyTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AnyTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitArrayExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrayExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayExpression, _], 
       _
     ]
   ] = js.undefined
   var visitArrayPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrayPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayPattern, _], 
       _
     ]
   ] = js.undefined
   var visitArrayTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrayTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitArrowFunctionExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrowFunctionExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrowFunctionExpression, _], 
       _
     ]
   ] = js.undefined
   var visitAssignmentExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AssignmentExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AssignmentExpression, _], 
       _
     ]
   ] = js.undefined
   var visitAssignmentPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AssignmentPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AssignmentPattern, _], 
       _
     ]
   ] = js.undefined
   var visitAwaitExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AwaitExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AwaitExpression, _], 
       _
     ]
   ] = js.undefined
   var visitBigIntLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BigIntLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BigIntLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitBinaryExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BinaryExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BinaryExpression, _], 
       _
     ]
   ] = js.undefined
   var visitBindExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BindExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BindExpression, _], 
       _
     ]
   ] = js.undefined
   var visitBlock: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Block, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Block, _], 
       _
     ]
   ] = js.undefined
   var visitBlockStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BlockStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BlockStatement, _], 
       _
     ]
   ] = js.undefined
   var visitBooleanLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BooleanLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitBooleanLiteralTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BooleanLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanLiteralTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitBooleanTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BooleanTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitBreakStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BreakStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BreakStatement, _], 
       _
     ]
   ] = js.undefined
   var visitCallExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CallExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CallExpression, _], 
       _
     ]
   ] = js.undefined
   var visitCatchClause: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CatchClause, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause, _], 
       _
     ]
   ] = js.undefined
   var visitClassBody: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassBody, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassBody, _], 
       _
     ]
   ] = js.undefined
   var visitClassDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitClassExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression, _], 
       _
     ]
   ] = js.undefined
   var visitClassImplements: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassImplements, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassImplements, _], 
       _
     ]
   ] = js.undefined
   var visitClassMethod: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassMethod, _], 
       _
     ]
   ] = js.undefined
   var visitClassPrivateMethod: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassPrivateMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassPrivateMethod, _], 
       _
     ]
   ] = js.undefined
   var visitClassPrivateProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassPrivateProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassPrivateProperty, _], 
       _
     ]
   ] = js.undefined
   var visitClassProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassProperty, _], 
       _
     ]
   ] = js.undefined
   var visitClassPropertyDefinition: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassPropertyDefinition, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassPropertyDefinition, _], 
       _
     ]
   ] = js.undefined
   var visitComment: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Comment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Comment, _], 
       _
     ]
   ] = js.undefined
   var visitCommentBlock: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CommentBlock, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CommentBlock, _], 
       _
     ]
   ] = js.undefined
   var visitCommentLine: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CommentLine, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CommentLine, _], 
       _
     ]
   ] = js.undefined
   var visitComprehensionBlock: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ComprehensionBlock, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ComprehensionBlock, _], 
       _
     ]
   ] = js.undefined
   var visitComprehensionExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ComprehensionExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ComprehensionExpression, _], 
       _
     ]
   ] = js.undefined
   var visitConditionalExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ConditionalExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ConditionalExpression, _], 
       _
     ]
   ] = js.undefined
   var visitContinueStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ContinueStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ContinueStatement, _], 
       _
     ]
   ] = js.undefined
   var visitDebuggerStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DebuggerStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DebuggerStatement, _], 
       _
     ]
   ] = js.undefined
   var visitDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Declaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Declaration, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareClass: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareClass, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareClass, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareExportAllDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareExportAllDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareExportAllDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareExportDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareExportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareExportDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareFunction: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareFunction, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareFunction, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareInterface: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareInterface, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareInterface, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareModule: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareModule, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareModule, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareModuleExports: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareModuleExports, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareModuleExports, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareOpaqueType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareOpaqueType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareOpaqueType, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareTypeAlias: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareTypeAlias, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareTypeAlias, _], 
       _
     ]
   ] = js.undefined
   var visitDeclareVariable: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareVariable, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareVariable, _], 
       _
     ]
   ] = js.undefined
   var visitDeclaredPredicate: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclaredPredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclaredPredicate, _], 
       _
     ]
   ] = js.undefined
   var visitDecorator: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Decorator, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Decorator, _], 
       _
     ]
   ] = js.undefined
   var visitDirective: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Directive, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Directive, _], 
       _
     ]
   ] = js.undefined
   var visitDirectiveLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DirectiveLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DirectiveLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitDoExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DoExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DoExpression, _], 
       _
     ]
   ] = js.undefined
   var visitDoWhileStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DoWhileStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DoWhileStatement, _], 
       _
     ]
   ] = js.undefined
   var visitEmptyStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.EmptyStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.EmptyStatement, _], 
       _
     ]
   ] = js.undefined
   var visitEmptyTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.EmptyTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.EmptyTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitExistentialTypeParam: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExistentialTypeParam, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExistentialTypeParam, _], 
       _
     ]
   ] = js.undefined
   var visitExistsTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExistsTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExistsTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitExportAllDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportAllDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportAllDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitExportBatchSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportBatchSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportBatchSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitExportDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitExportDefaultDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportDefaultDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDefaultDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitExportDefaultSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportDefaultSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDefaultSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitExportNamedDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportNamedDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamedDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitExportNamespaceSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportNamespaceSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamespaceSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitExportSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Expression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Expression, _], 
       _
     ]
   ] = js.undefined
   var visitExpressionStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExpressionStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExpressionStatement, _], 
       _
     ]
   ] = js.undefined
   var visitFile: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.File, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.File, _], 
       _
     ]
   ] = js.undefined
   var visitFlow: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Flow, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Flow, _], 
       _
     ]
   ] = js.undefined
   var visitFlowPredicate: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FlowPredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FlowPredicate, _], 
       _
     ]
   ] = js.undefined
   var visitFlowType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FlowType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FlowType, _], 
       _
     ]
   ] = js.undefined
   var visitForAwaitStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForAwaitStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForAwaitStatement, _], 
       _
     ]
   ] = js.undefined
   var visitForInStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForInStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForInStatement, _], 
       _
     ]
   ] = js.undefined
   var visitForOfStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForOfStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForOfStatement, _], 
       _
     ]
   ] = js.undefined
   var visitForStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForStatement, _], 
       _
     ]
   ] = js.undefined
   var visitFunction: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Function, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Function, _], 
       _
     ]
   ] = js.undefined
   var visitFunctionDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitFunctionExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression, _], 
       _
     ]
   ] = js.undefined
   var visitFunctionTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitFunctionTypeParam: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionTypeParam, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionTypeParam, _], 
       _
     ]
   ] = js.undefined
   var visitGeneratorExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.GeneratorExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.GeneratorExpression, _], 
       _
     ]
   ] = js.undefined
   var visitGenericTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.GenericTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.GenericTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitIdentifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Identifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Identifier, _], 
       _
     ]
   ] = js.undefined
   var visitIfStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.IfStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.IfStatement, _], 
       _
     ]
   ] = js.undefined
   var visitImport: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Import, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Import, _], 
       _
     ]
   ] = js.undefined
   var visitImportDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitImportDefaultSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportDefaultSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDefaultSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitImportNamespaceSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportNamespaceSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportNamespaceSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitImportSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitInferredPredicate: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InferredPredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InferredPredicate, _], 
       _
     ]
   ] = js.undefined
   var visitInterfaceDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterfaceDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitInterfaceExtends: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterfaceExtends, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceExtends, _], 
       _
     ]
   ] = js.undefined
   var visitInterfaceTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterfaceTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitInterpreterDirective: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterpreterDirective, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterpreterDirective, _], 
       _
     ]
   ] = js.undefined
   var visitIntersectionTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.IntersectionTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.IntersectionTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitJSXAttribute: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXAttribute, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXAttribute, _], 
       _
     ]
   ] = js.undefined
   var visitJSXClosingElement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXClosingElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXClosingElement, _], 
       _
     ]
   ] = js.undefined
   var visitJSXClosingFragment: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXClosingFragment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXClosingFragment, _], 
       _
     ]
   ] = js.undefined
   var visitJSXElement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXElement, _], 
       _
     ]
   ] = js.undefined
   var visitJSXEmptyExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXEmptyExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXEmptyExpression, _], 
       _
     ]
   ] = js.undefined
   var visitJSXExpressionContainer: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXExpressionContainer, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXExpressionContainer, _], 
       _
     ]
   ] = js.undefined
   var visitJSXFragment: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXFragment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXFragment, _], 
       _
     ]
   ] = js.undefined
   var visitJSXIdentifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXIdentifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXIdentifier, _], 
       _
     ]
   ] = js.undefined
   var visitJSXMemberExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXMemberExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXMemberExpression, _], 
       _
     ]
   ] = js.undefined
   var visitJSXNamespacedName: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXNamespacedName, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXNamespacedName, _], 
       _
     ]
   ] = js.undefined
   var visitJSXOpeningElement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXOpeningElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXOpeningElement, _], 
       _
     ]
   ] = js.undefined
   var visitJSXOpeningFragment: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXOpeningFragment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXOpeningFragment, _], 
       _
     ]
   ] = js.undefined
   var visitJSXSpreadAttribute: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXSpreadAttribute, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXSpreadAttribute, _], 
       _
     ]
   ] = js.undefined
   var visitJSXSpreadChild: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXSpreadChild, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXSpreadChild, _], 
       _
     ]
   ] = js.undefined
   var visitJSXText: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXText, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXText, _], 
       _
     ]
   ] = js.undefined
   var visitLabeledStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.LabeledStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.LabeledStatement, _], 
       _
     ]
   ] = js.undefined
   var visitLine: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Line, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Line, _], 
       _
     ]
   ] = js.undefined
   var visitLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Literal, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Literal, _], 
       _
     ]
   ] = js.undefined
   var visitLogicalExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.LogicalExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression, _], 
       _
     ]
   ] = js.undefined
   var visitMemberExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MemberExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MemberExpression, _], 
       _
     ]
   ] = js.undefined
   var visitMemberTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MemberTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MemberTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitMetaProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MetaProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MetaProperty, _], 
       _
     ]
   ] = js.undefined
   var visitMethodDefinition: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MethodDefinition, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition, _], 
       _
     ]
   ] = js.undefined
   var visitMixedTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MixedTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MixedTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitModuleSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ModuleSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ModuleSpecifier, _], 
       _
     ]
   ] = js.undefined
   var visitNewExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NewExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NewExpression, _], 
       _
     ]
   ] = js.undefined
   var visitNode: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Node, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Node, _], 
       _
     ]
   ] = js.undefined
   var visitNoop: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Noop, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Noop, _], 
       _
     ]
   ] = js.undefined
   var visitNullLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitNullLiteralTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullLiteralTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitNullTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitNullableTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullableTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullableTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitNumberLiteralTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumberLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumberLiteralTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitNumberTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumberTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumberTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitNumericLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumericLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumericLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitNumericLiteralTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumericLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumericLiteralTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitObjectExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectExpression, _], 
       _
     ]
   ] = js.undefined
   var visitObjectMethod: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod, _], 
       _
     ]
   ] = js.undefined
   var visitObjectPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectPattern, _], 
       _
     ]
   ] = js.undefined
   var visitObjectProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectProperty, _], 
       _
     ]
   ] = js.undefined
   var visitObjectTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitObjectTypeCallProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeCallProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeCallProperty, _], 
       _
     ]
   ] = js.undefined
   var visitObjectTypeIndexer: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeIndexer, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeIndexer, _], 
       _
     ]
   ] = js.undefined
   var visitObjectTypeInternalSlot: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeInternalSlot, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeInternalSlot, _], 
       _
     ]
   ] = js.undefined
   var visitObjectTypeProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeProperty, _], 
       _
     ]
   ] = js.undefined
   var visitObjectTypeSpreadProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeSpreadProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeSpreadProperty, _], 
       _
     ]
   ] = js.undefined
   var visitOpaqueType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.OpaqueType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.OpaqueType, _], 
       _
     ]
   ] = js.undefined
   var visitOptionalCallExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.OptionalCallExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.OptionalCallExpression, _], 
       _
     ]
   ] = js.undefined
   var visitOptionalMemberExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.OptionalMemberExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.OptionalMemberExpression, _], 
       _
     ]
   ] = js.undefined
   var visitParenthesizedExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ParenthesizedExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ParenthesizedExpression, _], 
       _
     ]
   ] = js.undefined
   var visitPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Pattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Pattern, _], 
       _
     ]
   ] = js.undefined
   var visitPosition: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Position, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Position, _], 
       _
     ]
   ] = js.undefined
   var visitPrintable: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Printable, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Printable, _], 
       _
     ]
   ] = js.undefined
   var visitPrivateName: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.PrivateName, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.PrivateName, _], 
       _
     ]
   ] = js.undefined
   var visitProgram: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Program, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Program, _], 
       _
     ]
   ] = js.undefined
   var visitProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Property, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Property, _], 
       _
     ]
   ] = js.undefined
   var visitPropertyPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.PropertyPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.PropertyPattern, _], 
       _
     ]
   ] = js.undefined
   var visitQualifiedTypeIdentifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.QualifiedTypeIdentifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.QualifiedTypeIdentifier, _], 
       _
     ]
   ] = js.undefined
   var visitRegExpLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RegExpLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.RegExpLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitRestElement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RestElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.RestElement, _], 
       _
     ]
   ] = js.undefined
   var visitRestProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RestProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.RestProperty, _], 
       _
     ]
   ] = js.undefined
   var visitReturnStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ReturnStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ReturnStatement, _], 
       _
     ]
   ] = js.undefined
   var visitSequenceExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SequenceExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SequenceExpression, _], 
       _
     ]
   ] = js.undefined
   var visitSourceLocation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SourceLocation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SourceLocation, _], 
       _
     ]
   ] = js.undefined
   var visitSpecifier: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Specifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Specifier, _], 
       _
     ]
   ] = js.undefined
   var visitSpreadElement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadElement, _], 
       _
     ]
   ] = js.undefined
   var visitSpreadElementPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadElementPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadElementPattern, _], 
       _
     ]
   ] = js.undefined
   var visitSpreadProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadProperty, _], 
       _
     ]
   ] = js.undefined
   var visitSpreadPropertyPattern: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadPropertyPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadPropertyPattern, _], 
       _
     ]
   ] = js.undefined
   var visitStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Statement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Statement, _], 
       _
     ]
   ] = js.undefined
   var visitStringLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.StringLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitStringLiteralTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.StringLiteralTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitStringTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.StringTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitSuper: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Super, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Super, _], 
       _
     ]
   ] = js.undefined
   var visitSwitchCase: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SwitchCase, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SwitchCase, _], 
       _
     ]
   ] = js.undefined
   var visitSwitchStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SwitchStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SwitchStatement, _], 
       _
     ]
   ] = js.undefined
   var visitTSAnyKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSAnyKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAnyKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSArrayType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSArrayType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSArrayType, _], 
       _
     ]
   ] = js.undefined
   var visitTSAsExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSAsExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAsExpression, _], 
       _
     ]
   ] = js.undefined
   var visitTSBigIntKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSBigIntKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSBigIntKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSBooleanKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSBooleanKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSBooleanKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSCallSignatureDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSCallSignatureDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSCallSignatureDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSConditionalType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConditionalType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConditionalType, _], 
       _
     ]
   ] = js.undefined
   var visitTSConstructSignatureDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructSignatureDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSConstructorType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConstructorType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructorType, _], 
       _
     ]
   ] = js.undefined
   var visitTSDeclareFunction: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSDeclareFunction, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction, _], 
       _
     ]
   ] = js.undefined
   var visitTSDeclareMethod: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSDeclareMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareMethod, _], 
       _
     ]
   ] = js.undefined
   var visitTSEnumDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSEnumDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSEnumDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSEnumMember: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSEnumMember, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSEnumMember, _], 
       _
     ]
   ] = js.undefined
   var visitTSExportAssignment: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExportAssignment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExportAssignment, _], 
       _
     ]
   ] = js.undefined
   var visitTSExpressionWithTypeArguments: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExpressionWithTypeArguments, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExpressionWithTypeArguments, _], 
       _
     ]
   ] = js.undefined
   var visitTSExternalModuleReference: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExternalModuleReference, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExternalModuleReference, _], 
       _
     ]
   ] = js.undefined
   var visitTSFunctionType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSFunctionType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSFunctionType, _], 
       _
     ]
   ] = js.undefined
   var visitTSHasOptionalTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSHasOptionalTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitTSHasOptionalTypeParameterInstantiation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeParameterInstantiation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[
+        astDashTypesLib.genNamedTypesMod.namedTypesNs.TSHasOptionalTypeParameterInstantiation, 
+        _
+      ], 
       _
     ]
   ] = js.undefined
   var visitTSHasOptionalTypeParameters: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeParameters, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSHasOptionalTypeParameters, _], 
       _
     ]
   ] = js.undefined
   var visitTSImportEqualsDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSImportEqualsDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportEqualsDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSImportType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSImportType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType, _], 
       _
     ]
   ] = js.undefined
   var visitTSIndexSignature: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIndexSignature, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexSignature, _], 
       _
     ]
   ] = js.undefined
   var visitTSIndexedAccessType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIndexedAccessType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexedAccessType, _], 
       _
     ]
   ] = js.undefined
   var visitTSInferType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInferType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInferType, _], 
       _
     ]
   ] = js.undefined
   var visitTSInterfaceBody: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInterfaceBody, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceBody, _], 
       _
     ]
   ] = js.undefined
   var visitTSInterfaceDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInterfaceDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSIntersectionType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIntersectionType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIntersectionType, _], 
       _
     ]
   ] = js.undefined
   var visitTSLiteralType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSLiteralType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSLiteralType, _], 
       _
     ]
   ] = js.undefined
   var visitTSMappedType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSMappedType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMappedType, _], 
       _
     ]
   ] = js.undefined
   var visitTSMethodSignature: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSMethodSignature, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMethodSignature, _], 
       _
     ]
   ] = js.undefined
   var visitTSModuleBlock: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSModuleBlock, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSModuleBlock, _], 
       _
     ]
   ] = js.undefined
   var visitTSModuleDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSModuleDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSModuleDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSNamespaceExportDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNamespaceExportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNamespaceExportDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSNeverKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNeverKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNeverKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSNonNullExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNonNullExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNonNullExpression, _], 
       _
     ]
   ] = js.undefined
   var visitTSNullKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNullKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNullKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSNumberKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNumberKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNumberKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSObjectKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSObjectKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSObjectKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSOptionalType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSOptionalType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSOptionalType, _], 
       _
     ]
   ] = js.undefined
   var visitTSParameterProperty: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSParameterProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSParameterProperty, _], 
       _
     ]
   ] = js.undefined
   var visitTSParenthesizedType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSParenthesizedType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSParenthesizedType, _], 
       _
     ]
   ] = js.undefined
   var visitTSPropertySignature: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSPropertySignature, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSPropertySignature, _], 
       _
     ]
   ] = js.undefined
   var visitTSQualifiedName: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSQualifiedName, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName, _], 
       _
     ]
   ] = js.undefined
   var visitTSRestType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSRestType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSRestType, _], 
       _
     ]
   ] = js.undefined
   var visitTSStringKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSStringKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSStringKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSSymbolKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSSymbolKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSSymbolKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSThisType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSThisType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSThisType, _], 
       _
     ]
   ] = js.undefined
   var visitTSTupleType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTupleType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTupleType, _], 
       _
     ]
   ] = js.undefined
   var visitTSType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSType, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeAliasDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAliasDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAliasDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeAssertion: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAssertion, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAssertion, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeOperator: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeOperator, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeOperator, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeParameter: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameter, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeParameterDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameterDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameterDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeParameterInstantiation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameterInstantiation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameterInstantiation, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypePredicate: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypePredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypePredicate, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeQuery: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeQuery, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery, _], 
       _
     ]
   ] = js.undefined
   var visitTSTypeReference: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeReference, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference, _], 
       _
     ]
   ] = js.undefined
   var visitTSUndefinedKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUndefinedKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUndefinedKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSUnionType: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUnionType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUnionType, _], 
       _
     ]
   ] = js.undefined
   var visitTSUnknownKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUnknownKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUnknownKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTSVoidKeyword: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSVoidKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSVoidKeyword, _], 
       _
     ]
   ] = js.undefined
   var visitTaggedTemplateExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TaggedTemplateExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TaggedTemplateExpression, _], 
       _
     ]
   ] = js.undefined
   var visitTemplateElement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TemplateElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TemplateElement, _], 
       _
     ]
   ] = js.undefined
   var visitTemplateLiteral: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TemplateLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TemplateLiteral, _], 
       _
     ]
   ] = js.undefined
   var visitThisExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThisExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ThisExpression, _], 
       _
     ]
   ] = js.undefined
   var visitThisTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThisTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ThisTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitThrowStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThrowStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ThrowStatement, _], 
       _
     ]
   ] = js.undefined
   var visitTryStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TryStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TryStatement, _], 
       _
     ]
   ] = js.undefined
   var visitTupleTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TupleTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TupleTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitTypeAlias: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeAlias, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAlias, _], 
       _
     ]
   ] = js.undefined
   var visitTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitTypeCastExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeCastExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeCastExpression, _], 
       _
     ]
   ] = js.undefined
   var visitTypeParameter: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameter, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameter, _], 
       _
     ]
   ] = js.undefined
   var visitTypeParameterDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameterDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameterDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitTypeParameterInstantiation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameterInstantiation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameterInstantiation, _], 
       _
     ]
   ] = js.undefined
   var visitTypeofTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeofTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeofTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitUnaryExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UnaryExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression, _], 
       _
     ]
   ] = js.undefined
   var visitUnionTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UnionTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.UnionTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitUpdateExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UpdateExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.UpdateExpression, _], 
       _
     ]
   ] = js.undefined
   var visitVariableDeclaration: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.VariableDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.VariableDeclaration, _], 
       _
     ]
   ] = js.undefined
   var visitVariableDeclarator: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.VariableDeclarator, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.VariableDeclarator, _], 
       _
     ]
   ] = js.undefined
   var visitVariance: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Variance, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Variance, _], 
       _
     ]
   ] = js.undefined
   var visitVoidTypeAnnotation: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.VoidTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.VoidTypeAnnotation, _], 
       _
     ]
   ] = js.undefined
   var visitWhileStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.WhileStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.WhileStatement, _], 
       _
     ]
   ] = js.undefined
   var visitWithStatement: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.WithStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.WithStatement, _], 
       _
     ]
   ] = js.undefined
   var visitYieldExpression: js.UndefOr[
     js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.YieldExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.YieldExpression, _], 
       _
     ]
   ] = js.undefined
@@ -1840,1272 +1843,1275 @@ object Visitor {
   def apply[M](
     visitAnyTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AnyTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AnyTypeAnnotation, _], 
       _
     ] = null,
     visitArrayExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrayExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayExpression, _], 
       _
     ] = null,
     visitArrayPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrayPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayPattern, _], 
       _
     ] = null,
     visitArrayTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrayTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrayTypeAnnotation, _], 
       _
     ] = null,
     visitArrowFunctionExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ArrowFunctionExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ArrowFunctionExpression, _], 
       _
     ] = null,
     visitAssignmentExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AssignmentExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AssignmentExpression, _], 
       _
     ] = null,
     visitAssignmentPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AssignmentPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AssignmentPattern, _], 
       _
     ] = null,
     visitAwaitExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.AwaitExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.AwaitExpression, _], 
       _
     ] = null,
     visitBigIntLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BigIntLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BigIntLiteral, _], 
       _
     ] = null,
     visitBinaryExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BinaryExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BinaryExpression, _], 
       _
     ] = null,
     visitBindExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BindExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BindExpression, _], 
       _
     ] = null,
     visitBlock: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Block, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Block, _], 
       _
     ] = null,
     visitBlockStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BlockStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BlockStatement, _], 
       _
     ] = null,
     visitBooleanLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BooleanLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanLiteral, _], 
       _
     ] = null,
     visitBooleanLiteralTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BooleanLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanLiteralTypeAnnotation, _], 
       _
     ] = null,
     visitBooleanTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BooleanTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BooleanTypeAnnotation, _], 
       _
     ] = null,
     visitBreakStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.BreakStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.BreakStatement, _], 
       _
     ] = null,
     visitCallExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CallExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CallExpression, _], 
       _
     ] = null,
     visitCatchClause: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CatchClause, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause, _], 
       _
     ] = null,
     visitClassBody: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassBody, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassBody, _], 
       _
     ] = null,
     visitClassDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassDeclaration, _], 
       _
     ] = null,
     visitClassExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression, _], 
       _
     ] = null,
     visitClassImplements: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassImplements, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassImplements, _], 
       _
     ] = null,
     visitClassMethod: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassMethod, _], 
       _
     ] = null,
     visitClassPrivateMethod: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassPrivateMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassPrivateMethod, _], 
       _
     ] = null,
     visitClassPrivateProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassPrivateProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassPrivateProperty, _], 
       _
     ] = null,
     visitClassProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassProperty, _], 
       _
     ] = null,
     visitClassPropertyDefinition: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ClassPropertyDefinition, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassPropertyDefinition, _], 
       _
     ] = null,
     visitComment: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Comment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Comment, _], 
       _
     ] = null,
     visitCommentBlock: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CommentBlock, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CommentBlock, _], 
       _
     ] = null,
     visitCommentLine: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.CommentLine, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.CommentLine, _], 
       _
     ] = null,
     visitComprehensionBlock: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ComprehensionBlock, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ComprehensionBlock, _], 
       _
     ] = null,
     visitComprehensionExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ComprehensionExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ComprehensionExpression, _], 
       _
     ] = null,
     visitConditionalExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ConditionalExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ConditionalExpression, _], 
       _
     ] = null,
     visitContinueStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ContinueStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ContinueStatement, _], 
       _
     ] = null,
     visitDebuggerStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DebuggerStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DebuggerStatement, _], 
       _
     ] = null,
     visitDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Declaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Declaration, _], 
       _
     ] = null,
     visitDeclareClass: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareClass, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareClass, _], 
       _
     ] = null,
     visitDeclareExportAllDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareExportAllDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareExportAllDeclaration, _], 
       _
     ] = null,
     visitDeclareExportDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareExportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareExportDeclaration, _], 
       _
     ] = null,
     visitDeclareFunction: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareFunction, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareFunction, _], 
       _
     ] = null,
     visitDeclareInterface: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareInterface, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareInterface, _], 
       _
     ] = null,
     visitDeclareModule: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareModule, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareModule, _], 
       _
     ] = null,
     visitDeclareModuleExports: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareModuleExports, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareModuleExports, _], 
       _
     ] = null,
     visitDeclareOpaqueType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareOpaqueType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareOpaqueType, _], 
       _
     ] = null,
     visitDeclareTypeAlias: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareTypeAlias, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareTypeAlias, _], 
       _
     ] = null,
     visitDeclareVariable: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclareVariable, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclareVariable, _], 
       _
     ] = null,
     visitDeclaredPredicate: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DeclaredPredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DeclaredPredicate, _], 
       _
     ] = null,
     visitDecorator: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Decorator, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Decorator, _], 
       _
     ] = null,
     visitDirective: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Directive, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Directive, _], 
       _
     ] = null,
     visitDirectiveLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DirectiveLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DirectiveLiteral, _], 
       _
     ] = null,
     visitDoExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DoExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DoExpression, _], 
       _
     ] = null,
     visitDoWhileStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.DoWhileStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.DoWhileStatement, _], 
       _
     ] = null,
     visitEmptyStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.EmptyStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.EmptyStatement, _], 
       _
     ] = null,
     visitEmptyTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.EmptyTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.EmptyTypeAnnotation, _], 
       _
     ] = null,
     visitExistentialTypeParam: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExistentialTypeParam, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExistentialTypeParam, _], 
       _
     ] = null,
     visitExistsTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExistsTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExistsTypeAnnotation, _], 
       _
     ] = null,
     visitExportAllDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportAllDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportAllDeclaration, _], 
       _
     ] = null,
     visitExportBatchSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportBatchSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportBatchSpecifier, _], 
       _
     ] = null,
     visitExportDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDeclaration, _], 
       _
     ] = null,
     visitExportDefaultDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportDefaultDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDefaultDeclaration, _], 
       _
     ] = null,
     visitExportDefaultSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportDefaultSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportDefaultSpecifier, _], 
       _
     ] = null,
     visitExportNamedDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportNamedDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamedDeclaration, _], 
       _
     ] = null,
     visitExportNamespaceSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportNamespaceSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamespaceSpecifier, _], 
       _
     ] = null,
     visitExportSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExportSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier, _], 
       _
     ] = null,
     visitExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Expression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Expression, _], 
       _
     ] = null,
     visitExpressionStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ExpressionStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ExpressionStatement, _], 
       _
     ] = null,
     visitFile: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.File, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.File, _], 
       _
     ] = null,
     visitFlow: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Flow, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Flow, _], 
       _
     ] = null,
     visitFlowPredicate: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FlowPredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FlowPredicate, _], 
       _
     ] = null,
     visitFlowType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FlowType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FlowType, _], 
       _
     ] = null,
     visitForAwaitStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForAwaitStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForAwaitStatement, _], 
       _
     ] = null,
     visitForInStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForInStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForInStatement, _], 
       _
     ] = null,
     visitForOfStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForOfStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForOfStatement, _], 
       _
     ] = null,
     visitForStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ForStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ForStatement, _], 
       _
     ] = null,
     visitFunction: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Function, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Function, _], 
       _
     ] = null,
     visitFunctionDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionDeclaration, _], 
       _
     ] = null,
     visitFunctionExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression, _], 
       _
     ] = null,
     visitFunctionTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionTypeAnnotation, _], 
       _
     ] = null,
     visitFunctionTypeParam: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.FunctionTypeParam, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionTypeParam, _], 
       _
     ] = null,
     visitGeneratorExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.GeneratorExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.GeneratorExpression, _], 
       _
     ] = null,
     visitGenericTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.GenericTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.GenericTypeAnnotation, _], 
       _
     ] = null,
     visitIdentifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Identifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Identifier, _], 
       _
     ] = null,
     visitIfStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.IfStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.IfStatement, _], 
       _
     ] = null,
     visitImport: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Import, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Import, _], 
       _
     ] = null,
     visitImportDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration, _], 
       _
     ] = null,
     visitImportDefaultSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportDefaultSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDefaultSpecifier, _], 
       _
     ] = null,
     visitImportNamespaceSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportNamespaceSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportNamespaceSpecifier, _], 
       _
     ] = null,
     visitImportSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ImportSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportSpecifier, _], 
       _
     ] = null,
     visitInferredPredicate: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InferredPredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InferredPredicate, _], 
       _
     ] = null,
     visitInterfaceDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterfaceDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceDeclaration, _], 
       _
     ] = null,
     visitInterfaceExtends: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterfaceExtends, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceExtends, _], 
       _
     ] = null,
     visitInterfaceTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterfaceTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterfaceTypeAnnotation, _], 
       _
     ] = null,
     visitInterpreterDirective: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.InterpreterDirective, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.InterpreterDirective, _], 
       _
     ] = null,
     visitIntersectionTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.IntersectionTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.IntersectionTypeAnnotation, _], 
       _
     ] = null,
     visitJSXAttribute: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXAttribute, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXAttribute, _], 
       _
     ] = null,
     visitJSXClosingElement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXClosingElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXClosingElement, _], 
       _
     ] = null,
     visitJSXClosingFragment: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXClosingFragment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXClosingFragment, _], 
       _
     ] = null,
     visitJSXElement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXElement, _], 
       _
     ] = null,
     visitJSXEmptyExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXEmptyExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXEmptyExpression, _], 
       _
     ] = null,
     visitJSXExpressionContainer: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXExpressionContainer, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXExpressionContainer, _], 
       _
     ] = null,
     visitJSXFragment: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXFragment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXFragment, _], 
       _
     ] = null,
     visitJSXIdentifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXIdentifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXIdentifier, _], 
       _
     ] = null,
     visitJSXMemberExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXMemberExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXMemberExpression, _], 
       _
     ] = null,
     visitJSXNamespacedName: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXNamespacedName, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXNamespacedName, _], 
       _
     ] = null,
     visitJSXOpeningElement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXOpeningElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXOpeningElement, _], 
       _
     ] = null,
     visitJSXOpeningFragment: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXOpeningFragment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXOpeningFragment, _], 
       _
     ] = null,
     visitJSXSpreadAttribute: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXSpreadAttribute, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXSpreadAttribute, _], 
       _
     ] = null,
     visitJSXSpreadChild: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXSpreadChild, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXSpreadChild, _], 
       _
     ] = null,
     visitJSXText: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.JSXText, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.JSXText, _], 
       _
     ] = null,
     visitLabeledStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.LabeledStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.LabeledStatement, _], 
       _
     ] = null,
     visitLine: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Line, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Line, _], 
       _
     ] = null,
     visitLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Literal, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Literal, _], 
       _
     ] = null,
     visitLogicalExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.LogicalExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression, _], 
       _
     ] = null,
     visitMemberExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MemberExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MemberExpression, _], 
       _
     ] = null,
     visitMemberTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MemberTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MemberTypeAnnotation, _], 
       _
     ] = null,
     visitMetaProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MetaProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MetaProperty, _], 
       _
     ] = null,
     visitMethodDefinition: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MethodDefinition, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MethodDefinition, _], 
       _
     ] = null,
     visitMixedTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.MixedTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.MixedTypeAnnotation, _], 
       _
     ] = null,
     visitModuleSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ModuleSpecifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ModuleSpecifier, _], 
       _
     ] = null,
     visitNewExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NewExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NewExpression, _], 
       _
     ] = null,
     visitNode: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Node, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Node, _], 
       _
     ] = null,
     visitNoop: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Noop, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Noop, _], 
       _
     ] = null,
     visitNullLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullLiteral, _], 
       _
     ] = null,
     visitNullLiteralTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullLiteralTypeAnnotation, _], 
       _
     ] = null,
     visitNullTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullTypeAnnotation, _], 
       _
     ] = null,
     visitNullableTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NullableTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NullableTypeAnnotation, _], 
       _
     ] = null,
     visitNumberLiteralTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumberLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumberLiteralTypeAnnotation, _], 
       _
     ] = null,
     visitNumberTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumberTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumberTypeAnnotation, _], 
       _
     ] = null,
     visitNumericLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumericLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumericLiteral, _], 
       _
     ] = null,
     visitNumericLiteralTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.NumericLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.NumericLiteralTypeAnnotation, _], 
       _
     ] = null,
     visitObjectExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectExpression, _], 
       _
     ] = null,
     visitObjectMethod: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectMethod, _], 
       _
     ] = null,
     visitObjectPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectPattern, _], 
       _
     ] = null,
     visitObjectProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectProperty, _], 
       _
     ] = null,
     visitObjectTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeAnnotation, _], 
       _
     ] = null,
     visitObjectTypeCallProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeCallProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeCallProperty, _], 
       _
     ] = null,
     visitObjectTypeIndexer: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeIndexer, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeIndexer, _], 
       _
     ] = null,
     visitObjectTypeInternalSlot: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeInternalSlot, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeInternalSlot, _], 
       _
     ] = null,
     visitObjectTypeProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeProperty, _], 
       _
     ] = null,
     visitObjectTypeSpreadProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ObjectTypeSpreadProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ObjectTypeSpreadProperty, _], 
       _
     ] = null,
     visitOpaqueType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.OpaqueType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.OpaqueType, _], 
       _
     ] = null,
     visitOptionalCallExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.OptionalCallExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.OptionalCallExpression, _], 
       _
     ] = null,
     visitOptionalMemberExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.OptionalMemberExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.OptionalMemberExpression, _], 
       _
     ] = null,
     visitParenthesizedExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ParenthesizedExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ParenthesizedExpression, _], 
       _
     ] = null,
     visitPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Pattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Pattern, _], 
       _
     ] = null,
     visitPosition: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Position, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Position, _], 
       _
     ] = null,
     visitPrintable: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Printable, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Printable, _], 
       _
     ] = null,
     visitPrivateName: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.PrivateName, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.PrivateName, _], 
       _
     ] = null,
     visitProgram: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Program, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Program, _], 
       _
     ] = null,
     visitProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Property, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Property, _], 
       _
     ] = null,
     visitPropertyPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.PropertyPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.PropertyPattern, _], 
       _
     ] = null,
     visitQualifiedTypeIdentifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.QualifiedTypeIdentifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.QualifiedTypeIdentifier, _], 
       _
     ] = null,
     visitRegExpLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RegExpLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.RegExpLiteral, _], 
       _
     ] = null,
     visitRestElement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RestElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.RestElement, _], 
       _
     ] = null,
     visitRestProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.RestProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.RestProperty, _], 
       _
     ] = null,
     visitReturnStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ReturnStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ReturnStatement, _], 
       _
     ] = null,
     visitSequenceExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SequenceExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SequenceExpression, _], 
       _
     ] = null,
     visitSourceLocation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SourceLocation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SourceLocation, _], 
       _
     ] = null,
     visitSpecifier: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Specifier, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Specifier, _], 
       _
     ] = null,
     visitSpreadElement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadElement, _], 
       _
     ] = null,
     visitSpreadElementPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadElementPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadElementPattern, _], 
       _
     ] = null,
     visitSpreadProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadProperty, _], 
       _
     ] = null,
     visitSpreadPropertyPattern: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SpreadPropertyPattern, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadPropertyPattern, _], 
       _
     ] = null,
     visitStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Statement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Statement, _], 
       _
     ] = null,
     visitStringLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.StringLiteral, _], 
       _
     ] = null,
     visitStringLiteralTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringLiteralTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.StringLiteralTypeAnnotation, _], 
       _
     ] = null,
     visitStringTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.StringTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.StringTypeAnnotation, _], 
       _
     ] = null,
     visitSuper: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.Super, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.Super, _], 
       _
     ] = null,
     visitSwitchCase: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SwitchCase, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SwitchCase, _], 
       _
     ] = null,
     visitSwitchStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.SwitchStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.SwitchStatement, _], 
       _
     ] = null,
     visitTSAnyKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSAnyKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAnyKeyword, _], 
       _
     ] = null,
     visitTSArrayType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSArrayType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSArrayType, _], 
       _
     ] = null,
     visitTSAsExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSAsExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSAsExpression, _], 
       _
     ] = null,
     visitTSBigIntKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSBigIntKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSBigIntKeyword, _], 
       _
     ] = null,
     visitTSBooleanKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSBooleanKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSBooleanKeyword, _], 
       _
     ] = null,
     visitTSCallSignatureDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSCallSignatureDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSCallSignatureDeclaration, _], 
       _
     ] = null,
     visitTSConditionalType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConditionalType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConditionalType, _], 
       _
     ] = null,
     visitTSConstructSignatureDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructSignatureDeclaration, _], 
       _
     ] = null,
     visitTSConstructorType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSConstructorType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructorType, _], 
       _
     ] = null,
     visitTSDeclareFunction: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSDeclareFunction, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction, _], 
       _
     ] = null,
     visitTSDeclareMethod: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSDeclareMethod, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareMethod, _], 
       _
     ] = null,
     visitTSEnumDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSEnumDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSEnumDeclaration, _], 
       _
     ] = null,
     visitTSEnumMember: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSEnumMember, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSEnumMember, _], 
       _
     ] = null,
     visitTSExportAssignment: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExportAssignment, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExportAssignment, _], 
       _
     ] = null,
     visitTSExpressionWithTypeArguments: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExpressionWithTypeArguments, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExpressionWithTypeArguments, _], 
       _
     ] = null,
     visitTSExternalModuleReference: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSExternalModuleReference, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSExternalModuleReference, _], 
       _
     ] = null,
     visitTSFunctionType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSFunctionType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSFunctionType, _], 
       _
     ] = null,
     visitTSHasOptionalTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSHasOptionalTypeAnnotation, _], 
       _
     ] = null,
     visitTSHasOptionalTypeParameterInstantiation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeParameterInstantiation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[
+        astDashTypesLib.genNamedTypesMod.namedTypesNs.TSHasOptionalTypeParameterInstantiation, 
+        _
+      ], 
       _
     ] = null,
     visitTSHasOptionalTypeParameters: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSHasOptionalTypeParameters, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSHasOptionalTypeParameters, _], 
       _
     ] = null,
     visitTSImportEqualsDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSImportEqualsDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportEqualsDeclaration, _], 
       _
     ] = null,
     visitTSImportType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSImportType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType, _], 
       _
     ] = null,
     visitTSIndexSignature: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIndexSignature, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexSignature, _], 
       _
     ] = null,
     visitTSIndexedAccessType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIndexedAccessType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexedAccessType, _], 
       _
     ] = null,
     visitTSInferType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInferType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInferType, _], 
       _
     ] = null,
     visitTSInterfaceBody: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInterfaceBody, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceBody, _], 
       _
     ] = null,
     visitTSInterfaceDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSInterfaceDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSInterfaceDeclaration, _], 
       _
     ] = null,
     visitTSIntersectionType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSIntersectionType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIntersectionType, _], 
       _
     ] = null,
     visitTSLiteralType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSLiteralType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSLiteralType, _], 
       _
     ] = null,
     visitTSMappedType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSMappedType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMappedType, _], 
       _
     ] = null,
     visitTSMethodSignature: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSMethodSignature, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSMethodSignature, _], 
       _
     ] = null,
     visitTSModuleBlock: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSModuleBlock, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSModuleBlock, _], 
       _
     ] = null,
     visitTSModuleDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSModuleDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSModuleDeclaration, _], 
       _
     ] = null,
     visitTSNamespaceExportDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNamespaceExportDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNamespaceExportDeclaration, _], 
       _
     ] = null,
     visitTSNeverKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNeverKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNeverKeyword, _], 
       _
     ] = null,
     visitTSNonNullExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNonNullExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNonNullExpression, _], 
       _
     ] = null,
     visitTSNullKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNullKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNullKeyword, _], 
       _
     ] = null,
     visitTSNumberKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSNumberKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSNumberKeyword, _], 
       _
     ] = null,
     visitTSObjectKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSObjectKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSObjectKeyword, _], 
       _
     ] = null,
     visitTSOptionalType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSOptionalType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSOptionalType, _], 
       _
     ] = null,
     visitTSParameterProperty: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSParameterProperty, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSParameterProperty, _], 
       _
     ] = null,
     visitTSParenthesizedType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSParenthesizedType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSParenthesizedType, _], 
       _
     ] = null,
     visitTSPropertySignature: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSPropertySignature, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSPropertySignature, _], 
       _
     ] = null,
     visitTSQualifiedName: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSQualifiedName, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSQualifiedName, _], 
       _
     ] = null,
     visitTSRestType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSRestType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSRestType, _], 
       _
     ] = null,
     visitTSStringKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSStringKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSStringKeyword, _], 
       _
     ] = null,
     visitTSSymbolKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSSymbolKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSSymbolKeyword, _], 
       _
     ] = null,
     visitTSThisType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSThisType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSThisType, _], 
       _
     ] = null,
     visitTSTupleType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTupleType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTupleType, _], 
       _
     ] = null,
     visitTSType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSType, _], 
       _
     ] = null,
     visitTSTypeAliasDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAliasDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAliasDeclaration, _], 
       _
     ] = null,
     visitTSTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAnnotation, _], 
       _
     ] = null,
     visitTSTypeAssertion: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeAssertion, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAssertion, _], 
       _
     ] = null,
     visitTSTypeLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeLiteral, _], 
       _
     ] = null,
     visitTSTypeOperator: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeOperator, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeOperator, _], 
       _
     ] = null,
     visitTSTypeParameter: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameter, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter, _], 
       _
     ] = null,
     visitTSTypeParameterDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameterDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameterDeclaration, _], 
       _
     ] = null,
     visitTSTypeParameterInstantiation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeParameterInstantiation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameterInstantiation, _], 
       _
     ] = null,
     visitTSTypePredicate: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypePredicate, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypePredicate, _], 
       _
     ] = null,
     visitTSTypeQuery: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeQuery, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery, _], 
       _
     ] = null,
     visitTSTypeReference: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSTypeReference, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeReference, _], 
       _
     ] = null,
     visitTSUndefinedKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUndefinedKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUndefinedKeyword, _], 
       _
     ] = null,
     visitTSUnionType: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUnionType, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUnionType, _], 
       _
     ] = null,
     visitTSUnknownKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSUnknownKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSUnknownKeyword, _], 
       _
     ] = null,
     visitTSVoidKeyword: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TSVoidKeyword, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TSVoidKeyword, _], 
       _
     ] = null,
     visitTaggedTemplateExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TaggedTemplateExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TaggedTemplateExpression, _], 
       _
     ] = null,
     visitTemplateElement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TemplateElement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TemplateElement, _], 
       _
     ] = null,
     visitTemplateLiteral: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TemplateLiteral, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TemplateLiteral, _], 
       _
     ] = null,
     visitThisExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThisExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ThisExpression, _], 
       _
     ] = null,
     visitThisTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThisTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ThisTypeAnnotation, _], 
       _
     ] = null,
     visitThrowStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.ThrowStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.ThrowStatement, _], 
       _
     ] = null,
     visitTryStatement: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TryStatement, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TryStatement, _], 
       _
     ] = null,
     visitTupleTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TupleTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TupleTypeAnnotation, _], 
       _
     ] = null,
     visitTypeAlias: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeAlias, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAlias, _], 
       _
     ] = null,
     visitTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeAnnotation, _], 
       _
     ] = null,
     visitTypeCastExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeCastExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeCastExpression, _], 
       _
     ] = null,
     visitTypeParameter: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameter, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameter, _], 
       _
     ] = null,
     visitTypeParameterDeclaration: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameterDeclaration, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameterDeclaration, _], 
       _
     ] = null,
     visitTypeParameterInstantiation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeParameterInstantiation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameterInstantiation, _], 
       _
     ] = null,
     visitTypeofTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.TypeofTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeofTypeAnnotation, _], 
       _
     ] = null,
     visitUnaryExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UnaryExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression, _], 
       _
     ] = null,
     visitUnionTypeAnnotation: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UnionTypeAnnotation, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.UnionTypeAnnotation, _], 
       _
     ] = null,
     visitUpdateExpression: js.ThisFunction1[
       /* this */ astDashTypesLib.libPathDashVisitorMod.Context with M, 
-      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNodesMod.UpdateExpression, _], 
+      /* path */ astDashTypesLib.libNodeDashPathMod.NodePath[astDashTypesLib.genNamedTypesMod.namedTypesNs.UpdateExpression, _], 
       _
     ] = null
   ): Visitor[M] = {

@@ -12,6 +12,7 @@ trait OnResponseStartedDetails extends js.Object {
   var fromCache: scala.Boolean
   var id: scala.Double
   var method: java.lang.String
+  var referrer: java.lang.String
   var resourceType: java.lang.String
   var responseHeaders: ResponseHeaders
   var statusCode: scala.Double
@@ -27,6 +28,7 @@ object OnResponseStartedDetails {
     fromCache: scala.Boolean,
     id: scala.Double,
     method: java.lang.String,
+    referrer: java.lang.String,
     resourceType: java.lang.String,
     responseHeaders: ResponseHeaders,
     statusCode: scala.Double,
@@ -35,7 +37,7 @@ object OnResponseStartedDetails {
     url: java.lang.String,
     webContentsId: scala.Int | scala.Double = null
   ): OnResponseStartedDetails = {
-    val __obj = js.Dynamic.literal(fromCache = fromCache, id = id, method = method, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, statusLine = statusLine, timestamp = timestamp, url = url)
+    val __obj = js.Dynamic.literal(fromCache = fromCache, id = id, method = method, referrer = referrer, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, statusLine = statusLine, timestamp = timestamp, url = url)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnResponseStartedDetails]
   }

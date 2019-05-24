@@ -110,12 +110,10 @@ trait GridProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapGridClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | (reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]])
+    java.lang.String | reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.OmitGridPropsStrippedProps]
   ] = js.undefined
   var container: js.UndefOr[scala.Boolean] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -391,9 +389,9 @@ object GridProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapGridClassKey = null,
     color: java.lang.String = null,
-    component: java.lang.String | (reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]]) = null,
+    component: java.lang.String | reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.OmitGridPropsStrippedProps] = null,
     container: js.UndefOr[scala.Boolean] = js.undefined,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

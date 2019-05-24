@@ -10,7 +10,7 @@ trait TSTypeAssertionBuilder extends js.Object {
   def apply(
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
     expression: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.TSTypeAssertion = js.native
-  def from(params: astDashTypesLib.Anon_CommentsExpressionExtra): astDashTypesLib.genNodesMod.TSTypeAssertion = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAssertion = js.native
+  def from(params: astDashTypesLib.Anon_CommentsExpressionExtra): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeAssertion = js.native
 }
 

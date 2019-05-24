@@ -15,8 +15,6 @@ abstract class Session protected ()
   var contact: js.UndefOr[java.lang.String] = js.native
   var contentType: java.lang.String = js.native
   var data: js.Any = js.native
-  var dialog: js.UndefOr[sipDotJsLib.libDialogsMod.Dialog] = js.native
-  var earlyDialogs: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var earlySdp: js.UndefOr[java.lang.String] = js.native
   var endTime: js.UndefOr[stdLib.Date] = js.native
   var fromTag: js.UndefOr[java.lang.String] = js.native
@@ -35,7 +33,6 @@ abstract class Session protected ()
   var onInfo: js.UndefOr[
     js.Function1[/* request */ sipDotJsLib.libSIPMessageMod.IncomingRequest, scala.Unit]
   ] = js.native
-  var originalReceiveRequest: js.Any = js.native
   var passedOptions: js.Any = js.native
   var pendingReinvite: js.Any = js.native
   var referContext: js.Any = js.native
@@ -44,6 +41,7 @@ abstract class Session protected ()
   var renderbody: js.UndefOr[java.lang.String] = js.native
   var rendertype: js.UndefOr[java.lang.String] = js.native
   var replacee: js.UndefOr[InviteClientContext | InviteServerContext] = js.native
+  var session: js.UndefOr[sipDotJsLib.libCoreSessionSessionMod.Session] = js.native
   var sessionDescriptionHandler: js.UndefOr[sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler] = js.native
   @JSName("sessionDescriptionHandlerFactory")
   var sessionDescriptionHandlerFactory_Original: sipDotJsLib.libSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactory = js.native
@@ -51,17 +49,9 @@ abstract class Session protected ()
   var startTime: js.UndefOr[stdLib.Date] = js.native
   var status: sipDotJsLib.libEnumsMod.SessionStatus = js.native
   var timers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  var toTag: js.Any = js.native
   var tones: js.Any = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
   var ua: sipDotJsLib.libUAMod.UA = js.native
-  /* protected */ def acceptAndTerminate(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): Session = js.native
-  /* protected */ def acceptAndTerminate(response: sipDotJsLib.libSIPMessageMod.IncomingResponse, statusCode: scala.Double): Session = js.native
-  /* protected */ def acceptAndTerminate(
-    response: sipDotJsLib.libSIPMessageMod.IncomingResponse,
-    statusCode: scala.Double,
-    reasonPhrase: java.lang.String
-  ): Session = js.native
   /* protected */ def accepted(): this.type = js.native
   /* protected */ def accepted(response: java.lang.String): this.type = js.native
   /* protected */ def accepted(response: java.lang.String, cause: java.lang.String): this.type = js.native
@@ -72,38 +62,6 @@ abstract class Session protected ()
   /* protected */ def canceled(): this.type = js.native
   def close(): this.type = js.native
   /* protected */ def connecting(request: sipDotJsLib.libSIPMessageMod.IncomingRequest): this.type = js.native
-  @JSName("createDialog")
-  def createDialog_UAC(message: sipDotJsLib.libSIPMessageMod.IncomingRequest, `type`: sipDotJsLib.sipDotJsLibStrings.UAC): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAC(
-    message: sipDotJsLib.libSIPMessageMod.IncomingRequest,
-    `type`: sipDotJsLib.sipDotJsLibStrings.UAC,
-    early: scala.Boolean
-  ): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAC(message: sipDotJsLib.libSIPMessageMod.IncomingResponse, `type`: sipDotJsLib.sipDotJsLibStrings.UAC): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAC(
-    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
-    `type`: sipDotJsLib.sipDotJsLibStrings.UAC,
-    early: scala.Boolean
-  ): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAS(message: sipDotJsLib.libSIPMessageMod.IncomingRequest, `type`: sipDotJsLib.sipDotJsLibStrings.UAS): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAS(
-    message: sipDotJsLib.libSIPMessageMod.IncomingRequest,
-    `type`: sipDotJsLib.sipDotJsLibStrings.UAS,
-    early: scala.Boolean
-  ): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAS(message: sipDotJsLib.libSIPMessageMod.IncomingResponse, `type`: sipDotJsLib.sipDotJsLibStrings.UAS): scala.Boolean = js.native
-  @JSName("createDialog")
-  def createDialog_UAS(
-    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
-    `type`: sipDotJsLib.sipDotJsLibStrings.UAS,
-    early: scala.Boolean
-  ): scala.Boolean = js.native
   def dtmf(tones: java.lang.String): this.type = js.native
   def dtmf(tones: java.lang.String, options: sipDotJsLib.libSessionMod.SessionNs.DtmfOptions): this.type = js.native
   def dtmf(tones: scala.Double): this.type = js.native
@@ -122,6 +80,7 @@ abstract class Session protected ()
     event: sipDotJsLib.sipDotJsLibStrings.referInviteSent | sipDotJsLib.sipDotJsLibStrings.referProgress | sipDotJsLib.sipDotJsLibStrings.referAccepted | sipDotJsLib.sipDotJsLibStrings.referRejected | sipDotJsLib.sipDotJsLibStrings.referRequestProgress | sipDotJsLib.sipDotJsLibStrings.referRequestAccepted | sipDotJsLib.sipDotJsLibStrings.referRequestRejected | sipDotJsLib.sipDotJsLibStrings.reinvite | sipDotJsLib.sipDotJsLibStrings.reinviteAccepted | sipDotJsLib.sipDotJsLibStrings.reinviteFailed | sipDotJsLib.sipDotJsLibStrings.replaced,
     listener: js.Function1[/* session */ this.type, scala.Unit]
   ): this.type = js.native
+  /* protected */ def onAck(incomingRequest: sipDotJsLib.libCoreMessagesMethodsAckMod.IncomingAckRequest): scala.Unit = js.native
   def onDialogError(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
   def onRequestTimeout(): scala.Unit = js.native
   def onTransportError(): scala.Unit = js.native
@@ -197,16 +156,12 @@ abstract class Session protected ()
   @JSName("on")
   def on_progress(
     event: sipDotJsLib.sipDotJsLibStrings.progress,
-    listener: js.Function2[
-      /* response */ sipDotJsLib.libSIPMessageMod.IncomingRequest, 
-      /* reasonPhrase */ js.UndefOr[js.Any], 
-      scala.Unit
-    ]
+    listener: js.Function2[/* response */ java.lang.String, /* reasonPhrase */ js.UndefOr[js.Any], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_referRequested(
     event: sipDotJsLib.sipDotJsLibStrings.referRequested,
-    listener: js.Function1[/* context */ ReferServerContext, scala.Unit]
+    listener: js.Function1[/* context */ sipDotJsLib.libReferContextMod.ReferServerContext, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_rejected(
@@ -233,16 +188,14 @@ abstract class Session protected ()
   ): this.type = js.native
   @JSName("on")
   def on_trackAdded(event: sipDotJsLib.sipDotJsLibStrings.trackAdded, listener: js.Function0[scala.Unit]): this.type = js.native
-  /* protected */ def receiveNonInviteResponse(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
-  /* protected */ def receiveReinvite(request: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
-  /* protected */ def receiveReinviteResponse(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
-  def receiveRequest(request: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
-  def refer(target: java.lang.String): ReferClientContext = js.native
-  def refer(target: java.lang.String, options: js.Any): ReferClientContext = js.native
-  def refer(target: InviteClientContext): ReferClientContext = js.native
-  def refer(target: InviteClientContext, options: js.Any): ReferClientContext = js.native
-  def refer(target: InviteServerContext): ReferClientContext = js.native
-  def refer(target: InviteServerContext, options: js.Any): ReferClientContext = js.native
+  /* protected */ def receiveReinvite(incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest): scala.Unit = js.native
+  /* protected */ def receiveRequest(incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest): scala.Unit = js.native
+  def refer(target: java.lang.String): sipDotJsLib.libReferContextMod.ReferClientContext = js.native
+  def refer(target: java.lang.String, options: js.Any): sipDotJsLib.libReferContextMod.ReferClientContext = js.native
+  def refer(target: InviteClientContext): sipDotJsLib.libReferContextMod.ReferClientContext = js.native
+  def refer(target: InviteClientContext, options: js.Any): sipDotJsLib.libReferContextMod.ReferClientContext = js.native
+  def refer(target: InviteServerContext): sipDotJsLib.libReferContextMod.ReferClientContext = js.native
+  def refer(target: InviteServerContext, options: js.Any): sipDotJsLib.libReferContextMod.ReferClientContext = js.native
   def reinvite(): scala.Unit = js.native
   def reinvite(options: js.Any): scala.Unit = js.native
   def reinvite(
@@ -253,6 +206,11 @@ abstract class Session protected ()
   /* protected */ def rejected(response: sipDotJsLib.libSIPMessageMod.IncomingResponse, cause: java.lang.String): this.type = js.native
   /* protected */ def sendReinvite(): scala.Unit = js.native
   /* protected */ def sendReinvite(options: js.Any): scala.Unit = js.native
+  /**
+    * Sends in dialog request.
+    * @param method Request method.
+    * @param options Options bucket.
+    */
   def sendRequest(method: java.lang.String): this.type = js.native
   def sendRequest(method: java.lang.String, options: js.Any): this.type = js.native
   /* protected */ def sessionDescriptionHandlerFactory(session: InviteClientContext): sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler = js.native
@@ -265,18 +223,6 @@ abstract class Session protected ()
     session: InviteServerContext,
     options: sipDotJsLib.libSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactoryOptions
   ): sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler = js.native
-  /**
-    * RFC3261 14.2
-    * If a UAS generates a 2xx response and never receives an ACK,
-    * it SHOULD generate a BYE to terminate the dialog.
-    */
-  /* protected */ def setACKTimer(): scala.Unit = js.native
-  /**
-    * RFC3261 13.3.1.4
-    * Response retransmissions cannot be accomplished by transaction layer
-    *  since it is destroyed when receiving the first 2xx answer
-    */
-  /* protected */ def setInvite2xxTimer(request: sipDotJsLib.libSIPMessageMod.IncomingRequest, description: java.lang.String): scala.Unit = js.native
   def terminate(): this.type = js.native
   def terminate(options: js.Any): this.type = js.native
   /* protected */ def terminated(): this.type = js.native

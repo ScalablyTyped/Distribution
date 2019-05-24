@@ -108,9 +108,7 @@ trait ListItemIconProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: reactLib.reactMod.ReactElement[_]
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ListItemIconClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapListItemIconClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -372,7 +370,7 @@ object ListItemIconProps {
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ListItemIconClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapListItemIconClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

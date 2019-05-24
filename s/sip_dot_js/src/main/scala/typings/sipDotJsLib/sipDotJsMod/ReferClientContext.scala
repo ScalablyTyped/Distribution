@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "ReferClientContext")
 @js.native
 class ReferClientContext protected ()
-  extends sipDotJsLib.libSessionMod.ReferClientContext {
+  extends sipDotJsLib.libReferContextMod.ReferClientContext {
   def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: sipDotJsLib.libSessionMod.InviteClientContext) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, applicant: sipDotJsLib.libSessionMod.InviteClientContext, target: sipDotJsLib.libSessionMod.InviteServerContext) = this()

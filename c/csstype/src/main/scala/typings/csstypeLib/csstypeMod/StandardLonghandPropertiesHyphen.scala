@@ -442,7 +442,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **41**  |   No   |  No  | No  |
+    * | **69** | **41**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-style
     */
@@ -1114,10 +1114,10 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |  Chrome  | Firefox | Safari | Edge | IE  |
-    * | :------: | :-----: | :----: | :--: | :-: |
-    * |  **55**  | **3.5** |   No   |  No  | No  |
-    * | 24 _-x-_ |         |        |      |     |
+    * |  Chrome  | Firefox | Safari |  Edge  | IE  |
+    * | :------: | :-----: | :----: | :----: | :-: |
+    * |  **55**  | **3.5** |   No   | **15** | Yes |
+    * | 24 _-x-_ |         |        |        |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/clip-path
     */
@@ -1166,7 +1166,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox  | Safari |  Edge  | IE  |
     * | :----: | :------: | :----: | :----: | :-: |
-    * |  Yes   |  **52**  |  n/a   | **12** | n/a |
+    * | **50** |  **52**  |  n/a   | **12** | n/a |
     * |        | 13 _-x-_ |        |        |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-fill
@@ -1238,10 +1238,10 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome |  Firefox  |   Safari    |     Edge     |   IE   |
-    * | :----: | :-------: | :---------: | :----------: | :----: |
-    * | **50** |  **50**   | **3** _-x-_ | **12** _-x-_ | **10** |
-    * |        | 3.5 _-x-_ |             |              |        |
+    * | Chrome |  Firefox  |   Safari    |  Edge  |   IE   |
+    * | :----: | :-------: | :---------: | :----: | :----: |
+    * | **50** |  **50**   | **3** _-x-_ | **12** | **10** |
+    * |        | 3.5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-width
     */
@@ -1278,7 +1278,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **52** |   n/a   |  n/a   | n/a  | n/a |
+    * | **52** |   n/a   |   No   |  No  | n/a |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/contain
     */
@@ -1300,9 +1300,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge |  IE   |
-    * | :----: | :-----: | :----: | :--: | :---: |
-    * | **2**  |  **1**  | **3**  | n/a  | **8** |
+    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
+    * | :----: | :-----: | :-----: | :----: | :---: |
+    * | **2**  |  **1**  | **3.1** | **12** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/counter-increment
     */
@@ -1512,9 +1512,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **62**  |  n/a   | n/a  | No  |
+    * | Chrome | Firefox | Safari |  Edge  | IE  |
+    * | :----: | :-----: | :----: | :----: | :-: |
+    * |   No   | **62**  |  n/a   | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-optical-sizing
     */
@@ -1842,7 +1842,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **26**  |   No   | n/a  | No  |
+    * |   No   | **26**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/image-orientation
     */
@@ -1868,7 +1868,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   No    | **9**  | n/a  | No  |
+    * |   No   |   No    | **9**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/initial-letter
     */
@@ -1886,13 +1886,37 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     */
   var `inline-size`: js.UndefOr[InlineSizeProperty[TLength]] = js.undefined
   /**
+    * The **`inset`** CSS property defines the logical block and inline start and end offsets of an element, which map to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/inset
+    */
+  var inset: js.UndefOr[InsetProperty[TLength]] = js.undefined
+  /**
+    * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **63**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/inset-block
+    */
+  var `inset-block`: js.UndefOr[InsetBlockProperty[TLength]] = js.undefined
+  /**
     * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **63**  |   No   | n/a  | No  |
+    * |  n/a   | **63**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/inset-block-end
     */
@@ -1904,11 +1928,23 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **63**  |   No   | n/a  | No  |
+    * |  n/a   | **63**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/inset-block-start
     */
   var `inset-block-start`: js.UndefOr[InsetBlockStartProperty[TLength]] = js.undefined
+  /**
+    * The **`inset-inline`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **63**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/inset-inline
+    */
+  var `inset-inline`: js.UndefOr[InsetInlineProperty[TLength]] = js.undefined
   /**
     * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
@@ -1916,7 +1952,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **63**  |   No   | n/a  | No  |
+    * |  n/a   | **63**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/inset-inline-end
     */
@@ -1928,7 +1964,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **63**  |   No   | n/a  | No  |
+    * |  n/a   | **63**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/inset-inline-start
     */
@@ -2080,7 +2116,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   n/a   |  n/a   | n/a  | n/a |
+    * |  n/a   |   No    |   No   |  No  | n/a |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/line-height-step
     */
@@ -2286,7 +2322,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **53**  |  Yes   | n/a  | No  |
+    * |  Yes   | **53**  |  Yes   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-clip
     */
@@ -2322,7 +2358,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **53**  |   No   | n/a  | No  |
+    * |   No   | **53**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-mode
     */
@@ -2334,7 +2370,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **53**  |  Yes   | n/a  | n/a |
+    * |  Yes   | **53**  |  Yes   |  No  | n/a |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-origin
     */
@@ -2370,7 +2406,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * |  n/a   | **53**  |  n/a   | **17** | n/a |
+    * |   No   | **53**  |   No   | **17** | n/a |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-size
     */
@@ -2382,7 +2418,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **24** | **35**  |  n/a   | n/a  | n/a |
+    * | **24** | **35**  |  n/a   |  No  | n/a |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-type
     */
@@ -2406,7 +2442,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **7** |
+    * | **18** |  **1**  | **1**  | **12** | **7** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/max-height
     */
@@ -2504,7 +2540,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   n/a   |  n/a   | n/a  | n/a |
+    * |         **55**         |   No    |   No   |  No  | n/a |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2517,7 +2553,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |  n/a   | n/a  | n/a |
+    * |       **55**       |   n/a   |   No   |  No  | n/a |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
@@ -2530,7 +2566,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
+    * |         **56**         |   No    |   No   |  No  | n/a |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2569,7 +2605,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   n/a   |  n/a   | n/a  | n/a |
+    * |         **55**         |   No    |   No   |  No  | n/a |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2582,7 +2618,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |  n/a   | n/a  | n/a |
+    * |       **55**       |   n/a   |   No   |  No  | n/a |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
@@ -2597,7 +2633,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
+    * |         **56**         |   No    |   No   |  No  | n/a |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2610,7 +2646,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
+    * |         **56**         |   No    |   No   |  No  | n/a |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2670,9 +2706,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari  | Edge | IE  |
-    * | :----: | :-----: | :-----: | :--: | :-: |
-    * | **1**  | **1.5** | **1.2** | n/a  | No  |
+    * | Chrome | Firefox | Safari  |  Edge  | IE  |
+    * | :----: | :-----: | :-----: | :----: | :-: |
+    * | **1**  | **1.5** | **1.2** | **15** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/outline-offset
     */
@@ -2718,7 +2754,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **56** |   No    |   No   |  No  | No  |
+    * | **56** | **66**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-anchor
     */
@@ -2975,9 +3011,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **60**  |  Yes   |  No  | No  |
+    * | Chrome | Firefox | Safari |  Edge  | IE  |
+    * | :----: | :-----: | :----: | :----: | :-: |
+    * | **35** | **60**  |  Yes   | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/paint-order
     */
@@ -3505,7 +3541,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
-    * | **37** | **62**  | **10.1** | n/a  | No  |
+    * | **37** | **62**  | **10.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold
     */
@@ -3517,7 +3553,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox |     Safari     | Edge | IE  |
     * | :----: | :-----: | :------------: | :--: | :-: |
-    * | **37** | **62**  | **10.1** _-x-_ | n/a  | No  |
+    * | **37** | **62**  | **10.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-margin
     */
@@ -3599,9 +3635,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **36**  |  Yes   | n/a  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **36**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-color
     */
@@ -3611,9 +3647,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **36**  |  Yes   | n/a  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **36**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-line
     */
@@ -3623,9 +3659,10 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `objects`
     *
-    * | Chrome | Firefox |   Safari    | Edge | IE  |
-    * | :----: | :-----: | :---------: | :--: | :-: |
-    * | 57-64  |   No    | **8** _-x-_ |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | 57-64  |   No    | **12.1** |  No  | No  |
+    * |        |         | 8 _-x-_  |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-skip
     */
@@ -3647,9 +3684,9 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `solid`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **36**  |  Yes   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **36**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration-style
     */
@@ -3661,7 +3698,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |    Chrome    | Firefox |    Safari     | Edge | IE  |
     * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ | n/a  | No  |
+    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-color
     */
@@ -3673,7 +3710,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |    Chrome    | Firefox |    Safari     | Edge | IE  |
     * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ | n/a  | No  |
+    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-position
     */
@@ -3685,7 +3722,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * |    Chrome    | Firefox |    Safari     | Edge | IE  |
     * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ | n/a  | No  |
+    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis-style
     */
@@ -3721,7 +3758,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **48** | **41**  |   No   | n/a  | No  |
+    * | **48** | **41**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-orientation
     */
@@ -3745,7 +3782,7 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **4**  |  **1**  | **5**  | n/a  | No  |
+    * | **4**  |  **1**  | **5**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-rendering
     */
@@ -3828,10 +3865,10 @@ trait StandardLonghandPropertiesHyphen[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox |  Safari   |     Edge     |   IE    |
-    * | :----: | :-----: | :-------: | :----------: | :-----: |
-    * | **36** | **16**  |   **9**   | **12** _-x-_ | **10**  |
-    * |        |         | 3.1 _-x-_ |              | 9 _-x-_ |
+    * | Chrome | Firefox |  Safari   |  Edge  |   IE    |
+    * | :----: | :-----: | :-------: | :----: | :-----: |
+    * | **36** | **16**  |   **9**   | **12** | **10**  |
+    * |        |         | 3.1 _-x-_ |        | 9 _-x-_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform
     */
@@ -4256,8 +4293,11 @@ object StandardLonghandPropertiesHyphen {
     `image-resolution`: ImageResolutionProperty = null,
     `initial-letter`: InitialLetterProperty = null,
     `inline-size`: InlineSizeProperty[TLength] = null,
+    inset: InsetProperty[TLength] = null,
+    `inset-block`: InsetBlockProperty[TLength] = null,
     `inset-block-end`: InsetBlockEndProperty[TLength] = null,
     `inset-block-start`: InsetBlockStartProperty[TLength] = null,
+    `inset-inline`: InsetInlineProperty[TLength] = null,
     `inset-inline-end`: InsetInlineEndProperty[TLength] = null,
     `inset-inline-start`: InsetInlineStartProperty[TLength] = null,
     isolation: IsolationProperty = null,
@@ -4362,10 +4402,7 @@ object StandardLonghandPropertiesHyphen {
     `row-gap`: RowGapProperty[TLength] = null,
     `ruby-align`: RubyAlignProperty = null,
     `ruby-merge`: RubyMergeProperty = null,
-    `ruby-position`: RubyPositionProperty = null,
-    scale: ScaleProperty = null,
-    `scroll-behavior`: ScrollBehaviorProperty = null,
-    `scroll-margin`: ScrollMarginProperty[TLength] = null
+    `ruby-position`: RubyPositionProperty = null
   ): StandardLonghandPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`align-content` != null) __obj.updateDynamic("align-content")(`align-content`.asInstanceOf[js.Any])
@@ -4512,8 +4549,11 @@ object StandardLonghandPropertiesHyphen {
     if (`image-resolution` != null) __obj.updateDynamic("image-resolution")(`image-resolution`.asInstanceOf[js.Any])
     if (`initial-letter` != null) __obj.updateDynamic("initial-letter")(`initial-letter`.asInstanceOf[js.Any])
     if (`inline-size` != null) __obj.updateDynamic("inline-size")(`inline-size`.asInstanceOf[js.Any])
+    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
+    if (`inset-block` != null) __obj.updateDynamic("inset-block")(`inset-block`.asInstanceOf[js.Any])
     if (`inset-block-end` != null) __obj.updateDynamic("inset-block-end")(`inset-block-end`.asInstanceOf[js.Any])
     if (`inset-block-start` != null) __obj.updateDynamic("inset-block-start")(`inset-block-start`.asInstanceOf[js.Any])
+    if (`inset-inline` != null) __obj.updateDynamic("inset-inline")(`inset-inline`.asInstanceOf[js.Any])
     if (`inset-inline-end` != null) __obj.updateDynamic("inset-inline-end")(`inset-inline-end`.asInstanceOf[js.Any])
     if (`inset-inline-start` != null) __obj.updateDynamic("inset-inline-start")(`inset-inline-start`.asInstanceOf[js.Any])
     if (isolation != null) __obj.updateDynamic("isolation")(isolation)
@@ -4619,9 +4659,6 @@ object StandardLonghandPropertiesHyphen {
     if (`ruby-align` != null) __obj.updateDynamic("ruby-align")(`ruby-align`)
     if (`ruby-merge` != null) __obj.updateDynamic("ruby-merge")(`ruby-merge`)
     if (`ruby-position` != null) __obj.updateDynamic("ruby-position")(`ruby-position`)
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (`scroll-behavior` != null) __obj.updateDynamic("scroll-behavior")(`scroll-behavior`)
-    if (`scroll-margin` != null) __obj.updateDynamic("scroll-margin")(`scroll-margin`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardLonghandPropertiesHyphen[TLength]]
   }
 }

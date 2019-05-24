@@ -12,7 +12,7 @@ trait NewExpressionBuilder extends js.Object {
     argumentsParam: js.Array[
       astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.SpreadElementKind
     ]
-  ): astDashTypesLib.genNodesMod.NewExpression = js.native
-  def from(params: astDashTypesLib.Anon_Arguments): astDashTypesLib.genNodesMod.NewExpression = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.NewExpression = js.native
+  def from(params: astDashTypesLib.Anon_Arguments): astDashTypesLib.genNamedTypesMod.namedTypesNs.NewExpression = js.native
 }
 

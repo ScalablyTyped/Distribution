@@ -66,6 +66,10 @@ class Vector2 () extends Vector {
     */
   def copy(v: Vector2): this.type = js.native
   /**
+    * Computes cross product of this vector and v.
+    */
+  def cross(v: Vector2): scala.Double = js.native
+  /**
     * @deprecated Use {@link Vector2#manhattanDistanceTo .manhattanDistanceTo()} instead.
     */
   def distanceToManhattan(v: Vector2): scala.Double = js.native

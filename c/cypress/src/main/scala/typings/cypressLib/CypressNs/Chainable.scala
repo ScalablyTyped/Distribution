@@ -478,6 +478,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_befalse(chainer: cypressLib.cypressLibStrings.beDOTfalse): Chainable[Subject] = js.native
   /**
+    * Assert that at least one element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('be.focused')
+    *    cy.get('#result').should('have.focus')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_befocused(chainer: cypressLib.cypressLibStrings.beDOTfocused): Chainable[Subject] = js.native
+  /**
     * Asserts that the target is a number or a date greater than the given number or date n respectively.
     * However, it’s often best to assert that the target is equal to its expected value.
     * @example
@@ -1063,6 +1078,21 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("and")
   def and_havedescendants(chainer: cypressLib.cypressLibStrings.haveDOTdescendants, selector: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that at least one element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('have.focus')
+    *    cy.get('#result').should('be.focused')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_havefocus(chainer: cypressLib.cypressLibStrings.haveDOTfocus): Chainable[Subject] = js.native
   /**
     * Assert that the html of the first element of the selection is equal to the given html, using `.html()`.
     * @example
@@ -1835,6 +1865,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("and")
   def and_notbefalse(chainer: cypressLib.cypressLibStrings.notDOTbeDOTfalse): Chainable[Subject] = js.native
   /**
+    * Assert that no element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('not.be.focused')
+    *    cy.get('#result').should('not.have.focus')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_notbefocused(chainer: cypressLib.cypressLibStrings.notDOTbeDOTfocused): Chainable[Subject] = js.native
+  /**
     * Asserts that the target is a not number or a date greater than the given number or date n respectively.
     * However, it’s often best to assert that the target is equal to its expected value.
     * @example
@@ -2419,6 +2464,21 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("and")
   def and_nothavedescendants(chainer: cypressLib.cypressLibStrings.notDOThaveDOTdescendants, selector: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that no element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('not.have.focus')
+    *    cy.get('#result').should('not.be.focused')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @alias should
+    * @see https://on.cypress.io/and
+    */
+  @JSName("and")
+  def and_nothavefocus(chainer: cypressLib.cypressLibStrings.notDOThaveDOTfocus): Chainable[Subject] = js.native
   /**
     * Assert that the html of the first element of the selection is not equal to the given html, using `.html()`.
     * @example
@@ -16370,6 +16430,20 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_befalse(chainer: cypressLib.cypressLibStrings.beDOTfalse): Chainable[Subject] = js.native
   /**
+    * Assert that at least one element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('be.focused')
+    *    cy.get('#result').should('have.focus')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_befocused(chainer: cypressLib.cypressLibStrings.beDOTfocused): Chainable[Subject] = js.native
+  /**
     * Asserts that the target is a number or a date greater than the given number or date n respectively.
     * However, it’s often best to assert that the target is equal to its expected value.
     * @example
@@ -16919,6 +16993,20 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("should")
   def should_havedescendants(chainer: cypressLib.cypressLibStrings.haveDOTdescendants, selector: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that at least one element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('have.focus')
+    *    cy.get('#result').should('be.focused')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_havefocus(chainer: cypressLib.cypressLibStrings.haveDOTfocus): Chainable[Subject] = js.native
   /**
     * Assert that the html of the first element of the selection is equal to the given html, using `.html()`.
     * @example
@@ -17642,6 +17730,20 @@ trait Chainable[Subject] extends js.Object {
   @JSName("should")
   def should_notbefalse(chainer: cypressLib.cypressLibStrings.notDOTbeDOTfalse): Chainable[Subject] = js.native
   /**
+    * Assert that no element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('not.be.focused')
+    *    cy.get('#result').should('not.have.focus')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_notbefocused(chainer: cypressLib.cypressLibStrings.notDOTbeDOTfocused): Chainable[Subject] = js.native
+  /**
     * Asserts that the target is a not number or a date greater than the given number or date n respectively.
     * However, it’s often best to assert that the target is equal to its expected value.
     * @example
@@ -18190,6 +18292,20 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("should")
   def should_nothavedescendants(chainer: cypressLib.cypressLibStrings.notDOThaveDOTdescendants, selector: java.lang.String): Chainable[Subject] = js.native
+  /**
+    * Assert that no element of the selection is focused.
+    * @example
+    *    cy.get('#result').should('not.have.focus')
+    *    cy.get('#result').should('not.be.focused')
+    * @see https://on.cypress.io/assertions
+    */
+  /**
+    * Create an assertion. Assertions are automatically retried until they pass or time out.
+    *
+    * @see https://on.cypress.io/should
+    */
+  @JSName("should")
+  def should_nothavefocus(chainer: cypressLib.cypressLibStrings.notDOThaveDOTfocus): Chainable[Subject] = js.native
   /**
     * Assert that the html of the first element of the selection is not equal to the given html, using `.html()`.
     * @example

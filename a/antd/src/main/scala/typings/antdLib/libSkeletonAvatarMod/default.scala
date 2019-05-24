@@ -13,6 +13,6 @@ class default () extends SkeletonAvatar
 @JSImport("antd/lib/skeleton/Avatar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: stdLib.Partial[antdLib.libSkeletonAvatarMod.SkeletonAvatarProps] = js.native
+  var defaultProps: antdLib.PartialSkeletonAvatarProps = js.native
 }
 

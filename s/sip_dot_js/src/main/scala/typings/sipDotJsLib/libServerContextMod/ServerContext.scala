@@ -9,17 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServerContext protected ()
   extends nodeLib.eventsMod.EventEmitter {
-  def this(ua: sipDotJsLib.libUAMod.UA, request: sipDotJsLib.libSIPMessageMod.IncomingRequest) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest) = this()
   var assertedIdentity: js.UndefOr[sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader] = js.native
   var body: js.Any = js.native
   var contentType: js.UndefOr[java.lang.String] = js.native
   var data: js.Any = js.native
+  var incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest = js.native
   var localIdentity: sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader = js.native
   var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
   var method: java.lang.String = js.native
   var remoteIdentity: sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader = js.native
   var request: sipDotJsLib.libSIPMessageMod.IncomingRequest = js.native
-  var transaction: sipDotJsLib.libTransactionsMod.InviteServerTransaction | sipDotJsLib.libTransactionsMod.NonInviteServerTransaction = js.native
+  var transaction: sipDotJsLib.libCoreTransactionsMod.InviteServerTransaction | sipDotJsLib.libCoreTransactionsMod.NonInviteServerTransaction = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
   var ua: sipDotJsLib.libUAMod.UA = js.native
   def accept(): js.Any = js.native
@@ -41,7 +42,7 @@ object ServerContext extends js.Object {
   def initializer(
     objectToConstruct: sipDotJsLib.libServerContextMod.ServerContext,
     ua: sipDotJsLib.libUAMod.UA,
-    request: sipDotJsLib.libSIPMessageMod.IncomingRequest
+    incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest
   ): scala.Unit = js.native
 }
 

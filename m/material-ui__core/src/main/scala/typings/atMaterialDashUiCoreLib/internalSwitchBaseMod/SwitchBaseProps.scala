@@ -122,9 +122,7 @@ trait SwitchBaseProps extends js.Object {
   var checkedIcon: reactLib.reactMod.ReactNode
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SwitchBaseClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapSwitchBaseClassKey] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps]
@@ -430,7 +428,7 @@ object SwitchBaseProps {
     checked: scala.Boolean | java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SwitchBaseClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapSwitchBaseClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

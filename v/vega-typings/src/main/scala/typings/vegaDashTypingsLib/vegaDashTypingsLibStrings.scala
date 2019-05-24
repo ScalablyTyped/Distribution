@@ -508,6 +508,9 @@ object vegaDashTypingsLibStrings {
     extends vegaDashTypingsLib.typesSpecStreamMod.EventType
   
   @js.native
+  sealed trait dsv extends js.Object
+  
+  @js.native
   sealed trait `e-resize` extends js.Object
   
   @js.native
@@ -535,7 +538,13 @@ object vegaDashTypingsLibStrings {
     extends vegaDashTypingsLib.typesSpecEncodeMod.EncodeEntryName
   
   @js.native
+  sealed trait exp extends js.Object
+  
+  @js.native
   sealed trait extent extends js.Object
+  
+  @js.native
+  sealed trait exterior extends js.Object
   
   @js.native
   sealed trait file extends js.Object
@@ -726,6 +735,9 @@ object vegaDashTypingsLibStrings {
     extends vegaDashTypingsLib.typesRuntimeMod.TypeInference
   
   @js.native
+  sealed trait interior extends js.Object
+  
+  @js.native
   sealed trait italic
     extends vegaDashTypingsLib.typesSpecEncodeMod._FontStyle
   
@@ -734,6 +746,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait json extends js.Object
+  
+  @js.native
+  sealed trait kde extends js.Object
   
   @js.native
   sealed trait keydown
@@ -801,6 +816,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait linkpath extends js.Object
+  
+  @js.native
+  sealed trait loess extends js.Object
   
   @js.native
   sealed trait log
@@ -912,6 +930,10 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait `nesw-resize` extends js.Object
+  
+  @js.native
+  sealed trait next_value
+    extends vegaDashTypingsLib.typesSpecTransformMod.WindowOnlyOp
   
   @js.native
   sealed trait `no-drop` extends js.Object
@@ -1105,8 +1127,15 @@ object vegaDashTypingsLibStrings {
   sealed trait pointer extends js.Object
   
   @js.native
+  sealed trait poly extends js.Object
+  
+  @js.native
   sealed trait pow
     extends vegaDashTypingsLib.typesSpecScaleMod.QuantScaleType
+  
+  @js.native
+  sealed trait prev_value
+    extends vegaDashTypingsLib.typesSpecTransformMod.WindowOnlyOp
   
   @js.native
   sealed trait prevent extends js.Object
@@ -1306,12 +1335,18 @@ object vegaDashTypingsLibStrings {
     extends vegaDashTypingsLib.typesSpecTransformMod.AggregateOp
   
   @js.native
+  sealed trait quad extends js.Object
+  
+  @js.native
   sealed trait quantile
     extends vegaDashTypingsLib.typesSpecScaleMod.DiscretizingScaleType
   
   @js.native
   sealed trait quantize
     extends vegaDashTypingsLib.typesSpecScaleMod.DiscretizingScaleType
+  
+  @js.native
+  sealed trait radial extends js.Object
   
   @js.native
   sealed trait radio extends js.Object
@@ -1533,6 +1568,9 @@ object vegaDashTypingsLibStrings {
   @js.native
   sealed trait `redyellowgreen-9`
     extends vegaDashTypingsLib.typesSpecSchemeMod.Diverging
+  
+  @js.native
+  sealed trait regression extends js.Object
   
   @js.native
   sealed trait release
@@ -2303,6 +2341,8 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def dragover: dragover = "dragover".asInstanceOf[dragover]
   @scala.inline
+  def dsv: dsv = "dsv".asInstanceOf[dsv]
+  @scala.inline
   def `e-resize`: `e-resize` = "e-resize".asInstanceOf[`e-resize`]
   @scala.inline
   def each: each = "each".asInstanceOf[each]
@@ -2317,7 +2357,11 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
   @scala.inline
+  def exp: exp = "exp".asInstanceOf[exp]
+  @scala.inline
   def extent: extent = "extent".asInstanceOf[extent]
+  @scala.inline
+  def exterior: exterior = "exterior".asInstanceOf[exterior]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   @scala.inline
@@ -2421,11 +2465,15 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
+  def interior: interior = "interior".asInstanceOf[interior]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
   @scala.inline
   def joinaggregate: joinaggregate = "joinaggregate".asInstanceOf[joinaggregate]
   @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
+  def kde: kde = "kde".asInstanceOf[kde]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
   @scala.inline
@@ -2458,6 +2506,8 @@ object vegaDashTypingsLibStrings {
   def `linear-closed`: `linear-closed` = "linear-closed".asInstanceOf[`linear-closed`]
   @scala.inline
   def linkpath: linkpath = "linkpath".asInstanceOf[linkpath]
+  @scala.inline
+  def loess: loess = "loess".asInstanceOf[loess]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   @scala.inline
@@ -2514,6 +2564,8 @@ object vegaDashTypingsLibStrings {
   def nest: nest = "nest".asInstanceOf[nest]
   @scala.inline
   def `nesw-resize`: `nesw-resize` = "nesw-resize".asInstanceOf[`nesw-resize`]
+  @scala.inline
+  def next_value: next_value = "next_value".asInstanceOf[next_value]
   @scala.inline
   def `no-drop`: `no-drop` = "no-drop".asInstanceOf[`no-drop`]
   @scala.inline
@@ -2613,7 +2665,11 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
   @scala.inline
+  def poly: poly = "poly".asInstanceOf[poly]
+  @scala.inline
   def pow: pow = "pow".asInstanceOf[pow]
+  @scala.inline
+  def prev_value: prev_value = "prev_value".asInstanceOf[prev_value]
   @scala.inline
   def prevent: prevent = "prevent".asInstanceOf[prevent]
   @scala.inline
@@ -2715,9 +2771,13 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def q3: q3 = "q3".asInstanceOf[q3]
   @scala.inline
+  def quad: quad = "quad".asInstanceOf[quad]
+  @scala.inline
   def quantile: quantile = "quantile".asInstanceOf[quantile]
   @scala.inline
   def quantize: quantize = "quantize".asInstanceOf[quantize]
+  @scala.inline
+  def radial: radial = "radial".asInstanceOf[radial]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   @scala.inline
@@ -2830,6 +2890,8 @@ object vegaDashTypingsLibStrings {
   def `redyellowgreen-8`: `redyellowgreen-8` = "redyellowgreen-8".asInstanceOf[`redyellowgreen-8`]
   @scala.inline
   def `redyellowgreen-9`: `redyellowgreen-9` = "redyellowgreen-9".asInstanceOf[`redyellowgreen-9`]
+  @scala.inline
+  def regression: regression = "regression".asInstanceOf[regression]
   @scala.inline
   def release: release = "release".asInstanceOf[release]
   @scala.inline

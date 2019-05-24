@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "write-json-file"
-version := "3.2.0-54b31d"
+version := "4.0.0-6febdf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

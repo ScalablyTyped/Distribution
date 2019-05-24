@@ -11,12 +11,12 @@ trait ForAwaitStatementBuilder extends js.Object {
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.StatementKind
-  ): astDashTypesLib.genNodesMod.ForAwaitStatement = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForAwaitStatement = js.native
   def apply(
     left: astDashTypesLib.genKindsMod.VariableDeclarationKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.StatementKind
-  ): astDashTypesLib.genNodesMod.ForAwaitStatement = js.native
-  def from(params: astDashTypesLib.Anon_BodyCommentsLeft): astDashTypesLib.genNodesMod.ForAwaitStatement = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForAwaitStatement = js.native
+  def from(params: astDashTypesLib.Anon_BodyCommentsLeft): astDashTypesLib.genNamedTypesMod.namedTypesNs.ForAwaitStatement = js.native
 }
 

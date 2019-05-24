@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cp-file"
-version := "6.2.0-0e539e"
+version := "7.0.0-44fd72"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

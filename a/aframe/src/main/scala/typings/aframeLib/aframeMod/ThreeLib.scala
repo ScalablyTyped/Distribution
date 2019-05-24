@@ -474,7 +474,9 @@ trait ThreeLib extends js.Object {
   var Mesh: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Mesh] = js.native
   var MeshBasicMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshBasicMaterial] = js.native
   var MeshDepthMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshDepthMaterial] = js.native
+  var MeshDistanceMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshDistanceMaterial] = js.native
   var MeshLambertMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshLambertMaterial] = js.native
+  var MeshMatcapMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshMatcapMaterial] = js.native
   var MeshNormalMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshNormalMaterial] = js.native
   var MeshPhongMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshPhongMaterial] = js.native
   var MeshPhysicalMaterial: org.scalablytyped.runtime.Instantiable1[
@@ -482,6 +484,7 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.MeshPhysicalMaterial
   ] = js.native
   var MeshStandardMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshStandardMaterial] = js.native
+  var MeshToonMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshToonMaterial] = js.native
   val MinEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
   val MirroredRepeatWrapping: threeLib.srcConstantsMod.Wrapping = js.native
   val MixOperation: threeLib.srcConstantsMod.Combine = js.native
@@ -506,6 +509,7 @@ trait ThreeLib extends js.Object {
   var Object3D: aframeLib.Anon_DefaultMatrixAutoUpdate = js.native
   var Object3DIdCount: scala.Double = js.native
   var ObjectLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ObjectLoader] = js.native
+  val ObjectSpaceNormalMap: threeLib.srcConstantsMod.NormalMapTypes = js.native
   var OctahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.OctahedronBufferGeometry] = js.native
   var OctahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.OctahedronGeometry] = js.native
   val OneFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
@@ -748,6 +752,7 @@ trait ThreeLib extends js.Object {
   ] = js.native
   val SubtractEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
   val SubtractiveBlending: threeLib.srcConstantsMod.Blending = js.native
+  val TangentSpaceNormalMap: threeLib.srcConstantsMod.NormalMapTypes = js.native
   var TetrahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TetrahedronBufferGeometry] = js.native
   var TetrahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TetrahedronGeometry] = js.native
   var TextBufferGeometry: org.scalablytyped.runtime.Instantiable1[/* text */ java.lang.String, threeLib.threeMod.TextBufferGeometry] = js.native
@@ -866,8 +871,8 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.WebGLCapabilities
   ] = js.native
   var WebGLClipping: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLClipping] = js.native
-  var WebGLColorBuffer: org.scalablytyped.runtime.Instantiable2[/* gl */ js.Any, /* state */ js.Any, threeLib.threeMod.WebGLColorBuffer] = js.native
-  var WebGLDepthBuffer: org.scalablytyped.runtime.Instantiable2[/* gl */ js.Any, /* state */ js.Any, threeLib.threeMod.WebGLDepthBuffer] = js.native
+  var WebGLColorBuffer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLColorBuffer] = js.native
+  var WebGLDepthBuffer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLDepthBuffer] = js.native
   var WebGLExtensions: org.scalablytyped.runtime.Instantiable1[/* gl */ stdLib.WebGLRenderingContext, threeLib.threeMod.WebGLExtensions] = js.native
   var WebGLGeometries: org.scalablytyped.runtime.Instantiable3[
     /* gl */ stdLib.WebGLRenderingContext, 
@@ -931,10 +936,11 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.WebGLRenderTargetCube
   ] = js.native
   var WebGLRenderer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLRenderer] = js.native
-  var WebGLShader: org.scalablytyped.runtime.Instantiable3[
+  var WebGLShader: org.scalablytyped.runtime.Instantiable4[
     /* gl */ js.Any, 
     /* type */ java.lang.String, 
     /* string */ java.lang.String, 
+    /* debug */ scala.Boolean, 
     threeLib.threeMod.WebGLShader
   ] = js.native
   var WebGLShadowMap: org.scalablytyped.runtime.Instantiable4[
@@ -944,13 +950,14 @@ trait ThreeLib extends js.Object {
     /* capabilities */ js.Any, 
     threeLib.threeMod.WebGLShadowMap
   ] = js.native
-  var WebGLState: org.scalablytyped.runtime.Instantiable3[
-    /* gl */ js.Any, 
-    /* extensions */ js.Any, 
-    /* paramThreeToGL */ js.Function, 
+  var WebGLState: org.scalablytyped.runtime.Instantiable4[
+    /* gl */ stdLib.WebGLRenderingContext, 
+    /* extensions */ threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, 
+    /* utils */ js.Any, 
+    /* capabilities */ threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, 
     threeLib.threeMod.WebGLState
   ] = js.native
-  var WebGLStencilBuffer: org.scalablytyped.runtime.Instantiable2[/* gl */ js.Any, /* state */ js.Any, threeLib.threeMod.WebGLStencilBuffer] = js.native
+  var WebGLStencilBuffer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLStencilBuffer] = js.native
   var WebGLTextures: org.scalablytyped.runtime.Instantiable7[
     /* gl */ js.Any, 
     /* extensions */ js.Any, 

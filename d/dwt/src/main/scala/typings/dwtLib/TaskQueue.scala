@@ -5,21 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("TaskQueue")
 @js.native
-/**
-  * Constructs a new task queue
-  */
-class TaskQueue () extends js.Object {
-  var _queue: js.Array[_] = js.native
-  var isWorking: scala.Boolean = js.native
-  var timeout: scala.Double = js.native
+trait TaskQueue extends js.Object {
   def next(): scala.Unit = js.native
-  def push(task: js.Any): scala.Unit = js.native
-  def push(task: js.Any, context: js.Any): scala.Unit = js.native
-  def push(task: js.Any, context: js.Any, args: js.Any): scala.Unit = js.native
-  def unshift(task: js.Any): scala.Unit = js.native
-  def unshift(task: js.Any, context: js.Any): scala.Unit = js.native
-  def unshift(task: js.Any, context: js.Any, args: js.Any): scala.Unit = js.native
+  def push(task: js.Function1[/* bLoadingWhenPush */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def push(task: js.Function1[/* bLoadingWhenPush */ scala.Boolean, scala.Unit], context: js.Any): scala.Unit = js.native
+  def push(
+    task: js.Function1[/* bLoadingWhenPush */ scala.Boolean, scala.Unit],
+    context: js.Any,
+    args: js.Array[js.Any]
+  ): scala.Unit = js.native
+  def unshift(task: js.Function1[/* bLoadingWhenPush */ scala.Boolean, scala.Unit]): scala.Unit = js.native
+  def unshift(task: js.Function1[/* bLoadingWhenPush */ scala.Boolean, scala.Unit], context: js.Any): scala.Unit = js.native
+  def unshift(
+    task: js.Function1[/* bLoadingWhenPush */ scala.Boolean, scala.Unit],
+    context: js.Any,
+    args: js.Array[js.Any]
+  ): scala.Unit = js.native
 }
 

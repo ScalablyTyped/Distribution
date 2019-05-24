@@ -31,6 +31,7 @@ class Semaphore protected () extends js.Object {
     */
   def release(): scala.Unit = js.native
   def release(count: scala.Double): scala.Unit = js.native
+  def wait(token: atEsfxCancelableLib.distMod.Cancelable): js.Promise[scala.Unit] = js.native
   def wait(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[scala.Unit] = js.native
 }
 

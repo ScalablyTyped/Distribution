@@ -12,32 +12,32 @@ trait ImportDeclarationBuilder extends js.Object {
       astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
     ],
     source: astDashTypesLib.genKindsMod.LiteralKind
-  ): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   def apply(
     specifiers: js.Array[
       astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
     ],
     source: astDashTypesLib.genKindsMod.LiteralKind,
     importKind: astDashTypesLib.astDashTypesLibStrings.`type`
-  ): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   def apply(
     specifiers: js.Array[
       astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
     ],
     source: astDashTypesLib.genKindsMod.LiteralKind,
     importKind: astDashTypesLib.astDashTypesLibStrings.value
-  ): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
-  def apply(specifiers: js.UndefOr[scala.Nothing], source: astDashTypesLib.genKindsMod.LiteralKind): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
+  def apply(specifiers: js.UndefOr[scala.Nothing], source: astDashTypesLib.genKindsMod.LiteralKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   def apply(
     specifiers: js.UndefOr[scala.Nothing],
     source: astDashTypesLib.genKindsMod.LiteralKind,
     importKind: astDashTypesLib.astDashTypesLibStrings.`type`
-  ): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   def apply(
     specifiers: js.UndefOr[scala.Nothing],
     source: astDashTypesLib.genKindsMod.LiteralKind,
     importKind: astDashTypesLib.astDashTypesLibStrings.value
-  ): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
-  def from(params: astDashTypesLib.Anon_CommentsImportKind): astDashTypesLib.genNodesMod.ImportDeclaration = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
+  def from(params: astDashTypesLib.Anon_CommentsImportKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
 }
 

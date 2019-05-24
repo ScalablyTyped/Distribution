@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class CancellationTokenCountdown ()
   extends prexLib.outLibCancellationMod.CancellationTokenCountdown {
-  def this(iterable: stdLib.Iterable[prexLib.outLibCancellationMod.CancellationToken]) = this()
+  def this(iterable: stdLib.Iterable[
+      prexLib.outLibCancellationMod.CancellationToken | atEsfxCancelableLib.distMod.Cancelable
+    ]) = this()
 }
 

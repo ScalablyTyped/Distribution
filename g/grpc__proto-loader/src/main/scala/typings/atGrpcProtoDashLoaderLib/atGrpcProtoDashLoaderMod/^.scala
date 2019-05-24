@@ -10,7 +10,11 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def load(filename: java.lang.String): js.Promise[PackageDefinition] = js.native
   def load(filename: java.lang.String, options: Options): js.Promise[PackageDefinition] = js.native
+  def load(filename: js.Array[java.lang.String]): js.Promise[PackageDefinition] = js.native
+  def load(filename: js.Array[java.lang.String], options: Options): js.Promise[PackageDefinition] = js.native
   def loadSync(filename: java.lang.String): PackageDefinition = js.native
   def loadSync(filename: java.lang.String, options: Options): PackageDefinition = js.native
+  def loadSync(filename: js.Array[java.lang.String]): PackageDefinition = js.native
+  def loadSync(filename: js.Array[java.lang.String], options: Options): PackageDefinition = js.native
 }
 

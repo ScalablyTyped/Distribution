@@ -11,7 +11,7 @@ trait TSTypeLiteralBuilder extends js.Object {
     members: js.Array[
       astDashTypesLib.genKindsMod.TSCallSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSConstructSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSIndexSignatureKind | astDashTypesLib.genKindsMod.TSMethodSignatureKind | astDashTypesLib.genKindsMod.TSPropertySignatureKind
     ]
-  ): astDashTypesLib.genNodesMod.TSTypeLiteral = js.native
-  def from(params: astDashTypesLib.Anon_CommentsLocMembers): astDashTypesLib.genNodesMod.TSTypeLiteral = js.native
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeLiteral = js.native
+  def from(params: astDashTypesLib.Anon_CommentsLocMembers): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeLiteral = js.native
 }
 

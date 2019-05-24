@@ -7,13 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate", "XmlComment")
 @js.native
-class XmlComment protected ()
-  extends xmlcreateLib.libNodesXmlCommentMod.default {
-  /**
-    * Initializes a new instance of the {@link XmlComment} class.
-    *
-    * @param content The content of the comment.
-    */
-  def this(content: java.lang.String) = this()
+class XmlComment[Parent] protected ()
+  extends xmlcreateLib.libNodesXmlCommentMod.default[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: xmlcreateLib.libNodesXmlCommentMod.IXmlCommentOptions) = this()
 }
 

@@ -109,9 +109,7 @@ trait SliderProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.native
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.native
   var className: js.UndefOr[java.lang.String] = js.native
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SliderClassKey]]
-  ] = js.native
+  var classes: js.UndefOr[atMaterialDashUiLabLib.PartialClassNameMapSliderClassKey] = js.native
   var color: js.UndefOr[java.lang.String] = js.native
   var contentEditable: js.UndefOr[scala.Boolean] = js.native
   var contextMenu: js.UndefOr[java.lang.String] = js.native

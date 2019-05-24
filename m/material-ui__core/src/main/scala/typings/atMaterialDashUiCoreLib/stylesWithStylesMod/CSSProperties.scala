@@ -10,7 +10,7 @@ trait CSSProperties
      with // Allow pseudo selectors and media queries
 /* k */ org.scalablytyped.runtime.StringDictionary[
       (js.UndefOr[
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 485 */ js.Any
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 488 */ js.Any
       ]) | CSSProperties
     ]
 
@@ -21,7 +21,7 @@ object CSSProperties {
     StringDictionary: // Allow pseudo selectors and media queries
   /* k */ org.scalablytyped.runtime.StringDictionary[
       (js.UndefOr[
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 485 */ js.Any
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 488 */ js.Any
       ]) | CSSProperties
     ] = null
   ): CSSProperties = {

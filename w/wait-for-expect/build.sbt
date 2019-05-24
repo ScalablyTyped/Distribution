@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wait-for-expect"
-version := "1.1.1-9f6eff"
+version := "1.2.0-eec898"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

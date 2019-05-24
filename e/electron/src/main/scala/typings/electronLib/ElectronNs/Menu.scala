@@ -86,7 +86,11 @@ object Menu extends js.Object {
     * usage can be referenced above. You can also attach other fields to the element
     * of the template and they will become properties of the constructed menu items.
     */
-  def buildFromTemplate(template: js.Array[electronLib.ElectronNs.MenuItemConstructorOptions]): electronLib.ElectronNs.Menu = js.native
+  def buildFromTemplate(
+    template: js.Array[
+      electronLib.ElectronNs.MenuItemConstructorOptions | electronLib.ElectronNs.MenuItem
+    ]
+  ): electronLib.ElectronNs.Menu = js.native
   /**
     * Note: The returned Menu instance doesn't support dynamic addition or removal of
     * menu items. Instance properties can still be dynamically modified.
@@ -102,9 +106,16 @@ object Menu extends js.Object {
   def setApplicationMenu(): scala.Unit = js.native
   /**
     * Sets menu as the application menu on macOS. On Windows and Linux, the menu will
-    * be set as each window's top menu. Passing null will remove the menu bar on
-    * Windows and Linux but has no effect on macOS. Note: This API has to be called
-    * after the ready event of app module.
+    * be set as each window's top menu. Also on Windows and Linux, you can use a & in
+    * the top-level item name to indicate which letter should get a generated
+    * accelerator. For example, using &File for the file menu would result in a
+    * generated Alt-F accelerator that opens the associated menu. The indicated
+    * character in the button label gets an underline. The & character is not
+    * displayed on the button label. Passing null will suppress the default menu. On
+    * Windows and Linux, this has the additional effect of removing the menu bar from
+    * the window. Note: The default menu will be created automatically if the app does
+    * not set one. It contains standard items such as File, Edit, View, Window and
+    * Help.
     */
   def setApplicationMenu(menu: electronLib.ElectronNs.Menu): scala.Unit = js.native
 }

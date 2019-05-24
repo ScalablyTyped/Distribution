@@ -64,6 +64,11 @@ package object pluginsNs {
     */
   type ioredis = Integration
   /**
+    * This plugin patches the [knex](https://knexjs.org/)
+    * module to bind the promise callback the the caller context.
+    */
+  type knex = Integration
+  /**
     * This plugin automatically instruments the
     * [koa](https://koajs.com/) module.
     */

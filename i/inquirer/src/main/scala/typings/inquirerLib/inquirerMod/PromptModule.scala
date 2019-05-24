@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PromptModule extends js.Object {
-  def apply[T](questions: Questions[T]): js.Promise[T] with inquirerLib.Anon_Ui = js.native
+  def apply[A](questions: Questions[A]): js.Promise[A] with inquirerLib.Anon_Ui = js.native
   /**
     * Register a prompt type
     * @param name Prompt type name

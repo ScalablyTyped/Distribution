@@ -5,56 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait XmlCharRef
-  extends xmlcreateLib.libNodesXmlNodeMod.default {
-  var _char: js.Any = js.native
-  var _hex: js.Any = js.native
+trait XmlCharRef[Parent] extends js.Object {
+  var _char: js.Any
+  var _hex: js.Any
+  val _parent: js.Any
+  val _validation: js.Any
   /**
-    * Gets the character to represent using the reference.
-    *
-    * @returns The character to represent using the reference.
+    * Gets the character of this character reference.
     */
   /**
-    * Sets the character to represent using the reference.
-    *
-    * @param char The character to represent using the reference.
+    * Sets the character of this character reference.
     */
-  var char: java.lang.String = js.native
+  var char: java.lang.String
   /**
-    * Gets whether or not to use the hexadecimal or decimal representation for
-    * the reference.
-    *
-    * @returns Whether or not to use the hexadecimal or decimal representation
-    *          for the reference.
+    * Gets whether the decimal or hexadecimal representation should be used
+    * for this character reference.
     */
   /**
-    * Sets whether or not to use the hexadecimal or decimal representation for
-    * the reference.
-    *
-    * @param hex Whether or not to use the hexadecimal or decimal
-    *            representation for the reference.
+    * Sets whether the decimal or hexadecimal representation should be used
+    * for this character reference.
     */
-  var hex: scala.Boolean = js.native
+  var hex: scala.Boolean
   /**
-    * Throws an exception since {@link XmlCharRef} nodes cannot have any
-    * children.
-    *
-    * @param node This parameter is unused.
-    * @param index This parameter is unused.
-    *
-    * @returns This method does not return.
+    * Returns the parent of this character reference.
     */
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  def insertChild(node: xmlcreateLib.libNodesXmlNodeMod.default, index: scala.Double): js.UndefOr[xmlcreateLib.libNodesXmlNodeMod.default] = js.native
-  /**
-    * Throws an exception since {@link XmlCharRef} nodes cannot have any
-    * children.
-    *
-    * @param node This parameter is unused.
-    *
-    * @returns This method does not return.
-    */
-  def removeChild(node: xmlcreateLib.libNodesXmlNodeMod.default): scala.Boolean = js.native
+  def up(): Parent
+}
+
+object XmlCharRef {
+  @scala.inline
+  def apply[Parent](
+    _char: js.Any,
+    _hex: js.Any,
+    _parent: js.Any,
+    _validation: js.Any,
+    char: java.lang.String,
+    hex: scala.Boolean,
+    toString: () => java.lang.String,
+    up: () => Parent
+  ): XmlCharRef[Parent] = {
+    val __obj = js.Dynamic.literal(_char = _char, _hex = _hex, _parent = _parent, _validation = _validation, char = char, hex = hex, toString = js.Any.fromFunction0(toString), up = js.Any.fromFunction0(up))
+  
+    __obj.asInstanceOf[XmlCharRef[Parent]]
+  }
 }
 

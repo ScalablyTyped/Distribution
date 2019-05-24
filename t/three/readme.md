@@ -1,7 +1,7 @@
 
 # Scala.js typings for three
 
-Typings are for version 0.103.0
+Typings are for version 0.104.0
 
 ## Library description:
 JavaScript 3D library

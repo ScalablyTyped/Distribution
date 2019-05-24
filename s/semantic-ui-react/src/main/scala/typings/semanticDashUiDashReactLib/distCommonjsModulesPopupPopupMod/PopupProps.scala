@@ -35,13 +35,12 @@ object PopupProps {
       semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
     ] = null,
     hideOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
-    horizontalOffset: scala.Int | scala.Double = null,
     hoverable: js.UndefOr[scala.Boolean] = js.undefined,
     inverted: js.UndefOr[scala.Boolean] = js.undefined,
-    keepInViewPort: js.UndefOr[scala.Boolean] = js.undefined,
     mountNode: js.Any = null,
     mouseEnterDelay: scala.Int | scala.Double = null,
     mouseLeaveDelay: scala.Int | scala.Double = null,
+    offset: scala.Double | java.lang.String = null,
     on: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus | (js.Array[
       semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus
     ]) = null,
@@ -58,7 +57,6 @@ object PopupProps {
     style: js.Object = null,
     trigger: reactLib.reactMod.ReactNode = null,
     triggerRef: reactLib.reactMod.Ref[_] = null,
-    verticalOffset: scala.Int | scala.Double = null,
     wide: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null
   ): PopupProps = {
     val __obj = js.Dynamic.literal()
@@ -81,13 +79,12 @@ object PopupProps {
     if (!js.isUndefined(flowing)) __obj.updateDynamic("flowing")(flowing)
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable)
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
-    if (!js.isUndefined(keepInViewPort)) __obj.updateDynamic("keepInViewPort")(keepInViewPort)
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
     if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2(onClose))
     if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
@@ -102,7 +99,6 @@ object PopupProps {
     if (style != null) __obj.updateDynamic("style")(style)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
     if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupProps]
   }

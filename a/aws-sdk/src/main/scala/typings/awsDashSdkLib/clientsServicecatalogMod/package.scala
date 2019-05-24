@@ -153,7 +153,9 @@ package object clientsServicecatalogMod {
   */
   type ProductViewSortBy = _ProductViewSortBy | java.lang.String
   type ProductViewSummaries = js.Array[ProductViewSummary]
+  type PropertyKey = awsDashSdkLib.awsDashSdkLibStrings.OWNER | java.lang.String
   type PropertyName = java.lang.String
+  type PropertyValue = java.lang.String
   type ProviderName = java.lang.String
   type ProvisionedProductAttributes = js.Array[ProvisionedProductAttribute]
   type ProvisionedProductDetails = js.Array[ProvisionedProductDetail]
@@ -174,6 +176,7 @@ package object clientsServicecatalogMod {
   type ProvisionedProductPlanStatus = _ProvisionedProductPlanStatus | java.lang.String
   type ProvisionedProductPlanType = awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION | java.lang.String
   type ProvisionedProductPlans = js.Array[ProvisionedProductPlanSummary]
+  type ProvisionedProductProperties = org.scalablytyped.runtime.StringDictionary[PropertyValue]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE
     - awsDashSdkLib.awsDashSdkLibStrings.UNDER_CHANGE

@@ -19,6 +19,10 @@ object reactjsDashPopupLibStrings {
     extends reactjsDashPopupLib.reactjsDashPopupMod.Position
   
   @js.native
+  sealed trait `center center`
+    extends reactjsDashPopupLib.reactjsDashPopupMod.Position
+  
+  @js.native
   sealed trait click
     extends reactjsDashPopupLib.reactjsDashPopupMod.EventType
   
@@ -31,11 +35,27 @@ object reactjsDashPopupLibStrings {
     extends reactjsDashPopupLib.reactjsDashPopupMod.EventType
   
   @js.native
+  sealed trait `left bottom`
+    extends reactjsDashPopupLib.reactjsDashPopupMod.Position
+  
+  @js.native
   sealed trait `left center`
     extends reactjsDashPopupLib.reactjsDashPopupMod.Position
   
   @js.native
+  sealed trait `left top`
+    extends reactjsDashPopupLib.reactjsDashPopupMod.Position
+  
+  @js.native
+  sealed trait `right bottom`
+    extends reactjsDashPopupLib.reactjsDashPopupMod.Position
+  
+  @js.native
   sealed trait `right center`
+    extends reactjsDashPopupLib.reactjsDashPopupMod.Position
+  
+  @js.native
+  sealed trait `right top`
     extends reactjsDashPopupLib.reactjsDashPopupMod.Position
   
   @js.native
@@ -57,15 +77,25 @@ object reactjsDashPopupLibStrings {
   @scala.inline
   def `bottom right`: `bottom right` = "bottom right".asInstanceOf[`bottom right`]
   @scala.inline
+  def `center center`: `center center` = "center center".asInstanceOf[`center center`]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
   @scala.inline
+  def `left bottom`: `left bottom` = "left bottom".asInstanceOf[`left bottom`]
+  @scala.inline
   def `left center`: `left center` = "left center".asInstanceOf[`left center`]
   @scala.inline
+  def `left top`: `left top` = "left top".asInstanceOf[`left top`]
+  @scala.inline
+  def `right bottom`: `right bottom` = "right bottom".asInstanceOf[`right bottom`]
+  @scala.inline
   def `right center`: `right center` = "right center".asInstanceOf[`right center`]
+  @scala.inline
+  def `right top`: `right top` = "right top".asInstanceOf[`right top`]
   @scala.inline
   def `top center`: `top center` = "top center".asInstanceOf[`top center`]
   @scala.inline

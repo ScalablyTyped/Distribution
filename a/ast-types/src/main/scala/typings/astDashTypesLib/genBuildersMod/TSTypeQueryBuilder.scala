@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSTypeQueryBuilder extends js.Object {
-  def apply(exprName: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.TSTypeQuery = js.native
-  def apply(exprName: astDashTypesLib.genKindsMod.TSImportTypeKind): astDashTypesLib.genNodesMod.TSTypeQuery = js.native
-  def apply(exprName: astDashTypesLib.genKindsMod.TSQualifiedNameKind): astDashTypesLib.genNodesMod.TSTypeQuery = js.native
-  def from(params: astDashTypesLib.Anon_CommentsExprName): astDashTypesLib.genNodesMod.TSTypeQuery = js.native
+  def apply(exprName: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery = js.native
+  def apply(exprName: astDashTypesLib.genKindsMod.TSImportTypeKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery = js.native
+  def apply(exprName: astDashTypesLib.genKindsMod.TSQualifiedNameKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery = js.native
+  def from(params: astDashTypesLib.Anon_CommentsExprName): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeQuery = js.native
 }
 

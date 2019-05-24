@@ -34,9 +34,10 @@ trait Dialog extends EventEmitter {
   /**
     * Shows a message box, it will block the process until the message box is closed.
     * It returns the index of the clicked button. The browserWindow argument allows
-    * the dialog to attach itself to a parent window, making it modal. If a callback
-    * is passed, the dialog will not block the process. The API call will be
-    * asynchronous and the result will be passed via callback(response).
+    * the dialog to attach itself to a parent window, making it modal. If the callback
+    * and browserWindow arguments are passed, the dialog will not block the process.
+    * The API call will be asynchronous and the result will be passed via
+    * callback(response).
     */
   def showMessageBox(browserWindow: BrowserWindow, options: MessageBoxOptions): scala.Double = js.native
   def showMessageBox(
@@ -47,9 +48,10 @@ trait Dialog extends EventEmitter {
   /**
     * Shows a message box, it will block the process until the message box is closed.
     * It returns the index of the clicked button. The browserWindow argument allows
-    * the dialog to attach itself to a parent window, making it modal. If a callback
-    * is passed, the dialog will not block the process. The API call will be
-    * asynchronous and the result will be passed via callback(response).
+    * the dialog to attach itself to a parent window, making it modal. If the callback
+    * and browserWindow arguments are passed, the dialog will not block the process.
+    * The API call will be asynchronous and the result will be passed via
+    * callback(response).
     */
   def showMessageBox(options: MessageBoxOptions): scala.Double = js.native
   def showMessageBox(
@@ -73,8 +75,8 @@ trait Dialog extends EventEmitter {
     browserWindow: BrowserWindow,
     options: OpenDialogOptions,
     callback: js.Function2[
-      /* filePaths */ js.Array[java.lang.String], 
-      /* bookmarks */ js.Array[java.lang.String], 
+      /* filePaths */ js.UndefOr[js.Array[java.lang.String]], 
+      /* bookmarks */ js.UndefOr[js.Array[java.lang.String]], 
       scala.Unit
     ]
   ): js.UndefOr[js.Array[java.lang.String]] = js.native
@@ -94,8 +96,8 @@ trait Dialog extends EventEmitter {
   def showOpenDialog(
     options: OpenDialogOptions,
     callback: js.Function2[
-      /* filePaths */ js.Array[java.lang.String], 
-      /* bookmarks */ js.Array[java.lang.String], 
+      /* filePaths */ js.UndefOr[js.Array[java.lang.String]], 
+      /* bookmarks */ js.UndefOr[js.Array[java.lang.String]], 
       scala.Unit
     ]
   ): js.UndefOr[js.Array[java.lang.String]] = js.native
@@ -110,7 +112,11 @@ trait Dialog extends EventEmitter {
   def showSaveDialog(
     browserWindow: BrowserWindow,
     options: SaveDialogOptions,
-    callback: js.Function2[/* filename */ java.lang.String, /* bookmark */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* filename */ js.UndefOr[java.lang.String], 
+      /* bookmark */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
   ): js.UndefOr[java.lang.String] = js.native
   /**
     * The browserWindow argument allows the dialog to attach itself to a parent
@@ -122,7 +128,11 @@ trait Dialog extends EventEmitter {
   def showSaveDialog(options: SaveDialogOptions): js.UndefOr[java.lang.String] = js.native
   def showSaveDialog(
     options: SaveDialogOptions,
-    callback: js.Function2[/* filename */ java.lang.String, /* bookmark */ java.lang.String, scala.Unit]
+    callback: js.Function2[
+      /* filename */ js.UndefOr[java.lang.String], 
+      /* bookmark */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
   ): js.UndefOr[java.lang.String] = js.native
 }
 

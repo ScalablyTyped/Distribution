@@ -43,6 +43,10 @@ trait RestApi extends js.Object {
     */
   var policy: js.UndefOr[String] = js.undefined
   /**
+    * The collection of tags. Each tag element is associated with a given resource.
+    */
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
+  /**
     * A version identifier for the API.
     */
   var version: js.UndefOr[String] = js.undefined
@@ -64,6 +68,7 @@ object RestApi {
     minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined,
     name: String = null,
     policy: String = null,
+    tags: MapOfStringToString = null,
     version: String = null,
     warnings: ListOfString = null
   ): RestApi = {
@@ -77,6 +82,7 @@ object RestApi {
     if (!js.isUndefined(minimumCompressionSize)) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize)
     if (name != null) __obj.updateDynamic("name")(name)
     if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (version != null) __obj.updateDynamic("version")(version)
     if (warnings != null) __obj.updateDynamic("warnings")(warnings)
     __obj.asInstanceOf[RestApi]

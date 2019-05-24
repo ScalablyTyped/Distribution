@@ -1,7 +1,7 @@
 
 # Scala.js typings for conf
 
-Typings are for version 3.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 Simple config handling for your app or module

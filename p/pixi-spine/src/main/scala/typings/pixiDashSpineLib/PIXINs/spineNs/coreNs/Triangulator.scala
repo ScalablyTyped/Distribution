@@ -23,8 +23,8 @@ class Triangulator () extends js.Object {
 @JSGlobal("PIXI.spine.core.Triangulator")
 @js.native
 object Triangulator extends js.Object {
-  /* private */ def isConcave(index: js.Any, vertexCount: js.Any, vertices: js.Any, indices: js.Any): js.Any = js.native
-  /* private */ def positiveArea(p1x: js.Any, p1y: js.Any, p2x: js.Any, p2y: js.Any, p3x: js.Any, p3y: js.Any): js.Any = js.native
-  /* private */ def winding(p1x: js.Any, p1y: js.Any, p2x: js.Any, p2y: js.Any, p3x: js.Any, p3y: js.Any): js.Any = js.native
+  var isConcave: js.Any = js.native
+  var positiveArea: js.Any = js.native
+  var winding: js.Any = js.native
 }
 

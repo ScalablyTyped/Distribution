@@ -201,6 +201,15 @@ trait Tracer extends js.Object {
   @JSName("use")
   def use_ioredis(plugin: ddDashTraceLib.ddDashTraceLibStrings.ioredis, config: scala.Boolean): this.type = js.native
   @JSName("use")
+  def use_knex(plugin: ddDashTraceLib.ddDashTraceLibStrings.knex): this.type = js.native
+  @JSName("use")
+  def use_knex(
+    plugin: ddDashTraceLib.ddDashTraceLibStrings.knex,
+    config: ddDashTraceLib.ddDashTraceMod.pluginsNs.knex
+  ): this.type = js.native
+  @JSName("use")
+  def use_knex(plugin: ddDashTraceLib.ddDashTraceLibStrings.knex, config: scala.Boolean): this.type = js.native
+  @JSName("use")
   def use_koa(plugin: ddDashTraceLib.ddDashTraceLibStrings.koa): this.type = js.native
   @JSName("use")
   def use_koa(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ast-types
 
-Typings are for version 0.12.3
+Typings are for version 0.13.1
 
 ## Library description:
 Esprima-compatible implementation of the Mozilla JS Parser API

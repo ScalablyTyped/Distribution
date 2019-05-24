@@ -5,13 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("KPainter")
 @js.native
-/**
-  * Constructs a new KPainter
-  */
-class KPainter () extends js.Object {
-  def this(mbcKey: java.lang.String) = this()
+trait KPainter extends js.Object {
   /**
     The image whose width or height larger than`addedImageMaxWH` would be compressed when adding.
     
@@ -39,10 +34,10 @@ class KPainter () extends js.Object {
   /**
     * @example
   ```javascript
-    // warning: never redefine it if you are not sure
-    // painter.defaultFileInput = document.createElement('input');
-    painter.defaultFileInput.accept = "image/png";
-    painter.defaultFileInput.multiple = false;
+  // warning: never redefine it if you are not sure
+  // painter.defaultFileInput = document.createElement('input');
+  painter.defaultFileInput.accept = "image/png";
+  painter.defaultFileInput.multiple = false;
   ```
     */
   var defaultFileInput: stdLib.HTMLInputElement = js.native
@@ -53,7 +48,7 @@ class KPainter () extends js.Object {
     * Syntax:* `.freeTransformMaxWH = 2048;`
     */
   var freeTransformMaxWH: scala.Double = js.native
-  // Crop
+  // # Crop
   /**
     * Whether show`Crop Rect` UI when enter`Editing` mode
     
@@ -66,7 +61,7 @@ class KPainter () extends js.Object {
     * Syntax:* `.isShowNewImgWhenAdd = true;`
     */
   var isShowNewImgWhenAdd: scala.Boolean = js.native
-  // Gesture
+  // # Gesture
   /**
     * 
     Set the zoom rate when user left double click.
@@ -81,14 +76,14 @@ class KPainter () extends js.Object {
     * Syntax:* `.rightDoubleClickZoomRate = 0.5;`
     */
   var rightDoubleClickZoomRate: scala.Double = js.native
-  // Basic Editor
+  // # Basic Editor
   /**
-    * The can - not - store step(freeTransform, brush) will generate a step image.If the step images' count over `stepImgsGCThreshold`, oldest not protected one would be GC.
+  	* The can - not - store step(freeTransform, brush) will generate a step image.If the step images' count over `stepImgsGCThreshold`, oldest not protected one would be GC.
     
     * Syntax:* `.stepImgsGCThreshold = 10;`
     */
   var stepImgsGCThreshold: scala.Double = js.native
-  // Video
+  // # Video
   var videoSettings: stdLib.MediaStreamConstraints = js.native
   /**
     * Syntax:* `.addImageAsync(imgData, callback)`
@@ -100,9 +95,9 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.addImageAsync(image, function(bSuccess){
+  painter.addImageAsync(image, function(bSuccess){
     console.log('Add success');
-    });
+  });
   ```
     */
   def addImageAsync(imgData: Blob): scala.Unit = js.native
@@ -127,14 +122,14 @@ class KPainter () extends js.Object {
     @example
   ```javascript
     // sample code: save and give up editing about freeTransform mode 
-    document.getElementById('btn-enterFreeTransformMode').addEventListener('click', function(){
+  document.getElementById('btn-enterFreeTransformMode').addEventListener('click', function(){
     // pretect step when enter freeTransform mode
     painter.addProtectedStep(painter.getCurStep());
     // presume that `MBC.loadCvScriptAsync(callback)` has been called and success
     painter.enterFreeTransformModeAsync();
-    });
+  });
     
-    document.getElementById('btn-saveFreeTransform').addEventListener('click', function(){
+  document.getElementById('btn-saveFreeTransform').addEventListener('click', function(){
     // remove the the last pretect step
     var protectedSteps = painter.getProtectedSteps();
     painter.removeProtectedStep(protectedSteps[protectedSteps.length - 1]);
@@ -142,9 +137,9 @@ class KPainter () extends js.Object {
     painter.freeTransformAsync(function(){
     painter.exitFreeTransformModeAsync();
     });
-    });
+  });
     
-    document.getElementById('btn-giveUpFreeTransform').addEventListener('click', function(){
+  document.getElementById('btn-giveUpFreeTransform').addEventListener('click', function(){
     // pretect step when enter freeTransform mode
     var protectedSteps = painter.getProtectedSteps();
     var lastPretectedStep = protectedSteps[protectedSteps.length - 1];
@@ -155,7 +150,7 @@ class KPainter () extends js.Object {
     // jump to the last pretect step
     painter.setCurStepAsync(lastPretectedStep);
     });
-    });
+  });
   ```
     */
   def addProtectedStep(index: scala.Double): scala.Boolean = js.native
@@ -165,9 +160,9 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.afterAddImgFromDropFile = function(bSuccess){
+  painter.afterAddImgFromDropFile = function(bSuccess){
     if(bSuccess){console.log('The new image(s) has been added from dropping.');}
-    };
+  };
   ```
     * 
     */
@@ -179,9 +174,9 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.afterAddImgFromFileChooseWindow = function(bSuccess){
+  painter.afterAddImgFromFileChooseWindow = function(bSuccess){
     if(bSuccess){console.log('The new image(s) has been added from file choose window.');}
-    };
+  };
   ```
     */
   def afterAddImgFromFileChooseWindow(): scala.Unit = js.native
@@ -190,9 +185,9 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.afterAddImgFromGrabVideoBtn = function(bSuccess){
+  painter.afterAddImgFromGrabVideoBtn = function(bSuccess){
     if(bSuccess){console.log('The new image(s) has been added from video.');}
-    };
+  };
   ```
     */
   def afterAddImgFromGrabVideoBtn(): scala.Unit = js.native
@@ -200,7 +195,7 @@ class KPainter () extends js.Object {
     * Syntax:* `function(event, callback){}`    
     @example
   ```javascript
-    painter.beforeAddImgFromDropFile = function(ev, callback){
+  painter.beforeAddImgFromDropFile = function(ev, callback){
     var files = ev.dataTransfer.files;
     var newBlobs = [];
     var finishedIndex = 0;
@@ -213,7 +208,7 @@ class KPainter () extends js.Object {
     }
     });
     }
-    };
+  };
   ```
     */
   def beforeAddImgFromDropFile(): js.Any = js.native
@@ -224,7 +219,7 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.beforeAddImgFromFileChooseWindow = function(ev, callback){
+  painter.beforeAddImgFromFileChooseWindow = function(ev, callback){
     var files = ev.target.files;
     var newBlobs = [];
     var finishedIndex = 0;
@@ -237,7 +232,7 @@ class KPainter () extends js.Object {
     }
     });
     }
-    };
+  };
   ```
     */
   def beforeAddImgFromFileChooseWindow(): scala.Unit = js.native
@@ -246,11 +241,11 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.beforeAddImgFromGrabVideoBtn = function(canvas, callback){
+  painter.beforeAddImgFromGrabVideoBtn = function(canvas, callback){
     doSomeWorkToGetNewSrc(canvas, function(srcValidForAddImage){
     callback(srcValidForAddImage);
     });
-    };
+  };
   ```
     */
   def beforeAddImgFromGrabVideoBtn(): scala.Unit = js.native
@@ -266,7 +261,7 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.bindThumbnailBox(document.getElementById('div-thumbnailContainer'), function(cvs){
+  painter.bindThumbnailBox(document.getElementById('div-thumbnailContainer'), function(cvs){
     console.log(cvs.className);// 'kPainterThumbnailCanvas', never remove this class
     var box = document.createElement('div');
     box.className = 'div-thumbnailBox';
@@ -276,7 +271,7 @@ class KPainter () extends js.Object {
     painter.changePage(idx);
     });
     return box;
-    });
+  });
   ```
     */
   def bindThumbnailBox(container: stdLib.HTMLElement): scala.Boolean = js.native
@@ -305,21 +300,21 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    document.getElementById('btn-first').addEventListener('click', function(){
+  document.getElementById('btn-first').addEventListener('click', function(){
     painter.changePage('f');
-    });
-    document.getElementById('btn-pre').addEventListener('click', function(){
+  });
+  document.getElementById('btn-pre').addEventListener('click', function(){
     painter.changePage('p');
-    });
-    document.getElementById('btn-next').addEventListener('click', function(){
+  });
+  document.getElementById('btn-next').addEventListener('click', function(){
     painter.changePage('n');
-    });
-    document.getElementById('btn-last').addEventListener('click', function(){
+  });
+  document.getElementById('btn-last').addEventListener('click', function(){
     painter.changePage('l');
-    });
-    document.getElementById('btn-toThisPage').addEventListener('click', function(){
+  });
+  document.getElementById('btn-toThisPage').addEventListener('click', function(){
     painter.changePage(parseInt(document.getElementById('ipt-page').value));
-    });
+  });
   ```
     */
   def changePage(cmd: scala.Double): scala.Boolean = js.native
@@ -349,7 +344,7 @@ class KPainter () extends js.Object {
     
     */
   def del(index: scala.Double): scala.Boolean = js.native
-  // Free Transform
+  // # Free Transform
   /**
     * You should call`KPainter.loadCvScriptAsync()` first before use`FreeTransform` mode.
     */
@@ -379,11 +374,11 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    document.getElementById('btn-download').addEventListener('click', function(){
+  document.getElementById('btn-download').addEventListener('click', function(){
     for(var i = 0; i < painter.getCount(); ++i){
     painter.download(null, i);
     }
-    });
+  });
   ```
     */
   def download(): scala.Double = js.native
@@ -531,25 +526,24 @@ class KPainter () extends js.Object {
   /**
     * @example    
   ```javascript
-    var painterDom = painter.getHtmlElement();
-    painterDom.style.width = '100%';
-    painterDom.style.height = '100%';
-    document.getElementById('painter-container').appendChild(painterDom);
+  var painterDom = painter.getHtmlElement();
+  painterDom.style.width = '100%';
+  painterDom.style.height = '100%';
+  document.getElementById('painter-container').appendChild(painterDom);
   ```
     * 
     */
   def getHtmlElement(): stdLib.HTMLDivElement = js.native
   /**
     *
-  @example
-  ```javascript
-    // A way to access to inner data. Don't modify it if you are not sure.
-    var imgOri = painter.getImage(true);
-    // This image can be used in any place and free to modify it.
-    var imgCopyed = painter.getImage();
-    imgCopyed.style.width = '100px';
-    imgCopyed.style.height = '100px';
-    document.getElementById('image-container').appendChild(imgCopyed);
+  @example```javascript
+  // A way to access to inner data. Don't modify it if you are not sure.
+  var imgOri = painter.getImage(true);
+  // This image can be used in any place and free to modify it.
+  var imgCopyed = painter.getImage();
+  imgCopyed.style.width = '100px';
+  imgCopyed.style.height = '100px';
+  document.getElementById('image-container').appendChild(imgCopyed);
   ```
     */
   def getImage(isOri: scala.Boolean, index: scala.Double): stdLib.HTMLImageElement = js.native
@@ -644,11 +638,11 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.onCropRectChange = function(){
+  painter.onCropRectChange = function(){
     var cropArea = painter.getCropRectArea(true);
     document.getElementById('cropWidth').innerText = cropArea[2] - cropArea[0];
     document.getElementById('cropHeight').innerText = cropArea[3] - cropArea[1];
-    };
+  };
   ```
     */
   def onCropRectChange(): scala.Unit = js.native
@@ -671,9 +665,9 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.onFreeTransformCornerPosChange = function(){
+  painter.onFreeTransformCornerPosChange = function(){
     console.log(painter.getFreeTransformCornerPos());
-    };
+  };
   ```
     */
   def onFreeTransformCornerPosChange(): scala.Unit = js.native
@@ -684,20 +678,19 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.onNumChange = function(curIndex, length){
+  painter.onNumChange = function(curIndex, length){
     console.log('curIndex: '+curIndex+', length:'+length);
-    };
+  };
   ``` 
     */
   def onNumChange(curIndex: scala.Double, length: scala.Double): scala.Unit = js.native
   /**
     * Binding a function that would be called when starting an expensive operation.    
     * Syntax:* `function(){}`    
-  @example
-  ```javascript
-    painter.onStartLoading = function(){
+  @example```javascript
+  painter.onStartLoading = function(){
     document.getElementById('animation').show();
-    };
+  };
   ```
     */
   def onStartLoading(): scala.Unit = js.native
@@ -708,11 +701,11 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.onUpdateImgPosZoom(function(){
+  painter.onUpdateImgPosZoom(function(){
     console.log(painter.getZoom());
     console.log(painter.getEditWidth());
     console.log(painter.getEditHeight());
-    });
+  });
   ```
     */
   def onUpdateImgPosZoom(): scala.Unit = js.native
@@ -847,18 +840,18 @@ class KPainter () extends js.Object {
     * Syntax:* `.showCropRect()`
     */
   def showCropRect(): scala.Unit = js.native
-  // Image Store
+  // # Image Store
   /**
     * Show file choose window by click the hidden file input.Can't process during `Editing` mode.
     * @example
   ```javascript
-    document.getElementById('btn-add-image').addEventListener('click', function(){
+  document.getElementById('btn-add-image').addEventListener('click', function(){
     painter.showFileChooseWindow();
-    });
+  });
   ```
     */
   def showFileChooseWindow(): scala.Boolean = js.native
-  // `MediaStreamConstraints`.videoSettings
+  // ## `MediaStreamConstraints`.videoSettings
   /**
     A[MediaStreamConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints).
     
@@ -884,7 +877,7 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    painter.bindThumbnailBox(document.getElementById('div-thumbnailContainer'));
+  painter.bindThumbnailBox(document.getElementById('div-thumbnailContainer'));
   ```
     */
   def unbindThumbnailBox(container: stdLib.HTMLElement): scala.Boolean = js.native
@@ -910,11 +903,11 @@ class KPainter () extends js.Object {
     
     @example
   ```javascript
-    window.addEventListener('resize',function(){
+  window.addEventListener('resize',function(){
     painter.updateUIOnResize(true, function(){
     console.log('painter update');
     });
-    });
+  });
   ```
     */
   def updateUIOnResize(): scala.Unit = js.native

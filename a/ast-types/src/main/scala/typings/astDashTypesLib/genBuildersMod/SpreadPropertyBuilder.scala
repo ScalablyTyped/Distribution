@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SpreadPropertyBuilder extends js.Object {
-  def apply(argument: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.SpreadProperty = js.native
-  def from(params: astDashTypesLib.Anon_ArgumentComments): astDashTypesLib.genNodesMod.SpreadProperty = js.native
+  def apply(argument: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadProperty = js.native
+  def from(params: astDashTypesLib.Anon_ArgumentComments): astDashTypesLib.genNamedTypesMod.namedTypesNs.SpreadProperty = js.native
 }
 

@@ -7,13 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmlcreate", "XmlDtdParamEntityRef")
 @js.native
-class XmlDtdParamEntityRef protected ()
-  extends xmlcreateLib.libNodesXmlDtdParamEntityRefMod.default {
-  /**
-    * Initializes a new instance of the {@link XmlDtdParamEntityRef} class.
-    *
-    * @param entity The entity to be referenced.
-    */
-  def this(entity: java.lang.String) = this()
+class XmlDtdParamEntityRef[Parent] protected ()
+  extends xmlcreateLib.libNodesXmlDtdParamEntityRefMod.default[Parent] {
+  def this(parent: Parent, validation: scala.Boolean, options: xmlcreateLib.libNodesXmlDtdParamEntityRefMod.IXmlDtdParamEntityRefOptions) = this()
 }
 

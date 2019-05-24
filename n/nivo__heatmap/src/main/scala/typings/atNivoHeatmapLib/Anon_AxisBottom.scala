@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AxisBottom extends js.Object {
-  var axisBottom: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any
-  var axisLeft: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any
-  var axisRight: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any
-  var axisTop: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any
-  var cellBorderColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor]
+  var axisBottom: atNivoAxesLib.atNivoAxesMod.Axis
+  var axisLeft: atNivoAxesLib.atNivoAxesMod.Axis
+  var axisRight: atNivoAxesLib.atNivoAxesMod.Axis
+  var axisTop: atNivoAxesLib.atNivoAxesMod.Axis
+  var cellBorderColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor]
   var cellBorderWidth: scala.Double
   var cellHoverOpacity: scala.Double
   var cellHoverOthersOpacity: scala.Double
@@ -22,7 +22,7 @@ trait Anon_AxisBottom extends js.Object {
   var forceSquare: scala.Boolean
   var hoverTarget: atNivoHeatmapLib.atNivoHeatmapLibStrings.cell | atNivoHeatmapLib.atNivoHeatmapLibStrings.row | atNivoHeatmapLib.atNivoHeatmapLibStrings.column | atNivoHeatmapLib.atNivoHeatmapLibStrings.rowColumn
   var isInteractive: scala.Boolean
-  var labelTextColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor]
+  var labelTextColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor]
   var margin: atNivoCoreLib.atNivoCoreMod.Box
   var padding: scala.Double
   var sizeVariation: scala.Double
@@ -33,11 +33,11 @@ trait Anon_AxisBottom extends js.Object {
 object Anon_AxisBottom {
   @scala.inline
   def apply(
-    axisBottom: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any,
-    axisLeft: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any,
-    axisRight: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any,
-    axisTop: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Axis */ js.Any,
-    cellBorderColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor],
+    axisBottom: atNivoAxesLib.atNivoAxesMod.Axis,
+    axisLeft: atNivoAxesLib.atNivoAxesMod.Axis,
+    axisRight: atNivoAxesLib.atNivoAxesMod.Axis,
+    axisTop: atNivoAxesLib.atNivoAxesMod.Axis,
+    cellBorderColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor],
     cellBorderWidth: scala.Double,
     cellHoverOpacity: scala.Double,
     cellHoverOthersOpacity: scala.Double,
@@ -49,7 +49,7 @@ object Anon_AxisBottom {
     forceSquare: scala.Boolean,
     hoverTarget: atNivoHeatmapLib.atNivoHeatmapLibStrings.cell | atNivoHeatmapLib.atNivoHeatmapLibStrings.row | atNivoHeatmapLib.atNivoHeatmapLibStrings.column | atNivoHeatmapLib.atNivoHeatmapLibStrings.rowColumn,
     isInteractive: scala.Boolean,
-    labelTextColor: java.lang.String | atNivoCoreLib.atNivoCoreMod.GetColor[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor],
+    labelTextColor: atNivoColorsLib.atNivoColorsMod.InheritedColorProp[atNivoHeatmapLib.atNivoHeatmapMod.HeatMapDatumWithColor],
     margin: atNivoCoreLib.atNivoCoreMod.Box,
     padding: scala.Double,
     sizeVariation: scala.Double,

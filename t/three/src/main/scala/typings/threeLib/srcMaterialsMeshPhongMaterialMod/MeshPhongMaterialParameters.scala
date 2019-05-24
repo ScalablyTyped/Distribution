@@ -28,6 +28,7 @@ trait MeshPhongMaterialParameters
   var morphNormals: js.UndefOr[scala.Boolean] = js.undefined
   var morphTargets: js.UndefOr[scala.Boolean] = js.undefined
   var normalMap: js.UndefOr[threeLib.srcTexturesTextureMod.Texture] = js.undefined
+  var normalMapType: js.UndefOr[threeLib.srcConstantsMod.NormalMapTypes] = js.undefined
   var normalScale: js.UndefOr[threeLib.srcMathVector2Mod.Vector2] = js.undefined
   var reflectivity: js.UndefOr[scala.Double] = js.undefined
   var refractionRatio: js.UndefOr[scala.Double] = js.undefined
@@ -84,6 +85,7 @@ object MeshPhongMaterialParameters {
     morphTargets: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     normalMap: threeLib.srcTexturesTextureMod.Texture = null,
+    normalMapType: threeLib.srcConstantsMod.NormalMapTypes = null,
     normalScale: threeLib.srcMathVector2Mod.Vector2 = null,
     opacity: scala.Int | scala.Double = null,
     overdraw: scala.Int | scala.Double = null,
@@ -149,6 +151,7 @@ object MeshPhongMaterialParameters {
     if (!js.isUndefined(morphTargets)) __obj.updateDynamic("morphTargets")(morphTargets)
     if (name != null) __obj.updateDynamic("name")(name)
     if (normalMap != null) __obj.updateDynamic("normalMap")(normalMap)
+    if (normalMapType != null) __obj.updateDynamic("normalMapType")(normalMapType)
     if (normalScale != null) __obj.updateDynamic("normalScale")(normalScale)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (overdraw != null) __obj.updateDynamic("overdraw")(overdraw.asInstanceOf[js.Any])

@@ -12,4 +12,5 @@ package object atNivoLegendsMod {
     /* event */ reactLib.reactMod.MouseEvent[js.Any, reactLib.NativeMouseEvent], 
     scala.Unit
   ]
+  type QuantileLegendSvg = reactLib.reactMod.FunctionComponent[QuantileLegendProps]
 }

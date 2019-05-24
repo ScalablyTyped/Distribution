@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @material-ui/core.@material-ui/core/TextField/TextField.StandardTextFieldProps | @material-ui/core.@material-ui/core/TextField/TextField.FilledTextFieldProps | @material-ui/core.@material-ui/core/TextField/TextField.OutlinedTextFieldProps */
 trait TextFieldProps extends js.Object {
-  var FormHelperTextProps: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps]
-  ] = js.undefined
-  var InputLabelProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelProps]] = js.undefined
+  var FormHelperTextProps: js.UndefOr[atMaterialDashUiCoreLib.PartialFormHelperTextProps] = js.undefined
+  var InputLabelProps: js.UndefOr[atMaterialDashUiCoreLib.PartialInputLabelProps] = js.undefined
   var InputProps: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps | atMaterialDashUiCoreLib.inputInputMod.InputProps | atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputProps
-    ]
+    atMaterialDashUiCoreLib.PartialFilledInputProps | atMaterialDashUiCoreLib.PartialInputProps | atMaterialDashUiCoreLib.PartialOutlinedInputProps
   ] = js.undefined
-  var SelectProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]] = js.undefined
+  var SelectProps: js.UndefOr[atMaterialDashUiCoreLib.PartialSelectProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.undefined
@@ -120,9 +116,7 @@ trait TextFieldProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TextFieldClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapTextFieldClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps]
@@ -356,10 +350,10 @@ trait TextFieldProps extends js.Object {
 object TextFieldProps {
   @scala.inline
   def apply(
-    FormHelperTextProps: stdLib.Partial[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps] = null,
-    InputLabelProps: stdLib.Partial[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelProps] = null,
-    InputProps: stdLib.Partial[atMaterialDashUiCoreLib.inputInputMod.InputProps] = null,
-    SelectProps: stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps] = null,
+    FormHelperTextProps: atMaterialDashUiCoreLib.PartialFormHelperTextProps = null,
+    InputLabelProps: atMaterialDashUiCoreLib.PartialInputLabelProps = null,
+    InputProps: atMaterialDashUiCoreLib.PartialInputProps = null,
+    SelectProps: atMaterialDashUiCoreLib.PartialSelectProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     `aria-activedescendant`: java.lang.String = null,
@@ -417,7 +411,7 @@ object TextFieldProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TextFieldClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapTextFieldClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

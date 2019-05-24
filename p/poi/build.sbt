@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "poi"
-version := "12.5-dt-20190414Z-054684"
+version := "12.5-dt-20190414Z-4ee48f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-9371e4",
   "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-31ec11",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d00fa7",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-b7b8c5",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190429Z-f78ef5",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-c82842",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190522Z-5df1c7",
   "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190212Z-9f2fd8",
   "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-93f861",
   "org.scalablytyped" %%% "http-proxy" % "1.17-dt-20190301Z-b1ea57",
@@ -19,14 +19,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20190322Z-0fc3e5",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-58ff5f",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-e7fc9c",
   "org.scalablytyped" %%% "source-map" % "0.7.3-c62343",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-98777a",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-32bf87",
   "org.scalablytyped" %%% "webpack" % "4.4-dt-20190521Z-b38fdf",
-  "org.scalablytyped" %%% "webpack-chain" % "5.2.4-46e105",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190330Z-8f75a0")
+  "org.scalablytyped" %%% "webpack-chain" % "6.0.0-46e105",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190330Z-735adc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

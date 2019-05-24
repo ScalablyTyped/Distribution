@@ -261,6 +261,10 @@ package object clientsDevicefarmMod {
   type SshPublicKey = java.lang.String
   type String = java.lang.String
   type Suites = js.Array[Suite]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type TestParameters = org.scalablytyped.runtime.StringDictionary[String]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.BUILTIN_FUZZ

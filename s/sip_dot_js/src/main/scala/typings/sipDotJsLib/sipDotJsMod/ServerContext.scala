@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServerContext protected ()
   extends sipDotJsLib.libServerContextMod.ServerContext {
-  def this(ua: sipDotJsLib.libUAMod.UA, request: sipDotJsLib.libSIPMessageMod.IncomingRequest) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest) = this()
 }
 
 /* static members */
@@ -19,7 +19,7 @@ object ServerContext extends js.Object {
   def initializer(
     objectToConstruct: sipDotJsLib.libServerContextMod.ServerContext,
     ua: sipDotJsLib.libUAMod.UA,
-    request: sipDotJsLib.libSIPMessageMod.IncomingRequest
+    incomingRequest: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest
   ): scala.Unit = js.native
 }
 

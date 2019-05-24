@@ -1,7 +1,7 @@
 
 # Scala.js typings for reactjs-popup
 
-Typings are for version 1.3.2
+Typings are for version 1.4.1
 
 ## Library description:
 React Popup Component - Modals,Tooltips and Menus —  All in one

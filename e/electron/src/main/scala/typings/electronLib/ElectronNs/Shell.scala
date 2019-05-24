@@ -20,13 +20,14 @@ trait Shell extends js.Object {
     * Open the given external protocol URL in the desktop's default manner. (For
     * example, mailto: URLs in the user's default mail agent).
     */
-  def openExternal(url: java.lang.String): scala.Boolean = js.native
-  def openExternal(url: java.lang.String, options: OpenExternalOptions): scala.Boolean = js.native
-  def openExternal(
-    url: java.lang.String,
-    options: OpenExternalOptions,
-    callback: js.Function1[/* error */ stdLib.Error, scala.Unit]
-  ): scala.Boolean = js.native
+  def openExternal(url: java.lang.String): js.Promise[scala.Unit] = js.native
+  def openExternal(url: java.lang.String, options: OpenExternalOptions): js.Promise[scala.Unit] = js.native
+  /**
+    * Open the given external protocol URL in the desktop's default manner. (For
+    * example, mailto: URLs in the user's default mail agent).
+    */
+  def openExternalSync(url: java.lang.String): scala.Boolean = js.native
+  def openExternalSync(url: java.lang.String, options: OpenExternalSyncOptions): scala.Boolean = js.native
   /**
     * Open the given file in the desktop's default manner.
     */

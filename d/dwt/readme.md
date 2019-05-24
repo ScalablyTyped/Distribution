@@ -1,7 +1,7 @@
 
 # Scala.js typings for dwt
 
-Typings are for version 14.4
+Typings are for version 14.3
 
 ## Library description:
 Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanning SDK software specifically designed for web applications running on Windows/macOS/Linux. With just a few lines of code, you can develop robust applications to scan documents from TWAIN/ICA/SANE-compatibl
@@ -35,9 +35,19 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
+// tslint:disable:jsdoc-format
+// tslint:disable:max-line-length
+// tslint:disable:no-irregular-whitespace
+/*!
+* Product: Dynamsoft Web Twain
+* Web Site: http://www.dynamsoft.com
+*
+* Copyright 2019, Dynamsoft Corporation
+* Author: Dynamsoft Support Team
+*/
+
 /** -2400 to -2499 is webcam error code */
-// properties (get/set) / sync functions
-// Type definitions for dwt 14.4
+// Type definitions for dwt 14.3
 // Project: https://www.dynamsoft.com/products/webtwain_overview.aspx
 // Definitions by: Xiao Ling <https://github.com/yushulx>
 //                 Josh Hall <https://github.com/jbh>
@@ -45,20 +55,27 @@ These comments are from the typescript definitions and might be useful:
 //                 Tom Kent <https://github.com/Tom-Dynamsoft>
 //                 Dave Sueltenfuss <https://github.com/dsueltenfuss>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.4
-/**`constructor` MBC()
- * Syntax:* `new MBC(license)`
- * | parameter | type | description |
- * |  |  |  |
- * | license | `String` | |
- * example:*
+// TypeScript Version: 3.1
+/** 
+ 
+## `constructor` MBC()
+ 
+*Syntax:* `new MBC(license)`
+ 
+| parameter | type | description |
+|  |  |  |
+| license | `String` | |
+ 
+*example:*
 ```javascript
-    // MBC without a license can be used for evaluation purposes. It is not stable for long time usage.
-    var painter = new MBC();
-    // MBC need a license in production environments.
-    painter = new MBC('xxxxx');
+// MBC without a license can be used for evaluation purposes. It is not stable for long time usage.
+var painter = new MBC();
+// MBC need a license in production environments.
+painter = new MBC('xxxxx');
 ```
- */
+*/
+
+// export = KPainter;
 
 ```
 

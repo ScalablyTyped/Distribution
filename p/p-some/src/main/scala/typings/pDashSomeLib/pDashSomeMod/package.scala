@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 package object pDashSomeMod {
   type AggregateError = pDashSomeLib.AggregateError_
-  type CancelablePromise[ValueType] = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PCancelable<ValueType> */ js.Any
+  type AggregateErrorConstructor = org.scalablytyped.runtime.Instantiable1[
+    /* errors */ js.Array[
+      stdLib.Error | org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String
+    ], 
+    aggregateDashErrorLib.aggregateDashErrorMod.^
+  ]
+  type CancelablePromise[ValueType] = pDashCancelableLib.pDashCancelableMod.^[ValueType]
   type Value[T] = T | js.Thenable[T]
 }

@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Paper.PaperProps, @material-ui/core.@material-ui/core/MobileStepper/MobileStepper.MobileStepperClassKey, never> */
 trait MobileStepperProps extends js.Object {
-  var LinearProgressProps: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps]
-  ] = js.undefined
+  var LinearProgressProps: js.UndefOr[atMaterialDashUiCoreLib.PartialLinearProgressProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var activeStep: js.UndefOr[scala.Double] = js.undefined
@@ -113,9 +111,7 @@ trait MobileStepperProps extends js.Object {
   var backButton: reactLib.reactMod.ReactElement[_]
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MobileStepperClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapMobileStepperClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -336,7 +332,7 @@ object MobileStepperProps {
     backButton: reactLib.reactMod.ReactElement[_],
     nextButton: reactLib.reactMod.ReactElement[_],
     steps: scala.Double,
-    LinearProgressProps: stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps] = null,
+    LinearProgressProps: atMaterialDashUiCoreLib.PartialLinearProgressProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     activeStep: scala.Int | scala.Double = null,
@@ -393,7 +389,7 @@ object MobileStepperProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MobileStepperClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapMobileStepperClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

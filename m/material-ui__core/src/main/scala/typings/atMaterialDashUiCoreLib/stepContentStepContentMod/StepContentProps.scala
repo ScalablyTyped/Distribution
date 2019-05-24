@@ -114,9 +114,7 @@ trait StepContentProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: reactLib.reactMod.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepContentClasskey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapStepContentClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -389,7 +387,7 @@ object StepContentProps {
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[StepContentClasskey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapStepContentClasskey = null,
     color: java.lang.String = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

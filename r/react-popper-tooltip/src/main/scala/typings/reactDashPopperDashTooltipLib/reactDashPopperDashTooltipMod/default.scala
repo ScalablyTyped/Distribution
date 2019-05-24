@@ -14,7 +14,6 @@ class default ()
 @JSImport("react-popper-tooltip", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextType: reactLib.reactMod.Context[js.Object] = js.native
   var defaultProps: reactDashPopperDashTooltipLib.Anon_CloseOnOutOfBoundaries = js.native
 }
 

@@ -121,6 +121,18 @@ object xmldsigjsLibStrings {
   @js.native
   sealed trait `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#rsa-pss` extends js.Object
   
+  @js.native
+  sealed trait `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha1-rsa-MGF1` extends js.Object
+  
+  @js.native
+  sealed trait `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha256-rsa-MGF1` extends js.Object
+  
+  @js.native
+  sealed trait `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1` extends js.Object
+  
+  @js.native
+  sealed trait `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1` extends js.Object
+  
   @scala.inline
   def ECDSA: ECDSA = "ECDSA".asInstanceOf[ECDSA]
   @scala.inline
@@ -189,5 +201,13 @@ object xmldsigjsLibStrings {
   def `http://wwwDOTw3DOTorg/2001/04/xmlenc#sha512`: `http://wwwDOTw3DOTorg/2001/04/xmlenc#sha512` = "http://www.w3.org/2001/04/xmlenc#sha512".asInstanceOf[`http://wwwDOTw3DOTorg/2001/04/xmlenc#sha512`]
   @scala.inline
   def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#rsa-pss`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#rsa-pss` = "http://www.w3.org/2007/05/xmldsig-more#rsa-pss".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#rsa-pss`]
+  @scala.inline
+  def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha1-rsa-MGF1`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha1-rsa-MGF1` = "http://www.w3.org/2007/05/xmldsig-more#sha1-rsa-MGF1".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha1-rsa-MGF1`]
+  @scala.inline
+  def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha256-rsa-MGF1`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha256-rsa-MGF1` = "http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha256-rsa-MGF1`]
+  @scala.inline
+  def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1` = "http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha384-rsa-MGF1`]
+  @scala.inline
+  def `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1`: `http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1` = "http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1".asInstanceOf[`http://wwwDOTw3DOTorg/2007/05/xmldsig-more#sha512-rsa-MGF1`]
 }
 

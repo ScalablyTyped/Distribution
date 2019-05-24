@@ -14,5 +14,6 @@ package object keycloakDashJsMod {
   */
   type KeycloakAdapterName = _KeycloakAdapterName | js.Any
   type KeycloakPromiseCallback[T] = js.Function1[/* result */ T, scala.Unit]
+  type KeycloakPromiseType = keycloakDashJsLib.keycloakDashJsLibStrings.native
   type KeycloakResourceAccess = org.scalablytyped.runtime.StringDictionary[KeycloakRoles]
 }

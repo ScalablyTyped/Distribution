@@ -64,7 +64,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **41**  |   No   |  No  | No  |
+    * | **69** | **41**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end
     */
@@ -74,7 +74,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **41**  |   No   |  No  | No  |
+    * | **69** | **41**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start
     */
@@ -125,7 +125,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **41**  |   No   | n/a  | No  |
+    * | **69** | **41**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end
     */
@@ -135,7 +135,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **41**  |   No   | n/a  | No  |
+    * | **69** | **41**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start
     */
@@ -206,10 +206,10 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
     *
-    * | Chrome |  Firefox  |   Safari    |     Edge     |   IE   |
-    * | :----: | :-------: | :---------: | :----------: | :----: |
-    * | **50** |  **52**   | **3** _-x-_ | **12** _-x-_ | **10** |
-    * |        | 3.5 _-x-_ |             |              |        |
+    * | Chrome |  Firefox  |   Safari    |  Edge  |   IE   |
+    * | :----: | :-------: | :---------: | :----: | :----: |
+    * | **50** |  **52**   | **3** _-x-_ | **12** | **10** |
+    * |        | 3.5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule
     */
@@ -379,7 +379,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * |    Chrome     | Firefox | Safari | Edge | IE  |
     * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     |   n/a   |  n/a   | n/a  | n/a |
+    * |    **55**     |   No    |   No   |  No  | n/a |
     * | 46 _(motion)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
@@ -390,7 +390,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * |    Chrome     | Firefox | Safari | Edge | IE  |
     * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     |   n/a   |  n/a   | n/a  | n/a |
+    * |    **55**     |   No    |   No   |  No  | n/a |
     * | 46 _(motion)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
@@ -479,7 +479,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * |    Chrome    | Firefox |    Safari     | Edge | IE  |
     * | :----------: | :-----: | :-----------: | :--: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** _-x-_ | n/a  | No  |
+    * | **25** _-x-_ | **46**  | **6.1** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis
     */

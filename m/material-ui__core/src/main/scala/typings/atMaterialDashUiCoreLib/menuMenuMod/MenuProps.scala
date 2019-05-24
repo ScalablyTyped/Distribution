@@ -10,19 +10,11 @@ trait MenuProps extends js.Object {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
-  var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
-  var MenuListProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps]] = js.undefined
-  var ModalClasses: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
-    ]
-  ] = js.undefined
-  var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var PopoverClasses: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
-    ]
-  ] = js.undefined
+  var BackdropProps: js.UndefOr[atMaterialDashUiCoreLib.PartialBackdropProps] = js.undefined
+  var MenuListProps: js.UndefOr[atMaterialDashUiCoreLib.PartialMenuListProps] = js.undefined
+  var ModalClasses: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapModalClassKey] = js.undefined
+  var PaperProps: js.UndefOr[atMaterialDashUiCoreLib.PartialPaperProps] = js.undefined
+  var PopoverClasses: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapPopoverClassKey] = js.undefined
   var TransitionComponent: js.UndefOr[
     reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
@@ -137,9 +129,7 @@ trait MenuProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuClassKey]]
-  ] = js.undefined
+  var classes: js.UndefOr[atMaterialDashUiCoreLib.PartialClassNameMapMenuClassKey] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance]] = js.undefined
@@ -380,15 +370,11 @@ object MenuProps {
   def apply(
     open: scala.Boolean,
     BackdropComponent: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    MenuListProps: stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps] = null,
-    ModalClasses: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
-    ] = null,
-    PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    PopoverClasses: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
-    ] = null,
+    BackdropProps: atMaterialDashUiCoreLib.PartialBackdropProps = null,
+    MenuListProps: atMaterialDashUiCoreLib.PartialMenuListProps = null,
+    ModalClasses: atMaterialDashUiCoreLib.PartialClassNameMapModalClassKey = null,
+    PaperProps: atMaterialDashUiCoreLib.PartialPaperProps = null,
+    PopoverClasses: atMaterialDashUiCoreLib.PartialClassNameMapPopoverClassKey = null,
     TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
     about: java.lang.String = null,
@@ -451,7 +437,7 @@ object MenuProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuClassKey]] = null,
+    classes: atMaterialDashUiCoreLib.PartialClassNameMapMenuClassKey = null,
     closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TablePaginationActionsProps
   extends reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] {
-  var backIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.native
+  var backIconButtonProps: js.UndefOr[atMaterialDashUiCoreLib.PartialIconButtonProps] = js.native
   var count: scala.Double = js.native
-  var nextIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.native
+  var nextIconButtonProps: js.UndefOr[atMaterialDashUiCoreLib.PartialIconButtonProps] = js.native
   var page: scala.Double = js.native
   var rowsPerPage: scala.Double = js.native
   def onChangePage(
