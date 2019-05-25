@@ -4192,6 +4192,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCodebuildMod._SourceType
   
   @js.native
+  sealed trait CODEDEPLOY_RESOURCE_CANNOT_BE_FOUND
+    extends awsDashSdkLib.clientsCodedeployMod._ErrorCode
+  
+  @js.native
   sealed trait CODEPIPELINE
     extends awsDashSdkLib.clientsCodebuildMod._ArtifactsType
        with awsDashSdkLib.clientsCodebuildMod._SourceType
@@ -4929,6 +4933,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CUSTOMER
     extends awsDashSdkLib.clientsKmsMod._KeyManagerType
+  
+  @js.native
+  sealed trait CUSTOMER_APPLICATION_UNHEALTHY
+    extends awsDashSdkLib.clientsCodedeployMod._ErrorCode
   
   @js.native
   sealed trait CUSTOMER_ARTIFACT
@@ -16487,6 +16495,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsFmsMod._ViolationReason
   
   @js.native
+  sealed trait RESOURCE_LIMIT_EXCEEDED
+    extends awsDashSdkLib.clientsCodedeployMod._ErrorCode
+  
+  @js.native
   sealed trait RESOURCE_MISSING_SHIELD_PROTECTION
     extends awsDashSdkLib.clientsFmsMod._ViolationReason
   
@@ -18351,6 +18363,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSnowballMod._SnowballType
        with awsDashSdkLib.clientsS3Mod._StorageClass
        with awsDashSdkLib.clientsGlacierMod._StorageClass
+       with awsDashSdkLib.clientsMediastoredataMod._UploadAvailability
   
   @js.native
   sealed trait STANDARD_IA
@@ -18551,6 +18564,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait STORAGE_USED
     extends awsDashSdkLib.clientsWorkdocsMod._UserSortType
+  
+  @js.native
+  sealed trait STREAMING
+    extends awsDashSdkLib.clientsMediastoredataMod._UploadAvailability
   
   @js.native
   sealed trait STRENGTH
@@ -29961,6 +29978,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CODECOMMIT: CODECOMMIT = "CODECOMMIT".asInstanceOf[CODECOMMIT]
   @scala.inline
+  def CODEDEPLOY_RESOURCE_CANNOT_BE_FOUND: CODEDEPLOY_RESOURCE_CANNOT_BE_FOUND = "CODEDEPLOY_RESOURCE_CANNOT_BE_FOUND".asInstanceOf[CODEDEPLOY_RESOURCE_CANNOT_BE_FOUND]
+  @scala.inline
   def CODEPIPELINE: CODEPIPELINE = "CODEPIPELINE".asInstanceOf[CODEPIPELINE]
   @scala.inline
   def CODE_DEPLOY: CODE_DEPLOY = "CODE_DEPLOY".asInstanceOf[CODE_DEPLOY]
@@ -30230,6 +30249,8 @@ object awsDashSdkLibStrings {
   def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   @scala.inline
   def CUSTOMER: CUSTOMER = "CUSTOMER".asInstanceOf[CUSTOMER]
+  @scala.inline
+  def CUSTOMER_APPLICATION_UNHEALTHY: CUSTOMER_APPLICATION_UNHEALTHY = "CUSTOMER_APPLICATION_UNHEALTHY".asInstanceOf[CUSTOMER_APPLICATION_UNHEALTHY]
   @scala.inline
   def CUSTOMER_ARTIFACT: CUSTOMER_ARTIFACT = "CUSTOMER_ARTIFACT".asInstanceOf[CUSTOMER_ARTIFACT]
   @scala.inline
@@ -34913,6 +34934,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def RESOURCE_INCORRECT_WEB_ACL: RESOURCE_INCORRECT_WEB_ACL = "RESOURCE_INCORRECT_WEB_ACL".asInstanceOf[RESOURCE_INCORRECT_WEB_ACL]
   @scala.inline
+  def RESOURCE_LIMIT_EXCEEDED: RESOURCE_LIMIT_EXCEEDED = "RESOURCE_LIMIT_EXCEEDED".asInstanceOf[RESOURCE_LIMIT_EXCEEDED]
+  @scala.inline
   def RESOURCE_MISSING_SHIELD_PROTECTION: RESOURCE_MISSING_SHIELD_PROTECTION = "RESOURCE_MISSING_SHIELD_PROTECTION".asInstanceOf[RESOURCE_MISSING_SHIELD_PROTECTION]
   @scala.inline
   def RESOURCE_MISSING_WEB_ACL: RESOURCE_MISSING_WEB_ACL = "RESOURCE_MISSING_WEB_ACL".asInstanceOf[RESOURCE_MISSING_WEB_ACL]
@@ -35818,6 +35841,8 @@ object awsDashSdkLibStrings {
   def STORAGE_LIMIT: STORAGE_LIMIT = "STORAGE_LIMIT".asInstanceOf[STORAGE_LIMIT]
   @scala.inline
   def STORAGE_USED: STORAGE_USED = "STORAGE_USED".asInstanceOf[STORAGE_USED]
+  @scala.inline
+  def STREAMING: STREAMING = "STREAMING".asInstanceOf[STREAMING]
   @scala.inline
   def STRENGTH: STRENGTH = "STRENGTH".asInstanceOf[STRENGTH]
   @scala.inline

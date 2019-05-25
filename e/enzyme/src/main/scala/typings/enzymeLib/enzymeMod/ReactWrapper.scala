@@ -106,7 +106,6 @@ class ReactWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
   def ref(refName: java.lang.String): ReactWrapper[_, _, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   @JSName("ref")
   def ref_P2S2[P2, S2](refName: java.lang.String): ReactWrapper[P2, S2, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
-  def setProps[K /* <: java.lang.String */](props: stdLib.Pick[P, K], callback: js.Function0[scala.Unit]): this.type = js.native
   def unmount(): this.type = js.native
 }
 

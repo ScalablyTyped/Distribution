@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for react-aria-modal 2.12
 // Project: https://github.com/davidtheclark/react-aria-modal#readme
 // Definitions by: forabi <https://github.com/forabi>
+//                 dkrk <https://github.com/grgr-dkrk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

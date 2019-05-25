@@ -12,24 +12,26 @@ trait Anon_AddMember extends js.Object {
     *
     * We recommend using the [Add team membership API](https://developer.github.com/v3/teams/members/#add-or-update-team-membership) instead. It allows you to invite new organization members to your teams.
     *
-    * To add a user to a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with, and the user being added must already be a member of at least one other team on the same organization.
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
+    * To add someone to a team, the authenticated user must be a team maintainer in the team they're changing or be an owner of the organization that the team is associated with. The person being added to the team must be a member of the team's organization.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
-    *
-    * If you attempt to add an organization to a team, you will get this:
-    *
-    * If you attempt to add a user to a team and that user is not a member of at least one other team on the same organization, you will get this:
     */
   @JSName("addMember")
   var addMember_Original: Anon_EndpointParamsPromiseResponseTeamsAddMemberParams = js.native
   /**
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
     * If the user is already a member of the team's organization, this endpoint will add the user to the team. To add a membership between an organization member and a team, the authenticated user must be an organization owner or a maintainer of the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     *
     * If the user is unaffiliated with the team's organization, this endpoint will send an invitation to the user via email. This newly-created membership will be in the "pending" state until the user accepts the invitation, at which point the membership will transition to the "active" state and the user will be added as a member of the team. To add a membership between an unaffiliated user and a team, the authenticated user must be an organization owner.
     *
     * If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.
-    *
-    * If you attempt to add an organization to a team, you will get this:
     */
   @JSName("addOrUpdateMembership")
   var addOrUpdateMembership_Original: Anon_EndpointParamsAnyResponsePromiseTeamsAddOrUpdateMembershipParams = js.native
@@ -170,14 +172,22 @@ trait Anon_AddMember extends js.Object {
   /**
     * The "Remove team member" API (described below) is deprecated.
     *
-    * We recommend using the [Remove team membership API](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.
+    * We recommend using the [Remove team membership endpoint](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.
     *
-    * To remove a user from a team, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. NOTE: This does not delete the user, it just removes them from the team.
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
+    * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
   @JSName("removeMember")
   var removeMember_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveMemberParams = js.native
   /**
-    * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. NOTE: This does not delete the user, it just removes their membership from the team.
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
+    * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. Removing team membership does not delete the user, it just removes their membership from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
   @JSName("removeMembership")
   var removeMembership_Original: Anon_EndpointParamsPromiseResponseTeamsRemoveMembershipParams = js.native
@@ -218,13 +228,13 @@ trait Anon_AddMember extends js.Object {
     *
     * We recommend using the [Add team membership API](https://developer.github.com/v3/teams/members/#add-or-update-team-membership) instead. It allows you to invite new organization members to your teams.
     *
-    * To add a user to a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with, and the user being added must already be a member of at least one other team on the same organization.
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
+    * To add someone to a team, the authenticated user must be a team maintainer in the team they're changing or be an owner of the organization that the team is associated with. The person being added to the team must be a member of the team's organization.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
-    *
-    * If you attempt to add an organization to a team, you will get this:
-    *
-    * If you attempt to add a user to a team and that user is not a member of at least one other team on the same organization, you will get this:
     */
   def addMember(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddMemberResponse]
@@ -233,13 +243,15 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsAddMemberResponse]
   ] = js.native
   /**
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
     * If the user is already a member of the team's organization, this endpoint will add the user to the team. To add a membership between an organization member and a team, the authenticated user must be an organization owner or a maintainer of the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     *
     * If the user is unaffiliated with the team's organization, this endpoint will send an invitation to the user via email. This newly-created membership will be in the "pending" state until the user accepts the invitation, at which point the membership will transition to the "active" state and the user will be added as a member of the team. To add a membership between an unaffiliated user and a team, the authenticated user must be an organization owner.
     *
     * If the user is already a member of the team, this endpoint will update the role of the team member's role. To update the membership of a team member, the authenticated user must be an organization owner or a maintainer of the team.
-    *
-    * If you attempt to add an organization to a team, you will get this:
     */
   def addOrUpdateMembership(): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
   def addOrUpdateMembership(params: atOctokitRestLib.atOctokitRestMod.TeamsAddOrUpdateMembershipParams): js.Promise[atOctokitRestLib.atOctokitRestMod.AnyResponse] = js.native
@@ -460,9 +472,13 @@ trait Anon_AddMember extends js.Object {
   /**
     * The "Remove team member" API (described below) is deprecated.
     *
-    * We recommend using the [Remove team membership API](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.
+    * We recommend using the [Remove team membership endpoint](https://developer.github.com/v3/teams/members/#remove-team-membership) instead. It allows you to remove both active and pending memberships.
     *
-    * To remove a user from a team, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. NOTE: This does not delete the user, it just removes them from the team.
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
+    * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
   def removeMember(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsRemoveMemberResponse]
@@ -471,7 +487,11 @@ trait Anon_AddMember extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsRemoveMemberResponse]
   ] = js.native
   /**
-    * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. NOTE: This does not delete the user, it just removes their membership from the team.
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/articles/github-s-products) in the GitHub Help documentation.
+    *
+    * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. Removing team membership does not delete the user, it just removes their membership from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     */
   def removeMembership(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.TeamsRemoveMembershipResponse]

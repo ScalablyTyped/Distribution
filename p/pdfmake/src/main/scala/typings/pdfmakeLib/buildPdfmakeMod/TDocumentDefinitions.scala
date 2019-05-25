@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TDocumentDefinitions extends js.Object {
-  var background: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var background: js.UndefOr[
+    java.lang.String | (js.Function2[
+      /* currentPage */ scala.Double, 
+      /* pageSize */ PageSize, 
+      java.lang.String | Content | scala.Null
+    ])
+  ] = js.undefined
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   var content: java.lang.String | Content | (js.Array[java.lang.String | Content])
   var defaultStyle: js.UndefOr[Style] = js.undefined
@@ -33,7 +39,11 @@ object TDocumentDefinitions {
   @scala.inline
   def apply(
     content: java.lang.String | Content | (js.Array[java.lang.String | Content]),
-    background: () => java.lang.String = null,
+    background: java.lang.String | (js.Function2[
+      /* currentPage */ scala.Double, 
+      /* pageSize */ PageSize, 
+      java.lang.String | Content | scala.Null
+    ]) = null,
     compress: js.UndefOr[scala.Boolean] = js.undefined,
     defaultStyle: Style = null,
     footer: TDocumentHeaderFooterFunction = null,
@@ -47,7 +57,7 @@ object TDocumentDefinitions {
     styles: Style = null
   ): TDocumentDefinitions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(js.Any.fromFunction0(background))
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
     if (footer != null) __obj.updateDynamic("footer")(footer)

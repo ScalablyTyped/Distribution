@@ -57,7 +57,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Emmanuel Gautier <https://github.com/emmanuelgautier>
 //                 Dan Rumney <https://github.com/dancrumb>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 // ***************************** IMPORTANT NOTE *****************************
 // These types are for the 4.x branch of Sequelize. As of Sequelize 5.0,
 // types are packaged directly within Sequelize itself. Please target the

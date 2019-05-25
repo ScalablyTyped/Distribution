@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "orientjs"
-version := "3.0-dt-20190411Z-f353da"
+version := "3.0-dt-20190524Z-5149ec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-aac16e",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-e943e4",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false

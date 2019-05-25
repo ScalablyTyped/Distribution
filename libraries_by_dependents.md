@@ -3326,6 +3326,7 @@
 | 21 | [feathersjs__authenticatio](./f/feathersjs__authentication-client) | The authentication plugin for feathers-client
 | 21 | [feathersjs__authenticatio](./f/feathersjs__authentication-jwt) | JWT authentication strategy for feathers-authentic
 | 21 | [filenamify-url](./f/filenamify-url) | Convert a URL to a valid filename
+| 21 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 21 | [gulp-image-resize](./g/gulp-image-resize) | Resizing images made easy.
 | 21 | [gulp-sort](./g/gulp-sort) | Sort files in stream by path or any custom sort co
 | 21 | [hapi-pino](./h/hapi-pino) | Hapi plugin for the Pino logger
@@ -4997,6 +4998,7 @@
 | 3 | [deprecation](./d/deprecation) | Log a deprecation message with stack
 | 3 | [detect-touch-events](./d/detect-touch-events) | Detect if the browser supports the touch events ap
 | 3 | [dir-resolve](./d/dir-resolve) | Extension for require.resolve which will resolve d
+| 3 | [dkim-signer](./d/dkim-signer) | DKIM signing code extracted from mailcomposer
 | 3 | [dmg-builder](./d/dmg-builder) | Utilities to build DMG. Used by 
 | 3 | [domurl](./d/domurl) | Lightweight URL manipulation with JavaScript.
 | 3 | [donna](./d/donna) | A CoffeeScript documentation generator.
@@ -5178,6 +5180,7 @@
 | 3 | [steam-client](./s/steam-client) | SteamClient from node-steam with proper versioning
 | 3 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr
 | 3 | [storybook-addon-jsx](./s/storybook-addon-jsx) | Display the JSX of the story
+| 3 | [storybook-react-router](./s/storybook-react-router) | A storybook decorator that allows you to use routi
 | 3 | [stream-mock](./s/stream-mock) | Node stream mock module
 | 3 | [streamjs](./s/streamjs) | Lazy Object Streaming Pipeline for JavaScript - in
 | 3 | [strong-cluster-control](./s/strong-cluster-control) | node cluster API wrapper and extensions
@@ -6023,6 +6026,7 @@
 | 0 | [color-check](./c/color-check) | Color Check is a very tine library for checking yo
 | 0 | [com_dot_darktalker_dot_co](./c/com_dot_darktalker_dot_cordova_dot_screenshot) | screenshot PhoneGap Plugin for Android
 | 0 | [com_dot_wikitude_dot_phon](./c/com_dot_wikitude_dot_phonegap_dot_wikitudeplugin) | Augmented Reality Wikitude SDK Plugin 
+| 0 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0 | [complex](./c/complex) | Do calculations with Complex numbers
 | 0 | [confirmdialog](./c/confirmdialog) | -
 | 0 | [connect-history-api-fallb](./c/connect-history-api-fallback-exclusions) | Provides a fallback for non-existing directories s
@@ -6250,6 +6254,7 @@
 | 0 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
 | 0 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
 | 0 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (
+| 0 | [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket 
 | 0 | [next-seo](./n/next-seo) | SEO plugin for Next.js projects
 | 0 | [ng-facebook](./n/ng-facebook) | Angular service to handle facebook api
 | 0 | [ng-flow](./n/ng-flow) | Flow.js html5 file upload extension on angular.js 

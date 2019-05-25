@@ -13,17 +13,21 @@ trait GatewayAssociationProposalArgs extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
+    * The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    */
+  val associatedGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * Direct Connect Gateway identifier.
     */
   val dxGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
-    * AWS Account identifier of the Direct Connect Gateway.
+    * AWS Account identifier of the Direct Connect Gateway's owner.
     */
   val dxGatewayOwnerAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
-    * Virtual Gateway identifier to associate with the Direct Connect Gateway.
+    * *Deprecated:* Use `associated_gateway_id` instead. Virtual Gateway identifier to associate with the Direct Connect Gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
 object GatewayAssociationProposalArgs {
@@ -31,11 +35,14 @@ object GatewayAssociationProposalArgs {
   def apply(
     dxGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     dxGatewayOwnerAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    allowedPrefixes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+    allowedPrefixes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    associatedGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): GatewayAssociationProposalArgs = {
-    val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any], dxGatewayOwnerAccountId = dxGatewayOwnerAccountId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any], dxGatewayOwnerAccountId = dxGatewayOwnerAccountId.asInstanceOf[js.Any])
     if (allowedPrefixes != null) __obj.updateDynamic("allowedPrefixes")(allowedPrefixes.asInstanceOf[js.Any])
+    if (associatedGatewayId != null) __obj.updateDynamic("associatedGatewayId")(associatedGatewayId.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayAssociationProposalArgs]
   }
 }

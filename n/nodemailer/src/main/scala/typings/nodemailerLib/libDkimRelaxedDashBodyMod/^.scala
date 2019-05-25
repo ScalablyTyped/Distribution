@@ -10,5 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("nodemailer/lib/dkim/relaxed-body", JSImport.Namespace)
 @js.native
-class ^ () extends RelaxedBody
+class ^ () extends RelaxedBody {
+  def this(options: Options) = this()
+}
 

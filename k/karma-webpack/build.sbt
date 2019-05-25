@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-webpack"
-version := "2.0-dt-20190212Z-1656a4"
+version := "2.0-dt-20190524Z-1656a4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

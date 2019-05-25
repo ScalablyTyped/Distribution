@@ -11,7 +11,7 @@ trait RestoreServerRequest extends js.Object {
     */
   var BackupId: awsDashSdkLib.clientsOpsworkscmMod.BackupId
   /**
-    *  The type of the instance to create. Valid values must be specified in the following format: ^([cm][34]|t2).* For example, m4.large. Valid values are t2.medium, m4.large, and m4.2xlarge. If you do not specify this parameter, RestoreServer uses the instance type from the specified backup. 
+    *  The type of the instance to create. Valid values must be specified in the following format: ^([cm][34]|t2).* For example, m5.large. Valid values are m5.large, r5.xlarge, and r5.2xlarge. If you do not specify this parameter, RestoreServer uses the instance type from the specified backup. 
     */
   var InstanceType: js.UndefOr[String] = js.undefined
   /**

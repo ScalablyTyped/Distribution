@@ -189,6 +189,18 @@ trait InstanceArgs extends js.Object {
     */
   val password: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * Specifies whether Performance Insights are enabled. Defaults to false.
+    */
+  val performanceInsightsEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  /**
+    * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true. Once KMS key is set, it can never be changed.
+    */
+  val performanceInsightsKmsKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying `performance_insights_retention_period`, `performance_insights_enabled` needs to be set to true. Defaults to '7'.
+    */
+  val performanceInsightsRetentionPeriod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+  /**
     * The port on which the DB accepts connections.
     */
   val port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -309,6 +321,9 @@ object InstanceArgs {
     optionGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     parameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     password: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    performanceInsightsEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    performanceInsightsKmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    performanceInsightsRetentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     publiclyAccessible: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     replicateSourceDb: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -355,6 +370,9 @@ object InstanceArgs {
     if (optionGroupName != null) __obj.updateDynamic("optionGroupName")(optionGroupName.asInstanceOf[js.Any])
     if (parameterGroupName != null) __obj.updateDynamic("parameterGroupName")(parameterGroupName.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (performanceInsightsEnabled != null) __obj.updateDynamic("performanceInsightsEnabled")(performanceInsightsEnabled.asInstanceOf[js.Any])
+    if (performanceInsightsKmsKeyId != null) __obj.updateDynamic("performanceInsightsKmsKeyId")(performanceInsightsKmsKeyId.asInstanceOf[js.Any])
+    if (performanceInsightsRetentionPeriod != null) __obj.updateDynamic("performanceInsightsRetentionPeriod")(performanceInsightsRetentionPeriod.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
     if (replicateSourceDb != null) __obj.updateDynamic("replicateSourceDb")(replicateSourceDb.asInstanceOf[js.Any])

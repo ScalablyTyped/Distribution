@@ -67,6 +67,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
       js.UndefOr[scala.Boolean | scala.Null]
     ]
   ] = js.undefined
+  var onShowMore: js.UndefOr[js.Function2[/* events */ js.Array[TEvent], /* date */ stdLib.Date, scala.Unit]] = js.undefined
   var onView: js.UndefOr[js.Function1[/* view */ View, scala.Unit]] = js.undefined
   var popup: js.UndefOr[scala.Boolean] = js.undefined
   var popupOffset: js.UndefOr[scala.Double | reactDashBigDashCalendarLib.Anon_X] = js.undefined
@@ -126,6 +127,7 @@ object BigCalendarProps {
     onSelectEvent: (/* event */ TEvent, /* e */ reactLib.reactMod.SyntheticEvent[stdLib.HTMLElement, reactLib.Event]) => scala.Unit = null,
     onSelectSlot: /* slotInfo */ reactDashBigDashCalendarLib.Anon_Action => scala.Unit = null,
     onSelecting: /* range */ reactDashBigDashCalendarLib.Anon_EndStart => js.UndefOr[scala.Boolean | scala.Null] = null,
+    onShowMore: (/* events */ js.Array[TEvent], /* date */ stdLib.Date) => scala.Unit = null,
     onView: /* view */ View => scala.Unit = null,
     popup: js.UndefOr[scala.Boolean] = js.undefined,
     popupOffset: scala.Double | reactDashBigDashCalendarLib.Anon_X = null,
@@ -180,6 +182,7 @@ object BigCalendarProps {
     if (onSelectEvent != null) __obj.updateDynamic("onSelectEvent")(js.Any.fromFunction2(onSelectEvent))
     if (onSelectSlot != null) __obj.updateDynamic("onSelectSlot")(js.Any.fromFunction1(onSelectSlot))
     if (onSelecting != null) __obj.updateDynamic("onSelecting")(js.Any.fromFunction1(onSelecting))
+    if (onShowMore != null) __obj.updateDynamic("onShowMore")(js.Any.fromFunction2(onShowMore))
     if (onView != null) __obj.updateDynamic("onView")(js.Any.fromFunction1(onView))
     if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
     if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])

@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/Disposable", JSImport.Default)
 @js.native
-/**
-  * Objects that need to clean up after themselves.
-  */
-class default ()
-  extends openlayersLib.openlayersMod.Disposable
+class default () extends Disposable {
+  /* CompleteClass */
+  override def dispose(): scala.Unit = js.native
+  /* CompleteClass */
+  /* protected */ override def disposeInternal(): scala.Unit = js.native
+}
 

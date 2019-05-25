@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DrillThroughEventArgs extends js.Object {
-  /** returns the actionInfo's parameters bookmarkLink, hyperLink, reportName, parameters.
+  /** returns the actionInfo's parameters bookmarkLink, reportName, parameters.
     */
   var actionInfo: js.UndefOr[js.Any] = js.undefined
   /** true if the event should be canceled; otherwise, false.

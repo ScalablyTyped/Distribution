@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("nodemailer/lib/smtp-pool", JSImport.Namespace)
 @js.native
-class ^ protected () extends SMTPPool {
+class ^ () extends SMTPPool {
   def this(options: java.lang.String) = this()
   def this(options: Options) = this()
   /* CompleteClass */

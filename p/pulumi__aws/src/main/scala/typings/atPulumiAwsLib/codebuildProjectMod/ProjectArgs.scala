@@ -21,7 +21,7 @@ trait ProjectArgs extends js.Object {
   /**
     * Information about the cache storage for the project. Cache blocks are documented below.
     */
-  val cache: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LocationType]] = js.undefined
+  val cache: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LocationModes]] = js.undefined
   /**
     * A short description of the project.
     */
@@ -85,7 +85,7 @@ object ProjectArgs {
     source: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthsBuildspecGitCloneDepthInsecureSsl],
     badgeEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     buildTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
-    cache: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LocationType] = null,
+    cache: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LocationModes] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     encryptionKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

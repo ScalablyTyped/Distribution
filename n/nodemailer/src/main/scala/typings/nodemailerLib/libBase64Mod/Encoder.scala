@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Encoder ()
   extends nodeLib.streamMod.Transform {
-  def this(options: nodeLib.streamMod.TransformOptions) = this()
+  def this(options: EncoderOptions) = this()
   var inputBytes: scala.Double = js.native
-  var options: nodeLib.streamMod.TransformOptions = js.native
+  var options: EncoderOptions = js.native
   var outputBytes: scala.Double = js.native
 }
 

@@ -25,6 +25,7 @@ trait DataTableProps extends js.Object {
     grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
   var sortable: js.UndefOr[scala.Boolean] = js.undefined
+  var step: js.UndefOr[scala.Double] = js.undefined
 }
 
 object DataTableProps {
@@ -42,7 +43,8 @@ object DataTableProps {
     primaryKey: java.lang.String = null,
     resizeable: js.UndefOr[scala.Boolean] = js.undefined,
     size: grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
-    sortable: js.UndefOr[scala.Boolean] = js.undefined
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null
   ): DataTableProps = {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
@@ -58,6 +60,7 @@ object DataTableProps {
     if (!js.isUndefined(resizeable)) __obj.updateDynamic("resizeable")(resizeable)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableProps]
   }
 }

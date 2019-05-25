@@ -5,26 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @classdesc
-  * Interaction for translating (moving) features.
-  *
-  * @fires ol.interaction.TranslateEvent
-  * @param options Options.
-  * @api
-  */
 @JSImport("ol/interaction/Translate", JSImport.Default)
 @js.native
-class default protected ()
-  extends openlayersLib.openlayersMod.interactionNs.Translate {
-  /**
-    * @classdesc
-    * Interaction for translating (moving) features.
-    *
-    * @fires ol.interaction.TranslateEvent
-    * @param options Options.
-    * @api
-    */
-  def this(options: openlayersLib.openlayersMod.olxNs.interactionNs.TranslateOptions) = this()
+class default () extends Translate {
+  def this(opt_options: Options) = this()
 }
 

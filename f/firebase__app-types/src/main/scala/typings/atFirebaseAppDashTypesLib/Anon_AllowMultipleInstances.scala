@@ -16,7 +16,12 @@ trait Anon_AllowMultipleInstances extends js.Object {
     /* errors */ atFirebaseUtilLib.distSrcErrorsMod.ErrorMap[
       /* import warning: RewrittenClass.unapply cls $anonfun was tparam ErrorCode */ js.Any
     ], 
-    atFirebaseUtilLib.atFirebaseUtilMod.ErrorFactory[java.lang.String]
+    atFirebaseUtilLib.atFirebaseUtilMod.ErrorFactory[
+      java.lang.String, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {readonly [ K in any ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
+    */ atFirebaseAppDashTypesLib.atFirebaseAppDashTypesLibStrings.Anon_AllowMultipleInstances with js.Any
+    ]
   ] = js.native
   /**
     * Service factories for each registered service.

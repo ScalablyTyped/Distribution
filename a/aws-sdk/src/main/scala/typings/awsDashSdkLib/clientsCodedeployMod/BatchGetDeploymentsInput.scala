@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchGetDeploymentsInput extends js.Object {
   /**
-    *  A list of deployment IDs, separated by spaces. 
+    *  A list of deployment IDs, separated by spaces. The maximum number of deployment IDs you can specify is 25.
     */
   var deploymentIds: DeploymentsList
 }

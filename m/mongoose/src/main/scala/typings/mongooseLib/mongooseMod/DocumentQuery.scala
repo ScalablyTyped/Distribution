@@ -372,6 +372,8 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   def maxDistance(`val`: scala.Double): this.type = js.native
   /** Specifies the maxScan option. Cannot be used with distinct() */
   def maxScan(`val`: scala.Double): this.type = js.native
+  /** Specifies the maxTimeMS options. */
+  def maxTimeMS(`val`: scala.Double): this.type = js.native
   /** @deprecated Alias of maxScan */
   def maxscan(`val`: scala.Double): this.type = js.native
   /**
@@ -442,8 +444,8 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   /** Specifies a $polygon condition */
   def polygon(coordinatePairs: js.Array[scala.Double]*): this.type = js.native
   def polygon(path: java.lang.String, coordinatePairs: js.Array[scala.Double]*): this.type = js.native
-  def populate(options: js.Array[ModelPopulateOptions]): this.type = js.native
-  def populate(options: ModelPopulateOptions): this.type = js.native
+  def populate(options: js.Array[QueryPopulateOptions]): this.type = js.native
+  def populate(options: QueryPopulateOptions): this.type = js.native
   /**
     * Specifies paths which should be populated with other documents.
     * Paths are populated after the query executes and a response is received. A separate

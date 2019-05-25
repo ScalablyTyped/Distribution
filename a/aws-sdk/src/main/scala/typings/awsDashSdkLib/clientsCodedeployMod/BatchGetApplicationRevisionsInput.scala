@@ -11,7 +11,7 @@ trait BatchGetApplicationRevisionsInput extends js.Object {
     */
   var applicationName: ApplicationName
   /**
-    * Information to get about the application revisions, including type and location.
+    * An array of RevisionLocation objects that specify information to get about the application revisions, including type and location. The maximum number of RevisionLocation objects you can specify is 25.
     */
   var revisions: RevisionLocationList
 }

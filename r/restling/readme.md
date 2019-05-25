@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/lucasfeliciano/restling
 // Definitions by: Alessandro vergani <https://github.com/loghorn>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

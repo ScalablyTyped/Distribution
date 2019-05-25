@@ -20,6 +20,8 @@ trait Bluebird[R]
   var caught_Original: bluebirdLib.Anon_Error[R] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[R]] = js.native
+  @JSName(scala.scalajs.js.Symbol.toStringTag)
+  val toStringTag: bluebirdLib.bluebirdLibStrings.Object = js.native
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */

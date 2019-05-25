@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/petkaantonov/bluebird
 // Definitions by: Leonard Hecker <https://github.com/lhecker>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 /*!
  * The code following this comment originates from:
  *   https://github.com/types/npm-bluebird

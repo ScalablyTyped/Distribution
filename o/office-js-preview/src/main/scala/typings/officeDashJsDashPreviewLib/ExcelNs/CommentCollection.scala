@@ -25,13 +25,13 @@ class CommentCollection ()
   def add(content: java.lang.String, cellAddress: java.lang.String, contentType: ContentType): Comment = js.native
   /**
     *
-    * Creates a new comment with the given content on the given cell. An invalid argument error is thrown if the provided range is larger than one cell.
+    * Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param content The comment content.
-    * @param cellAddress The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name.
+    * @param cellAddress The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     * @param contentType Optional. The type of the comment content.
     */
   def add(content: java.lang.String, cellAddress: Range): Comment = js.native

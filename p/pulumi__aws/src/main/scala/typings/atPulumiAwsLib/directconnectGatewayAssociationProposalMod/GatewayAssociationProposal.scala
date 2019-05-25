@@ -23,17 +23,29 @@ class GatewayAssociationProposal protected ()
     */
   val allowedPrefixes: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
+    * The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    */
+  val associatedGatewayId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    */
+  val associatedGatewayOwnerAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+    */
+  val associatedGatewayType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * Direct Connect Gateway identifier.
     */
   val dxGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * AWS Account identifier of the Direct Connect Gateway.
+    * AWS Account identifier of the Direct Connect Gateway's owner.
     */
   val dxGatewayOwnerAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * Virtual Gateway identifier to associate with the Direct Connect Gateway.
+    * *Deprecated:* Use `associated_gateway_id` instead. Virtual Gateway identifier to associate with the Direct Connect Gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

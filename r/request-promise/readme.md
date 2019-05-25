@@ -42,7 +42,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Aya Morisawa <https://github.com/AyaMorisawa>
 //                 Matt R. Wilson <https://github.com/mastermatt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

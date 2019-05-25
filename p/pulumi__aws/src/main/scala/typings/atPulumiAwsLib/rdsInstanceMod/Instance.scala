@@ -221,6 +221,18 @@ class Instance protected ()
     */
   val password: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
+    * Specifies whether Performance Insights are enabled. Defaults to false.
+    */
+  val performanceInsightsEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
+    * The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true. Once KMS key is set, it can never be changed.
+    */
+  val performanceInsightsKmsKeyId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The amount of time in days to retain Performance Insights data. Either 7 (7 days) or 731 (2 years). When specifying `performance_insights_retention_period`, `performance_insights_enabled` needs to be set to true. Defaults to '7'.
+    */
+  val performanceInsightsRetentionPeriod: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
+  /**
     * The port on which the DB accepts connections.
     */
   val port: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native

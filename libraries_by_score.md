@@ -2028,6 +2028,7 @@
 | 0.7123584560564113 | [p-wait-for](./p/p-wait-for) | Wait for a condition to be true
 | 0.7122623544590041 | [nodemailer-stub-transport](./n/nodemailer-stub-transport) | Stub transport for Nodemailer
 | 0.7122200246320811 | [filenamify-url](./f/filenamify-url) | Convert a URL to a valid filename
+| 0.7121740747229228 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant
 | 0.7120968266143024 | [react-table](./r/react-table) | A fast, lightweight, opinionated table and datagri
 | 0.7120065046481523 | [steed](./s/steed) | horsepower for your modules
 | 0.7120020784669063 | [is-scoped](./i/is-scoped) | Check if a string is a scoped npm package name
@@ -3572,6 +3573,7 @@
 | 0.6361614322862086 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti
 | 0.6358682933708665 | [send](./s/send) | Better streaming static file server with Range and
 | 0.6358015358209748 | [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate
+| 0.6357751906187945 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0.6357097208651624 | [jupyterlab__codemirror](./j/jupyterlab__codemirror) | JupyterLab - CodeMirror Editor Provider
 | 0.6356053132776762 | [highcharts](./h/highcharts) | JavaScript charting framework
 | 0.6355517503766868 | [rollup-plugin-buble](./r/rollup-plugin-buble) | Compile ES2015 with buble
@@ -4061,6 +4063,7 @@
 | 0.5845259806260339 | [mobx-devtools-mst](./m/mobx-devtools-mst) | Allows debugging mobx-state-tree roots. See 
 | 0.584432952949019 | [bindings](./b/bindings) | Helper module for loading your native module's .no
 | 0.584234274189019 | [react-amplitude](./r/react-amplitude) | React Amplitude Analytics
+| 0.5839847452482285 | [storybook-react-router](./s/storybook-react-router) | A storybook decorator that allows you to use routi
 | 0.5838911646770788 | [react-native-maps](./r/react-native-maps) | React Native Mapview component for iOS + Android
 | 0.5837945926322724 | [react-native-share](./r/react-native-share) | Social share, sending simple data to other apps.
 | 0.5836375215939507 | [react-simple-maps](./r/react-simple-maps) | An svg map component built with and for React
@@ -4755,6 +4758,7 @@
 | 0.4720637697678261 | [simple-mock](./s/simple-mock) | Super simple stubs and spies with 1-step sandbox r
 | 0.47181900297302193 | [piwik-tracker](./p/piwik-tracker) | A wrapper for the Piwik tracking HTTP API
 | 0.4718091221713673 | [jsgraph](./j/jsgraph) | DirectedGraph container class + BFT/DFT/transpose 
+| 0.4715311060556451 | [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket 
 | 0.47144571909112243 | [react-native-swipeout](./r/react-native-swipeout) | iOS-style swipeout buttons behind component
 | 0.471388887994202 | [anydb-sql](./a/anydb-sql) | Minimal ORM for mysql, postgresql and sqlite with 
 | 0.4713786738032323 | [react-html-parser](./r/react-html-parser) | Parse HTML into React components
@@ -4800,6 +4804,7 @@
 | 0.46472426312703474 | [postal](./p/postal) | Pub/Sub library providing wildcard subscriptions, 
 | 0.4646133510088492 | [wiredep](./w/wiredep) | Wire Bower dependencies to your source code.
 | 0.4644733934205438 | [zeroclipboard](./z/zeroclipboard) | The ZeroClipboard library provides an easy way to 
+| 0.4644689625299963 | [dkim-signer](./d/dkim-signer) | DKIM signing code extracted from mailcomposer
 | 0.4643752193152677 | [obj-file-parser](./o/obj-file-parser) | Wavefront 3D Object File (.OBJ) Parser
 | 0.4643498072034955 | [react-mdl](./r/react-mdl) | React Components for Material Design Lite
 | 0.46408001479486427 | [falcor-router](./f/falcor-router) | A router DataSource constructor for falcor that al

@@ -214,6 +214,8 @@ trait Application
     *   - setup route reflection methods
     */
   def init(): scala.Unit = js.native
+  def listen(): nodeLib.httpMod.Server = js.native
+  def listen(callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(handle: js.Any): nodeLib.httpMod.Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(path: java.lang.String): nodeLib.httpMod.Server = js.native

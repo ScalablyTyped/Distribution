@@ -57,7 +57,7 @@ trait MediaStoreData
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Downloads the object at the specified path.
+    * Downloads the object at the specified path. If the object’s upload availability is set to streaming, AWS Elemental MediaStore downloads the object even if it’s still uploading the object.
     */
   def getObject(): awsDashSdkLib.libRequestMod.Request[GetObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getObject(
@@ -68,7 +68,7 @@ trait MediaStoreData
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Downloads the object at the specified path.
+    * Downloads the object at the specified path. If the object’s upload availability is set to streaming, AWS Elemental MediaStore downloads the object even if it’s still uploading the object.
     */
   def getObject(params: GetObjectRequest): awsDashSdkLib.libRequestMod.Request[GetObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getObject(
@@ -103,7 +103,7 @@ trait MediaStoreData
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Uploads an object to the specified path. Object sizes are limited to 25 MB.
+    * Uploads an object to the specified path. Object sizes are limited to 25 MB for standard upload availability and 10 MB for streaming upload availability.
     */
   def putObject(): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putObject(
@@ -114,7 +114,7 @@ trait MediaStoreData
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Uploads an object to the specified path. Object sizes are limited to 25 MB.
+    * Uploads an object to the specified path. Object sizes are limited to 25 MB for standard upload availability and 10 MB for streaming upload availability.
     */
   def putObject(params: PutObjectRequest): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putObject(

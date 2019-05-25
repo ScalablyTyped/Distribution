@@ -11,7 +11,7 @@ trait GetObjectRequest extends js.Object {
     */
   var Path: PathNaming
   /**
-    * The range bytes of an object to retrieve. For more information about the Range header, go to http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.
+    * The range bytes of an object to retrieve. For more information about the Range header, see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35. AWS Elemental MediaStore ignores this header for partially uploaded objects that have streaming upload availability.
     */
   var Range: js.UndefOr[RangePattern] = js.undefined
 }

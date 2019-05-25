@@ -12,8 +12,18 @@ object libDkimSignMod extends js.Object {
   def apply(
     headers: js.Array[nodemailerLib.libDkimMessageDashParserMod.Header],
     hashAlgo: java.lang.String,
+    bodyHash: java.lang.String
+  ): java.lang.String = js.native
+  def apply(
+    headers: js.Array[nodemailerLib.libDkimMessageDashParserMod.Header],
+    hashAlgo: java.lang.String,
     bodyHash: java.lang.String,
     options: nodemailerLib.libDkimMod.SingleKeyOptions
+  ): java.lang.String = js.native
+  def relaxedHeaders(
+    headers: js.Array[nodemailerLib.libDkimMessageDashParserMod.Header],
+    hashAlgo: java.lang.String,
+    bodyHash: java.lang.String
   ): java.lang.String = js.native
   def relaxedHeaders(
     headers: js.Array[nodemailerLib.libDkimMessageDashParserMod.Header],

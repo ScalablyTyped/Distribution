@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "1.1-dt-20181019Z-c30376"
+version := "1.1-dt-20181019Z-c04f40"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-c5c3e6",
-  "org.scalablytyped" %%% "cookie" % "0.3-dt-20181113Z-f8303d",
+  "org.scalablytyped" %%% "cookie" % "0.3-dt-20190524Z-191b1c",
   "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "next" % "8.0-dt-20190501Z-be9b1e",
   "org.scalablytyped" %%% "next-server" % "8.1-dt-20190501Z-551af1",

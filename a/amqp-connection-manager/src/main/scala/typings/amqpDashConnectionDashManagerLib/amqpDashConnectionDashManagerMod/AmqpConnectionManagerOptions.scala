@@ -8,8 +8,11 @@ import scala.scalajs.js.annotation._
 trait AmqpConnectionManagerOptions extends js.Object {
   /**
   	 * TLS options
+  	 *
+  	 * These are passed through directly to amqplib (http://www.squaremobius.net/amqp.node/channel_api.html#connect),
+  	 * which in turn passes them through to tls.connect (https://nodejs.org/api/tls.html#tls_tls_connect_options_callback)
   	 */
-  var connectionOptions: js.UndefOr[nodeLib.tlsMod.SecureContextOptions] = js.undefined
+  var connectionOptions: js.UndefOr[nodeLib.tlsMod.ConnectionOptions] = js.undefined
   /**
   	 * is a function which returns one or more servers to connect to. This should return either a single URL or an array of URLs.
   	 * This is handy when you're using a service discovery mechanism such as Consul or etcd. Instead of taking a callback, this can also
@@ -34,7 +37,7 @@ trait AmqpConnectionManagerOptions extends js.Object {
 object AmqpConnectionManagerOptions {
   @scala.inline
   def apply(
-    connectionOptions: nodeLib.tlsMod.SecureContextOptions = null,
+    connectionOptions: nodeLib.tlsMod.ConnectionOptions = null,
     findServers: (js.Function1[
       /* callback */ js.Function1[/* urls */ java.lang.String | js.Array[java.lang.String], scala.Unit], 
       scala.Unit

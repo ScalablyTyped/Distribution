@@ -15,6 +15,10 @@ trait StreamState extends js.Object {
     */
   val encryptionType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is `false`.
+    */
+  val enforceConsumerDeletion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  /**
     * The GUID for the customer-managed KMS key to use for encryption. You can also use a Kinesis-owned master key by specifying the alias `alias/aws/kinesis`.
     */
   val kmsKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -50,6 +54,7 @@ object StreamState {
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     encryptionType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enforceConsumerDeletion: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     retentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
@@ -60,6 +65,7 @@ object StreamState {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (encryptionType != null) __obj.updateDynamic("encryptionType")(encryptionType.asInstanceOf[js.Any])
+    if (enforceConsumerDeletion != null) __obj.updateDynamic("enforceConsumerDeletion")(enforceConsumerDeletion.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod.asInstanceOf[js.Any])

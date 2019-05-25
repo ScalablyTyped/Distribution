@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait XLCMenu extends js.Object {
   /** This method is used to dynamically add items in the context menu.
-    * @param {string} Specifies the context menu type in which the item to be inserted.
+    * @param {ej.Spreadsheet.ContextMenuType} Specifies the context menu type in which the item to be inserted.
     * @param {any[]} Pass the items to be inserted
     * @param {string} Specifies the type of operation to be performed
     * @param {number} Specifies the item index
     * @returns {void}
     */
-  def addItem(
-    target: java.lang.String,
-    itemColl: js.Array[_],
-    operation: java.lang.String,
-    itemIdx: scala.Double
-  ): scala.Unit
+  def addItem(target: ContextMenuType, itemColl: js.Array[_], operation: java.lang.String, itemIdx: scala.Double): scala.Unit
   /** This method is used to change data source in the context menu.
     * @param {string} Specifies the context menu type to bind the data source.
     * @param {any[]} Pass the data source to be binded
@@ -60,7 +55,7 @@ trait XLCMenu extends js.Object {
 object XLCMenu {
   @scala.inline
   def apply(
-    addItem: (java.lang.String, js.Array[_], java.lang.String, scala.Double) => scala.Unit,
+    addItem: (ContextMenuType, js.Array[_], java.lang.String, scala.Double) => scala.Unit,
     changeDataSource: (java.lang.String, js.Array[_]) => scala.Unit,
     disableItem: (java.lang.String, js.Array[_]) => scala.Unit,
     enableItem: (java.lang.String, js.Array[_]) => scala.Unit,

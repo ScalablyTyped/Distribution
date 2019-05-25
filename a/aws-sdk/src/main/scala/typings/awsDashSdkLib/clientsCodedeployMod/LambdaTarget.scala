@@ -11,6 +11,10 @@ trait LambdaTarget extends js.Object {
     */
   var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   /**
+    *  A LambdaFunctionInfo object that describes a target Lambda function. 
+    */
+  var lambdaFunctionInfo: js.UndefOr[LambdaFunctionInfo] = js.undefined
+  /**
     *  The date and time when the target Lambda function was updated by a deployment. 
     */
   var lastUpdatedAt: js.UndefOr[Time] = js.undefined
@@ -36,6 +40,7 @@ object LambdaTarget {
   @scala.inline
   def apply(
     deploymentId: DeploymentId = null,
+    lambdaFunctionInfo: LambdaFunctionInfo = null,
     lastUpdatedAt: Time = null,
     lifecycleEvents: LifecycleEventList = null,
     status: TargetStatus = null,
@@ -44,6 +49,7 @@ object LambdaTarget {
   ): LambdaTarget = {
     val __obj = js.Dynamic.literal()
     if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId)
+    if (lambdaFunctionInfo != null) __obj.updateDynamic("lambdaFunctionInfo")(lambdaFunctionInfo)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
     if (lifecycleEvents != null) __obj.updateDynamic("lifecycleEvents")(lifecycleEvents)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

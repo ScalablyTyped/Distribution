@@ -214,6 +214,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     * NOTE: can only be called on a wrapper instance that is also the root instance.
     */
   def setProps[K /* <: java.lang.String */](props: stdLib.Pick[P, K]): this.type = js.native
+  def setProps[K /* <: java.lang.String */](props: stdLib.Pick[P, K], callback: js.Function0[scala.Unit]): this.type = js.native
   /**
     * A method to invoke setState() on the root component instance similar to how you might in the definition of
     * the component, and re-renders. This method is useful for testing your component in hard to achieve states,

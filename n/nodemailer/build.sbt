@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nodemailer"
-version := "6.1-dt-20190517Z-9b8bf9"
+version := "6.1-dt-20190524Z-a530fc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-input-autosize"
-version := "2.0-dt-20180823Z-68bd19"
+version := "2.0-dt-20190524Z-2974ad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

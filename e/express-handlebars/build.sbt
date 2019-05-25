@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-handlebars"
-version := "0.0-unknown-dt-20190408Z-a9757d"
+version := "0.0-unknown-dt-20190524Z-84c8e1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

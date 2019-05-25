@@ -5,28 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @param type Type.
-  * @param opt_vectorContext Vector context.
-  * @param opt_frameState Frame state.
-  * @param opt_context Context.
-  * @param opt_glContext WebGL Context.
-  */
 @JSImport("ol/render/Event", JSImport.Default)
 @js.native
-class default protected ()
-  extends openlayersLib.openlayersMod.renderNs.Event {
-  /**
-    * @param type Type.
-    * @param opt_vectorContext Vector context.
-    * @param opt_frameState Frame state.
-    * @param opt_context Context.
-    * @param opt_glContext WebGL Context.
-    */
-  def this(`type`: openlayersLib.openlayersMod.renderNs.EventType) = this()
-  def this(`type`: openlayersLib.openlayersMod.renderNs.EventType, opt_vectorContext: openlayersLib.openlayersMod.renderNs.VectorContext) = this()
-  def this(`type`: openlayersLib.openlayersMod.renderNs.EventType, opt_vectorContext: openlayersLib.openlayersMod.renderNs.VectorContext, opt_frameState: openlayersLib.openlayersMod.olxNs.FrameState) = this()
-  def this(`type`: openlayersLib.openlayersMod.renderNs.EventType, opt_vectorContext: openlayersLib.openlayersMod.renderNs.VectorContext, opt_frameState: openlayersLib.openlayersMod.olxNs.FrameState, opt_context: stdLib.CanvasRenderingContext2D) = this()
-  def this(`type`: openlayersLib.openlayersMod.renderNs.EventType, opt_vectorContext: openlayersLib.openlayersMod.renderNs.VectorContext, opt_frameState: openlayersLib.openlayersMod.olxNs.FrameState, opt_context: stdLib.CanvasRenderingContext2D, opt_glContext: js.Any) = this()
+class default protected () extends RenderEvent {
+  def this(`type`: olLib.renderEventTypeMod.EventType) = this()
+  def this(`type`: olLib.renderEventTypeMod.EventType, opt_vectorContext: olLib.renderVectorContextMod.default) = this()
+  def this(`type`: olLib.renderEventTypeMod.EventType, opt_vectorContext: olLib.renderVectorContextMod.default, opt_frameState: olLib.pluggableMapMod.FrameState) = this()
+  def this(`type`: olLib.renderEventTypeMod.EventType, opt_vectorContext: olLib.renderVectorContextMod.default, opt_frameState: olLib.pluggableMapMod.FrameState, opt_context: stdLib.CanvasRenderingContext2D) = this()
+  def this(`type`: olLib.renderEventTypeMod.EventType, opt_vectorContext: olLib.renderVectorContextMod.default, opt_frameState: olLib.pluggableMapMod.FrameState, opt_context: stdLib.CanvasRenderingContext2D, opt_glContext: olLib.webglContextMod.default) = this()
 }
 

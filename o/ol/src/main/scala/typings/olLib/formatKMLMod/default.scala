@@ -5,30 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @classdesc
-  * Feature format for reading and writing data in the KML format.
-  *
-  * Note that the KML format uses the URL() constructor. Older browsers such as IE
-  * which do not support this will need a URL polyfill to be loaded before use.
-  *
-  * @param opt_options Options.
-  * @api stable
-  */
 @JSImport("ol/format/KML", JSImport.Default)
 @js.native
-/**
-  * @classdesc
-  * Feature format for reading and writing data in the KML format.
-  *
-  * Note that the KML format uses the URL() constructor. Older browsers such as IE
-  * which do not support this will need a URL polyfill to be loaded before use.
-  *
-  * @param opt_options Options.
-  * @api stable
-  */
-class default ()
-  extends openlayersLib.openlayersMod.formatNs.KML {
-  def this(opt_options: openlayersLib.openlayersMod.olxNs.formatNs.KMLOptions) = this()
+class default () extends KML {
+  def this(opt_options: Options) = this()
 }
 

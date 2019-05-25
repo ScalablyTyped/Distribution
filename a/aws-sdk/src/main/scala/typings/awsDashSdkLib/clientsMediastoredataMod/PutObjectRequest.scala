@@ -26,6 +26,10 @@ trait PutObjectRequest extends js.Object {
     * Indicates the storage class of a Put request. Defaults to high-performance temporal storage class, and objects are persisted into durable storage shortly after being received.
     */
   var StorageClass: js.UndefOr[StorageClass] = js.undefined
+  /**
+    * Indicates the availability of an object while it is still uploading. If the value is set to streaming, the object is available for downloading after some initial buffering but before the object is uploaded completely. If the value is set to standard, the object is available for downloading only when it is uploaded completely. The default value for this header is standard. To use this header, you must also set the HTTP Transfer-Encoding header to chunked.
+    */
+  var UploadAvailability: js.UndefOr[UploadAvailability] = js.undefined
 }
 
 object PutObjectRequest {
@@ -35,12 +39,14 @@ object PutObjectRequest {
     Path: PathNaming,
     CacheControl: StringPrimitive = null,
     ContentType: ContentType = null,
-    StorageClass: StorageClass = null
+    StorageClass: StorageClass = null,
+    UploadAvailability: UploadAvailability = null
   ): PutObjectRequest = {
     val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any], Path = Path)
     if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl)
     if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
+    if (UploadAvailability != null) __obj.updateDynamic("UploadAvailability")(UploadAvailability.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectRequest]
   }
 }

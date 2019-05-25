@@ -20,6 +20,7 @@ package object clientsCodedeployMod {
   type ApplicationRevisionSortBy = _ApplicationRevisionSortBy | java.lang.String
   type ApplicationsInfoList = js.Array[ApplicationInfo]
   type ApplicationsList = js.Array[ApplicationName]
+  type Arn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_FAILURE
     - awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_STOP_ON_ALARM
@@ -135,36 +136,39 @@ package object clientsCodedeployMod {
   type ELBName = java.lang.String
   type ETag = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_GROUP_MISSING
+    - awsDashSdkLib.awsDashSdkLibStrings.AGENT_ISSUE
+    - awsDashSdkLib.awsDashSdkLibStrings.ALARM_ACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.APPLICATION_MISSING
-    - awsDashSdkLib.awsDashSdkLibStrings.REVISION_MISSING
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOSCALING_VALIDATION_ERROR
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO_SCALING_CONFIGURATION
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO_SCALING_IAM_ROLE_PERMISSIONS
+    - awsDashSdkLib.awsDashSdkLibStrings.CODEDEPLOY_RESOURCE_CANNOT_BE_FOUND
+    - awsDashSdkLib.awsDashSdkLibStrings.CUSTOMER_APPLICATION_UNHEALTHY
+    - awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_GROUP_MISSING
+    - awsDashSdkLib.awsDashSdkLibStrings.ECS_UPDATE_ERROR
+    - awsDashSdkLib.awsDashSdkLibStrings.ELASTIC_LOAD_BALANCING_INVALID
+    - awsDashSdkLib.awsDashSdkLibStrings.ELB_INVALID_INSTANCE
+    - awsDashSdkLib.awsDashSdkLibStrings.HEALTH_CONSTRAINTS
+    - awsDashSdkLib.awsDashSdkLibStrings.HEALTH_CONSTRAINTS_INVALID
+    - awsDashSdkLib.awsDashSdkLibStrings.HOOK_EXECUTION_FAILURE
     - awsDashSdkLib.awsDashSdkLibStrings.IAM_ROLE_MISSING
     - awsDashSdkLib.awsDashSdkLibStrings.IAM_ROLE_PERMISSIONS
-    - awsDashSdkLib.awsDashSdkLibStrings.NO_EC2_SUBSCRIPTION
-    - awsDashSdkLib.awsDashSdkLibStrings.OVER_MAX_INSTANCES
-    - awsDashSdkLib.awsDashSdkLibStrings.NO_INSTANCES
-    - awsDashSdkLib.awsDashSdkLibStrings.TIMEOUT
-    - awsDashSdkLib.awsDashSdkLibStrings.HEALTH_CONSTRAINTS_INVALID
-    - awsDashSdkLib.awsDashSdkLibStrings.HEALTH_CONSTRAINTS
     - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_ERROR
-    - awsDashSdkLib.awsDashSdkLibStrings.THROTTLED
-    - awsDashSdkLib.awsDashSdkLibStrings.ALARM_ACTIVE
-    - awsDashSdkLib.awsDashSdkLibStrings.AGENT_ISSUE
-    - awsDashSdkLib.awsDashSdkLibStrings.AUTO_SCALING_IAM_ROLE_PERMISSIONS
-    - awsDashSdkLib.awsDashSdkLibStrings.AUTO_SCALING_CONFIGURATION
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_ECS_SERVICE
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_LAMBDA_CONFIGURATION
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_LAMBDA_FUNCTION
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_REVISION
     - awsDashSdkLib.awsDashSdkLibStrings.MANUAL_STOP
     - awsDashSdkLib.awsDashSdkLibStrings.MISSING_BLUE_GREEN_DEPLOYMENT_CONFIGURATION
     - awsDashSdkLib.awsDashSdkLibStrings.MISSING_ELB_INFORMATION
     - awsDashSdkLib.awsDashSdkLibStrings.MISSING_GITHUB_TOKEN
-    - awsDashSdkLib.awsDashSdkLibStrings.ELASTIC_LOAD_BALANCING_INVALID
-    - awsDashSdkLib.awsDashSdkLibStrings.ELB_INVALID_INSTANCE
-    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_LAMBDA_CONFIGURATION
-    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_LAMBDA_FUNCTION
-    - awsDashSdkLib.awsDashSdkLibStrings.HOOK_EXECUTION_FAILURE
-    - awsDashSdkLib.awsDashSdkLibStrings.AUTOSCALING_VALIDATION_ERROR
-    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_ECS_SERVICE
-    - awsDashSdkLib.awsDashSdkLibStrings.ECS_UPDATE_ERROR
-    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_REVISION
+    - awsDashSdkLib.awsDashSdkLibStrings.NO_EC2_SUBSCRIPTION
+    - awsDashSdkLib.awsDashSdkLibStrings.NO_INSTANCES
+    - awsDashSdkLib.awsDashSdkLibStrings.OVER_MAX_INSTANCES
+    - awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_LIMIT_EXCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.REVISION_MISSING
+    - awsDashSdkLib.awsDashSdkLibStrings.THROTTLED
+    - awsDashSdkLib.awsDashSdkLibStrings.TIMEOUT
     - java.lang.String
   */
   type ErrorCode = _ErrorCode | java.lang.String
@@ -222,6 +226,8 @@ package object clientsCodedeployMod {
   type InstanceTypeList = js.Array[InstanceType]
   type InstancesList = js.Array[InstanceId]
   type Key = java.lang.String
+  type LambdaFunctionAlias = java.lang.String
+  type LambdaFunctionName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.Success
     - awsDashSdkLib.awsDashSdkLibStrings.ScriptMissing
@@ -311,6 +317,7 @@ package object clientsCodedeployMod {
     - java.lang.String
   */
   type TagFilterType = _TagFilterType | java.lang.String
+  type TagKeyList = js.Array[Key]
   type TagList = js.Array[Tag]
   type TargetArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -371,6 +378,7 @@ package object clientsCodedeployMod {
   type TriggerName = java.lang.String
   type TriggerTargetArn = java.lang.String
   type Value = java.lang.String
+  type Version = java.lang.String
   type VersionId = java.lang.String
   type WaitTimeInMins = scala.Double
   /* Rewritten from type alias, can be one of: 

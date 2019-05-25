@@ -26,17 +26,21 @@ trait BarIndicatorProps extends BaseIndicatorProps {
 object BarIndicatorProps {
   @scala.inline
   def apply(
+    animating: js.UndefOr[scala.Boolean] = js.undefined,
     animationDuration: scala.Int | scala.Double = null,
     animationEasing: reactDashNativeLib.reactDashNativeMod.EasingFunction = null,
     color: java.lang.String = null,
     count: scala.Int | scala.Double = null,
+    interaction: js.UndefOr[scala.Boolean] = js.undefined,
     size: scala.Int | scala.Double = null
   ): BarIndicatorProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
     if (color != null) __obj.updateDynamic("color")(color)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarIndicatorProps]
   }

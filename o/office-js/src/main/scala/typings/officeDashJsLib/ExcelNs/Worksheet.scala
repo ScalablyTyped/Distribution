@@ -286,8 +286,8 @@ class Worksheet ()
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param text String to find.
-    * @param criteria Additional Criteria.
+    * @param text The string to find.
+    * @param criteria Additional search criteria, including whether the search needs to match the entire cell or be case sensitive.
     * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells meet this criteria, an ItemNotFound error will be thrown.
     */
   def findAll(text: java.lang.String, criteria: WorksheetSearchCriteria): RangeAreas = js.native
@@ -297,8 +297,8 @@ class Worksheet ()
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param text String to find.
-    * @param criteria Additional Criteria.
+    * @param text The string to find.
+    * @param criteria Additional search criteria, including whether the search needs to match the entire cell or be case sensitive.
     * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, this function will return a null object.
     */
   def findAllOrNullObject(text: java.lang.String, criteria: WorksheetSearchCriteria): RangeAreas = js.native

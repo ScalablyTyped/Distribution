@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/realtymaps/promise-ftp
 // Definitions by: coolreader18 <https://github.com/coolreader18>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

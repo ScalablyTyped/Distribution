@@ -52,6 +52,11 @@ trait AppXOptions
     */
   val publisherDisplayName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
+    * Whether to set build number. See https://github.com/electron-userland/electron-builder/issues/3875
+    * @default false
+    */
+  val setBuildNumber: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Whether to overlay the app's name on top of tile images on the Start screen. Defaults to `false`. (https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-shownameontiles) in the dependencies.
     * @default false
     */
@@ -73,6 +78,7 @@ object AppXOptions {
     publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
     publisher: java.lang.String = null,
     publisherDisplayName: java.lang.String = null,
+    setBuildNumber: js.UndefOr[scala.Boolean] = js.undefined,
     showNameOnTiles: js.UndefOr[scala.Boolean] = js.undefined
   ): AppXOptions = {
     val __obj = js.Dynamic.literal()
@@ -88,6 +94,7 @@ object AppXOptions {
     if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
     if (publisher != null) __obj.updateDynamic("publisher")(publisher)
     if (publisherDisplayName != null) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
+    if (!js.isUndefined(setBuildNumber)) __obj.updateDynamic("setBuildNumber")(setBuildNumber)
     if (!js.isUndefined(showNameOnTiles)) __obj.updateDynamic("showNameOnTiles")(showNameOnTiles)
     __obj.asInstanceOf[AppXOptions]
   }

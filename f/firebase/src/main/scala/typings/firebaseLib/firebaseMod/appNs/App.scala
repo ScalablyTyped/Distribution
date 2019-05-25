@@ -94,6 +94,20 @@ trait App extends js.Object {
   def functions(): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   def functions(region: java.lang.String): firebaseLib.firebaseMod.functionsNs.Functions = js.native
   /**
+    * Gets the {@link firebase.installations.Installations `Installations`} service for the
+    * current app.
+    *
+    * @webonly
+    *
+    * @example
+    * ```javascript
+    * const installations = app.installations();
+    * // The above is shorthand for:
+    * // const installations = firebase.installations(app);
+    * ```
+    */
+  def installations(): firebaseLib.firebaseMod.installationsNs.Installations = js.native
+  /**
     * Gets the {@link firebase.messaging.Messaging `Messaging`} service for the
     * current app.
     *

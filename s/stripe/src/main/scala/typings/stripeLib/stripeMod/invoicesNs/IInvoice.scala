@@ -192,6 +192,11 @@ trait IInvoice
     */
   var paid: scala.Boolean
   /**
+    * The PaymentIntent associated with this invoice. The PaymentIntent is generated when the invoice is finalized,
+    * and can then be used to pay the invoice. Note that voiding an invoice will cancel the PaymentIntent. [Expandable]
+    */
+  var payment_intent: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent | scala.Null
+  /**
     * End of the usage period during which invoice items were added to this invoice
     */
   var period_end: scala.Double
@@ -310,6 +315,7 @@ object IInvoice {
     ending_balance: scala.Int | scala.Double = null,
     hosted_invoice_url: java.lang.String = null,
     invoice_pdf: java.lang.String = null,
+    payment_intent: stripeLib.stripeMod.paymentIntentsNs.IPaymentIntent = null,
     tax: scala.Int | scala.Double = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoice = {
@@ -320,6 +326,7 @@ object IInvoice {
     if (ending_balance != null) __obj.updateDynamic("ending_balance")(ending_balance.asInstanceOf[js.Any])
     if (hosted_invoice_url != null) __obj.updateDynamic("hosted_invoice_url")(hosted_invoice_url)
     if (invoice_pdf != null) __obj.updateDynamic("invoice_pdf")(invoice_pdf)
+    if (payment_intent != null) __obj.updateDynamic("payment_intent")(payment_intent)
     if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
     if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoice]

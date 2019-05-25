@@ -27,6 +27,10 @@ class Stream protected ()
     */
   val encryptionType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
+    * A boolean that indicates all registered consumers should be deregistered from the stream so that the stream can be destroyed without error. The default value is `false`.
+    */
+  val enforceConsumerDeletion: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
     * The GUID for the customer-managed KMS key to use for encryption. You can also use a Kinesis-owned master key by specifying the alias `alias/aws/kinesis`.
     */
   val kmsKeyId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

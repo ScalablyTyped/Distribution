@@ -21,10 +21,10 @@ trait XLFormat extends js.Object {
   def addFontFamily(fontName: java.lang.String): scala.Unit = js.native
   /** This method is used to add the new custom cell style in spreadsheet.
     * @param {string} Pass the style name.
-    * @param {any} Pass the format object.
+    * @param {Spreadsheet.NumberFormatOptions} Pass Object NumberFormatOptions.
     * @returns {void}
     */
-  def addNewCustomStyle(styleName: java.lang.String, options: js.Any): scala.Unit = js.native
+  def addNewCustomStyle(styleName: java.lang.String, options: NumberFormatOptions): scala.Unit = js.native
   /** This method is used to apply the custom cell style in the specified range.
     * @param {string} Pass the style name.
     * @param {string} Pass the range to applied.
@@ -32,28 +32,28 @@ trait XLFormat extends js.Object {
     */
   def applyCustomCellStyle(styleName: java.lang.String, range: java.lang.String): scala.Unit = js.native
   /** This method is used to convert table range to normal range.
-    * @param {any} Pass the sheet index and table id.
+    * @param {Spreadsheet.TableIDOptions} Pass Object TableIDOptions.
     * @returns {void}
     */
-  def convertToRange(options: js.Any): scala.Unit = js.native
+  def convertToRange(options: TableIDOptions): scala.Unit = js.native
   /** This method is used to create a table for the selected range of cells in the Spreadsheet.
-    * @param {any} Pass the table object.
+    * @param {Spreadsheet.TableOptions} Pass Object TableOptions.
     * @param {string|any[]} Optional. If the range is specified, then it will create table in the specified range else it will use the current selected range.
     * @returns {string}
     */
-  def createTable(tableObject: js.Any, range: java.lang.String): java.lang.String = js.native
-  def createTable(tableObject: js.Any, range: js.Array[_]): java.lang.String = js.native
+  def createTable(tableObject: TableOptions, range: java.lang.String): java.lang.String = js.native
+  def createTable(tableObject: TableOptions, range: js.Array[_]): java.lang.String = js.native
   /** This method is used to delete the added custom cell style in spreadsheet.
     * @param {string} Pass the cell style name
     * @returns {void}
     */
   def deleteCustomStyle(styleName: java.lang.String): scala.Unit = js.native
   /** This method is used to set format style and values in a cell or range of cells.
-    * @param {any} Pass the formatObject which contains style, type, format, groupSeparator and decimalPlaces.
+    * @param {Spreadsheet.FormatObjectOptions} Pass Object FormatObjectOptions.
     * @param {string} Pass the range to format cells.
     * @returns {void}
     */
-  def format(formatObj: js.Any, range: java.lang.String): scala.Unit = js.native
+  def format(formatObj: FormatObjectOptions, range: java.lang.String): scala.Unit = js.native
   /** This method is used to get the border from hashcode in the Spreadsheet.
     * @param {string} Pass the border hashcode.
     * @param {boolean} Optional. pass `true` to get the complete border object
@@ -72,10 +72,10 @@ trait XLFormat extends js.Object {
     */
   def getFormatFromHashCode(hashCode: java.lang.String): scala.Unit = js.native
   /** This method is used to get the hashcode from the given style object in spreadsheet.
-    * @param {any} Pass the style object that you want to get the hashcode.
+    * @param {Spreadsheet.FontOptions} Pass Object FontOptions.
     * @returns {void}
     */
-  def getFormatHashCode(style: js.Any): scala.Unit = js.native
+  def getFormatHashCode(style: FontOptions): scala.Unit = js.native
   /** This method is used to get the format as array from the given specified range in spreadsheet.
     * @param {string} Pass the range.
     * @returns {void}
@@ -83,23 +83,23 @@ trait XLFormat extends js.Object {
   def getHashCodeClassAsArray(range: java.lang.String): scala.Unit = js.native
   /** This method is used to modify the added custom cell style in spreadsheet.
     * @param {string} pass the old style name
-    * @param {any} pass the format object to be modified
+    * @param {Spreadsheet.CustomStyleOptions} Pass Object CustomStyleOptions.
     * @param {string} pass the new style name
     * @returns {void}
     */
-  def modifyCustomStyle(oldStyleName: java.lang.String, options: js.Any, newStyleName: java.lang.String): scala.Unit = js.native
+  def modifyCustomStyle(oldStyleName: java.lang.String, options: CustomStyleOptions, newStyleName: java.lang.String): scala.Unit = js.native
   /** This method is used to remove the font from the Ribbon font family dropdown.
     * @param {string} Font name which needs to remove from the font family drop down.
     * @returns {void}
     */
   def removeFontFamily(fontName: java.lang.String): scala.Unit = js.native
-  def removeStyle(range: java.lang.String, options: js.Any): scala.Unit = js.native
+  def removeStyle(range: java.lang.String, options: FormatOptions): scala.Unit = js.native
   /** This method is used to remove the style in the specified range.
     * @param {any[]|string} Pass the cell range .
-    * @param {any} Optional. Pass the options for which the style gets removed.
+    * @param {Spreadsheet.FormatOptions} Optional.
     * @returns {void}
     */
-  def removeStyle(range: js.Array[_], options: js.Any): scala.Unit = js.native
+  def removeStyle(range: js.Array[_], options: FormatOptions): scala.Unit = js.native
   /** This method is used to remove table with specified tableId in the Spreadsheet.
     * @param {number} Pass the tableId that you want to remove.
     * @returns {void}
@@ -113,11 +113,11 @@ trait XLFormat extends js.Object {
   def updateDecimalPlaces(`type`: java.lang.String, range: java.lang.String): scala.Unit = js.native
   def updateDecimalPlaces(`type`: java.lang.String, range: js.Array[_]): scala.Unit = js.native
   /** This method is used to update the format for the selected range of cells in the Spreadsheet.
-    * @param {any} Pass the format object that you want to update.
+    * @param {Spreadsheet.BorderOptions} Pass Object BorderOptions.
     * @param {any[]} Optional. If the range is specified, then it will update format in the specified range else it will use the current selected range.
     * @returns {void}
     */
-  def updateFormat(formatObj: js.Any, range: js.Array[_]): scala.Unit = js.native
+  def updateFormat(formatObj: BorderOptions, range: js.Array[_]): scala.Unit = js.native
   /** This method is used to update the unique format for selected range of cells in the Spreadsheet.
     * @param {string} Pass the unique format class.
     * @param {any[]} Optional. If the range is specified, then it will update format in the specified range else it will use the current selected range.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nuka-carousel"
-version := "4.5.6-cfcabc"
+version := "4.5.8-f6db25"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

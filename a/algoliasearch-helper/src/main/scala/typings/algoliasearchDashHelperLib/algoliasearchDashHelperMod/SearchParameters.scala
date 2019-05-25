@@ -29,6 +29,18 @@ class SearchParameters () extends QueryParameters {
   var facetsRefinements_SearchParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.native
   @JSName("hierarchicalFacetsRefinements")
   var hierarchicalFacetsRefinements_SearchParameters: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.native
+  var managedParameters: js.Tuple10[
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.index, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.facets, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.disjunctiveFacets, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.facetsRefinements, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.facetsExcludes, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.disjunctiveFacetsRefinements, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.numericRefinements, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.tagRefinements, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.hierarchicalFacets, 
+    algoliasearchDashHelperLib.algoliasearchDashHelperLibStrings.hierarchicalFacetsRefinements
+  ] = js.native
   @JSName("minProximity")
   var minProximity_SearchParameters: js.UndefOr[js.Any] = js.native
   @JSName("queryType")
@@ -83,6 +95,7 @@ class SearchParameters () extends QueryParameters {
     algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.OperatorList
   ] = js.native
   def getQueryParameter(paramName: java.lang.String): js.Any = js.native
+  def getQueryParams(): stdLib.Partial[ManagedParameters] = js.native
   def getRefinedDisjunctiveFacets(facet: java.lang.String, value: js.Any): js.Array[java.lang.String] = js.native
   def getRefinedHierarchicalFacets(facet: java.lang.String, value: js.Any): js.Array[java.lang.String] = js.native
   def getUnrefinedDisjunctiveFacets(): js.Array[java.lang.String] = js.native

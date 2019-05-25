@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/WhoopInc/supertest-as-promised
 // Definitions by: Tanguy Krotoff <https://github.com/tkrotoff>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

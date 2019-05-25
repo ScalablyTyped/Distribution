@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormFieldProps extends js.Object {
-  var component: js.UndefOr[reactLib.reactMod.ComponentType[_]] = js.undefined
+  var component: js.UndefOr[js.Any] = js.undefined
   var error: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var help: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined
   var htmlFor: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ trait FormFieldProps extends js.Object {
 object FormFieldProps {
   @scala.inline
   def apply(
-    component: reactLib.reactMod.ComponentType[_] = null,
+    component: js.Any = null,
     error: java.lang.String | reactLib.reactMod.ReactNode = null,
     help: java.lang.String | reactLib.reactMod.ReactNode = null,
     htmlFor: java.lang.String = null,
@@ -31,7 +31,7 @@ object FormFieldProps {
     validate: grommetLib.Anon_Message | (js.Function1[/* repeated */ js.Any, _]) = null
   ): FormFieldProps = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component)
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (help != null) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
     if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor)

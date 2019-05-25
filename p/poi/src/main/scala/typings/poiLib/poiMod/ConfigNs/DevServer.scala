@@ -22,7 +22,7 @@ trait DevServer extends js.Object {
   ] = js.undefined
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var historyApiFallback: js.UndefOr[
-    scala.Boolean | webpackDashDevDashServerLib.webpackDashDevDashServerMod.HistoryApiFallbackConfig
+    scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.Options
   ] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var hot: js.UndefOr[scala.Boolean] = js.undefined
@@ -44,7 +44,7 @@ object DevServer {
     after: (/* app */ expressLib.expressMod.Application, /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer) => scala.Unit = null,
     before: (/* app */ expressLib.expressMod.Application, /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer) => scala.Unit = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    historyApiFallback: scala.Boolean | webpackDashDevDashServerLib.webpackDashDevDashServerMod.HistoryApiFallbackConfig = null,
+    historyApiFallback: scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.Options = null,
     host: java.lang.String = null,
     hot: js.UndefOr[scala.Boolean] = js.undefined,
     hotEntries: js.Array[java.lang.String] = null,

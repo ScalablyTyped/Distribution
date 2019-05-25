@@ -1,7 +1,7 @@
 
 # Scala.js typings for geolib
 
-Typings are for version 2.0.24
+Typings are for version 2.0.26
 
 ## Library description:
 Library to perform geo specific tasks
@@ -31,14 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for geolib v2.0.22
-// Project: https://github.com/manuelbieh/Geolib
-// Definitions by: Vladimir Venegas <https://github.com/vvenegasv>
-// Definitions: 
-
-```
 

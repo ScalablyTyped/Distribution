@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simple-oauth2"
-version := "2.2-dt-20181121Z-38fd97"
+version := "2.2-dt-20190524Z-38fd97"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

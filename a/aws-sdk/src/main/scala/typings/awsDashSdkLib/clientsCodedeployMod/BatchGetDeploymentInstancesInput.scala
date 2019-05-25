@@ -11,7 +11,7 @@ trait BatchGetDeploymentInstancesInput extends js.Object {
     */
   var deploymentId: DeploymentId
   /**
-    * The unique IDs of instances used in the deployment.
+    * The unique IDs of instances used in the deployment. The maximum number of instance IDs you can specify is 25.
     */
   var instanceIds: InstancesList
 }

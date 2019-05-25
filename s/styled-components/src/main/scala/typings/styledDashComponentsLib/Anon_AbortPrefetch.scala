@@ -13,9 +13,8 @@ trait Anon_AbortPrefetch
     js.Function1[
       /* urls */ js.Array[java.lang.String], 
       js.Promise[
-        stdLib.Map[
-          java.lang.String, 
-          styledDashComponentsLib.styledDashComponentsLibStrings.memory | styledDashComponentsLib.styledDashComponentsLibStrings.disk
+        org.scalablytyped.runtime.StringDictionary[
+          styledDashComponentsLib.styledDashComponentsLibStrings.memory | styledDashComponentsLib.styledDashComponentsLibStrings.disk | styledDashComponentsLib.styledDashComponentsLibStrings.`disk/memory`
         ]
       ]
     ]

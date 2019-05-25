@@ -15,7 +15,7 @@ trait XLPivot extends js.Object {
     * @param {string} It specifies the range for which the pivot table is created.
     * @param {string} It specifies the location in which the pivot table is created.
     * @param {string} It specifies the name of the pivot table.
-    * @param {any} Pass the pivot table settings.
+    * @param {Spreadsheet.PivotOptions} Pass Object PivotOptions.
     * @param {any} Pass the pivot range, sheet index, address and data source .
     * @returns {string}
     */
@@ -23,7 +23,7 @@ trait XLPivot extends js.Object {
     range: java.lang.String,
     location: java.lang.String,
     name: java.lang.String,
-    settings: js.Any,
+    settings: PivotOptions,
     pvt: js.Any
   ): java.lang.String
   /** This method is used to delete the pivot table which is selected.
@@ -43,7 +43,7 @@ object XLPivot {
   @scala.inline
   def apply(
     clearPivotFieldList: java.lang.String => scala.Unit,
-    createPivotTable: (java.lang.String, java.lang.String, java.lang.String, js.Any, js.Any) => java.lang.String,
+    createPivotTable: (java.lang.String, java.lang.String, java.lang.String, PivotOptions, js.Any) => java.lang.String,
     deletePivotTable: java.lang.String => scala.Unit,
     refreshDataSource: (java.lang.String, scala.Double) => scala.Unit
   ): XLPivot = {

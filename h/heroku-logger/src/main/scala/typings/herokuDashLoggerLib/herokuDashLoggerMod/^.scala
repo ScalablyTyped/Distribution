@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("heroku-logger", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Logger: herokuDashLoggerLib.herokuDashLoggerMod.Logger = js.native
   def debug(message: java.lang.String): scala.Unit = js.native
   def debug(message: java.lang.String, data: js.Object): scala.Unit = js.native
   def error(message: java.lang.String): scala.Unit = js.native

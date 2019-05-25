@@ -581,6 +581,9 @@ object reactDashNativeLibStrings {
   sealed trait disk extends js.Object
   
   @js.native
+  sealed trait `disk/memory` extends js.Object
+  
+  @js.native
   sealed trait dismissedAction extends js.Object
   
   @js.native
@@ -1703,6 +1706,8 @@ object reactDashNativeLibStrings {
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def disk: disk = "disk".asInstanceOf[disk]
+  @scala.inline
+  def `disk/memory`: `disk/memory` = "disk/memory".asInstanceOf[`disk/memory`]
   @scala.inline
   def dismissedAction: dismissedAction = "dismissedAction".asInstanceOf[dismissedAction]
   @scala.inline

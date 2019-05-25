@@ -20,9 +20,9 @@ trait XLCFormat extends js.Object {
     */
   def getCFRule(rowIdx: scala.Double, colIdx: scala.Double): js.Array[_] = js.native
   /** This method is used to set the conditional formatting rule in the Spreadsheet.
-    * @param {any} Pass the rule to set.
+    * @param {Spreadsheet.CFormatOptions} Pass the Object "CFormatOptions"
     * @returns {void}
     */
-  def setCFRule(rule: js.Any): scala.Unit = js.native
+  def setCFRule(rule: CFormatOptions): scala.Unit = js.native
 }
 

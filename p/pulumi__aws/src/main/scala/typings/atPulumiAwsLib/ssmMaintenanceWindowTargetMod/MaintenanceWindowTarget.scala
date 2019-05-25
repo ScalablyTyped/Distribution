@@ -19,6 +19,14 @@ class MaintenanceWindowTarget protected ()
   def this(name: java.lang.String, args: MaintenanceWindowTargetArgs) = this()
   def this(name: java.lang.String, args: MaintenanceWindowTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * The description of the maintenance window target.
+    */
+  val description: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * The name of the maintenance window target.
+    */
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
     */
   val ownerInformation: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

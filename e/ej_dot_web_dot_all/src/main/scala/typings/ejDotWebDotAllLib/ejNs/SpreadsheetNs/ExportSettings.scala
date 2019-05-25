@@ -14,6 +14,11 @@ trait ExportSettings extends js.Object {
     * @Default {null}
     */
   var csvUrl: js.UndefOr[java.lang.String] = js.undefined
+  /** Gets or sets a value that indicates whether to enable or disable formula calculation in Spreadsheet. By enabling this feature, formula calculated while export the Spreadsheet in
+    * protected mode.
+    * @Default {false}
+    */
+  var enableFormulaCalculation: js.UndefOr[scala.Boolean] = js.undefined
   /** Gets or sets a value that indicates to define excelUrl for export to excel format.
     * @Default {null}
     */
@@ -33,6 +38,7 @@ object ExportSettings {
   def apply(
     allowExporting: js.UndefOr[scala.Boolean] = js.undefined,
     csvUrl: java.lang.String = null,
+    enableFormulaCalculation: js.UndefOr[scala.Boolean] = js.undefined,
     excelUrl: java.lang.String = null,
     password: java.lang.String = null,
     pdfUrl: java.lang.String = null
@@ -40,6 +46,7 @@ object ExportSettings {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowExporting)) __obj.updateDynamic("allowExporting")(allowExporting)
     if (csvUrl != null) __obj.updateDynamic("csvUrl")(csvUrl)
+    if (!js.isUndefined(enableFormulaCalculation)) __obj.updateDynamic("enableFormulaCalculation")(enableFormulaCalculation)
     if (excelUrl != null) __obj.updateDynamic("excelUrl")(excelUrl)
     if (password != null) __obj.updateDynamic("password")(password)
     if (pdfUrl != null) __obj.updateDynamic("pdfUrl")(pdfUrl)

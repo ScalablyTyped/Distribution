@@ -843,6 +843,7 @@
 | [commondir](./c/commondir) | compute the closest common parent for file paths | common, path, directory, file, parent, root |
 | [commonmark](./c/commonmark) | a strongly specified, highly compatible variant of | markdown, commonmark, md, stmd |
 | [compare-func](./c/compare-func) | Get a compare function for array to sort | compare-func, arr, array, by, compare, dot, get, obj, object, prop, property, sort, sorting |
+| [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p | array, sort, compare, compose |
 | [compare-version](./c/compare-version) | Compare semver version numbers | compare, number, semver, version |
 | [compare-versions](./c/compare-versions) | Compare semver version strings to find greater, eq | semver, version, compare, browser, node |
 | [complex](./c/complex) | Do calculations with Complex numbers | Complex Numbers, Numbers, Math, Calculus |
@@ -1235,6 +1236,7 @@
 | [disposable-email-domains](./d/disposable-email-domains) | A list of  | - |
 | [distributions](./d/distributions) | A collection of probability distribution functions | distribution, normal, studentt, uniform |
 | [djv](./d/djv) | dynamic json-schema validator | json-schema, json, schema, validator, validate |
+| [dkim-signer](./d/dkim-signer) | DKIM signing code extracted from mailcomposer | DKIM, SMTP, mailcomposer |
 | [dlv](./d/dlv) | Safely get a dot-notated property within an object | delve, dot notation, dot |
 | [dmg-builder](./d/dmg-builder) | Utilities to build DMG. Used by  | - |
 | [dnd-core](./d/dnd-core) | Drag and drop sans the GUI | - |
@@ -2183,6 +2185,7 @@
 | [greasemonkey](./g/greasemonkey) | - | firefox, chrome, api, user.js, userscript, greasemonkey |
 | [grecaptcha](./g/grecaptcha) | reCAPTCHA v3 / v2 client for Node | recaptcha, recaptcha-v3, v3, recaptcha-v2, v2, verify, recaptcha-verify, recaptcha2 |
 | [gregorian-calendar](./g/gregorian-calendar) | date time utils ported from java | date, time |
+| [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
 | [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | gridstack.js is a jQuery plugin for widget layout | gridstack, grid, gridster, layout, jquery |
@@ -4056,6 +4059,7 @@
 | [nedb](./n/nedb) | File-based embedded data store for node.js | database, datastore, embedded |
 | [nedb-logger](./n/nedb-logger) | Logger outputting messages to a file in a nedb-rea | logger, nedb |
 | [needle](./n/needle) | The leanest and most handsome HTTP client in the N | http, https, simple, request, client, multipart, upload, proxy, deflate, timeout, charset, iconv, cookie, redirect |
+| [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket  | neffos, realtime, framework, websocket, events, iris |
 | [negative-array](./n/negative-array) | Negative array index support array | array, negative, index, indice, reverse, proxy, proxies, es2015 |
 | [negative-zero](./n/negative-zero) | Check if a number is negative zero | number, is, check, detect, negative, zero |
 | [negotiator](./n/negotiator) | HTTP content negotiation | http, content negotiation, accept, accept-language, accept-encoding, accept-charset |
@@ -6095,6 +6099,7 @@
 | [store](./s/store) | A localStorage wrapper for all browsers without us | - |
 | [storm-react-diagrams](./s/storm-react-diagrams) | **PSA**: React Diagrams is currently getting a bit | web, diagram, diagrams, react, typescript, flowchart, simple, links, nodes |
 | [storybook-addon-jsx](./s/storybook-addon-jsx) | Display the JSX of the story | - |
+| [storybook-react-router](./s/storybook-react-router) | A storybook decorator that allows you to use routi | storybook, react, react-router |
 | [storybook-readme](./s/storybook-readme) | Storybook addon to show components README (for Rea | storybook, react-storybook, docs, readme |
 | [storybook__addon-a11y](./s/storybook__addon-a11y) | a11y addon for storybook | a11y, accessibility, addon, storybook, valid, verify |
 | [storybook__addon-actions](./s/storybook__addon-actions) | Action Logger addon for storybook | storybook |

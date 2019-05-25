@@ -54,7 +54,9 @@ trait Configuration extends js.Object {
   /** Adds headers to all responses. */
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /** When using the HTML5 History API, the index.html page will likely have to be served in place of any 404 responses. */
-  var historyApiFallback: js.UndefOr[scala.Boolean | HistoryApiFallbackConfig] = js.undefined
+  var historyApiFallback: js.UndefOr[
+    scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.Options
+  ] = js.undefined
   /** Specify a host to use. By default this is localhost. */
   var host: js.UndefOr[java.lang.String] = js.undefined
   /** Enable webpack's Hot Module Replacement feature. */
@@ -155,7 +157,7 @@ object Configuration {
     disableHostCheck: js.UndefOr[scala.Boolean] = js.undefined,
     filename: java.lang.String = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    historyApiFallback: scala.Boolean | HistoryApiFallbackConfig = null,
+    historyApiFallback: scala.Boolean | connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.Options = null,
     host: java.lang.String = null,
     hot: js.UndefOr[scala.Boolean] = js.undefined,
     hotOnly: js.UndefOr[scala.Boolean] = js.undefined,

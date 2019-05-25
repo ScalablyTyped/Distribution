@@ -67,6 +67,10 @@ trait CreateDeploymentGroupInput extends js.Object {
     */
   var serviceRoleArn: Role
   /**
+    *  The metadata that you apply to CodeDeploy deployment groups to help you organize and categorize them. Each tag consists of a key and an optional value, both of which you define. 
+    */
+  var tags: js.UndefOr[TagList] = js.undefined
+  /**
     * Information about triggers to create when the deployment group is created. For examples, see Create a Trigger for an AWS CodeDeploy Event in the AWS CodeDeploy User Guide.
     */
   var triggerConfigurations: js.UndefOr[TriggerConfigList] = js.undefined
@@ -90,6 +94,7 @@ object CreateDeploymentGroupInput {
     loadBalancerInfo: LoadBalancerInfo = null,
     onPremisesInstanceTagFilters: TagFilterList = null,
     onPremisesTagSet: OnPremisesTagSet = null,
+    tags: TagList = null,
     triggerConfigurations: TriggerConfigList = null
   ): CreateDeploymentGroupInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName, deploymentGroupName = deploymentGroupName, serviceRoleArn = serviceRoleArn)
@@ -105,6 +110,7 @@ object CreateDeploymentGroupInput {
     if (loadBalancerInfo != null) __obj.updateDynamic("loadBalancerInfo")(loadBalancerInfo)
     if (onPremisesInstanceTagFilters != null) __obj.updateDynamic("onPremisesInstanceTagFilters")(onPremisesInstanceTagFilters)
     if (onPremisesTagSet != null) __obj.updateDynamic("onPremisesTagSet")(onPremisesTagSet)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     if (triggerConfigurations != null) __obj.updateDynamic("triggerConfigurations")(triggerConfigurations)
     __obj.asInstanceOf[CreateDeploymentGroupInput]
   }

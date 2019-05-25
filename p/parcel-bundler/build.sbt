@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "parcel-bundler"
-version := "1.12-dt-20190330Z-c08911"
+version := "1.12-dt-20190330Z-5c593d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190522Z-5df1c7",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-ba44ed",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")

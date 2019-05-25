@@ -530,8 +530,8 @@ class Range ()
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param text String to find.
-    * @param criteria Additional Criteria.
+    * @param text The string to find.
+    * @param criteria Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
     * @returns The Range which matched the search criteria.
     */
   def find(text: java.lang.String, criteria: SearchCriteria): Range = js.native
@@ -543,8 +543,8 @@ class Range ()
     *
     * [Api set: ExcelApi 1.9]
     *
-    * @param text String to find.
-    * @param criteria Additional Criteria.
+    * @param text The string to find.
+    * @param criteria Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
     * @returns The Range which matched the search criteria.
     */
   def findOrNullObject(text: java.lang.String, criteria: SearchCriteria): Range = js.native

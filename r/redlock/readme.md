@@ -40,7 +40,7 @@ These comments are from the typescript definitions and might be useful:
 // Definitions by: Ilya Mochalov <https://github.com/chrootsu>
 //                 BendingBender <https://github.com/BendingBender>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

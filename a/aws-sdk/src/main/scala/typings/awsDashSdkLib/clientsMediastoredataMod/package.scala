@@ -30,6 +30,12 @@ package object clientsMediastoredataMod {
   type StringPrimitive = java.lang.String
   type TimeStamp = stdLib.Date
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.STREAMING
+    - java.lang.String
+  */
+  type UploadAvailability = _UploadAvailability | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2017-09-01`
     - awsDashSdkLib.awsDashSdkLibStrings.latest
     - java.lang.String

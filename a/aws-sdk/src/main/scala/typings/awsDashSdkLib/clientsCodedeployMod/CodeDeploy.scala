@@ -26,7 +26,7 @@ trait CodeDeploy
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more application revisions.
+    * Gets information about one or more application revisions. The maximum number of application revisions that can be returned is 25.
     */
   def batchGetApplicationRevisions(): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationRevisionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetApplicationRevisions(
@@ -37,7 +37,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationRevisionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more application revisions.
+    * Gets information about one or more application revisions. The maximum number of application revisions that can be returned is 25.
     */
   def batchGetApplicationRevisions(params: BatchGetApplicationRevisionsInput): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationRevisionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetApplicationRevisions(
@@ -49,7 +49,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationRevisionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more applications.
+    * Gets information about one or more applications. The maximum number of applications that can be returned is 25.
     */
   def batchGetApplications(): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetApplications(
@@ -60,7 +60,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more applications.
+    * Gets information about one or more applications. The maximum number of applications that can be returned is 25.
     */
   def batchGetApplications(params: BatchGetApplicationsInput): awsDashSdkLib.libRequestMod.Request[BatchGetApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetApplications(
@@ -95,7 +95,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
+    *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of one or more instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. The maximum number of instances that can be returned is 25.
     */
   def batchGetDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDeploymentInstances(
@@ -106,7 +106,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
+    *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of one or more instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. The maximum number of instances that can be returned is 25.
     */
   def batchGetDeploymentInstances(params: BatchGetDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDeploymentInstances(
@@ -118,7 +118,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
+    *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
     */
   def batchGetDeploymentTargets(): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDeploymentTargets(
@@ -129,7 +129,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
+    *  Returns an array of one or more targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances. The maximum number of targets that can be returned is 25.  The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
     */
   def batchGetDeploymentTargets(params: BatchGetDeploymentTargetsInput): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDeploymentTargets(
@@ -141,7 +141,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more deployments.
+    * Gets information about one or more deployments. The maximum number of deployments that can be returned is 25.
     */
   def batchGetDeployments(): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDeployments(
@@ -152,7 +152,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more deployments.
+    * Gets information about one or more deployments. The maximum number of deployments that can be returned is 25.
     */
   def batchGetDeployments(params: BatchGetDeploymentsInput): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetDeployments(
@@ -164,7 +164,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more on-premises instances.
+    * Gets information about one or more on-premises instances. The maximum number of on-premises instances that can be returned is 25.
     */
   def batchGetOnPremisesInstances(): awsDashSdkLib.libRequestMod.Request[BatchGetOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetOnPremisesInstances(
@@ -175,7 +175,7 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchGetOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets information about one or more on-premises instances.
+    * Gets information about one or more on-premises instances. The maximum number of on-premises instances that can be returned is 25.
     */
   def batchGetOnPremisesInstances(params: BatchGetOnPremisesInstancesInput): awsDashSdkLib.libRequestMod.Request[BatchGetOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchGetOnPremisesInstances(
@@ -776,6 +776,29 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    *  Returns a list of tags for the resource identified by a specified ARN. Tags are used to organize and categorize your CodeDeploy resources. 
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Returns a list of tags for the resource identified by a specified ARN. Tags are used to organize and categorize your CodeDeploy resources. 
+    */
+  def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
     */
   def putLifecycleEventHookExecutionStatus(): awsDashSdkLib.libRequestMod.Request[PutLifecycleEventHookExecutionStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -881,6 +904,52 @@ trait CodeDeploy
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[StopDeploymentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Associates the list of tags in the input Tags parameter with the resource identified by the ResourceArn input parameter. 
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Associates the list of tags in the input Tags parameter with the resource identified by the ResourceArn input parameter. 
+    */
+  def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: TagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identfied by the list of keys in the TagKeys input parameter. 
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  Disassociates a resource from a list of tags. The resource is identified by the ResourceArn input parameter. The tags are identfied by the list of keys in the TagKeys input parameter. 
+    */
+  def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: UntagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Changes the name of an application.
     */

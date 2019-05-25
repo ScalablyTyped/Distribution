@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("nodemailer/lib/mime-node", JSImport.Namespace)
 @js.native
-class ^ protected () extends MimeNode {
+class ^ () extends MimeNode {
   def this(contentType: java.lang.String) = this()
   def this(contentType: java.lang.String, options: Options) = this()
 }

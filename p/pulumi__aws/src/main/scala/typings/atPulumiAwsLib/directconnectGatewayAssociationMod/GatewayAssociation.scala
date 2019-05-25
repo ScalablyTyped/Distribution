@@ -23,6 +23,20 @@ class GatewayAssociation protected ()
     */
   val allowedPrefixes: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
+    * The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+    * Used for single account Direct Connect gateway associations.
+    */
+  val associatedGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The ID of the AWS account that owns the VGW or transit gateway with which to associate the Direct Connect gateway.
+    * Used for cross-account Direct Connect gateway associations.
+    */
+  val associatedGatewayOwnerAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The type of the associated gateway, `transitGateway` or `virtualPrivateGateway`.
+    */
+  val associatedGatewayType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The ID of the Direct Connect gateway association.
     */
   val dxGatewayAssociationId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
@@ -31,9 +45,19 @@ class GatewayAssociation protected ()
     */
   val dxGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The ID of the VGW with which to associate the gateway.
+    * The ID of the AWS account that owns the Direct Connect gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val dxGatewayOwnerAccountId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The ID of the Direct Connect gateway association proposal.
+    * Used for cross-account Direct Connect gateway associations.
+    */
+  val proposalId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * *Deprecated:* Use `associated_gateway_id` instead. The ID of the VGW with which to associate the gateway.
+    * Used for single account Direct Connect gateway associations.
+    */
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 /* static members */

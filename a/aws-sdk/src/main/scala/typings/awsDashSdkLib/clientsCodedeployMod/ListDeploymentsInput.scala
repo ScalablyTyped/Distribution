@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListDeploymentsInput extends js.Object {
   /**
-    * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
+    * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.  If applicationName is specified, then deploymentGroupName must be specified. If it is not specified, then deploymentGroupName must not be specified.  
     */
   var applicationName: js.UndefOr[ApplicationName] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait ListDeploymentsInput extends js.Object {
     */
   var createTimeRange: js.UndefOr[TimeRange] = js.undefined
   /**
-    * The name of a deployment group for the specified application.
+    * The name of a deployment group for the specified application.  If deploymentGroupName is specified, then applicationName must be specified. If it is not specified, then applicationName must not be specified.  
     */
   var deploymentGroupName: js.UndefOr[DeploymentGroupName] = js.undefined
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ol
 
-Typings are for version 4.6
+Typings are for version 5.3
 
 ## Library description:
 OpenLayers mapping library
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for ol 4.6
-// Project: https://github.com/openlayers/openlayers/tree/master/package#readme, https://openlayers.org
-// Definitions by: Yair Tawil <https://github.com/yairtawil>
+// Type definitions for ol 5.3
+// Project: https://github.com/openlayers/openlayers, https://openlayers.org
+// Definitions by: Rifa'i M. Hanif <https://github.com/hanreev>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.4
 
 ```
 

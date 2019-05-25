@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait SearchCriteria extends js.Object {
   /**
     *
-    * Specifies whether the match needs to be complete or partial. Default is false (partial).
+    * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
     *
     * [Api set: ExcelApi 1.9]
     */

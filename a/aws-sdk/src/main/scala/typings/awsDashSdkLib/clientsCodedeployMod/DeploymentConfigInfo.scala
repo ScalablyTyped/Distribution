@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeploymentConfigInfo extends js.Object {
   /**
-    * The destination platform type for the deployment (Lambda or Server).
+    * The destination platform type for the deployment (Lambda, Server, or ECS).
     */
   var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   /**

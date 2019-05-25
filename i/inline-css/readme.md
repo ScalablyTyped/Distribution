@@ -38,7 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/jonkemp/inline-css
 // Definitions by: Philip Spain <https://github.com/philipisapain>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

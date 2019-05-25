@@ -16,10 +16,10 @@ trait XLComment extends js.Object {
     */
   def deleteComment(range: js.Array[_], sheetIdx: scala.Double, skipHiddenRow: scala.Boolean): scala.Unit = js.native
   /** This method is used to edit the comment in the target Cell in Spreadsheet.
-    * @param {any} Optional. Pass the row index and column index of the cell which contains comment.
+    * @param {Spreadsheet.CellIndex} Optional.
     * @returns {void}
     */
-  def editComment(targetCell: js.Any): scala.Unit = js.native
+  def editComment(targetCell: CellIndex): scala.Unit = js.native
   /** This method is used to find the next comment from the active cell in Spreadsheet.
     * @returns {boolean}
     */

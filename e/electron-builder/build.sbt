@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "20.40.2-7a4a68"
+version := "20.41.0-eef3ab"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "app-builder-lib" % "20.40.2-271d31",
-  "org.scalablytyped" %%% "builder-util" % "9.7.1-e177ba",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.1-7ec42c",
+  "org.scalablytyped" %%% "app-builder-lib" % "20.41.0-56cfb0",
+  "org.scalablytyped" %%% "builder-util" % "10.0.0-5dd1cc",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.2-7ec42c",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-da708a",
-  "org.scalablytyped" %%% "electron-publish" % "20.40.0-86354e",
+  "org.scalablytyped" %%% "electron-publish" % "20.41.0-f5aeb5",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-c28382",
   "org.scalablytyped" %%% "lazy-val" % "1.0.4-39fe74",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",

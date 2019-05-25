@@ -89,19 +89,19 @@ class Spreadsheet protected () extends Widget {
   /** It is used to remove data in the specified range of cells based on the defined property.
     * @param {any[]|string} Optional. If range is specified, it will clear data for the specified range else it will use the current selected range.
     * @param {string} Optional. If property is specified, it will remove the specified property in the range else it will remove default properties
-    * @param {any} Optional.
+    * @param {HTMLElement} Optional.
     * @param {boolean} Optional. pass {{'`true`' | markdownify}}, if you want to skip the hidden rows
-    * @param {any} Optional. Pass the status to perform undo and redo operation.
-    * @param {any} Optional. It specifies whether to skip element processing or not.
+    * @param {string} Optional. Pass the status to perform undo and redo operation.
+    * @param {boolean} Optional. It specifies whether to skip element processing or not.
     * @returns {void}
     */
   def clearRangeData(
     range: js.UndefOr[js.Array[_] | java.lang.String],
     property: js.UndefOr[java.lang.String],
-    cells: js.UndefOr[js.Any],
+    cells: js.UndefOr[stdLib.HTMLElement],
     skipHiddenRow: js.UndefOr[scala.Boolean],
-    status: js.UndefOr[js.Any],
-    skipCell: js.UndefOr[js.Any]
+    status: js.UndefOr[java.lang.String],
+    skipCell: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   /** This method is used to clear undo and redo collections in the Spreadsheet.
     * @returns {void}
@@ -132,17 +132,23 @@ class Spreadsheet protected () extends Widget {
     */
   def deleteSheet(idx: scala.Double): scala.Unit = js.native
   /** This method is used to delete the selected cells and shift the remaining cells to left.
-    * @param {any} Row index and column index of the starting cell.
-    * @param {any} Row index and column index of the ending cell.
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
     * @returns {void}
     */
-  def deleteShiftLeft(startCell: js.Any, endCell: js.Any): scala.Unit = js.native
+  def deleteShiftLeft(
+    startCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex
+  ): scala.Unit = js.native
   /** This method is used to delete the selected cells and shift the remaining cells up.
-    * @param {any} Row index and column index of the start cell.
-    * @param {any} Row index and column index of the end cell.
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
     * @returns {void}
     */
-  def deleteShiftUp(startCell: js.Any, endCell: js.Any): scala.Unit = js.native
+  def deleteShiftUp(
+    startCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex
+  ): scala.Unit = js.native
   /** This method is used to edit data in the specified range of cells based on its corresponding rangeSettings.
     * @param {string} Pass the defined rangeSettings property name.
     * @param {() => void} Pass the function that you want to perform range edit.
@@ -194,10 +200,6 @@ class Spreadsheet protected () extends Widget {
     * @returns {number}
     */
   def getDataSettings(sheetIdx: scala.Double): scala.Double = js.native
-  /** This method is used to get the export properties in the Spreadsheet.
-    * @returns {any}
-    */
-  def getExportProps(): js.Any = js.native
   /** This method is used to get the frozen columns index in the Spreadsheet.
     * @param {number} Pass the sheet index.
     * @returns {number}
@@ -227,19 +229,26 @@ class Spreadsheet protected () extends Widget {
   def getRange(range: java.lang.String, sheetIdx: scala.Double): stdLib.HTMLElement = js.native
   def getRange(range: java.lang.String, sheetIdx: scala.Double, skipHiddenRow: scala.Boolean): stdLib.HTMLElement = js.native
   /** This method is used to get the data in specified range in Spreadsheet.
-    * @param {any} Optional. Pass the range, property, sheetIdx, valueOnly in options.
+    * @param {any} Optional. Pass the range, property, sheetIdx, valueOnly in options
     * @returns {any[]}
     */
   def getRangeData(): js.Array[_] = js.native
   def getRangeData(options: js.Any): js.Array[_] = js.native
   /** This method is used to get the data as object in the specified range.
-    * @param {any} Pass the start cell.
-    * @param {any} Pass the end cell.
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
     * @param {boolean} Optional. Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.
     * @returns {any}
     */
-  def getRangeDataAsObject(startcell: js.Any, endcell: js.Any): js.Any = js.native
-  def getRangeDataAsObject(startcell: js.Any, endcell: js.Any, skipHiddenRow: scala.Boolean): js.Any = js.native
+  def getRangeDataAsObject(
+    startcell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endcell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex
+  ): js.Any = js.native
+  def getRangeDataAsObject(
+    startcell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endcell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    skipHiddenRow: scala.Boolean
+  ): js.Any = js.native
   /** This method is used to get the range indices array based on the specified alpha range in Spreadsheet.
     * @param {string} Pass the alpha range that you want to get range indices.
     * @returns {any[]}
@@ -259,6 +268,10 @@ class Spreadsheet protected () extends Widget {
     * @returns {any[]}
     */
   def getSheets(): js.Array[_] = js.native
+  /** This method is used to get the visible cell details in Spreadsheet.
+    * @returns {void}
+    */
+  def getVisibleCellDetails(): scala.Unit = js.native
   /** This method is used to send a paging request to the specified sheet Index in the Spreadsheet.
     * @param {number} Pass the sheet index to perform paging at specified sheet index
     * @param {boolean} Pass {{'`true`' | markdownify}} to create a new sheet. If the specified sheet index is already exist, it navigate to that sheet else it create a new sheet.
@@ -296,10 +309,10 @@ class Spreadsheet protected () extends Widget {
     */
   def hideWaitingPopUp(): scala.Unit = js.native
   /** This method is used to import excel file manually by using form data.
-    * @param {any} Pass the form data object to import files manually.
+    * @param {Spreadsheet.ImportingOptions} Pass the form data object to import files manually.
     * @returns {void}
     */
-  def `import`(importRequest: js.Any): scala.Unit = js.native
+  def `import`(importRequest: ejDotWebDotAllLib.ejNs.SpreadsheetNs.ImportingOptions): scala.Unit = js.native
   /** This method is used to insert a column before the active cell's column in the Spreadsheet.
     * @param {number} Pass start column.
     * @param {number} Pass end column.
@@ -317,22 +330,28 @@ class Spreadsheet protected () extends Widget {
     */
   def insertSheet(): scala.Unit = js.native
   /** This method is used to insert cells in the selected or specified range and shift remaining cells to bottom.
-    * @param {any} Row index and column index of the start cell.
-    * @param {any} Row index and column index of the end cell.
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
     * @returns {void}
     */
-  def insertShiftBottom(startCell: js.Any, endCell: js.Any): scala.Unit = js.native
+  def insertShiftBottom(
+    startCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex
+  ): scala.Unit = js.native
   /** This method is used to insert cells in the selected or specified range and shift remaining cells to right.
-    * @param {any} Row index and column index of the start cell.
-    * @param {any} Row index and column index of the end cell.
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
     * @returns {void}
     */
-  def insertShiftRight(startCell: js.Any, endCell: js.Any): scala.Unit = js.native
+  def insertShiftRight(
+    startCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex
+  ): scala.Unit = js.native
   /** This method is used to load JSON data in Spreadsheet.
-    * @param {any} Pass the response that you want to load.
+    * @param {HTMLElement} Pass the response that you want to load.
     * @returns {void}
     */
-  def loadFromJSON(response: js.Any): scala.Unit = js.native
+  def loadFromJSON(response: stdLib.HTMLElement): scala.Unit = js.native
   /** This method is used to lock/unlock the range of cells in active sheet. Lock cells are activated only after the sheet is protected. Once the sheet is protected it is unable to
     * lock/unlock cells.
     * @param {string|any[]} Pass the alpha range cells or array range of cells.
@@ -362,11 +381,14 @@ class Spreadsheet protected () extends Widget {
   def mergeCells(range: js.Array[_]): scala.Unit = js.native
   def mergeCells(range: js.Array[_], alertStatus: scala.Boolean): scala.Unit = js.native
   /** This method is used to select a cell or range in the Spreadsheet.
-    * @param {any} Pass the start cell to perform selection.
-    * @param {any} Pass the end cell to perform selection.
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
+    * @param {Spreadsheet.CellIndex} Pass the Object "CellIndex"
     * @returns {void}
     */
-  def performSelection(startCell: js.Any, endCell: js.Any): scala.Unit = js.native
+  def performSelection(
+    startCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex,
+    endCell: ejDotWebDotAllLib.ejNs.SpreadsheetNs.CellIndex
+  ): scala.Unit = js.native
   /** This method is used to protect or unprotect active sheet.
     * @param {boolean} Optional. By default is {{'`true`' | markdownify}}. If it is {{'`false`' | markdownify}} active sheet is unprotected.
     * @returns {void}
@@ -400,19 +422,32 @@ class Spreadsheet protected () extends Widget {
     * @param {string} Hyperlink remove from the specified range.
     * @param {boolean} Optional. If it is {{'`true`' | markdownify}}, It will clear link only not format.
     * @param {boolean} Optional. Pass the status to perform undo and redo operations.
-    * @param {any} Optional. Pass the cells that you want to remove hyperlink.
+    * @param {string|any[]} Optional. Pass the cells that you want to remove hyperlink.
     * @param {boolean} Optional. Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.
     * @returns {void}
     */
   def removeHyperlink(range: java.lang.String): scala.Unit = js.native
   def removeHyperlink(range: java.lang.String, isClearHLink: scala.Boolean): scala.Unit = js.native
   def removeHyperlink(range: java.lang.String, isClearHLink: scala.Boolean, status: scala.Boolean): scala.Unit = js.native
-  def removeHyperlink(range: java.lang.String, isClearHLink: scala.Boolean, status: scala.Boolean, cells: js.Any): scala.Unit = js.native
   def removeHyperlink(
     range: java.lang.String,
     isClearHLink: scala.Boolean,
     status: scala.Boolean,
-    cells: js.Any,
+    cells: java.lang.String
+  ): scala.Unit = js.native
+  def removeHyperlink(
+    range: java.lang.String,
+    isClearHLink: scala.Boolean,
+    status: scala.Boolean,
+    cells: java.lang.String,
+    skipHiddenRow: scala.Boolean
+  ): scala.Unit = js.native
+  def removeHyperlink(range: java.lang.String, isClearHLink: scala.Boolean, status: scala.Boolean, cells: js.Array[_]): scala.Unit = js.native
+  def removeHyperlink(
+    range: java.lang.String,
+    isClearHLink: scala.Boolean,
+    status: scala.Boolean,
+    cells: js.Array[_],
     skipHiddenRow: scala.Boolean
   ): scala.Unit = js.native
   /** This method is used to remove the range data and its defined rangeSettings property based on the specified range name.
@@ -449,12 +484,12 @@ class Spreadsheet protected () extends Widget {
     */
   def setActiveSheetIndex(sheetIdx: scala.Double): scala.Unit = js.native
   /** This method is used to set border for the specified range of cells in the Spreadsheet.
-    * @param {any} Pass the border properties that you want to set.
+    * @param {Spreadsheet.BorderOptions} Pass the Object "BorderOptions".
     * @param {string} Optional. If range is specified, it will set border for the specified range else it will use the selected range.
     * @returns {void}
     */
-  def setBorder(property: js.Any): scala.Unit = js.native
-  def setBorder(property: js.Any, range: java.lang.String): scala.Unit = js.native
+  def setBorder(property: ejDotWebDotAllLib.ejNs.SpreadsheetNs.BorderOptions): scala.Unit = js.native
+  def setBorder(property: ejDotWebDotAllLib.ejNs.SpreadsheetNs.BorderOptions, range: java.lang.String): scala.Unit = js.native
   def setHeightToRows(heightColl: js.Any): scala.Unit = js.native
   /** This method is used to set the height for the rows in the Spreadsheet.
     * @param {any[]|any} Pass the row index and height of the rows.
@@ -463,12 +498,16 @@ class Spreadsheet protected () extends Widget {
   def setHeightToRows(heightColl: js.Array[_]): scala.Unit = js.native
   /** This method is used to set the hyperlink in selected cells of the current sheet.
     * @param {string|any[]} If range is specified, it will set the hyperlink in range of the cells.
-    * @param {any} Pass cellAddress or webAddress
+    * @param {Spreadsheet.LinkOptions} Pass the Object "LinkOptions"
     * @param {number} If we pass cellAddress then which sheet to be navigate in the applied link.
     * @returns {void}
     */
-  def setHyperlink(range: java.lang.String, link: js.Any, sheetIdx: scala.Double): scala.Unit = js.native
-  def setHyperlink(range: js.Array[_], link: js.Any, sheetIdx: scala.Double): scala.Unit = js.native
+  def setHyperlink(
+    range: java.lang.String,
+    link: ejDotWebDotAllLib.ejNs.SpreadsheetNs.LinkOptions,
+    sheetIdx: scala.Double
+  ): scala.Unit = js.native
+  def setHyperlink(range: js.Array[_], link: ejDotWebDotAllLib.ejNs.SpreadsheetNs.LinkOptions, sheetIdx: scala.Double): scala.Unit = js.native
   /** This method is used to set the readonly option for the specified range.
     * @param {string|any[]} Pass the range.
     * @returns {void}
@@ -545,10 +584,6 @@ class Spreadsheet protected () extends Widget {
     * @returns {void}
     */
   def undo(): scala.Unit = js.native
-  /** This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
-    * @returns {void}
-    */
-  def unfreezePanes(): scala.Unit = js.native
   /** This method is used to unhide the sheet based on specified sheet name or sheet index.
     * @param {string|number} Pass the sheet name or index that you want to unhide.
     * @returns {void}
@@ -562,39 +597,47 @@ class Spreadsheet protected () extends Widget {
   def unmergeCells(): scala.Unit = js.native
   def unmergeCells(range: java.lang.String): scala.Unit = js.native
   /** This method is used to update the data for the specified range of cells in the Spreadsheet.
-    * @param {any} Pass the cells data that you want to update.
+    * @param {Spreadsheet.DataOptions} Pass the Object "DataOptions"
     * @param {any[]|string} Optional. If range is specified, it will update data for the specified range  else it will use the current selected range.
     * @returns {void}
     */
-  def updateData(data: js.Any): scala.Unit = js.native
-  def updateData(data: js.Any, range: java.lang.String): scala.Unit = js.native
-  def updateData(data: js.Any, range: js.Array[_]): scala.Unit = js.native
+  def updateData(data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions): scala.Unit = js.native
+  def updateData(data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions, range: java.lang.String): scala.Unit = js.native
+  def updateData(data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions, range: js.Array[_]): scala.Unit = js.native
   /** This method is used to update the formula bar in the Spreadsheet.
     * @returns {void}
     */
   def updateFormulaBar(): scala.Unit = js.native
   /** This method is used to update the range of cells based on the specified settings which we want to update in the Spreadsheet.
     * @param {number} Pass the sheet index that you want to update.
-    * @param {any} Pass the dataSource, startCell and showHeader values as settings.
+    * @param {Spreadsheet.RangeOptions} Pass the Object "RangeOptions"
     * @returns {void}
     */
-  def updateRange(sheetIdx: scala.Double, settings: js.Any): scala.Unit = js.native
+  def updateRange(sheetIdx: scala.Double, settings: ejDotWebDotAllLib.ejNs.SpreadsheetNs.RangeOptions): scala.Unit = js.native
   /** This method is used to update the details for custom undo and redo operations.
-    * @param {any} Pass the details to update undo and redo collection
+    * @param {Spreadsheet.UndoRedoOptions} Pass the Object "UndoRedoOptions"
     * @returns {void}
     */
-  def updateUndoRedoCollection(details: js.Any): scala.Unit = js.native
+  def updateUndoRedoCollection(details: ejDotWebDotAllLib.ejNs.SpreadsheetNs.UndoRedoOptions): scala.Unit = js.native
   /** This method is used to update the unique data for the specified range of cells in Spreadsheet.
-    * @param {any} Pass the  data that you want to update in the particular range
+    * @param {Spreadsheet.DataOptions} Pass the Object "DataOptions"
     * @param {any[]|string} Optional. If range is specified, it will update data for the specified range else it will use the current selected range.
-    * @param {any} Optional. It specifies whether to skip element processing or not.
+    * @param {boolean} Optional. It specifies whether to skip element processing or not.
     * @returns {void}
     */
-  def updateUniqueData(data: js.Any): scala.Unit = js.native
-  def updateUniqueData(data: js.Any, range: java.lang.String): scala.Unit = js.native
-  def updateUniqueData(data: js.Any, range: java.lang.String, skipCell: js.Any): scala.Unit = js.native
-  def updateUniqueData(data: js.Any, range: js.Array[_]): scala.Unit = js.native
-  def updateUniqueData(data: js.Any, range: js.Array[_], skipCell: js.Any): scala.Unit = js.native
+  def updateUniqueData(data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions): scala.Unit = js.native
+  def updateUniqueData(data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions, range: java.lang.String): scala.Unit = js.native
+  def updateUniqueData(
+    data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions,
+    range: java.lang.String,
+    skipCell: scala.Boolean
+  ): scala.Unit = js.native
+  def updateUniqueData(data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions, range: js.Array[_]): scala.Unit = js.native
+  def updateUniqueData(
+    data: ejDotWebDotAllLib.ejNs.SpreadsheetNs.DataOptions,
+    range: js.Array[_],
+    skipCell: scala.Boolean
+  ): scala.Unit = js.native
   /** This method is used to wrap the selected range of cells in the Spreadsheet.
     * @param {any[]|string} Optional. If the range is specified, then it will update wrap in the specified  range else it will use the current selected range.
     * @returns {void}

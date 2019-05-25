@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/Graticule", JSImport.Default)
 @js.native
-/**
-  * Render a grid for a coordinate system on a map.
-  * @param opt_options Options.
-  * @api
-  */
-class default ()
-  extends openlayersLib.openlayersMod.Graticule {
-  def this(opt_options: openlayersLib.openlayersMod.olxNs.GraticuleOptions) = this()
+class default () extends Graticule {
+  def this(opt_options: Options) = this()
+  /* CompleteClass */
+  override def getMap(): olLib.pluggableMapMod.default = js.native
+  /* CompleteClass */
+  override def getMeridians(): js.Array[olLib.geomLineStringMod.default] = js.native
+  /* CompleteClass */
+  override def getParallels(): js.Array[olLib.geomLineStringMod.default] = js.native
+  /* CompleteClass */
+  override def setMap(map: olLib.pluggableMapMod.default): scala.Unit = js.native
 }
 

@@ -38,7 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/db-migrate/db-migrate-base
 // Definitions by: nickiannone <https://github.com/nickiannone>
 // Definitions: https://github.com/nickiannone/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

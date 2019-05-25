@@ -5,30 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @classdesc
-  * Circle geometry.
-  *
-  * @param center Center.
-  * @param opt_radius Radius.
-  * @param opt_layout Layout.
-  * @api
-  */
 @JSImport("ol/geom/Circle", JSImport.Default)
 @js.native
-class default protected ()
-  extends openlayersLib.openlayersMod.geomNs.Circle {
-  /**
-    * @classdesc
-    * Circle geometry.
-    *
-    * @param center Center.
-    * @param opt_radius Radius.
-    * @param opt_layout Layout.
-    * @api
-    */
-  def this(center: openlayersLib.openlayersMod.Coordinate) = this()
-  def this(center: openlayersLib.openlayersMod.Coordinate, opt_radius: scala.Double) = this()
-  def this(center: openlayersLib.openlayersMod.Coordinate, opt_radius: scala.Double, opt_layout: openlayersLib.openlayersMod.geomNs.GeometryLayout) = this()
+class default protected () extends Circle {
+  def this(center: olLib.coordinateMod.Coordinate) = this()
+  def this(center: olLib.coordinateMod.Coordinate, opt_radius: scala.Double) = this()
+  def this(center: olLib.coordinateMod.Coordinate, opt_radius: scala.Double, opt_layout: olLib.geomGeometryLayoutMod.GeometryLayout) = this()
 }
 

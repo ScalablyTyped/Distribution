@@ -23,11 +23,11 @@ trait CreateServerRequest extends js.Object {
     */
   var DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined
   /**
-    *  The configuration management engine to use. Valid values include Chef and Puppet. 
+    *  The configuration management engine to use. Valid values include ChefAutomate and Puppet. 
     */
   var Engine: js.UndefOr[String] = js.undefined
   /**
-    * Optional engine attributes on a specified server.   Attributes accepted in a Chef createServer request:     CHEF_PIVOTAL_KEY: A base64-encoded RSA public key. The corresponding private key is required to access the Chef API. When no CHEF_PIVOTAL_KEY is set, a private key is generated and returned in the response.     CHEF_DELIVERY_ADMIN_PASSWORD: The password for the administrative user in the Chef Automate GUI. The password length is a minimum of eight characters, and a maximum of 32. The password can contain letters, numbers, and special characters (!/@#$%^&amp;+=_). The password must contain at least one lower case letter, one upper case letter, one number, and one special character. When no CHEF_DELIVERY_ADMIN_PASSWORD is set, one is generated and returned in the response.    Attributes accepted in a Puppet createServer request:     PUPPET_ADMIN_PASSWORD: To work with the Puppet Enterprise console, a password must use ASCII characters.    PUPPET_R10K_REMOTE: The r10k remote is the URL of your control repository (for example, ssh://git@your.git-repo.com:user/control-repo.git). Specifying an r10k remote opens TCP port 8170.    PUPPET_R10K_PRIVATE_KEY: If you are using a private Git repository, add PUPPET_R10K_PRIVATE_KEY to specify an SSH URL and a PEM-encoded private SSH key.  
+    * Optional engine attributes on a specified server.   Attributes accepted in a Chef createServer request:     CHEF_AUTOMATE_PIVOTAL_KEY: A base64-encoded RSA public key. The corresponding private key is required to access the Chef API. When no CHEF_AUTOMATE_PIVOTAL_KEY is set, a private key is generated and returned in the response.     CHEF_AUTOMATE_ADMIN_PASSWORD: The password for the administrative user in the Chef Automate web-based dashboard. The password length is a minimum of eight characters, and a maximum of 32. The password can contain letters, numbers, and special characters (!/@#$%^&amp;+=_). The password must contain at least one lower case letter, one upper case letter, one number, and one special character. When no CHEF_AUTOMATE_ADMIN_PASSWORD is set, one is generated and returned in the response.    Attributes accepted in a Puppet createServer request:     PUPPET_ADMIN_PASSWORD: To work with the Puppet Enterprise console, a password must use ASCII characters.    PUPPET_R10K_REMOTE: The r10k remote is the URL of your control repository (for example, ssh://git@your.git-repo.com:user/control-repo.git). Specifying an r10k remote opens TCP port 8170.    PUPPET_R10K_PRIVATE_KEY: If you are using a private Git repository, add PUPPET_R10K_PRIVATE_KEY to specify a PEM-encoded private SSH key.  
     */
   var EngineAttributes: js.UndefOr[EngineAttributes] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait CreateServerRequest extends js.Object {
     */
   var InstanceProfileArn: awsDashSdkLib.clientsOpsworkscmMod.InstanceProfileArn
   /**
-    *  The Amazon EC2 instance type to use. For example, m4.large. Recommended instance types include t2.medium and greater, m4.*, or c4.xlarge and greater. 
+    *  The Amazon EC2 instance type to use. For example, m5.large. 
     */
   var InstanceType: String
   /**

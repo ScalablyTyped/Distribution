@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("nodemailer/lib/dkim", JSImport.Namespace)
 @js.native
-class ^ protected () extends DKIM {
+class ^ () extends DKIM {
   def this(options: Options) = this()
 }
 

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait XLRibbon extends js.Object {
   /** This method is used to add a new item in the backstage.
-    * @param {any} Specifies the item to be added in the backstage.
+    * @param {Spreadsheet.BackstageOptions} Pass Object BackstageOptions.
     * @param {number} pass the index of the item to be added in the backstage.
     * @returns {void}
     */
-  def addBackStageItem(pageItem: js.Any, index: scala.Double): scala.Unit = js.native
+  def addBackStageItem(pageItem: BackstageOptions, index: scala.Double): scala.Unit = js.native
   /** This method is used to dynamically add the contextual tabs in the ribbon.
-    * @param {any} Specifies the contextual tab set object.
+    * @param {Spreadsheet.ContextualTabOptions} Pass Object ContextualTabOptions.
     * @param {number} pass the index of the contextual tab.
     * @returns {void}
     */
-  def addContextualTabs(contextualTabSet: js.Any, index: scala.Double): scala.Unit = js.native
+  def addContextualTabs(contextualTabSet: ContextualTabOptions, index: scala.Double): scala.Unit = js.native
   /** This method is used to dynamically add the menu item in the file menu.
     * @param {any[]} Specifies the item to be added
     * @param {number} pass the index of the menu item.
@@ -49,11 +49,11 @@ trait XLRibbon extends js.Object {
   def addTab(tabText: java.lang.String, ribbonGroups: js.Array[_], index: scala.Double): scala.Unit = js.native
   /** This method is used to dynamically add the tab group in the ribbon.
     * @param {number} Specifies the ribbon tab index.
-    * @param {any} pass the groups to be displayed in the ribbon tab.
+    * @param {Spreadsheet.TabOptions} Pass Object TabOptions.
     * @param {number} pass the index of the ribbon group.
     * @returns {void}
     */
-  def addTabGroup(tabIndex: scala.Double, tabGroup: js.Any, groupIndex: scala.Double): scala.Unit = js.native
+  def addTabGroup(tabIndex: scala.Double, tabGroup: TabOptions, groupIndex: scala.Double): scala.Unit = js.native
   /** This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formulas in the selected range of cells in the Spreadsheet.
     * @param {string} To pass the type("SUM","MAX","MIN","AVG","COUNT").
     * @param {string|any[]} If range is specified, it will apply auto sum for the specified range else it will use the current selected range.
@@ -98,11 +98,11 @@ trait XLRibbon extends js.Object {
     */
   def showMenu(): scala.Unit = js.native
   /** This method is used to update the menu item in the file menu.
-    * @param {any} Specifies the menu item to be updated in the ribbon
+    * @param {Spreadsheet.MenuItemOptions} Pass Object MenuItemOptions.
     * @param {number} pass the index of the item to be updated
     * @returns {void}
     */
-  def updateMenuItem(item: js.Any, index: scala.Double): scala.Unit = js.native
+  def updateMenuItem(item: MenuItemOptions, index: scala.Double): scala.Unit = js.native
   /** This method is used to update the ribbon icons in the Spreadsheet.
     * @returns {void}
     */

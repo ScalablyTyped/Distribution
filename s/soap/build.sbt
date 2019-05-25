@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "soap"
-version := "0.27.1-41354e"
+version := "0.27.1-6d0a66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-aac16e",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-e943e4",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-2a9eae",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-3ebceb",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",

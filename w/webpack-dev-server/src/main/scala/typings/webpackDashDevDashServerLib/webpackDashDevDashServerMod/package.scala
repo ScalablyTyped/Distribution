@@ -11,5 +11,4 @@ package object webpackDashDevDashServerMod {
   type ProxyConfigMap = org.scalablytyped.runtime.StringDictionary[
     java.lang.String | httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareMod.Config
   ]
-  type RewriteTo = js.Function1[/* context */ Context, java.lang.String]
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "move-concurrently"
-version := "1.0-dt-20180712Z-d8ef9c"
+version := "1.0-dt-20190524Z-d8ef9c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

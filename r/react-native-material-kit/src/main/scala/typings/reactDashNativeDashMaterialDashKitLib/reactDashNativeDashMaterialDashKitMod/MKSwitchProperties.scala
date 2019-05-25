@@ -9,7 +9,9 @@ trait MKSwitchProperties
   extends reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var offColor: js.UndefOr[java.lang.String] = js.undefined
-  var onCheckedChange: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
+  var onCheckedChange: js.UndefOr[
+    js.Function1[/* opts */ reactDashNativeDashMaterialDashKitLib.Anon_Checked, scala.Unit]
+  ] = js.undefined
   var onColor: js.UndefOr[java.lang.String] = js.undefined
   var rippleAniDuration: js.UndefOr[scala.Double] = js.undefined
   var rippleColor: js.UndefOr[java.lang.String] = js.undefined
@@ -45,7 +47,7 @@ object MKSwitchProperties {
     offColor: java.lang.String = null,
     onAccessibilityTap: () => scala.Unit = null,
     onBlur: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TargetedEvent] => scala.Unit = null,
-    onCheckedChange: /* checked */ scala.Boolean => scala.Unit = null,
+    onCheckedChange: /* opts */ reactDashNativeDashMaterialDashKitLib.Anon_Checked => scala.Unit = null,
     onColor: java.lang.String = null,
     onFocus: /* e */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[reactDashNativeLib.reactDashNativeMod.TargetedEvent] => scala.Unit = null,
     onLayout: /* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent => scala.Unit = null,

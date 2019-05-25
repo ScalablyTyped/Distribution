@@ -27,7 +27,7 @@ trait DeploymentInfo extends js.Object {
     */
   var completeTime: js.UndefOr[Timestamp] = js.undefined
   /**
-    *  The destination platform type for the deployment (Lambda or Server). 
+    * The destination platform type for the deployment (Lambda, Server, or ECS).
     */
   var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   /**

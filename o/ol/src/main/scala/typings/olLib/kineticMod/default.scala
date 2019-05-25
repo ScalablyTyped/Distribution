@@ -7,19 +7,17 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/Kinetic", JSImport.Default)
 @js.native
-class default protected ()
-  extends openlayersLib.openlayersMod.Kinetic {
-  /**
-    * @classdesc
-    * Implementation of inertial deceleration for map movement.
-    *
-    * @param decay Rate of decay (must be negative).
-    * @param minVelocity Minimum velocity (pixels/millisecond).
-    * @param delay Delay to consider to calculate the kinetic
-    *     initial values (milliseconds).
-    * @struct
-    * @api
-    */
+class default protected () extends Kinetic {
   def this(decay: scala.Double, minVelocity: scala.Double, delay: scala.Double) = this()
+  /* CompleteClass */
+  override def begin(): scala.Unit = js.native
+  /* CompleteClass */
+  override def end(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def getAngle(): scala.Double = js.native
+  /* CompleteClass */
+  override def getDistance(): scala.Double = js.native
+  /* CompleteClass */
+  override def update(x: scala.Double, y: scala.Double): scala.Unit = js.native
 }
 

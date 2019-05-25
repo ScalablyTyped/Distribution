@@ -28,23 +28,23 @@ trait XLChart extends js.Object {
   def changeTheme(chartId: java.lang.String, theme: ejDotWebDotAllLib.ejNs.datavisualizationNs.ChartNs.Theme): scala.Unit = js.native
   /** This method is used to change the type of the chart in the Spreadsheet.
     * @param {string} Pass the chart id.
-    * @param {any} Pass the chart type.
+    * @param {Spreadsheet.ChartOptions} Pass Object ChartOptions.
     * @returns {void}
     */
-  def changeType(chartId: java.lang.String, option: js.Any): scala.Unit = js.native
+  def changeType(chartId: java.lang.String, option: ChartOptions): scala.Unit = js.native
   /** This method is used to create a chart for specified range in Spreadsheet.
     * @param {string|any[]} Optional. If range is specified, it will create chart for the specified range else it will use the current selected range.
-    * @param {any} Optional. To pass the type of chart and chart name.
+    * @param {Spreadsheet.ChartOptions} Optional.
     * @returns {void}
     */
-  def createChart(range: java.lang.String, options: js.Any): scala.Unit = js.native
-  def createChart(range: js.Array[_], options: js.Any): scala.Unit = js.native
+  def createChart(range: java.lang.String, options: ChartOptions): scala.Unit = js.native
+  def createChart(range: js.Array[_], options: ChartOptions): scala.Unit = js.native
   /** This method is used to refresh the chart in the Spreadsheet.
     * @param {string} To pass the chart Id.
-    * @param {any} To pass the type of chart and chart name.
+    * @param {Spreadsheet.ChartOptions} NameTypeDescriptiontypestringPass the chart typeenable3DbooleanPass the enable3D conditionmarkerobjectPass the marker object
     * @returns {void}
     */
-  def refreshChart(id: java.lang.String, options: js.Any): scala.Unit = js.native
+  def refreshChart(id: java.lang.String, options: ChartOptions): scala.Unit = js.native
   /** This method is used to resize the chart of specified id in the Spreadsheet.
     * @param {string} To pass the chart id.
     * @param {number} To pass height value.

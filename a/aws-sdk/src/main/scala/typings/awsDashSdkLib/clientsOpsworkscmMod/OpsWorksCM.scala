@@ -126,7 +126,7 @@ trait OpsWorksCM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteServerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *  Describes your account attributes, and creates requests to increase limits before they are reached or exceeded.   This operation is synchronous. 
+    *  Describes your OpsWorks-CM account attributes.   This operation is synchronous. 
     */
   def describeAccountAttributes(): awsDashSdkLib.libRequestMod.Request[DescribeAccountAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAccountAttributes(
@@ -137,7 +137,7 @@ trait OpsWorksCM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeAccountAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    *  Describes your account attributes, and creates requests to increase limits before they are reached or exceeded.   This operation is synchronous. 
+    *  Describes your OpsWorks-CM account attributes.   This operation is synchronous. 
     */
   def describeAccountAttributes(params: DescribeAccountAttributesRequest): awsDashSdkLib.libRequestMod.Request[DescribeAccountAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeAccountAttributes(

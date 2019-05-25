@@ -48,21 +48,21 @@ trait XLEdit extends js.Object {
     */
   def saveCell(): scala.Unit = js.native
   /** This method is used to update a particular cell value in the Spreadsheet.
-    * @param {any} Pass row index and column index of the cell.
+    * @param {Spreadsheet.CellIndex} Pass Object CellIndex.
     * @param {string|number} Pass the cell value.
     * @returns {void}
     */
-  def updateCell(cell: js.Any, value: java.lang.String): scala.Unit = js.native
-  def updateCell(cell: js.Any, value: scala.Double): scala.Unit = js.native
+  def updateCell(cell: CellIndex, value: java.lang.String): scala.Unit = js.native
+  def updateCell(cell: CellIndex, value: scala.Double): scala.Unit = js.native
   /** This method is used to update a particular cell value and its format in the Spreadsheet.
-    * @param {any} Pass row index and column index of the cell.
+    * @param {Spreadsheet.CellIndex} Pass Object CellIndex.
     * @param {string|number} Pass the cell value.
     * @param {string} Pass the class name to update format.
     * @param {number} Pass sheet index.
     * @returns {void}
     */
-  def updateCellValue(cellIdx: js.Any, `val`: java.lang.String, formatClass: java.lang.String, sheetIdx: scala.Double): scala.Unit = js.native
-  def updateCellValue(cellIdx: js.Any, `val`: scala.Double, formatClass: java.lang.String, sheetIdx: scala.Double): scala.Unit = js.native
+  def updateCellValue(cellIdx: CellIndex, `val`: java.lang.String, formatClass: java.lang.String, sheetIdx: scala.Double): scala.Unit = js.native
+  def updateCellValue(cellIdx: CellIndex, `val`: scala.Double, formatClass: java.lang.String, sheetIdx: scala.Double): scala.Unit = js.native
   /** This method is used to update a particular cell value and its format in the Spreadsheet.
     * @param {string} Pass the range.
     * @param {string|number} Pass the cell value.

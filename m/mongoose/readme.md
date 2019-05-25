@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongoose
 
-Typings are for version 5.5
+Typings are for version 5.5.1
 
 ## Library description:
 Mongoose MongoDB ODM
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Mongoose 5.5
+// Type definitions for Mongoose 5.5.1
 // Project: http://mongoosejs.com/
 // Definitions by: horiuchi <https://github.com/horiuchi>
 //                 lukasz-zak <https://github.com/lukasz-zak>

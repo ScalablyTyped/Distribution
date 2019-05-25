@@ -10,6 +10,14 @@ trait ToolbarSettings extends js.Object {
     * @Default {empty}
     */
   var click: js.UndefOr[java.lang.String] = js.undefined
+  /** Add the custom icon groups to the toolbar.
+    * @Default {empty}
+    */
+  var customGroups: js.UndefOr[js.Array[_]] = js.undefined
+  /** Add the custom icon item to the toolbar.
+    * @Default {empty}
+    */
+  var customItems: js.UndefOr[js.Array[_]] = js.undefined
   /** Specifies the toolbar items.
     * @Default {ej.ReportViewer.ToolbarItems.All}
     */
@@ -32,6 +40,8 @@ object ToolbarSettings {
   @scala.inline
   def apply(
     click: java.lang.String = null,
+    customGroups: js.Array[_] = null,
+    customItems: js.Array[_] = null,
     items: ToolbarItems | java.lang.String = null,
     showToolbar: js.UndefOr[scala.Boolean] = js.undefined,
     showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
@@ -39,6 +49,8 @@ object ToolbarSettings {
   ): ToolbarSettings = {
     val __obj = js.Dynamic.literal()
     if (click != null) __obj.updateDynamic("click")(click)
+    if (customGroups != null) __obj.updateDynamic("customGroups")(customGroups)
+    if (customItems != null) __obj.updateDynamic("customItems")(customItems)
     if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar)
     if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)

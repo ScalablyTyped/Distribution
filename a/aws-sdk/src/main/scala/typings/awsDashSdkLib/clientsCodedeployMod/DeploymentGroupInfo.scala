@@ -27,7 +27,7 @@ trait DeploymentGroupInfo extends js.Object {
     */
   var blueGreenDeploymentConfiguration: js.UndefOr[BlueGreenDeploymentConfiguration] = js.undefined
   /**
-    * The destination platform type for the deployment group (Lambda or Server).
+    * The destination platform type for the deployment (Lambda, Server, or ECS).
     */
   var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait DeploymentGroupInfo extends js.Object {
     */
   var onPremisesTagSet: js.UndefOr[OnPremisesTagSet] = js.undefined
   /**
-    * A service role ARN.
+    * A service role Amazon Resource Name (ARN) that grants CodeDeploy permission to make calls to AWS services on your behalf. For more information, see Create a Service Role for AWS CodeDeploy in the AWS CodeDeploy User Guide.
     */
   var serviceRoleArn: js.UndefOr[Role] = js.undefined
   /**

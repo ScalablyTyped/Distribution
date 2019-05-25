@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://github.com/dchester/epilogue
 // Definitions by: Satana Charuwichitratana <https://github.com/micksatana>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.2
 
 ```
 

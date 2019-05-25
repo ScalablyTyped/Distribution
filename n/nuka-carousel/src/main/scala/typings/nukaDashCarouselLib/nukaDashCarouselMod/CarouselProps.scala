@@ -58,6 +58,11 @@ trait CarouselProps extends js.Object {
     */
   var disableAnimation: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Disable swipe before first slide and after last slide
+    * @default false
+    */
+  var disableEdgeSwiping: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Enable mouse swipe/dragging
     */
   var dragging: js.UndefOr[scala.Boolean] = js.undefined
@@ -226,6 +231,7 @@ object CarouselProps {
     cellSpacing: scala.Int | scala.Double = null,
     className: java.lang.String = null,
     disableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    disableEdgeSwiping: js.UndefOr[scala.Boolean] = js.undefined,
     dragging: js.UndefOr[scala.Boolean] = js.undefined,
     easing: java.lang.String = null,
     edgeEasing: java.lang.String = null,
@@ -272,6 +278,7 @@ object CarouselProps {
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation)
+    if (!js.isUndefined(disableEdgeSwiping)) __obj.updateDynamic("disableEdgeSwiping")(disableEdgeSwiping)
     if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (edgeEasing != null) __obj.updateDynamic("edgeEasing")(edgeEasing)

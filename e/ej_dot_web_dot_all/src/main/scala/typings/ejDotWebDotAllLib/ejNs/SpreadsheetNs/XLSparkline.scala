@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait XLSparkline extends js.Object {
   /** This method used to change the sparkline color and marker point color in the spreadsheet.
     * @param {string} Pass the sparkline ID
-    * @param {any} Pass the sparkline options
+    * @param {any}  pass the high point color as object.
     * @param {number} Optional. Pass the sheet index
     * @returns {void}
     */
@@ -24,16 +24,14 @@ trait XLSparkline extends js.Object {
     * @param {string} Pass the data range
     * @param {string} Pass the location range
     * @param {string} Pass the sparkline chart type
-    * @param {any} Pass the sparkline chart options
-    * @param {number} Pass the sheetIndex
+    * @param {Spreadsheet.SparklineOptions} Pass Object SparklineOptions.
     * @returns {void}
     */
   def createSparkline(
     dataRange: java.lang.String,
     locationRange: java.lang.String,
     `type`: java.lang.String,
-    options: js.Any,
-    sheetIndex: scala.Double
+    options: SparklineOptions
   ): scala.Unit
 }
 
@@ -42,9 +40,9 @@ object XLSparkline {
   def apply(
     changePointColor: (java.lang.String, js.Any, scala.Double) => scala.Unit,
     changeType: (java.lang.String, java.lang.String, scala.Double) => scala.Unit,
-    createSparkline: (java.lang.String, java.lang.String, java.lang.String, js.Any, scala.Double) => scala.Unit
+    createSparkline: (java.lang.String, java.lang.String, java.lang.String, SparklineOptions) => scala.Unit
   ): XLSparkline = {
-    val __obj = js.Dynamic.literal(changePointColor = js.Any.fromFunction3(changePointColor), changeType = js.Any.fromFunction3(changeType), createSparkline = js.Any.fromFunction5(createSparkline))
+    val __obj = js.Dynamic.literal(changePointColor = js.Any.fromFunction3(changePointColor), changeType = js.Any.fromFunction3(changeType), createSparkline = js.Any.fromFunction4(createSparkline))
   
     __obj.asInstanceOf[XLSparkline]
   }

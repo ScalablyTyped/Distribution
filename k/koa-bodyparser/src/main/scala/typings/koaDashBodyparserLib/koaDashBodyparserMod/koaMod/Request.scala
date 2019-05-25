@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
-  var body: js.Any
+  var body: js.UndefOr[js.Any] = js.undefined
   var rawBody: java.lang.String
 }
 
 object Request {
   @scala.inline
-  def apply(body: js.Any, rawBody: java.lang.String): Request = {
-    val __obj = js.Dynamic.literal(body = body, rawBody = rawBody)
-  
+  def apply(rawBody: java.lang.String, body: js.Any = null): Request = {
+    val __obj = js.Dynamic.literal(rawBody = rawBody)
+    if (body != null) __obj.updateDynamic("body")(body)
     __obj.asInstanceOf[Request]
   }
 }

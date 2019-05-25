@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait XLCellType extends js.Object {
   /** This method is used to set a cell type from the specified range of cells in the spreadsheet.
     * @param {string} Pass the range where you want apply cell type.
-    * @param {any} Pass type of cell type and its settings.
+    * @param {Spreadsheet.CellTypeSettings} Pass the Object "CellTypeSettings"
     * @param {number} Optional. Pass sheet index.
     * @returns {void}
     */
-  def addCellTypes(range: java.lang.String, settings: js.Any, sheetIdx: scala.Double): scala.Unit = js.native
+  def addCellTypes(range: java.lang.String, settings: CellTypeSettings, sheetIdx: scala.Double): scala.Unit = js.native
   /** This method is used to remove cell type from the specified range of cells in the Spreadsheet.
     * @param {string|any[]} Pass the range where you want remove cell type.
     * @param {number} Optional. Pass sheet index.

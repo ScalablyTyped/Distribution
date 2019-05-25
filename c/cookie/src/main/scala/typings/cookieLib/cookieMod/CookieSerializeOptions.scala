@@ -71,9 +71,11 @@ trait CookieSerializeOptions extends js.Object {
     * enforcement.
     * - `'strict'` will set the `SameSite` attribute to Strict for strict same
     * site enforcement.
+    *  - `'none'` will set the SameSite attribute to None for an explicit
+    *  cross-site cookie.
     */
   var sameSite: js.UndefOr[
-    scala.Boolean | cookieLib.cookieLibStrings.lax | cookieLib.cookieLibStrings.strict
+    scala.Boolean | cookieLib.cookieLibStrings.lax | cookieLib.cookieLibStrings.strict | cookieLib.cookieLibStrings.none
   ] = js.undefined
   /**
     * Specifies the boolean value for the `Secure` `Set-Cookie` attribute. When
@@ -96,7 +98,7 @@ object CookieSerializeOptions {
     httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
     maxAge: scala.Int | scala.Double = null,
     path: java.lang.String = null,
-    sameSite: scala.Boolean | cookieLib.cookieLibStrings.lax | cookieLib.cookieLibStrings.strict = null,
+    sameSite: scala.Boolean | cookieLib.cookieLibStrings.lax | cookieLib.cookieLibStrings.strict | cookieLib.cookieLibStrings.none = null,
     secure: js.UndefOr[scala.Boolean] = js.undefined
   ): CookieSerializeOptions = {
     val __obj = js.Dynamic.literal()

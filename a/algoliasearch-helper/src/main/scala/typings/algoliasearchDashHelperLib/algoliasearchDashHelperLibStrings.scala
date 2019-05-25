@@ -31,6 +31,9 @@ object algoliasearchDashHelperLibStrings {
     extends algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.Operator
   
   @js.native
+  sealed trait ManagedParameters extends js.Object
+  
+  @js.native
   sealed trait OperatorList extends js.Object
   
   @js.native
@@ -46,6 +49,12 @@ object algoliasearchDashHelperLibStrings {
   sealed trait disjunctive extends js.Object
   
   @js.native
+  sealed trait disjunctiveFacets extends js.Object
+  
+  @js.native
+  sealed trait disjunctiveFacetsRefinements extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -55,13 +64,31 @@ object algoliasearchDashHelperLibStrings {
   sealed trait facet extends js.Object
   
   @js.native
+  sealed trait facets extends js.Object
+  
+  @js.native
+  sealed trait facetsExcludes extends js.Object
+  
+  @js.native
+  sealed trait facetsRefinements extends js.Object
+  
+  @js.native
   sealed trait firstWords extends js.Object
   
   @js.native
   sealed trait hierarchical extends js.Object
   
   @js.native
+  sealed trait hierarchicalFacets extends js.Object
+  
+  @js.native
+  sealed trait hierarchicalFacetsRefinements extends js.Object
+  
+  @js.native
   sealed trait ignorePlurals extends js.Object
+  
+  @js.native
+  sealed trait index extends js.Object
   
   @js.native
   sealed trait lastWords extends js.Object
@@ -74,6 +101,9 @@ object algoliasearchDashHelperLibStrings {
   
   @js.native
   sealed trait numeric extends js.Object
+  
+  @js.native
+  sealed trait numericRefinements extends js.Object
   
   @js.native
   sealed trait prefixAll extends js.Object
@@ -103,6 +133,9 @@ object algoliasearchDashHelperLibStrings {
   sealed trait singleWordSynonym extends js.Object
   
   @js.native
+  sealed trait tagRefinements extends js.Object
+  
+  @js.native
   sealed trait word extends js.Object
   
   @scala.inline
@@ -118,6 +151,8 @@ object algoliasearchDashHelperLibStrings {
   @scala.inline
   def `>=`: `>=` = ">=".asInstanceOf[`>=`]
   @scala.inline
+  def ManagedParameters: ManagedParameters = "ManagedParameters".asInstanceOf[ManagedParameters]
+  @scala.inline
   def OperatorList: OperatorList = "OperatorList".asInstanceOf[OperatorList]
   @scala.inline
   def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
@@ -128,17 +163,33 @@ object algoliasearchDashHelperLibStrings {
   @scala.inline
   def disjunctive: disjunctive = "disjunctive".asInstanceOf[disjunctive]
   @scala.inline
+  def disjunctiveFacets: disjunctiveFacets = "disjunctiveFacets".asInstanceOf[disjunctiveFacets]
+  @scala.inline
+  def disjunctiveFacetsRefinements: disjunctiveFacetsRefinements = "disjunctiveFacetsRefinements".asInstanceOf[disjunctiveFacetsRefinements]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def exclude: exclude = "exclude".asInstanceOf[exclude]
   @scala.inline
   def facet: facet = "facet".asInstanceOf[facet]
   @scala.inline
+  def facets: facets = "facets".asInstanceOf[facets]
+  @scala.inline
+  def facetsExcludes: facetsExcludes = "facetsExcludes".asInstanceOf[facetsExcludes]
+  @scala.inline
+  def facetsRefinements: facetsRefinements = "facetsRefinements".asInstanceOf[facetsRefinements]
+  @scala.inline
   def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
   @scala.inline
   def hierarchical: hierarchical = "hierarchical".asInstanceOf[hierarchical]
   @scala.inline
+  def hierarchicalFacets: hierarchicalFacets = "hierarchicalFacets".asInstanceOf[hierarchicalFacets]
+  @scala.inline
+  def hierarchicalFacetsRefinements: hierarchicalFacetsRefinements = "hierarchicalFacetsRefinements".asInstanceOf[hierarchicalFacetsRefinements]
+  @scala.inline
   def ignorePlurals: ignorePlurals = "ignorePlurals".asInstanceOf[ignorePlurals]
+  @scala.inline
+  def index: index = "index".asInstanceOf[index]
   @scala.inline
   def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
   @scala.inline
@@ -147,6 +198,8 @@ object algoliasearchDashHelperLibStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
+  def numericRefinements: numericRefinements = "numericRefinements".asInstanceOf[numericRefinements]
   @scala.inline
   def prefixAll: prefixAll = "prefixAll".asInstanceOf[prefixAll]
   @scala.inline
@@ -165,6 +218,8 @@ object algoliasearchDashHelperLibStrings {
   def searchQueueEmpty: searchQueueEmpty = "searchQueueEmpty".asInstanceOf[searchQueueEmpty]
   @scala.inline
   def singleWordSynonym: singleWordSynonym = "singleWordSynonym".asInstanceOf[singleWordSynonym]
+  @scala.inline
+  def tagRefinements: tagRefinements = "tagRefinements".asInstanceOf[tagRefinements]
   @scala.inline
   def word: word = "word".asInstanceOf[word]
 }

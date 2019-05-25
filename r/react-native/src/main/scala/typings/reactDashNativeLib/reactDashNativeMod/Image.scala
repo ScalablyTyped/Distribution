@@ -20,9 +20,8 @@ object Image extends js.Object {
     js.Function1[
       /* urls */ js.Array[java.lang.String], 
       js.Promise[
-        stdLib.Map[
-          java.lang.String, 
-          reactDashNativeLib.reactDashNativeLibStrings.memory | reactDashNativeLib.reactDashNativeLibStrings.disk
+        org.scalablytyped.runtime.StringDictionary[
+          reactDashNativeLib.reactDashNativeLibStrings.memory | reactDashNativeLib.reactDashNativeLibStrings.disk | reactDashNativeLib.reactDashNativeLibStrings.`disk/memory`
         ]
       ]
     ]

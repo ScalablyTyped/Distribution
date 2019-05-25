@@ -216,6 +216,7 @@ package object atOctokitRestMod {
   type ReposReplaceProtectedBranchUserRestrictionsResponse = js.Array[ReposReplaceProtectedBranchUserRestrictionsResponseItem]
   type ReposTestPushHookResponse = js.Object
   type ReposUpdateInformationAboutPagesSiteResponse = js.Object
+  type TeamsAddMemberResponse = js.Object
   type TeamsAddOrUpdateProjectResponse = js.Object
   type TeamsAddOrUpdateRepoResponse = js.Object
   type TeamsDeleteDiscussionCommentResponse = js.Object
