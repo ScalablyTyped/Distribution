@@ -1,5 +1,5 @@
 package typings
-package antdLib.libGridRowMod
+package antdLib.libUnderscoreUtilResponsiveObserveMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<std.Record<antd.antd/lib/grid/row.Breakpoint, number>> */
+/* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, number>> */
 trait PartialRecordBreakpointnumber extends js.Object {
   var lg: js.UndefOr[scala.Double] = js.undefined
   var md: js.UndefOr[scala.Double] = js.undefined

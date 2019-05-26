@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Slider
   extends reactLib.reactMod.Component[SliderProps, SliderState, js.Any] {
   var handleWithTooltip: HandleGeneratorFn = js.native
-  var rcSlider: js.Any = js.native
+  var rcSlider: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcSlider */ js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def renderSlider(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native

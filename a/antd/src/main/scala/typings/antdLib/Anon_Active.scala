@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Active extends js.Object {
-  var default: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var format: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
   var gapDegree: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   var percent: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
@@ -27,7 +26,6 @@ trait Anon_Active extends js.Object {
 object Anon_Active {
   @scala.inline
   def apply(
-    default: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     format: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
     gapDegree: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
     percent: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
@@ -44,7 +42,7 @@ object Anon_Active {
     ],
     width: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(default = default, format = format, gapDegree = gapDegree, percent = percent, showInfo = showInfo, status = status, strokeColor = strokeColor, strokeLinecap = strokeLinecap, strokeWidth = strokeWidth, trailColor = trailColor, width = width)
+    val __obj = js.Dynamic.literal(format = format, gapDegree = gapDegree, percent = percent, showInfo = showInfo, status = status, strokeColor = strokeColor, strokeLinecap = strokeLinecap, strokeWidth = strokeWidth, trailColor = trailColor, width = width)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Active]
   }

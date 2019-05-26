@@ -180,6 +180,11 @@ object antdLibComponents {
   def DatePickerProps: antdLib.esDateDashPickerInterfaceMod.DatePickerProps.type = antdLib.esDateDashPickerInterfaceMod.DatePickerProps
   type DatePickerProps = antdLib.esDateDashPickerInterfaceMod.DatePickerProps
   @scala.inline
+  def Descriptions: reactLib.reactMod.ComponentType[antdLib.esDescriptionsMod.DescriptionsProps] = js.constructorOf[antdLib.esDescriptionsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esDescriptionsMod.DescriptionsProps]]
+  @scala.inline
+  def DescriptionsProps: antdLib.esDescriptionsMod.DescriptionsProps.type = antdLib.esDescriptionsMod.DescriptionsProps
+  type DescriptionsProps = antdLib.esDescriptionsMod.DescriptionsProps
+  @scala.inline
   def DirectoryTree: reactLib.reactMod.ComponentType[antdLib.esTreeDirectoryTreeMod.DirectoryTreeProps] = js.constructorOf[antdLib.esTreeDirectoryTreeMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esTreeDirectoryTreeMod.DirectoryTreeProps]]
   @scala.inline
   def DirectoryTreeProps: antdLib.esTreeDirectoryTreeMod.DirectoryTreeProps.type = antdLib.esTreeDirectoryTreeMod.DirectoryTreeProps
@@ -282,6 +287,11 @@ object antdLibComponents {
   @scala.inline
   def MentionProps: antdLib.esMentionMod.MentionProps.type = antdLib.esMentionMod.MentionProps
   type MentionProps = antdLib.esMentionMod.MentionProps
+  @scala.inline
+  def Mentions: reactLib.reactMod.ComponentType[antdLib.esMentionsMod.MentionProps] = js.constructorOf[antdLib.esMentionsMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esMentionsMod.MentionProps]]
+  @scala.inline
+  def MentionsProps: antdLib.esMentionsMod.MentionProps.type = antdLib.esMentionsMod.MentionProps
+  type MentionsProps = antdLib.esMentionsMod.MentionProps
   @scala.inline
   def Menu: reactLib.reactMod.ComponentType[antdLib.esMenuMod.MenuProps] = js.constructorOf[antdLib.esMenuMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esMenuMod.MenuProps]]
   @scala.inline

@@ -10,6 +10,7 @@ trait Row
   extends reactLib.reactMod.Component[RowProps, RowState, js.Any] {
   @JSName("state")
   var state_Row: RowState = js.native
+  var token: java.lang.String = js.native
   @JSName("componentDidMount")
   def componentDidMount_MRow(): scala.Unit = js.native
   @JSName("componentWillUnmount")

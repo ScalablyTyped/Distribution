@@ -288,7 +288,9 @@ trait InputNumberProps extends js.Object {
   var onWaitingCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement]] = js.undefined
   var onWheel: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLInputElement]] = js.undefined
   var onWheelCapture: js.UndefOr[reactLib.reactMod.WheelEventHandler[stdLib.HTMLInputElement]] = js.undefined
-  var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[java.lang.String], scala.Double]] = js.undefined
+  var parser: js.UndefOr[
+    js.Function1[/* displayValue */ js.UndefOr[java.lang.String], scala.Double | java.lang.String]
+  ] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var precision: js.UndefOr[scala.Double] = js.undefined
@@ -503,7 +505,7 @@ object InputNumberProps {
     onVolumeChange: reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement] = null,
     onWaiting: reactLib.reactMod.ReactEventHandler[stdLib.HTMLInputElement] = null,
     onWheel: reactLib.reactMod.WheelEventHandler[stdLib.HTMLInputElement] = null,
-    parser: /* displayValue */ js.UndefOr[java.lang.String] => scala.Double = null,
+    parser: /* displayValue */ js.UndefOr[java.lang.String] => scala.Double | java.lang.String = null,
     pattern: java.lang.String = null,
     placeholder: java.lang.String = null,
     precision: scala.Int | scala.Double = null,

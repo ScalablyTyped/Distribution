@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_AlignArgs extends js.Object {
-  var align: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
+trait Anon_ArgsCancelText extends js.Object {
   var cancelText: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   var centered: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var closable: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
@@ -21,10 +20,9 @@ trait Anon_AlignArgs extends js.Object {
   var width: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | scala.Double]
 }
 
-object Anon_AlignArgs {
+object Anon_ArgsCancelText {
   @scala.inline
   def apply(
-    align: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
     cancelText: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike],
     centered: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     closable: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
@@ -37,10 +35,10 @@ object Anon_AlignArgs {
     title: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike],
     visible: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     width: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | scala.Double]
-  ): Anon_AlignArgs = {
-    val __obj = js.Dynamic.literal(align = align, cancelText = cancelText, centered = centered, closable = closable, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
+  ): Anon_ArgsCancelText = {
+    val __obj = js.Dynamic.literal(cancelText = cancelText, centered = centered, closable = closable, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
   
-    __obj.asInstanceOf[Anon_AlignArgs]
+    __obj.asInstanceOf[Anon_ArgsCancelText]
   }
 }
 

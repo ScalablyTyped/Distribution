@@ -16,7 +16,9 @@ trait Anon_ArgsBordered extends js.Object {
   var onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var rowSelection: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
-  var size: propDashTypesLib.propDashTypesMod.Requireable[antdLib.esTableInterfaceMod.TableSize]
+  var size: propDashTypesLib.propDashTypesMod.Requireable[
+    antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.middle
+  ]
   var sortDirections: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
   var useFixedHeader: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
 }
@@ -34,7 +36,9 @@ object Anon_ArgsBordered {
     onChange: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     rowSelection: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
-    size: propDashTypesLib.propDashTypesMod.Requireable[antdLib.esTableInterfaceMod.TableSize],
+    size: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.middle
+    ],
     sortDirections: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
     useFixedHeader: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   ): Anon_ArgsBordered = {

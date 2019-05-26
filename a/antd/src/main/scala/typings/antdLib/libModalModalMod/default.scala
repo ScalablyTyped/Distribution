@@ -17,7 +17,7 @@ object default extends js.Object {
   var defaultProps: antdLib.Anon_CancelButtonDisabled = js.native
   var error: antdLib.libModalModalMod.ModalFunc = js.native
   var info: antdLib.libModalModalMod.ModalFunc = js.native
-  var propTypes: antdLib.Anon_AlignArgs = js.native
+  var propTypes: antdLib.Anon_ArgsCancelText = js.native
   var success: antdLib.libModalModalMod.ModalFunc = js.native
   var warn: antdLib.libModalModalMod.ModalFunc = js.native
   var warning: antdLib.libModalModalMod.ModalFunc = js.native

@@ -29,11 +29,13 @@ trait CalendarProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var validRange: js.UndefOr[js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment]] = js.undefined
   var value: js.UndefOr[momentLib.momentMod.Moment] = js.undefined
+  def headerRender(header: antdLib.esCalendarHeaderMod.RenderHeader): reactLib.reactMod.ReactNode
 }
 
 object CalendarProps {
   @scala.inline
   def apply(
+    headerRender: antdLib.esCalendarHeaderMod.RenderHeader => reactLib.reactMod.ReactNode,
     className: java.lang.String = null,
     dateCellRender: /* date */ momentLib.momentMod.Moment => reactLib.reactMod.ReactNode = null,
     dateFullCellRender: /* date */ momentLib.momentMod.Moment => reactLib.reactMod.ReactNode = null,
@@ -52,7 +54,7 @@ object CalendarProps {
     validRange: js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment] = null,
     value: momentLib.momentMod.Moment = null
   ): CalendarProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(headerRender = js.Any.fromFunction1(headerRender))
     if (className != null) __obj.updateDynamic("className")(className)
     if (dateCellRender != null) __obj.updateDynamic("dateCellRender")(js.Any.fromFunction1(dateCellRender))
     if (dateFullCellRender != null) __obj.updateDynamic("dateFullCellRender")(js.Any.fromFunction1(dateFullCellRender))

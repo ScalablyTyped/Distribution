@@ -13,15 +13,17 @@ trait HeaderProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var validRange: js.UndefOr[js.Tuple2[momentLib.momentMod.Moment, momentLib.momentMod.Moment]] = js.undefined
-  var value: js.Any
+  var value: momentLib.momentMod.Moment
   var yearSelectOffset: js.UndefOr[scala.Double] = js.undefined
   var yearSelectTotal: js.UndefOr[scala.Double] = js.undefined
+  def headerRender(header: RenderHeader): reactLib.reactMod.ReactNode
 }
 
 object HeaderProps {
   @scala.inline
   def apply(
-    value: js.Any,
+    headerRender: RenderHeader => reactLib.reactMod.ReactNode,
+    value: momentLib.momentMod.Moment,
     fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
     locale: js.Any = null,
     onTypeChange: /* type */ java.lang.String => scala.Unit = null,
@@ -32,7 +34,7 @@ object HeaderProps {
     yearSelectOffset: scala.Int | scala.Double = null,
     yearSelectTotal: scala.Int | scala.Double = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal(value = value)
+    val __obj = js.Dynamic.literal(headerRender = js.Any.fromFunction1(headerRender), value = value)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(js.Any.fromFunction1(onTypeChange))

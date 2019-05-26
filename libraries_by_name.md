@@ -3665,6 +3665,7 @@
 | [logg](./l/logg) | Logging library that allows for hierarchical logge | log, logging, logger, hierarchical, handler, watcher |
 | [loggly](./l/loggly) | A client implementation for Loggly cloud Logging-a | cloud computing, api, logging, loggly |
 | [loglevel](./l/loglevel) | Minimal lightweight logging for JavaScript, adding | log, logger, logging, browser |
+| [loglevel-plugin-prefix](./l/loglevel-plugin-prefix) | Plugin for loglevel message prefixing | log, logger, logging, browser, node, prefix, colored, loglevel, plugin |
 | [logrotate-stream](./l/logrotate-stream) | Pipe log data to a stream, fuggetabout rotation | log, rotate, pipe, stream |
 | [lokijs](./l/lokijs) | Fast document oriented javascript in-memory databa | javascript, document-oriented, mmdb, json, nosql, lokijs, in-memory |
 | [lolex](./l/lolex) | Fake JavaScript timers | - |
@@ -4913,6 +4914,7 @@
 | [rc-dialog](./r/rc-dialog) | dialog ui component for react | react, react-component, react-dialog, dialog, ui |
 | [rc-editor-core](./r/rc-editor-core) | editor-core ui component for react | react, react-component, react-editor-core, editor-core |
 | [rc-gesture](./r/rc-gesture) | Support gesture for react component | react, react-component, react-gesture, gesture, touch |
+| [rc-mentions](./r/rc-mentions) | React Mentions | react, react-component, react-mentions, mentions |
 | [rc-pagination](./r/rc-pagination) | pagination ui component for react | react, react-component, react-pagination, pagination |
 | [rc-progress](./r/rc-progress) | progress ui component for react | react, react-component, react-progress, progress |
 | [rc-select](./r/rc-select) | React Select | react, react-component, react-select, select |

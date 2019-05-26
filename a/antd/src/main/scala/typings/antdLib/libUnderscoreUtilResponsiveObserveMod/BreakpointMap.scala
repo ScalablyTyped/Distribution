@@ -1,11 +1,11 @@
 package typings
-package antdLib.libGridRowMod
+package antdLib.libUnderscoreUtilResponsiveObserveMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<std.Record<antd.antd/lib/grid/row.Breakpoint, string>> */
+/* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, string>> */
 trait BreakpointMap extends js.Object {
   var lg: js.UndefOr[java.lang.String] = js.undefined
   var md: js.UndefOr[java.lang.String] = js.undefined

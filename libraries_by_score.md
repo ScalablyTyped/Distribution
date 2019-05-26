@@ -3640,6 +3640,7 @@
 | 0.6295450472757168 | [new-github-issue-url](./n/new-github-issue-url) | Generate a URL for opening a new GitHub issue with
 | 0.6295059441179841 | [yeoman-environment](./y/yeoman-environment) | Handles the lifecyle and bootstrapping of generato
 | 0.6294784128518338 | [octokit__request-error](./o/octokit__request-error) | Error class for Octokit request errors
+| 0.6293888989334172 | [rc-mentions](./r/rc-mentions) | React Mentions
 | 0.6293025328217952 | [gulp-typedoc](./g/gulp-typedoc) | Gulp plugin for the TypeDoc typescript documentati
 | 0.629252748088124 | [vega-util](./v/vega-util) | JavaScript utilities for Vega.
 | 0.62919224431418 | [hapi__bell](./h/hapi__bell) | Third-party login plugin for hapi
@@ -3887,6 +3888,7 @@
 | 0.6065108462364343 | [shipit-cli](./s/shipit-cli) | Universal automation and deployment tool written i
 | 0.6064830548489681 | [webpack-node-externals](./w/webpack-node-externals) | Easily exclude node_modules in Webpack bundle
 | 0.6064579220554086 | [adal-angular](./a/adal-angular) | Windows Azure Active Directory Client Library for 
+| 0.6063148804405502 | [loglevel-plugin-prefix](./l/loglevel-plugin-prefix) | Plugin for loglevel message prefixing
 | 0.606262238430236 | [realm](./r/realm) | Realm is a mobile database: an alternative to SQLi
 | 0.606256615947331 | [rmc-tooltip](./r/rmc-tooltip) | React Tooltip
 | 0.6062491113438455 | [unique-push-id](./u/unique-push-id) | 🆔 Generates unique, chronological, lexicographica

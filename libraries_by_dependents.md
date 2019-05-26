@@ -2845,6 +2845,7 @@
 | 33 | [istanbul-reports](./i/istanbul-reports) | istanbul reports
 | 33 | [lodash_dot_isinteger](./l/lodash_dot_isinteger) | The lodash method _.isInteger exported as a module
 | 33 | [lodash_dot_pullall](./l/lodash_dot_pullall) | The lodash method _.pullAll exported as a module.
+| 33 | [loglevel-plugin-prefix](./l/loglevel-plugin-prefix) | Plugin for loglevel message prefixing
 | 33 | [material__select](./m/material__select) | The Material Components web select (text field dro
 | 33 | [micro-cors](./m/micro-cors) | Simple CORS middleware for Zeit's Micro
 | 33 | [node-dogstatsd](./n/node-dogstatsd) | node client for extended StatsD server of Datadog
@@ -6326,6 +6327,7 @@
 | 0 | [rangyinputs](./r/rangyinputs) | A small jQuery plug-in for selection and caret man
 | 0 | [raspi-onewire](./r/raspi-onewire) | Provides access to 1-Wire on the Raspberry Pi from
 | 0 | [raty](./r/raty) | a node framework base koa@2 that can use full es20
+| 0 | [rc-mentions](./r/rc-mentions) | React Mentions
 | 0 | [react-albus](./r/react-albus) | React component library for building declarative m
 | 0 | [react-amplitude](./r/react-amplitude) | React Amplitude Analytics
 | 0 | [react-better-password](./r/react-better-password) | Password input for ReactJS that mimics mobile pass

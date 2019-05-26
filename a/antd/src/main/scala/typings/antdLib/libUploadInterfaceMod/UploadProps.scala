@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait UploadProps extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
-  var action: js.UndefOr[java.lang.String | (js.Function1[/* file */ UploadFile, js.Thenable[_]])] = js.undefined
+  var action: js.UndefOr[
+    java.lang.String | (js.Function1[/* file */ UploadFile, java.lang.String]) | (js.Function1[/* file */ UploadFile, js.Thenable[java.lang.String]])
+  ] = js.undefined
   var beforeUpload: js.UndefOr[
     js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], scala.Boolean | js.Thenable[_]]
   ] = js.undefined
@@ -26,7 +28,12 @@ trait UploadProps extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* info */ UploadChangeParam[UploadFile], scala.Unit]] = js.undefined
   var onPreview: js.UndefOr[js.Function1[/* file */ UploadFile, scala.Unit]] = js.undefined
-  var onRemove: js.UndefOr[js.Function1[/* file */ UploadFile, scala.Unit | scala.Boolean]] = js.undefined
+  var onRemove: js.UndefOr[
+    js.Function1[
+      /* file */ UploadFile, 
+      scala.Unit | scala.Boolean | (js.Promise[scala.Unit | scala.Boolean])
+    ]
+  ] = js.undefined
   var openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var previewFile: js.UndefOr[PreviewFileHandler] = js.undefined
@@ -41,7 +48,7 @@ object UploadProps {
   @scala.inline
   def apply(
     accept: java.lang.String = null,
-    action: java.lang.String | (js.Function1[/* file */ UploadFile, js.Thenable[_]]) = null,
+    action: java.lang.String | (js.Function1[/* file */ UploadFile, java.lang.String]) | (js.Function1[/* file */ UploadFile, js.Thenable[java.lang.String]]) = null,
     beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => scala.Boolean | js.Thenable[_] = null,
     className: java.lang.String = null,
     customRequest: /* option */ js.Any => scala.Unit = null,
@@ -58,7 +65,7 @@ object UploadProps {
     name: java.lang.String = null,
     onChange: /* info */ UploadChangeParam[UploadFile] => scala.Unit = null,
     onPreview: /* file */ UploadFile => scala.Unit = null,
-    onRemove: /* file */ UploadFile => scala.Unit | scala.Boolean = null,
+    onRemove: /* file */ UploadFile => scala.Unit | scala.Boolean | (js.Promise[scala.Unit | scala.Boolean]) = null,
     openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null,
     previewFile: PreviewFileHandler = null,

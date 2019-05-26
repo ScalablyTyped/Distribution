@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT18DOT2` extends js.Object
+  sealed trait `3DOT19DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -251,7 +251,9 @@ object antdLibStrings {
   sealed trait bottom
     extends antdLib.esCarouselMod.DotPosition
        with antdLib.libCarouselMod.DotPosition
+       with antdLib.esMentionsMod.MentionPlacement
        with antdLib.libMentionMod.MentionPlacement
+       with antdLib.libMentionsMod.MentionPlacement
        with antdLib.esMentionMod.MentionPlacement
        with antdLib.esTabsMod.TabsPosition
        with antdLib.libTabsMod.TabsPosition
@@ -857,8 +859,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait lg
-    extends antdLib.libGridRowMod.Breakpoint
-       with antdLib.esGridRowMod.Breakpoint
+    extends antdLib.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+       with antdLib.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
@@ -951,8 +953,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait md
-    extends antdLib.libGridRowMod.Breakpoint
-       with antdLib.esGridRowMod.Breakpoint
+    extends antdLib.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+       with antdLib.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
@@ -1561,8 +1563,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait sm
-    extends antdLib.libGridRowMod.Breakpoint
-       with antdLib.esGridRowMod.Breakpoint
+    extends antdLib.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+       with antdLib.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
@@ -1758,7 +1760,9 @@ object antdLibStrings {
   sealed trait top
     extends antdLib.esCarouselMod.DotPosition
        with antdLib.libCarouselMod.DotPosition
+       with antdLib.esMentionsMod.MentionPlacement
        with antdLib.libMentionMod.MentionPlacement
+       with antdLib.libMentionsMod.MentionPlacement
        with antdLib.esMentionMod.MentionPlacement
        with antdLib.esTabsMod.TabsPosition
        with antdLib.libTabsMod.TabsPosition
@@ -1926,22 +1930,22 @@ object antdLibStrings {
   
   @js.native
   sealed trait xl
-    extends antdLib.libGridRowMod.Breakpoint
-       with antdLib.esGridRowMod.Breakpoint
+    extends antdLib.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+       with antdLib.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait xs
-    extends antdLib.libGridRowMod.Breakpoint
-       with antdLib.esGridRowMod.Breakpoint
+    extends antdLib.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+       with antdLib.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait xxl
-    extends antdLib.libGridRowMod.Breakpoint
-       with antdLib.esGridRowMod.Breakpoint
+    extends antdLib.libUnderscoreUtilResponsiveObserveMod.Breakpoint
+       with antdLib.esUnderscoreUtilResponsiveObserveMod.Breakpoint
        with antdLib.esListMod.ColumnType
        with antdLib.libListMod.ColumnType
   
@@ -2020,7 +2024,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT18DOT2`: `3DOT18DOT2` = "3.18.2".asInstanceOf[`3DOT18DOT2`]
+  def `3DOT19DOT0`: `3DOT19DOT0` = "3.19.0".asInstanceOf[`3DOT19DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline

@@ -10,6 +10,7 @@ trait SliderProps extends js.Object {
   var defaultValue: js.UndefOr[SliderValue] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dots: js.UndefOr[scala.Boolean] = js.undefined
+  var getTooltipPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var included: js.UndefOr[scala.Boolean] = js.undefined
   var marks: js.UndefOr[SliderMarks] = js.undefined
@@ -24,6 +25,7 @@ trait SliderProps extends js.Object {
   var tipFormatter: js.UndefOr[
     scala.Null | (js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNode])
   ] = js.undefined
+  var tooltipPlacement: js.UndefOr[antdLib.esTooltipMod.TooltipPlacement] = js.undefined
   var tooltipPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var tooltipVisible: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[SliderValue] = js.undefined
@@ -37,6 +39,7 @@ object SliderProps {
     defaultValue: SliderValue = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dots: js.UndefOr[scala.Boolean] = js.undefined,
+    getTooltipPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     included: js.UndefOr[scala.Boolean] = js.undefined,
     marks: SliderMarks = null,
@@ -49,6 +52,7 @@ object SliderProps {
     step: scala.Int | scala.Double = null,
     style: reactLib.reactMod.CSSProperties = null,
     tipFormatter: /* value */ scala.Double => reactLib.reactMod.ReactNode = null,
+    tooltipPlacement: antdLib.esTooltipMod.TooltipPlacement = null,
     tooltipPrefixCls: java.lang.String = null,
     tooltipVisible: js.UndefOr[scala.Boolean] = js.undefined,
     value: SliderValue = null,
@@ -59,6 +63,7 @@ object SliderProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)
+    if (getTooltipPopupContainer != null) __obj.updateDynamic("getTooltipPopupContainer")(js.Any.fromFunction1(getTooltipPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(included)) __obj.updateDynamic("included")(included)
     if (marks != null) __obj.updateDynamic("marks")(marks)
@@ -71,6 +76,7 @@ object SliderProps {
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1(tipFormatter))
+    if (tooltipPlacement != null) __obj.updateDynamic("tooltipPlacement")(tooltipPlacement)
     if (tooltipPrefixCls != null) __obj.updateDynamic("tooltipPrefixCls")(tooltipPrefixCls)
     if (!js.isUndefined(tooltipVisible)) __obj.updateDynamic("tooltipVisible")(tooltipVisible)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

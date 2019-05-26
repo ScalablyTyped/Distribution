@@ -14,7 +14,7 @@ trait Anon_BorderedChildrenColumnName extends js.Object {
   var loading: scala.Boolean
   var rowKey: java.lang.String
   var showHeader: scala.Boolean
-  var size: antdLib.esTableInterfaceMod.TableSize
+  var size: antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.middle
   var sortDirections: js.Array[java.lang.String]
   var useFixedHeader: scala.Boolean
 }
@@ -30,11 +30,11 @@ object Anon_BorderedChildrenColumnName {
     loading: scala.Boolean,
     rowKey: java.lang.String,
     showHeader: scala.Boolean,
-    size: antdLib.esTableInterfaceMod.TableSize,
+    size: antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.middle,
     sortDirections: js.Array[java.lang.String],
     useFixedHeader: scala.Boolean
   ): Anon_BorderedChildrenColumnName = {
-    val __obj = js.Dynamic.literal(bordered = bordered, childrenColumnName = childrenColumnName, className = className, dataSource = dataSource, indentSize = indentSize, loading = loading, rowKey = rowKey, showHeader = showHeader, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
+    val __obj = js.Dynamic.literal(bordered = bordered, childrenColumnName = childrenColumnName, className = className, dataSource = dataSource, indentSize = indentSize, loading = loading, rowKey = rowKey, showHeader = showHeader, size = size.asInstanceOf[js.Any], sortDirections = sortDirections, useFixedHeader = useFixedHeader)
   
     __obj.asInstanceOf[Anon_BorderedChildrenColumnName]
   }

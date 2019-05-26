@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sinon-chrome"
-version := "v2.2.4-dt-20190322Z-29be25"
+version := "v2.2.4-dt-20190322Z-7f6eac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20190520Z-da2a0f",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-a75f93",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-f2122a",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190330Z-4e58f5",
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190525Z-4e58f5",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
